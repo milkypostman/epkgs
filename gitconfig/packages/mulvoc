@@ -1,0 +1,15 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	exclude-provided = csv
+	exclude-provided = csv-writer
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/mulvoc.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	elm-fetcher = cvs
+	cvs-url = pserver:anonymous@mulvoc.cvs.sourceforge.net:/cvsroot/mulvoc
+	cvs-fetch = mulvoc

@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[branch "emacswiki"]
+	elm-last-seen = 66e4aeae54d4ac9ec86955236b9e0a2d21a9ab47
+	elm-fetcher = wiki
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/joccur.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

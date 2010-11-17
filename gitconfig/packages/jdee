@@ -1,0 +1,24 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	autocrlf = false
+[elm]
+	mainfile = lisp/jde.el
+	# NOTE: XEmacs only
+	exclude-required = jde-xemacs
+	exclude-path = ^xelisp
+	# FIXME: multiple conflicting implementations
+	exclude-provided = tree-widget
+	# FIXME: there is a conflicting stand-alone package
+	exclude-provided = which
+[svn-remote "svn"]
+	url = https://jdee.svn.sourceforge.net/svnroot/jdee
+	fetch = trunk/jdee:refs/remotes/trunk
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/jdee.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	elm-fetcher = svn
+	elm-homepage = http://jdee.sourceforge.net/

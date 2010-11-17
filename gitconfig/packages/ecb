@@ -1,0 +1,16 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	wikipage = EmacsCodeBrowser
+	import-from = 2.01
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/ecb.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	elm-fetcher = cvs
+	elm-homepage = http://ecb.sourceforge.net/
+	cvs-url = pserver:anonymous@ecb.cvs.sourceforge.net:/cvsroot/ecb
+	cvs-fetch = ecb

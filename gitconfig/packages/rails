@@ -1,0 +1,14 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[svn-remote "svn"]
+	url = svn://rubyforge.org/var/svn/emacs-rails
+	fetch = :refs/remotes/git-svn
+[remote "mirror"]
+	url = git@github.com:emacsmirror/rails.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	elm-fetcher = svn
+	elm-homepage = http://rubyforge.org/projects/emacs-rails

@@ -1,0 +1,24 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	mainfile = lisp/ultex.el
+	exclude-provided = light
+	# NOTE: some code which used to be in bufcomp.el
+	# is now part of file light.el
+	exclude-provided = bufcomp
+	# NOTE: it is probably legitimate that these features are provided
+	# here but since auctex is the package used by more people (is ultra
+	# actually used by anyone?) we exclude these features here.
+	exclude-provided = font-latex
+	exclude-provided = tex
+	exclude-provided = tex-buf
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/ultra-tex.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "web-import"]
+	elm-fetcher = web
+	elm-webfile = http://www.math.washington.edu/~palmieri/Emacs/gz/ultra.tar.gz
+	elm-homepage = http://www.math.washington.edu/~palmieri/Emacs/ultratex.html

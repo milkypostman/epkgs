@@ -1,0 +1,10 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[xpkg]
+	wikipage = DiskKey
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/disk.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

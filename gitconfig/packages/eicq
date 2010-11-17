@@ -1,0 +1,13 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/eicq.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	elm-fetcher = cvs
+	elm-homepage = http://sourceforge.net/projects/eicq/
+	cvs-url = pserver:anonymous@eicq.cvs.sourceforge.net:/cvsroot/eicq
+	cvs-fetch = eicq

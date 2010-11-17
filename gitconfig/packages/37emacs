@@ -1,0 +1,21 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	mainfile = backpack.el
+	include = backpack
+	include = highrise
+	include = rest-api
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://github.com/hober/37emacs.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+	elm-homepage = http://edward.oconnor.cx/elisp/
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/37emacs.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

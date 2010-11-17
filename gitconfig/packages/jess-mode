@@ -1,0 +1,13 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/jess-mode.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	elm-fetcher = cvs
+	elm-homepage = http://jess-mode.sourceforge.net/
+	cvs-url = pserver:anonymous@jess-mode.cvs.sourceforge.net:/cvsroot/jess-mode
+	cvs-fetch = jess-mode

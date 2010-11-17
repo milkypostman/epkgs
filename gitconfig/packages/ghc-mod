@@ -1,0 +1,18 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	mainfile = elisp/ghc.el
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://github.com/kazu-yamamoto/ghc-mod.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+	elm-homepage = http://www.mew.org/~kazu/proj/ghc-mod/en/
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/ghc-mod.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

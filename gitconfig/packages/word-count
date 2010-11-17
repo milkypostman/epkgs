@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[branch "web-import"]
+	elm-webfile = http://taiyaki.org/elisp/word-count/src/word-count.el
+	elm-fetcher = web
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/word-count.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

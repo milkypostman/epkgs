@@ -1,0 +1,14 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[xpkg]
+	wikipage = EliteSpeech
+[branch "web-import"]
+	elm-webfile = http://zancanda.staticcling.org/emacs/h4x0r.el
+	elm-fetcher = web
+	elm-homepage = http://zancanda.staticcling.org/emacs/
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/h4x0r.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

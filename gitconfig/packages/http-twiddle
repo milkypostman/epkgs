@@ -1,0 +1,15 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://github.com/hassy/http-twiddle.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/http-twiddle.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

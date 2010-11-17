@@ -1,0 +1,17 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	autocrlf = false
+[elm]
+	mainfile = js-console.el
+[svn-remote "svn"]
+	url = http://ejacs.googlecode.com/svn
+	fetch = trunk:refs/remotes/trunk
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/ejacs.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	elm-fetcher = svn
+	elm-homepage = http://code.google.com/p/ejacs/

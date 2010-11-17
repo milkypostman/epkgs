@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "mirror"]
+	url = git@github.com:emacsmirror/evimodeline.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	elm-fetcher = hg
+	elm-homepage = http://bitbucket.org/danderson/evimodeline

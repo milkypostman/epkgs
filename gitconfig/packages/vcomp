@@ -1,0 +1,18 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "local"]
+	url = /home/devel/emacs/vcomp
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[remote "origin"]
+	url = git@github.com:tarsius/vcomp.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/vcomp.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git

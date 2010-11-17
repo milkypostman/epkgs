@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/iflipb.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	elm-fetcher = hg
+	elm-homepage = http://hg.rosdahl.net/iflipb

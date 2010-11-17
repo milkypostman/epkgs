@@ -1,0 +1,10 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	exclude-provided = outline
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/outline-m.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

@@ -1,0 +1,13 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	mainfile = reduce-mode.el
+[branch "web-import"]
+	elm-webfile = http://centaur.maths.qmw.ac.uk/Emacs/REDUCE_IDE/files/reduce-ide.tar.gz
+	elm-fetcher = web
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/reduce-ide.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

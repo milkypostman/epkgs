@@ -1,0 +1,13 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/epo.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	elm-fetcher = cvs
+	elm-homepage = http://www.yatex.org/epo/
+	cvs-url = pserver:anonymous@yatex.org:/epo
+	cvs-fetch = EPO

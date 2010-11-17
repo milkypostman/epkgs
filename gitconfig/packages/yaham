@@ -1,0 +1,13 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[branch "web-import"]
+	elm-webfile = yaham-%v.tar.gz
+	elm-fetcher = web
+	elm-homepage = http://primate.net/~itz/yaham/
+	elm-linkpage = http://primate.net/~itz/yaham/
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/yaham.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

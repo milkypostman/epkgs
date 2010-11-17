@@ -1,0 +1,30 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	mainfile = semi-setup.el
+	# NOTE: XEmacs only
+	exclude-required = alist
+	#
+	exclude-provided = pgg
+	exclude-provided = pgg-def
+	exclude-provided = pgg-gpg
+	exclude-provided = pgg-parse
+	exclude-provided = pgg-pgp
+	exclude-provided = pgg-pgp5
+	exclude-provided = smime
+	# FIXME: this conflicts with stand-alone signature.el
+	exclude-provided = signature
+	#
+	ignore-version = 199811302358
+	ignore-version = 199901211900
+[branch "master"]
+	cvs-url = pserver:anonymous@cvs.m17n.org:/cvs/root
+	cvs-fetch = semi
+	elm-fetcher = cvs
+	elm-homepage = http://www.kanji.zinbun.kyoto-u.ac.jp/~tomo/lemi/
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/semi.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

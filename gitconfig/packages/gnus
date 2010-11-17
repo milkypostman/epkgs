@@ -1,0 +1,36 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	exclude-provided = base64  # FIXME: stand-alone exists, which is better?
+	exclude-provided = encrypt # FIXME: competing stand-alone package exists
+	exclude-provided = md5     # FIXME: stand-alone exists, which is better?
+	exclude-provided = ssl     # used to be part of emacs, now several pkgs contain it
+	exclude-provided = vcard
+	# NOTE: I believe these are XEmacs specific
+	# TODO: make sure this is so
+	exclude-required = byte-optimize
+	exclude-required = digest-md5
+	exclude-required = latin-unity   # quite sure
+	exclude-required = mail-abbrevs  # quite sure
+	exclude-required = password
+	exclude-required = text-props
+	exclude-required = timer-funcs   # quite sure
+	# FIXME: find this library
+	# NOTE: this is only loaded if no window system is available
+	# and even then no error if it is not available
+	exclude-required = win-vm
+	
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = http://git.gnus.org/gnus.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+	elm-homepage = http://gnus.org
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/gnus.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

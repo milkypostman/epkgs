@@ -1,0 +1,15 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	# NOTE: newer version in w3
+	exclude-provided = devices
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/gnuserv.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "web-import"]
+	elm-fetcher = web
+	elm-webfile = src/gnuserv-%v.tar.gz
+	elm-homepage = http://meltin.net/hacks/emacs/

@@ -1,0 +1,18 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	exclude-provided = xml-parse
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://doxymacs.git.sourceforge.net/gitroot/doxymacs/doxymacs
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+	elm-homepage = http://doxymacs.sourceforge.net/
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/doxymacs.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

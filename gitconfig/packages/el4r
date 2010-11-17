@@ -1,0 +1,12 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/el4r.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "web-import"]
+	elm-fetcher = web
+	elm-webfile = http://www.rubyist.net/~rubikitch/archive/el4r-%v.tar.gz
+	elm-homepage = http://www.rubyist.net/~rubikitch/computer/el4r/index.en.html

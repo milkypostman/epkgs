@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[branch "emacswiki"]
+	elm-last-seen = a4d2729ba85de6f7a1211a62a59c7639a5931954
+	elm-fetcher = wiki
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/bookmark-plus.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

@@ -1,0 +1,12 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/psvn.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "web-import"]
+	elm-fetcher = web
+	elm-webfile = http://www.xsteve.at/prg/emacs/psvn.el
+	elm-homepage = http://www.xsteve.at/prg/vc_svn/

@@ -1,0 +1,14 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[xpkg]
+	wikipage = DiminishedModes
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/diminish.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "web-import"]
+	elm-fetcher = web
+	elm-webfile = http://www.eskimo.com/~seldon/diminish.el
+	elm-homepage = http://www.eskimo.com/~seldon/

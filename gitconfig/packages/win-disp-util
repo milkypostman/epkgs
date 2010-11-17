@@ -1,0 +1,12 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/win-disp-util.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "web-import"]
+	elm-fetcher = web
+	elm-webfile = ftp://ftp.splode.com/pub/users/friedman/emacs-lisp/win-disp-util.el
+	elm-homepage = ftp://ftp.splode.com/pub/users/friedman/emacs-lisp/

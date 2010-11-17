@@ -1,0 +1,12 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[branch "web-import"]
+	elm-webfile = http://thesassers.com/dewey/dms-sig-31/dms-sig.el
+	elm-fetcher = web
+	elm-homepage = http://thesassers.com/dewey/DmsSig.html
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/dms-sig.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

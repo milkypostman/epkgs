@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	# FIXME: part of distel, should be stand-alone?
+	exclude-provided = erlext
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/shbuf.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

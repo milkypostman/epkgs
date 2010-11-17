@@ -1,0 +1,13 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "mirror"]
+	url = git@github.com:emacsmirror/csp-mode.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "web-import"]
+	elm-fetcher = web
+	elm-homepage = http://www.zonix.de/projects/emacs/lisp
+	elm-webfile = csp-mode-%v.tar.gz
+	elm-linkpage = http://www.zonix.de/div/el/csp-mode/

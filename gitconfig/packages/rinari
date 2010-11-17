@@ -1,0 +1,26 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	exclude-provided = elunit
+	# NOTE: Some of the bundled packages are not available (at least
+	# not mirrored) seperately do we can't exclude the complete
+	# directory yet.
+	# exclude-path = ^util
+	# exclude-provided = inf-ruby
+	# exclude-provided = jump
+	# exclude-provided = pcmpl-rake
+	exclude-provided = ruby-compilation
+	# exclude-provided = ruby-compilation-rspec
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://github.com/technomancy/rinari.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/rinari.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

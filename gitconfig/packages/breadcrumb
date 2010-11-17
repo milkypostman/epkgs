@@ -1,0 +1,18 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[xpkg]
+	wikipage = BreadcrumbForEmacs
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://github.com/pheaver/breadcrumb.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+	elm-homepage = http://breadcrumbemacs.sourceforge.net
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/breadcrumb.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

@@ -1,0 +1,10 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/dracula-mode.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "manual-import"]
+	elm-homepage = http://spice-mode.4t.com/

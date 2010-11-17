@@ -1,0 +1,10 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[xpkg]
+	wikipage = CryptPlusPlus
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/crypt-plus-plus.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

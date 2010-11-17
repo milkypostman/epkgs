@@ -1,0 +1,21 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	exclude-provided = incomplete
+	exclude-provided = lui
+	exclude-provided = notify
+	exclude-provided = tracking
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://git.savannah.nongnu.org/elim.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+	elm-homepage = https://savannah.nongnu.org/projects/elim
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/elim.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

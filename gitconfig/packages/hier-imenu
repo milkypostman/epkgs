@@ -1,0 +1,12 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/hier-imenu.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "web-import"]
+	elm-fetcher = web
+	elm-webfile = http://ydirson.free.fr/soft/elisp/hier-imenu.el
+	elm-homepage = http://ydirson.free.fr/en/software/hier-imenu.html

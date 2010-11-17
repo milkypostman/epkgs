@@ -1,0 +1,13 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	mainfile = rtest-common.el
+	exclude-path = ^ancillary
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/rtest.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "manual-import"]
+	elm-homepage = http://www.panix.com/~tehom/

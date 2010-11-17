@@ -1,0 +1,23 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	import-from = 3.10
+	# NOTE: stand-alone
+	# FIXME: but this is more recent
+	exclude-provided = cgi
+	#
+	exclude-provided = httpd
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://repo.or.cz/muse-el.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+	elm-homepage = http://mwolson.org/projects/EmacsMuse.html
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/muse.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

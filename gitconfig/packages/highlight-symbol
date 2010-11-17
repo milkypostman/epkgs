@@ -1,0 +1,12 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/highlight-symbol.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "web-import"]
+	elm-fetcher = web
+	elm-webfile = http://nschum.de/src/emacs/highlight-symbol/highlight-symbol.el
+	elm-homepage = http://nschum.de/src/emacs/highlight-symbol/

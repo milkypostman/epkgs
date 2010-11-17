@@ -1,0 +1,14 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	mainfile = elite-for-emacs.el
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/elite.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "web-import"]
+	elm-fetcher = web
+	elm-webfile = elite-for-emacs-%v.tar.gz
+	elm-homepage = http://www.elite-for-emacs.org/elite-for-emacs/

@@ -1,0 +1,12 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/ack.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "web-import"]
+	elm-fetcher = web
+	elm-webfile = http://repo.or.cz/w/ShellArchive.git/blob_plain/HEAD:/ack.el
+	elm-homepage = http://www.shellarchive.co.uk/content/emacs.html

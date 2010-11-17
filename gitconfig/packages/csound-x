@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/csound-x.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "manual-import"]
+	# NOTE: zip files are not supported anymore
+	elm-homepage = http://www.zogotounga.net/comp/stef-elisp-2.19.zip

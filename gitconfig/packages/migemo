@@ -1,0 +1,13 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[branch "master"]
+	cvs-url = pserver:anonymous@migemo.cvs.sourceforge.net:/cvsroot/migemo
+	cvs-fetch = migemo
+	elm-fetcher = cvs
+	elm-homepage = http://0xcc.net/migemo/
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/migemo.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

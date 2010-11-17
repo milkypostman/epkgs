@@ -1,0 +1,20 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	autocrlf = false
+[elm]
+	exclude-path = ^test
+	exclude-provided = tree-mode
+[svn-remote "svn"]
+	url = http://jdibug.googlecode.com/svn
+	fetch = trunk:refs/remotes/trunk
+	branches = branches/*:refs/remotes/*
+	tags = tags/*:refs/remotes/tags/*
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/jdibug.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	elm-fetcher = svn
+	elm-homepage = http://code.google.com/p/jdibug/

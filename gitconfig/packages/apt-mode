@@ -1,0 +1,13 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/apt-mode.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "web-import"]
+	elm-fetcher = web
+	elm-webfile = apt-el-%v.tar.gz
+	elm-linkpage = http://www.netfort.gr.jp/~dancer/software/downloads/list.cgi
+	elm-homepage = http://www.netfort.gr.jp/~dancer/software/apt-mode.html

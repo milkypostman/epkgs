@@ -1,0 +1,14 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	exclude-provided = reporter
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/tla-mode.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "web-import"]
+	elm-fetcher = web
+	elm-webfile = tla-mode-%v.tar.gz
+	elm-homepage = http://ls4-www.informatik.uni-dortmund.de/RVS/P-TLA/TEM/tem.html

@@ -1,0 +1,15 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	autocrlf = false
+[svn-remote "svn"]
+	url = svn://svn.savannah.nongnu.org/espresso/espresso
+	fetch = :refs/remotes/git-svn
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/espresso.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	elm-fetcher = svn
+	elm-homepage = http://www.nongnu.org/espresso/

@@ -1,0 +1,18 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[xpkg]
+	wikipage = CategorizingInformationManager
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://git.sv.gnu.org/ee.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+	elm-homepage = http://www.jurta.org/en/emacs/ee/
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/ee.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

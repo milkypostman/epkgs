@@ -1,0 +1,21 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	# NOTE: feature emacspeak-erc is also provided by emacspeak-erc.el
+	# which is part of emacspeak.  Since the file name matches there
+	# but not here we exclude it here.
+	exclude-provided = emacspeak-erc
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://git.sv.gnu.org/erc.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+	elm-homepage = http://savannah.gnu.org/projects/erc/
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/erc.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

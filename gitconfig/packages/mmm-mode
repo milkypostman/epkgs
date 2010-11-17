@@ -1,0 +1,13 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/mmm-mode.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	elm-fetcher = cvs
+	elm-homepage = http://mmm-mode.sourceforge.net/
+	cvs-url = pserver:anonymous@mmm-mode.cvs.sourceforge.net:/cvsroot/mmm-mode
+	cvs-fetch = mmm-mode

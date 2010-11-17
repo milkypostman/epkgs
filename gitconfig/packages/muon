@@ -1,0 +1,16 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://github.com/stesla/muon.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+	elm-homepage = http://github.com/stesla/muon
+[remote "mirror"]
+	url = git@github.com:emacsmirror/muon.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

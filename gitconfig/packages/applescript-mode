@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/applescript-mode.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	cvs-url = pserver:anonymous@cvs.sourceforge.jp:/cvsroot/macemacsjp
+	cvs-fetch = applescript-mode

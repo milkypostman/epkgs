@@ -1,0 +1,18 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	exclude-path = test
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://github.com/naota/navi2ch.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+	elm-homepage = http://github.com/naota/navi2ch
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/navi2ch.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

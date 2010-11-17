@@ -1,0 +1,14 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[xpkg]
+	wikipage = ChillModePackage
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/chill-mode.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "web-import"]
+	elm-fetcher = web
+	elm-webfile = http://www.exd.at/~hoerandl/chill/chill-mode.el.gz
+	elm-homepage = http://www.exd.at/~hoerandl/chill.html

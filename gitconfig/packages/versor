@@ -1,0 +1,14 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	include = languide
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/versor.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	elm-fetcher = cvs
+	cvs-url = pserver:anonymous@emacs-versor.cvs.sourceforge.net:/cvsroot/emacs-versor
+	cvs-fetch = lisp

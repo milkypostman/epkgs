@@ -1,0 +1,12 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[branch "web-import"]
+	elm-webfile = http://sugarshark.com/elisp/mylisp/amixer.el
+	elm-fetcher = web
+	elm-homepage = http://sugarshark.com/ProjectPage.html
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/amixer.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

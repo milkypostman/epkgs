@@ -1,0 +1,18 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	exclude-provided = php-mode
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://github.com/doomvox/desktop-recover.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+	elm-homepage = http://github.com/doomvox/desktop-recover
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/desktop-recover.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

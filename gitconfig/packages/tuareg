@@ -1,0 +1,14 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[svn-remote "svn"]
+	url = svn://svn.forge.ocamlcore.org/svnroot/tuareg
+	fetch = trunk:refs/remotes/trunk
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/tuareg.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	elm-fetcher = svn
+	elm-homepage = http://tuareg.forge.ocamlcore.org/

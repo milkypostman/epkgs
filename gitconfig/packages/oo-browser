@@ -1,0 +1,15 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	mainfile = objc-brows.el
+	exclude-path = ^hypb
+	# NOTE: Provided to prevent it from being loaded
+	exclude-provided = hsite
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/oo-browser.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "manual-import"]
+	elm-homepage = http://sourceforge.net/projects/oo-browser/

@@ -1,0 +1,12 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[branch "web-import"]
+	# NOTE: zip files are not supported anymore
+	elm-webfile = http://www.mapleprimes.com/files/%v_maplev.zip
+	elm-homepage = http://www.mapleprimes.com/blog/joe-riel/emacs-mode-for-maple
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/maplev.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

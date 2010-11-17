@@ -1,0 +1,17 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://github.com/yabuki/yc-el.git
+[branch "Feature/Adapting_to_Emacs23_as_well_as_other_emacs"]
+	remote = origin
+	merge = refs/heads/Feature/Adapting_to_Emacs23_as_well_as_other_emacs
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/yc.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	elm-fetcher = git
+	elm-homepage = http://github.com/yabuki/yc-el

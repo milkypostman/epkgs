@@ -1,0 +1,15 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	mainfile = ept.el
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/elpoint.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	elm-fetcher = cvs
+	elm-homepage = http://elpoint.sourceforge.net/
+	cvs-url = pserver:anonymous@elpoint.cvs.sourceforge.net:/cvsroot/elpoint
+	cvs-fetch = Elpoint

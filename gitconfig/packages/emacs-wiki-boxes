@@ -1,0 +1,12 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/emacs-wiki-boxes.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "web-import"]
+	elm-fetcher = web
+	elm-webfile = http://sugarshark.com/elisp/mylisp/emacs-wiki-boxes.el
+	elm-homepage = http://sugarshark.com/elisp/ProjectPage.html

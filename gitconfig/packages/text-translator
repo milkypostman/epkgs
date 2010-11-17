@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[branch "emacswiki"]
+	elm-last-seen = 20c752657e7ef2245d266473bb2ce6a99fe786b9
+	elm-fetcher = wiki
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/text-translator.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

@@ -1,0 +1,13 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/xslide.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	elm-fetcher = cvs
+	elm-homepage = http://www.menteith.com/wiki/xslide
+	cvs-url = pserver:anonymous@xslide.cvs.sourceforge.net:/cvsroot/xslide
+	cvs-fetch = xslide

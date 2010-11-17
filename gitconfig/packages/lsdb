@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "mirror"]
+	url = git@github.com:emacsmirror/lsdb.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "manual-import"]
+	# FIXME: still available but web import failed
+	elm-homepage = http://lsdb.sourceforge.jp

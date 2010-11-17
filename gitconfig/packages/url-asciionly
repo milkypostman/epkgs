@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[branch "emacswiki"]
+	elm-last-seen = 3646f293a7621de2eb93a262117c4c91dc49e03a
+	elm-fetcher = wiki
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/url-asciionly.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

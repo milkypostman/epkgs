@@ -1,0 +1,18 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	exclude-provided = json
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://github.com/CMB/aurquery-el.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+	elm-homepage = http://github.com/CMB/aurquery-el
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/aurquery.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

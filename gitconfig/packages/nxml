@@ -1,0 +1,13 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/nxml.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "web-import"]
+	elm-fetcher = web
+	elm-webfile = nxml-mode-%v.tar.gz
+	elm-homepage = http://www.thaiopensource.com/nxml-mode/
+	elm-linkpage = http://www.thaiopensource.com/download/

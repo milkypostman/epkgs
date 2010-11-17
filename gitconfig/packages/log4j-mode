@@ -1,0 +1,13 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "mirror"]
+	url = git@github.com:emacsmirror/log4j-mode.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "web-import"]
+	elm-fetcher = web
+	elm-homepage = http://log4j-mode.sourceforge.net/
+	elm-webfile = http://sourceforge.net/projects/log4j-mode/files/log4j-mode/1.3/log4j-mode-1.3.tar.gz/download
+	elm-linkpage = http://sourceforge.net/projects/log4j-mode/files/

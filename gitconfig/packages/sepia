@@ -1,0 +1,16 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://repo.or.cz/sepia.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+	elm-homepage = http://search.cpan.org/src/SEANO/Sepia-0.96/Sepia.html
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/sepia.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

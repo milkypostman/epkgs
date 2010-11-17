@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[branch "web-import"]
+	elm-webfile = http://www.dewn.com/rfc/rfc-util.el
+	elm-fetcher = web
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/rfc-util.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

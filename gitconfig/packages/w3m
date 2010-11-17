@@ -1,0 +1,24 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	# FIXME: versions can not be extracted because tags have a
+	# prefix different from the package name (as on the mirror)
+	# This version is very old, we rather have no versions at all.
+	ignore-version = 0.1
+	# NOTE: XEmacs only
+	exclude-required = un-define
+	#
+	prefix = sb
+	include = shimbun
+	exclude-path = ^\\(attic\\|doc\\)
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/w3m.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	elm-fetcher = cvs
+	elm-homepage = http://emacs-w3m.namazu.org/
+	cvs-url = pserver:anonymous@cvs.namazu.org:/storage/cvsroot
+	cvs-fetch = emacs-w3m

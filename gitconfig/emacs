@@ -1,0 +1,12 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = true
+[remote "origin"]
+	url = git://repo.or.cz/emacs.git
+	fetch = +refs/*:refs/*
+	mirror = true
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/emacs.git
+	fetch = +refs/*:refs/*
+	mirror = true

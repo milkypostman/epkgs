@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	# NOTE: provided feature and filename don't match
+	include = ilisp-browse-cltl2
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/browse-cltl2.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

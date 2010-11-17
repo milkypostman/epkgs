@@ -1,0 +1,18 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	# NOTE: XEmacs only
+	exclude-required = view-less
+	#
+	exclude-provided = cust-stub
+	exclude-provided = reporter
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/efs.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "web-import"]
+	elm-fetcher = web
+	elm-webfile = http://www-pu.informatik.uni-tuebingen.de/users/sperber/software/efs/efs-1.24.tar.gz
+	elm-homepage = http://www-pu.informatik.uni-tuebingen.de/users/sperber/software/efs/

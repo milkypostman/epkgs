@@ -1,0 +1,13 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/p4.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	elm-fetcher = cvs
+	elm-homepage = http://p4el.sourceforge.net/
+	cvs-url = pserver:anonymous@p4el.cvs.sourceforge.net:/cvsroot/p4el
+	cvs-fetch = p4

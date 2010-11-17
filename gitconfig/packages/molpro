@@ -1,0 +1,12 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[branch "web-import"]
+	elm-webfile = http://www.molpro.net/info/molpro.el
+	elm-fetcher = web
+	elm-homepage = http://www.molpro.net/info/links?portal=visitor
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/molpro.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

@@ -1,0 +1,10 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[xpkg]
+	wikipage = DisplayBufferTimeStamps
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/buffer-time-stamp.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

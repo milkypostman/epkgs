@@ -1,0 +1,15 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	exclude-path = ^mailcrypt
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/records.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	elm-fetcher = cvs
+	elm-homepage = http://sourceforge.net/projects/records
+	cvs-url = pserver:anonymous@records.cvs.sourceforge.net:/cvsroot/records
+	cvs-fetch = records

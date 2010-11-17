@@ -1,0 +1,12 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/uuinsert.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "web-import"]
+	elm-fetcher = web
+	elm-webfile = http://www.cis.upenn.edu/~bcpierce/papers/uuinsert.el
+	elm-homepage = "http://www.cis.upenn.edu/~bcpierce/papers/index.shtml#Emacs%20Hacks"

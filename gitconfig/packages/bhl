@@ -1,0 +1,12 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/bhl.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "web-import"]
+	# NOTE: homepage sais it is abandoned
+	elm-webfile = http://www.cognition.ens.fr/~guerry/bhl/download/bhl.el.gz
+	elm-homepage = http://www.nongnu.org/bhl/

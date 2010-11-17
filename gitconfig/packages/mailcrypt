@@ -1,0 +1,16 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	# FIXME: really stand-alone?
+	exclude-provided = expect
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/mailcrypt.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	elm-fetcher = cvs
+	elm-homepage = http://mailcrypt.sourceforge.net/
+	cvs-url = pserver:anonymous@mailcrypt.cvs.sourceforge.net:/cvsroot/mailcrypt
+	cvs-fetch = mailcrypt

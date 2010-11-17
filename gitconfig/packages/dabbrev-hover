@@ -1,0 +1,12 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/dabbrev-hover.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "web-import"]
+	elm-fetcher = web
+	elm-webfile = http://www.gnufans.net/~deego/emacspub/lisp-mine/dabbrev-hover/dev/dabbrev-hover.el
+	elm-homepage = http://www.gnufans.net/~deego/emacs.html

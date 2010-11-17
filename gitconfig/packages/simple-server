@@ -1,0 +1,18 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	exclude-provided = htmlize
+	exclude-provided = httpd
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://github.com/eschulte/simple-server.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/simple-server.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

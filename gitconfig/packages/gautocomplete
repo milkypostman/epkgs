@@ -1,0 +1,16 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://github.com/fgallina/gautocomplete.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	# FIXME: replaced with gpycomplete?
+	elm-homepage = http://github.com/fgallina/gautocomplete
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/gautocomplete.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

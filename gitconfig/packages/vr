@@ -1,0 +1,13 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/vr.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	elm-fetcher = cvs
+	elm-homepage = http://emacs-vr-mode.sourceforge.net/
+	cvs-url = pserver:anonymous@emacs-vr-mode.cvs.sourceforge.net:/cvsroot/emacs-vr-mode
+	cvs-fetch = vrmode

@@ -1,0 +1,21 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	# NOTE: XEmacs only
+	exclude-required = x-font-menu
+	# NOTE: used to be part of emacs, now several pkgs contain it
+	exclude-provided = ssl
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://git.sv.gnu.org/w3.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+	elm-homepage = http://www.gnu.org/software/w3/
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/w3.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

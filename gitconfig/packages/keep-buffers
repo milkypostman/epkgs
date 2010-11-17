@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[branch "web-import"]
+	elm-webfile = http://ftp.sunet.se/pub/gnu/emacs-lisp/incoming/keep-buffers.el
+	elm-fetcher = web
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/keep-buffers.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

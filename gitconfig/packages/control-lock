@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[branch "emacswiki"]
+	elm-last-seen = 7206cd0db4d25c3da71be50982ddde9774e6f6a8
+	elm-fetcher = wiki
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/control-lock.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

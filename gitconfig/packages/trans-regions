@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[branch "emacswiki"]
+	elm-last-seen = 4f3822755c6a3ac117884259697d58bc63d63f3d
+	elm-fetcher = wiki
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/trans-regions.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

@@ -1,0 +1,17 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	# FIXME: maybe some libraries from this directory should not be excluded?
+	exclude-path = ^admin
+	import-from = 5.20
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/cc-mode.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	elm-fetcher = cvs
+	elm-homepage = http://cc-mode.sourceforge.net/
+	cvs-url = pserver:anonymous@cc-mode.cvs.sourceforge.net:/cvsroot/cc-mode
+	cvs-fetch = cc-mode

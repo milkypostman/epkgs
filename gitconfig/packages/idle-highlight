@@ -1,0 +1,12 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "mirror"]
+	url = git@github.com:emacsmirror/idle-highlight.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "web-import"]
+	elm-fetcher = web
+	elm-homepage = http://github.com/technomancy/dotfiles/blob/master/.emacs.old/idle-highlight.el
+	elm-webfile = http://github.com/technomancy/dotfiles/raw/master/.emacs.old/idle-highlight.el

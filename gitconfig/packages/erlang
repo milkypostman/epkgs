@@ -1,0 +1,16 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://github.com/erlang/otp.git
+[remote "mirror"]
+	url = git@github.com:emacsmirror/erlang.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	elm-fetcher = git
+	elm-homepage = http://www.erlang.org/doc/apps/tools/erlang_mode_chapter.html
+	remote = origin
+	merge = refs/heads/master

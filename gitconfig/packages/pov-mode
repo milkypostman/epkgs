@@ -1,0 +1,13 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[branch "web-import"]
+	elm-webfile = ../emacs/pov-mode-%v.tar.gz
+	elm-fetcher = web
+	elm-homepage = http://www.xahlee.org/3d/povray_emacs.html
+	elm-fails = 0
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/pov-mode.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

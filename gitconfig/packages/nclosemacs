@@ -1,0 +1,15 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	mainfile = nclose.el
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/nclosemacs.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "web-import"]
+	elm-fetcher = web
+	elm-webfile = http://nclosemacs.googlecode.com/files/nclosemacs-%v.tar
+	elm-linkpage = http://code.google.com/p/nclosemacs/downloads/list
+	elm-homepage = http://code.google.com/p/nclosemacs/

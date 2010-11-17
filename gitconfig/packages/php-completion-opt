@@ -1,0 +1,15 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://github.com/kitokitoki/php-completion-opt.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-homepage = http://github.com/kitokitoki/php-completion-opt
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/php-completion-opt.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

@@ -1,0 +1,15 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[branch "master"]
+	cvs-url = pserver:anonymous@emacs-ringing.cvs.sourceforge.net:/cvsroot/emacs-ringing
+	cvs-fetch = emacs-ringing/lisp
+	elm-fetcher = cvs
+	elm-homepage = http://emacs-ringing.sourceforge.net
+[remote "mirror"]
+	url = git@github.com:emacsmirror/emacs-ringing.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[elm]
+	mainfile = ringing.el

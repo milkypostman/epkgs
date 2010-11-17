@@ -1,0 +1,16 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://gist.github.com/302848.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+	elm-homepage = http://gist.github.com/302848
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/python-pylint.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

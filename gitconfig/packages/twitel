@@ -1,0 +1,16 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = http://git.busydoingnothing.co.uk/cgit.cgi/twitel.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+	elm-homepage = http://git.busydoingnothing.co.uk/cgit.cgi/twitel.git
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/twitel.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

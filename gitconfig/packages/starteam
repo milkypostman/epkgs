@@ -1,0 +1,13 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/starteam.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	elm-fetcher = cvs
+	elm-homepage = http://sourceforge.net/projects/starteam-el/
+	cvs-url = pserver:anonymous@starteam-el.cvs.sourceforge.net:/cvsroot/starteam-el
+	cvs-fetch = starteam

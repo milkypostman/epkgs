@@ -1,0 +1,20 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	# NOTE: provided by generated file
+	# FIXME: no other feature from w3m explicitly required
+	exclude-required = w3m-load
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://github.com/imakado/emacs-anything-w3m.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+	elm-homepage = http://github.com/imakado/emacs-anything-w3m
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/anything-w3m.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

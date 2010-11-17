@@ -1,0 +1,12 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[branch "web-import"]
+	elm-webfile = http://staff.science.uva.nl/~dominik/Tools/constants/constants.el
+	elm-fetcher = web
+	elm-homepage = http://staff.science.uva.nl/~dominik/Tools/constants/
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/constants.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

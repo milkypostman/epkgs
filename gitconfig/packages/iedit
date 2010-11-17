@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[branch "emacswiki"]
+	elm-last-seen = e6ecc69faedecc883af520c141a747d56c1e3160
+	elm-fetcher = wiki
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/iedit.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

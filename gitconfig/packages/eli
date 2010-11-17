@@ -1,0 +1,18 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://github.com/franzinc/eli.git
+[remote "mirror"]
+	url = git@github.com:emacsmirror/eli.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	elm-fetcher = git
+	elm-homepage = http://www.franz.com/support/documentation/current/doc/eli.htm
+	remote = origin
+	merge = refs/heads/master
+[elm]
+	mainfile = fi-site-init.el

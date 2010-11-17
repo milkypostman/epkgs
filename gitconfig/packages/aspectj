@@ -1,0 +1,15 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	include = ajdee
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/aspectj.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	elm-fetcher = cvs
+	elm-homepage = http://aspectj4emacs.sourceforge.net/
+	cvs-url = pserver:anonymous@aspectj4emacs.cvs.sourceforge.net:/cvsroot/aspectj4emacs
+	cvs-fetch = AspectJForEmacs

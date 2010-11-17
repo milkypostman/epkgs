@@ -1,0 +1,12 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[branch "web-import"]
+	elm-webfile = http://www.columbia.edu/~jr2075/elisp/ldots.el
+	elm-fetcher = web
+	elm-homepage = http://www.columbia.edu/~jr2075/elisp/index.html
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/ldots.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

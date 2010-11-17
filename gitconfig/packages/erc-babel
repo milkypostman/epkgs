@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[branch "emacswiki"]
+	elm-last-seen = ab0005649602955cd85b8a6fb51f40fa1fc6b66b
+	elm-fetcher = wiki
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/erc-babel.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

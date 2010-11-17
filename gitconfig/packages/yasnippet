@@ -1,0 +1,19 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	autocrlf = false
+[elm]
+	exclude-provided = dropdown-list
+[svn-remote "svn"]
+	url = http://yasnippet.googlecode.com/svn
+	fetch = trunk:refs/remotes/trunk
+	branches = branches/*:refs/remotes/*
+	tags = tags/*:refs/remotes/tags/*
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/yasnippet.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	elm-fetcher = svn
+	elm-homepage = http://code.google.com/p/yasnippet/

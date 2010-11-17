@@ -1,0 +1,14 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	# NOTE: the mirrored units package isn't related
+	exclude-provided = units
+[remote "mirror"]
+	url = git@github.com:emacsmirror/cpad.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "manual-import"]
+	# FIXME: file still available but can't download because of cgi hell
+	elm-homepage = http://akimichi.homeunix.net/~emile/aki/hiki.cgi?CpadElisp

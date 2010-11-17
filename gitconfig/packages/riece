@@ -1,0 +1,21 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	exclude-path = ^doc
+	# FIXME: mirror this as stand-alone package, also required
+	# by pases
+	# exclude-provided = luna
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://git.savannah.nongnu.org/riece.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+	elm-homepage = http://www.nongnu.org/riece/
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/riece.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

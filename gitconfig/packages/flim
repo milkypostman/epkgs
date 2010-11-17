@@ -1,0 +1,27 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+[elm]
+	mainfile = mel.el
+	# NOTE: XEmacs only
+	exclude-required = alist
+	#
+	exclude-provided = hex-util
+	exclude-provided = hmac-sha1
+	exclude-provided = luna
+	exclude-provided = lunit
+	exclude-provided = mailcap
+	exclude-provided = md5
+	exclude-provided = sha1
+	exclude-provided = smtpmail
+[branch "master"]
+	cvs-url = pserver:anonymous@cvs.m17n.org:/cvs/root
+	cvs-fetch = flim
+	elm-fetcher = cvs
+	elm-homepage = http://www.kanji.zinbun.kyoto-u.ac.jp/~tomo/lemi/
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/flim.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

@@ -1,0 +1,14 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[xpkg]
+	wikipage = FcshCompileSupport
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/ani-fcsh.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "web-import"]
+	elm-fetcher = web
+	elm-webfile = http://anirudhs.chaosnet.org/code/ani-fcsh.el
+	elm-homepage = http://anirudhs.chaosnet.org/blog/2008.03.26.html

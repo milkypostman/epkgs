@@ -1,0 +1,32 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	mainfile = lisp/tiny/tiny-setup.el
+	prefix = tiny
+	# NOTE: XEmacs only
+	exclude-required = view-less
+	# NOTE: Some of the bundled packages are not available (at least
+	# not mirrored) seperately so we can't exclude the complete
+	# directory yet.
+	# exclude-path = ^lisp/other
+	exclude-provided = c-comment-edit
+	exclude-provided = dired-sort
+	exclude-provided = expect
+	exclude-provided = folding
+	exclude-provided = folding-isearch
+	exclude-provided = tiny-autoload-loaddefs-other
+	exclude-provided = tiny-autoload-loaddefs-tiny
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://git.sv.gnu.org/emacs-tiny-tools.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+	elm-homepage = http://www.nongnu.org/emacs-tiny-tools/
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/tiny-tools.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

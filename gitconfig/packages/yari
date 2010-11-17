@@ -1,0 +1,18 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	exclude-path = ^vendor
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://github.com/hron/yari.el.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+	elm-homepage = http://github.com/hron/yari.el
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/yari.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

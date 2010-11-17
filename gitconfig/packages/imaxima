@@ -1,0 +1,16 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	# NOTE: XEmacs only
+	exclude-required = atomic-extents
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/imaxima.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "web-import"]
+	elm-fetcher = web
+	elm-webfile = Download_and_Install_files/imaxima-imath-%v.tar.gz
+	elm-homepage = http://members3.jcom.home.ne.jp/imaxima/Site/Welcome.html
+	elm-linkpage = http://members3.jcom.home.ne.jp/imaxima/Site/Download_and_Install.html

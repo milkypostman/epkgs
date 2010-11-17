@@ -1,0 +1,18 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	exclude-provided = vcard
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://github.com/trebb/bbdb-vcard.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+	elm-homepage = http://github.com/trebb/bbdb-vcard
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/bbdb-vcard.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

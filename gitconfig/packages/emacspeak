@@ -1,0 +1,25 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	autocrlf = false
+[elm]
+	exclude-provided = amixer
+	exclude-provided = atom-blogger
+	exclude-provided = json    # newer version in emacs
+	exclude-provided = stack-f # part of elib
+	exclude-provided = string  # part of elib
+	exclude-provided = tapestry
+	exclude-provided = w3-hot  # part of w3
+	exclude-provided = xml-parse
+[svn-remote "svn"]
+	url = http://emacspeak.googlecode.com/svn
+	fetch = trunk:refs/remotes/trunk
+	tags = tags/*:refs/remotes/tags/*
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/emacspeak.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	elm-fetcher = svn
+	elm-homepage = http://emacspeak.sourceforge.net/

@@ -1,0 +1,12 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[branch "web-import"]
+	elm-webfile = http://www.ii.uib.no/~hove/lisp/mcalc.el
+	elm-fetcher = web
+	elm-homepage = http://www.ii.uib.no/~hove/lisp/index.html
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/mcalc.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

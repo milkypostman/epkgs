@@ -1,0 +1,16 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	exclude-path = ^package
+[svn-remote "svn"]
+	url = http://ergoemacs.googlecode.com/svn
+	fetch = trunk:refs/remotes/trunk
+[remote "mirror"]
+	url = git@github.com:emacsmirror/ergoemacs.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	elm-fetcher = svn
+	elm-homepage = http://ergoemacs.org/

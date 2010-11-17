@@ -1,0 +1,13 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/lookup.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	elm-fetcher = cvs
+	elm-homepage = http://lookup.sourceforge.net/
+	cvs-url = pserver:anonymous@lookup.cvs.sourceforge.net:/cvsroot/lookup
+	cvs-fetch = lookup

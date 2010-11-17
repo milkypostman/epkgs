@@ -1,0 +1,13 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[branch "master"]
+	cvs-url = pserver:anonymous@xbasemode.cvs.sourceforge.net:/cvsroot/xbasemode/
+	cvs-fetch = xbasemode
+	elm-fetcher = cvs
+	elm-homepage = http://xbasemode.sourceforge.net/
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/xbase.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

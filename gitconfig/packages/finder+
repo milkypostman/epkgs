@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[branch "emacswiki"]
+	elm-last-seen = 0d6ef7221525c93fdf0cec1e89b57ace3951f764
+	elm-fetcher = wiki
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/finder-plus.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

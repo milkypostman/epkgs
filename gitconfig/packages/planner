@@ -1,0 +1,16 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://repo.or.cz/planner-el.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+	elm-homepage = http://www.wjsullivan.net/PlannerMode.htm
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/planner.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

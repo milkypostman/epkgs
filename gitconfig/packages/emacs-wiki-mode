@@ -1,0 +1,23 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	# NOTE: Some of the bundled packages are not available (at least
+	# not mirrored) seperately so we can't exclude the complete
+	# directory yet.
+	# exclude-path = ^contrib
+	exclude-provided = cgi
+	exclude-provided = htmlize
+	exclude-provided = httpd
+	exclude-provided = table # stand-alone, FIXME: but this is more recent
+	# exclude-provided = update-remote
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/emacs-wiki-mode.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "web-import"]
+	elm-fetcher = web
+	elm-webfile = emacs-wiki-%v.tar.gz
+	elm-homepage = http://mwolson.org/projects/EmacsWikiMode.html
+	elm-linkpage = http://mwolson.org/static/dist/emacs-wiki/

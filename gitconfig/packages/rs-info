@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/rs-info.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "web-import"]
+	elm-webfile = http://theotp1.physik.uni-ulm.de/~ste/comp/emacs/misc/rs-info.el
+	elm-homepage = http://theotp1.physik.uni-ulm.de/~ste/

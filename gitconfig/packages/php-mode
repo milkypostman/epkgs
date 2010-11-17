@@ -1,0 +1,14 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	autocrlf = false
+[svn-remote "svn"]
+	url = https://php-mode.svn.sourceforge.net/svnroot/php-mode
+	fetch = trunk/php-mode-src:refs/remotes/trunk
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/php-mode.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	elm-fetcher = svn

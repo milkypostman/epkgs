@@ -1,0 +1,25 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	mainfile = tex.el
+	prefix = context
+	prefix = tex
+	include = bib-cite
+	include = font-latex
+	include = latex
+	include = multi-prompt
+	include = preview
+	include = prv-emacs
+	include = prv-xemacs
+	include = toolbar-x
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/auctex.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "web-import"]
+	elm-fetcher = web
+	elm-webfile = http://ftp.gnu.org/pub/gnu/auctex/auctex-%v.tar.gz
+	elm-homepage = http://www.gnu.org/software/auctex/
+	elm-linkpage = http://www.gnu.org/software/auctex/download-for-unix.html

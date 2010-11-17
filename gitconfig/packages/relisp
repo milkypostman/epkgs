@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "mirror"]
+	url = git@github.com:emacsmirror/relisp.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "manual-import"]
+	# FIXME: download urls contain a random number
+	elm-homepage = http://rubyforge.org/frs/download.php/63431/relisp-1.0.1.tgz

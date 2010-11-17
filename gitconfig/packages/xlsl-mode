@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/xlsl-mode.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "web-import"]
+	elm-webfile = http://lsl-mode.googlecode.com/files/xlsl-mode.el
+	elm-homepage = http://xahlee.org/sl/ls-emacs.html

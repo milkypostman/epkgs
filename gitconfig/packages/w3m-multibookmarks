@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/w3m-multibookmarks.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "web-import"]
+	elm-webfile = http://www.well.com/~discover/emacs-w3m-stuff/w3m-multibookmarks.el
+	elm-homepage = http://www.well.com/~discover/emacs-w3m-stuff/

@@ -1,0 +1,18 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	mainfile = mupad.el
+	# NOTE: This feature is provided by mupacs itself but due
+	# to a typo xpkg can't see it
+	exclude-required = mupad-cpl
+[branch "master"]
+	cvs-url = pserver:anonymous@mupacs.cvs.sourceforge.net:/cvsroot/mupacs
+	cvs-fetch = mupacs
+	elm-fetcher = cvs
+	elm-homepage = http://mupacs.sourceforge.net/
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/mupacs.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

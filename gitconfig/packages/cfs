@@ -1,0 +1,13 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/cfs.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	elm-fetcher = cvs
+	elm-homepage = http://www.gnu.org/software/cfs-el/cfs-el.html
+	cvs-url = pserver:anonymous@cvs.savannah.nongnu.org:/sources/cfs-el
+	cvs-fetch = cfs-el

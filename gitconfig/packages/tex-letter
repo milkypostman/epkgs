@@ -1,0 +1,12 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/tex-letter.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "web-import"]
+	# FIXME access impossible because of some obscure cgi
+	elm-webfile = http://www.skamphausen.de/cgi-bin/ska/download/tex-letter.el
+	elm-homepage = http://www.skamphausen.de/cgi-bin/ska/tex-letter

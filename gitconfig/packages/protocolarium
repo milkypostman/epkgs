@@ -1,0 +1,23 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	# NOTE: randomly picked
+	mainfile = bio.el
+	# NOTE: there already is an older alert.el
+	exclude-provided = alert
+	#
+	exclude-provided = spread
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://github.com/macdice/protocolarium.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+	elm-homepage = http://github.com/macdice/protocolarium
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/protocolarium.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

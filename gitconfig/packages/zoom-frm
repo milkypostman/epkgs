@@ -1,0 +1,13 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	last-seen = 66e4aeae54d4ac9ec86955236b9e0a2d21a9ab47
+[branch "emacswiki"]
+	elm-last-seen = 66e4aeae54d4ac9ec86955236b9e0a2d21a9ab47
+	elm-fetcher = wiki
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/zoom-frm.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

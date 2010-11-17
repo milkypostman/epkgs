@@ -1,0 +1,17 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[xpkg]
+	wikipage = ErtTestLibrary
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://github.com/ohler/ert.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/ert.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

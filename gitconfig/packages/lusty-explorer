@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[branch "emacswiki"]
+	elm-last-seen = e372c538ebd26dc067ace85a2a8dca00bcabb4c1
+	elm-fetcher = wiki
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/lusty-explorer.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

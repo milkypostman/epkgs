@@ -1,0 +1,16 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	exclude-provided = lui
+	exclude-provided = tracking
+[branch "master"]
+	cvs-url = pserver:anonymous@cvs.savannah.nongnu.org:/sources/circe/
+	cvs-fetch = circe
+	elm-fetcher = cvs
+	elm-homepage = http://www.nongnu.org/circe/
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/circe.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

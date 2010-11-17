@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/xbbcode-mode.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "web-import"]
+	elm-webfile = http://xahlee.org/emacs/xbbcode-mode.el
+	elm-homepage = http://xahlee.org/emacs/xbbcode-mode.html

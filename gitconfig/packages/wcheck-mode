@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[branch "emacswiki"]
+	elm-last-seen = 82b7bfca5305b49da568f4a7ea2ab3000911dd2b
+	elm-fetcher = wiki
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/wcheck-mode.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

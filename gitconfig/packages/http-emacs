@@ -1,0 +1,15 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	mainfile = http-post.el
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/http-emacs.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	elm-fetcher = cvs
+	elm-homepage = http://savannah.nongnu.org/projects/http-emacs/
+	cvs-url = pserver:anonymous@cvs.sv.gnu.org:/sources/http-emacs
+	cvs-fetch = http-emacs

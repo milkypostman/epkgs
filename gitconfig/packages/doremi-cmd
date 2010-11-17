@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[branch "emacswiki"]
+	elm-last-seen = e6568a9ea7ec3e498d6786b686f2ea11601be7cb
+	elm-fetcher = wiki
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/doremi-cmd.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

@@ -1,0 +1,33 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	# FIXME: stand-alone; but this is more recent
+	exclude-provided = winsize
+	# FIXME: exclude complete directory?
+	exclude-provided = anchored-transpose
+	exclude-provided = csharp-mode
+	exclude-provided = css-palette
+	exclude-provided = edit-server
+	exclude-provided = ert
+	exclude-provided = fold-dwim
+	exclude-provided = html-toc
+	exclude-provided = iss-mode
+	exclude-provided = javascript-mode
+	exclude-provided = org-panel # part of org
+	exclude-provided = outline-magic
+	exclude-provided = php-mode
+	exclude-provided = pointback
+	exclude-provided = rnc-mode
+	exclude-provided = smarty-mode
+	exclude-provided = visual-basic-mode
+	exclude-provided = vline
+	exclude-provided = wikipedia-mode
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/nxhtml.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	elm-fetcher = bzr
+	elm-homepage = https://launchpad.net/nxhtml

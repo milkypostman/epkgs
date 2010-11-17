@@ -1,0 +1,18 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	mainfile = proto-sourcepawn-mode.el
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://github.com/agrif/sourcepawn-mode.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+	elm-homepage = http://gamma-level.com/teamfortress2/sourcepawn-mode
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/sourcepawn-mode.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

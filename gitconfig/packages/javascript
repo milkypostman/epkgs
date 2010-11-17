@@ -1,0 +1,17 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	# FIXME: There is another javascript-mode.  Since javascript-mode
+	# doesn't match the filename we drop the feature here not there.
+	# This should provide javascript instead.
+	exclude-provided = javascript-mode
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/javascript.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "web-import"]
+	elm-fetcher = web
+	elm-webfile = http://www.brgeight.se/downloads/emacs/javascript.el
+	elm-homepage = http://www.brgeight.se/

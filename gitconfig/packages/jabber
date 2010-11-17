@@ -1,0 +1,21 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	# NOTE: XEmacs only
+	exclude-required = un-define
+	#
+	exclude-path = ^\\(tests\\|compat\\)
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://emacs-jabber.git.sourceforge.net/gitroot/emacs-jabber/emacs-jabber
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+	elm-homepage = http://emacs-jabber.sourceforge.net/
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/jabber.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

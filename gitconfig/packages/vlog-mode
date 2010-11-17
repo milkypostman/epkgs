@@ -1,0 +1,13 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/vlog-mode.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	elm-fetcher = cvs
+	elm-homepage = http://vlog-mode.sourceforge.net/
+	cvs-url = pserver:anonymous@vlog-mode.cvs.sourceforge.net:/cvsroot/vlog-mode
+	cvs-fetch = vlog-mode

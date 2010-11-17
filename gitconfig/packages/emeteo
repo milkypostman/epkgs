@@ -1,0 +1,13 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[branch "master"]
+	cvs-url = pserver:anonymous@cvs.gna.org:/var/cvs/emeteo
+	cvs-fetch = emeteo
+	elm-fetcher = cvs
+	elm-homepage = http://gna.org/projects/emeteo/
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/emeteo.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

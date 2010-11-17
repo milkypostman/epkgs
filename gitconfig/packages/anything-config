@@ -1,0 +1,32 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	# NOTE: bundled features also available as stand-alone packages
+	exclude-provided = anything
+	exclude-provided = anything-complete
+	exclude-provided = anything-grep
+	exclude-provided = anything-gtags
+	exclude-provided = anything-ipa
+	exclude-provided = anything-match-plugin
+	exclude-provided = anything-menu
+	exclude-provided = anything-migemo
+	exclude-provided = anything-show-completion
+	# FIXME: maybe available as stand-alone package, but not mirrored
+	include = anything-multi-sources
+	include = anything-startup
+	# FIXME: seams to be stand-alone package, but not mirrored
+	include = autodoc
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://repo.or.cz/anything-config.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+	elm-homepage = http://repo.or.cz/w/anything-config.git
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/anything-config.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

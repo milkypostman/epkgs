@@ -1,0 +1,16 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://github.com/kiwanami/emacs-window-layout.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+	elm-homepage = http://github.com/kiwanami/emacs-window-layout
+[remote "mirror"]
+	url = git@github.com:emacsmirror/window-layout.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

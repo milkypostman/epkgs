@@ -1,0 +1,20 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	exclude-provided = auto-complete
+	exclude-provided = fuzzy # part of auto-complete
+	exclude-provided = popup # part of auto-complete
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://github.com/aemoncannon/ensime.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+	elm-homepage = http://github.com/aemoncannon/ensime
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/ensime.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

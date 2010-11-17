@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[branch "emacswiki"]
+	elm-last-seen = 1003d71ebaf502f6f1244386710f67aeb2d466bb
+	elm-fetcher = wiki
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/pastebin.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[branch "web-import"]
+	elm-webfile = ftp://ftp.newartisans.com/pub/emacs/initsplit.el
+	elm-fetcher = web
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/initsplit.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

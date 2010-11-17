@@ -1,0 +1,14 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	autocrlf = false
+[svn-remote "svn"]
+	url = http://svn.fperrin.net
+	fetch = powershell-mode:refs/remotes/trunk
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/powershell-mode.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	elm-fetcher = svn

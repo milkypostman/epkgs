@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[branch "emacswiki"]
+	elm-last-seen = d1c3ecc7c96977c5f9911855c01e2f83c218bccd
+	elm-fetcher = wiki
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/dired-plus.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

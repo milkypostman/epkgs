@@ -1,0 +1,13 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[branch "master"]
+	cvs-url = pserver:anonymous@ejab.cvs.sourceforge.net:/cvsroot/ejab/
+	cvs-fetch = ejab
+	elm-fetcher = cvs
+	elm-homepage = http://ejab.sourceforge.net/
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/ejab.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

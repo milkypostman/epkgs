@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/backup-each-save.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "web-import"]
+	elm-webfile = http://www.bloomington.in.us/~brutt/backup-each-save.el
+	elm-homepage = http://www.bloomington.in.us/~brutt/emacs.html

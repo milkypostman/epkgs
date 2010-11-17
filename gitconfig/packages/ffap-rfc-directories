@@ -1,0 +1,12 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/ffap-rfc-directories.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "web-import"]
+	elm-fetcher = web
+	elm-webfile = ftp://download.tuxfamily.org/user42/ffap-rfc-directories.el
+	elm-homepage = http://user42.tuxfamily.org/ffap-rfc-directories/index.html

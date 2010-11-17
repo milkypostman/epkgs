@@ -1,0 +1,16 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://github.com/imakado/php-completion.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+	elm-homepage = http://github.com/imakado/php-completion
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/php-completion.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

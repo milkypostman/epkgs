@@ -1,0 +1,20 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	exclude-path = ^\\(xemacs\\|testing\\)
+	exclude-provided = htmlize
+	import-from = 6.33
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://repo.or.cz/org-mode.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+	elm-homepage = http://orgmode.org
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/org-mode.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

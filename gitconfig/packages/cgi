@@ -1,0 +1,14 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[xpkg]
+	wikipage = CommonGatewayInterface
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/cgi.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "web-import"]
+	elm-fetcher = web
+	elm-webfile = http://emarsden.chez.com/downloads/cgi.el
+	elm-homepage = http://emarsden.chez.com/downloads/

@@ -1,0 +1,16 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	autocrlf = false
+[svn-remote "svn"]
+	url = https://pmd.svn.sourceforge.net/svnroot/pmd
+	fetch = trunk/pmd-emacs:refs/remotes/trunk
+	tags = tags/pmd-emacs/*:refs/remotes/tags/*
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/pmd.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	elm-fetcher = svn
+	elm-homepage = http://pmd.sourceforge.net/

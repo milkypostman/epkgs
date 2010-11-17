@@ -1,0 +1,18 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	import-from = 6.0
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://github.com/jrockway/cperl-mode.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+	elm-homepage = http://github.com/jrockway/cperl-mode
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/cperl-mode.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

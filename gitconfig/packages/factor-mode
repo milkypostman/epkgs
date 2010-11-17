@@ -1,0 +1,16 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://factorcode.org/git/factor.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+	elm-homepage = http://gitweb.factorcode.org/gitweb.cgi?p=factor/.git
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/factor-mode.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

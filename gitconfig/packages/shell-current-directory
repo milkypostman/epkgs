@@ -1,0 +1,12 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "mirror"]
+	url = git@github.com:emacsmirror/shell-current-directory.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "web-import"]
+	elm-fetcher = web
+	elm-homepage = http://github.com/metaperl/emacs/blob/master/shell-current-directory.el
+	elm-webfile = http://github.com/metaperl/emacs/raw/master/shell-current-directory.el

@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[branch "emacswiki"]
+	elm-last-seen = 3432a57cbeb81d35b8a894e133c333b9a75b232a
+	elm-fetcher = wiki
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/strings.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

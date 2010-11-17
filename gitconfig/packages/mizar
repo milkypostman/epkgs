@@ -1,0 +1,18 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	exclude-path = ^doc
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://github.com/JUrban/mizarmode.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+	elm-homepage = http://ktilinux.ms.mff.cuni.cz/~urban/MizarModeDoc/html
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/mizar.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

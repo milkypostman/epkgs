@@ -1,0 +1,12 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[branch "web-import"]
+	elm-webfile = arcs/manued-%v.tar.gz
+	elm-fetcher = web
+	elm-homepage = http://www.mpi-inf.mpg.de/~hitoshi/otherprojects/manued/index.shtml
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/manued.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

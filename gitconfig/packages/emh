@@ -1,0 +1,19 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	# NOTE: XEmacs only
+	exclude-required = alist
+	#
+	ignore-version = 1.10.199811302358
+	ignore-version = 199811302358
+[branch "master"]
+	cvs-url = pserver:anonymous@cvs.m17n.org:/cvs/root
+	cvs-fetch = emh
+	elm-fetcher = cvs
+	elm-homepage = http://www.kanji.zinbun.kyoto-u.ac.jp/~tomo/lemi/
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/emh.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

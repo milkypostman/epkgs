@@ -1,0 +1,13 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[branch "master"]
+	cvs-url = pserver:anonymous@jtags.cvs.sourceforge.net:/cvsroot/jtags
+	cvs-fetch = jtags
+	elm-fetcher = cvs
+	elm-homepage = http://jtags.sourceforge.net/
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/jtags.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

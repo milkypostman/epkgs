@@ -1,0 +1,15 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	import-from = 0.8
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/mode-info.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	elm-fetcher = cvs
+	elm-homepage = http://www.namazu.org/~tsuchiya/elisp/mode-info.en.html
+	cvs-url = pserver:anonymous@cvs.namazu.org:/storage/cvsroot
+	cvs-fetch = mode-info

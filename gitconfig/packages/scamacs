@@ -1,0 +1,19 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	mainfile = src/elisp/scala/scala-mode.el
+	exclude-path = ^\\(ensime\\|src/elisp/ecb\\)
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://github.com/RayRacine/Scamacs.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+	elm-homepage = http://github.com/RayRacine/Scamacs
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/scamacs.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

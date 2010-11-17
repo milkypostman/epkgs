@@ -1,0 +1,12 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+# NOTE: these two remotes intentionally refer to the same repository
+[remote "origin"]
+	url = git@github-elm:emacsmirror/epkgs.git
+	fetch = +refs/heads/master:refs/remotes/origin/master
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/epkgs.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

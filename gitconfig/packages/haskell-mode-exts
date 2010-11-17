@@ -1,0 +1,18 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	mainfile = haskell-align-imports.el
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://github.com/chrisdone/haskell-mode-exts.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+	elm-homepage = http://chrisdone.com/tags/emacs.html
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/haskell-mode-exts.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

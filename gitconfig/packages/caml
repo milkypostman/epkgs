@@ -1,0 +1,14 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[svn-remote "svn"]
+	url = http://caml.inria.fr/svn
+	fetch = ocaml/trunk/emacs:refs/remotes/trunk
+[remote "mirror"]
+	url = git@github.com:emacsmirror/caml.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	elm-fetcher = svn
+	elm-homepage = http://caml.inria.fr/

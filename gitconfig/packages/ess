@@ -1,0 +1,17 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	autocrlf = false
+[elm]
+	exclude-provided = xemacs
+[svn-remote "svn"]
+	url = https://svn.r-project.org/ESS/trunk
+	fetch = :refs/remotes/git-svn
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/ess.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	elm-fetcher = svn
+	elm-homepage = http://ess.r-project.org

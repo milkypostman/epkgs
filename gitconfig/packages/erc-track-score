@@ -1,0 +1,16 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://git.naquadah.org/erc-track-score.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+	elm-homepage = http://julien.danjou.info/erc-track-score.html
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/erc-track-score.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

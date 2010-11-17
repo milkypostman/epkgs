@@ -1,0 +1,13 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/rtf.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	elm-fetcher = cvs
+	elm-homepage = http://savannah.nongnu.org/projects/emacs-rtf/
+	cvs-url = pserver:anonymous@cvs.savannah.nongnu.org:/sources/emacs-rtf
+	cvs-fetch = emacs-rtf

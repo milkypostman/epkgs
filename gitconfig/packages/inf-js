@@ -1,0 +1,14 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://github.com/bkyle/inf-js.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/inf-js.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

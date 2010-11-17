@@ -1,0 +1,18 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	autocrlf = false
+[elm]
+	last-seen = a7844a4c8b7ad57f5fdc07ff8799e1c855c47dc1
+[svn-remote "svn"]
+	url = svn://svn.sv.gnu.org/emacswiki
+	fetch = emacswikipages:refs/remotes/trunk
+[remote "origin"]
+	url = git@github-elm:emacsmirror/emacswiki.org.git
+	# Note: Everything but refs/heads/categorization
+	fetch = +refs/heads/elisp:refs/remotes/origin/elisp
+	fetch = +refs/heads/import:refs/remotes/origin/import
+	fetch = +refs/heads/master:refs/remotes/origin/master
+	fetch = +refs/heads/pkg/*:refs/remotes/origin/pkg/*

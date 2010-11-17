@@ -1,0 +1,40 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	# NOTE: Bundles many of the packages by the same author which
+	# are also available and mirrored seperately.
+	# TODO: The commented ones are not mirrored yet.
+	exclude-provided = auto-overlay-common
+	exclude-provided = auto-overlay-flat
+	exclude-provided = auto-overlay-line
+	exclude-provided = auto-overlay-nested
+	exclude-provided = auto-overlays-compat
+	exclude-provided = auto-overlays
+	exclude-provided = auto-overlay-self
+	exclude-provided = auto-overlay-word
+	#exclude-provided = avl-tree
+	exclude-provided = completion-ui-dynamic
+	exclude-provided = completion-ui-echo
+	exclude-provided = completion-ui
+	exclude-provided = completion-ui-hotkeys
+	exclude-provided = completion-ui-menu
+	exclude-provided = completion-ui-popup-frame
+	exclude-provided = completion-ui-sources
+	exclude-provided = completion-ui-tooltip
+	#exclude-provided = dict-english
+	#exclude-provided = dict-tree
+	#exclude-provided = heap
+	#exclude-provided = queue
+	exclude-provided = timerfunctions
+	#exclude-provided = tNFA
+	#exclude-provided = trie
+[branch "web-import"]
+	elm-webfile = download.php?file=predictive/predictive-%v.tar.gz&counter=predictive.tar.gz
+	elm-fetcher = web
+	elm-homepage = "http://www.dr-qubit.org/emacs.php#predictive"
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/predictive.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

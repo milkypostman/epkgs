@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/ldraw-mode.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "web-import"]
+	elm-webfile = http://www.math.uio.no/~fredrigl/technic/ldraw-mode/ldraw-mode.el
+	elm-homepage = http://www.math.uio.no/~fredrigl/technic/ldraw-mode/

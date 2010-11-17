@@ -1,0 +1,104 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	wikipage = APortableEmacsLibrary
+	mainfile = apel-ver.el
+	# NOTE: XEmacs only
+	exclude-path = poe-xemacs\\.el
+	exclude-required = poe-xemacs # FIXME this shouldn't be necessary
+	exclude-required = alist
+	exclude-required = tcp
+	exclude-required = xemacs
+	# NOTE: oh boy
+	exclude-provided = xemacs
+	# NOTE: bundled features also provided by Emacs
+	exclude-provided = alist
+	exclude-provided = custom
+	exclude-provided = env
+	exclude-provided = time-stamp
+	exclude-provided = timezone
+	# NOTE: also available as stand-alone package
+	exclude-provided = calist
+	# NOTE: feature conflict with stand-alone package
+	exclude-provided = install
+	# NOTE: oh boy
+	# FIXME
+	# include = alist
+	include = atype
+	include = broken
+	include = emu
+	include = emu-mule
+	include = file-coding
+	include = file-detect
+	include = filename
+	include = inv-18
+	include = inv-19
+	include = inv-23
+	include = inv-xemacs
+	include = invisible
+	include = localhook
+	include = mcharset
+	include = mcs-20
+	include = mcs-e20
+	include = mcs-ltn1
+	include = mcs-nemacs
+	include = mcs-om
+	include = mcs-xm
+	include = mcs-xmu
+	include = mule-caesar
+	include = path-util
+	include = pccl
+	include = pccl-20
+	include = pccl-om
+	include = pces
+	include = pces-20
+	include = pces-e20
+	include = pces-e20_2
+	include = pces-nemacs
+	include = pces-om
+	include = pces-raw
+	include = pces-xfc
+	include = pces-xm
+	include = pcustom
+	include = poe
+	include = poe-18
+	include = poe-xemacs
+	include = poem
+	include = poem-e20
+	include = poem-e20_2
+	include = poem-e20_3
+	include = poem-ltn1
+	include = poem-nemacs
+	include = poem-om
+	include = poem-xm
+	include = product
+	include = pym
+	include = richtext
+	include = static
+	include = tinycustom
+	include = tinyrich
+	#
+	import-from = 10.0
+	# FIXME
+	ignore-version = 199812011900
+	ignore-version = 199812041900
+	ignore-version = 199812081900
+	ignore-version = 199812091900
+	ignore-version = 199812141900
+	ignore-version = 199812151900
+	ignore-version = 199812161505
+	ignore-version = 199812171900
+	ignore-version = 199812181900
+	ignore-version = 199812201900
+	ignore-version = 199812241900
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/apel.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	elm-fetcher = cvs
+	elm-homepage = http://kanji.zinbun.kyoto-u.ac.jp/~tomo/elisp/APEL/
+	cvs-url = pserver:anonymous@cvs.m17n.org:/cvs/root
+	cvs-fetch = apel

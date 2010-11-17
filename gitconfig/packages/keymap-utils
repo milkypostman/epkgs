@@ -1,0 +1,16 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://github.com/tarsius/keymap-utils.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+	elm-homepage = emacgithub.com/tarsius/keymap-utils
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/keymap-utils.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

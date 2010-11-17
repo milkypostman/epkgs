@@ -1,0 +1,13 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[branch "master"]
+	cvs-url = pserver:anonymous@cvs.luaforge.net:/cvsroot/lua-mode
+	cvs-fetch = lua-mode
+	elm-fetcher = cvs
+	elm-homepage = http://luaforge.net/projects/lua-mode/
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/lua-mode.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

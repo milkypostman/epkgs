@@ -1,0 +1,16 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://github.com/ajc/nginx-mode.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+	elm-homepage = http://github.com/ajc/nginx-mode
+[remote "mirror"]
+	url = git@github.com:emacsmirror/nginx-mode.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

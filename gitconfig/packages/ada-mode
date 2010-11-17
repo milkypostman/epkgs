@@ -1,0 +1,16 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	include = gpr-mode
+	# NOTE: backward compat
+	exclude-required = hilit19
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/ada-mode.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "web-import"]
+	elm-fetcher = web
+	elm-webfile = ada-mode-%v.tar.gz
+	elm-homepage = http://stephe-leake.org/emacs/ada-mode/emacs-ada-mode.html

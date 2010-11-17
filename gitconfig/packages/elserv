@@ -1,0 +1,15 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	exclude-provided = xml-rpc
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/elserv.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	elm-fetcher = cvs
+	elm-homepage = http://elserv.sourceforge.net/
+	cvs-url = pserver:anonymous@elserv.cvs.sourceforge.net:/cvsroot/elserv
+	cvs-fetch = Elserv

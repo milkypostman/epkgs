@@ -1,0 +1,13 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/ite.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "web-import"]
+	# NOTE: zip files are not supported anymore
+	elm-webfile = http://mirror.ctan.org/support/ite/ite_%v_src.zip
+	elm-linkpage = http://www.ctan.org/tex-archive/support/ite/
+	elm-homepage = http://mirror.switch.ch/ftp/mirror/tex/support/ite/index.html

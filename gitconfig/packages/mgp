@@ -1,0 +1,12 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[branch "web-import"]
+	elm-webfile = ftp://sh.wide.ad.jp/WIDE/free-ware/mgp/magicpoint-%v.tar.gz
+	elm-fetcher = web
+	elm-homepage = http://member.wide.ad.jp/wg/mgp/
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/mgp.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

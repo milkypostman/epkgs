@@ -1,0 +1,20 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	exclude-path = test
+	exclude-provided = inflections
+	# FIXME: also stand-alone; but this is more recent
+	exclude-provided = findr
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://github.com/eschulte/jump.el.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/jump.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

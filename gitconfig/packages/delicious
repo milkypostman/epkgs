@@ -1,0 +1,18 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[xpkg]
+	wikipage = DeliciousEl
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = http://git.wjsullivan.net/delicious-el.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+	elm-homepage = http://wjsullivan.net/delicious-el.html
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/delicious.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

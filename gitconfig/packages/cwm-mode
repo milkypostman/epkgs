@@ -1,0 +1,13 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/cwm-mode.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "web-import"]
+	# FIXME figure out where the latest version lives, see
+	# http://www.emacswiki.org/emacs/ErbotInstallation
+	elm-webfile = http://koti.kapsi.fi/phintsan/cwm-mode/cwm-mode.el
+	elm-homepage = http://koti.kapsi.fi/phintsan/cwm-mode/cwm-mode.html

@@ -1,0 +1,13 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/sidebrain.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	elm-fetcher = cvs
+	elm-homepage = http://sidebrain.sourceforge.net/
+	cvs-url = pserver:anonymous@sidebrain.cvs.sourceforge.net:/cvsroot/sidebrain
+	cvs-fetch = lisp

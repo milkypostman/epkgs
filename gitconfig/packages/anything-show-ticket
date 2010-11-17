@@ -1,0 +1,16 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://github.com/kitokitoki/anything-show-ticket.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	# NOTE: 404 elm-fetcher = git
+	elm-homepage = http://github.com/kitokitoki/anything-show-ticket
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/anything-show-ticket.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

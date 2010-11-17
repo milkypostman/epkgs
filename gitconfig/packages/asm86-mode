@@ -1,0 +1,12 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/asm86-mode.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "web-import"]
+	elm-fetcher = web
+	elm-webfile = http://wolverine.caltech.edu/tools/emacs86/asm86-mode.el
+	elm-homepage = http://wolverine.caltech.edu/tools/emacs86/overview.htm

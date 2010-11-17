@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[branch "web-import"]
+	elm-webfile = http://karl.kleinpaste.org/gnus/messkeyw.el
+	elm-fetcher = web
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/messkeyw.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

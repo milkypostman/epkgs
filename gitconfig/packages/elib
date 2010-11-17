@@ -1,0 +1,10 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	mainfile = elib-compile-all.el
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/elib.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

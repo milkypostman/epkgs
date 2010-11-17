@@ -1,0 +1,13 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[branch "web-import"]
+	elm-webfile = ../../pub/elisp/qflib-%v.el.gz
+	elm-fetcher = web
+	elm-homepage = http://www.qfs.de/en/elisp/download.html
+	elm-linkpage = http://www.qfs.de/en/elisp/download.html
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/qflib.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

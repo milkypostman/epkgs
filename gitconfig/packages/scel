@@ -1,0 +1,19 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	autocrlf = false
+[elm]
+	mainfile = el/sclang.el
+	# FIXME: multiple conflicting implementations
+	exclude-provided = tree-widget
+[svn-remote "svn"]
+	url = https://supercollider.svn.sourceforge.net/svnroot/supercollider
+	fetch = trunk/editors/scel:refs/remotes/trunk
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/scel.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	elm-fetcher = svn
+	elm-homepage = supercollider.sourceforge.net/

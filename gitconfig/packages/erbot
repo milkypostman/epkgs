@@ -1,0 +1,14 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	exclude-path = ^contrib
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/erbot.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "web-import"]
+	elm-fetcher = web
+	elm-webfile = http://mwolson.org/static/dist/erbot-latest.tar.gz
+	elm-homepage = http://mwolson.org/projects/

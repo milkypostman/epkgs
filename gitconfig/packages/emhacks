@@ -1,0 +1,16 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	# FIXME random mainfile
+	mainfile = dir-tree.el
+[branch "master"]
+	cvs-url = pserver:anonymous@emhacks.cvs.sourceforge.net:/cvsroot/emhacks/
+	cvs-fetch = emhacks
+	elm-fetcher = cvs
+	elm-homepage = http://emhacks.sourceforge.net/
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/emhacks.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

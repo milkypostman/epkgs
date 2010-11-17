@@ -1,0 +1,12 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[branch "web-import"]
+	elm-webfile = remem-%v.tar.gz
+	elm-fetcher = web
+	elm-homepage = http://www.remem.org/
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/remem.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

@@ -1,0 +1,15 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	autocrlf = false
+[svn-remote "svn"]
+	url = svn://anonsvn.gentoo.org/emacs/gentoo-syntax
+	fetch = :refs/remotes/git-svn
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/gentoo-syntax.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	elm-fetcher = svn
+	elm-homepage = http://www.gentoo.org/proj/en/lisp/emacs/emacs.xml

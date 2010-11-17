@@ -1,0 +1,15 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	autocrlf = false
+[svn-remote "svn"]
+	url = http://nero-el.googlecode.com/svn
+	fetch = :refs/remotes/git-svn
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/nero.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	elm-fetcher = svn
+	elm-homepage = http://code.google.com/p/nero-el/

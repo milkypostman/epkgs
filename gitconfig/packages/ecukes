@@ -1,0 +1,22 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	# FIXME: The mainfile has to end with ".el[.in]" so we can use
+	# ecukes (limitation in elx-package-mainfile).  Randomly pick
+	# another file.
+	# mainfile = ecukes
+	mainfile = ecukes-init.el
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://github.com/rejeep/ecukes.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+	elm-homepage = http://github.com/rejeep/ecukes
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/ecukes.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

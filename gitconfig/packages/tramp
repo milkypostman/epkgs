@@ -1,0 +1,16 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	exclude-path = ^contrib
+	import-from = 2.1.0
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/tramp.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	elm-fetcher = cvs
+	elm-homepage = http://savannah.gnu.org/projects/tramp/
+	cvs-url = pserver:anonymous@cvs.savannah.nongnu.org:/sources/tramp
+	cvs-fetch = tramp

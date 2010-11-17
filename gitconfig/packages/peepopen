@@ -1,0 +1,18 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	exclude-provided = textmate
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://github.com/topfunky/PeepOpen-EditorSupport.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+	elm-homepage = http://github.com/topfunky/PeepOpen-EditorSupport
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/peepopen.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

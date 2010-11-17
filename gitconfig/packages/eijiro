@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[branch "emacswiki"]
+	elm-last-seen = 9bf2f24cc2f972ed0ff927192520f0617d1a68d1
+	elm-fetcher = wiki
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/eijiro.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

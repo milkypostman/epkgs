@@ -1,0 +1,12 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/wb-line-number.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "web-import"]
+	elm-fetcher = web
+	elm-webfile = http://homepage1.nifty.com/blankspace/emacs/wb-line-number.el
+	elm-homepage = http://homepage1.nifty.com/blankspace/emacs/elisp.html

@@ -1,0 +1,22 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	# FIXME: The mainfile has to end with ".el[.in]" so we can use
+	# ljupdate.in (limitation in elx-package-mainfile).  Randomly pick
+	# another file.
+	# mainfile = ljupdate.in
+	mainfile = lj-util.el
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://github.com/hober/ljupdate.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+	elm-homepage = http://edward.oconnor.cx/ljupdate/
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/ljupdate.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

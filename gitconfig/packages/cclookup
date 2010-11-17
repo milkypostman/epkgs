@@ -1,0 +1,16 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://github.com/tsgates/cclookup.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+	elm-homepage = http://taesoo.org/Opensource/CClookup
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/cclookup.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

@@ -1,0 +1,21 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	# FIXME: This package does not contain and real
+	# elisp files.  Maybe it should be removed.
+	mainfile = setup.el
+	include = setup # NOTE: depend on yasnippet
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://github.com/gary/yasnippets-rspec.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+	elm-homepage = http://github.com/gary/yasnippets-rspec
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/yasnippets-rspec.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

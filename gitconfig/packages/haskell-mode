@@ -1,0 +1,15 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	# NOTE: Backward compat
+	exclude-required = hilit19
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/haskell-mode.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "web-import"]
+	elm-fetcher = web
+	elm-webfile = http://www.iro.umontreal.ca/~monnier/elisp/haskell-mode.tar.gz
+	elm-homepage = http://www.iro.umontreal.ca/~monnier/elisp/

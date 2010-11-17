@@ -1,0 +1,13 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	# NOTE: Backward compat
+	exclude-provided = hfy-emacs20
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/htmlfontify.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "manual-import"]
+	elm-homepage = http://rtfm.etla.org/emacs/htmlfontify/

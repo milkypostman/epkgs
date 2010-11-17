@@ -1,0 +1,13 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/elmake.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	elm-fetcher = cvs
+	elm-homepage = http://elmake.sourceforge.net/
+	cvs-url = pserver:anonymous@elmake.cvs.sourceforge.net:/cvsroot/elmake
+	cvs-fetch = elmake

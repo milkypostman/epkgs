@@ -1,0 +1,17 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	mainfile = lisp/sdic.el.in
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/sdic.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	elm-fetcher = cvs
+	elm-homepage = http://www.namazu.org/~tsuchiya/sdic/index.html
+	# FIXME: no suitable coding system available
+	xpkg-no-commentary = true
+	cvs-url = pserver:anonymous@cvs.namazu.org:/storage/cvsroot
+	cvs-fetch = sdic

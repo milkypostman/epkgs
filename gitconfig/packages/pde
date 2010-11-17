@@ -1,0 +1,31 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	# FIXME: maybe the stand-alone packages of some of
+	# these libraries should be removed instead?
+	exclude-provided = compile-dwim
+	exclude-provided = help-dwim
+	exclude-provided = imenu-tree
+	exclude-provided = inf-perl
+	exclude-provided = perlcritic
+	exclude-provided = perldb-ui
+	exclude-provided = perldoc
+	exclude-provided = perltidy
+	exclude-provided = tabbar
+	exclude-provided = tags-tree
+	exclude-provided = template-simple
+	exclude-provided = tempo-x
+	exclude-provided = tree-mode
+	exclude-provided = windata
+[remote "mirror"]
+	url = git@github.com:emacsmirror/pde.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "web-import"]
+	elm-fetcher = web
+	elm-homepage = http://search.cpan.org/~yewenbin/Emacs-PDE/
+	# FIXME: use of this url template did not work
+ 	# "/CPAN/authors/id/Y/YE/YEWENBIN/Emacs-PDE-%v.tar.gz"
+	elm-webfile = http://search.cpan.org/CPAN/authors/id/Y/YE/YEWENBIN/Emacs-PDE-0.2.16.tar.gz

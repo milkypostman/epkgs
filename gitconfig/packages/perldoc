@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[branch "web-import"]
+	elm-webfile = http://cpansearch.perl.org/src/YEWENBIN/Emacs-PDE-0.2.16/lisp/perldoc.el
+	elm-fetcher = web
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/perldoc.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

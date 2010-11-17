@@ -1,0 +1,13 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[branch "master"]
+	cvs-url = pserver:anonymous@cvs.savannah.nongnu.org:/sources/gneve
+	cvs-fetch = gneve
+	elm-fetcher = cvs
+	elm-homepage = http://1010.co.uk/gneve.html
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/gneve.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

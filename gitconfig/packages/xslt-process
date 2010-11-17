@@ -1,0 +1,15 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	include = xslt-speedbar
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/xslt-process.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	elm-fetcher = cvs
+	elm-homepage = http://xslt-process.sourceforge.net/index.php
+	cvs-url = pserver:anonymous@xslt-process.cvs.sourceforge.net:/cvsroot/xslt-process
+	cvs-fetch = xslt-process

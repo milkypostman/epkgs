@@ -1,0 +1,19 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	include = ac-cake
+	include = anything-c-cake
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://github.com/k1LoW/emacs-cake.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+	elm-homepage = http://wiki.github.com/k1LoW/emacs-cake/
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/cake.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

@@ -1,0 +1,28 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	# NOTE: XEmacs only
+	exclude-required = byte-optimize
+	# NOTE: this directory contains various wips, but we only
+	# exclude selectively because other packages might depend
+	# on some of these.  But when a file/feature is causing
+	# problems it does get excluded
+	exclude-path = ^bits\\(bbdb-sort-mailrc\\.el\\)
+	# NOTE: autoloads
+	exclude-required = bbdb-autoloads
+	exclude-provided = bbdb-autoloads
+	#
+	exclude-provided = mail-signature
+	#
+	import-from = 2.20
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/bbdb.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	elm-fetcher = cvs
+	elm-homepage = http://bbdb.sourceforge.net/
+	cvs-url = pserver:anonymous@bbdb.cvs.sourceforge.net:/cvsroot/bbdb
+	cvs-fetch = bbdb

@@ -1,0 +1,16 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://github.com/jxa/pivotal-tracker.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+	elm-homepage = https://github.com/jxa/pivotal-tracker
+[remote "mirror"]
+	url = git@github.com:emacsmirror/pivotal-tracker.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

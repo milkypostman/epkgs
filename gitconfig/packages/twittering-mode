@@ -1,0 +1,27 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	# NOTE: XEmacs only
+	exclude-required = un-define
+	exclude-required = unicode
+	#
+	exclude-path = ^url-emacs21
+	exclude-provided = hex-util # part of gnus
+	exclude-provided = sha1     # part of gnus
+	exclude-provided = test     # stand-alone
+	exclude-provided = tls      # part of gnus
+	exclude-provided = vc-dav   # part of emacs
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://github.com/hayamiz/twittering-mode.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+	elm-homepage = http://twmode.sourceforge.net/
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/twittering-mode.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

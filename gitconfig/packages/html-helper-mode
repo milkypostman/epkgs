@@ -1,0 +1,15 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	# NOTE: XEmacs only
+	exclude-required = auc-menu
+[branch "web-import"]
+	elm-webfile = http://tuvalu.santafe.edu/~nelson/hhm-beta/html-helper-mode.el
+	elm-fetcher = web
+	elm-homepage = http://tuvalu.santafe.edu/~nelson/hhm-beta/
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/html-helper-mode.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

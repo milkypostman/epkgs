@@ -1,0 +1,21 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	import-from = 1.7.0
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://repo.or.cz/ebib.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+	elm-homepage = http://ebib.sourceforge.net
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/ebib.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

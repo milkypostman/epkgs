@@ -1,0 +1,12 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/n3-mode.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "web-import"]
+	elm-fetcher = web
+	elm-webfile = http://larve.net/people/hugo/2003/04/n3-mode.el
+	elm-homepage = http://larve.net/people/hugo/2003/scratchpad/NotationThreeEmacsMode.html

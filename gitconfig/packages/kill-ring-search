@@ -1,0 +1,12 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/kill-ring-search.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "web-import"]
+	elm-fetcher = web
+	elm-webfile = http://nschum.de/src/emacs/kill-ring-search/kill-ring-search.el
+	elm-homepage = http://nschum.de/src/emacs/kill-ring-search/

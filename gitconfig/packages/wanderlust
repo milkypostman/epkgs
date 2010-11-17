@@ -1,0 +1,22 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	mainfile = wl/wl.el
+	prefix = elmo
+	prefix = elsp
+	prefix = wl
+	exclude-provided = ptexinfmt
+	exclude-provided = rtc2368 # distributed with emacs, not wl specific
+	exclude-provided = ssl     # used to be part of emacs, now several pkgs contain it
+	exclude-provided = utf7    # distributed with emacs, as part of gnus
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/wanderlust.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	elm-fetcher = cvs
+	elm-homepage = http://www.gohome.org/wl/
+	cvs-url = pserver:anonymous@cvs.m17n.org:/cvs/root
+	cvs-fetch = wanderlust

@@ -1,0 +1,15 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	exclude-provided = pymacs
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/freex.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "web-import"]
+	elm-fetcher = web
+	elm-webfile = freex-%v.tar.gz
+	elm-linkpage = http://www.princeton.edu/~gdetre/software/freex/downloads/
+	elm-homepage = http://www.princeton.edu/~gdetre/software/freex/docs/index.html

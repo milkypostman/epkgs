@@ -1,0 +1,13 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/xcscope.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	elm-fetcher = cvs
+	elm-homepage = http://cscope.sourceforge.net/
+	cvs-url = pserver:anonymous@cscope.cvs.sourceforge.net:/cvsroot/cscope
+	cvs-fetch = cscope

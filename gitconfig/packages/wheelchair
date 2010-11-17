@@ -1,0 +1,15 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://github.com/senny/wheelchair.el.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-homepage = http://github.com/senny/wheelchair.el
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/wheelchair.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

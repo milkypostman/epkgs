@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[branch "web-import"]
+	elm-webfile = http://www.bobnewell.net/elisp/speedread.el
+	elm-fetcher = web
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/speedread.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

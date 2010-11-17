@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/msf-abbrev.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "web-import"]
+	elm-webfile = http://www.bloomington.in.us/~brutt/msf-abbrev.el
+	elm-homepage = http://www.bloomington.in.us/~brutt/emacs.html

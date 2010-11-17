@@ -1,0 +1,15 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	exclude-provided = javascript-mode
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/mdee.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	elm-fetcher = cvs
+	elm-homepage = http://mdee.mozdev.org/
+	cvs-url = pserver:guest@mozdev.org:/cvs
+	cvs-fetch = mdee

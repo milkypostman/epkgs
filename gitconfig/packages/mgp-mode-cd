@@ -1,0 +1,12 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[branch "web-import"]
+	elm-webfile = http://lionel.kr.hs-niederrhein.de/~dalitz/data/software/mgp/mgp-mode-cd.el
+	elm-fetcher = web
+	elm-homepage = http://lionel.kr.hs-niederrhein.de/~dalitz/data/software/mgp/
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/mgp-mode-cd.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

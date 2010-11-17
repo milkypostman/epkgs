@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[branch "emacswiki"]
+	elm-last-seen = 4bd5e77851c4910506f18943aa0e27757035b668
+	elm-fetcher = wiki
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/anything-menu.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*

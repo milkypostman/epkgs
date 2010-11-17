@@ -1,0 +1,23 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	mainfile = generic/proof.el
+	# NOTE: XEmacs only
+	exclude-required = atomic-extents
+	#
+	exclude-provided = maths-menu
+	exclude-provided = texi-docstring-magic
+	exclude-path = ^\\(contrib/mmm\\|obsolete\\)
+	#
+	import-from = 3.7
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/proofgeneral.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	elm-fetcher = cvs
+	elm-homepage = http://proofgeneral.inf.ed.ac.uk/
+	cvs-url = pserver:anon@cvs.inf.ed.ac.uk:/disk/cvs/proofgen
+	cvs-fetch = ProofGeneral

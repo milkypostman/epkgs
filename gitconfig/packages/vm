@@ -1,0 +1,21 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	# NOTE: XEmacs only
+	exclude-required = atomic-extents
+	exclude-provided = highlight-headers
+	#
+	exclude-provided = vcard
+	# FIXME: delete package vm-thread?
+	exclude-provided = vm-thread
+	# NOTE: both vm and org-mode provide this.  Randomly picked one.
+	exclude-provided = org-vm
+[remote "mirror"]
+	url = git@github-elm:emacsmirror/vm.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	elm-fetcher = bzr
+	elm-homepage = https://launchpad.net/viewmail

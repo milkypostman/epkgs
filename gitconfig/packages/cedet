@@ -1,0 +1,58 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[elm]
+	wikipage = CollectionOfEmacsDevelopmentEnvironmentTools
+	# NOTE: additional prefixes
+	prefix = bovine
+	prefix = cogre
+	prefix = ctags
+	prefix = ede
+	prefix = eieio
+	prefix = qp
+	prefix = sb
+	prefix = semantic
+	prefix = srecode
+	prefix = wisent
+	# NOTE: include without common prefix
+	include = autoconf-compat
+	include = autoconf-edit
+	include = bigclock
+	include = bison-wisent
+	include = call-tree
+	include = chart
+	include = data-debug
+	include = dframe
+	include = eassist
+	include = erlang-edoc
+	include = ezimage
+	include = fame
+	include = fsum
+	include = inversion
+	include = linemark
+	include = lmcompile
+	include = makefile-edit
+	include = mode-local
+	include = picture-hack
+	include = pprint
+	include = project-am
+	include = psql
+	include = pulse
+	include = quickpeek
+	include = senator
+	include = speedbar
+	include = speedbar-load
+	include = tree
+	include = working
+	# NOTE: Exclude tests
+	exclude-path = ^\\(tests\\|semantic/tests\\)
+	# NOTE: conflict with stand-alone package
+	exclude-provided = rpm
+[remote "mirror"]
+	url = git@github.com:emacsmirror/cedet.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[branch "master"]
+	elm-fetcher = bzr
+	elm-homepage = http://cedet.sourceforge.net/
