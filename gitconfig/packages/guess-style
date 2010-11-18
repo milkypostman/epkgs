@@ -3,10 +3,14 @@
 	filemode = true
 	bare = false
 	logallrefupdates = true
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://github.com/nschum/guess-style.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+	elm-homepage = http://nschum.de/src/emacs/guess-style
 [remote "mirror"]
-	url = git@github-elm:emacsmirror/guess-style.git
+	url = git@github.com:emacsmirror/guess-style.git
 	fetch = +refs/heads/*:refs/remotes/mirror/*
-[branch "web-import"]
-	elm-fetcher = web
-	elm-webfile = http://nschum.de/src/emacs/guess-style/guess-style.el
-	elm-homepage = http://nschum.de/src/emacs/guess-style/

@@ -5,12 +5,12 @@
 	logallrefupdates = true
 [remote "origin"]
 	fetch = +refs/heads/*:refs/remotes/origin/*
-	url = git://github.com/nschum/company.git
+	url = git://github.com/markhepburn/tags-view.git
 [branch "master"]
 	remote = origin
 	merge = refs/heads/master
 	elm-fetcher = git
-	elm-homepage = http://nschum.de/src/emacs/company-mode
+	elm-homepage = http://github.com/markhepburn/tags-view
 [remote "mirror"]
-	url = git@github.com:emacsmirror/company.git
+	url = git@github.com:emacsmirror/tags-view.git
 	fetch = +refs/heads/*:refs/remotes/mirror/*
