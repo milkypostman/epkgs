@@ -5,12 +5,12 @@
 	logallrefupdates = true
 [remote "origin"]
 	fetch = +refs/heads/*:refs/remotes/origin/*
-	url = git://github.com/nicferrier/elpastebin.git
+	url = git://github.com/renard/org-website.git
 [branch "master"]
 	remote = origin
 	merge = refs/heads/master
 	elm-fetcher = git
-	elm-homepage = http://github.com/nicferrier/elpastebin
+	elm-homepage = http://github.com/renard/org-website
 [remote "mirror"]
-	url = git@github.com:emacsmirror/pastebin.git
+	url = git@github.com:emacsmirror/org-website.git
 	fetch = +refs/heads/*:refs/remotes/mirror/*
