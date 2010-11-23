@@ -3,9 +3,14 @@
 	filemode = true
 	bare = false
 	logallrefupdates = true
-[branch "emacswiki"]
-	elm-last-seen = c56fcaa55e5b6f13b28b61d94c8d6b0c1610a782
-	elm-fetcher = wiki
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://repo.or.cz/anything-config.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+	elm-homepage = http://www.emacswiki.org/emacs/Anything
 [remote "mirror"]
-	url = git@github-elm:emacsmirror/anything.git
+	url = git@github.com:emacsmirror/anything.git
 	fetch = +refs/heads/*:refs/remotes/mirror/*
