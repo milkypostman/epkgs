@@ -12,11 +12,13 @@
 	"anything-obsolete" ; part of anything
 	"anything-show-completion" ; part of anything
 	"anything-startup" ; part of anything
+	"anything-traverse" ; part of traverse
 	"bongo-mplayer" ; merged into bongo
 	"context"
 	"dig"
 	"eassist"
 	"flow-fill"
+	"iterator"
 	"maxima"
 	"meg"
 	"org-annotate-file" ; merged into org-mode
@@ -344,7 +346,7 @@
 	("cyrillic" "apple-cyrillic")
 	("d" "d-insert-assert" "d-insert-import")
 	("dabbrev" "anything-dabbrev-expand" "dabbrev-expand-multiple" "magpie")
-	("data" "aes" "anything-traverse" "arc-lzh-exe" "ascii" "bbdb-vcard" "blank-mode" "couchdb" "diff+" "diff-mode-" "eijiro" "http-post-simple" "ldap-mode" "ldif-ns" "man-completion" "mo-mode" "mp3-tools" "pcf2bdf" "pdb" "pg" "pst-format" "rational" "remember" "session" "sqlite-dump" "stock-quote" "tcd-format" "template" "timeclock-x" "traverselisp" "uniesc" "vorbiscomment" "vwindow" "xml-parse" "xrdb-mode" "yaml-mode")
+	("data" "aes" "arc-lzh-exe" "ascii" "bbdb-vcard" "blank-mode" "couchdb" "diff+" "diff-mode-" "eijiro" "http-post-simple" "ldap-mode" "ldif-ns" "man-completion" "mo-mode" "mp3-tools" "pcf2bdf" "pdb" "pg" "pst-format" "rational" "remember" "session" "sqlite-dump" "stock-quote" "tcd-format" "template" "timeclock-x" "traverselisp" "uniesc" "vorbiscomment" "vwindow" "xml-parse" "xrdb-mode" "yaml-mode")
 	("database" "edb" "pg" "relax" "sqlplus-html")
 	("dates" "dconv")
 	("dbus" "mpris-track-list")
@@ -688,7 +690,7 @@
 	("knobs" "listbuf")
 	("labbook" "labbook" "labbook-sign")
 	("language" "as3-mode" "cpad" "else-mode" "gtranslate" "haml-mode" "locdict" "rw-language-and-country-codes" "sass-mode" "unaccent" "xlsl-mode")
-	("languages" "acd" "ada-gpr" "ada-mode" "admb" "align-let" "allout" "ansys-mod" "ansys-mode" "antlr-mode" "anything-rurima" "apache-mode" "applescript-mode" "archive-region" "arduino-mode" "asm56k-f-lck" "bf" "c-comment-edit" "c-toggle-dot-pointer" "cap-words" "cc-mode" "cfengine" "cg-mode" "chill-mode" "clojure-mode" "cobol-mode" "constants" "cperl-mode" "csharp-mode" "czscm" "d-insert-assert" "ddl-mode" "delim-kill" "docbookide" "dos" "dtrt-indent" "ecmascript-mode" "ediprolog" "eiffel" "eijiro" "ejacs" "emacs-rails" "enform-mode" "erc-babel" "erlang" "espresso" "factor-mode" "font-lock+" "gentoo-syntax" "ginel-template" "guess-lang" "guess-style" "gwt-mumamo" "hamster-mode" "haskell" "haskell-latex" "html-php" "html-tt" "idl-font-lock" "idlwave" "info-lookmore" "inform-mode" "io-mode" "javascript" "javascript-mode" "jess-mode" "js2-mode" "lojban-mode" "lpc-mode" "lua-block" "lua-mode" "maplev" "meta-mode" "mic-paren" "mmm-mode" "mode-compile" "mongolian" "multi-comment" "multi-mode" "nesc" "nmcobol-mode" "noweb" "ntcmd" "oberon" "occam-mode" "ogre-material-mode" "outdent" "paren-glint" "pde" "perl-quote" "perltidy" "php-doc" "php-mode" "plsql" "poor-mans-bidi" "ppindent" "proc-mode" "proofgeneral" "ps-mode" "psgml" "python-mode" "python-pep8" "python-pylint" "redshank" "reduce-ide" "regex-tool" "rpm-spec-mode" "rtf-mode" "ruby-block" "ruby-electric" "rust-mode" "scamacs" "sendmail-mode" "sepia" "sgml-id" "sh-autoconf" "ska-skel-matlab" "smarty-mode" "sourcepair" "sql" "sql-complete" "sql-indent" "swank-clojure" "swank-clojure-extra" "tacl-mode" "tal-indent" "tal-mode" "tidy" "tie-mode" "tiger" "tsql-indent" "unibasic" "unidiff" "uniesc" "usage-memo" "vbnet-mode" "vhdl-mode" "visual-basic-mode" "vlog-mode" "whitespace-mode" "xml-parse" "xrdb-mode" "xslide")
+	("languages" "acd" "ada-gpr" "ada-mode" "admb" "align-let" "allout" "ansys-mod" "ansys-mode" "antlr-mode" "anything-rurima" "apache-mode" "applescript-mode" "archive-region" "arduino-mode" "asm56k-f-lck" "bf" "c-comment-edit" "c-toggle-dot-pointer" "cap-words" "cc-mode" "cfengine" "cg-mode" "chill-mode" "clojure-mode" "cobol-mode" "constants" "cperl-mode" "csharp-mode" "czscm" "d-insert-assert" "ddl-mode" "delim-kill" "docbookide" "dos" "dtrt-indent" "ecmascript-mode" "ediprolog" "eiffel" "eijiro" "ejacs" "emacs-rails" "enform-mode" "erc-babel" "erlang" "espresso" "factor-mode" "font-lock+" "gentoo-syntax" "ginel-template" "guess-lang" "guess-style" "gwt-mumamo" "hamster-mode" "haskell" "haskell-latex" "html-php" "html-tt" "idl-font-lock" "idlwave" "info-lookmore" "inform-mode" "io-mode" "javascript" "javascript-mode" "jess-mode" "js2-mode" "lojban-mode" "lpc-mode" "lua-block" "lua-mode" "maplev" "meta-mode" "mic-paren" "mmm-mode" "mode-compile" "mongolian" "multi-comment" "multi-mode" "nesc" "nmcobol-mode" "noweb" "ntcmd" "oberon" "occam-mode" "ogre-material-mode" "outdent" "paren-glint" "pde" "perl-quote" "perltidy" "php-doc" "php-mode" "plsql" "poor-mans-bidi" "ppindent" "proc-mode" "proofgeneral" "ps-mode" "psgml" "python-mode" "python-pep8" "python-pylint" "redshank" "reduce-ide" "regex-tool" "rpm-spec-mode" "rtf-mode" "ruby-block" "ruby-electric" "rust-mode" "scamacs" "sendmail-mode" "sepia" "sgml-id" "sh-autoconf" "ska-skel-matlab" "sourcepair" "sql" "sql-complete" "sql-indent" "swank-clojure" "swank-clojure-extra" "tacl-mode" "tal-indent" "tal-mode" "tidy" "tie-mode" "tiger" "tsql-indent" "unibasic" "unidiff" "uniesc" "usage-memo" "vbnet-mode" "vhdl-mode" "visual-basic-mode" "vlog-mode" "whitespace-mode" "xml-parse" "xrdb-mode" "xslide")
 	("latex" "bhl" "bst-mode" "func-doc" "latex-doc" "latex-math-preview" "latex-toolbar" "latexenc" "ltxsymb" "swiftex" "tab-in-tabular" "x-symbol")
 	("latin" "iso-sgml")
 	("layla" "spice-mode")
@@ -915,7 +917,7 @@
 	("personal" "emacs-easy-budget")
 	("personality" "gnus-alias")
 	("phonetic" "phonetic")
-	("php" "php-mode" "phpunit" "smarty-mode" "xbbcode-mode")
+	("php" "php-mode" "phpunit" "xbbcode-mode")
 	("phpunit" "phpunit")
 	("picture" "eiv")
 	("pilot" "diary-pilot" "pilot-doc" "pilot-memo")
@@ -998,7 +1000,7 @@
 	("refactoring" "jde-transmogrify")
 	("refresh" "fetch")
 	("regex" "regex-tool")
-	("regexp" "anything-project" "anything-traverse" "auto-complete+" "gather" "icicles" "icicles-iswitchb" "re-builder+" "re-suggest" "recs-mode" "traverselisp")
+	("regexp" "anything-project" "auto-complete+" "gather" "icicles" "icicles-iswitchb" "re-builder+" "re-suggest" "recs-mode" "traverselisp")
 	("regexps" "swbuff-advice")
 	("region" "hide-region" "iedit" "mark-lines" "modeline-posn" "rect-extension" "second-sel" "thing-cmds" "wimpy-del")
 	("regions" "multr")
@@ -1088,7 +1090,6 @@
 	("sln" "sln-mode")
 	("slow" "cgi")
 	("smart" "gnus-switch" "smart-snippet")
-	("smarty" "smarty-mode")
 	("sml" "sml-mode")
 	("sms" "bbdb-sms" "esms" "sms")
 	("smtp" "feedmail")
@@ -1164,7 +1165,6 @@
 	("tecent" "oicq")
 	("television" "vtx")
 	("template" "else-mode" "file-template" "template" "tempo-c-cpp" "tmt-mode")
-	("templates" "smarty-mode")
 	("term" "multi-term")
 	("terminal" "multi-term" "nterm" "shell-pop")
 	("terminals" "ansi-color" "gnuserv" "iswitch-menu" "orwell" "qemu")
@@ -1467,7 +1467,7 @@
 	(anything-show-ticket . "anything-show-ticket")
 	(anything-slime . "anything-slime")
 	(anything-startup . "anything")
-	(anything-traverse . "anything-traverse")
+	(anything-traverse . "traverselisp")
 	(anything-w3m . "anything-w3m")
 	(anything-yaetags . "anything-yaetags")
 	(aok . "aok")
@@ -4330,7 +4330,7 @@
 	(iswitch-menu . "iswitch-menu")
 	(iswitchb-fc . "iswitchb-fc")
 	(iswitchb-highlight . "iswitchb-highlight")
-	(iterator . "iterator")
+	(iterator . "traverselisp")
 	(itimer . "itimer")
 	(itunes . "itunes")
 	(iuscheme . "iuscheme")
@@ -6956,13 +6956,13 @@
 	(smartchr . "smartchr")
 	(smartquotes . "smartquotes")
 	(smartsig . "smartsig")
-	(smarty-mode . "smarty-mode")
 	(smex . "smex")
 	(smiley . "gnus")
 	(smime . "gnus")
 	(sml-compat . "sml-mode")
 	(sml-defs . "sml-mode")
 	(sml-mode . "sml-mode")
+	(sml-modeline . "nxhtml")
 	(sml-move . "sml-mode")
 	(sml-proc . "sml-mode")
 	(sml-util . "sml-mode")
