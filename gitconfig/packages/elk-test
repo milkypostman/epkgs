@@ -3,10 +3,14 @@
 	filemode = true
 	bare = false
 	logallrefupdates = true
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://github.com/nschum/elk-test.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+	elm-homepage = http://nschum.de/src/emacs/elk-test
 [remote "mirror"]
-	url = git@github-elm:emacsmirror/elk-test.git
+	url = git@github.com:emacsmirror/elk-test.git
 	fetch = +refs/heads/*:refs/remotes/mirror/*
-[branch "web-import"]
-	elm-fetcher = web
-	elm-webfile = http://nschum.de/src/emacs/elk-test/elk-test.el
-	elm-homepage = http://nschum.de/src/emacs/elk-test/

@@ -3,10 +3,14 @@
 	filemode = true
 	bare = false
 	logallrefupdates = true
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://github.com/nschum/async-eval.el.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+	elm-homepage = http://nschum.de/src/emacs/async-eval
 [remote "mirror"]
-	url = git@github-elm:emacsmirror/async-eval.git
+	url = git@github.com:emacsmirror/async-eval.git
 	fetch = +refs/heads/*:refs/remotes/mirror/*
-[branch "web-import"]
-	elm-fetcher = web
-	elm-webfile = http://nschum.de/src/emacs/async-eval/async-eval.el
-	elm-homepage = http://nschum.de/src/emacs/async-eval/

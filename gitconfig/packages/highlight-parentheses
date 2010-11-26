@@ -3,10 +3,14 @@
 	filemode = true
 	bare = false
 	logallrefupdates = true
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://github.com/nschum/highlight-parentheses.el.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+	elm-homepage = http://nschum.de/src/emacs/highlight-parentheses
 [remote "mirror"]
-	url = git@github-elm:emacsmirror/highlight-parentheses.git
+	url = git@github.com:emacsmirror/highlight-parentheses.git
 	fetch = +refs/heads/*:refs/remotes/mirror/*
-[branch "web-import"]
-	elm-fetcher = web
-	elm-webfile = http://nschum.de/src/emacs/highlight-parentheses/highlight-parentheses.el
-	elm-homepage = http://nschum.de/src/emacs/highlight-parentheses/

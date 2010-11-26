@@ -3,10 +3,14 @@
 	filemode = true
 	bare = false
 	logallrefupdates = true
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://github.com/nschum/window-numbering.el.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+	elm-homepage = http://nschum.de/src/emacs/window-numbering-mode
 [remote "mirror"]
-	url = git@github-elm:emacsmirror/window-numbering.git
+	url = git@github.com:emacsmirror/window-numbering.git
 	fetch = +refs/heads/*:refs/remotes/mirror/*
-[branch "web-import"]
-	elm-fetcher = web
-	elm-webfile = http://nschum.de/src/emacs/window-numbering-mode/window-numbering.el
-	elm-homepage = http://nschum.de/src/emacs/window-numbering-mode/

@@ -5,12 +5,12 @@
 	logallrefupdates = true
 [remote "origin"]
 	fetch = +refs/heads/*:refs/remotes/origin/*
-	url = git://github.com/nschum/macro-math.el.git
+	url = git://github.com/lieutar/excite-translate.el.git
 [branch "master"]
 	remote = origin
 	merge = refs/heads/master
 	elm-fetcher = git
-	elm-homepage = http://nschum.de/src/emacs/macro-math
+	elm-homepage = http://github.com/lieutar/excite-translate.el
 [remote "mirror"]
-	url = git@github.com:emacsmirror/macro-math.git
+	url = git@github.com:emacsmirror/excite-translate.git
 	fetch = +refs/heads/*:refs/remotes/mirror/*

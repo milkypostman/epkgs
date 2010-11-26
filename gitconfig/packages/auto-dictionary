@@ -3,10 +3,14 @@
 	filemode = true
 	bare = false
 	logallrefupdates = true
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://github.com/nschum/auto-dictionary-mode.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+	elm-homepage = http://nschum.de/src/emacs/auto-dictionary
 [remote "mirror"]
-	url = git@github-elm:emacsmirror/auto-dictionary.git
+	url = git@github.com:emacsmirror/auto-dictionary.git
 	fetch = +refs/heads/*:refs/remotes/mirror/*
-[branch "web-import"]
-	elm-fetcher = web
-	elm-webfile = http://nschum.de/src/emacs/auto-dictionary/auto-dictionary.el
-	elm-homepage = http://nschum.de/src/emacs/auto-dictionary/
