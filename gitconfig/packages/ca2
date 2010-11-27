@@ -1,0 +1,18 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://github.com/jeffdameth/ca2.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	elm-fetcher = git
+	elm-homepage = http://github.com/jeffdameth/ca2
+[remote "mirror"]
+	url = git@github.com:emacsmirror/ca2.git
+	fetch = +refs/heads/*:refs/remotes/mirror/*
+[elm]
+	mainfile = ca2+.el
