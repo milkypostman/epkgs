@@ -7,6 +7,5 @@
 	url = git@github-elm:emacsmirror/branch.git
 	fetch = +refs/heads/*:refs/remotes/mirror/*
 [branch "web-import"]
-	elm-fetcher = web
 	elm-webfile = http://www.tenfoot.org.uk/emacs/branch.el
 	elm-homepage = "http://www.tenfoot.org.uk/emacs/modes.html#branch"

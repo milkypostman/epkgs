@@ -3,6 +3,8 @@
 	filemode = true
 	bare = false
 	logallrefupdates = true
+[elm]
+	exclude-path = ^elinstall/tests.el
 [remote "origin"]
 	fetch = +refs/heads/*:refs/remotes/origin/*
 	url = git://repo.or.cz/elinstall.git

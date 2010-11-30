@@ -7,5 +7,4 @@
 	url = git@github-elm:emacsmirror/smarty-mode.git
 	fetch = +refs/heads/*:refs/remotes/mirror/*
 [branch "web-import"]
-	elm-fetcher = web
 	elm-webfile = http://www.smarty.net/contribs/syntax_highlighting/emacs/smarty-mode.el

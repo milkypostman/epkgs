@@ -3,6 +3,9 @@
 	filemode = true
 	bare = false
 	logallrefupdates = true
+[elm]
+	# NOTE: XEmacs only
+	exclude-required = func-menu
 [remote "origin"]
 	fetch = +refs/heads/*:refs/remotes/origin/*
 	url = git://github.com/jdtsmith/idlwave.git

@@ -3,6 +3,9 @@
 	filemode = true
 	bare = false
 	logallrefupdates = true
+[elm]
+	exclude-provided = caml
+	exclude-provided = camldebug
 [svn-remote "svn"]
 	url = svn://svn.forge.ocamlcore.org/svnroot/tuareg
 	fetch = trunk:refs/remotes/trunk

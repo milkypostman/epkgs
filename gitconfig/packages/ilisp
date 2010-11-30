@@ -4,6 +4,8 @@
 	bare = false
 	logallrefupdates = true
 [elm]
+	# NOTE: backward compat
+	exclude-path = comint-v18.el
 	# NOTE: everybody is using slime now which also provides these features
 	exclude-provided = bridge
 	exclude-provided = hyperspec

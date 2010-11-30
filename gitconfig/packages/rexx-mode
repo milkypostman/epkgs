@@ -3,6 +3,8 @@
 	filemode = true
 	bare = false
 	logallrefupdates = true
+[elm]
+	exclude-path = comint-v18.el
 [remote "mirror"]
 	url = git@github-elm:emacsmirror/rexx-mode.git
 	fetch = +refs/heads/*:refs/remotes/mirror/*

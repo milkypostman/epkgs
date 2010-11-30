@@ -7,6 +7,7 @@
 	url = git@github-elm:emacsmirror/track-scroll.git
 	fetch = +refs/heads/*:refs/remotes/mirror/*
 [branch "web-import"]
-	elm-fetcher = web
+	# FIXME: downloading this file manually works, as does downloading the other
+	# packages by this author using elm; but this downloads a html file.
 	elm-webfile = http://www.skamphausen.de/cgi-bin/ska/donwload/track-scroll.el
 	elm-homepage = http://www.skamphausen.de/cgi-bin/ska/track-scroll

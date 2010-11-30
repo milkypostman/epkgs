@@ -5,7 +5,6 @@
 	logallrefupdates = true
 [branch "web-import"]
 	elm-webfile = http://www.zerobeat.in/files/advogato.el
-	elm-fetcher = web
 [remote "mirror"]
 	url = git@github-elm:emacsmirror/advogato.git
 	fetch = +refs/heads/*:refs/remotes/mirror/*

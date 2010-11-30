@@ -7,4 +7,4 @@
 	url = git@github-elm:emacsmirror/mdfind.git
 	fetch = +refs/heads/*:refs/remotes/mirror/*
 [branch "manual-import"]
-	elm-homepage = http://darcs.hacks-galore.org/darcsweb/jao?r=mdfind-el
+	elm-homepage = http://darcs.hacks-galore.org/darcsweb/jao?r=mdfind-el;a=summary

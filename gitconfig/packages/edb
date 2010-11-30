@@ -3,8 +3,9 @@
 	filemode = true
 	bare = false
 	logallrefupdates = true
-[elm]
+[xpkg]
 	wikipage = EmacsDataBase
+[elm]
 	mainfile = lisp/database.el
 [remote "mirror"]
 	url = git@github-elm:emacsmirror/edb.git

@@ -7,6 +7,5 @@
 	url = git@github-elm:emacsmirror/inform-mode.git
 	fetch = +refs/heads/*:refs/remotes/mirror/*
 [branch "web-import"]
-	elm-fetcher = web
 	elm-webfile = http://www.rupert-lane.org/inform-mode/inform-mode.el
 	elm-homepage = http://www.rupert-lane.org/inform-mode/

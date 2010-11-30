@@ -13,6 +13,8 @@
 	exclude-provided = tree-widget
 	# FIXME: there is a conflicting stand-alone package
 	exclude-provided = which
+	# NOTE: there is a more feature full stand-alone package
+	exclude-provided = jde-refactor
 [svn-remote "svn"]
 	url = https://jdee.svn.sourceforge.net/svnroot/jdee
 	fetch = trunk/jdee:refs/remotes/trunk

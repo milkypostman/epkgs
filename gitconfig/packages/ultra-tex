@@ -15,6 +15,7 @@
 	exclude-provided = font-latex
 	exclude-provided = tex
 	exclude-provided = tex-buf
+	exclude-provided = tex-site
 [remote "mirror"]
 	url = git@github-elm:emacsmirror/ultra-tex.git
 	fetch = +refs/heads/*:refs/remotes/mirror/*

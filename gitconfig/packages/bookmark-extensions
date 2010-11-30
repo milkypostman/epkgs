@@ -3,8 +3,9 @@
 	filemode = true
 	bare = false
 	logallrefupdates = true
-[elm]
+[xpkg]
 	wikipage = BookmarkExtension
+[elm]
 	include = bookmark-firefox-handler
 	include = bookmark-firefox2org
 	include = firefox-protocol

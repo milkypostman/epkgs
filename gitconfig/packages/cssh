@@ -3,8 +3,9 @@
 	filemode = true
 	bare = false
 	logallrefupdates = true
-[elm]
+[xpkg]
 	wikipage = ClusterSSH
+[elm]
 	exclude-provided = pcmpl-ssh
 [remote "origin"]
 	fetch = +refs/heads/*:refs/remotes/origin/*

@@ -7,6 +7,5 @@
 	url = git@github-elm:emacsmirror/integrate.git
 	fetch = +refs/heads/*:refs/remotes/mirror/*
 [branch "web-import"]
-	elm-fetcher = web
 	elm-webfile = http://w1.894.telia.com/~u89404340/p4/integrate.el
 	elm-homepage = http://w1.894.telia.com/~u89404340/

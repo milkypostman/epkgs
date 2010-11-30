@@ -3,8 +3,9 @@
 	filemode = true
 	bare = false
 	logallrefupdates = true
-[elm]
+[xpkg]
 	wikipage = EmacsCodeBrowser
+[elm]
 	import-from = 2.01
 [remote "mirror"]
 	url = git@github-elm:emacsmirror/ecb.git

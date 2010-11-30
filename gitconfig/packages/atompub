@@ -3,8 +3,9 @@
 	filemode = true
 	bare = false
 	logallrefupdates = true
-[elm]
+[xpkg]
 	wikipage = EmacsAtomApi
+[elm]
 	mainfile = atom-api.el
 	include = atom-api-muse
 	include = atom-api

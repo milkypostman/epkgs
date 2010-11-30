@@ -7,6 +7,9 @@
 	mainfile = tex.el
 	prefix = context
 	prefix = tex
+	# NOTE: Generated
+	include-provided = tex-site
+	#
 	include = bib-cite
 	include = font-latex
 	include = latex

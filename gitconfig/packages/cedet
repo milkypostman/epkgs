@@ -3,8 +3,9 @@
 	filemode = true
 	bare = false
 	logallrefupdates = true
-[elm]
+[xpkg]
 	wikipage = CollectionOfEmacsDevelopmentEnvironmentTools
+[elm]
 	# NOTE: additional prefixes
 	prefix = bovine
 	prefix = cogre

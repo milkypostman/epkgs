@@ -7,6 +7,5 @@
 	url = git@github-elm:emacsmirror/sudoku.git
 	fetch = +refs/heads/*:refs/remotes/mirror/*
 [branch "web-import"]
-	elm-fetcher = web
 	elm-webfile = http://www.columbia.edu/~jr2075/elisp/sudoku.el
 	elm-homepage = http://www.columbia.edu/~jr2075/elisp/

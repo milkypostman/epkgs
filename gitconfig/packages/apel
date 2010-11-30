@@ -3,8 +3,9 @@
 	filemode = true
 	bare = false
 	logallrefupdates = true
-[elm]
+[xpkg]
 	wikipage = APortableEmacsLibrary
+[elm]
 	mainfile = apel-ver.el
 	# NOTE: XEmacs only
 	exclude-path = poe-xemacs\\.el
