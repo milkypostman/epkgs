@@ -1,0 +1,34 @@
+(:summary    "Indents C preprocessor directives"
+ :created    "2007"
+ :updated    "2007"
+ :license    "GPL-2"
+ :authors    (("Craig McDaniel" . "craigmcd@gmail.com"))
+ :maintainer ("Craig McDaniel" . "craigmcd@gmail.com")
+ :provided   (ppindent)
+ :keywords   ("languages" "c")
+ :homepage   "http://www.emacswiki.org/PpIndent"
+ :wikipage   "http://www.emacswiki.org/PpIndent"
+ :commentary "\
+PPINDENT indents C-preprocessor statements depending on the current
+#if..., #el.., #endif level. It only modifies lines with \"#\" as the
+first non-blank character and therefore does not conflict with the
+normal C indentation. Unlike a true indent, it inserts the
+requisite number of spaces after, rather than before the \"#\"
+character. This type of preprocesor indent is commonly used to
+provide the most compatibility with different C-compilers.
+
+Example:
+
+       #ifdef WOO
+       ....
+       #if defined(X) && !defined(Y)
+       #ifdef Q8
+       ...
+       #else
+       ...
+       ....
+       #elif defined (Z)
+       ....
+       #endif
+       #endif
+       #endif")

@@ -1,0 +1,166 @@
+(:summary    "Generic mode to browse project file"
+ :license    "GPL-2"
+ :authors    (("Cedric Lallain" . "kandjar76@hotmail.com"))
+ :maintainer ("Cedric Lallain" . "kandjar76@hotmail.com")
+ :provided   (project-buffer-mode)
+ :required   ((("emacs" cl ewoc)))
+ :keywords   ("project" "mode" "buffer" "viewer" "generic")
+ :homepage   "http://www.emacswiki.org/ProjectBufferMode"
+ :wikipage   "http://www.emacswiki.org/ProjectBufferMode"
+ :commentary "\
+project-buffer-mode provides a generic way to handle multiple
+projects in a buffer.
+
+A Project is defined by:
+ - its name
+ - its main file (Makefile, Jam, Scons...)
+ - a build configuration list (Debug, Release, ...)
+ - a platform list (Win32, PocketPC, Linux...)
+ - and obviously a list of files.
+
+
+QUICK FIND FILE USING REGEXP:
+
+Through a hierarchical view, the project-buffer mode provides an
+very easy and intuitive way to search for a particular files (key:
+'/', then 'n' or 'p' to go to the next or previous matching
+result).  Note: press 'q' to cancel the research.
+
+Opening the current is a simple as pressing <enter> or
+'o' to open it in another window.
+Press 'f' if you want to open all marked files.
+
+
+FOUR DIFFERENT VIEW-MODE:
+
+Four different view-modes are currently supported:
+- folder-view (<default>)
+- flat-view
+- folder-hidden-view
+- marked-view
+
+It's possible to switch between them using 'c v'.
+
+The first three modes show the project with their associated files:
+- folder-view shows a tree-view of files.
+- flat-view shows the list of the files prefixed by their folder
+- folder-hidden-view shows the list of just the file names, next
+to it, it displays the real path for each of them.
+
+The final view mode named marked-view shows only the list of marked
+files, prefixed by their project and folders.
+
+
+MARKING FILE MATCHING A REGEXP:
+
+Files can be marked/unmarked individually, but you can also easily
+mark all files whose names are matching a regular expression ('/'
+then 'm').
+Note: using the mark/unmark command in front of a folder of a
+project results in marking every files which belong to this folder
+or this project.
+
+
+ADVANCED SEARCH IN FILES SYSTEM:
+
+The search in files functionality comes with three different behaviors:
+- Narrow the marked files (<default>)
+- All files
+- Current project
+
+Before talking about the \"Narrow the marked files\" behavior which
+is the default one; let's quickly go throught the others two:
+
+- If the search behavior is set to \"All files\", the search-in-files
+command ('s') will do a search-regexp in files for each unmarked
+files (all projects) and mark the ones which contain the regexp.
+
+- If the search behavior is set to \"Current Project\" the
+search-in-files will do search-regexp in files for each unmarked
+file contained in the current project.  The current project being
+defined by the position of the cursor.  Again, each matching files
+will be marked.
+
+Note: it is possible to have the search-regexp in file unmarking
+the files instead by using the prefix argument (C-u).
+
+Finally in case the search behavior is set to \"Narrow the marked
+files\": if no files are actually marked, it will behave the same
+way as the \"All files\" behavior.  In case some files are marked, it
+will only perform the \"search-regexp in files\" in the marked files,
+unmarking the ones which don't contain the regular expression.
+
+This provide an easy way to narrow/refine some research.
+
+The search behavior can be either customized or locally change
+(pressing 'c s')
+
+Note: in case a search-in-files mark or unmark some files; the view
+mode will automatically be switched to marked-view.  This behavior
+can be disabled.
+
+
+MASTER PROJECT / BUILD CONFIGURATION / PLATFORM:
+
+The master project, build configuration and platform can be easily
+changed using respectively: 'c t' 'c b' 'c p' Using the capital
+letter ('c T' 'c B' and 'c P') will prompt the user for the new
+value.
+
+This value allows to take quick actions for the master project:
+build/clean/run/debug/update (keys: 'B' 'C' 'R' 'D' 'G')
+
+
+KEY BINDINGS:
+
+Shortkey in the project-buffer-mode:
+   +    -> collapse/expand folder/project (cursor has to be on a folder/project)
+   m    -> mark the 'matching regexp' filename or the current file
+   u    -> unmark file
+   t    -> toggle marked files
+   M    -> mark all
+   U    -> unmark all
+   f    -> open marked files
+   q    -> cancel file search or bury project-buffer
+   g    -> refresh the display / the projects (C-u g: refresh the current project only)
+   ?    -> show brief help!!
+   /    -> search file name matching regexp
+   n    -> next file matching regexp
+   p    -> prev file matching regexp
+   v    -> view current file in view-mode
+   o    -> find file at current pos in other window
+   s    -> (un)mark files containing regexp...
+  <TAB> -> collapse/expand folder/project (work if the cursor is on a file)
+  <RET> -> open file at cursor pos
+  <DEL> -> Delete the current node or the marked files
+  <BCK> -> go to parent
+  <SPC> -> next line
+S-<SPC> -> prev line
+C-<DWN> -> move to the next folder/project
+C-<UP>  -> move to the previous folder/project
+C-<LFT> -> expand if collapsed move to the first folder; move inside if expanded
+C-<RGT> -> move up if folded collapsed; collapse if in front of folder ; move to the folded if in front of a file
+   c s  -> Toggle search mode
+   c v  -> Toggle view mode (flat / flat with the folder hidden / folder / marked files view)
+   c b  -> switch to the next build configuration
+   c m  -> switch the master project to be the current project
+   c p  -> switch to the next platform
+   c B  -> prompt to change build configuration
+   c M  -> prompt for the master project (project to build)
+   c P  -> prompt to change platform
+   B    -> launch build
+   C    -> launch clean
+   D    -> launch run/with debugger
+   R    -> launch run/without debugger
+   G    -> launch the update command (useful to regenerate some makefile/vcproj... from cmake for example); can also be consider a user command.
+   1    -> Switch to folder-view mode
+   2    -> Switch to flat-view mode
+   3    -> Switch to folder-hidden-view mode
+   4    -> Switch to marked-view mode
+
+
+Future improvement:
+   T    -> touch marked files (need a variable to make sure touch is always available)
+   h    -> find corresponding header/source (need regexps to match one and the other such as: source/header = ( \"\\.c\\(pp\\)?\" . \"\\.h\\(pp\\)?\" ) )
+   d    -> show/hide project dependencies
+   b    -> compile/buils marked files")

@@ -1,0 +1,10 @@
+(:summary    "Create MINI X-Face image for XEmacs/Emacs21+"
+ :created    "19980225"
+ :updated    "2001"
+ :license    "GPL-2"
+ :authors    (("Yuuichi Teranishi" . "teranisi@gohome.org"))
+ :maintainer ("Yuuichi Teranishi" . "teranisi@gohome.org")
+ :provided   (x-face-mini)
+ :required   ((("emacs" cl)
+	       (nil x-face)))
+ :keywords   ("x-face" "thumbnails" "netpbm"))

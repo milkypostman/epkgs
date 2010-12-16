@@ -1,0 +1,13 @@
+(:summary    "Extensions to standard library finder.el"
+ :created    "20080312"
+ :updated    "20100828"
+ :license    "GPL-3"
+ :authors    (("Drew Adams"))
+ :maintainer ("Drew Adams")
+ :provided   (finder+)
+ :required   ((("emacs" finder))
+	      (("autofit-frame" autofit-frame)
+	       ("fit-frame" fit-frame)))
+ :keywords   ("help")
+ :commentary "\
+Extensions to standard library finder.el")

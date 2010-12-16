@@ -1,0 +1,23 @@
+(:summary    "Extensions to `sort.el'"
+ :created    "19960418"
+ :updated    "20100115"
+ :license    "GPL-2"
+ :authors    (("Drew Adams"))
+ :maintainer ("Drew Adams")
+ :provided   (sort+)
+ :required   ((("emacs" cl sort)))
+ :keywords   ("unix" "tools" "sorting")
+ :commentary "\
+Extensions to `sort.el'.
+
+
+ ***** NOTE: The following function defined in `sort.el' has been
+             REDEFINED HERE:
+
+ `sort-reorder-buffer' - This version preserves text properties,
+                         even in Emacs versions prior to 20.
+
+
+ This file should be loaded after loading the standard GNU file
+ `sort.el'.  So, in your `~/.emacs' file, do this:
+ (eval-after-load \"sort\" '(require 'sort+))")

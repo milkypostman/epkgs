@@ -1,0 +1,5 @@
+(:summary    "Multi-way split of window"
+ :updated    "20060505"
+ :license    "GPL-2"
+ :provided   (split-window-multi)
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/appearance/")

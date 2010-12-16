@@ -1,0 +1,46 @@
+(:summary    "Define words in a muse project"
+ :license    "GPL-2"
+ :authors    (("Phillip Lord" . "phillip.lord@newcastle.ac.uk"))
+ :maintainer ("Phillip Lord" . "phillip.lord@newcastle.ac.uk")
+ :provided   (muse-definition)
+ :required   ((("emacs" assoc)))
+ :homepage   "http://homepages.cs.ncl.ac.uk/phillip.lord/emacs.html"
+ :commentary "\
+This adds support for definitions in a muse project. There are two new tags
+added. The first \"<define>\" adds a word into a page which should be defined
+and, optionally an inline definition. The second \"<definition>\" is used to
+provide an definition for when inline definitions are not enough.
+
+For example,
+
+<define link=\"word\">a set of letters surrounded by spaces</define>
+
+defines \"word\" as \"a set of...\".
+
+Alternatively, we could do
+
+<define link=\"word\"/>
+
+<definition name=\"word\">a set of letters surrounded by spaces</definition>
+
+The \"<definition> tag can occur anywhere in the same muse project.
+In general, they can be placed in a single file, which acts as a glossary.
+Any other muse markup can be used in this file; when published the
+\"<definition>\" tag is removed.
+
+Note the one limitation here -- the definition used by the \"<define>\" tag
+will be the one present in the \"<definition>\" tag, the last time the latter
+was published -- essentially, it's a two stage compiliation. You can use
+a third tag to overcome this.
+
+<defdepend file=\"definitions.muse\"/>
+
+will ensure that all definitions in \"definitions.muse\" are current. You can
+include this tag into your header and footer if you like using like so...
+
+<markup>
+<defdepend file=\"definitions.muse\"/>
+</markup>
+
+The <defdepend> tag needs to be on a new line or it doesn't work (for me at
+least).")

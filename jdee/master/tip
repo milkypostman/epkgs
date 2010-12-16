@@ -1,0 +1,14 @@
+(:summary    "Integrated Development Environment for Java"
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-2"
+ :authors    (("Paul Kinnucan" . "pkinnucan@attbi.com"))
+ :maintainer ("Paul Landes")
+ :provided   (beanshell efc jcomplete jde jde-annotations jde-ant jde-bookmark jde-bsh jde-bug jde-checkstyle jde-class jde-compat jde-compile jde-complete jde-custom jde-db jde-dbo jde-dbs jde-ecj-flymake jde-ejb jde-gen jde-help jde-imenu jde-import jde-java-font-lock jde-java-grammar jde-javadoc jde-javadoc-gen jde-jdb jde-juci jde-junit jde-make jde-open-source jde-package jde-parse jde-parse-class jde-parse-expr jde-plugins jde-project jde-project-file jde-properties jde-run jde-stat jde-util jde-which-method jde-widgets jde-wiz jde-xref regress sregex)
+ :required   ((("elib" avltree)
+	       ("emacs" arc-mode avl-tree browse-url cc-fonts cc-mode cl comint compile cus-edit custom easymenu eieio eldoc etags executable flymake font-lock imenu lmenu overlay regexp-opt reporter sort speedbar tempo thingatpt tree-widget wid-edit widget)
+	       ("htmlize" htmlize)
+	       ("jdee" jde-autoload)
+	       (nil semantic/senator)))
+ :keywords   ("java" "tools")
+ :homepage   "http://jdee.sourceforge.net/")

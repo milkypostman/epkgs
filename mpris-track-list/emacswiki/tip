@@ -1,0 +1,14 @@
+(:summary    "MPRIS track list"
+ :created    "20090812"
+ :updated    "2009"
+ :license    "GPL-2"
+ :authors    (("Changyuan Yu" . "reivzy@gmail.com"))
+ :maintainer ("Changyuan Yu" . "reivzy@gmail.com")
+ :provided   (mpris-track-list)
+ :required   ((("emacs" cl)
+	       ("mpris-dbus" mpris-dbus)))
+ :keywords   ("dbus" "mpris")
+ :commentary "\
+List playlist via MPRIS, now only support play/stop/pause.
+
+use M-x mpris-track-list to open MPRIS track list.")

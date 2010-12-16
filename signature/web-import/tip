@@ -1,0 +1,19 @@
+(:summary    "Small hack to insert a custom signature"
+ :created    "1999"
+ :updated    "1999"
+ :license    "GPL-2"
+ :authors    (("Benjamin Drieu" . "drieu@alpha10.bocal.cs.univ-paris8.fr"))
+ :maintainer ("Benjamin Drieu" . "drieu@alpha10.bocal.cs.univ-paris8.fr")
+ :provided   (signature)
+ :keywords   ("mail")
+ :homepage   "http://www.grassouille.org/emacs/index.en.html"
+ :commentary "\
+signature.el inserts random signatures at the end of a mail.
+Signatures are picked randomly from a file in the directory
+$HOME/`signature-directory'/
+
+Matching is performed against all the keys of the variable
+`signature-email-addresses-alist' (from which the name of the file
+is taken).  As soon as a match is correct, 
+
+$Id$")

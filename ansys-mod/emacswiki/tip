@@ -1,0 +1,12 @@
+(:summary    "Editing Ansys log files under Emacs"
+ :created    "1997"
+ :updated    "1997"
+ :license    "GPL-2"
+ :authors    (("Tim Read" . "tim.read@fp.co.nz"))
+ :maintainer ("Tim Read" . "tim.read@fp.co.nz")
+ :provided   (ansys-mod)
+ :required   ((("emacs" backquote easymenu paren reporter)))
+ :keywords   ("languages")
+ :commentary "\
+This package provides Emacs support for Ansys.
+It defines Ansys mode, a major mode for editing Ansys log files.")

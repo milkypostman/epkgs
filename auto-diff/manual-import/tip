@@ -1,0 +1,25 @@
+(:summary    "Automatically generate diff's for directory contents"
+ :created    "1999"
+ :updated    "1999"
+ :license    "GPL-2"
+ :authors    (("Steve Kemp" . "skx@tardis.ed.ac.uk"))
+ :maintainer ("Steve Kemp" . "skx@tardis.ed.ac.uk")
+ :provided   (auto-diff)
+ :commentary "\
+This package is aimed at making it simple for programmers to
+create diff's of files that they have been working on.
+
+ When a file is loaded that matchs \"auto-diff-directory-regexp\"
+a diff will be automatically created whenever the user saves
+the file.
+
+
+Usage
+
+ Simply add the following lines to your .emacs file:
+
+ ;; Generate diffs in a simple manner.
+ (require 'auto-diff)
+
+ ;; example only...
+ (add-to-list 'auto-diff-directory-regexp \"/home/skx/Lisp/.*\\.el\")")

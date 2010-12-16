@@ -1,0 +1,8 @@
+(:summary    "Change identity when composing a message"
+ :created    "20101129"
+ :updated    "2010"
+ :provided   (gnus-identities)
+ :keywords   ("gnus" "identities")
+ :homepage   "https://github.com/renard/gnus-identities"
+ :commentary "\
+(see gnus-identities-change for details)")

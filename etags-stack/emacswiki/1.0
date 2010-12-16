@@ -1,0 +1,15 @@
+(:summary    "Navigate the tags stack"
+ :created    "20080814"
+ :updated    "2008"
+ :license    "GPL-2"
+ :authors    (("Scott Frazer" . "frazer.scott@gmail.com"))
+ :maintainer ("Scott Frazer" . "frazer.scott@gmail.com")
+ :provided   (etags-stack)
+ :required   ((("emacs" custom etags)))
+ :keywords   ("tags")
+ :homepage   "http://www.emacswiki.org/EtagsStack"
+ :wikipage   "http://www.emacswiki.org/EtagsStack"
+ :commentary "\
+Navigate the tags stack
+14 Aug 2008 -- v1.0
+               Initial release")

@@ -1,0 +1,11 @@
+(:summary    "Do something such as beep on channel activity"
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-3"
+ :provided   (rcirc-ding)
+ :homepage   "http://www.emacswiki.org/rcircDing"
+ :wikipage   "http://www.emacswiki.org/rcircDing"
+ :commentary "\
+Use M-x rcirc-ding in a channel when you want to get a ding when
+there is any activity there.  This only happens if the buffer is
+not visible and `rcirc-ignore-buffer-activity-flag' is non-nil.")

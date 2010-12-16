@@ -1,0 +1,50 @@
+(:summary    "Using Emacs for CGI scripting"
+ :updated    "20010824"
+ :license    "GPL-2"
+ :authors    (("Eric Marsden" . "emarsden@laas.fr"))
+ :maintainer ("Eric Marsden" . "emarsden@laas.fr")
+ :provided   (cgi)
+ :required   ((("emacs" calendar cl)))
+ :keywords   ("cgi" "web" "scripting" "slow")
+ :homepage   "http://emarsden.chez.com/downloads/"
+ :wikipage   "http://www.emacswiki.org/CommonGatewayInterface"
+ :commentary "\
+People who like this sort of thing will find this the sort of 
+thing they like.                           -- Abraham Lincoln
+
+
+Overview ==========================================================
+
+A simple library for the Common Gateway Interface for Emacs,
+allowing you to service requests for non static web pages in elisp.
+Provides routines for decoding arguments to GET- and POST-type CGI
+requests.
+
+Usage: place a shell script such as the following in your web
+server's CGI directory (typically called something like
+/var/www/cgi-bin/):
+
+,-------------------------------------------------------------------
+| #!/bin/sh
+| 
+| emacs -batch -l cgi.el -f cgi-calendar
+`-------------------------------------------------------------------
+
+(`cgi-calendar' is a sample elisp CGI script provided at the end of
+this file).
+
+Alternatively, if you're running version 2.x of the linux kernel
+you could make .elc files directly executable via the binfmt_misc
+mechanism and run them straight from the cgi-bin directory.
+
+Efficiency would be improved by having Emacs bind to the http
+service port and spawn a thread per connection. Extending Emacs to
+support server sockets and multithreading is left as an exercise
+for the reader.
+
+References:
+  * rfc1738 \"Uniform Resource Locators\"
+  * rfc1630 \"Universal Resource Identifiers in WWW\"
+
+Thanks to Christoph Conrad <christoph.conrad@gmx.de> for pointing
+out a bug in the URI-decoding.")

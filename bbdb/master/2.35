@@ -1,0 +1,15 @@
+(:created    "1991"
+ :updated    "1994"
+ :license    "GPL-2"
+ :provided   (bbdb bbdb-anniv bbdb-bng bbdb-com bbdb-edit bbdb-export bbdb-ftp bbdb-gnus bbdb-gui bbdb-hooks bbdb-ldif bbdb-mail-folders bbdb-merge bbdb-mhe bbdb-migrate bbdb-obsolete-net bbdb-passwd bbdb-pgp bbdb-print bbdb-reportmail bbdb-rmail bbdb-sc bbdb-snarf bbdb-srv bbdb-test bbdb-to-outlook bbdb-vm bbdb-w3 bbdb-whois bbdb-xemacs)
+ :required   ((("efs" efs)
+	       ("emacs" advice ange-ftp browse-url calendar cl custom diary-lib electric faces gnus gnus-art gnus-sum gnus-win info mail-extr mail-parse mail-utils mailheader message mh-comp mh-e reporter rfc822 rmail rmailsum supercite timezone url)
+	       ("flim" mel)
+	       ("gnuserv" gnuserv gnuserv-compat)
+	       ("itimer" itimer)
+	       ("mailcrypt" mailcrypt)
+	       ("reportmail" reportmail)
+	       ("vm" vm vm-autoload)
+	       (nil dates)))
+ :homepage   "http://bbdb.sourceforge.net/"
+ :wikipage   "http://www.emacswiki.org/BbdbMode")

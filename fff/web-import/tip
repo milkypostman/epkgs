@@ -1,0 +1,58 @@
+(:summary    "Fast file finder"
+ :created    "19960326"
+ :updated    "20040428"
+ :license    "GPL-2"
+ :authors    (("Noah Friedman" . "friedman@splode.com"))
+ :maintainer (nil . "friedman@splode.com")
+ :provided   (fff)
+ :keywords   ("extensions" "searching" "files" "commands" "tools")
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
+ :commentary "\
+This package provides several shortcut commands for visiting or
+inserting files without having to specify them by their complete name.
+For example, you can visit programs in your exec-path (some of which may
+be humanly-readable shell scripts or config files), or anything else
+which is quickly locatable via a prebuilt database or path list.
+Completion is also available for many commands.
+
+Using a prefix arg will display a menu of all possible matches,
+and you can select one of them by moving point and pressing return.
+
+There are also documented subroutines for common searching operations
+and basic interactive behavior to minimize any effort required to add
+additional shortcut commands.
+
+To use this package, put the following in your .emacs:
+
+  (autoload 'fff-find-file-in-envvar-path                    \"fff\" nil t)
+  (autoload 'fff-insert-file-in-envvar-path                  \"fff\" nil t)
+  (autoload 'fff-find-file-in-exec-path                      \"fff\" nil t)
+  (autoload 'fff-insert-file-in-exec-path                    \"fff\" nil t)
+  (autoload 'fff-find-file-in-path                           \"fff\" nil t)
+  (autoload 'fff-insert-file-in-path                         \"fff\" nil t)
+  (autoload 'fff-find-file-in-locate-db                      \"fff\" nil t)
+  (autoload 'fff-insert-file-in-locate-db                    \"fff\" nil t)
+
+The command `fff-install-map' will bind these commands to a common
+prefix of \"C-c C-f\" (you can change this).  To find a list of them, run
+that command and then type \"C-c C-f C-h\".
+
+If you are using Emacs 19 or later, you can have this happen
+automatically by putting the following in your .emacs:
+
+    (eval-after-load \"fff\" '(fff-install-map))
+
+This package is most useful if you have an up-to-date `locate' database
+(built by the `updatedb' program from the GNU findutils), since that
+provides a fast way to search for files by name all over the system.
+Red Hat 5.0 and later update this database automatically.
+
+I wrote this package I got sick of typing long file names for things way
+down in source trees, or having to go look for them first because I
+didn't even know where they were.
+
+Related works:
+   * filecache.el by Peter Breton <pbreton@i-kinetics.com>.
+     The major difference seems to be how it works by layering on top of
+     the normal find-file, insert-file, etc. commands.  Its primitives
+     for constructing new caches or search paths are different.")

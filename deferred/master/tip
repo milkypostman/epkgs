@@ -1,0 +1,19 @@
+(:summary    "Simple asynchronous functions for emacs lisp"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("SAKURAI Masashi" . "m.sakurai@kiwanami.net"))
+ :maintainer ("SAKURAI Masashi" . "m.sakurai@kiwanami.net")
+ :provided   (concurrent deferred)
+ :required   ((("emacs" cl pp)))
+ :keywords   ("deferred" "async")
+ :homepage   "https://github.com/kiwanami/emacs-deferred"
+ :commentary "\
+'deferred.el' is a simple library for asynchronous tasks.  The API
+is almost the same as JSDeferred written by cho45. See the
+JSDeferred and Mochikit.Async web sites for further documentations.
+[http://github.com/cho45/jsdeferred]
+[http://mochikit.com/doc/html/MochiKit/Async.html]
+
+A good introduction document (JavaScript)
+[http://cho45.stfuawsc.com/jsdeferred/doc/intro.en.html]")

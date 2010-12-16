@@ -1,0 +1,6 @@
+(:summary    "ENhanced Scala Interaction Mode for Emacs"
+ :license    "GPL-2"
+ :provided   (ensime ensime-auto-complete ensime-builder ensime-config ensime-debug ensime-inf ensime-refactor ensime-sbt ensime-test ensime-undo)
+ :required   ((("auto-complete" auto-complete)
+	       ("emacs" apropos cl comint compile easymenu etags font-lock hideshow pp thingatpt timer tooltip)))
+ :homepage   "https://github.com/aemoncannon/ensime")

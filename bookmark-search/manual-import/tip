@@ -1,0 +1,16 @@
+(:summary    "Provide a search command for emacs bookmarks ala anything. "
+ :created    "200919"
+ :license    "GPL-3"
+ :authors    (("ThierryVolpiatto"))
+ :maintainer ("ThierryVolpiatto")
+ :provided   (bookmark-search)
+ :required   ((("emacs" bookmark cl)))
+ :keywords   ("bookmarks")
+ :commentary "\
+----------
+
+This file provide A search command `sbookmark-bmenu-search' (M-g) to Emacs bookmarks.
+That allow narrowing the bookmark list depending on what you enter in prompt.
+This command is incremental and work a little like ANYTHING.
+You can use this library with VANILLA BOOKMARK.(bookmark.el)
+No extra dependency is needed.")

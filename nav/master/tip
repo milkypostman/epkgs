@@ -1,0 +1,25 @@
+(:summary    "Emacs mode for IDE-like navigation of directories"
+ :created    "2009"
+ :updated    "2009"
+ :license    "Apache-2.0"
+ :authors    (("Issac Trotts" . "issactrotts@google.com"))
+ :maintainer ("Issac Trotts" . "issactrotts@google.com")
+ :provided   (nav nav-bufs nav-preview nav-tags)
+ :required   ((("emacs" cl imenu python)))
+ :homepage   "http://code.google.com/p/emacs-nav/"
+ :wikipage   "http://www.emacswiki.org/Nav"
+ :commentary "\
+To use this file, put something like the following in your
+~/.emacs:
+
+(add-to-list 'load-path \"/directory/containing/nav/\")
+(require 'nav)
+
+Type M-x nav to open the navigation window. It should show up as a
+narrow column on the left, showing the contents of the current
+directory. If there are multiple windows open, all but one will be
+closed to make sure the nav window shows up correctly.
+
+Key Bindings
+
+Press ? in the Nav window to display a list of key bindings.")

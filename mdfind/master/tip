@@ -1,0 +1,27 @@
+(:summary    "Interface to OS X's mdfind command"
+ :created    "2007"
+ :updated    "2007"
+ :license    "GPL-2"
+ :authors    (("Jose Antonio Ortega" . "jao@gnu.org"))
+ :maintainer ("Jose Antonio Ortega" . "jao@gnu.org")
+ :provided   (mdfind)
+ :required   ((("emacs" org)))
+ :keywords   ("data")
+ :commentary "\
+A quick and dirty major mode for displaying results of OS X's
+`mdfind' command. Put this file in your load path and require
+`mdfind': an interactive function of the same name will be
+available. When invoked, it will ask you for a directory and a
+query string that will be passed to the OS X mfind command. The
+results of the query are then displayed on a special, read-only
+buffer, whose mode derives from `org-mode' (so that links to files
+are nicely displayed and clickable). In that buffer the following
+key shortcuts are available:
+  - n : go to next link
+  - p : go to previous link
+  - RET, o : follow link
+  - q : bury buffer
+  - m : perform new query
+
+The latest version of this file is available at
+http://hacks-galore.org/darcs?r=mdfind-el;a=tree")

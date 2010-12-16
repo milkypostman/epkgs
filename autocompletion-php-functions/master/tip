@@ -1,0 +1,9 @@
+(:summary    "Auto complete php functions"
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-3"
+ :authors    (("Kazutaka Ashizawa" . "k.ashizawa@gmail.com"))
+ :maintainer ("Kazutaka Ashizawa" . "k.ashizawa@gmail.com")
+ :provided   (autocompletion-php-functions)
+ :required   ((("auto-complete" auto-complete)))
+ :homepage   "https://github.com/ashizawa/autocompletion-php-functions")

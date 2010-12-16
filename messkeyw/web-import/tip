@@ -1,0 +1,33 @@
+(:summary    "Automatic keyword support during composition"
+ :created    "2000"
+ :updated    "2000"
+ :license    "GPL-2"
+ :provided   (messkeyw)
+ :required   ((("emacs" cl)))
+ :keywords   ("mail" "news" "keywords")
+ :commentary "\
+This provides a hookable mechanism by which to have Keywords
+headers automatically generated based on word frequency of the
+body.  The goal is to make it possible to score on Keywords
+provided, of course, that Keywords gets to the overview files.
+
+To make this work, all one need do is...
+For generation during posting:
+(add-hook 'message-send-hook 'message-keyword-insert)
+For generation during received-mail processing:
+(add-hook 'nnmail-prepare-incoming-message-hook 'message-auto-keyword-insert)
+
+Keywords get into overviews at the server if it is capable and
+configured to do so.  In INN, since 1.5b2, article-supplied
+Keywords can be gotten into overviews by enabling the line
+\"Keywords:full\" in overview.fmt.
+
+Note as well that INN since 2.0 has been capable of doing server-
+side keyword auto-generation, whether or not there are article-
+supplied Keywords headers.  (Also available in 1.7, as a patch,
+predating the integration of this code for 2.x.)  INN grinds
+article bodies on the way through, supplying additional data
+to overchan, thereby providing useful bits of article content
+for scoring/killing purposes, without requiring full-body searches.
+
+----------------------------------------------------------------")

@@ -1,0 +1,50 @@
+(:summary    "Major mode to edit Markdown files in Emacs"
+ :created    "2007"
+ :updated    "2008"
+ :license    "GPL-2"
+ :authors    (("Jason Blevins" . "jrblevin@sdf.lonestar.org"))
+ :maintainer ("Jason Blevins" . "jrblevin@sdf.lonestar.org")
+ :provided   (markdown-mode)
+ :required   ((("emacs" easymenu font-lock outline)))
+ :keywords   ("markdown" "major" "mode")
+ :homepage   "http://jblevins.org/projects/markdown-mode/"
+ :wikipage   "http://www.emacswiki.org/MarkdownMode"
+ :commentary "\
+markdown-mode is a major mode for editing [Markdown][]-formatted
+text files in GNU Emacs.  markdown-mode is free software, licensed
+under the GNU GPL.
+
+ [Markdown]: http://daringfireball.net/projects/markdown/
+
+The latest version is markdown-mode 1.6, released on June 4. 2008:
+
+ * [markdown-mode.el][]
+ * [Screenshot][]
+ * [Release notes][]
+
+markdown-mode is also available in the Debian `emacs-goodies-el`
+package (beginning with revision 27.0-1).
+
+ [markdown-mode.el]: http://code.jblevins.org/markdown-mode/markdown-mode.el
+ [screenshot]: http://jblevins.org/projects/markdown-mode/screenshots/20080604-001.png
+ [release notes]: http://jblevins.org/projects/markdown-mode/rev-1-6
+
+Dependencies:
+
+markdown-mode requires easymenu, a standard package since GNU Emacs
+19 and XEmacs 19, which provides a uniform interface for creating
+menus in GNU Emacs and XEmacs.
+
+Installation:
+
+Make sure to place `markdown-mode.el` somewhere in the load-path and add
+the following lines to your `.emacs` file to associate markdown-mode
+with `.text` files:
+
+    (autoload 'markdown-mode \"markdown-mode.el\"
+       \"Major mode for editing Markdown files\" t)
+    (setq auto-mode-alist
+       (cons '(\"\\\\.text\" . markdown-mode) auto-mode-alist))
+
+There is no consensus on an official file extension so change `.text` to
+`.mdwn`, `.md`, `.mdt`, or whatever you call your markdown files.")

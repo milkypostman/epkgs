@@ -1,0 +1,55 @@
+(:summary    "Maintain a weblog style journal with emacs-wiki"
+ :created    "2003"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("Gary V. Vaughan" . "gary@gnu.org"))
+ :maintainer ("Gary V. Vaughan" . "gary@gnu.org")
+ :provided   (emacs-wiki-journal)
+ :required   ((("emacs" cl)
+	       ("emacs-wiki-mode" emacs-wiki)))
+ :keywords   ("hypermedia")
+ :homepage   "http://sugarshark.com/ProjectPage.html"
+ :wikipage   "http://www.emacswiki.org/EmacsWikiJournal"
+ :commentary "\
+I maintain the hypertext parts of my website with John Wiegley's
+emacs-wiki.el, now maintained by Damien Elmes at
+http://repose.cx/emacs/wiki.  You will need to install a copy of that
+file before this one is of any use to you.
+
+* Startup
+
+To begin using emacs-wiki-journal, put this in your .emacs file:
+
+  (load \"emacs-wiki-journal\")
+
+Now you can add an entry to your journal with
+M-x emacs-wiki-journal-add-entry, give it a WikiName for a category
+to index the entry under (usually beginning \"Category\") and a header
+line for the new entry.  A suitable header for today's entry will
+added to emacs-wiki-journal-wiki where you add the body for the entry
+and a cross reference will be added to the category index.  If you have
+a PNG icon in the emacs-wiki-category-icons-url then the icon named
+after the CategoryWiki will be inserted in the journal header.
+
+You may need to set up a stylesheet to layout the journal page as you
+want it.  Look at mine as an example:
+
+  http://www.oranda.demon.co.uk/journal.css
+
+You should also type M-x customize-group, and give the name
+\"emacs-wiki-journal\".  Change it to suit your preferences.  Each of
+the options has its own documentation.
+
+* Key Bindings
+
+You might want to bind emacs-wiki-journal-add-entry to a key in your
+global keymap:
+
+  (define-key ctl-x-4-map
+              \"j\" 'emacs-wiki-journal-add-entry-other-window)
+
+And also in emacs-wiki mode:
+
+  (add-hook 'emacs-wiki-mode-hook
+            (lambda ()
+              (local-set-key \"C-cj\" 'emacs-wiki-journal-add-entry)))")

@@ -1,0 +1,36 @@
+(:summary    "Automagically pair braces and quotes like TextMate"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :provided   (autopair autopair-tests)
+ :required   ((("emacs" cl)))
+ :keywords   ("convenience" "emulations")
+ :homepage   "http://code.google.com/p/autopair/"
+ :commentary "\
+Another stab at making braces and quotes pair like in
+TextMate:
+
+* Opening braces/quotes are autopaired;
+* Closing braces/quotes are autoskipped;
+* Backspacing an opening brace/quote autodeletes its adjacent pair.
+* Newline between newly-opened brace pairs open an extra indented line.
+
+Autopair deduces from the current syntax table which characters to
+pair, skip or delete.
+
+Installation:
+
+  (require 'autopair)
+  (autopair-global-mode) ;; to enable in all buffers
+
+To enable autopair in just some types of buffers, comment out the
+`autopair-global-mode' and put autopair-mode in some major-mode
+hook, like:
+
+(add-hook 'c-mode-common-hook #'(lambda () (autopair-mode)))
+
+Alternatively, do use `autopair-global-mode' and create
+*exceptions* using the `autopair-dont-activate' local variable,
+like:
+
+(add-hook 'c-mode-common-hook #'(lambda () (setq autopair-dont-activate t)))")

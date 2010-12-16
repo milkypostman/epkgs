@@ -1,0 +1,20 @@
+(:summary    "Minor mode for spell checking"
+ :created    "2006"
+ :updated    "20100525"
+ :license    "GPL-3"
+ :authors    (("Martin Rudalics" . "rudalics@gmx.at"))
+ :maintainer ("Martin Rudalics" . "rudalics@gmx.at")
+ :provided   (speck)
+ :required   ((("emacs" cl)))
+ :keywords   ("spell" "checking")
+ :homepage   "http://www.emacswiki.org/SpeckMode"
+ :wikipage   "http://www.emacswiki.org/SpeckMode"
+ :commentary "\
+Speck is a minor mode for \"specking\" - spell-checking text displayed
+in Emacs windows.  Invoke the command `speck-mode' to toggle specking
+of all windows showing the current buffer.
+
+_____________________________________________________________________________
+                                                                             
+			       General options					
+_____________________________________________________________________________")

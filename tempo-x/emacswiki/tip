@@ -1,0 +1,9 @@
+(:summary    "More elements for tempo"
+ :created    "20071227"
+ :updated    "2007"
+ :license    "GPL-2"
+ :authors    (("Wenbin" . "wenbinye@gmail.com"))
+ :maintainer ("Wenbin" . "wenbinye@gmail.com")
+ :provided   (tempo-x)
+ :required   ((("emacs" cl tempo)))
+ :keywords   ("abbrev"))

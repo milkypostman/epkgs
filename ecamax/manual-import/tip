@@ -1,0 +1,71 @@
+(:summary    "Enhanced ecasound tools for emacs"
+ :created    "2007"
+ :updated    "20070126"
+ :license    "GPL-2"
+ :authors    (("David O'Toole" . "dto@gnu.org"))
+ :maintainer ("David O'Toole" . "dto@gnu.org")
+ :provided   (ecamax)
+ :required   ((("ecasound" ecasound)
+	       ("emms" jack)
+	       ("eon" eon)
+	       ("radio" radio)
+	       (nil usb)))
+ :keywords   ("multimedia")
+ :commentary "\
+ECAMAX is an experimental object-oriented frontend to Kai
+Vehmanen's ecasound and some related programs (Mario Lang's audio
+code for Emacs). 
+
+Planned feature list:
+ - Basic playback and transcoding tasks
+ - Basic jackd/aconnect configuration GUI
+ - Run jackd and ecasound as daemons
+ - Network audio with jack.udp and jack.plumbing
+ - Interactive audition/annotation/marking/extraction
+ - Non-destructive recording (i.e. \"takes\") by default.
+ - Automatic storage management and archiving
+ - extract audio files from USB Mass Storage devices
+   or from CD-Audio / WAV files / etc
+ - create an archive from extracted audio files, or add to an existing archive
+ - store archive contents as FLAC
+ - review, rename, annotate, and slice audio files
+ - create an org-mode file index for each archive with  review file foo.bar
+ - define audio tags and tag your files with auto-completion of tag names
+ - search annotations/tags across multiple archives to find relevant audio
+ - carefully delete unwanted recordings
+ - create ogg vorbis files upon request
+ - burn CD's?
+ - tag regions of files? (or just split files, then tag the pieces...)
+
+Terminology comes first. Like a lot of audio software, we take the
+term `session' to mean (a bit confusingly) a single multi-track
+project (typically a song) that will in reality be recorded and
+edited over the course of many studio \"sessions\". 
+
+In ECAMAX, a session consists of a set of `tracks' and some audio
+configuration data (sampling rate, etc.)  A track consists of an
+ecasound input specifier (or `iospec'), an ecasound output iospec,
+a set of `operations' to be performed, and finally a collection of
+`takes'. A take identifies an individual audio file in a series of
+recordings. A `take-set' is the set of new takes created when the
+engine is started in record-enabled mode (this will be the null set
+if there aren't any record-enabled tracks). The audio files for the
+takes are stored in the session directory, which serves as the name
+of the session. A session may be renamed by simply renaming the
+directory it lives in.
+
+Behind the scenes, ECAMAX configures ecasound and jackd to match
+the specified recording/playback/routing setup, manages the files
+for various takes, and so on.
+
+Dependencies
+
+The communication with ecasound is via Mario Lang's ecasound.el,
+which is included with ecasound itself. However, ECAMAX requires a
+development version of ecasound.el. You can get that from
+http://dtoweb.no-ip.org/e/ecasound-modified.el Mario Lang's jack.el
+is also required.  http://delysid.org/emacs/jack.el (We are
+planning to put this all into http://tromey.com/elpa )
+
+You can download ecasound from http://eca.cx. Debian users may
+install the \"ecasound\" package.")

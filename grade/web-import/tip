@@ -1,0 +1,369 @@
+(:summary    "Program for keeping track of grades"
+ :created    "2001"
+ :updated    "20060827"
+ :license    "GPL-2"
+ :authors    (("Jay Belanger"))
+ :maintainer ("Jay Belanger" . "belanger@truman.edu")
+ :provided   (grade)
+ :required   ((("emacs" calc easymenu)))
+ :keywords   ("grade")
+ :homepage   "http://vh213601.truman.edu/~belanger/emacs.html"
+ :wikipage   "http://www.emacswiki.org/GradeMode"
+ :commentary "\
+Quick intro
+
+Grade is an Emacs program for keeping track of student's grades.
+It requires the calc package 
+(ftp:://ftp.gnu.org/pub/gnu/calc/calc-2.02f.tar.gz).
+
+Starting up
+-----------
+If grade.el is somewhere in the Emacs load-path and a line of 
+the form
+(autoload 'grade \"grade\" \"Emacs grading program\" t)
+is in the .emacs file, the program can be started with
+M-x grade
+Once the program is started, the user will be prompted for a file 
+name.  
+If an existing grade file is chosen, it will be opened in grade-mode.
+If a new file is chosen, the user will be prompted for some
+information about the class, then a table for the student grades will
+be inserted into the buffer.  The user will then be given the option 
+to enter the student names (in which case the user will then be prompted 
+for the names of the students in the class, the prompting will stop 
+when no first name is given) or to import a csv file.
+(The csv file can be imported at a later time with the command 
+M-x grade-import-data)
+
+Inserting students
+------------------
+If several more students are to be added, the prompting can be started
+again by typing C-cC-a (Add students).
+Individual students can be also added with C-cC-n (New student).  In
+this case, the student name will be prompted for, and the user will be
+asked if they want to insert scores for the student.  Any time later,
+typing C-cC-i will prompt for and insert the scores for the current
+student.
+Students can be removed with C-k.  If a student is removed, their
+information will be copied to the file filename-REMOVED in the
+auxiliary directory.
+
+Moving students
+---------------
+To move a student from one row to another, choose the student by
+typing * when the point is in their row.  Move the point to the row
+the student is to be moved to, and type @.
+
+Inserting columns
+-----------------
+A column in which to keep scores can be inserted at the end of the
+table with C-cC-o (Open a column).  (To insert a column elsewhere,
+move the point to where the column should be inserted and type 
+C-cC-s (insert Scores).)  The name of the column will be prompted for,
+and a point value for the assignment will also be prompted for.  
+Normally the point value is a number, but if the point value begins
+with an \"=\", it is assumed to be a formula. 
+In a formula, the contents of another row named \"name\" can be referred
+to with <name>.  For example, suppose there is a column named \"HW 1\".
+If a column named \"Twice\" is inserted and given the point value
+\"=2*<HW 1>\", then the entries for column \"Twice\" will be twice those
+of column \"HW 1\". 
+Another option for formulas is to use a formula of the form
+\"AVG(<name1><name2>...)\".  In this case, the weighted average of
+columns given by <name1>... will be computed, except any blank scores
+will be skipped.  This can be handy when giving optional assignments.
+If the formula is \"AVG(*)\", then all score columns (except formula
+columns) will be used.
+If the column is not a formula column, the user will be given the
+option of entering the scores in that column, in which case scores for
+each student will be prompted for.  Typing C-cC-g will also prompt for
+and insert the scores for the current column.
+The bottom row of a column will contain the average of the column
+entries.  If the point value for the column is not a number or a
+formula, however, then that column is assumed to contain 
+non-numerical data, and will not be averaged. 
+A column can be removed by typing C-cC-k.
+
+Note on computations
+--------------------
+Note that an empty score cell will not contribute to the average when
+averaging a column, but will count as a 0 when computing a formula.
+
+Moving columns
+--------------
+The current column can be moved to the end of the table by typing C-c].
+A column can be moved elsewhere by marking it with C-c*,
+moving the point to where the column should go, and typing C-c@.
+
+Moving around
+-------------
+The cells in the table can be navigated with the arrow keys, with C-n,
+C-p, C-f, C-b, and with RET (move down one row) and TAB (move forward
+one column).
+Additionally, M-p will move to the top row, M-n will move to the
+bottom row, M-b will move to the first column, M-f will move to the
+last column.
+The command C-cC-c (also M-<) will move to the top left cell.
+The grade-mode commands will keep the point in the table, and many
+commands in grade-mode assume the point is in the table.  If the point
+is outside the table, C-cC-c can be used to move the point back in.
+
+Editing cells
+-------------
+To edit the current cell, use =.
+If the cell is a score computed by a formula, = will recompute it,
+otherwise = will edit the cell contents.
+
+Editing other information
+-------------------------
+C-cC-ec will edit the class name
+C-cC-es will edit the section name
+C-cC-em will edit that semester name
+C-cC-ei will edit the instructor's name
+
+Updating columns
+----------------
+To update a column is to recompute the scores in the column, if they
+are given by a formula, and recompute the average for the column, if
+the column is a number column or a formula column.
+Typing C-c= will update the current column.
+To update all the columns, starting from the left, use C-c#.
+(grade-mode will make some attempts to keep all the information up to
+date, but in some cases information will need to be updated
+explicitly.  Note that if this is necessary and a formula involves a
+quantity that appears in a column after the row, C-c# may need to be
+done twice.)
+
+Ordering the information
+------------------------
+To put the students in alphabetical order, use C-cC-a.
+(With an argument, this will put them in reverse alphabetical order.)
+To arrange the students according the the scores on the current column,
+(in decreasing order for a numeric column, in alphabetical order
+otherwise), use C-c>.
+To arrange the students reverse according to the scores on the current
+column, use C-c<.
+
+Displaying information
+----------------------
+To display the name of the student in the current row, type \"s\".
+To display the name of the current column, type \"c\".
+
+Hiding information
+------------------
+Individual student rows can be hidden with the command \"/\"
+Individual columns can be hidden with the command \"C-c/\"
+These rows and columns can be shown with the command \"C-cC-v\"
+and will also appear again next time the grade file is opened.
+Student rows and columns can be hidden in another fashion.
+The command \".\" will mark a row for hiding, and a \"C-c.\" will mark
+a column for hiding. Then \"C-c-\" will hide all marked rows and
+columns.  (C-cC-hs will just hide the rows, and C-cC-hc will just
+hide the columns.)  Additionally, the next time the grade file is 
+opened, the marked rows and columns will still be hidden.
+To display all the hidden rows and columns, use the command \"C-c+\"
+The command \"C-c|\" will show all hidden columns, and \"C-c_\" all hidden
+rows.
+(Note that the command \"C-cC-v\" will not cause the hidden marked 
+rows and columns to be displayed.)
+Information will not appear on any output while it is hidden,
+although hidden scores can still be used in formulas.
+
+Student reports
+---------------
+To display a buffer which will show information on the students, one
+student at a time, type C-cC-x (grade-show-reports).
+If a previously existing grade file is started with an argument, 
+C-u M-x grade, then it will start up showing the reports.
+
+TeXing it up
+------------
+To create a TeX file with the grade file contents, type C-cC-t.
+To create a TeX file with student reports (each page will contain the
+information on one student), type C-cC-r.
+(Given a prefix, C-u, grade will try to fit two students per page.
+ With a numeric prefix, C-u n, grade will try to fit n students
+ per page.  They may not fit.)
+To create a TeX file with a list of the names of the students, type
+C-cC-l. 
+
+Exporting the data
+------------------
+The grade sheet can be exported in csv form with the command
+M-x grade-export-data
+
+Customizability
+---------------
+If the variable grade-use-studentid is non-nil, then there will be
+a column for the student id numbers.
+If the variable grade-default-instructor-name is given a value,
+then that will be the initial information when the instructor's name
+is prompted for.
+By default, the width of the columns containing the first names, last
+names, studentids and scores will be 10, 10, 9 and 5, respectively.  
+These can be changed by changing the values of  grade-fname-column-width,
+grade-lname-column-width, grade-studentid-column-width and 
+grade-score-column-width.  
+By default, the students will be listed first name last name.
+To list them last name, first name, set grade-first-name-first to nil.
+By default, the grade files are kept in ~/Grades/, this can be changed
+by changing the value of grade-default-directory.
+The student will be inserted into the table in alphabetical order, if
+for some reason you don't want this done, change
+grade-use-alphabetical-order to nil.
+(Whether or not grade-use-alphabetical-order is nil, giving C-cC-n an
+argument will insert a student at the current row.)
+The class averages will be included in the student reports.  If this 
+is not wanted, set grade-put-avg-in-reports to nil.
+Any blank scores will be omitted from the reports, unless the variable
+grade-include-blank-scores is t.
+When the file is put into TeX form, it will put
+grade-tex-columns-per-page on each page.  A reasonable value is
+guessed, but it can be changed.
+There will be a maximum of grade-tex-students-per-page students per
+page, which is by default 35.  (35 students can fit on a page with 
+about 5 formulas.)
+There will be at most 30 grades per page on each TeXed report.
+This can be changed by changing the value of grade-reports-grades-per-page.
+The auxiliary files, for the TeX output and for the deleted students,
+are kept in a subdirectory named \"aux\".  This can be changed
+by changing the value of grade-aux-dir.
+(Note that once a grade file is created, the same values of
+grade-fname-column-width, grade-lname-column-width, 
+grade-studentid-column-width, grade-score-column-width,
+grade-use-alphabetical-order, grade-use-studentid and 
+grade-first-name-first must be used.
+The values of these variables will be inserted at the end of the
+grade file when the file is created.  If you never change these
+values, and don't want them at the end of the file, set the
+variable `grade-always-insert-local-variables' to nil.
+If these values are not at the end of a file and you want to insert 
+them, the command M-x grade-insert-local-variables will insert them.
+The command M-x grade-replace-local-variables will remove any old
+information before inserting the new local variables.
+
+Miscellaneous notes
+-------------------
+The cells in the table are assumed to contain their bottom and right
+boundaries (the - and |).
+The first row cells are also assumed to contain the top boundary, and
+the first column cells are assumed to contain the left boundary.
+
+Quitting
+--------
+`q' will bury the Grades buffer.  If there are unsaved changes, you
+will be asked if you want to save them.  With an argument,
+`q' will kill the buffer.
+
+KEYBINDING SUMMARY
+------------------
+Motion
+------
+Move forward one column:               C-f
+ (This can be also be given a          Also rightarrow and TAB.
+  numeric argument to move        
+  more than one column at a time.)
+Move backward one column:              C-b
+ (This can also be given a             Also leftarrow.
+  numeric argument to move        
+  more than one column at a time.)
+Move forward one row:                  C-n
+ (This can also be given a             Also downarrow and RET.
+  numeric argument to move     
+  more than one row at a time.)
+Move backward one row:                 C-p
+ (This can also be given a             Also uparrow.
+  numeric argument to move 
+  more than one row at a time.)
+Move to the first row:                 M-p
+Move to the last row:                  M-n
+Move to the first column:              C-a
+                                       Also M-b.
+Move to the last column:               C-e
+                                       Also M-f.
+Move to the beginning of the table:    C-cC-c
+                                       Also M-<
+Move to the end of the table:          M->
+
+Editing
+-------
+Edit (or evaluate) the current cell:   =
+Edit the class name:                   C-cC-ec
+Edit the section name:                 C-cC-es
+Edit the semester name:                C-cC-em
+
+Updating
+--------
+Update the current column:             C-c=
+Update all columns:                    C-c#
+
+Insertion
+---------
+Add a student:                         C-cC-n
+Add several students:                  C-cC-a
+Add a new column (at the end):         C-cC-o
+Add a new column (at point):           C-cC-s
+Insert scores for student:             C-cC-g
+Insert scores for column:              C-cC-i
+
+Deletion
+--------
+Delete student:                        C-k
+Delete column:                         C-cC-k
+
+Displaying information
+----------------------
+Display student name                   s
+Display column name                    c
+
+Moving information
+------------------
+Mark student for moving:               *
+Move marked student:                   @
+Mark column for moving:                C-c*
+Move marked column:                    C-c@
+Move current column to end:            C-c]
+
+Ordering information
+--------------------
+Alphabetize students                   C-cC-a
+Alphabetize in reverse order           C-uC-cC-a
+Arrange according to column            C-c>
+Arrange in reverse order               C-c<
+
+Hiding information
+------------------
+Hide student                           /
+Hide column                            C-c/
+Mark student for hiding                .
+Mark column for hiding                 C-c.
+Hide marked information                C-c-
+Hide marked students                   C-cC-hs
+Hide marked columns                    C-cC-hc
+Show all hidden information            C-c+
+Show all hidden columns                C-c|
+Show all hidden students               C-c_
+Show unmarked hidden information       C-cC-v
+
+Reports
+-------
+Create a student reports buffer:       C-cC-x
+
+TeX
+---
+Create a grade TeX file:               C-cC-t
+Create a student reports TeX file:     C-cC-r
+Create a list of students:             C-cC-l
+
+Exporting
+---------
+Export as a csv file                   M-x grade-export-data
+
+Quitting
+--------
+Quit                                   q
+
+Changes
+Fix problem with reordering when there are hidden columns
+Add functions `grade-show-all-students', `grade-show-all-columns'.
+Removed headers.")

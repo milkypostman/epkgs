@@ -1,0 +1,50 @@
+(:created    "19960115"
+ :updated    "20011211"
+ :authors    (("Peter S. Galbraith" . "galbraithp@dfo-mpo.gc.ca"))
+ :maintainer ("Peter S. Galbraith" . "galbraithp@dfo-mpo.gc.ca")
+ :provided   (func-doc)
+ :required   ((("emacs" cc-mode info)
+	       ("oo-browser" c-mode)))
+ :keywords   ("info" "completion" "commands" "latex" "perl" "awk" "texinfo")
+ :wikipage   "http://www.emacswiki.org/FuncDoc"
+ :commentary "\
+New versions of this package (if they exist) may be found at:
+ http://people.debian.org/~psg/elisp/func-doc.el
+
+Description:
+
+ This package provides the `func-doc' command to interface to Info for
+ functions and commands in various modes, as well as command completion.
+
+ The package currently supports Awk, Perl, texinfo and LaTeX but is
+ extensible.  If you've got an Info file with a node that list functions,
+ than this package can probably interface to it.
+ Also makes Meta-[TAB] (aka M-\\t) do typing completion using the keywords
+ extracted from the function list.
+
+ In addition, it works in Info files for supported topics.  e.g. in the
+ Info file \"gawk\", you may use \"C-c d\" (func-doc) to look-up the page
+ about a given command.  This is faster than using the Info index node.
+
+ Installation instructions:
+
+ All you need to do is add this line to your .emacs file:
+  (require 'func-doc)
+ making the commands `func-doc' and `func-doc-complete' available.
+
+ To make func-doc display the Info buffer in another window, set the
+ following variable to `t' in your ~/.emacs file: 
+  (setq func-doc-split-window t)
+
+ It is suggested that you make `C-c d' locally bound to func-doc in
+ supported modes and M-[tab] bound to `func-doc-complete' (Note that
+ auc-tex already provides completion for latex, and you probably don't want
+ to override it).  The code to do this is left uncommented below, it's up
+ to you to leave it, comment it out, or paste it in your ~/.emacs file.
+
+ You may also use \"C-h d\" by adding this to yor ~/.emacs file:
+   (define-key help-map \"d\" 'func-doc)
+
+ For XEmacs, the code below must be loaded *before* you edit a file which
+ will use func-doc (except for info which should be loaded before to
+ define \"C-c d\", unless you use \"C-h d\" in the help-map).")

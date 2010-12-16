@@ -1,0 +1,24 @@
+(:summary    "Interact with the lisppaste pastebot via XML-RPC"
+ :created    "20040425"
+ :updated    "2009"
+ :authors    (("Lawrence Mitchell" . "wence@gmx.li"))
+ :maintainer ("Lawrence Mitchell" . "wence@gmx.li")
+ :provided   (lisppaste)
+ :required   ((("emacs" cl erc rx)
+	       ("xml-rpc" xml-rpc)))
+ :keywords   ("irc" "xml" "rpc" "network")
+ :homepage   "http://www.ph.ed.ac.uk/~s0198183/"
+ :commentary "\
+This file provide an Emacs interface to the lisppaste bot running
+on the Freenode IRC network (http://freenode.net).
+A number of commands are provided.
+
+Pasting a region may be carried out using `lisppaste-region'.
+A top-level entry point to all of lisppaste's functionality is
+provided via the `lisppaste' command.  If you want to intercept
+lisppaste urls and display them in Emacs, you can do so by
+modifying `browse-url-browser-function' as described in
+`lisppaste-browse-url'.
+
+Interacting with lisppaste requires xml-rpc.el which you can find
+a link for at <URL: http://www.emacswiki.org/cgi-bin/wiki/XmlRpc>.")

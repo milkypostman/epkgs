@@ -1,0 +1,52 @@
+(:summary    "Editing Protein Databank files"
+ :created    "2001"
+ :updated    "2001"
+ :license    "GPL-2"
+ :authors    (("Dave Love" . "fx@gnu.org"))
+ :maintainer ("Dave Love" . "fx@gnu.org")
+ :provided   (pdb)
+ :required   ((("emacs" latin1-disp)))
+ :keywords   ("data")
+ :homepage   "http://www.loveshack.ukfsn.org/emacs/"
+ :commentary "\
+PDB mode is a major mode for editing Protein Databank (PDB) files
+(according to the CCP4 definition of them).  It provides various
+commands for transforming records in the file.  These mainly
+operate on the (active) region; see the menu.
+
+This requires Emacs 21.
+
+Most of the commands are re-implemented from a mode by
+C.S.Bond@dundee.ac.uk, often with the names rationalized and
+behaviour somewhat changed.  That mode was originally
+XEmacs-specific and I found it easiest to re-write rather than fix
+it for Emacs, since I didn't follow a lot of the Lisp.  The result
+is at least more compact and amenable to extension.  (See
+`pdb-replace-atom-field', for instance.)  It tries to fit in with
+Emacs conventions in user interface and implementation, but
+illustrates the lack of some hooks (at least in Emacs 21.3),
+e.g. for paragraph movement functions and commenting.
+
+Tab stops are set up appropriately for the fields of the record
+type around point so that TAB moves between the fields; it inserts
+space only to extend the record to sufficient columns.  The current
+field is highlighted (on capable terminals) and a description of it
+appears in the mode line.
+
+Navigation support is provided by Imenu and by treating chains as
+`pages' and residues as `paragraphs' with the normal key bindings.
+
+Font-lock isn't supported -- it's not clear how it would be useful,
+except, perhaps to highlight records with detectable syntactic
+problems, e.g. not long enough.
+
+You might find `column-number-mode' useful with such fixed format
+records, but it slows down redisplay.  `overwrite-mode' and
+`transient-mark-mode' are probably useful too.
+
+Note that column-oriented functions are used, disallowing
+multi-column characters and tabs in the file (which aren't allowed
+in PDB anyway, as far as I know).
+
+Note the unrelated command `pdb' in gud.el, but there shouldn't be
+scope for confusion.")

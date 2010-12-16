@@ -1,0 +1,8 @@
+(:summary    "Automatic fetching, installing and loading of Emacs modules according to widespread Emacs conventions"
+ :updated    "2003"
+ :license    "GPL-2"
+ :provided   (plugin)
+ :required   ((("emacs" cl)
+	       ("loop-constructs" loop-constructs)
+	       ("record" record)))
+ :homepage   "http://gmarceau.qc.ca/")

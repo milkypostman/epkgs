@@ -1,0 +1,16 @@
+(:summary    "Run a ruby process in a compilation buffer"
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-3"
+ :provided   (ruby-compilation)
+ :required   ((("emacs" ansi-color)
+	       ("rinari" pcmpl-rake)))
+ :commentary "\
+Allow for execution of ruby processes dumping the results into a
+compilation buffer.  Useful for executing tests, or rake tasks
+where the ability to jump to errors in source code is desirable.
+
+The functions you will probably want to use are
+
+ruby-run-w/compilation
+ruby-rake-w/compilation")

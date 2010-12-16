@@ -1,0 +1,18 @@
+(:summary    "Game with elisp functions trying to survive"
+ :created    "2000"
+ :updated    "2000"
+ :license    "GPL-2"
+ :authors    (("Alex Schroeder" . "alex@gnu.org"))
+ :maintainer ("Alex Schroeder" . "alex@gnu.org")
+ :provided   (erobot)
+ :keywords   ("games")
+ :commentary "\
+This game implements a very basic version of the many robot variants
+out there.  Players compete by writing a defun (called candidates,
+erobots, or ebots).  The last ebot remaining wins the game.  Start
+the game with `erobot'.
+
+Bugs: No multiple copies of the same defun allowed (use defalias or
+fset to create copies)
+
+Testing the game: Run `erobot-tour'.")

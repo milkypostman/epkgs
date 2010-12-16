@@ -1,0 +1,180 @@
+(:summary    "Interface to International Ispell Versions 3.1 and 3.2"
+ :created    "1994"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("Ken Stevens" . "k.stevens@ieee.org"))
+ :maintainer ("Ken Stevens" . "k.stevens@ieee.org")
+ :provided   (ispell)
+ :required   ((("emacs" ehelp)))
+ :keywords   ("unix" "wp")
+ :homepage   "http://kdstevens.com/~stevens/ispell-page.html"
+ :commentary "\
+INSTRUCTIONS
+
+  This code contains a section of user-settable variables that you
+should inspect prior to installation.  Look past the end of the history
+list.  Set them up for your locale and the preferences of the majority
+of the users.  Otherwise the users may need to set a number of variables
+themselves.
+  You particularly may want to change the default dictionary for your
+country and language.
+  Most dictionary changes should be made in this file so all users can
+enjoy them.  Local or modified dictionaries are supported in your .emacs
+file.  Modify the variable `ispell-local-dictionary-alist' to include
+these dictionaries, and they will be installed when ispell.el is loaded.
+
+ Depending on the mail system you use, you may want to include these:
+ (add-hook 'news-inews-hook 'ispell-message)
+ (add-hook 'mail-send-hook  'ispell-message)
+ (add-hook 'mh-before-send-letter-hook 'ispell-message)
+
+  Ispell has a TeX parser and a nroff parser (the default).
+The parsing is controlled by the variable ispell-parser.  Currently
+it is just a \"toggle\" between TeX and nroff, but if more parsers are
+added it will be updated.  See the variable description for more info.
+
+
+TABLE OF CONTENTS
+
+  ispell-word
+  ispell-region
+  ispell-buffer
+  ispell-message
+  ispell-comments-and-strings
+  ispell-continue
+  ispell-complete-word
+  ispell-complete-word-interior-frag
+  ispell-change-dictionary
+  ispell-kill-ispell
+  ispell-pdict-save
+  ispell-skip-region-alist
+
+Commands in ispell-region:
+Character replacement: Replace word with choice.  May query-replace.
+` ': Accept word this time.
+`i': Accept word and insert into private dictionary.
+`a': Accept word for this session.
+`A': Accept word and place in buffer-local dictionary.
+`r': Replace word with typed-in value.  Rechecked.
+`R': Replace word with typed-in value. Query-replaced in buffer. Rechecked.
+`?': Show these commands
+`x': Exit spelling buffer.  Move cursor to original point.
+`X': Exit spelling buffer.  Leaves cursor at the current point, and permits
+     the check to be completed later.
+`q': Quit spelling session (Kills ispell process).
+`l': Look up typed-in replacement in alternate dictionary.  Wildcards okay.
+`u': Like `i', but the word is lower-cased first.
+`m': Place entered value in personal dictionary, then recheck current word.
+`C-l': redraws screen
+`C-r': recursive edit
+`C-z': suspend emacs or iconify frame
+
+Buffer-Local features:
+There are a number of buffer-local features that can be used to customize
+ ispell for the current buffer.  This includes language dictionaries,
+ personal dictionaries, parsing, and local word spellings.  Each of these
+ local customizations are done either through local variables, or by
+ including the keyword and argument(s) at the end of the buffer (usually
+ prefixed by the comment characters).  See the end of this file for
+ examples.  The local keywords and variables are:
+
+ ispell-dictionary-keyword   language-dictionary
+     uses local variable ispell-local-dictionary
+ ispell-pdict-keyword        personal-dictionary
+     uses local variable ispell-local-pdict
+ ispell-parsing-keyword      mode-arg extended-char-arg
+ ispell-words-keyword        any number of local word spellings
+
+Region skipping:
+ Place new regular expression definitions of regions you prefer not to
+ spell check in `ispell-skip-region-alist'.  Mode-dependent features can
+ be added to latex by modifying `ispell-tex-skip-alists'.
+ `ispell-message' contains some custom skipping code for e-mail messages.
+
+BUGS:
+ Need a way to select between different character mappings without separate
+   dictionary entries.
+ Multi-byte characters if not defined by current dictionary may result in the
+   evil \"misalignment error\" in some versions of MULE emacs.
+ On some versions of emacs, growing the minibuffer fails.
+   see `ispell-help-in-bufferp'.
+ Recursive edits (?C-r or ?R) inside a keyboard text replacement check (?r)
+   can cause misalignment errors.
+
+HISTORY
+
+Modifications made in latest versions:
+
+Revision 3.7 2003/09/22 13:24:34	kss
+Highly improved region shipping and selection.
+User defined library directory locations now supported.
+Selection of preferred binary [ai]spell possible.
+Updated `framepop' support.
+
+Revision 3.6 2003/01/07 12:32:44	kss
+Removed extra -d LIB in dictionary defs. (Pavel Janik)
+Filtered process calls with duplicate dictionary entries.
+Fixed bug where message-text-end is inside a mime skipped region.
+Minor fixes to get ispell menus right in XEmacs
+Fixed skip regexp so it doesn't match stuff like `/.\\w'.
+Detecting dictionary change not working.  Fixed.  kss
+function `ispell-change-dictionary' now only completes valid dicts.
+
+Revision 3.5 2001/7/11 18:43:57	kss
+Added fix for aspell to work in XEmacs (ispell-check-version).
+Added Portuguese dictionary definition.
+New feature: MIME mail message support, Fcc support.
+Bug fix: retain comment syntax on lines with region skipping. (TeX $ bug...)
+Improved allocation for graphic mode lines.  (Miles Bader)
+Support -v flag for old versions of aspell.  (Eli Zaretskii)
+Clear minibuffer on ^G from ispell-help (Tak Ota)
+
+Revision 3.4 2000/8/4 09:41:50	kss
+Support new color display functions.
+Fixed misalignment offset bug when replacing a string after a shift made.
+Set to standard Author/Maintainer heading,
+ensure localwords lists are separated from the text by newline. (Dave Love)
+Added dictionary definition for Italian (William Deakin)
+HTML region skipping greatly improved. (Chuck D. Phillips)
+improved menus.  Fixed regexp matching http/email addresses.
+one arg always for xemacs sleep-for (gunnar Evermann)
+support for synchronous processes (Eli Zaretskii)
+
+Revision 3.3  1999/11/29 11:38:34     kss
+Only word replacements entered in from the keyboard are rechecked.
+This fixes a bug in tex parsing and misalignment.
+Exceptions exist for recursive edit and query-replace, with tex error
+condition tested.  Recursive editing improved.
+XEmacs repair for when `enable-multibyte-characters' defined - Didier Verna.
+ispell-help fixed for XEmacs.  Choices minibuffer now displayed in XEmacs.
+Only list valid dictionaries in Spell menu.  Russian dictionary doesn't allow
+run-together words, and uses koi8-r font.  Don't skip text in html <TT>
+fonts.
+
+Revision 3.2  1999/5/7 14:25:14	kss
+Accept ispell versions 3.X.Y where X>=1
+fine tuned latex region skipping.  Fixed bug in ispell-word that did not
+point in right place on words < 2 chars.  Simplified ispell-minor-mode.
+Fixed bug in TeX parsing when math commands are in the comments.
+Removed calls to `when' macro.
+
+Revision 3.1  1998/12/1 13:21:52	kss
+Improved and fixed customize support.
+Improved and fixed comments in variables and messages.
+A coding system is now required for all languages.
+casechars improved for castellano, castellano8, and norsk dictionaries.
+Dictionary norsk7-tex removed.  Dictionary polish added.
+Dictionaries redefined at load-time to support dictionary changes.
+Menu redefined at load time to support dictionary changes.
+ispell-check-version added as an alias for `check-ispell-version'.
+Spelling suggestions returned in order generated by ispell.
+Small bug fixed in matching ispell error messages.
+Robustness added to ensure `case-fold-search' doesn't get redefined.
+Fixed bug that didn't respect case of word in `ispell-complete-word'.
+Multibyte character coding support added for process interactions.
+Ensure ispell process has terminated before starting new process.
+ This can otherwise confuse process filters and hang ispell.
+Improved skipping support for SGML.
+Fixed bug using ^M rather than \\r in `ispell-minor-check'.
+Improved message reference matching in `ispell-message'.
+Fixed bug in returning to nroff mode from tex mode.")

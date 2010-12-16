@@ -1,0 +1,6 @@
+(:summary    "Various mending of pages"
+ :updated    "20041120"
+ :license    "GPL-2"
+ :provided   (misc-patchup)
+ :required   ((("webmaster-macros" webmaster-macros)))
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/webstuff/")

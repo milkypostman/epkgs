@@ -1,0 +1,11 @@
+(:summary    "Minor mode commands for editing OpenGL C/C++ code"
+ :created    "2000"
+ :updated    "2000"
+ :license    "GPL-2"
+ :authors    (("Heddy Boubaker" . "boubaker@dgac.fr")
+	      ("Sriram Karra" . "karra@cs.utah.edu"))
+ :maintainer ("Sriram Karra" . "karra@cs.utah.edu")
+ :provided   (OpenGL)
+ :required   ((("emacs" backquote cl reporter)))
+ :keywords   ("opengl")
+ :homepage   "http://www.cs.utah.edu/~karra/code/")

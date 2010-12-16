@@ -1,0 +1,14 @@
+(:summary    "Generate ravings about kibology, in the style of kibo"
+ :created    "19900108"
+ :updated    "19970314"
+ :authors    (("James Parry" . "kibo@world.std.com")
+	      ("Noah Friedman" . "friedman@prep.ai.mit.edu"))
+ :maintainer (nil . "friedman@prep.ai.mit.edu")
+ :provided   (kibologize)
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
+ :commentary "\
+Originally written by James Parry based on \"flame.el\" by Ian G. Batten &
+others.  Completely rewritten 1997-03-14 by Noah Friedman.
+
+Load this file, then do M-x kibologize.
+If you are bored, try M-x psychoanalyze-kibologist.")

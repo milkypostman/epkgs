@@ -1,0 +1,16 @@
+(:summary    "Run expressions for various windows"
+ :created    "19940623"
+ :updated    "19950325"
+ :license    "GPL-2"
+ :authors    (("Noah Friedman" . "friedman@prep.ai.mit.edu"))
+ :maintainer (nil . "friedman@prep.ai.mit.edu")
+ :provided   (map-win)
+ :required   ((("emacs" backquote)))
+ :keywords   ("extensions" "macros")
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
+ :commentary "\
+This is pretty much equivalent to the `walk-windows' function in Emacs
+19, but the macro is \"cleaner\" since it avoids creating local variables
+whose names could interfere with the dynamic scope of the caller.  It
+also allows the frames argument to specify a particular frame object to
+traverse.")

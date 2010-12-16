@@ -1,0 +1,7 @@
+(:summary    "Emacs Lisp to Markup"
+ :created    "2007"
+ :updated    "2007"
+ :license    "GPL-2"
+ :authors    (("Yoni Rabkin" . "yonirabkin@member.fsf.org"))
+ :maintainer ("Yoni Rabkin" . "yonirabkin@member.fsf.org")
+ :provided   (el-markup))

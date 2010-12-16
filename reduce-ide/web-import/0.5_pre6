@@ -1,0 +1,61 @@
+(:summary    "REDUCE code editing mode for GNU Emacs"
+ :created    "1999"
+ :updated    "19991126"
+ :license    "GPL-2"
+ :authors    (("Francis J. Wright" . "f.j.wright@qmw.ac.uk"))
+ :maintainer ("Francis J. Wright" . "f.j.wright@qmw.ac.uk")
+ :provided   (reduce-mode reduce-run)
+ :required   ((("emacs" comint font-lock paren timer)))
+ :keywords   ("reduce" "languages")
+ :commentary "\
+******************
+USE OF REDUCE MODE
+******************
+
+REDUCE mode is part of the REDUCE IDE, which is normally best
+installed by running the installer program `reduce-ide-install.el'.
+All related files should be available in the same directory or
+archive as this file.
+
+Full documentation covering the installation and use of REDUCE mode
+is provided by a texinfo source file called `reduce-ide.texinfo'.
+From this are (or can be) derived the info file `reduce-ide.info',
+the HTML file `reduce-ide.html' and the TeX DVI file
+`reduce-ide.dvi'.  The info file can be browsed using the
+independent info browsing program called `info', or installed into
+the Emacs info browser, and the DVI file can be printed using a
+normal TeX DVI driver.
+
+All commands also self-document, as usual in Emacs.
+Brief manual installation instructions follow.
+
+Put the following in your `.emacs' file (a) to install REDUCE mode,
+[assuming that the compiled file reduce-mode.elc is in your load-path]:
+(autoload 'reduce-mode \"reduce-mode\" \"Major mode for REDUCE code editing\" t)
+and (b) to run it automatically on files with extension \".red\":
+(add-to-list 'auto-mode-alist '(\"\\\\.red\\\\'\" . reduce-mode))
+
+To turn on only REDUCE font-lock mode by default include
+(add-hook 'reduce-mode-hook 'turn-on-font-lock)
+or to turn on all supported font-lock modes by default include
+(global-font-lock-mode 1)
+
+Developed under MS-DOS/Windows, initially under DEmacs and most
+recently under NTEmacs.
+
+
+To do:
+
+	BUGS
+	====
+	! should not be an escape IN STRINGS (motion by sexp, font-lock)
+	reduce-backward-statement does too much searching!
+
+	Enhancements
+	============
+	highlight comment statements
+	more flexible intelligent indentation, rationalize the code
+	make skipping comment statements configurable (?)
+	add RLisp88 support (?)
+	more structure templates (?) -- while, repeat
+     faster font-lock (function rather than just regexps)?")

@@ -1,0 +1,15 @@
+(:summary    "Post to bash.org from Emacs"
+ :created    "2007"
+ :updated    "2007"
+ :license    "GPL-2"
+ :authors    (("Edward O'Connor" . "hober0@gmail.com"))
+ :maintainer ("Edward O'Connor" . "hober0@gmail.com")
+ :provided   (bash-org)
+ :required   ((("emacs" url)))
+ :keywords   ("comm")
+ :homepage   "http://edward.oconnor.cx/elisp/"
+ :commentary "\
+The Quote Database at bash.org contains many funny quotes from IRC
+and other chat systems. This is a library to simplify posting to
+bash.org from within Emacs. The user-serviceable entry point is
+`bash-org-send-region', which see.")

@@ -1,0 +1,16 @@
+(:summary    "Add your lovely globalize .t with style"
+ :authors    (("Ed Sinjiashvili" . "mediogre@gmail.com"))
+ :maintainer ("Ed Sinjiashvili" . "mediogre@gmail.com")
+ :provided   (globalizer)
+ :keywords   ("rails")
+ :commentary "\
+Scan through a buffer to find strings eligible for translation. 
+Allow user to observe changes and make an educated choice: approve, veto,
+quit or make changes automatically. Basically it does everything
+query-replace does, but calls user-defined hook when replace
+actually happens.
+
+In other words if you choose the string to be translatable, it will
+add .t to it (make it globalized) and also add the string to
+another buffer which you can later give to a native translator to
+create actual translations.")

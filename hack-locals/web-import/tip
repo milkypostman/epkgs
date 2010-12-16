@@ -1,0 +1,6 @@
+(:created    "1985"
+ :updated    "20100209"
+ :license    "GPL-2"
+ :maintainer ("Noah Friedman" . "friedman@prep.ai.mit.edu")
+ :provided   (hack-locals)
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html")

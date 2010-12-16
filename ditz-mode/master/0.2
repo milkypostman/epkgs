@@ -1,0 +1,21 @@
+(:summary    "Emacs interface to Ditz issue tracking system"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Glenn Hutchings" . "zondo42@googlemail.com"))
+ :maintainer ("Glenn Hutchings" . "zondo42@googlemail.com")
+ :provided   (ditz-mode)
+ :keywords   ("tools")
+ :homepage   "http://bitbucket.org/zondo/ditz-mode"
+ :wikipage   "http://www.emacswiki.org/DitzMode"
+ :commentary "\
+This is an Emacs interface to the Ditz distributed issue tracking
+system, which can be found at http://ditz.rubyforge.org.
+
+Put this file in your Lisp load path and something like the following in
+your .emacs file:
+
+    (require 'ditz-mode)
+    (define-key global-map \"\\C-c\\C-d\" ditz-prefix)
+
+See the documentation for `ditz-mode' for more info.")

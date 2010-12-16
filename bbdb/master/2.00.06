@@ -1,0 +1,12 @@
+(:created    "1991"
+ :updated    "1994"
+ :license    "GPL-2"
+ :provided   (bbdb bbdb-com bbdb-ftp bbdb-gnus bbdb-hooks bbdb-mhe bbdb-migrate bbdb-print bbdb-reportmail bbdb-rmail bbdb-sc bbdb-snarf bbdb-srv bbdb-vm bbdb-w3 bbdb-whois bbdb-xemacs t)
+ :required   ((("efs" efs)
+	       ("emacs" advice ange-ftp custom electric gnus info mail-extr mh-comp mh-e rmail supercite timezone)
+	       ("gnuserv" gnuserv)
+	       ("itimer" itimer)
+	       ("reportmail" reportmail)
+	       ("vm" vm)))
+ :homepage   "http://bbdb.sourceforge.net/"
+ :wikipage   "http://www.emacswiki.org/BbdbMode")

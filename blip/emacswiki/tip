@@ -1,0 +1,16 @@
+(:summary    "Interface with blip.pl"
+ :created    "20090611"
+ :updated    "20090611"
+ :license    "GPL-2"
+ :authors    (("mulander" . "netprobe@gmail.com"))
+ :maintainer ("mulander" . "netprobe@gmail.com")
+ :provided   (blip)
+ :required   ((("emacs" cl json url url-http)))
+ :keywords   ("comm")
+ :homepage   "http://www.emacswiki.org/Blip"
+ :wikipage   "http://www.emacswiki.org/Blip"
+ :commentary "\
+This is the beginnings of a library for interfacing with 
+blip.pl from Emacs. It is heavily based on twit.el (version 0.3.5)
+which can be found on http://www.emacswiki.org/emacs/twit.el
+Additionaly, this looks like a nice way to learn some elisp.")

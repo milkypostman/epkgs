@@ -1,0 +1,50 @@
+(:summary    "Emacs major mode for viewing/editing raw RTF source"
+ :created    "2006"
+ :updated    "20080105"
+ :license    "GPL-2"
+ :authors    (("Sean M. Burke" . "sburke@cpan.org"))
+ :maintainer ("Sean M. Burke" . "sburke@cpan.org")
+ :provided   (rtf-mode)
+ :required   ((("emacs" generic)))
+ :keywords   ("wp" "rtf" "languages")
+ :homepage   "http://www.emacswiki.org/RTFMode"
+ :wikipage   "http://www.emacswiki.org/RTFMode"
+ :commentary "\
+Major mode for viewing/editing RTF source.  I wrote this mostly for
+the sake of syntax-highlighting, and for the {}-matching.  It offers
+little else in the way of conveniences (like key shortcuts.)
+(If are interested in such conveniences, email me.)
+
+I maintain a homepage for this mode, at http://interglacial.com/rtf/emacs/
+
+Note that this mode doesn't (yet?) specially handle Help-RTF constructs.
+
+Also note that at time of writing (Oct 2006), Xemacs doesn't seem to
+support some of the functions that this mode requires.  Sorry, Xemacs users!
+
+As with many programming modes, the default wrapping mechinisms
+(whether via auto-fill-mode, or via fill-paragraph etc commands) do
+not behave at all well.  So I've disabled wrapping as best I can,
+so you don't end up corrupting documents.  Moreover, implementing
+wrapping in RTF seems fairly difficult because of how spaces are
+sometimes a significant token in RTF whereas newlines are not.
+
+For more on RTF, see http://interglacial.com/rtf/ and also be a chum and
+go get this little book I wrote:  http://www.amazon.com/dp/0596004753
+
+
+Boilerplate
+
+This file is not part of GNU Emacs.
+
+This is free software; you can redistribute it and/or modify it under the
+terms of the GNU General Public License as published by the Free Software
+Foundation, version 2.
+
+This is distributed in the hope that it will be useful, but without any
+warranty without even the implied warranty of merchantability or fitness for
+a particular purpose.  See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with
+GNU Emacs; see the file COPYING.  If not, write to the Free Software
+Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.")

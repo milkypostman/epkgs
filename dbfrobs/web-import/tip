@@ -1,0 +1,20 @@
+(:summary    "Useful enhancements for debugging"
+ :created    "19941018"
+ :updated    "20061011"
+ :license    "GPL-2"
+ :authors    (("Noah Friedman" . "friedman@splode.com"))
+ :maintainer (nil . "friedman@splode.com")
+ :provided   (dbfrobs)
+ :required   ((("emacs" advice)))
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
+ :commentary "\
+The user interface for this package consists of the following commands:
+
+       debug-on-interesting-errors
+       toggle-debug-on-error
+       debug-on-condition
+       cancel-debug-on-condition
+
+In addition, it modifies debugger mode to run
+`after-debugger-mode-hook' after setting up the debugger but before the
+user begins interacting with it.")

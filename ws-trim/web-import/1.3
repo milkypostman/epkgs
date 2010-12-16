@@ -1,0 +1,39 @@
+(:summary    "Tools and minor mode to trim whitespace on text lines"
+ :created    "19970408"
+ :updated    "1997"
+ :license    "GPL-2"
+ :authors    (("Martin Stjernholm" . "mast@lysator.liu.se"))
+ :maintainer ("Martin Stjernholm" . "mast@lysator.liu.se")
+ :provided   (ws-trim)
+ :required   ((("emacs" cl)))
+ :keywords   ("wp")
+ :homepage   "ftp://ftp.lysator.liu.se/pub/emacs/"
+ :commentary "\
+This package contains tools to do various sorts of whitespace
+trimming on buffer lines.  The main part is WS Trim mode, which is
+a minor mode that automatically trims whitespace on text lines.
+You can control how thorough this mode should be, e.g. whether all
+lines or only lines you edit should be trimmed.  For further
+reading see the document strings for the variables `ws-trim-mode'
+and `ws-trim-level'.
+
+To install the package, either issue \"(require 'ws-trim)\" in a good
+place (i.e. your .emacs file), or autoload some of the functions
+below.  You can activate WS Trim mode for a specific buffer by
+calling `turn-on-ws-trim'.
+
+There is also a Global WS Trim mode that automagically turns on WS
+Trim mode in most buffers.  Put \"(global-ws-trim-mode t)\" in your
+.emacs to use it.  By default a heuristic is used to determine if
+WS Trim mode should be on or off in every buffer.  You can control
+this through the variable `ws-trim-global-modes'.
+
+This package has been tested with GNU Emacs version 19.34 and 20.7.
+It won't run in versions older than 19.23.  Versions in between are
+currently untested.  Reported to work with XEmacs 19.14.
+
+Comments, suggestions and bug reports are always welcome.
+
+Credits:
+* Global WS Trim mode is modeled after Global Font Lock mode in
+  font-lock.el by \"jwz, then rms, then sm <simon@gnu.ai.mit.edu>\".")

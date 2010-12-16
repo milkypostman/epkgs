@@ -1,0 +1,56 @@
+(:summary    "Rearrange and filter lists"
+ :created    "2000"
+ :updated    "2000"
+ :license    "GPL-2"
+ :authors    (("Tom Breton" . "tob@world.std.com"))
+ :maintainer ("Tom Breton" . "tob@world.std.com")
+ :provided   (arrange)
+ :required   ((("emacs" cl electric)))
+ :keywords   ("tools" "extensions" "lisp")
+ :homepage   "http://panix.com/~tehom/"
+ :commentary "\
+This is for manually editing lists.  NB, not for editing individual
+elements, for manually rearranging and removing elements from a
+list as a whole.  
+
+kill-line (^K/k) and yank (^Y/y) work as you expect, but never
+discard elements from the kill-list.  You can always yank them
+back, no matter how far down they are.
+
+flip (f) is a very useful command, not to be overlooked.  It swaps
+active entries for killed entries.  Say you have a list you want to
+mostly discard.  You can kill the few elements you do want and flip
+it, and there's your short list.
+
+arrange-done (x) exits and saves your changes.
+
+arrange-quit (q) exits and throws an error, which presumably will
+stop calling applications from thinking the user meant to continue.
+
+Entry points can pre-fill the kill list as well as the buffer, so
+that some entries default to active, others to killed.
+
+Non-features
+
+arrange-done could make parameterized finished-ness tests, eg it
+could prompt with (y-or-n-p \"Are you all done?\")
+
+A numeric arg could make arrange-yank-line yank from elsewhere
+in the list, with 1 being only the default.
+
+...or in a more visual mode, a command to move an element to the
+top, a combination of kill, beginning-of-buffer, and yank.  Thus
+one would flip to the kill-list, move the intended element(s) to
+the top, flip back, and yank.
+
+It could save the position of point between flips, so there'd be
+two positions, one for each flip.
+
+The entry points should be more parameterizable.  We could take
+{nil, `other-window', `other-frame'} keys.  We could take
+pre-/post-process functions, the way arrange-syms* uses
+`symbol-name' and `intern-soft'.
+
+The `undo' key M-_ could be bound to undo both the buffer and the
+kill-list.  That is far too much work for something that can always
+be done just by yanking in the same place.")

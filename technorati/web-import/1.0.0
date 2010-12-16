@@ -1,0 +1,11 @@
+(:summary    "Interface to the Technorati API for Emacs"
+ :created    "2005"
+ :updated    "2005"
+ :license    "GPL-2"
+ :authors    (("Edward O'Connor" . "ted@evdb.com"))
+ :maintainer ("Edward O'Connor" . "ted@evdb.com")
+ :provided   (technorati)
+ :required   ((("37emacs" rest-api)
+	       ("emacs" url xml)))
+ :keywords   ("convenience")
+ :homepage   "http://edward.oconnor.cx/elisp/")

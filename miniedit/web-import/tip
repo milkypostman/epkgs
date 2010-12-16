@@ -1,0 +1,8 @@
+(:summary    "Enhanced editing for minibuffer fields"
+ :created    "2001"
+ :updated    "20100406"
+ :license    "GPL-2"
+ :provided   (miniedit)
+ :required   ((("emacs" cl custom)))
+ :homepage   "http://www.gnufans.net/~deego/emacs.html"
+ :wikipage   "http://www.emacswiki.org/MiniEdit")

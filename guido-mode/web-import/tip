@@ -1,0 +1,11 @@
+(:summary    "Mode for editing Guido Music Notation files"
+ :authors    (("Berend de Boer" . "berend@pobox.com"))
+ :maintainer ("Berend de Boer" . "berend@pobox.com")
+ :provided   (guido-mode)
+ :keywords   ("guido")
+ :homepage   "http://www.pobox.com/~berend/emacs/"
+ :commentary "\
+Add this to your .emacs file to load and bind it to files with extension
+.gmn:
+(add-to-list 'auto-mode-alist '(\"\\\\.gmn\\\\'\" . guido-mode))
+(autoload 'guido-mode \"guido-mode\")")

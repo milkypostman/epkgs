@@ -1,0 +1,6 @@
+(:summary    "Emacs Got Git"
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-3"
+ :provided   (egg)
+ :required   ((("emacs" cl derived ediff electric ring))))

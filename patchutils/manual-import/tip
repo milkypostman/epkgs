@@ -1,0 +1,8 @@
+(:summary    "Emacs interface to patchutils programs"
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-2"
+ :authors    (("Jim Blandy" . "jimb@red-bean.com"))
+ :maintainer ("Jim Blandy" . "jimb@red-bean.com")
+ :provided   (patchutils)
+ :keywords   ("tools"))

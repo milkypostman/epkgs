@@ -1,0 +1,30 @@
+(:summary    "Multi major modes for Google Web Toolkit code"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-2"
+ :authors    (("Felix H. Dahlke" . "fhd@ubercode.de"))
+ :maintainer ("Felix H. Dahlke" . "fhd@ubercode.de")
+ :keywords   ("languages" "gwt")
+ :homepage   "https://github.com/fhd/gwt-mumamo"
+ :wikipage   "http://www.emacswiki.org/GwtMuMaMo"
+ :commentary "\
+The Google Web Toolkit (GWT) allows you to write client-side code for
+web applications in Java, which is translated to JavaScript by the GWT
+compiler. It is possible to write inline JavaScript via the JavaScript
+Native Interface (JSNI), and this mode uses MuMaMo from nXhtml to
+provide support for both Java and inline JavaScript in the same file.
+
+Installation:
+
+In order to use gwt-mumamo, you will need nXhtml, get it here:
+  http://ourcomments.org/Emacs/nXhtml/doc/nxhtml.html
+
+If your Emacs version is 23.1 or below, you will need espresso-mode:
+  http://www.nongnu.org/espresso/
+You also need an alias to it, add the following to your init file:
+  (defalias 'js-mode 'espresso-mode)
+
+Add this file to your load-path and add the following line to your
+init file:
+  (autoload 'gwt-mumamo-mode \"gwt-mumamo\" \"\" t)
+You can now activate gwt-mumamo by invoking \"gwt-mumamo-mode\"")

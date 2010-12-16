@@ -1,0 +1,66 @@
+(:summary    "Help run untrusted code"
+ :created    "2000"
+ :updated    "2000"
+ :license    "GPL-2"
+ :authors    (("Tom Breton" . "tob@world.std.com"))
+ :maintainer ("Tom Breton" . "tob@world.std.com")
+ :keywords   ("extensions" "lisp" "internal")
+ :homepage   "http://panix.com/~tehom/"
+ :wikipage   "http://www.emacswiki.org/SandBox"
+ :commentary "\
+This is for calling untrusted code without letting it do anything
+risky, should it be so inclined.  It is a sort of first step
+towards a Java-like sandbox.
+
+I DO NOT GUARANTEE that it will surely make untrusted code harmless
+even if properly used.  It disables dangerous functions, which
+should accomplish that in theory, but in practice should not be
+treated as a guarantee.  The long-term scrutiny of the user
+community is needed before this code should be considered secure.
+
+Note that sbx-other-safe-functions is NOT well fleshed out.  There
+are surely many other perfectly safe functions that I just didn't
+think of that need to be added.  Feel free to add them.
+
+Installation:
+
+You will definitely want to compile this, otherwise
+sbx-with-sandbox adds noticeable time (2 to 6 seconds interpreted
+on my 100Mhz Pentium, depending on what's already loaded) to the
+call.  Even compiled, expect it to add time.
+
+
+Entry points:
+
+sbx-with-sandbox, a macro that runs list-forms with only certain safe
+functions defined.  Be careful of this one.  This was the last one
+I finished debugging, and when it locks up, it's a doozy.
+
+sbx-with-excluding-sandbox, a macro that runs list-forms with
+specific functions disabled.
+
+sbx-functions-called, a macro that returns a list of the functions
+that were called by a block of code, excluding those it already
+knows about.  Basically for developrs.
+
+Non-features: Things that could be done, but I haven't done.
+
+
+sbx-watch-function could handle watching commands (commandp) by
+adding an interactive spec so the commands may be called normally.
+But it would only be useful when sbx-functions-called was run and
+contained interactive code, which I expect will be rare.  If you
+want it, add it and please send me a patch.
+
+The cl requirement could be removed by expanding some stuff.
+
+We could allow smarter sandboxing, eg variants of delete-file etc
+that know what files a package \"owns\", but that's getting way ahead
+of this. 
+
+We could define a better dummy function, perhaps one that reports a
+sandbox error.
+
+sbx-with-excluding-sandbox could protect some crucial functions
+like quote, setq and fset, even if the code says to stop them.
+Otherwise it can crash emacs.")

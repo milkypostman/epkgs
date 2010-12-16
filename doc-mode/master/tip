@@ -1,0 +1,40 @@
+(:summary    "Convenient editing of in-code documentation"
+ :created    "2007"
+ :updated    "2009"
+ :license    "GPL-2"
+ :authors    (("Nikolaj Schumacher" . "bugs@nschum.de"))
+ :maintainer ("Nikolaj Schumacher" . "bugs@nschum.de")
+ :provided   (doc-mode)
+ :required   ((("emacs" cc-mode cl newcomment semantic)))
+ :keywords   ("convenience" "tools")
+ :homepage   "http://nschum.de/src/emacs/doc-mode"
+ :wikipage   "http://www.emacswiki.org/DocMode"
+ :commentary "\
+This mode requires the Semantic package to be installed and running:
+http://cedet.sourceforge.net/
+
+doc-mode allows easy creation and editing of JavaDoc or Doxygen comment
+blocks in your code.  It also greatly improves readability of code by folding
+the blocks, so they don't take up precious screen lines.
+
+Add the following to your .emacs file:
+(require 'doc-mode)
+(add-hook 'c-mode-common-hook 'doc-mode)
+
+The command `doc-mode-fix-tag-doc' or \"C-cdd\" adds or replaces the
+documentation for the function, variable, or class at point.
+`doc-mode-remove-tag-doc' or \"C-cdr\" removes it.
+
+You can fold the comments by using `doc-mode-toggle-tag-doc-folding' or
+`doc-mode-fold-all'.
+
+Folding the tags immediately after load can fail, because semantic might not
+have initialized the buffer.  The following code therefore delays the
+folding:
+
+(add-hook 'doc-mode-hook
+          (lambda ()
+            (when doc-mode
+              (if (semantic-active-p)
+                  (doc-mode-fold-all)
+                (add-hook 'semantic-init-hooks 'doc-mode-fold-all nil t))))")

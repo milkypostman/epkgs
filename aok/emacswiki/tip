@@ -1,0 +1,10 @@
+(:summary    "Various useful ways to do `multi-occur'"
+ :created    "2004"
+ :updated    "2004"
+ :license    "GPL-2"
+ :provided   (aok)
+ :required   ((("emacs" cl)))
+ :commentary "\
+search all buffers, all buffers whose filenames have a certain
+type, or all buffers in a certain mode, with `all-occur',
+`type-occur', or `mode-occur', respectively.")

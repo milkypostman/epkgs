@@ -1,0 +1,9 @@
+(:summary    "\"Ginel is not Emacs Lisp\" main file"
+ :created    "1997"
+ :updated    "1997"
+ :license    "GPL-2"
+ :authors    (("Stefan Hornburg" . "racke@gundel.han.de"))
+ :maintainer ("Stefan Hornburg" . "racke@gundel.han.de")
+ :provided   (ginel)
+ :keywords   ("extensions")
+ :homepage   "http://www.han.de/~racke/ginel/")

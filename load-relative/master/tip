@@ -1,0 +1,7 @@
+(:summary    "Relative file load (within a multi-file Emacs package)"
+ :license    "GPL-3"
+ :authors    (("Rocky Bernstein"))
+ :maintainer ("Rocky Bernstein")
+ :provided   (require-file1 require-file3)
+ :keywords   ("internal")
+ :homepage   "https://github.com/rocky/emacs-load-relative")

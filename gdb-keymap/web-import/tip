@@ -1,0 +1,13 @@
+(:summary    "Make the life easier with debugging"
+ :authors    (("Jaeyoun Chung" . "jay@kldp.org"))
+ :maintainer ("Jaeyoun Chung" . "jay@kldp.org")
+ :provided   (gdb-keymap)
+ :required   ((("emacs" cl)))
+ :keywords   ("convenience" "c")
+ :homepage   "http://emacs.kldp.net/~jay/emacs/"
+ :commentary "\
+running gdb with c program, what in the heck should i type all the
+verbose keys for stop, step, next, return and inspecting the datas?
+here's some simple solution for that.
+after making some part of this, i realized that this is quite similiar
+from the gdbsrc stuffs (but still i think this is more convenient!)")

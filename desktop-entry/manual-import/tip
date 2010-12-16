@@ -1,0 +1,8 @@
+(:summary    "Parse .desktop files for MIME information"
+ :created    "2005"
+ :updated    "2005"
+ :license    "GPL-2"
+ :authors    (("Alan Shutko" . "ats@acm.org"))
+ :maintainer ("Alan Shutko" . "ats@acm.org")
+ :provided   (desktop-entry)
+ :keywords   ("news" "mail" "multimedia"))

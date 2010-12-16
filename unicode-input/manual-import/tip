@@ -1,0 +1,8 @@
+(:summary    "Inputting a Unicode subset in TeX transcription"
+ :created    "2000"
+ :updated    "2000"
+ :license    "GPL-2"
+ :keywords   ("mule" "multilingual" "unicode" "input" "method")
+ :commentary "\
+This file is based in part on Markus Kuhn's TeX.utf UTF-8
+demonstration file.")

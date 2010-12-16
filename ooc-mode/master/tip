@@ -1,0 +1,9 @@
+(:created    "20100529"
+ :license    "GPL-3"
+ :authors    (("James"))
+ :maintainer ("James")
+ :provided   (flymake-ooc ooc-grammar-macros ooc-lexer ooc-mode ooc-usefile-mode ooc-wisent-wy)
+ :required   ((("emacs" cc-fonts cc-langs cc-mode cedet cl flymake semantic))
+	      (("cedet" semantic-decorate-include semantic-lex wisent-comp)
+	       (nil semantic/decorate/include semantic/lex semantic/wisent/comp)))
+ :homepage   "https://github.com/nixeagle/ooc-mode")

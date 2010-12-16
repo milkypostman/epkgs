@@ -1,0 +1,38 @@
+(:summary    "Pump numeric arg for auto-repeated interactive commands"
+ :created    "20060630"
+ :updated    "2006"
+ :license    "GPL-2"
+ :provided   (accelerate)
+ :required   ((("emacs" advice)))
+ :homepage   "http://www.emacswiki.org/Accelerate"
+ :wikipage   "http://www.emacswiki.org/Accelerate"
+ :commentary "\
+When moving the cursor (with e.g the arrow keys or C-n, C-p, etc) and the
+key is held down and auto-repeated, then start moving cursor in increasingly
+larger steps.
+
+Any command that takes a numeric argument as it s first arg (specified
+by e.g. (interactive \"p\")) can be accelerated. But it is mostly only useful
+to accelerate cursor movement commands that normally moves cursor a short
+distance.
+
+The feature is disabeled when recording (and executing) keyboard macros,
+because timing information is not stored in macros.
+
+Example
+
+ (require 'accelerate)
+ (accelerate previous-line 2)
+ (accelerate next-line 2)
+ (accelerate backward-char 3)
+ (accelerate forward-char 3)
+ (accelerate dired-previous-line 2)
+ (accelerate dired-next-line 2)
+ (accelerate speedbar-prev 2)
+ (accelerate speedbar-next 2)
+
+(If the command being accelerated is defined yet or not does not matter.
+ E.g. when accelerating dired-next-line, (require 'dired) is not needed.)
+
+todo: Problem accelerating backward-char and forward-char; defadvice does not
+      take effect. (Is it because they are subs, and not functions?)")

@@ -1,0 +1,6 @@
+(:summary    "Simple directory editor for GNU Emacs"
+ :created    "1998"
+ :updated    "1998"
+ :provided   (di)
+ :homepage   "http://www.emacswiki.org/DiMode"
+ :wikipage   "http://www.emacswiki.org/DiMode")

@@ -1,0 +1,47 @@
+(:summary    "Derived mode for Neuron NMODL dot-mod files"
+ :created    "2006"
+ :updated    "2006"
+ :license    "GPL-2"
+ :authors    (("David C. Sterratt" . "david.c.sterratt@ed.ac.uk"))
+ :maintainer ("David C. Sterratt" . "david.c.sterratt@ed.ac.uk")
+ :provided   (nmodl)
+ :keywords   ("nmodl" "neuron")
+ :homepage   "http://homepages.inf.ed.ac.uk/sterratt/progs/neuron"
+ :commentary "\
+This major mode for GNU Emacs provides support for editing Neuron NMODL
+dot-mod files.  It automatically indents for block structures and
+comments.  It highlights code using font-lock.
+
+Finding Updates:
+
+The latest stable version of nmodl.el can be found here:
+
+http://www.anc.ed.ac.uk/~dcs/progs/neuron/nmodl.el
+
+To use nmodl.el, you also need to have downloaded and installed 
+nrnhoc.el . It can be found at
+
+http://www.anc.ed.ac.uk/~dcs/progs/neuron/nrnhoc.el
+
+Installation:
+
+  Make sure you have obtain and installed nrnhoc.el
+  
+  Put the this file as \"nmodl.el\" somewhere on your load path, then
+  add this to your .emacs or init.el file:
+
+  (autoload 'nmodl-mode \"nmodl\" \"Enter NMODL mode.\" t)
+  (setq auto-mode-alist (cons '(\"\\\\.mod\\\\'\" . nmodl-mode) auto-mode-alist))
+
+Please read the mode help for nmodl-mode for configuration options.
+
+Syntax highlighting:
+  To get font-lock try adding this for older emacsen:
+    (font-lock-mode 1)
+  Or for newer versions of Emacs:
+    (global-font-lock-mode t)
+  In Xemacs the following seems to work
+    (add-hook 'nmodl-mode-hook 'turn-on-font-lock)
+
+
+This package will optionally use custom.")

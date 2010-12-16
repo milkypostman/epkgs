@@ -1,0 +1,51 @@
+(:summary    "Open anything / QuickSilver-like candidate-selection framework"
+ :created    "2007"
+ :updated    "2010"
+ :license    "GPL-2"
+ :authors    (("Tamas Patrovics"))
+ :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
+ :provided   (anything anything-complete anything-config anything-grep anything-gtags anything-ipa anything-match-plugin anything-menu anything-migemo anything-multi-sources anything-obsolete anything-show-completion anything-startup autodoc)
+ :required   ((("bookmark-extensions" bookmark-extensions)
+	       ("emacs" advice bookmark browse-url cl compile dired ffap find-func grep imenu info iswitchb org recentf shell thingatpt woman)
+	       ("jabber" jabber)
+	       ("shell-history" shell-history)
+	       ("simple-call-tree" simple-call-tree))
+	      (("anything-auto-install" anything-auto-install)
+	       ("anything-kyr" anything-kyr-config)
+	       ("auto-document" auto-document)
+	       ("background" background)
+	       ("bm" bm)
+	       ("descbinds-anything" descbinds-anything)
+	       ("emacs" filecache semantic)
+	       ("fit-frame" fit-frame)
+	       ("gtags" gtags)
+	       ("ipa" ipa)
+	       ("migemo" migemo)
+	       ("shell-command" shell-command)
+	       ("w3m" w3m w3m-bookmark)
+	       ("yasnippet" yasnippet)))
+ :keywords   ("files" "frames" "help" "matching" "outlines" "processes" "tools" "convenience" "anything")
+ :homepage   "http://www.emacswiki.org/emacs/Anything"
+ :wikipage   "http://www.emacswiki.org/Anything"
+ :commentary "\
+Start with M-x anything, narrow the list by typing some pattern,
+select with up/down/pgup/pgdown/C-p/C-n/C-v/M-v, choose with enter,
+left/right moves between sources. With TAB actions can be selected
+if the selected candidate has more than one possible action.
+
+Note that anything.el provides only the framework and some example
+configurations for demonstration purposes. See anything-config.el
+for practical, polished, easy to use configurations which can be
+used to assemble a custom personalized configuration. And many
+other configurations are in the EmacsWiki.
+
+http://www.emacswiki.org/cgi-bin/wiki/download/anything-config.el
+http://www.emacswiki.org/cgi-bin/emacs/AnythingSources
+
+Maintainer's configuration is in the EmacsWiki. It would tell you
+many tips to write smart sources!
+
+http://www.emacswiki.org/cgi-bin/emacs/RubikitchAnythingConfiguration
+
+Here is Japanese translation of `anything-sources' attributes. Thanks.
+http://d.hatena.ne.jp/sirocco634/20091012/1255336649")

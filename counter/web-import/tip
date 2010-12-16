@@ -1,0 +1,146 @@
+(:summary    "Insert series of numbers into text"
+ :created    "1998"
+ :updated    "1998"
+ :license    "GPL-2"
+ :authors    (("Will Mengarini" . "seldon@eskimo.com"))
+ :maintainer ("Will Mengarini" . "seldon@eskimo.com")
+ :provided   (counter)
+ :required   ((("emacs" cl)))
+ :keywords   ("abbrev")
+ :homepage   "http://www.eskimo.com/~seldon/"
+ :commentary "\
+This package implements a function, `counter', that can be invoked to
+insert series of numbers into text.  You'll probably want to bind that
+function to a key sequence; I'll use C-c c as an example in this
+documentation.  Detailed instructions on how to do that key binding, and
+on everything else, are below, but here's a summary of what that binding
+will allow.  Every time you type C-c c, counter inserts a number into the
+buffer, then increments the value it's up to, so the next C-c c inserts
+the next number.  You can type C-u C-c c to initialize the starting
+number, the increment, and the format of the insertion (leading or
+trailing spaces, for example, or other decoration).  C-u 5 C-c c will
+insert five numbers; that's the fastest way to insert a series of numbers
+if you want them all together in the text, separated by nothing but the
+format decoration.  But you can also use C-c c in keyboard macros,
+allowing you to do things like insert columns of numbers.  There is also a
+facility to allow you to renumber a possibly-noncontiguous column, such as
+occurs with numbered paragraphs.
+
+To use this package, first you'll need to copy this file to a directory
+that appears in your load-path.  `load-path' is the name of a variable
+that contains a list of directories Emacs searches for files to load.
+To prepend another directory to load-path, put a line like
+(add-to-list 'load-path \"c:/My_Directory\") in your .emacs file.
+
+Then you'll need to bind the `counter' function.  This code in your .emacs
+  (global-set-key \"\\C-cc\" 'counter)
+will do that binding.  Also include this code
+  (autoload 'counter \"counter\" nil t)
+to tell Emacs where to find the `counter' function.  During the Emacs
+session in which you type those lines into your .emacs file, you can cause
+each line to be executed when point is after its final \")\" by typing
+C-x C-e there.
+
+That's it, counter is installed, and you're ready to experiment with it.
+It's initialized by default to reasonable values, so for example you can
+just type C-x b *scratch* to switch to the *scratch* buffer, and type
+C-u 4 C-c c to insert a series of 4 numbers.  Then C-u 3 C-c c will insert
+3 more numbers without resetting the counter; it doesn't get reset until
+you reinitialize it with C-u C-c c.
+
+C-u C-c c prompts for 3 values: the number to start counting from, the
+amount by which to increment each new number, and the format for
+insertion.  The first 2 entries are actually evaluated as Lisp code, so
+although most of the time you'll just use integers, you can also use, for
+example, Emacs global variables.  The third entry is also evaluated;
+usually it's a constant string, but since it's evaluated you can store
+multiple useful formats in variables and refer to them by name.  The
+string needs to be double-quoted when it's entered literally; this is
+helpful when you're looking at the default value or the minibuffer
+history, since useful formats usually have leading or trailing whitespace,
+and the quotes make that clear.
+
+The second entry is usually a constant increment, but actually has more
+flexibility than that; it's a Lisp form that's evaluated each time it's
+used, so the amount of the increment can keep changing.  Also, the form is
+only construed as an increment if it evaluates to a number.  Otherwise,
+it's assumed to be a function of one argument that is to be applied to the
+current value of the counter to produce the next value, so entering
+(lambda (x) (* x 2)) would allow you to insert a series of numbers each of
+which is double the previous.
+
+The third value is a format string that would be suitable as a first
+argument to the Emacs Lisp function `format'.  If you're not familiar with
+that but know C++ or Perl, you can probably just wing it, since it's
+pretty much the same as in those languages.  The default of \" %d\", for
+example, inserts a decimal integer preceded by a single space.
+
+These values are normally global to Emacs, so if you run `counter' in one
+buffer, then move to another buffer without reinitializing and run it
+again, it'll continue counting from where it left off.  However, in any
+buffer, you can run M-x counter-localize to make all the counter state
+variables local in that buffer.  Another option is to put the line
+  (setq counter-local-by-default t)
+in your .emacs file; the effect will be that all buffers have their own
+copies of the counter state variables.
+
+Note that because of the generality of the formatting and \"incrementing\"
+mechanisms you aren't actually limited to numbers at all; those are just
+the most common things to insert series of.  A format string of \"%S\" will
+insert a printed representation of an arbitrary Lisp object, and the
+\"increment\" can perform any arbitrary calculation of what's next.
+
+That's all you need to know for the simplest use of `counter', which is
+just inserting series of numbers or other objects.  There are additional
+features available for solving more complicated problems.
+
+If you have a bunch of numbered items, like
+     1.  foo       2.  bar       3.  baz
+     4.  woo       5.  hoo       6.  spoo
+and want to insert another line, \"warga blegga pizza\", in the middle,
+so it gets the 4..6 numbering and \"woo hoo spoo\" becomes 7..9, then it's
+not enough to be able to *insert* numbers; you need to be able to
+*replace* them.  Invoking `counter' as C-u - C-c c causes it to search the
+region (the range of the buffer between point and mark) for a match to the
+`counter-target' variable, which is a regular expression that defaults to
+\"[0-9]+\" (a nonempty digit string).  If it finds a match, it replaces it
+with its insertion; otherwise, it doesn't do the insertion at all, or the
+increment.  This is useful in keyboard macros; in the above example, you
+can code a macro like
+  M-@         ;; mark-word
+  C-x C-x     ;; exchange-point-and-mark
+  C-u         ;; universal-argument
+  -           ;; [make that a negative argument]
+  C-c c       ;; counter
+to mark each word and run C-u - C-c c on it; if the word contains a
+number, it'll be replaced by whatever number `counter' is up to, but if
+not, the macro will have no effect except to move to the next word.  Then
+you can insert the line
+     0.  warga     0.  blegga    0.  pizza
+in the middle, reinitialize counter with a format of \"%d\" (no surrounding
+whitespace), and run the keyboard macro 18 times to renumber everything.
+(Of course you want to be able to do that by just leaning on a single key,
+not trilling on C-x e, so presumably you've bound `call-last-kbd-macro' to
+a function key, or are using my vi-dot.el package (see my URL above).)
+
+The `counter-target' variable isn't modified by C-u C-c c because most
+users will never read this far in the documentation and won't know what it
+is.  You can modify it with M-x set-variable.
+
+If your formatting needs are too complex for an Emacs regexp, you may need
+to code your own Lisp function to decide whether `counter' should replace
+an object (remember it doesn't need to be a number) in the region with the
+next object in the series `counter' is inserting.  Every time `counter' is
+about to insert something, it runs counter-pre-insert-hook, a normal
+hook.  If any hook function sets the variable `counter-skip' to non-nil,
+then `counter' skips the insertion, just resetting `counter-skip' to nil.
+(This is the internal mechanism by which the C-u - argument is handled.)
+For symmetry, there is also a counter-post-insert-hook run after an
+insertion.  Whenever an insertion is skipped, the incrementation is also
+skipped, and so is the running of counter-post-insert-hook.
+
+The hooks aren't localized by `counter-localize', since when you're
+dealing with local hooks you need to use optional arguments to `add-hook',
+of which check the documentation, along with that of `make-local-hook', if
+you really need it, which you probably don't even if you're localizing the
+other counter state variables.")

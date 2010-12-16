@@ -1,0 +1,37 @@
+(:summary    "Major mode for editing Mythryl code"
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-3"
+ :provided   (mythryl-mode)
+ :homepage   "http://www.emacswiki.org/MythrylMode"
+ :wikipage   "http://www.emacswiki.org/MythrylMode"
+ :commentary "\
+A major mode for editing the Mythryl programming language.
+
+This version of mythryl mode is derived from Stefan Monnier's
+sml-mode. See http://www.iro.umontreal.ca/~monnier/elisp/, but
+as of August 2009, the instructions on that page for accessing
+the svn repository were incorrect.
+
+To use this mode, install the elisp files from the sml-mode
+suite from the above URL somewhere in your elisp load path,
+along with this file. Insert the expression:
+(load \"mythryl-mode\")
+Somewhere in your .emacs file.
+
+Other useful lines for your .emacs (to automatically activate
+mythryl-mode)
+
+;; for .pkg and .api files
+(setq auto-mode-alist
+      (append '((\"\\\\.pkg$\" . mythryl-mode)
+                (\"\\\\.api$\" . mythryl-mode))
+              auto-mode-alist))
+
+;; for scripts starting with #!/.../mythryl
+(setq interpreter-mode-alist
+      (append '((\"mythryl\" . mythryl-mode))
+              interpreter-mode-alist))
+
+This revision of mythryl was released on 11 Feb 2010 by Michele
+Bini and includes simple indentation support.")

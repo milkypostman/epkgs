@@ -1,0 +1,16 @@
+(:summary    "Text file tag navigator with etags search integration"
+ :created    "2007"
+ :updated    "2008"
+ :license    "GPL-3"
+ :authors    (("David O'Toole" . "dto@gnu.org"))
+ :maintainer ("David O'Toole" . "dto@gnu.org")
+ :provided   (radio)
+ :required   ((("emacs" cl)))
+ :keywords   ("convenience" "hypermedia")
+ :commentary "\
+Radio-mode lets you add plaintext topic tags to your code.
+
+http://en.wikipedia.org/wiki/Memex
+
+TODO other kinds of tags
+TODO todo tags")

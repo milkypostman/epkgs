@@ -1,0 +1,20 @@
+(:summary    "Tweak editing commands for handling prose"
+ :created    "20091227"
+ :updated    "2009"
+ :license    "GPL-2"
+ :authors    (("Paul M. Rodriguez" . "paulmrodriguez@gmail.com"))
+ :maintainer ("Paul M. Rodriguez" . "paulmrodriguez@gmail.com")
+ :provided   (copyedit)
+ :required   ((("emacs" cc-defs cl thingatpt)))
+ :keywords   ("editing")
+ :homepage   "http://www.emacswiki.org/CopyeditMode"
+ :wikipage   "http://www.emacswiki.org/CopyeditMode"
+ :commentary "\
+This is a minor mode for writers and editors which tweaks the
+behavior of some Emacs commands to make them more efficient at
+editing English text, and defines some new commands which may be
+found useful.
+
+I am aware that this code defines more abstractions than it
+actually uses.  But there are bound to be special cases I haven't
+anticipated where they may come in handy.")

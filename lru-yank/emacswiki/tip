@@ -1,0 +1,30 @@
+(:created    "2006"
+ :updated    "20060708"
+ :license    "GPL-2"
+ :authors    ((nil . "lewang@yahoo.com"))
+ :maintainer (nil . "lewang@yahoo.com")
+ :provided   (LRU-yank)
+ :required   ((("emacs" cl)))
+ :keywords   ("convenience" "editing")
+ :commentary "\
+Implements LRU (Least Recently Used) stacking for kill-ring.
+
+By default Emacs treats the kill-ring as a \"ring\", I find it more useful
+to move each yanked item to the top of a stack instead.  This way
+recently used (inserted) stuff are always at the top -- think alt-tab in
+Windows.
+
+
+Installation:
+
+  Put this file into your load-path and the following into your
+  ~/.emacs:
+
+  (require 'LRU-yank)
+  (setq LRU-yank-mode t)
+
+
+Related packages:
+
+ `buffer-stack'
+ `bubble'")

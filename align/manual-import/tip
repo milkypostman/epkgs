@@ -1,0 +1,10 @@
+(:summary    "Aling text seperated by whitespaces in columns"
+ :created    "1999"
+ :updated    "1999"
+ :license    "GPL-2"
+ :authors    (("Matthias Helmling" . "matt@acid.rhein-neckar.de"))
+ :maintainer ("Matthias Helmling" . "matt@acid.rhein-neckar.de")
+ :provided   (align)
+ :keywords   ("extensions")
+ :commentary "\
+tested with XEmacs 20.4 and GNU Emacs 20.2.1")

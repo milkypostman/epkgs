@@ -1,0 +1,13 @@
+(:summary    "Ispell words source for auto-complete-mode"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("tequilasunset" . "tequilasunset.mac@gmail.com"))
+ :maintainer ("tequilasunset" . "tequilasunset.mac@gmail.com")
+ :provided   (ac-source-ispell)
+ :required   ((("auto-complete" auto-complete)
+	       ("emacs" ispell)))
+ :keywords   ("ispell")
+ :homepage   "http://bitbucket.org/tequilasunset/ac-source-ispell"
+ :commentary "\
+Define ac-source-ispell (variable) and ac-complete-ispell (command).")

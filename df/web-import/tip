@@ -1,0 +1,77 @@
+(:summary    "Hack to display in the mode line space left on devices"
+ :created    "1999"
+ :updated    "20020701"
+ :license    "GPL-2"
+ :authors    (("Benjamin Drieu" . "bdrieu@april.org"))
+ :maintainer ("Benjamin Drieu" . "bdrieu@april.org")
+ :keywords   ("unix" "tools")
+ :homepage   "http://www.grassouille.org/emacs/index.en.html"
+ :wikipage   "http://www.emacswiki.org/DfMode"
+ :commentary "\
+This is a slight hack to display disk usage in the mode line.
+ Disk space remaining is updated every df-refresh second.
+
+ If you work with a lot of users sharing the same partition, it
+ sometimes happens that you have no place left to save your work,
+ which drives you to serious brain damage when you lost important
+ work.  This package allows you to have place left and buffer size
+ displayed in the mode line, so you know when you can save your
+ file or when it's time to do some cleanup.
+
+ This package may (must) not be very optimized or efficient, but
+ this is a quick hack.  Comments and suggestions are welcome.
+
+ df is simple to use :
+ - Put this file in your load-path
+ - Put the following in your .emacs : (autoload 'df \"df\" nil t)
+ - Add something like (df \"/home\") in your .emacs if you want to
+   scan /home
+
+
+$Id: df.el,v 1.1.1.1 2002/07/01 17:04:37 benj Exp $
+
+$Log: df.el,v $
+Revision 1.1.1.1  2002/07/01 17:04:37  benj
+- version initiale
+
+Revision 1.8  2001/12/07 13:08:16  benj
+- fixed a misplaced (interactive)
+
+Revision 1.7  2000/06/05 11:19:22  benj
+ - put some variables local so buffer size is buffer-local
+ - add a hook to find-file-hook to display correct size
+
+Revision 1.6  1999/11/05 22:04:03  benj
+- Now use a minor mode instead of that ugly dance with mode-line-format
+- Really use variables instead of constants in the code
+- Better structuration (df-enable and df-disable)
+- Some more documentation
+- Licence typos fixed
+
+Revision 1.5  1999/01/24 17:25:54  drieu
+- Add Paal Steihaug remarks :
+  + use magic df argument, which only scan a partition
+  + add (require 'cl)
+  + df-update is now much clean
+  + df now use either 'df -m' or 'df -k' when it is needed
+
+Revision 1.4  1999/01/04 14:51:01  drieu
+- Correct a bug so Megabytes are *REALLY* Megabytes
+
+Revision 1.3  1999/01/02 15:46:44  drieu
+- Fix few bugs one more time
+- Add variables instead of hard-coded strings
+- Add argument for df
+- Document the file a bit more
+
+Revision 1.2  1998/12/15 17:37:42  drieu
+- Fix few bugs
+- Add Buffer size in the mode line
+- Mesure either in K or Mega bytes
+- And so on...
+
+
+Things to do :
+
+- add 'customize' support
+- sleep a little bit")

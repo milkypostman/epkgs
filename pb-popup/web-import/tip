@@ -1,0 +1,30 @@
+(:summary    "Display process buffer when new output arrives"
+ :created    "19940623"
+ :updated    "20000824"
+ :license    "GPL-2"
+ :authors    (("Noah Friedman" . "friedman@splode.com"))
+ :maintainer (nil . "friedman@splode.com")
+ :provided   (pb-popup)
+ :keywords   ("extensions")
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
+ :commentary "\
+The function `pb-popup' may be attached to a process filter, via
+whatever hook mechanism available or by direct call, to make sure
+that a window with a buffer's recently added contents is visible.
+
+If no such window is visible, it splits the largest visible window
+(according to various parameters; see the variables below) and
+displays the portion of the process buffer with the most recently
+inserted text.  This is done rather than moving point in an
+existing window (if any show the buffer at all) because it is
+assumed that if you are elsewhere in the buffer, it is for a
+reason.  Likewise, it doesn't take over other windows, but creates
+always creates a new one.
+
+You can also choose to create new frames instead of splitting windows.
+
+This functionality can be disabled at any time by disabling
+pb-popup-mode.  This variable can be made buffer-local, but it is
+not by default.
+
+For an example of this library's usage, see comint-popup.el.")

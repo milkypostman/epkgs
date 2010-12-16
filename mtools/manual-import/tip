@@ -1,0 +1,11 @@
+(:summary    "Emacs front-end to mtools"
+ :created    "2009"
+ :updated    "20091224"
+ :license    "GPL-3"
+ :authors    (("LEE Sau Dan" . "sdlee@cs.hku.hk"))
+ :maintainer ("LEE Sau Dan" . "sdlee@cs.hku.hk")
+ :provided   (mtools)
+ :required   ((("emacs" dired)))
+ :keywords   ("mtools" "dired")
+ :commentary "\
+See the documentation of (function mtools-file-name-handler)")

@@ -1,0 +1,78 @@
+(:summary    "Some of my own addons to BBDB not in its bits"
+ :created    "2006"
+ :updated    "20070117"
+ :license    "GPL-1"
+ :authors    (("Robert Widhopf-Fenk"))
+ :maintainer ("Robert Widhopf-Fenk")
+ :provided   (bbdb-rf)
+ :required   ((("bbdb" bbdb bbdb-autoloads bbdb-print bbdb-snarf bbdb-vm)
+	       ("emacs" message)
+	       ("vm" vm)))
+ :keywords   ("bbbd" "vm" "xemacs")
+ :homepage   "http://www.robf.de/Hacking/elisp/"
+ :commentary "\
+Put this file into your load path and add the following line to your ~/.vm
+or BBDB startup file or ~/.emacs resp.  ~/.xemacs/init.el ...
+
+(require 'bbdb-rf)
+
+History
+
+$Log: bbdb-rf.el,v $
+Revision 1.26  2007-01-17 23:19:03  widhopf
+Fixed compile time warnings for GNU Emacs 22.
+
+Revision 1.25  2007-01-17 23:02:51  fenk
+Fixed path in the documentaion, i.e. made them absolute.
+
+Revision 1.24  2006-08-29 22:08:18  fenk
+Applied patch from Adrian Aichner to avoid call to unbound functions, adds
+timestamp handling to bbdb-csv-export, ...
+
+Added docs to `bbdb-snarf-format'.
+
+Revision 1.23  2006-08-29 21:35:50  fenk
+Default of bbdb/vm-pop-up-bbdb-buffer-on-vm-system-state is t now.
+
+Revision 1.22  2006-06-13 23:29:43  fenk
+Moved code from other places to this file, i.e. bbdb-snarf-format,
+bbdb/vm-pop-up-bbdb-buffer-on-vm-system-state, bbdb-yank-ccc, ...
+
+Revision 1.21  2005/05/17 20:06:49  fenk
+Thunderbird export added.
+
+Revision 1.20  2005/01/07 22:53:09  fenk
+- M-x checkdoc is your friend
+- Bugfix: Message-ID: <16856.19238.26000.448956@comcast.net>
+  Use replace-in-string which is not known by GNU Emacs =>
+  fixed by prepending bbdb- as in the other occurrences (we had this problem
+  before.
+- Enhanced vcard export a bit.
+
+Revision 1.19  2004/05/18 21:18:51  fenk
+
+Revision 1.18  2004/05/14 09:32:50  fenk
+Fixed URLS to my homepage.
+
+Revision 1.17  2004/04/29 21:16:18  fenk
+- allow selections of arbitraty phone fields for an CVS field
+- in order to get a \"\\\" in GNU Emacs we need to write \"\\\\\\\\\" in the
+  replacement string, whihc is not required for XEmacs. ;c(
+
+Revision 1.16  2004/01/19 22:33:14  fenk
+Enhanced vcard export
+
+Revision 1.15  2003/10/12 09:07:55  fenk
+- Handle undefined fields in `bbdb-csv-export' gracefully if they are not
+  defined in the local version of the users BBDB.
+- Added an VCARD export.
+
+Revision 1.14  2003/08/13 11:43:09  fenk
+- Created a customize group bbdb-rf
+- Added & fixed all missing & wrong defcustoms
+
+Revision 1.13  2003/08/13 10:56:17  fenk
+- Fixed some comments, copyright and names.
+- Reverted format for email and mail-alias to have just one arg, the
+  position.
+- Enhanced CSV-export (thanks to Sridhar Boovaragh)")

@@ -1,0 +1,21 @@
+(:summary    "ICQ client for Emacs"
+ :created    "1998"
+ :updated    "1999"
+ :license    "as-is"
+ :maintainer ("Steve Youngs" . "steve@youngs.au.com")
+ :provided   (eicq eicq-buddy eicq-comm eicq-log eicq-menu eicq-meta eicq-report eicq-setup eicq-status eicq-toolbar eicq-v8 eicq-v8proto eicq-wharf eicq-world)
+ :required   ((("efs" passwd)
+	       ("emacs" advice browse-url cl cus-edit ehelp font-lock gnus-msg gnus-util message outline pp sendmail shadow smiley sort timezone wid-edit yow)))
+ :keywords   ("comm" "icq")
+ :homepage   "http://eicq.sf.net/"
+ :commentary "\
+Clone of Mirabilis ICQ communication client.
+
+Entry points:
+  eicq-login
+  eicq-show-window
+  eicq-customize
+
+See README & INSTALL which come with this package
+
+This project is done without the consent of Mirabilis.")

@@ -1,0 +1,21 @@
+(:summary    "Find Gnus message MML attached file at point"
+ :created    "2007"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Kevin Ryde" . "user42@zip.com.au"))
+ :maintainer ("Kevin Ryde" . "user42@zip.com.au")
+ :provided   (ffap-mml)
+ :required   ((("emacs" advice ffap)))
+ :keywords   ("files")
+ :homepage   "http://user42.tuxfamily.org/ffap-mml/index.html"
+ :commentary "\
+This spot of code to lets M-x ffap find a file attached as a Gnus message
+meta-language (MML) part, as per `C-c C-a' (mml-attach-part) when
+composing a message.  Eg.
+
+    <#part type=\"text/plain\" filename=\"/foo/bar.txt\" disposition=attachment>
+    <#/part>
+
+Of course ffap can already follow it when point is right on the filename,
+but ffap-mml.el makes it work when point is somewhere else in this form,
+like as the start of the line.")

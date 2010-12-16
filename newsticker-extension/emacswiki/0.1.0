@@ -1,0 +1,11 @@
+(:summary    "Some extension function for newsticker"
+ :created    "20080826"
+ :updated    "20080826"
+ :license    "GPL-3"
+ :authors    (("Andy Stewart" . "lazycat.manatee@gmail.com"))
+ :maintainer ("Andy Stewart" . "lazycat.manatee@gmail.com")
+ :provided   (newsticker-extension)
+ :keywords   ("newsticker" "rss" "atom")
+ :commentary "\
+This package is a little extension for newsticker.
+And have some function for handy.")

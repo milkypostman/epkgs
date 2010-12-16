@@ -1,0 +1,3 @@
+(:summary    "Emacs interface to the Clojure Debugging Toolkit"
+ :license    "GPL"
+ :homepage   "http://georgejahad.com/clojure/cdt.html")

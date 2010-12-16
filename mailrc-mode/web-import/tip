@@ -1,0 +1,5 @@
+(:summary    "Major mode for editing .mailrc files"
+ :updated    "20041204"
+ :license    "GPL-2"
+ :provided   (mailrc-mode)
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/email/")

@@ -1,0 +1,57 @@
+(:summary    "Allow backup files to live in some other directory(s)"
+ :created    "1992"
+ :license    "GPL-2"
+ :authors    (("Greg Klanderman" . "greg.klanderman@alum.mit.edu"))
+ :maintainer ("Greg Klanderman" . "greg.klanderman@alum.mit.edu")
+ :provided   (backup-dir)
+ :keywords   ("backup" "files")
+ :commentary "\
+Allows backup files to be optionally stored in some directories, based on
+the value of the alist, `bkup-backup-directory-info'.  This variable is a
+list of lists of the form (FILE-REGEXP BACKUP-DIR OPTIONS ...).  If the
+filename to be backed up matches FILE-REGEXP, or FILE-REGEXP is t, then
+BACKUP-DIR is used as the path for its backups.  Directories may begin
+with \"/\" to specify an absolute pathname.
+
+If BACKUP-DIR does not exist and OPTIONS contains the symbol `ok-create',
+then it is created if possible.  Otherwise the usual behavior (backup in
+the same directory as the file) results.
+
+If OPTIONS contains the symbol `full-path', then the full path of the file
+being backed up is prepended to the backup file name, with each \"/\"
+replaced by a \"!\".  This is intended for cases where an absolute backup
+path is used.  If OPTIONS contains `prepend-name' in addition to
+`full-path', then the file name is prepended rather than appended to the
+path component when forming the backup name.
+
+If OPTIONS contains the symbol `search-upward' and the backup directory
+BACKUP-DIR is a relative path, then a directory with that name is searched
+for starting at the current directory and proceeding upward (.., ../..,
+etc) until one is found of that name or the root is reached, and if one is
+found it is used as the backup directory.
+
+Finally, if no FILE-REGEXP matches the file name being backed up, then the
+usual behavior results.
+
+These lines from my .emacs load this file and set the values I like:
+
+(require 'backup-dir)
+(setq bkup-backup-directory-info
+      '((\"/home/greg/.*\" \"/~/.backups/\" ok-create full-path prepend-name)
+        (\"^/[^/:]+:\"     \".backups/\") ; handle EFS files specially: don't
+        (\"^/[^/:]+:\"     \"./\")        ; search-upward... its very slow
+        (t               \".backups/\"
+                         full-path prepend-name search-upward)))
+
+
+The package also provides a new function, `find-file-latest-backup' to
+find the latest backup file for the current buffer's file.
+
+This package is based on `files.el' from XEmacs 20.3 and overrides
+functions defined there.  The overridden functions are clearly
+marked below and the originals precede the new definitions in
+commented form.
+
+The package is known to work in the latest XEmacs betas.  It has
+not been extensively tested on GNU Emacs past 18.58, though I have
+reports of it working through 20.2.  It does not work under ms-dos.")

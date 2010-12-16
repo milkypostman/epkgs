@@ -1,0 +1,76 @@
+(:summary    "Simple unit test framework for emacs lisp"
+ :created    "20101116"
+ :updated    "2010"
+ :license    "GPL-3"
+ :provided   (el-test-more)
+ :required   ((("emacs" cl)))
+ :keywords   ("convenience" "lisp" "tools")
+ :homepage   "https://github.com/k-talo/el-test-more.el"
+ :commentary "\
+Overview
+========
+This library is inspired by simple unit test framework for perl called
+`Test::More' which you can find at:
+      <http://search.cpan.org/~mschwern/Test-Simple/lib/Test/More.pm>.
+
+See also tutorial of original `Test::More' at:
+      <http://search.cpan.org/dist/Test-Simple/lib/Test/Tutorial.pod>
+
+
+INSTALLING
+==========
+To install this library, save this file to a directory in your
+`load-path' (you can view the current `load-path' using \"C-h v
+load-path RET\" within Emacs), then add the following line to your
+.emacs startup file:
+
+   (require 'el-test-more)
+
+
+USING
+=====
+
+Most simple usage:
+
+  (etm/ok t   \"Test always success.\") => t
+  (etm/ok nil \"Test always fail.\")    => nil
+
+  The result of tests are printed in the buffer `*Test-More*'.
+
+Test with predicates:
+
+  (etm/numberp 1)   => t
+  (etm/numberp \"1\") => nil
+  (etm/< (+ 1 1) 1) => nil
+
+  See also `Predicates' section in this file to find
+  what kind of predicate test is defined in this file.
+
+Test exception:
+
+  (etm/signals-ok (error \"yes\") 'error)           => t
+  (etm/signals-ok (error \"yes\") 'my-err)          => nil
+  (etm/signals-ok (error \"yes\") '(error \"^yes$\")) => t
+  (etm/signals-ok (error \"yes\") '(error \"no\"))    => nil
+  (etm/signals-ok (signal 'my-err \"yes\") 'my-err)
+
+Test with stubs:
+
+  (etm/with-stubs '((my-num 5)
+                    (my-str \"abc\")
+                    (+      -)
+                    (div    (lambda (a b) (/ a b))))
+    (etm/=       (my-num 3)  5)      ;; => t
+    (etm/string= (my-str)    \"abc\")  ;; => t
+    (etm/=       (+ 5 1)     4)      ;; => t
+    (etm/=       (div 10 2)  5))     ;; => t
+             
+
+WISH LIST
+=========
+- Test::Harness (and `prove' command)?
+- SKIP block?
+- TODO block?
+- compile-mode support in buffer `*Test-More*'?
+- Implement etm/throws-ok.
+- Implement etm/not.")

@@ -1,0 +1,16 @@
+(:summary    "Minor mode to add gdb features to shell"
+ :created    "20070417"
+ :updated    "2009"
+ :license    "GPL-3"
+ :authors    (("Tom Tromey" . "tromey@redhat.com"))
+ :maintainer ("Tom Tromey" . "tromey@redhat.com")
+ :provided   (gdb-shell)
+ :required   ((("emacs" gud)))
+ :keywords   ("tools")
+ :commentary "\
+This minor mode will recognize various commands in shell mode and
+take one of two actions.  For \"build\" commands (currently make,
+valgrind, and ant), it will enable compilation-shell-minor-mode.
+For \"gdb\", it will invoke Emacs' built-in gdb rather than running
+it in the shell buffer.  This is especially handy if you use
+\"gdb --args\".")

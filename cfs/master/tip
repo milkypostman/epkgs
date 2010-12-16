@@ -1,0 +1,18 @@
+(:summary    "A frontend to CFS"
+ :created    "2003"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("Marco Parrone"))
+ :maintainer ("Marco Parrone")
+ :provided   (cfs)
+ :keywords   ("cfs" "crypto" "filesystem" "external" "frontend")
+ :homepage   "http://www.gnu.org/software/cfs-el/cfs-el.html"
+ :commentary "\
+GNU cfs-el is a frontend for using CFS (Criptographic File System)
+from Emacs.
+
+For usage and other informations, read the info manual.
+
+Please send bug-reports and suggestions or comments to:
+
+  bug-cfs-el@gnu.org")

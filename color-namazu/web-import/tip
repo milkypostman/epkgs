@@ -1,0 +1,18 @@
+(:updated    "20091020"
+ :license    "GPL-3"
+ :authors    (("Matsushita Akihisa" . "akihisa@mail.ne.jp"))
+ :maintainer ("Matsushita Akihisa" . "akihisa@mail.ne.jp")
+ :provided   (color-namazu)
+ :required   ((("color-occur" color-occur)
+	       ("emacs" view)
+	       (nil namazu)))
+ :keywords   ("namazu" "highlight")
+ :homepage   "http://www.bookshelf.jp/"
+ :commentary "\
+color-namazu highlights *every* match for the current search
+string.
+
+This file requires namazu.el, color-occur.el
+The latest version of these program can be downloaded from
+http://arika.org/timecapsule/namazu-el/
+http://www.bookshelf.jp/elc/color-occur.el.")

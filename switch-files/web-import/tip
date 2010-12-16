@@ -1,0 +1,5 @@
+(:created    "2004"
+ :updated    "2004"
+ :license    "GPL-2"
+ :provided   (switch-files)
+ :homepage   "http://www.hardakers.net/elisp/")

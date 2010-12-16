@@ -1,0 +1,6 @@
+(:summary    "Control sequences"
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-2"
+ :provided   (rcirc-controls)
+ :required   ((("emacs" rcirc))))

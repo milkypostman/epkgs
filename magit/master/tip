@@ -1,0 +1,21 @@
+(:summary    "Control Git from Emacs"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :provided   (magit magit-key-mode magit-svn magit-topgit rebase-mode)
+ :required   ((("emacs" assoc cl diff-mode easymenu ediff iswitchb log-edit pcomplete server)))
+ :keywords   ("tools")
+ :homepage   "http://philjackson.github.com/magit"
+ :wikipage   "http://www.emacswiki.org/Magit"
+ :commentary "\
+Invoking the magit-status function will show a buffer with the
+status of the current git repository and its working tree.  That
+buffer offers key bindings for manipulating the status in simple
+ways.
+
+The status buffer mainly shows the difference between the working
+tree and the index, and the difference between the index and the
+current HEAD.  You can add individual hunks from the working tree
+to the index, and you can commit the index.
+
+See the Magit User Manual for more information.")

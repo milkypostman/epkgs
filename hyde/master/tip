@@ -1,0 +1,5 @@
+(:created    "2004"
+ :updated    "2004"
+ :license    "GPL-2"
+ :provided   (hyde hyde-git hyde-md)
+ :homepage   "http://nibrahim.net.in/2010/11/11/hyde_:_an_emacs_mode_for_jekyll_blogs.html")

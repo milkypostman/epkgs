@@ -1,0 +1,14 @@
+(:summary    "Emacs Language Sensitive Editor (ELSE)"
+ :created    "1997"
+ :updated    "2007"
+ :license    "GPL-2"
+ :authors    (("Peter Milliken" . "peterm@resmed.com.au"))
+ :maintainer ("Peter Milliken" . "peterm@resmed.com.au")
+ :provided   (else-mode)
+ :required   ((("setnu" setnu)
+	       (nil expand-a-word)))
+ :keywords   ("language" "sensitive" "abbreviation" "template" "placeholder" "token")
+ :homepage   "http://home.exetel.com.au/peterm/"
+ :wikipage   "http://www.emacswiki.org/ElseMode"
+ :commentary "\
+This facility is documented in the accompanying distribution file(s).")

@@ -1,0 +1,8 @@
+(:created    "2010"
+ :updated    "2010"
+ :license    "GPL-2"
+ :provided   (ebm)
+ :required   ((("emacs" cl parse-time url)))
+ :homepage   "https://github.com/ryebread/ebm"
+ :commentary "\
+Feature Request:")

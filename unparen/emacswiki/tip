@@ -1,0 +1,17 @@
+(:summary    "Show elisp code without parenthesis'"
+ :created    "2002"
+ :updated    "2002"
+ :license    "GPL-2"
+ :authors    (("Alex Schroeder" . "alex@gnu.org"))
+ :maintainer ("Alex Schroeder" . "alex@gnu.org")
+ :provided   (unparen)
+ :keywords   ("convenience")
+ :homepage   "http://www.emacswiki.org/UnParenMode"
+ :wikipage   "http://www.emacswiki.org/UnParenMode"
+ :commentary "\
+`unparen-mode' toggles the display of parens.  While they are
+hidden away, the buffer is read-only, because currently this code
+does now really add and remove parens -- it just makes them
+invisible.  That would be a nice feature, though.  At the moment,
+this minor mode is mainly useful to show lisp code to non-lisp
+coders affraid of parens.")

@@ -1,0 +1,31 @@
+(:summary    "Disk mounter module for STUN"
+ :created    "2007"
+ :updated    "20071105"
+ :license    "GPL-3"
+ :authors    (("David O'Toole" . "dto@monad.lab"))
+ :maintainer ("David O'Toole" . "dto@monad.lab")
+ :provided   (disk)
+ :required   ((("emacs" cl rx)))
+ :keywords   ("hardware")
+ :wikipage   "http://www.emacswiki.org/DiskKey"
+ :commentary "\
+This program provides an alternative disk mounting tool. It is
+implemented as a STUN module.
+
+It would probably not be hard to make this configurable so that it
+works with other operating systems. If you use another operating
+system and would like to help me get it working there, let me know.
+
+Features:
+ - Scan for attached USB Mass Storage devices and find their UUID's
+   (see `disk-scan-disks')
+ - Assign unique names to devices (see `disk-disks-alist')
+ - Automatically create and configure mount points and UUID's in /etc/fstab
+   (see `disk-write-fstab', `disk-scan-and-configure')
+ - Mount/unmount disks interactively, with auto-completion
+   (see `disk-mount' and `disk-unmount')
+
+Future:
+ - TODO Report new disks when hotplugged? (periodic scan, automount?)
+ - TODO Configure USB Audio devices with ALSA/JACK. use jack.el!
+ - TODO fix mount point permissions")

@@ -1,0 +1,15 @@
+(:summary    "Apple plist file parser"
+ :created    "2005"
+ :updated    "2005"
+ :license    "GPL-2"
+ :authors    (("Edward O'Connor" . "ted@oconnor.cx"))
+ :maintainer ("Edward O'Connor" . "ted@oconnor.cx")
+ :provided   (osx-plist)
+ :required   ((("emacs" xml)))
+ :keywords   ("convenience")
+ :homepage   "http://edward.oconnor.cx/elisp/"
+ :commentary "\
+Simple parser for Mac OS X plist files. The main entry point is
+`osx-plist-parse-file' (which see). As a useful example, code is
+included to update Emacs' environment by parsing your
+~/.MacOSX/environment.plist file (see `osx-plist-update-environment').")

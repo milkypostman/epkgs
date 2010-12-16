@@ -1,0 +1,28 @@
+(:summary    "Emacspeak -- The Complete Audio Desktop"
+ :created    "1994"
+ :updated    "20080706"
+ :license    "GPL-2"
+ :authors    (("tv.raman.tv"))
+ :maintainer ("tv.raman.tv")
+ :provided   (acss-structure bep-css-speech bep-voices cd-tool dectalk-voices dtk-css-speech dtk-interp dtk-speak dtk-tcl dtk-unicode elib-prepare emacs-startup emacspeak emacspeak-actions emacspeak-add-log emacspeak-advice emacspeak-alsaplayer emacspeak-amark emacspeak-amphetadesk emacspeak-analog emacspeak-ansi-color emacspeak-apt-sources emacspeak-apt-utils emacspeak-arc emacspeak-atom emacspeak-atom-blogger emacspeak-auctex emacspeak-aumix emacspeak-autoload emacspeak-babel emacspeak-bbdb emacspeak-bibtex emacspeak-bmk-mgr emacspeak-bookmark emacspeak-browse-kill-ring emacspeak-bs emacspeak-buff-menu emacspeak-buff-sel emacspeak-c emacspeak-calc emacspeak-calculator emacspeak-calendar emacspeak-checkdoc emacspeak-checkdoc-advice emacspeak-cmuscheme emacspeak-compile emacspeak-cperl emacspeak-custom emacspeak-cyclebuffer emacspeak-daisy emacspeak-damlite emacspeak-desktop emacspeak-dictionary emacspeak-dired emacspeak-dismal emacspeak-dmacro emacspeak-ebook emacspeak-ecb emacspeak-ediary emacspeak-ediff emacspeak-egg emacspeak-emms emacspeak-enriched emacspeak-entertain emacspeak-eperiodic emacspeak-erc emacspeak-eshell emacspeak-ess emacspeak-etable emacspeak-eterm emacspeak-eudc emacspeak-facemenu emacspeak-filtertext emacspeak-find-dired emacspeak-find-func emacspeak-finder emacspeak-firevox emacspeak-fix-interactive emacspeak-flyspell emacspeak-folding emacspeak-forms emacspeak-freeamp emacspeak-generic emacspeak-gnuplot emacspeak-gnus emacspeak-google emacspeak-gridtext emacspeak-gud emacspeak-hideshow emacspeak-hyperbole emacspeak-ibuffer emacspeak-ido emacspeak-imcom emacspeak-info emacspeak-ispell emacspeak-iswitchb emacspeak-ja-setup emacspeak-ja-tbl emacspeak-jabber emacspeak-jawbreaker emacspeak-js2 emacspeak-keymap emacspeak-kkc emacspeak-kmacro emacspeak-kotl emacspeak-liece emacspeak-load-path emacspeak-m-player emacspeak-m17n emacspeak-m17n-ja emacspeak-m17n-override emacspeak-madplay emacspeak-make-mode emacspeak-man emacspeak-message emacspeak-metapost emacspeak-mew emacspeak-midge emacspeak-moz emacspeak-mpg123 emacspeak-mspools emacspeak-muse emacspeak-nero emacspeak-net-utils emacspeak-newsticker emacspeak-nxml emacspeak-ocr emacspeak-oo-browser emacspeak-org emacspeak-outline emacspeak-pcl-cvs emacspeak-perl emacspeak-php-mode emacspeak-piglets emacspeak-preamble emacspeak-proced emacspeak-pronounce emacspeak-psgml emacspeak-psvn emacspeak-re-builder emacspeak-realaudio emacspeak-redefine emacspeak-reftex emacspeak-replace emacspeak-rmail emacspeak-rpm emacspeak-rpm-spec emacspeak-rss emacspeak-ruby emacspeak-sawfish emacspeak-semi emacspeak-ses emacspeak-setup emacspeak-sgml-mode emacspeak-sh-script emacspeak-sigbegone emacspeak-sounds emacspeak-speedbar emacspeak-sql emacspeak-sudoku emacspeak-supercite emacspeak-swbuff emacspeak-table emacspeak-table-ui emacspeak-tabulate emacspeak-tapestry emacspeak-tar emacspeak-tcl emacspeak-tdtd emacspeak-tempo emacspeak-tetris emacspeak-texinfo emacspeak-tnt emacspeak-todo-mode emacspeak-twit emacspeak-twittering emacspeak-url-template emacspeak-view emacspeak-view-process emacspeak-vm emacspeak-w3 emacspeak-w3m emacspeak-wdired emacspeak-we emacspeak-webmarks emacspeak-websearch emacspeak-webspace emacspeak-webutils emacspeak-widget emacspeak-windmove emacspeak-winring emacspeak-wizards emacspeak-wrolo emacspeak-xml-shell emacspeak-xslide emacspeak-xslt emacspeak-xslt-process emacspeak-zenirc emacspeak-zinf espeak-voices fast-voice-lock flite-voices g g-app g-auth g-autogen g-cus-load g-load-path g-loaddefs g-utils gblogger gcal gcontacts gdocs gendoc gfeeds gfinance ghealth gnotebook gphoto greader gsheet gskeleton gtube gweb gwis html-outline html-voice jit-lock js-mode lazy-voice-lock multispeech-voices my-functions nm org2blogger outloud-css-speech outloud-voices tc-convert toy-braille view-process-adapt view-process-emacs-19 view-process-mode view-process-system-specific view-process-xemacs voice-lock voice-settings voice-setup w3-prepare w3-speak-table xml-sexp yahtml-voice)
+ :required   ((("elib" stack-f)
+	       ("emacs" advice arc-mode autoload backquote browse-url bs calendar cc-bytecomp cc-langs cc-mode cl comint cus-edit custom dbus derived descr-text desktop dired dired-aux dired-x easy-mmode easymenu eldoc esh-arg find-dired finder foldout forms gnus gnus-art gnus-sum imenu info json lisp-mnt man org org-exp outline regexp-opt reporter ring rmailsort shell table tar-mode term tetris texinfo thingatpt timer url url-parse which-func wid-edit widget xml)
+	       ("html-helper-mode" html-helper-mode)
+	       ("psvn" psvn)
+	       ("vm" tapestry)
+	       ("w3" w3 w3-imenu w3-speak)
+	       ("w3m" w3m w3m-form w3m-util)
+	       ("xml-parse" xml-parse)
+	       ("yatex" yahtml yatexlib)
+	       (nil bmk-mgr dtk-voices emacspeak-personality emacspeak-speak))
+	      (("emacs" speedbar)))
+ :keywords   ("emacspeak" "speech" "dectalk")
+ :homepage   "http://emacspeak.sourceforge.net/"
+ :wikipage   "http://www.emacswiki.org/EmacSpeak"
+ :commentary "\
+The complete audio desktop.
+
+Emacspeak extends Emacs to be a fully functional audio desktop.
+This is the main emacspeak module.
+It actually does very little:
+It loads the various parts of the system.")

@@ -1,0 +1,18 @@
+(:summary    "Editing mode for omake files"
+ :created    "2007"
+ :updated    "2007"
+ :license    "GPL-2"
+ :authors    (("David M. Cooke" . "david.m.cooke@gmail.com"))
+ :maintainer ("David M. Cooke" . "david.m.cooke@gmail.com")
+ :provided   (omake)
+ :required   ((("emacs" rx)))
+ :keywords   ("omake")
+ :homepage   "http://bitbucket.org/dmcooke/omake-mode"
+ :commentary "\
+Uses some code from python-mode.el, which has the following licence:
+Copyright (C) 1992,1993,1994  Tim Peters
+This software is provided as-is, without express or implied
+warranty.  Permission to use, copy, modify, distribute or sell this
+software, without fee, for any purpose and by any individual or
+organization, is hereby granted, provided that the above copyright
+notice and this paragraph appear in all copies.")

@@ -1,0 +1,4 @@
+(:summary    "Change address/sig with context in gnus"
+ :license    "GPL-2"
+ :provided   (unmunge-general)
+ :required   ((("emacs" cl custom gnus message))))

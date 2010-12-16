@@ -1,0 +1,20 @@
+(:summary    "Pasting to paste.pocoo.org or other instances of LodgeIt"
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-2"
+ :provided   (lodgemacs)
+ :required   ((("emacs" browse-url json url)))
+ :homepage   "http://bitbucket.org/bhagany/lodgemacs"
+ :commentary "\
+This package was inspired Sebastian Wiesner's pastemacs, found at
+<http://bitbucket.org/lunar/pastemacs/>, and grew out of a desire
+to paste to a local instance of LodgeIt using an environment without
+Python 2.5 (and thus Pymacs) available.
+
+lodgemacs has the ability to communicate with arbitrary LodgeIt
+instances, along with support for pasting from buffers, regions, or
+rectangles, and yanking pastes to the current buffer or a new buffer.
+It also will diff two pastes.
+
+Comments, suggestions, and patches are welcome - email me at
+<brent.hagany@gmail.com>")

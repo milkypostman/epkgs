@@ -1,0 +1,12 @@
+(:created    "2008"
+ :updated    "2009"
+ :license    "GPL-3"
+ :authors    (("thierry"))
+ :maintainer ("thierry")
+ :provided   (anything-mercurial)
+ :homepage   "http://mercurial.intuxication.org/hg/anything-mercurial"
+ :commentary "\
+This file provide two sources for that provide support
+for hg qpatchs within `anything'.
+`anything-c-source-qapplied-patchs' and
+`anything-c-source-qunapplied-patchs'.")

@@ -1,0 +1,8 @@
+(:created    "1995"
+ :updated    "2001"
+ :license    "GPL-2"
+ :provided   (mailcrypt timer)
+ :required   ((("emacs" comint easymenu rfc822)
+	       ("itimer" itimer)))
+ :homepage   "http://mailcrypt.sourceforge.net/"
+ :wikipage   "http://www.emacswiki.org/MailCrypt")

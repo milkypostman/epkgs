@@ -1,0 +1,12 @@
+(:summary    "Show tip at cursor"
+ :created    "20080329"
+ :updated    "2008"
+ :license    "GPL-2"
+ :authors    (("Ye Wenbin" . "wenbinye@gmail.com"))
+ :maintainer ("Ye Wenbin" . "wenbinye@gmail.com")
+ :provided   (showtip)
+ :required   ((("emacs" cl)))
+ :keywords   ("help")
+ :commentary "\
+This library export one function for elisp programer to show
+tooltip near the cursor not the mouse.")

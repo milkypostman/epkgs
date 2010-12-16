@@ -1,0 +1,45 @@
+(:summary    "Occur functionality for Project Mode"
+ :license    "GPL-2"
+ :authors    (("Cedric Lallain" . "kandjar76@hotmail.com"))
+ :maintainer ("Cedric Lallain" . "kandjar76@hotmail.com")
+ :provided   (project-buffer-occur)
+ :required   ((("project-buffer-mode" project-buffer-mode)))
+ :keywords   ("occur" "project" "buffer" "makefile" "filesystem" "management")
+ :homepage   "http://www.emacswiki.org/ProjectBufferOccur"
+ :wikipage   "http://www.emacswiki.org/ProjectBufferOccur"
+ :commentary "\
+HOW TO USE IT:
+
+Call the command `project-buffer-occur' in a project-buffer-mode buffer.
+
+The research will occur in all marked files; or in all files
+belonging to the current project if there are no files.  Using the
+prefix argument, the research will be done in all files.
+
+
+TO INSTALL IT:
+
+Put the following lines in your .emacs:
+
+(eval-after-load \"project-buffer-mode\"
+ '(progn
+   (require 'project-buffer-occur)
+   (define-key project-buffer-mode-map [(control ?f)] 'project-buffer-occur)))
+
+
+KEY BINDINGS:
+
+<RET> - goto-occurence
+ o    - goto-occurence other window
+ v    - display occurrence
+ n    - next occurence / prev search occurrence
+ p    - prev occurence / next search occurrence
+ M-n  - go to next file
+ M-p  - go to prev file
+ C-n  - go to next occurrence and display it
+ C-p  - go to the previous occurrence and display it
+ r    - rename buffer
+ g    - refresh the research
+ d    - delete the current line
+ q    - quit-window
+ ?    - show brief help")

@@ -1,0 +1,851 @@
+(:summary    "Distributed Emacs Lisp package system (DELPS)"
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL"
+ :authors    (("Jari Aalto"))
+ :maintainer ("Jari Aalto")
+ :provided   (epackage)
+ :keywords   ("tools")
+ :homepage   "https://github.com/jaalto/project--emacs-epackage"
+ :wikipage   "http://www.emacswiki.org/Epackage"
+ :commentary "\
+Preface 2009
+
+     NOTE: 2010-12-08 This extension is in alpha design state;
+     meaning that it is not in full use yet. The core elements are
+     being planned and written. For testing, see available `M-x'
+     `epackage-*' commands. There is also a rudimentary batch
+     command line UI:
+
+         # Or run the provided Makefile: \"make ui\"
+         emacs --batch -Q -l /path/to/epackage.el -f epackage-batch-ui-menu
+
+     ....expect full UI with nice menus, font-lock, mode command
+     and Emacs buffers like in ELPA somewhere around spring 2011
+     the earliest.
+
+     Emacs has been around for decades now. Many new version have
+     come and gone. And yet there are wealth of useful extensions
+     available e.g. at <http://emacswiki.org> which add new
+     features not yet available in standard Emacs. The typical
+     procedure to add a new extension to Emacs has been:
+
+     o   Find an extension at places like
+         http://dir.gmane.org/gmane.emacs.sources or
+         http://www.emacswiki.org
+     o   Download and save the *.el file(s) along `load-path'
+     o   Read the installation information. Usually embedded in comments
+         at the beginning of *.el file(s).
+     o   Modify the Emacs startup file `~/.emacs'
+         to arrange loading the extension to one's liking.
+
+     That's quite a bit of work for each extension; reaching
+     thousands out there. Many Linux distributions offer package
+     managers to download and install programs. E.g. Debian has
+     command *apt-get/aptitude* [1], Redhat uses *rpm* [2], Suse
+     uses *yast* [3]. So why not make one for Emacs as well.
+
+	The DELPS has been designed built around two concepts: it
+     borrows the Debian style package management and it uses
+     version controlled packages.
+
+     Each Emacs extension is wrapped into epackage format which
+     basically follows the Debian [4] packaging style where a separate
+     control directory named `epackage/' is used for all the
+     packaging details: activation, autoloads and installation etc.
+     In addition, each epackage is imported in and deployed using
+     Git Distributed Version Control System (DVCS). A specific
+     \"Yellow pages\" file lists the available Git repositories where
+     user can download packages. Once an epackage has been
+     downloaded, subsequent downloads are very efficient because
+     only deltas are transferred.
+
+     If you're an Emacs user, all these details do not concern you.
+     From `M-x' `epackage' management view, select items to
+     download, and activate them. There are several ways how to
+     install packages. Select *autoload* install (no Emacs setup
+     changes), *standard* install (= enabling), or *activation*
+     install (Emacs environment is changed). Later you can upgrade
+     packages. To get updates list of available packages, ask to
+     \"get\" the sources list \"Yellow pages\" that lists available Git
+     repositories.
+
+     If you're a developer who would like to make the extensions
+     available for others as epackages, that will require
+     familiarizing with the `git(1)'.
+
+     The epackage system can co-exist with any other installation,
+     like ELPA [4], as usual. User's standard Emacs startup files, like
+     `~/.emacs' are never modified.
+
+     [1] http://en.wikipedia.org/wiki/Advanced_Packaging_Tool
+
+     [2] http://en.wikipedia.org/wiki/RPM_Package_Manager
+
+     [3] http://en.wikipedia.org/wiki/YaST See also
+     http://en.wikipedia.org/wiki/Yellowdog_Updater,_Modified
+
+     [4] http://www.debian.org/doc/developers-reference/best-pkging-practices.html#bpp-debian-control
+
+     [5] http://www.emacswiki.org/emacs/ELPA
+
+ Epackage - the DVCS packaging system
+
+     The DELPS epackages are in the form of distributed[1] git[2]
+     version control repositories. The traditional packaging
+     methods, like ELPA[2], have previously relied on archives like
+     *.tar.gz to hold the code. In contrast, the DVCS approach
+     offers interesting features over the traditional archive
+     distribution approach:
+
+     o   Efficient downloads; fast, only deltas are transferred.
+     o   Local modifications are possible; users can create their own
+         customizations and track them easily,
+     o   Helping package authors made easy; have you found an error?
+         Have a spare time to fix it? Generate diff straight from the
+         version control repository.
+     o   Select any version; pick latest or
+         downgrade to a older version with ease.
+     o   Contains history of package in one place. No more scattered
+         pieces around Internet.
+     o   Encourages social collaboration; more easier interacting
+         with the upstream e.g. through http://github.com
+         push/pull.
+
+     Each Emacs extension is prepared for use with this system:
+     upstream code is imported into a git repository, the epackage
+     system is installe don top of upstream code in separate
+     directory, the whole git repository is made available online
+     and add information about its availability is recorded to a
+     separate seources list yellow pages. The epackaging work can
+     be done by anyone who wants to set up a repository. It doesn't
+     necesarily need to be done by the original Emacs extension
+     author (upstream) who may not be familiar with the `git(1)'
+     program. For more information about the packaging, refer to
+     section \"The epackage system framework \".
+
+     [1] DVCS = Distributed Version Control System
+         http://en.wikipedia.org/wiki/Distributed_revision_control
+
+     [2] http://git-scm.org
+
+     [3] http://www.emacswiki.org/emacs/ELPA
+
+ User commands
+
+     Command `M-x' `epackage' is alias for function
+     `epackage-manager'. It builds buffer where packages can be
+     browsed, fetched, built and installed. The view contains:
+
+         [mode indicators]
+
+         name section status v:VERSION package-description
+         1    2       3      4         5
+
+     Mode indicators are:
+
+     o   compile - byte compile package on install phase.
+     o   activate|enable - Auto-enable or activate on install phase
+         See \"status\" for more explanation.
+
+     The fields are:
+
+     o   1 - Unique package name. No two package can have the same name.
+     o   2 - Package classification. `M-x' `finder-list-keywords'
+     o   3 - status: (A)activated (E)nabled (I)installed etc.
+     o   4 - Version number. Only known once package has been downloaded.
+     o   5 - Short package description
+
+     In this view, some of the commands are (see mode help `C-h' `m'):
+
+     o   _a_, Install activate configuration for package.
+         modifies Emacs environment.
+     o   _A_, Deactivate. Uninstall activate configuration for package.
+     o   b, Generate boot loader.
+     o   B, Byte compile package.
+     o   _c_, Clean package's configuration files (whole uninstall).
+     o   _d_, Download package.
+     o   D, run `dired' on package installation directory.
+     o   e, edit package's *info* file.
+     o   E, email upstream, the package author (maintainer). You can
+         as for new wish list features, report bugs etc.
+     o   g, Get yellow page data. Update package sources list.
+     o   _i_, Install standard configuration for package.
+     o   _I_, Uninstall standard configuration for package.
+     o   l<key>, list command: available, installed, downloaded, enabled,
+         activated, autoloaded, not-installed.
+     o   m, mark package (for command install or remove).
+     o   M, send mail to person who is the maintainer of epackage
+         for this utility. You can send requests to fix
+         packaging or update contents of the 'info' file if some
+         of the information in no up to date.
+     o   _o_, Install autoload configuration for package.
+     o   _r_, Remove; delete package physically from local disk.
+     o   s<key>, sort command. Change listing by several criterias.
+     o   u, upgrade package to newer version.
+     o   U, upgrade all packages
+         TODO: unmark (install, purge, remove) ?
+     o   v<key>, view command. E.g (a)activation file, (i)info file.
+     o   q, quit. Run `bury-buffer'.
+     o   x, execute (install, purge, remove).
+
+     The package state is shows with following status indicators:
+
+     o   (A)ctivated. The package has been downloaded and code to
+         immediately activate the package has been taken into use.
+         This setting changes user's Emacs environment as defined
+         by the packager. The changes typically include modifying hook
+         to activate the package e.g. by file extension, adding
+         key bindings to activate the package etc. You might want
+         to use (v)iew command to see what exactly happens
+     o   (E)enabled. One step down from Activated state. Only interactive
+         functions and variables are provided in latent `autoload'
+         state for user to call with `M-x' <function name>. User
+         configuration is not modified in any way.If you want full
+         control over package setup, set package to Enabled state
+         and add further code to Emacs startup file \"/.emacs to
+         configure it
+     o   (I)installed. This is synonym for Downloaded. Package has
+         been fetched to local disk, but that is all. No setup
+         whatsoever.
+     o   (u)unmaintained. The package has been flagged as unmaintained.
+     o   (b)uggy. The package contains remarks that it might be buggy
+         if installed.
+     o   (c)ompiled. Package has been byte compiled.
+     o   (e)macs core. Package in included in latest core Emacs.
+     o   (x)emacs core. Package is included in latest core XEmacs.
+
+     Building the initial list of available packages takes some time
+     and this is done via open Internet connection. Install command
+     also requires an open Internet connection.
+
+ The epackage system framework
+
+     Quick links for developrs:
+
+     o   https://github.com/jaalto/project--emacs-epackage-sources-list
+     o   https://github.com/jaalto/project--emacs-epackage-template
+
+     To explain how do all the pieces in this system go together,
+     lets take a look at the system overview. The system mirrors
+     the style of Debian packaging management. There are two
+     primary actors: (1) the epackage package maintainer and (2)
+     the upstream. These two can be the same person or two separate
+     persons.
+
+     o   A = An Emacs user who wants to install new software
+     o   (Y)ellow pages = The sources list file that contains
+         information about available epackages around the globe.
+     o   E = The epackage. Maintained by a person who has found an
+         interesting utility and wrapped it in epackage format. He
+         is the maintainer of epackaged software. He keeps
+         track of new releases and makes new epackages periodically
+         available. If the initial packager looses interest,
+         someone else can continue his work. He supplies the *url*
+         to the yellow pages to notify about availability of epackage.
+     o   U = Upstream. Person or team who wrote Emacs Lisp extension,
+         the code or utility than enhances Emacs.
+
+     The moving parts communicate like in picture below. In order
+     to find package, a yellow pages is consulted. It is seeded and
+     update by all the epackage maintainer that wish to make
+     epackages available. The user A does not need to know any
+     details of this process; like in Debian, he installs an
+     epackage that is made newly available or which has been
+     updated and is upgradeable.
+
+     o   The location of Yellow Pages is fixed (%).
+     o   The location of E's and U's can be anywhere (*).
+     o   The E and U can be the same person (the upstream).
+
+                     %               *               *
+         A           Y               E               U
+         =============================================
+         |           |               | keep eye on   |
+         |  fetch    |               * ------------> |
+         * --------> |               | <-----------  |
+         | <-------- |               | epackage new  |
+         |  upgrade  | keep epackage | releases      |
+         |           | info in sync  |               |
+         |           | <------------ *               |
+         |           |   (url)       |               |
+         |                           |               |
+         |    install \"X\"            |               |
+         * ------------------------> |               |
+         | <------------------------ |               |
+         |   DVCS repo download      |               |
+         |                           |               |
+         |    upgrade \"X\"            |               |
+         * ------------------------> |               |
+         | <------------------------ |               |
+         |   download DVCS \"delta\"   |               |
+         |                           |               |
+         |  report epackage bug      |               |
+         * ------------------------> |               |
+         |  report program bug       |               |
+         * ----------------------------------------> |
+         |                           |               |
+         =============================================
+
+ Local directory layout
+
+     The packages are installed under root `epackage--root-directory',
+     which defaults to `~/.emacs.d' or `~/elisp' respectively. The
+     components below the root directory are organized as follows:
+
+         epackage/               Under epackage--root-directory
+         |
+         +-- 00coonf/
+         |   epackage-loader.el  One big boot file
+         |
+         +-- 00install/	   Extension \"install\" files
+         |   ...
+         |
+         +--packages/           Version control repositories.
+            |
+            +-- 00sources/      Yellow pages: list of available packages
+            +-- package/        Downloaded package
+            +-- ...
+
+ Epackage specification (draft; level 1)
+
+     The Git repository branches used are:
+
+     o   *master*, required. The published epackage.
+         Branched off from *upstream*. Adds directory
+         `epackage/' where the packaging information resides.
+     o   *patches*, optional. Patches to *upstream* code, if any.
+         This branch is merged to *master*.
+     o   *upstream*, required. The original unmodified upstream code.
+         Releases are tagged with label
+         \"upstream/YYYY-MM-DD[--VERSION]\". The YYYY-MM-DD is the
+         date of upstream release or best guess like if only year
+         is known, use YYYY-01-01. The options part \"--VERSION\" is
+         the official version of extension; if known. Not all
+         extensions include version information. The ISO 8601 date is
+         needed so that the release date is immediately
+         available e.g. for post processing and so that the tags sort
+         nicely by date. An example: `upstream/2009-12-31--0.3-devel'.
+
+     The same in pictures. The `master' contains merges from
+     `patches' and `upstream'.
+
+         patches        o - o (modifications; merged to master)
+                      /
+         upstream    * ---- o
+                      \\      \\ (merge)
+         master        o ---- o - =>         contains epackage/ directory
+
+     The epackage method borrows concept from Debian where a
+     separate control directory is used for package information.
+     The directory name is `epackage/' and it is not configurable.
+     The layout of an epackaged Emacs extension looks like:
+
+         <PACKAGE, Emacs extension root dir>
+         | <files and possible directories>
+         |
+         +- .git/                  Version control branches (see above)
+         |
+         +-- epackage/
+             info                  required: The information file
+             PACKAGE-0loaddefs.el  optional: extracted ###autoload statements
+             PACKAGE-autoloads.el  optional: autoload statements (manual)
+             PACKAGE-compile.el    optional: Code to byte compile the extension
+             PACKAGE-examples.el   optional: Custmization examples
+             PACKAGE-install.el    required: Code to make the extension available
+             PACKAGE-uninstall.el  optional: Code to remove the extension
+             PACKAGE-xactivate.el  optional: Code to activate the extension
+
+     The names of the files have been chosen to sort
+     alphabetically. All these configuration files are later
+     combined in a single loader file. Loading a single file is
+     faster than spending time in loading small file along
+     `load-path'. The alphabetic order makes it possible to combine
+     them safely together. Even on command line (for testing):
+
+		ls | egrep -vi '00|compile|examples|uninstall' | \\
+             xargs cat > PACKAGE-00.el
+
+    The *-0loaddefs.el
+
+     This file contains extracted ##autoload definitions. The file
+     is usually automatically generated. The file does not modify
+     user's environment. If extension does not contains any
+     `###autoload' definitions, the manually crafted *-install.el
+     file can be used as a substitute. In case of missing
+     `##autoload' stanzas, you're encouraged to contact upstream
+     with a possible patch. The \"zero\" at the start of the name is
+     to help proper sorting ordering of files. Mnemonic: \"if you
+     load this file, you can start calling extension's features\".
+     The file ends in:
+
+         (provide 'PACKAGE-0loaddefs)
+
+    The *-autoloads.el
+
+	This file contains manually written `autoload' statements.
+	This file acts as a backup if there is no `###auutoload'
+	definitions. Its purpose it to publish propective functions
+	(interactive or not) that might be called or used by the user.
+	Mnemonic: \"if you load this file, you can write lisp code to
+	call the functions in the extension, or you can call
+	extension's interactive functions via M-x\". The file ends in:
+
+         (provide 'PACKAGE-autoloads)
+
+    The *-examples.el
+
+	This file contans anything the upstream may have explained in
+	the comments, or interesting snippets various users have found
+	useful to customize the extentiosn. It provides a showcase, or
+	scratchbook, to present anything that might be useful to be
+	put into `~/.emacs' startup file. Mnemonic: \"Look examples in
+	this file for ideas how to take more out of the extension\".
+	This file is _not_ intenede to be loaded and it should _not_
+	contain any `provide' statements. In fact it is recommended that
+	any attempt to load this fle generates an error. The file starts
+	with:
+
+         (error \"PACKAGE-examples.el is not a config file. Study the examples.\")
+
+    The *-install.el
+
+     This file is manually or automatically written. It publishes
+     user variables and interactive `M-x' functions in *autoload*
+     state. No modifications to user's Emacs setup is allowed. This
+     file is only necessary if extension does not contain proper
+     ###autoload statements. The *-install* in name refers to
+     installation, or availability for that matter, of interactive
+     functions. *Note:* try to avoid `require' or `load' commands
+     as much as possible; or delay their calls to the point where
+     user calls functions interactively. That helps keeping Emacs
+     startup fast and lean. Mnemonic: \"if you load this file, you
+     can start calling extension's features\". The file ends in:
+
+         (provide 'PACKAGE-install)
+
+    The *-uninstall.el
+
+     This file does the opposite of *-install.el and *-activate.el
+     It runs commands to remove the extension as if it has never
+     been loaded. Due to the nature of Emacs, it is not really
+     practical to completely try to uninstall the package. The
+     uninstallation usually covers undoing the changes to *-hook,
+     *-functions and `auto-mode-alist' and the like variables. The
+     actual symbols (defined functions and variables) are not
+     removed. To shake extension completely, restart Emacs after
+     uninstall of epackage. The file ends in:
+
+         (provide 'PACKAGE-uninstall)
+
+    The *-xactivate.el
+
+     This file makes the extension immediately active in user's
+     environment. It can modify current environment by adding
+     functions to hooks, adding minor or major modes or arranging
+     key bindings so that when pressed, a feature is loaded and
+     activated. It may also loop through `buffer-list' to activate
+     features immediately in running Emacs. It is best that any
+     custom settings, like variables and prefix keys, are defined
+     in `~/.emacs' *before* this file gets loaded. As with
+     *-install.el, try to avoid `require' or `load' commands and
+     stick to `autoload'. Mnemonic: \"If you load this file, the
+     bells and whistles are turned on\". The \"x\" at the start of the
+     name is to help proper sorting ordering of all files. The file
+     ends in:
+
+         (provide 'PACKAGE-xactivate)
+
+ The info file
+
+     A RFC 2822 (email) formatted file, which contains information
+     about the extension. The header field names are case
+     insensitive; but if you use the default *get.sh*, it expects
+     the Vcs-* field to be case-sensitive. Continued lines must be
+     indented; suggested indentation is 1 space. Required fields
+     are marked with asterisk (*). In the long description
+     part, new paragraphs are separated by a single dot(.)
+     character on their own line. The layout of the `info' mirrors
+     concepts of `control' file in Debian packaging system which is explained in
+     <http://www.debian.org/doc/debian-policy/ch-controlfields.html#s-f-Version>.
+
+         *Package: <unique name, all lowercase>
+         *Section: <data | extensions | files | languages | mail | tools | M-x finder-list-keywords>
+         License: <GPL-[23]+ | BSD | Apache-2.0 | ... | None>
+         *Depends: emacs (>= 20)
+         Status: [ <keyword> ...]
+         Compat: [ <epackage version> ]
+         Maintainer: [ <epackage maintainer email> ]
+         *Email: [ First Last <firts.last@example.com ]
+         Bugs: [ URL ]
+         Vcs-Type:
+         Vcs-Url:
+         Vcs-Args:
+         Vcs-Browser:
+         Vcs-User:
+         Vcs-Password:
+         Homepage:
+         Wiki: http://www.emacswiki.org/emacs/<page name>
+         X-<Field>-<Name>: [anything]
+         *Description: <short one line>
+          [<Longer description>]
+          .
+          [<Longer description, next paragraph>]
+          .
+          [<Longer description, next paragraph>]
+
+     An example:
+
+         Package: hide-lines
+         Section: tools
+         License: None
+         Depends: emacs (>= 21)
+         Status: unmaintained
+         Compat:
+         Maintainer:
+         Email: Mark Hulme-Jones <ture@plig.net>
+         Bugs:
+         Vcs-Type: http
+         Vcs-Url: http://www.emacswiki.org/emacs/download/hide-lines.el
+         Vcs-Browser:
+         Vcs-User:
+         Vcs-Password:
+         Homepage:
+         Wiki: http://www.emacswiki.org/emacs/HideLines
+         Description: Hide or preserve all matching lines in buffer
+          Main command [C-u] M-x hide-lines to hide or show matching lines.
+          With prefix argument, the corresponding lines are preserved while
+          others are hidden.
+          .
+          Note 2010-12-03 the code hasn't been touched since 2004.
+
+ Details of the info file fields
+
+     Recommendations: Use one space to indent continued field.
+     Limit maximum line length to 80 characters. See variable
+     `fill-column'
+
+    Bugs
+
+     URL to report bugs. This can be an email address or a link to
+     issue tracker of upstream project. Note: send packaging
+     problems or update requests to the extension's epackage
+     `Maintainer'.
+
+   Compat
+
+     The compatibility level used in this epackage. The Epackage
+     format may change in time and this field indicates which the
+     epackage layout version. If the value is missing or is empty,
+     no specific compatibility level is required and latest is
+     assumed. Usually an epackage maintainer should follow the
+     latest format to prevent installation problems. See section
+     \"Epackage Compatibility Levels\" for more information.
+
+    Conflicts
+
+     List of packages that must be removed before install can be
+     done. This field follow guidelines of
+     <http://www.debian.org/doc/debian-policy/ch-relationships.html>.
+
+    Depends (required)
+
+     List of dependencies: Emacs flavor and additional packages
+     required. The version information is enclosed in parentheses
+     with comparison operators \">=\" and \"<=\". A between range is
+     not defined. This field follows guidelines of
+     <http://www.debian.org/doc/debian-policy/ch-relationships.html>.
+
+     In case an extension works only with certain version of Emacs,
+     this information should be written to the end of
+     `Description'. (which see). Old packages that are not updated
+     to work for latest Emacs releases are candidate for removal
+     from a epackage archive's yellow pages. An example how to use
+     the field:
+
+             Depends: emacs (>= 22.2) | xemacs (>= 20)
+
+    Description (required)
+
+     The first line of this field is a concise description that
+     fits on maximum line length of 80 characters in order to
+     display \"PACKAGE -- SHORT DESCRIPTION\". The long description
+     is explained in paragraphs that are separated from each other
+     with a single (.) at its own line. The paragraphs are
+     recommended to be intended by one space.
+
+    Email
+
+     The Upstream developer's email address(es). Multiple
+     developers are separated by commas. The role can be expressed
+     in RFC 2822 comment-parenthesis. An example:
+
+             Email: John doe (Author) <jdoe@example.com>,
+              Joe Average (Co-developer) <jave@example.com>
+
+    Homepage
+
+     URL to the project's homepage. It is recommended to use
+     addresses that don't move; those of http://Freshmeat.net,
+     http://www.Sourceforge.com, http://Launchpad.net,
+     http://Github.com, http://Bitbucket.com etc. The Freshmeat is
+     especially good because it provides project information in
+     standardized manner. Through Freshmeat it is also possible to
+     browse related software and subscribe to announcements.
+     Freshmeat is also easy for the upstream developers to set up
+     because it requires no heavy project management; only links.
+
+     In any case, the Homepage URL should not directly point to
+     developer's volatile personal homepage if there is alternative
+     choices. It is good idea to encourage \"Garage\" upstream
+     developers to set up their software at some project hosting
+     site because they include infrastructure for issue tracking.
+     For more information, see
+     <http://en.wikipedia.org/wiki/Comparison_of_open_source_software_hosting_facilities>.
+
+    License
+
+     If missing, the value is automatically assumed \"GPL-2+\". The valid
+     License abbreviations should follow list defined at
+     <http://wiki.debian.org/CopyrightFormat>. A special word \"None\"
+     should be used if the software has no license information in any of
+     the source files. Examples of valid license tokens:
+
+             GPL-2, GPL-2+, GPL-3, GPL-3+, BSD, Apache-2.0
+
+    Maintainer
+
+     This extension's epackage maintainer. The person who made this
+     extension available in epackage format. If this field is
+     missing, then the upstream (`Email') is assumed to be the
+     packager. It is always desirable that upstream, who develops
+     the extension also provides the software in epackage format.
+
+    Package (required)
+
+     The name of the extension in all lowercase, satisfying regexp
+     \"[a-z][a-z0-9-]+\". Usually base name of the extension file or
+     the canonical known name in case of bigger packages like
+     \"gnus\". An example \"html-helper-mode.el\" => package name is
+     \"html-helper-mode\". In case of minor or major modes, always
+     add *-mode even if file name does not explicitly say so. An
+     example \"python.el\" => package name is \"python-mode\". No two
+     packages can have the same name. Please notify upstream about
+     the clash.
+
+    Recommends
+
+     List of packages that current extension can support or take
+     advantage of. E.g this field would list package B if A can
+     take advantage of package B, but it is not a requirement to
+     install B for package A to work. This field is *not* used to
+     announce related packages. That information can be mentioned in
+     the end of `Description' in separate paragraph \"SEE ALSO\".
+     This field follow guidelines of
+     <http://www.debian.org/doc/debian-policy/ch-relationships.html#s-binarydeps>
+
+    Section (required)
+
+     This field contains category for package. The valid keywords are
+     those listed in `M-x' `finder-list-keywords'.
+
+    Status
+
+     This field lists information about the package. Each keyword
+     has a unique meaning. the allowed list:
+
+         keyword := core-emacs[-NN.N]
+                    | core-xemacs[-NN.N]
+                    | unmaintained
+                    | broken
+                    | unsafe
+                    | stable
+                    | unstable
+                    | experimental
+
+     The `core-*' values mark the package being included (or will
+     be) in the latest [X]Emacs. The optional NN.N announces in
+     which Emacs flavor the feature was included; e.g.
+     *core-emacs-22.1*. Value `unmaintained' means that the
+     original developer has vanished or abandoned the project and
+     is no longer available for developing the package. Value
+     `unsafe' means that the not all the symbols are name space
+     clean (prefix-*), so some of the commands might clash with
+     existing ones. The current release status of package can be
+     indicated with term `stable' (no more actively developed, bugs
+     shaken out), `unstable' (package is in active development) and
+     `experimental' (no guarantees, not necessarily tested but this
+     is the latest code). Value `broken' means that package is
+     broken and does not work in some Emacs version (usually
+     latest).
+
+    Vcs-Browser
+
+     The URL address to the version control browser of the repository.
+     This field follow guidelines of
+     <http://www.debian.org/doc/developers-reference/best-pkging-practices.html#bpp-vcs>
+
+    Vcs-Type
+
+     Version Control System type information. The value is the
+     lowercase name of the version control program; cvs, svn, bzr,
+     hg, git etc. A special value \"http\" can be used to signify
+     direct HTTP download. This field follow guidelines of
+     <http://www.debian.org/doc/developers-reference/best-pkging-practices.html#bpp-vcs>.
+     An example of an Emacs extension hosted directly at a web page:
+
+         Vcs-Type: http
+         Vcs-Url: http://www.emacswiki.org/emacs/download/vline.el
+
+    Vcs-Url
+
+     The Version Control System repository URL without any options.
+     For CVS, this is the value of CVSROOT which includes also the
+     protocol name. This field follow guidelines of
+     <http://www.debian.org/doc/developers-reference/best-pkging-practices.html#bpp-vcs>.
+     An example:
+
+         Vcs-Type: cvs
+         Vcs-Url: :pserver:anonymous@example.com/reository/foo
+
+    Vcs-Args
+
+     Additional arguments passed to VCS program after specifying
+     the *Vcs-Url* E.g. CVS directories may need a specific module
+     to check out. A setup like below would yield command: \"cvs -d
+     <Vcs-Url> co -d <Package> <Vcs-Args>\"
+
+         Vcs-Type: cvs
+         Vcs-Url: :pserver:anonymous@example.com/reository/foo
+         Vcs-Args: module
+
+    Vcs-User
+
+     The Version Control System repository's login name. In case the
+     repository cannot be accessed simply by visiting the `Vcs-Url' (or
+     in the case of CVS: pressing RETURN at login prompt), this is the
+     login name.
+
+    Vcs-Password
+
+     The Version Control System repository's password. In some rare cases
+     a generic password, like \"anonymous\" to access repository, is needed.
+
+    Wiki
+
+     This field points to extension page at
+     <http://www.emacswiki.org>. If extension does not yet have a
+     page yet, encourage upstream to create one.
+
+    X-*
+
+     Any other custom field can be inserted using `X-*' field
+     notation. It is recommended that X-fields are listed at the bottom,
+     Just before `Description:' field.
+
+         X-Comment: <comment here>
+         X-Upstream-Homepage: <URL>
+
+Epackage Compatibility Levels
+
+     The latest epackage format is always described in section
+     \"Epackage specification\" above. In here you can find list of
+     older formats and changes.
+
+     o   2010-12-03 Draft spec. Compatibility level 1.
+
+
+Batch command line interface
+
+     Several FUNCTIONS can be accessed from command line in a
+     manner of:
+
+         emacs --batch -Q -l /path/to/epackage.el -f FUNCTION
+
+     The functions and their command line arguments are:
+
+         ;; Interactive, menu driven
+         epackage-batch-ui-menu
+
+         epackage-batch-ui-upgrade-all-packages
+         epackage-batch-upgrade-package PACKAGE ...
+         epackage-batch-download-package PACKAGE ...
+         epackage-batch-remove-package PACKAGE ...
+         epackage-batch-clean-package PACKAGE ...
+         epackage-batch-activate-package PACKAGE ...
+         epackage-batch-deactivate-package PACKAGE ...
+         epackage-batch-enable-package PACKAGE ...
+         epackage-batch-disable-package PACKAGE ...
+         epackage-batch-ui-list-installed-packages
+         epackage-batch-ui-list-not-installed-packages
+         epackage-batch-ui-list-downloaded-packages
+         epackage-batch-ui-loader-file-generate
+         epackage-batch-ui-loader-file-byte-compile
+
+         ;; This command also upgrades the yellow pages file
+         epackage-batch-ui-download-sources-list
+
+TODO
+
+     [Within groups, sorted by priority. \">\" under work]
+
+     General
+
+     o   > Add *-hook variables to command actions.
+     o   > Run health check for downloaded Epackage
+     o   > auto-byte-compile feature on package install (cnfigurable)
+     o   > Verify sources list file: No duplicate of same packages.
+     o   > Standard install by default enables (installs *-install).
+         Make this configurable what to do by default.
+     o   > Dynamically search all *.el and *elc. When byte compiled,
+         symlink those files as well.
+     o   > Download problem, broken link:
+         => Offer mailing the Yellow pages maintainer about broken link
+     o   What if user manually deletes directories? Left over config files?
+
+     REPO
+
+     o   Fetch, pull conflicts?
+
+     o   What if epackage maintainer kills the repo and re-instantiates it
+         from fresh? Symptoms: can't pull, because repos have diverged and
+         do not have common objects. SOLUTION: offer deleting repo and
+         downloading it again. Warn if there are any local modifications,
+         the user might want ot have a backup (*.b). Can we do that? What
+         if a backup already exists?
+
+     o   What to do if Yellow pages URL (repo) changes and you have
+         the old one installed? How to cope with the change? The Git
+         repository may need to be destroyed and downloaded again to
+         be sure (not necessarily derived from old one).
+
+     o   re-fetch repository (destroy, re-download).
+     o   Git tags, where is this information kept? Affects GUI.
+
+     o   What if user has made local customizations?
+         Branch != master. Thought: we leave if alone and mark it
+         \"manual\". User can deal with the merges and take full
+         responsibility. We can still run 'git fetch'.
+
+     GUI
+
+     o   Write M-x epackage-manager
+     o   Cache. Build it dynamically from packages and
+         combine with package information (e.g. version).
+     o   After download. Trying to install or activate package,
+         check emacs compatibility and refuse to install if not met.
+
+     o   If user selects DETAIL view, collect
+         information to another buffer dynamically (info, git tags,
+         current git branch)
+
+     o   Rescan current information? (what is installed, what is not)
+         => Keep cache? Or regenerate, or scan at startup every time?
+
+     Some day in the future:
+
+     o   Verify Compatibility Level of downloaded epackage
+     o   Implement Depends, Conflicts checks.
+     o   Edit yellow pages catalog?
+         => Submit/update yellow pages catalog changes?
+         => version controlled, patches? Interface to automatic email?")

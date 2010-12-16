@@ -1,0 +1,9 @@
+(:summary    "An emacs buffer in rcirc-groups major mode"
+ :created    "20090627"
+ :updated    "2009"
+ :authors    (("Dimitri Fontaine" . "dim@tapoueh.org"))
+ :maintainer ("Dimitri Fontaine" . "dim@tapoueh.org")
+ :provided   (rcirc-groups rcirc-notify-mode)
+ :required   ((("emacs" cl rcirc)))
+ :keywords   ("irc" "rcirc" "notify")
+ :homepage   "http://blog.tapoueh.org/projects.html#sec17")

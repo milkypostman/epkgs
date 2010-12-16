@@ -1,0 +1,163 @@
+(:summary    "Minor mode displaying buffer changes with special face"
+ :created    "1998"
+ :updated    "1998"
+ :license    "GPL-2"
+ :provided   (change-mode)
+ :required   ((("emacs" advice)))
+ :commentary "\
+A minor mode: \"change-mode\".
+
+Change-mode has 2 submodes: active and passive.
+When active,  changes to the buffer are displayed in a different
+face.  When passive,  any existing displayed changes are saved and
+new ones recorded but are not displayed differently.
+Why active and passive?  Having the changes visible can be
+handy when you want the information but very distracting
+otherwise.   So, you can keep change-mode in passive state while
+you make your changes,  toggle it on to active mode to see them,
+then toggle it back off to avoid distraction.
+
+When a change-mode is on (either active or passive) you can
+go to the next or previous change with change-mode-next-change &
+change-mode-previous-change.
+
+You can \"age\" different sets of changes by using
+change-mode-rotate-colours.  This rotates different through a
+series of different faces,  so you can distinguish \"new\" changes
+from \"older\" changes.
+
+You can also use the command compare-with-file to show changes in
+this file compared with another file (typically the previous
+version of the file).
+
+
+You can define your own faces using the various set-face-*
+functions (these can be used interactively).  Or you can evaluate
+something like this before loading change-mode.el:
+  (make-face 'change-face)
+  (set-face-background 'change-face \"DarkGoldenrod4\")
+
+There are currently two hooks run by `change-mode':
+  change-mode-enable-hook and change-mode-disable-hook
+which are called from `change-mode' when the mode is being turned on
+or off respectively.  (The enable hook is not only called when the
+mode is intially turned on,  it is called each time -- e.g. when
+toggling between active and passive modes.
+I'm not happy with this,  and may change this soon.)
+
+Example usage:
+ (defun my-change-mode-enable-hook ()
+   (or (facep 'change-face)
+       (progn
+     ;; stuff to do the very first time change-mode is called
+     ;; (in any buffer)
+     (make-face 'change-face)
+     (set-face-foreground 'change-face \"DarkGoldenrod4\")
+     (set-face-background 'change-face \"lavender\")))
+   ;; stuff to do each time
+   (add-hook 'local-write-file-hooks 'change-mode-rotate-colours)
+ )
+
+ (defun my-change-mode-disable-hook ()
+   (remove-hook 'local-write-file-hooks 'change-mode-rotate-colours)
+ )
+ 
+ (add-hook 'change-mode-enable-hook 'my-change-mode-enable-hook)
+ (add-hook 'change-mode-disable-hook 'my-change-mode-disable-hook)
+
+          Explciit vs. Implicit
+
+
+Normally, Change mode is turned on explicitly for certain buffers.
+
+If you prefer to have it automatically invoked you can do it as
+follows.
+
+1. Most modes have a major-hook, typically called MODE-hook.  You
+can use add-hook to call change-mode.  
+
+  Example:
+     (add-hook 'c-mode-hook 'change-mode)
+
+ If you want to make it start up in passive mode (regardless of the
+ setting of change-mode-initial-state):
+     (add-hook 'emacs-lisp-mode-hook
+         (lambda ()
+           (change-mode 'passive)))
+
+However, this cannot be done for Fundamental-mode for there is no
+such hook.
+
+2. You can use the function `global-change-mode'
+This function, which is fashioned after the way `global-font-lock'
+works,  toggles on or off global change mode.
+When activated, it turns on change mode in all \"suitable\" existings
+buffers and will turn it on in new \"suitable\" buffers to be
+created.
+
+A buffer's \"suitability\" is determined by variable
+`change-mode-global-modes',  as follows.  If the variable is
+* nil  -- then no buffers are suitable;
+* a function -- this function is called and the result is used.  As
+  an example,  if the value is 'buffer-file-name then all buffers
+  who are visiting files are suitable, but others (like dired
+  buffers) are not;
+* a list -- then if the buufer is suitable iff its mode is in the
+  list,  exccept if the first element is nil in which case the test
+  is reversed (i.e. it is a list of unsuitable modes).
+* Otherwise,  the buffer is suitable if its name does not begin with
+  ' ' or '*' and (buffer-file-name) returns true.
+
+It is recommended to set it to a list of specific modes,  e.g.
+  (setq change-mode-global-modes
+     '(c-mode emacs-lisp-mode text-mode fundamental-mode))
+While the default cases works fairly reasonably,  it does include
+several cases that probably aren't wanted (e.g. mail buffers).
+
+    Possible bindings:
+(global-set-key '[C-right] 'change-mode-next-change)
+(global-set-key '[C-left]  'change-mode-previous-change)
+
+    Other interactive functions (which could be bound if desired):
+change-mode
+change-mode-remove-change-face
+change-mode-rotate-colours
+compare-with-file
+
+    Possible autoloads:
+
+(autoload 'change-mode \"change-mode\"
+  \"Show changes in a distincive face\" t)
+
+(autoload 'change-mode-next-change \"change-mode\" \"\\
+Move to the beginning of the next change, if minor-mode
+change-mode is in effect.\" t)
+
+(autoload 'change-mode-previous-change \"change-mode\" \"\\
+Move to the beginning of the previous change, if minor-mode
+change-mode is in effect.\" t)
+
+(autoload 'compare-with-file \"change-mode\"
+  \"Compare this saved buffer with a file,  showing differences
+in a distinctive face\" t)
+
+(autoload 'change-mode-remove-change-face \"change-mode\" \"\\
+Remove the change face from the region.  This allows you to
+manually remove highlighting from uninteresting changes.\" t)
+
+(autoload (quote change-mode-rotate-colours) \"change-mode\" \"\\
+Rotate the faces used by change-mode.  Current changes will be
+display in the face described by the first element of
+change-mode-face-list,  those (older) changes will be shown in the
+face descriebd by the second element,  and so on.   Very old changes
+reamin in the last face in the list.
+
+You can automatically rotate colours when the buffer is saved
+by adding this to local-write-file-hooks,  by evaling (in the
+buffer to be saved):
+(add-hook 'local-write-file-hooks 'change-mode-rotate-colours)
+\" t nil)
+
+(autoload (quote global-change-mode) \"change-mode\" \"\\
+Turn on or off global Change mode.\"
+`change-mode-global-modes'.\" t nil)")

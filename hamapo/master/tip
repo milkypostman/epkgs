@@ -1,0 +1,3 @@
+(:provided   (hamapo)
+ :required   ((("emacs" cl)))
+ :homepage   "http://bitbucket.org/dagezi/hamapo")

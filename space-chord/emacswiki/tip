@@ -1,0 +1,14 @@
+(:summary    "Key chord with Space"
+ :created    "2008"
+ :updated    "20081105"
+ :license    "GPL-2"
+ :authors    (("rubikitch" . "rubikitch@ruby-lang.org"))
+ :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
+ :provided   (space-chord)
+ :required   ((("key-chord" key-chord)))
+ :keywords   ("convenience")
+ :commentary "\
+A thumb is a finger of the strongest! Let's utilize a thumb.
+This package defines key-chord starting with Space.
+This package depends on key-chord.el:
+ http://www.emacswiki.org/cgi-bin/wiki/download/key-chord.el")

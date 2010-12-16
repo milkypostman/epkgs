@@ -1,0 +1,14 @@
+(:summary    "Some functions for `fill-nobreak-predicate'"
+ :created    "2009"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Kevin Ryde" . "user42@zip.com.au"))
+ :maintainer ("Kevin Ryde" . "user42@zip.com.au")
+ :provided   (nobreak-fade)
+ :required   ((("emacs" help-mode thingatpt)))
+ :keywords   ("convenience")
+ :homepage   "http://user42.tuxfamily.org/nobreak-fade/index.html"
+ :wikipage   "http://www.emacswiki.org/NobreakFade"
+ :commentary "\
+This is some \"nobreak\" functions for `fill-nobreak-predicate'.
+See each docstring for details.")

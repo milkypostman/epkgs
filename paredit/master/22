@@ -1,0 +1,11 @@
+(:summary    "Minor mode for editing parentheses"
+ :created    "20050731"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Taylor R. Campbell"))
+ :maintainer ("Taylor R. Campbell")
+ :provided   (paredit)
+ :required   ((("emacs" newcomment)))
+ :keywords   ("lisp")
+ :homepage   "http://mumble.net/~campbell/emacs/paredit/paredit.html"
+ :wikipage   "http://www.emacswiki.org/ParEdit")

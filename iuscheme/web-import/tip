@@ -1,0 +1,5 @@
+(:summary    "Scheme support, Indiana Univeristy style"
+ :updated    "20011003"
+ :provided   (iuscheme)
+ :required   ((("emacs" cmuscheme)))
+ :homepage   "http://www.cs.indiana.edu/chezscheme/emacs/")

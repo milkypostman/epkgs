@@ -1,0 +1,35 @@
+(:summary    "Simple tool for accessing yammer.com"
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-3"
+ :authors    (("Peter Sanford" . "peter@petersdanceparty.com"))
+ :maintainer ("Peter Sanford" . "peter@petersdanceparty.com")
+ :provided   (yammer)
+ :required   ((("emacs" image-file json)
+	       ("oauth" oauth)))
+ :keywords   ("comm")
+ :homepage   "https://github.com/psanford/emacs-yammer"
+ :commentary "\
+Simple mode for browsing and posting to yammer.com.
+
+This mode requires oauth.el:
+git clone git://github.com/psanford/emacs-oauth.git
+and json.el: 
+http://edward.oconnor.cx/2006/03/json.el
+
+You will need to register for an oauth key/secret at
+http://www.yammer.com/api_doc.html
+
+Once you have a key and secrect, set yammer-consumer-key
+and yammer-consumer-secret with those values.
+
+Add the following to your emacs init file 
+(require 'yammer)
+(yammer-authenticate unix-user-name)
+
+Useful functions:
+yammer-list-messages
+yammer-post-message
+yammer-post-buffer-contents
+
+set yammer-show-icons to enable mugshots")

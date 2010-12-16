@@ -1,0 +1,16 @@
+(:summary    "Different styles of compile with completion"
+ :created    "2003"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("Paolo Gianrossi" . "paolino.gnu@disi.unige.it"))
+ :maintainer ("Paolo Gianrossi" . "paolino.gnu@disi.unige.it")
+ :provided   (hyper-compile)
+ :required   ((("emacs" compile)))
+ :keywords   ("compile" "developing" "programming")
+ :homepage   "http://np-salesman.net/programs/"
+ :commentary "\
+This package provides `hyper-compile' function.
+It allows you to define different compilation styles with autocompletion
+
+To use this package, add these lines to your .emacs file:
+    (load-library \"hyper-compile\")")

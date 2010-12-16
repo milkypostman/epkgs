@@ -1,0 +1,13 @@
+(:summary    "Add targets of nearest makefile to anything sources"
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-2"
+ :authors    (("Philip Jackson" . "phil@shellarchive.co.uk"))
+ :maintainer ("Philip Jackson" . "phil@shellarchive.co.uk")
+ :provided   (anything-make)
+ :homepage   "http://www.shellarchive.co.uk/content/emacs.html"
+ :commentary "\
+Evaling (require 'anything-make) will make the targets for the
+nearest makefile available as anything sources. It searches up the
+file system tree for the closest makefile (the name of which is
+defined by `anything-make-makefile-name').")

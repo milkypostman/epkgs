@@ -1,0 +1,27 @@
+(:summary    "Interactive replacement for locate-library with completion"
+ :created    "2001"
+ :updated    "2001"
+ :license    "GPL-2"
+ :provided   (ilocate-library)
+ :commentary "\
+This package consists of functions to replace
+`locate-library' and `load-library' with interactive
+versions that do minibuffer completion.
+
+entry points:
+  ilocate-library :
+     locate library in load-path
+  ilocate-library-find-source :
+     locate library, and read the source (.el),
+     if it's available, into a new buffer in
+     the other window
+  ilocate-load-library :
+     interactive load-library with completion
+
+All functions use a cached table of libraries found in the
+`load-path'.  The table, `ilocate-library-cache', is
+generated the first time any of these functions are
+called, or if the `load-path' has changed since the last
+invocation of the function.  You may force the refreshing
+of the cache by calling any of the functions with a
+prefix arg.")

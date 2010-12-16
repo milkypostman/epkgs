@@ -1,0 +1,5 @@
+(:summary    "Search my journal"
+ :updated    "20060210"
+ :license    "GPL-2"
+ :provided   (journal-search)
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/webstuff/")

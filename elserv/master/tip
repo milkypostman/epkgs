@@ -1,0 +1,48 @@
+(:summary    "Yet another HTTP server on Emacsen"
+ :created    "2001"
+ :updated    "2001"
+ :license    "GPL-2"
+ :authors    (("Yuuichi Teranishi" . "teranisi@gohome.org"))
+ :maintainer ("Yuuichi Teranishi" . "teranisi@gohome.org")
+ :provided   (elserv elserv-autoindex elserv-negotiation elserv-xmlrpc es-demo es-mhc es-monitor es-wiki es-xmlrpc remote web-custom)
+ :required   ((("apel" mcharset pces poem product static)
+	       ("emacs" calendar cl cus-edit custom)
+	       ("emacs-wiki-mode" emacs-wiki)
+	       ("flim" std11)
+	       ("mhc" mhc mhc-face)
+	       ("semi" mime-view)
+	       ("w3m" w3m)
+	       ("xml-rpc" xml-rpc)))
+ :keywords   ("http")
+ :homepage   "http://elserv.sourceforge.net/"
+ :wikipage   "http://www.emacswiki.org/ElServ"
+ :commentary "\
+API for server handling
+
+elserv-start
+elserv-find-process
+elserv-stop
+elserv-publish
+elserv-unpublish
+
+API for content making
+
+elserv-make-result
+elserv-make-redirect
+
+Example:
+
+(require 'elserv)
+(elserv-start 8080)
+(elserv-publish (elserv-find-process 8080) \"/\"
+                :string \"Hello World.\"
+                :content-type \"text/plain\")
+
+or write following lines in your .emacs.
+
+(autoload 'elserv-start \"elserv\" nil t)
+(add-hook 'elserv-start-hook
+          (lambda ()
+            (elserv-publish (elserv-find-process) \"/\"
+                            :string \"Hello World.\"
+                            :content-type \"text/plain\")))")

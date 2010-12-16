@@ -1,0 +1,17 @@
+(:summary    "Integration of Emacs help system and memo"
+ :created    "2007"
+ :updated    "20100509"
+ :license    "GPL-2"
+ :authors    (("rubikitch" . "rubikitch@ruby-lang.org"))
+ :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
+ :provided   (usage-memo)
+ :required   ((("emacs" cl font-lock)))
+ :keywords   ("convenience" "languages" "lisp" "help" "tools" "docs")
+ :homepage   "http://www.emacswiki.org/UsageMemo"
+ :wikipage   "http://www.emacswiki.org/UsageMemo"
+ :commentary "\
+This program enables you to write annotation in *Help* and
+third-party help systems. When we do programming, we often use
+Emacs help system (ie. describe-function). Do you want to take a
+note in the *Help* buffer and want Emacs to show your note later?
+In other words, integration of Emacs help and your memo!")

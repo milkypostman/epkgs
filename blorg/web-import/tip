@@ -1,0 +1,80 @@
+(:summary    "Export a blog from an org file"
+ :created    "2006"
+ :updated    "20080129"
+ :license    "GPL-2"
+ :authors    (("Bastien Guerry" . "bzg@altern.org"))
+ :maintainer ("Bastien Guerry" . "bzg@altern.org")
+ :provided   (blorg)
+ :required   ((("emacs" calendar cl easy-mmode em-unix eshell org regexp-opt time-stamp)))
+ :keywords   ("org-mode" "blog" "publishing" "html" "feed" "atom" "rss")
+ :wikipage   "http://www.emacswiki.org/Blorg"
+ :commentary "\
+blorg creates a blog from an org file.  Just edit your `org-mode'
+buffer then do M-x `blorg-publish'.  This is bound to C-c \".
+
+Here is the list of pages created by `blorg':
+
+- index page
+- atom/rss feed for index page
+- tags pages
+- atom/rss feeds for tags pages
+- months pages
+- posts pages
+
+Each page is rendered with a specific HTML layout.  You can change
+the layout of all theses pages (and of the post itself) by using
+templates.  Have a look at M-x customize-group `blorg-templates'.
+
+If a post or a tag-page already exists, `blorg' won't overwrite it.
+To force publishing of all the pages, add a prefix: C-u M-x
+`blorg-publish'.
+
+`blorg' will only publish posts marked with the \"DONE\" todo
+keyword.  You can use another string either by explicitely adding
+the #+DONE_STRING: option at the beginning of the file or by
+changing the last keyword in `org-todo-keywords'.  This TODO
+keywords are also set by #+SEQ_TODO: in the buffer.
+
+If the heading of an entry is followed by a CLOSED keyword,
+`blorg' will use this date as the publication date.
+
+If the heading if followed by tags, `blorg' will publish a tag
+page for each one of them.
+
+You can set up a few options, either by customizing the variable
+`blorg-default-options' (for all your Org) files or by adding
+options at the beginning of the file:
+
+Main informations:
+#+TITLE       : the title of your blog
+#+SUBTITLE    : the subtitle of your blog
+#+AUTHOR      : the author of the blog
+#+EMAIL       : the author's e-mail address
+#+LANGUAGE    : language of the blog
+
+Publishing options:
+#+BLOG_URL    : the full url of the blog
+#+PUBLISH_DIR : absolute directory name (where to publish files)
+#+UPLOAD_DIR  : relative upload directory name
+#+IMAGES_DIR  : relative images directory name
+#+CONFIG_FILE : elisp config file for this blog
+
+Other informations::
+#+CREATED     : <%Y-%m-%d>
+#+KEYWORDS    : global keywords for this blog
+#+HOMEPAGE    : the author's homepage (not her blog)OB
+#+ENCODING    : encoding of the blog
+#+HTML_CSS    : stylesheet URL for html pages
+#+XML_CSS     : stylesheet URL for xml feeds
+#+FEED_TYPE   : atom or rss (which is rss 2.0 by default)
+#+DONE_STRING : (maybe special) DONE string
+
+See M-x `customize-group' RET `blorg' for further details.
+
+
+Warning: you should better run `blorg' with the latest
+`org-mode' - at least org-mode v4.53.  You can get org-mode from
+here : <http://staff.science.uva.nl/~dominik/Tools/org/>
+
+Put this file into your load-path and the following into your
+~/.emacs: (require 'blorg)")

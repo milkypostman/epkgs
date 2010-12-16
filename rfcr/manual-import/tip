@@ -1,0 +1,7 @@
+(:created    "2001"
+ :updated    "2001"
+ :license    "GPL-2"
+ :authors    (("Sami Salkosuo"))
+ :maintainer ("Sami Salkosuo")
+ :provided   (rfcr)
+ :required   ((("emacs" widget))))

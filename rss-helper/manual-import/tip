@@ -1,0 +1,34 @@
+(:created    "2002"
+ :updated    "2002"
+ :license    "GPL-2"
+ :authors    (("Mark A. Hershberger" . "mah@everybody.org"))
+ :maintainer ("Mark A. Hershberger" . "mah@everybody.org")
+ :keywords   ("weblog" "rss" "headlines")
+ :commentary "\
+rss-helper.el implements functions to aid in the use of Emacs/Gnus
+as an RSS reader/aggregator.
+
+Currently rss-helper-gnus-subscribe is the only really interesting
+function and you may want to bind a key to it, e.g:
+
+   (global-set-key \"\\C-crf\" 'rss-helper-gnus-subscribe)
+
+Now, whenever you come across a weblog or news site for which
+you what to subscribe, invoke rss-helper-gnus-subscribe and it
+will find the RSS feed (using a partial implementation Mark
+Pilgrim's (http://diveintomark.org/) Ultra-Liberal RSS Locator
+algorithm) and subscribe you to it in Gnus.
+
+NOTE: This file has the function nnrss-save-server-data
+redefined so that any new subscriptions you make are saved
+between sessions.
+
+TODO:
+  - Allow the user to pick from among multiple feeds any time
+    they are found.  Currently, you are allowed to choose from
+    among multiple fees only if the Syndic8 is contacted.
+  - Find a way to bail early if Gnus is not up and running.
+  - Offer to synchronize RSS subscriptions with Syndic8
+    account so that a user can read news from multiple
+    machines.
+  - Integrate with nnrss.")

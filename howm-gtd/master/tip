@@ -1,0 +1,11 @@
+(:summary    "GTD with howm"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Takahiro HIMURA" . "taka@himura.jp"))
+ :maintainer ("Takahiro HIMURA" . "taka@himura.jp")
+ :provided   (howm-gtd)
+ :required   ((("emacs" cl)
+	       ("howm" action-lock howm)))
+ :keywords   ("calendar" "docs")
+ :homepage   "https://github.com/himura/howm-gtd")

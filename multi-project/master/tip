@@ -1,0 +1,61 @@
+(:summary    "Easily work with multiple projects"
+ :updated    "20100928"
+ :license    "GPL-2"
+ :authors    (("Shawn Ellis" . "shawn.ellis17@gmail.com"))
+ :maintainer ("Shawn Ellis" . "shawn.ellis17@gmail.com")
+ :provided   (multi-project)
+ :required   ((("emacs" compile easymenu etags)))
+ :keywords   ("project")
+ :homepage   "http://bitbucket.org/ellisvelo/multi-project"
+ :commentary "\
+Multi-project makes it easier to work with different projects by
+providing support for creating, deleting, and switching between
+projects.  Multi-project also supports interactively finding a file
+within a project or automatically switching the TAGS file for
+symbol lookup.
+
+To use multi-project just add the following lines within your
+.emacs file:
+
+(require 'multi-project)
+(global-multi-project-mode)
+
+The following bindings are created for multi-project
+C-xpj - Project jump              Displays a list of projects
+C-xpc - Project compile           Run the compilation command for a project
+C-xpa - Anchor a project          Stores the project to be retrieved via
+                                  multi-project-anchored
+C-xpu - Resets the anchor         Clears out the multi-project-anchored var
+C-xpl - Last project from Anchor  Jumps to the project stored via the anchor
+C-xpp - Jump to current project   Allows switching between last and current
+                                  projects
+C-xpf - Find project files        Interactively find project files
+C-xpn - Add a new project         Prompts for new project information
+
+When displaying the projects, the following bindings are present:
+s     - Search projects:          Searches from the list of possible projects
+C-n   - Next project              Move the cursor to the next project
+C-p   - Previous project          Move the cursor to the previous project
+a     - Anchor a project          Holds the last project to the anchored
+                                  project
+r     - Reset search              Resets the project search
+N     - Add new project           Prompts for project information
+d     - Delete a project          Marks the project for deletion
+u     - Unmark a project          Removes the mark for a project
+x     - Executes actions          Executes the deletions
+q     - quit
+
+The multi-project-compilation-command variable can be set to a function
+that provides a customized compilation command.  For example,
+
+(defun my-compilation-command (project-list)
+  (let ((project-name (car project-list))
+	   (project-dir (nth 1 project-list))
+	   (project-subdir (nth 2 project-list)))
+		       
+    (cond ((string-match \"proj1\" project-name)
+	      (concat \"ant -f \" project-dir \"/\" project-subdir \"/build.xml\"))
+	     (t
+	      (concat \"make -C \" project-dir \"/\" project-subdir)))))
+
+(setq multi-project-compilation-command 'my-compilation-command)")

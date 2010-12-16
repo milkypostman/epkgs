@@ -1,0 +1,19 @@
+(:summary    "Electric Shift Lock Mode"
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-3"
+ :authors    (("John Paul Wallington" . "jpw@pobox.com"))
+ :maintainer ("John Paul Wallington" . "jpw@pobox.com")
+ :provided   (shift-lock)
+ :keywords   ("convenience" "emulations" "lisp" "tools")
+ :homepage   "http://www.shootybangbang.com/"
+ :commentary "\
+Inspired by ZWEI Electric Shift Lock Mode on the LISPM,
+`shift-lock-mode' is a minor mode that uppercases everything except
+comments and strings.  By default it applies to new ordinary text
+characters that you type.  Alternatively, frobbing the user option
+`shift-lock-upcase-existing-text' causes existing buffer text to be
+uppercased except, of course, for comments and strings.  By default
+uppercasing is done according to `ascii-case-table'; an alternative
+case table variable can be specified via the user option
+`shift-lock-case-table'.")

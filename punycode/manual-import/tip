@@ -1,0 +1,28 @@
+(:summary    "An ASCII compatible Unicode encoding format"
+ :created    "2003"
+ :updated    "2009"
+ :license    "GPL-3"
+ :provided   (punycode)
+ :keywords   ("punycode" "idna" "idn" "unicode" "encoding")
+ :commentary "\
+A simple wrapper around the command line \"idn\" utility in GNU
+Libidn to make punycode operations available in Emacs.
+
+Example:
+
+(punycode-encode \"räksmörgås\")
+=> \"rksmrgs-5wao1o\"
+
+(punycode-encode \"foo\")
+=> \"foo-\"
+
+(punycode-decode \"rksmrgs-5wao1o\")
+=> \"räksmörgås\"
+
+(punycode-decode \"foo-\")
+=> \"foo\"
+
+This package is useless unless your emacs has at least partial
+support for the UTF-8 coding system.
+
+Report bugs to bug-libidn@gnu.org.")

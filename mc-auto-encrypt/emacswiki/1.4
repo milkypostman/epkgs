@@ -1,0 +1,41 @@
+(:created    "2003"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("Charles Sebold"))
+ :maintainer ("Charles Sebold")
+ :provided   (mc-auto-encrypt)
+ :required   ((("mailcrypt" mailcrypt)))
+ :commentary "\
+I grabbed this code from Charles on the
+http://www.emacswiki.org/wiki.pl?AutoEncrypt page.  It takes
+advantage of the Local Variables auto evaluation feature in files.
+By evaluating mc-auto-encrypt when a file is opened you can use
+mailcrypt to encrypt a region of the file.
+
+To start encrypting any plain text file add this to the bottom of
+the file:
+
+Local Variables:
+eval: (mc-auto-encrypt)
+End:
+
+Note that you can tell Emacs to automatically evaluate code instead
+of asking you. To do so, just add this to your .emacs (Note that you 
+shouldn't do it for security reasons):
+
+(setq enable-local-eval t) ;; VERY VERY DANGEROUS !!!
+
+Take a look at the emacs info page on \"File Variables\" for details
+on how to specify file local variables and what types of comments
+you can place them in.
+
+The mc-auto-encrypt function then gets evaluated when the file is
+opened.  It sets up a before-save-hook and a buffer local
+after-save-hook to handle the (d)encryption.
+
+Known problems:
+
+When you previously edited a file and adding the Local Variables 
+without encrypting the file, this results in an error when opening
+it with Emacs. The trick would be to check if the file has been
+encrypted before trying to do so.")

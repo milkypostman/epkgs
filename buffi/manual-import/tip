@@ -1,0 +1,38 @@
+(:summary    "BUildFile FInder, a smart compile wrapper to build multiple [java] projects"
+ :created    "19990510"
+ :updated    "2001"
+ :license    "GPL-2"
+ :authors    (("Raphael Pierquin" . "raphael.pierquin@agisphere.com")
+	      ("Court Demas" . "court@acm.org"))
+ :maintainer ("Raphael Pierquin" . "raphael.pierquin@agisphere.com")
+ :provided   (buffi)
+ :required   ((("emacs" compile)))
+ :commentary "\
+buffi allows you to easily work on multiple projects with different
+buildfiles at the same time.  (Note : I call a 'buildfile' any file
+that drive a compilation sequence, such as Makefiles, or ant's
+build.xml files)  It's especially useful for Java projects where
+you're usually working with source code in subdirectories with the
+buildfiles somewhere up the directory tree.  The idea is that you
+may have a dozen source files (including buildfiles) open from
+different projects at the same time.  If I'm editing a file from
+Project A and execute 'buffi-build' (bound to C-c c) then I
+probably want the buildfile from that project to be executed.  The
+buildfile is most likely either in the current directory or one of
+its parents, and the code below will perform that search and
+execute the \"make\" (or \"ant\") command in the appropriate directory.
+The other case is when you execute 'buffi-build' and are NOT on a
+regular source file (maybe you're in some random documentation
+buffer or something).  In this case it will do the best it can and
+execute the make on the first buildfile buffer it can find.
+
+Here's what is does :
+buffi-build():
+ if current buffer is buildfile, build upon it
+ if not,
+ if current directory has a buildfile, build upon it
+   if not recurse to parent
+ if none of the parents has a buildfile,
+    find a buildfile buffer and build upon it
+ otherwise,
+    report an error.")

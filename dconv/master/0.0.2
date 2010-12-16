@@ -1,0 +1,27 @@
+(:summary    "Convert date strings"
+ :created    "20081202"
+ :updated    "20090319"
+ :license    "GPL-3"
+ :authors    (("Jonas Bernoulli" . "jonas@bernoul.li"))
+ :maintainer ("Jonas Bernoulli" . "jonas@bernoul.li")
+ :provided   (dconv)
+ :keywords   ("dates")
+ :homepage   "https://github.com/tarsius/dconv"
+ :commentary "\
+Convert date strings to \"YYYYMMDD\" format.
+
+Note: The functions defined here commonly require a string as argument.
+      But they also accept nil instead of a string in which case they
+      simply return nil.  Convinient since this relieves callers from
+      the need to verify the argument first which would otherwise be
+      needed a lot in library `elx.el' for which this was written.
+Note: Some libraries that might provide similar functionality:
+      `date-calc.el', `strptime.el'.
+Note: You shouldn't use this library yet - it has to be polished first.
+
+TODO: Support more output formats.
+TODO: Support more input formats, like:
+      February 4, 2007
+      14-Sep-1993
+      22-11-2005 18:00 UTC
+      different languages")

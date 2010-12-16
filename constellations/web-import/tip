@@ -1,0 +1,25 @@
+(:summary    "Constellation tools"
+ :created    "2005"
+ :updated    "2005"
+ :license    "GPL-2"
+ :provided   (constellations)
+ :homepage   "http://www.davep.org/emacs/"
+ :commentary "\
+constellations.el provides a constellation abbreviation lookup tool. I
+can never remember the abbreviations for most constellations so, when I'm
+writing my observing logs (http://www.davep.org/astronomy/logs/) I find
+this little tool handy -- saves me from having to remember.
+
+The latest constellations.el is always available from:
+
+  <URL:http://www.davep.org/emacs/#constellations.el>
+
+INSTALLATION:
+
+o Drop constellations.el somwehere into your `load-path'. Try your
+  site-lisp directory for example (you might also want to byte-compile the
+  file).
+
+o Add the following autoload statement to your ~/.emacs file:
+
+  (autoload 'constellation-insert-abbr \"constellations\" \"Insert constellation abbreviation from name.\" t)")

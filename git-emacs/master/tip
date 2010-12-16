@@ -1,0 +1,54 @@
+(:created    "2007"
+ :updated    "2008"
+ :license    "GPL"
+ :authors    ((nil . "tsgatesv@gmail.com"))
+ :maintainer (nil . "tsgatesv@gmail.com")
+ :provided   (git-blame git-emacs git-emacs-autoloads git-global-keys git-log git-modeline git-status)
+ :required   ((("emacs" cl easymenu ediff ewoc grep ido log-view time-stamp vc vc-git))
+	      (("emacs" hl-line)))
+ :keywords   ("git" "version" "control" "release" "management")
+ :commentary "\
+Some related packages were used directly or as inspiration:
+  - psvn.el (Stefan Reichoer)
+  - vc-git.el (Alexandre Julliard)
+  - git.el (Alexandre Julliard)
+  - ido.el (Kim F. Storm)
+  - ...
+
+Installation
+
+First, make sure that vc-git.el is in your load path. Emacs 23 ships it by
+default, for older versions you can get it from git distributions prior
+to 1.6.x.
+
+1) Load at startup (simplest)
+
+(add-to-list 'load-path \"~/.emacs.d/git-emacs\")  ; or your installation path
+(require 'git-emacs)
+
+2) Autoload (slimmer statup footprint, will activate when visiting a git
+  file or running some top-level functions)
+
+(add-to-list 'load-path \"~/.emacs.d/git-emacs\") ; or your installation path
+(fmakunbound 'git-status)   ; Possibly remove Debian's autoloaded version
+(require 'git-emacs-autoloads)
+
+
+TODO : check git environment
+TODO : status -> index
+TODO : pull/patch
+TODO : fetching
+TODO : regular exp selecting
+TODO : enhance config! & tag!
+TODO : save -> status-view update
+TODO : git-log -> C-u command :=> cmd
+TODO : status-mode function -> add status prefix
+TODO : git set config
+TODO : () -> fording/unfording for detail
+TODO : show ignored files
+TODO : locally flyspell
+
+DONE : turn off ido-mode globally
+DONE : git-add
+DONE : remote branch list
+DONE : separate branch-mode & status-view-mode to other files")

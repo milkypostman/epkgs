@@ -1,0 +1,7 @@
+(:summary    "Execute lisp code ... later"
+ :created    "2004"
+ :updated    "2004"
+ :license    "GPL-2"
+ :provided   (later-do)
+ :homepage   "http://www.emacswiki.org/LaterDo"
+ :wikipage   "http://www.emacswiki.org/LaterDo")

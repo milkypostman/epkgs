@@ -1,0 +1,23 @@
+(:summary    "Major mode for Asm86 assembly"
+ :created    "20070201"
+ :updated    "2007"
+ :license    "GPL-2"
+ :authors    (("Gabe Wenz" . "wenz@ugcs.caltech.edu"))
+ :maintainer ("Gabe Wenz" . "wenz@ugcs.caltech.edu")
+ :keywords   ("intel")
+ :homepage   "http://wolverine.caltech.edu/tools/emacs86/overview.htm"
+ :wikipage   "http://www.emacswiki.org/Asm86Mode"
+ :commentary "\
+Provides support for Asm86 assembly editing. The features and
+details are discussed in reasonable detail in the major mode
+documentation string.
+
+Note that some routines will run faster if the code is byte-compiled
+first. The most noticable function is (asm86-tab-region). 
+
+Additional features to add (wish-list):
+ * Better EQU formatting (spacing)
+ * Macro indenting/formatting
+ * Label finding - find a label within the buffer (electric?)
+ * Register report - determine which registers are used (altered)
+   by an assembly function.")

@@ -1,0 +1,7 @@
+(:created    "2001"
+ :updated    "20081120"
+ :license    "GPL-2"
+ :authors    (("Joe Casadonte" . "emacs@northbound-train.com"))
+ :maintainer ("Joe Casadonte" . "emacs@northbound-train.com")
+ :provided   (toggle-case)
+ :homepage   "http://www.northbound-train.com/")

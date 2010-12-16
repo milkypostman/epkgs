@@ -1,0 +1,50 @@
+(:summary    "Emulates Vim's most useful features"
+ :created    "20070823"
+ :updated    "2007"
+ :license    "GPL-2"
+ :authors    (("Brad Beveridge et al."))
+ :maintainer ("Vegard Øye" . "vegard_oye@hotmail.com")
+ :provided   (vimpulse)
+ :required   ((("emacs" paren viper)
+	       ("redo" redo)
+	       ("undo-tree" undo-tree)))
+ :keywords   ("emulations" "viper")
+ :homepage   "http://www.emacswiki.org/vimpulse"
+ :wikipage   "http://www.emacswiki.org/vimpulse"
+ :commentary "\
+Vimpulse emulates Vim's most popular features, like Visual mode
+and text objects. Vimpulse is a set of modifications to Viper, the
+standard library that emulates vi. Vimpulse is not a minor mode;
+as soon as it is loaded, Viper will start working in a more
+Vim-like way.
+
+Vimpulse is under active development. It works quite well with
+GNU Emacs 22.3 and 23.2, as well as XEmacs 21.4.22. Patches and
+feature requests are welcome (see also the file CONTRIBUTE in the
+repository).
+
+Installation:
+
+If you checked out from Git, run `make' to produce
+vimpulse-big.el. If on Windows, you can run compile.bat. Then:
+
+1. Copy vimpulse.el (or vimpulse-big.el) to somewhere in your
+   `load-path'.
+
+2. Add the following to your init file:
+
+       (require 'vimpulse)
+
+   If you use Windows, see
+   http://www.gnu.org/software/emacs/windows/faq3.html
+
+The rest is optional:
+
+3. For linear undo/redo and undo branches, install
+   undo-tree.el: http://www.emacswiki.org/emacs/UndoTree
+
+   Just place it in `load-path', and Vimpulse will load it
+   automatically. On XEmacs, you can use redo.el instead.
+
+Vimpulse automatically enables Viper. You can temporarily disable
+Viper (and Vimpulse) with the \"C-z\" key.")

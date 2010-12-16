@@ -1,0 +1,10 @@
+(:summary    "Lookup/insert mutt mail aliases"
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-2"
+ :provided   (mutt-alias)
+ :required   ((("emacs" cl)))
+ :homepage   "http://www.davep.org/emacs/"
+ :commentary "\
+mutt-alias allows you to lookup and insert the expansion of mutt mail
+aliases. This is only handy if you use mutt <URL:http://www.mutt.org/>.")

@@ -1,0 +1,21 @@
+(:summary    "Decode mime quoted-printable messages"
+ :created    "19960923"
+ :updated    "20030326"
+ :license    "GPL-2"
+ :authors    (("Noah Friedman" . "friedman@prep.ai.mit.edu"))
+ :maintainer (nil . "friedman@prep.ai.mit.edu")
+ :provided   (qpdecode)
+ :required   ((("emacs" sendmail)
+	       ("fmailutils" fmailutils)))
+ :keywords   ("mime" "decoding" "extensions" "vm" "rmail")
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
+ :commentary "\
+I recommend putting this in your .emacs, after preloading the
+appropriate packages or using eval-after-load:
+
+        (autoload 'qpdecode-decode-message \"qpdecode\" nil t)
+        (define-key vm-mode-map \"D\" 'qpdecode-decode-message)
+        (define-key rmail-mode-map \"D\" 'qpdecode-decode-message)
+
+TODO: Recompute or remove Content-MD5 header?
+The gnus article mode hacking doesn't seem to work quite right yet.")

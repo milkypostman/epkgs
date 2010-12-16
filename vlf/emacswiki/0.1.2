@@ -1,0 +1,31 @@
+(:summary    "View Large Files"
+ :created    "2006"
+ :updated    "2006"
+ :license    "GPL-2"
+ :authors    (("Mathias Dahl" . "mathias.rem0veth1s.dahl@gmail.com"))
+ :maintainer ("Mathias Dahl")
+ :provided   (vlf)
+ :keywords   ("files" "helpers" "utilities")
+ :homepage   "http://www.emacswiki.org/VLF"
+ :wikipage   "http://www.emacswiki.org/VLF"
+ :commentary "\
+After reading the Nth post on Gnu Emacs Help about Viewing Large
+Files in Emacs, it itched so much that I decided to make a try.  It
+helped quite a lot when Kevin Rodgers posted a snippet on how to
+use `insert-file-contents' to extract part of a file.  At first I
+made a try using head and tail and that worked too, but using
+internal Emacs commands is nicer.  Here is the code to extract data
+using head and tail in case someone wanna try that out in the
+future:
+
+(defun vlf-extract-part-of-file (file from to)
+  \"Returns bytes in FILE from FROM to TO.\"
+  (let ((size (vlf-file-size file)))
+    (if (or (> from size)
+            (> to size))
+        (error \"From or to is larger that the file size\"))
+    (with-temp-buffer
+      (shell-command
+       (format \"head --bytes %d %s | tail --bytes %d\"
+	       to file (+ (- to from) 1)) t)
+      (buffer-substring (point-min) (point-max)))))")

@@ -1,0 +1,147 @@
+(:summary    "Search and replace with alien regular expression"
+ :created    "20101128"
+ :updated    "2010"
+ :license    "GPL-3"
+ :provided   (alien-search)
+ :required   ((("emacs" cl re-builder))
+	      (("emacs" menu-bar)))
+ :keywords   ("convenience" "emulations" "matching" "tools" "unix" "wp")
+ :homepage   "https://github.com/k-talo/alien-search.el"
+ :commentary "\
+Overview
+========
+
+    *** CAUTION: THIS LIBRARY IS VERY EXPERIMENTAL!!! ***
+
+This library is an extension of `shell-command'.
+
+What this library does are:
+
+  1. Search for a pattern from text in current buffer with external
+     program(*) in manner of their regular expression.
+     
+        (*) Ruby (v1.9 or later is required) scripts are
+            predefined in this file.
+
+  2. Browse result of the search operation produced by external program
+     (...and apply result of the replacement operations if required)
+     through Emacs user interface like `occur', `isearch' and
+     `query-replace'.
+
+
+INSTALLING
+==========
+To install this library, save this file to a directory in your
+`load-path' (you can view the current `load-path' using \"C-h v
+load-path RET\" within Emacs), then add the following line to your
+.emacs startup file:
+
+   (require 'alien-search)
+
+
+USING
+=====
+
+ M-x alien-search/occur RET PATTERN RET
+
+   `occur' with regular expression in manner of external program.
+
+
+ M-x alien-search/query-replace RET PATTERN RET REPLACEMENT RET
+
+   `query-replace' with regular expression in manner of external
+   program.
+
+
+ M-x alien-search/isearch-forward RET PATTERN
+ M-x alien-search/isearch-backward RET PATTERN
+
+   `isearch' with regular expression in manner of external program.
+
+
+ M-x alien-search/isearch-forward RET RET PATTERN RET
+ M-x alien-search/isearch-backward RET RET PATTERN RET
+
+   Non-incremental search with regular expression in manner of
+   external program.
+
+
+ Note that notation of PATTERN and REPLACEMENT are different
+ for each external program.
+
+
+ If you want to escape meta characters in lisp string,
+ use function `alien-search/quote-meta'.
+
+
+USING WITH DEFAULT EXTERNAL PROGRAMS
+====================================
+Default external programs, that are defined this file, brings
+manner of Ruby to search/replace operations.
+
+These programs accepts regular expression of Ruby as PATTERN,
+and interpolates special variables $&, $`, $', $+ and $1..$9
+in REPLACEMENT as if it has been inside of double quotes
+in a block of String#gsub method.
+
+  Example:
+
+    The command
+
+      M-x alien-search/query-replace RET (\\d+)-(\\d+) RET #$1...#$2 RET
+
+    replaces text in buffer
+
+      123-456
+
+    with text
+
+      123...456
+  
+
+Key map Examples
+================
+(when (require 'alien-search nil t)
+  (define-key esc-map [(f4)]  'alien-search/occur)
+  ;; Override `query-replace'.
+  (define-key esc-map [?\\C-%] 'alien-search/query-replace)
+  ;; Override `isearch-forward-regexp'.
+  (define-key esc-map [?\\C-s] 'alien-search/isearch-forward)
+  ;; Override `isearch-backward-regexp'.
+  (define-key esc-map [?\\C-r] 'alien-search/isearch-backward))
+
+
+FOR HACKERS
+===========
+This library requires four external programs to execute
+`alien-search/occur', `alien-search/query-replace',
+`alien-search/isearch-*' and `alien-search/quote-meta'
+with regular expressions that are alien to emacs.
+
+If you want to write these external programs by your choice
+of language, see help documents of these variables:
+
+  `alien-search/replace/external-program'
+  `alien-search/occur/external-program'
+  `alien-search/isearch/external-program'
+  `alien-search/quote-meta/external-program'
+
+and set path to the programs to the variables when you wrote
+them.
+
+See also default external programs written in Ruby, defined as:
+
+  `alien-search/replace/default-shell-script'
+  `alien-search/occur/default-shell-script'
+  `alien-search/isearch/default-shell-script'
+  `alien-search/quote-meta/default-shell-script'
+
+
+WISH LIST
+=========
+- Better handling of exceptions from external program,
+  especially syntax error regarding to regular expression
+  in isearch session.
+- Better response?
+- Write tests.
+- validate-regexp by external program?")

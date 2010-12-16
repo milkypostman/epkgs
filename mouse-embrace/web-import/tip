@@ -1,0 +1,8 @@
+(:created    "2004"
+ :updated    "20040219"
+ :license    "GPL-2"
+ :authors    (("Stefan Reichoer"))
+ :maintainer ("Stefan Reichoer")
+ :provided   (mouse-embrace)
+ :required   ((("emacs" easy-mmode)))
+ :homepage   "http://www.xsteve.at/prg/emacs/")

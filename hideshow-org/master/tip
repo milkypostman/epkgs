@@ -1,0 +1,15 @@
+(:created    "2009"
+ :updated    "2009"
+ :license    "GPL-2"
+ :provided   (hideshow-org)
+ :required   ((("emacs" hideshow)))
+ :keywords   ("c" "java" "lisp" "tools" "editing" "comments" "blocks" "hide" "outlines" "org-mode" "files" "part" "gnu")
+ :homepage   "https://github.com/secelis/hideshow-org"
+ :commentary "\
+hideshow-org.el provides an org-mode like interface to the
+hideshow.el file.
+
+org-mode provides an elegant means of interacting with outlines
+that one can toggle with the TAB key and Shift TAB.
+hideshow-org.el is my attempt to bring the org-mode like hiding and
+showing to code.")

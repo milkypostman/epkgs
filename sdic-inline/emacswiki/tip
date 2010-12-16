@@ -1,0 +1,49 @@
+(:summary    "Program to view dictionary"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("khiker" . "khiker.mail+elisp@gmail.com"))
+ :maintainer ("khiker" . "khiker.mail+elisp@gmail.com")
+ :provided   (sdic-inline)
+ :required   ((("sdic" sdic)))
+ :keywords   ("dictionary")
+ :commentary "\
+The minor-mode for show the meaning of word under the
+point to minibuffer.
+
+Config:
+
+You have to have the `sdic' elisp program and dictionary
+files of sdic type.  Next, you place this file to
+`load-path' passing directory.  And, add following
+setting.
+
+(require 'sdic-inline)
+(sdic-inline-mode t)   ; enable sdic-inline.
+
+;; Setting dictionary path.
+(setq sdic-inline-eiwa-dictionary \"/home/khiker/lib/dict/eijirou.sdic\")
+(setq sdic-inline-waei-dictionary \"/home/khiker/lib/dict/waeijirou.sdic\")
+
+You can select enabling `sdic-inline' by following variables.
+
+* sdic-inline-enable-modes
+* sdic-inline-enable-faces
+* sdic-inline-enable-filename-regex
+* sdic-inline-enable-func
+
+If you want to do stemming (for example, \"enabled\" -> \"enable\"),
+set following variable.
+
+(setq sdic-inline-search-func 'sdic-inline-search-word-with-stem)
+
+This package can popup the detailed meaning of word under
+the point by C-cC-p. It's necessary to load `popup' library.
+;; http://github.com/m2ym/auto-complete
+
+(require 'popup)
+
+Todo:
+
+* Integrate sdic-inline dictionary setting and sdic dictionary setting.
+* Specify multiple dictionary files.")

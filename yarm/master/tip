@@ -1,0 +1,11 @@
+(:created    "2010"
+ :updated    "2010"
+ :license    "GPL-2"
+ :provided   (yarm)
+ :required   ((("anything" anything)
+	       ("emacs" cl easy-mmode)
+	       ("historyf" historyf)
+	       (nil inflections))
+	      (("anything" anything-show-completion)
+	       ("emacs" imenu)))
+ :homepage   "https://github.com/k1LoW/emacs-yarm")

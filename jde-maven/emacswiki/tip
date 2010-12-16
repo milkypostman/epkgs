@@ -1,0 +1,7 @@
+(:summary    "Use Apache Maven to build your JDE projects"
+ :created    "20040430"
+ :updated    "20051111"
+ :license    "GPL-2"
+ :authors    (("Raffael Herzog" . "herzog@raffael.ch"))
+ :maintainer ("Raffael Herzog" . "herzog@raffael.ch")
+ :provided   (jde-maven))

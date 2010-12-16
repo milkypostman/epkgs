@@ -1,0 +1,15 @@
+(:summary    "Outlook org"
+ :created    "20100510"
+ :updated    "20100514"
+ :license    "GPL-3"
+ :authors    (("Matthew L. Fidler"))
+ :maintainer ("Matthew L. Fidler")
+ :provided   (outlook-org)
+ :required   ((("emacs" org)))
+ :homepage   "http://www.emacswiki.org/OrgOutlook"
+ :wikipage   "http://www.emacswiki.org/OrgOutlook"
+ :commentary "\
+Adapted from http://superuser.com/questions/71786/can-i-create-a-link-to-a-specific-email-message-in-outlook
+Allows selecting then inserting
+
+org-outlook-task creates task(s) from the selected item(s).")

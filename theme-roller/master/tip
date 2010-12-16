@@ -1,0 +1,16 @@
+(:summary    "A collection of activly maintained emacs themes"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Yves Senn" . "yves.senn@gmail.com"))
+ :maintainer ("Yves Senn" . "yves.senn@gmail.com")
+ :provided   (theme-roller theme-roller-macro)
+ :required   ((("color-theme" color-theme)))
+ :keywords   ("color-theme" "theme")
+ :homepage   "https://github.com/senny/theme-roller.el"
+ :commentary "\
+(color-theme-lazy)
+(color-theme-ruby-blue)
+(color-theme-twilight)
+(color-theme-github)
+(color-theme-railscasts)")

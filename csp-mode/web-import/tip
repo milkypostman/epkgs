@@ -1,0 +1,15 @@
+(:summary    "Major mode for editing CSP specification in Emacs"
+ :created    "2001"
+ :updated    "2001"
+ :license    "GPL-2"
+ :maintainer ("Raymond Scholz" . "rscholz@zonix.de")
+ :provided   (csp-mode)
+ :keywords   ("csp" "specification" "formal" "methods")
+ :homepage   "http://www.zonix.de/projects/emacs/lisp"
+ :commentary "\
+The latest version can always be found at
+
+   <URL:http://www.zonix.de/div/el/csp-mode/>
+
+
+See INSTALL for installation instructions.")

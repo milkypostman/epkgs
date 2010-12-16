@@ -1,0 +1,19 @@
+(:summary    "Integration of Emacs and GNU screen"
+ :created    "2003"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("Michael Weber" . "michaelw@foldr.org"))
+ :maintainer ("Michael Weber" . "michaelw@foldr.org")
+ :provided   (mw-screen-server)
+ :keywords   ("processes" "unix")
+ :homepage   "http://www.foldr.org/~michaelw/emacs/"
+ :commentary "\
+This provides a mechanism by which you can run emacs in server mode
+in a screen session.  When emacs is run, it will automatically
+switch to the screen window with emacs server running.  When
+finished in the buffer (C-x #), this will automatically switch the
+user back to the screen window they originated from.
+
+This code does roughly the same as screenserver.el, but does not
+rely on temporary files for Emacs<->screen communication.  On the
+downside, it therefore only works with gnuserv.")

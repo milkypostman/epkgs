@@ -1,0 +1,11 @@
+(:summary    "Yet Another `describe-bindings' with `anything'"
+ :created    "2008"
+ :updated    "20100205"
+ :license    "GPL-3"
+ :authors    (("Taiki SUGAWARA" . "buzz.taiki@gmail.com"))
+ :maintainer ("Taiki SUGAWARA" . "buzz.taiki@gmail.com")
+ :provided   (descbinds-anything)
+ :required   ((("anything" anything)))
+ :keywords   ("anything" "help")
+ :commentary "\
+This package is a replacement of `describe-bindings'.")

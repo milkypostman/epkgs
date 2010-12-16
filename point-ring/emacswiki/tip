@@ -1,0 +1,4 @@
+(:updated    "20090410"
+ :provided   (point-ring)
+ :homepage   "http://www.emacswiki.org/PointRing"
+ :wikipage   "http://www.emacswiki.org/PointRing")

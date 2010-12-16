@@ -1,0 +1,38 @@
+(:summary    "Routines to save & restore complex elisp objects"
+ :created    "1999"
+ :updated    "1999"
+ :license    "GPL-2"
+ :authors    (("Tom Breton" . "tob@world.std.com"))
+ :maintainer ("Tom Breton" . "tob@world.std.com")
+ :provided   (tehom-3)
+ :required   ((("emacs" cust-print)
+	       (nil cl-read)))
+ :keywords   ("extensions")
+ :homepage   "www.panix.com/~tehom/"
+ :commentary "\
+This package is intended to easily save and restore the state of
+any moderately complex elisp application.  To use it, represent all
+the persisting state of your app as one elisp object, and call
+tehom-save-object and tehom-restore-object when ending / restarting
+it.  That's all.
+
+This package requires cust-print and cl-read.  For best results,
+they should be byte-compiled.  
+
+It does not require either cust-print or cl-read to be set up, in
+the sense that you need to add any code to support them.  They need
+only be accessible.  Then you simply call tehom-save-object and
+tehom-restore-object without further attention to the mechanics.
+
+This package can read and write circular references (thanks to
+cl-read and cust-print) within a single complex object, but using
+it more than once (with separate savefiles) to write/read some
+interlinked objects will not (and couldn't even in theory) resolve
+inter-references between them.  So if you have to save and restore
+interlinked objects, combine them into a single object.
+
+A single save file can only contain one elisp object as one sexp.
+If there is more than one sexp in a save file, only the first will
+be read.
+
+The entry points are tehom-save-object and tehom-restore-object")

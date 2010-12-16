@@ -1,0 +1,23 @@
+(:created    "2003"
+ :updated    "20030727"
+ :license    "GPL-2"
+ :authors    (("Holger Schauer" . "holger.schauer@gmx.de"))
+ :maintainer ("Holger Schauer" . "holger.schauer@gmx.de")
+ :provided   (translate)
+ :required   ((("emacs" cl)))
+ :keywords   ("translation" "words")
+ :commentary "\
+This little utility automizes the access to a _WORDLIST_ which contains
+for example an english word and its german translation. The approach
+is very very simple: grep-ing over the specified dictionary and present
+the results. The specified default dictionary could be found on
+ftp.uni-ulm.de/pub/misc/dict/english_german.tar.gz.
+As of 2003, the wordlist is often already part of your friendly
+Linux distribution. For instance, it is shipped with Debian
+in the package trans-de-en.
+
+Acknowledgments:
+Inspired by a small keyboard macro from 
+Jochem Huhmann <joh@unidui.uni-duisburg.de> and a small routine
+by Peter Baumgartner <peter@mailhost.uni-koblenz.de>.
+Three FSF-related bugs fixed thanks to Roland Rosenfeld and Juergen Holm.")

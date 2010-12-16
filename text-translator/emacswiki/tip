@@ -1,0 +1,15 @@
+(:summary    "Text Translator"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-2"
+ :authors    (("khiker" . "khiker.mail+elisp@gmail.com")
+	      ("plus" . "mlb33828@nifty.com"))
+ :maintainer ("khiker" . "khiker.mail+elisp@gmail.com")
+ :provided   (text-translator text-translator-load text-translator-vars)
+ :homepage   "http://www.emacswiki.org/TextTranslator"
+ :wikipage   "http://www.emacswiki.org/TextTranslator"
+ :commentary "\
+Translates character strings on Emacs.
+This package use the text translation service that exists on the internet.
+
+Read README.en (English) or README.ja (Japanese).")

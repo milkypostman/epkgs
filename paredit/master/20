@@ -1,0 +1,5 @@
+(:license    "public-domain"
+ :provided   (paredit)
+ :required   ((("emacs" newcomment)))
+ :homepage   "http://mumble.net/~campbell/emacs/paredit/paredit.html"
+ :wikipage   "http://www.emacswiki.org/ParEdit")

@@ -1,0 +1,31 @@
+(:license    "GPL-2"
+ :authors    (("Stéphane Rollandin" . "hepta@zogotounga.net"))
+ :maintainer ("Stéphane Rollandin" . "hepta@zogotounga.net")
+ :provided   (calc-stef csound-clj csound-csd csound-doc csound-eel csound-fltk csound-ft csound-fx csound-kbs csound-key csound-lsp csound-mid csound-mx csound-opcode-typology csound-opcodes csound-orc csound-sco csound-ses csound-spdb csound-tests csound-x graphs i k)
+ :required   ((("clojure-mode" clojure-mode)
+	       ("emacs" calc calc-keypd cl comint cus-edit custom easymenu font-lock speedbar tabify thingatpt widget)
+	       ("slime" slime)
+	       ("swank-clojure" swank-clojure-autoload)
+	       (nil embedded-elisp-library query-sheet))
+	      (("emacs" org ses)
+	       ("mmm-mode" mmm-auto)
+	       (nil keykit-interaction keykit-mode)))
+ :keywords   ("csound")
+ :homepage   "http://www.zogotounga.net/comp/stef-elisp-2.19.zip"
+ :commentary "\
+-------------
+
+   full documentation here:
+   http://www.zogotounga.net/comp/csoundx.html
+
+Installation:
+---------------                   
+
+install Calc if necessary.
+
+add the following to your .emacs:
+
+  (setq load-path (cons \"~/site-lisp/csound-x\" load-path))
+  (require 'csound-x)
+
+last modified February 19, 2009")

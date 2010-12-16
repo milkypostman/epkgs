@@ -1,0 +1,24 @@
+(:summary    "Translate i18n keys inside cucumber features"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Yves Senn" . "yves.senn@gmail.com"))
+ :maintainer ("Yves Senn" . "yves.senn@gmail.com")
+ :provided   (cucumber-i18n)
+ :keywords   ("ruby" "cucumber" "rails")
+ :homepage   "http://www.emacswiki.org/emacs/CucumberI18nEl"
+ :wikipage   "http://www.emacswiki.org/CucumberI18nEl"
+ :commentary "\
+cucumber-i18n.el makes working with i18n keys inside your cucumber
+scenarios less painless. It allows you to add overlays with the
+matching translation for all the keys in the current buffer.
+
+M-x cucumber-i18n-translate => adds the overlays
+M-x cucumber-i18n-remove-translations => removes the overlays
+
+you can also toggle between the overlay mode and the keys using:
+M-x cucumber-i18n-toggle
+
+currently cucumber-i18n relies on textmate.el to get the project
+root of your application. If you don't use textmate.el just
+overwrite the function 'cucumber-i18n--project-root' to fit your needs.")

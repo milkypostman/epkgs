@@ -1,0 +1,18 @@
+(:summary    "Interactively insert item from kill-ring"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("khiker" . "khiker.mail+elisp@gmail.com"))
+ :maintainer ("khiker" . "khiker.mail+elisp@gmail.com")
+ :provided   (popup-kill-ring)
+ :required   ((("auto-complete" popup)
+	       ("emacs" cl)
+	       ("pos-tip" pos-tip)))
+ :keywords   ("popup" "kill-ring" "pos-tip")
+ :commentary "\
+Manage your `kill-ring' (select and paste).
+
+Requirement:
+
+* popup.el   http://github.com/m2ym/auto-complete
+* pos-tip.el http://www.emacswiki.org/emacs/PosTip")

@@ -1,0 +1,23 @@
+(:summary    "Library for accessing Speech Dispatcher"
+ :created    "2003"
+ :updated    "2006"
+ :license    "GPL-2"
+ :authors    (("Milan Zamazal" . "pdm@brailcom.org"))
+ :maintainer ("Milan Zamazal" . "pdm@brailcom.org")
+ :provided   (braille brltty mmanager speechd speechd-braille speechd-brltty speechd-bug speechd-common speechd-compile speechd-out speechd-speak speechd-ssip speechd-version)
+ :required   ((("emacs" cl eieio reporter)))
+ :homepage   "http://www.freebsoft.org/speechd-el"
+ :commentary "\
+This library allows you to communicate with Speech Dispatcher.
+Usually, the communication goes like this:
+
+  (speechd-open)
+  ...
+  (speechd-say-text \"Hello, world!\")
+  ...
+  (speechd-close)
+
+Functions and variables starting with the prefix `speechd--' are considered
+internal and you shouldn't use them outside this file.
+
+See docstrings and the Texinfo manual for full details.")

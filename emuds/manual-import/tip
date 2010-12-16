@@ -1,0 +1,3 @@
+(:provided   (/addworld /emuds)
+ :required   ((("emacs" cl)))
+ :wikipage   "http://www.emacswiki.org/eMUDs")

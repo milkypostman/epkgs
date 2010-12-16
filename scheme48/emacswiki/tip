@@ -1,0 +1,28 @@
+(:summary    "A major mode for Scheme48 development"
+ :created    "1992"
+ :updated    "1992"
+ :authors    (("Jorgen Schaefer" . "forcer@forcix.cx"))
+ :maintainer ("Jorgen Schaefer" . "forcer@forcix.cx")
+ :provided   (scheme48)
+ :required   ((("emacs" cmuscheme scheme)))
+ :homepage   "http://www.emacswiki.org/Scheme48Mode"
+ :wikipage   "http://www.emacswiki.org/Scheme48Mode"
+ :commentary "\
+This file provides `scheme48-mode', a major mode for improved
+interaction with Scheme48. It's the same as the canonical
+`scheme-mode', but provides some commands which tell Scheme48 from
+which a specific definition came from. This allows Scheme48 to put
+the definition in the correct package by itself.
+
+This is based om the cmuscheme48.el which comes with Scheme48.
+
+You can set a buffer-local variable named `scheme48-package' to
+send definitions to that package. This can be done by file
+variables, so the following works:
+
+  -*- mode: scheme48; scheme48-package: mypackage -*-
+
+To use the special packages CONFIG, USER and EXEC, use the package
+name in parens, like this:
+
+  -*- mode: scheme48; scheme48-package: (exec) -*-")

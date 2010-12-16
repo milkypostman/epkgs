@@ -1,0 +1,23 @@
+(:summary    "Major mode for editing Haml files"
+ :created    "20070308"
+ :updated    "2008"
+ :authors    (("Nathan Weizenbaum"))
+ :maintainer ("Nathan Weizenbaum")
+ :provided   (haml-mode)
+ :required   ((("emacs" cl ruby-mode))
+	      (("emacs" css-mode js)
+	       ("javascript-mode" javascript-mode)
+	       ("markdown-mode" markdown-mode)
+	       ("textile-mode" textile-mode)))
+ :keywords   ("markup" "language" "html")
+ :homepage   "https://github.com/nex3/haml-mode"
+ :wikipage   "http://www.emacswiki.org/HamlMode"
+ :commentary "\
+Because Haml's indentation schema is similar
+to that of YAML and Python, many indentation-related
+functions are similar to those in yaml-mode and python-mode.
+
+To install, save this on your load path and add the following to
+your .emacs file:
+
+(require 'haml-mode)")

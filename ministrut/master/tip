@@ -1,0 +1,53 @@
+(:summary    "Dedicated minibuffer frame as X11 strut"
+ :created    "20100304"
+ :updated    "20100304"
+ :license    "GPL-3"
+ :authors    (("Jonas Bernoulli" . "jonas@bernoul.li"))
+ :maintainer ("Jonas Bernoulli" . "jonas@bernoul.li")
+ :provided   (ministrut)
+ :keywords   ("minibuffer")
+ :homepage   "http://github.com/tarsius/ministrut"
+ :commentary "\
+Emacs supports using a `default-minibuffer-frame' whose minibuffer
+window is used by all frames that do not have such a window.  This
+frame does not need to contain any other windows but when created
+as described in the elisp info pages behaves like any other X11
+window.
+
+This package creates a dedicated minibuffer frame and also removes
+it's X11 window decoration and sets it up as an X11 strut.
+
+This is an alpha release and not all desired features have been
+implemented yet.  If you would like to try it anyway add something
+like this to your init file:
+
+(add-to-list 'load-path \"/path/to/ministrut/\")
+(require 'ministrut)
+(setq mstrut-minibuffer-frame-alist
+      '((left         .  853)
+        (top          . 1600)
+        (width        .  190)
+        (height       .    1)
+        (strut-bottom .   18)
+        (left-fringe  .    0)
+        (right-fringe .    0)))
+(ministrut-mode 1)
+
+I use this with a screen resolution of 2560x1600 and the window
+manager wmii.  Also note that I do not use the whole wide of the
+screen to display the minibuffer.
+
+Your window manager might have to be configure too.  For wmii add
+this to the tagrules:
+
+/Emacs Minibuffer/ -> ~
+
+Previously I have created `xmonad.el' which had more features but was
+tailored towards xmonad only.  Since I have switched back to wmii and
+would like to try other window managers as well I have decided to write
+this library instead, which theoretically should be usable with any
+window manager.
+
+However at least xmonad does focus the minibuffer frame when reading
+input from it which actually is not correct.  Similar problems are to
+be expected with other window managers as well.")

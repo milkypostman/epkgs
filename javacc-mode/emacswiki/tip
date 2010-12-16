@@ -1,0 +1,3 @@
+(:provided   (javacc-mode)
+ :homepage   "http://www.emacswiki.org/JavaCCMode"
+ :wikipage   "http://www.emacswiki.org/JavaCCMode")

@@ -1,0 +1,30 @@
+(:summary    "Hierarchical index menus, using imenu.el"
+ :created    "1996"
+ :updated    "20010606"
+ :license    "GPL-2"
+ :authors    (("Y.Dirson" . "ydirson@altern.org"))
+ :maintainer ("Y.Dirson" . "ydirson@altern.org")
+ :provided   (hier-imenu)
+ :required   ((("emacs" imenu)))
+ :keywords   ("tools" "hypermedia" "tex")
+ :homepage   "http://ydirson.free.fr/en/software/hier-imenu.html"
+ :commentary "\
+Creates an index-menu (using `imenu'), that reflects the
+hierarchical structure of your documents, either with indentation
+only, or with ASCII drawing.
+
+Sample configurations are given for latex-mode (both standard FSF's
+one and the one from AUC), html-mode.  Support for FWEB-mode has
+moved to my `web-mode.el'
+
+Bug reports, comments, and suggestions are welcome!
+
+WARNING: included support for LaTeX-mode will not work in Emacs 20.6
+or older, or in Xemacs using packages dated 2000.01.24 of older, unless
+you upgrade `imenu.el' !!  Please visit the homepage for updated versions.
+
+WARNING: variables `hier-imenu-do-*' have been obsoleted by
+`hier-imenu-style'.
+
+WARNING: variable `hier-imenu-max-item-length' has been obsoleted
+by `imenu-max-item-length', and moved to `imenu.el'.")

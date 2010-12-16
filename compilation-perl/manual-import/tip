@@ -1,0 +1,27 @@
+(:summary    "Extra error regexps for Perl"
+ :created    "2007"
+ :updated    "2008"
+ :license    "GPL-3"
+ :authors    (("Kevin Ryde" . "user42@zip.com.au"))
+ :maintainer ("Kevin Ryde" . "user42@zip.com.au")
+ :provided   (compilation-perl)
+ :required   ((("emacs" compile)))
+ :keywords   ("processes")
+ :commentary "\
+This is a spot of code adding `compilation-error-regexp-alist' patterns
+for Perl
+
+    * die messages with \"during global destruction\" suffix
+    * Pod::Checker module, including its podchecker program
+    * Pod::Simple module
+    * Test module
+    * Test::Harness module
+    * Test::Builder module and its users like Test::More
+    * xsubpp program
+
+And toning down Emacs 22 \"gnu\" pattern for the benefit of
+
+    * Glib::Log module, shared by all of Gtk2-Perl
+
+Emacs already has patterns for perl's normal compile and run errors, but
+the above are all a bit different.")

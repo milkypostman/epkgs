@@ -1,0 +1,229 @@
+(:summary    "Walk through directories and perform actions on files"
+ :created    "2008"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Thierry Volpiatto - thierry dot volpiatto at gmail dot com"))
+ :maintainer ("Thierry Volpiatto")
+ :provided   (anything-traverse iterator traverselisp)
+ :required   ((("emacs" cl derived)))
+ :keywords   ("data" "regexp")
+ :homepage   "http://mercurial.intuxication.org/hg/traverselisp"
+ :commentary "\
+==========
+
+Developped and tested on Emacs23+ (CVS)
+
+Compatibility: Emacs23.*
+=============
+
+Dependencies:
+============
+
+iterator.el (part of traverselisp package).
+
+Install:
+=======
+
+Put this file in your load-path And Byte-compile it.
+(If you don't do that you will have error as traverse
+use code that work only at compile time.)
+
+You will need also iterator.el to be in your load path and compiled.
+
+Add to your .emacs:
+
+(require 'traverselisp)
+
+Set up your prefered keys for dired and globals as usual.
+
+Suggested config:
+================
+
+(require 'traverselisp)
+(setq traverse-use-avfs t)
+(global-set-key (kbd \"<f5> f\") 'traverse-deep-rfind)
+(global-set-key (kbd \"C-c o\") 'traverse-incremental-occur)
+(define-key dired-mode-map (kbd \"A\") 'traverse-dired-search-regexp-in-anything-at-point)
+(define-key dired-mode-map (kbd \"C-c C-z\") 'traverse-dired-browse-archive)
+(define-key dired-mode-map (kbd \"C-c t\") 'traverse-dired-find-in-all-files)
+(mapc #'(lambda (x)
+          (add-to-list 'traverse-ignore-files x))
+      '(\".ledger-cache\"  \"ANYTHING-TAG-FILE\"))
+(add-to-list 'traverse-ignore-dirs \"emacs_backup\")
+(global-set-key (kbd \"C-c C-f\") 'anything-traverse)
+(global-set-key (kbd \"C-M-|\") 'traverse-toggle-split-window-h-v)
+
+
+ Traverse auto documentation
+ ---------------------------
+
+ [UPDATE ALL EVAL] (traverse-auto-update-documentation)
+
+ * Commands defined here:
+[EVAL] (traverse-auto-document-lisp-buffer :type 'command)
+`traverselisp-version'
+`traverse-quit'
+`traverse-find-in-file'
+`traverse-deep-rfind'
+`traverse-search-in-dired-dir-at-point'
+`traverse-search-in-dired-file-at-point'
+`traverse-dired-browse-archive'
+`traverse-dired-search-in-archive'
+`traverse-dired-find-in-marked-files'
+`traverse-dired-find-in-all-files'
+`traverse-dired-search-regexp-in-anything-at-point'
+`traverse-go-forward'
+`traverse-go-backward'
+`traverse-scroll-down-other-window'
+`traverse-scroll-up-other-window'
+`traverse-toggle-split-window-h-v'
+`traverse-count-files-in-dir'
+`traverse-auto-update-documentation'
+`traverse-auto-documentation-insert-header'
+`traverse-incremental-next-line'
+`traverse-incremental-precedent-line'
+`traverse-incremental-jump-and-quit'
+`traverse-incremental-scroll-down'
+`traverse-incremental-scroll-up'
+`traverse-incremental-occur'
+
+ * Non--interactive functions defined here:
+[EVAL] (traverse-auto-document-lisp-buffer :type 'function :prefix \"traverse\")
+`traverse-list-directory'
+`traverse-walk-directory'
+`traverse-comp-str-to-list'
+`traverse-check-only-lists'
+`traverse-find-readlines'
+`traverse-file-process'
+`traverse-file-process-ext'
+`traverse-buffer-process-ext'
+`traverse-occur-color-current-line'
+`traverse-button-func'
+`traverse-prepare-buffer'
+`traverse-read-regexp'
+`traverse-dired-get-marked-files'
+`traverse-go-forward-or-backward'
+`traverse-window-split-h-or-t'
+`traverse-list-directories-in-tree'
+`traverse-list-files-in-tree'
+`traverse-auto-document-default-prefix'
+`traverse-macro-p'
+`traverse-get-first-line-documentation'
+`traverse-goto-line'
+`traverse-incremental-forward-line'
+`traverse-incremental-jump'
+`traverse-incremental-scroll'
+`traverse-read-char-or-event'
+`traverse-incremental-read-search-input'
+`traverse-incremental-filter-alist-by-regexp'
+`traverse-incremental-start-timer'
+`traverse-incremental-cancel-search'
+`traverse-incremental-occur-color-current-line'
+
+ * Macros defined here:
+[EVAL] (traverse-auto-document-lisp-buffer :type 'macro :prefix \"traverse\")
+`traverse-collect-files-in-tree-if'
+`traverse-collect-files-in-tree-if-not'
+`traverse-auto-document-lisp-buffer'
+
+ * Internal variables defined here:
+[EVAL] (traverse-auto-document-lisp-buffer :type 'internal-variable :prefix \"traverse\")
+`traverse-mode-map'
+`traverse-match-overlay-face'
+`traverse-show-regexp-delay'
+`traverse-keep-indent'
+`traverse-count-occurences'
+`traverse-occur-overlay'
+`traverse-incremental-mode-map'
+`traverse-incremental-search-pattern'
+`traverse-incremental-search-timer'
+`traverse-incremental-quit-flag'
+`traverse-incremental-current-buffer'
+`traverse-incremental-occur-overlay'
+`traverse-incremental-exit-and-quit-p'
+`traverse-incremental-history'
+`traverse-incremental-face'
+
+ * Faces defined here:
+[EVAL] (traverse-auto-document-lisp-buffer :type 'faces :prefix \"traverse\")
+`traverse-match-face'
+`traverse-regex-face'
+`traverse-path-face'
+`traverse-overlay-face'
+`traverse-incremental-overlay-face'
+`traverse-incremental-title-face'
+`traverse-incremental-regexp-face'
+
+ * User variables defined here:
+[EVAL] (traverse-auto-document-lisp-buffer :type 'user-variable :prefix \"^traverse\")
+`traverse-ignore-files'
+`traverse-ignore-dirs'
+`traverse-length-line'
+`traverse-file-function'
+`traverse-use-avfs'
+`traverse-avfs-default-directory'
+`traverse-incremental-search-delay'
+`traverse-incremental-search-prompt'
+`traverse-incremental-docstring'
+`traverse-incremental-length-line'
+
+ *** END auto-documentation
+
+
+Usage:
+=====
+
+M-x `traverse-deep-rfind'
+That is the interactive recursive function of traverse.
+It will search for a regexp in all files of a directory
+tree and his subdirectories.
+
+When searching is done and you are in traverse buffer
+some interactive actions are provided for navigate
+Use \"C-h m\" for more info while in traverse-buffer.
+
+You can also use traverse from DIRED:
+M-x `traverse-dired-search-regexp-in-anything-at-point'
+
+This function work on directory, files, (1)compressed files (AVFS)
+and marked files:
+
+If you have marked files search will be performed only on these files.
+(No recursion will be performed on marked directories, so don't mark directories.)
+
+If no files are marked, traverse will search in element at point
+with appropriate function.
+
+However, you can use specialized functions, check this file to see all
+the interactives functions.
+
+M-x `traverse-dired-find-in-all-files'
+Search in all regular files in the current dired buffer (no recursion).
+
+M-x `traverse-incremental-occur'
+occur current buffer incrementally.(C-u to have thing-at-point as default prompt).
+
+M-x `traverse-dired-browse-archive'
+This function use (1)AVFS to browse archive tar.gz, bz2 etc..
+
+(1)NOTE: You have to install AVFS and enable fuse in your kernel if
+you want to browse and search in archives.
+Please see the doc of your DISTRIB and the doc of AVFS here:
+http://sourceforge.net/projects/avf
+
+If you want to use AVFS in traverse, set `traverse-use-avfs' to non--nil.
+
+Traverse provide also diverses functions to use in your programs.
+(especially for recursion like `traverse-walk-directory'.)
+
+You will find also some functions to auto document list of functions,
+macros, commands, etc..., see headers above.
+
+Download:
+========
+
+You can get the development version of the file with hg:
+
+hg clone http://mercurial.intuxication.org/hg/traverselisp
+For the current development branch:(Always better!)
+hg update -C 1.1.0")

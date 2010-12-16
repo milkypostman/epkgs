@@ -1,0 +1,11 @@
+(:created    "2006"
+ :updated    "20061015"
+ :license    "GPL-2"
+ :authors    ((nil . "wenbinye@163.com"))
+ :maintainer (nil . "wenbinye@163.com")
+ :provided   (list-processes+)
+ :required   ((("emacs" cl)))
+ :commentary "\
+Put this file into your load-path and the following into your ~/.emacs:
+  (autoload \"list-processes+\" 'list-processes+
+         \"A enhance list processes command\" t)")

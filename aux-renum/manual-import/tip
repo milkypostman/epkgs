@@ -1,0 +1,49 @@
+(:summary    "Renumber labels in LaTeX documents"
+ :created    "1995"
+ :updated    "1996"
+ :license    "GPL-2"
+ :authors    (("Ulrik Vieth" . "vieth@thphy.uni-duesseldorf.de"))
+ :maintainer ("Ulrik Vieth" . "vieth@thphy.uni-duesseldorf.de")
+ :keywords   ("tex" "maint")
+ :commentary "\
+Description:
+
+This package provides two functions `aux-renumber-single' and
+`aux-renumber-multi' to renumber equation labels and references
+in LaTeX documents so that they match their representation in
+the \".aux\" file(s) and the formatted document.
+
+Why would you want to do that?  Well, consider a manuscript of
+a book containing several hundreds of equations spread across
+a dozen or more files.  Since it is impossible to give reasonable
+names to so many equations, they may have been given some ad-hoc
+labels when the manuscript was typed.  After completing some
+intermediate or final version that will be printed and possibly
+distributed, it may be convenient to renumber the labels so that
+you can directly refer to the equation numbers in the printed
+version without having to figure out what cryptic label to type
+to produce the desired equation number in subsequent edits.
+
+Another appilcation might be a manuscript of a paper that will
+be submitted electronically to a journal.  To avoid confusion
+in subsequent correspondence with the journal editor, it might
+be advantageous if the labels match their representation in the
+paper copy submitted to the publisher.
+
+
+Usage:
+
+1. Load or autoload this file:
+
+   (load-library \"aux-renum\")
+
+or
+   (autoload 'aux-renumber-single \"aux-renum\"
+     \"Renumber labels in a single-file LaTeX document.\" t)
+   (autoload 'aux-renumber-multi \"aux-renum\"
+     \"Renumber labels in a multi-file LaTeX document.\" t)
+
+2. Run it interactively:
+
+  M-x aux-renumber-single
+  M-x aux-renumber-multi")

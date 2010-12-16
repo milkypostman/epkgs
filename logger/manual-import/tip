@@ -1,0 +1,6 @@
+(:summary    "Log work time and activities"
+ :created    "1994"
+ :updated    "19960520"
+ :license    "GPL-2"
+ :provided   (logger)
+ :required   ((("emacs" assoc))))

@@ -1,0 +1,11 @@
+(:summary    "Wrapper for gst-inspect"
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-2"
+ :authors    (("Marco (Bj) Bardelli" . "fanaj@jbook.sana.figa"))
+ :maintainer ("Marco (Bj) Bardelli" . "fanaj@jbook.sana.figa")
+ :provided   (gst-inspect)
+ :commentary "\
+To use with Gtreamer suite.
+To navigate the output of `gst-inpect'. 
+TODO build bin pipeline and store in xml.")

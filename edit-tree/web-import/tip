@@ -1,0 +1,5 @@
+(:summary    "Apply editing commands to all files in a tree"
+ :updated    "20050706"
+ :license    "GPL-2"
+ :provided   (edit-tree)
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/editing/")

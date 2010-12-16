@@ -1,0 +1,8 @@
+(:summary    "Find todos in files of project and display to planner page"
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-3"
+ :authors    (("Thierry Volpiatto"))
+ :maintainer ("Thierry Volpiatto")
+ :provided   (planner-todo-index)
+ :required   (((nil traverse-dir))))

@@ -1,0 +1,24 @@
+(:summary    "\"BraveGnuWorld Corrector Mode\""
+ :created    "2000"
+ :updated    "2000"
+ :license    "GPL-2"
+ :authors    (("Stefan Kamphausen" . "mail@skamphausen.de"))
+ :maintainer ("Stefan Kamphausen" . "mail@skamphausen.de")
+ :keywords   ("html" "brave" "gnu" "world")
+ :homepage   "http://www.skamphausen.de/cgi-bin/ska/bravegnuworld-mode"
+ :commentary "\
+Brave Gnu World Mode provides just a function to start and end
+annotations to Georg Greves Brave Gnu World colum. When saving the
+file those annotations get converted to HTML Code (default: red
+font)
+
+and that's it
+To use it automagically insert the following code into any of your
+(X)emacs startup files. Don't ask me if it works with Gnu Emacs,
+too; sorry!
+
+(autoload 'bravegnuworld-mode \"bravegnuworld\")
+(setq auto-mode-alist
+     (append
+      '((\"BraveGNUWorld.*\\.html\" .bravegnuworld-mode ))
+      auto-mode-alist))")

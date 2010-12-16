@@ -1,0 +1,9 @@
+(:summary    "Continuus integration"
+ :created    "2000"
+ :updated    "20060704"
+ :license    "GPL-2"
+ :authors    (("Henrik Joensson" . "henrik7205@hotmail.com"))
+ :maintainer ("Henrik Joensson" . "henrik7205@hotmail.com")
+ :provided   (ccm)
+ :required   ((("emacs" easymenu)))
+ :keywords   ("synergy" "ccm"))

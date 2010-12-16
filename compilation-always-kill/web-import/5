@@ -1,0 +1,14 @@
+(:summary    "Kill compilation without prompting"
+ :created    "2008"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Kevin Ryde" . "user42@zip.com.au"))
+ :maintainer ("Kevin Ryde" . "user42@zip.com.au")
+ :provided   (compilation-always-kill)
+ :required   ((("emacs" advice)))
+ :keywords   ("processes")
+ :homepage   "http://user42.tuxfamily.org/compilation-always-kill/index.html"
+ :commentary "\
+`compilation-always-kill-mode' minor mode makes M-x compile kill any
+existing compilation process without its normal `yes-or-no-p' query.
+See the mode docstring below for more.")

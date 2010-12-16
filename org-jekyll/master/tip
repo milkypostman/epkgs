@@ -1,0 +1,5 @@
+(:summary    "Export jekyll-ready posts form org-mode entries"
+ :authors    (("Juan Reyero"))
+ :maintainer ("Juan Reyero")
+ :provided   (org-jekyll)
+ :homepage   "https://github.com/juanre/org-jekyll")

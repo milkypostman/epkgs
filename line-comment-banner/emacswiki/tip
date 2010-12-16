@@ -1,0 +1,6 @@
+(:summary    "Comment a line in a banner style"
+ :license    "GPL-3"
+ :provided   (line-comment-banner)
+ :required   ((("emacs" cl)))
+ :homepage   "http://www.emacswiki.org/LineCommentBanner"
+ :wikipage   "http://www.emacswiki.org/LineCommentBanner")

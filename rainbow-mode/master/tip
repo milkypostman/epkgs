@@ -1,0 +1,14 @@
+(:summary    "Displays color names with colored background"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Julien Danjou" . "julien@danjou.info"))
+ :maintainer ("Julien Danjou" . "julien@danjou.info")
+ :provided   (rainbow-mode)
+ :required   ((("emacs" cl faces regexp-opt)))
+ :keywords   ("faces")
+ :homepage   "http://julien.danjou.info/rainbow-mode.html"
+ :commentary "\
+This minor mode will set background color to strings that matches color
+names.
+i.e.  #0000ff Will be printed in white with a blue background.")

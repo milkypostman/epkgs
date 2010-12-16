@@ -1,0 +1,8 @@
+(:created    "2010"
+ :updated    "2010"
+ :license    "GPL-2"
+ :authors    (("kitokitoki"))
+ :maintainer ("kitokitoki")
+ :provided   (anything-show-ticket)
+ :required   ((("emacs" cl)))
+ :homepage   "https://github.com/kitokitoki/anything-show-ticket")

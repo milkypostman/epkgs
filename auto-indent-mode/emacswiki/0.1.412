@@ -1,0 +1,47 @@
+(:summary    "Auto indent Minor mode"
+ :created    "20101106"
+ :updated    "20101202"
+ :license    "GPL-3"
+ :authors    (("Matthew L. Fidler & Others"))
+ :maintainer ("Matthew L. Fidler")
+ :provided   (auto-indent-mode)
+ :required   ((("emacs" cl)))
+ :keywords   ("auto" "indentation")
+ :commentary "\
+Provides auto-indentation minor mode.  This allows the following:
+
+ (1) Return automatically indents the code appropriately (if enabled)
+
+ (2) Pasting/Yanking indents the appropriately
+
+ (3) Killing line will take off unneeded spaces (if enabled)
+
+ (4) On visit file, indent appropriately, but DONT SAVE. (Pretend like
+ nothing happened, if enabled)
+
+ (5) On save, optionally unttabify, remove trailing white-spaces, and
+ definitely indent the file (if enabled).
+
+ (6) TextMate behavior of keys if desired (see below)
+
+ All of these options can be customized. (customize auto-indent)
+
+ To use put this in your load path and then put the following in your emacs
+ file:
+
+ (setq auto-indent-on-visit-file t) ;; If you want auto-indent on for files
+ (require 'auto-indent-mode)
+
+ If you (almost) always want this on, add the following to ~/.emacs:
+
+ (auto-indent-global-mode)
+
+ Excluded modes are defined in `auto-indent-disabled-modes-list'
+
+ If you only want this on for a single mode, you would add the following to
+ ~/.emacs
+
+ (add-hook 'emacs-lisp-mode-hook 'auto-indent-minor-mode)
+
+ You could always turn on the minor mode with the command
+ `auto-indent-minor-mode'")

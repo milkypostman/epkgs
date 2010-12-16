@@ -1,0 +1,25 @@
+(:summary    "Functions dealing with accented characters"
+ :created    "19990903"
+ :updated    "20100115"
+ :license    "GPL-2"
+ :authors    (("Drew Adams"))
+ :maintainer ("Drew Adams")
+ :provided   (unaccent)
+ :required   (nil
+	      (("strings" strings)))
+ :keywords   ("language" "accents")
+ :commentary "\
+Functions dealing with accented characters.
+
+ New functions defined here:
+
+   `accented-char-p', `unaccent-char', `unaccent-region', `unaccent-word'.
+
+ New variable defined here:
+
+   `reverse-iso-chars-alist'.
+
+ Suggested bindings:
+
+  (global-set-key [(meta ?\\\")] 'unaccent-word)
+  (define-key ctl-x-map [\\\"] 'unaccent-region)")

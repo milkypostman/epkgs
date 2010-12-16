@@ -1,0 +1,10 @@
+(:summary    "Unified user interface for Emacs folding modes"
+ :created    "2004"
+ :updated    "2004"
+ :license    "GPL-2"
+ :authors    (("Peter Heslin" . "p.j.heslin@dur.ac.uk"))
+ :maintainer ("Peter Heslin" . "p.j.heslin@dur.ac.uk")
+ :provided   (fold-dwim)
+ :required   ((("emacs" hideshow outline)))
+ :homepage   "http://www.dur.ac.uk/p.j.heslin/Software/Emacs/"
+ :wikipage   "http://www.emacswiki.org/FoldDwim")

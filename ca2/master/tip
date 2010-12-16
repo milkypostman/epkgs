@@ -1,0 +1,5 @@
+(:license    "GPL-3"
+ :provided   (ca2+ ca2+ac ca2+init ca2+semantic ca2+source-semantic ca2+sources)
+ :required   ((("cedet" semantic-ia)
+	       ("emacs" cl thingatpt)))
+ :homepage   "https://github.com/jeffdameth/ca2")

@@ -1,0 +1,36 @@
+(:summary    "Snippet with conditional expansion"
+ :created    "2007"
+ :updated    "20070505"
+ :license    "GPL-2"
+ :authors    ((nil . "pluskid.zju@gmail.com"))
+ :maintainer (nil . "pluskid.zju@gmail.com")
+ :provided   (smart-snippet)
+ :required   ((("emacs" cl)))
+ :keywords   ("snippet" "smart" "condition")
+ :homepage   "http://code.google.com/p/smart-snippet/"
+ :commentary "\
+Do you feel that the emace abbrev expansion is not smart enough?
+Expansion to code snippet should not happen in comment. And
+sometimes the same abbrev have different meaning. e.g. in ruby,
+<--------------------
+if
+-------------------->
+should expand into
+<--------------------
+if cond
+
+end
+-------------------->
+but the \"if\" at the follow statement
+<--------------------
+puts \"foo\" if predicate
+-------------------->
+should not expand to anything.
+
+So I write this code trying to solve this problem. It require the
+wonderful snippet.el.
+
+Put this file into your load-path and the following into your ~/.emacs:
+  (require 'smart-snippet)
+On how to define a conditional snippet, refer to the document of
+`smart-snippet-abbrev' and `smart-snippet-with-abbrev-table'")

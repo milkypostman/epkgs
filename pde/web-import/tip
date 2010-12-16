@@ -1,0 +1,19 @@
+(:summary    "Perl Development Environment"
+ :created    "20071223"
+ :updated    "2007"
+ :license    "GPL-2"
+ :authors    (("Ye Wenbin" . "wenbinye@gmail.com"))
+ :maintainer ("Ye Wenbin" . "wenbinye@gmail.com")
+ :provided   (pde pde-abbv pde-load pde-patch pde-project pde-util pde-vars perlapi re-builder-x tabbar-x)
+ :required   ((("emacs" apropos cl complete etags imenu re-builder tmm woman)
+	       ("emhacks" tabbar)
+	       ("help-dwim" help-dwim)
+	       ("imenu-tree" imenu-tree)
+	       ("perldoc" perldoc)
+	       ("template-simple" template-simple)
+	       ("tempo-x" tempo-x)))
+ :keywords   ("languages" "tools" "convenience" "unix")
+ :homepage   "http://search.cpan.org/~yewenbin/Emacs-PDE/"
+ :commentary "\
+Put this file into your load-path and the following into your ~/.emacs:
+  (require 'pde)")

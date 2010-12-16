@@ -1,0 +1,97 @@
+(:summary    "Set of functions for finding cross-referenced IDs"
+ :created    "2003"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("Florian v. Savigny" . "lorian@fsavigny.de")
+	      ("James Clark" . "jjc@clark.com"))
+ :maintainer ("Florian v. Savigny" . "lorian@fsavigny.de")
+ :keywords   ("languages")
+ :commentary "\
+Set of three user functions to comfortably find elements with
+certain IDs. It was of course conceived while using psgml-mode, but
+does not require it to work. Principally, it should work from any
+buffer visiting an SGML file, no matter what the mode. It does
+require James Clark's nsgmls, though.
+
+Send bugs to <lorian@fsavigny.de>.
+Any other feedback is also welcome.
+
+WHAT IT CAN DO
+
+sgml-id provides three user functions:
+
+sgml-id-display-element-with-id-under-cursor is meant for the
+situation when you see a reference to an ID and you ask yourself
+\"Now what element was that?\". Put the cursor on the ID reference
+and invoke the function (I have bound it to C-c f). Other windows
+will be deleted, the remaining window split in two and the element
+you've been looking for will be displayed in the upper window.
+
+sgml-id-display-list (bound to C-c i) displays a complete list of
+all IDs used in the current SGML instance (in case you have
+forgotten an ID name you would like to refer to), which is shown on
+the left side in a kind of menu-bar window (as on web pages). The
+first letter of the element is also shown in parentheses, as a
+reminder. This buffer is put in sgml-id-mode, which is nothing
+more than View Mode with one additional function:
+
+sgml-id-display-element-other-window (bound to f in sgml-id-mode)
+is used from the \"ID menu bar\" on the left side. It does the same
+thing as sgml-id-display-element-with-id-under-cursor, but takes
+the ID from the LINE the cursor is on in the \"ID menu bar\", so the
+cursor needn't necessarily be on the ID itself; and it first jumps
+to the main window, deleting the \"ID menu bar\". As a special
+gimmick, the ID in question is put in front of the kill ring, in
+case you want to paste it.
+
+See also under LIMITATIONS for some caveats.
+
+INSTALLING
+
+to test, visit an SGML file and load this file with load-file,
+or vice versa
+
+0. Make sure nsgmls is installed on your system.
+
+1. put this file somewhere in your load-path
+   (e.g. /usr/share/emacs/site-lisp/psgml)
+
+2. have it loaded, e.g. via the sgml-mode-hook in your ~/.emacs:
+
+   (add-hook 'sgml-mode-hook
+       '(lambda ()
+          (load \"sgml-id\")))
+
+3. if you want to modify the key bindings (e.g. in the same hook),
+   do so AFTER having loaded this file (you may want to copy lines
+   from the end of this file as templates). The default keybindings
+   are for sgml-mode.
+
+4. to change the key binding of
+   sgml-id-display-element-other-window, you would have to use
+   sgml-id-mode-hook (which I have not tried out yet).
+
+LIMITATIONS, I.E. BUGS I DIDN'T LIKE TO FIX:
+
+The whole thing is essentially beta, since it does work quite
+elegantly and reliably, but has the following flaws:
+
+- the only \"classic\" bug, which has remained mysterious to me: when
+invoking C-c f for the first time (i.e. when sgml-id-alist is still
+nil), the regex-search for the element with the id fails for
+reasons obscure to me, since the regex is made correctly (as stated
+in the error message). Solution: press C-c f a second time. I have
+no idea why. [See sgml-id-display-element-with-id]
+
+- it looks for IDs (and the attribute names that have these IDs as
+their value) case-insensitively, which is usually appropriate for
+SGML, but not for XML. This behaviour should be changeable and
+depend on the kind of language. [See sgml-id-build-list]
+
+- it only works for one SGML instance in one Emacs session, since I
+have not been able to get those buffer-local variables to work. To
+use it with a second instance in the same session, you must do two
+things: first, kill the \"ID menu-bar\" buffer (which has the name
+\"IDs\"), second, invoke sgml-id-display-list from the buffer
+visiting the new SGML instance. Do this before using
+sgml-id-display-element-with-id-under-cursor. [See")

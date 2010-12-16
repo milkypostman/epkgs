@@ -1,0 +1,28 @@
+(:summary    "Multiple-domain reply header manipulation for VM"
+ :created    "1992"
+ :updated    "19971223"
+ :license    "GPL-2"
+ :authors    (("Noah Friedman" . "friedman@splode.com"))
+ :maintainer (nil . "friedman@splode.com")
+ :provided   (vm-multdom)
+ :required   ((("fmailutils" fmailutils)
+	       ("vm" vm-message)))
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
+ :commentary "\
+This file contains enhancements to VM for processing mail from multiple
+domains that is forwarded to one site.  Specifically, it looks for the
+address the sender used to send you mail, and sets your `From' (and
+optionally, `Reply-To') header to use the same address in replies.
+
+To use this package, put the following in your .emacs or .vm file:
+
+   (require 'vm-multdom)
+   (vm-multdom-install)
+   (setq vm-multdom-user-addresses
+         '(\"regexps\" \"matching\" \"each\" \"of\" \"your\" \"email\" \"addresses\"))
+
+You may want to use regexps which match addresses for mail to specific
+machines, e.g. \"friedman@.*\\\\.splode\\\\.com\\\\|friedman@splode\\\\.com\".
+
+This package requires Emacs/XEmacs 19 or later, VM version 6.30 or
+later, and fmailutils 1.10 or later.")

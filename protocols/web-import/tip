@@ -1,0 +1,14 @@
+(:summary    "Protocol database access functions"
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-2"
+ :provided   (protocols)
+ :required   ((("emacs" cl)))
+ :homepage   "http://www.davep.org/emacs/"
+ :commentary "\
+protocols.el provides a set of functions for accessing the protocol
+details list.
+
+The latest protocols.el is always available from:
+
+  <URL:http://www.davep.org/emacs/#protocols.el>")

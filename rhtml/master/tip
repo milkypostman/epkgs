@@ -1,0 +1,3 @@
+(:license    "GPL-2"
+ :provided   (rhtml-erb rhtml-fonts rhtml-mode rhtml-navigation rhtml-ruby-hook rhtml-sgml-hacks)
+ :required   ((("emacs" cl ruby-mode sgml-mode))))

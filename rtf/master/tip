@@ -1,0 +1,10 @@
+(:summary    "Mode for editing RTF documents"
+ :created    "2003"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("Oliver Scholz" . "epameinondas@gmx.de"))
+ :maintainer ("Oliver Scholz" . "epameinondas@gmx.de")
+ :provided   (rtf rtf-controls rtf-par rtf-reader rtf-tables state-m)
+ :required   ((("emacs" cl code-pages)))
+ :homepage   "http://savannah.nongnu.org/projects/emacs-rtf/"
+ :wikipage   "http://www.emacswiki.org/RTFMode")

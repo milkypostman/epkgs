@@ -1,0 +1,23 @@
+(:summary    "Remote login interface"
+ :created    "1992"
+ :updated    "20001027"
+ :license    "GPL-2"
+ :authors    (("Noah Friedman"))
+ :maintainer ("Noah Friedman" . "friedman@prep.ai.mit.edu")
+ :provided   (ftelnet)
+ :required   ((("emacs" comint shell)))
+ :keywords   ("unix" "comm")
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
+ :commentary "\
+This code originally derived from emacs 19.29 rlogin.el, and was then
+modified substantially for use with telnet.
+
+Support for remote logins using `telnet'.
+This program is layered on top of shell.el; the code here only accounts
+for the variations needed to handle a remote process, e.g. directory
+tracking and the sending of some special characters.
+
+If you wish for ftelnet mode to prompt you in the minibuffer for
+passwords when a password prompt appears, just enter m-x send-invisible
+and type in your line, or add `comint-watch-for-password-prompt' to
+`comint-output-filter-functions'.")

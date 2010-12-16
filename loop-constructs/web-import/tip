@@ -1,0 +1,22 @@
+(:summary    "Sugary looping forms for emacs-lisp"
+ :created    "2002"
+ :updated    "2002"
+ :license    "GPL-2"
+ :authors    (("Guillaume Marceau"))
+ :maintainer ("Guillaume Marceau")
+ :provided   (loop-constructs)
+ :required   ((("emacs" cl)))
+ :homepage   "http://gmarceau.qc.ca/"
+ :commentary "\
+Defines a few sugary loop constructs which claim to be both
+versatile and seamlessly usable accross both functionnal and
+imperative styles.
+Namely :
+  (spinner ((SYMBOL INIT-VALUE) ...) FORMS)  -  a functionnal loop in a can.
+  (while-break ((SYMBOL INIT-VALUE) ...) FORMS) - an imperative loop masquerading
+                                                    as a functionnal expression.
+  (while-break-n NAME ((SYMBOL INIT-VALUE) ...) FORMS) - a nestable while-break
+
+And, taking advantage of the occasion, the sugary `until' is defined :
+
+  (until ((SYMBOL INIT-VALUE) ...) BODY)  - never returns nil, by definition")

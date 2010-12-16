@@ -1,0 +1,6 @@
+(:summary    "Basic darcsum feelalike for Git"
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-3"
+ :provided   (gitsum)
+ :required   ((("emacs" cl))))

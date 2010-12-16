@@ -1,0 +1,10 @@
+(:summary    "An Org-mode tool for buffer management"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Dan Davison" . "dandavison0@gmail.com"))
+ :maintainer ("Dan Davison" . "dandavison0@gmail.com")
+ :provided   (org-buffers)
+ :required   ((("emacs" cl org)))
+ :keywords   ("outlines" "hypermedia" "calendar" "wp")
+ :homepage   "http://orgmode.org")

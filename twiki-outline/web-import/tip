@@ -1,0 +1,9 @@
+(:summary    "Major mode for editing twiki documents"
+ :created    "20040421"
+ :updated    "20040426"
+ :license    "GPL-2"
+ :authors    (("Noah Friedman" . "friedman@splode.com"))
+ :maintainer ("Noah Friedman" . "friedman@splode.com")
+ :provided   (twiki-outline)
+ :required   ((("emacs" outline)))
+ :homepage   "ftp://ftp.splode.com/pub/users/friedman/emacs-lisp/")

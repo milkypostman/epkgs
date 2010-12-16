@@ -1,0 +1,4 @@
+(:provided   (gtklookup gtklookup-autoload)
+ :required   ((("anything" anything)
+	       ("emacs" browse-url cl ido simple)))
+ :homepage   "http://taesoo.org/Opensource/Gtklookup")

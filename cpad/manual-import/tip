@@ -1,0 +1,47 @@
+(:summary    "Calculation PAD - A tiny language for calculation in Emacs buffer"
+ :updated    "20020716"
+ :license    "GPL-2"
+ :authors    (("Akimichi Tatsukawa" . "akimichi@mbox.co.jp")
+	      ("math")
+	      ("functional language")
+	      ("Functions for debug message are all commented out."))
+ :maintainer ("Akimichi Tatsukawa" . "akimichi@mbox.co.jp")
+ :provided   (eparser)
+ :required   ((("emacs" cl)))
+ :keywords   ("calculator" "math" "functional" "language" "emile" "exp" "emile" "emile" "revision" "emile" "functions" "debug" "message" "all" "commented")
+ :homepage   "http://akimichi.homeunix.net/~emile/aki/hiki.cgi?CpadElisp"
+ :commentary "\
+This package enables a calculation in Emacs buffer like a calculation pad.
+   It immediately parse and calculate a expression, and replace it with the result.
+   The language for calculation is a kind of function-oriented language(don't expect too much).
+   Allowed data types are number(integer,float) and list(and unit).
+   A simple standard library is provided, which contains limited features of arithmatic,list
+   processing,statistical and clinical functions.
+   And you can add your own function easily to enrich its facilities.
+
+   Its major drawback is performance. Owing to its recursive feature,it sometimes consumes so much time
+   that even a moderate human brain can beat it.
+Usage:
+   Add following codes in your .emacs file.
+
+   (autoload 'cpad \"cpad\" \"A calculation pad\" t)
+   (autoload 'cpad* \"cpad\" \"A calculation pad\" t)
+   (global-set-key \"\\C-cr\" 'cpad) ; you may change it to whatever key you like.
+   (global-set-key \"\\C-cx\" 'cpad*)
+TODO:
+     iterator macro
+     curry function
+     built-in functions for arithmatic,list,statistics,etc to improve performance
+     exponential operator ^
+     display argument
+     query facility
+     documentation
+     unification
+     environment for variable and its value --> maybe not
+     stream list
+     variable assignment --> maybe not
+     parsing by eparser
+     hooks for registration of user functions -> use defadvice
+
+(defvar cpad:version \"0.1\"
+  \"Current version of CPAD.\")")

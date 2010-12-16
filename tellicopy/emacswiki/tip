@@ -1,0 +1,4 @@
+(:authors    (("Leo" . "sdl.web@gmail.com"))
+ :maintainer ("Leo" . "sdl.web@gmail.com")
+ :homepage   "http://www.emacswiki.org/TelliCopy"
+ :wikipage   "http://www.emacswiki.org/TelliCopy")

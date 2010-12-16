@@ -1,0 +1,13 @@
+(:summary    "Complete everything PHP with Anything.el"
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-2"
+ :authors    (("IMAKADO" . "ken.imakado@gmail.com"))
+ :maintainer ("IMAKADO" . "ken.imakado@gmail.com")
+ :provided   (php-completion)
+ :required   ((("anything" anything anything-match-plugin)
+	       ("auto-complete" auto-complete)
+	       ("emacs" browse-url cl etags pp rx thingatpt tool-bar url-util)))
+ :homepage   "https://github.com/imakado/php-completion"
+ :commentary "\
+complete php functions, symbols, ini directives, keywords with Anything.el's Interface.")

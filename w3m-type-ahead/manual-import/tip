@@ -1,0 +1,15 @@
+(:summary    "Type ahead support for Emacs-w3m"
+ :created    "2003"
+ :updated    "20060928"
+ :license    "GPL-2"
+ :authors    (("Matthew P. Hodges" . "mphodges@member.fsf.org"))
+ :maintainer ("Matthew P. Hodges" . "mphodges@member.fsf.org")
+ :provided   (w3m-type-ahead)
+ :required   ((("w3m" w3m)))
+ :commentary "\
+Type ahead support for Emacs-w3m.  This allows an isearch facility
+that is limited to HREF anchors.  Switch the mode on for all
+w3m-mode buffers with:
+
+    (autoload 'w3m-type-ahead-mode \"w3m-type-ahead\" \"Type ahead support for Emacs-w3m.\" t)
+    (add-hook 'w3m-mode-hook 'w3m-type-ahead-mode)")

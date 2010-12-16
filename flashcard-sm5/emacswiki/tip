@@ -1,0 +1,59 @@
+(:summary    "SuperMemo algorithm for Emacs flashcard"
+ :created    "2006"
+ :updated    "2006"
+ :license    "GPL-2"
+ :authors    (("David Smith" . "davidsmith@acm.org"))
+ :maintainer ("David Smith" . "davidsmith@acm.org")
+ :provided   (flashcard-sm5)
+ :required   ((("flashcard" flashcard)))
+ :commentary "\
+This is meant to be a replacement for the Leitner method
+implementation already included with flashcard. It should
+produce better results while supporting a much larger
+database of cards.
+
+The basic usage is still the same but after entering what
+they think the answer is (or yes or no, whatever), the
+important thing that the user must do is input a number from
+0 to 5 (inc) to indicate how well he or she personally
+remembered the item. This number will be a primary factor in
+determining the date to show the card again.
+
+There are parts of this that may be wrong. I've tried to
+label those parts clearly but someone else should really
+read the design doc for SM5 and compare.
+
+The optimal factors matrix is stored in the deck file but it
+is kept in memory between deck files on purpose. The optimal
+factors are optimal to your brain, not to the material you
+are stuffing in it, so if you move to a different deck file
+with different material your optimal factors matrix should
+go with you. There is a problem with this, though; if you
+drill a deck, then quit emacs, then load a different deck
+before loading the deck you were drilling before, your
+in-memory optimal factors matrix will not be the
+most-current version. Suggestions for how to fix this are
+very much appreciated.
+
+From the SM5 design doc, propagation of the optimal factors
+matrix is recommended but not implemented here yet. I would
+like to do so but it seems like it would be quite slow and
+the docs are slightly contradictory so I have left it out
+for now.
+
+The searching procedures used for the next card should be
+optimized. One idea for how to make this much faster would
+be to keep the cards in a balanced-tree (in a list). This
+would allow keeping the cards sorted by date with fast
+insertion and easy retrieval of the next card.
+
+UPDATE: 08/14. Rereading the SM5 documentation, I've updated
+the procedure for calculating the next interval. It seems to
+make the interval-matrix irrelevant but it might be a
+mistake. I'll test for a few days.
+
+UPDATE: 09/01. I think I've fixed the problem with the
+calcuation of the interval after the first time a card is
+asked that was introduced in the previous update. Please
+test and report. Also, I've incorporated a patch from Danien
+Elmes for reading characters.")

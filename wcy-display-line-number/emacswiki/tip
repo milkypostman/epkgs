@@ -1,0 +1,16 @@
+(:summary    "Line number mode for Emacs"
+ :created    "2004"
+ :updated    "2004"
+ :license    "GPL-2"
+ :authors    (("ChunYe Wang"))
+ :maintainer ("ChunYe Wang")
+ :provided   (display-line-number)
+ :keywords   ("tools")
+ :commentary "\
+Installation:
+
+put the display-line-number.el in your load-path
+(require 'display-line-number)
+M-x display-line-number-mode
+M-x display-line-number-mode-on
+M-x display-line-number-mode-off")

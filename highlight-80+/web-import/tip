@@ -1,0 +1,12 @@
+(:summary    "Highlight characters beyond column 80"
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-2"
+ :authors    (("Nikolaj Schumacher" . "bugs@nschum.de"))
+ :maintainer ("Nikolaj Schumacher" . "bugs@nschum.de")
+ :provided   (highlight-80+)
+ :keywords   ("faces")
+ :homepage   "http://nschum.de/src/emacs/highlight-80+/"
+ :wikipage   "http://www.emacswiki.org/Highlight80Plus"
+ :commentary "\
+This mode highlights all characters that cross the 80 character line limit.")

@@ -1,0 +1,10 @@
+(:summary    "Pydoc interface for emacs"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("mooz" . "stillpedant@gmail.com"))
+ :maintainer ("mooz" . "stillpedant@gmail.com")
+ :provided   (epydoc)
+ :required   ((("emacs" cl)))
+ :keywords   ("python" "anything" "imenu")
+ :homepage   "https://github.com/mooz/epydoc")

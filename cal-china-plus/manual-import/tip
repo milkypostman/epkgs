@@ -1,0 +1,21 @@
+(:summary    "Extra stuff for cal-china"
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-3"
+ :authors    (("Leo Shidai Liu" . "shidai.liu@gmail.com"))
+ :maintainer ("Leo Shidai Liu" . "shidai.liu@gmail.com")
+ :provided   (cal-china-plus)
+ :required   ((("emacs" cal-china diary-lib)))
+ :keywords   ("calendar" "convenience" "local")
+ :commentary "\
+All functions are prefixed with calendar-chinese- unless it is
+already in cal-china.el; in this case, it is prefixed with
+calendar-chinese-plus-
+
+*NB*: the Chinese calendar date is represented with '(month day
+nl-year) instead of '(cycle year month day) in the dary file, where
+nl-year is Nong-Li year offset by constant 2697. For example, Cycle
+78 Year 25 is Nong-Li year 4705 but for convenience it is
+represented as 2008 (i.e. 4705 - 2697) in the diary file.
+
+Please send me any comments that you may have. Thank you.")

@@ -1,0 +1,5 @@
+(:summary    "Various x-face utils"
+ :license    "GPL-2"
+ :authors    (("Raymond Wiker" . "etorwi@eto.ericsson.se"))
+ :maintainer ("Raymond Wiker" . "etorwi@eto.ericsson.se")
+ :provided   (x-face-magic))

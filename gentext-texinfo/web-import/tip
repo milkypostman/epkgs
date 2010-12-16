@@ -1,0 +1,6 @@
+(:updated    "20060209"
+ :license    "GPL-2"
+ :provided   (gentext-texinfo)
+ :required   ((("emacs" texinfo)
+	       ("gentext-models" gentext-models)))
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/editing/")

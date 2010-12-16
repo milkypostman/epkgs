@@ -1,0 +1,35 @@
+(:summary    "Handles only what little Cobol I happen to know"
+ :created    "2005"
+ :updated    "2005"
+ :license    "GPL-2"
+ :authors    (("Rick Bielawski" . "rbielaws@i1.net"))
+ :maintainer ("Rick Bielawski" . "rbielaws@i1.net")
+ :provided   (cobol-mode)
+ :required   ((("column-marker" column-marker)
+	       ("emacs" imenu which-func)
+	       (nil cobol-indent)))
+ :keywords   ("languages" "cobol" "tandem" "guardian" "nsk")
+ :homepage   "http://www.emacswiki.org/CobolMode"
+ :wikipage   "http://www.emacswiki.org/CobolMode"
+ :commentary "\
+COBOL -- COmmon Business Oriented Language. ()
+
+This is currently a work-in-progress.  I believe comments and strings are
+being handled correctly and some keywords are highlighted.  I'm only
+posting this in such a crude stage as a method of synchronizing changes
+among the various computers I might work on this from.  You are welcome to
+try it and submit changes or report bugs but there is no point trying to
+report lack of features or missing keywords unless you are including
+patches that address such shortcomings.
+
+Since I use this mode on Tandem/Guardian/NSK source files for Scobol and
+Cobol this mode handles the extensions implemented by those compilers.
+It may not correctly handle standard features that are not implemented
+by those compilers.
+
+I wrote this because I didn't like the only other Cobol mode I could find.
+The other one is on the Azundris site.  It deletes periods and commas if
+you don't change their syntax properties.  It also doesn't have anything
+close to this version's handling of comments and strings.  But it does do
+many things this one doesn't.  A given individual may decide either is the
+lesser of two evils.  This one is certainly better than nothing.")

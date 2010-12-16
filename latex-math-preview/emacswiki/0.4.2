@@ -1,0 +1,46 @@
+(:summary    "Preview LaTeX mathematical expressions"
+ :created    "20100120"
+ :updated    "2009"
+ :license    "GPL-3"
+ :authors    (("Takayuki YAMAGUCHI" . "d@ytak.info"))
+ :maintainer ("Takayuki YAMAGUCHI" . "d@ytak.info")
+ :provided   (latex-math-preview latex-math-preview-extra-data)
+ :required   ((("emacs" cl image-mode thingatpt)))
+ :keywords   ("latex" "tex")
+ :homepage   "http://www.emacswiki.org/LaTeXMathPreview"
+ :wikipage   "http://www.emacswiki.org/LaTeXMathPreview"
+ :commentary "\
+latex-math-preview.el has the following three main commands.
+
+M-x `latex-math-preview-expression' previews mathematical expressions pointed
+by cursor in LaTeX files or strings of selected region with transient-mark on.
+The result of this command is shown as image in new buffer.
+
+M-x `latex-math-preview-insert-symbol' displays the list of LaTeX symbols.
+Selecting a LaTeX symbol from it, you can insert it.
+Depending on whether cursor is in mathematical expression or not,
+this commands choose the symbol list.
+If you don't want to use the automatic selection,
+alternatively you may use M-x `latex-math-preview-insert-mathematical-symbol'
+and M-x `latex-math-preview-insert-text-symbol' for mathematical symbol
+and normal text symbol, respectively.
+
+M-x `latex-math-preview-save-image-file' make an image for the same object
+as `latex-math-preview-expression' and save it as a file which is png or eps.
+When making an image, this command may remove number of mathematical formulas.
+
+Buffer local variable `latex-math-preview-usepackage-cache' has
+the values of \\usepackage for previewing.
+If you want to reload this variable, you use
+M-x `latex-math-preview-reload-usepackage'.
+
+Requirements;
+You need to install the following softwares.
+
+ - Emacs (version 22 or 23) on Linux or Meadow3 on Windows.
+ - dvipng
+ - dvips
+ - latex (or platex)
+
+latex and dvipng is used for making preview image.
+dvips is for making eps image and not for previewing.")

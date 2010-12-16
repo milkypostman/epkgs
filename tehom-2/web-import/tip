@@ -1,0 +1,57 @@
+(:summary    "Emacs lisp extensions for history lists"
+ :created    "1999"
+ :updated    "1999"
+ :license    "GPL-2"
+ :authors    (("Tom Breton" . "tehom@localhost"))
+ :maintainer ("Tom Breton" . "tehom@localhost")
+ :provided   (tehom-2)
+ :keywords   ("extensions")
+ :homepage   "www.panix.com/~tehom/"
+ :commentary "\
+This code is to make history lists more generally available.  It is
+mostly modified from isearch.el
+
+tehom-define-history-{edit,motion,update} are macros that define
+functions that move around in a history list.  See the examples at
+the end of this file, which mirror isearch.el's history functions.
+
+To use the history functions, you must supply several
+application-specific callbacks:
+
+With proper callbacks and local variables, these history functions
+can cooperate with the form-editing in tehom-1.  See tehom-search.el
+for an example.
+
+The callbacks ;;;;;;;;;;;;;;;;;;;;;;;;
+
+get-ring-code: Code that gives your history list.  It can be a
+function, a defsubst, a variable, or a literal.  EG,
+tehom-isearch-get-ring.
+
+get-sym-code: Code that gives the *symbol* that corresponds to the
+current *position* in your history list.  It can be a function, a
+variable, or a literal. EG, tehom-isearch-get-position-sym
+
+insert-func: A function taking an object from your history list,
+that inserts a given object into \"the place you edit it in\",
+(whatever that may be in your application) .  Not called if the
+history list is empty.  EG, tehom-isearch-insert-string
+
+set-func: A function taking an object from your history list, that
+sets \"the current thing\" (whatever that may be) to that object.  Not
+called if the history list is empty.  EG, tehom-isearch-set-string
+
+update-func: Code to execute if history editing is called at all,
+regardless of whether the history list is empty.  EG,
+tehom-isearch-do-update
+
+my-ring:  Your history list.  Unlike get-ring-code, it can only be
+an object.  EG, regexp-search-ring
+
+my-ring-max: A number, the maximum number of items allowed in your
+history list.  EG, regexp-search-ring-max
+
+my-compare-func: A function that compares objects of the type that
+are in your history list.  Used by tehom-define-history-update to
+determine whether a new object should be stored on the history
+list.  EG, 'string= or 'equal")

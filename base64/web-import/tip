@@ -1,0 +1,9 @@
+(:summary    "Base64 encoding functions"
+ :created    "19990325"
+ :updated    "1997"
+ :license    "GPL-2"
+ :authors    (("Kyle E. Jones"))
+ :maintainer ("Kyle E. Jones")
+ :provided   (base64)
+ :keywords   ("extensions")
+ :homepage   "http://www.gentei.org/~yuuji/software/biff-el.html")

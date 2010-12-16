@@ -1,0 +1,23 @@
+(:summary    "A song database for the lazy emacser"
+ :created    "2007"
+ :updated    "2008"
+ :license    "GPL-3"
+ :authors    (("Alessandro Di Marco" . "dmr@c0nc3pt.com"))
+ :maintainer ("Alessandro Di Marco" . "dmr@c0nc3pt.com")
+ :provided   (topsongs)
+ :keywords   ("emms")
+ :commentary "\
+TopSongs provides a song database for the lazy emacser. TopSongs interacts
+ with both EMMS and mp3info, in order to provide handy commands such as
+ `topsongs-insert-current-selected-track', recording your favorite songs
+ on-the-fly. Next it will generate for you a m3u playlist, playable with
+ `topsongs-play' in any moment.
+
+ For a full-featured playlist generation don't forget to install mp3info.
+
+Installation:
+
+ Put this file on your Emacs-Lisp load path, then add the following to your
+ ~/.emacs startup file.
+
+    (require 'topsongs)")

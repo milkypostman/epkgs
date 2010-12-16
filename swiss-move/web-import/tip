@@ -1,0 +1,36 @@
+(:summary    "Swiss Cursor Movement"
+ :created    "2004"
+ :updated    "20040401"
+ :license    "GPL-2"
+ :provided   (swiss-move)
+ :keywords   ("tools" "user" "files" "part")
+ :homepage   "http://www.skamphausen.de/cgi-bin/ska/swiss-move"
+ :wikipage   "http://www.emacswiki.org/SwissMove"
+ :commentary "\
+- Moving one line at a time is slow, but precise.
+- Moving in screenfulls (aka scrolling) ist not fast enough for
+  large buffers and is not precise.
+Thus you ususally scroll to another part of your large file and
+then use the one-line-movement for exact adjustment.
+
+This can be improved if subsequent keystrokes would reduce the
+amount of lines scrolled.  Please see the docstring of
+`swiss-move-line' for examples that try to explain it.
+You'd probably best try it out now.
+
+Actually the term \"Swiss Movement\" is introduced here and it stems
+from the *li-variable names that occur in these functions ;-)
+
+Installation:
+------------
+Put
+(require 'swiss-move)
+somewhere in you init files and add the keybinding, e.g.:
+(global-set-key '[(shift prior)]           'swiss-move-line-up)
+(global-set-key '[(shift next)]            'swiss-move-line-down)
+
+ChangeLog
+2006-12-08  GNU Emacs compat
+
+Thanks
+Christop Conrad for GNU Emacs suggestions")

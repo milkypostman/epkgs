@@ -1,0 +1,9 @@
+(:summary    "Multiple automatically selected signatures"
+ :created    "19970331"
+ :updated    "1997"
+ :authors    (("Dewey M. Sasser" . "dewey@newvision.com"))
+ :provided   (dms-sig)
+ :required   ((("emacs" cl cookie1 reporter)))
+ :keywords   ("multiple" "mail" "signature" "random" "quotes")
+ :homepage   "http://thesassers.com/dewey/DmsSig.html"
+ :wikipage   "http://www.emacswiki.org/DmsSig")

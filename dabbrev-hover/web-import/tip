@@ -1,0 +1,10 @@
+(:summary    "Tooltip-show the next completion, as does openoffice"
+ :created    "2004"
+ :updated    "20040707"
+ :license    "GPL-2"
+ :authors    (("D. Goel" . "deego@gnufans.org"))
+ :maintainer ("D. Goel" . "deego@gnufans.org")
+ :provided   (dabbrev-hover)
+ :required   ((("emacs" avoid cl dabbrev))
+	      (("emacs" tooltip)))
+ :homepage   "http://www.gnufans.net/~deego/emacs.html")

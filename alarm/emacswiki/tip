@@ -1,0 +1,12 @@
+(:summary    "Alarm"
+ :created    "20080617"
+ :updated    "20080617"
+ :license    "GPL-3"
+ :authors    (("Emacs guys" . "emacser@freedom.com"))
+ :maintainer ("Andy Stewart" . "lazycat.manatee@gmail.com")
+ :provided   (alarm)
+ :keywords   ("alarm")
+ :homepage   "http://www.emacswiki.org/Alarm"
+ :wikipage   "http://www.emacswiki.org/Alarm"
+ :commentary "\
+Alarm.")

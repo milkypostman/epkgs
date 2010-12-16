@@ -1,0 +1,22 @@
+(:summary    "Run a shell command after saving a file"
+ :updated    "19980825"
+ :license    "GPL-2"
+ :authors    (("Karl M. Hegbloom" . "karlheg@inetarena.com"))
+ :maintainer ("Karl M. Hegbloom" . "karlheg@inetarena.com")
+ :provided   (after-save-commands)
+ :required   ((("emacs" cl)))
+ :keywords   ("processesunix")
+ :commentary "\
+Set up a list of file-name matching regular expressions associated
+with shell commands to run after saving the file.
+
+This is good for things like running `newaliases(1)' on
+\"/etc/aliases\", or `xrdb(1)' on \"~/.Xresources\", as well as
+sending signals to daemons whos configuration files you've just
+finished editting.
+
+It is much safer than using exec statements in \"Local Variables\"
+sections, and can safely be used by root for system administration
+tasks.  The shell command can run about anything you can think of.
+
+See: `After-save-alist' for more information.")

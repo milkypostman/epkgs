@@ -1,0 +1,6 @@
+(:summary    "Refactoring support for JDEE"
+ :created    "2008"
+ :updated    "2008"
+ :license    "as-is"
+ :provided   (jde-refactor)
+ :homepage   "http://bitbucket.org/espenhw/jde-refactor")

@@ -1,0 +1,3 @@
+(:summary    "Alternative 'view' command for dired"
+ :provided   (alt-dired-view)
+ :required   ((("emacs" dired))))

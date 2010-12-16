@@ -1,0 +1,9 @@
+(:summary    "Named structure types with named fields for emacs-list"
+ :created    "2002"
+ :updated    "2002"
+ :license    "GPL-2"
+ :authors    (("Guillaume Marceau"))
+ :maintainer ("Guillaume Marceau")
+ :provided   (record)
+ :required   ((("emacs" cl)))
+ :homepage   "http://gmarceau.qc.ca/")

@@ -1,0 +1,35 @@
+(:summary    "Define functions on the fly"
+ :created    "1999"
+ :updated    "1999"
+ :license    "GPL-2"
+ :authors    (("Michael Abraham Shulman" . "viritrilbia@users.sourceforge.net"))
+ :maintainer ("Michael Abraham Shulman" . "viritrilbia@users.sourceforge.net")
+ :provided   (auto-define)
+ :keywords   ("extensions")
+ :wikipage   "http://www.emacswiki.org/AutoDefine"
+ :commentary "\
+This file supplies (surprisingly small) code which allows elisp
+functions to be defined \"on the fly,\" as they are called.  Read the
+documentation of `auto-define-functions' for instructions.
+
+This feature is similar to the AUTOLOAD subroutine in Perl, except
+that it always defines the function rather than standing in for it.
+If you want to do something different every time a function is
+called (although I don't know why you would want to do something
+that you couldn't do by defining the function to do whatever you
+wanted), you can define the function to \"un-set\" itself when
+executed.
+
+This file also supplies two examples of how Auto-define can be
+used. Admittedly, neither of them is particularly useful, but they
+are aesthetically pleasing (to me, anyway).  One conclusion that can
+be drawn from the uselessness of these examples is that I haven't
+found a real use for auto-define.  I just wrote it because I could,
+and because I liked the examples.
+
+I've always been bothered by the neccessity for `cadr', `caar',
+`cdar', `cddr', and their longer brethren to each be explicitly
+defined, one by one, rather than being able to give a general rule.
+The general rule can be done with Auto-define; see \"cX*r Example.\"
+Similarly, we have `prog1' and `prog2' but nothing after that until
+`progn'. \"Progk Example\" fixes that deficiency.")

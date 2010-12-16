@@ -1,0 +1,6 @@
+(:license    "GPL-2"
+ :authors    (("Prateek Saxena" . "prtksxna@gmail.com"))
+ :maintainer ("Prateek Saxena" . "prtksxna@gmail.com")
+ :provided   (color-theme-almost-monokai)
+ :required   ((("color-theme" color-theme)))
+ :homepage   "https://github.com/lut4rp/almost-monokai")

@@ -1,0 +1,41 @@
+(:summary    "Control Git from Emacs"
+ :created    "2008"
+ :updated    "2009"
+ :license    "GPL-3"
+ :provided   (magit)
+ :required   ((("emacs" cl diff-mode easymenu ediff log-edit parse-time pcomplete server)))
+ :homepage   "http://philjackson.github.com/magit"
+ :wikipage   "http://www.emacswiki.org/Magit"
+ :commentary "\
+Invoking the magit-status function will show a buffer with the
+status of the current git repository and its working tree.  That
+buffer offers key bindings for manipulating the status in simple
+ways.
+
+The status buffer mainly shows the difference between the working
+tree and the index, and the difference between the index and the
+current HEAD.  You can add individual hunks from the working tree
+to the index, and you can commit the index.
+
+See the Magit User Manual for more information.
+
+TODO
+
+For 0.8:
+
+- Fix display of unmerged files.
+- Fix performance problems with large status buffers.
+- Handle the case where remote and local branches have different names.
+
+Later:
+
+- Queuing of asynchronous commands.
+- Good email integration.
+- Showing tags.
+- Visiting from staged hunks doesn't always work since the line
+  numbers don't refer to the working tree.  Fix that somehow.
+- Figure out how to discard staged changes for files that also have
+  unstaged changes.
+- Get current defun from removed lines in a diff
+- Amending commits other than HEAD.
+- 'Subsetting', only looking at a subset of all files.")

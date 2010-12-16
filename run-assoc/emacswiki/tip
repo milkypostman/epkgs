@@ -1,0 +1,8 @@
+(:summary    "Run program or lisp function associated with a file"
+ :license    "GPL-2"
+ :authors    (("Emacs Wiki")
+	      ("pft"))
+ :maintainer ("Emacs Wiki")
+ :provided   (run-assoc)
+ :homepage   "http://www.emacswiki.org/RunAssoc"
+ :wikipage   "http://www.emacswiki.org/RunAssoc")

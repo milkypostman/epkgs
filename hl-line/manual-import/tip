@@ -1,0 +1,28 @@
+(:summary    "Highlight the current line"
+ :created    "19980913"
+ :updated    "1998"
+ :license    "GPL-2"
+ :authors    (("Dave Love" . "fx@gnu.org"))
+ :maintainer ("Dave Love" . "fx@gnu.org")
+ :provided   (hl-line)
+ :keywords   ("faces" "frames")
+ :commentary "\
+Provides a global minor mode (toggled by M-x hl-line-mode) to
+highlight, in a windowing system, the line on which point is
+(except in a minibuffer window) to satisfy a request for a feature
+of Lesser Editors.
+
+You probably don't really want this; if the cursor is difficult to
+spot, try changing its colour or using a cursor blinking
+<URL:http://www.wonderworks.com/download/blinking-cursor.el.gz> or
+jiggling <URL:http://www.eskimo.com/%7Eseldon> package.  The
+hookery involved might slow Emacs significantly on a slow machine.
+
+An overlay is used, active only on the selected window.  Hooks are
+added to `pre-command-hook' and `post-command-hook' to activate and
+deactivate (by making it 'highlight zero width) the overlay.
+`hl-line-unhighlight', on `pre-command-hook', deactivates it
+unconditionally in case the command changes the selected window
+(rather than keeping track of changes in the selected window).
+`hl-line-highlight', on `post-command-hook', activates it again
+across the window width.")

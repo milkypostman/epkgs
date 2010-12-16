@@ -1,0 +1,29 @@
+(:created    "1999"
+ :updated    "1999"
+ :license    "GPL-2"
+ :authors    (("Jesper Kjær Pedersen" . "blackie@ifad.dk"))
+ :maintainer ("Jesper Kjær Pedersen" . "blackie@ifad.dk")
+ :provided   (narrow-stack)
+ :required   ((("emacs" advice)))
+ :keywords   ("narrow")
+ :homepage   "http://www.imada.sdu.dk/~blackie/emacs/"
+ :commentary "\
+Narrowing, as implemented in Emacs has one limitation, which I find very
+annoying, namely that it is not possible to narrow within a narrowing,
+and then widen again to the previous narrowing.
+This package implements an extension to narrowing, which makes this
+possible.
+
+This package has been developed as part of my job on writing the book
+\"Sams Teach yourself Emacs in 24 hours\".
+For more information about this book, please go to the page www.mcp.com
+and search for the word Emacs.
+
+To install this package, copy this file to a directory in your load-path
+and insert the following into your .emacs file:
+(require 'narrow-stack)
+(narrow-stack-mode)
+
+History Information
+1.0.1 Added documentation for functions
+1.0   First official relase.")

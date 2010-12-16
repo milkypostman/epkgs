@@ -1,0 +1,12 @@
+(:summary    "Interactive aspell with `anything'"
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-3"
+ :authors    (("Takeshi Banse" . "takebi@laafc.net"))
+ :maintainer ("Takeshi Banse" . "takebi@laafc.net")
+ :provided   (anything-c-aspell-interactively)
+ :required   ((("anything" anything)))
+ :keywords   ("convenience" "wp" "unix" "anything")
+ :commentary "\
+Interactive aspell with Anything interface. This is just an
+\"aspell -a\"'s anything interface.")

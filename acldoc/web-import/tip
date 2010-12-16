@@ -1,0 +1,4 @@
+(:license    "GPL-2"
+ :provided   (acldoc)
+ :required   ((("emacs" url)))
+ :homepage   "http://compbio.ucdenver.edu/hunter/")

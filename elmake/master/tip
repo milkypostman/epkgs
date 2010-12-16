@@ -1,0 +1,10 @@
+(:summary    "A \"make\" for emacs lisp projects in pure emacs lisp"
+ :created    "2003"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("Michael Schierl" . "schierlm-public@gmx.de"))
+ :maintainer ("Michael Schierl" . "schierlm-public@gmx.de")
+ :provided   (elmake elmake-self-install elmk-batch elmk-ede elmk-info elmk-init elmk-mode elmk-pkman elmk-singl elmk-site)
+ :required   ((("emacs" assoc cl)))
+ :keywords   ("makefile" "install" "elisp")
+ :homepage   "http://elmake.sourceforge.net/")

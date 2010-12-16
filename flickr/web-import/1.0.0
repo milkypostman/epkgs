@@ -1,0 +1,18 @@
+(:summary    "Upload photos to Flickr with Emacs"
+ :created    "2004"
+ :updated    "2004"
+ :license    "GPL-2"
+ :authors    (("Edward O'Connor" . "ted@oconnor.cx"))
+ :maintainer ("Edward O'Connor" . "ted@oconnor.cx")
+ :provided   (flickr)
+ :required   ((("emacs" thumbs)
+	       ("http-emacs" http-post)))
+ :keywords   ("convenience")
+ :homepage   "http://edward.oconnor.cx/elisp/"
+ :commentary "\
+To use, set `flickr-email' and `flickr-password' appropriately.
+
+Use `flickr-upload' to upload a file.
+
+This code binds `f' to something useful in `thumbs-mode' if you have
+`thumbs-mode' installed.")

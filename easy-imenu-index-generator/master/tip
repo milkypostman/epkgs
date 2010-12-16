@@ -1,0 +1,11 @@
+(:summary    "Easy implement imenu-create-index-function"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-2"
+ :provided   (easy-imenu-index-generator easy-imenu-index-generator-config)
+ :keywords   ("convenience" "imenu" "easy")
+ :homepage   "https://github.com/tm8st/emacs-easy-imenu-index-generator"
+ :commentary "\
+imenuのインデックス生成処理を書くのが億劫な場合に、
+適当なレベルのものを手軽に生成するための拡張です。
+実際の使用例は、easy-imenu-index-generator-config.elをご覧下さい。")

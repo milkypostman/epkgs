@@ -1,0 +1,3 @@
+(:summary    "Folding"
+ :license    "GPL-2"
+ :provided   (fold))

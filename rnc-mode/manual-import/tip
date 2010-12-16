@@ -1,0 +1,3 @@
+(:provided   (rnc-mode)
+ :required   ((("emacs" font-lock)))
+ :homepage   "http://www.pantor.com/download.html")

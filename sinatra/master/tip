@@ -1,0 +1,13 @@
+(:summary    "Minor mode for the Sinatra web mini-framework"
+ :created    "20090228"
+ :updated    "2009"
+ :license    "GPL-3"
+ :authors    (("Eric Schulte"))
+ :maintainer ("Eric Schulte")
+ :provided   (sinatra)
+ :required   ((("emacs" cl ruby-mode)
+	       ("nxhtml" mumamo)
+	       ("rinari" inf-ruby)
+	       ("ruby-compilation" ruby-compilation)))
+ :keywords   ("ruby" "sinatra" "project" "convenience" "web" "framework")
+ :homepage   "https://github.com/eschulte/sinatra_el")

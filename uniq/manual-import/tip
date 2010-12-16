@@ -1,0 +1,8 @@
+(:summary    "Remove duplicate lines"
+ :created    "2003"
+ :updated    "2003"
+ :license    "as-is"
+ :authors    (("Art Taylor"))
+ :maintainer ("Art Taylor")
+ :provided   (uniq)
+ :keywords   ("uniq" "duplicates"))

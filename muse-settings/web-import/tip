@@ -1,0 +1,14 @@
+(:summary    "Load settings for individual directories. "
+ :license    "GPL-2"
+ :authors    (("Phillip Lord" . "phillip.lord@newcastle.ac.uk"))
+ :maintainer ("Phillip Lord" . "phillip.lord@newcastle.ac.uk")
+ :provided   (muse-settings)
+ :homepage   "http://homepages.cs.ncl.ac.uk/phillip.lord/emacs.html"
+ :commentary "\
+Configuring muse can be fairly difficult. There are a lot of
+different options that you might want to set. Currently, these get
+set up in your .emacs; this is irritating because if you move the
+project, the settings need to change. Also, you can't version the
+wiki code and the lisp required for the publication process. This
+file attempts to address this need, by allowing settings to be
+placed in a local directory file and automatically loaded.")

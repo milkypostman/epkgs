@@ -1,0 +1,17 @@
+(:summary    "Edit local raw wiki pages"
+ :created    "2002"
+ :updated    "2004"
+ :license    "GPL-2"
+ :authors    (("Alex Schroeder" . "alex@gnu.org")
+	      ("D. Goel" . "deego@gnufans.org"))
+ :maintainer ("Alex Schroeder" . "alex@gnu.org")
+ :provided   (really-simple-wiki)
+ :keywords   ("hypermedia")
+ :homepage   "http://www.emacswiki.org/ReallySimpleWikiMode"
+ :wikipage   "http://www.emacswiki.org/ReallySimpleWikiMode"
+ :commentary "\
+Use `really-simple-wiki-mode' to edit raw wiki pages.  This is
+useful for temp files when editing textareas in w3m, for example.
+Here is how to do that:
+
+(add-to-list 'auto-mode-alist '(\"w3mtmp\" . really-simple-wiki-mode))")

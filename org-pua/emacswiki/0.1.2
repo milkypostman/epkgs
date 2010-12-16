@@ -1,0 +1,55 @@
+(:summary    "Org pop-up annotation"
+ :created    "20090411"
+ :updated    "20090411"
+ :license    "GPL-3"
+ :authors    (("Henry G. Weller" . "hweller0@gmail.com"))
+ :maintainer ("Henry G. Weller")
+ :provided   (org-pua)
+ :required   ((("emacs" org wid-edit)
+	       ("tooltip-help" tooltip-help)))
+ :keywords   ("org-mode" "files" "convenience")
+ :commentary "\
+This is a file annotation system using an org-mode file to store the
+annotations separate to the original file.  The annotations can be displayed
+either by jumping to the annotations file or by showing the annotated
+locations in the file as button-links to the annotations which can either be
+displayed in a tooltip or in the echo area.
+
+This package borrows ideas and code from:
+
+    `org-annotate-file.el' package by Philip Jackson (now supplied with
+    `org-mode' in the `contrib' directory) from which the idea of using
+    `org-mode' to store the annotations originates,
+
+    http://www.emacswiki.org/emacs/ipa.el by Tamas Patrovics from which the
+    idea of displaying the annotations \"in-place\" originates,
+
+    http://www.mail-archive.com/gnu-emacs-sources@gnu.org/msg01726/rw-acronyms.el
+    by Ralf Wachinger from which the idea of using `widget' buttons to enable
+    the annotation to be displayed \"in-place\" on request
+
+
+    http://www.emacswiki.org/emacs/tooltip-help.el by Tamas Patrovics which
+    provides the mechanism to display the annotation tooltip at the `point'
+    without the need to resort to mouse wrestling.
+
+To use put the following in your .emacs:
+    (require 'org-pua)
+
+And for convenience bind the important functions to key of your choice, e.g.
+    (global-set-key [(control c) f1] 'org-pua-annotate)
+    (global-set-key [(control c) (control f1)] 'org-pua-toggle-buttons)
+
+To change the location of the annotation file:
+    (setq org-pua-annotations-file \"~/annotated.org\")
+
+To view an existing annotation or add a new one corresponding to the current
+file and location hit C-c C-l which will read the corresponding annotations
+org file, automatically adding a link-headline for the annotation or if one
+already exist positioning the `point' on the link-headline and narrowing the
+buffer to show only that entry.
+
+To automatically insert a subheading corresponding to the current line set
+`org-pua-add-line-entry' to `t'.
+
+----------------------------------------------------------------------------")

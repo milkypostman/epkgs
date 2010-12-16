@@ -1,0 +1,21 @@
+(:summary    "Import iCalendar events from buffers to OS X iCal"
+ :created    "2007"
+ :updated    "2007"
+ :authors    (("Seth Falcon" . "seth@userprimary.net"))
+ :maintainer ("Seth Falcon" . "seth@userprimary.net")
+ :provided   (extract-ical)
+ :required   ((("emacs" gnus)))
+ :keywords   ("icalendar" "ical" "vcal" "gnus")
+ :commentary "\
+extract-ical provides send-invite-to-ical to extract an
+icalendar event from a buffer, write it to a temporary
+file, and open iCal such that the extracted event is imported.
+
+send-invite-to-ical-from-gnus allows you to run this function from
+gnus on articles containing icalendar event invitations.  You can
+cal extract-ical-gnus-insinuate in your init file to set 'C-c i' as
+the binding for importing icalendar invites from an article into
+iCal.
+
+You can tell extract-ical where to write its temporary file by
+setting the extract-ical-invite-file variable below.")

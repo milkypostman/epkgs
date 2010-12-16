@@ -1,0 +1,21 @@
+(:summary    "Display metadata about code"
+ :created    "20071016"
+ :updated    "2007"
+ :license    "GPL-3"
+ :authors    (("Phil Hagelberg" . "technomancy@gmail.com"))
+ :maintainer ("Phil Hagelberg" . "technomancy@gmail.com")
+ :provided   (augment)
+ :required   ((("emacs" cl json)))
+ :keywords   ("augment" "testing" "metadata")
+ :homepage   "http://augment.rubyforge.org/"
+ :commentary "\
+augment.el is a frontend for augment, a system for gathering and
+displaying metadata about code. It's a minor mode for displaying
+data that's been gathered and for initiating new augmentations.
+
+Tests are present in spec/emacs-frontend-test.el
+
+Installation:
+
+Put this file on your load-path and add \"(require 'augment)\" to
+your .emacs file.")

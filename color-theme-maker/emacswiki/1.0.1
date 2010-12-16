@@ -1,0 +1,34 @@
+(:summary    "Install color themes"
+ :created    "2002"
+ :updated    "2002"
+ :license    "GPL-2"
+ :authors    (("Alex Schroeder" . "alex@gnu.org"))
+ :maintainer ("Alex Schroeder" . "alex@gnu.org")
+ :provided   (color-theme-maker)
+ :required   ((("color-theme" color-theme)
+	       ("emacs" wid-edit widget)))
+ :keywords   ("faces")
+ :homepage   "http://www.emacswiki.org/ColorThemeMaker"
+ :wikipage   "http://www.emacswiki.org/ColorThemeMaker"
+ :commentary "\
+This package makes it easier to make subthemes.  If you like the
+jde faces of theme A, the erc faces from theme B, and generally
+prefer theme color-theme-gray30, then proceed as follows:
+
+Install theme A, call M-x color-theme-maker, provide \"jde\" as
+regexp and \"my-jde-subtheme\" as name, then install theme B, call
+M-x color-theme-maker, provide \"erc\" as regexp and
+\"my-erc-subtheme\" as name.  Save the two buffers as
+my-jde-subtheme.el and my-erc-subtheme.el.  In your .emacs, add:
+
+  (require 'color-theme)
+  (color-theme-gray30)
+  (setq color-theme-is-cumulative t)
+  (require 'my-jde-subtheme)
+  (my-jde-subtheme)
+  (require 'my-erc-subtheme)
+  (my-erc-subtheme)
+
+Thanks
+
+Girish Bharadwaj <girishb@gbvsoft.com> for the idea.")

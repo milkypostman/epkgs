@@ -1,0 +1,11 @@
+(:created    "2002"
+ :updated    "20020326"
+ :license    "GPL-2"
+ :authors    ((nil . "girishb@mvps.org"))
+ :maintainer (nil . "girishb@mvps.org")
+ :provided   (imdb)
+ :homepage   "http://www.emacswiki.org/IMDB"
+ :wikipage   "http://www.emacswiki.org/IMDB"
+ :commentary "\
+Put this file into your load-path and the following into your ~/.emacs:
+  (require 'imdb)")

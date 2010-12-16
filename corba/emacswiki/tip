@@ -1,0 +1,13 @@
+(:summary    "A Client Side CORBA Implementation for Emacs"
+ :created    "19980125"
+ :updated    "20010306"
+ :license    "GPL-1"
+ :authors    (("Lennart Staflin" . "lenst@lysator.liu.se"))
+ :maintainer ("Lennart Staflin" . "lenst@lysator.liu.se")
+ :provided   (corba)
+ :required   ((("emacs" cl)))
+ :homepage   "http://www.emacswiki.org/CorbaImplementation"
+ :wikipage   "http://www.emacswiki.org/CorbaImplementation"
+ :commentary "\
+Provides an implementation of CORBA Dynamic Invocation interface
+using the IIOP protocol.")

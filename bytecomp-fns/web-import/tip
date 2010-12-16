@@ -1,0 +1,9 @@
+(:summary    "Bytecode maintenance functions"
+ :created    "1996"
+ :updated    "20070809"
+ :license    "GPL-2"
+ :authors    (("Noah Friedman" . "friedman@splode.com"))
+ :maintainer (nil . "friedman@splode.com")
+ :provided   (bytecomp-fns)
+ :required   ((("emacs" backquote byte-compile)))
+ :homepage   "ftp://ftp.splode.com/pub/users/friedman/emacs-lisp/")

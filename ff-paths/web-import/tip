@@ -1,0 +1,93 @@
+(:summary    "Searches certain paths to find files"
+ :created    "19940916"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("Peter S. Galbraith" . "psg@debian.org"))
+ :maintainer ("Peter S. Galbraith" . "psg@debian.org")
+ :provided   (ff-paths)
+ :required   ((("emacs" ffap)))
+ :keywords   ("find-file" "ffap" "paths" "search")
+ :homepage   "http://people.debian.org/~psg/elisp/"
+ :commentary "\
+New versions of this package (if they exist) may be found at:
+  http://people.debian.org/~psg/elisp/ff-paths.el
+or in the Debian package `emacs-goodies-el'.
+
+This code allows you to use C-x C-f normally most of the time, except that
+if the requested file doesn't exist, it is checked against a list of
+patterns for special paths to search for a file of the same name.
+
+Examples:
+ - a file extension of .bib will cause to search the path defined in
+   $BSTINPUTS or $BIBINPUTS for the file you requested.
+ - a file extension of .h will cause the /usr/include/ and
+   /usr/local/include/ directory trees to be searched.
+ - a file extension of .sty causes a search of TEXINPUTS and of all
+   directories below /usr/lib/texmf/tex/
+ - a file extension of .el causes a search of the path set in the
+   emacs variable load-path.
+ - If the aboves searches don't return a match, the filename is searched
+   for using the `locate' command (if available on your system).
+ - gzip-compressed files (.gz) will also be found by ff-paths if
+   the package jka-compr is present.  If you use some other package,
+   simply set the ff-paths-gzipped variable to t:
+
+If one file is found, or many files of the same name are found, then the
+*completions* buffer is displayed with all possibilities, including the
+non-existing path you first provided.  Selecting it creates the new
+file.
+
+This package runs as a find-file-not-found-hooks hook, and so will
+happily live alongside other such file-finding mechanisms (e.g.
+PC-look-for-include-file PC-try-load-many-files vc-file-not-found-hook)
+
+The patterns to test against filenames and the associated paths to search
+for these files can be modified by the user by editing the variable
+ff-paths-list defined below.
+
+I suggest that you use ffap.el by Michelangelo Grigni <mic@cs.ucsd.edu>,
+now part of GNU Emacs.  His package will guess the filename from the
+text under the editing point.  It will search for an existing file in
+various places before you even get the \"File: \" prompt.  ff-paths will
+provide itself to ffap as an additional tool to locate the file before
+you ever see a prompt.  ff-paths behaves slightly differently with ffap
+than it does with find-file: if the file path selected under point by
+ffap does not exist, it is not shown in the completions buffer along
+with existing paths.  If only one existing path is found for said file,
+it is placed in the minibuffer at the ffap prompt.  Also, since using
+the `locate' command is fairly aggressive, it is not used in the ffap
+toolkit.
+
+Installation:
+
+ ff-paths installs itself as a hook in find-file-not-found-hooks for
+ find-file.  If ffap is installed, ff-paths installs itself as a toolbox
+ hook in ffap-alist (so load ff-paths after ffap).
+
+ All you need to do is add this in ~/.emacs:
+  (require 'ff-paths)
+  (ff-paths-install)
+ or customize the variable `ff-paths-install' to enable it.
+
+ NOTE: ff-paths used to install itself when it was loaded.  It no longer
+       does so because that is against the Emacs coding conventions.
+
+
+ You may alter the value of the variables:
+
+  ff-paths-list
+  ff-paths-use-locate
+  ff-paths-locate-max-matches
+  ff-paths-using-ms-windows
+  ff-paths-display-non-existent-filename
+  ff-paths-prompt-for-only-one-match
+  ff-paths-require-match
+   ff-paths-gzipped
+
+ To see their documentation and current settings, do:
+   C-h v ff-paths-list
+ because that variable is _not_ customized, and also for all other
+ variables:
+   M-x customize-group ff-paths.
+
+----------------------------------------------------------------------------")

@@ -1,0 +1,10 @@
+(:summary    "Emacs interface to the Anaya Online Spanish Dictionaries"
+ :created    "20000302"
+ :updated    "20000302"
+ :license    "GPL-2"
+ :authors    (("Daniel M. German" . "dmgerman@acm.org"))
+ :maintainer ("Daniel M. German" . "dmgerman@acm.org")
+ :provided   (anaya)
+ :required   ((("emacs" cl url)
+	       ("w3" w3 w3-forms)))
+ :keywords   ("dictionary" "spanish" "english"))

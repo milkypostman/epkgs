@@ -1,0 +1,16 @@
+(:summary    "Interface between Emacs and command line CD players"
+ :created    "2000"
+ :updated    "20050119"
+ :license    "GPL-2"
+ :authors    (("Matthew P. Hodges" . "mphodges@member.fsf.org"))
+ :maintainer ("Matthew P. Hodges" . "mphodges@member.fsf.org")
+ :provided   (cdi)
+ :wikipage   "http://www.emacswiki.org/CdInterface"
+ :commentary "\
+Package to control command line CD players.
+
+Just run the cdi-start command, which will pop up a *cdi* buffer
+with the status of the CD (eg Playing) and track/artist
+information. Various functions are bound to keys in the *cdi*
+buffer, eg \">\" is bound to cdi-next-track -- use ? or C-h b to find
+all the bindings.")

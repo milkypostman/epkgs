@@ -1,0 +1,16 @@
+(:summary    "Add score support to tracked channel buffers"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Julien Danjou" . "julien@danjou.info"))
+ :maintainer ("Julien Danjou" . "julien@danjou.info")
+ :provided   (erc-track-score)
+ :required   ((("emacs" cl erc erc-match erc-track timer)))
+ :homepage   "http://julien.danjou.info/erc-track-score.html"
+ :commentary "\
+Change `erc-track-showcount' value to transform it to a score.
+
+(require 'erc-track-score)
+(erc-track-mode 1)
+(erc-track-score-mode 1)
+(setq erc-track-showcount t)")

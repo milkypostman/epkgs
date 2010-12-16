@@ -1,0 +1,8 @@
+(:summary    "Create index of notes in a particular page"
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-2"
+ :authors    (("ThierryVolpiatto"))
+ :maintainer ("ThierryVolpiatto")
+ :provided   (planner-notes-index-page)
+ :required   ((("planner" planner))))

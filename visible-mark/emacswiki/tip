@@ -1,0 +1,9 @@
+(:summary    "Make marks visible"
+ :provided   (visible-mark)
+ :required   ((("emacs" cl easy-mmode)))
+ :homepage   "http://www.emacswiki.org/VisibleMark"
+ :wikipage   "http://www.emacswiki.org/VisibleMark"
+ :commentary "\
+This was hacked together by Jorgen Schäfer
+And hacked again by Yann Hodique
+Donated to the public domain. Use at your own risk.")

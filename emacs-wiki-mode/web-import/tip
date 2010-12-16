@@ -1,0 +1,248 @@
+(:summary    "Maintain a local Wiki using Emacs-friendly markup"
+ :created    "2001"
+ :updated    "2004"
+ :license    "GPL-2"
+ :authors    (("John Wiegley" . "johnw@gnu.org")
+	      ("Alex Schroeder" . "alex@gnu.org"))
+ :maintainer ("Michael Olson" . "mwolson@gnu.org")
+ :provided   (emacs-wiki emacs-wiki-colors emacs-wiki-httpd emacs-wiki-id emacs-wiki-macros emacs-wiki-mathml emacs-wiki-menu emacs-wiki-pgg emacs-wiki-project emacs-wiki-publish emacs-wiki-regexps emacs-wiki-srctag emacs-wiki-table update-remote)
+ :required   ((("cgi" cgi)
+	       ("emacs" cl compile derived dired font-lock info pgg pgg-gpg pp table vc vc-hooks)
+	       ("htmlize" htmlize)
+	       ("httpd" httpd)
+	       ("xml-parse" xml-parse)))
+ :keywords   ("hypermedia")
+ :homepage   "http://mwolson.org/projects/EmacsWikiMode.html"
+ :wikipage   "http://www.emacswiki.org/EmacsWikiMode"
+ :commentary "\
+Wiki is a concept, more than a thing.  It is a way of creating
+document pages using plain text markup and simplified hyperlinking.
+
+By typing a name in MixedCase, a hyperlink is automatically created
+to the document \"MixedCase\".  Pressing return on that name will
+create the file if it doesn't exist, or visit it if it does.
+
+The markup used by emacs-wiki is intended to be very friendly to
+people familiar with Emacs.  Type C-h v emacs-wiki-publishing-markup
+after this mode is loaded for how to get started.
+
+* Startup
+
+To begin using emacs-wiki, put this in your .emacs file:
+
+  (require 'emacs-wiki)
+
+Now you can type M-x emacs-wiki-find-file, give it a WikiName (or
+just hit return) and start typing!
+
+You should also type M-x customize-group, and give the name
+\"emacs-wiki\".  Change it to suite your preferences.  Each of the
+options has its own documentation.
+
+* Keystroke summary
+
+Here is a summary of keystrokes available in every Wiki buffer:
+
+  C-c C-a    jump to an index of all the Wiki pages
+  C-c C-b    show all pages that reference this page
+  C-c C-s    search for a word in your Wiki pages
+  C-c C-f    jump to another Wiki page; prompts for the name
+  C-c C-l    highlight/refresh the current buffer
+  C-c C-p    publish any Wiki pages that have changed as HTML
+  C-c C-r    rename wiki link at point
+  C-c C-v    change wiki project
+  C-c C-D    delete wiki link at point (binding will only work on X)
+  C-c =      diff this page against the last backup version
+  TAB        move to the next Wiki reference
+  S-TAB      move to the previous Wiki reference
+
+* Using pcomplete
+
+If you have pcomplete loaded, you can type M-TAB to complete Wiki
+names.  Hitting M-TAB twice or more time in succession, will cycle
+through all of the possibilities.  You can download pcomplete from
+John Wiegley's website:
+
+http://www.newartisans.com/johnw/emacs.html
+
+* ChangeLog support
+
+If you use a ChangeLog (C-x 4 a) within one of your Wiki
+directories, it will be used for notifying visitors to your wiki of
+recent changes.
+
+* Changing title or stylesheet
+
+For convenience, if you want to change the visible title, or the
+stylesheet, used by a certain Wiki page during HTML publishing,
+just put:
+
+#title Hello there
+#style hello.css
+
+at the top of the page.
+
+* <lisp> tricks
+
+<lisp></lisp> tags can be used, not only to evaluate forms for
+insertion at that point, but to influence the publishing process in
+many ways.  Here's another way to change a page's stylesheet:
+
+<lisp>
+(ignore
+  ;; use special.css for this Wiki page
+  (set (make-variable-buffer-local 'emacs-wiki-style-sheet)
+       \"<link rel=\\\"stylesheet\\\" type=\\\"text/css\\\" href=\\\"special.css\\\" />\"))
+</lisp>
+
+The 'ignore' is needed so nothing is inserted where the <lisp> tag
+occurred.  Also, there should be no blank lines before or after the
+tag (to avoid empty paragraphs from being created).  The best place
+to put this would be at the very top or bottom of the page.
+
+* Multiple projects
+
+Multiple inter-related projects may be defined.  Here is an example:
+
+(setq emacs-wiki-projects
+      '((\"WebWiki\" .
+         ((emacs-wiki-directories . (\"~/proj/wiki/webpage\"))
+          (emacs-wiki-project-server-prefix . \"../wiki/\")
+          (emacs-wiki-publishing-directory
+           . \"~/personal-site/site/wiki\")))
+        (\"ProjectsWiki\" .
+         ((emacs-wiki-directories . (\"~/proj/wiki/projects\"))
+          (emacs-wiki-project-server-prefix . \"../projects/\")
+          (emacs-wiki-publishing-directory
+           . \"~/personal-site/site/projects\")))))
+
+Whatever is assigned to the `emacs-wiki-projects' variable is
+respected by all Emacs Wiki projects like Planner and Journal.
+Multiple Planner and Journal projects are not currently supported
+\"natively\", but support could easily be hacked up for them.
+
+* Related links
+
+To assign a related link with this page, put:
+
+#related link1 link2
+
+at the top of the page, and then make use of the resulting
+`emacs-wiki-current-page-related' variable.  For example, put this
+in your footer to write related links such that they are relative
+to \"../bookmarks/\":
+
+<lisp>
+ (when emacs-wiki-current-page-related
+   (concat
+    \"<strong>Related:</strong>\\n\"
+    (mapconcat
+     (lambda (page)
+       (concat \"<a href=\\\"../bookmarks/\"
+               page \"\\\">\" page \"</a>\"))
+     (split-string
+      emacs-wiki-current-page-related)
+     \"\\n\")))
+</lisp>
+
+* Sub-lists?
+
+There is no inherent support for sub-lists, since I couldn't think
+of a simple way to do it.  But if you really need them, here's a
+trick you can use:
+
+- Hello
+  <ul>
+  <li>There
+  <li>My friend
+  </ul>
+
+* Previous Maintainers
+
+Damien Elmes (arch AT repose DOT cx) maintained Emacs Wiki from
+June 2003 to January 2004.
+
+Mark Triggs (mst AT dishevelled DOT net) maintained Emacs Wiki
+from January 2004 to March 2004.
+
+Sacha Chua (sacha AT free DOT net DOT ph) maintained Emacs Wiki
+from March 2004 to September 2004.
+
+* Contributors
+
+Alex Schroeder (alex AT gnu DOT org) is current author of
+\"wiki.el\".  His latest version is here:
+http://www.geocities.com/kensanata/wiki/WikiMode.html
+
+Frank Gerhardt (Frank DOT Gerhardt AT web DOT de) is the author of
+the original wiki-mode.  His latest version is here:
+http://www.s.netic.de/fg/wiki-mode/wiki.el
+
+Thomas Link (t DOT link AT gmx DOT at)
+
+Michal Maruska (mmaruska AT tin DOT it) contributed a patch for
+including #title in the wiki index.  Ideas from it were used, but
+not the code itself.
+
+Junichi Uekawa (dancer AT netfort DOT gr DOT jp) added euc-jp to
+the list of coding translations.
+
+Brent Goodrick (bgoodrick AT ipns DOT com) contributed a small
+patch that made derived modes such as planner work correctly.
+
+Ephrem Christopher Walborn (christopherw AT BonitaBayGroup DOT com)
+helped to make much of the generated HTML code be XHTML 1.0
+Transitional compliant.
+
+Joe Corneli (jcorneli AT math DOT utexas DOT edu) made a small
+patch to `emacs-wiki-transform-name'.
+
+Xian (email address unknown) contributed a one-line patch that made
+the S-tab key sequence work properly on Mac OS X.
+
+Gary Vaughan (gary AT gnu DOT org) contributed a number of
+enhancements.  Multi-project support in particular was extensively
+hacked on by him.
+
+John Sullivan (john AT wjsullivan DOT net) contributed a patch that
+fixes a problem with colorizing URI's that have spaces in them.
+
+Yohanes Santoso (ysantoso AT dessyku DOT is-a-geek DOT org)
+contributed the `emacs-wiki-full-path-ignore-regexp' function.  It
+is useful for VC directories like CVS or {arch} or .arch-ids, and
+for various files that happen to be in the wiki directory but are
+not meant to be published.
+
+Pascal Quesseveur (quesseveur AT abaksystemes DOT fr) contributed a
+patch that causes symbolic links to be resolved in
+`emacs-wiki-directories-member'.  This is used when deciding
+whether or not to activate emacs-wiki-mode.
+
+Wei-Hao Lin (whlin AT cs DOT cmu DOT edu) found a problem with
+parenthesis nesting in `emacs-wiki-walk-directories' and submitted
+a patch.
+
+Jay Bromley (jbromley AT gmail DOT com) contributed a 2-line patch
+to fix a \"Saving emacs-wiki-url-protocols: Invalid function: nil.\"
+error in `emacs-wiki-url-protocols'.
+
+Markus Hoenicka (markus DOT hoenicka AT mhoenicka DOT de) added
+backlink functionality to emacs-wiki.
+
+Frederik Fouvry (fouvry AT CoLi DOT Uni-SB DOT DE) provided a patch
+for `emacs-wiki-wiki-link-target' that helps deal with edge cases
+in links like \"[[#8]]\" (10 changed lines).
+
+Jim Ottaway (j DOT ottaway AT lse DOT ac DOT uk) provided a patch
+(2 lines modified) for `emacs-wiki-wiki-visible-name' that causes
+attention to be paid to case during matches.
+
+Andrea Riciputi (ariciputi AT pito DOT com) gave an initial
+implementation for tag completion by means of the
+`emacs-wiki-insert-tag' function.
+
+Yamagata Yoriyuki (yoriyuki AT mbg DOT ocn DOT ne DOT jp) helped
+fix an interwiki link issue in `emacs-wiki-make-link'.
+
+Marco Gidde (marco DOT gidde AT tiscali DOT de) made it so that
+emacs-wiki-visit-link can recognize buffer names.")

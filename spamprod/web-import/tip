@@ -1,0 +1,130 @@
+(:summary    "Generate spam complaint email"
+ :created    "2002"
+ :updated    "20021016"
+ :license    "GPL-2"
+ :authors    (("Neil W. Van Dyke" . "neil@neilvandyke.org"))
+ :maintainer ("Neil W. Van Dyke" . "neil@neilvandyke.org")
+ :provided   (spamprod)
+ :required   ((("emacs" mail-extr sendmail)
+	       ("vm" vm)))
+ :homepage   "http://www.neilvandyke.org/spamprod/"
+ :wikipage   "http://www.emacswiki.org/SpamProd"
+ :commentary "\
+*** PLEASE DO NOT USE THIS PACKAGE UNLESS YOU KNOW WHAT YOU'RE DOING.   ***
+*** With contemporary spam, this package does not find a good complaint ***
+*** address very often; it needs a complete redesign to be useful.      ***
+
+Introduction:
+
+  Given a spam email message in Emacs, `spamprod.el' generates a complaint
+  email addressed to various parties who are hopefully in a position to do
+  something about curtailing the spam.  (SEE *** NOTICE ABOVE.)
+
+System Requirements:
+
+  The `spamprod.el' package is developed using FSF GNU Emacs 21 on a
+  GNU/Linux system, and should work with recent Emacs 20 and 21 versions on
+  Unix variants.  `spamprod.el' has not yet been tested with the XEmacs fork
+  of Emacs, and I'd welcome any necessary patches.
+
+  `spamprod.el' has special support for the VM email reader package by Kyle
+  E. Jones (`http://www.wonderworks.com/vm/'), although VM is not required.
+
+Installation:
+
+  1. Put this `spamprod.el' file somewhere in your Emacs Lisp load path.
+
+  2. Add the following to your `.emacs' file (or elsewhere):
+
+         (require 'spamprod)
+
+  3. Optionally set `spamprod-exclude-domains' and
+     `spamprod-exclude-emailaddrs' in your `.emacs' file (or elsewhere).
+     For example:
+
+         (setq spamprod-exclude-domains
+               '(\"foobar.edu\"
+                 \"mailhub.someisp.net\"))
+
+         (setq spamprod-exclude-emailaddrs
+               '(\"joe@cs.foobar.edu\"
+                 \"sexkitten69@someisp.foo\"
+                 \"roleplaying-discussion@mailinglists.bar\"))
+
+  4. Optionally customize various other option variables (see \"Option
+     Variables\" below).
+
+How To Use It:
+
+  1. Do one of the following, depending on how you are viewing the spam:
+ 
+     a. In the VM mail reader: Press the `$' key (mnemonics: \"$pam\" or
+        \"spam=greed=money=$\") from within the VM summary or message windows.
+ 
+     b. In another kind of Emacs buffer: Make sure you are viewing the full
+        raw original email text (including all headers) in the current
+        buffer, and then invoke `M-x spamprod-from-buffer RET'.
+ 
+     An Emacs mail window with a generated complaint email will appear.
+ 
+  2. Quickly double-check that the complaint email is addressed to the
+     appropriate parties, make any necessary changes, and then send it
+     (usually by pressing `C-c C-c').
+
+Alternative Package:
+
+  If `spamprod.el' does not surpass your every fantasy of Emacs-based spam
+  complaint aids, you might take a look at `uce.el' by Stanislav Shalunov
+  <shalunov AT mccme.ru>.  `uce.el' was first created in 1996 with similar
+  goals, and you may prefer the way it operates.  In addition, it supports
+  Rmail and Gnus (but not VM).  Any redundancy of `spamprod.el' with respect
+  to `uce.el' is partly accidental, since I initially hacked up the former
+  at a time when I had limited Internet access and only a fuzzy recollection
+  of seeing a similar Emacs package before.
+  http://www.deja.com/getdoc.xp?AN=661148514&fmt=text
+
+Author's To-Do List:
+
+  * Code smarter injection point detection heuristic.
+
+  * Add Gnus integration.
+
+  * Add Rmail integration.  (Actually, wait for an Rmail user to do this and
+    send us a patch.)
+
+  * Make sure that other newline conventions don't break us.
+
+  * Be more smart about Received headers, such as not complaining about the
+    last hop (unless there's only one hop).  Look at more samples to get a
+    better intuition for the best way.
+
+  * Try to avoid mailing to the loopback address.
+
+  * Include `^From_' header when attaching spam to complaint mail, unless
+    the header has been mangled, such as by VM.
+
+  * Special-case complaint mechanisms for certain domains (e.g., see
+    `http://www.nic.it/NA/mailspam-engl.html').
+
+  * Add a better way to avoid automatic replies.
+
+  * Automatically detect when an icky little spam company is using its own
+    hosts for spam, and figure out their upstream connectivity provider.
+
+  * Try to extract a domain from any `^From_' header.
+
+  * Maybe get email addresses out of spam body.
+
+  * Maybe extract domain names of any URLs mentioned in spam body.
+
+  * Maybe try to get a domain out of the Message-ID.
+
+  * Reconcile `spamprod-max-domain-depth' with the fact that we now
+    recognize that some domains have two or more too-general levels.
+    Perhaps the easiest way to do this is to instead specify the maximum
+    depth *below the too-general threshhold*, with the default being 2.
+
+  * Maybe don't drill up/down some domains.  For example, there's probably
+    no point in complaining to subdomains of `compuserve.com'.
+
+  * Respond to suggestions from our Gentle Readers.")

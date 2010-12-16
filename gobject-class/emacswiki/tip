@@ -1,0 +1,5 @@
+(:summary    "Functions to easy GObject-based class developers"
+ :authors    (("Gustavo Sverzut Barbieri" . "barbieri@gmail.com"))
+ :maintainer ("Gustavo Sverzut Barbieri" . "barbieri@gmail.com")
+ :provided   (gobject-class)
+ :keywords   ("gobject" "glib" "gtk" "helper" "utilities"))

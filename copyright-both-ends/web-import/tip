@@ -1,0 +1,13 @@
+(:summary    "Update copyright at start and end of file"
+ :created    "2008"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Kevin Ryde" . "user42@zip.com.au"))
+ :maintainer ("Kevin Ryde" . "user42@zip.com.au")
+ :provided   (copyright-both-ends)
+ :keywords   ("tools")
+ :homepage   "http://user42.tuxfamily.org/copyright-both-ends/index.html"
+ :commentary "\
+`copyright-both-ends-update' does a `copyright-update' to update a
+copyright notice you might have at both the start and end of a file.
+See the docstring below for more.")

@@ -1,0 +1,11 @@
+(:summary    "Simple extensions for `doc-view'"
+ :created    "20080912"
+ :updated    "20080912"
+ :license    "GPL-3"
+ :authors    (("Andy Stewart" . "lazycat.manatee@gmail.com"))
+ :maintainer ("Andy Stewart" . "lazycat.manatee@gmail.com")
+ :provided   (doc-view-extension)
+ :required   ((("emacs" doc-view)))
+ :keywords   ("doc-view")
+ :commentary "\
+This package have some little extensions functions for `doc-view'")

@@ -1,0 +1,178 @@
+(:summary    "One key"
+ :created    "20081222"
+ :updated    "20090523"
+ :license    "GPL-3"
+ :authors    (("Andy Stewart" . "lazycat.manatee@gmail.com")
+	      ("rubikitch" . "rubikitch@ruby-lang.org"))
+ :maintainer ("Andy Stewart" . "lazycat.manatee@gmail.com")
+ :provided   (one-key one-key-config one-key-default)
+ :required   ((("emacs" cl)))
+ :keywords   ("one-key")
+ :homepage   "http://www.emacswiki.org/OneKey"
+ :wikipage   "http://www.emacswiki.org/OneKey"
+ :commentary "\
+Along with many extensions into Emacs, have many keystroke is
+used, and always forget the keystroke when have too many.
+
+This package is for fix above problems.
+
+One Key provide a handle with TOP keystroke, and then when you
+type TOP keystroke, you will get a keystroke menu with pop-up
+window, and will show a group keystroke in pop-up window.
+
+Then you just type keystroke in window show, you can execute
+command corresponding.
+
+So you need just remember the TOP keystroke with group command.
+Others keystroke notify will display in pop-up window.
+
+* Quick use:
+
+Setup below variable and function in your ~/.emacs
+
+(defvar one-key-menu-emms-alist nil
+  \"`One-Key' menu list for EMMS.\")
+
+(setq one-key-menu-emms-alist
+      '(
+        ((\"g\" . \"Playlist Go\") . emms-playlist-mode-go)
+        ((\"d\" . \"Play Directory Tree\") . emms-play-directory-tree)
+        ((\"f\" . \"Play File\") . emms-play-file)
+        ((\"i\" . \"Play Playlist\") . emms-play-playlist)
+        ((\"t\" . \"Add Directory Tree\") . emms-add-directory-tree)
+        ((\"c\" . \"Toggle Repeat Track\") . emms-toggle-repeat-track)
+        ((\"w\" . \"Toggle Repeat Playlist\") . emms-toggle-repeat-playlist)
+        ((\"u\" . \"Play Now\") . emms-play-now)
+        ((\"z\" . \"Show\") . emms-show)
+        ((\"s\" . \"Emms Streams\") . emms-streams)
+        ((\"b\" . \"Emms Browser\") . emms-browser)))
+
+(defun one-key-menu-emms ()
+  \"`One-Key' menu for EMMS.\"
+  (interactive)
+  (one-key-menu \"EMMS\" one-key-menu-emms-alist t))
+
+Bind any you like keystroke with function `one-key-menu-emms'.
+Like me,
+
+     (global-set-key (kbd \"C-c p\") 'one-key-menu-emms)
+
+When type \"C-c p\" will popup window and list keystroke menu.
+Then you just type special keystroke that list in menu,
+you will execute corresponding command.
+
+That's all.
+
+And now you don't need remember so many keystrokes, just remember
+TOP keystroke is enough.
+
+* Advanced use:
+
+** The format of menu list:
+
+((\"KEYSTROKE\" . \"DESCRIBE\") . COMMAND)
+
+Example:
+
+(defvar example-menu-alist
+     '(
+       ((\"Keystroke-A\" . \"Describe-A\") . Command-A)
+       ((\"Keystroke-B\" . \"Describe-B\") . Command-B)
+       ((\"Keystroke-C\" . \"Describe-C\") . Command-C)
+       ))
+
+Make sure COMMAND is `interactive', otherwise will
+throw error.
+
+** The format of menu function:
+
+(one-key-menu \"MENU-NAME\" MENU-ALIST)
+
+Example:
+
+(defun example-menu ()
+  (interactive)
+  (one-key-menu \"example\" example-menu-alist)
+
+** The argument of function `one-key-menu':
+
+`title' is the title of menu, any string you like.
+`info-alist' is a special list that contain KEY, DESCRIBE
+     and COMMAND.  see above describe about `example-menu-alist'.
+`miss-match-exit-p' is mean popup window will exit when you
+     type a KEY that can't match in menu.
+`recursion-p' is whether recursion execute `one-key-menu' self
+     when no KEY match in menu.
+`protect-function' is a protect function call last in `one-key-menu',
+     make sure this function is a `interactive' function.
+`alternate-function' is alternate function execute at last.
+`execute-last-command-when-miss-match' whether execute last input command
+when keystroke is miss match.
+
+Tips:
+
+You can use `one-key-insert-template' insert template code for special keymap.
+Example, after you run `one-key-insert-template', you will got Keymap prompt:
+\"Keymap to One-Key: \", you type \"C-x r\", you will got Title prompt:
+\"Title: \", input any name you like.
+Then will generate template code like below:
+
+(defvar one-key-menu-bookmark-alist nil
+  \"The `one-key' menu list for BOOKMARK.\")
+
+(setq one-key-menu-bookmark-alist
+   '(
+     ((\"C-@\" . \"point-to-register\") . point-to-register)
+     ((\"SPC\" . \"point-to-register\") . point-to-register)
+     ((\"+\" . \"increment-register\") . increment-register)
+     ((\"b\" . \"bookmark-jump\") . bookmark-jump)
+     ((\"c\" . \"clear-rectangle\") . clear-rectangle)
+     ((\"d\" . \"delete-rectangle\") . delete-rectangle)
+     ((\"f\" . \"frame-configuration-to-register\") . frame-configuration-to-register)
+     ((\"g\" . \"insert-register\") . insert-register)
+     ((\"i\" . \"insert-register\") . insert-register)
+     ((\"j\" . \"jump-to-register\") . jump-to-register)
+     ((\"k\" . \"kill-rectangle\") . kill-rectangle)
+     ((\"l\" . \"bookmark-bmenu-list\") . bookmark-bmenu-list)
+     ((\"m\" . \"bookmark-set\") . bookmark-set)
+     ((\"n\" . \"number-to-register\") . number-to-register)
+     ((\"o\" . \"open-rectangle\") . open-rectangle)
+     ((\"r\" . \"copy-rectangle-to-register\") . copy-rectangle-to-register)
+     ((\"s\" . \"copy-to-register\") . copy-to-register)
+     ((\"t\" . \"string-rectangle\") . string-rectangle)
+     ((\"w\" . \"window-configuration-to-register\") . window-configuration-to-register)
+     ((\"x\" . \"copy-to-register\") . copy-to-register)
+     ((\"y\" . \"yank-rectangle\") . yank-rectangle)
+     ((\"C-SPC\" . \"point-to-register\") . point-to-register)
+     ))
+
+(defun one-key-menu-bookmark ()
+  (interactive)
+  (one-key-menu \"BOOKMARK\" one-key-menu-bookmark-alist))
+
+Alike you can use command `one-key-show-template', it similar with
+`one-key-insert-template', it show template code in buffer
+\"One-Key-Template\" instead insert.
+
+
+Installation:
+
+Put one-key.el to your load-path.
+The load-path is usually ~/elisp/.
+It's set in your ~/.emacs like this:
+(add-to-list 'load-path (expand-file-name \"~/elisp\"))
+
+And the following to your ~/.emacs startup file.
+
+(require 'one-key)
+
+Because this library use special implement method,
+can occur `max-lisp-eval-depth' or `max-specpdl-size' error.
+
+So i think setup above two variables larger
+will minish probability that error occur.
+
+Example I set below:
+
+(setq max-lisp-eval-depth 10000)
+(setq max-specpdl-size 10000)")

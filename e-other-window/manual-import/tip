@@ -1,0 +1,17 @@
+(:summary    "Flash windows when you change to them"
+ :created    "2003"
+ :updated    "20030110"
+ :license    "GPL-2"
+ :authors    (("Kevin A. Burton" . "burton@openprivacy.org"))
+ :maintainer ("Kevin A. Burton" . "burton@openprivacy.org")
+ :provided   (e-other-window)
+ :commentary "\
+The e-other-window package places an overlay across the current buffer after
+you use `other-window'.  This keeps the user from being confused as to where
+the current (point) is.
+
+The overlay is removed after `e-other-window-interval' seconds.  This is what
+provides the flash effect.
+
+The major advantage is that instead of trying to find one small cursor in
+your large emacs frame you can now just look for the 'flash'.")

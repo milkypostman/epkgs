@@ -1,0 +1,12 @@
+(:summary    "Emacs interface to Ditz issue tracking system "
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-3"
+ :authors    (("Kentaro Kuribayashi" . "kentarok@gmail.com"))
+ :maintainer ("Kentaro Kuribayashi" . "kentarok@gmail.com")
+ :provided   (ditz)
+ :keywords   ("ditz" "todo")
+ :wikipage   "http://www.emacswiki.org/Ditz"
+ :commentary "\
+See README file or the website below:
+http://github.com/kentaro/emacs-ditz/tree/master")

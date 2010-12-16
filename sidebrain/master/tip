@@ -1,0 +1,9 @@
+(:summary    "Programmer's memory aide"
+ :updated    "20060505"
+ :license    "GPL-2"
+ :authors    (("John Sturdy"))
+ :maintainer ("John Sturdy")
+ :provided   (sidebrain sidebrain-browse sidebrain-commands sidebrain-custom sidebrain-display sidebrain-effort sidebrain-macros sidebrain-menu sidebrain-planner sidebrain-projects sidebrain-todo sidebrain-vars sidebrain-voice sidebrain-xml)
+ :required   ((("emacs" cl time-date xml)))
+ :homepage   "http://sidebrain.sourceforge.net/"
+ :wikipage   "http://www.emacswiki.org/SideBrain")

@@ -1,0 +1,16 @@
+(:summary    "Emacs Lisp utilities for web scraping"
+ :created    "2005"
+ :updated    "2007"
+ :license    "GPL-2"
+ :authors    (("Edward O'Connor" . "hober0@gmail.com"))
+ :maintainer ("Edward O'Connor" . "hober0@gmail.com")
+ :provided   (scrape)
+ :required   ((("emacs" url xml)))
+ :keywords   ("convenience")
+ :homepage   "http://edward.oconnor.cx/elisp/"
+ :commentary "\
+This is a simple set of utilities that help to do website scraping in
+Emacs Lisp. We shell out to HTML Tidy to do some of the dirty work.
+
+You should use tidy.el if you're looking to use Tidy to clean up HTML
+you're composing in Emacs.")

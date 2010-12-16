@@ -1,0 +1,3 @@
+(:provided   (geben)
+ :required   ((("emacs" cl custom gud tree-widget url-util xml)))
+ :homepage   "https://github.com/facebook/phpsh")

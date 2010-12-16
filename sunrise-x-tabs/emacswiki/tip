@@ -1,0 +1,68 @@
+(:summary    "Tabs for the Sunrise Commander File Manager"
+ :created    "20091024"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("José Alfredo Romero L." . "escherdragon@gmail.com"))
+ :maintainer ("José Alfredo Romero L." . "escherdragon@gmail.com")
+ :provided   (sunrise-x-tabs)
+ :required   ((("emacs" desktop)
+	       ("sunrise-commander" sunrise-commander)))
+ :keywords   ("sunrise" "commander" "files" "manager" "tabs" "minor" "mode")
+ :commentary "\
+This  extension brings tab‐based navigation to the Sunrise Commander. It adds
+to the list of optional mechanisms already available in  Sunrise  for  moving
+around  the  file system (like regular bookmarks, checkpoints, history rings,
+materialized virtual buffers, navigable paths and file‐following) another way
+to  maintain a list of selected locations one wants to return later on, or to
+compose \"breadcrumb trails\" for complex repetitive operations.
+
+The  main  difference between tabs and other mechanisms is that once a buffer
+has been assigned to a tab, it will not be killed automatically  by  Sunrise,
+so  it’s  possible  to keep it around as long as necessary with all its marks
+and state untouched.  Tabs can be persisted across sessions using the DeskTop
+feature.
+
+Creating, using and destroying tabs are fast and easy operations, either with
+mouse or keyboard:
+
+* Press C-j (or select Sunrise > Tabs > Add Tab in the menu) to create a new
+tab or to rename an already existing tab.
+
+* Press C-k (or right-click the tab) to kill an existing tab.
+
+*  Press  C‐n and C‐p to move from tab to tab (\"Next\", \"Previous\"), or simply
+left‐click on the tab to focus its assigned buffer. These two keybindings can
+be prefixed with an integer to move faster.
+
+*  The last four bindings can be combined with Meta (i.e. C‐M‐j, C‐M‐k, C‐M‐n
+and C‐M‐p) to perform the same operation on the  passive  pane  or  (when  in
+synchronized navigation mode) on both panes simultaneously.
+
+*  Killing  the  current  buffer with C‐x k automatically switches to the one
+assigned to the first available tab (if any).
+
+The  extension  is  provided  as a minor mode, so you can enable / disable it
+totally by issuing the command (M-x) sr-tabs-mode.
+
+It does *not* pretend to be a generic solution for tabs in emacs. If you need
+one, have a look at TabBar  mode  (http://www.emacswiki.org/emacs/TabBarMode)
+by David Ponce. I wrote this just because it turned out to be easier to write
+this than to customize tabbar to behave exactly  like  I  wanted  inside  the
+Sunrise  panes.  It’s meant to be simple and to work nicely with Sunrise with
+just a few tabs (up to 10‐15 per pane, maybe).
+
+This is version 1 $Rev: 331 $ of the Sunrise Commander Tabs Extension.
+
+It  was  written  on GNU Emacs 23 on Linux, and tested on GNU Emacs 22 and 23
+for Linux and on EmacsW32 (version 23) for  Windows.
+
+Installation and Usage:
+
+1) Put this file somewhere in your Emacs load-path.
+
+2)  Add  a (require ’sunrise‐x‐tabs) expression to your .emacs file somewhere
+after the (require ’sunrise‐commander) one.
+
+3) Evaluate the new expression, or reload your .emacs file, or restart emacs.
+
+4) Enjoy ;-)")

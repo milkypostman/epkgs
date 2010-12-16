@@ -1,0 +1,13 @@
+(:summary    "MH Calendar"
+ :created    "19940704"
+ :authors    (("Yoshinari Nomura" . "nom@quickhack.net"))
+ :maintainer ("Yoshinari Nomura" . "nom@quickhack.net")
+ :provided   (mhc mhc-bm mhc-calendar mhc-cmail mhc-compat mhc-cvs mhc-date mhc-day mhc-db mhc-draft mhc-e21 mhc-face mhc-file mhc-gnus mhc-guess mhc-header mhc-logic mhc-mew mhc-mime mhc-minibuf mhc-misc mhc-parse mhc-ps mhc-record mhc-schedule mhc-slot mhc-summary mhc-sync mhc-vars mhc-wl mhc-xmas nnmhc)
+ :required   ((("apel" pcustom poe static)
+	       ("emacs" bytecomp cl easymenu gnus-art gnus-sum message nnheader nnmail nnoo)
+	       ("flim" eword-decode)
+	       ("mew" mew)
+	       ("semi" mime-edit)
+	       ("wanderlust" elmo-localdir wl-summary)
+	       (nil bitmap cmail)))
+ :homepage   "http://www.quickhack.net/mhc/")

@@ -1,0 +1,20 @@
+(:summary    "A new XML mode"
+ :created    "2003"
+ :updated    "2004"
+ :license    "GPL-2"
+ :authors    (("James Clark"))
+ :maintainer ("James Clark")
+ :provided   (nxml-enc nxml-glyph nxml-maint nxml-mode nxml-ns nxml-outln nxml-parse nxml-rap nxml-uchnm nxml-util rng-cmpct rng-dt rng-loc rng-match rng-nxml rng-parse rng-pttrn rng-uri rng-util rng-valid rng-xsd xmltok xsd-regexp)
+ :required   ((("emacs" easymenu)))
+ :keywords   ("xml")
+ :homepage   "http://www.thaiopensource.com/nxml-mode/"
+ :wikipage   "http://www.emacswiki.org/NxmlMode"
+ :commentary "\
+To use this include rng-auto.el in your .emacs.
+
+See nxml-rap.el for description of parsing strategy.
+
+The font locking here is independent of font-lock.el.  We want to
+do more sophisticated handling of changes and we want to use the
+same xmltok rather than regexps for parsing so that we parse
+consistently and correctly.")

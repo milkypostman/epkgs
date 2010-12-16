@@ -1,0 +1,16 @@
+(:summary    "Code to encrypt message but make sure they aren't"
+ :created    "2000"
+ :updated    "20001208"
+ :license    "GPL-2"
+ :authors    (("Kevin A. Burton" . "burton@openprivacy.org"))
+ :maintainer ("A. Burton" . "burton@openprivacy.org")
+ :provided   (mc-safe-sign-message)
+ :required   ((("mailcrypt" mailcrypt)))
+ :keywords   ("mailcrypt" "message" "sign" "encryption")
+ :commentary "\
+I became tired of mc-sign signing mails that I had already encrypted.  This
+is just some lisp magic to *only* sign if I haven't encrypted.  This also
+caused some problems with mailers that required passphrases to be entered
+twice, once on verifying the signature and again when decrypting.
+
+This should be added to the mailcrypt distribution IMO.")

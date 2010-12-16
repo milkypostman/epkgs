@@ -1,0 +1,13 @@
+(:summary    "Emacs project mamagement tool"
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-2"
+ :authors    (("Dan Pomohaci" . "dan.pomohaci@gmail.com"))
+ :maintainer ("Dan Pomohaci" . "dan.pomohaci@gmail.com")
+ :provided   (epm epm-autoloads epm-config epm-rally epm-scrum epm-taskjuggler)
+ :required   ((("emacs" cl org)
+	       ("gnuplot" gnuplot)
+	       ("muse" muse muse-mode)))
+ :keywords   ("project" "management" "muse" "scrum")
+ :homepage   "http://code.google.com/p/epm-mode/"
+ :wikipage   "http://www.emacswiki.org/EpmMode")

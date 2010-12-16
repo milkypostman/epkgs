@@ -1,0 +1,16 @@
+(:summary    "Highlight surrounding parentheses"
+ :created    "2007"
+ :updated    "2009"
+ :license    "GPL-2"
+ :authors    (("Nikolaj Schumacher" . "bugs@nschum.de"))
+ :maintainer ("Nikolaj Schumacher" . "bugs@nschum.de")
+ :provided   (highlight-parentheses)
+ :required   ((("emacs" cl)))
+ :keywords   ("faces" "matching")
+ :homepage   "http://nschum.de/src/emacs/highlight-parentheses"
+ :wikipage   "http://www.emacswiki.org/HighlightParentheses"
+ :commentary "\
+Add the following to your .emacs file:
+(require 'highlight-parentheses)
+
+Enable `highlight-parentheses-mode'.")

@@ -1,0 +1,6 @@
+(:created    "2004"
+ :updated    "2004"
+ :license    "as-is"
+ :provided   (ray)
+ :required   ((("emacs" cl)))
+ :homepage   "http://www.stanford.edu/~priimak/soft/rays.html")

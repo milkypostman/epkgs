@@ -1,0 +1,12 @@
+(:summary    "Provides an interface for turning line-numbering off"
+ :created    "20100920"
+ :updated    "20100929"
+ :license    "GPL-3"
+ :authors    (("Matthew L. Fidler")
+	      ("Florian Adamsky (see wiki)"))
+ :maintainer ("Matthew L. Fidler")
+ :provided   (linum-off)
+ :required   ((("emacs" linum)))
+ :commentary "\
+Put this in your load path and then:
+(require 'linum-off)")

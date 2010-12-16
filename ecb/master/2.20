@@ -1,0 +1,108 @@
+(:summary    "A code browser for Emacs"
+ :created    "2000"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("Jesper Nordenberg" . "mayhem@home.se")
+	      ("Klaus Berndl" . "klaus.berndl@sdm.de")
+	      ("Kevin A. Burton" . "burton@openprivacy.org"))
+ :maintainer ("Klaus Berndl" . "klaus.berndl@sdm.de")
+ :provided   (ecb ecb-autogen ecb-buffertab ecb-compatibility ecb-compilation ecb-create-layout ecb-cycle ecb-eshell ecb-examples ecb-face ecb-file-browser ecb-help ecb-jde ecb-layout ecb-layout-defs ecb-method-browser ecb-mode-line ecb-multiframe ecb-navigate ecb-semantic-wrapper ecb-speedbar ecb-tod ecb-upgrade ecb-util ecb-winman-support html-helper jn-file-tree jn-tree-node jn-tree-view jn-utils jn-window silentcomp tree-buffer)
+ :required   ((("cedet" semantic-load)
+	       ("emacs" assoc autoload avoid browse-url cl compile cus-edit easymenu eieio executable hideshow imenu overlay reporter ring semantic speedbar)
+	       ("escreen" escreen)
+	       ("jdee" efc)
+	       ("winring" winring)))
+ :keywords   ("browser" "code" "programming" "tools")
+ :homepage   "http://ecb.sourceforge.net/"
+ :wikipage   "http://www.emacswiki.org/EmacsCodeBrowser"
+ :commentary "\
+ECB stands for \"Emacs Code Browser\" and is a source-code-browser for
+(X)Emacs. It is a global minor-mode which offers a language-independent and
+complete IDE (Integrated Development Environment) within one Emacs-frame.
+It displays a couple of windows that can be used to browse directories,
+files and file-contents like methods and variables. It supports source-code
+parsing for semantic-supported languages like Java, C, C++, Elisp and
+Scheme as well as for source-types supported \"only\" by imenu or etags (e.g.
+perl, TeX, LaTeX etc.). In addition it offers (optional) a durable
+\"compile-window\" at the bottom of the frame which is used to display all
+help-, grep-, compile- and etc.-output. The rest of the frame is called the
+\"edit-area\" which can be divided in several (no limit) edit-windows which
+are used for editing of sources. Deleting some of the edit-windows does
+neither destroy the compile-window nor the browsing-windows.
+
+Here is an ascii-screenshot of what ECB offers you:
+
+  ------------------------------------------------------------------
+  |              |                                                 |
+  | Directories  |                                                 |
+  |              |                                                 |
+  |--------------|                                                 |
+  |              |                                                 |
+  | Sources      |                                                 |
+  |              |                                                 |
+  |--------------|                   Edit-area                     |
+  |              |    (can be splitted in several edit-windows)    |
+  | Methods/Vars |                                                 |
+  |              |                                                 |
+  |--------------|                                                 |
+  |              |                                                 |
+  | History      |                                                 |
+  |              |                                                 |
+  ------------------------------------------------------------------
+  |                                                                |
+  |                 Compilation-window (optional)                  |
+  |                                                                |
+  ------------------------------------------------------------------
+
+This is only one example-layout - ECB offers a lot of different layouts.
+
+Installation
+
+To use the Emacs code browser add the ECB files to your load path and add the
+following line to your .emacs file:
+
+If you want autoloading ECB after first start:
+
+   (require 'ecb-autoloads)
+
+or if you want loading the complete ECB:
+
+   (require 'ecb)
+
+Optional: You can byte-compile ECB with `ecb-byte-compile' after the
+          ECB-package is loaded
+
+
+Requirements
+
+- Semantic, author-version between 1.4 and 1.4.9
+  (http://cedet.sourceforge.net/semantic.shtml).
+- Eieio, author-version between 0.17 and 0.17.9
+  (http://cedet.sourceforge.net/eieio.shtml).
+- speedbar, author version 0.14beta1 or higher
+  (http://cedet.sourceforge.net/speedbar.shtml)
+- Optional: If Java code is edited the ECB works best when the JDEE package
+  (http://sunsite.auc.dk/jde) is installed.
+
+
+Activation
+
+ECB is either activated and started by calling
+   M-x ecb-activate
+or
+   via the menu \"Tools --> Start Code Browser (ECB)\"
+
+ECB can also be (de)activated/toggled by M-x ecb-minor-mode.
+
+After activating ECB you should call `ecb-show-help' to get a detailed
+description of what ECB offers to you and how to use ECB.
+
+
+Availability
+
+The latest version of the ECB is available at http://ecb.sourceforge.net
+
+History
+
+For the ChangeLog of this file see the CVS-repository. For a complete
+history of the ECB-package see the file NEWS.")

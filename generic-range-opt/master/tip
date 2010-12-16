@@ -1,0 +1,49 @@
+(:summary    "Generate range operations"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-2"
+ :authors    ((nil . "tm8st@hotmail.co.jp"))
+ :maintainer (nil . "tm8st@hotmail.co.jp")
+ :provided   (generic-range-opt)
+ :required   ((("emacs" cl)
+	       ("thing-opt" thing-opt)))
+ :keywords   ("convenience" "delete" "kill" "copy" "mark")
+ :homepage   "https://github.com/tm8st/emacs-generic-range-opt"
+ :commentary "\
+様々な範囲へのdelete, copy, kill, markを定義する為のelです.
+現在範囲の指定は始点、終点、マークによって可能です。
+(defmacro generic-range-opt (name begin end &optional mark)
+のbegin, end, mark にそれぞれ設定するための関数を渡すとgro-op-nameという名前で定義されるので、
+それをキーにバインドしてお使いください。
+
+Installation:
+
+(require 'generic-range-opt)
+
+(global-unset-key (kbd \"C-d\"))
+(global-set-key (kbd \"C-d C-j\") 'delete-char)
+(global-set-key (kbd \"C-d C-i\") 'gro-delete-follow-word)
+(global-set-key (kbd \"C-d C-f\") 'gro-delete-forward-line)
+(global-set-key (kbd \"C-d C-b\") 'gro-delete-backward-line)
+(global-set-key (kbd \"C-d C-s\") 'gro-delete-search-forward-char)
+(global-set-key (kbd \"C-d C-r\") 'gro-delete-search-backward-char)
+(global-set-key (kbd \"C-d C-e\") 'gro-delete-follow-sexp)
+(global-set-key (kbd \"C-d C-w\") 'gro-delete-follow-string)
+(global-set-key (kbd \"C-d C-d\") 'gro-delete-current-line)
+(global-set-key (kbd \"C-d C-n\") 'gro-delete-next-line)
+(global-set-key (kbd \"C-d C-p\") 'gro-delete-prev-line)
+(global-set-key (kbd \"C-d C-h\") 'gro-delete-jaunte-prev)
+
+(global-unset-key (kbd \"C-8\"))
+(global-set-key (kbd \"C-8 C-i\") 'gro-mark-follow-word)
+(global-set-key (kbd \"C-8 C-f\") 'gro-mark-forward-line)
+(global-set-key (kbd \"C-8 C-b\") 'gro-mark-backward-line)
+(global-set-key (kbd \"C-8 C-s\") 'gro-mark-search-forward-char)
+(global-set-key (kbd \"C-8 C-r\") 'gro-mark-search-backward-char)
+(global-set-key (kbd \"C-8 C-e\") 'gro-mark-follow-sexp)
+(global-set-key (kbd \"C-8 C-w\") 'gro-mark-follow-string)
+(global-set-key (kbd \"C-8 C-8\") 'gro-mark-current-line)
+(global-set-key (kbd \"C-8 C-n\") 'gro-mark-next-line)
+(global-set-key (kbd \"C-8 C-p\") 'gro-mark-prev-line)
+(global-set-key (kbd \"C-8 C-h\") 'gro-mark-jaunte-prev)
+(global-set-key (kbd \"C-8 C-d\") 'gro-mark-defun*)")

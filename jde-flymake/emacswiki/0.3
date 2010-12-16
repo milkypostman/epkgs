@@ -1,0 +1,30 @@
+(:summary    "An extension to flymake that uses JDEE and Jikes"
+ :created    "2004"
+ :updated    "20040617"
+ :license    "GPL-2"
+ :authors    (("Nascif A. Abousalh Neto" . "nascif@acm.org"))
+ :maintainer ("Nascif A. Abousalh Neto" . "nascif@acm.org")
+ :provided   (jde-flymake)
+ :required   ((("emacs" flymake)
+	       ("jdee" jde)))
+ :keywords   ("java" "syntax" "checker" "tools")
+ :commentary "\
+This module provides extensions to Flymake, created by Pavel Kobiakov, to
+allow the JDEE configuration and the jikes compiler to be used for the
+on-the-fly syntax checking of Java files. 
+
+Flymake comes with built-in support for Java but relies on Makefiles for
+calling Jikes; this module relies instead on JDEE project variables, removing
+the need to create Makefiles just for the purpose of using Flymake.
+
+The advantages of re-using the JDEE configuration are obvious, as it
+eliminates the redundancy of keeping the extra configuration required for the
+Makefile, specially since Ant is becoming the preferred tool for building
+Java projects. 
+
+Jikes is quite fast, can be configured to not generate class
+files (which is nice since the purpose of flymake is to do just syntax
+checking), and the latest version includes adittional semantic tests derived
+from the \"Effective Java\" book which are very useful as well. This feature
+has drawbacks as well as some valid constructors (like empty catch blocks)
+are flagged as errors.")

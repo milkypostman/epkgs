@@ -1,0 +1,36 @@
+(:summary    "Filter for echo area status messages"
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-2"
+ :authors    (("Nikolaj Schumacher" . "bugs@nschum.de"))
+ :maintainer ("Nikolaj Schumacher" . "bugs@nschum.de")
+ :provided   (echo-pick)
+ :required   ((("emacs" cl eldoc)))
+ :keywords   ("convenience")
+ :homepage   "http://nschum.de/src/emacs/echo-pick"
+ :commentary "\
+A bunch of modes (e.g. Eldoc) exist that display information about the cursor
+position in the echo area.  Unfortunately, these modes will often fight for
+the echo area and there is no way to specify a priority.  echo-pick aims to
+provide a way to prioritize these messages, or even to display multiple
+messages at once.
+
+To specify the priorities edit `echo-pick-function-list', then enable
+`echo-pick-mode' and don't forget to disable the other modes' echo messages.
+If they can't be turned off, maybe you can set a very long timeout.
+
+`echo-pick-mode' respects a lot of Eldoc's settings, including
+`eldoc-message-commands'.
+
+Here's an example of how a list of functions could look like:
+
+(setq echo-pick-function-list
+      `((git-blame-mode . git-blame-identify)
+        (lambda () (get-char-property (point) 'help-echo))
+        (lambda () (let ((this-command nil)
+                         (last-command (aref eldoc-message-commands 0))
+                         (eldoc-mode t)
+                         (eldoc-documentation-function nil))
+                     (eldoc-print-current-symbol-info)))
+        (when (eq major-mode 'emacs-lisp-mode) eldoc-documentation-function)
+        (lambda () (save-excursion semantic-idle-summary-idle-function))))")

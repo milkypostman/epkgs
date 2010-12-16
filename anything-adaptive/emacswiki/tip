@@ -1,0 +1,8 @@
+(:created    "2007"
+ :updated    "2007"
+ :license    "GPL-2"
+ :authors    (("Tamas Patrovics"))
+ :maintainer ("Tamas Patrovics")
+ :provided   (anything-adaptive)
+ :commentary "\
+User config")

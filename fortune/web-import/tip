@@ -1,0 +1,6 @@
+(:summary    "Fortune file handling"
+ :updated    "20060129"
+ :license    "GPL-2"
+ :provided   (fortune)
+ :required   ((("emacs" cl)))
+ :wikipage   "http://www.emacswiki.org/Fortune")

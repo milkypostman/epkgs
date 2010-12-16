@@ -1,0 +1,7 @@
+(:summary    "Helps spreading the true faith"
+ :updated    "20071206"
+ :license    "GPL"
+ :authors    (("Deepak Goel" . "deego@glue.umd.edu"))
+ :maintainer ("Deepak Goel" . "deego@glue.umd.edu")
+ :provided   (faith)
+ :homepage   "http://www.gnufans.net/~deego/emacs.html")

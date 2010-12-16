@@ -1,0 +1,11 @@
+(:created    "2007"
+ :updated    "20070217"
+ :license    "GPL-2"
+ :authors    ((nil . "wenbinye@163.com"))
+ :maintainer (nil . "wenbinye@163.com")
+ :provided   (tags-tree)
+ :required   ((("emacs" cl etags)
+	       ("tree-mode" tree-mode)))
+ :commentary "\
+Put this file into your load-path and the following into your ~/.emacs:
+  (require 'tags-tree)")

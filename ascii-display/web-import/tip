@@ -1,0 +1,36 @@
+(:summary    "Highlight special ASCII characters in another buffer"
+ :created    "2000"
+ :updated    "2000"
+ :license    "GPL-2"
+ :authors    (("Colin Walters" . "walters@verbum.org"))
+ :maintainer ("Deepak Goel" . "deego@glue.umd.edu")
+ :provided   (ascii-display)
+ :keywords   ("ascii")
+ :commentary "\
+Just use 'M-x ascii-display-buffer' to see special characters
+highlighted.  You can also do 'M-x ascii-display-file' to display a
+file.
+
+*** IMPORTANT NOTE ON CODING SYSTEMS ***
+
+You should be aware of the interaction between Emacs' coding
+systems and this package.  In particular, Emacs canonicalizes
+Macintosh and MS-DOS line-ending conventions to Unix-style newlines
+internally, and converts them back when writing a file.
+ascii-display.el tries to show you what the file will actually be,
+by noticing that the buffer is in a special coding system, and
+displaying the EOL conventions for that coding system.  This is a
+lie, because there aren't *really* carriage returns (or whatever)
+in the buffer.
+
+In summary, ascii-display tries to do the right thing, but it is no
+more than a bad hack.  Don't be surprised if it fails, or gives
+unexpected results.
+
+*** END IMPORTANT NOTE ON CODING SYSTEMS ***
+
+Please send improvements or comments to the maintainer.
+
+Compatibility:
+
+Developed and tested on GNU Emacs 20.6.2.")

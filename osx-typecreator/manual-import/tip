@@ -1,0 +1,25 @@
+(:summary    "Set OSX type and creator"
+ :updated    "20050307"
+ :license    "GPL-2"
+ :authors    (("Harley Gorrell" . "harley@mahalito.net"))
+ :maintainer ("Harley Gorrell" . "harley@mahalito.net")
+ :provided   (osx-typecreator)
+ :keywords   ("osx" "type" "creator")
+ :commentary "\
+* Sets the type and creator on OSX systems based on major-mode or
+  buffer-file-name.
+* Yea, I know that T&C info is being phased out of OSX,
+  but the process isn't complete yet.
+* Kinda odd that OSX is stripping out resouce forks while Linux,
+  BSD and NFSv4 are in the process of adding extended attributes
+  to their filesystems.
+
+Installation:
+ Put this file somewhere in your load path and add the following to '~/.emacs':
+  (when (eq system-type 'darwin)
+    ;; Optionally you may want this line
+    ;; (add-hook 'after-save-hook 'osx-tc-save-buffer-tc)
+    (require 'osx-typecreator))
+  ;; To add your own T&C info add lines like:
+  (add-to-list 'osx-tc-defaults-by-mode '(foo-mode    \"FOOT\" \"FOOC\"))
+  (add-to-list 'osx-tc-defaults-by-name '(\"\\\\.foo\\\\'\" \"FOOT\" \"FOOC\"))")

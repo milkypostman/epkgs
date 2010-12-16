@@ -1,0 +1,80 @@
+(:created    "2009"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Mitsuo Saito" . "arch320@nospam.gmail.com"))
+ :maintainer ("Mitsuo Saito" . "arch320@nospam.gmail.com")
+ :provided   (auto-highlight-symbol)
+ :required   ((("emacs" cl easy-mmode)))
+ :keywords   ("face" "match" "convenience")
+ :homepage   "https://github.com/mitsuo-saito/auto-highlight-symbol-mode"
+ :commentary "\
+(@* \"Index\")
+
+if you have `linkd.el' turn on `linkd-mode'
+and (setq linkd-use-icons t ) more easily navigation.
+
+(@> \"Setup\")              Basic setup
+(@> \"ScreenCast\")         Screencast
+(@> \"Setting\")            Setting example
+(@> \"Mode map\")           Key binding
+
+(@> \"Custom variable\")    Customizable varible
+(@> \"Face\")               Face used in auto-highlight-symbol-mode
+(@> \"Regular expression\") Symbol include/exclude regular expression
+(@> \"Internal variable\")  Internal variables
+(@> \"Range plugin\")       Range plugin function
+(@> \"Built-in plugin\")    Built-in plugin section
+(@> \"Timer\")              Timer function
+(@> \"Idle\")               Idle function
+(@> \"Highlight\")          Highlight function
+(@> \"Edit mode\")          Overlay's modification-hook function used in edit mode
+(@> \"Select\")             Selective function
+(@> \"Interactive\")        Interactive function
+(@> \"Define mode\")        Register minor mode
+(@> \"Protect overlay\")    Protect overlay for edit mode
+(@> \"Revert\")             Protect from revert-buffer
+
+
+(@* \"Setup\" )
+
+Basic steps to setup:
+  1. Place `auto-highlight-symbol.el' in your `load-path'.
+
+  2. In your `.emacs.el' file
+     (require 'auto-highlight-symbol )
+     (global-auto-highlight-symbol-mode t)
+
+(@* \"ScreenCast\" )
+
+ screencast available on YouTube and ScreenToaster
+ http://www.youtube.com/watch?v=xzJ2r4-s7fo
+ http://www.screentoaster.com/watch/stUE9VQ0dMRFtXRlVeU19cX1Bd/auto_highlight_symbol_mode_screencast
+
+
+(@* \"Setting\")
+
+  * If you want set idle interval before highlighting
+     (ahs-set-idle-interval 0.5 )
+
+     or M-x ahs-set-idle-interval <RET>
+
+  * Default mode's behavior(highlighting and editing)
+    affects display area only   ;; from (window-start) to (window-end)
+
+    if you want affects whole-buffer
+
+     all-buffers
+        (setq ahs-default-range 'ahs-range-whole-buffer)
+
+     buffer-local
+        (add-hook 'emacs-lisp-mode-hook
+                  (function
+                    (lambda()
+                      (ahs-change-range 'ahs-range-whole-buffer t))))
+
+        or M-x ahs-chrange-whole-buffer <RET>
+
+     momentary
+        C-u C-x C-a   ;; call 'ahs-edit-mode with prefix-args
+
+     that's all. but changing symbol you can't see. so carefully.")

@@ -1,0 +1,6 @@
+(:summary    "Insert programming constructs in various languages"
+ :updated    "20041204"
+ :license    "GPL-2"
+ :provided   (insert-construct)
+ :required   ((("emacs" tempo)))
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/handsfree/")

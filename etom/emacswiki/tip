@@ -1,0 +1,9 @@
+(:summary    "Emacs to Maya communication"
+ :created    "20070617"
+ :updated    "2007"
+ :license    "GPL-2"
+ :authors    (("Slavomir Kaslev" . "slavomir.kaslev@gmail.com"))
+ :maintainer ("Slavomir Kaslev" . "slavomir.kaslev@gmail.com")
+ :provided   (etom)
+ :required   ((("emacs" comint)))
+ :keywords   ("maya" "mel"))

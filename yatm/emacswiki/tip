@@ -1,0 +1,6 @@
+(:summary    "Yet Another Text Menu"
+ :created    "2003"
+ :updated    "2003"
+ :license    "GPL-2"
+ :provided   (yatm)
+ :required   ((("emacs" overlay tmm))))

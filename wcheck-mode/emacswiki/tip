@@ -1,0 +1,6 @@
+(:created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :provided   (wcheck-mode)
+ :homepage   "http://www.emacswiki.org/WcheckMode"
+ :wikipage   "http://www.emacswiki.org/WcheckMode")

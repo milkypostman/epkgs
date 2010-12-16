@@ -1,0 +1,12 @@
+(:summary    "Save the orthodox keymap before hacking it"
+ :created    "1998"
+ :updated    "1998"
+ :license    "GPL-2"
+ :authors    (("Will Mengarini" . "seldon@eskimo.com"))
+ :maintainer ("Will Mengarini" . "seldon@eskimo.com")
+ :provided   (orthodox)
+ :keywords   ("abbrev" "keymap" "key" "map" "binding" "orthodox")
+ :homepage   "http://www.eskimo.com/~seldon/"
+ :commentary "\
+This package is so simple that it's adequately documented by
+the documentation string of the file's first definition:")

@@ -1,0 +1,51 @@
+(:summary    "Render SQL*Plus HTML output on-the-fly"
+ :created    "2001"
+ :updated    "2001"
+ :license    "GPL-2"
+ :authors    (("Hrvoje Niksic" . "hniksic@xemacs.org"))
+ :maintainer ("Hrvoje Niksic" . "hniksic@xemacs.org")
+ :provided   (sqlplus-html)
+ :required   ((("emacs" cl comint)
+	       ("w3" w3)))
+ :keywords   ("database" "hypermedia" "commwww")
+ :homepage   "http://fly.srk.fer.hr/~hniksic/"
+ :commentary "\
+This package might be useful to people who use Oracle's SQL*Plus in
+a shell buffer.  It massages the output of SQL*Plus to format it
+into nice-looking tables a la mysql's command line client.  This is
+feasible thanks to the fact that SQL*Plus has an option to produce
+HTML output, and that links and w3 handle HTML tables nicely.
+
+For the mode to work, you will need a working `w3' package or the
+`links' external browser (`lynx' won't do because it doesn't handle
+tables.)  Start the `sqlplus' client in a comint (i.e. shell)
+buffer.  Then execute `M-x sqlplus-html-init-all', and you should
+be set.
+
+To test whether this works as intended, issue a simple query such
+as \"select 2+2 from dual\".  The result should look like this:
+
+SQL>select 2+2 from dual;
+
++---+
+|2+2|
+|---|
+| 4 |
++---+
+
+sqlplus-html-init-all does two things: sends \"set markup html on\"
+to SQL*Plus to make it write all output in HTML; and and puts the
+buffer in sqlplus-html minor mode so that the HTML output is
+rendered on the fly.
+
+You can disable the mode at any time with `M-x sqlplus-html-mode',
+which works as a toggle.
+
+The latest version should be available at:
+
+       <URL:http://fly.srk.fer.hr/~hniksic/emacs/sqlplus-html.el>
+
+
+Thanks go to:
+  * Drazen Kacar <dave@arsdigita.com>, for introducing me to \"set
+  markup html on\".")

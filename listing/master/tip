@@ -1,0 +1,34 @@
+(:summary    "Show columnized view of list elements"
+ :created    "20100605"
+ :updated    "20101214"
+ :license    "GPL-3"
+ :authors    (("Jonas Bernoulli" . "jonas@bernoul.li"))
+ :maintainer ("Jonas Bernoulli" . "jonas@bernoul.li")
+ :provided   (listing)
+ :required   ((("header-button" header-button)
+	       ("map-progress" map-progress)))
+ :keywords   ("convenience")
+ :homepage   "https://github.com/tarsius/listing"
+ :commentary "\
+This library provides function `listing-create' which inserts the
+elements in a list into a buffer, one per row.  Columns are used to
+display different attributes of the elements.
+
+How a cell's values is calculated and formatted is not restricted by
+this package in any way.
+
+In other words this library can be used by other libraries to easily
+create tables similar to the one created by `buffer-menu' but for
+arbitrary objects and without much effort.
+
+A very basic example:
+
+  (listing-create '((A . a) (B . b) (C . c))
+                  (get-buffer-create \"*listing*\")
+                  '((\"upper\" 5 t car)
+                    (\"lower\" 5 t cdr)))
+
+But it doesn't stop here.  See the function `listing-create' and
+variable `listing-view-element-function' for more information.  This
+library was created for library `epkg.el', which serves well as an
+example.")

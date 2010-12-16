@@ -1,0 +1,43 @@
+(:summary    "Tree View for the Sunrise Commander File Manager"
+ :created    "20100504"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("José Alfredo Romero L." . "escherdragon@gmail.com"))
+ :maintainer ("José Alfredo Romero L." . "escherdragon@gmail.com")
+ :provided   (sunrise-x-tree)
+ :required   ((("emacs" desktop tree-widget)
+	       ("sunrise-commander" sunrise-commander)))
+ :keywords   ("sunrise" "commander" "files" "manager" "directories" "tree" "navigation")
+ :commentary "\
+This  extension adds to the Sunrise Commander file manager a directories-only
+tree view that can be used for fast navigation, as well as for several  basic
+operations  on  files and directories. It uses the excellent \"tree-widget.el\"
+library written by David Ponce and works the same in text consoles as well as
+in graphical environments, using either the mouse or just the keyboard.
+
+For more information on the Sunrise Commander, other extensions and cool tips
+& tricks visit http://www.emacswiki.org/emacs/Sunrise_Commander
+
+This is version 1 $Rev: 324 $ of the Sunrise Commander Tree Extension.
+
+ It was developed on GNU Emacs 24 on Linux, and tested on GNU Emacs 22 and 24
+for Linux, and on EmacsW32 (version 23) for Windows.
+
+Installation:
+
+1) Put this file somewhere in your emacs load-path.
+
+2)  Add  a (require ’sunrise‐x‐tree) expression to your .emacs file somewhere
+after the (require ’sunrise‐commander) one.
+
+3) Evaluate the new expression, or reload your .emacs file, or restart emacs.
+
+4) You may have to customize the tree-widget-image-enable variable if all you
+get are text-only icons (e.g. \"[+]\" and \"[X]\") in your graphical environment,
+while you'd rather prefer looking at pretty graphical ones.
+
+WARNING: If you use Slime be aware that some versions of this package include
+an older version of tree-widget.el that may clobber the one in Emacs and make
+this extension work improperly.  At least that's the case in Debian for i386:
+slime comes with version 21.4 of tree-widget, but the extension requires 22.1
+or better.")

@@ -1,0 +1,45 @@
+(:summary    "Major mode for editing Dos scripts (batch files)"
+ :created    "2003"
+ :updated    "2010"
+ :authors    (("Arni Magnusson"))
+ :maintainer ("Arni Magnusson")
+ :provided   (dos)
+ :required   ((("emacs" outline)))
+ :keywords   ("languages")
+ :homepage   "http://www.emacswiki.org/DosMode"
+ :wikipage   "http://www.emacswiki.org/DosMode"
+ :commentary "\
+Major mode for editing Dos scripts. Provides syntax highlighting, templates, and smaller tools. The syntax groups for
+highlighting are:
+
+Face                          Example
+font-lock-comment-face        rem
+font-lock-doc-face            :LABEL
+font-lock-builtin-face        copy
+font-lock-keyword-face        goto
+font-lock-warning-face        cp
+font-lock-constant-face       [call] prog
+font-lock-variable-name-face  %var%
+font-lock-type-face           -option
+
+Installation:
+
+1. Copy this file (dos.el) to a directory in `load-path', or edit .emacs to add the directory to `load-path':
+     (add-to-list 'load-path \"mypath/dos\")
+2. Byte-compile this file to dos.elc for faster startup:
+     M-x byte-compile-file
+3. Edit .emacs so that `dos-mode' is autoloaded and assigned to *.bat files:
+     (autoload 'dos-mode \"dos\" \"Edit Dos scripts.\" t)
+     (add-to-list 'auto-mode-alist '(\"\\\\.bat$\" . dos-mode))
+
+Customization:
+
+See documentation of variable `dos-mode-hook' and function `dos-outline' for ideas.
+
+Usage:
+
+See documentation of function `dos-mode'.
+
+Acknowledgements:
+
+Inspired by `batch-mode' (Agnar Renolen) and `cmd-mode' (Tadamegu Furukawa).")

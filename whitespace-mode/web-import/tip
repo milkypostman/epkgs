@@ -1,0 +1,14 @@
+(:summary    "Major mode for editing Whitespace"
+ :created    "20030426"
+ :updated    "20030426"
+ :license    "GPL-2"
+ :authors    (("lawrence mitchell" . "wence@gmx.li"))
+ :maintainer ("lawrence mitchell" . "wence@gmx.li")
+ :provided   (whitespace-mode)
+ :keywords   ("languages" "whitespace")
+ :homepage   "http://www.ph.ed.ac.uk/~s0198183/"
+ :wikipage   "http://www.emacswiki.org/WhitespaceMode"
+ :commentary "\
+This is an Emacs major mode for the Whitespace programming
+language: <URL: http://compsoc.dur.ac.uk/whitespace/>.  It
+displays SPC as [SPC] and TAB as [TAB].")

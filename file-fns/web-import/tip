@@ -1,0 +1,8 @@
+(:summary    "Functions for querying about or acting on files"
+ :created    "1991"
+ :updated    "20100222"
+ :license    "GPL-2"
+ :authors    (("Noah Friedman" . "friedman@splode.com"))
+ :maintainer (nil . "friedman@splode.com")
+ :provided   (file-fns)
+ :homepage   "ftp://ftp.splode.com/pub/users/friedman/emacs-lisp/")

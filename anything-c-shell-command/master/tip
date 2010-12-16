@@ -1,0 +1,28 @@
+(:created    "2009"
+ :updated    "2009"
+ :license    "GPL-2"
+ :authors    (("kitokitoki" . "morihenotegami@gmail.com"))
+ :maintainer ("kitokitoki" . "morihenotegami@gmail.com")
+ :provided   (anything-c-shell-command)
+ :required   ((("anything" anything)))
+ :keywords   ("anything")
+ :homepage   "https://github.com/kitokitoki/anything-c-shell-command"
+ :commentary "\
+This package use `anything' as a interface to execute shell command.
+
+You can make this package integrate with `anything',
+just setup like below:
+
+(setq anything-sources
+      (list
+       anything-c-source-shell-command
+       ))
+
+Installation:
+
+Put anything-c-shell-command.el to your load-path.
+And the following to your startup file.
+
+(require 'anything-c-shell-command)
+
+No need more.")

@@ -1,0 +1,73 @@
+(:summary    "Grand Unified Debugger mode for running CDB"
+ :license    "GPL-2"
+ :authors    (("Stephan Doll" . "stephan_doll@dantz.com"))
+ :maintainer ("Aaron Brady" . "abrady0@yahoo.com")
+ :provided   (cdb-gud)
+ :required   ((("emacs" gud)))
+ :commentary "\
+This package provides Emacs (GUD) integration for Microsoft's CDB
+debugger.  (CDB is the text-mode version of WinDbg).  For more
+details about the Emacs' debugger integration, read \"Running
+Debuggers Under Emacs\" in the Emacs manual.
+
+To install this package:
+
+   - Download and install the latest version of the `Debugging Tools
+     for Windows' from http://www.microsoft.com/ddk/debugging/.  Add it
+     to your PATH environment.
+
+   - Put the following into your .emacs file:
+
+     (load \"cdb-gud\")
+
+   - You can customize `gud-cdb-directories' to help GUD find your source
+     files.
+
+   - If you want key bindings similar to MS' GUI debuggers, add the
+     following:
+
+     (global-set-key [f5]    'gud-cont)
+     (global-set-key [f7]    'gud-tbreak)
+     (global-set-key [f8]    'gud-step)
+     (global-set-key [f9]    'gud-break)
+     (global-set-key [f10]   'gud-next)
+     (global-set-key [f11]   'gud-finish)
+
+
+Here is a simple tutorial:
+
+In Emacs, run
+
+   	M-x cdb
+    \"Run cdb (like this):\" cdb <name of your exe>
+
+This will open a new Emacs buffer \"*gud-xxx*\".  In it you will get a
+CDB command prompt '0:000> '.  (CDB commands are documented in the
+'Debugging tools for Windows' online help).  To get to the begin of
+your code, type:
+
+     'g main' <Enter> (or 'g WinMain' if you have a GUI application).
+
+CDB will load the application and break at your main() function.
+Emacs should open another window with your main() source file and show
+a little '>' were the debugger stopped.  You now can set more
+breakpoints in your sources, single-step, etc.  To use the common VC++
+
+You can also issue additional commands from the CDB command prompt --
+e.g.:
+
+    - 'dv'  Displays local variables
+
+    - 'dt' or '??' shows the content of a single variable.
+
+To get the current stack trace, either use the 'k' command or execute
+\"M-x speedbar\".  The later will display the calling stack in a
+additional Emacs frame and you can use the mouse to switch between
+stack frames.
+
+If the little GUD source line marker '>' is hard to follow, add the
+following to your .emacs:
+
+;;-------------------------------------------------------------
+;; Add color to the current GUD line
+;;")

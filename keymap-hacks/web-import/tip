@@ -1,0 +1,5 @@
+(:summary    "Some keymap-hacking code"
+ :updated    "20060117"
+ :license    "GPL-2"
+ :provided   (keymap-hacks)
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/misc/")

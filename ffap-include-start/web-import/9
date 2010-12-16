@@ -1,0 +1,39 @@
+(:summary    "Recognise C #include when at start of line"
+ :created    "2007"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Kevin Ryde" . "user42@zip.com.au"))
+ :maintainer ("Kevin Ryde" . "user42@zip.com.au")
+ :provided   (ffap-include-start)
+ :required   ((("emacs" advice thingatpt)))
+ :keywords   ("files")
+ :homepage   "http://user42.tuxfamily.org/ffap-include-start/index.html"
+ :commentary "\
+M-x ffap normally only recognises an include like
+
+    #include <foo.h>
+
+when point is on the filename part.  This spot of code lets it work when
+point in the \"#include\" part, including at the start of the line, and
+lets it work with any of the following,
+
+    #include <foo.h>       C language
+    #include \"foo.h\"       C language
+    include foo.make       GNU Make
+    include \"foo.rc\"       Gtk RC file
+
+You can always move point to the filename and M-x ffap from there, but
+it's handy to have it work from the start of the line too, especially
+when just browsing rather than editing.
+
+For a GNU make multiple-file include like
+
+    include foo.make bar.make
+
+the first filename is offered when point is at or before the first name,
+and the second when point is on it.
+
+This code works with ffap-makefile-vars.el too, so if you load that
+package then the a Make include can have variables to expand,
+
+    include $(HOME)/mystuff/foo.make")

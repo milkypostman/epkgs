@@ -1,0 +1,19 @@
+(:summary    "Use the BBDB to insert a  gcc field"
+ :created    "20090317"
+ :updated    "2009"
+ :license    "GPL-1"
+ :authors    ((nil . "uwe brauer oub@mat.ucm.es"))
+ :maintainer (nil . "uwe brauer oub@mat.ucm.es")
+ :provided   (bbdbadapt-ispell)
+ :commentary "\
+I wanted to have the ispell dict selected 
+based on a relevant bbdb entry which I call ispell-dict.
+This is what the code does. 
+
+The starting point was some code provided to me by Robert
+Fenk. However the problem with that code was that it took the gcc
+field from some entry of the BBDB buffer and if there was more than
+on entry often the wrong string was inserted. So I had to use code
+which extracted the correct BBDB entry from the TO field .  I
+succeeded by using to a large extend code from sigadapt.el written
+by by C.Queinnec (University of Paris 6 & INRIA)")

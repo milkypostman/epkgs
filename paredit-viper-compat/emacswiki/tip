@@ -1,0 +1,87 @@
+(:summary    "Viper-mode modifications to support paredit"
+ :created    "2009"
+ :updated    "2009"
+ :authors    (("Jeremy Rayman"))
+ :maintainer ("Jeremy Rayman")
+ :provided   (paredit-viper-compat)
+ :required   ((("paredit" paredit)))
+ :homepage   "http://www.emacswiki.org/ParEditViperCompat"
+ :wikipage   "http://www.emacswiki.org/ParEditViperCompat"
+ :commentary "\
+This mode allows paredit to work when viper is enabled.
+
+Usage:
+Place the following in your .emacs (or init.el):
+
+(eval-after-load 'paredit
+  '(progn
+     (require 'paredit-viper-compat)
+     (paredit-viper-compat)))
+
+This will apply the paredit-viper-compat fixes only when paredit
+is active.
+
+User key customizations:
+If you want to add your own keybindings in addition to the ones
+provided by paredit-viper-compat, you can do so using
+the function paredit-viper-add-local-keys.
+Usage is (paredit-viper-add-local-keys STATE KEYS);
+where STATE is one of 'all-states, 'vi-state, 'insert-state, or 'emacs-state.
+Insert a statement like the following inside the (eval-after-load ...)
+form above:
+
+(paredit-viper-add-local-keys 'all-states  ; or 'insert-state, etc.
+                              '((\"\\C-w\" . paredit-backward-kill-word)
+                                ;; ... more keys ...
+                                ))
+
+Complete setup combining the above examples:
+
+(eval-after-load 'paredit
+  '(progn
+     (require 'paredit-viper-compat)
+     (paredit-viper-compat)
+     (paredit-viper-add-local-keys 'all-states
+                                   '((\"\\C-w\" . paredit-backward-kill-word)
+                                     ;; ... more keys ...
+                                     ))))
+
+Changelog:
+0.1 - 2009-08-15 - Initial release.
+
+TODO:
+* XEmacs compatibility - paredit uses a variable `paredit-forward-delete-keys'
+  which provides different values for GNU Emacs vs XEmacs. I could
+  not figure out how to use that value correctly in the code below,
+  so ended up hardcoding the values for GNU Emacs (\"<delete>\" and
+  \"<deletechar>\").
+
+Copyright (c) 2009, Jeremy L. Rayman
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+
+* Redistributions of source code must retain the above copyright
+  notice, this list of conditions and the following disclaimer.
+
+* Redistributions in binary form must reproduce the above copyright
+  notice, this list of conditions and the following disclaimer in
+  the documentation and/or other materials provided with the
+  distribution.
+
+* Neither the names of the authors nor the names of contributors
+  may be used to endorse or promote products derived from this
+  software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE AUTHORS ``AS IS'' AND ANY EXPRESS
+OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY
+DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
+GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.")

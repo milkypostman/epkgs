@@ -1,0 +1,15 @@
+(:summary    "Mark whole threads in gnus agent"
+ :created    "1999"
+ :updated    "1999"
+ :license    "GPL-2"
+ :authors    (("Tom Breton" . "tob@world.std.com"))
+ :maintainer ("Tom Breton" . "tob@world.std.com")
+ :keywords   ("news" "extensions")
+ :homepage   "http://panix.com/~tehom/"
+ :commentary "\
+tehom-gnus-summary-act-on-articles is similar to
+gnus-summary-iterate but carefully doesn't change the process marks
+
+Changes from 1.0
+
+Changed cursor-position handling to support gnus 5.8.x")

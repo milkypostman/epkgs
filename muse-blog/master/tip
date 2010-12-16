@@ -1,0 +1,18 @@
+(:summary    "Keep and publish a blog"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :provided   (muse-blog)
+ :required   ((("muse" muse-html muse-journal muse-publish)))
+ :homepage   "http://julien.danjou.info/muse-blog.html"
+ :commentary "\
+The module facilitates the keeping and publication of a blog.
+
+The input format for each entry is as follows:
+
+  * 20040317-12:34:23: Title of entry
+
+  Text for the entry.
+
+The plurality of \"div\" tags makes it possible to display the
+entries in any form you wish, using a CSS style.")

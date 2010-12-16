@@ -1,0 +1,24 @@
+(:summary    "Display all known callers of a function"
+ :created    "20040620"
+ :updated    "2004"
+ :license    "GPL-2"
+ :authors    (("Jesper Harder" . "harder@ifa.au.dk"))
+ :maintainer ("Jesper Harder" . "harder@ifa.au.dk")
+ :provided   (who-calls)
+ :required   ((("emacs" bytecomp)))
+ :keywords   ("lisp")
+ :homepage   "http://www.phys.au.dk/~harder/"
+ :commentary "\
+`who-calls' displays all known callers of an Emacs Lisp function.
+To bind it to key, say `C-c C-w', add something like this to your
+.emacs:
+
+  (autoload 'who-calls \"who-calls\" nil t)
+  (define-key emacs-lisp-mode-map \"\\C-c\\C-w\" 'who-calls)
+
+To actually generate and save the call information, you need to
+load this file when compiling the project, e.g. \"-l who-calls.el\",
+probably by modifying the Makefile -- for Gnus it would be this
+line:
+
+FLAGS = -batch -q -no-site-file -l who-calls.el -l $(srcdir)/dgnushack.el")

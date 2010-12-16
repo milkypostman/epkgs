@@ -1,0 +1,9 @@
+(:summary    "Desk calendar style extensions to Emacs' Calendar/Diary"
+ :created    "1995"
+ :updated    "1999"
+ :license    "GPL-2"
+ :authors    (("D. Dale Gulledge" . "dsplat@rochester.rr.com"))
+ :maintainer ("D. Dale Gulledge" . "dsplat@rochester.rr.com")
+ :provided   (cal-desk-calendar)
+ :required   ((("emacs" calendar diary-lib lunar solar)))
+ :keywords   ("calendar"))

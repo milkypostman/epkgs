@@ -1,0 +1,80 @@
+(:summary    "Edit multiple line at a time"
+ :created    "20101010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :provided   (multiple-line-edit)
+ :required   ((("emacs" cl easymenu)))
+ :keywords   ("abbrev" "convenience" "emulations" "wp")
+ :homepage   "https://github.com/k-talo/multiple-line-edit.el"
+ :commentary "\
+Overview
+========
+This library provides `multiple line edit' feature.
+
+You can edit each side, leading and trailing edge, of
+multiple line with this library.
+
+
+INSTALLING
+==========
+To install this library, save this file to a directory in your
+`load-path' (you can view the current `load-path' using \"C-h v
+load-path RET\" within Emacs), then add the following line to your
+.emacs startup file:
+
+   (require 'multiple-line-edit)
+
+
+USING
+=====
+To start multiple line edit, follow the instructions described
+below.
+
+  1. Select multiple line that you want to edit.
+
+  2. If you want to edit the leading edges of each line,
+     type `M-x mulled/edit-leading-edges RET'.
+
+     Or if you want to edit the trailing edges of each line,
+     type `M-x mulled/edit-trailing-edges RET'.
+
+     NOTE: You can run these commands by selecting menu items
+           placed in `\"Edit\" > \"Multiple Line Edit\"'.
+
+  3. When multiple line edit is activated, the cursor will be
+     moved to the 1st line of the selected lines.
+
+     And then, your modification in the 1st line will be
+     reflected to another lines automatically.
+
+     NOTE: While multiple line edit is active, indicator icons
+           will be appear on the fringes.
+
+          (The icon `>>' will be used for leading edges edit, and
+           the icon `<<' will be used for trailing edges edit)
+
+  4. To finish multiple line edit, type `C-g' or move cursor
+     to outside of the 1st line.
+
+Also check out the customization group
+
+  `M-x customize-group RET multiple-line-edit RET'
+
+
+Key map Examples
+================
+(global-set-key [(control c) (<)] 'mulled/edit-trailing-edges)
+(global-set-key [(control c) (>)] 'mulled/edit-leading-edges)
+
+
+KNOWN PROBLEMS
+==============
+Multiple line edit won't work with commands that sets
+non-nil value to the variable `inhibit-modification-hooks'
+like `YASnippet'.
+
+We wrote experimental patches to run `YASnippet' with
+`multiple-line-edit', put a line below in your .emacs startup
+file if you are interested in.
+
+   (mulled/experimental/install-yas-support)")

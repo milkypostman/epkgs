@@ -1,0 +1,13 @@
+(:summary    "Modes for editing Gentoo specific files"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-2"
+ :authors    (("Matthew Kennedy" . "mkennedy@gentoo.org")
+	      ("Diego Pettenò" . "flameeyes@gentoo.org")
+	      ("Christian Faulhammer" . "fauli@gentoo.org")
+	      ("Ulrich Müller" . "ulm@gentoo.org"))
+ :provided   (ebuild-mode gentoo-syntax)
+ :required   ((("emacs" easymenu font-lock sh-script skeleton)))
+ :keywords   ("languages" "processes")
+ :homepage   "http://www.gentoo.org/proj/en/lisp/emacs/emacs.xml"
+ :wikipage   "http://www.emacswiki.org/GentooSyntax")

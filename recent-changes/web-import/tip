@@ -1,0 +1,6 @@
+(:summary    "Handling updating of pages in web trees"
+ :provided   (recent-changes)
+ :required   ((("emacs" cl)
+	       ("page-attributes" page-attributes)))
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/webstuff/webmastering/"
+ :wikipage   "http://www.emacswiki.org/RecentChanges")

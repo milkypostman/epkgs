@@ -1,0 +1,6 @@
+(:summary    "For bleeding hearts,"
+ :created    "2003"
+ :updated    "2003"
+ :provided   (monk monk-cdaudio monk-fn-handler monk-midi monk-mp3 monk-ogg monk-prop-edit monk-smpeg monk-watch monk-wav)
+ :required   ((("emacs" cl dired dired-aux pp timer)
+	       (nil timidity))))

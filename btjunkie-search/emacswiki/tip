@@ -1,0 +1,13 @@
+(:summary    "Brutal query engine against btjunkie.org"
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-2"
+ :authors    ((nil . "bardelli.marco@gmail.com"))
+ :maintainer (nil . "bardelli.marco@gmail.com")
+ :provided   (btjunkie-search)
+ :commentary "\
+For who, like me, don't want to open a browser to find torrents.
+
+Search atoms rss.xml in btjunkie.org and present a
+comfortable buffer to download torrent files.
+Brutally use `wget' command.")

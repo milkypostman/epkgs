@@ -1,0 +1,12 @@
+(:summary    "Resize windows interactively"
+ :created    "2007"
+ :updated    "2008"
+ :license    "GPL-3"
+ :authors    (("Bastien" . "bzg@altern.org"))
+ :maintainer ("Bastien" . "bzg@altern.org")
+ :provided   (windresize)
+ :required   ((("emacs" ring windmove)))
+ :keywords   ("window")
+ :commentary "\
+This mode let's you edit the window configuration interactively just
+by using the keyboard.  Quickstart: M-x windresize")

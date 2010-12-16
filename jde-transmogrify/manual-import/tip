@@ -1,0 +1,6 @@
+(:created    "1997"
+ :updated    "2001"
+ :license    "GPL-2"
+ :authors    (("Nascif A. Abousalh Neto" . "nascif@acm.org"))
+ :maintainer ("Nascif A. Abousalh Neto")
+ :keywords   ("java" "refactoring" "tools"))

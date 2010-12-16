@@ -1,0 +1,7 @@
+(:summary    "Git working tree browser"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :provided   (find-git)
+ :required   ((("emacs" cl)))
+ :homepage   "https://github.com/lieutar/find-git.el")

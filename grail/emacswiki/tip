@@ -1,0 +1,61 @@
+(:summary    "Load an .emacs configuration in a robust, modular, and mode aware manner"
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-3"
+ :authors    (("Mike Mattie"))
+ :maintainer ("Mike Mattie")
+ :homepage   "http://www.emacswiki.org/Grail"
+ :wikipage   "http://www.emacswiki.org/Grail"
+ :commentary "\
+Grail loads an .emacs configuration in a robust, modular, and mode
+aware manner.
+
+The user has the opportunity to split their emacs configuration
+into seperate files making it much easier to maintain. If the elisp
+is sorted into the files treated as special, where grail loads them
+directly by name, then the configuration will work properly when
+emacs in started in different modes:
+
+* batch mode    - non-interactive library functions only
+* tty           - a console frame
+* gui           - a graphical frame
+* deamon        - a headless emacs server
+
+The error trapping in grail catches errors in both errors in grail
+itself, and in the configuration. This allows Emacs to start
+containing the errors and reporting them. This is vital to using
+Emacs to fix such errors :) and avoiding the dreaded --debug-init.
+
+The second level of features involve managing load-path and third
+party code not distributed with emacs itself.
+
+It is very common for load-path to evolve, or devolve :) in a
+hackish way until it is difficult to maintain. The tree structure
+for a configuration defined by grail is used to construct a
+load-path that scales from a simple configuration, to ambitious
+elisp hacking.
+
+There wealth of third party emacs packages provide powerful
+functionality, but they are a burden to maintain, and especially to
+replicate across multiple machines.
+
+The primary mechanism for managing third party elisp is installing
+and activating ELPA, the package management system hosted at
+http://tromey.com/elpa/.  For those packages not hosted by ELPA
+grail can install them in a limited way.
+
+To collalesce a variety of packages into a feature group Grail
+provides the \"group\" configuration files. In a group file
+third party elisp is managed with installation and configuration.
+
+In a group when elisp packages are missing an install function and
+a initialization function are generated, with calls to those
+functions inserted into the scratch buffer. The user can uncomment
+the functions and execute them to replace the missing peices and
+execute the configuration bits that depend on them.
+
+---> Starting with Grail.
+
+The README.grail file provides installation instructions a more
+detailed description of the file and directory structure that is
+significant to Grail.")

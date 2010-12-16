@@ -1,0 +1,57 @@
+(:summary    "Quail package to input in"
+ :created    "2000"
+ :updated    "20001208"
+ :license    "GPL-2"
+ :keywords   ("mule" "multilingual" "unicode" "input" "method" "tex")
+ :commentary "\
+This file is intended for use with Markus Kuhn's Unicode fonts,
+see <http://www.cl.cam.ac.uk/~mgk25/unicode.html>, and the
+Otfried Cheong's extension of Mule-UCS, available at
+<http://www.cs.uu.nl/~otfried/Mule/>.
+
+The idea is to provide a routine way to input the many TeX
+characters (and some more) using the familiar TeX notation.  Surely
+it is not convenient for typing a French or German text, for which
+there are special packages; but I prefer to use it for a mixed
+text, where some accented characters from various languages occur
+sporadically, and it is better to type a longer key sequence
+/\"Arger for Ärger rather than suffer from unexpected äny\" when
+typing \"any\" (as it is usual with the shorter `\"Arger' manner, or
+with o'clock becoming oćlock etc).
+
+I've taken some liberties with the TeX notation:
+1. Backslash is replaced with solidus in its escape function.  The
+   reason is obvious: TeX users heavily use backspace for many other
+   purposes as well.
+2. The prefix \"text\" is systematically dropped; just /euro rather
+   than /texteuro, /perthousand rather than \\textperthousand.
+3. No internal spaces, e.g. /cC rather than {/c C} or /c{C}.
+4. /! and /? are used instead of !` and ?` -- like in EuroTeX,
+   just to reduce the number of escape characters.
+5. /3/4 etc is used instead of \\textthreequarters.
+6. If HTML offers a ahorter Latin-1 name, it is preferred:
+   /reg rather than \\textregistered, /nbsp rather than \\nobreakspace,
+   /copy rather than \\copyright etc. (Such abbreviations are marked
+   with \"HTML\" in a comment field.)
+
+Installation:
+
+Save this file as quail/u8tex.el (the \"quail\" may be your
+emacs/20.*/leim/quail or a directory on your load-path), byte
+compile it and put a record like this:
+
+(register-input-method
+ \"u8tex\" \"utf-8\" 'quail-use-package
+ \"τεχ\" \"Unicode input using (Euro)TeX names\"
+ \"quail/u8tex\")
+
+into emacs/20.*/leim/leim-list.el (probably there exists a more
+civilized way to extend leim-list?).  Then (after reloading Mule)
+you can switch to u8tex in the usual way (`C-x C-m C-\\ u8tex'; the
+first u... is sufficient for completion in my environment).
+
+Changes in v. 1.2:
+1. Documentation (reference to Otfried's package).
+2. Some HTML abbreviations are adopted (/copy, /reg etc).
+3. Errors corrected: /permil
+4. More amssymb characters.")

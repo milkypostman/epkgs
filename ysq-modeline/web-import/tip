@@ -1,0 +1,18 @@
+(:summary    "Put stock quotes in mode line"
+ :created    "19990331"
+ :updated    "20000914"
+ :license    "GPL-2"
+ :authors    (("Noah Friedman" . "friedman@splode.com"))
+ :maintainer (nil . "friedman@splode.com")
+ :provided   (ysq-modeline)
+ :required   ((("emacs" timer)
+	       ("itimer" itimer)
+	       ("ysq" ysq)))
+ :keywords   ("extensions")
+ :homepage   "ftp://ftp.splode.com/pub/users/friedman/emacs-lisp/"
+ :commentary "\
+This module is still heavily under development
+and probably unusuably buggy.
+
+Updates of this program may be available via the URL
+http://www.splode.com/~friedman/software/emacs-lisp/")

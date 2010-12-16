@@ -1,0 +1,26 @@
+(:license    "GPL-2"
+ :provided   (puppet-pi-mode)
+ :required   ((("emacs" font-lock)))
+ :keywords   ("puppet")
+ :homepage   "https://github.com/t9md/puppet-pi-mode.el"
+ :commentary "\
+Puppet ( http://www.puppetlabs.com/ ) provides command line documentation
+reference tool called `pi' from version 0.25.
+puppet-pi-mode enable you to query `type' documentation from emacs buffer.
+
+Tested on Emacs 22
+
+Customizable Options:
+
+if you don't want select pi-buffer , set below
+(setq puppet-pi-disable-select-window t)
+
+
+Sample config:
+
+(require 'puppet-pi-mode)
+(add-hook 'puppet-mode-hook
+		  (lambda ()
+			(local-set-key \"\\C-c\\C-d\" 'puppet-pi-query)))
+
+then you can search pi from emacs puppet-mode buffer with C-cC-d.")

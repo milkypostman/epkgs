@@ -1,0 +1,9 @@
+(:created    "1990"
+ :updated    "19941018"
+ :authors    (("David Jacobson")
+	      (nil . "jacobson@hpl.hp.com")
+	      ("Version info is in math-version-string defined after history box"))
+ :maintainer ("David Jacobson")
+ :provided   (math)
+ :required   ((("emacs" comint shell)))
+ :homepage   "http://library.wolfram.com/infocenter/MathSource/4567/")

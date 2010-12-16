@@ -1,0 +1,6 @@
+(:updated    "20101030"
+ :provided   (mpg123)
+ :required   ((("emacs" overlay)
+	       (nil smart-dnd)))
+ :homepage   "http://www.gentei.org/~yuuji/software/mpg123el/"
+ :wikipage   "http://www.emacswiki.org/Mpg123")

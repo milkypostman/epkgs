@@ -1,0 +1,7 @@
+(:created    "19980828"
+ :updated    "20020701"
+ :license    "GPL-2"
+ :authors    (("Benjamin Drieu" . "bdrieu@april.org"))
+ :maintainer ("Benjamin Drieu" . "bdrieu@april.org")
+ :keywords   ("convenience")
+ :homepage   "http://www.grassouille.org/emacs/index.en.html")

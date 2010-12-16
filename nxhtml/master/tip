@@ -1,0 +1,22 @@
+(:summary    "Keeping nXhtml together"
+ :created    "20090101"
+ :license    "GPL-2"
+ :authors    (("Lennart Borgman (lennart O borgman A gmail O com)"))
+ :maintainer ("Lennart Borgman (lennart O borgman A gmail O com)")
+ :provided   (amrita appmenu appmenu-fold as-external autostart22 backtr buffer-bg chartg css-color css-simple-completion cus-new-user custsets django ediff-url emacstest-suites ert2 ffip find-recursive flymake-css flymake-helpers flymake-java-1 flymake-js flymakemsg foldit fupd gimpedit gpl hfyview hl-needed html-chklnk html-imenu html-move html-pagetoc html-quote html-site html-upl html-write html-wtoc idn inlimg iss-mumamo key-cat majmodpri markchars mlinks moz mozadd mumamo mumamo-chunks mumamo-cmirr mumamo-fun mumamo-regions mumamo-test n-back new-key-seq-widget nxhtml nxhtml-autoload nxhtml-autostart nxhtml-base nxhtml-bug nxhtml-js nxhtml-menu nxhtml-mode nxhtml-mumamo nxhtml-strval nxhtml-web-vcs nxhtmlmaint nxhtmltest-helpers nxhtmltest-suites nxml-where ocr-user ourcomments-util ourcomments-widgets pause popcmp rebind rngalt rxi rxx search-form sex-mode sml-modeline tabkey2 tidy-xhtml tt-mode udev udev-ecb udev-rinari viper-tut web-autoload web-vcs web-vcs-linkpatt whelp winsav wrap-to-fill xhtml-help)
+ :required   ((("emacs" advice apropos bookmark button bytecomp cc-engine cl comint compile cus-edit desktop dired easymenu ediff edmacro flymake flyspell font-lock grep help-mode hideshow hl-line htmlfontify ido imenu json loadhist mailcap mm-decode mm-url org outline ps-print re-builder recentf rng-nxml rng-valid ruby-mode rx sendmail server sgml-mode tutorial uniquify url url-expand url-handlers url-http url-parse url-util url-vars wid-browse wid-edit xml)
+	       ("ert" ert)
+	       ("iss-mode" iss-mode)
+	       ("rinari" rinari))
+	      (("anything" anything)
+	       ("ecb" ecb)
+	       ("edit-server" edit-server)
+	       ("emacs" nxml-mode)
+	       ("fold-dwim" fold-dwim)
+	       ("html-toc" html-toc)
+	       ("mediawiki" mediawiki)
+	       ("vline" vline)
+	       ("winsize" winsize)
+	       (nil company-mode emacsw32 typesetter w32-regdat w32shell)))
+ :homepage   "https://launchpad.net/nxhtml"
+ :wikipage   "http://www.emacswiki.org/NxhtmlMode")

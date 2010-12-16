@@ -1,0 +1,9 @@
+(:summary    "Antlr runtime"
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-2"
+ :authors    (("Ola Bini" . "ola.bini@gmail.com"))
+ :maintainer ("Ola Bini" . "ola.bini@gmail.com")
+ :provided   (antlr-runtime)
+ :required   ((("emacs" cl)))
+ :homepage   "https://github.com/olabini/antlr-elisp")

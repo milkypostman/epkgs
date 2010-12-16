@@ -1,0 +1,13 @@
+(:summary    "Android Wrappers for Emacs"
+ :created    "2007"
+ :updated    "2007"
+ :license    "GPL-2"
+ :authors    (("jonnay" . "jonnay@jonnay.net"))
+ :maintainer ("jonnay" . "jonnay@jonnay.net")
+ :provided   (emdroid)
+ :keywords   ("java")
+ :homepage   "http://www.emacswiki.org/EmDroid"
+ :wikipage   "http://www.emacswiki.org/EmDroid"
+ :commentary "\
+Why should eclipse guys get all the fun?  Here are some commands for
+working with android")

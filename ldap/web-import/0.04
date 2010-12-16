@@ -1,0 +1,18 @@
+(:summary    "LDAP searching routines"
+ :created    "1997"
+ :updated    "1997"
+ :license    "GPL-2"
+ :authors    (("Andrew J Cosgriff" . "ajc@bing.wattle.id.au"))
+ :maintainer ("Andrew J Cosgriff" . "ajc@bing.wattle.id.au")
+ :provided   (ldap)
+ :required   ((("emacs" backquote)))
+ :keywords   ("ldap" "search")
+ :homepage   "http://polydistortion.net/sw/emacs-lisp/"
+ :commentary "\
+Since I'm currently working on testing an LDAP server, I needed
+(well wanted) some routines to look up people on the server and
+return me their email addresses.
+
+It currently relies on having the \"ldapsearch\" executable in your
+path (it's part of the Uni of Michigan LDAP stuff, which you can
+find at http://www.umich.edu/~rsug/ldap/)")

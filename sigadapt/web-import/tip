@@ -1,0 +1,5 @@
+(:created    "2002"
+ :updated    "20051101"
+ :provided   (sigadapt)
+ :required   ((("bbdb" bbdb bbdb-com)))
+ :homepage   "http://pagesperso-systeme.lip6.fr/Christian.Queinnec/WWW/elisp.html")

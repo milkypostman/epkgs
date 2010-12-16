@@ -1,0 +1,17 @@
+(:summary    "Tail files within Emacs"
+ :created    "2000"
+ :updated    "20101024"
+ :license    "GPL-2"
+ :authors    (("Benjamin Drieu" . "bdrieu@april.org"))
+ :maintainer ("Benjamin Drieu" . "bdrieu@april.org")
+ :provided   (tail)
+ :required   ((("emacs" electric)))
+ :keywords   ("tools")
+ :homepage   "http://www.grassouille.org/emacs/index.en.html"
+ :commentary "\
+This program displays ``tailed'' contents of files inside
+ transients windows of Emacs.  It is primarily meant to keep an eye
+ on logs within Emacs instead of using additional terminals.
+
+ This was developed for GNU Emacs 20.x but should work as well for
+ XEmacs 21.x")

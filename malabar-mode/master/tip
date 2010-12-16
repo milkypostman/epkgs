@@ -1,0 +1,12 @@
+(:summary    "A better Java mode for Emacs"
+ :created    "2009"
+ :updated    "2010"
+ :license    "GPL-2"
+ :provided   (malabar-abbrevs malabar-annotations malabar-codegen malabar-groovy malabar-import malabar-jump-to-project malabar-misc malabar-mode malabar-project malabar-refactor malabar-reflection malabar-semanticdb malabar-test malabar-util malabar-variables semantic/wisent/javat-wy wisent-java-wy wisent-malabar-java-wy)
+ :required   ((("cc-mode" cc-subword)
+	       ("cedet" semantic-ctxt semantic-find semantic-ia semantic-lex semantic-load semantic-wisent semanticdb-search srecode-getset srecode-map wisent-comp wisent-java)
+	       ("emacs" ansi-color arc-mode cc-cmds cc-vars cl comint compile easymenu eieio eieio-base eieio-opt semantic skeleton srecode subword thingatpt)
+	       ("fringe-helper" fringe-helper)
+	       (nil semantic/ctxt semantic/db-find semantic/find semantic/ia semantic/lex semantic/wisent semantic/wisent/comp semantic/wisent/java-tags srecode/getset srecode/map srecode/semantic)))
+ :homepage   "https://github.com/espenhw/malabar-mode"
+ :wikipage   "http://www.emacswiki.org/MalabarMode")

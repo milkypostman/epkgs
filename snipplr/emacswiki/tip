@@ -1,0 +1,18 @@
+(:summary    "Emacs interface to snipplr.com"
+ :created    "2007"
+ :updated    "2007"
+ :license    "GPL-2"
+ :authors    (("Dale K. Hawkins" . "dkhawk@gmail.com"))
+ :maintainer ("Dale K. Hawkins" . "dkhawk@gmail.com")
+ :provided   (snipplr)
+ :required   ((("emacs" wid-edit widget)
+	       ("xml-rpc" xml-rpc)))
+ :keywords   ("extensions" "tools")
+ :homepage   "http://www.emacswiki.org/SnipplrMode"
+ :wikipage   "http://www.emacswiki.org/SnipplrMode"
+ :commentary "\
+This file provides an emacs based interface to snipplr.com.
+
+Dependencies:
+xml-rpc
+http://elisp.info/package/xml-rpc/")

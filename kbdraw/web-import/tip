@@ -1,0 +1,69 @@
+(:summary    "Generates html to render a keyboard layout"
+ :created    "2002"
+ :updated    "20021016"
+ :license    "GPL-2"
+ :authors    (("Neil W. Van Dyke" . "neil@neilvandyke.org"))
+ :maintainer ("Neil W. Van Dyke" . "neil@neilvandyke.org")
+ :provided   (kbdraw)
+ :required   ((("emacs" browse-url)))
+ :homepage   "http://www.neilvandyke.org/kbdraw/"
+ :commentary "\
+`kbdraw.el' takes a specification of a keyboard layout as an Emacs Lisp
+s-expression and generates HTML code to render the layout in a Web browser.
+
+This is something I hacked up in a few hours to help me in designing
+keyboard layouts and showing the layouts to other people via the Web.
+
+You can either include the HTML in your Web pages, or take a screenshot of
+the HTML as viewed in your own Web browser and publish it in PNG/JPEG/GIF
+form.
+
+For a demo, do M-x kbdraw-sample RET.  The sample keyboard defined in
+`kbdraw-sample-1' will be displayed in your Web browser via `browse-url'.
+
+This package requires a little bit of Emacs Lisp knowledge on the part of
+the user.  The following rough grammar spec might help.  See
+`kbdraw-sample-1' for an example.
+
+    BOARD ::= { BOARD-ELEMENT }+
+
+    BOARD-ELEMENT ::= KEY-WIDTH-DEFAULT | ROW | VSPACE
+
+    KEY-WIDTH-DEFAULT ::= (key-width-default WIDTH)
+    ROW ::= (row { ROW-ELEMENT }+ )
+    VSPACE ::= (vspace)
+
+    ROW-ELEMENT ::= KEY | HSPACE
+
+    KEY ::= KEYNAME | (KEYNAME &optional SHIFTED-KEYNAME WIDTH)
+    KEYNAME ::= STRING
+    SHIFTED-KEYNAME ::= KEYNAME | nil
+    WIDTH ::= INTEGER
+   
+    HSPACE ::= (hspace &optional WIDTH)
+
+One way you *may* wish to use this package is to have a file such as
+`my-keyboard.el' that defines the keyboard that will be rendered to
+`my-keyboard.html'.  Then you can eval the buffer or Lisp form to update the
+HTML file.
+
+    (require 'kbdraw)
+
+    (let ((kbdraw-board-color \"black\")
+          (kbdraw-key-color   \"white\")
+          (kbdraw-label-color \"#f00000\"))
+
+      (kbdraw-preview \"my-keyboard.html\"
+
+                      '((key-width-default 4)
+                        (row \"7\" \"8\" \"9\")
+                        (row \"4\" \"5\" \"6\")
+                        (row \"1\" \"2\" \"3\")
+                        (row (\"0\" nil 8) \"Enter\"))))
+
+Or just bang around, er, *rapid prototype* in the `*scratch*' buffer:
+
+    (kbdraw-preview \"foo.html\" '((row \"A\" \"B\" \"See\")))
+
+Please note that this was a quick&dirty package, and I'm no longer using or
+maintaining it.")

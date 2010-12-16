@@ -1,0 +1,20 @@
+(:summary    "Automatically associate tags when key-tagging an item"
+ :created    "20090331"
+ :updated    "20090331"
+ :license    "GPL-3"
+ :authors    (("Konstantin Antipin"))
+ :maintainer ("Konstantin Antipin")
+ :provided   (org-assoc-tags)
+ :keywords   ("org-mode" "tags")
+ :commentary "\
+This is actually a little tweak for org-mode.
+
+You can define a key-tag and list of associated tags.
+Every time you set a key-tag to the item, associated tags
+assign automatically.
+
+
+Installation: 
+
+Put the following code in your .emacs file:
+(require 'org-assoc-tags)")

@@ -1,0 +1,10 @@
+(:summary    "Helps you pop up and pop out shell buffer easily"
+ :created    "20090531"
+ :updated    "20100528"
+ :license    "GPL-2"
+ :authors    (("Kazuo YAGI" . "kyagi@1liner.jp"))
+ :maintainer ("Kazuo YAGI" . "kyagi@1liner.jp")
+ :provided   (shell-pop)
+ :keywords   ("shell" "terminal" "tools")
+ :homepage   "https://github.com/whitypig/shell-pop"
+ :wikipage   "http://www.emacswiki.org/ShellPop")

@@ -1,0 +1,25 @@
+(:summary    "Generalized `y-or-n-p'"
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-3"
+ :authors    (("Edward O'Connor" . "hober0@gmail.com"))
+ :maintainer ("Edward O'Connor" . "hober0@gmail.com")
+ :provided   (read-char-spec)
+ :keywords   ("convenience")
+ :homepage   "http://edward.oconnor.cx/elisp/"
+ :commentary "\
+Provides a generalization of the `y-or-n-p' UI for when you have
+other possible answers. `read-char-spec' is to `read-char' as
+`format-spec' is to `format'. Here's how you would re-implement
+`y-or-n-p' with `read-char-spec':
+
+(defun example-y-or-n-p (prompt)
+  \"Copy of `y-or-n-p', as an example use of `read-char-spec'.
+PROMPT is as for `y-or-n-p'.\"
+  (read-char-spec prompt '((?y t \"Answer in the affirmative\")
+                           (?n nil \"Answer in the negative\"))))
+
+Compared to using `interactive's \"c\" spec, I think the programmatic
+interface for `read-char-spec' is simpler, it keeps prompting until
+you really type one of the characters in the spec, and it provides
+for interactive help for the user (by typing \"?\").")

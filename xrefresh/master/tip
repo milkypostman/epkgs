@@ -1,0 +1,22 @@
+(:authors    (("Stefan Thomas" . "justmoon@members.fsf.org"))
+ :maintainer ("Stefan Thomas" . "justmoon@members.fsf.org")
+ :provided   (xrefresh)
+ :required   ((("emacs" json)))
+ :homepage   "https://github.com/justmoon/xrefresh-emacs"
+ :commentary "\
+o For more information, please see
+  - XRefresh homepage
+    http://xrefresh.binaryage.com/
+  - Included README.md
+
+o Usage:
+  (require 'xrefresh)
+  (xrefresh-start)
+
+This server will notify xrefresh clients of any changes to your web
+development projects' files.
+
+Code based on emacsserver by
+  Dhruva Krishnamurthy (dhruva.krishnamurthy@gmail.com)
+
+-----------------------------------------------------------------------------")

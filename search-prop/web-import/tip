@@ -1,0 +1,33 @@
+(:summary    "Search forward and backward for properties"
+ :created    "2007"
+ :updated    "2007"
+ :license    "GPL-2"
+ :authors    (("Michael Olson" . "mwolson@gnu.org"))
+ :maintainer ("Michael Olson" . "mwolson@gnu.org")
+ :provided   (search-prop)
+ :commentary "\
+The routines in this file are used to quickly search through text
+properties in the current buffer.  It is even possible to look for
+a property with a particular value.
+
+The first application of these methods was for finding the next (or
+previous) instance of a URL.  This is accomplished by searching for
+text that has already been fontified, in order to identify that of
+the fontified face of that URL.
+
+`search-property' does most of the work.  It is a generalized
+search routine that takes the direction of the search, whether the
+search is permitted to cycle to the other end of the buffer, the
+property to search for, and (optionally) the particular value that
+the property should have.
+
+The search will wrap around to the other end of the buffer when the
+CYCLE argument is passed to `search-property'.
+
+This library also provides the functions `search-property-forward'
+and `search-property-backward', which should be reminiscent of the
+Emacs functions `search-forward' and `search-backward'.
+
+The author has a copyright assignment on file for Emacs, in case
+its authors wish to incorporate this code into Emacs proper at some
+point.")

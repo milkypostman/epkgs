@@ -1,0 +1,18 @@
+(:summary    "List functions in a buffer"
+ :created    "2003"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("Aurélien Tisné" . "aurelien.tisne@free.fr"))
+ :maintainer ("Aurélien Tisné" . "aurelien.tisne@free.fr")
+ :provided   (show-functions)
+ :required   ((("emacs" wid-edit)))
+ :keywords   ("convenience")
+ :homepage   "http://aurelien.tisne.free.fr/emacs-pages/emacs.html"
+ :commentary "\
+This package build a temporary buffer containing the list of all 
+functions defined in the visited buffer.
+You should provide the pattern of the function definition in
+parameter of the main function. The default pattern is the
+declaration of elisp function '(defun'.
+You can provide the pattern of the declaration of other items.
+For instance 'class' to list java classes.")

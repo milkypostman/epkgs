@@ -1,0 +1,35 @@
+(:summary    "Major mode for editing javascript (.js) files"
+ :created    "1997"
+ :updated    "1997"
+ :license    "GPL-2"
+ :authors    (("Peter Kruse" . "pete@netzblick.de"))
+ :maintainer ("Peter Kruse" . "pete@netzblick.de")
+ :provided   (javascript-mode)
+ :required   ((("emacs" browse-url tempo)))
+ :keywords   ("languages")
+ :homepage   "http://www.brigadoon.de/peter/"
+ :wikipage   "http://www.emacswiki.org/JavaScriptMode"
+ :commentary "\
+Get the latest version from
+<http://www.brigadoon.de/peter/javascript-mode.el>
+
+Basically this is c-mode, for indentation, that's where the line
+(load-library \"c-mode\") comes from. colorization is done via hilit19.el.
+Actually did not do much programming myself, just wanted to have
+colorization, indentation and some functions (hm that's what major modes
+are about?) hey, this is my first try!
+
+HOW TO INSTALL:
+Put the following forms in your .emacs to enable autoloading of JavaScript
+mode, and auto-recognition of \".js\" files.
+
+  (autoload 'javascript-mode \"javascript-mode\" \"JavaScript mode\" t)
+  (setq auto-mode-alist (append '((\"\\\\.js$\" . javascript-mode))
+				   auto-mode-alist))
+
+  This mode requires another lisp file, tempo.el. This can be
+    retrieved from ftp://ftp.lysator.liu.se/pub/emacs/tempo.el
+
+  You might want to get browse-url.el, for the online help.
+  Get it from
+  http://wombat.doc.ic.ac.uk/emacs/browse-url.el")

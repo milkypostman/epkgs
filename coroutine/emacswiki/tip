@@ -1,0 +1,25 @@
+(:summary    "Coroutines for Emacs Lisp"
+ :created    "2000"
+ :updated    "2000"
+ :license    "GPL-2"
+ :authors    (("Michael Abraham Shulman" . "viritrilbia@users.sourceforge.net"))
+ :maintainer ("Michael Abraham Shulman" . "viritrilbia@users.sourceforge.net")
+ :provided   (coroutine)
+ :required   ((("emacs" cl)
+	       ("tagbody" tagbody)))
+ :keywords   ("extensions")
+ :homepage   "http://www.emacswiki.org/CoRoutines"
+ :wikipage   "http://www.emacswiki.org/CoRoutines"
+ :commentary "\
+This file allows the definition of coroutines in Emacs Lisp.  A
+coroutine is a function that can return (\"yield\") a value and still
+retain its execution state so that at the next call it can pick up
+where it left off.
+
+Coroutines are very difficult to implement without the aid of
+first-class continuations or a similar control feature, and this
+imposes certain limits: for example, `yield' is only valid at
+top-level in the coroutine, or inside a specially tweaked macro.
+
+This file requires `tagbody.el' which defines the Common Lisp
+`tagbody' form for Emacs Lisp.")

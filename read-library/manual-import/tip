@@ -1,0 +1,18 @@
+(:summary    "Read library from minibuffer with completion"
+ :created    "2000"
+ :updated    "2000"
+ :license    "GPL-2"
+ :authors    (("Gareth Rees" . "gareth.rees@pobox.com"))
+ :maintainer ("Gareth Rees" . "gareth.rees@pobox.com")
+ :provided   (read-library)
+ :required   ((("emacs" cl)))
+ :commentary "\
+The function `read-library' reads a loadable library name from the
+minibuffer with completion.  Because it may take a long time to
+search all of `load-path' to find the loadable libraries, the list is
+cached and is only refreshed when `load-path' changes.  Note that
+this means that newly added files on a directory on `load-path' won't
+be noticed.
+
+The function `read-library-load' has the same interface and
+functionality as `load-library' except that it reads with completion.")

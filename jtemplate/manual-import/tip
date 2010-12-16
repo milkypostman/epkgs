@@ -1,0 +1,11 @@
+(:summary    "Helper for building java class"
+ :license    "GPL-2"
+ :authors    (("Alexandre Brillant" . "djefer@club-internet.fr"))
+ :maintainer ("Alexandre Brillant" . "djefer@club-internet.fr")
+ :provided   (jtemplate)
+ :required   (nil
+	      (("emacs" easymenu)
+	       (nil jtemplate-db)))
+ :commentary "\
+Thank you to Stefan Monnier (foo@acm.com) for listp information
+Thank you to Christoph Conrad (cc@cli.de) for bug report on 1.1")

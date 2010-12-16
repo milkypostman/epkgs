@@ -1,0 +1,6 @@
+(:created    "2009"
+ :updated    "2009"
+ :license    "GPL-3"
+ :authors    (("Mike Mattie"))
+ :maintainer ("Mike Mattie")
+ :provided   (record-processor))

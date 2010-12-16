@@ -1,0 +1,5 @@
+(:summary    "Emacs interface to verbiste"
+ :created    "2002"
+ :updated    "2003"
+ :license    "GPL-2"
+ :provided   (verbiste))

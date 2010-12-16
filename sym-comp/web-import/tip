@@ -1,0 +1,31 @@
+(:summary    "Mode-dependent symbol completion"
+ :created    "2004"
+ :updated    "2004"
+ :license    "GPL-2"
+ :authors    (("Dave Love" . "fx@gnu.org"))
+ :maintainer ("Dave Love" . "fx@gnu.org")
+ :provided   (sym-comp)
+ :required   ((("emacs" hippie-exp)))
+ :keywords   ("extensions")
+ :homepage   "http://www.loveshack.ukfsn.org/emacs/"
+ :commentary "\
+This defines `symbol-complete', which is a generalization of the
+old `lisp-complete-symbol'.  It provides the following hooks to
+allow major modes to set up completion appropriate for the mode:
+`symbol-completion-symbol-function',
+`symbol-completion-completions-function',
+`symbol-completion-predicate-function',
+`symbol-completion-transform-function'.  Typically it is only
+necessary for a mode to set
+`symbol-completion-completions-function' locally and to bind
+`symbol-complete' appropriately.
+
+It's unfortunate that there doesn't seem to be a good way of
+combining this with `complete-symbol'.
+
+There is also `symbol-completion-try-complete', for use with
+Hippie-exp.
+
+As an example, `lisp-complete-symbol' is defined below using this
+infrastructure to replace the old one from lisp.el with the same
+functionality.")

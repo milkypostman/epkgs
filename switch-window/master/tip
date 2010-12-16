@@ -1,0 +1,9 @@
+(:summary    "A *visual* way to choose a window to switch to"
+ :created    "20100430"
+ :updated    "2010"
+ :authors    (("Dimitri Fontaine" . "dim@tapoueh.org"))
+ :maintainer ("Dimitri Fontaine" . "dim@tapoueh.org")
+ :provided   (switch-window)
+ :required   ((("emacs" cl quail)))
+ :keywords   ("window" "navigation")
+ :homepage   "http://tapoueh.org/projects.html#sec19")

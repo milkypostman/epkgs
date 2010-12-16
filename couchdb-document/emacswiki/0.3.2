@@ -1,0 +1,38 @@
+(:summary    "Couchdb document handler"
+ :created    "20101027"
+ :updated    "2010"
+ :license    "GPL-2"
+ :authors    (("Changyuan Yu" . "rei.vzy@gmail.com"))
+ :maintainer ("Changyuan Yu" . "rei.vzy@gmail.com")
+ :provided   (couchdb-document)
+ :required   ((("emacs" json url)
+	       ("org-json" org-json)))
+ :keywords   ("files" "couchdb" "json" "org")
+ :homepage   "http://www.emacswiki.org/CouchdbDocument"
+ :wikipage   "http://www.emacswiki.org/CouchdbDocument"
+ :commentary "\
+Usage:
+
+(require 'couchdb-document)
+(find-file \"/couchdb:/test_db1/doc_XXXX\")
+
+(require 'couchdb-document-text)
+(find-file \"/couchdb:/test_db1/secret.org.gpg\")
+
+ChangeLog:
+0.3.2: fix debug related bug.
+
+0.3.1: fix for ido-find-file.
+
+0.3: encode and decode method now can be select by set 'encode and 'decode
+with `couchdb-document-open-hook'. A simple text format is provided with
+file couchdb-document-text.el.
+
+0.2: implement document delete, directory create and delete
+
+0.1: implement document open and save
+
+TODO:
+1. revision(append '@' as revision in filename) support
+2. using couchdb 'change' feature implement verify-visited-file-modtime
+3. support dired.")

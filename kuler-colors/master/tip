@@ -1,0 +1,6 @@
+(:created    "2002"
+ :updated    "2002"
+ :license    "GPL-2"
+ :authors    (("Erik Charlebois"))
+ :maintainer ("Erik Charlebois")
+ :homepage   "https://github.com/erikcharlebois/kuler-colors")

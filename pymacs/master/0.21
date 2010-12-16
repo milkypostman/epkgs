@@ -1,0 +1,6 @@
+(:created    "2001"
+ :updated    "2002"
+ :license    "GPL-2"
+ :provided   (pymacs)
+ :homepage   "http://pymacs.progiciels-bpi.ca/"
+ :wikipage   "http://www.emacswiki.org/PyMacs")

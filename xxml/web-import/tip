@@ -1,0 +1,7 @@
+(:summary    "Supplementary tools for handling SGML and HTML"
+ :created    "19990525"
+ :updated    "2002"
+ :authors    (("François Pinard" . "pinard@iro.umontreal.ca"))
+ :maintainer ("François Pinard" . "pinard@iro.umontreal.ca")
+ :provided   (xxml)
+ :homepage   "http://xxml.progiciels-bpi.ca/")

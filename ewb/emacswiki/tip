@@ -1,0 +1,8 @@
+(:summary    "Emacs Web Browser"
+ :created    "2002"
+ :updated    "2002"
+ :license    "GPL-2"
+ :provided   (ewb)
+ :keywords   ("browser" "web" "net")
+ :commentary "\
+For entertainment purposes only")

@@ -1,0 +1,41 @@
+(:summary    "Update a boilerplate copyright message in the buffer"
+ :created    "2002"
+ :updated    "20021016"
+ :license    "GPL-2"
+ :authors    (("Neil W. Van Dyke" . "neil@neilvandyke.org"))
+ :maintainer ("Neil W. Van Dyke" . "neil@neilvandyke.org")
+ :homepage   "http://www.neilvandyke.org/noticeify/"
+ :commentary "\
+This script updates a block of boilerplate comment text at the top of the
+source code file in the current buffer.  By default, the text is inserted
+from the file named `NOTICE-TEXT' in the same directory as the file.
+`noticeify' makes a half-hearted attempt to use appropriate commenting
+characters, based on the current major mode, so you can use insert the same
+`NOTICE-TEXT' file into files written in any of several programming
+languages.  The boilerplate text will be inserted between two cookies lines
+`NOTICE' and `NOTICE-END', which result in something like the following.
+
+    /*
+     * NOTICE()
+     * 
+     * Copyright (C) 1969 Foo Corp.
+     *
+     * Blah blah blah...
+     *
+     * NOTICE-END
+     */
+
+You can also specify on a per-file basis whether to use boilerplate text
+file other than `NOTICE-TEXT' by inserting a relative pathname or filename
+between the parentheses in the `NOTICE()' cookie.  This is useful when you
+have code files in multiple subdirectories that all use the same
+`NOTICE-TEXT' file from a parent directory, in which case the would have
+`NOTICE(..)' cookies.  It's also useful when a few of your files require
+different boilerplate text, such as if they are not covered under the same
+copyright license, in which case you might have cookies such as
+`NOTICE(NOTICE-TEXT-FOR-BAZ-LIB)'.
+
+Note that `noticeify' is a quick&dirty thing I hacked up to add copyright
+notices to a bunch of files in different languages a while ago.  This is not
+the best way to do things (e.g., it should really use the syntax table for
+the major mode, and it should also have a batch mode).")

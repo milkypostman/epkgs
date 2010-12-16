@@ -1,0 +1,10 @@
+(:summary    "Export BBDB as vCard files"
+ :created    "20020808"
+ :updated    "20060314"
+ :license    "GPL-2"
+ :authors    (("Jim Hourihan" . "jimh@panix.com"))
+ :maintainer ("Jim Hourihan" . "jimh@panix.com")
+ :provided   (bbdb-vcard-export)
+ :required   ((("bbdb" bbdb)
+	       ("emacs" easy-mmode)))
+ :keywords   ("vcard" "ipod"))

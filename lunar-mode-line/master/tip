@@ -1,0 +1,12 @@
+(:summary    "Display lunar phase in mode line of Emacs"
+ :created    "20060522"
+ :updated    "2008"
+ :license    "GPL-2"
+ :authors    (("Ben Voui" . "intrigeri@boum.org"))
+ :maintainer (nil . "intrigeri@boum.org")
+ :provided   (lunar-mode-line)
+ :required   ((("emacs" calendar lunar timer)))
+ :keywords   ("extensions")
+ :wikipage   "http://www.emacswiki.org/LunarModeLine"
+ :commentary "\
+Inspired by battery.el, by Ralph Schleicher <rs@nunatak.allgaeu.org>.")

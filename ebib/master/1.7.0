@@ -1,0 +1,7 @@
+(:created    "2008"
+ :updated    "2008"
+ :license    "as-is"
+ :provided   (ebib)
+ :required   ((("emacs" cl)))
+ :homepage   "http://ebib.sourceforge.net"
+ :wikipage   "http://www.emacswiki.org/Ebib")

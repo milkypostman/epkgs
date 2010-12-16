@@ -1,0 +1,21 @@
+(:summary    "Incremental search for the kill ring"
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-2"
+ :authors    (("Nikolaj Schumacher" . "bugs@nschum.de"))
+ :maintainer ("Nikolaj Schumacher" . "bugs@nschum.de")
+ :provided   (kill-ring-search)
+ :required   ((("emacs" cl)))
+ :keywords   ("convenience" "matching")
+ :homepage   "http://nschum.de/src/emacs/kill-ring-search"
+ :wikipage   "http://www.emacswiki.org/KillRingSearch"
+ :commentary "\
+To install, add the following to your .emacs file:
+(autoload 'kill-ring-search \"kill-ring-search\"
+ \"Search the kill ring in the minibuffer.\"
+ (interactive))
+(global-set-key \"\\M-\\C-y\" 'kill-ring-search)
+
+Just call kill-ring-search and enter your search.
+M-y and C-y work as usual.  You can also use C-r like in a shell.
+C-v, M-v, C-n and C-p will scroll the view.")

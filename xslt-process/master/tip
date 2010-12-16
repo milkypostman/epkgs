@@ -1,0 +1,11 @@
+(:summary    "Invoke an XSLT processor on an Emacs buffer"
+ :created    "2000"
+ :updated    "20030916"
+ :license    "GPL-2"
+ :authors    (("Ovidiu Predescu" . "ovidiu@cup.hp.com"))
+ :maintainer ("Ovidiu Predescu" . "ovidiu@cup.hp.com")
+ :provided   (xslt-process xslt-speedbar)
+ :required   ((("elib" string)
+	       ("emacs" browse-url cl custom easymenu info reporter speedbar wid-edit widget)))
+ :keywords   ("xml" "xslt")
+ :homepage   "http://xslt-process.sourceforge.net/index.php")

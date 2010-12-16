@@ -1,0 +1,10 @@
+(:summary    "Support html tagging key chord"
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-2"
+ :authors    (("Tomoya Otake" . "tomoya.ton@gmail.com"))
+ :maintainer ("Tomoya Otake" . "tomoya.ton@gmail.com")
+ :provided   (html-key-chord-mode)
+ :required   ((("key-chord" key-chord)
+	       ("xyzzy" xyzzy)))
+ :homepage   "https://github.com/tomoya/html-key-chord-mode")

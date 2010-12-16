@@ -1,0 +1,9 @@
+(:created    "20020831"
+ :updated    "20021002"
+ :license    "GPL-2"
+ :authors    (("Vivek Dasmohapatra" . "vivek@etla.org"))
+ :maintainer ("Vivek Dasmohapatra" . "vivek@etla.org")
+ :provided   (lpc-mode)
+ :required   ((("emacs" regexp-opt)))
+ :keywords   ("languages" "lpc")
+ :homepage   "http://rtfm.etla.org/emacs/lpc-mode/")

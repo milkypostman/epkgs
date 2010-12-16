@@ -1,0 +1,17 @@
+(:summary    "Show concordance table"
+ :created    "2001"
+ :updated    "2001"
+ :license    "GPL-2"
+ :provided   (concordance)
+ :required   ((("emacs" cl info thingatpt timer)
+	       ("tellib" tellib)))
+ :keywords   ("text" "statistics" "concordance")
+ :homepage   "http://members.a1.net/t.link/filestats.html"
+ :commentary "\
+Put this file into your load path -- type \"\\C-h v load-path\" to
+find a suitable directory. Put
+
+(autoload 'concordance \"textstats\" \"Build concordance table\" t)
+
+into your startup file, which is probably called \"~/.emacs.el\".
+Invoke by typing \"M-x concordance\".")

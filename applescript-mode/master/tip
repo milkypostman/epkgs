@@ -1,0 +1,11 @@
+(:summary    "Major mode for editing AppleScript source"
+ :created    "2004"
+ :updated    "2004"
+ :license    "GPL-2"
+ :authors    (("sakito" . "sakito@users.sourceforge.jp"))
+ :maintainer ("sakito" . "sakito@users.sourceforge.jp")
+ :provided   (applescript-mode)
+ :required   ((("emacs" easymenu)))
+ :keywords   ("languages" "tools")
+ :commentary "\
+AppleScript Mode")

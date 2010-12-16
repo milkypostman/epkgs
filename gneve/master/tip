@@ -1,0 +1,12 @@
+(:created    "2007"
+ :updated    "2007"
+ :license    "GPL-3"
+ :provided   (gneve-mode)
+ :homepage   "http://1010.co.uk/gneve.html"
+ :wikipage   "http://www.emacswiki.org/GNEVE"
+ :commentary "\
+Use: 
+    1. M-x gneve-mode RET to invoke in gneve-mode
+       C-x C-w to save *GNEVE* buffer as videname.edl for later usage
+    2. C-x C-f any .edl file to open it in gneve-mode
+    3. C-h m to visit gneve mode help")

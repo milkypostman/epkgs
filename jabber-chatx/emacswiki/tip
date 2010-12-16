@@ -1,0 +1,12 @@
+(:summary    "Add the ability to remember and extract old messages"
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-3"
+ :authors    (("Rodrigo Lazo" . "rlazo.paz@gmail.com"))
+ :maintainer ("Rodrigo Lazo" . "rlazo.paz@gmail.com")
+ :provided   (jabber-chatx)
+ :required   ((("jabber" jabber)))
+ :keywords   ("extensions")
+ :commentary "\
+Adds the ability to cicle over your previous send messages on the
+chat buffer so you don't have to write them again.")

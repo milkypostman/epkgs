@@ -1,0 +1,41 @@
+(:summary    "Anything-sources for opening javadocs"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Takeshi Banse" . "takebi@laafc.net"))
+ :maintainer ("Takeshi Banse" . "takebi@laafc.net")
+ :provided   (anything-c-javadoc)
+ :required   ((("anything" anything)
+	       ("emacs" simple url)))
+ :keywords   ("convenience" "anything" "javadoc" "help" "lookup")
+ :commentary "\
+Some anything configurations for quickly open javadocs.
+
+This package works by scanning the allclasses-frame.html and the index
+file(s) (index-all.html or index-files/index-*.html), which are generated
+by the javadoc tool, for some information such as the path to their
+documentation uri and making ordinary buffers suitable for anything's
+candidate-in-buffer capability. Then it dumps each these buffers as a _big
+string_ into the cache file for the next Emacs session.
+
+This html-processing stuff is so much iffy, fragile and maybe totally
+broken :)
+
+This package will generate cache files unless they exist. The cache
+generation processes will take a _long_ while, please hold on for some
+time. The cache file generation will be take into account if a). neither
+candidates-buffer nor corresponding cache file exit or b). `anything' is
+being executed with any prefix-arguments. The location of the cache files
+are controlled with the customizable options:
+`anything-c-javadoc-classes-cache-filename' and
+`anything-c-javadoc-indexes-cache-filename'.
+
+If you want to add more javadocs, add the urls to `anything-c-javadoc-dirs'
+then regenerate the cache files with C-u M-x `anything-c-javadoc'. Or
+define more anything-sources with `install-anything-c-source-javadoc*'
+and (optionally) add newly created sources to `anything-c-javadoc-sources'.
+
+Installation:
+
+Put the anything-c-javadoc.el and anything.el to your load-path and
+(optionally) install emacs-w3m package.")

@@ -1,0 +1,5 @@
+(:updated    "20100523"
+ :provided   (windows)
+ :required   ((("revive" revive)))
+ :homepage   "http://www.gentei.org/~yuuji/software/"
+ :wikipage   "http://www.emacswiki.org/WindowsMode")

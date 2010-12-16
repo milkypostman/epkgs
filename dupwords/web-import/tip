@@ -1,0 +1,76 @@
+(:summary    "Find duplicate words in sentences"
+ :created    "19980727"
+ :updated    "20040411"
+ :license    "GPL-2"
+ :authors    ((nil . "stephen eglen stephen@anc.ed.ac.uk"))
+ :maintainer (nil . "stephen eglen stephen@anc.ed.ac.uk")
+ :keywords   ("wp")
+ :homepage   "http://www.anc.ed.ac.uk/~stephen/emacs/"
+ :commentary "\
+This program will find duplicate words in sentences.  For example,
+in the sentence `The the cat sat on the mat', it will notice that
+you have written `the the' and highlight the two identical words.
+To check a region, use `M-x dw-check-region', or use `M-x
+dw-check-to-end' to check from the current point to the end of the
+buffer.  When you find a duplicate word, if you press `n' to exit,
+point is left at the beginning of the first word, and mark at the
+start of the second.
+
+Some solutions to this have already been sent to the Emacs newsgroups e.g. 
+http://x8.dejanews.com/getdoc.xp?AN=118205039&fmt=raw
+http://x8.dejanews.com/getdoc.xp?AN=118375212&fmt=raw
+
+The advantage of this approach is that it also tells you when you
+have used the same word further on in the same sentence.  Set
+`dw-forward-words' to 1 if you wish to find only duplicate words
+that are immediately next to each other.  Or, if you want to check
+for duplicate words within three words of each other, set it to 3.
+If you want to check for duplicate words anywhere within a
+sentence, set dw-forward-words to a negative value.  Duplicate
+occurences of common words within a sentence but not adjacent can
+be ignored by including the word in `dw-ignore-list'.
+
+How it works.
+
+For each sentence, a list of the words in it is created.  The
+position of each word in the buffer is stored using the text
+property `dw-pos'.  When we find duplicate words in the sentence,
+the text property is used to highlight the duplicate words in the
+buffer.
+
+Developed on Emacs 20.2, but tested also on Emacs 19.34 and XEmacs
+19.15.  Should work in Emacs 21.
+
+
+Bugs / To do:
+
+Works only in text-based modes, such as Text, LaTeX, since it
+relies on defuns such as `forward-sentence'.
+
+Doesn't finish cleanly if the final sentence is not complete.
+
+This code is new, so I'm sure there are lots of bugs!
+
+Some suggestions from Drew Adams:
+Create a single command, say dw-check, to do both dw-check-to-end and
+dw-check-region: If the region is active - for example (and
+transient-mark-mode mark-active) - then dw-check-region; else
+dw-check-to-end. (In any case, dw-check-region does nothing if the region is
+not active, so the command might as well check till the end.)
+
+Cancel a dw command cleanly with C-g, in addition to `n'.  Perhaps
+also give SPACE the same binding as `y' (continue), for convenience.
+
+ Supply a value as prefix arg for use instead of dw-forward-words,
+and have it default to dw-forward-words (whose defvar default value
+could be 1). For example, M-x dw-check would check for adjacent
+duplicates (assuming dw-forward-words = 1), C-u 3 would check for
+duplicates within 3 words, M-- would check for duplicates within sentence.
+That would be more convenient than users changing dw-forward-words. In other
+words, dw-forward-words would act as a default value, which could be
+overridden with a prefix arg.
+
+When checking for adjacent duplicates, perhaps temporarily bind a
+convenient key (e.g. `.' or `k' or `d') to the binding used by C-w
+(usually kill-region, but not necessarily), to make it easier to remove the
+duplicate.")

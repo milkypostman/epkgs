@@ -1,0 +1,4 @@
+(:updated    "19970727"
+ :provided   (padr)
+ :required   ((("emacs" cl)))
+ :homepage   "http://www.neilvandyke.org/padr/")

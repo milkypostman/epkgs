@@ -1,0 +1,25 @@
+(:summary    "Drag stuff (lines, words, region, etc...) around"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Johan Andersson" . "johan.rejeep@gmail.com"))
+ :maintainer ("Johan Andersson" . "johan.rejeep@gmail.com")
+ :provided   (drag-stuff)
+ :keywords   ("speed" "convenience")
+ :homepage   "https://github.com/rejeep/drag-stuff"
+ :wikipage   "http://www.emacswiki.org/DragStuff"
+ :commentary "\
+drag-stuff is a minor mode for dragging stuff around in Emacs. You
+can drag lines, words and region.
+
+To use drag-stuff, make sure that this file is in Emacs load-path
+(add-to-list 'load-path \"/path/to/directory/or/file\")
+
+Then require drag-stuff
+(require 'drag-stuff)
+
+To start drag-stuff
+(drag-stuff-mode t) or M-x drag-stuff-mode
+
+drag-stuff is buffer local, so hook it up.
+(add-hook 'find-file-hook 'drag-stuff-mode)")

@@ -1,0 +1,76 @@
+(:summary    "Allout outline item graphics and interleaved settings"
+ :created    "200512"
+ :updated    "20071219"
+ :provided   (allout-item-settings allout-tests allout-widgets)
+ :required   ((("emacs" cl overlay wid-edit widget)))
+ :keywords   ("outlines")
+ :homepage   "http://myriadicity.net/Sundry/EmacsAllout"
+ :commentary "\
+This is an optional add-on to allout outline mode which furnishes items
+with graphical features and also interleaved state settings.  It is
+backwards and forwards compatible with recent allout versions, but does
+cause some outline item changes to provide extended features.  Converted
+outlines will still be usable in plain allout mode, but will include
+many extra subitems and dangling reference items which won't be useful
+there.
+
+To add widgets to allout operation, load allout-widgets in addition to
+allout, and arrange for invocation of the function
+`allout-mode-widgets-init', e.g., in your .emacs:
+
+  (require 'allout)
+  (require 'allout-widgets)
+  (allout-mode-widgets-init)
+
+Then, any allout outlines you visit will use widgets.
+
+You can inhibit widget operation for particular allout outlines by
+setting the variable `allout-widgets-mode-inhibit' non-nil in that
+file's buffer, eg using an emacs *file local variables* passages
+(described in the emacs user and elisp manuals).\"
+
+NOTE - Settings, described below, are not yet implemented.
+
+Conversion to allout-widgets format adds setting subitems to each item
+which convey its contextual state besides its content, including its
+unique identifier (item and topic id).  Allout \"distinctive\" bullets are
+converted to settings state, and item exposure (empty, collapsed, or
+expanded) is indicated using the ascii bullet character.  The extended
+mode provides for situating and otherwise cross referencing items within
+and across outlines, but those references will be near opaque and
+useless in regular allout.
+
+The graphics include:
+
+- icons for item bullets, varying to distinguish whether the item either
+  lacks any subitems, the subitems are currently collapsed within the
+  item, or the item is currently expanded.
+
+- guide lines connecting item bullet-icons with those of their subitems.
+
+- cue area between the bullet-icon and the start of the body headline,
+  for item numbering, encryption indicator, and user-selected item
+  status flags.
+
+- indication of concealed body lines, when they exist (XXX probably using)
+  distinctive bullet graphics)
+
+- symbols displayed on empty headlines to indicate an empty body, or an
+  empty headline with concealed torso lines.
+
+The bullet-icon and guide line graphics provide keybindings and mouse
+bindings for easy outline navigation and exposure control, extending
+outline hot-spot navigation (see `allout-mode' docstring for details).
+
+Our use of emacs widgets is limited and unconventional.  We specifically
+are *not* using them to replace text in the buffer - decorate existing
+text rather than substituting for it, to piggy-back on existing allout
+operation.  There's no deletion of existing text and use of format
+strings to substitute new text, etc.  This employs the C-coded
+efficiencies of widget-apply, widget-get, and widget-put, along with the
+basic object-oriented organization of widget-create, to systematically
+couple overlays, graphics, and other features with allout-governed text..
+
+X - things marked with this haven't yet been properly migrated or removed.
+
+_: General Environment")

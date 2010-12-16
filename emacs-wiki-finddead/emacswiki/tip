@@ -1,0 +1,10 @@
+(:summary    "Find dead files in your EmacsWiki"
+ :created    "2004"
+ :updated    "2004"
+ :license    "GPL-2"
+ :authors    (("Jorgen Schaefer"))
+ :maintainer ("Jorgen Schaefer")
+ :provided   (emacs-wiki-finddead)
+ :commentary "\
+This code will find and list all files in the current directory
+that are not reachable from the current emacs-wiki page.")

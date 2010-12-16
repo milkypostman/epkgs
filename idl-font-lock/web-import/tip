@@ -1,0 +1,38 @@
+(:summary    "Font Lock configuration for OMG IDL (CORBA IDL) files"
+ :created    "19980203"
+ :updated    "2001"
+ :license    "GPL-2"
+ :authors    (("Eric Eide" . "eeide@cs.utah.edu"))
+ :maintainer ("Eric Eide" . "eeide@cs.utah.edu")
+ :provided   (idl-font-lock)
+ :required   ((("emacs" font-lock)))
+ :keywords   ("idl" "languages" "faces")
+ :homepage   "http://www.cs.utah.edu/~eeide/emacs/"
+ :commentary "\
+This file provides the data that Font Lock Mode needs in order to decorate
+OMG IDL (a.k.a. CORBA IDL) files.  The Font Lock patterns will match and
+highlight all of the OMG IDL keywords and types defined in the CORBA 2.4.2
+specification.  There are also patterns for highlighting operation names,
+attribute names, case clauses, and preprocessor directives.
+
+If you do not know what Font Lock Mode is, this file will not help you ---
+you will have to look elsewhere if you want to learn about Font Lock itself.
+Similarly, this file does not define a major mode for editing OMG IDL files.
+If you need IDL Mode, get the CC Mode package, version 5, from the World
+Wide Web at <http://cc-mode.sourceforge.net/>.
+
+Once you have configured Font Lock Mode and installed CC Mode version 5, you
+can load this file in order to get highlighting in IDL Mode buffers.  Put
+this file where Emacs can find it (i.e., somewhere in your `load-path') and
+then add the following lines to your `.emacs' file:
+
+  (setq auto-mode-alist (cons '(\"\\\\.idl\\\\'\" . idl-mode) auto-mode-alist))
+  (require 'idl-font-lock)
+
+The patterns for highlighting C preprocessor directives were adapted from
+those in the `font-lock.el' file distributed with XEmacs 20.3.  Hence the
+long copyright notice at the top of this file.
+
+This package has been tested with XEmacs 21.1.14 and CC Mode 5.28.  Note
+that older versions of CC Mode (e.g., version 5.25) have problems indenting
+some of the newer (CORBA 2.3+) OMG IDL syntax.")

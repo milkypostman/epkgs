@@ -1,0 +1,10 @@
+(:summary    "Xiomacs control library for GNU Emacs"
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-3"
+ :authors    (("David O'Toole" . "dto@gnu.org"))
+ :maintainer ("David O'Toole" . "dto@gnu.org")
+ :provided   (xiomacs)
+ :required   ((("emacs" cl rx)))
+ :keywords   ("extensions")
+ :homepage   "http://dto.github.com/notebook/")

@@ -1,0 +1,11 @@
+(:summary    "Some extensions for speedbar"
+ :created    "20080623"
+ :updated    "20080623"
+ :license    "GPL-3"
+ :authors    (("Emacs Guys" . "emacser@freedom.com"))
+ :maintainer ("Andy Stewart" . "lazycat.manatee@gmail.com")
+ :provided   (speedbar-extension)
+ :required   ((("sr-speedbar" sr-speedbar)))
+ :keywords   ("speedbar")
+ :commentary "\
+Some extensions for speedbar.")

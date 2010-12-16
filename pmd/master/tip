@@ -1,0 +1,32 @@
+(:summary    "Major mode for pluging PMD into Emacs"
+ :created    "2004"
+ :updated    "2002"
+ :license    "GPL-2"
+ :authors    (("John Russell" . "drjimmy42@yahoo.com"))
+ :maintainer ("Nascif A. Abousalh-Neto" . "nascif@acm.org")
+ :provided   (pmd)
+ :required   ((("emacs" compile)))
+ :keywords   ("pmd" "major-mode")
+ :homepage   "http://pmd.sourceforge.net/"
+ :commentary "\
+Installation:
+ 1) Install the core PMD application (not part of this download, get it 
+    from http://pmd.sourceforge.net/);
+ 2) Make sure the directory of pmd.el is part of your Emacs load-path;
+	3) Add this line to your .emacs file:
+	    (autoload 'pmd-current-buffer \"pmd\" \"PMD Mode\" t)
+	    (autoload 'pmd-current-dir \"pmd\" \"PMD Mode\" t)
+ 4) Load pmd.el
+ 5) Configure the location of the Java executable and the PMD installation 
+    directory using the command pmd-customize.
+
+	Once this is done, you can call the pmd-current-buffer and pmd-current-dir 
+ functions using M-x <function name> or by bind them to key sequences.
+
+Configuration:
+	Besides the variables described above, you can also compile the rulesets used by PMD.
+ Type:
+	    M-x pmd-customize
+		--or--
+	    M-x customize-group <RET>
+	    pmd <RET>")

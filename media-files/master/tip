@@ -1,0 +1,8 @@
+(:created    "2010"
+ :updated    "2010"
+ :license    "GPL-2"
+ :authors    (("Philip Weaver" . "philip.weaver@gmail.com"))
+ :maintainer ("Philip Weaver" . "philip.weaver@gmail.com")
+ :provided   (episode-names media-files media-files-config)
+ :required   ((("emacs" cl)))
+ :homepage   "https://github.com/pheaver/media-files.el")

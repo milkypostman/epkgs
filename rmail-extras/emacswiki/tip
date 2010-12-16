@@ -1,0 +1,9 @@
+(:summary    "Remote inboxes for RMAIL, extend \"time\" with multiple mail flags"
+ :created    "199613"
+ :updated    "1996"
+ :license    "GPL-2"
+ :authors    (("Trey Jackson" . "trey@cs.berkeley.edu"))
+ :maintainer ("Trey Jackson" . "trey@cs.berkeley.edu")
+ :provided   (rmail-extras)
+ :required   ((("emacs" ange-ftp cl rmail)))
+ :keywords   ("mail" "time"))

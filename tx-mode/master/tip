@@ -1,0 +1,14 @@
+(:summary    "Major mode for editing Text::Xslate syntax"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-2"
+ :authors    (("Yoshiki Kurihara" . "kurihara@cpan.org"))
+ :maintainer ("Yoshiki Kurihara" . "kurihara@cpan.org")
+ :provided   (tx-mode)
+ :required   ((("emacs" tempo)))
+ :keywords   ("perl" "template" "mode")
+ :homepage   "https://github.com/yoshiki/tx-mode"
+ :commentary "\
+This is a major mode for editing files written in Text::Xslate syntax.
+
+Installation:")

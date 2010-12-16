@@ -1,0 +1,26 @@
+(:summary    "Mapping commands over multiple active regions"
+ :created    "20040415"
+ :updated    "2005"
+ :license    "GPL-2"
+ :authors    (("Lawrence Mitchell" . "wence@gmx.li"))
+ :maintainer ("Lawrence Mitchell" . "wence@gmx.li")
+ :provided   (multi-region)
+ :required   ((("emacs" overlay)))
+ :homepage   "http://www.ph.ed.ac.uk/~s0198183/"
+ :commentary "\
+Marking, and mapping commands over, multiple regions.
+
+Available commands:
+`multi-region-mark-region'     -- Mark the current region as a
+                                  multi-region.
+`multi-region-unmark-region'   -- Remove the current multi-region
+                                  surrounding `point'.
+`multi-region-unmark-regions'  -- Remove all multi-regions in the
+                                  current buffer.
+`multi-region-execute-command' -- Map a command over all active
+                                  multi-regions in the current
+                                  buffer.
+
+A suggested keymap is available as `multi-region-map', to use
+the keybindings, you could do something like:
+(define-key global-map (kbd \"C-M-m\") multi-region-map)")

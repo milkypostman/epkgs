@@ -1,0 +1,13 @@
+(:summary    "Enables tab-completion for `shell-command'"
+ :created    "2007"
+ :updated    "2007"
+ :license    "GPL-2"
+ :authors    (("TSUCHIYA Masatoshi" . "tsuchiya@namazu.org"))
+ :maintainer ("TSUCHIYA Masatoshi" . "tsuchiya@namazu.org")
+ :provided   (shell-command)
+ :required   ((("emacs" comint custom shell)))
+ :keywords   ("shell")
+ :commentary "\
+This is an enhancement of shell-command, shell-command-on-region,
+grep, grep-find, and compile, that enables tab-completion of
+commands and dir/filenames within their input contexts.")

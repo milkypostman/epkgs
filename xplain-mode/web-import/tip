@@ -1,0 +1,13 @@
+(:summary    "Mode for editing Xplain data definition and"
+ :authors    (("Berend de Boer" . "berend@pobox.com"))
+ :maintainer ("Berend de Boer" . "berend@pobox.com")
+ :provided   (xplain-mode)
+ :keywords   ("xplain")
+ :homepage   "http://www.pobox.com/~berend/emacs/"
+ :commentary "\
+Syntax hightlighting makes creating Xplain databases even more pleasant.
+
+Add this to your .emacs file to load and bind it to files with extension
+.ddl:
+(add-to-list 'auto-mode-alist '(\"\\\\.ddl\\\\'\" . xplain-mode))
+(autoload 'xplain-mode \"xplain-mode\" \"Major mode for Xplain programs\" t)")

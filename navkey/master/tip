@@ -1,0 +1,21 @@
+(:summary    "Alternative keybindings with a focus on navigation"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Jonas Bernoulli" . "jonas@bernoul.li"))
+ :maintainer ("Jonas Bernoulli" . "jonas@bernoul.li")
+ :provided   (kmu-dump kmu-groups navkey)
+ :required   ((("anything" anything)
+               ("emacs" info org)
+	       ("find-func+" find-func+)
+	       ("fwb-cmds" fwb-cmds)
+	       ("iflipb" iflipb)
+	       ("keymap-utils" keymap-utils)
+	       ("killer" killer)
+	       ("lacarte" lacarte)
+	       ("misc-cmds" misc-cmds)
+	       ("undo-tree" undo-tree)))
+ :homepage   "https://github.com/tarsius/navkey"
+ :commentary "\
+I haven't made this public yet - if you read this at least not on
+purpose :-)")

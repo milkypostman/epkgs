@@ -1,0 +1,31 @@
+(:summary    "Extensions to `pp.el'"
+ :created    "19990903"
+ :updated    "20100621"
+ :license    "GPL-2"
+ :authors    (("Drew Adams"))
+ :maintainer ("Drew Adams")
+ :provided   (pp+)
+ :required   ((("emacs" pp)))
+ :keywords   ("lisp")
+ :commentary "\
+Extensions to `pp.el'.
+
+ User options defined here:
+
+   `pp-eval-expression-print-length',
+   `pp-eval-expression-print-level'.
+
+ Internal variables defined here:
+
+   `pp-read-expression-map'.
+
+
+ ***** NOTE: The following functions defined in `pp.el' have
+             been REDEFINED HERE:
+
+   `pp-display-expression', `pp-eval-expression'.
+
+
+ Suggested binding:
+
+  (substitute-key-definition 'eval-expression 'pp-eval-expression global-map)")

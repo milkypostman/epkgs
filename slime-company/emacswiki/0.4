@@ -1,0 +1,50 @@
+(:summary    "Slime completion backend for company mode"
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-3"
+ :authors    (("Ole Arndt" . "ole@sugarshark.com"))
+ :maintainer ("Ole Arndt" . "ole@sugarshark.com")
+ :provided   (slime-company)
+ :required   ((("company" company)))
+ :keywords   ("convenience" "lisp" "abbrev")
+ :commentary "\
+This is a backend implementation for the completion package
+company-mode by Nikolaj Schumacher. More info about this package
+is available at http://nschum.de/src/emacs/company-mode
+Company-mode is also available at the ELPA http://tromey.com/elpa
+
+The backend is installed into the list of company-backends, but
+you have to enable company-mode manually (or in lisp-mode-hook).
+
+Installation:
+
+Add this to your .emacs:
+
+  (add-to-list 'load-path \"<directory-of-this-file>\")
+  (add-hook 'slime-load-hook (lambda () (require 'slime-company)))
+
+or use:
+
+  (slime-setup 'slime-fancy 'slime-company)
+
+For the completion to work, you need to enable company mode in
+slime and set the appropriate company backends. This can be done
+via a hook function:
+
+  (add-hook 'slime-mode-hook
+            (lambda ()
+              (company-mode 1)
+              (set (make-local-variable 'company-backends)
+                   '(slime-company-backend))))
+
+I also have the following, IMO more convenient key bindings for
+company mode in my .emacs:
+
+  (define-key company-active-map (kbd \"\\C-n\") 'company-select-next)
+  (define-key company-active-map (kbd \"\\C-p\") 'company-select-previous)
+  (define-key company-active-map (kbd \"\\C-d\") 'company-show-doc-buffer)
+  (define-key company-active-map (kbd \"\\C-v\") 'company-show-location)
+  (define-key company-active-map (kbd \"<tab>\") 'company-complete)
+  (define-key company-active-map (kbd \"\\C-g\") '(lambda ()
+                                                 (interactive)
+                                                 (company-abort)))")

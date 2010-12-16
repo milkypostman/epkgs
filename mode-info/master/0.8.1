@@ -1,0 +1,28 @@
+(:summary    "Describe functions and variables"
+ :created    "2003"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("TSUCHIYA Masatoshi" . "tsuchiya@namazu.org"))
+ :maintainer ("TSUCHIYA Masatoshi" . "tsuchiya@namazu.org")
+ :provided   (mi-config mi-elisp mi-emacs mi-fontify mi-gauche mi-guile mi-index mi-libc mi-make mi-octave mi-perl mi-ruby mi-scheme mi-util mode-info)
+ :required   ((("apel" pcustom poe)
+	       ("emacs" cl custom font-lock info)))
+ :keywords   ("info")
+ :homepage   "http://www.namazu.org/~tsuchiya/elisp/mode-info.en.html"
+ :commentary "\
+This package provides improved describe-function and
+describe-variable and combines major modes to edit programming
+languages and their Info documentats closely.
+
+`mode-info-describe-function' which is one of commands defined by
+this package, is very similar to `describe-function', but can
+select the appropriate document based on major-mode.  For example,
+when it is called in c-mode buffers, it retrieves the documentation
+of the specified function from GNU C Library Reference Manual and
+shows it.  When it is called in emacs-lisp-mode buffers, it
+retrieves the documentation from Emacs Lisp Reference Manual and
+shows it.  If failure it shows a documentation string.
+
+The latest version of this package can be downloaded from:
+
+    http://namazu.org/~tsuchiya/elisp/mode-info.tar.gz")

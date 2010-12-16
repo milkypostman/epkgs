@@ -1,0 +1,24 @@
+(:summary    "Submit a BREW request to an RFC2324-compliant coffee device"
+ :license    "GPL-2"
+ :authors    (("Eric Marsden" . "emarsden@laas.fr"))
+ :maintainer ("Eric Marsden" . "emarsden@laas.fr")
+ :provided   (coffee)
+ :required   ((("emacs" cl url)
+	       ("w3" w3-forms)))
+ :keywords   ("coffee" "brew" "kitchen-sink")
+ :homepage   "http://emarsden.chez.com/downloads/"
+ :wikipage   "http://www.emacswiki.org/CoffeeMode"
+ :commentary "\
+This module provides an Emacs interface to RFC2324-compliant coffee
+devices (Hyper Text Coffee Pot Control Protocol, or HTCPCP). It
+prompts the user for the different additives, then issues a BREW
+request to the coffee device.
+
+coffee.el requires a special BREW-capable version of Emacs/W3 to be
+installed.
+
+Reference: <URL:ftp://ftp.isi.edu/in-notes/rfc2324.txt>
+
+
+Thanks to Giacomo Boffi <giacomo.boffi@polimi.it> for some typos
+and the addition of the \"Brown-Coffee\" sweetener type.")

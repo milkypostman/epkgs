@@ -1,0 +1,56 @@
+(:summary    "Extensions to `find-dired.el'"
+ :created    "19960110"
+ :updated    "20100324"
+ :license    "GPL-2"
+ :authors    (("Roland McGrath" . "roland@gnu.ai.mit.edu")
+	      ("Sebastian Kremer" . "sk@thp.uni-koeln.de")
+	      ("Drew Adams"))
+ :maintainer ("Drew Adams")
+ :provided   (find-dired+)
+ :required   ((("emacs" cl find-dired)
+	       ("find-dired-" find-dired-))
+	      (("dired+" dired+)
+	       ("thingatpt+" thingatpt+)))
+ :keywords   ("internal" "unix" "tools" "matching" "local")
+ :commentary "\
+Extensions to `find-dired.el'.
+
+ See also the companion file `find-dired-.el'.
+       `find-dired-.el' should be loaded before `find-dired.el'.
+       `find-dired+.el' should be loaded after `find-dired.el'.
+
+ A `find' submenu has been added to Dired's menu bar, and most of
+ the Emacs `find-*' commands have undergone slight improvements.
+
+
+ New user options (variables) defined here:
+
+   `find-dired-default-fn', `find-dired-hook'.
+
+ Other new variable defined here: `menu-bar-run-find-menu'.
+
+
+ ***** NOTE: The following functions defined in `find-dired.el'
+             have been REDEFINED HERE:
+
+ `find-dired' - 1. Interactive spec uses `read-from-minibuffer',
+                   `read-file-name', `dired-regexp-history' and
+                   `find-dired-default-fn'.
+                2. Runs `find-dired-hook' at end.
+                3. Uses `find-dired-default-fn' for default input.
+                4. Buffer named after dir (not named \"*Find*\").
+ `find-dired-filter' - Removes lines that just list a file.
+ `find-dired-sentinel' - 1. Highlights file lines.
+                         2. Puts `find' in mode-line.
+ `find-grep-dired' - Interactive spec uses `read-from-minibuffer',
+                     `read-file-name', `dired-regexp-history' and
+                     `find-dired-default-fn'.
+ `find-name-dired' - Interactive spec uses `read-from-minibuffer',
+                     `read-file-name', `dired-regexp-history' and
+                     `find-dired-default-fn'.
+
+
+ ***** NOTE: The following variable defined in `find-dired.el'
+             has been REDEFINED HERE:
+
+ `find-ls-options'   - Uses `dired-listing-switches' for Windows.")

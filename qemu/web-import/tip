@@ -1,0 +1,9 @@
+(:summary    "An interface to the qemu emulator"
+ :created    "2005"
+ :updated    "2005"
+ :license    "GPL-2"
+ :authors    (("Matthieu Lemerre" . "racin@free.fr"))
+ :maintainer ("Matthieu Lemerre" . "racin@free.fr")
+ :provided   (qemu)
+ :keywords   ("comm" "terminals")
+ :homepage   "http://racin.free.fr/")

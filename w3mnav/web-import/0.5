@@ -1,0 +1,21 @@
+(:summary    "Add additional Info-like navigation to w3m"
+ :updated    "20030705"
+ :license    "GPL-2"
+ :authors    (("Neil W. Van Dyke" . "neil@neilvandyke.org"))
+ :maintainer ("Neil W. Van Dyke" . "neil@neilvandyke.org")
+ :provided   (w3mnav)
+ :required   ((("w3m" w3m)))
+ :homepage   "http://www.neilvandyke.org/w3mnav/"
+ :commentary "\
+`w3mnav' kludges some Info-like navigation keys into the `emacs-w3m' Web
+browser (`http://emacs-w3m.namazu.org/').  This functionality was originally
+part of Scheme support package Quack (`http://www.neilvandyke.org/quack/'),
+and was intended to work with the numerous Scheme books that were converted
+to HTML from LaTeX format.  It also works with some other HTML pages that
+have book-like \"next page\" and \"previous page\" links.
+
+To install, put file `w3mnav.el' into one of your Emacs Lisp directories,
+optionally byte-compile the file, and add a line like the following to your
+`~/.emacs' file:
+
+    (require 'w3mnav)")

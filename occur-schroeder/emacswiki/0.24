@@ -1,0 +1,13 @@
+(:summary    "Invoke occur from within isearch"
+ :created    "20040408"
+ :updated    "20080527"
+ :maintainer ("Drew Adams")
+ :provided   (occur-schroeder)
+ :keywords   ("search" "occur")
+ :commentary "\
+From Alex Schroeder's code at
+http://www.emacswiki.org/cgi-bin/wiki/AlexSchroederConfigInit
+http://www.emacswiki.org/cgi-bin/wiki.pl/AlexSchroeder
+
+See also: `color-moccur.el', at
+http://www.emacswiki.org/cgi-bin/wiki/color-moccur.el")

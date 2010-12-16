@@ -1,0 +1,9 @@
+(:summary    "Cmuscheme extension for multiple inferior processes"
+ :created    "2007"
+ :updated    "2007"
+ :license    "GPL-2"
+ :provided   (scheme-here)
+ :required   ((("emacs" cmuscheme comint scheme)))
+ :commentary "\
+This is an extension of cmuscheme for multiple buffer-local
+inferior scheme processes.")

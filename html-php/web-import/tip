@@ -1,0 +1,16 @@
+(:summary    "Multi-mode PHP embedded in HTML"
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-2"
+ :authors    (("Dave Love" . "fx@gnu.org"))
+ :maintainer ("Dave Love" . "fx@gnu.org")
+ :provided   (html-php)
+ :required   ((("multi-mode" multi-mode)))
+ :keywords   ("languages")
+ :homepage   "http://www.loveshack.ukfsn.org/emacs/"
+ :commentary "\
+Multiple-mode editing of PHP embedded in HTML.  Subject to the
+limitations of multi-mode.el.  Note that there's no attempt to deal
+with commented processing instructions markup.  Note also that this
+only works properly with the basic HTML mode -- not PSGML or NXML.
+Tested with the PHP mode from the hacked CC mode at the above URL.")

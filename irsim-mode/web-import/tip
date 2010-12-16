@@ -1,0 +1,4 @@
+(:provided   (irsim-mode)
+ :required   ((("emacs" cl font-lock)))
+ :homepage   "http://code.google.com/p/irsim-mode/"
+ :wikipage   "http://www.emacswiki.org/IrsimMode")

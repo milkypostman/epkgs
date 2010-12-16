@@ -1,0 +1,349 @@
+(:summary    "Retrieve mail using epop3.el (\"extended\" pop3.el)"
+ :created    "1997"
+ :updated    "1998"
+ :license    "GPL-2"
+ :authors    (("Franklin Lee" . "flee@lehman.com"))
+ :maintainer ("Franklin Lee" . "flee@lehman.com")
+ :provided   (epop3mail)
+ :required   ((("emacs" ange-ftp cl pop3 rmail timer)
+	       (nil biff-mode epop3 epop3hash)))
+ :keywords   ("mail")
+ :commentary "\
+{{{
+
+
+Description
+-----------
+
+'epop3mail' stands for 'extended pop3 mail'.  It uses 'pop3.el' as
+distributed in Gnus v 5.4.65, with a bugfix patch (described below).
+'pop3.el' provides emacs-lisp primitives to handle a connection between
+emacs and a pop3 server.  Also used is 'epop3.el' (\"extended pop3.el\"),
+which calls on and extends the functionality of pop3.el (namely, the
+UIDL and LIST commands in the POP3 protocol, which are not in pop3.el).
+
+epop3mail should be used when one gets mail from a pop3 server and
+wishes to *leave mail on server* rather than use the default movemail
+functionality.  Sometimes the default functionality is undesirable
+(i.e., taking the mail down to the local machine and then deleting it
+from the server) when, for example, one is retrieving mail using a
+laptop on the road or from home.  In such a circumstance, it would be
+nice to get mail from the POP3 server but also leave it there so that
+it can be accessed when one returns to work (or retrieves from another
+machine).
+
+epop3mail.el supports 'leave-mail-on-server' (the default), and also
+supports multiple pop3 mailboxes.  Passwords and authentication schemes
+are cached (per mailbox) by default, so you only need to enter them
+once (the first time) during an emacs session.
+
+Note: an enterprising Gnus user (<jvinson@chevax.ecs.umass.edu>) has
+tested and helped with the Gnus-compatibility.  For those wanting to
+use this with Gnus, ignore the references to 'rmail' and note
+references to Gnus below.
+
+--------------------------------------------------------------------------
+
+The discussion below assumes that 'epop3-leave-mail-on-server' is set
+to 't'.  If set to 'nil', 'normal' rmail behavior (i.e., delete mail
+from server) is maintained.  This is for backward compatibility for
+those who don't want or need leave-mail-on-server but would like to
+have the biff feature, or have APOP authentication, or just dislike
+movemail on principle and want a wholly elisp solution.  (Take your
+pick).
+
+When called from rmail, epop3mail first tries to get the UIDL from the
+POP3 server and saves that information for later retrievals.  Caching
+the UIDL data (in ~/.uidls.*) allows epop3mail to retrieve only those
+messages which have _not_ been previously retrieved.  Without this
+information, all messages left on the server are gotten -- which is of
+course undesirable!  (UIDs (Unique IDs) are cached on a per-mailbox
+basis by epop3mail, so if you have several pop3 mailboxes, you will
+have that many ~/.uidls.* files).  If epop3mail finds that UIDL is not
+supported by the POP3 server, it will default to retrieving all
+messages.  (This is unfortunate, but there's no simple recourse in this
+situation).
+
+epop3mail does all of this by overriding rmail.el's function
+'rmail-insert-inbox-text' to use the emacs lisp code rather than use
+movemail for pop3 mail.  Since this function may be different between
+versions of emacs, you may have to modify epop3mail's version of
+rmail-insert-inbox-text to match your version of rmail.  (see the code
+marked 'pop3-mail change' for the cond-clause which does the actual
+override).
+
+Usage
+-----
+To use epop3mail, do the following:
+
+(0) Put the files pop3.el, epop3.el, epop3hash.el, biff-mode.el, and
+epop3mail in your load-path, preferably byte-compiled.  You may need to
+explicitly (load-library \"cl\") in order to successfully compile
+epop3mail and epop3hash.
+
+If you have Gnus' pop3.el already, apply the following patch to your
+version (this bug patch has been reported to the author).  This fixes a
+minor problem with setting 'pop3-read-point' for subsequent parsing of
+data returning from the pop3 server, and properly places this setting
+inside of a (save-excursion).  Without this patch, epop3mail will
+occasionally attempt to parse the wrong buffer, and hang.
+
+-----------------------------8<---- cut here ----8<-----------------------
+*** pop3.el Mon Nov 24 21:13:48 1997
+--- pop3.orig.el Sat Jul 19 16:39:26 1997
+***************
+*** 108,117 ****
+     (process))
+      (save-excursion
+        (set-buffer process-buffer)
+!       (erase-buffer)
+!        (setq pop3-read-point (point-min)))
+      (setq process
+       (open-network-stream \"POP\" process-buffer mailhost port))
+      (let ((response (pop3-read-response process t)))
+        (setq pop3-timestamp
+ already         (substring response (or (string-match \"<\" response) 0)
+--- 108,117 ----
+     (process))
+      (save-excursion
+        (set-buffer process-buffer)
+!       (erase-buffer))
+      (setq process
+       (open-network-stream \"POP\" process-buffer mailhost port))
++     (setq pop3-read-point (point-min))
+      (let ((response (pop3-read-response process t)))
+        (setq pop3-timestamp
+         (substring response (or (string-match \"<\" response) 0)
+-----------------------------8<---- cut here ----8<-----------------------
+
+(1) Specify the pop mailbox(es).
+
+Method (a) (the preferred method): add \"po:user@server\" to
+'rmail-primary-inbox-list (be sure to specify both user *and* fully
+qualified hostname in the form user@fully-qualified-host) like this:
+
+   (setq rmail-primary-inbox-list
+         '(\"po:me@mypopserver.domain.com\"
+           \"po:m3@anotherserver.elsewhere.com\"
+           . . . ))
+
+This is the most flexible method.  IMPORTANT: Make sure that the '@'
+and server.domain are included; the presence of the '@' character is
+what causes this code to be called instead of movemail.
+
+Setting MAILHOST won't help here because only movemail uses the
+MAILHOST environment variable and the purpose of epop3mail is to
+*avoid* using an external movemail program.
+
+IMPORTANT: if you wish to use the 'biffing' features provided by
+epop3mail, you *must* use method (a) above to specify your pop
+mailboxes; otherwise the biff code won't know where to look for your
+mailbox specifications.
+
+
+Method (b): Alternatively, you can add a 'Mail:' line to the top of
+your RMAIL file (make sure it's comma-delimited) like this:
+
+   BABYL OPTIONS: -*- rmail -*-
+   Version: 5
+   Labels:
+   Mail: po:me@mypopserver.domain.com, po:m3@anotherserver.elsewhere.com
+   Note: This is the header of an rmail file.
+   Note: If you are seeing it in rmail,
+   Note: it means the file has no messages in it.
+
+Method (b) will override method (a).  The same note about including '@'
+and server/domain applies here.
+
+If you use method (b), you won't be able to use the 'biff' feature.
+(maybe a future version of epop3mail / epop3-biff will be smarter about
+this, but at the moment it's simpler to reference
+'rmail-primary-inbox-list').
+
+(2) Insure sure RMAIL doesn't use movemail for your pop mailboxes.
+(see the override function 'rmail-insert-inbox-text' below for the
+additional code calling 'epop3-mail' -- the mailbox name set in (1)
+above *must* have the '@' in it to avoid using movemail.
+
+ALSO: if you have the following in your initialization code:
+
+  (setq rmail-pop-password-required t)
+
+take it out or comment it out.  It won't be needed; epop3mail uses
+its own password caching (per mailbox).  Leaving it in will cause
+rmail to ask you for the password in addition to epop3mail asking;
+I don't know if rmail will remember it, but epop3mail will, by default.
+
+
+Then add to your emacs (depending on version):
+
+emacs v 19.34 users:
+  (add-hook 'rmail-mode-hook (function (lambda () (require 'epop3mail))))
+
+emacs v 20.2+ users:
+  (require 'epop3mail)
+
+The difference above is due to rmail having changed its initialization
+sequence between v 19.34 and v 20.2.  Note that epop3mail does a
+(require 'rmail) if needed, so v 20.2 users need only put the above
+line in.
+
+
+Gnus users:
+  (setq epop3-mail-package 'gnus
+        nnmail-movemail-program 'epop3-mail
+        nnmail-spool-file \"po:user@popserver\"
+        nnmail-pop-password-required nil)
+
+The internal (require 'rmail) is ignored by epop3mail if the above setq
+is performed.
+
+
+Then add:
+
+(common to every emacs version):
+
+  (autoload 'epop3-mail \"epop3mail\"
+    \"Get mail from pop server for PO:USER@HOST and put it in TOFILE.\" t)
+
+  (autoload 'start-biff \"epop3mail\" \"pop3 biff, unleashed\" t)
+  (autoload 'stop-biff \"epop3mail\" \"pop3 biff, muzzled\" t)
+  (autoload 'restart-biff \"epop3mail\" \"pop3 biff, RE-unleashed\" t)
+  (autoload 'flush-pop-passwords \"epop3mail\" \"flush passwords\" t)
+  (autoload 'biffs-current-language \"epop3mail\" \"what is biff talking?\" t)
+  (autoload 'biffs-last-check \"epop3mail\" \"when did biff last check?\" t)
+  (autoload 'speak-biff! \"biff-mode\" \"make biff speak\" t)
+
+to your .emacs.
+
+You do *not* need to explicitly load pop3.el, epop3.el, or epop3hash.el.
+
+
+(3) Adjust the user-settable variables to taste.
+
+To change the behavior of epop3mail, you can set the following
+variables *prior* to loading or requiring epop3mail.  These are:
+
+    epop3-mail-package (default is 'rmail)
+    epop3-leave-mail-on-server (default is t)
+    epop3-password-style (default is 'cache)
+
+    epop3-quietly (default is nil)
+    epop3-mail-debug (default is nil)
+    epop3-biff-debug (default is nil)
+    epop3-biff-absolutely-silent (default is nil)
+    epop3-biff-show-progress (default is nil)
+    epop3-biff-show-numbers (default is nil)
+    epop3-biff-show-barks (default is t)
+    epop3-biff-show-off-vocabulary (default is t)
+    epop3-biff-show-time (default is t)
+    epop3-biff-show-snooze (default is t)
+    epop3-biff-differential-mode (default is nil)
+    epop3-biff-idle-grace-seconds (default is 5)
+    epop3-biff-linear-bark-mode (default is nil)
+    epop3-override-pop3s-read-response (default is t)
+    epop3-open-server-timeout (default is 60)
+    epop3-authentication-always-use-default (default is t)
+    epop3-authentication-default (default is 'pass)
+    epop3-authentication-timeout-seconds (default is 3)
+
+These can also be set interactively via M-x set-variable.
+
+(Minor Relief For The Paranoid: if password caching is enabled, the
+password cache can be flushed via 'M-x epop3-flush-password-cache').
+
+Try using the defaults first.  The debug variables are for when you run
+into trouble and want to report details.
+
+(4) If you wish to have 'biff'-like functionality with your pop3
+server, you can call it interactively (M-x epop3-start-biff), or from
+your .emacs via
+
+    (epop3-start-biff <n> [t])
+
+or
+    (start-biff <n> [t])
+
+where <n> is the number of minutes between polls and
+optional 't' tells it to start with an immediate biff.
+
+You can stop the biffing via 'epop3-stop-biff' or 'stop-biff'.
+
+The start- and stop- biff commands can also be run interactively via M-x.
+
+If new mail is found on your pop3 server(s), the modeline will say
+\"Arf!\" or an equivalent in one of many languages.  (My understanding of
+the origin of the name 'biff' is that the original BSD Unix utility was
+named after a dog who always barked when the mailman came.  This is
+documented in The Jargon file.
+
+On dialup lines, the biff feature is a nice way to keep the connection
+alive.
+
+
+How it all works:
+
+The rmail function 'rmail-insert-inbox-text' is overridden by the
+function of the same name below.  This version is from emacs 19.34.6
+and may need to be revised to work with your version of rmail if your
+Emacs is an earlier version than 19.34.
+
+If you modify 'rmail-insert-inbox-text' below to conform to your local
+version of Rmail, be sure to add the changes marked 'pop3-mail change'
+to it *before* the 't' cond clause (see code below).
+
+
+This has been tested on:
+- FSF Emacs 19.34 on Solaris 2.5.1 and Windows 95
+
+Bug reports and suggestions are welcome -- send them to Franklin Lee
+<flee@lehman.com>.
+
+Also: if you know how dogs \"bark\" in other languages, please let me
+know!
+
+THANKS TO:
+==========
+for ntemacs:
+------------
+   <andrewi@harlequin.co.uk>
+   <voelker@cs.washington.edu>
+
+for the original pop3.el:
+-------------------------
+   <ratinox@peorth.gweep.net>
+   <rich.pieri@prescienttech.com>
+
+testing, ideas, && patches:
+---------------------------
+   <ami@aviv.isse.gmu.edu>
+   <christil@ifi.uio.no>
+   <eludlam@mathworks.com>
+   <grossjohann@ls6.cs.uni-dortmund.de>
+   <jtobey@banta-im.com>
+   <jvinson@chevax.ecs.umass.edu>
+   <mwoelmer@umich.edu>
+   <rickc@lehman.com>
+   <ronross@colba.net>
+   <rushing@nightmare.com>
+   <smrushin@cca.rockwell.com>
+   <stanton@haas.berkeley.edu>
+   <vzell@de.oracle.com>
+   <zappo@ultranet.com>
+
+any omissions in the above, I apologize, the omission was NOT intentional!
+
+
+i18n of dog barks:
+------------------
+
+The credits for the i18n of dog barks have been moved to the comments
+in the related biff-mode.el -- please see that source code.
+
+However, I would like to specially thank Professor Catherine Ball
+<cball@gusun.georgetown.edu> and for her kind advice, and for her great
+\"Sounds of the World's Animals\" page at
+
+         http://www.georgetown.edu/cball/animals/animals.html
+
+and also to her linguistic informants (see biff-mode.el).")

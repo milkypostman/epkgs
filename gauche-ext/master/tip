@@ -1,0 +1,13 @@
+(:summary    "Gauche programming tool first load interface"
+ :provided   (gauche-browse gauche-config gauche-const gauche-env gauche-mod-test gauche-refactor scm-browse scm-const scm-edit scm-env)
+ :required   ((("el-expectations" el-expectations)
+	       ("el-mock" el-mock)
+	       ("emacs" cl cmuscheme)
+	       ("refactor" refactor))
+	      (("auto-complete" auto-complete-config)
+	       ("emacs" eldoc)))
+ :homepage   "https://github.com/mhayashi1120/Emacs-gauche-ext"
+ :commentary "\
+TODO
+(setq scheme-program-name \"gosh -i\")
+one command add exports")

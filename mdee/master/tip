@@ -1,0 +1,8 @@
+(:created    "2003"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("Kevin A. Burton" . "burton@peerfear.org"))
+ :maintainer ("Kevin A. Burton" . "burton@peerfear.org")
+ :provided   (idl-docindex mdee xpcshell)
+ :required   ((("javascript-mode" javascript-mode)))
+ :homepage   "http://mdee.mozdev.org/")

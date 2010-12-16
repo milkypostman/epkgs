@@ -1,0 +1,32 @@
+(:summary    "Shell history anything.el interface"
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-2"
+ :authors    (("IMAKADO"))
+ :maintainer ("IMAKADO")
+ :provided   (anything-c-shell-history)
+ :required   ((("anything" anything)
+	       ("emacs" timer)))
+ :commentary "\
+This package use `anything' as a interface to execute *sh_history.
+
+You can make this package integrate with `anything',
+just setup like below:
+
+(setq anything-sources
+      (list
+       anything-c-source-shell-history
+       ))
+
+Installation:
+
+Put anything-etags.el to your load-path.
+The load-path is usually ~/elisp/.
+It's set in your ~/.emacs like this:
+(add-to-list 'load-path (expand-file-name \"~/elisp\"))
+
+And the following to your ~/.emacs startup file.
+
+(require 'anything-c-shell-history)
+
+No need more.")

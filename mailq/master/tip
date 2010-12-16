@@ -1,0 +1,9 @@
+(:summary    "A major mode for `mailq' interaction"
+ :created    "20100617"
+ :updated    "2010"
+ :authors    (("Dimitri Fontaine" . "dim@tapoueh.org"))
+ :maintainer ("Dimitri Fontaine" . "dim@tapoueh.org")
+ :provided   (mailq)
+ :required   ((("emacs" simple)))
+ :keywords   ("package" "elisp" "install" "elpa" "git" "git-svn" "bzr" "cvs" "apt-get" "fink" "http" "http-tar" "emacswiki")
+ :homepage   "https://github.com/dimitri/mailq-el")

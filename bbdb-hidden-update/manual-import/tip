@@ -1,0 +1,71 @@
+(:summary    "Update BBDB records very quietly and automatically"
+ :created    "20001026"
+ :updated    "2000"
+ :license    "GPL-2"
+ :authors    (("Nix"))
+ :maintainer ("Nix")
+ :provided   (bbdb-hidden-update)
+ :required   ((("bbdb" bbdb)
+	       ("emacs" advice)))
+ :keywords   ("mail" "news")
+ :commentary "\
+The `bbdb-notice-hook' allows things to happen whenver a BBDB record
+is noticed; but if you try to record that fact in the BBDB record itself,
+you have the problem that the BBDB record is marked as changed in the
+`bbdb-changed-records' list, and that the modification itself triggers
+the `bbdb-change-hook', which by default calls `bbdb-timestamp-hook',
+leading to the BBDB's last-modified timestamp being updated *every
+single time* the record is noticed, and to `bbdb-changed' listing
+every record you've seen since the database was last saved; not an
+especially useful function.
+
+(Yes, the docstring for `bbdb-change-hook' states that it is not called
+for modifications made within the `bbdb-notice-hook'. This is incorrect;
+maybe it is a bug.)
+
+This file fixes this, providing the ability to have some field that is
+automatically updated whenever a record is noticed, without making a fuss
+about it, recording it as changed, or calling `bbdb-change-hook' or
+`bbdb-after-change-hook'. (The .bbdb file is still marked as modified, so
+that it will still be saved.)
+
+This facility should be integrated --- in a neater and less fragile form ---
+into BBDB itself; but until it is, this file exists to provide the same
+facilities.
+
+This will probably only work with version 2.00 of the BBDB, and may well
+only work with version 2.00.06.
+
+To use:
+
+Call the function `bbdb-hidden-update-initialize' to begin hidden
+updating. Add the names of functions to call to do the updating to the
+`bbdb-hidden-update-functions' alist. They get passed the record to
+use.
+
+If you want to do some arbitrary thing without running the BBDB
+change hooks (for instance, to avoid timestamp changes), you can
+use the `with-bbdb-change-hooks-suppressed' macro.
+
+If you just want to work around the buglet with `bbdb-notice-hook',
+you just need to load the file; there is no need to run
+`bbdb-hidden-update-initialize' unless you want to use
+`bbdb-hidden-update-functions' in some way.
+
+To do:
+
+Parts of this code are very brittle, and highly dependent on BBDB version
+(because of all the advisements). This will remain true if and until code
+doing what this does is folded into the BBDB. (Note that this code should
+*not* be folded in; it jumps through lots of hoops to avoid changing the
+BBDB's code, and all these hoops can be thrown away.)
+
+This might not work with GNU Emacs; I don't currently have a copy so it is
+hard to test it there, and there may be unintentional dependencies on
+XEmacs.
+
+If you want to use this on GNU Emacs, and it doesn't work, please tell me
+what is missing or broken for GNU Emacs support so I can fix it, as I
+would like it to work there as well.
+
+Requirements:")

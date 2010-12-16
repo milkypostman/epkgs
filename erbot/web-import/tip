@@ -1,0 +1,25 @@
+(:summary    "Another robot for ERC"
+ :created    "2002"
+ :updated    "20060824"
+ :license    "GPL-2"
+ :authors    (("David Edmunston" . "dme@dme.org"))
+ :maintainer ("Deepak Goel" . "deego@gnufans.org")
+ :provided   (erball erbbdb erbc erbc2 erbc3 erbc4 erbc5 erbc6 erbcompat erbcountry erbcspecial erbdata erbedit erbeng erbforget erbim erbjavadoc erbkarma erblisp erblog erbmerge erbmsg erbot erbot-lispy erbpnet erbrss erbtrain erbtranslate erbunlisp erburl erbutils erbwiki)
+ :required   ((("bbdb" bbdb bbdb-com bbdb-hooks)
+	       ("emacs" calc cl doctor dunnet erc erc-stamp find-func gnus gnus-group iso-transl message pp quail rot13 thingatpt url)
+	       ("faith" faith)
+	       ("flame" flame)
+	       ("geek" geek)
+	       ("google" google)
+	       ("h4x0r" h4x0r)
+	       ("idledo" idledo)
+	       ("lines" lines)
+	       ("mkback" mkback)
+	       ("oct" oct)
+	       ("translate" translate)
+	       ("units" units)
+	       ("wtf" wtf)
+	       (nil bash-quotes erc-nickserv lispy)))
+ :keywords   ("erc" "irc" "chat" "robot" "bot")
+ :homepage   "http://mwolson.org/projects/"
+ :wikipage   "http://www.emacswiki.org/ErBot")

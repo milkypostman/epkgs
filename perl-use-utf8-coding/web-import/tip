@@ -1,0 +1,14 @@
+(:summary    "Coding system from \"use utf8\" in perl code"
+ :created    "2009"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Kevin Ryde" . "user42@zip.com.au"))
+ :maintainer ("Kevin Ryde" . "user42@zip.com.au")
+ :provided   (perl-use-utf8-coding)
+ :required   ((("emacs" advice)))
+ :homepage   "http://user42.tuxfamily.org/perl-use-utf8-coding/index.html"
+ :commentary "\
+This spot of code gets an Emacs coding system from a \"use utf8;\" pragma
+in Perl code.  That pragma means strings and identifiers have or may have
+utf-8 encoded wide chars.  See the `perl-use-utf8-auto-coding-function'
+docstring below for more.")

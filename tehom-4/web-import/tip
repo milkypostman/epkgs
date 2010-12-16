@@ -1,0 +1,14 @@
+(:summary    "A variant completing-read that returns value"
+ :created    "1999"
+ :updated    "1999"
+ :license    "GPL-2"
+ :authors    (("Tom Breton" . "tehom@localhost"))
+ :maintainer ("Tom Breton" . "tehom@localhost")
+ :provided   (tehom-4)
+ :required   ((("emacs" cl)))
+ :keywords   ("extensions")
+ :homepage   "www.panix.com/~tehom/"
+ :commentary "\
+I've written the completing-read...assoc...cdr sequence so often to
+interactively look up an element in an alist.  Here it is
+encapsulated in one function.  It supports obarrays too.")

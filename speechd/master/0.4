@@ -1,0 +1,27 @@
+(:summary    "Library for accessing Speech Dispatcher"
+ :created    "2003"
+ :updated    "2004"
+ :license    "GPL-2"
+ :authors    (("Milan Zamazal" . "pdm@brailcom.org"))
+ :maintainer ("Milan Zamazal" . "pdm@brailcom.org")
+ :provided   (speechd speechd-bug speechd-speak)
+ :required   ((("emacs" cl reporter)))
+ :homepage   "http://www.freebsoft.org/speechd-el"
+ :commentary "\
+This library allows you to communicate with Speech Dispatcher.
+Usually, the communication goes like this:
+
+  (speechd-open)
+  ...
+  (speechd-say-text \"Hello, world!\")
+  ...
+  (speechd-close)
+
+Functions and variables starting with the prefix `speechd--' are considered
+internal and you shouldn't use them outside this file.
+
+*Note*: If you call any of the speechd-el functions asynchronously
+(typically within a process filter function), you must wrap the whole
+asynchronous code by the `speechd-protect' macro.
+
+See docstrings and the Texinfo manual for full details.")

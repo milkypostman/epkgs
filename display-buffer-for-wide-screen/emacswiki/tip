@@ -1,0 +1,14 @@
+(:summary    "Set `display-buffer-function' for wide-screen display"
+ :created    "2009"
+ :updated    "20101102"
+ :license    "GPL-2"
+ :authors    (("rubikitch" . "rubikitch@ruby-lang.org"))
+ :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
+ :provided   (display-buffer-for-wide-screen)
+ :required   ((("emacs" cl)))
+ :keywords   ("extensions")
+ :commentary "\
+Set `display-buffer-function' to
+`display-buffer-function-according-to-window-width'. It determines
+how to split window according to `window-width'. The threshold
+value is 125 by default.")

@@ -1,0 +1,11 @@
+(:summary    "Flymake helper methods"
+ :created    "2004"
+ :updated    "20050127"
+ :license    "GPL-2"
+ :authors    (("Nascif A. Abousalh Neto" . "nascif@acm.org"))
+ :maintainer ("Nascif A. Abousalh Neto" . "nascif@acm.org")
+ :provided   (flymake-helper)
+ :required   ((("emacs" flymake)))
+ :keywords   ("java" "syntax" "checker" "tools")
+ :commentary "\
+This module provides extensions to Flymake, created by Pavel Kobiakov")

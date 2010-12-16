@@ -1,0 +1,26 @@
+(:summary    "An easy way to respond to GEOS ballots"
+ :created    "1998"
+ :updated    "19981107"
+ :license    "GPL-2"
+ :authors    (("Tom Breton" . "tehom@localhost"))
+ :maintainer ("Tom Breton" . "tehom@localhost")
+ :keywords   ("mail")
+ :homepage   "http://panix.com/~tehom/"
+ :commentary "\
+This code is only meaningful in conjunction with gnus and GEOS
+ballots.  It is invoked with M-x GEOS-vote in the gnus' *Article*
+buffer when reading a GEOS ballot.
+
+GEOS (Global Episode Opinion Survey) is a sort of ratings system in
+which viewers rank the quality of episodes of television shows and
+GEOS summarizes the results.  See <http://www.swd.net.au/geos/> for
+more details.
+
+Changelog:
+
+1998-11-07 22:24:19 Tehom
+Made GEOS-vote check whether gnus is running and that the current
+buffer is named *Article* and complain if it's not.  
+
+1998-11-07 22:19:40 Tehom  
+Added a better suggested autoload to the installation instructions.")

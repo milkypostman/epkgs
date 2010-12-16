@@ -1,0 +1,4 @@
+(:license    "GPL-2"
+ :provided   (jde-hotspot)
+ :required   ((("jdee" jde)))
+ :homepage   "http://homepages.cs.ncl.ac.uk/phillip.lord/emacs.html")

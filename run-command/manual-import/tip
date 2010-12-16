@@ -1,0 +1,7 @@
+(:summary    "Library to facilitate running external commands"
+ :created    "199909"
+ :updated    "20001106"
+ :authors    (("Peter Breton"))
+ :maintainer ("Peter Breton")
+ :provided   (run-command)
+ :required   ((("emacs" comint))))

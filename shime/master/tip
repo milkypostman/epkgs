@@ -1,0 +1,11 @@
+(:summary    "Superior Haskell Integration Mode for Emacs"
+ :created    "2010"
+ :updated    "2010"
+ :provided   (shime)
+ :required   ((("emacs" cl)))
+ :homepage   "https://github.com/chrisdone/shime"
+ :commentary "\
+A major mode for interacting with a Haskell inferior process.
+
+* Currently only supports GHCi.
+* Not tested on OS X or Windows. Should work on both.")

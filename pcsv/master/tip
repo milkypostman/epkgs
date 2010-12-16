@@ -1,0 +1,10 @@
+(:summary    "Parser of csv"
+ :license    "GPL-3"
+ :authors    (("Hayashi Masahiro" . "mhayashi1120@gmail.com"))
+ :maintainer ("Hayashi Masahiro" . "mhayashi1120@gmail.com")
+ :provided   (pcsv)
+ :keywords   ("csv" "parse")
+ :homepage   "https://github.com/mhayashi1120/Emacs-pcsv"
+ :commentary "\
+pcsv provides parser of csv based on rfc4180
+http://www.rfc-editor.org/rfc/rfc4180.txt")

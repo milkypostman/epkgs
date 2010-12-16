@@ -1,0 +1,36 @@
+(:summary    "Utilities for Atom Blogger API"
+ :created    "2006"
+ :updated    "20060104"
+ :license    "GPL"
+ :authors    (("raman"))
+ :maintainer ("raman")
+ :provided   (atom-blogger)
+ :required   ((("emacs" cl derived)))
+ :keywords   ("blogger" "atom" "api")
+ :homepage   "http://www.emacswiki.org/AtomBlogger"
+ :wikipage   "http://www.emacswiki.org/AtomBlogger"
+ :commentary "\
+{{{  introduction
+
+Simple wrapper using Curl to post/edit Blogger.com Blogs
+This module will provide commands that prompt for the auth
+token and Feed/Entry URL,
+and pass it on to Curl.
+The XML results will be placed in a buffer in xml mode.
+nxml-mode is highly recommend and will be used if available.
+
+Usage:
+
+atom-blogger-new-entry          Create a new entry
+atom-blogger-post-entry         Publish newly created entry
+atom-blogger-edit-entry         Edit existing entry.
+atom-blogger-put-entry          Publish edits when ready.
+
+Commands prompt for the URI of the entry being manipulated ---
+this is the service.edit URI.
+You can customize things via custom, most useful being
+atom-blogger-default-auth which can be set to a user:password
+pair to avoid repeated prompting.
+
+}}}
+{{{  Required modules")

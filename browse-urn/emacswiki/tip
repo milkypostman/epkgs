@@ -1,0 +1,10 @@
+(:summary    "Functionality for browsing URNs"
+ :created    "2006"
+ :updated    "2006"
+ :license    "GPL-2"
+ :provided   (browse-urn)
+ :homepage   "http://www.emacswiki.org/BrowseURN"
+ :wikipage   "http://www.emacswiki.org/BrowseURN"
+ :commentary "\
+This package provides functionality for browsing URNs - Uniform Resource
+Names as defined in <urn:ietf:rfc:2141>.")

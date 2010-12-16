@@ -1,0 +1,37 @@
+(:summary    "Links browser integration for GNU Emacs"
+ :created    "2003"
+ :updated    "20031213"
+ :license    "GPL-2"
+ :authors    (("Kevin A. Burton" . "burton@openprivacy.org"))
+ :maintainer ("Kevin A. Burton" . "burton@openprivacy.org")
+ :provided   (links)
+ :commentary "\
+NOTE: If you enjoy this software, please consider a donation to the EFF
+(http://www.eff.org)
+
+This package provides integration for the 'links' browser with Emacs
+(http://links.sourceforge.net).  Links is a great browser, much better than
+'lynx' (IMO).  It supports frames and tables which are basically a
+requirement now that HTML 4.0 is pretty much everywhere..
+
+The integration here is important especially when compared to W3.  W3 has
+performance problems when rendering tables and frames.  links.el and links
+does not have this problem and in fact is blazingly fast.
+
+links.el supports the following features.
+
+- uses customization for all important variables.
+
+- links-browse-url supports two types of behavior
+
+  - browse within xterm
+  -  browse within buffer
+
+- support for launching links within an xterm.  This can be done with
+
+- specify geomoetry, width and height,  for the xterm
+
+- supports 'dump' integration so that we can save to a *links* buffer
+directly within emacs.
+
+- ability to jump from the links buffer to a links xterm.")

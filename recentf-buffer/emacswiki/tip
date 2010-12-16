@@ -1,0 +1,16 @@
+(:summary    "Creates the buffer with the list of recently open files"
+ :created    "2004"
+ :updated    "2004"
+ :license    "GPL-2"
+ :authors    (("Eugene V. Markov"))
+ :maintainer ("Eugene V. Markov")
+ :provided   (recentf-buffer)
+ :required   ((("emacs" recentf wid-edit)))
+ :keywords   ("bookmarks" "placeholders" "annotations")
+ :commentary "\
+It's addition to recentf.el.
+
+Install.
+
+(load \"recentf-buffer\")
+(global-set-key [?\\C-c ?r ?f] 'recentf-open-files-in-simply-buffer)")

@@ -1,0 +1,32 @@
+(:summary    "A mode to help configure remind"
+ :created    "2008"
+ :updated    "2010"
+ :license    "GPL-2"
+ :authors    (("Shelagh Manton" . "shelagh.manton@gmail.com")
+	      ("David F. Skoll"))
+ :maintainer ("Shelagh Manton" . "shelagh.manton@gmail.com")
+ :provided   (remind-conf-mode)
+ :required   ((("emacs" font-lock overlay)))
+ :keywords   ("remind" "configuration" "convenience")
+ :homepage   "http://code.google.com/p/remind-conf-mode/"
+ :commentary "\
+Use this mode to help with the configuration of remind configuration files.
+Put (require 'remind-conf-mode) in your .emacs file
+or (autoload 'remind-conf-mode \"remind-conf-mode\" \"Mode to help with remind files\" t)
+also put (add-to-list 'auto-mode-alist '(\"\\\\.rem\\\\'\" . remind-conf-mode)) and
+(setq auto-mode-alist
+    (cons '(\".reminders$\" . remind-conf-mode) auto-mode-alist))
+if you want to have the mode work automatically when you open a remind configuration file.
+
+If you want to use the auto-complete stuff, you will need to download and install the
+auto-complete library from  http://www.cx4a.org/pub/auto-complete.el and put
+(require 'auto-complete) in your Emacs with
+(add-hook 'remind-conf-mode-hook
+ (lambda ()
+   (make-local-variable 'ac-sources)
+   (setq ac-sources '(ac-remind-conf ac-remind-builtin-variables ac-remind-builtin-functions))
+   (auto-complete t)))
+  in your .emacs file
+
+  PS.  you could add ac-source-abbrev ac-source-words-in-buffer to have abbrevs and
+  other words in buffer auto-complete too")

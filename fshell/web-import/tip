@@ -1,0 +1,22 @@
+(:summary    "Enhancements to shell.el"
+ :created    "19940621"
+ :updated    "20100408"
+ :license    "GPL-2"
+ :authors    (("Noah Friedman" . "friedman@splode.com"))
+ :maintainer (nil . "friedman@splode.com")
+ :provided   (fshell)
+ :required   ((("emacs" shell)))
+ :keywords   ("extensions" "processes")
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
+ :commentary "\
+If you give M-x fshell a prefix arg after loading this, it will create a
+new shell buffer even if one already exists.  If you give it an explicit
+numeric prefix arg, it will try to switch to that numbered shell buffer,
+or create it.
+
+The alternative is to rename the current shell buffer and invoke M-x
+shell, which is more keystrokes, especially if you decide to name your
+old shell back when you're done with the newer one.
+
+rms declined to add this functionality in emacs' shell.el, so I'm
+maintaining it separately.")

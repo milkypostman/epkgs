@@ -1,0 +1,21 @@
+(:summary    "Semi WYSIWYG for LaTeX, HTML, etc using additional fonts"
+ :created    "2003"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("Christoph Wedler" . "wedler@users.sourceforge.net"))
+ :maintainer ("(Please use `M-x x-symbol-package-bug' to contact the maintainer)")
+ :provided   (add gif png x-symbol x-symbol-bib x-symbol-emacs x-symbol-hooks x-symbol-image x-symbol-macs x-symbol-mule x-symbol-myuc x-symbol-nomule x-symbol-sgml x-symbol-tex x-symbol-texi x-symbol-vars x-symbol-xmacs)
+ :required   ((("emacs" cl font-lock fontset lucid reporter warnings)))
+ :keywords   ("wysiwyg" "latex" "html" "wp" "math" "internationalization")
+ :homepage   "http://x-symbol.sourceforge.net/"
+ :wikipage   "http://www.emacswiki.org/XSymbolMode"
+ :commentary "\
+If you want to use package x-symbol, please visit the URL (use
+\\\\[x-symbol-package-web]) and read the info (use \\\\[x-symbol-package-info]).
+
+This is the main file of package X-Symbol.  It also defines charsets for the
+basic fonts: latin1, latin2, latin3, latin5, xsymb0 and xsymb1.
+
+This file does some initialization.  Thus, do not put any `defcustom'
+commands into this file.  If you think some variables in this files should
+be customized, move them to file `x-symbol-vars.el'.")

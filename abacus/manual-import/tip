@@ -1,0 +1,11 @@
+(:summary    "Abacus Calculator"
+ :created    "2001"
+ :updated    "2001"
+ :license    "GPL-2"
+ :authors    (("Valvassori Moïse" . "moise@valvassori.org"))
+ :maintainer ("Valvassori Moïse" . "moise@valvassori.org")
+ :provided   (abacus)
+ :keywords   ("games")
+ :wikipage   "http://www.emacswiki.org/AbacusMode"
+ :commentary "\
+This is an Abacus calculator")

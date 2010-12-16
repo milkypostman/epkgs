@@ -1,0 +1,31 @@
+(:summary    "Access *scratch* like you do *shell*"
+ :created    "2004"
+ :updated    "2004"
+ :license    "GPL-2"
+ :commentary "\
+This file provides a function `scratch' that is similar to `shell',
+`info', `grep', and other such functions.  By this I mean M-x
+scratch takes you to the *scratch* buffer if one exists, otherwise
+it generates a new *scratch* buffer.  User-defined customizations
+along the following lines allow you to choose a new name for the
+scratch buffer, or to use a different major mode, or to add minor
+modes:
+
+(defun itch () (interactive)
+  (scratch \"*itch*\"))
+
+(defun notes () (interactive)
+  (scratch \"*notes*\" 'text-mode))
+
+(defun music () (interactive)
+  (scratch \"*music*\" 'fundamental-mode 
+                     'musical-letters-mode 
+                     'auto-fill-mode))
+
+The function `back-from-scratch' is also provided, to take you
+back from your most recent scratch buffer to the previous buffer
+(restoring the window configuration).
+
+For those who are interested primarily in the typical *scratch*
+buffer the documentation of `lisp-interaction-mode' should be
+required reading.")

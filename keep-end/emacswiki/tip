@@ -1,0 +1,18 @@
+(:created    "2006"
+ :updated    "20061005"
+ :license    "GPL-2"
+ :authors    ((nil . "wenbinye@163.com"))
+ :maintainer (nil . "wenbinye@163.com")
+ :provided   (keep-end)
+ :required   ((("emacs" cl)))
+ :commentary "\
+Put this file into your load-path and the following into your ~/.emacs:
+  (require 'keep-end)
+
+use it for some interactive program, such as *SQL*, *R*:
+(add-hook 'sql-interactive-mode-hook
+          (lambda ()
+            (keep-end-watch-this (current-buffer))))
+(add-hook 'inferior-ess-mode-hook
+          (lambda ()
+            (keep-end-watch-this (current-buffer))))")

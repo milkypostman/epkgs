@@ -1,0 +1,4 @@
+(:summary    "A global Status bar for emacs"
+ :license    "GPL-2"
+ :provided   (free-tagging)
+ :required   ((("emacs" cl))))

@@ -1,0 +1,46 @@
+(:summary    "Extensions to `imenu.el'"
+ :created    "19990826"
+ :updated    "20100115"
+ :license    "GPL-2"
+ :authors    (("Drew Adams"))
+ :maintainer ("Drew Adams")
+ :provided   (imenu+)
+ :required   ((("emacs" cl imenu)))
+ :keywords   ("tools" "menus")
+ :commentary "\
+Extensions to `imenu.el'.
+
+  New functions defined here:
+
+   `imenu-add-defs-to-menubar', `imenu--sort-submenu',
+   `toggle-imenu-sort'.
+
+  New user options (variables) defined here:
+
+   `emacs-lisp-imenu-generic-expression',
+   `imenu-emacs-face-defn-regexp', `imenu-emacs-key-defn-regexp-1',
+   `imenu-emacs-key-defn-regexp-2',
+   `imenu-emacs-option-defn-regexp', `imenu-lisp-fn-defn-regexp',
+   `imenu-lisp-macro-defn-regexp', `imenu-lisp-other-defn-regexp',
+   `imenu-lisp-var-defn-regexp', `imenu-sort-function'.
+
+  Other variables defined here:
+
+   `imenu-last-sort-function'.
+
+
+ ***** NOTE: The following functions defined in `imenu.el' have
+             been REDEFINED HERE:
+
+ `imenu-update-menubar', `imenu--mouse-menu'.
+
+
+ ***** NOTE: The following variable defined in `imenu.el' has
+             been REDEFINED HERE:
+
+ `imenu-sort-function'.
+
+ ***** NOTE: The following variable defined in `lisp-mode.el' has
+             been REDEFINED HERE:
+
+ `lisp-imenu-generic-expression'.")

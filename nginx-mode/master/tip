@@ -1,0 +1,18 @@
+(:summary    "Major mode for editing nginx config files"
+ :created    "20101015"
+ :updated    "2010"
+ :license    "GPL-2"
+ :authors    (("Andrew J Cosgriff" . "andrew@cosgriff.name"))
+ :maintainer ("Andrew J Cosgriff" . "andrew@cosgriff.name")
+ :provided   (nginx-mode)
+ :keywords   ("nginx")
+ :homepage   "https://github.com/ajc/nginx-mode"
+ :commentary "\
+This is a quick mode for editing Nginx config files, as I didn't find
+anything else around that did quite this much.
+
+Many thanks to the authors of puppet-mode.el, from where I found a
+useful indentation function that I've modified to suit this situation.
+
+Put this file into your load-path and the following into your ~/.emacs:
+  (require 'nginx-mode)")

@@ -1,0 +1,18 @@
+(:created    "2009"
+ :updated    "2009"
+ :license    "GPL-2"
+ :authors    (("IMAKADO" . "ken.imakado@gmail.com"))
+ :maintainer ("IMAKADO" . "ken.imakado@gmail.com")
+ :provided   (perl-completion)
+ :required   ((("anything" anything)
+	       ("emacs" cl cperl-mode custom dabbrev env ffap man pp regexp-opt rx tramp woman))
+	      (("anything" anything-show-completion)
+	       ("color-moccur" color-moccur)
+	       ("emacs" url)))
+ :keywords   ("perl")
+ :homepage   "https://github.com/imakado/perl-completion"
+ :wikipage   "http://www.emacswiki.org/PerlCompletion"
+ :commentary "\
+Tested on Emacs 22
+
+Thanks to rubikitch for integration with anything-show-completion.")

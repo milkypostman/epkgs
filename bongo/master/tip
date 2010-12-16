@@ -1,0 +1,11 @@
+(:summary    "Flexible and usable media player for Emacs"
+ :created    "2005"
+ :updated    "2010"
+ :license    "GPL-2"
+ :authors    (("Daniel Brockman" . "daniel@brockman.se"))
+ :maintainer ("Daniel Brockman" . "daniel@brockman.se")
+ :provided   (bongo bongo-emacs21 bongo-lastfm bongo-mplayer lastfm-submit)
+ :required   ((("emacs" cl cus-edit custom electric find-func format-spec rx time-date))
+	      (("volume" volume)))
+ :homepage   "http://www.emacswiki.org/cgi-bin/wiki/Bongo"
+ :wikipage   "http://www.emacswiki.org/Bongo")

@@ -1,0 +1,5 @@
+(:created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :provided   (timan)
+ :homepage   "https://github.com/lieutar/timan.el")

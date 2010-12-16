@@ -1,0 +1,20 @@
+(:summary    "ICQ client for Emacs"
+ :created    "1998"
+ :updated    "1999"
+ :license    "GPL-2"
+ :maintainer ("Steve Youngs" . "youngs@xemacs.org")
+ :provided   (eicq eicq-report eicq-toolbar)
+ :required   ((("emacs" browse-url gnus goto-addr outline smiley timezone wid-edit)))
+ :keywords   ("comm" "icq")
+ :homepage   "http://eicq.sf.net/"
+ :commentary "\
+Clone of Mirabilis ICQ communication client.
+
+Entry points:
+  eicq-login
+  eicq-show-window
+  eicq-customize
+
+See README & INSTALL which come with this package
+
+This project is done without the consent of Mirabilis.")

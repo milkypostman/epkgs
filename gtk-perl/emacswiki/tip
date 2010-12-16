@@ -1,0 +1,8 @@
+(:summary    "A minor mode to help write gtk-perl code"
+ :created    "2007"
+ :updated    "20070721"
+ :license    "GPL-2"
+ :authors    ((nil . "wenbinye@163.com"))
+ :maintainer (nil . "wenbinye@163.com")
+ :provided   (gtk-perl)
+ :required   ((("emacs" cl complete cperl-mode))))

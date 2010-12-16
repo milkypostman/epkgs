@@ -1,0 +1,47 @@
+(:summary    "Universal shell"
+ :created    "2007"
+ :updated    "2008"
+ :license    "GPL-3"
+ :authors    (("David O'Toole" . "dto@gnu.org"))
+ :maintainer ("David O'Toole" . "dto@gnu.org")
+ :provided   (ushell)
+ :required   ((("eon" eon)))
+ :keywords   ("lisp")
+ :commentary "\
+This is a Universal Shell inspired by the Symbolics Genera
+operating system. In designing ushell I started with what I could
+learn about Genera from the various manuals I was able to get a
+hold of, and also watched a fascinating video (link below) of a
+user playing with Genera. I'd like to extend it with a few ideas of
+my own, and hopefully the result will be something unique.
+
+You can see a 20+ minute video of Genera at
+http://www.lemonodor.com/archives/misc-gems/lispm.mov.gz My first
+thought after seeing it was \"I just saw the Emacs of the future.\"
+
+Some old Genera manuals can be found at
+http://www.andreas.org/genera/Programming%20the%20User%20Interface.pdf
+
+Features of ushell:
+
+ - A mega-extensible self-documenting command-line interface for
+   absolutely everything---Emacs Lisp, Common Lisp, UNIX
+   programs/shells, etc. inspired by Symbolics Genera
+
+ - Comprehensive mouse support
+
+ - Generic data presentation UI makes different interfaces possible
+
+ - Interactively construct calls to any function/command/UNIX
+   program/whatever, by choosing arguments with keyboard/mouse
+
+ - Command output can be plain text like a normal shell, or
+   clickable text (such as a pop-up menu for every file that
+   appears in a directory listing), or a picture, or an interactive
+   dialog box with options and a \"go\" button. You can save the
+   entire log as a sort of history, and save commonly-used forms
+   for later re-use.
+
+ - Integrated event notification and logging system.
+
+ - Undoubtedly boatloads of other stuff.")

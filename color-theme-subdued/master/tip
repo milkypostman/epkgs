@@ -1,0 +1,7 @@
+(:summary    "A tango-based color theme for Emacs"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :provided   (color-theme-subdued)
+ :required   ((("color-theme" color-theme)))
+ :homepage   "https://github.com/jbw/color-theme-subdued")

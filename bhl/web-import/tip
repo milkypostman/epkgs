@@ -1,0 +1,19 @@
+(:summary    "From (P)lain text to (H)tml and (L)aTeX"
+ :created    "2002"
+ :updated    "20070822"
+ :license    "GPL-2"
+ :authors    (("Bastien Guerry" . "bzg@altern.org"))
+ :maintainer ("Bastien Guerry" . "bzg@altern.org")
+ :provided   (bhl)
+ :required   ((("emacs" footnote texnfo-upd))
+	      (("emacs" reporter)))
+ :keywords   ("convert" "plain" "text" "html" "latex" "sgml" "linuxdoc" "texinfo")
+ :homepage   "http://www.nongnu.org/bhl/"
+ :wikipage   "http://www.emacswiki.org/BhlMode"
+ :commentary "\
+BHL mode is a mode wich enables you to convert plain text files into
+HTML, LaTeX and SGML (Linuxdoc) files.  This is a simple mode, with
+simple conversion functions, dedicated to simple source files.
+
+Stacey Marshall <stacey DOT marshall AT sun DOT com> added the
+support for bhl2wiki")

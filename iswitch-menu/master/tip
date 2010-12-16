@@ -1,0 +1,59 @@
+(:summary    "Use iswitch to access menus"
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-2"
+ :authors    (("Joost Diepenmaat" . "joost@zeekat.nl"))
+ :maintainer ("Joost Diepenmaat" . "joost@zeekat.nl")
+ :provided   (iswitch-menu)
+ :required   ((("emacs" cl iswitchb tmm)))
+ :keywords   ("matching" "frames" "terminals" "menus")
+ :wikipage   "http://www.emacswiki.org/IswitchMenu"
+ :commentary "\
+SYNOPSIS
+
+This code replaces tmm-prompt with something a lot more convenient.
+Prompted by the horrible navigation menus in the otherwise
+*excellent* emacs-rails library, this code should make using menus
+without a mouse or X easy on the brain and fingers.
+
+to use: put the following in your init file and make sure this
+file is in your load-path:
+
+(require 'iswitch-menu)
+
+you can then access the console menu by running
+M-x tmm-menubar
+note that this will work even if you're using a GUI menu bar
+
+CUSTOMIZATION
+
+You can customize the menus using the iswitch-menu customization
+group:
+
+M-x customize-group <ENTER> iswitch-menu <ENTER>
+
+you can toggle iswitch-menu-override-tmm-prompt if you want to use
+iswitch-menu-prompt only for specific modes or commands.
+
+REPORTING BUGS
+
+This code should work as advertized.  If you find any situations
+where it doesn't work, try the the latest version from
+http://github.com/joodie/iswitch-menu/
+
+If that doesn't work either, please contact the author.  If any
+errors occur during the creation or executiong of a particular
+menu, please provide the output of M-x iswitch-menu-report as run
+immediately after the error.
+
+USING THIS CODE WITH EMACS-RAILS
+
+To use with emacs-rails navigation: same as above, and switch on
+the Rails Always Use Text Menus option in the rails customization
+group.
+
+Alternatively, if you don't like to globally override tmm-prompt,
+get a version of emacs-rails with configurable text menus, like
+this one: http://github.com/remvee/emacs-rails/tree/master and
+switch on rails-always-use-text-menu and set
+rails-text-menu-function to #'iswitch-menu-prompt")

@@ -1,0 +1,14 @@
+(:summary    "Dabbrev-expand / dabbrev-completion / partial-dabbrev using anything.el"
+ :created    "2008"
+ :updated    "20090420"
+ :license    "GPL-2"
+ :authors    (("rubikitch" . "rubikitch@ruby-lang.org"))
+ :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
+ :provided   (anything-dabbrev-expand)
+ :required   ((("anything" anything)
+	       ("emacs" dabbrev))
+	      (("anything" anything-show-completion)))
+ :keywords   ("dabbrev" "convenience" "anything")
+ :commentary "\
+Dynamic abbrev for multiple selection using `anything', and partial dabbrev.
+This package is tested on Emacs 22.")

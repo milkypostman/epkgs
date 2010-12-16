@@ -1,0 +1,15 @@
+(:summary    "Display-table fallbacks for some unicode chars"
+ :created    "2008"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Kevin Ryde" . "user42@zip.com.au"))
+ :maintainer ("Kevin Ryde" . "user42@zip.com.au")
+ :provided   (unicode-disp)
+ :required   ((("emacs" advice disp-table)))
+ :homepage   "http://user42.tuxfamily.org/unicode-disp/index.html"
+ :commentary "\
+M-x unicode-disp changes the display table to show selected unicode chars
+as ascii equivalents or near equivalents.  The chars affected are a
+personal selection of the worst bits of unicode encountered, just with
+the aim of making them displayable on an ascii or latin1 tty.  If nothing
+else it might give you ideas for display table mangling of your own.")

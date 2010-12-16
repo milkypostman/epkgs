@@ -1,0 +1,17 @@
+(:created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("but please"))
+ :maintainer ("but please")
+ :provided   (fud gimp-mode)
+ :required   ((("emacs" cl cmuscheme eldoc outline ring thingatpt)
+	       ("scheme-complete" scheme-complete)
+	       ("snippet" snippet)))
+ :keywords   ("processes" "multimedia" "extensions" "tools" "gimp" "scheme")
+ :homepage   "http://niels.kicks-ass.org/gimpmode"
+ :wikipage   "http://www.emacswiki.org/GimpMode"
+ :commentary "\
+Interaction/editing mode for the GIMP
+see gimpmode.pdf for full description and usage.
+
+TOC:")

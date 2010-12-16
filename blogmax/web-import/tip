@@ -1,0 +1,7 @@
+(:created    "2004"
+ :updated    "2004"
+ :provided   (blogmax iplookup)
+ :required   ((("efs" efs)
+	       ("emacs" ange-ftp calendar cl)))
+ :homepage   "http://billstclair.com/blogmax/"
+ :wikipage   "http://www.emacswiki.org/BlogMax")

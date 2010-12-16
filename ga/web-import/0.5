@@ -1,0 +1,35 @@
+(:summary    "Generic apt alike interfaces for various package management tools"
+ :created    "2008"
+ :updated    "2009"
+ :license    "GPL-3"
+ :authors    (("William Xu" . "william.xwl@gmail.com"))
+ :maintainer ("William Xu" . "william.xwl@gmail.com")
+ :provided   (ga ga-apt-cyg ga-apt-get ga-fink ga-pkgsrc)
+ :required   ((("emacs" cl tramp)))
+ :homepage   "http://xwl.appspot.com/"
+ :commentary "\
+This extenstion tries to provide a generic apt(as used in Debian
+GNU/Linux) alike interface over various package management tools,
+such as: apt-get(Debian GNU/Linux), yum(redhat/fedora), emerge(Gentoo
+GNU/Linux), fink(Mac OS X), pkg-get(Solaris), etc.
+
+Put ga files into your load-path first.  Then add something similar
+to the following example to your .emacs.  192.168.1.20 is a remote debian
+machine, while localhost is a Mac OS X with fink installed.
+
+    ;; Add this so that we can edit file on remote machine as root.  Also
+    ;; note that you should config your ssh agent not to prompt password
+    ;; while logining the remote host.
+
+    (eval-after-load 'tramp
+      '(progn
+         (add-to-list 'tramp-default-proxies-alist
+    		  '(\"192.168.1.20\" \"\\\\`root\\\\'\" \"/ssh:%h:\"))
+         ))
+
+    (require 'ga)
+    (setq ga-backend-methods
+          '((apt-get \"ssh 192.168.1.20 sudo apt-get\")
+            (fink \"sudo fink\")))
+
+Then type: `M-x ga'.")

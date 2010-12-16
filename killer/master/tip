@@ -1,0 +1,11 @@
+(:summary    "Kill and delete text"
+ :created    "20080830"
+ :updated    "20100307"
+ :license    "GPL-3"
+ :authors    (("Jonas Bernoulli" . "jonas@bernoul.li"))
+ :maintainer ("Jonas Bernoulli" . "jonas@bernoul.li")
+ :provided   (killer)
+ :keywords   ("convenience")
+ :homepage   "http://github.com/tarsius/killer"
+ :commentary "\
+Defines additional commands to kill and delete text.")

@@ -1,0 +1,26 @@
+(:summary    "Shifts shell buffers working directory"
+ :license    "GPL-2"
+ :authors    (("Phillip Lord" . "p.lord@russet.org.uk"))
+ :maintainer ("Phillip Lord" . "p.lord@russet.org.uk")
+ :provided   (dir-shell)
+ :required   ((("emacs" shell)))
+ :keywords   ("shell" "working" "directory")
+ :homepage   "http://homepages.cs.ncl.ac.uk/phillip.lord/emacs.html"
+ :commentary "\
+The package provides a variety of different ways to interact with
+the current working directory of a shell buffer. While Emacs
+provides a variety of commands for interacting with the shell, and
+an array of commands for doing many of the tasks that users can do
+from the shell (deleting, moving and copying files for instance),
+using an interactive shell within Emacs is none the less an
+intuitive way of augmenting Emacs' functionality, with that
+provided by the native shell. 
+
+One of the difficulties with this though, is that the user often
+wishes to use the shell in many different working directories. This
+is particularly true, with some languages, such as Java, which
+require frequent traversal of many directories.
+
+This package provides a number of ways of helping this
+process. More descriptions of these ways will be added as I code
+them.")

@@ -1,0 +1,23 @@
+(:summary    "Search all Info indices"
+ :created    "20030814"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("Jesper Harder" . "harder@ifa.au.dk"))
+ :maintainer ("Jesper Harder" . "harder@ifa.au.dk")
+ :provided   (info-apropos)
+ :required   ((("emacs" cl info)))
+ :keywords   ("help")
+ :homepage   "http://www.phys.au.dk/~harder/"
+ :wikipage   "http://www.emacswiki.org/InfoApropos"
+ :commentary "\
+`M-x info-apropos' does the same as `index-apropos' in the
+standalone Info reader.  I'll just repeat from the Info manual:
+
+ `M-x info-apropos'
+      Grovel the indices of all the known Info files on your system
+      for a string, and build a menu of the possible matches.
+
+  If you don't know what manual documents something, try the `M-x
+  info-apropos'.  It prompts for a string and then looks up that
+  string in all the indices of all the Info documents installed on
+  your system.")

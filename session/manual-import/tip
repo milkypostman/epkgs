@@ -1,0 +1,22 @@
+(:summary    "Use variables, registers and buffer places across sessions"
+ :created    "1999"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("Christoph Wedler" . "wedler@users.sourceforge.net"))
+ :maintainer ("Christoph Wedler" . "wedler@users.sourceforge.net")
+ :provided   (session)
+ :required   ((("emacs" cl custom)))
+ :keywords   ("session" "session" "management" "desktop" "data" "tools")
+ :homepage   "http://emacs-session.sourceforge.net/"
+ :commentary "\
+When you start Emacs, package Session restores various variables (e.g.,
+input histories) from your last session.  It also provides a menu
+containing recently changed/visited files and restores the places (e.g.,
+point) of such a file when you revisit it.
+
+For details, check <http://emacs-session.sourceforge.net/> or, if you prefer
+the manual style, the documentation of functions \\\\[session-save-session]
+and `session-store-buffer-places'.
+
+Bug fixes, bug reports, improvements, and suggestions for the newest version
+are strongly appreciated.")

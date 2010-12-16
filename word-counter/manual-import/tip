@@ -1,0 +1,11 @@
+(:summary    "Count words in the buffer and in region"
+ :created    "2002"
+ :updated    "20020418"
+ :license    "GPL"
+ :authors    (("Dr. Rafael Sepúlveda." . "drs@gnulinux.org.mx"))
+ :maintainer ("Dr. Rafael Sepúlveda." . "drs@gnulinux.org.mx")
+ :provided   (word-counter)
+ :commentary "\
+This file has all the functions that create a word counter. It has an
+interactive word-counter and can display in the modeline the number of
+words in the buffer and in the current region, plus more details.")

@@ -1,0 +1,42 @@
+(:summary    "A recoverable file deletion system"
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-2"
+ :provided   (trashcan)
+ :required   ((("emacs" dired)))
+ :keywords   ("amiga" "macos" "trash" "windows" "recycle" "bin")
+ :commentary "\
+The file trashcan.el contains a recoverable file deletion system
+that behaves like the trash can or recycle bin that many operating
+systems, present and past, show on their screens. This system
+creates special directories known as trashcan directories to hold
+files that can be deleted (permanently) or undeleted (restored /
+recovered). On Unix systems there is one trashcan directory for
+each user and the default values are $HOME/.TRASHCAN for each value
+of $HOME. On Windows systems there are trashcan directories at the
+following default locations: a:\\TRASHCAN, b:\\TRASHCAN, c:\\TRASHCAN
+etc.
+
+This system changes the behaviour of the \"x\" key in dired mode from
+permanently deleting files to a two stage system. If you are not in
+a trashcan directory, then the selected files are moved into a
+trashcan directory. If you are already in a trashcan directory, the
+the selected files are permanently deleted. Files in a trashcan
+directory can be restored by viewing that directory in dired mode,
+selecting some files and executing the command M-x
+trashcan-restore. All of the files in a trashcan directory can also
+be permanently deleted in one hit by issuing the command M-x
+trashcan-empty. The name \"trashcan\" comes from my old Amiga
+computer which I still have fond memories of!
+
+Install Instructions:
+
+See the following URL for the latest info and a tarball:
+
+http://www.geocities.com/davinpearson/research/2006/mopa2e.html#trashcan
+
+Extract the file in the above-mentioned tarball and put it
+somewhere in load-path and load it by putting the following
+command in your .emacs file:
+
+(require 'trashcan)")

@@ -1,0 +1,45 @@
+(:summary    "An Emacs Internet Relay Chat client"
+ :created    "1997"
+ :updated    "2007"
+ :license    "GPL-2"
+ :authors    (("Alexander L. Belikoff" . "alexander@belikoff.net"))
+ :maintainer ("Michael Olson" . "mwolson@gnu.org")
+ :provided   (erc erc-autoaway erc-backend erc-bbdb erc-button erc-capab erc-chess erc-compat erc-dcc erc-ezbounce erc-fill erc-goodies erc-hecomplete erc-ibuffer erc-identd erc-imenu erc-join erc-lang erc-list erc-log erc-match erc-menu erc-netsplit erc-networks erc-nicklist erc-notify erc-page erc-pcomplete erc-replace erc-ring erc-services erc-sound erc-speak erc-speedbar erc-spelling erc-stamp erc-track erc-truncate erc-viper erc-xdcc)
+ :required   ((("apel" poe)
+	       ("bbdb" bbdb bbdb-com bbdb-gui bbdb-hooks)
+	       ("chess" chess chess-display chess-network)
+	       ("emacs" cl comint dframe easymenu flyspell font-lock format-spec hippie-exp ibuf-ext ibuffer imenu iswitchb mail-extr overlay pcomplete pp ring sort speedbar thingatpt time-date viper wid-edit)
+	       ("emacspeak" emacspeak)
+	       (nil ssl)))
+ :keywords   ("irc" "chat" "client" "internet")
+ :homepage   "http://savannah.gnu.org/projects/erc/"
+ :wikipage   "http://www.emacswiki.org/ERC"
+ :commentary "\
+ERC is a powerful, modular, and extensible IRC client for Emacs.
+
+For more information, see the following URLs:
+* http://sv.gnu.org/projects/erc/
+* http://www.emacswiki.org/cgi-bin/wiki/ERC
+
+As of 2006-06-13, ERC development is now hosted on Savannah
+(http://sv.gnu.org/projects/erc).  I invite everyone who wants to
+hack on it to contact me <mwolson@gnu.org> in order to get write
+access to the shared Arch archive.
+
+Installation:
+
+Put erc.el in your load-path, and put (require 'erc) in your .emacs.
+
+Configuration:
+
+Use M-x customize-group RET erc RET to get an overview
+of all the variables you can tweak.
+
+Usage:
+
+To connect to an IRC server, do
+
+M-x erc RET
+
+After you are connected to a server, you can use C-h m or have a look at
+the ERC menu.")

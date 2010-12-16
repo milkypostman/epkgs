@@ -1,0 +1,14 @@
+(:summary    "Import safari bookmarks to del.icio.us"
+ :created    "2005"
+ :updated    "2005"
+ :license    "GPL-2"
+ :authors    (("Edward O'Connor" . "ted@oconnor.cx"))
+ :maintainer ("Edward O'Connor" . "ted@oconnor.cx")
+ :provided   (safari-delicious)
+ :required   ((("delicious" delicioapi)
+	       ("emacs" esh-util)
+	       ("osx-plist" osx-plist)))
+ :homepage   "http://edward.oconnor.cx/elisp/"
+ :commentary "\
+utilities for importing your Safari bookmarks into del.icio.us.
+beware the lack of documentation. MUHAHAAHAHAHAA.")

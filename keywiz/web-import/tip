@@ -1,0 +1,29 @@
+(:summary    "Emacs key sequence quiz"
+ :created    "20020415"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("Jesper Harder" . "harder@ifa.au.dk"))
+ :maintainer ("Jesper Harder" . "harder@ifa.au.dk")
+ :provided   (keywiz)
+ :required   ((("emacs" cl gamegrid timer)))
+ :keywords   ("games" "keyboard")
+ :homepage   "http://www.phys.au.dk/~harder/"
+ :wikipage   "http://www.emacswiki.org/KeyWiz"
+ :commentary "\
+keywiz.el drills you about Emacs key-bindings.  You're presented
+with the name of a command and the docstring, and then prompted for
+the correct key sequence.  You'll earn one point for each correct
+answer during the time limit.
+
+Invoke with `M-x keywiz'.  A prefix argument will force keywiz to
+rescan the key-binding -- this is useful if you want to include
+bindings from a different mode.
+
+Are you a true Emacs key-binding wizard or just a poor vi looser?
+Get your foot-pedals in position and see how many key-bindings you
+can remember in two minutes.
+
+Forget about your Nethack high-score -- surely, knowing how to
+wield the powers of the One True Editor at your fingertips will
+earn you more bragging rights than ascending bare-footed in some
+silly game with vi-keybindings :-)")

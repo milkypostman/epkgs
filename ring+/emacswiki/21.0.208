@@ -1,0 +1,24 @@
+(:summary    "Extensions to `ring.el'"
+ :created    "19960411"
+ :updated    "20100115"
+ :license    "GPL-2"
+ :authors    (("Drew Adams"))
+ :maintainer ("Drew Adams")
+ :provided   (ring+)
+ :required   ((("emacs" ring)))
+ :keywords   ("extensions" "lisp" "emacs-lisp")
+ :homepage   "http://www.emacswiki.org/RingPlus"
+ :wikipage   "http://www.emacswiki.org/RingPlus"
+ :commentary "\
+Extensions to `ring.el'.
+
+ Main new functions here:
+
+   `ring-convert-sequence-to-ring', `ring-insert+extend',
+   `ring-remove+insert+extend', `ring-member', `ring-next',
+   `ring-previous'.
+
+
+ This file should be loaded after loading the standard GNU file
+ `ring.el'.  So, in your `~/.emacs' file, do this:
+ (eval-after-load \"ring\" '(progn (require 'ring+))")

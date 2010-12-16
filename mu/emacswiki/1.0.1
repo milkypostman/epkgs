@@ -1,0 +1,24 @@
+(:summary    "Play on a MUSH or MUD within Emacs"
+ :created    "2001"
+ :updated    "2004"
+ :license    "GPL-2"
+ :authors    (("Alex Schroeder" . "alex@gnu.org"))
+ :maintainer ("Alex Schroeder" . "alex@gnu.org")
+ :provided   (mu)
+ :required   ((("emacs" comint)))
+ :keywords   ("comm" "games")
+ :commentary "\
+This is is a MUSH or MUD client.  Instead of using telnet or
+standalone client to connect to your favorite MUSH or MUD, you can
+use mu.el to play within Emacs.
+
+I used to play using tinymud.el, but decided to rewrite it based on
+comint-mode.  :)
+
+Before playing, customize `mu-worlds'.  Then use `mu-open' to open a
+connection to one of the worlds.  This will automaticall create a mu
+connection buffer and a mu buffer.  You can type commands in either
+buffer and send them to the host with RET.  The output will be in the
+mu connection buffer.
+
+If you load ansi-color.el, you should be able to get ANSI colors.")

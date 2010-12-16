@@ -1,0 +1,147 @@
+(:summary    "A mode for quickly jotting down things to remember"
+ :created    "19990329"
+ :updated    "2001"
+ :license    "GPL-2"
+ :authors    (("John Wiegley" . "johnw@gnu.org"))
+ :maintainer ("Sacha Chua" . "sacha@free.net.ph")
+ :provided   (read-file-name remember remember-bbdb remember-bibl remember-blosxom remember-diary remember-emacs-wiki-journal remember-experimental remember-planner)
+ :required   ((("bbdb" bbdb-com)
+	       ("emacs" bookmark diary-lib url)
+	       ("emacs-wiki-journal" emacs-wiki-journal)
+	       ("planner" planner)
+	       (nil bibl-mode emacs-wiki-blosxom)))
+ :keywords   ("data" "memory" "todo" "pim")
+ :homepage   "http://repo.or.cz/w/remember-el.git"
+ :wikipage   "http://www.emacswiki.org/RememberMode"
+ :commentary "\
+The idea
+
+Todo lists, schedules, phone databases... everything we use
+databases for is really just a way to extend the power of our
+memory.  To be able to remember what our conscious mind may not
+currently have access to.
+
+There are many different databases out there -- and good ones --
+which this mode is not trying to replace.  Rather, it's how that
+data gets there that's the question.  Most of the time, we just
+want to say \"Remember so-and-so's phone number, or that I have to
+buy dinner for the cats tonight.\"  That's the FACT.  How it's
+stored is really the computer's problem.  But at this point in
+time, it's most definitely also the user's problem, and sometimes
+so laboriously so that people just let data slip, rather than
+expend the effort to record it.
+
+\"Remember\" is a mode for remembering data.  It uses whatever
+back-end is appropriate to record and correlate the data, but it's
+main intention is to allow you to express as _little_ structure as
+possible up front.  If you later want to express more powerful
+relationships between your data, or state assumptions that were at
+first too implicit to be recognized, you can \"study\" the data later
+and rearrange it.  But the initial \"just remember this\" impulse
+should be as close to simply throwing the data at Emacs as
+possible.
+
+Implementation
+
+Hyperbole, as a data presentation tool, always struck me as being
+very powerful, but it seemed to require a lot of \"front-end\" work
+before that data was really available.  The problem with BBDB, or
+keeping up a Bibl-mode file, is that you have to use different
+functions to record the data, and it always takes time to stop what
+you're doing, format the data in the manner expected by that
+particular data interface, and then resume your work.
+
+With \"remember\", you just hit `M-x remember' (you'd probably want
+to bind this to an easily accessible keystroke, like C-x M-r), slam
+in your text however you like, and then hit C-c C-c.  It will file
+the data away for later retrieval, and possibly indexing.
+
+Indexing is to data what \"studying\" is in the real world.  What you
+do when you study (or lucubrate, for some of us) is to realize
+certain relationships implicit in the data, so that you can make
+use of those relationships.  Expressing that a certain quote you
+remembered was a religious quote, and that you want the ability to
+pull up all quotes of a religious nature, is what studying does.
+This is a more labor intensive task than the original remembering
+of the data, and it's typical in real life to set aside a special
+period of time for doing this work.
+
+\"Remember\" works in the same way.  When you enter data, either by
+typing it into a buffer, or using the contents of the selected
+region, it will store that data -- unindexed, uninterpreted -- in a
+data pool.  It will also try to remember as much context
+information as possible (any text properties that were set, where
+you copied it from, when, how, etc).  Later, you can walk through
+your accumulated set of data (both organized, and unorganized) and
+easily begin moving things around, and making annotations that will
+express the full meaning of that data, as far as you know it.
+
+Obviously this latter stage is more user-interface intensive, and
+it would be nice if \"remember\" could do it as elegantly as
+possible, rather than requiring a billion keystrokes to reorganize
+your hierarchy.  Well, as the future arrives, hopefully experience
+and user feedback will help to make this as intuitive a tool as
+possible.
+
+Future Goals
+
+This tool hopes to track (and by doing it with as little new code
+as possible):
+
+ - The raw data that gets entered
+
+ - The relationships between that data (either determined
+   implicitly by parsing the input, or explicitly by the user's
+   studying the data).
+
+ - Revisioning of the data
+
+ - Where it came from, and any context information that can be
+   programmatically determined.
+
+ - Allowing particular views of the initially amorphous data pool
+   (ala the Xanadu concept).
+
+ - Storage of the data in a manner most appopriate to that data,
+   such as keeping address-book type information in BBDB, etc.
+
+Using \"remember\"
+
+As a rough beginning, what I do is to keep my .notes file in
+outline-mode format, with a final entry called \"* Raw data\".  Then,
+at intervals, I can move the data that gets appended there into
+other places.  But certainly this should evolve into an intuitive
+mechanism for shuffling data off to its appropriate corner of the
+universe.
+
+Mapping the remember functions to very accessible keystrokes
+facilities using the mode:
+
+ (autoload 'remember \"remember\" nil t)
+ (autoload 'remember-region \"remember\" nil t)
+
+ (define-key global-map [f8] 'remember)
+ (define-key global-map [f9] 'remember-region)
+
+planner.el users should use `remember-to-planner' instead of `remember'
+to save more context information.
+
+Feedback
+
+Please send me your comments and ideas.  If Emacs could become a
+more intelligent data store, where brainstorming would focus on the
+IDEAS involved -- rather than the structuring and format of those
+ideas, or having to stop your current flow of work in order to
+record them -- it would map much more closely to how the mind
+(well, at least mine) works, and hence would eliminate that very
+manual-ness which computers from the very beginning have been
+championed as being able to reduce.
+
+Have you ever noticed that having a laptop to write on doesn't
+_actually_ increase the amount of quality material that you turn
+out, in the long run?  Perhaps its because the time we save
+electronically in one way, we're losing electronically in another;
+the tool should never dominate one's focus.  As the mystic
+Faridu'd-Din `Attar wrote: \"Be occupied as little as possible with
+things of the outer world but much with things of the inner world;
+then right action will overcome inaction.\"")

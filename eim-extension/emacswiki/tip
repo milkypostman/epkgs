@@ -1,0 +1,28 @@
+(:summary    "Some extension for eim (Emacs Input Method)"
+ :created    "20081006"
+ :updated    "20081006"
+ :license    "GPL-3"
+ :authors    ((nil . "andy stewart lazycat.manatee@gmail.com"))
+ :maintainer (nil . "andy stewart lazycat.manatee@gmail.com")
+ :provided   (eim-extension)
+ :required   (((nil eim-extra)))
+ :keywords   ("eim" "input" "method")
+ :commentary "\
+`eim-extra' is a Emacs Chinese Input Method, this package is some configuration
+and key binding for `eim-extra'.
+
+
+Installation:
+
+Put eim-extension.el to your load-path.
+The load-path is usually ~/elisp/.
+It's set in your ~/.emacs like this:
+(add-to-list 'load-path (expand-file-name \"~/elisp\"))
+
+And the following to your ~/.emacs startup file.
+
+(require 'eim-extension)
+
+No need more
+
+Configuration:")

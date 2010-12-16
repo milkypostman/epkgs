@@ -1,0 +1,20 @@
+(:summary    "Byte compile elisp when loaded"
+ :updated    "20071002"
+ :license    "GPL-2"
+ :authors    (("Harley Gorrell" . "harley@panix.com"))
+ :maintainer ("Harley Gorrell" . "harley@panix.com")
+ :provided   (jhg-cload)
+ :keywords   ("compile" "load")
+ :commentary "\
+* Attempt to compile elisp right before it is loaded.
+  Only compile files which are under your chosen paths and
+  are older than the source files.
+* If you put '(jhg-cload-try \"~/.emacs\")' your ~/.emacs
+  it will be recompiled when needed.  However, this
+  method will result in one 'stale' start after a
+  change is made.  (A small price to pay for auto compiles.)
+
+NOTE: cload wont compile autoloaded functions as
+do_autoload calls the c function \"Fload\" directly.  To
+let devadvice get its hooks into the autoloader, try this:
+http://www.mahalito.net/~harley/elisp/jhg-autoload-calls-load.patch")

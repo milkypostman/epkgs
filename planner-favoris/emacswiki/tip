@@ -1,0 +1,8 @@
+(:summary    "Add some bookmarks in a planner day page"
+ :created    "2008"
+ :updated    "20080220"
+ :license    "GPL-2"
+ :authors    (("ThierryVolpiatto"))
+ :maintainer ("ThierryVolpiatto")
+ :provided   (planner-favoris)
+ :required   ((("planner" planner))))

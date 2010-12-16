@@ -1,0 +1,11 @@
+(:summary    "View and browse headlines captured with slashcache.lisp"
+ :created    "2001"
+ :updated    "2001"
+ :license    "GPL-2"
+ :provided   (slashdot)
+ :required   ((("emacs" cl)))
+ :homepage   "http://www.davep.org/emacs/"
+ :commentary "\
+This package provides a method of reading the slashdot headlines captured
+with slashcache.lisp <URL:http://www.davep.org/lisp/slashcache.lisp> and
+firing off a browser for reading the full article.")

@@ -1,0 +1,13 @@
+(:summary    "Some extensions for emms"
+ :created    "20080719"
+ :updated    "20080719"
+ :license    "GPL-3"
+ :authors    (("Andy Stewart" . "lazycat.manatee@gmail.com"))
+ :maintainer ("Andy Stewart" . "lazycat.manatee@gmail.com")
+ :provided   (emms-extension)
+ :required   ((("emms" emms emms-last-played emms-mark emms-playlist-mode emms-playlist-sort emms-source-file)
+	       (nil basic-edit-toolkit))
+	      (("w3m" w3m)))
+ :keywords   ("emms")
+ :commentary "\
+Some extensions for emms.")

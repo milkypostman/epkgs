@@ -1,0 +1,87 @@
+(:summary    "Select buffer by cycling through"
+ :created    "1996"
+ :authors    (("Vladimir Alexiev" . "vladimir@cs.ualberta.ca"))
+ :maintainer ("same")
+ :provided   (cycle-buffer)
+ :required   ((("emacs" cl)))
+ :keywords   ("switch-to-buffer" "cycle" "buffer" "list")
+ :homepage   "http://www.emacswiki.org/CycleBuffer"
+ :wikipage   "http://www.emacswiki.org/CycleBuffer"
+ :commentary "\
+Description:
+------------
+cycle-buffer is yet another way of selecting buffers. Instead of prompting
+you for a buffer name, cycle-buffer switches to the most recently used
+buffer, and repeated invocations of cycle-buffer-forward switch to less
+recently visited buffers. If you accidentally overshoot, calling
+cycle-buffer-backward goes back. You should issue consecutive cycle command
+pretty quickly: if there is some intervening command between two cycling
+commands, or if a settable timeout expires, the cycling is reset and the
+next cycle-buffer will get you to the last buffer.
+
+I find this to be the fastest buffer-switching mechanism; it's like C-x
+b <return> w/out the return, but it's not limited to the most recently
+accessed buffer.  Plus you never have to remember buffer names; you
+just keep cycling until you recognize the buffer you're searching for. The
+buffer ring is shown in the echo area centered around the current buffer;
+if you see the name of the buffer you are looking for a few positions away
+from the center, you can give an argument to cycle-buffer to get directly
+to it. Positive arguments move to the right, negative arguments to the
+left.
+
+In addition to cycling forward and backward, there are two versions of the
+command provided: normal and \"permissive\". The permissive version allows
+(as per factory settings) buffers of the form *bufname*, while the normal
+version does not.
+
+Installation:
+-------------
+Add these lines in your .emacs:
+  (autoload 'cycle-buffer \"cycle-buffer\" \"Cycle forward.\" t)
+  (autoload 'cycle-buffer-backward \"cycle-buffer\" \"Cycle backward.\" t)
+  (autoload 'cycle-buffer-permissive \"cycle-buffer\" \"Cycle forward allowing *buffers*.\" t)
+  (autoload 'cycle-buffer-backward-permissive \"cycle-buffer\" \"Cycle backward allowing *buffers*.\" t)
+  (autoload 'cycle-buffer-toggle-interesting \"cycle-buffer\" \"Toggle if this buffer will be considered.\" t)
+  (global-set-key [(f9)]        'cycle-buffer-backward)
+  (global-set-key [(f10)]       'cycle-buffer)
+  (global-set-key [(shift f9)]  'cycle-buffer-backward-permissive)
+  (global-set-key [(shift f10)] 'cycle-buffer-permissive)
+You may want to adjust the keyboard bindings to suit your taste. See below
+for other customisable variables.
+
+Todo
+----
+- try not to shift the list in the echo area, move the [ ] only.
+- in order not to switch to the intermediate buffers, implement an electric
+  minibuffer mode where cycle-buffer and cycle-buffer-backward only scroll
+  the buffer list in the minibuffer, and the buffer is switched only upon
+  exit from that mode (partly suggested by terry@santafe.edu)
+SUGGESTIONS ARE WELCOME.
+
+ChangeLog
+---------
+Fri Jun  7 11:00:32 1996 [VA]
+floatp-safe is not defined in emacs, pointed by tim@ipac.caltech.edu
+
+Sat Jun  8 17:27:57 1996 [VA]
+alex.lefaive@Eng.Sun.COM suggested an \"inverse\" of cycle-buffer-ignore, a
+variable that would only *allow* certain buffers. I decided to generalise
+the two to cycle-buffer-filter, a general and-or form.
+
+Sat Jun  8 20:11:23 1996 [VA]
+Doc fix, pointed by terry@santafe.edu
+
+Mon Jun 10 11:55:25 1996 [VA]
+Added cycle-buffer-interesting and cycle-buffer-toggle-interesting,
+suggestion by Josh MacDonald <jmacd@CS.Berkeley.EDU>
+
+Mon Mar 24 14:54:37 1997 [Martin Stjernholm <mast@lysator.liu.se>]
+Added cycle-buffer-next-command to pre-command-hook to discard changes
+to the buffer list caused by buffers we just fly through.
+
+Wed May 21 02:29:18 1997 [VA]
+cycle-buffer-message: don't log the buffer list onto the message log
+
+Mon Dec  1 18:57:31 1997 [VA]
+cycle-buffer-shorten-name: turn ` ' in buf name to `_', also save a couple
+of spaces around each name.")

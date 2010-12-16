@@ -1,0 +1,21 @@
+(:summary    "Teeuhr"
+ :created    "2001"
+ :updated    "2001"
+ :authors    (("Patrick Gundlach" . "patrick@gundla.ch"))
+ :maintainer ("Patrick Gundlach" . "patrick@gundla.ch")
+ :provided   (tee)
+ :keywords   ("calendar")
+ :homepage   "http://levana.de/emacs/"
+ :commentary "\
+Just invoke M-x Tee and enter time 
+
+Todo: 
+* don't use message, put in modeline
+* nicer interface to different kinds of tea
+* i18n support??
+rename to tea.el
+
+(completing-read \"Zeit oder Teesorte eingeben: \"
+		 '((\"Schwarzer Tee\" 1)
+		   (\"Grüner Tee\" 2))
+		 )")

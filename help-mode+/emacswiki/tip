@@ -1,0 +1,25 @@
+(:summary    "Extensions to `help-mode.el'"
+ :created    "20041106"
+ :updated    "20100115"
+ :license    "GPL-2"
+ :authors    (("Drew Adams"))
+ :maintainer ("Drew Adams")
+ :provided   (help-mode+)
+ :required   ((("emacs" help-mode)))
+ :keywords   ("help")
+ :homepage   "http://www.emacswiki.org/HelpModePlus"
+ :wikipage   "http://www.emacswiki.org/HelpModePlus"
+ :commentary "\
+Extensions to `help-mode.el'
+
+
+ ***** NOTE: The following functions defined in `help-mode.el'
+             have been REDEFINED HERE:
+
+ `help-mode'       - If `one-window-p', then delete Help frame.
+ `help-xref-on-pp' - Library names are buttonized.
+
+
+ Put this in your initialization file (`~/.emacs'):
+
+   (require 'help-mode+)")

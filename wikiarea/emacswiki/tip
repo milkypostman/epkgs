@@ -1,0 +1,44 @@
+(:summary    "Interface to the Emacs Wiki's Elisp area"
+ :created    "2002"
+ :updated    "2002"
+ :license    "GPL-2"
+ :authors    (("Edward O'Connor" . "ted@oconnor.cx"))
+ :maintainer ("Edward O'Connor" . "ted@oconnor.cx")
+ :provided   (wikiarea)
+ :required   ((("emacs" overlay pp)
+	       ("http-emacs" http-get)))
+ :keywords   ("convenience")
+ :commentary "\
+Hey there.
+
+The Emacs Wiki (http://www.emacswiki.org/) is just about the
+coolest thing ever.
+
+Here's some code to help you keep up with all of the Elisp in
+the Emacs Wiki's Elisp area, which lives here:
+		 http://www.emacswiki.org/elisp/
+
+Basically, the idea is that you make a directory in which you
+keep elisp files from the emacs wiki. This is
+\"~/elisp/from-the-emacs-wiki/\" by default. You add this to your
+`load-path'.
+
+Assuming this file is also in your `load-path' somewhere, you
+want to (require 'wikiarea) in your ~/.emacs or some such. Now,
+M-x wikiarea RET should pull up a *WikiArea* buffer in which a
+list of files should appear. Hitting RET on a new or updated
+file will download it to your `wikiarea-managed-directory',
+while hitting RET on an up-to-date file will visit it (if it
+exists). C-u RET will always download a new copy of the file.
+
+You might want to seed your `wikiarea-managed-directory' by
+grabbing the Elisp area tarball from:
+	      http://www.emacswiki.org/elisp.tar.gz
+
+The code uses a cache of the last file info from the website
+instead of looking at your files' modification times. It should
+probably do the latter. It also relies on Alex's current HTML
+formatting, as well as his most excellent `http-get.el', also
+available in the wiki's lisp area. Thanks to Tom Pierce
+<tom@pierceport.com> for the patch adding `http-get.el' support
+& other enhancements.")

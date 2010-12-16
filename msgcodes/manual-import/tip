@@ -1,0 +1,33 @@
+(:summary    "Common and rare Usenet message \"encodings\""
+ :created    "2003"
+ :updated    "2004"
+ :license    "GPL-2"
+ :authors    (("Michael Schierl" . "schierlm-public@gmx.de"))
+ :maintainer ("Michael Schierl" . "schierlm-public@gmx.de")
+ :provided   (msgcodes)
+ :required   ((("emacs" cl)))
+ :keywords   ("usenet" "codes" "kenny" "morse" "hex" "reverse")
+ :commentary "\
+provides convenience functions for different \"encodings\" used in
+e-mails and usenet articles.
+
+for GNU emacs 21
+
+Installation:
+
+load (or autoload) this file, and run (msgcode-init-keys)
+to bind it to the default keys (C-c m ...). Alternatively, run
+(msgcode-init-keymap) and bind any key to `msgcode-map'.
+
+This will provide the following keys:
+
+C-c m m              `msgcode-morse-autocode'
+C-c m <           `msgcode-backwards-region'
+C-c m n              `msgcode-n-ary-autocode'
+C-c m k              `msgcode-kenny-autocode'
+C-c m r              `msgcode-rot13-region'
+C-c m b              `msgcode-base64-autocode'
+C-c m h              `msgcode-hex-autocode'
+
+Note that hex, backwards and n-ary encoding use the prefix
+argument.  See the docstrings for details.")

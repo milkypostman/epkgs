@@ -1,0 +1,13 @@
+(:summary    "Smart Mark for GNU Emacs"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Brian Jiang" . "brianjcj@gmail.com"))
+ :maintainer ("Brian Jiang" . "brianjcj@gmail.com")
+ :provided   (smart-mark)
+ :required   ((("emacs" sgml-mode thingatpt)))
+ :keywords   ("convenience")
+ :homepage   "https://github.com/brianjcj/smart-mark"
+ :commentary "\
+Simulate some vim command. Mark context in the (), <>, [], \"\", '', html tag,
+mark line, mark....")

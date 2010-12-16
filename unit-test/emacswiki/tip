@@ -1,0 +1,54 @@
+(:summary    "Run unit tests from Emacs with visual feedback"
+ :license    "GPL-2"
+ :authors    (("Mark Triggs" . "mark@dishevelled.net"))
+ :maintainer ("Mark Triggs" . "mark@dishevelled.net")
+ :provided   (unit-test)
+ :commentary "\
+This code displays the results of unit tests with a small image in the
+mode line.  To use this code, bind the functions `run-unit-tests',
+`open-unit-test-file' and `set-unit-test-command' to convenient keys
+with something like:
+
+  (define-key global-map (kbd \"C-c t\") 'run-unit-tests)
+  (define-key global-map (kbd \"C-c s\") 'set-unit-test-command)
+  (define-key global-map (kbd \"C-c o\") 'open-unit-test-file)
+
+You will need to define a value for `unit-test-command' in any buffer you
+are interested in running tests from.  This should be a function that does
+whatever is necessary to run your unit tests, and returns:
+
+  * nil if some tests failed.
+  * `handled' if the unit-test-command will update the mode line itself
+    (using `show-test-status' as described below) at some later time.
+  * any other non-nil value if all tests passed.
+
+The `handled' case is intended to allow you to use asynchronous commands to
+run your unit tests.  To signal the test results, the handler should
+evaluate either (show-test-status 'passed) or (show-test-status 'failed).
+
+In the simplest case a test function might look like:
+
+  (setq unit-test-command (lambda () (zerop (shell-command \"make test\"))))
+
+
+To set a single command for a whole directory tree, you might use something
+like:
+
+  (add-hook 'find-file-hook 'apply-project-settings)
+
+  (defun apply-project-settings ()
+    (let ((dir (expand-file-name default-directory)))
+      (cond ((string-match (expand-file-name \"~/projects/some-project\") dir)
+             (setq unit-test-command
+                   (lambda ()
+                     (let ((status (shell-command
+                                    \"cd ~/projects/some-project; make\")))
+                       (cond ((equal status 0)
+                              (message \"All tests passed\")
+                              t)
+                             (t (message \"Some tests failed\")
+                                nil))))))
+            ...)))
+
+where running \"make\" is assumed to run all unit tests and return an error
+status indicating success or failure.")

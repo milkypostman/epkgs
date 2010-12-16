@@ -1,0 +1,6 @@
+(:summary    "Assistance for creating HTML from LaTeX documents"
+ :updated    "20050224"
+ :license    "GPL-2"
+ :provided   (html-from-latex)
+ :required   ((("replace-regexp-list" replace-regexp-list)))
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/webstuff/")

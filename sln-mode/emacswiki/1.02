@@ -1,0 +1,43 @@
+(:summary    "Create a project-buffer using sln file"
+ :license    "GPL-2"
+ :authors    (("Cedric Lallain" . "kandjar76@hotmail.com"))
+ :maintainer ("Cedric Lallain" . "kandjar76@hotmail.com")
+ :provided   (sln-mode)
+ :required   ((("emacs" cl)
+	       ("project-buffer-mode" project-buffer-mode)))
+ :keywords   ("project" "buffer" "msvc" "sln" "vcproj" "viewer")
+ :homepage   "http://www.emacswiki.org/SlnMode"
+ :wikipage   "http://www.emacswiki.org/SlnMode"
+ :commentary "\
+This is an add-on library for project-buffer-mode
+
+This library provides a function to create a project-buffer
+extracting the project information from a SLN file.
+
+To install it: just add the following lines to your init file:
+  (autoload 'find-sln \"sln-mode\")
+
+find-sln is the command to execute to open a 'sln project'.
+
+Then check the project-buffer-mode for more documentation about
+this mode.
+
+
+Note about the build/clean/run/debug actions:
+
+The command line are different between a 2005 and a 2008 project;
+by default it will use the 2005 configuration mode; use the prefix
+argument to switch to the 2008 mode.
+
+-------
+
+Extra note: 
+
+It doesn't currently support modifying the SLN file. It's currently
+just a 'viewer'.  Note that it doens't have to stay that way if
+people really need this feature. ;-)
+
+However it is possible to save the project as project-buffer
+project files and reload it from there.
+
+-------")

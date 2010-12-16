@@ -1,0 +1,20 @@
+(:summary    "Emacs lisp extensions for gnus' eforms"
+ :created    "1999"
+ :updated    "1999"
+ :license    "GPL-2"
+ :authors    (("Tom Breton" . "tehom@localhost"))
+ :maintainer ("Tom Breton" . "tehom@localhost")
+ :provided   (tehom-1)
+ :required   ((("emacs" gnus-eform gnus-util)))
+ :keywords   ("extensions")
+ :homepage   "www.panix.com/~tehom/"
+ :commentary "\
+tehom-edit-form is a generalization of edit-form (Which is very
+cool; thanks Lars)
+
+This requires gnus-eform and gnus-util.  
+
+Known Bugs:
+
+Help documentation is the gnus-eform's original, not this
+package's.")

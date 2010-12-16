@@ -1,0 +1,43 @@
+(:summary    "Manage a log file per file for version control"
+ :created    "1997"
+ :updated    "19970302"
+ :license    "GPL-2"
+ :authors    (("Frederic Lepied" . "frederic.lepied@sugix.frmug.org"))
+ :maintainer ("Frederic Lepied" . "frederic.lepied@sugix.frmug.org")
+ :provided   (file-log)
+ :required   ((("emacs" add-log)))
+ :keywords   ("maint" "vc" "cvs")
+ :commentary "\
+These simple functions  let you add  log entries for files you edit
+as soon as you want and then insert your log entries in the comment
+buffer  when you commit your  changes via the version control tools
+(vc or cvs).
+
+The entries are  stored in files with a  .flog extension. ie. for a
+file called  foo.bar the entries  will be in foo.bar.flog. When the
+commit is done the corresponding files are deleted.
+
+To install add this line to your .emacs or to the
+site-start.el file :
+
+(require 'file-log)
+
+You can bind the command using the following declarations for example :
+
+(define-key ctl-x-map \"l\" 'flog-add-entry)
+(define-key ctl-x-4-map \"l\" 'flog-add-entry-other-window)
+(define-key ctl-x-5-map \"l\" 'flog-add-entry-other-frame)
+
+and to add an entry in the Tools menu :
+
+(define-key menu-bar-tools-menu [separator-print]
+  '(\"--\"))
+(define-key menu-bar-tools-menu [flog-add-entry]
+ '(\"Add file log entry\" . flog-add-entry))
+
+To insert an entry use the following functions :
+	o flog-add-entry [C-x l]
+	o flog-add-entry-other-window [C-x 4 l]
+	o flog-add-entry-other-frame [C-x 5 l]
+
+Dependencies")

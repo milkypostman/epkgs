@@ -1,0 +1,7 @@
+(:summary    "Lecture de news dacode"
+ :license    "GPL-2"
+ :authors    (("Alexandre Brillant" . "abrillant@wanadoo.fr"))
+ :maintainer ("Alexandre Brillant" . "abrillant@wanadoo.fr")
+ :provided   (dacode)
+ :required   (nil
+	      (("emacs" easymenu))))

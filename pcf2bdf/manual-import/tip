@@ -1,0 +1,14 @@
+(:summary    "View .pcf compiled font files as bdf"
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-3"
+ :authors    (("Kevin Ryde" . "user42@zip.com.au"))
+ :maintainer ("Kevin Ryde" . "user42@zip.com.au")
+ :provided   (pcf2bdf)
+ :keywords   ("data")
+ :wikipage   "http://www.emacswiki.org/Pcf2Bdf"
+ :commentary "\
+This is a bit of fun running the pcf2bdf program on .pcf font files to
+see bdf source.  The main aim is to see sizes, comments, copyright
+notice, etc, but cute use of `format-alist' in fact allows saving, even
+if you almost certainly won't want to do that.")

@@ -1,0 +1,15 @@
+(:summary    "A collaborative editing framework for Emacs"
+ :created    "2008"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Jan Moringen" . "scymtym@users.sourceforge.net"))
+ :maintainer ("Jan Moringen" . "scymtym@users.sourceforge.net")
+ :provided   (adopted adopted-compound adopted-delete adopted-insert adopted-nop adopted-operation jupiter jupiter-compound jupiter-delete jupiter-insert jupiter-nop jupiter-operation rudel rudel-backend rudel-chat rudel-color rudel-compat rudel-debug rudel-display rudel-errors rudel-hooks rudel-icons rudel-infinote rudel-infinote-client rudel-infinote-display rudel-infinote-document rudel-infinote-errors rudel-infinote-group rudel-infinote-group-directory rudel-infinote-group-document rudel-infinote-group-text-document rudel-infinote-node rudel-infinote-node-directory rudel-infinote-state rudel-infinote-text-document rudel-infinote-user rudel-infinote-util rudel-interactive rudel-mode rudel-obby rudel-obby-client rudel-obby-debug rudel-obby-display rudel-obby-errors rudel-obby-server rudel-obby-state rudel-obby-util rudel-operations rudel-operators rudel-overlay rudel-protocol rudel-session-initiation rudel-socket rudel-speedbar rudel-state-machine rudel-telepathy rudel-tls rudel-transport rudel-transport-util rudel-util rudel-wave rudel-xml rudel-xmpp rudel-xmpp-debug rudel-xmpp-sasl rudel-xmpp-state rudel-xmpp-tls rudel-xmpp-tunnel rudel-xmpp-util rudel-zeroconf)
+ :required   ((("emacs" cl custom data-debug easy-mmode easymenu eieio eieio-base eieio-datadebug eieio-speedbar format-spec image sasl speedbar warnings xml zeroconf)))
+ :keywords   ("rudel" "collaboration")
+ :homepage   "http://rudel.sourceforge.net/"
+ :wikipage   "http://www.emacswiki.org/Rudel"
+ :commentary "\
+Rudel is a framework for collaborative editing in Emacs.  Its
+architecture allows communication with arbitrary collaborative
+editors.")

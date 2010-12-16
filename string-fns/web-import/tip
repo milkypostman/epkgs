@@ -1,0 +1,8 @@
+(:summary    "An assortment of string-manipulation functions"
+ :created    "1991"
+ :updated    "20061222"
+ :license    "GPL-2"
+ :authors    (("Noah Friedman" . "friedman@splode.com"))
+ :maintainer (nil . "friedman@splode.com")
+ :provided   (string-fns)
+ :homepage   "ftp://ftp.splode.com/pub/users/friedman/emacs-lisp/")

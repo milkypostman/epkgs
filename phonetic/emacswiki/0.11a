@@ -1,0 +1,6 @@
+(:summary    "Phonetize (Alpha, Bravo, Charlie...) the region"
+ :created    "2001"
+ :updated    "2001"
+ :license    "GPL-2"
+ :provided   (phonetic)
+ :keywords   ("alphabet" "phonetic" "spell"))

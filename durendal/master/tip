@@ -1,0 +1,23 @@
+(:summary    "A bucket of tricks for Clojure and Slime"
+ :created    "20100813"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Phil Hagelberg"))
+ :maintainer ("Phil Hagelberg")
+ :provided   (durendal)
+ :required   ((("clojure-mode" clojure-mode)
+	       ("paredit" paredit)
+	       ("slime" slime slime-repl)))
+ :keywords   ("lisp" "clojure" "slime")
+ :homepage   "https://github.com/technomancy/durendal"
+ :commentary "\
+\"Count Roland smites upon the marble stone;
+I cannot tell you how he hewed it and smote;
+Yet the blade breaks not nor splinters, though it groans;
+Upward to heaven it rebounds from the blow.\"
+--From The Song of Roland
+(Translated by Dorothy Sayers, Viking Penguin, NY, NY, 1957)
+
+Durendal is a bucket of tricks for Clojure that are too
+implementation-specific to go in Slime proper but too fancy to go
+in clojure-mode itself.")

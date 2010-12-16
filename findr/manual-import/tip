@@ -1,0 +1,10 @@
+(:summary    "Breadth-first file-finding facility for (X)Emacs"
+ :created    "19990727"
+ :updated    "1999"
+ :license    "GPL-2"
+ :authors    (("David Bakhash" . "cadet@bu.edu"))
+ :maintainer ("David Bakhash" . "cadet@bu.edu")
+ :provided   (findr)
+ :required   ((("emacs" cl)))
+ :keywords   ("files")
+ :wikipage   "http://www.emacswiki.org/FindrPackage")

@@ -1,0 +1,25 @@
+(:summary    "Nroff comment prefixes for filladapt"
+ :created    "2007"
+ :updated    "2007"
+ :license    "GPL-3"
+ :authors    (("Kevin Ryde" . "user42@zip.com.au"))
+ :maintainer ("Kevin Ryde" . "user42@zip.com.au")
+ :provided   (nroff-filladapt)
+ :required   ((("filladapt" filladapt)))
+ :keywords   ("wp")
+ :commentary "\
+This is a spot of code to help filladapt work with the various possible
+nroff comment prefixes, such as \\\" .\\\" and '''.  See the docstring in
+`nroff-filladapt-setups' below for the details.
+
+Install
+
+Put nroff-filladapt.el somewhere in your load-path and add to your .emacs
+
+    (autoload 'nroff-filladapt-setups \"nroff-filladapt\")
+    (add-hook 'nroff-mode-hook 'nroff-filladapt-setups)
+
+You should enable filladapt separately.  If you want it on by default
+then
+
+    (add-hook 'nroff-mode-hook 'turn-on-filladapt-mode)")

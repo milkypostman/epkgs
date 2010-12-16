@@ -1,0 +1,18 @@
+(:summary    "Emacs information manager"
+ :created    "2002"
+ :updated    "2010"
+ :license    "GPL-2"
+ :authors    (("Juri Linkov" . "juri@jurta.org"))
+ :maintainer ("Juri Linkov" . "juri@jurta.org")
+ :provided   (ee ee-autoloads ee-bbdb ee-buffers ee-commands ee-customize ee-datafile ee-dired ee-dselect ee-edb ee-ell ee-example ee-fields ee-finder ee-gnus ee-history ee-imenu ee-info ee-marks ee-menubar ee-outline ee-processes ee-programs ee-ps ee-tags ee-textfile ee-variables ee-views ee-windows)
+ :required   ((("bbdb" bbdb-autoloads)
+	       ("edb" database)
+	       ("emacs" add-log cl cus-edit etags finder gnus goto-addr imenu info outline overlay tmm)
+	       (nil db-summary)))
+ :keywords   ("ee" "convenience" "tools" "outlines")
+ :homepage   "http://www.jurta.org/en/emacs/ee/"
+ :wikipage   "http://www.emacswiki.org/CategorizingInformationManager"
+ :commentary "\
+This file is the core of the ee package.
+
+See the file README and documentation for more information.")

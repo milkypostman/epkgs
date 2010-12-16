@@ -1,0 +1,31 @@
+(:summary    "A mode to keep a list of easily searchable quotes"
+ :created    "2003"
+ :updated    "20060508"
+ :license    "GPL-2"
+ :authors    (("Jay Belanger" . "belanger@truman.edu"))
+ :maintainer ("Jay Belanger" . "belanger@truman.edu")
+ :provided   (quotes)
+ :homepage   "http://vh213601.truman.edu/~belanger/emacs.html"
+ :wikipage   "http://www.emacswiki.org/Quotes"
+ :commentary "\
+Quick Start:
+
+Unzip  the file  Quotes.gz into  ~/.quotes/ (both  of these  are customiz-
+able).  Quotes.gz is currently available at:
+
+  ftp://vh213601.truman.edu/pub/Quotes/Quotes.gz
+
+Then load this file, and start quotes with M-x quotes.
+
+More generally, place this file somewhere in your `load-path', and add the
+following to your `.emacs' (or otherwise arrange to have it evaluated):
+
+ (autoload 'quotes-mode \"quotes\" \"A mode for keeping quotes.\" t)
+
+ (autoload 'quotes \"quotes\"  \"A command to start quotes.\" t)
+
+The `quotes-mode' description has more information.
+
+This is based on Paul Davis's rolo.el
+
+Code")

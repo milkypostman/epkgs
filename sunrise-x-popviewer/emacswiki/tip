@@ -1,0 +1,44 @@
+(:summary    "Floating viewer window for the Sunrise Commander"
+ :created    "20080820"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("José Alfredo Romero L." . "escherdragon@gmail.com"))
+ :maintainer ("José Alfredo Romero L." . "escherdragon@gmail.com")
+ :provided   (sunrise-x-popviewer)
+ :required   ((("sunrise-commander" sunrise-commander)))
+ :keywords   ("sunrise" "commander" "files" "manager" "accessibility" "viewer")
+ :commentary "\
+This extension redefines several Sunrise Commander functions in order to make
+the viewer window \"float\", i.e. instead of having a dedicated window  sitting
+under  the  panes  all  the  time, a new frame is displayed whenever the user
+requests to view a file (by pressing \"o\" or \"v\") or to open a command line in
+the current directory.
+
+WARNING:  This  code and the Buttons extension (sunrise-x-buttons) do NOT mix
+together, if you're using the Buttons extension remove  it  first  from  your
+.emacs file.
+
+This is version 1 $Rev: 315 $ of the Sunrise Commander PopViewer Extension.
+
+This  piece  of code is still in alpha stage. If you find it useful and think
+you may contribute to it with suggestions of even more code,  please  let  me
+know  by sending a message to the comp.emacs newsgroup.
+
+Installation and Usage:
+
+1) Put this file somewhere in your emacs load-path.
+
+2)  If  you  are  currently  using the Buttons extension (sunrise-x-buttons),
+remove it first from your .emacs file.
+
+2)  Add  a  (require 'sunrise-x-popviewer)   expression  to  your .emacs file
+somewhere after the (require 'sunrise-commander) one.
+
+3) Evaluate the new expression, or reload your .emacs file, or restart emacs.
+
+4)  The  next  time  you invoke the Sunrise Commander, only two panes will be
+displayed. If you press o (or v) on a file inside any of  them,  it  will  be
+displayed  in  a  new  frame.  If  you  press C-c t to open a terminal in the
+current directory, it'll be opened in a new frame too.
+
+5) Enjoy ;-)")

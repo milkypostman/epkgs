@@ -1,0 +1,5 @@
+(:summary    "Expand and remove LaTeXery from a file"
+ :updated    "20070312"
+ :license    "GPL-2"
+ :provided   (delatex)
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/editing/")

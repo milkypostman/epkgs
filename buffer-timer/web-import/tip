@@ -1,0 +1,6 @@
+(:created    "2004"
+ :updated    "2004"
+ :license    "GPL-2"
+ :provided   (buffer-timer)
+ :required   ((("emacs" gnus-spec)))
+ :homepage   "http://www.hardakers.net/elisp/")

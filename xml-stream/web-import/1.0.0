@@ -1,0 +1,34 @@
+(:summary    "Simple XML stream support for Emacs"
+ :created    "2002"
+ :updated    "2002"
+ :license    "GPL-2"
+ :authors    (("Edward O'Connor" . "ted@oconnor.cx"))
+ :maintainer ("Edward O'Connor" . "ted@oconnor.cx")
+ :provided   (xml-stream)
+ :required   ((("emacs" xml)
+	       ("xml-event" xml-event)))
+ :keywords   ("comm" "tools" "processes")
+ :homepage   "http://edward.oconnor.cx/elisp/"
+ :commentary "\
+See <URL:http://etherx.jabber.org/streams/> for more about simple
+XML streams.
+
+Generally speaking, elements directly under your <stream:stream/>
+should be reasonably small.
+
+Sample usage:
+
+(require 'xml-stream)
+
+(defun my-xs-callback (thingy &rest args) ...)
+
+(setq my-xs-stream
+      (xml-stream-open-network-stream \"Hello\" \"*hello*\"
+                                      \"floobin.cx\" 4732
+                                      '((xmlns . \"hello\"))
+                                      'my-xs-callback
+                                      arg1 arg2 ... argN)
+...
+(xml-stream-send my-xs-stream '(hello nil \"world\"))
+...
+(xml-stream-close my-xs-stream)")

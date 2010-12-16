@@ -1,0 +1,17 @@
+(:summary    "Top of code common to both Elisp and CL rtest"
+ :created    "2000"
+ :updated    "2000"
+ :license    "GPL-2"
+ :authors    (("Tom Breton" . "tob@world.std.com"))
+ :maintainer ("Tom Breton" . "tob@world.std.com")
+ :provided   (pattern-destructure pattern-deval pattern-plus pattern-walkbind rtest-cl-entry rtest-common rtest-compat rtest-edit rtest-entry rtest-error rtest-field rtest-format rtest-grade rtest-htmlify rtest-inherit rtest-knownbuf rtest-parse rtest-plus rtest-probe rtest-report rtest-suite rtest-tools rtest-visible)
+ :required   ((("arrange" arrange)
+	       ("caselet" caselet)
+	       ("emacs" cl hideshow pp reporter)
+	       ("tehom-cl" tehom-cl)
+	       ("tehom-font-lock" tehom-font-lock)
+	       ("tehom-inflisp" tehom-inflisp)))
+ :keywords   ("extensions" "lisp")
+ :homepage   "http://www.panix.com/~tehom/"
+ :commentary "\
+See the rtest docs")

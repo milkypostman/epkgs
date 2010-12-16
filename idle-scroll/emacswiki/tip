@@ -1,0 +1,9 @@
+(:summary    "Scroll down a line when Emacs is idle"
+ :created    "2003"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("Alex Schroeder" . "alex@gnu.org"))
+ :maintainer ("Alex Schroeder" . "alex@gnu.org")
+ :provided   (idle-scroll)
+ :commentary "\
+Run M-x idle-scroll-mode to automatically scroll down.")

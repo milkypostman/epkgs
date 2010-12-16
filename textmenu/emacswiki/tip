@@ -1,0 +1,11 @@
+(:summary    "Alternate text mode access to menu-bar"
+ :created    "2001"
+ :updated    "2001"
+ :license    "GPL-2"
+ :authors    (("Alex Schroeder" . "alex@gnu.org"))
+ :maintainer ("Alex Schroeder" . "alex@gnu.org")
+ :provided   (textmenu)
+ :required   ((("emacs" cl overlay tmm)))
+ :keywords   ("menu")
+ :homepage   "http://www.emacswiki.org/TextMenu"
+ :wikipage   "http://www.emacswiki.org/TextMenu")

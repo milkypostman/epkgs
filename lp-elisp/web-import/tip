@@ -1,0 +1,22 @@
+(:summary    "Literate Programming in Emacs Lisp"
+ :created    "1997"
+ :updated    "2002"
+ :license    "GPL-2"
+ :authors    (("Edward O'Connor" . "ted@oconnor.cx"))
+ :maintainer ("Edward O'Connor" . "ted@oconnor.cx")
+ :provided   (lp-elisp)
+ :required   ((("two-mode-mode" two-mode-mode)))
+ :homepage   "http://edward.oconnor.cx/elisp/"
+ :commentary "\
+At one time, my .emacs file was a literate program made with this
+poor-man's literate programming system for Emacs Lisp. It uses
+\\davidw's  `two-mode-mode.el' to allow us to edit the files
+using both \\LaTeX\\ and  `emacs-lisp' major modes.
+
+I've since switched to using \\texttt `noweb', and I recommend that you do
+the same.
+
+If you have the elisp but don't have the LaTeX source, you can find it
+here:
+
+        \\selfhref `http://edward.oconnor.cx/elisp/lp-elisp.tex'")

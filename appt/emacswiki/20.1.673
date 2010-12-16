@@ -1,0 +1,160 @@
+(:summary    "Notification of appointments from your diary file"
+ :created    "19950803"
+ :updated    "20100115"
+ :license    "GPL-2"
+ :authors    (("Neil Mager" . "neilm@juliet.ll.mit.edu")
+	      ("Drew Adams"))
+ :maintainer ("Drew Adams")
+ :provided   (appt)
+ :required   ((("emacs" calendar cl))
+	      (("calendar+" calendar+)
+	       ("frame-cmds" frame-cmds)
+	       ("misc-fns" misc-fns)))
+ :keywords   ("calendar" "local")
+ :commentary "\
+Notification of today's appointments from your diary file.
+
+Note: This code is quite old, and is likely obsolete now.  You
+      might find it useful in some way to mine - or not. ;-)
+
+-------------------------------------------------------------------
+
+This is an \"enhanced\" version of `appt.el' with modifications by
+Drew Adams.  The original code was written by Neil Mager
+<neilm@juliet.ll.mit.edu>.  See description of differences from the
+original GNU (Mager) version, below.
+
+Visible and/or audible notification of today's appointments from
+your diary file (variable `diary-file' (see file `calendar+.el').
+
+Reminder messages may optionally be displayed in the mode line, in
+the message area, or in a separate buffer.
+
+Variable `appt-message-warning-time' determines how much notice is
+given before each appointment reminder.  Variable `appt-checking-p'
+specifies whether or not to notify you of pending appointments.
+
+In order to use this, you need to have a `diary-file' and invoke
+`calendar'.  The following should be in your `~/.emacs':
+
+(setq appt-checking-p t)
+(add-hook 'diary-hook 'appt-make-list)
+
+ This is an example of two reminders in your `diary-file':
+Monday
+  9:30am Coffee break
+ 12:00pm Lunch        
+
+With the above lines in files `~/.emacs' and `diary-file', the
+calendar and diary are displayed when you enter invoke `calendar',
+and your appointments list is automatically be created.  You are
+reminded before 9:30am about your coffee break and before noon to
+go to lunch.
+
+This appointments reminder facility works with a copy of today's
+appointments, gleaned from your diary (`diary-file').  It generally
+does not change the diary itself.  This copy, the appointments
+list, is called `appt-time-msg-list', and it is updated each time
+`appt-make-list' is called.  This is normally whenever the function
+`diary' is called (via `list-diary-entries', via `diary-hook').
+
+The function `appt-check' checks `appt-time-msg-list' periodically,
+and notifies you of upcoming appointments.
+
+You can add or delete appointment reminders from today's list with
+`appt-add' and `appt-delete'.  Such additions are normally *not*
+additions to the diary itself, but only to `appt-time-msg-list'.
+They concern today only, and they are *volatile*: they do not
+persist beyond your Emacs session.  Likewise, such deletions are
+*not* deletions from the diary itself (even if the diary was the
+source of the appointment for `appt-time-msg-list').
+
+An exception to this is the following: If you give a prefix
+argument to `appt-add', it will also add an entry to your diary for
+the appointment.  If the prefix is negative, the new diary entry is
+non-marking; otherwise, it is marking.
+
+The appointments list is recreated automatically at 12:01am (by a
+call to function `diary'), if Emacs is running at that time.
+
+If you change your diary file, the changes will not be taken into
+account by this reminder facility, unless you reexecute the
+function `diary' (`appt-make-list').  Remember, however, that
+reexecuting `diary' will reinitialize `appt-time-msg-list', wiping
+out any volatile changes you may have made via `appt-add' and
+`appt-delete'.
+
+You can change the way the appointment reminders window is created
+and deleted by setting the variables `appt-disp-window-function'
+and `appt-delete-window-function'.  For instance, these can be set
+to functions that display appointments in pop-up frames, which are
+lowered or iconified after `appt-display-interval' seconds.
+
+
+Main changes here from the original GNU version (Mager's):
+---------------------------------------------------------
+
+1. Added functions:
+   `appt', `appt-delete-past-appts', `appt-hide-reminders',
+   `appt-insert-anniversary-diary-entry',
+   `appt-insert-cyclic-diary-entry', `appt-insert-diary-entry',
+   `appt-insert-monthly-diary-entry',
+   `appt-insert-weekly-diary-entry',
+   `appt-insert-yearly-diary-entry', `appt-remind',
+   `appt-remove-past-appts', `clear-appointments',
+   `minutes-past-midnight', `reminders-mode', `save-reminders',
+   `show-reminders', `show-reminders-reminder'.
+2. Removed functions:
+   `appt-disp-window', `appt-delete-window',
+   `appt-select-lowest-window' (called only by `appt-disp-window').
+3. Variable renamings: `appt-issue-message' -> `appt-checking-p',
+   `appt-message-warning-time' -> `appt-msg-warning-time'.
+4. Added variables:
+   `appt-time+msg-regexp', `reminders-mode-map',
+   `view-appointments-initially'.
+5. Removed variable `appt-issue-message'.
+6. Variable `appt-disp-window-function' has default value
+   `appt-remind' (not `appt-disp-window').  Variable
+   `appt-delete-window-function' has default value
+   `appt-hide-reminders'(not `appt-delete-window').
+7. More flexibility in input time expressions
+   (`appt-time+msg-regexp').
+8. `appt-check':  
+   a. Remove past appointments first, even if not `appt-checking-p'.
+   b. Call `appt-delete-window-function' only if
+      `appt-display-duration' is a number.
+   c. Don't remove message when `min-to-app' = 0.
+   d. Show reminders only if only removed past appointments.
+   e. Even when there are no messages, update the buffer.
+   f. Fixed bug in calculation of appointment just before midnight.
+9. `appt-add':
+   a. With prefix arg, also adds appointment to diary.
+   b. New appointment must be later than now.
+   c. Calls `appt-disp-window-function' when done.
+10. `appt-delete': Calls `appt-disp-window-function' when done.
+11. `appt-make-list':
+   a. Add appointment help to mode line.
+   b. Sort diary entries (via `sort-diary-entries').
+   c. Remove past appointments from list.
+   d. Display appointments.
+
+ The following bindings are made here for mode `reminders-mode':
+
+   `C-c C-s'        `save-reminders'
+   `C-c d'          `clear-appointments'
+   `C-c i a'        `appt-insert-anniversary-diary-entry'
+   `C-c i c'        `appt-insert-cyclic-diary-entry'
+   `C-c i d'        `appt-insert-diary-entry'
+   `C-c i m'        `appt-insert-monthly-diary-entry'
+   `C-c i w'        `appt-insert-weekly-diary-entry'
+   `C-c i y'        `appt-insert-yearly-diary-entry'
+   `C-c j'          `appt-add'
+   `C-c k'          `appt-delete'
+   `C-c s'          `show-all-diary-entries'
+
+ The following bindings are made here for mode `calendar-mode'.
+ These commands are also added to the Diary menu bar menu.
+
+   `j'              `appt-add'
+   `k'              `appt-delete'
+   `r'              `appt-disp-window-function'")

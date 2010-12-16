@@ -1,0 +1,26 @@
+(:summary    "Navigation with marks on a ring of rings (torus)"
+ :created    "2002"
+ :updated    "2003"
+ :license    "GPL-2"
+ :provided   (mtorus)
+ :required   ((("emacs" cl timer)))
+ :keywords   ("bookmarks" "navigation" "tools" "extensions" "user")
+ :homepage   "http://www.skamphausen.de/cgi-bin/ska/mtorus"
+ :wikipage   "http://www.emacswiki.org/MTorus"
+ :commentary "\
+FIXMEs
+ - generic interface for special lists, because currently the
+   (only) special list (buffer list) behaviour is hard coded in a
+   way that's probably not sensible for lists like recent-files or
+   the like
+ - handling of invalid markers
+   -> (don't display, quietly discard?)
+   -> the correct while-loop which deletes invalid in
+   mtorus-jump-current-marker or mtorus-current-buffer
+   -> what happens when a buffer is reverted (or killed and
+   reopened)?
+MTorus on the Web:
+Main page:
+http://www.skamphausen.de/software/skamacs/mtorus.html
+German intro:
+http://www.skamphausen.de/xemacs/lisp/mtorus.html")

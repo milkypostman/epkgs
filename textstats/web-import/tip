@@ -1,0 +1,64 @@
+(:summary    "Show text statistics"
+ :created    "2001"
+ :updated    "2001"
+ :license    "GPL-2"
+ :provided   (textstats)
+ :required   ((("emacs" cl info overlay thingatpt timer)
+	       ("tellib" tellib)))
+ :keywords   ("text" "statistics" "word" "counting")
+ :homepage   "http://members.a1.net/t.link/filestats.html"
+ :commentary "\
+Put this file into your load path -- type \"\\C-h v load-path\" to
+find a suitable directory. Put
+
+(autoload 'textstats \"textstats\" \"Display text statistics\" t)
+
+into your startup file, which is probably called \"~/.emacs.el\".
+Invoke by typing \"M-x textstats\".
+
+The cursor will remain in your main window; the textstats window
+will disappear after a few seconds. In case this feature makes
+troubles, set textstats-auto-hide-secs to 0.
+
+Add your own definitions to the list 'textstats-list-optional'. See
+the documentation by typing \"\\C-h v textstats-list\". Examples:
+
+(add-to-list 'textstats-list-optional
+		   '((\"Scheme\" \"Lisp\" (lambda (buffer) (set-buffer buffer)
+						    (equal comment-start \";\")))
+			\"functions\" 
+			t
+			(lambda () (textstats-search-forward \"\\n(define\"))))
+
+Using the new format, this can be defined like this:
+(add-to-list 'textstats-list-optional
+	     '(:name \"vowels\"
+		     :how-many \"[aeiouAEIOU]\"
+		     :view (lambda (buffer unit result)
+			     (textstats-insert
+			      buffer nil
+			      (format \"Wow, %s %s!\" result unit)))))
+
+Example:
+Count words in LaTeX files using catdvi and wc:
+(add-to-list
+ 'textstats-list-optional
+ '(:name \"LaTeX Summary\"
+	 :mode \"LaTeX\"
+	 :accumulate nil
+	 :fun (lambda ()
+		(let* ((dvi (when buffer-file-name
+			      (concat (file-name-sans-extension buffer-file-name)
+				      \".dvi\"))))
+		   (when (and dvi (file-readable-p dvi))
+		    (shell-command-to-string
+		     (format \"catdvi %S | wc\" dvi)))))
+	 :view (lambda (buffer unit result)
+		 (let ((rl (car (read-from-string (concat \"(\" result \")\")))))
+		   (textstats-insert
+		    buffer nil
+		    (textstats-format-result
+		     \"CatDVI Words\"
+		     (nth 1 rl)
+		     (format \" (%s lines; %s chars)\"
+			     (nth 0 rl) (nth 2 rl))))))))")

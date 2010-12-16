@@ -1,0 +1,39 @@
+(:summary    "Cheezy scheme interpreter for emacs"
+ :created    "19970619"
+ :updated    "19970630"
+ :license    "GPL-2"
+ :authors    (("Noah Friedman" . "friedman@prep.ai.mit.edu"))
+ :maintainer (nil . "friedman@prep.ai.mit.edu")
+ :provided   (czscm)
+ :keywords   ("interpreters" "languages" "scheme" "lisp")
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
+ :commentary "\
+\"It's not merely cheezy, it's full-on spray-can cheez.\"
+
+To use this package, load it and run the command `czscm-initialize'.
+To evaluate scheme expressions within emacs lisp, use
+     (in-czscm <scheme expressions>)
+
+Some features of this implementation:
+   * lexical scope
+   * general tail-call elimination (not just tail recursion)
+   * first-class environments
+
+Not yet implemented:
+   * misc primitives and i/o routines
+   * continuations
+   * R4RS-conformant read/print routines
+   * exception handlers (including dynamic-wind)
+   * macros (let-syntax, etc.)
+   * compilation for a scheme VM
+   * debugging facilities
+
+Since this implementation does not yet have its own reader, the read
+syntax for characters, etc. match those of the underlying lisp, not R4RS
+Scheme.  For example, symbols are case-sensitive and symbols starting
+with '#' must be escaped with `\\' (e.g. `\\#t').
+
+Currently, the empty list is treated equivalently to the boolean false
+value.  This will be fixed eventually as various primitive functions
+(e.g. `null?') get rewritten so as not to return nil from the underlying
+emacs-lisp subr.")

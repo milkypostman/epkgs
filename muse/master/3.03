@@ -1,0 +1,25 @@
+(:summary    "An authoring and publishing tool for Emacs"
+ :created    "2004"
+ :updated    "2007"
+ :license    "GPL-2"
+ :authors    (("John Wiegley" . "johnw@gnu.org"))
+ :maintainer ("Michael Olson" . "mwolson@gnu.org")
+ :provided   (muse muse-backlink muse-blosxom muse-book muse-cite muse-colors muse-docbook muse-groff muse-html muse-http muse-import-docbook muse-import-latex muse-import-xml muse-init muse-journal muse-latex muse-latex2png muse-mathml muse-message muse-mode muse-nested-tags muse-poem muse-project muse-protocol-iw muse-protocols muse-publish muse-regexps muse-split muse-texinfo muse-wiki muse-xml muse-xml-common)
+ :required   ((("cgi" cgi)
+	       ("emacs" assoc cl compile cus-edit derived font-lock footnote info message pcomplete pp table texnfo-upd wid-edit xml)
+	       ("htmlize" htmlize)
+	       ("httpd" httpd)))
+ :keywords   ("hypermedia")
+ :homepage   "http://mwolson.org/projects/EmacsMuse.html"
+ :wikipage   "http://www.emacswiki.org/MuseMode"
+ :commentary "\
+Muse is a tool for easily authoring and publishing documents.  It
+allows for rapid prototyping of hyperlinked text, which may then be
+exported to multiple output formats -- such as HTML, LaTeX,
+Texinfo, etc.
+
+The markup rules used by Muse are intended to be very friendly to
+people familiar with Emacs.  See the included manual for more
+information.
+
+Contributors:")

@@ -1,0 +1,7 @@
+(:created    "20100626"
+ :license    "GPL-3"
+ :authors    (("James"))
+ :maintainer ("James")
+ :provided   (erc-extra-command-cl erc-extra-command-elisp erc-extra-commands-mode)
+ :required   ((("emacs" erc)))
+ :homepage   "https://github.com/nixeagle/erc-extra-commands")

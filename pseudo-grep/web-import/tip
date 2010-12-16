@@ -1,0 +1,5 @@
+(:summary    "Approximate replacement for grep, for machines which don't have it"
+ :updated    "20060327"
+ :license    "GPL-2"
+ :provided   (pseudo-grep)
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/file-handling/")

@@ -1,0 +1,6 @@
+(:created    "2010"
+ :updated    "2010"
+ :license    "GPL-2"
+ :provided   (ajc-java-complete ajc-java-complete-config)
+ :required   ((("auto-complete" auto-complete)))
+ :homepage   "https://github.com/jixiuf/ajc-java-complete")

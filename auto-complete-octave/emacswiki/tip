@@ -1,0 +1,14 @@
+(:created    "2009"
+ :updated    "20090714"
+ :license    "GPL-2"
+ :authors    (("coldnew"))
+ :maintainer ("coldnew")
+ :provided   (auto-complete-octave)
+ :required   ((("auto-complete" auto-complete)
+	       ("emacs" cl)))
+ :keywords   ("octave" "auto-complete")
+ :commentary "\
+This is for GNU Octave 3.2.0
+
+Put this file into your load-path and the following into your ~/.emacs:
+  (require 'auto-complete-octave)")

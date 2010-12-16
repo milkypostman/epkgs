@@ -1,0 +1,9 @@
+(:summary    "Providing a network interface"
+ :license    "GPL-2"
+ :authors    (("Cedric Lallain" . "kandjar76@hotmail.com"))
+ :maintainer ("Cedric Lallain" . "kandjar76@hotmail.com")
+ :provided   (tcp-client)
+ :required   ((("record-type" record-type)))
+ :keywords   ("tcp" "network" "connection" "client")
+ :homepage   "http://www.emacswiki.org/TcpClient"
+ :wikipage   "http://www.emacswiki.org/TcpClient")

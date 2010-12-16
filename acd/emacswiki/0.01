@@ -1,0 +1,9 @@
+(:summary    "A major mode to edit emboss acd files"
+ :created    "2007"
+ :updated    "2007"
+ :license    "GPL-2"
+ :authors    ((nil . "wenbinye@gmail.com"))
+ :maintainer (nil . "wenbinye@gmail.com")
+ :provided   (acd)
+ :required   ((("emacs" cl complete conf-mode tempo)))
+ :keywords   ("languages" "convenience"))

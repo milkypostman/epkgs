@@ -1,0 +1,5 @@
+(:created    "2008"
+ :updated    "2008"
+ :license    "GPL-3"
+ :provided   (rcirc-notify)
+ :wikipage   "http://www.emacswiki.org/rcircNotify")

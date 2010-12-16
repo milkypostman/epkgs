@@ -1,0 +1,30 @@
+(:summary    "Cycle through words, symbols and patterns"
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-2"
+ :authors    (("Nikolaj Schumacher" . "bugs@nschum.de"))
+ :maintainer ("Nikolaj Schumacher" . "bugs@nschum.de")
+ :provided   (rotate-text)
+ :required   ((("emacs" cl)))
+ :keywords   ("abbrev" "convenience" "matching")
+ :homepage   "http://nschum.de/src/emacs/rotate-text/"
+ :wikipage   "http://www.emacswiki.org/RotateText"
+ :commentary "\
+rotate-text allows you rotate to commonly interchanged text with a single
+keystroke.  For example, you can toggle between \"frame-width\" and
+\"frame-height\", between \"public\", \"protected\" and \"private\" and between
+\"variable1\", \"variable2\" through \"variableN\".
+
+Add the following to your .emacs:
+
+(add-to-list 'load-path \"/path/to/rotate-text\")
+(autoload 'rotate-text \"rotate-text\" nil t)
+(autoload 'rotate-text-backward \"rotate-text\" nil t)
+
+Customize the variables `rotate-text-patterns', `rotate-text-symbols' and
+`rotate-text-words'.  You can make buffer-local additions in
+`rotate-text-local-patterns', `rotate-text-local-symbols' and
+`rotate-text-local-words'.
+
+Use the commands `rotate-text' and `rotate-text-backward' to rotate the
+text.")

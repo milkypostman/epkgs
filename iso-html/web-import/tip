@@ -1,0 +1,5 @@
+(:summary    "Translating HTML to ISO-8859/1 while editing a file"
+ :created    "1994"
+ :updated    "19941027"
+ :license    "GPL"
+ :homepage   "http://www.ctan.org/tex-archive/support/iso-tex/")

@@ -1,0 +1,50 @@
+(:summary    "Translate text using Google Translate API"
+ :created    "2010"
+ :updated    "2010"
+ :authors    (("Andrey Torba" . "andrey.torba@gmail.com"))
+ :maintainer ("Andrey Torba" . "andrey.torba@gmail.com")
+ :provided   (google-translate)
+ :required   ((("emacs" json url)))
+ :keywords   ("convenience")
+ :homepage   "https://github.com/andreo/google-translator"
+ :commentary "\
+This is a library for rapid text translating
+using Google AJAX Language API 
+
+Learn all about Google AJAX Language API here:
+   <http://code.google.com/intl/en/apis/ajaxlanguage/>
+
+The latest version:
+ git://github.com/andreo/google-translator.git
+ http://github.com/andreo/google-translator.git
+
+There are two dependencies url.el and json.el.
+url.el is part of GNU Emacs.
+json.el is available here:
+  http://cvs.savannah.gnu.org/viewvc/*checkout*/emacs/lisp/json.el?root=emacs
+
+Usage:
+
+* (gt-detect-language \"Detect the language of this text\")
+  \"en\"
+
+* (gt-inteligent-translate \"Guess what i mean\")
+  \"Угадайте, что я имею в виду\"
+
+* (gt-translate \"Hello world!\" \"en\" \"ru\")
+  \"Привет мир!\"
+
+* (gt-translate \"Hello world!\" \"en\" \"uk\")
+  \"Привіт світ!\"
+
+* (gt-translate \"Hello world!\" \"en\" \"de\")
+  \"Hallo Welt!\"
+
+* (gt-translate \"Hello world!\" \"en\" \"fr\")
+  \"Bonjour le monde!\"
+
+* customize guess language table:
+  (setq gt-guess-language-table
+        (list 'en 'ru
+              'ru 'en
+              'uk 'en))")

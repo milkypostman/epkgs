@@ -1,0 +1,54 @@
+(:summary    "Local variables for a directory tree"
+ :created    "2005"
+ :updated    "2006"
+ :license    "GPL-2"
+ :authors    (("Dave Love" . "fx@gnu.org"))
+ :maintainer ("Dave Love" . "fx@gnu.org")
+ :provided   (dir-locals)
+ :keywords   ("files")
+ :homepage   "http://www.loveshack.ukfsn.org/emacs/"
+ :commentary "\
+It can be useful to specify local variables directory-wide, e.g. to
+define CC mode styles consistently.  This library implements such a
+scheme, controlled by the global minor mode `dir-locals-mode'.
+
+Place a file named `.emacs-locals' (or the value of
+`dir-locals-file-name') in the directory root.  This should specify
+local variables in the usual way.  The values it sets are inherited
+when a file in the directory tree is found.  Local variables
+specified in the found file override the directory-wide ones.
+
+However, `eval' pseudo-variables specified in the file are
+evaluated (assuming `enable-local-eval' is true) _before_ any
+directory-wide processing, and they are evaluated in a scratch
+buffer, so that they are only useful for side effects on local
+variables.  `mode' pseudo-variables which specify minor modes
+toggle those modes for files within the directory.  If
+.emacs-locals specifies a major mode, it doesn't propagate, but any
+local variables and minor modes its hook sets will; thus it should
+normally not specify a major mode.  The `coding' pseudo-variable
+will not propagate from .emacs-locals.
+
+For example, with dir-locals mode on, placing this in .emacs-locals
+at the top-level of the Linux source tree would set the C
+indentation style appropriately for files within the tree:
+
+  Local variables:
+  c-file-style: \"linux\"
+  End:
+
+(and ignore the stupid remarks in Documentation/CodingStyle).
+
+Another possible use is, say, setting change-log parameters in
+different trees for which the Emacs 22 development source broke use
+of change-log-mode-hook.
+
+NB:  This doesn't work with some versions of the Emacs 22 codebase
+which changed the way hack-local-variables-hook is run, but the
+change has been reverted.
+
+Another, less clean, implementation of this sort of thing was
+posted to gnu-emacs-sources as dirvals.el by Benjamin Rutt
+<rutt.4@osu.edu>, June 2006, based on work by Matt Armstrong
+<matt@lickey.com>.  It uses a different format for the equivalent
+of .emacs-locals.")

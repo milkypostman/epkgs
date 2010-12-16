@@ -1,0 +1,52 @@
+(:summary    "Emacs interface to the Online Dictionary Database"
+ :license    "GPL-2"
+ :authors    (("Eric Marsden" . "emarsden@laas.fr"))
+ :maintainer ("Eric Marsden" . "emarsden@laas.fr")
+ :provided   (dict-web)
+ :required   ((("emacs" browse-url cl easymenu url)
+	       ("w3" w3-forms)))
+ :keywords   ("dictionary")
+ :homepage   "http://emarsden.chez.com/downloads/"
+ :wikipage   "http://www.emacswiki.org/DictWeb"
+ :commentary "\
+Overview ==========================================================
+
+This module allows you to access the Online Dictionary Database at
+dict.org. To use it, type `M-x dict', which will prompt you for a
+word or phrase to search for in the online dictionary (defaulting
+to the word under the cursor). In the resulting *dict* buffer you
+can press 'w' to make further calls to dict regarding the word
+under the cursor, and 'l' to cycle back through the history of word
+lookups (similar to Info mode). For words with multiple
+definitions, 'n' and 'p' take you respectively to the next and
+previous definition. SPC, DEL, < and > have standard scrolling
+behaviour. 's' and 'r' allow isearch and reverse isearch.
+
+If you wish definitions to be displayed in a dedicated frame, you
+might use the following in your ~/.emacs.el:
+
+   (push \"*dict*\" special-display-buffer-names)
+
+
+INSTALLATION =====================================================
+
+dict-web.el requires w3 (the Emacs web browser) to be installed. If
+you are a heavy user of this software you might consider using
+Torsten Hilbrich's dictionary package at
+<URL:http://www.in-berlin.de/User/myrkr/dictionary.html>, which
+allows you to connect to a local dictd server.
+
+Place this file somewhere in emacs' load-path, and byte-compile it
+(by pressing `B' in dired mode, for example). Then place a line
+such as
+
+   (autoload 'dict \"dict-web\"
+             \"Lookup a word or phrase in the Online Dictionary Database.\" t)
+
+in your ~/.emacs.el initialization file.
+
+
+Thanks to Andrew Dlugan <dlugan@physics.ubc.ca> for the extended
+face support, to Kai Grossjohan and Knut Wannheden for suggesting
+improvements, and to Les Schaffer for reporting a bug. David
+Masterson suggested adding a menu item.")

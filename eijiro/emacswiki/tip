@@ -1,0 +1,15 @@
+(:summary    "英辞郎をanything.elを使って検索する"
+ :created    "2010"
+ :updated    "20100326"
+ :license    "GPL-2"
+ :authors    (("rubikitch" . "rubikitch@ruby-lang.org"))
+ :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
+ :provided   (eijiro)
+ :required   ((("anything" anything anything-match-plugin)
+	       ("emacs" cl thingatpt)))
+ :keywords   ("languages" "data" "dictionary")
+ :commentary "\
+インターネットで販売されている最強の英和辞典・和英辞典である英辞郎を
+anything.elで検索する。
+
+http://www.eijiro.jp/ から購入する。")

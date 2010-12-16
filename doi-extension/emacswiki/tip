@@ -1,0 +1,25 @@
+(:summary    "Extension for doi.el"
+ :created    "20081213"
+ :updated    "20081213"
+ :license    "GPL-3"
+ :authors    ((nil . "andy stewart lazycat.manatee@gmail.com"))
+ :maintainer (nil . "andy stewart lazycat.manatee@gmail.com")
+ :provided   (doi-extension)
+ :required   ((("doi" doi)))
+ :keywords   ("doi")
+ :commentary "\
+Extension for doi.el
+
+
+Installation:
+
+Put doi-extension.el to your load-path.
+The load-path is usually ~/elisp/.
+It's set in your ~/.emacs like this:
+(add-to-list 'load-path (expand-file-name \"~/elisp\"))
+
+And the following to your ~/.emacs startup file.
+
+(require 'doi-extension)
+
+No need more.")

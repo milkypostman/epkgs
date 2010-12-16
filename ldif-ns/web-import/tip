@@ -1,0 +1,85 @@
+(:summary    "Convert name service records to LDIF records"
+ :created    "2004"
+ :updated    "2005"
+ :license    "GPL-2"
+ :authors    (("Dave Love" . "fx@gnu.org"))
+ :maintainer ("Dave Love" . "fx@gnu.org")
+ :provided   (ldif-ns)
+ :keywords   ("data")
+ :homepage   "http://www.loveshack.ukfsn.org/emacs/"
+ :commentary "\
+This package converts some types of name service records to LDIF
+format for loading into an LDAP server with the appropriate schema.
+
+Replaces the processing of /etc/passwd from the PADL migrationtools
+scripts, for instance.  PADL generates a single record for each
+entry.  This version assumes that account and person entries are
+separate, and makes ldif records as follows.  From:
+
+fb:*:11440:12229:F.Bloggs:/home/fb:/bin/csh
+
+`ldif-ns-passwd' generates:
+
+dn: uid=fb,ou=People,dc=dl,dc=ac,dc=uk
+objectClass: posixAccount
+objectClass: top
+objectClass: shadowAccount
+objectClass: account
+uid: fb
+cn: fb
+uidNumber: 11440
+gidNumber: 12229
+gecos: Fred Bloggs
+homeDirectory: /home/fb
+loginShell: /bin/csh
+cn: Fred Bloggs
+
+dn: cn=Fred Bloggs,ou=People,dc=dl,dc=ac,dc=uk
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: eduPerson
+cn: Fred Bloggs
+displayName: Fred Bloggs
+uid: fb
+sn: Bloggs
+initials: F
+givenName:Fred
+cn: F Bloggs
+
+
+Possibly the gecos field should be dissected for comma-separated
+fields.  Depending on the schema you use, you may need to adjust
+the way things are inserted into the buffer below in an obvious
+way.  My account records are under `People' for historical reasons
+-- I think as a result of migrationtools putting the combined
+account/person record there originally -- but they'd probably be
+better elsewhere; I think libnss_pam will still cope.
+
+There are also commands to process services and group databases,
+`ldif-ns-services' and `ldif-ns-group'.
+
+The commands create a buffer of the results, in LDIF mode, so you
+need the library ldap-mode.el.  Unless you're at Daresbury, you'll
+need at least to change `ldif-ns-root-dn', the root DN assumed to
+contain RDNs `Group' and `Services' and those for people and
+accounts, parameterized by `ldif-ns-person-rdn' and
+`ldif-ns-account-rdn' respectively.
+
+Here's an example of using it for a shell command, assuming this
+library and ldap-mode are found on load-path, probably via
+site-start.el.
+
+#!/bin/sh
+if [ $# -ne 2 -o \"x$1\" = x--help ]; then
+    echo \"Usage: `basename $0` <group input> <LDIF output>\" 2>&1
+    [ \"x$1\" = x--help ]; exit
+fi
+case $2 in
+    -) out=`mktemp`
+       trap \"rm -f \\\"$out\\\"\" EXIT ;;
+    *) out=$2 ;;
+esac
+emacs --batch --eval \"(progn (require 'ldif-ns) (ldif-ns-group-to-file \\\"$1\\\" \\\"$out\\\"))\"
+[ \"x$2\" = x- ] && cat \"$out\"")

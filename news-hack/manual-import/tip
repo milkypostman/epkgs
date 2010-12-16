@@ -1,0 +1,3 @@
+(:summary    "Create newsrc buffers for foreign groups"
+ :license    "GPL-2"
+ :provided   (news-hack))

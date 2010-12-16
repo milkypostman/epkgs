@@ -1,0 +1,20 @@
+(:summary    "BC code editing commands for Emacs"
+ :created    "2005"
+ :updated    "2005"
+ :license    "GPL-2"
+ :authors    (("Kumar Appaiah" . "akumar_nospam@ee.iitm.ac.in"))
+ :maintainer ("Kumar Appaiah" . "akumar_nospam@ee.iitm.ac.in")
+ :provided   (bc-mode)
+ :required   ((("emacs" cc-mode)))
+ :homepage   "http://www.emacswiki.org/BCMode"
+ :wikipage   "http://www.emacswiki.org/BCMode"
+ :commentary "\
+Sets up C-mode with support for BC. Any improvements needed?
+
+For autoload, ass the following lines to your .emacs:
+(autoload 'bc-mode \"bc-mode.el\" \"bc-mode\" t 'nil)
+(add-to-list 'auto-mode-alist '(\".bc\\\\'\" . bc-mode))
+(add-to-list 'interpreter-mode-alist '(\"bc\" . bc-mode))
+
+Kumar Appaiah akumar_NOSPAM@ee.iitm.ac.in
+Date: 27th June, 2005")

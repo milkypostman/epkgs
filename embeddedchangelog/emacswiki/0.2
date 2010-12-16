@@ -1,0 +1,22 @@
+(:summary    "Edit a change log embedded in a file"
+ :created    "20020112"
+ :updated    "2002"
+ :license    "GPL-2"
+ :authors    (("Michele Bini" . "mibin@libero.it"))
+ :maintainer ("Michele Bini" . "mibin@libero.it")
+ :provided   (embedded-changelog embeddedchangelog)
+ :required   ((("emacs" add-log)))
+ :keywords   ("tools")
+ :homepage   "http://www.emacswiki.org/EmbeddedChangelog"
+ :wikipage   "http://www.emacswiki.org/EmbeddedChangelog"
+ :commentary "\
+* Description
+
+This package allows you to add entries to an embedded change log
+like the one in this file.
+
+* Installation
+
+Add the following to your .emacs:
+(autoload 'embedded-changelog-add-entry
+\"/path/to/embeddedchangelog.el\" nil t)")

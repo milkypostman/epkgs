@@ -1,0 +1,15 @@
+(:summary    "See Redmine on Emacs"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-2"
+ :authors    (("Eitarow Fukamachi" . "e.arrows@gmail.com"))
+ :maintainer ("Eitarow Fukamachi" . "e.arrows@gmail.com")
+ :provided   (redmine)
+ :required   ((("anything" anything)
+	       ("emacs" cl xml)))
+ :keywords   ("redmine" "web")
+ :homepage   "https://github.com/fukamachi/redmine-el"
+ :commentary "\
+redmine.el is an utility for redmine.el
+You can see lists of issues, activity and revisions with anything.el,
+  and view the detail with your browser.")

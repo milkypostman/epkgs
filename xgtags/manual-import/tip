@@ -1,0 +1,43 @@
+(:summary    "Gtags facility for Emacs"
+ :created    "2006"
+ :updated    "20060319"
+ :license    "GPL-2"
+ :authors    (("Marco Gidde" . "marco.gidde@tiscali.de"))
+ :maintainer ("Marco Gidde" . "marco.gidde@tiscali.de")
+ :provided   (xgtags)
+ :commentary "\
+xgtags.el provides an interface to the GLOBAL
+(http://www.gnu.org/software/global) cross-refencing tools. While
+gtags.el, that comes with the GLOBAL distribution, is more a
+replacement for emacs' own find-tag/pop-tag-mark facility with some
+extra stuff, xtags.el tries to permit the same functionality as
+gtags.el, but behaves more like xcscope.el, the emacs interface for
+cscope (http://cscope.sourceforge.net).
+
+xgtags consists of xgtags-mode, a minor that should work with any
+major mode, especially the programming modes, and
+xgtags-select-mode which presents the result of the last query to
+the user.
+
+
+Installation
+
+To use xgtags copy this file to some place where emacs can find it,
+if necessary add the path you chose to the load-path variable. In
+your .emacs add the line
+
+	(require 'xgtags)
+
+In any buffer you can now toggle xgtags-mode by calling the
+interactive command with same name. Since this is a bit annoying,
+you might choose to turn it on for some specific modes. For c-mode
+you can add something like the following snippet to your .emacs
+file. Other modes provide similar hooks.
+
+        (add-hook 'c-mode-common-hook
+                  (lambda ()
+		        (xgtags-mode 1)))
+
+After that you can use the predefined keybindings to query your
+GLOBAL database. Call 'describe-function RET xgtags-mode' to get an
+overview of those bindings.")

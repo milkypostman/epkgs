@@ -1,0 +1,7 @@
+(:summary    "Find elisp files that don't have any elisp in them"
+ :created    "2004"
+ :updated    "20050118"
+ :license    "GPL-2"
+ :provided   (find-empty-el-files)
+ :required   ((("edit-tree" edit-tree)))
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/elisp-dev-tools/")

@@ -1,0 +1,63 @@
+(:summary    "Lazy Search"
+ :created    "20081223"
+ :updated    "20090122"
+ :license    "GPL-3"
+ :authors    ((nil . "andy stewart lazycat.manatee@gmail.com"))
+ :maintainer (nil . "andy stewart lazycat.manatee@gmail.com")
+ :provided   (lazy-search lazy-search-extension)
+ :required   ((("color-moccur" color-moccur)
+	       ("emacs" thingatpt)
+	       ("one-key" one-key)
+	       ("paredit" paredit)))
+ :keywords   ("lazy-search")
+ :homepage   "http://www.emacswiki.org/LazySearch"
+ :wikipage   "http://www.emacswiki.org/LazySearch"
+ :commentary "\
+Lazy Search
+
+Like this name, this extension provide a lazy-search mode.
+This extension is base on `one-key' mode.
+
+It can take the search string from the buffer around point.
+Then jump next or previous match fast.
+
+Simple describe use step:
+
+1-> Make sure you have install `one-key', `lazy-search' depend it.
+
+2-> Bind some global keystroke with function `lazy-search-menu'.
+    Like me: (global-set-key (kbd \"M-s\") 'lazy-search-menu)
+
+3-> Move cursor to some symbol, and type `M-s', then current symbol
+    will mark in all buffer and will popup a help window.
+
+4-> Then you just type keystroke 's', you can jump to next symbol,
+    you just type keystroke 'r', you can jump to previous symbol.
+
+5-> If you type 'w' can switch current search type from SYMBOL (default)
+    switch to WORD.
+
+6-> That's all, you just call function, will popup a keystroke help
+    window, then you just try type keystroke in window.
+
+Have two function transform search object between `lazy-search'
+`isearch':
+     `lazy-search-to-isearch' can transform search object to `isearch'.
+     `isearch-to-lazy-search' can transform search object to `lazy-search',
+             just bind this function with `isearch-to-lazy-search'.
+
+
+Installation:
+
+Put lazy-search.el to your load-path.
+The load-path is usually ~/elisp/.
+It's set in your ~/.emacs like this:
+(add-to-list 'load-path (expand-file-name \"~/elisp\"))
+
+And the following to your ~/.emacs startup file.
+
+(require 'lazy-search)
+
+Bind any keystroke you like to `lazy-search-menu'.
+
+(global-set-key (kbd \"M-s\") 'lazy-search-menu)")

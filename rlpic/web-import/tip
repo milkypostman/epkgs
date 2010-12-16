@@ -1,0 +1,49 @@
+(:summary    "Extension to picture mode for roguelike games"
+ :created    "1999"
+ :updated    "1999"
+ :license    "GPL-2"
+ :authors    (("Tom Breton" . "tehom@localhost"))
+ :maintainer ("Tom Breton" . "tehom@localhost")
+ :keywords   ("local")
+ :homepage   "http://panix.com/~tehom/"
+ :commentary "\
+Picture-mode is handy for editing ASCII maps, such as are sometimes
+used in roguelike games.  Try: M-x picture-mode <RET> C-h m
+
+Even if the map takes up only a part of the file, one can
+narrow-to-region on that region and edit it in picture mode.
+
+Don't forget about the ability to insert the same character
+multiple times by using the prefix argument.
+rlpic-insert-feature-character supports this too.
+
+I've only included the characters for the map of Rampart.  Other
+character sets could be created by hand, but IMO it makes more
+sense to wait for a more programmable way of defining maps and to
+automatically generate characters from that.
+
+Entry points:
+
+rlpic-mode (Dummy function, just forwards to picture mode)
+rlpic-show-character-meaning
+rlpic-insert-feature-character
+rlpic-show-feature-character
+rlpic-fill-rectangle
+rlpic-show-all-symbols
+
+Change Log
+
+2000-05-01  Tom Breton  <tob@world.std.com>
+Fixed insertion bug
+
+2000-05-01  Tom Breton  <tob@world.std.com>
+Made rlpic-mode dummy entry point.
+
+2000-05-01  Tom Breton  <tob@world.std.com>
+Added new entry point, rlpic-fill-rectangle
+
+2000-05-01  Tom Breton  <tob@world.std.com>
+Made modeline always reflect the character point is on.
+
+2000-05-01  Tom Breton  <tob@world.std.com>
+rlpic-show-all-symbols is now an entry point, with a temp buffer.")

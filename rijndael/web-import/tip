@@ -1,0 +1,58 @@
+(:summary    "Rijndael (AES) block cipher implementation"
+ :created    "2001"
+ :updated    "2001"
+ :license    "as-is"
+ :authors    (("Simon Josefsson" . "jas@pdc.kth.se"))
+ :maintainer ("Simon Josefsson" . "jas@pdc.kth.se")
+ :provided   (rijndael)
+ :keywords   ("rijndael" "aes" "blocks" "cipher" "symmetric" "encryption" "cryptography")
+ :homepage   "http://josefsson.org/aes/"
+ :commentary "\
+This is a implementation of the Rijndael block cipher algorithm in
+Emacs Lisp.  Rijndael has been chosen as the Advanced Encryption
+Standard (AES) by NIST.
+
+This package also have functionality to generate (some of) NIST's
+Rijndael test vectors.  However, they will take a very long time to
+generate in elisp.  You can customize `rijndael-monte-carlo-limit'
+from the default of 10,000 into something more sensible as, say, 1
+to make it faster.  It is also possible to customize the loop
+length defined by `rijndael-monte-carlo-loop' from the default 400.
+Of course, you need to modify the reference implementation as well
+if you want to make useful comparisons of the test vectors.
+
+Rijndael home page is at:
+http://www.esat.kuleuven.ac.be/~rijmen/rijndael/
+
+Any updated releases of this file will be located at:
+http://josefsson.org/aes/
+
+Instructions:
+
+Call functions in Emacs Lisp programs, or use this package
+interactively in the *scratch* buffer in emacs.
+
+Here's how you could do a simple encryption interactively (press
+C-j to evaluate each line):
+
+(setq key (rijndael-make-key 128 (rijndael-hexstring-to-bitstring
+                                  \"00000000000000000000000000000000\")))
+
+(setq data (rijndael-hexstring-to-bitstring
+	       \"00000000000000000000000000000000\"))
+
+(rijndael-bitstring-to-hexstring
+ (rijndael-block-encrypt data key 'ecb 128))
+
+Or more compact as:
+
+(rijndael-bitstring-to-hexstring
+ (rijndael-block-encrypt 
+  (rijndael-hexstring-to-bitstring \"00000000000000000000000000000000\")
+  (rijndael-make-key 128 (rijndael-hexstring-to-bitstring
+                          \"00000000000000000000000000000000\"))
+  'ecb 128))
+
+For reference, correct output is \"66e94bd4ef8a2c3b884cfa59ca342b2e\".
+
+NB! `data' will be destructively modified.")

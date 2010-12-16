@@ -1,0 +1,6 @@
+(:license    "GPL-2"
+ :authors    (("Sami Salkosuo" . "sami@roguemail.net"))
+ :maintainer ("Sami Salkosuo" . "sami@roguemail.net")
+ :provided   (elite-for-emacs)
+ :required   ((("emacs" cl)))
+ :homepage   "http://www.elite-for-emacs.org/elite-for-emacs/")

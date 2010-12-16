@@ -1,0 +1,10 @@
+(:summary    "Inserts incremental numbers in a rectangle"
+ :created    "2006"
+ :updated    "2006"
+ :license    "GPL-2"
+ :authors    (("Scott Evans"))
+ :maintainer ("Scott Evans")
+ :provided   (gse-number-rect)
+ :required   ((("emacs" rect)))
+ :keywords   ("extensions")
+ :homepage   "http://antisleep.com/elisp/")

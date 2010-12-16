@@ -1,0 +1,61 @@
+(:summary    "Auto completion"
+ :created    "2008"
+ :updated    "2009"
+ :license    "GPL-3"
+ :authors    (("Tomohiro Matsuyama" . "m2ym.pub@gmail.com"))
+ :maintainer ("Tomohiro Matsuyama" . "m2ym.pub@gmail.com")
+ :provided   (auto-complete auto-complete-config expander pulldown)
+ :required   ((("cedet" semantic-ia)
+	       ("emacs" cl find-func imenu thingatpt))
+	      (("yasnippet" yasnippet)
+	       (nil rcodetools)))
+ :keywords   ("convenience")
+ :homepage   "https://github.com/m2ym/auto-complete"
+ :wikipage   "http://www.emacswiki.org/AutoComplete"
+ :commentary "\
+This extension provides a way to complete with popup menu like:
+
+    def-!-
+    +-----------------+
+    |defun::::::::::::|
+    |defvar           |
+    |defmacro         |
+    |       ...       |
+    +-----------------+
+
+You can complete by typing and selecting menu.
+Enjoy!
+
+Qualification:
+
+This extension can work properly on GNU Emacs 22 or higher.
+
+Installation:
+
+To use this extension, compile necessary elisp files and locate them to your load-path directory.
+
+    $ emacs -L . -batch -f batch-byte-compile *.el
+    $ cp *.el *.elc ~/.emacs.d/
+
+And write following code into your .emacs.
+
+    (require 'auto-complete)
+    (require 'auto-complete-config)
+    (global-auto-complete-mode t)
+
+Sample configuration:
+
+Here is my configuration. It is useful for many people.
+
+    (setq-default ac-sources '(ac-source-words-in-same-mode-buffers))
+    (add-hook 'emacs-lisp-mode-hook (lambda () (add-to-list 'ac-sources 'ac-source-symbols)))
+    (add-hook 'auto-complete-mode-hook (lambda () (add-to-list 'ac-sources 'ac-source-filename)))
+    (global-auto-complete-mode t)
+    (set-face-background 'ac-candidate-face \"lightgray\")
+    (set-face-underline 'ac-candidate-face \"darkgray\")
+    (set-face-background 'ac-selection-face \"steelblue\")
+    (define-key ac-completing-map \"\\M-n\" 'ac-next)
+    (define-key ac-completing-map \"\\M-p\" 'ac-previous)
+    (setq ac-auto-start 2)
+    (setq ac-dwim t)
+    (define-key ac-mode-map (kbd \"M-TAB\") 'auto-complete)")

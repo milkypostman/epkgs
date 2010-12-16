@@ -1,0 +1,51 @@
+(:created    "1997"
+ :updated    "1998"
+ :license    "GPL-2"
+ :authors    (("Holger Schauer" . "holger.schauer@gmx.de"))
+ :maintainer ("Holger Schauer" . "holger.schauer@gmx.de")
+ :provided   (ilisp-browse-cltl2)
+ :required   ((("emacs" browse-url cl url)))
+ :keywords   ("utils" "lisp" "ilisp" "www")
+ :commentary "\
+This gives you two top-level-functions useful when programming lisp:
+cltl2-view-function-definition and cltl2-view-index
+cltl2-view-function-definition asks you for a name of a lisp
+function (or variable) and will open up your favourite browser
+(as specified by `browse-url-browser-function') loading the page
+which documents it.
+
+Installation: (as usual)
+Put browse-cltl2.el somewhere where emacs can find it.
+browse-cltl2.el requires a working browse-url, url and cl.
+Insert the following lines in your .emacs:
+
+     (autoload 'cltl2-view-function-definition \"browse-cltl2\")
+     (autoload 'cltl2-view-index \"browse-cltl2\")
+     (autoload 'cltl2-lisp-mode-install \"browse-cltl2\")
+     (add-hook 'lisp-mode-hook 'cltl2-lisp-mode-install)
+     (add-hook 'ilisp-mode-hook 'cltl2-lisp-mode-install)
+
+This should also add the needed hooks to lisp-mode (and ilisp-mode).
+
+Gnu Emacs:
+For Gnu Emacs there doesn't seem to be a lisp-mode-hook so you're
+on your own with the key-settings.
+No url.el:
+If you don't have url.el set *cltl2-use-url* to nil
+and set *cltl2-fetch-method* to 'local or 'local-index-only.
+This implies that you need a local copy of the index page of
+CLtL2 (which you can get from the normal hypertext-version at CMU),
+so you need to point *cltl2-local-file-pos* and *cltl2-index-file-name*
+to the place where you put it.
+Old versions of Emacs (Emacs 19.29 and XEmacs 19.11 for example):
+When you want to use a local copy (or a local copy of the index file)
+check the documentation on find-file-noselect. If it doesn't mention
+an option called RAWFILE set *cltl2-old-find-file-noselect* to 't.
+
+
+Customization:
+By default, browse-cltl2 will use a local copy of CLtL2, looking
+for it in /usr/doc/html/cltl. This can be modified with the help
+of the following variables:
+*cltl2-fetch-method*, *cltl2-url*, *cltl-local-file-pos*
+See the documentation on this variables for more info.")

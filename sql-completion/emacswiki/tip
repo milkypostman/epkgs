@@ -1,0 +1,22 @@
+(:summary    "Completion in *SQL* for mysql"
+ :created    "2006"
+ :updated    "20070313"
+ :license    "GPL-2"
+ :authors    ((nil . "wenbinye@163.com"))
+ :maintainer (nil . "wenbinye@163.com")
+ :provided   (sql-completion)
+ :required   ((("emacs" cl)
+	       ("mysql" mysql)))
+ :homepage   "http://www.emacswiki.org/SqlCompletion"
+ :wikipage   "http://www.emacswiki.org/SqlCompletion"
+ :commentary "\
+Put this file into your load-path and the following into your ~/.emacs:
+(require 'sql-completion)
+(setq sql-interactive-mode-hook
+      (lambda ()
+        (define-key sql-interactive-mode-map \"\\t\" 'comint-dynamic-complete)
+        (sql-mysql-completion-init)))
+To save time of building database schema, add sql-mysql-schema to
+desktop-globals-to-save:
+(require 'desktop)
+(add-to-list 'desktop-globals-to-save 'sql-mysql-schema)")

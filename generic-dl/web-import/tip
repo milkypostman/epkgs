@@ -1,0 +1,23 @@
+(:summary    "Menu for listing toplevel definitions"
+ :created    "2000"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("Olaf Sylvester" . "olaf@geekware.de"))
+ :maintainer ("Olaf Sylvester" . "olaf@geekware.de")
+ :provided   (generic-dl)
+ :required   (((nil generic-menu)))
+ :keywords   ("convenience")
+ :homepage   "http://www.geekware.de/software/emacs/"
+ :commentary "\
+Provide a function for listing toplevel definitions in 
+current buffer according to current mode. 
+
+Install: 
+1)  Put generic-dl.el and generic-menu.el into a suitable place.
+2a) When in load-path
+    (require 'generic-dl)
+2b) When not in load-path
+    (load \"/WHERE_IT_IS/generic-menu.el\")
+    (load \"/WHERE_IT_IS/generic-dl.el\")
+3) Define a suitable key
+    (global-set-key [f8] 'dl-popup)")

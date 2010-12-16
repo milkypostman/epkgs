@@ -1,0 +1,11 @@
+(:summary    "Programming support for PL/SQL code"
+ :created    "2001"
+ :updated    "20021107"
+ :license    "GPL-2"
+ :authors    (("Kahlil (Kal) HODGSON" . "dorge@tpg.com.au"))
+ :maintainer ("Kahlil (Kal) HODGSON" . "dorge@tpg.com.au")
+ :provided   (plsql)
+ :required   ((("emacs" align cl imenu sql)))
+ :keywords   ("languages")
+ :homepage   "http://www.emacswiki.org/PlsqlMode"
+ :wikipage   "http://www.emacswiki.org/PlsqlMode")

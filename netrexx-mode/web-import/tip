@@ -1,0 +1,8 @@
+(:summary    "Highlight and indent Netrexx program files"
+ :created    "2003"
+ :updated    "2003"
+ :license    "GPL-2"
+ :provided   (netrexx-mode)
+ :required   ((("emacs" skeleton speedbar)))
+ :keywords   ("netrexx")
+ :homepage   "http://zaaf.nl/emacs/emacs.html")

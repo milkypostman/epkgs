@@ -1,0 +1,24 @@
+(:summary    "Display a pin bar in the header line"
+ :created    "20070518"
+ :updated    "20070518"
+ :license    "GPL-2"
+ :authors    (("Gaofeng Huang" . "poppyer@gmail.com"))
+ :maintainer ("Gaofeng Huang" . "poppyer@gmail.com")
+ :provided   (pinbar)
+ :keywords   ("convenience")
+ :homepage   "http://www.emacswiki.org/PinBar"
+ :wikipage   "http://www.emacswiki.org/PinBar"
+ :commentary "\
+This library provides a minor mode to display tabs in the header
+line.  It works on GNU Emacs 21 or later version.
+
+M-x `pinbar-mode' toggle the display of the pin bar, globally.
+
+Installation:
+		put the following in .emacs file
+
+ (require 'pinbar)
+ (global-set-key \"\\M-0\" 'pinbar-add)
+ (pinbar-mode t)
+
+	now you can use ALT-0 to pin a buffer to the pin, and ALT-- ALT-0 to unpin it")

@@ -1,0 +1,41 @@
+(:summary    "Extension for project-buffer-mode"
+ :license    "GPL-2"
+ :authors    (("Cedric Lallain" . "kandjar76@hotmail.com"))
+ :maintainer ("Cedric Lallain" . "kandjar76@hotmail.com")
+ :provided   (project-buffer-mode+)
+ :required   ((("project-buffer-mode" project-buffer-mode)))
+ :keywords   ("project" "mode" "buffer" "viewer" "extension")
+ :homepage   "http://www.emacswiki.org/ProjectBufferModePlus"
+ :wikipage   "http://www.emacswiki.org/ProjectBufferModePlus"
+ :commentary "\
+It provides commands to run the project-buffer actions: such as
+build, clean, run, debug and update while browsing the files
+belonging to this project.
+
+It also provides a command to directly go to the project-buffer
+attached to the current file.
+
+How does it work?
+
+When you open a file from the project-buffer; it will attach the
+project-buffer to the file's buffer.
+The project-buffer is stored inside a local variable called:
+ `project-buffer-mode-p-attached-project-buffer'.
+
+To install it:
+
+Put the following lines in your .emacs:
+
+(eval-after-load \"project-buffer-mode\"
+ '(progn
+    (require 'project-buffer-mode+)
+    (project-buffer-mode-p-setup)))
+
+
+By default this bind the following keys:
+ C-x p s    Go to the project-buffer attached to the current file
+ C-x p B    Kick the 'build action from the attached project-buffer.
+ C-x p C    Kick the 'clean action from the attached project-buffer.
+ C-x p R    Kick the 'run action from the attached project-buffer.
+ C-x p D    Kick the 'debug action from the attached project-buffer.
+ C-x p U    Kick the 'update action from the attached project-buffer.")

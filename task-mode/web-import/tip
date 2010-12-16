@@ -1,0 +1,102 @@
+(:summary    "Enhanced window configuration manager"
+ :created    "2004"
+ :updated    "2004"
+ :license    "GPL-2"
+ :authors    (("Matthieu Lemerre" . "racin@free.fr"))
+ :maintainer ("Matthieu Lemerre" . "racin@free.fr")
+ :provided   (task)
+ :required   ((("emacs" ring))
+	      (("emacs" ido iswitchb)))
+ :keywords   ("convenience")
+ :homepage   "http://racin.free.fr/old/projects.html#task-mode"
+ :wikipage   "http://www.emacswiki.org/TaskMode"
+ :commentary "\
+Presentation:
+
+task-mode is a global minor mode which enables you to effectively
+do many tasks in the same time. For instance, you might want to
+edit some Lisp code, then some people on ERC tell you about a bug
+in one of your C program, and you proceed on editing some C
+code. Every time you switch from these different tasks, your window
+configuration will be saved so that you can switch back and forth
+without thinking about saving your window configurations in
+registers.
+
+
+There is other packages similar to this one available for emacs, you will
+find a list there: http://www.emacswiki.org/cgi-bin/wiki/CategoryWindows.
+This package differs from the others because the normal way to
+switch from task to task is to switch buffer. Task-mode will
+regognize if a buffer is not in the current task and then will
+bring the good task.
+
+This method has the following advantages:
+* You don't have to remember a task name or number like in other
+  packages.
+* Switching from task is not attached to a keybinding, so you can
+  take advantage of this package with any function which switch
+  buffer. (For instance, M-x gnus, erc-track-switch-buffer,
+  tla-add-log-entry ...)
+
+It has the following drawback:
+* You have to use a keybinding when putting a buffer from a task to
+  an other.
+
+Automatically switching of window-configurations is the \"visible\"
+part of task-mode. Everything that could benefinit from the fact that
+buffers are grouped together has a place in this package. For
+instance, in this release is included
+task-switch-buffer-within-task-i{do,switch} which enable quick
+switching between buffers in a task. 
+
+Installation:
+
+Put task.el in your load-path, and put (require 'task) in your .emacs.
+Put (task-mode) in your .emacs if you want task-mode to be
+permanently activated, else use M-x task-mode
+
+
+Configuration:
+
+Use M-x customize-group RET task RET to get an overview of all the
+variables you can tweak.  You should read the documentation on my
+home page (http://racin.free.fr)
+
+Usage:
+
+See the documentation (task-mode's home page is currently
+http://racin.free.fr)
+
+Suggestions:
+
+All suggestions, bug reports, feature requests, critiques, elisp
+advices, patches are welcome! (I'm an elisp newbie).  Please mail
+to me (racin at free dot fr).
+
+As task-mode is still young, some of the internal structures may
+change, so you should write to me if you plan to make an important
+contribution, so that we can coordinate our work. I'll then put
+this on a free software hosting service like gna! or savannah.
+
+Todo:
+
+*Saving of current point when switching between buffers.
+
+Planned:
+
+* Possibility to merge two tasks in the rules, and interactively
+* Better doc on each function
+* Strong integration between frames and tasks
+* Buffers who can belong to several tasks
+
+Thanks:
+
+All the GNU Project's contributor (and especially Richard Stallman)
+for Emacs and the GNU project.
+
+Ivar Rummelhoff for winner-mode (some ideas on
+window-configurations handling are inspired by it)
+
+
+Stefan Reichör and Christophe Garion for their contributions, and
+Lucas Bonnet and Gaetan Leurent for testing.")

@@ -1,0 +1,19 @@
+(:summary    "Makes numbers prefixes by default"
+ :created    "19980904"
+ :updated    "1998"
+ :license    "GPL-2"
+ :authors    ((nil . "f95-ala@nada.kth.se"))
+ :maintainer (nil . "f95-ala@nada.kth.se")
+ :keywords   ("prefix" "minor" "mode")
+ :commentary "\
+This is a minor mode for people who uses numbers as prefixes more often than
+to insert them in text. With this minor mode entering a number is roughly
+equivalent to entering C-u <number>.
+
+Examples: Entering \"3\" will not insert 3 in the text but rather wait for the
+next key. The echo area will show \"3\" so you know what you are doing. If you
+then enter \"1\" the echo area will show \"31\". Entering <SPC> at this point
+will insert the number 31 at point in the buffer (but no space), but if you
+enter any other key sequence, such as \"C-f\" or \"p\" it will be repeated 31
+times. Thus \"31<SPC>\" yields \"31\", and \"31p\" yields
+\"ppppppppppppppppppppppppppppppp\".")

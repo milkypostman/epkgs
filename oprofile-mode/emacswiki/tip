@@ -1,0 +1,49 @@
+(:summary    "An oprofile callgraph viewer"
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-2"
+ :authors    (("Vikram Visweswaraiah" . "vviswesw@cisco.com"))
+ :maintainer ("Vikram Visweswaraiah" . "vviswesw@cisco.com")
+ :commentary "\
+If you don't know what oprofile is, read about it at 
+<http://oprofile.sourceforge.net/>. If you start using it, particularly,
+start generating callgraph profiles, you may find this program useful
+in parsing it and providing commonly required transformations.
+
+1) 
+Make sure oprofile-mode.el is in your load path, for example, in your
+~/.emacs, use:
+
+(setq load-path (append (list
+               (expand-file-name \"~/lib/emacs/lisp\"))
+               load-path))
+2) 
+Add following lines in your ~/.emacs, change colors to taste, I
+generally work with dark backgrounds
+
+(setq font-lock-ok-face 'font-lock-ok-face)
+(setq font-lock-boldref-face 'font-lock-boldref-face)
+(setq font-lock-face-attributes
+       '(
+        (font-lock-ok-face              \"green\" nil t nil nil)
+        (font-lock-boldref-face         \"khaki\" nil t nil nil))
+)
+(add-hook 'oprofile-mode-hook 'turn-on-font-lock)
+(autoload 'oprofile-mode \"oprofile-mode\" \"OPROFILE editing mode.\" t)
+
+3)
+Setup autoloading, we'll assume profile files end with .prof
+
+(setq auto-mode-alist (append 
+                             '(
+                               (\"\\\\.prof$\"     . oprofile-mode)
+                               ) auto-mode-alist))
+
+4)
+Look at keybindings below for functions of interest: short summmary:
+
+ESC p     -- move forward to previous symbol
+ESC n     -- move forward to next symbol
+Ctrl-c /  -- search for symbol under cursor
+Ctrl-c Ctrl-c -- generate callstack for symbol under cursor
+Ctrl-c Ctrl-f -- generate flat profile from current callgraph data")

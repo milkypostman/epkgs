@@ -1,0 +1,12 @@
+(:summary    "Call perlcritic in Emacs"
+ :created    "20071231"
+ :updated    "2007"
+ :license    "GPL-2"
+ :authors    (("Ye Wenbin" . "wenbinye@gmail.com"))
+ :maintainer ("Ye Wenbin" . "wenbinye@gmail.com")
+ :provided   (perlcritic)
+ :required   ((("emacs" cl compile)))
+ :keywords   ("tools" "convenience")
+ :commentary "\
+Put this file into your load-path and the following into your ~/.emacs:
+  (require 'perlcritic)")

@@ -1,0 +1,75 @@
+(:summary    "Minibuffer completion with prefix and substring matching"
+ :created    "2000"
+ :updated    "2000"
+ :license    "GPL-2"
+ :authors    (("Yuji Minejima" . "ggb01164@nifty.ne.jp"))
+ :maintainer ("Yuji Minejima" . "ggb01164@nifty.ne.jp")
+ :provided   (mcomplete)
+ :keywords   ("local" "help" "abbrev")
+ :homepage   "http://homepage1.nifty.com/bmonkey/emacs/index-en.html"
+ :wikipage   "http://www.emacswiki.org/McompleteMode"
+ :commentary "\
+This package enhances Emacs's minibuffer completion mechanism.
+
+In short, this is icomplete.el + iswitchb.el +/- something.
+
+Features:
+ * supports 2 completion methods (prefix and substring matching).
+   Prefix matching is the Emacs's default completion method.
+   Substring matching is a completion method where all the
+   completion commands work in terms of a substring of the
+   all possible completions.
+   e.g.  \"buffer\" matches \"backup-buffer\", \"buffer-name\",
+                                  ^^^^^^    ^^^^^^
+         \"exit-minibuffer\", ...
+                   ^^^^^^
+
+   You can cycle through the completion methods by `C-n' and
+   `C-p' in the minibuffer.
+
+ * displays possible completion candidates in the minibuffer.
+   e.g. When you enter `M-x apr', the minibuffer looks like
+        the following:
+        M-x apr[opos]{,-command,-documentation,-value,-zippy}
+
+ * `RET' in the minibuffer picks the first candidate displayed.
+   e.g. `M-x apr RET' selects `apropos' command (and execute it).
+
+   You can cycle through the candidates by `C-s' and `C-r'.
+
+   When you want to give the exact string you entered, use `M-RET'
+   or `ESC RET'.
+
+ * `C-c' in the minibuffer toggles case significance in completion.
+
+ * supports faces (highlights the display).
+
+ * supports customization per user command.
+
+
+Requirements:
+
+Tested with GNU Emacs 20.7.2, GNU Emacs 21.0.91.1 and XEmacs 21.1.9.
+
+
+Compatibility:
+
+complete.el
+  tab, space, ... is used for mcomplete-mode.
+  M-tab, M-SPACE, ... might work.
+
+completing-help.el (>= version 3.3)
+  With this packege, short descriptions on completions is displayed
+  by pressing `?'.
+
+  You can get completing-help.el at
+  http://homepage1.nifty.com/bmonkey/emacs/elisp/completing-help.el
+
+icomplete.el
+  icomplete-mode gets turned off when mcomplete-mode is activated.
+
+ido.el (http://hjem.get2net.dk/storm/emacs/)
+  Both work. ido commands take precedence.
+
+iswitchb.el
+  Both work. iswitchb commands take precedence.")

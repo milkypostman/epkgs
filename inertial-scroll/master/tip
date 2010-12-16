@@ -1,0 +1,22 @@
+(:summary    "Global minor mode for inertial scrolling "
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("SAKURAI Masashi" . "m.sakurai@kiwanami.net"))
+ :maintainer ("SAKURAI Masashi" . "m.sakurai@kiwanami.net")
+ :provided   (inertial-scroll)
+ :required   ((("deferred" deferred)))
+ :keywords   ("scroll" "deferred")
+ :homepage   "https://github.com/kiwanami/emacs-inertial-scroll"
+ :commentary "\
+This is a demonstration for deferred.el and co-routine.
+
+Installation:
+
+This program needs deferred.el 
+[http://github.com/kiwanami/emacs-deferred/blob/master/deferred.el].
+
+Put following lines in your .emacs file.
+
+(require 'inertial-scroll)
+(inertias-global-minor-mode 1)")

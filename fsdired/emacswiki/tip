@@ -1,0 +1,76 @@
+(:summary    "Sort files to go to different places in dired"
+ :created    "2006"
+ :updated    "2006"
+ :license    "GPL-2"
+ :authors    ((nil . "joakim verona joakim@verona.se"))
+ :maintainer (nil . "joakim verona joakim@verona.se")
+ :provided   (fsdired)
+ :required   (nil
+	      (("hide-lines" hide-lines)))
+ :keywords   ("dired" "environment" "files" "renaming")
+ :commentary "\
+Mark files and move them to different places with the help of dired.
+
+Use it, for instance, if you have a lot random files in a directory,
+and would like to move them to different places, on some criteria
+that you know, but not your computer.  For instance, mark all comic
+book archive files with \"1\" and all text-files about motherboards
+with \"2\" and all text-files about dinosaurs with \"3\".  Noodle about
+with this for a while, reviewing your marks, discovering new types
+of files in your disorganized random dir, and finally press \"c-c\" to
+pop-up a buffer where you decide where the files go.  When decided,
+press c-c and the files go there!
+
+More precise insructions:
+
+- use \"fsdired-change-to-fsdired-mode\" to start, in a dired buffer
+- use numeric keys 0-9 to tag files in different groups
+- use C-c [0-9] to review your marks
+  - use g to restore the view
+- use c-c c-c to end.  this will:
+  - switch back the marks buffer to  dired mode
+  - popup a command buffer where you can decide what to do with each group
+    there is a line for each group looking like:
+    \"1M /tmp\", where 1 corresponds to a mark, M is a command, and /tmp an argument for the command
+    commands(yeah only one for now):
+    M - move
+  - c-i inserts a file name at point, which is convenient with ido mode, for instance
+
+
+Issues: and ideas
+
+- must the cmd buffer end with newline?
+
+
+- if there are no marks for a certain char in  the cmd buffer, default will be the file the cursor is on...
+(dired-get-marked-files)
+
+- 1st line could indicate which dired buffer the command buffer is associated with by default
+- processing dired commands is kind of the same as \"x\" for expunge...
+
+- currently nearly no error checking is done!
+
+ - ought to handle invalid format of the command buffer
+ - ought to handle missing command character definitions
+ - ought to report no matching command line in the command buffer for a mark
+ - some convenience functions to build the command buffer:
+   - command to fill with sane defaults(consider though that we might want to reuse command buffers)
+- hide-lines.el is used when reviewing marks.  would be
+ better to find some std (cvs) Emacs facility
+- dont crash when destination exists
+- prompt for directory creation, if desired destionation doesnt exist
+- dont crash when \".\" is somewhere, mark or destinarion
+- before commiting command buffer, see to it that lines arent hidden
+- possibly hide/show lines automatically in dired buffer when moving in command buffer
+- the keymap set/restore mechanism seem to discard user customizations, why?
+
+DONE
+- the rename M is odd when the dir to move to doesnt exist(should ask to mk dir)
+   - facility to enter a directory path conveniently
+- add possibility to add kbd bindings directly to dired kbd map
+- c-1 etc dosn no longer work?
+
+fsdired has only been tested on CVS Emacs 22.
+
+thanks to:
+ Andrew M.  Scott")
