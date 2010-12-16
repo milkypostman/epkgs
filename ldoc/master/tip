@@ -1,0 +1,14 @@
+(:summary    "Extract and format documentation from lisp files"
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-3"
+ :authors    (("David O'Toole" . "dto@gnu.org"))
+ :maintainer ("David O'Toole" . "dto@gnu.org")
+ :provided   (ldoc)
+ :required   ((("emacs" org)))
+ :keywords   ("lisp" "tools")
+ :homepage   "https://github.com/dto/ldoc"
+ :commentary "\
+LDOC reads Common Lisp and Emacs Lisp files, extracting headers,
+definitions, and docstrings. It works with org-mode to produce
+documentation files and indices in HTML and other formats.")

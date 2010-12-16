@@ -1,0 +1,11 @@
+(:summary    "GNOME-integrated notetaking system built on Org"
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-3"
+ :authors    (("David O'Toole" . "dto@gnu.org"))
+ :maintainer ("David O'Toole" . "dto@gnu.org")
+ :provided   (camel folio folio-theme uuidgen)
+ :required   ((("color-theme" color-theme)
+	       ("emacs" cl iimage org)))
+ :keywords   ("tools" "hypermedia")
+ :homepage   "https://github.com/dto/folio.git")
