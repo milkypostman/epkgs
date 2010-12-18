@@ -6,7 +6,7 @@
  :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
  :provided   (anything anything-complete anything-config anything-grep anything-gtags anything-ipa anything-match-plugin anything-menu anything-migemo anything-multi-sources anything-obsolete anything-show-completion anything-startup autodoc)
  :required   ((("bookmark-extensions" bookmark-extensions)
-	       ("emacs" advice bookmark browse-url cl compile dired ffap find-func grep imenu info iswitchb org recentf shell thingatpt woman)
+	       ("emacs" advice bookmark browse-url cl compile dired dired-aux ffap find-func grep imenu info iswitchb org recentf shell thingatpt tramp woman)
 	       ("jabber" jabber)
 	       ("shell-history" shell-history)
 	       ("simple-call-tree" simple-call-tree))

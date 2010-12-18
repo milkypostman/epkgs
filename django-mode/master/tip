@@ -1,0 +1,7 @@
+(:created    "2010"
+ :updated    "2010"
+ :license    "Apache-2.0"
+ :provided   (django-html-mode django-mode)
+ :required   ((("emacs" sgml-mode)
+	       ("python-mode" python-mode)))
+ :homepage   "https://github.com/myfreeweb/django-mode")

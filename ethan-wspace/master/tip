@@ -1,0 +1,3 @@
+(:provided   (ethan-wspace)
+ :required   ((("emacs" assoc)))
+ :homepage   "https://github.com/glasserc/ethan-wspace")
