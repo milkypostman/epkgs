@@ -1,0 +1,7 @@
+(:summary    "Connect to SQL server using tramp syntax"
+ :created    "20101217"
+ :updated    "2010"
+ :provided   (db-sql)
+ :required   ((("emacs" sql tramp)))
+ :keywords   ("tramp" "sql")
+ :homepage   "https://github.com/renard/db-sql-el")

@@ -4,8 +4,9 @@
  :license    "GPL-3"
  :authors    (("David O'Toole" . "dto@gnu.org"))
  :maintainer ("David O'Toole" . "dto@gnu.org")
- :provided   (camel folio folio-theme uuidgen)
+ :provided   (camel folio folio-theme)
  :required   ((("color-theme" color-theme)
-	       ("emacs" cl iimage org)))
+	       ("emacs" cl iimage org)
+	       ("uuidgen" uuidgen)))
  :keywords   ("tools" "hypermedia")
  :homepage   "https://github.com/dto/folio.git")

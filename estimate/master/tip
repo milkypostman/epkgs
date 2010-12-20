@@ -1,7 +1,7 @@
 (:created    "2010"
  :updated    "2010"
  :license    "GPL-3"
- :provided   (estimate-mode)
+ :provided   (estimate estimate-display estimate-gadget estimate-item estimate-mode estimate-mode-commands estimate-options estimate-regexp estimate-util)
  :required   ((("anything" anything)
 	       ("emacs" cl json)))
  :homepage   "https://github.com/lieutar/estimate.el")

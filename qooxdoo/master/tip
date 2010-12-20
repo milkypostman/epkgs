@@ -5,6 +5,33 @@
  :authors    (("Jeremiah Dodds" . "jeremiah.dodds@gmail.com"))
  :maintainer ("Jeremiah Dodds" . "jeremiah.dodds@gmail.com")
  :provided   (qooxdoo)
- :required   ((("emacs" thingatpt)))
+ :required   ((("emacs" thingatpt)
+	       ("espect" espect)))
  :keywords   ("convenience" "docs")
- :homepage   "https://github.com/jdodds/qooxdoo.el")
+ :homepage   "https://github.com/jdodds/qooxdoo.el"
+ :commentary "\
+You'll need espect, see <https://github.com/rafl/espect>.
+
+After that, something like:
+
+(require 'espect)
+(require 'qooxdoo)
+
+(setq qooxdoo-workspace-path \"~/workspace\")
+(setq qooxdoo-project-paths
+      '(\"/path/to/project/1\"
+        \"Foo/bar/baz/project2\"))
+(setq espect-buffer-settings
+      '(((:qooxdoo)
+         (lambda ()
+           (qooxdoo-minor-mode t)))))
+
+in your .emacs should do just fine.
+
+`qooxdoo-workspace-path' should be the path to your root \"coding\" folder,
+assuming you keep one. It's just a slight typing saver.
+
+`qooxdoo-project-paths' should be a list of paths to directories containing
+qooxdoo projects. If you're not using `qooxdoo-workspace-path', these should
+be absolute. If you are using `qooxdoo-workspace-path', these are interpreted
+as relative to that.")

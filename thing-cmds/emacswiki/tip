@@ -1,6 +1,6 @@
 (:summary    "Commands that use things, as defined by `thingatpt.el'"
  :created    "20060730"
- :updated    "20100115"
+ :updated    "20101217"
  :license    "GPL-2"
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")
@@ -15,8 +15,9 @@ You can use the commands defined here to select different kinds of
 
  Commands defined here:
 
-   `cycle-thing-region', `mark-thing', `select-thing-near-point',
-   `thing-region'.
+   `cycle-thing-region', `mark-enclosing-sexp',
+   `mark-enclosing-sexp-backward', `mark-enclosing-sexp-forward',
+   `mark-thing', `select-thing-near-point', `thing-region'.
 
  User options defined here:
 
@@ -26,10 +27,18 @@ You can use the commands defined here to select different kinds of
 
    `mark-thing-type', `thing-region-index'.
 
- Put this in your init file (`~/.emacs'): (require 'thing-cmds)
+ Put this in your init file (`~/.emacs'):
 
- Suggested key bindings (these will replace the standard bindings
- for `mark-sexp' and `mark-word'):
+  (require 'thing-cmds)
 
- (global-set-key [(control meta ? )] 'mark-thing) ; vs `mark-sexp'
- (global-set-key [(meta ?@)] 'cycle-thing-region) ; vs `mark-word'")
+ Suggested key bindings:
+
+  These two replace the std bindings for `mark-sexp' & `mark-word':
+  (global-set-key [(control meta ? )] 'mark-thing) ; vs `mark-sexp'
+  (global-set-key [(meta ?@)] 'cycle-thing-region) ; vs `mark-word'
+
+  (global-set-key [(control meta shift ?u)] 'mark-enclosing-sexp)
+  (global-set-key [(control meta shift ?b)] ; or [(control meta ?()]
+                  'mark-enclosing-sexp-backward)
+  (global-set-key [(control meta shift ?f)] ; or [(control meta ?))]
+                  'mark-enclosing-sexp-forward)")

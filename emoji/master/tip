@@ -7,4 +7,4 @@
  :required   ((("anything" anything)
 	       ("emacs" cl)))
  :keywords   ("cellphonejapanese")
- :homepage   "https://github.com/imakado/emoji")
+ :homepage   "http://github.com/imakado/emoji")

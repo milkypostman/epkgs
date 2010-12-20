@@ -7,7 +7,7 @@
  :provided   (smex)
  :required   ((("emacs" cl ido)))
  :keywords   ("convenience" "usability")
- :homepage   "https://github.com/nonsequitur/smex"
+ :homepage   "http://github.com/nonsequitur/smex"
  :wikipage   "http://www.emacswiki.org/Smex"
  :commentary "\
 Quick start:

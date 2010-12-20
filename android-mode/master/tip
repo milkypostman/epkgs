@@ -7,7 +7,7 @@
  :provided   (android-mode)
  :required   ((("emacs" cl)))
  :keywords   ("tools" "processes")
- :homepage   "https://github.com/remvee/android-mode"
+ :homepage   "http://github.com/remvee/android-mode"
  :commentary "\
 Provides support for running Android SDK subprocesses like the
 emulator, logcat, ddms and ant.")

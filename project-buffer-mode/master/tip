@@ -2,10 +2,10 @@
  :license    "GPL-2"
  :authors    (("Cedric Lallain" . "kandjar76@hotmail.com"))
  :maintainer ("Cedric Lallain" . "kandjar76@hotmail.com")
- :provided   (project-buffer-mode)
+ :provided   (fsproject iproject project-buffer-mode project-buffer-mode+ project-buffer-occur sln-mode)
  :required   ((("emacs" cl ewoc)))
  :keywords   ("project" "mode" "buffer" "viewer" "generic")
- :homepage   "http://www.emacswiki.org/ProjectBufferMode"
+ :homepage   "http://repo.or.cz/w/project-buffer-mode.git"
  :wikipage   "http://www.emacswiki.org/ProjectBufferMode"
  :commentary "\
 project-buffer-mode provides a generic way to handle multiple
@@ -148,6 +148,8 @@ C-<RGT> -> move up if folded collapsed; collapse if in front of folder ; move to
    c B  -> prompt to change build configuration
    c M  -> prompt for the master project (project to build)
    c P  -> prompt to change platform
+   d a  -> add a project dependency
+   d r  -> remove a project dependency
    B    -> launch build
    C    -> launch clean
    D    -> launch run/with debugger
@@ -162,5 +164,4 @@ C-<RGT> -> move up if folded collapsed; collapse if in front of folder ; move to
 Future improvement:
    T    -> touch marked files (need a variable to make sure touch is always available)
    h    -> find corresponding header/source (need regexps to match one and the other such as: source/header = ( \"\\.c\\(pp\\)?\" . \"\\.h\\(pp\\)?\" ) )
-   d    -> show/hide project dependencies
    b    -> compile/buils marked files")

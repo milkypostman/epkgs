@@ -1,6 +1,6 @@
 (:summary    "Functions to manipulate colors, including RGB hex strings"
  :created    "20040920"
- :updated    "20101206"
+ :updated    "20101218"
  :license    "GPL-2"
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")

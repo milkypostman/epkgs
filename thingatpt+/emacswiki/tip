@@ -1,6 +1,6 @@
 (:summary    "Extensions to `thingatpt.el'"
  :created    "19960213"
- :updated    "20101210"
+ :updated    "20101217"
  :license    "GPL-2"
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")
@@ -24,7 +24,8 @@ Extensions to `thingatpt.el'.
    `bounds-of-symbol-at-point', `bounds-of-symbol-nearest-point',
    `bounds-of-thing-nearest-point', `form-at-point-with-bounds',
    `form-nearest-point', `form-nearest-point-with-bounds',
-   `forward-char-same-line', `list-nearest-point',
+   `forward-char-same-line', `list-at/nearest-point',
+   `list-nearest-point', `list-nearest-point-as-string',
    `non-nil-symbol-name-at-point',
    `non-nil-symbol-name-nearest-point',
    `non-nil-symbol-nearest-point', `number-nearest-point',
@@ -34,7 +35,9 @@ Extensions to `thingatpt.el'.
    `symbol-nearest-point', `symbol-nearest-point-with-bounds',
    `thing-at-point-with-bounds',
    `thing/form-nearest-point-with-bounds', `thing-nearest-point',
-   `thing-nearest-point-with-bounds', `word-nearest-point'.
+   `thing-nearest-point-with-bounds', `unquoted-list-at-point',
+   `unquoted-list-nearest-point',
+   `unquoted-list-nearest-point-as-string', `word-nearest-point'.
 
 
  ***** NOTE: The following functions defined in `thingatpt.el'
@@ -42,13 +45,10 @@ Extensions to `thingatpt.el'.
 
  `bounds-of-thing-at-point' - Added optional argument SYNTAX-TABLE.
  `form-at-point'            - Added optional argument SYNTAX-TABLE.
- `list-at-point'            - Added optional argument SYNTAX-TABLE.
- `number-at-point'          - Added optional argument SYNTAX-TABLE.
- `sentence-at-point'        - Added optional argument SYNTAX-TABLE.
- `sexp-at-point'            - Added optional argument SYNTAX-TABLE.
+ `list-at-point'            - Better behavior.
+                              Added optional argument SYNTAX-TABLE.
  `symbol-at-point'          - Added optional argument NON-NIL.
  `thing-at-point'           - Added optional argument SYNTAX-TABLE.
- `word-at-point'            - Added optional argument SYNTAX-TABLE.
 
 
  A reminder (the doc strings are not so good):

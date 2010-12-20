@@ -7,4 +7,4 @@
  :provided   (io-mode)
  :required   ((("emacs" cl comint font-lock hideshow newcomment)))
  :keywords   ("languages" "io")
- :homepage   "https://github.com/superbobry/io-mode")
+ :homepage   "http://github.com/superbobry/io-mode")

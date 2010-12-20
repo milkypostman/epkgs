@@ -1,6 +1,6 @@
 (:summary    "Minibuffer input completion and cycling"
  :created    "19950801"
- :updated    "20101214"
+ :updated    "20101218"
  :license    "GPL-2"
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")

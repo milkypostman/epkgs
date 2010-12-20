@@ -4,7 +4,7 @@
  :provided   (anything-w3m)
  :required   ((("emacs" dired)
 	       ("w3m-type-ahead" w3m-type-ahead)))
- :homepage   "https://github.com/imakado/emacs-anything-w3m"
+ :homepage   "http://github.com/imakado/emacs-anything-w3m"
  :commentary "\
 Tested on Emacs 22
 

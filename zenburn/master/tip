@@ -6,7 +6,7 @@
  :maintainer ("Daniel Brockman" . "daniel@brockman.se")
  :provided   (zenburn)
  :required   ((("color-theme" color-theme)))
- :homepage   "https://github.com/dbrock/zenburn-el"
+ :homepage   "http://github.com/dbrock/zenburn-el"
  :commentary "\
 Some packages ship with broken implementations of `format-spec';
 for example, stable versions of TRAMP and ERC do this.  To fix

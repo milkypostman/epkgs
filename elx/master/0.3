@@ -1,14 +1,13 @@
 (:summary    "Extract information from Emacs Lisp libraries"
  :created    "20081202"
- :updated    "20100707"
+ :updated    "20100226"
  :license    "GPL-3"
  :authors    (("Jonas Bernoulli" . "jonas@bernoul.li"))
  :maintainer ("Jonas Bernoulli" . "jonas@bernoul.li")
  :provided   (elx)
  :required   ((("dconv" dconv)
 	       ("emacs" cl lisp-mnt)
-	       ("vcomp" vcomp))
-	      (("lgit" lgit)))
+	       ("vcomp" vcomp)))
  :keywords   ("docs" "libraries" "packages")
  :homepage   "https://github.com/tarsius/elx"
  :commentary "\
@@ -34,4 +33,7 @@ features can't be loaded (because the providing libraries are not
 available) or when one doesn't want to load them for security reasons.
 
 Some of the features implemented here will hopefully be merged into
-`lisp-mnt.el' once I find the time to create patches.")
+`lisp-mnt.el' once I find the time to create patches.  Likewise code
+from `elm.el' is likely to be moved to this library.  The important
+thing to note here is that this library is going to change a lot over
+the next month or so.")

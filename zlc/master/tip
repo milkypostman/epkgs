@@ -7,4 +7,4 @@
  :provided   (zlc)
  :required   ((("emacs" cl)))
  :keywords   ("matching" "convenience")
- :homepage   "https://github.com/mooz/emacs-zlc")
+ :homepage   "http://github.com/mooz/emacs-zlc")
