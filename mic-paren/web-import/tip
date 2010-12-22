@@ -8,7 +8,7 @@
  :required   ((("emacs" cl custom timer)))
  :keywords   ("languages" "faces" "parenthesis" "matching")
  :homepage   "http://www.gnuvola.org/software/j/mic-paren/"
- :wikipage   "http://www.emacswiki.org/MicParen"
+ :wikipage   "http://www.emacswiki.org/mic-paren"
  :commentary "\
 ----------------------------------------------------------------------
 Short Description:

@@ -11,4 +11,5 @@
 	       ("itimer" itimer)
 	       (nil color-selector xpm-button xpm-mode)))
  :keywords   ("xlib" "xwem")
- :homepage   "http://xwem.org/")
+ :homepage   "http://xwem.org/"
+ :wikipage   "http://www.emacswiki.org/XWindowEmacsManager")

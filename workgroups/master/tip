@@ -8,6 +8,7 @@
  :required   ((("emacs" cl)))
  :keywords   ("session" "management" "window-configuration" "persistence")
  :homepage   "https://github.com/tlh/workgroups.el"
+ :wikipage   "http://www.emacswiki.org/WorkgroupsForWindows"
  :commentary "\
 See the file README.md in `workgroups.el's directory
 

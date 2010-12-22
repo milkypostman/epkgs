@@ -1,4 +1,5 @@
 (:license    "GPL"
  :provided   (festival)
  :required   ((("emacs" comint)))
- :homepage   "http://www.cstr.ed.ac.uk/projects/festival")
+ :homepage   "http://www.cstr.ed.ac.uk/projects/festival"
+ :wikipage   "http://www.emacswiki.org/FestivalSpeechSynthesisSystem")

@@ -8,6 +8,7 @@
  :required   ((("emacs" cl custom)))
  :keywords   ("session" "session" "management" "desktop" "data" "tools")
  :homepage   "http://emacs-session.sourceforge.net/"
+ :wikipage   "http://www.emacswiki.org/EmacsSession"
  :commentary "\
 When you start Emacs, package Session restores various variables (e.g.,
 input histories) from your last session.  It also provides a menu

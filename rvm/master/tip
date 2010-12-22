@@ -8,6 +8,7 @@
  :required   ((("emacs" cl)))
  :keywords   ("ruby" "rvm")
  :homepage   "https://github.com/senny/rvm.el"
+ :wikipage   "http://www.emacswiki.org/RvmEl"
  :commentary "\
 M-x rvm-use-default prepares the current Emacs session to use
 the default ruby configured with rvm.

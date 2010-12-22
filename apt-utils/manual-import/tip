@@ -6,6 +6,7 @@
  :maintainer ("Matthew P. Hodges" . "mphodges@member.fsf.org")
  :provided   (apt-utils)
  :required   ((("emacs" browse-url dired jka-compr trace)))
+ :wikipage   "http://www.emacswiki.org/InterfaceToAPT"
  :commentary "\
 Package to interface Emacs with APT.  Start things off using e.g.:
 M-x apt-utils-show-package RET emacs21 RET

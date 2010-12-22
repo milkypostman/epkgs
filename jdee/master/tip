@@ -11,4 +11,5 @@
 	       ("jdee" jde-autoload)
 	       (nil semantic/senator)))
  :keywords   ("java" "tools")
- :homepage   "http://jdee.sourceforge.net/")
+ :homepage   "http://jdee.sourceforge.net/"
+ :wikipage   "http://www.emacswiki.org/JavaDevelopmentEnvironment")

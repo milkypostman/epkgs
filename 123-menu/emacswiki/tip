@@ -5,6 +5,8 @@
  :provided   (123-menu)
  :required   ((("emacs" cl)))
  :keywords   ("convenience")
+ :homepage   "http://www.emacswiki.org/OneTwoThreeMenu"
+ :wikipage   "http://www.emacswiki.org/OneTwoThreeMenu"
  :commentary "\
 Even though I've been using Emacs for years, I still have trouble
 remembering a lot of the key combinations for commands that I don't

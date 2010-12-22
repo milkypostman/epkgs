@@ -8,6 +8,7 @@
  :required   ((("emacs" electric)))
  :keywords   ("tools")
  :homepage   "http://www.grassouille.org/emacs/index.en.html"
+ :wikipage   "http://www.emacswiki.org/TailEl"
  :commentary "\
 This program displays ``tailed'' contents of files inside
  transients windows of Emacs.  It is primarily meant to keep an eye

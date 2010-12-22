@@ -11,6 +11,7 @@
 	       ("python-mode" python-mode)))
  :keywords   ("convenience")
  :homepage   "https://launchpad.net/s-x-emacs-werkstatt"
+ :wikipage   "http://www.emacswiki.org/ThingAtPointUtils"
  :commentary "\
 Delivers a set of functions to return, mover over or
 manipulate a given THING. THING may be a well known

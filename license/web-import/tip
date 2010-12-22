@@ -6,4 +6,5 @@
  :maintainer ("Marcelo Toledo" . "marcelo@marcelotoledo.org")
  :provided   (license)
  :keywords   ("gpl" "lgpl" "fdl" "gnu")
- :homepage   "http://www.marcelotoledo.org/stuff/")
+ :homepage   "http://www.marcelotoledo.org/stuff/"
+ :wikipage   "http://www.emacswiki.org/LicenseCopyright")

@@ -9,6 +9,7 @@
 	      (("emacs" bookmark)))
  :keywords   ("sunrise" "commander" "files" "manager" "midnight" "norton" "orthodox")
  :homepage   "http://joseito.republika.pl/"
+ :wikipage   "http://www.emacswiki.org/Sunrise_Commander"
  :commentary "\
 Here  is  another two-pane mc emulation layer for emacs. It's built on top of
 Dired and takes advantage of all its features, offering at the same time  the

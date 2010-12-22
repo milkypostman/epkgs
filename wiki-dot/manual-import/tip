@@ -1,0 +1,28 @@
+(:summary    "Export wiki pages to dot files"
+ :created    "2001"
+ :updated    "2001"
+ :license    "GPL-2"
+ :authors    (("Alex Schroeder" . "alex@gnu.org"))
+ :maintainer ("Alex Schroeder" . "alex@gnu.org")
+ :keywords   ("hypermedia")
+ :wikipage   "http://www.emacswiki.org/WikiDot"
+ :commentary "\
+Produces a graph of the entire wiki.  The graph is described using
+the dot language.  See http://www.graphviz.org/ for source and binary
+distributions.  There are two tools available: dot for directed
+graphs and neato for undirected graphs.  Customize `wiki-graph-type'
+to control the output.
+
+In order to convert the dot file to postscript (see the respective
+man pages for other formats):
+
+$ neato -Tps -o wiki.ps wiki.dot
+
+I use the -Elen=1.3 parameter to make edges longer.
+
+Please: If you have interesting ideas about how to improve usability
+of the resulting graph, tell me all about it!  :) Problems I'm
+having: How to produce a gif file -- it seems I have to install fonts
+somewhere but I don't know how.  How to increase the size of the
+resulting postscript file -- most of the time only part of the graph
+is visible.")

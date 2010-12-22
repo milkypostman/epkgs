@@ -8,6 +8,7 @@
  :required   ((("emacs" cl derived)))
  :keywords   ("data" "regexp")
  :homepage   "http://mercurial.intuxication.org/hg/traverselisp"
+ :wikipage   "http://www.emacswiki.org/TraverseDirectory"
  :commentary "\
 ==========
 

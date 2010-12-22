@@ -6,4 +6,6 @@
  :maintainer ("Trey Jackson" . "bigfaceworm@hotmail.com")
  :provided   (sig-quote)
  :required   ((("emacs" cl mail-utils message mh-comp sendmail)
-	       ("vm" vm))))
+	       ("vm" vm)))
+ :homepage   "http://www.emacswiki.org/sig-quote"
+ :wikipage   "http://www.emacswiki.org/sig-quote")

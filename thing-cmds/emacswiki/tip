@@ -8,6 +8,8 @@
  :required   ((("emacs" cl thingatpt))
 	      (("thingatpt+" thingatpt+)))
  :keywords   ("thingatpt" "thing" "region" "selection")
+ :homepage   "http://www.emacswiki.org/ThingAtPointCommands"
+ :wikipage   "http://www.emacswiki.org/ThingAtPointCommands"
  :commentary "\
 You can use the commands defined here to select different kinds of
  text entities (\"things\").  They are especially useful in

@@ -9,4 +9,5 @@
 	       ("jabber" jabber-autoloads)
 	       (nil osd password ssl))
 	      (("emacs" dbus password-cache)))
- :homepage   "http://emacs-jabber.sourceforge.net/")
+ :homepage   "http://emacs-jabber.sourceforge.net/"
+ :wikipage   "http://www.emacswiki.org/JabberEl")

@@ -7,6 +7,8 @@
  :provided   (typing)
  :required   ((("emacs" cl)))
  :keywords   ("games")
+ :homepage   "http://www.emacswiki.org/TypingOfEmacs"
+ :wikipage   "http://www.emacswiki.org/TypingOfEmacs"
  :commentary "\
 This is a game inspired by The Typing Of The Dead on the Dreamcast.
 That game itself is a parody of The House Of The Dead.  In the

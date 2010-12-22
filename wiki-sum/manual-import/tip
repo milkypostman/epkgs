@@ -1,0 +1,13 @@
+(:summary    "Write a summary of the wiki"
+ :created    "2001"
+ :updated    "2001"
+ :license    "GPL-2"
+ :authors    (("Alex Schroeder" . "alex@gnu.org"))
+ :maintainer ("Alex Schroeder" . "alex@gnu.org")
+ :provided   (wiki-sum)
+ :required   ((("wiki" wiki)))
+ :keywords   ("hypermedia")
+ :wikipage   "http://www.emacswiki.org/WikiSummary"
+ :commentary "\
+Eventually this code should generate description and keyword meta
+tags for my wiki pages.")

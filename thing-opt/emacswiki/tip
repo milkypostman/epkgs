@@ -7,6 +7,8 @@
  :provided   (thing-opt)
  :required   ((("emacs" cl thingatpt)))
  :keywords   ("convenience")
+ :homepage   "http://www.emacswiki.org/ThingAtPointOptional"
+ :wikipage   "http://www.emacswiki.org/ThingAtPointOptional"
  :commentary "\
 TODO documentation
 TODO forward-string by syntax (?)")

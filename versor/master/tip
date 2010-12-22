@@ -9,4 +9,5 @@
 	       ("emacs" cl find-func tempo tmm)
 	       ("screen-setups" screen-setups)
 	       (nil handsfree-menu-additions handsfree-tools-menus languide-utils versor-joystick)))
- :keywords   ("editing"))
+ :keywords   ("editing")
+ :wikipage   "http://www.emacswiki.org/EmacsVersor")

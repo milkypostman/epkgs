@@ -8,6 +8,7 @@
  :required   ((("deferred" deferred)))
  :keywords   ("scroll" "deferred")
  :homepage   "https://github.com/kiwanami/emacs-inertial-scroll"
+ :wikipage   "http://www.emacswiki.org/InertialScrolling"
  :commentary "\
 This is a demonstration for deferred.el and co-routine.
 

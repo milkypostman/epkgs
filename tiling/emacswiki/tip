@@ -6,6 +6,8 @@
  :maintainer ("Fang lungang" . "fanglungang@163.com")
  :provided   (tiling)
  :keywords   ("convenience" "frames")
+ :homepage   "http://www.emacswiki.org/QuickTiling"
+ :wikipage   "http://www.emacswiki.org/QuickTiling"
  :commentary "\
 As the display geting larger and larger, \"Tiling\" is getting more and more
 popular. Emacs is tiling windows within the frame for sure. However, by

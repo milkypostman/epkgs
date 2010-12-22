@@ -7,6 +7,8 @@
  :provided   (pcmpl-ssh)
  :required   ((("emacs" executable pcomplete)))
  :keywords   ("shell" "completion" "ssh")
+ :homepage   "http://www.emacswiki.org/PcompleteSSH"
+ :wikipage   "http://www.emacswiki.org/PcompleteSSH"
  :commentary "\
 This will allow eshell to autocomplete SSH hosts from the list of
 known hosts in your ~/.ssh/known_hosts file. Note that newer

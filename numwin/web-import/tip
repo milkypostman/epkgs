@@ -1,0 +1,19 @@
+(:summary    "Window numbers when needed"
+ :created    "20100912"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Paul M. Rodriguez" . "paulmrodriguez@gmail.com"))
+ :maintainer ("Paul M. Rodriguez" . "paulmrodriguez@gmail.com")
+ :provided   (numwin)
+ :required   ((("window-number" window-number)))
+ :keywords   ("convenience")
+ :homepage   "http://gopher.ruricolist.com:70/lisp/"
+ :commentary "\
+This library extends window-number.el
+<http://www.emacswiki.org/emacs/NumberedWindows> to turn window
+numbering off and on only as needed.  It replaces `other-window'
+with a function that prompts for a window number only when there
+are more than two windows.  It replaces `delete-window',
+`delete-other-windows', `split-window-horizontally', and
+`split-window-vertically' with functions that, when called with an
+argument, prompt for a target window by number.")

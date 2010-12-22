@@ -3,6 +3,7 @@
  :provided   (bm)
  :required   ((("emacs" info overlay)))
  :homepage   "http://www.nongnu.org/bm/"
+ :wikipage   "http://www.emacswiki.org/VisibleBookmarks"
  :commentary "\
 Description:
 

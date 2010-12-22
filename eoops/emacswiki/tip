@@ -2,4 +2,6 @@
  :created    "1992"
  :updated    "1992"
  :license    "GPL-2"
- :provided   (eoops))
+ :provided   (eoops)
+ :homepage   "http://www.emacswiki.org/EmacsObjectOrientedProgrammingSystem"
+ :wikipage   "http://www.emacswiki.org/EmacsObjectOrientedProgrammingSystem")

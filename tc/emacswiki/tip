@@ -6,4 +6,6 @@
  :maintainer ("Lars R. Clausen" . "lrclause@cs.uiuc.edu")
  :provided   (tc)
  :required   ((("emacs" mail-extr overlay)))
- :keywords   ("citing" "filling" "mail" "news"))
+ :keywords   ("citing" "filling" "mail" "news")
+ :homepage   "http://www.emacswiki.org/TrivialCite"
+ :wikipage   "http://www.emacswiki.org/TrivialCite")

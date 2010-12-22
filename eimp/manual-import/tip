@@ -6,6 +6,7 @@
  :maintainer ("Matthew P. Hodges" . "mphodges@member.fsf.org")
  :provided   (eimp)
  :required   ((("emacs" image-mode trace)))
+ :wikipage   "http://www.emacswiki.org/EmacsImageManipulation"
  :commentary "\
 This package allows interactive image manipulation from within
 Emacs.  It uses the mogrify utility from ImageMagick to do the

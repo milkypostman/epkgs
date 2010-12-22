@@ -6,6 +6,8 @@
  :maintainer ("Vinicius Jose Latorre" . "viniciusjl@ig.com.br")
  :provided   (sys)
  :keywords   ("internal" "maintenance" "debug")
+ :homepage   "http://www.emacswiki.org/SysPackage"
+ :wikipage   "http://www.emacswiki.org/SysPackage"
  :commentary "\
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 

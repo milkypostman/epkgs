@@ -5,6 +5,7 @@
  :maintainer ("Nathaniel Flath" . "nflath@gmail.com")
  :provided   (hungry-delete)
  :homepage   "https://github.com/nflath/hungry-delete"
+ :wikipage   "http://www.emacswiki.org/hungry-delete"
  :commentary "\
 This file contains all the necessary functions and macros, taken from
 cc-mode, to implement hungry deletion without relying on cc-mode.  This

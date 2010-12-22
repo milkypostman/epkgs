@@ -7,6 +7,7 @@
  :provided   (bs)
  :keywords   ("convenience")
  :homepage   "http://www.geekware.de/software/emacs/"
+ :wikipage   "http://www.emacswiki.org/BufferSelection"
  :commentary "\
 Version: 1.17
 X-URL: http://www.geekware.de/software/emacs

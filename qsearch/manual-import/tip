@@ -6,6 +6,7 @@
  :maintainer ("Alex Schroeder" . "alex@gnu.org")
  :provided   (qsearch)
  :keywords   ("convenience")
+ :wikipage   "http://www.emacswiki.org/QuasimodeSearch"
  :commentary "\
 After loading, type a string while pressing Super to search forward,
 type any string while pressing Hyper to search backwards.  Thus, you

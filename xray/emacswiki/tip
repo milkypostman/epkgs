@@ -7,6 +7,8 @@
  :provided   (xray)
  :required   ((("emacs" apropos ehelp help-mode info)))
  :keywords   ("help" "internal" "maintenance" "debug")
+ :homepage   "http://www.emacswiki.org/XrayPackage"
+ :wikipage   "http://www.emacswiki.org/XrayPackage"
  :commentary "\
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 

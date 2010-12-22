@@ -8,6 +8,7 @@
  :required   ((("emacs" cl pp)))
  :keywords   ("deferred" "async")
  :homepage   "https://github.com/kiwanami/emacs-deferred"
+ :wikipage   "http://www.emacswiki.org/DeferredTask"
  :commentary "\
 'deferred.el' is a simple library for asynchronous tasks.  The API
 is almost the same as JSDeferred written by cho45. See the

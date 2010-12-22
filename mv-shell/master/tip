@@ -5,6 +5,7 @@
  :maintainer ("Nathaniel Flath" . "nflath@gmail.com")
  :provided   (mv-shell)
  :homepage   "https://github.com/nflath/mv-shell"
+ :wikipage   "http://www.emacswiki.org/mv-shell"
  :commentary "\
 mv-shell integrates with shell-mode in order to keep buffers in sync when
 moving files around.  If you enter a 'mv' command on a file that has a buffer opened,

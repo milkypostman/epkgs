@@ -2,8 +2,8 @@
  :created    "2011"
  :updated    "2011"
  :license    "GPL"
- :authors    (("Jari Aalto"))
- :maintainer ("Jari Aalto")
+ :authors    (("Jari Aalto" . "jari.aalto@cante.net"))
+ :maintainer ("Jari Aalto" . "jari.aalto@cante.net")
  :provided   (epackage)
  :keywords   ("tools")
  :homepage   "https://github.com/jaalto/project--emacs-epackage"
@@ -225,6 +225,34 @@ Preface 2009
 
      Building the initial list of available packages takes some
      time at startup.
+
+ About Configuration
+
+   Private repositories
+
+     Private installed epackage repositories, or other sources, can
+     be defined into `epackage--sources-file-list'. The list of
+     files included in there will be combined with
+     `epackage--sources-list-url'. The order of the files matter:
+     the packages are read first-served basis. An example:
+
+         (setq epackage--sources-file-list
+               '(\"~/.emacs.d/epackage-local.lst\"))
+
+     Say the *epackage-local.lst* lists package =foo= and file
+     pointed by `epackage--sources-list-url' also contains package
+     =foo=. Because the files will be combined,
+     *epackage-local.lst* will take precedence its package =foo=
+     will be used for download.
+
+   Automatic install of packages
+
+     The basic operation mode is just do action at a time to give user
+     full control of packages. In daily use it may be desireable
+     to byte compile package after they have been downloaded. Use this:
+
+         (require 'epackage)
+         (add-to-list 'epackage--download-action-list 'compile)
 
  The DELPS framework
 
@@ -483,19 +511,19 @@ Preface 2009
 
     The *-xactivate.el
 
-     This file makes the extension immediately active in user's
-     environment. It can modify current environment by adding
-     functions to hooks, adding minor or major modes or arranging
-     key bindings so that when pressed, a feature is loaded and
-     activated. It may also loop through `buffer-list' to activate
-     features immediately in running Emacs. It is best that any
-     custom settings, like variables and prefix keys, are defined
-     in `~/.emacs' *before* this file gets loaded. As with
-     `*-install.el', try to avoid any `require' or `load' commands
-     and stick to `autoload'. Mnemonic: \"If you load this file, the
-     bells and whistles are turned on\". The \"x\" at the start of the
-     name is to help proper sorting ordering of configuration
-     files. The file ends in:
+     This file does the same as *-install.el, but it can do more.
+     Instead of being conservative, it boldly modify current
+     environment by adding functions to hooks, adding minor or
+     major modes or arranging key bindings so that when pressed, a
+     feature is loaded and activated. It may also loop through
+     `buffer-list' to activate features immediately in running
+     Emacs. It is best that any custom settings, like variables and
+     prefix keys, are defined in `~/.emacs' *before* this file gets
+     loaded. As with `*-install.el', try to avoid any `require' or
+     `load' commands and stick to `autoload'. Mnemonic: \"If you
+     load this file, the bells and whistles are turned on\". The \"x\"
+     at the start of the name is to help proper sorting ordering of
+     configuration files. The file ends in:
 
          (provide 'PACKAGE-xactivate)
 
@@ -819,7 +847,7 @@ Preface 2009
      Additional arguments passed to VCS program after specifying
      the *Vcs-Url* E.g. CVS directories may need a specific module
      to check out. A setup like below would yield command: \"cvs -d
-     <Vcs-Url> co -d <Package> <Vcs-Args>\"
+     <Vcs-Url> co -d upstream <Vcs-Args>\"
 
          Vcs-Type: cvs
          Vcs-Url: :pserver:anonymous@example.com/reository/foo
@@ -853,6 +881,17 @@ Preface 2009
 
          X-Comment: <comment here>
          X-Upstream-Homepage: <URL>
+
+     If making the epackaging needs special treatment for the
+     extension, please document those in field like:
+
+             X-Development:
+              Before BBDB can be used, the autoloads file must be generated.
+              Run command:
+              .
+                 ./configure && make autoloads
+              .
+              And it will generate file lisp/bbdb-autoloads.el
 
 Epackage compatibility levels
 

@@ -2,4 +2,5 @@
  :updated    "20060624"
  :license    "GPL-2"
  :provided   (el4r)
- :homepage   "http://www.rubyist.net/~rubikitch/computer/el4r/index.en.html")
+ :homepage   "http://www.rubyist.net/~rubikitch/computer/el4r/index.en.html"
+ :wikipage   "http://www.emacswiki.org/EmacsLispForRuby")

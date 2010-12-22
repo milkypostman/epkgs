@@ -5,6 +5,7 @@
  :provided   (ioccur)
  :required   ((("emacs" cl derived outline wdired)))
  :homepage   "http://mercurial.intuxication.org/hg/ioccur"
+ :wikipage   "http://www.emacswiki.org/IncrementalOccur"
  :commentary "\
 To save `ioccur-history', use desktop, adding that to your .emacs:
 (add-to-list 'desktop-globals-to-save 'ioccur-history)

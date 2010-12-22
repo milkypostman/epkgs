@@ -8,6 +8,7 @@
  :required   ((("emacs" cl custom)))
  :keywords   ("extensions" "convenience")
  :homepage   "http://www.cua.dk/ido.html"
+ :wikipage   "http://www.emacswiki.org/InteractivelyDoThings"
  :commentary "\
 Installation:
 To get the alternative switch-to-buffer and find-file functions in

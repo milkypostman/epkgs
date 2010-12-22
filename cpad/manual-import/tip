@@ -10,6 +10,7 @@
  :required   ((("emacs" cl)))
  :keywords   ("calculator" "math" "functional" "language" "emile" "exp" "emile" "emile" "revision" "emile" "functions" "debug" "message" "all" "commented")
  :homepage   "http://akimichi.homeunix.net/~emile/aki/hiki.cgi?CpadElisp"
+ :wikipage   "http://www.emacswiki.org/CalculationPad"
  :commentary "\
 This package enables a calculation in Emacs buffer like a calculation pad.
    It immediately parse and calculate a expression, and replace it with the result.

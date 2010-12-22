@@ -7,6 +7,8 @@
  :provided   (wide-n)
  :required   ((("emacs" repeat)))
  :keywords   ("narrow" "restriction" "widen")
+ :homepage   "http://www.emacswiki.org/MultipleNarrowings"
+ :wikipage   "http://www.emacswiki.org/MultipleNarrowings"
  :commentary "\
 This library modifies commands `narrow-to-region',
    `narrow-to-defun', and `narrow-to-page' (`C-x n n', `C-x n d',

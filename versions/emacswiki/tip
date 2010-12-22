@@ -6,6 +6,8 @@
  :maintainer ("Vinicius Jose Latorre" . "viniciusjl@ig.com.br")
  :provided   (versions)
  :keywords   ("help" "internal" "maintenance" "debug")
+ :homepage   "http://www.emacswiki.org/VersionsPackage"
+ :wikipage   "http://www.emacswiki.org/VersionsPackage"
  :commentary "\
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 

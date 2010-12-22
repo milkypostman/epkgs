@@ -8,6 +8,8 @@
  :required   ((("emacs" cl)
 	       ("traverselisp" iterator traverselisp)))
  :keywords   ("image" "picture")
+ :homepage   "http://www.emacswiki.org/EmacsImageViewer"
+ :wikipage   "http://www.emacswiki.org/EmacsImageViewer"
  :commentary "\
 Dependencies: - traverselisp.el:
                 http://mercurial.intuxication.org/hg/traverselisp

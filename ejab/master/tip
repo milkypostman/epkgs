@@ -8,6 +8,7 @@
  :required   ((("emacs" cl sha1)))
  :keywords   ("comm")
  :homepage   "http://ejab.sourceforge.net/"
+ :wikipage   "http://www.emacswiki.org/EmacsJab"
  :commentary "\
 This file and those that accompany it define a Jabber client for
 Emacs called Ejab.  Ejab is highly configurable and receptive to

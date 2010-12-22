@@ -8,6 +8,7 @@
  :required   ((("emacs" xml)))
  :keywords   ("convenience")
  :homepage   "http://edward.oconnor.cx/elisp/"
+ :wikipage   "http://www.emacswiki.org/MacOSXPlist"
  :commentary "\
 Simple parser for Mac OS X plist files. The main entry point is
 `osx-plist-parse-file' (which see). As a useful example, code is

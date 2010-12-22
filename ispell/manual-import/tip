@@ -8,6 +8,7 @@
  :required   ((("emacs" ehelp)))
  :keywords   ("unix" "wp")
  :homepage   "http://kdstevens.com/~stevens/ispell-page.html"
+ :wikipage   "http://www.emacswiki.org/InteractiveSpell"
  :commentary "\
 INSTRUCTIONS
 

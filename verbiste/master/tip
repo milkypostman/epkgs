@@ -2,4 +2,5 @@
  :created    "2002"
  :updated    "2003"
  :license    "GPL-2"
- :provided   (verbiste))
+ :provided   (verbiste)
+ :wikipage   "http://www.emacswiki.org/VerbisteEl")
