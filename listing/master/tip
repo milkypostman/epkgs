@@ -1,6 +1,6 @@
 (:summary    "Show columnized view of list elements"
  :created    "20100605"
- :updated    "20101214"
+ :updated    "20101223"
  :license    "GPL-3"
  :authors    (("Jonas Bernoulli" . "jonas@bernoul.li"))
  :maintainer ("Jonas Bernoulli" . "jonas@bernoul.li")

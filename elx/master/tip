@@ -1,6 +1,6 @@
 (:summary    "Extract information from Emacs Lisp libraries"
  :created    "20081202"
- :updated    "20101003"
+ :updated    "20101223"
  :license    "GPL-3"
  :authors    (("Jonas Bernoulli" . "jonas@bernoul.li"))
  :maintainer ("Jonas Bernoulli" . "jonas@bernoul.li")

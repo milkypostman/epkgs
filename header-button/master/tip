@@ -1,6 +1,6 @@
 (:summary    "Clickable buttons in header lines"
  :created    "20100604"
- :updated    "20101218"
+ :updated    "20101219"
  :license    "GPL-3"
  :authors    (("Jonas Bernoulli" . "jonas@bernoul.li"))
  :maintainer ("Jonas Bernoulli" . "jonas@bernoul.li")
@@ -18,11 +18,11 @@ While `button' provides the function `insert-button' (as well as
 others) to insert a button into a buffer at point, something similar
 can't be done here, due to the lack of point in header lines.
 
-Instead us `format-header-button' like this:
+Instead us `header-button-format' like this:
 
 (setq header-line-format
       (concat \"Here's a button: \"
-              (format-header-button \"Click me!\" :action 'my-action)))
+              (header-button-format \"Click me!\" :action 'my-action)))
 
 Like with `button' you can create your own derived button types:
 
@@ -31,8 +31,8 @@ Like with `button' you can create your own derived button types:
   :action 'my-action)
 
 (setq header-line-format
-      (concat (format-header-button \"Click me!\" :action 'my-action) \" \"
-              (format-header-button \"No me!\" :type 'my-header)))
+      (concat (header-button-format \"Click me!\" :action 'my-action) \" \"
+              (header-button-format \"No me!\" :type 'my-header)))
 
 The function associated with `:action' is called with the button plist
 as only argument.  Do no use `plist-get' to extract a value from it.
