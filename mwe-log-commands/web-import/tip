@@ -8,6 +8,7 @@
  :required   ((("emacs" cl)))
  :keywords   ("help")
  :homepage   "http://www.foldr.org/~michaelw/emacs/"
+ :wikipage   "http://www.emacswiki.org/CommandLogMode"
  :commentary "\
 This add-on can be used to demo Emacs to an audience.  When
 activated, keystrokes get logged into a designated buffer, along

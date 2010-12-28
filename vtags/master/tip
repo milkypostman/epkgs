@@ -4,7 +4,7 @@
  :license    "GPL-2"
  :authors    (("Edward Bishop"))
  :maintainer ("FSF")
- :provided   (etags regress)
+ :provided   (etags)
  :required   ((("emacs" cl edebug ring)))
  :keywords   ("tools")
  :homepage   "https://savannah.gnu.org/projects/vtags"

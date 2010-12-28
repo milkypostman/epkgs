@@ -7,6 +7,7 @@
  :provided   (cua-lite)
  :keywords   ("convenience" "emulations" "cua")
  :homepage   "http://www.northbound-train.com/"
+ :wikipage   "http://www.emacswiki.org/CuaLightMode"
  :commentary "\
 cua-lite is a CUA emulator package for Emacs.  There are three
  things that make this package different from the others already

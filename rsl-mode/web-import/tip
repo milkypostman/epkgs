@@ -1,1 +1,2 @@
-(:homepage   "http://accad.osu.edu/~smay/RManNotes/rsl_emacs_mode.html")
+(:homepage   "http://accad.osu.edu/~smay/RManNotes/rsl_emacs_mode.html"
+ :wikipage   "http://www.emacswiki.org/RSLEmacsMode")

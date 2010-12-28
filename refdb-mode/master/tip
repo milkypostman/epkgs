@@ -1,0 +1,12 @@
+(:summary    "Minor mode for RefDB interaction"
+ :created    "20031104"
+ :updated    "2007"
+ :license    "GPL-2"
+ :authors    ((nil . "smith@sideshowbarker.net")
+	      (nil . "markus@mhoenicka.de"))
+ :maintainer (nil . "smith@sideshowbarker.net")
+ :provided   (refdb-mode refdb-output-mode ris)
+ :required   ((("emacs" derived easy-mmode easymenu)))
+ :keywords   ("xml" "docbook" "tei" "bibliography")
+ :homepage   "http://refdb.sourceforge.net/"
+ :wikipage   "http://www.emacswiki.org/RefdbMode")

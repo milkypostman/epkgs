@@ -4,8 +4,9 @@
  :license    "Apache-2.0"
  :authors    (("Issac Trotts" . "issactrotts@google.com"))
  :maintainer ("Issac Trotts" . "issactrotts@google.com")
- :provided   (ack nav)
- :required   ((("emacs" compile dired)))
+ :provided   (nav)
+ :required   ((("ack" ack)
+	       ("emacs" dired)))
  :homepage   "http://code.google.com/p/emacs-nav/"
  :wikipage   "http://www.emacswiki.org/Nav"
  :commentary "\
