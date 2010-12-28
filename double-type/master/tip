@@ -72,8 +72,12 @@ KNOWN PROBLEMS
 ==============
 - Codes aside, this document should be rewritten.
   My English sucks.
+- While defining keyboard macro, \"double type\" event will be
+  disabled because of technical reason.
 
 
 WISH LIST
 =========
-- Show \"single-type\" and \"double-type\" bindings by `where-is'.")
+- Show \"single-type\" and \"double-type\" bindings by `where-is'.
+- Show commands bound to \"double-type\" event by `describe-key'.
+- Deal with keyboard macro.")

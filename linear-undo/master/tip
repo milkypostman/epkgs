@@ -3,6 +3,7 @@
  :updated    "2010"
  :license    "GPL-3"
  :provided   (linear-undo)
+ :required   ((("emacs" cl)))
  :keywords   ("emulation" "wp")
  :homepage   "https://github.com/k-talo/linear-undo.el"
  :commentary "\

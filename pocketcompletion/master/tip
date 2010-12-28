@@ -1,0 +1,11 @@
+(:summary    "Tree style completion intended for tablets"
+ :provided   (pocketcompletion)
+ :required   ((("emacs" cl)
+	       ("predictive" dict-tree trie)))
+ :homepage   "https://github.com/jave/pocketcompletion"
+ :commentary "\
+pocketcompletion aims to provide a style of completion that is
+useful on a small tablet device, like the Openmoko Freerunner.
+
+TODO currently this seems to be broken due to API changes in
+dict-tree.el(maybe).")

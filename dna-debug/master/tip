@@ -1,0 +1,3 @@
+(:provided   (dna-debug)
+ :required   ((("emacs" json)))
+ :homepage   "https://github.com/jave/dna-debug")

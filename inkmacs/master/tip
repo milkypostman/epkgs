@@ -1,0 +1,8 @@
+(:summary    "Experimental emacs/inkscape bridge"
+ :license    "GPL"
+ :authors    (("joakim verona"))
+ :maintainer ("joakim verona")
+ :provided   (inkscape)
+ :required   ((("emacs" dbus)
+	       (nil dbus-introspection dbus-proxy)))
+ :homepage   "https://github.com/jave/inkmacs")

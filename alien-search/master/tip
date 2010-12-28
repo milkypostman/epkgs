@@ -3,8 +3,7 @@
  :updated    "2010"
  :license    "GPL-3"
  :provided   (alien-search)
- :required   ((("emacs" cl re-builder))
-	      (("emacs" menu-bar)))
+ :required   ((("emacs" align cl menu-bar re-builder)))
  :keywords   ("convenience" "emulations" "matching" "tools" "unix" "wp")
  :homepage   "https://github.com/k-talo/alien-search.el"
  :commentary "\
@@ -60,6 +59,23 @@ your .emacs start up file:
    (custom-set-variables
     '(alien-search/alien-type 'perl) ;; Choose by your preference.
     '(reb-re-syntax 'alien)) ;; Tell re-builder to use alien regexp.
+
+
+TERMINOLOGY
+===========
+Technical terms appear in this document is as follows.
+
+ALIEN REGEXP:
+    A regular expression in syntax which is alien to Emacs.
+    Typically, it is not so much backslashy.
+    By default, Regular expressions in syntax of `Perl' and
+    `Ruby' can be used as ALIEN REGEXP with this library.
+
+EXTERNAL COMMAND:
+    An external program that gives Emacs the ability to handle
+    ALIEN REGEXP.
+    Commands written in `Perl' and `Ruby' are pre-defined in
+    this library.
 
 
 USAGE EXAMPLE
@@ -284,6 +300,88 @@ COMMANDS(4): CONSTRUCTING REGEXP
      in alien regexp.
 
 
+COMMANDS(5): ALIGNMENT USING ALIEN REGEXP
+=========================================
+
+`C-M-|'
+`M-x align'
+
+     Align region according to pre-defined rules.
+
+     Alien regexp can be used in a rule by putting an
+     `alien-type' attribute on the rule.
+
+     Example)
+
+       (add-to-list
+        'align-rules-list
+        '(perl-and-ruby-hash-form
+
+          ;; This rule will be applied when `alien-type'
+          ;; is `perl' or `ruby'.
+          (alien-type . '(perl ruby))
+
+          (regexp . \"([ \\\\t]*)=>[ \\\\t]*[^# \\\\t\\\\n]\") ;; Alien Regexp
+          (group  . 1)
+          (repeat . t)
+          (modes  . '(perl-mode cperl-mode ruby-mode))))
+
+     See also `align-rules-list' and help document of an advice
+     of `align-region' for more information about alignment rules.
+
+
+`M-s M-a REGEXP <RET>'
+`M-x alien-search/align <RET> REGEXP <RET>'
+
+     Align the current region using a partial alien regexp
+     read from the minibuffer.
+
+     The alien regexp read from the minibuffer will be
+     supposed to be placed after whitespaces.
+
+     See also `align-regexp'.
+
+`C-u M-s M-a REGEXP <RET> GROUP <RET> SPACING <RET> REPEAT <RET>'
+`C-u M-x alien-search/align <RET> REGEXP <RET> GROUP <RET> SPACING <RET> REPEAT <RET>'
+
+     Align the current region using a full alien regexp
+     read from the minibuffer.
+
+     Example)
+
+       < Use regexp of Perl in this example. >
+
+       When texts in region is:
+
+            (one 1)
+            (ten 10)
+            (hundred 100)
+            (thousand 1000)
+
+       Run command on the region with options:
+
+            REGEXP: ([ \\t]+)\\d
+                         |
+                         +--- GROUP: 1
+                              Alignment will be applied to each
+                              lines by inserting whitespaces to
+                              the place where the sub-expression
+                              specified by GROUP is matched to.
+            SPACING: 1
+            REPEAT:  y
+
+       Result is:
+
+            (one      1)
+            (ten      10)
+            (hundred  100)
+            (thousand 1000)
+                     |
+                     +---- Aligned using SPACING spaces.
+
+     See also `align-regexp'.
+
+
 FOR HACKERS
 ===========
 You can use regexp syntax of your choice of language, if you
@@ -301,14 +399,15 @@ See help documents of these variables and function
 for more information.
 
 
-KNOWN BUGS
-==========
+KNOWN PROBLEMS
+==============
 - Codes aside, this document should be rewritten.
   My English sucks :-(
 
 
 WISH LIST
 =========
+- History for `re-builder'.
 - `grep' with alien regexp?
 - `tags-search', `tags-query-replace', `dried-do-search' and
   `dired-do-query-replace-regexp' with alien regexp?

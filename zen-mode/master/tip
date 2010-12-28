@@ -1,0 +1,46 @@
+(:summary    "Remove/restore Emacs frame distractions quickly"
+ :created    "2009"
+ :updated    "2009"
+ :provided   (zen-mode)
+ :homepage   "https://github.com/jave/zen-mode"
+ :commentary "\
+zen-mode is Emacs in fullscreen without toolbar and menubar
+the function toggles between previous state of features and zen
+
+Please see BUG list below if Zen doesnt behave as expected.
+
+I bind zen-mode to f11 like this:
+(global-set-key [f11] 'zen-mode)
+
+TODO:
+
+- BUG: Currently Zen mode cant see the difference between a maximized
+frame and a fullscreen frame. This is because of a limitation in
+Emacs, which will be fixed future-ish. The end result is that
+currently Zen will probably not do what you expect if you enter zen
+while in a maximized frame. 
+
+- BUG: There are some problems in the Compiz WM, (and maybe other WM:s)
+regarding fullscreen: When selecting another workspace temporarily
+and going back, Emacs does not cover the wm panels as it should.
+This can be resolved with alt-tab a bit, but its annoying.  In
+Metacity it works well. Maybe Zen could learn to work around these
+WM:s
+
+- Improvement: Zen-master mode, like writeroom mode. (c-u m-x
+zen-mode), which isn't customizable, it just turns all distractions
+off, including minibuffer.
+
+- Improvement: Levels of Zen-ness. Quickly enter zen with different
+predetermined settings
+
+- Improvement: Optionaly advice some modes like ERC so as not to
+ interrupt while in Zen, also dont Gnus while in Zen. You are
+ supposed to concentrate :)
+
+- Improvement: Optional procrastination inhibitor. Enter Zen and dont leave until
+youv'e actually produced someting useful. For instance, 15 minutes
+must pass and some useful buffer must grow by a number of bytes
+before you can begin wasting time again.
+
+BUG: doesnt remember previous window size and position always")

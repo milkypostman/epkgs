@@ -1,5 +1,5 @@
 (:summary    "Enhanced support for editing and running Scheme code"
- :updated    "20101018"
+ :updated    "20101223"
  :license    "GPL-2"
  :provided   (quack)
  :required   ((("emacs" advice browse-url cmuscheme compile custom easymenu font-lock scheme thingatpt)))
@@ -95,6 +95,10 @@ RELEASE ANNOUNCEMENTS EMAIL:
     neil@neilvandyke.org to add you to the moderated `scheme-announce' list.
 
 HISTORY:
+
+    Version 0.40 (2010-12-22)
+        * Added indent rules for Racket `let:', `let*:', and `match'.  And
+          a provisional rule for `define:'.
 
     Version 0.39 (2010-10-18)
         * Renamed \"typed/scheme\" to \"typed/racket\".
