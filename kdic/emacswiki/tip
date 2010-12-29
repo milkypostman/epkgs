@@ -6,6 +6,8 @@
  :maintainer ("Alex Schroeder" . "alex@gnu.org")
  :provided   (kdic)
  :required   ((("emacs" wid-edit widget)))
+ :homepage   "http://www.emacswiki.org/KanjiDictionary"
+ :wikipage   "http://www.emacswiki.org/KanjiDictionary"
  :commentary "\
 Use M-x kdic to start a multiple choice practice session.  The data
 is derived from a dictionary.  The dictionary is not included.  You

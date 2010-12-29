@@ -3,6 +3,7 @@
  :license    "GPL-2"
  :provided   (mss)
  :homepage   "http://mathias.dahl.net/gqsmc.html"
+ :wikipage   "http://www.emacswiki.org/MakeSmartShortcuts"
  :commentary "\
 The best explanation of what this program does is to test it, but
 I'll try to explain the best I can.

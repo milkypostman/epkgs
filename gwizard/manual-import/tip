@@ -4,4 +4,5 @@
  :license    "GPL-2"
  :authors    (("Dirk-Jan C. Binnema" . "djcb@djcbsoftware.nl"))
  :maintainer ("Dirk-Jan C. Binnema" . "djcb@djcbsoftware.nl")
- :provided   (gwizard))
+ :provided   (gwizard)
+ :wikipage   "http://www.emacswiki.org/GnomeWizard")

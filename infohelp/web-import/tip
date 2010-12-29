@@ -1,0 +1,31 @@
+(:summary    "Make symbol names link to help"
+ :created    "20060613"
+ :updated    "20060616"
+ :license    "GPL-2"
+ :authors    (("Lennart Borgman"))
+ :maintainer ("Lennart Borgman")
+ :provided   (infohelp)
+ :required   ((("emacs" info)))
+ :keywords   ("help" "info")
+ :homepage   "http://ourcomments.org/Emacs/DL/elisp/"
+ :wikipage   "http://www.emacswiki.org/InfoHelp"
+ :commentary "\
+This is a quick fix to make functions, variables and faces enclosed
+by `' clickable links in Info buffers. Clicking those links will
+show the help for the symbo
+
+To use it do
+
+    (require 'infohelp)
+    (infohelp-preload)
+
+When you want to have those links in the Info buffer type there
+
+    M-x infohelp
+
+or just pres the <+>-key.
+
+To always use this in Info buffers customize `infohelp-links-in-info'.
+
+Follow the links with <RET>. Use <TAB> as usual. Toggle infohelp
+with <+> in Info buffers.")

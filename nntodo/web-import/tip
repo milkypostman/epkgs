@@ -7,6 +7,7 @@
  :provided   (nntodo)
  :required   ((("emacs" cl easy-mmode gnus-start nnheader nnmail nnmbox nnoo)))
  :keywords   ("news" "mail" "calendar" "convenience")
+ :wikipage   "http://www.emacswiki.org/TodoGnus"
  :commentary "\
 Warning: this is alpha code!  Use at your own risk!  Don your
 asbestos longjohns!  Might eat your mail for lunch!

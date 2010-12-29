@@ -8,6 +8,7 @@
  :required   ((("emacs" ehelp electric)))
  :keywords   ("tools" "convenience")
  :homepage   "http://www.barzilay.org/"
+ :wikipage   "http://www.emacswiki.org/SimpleCalculator"
  :commentary "\
 A calculator for Emacs.
 Why should you reach for your mouse to get xcalc (calc.exe, gcalc or

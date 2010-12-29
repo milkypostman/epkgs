@@ -3,6 +3,8 @@
  :authors    (("Ben Moseley" . "ben@moseley.name"))
  :maintainer ("Ben Moseley" . "ben@moseley.name")
  :provided   (markerpen)
+ :homepage   "http://www.emacswiki.org/MarkerPens"
+ :wikipage   "http://www.emacswiki.org/MarkerPens"
  :commentary "\
 Allows you to colour and highlight arbitrary sections of buffers.
 

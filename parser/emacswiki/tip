@@ -8,6 +8,8 @@
  :required   ((("closure" closure)
 	       ("emacs" cl help-fns)))
  :keywords   ("parser")
+ :homepage   "http://www.emacswiki.org/ParserCompiler"
+ :wikipage   "http://www.emacswiki.org/ParserCompiler"
  :commentary "\
 An experimental parser-compiler DSL that emphasizes concise and
 flexible expression with a lispy interface to render gnarly

@@ -8,4 +8,5 @@
  :provided   (bufcomp light)
  :required   ((("emacs" cl custom ispell)))
  :keywords   ("completion")
- :homepage   "http://www.math.washington.edu/~palmieri/Emacs/light.html")
+ :homepage   "http://www.math.washington.edu/~palmieri/Emacs/light.html"
+ :wikipage   "http://www.emacswiki.org/LightningCompletion")

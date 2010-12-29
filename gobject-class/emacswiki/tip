@@ -2,4 +2,6 @@
  :authors    (("Gustavo Sverzut Barbieri" . "barbieri@gmail.com"))
  :maintainer ("Gustavo Sverzut Barbieri" . "barbieri@gmail.com")
  :provided   (gobject-class)
- :keywords   ("gobject" "glib" "gtk" "helper" "utilities"))
+ :keywords   ("gobject" "glib" "gtk" "helper" "utilities")
+ :homepage   "http://www.emacswiki.org/GObjectClassHelpers"
+ :wikipage   "http://www.emacswiki.org/GObjectClassHelpers")

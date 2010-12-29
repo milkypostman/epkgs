@@ -6,6 +6,8 @@
  :maintainer ("Alex Schroeder" . "alex@gnu.org")
  :provided   (erobot)
  :keywords   ("games")
+ :homepage   "http://www.emacswiki.org/EmacsRobots"
+ :wikipage   "http://www.emacswiki.org/EmacsRobots"
  :commentary "\
 This game implements a very basic version of the many robot variants
 out there.  Players compete by writing a defun (called candidates,

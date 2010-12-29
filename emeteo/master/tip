@@ -8,6 +8,7 @@
  :required   ((("emacs" cl timer)))
  :keywords   ("metar" "meteo" "weather")
  :homepage   "http://gna.org/projects/emeteo/"
+ :wikipage   "http://www.emacswiki.org/EmacsMeteo"
  :commentary "\
 emeteo is a general emacs interface to provide meteorologic data
 

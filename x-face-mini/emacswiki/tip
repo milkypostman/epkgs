@@ -6,5 +6,5 @@
  :maintainer ("Yuuichi Teranishi" . "teranisi@gohome.org")
  :provided   (x-face-mini)
  :required   ((("emacs" cl)
-	       (nil x-face)))
+	       ("x-face" x-face)))
  :keywords   ("x-face" "thumbnails" "netpbm"))
