@@ -6,7 +6,7 @@
 	      ("unless")
 	      ("indicated otherwise"))
  :maintainer ("Andreas Roehler" . "andreas.roehler@easy-emacs.de")
- :provided   (ar-comment-lor ar-comment-test-lor beg-end footnote-init footnote-tests misc-utils sh-beg-end string-strip thing-at-point-markup thing-at-point-utils thing-in-thing thingatpt-before-after thingatpt-count-ratio thingatpt-helper-functions thingatpt-highlight thingatpt-python-expressions thingatpt-utils-base thingatpt-utils-test)
+ :provided   (ar-comment-lor ar-comment-test-lor beg-end footnote-init footnote-tests misc-utils sh-beg-end string-strip thing-at-point-markup thing-at-point-utils thingatpt-before-after thingatpt-classes-in-delimited-list thingatpt-classes-in-markup-list thingatpt-classes-in-rest-list thingatpt-classes-in-unpaired-delimited-list thingatpt-count-ratio thingatpt-delimited-list-in-delimited-list thingatpt-delimited-list-in-markup-list thingatpt-delimited-list-in-rest-list thingatpt-delimited-list-in-unpaired-delimited-list thingatpt-helper-functions thingatpt-highlight thingatpt-markup-list-in-delimited-list thingatpt-markup-list-in-major-forms-restricted-list thingatpt-python-expressions thingatpt-unpaired-delimited-list-in-delimited-list thingatpt-unpaired-delimited-list-in-markup-list thingatpt-unpaired-delimited-list-in-rest-list thingatpt-utils-base thingatpt-utils-test)
  :required   ((("emacs" footnote overlay sh-script time-stamp)
 	       ("python-mode" python-mode)))
  :keywords   ("convenience")
