@@ -1,0 +1,92 @@
+(:summary    "Major mode for MATLAB dot-m files"
+ :created    "2003"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("Matt Wette" . "mwette@alumni.caltech.edu")
+	      ("Eric M. Ludlam" . "eludlam@mathworks.com"))
+ :maintainer ("Eric M. Ludlam" . "eludlam@mathworks.com")
+ :provided   (matlab)
+ :required   ((("emacs" comint custom derived easymenu gud ispell shell tempo)))
+ :keywords   ("matlab")
+ :wikipage   "http://www.emacswiki.org/MatlabMode"
+ :commentary "\
+This major mode for GNU Emacs provides support for editing MATLAB dot-m
+files.  It automatically indents for block structures, line continuations
+(e.g., ...), and comments.
+
+Additional features include auto-fill including auto-additions of
+ellipsis for commands, and even strings.  Block/end construct
+highlighting as you edit.  Primitive code-verification and
+identification.  Templates and other code editing functions.
+Advanced symbol completion.  Code highlighting via font-lock.
+There are many navigation commands that let you move across blocks
+of code at different levels.
+
+Lastly, there is support for running MATLAB in an Emacs buffer,
+with full shell history and debugger support (when used with the db
+commands.)  The shell can be used as an online help while editing
+code, providing help on functions, variables, or running arbitrary
+blocks of code from the buffer you are editing.
+
+Finding Updates:
+
+The latest stable version of matlab.el can be found on MATLAB Central:
+
+Catagory:
+http://www.mathworks.com/matlabcentral/fileexchange/loadCategory.do?objectId=19&objectType=Category
+This File
+http://www.mathworks.com/matlabcentral/fileexchange/loadFile.do?objectId=104&objectType=file
+
+Older versions of matlab.el can be found in as matlab.el.1.10.1
+for emacsen that do not have the latest additional utilities such
+as tempo and derived.
+
+Installation:
+
+Put the this file as \"matlab.el\" somewhere on your load path, then
+add this to your .emacs or site-init.el file:
+
+  (autoload 'matlab-mode \"matlab\" \"Enter MATLAB mode.\" t)
+  (setq auto-mode-alist (cons '(\"\\\\.m\\\\'\" . matlab-mode) auto-mode-alist))
+  (autoload 'matlab-shell \"matlab\" \"Interactive MATLAB mode.\" t)
+
+User Level customizations (You need not use them all):
+  (setq matlab-indent-function t)	; if you want function bodies indented
+  (setq matlab-verify-on-save-flag nil) ; turn off auto-verify on save
+  (defun my-matlab-mode-hook ()
+    (setq fill-column 76))		; where auto-fill should wrap
+  (add-hook 'matlab-mode-hook 'my-matlab-mode-hook)
+  (defun my-matlab-shell-mode-hook ()
+	'())
+  (add-hook 'matlab-shell-mode-hook 'my-matlab-shell-mode-hook)
+
+If you are using a version of MATLAB with the Desktop enabled,
+you may need to add this:
+
+  (setq matlab-shell-command-swithes '(\"-nojvm\"))
+
+Please read the mode help for matlab-mode for additional
+configuration options.
+
+Syntax highlighting:
+  To get font-lock try adding this for older emacsen:
+    (font-lock-mode 1)
+  Or for newer versions of Emacs:
+    (global-font-lock-mode t)
+  To get hilit19 support try adding:
+    (matlab-mode-hilit)
+
+This package requires easymenu, tempo, and derived.
+This package will optionally use custom, shell, and gud.
+This package supports language specific extensions in imenu, func-menu,
+     speedbar, font-lock, and hilit19.
+
+Mailing List:
+
+A mailing list has been set up where beta versions of matlab.el are
+posted, and where comments, questions, bug reports, and answers to
+questions can be sent.
+
+To subscribe send email to \"lists@mathworks.com\" with a body of:
+   \"subscribe matlab-emacs\"
+to unsubscribe, send email with the body of: \"unsubscribe matlab-emacs\"")

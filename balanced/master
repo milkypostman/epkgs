@@ -1,0 +1,3 @@
+(:provided   (balanced)
+ :homepage   "http://www.cs.indiana.edu/chezscheme/emacs/"
+ :wikipage   "http://www.emacswiki.org/BalancedEl")

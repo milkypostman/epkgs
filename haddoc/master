@@ -1,0 +1,30 @@
+(:summary    "Browse Python HTML documentation from Emacs"
+ :repository (hg . "https://hg.furius.ca/public/haddoc")
+ :created    "2006"
+ :updated    "2006"
+ :license    "GPL-2"
+ :authors    (("Martin Blais" . "blais@furius.ca"))
+ :maintainer ("Martin Blais" . "blais@furius.ca")
+ :provided   (haddoc)
+ :required   ((("emacs" browse-url)))
+ :homepage   "http://furius.ca/haddoc/"
+ :commentary "\
+From a database of parsed Python HTML indexes, queries that database using an
+external tool (haddoc-lookup) and directs a web browser to the selected page.
+
+The database can be constructed via emacs:
+(setq haddoc-db-file \"~/haddoc.db\")
+M-x haddoc-update
+
+Bind the `haddoc-lookup' function to some key and enter the desired search
+terms.  I use this::
+
+    (define-key py-mode-map [(control c)(?.)] 'haddoc-lookup)
+
+
+Description
+
+This a tool for Emacs users writing Python code, who like to use Python HTML
+documentation rather than the texinfo.  It saves you time by making it
+possible to search the index and direct a web browser directly to the
+appropriate web page from within Emacs.")

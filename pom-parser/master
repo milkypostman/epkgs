@@ -1,0 +1,7 @@
+(:summary    "Tools for using attributes from a Maven POM in JDE project files"
+ :created    "2007"
+ :updated    "20071112"
+ :license    "as-is"
+ :provided   (pom-parser)
+ :required   ((("emacs" cl xml)
+	       ("jdee" jde))))

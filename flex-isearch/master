@@ -1,0 +1,26 @@
+(:summary    "Flex matching (like ido) in isearch"
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Jonathan Kotta" . "jpkotta@gmail.com"))
+ :maintainer ("Jonathan Kotta" . "jpkotta@gmail.com")
+ :provided   (flex-isearch)
+ :required   ((("emacs" cl regexp-opt)))
+ :keywords   ("convenience" "search")
+ :homepage   "http://www.emacswiki.org/FlexIsearch"
+ :wikipage   "http://www.emacswiki.org/FlexIsearch"
+ :commentary "\
+This was inspired by and based on Tomohiro Matsuyama's fuzzy.el.
+
+This file defines a minor mode that allows flex matching in
+isearch-mode.  The flex matching is very similar to the flex
+matching in ido mode (see `ido-enable-flex-matching').  Given an
+isearch string, it is transformed to a regexp that matches the
+original and also similar strings (basically, strings that contain
+the original characters in the same order, but possibly with other
+characters in between).  You can redefine
+`flex-isearch-compile-regexp' to change this behavior.
+
+When `flex-isearch-mode' is enabled, the `flex-isearch-enable'
+variable controls when the flex matching is activated.  See its
+docstring for details.")

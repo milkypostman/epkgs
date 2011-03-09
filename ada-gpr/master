@@ -1,0 +1,9 @@
+(:summary    "Major-mode for editing GNAT project files"
+ :created    "2004"
+ :updated    "2004"
+ :license    "GPL-2"
+ :authors    (("Rolf Ebert"))
+ :maintainer ("Rolf Ebert")
+ :provided   (ada-gpr ada-gpr-mode)
+ :required   ((("emacs" ada-mode)))
+ :keywords   ("languages" "ada"))

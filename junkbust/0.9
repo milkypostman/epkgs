@@ -1,0 +1,164 @@
+(:summary    "Tools for configuring the Internet Junkbuster Proxy"
+ :created    "2002"
+ :updated    "20021016"
+ :license    "GPL-2"
+ :authors    (("Neil W. Van Dyke" . "neil@neilvandyke.org"))
+ :maintainer ("Neil W. Van Dyke" . "neil@neilvandyke.org")
+ :provided   (junkbust)
+ :required   ((("emacs" custom font-lock)))
+ :homepage   "http://www.neilvandyke.org/junkbust-emacs/"
+ :commentary "\
+Introduction:
+  
+  `junkbust.el' adds some features to Emacs for configuring the Internet
+  Junkbuster Proxy(tm), aka Junkbuster, which is a GPL'd filtering HTTP
+  proxy from Junkbusters Corp. (`http://www.junkbuster.com/ijb.html').
+  Different people use Junkbuster for different reasons, including those of
+  privacy, usability, aesthetics, and bandwidth.
+
+  The three main features offered in this version of `junkbust.el' are:
+
+  * Functions for adding new rules to the Junkbuster blocklist without
+    having to manually edit the blocklist file.  The default URL is taken
+    from the native selection service.  `junkbust.el' generates a pattern
+    from a given URL, including special-case handling of URLs for
+    Akamai-hosted objects.  The blocklist file is automatically checked out
+    writable from VC if necessary.
+
+    As of version 0.4, `junkbust.el' also generates more \"generalized\"
+    versions of the blocklist pattern, which are accessible via the
+    minibuffer history (usually invoked with M-p) when the user is prompted
+    to edit the rule.  Currently, the generated generalizations are for
+    numeric parts of the trailing part of the URL path (which the author
+    often finds useful).  For example, if the original URL ends in
+    `box1-27-3.jpg', the default rule would end in `box1-27-3\\\\.jpg', and
+    the two alternative rules would end in `box1-27-[0-9]+\\\\.jpg' and
+    `box[0-9]+-[0-9]+-[0-9]+\\\\.jpg'.
+
+  * Fontifying of the Junkbuster blocklist.  This is helpful in reading the
+    path regular expression, and in distinguishing the domain name and path
+    parts of the rule patterns (which have different syntax).
+
+  * Organizing of the blocklist file, with the `junkbust-blocklist-organize'
+    function, sorting by positive/negative, domain name hierarchy (i.e., so
+    that `doubleclick.net' rules appear near `www.doubleclick.net' ones),
+    etc., and right-justifying the domain name patterns.  This organization
+    is good for visualizing many opportunities to combine or generalize
+    rules.
+
+  These features can be invoked from within the Emacs UI, or you can use the
+  special `gnuserv' support to invoke `junkbust' features from external
+  processes (e.g., window manager menus and key bindings, Web browser
+  menus).
+
+  Note: \"Internet Junkbuster Proxy\" is a trademark of Junkbusters Corp.
+        `junkbust.el' is some complementary Emacs Lisp code to help people
+        use Junkbuster through Emacs.  `junkbust.el' is not part of
+        Junkbuster, and is neither provided nor supported by Junkbusters
+        Corp.
+
+System Requirements:
+
+  The `junkbust.el' package was written using FSF GNU Emacs 20.7 on a
+  GNU/Linux system, and should work with recent Emacs versions on Unix
+  variants.  `junkbust.el' is not officially supported by the author under
+  Emacs running on non-Unixish platforms (but it'll probably work on those
+  platforms after properly setting the `junkbust-blocklist-file'
+  customization variable).
+
+  `junkbust.el' was developed for use with Junkbuster 2.0.2, and was tested
+  with Steven Waldherr's slightly-modified version, which was installed as
+  an RPM (`http://www.waldherr.org/junkbuster/').  It should work with any
+  recent Junkbuster version.
+
+  The remote feature was tested with `gnuserv' 2.1alpha
+  (`http://www-uk.hpl.hp.com/people/ange/gnuserv/') by Andy Norman.
+
+Installation:
+
+  1. Put this `junkbust.el' file somewhere in your Emacs Lisp load path.
+
+  2. Add the following to your `.emacs' file (or elsewhere):
+
+         (require 'junkbust)
+
+  3. Use the Customize feature of Emacs to set various options of the
+     Data->Junkbust group.  You should especially check to make sure that
+     `junkbust-blocklist-file' is set correctly for your Junkbuster 
+     installation.
+
+  4. You may wish to bind global keys to some functions.  For example:
+
+         (global-set-key   [f6] 'junkbust-block-url-edit-rule)
+         (global-set-key [S-f6] 'junkbust-block-url-edit-url)
+         (global-set-key [C-f6] 'junkbust-blocklist-file-visit)
+
+  5. Make sure that you have write permission to the Junkbuster
+     configuration files.  For example, if you installed Junkbuster as
+     user `root' on a Unix box, and you normally run your Emacs as user
+     `jlopez', you might do something like this:
+
+         chown -R jlopez /etc/junkbuster
+         chmod 0755 /etc/junkbuster
+         chmod 0644 /etc/junkbuster/*
+
+  6. Optionally, if you want to use `junkbust' features from remote
+     processes via `gnuserv', you can use `gnudoit' to call the functions
+     that begin with `junkbust-remote-' (which try to do the right thing
+     about creating frame, focusing, etc.).  For example, if you're using
+     the Fvwm2 window manager, you might wish to bind a key to invoke a menu
+     such as:
+
+   AddToMenu JunkbusterMenu \"Junkbuster\" Title
+   + \"Block &Pattern\"  Exec gnudoit '(junkbust-remote-block-url-edit-rule)'
+   + \"Block &Verbatim\" Exec gnudoit '(junkbust-remote-block-url-edit-url)'
+   + \"&Edit Blocklist\" Exec gnudoit '(junkbust-remote-blocklist-file-visit)'
+
+How To Use It:
+
+  The most frequent use of `junkbust.el' might be to quickly add blocklist
+  rules while you're browsing the Web, by copying the URL from the Web
+  browser and invoking `junkbust-block-url-edit-url' or
+  `junkbust-block-url-edit-rule'.  For example, if you see an image in Web
+  page viewed in Netscape Navigator, you might right-click on the image,
+  select \"Copy Image Location\" from the pop-up menu, select \"Block URL (edit
+  Rule)\" from the Tools->Junkbuster menu, and press Return.
+
+Author's To-Do List:
+
+  * In `junkbust-block-url-prompt', strip leading whitespace, then limit it
+    to one line.
+
+  * Redo `junkbust-blocklist-font-lock-keywords', since they're all wrong.
+
+  * Do metasequence fontifying in the domain name part of the blocklist
+    rules.
+
+  * Add more substantial function doc for `junkbust-blocklist-mode'.
+
+  * Add a function to organize the blocklist file.
+
+  * Support other Junkbuster config files.
+
+  * Add a mode menu to `blocklist-mode'.
+
+  * Add documentation about Netscape selection crash bug.
+
+  * Improve code in `junkbust-remote-block-url-backend'.
+
+  * Maybe warn on dangerous blocklist patterns such as `ad*.*.*'.
+
+  * Add remote feature tailored to minibuffer frames.
+
+  * Add remote feature that will let us get the URL from an environment
+    variable, which would be useful with Larswm.
+
+  * Fontify \"~\" in blocklist when there's no domain part.
+
+  * Make programmatic blocklist rule insertion indent automatically.
+
+  * Add indent function for interactive blocklist editing.
+
+  * Make blocklist organizing sort IP address patterns numerically.
+
+  * Remove duplicate blocklist rules when organizing.")

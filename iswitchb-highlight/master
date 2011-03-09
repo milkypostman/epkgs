@@ -1,0 +1,11 @@
+(:summary    "Highlighting extension for iswitchb"
+ :created    "2005"
+ :updated    "2005"
+ :license    "GPL-2"
+ :authors    (("Keywords; iswitchb")
+	      ("highlight"))
+ :maintainer ("Keywords; iswitchb")
+ :provided   (iswitchb-highlight)
+ :required   ((("emacs" iswitchb)))
+ :homepage   "http://www.emacswiki.org/IswitchbHighlight"
+ :wikipage   "http://www.emacswiki.org/IswitchbHighlight")

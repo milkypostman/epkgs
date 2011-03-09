@@ -1,0 +1,12 @@
+(:summary    "Major mode to edit eukleides files"
+ :created    "20060410"
+ :license    "GPL-2"
+ :authors    (("Zajcev Evgeny" . "zelg@yandex.ru"))
+ :maintainer ("Zajcev Evgeny" . "zelg@yandex.ru")
+ :provided   (eukleides)
+ :required   ((("emacs" cl compile derived easymenu imenu info-look)
+	       ("ilisp" completer)
+	       ("mode-compile" mode-compile)))
+ :keywords   ("math")
+ :homepage   "http://www.emacswiki.org/EukleidesMode"
+ :wikipage   "http://www.emacswiki.org/EukleidesMode")

@@ -1,0 +1,7 @@
+(:summary    "Root window splitter"
+ :created    "2006"
+ :updated    "2006"
+ :license    "GPL-2"
+ :provided   (split-root)
+ :required   ((("emacs" cl)))
+ :homepage   "http://nschum.de/src/emacs/split-root/")

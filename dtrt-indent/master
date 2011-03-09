@@ -1,0 +1,113 @@
+(:summary    "Adapt to foreign indentation offsets"
+ :repository (git . "git://git.savannah.nongnu.org/dtrt-indent.git")
+ :created    "2003"
+ :updated    "2008"
+ :license    "GPL-2"
+ :authors    (("Julian Scheid" . "julians37@googlemail.com"))
+ :maintainer ("Julian Scheid" . "julians37@googlemail.com")
+ :provided   (dtrt-indent)
+ :keywords   ("convenience" "files" "languages" "c")
+ :homepage   "https://savannah.nongnu.org/projects/dtrt-indent/"
+ :commentary "\
+A minor mode that guesses the indentation offset originally used
+for creating source code files and transparently adjusts the
+corresponding settings in Emacs, making it more convenient to edit
+foreign files.
+
+This hooks into many major modes - c-mode, java-mode, shell-mode
+and ruby-mode, to name but a few - and makes an educated guess on
+which offset is appropriate by analyzing indentation levels in the
+file.
+
+Heuristics are used to estimate the proper indentation offset and
+therefore this system is not infallible, however adjustments will
+only be made if the guess is considered reliable.  This way it
+should leave you off no worse than before.
+
+To install,
+  (require 'dtrt-indent)
+  (dtrt-indent-mode 1)
+
+The default settings have been carefully chosen and tested to work
+reliably on a wide range of source files.  However, if it doesn't
+work for you they can be fine tuned using M-x customize-group
+dtrt-indent
+
+There is more extensive information in the dtrt-indent info page
+which you currently need to install manually.
+
+Improvements over guess-offset.el:
+
+- Whereas guess-offset only worked for C, C++ and Java files,
+  dtrt-indent supports plenty of major modes (Shell script, Perl
+  and Ruby are worth mentioning) and is easier to adapt to other
+  languages.
+
+- dtrt-indent is now a minor mode and can be switched on and off,
+  both globally and locally (the latter using a File Variable).
+
+- dtrt-indent is more precise in analyzing the syntax of source
+  files, making its guess more accurate (it now ignores lines in
+  comments, multi-line expressions, here documents and the like.)
+
+- dtrt-indent stops analyzing a source file after a customizable
+  amount of lines, making it operate faster on large source files.
+
+- dtrt-indent leaves alone files that explicitly set the
+  indentation offset with a File Variable.
+
+- dtrt-indent comes with diagnostic functions to help you
+  understand what it does behind the scenes, adapt it to new
+  languages or fine-tune its parameters.
+
+- The name of the script has been changed to better reflect its
+  purpose.
+
+- The customization group is now a child of the convenience and
+  files groups instead of the tools group.
+
+- The customization variables are named more sensibly and are
+  better documented.
+
+- Documentation is improved and no longer confusingly refers to
+  \"tab width\" instead of \"indentation offset\".
+
+Files not touched by dtrt-indent:
+
+- Files that specify the corresponding variable
+  (e.g. c-basic-offset) as a File Variable.
+
+- Files that specify dtrt-indent-mode: 0 as a File Variable.
+
+- Files for which dtrt-indent-accept-file-function returns nil.
+
+- Files with a major mode that dtrt-indent doesn't hook into.
+
+- Files for which the indentation offset cannot be guessed
+  reliably.
+
+Limitations:
+
+- dtrt-indent can't deal well with files that use variable
+  indentation offsets, e.g. files that use varying indentation
+  based on the outer construct.
+
+- dtrt-indent currently only supports a limited number of languages
+  (major-modes).
+
+- dtrt-indent only guesses the indendation offset, not the
+  indentation style.  For instance, it does not detect whether a
+  C-like file uses hanging braces or not.
+
+- dtrt-indent can't deal well with files that mix hard tabs with
+- spaces for indentation.
+
+TODO:
+
+- verbose and diagnostics messages
+- make sure variable documentation match their function
+- make sure defaults are sensible
+- complete info page
+- bulk (real world) tests
+- functional tests
+- unit tests")

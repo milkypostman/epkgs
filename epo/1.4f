@@ -1,0 +1,4 @@
+(:repository (cvs . ":pserver:anonymous@yatex.org:/epo")
+ :provided   (epo epo-Z epo-ant epo-c epo-csharp epo-elisp epo-example epo-gsml epo-html epo-idl epo-java epo-jnlp epo-jsp epo-make epo-perl epo-rlx epo-ruby epo-scof epo-sdoc epo-sev epo-tex epo-tld epo-wapp epo-xhtml epo-xi epo-xml epo-xsl epoc epoi epolib epop epor)
+ :required   ((("yatex" yahtml)))
+ :homepage   "http://www.yatex.org/epo/")

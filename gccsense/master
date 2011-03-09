@@ -1,0 +1,13 @@
+(:summary    "GCCSense client for GNU Emacs"
+ :repository (git . "http://cx4a.org/repo/gccsense.git")
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Tomohiro Matsuyama" . "tomo@cx4a.org"))
+ :maintainer ("Tomohiro Matsuyama" . "tomo@cx4a.org")
+ :provided   (gccsense)
+ :required   ((("emacs" flymake)
+	       (nil ctagsfind)))
+ :keywords   ("completion" "convenience")
+ :homepage   "http://cx4a.org/software/gccsense"
+ :wikipage   "http://www.emacswiki.org/GCCSense")

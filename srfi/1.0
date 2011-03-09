@@ -1,0 +1,15 @@
+(:summary    "View Scheme requests for implementation"
+ :created    "2005"
+ :updated    "2005"
+ :license    "GPL-2"
+ :authors    (("Jorgen Schaefer"))
+ :maintainer ("Jorgen Schaefer")
+ :provided   (srfi)
+ :required   ((("emacs" url)))
+ :keywords   ("scheme" "documentation" "programming")
+ :commentary "\
+This file provides a functionality to view SRFIs, Scheme Requests
+for Implementation, using a simple M-x srfi command. To update the
+local SRFI cache, use M-x srfi-update-cache
+
+The idea and some code ideas are from Neil W. Van Dykes quack.el.")

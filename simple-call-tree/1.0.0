@@ -1,0 +1,15 @@
+(:summary    "Analyze source code based on font-lock text-properties"
+ :created    "2003"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("Alex Schroeder" . "alex@gnu.org"))
+ :maintainer ("Alex Schroeder" . "alex@gnu.org")
+ :provided   (simple-call-tree)
+ :keywords   ("programming")
+ :homepage   "http://www.emacswiki.org/SimpleCallTree"
+ :wikipage   "http://www.emacswiki.org/SimpleCallTree"
+ :commentary "\
+This code analyses a buffer and uses text properties to find
+function names (these have the face font-lock-function-name-face).
+Therefore, it should work for any source language, as long as it is
+fontified correctly.")

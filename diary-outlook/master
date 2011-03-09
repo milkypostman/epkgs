@@ -1,0 +1,25 @@
+(:summary    "Snarf MS Outlook appointments into Emacs diary"
+ :created    "2002"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("Dave Love" . "fx@gnu.org"))
+ :maintainer ("Dave Love" . "fx@gnu.org")
+ :provided   (diary-outlook)
+ :keywords   ("calendar" "mail")
+ :homepage   "http://www.loveshack.ukfsn.org/emacs/"
+ :commentary "\
+Provides a simple framework for snarfing the pestilential
+Outlook-format appointments from mail messages in Gnus or Rmail
+using command `diary-from-outlook'.  This, or specialized functions
+`diary-from-outlook-gnus' and `diary-from-outlook-rmail', could be
+run from hooks to notice appointments automatically (in which case
+they will prompt about adding to the diary).
+`gnus-article-prepare-hook' is probably the right one for Gnus; I
+don't know about Rmail.
+
+The message formats recognized are customizable through
+`diary-outlook-formats', but this may be a losing battle generally,
+given the variety of random formats such messages take, in the
+usual MS way.  I think `diary-outlook-formats' doesn't currently
+cover all the varieties I've received, but does most of them.
+There's also a German example whose source I don't remember.")

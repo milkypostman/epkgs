@@ -1,0 +1,37 @@
+(:repository (git . "https://github.com/jixiuf/quick-jump.git")
+ :created    "20110222"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Joseph" . "jixiuf@gmail.com"))
+ :maintainer ("Joseph" . "jixiuf@gmail.com")
+ :provided   (quick-jump)
+ :required   ((("emacs" ring)))
+ :keywords   ("quick" "jump" "marker")
+ :homepage   "https://github.com/jixiuf/quick-jump"
+ :commentary "\
+quick-jump.el works like `register' in Emacs. but it is
+  different to it ,quick-jump.el push current position to a
+  ring named `qj-marker-ring' then you can go back(or forward)
+  to the position ,and you can clear all the position in `qj-marker-ring'
+  to manager the ring by `quick-jump-clear-all-marker'.
+
+  Suppose you have run `quick-jump-push-marker' on line 1,5,10
+  then three positions is pushed into `qj-marker-ring'. now the ring is
+  [10,5,1],you  are on line 10 now ,then you run  `quick-jump-go-back'
+  you will be back to line 5, the ring still is [10,5,1]. but
+  `qj-current-marker' is not the last position you have pushed on line
+  10, it's line 5 now.
+  go back and go forward are related to `qj-current-marker'.
+
+  when you `quick-jump-go-back' or `quick-jump-go-forward' 
+  it will decide whether push current position to `qj-marker-ring'
+  automaticly or not . when the count of lines between current line
+  and the line of `qj-current-marker' are larger than `qj-line-count',
+  then current position will be automaticly put into `qj-marker-ring'
+
+  So suppose the ring is [15,10,5,1] and `qj-current-marker' is 10 ,if you
+  are on line 100 now ,and you run `quick-jump-go-back' now you position
+  is go back to line 5,the ring become [100,15,10.5.1],because
+  100-10>`qj-line-count' it is larger than `qj-line-count' default value
+  10.but if you are on line 16 and run `quick-jump-go-back', the ring still
+  is [15,10,5,1] ,it isn't [16,15,10,5,1],because 16-10<`qj-line-count'.")

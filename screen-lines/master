@@ -1,0 +1,70 @@
+(:summary    "A minor mode for screen-line-based point motion"
+ :created    "2000"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("Yuji Minejima" . "ggb01164@nifty.ne.jp"))
+ :maintainer ("Yuji Minejima" . "ggb01164@nifty.ne.jp")
+ :provided   (screen-lines)
+ :keywords   ("convenience")
+ :homepage   "http://homepage1.nifty.com/bmonkey/emacs/index-en.html"
+ :commentary "\
+This package provides \"Screen Lines\" minor mode.
+In this minor mode, the following standard commands work in terms of
+screen lines, as opposed to text lines when they are called interactively.
+
+    `beginning-of-line' (C-a)
+    `end-of-line'       (C-e)
+    `next-line'         (C-n, down)
+    `previous-line'     (C-p, up)
+    `kill-line'         (C-k)
+
+Screen Lines minor mode should be handy when you edit a file with
+long lines like this: <DT><A HREF=\"http://tiny-tools.sourceforge.net/emacs-keys.html\" ADD_DATE=\"977149523\" LAST_VISIT=\"977488726\" LAST_MODIFIED=\"977149517\">Emacs keybinding help page</A>
+
+In order to test this as you see this file, proceed as follows:
+  1: Load this package:  M-x eval-buffer
+  2: Toggle the mode for the current buffer: M-x screen-lines-mode
+  3: Move around the above long line.
+
+You might want to check screenline.el written by Joshua E. Buhl
+<josh@math.uni-bonn.de> which does text property business properly and
+doesn't use `defadvice' facility.
+Or window-lines.el by enami tsugutomo <enami@ptgd.sony.co.jp> which is
+lightweight.
+
+
+Text lines vs Screen lines:
+                                            See \"(elisp)Text Lines\"
+                                                \"(elisp)Screen Lines\"
+
+  Screen lines are defined by the way the text appears horizontally
+  on the screen, whereas text lines are defined in terms of newline
+  characters as line delimiters.
+  
+  Emacs standard line oriented point moving commands such as
+  `next-line' and `previous-line' are based on text lines.
+
+  A text line is a single screen line:
+    * if it is short enough to fit the width of the selected window, or
+    * if it is truncated on the screen as follows:
+
+         |                                       |
+         |The quick brown fox jumped over the la$|
+         |                                       |
+
+  A text line is divided into several screen lines:
+    * if it is folded on the screen as follows:
+
+         |                                       |
+         |The quick brown fox jumped over the la\\|
+         |zy dogs.<RET>                          |
+         |                                       |
+
+      The above text line consists of the two screen lines,
+      \"The quick brown fox jumped over the la\" and
+      \"zy dogs.<RET>\".
+
+
+Requirements:
+
+Tested with FSF Emacs 20.7.2 and XEmacs 21.1.12 on Debian GNU/Linux woody.")

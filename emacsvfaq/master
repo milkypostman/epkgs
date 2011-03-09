@@ -1,0 +1,7 @@
+(:created    "20001019"
+ :updated    "20001020"
+ :license    "GPL-2"
+ :authors    (("Charles Sebold" . "csebold@ezl.com"))
+ :maintainer ("Charles Sebold" . "csebold@ezl.com")
+ :provided   (emacsvfaq)
+ :homepage   "http://zancanda.staticcling.org/emacs/")

@@ -1,0 +1,13 @@
+(:summary    "Demonstrate the capabilities of Emacs"
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-2"
+ :authors    (("Esben Andreasen" . "esbenandreasen@gmail.com"))
+ :maintainer ("Esben Andreasen" . "esbenandreasen@gmail.com")
+ :provided   (screencast)
+ :keywords   ("demo" "screencast")
+ :homepage   "http://www.emacswiki.org/ScreencastMode"
+ :wikipage   "http://www.emacswiki.org/ScreencastMode"
+ :commentary "\
+This file allows you to create video-like sessions, which
+demonstrates the capabilities of Emacs.")

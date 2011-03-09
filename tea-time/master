@@ -1,0 +1,29 @@
+(:summary    "Simple timer package"
+ :repository (git . "https://github.com/krick/tea-time.git")
+ :license    "GPL-2"
+ :authors    (("konsty" . "antipin.konstantin@googlemail.com"))
+ :maintainer ("konsty" . "antipin.konstantin@googlemail.com")
+ :provided   (tea-time)
+ :keywords   ("timer" "tea-time")
+ :homepage   "https://github.com/krick/tea-time"
+ :wikipage   "http://www.emacswiki.org/tea-time"
+ :commentary "\
+This package allows you to set up time intervals and after this
+inteval is elapsed Emacs will notify you with sound and notification.
+It could be useful if you like make a tea or if you would like to
+be more productive by setting time limit for a task.
+
+If available, notification would be done with great tool
+mumbles ( http://www.mumbles-project.org )
+If not, then simply use standard emacs message.
+
+Requirements:
+
+tested on Emacs 23
+
+Installation:
+
+Add below code in your .emacs
+
+(require 'tea-time)
+(setq tea-time-sound \"path-to-sound-file\")")

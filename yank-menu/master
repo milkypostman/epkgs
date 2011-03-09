@@ -1,0 +1,5 @@
+(:updated    "20060529"
+ :provided   (yank-menu)
+ :required   ((("emacs" cl electric)
+	       (nil yank-menu-frame)))
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/editing/")

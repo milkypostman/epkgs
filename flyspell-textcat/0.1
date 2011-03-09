@@ -1,0 +1,32 @@
+(:summary    "Switch flyspell language according to"
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-2"
+ :authors    (("Martin Pohlack" . "mp26@os.inf.tu-dresden.de"))
+ :maintainer ("Martin Pohlack" . "mp26@os.inf.tu-dresden.de")
+ :provided   (flyspell-textcat)
+ :required   ((("emacs" flyspell)
+	       ("ispell-multi" ispell-multi)))
+ :homepage   "http://os.inf.tu-dresden.de/~mp26/emacs.shtml"
+ :commentary "\
+flyspell-textcat uses an external library (libtextcat) to
+ automatically categorize the language of the current document.
+ Currently this is done on a paragraph basis, which makes this
+ minor mode useful for multi-language documents, without parseable
+ language tags (such as text files etc.).
+
+ This mode was inspire by flyspell-babel.el by Peter Heslin which
+ tries to extract language information from latex commands.
+
+ This mode relies on ispell-multi, which basically caches *spell
+ processes for each language seen, instead of restarting new ones
+ all the time a languae change is seen.
+
+ [Untested with xemacs]
+
+Customization:
+
+   (setq flyspell-textcat-to-ispell-alist
+         '((\"german\"  \"deutsch\")
+           (\"english\" \"american\")
+           (\"french\"  \"francais\")));;")

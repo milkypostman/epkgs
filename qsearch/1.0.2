@@ -1,0 +1,29 @@
+(:summary    "Simple isearch implemented as a quasimode"
+ :created    "2002"
+ :updated    "2002"
+ :license    "GPL-2"
+ :authors    (("Alex Schroeder" . "alex@gnu.org"))
+ :maintainer ("Alex Schroeder" . "alex@gnu.org")
+ :provided   (qsearch)
+ :keywords   ("convenience")
+ :wikipage   "http://www.emacswiki.org/QuasimodeSearch"
+ :commentary "\
+After loading, type a string while pressing Super to search forward,
+type any string while pressing Hyper to search backwards.  Thus, you
+can skipt to the end of the sentence using s-. or to the end of the
+line using s-<return> or to the end of the paragraph using s-<return>
+s-<return>.  This saves you the C-s keystroke used for isearch.  At
+the same time, qsearch is quite crude -- no overlays, no repeating of
+searches, no support for environments without Super and Hyper keys,
+no support for regexps, no customizations.
+
+Note that you might need to setup Super and Hyper using xmodmap.
+Example code for your .xmodmaprc or .Xmodmap file:
+
+keycode 115 = Hyper_L
+keycode 116 = Super_R
+clear mod3
+clear mod4
+clear mod5
+add mod3 = Hyper_L
+add mod4 = Super_R")

@@ -1,0 +1,8 @@
+(:summary    "A one-time password creator for Emacs"
+ :created    "2006"
+ :updated    "2007"
+ :license    "GPL-2"
+ :authors    (("Paul Huff" . "paul.huff@gmail.com"))
+ :maintainer ("Paul Huff" . "paul.huff@gmail.com")
+ :provided   (otp)
+ :keywords   ("convenience"))

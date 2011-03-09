@@ -1,0 +1,97 @@
+(:summary    "Major mode for editing VHDL code"
+ :created    "2010"
+ :updated    "20100922"
+ :license    "GPL-3"
+ :authors    (("Reto Zimmermann" . "reto@gnu.org")
+	      ("Rodney J. Whitby" . "software.vhdl-mode@rwhitby.net"))
+ :maintainer ("Reto Zimmermann" . "reto@gnu.org")
+ :provided   (vhdl-mode)
+ :required   ((("emacs" assoc compile easymenu font-lock hideshow hippie-exp ps-print speedbar)))
+ :keywords   ("languages" "vhdl")
+ :homepage   "http://www.iis.ee.ethz.ch/~zimmi/emacs/vhdl-mode.html"
+ :wikipage   "http://www.emacswiki.org/VhdlMode"
+ :commentary "\
+This package provides an Emacs major mode for editing VHDL code.
+It includes the following features:
+
+  - Syntax highlighting
+  - Indentation
+  - Template insertion (electrification)
+  - Insertion of file headers
+  - Insertion of user-specified models
+  - Port translation / testbench generation
+  - Structural composition
+  - Configuration generation
+  - Sensitivity list updating
+  - File browser
+  - Design hierarchy browser
+  - Source file compilation (syntax analysis)
+  - Makefile generation
+  - Code hiding
+  - Word/keyword completion
+  - Block commenting
+  - Code fixing/alignment/beautification
+  - Postscript printing
+  - VHDL'87/'93/'02 and VHDL-AMS supported
+  - Comprehensive menu
+  - Fully customizable
+  - Works under GNU Emacs (recommended) and XEmacs
+
+
+Documentation
+
+See comment string of function `vhdl-mode' or type `C-c C-h' in Emacs.
+
+
+Emacs Versions
+
+supported: GNU Emacs 20.X/21.X/22.X,23.X, XEmacs 20.X/21.X
+tested on: GNU Emacs 20.4/21.3/22.1,23.X, XEmacs 21.1 (marginally)
+
+
+Installation
+
+Prerequisites:  GNU Emacs 20.X/21.X/22.X/23.X, XEmacs 20.X/21.X.
+
+Put `vhdl-mode.el' into the `site-lisp' directory of your Emacs installation
+or into an arbitrary directory that is added to the load path by the
+following line in your Emacs start-up file `.emacs':
+
+  (setq load-path (cons (expand-file-name \"<directory-name>\") load-path))
+
+If you already have the compiled `vhdl-mode.elc' file, put it in the same
+directory.  Otherwise, byte-compile the source file:
+  Emacs:  M-x byte-compile-file RET vhdl-mode.el RET
+  Unix:   emacs -batch -q -no-site-file -f batch-byte-compile vhdl-mode.el
+
+Add the following lines to the `site-start.el' file in the `site-lisp'
+directory of your Emacs installation or to your Emacs start-up file `.emacs'
+(not required in Emacs 20 and higher):
+
+  (autoload 'vhdl-mode \"vhdl-mode\" \"VHDL Mode\" t)
+  (setq auto-mode-alist (cons '(\"\\\\.vhdl?\\\\'\" . vhdl-mode) auto-mode-alist))
+
+More detailed installation instructions are included in the official
+VHDL Mode distribution.
+
+
+Acknowledgements
+
+Electrification ideas by Bob Pack <rlpst@cislabs.pitt.edu>
+and Steve Grout.
+
+Fontification approach suggested by Ken Wood <ken@eda.com.au>.
+Ideas about alignment from John Wiegley <johnw@gnu.org>.
+
+Many thanks to all the users who sent me bug reports and enhancement
+requests.
+Thanks to Colin Marquardt for his serious beta testing, his innumerable
+enhancement suggestions and the fruitful discussions.
+Thanks to Dan Nicolaescu for reviewing the code and for his valuable hints.
+Thanks to Ulf Klaperski for the indentation speedup hint.
+
+Special thanks go to Wolfgang Fichtner and the crew from the Integrated
+Systems Laboratory, Swiss Federal Institute of Technology Zurich, for
+giving me the opportunity to develop this code.
+This work has been funded in part by MICROSWISS, a Microelectronics Program
+of the Swiss Government.")

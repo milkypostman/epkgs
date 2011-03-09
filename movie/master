@@ -1,0 +1,8 @@
+(:summary    "Playing movies"
+ :created    "2004"
+ :updated    "2004"
+ :license    "GPL-2"
+ :authors    (("Lars Magne Ingebrigtsen" . "lmi@gnus.org"))
+ :maintainer ("Lars Magne Ingebrigtsen" . "lmi@gnus.org")
+ :keywords   ("extensions" "processes")
+ :homepage   "http://quimby.gnus.org/elisp/")

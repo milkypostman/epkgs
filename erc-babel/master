@@ -1,0 +1,50 @@
+(:summary    "Communicate in different languages with ERC, using automatic translation"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("JoeBloggs" . "vapniks@yahoo.com"))
+ :maintainer ("JoeBloggs" . "vapniks@yahoo.com")
+ :provided   (erc-babel)
+ :required   ((("babel" babel)
+	       ("emacs" erc)))
+ :keywords   ("comm" "languages")
+ :commentary "\
+This library integrates babel (http://www.emacswiki.org/emacs/babel.el) with ERC 
+(an emacs IRC client: http://www.emacswiki.org/cgi-bin/wiki/ERC) to provide automatic
+translation of messages. It requires those two libraries are installed.
+All sent and received messages will be translated if possible.
+Different languages combinations can be set for different buffers, and translation can be toggled on or off.
+
+It has only been tested on emacs 23.1.50.1 (CVS emacs), with ERC version 5.3.
+
+To toggle translation on/off (it is off by default) call `erc-babel-toggle'.
+
+To set the languages to translate from and to for a particular buffer, call `erc-babel-set-languages'
+The language combinations can be different for different buffers/channels.
+To remember them between emacs sessions you could use session.el by Christopher Wedler 
+(available here: http://emacs-session.sourceforge.net/), and add `erc-babel-alist' to session-globals-include.
+To remove translation for a particular buffer, set the from and to languages to the same value.
+
+To include the original text with the translated message make sure `erc-babel-include-orig' is non-nil
+This can be turned on/off by calling `erc-babel-include-orig-toggle'.
+
+You can choose which webservice to use for doing the actual translation by customizing `erc-babel-backend' to
+one of those listed. By default it uses Google, but you can change it if that doesn't work for you (check you 
+have the latest version of babel.el)
+
+You can also change the modeline display by customizing `erc-babel-modeline-type'. 
+It shows you the languages being translated, and in which direction(s). 
+By default it uses the full language names but you can change it to use short abbreviations.
+
+As usual to use this library just put to following somewhere in your .emacs:
+
+(require 'erc-babel)
+
+it requires the babel and erc libraries.
+
+You may also want to bind some keys in erc-mode like this:
+
+(define-key erc-mode-map (kbd \"C-c C-S-t\") 'erc-babel-toggle)
+(define-key erc-mode-map (kbd \"C-c C-S-o\") 'erc-babel-include-orig-toggle)
+
+which can be put somewhere in your .emacs")

@@ -1,0 +1,9 @@
+(:summary    "Framework to enable you to write anything functions in any language"
+ :repository (git . "https://github.com/yaotti/anything-with-everything.el.git")
+ :created    "2010"
+ :updated    "2010"
+ :authors    (("Hiroshige Umino" . "yaotti@gmail.com"))
+ :maintainer ("Hiroshige Umino" . "yaotti@gmail.com")
+ :provided   (anything-with-everything)
+ :keywords   ("anything")
+ :homepage   "https://github.com/yaotti/anything-with-everything.el")

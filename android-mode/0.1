@@ -1,0 +1,16 @@
+(:summary    "Minor mode for Android application development"
+ :repository (git . "https://github.com/remvee/android-mode.git")
+ :created    "20090220"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("R.W. van 't Veer"))
+ :maintainer ("R.W. van 't Veer")
+ :provided   (android-mode)
+ :required   ((("emacs" cl)))
+ :keywords   ("tools" "processes")
+ :homepage   "http://github.com/remvee/android-mode"
+ :commentary "\
+Provides support for running Android SDK subprocesses like the
+emulator, logcat, ddms and ant.  When loaded `dired-mode' and
+`find-file' hooks are added to automatically enable `android-mode'
+when opening a file or directory in an android project.")

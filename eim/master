@@ -1,0 +1,13 @@
+(:summary    "Emacs input method"
+ :created    "2004"
+ :updated    "2004"
+ :license    "GPL-2"
+ :authors    (("Ye Wenbin" . "wenbinye@163.com")
+	      ("ChunYe Wang" . "charleswang@peoplemail.com.cn"))
+ :maintainer ("Ye Wenbin" . "wenbinye@163.com")
+ :provided   (eim)
+ :required   ((("emacs" cl)))
+ :homepage   "http://www.emacswiki.org/Eim"
+ :wikipage   "http://www.emacswiki.org/Eim"
+ :commentary "\
+Change Log:")

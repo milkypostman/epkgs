@@ -1,0 +1,5 @@
+(:summary    "List register"
+ :updated    "20080212"
+ :license    "GPL-3"
+ :provided   (list-register)
+ :homepage   "http://www.bookshelf.jp/")

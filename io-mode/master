@@ -1,0 +1,11 @@
+(:summary    "Major mode to edit Io language files in Emacs"
+ :repository (git . "https://github.com/superbobry/io-mode.git")
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-2"
+ :authors    (("Sergei Lebedev" . "superbobry@gmail.com"))
+ :maintainer ("Sergei Lebedev" . "superbobry@gmail.com")
+ :provided   (io-mode)
+ :required   ((("emacs" cl comint font-lock hideshow newcomment)))
+ :keywords   ("languages" "io")
+ :homepage   "http://github.com/superbobry/io-mode")

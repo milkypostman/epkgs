@@ -1,0 +1,30 @@
+(:summary    "Focus follows mouse in Emacs windows"
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-2"
+ :provided   (mouse-focus)
+ :keywords   ("mouse" "gui" "files" "part")
+ :homepage   "http://www.skamphausen.de/cgi-bin/ska/mouse-focus"
+ :commentary "\
+Common window managers in Un*x usually implement several focus
+policies. Besides the common but awfull (IMHO) click-to-focus there
+is also a focus follows mouse mode which means that the window
+under the mouse pointer receives the keyboard presses.
+
+A friend of mine wanted this for (X)Emacs, too and so here it is. I
+don't use it, though, because I stick with the keys when inside
+XEmacs. 
+
+Installation
+Put into your init file (~/.emacs or ~/.xemacs/init.el):
+(require 'mouse-focus)
+(turn-on-mouse-focus)
+
+Bugs:
+Doesn't work in GNU Emacs and since I have no knowledge about it's
+mouse handling system I probably won't adress this problem (even
+more since I don't use this package myself)
+
+ChangeLog
+ 2009-07-24, v1.1: apply minor change by Gabriel Knoy which fixes
+ behaviour with minibuffer.")

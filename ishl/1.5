@@ -1,0 +1,25 @@
+(:summary    "Extra isearch highlighting"
+ :created    "1997"
+ :updated    "1997"
+ :license    "GPL-2"
+ :authors    (("Bob Glickstein" . "bobg@zanshin.com"))
+ :maintainer ("Bob Glickstein" . "bobg@zanshin.com")
+ :provided   (ishl)
+ :required   ((("emacs" timer)))
+ :commentary "\
+`ishl-mode' is a mode that does additional highlighting during
+incremental searches.  Using the relatively unobtrusive \"secondary
+selection\" face, ishl highlights *every* match for the current
+search string.  (Of course, the *current* match remains highlighted
+with the \"region\" face.)  It does this in a deferred fashion using
+idle timers, so the cycles needed to highlight additional matches
+do not rob isearch of its usual snappy response.
+
+The additional highlighting makes it easier to anticipate where the
+cursor will land each time you press C-s or C-r to repeat a pending
+search forward or backward.
+
+Each time the search string is changed, ishl-mode waits
+`ishl-initial-delay' seconds, then starts highlighting matches one
+every `ishl-delay' seconds.  These numbers are 1/4 and 1/16 by
+default.")

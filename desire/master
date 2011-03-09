@@ -1,0 +1,10 @@
+(:summary    "Versatile configuration for emacs lisp packages"
+ :created    "1995"
+ :updated    "20010212"
+ :license    "GPL-2"
+ :authors    (("Martin Schwenke" . "martin@meltin.net")
+	      ("Graham Williams" . "graham.williams@cmis.csiro.au"))
+ :maintainer (nil . "martin@meltin.net")
+ :provided   (desire)
+ :keywords   ("setup" "configuration")
+ :homepage   "http://meltin.net/hacks/emacs/")

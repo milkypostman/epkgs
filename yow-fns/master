@@ -1,0 +1,12 @@
+(:summary    "Add-ons to zippy"
+ :created    "1999"
+ :updated    "19991006"
+ :license    "GPL-2"
+ :authors    (("Noah Friedman" . "friedman@splode.com"))
+ :maintainer (nil . "friedman@splode.com")
+ :provided   (yow-fns)
+ :required   ((("emacs" cookie1 yow)))
+ :homepage   "ftp://ftp.splode.com/pub/users/friedman/emacs-lisp/"
+ :commentary "\
+Some of these functions have been added to official emacs distributions
+already.a")

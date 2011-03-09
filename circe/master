@@ -1,0 +1,21 @@
+(:summary    "Client for IRC in Emacs"
+ :repository (cvs . ":pserver:anonymous@cvs.savannah.nongnu.org:/sources/circe/")
+ :created    "2005"
+ :updated    "2005"
+ :license    "GPL-2"
+ :authors    (("Jorgen Schaefer" . "forcer@forcix.cx"))
+ :maintainer ("Jorgen Schaefer" . "forcer@forcix.cx")
+ :provided   (circe circe-auto circe-chanop circe-e21 circe-highlight-all-nicks circe-log circe-xemacs incomplete lcs lui-format lui-irc-colors lui-logging lui-xemacs)
+ :required   ((("emacs" autoload font-lock overlay ring time-date timer)
+	       ("lui" lui)))
+ :keywords   ("irc" "chat")
+ :homepage   "http://www.nongnu.org/circe/"
+ :wikipage   "http://www.emacswiki.org/Circe"
+ :commentary "\
+This is yet another IRC client for Emacs. It is not as small as
+rcirc, and not as bulky as ERC.
+
+It owns a lot to both clients (primarily ERC, which I used for a
+long time, and helped to develop). Thanks to the authors of both.
+
+To use, run M-x circe")

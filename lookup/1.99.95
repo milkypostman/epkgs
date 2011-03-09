@@ -1,0 +1,15 @@
+(:summary    "Search interface to electronic dictionaries"
+ :repository (cvs . ":pserver:anonymous@lookup.cvs.sourceforge.net:/cvsroot/lookup")
+ :created    "2000"
+ :updated    "2000"
+ :license    "GPL-2"
+ :authors    (("Keisuke Nishida" . "knishida@ring.gr.jp"))
+ :maintainer ("Keisuke Nishida" . "knishida@ring.gr.jp")
+ :provided   (aozora-view lookup lookup-cache lookup-content lookup-history lookup-modules lookup-select lookup-summary lookup-text lookup-types lookup-utils lookup-vars ndbtonic ndcookie nddsl ndeb ndeb-binary ndest ndgoo ndic ndict ndjitsuu ndkanji ndlatin ndmecab ndmisc ndpdic ndsary ndsimple ndspell ndspotlight ndsrd ndtut nducs ndwinsearch stem-english ucs-normalize)
+ :required   ((("emacs" cl cookie1 descr-text hmac-md5 url-http url-parse)
+	       ("navi2ch" navi2ch navi2ch-bookmark)
+	       ("semi" mime-view)
+	       ("w3m" w3m)))
+ :keywords   ("dictionary")
+ :homepage   "http://lookup.sourceforge.net/"
+ :wikipage   "http://www.emacswiki.org/LookUp")

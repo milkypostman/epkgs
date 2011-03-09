@@ -1,0 +1,24 @@
+(:summary    "AVM Microformat tools for emacs"
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-2"
+ :homepage   "http://www.davep.org/emacs/"
+ :commentary "\
+avmmf.el provides a set of functions for dealing with the AVM
+microformat. For more information on this see:
+
+  <URL:http://www.strudel.org.uk/blog/astro/microformat.shtml>
+  <URL:http://www.jodcast.net/lookUP/>
+
+The latest avmmf.el is always available from:
+
+  <URL:http://www.davep.org/emacs/#Favmmf.el>
+
+INSTALLATION:
+
+o Drop avmmf.el somwehere into your `load-path'. Try your site-lisp
+  directory for example (you might also want to byte-compile the file).
+
+o Add the following autoload statement to your ~/.emacs file:
+
+  (autoload 'avmmf-insert \"avmmf\" \"Insert AVM microformat code into a buffer\" t)")

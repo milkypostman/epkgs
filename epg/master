@@ -1,0 +1,12 @@
+(:summary    "The EasyPG Library"
+ :repository (git . "git://git.sourceforge.jp/gitroot/epg/epg.git")
+ :created    "1999"
+ :updated    "2006"
+ :license    "GPL-2"
+ :authors    (("Daiki Ueno" . "ueno@unixuser.org"))
+ :maintainer ("Daiki Ueno" . "ueno@unixuser.org")
+ :provided   (epa epa-dired epa-file epa-mail epa-setup epg epg-config epg-package-info pgg-epg)
+ :required   ((("emacs" derived dired font-lock mail-utils pgg wid-edit widget)))
+ :keywords   ("pgp" "gnupg")
+ :homepage   "http://epg.sourceforge.jp/"
+ :wikipage   "http://www.emacswiki.org/EasyPG")

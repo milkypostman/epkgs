@@ -1,0 +1,27 @@
+(:summary    "Poplog processes in a buffer"
+ :created    "1991"
+ :updated    "19990908"
+ :license    "GPL-2"
+ :authors    (("Brian Logan" . "b.s.logan@cs.bham.ac.uk")
+	      ("Richard Caley" . "rjc@cstr.ed.ac.uk"))
+ :maintainer ("Brian Logan" . "b.s.logan@cs.bham.ac.uk")
+ :provided   (inferior-pop-mode)
+ :required   ((("emacs" comint easymenu)
+	       ("pop-help-mode" pop-help-mode)
+	       ("pop-mode" pop-mode)))
+ :keywords   ("processes" "poplog")
+ :commentary "\
+Inferior pop mode - run poplog processes under GNU Emacs/XEmacs.        
+                                                                 
+        Hacked from prolog-mode bsl 17.07.89                     
+        Variously mutilated by RJC.                              
+                                                                 
+In its current form this is rather fragile and prone to timing problems.
+In an attempt to reduce these, we have switched back from using the
+inferior pop buffer directly for compilation (using comint-send-string)
+to using temporary files.  This increases the dependence on a (slow) 
+fileserver (which the previous version was designed to avoid), but seems
+to be marginally more robust.  Life would be a lot easier if ISL could be
+persuaded to change the Pop continuation prompt.
+
+The changelog is at the end of this file.")

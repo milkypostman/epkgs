@@ -1,0 +1,62 @@
+(:summary    "Extensions to `diff-mode.el'"
+ :created    "20041108"
+ :updated    "20110211"
+ :license    "GPL-2"
+ :authors    (("Drew Adams"))
+ :maintainer ("Drew Adams")
+ :provided   (diff-mode-)
+ :keywords   ("data" "matching" "tools" "unix" "local" "font" "face")
+ :homepage   "http://www.emacswiki.org/DiffMode"
+ :wikipage   "http://www.emacswiki.org/DiffMode"
+ :commentary "\
+Extensions to `diff-mode.el'.
+
+ \"*Diff*\" buffer is highlighted differently.
+
+ NOTE: The faces defined here look best on a medium-dark
+       background, because some are light and some are dark.
+       Try, for example, setting the background to \"LightSteelBlue\"
+       in your `~/.emacs' file: You can do this is via
+       `special-display-buffer-names':
+
+        (setq special-display-buffer-names
+              (cons '(\"*Diff*\" (background-color . \"LightSteelBlue\"))
+                    special-display-buffer-names))
+
+       You can alternatively change the background value of
+       `special-display-frame-alist' and set
+       `special-display-regexps' to something matching \"*info*\":
+
+        (setq special-display-frame-alist
+              (cons '(background-color . \"LightSteelBlue\")
+                    special-display-frame-alist))
+        (setq special-display-regexps '(\"[ ]?[*][^*]+[*]\"))
+
+
+ New faces defined here:
+
+   `diff-file1-hunk-header', `diff-file2-hunk-header'.
+
+ New user options defined here:
+
+   `diff-file1-hunk-header-face', `diff-file2-hunk-header-face'.
+
+
+ ***** NOTE: The following faces defined in `diff-mode.el' have
+             been REDEFINED HERE:
+
+   `diff-added', `diff-changed', `diff-context',
+   `diff-file-header', `diff-header', `diff-hunk-header',
+   `diff-index', `diff-indicator-added', `diff-indicator-changed',
+   `diff-indicator-removed', `diff-nonexistent', `diff-removed'.
+
+
+ ***** NOTE: The following variable defined in `diff-mode.el' has
+             been REDEFINED HERE:
+
+   `diff-font-lock-keywords'.
+
+
+ This library should be loaded *before* library `diff-mode.el'.
+ Put this in your initialization file, `~/.emacs':
+   (require 'diff-mode-)")

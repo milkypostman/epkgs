@@ -1,0 +1,5 @@
+(:summary    "Show FIXME/TODO/BUG/KLUDGE in special face only in comments and strings"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-2"
+ :provided   (fic-mode))

@@ -1,0 +1,18 @@
+(:summary    "Download and automagically install Emacs Lisp"
+ :created    "20070808"
+ :updated    "2007"
+ :license    "GPL-3"
+ :authors    (("Olivier Ramonat" . "olivier@ramonat.fr"))
+ :maintainer ("Olivier Ramonat" . "olivier@ramonat.fr")
+ :provided   (require-or-install)
+ :required   ((("install-elisp" install-elisp)))
+ :commentary "\
+Use (require-or-install 'my-package) to automatically download and install
+my-package.el if require fails.
+
+require-or-install takes two others optionals arguments :
+   - PAGENAME (the EmacsWiki PAGENAME where to download my-package)
+   - URL (the download URL)
+
+To install, to add to .emacs:
+   (require 'require-or-install)")

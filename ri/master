@@ -1,0 +1,18 @@
+(:summary    "Ruby Documentation Lookup"
+ :repository (git . "https://github.com/technomancy/ri.el.git")
+ :created    "20080919"
+ :updated    "2008"
+ :license    "GPL-3"
+ :authors    (("Phil Hagelberg" . "technomancy@gmail.com"))
+ :maintainer ("Phil Hagelberg" . "technomancy@gmail.com")
+ :provided   (ri)
+ :required   ((("emacs" ido thingatpt)))
+ :keywords   ("tools" "documentation")
+ :wikipage   "http://www.emacswiki.org/RiEl"
+ :commentary "\
+ri.el provides an Emacs frontend to Ruby's `ri' documentation
+tool. It offers lookup and completion.
+
+It's designed to work with RDoc 2.2.2, but if you only have RDoc
+2.2.1 installed, you can download a helper script; see the
+docstring for `ri-repl-executable' for details.")

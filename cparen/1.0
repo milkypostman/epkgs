@@ -1,0 +1,78 @@
+(:summary    "Coloured parentheses in Lisp-derived modes"
+ :created    "2001"
+ :updated    "20010327"
+ :license    "GPL-2"
+ :authors    (("Riku Saikkonen" . "riku.saikkonen@hut.fi"))
+ :maintainer ("Riku Saikkonen" . "riku.saikkonen@hut.fi")
+ :provided   (cparen)
+ :required   ((("emacs" font-lock)))
+ :keywords   ("faces" "lisp")
+ :homepage   "http://users.tkk.fi/u/rsaikkon/software/elisp/"
+ :commentary "\
+This package makes font-lock more colourful by colouring
+parentheses in Lisp-derived modes. In Lisp mode, the package
+simply makes all parentheses grey (`cparen-normal-paren-face'). In
+Scheme mode, however, parentheses are coloured according to their
+syntactic meaning. Try it and see if you like it.
+
+This package was motivated by the common complaint that Scheme has
+too many different uses for parentheses. I think it will be most
+useful for those who are new to Scheme, though I've also found it
+somewhat useful myself. The package recognises all syntactic forms
+defined in the Scheme standard R5RS.
+
+Activate the package by loading it and running M-x
+cparen-activate. Please note that there is currently no simple way
+to deactivate the package once it has been activated (except for
+restarting Emacs). If you want the package enabled by default,
+place cparen.el somewhere in your `load-path' and put the
+following lines in your ~/.emacs:
+  (require 'cparen)
+  (cparen-activate)
+
+Here's some example Scheme code that you can try to highlight
+(copy it to a buffer in Scheme mode and uncomment it). This is
+quite contrived code that displays all the colours; you should
+also try highlighting some normal Scheme code.
+
+(define (foo)
+  (let ((a 1) (b 2))
+    (define (foo a b)
+      (let* ((a 2) (b 3) (c 4))
+        ((foo 4)
+         (bar))
+        ((lambda (x y z) (+ x y z)) 1 2 3)
+        foo)
+      (and fds (let))
+      (if 1 (quote 2) '(3 3 #(a b c) 4) 4))
+    (cond ((= a 1) 2)
+          ((true? b) (+ a 2))
+          (else 4))
+    (begin (test) 3)
+    (set! x 2)
+    (case (* 5 2)
+      ((1 2 3) 'wrong)
+      ((10) 'right))
+    (do ((vec (make-vector 5))
+         (i 0 (+ i 1)))
+        ((= i 5) vec)
+      (vector-set! vec i i))
+    (let loop ((i 0) (j 1)) (loop 20))
+    5))
+
+(define-syntax begin
+  (syntax-rules ()
+    ((begin exp ...)
+     ((lambda () exp ...)))))
+
+The default colours (specified in the deffaces below) may look
+somewhat better with the following set of font-lock colours (which
+are the ones I use):
+
+(custom-set-faces
+ '(font-lock-string-face ((((class color) (background light)) (:foreground \"IndianRed4\"))))
+ '(font-lock-keyword-face ((((class color) (background light)) (:bold t :foreground \"ForestGreen\"))))
+ '(font-lock-constant-face ((((class color) (background light)) (:foreground \"RoyalBlue\"))))
+ '(font-lock-variable-name-face ((((class color) (background light)) (:foreground \"Blue\"))))
+ '(font-lock-function-name-face ((((class color) (background light)) (:bold t :foreground \"Blue\"))))
+ '(font-lock-builtin-face ((((class color) (background light)) (:bold t :foreground \"RoyalBlue\")))))")

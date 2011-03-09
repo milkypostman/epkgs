@@ -1,0 +1,38 @@
+(:summary    "Handles the Tandem/NSK/Guardian TACL language"
+ :created    "2001"
+ :updated    "2004"
+ :license    "GPL-2"
+ :authors    (("Rick Bielawski" . "rbielaws@i1.net"))
+ :maintainer ("Rick Bielawski" . "rbielaws@i1.net")
+ :provided   (tacl-mode)
+ :required   ((("column-marker" column-marker)
+	       ("emacs" imenu which-func)
+	       (nil tacl-indent)))
+ :keywords   ("languages" "extensions" "tandem" "guardian" "nsk" "tacl")
+ :homepage   "http://www.emacswiki.org/TaclMode"
+ :wikipage   "http://www.emacswiki.org/TaclMode"
+ :commentary "\
+TACL stands for Tandem Advanced Command Language.
+
+Keywords as of G06.10 are recognized. There are 3 types of keywords.
+  #builtin functions, #builtin variables, option keywords.
+  Option keywords are those that are only keywords when found between
+  slash marks or vertical bars.
+
+All keywords have abbrev table entries.  Use M-x list-abbrevs for a listing.
+  Abbrevs are generated programatically from tacl-keywords-... to be the
+  minimum number of characters to uniquely identify the keyword.
+
+Bracket handling is managed by emacs show-paren-mode. I just turn it on.
+
+imode recognizes both ?section and [#def ...] style definitions but only
+  within the first 3 characters of a line.  This is intended to prevent
+  large numbers of sub-definitions from making imenu huge/useless.  You can
+  tweek this by altering tacl-imenu-expression-alist thru customize.
+
+eldoc is supported although there is no automated way of generating the
+actual help files. I'm sure it can be usefull all the same.  Search for
+tacl-syntax.el for a sizable number of help entries to get you started.
+Customize tacl-eldoc-def-files to include this file.
+Once you have your help entries defined see help for eldoc-mode for
+turing on the mode.  Putting (eldoc-mode t) in .emacs might do it.")

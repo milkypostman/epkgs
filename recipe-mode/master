@@ -1,0 +1,11 @@
+(:summary    "A mode to make writing, finding recipes easy"
+ :repository (git . "https://github.com/sshelagh/recipe-mode.git")
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-2"
+ :authors    (("Shelagh Manton" . "shelagh.manton@gmail.com"))
+ :maintainer ("Shelagh Manton" . "shelagh.manton@gmail.com")
+ :provided   (recipe-mode)
+ :required   ((("emacs" calc-units font-lock grep iimage overlay)))
+ :keywords   ("recipes" "convenience")
+ :homepage   "https://github.com/sshelagh/recipe-mode")

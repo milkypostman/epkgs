@@ -1,0 +1,11 @@
+(:summary    "Docs-php-funcref-in-perl anything.el interface"
+ :repository (git . "https://github.com/k1LoW/anything-php-funcref-in-perl.git")
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-2"
+ :authors    (("kitokitoki"))
+ :maintainer ("kitokitoki")
+ :provided   (anything-php-funcref-in-perl)
+ :required   ((("anything" anything)
+	       ("emacs" cl)))
+ :homepage   "https://github.com/k1LoW/anything-php-funcref-in-perl")

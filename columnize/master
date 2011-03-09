@@ -1,0 +1,16 @@
+(:summary    "Formats a list of items into columns (pillars)"
+ :created    "2005"
+ :updated    "2005"
+ :license    "GPL-2"
+ :authors    (("Rick Bielawski" . "rbielaws@i1.net"))
+ :maintainer ("Rick Bielawski" . "rbielaws@i1.net")
+ :provided   (columnize)
+ :keywords   ("tools" "convenience" "formatting")
+ :homepage   "http://www.emacswiki.org/ColumnizeWords"
+ :wikipage   "http://www.emacswiki.org/ColumnizeWords"
+ :commentary "\
+`columnize-text' is an interactive autoload function for formatting words
+numbers etc into an evenly spaced series of columns (pillars).  A trivial
+wrapper `columnize-strings' similarly formats a list of quoted strings.
+
+See C-h f columnize-text <ret> for a complete description.")

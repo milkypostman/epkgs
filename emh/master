@@ -1,0 +1,14 @@
+(:summary    "MIME extender for mh-e"
+ :repository (cvs . ":pserver:anonymous@cvs.m17n.org:/cvs/root")
+ :created    "19931121"
+ :updated    "2000"
+ :license    "GPL-2"
+ :authors    (("MORIOKA Tomohiko" . "morioka@jaist.ac.jp")
+	      ("OKABE Yasuo" . "okabe@kudpc.kyoto-u.ac.jp"))
+ :maintainer ("MORIOKA Tomohiko" . "morioka@jaist.ac.jp")
+ :provided   (emh emh-comp emh-face emh-setup)
+ :required   ((("apel" emu)
+	       ("emacs" mh-comp mh-e)
+	       ("semi" mime-bbdb mime-edit mime-view semi-setup)))
+ :keywords   ("mh" "mime" "multimedia" "encoded-word" "multilingual" "mail")
+ :homepage   "http://www.kanji.zinbun.kyoto-u.ac.jp/~tomo/lemi/")

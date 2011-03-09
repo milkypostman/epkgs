@@ -1,0 +1,11 @@
+(:summary    "Abstract spreadsheet display engine for GNU Emacs"
+ :repository (git . "https://github.com/dto/cell-mode.git")
+ :created    "2006"
+ :updated    "20090104"
+ :license    "GPL-3"
+ :authors    (("David O'Toole" . "dto@gnu.org"))
+ :maintainer ("David O'Toole" . "dto@gnu.org")
+ :provided   (cell grid)
+ :required   ((("emacs" cl)))
+ :keywords   ("hypermedia" "tools" "lisp")
+ :wikipage   "http://www.emacswiki.org/CellMode")

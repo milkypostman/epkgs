@@ -1,0 +1,17 @@
+(:summary    "Major mode for editing the song files of Patacrep songbook"
+ :repository (git . "https://github.com/crep4ever/songbook-emacs-mode.git")
+ :created    "201028"
+ :updated    "2010"
+ :license    "GPL-2"
+ :authors    (("Romain Goffe" . "romain.goffe@gmail.com"))
+ :maintainer ("Romain Goffe" . "romain.goffe@gmail.com")
+ :provided   (songbook-mode)
+ :keywords   ("patacrep" "songbook" "major-mode")
+ :homepage   "https://github.com/crep4ever/songbook-emacs-mode"
+ :commentary "\
+This mode was higly inspired from the work of 
+Scott Andrew Borton <scott@pp.htv.fi>
+through is tutorial on emacs modes:
+http://two-wugs.net/emacs/mode-tutorial.html
+
+songbook mode")

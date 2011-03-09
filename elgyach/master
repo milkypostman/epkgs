@@ -1,0 +1,12 @@
+(:summary    "Emacs interface to gyach"
+ :repository (cvs . ":pserver:anonymous@cvs.savannah.nongnu.org:/sources/elgyach/")
+ :created    "2002"
+ :updated    "2002"
+ :license    "GPL-2"
+ :authors    (("Matthew Kennedy" . "mkennedy@gentoo.org"))
+ :maintainer ("Matthew Kennedy" . "mkennedy@gentoo.org")
+ :provided   (gyach gyach-away gyach-button gyach-cipher gyach-complete gyach-custom gyach-events gyach-extra gyach-faces gyach-highlight gyach-ignore gyach-logging gyach-mpg123el gyach-profile gyach-quote gyach-room gyach-score gyach-state gyach-url gyach-version match mpg123el-show utility)
+ :required   ((("emacs" cl comint hippie-exp time-date)
+	       ("mpg123" mpg123)))
+ :homepage   "http://www.nongnu.org/elgyach/"
+ :wikipage   "http://www.emacswiki.org/ElGyach")

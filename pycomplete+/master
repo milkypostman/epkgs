@@ -1,0 +1,9 @@
+(:summary    "Complete symbols at point using Pymacs"
+ :license    "GPL-2"
+ :provided   (pycomplete+)
+ :required   ((("pymacs" pymacs)
+	       ("python-mode" python-mode)))
+ :keywords   ("python" "complete" "completion")
+ :commentary "\
+Replace pycomplete.el included in python-mode with this file, then you'll
+have a more intelligent python code completion.")

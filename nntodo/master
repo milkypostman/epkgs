@@ -1,0 +1,19 @@
+(:summary    "Manage todo items with Gnus"
+ :created    "1999"
+ :updated    "20010419"
+ :license    "GPL-2"
+ :authors    (("John Wiegley" . "johnw@gnu.org"))
+ :maintainer ("John Wiegley" . "johnw@gnu.org")
+ :provided   (nntodo)
+ :required   ((("emacs" cl easy-mmode gnus-start nnheader nnmail nnmbox nnoo)))
+ :keywords   ("news" "mail" "calendar" "convenience")
+ :wikipage   "http://www.emacswiki.org/TodoGnus"
+ :commentary "\
+Warning: this is alpha code!  Use at your own risk!  Don your
+asbestos longjohns!  Might eat your mail for lunch!
+
+This file provides a new Gnus backend, nntodo, for storing todo
+items.  Each todo item is a message but has a special header
+`X-Todo-Priority' for the priority of a todo item.  It is possible
+to sort todo items by creation date and by priority.  Sorting by
+due date hasn't been done yet.")

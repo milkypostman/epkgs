@@ -1,0 +1,10 @@
+(:summary    "Enhancements to shell.el"
+ :created    "19940621"
+ :updated    "20101113"
+ :license    "GPL-2"
+ :authors    (("Noah Friedman" . "friedman@splode.com"))
+ :maintainer (nil . "friedman@splode.com")
+ :provided   (fshell)
+ :required   ((("emacs" shell)))
+ :keywords   ("extensions" "processes")
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html")

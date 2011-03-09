@@ -1,0 +1,8 @@
+(:summary    "A simple poker game for Emacs"
+ :created    "2006"
+ :updated    "2006"
+ :license    "GPL-2"
+ :provided   (poker)
+ :keywords   ("games")
+ :homepage   "http://www.emacswiki.org/EmacsPoker"
+ :wikipage   "http://www.emacswiki.org/EmacsPoker")

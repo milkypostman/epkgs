@@ -1,0 +1,80 @@
+(:summary    "Text annotations"
+ :created    "2001"
+ :updated    "2001"
+ :license    "GPL-2"
+ :authors    (("Thomas Link" . "samul@web.de"))
+ :maintainer ("Thomas Link" . "samul@web.de")
+ :provided   (remarks)
+ :required   ((("emacs" cl overlay)
+	       ("tellib" tellib)))
+ :keywords   ("annotations" "remarks" "notes")
+ :homepage   "http://members.a1.net/t.link/CompEmacsRemarks.html"
+ :commentary "\
+;---(:excerpt-beg remarks :name desc)---
+;---(:excerpt-source \"~/Etc/TL-Wiki/CompEmacsRemarks\")---
+
+*** Usage
+
+Installation: Put (require 'remarks) (remarks-install) into your
+startup/user init file.
+
+Select a region and execute `remarks-make'. Remarks are saved and
+restored via =file-properties.el=.
+
+- Exit the note editing buffer by pressing C-c C-c -- if you kill the
+temporary buffer otherwise, the editing modes could get messed up.
+
+- Make the first line a meaningful title.
+
+- Inserting a null-text results in the deletion of the note.
+
+- When notes overlap, the user will be asked to select one note by its
+title.
+
+- Usually remarks will be saved when killing the buffer. You can
+nevertheless force saving notes by calling `file-properties-write'.
+
+- When closing a buffer, opened remarks will be saved automatically.
+
+
+*** Commands
+
+`remarks-make' :: Make a note covering the region from BEG to END.
+
+`remarks-edit' :: Edit the note at point.
+
+`remarks-summarise' :: Summarise the current buffer's remarks.
+
+`remarks-make-link' :: Mark a region as a link to another file.
+
+
+*** Variables
+
+`remarks-mouse-button' :: Pressing this mouse button over an annotated
+region (button-3 by default) pops up a small menu.
+
+`remarks-marker' :: Prefix annotated regions with this string (default:
+\"[REM%%]\", %% being the note number).
+
+`remarks-find-link-function' :: Function used for opening links.
+
+
+*** Faces
+
+`remarks-face' :: Face for marking excerpts.
+
+`remarks-link-face' :: Face for marking excerpts.
+
+
+*** Mouse & key bindings (local to overlay/extent)
+
+`remarks-mouse-button'     | `remarks-popup-menu'
+control return             | `remarks-edit'
+C-c control-left           | `remarks-move-left'
+C-c control-right          | `remarks-move-right'
+C-c control-up             | `remarks-move-up'
+C-c control-down           | `remarks-move-down'
+C-c control-shift-left     | `remarks-shrink'
+C-c control-shift-right    | `remarks-grow'
+
+;---(:excerpt-end remarks :name desc)---")

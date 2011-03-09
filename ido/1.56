@@ -1,0 +1,210 @@
+(:summary    "Interactively do things with buffers and files"
+ :created    "2001"
+ :updated    "2001"
+ :license    "GPL-2"
+ :authors    (("Kim F. Storm" . "storm@cua.dk"))
+ :maintainer ("Kim F. Storm" . "storm@cua.dk")
+ :provided   (ido)
+ :required   ((("emacs" cl custom)))
+ :keywords   ("extensions" "convenience")
+ :homepage   "http://www.cua.dk/ido.html"
+ :wikipage   "http://www.emacswiki.org/InteractivelyDoThings"
+ :commentary "\
+Installation:
+To get the alternative switch-to-buffer and find-file functions in
+this package bound to keys, do
+ (require 'ido)
+ (ido-mode t)
+
+Substring matching (The default method)
+
+As you type in a substring, the list of buffers or files currently
+matching the substring are displayed as you type.  The list is
+ordered so that the most recent buffers or files visited come at
+the start of the list.
+The buffer or file at the start of the list will be the one visited
+when you press return.  By typing more of the substring, the list is
+narrowed down so that gradually the buffer or file you want will be
+at the top of the list.  Alternatively, you can use C-s and C-r (or
+the right and left arrow keys) to rotate buffer or file names in the
+list until the one you want is at the top of the list.
+Completion is also available so that you can see what is common to
+all of the matching buffers or files as you type.
+
+This code is based on the iswitchb package by Stephen Eglen, and 
+large parts of the code and comments is copied directly from iswitchb
+with only editorial changes on my part.
+
+Prefix matching
+
+The standard way of completion with Unix-shells and Emacs is to insert a
+PREFIX and then hitting TAB (or another completion key). Cause of this
+behavior has become second nature to a lot of emacs users `ido' offers in
+addition to the default substring-matching-method (look above) also the
+prefix-matching-method. The kind of matching is the only difference to
+the description of the substring-matching above.
+Prefix matching was added by Klaus Berndl (klaus.berndl@sdm.de) based on
+an idea of Yuji Minejima <ggb01164@nifty.ne.jp> and his mcomplete-package.
+
+Example 
+
+Substring matching
+
+If I have two buffers called \"123456\" and \"123\", with \"123456\" the
+most recent, when I use ido-switch-buffer, I first of all get
+presented with the list of all the buffers
+
+      Buffer:  {123456,123} 
+
+If I then press 2:
+      Buffer: 2[3]{123456,123}
+
+The list in {} are the matching buffers, most recent first (buffers
+visible in the current frame are put at the end of the list by
+default).  At any time I can select the item at the head of the
+list by pressing RET.  I can also bring the put the first element
+at the end of the list by pressing C-s or [right], or put the last
+element at the head of the list by pressing C-r or [left].
+The item in [] indicates what can be added to my input by pressing TAB.
+In this case, I will get \"3\" added to my input.  So, press TAB:
+	 Buffer: 23{123456,123}
+
+At this point, I still have two matching buffers.
+If I want the first buffer in the list, I simply press RET.  If I
+wanted the second in the list, I could press C-s to move it to the
+top of the list and then RET to select it.
+
+However, If I type 4, I only have one match left:
+      Buffer: 234[123456] [Matched]
+
+Since there is only one matching buffer left, it is given in [] and we
+see the text [Matched] afterwards.  I can now press TAB or RET to go
+to that buffer.
+
+If however, I now type \"a\":
+      Buffer: 234a [No match]
+There are no matching buffers.  If I press RET or TAB, I can be
+prompted to create a new buffer called \"234a\".
+
+Of course, where this function comes in really useful is when you
+can specify the buffer using only a few keystrokes.  In the above
+example, the quickest way to get to the \"123456\" file would be
+just to type 4 and then RET (assuming there isn't any newer buffer
+with 4 in its name).
+
+Prefix matching
+
+If you have again two Buffers \"123456\" and \"123\" then hitting \"2\" does
+not match because \"2\" is not a PREFIX in any of the buffer-names. This
+is the only difference between the substring- and prefix-matching.
+
+Additional functionalty
+
+To see a full list of all matching buffer in a separate buffer,
+hit ? or press TAB when there are no further completions to the
+substring.  Repeated TAB presses will scroll you through this
+separate buffer.
+
+The buffer at the head of the list can be killed by pressing C-k.
+If the buffer needs saving, you will be queried before the buffer
+is killed.
+
+If you find that the file you are after is not in a buffer, you can
+press C-f to immediately drop into ido-find-file.
+
+Likewise, if you use ido-find-file, the list of files and
+directories in the current directory is provided in the same
+fashion as the buffers above. However, the files and directories
+are simply sorted in alphabetical order.
+
+In addition to scrolling through the list using [right] and [left],
+you can use [up] and [down] to quickly scroll the list to the next
+or previous subdirectory.
+
+To go down into a subdirectory, and continue the file selection on
+the files in that directory, simply move it to the head of the list
+and hit RET.
+
+To go up to the parent directory, delete any partial file name
+already specified (e.g. using [backspace]) and hit [backspace].
+
+To go to the root directory (on the current drive), enter two slashes.
+On MS-DOS or Windows, to select the root of another drive, enter X:/
+where X is the drive letter.
+
+If for some reason you cannot specify the proper file using
+ido-find-file, you can press C-f to enter the normal find-file.
+You can also press C-b to drop into ido-switch-buffer.
+
+See the doc string of ido-switch-buffer and ido-find-file for full
+keybindings and features.
+ (describe-function 'ido-find-file)
+
+Customisation
+
+See the User Variables section below for easy ways to change the
+functionality of the program.  These are accessible using the
+custom package.
+To modify the keybindings, use the hook provided.  For example:
+(add-hook 'ido-define-mode-map-hook 'ido-my-keys)
+
+(defun ido-my-keys ()
+ \"Add my keybindings for ido.\"
+ (define-key ido-mode-map \" \" 'ido-next-match)
+ )
+
+Seeing all the matching files
+
+If you have many matching files, they may not all fit onto one
+line of the minibuffer.  In this case, you should use rsz-mini
+(resize-minibuffer-mode).  You can also limit ido so that it
+only shows a certain number of lines -- see the documentation for
+`ido-minibuffer-setup-hook'.
+
+Changing the list of files
+
+By default, the list of current files is most recent first,
+oldest last, with the exception that the files visible in the
+current frame are put at the end of the list.  A hook exists to
+allow other functions to order the list.  For example, if you add:
+
+(add-hook 'ido-make-buffer-list-hook 'ido-summary-buffers-to-end)
+
+then all files matching \"Summary\" are moved to the end of the
+list.  (I find this handy for keeping the INBOX Summary and so on
+out of the way.)  It also moves files matching \"output\\*$\" to the
+end of the list (these are created by AUC TeX when compiling.)
+Other functions could be made available which alter the list of
+matching files (either deleting or rearranging elements.)
+
+Highlighting
+
+The highlighting of matching items is controlled via ido-use-faces.
+The faces used are ido-first-match-face, ido-only-match-face and
+ido-subdir-face.
+Colouring of the matching item was suggested by
+Carsten Dominik (dominik@strw.leidenuniv.nl).
+
+Replacement for read-buffer
+
+ido-read-buffer has been written to be a drop in replacement
+for the normal buffer selection routine `read-buffer'.  To use
+iswitch for all buffer selections in Emacs, add:
+(setq read-buffer-function 'ido-read-buffer)
+(This variable was introduced in Emacs 20.3)
+XEmacs users can get the same behaviour by doing:
+(defalias 'read-buffer 'ido-read-buffer) 
+since `read-buffer' is defined in lisp.
+
+Regexp matching
+
+There is limited provision for regexp matching within ido,
+enabled through `ido-enable-regexp'.  This allows you to type `c$'
+for example and see all file names ending in `c'.  This facility
+is quite limited though in two respects.  First, you can't
+currently type in expressions like `[0-9]' directly -- you have to
+type them in when ido-enable-regexp is nil and then toggle on the
+regexp functionality.  Likewise, don't enter an expression
+containing `\\' in regexp mode.  If you try, ido gets confused,
+so just hit C-g and try again.  Secondly, no completion mechanism
+is currently offered when regexp searching.")

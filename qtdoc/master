@@ -1,0 +1,18 @@
+(:summary    "Qt documentation lookup from within Emacs"
+ :created    "2007"
+ :updated    "2007"
+ :license    "GPL-2"
+ :authors    (("Martin Blais" . "blais@furius.ca"))
+ :maintainer ("Martin Blais" . "blais@furius.ca")
+ :provided   (qtdoc)
+ :required   ((("emacs" browse-url iswitchb)))
+ :homepage   "http://furius.ca/pubcode/"
+ :commentary "\
+Lookup Qt documentation in a Browser from Emacs. Emacs tells your running web
+browser to open up the appropriate page.
+
+Description
+
+Download
+
+BUGS")

@@ -1,0 +1,11 @@
+(:summary    "Cite text with proper filling"
+ :created    "1998"
+ :updated    "20030514"
+ :license    "GPL-2"
+ :authors    (("Lars R. Clausen" . "lrclause@cs.uiuc.edu"))
+ :maintainer ("Lars R. Clausen" . "lrclause@cs.uiuc.edu")
+ :provided   (tc)
+ :required   ((("emacs" mail-extr overlay)))
+ :keywords   ("citing" "filling" "mail" "news")
+ :homepage   "http://www.emacswiki.org/TrivialCite"
+ :wikipage   "http://www.emacswiki.org/TrivialCite")

@@ -1,0 +1,4 @@
+(:repository (svn . "http://idebridge.googlecode.com/svn")
+ :provided   (ide-bridge)
+ :homepage   "http://code.google.com/p/idebridge/"
+ :wikipage   "http://www.emacswiki.org/IdeBridge")

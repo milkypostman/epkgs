@@ -1,0 +1,4 @@
+(:updated    "20041204"
+ :license    "GPL-2"
+ :provided   (file-name-insertions)
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/file-handling/")

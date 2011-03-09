@@ -1,0 +1,16 @@
+(:summary    "Re-arrange mail headers into pleasing order"
+ :created    "1992"
+ :updated    "19990321"
+ :license    "GPL-2"
+ :authors    (("Noah Friedman" . "friedman@splode.com"))
+ :maintainer (nil . "friedman@splode.com")
+ :provided   (order-head)
+ :required   ((("emacs" rfc822)
+	       ("fmailutils" fmailutils)))
+ :keywords   ("mail" "extensions")
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
+ :commentary "\
+This package used to be called mail-reorder-headers.el,
+but that name is too long for some filesystems.
+
+Only an anal retentive pedant would actually use this package.")

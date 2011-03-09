@@ -1,0 +1,12 @@
+(:summary    "Apply uncrustify on buffer region"
+ :repository (git . "https://github.com/glima/Emacs-uncrustify.git")
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :provided   (uncrustify)
+ :keywords   ("uncrustify")
+ :homepage   "https://github.com/glima/Emacs-uncrustify"
+ :commentary "\
+Quick program. Use uncrustify to check buffer for improper
+indentation. It will grab indentation configuration from
+$HOME/.uncrustify.cfg")

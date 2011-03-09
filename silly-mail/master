@@ -1,0 +1,25 @@
+(:summary    "Generate bozotic mail headers"
+ :updated    "20020715"
+ :license    "GPL-2"
+ :maintainer ("Noah Friedman" . "friedman@splode.com")
+ :provided   (silly-mail)
+ :required   ((("emacs" sendmail)
+	       ("horoscope" horoscope)
+	       ("kibologize" kibologize)
+	       ("shop" shop)
+	       ("uboat" uboat)
+	       ("youwill" youwill)))
+ :keywords   ("extensions" "mail")
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
+ :commentary "\
+To use this, put the following in your .emacs:
+
+   (autoload 'sm-add-random-header \"silly-mail\" nil t)
+   (add-hook 'mail-setup-hook 'sm-add-random-header)
+
+I solicit more randomly generated headers commands.
+
+Some of the options in this program require some external packages which
+are not a standard part of emacs, e.g. shop.el and flame.el (flame.el is
+present in XEmacs and Emacs 18, but missing from Emacs 19).  These are
+available from http://www.splode.com/users/friedman/software/emacs-lisp/")

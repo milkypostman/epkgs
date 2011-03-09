@@ -1,0 +1,11 @@
+(:summary    "Highlight matching block"
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-2"
+ :authors    (("khiker" . "khiker.mail+elisp@gmail.com"))
+ :maintainer ("khiker" . "khiker.mail+elisp@gmail.com")
+ :provided   (ruby-block)
+ :required   ((("emacs" ruby-mode)))
+ :keywords   ("languages" "faces" "ruby")
+ :homepage   "http://www.emacswiki.org/RubyBlockMode"
+ :wikipage   "http://www.emacswiki.org/RubyBlockMode")

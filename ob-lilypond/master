@@ -1,0 +1,21 @@
+(:summary    "Org-babel functions for lilypond evaluation"
+ :repository (git . "https://github.com/sshelagh/ob-lilypond.git")
+ :license    "GPL-3"
+ :authors    (("Shelagh Manton"))
+ :maintainer ("Shelagh Manton")
+ :provided   (ob-lilypond)
+ :required   ((("emacs" ob ob-eval)
+	       ("lilypond" lilypond-mode)))
+ :keywords   ("literate" "programming" "weaving" "markup")
+ :homepage   "http://orgmode.org"
+ :commentary "\
+If you are planning on adding a language to org-babel we would ask
+that if possible you fill out the FSF copyright assignment form
+available at http://orgmode.org/request-assign-future.txt as this
+will make it possible to include your language support in the core
+of Org-mode, otherwise unassigned language support files can still
+be included in the contrib/ directory of the Org-mode repository.
+
+Requirements:
+
+You need to have a copy of LilyPond")

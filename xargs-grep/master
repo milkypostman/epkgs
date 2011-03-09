@@ -1,0 +1,31 @@
+(:summary    "Grep large sets of files by using xargs"
+ :repository (git . "https://github.com/lewang/le_emacs_xargs_grep.git")
+ :created    "20110207"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Le Wang"))
+ :maintainer ("Le Wang")
+ :provided   (xargs-grep)
+ :required   ((("emacs" compile grep)))
+ :homepage   "https://github.com/lewang/le_emacs_xargs_grep"
+ :wikipage   "http://www.emacswiki.org/xargs-grep"
+ :commentary "\
+This is probably most useful when called from a function.  I use it to grep
+through a large set of config files, which don't fit on the command-line.
+
+
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License as
+published by the Free Software Foundation; either version 3, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; see the file COPYING.  If not, write to
+the Free Software Foundation, Inc., 51 Franklin Street, Fifth
+Floor, Boston, MA 02110-1301, USA.")

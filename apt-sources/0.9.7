@@ -1,0 +1,51 @@
+(:created    "2003"
+ :updated    "2003"
+ :license    "GPL"
+ :authors    (("Dr. Rafael Sepúlveda." . "drs@gnulinux.org.mx"))
+ :maintainer ("Dr. Rafael Sepúlveda." . "drs@gnulinux.org.mx")
+ :provided   (apt-sources)
+ :required   ((("emacs" autoinsert)))
+ :wikipage   "http://www.emacswiki.org/AptSources"
+ :commentary "\
+This mode is for editing '/etc/apt/sources.list', the APT (Advanced
+Package Tool) configuration file found on Debian systems.
+
+APT is a package retrieval tool for Debian (a GNU distribution, see
+http://www.debian.org); for example you could install Emacs with
+the command:
+
+  apt-get install emacs21
+
+and APT will then retrieve the package and install it for you. The
+sources.list file tells APT where to look for packages. Mine looks
+like this:
+
+  deb http://http.us.debian.org/debian unstable main contrib
+  deb http://non-us.debian.org/debian-non-US unstable/non-US main
+
+  deb ftp://ftp.de.debian.org/debian ../project/experimental main
+
+This mode font-locks the file and add some things including new
+source lines and modifying existing source lines.
+
+This mode can be customized in diferent parts. You can (interactively)
+change if you want blank lines around a new source line and comment
+with `apt-sources-around-lines'. Also you can change the way that
+this mode names each source line, with variable`apt-sources-source-name';
+if no name is entered, no commente name will be inserted.
+To customize, try `M-x customize-group [RET] apt-sources'
+
+You can modify existing parts of the source line; check the mode
+documentation for mor details. Another thing that this mode can do is to
+replicate an existing line (`C-c C-r') that will be changed to the 'deb' or
+'deb-src' corresponding line. If it replicates a 'deb' line, an identical
+'deb-src' source line will be created.
+
+To load this mode, you can add a \"Local Variables\" block at the end of
+the sources.list file with `C-c C-v' after you change the file's mode to
+'apt-sources'.  But this should not be needed since an entry is added to
+`auto-mode-alist' to automatically enter this mode when editing files
+named `sources.list'.
+
+You can always find the latest version of this mode on
+'http://people.gnulinux.org.mx/drs/emacs/apt-sources.el'")

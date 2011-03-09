@@ -1,0 +1,26 @@
+(:summary    "Yet another fastnav"
+ :repository (git . "https://github.com/tm8st/emacs-yafastnav.git")
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-2"
+ :provided   (yafastnav)
+ :keywords   ("convenience" "move" "fastnav")
+ :homepage   "https://github.com/tm8st/emacs-yafastnav"
+ :commentary "\
+表示されているウィンドウ内への移動の高速化のための拡張です。
+最初に正規表現で画面内の候補をリストアップし、ショートカットキーと対応づけ、
+次に表示されているショートカットキーもしくは、ショートカットキーとCtrlを同時押しすることで、
+目的の位置へ移動します。
+例) a と表示されている場合は C-a と入力することでその位置へ移動します。
+移動したい位置が候補に含まれていない場合は、C-SPC もしくは SPC と入力することで、
+次の候補のリストアップを行います。
+
+設定例
+
+(require 'yafastnav)
+(global-set-key (kbd \"C-l C-h\") 'yafastnav-jump-to-current-screen)
+(global-set-key (kbd \"C-l C-.\") 'yafastnav-jump-to-forward)
+(global-set-key (kbd \"C-l C-r\") 'yafastnav-jump-to-backward)
+
+TODO: yafastnav-shortcut-keys-charとテーブルを作るのではなく、
+      yafastnav-more-shortcutkey-listから表示文字を求めれるようにする")

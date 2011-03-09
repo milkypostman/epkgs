@@ -1,0 +1,5 @@
+(:repository (git . "https://github.com/imakado/anything-jde.git")
+ :provided   (anything-jde)
+ :required   ((("anything" anything)
+	       ("jdee" jde)))
+ :homepage   "https://github.com/imakado/anything-jde")

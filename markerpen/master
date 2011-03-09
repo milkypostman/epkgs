@@ -1,0 +1,20 @@
+(:summary    "Colour and highlight arbitrary sections of buffers"
+ :created    "2005"
+ :authors    (("Ben Moseley" . "ben@moseley.name"))
+ :maintainer ("Ben Moseley" . "ben@moseley.name")
+ :provided   (markerpen)
+ :homepage   "http://www.emacswiki.org/MarkerPens"
+ :wikipage   "http://www.emacswiki.org/MarkerPens"
+ :commentary "\
+Allows you to colour and highlight arbitrary sections of buffers.
+
+This can be useful when looking through complex code etc. Also the invisible pen
+is useful for clearing away bits of information which are uninteresting.
+
+Run 'M-x markerpen-show-all-pens' to get an idea of what effects you can get
+
+The main interface is via the 'M-x markerpen-mark-region' - see documentation on that.
+The markerpens are all implemented using overlays.
+
+Let me know of any comments, suggestions, problems - but there are no
+guarantees and use of this code is at your own risk.")

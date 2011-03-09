@@ -1,0 +1,14 @@
+(:summary    "Elpoint -- Yet Another Presentation Tool for Emacsen"
+ :repository (cvs . ":pserver:anonymous@elpoint.cvs.sourceforge.net:/cvsroot/elpoint")
+ :created    "2002"
+ :updated    "2002"
+ :license    "GPL-2"
+ :authors    (("Yuuichi Teranishi" . "teranisi@gohome.org"))
+ :maintainer ("Yuuichi Teranishi" . "teranisi@gohome.org")
+ :provided   (ept ept-align ept-dump ept-kochi-x ept-mode ept-outline ept-setup ept-solaris ept-w3m)
+ :required   ((("apel" product)
+	       ("emacs" cl derived outline)
+	       ("w3m" w3m)))
+ :keywords   ("presentation")
+ :homepage   "http://elpoint.sourceforge.net/"
+ :wikipage   "http://www.emacswiki.org/Elpoint")

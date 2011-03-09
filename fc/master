@@ -1,0 +1,161 @@
+(:summary    "A flashcard wrapper to make it more friendly"
+ :created    "2006"
+ :updated    "2006"
+ :license    "GPL-2"
+ :authors    (("Damien Elmes" . "emacs@ichi2.net"))
+ :maintainer ("Damien Elmes" . "emacs@ichi2.net")
+ :provided   (fc)
+ :required   ((("emacs" time-date)
+	       ("flashcard" flashcard)
+	       ("flashcard-sm5" flashcard-sm5))
+	      ((nil kakasi)))
+ :keywords   ("flashcard" "japanese")
+ :homepage   "http://ichi2.net/flashcard/"
+ :commentary "\
+This file contains a bunch of convenience routines for flashcard
+and flashcard-sm5 to make the user interface friendlier. It
+includes English and Japanese user interfaces, but can be used to
+study anything.
+
+See http://ichi2.net/flashcard for a screenshot.
+
+Terminology:
+C-g                 Control+g
+M-x                 Alt+x
+M-x foo bar         Alt+x, foo [Enter] bar
+
+Installation
+-------------------------------------------------------------------
+
+Win32: simple answer, download win32 binaries from
+http://ichi2.net/flashcard/. Long answer, download meadow 3.0 and
+follow the instructions below.
+
+Unix/Mac: emacs22+ is recommended. It's possible to
+use flashcard in emacs21.4 (the stable version available in most
+cases), but you need to install mule-ucs and make sure it's
+enabled. On Debian, it's not enabled by default, but you can enable
+it by doing 'export DEB_MULEUCS_UNICODE=on' in a shell before
+starting emacs. If you get messages about unsafe encodings and
+being unable to convert to utf-8, it's because you haven't got
+mule-ucs installed properly. In debian, you're better off with the
+'emacs-snapshot' package instead.
+
+Next, download the following two files, and along with this file,
+place them in a directory somewhere - maybe c:/meadow on Windows,
+~/jp on unix
+
+* http://ichi2.net/emacs/flashcard/flashcard.el
+* http://ichi2.net/flashcard/flashcard-sm5.el
+
+Now create an empty .emacs in c:/meadow/_emacs or ~/.emacs
+
+For Meadow, at the bottom of the file, add these lines, and make
+sure to remove the leading semi-colons.
+
+(setq fc-base \"c:/meadow\")
+(setq fc-default-lang 'en)
+(add-to-list 'load-path \"c:/meadow\")
+(load \"c:/meadow/fc\")
+
+For unix, add the following lines
+
+(setq fc-base \"~/jp\")
+(setq fc-default-lang 'en)
+(add-to-list 'load-path \"~/jp\")
+(load \"~/jp/fc\")
+
+If you want to see the Japanese user interface instead of English,
+change `en' to `jp'.
+
+After you start emacs again, the following files will (eventually)
+be created:
+
+* tango.deck:     The main file which flashcard uses
+* tango.pending:  Stores entries which haven't been imported yet.
+                  This is easy to hand-edit.
+* tango.imported: Stores entries which have been imported, for
+                  future reference. This file has been largely
+                  obsoleted by the deck editor, but it serves as a
+                  rudimentary backup.
+
+Usage
+-------------------------------------------------------------------
+
+fc is configured for studying Japanese by default. When you hit
+[F7], it prompts you for a kanji compound, the hiragana reading,
+and an English description. If you want to use fc to study
+something other than Japanese, try and create your own version of
+`fc-add-entry'.
+
+[F7] Adds a new word to tango.pending. If you make a mistake in the
+entry you can hit C-g to abort, or you can edit tango.pending
+before you start a quiz, to change your entry.
+
+[F9] Starts the quiz (automatically importing any pending words).
+
+When you want to stop the quiz, just close the window. Saving
+should be automatic. You may be prompted to save the deck - just
+say yes.
+
+When the quiz begins, you'll see a question. You can type the
+answer if you want, but you don't have to - I just say it aloud.
+When you're ready to see the answer, hit enter. You'll be shown the
+answer and prompted to enter a number from 0-5, indicating how well
+you remembered. The numbers are as follows:
+
+0: didn't remember at all
+1-2: remembered a little/half remembered
+3: almost remembered (made a mistake, but was close)
+4: remembered (maybe after thinking for a while)
+5: remembered easily
+
+Customizing colours and fonts
+-------------------------------------------------------------------
+
+To make the question & answer faces bigger, put the following lines
+in _emacs/.emacs:
+
+(set-face-attribute 'flashcard-question-face nil :height 1.5)
+(set-face-attribute 'flashcard-answer-face nil :height 1.5)
+
+You can change the number to make the font bigger or smaller.
+
+The default colours and fonts are pretty difficult to see,
+especially under Meadow. To change the foreground/background
+colour, type: 'M-x customize-face default'. Select a different
+foreground and background and 'save for future sessions'.
+
+To change the colours of the question and answer face in the same
+way. Type 'M-x customize-face flashcard-question-face' or 'M-x
+customize-face flashcard-answer-face'. You can change the height
+(try 1.5), and the colours (HTML colour codes like \"#cca\" work).
+
+Automatically starting the quiz
+-------------------------------------------------------------------
+
+If you don't use emacs/meadow for anything else, you can get it to
+start quizzing automatically when you start it up. Add the
+following lines to the bottom of _emacs or .emacs:
+
+(setq inhibit-startup-message t)
+(find-file \"/path/to/tango.deck\")
+
+JLPT word lists
+-------------------------------------------------------------------
+
+I've generated word lists for the four JLPT levels - you can
+download them from http://ichi2.net/flashcard/
+
+Note that I really recommend entering your own words, as words
+learnt in context tend to be remembered a lot easier.
+
+To use the word lists, unzip the files, place them somewhere, then
+type C-x C-f /path/to/one-file, instead of hitting [F9].
+
+Comments/questions/problems
+-------------------------------------------------------------------
+
+The fastest way to reach me is as `resolve', on
+irc.openprojects.net, channel #nihongo. You can also email me if
+you'd like.")

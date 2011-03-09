@@ -1,0 +1,9 @@
+(:summary    "Maven2 integration for JDEE"
+ :repository (hg . "http://bitbucket.org/espenhw/jde-mvn")
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-2"
+ :provided   (jde-mvn jde-mvn-build jde-mvn-nexus jde-mvn-pom)
+ :required   ((("emacs" cl json nxml-mode url xml)
+	       ("jdee" efc)))
+ :homepage   "http://bitbucket.org/espenhw/jde-mvn")

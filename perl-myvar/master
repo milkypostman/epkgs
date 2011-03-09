@@ -1,0 +1,32 @@
+(:summary    "Declare lexicaly scoped vars as my()"
+ :updated    "20041007"
+ :license    "GPL-2"
+ :authors    (("Harley Gorrell" . "harley@panix.com"))
+ :maintainer ("Harley Gorrell" . "harley@panix.com")
+ :provided   (perl-myvar)
+ :keywords   ("perl" "declare")
+ :commentary "\
+Declaring all those variables in a perl sub can be time
+consuming and I seem to overlook one or two now and then.
+'pmv-declare' insures that all the variables are
+declared.
+
+Bind 'pmv-declare' to a function key and go wild.
+Inserting these two lines in your .emacs should be sufficient.
+ (require 'perl-myvar)
+ (define-key perl-mode-map [f11] 'pmv-declare)
+
+This package expects 'properly' indented code to find sub
+starts. That is not a big restriction when using
+perl-mode, so pmv expects it.
+
+Global variables are variables which start in the first
+column anywhere in the buffer.  Variables declared with
+'my' or 'local' should have only whitespace in front of
+them.  You may use '#global(vars);' to document global
+variables.  '#ignore(vars);' may be used to work around
+over zealous declerations on the part of pmv-declare.
+
+If font-lock-mode is on, pmv-declare will use the face of
+text to avoid extracting variables from strings.  If not,
+it will think \"%s\" is a hash.")

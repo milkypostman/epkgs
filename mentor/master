@@ -1,0 +1,28 @@
+(:summary    "Control rtorrent from GNU Emacs"
+ :repository (git . "https://github.com/solarus/mentor.git")
+ :created    "2010"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Stefan Kangas" . "skangas@skangas.se"))
+ :maintainer ("Stefan Kangas" . "skangas@skangas.se")
+ :provided   (mentor url-scgi)
+ :required   ((("emacs" cl)
+	       ("xml-rpc" xml-rpc)))
+ :keywords   ("bittorrent" "rtorrent")
+ :homepage   "https://github.com/solarus/mentor"
+ :commentary "\
+This code plugs the bittorrent client rtorrent into GNU Emacs using XML-RPC.
+The current goal is to never have to touch the standard ncurses interface
+ever again.
+
+TODO:
+Support for categories
+Filters
+Marking torrents and executing commands over all marked torrents
+Sort according to column, changable with < and >
+Customizable fonts
+Torrent detail screen
+Completion for (mentor-set-view) and (mentor-torrent-add-view-prompt)
+Save cache to disk
+
+Bug reports, comments, and suggestions are welcome!")

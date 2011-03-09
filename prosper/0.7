@@ -1,0 +1,34 @@
+(:summary    "Prosper style file for AUCTeX"
+ :created    "2001"
+ :updated    "2002"
+ :license    "GPL-2"
+ :authors    (("Phillip Lord" . "p.lord@russet.org.uk")
+	      ("Nevin Kapur" . "nevin@jhu.edu"))
+ :maintainer ("Phillip Lord" . "p.lord@russet.org.uk")
+ :keywords   ("tex" "wp" "prosper")
+ :homepage   "http://homepages.cs.ncl.ac.uk/phillip.lord/emacs.html"
+ :commentary "\
+This is a propser (http://prosper.sourceforge.net/) style file for
+AUCTeX.
+
+Installation: 
+
+For this file to work you need to have a working installation of 
+AucTeX. After that installtion is simple. Put this file into one of 
+the directories specified in `TeX-style-path', with the name 
+\"style\" rather than \"auto\" as it might get over written in the 
+latter.  
+
+Then stick the current for into your .emacs 
+(eval-after-load \"latex\" 
+  '(add-to-list 'LaTeX-style-list '(\"prosper\"))) 
+
+
+And that should be it. You check whether it's worked or not by 
+opening a prosper document, and trying `LaTeX-environment'. \"slide\" 
+should be available by tab completion and it should ask you about 
+overlays.  
+
+The environment \"prosper\" should be inserted immediately after the
+document environment.  It will prompt you for options available
+under prosper and create a skeleton document.")

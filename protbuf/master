@@ -1,0 +1,16 @@
+(:summary    "Protect buffers from accidental killing"
+ :created    "19940621"
+ :updated    "20000821"
+ :license    "GPL-2"
+ :authors    (("Noah Friedman" . "friedman@splode.com"))
+ :maintainer (nil . "friedman@splode.com")
+ :provided   (protbuf)
+ :keywords   ("extensions")
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
+ :wikipage   "http://www.emacswiki.org/ProtBuf"
+ :commentary "\
+This package allows you to make it harder to kill buffers accidentally,
+e.g. by being too trigger happy selecting items in the buffer menu.
+protect-process-buffer-from-kill-mode is perhaps the more useful of the
+two, making it harder to accidentally kill shell buffers without
+terminating the process in them first.")

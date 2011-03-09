@@ -1,0 +1,32 @@
+(:summary    "Keep the cursor in the centre at all times. "
+ :updated    "20041211"
+ :license    "GPL-2"
+ :authors    (("Phillip Lord" . "p.lord@russet.org.uk"))
+ :maintainer ("Phillip Lord" . "p.lord@russet.org.uk")
+ :homepage   "http://homepages.cs.ncl.ac.uk/phillip.lord/emacs.html"
+ :commentary "\
+This mode ensures that the cursor is always in the center of the
+display. This can be useful at times if, for example, you are
+trying to get lots of stuff onto one screen for a screenshot, or to
+read without using the keyboard. 
+
+It has one major entry point which is `centering-mode' which turns
+on a minor mode. 
+
+It currently works by recentering the display after the line
+position has changed. There is a delay before this happens or the
+constant redisplaying makes the emacs look horrible. Set
+`centering-timer-delay' to change the length of the delay. Setting
+it to 0 is permissible. 
+
+
+Todo
+
+Well it doesn't work. So fix the centering-recenter function. Also 
+this should only use a single timer. When switching on, check for
+timer, start if not. When switching off check whether there are any
+centering buffers left open, if not kill it. 
+
+The current logic is imperfect, because if the a key is
+autorepeated, then the system will not update when the up key is
+removed. Perhaps I should move back to the old delay system.")

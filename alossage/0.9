@@ -1,0 +1,27 @@
+(:summary    "View-lossage with automatic refresh"
+ :created    "2001"
+ :updated    "20010120"
+ :license    "GPL-2"
+ :authors    (("Riku Saikkonen" . "riku.saikkonen@hut.fi"))
+ :maintainer ("Riku Saikkonen" . "riku.saikkonen@hut.fi")
+ :provided   (alossage)
+ :keywords   ("help")
+ :homepage   "http://users.tkk.fi/u/rsaikkon/software/elisp/"
+ :commentary "\
+Like the standard Emacs function `view-lossage', but with
+automatic refresh of lossage information. This package is meant
+for teaching Emacs to others: with it, onlookers can see what keys
+you press while using Emacs.
+
+The normal way to use this package is to turn on auto-lossage-mode
+(with M-x auto-lossage-mode), and then view the *Auto-Lossage*
+buffer in another window (use C-x 3) or frame (resize it to about
+10 characters wide). M-x auto-lossage-make-frame is a simple way
+to activate the package when you can display multiple frames.
+
+Please note that, as with the normal `view-lossage', this mode
+displays all the keys you press in Emacs, including passwords and
+such. You should probably turn it off when writing passwords or
+other sensitive information into Emacs. This mode (and
+`view-lossage') can display up to 100 previous keystrokes, so you
+may want to type that much before re-enabling it.")

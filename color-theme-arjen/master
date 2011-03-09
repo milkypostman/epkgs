@@ -1,0 +1,15 @@
+(:summary    "Arjen Wiersma's preferred color theme"
+ :repository (git . "https://github.com/credmp/color-theme-arjen.git")
+ :created    "2001"
+ :updated    "2008"
+ :license    "GPL-3"
+ :authors    (("Arjen Wiersma" . "arjen@wiersma.org"))
+ :maintainer ("Arjen Wiersma" . "arjen@wiersma.org")
+ :provided   (color-theme-arjen)
+ :required   ((("color-theme" color-theme)))
+ :keywords   ("local")
+ :commentary "\
+This was my first color theme. It has been hacked into shape over
+the last couple of years and I still use it every single day.
+
+Any comments/feedback are greatly appreciated")

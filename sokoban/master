@@ -1,0 +1,13 @@
+(:summary    "Sokoban Game"
+ :created    "2005"
+ :updated    "20050626"
+ :license    "GPL-2"
+ :authors    (("Sascha Wilde" . "swilde@sha-bang.de"))
+ :maintainer ("Sascha Wilde" . "swilde@sha-bang.de")
+ :provided   (sokoban)
+ :required   ((("emacs" cl)))
+ :keywords   ("games")
+ :homepage   "http://www.sha-bang.de/emacs.html"
+ :wikipage   "http://www.emacswiki.org/SokobanMode"
+ :commentary "\
+Play Sokoban in emacs.")

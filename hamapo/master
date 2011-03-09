@@ -1,0 +1,4 @@
+(:repository (hg . "http://bitbucket.org/dagezi/hamapo")
+ :provided   (hamapo)
+ :required   ((("emacs" cl)))
+ :homepage   "http://bitbucket.org/dagezi/hamapo")

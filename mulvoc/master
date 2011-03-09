@@ -1,0 +1,7 @@
+(:summary    "Multi-lingual vocabulary"
+ :repository (cvs . ":pserver:anonymous@mulvoc.cvs.sourceforge.net:/cvsroot/mulvoc")
+ :updated    "20090521"
+ :license    "GPL-2"
+ :provided   (language-codes mulvoc mulvoc-data mulvoc-interactive-edit mulvoc-mode)
+ :required   ((("emacs" thingatpt)))
+ :wikipage   "http://www.emacswiki.org/MuLVoc")

@@ -1,0 +1,16 @@
+(:updated    "20050304"
+ :authors    (("Dhruva Krishnamurthy" . "dhruva.krishnamurthy@gmail.com"))
+ :maintainer ("Dhruva Krishnamurthy" . "dhruva.krishnamurthy@gmail.com")
+ :provided   (emacsserver)
+ :commentary "\
+o Usage ss server:
+  (require 'emacsserver)
+  (emacsserver-start \"magic\")
+o Usage as client:
+  emacs --batch --load emacsserver.el
+        --eval \"(emacsclient-command '(find-file \\\"~/_emacs\\\") \\\"magic\\\")\"
+
+TODO:
+o Does not work on XEmacs ('make-network-process not available)
+o Code cleanup, optimize, document and misc stuff
+-----------------------------------------------------------------------------")

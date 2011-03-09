@@ -1,0 +1,31 @@
+(:summary    "Search program in paths of variable `exec-path'"
+ :created    "1999"
+ :updated    "1999"
+ :license    "GPL-2"
+ :authors    (("Christoph Conrad" . "christoph.conrad@gmx.de"))
+ :maintainer ("Christoph Conrad")
+ :provided   (which)
+ :keywords   ("matching")
+ :commentary "\
+`which' is an interactive function which takes a program name (string)
+as argument and searches all executables with this name in all paths of
+the variable `exec-path'. Almost every Unix system (especially our
+beloved GNU/Linux) has this command 'on board', some operating systems
+don't have. On operating systems like Windows NT where there are
+several meaningful extensions (e.g. \"com\", \"exe\") which can be a suffix
+of an executable you can define a variable whose name is build from the
+concatenation of \"which-system-\", the variable `system-type' and
+\"extensions\". It is a list of extensions (strings) to append to the
+program name given to the function `which'. If the environment variable
+\"PATHEXT\" is available it is used instead!
+
+`which-elisp' is an interactive function which takes a file name
+(string) as argument and searches the files with this name and the
+extension \".el\" in all paths of the variable `load-path'.
+
+If `which' or `which-elisp' are called interactively, they display the
+found paths in the modeline. If called non-interactively, they return
+the list of found paths.
+
+The code does something usable, though not perfect.  Improvement
+suggestions from Emacs experts are welcome.")

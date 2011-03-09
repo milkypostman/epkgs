@@ -1,0 +1,7 @@
+(:repository (git . "https://github.com/juergenhoetzel/pkgbuild-mode.git")
+ :created    "2010"
+ :updated    "20071020"
+ :license    "GPL-2"
+ :provided   (pkgbuild-mode)
+ :required   ((("emacs" advice cl easymenu etags sh-script)))
+ :homepage   "https://github.com/juergenhoetzel/pkgbuild-mode")

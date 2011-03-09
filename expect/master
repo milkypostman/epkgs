@@ -1,0 +1,10 @@
+(:summary    "Support for external process communication"
+ :created    "1997"
+ :updated    "1997"
+ :license    "GPL-2"
+ :authors    (("Lars Magne Ingebrigtsen" . "lmi@gnus.org"))
+ :maintainer ("Lars Magne Ingebrigtsen" . "lmi@gnus.org")
+ :provided   (expect)
+ :required   ((("emacs" cl timer)))
+ :keywords   ("extensions" "processes")
+ :homepage   "http://quimby.gnus.org/elisp/")

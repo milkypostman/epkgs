@@ -1,0 +1,3 @@
+(:authors    (("Bill Brodie" . "wbrodie@panix.com"))
+ :maintainer ("Bill Brodie" . "wbrodie@panix.com")
+ :provided   (linemenu))

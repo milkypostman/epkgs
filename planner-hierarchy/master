@@ -1,0 +1,4 @@
+(:summary    "Hierarchical Planning"
+ :created    "2006"
+ :updated    "2006"
+ :provided   (planner-hierarchy))

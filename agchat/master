@@ -1,0 +1,15 @@
+(:summary    "Comint-based emacs interface for chatting on AgChat"
+ :created    "19950102"
+ :updated    "20020804"
+ :license    "GPL-2"
+ :authors    (("Noah Friedman" . "friedman@splode.com"))
+ :maintainer (nil . "friedman@splode.com")
+ :provided   (agchat)
+ :required   ((("emacs" comint)))
+ :keywords   ("communication" "extensions")
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
+ :commentary "\
+AgChat is a chat system written by silver Harloe <silver@silverchat.com>.
+
+popup mode is implemented via pb-popup.el; see
+http://www.splode.com/~friedman/software/emacs-lisp#pb-popup")

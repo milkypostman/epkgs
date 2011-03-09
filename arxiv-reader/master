@@ -1,0 +1,9 @@
+(:summary    "An interface for reading and sorting arXiv abstracts"
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-3"
+ :authors    ((nil . "peterm@srl.caltech.edu"))
+ :maintainer (nil . "peterm@srl.caltech.edu")
+ :provided   (arxiv-mode)
+ :homepage   "http://www.emacswiki.org/ArxivReader"
+ :wikipage   "http://www.emacswiki.org/ArxivReader")

@@ -1,0 +1,19 @@
+(:created    "2002"
+ :updated    "2002"
+ :license    "GPL-2"
+ :provided   (spamprobe)
+ :homepage   "http://www.davep.org/emacs/"
+ :commentary "\
+I use spamprobe <URL:http://spamprobe.sourceforge.net/> to help me manage
+my incoming mail and, because of this, I wrote spamprobe.el to provide me
+with a small set of emacs based spamprobe tools.
+
+This code might only be useful to you if you handle UCE in a similar way
+to how I do. I (attempt to) deliver all UCE to an mbox mail folder called
+~/Mail/Junk. All mail in there should contain a \"X-SpamProbe:\" header
+(added to each email by a procmail rule). I then retain all that UCE so I
+can see how well spamprobe is doing.
+
+The latest version of spamprobe.el can be found at:
+
+  <URL:http://www.davep.org/emacs/#spamprobe.el>")

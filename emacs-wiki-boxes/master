@@ -1,0 +1,9 @@
+(:summary    "Boxing system for emacs-wiki.el"
+ :created    "2004"
+ :updated    "2004"
+ :license    "GPL-2"
+ :authors    (("Ulrik Jensen" . "terryp@daimi.au.dk"))
+ :maintainer ("Ulrik Jensen" . "terryp@daimi.au.dk")
+ :provided   (emacs-wiki-boxes)
+ :keywords   ("wiki")
+ :homepage   "http://sugarshark.com/elisp/ProjectPage.html")

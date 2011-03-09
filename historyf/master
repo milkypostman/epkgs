@@ -1,0 +1,8 @@
+(:summary    "File history library like browser"
+ :repository (git . "https://github.com/k1LoW/emacs-historyf.git")
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-2"
+ :provided   (historyf)
+ :required   ((("emacs" cl)))
+ :homepage   "https://github.com/k1LoW/emacs-historyf")

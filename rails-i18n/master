@@ -1,0 +1,6 @@
+(:summary    "Makes working with Rails's i18n tags easy"
+ :repository (git . "https://github.com/rejeep/rails-i18n.git")
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-2"
+ :provided   (rails-i18n))

@@ -1,0 +1,31 @@
+(:summary    "Extension for sdic-inline-mode using pos-tip.el"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-2"
+ :authors    (("S. Irie"))
+ :maintainer ("S. Irie")
+ :provided   (sdic-inline-pos-tip)
+ :required   ((("pos-tip" pos-tip)
+	       ("sdic-inline" sdic-inline)))
+ :keywords   ("tooltip" "dictionary")
+ :commentary "\
+This program was written as a sample of pos-tip.el library, and
+provides the tooltip showing word meanings at cursor position
+like `rikaichan' Firefox extension, using sdic-inline.el library
+which was written by khiker.
+
+*** This program requires pos-tip.el version 0.3.0 or later ***
+
+
+Installation:
+
+First, save this file as pos-tip.el and byte-compile in
+a directory that is listed in load-path.
+
+Put the following in your .emacs file:
+
+  (require 'sdic-inline-pos-tip)
+  (setq sdic-inline-display-func 'sdic-inline-pos-tip-show)
+  (define-key sdic-inline-map \"\\C-c\\C-p\" 'sdic-inline-pos-tip-show)
+
+and start emacs, then system is enabled.")

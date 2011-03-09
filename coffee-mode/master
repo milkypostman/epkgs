@@ -1,0 +1,12 @@
+(:summary    "Major mode to edit CoffeeScript files in Emacs"
+ :repository (git . "https://github.com/defunkt/coffee-mode.git")
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-2"
+ :authors    (("Chris Wanstrath" . "chris@ozmm.org"))
+ :maintainer ("Chris Wanstrath" . "chris@ozmm.org")
+ :provided   (coffee-mode)
+ :required   ((("emacs" cl comint easymenu font-lock newcomment)))
+ :keywords   ("coffeescript" "major" "mode")
+ :homepage   "https://github.com/defunkt/coffee-mode"
+ :wikipage   "http://www.emacswiki.org/CoffeeMode")

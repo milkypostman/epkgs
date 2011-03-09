@@ -1,0 +1,5 @@
+(:summary    "Like message but less intrusive"
+ :updated    "20041204"
+ :license    "GPL-2"
+ :provided   (lessage)
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/misc/")

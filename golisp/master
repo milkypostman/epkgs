@@ -1,0 +1,14 @@
+(:summary    "Navigate lisp source code with hyperlinks"
+ :created    "2006"
+ :updated    "20061026"
+ :license    "GPL-2"
+ :authors    (("David O'Toole" . "dto@gnu.org"))
+ :maintainer ("David O'Toole" . "dto@gnu.org")
+ :provided   (golisp)
+ :required   ((("emacs" cl)))
+ :keywords   ("lisp" "hypermedia" "extensions" "tools")
+ :wikipage   "http://www.emacswiki.org/GoLispMode"
+ :commentary "\
+Golisp-mode is a small lisp code navigation and indexing tool for
+GNU Emacs. It is currently under construction. Golisp-mode is
+inspired in part by the ideas of Eduardo Ochs.")

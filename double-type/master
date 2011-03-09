@@ -1,0 +1,84 @@
+(:summary    "Keyboard operation method corresponding to double click on a mouse"
+ :repository (git . "https://github.com/k-talo/double-type.el.git")
+ :created    "20101224"
+ :updated    "2010"
+ :license    "GPL-3"
+ :provided   (double-type)
+ :required   ((("emacs" cl)))
+ :keywords   ("abbrev" "convenience" "emulations" "wp")
+ :homepage   "https://github.com/k-talo/double-type.el"
+ :commentary "\
+Overview
+========
+This library provides a keyboard operation method corresponding
+to double click on a mouse.
+
+
+INSTALLING
+==========
+To install this library, save this file to a directory in your
+`load-path' (you can view the current `load-path' using \"C-h v
+load-path RET\" within Emacs), then add the following line to your
+.emacs startup file:
+
+   (require 'double-type)
+
+
+USING
+=====
+You can bind commands to keyboard events \"single type\" and
+\"double type\" on a key via a function `double-type/define-key'
+which is provided by this library.
+
+  Examples)
+
+    ;; Save buffer with key <double-C-s>.
+    (double-type/define-key global-map \"\\C-s\"
+                            :on-single-type 'isearch-forward
+                            :on-double-type 'save-buffer)
+    
+    ;; Other window with key <double-C-o>.
+    (double-type/define-key global-map \"\\C-o\"
+                            :on-single-type 'open-line
+                            :on-double-type 'other-window)
+    
+    ;; Open RE-Builder with key <double-C-r>.
+    (double-type/define-key global-map \"\\C-r\"
+                            :on-single-type 'isearch-backward
+                            :on-double-type 're-builder)
+    
+    ;; Insert current time with key <double-M-t>.
+    (double-type/define-key esc-map \"t\"
+                            :on-single-type 'transpose-words
+                            :on-double-type (lambda ()
+                                              (interactive)
+                                              (insert (current-time-string))))
+    
+    ;; Insert mail address by keyboard macro with key <double-@>.
+    (double-type/define-key global-map \"@\"
+                            :on-single-type 'self-insert-command
+                            :on-double-type \"my-name@example.com\")
+    
+    ;; Use <double-C-w> as prefix key `ctl-x-4-map'.
+    (double-type/define-key global-map \"\\C-w\"
+                            :on-single-type 'kill-region
+                            :on-double-type ctl-x-4-map)
+
+  NOTE: You had better not to assign \"double type\" event to the
+        keys which will be typed repeatedly, like \"C-f\", \"C-b\"
+        and so on. (Such assignment may be annoying to you...)
+
+
+KNOWN PROBLEMS
+==============
+- Codes aside, this document should be rewritten.
+  My English sucks.
+- While defining keyboard macro, \"double type\" event will be
+  disabled because of technical reason.
+
+
+WISH LIST
+=========
+- Show \"single-type\" and \"double-type\" bindings by `where-is'.
+- Show commands bound to \"double-type\" event by `describe-key'.
+- Deal with keyboard macro.")

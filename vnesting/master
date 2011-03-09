@@ -1,0 +1,8 @@
+(:summary    "Show form nesting with vertical bars"
+ :license    "GPL-2"
+ :authors    (("Marco Baringer" . "mb@bese.it"))
+ :maintainer ("Marco Baringer" . "mb@bese.it")
+ :provided   (vnesting)
+ :required   ((("emacs" cl)))
+ :homepage   "http://www.emacswiki.org/VnestingMode"
+ :wikipage   "http://www.emacswiki.org/VnestingMode")

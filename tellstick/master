@@ -1,0 +1,18 @@
+(:summary    "Controlling tellstick controllers"
+ :repository (git . "https://github.com/larsmagne/tellstick.el.git")
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Lars Magne Ingebrigtsen" . "larsi@gnus.org"))
+ :maintainer ("Lars Magne Ingebrigtsen" . "larsi@gnus.org")
+ :provided   (tellstick)
+ :required   ((("emacs" cl)))
+ :keywords   ("home" "automation")
+ :homepage   "https://github.com/larsmagne/tellstick.el"
+ :commentary "\
+Usage example:
+
+(tellstick-send
+  (tellstick-make-command tellstick-room-code 10 'on nil))
+
+This switches unit 10 on, without using dimming.")

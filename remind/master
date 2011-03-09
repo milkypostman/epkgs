@@ -1,0 +1,3 @@
+(:updated    "20030727"
+ :provided   (remind)
+ :required   ((("planner" planner))))

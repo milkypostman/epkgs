@@ -1,0 +1,4 @@
+(:repository (hg . "http://bitbucket.org/gvol/gap-mode")
+ :provided   (gap-mode gap-process)
+ :required   ((("emacs" comint)))
+ :homepage   "http://bitbucket.org/gvol/gap-mode")

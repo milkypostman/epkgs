@@ -1,0 +1,18 @@
+(:summary    "Trivial implementation of the CMUCL wire protocol"
+ :updated    "20030807"
+ :license    "GPL-2"
+ :authors    (("Eric Marsden" . "emarsden@laas.fr"))
+ :maintainer ("Eric Marsden" . "emarsden@laas.fr")
+ :provided   (cmucl-wire)
+ :required   ((("emacs" cl)))
+ :keywords   ("comm")
+ :homepage   "http://emarsden.chez.com/downloads/"
+ :commentary "\
+Communication with a slave CMUCL using the WIRE protocol. We don't
+implement the remote-object aspects of the protocol, so the
+marshaling business is pretty simple.
+
+A wire is represented by a buffer, which has an associated network
+stream with the slave CMUCL. The slave CMUCL has to say
+
+ (wire:create-request-server port)")

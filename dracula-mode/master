@@ -1,0 +1,10 @@
+(:summary    "Major mode providing a DRACULA rules mode hook for fontification"
+ :created    "2002"
+ :updated    "2002"
+ :license    "GPL-2"
+ :authors    (("Geert Van der Plas" . "geert_vanderplas@email.com"))
+ :maintainer ("Geert Van der Plas" . "geert_vanderplas@email.com")
+ :provided   (dracula-mode)
+ :required   ((("emacs" font-lock generic)))
+ :keywords   ("dracula" "rules" "files")
+ :homepage   "http://spice-mode.4t.com/")

@@ -1,0 +1,43 @@
+(:summary    "Extract information from Emacs Lisp libraries"
+ :repository (git . "https://github.com/tarsius/elx.git")
+ :created    "20081202"
+ :updated    "20101223"
+ :license    "GPL-3"
+ :authors    (("Jonas Bernoulli" . "jonas@bernoul.li"))
+ :maintainer ("Jonas Bernoulli" . "jonas@bernoul.li")
+ :provided   (elx)
+ :required   ((("dconv" dconv)
+	       ("emacs" cl lisp-mnt)
+	       ("vcomp" vcomp))
+	      (("lgit" lgit)))
+ :keywords   ("docs" "libraries" "packages")
+ :homepage   "https://github.com/tarsius/elx"
+ :commentary "\
+This package extracts information from Emacs Lisp libraries.
+
+It is not aware that libraries are part of packages resp. that a
+library is also a package.  If you need this functionality have a
+look at package `xpkg'.
+
+This package extends library `lisp-mnt', which is only suitable for
+libraries that closely follow the header conventions.  Unfortunately
+there are many libraries that do not - this library tries to cope
+with that.
+
+This library is also able to extract some values that `lisp-mnt' can't.
+Most notably this library can extract the features required and
+provided by a file or group of files.  Libraries `load-hist' and
+`lib-requires' provide similar functionality by inspecting
+`load-history' and thus require the inspected library to be loaded.
+
+This library on the other hand uses regexp search in the respective
+files making it unnecessary to load them first.  This means that the
+`require' and `provide' have to satisfy certain restrictions (see
+`elx-required' and `elx-provided') and features required or provided
+by other means are not recognized.  But this is very rare, and this
+library has the advantage that it can be used even when the required
+features can't be loaded (because the providing libraries are not
+available) or when one doesn't want to load them for security reasons.
+
+Some of the features implemented here will hopefully be merged into
+`lisp-mnt.el' once I find the time to create patches.")

@@ -1,0 +1,31 @@
+(:summary    "Internationalizing Domain Names in Applications"
+ :created    "2003"
+ :updated    "2009"
+ :license    "GPL-3"
+ :provided   (idna)
+ :keywords   ("idna" "idn" "domain" "name" "internationalization")
+ :commentary "\
+A simple wrapper around the command line \"idn\" utility in GNU
+Libidn to make IDNA ToASCII and ToUnicode operations available in
+Emacs.
+
+Example:
+
+(idna-to-ascii \"räksmörgås.gnu.org\")
+=> \"xn--rksmrgs-5wao1o.gnu.org\"
+
+(idna-to-ascii \"www.gnu.org\")
+=> \"www.gnu.org\"
+
+(idna-to-unicode \"xn--rksmrgs-5wao1o.gnu.org\")
+=> \"räksmörgås.gnu.org\"
+
+(idna-to-unicode \"www.gnu.org\")
+=> \"www.gnu.org\"
+
+Todo: Support AllowUnassigned and UseSTD3ASCIIRules somehow?
+
+This package is useless unless your emacs has at least partial
+support for the UTF-8 coding system.
+
+Report bugs to bug-libidn@gnu.org.")

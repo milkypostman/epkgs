@@ -1,0 +1,22 @@
+(:created    "1993"
+ :updated    "20011224"
+ :authors    (("Christian Queinnec" . "christian.queinnec@lip6.fr"))
+ :maintainer ("Christian Queinnec" . "christian.queinnec@lip6.fr")
+ :provided   (defaultcontent)
+ :keywords   ("default" "contents")
+ :homepage   "http://pagesperso-systeme.lip6.fr/Christian.Queinnec/WWW/elisp.html"
+ :commentary "\
+The purpose of this package is to provide a default content for
+files. It extends the autoinsert package from Charlie Martin and
+took the idea of expanding parameters as in auto-template from
+Kevin Broadey (as suggested by Cedric Beust). It also allows to
+specify the initial position of the dot.
+
+Whenever an unexistent file is visited, its initial content can be
+specified by a parameterized template stored in the directory
+dc-auto-insert-directory or by explicit evaluation of some
+specified forms. A single undo removes all this initialization.
+
+To use it, add to your .emacs (taking care of load-path)
+         (require 'defaultcontent)
+and it is ready (try to open the empty foobar.el file for example).")

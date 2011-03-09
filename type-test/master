@@ -1,0 +1,16 @@
+(:summary    "Typing test"
+ :created    "2005"
+ :updated    "20051221"
+ :license    "GPL-2"
+ :authors    ((nil . "wenbinye@163.com"))
+ :maintainer (nil . "wenbinye@163.com")
+ :provided   (type-test)
+ :required   ((("emacs" cl)))
+ :commentary "\
+TODO:
+* 模板文字设置为不能更改
+* 显示 insert-marker 的位置
+* 以一个 mode 的形式
+
+Put this file into your load-path and the following into your ~/.emacs:
+(autoload 'type-test \"type-test\" \"type test\" t)")

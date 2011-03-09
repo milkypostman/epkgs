@@ -1,0 +1,33 @@
+(:summary    "Momentarily display a buffer, then restore"
+ :created    "20000303"
+ :updated    "2000"
+ :license    "GPL-2"
+ :authors    (("John Wiegley" . "johnw@gnu.org"))
+ :maintainer ("John Wiegley" . "johnw@gnu.org")
+ :provided   (momentary)
+ :keywords   ("convenience")
+ :commentary "\
+The main interface function is `with-output-to-momentary-buffer',
+which has the same syntax and behavior as
+`with-output-to-temp-buffer' -- except that windows disappear after
+a timeout, if no relevant events occur immediately afterward.
+
+The question of \"relevant\" is handled by the event function, which
+is the third, optional argument to
+`with-output-to-momentary-buffer'.  The default is to provide a
+simple paging interface for that buffer, using SPACE and BACKSPACE
+to page through the information.
+
+But the user could easily define their own event function:
+
+(with-output-to-momentary-buffer \"*sample*\"
+    (print \"hello there, Mr. Ed\")
+  (function
+     (lambda (event)
+        (if (event-matches-key-specifier-p event ?q)
+            (message \"Happy days are here again!\")))))
+
+With the above happy bit of code, pretty `q' after `*sample*' has
+been displayed will result in a message.  But any other keystrokes
+will terminate the event-reader, and cause the window to disappear
+after `momentary-delay' seconds.")

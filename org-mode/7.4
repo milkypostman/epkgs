@@ -1,0 +1,65 @@
+(:summary    "Outline-based notes management and organizer"
+ :repository (git . "git://repo.or.cz/org-mode.git")
+ :created    "2004"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Carsten Dominik" . "carsten@orgmode.org"))
+ :maintainer ("Carsten Dominik" . "carsten@orgmode.org")
+ :provided   (ob ob-C ob-R ob-asymptote ob-calc ob-clojure ob-comint ob-css ob-ditaa ob-dot ob-emacs-lisp ob-eval ob-exp ob-gnuplot ob-haskell ob-js ob-keys ob-latex ob-ledger ob-lisp ob-lob ob-matlab ob-mscgen ob-ocaml ob-octave ob-org ob-oz ob-perl ob-plantuml ob-python ob-ref ob-ruby ob-sass ob-scheme ob-screen ob-sh ob-sql ob-sqlite ob-table ob-tangle org org-agenda org-annotate-file org-archive org-ascii org-attach org-bbdb org-beamer org-bibtex org-bookmark org-capture org-checklist org-choose org-clock org-collector org-colview org-colview-xemacs org-compat org-complete org-contribdir org-crypt org-ctags org-datetree org-depend org-docbook org-docview org-drill org-elisp-symbol org-entities org-eval org-eval-light org-exp org-exp-bibtex org-exp-blocks org-expiry org-export org-export-generic org-export-latex org-faces org-feed org-footnote org-freemind org-generic org-git-link org-gnus org-habit org-html org-icalendar org-id org-indent org-info org-infojs org-inlinetask org-interactive-query org-invoice org-irc org-jira org-jsinfo org-latex org-learn org-list org-mac-iCal org-mac-link-grabber org-mac-message org-macs org-mairix org-man org-mew org-mhe org-mime org-mks org-mobile org-mouse org-mtags org-panel org-plot org-protocol org-publish org-registry org-remember org-rmail org-screen org-secretary org-special-blocks org-src org-static-mathjax org-table org-taskjuggler org-timer org-toc org-track org-velocity org-vm org-w3m org-wikinodes org-wl org-xoxo org2rem orgtbl-sqlinsert)
+ :required   ((("bbdb" bbdb bbdb-com)
+	       ("cdlatex" cdlatex)
+	       ("emacs" assoc autoload bookmark button cal-iso calc calc-trail calendar cc-mode cl cmuscheme comint diary-lib easymenu electric epg erc erc-log find-func find-lisp font-lock footnote format-spec gnus gnus-sum hi-lock holidays icalendar info mailcap message mh-e mh-search mh-utils notifications noutline octave-inf outline overlay parse-time pcomplete pp ps-print remember reporter rmail sha1 shell solar table term time time-date url-handlers url-parse xml)
+	       ("ess" ess)
+	       ("gnuplot" gnuplot)
+	       ("haskell-mode" inf-haskell)
+	       ("jira" jira)
+	       ("matlab" matlab)
+	       ("mew" mew)
+	       ("mozart" mozart)
+	       ("nxhtml" moz)
+	       ("remind" remind)
+	       ("rinari" inf-ruby)
+	       ("slime" slime)
+	       ("swank-clojure" swank-clojure)
+	       ("tuareg" tuareg)
+	       ("vm" vm vm-search)
+	       ("wanderlust" wl)
+	       (nil htmlize)))
+ :keywords   ("outlines" "hypermedia" "calendar" "wp")
+ :homepage   "http://orgmode.org"
+ :wikipage   "http://www.emacswiki.org/OrgMode"
+ :commentary "\
+Org-mode is a mode for keeping notes, maintaining ToDo lists, and doing
+project planning with a fast and effective plain-text system.
+
+Org-mode develops organizational tasks around NOTES files that contain
+information about projects as plain text.  Org-mode is implemented on
+top of outline-mode, which makes it possible to keep the content of
+large files well structured.  Visibility cycling and structure editing
+help to work with the tree.  Tables are easily created with a built-in
+table editor.  Org-mode supports ToDo items, deadlines, time stamps,
+and scheduling.  It dynamically compiles entries into an agenda that
+utilizes and smoothly integrates much of the Emacs calendar and diary.
+Plain text URL-like links connect to websites, emails, Usenet
+messages, BBDB entries, and any files related to the projects.  For
+printing and sharing of notes, an Org-mode file can be exported as a
+structured ASCII file, as HTML, or (todo and agenda items only) as an
+iCalendar file.  It can also serve as a publishing tool for a set of
+linked webpages.
+
+Installation and Activation
+---------------------------
+See the corresponding sections in the manual at
+
+  http://orgmode.org/org.html#Installation
+
+Documentation
+-------------
+The documentation of Org-mode can be found in the TeXInfo file.  The
+distribution also contains a PDF version of it.  At the homepage of
+Org-mode, you can read the same text online as HTML.  There is also an
+excellent reference card made by Philip Rooke.  This card can be found
+in the etc/ directory of Emacs 22.
+
+A list of recent changes can be found at
+http://orgmode.org/Changes.html")

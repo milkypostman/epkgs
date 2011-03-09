@@ -1,0 +1,20 @@
+(:summary    "Preview nroff man file source"
+ :created    "2008"
+ :updated    "2009"
+ :license    "GPL-3"
+ :authors    (("Kevin Ryde" . "user42@zip.com.au"))
+ :maintainer ("Kevin Ryde" . "user42@zip.com.au")
+ :provided   (man-preview)
+ :required   ((("emacs" man)))
+ :keywords   ("docs")
+ :wikipage   "http://www.emacswiki.org/ManPreview"
+ :commentary "\
+M-x man-preview displays a preview of man nroff source using \"man -l\".
+The best feature is that when re-previewing the same file or buffer the
+existing position in the preview is preserved, so if you've just changed
+the source a little you should be still quite close to where you were in
+the preview, to see how the change has come out.
+
+M-x man \"-l filename\" does almost the same as this, but it depends on
+having a disk copy of a buffer, so it can't work out of tar-mode members
+etc.")

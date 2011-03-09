@@ -1,0 +1,63 @@
+(:summary    "Complete into Buffer for Emacs"
+ :created    "1999"
+ :updated    "1999"
+ :license    "GPL-2"
+ :authors    (("Carsten Dominik" . "dominik@astro.uva.nl"))
+ :maintainer ("Carsten Dominik" . "dominik@astro.uva.nl")
+ :keywords   ("extensions")
+ :commentary "\
+This program provides a function to complete strings in a buffer.
+In many programming modes this functionality is bound to M-<TAB>.
+For example, in `emacs-lisp-mode', you can complete symbols in this
+way.  AUCTeX uses in-buffer completion to complete macros, labels
+and may other things.
+
+cib.el provides a simple interface for such in-buffer completion
+and does the work about finding out if the completion is unique,
+inserting partial completions, displaying the list of completions
+etc.  It is a programming interface, sort of a `completing-read'
+for in-buffer completion.  The only entry point is `cib-complete'
+which takes the string to be completed and a completion table as
+mandatory arguments.
+
+cib.el overcomes a number of shortcomings which AFAIK are present
+in the available in-buffer completion implementations in Emacs.
+
+1. It restores the window configuration (to get rid of the
+   *Completions* window) after a successful completion.
+   \"Successful\" means any of these:
+   - The entered string is already complete and unique.
+   - There is a unique completion (which gets inserted).
+   - The user selects a completion in the *Completions* buffer.
+   - The entered string is complete but not unique, and the user
+     asks for completion twice.  So if you enter \"AB\" and table
+     contains \"AB\" and \"ABC\", the first completion attempt displays
+     the list of completions, the second restores the window
+     configuration.
+
+2. A hook form can be specified which will be evaluated after
+   successful completion.
+
+3. For a long list of completions, calling the completion function
+   repeatedly causes the *Completions* window to scroll.
+
+4. Completions can be sorted and uniquified before display.
+
+5. Case-insensitive completion works properly.
+
+   a) To do case-insensitive completion, your code will bind
+      `completion-ignore-case' to a non-nil value in the completion
+      function.  This does the right thing for finding and
+      displaying possible completions.  However, selecting a
+      completion with the mouse used to fail in such cases because
+      the dynamic binding of `completion-ignore-case' is no longer
+      present when the mouse selects a completion.  `cib-complete'
+      installs a wrapper around the `choose-completion' functions
+      which binds `completion-ignore-case' to the correct value.
+
+   b) You can make the partial string in the buffer determine
+      dynamically the case of the completed string, to help users
+      with different case preferences.  See the variable
+      `cib-adaptive-case'.
+
+6. Works on both Emacs and XEmacs .")

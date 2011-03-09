@@ -1,0 +1,14 @@
+(:summary    "Keep a running count of words in a buffer"
+ :created    "1997"
+ :updated    "1997"
+ :license    "GPL-2"
+ :authors    (("Bob Glickstein" . "bobg@zanshin.com"))
+ :maintainer ("Bob Glickstein" . "bobg@zanshin.com")
+ :provided   (wcount)
+ :required   ((("emacs" assoc timer)))
+ :commentary "\
+`wcount-mode' is a minor mode that puts into the modeline a running
+count of the words in the buffer.  Because computing the number of
+words can be computationally expensive for large buffers, the count
+is only updated when Emacs has been idle for `wcount-idleness'
+seconds, or when the user presses C-c w (`wcount-count').")

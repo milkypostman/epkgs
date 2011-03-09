@@ -1,0 +1,31 @@
+(:summary    "Numbered window shortcuts"
+ :repository (git . "https://github.com/nschum/window-numbering.el.git")
+ :created    "2007"
+ :updated    "2007"
+ :license    "GPL-2"
+ :authors    (("Nikolaj Schumacher" . "bugs@nschum.de"))
+ :maintainer ("Nikolaj Schumacher" . "bugs@nschum.de")
+ :provided   (window-numbering)
+ :required   ((("emacs" cl)))
+ :keywords   ("faces" "matching")
+ :homepage   "http://nschum.de/src/emacs/window-numbering-mode"
+ :wikipage   "http://www.emacswiki.org/WindowNumberingMode"
+ :commentary "\
+Enable window-numbering-mode and use M-1 through M-0 to navigate.
+
+If you want to affect the numbers, use window-numbering-before-hook or
+window-numbering-assign-func.
+For instance, to always assign the calculator window the number 9, add the
+following to your .emacs:
+
+(setq window-numbering-assign-func
+      (lambda () (when (equal (buffer-name) \"*Calculator*\") 9)))
+
+Changes Log:
+
+2008-04-11 (1.1.1)
+   Added possibility to delete window with prefix arg.
+   Cleaned up code and migrated to `defcustom'.
+
+2007-02-18 (1.1)
+   Added window-numbering-before-hook, window-numbering-assign-func.")

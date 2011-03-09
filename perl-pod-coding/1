@@ -1,0 +1,17 @@
+(:summary    "Coding system from =encoding in perl files"
+ :created    "2007"
+ :updated    "2007"
+ :license    "GPL-3"
+ :authors    (("Kevin Ryde" . "user42@zip.com.au"))
+ :maintainer ("Kevin Ryde" . "user42@zip.com.au")
+ :provided   (perl-pod-coding)
+ :required   ((("emacs" mm-util)))
+ :wikipage   "http://www.emacswiki.org/PerlPodCoding"
+ :commentary "\
+This is a spot of code to get an Emacs coding system from the \"=encoding\"
+line in perl pod documentation, either inline in perl code, or a separate
+pod file.
+
+Emacs can often recognise unicode by itself, it can definitely recognise
+the unicode byte order markers (utf-16 or utf-8) which pod files can use,
+but other coding systems need some help.")

@@ -1,0 +1,10 @@
+(:summary    "Set up mail buffers for sending photos"
+ :created    "2007"
+ :updated    "20070822"
+ :license    "GPL-2"
+ :authors    (("John C. G. Sturdy" . "john@cb1.com"))
+ :maintainer ("John C. G. Sturdy" . "john@cb1.com")
+ :provided   (mail-directory)
+ :required   ((("emacs" cl)))
+ :keywords   ("email")
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/email/")

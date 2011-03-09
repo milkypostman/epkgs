@@ -1,0 +1,7 @@
+(:created    "2008"
+ :updated    "2009"
+ :license    "GPL-3"
+ :provided   (elip)
+ :required   ((("edb" database edb-t-timedate1)
+	       ("emacs" calendar cl)))
+ :homepage   "http://www.gnuvola.org/software/elip/")

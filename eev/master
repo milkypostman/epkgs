@@ -1,0 +1,235 @@
+(:summary    "Add support for e-scripts in Emacs"
+ :updated    "1999"
+ :license    "GPL-2"
+ :authors    (("Eduardo Ochs" . "eduardoochs@gmail.com"))
+ :maintainer ("Eduardo Ochs" . "eduardoochs@gmail.com")
+ :provided   (eev eev-all eev-bounded eev-browse-url eev-compose eev-glyphs eev-insert eev-langs eev-math-glyphs eev-mini-steps eev-sshot eev-steps htmlize-eev)
+ :required   ((("emacs" add-log dired jit-lock outline ps-mode)
+	       (nil htmlize)))
+ :keywords   ("e-scripts" "help" "hyperlinks" "hypertext" "processes" "shell" "tex")
+ :homepage   "http://angg.twu.net/emacs.html"
+ :wikipage   "http://www.emacswiki.org/EevMode"
+ :commentary "\
+A good introduction to eev is the article about it (called \"Emacs
+and eev, or: How to Automate Almost Everything\"). Here's a link to
+the article: <http://angg.twu.net/eev-article.html>.
+
+When I started using GNU Emacs in 1994 I immediately realized that
+it could be used as my main interface to the system; essentially,
+due to the way that Lisp was integrated in Emacs, by programming
+just a few functions I could keep \"executable logs\" of everything
+that I did... so I wrote `find-fline', `find-node', `eev' and
+`code-c-d', and I knew that by using them I would soon learn enough
+to be able to write the other functions that I needed.
+
+My central idea with eev - and I was so isolated that it took me
+about five years to realize that it should really be called \"my
+idea\" instead of \"the way that Emacs was intended to be used\" - was
+that _everything that we do once should be easy to repeat later_.
+This \"everything\" included not only executing commands at shell
+prompts but also opening files, manpages, manuals in Info format,
+etc, and locating information in them... At that time graphical
+interfaces were not so prevalent, and it was quite natural then to
+just dismiss them as a flawed idea; GUIs suggest that everything
+should be done with \"magic buttons\", while Emacs (with eev) offers
+us an alternative: instead of magic buttons whose innards are
+hidden we can use small programs - often one-liners - that when
+executed (and executing them shouldn't be much harder than pressing
+a button) worked as buttons whose lids are open, with their inner
+structure visible...
+
+\"Buttons\" to open files, info nodes, manpages, etc, were very easy
+to implement as one-liners in Lisp; and it was trivial to put those
+\"sexp buttons\" in almost all kinds of text files. In programs and
+scripts they would appear after a comment sign; there would be at
+most one of those per line, and they would always be the rightmost
+part of a line. In plain text files we just had to warn possible
+readers that the sexps sprinkled throught the text were \"buttons\" -
+or, in modern terminology, \"hyperlinks\"... And in order to make
+those buttons \"work\" in a file, i.e., be executable, we just had to
+open the file in Emacs.
+
+The interface for executing blocks of shell commands was a bit more
+unusual, as those blocks looked even less like buttons that the
+hyperlink sexps did... I realized that I could suppose that:
+  1) the user who would execute a block of shell command would know
+     what (s)he was doing;
+  2) the user executing a block of shell commands would generally be
+     the same person who wrote the block;
+  3) both would usually be me; 8-|
+  4) the user executing a block knows on inspection which lines
+     (s)he wants to execute, and (s)he can select those lines
+     manually and issue a command - `M-x eev', typically - to save
+     those lines in a temporary script; also, (s)he can switch to a
+     shell and issue a command (\"ee\") that means \"execute the lines
+     stored in the temporary script\";
+  5) it is possible to send commands to other interpreters besides
+     shells; the user knows this, and knows how to identify the
+     language of each block, and knows the commands for sending the
+     block for each of the supported interpreters.
+One design decision forced itself on eev from the beginning: Emacs
+should NOT, NEVER, EVER try to detect sexp hyperlinks or blocks of
+commands, or the interpreter associated with a block of commands,
+by itself; hyperlinks and blocks of commands were just plain text
+with no special mark-up, and the user would be responsible by
+selecting parts of a text himself and executing them in the right
+way.
+
+That being so, it's no wonder that most people when confronted with
+eev find it super-weird - especially nowadays, as everyone has got
+used to Emacs being very good at syntactical analysis and context
+detection. The idea of a user going over his notes, sometimes
+adding text or making changes, and sometimes selecting manually a
+block to execute - by running a function that would \"do something
+on the current block\", where both this \"something to do\" and the
+notion of the \"current block\" would depend on the function - now
+might look very alien - but it was quite natural in the mid-90's...
+
+(By the way: the \"current block\" can be the sexp before point, or
+the sexp that ends at the end of the current line; or the \"region\"
+in Emacs, i.e., the text between \"point\" and \"mark\", of everything
+around point until the first occurrence backwards and forward of
+certain delimiters - other notions of \"current block\" are possible
+but not common. And the \"do something on the current block\" can be
+\"execute it as lisp\", \"save it into a temporary script\", \"save it
+in a temp script then run a program\", etc.)
+
+The compensation for this apparent weirdness of eev is that
+implementing support for sending commands to a new interpreter - or
+for a new kind of hyperlink - is usually something that is
+accomplished in a handful of lines of Lisp at most - see the
+definitions for most \"find-\" functions in this file, and the file
+(find-eevfile \"eev-langs.el\").
+
+So, one of the most important parts of eev is its extensibility. It
+is - or it should be - trivial to extend it to support new external
+interpreters and new kinds of \"buttons\" or \"hyperlinks\". Also,
+sometimes people complain that they can't understand what's the
+essence of eev; well, here are two articles about that:
+
+  <http://www.gnu.org/software/emacs/emacs-paper.html>
+  <http://www.multicians.org/mepap.html>
+
+The \"kernel\" of eev, morally, is these functions,
+  (find-efunctiondescr 'find-fline)
+  (find-efunctiondescr 'find-node)
+  (find-efunctiondescr 'eev)
+  (find-efunctiondescr 'code-c-d)
+and, to a much lesser degree, the ones in \"eev-insert.el\" and
+\"eev-steps.el\":
+  (find-eevfile \"eev-insert.el\")
+  (find-eevfile \"eev-steps.el\")
+
+<unfinished, as lots of docs in this file and elsewhere>
+<the central point is that people should be using sexps much more,
+everywhere - why - free software - programming for everyone>
+<add a pointer to Forth>
+
+How to install eev:
+===================
+(find-file \"INSTALL\")
+(find-file \"eev-rctool\")
+
+How to try eev without installing it:
+=====================================
+(add-to-list 'load-path \"~/eev-current/\")
+(add-to-list 'load-path default-directory)
+(require 'eev)
+(eev-mode 1)
+(ee-invade-global-namespace)
+(require 'eev-insert)
+(require 'eev-steps)
+(require 'eev-glyphs)
+(require 'eev-compose)
+(eev-set-default-glyphs)
+
+Starting points (mainly docstrings):
+====================================
+(find-efunctiondescr 'find-fline)
+(find-efunctiondescr 'find-node)
+(find-efunctiondescr 'eev)
+(find-efunctiondescr 'eev-mode)
+(find-efunctiondescr 'eev-mode \"`pop-up-windows' is off\")
+(find-efunctiondescr 'code-c-d)
+(find-eevfile \"eev-insert.el\" \"create and display a buffer\")
+(find-efunctiondescr 'eemklinks-yank-pos-spec)
+(find-efunctiondescr 'eesteps)
+
+About the naming of function in this file
+=========================================
+Many functions in this file have very short names. This is
+because they are intended to be used in one-liners in comments,
+like this:
+  (find-node \"(emacs)Lisp Eval\" \"C-x C-e\")
+
+Note: the \"C-x C-e\" part of the hyperlink above is a \"pos-spec\". Most
+hyperlink functions defined by eev support \"pos-spec-lists\"; see:
+  (find-efunctiondescr 'ee-goto-position)
+
+Prefixes:
+  \"find-\"    functions are hyperlinks.
+  \"find-e\"   functions are hyperlinks to \"Emacs things\".
+  \"ee\"       execute block or send it to an external program
+  \"ee-\"      internal functions (and variables).
+Suffixes:
+  \"0\"        means \"more low-level\", and
+  \"00\"       means \"even more low-level\". For example:
+  \"sh\"       means \"run on a shell, display the output in a buffer\",
+  \"sh0\"      means \"run on a shell, display the output in the echo area\",
+  \"sh00\"     means \"same as `sh0', but don't strip the last newline\";
+  \"pp\"       means \"pretty-print a sexp, display the result in a buffer\",
+  \"pp0\"      means \"pretty-print a sexp, display in the echo area\"
+Prefixes and suffixes:
+
+  \"eeb-\"     bounded wrapper (see eev-bounded)
+  \"-bounded\" bounded wrapper (see eev-bounded)
+
+  \"find-\"    functions are generated by `(code-c-d \"xxx\" ...)'.
+
+
+Structure of this file:
+autoloads for external functions
+environment variables
+variables
+basic hyperlinks: find-fline and find-node
+support for pos-specs in hyperlinks
+hyperlinks to anchors
+hyperlinks to the output of Emacs's help-like functions
+hyperlinks to the source code of Emacs functions and variables
+hyperlinks to buffers
+pretty-printing sexps
+hyperlinks to other things internal to Emacs
+hyperlinks to the output of shell commands
+hyperlinks to manpages
+hyperlinks to files in html
+hyperlinks to pages in dvi/ps/pdf documents
+around point / ask
+hyperlinks to information about Debian packages
+code-ps/dvi: mass-producing hyperlink functions
+code-c-d: mass-producing hyperlink functions
+examples of calls to code-c-d (debian-centric)
+temporary highlighting (flashing)
+evaluating sexps (alternatives to eval-last-sexp)
+eev and friends (or: saving regions as temporary scripts)
+setting `pop-up-windows' to nil inside eev-mode
+eev mode keymap
+eev mode
+invading the global namespace
+aliases for compatibility with previous versions
+
+For printing:
+(find-angg \".emacs\" \"eea2ps\")
+(progn (find-eev \"eev.el\") (eea2ps3 (point-min) (point-max)))
+
+Big letters courtesy of Figlet.
+
+
+
+             _        _                 _     
+  __ _ _   _| |_ ___ | | ___   __ _  __| |___ 
+ / _` | | | | __/ _ \\| |/ _ \\ / _` |/ _` / __|
+| (_| | |_| | || (_) | | (_) | (_| | (_| \\__ \\
+ \\__,_|\\__,_|\\__\\___/|_|\\___/ \\__,_|\\__,_|___/
+                                              
+autoloads for external functions
+(find-elnode \"Autoload\")")

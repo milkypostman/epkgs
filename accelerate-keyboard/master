@@ -1,0 +1,15 @@
+(:summary    "Accelerate effective command input time"
+ :created    "2004"
+ :updated    "2004"
+ :license    "GPL-2"
+ :authors    (("Jaeyoun Chung" . "jay@kldp.org"))
+ :maintainer ("Jaeyoun Chung" . "jay@kldp.org")
+ :provided   (accelerate-keyboard)
+ :keywords   ("convenience")
+ :homepage   "http://emacs.kldp.net/~jay/emacs/"
+ :commentary "\
+Accelerate effective keyboard input speed. If your computer provides way
+too slow keyboard input speed. This is a kludge to fix that.
+
+[todo] we need somewhat more accurate heuristic method to detect the
+keyboard input.")

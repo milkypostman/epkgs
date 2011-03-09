@@ -1,0 +1,6 @@
+(:provided   (bib-cite context context-en context-nl font-latex latex multi-prompt preview prv-emacs prv-xemacs tex tex-bar tex-buf tex-fold tex-font tex-fptex tex-info tex-jp tex-mik tex-style tex-wizard texmathp toolbar-x)
+ :required   ((("emacs" cl comint crm custom desktop easymenu etags font-lock info outline overlay reftex reporter texinfo)
+	       ("etexshow" etexshow)
+	       (nil tex-site)))
+ :homepage   "http://www.gnu.org/software/auctex/"
+ :wikipage   "http://www.emacswiki.org/AucTeX")

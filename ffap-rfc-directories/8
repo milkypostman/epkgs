@@ -1,0 +1,34 @@
+(:summary    "Look for RFCs in local directories too"
+ :created    "2007"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Kevin Ryde" . "user42@zip.com.au"))
+ :maintainer ("Kevin Ryde" . "user42@zip.com.au")
+ :provided   (ffap-rfc-directories)
+ :required   ((("emacs" advice ffap)))
+ :keywords   ("files")
+ :homepage   "http://user42.tuxfamily.org/ffap-rfc-directories/index.html"
+ :commentary "\
+This spot of code makes M-x ffap look in some local directories for RFC
+files before offering the ftp download in `ffap-rfc-path'.  It's good if
+you keep copies of some RFCs locally, including perhaps from a packaged
+distribution etc.
+
+This feature has been merged into Emacs 23.  The code notices that and
+does nothing there.  But there's no default value in
+`ffap-rfc-directories' in emacs23, so if you were relying on
+\"/usr/share/doc/RFC/links\" from the code here then add that back from
+your .emacs etc.
+
+If you keep local RFCs as compressed .gz etc you can enable jka-compr
+with `(auto-compression-mode 1)' in the usual way to read them.  ffap
+will fallback on the `ffap-rfc-path' download if there's a compressed
+file but jka-compr is not enabled.
+
+There's a lot of emacs RFC download/cache/search packages kicking around.
+Several are listed at
+
+    http://www.emacswiki.org/cgi-bin/wiki/RFC
+
+ffap-rfc-directories.el is intentionally minimal, just saving you from
+hitting ftp.rfc-editor.org every time.")

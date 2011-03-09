@@ -1,0 +1,10 @@
+(:summary    "Major mode for editing GNU LilyPond music scores"
+ :repository (git . "git://git.sv.gnu.org/lilypond.git")
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-3"
+ :provided   (lilypond-mode lilypond-song)
+ :required   ((("ecasound" ecasound)
+	       ("emacs" cl compile easymenu)
+	       ("ilisp" ilisp)))
+ :homepage   "http://lilypond.org/")

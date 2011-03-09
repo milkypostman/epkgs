@@ -1,0 +1,16 @@
+(:summary    "Couchdb document as text"
+ :created    "20101030"
+ :updated    "2010"
+ :license    "GPL-2"
+ :authors    (("Changyuan Yu" . "rei.vzy@gmail.com"))
+ :maintainer ("Changyuan Yu" . "rei.vzy@gmail.com")
+ :provided   (couchdb-document-text)
+ :required   ((("couchdb-document" couchdb-document)))
+ :keywords   ("files" "couchdb" "json" "org")
+ :commentary "\
+Example:
+
+(require 'couchdb-document-text)
+(find-file \"/couchdb:/db1/a.txt\")
+(find-file \"/couchdb:/db1/b.org\")
+(find-file \"/couchdb:/db1/c.org.gpg\")")

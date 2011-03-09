@@ -1,0 +1,34 @@
+(:summary    "Add support for WikipediaFS"
+ :repository (git . "git://gaffer.ptitcanardnoir.org/wikipediafs-el.git")
+ :created    "20090227"
+ :updated    "2009"
+ :license    "GPL-2"
+ :authors    (("Ben Voui" . "intrigeri@boum.org"))
+ :maintainer (nil . "intrigeri@boum.org")
+ :provided   (wikipediafs)
+ :required   ((("wikipedia-mode" wikipedia-mode)))
+ :keywords   ("extensions")
+ :wikipage   "http://www.emacswiki.org/WikipediaFs"
+ :commentary "\
+wikipediafs.el enhances wikipedia-mode when using WikipediaFS
+(http://wikipediafs.sourceforge.net).
+
+Tested with WikipediaFS 0.3-5 from Debian Lenny, on Emacs 23 (CVS
+snapshot).
+
+Features:
+  - changes summary, i.e. commit message: unless the buffer already has
+    a WikipediaFS-style changes summary ([[Summary: ...]]), one is asked
+    to enter one at buffer save time; the input text is appended to the
+    edited file, then removed from the buffer, as WikipediaFS anyway
+    removes it itself after using it.
+
+Dependencies:
+
+wikipediafs.el requires wikipedia-mode
+
+Installation:
+
+Make sure to place `wikipediafs.el` somewhere in the load-path, and add
+the following line to your `.emacs` file:
+    (require 'wikipediafs)")

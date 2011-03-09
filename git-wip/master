@@ -1,0 +1,2 @@
+(:repository (git . "git@github.com:emacsmirror/git-wip.git")
+ :homepage   "http://www.jukie.net/~bart/blog/save-everything-with-git-wip")

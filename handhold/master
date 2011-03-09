@@ -1,0 +1,16 @@
+(:summary    "GUI for constructing tests"
+ :created    "2000"
+ :updated    "2000"
+ :license    "GPL-2"
+ :authors    (("Tom Breton" . "tob@world.std.com"))
+ :maintainer ("Tom Breton" . "tob@world.std.com")
+ :provided   (handhold)
+ :required   ((("emacs" cl pp wid-edit widget)))
+ :keywords   ("extensions" "maint" "tools" "lisp")
+ :homepage   "http://panix.com/~tehom/"
+ :commentary "\
+Holds the user's hand while building a sexp, and puts it on top of
+the kill ring when built.
+
+There are no entry points in this file, but entry points for
+particular uses can be defined with the macro `handhold-define'.")

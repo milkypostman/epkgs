@@ -1,0 +1,27 @@
+(:summary    "Interface to rus<->eng online dictionary"
+ :created    "20030321"
+ :updated    "2005"
+ :license    "GPL-2"
+ :authors    (("Zajcev Evgeny" . "zevlg@yandex.ru"))
+ :provided   (rdict)
+ :required   ((("emacs" url)))
+ :keywords   ("dictionary" "hypermedia")
+ :homepage   "http://lgarc.narod.ru/xemacs/"
+ :commentary "\
+rdict is is Emacs interface to the online russian<-->english
+dictionary lingvo located at http://lingvo.yandex.ru.
+
+It requires w3 (the Emacs web browser) package to be installed.
+
+To install rdict add following to your .emacs:
+
+  (autoload 'rdict \"rdict\"
+            \"Lookup words in the online rus<->eng dictionary\" t)
+
+Also you may need to customize some rdict variables to make it work
+properly:
+
+`rdict-history-length' - (int) maximum length of rdict history.
+
+`rdict-mode-hoook' - you may add your own hooks, it will runs after
+rdict processing.")

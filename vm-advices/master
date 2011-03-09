@@ -1,0 +1,13 @@
+(:summary    "Misc patches to VM using defadvice"
+ :created    "1994"
+ :updated    "20040214"
+ :license    "GPL-2"
+ :authors    (("Noah Friedman" . "friedman@splode.com"))
+ :maintainer (nil . "friedman@splode.com")
+ :provided   (vm-advices)
+ :required   ((("emacs" advice)
+	       ("vm-addons" vm-addons)
+	       ("win-disp-util" win-disp-util)))
+ :commentary "\
+These patches cannot be autoloaded.
+To use, require it in ~/.vm.")

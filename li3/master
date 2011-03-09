@@ -1,0 +1,13 @@
+(:repository (git . "https://github.com/k1LoW/emacs-li3.git")
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-2"
+ :provided   (li3)
+ :required   ((("anything" anything)
+	       ("cake" cake-inflector)
+	       ("emacs" cl easy-mmode)
+	       ("historyf" historyf))
+	      (("anything" anything-show-completion)
+	       ("emacs" imenu)
+	       ("tail" tail)))
+ :homepage   "https://github.com/k1LoW/emacs-li3")

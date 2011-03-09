@@ -1,0 +1,7 @@
+(:created    "2011"
+ :updated    "2011"
+ :authors    ((nil . "peterm@srl.caltech.edu"))
+ :maintainer (nil . "peterm@srl.caltech.edu")
+ :provided   (pdftools)
+ :homepage   "http://www.emacswiki.org/PdfTools"
+ :wikipage   "http://www.emacswiki.org/PdfTools")

@@ -1,0 +1,8 @@
+(:summary    "Simple image manuplation object"
+ :repository (git . "https://github.com/lieutar/simo.el.git")
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :provided   (simo)
+ :required   ((("emacs" eieio)))
+ :homepage   "https://github.com/lieutar/simo.el")

@@ -1,0 +1,22 @@
+(:summary    "Open files with external programs"
+ :created    "2007"
+ :updated    "2007"
+ :license    "GPL-2"
+ :authors    (("Markus Triska" . "markus.triska@gmx.at"))
+ :maintainer ("Markus Triska" . "markus.triska@gmx.at")
+ :provided   (openwith)
+ :keywords   ("files" "processes")
+ :homepage   "http://stud4.tuwien.ac.at/~e0225855/"
+ :wikipage   "http://www.emacswiki.org/OpenWith"
+ :commentary "\
+This lets you associate external applications with files so that
+you can open them via C-x C-f, with RET in dired, etc.
+
+Copy openwith.el to your load-path and add to your .emacs:
+
+   (require 'openwith)
+   (openwith-mode t)
+
+To customize associations etc., use:
+
+   M-x customize-group RET openwith RET")

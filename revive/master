@@ -1,0 +1,6 @@
+(:updated    "20080513"
+ :provided   (revive)
+ :required   ((("emacs" cc-mode mh-e mh-utils view)
+	       ("mew" mew)
+	       ("mpg123" mpg123)))
+ :homepage   "http://www.gentei.org/~yuuji/software/")

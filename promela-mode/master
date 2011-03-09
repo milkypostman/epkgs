@@ -1,0 +1,57 @@
+(:summary    "Major mode for editing PROMELA program files"
+ :created    "2003"
+ :updated    "2003"
+ :authors    (("Eric Engstrom" . "eric.engstrom@honeywell.com"))
+ :maintainer ("Eric Engstrom")
+ :provided   (promela-mode)
+ :required   ((("emacs" font-lock)))
+ :keywords   ("spin" "promela" "tools")
+ :commentary "\
+This file contains code for a GNU Emacs major mode for editing
+	PROMELA (SPIN) program files.
+
+	Type \"C-h m\" in Emacs (while in a buffer in promela-mode) for
+	information on how to configure indentation and fontification,
+	or look at the configuration variables below.
+
+	To use, place promela-mode.el in a directory in your load-path.
+	Then, put the following lines into your .emacs and promela-mode
+	will be automatically loaded when editing a PROMELA program.
+
+	(autoload 'promela-mode \"promela-mode\" \"PROMELA mode\" nil t)
+	(setq auto-mode-alist
+	      (append
+	       (list (cons \"\\\\.promela$\"  'promela-mode)
+		     (cons \"\\\\.spin$\"     'promela-mode)
+		     (cons \"\\\\.pml$\"      'promela-mode)
+		     ;; (cons \"\\\\.other-extensions$\"     'promela-mode)
+	       	     )
+	       auto-mode-alist))
+
+	If you wish for promela-mode to be used for files with other
+	extensions you add your own patterned after the code above.
+
+     Note that promela-mode adhears to the font-lock \"standards\" and
+     defines several \"levels\" of fontification or colorization.  The
+     default is fairly gaudy, so I can imagine that some folks would
+     like a bit less.  FMI: see `font-lock-maximum-decoration'
+
+This mode is known to work under the following versions of emacs:
+  - XEmacs:        19.16, 20.x, 21.x
+  - FSF/GNU Emacs: 19.34
+  - NTEmacs (FSF): 20.[67]
+That is not to say there are no bugs specific to one of those versions :-)
+
+Please send any comments, bugs, patches or other requests to
+Eric Engstrom at engstrom@htc.honeywell.com
+
+To-Do:
+ - compile/syntax-check/verify? (suggested by R.Goldman)
+ - indentation - splitting lines at logical operators (M. Rangarajan)
+   [ This might \"devolve\" to indentation after \"->\" or \";\" 
+     being as is, but anything else indent even more? ]
+      :: SomeReallyLongArrayRef[this].typedefField != SomeReallyLongConstant -> /* some-comment */
+   [ Suggestion would be to break the first line after the !=, therefore: ]
+      :: SomeReallyLongArrayRef[this].typedefField 
+	      != SomeReallyLongConstant -> /* some-comment */
+   [ at this point I'm not so sure about this change... EE: 2001/05/19 ]")

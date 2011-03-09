@@ -1,0 +1,5 @@
+(:summary    "Find files that may have been put on another drive"
+ :updated    "20071126"
+ :license    "GPL-2"
+ :provided   (removable-media)
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/file-handling/")

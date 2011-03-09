@@ -1,0 +1,9 @@
+(:summary    "Emacs acronym expansions"
+ :created    "19931202"
+ :updated    "20010831"
+ :license    "GPL-2"
+ :authors    (("Noah Friedman" . "friedman@prep.ai.mit.edu"))
+ :maintainer (nil . "friedman@prep.ai.mit.edu")
+ :provided   (emacs-name)
+ :keywords   ("extensions" "games")
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html")

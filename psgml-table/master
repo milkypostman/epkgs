@@ -1,0 +1,10 @@
+(:summary    "Editing table for SGML-mode"
+ :created    "1999"
+ :updated    "1999"
+ :license    "GPL-2"
+ :authors    (("Erik Helander" . "erik.helander@telia.com"))
+ :maintainer ("Erik Helander" . "erik.helander@telia.com")
+ :provided   (psgml-table)
+ :required   ((("psgml" psgml-parse)))
+ :commentary "\
+Part of major mode for editing the SGML document-markup language.")

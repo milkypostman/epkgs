@@ -1,0 +1,15 @@
+(:summary    "Major mode for the Arduino language"
+ :repository (git . "https://github.com/bookest/arduino-mode.git")
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-3"
+ :authors    (("Christopher Grim" . "christopher.grim@gmail.com"))
+ :maintainer ("Christopher Grim" . "christopher.grim@gmail.com")
+ :provided   (arduino-mode)
+ :required   ((("emacs" cc-fonts cc-langs cc-menus cc-mode)))
+ :keywords   ("languages" "arduino")
+ :homepage   "https://github.com/bookest/arduino-mode"
+ :commentary "\
+Based on derived-mode-ex.el found here:
+
+<http://cc-mode.sourceforge.net/derived-mode-ex.el>.")

@@ -1,0 +1,44 @@
+(:summary    "Popup menus in text mode"
+ :created    "20031021"
+ :updated    "20041223"
+ :license    "GPL-2"
+ :authors    (("Zajcev Evgeny" . "zevlg@yandex.ru"))
+ :provided   (tpum)
+ :required   ((("emacs" cl)))
+ :keywords   ("tools" "menus")
+ :homepage   "http://lgarc.narod.ru/xemacs/"
+ :commentary "\
+This package aimed to bring popup menus to be more usable for
+keyboard friendly and mouse unfriendly people like me.  On the one
+hand I like popup menus, because they just perfect and easy
+interface for selective task, but on the other hand I hate them,
+because I need to find my trackball, click ugly buttons, twiddle
+ball to access menu item.  This pretty annoys.  Also popup menus
+are not available in console.  tpum.el package makes popup menu
+inlined in buffer, or creates transient XEmacs frame with temporary
+buffer, where menu will be inlined.  So this makes possible to
+control popup menus using keyboard and makes possible to popup
+menus in console.  To start using tpum.el just include in your
+~/.emacs next:
+
+To enable tpum globally:
+
+   (require 'tpum)
+   (tpum-global-mode 1)
+
+Or if you don't want tpum to be enable globally (default) do
+something like:
+
+   (autoload 'tpum-minor-mode \"Toggle tpum minor mode.\" t)
+
+ And then enable tpum minor mode by `M-x tpum-minor-mode RET'.
+
+Customization:
+
+To change tpum styles use:
+
+   (setq tpum-cstyle 'tpum-style-pseudo)
+   (setq tpum-menu-type 'inline)
+
+Best menu redering done if you are using fixed width fonts with
+pseudo-graphic characters and 'tpum-style-pseudo as tpum style.")

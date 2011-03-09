@@ -1,0 +1,24 @@
+(:summary    "仮想的にtagsするための拡張"
+ :repository (git . "https://github.com/tm8st/emacs-virtual-tags.git")
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-2"
+ :authors    ((nil . "tm8st@hotmail.co.jp"))
+ :maintainer (nil . "tm8st@hotmail.co.jp")
+ :provided   (virtual-tags)
+ :required   ((("emacs" etags)
+	       ("gtags" gtags)
+	       (nil anything-etags)))
+ :keywords   ("tags" "virtual")
+ :homepage   "https://github.com/tm8st/emacs-virtual-tags"
+ :commentary "\
+仮想的にTAGSとやりとりするためのelです。
+現状gtags, etagsに対応しています。
+
+Installation:
+
+(require 'virtual-tags)
+(global-set-key (kbd \"C-q C-e\") 'virtual-tags-update-tags)
+(global-set-key (kbd \"C-q C-@\") 'virtual-tags-init-tags)
+(global-set-key (kbd \"C-q C-j\") 'virtual-tags-find-tags-from-here)
+(global-set-key (kbd \"C-q C-m\") 'virtual-tags-find-tags)")

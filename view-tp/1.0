@@ -1,0 +1,13 @@
+(:summary    "View text properties under point in a separate frame"
+ :created    "2005"
+ :updated    "2005"
+ :license    "GPL-2"
+ :authors    (("Benjamin Rutt" . "brutt@bloomington.in.us"))
+ :maintainer ("Benjamin Rutt" . "brutt@bloomington.in.us")
+ :provided   (view-tp)
+ :homepage   "http://www.bloomington.in.us/~brutt/emacs.html"
+ :commentary "\
+Simple minor mode to look at text properties under point; useful
+for debugging packages which use text properties/overlays.  To use,
+put in your load path, (require 'view-tp), and issue M-x
+view-tp-mode RET to toggle on or off.")

@@ -1,0 +1,11 @@
+(:summary    "Generate pesudo-random number"
+ :created    "2006"
+ :updated    "20061107"
+ :license    "GPL-2"
+ :authors    ((nil . "wenbinye@163.com"))
+ :maintainer (nil . "wenbinye@163.com")
+ :provided   (prand)
+ :required   ((("emacs" calc calc-ext calc-misc cl)))
+ :commentary "\
+Put this file into your load-path and the following into your ~/.emacs:
+  (require 'prand)")

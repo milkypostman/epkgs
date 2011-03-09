@@ -1,0 +1,30 @@
+(:summary    "Window configuration history"
+ :created    "1997"
+ :updated    "1997"
+ :license    "GPL-2"
+ :authors    (("Bob Glickstein" . "bobg@zanshin.com"))
+ :maintainer ("Bob Glickstein" . "bobg@zanshin.com")
+ :provided   (winhist)
+ :required   ((("emacs" ring)))
+ :commentary "\
+`winhist-mode' is a global mode that records every change to the
+window configuration in a \"ring\" (like the yank ring or the mark
+ring).  It is then possible to step backward and forward through
+the history of window configurations.  I find this to be valuable
+for restoring mental context when working on a complex project.
+
+This works imperfectly because of vagaries in the way buffers and
+windows are connected and manipulated by various packages.  In
+particular, sometimes several consecutive window configurations in
+the history may seem to be identical.  But it's better than
+nothing, and I also like it better than some packages that require
+you to remember to save and possibly name a window configuration
+before restoring it.
+
+To use this package, add
+ (require 'winhist)
+ (winhist-mode 1)
+to your .emacs.  You should then bind keysequences to the commands
+`winhist-backward' and `winhist-forward'.  I prefer:
+ (global-set-key \"\\M-B\" 'winhist-backward)
+ (global-set-key \"\\M-F\" 'winhist-forward)")

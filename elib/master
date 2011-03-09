@@ -1,0 +1,7 @@
+(:created    "19920314"
+ :updated    "19951211"
+ :license    "GPL-2"
+ :authors    (("Per Cederqvist" . "ceder@lysator.liu.se")
+	      ("Inge Wallin" . "inge@lysator.liu.se"))
+ :maintainer (nil . "elib-maintainers@lysator.liu.se")
+ :provided   (avltree bintree cookie dll elib-node queue-f queue-m read stack-f stack-m string))

@@ -1,0 +1,54 @@
+(:summary    "Navigable mode line for the Sunrise Commander File Manager"
+ :created    "20091010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("José Alfredo Romero L." . "escherdragon@gmail.com"))
+ :maintainer ("José Alfredo Romero L." . "escherdragon@gmail.com")
+ :provided   (sunrise-x-modeline)
+ :required   ((("emacs" cl easymenu)
+	       ("sunrise-commander" sunrise-commander)))
+ :keywords   ("sunrise" "commander" "files" "manager" "paths" "mode" "line")
+ :commentary "\
+This  extension  modifies  the  format  of  the  mode lines under the Sunrise
+Commander panes so they display only the paths to the current directories (or
+the tail if the whole path is too long) and a row of three small icons. These
+icons are by default plain ASCII characters, but nicer semigraphical versions
+(in Unicode) can also be used by customizing the sr-modeline-use-utf8-marks
+variable.
+
+Here is the complete list of indicator icons (in ASCII and Unicode) and their
+respective meanings:
+                     (ascii) (unicode)
+1. Pane modes:          *        ☼     Normal mode.
+                        !        ⚡     Editable Pane mode.
+                        @        ☯     Virtual Directory mode.
+                        T        ⚘     Tree View mode (with tree extension).
+                         
+2. Navigation modes:    &        ⚓     Synchronized Navigation.
+                        $        ♻     Sticky Search.
+                         
+3. Transient states:    #        ♥     Contents snapshot available.
+
+(if you can't see the icons on the right don't use utf8 marks)
+
+The regular mode line format remains available: press C-c m to toggle between
+one format and the other.
+
+The  extension  is  provided  as a minor mode, so you can enable / disable it
+totally by issuing the command (M-x) sr-modeline.
+
+This is version 2 $Rev: 345 $ of the Sunrise Commander Modeline Extension.
+
+It  was  written  on GNU Emacs 23 on Linux, and tested on GNU Emacs 22 and 23
+for Linux and on EmacsW32 (version 22) for  Windows.
+
+Installation and Usage:
+
+1) Put this file somewhere in your emacs load-path.
+
+2)  Add  a  (require  ’sunrise‐x‐modeline)  expression  to  your  .emacs file
+somewhere after the (require ’sunrise‐commander) one.
+
+3) Evaluate the new expression, or reload your .emacs file, or restart emacs.
+
+4) Enjoy ;-)")

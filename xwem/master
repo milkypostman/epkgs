@@ -1,0 +1,16 @@
+(:summary    "Main part of xwem"
+ :repository (cvs . ":pserver:anonymous@cvs.savannah.nongnu.org:/sources/xwem")
+ :created    "20030321"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("Zajcev Evgeny" . "zevlg@yandex.ru"))
+ :maintainer ("Zajcev Evgeny" . "zevlg@yandex.ru")
+ :provided   (egx-button egx-load egx-object egx-style egx-widget ixwem xlib-const xlib-hello xlib-img xlib-load xlib-math xlib-tray xlib-vidmode xlib-xc xlib-xdpms xlib-xinerama xlib-xlib xlib-xpm xlib-xr xlib-xrecord xlib-xshape xlib-xtest xlib-xwin xwem-clients xwem-clswi xwem-compat xwem-edmacro xwem-events xwem-faces xwem-focus xwem-frame xwem-framei xwem-gamma xwem-help xwem-holer xwem-icons xwem-interactive xwem-keyboard xwem-keydefs xwem-keymacro xwem-keytt xwem-launcher xwem-load xwem-macros xwem-main xwem-manage xwem-minibuffer xwem-misc xwem-mouse xwem-osd xwem-register xwem-root xwem-smartmods xwem-sound xwem-special xwem-strokes xwem-tabbing xwem-time xwem-tray xwem-win)
+ :required   ((("cedet" working)
+	       ("emacs" cl comint cus-face edmacro strokes time)
+	       ("ilisp" completer)
+	       ("itimer" itimer)
+	       (nil color-selector xpm-button xpm-mode)))
+ :keywords   ("xlib" "xwem")
+ :homepage   "http://xwem.org/"
+ :wikipage   "http://www.emacswiki.org/XWindowEmacsManager")

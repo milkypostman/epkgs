@@ -1,0 +1,23 @@
+(:repository (git . "https://github.com/kitokitoki/source-highlight-el.git")
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-3"
+ :authors    (("kitokitoki" . "morihenotegami@gmail.com"))
+ :maintainer ("kitokitoki" . "morihenotegami@gmail.com")
+ :provided   (source-highlight)
+ :keywords   ("convenience")
+ :homepage   "https://github.com/kitokitoki/source-highlight-el"
+ :commentary "\
+GNU source-highlight を emacs から利用するための拡張です。
+
+Setting sample:
+
+(require 'source-highlight)
+(setq sh-language \"php\")
+(setq sh-output-format \"html\")
+
+Change Log
+
+1.0.0: 新規作成
+
+TODO documentation")

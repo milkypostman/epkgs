@@ -1,0 +1,15 @@
+(:summary    "Ultra-TeX mode"
+ :created    "1991"
+ :updated    "1998"
+ :license    "GPL-2"
+ :authors    (("Mark Haiman" . "mhaiman@macaulay.ucsd.edu")
+	      ("Nick Reingold")
+	      ("John Palmieri" . "palmieri@math.washington.edu"))
+ :maintainer ("John Palmieri" . "palmieri@math.washington.edu")
+ :provided   (aucify ultex ultex-cus ultex-setup)
+ :required   ((("auctex" bib-cite font-latex tex tex-buf)
+	       ("emacs" cl font-lock imenu)
+	       ("light" light)))
+ :keywords   ("tex-mode" "completion")
+ :homepage   "http://www.math.washington.edu/~palmieri/Emacs/ultratex.html"
+ :wikipage   "http://www.emacswiki.org/UltraTexMode")

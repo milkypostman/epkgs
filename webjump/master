@@ -1,0 +1,50 @@
+(:created    "1996"
+ :updated    "19970607"
+ :license    "GPL-2"
+ :authors    (("Neil W. Van Dyke" . "nwv@acm.org"))
+ :maintainer ("Neil W. Van Dyke" . "nwv@acm.org")
+ :provided   (webjump)
+ :required   ((("emacs" browse-url)))
+ :keywords   ("comm" "www")
+ :homepage   "http://www.neilvandyke.org/webjump/"
+ :wikipage   "http://www.emacswiki.org/WebJump"
+ :commentary "\
+WebJump provides a sort of ``programmable hotlist'' of Web sites that can
+quickly be invoked in your Web browser.  Each Web site in the hotlist has a
+name, and you select the desired site name via a completing string prompt in
+the minibuffer.  The URL for each Web site is defined as a static string or
+a built-in or custom function, allowing interactive prompting for
+site-specific queries and options.
+
+Note that WebJump was originally intended to complement your conventional
+browser-based hotlist, not replace it.  (Though there's no reason you
+couldn't use WebJump for your entire hotlist if you were so inclined.)
+
+The `webjump-sites' variable, which defines the hotlist, defaults to some
+example sites.  You'll probably want to override it with your own favorite
+sites.  The documentation for the variable describes the syntax.
+
+You may wish to add something like the following to your `.emacs' file:
+
+  (require 'webjump)
+  (global-set-key \"\\C-cj\" 'webjump)
+  (setq webjump-sites
+        (append '(
+                  (\"My Home Page\" . \"www.someisp.net/users/joebobjr/\")
+                  (\"Pop's Site\"   . \"www.joebob-and-son.com/\")
+                  )
+                webjump-sample-sites))
+
+The above loads this package, binds `C-c j' to invoke WebJump, and adds your
+personal favorite sites to the hotlist.
+
+The `webjump-sample-sites' variable mostly contains some site entries that
+are expected to be generally relevant to most Emacs users.  Some additional
+site entries are defined in the separate and more frequently updated
+`webjump-plus' package, which is available from the author's Web site.
+
+The `browse-url' package is used to submit URLs to the browser, so any
+browser-specific configuration should be done there.
+
+WebJump inherits a small amount code from my `altavista.el' package, and is
+intended to obsolete that package.")

@@ -1,0 +1,16 @@
+(:summary    "Emacs version of smartchr.vim"
+ :repository (git . "https://github.com/imakado/emacs-smartchr.git")
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-2"
+ :authors    (("IMAKADO" . "ken.imakado@gmail.com"))
+ :maintainer ("IMAKADO" . "ken.imakado@gmail.com")
+ :provided   (smartchr)
+ :required   ((("emacs" cl)))
+ :homepage   "https://github.com/imakado/emacs-smartchr"
+ :commentary "\
+(global-set-key (kbd \"=\") (smartchr '(\" = \" \" == \" \" === \")))
+
+substitute `!!' with cursor
+(global-set-key (kbd \"{\")
+             (smartchr '(\"{ `!!' }\" \"{ \\\"`!!'\\\" }\" \"{\")))")

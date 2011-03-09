@@ -1,0 +1,15 @@
+(:summary    "Alberto's Emacs interface for Mercurial (Hg)"
+ :repository (hg . "http://bitbucket.org/agriggio/ahg/")
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-3"
+ :authors    (("Alberto Griggio" . "agriggio@users.sourceforge.net"))
+ :maintainer ("Alberto Griggio" . "agriggio@users.sourceforge.net")
+ :provided   (ahg)
+ :required   ((("emacs" cl diff-mode easymenu ewoc grep log-edit)))
+ :homepage   "https://disi.unitn.it/~griggio/ahg.html"
+ :commentary "\
+A simple Emacs interface for the Mercurial (Hg) Distributed SCM.
+Installation: put this file where Emacs can find it, and then add the line
+(require 'ahg)
+to your .emacs")

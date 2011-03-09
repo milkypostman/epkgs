@@ -1,0 +1,7 @@
+(:summary    "Emacs interface to verbiste"
+ :repository (git . "git://gaffer.ptitcanardnoir.org/verbiste-el.git")
+ :created    "2002"
+ :updated    "2003"
+ :license    "GPL-2"
+ :provided   (verbiste)
+ :wikipage   "http://www.emacswiki.org/VerbisteEl")

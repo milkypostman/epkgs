@@ -1,0 +1,21 @@
+(:summary    "A simple interface to the www.pastebin.com webservice"
+ :repository (git . "https://github.com/nicferrier/elpastebin.git")
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-2"
+ :provided   (pastebin)
+ :homepage   "https://github.com/nicferrier/elpastebin"
+ :wikipage   "http://www.emacswiki.org/pastebin"
+ :commentary "\
+Load this file and run:
+
+  M-x pastebin-buffer
+
+to send the whole buffer or select a region and run
+
+ M-x pastebin
+
+to send just the region.
+
+In either case the url that pastebin generates is left on the kill
+ring and the paste buffer.")

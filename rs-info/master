@@ -1,0 +1,29 @@
+(:summary    "Some info related functions"
+ :updated    "20080321"
+ :license    "GPL-2"
+ :authors    (("Reiner Steib" . "reiner.steib@gmx.de"))
+ :maintainer ("Reiner Steib" . "reiner.steib@gmx.de")
+ :provided   (rs-info)
+ :keywords   ("info")
+ :homepage   "http://theotp1.physik.uni-ulm.de/~ste/"
+ :commentary "\
+Some functions related to info mode in Emacs.
+
+Installation:
+
+Put `rs-info.el' in a directory that's in your `load-path',
+e.g. ~/lisp:
+
+(add-to-list 'load-path \"~/lisp\")
+
+Put the following autoloads in your init file:
+
+(autoload 'rs-info-insert-current-node \"rs-info\"
+  \"Insert reference to current Info node using STYLE in buffer.\" t nil)
+(autoload 'rs-info-boxquote \"rs-info\"
+  \"Yank text (from an info node), box it and use current info node as title.\"
+  t nil)
+(autoload 'rs-info-reload \"rs-info\" \"Reload current info node.\" t nil)
+(autoload 'rs-info-insert-node-for-variable \"rs-info\"
+  \"Insert a custom style info node for the top level form at point.\" t nil)
+(defalias 'boxquote-info 'rs-info-boxquote)")

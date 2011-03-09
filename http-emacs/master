@@ -1,0 +1,13 @@
+(:summary    "Simple HTTP POST"
+ :repository (cvs . ":pserver:anonymous@cvs.sv.gnu.org:/sources/http-emacs")
+ :created    "2002"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("Alex Schroeder" . "alex@gnu.org"))
+ :maintainer ("David Hansen" . "david.hansen@physik.fu-berlin.de")
+ :provided   (http-cookies http-get http-post simple-emacswiki simple-wiki simple-wiki-completion simple-wiki-definitions simple-wiki-edit)
+ :required   ((("emacs" cl font-lock hexl thingatpt time-date)))
+ :keywords   ("hypermedia")
+ :homepage   "http://savannah.nongnu.org/projects/http-emacs/"
+ :commentary "\
+Use `http-post' to post to a URL.")

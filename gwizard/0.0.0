@@ -1,0 +1,8 @@
+(:summary    "Helper functions for Gtk+/Gnome/Glib/Bonobo programming"
+ :created    "2001"
+ :updated    "2001"
+ :license    "GPL-2"
+ :authors    (("Dirk-Jan C. Binnema" . "djcb@djcbsoftware.nl"))
+ :maintainer ("Dirk-Jan C. Binnema" . "djcb@djcbsoftware.nl")
+ :provided   (gwizard)
+ :wikipage   "http://www.emacswiki.org/GnomeWizard")

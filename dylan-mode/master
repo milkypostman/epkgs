@@ -1,0 +1,140 @@
+(:summary    "Major mode for editing Dylan programs"
+ :repository (git . "https://github.com/dylan-lang/dylan-mode.git")
+ :created    "1994"
+ :updated    "1996"
+ :license    "GPL-1"
+ :authors    (("Robert Stockton" . "rgs@cs.cmu.edu")
+	      ("others")
+	      ("then Chris Page"))
+ :maintainer ("Chris Page" . "cpage@opendylan.org")
+ :provided   (dylan-mode slime-dylan)
+ :required   ((("emacs" font-lock tree-widget)))
+ :homepage   "https://github.com/dylan-lang/dylan-mode"
+ :commentary "\
+Dylan mode is a major mode for editing Dylan programs. It provides
+indenting and font-lock support.
+
+Bug reports should be sent to <gd-bugs@gwydiondylan.org>; questions,
+comments and suggestions are welcome at <gd-hackers@gwydiondylan.org>.
+Also, see http://www.gwydiondylan.org/ for updates and documentation. 
+
+Known limitations:
+  Limited support for block (i.e. \"/*\") comments
+    TAB indentation doesn't work within \"/*\" comments
+  Magic => support doesn't work at end of buffer
+
+Desired features:
+  Copy indentation from first statement in body
+  Delete-backward-expanding-tabs
+  More consistency in font-lock highlighting
+  Better support for \"/*\" comments
+
+History:
+  version 0.1: Quick one day hack -- appears to be useful
+  version 0.2: Added font lock support
+  version 0.3: Added misc features to work towards \"industrial strength\"
+    Detects \"continuation lines\" and indents them specially
+    Basic comment support
+    Added \"symbol character\" support (with second syntax table for
+    indentation and font-lock)
+    Added indentation support for \"elseif\" and \"exception\" clauses
+    Cleaned up a number of old bugs
+  version 0.4: Brought into compliance with new \"post-DN22\" syntax
+    new comment syntax
+    new \"return types\" syntax
+    accepts sealed, open, concrete, and abstract in class definitions
+    fixed bug in comment indentation
+    fine tune font-lock-regexps for \"define ...\"
+  version 0.5:
+    Added \"dylan-insert-block-end\" function.
+    Fixed bug in short circuiting indentation outside top level forms.
+  version 1.0:
+    Major code reorganization
+    Added full case statement support
+    Fixed \"continuations\" at top level
+    Added \"beginning-of-form\" and \"end-of-form\" commands
+    Fixed support for character literals and for \"quoted\" quote chars
+  version 1.1:
+    The \"font-lock-mode\" support no longer interferes with other language
+    modes.   (Thanks to emg@hip.atr.co.jp)
+  version 1.2:
+    Fixes for various bugs (thanks to wlott@cs.cmu.edu):
+      \"foo-end;\" was mistaken for the end of a compound statement
+      syntax tables sometimes ended in an odd state after errors
+      indentation sometimes failed if parens weren't balanced
+  version 1.3:
+    Added font lock support for \"sealed\", \"open\", etc.
+  version 1.4:
+    Added special-case support for generic function \"continuations\" and
+    for outdenting \"=>\" in function definitions.
+  version 1.5:
+    Adjusted regexps to accept \"primary\" and \"free\" adjectives
+    Mentioned dylan-outdent-arrows in the documentation
+    Added a space to comment-start
+  version 1.6:
+    Fixed bug in generic function continuations from 1.4.
+  version 1.7:
+    Merged changes from Joseph Wilson (jnw@cis.ufl.edu) to facilitate use 
+    within more general modes.
+  version 1.8:
+    Font lock fix for XEmacs from John Shen <jshen@cas.org>.
+  version 1.9:
+    Fixed bug in indentation for expressions in square and curly braces.
+    Generalized modifier-word handling for definitions.
+    Generalized 'define words' lists for easier extension.
+    Fixed \"exceeded max nesting\" bug with long lists of items.
+    Added switches for font-lock highlighting of functions and definition 
+    sites.
+  version 1.10:
+    Fixed bug in \",\" reindent code.  It couldn't deal with commas
+    in the middle of strings.
+  version 1.11 12/13/95 by David N. Gray <gray@harlequin.com>:
+    Add C-M-a and C-M-e for beginning and end of definition.
+    Fix font lock syntax table for XEmacs.
+  version 1.12:
+    Added support for \"define function\"
+    Fixed to ignore keywords in the file header.
+    Do not require \";\" after return value (contributed by
+    gray@harlequin.com)
+    fixed various bugs resulting from overzealous acceptance of newlines:
+      the word \"end\" at the end of a comment line caused bad indentation
+      empty module and library definitions did strange things.
+  version 1.13:
+    Fixed dylan-insert-block-end to handle \"define function\" properly.
+    (Hopefully) fixed bug in indenting function result declarations,
+    which was introduced by the previous round of fixes.
+  version 1.14:
+    Modified to use font-lock-syntax-table if it is defined.  This
+    eliminates the need to use unportable constructs to modify the
+    behavior of font-lock mode -- thus, fontification should now be
+    reliable on modern EMACSen.
+  version 1.15
+    Fixed syntax table bugs which primarily affected gnu-emacs
+    19.[23] users.  
+    Optimized \"beyond-dylan-header\".  
+    Removed new-lines from various font-lock regexps so that
+    adjacent declarations aren't glommed together.
+  version 1.16
+    Made symbols properly fontify as strings.
+    Added the dylan-no-highlights-in-header variable (enabled by
+    default) which keeps keywords in headers from being treated
+    specially.
+  adjusted 12/6/96 by David N. Gray to set dylan-no-highlights-in-header
+    only for Emacs 19.31 or later
+  Modified 7/19/98 by David N. Gray to indent bodies of \"with-...\" macros.
+  Modified 16 Jan 99 by Eric M. Kidd for C-FFI macros.
+  version 1.17
+    Various fixes and changes over quite some time by Chris Page.
+    Retroactively bumped the version number after noticing that it
+    had been left at 1.16 far too long.
+  version 1.18
+    Changed some user-modifiable variables to Customization
+    variables and defined a Dylan customization group. Other
+    miscellaneous fixes and changes.
+  version 1.19
+    Added fontification of the Dylan interchange file header.
+    Other miscellaneous fixes and cleanups.
+  version 1.20
+    Added support for multiple levels of font-lock decoration.
+  version 1.21
+    Removed dylan-outdent-arrows. It should always be on.")

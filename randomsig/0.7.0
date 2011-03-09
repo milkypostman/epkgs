@@ -1,0 +1,74 @@
+(:summary    "Insert a randomly selected signature"
+ :created    "2001"
+ :updated    "20030717"
+ :license    "GPL-2"
+ :authors    (("Hans-Juergen Ficker" . "hj@backmes.de"))
+ :maintainer ("Hans-Juergen Ficker" . "hj@backmes.de")
+ :provided   (randomsig)
+ :required   ((("emacs" cl)))
+ :keywords   ("mail" "random" "signature")
+ :homepage   "http://www.backmes.de/scripts+programs.html"
+ :wikipage   "http://www.emacswiki.org/RandomSig"
+ :commentary "\
+This is yet another implementation to insert a randomly choosen 
+signature into a mail.
+
+It is only tested with gnus.
+
+To make it work, put the following lines into your ~/.gnus:
+
+(require 'randomsig)
+(define-key message-mode-map (kbd \"C-c s\") 'randomsig-replace-sig)
+(define-key message-mode-map (kbd \"C-c S\") 'randomsig-select-sig)
+(require 'gnus-sum) ; probably required for `gnus-summary-save-map'
+(define-key gnus-summary-save-map \"-\" 'gnus/randomsig-summary-read-sig)
+(setq randomsig-dir \"/some/directory\")
+(setq randomsig-files '(\"some\" \"files\"))
+;; or (setq randomsig-files (randomsig-search-sigfiles))
+;; or (setq randomsig-files 'randomsig-search-sigfiles)
+(setq message-signature 'randomsig-signature)
+
+This will also define the shortcut `C-c s' in message-mode to
+change the signature, `C-c S' in message-mode to interactively
+select the signature to replace the current signature, and `O -' in
+gnus-summary-mode to read the signature from the selected mail.
+
+`randomsig-files' must be a list of existing files, an existing
+file, or a function returning a list of existing files. If these
+don't have absolute paths, they are located in `randomsig-dir'.
+
+File format: Each file must contain at least one signature.
+Signatures are separated with `randomsig-delimiter-pattern'. If
+there is only one signature in the file, the delimiter can be
+omitted, so real .signature-files can be used.
+
+`randomsig-delimiter' is used when inserting new signatures with
+`randomsig-message-read-sig' into the signature file. So
+`randomsig-delimiter' should match `randomsig-delimiter-pattern'.
+
+`randomsig-static-string' is put in front of every random signature
+if non-`nil'.
+
+The *-read-sig functions read the signature of a message, or use
+the marked text, and write it to a signature-file, for which the
+name is asked. If the file does not exist, it will be generated.
+When called with any prefix, the signatures will be offered to edit
+before saving.
+
+if `randomsig-replace-sig' is called with any prefix, it will ask
+for a file to get the signature from.
+
+`randomsig-select-sig' will offer a list of signatures to select
+from in an extra buffer. n will jump to the next signature, p to
+the previous, RET will insert the selected signature, q will exit
+the selection buffer without replacing the current signature, R
+will reload the signature-files, and e will open a buffer for
+editing the signature at the point. When called with any prefix, it
+will ask for a file to get the signatures from
+
+`randomsig-search-sigfiles' will search for regular files in
+`randomsig-dir', which do not match `randomsig-search-unwanted'. A
+subdirectory of `randomsig-dir' can be given as optional argument.
+
+Completion will only work for files in `randomsig-files', though
+others files can be used, too.")

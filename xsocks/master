@@ -1,0 +1,18 @@
+(:summary    "Emacs sockets extender"
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-2"
+ :authors    (("Alessandro Di Marco" . "dmr@c0nc3pt.com"))
+ :maintainer ("Alessandro Di Marco" . "dmr@c0nc3pt.com")
+ :provided   (xsocks)
+ :required   ((("emacs" socks)))
+ :keywords   ("socks")
+ :commentary "\
+xsocks extends the socks behavior with a new feature `socks-doproxy', which
+ is the dual of `socks-noproxy'. Notice how `socks-doproxy' gets considered
+ only in case `socks-doproxy' is nil (i.e. this last one does have the
+ precedence over the first).
+
+Installation:
+
+ Put this file on your Emacs-Lisp load path.")

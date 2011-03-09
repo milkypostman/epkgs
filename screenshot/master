@@ -1,0 +1,22 @@
+(:summary    "Take a screenshot in Emacs"
+ :created    "2009"
+ :updated    "20100504"
+ :license    "GPL-2"
+ :authors    (("rubikitch" . "rubikitch@ruby-lang.org"))
+ :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
+ :provided   (screenshot)
+ :required   ((("emacs" cl))
+	      (("yaoddmuse" yaoddmuse)))
+ :keywords   ("images" "hypermedia")
+ :homepage   "http://www.emacswiki.org/ScreenShot"
+ :wikipage   "http://www.emacswiki.org/ScreenShot"
+ :commentary "\
+Take a screenshot by ImageMagick in Emacs easily. Then send the
+image to remote host by scp (optional). Finally the URL or filename
+is in the kill-ring. Execute 
+
+M-x screenshot
+
+See docstring for detail.
+[EVAL IT] (describe-function 'screenshot)
+[EVAL IT] (describe-function 'screenshot-take)")

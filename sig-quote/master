@@ -1,0 +1,11 @@
+(:summary    "Add quotes to signature according to recipients (Gnus/RMAIL/MH-E/vm)"
+ :created    "199501"
+ :updated    "2002"
+ :license    "GPL-2"
+ :authors    (("Trey Jackson" . "trey@cs.berkeley.edu"))
+ :maintainer ("Trey Jackson" . "bigfaceworm@hotmail.com")
+ :provided   (sig-quote)
+ :required   ((("emacs" cl mail-utils message mh-comp sendmail)
+	       ("vm" vm)))
+ :homepage   "http://www.emacswiki.org/sig-quote"
+ :wikipage   "http://www.emacswiki.org/sig-quote")

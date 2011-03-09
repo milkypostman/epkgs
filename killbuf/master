@@ -1,0 +1,11 @@
+(:summary    "Emacs 19--style kill-buffer for emacs 18"
+ :created    "19940621"
+ :updated    "19940621"
+ :license    "GPL-2"
+ :authors    (("Noah Friedman" . "friedman@prep.ai.mit.edu"))
+ :maintainer (nil . "friedman@prep.ai.mit.edu")
+ :keywords   ("extensions")
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
+ :commentary "\
+This package implements kill-buffer-hook and
+kill-buffer-query-functions for emacs 18.")

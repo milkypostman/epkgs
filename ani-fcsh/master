@@ -1,0 +1,13 @@
+(:summary    "Lets compile work without restarting fcsh and recognize flex errors"
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-2"
+ :authors    (("Anirudh Sasikumar"))
+ :maintainer ("FSF")
+ :keywords   ("tools" "processes")
+ :homepage   "http://anirudhs.chaosnet.org/blog/2008.03.26.html"
+ :wikipage   "http://www.emacswiki.org/FcshCompileSupport"
+ :commentary "\
+When visiting the main MXML file, call fcsh-compile. Then compile
+will invoke fcsh and run mxmlc. Subsequent compile's will send
+compile 1 without killing existing fcsh")

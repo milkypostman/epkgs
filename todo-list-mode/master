@@ -1,0 +1,11 @@
+(:summary    "Major mode for highlighting a numbered todo list"
+ :repository (git . "https://github.com/biilly/todo-list-mode.git")
+ :created    "200901"
+ :updated    "2009"
+ :license    "GPL-3"
+ :authors    (("Billy Lamberta" . "billy@lamberta.org"))
+ :maintainer ("Billy Lamberta" . "billy@lamberta.org")
+ :provided   (todo-list-mode)
+ :keywords   ("todo")
+ :homepage   "http://lamberta.posterous.com/emacs-todo-list-mode"
+ :wikipage   "http://www.emacswiki.org/TodoListMode")

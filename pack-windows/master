@@ -1,0 +1,25 @@
+(:summary    "Resize all windows to display as much info as possible"
+ :created    "2000"
+ :updated    "20031117"
+ :license    "GPL-2"
+ :provided   (pack-windows)
+ :required   ((("emacs" cl)))
+ :homepage   "http://lampwww.epfl.ch/~schinz/elisp/"
+ :commentary "\
+Resize all windows vertically to display as much information as possible
+with the command `M-x pack-windows'.
+
+Only windows that are on the left edge of the frame are taken into
+account. The vertical space available in the frame is first divided
+among all these windows. Then any window requireing less lines than it
+got to display its whole buffer is shrinked, and the freed space is
+divided equally among all the other windows.
+
+If some vertical space remains afterwards, it is given in totality to
+the currently selected window.
+
+Do not shrink any window to less than `window-min-height'.
+
+Shrink windows iteratively, performing at most `pack-windows-max-iteration'
+iterations. The number of iterations really performed will be
+displayed in the echo area if `pack-windows-verbose' is non-nil.")

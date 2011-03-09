@@ -1,0 +1,20 @@
+(:summary    "MPRIS call via dbus"
+ :created    "20090809"
+ :updated    "2009"
+ :license    "GPL-2"
+ :authors    (("Changyuan Yu" . "reivzy@gmail.com"))
+ :maintainer ("Changyuan Yu" . "reivzy@gmail.com")
+ :provided   (mpris-dbus)
+ :required   ((("emacs" dbus)))
+ :keywords   ("dus" "mpris")
+ :commentary "\
+A simple library for simplify MPRIS(http://wiki.xmms2.xmms.se/wiki/MPRIS)
+dbus call.
+
+Example:
+  (mpris-call \"/TrackList\" \"GetMetadata\" :int32 0)
+  (mpris-track-list-call \"GetLength\")
+  (mpris-player-call \"GetCaps\")
+  (mpris-player-call \"Next\")
+  (mpris-play)
+  (mpris-toggle-play)")

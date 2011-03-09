@@ -1,0 +1,26 @@
+(:summary    "NSIS-mode"
+ :created    "20101116"
+ :updated    "20110207"
+ :license    "GPL-3"
+ :authors    (("Matthew L. Fidler"))
+ :maintainer ("Matthew L. Fidler")
+ :provided   (nsis-mode)
+ :required   ((("emacs" cl font-lock hideshow))
+	      (("emacs" easymenu)
+	       ("w32-browser" w32-browser)
+	       ("yasnippet" yasnippet)))
+ :keywords   ("nsis")
+ :homepage   "http://www.emacswiki.org/NsisMode"
+ :wikipage   "http://www.emacswiki.org/NsisMode"
+ :commentary "\
+Put this in the load path, then add the following to your Emacs:
+
+ (autoload 'nsis-mode \"nsis-mode\" \"NSIS mode\" t)
+
+(setq auto-mode-alist (append '((\"\\\\.\\\\([Nn][Ss][Ii]\\\\)$\" .
+                                 nsis-mode)) auto-mode-alist))
+
+(setq auto-mode-alist (append '((\"\\\\.\\\\([Nn][Ss][Hh]\\\\)$\" .
+                                 nsis-mode)) auto-mode-alist))
+
+Thats it.")

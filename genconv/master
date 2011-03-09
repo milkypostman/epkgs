@@ -1,0 +1,16 @@
+(:created    "1998"
+ :updated    "20040223"
+ :provided   (genconv)
+ :homepage   "http://pagesperso-systeme.lip6.fr/Christian.Queinnec/WWW/elisp.html"
+ :commentary "\
+This package performs various conversions using tables.  There are
+currently tables toward ISO Latin1 from html accentuated letters
+(you know the kind of &eacute; stuff), from quoted printable
+sequences (the ugly =E20 things) or from (La)TeX (things such as
+\\'{e}).  To make these conversions handy, I have them in my
+default buffer menu. 
+
+To use that package, first compile it, evaluate (require 'genconv)
+[Maybe in your .emacs], and try, on a appropriate text (not this
+one or you will spoil the translation tables), to use the
+following commands html2iso, latex2iso or quotedprintable2iso.")

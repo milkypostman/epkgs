@@ -1,0 +1,10 @@
+(:summary    "Manage encrypted or compressed MH messages"
+ :created    "19940131"
+ :updated    "19980528"
+ :license    "GPL-2"
+ :authors    (("Fritz Knabe" . "knabe@acm.org"))
+ :maintainer ("Fritz Knabe" . "knabe@acm.org")
+ :provided   (mh-crypt)
+ :required   ((("crypt++" crypt++)
+	       ("emacs" advice mh-e)
+	       (nil mh-pick))))

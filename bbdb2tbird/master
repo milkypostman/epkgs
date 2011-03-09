@@ -1,0 +1,59 @@
+(:summary    "Export Emacs BBDB to Thunderbird Address Book via LDIF"
+ :created    "2007"
+ :updated    "20070601"
+ :license    "GPL-2"
+ :authors    (("Neil Van Dyke" . "neil@neilvandyke.org"))
+ :maintainer ("Neil Van Dyke" . "neil@neilvandyke.org")
+ :provided   (bbdb2tbird)
+ :required   ((("bbdb" bbdb)
+	       ("emacs" cl)))
+ :keywords   ("bbdb" "addressbook" "export" "thunderbird" "icedove" "ldif" "ldap")
+ :homepage   "http://www.neilvandyke.org/bbdb2tbird/"
+ :commentary "\
+\"bbdb2tbird.el\" is an Emacs Lisp program I hacked up mostly on 2007-05-22 to
+migrate my BBDB contact database of over 3000 entries to the Address Book of
+Mozilla Thunderbird.
+
+This was a one-shot conversion for my own personal use, and I'll not be
+maintaining the program.  That said, I suspect the program will also do the
+job for most other people who are migrating from VM or Gnus to Thunderbird.
+Documentation and user interface are minimal, but I figure most people with
+substantial BBDB databases are pretty Emacs-savvy and can figure it out.
+
+Note that this program does not properly convert non-ASCII characters.
+Support for non-ASCII characters can be added by someone with Emacs Lisp
+experience, especially if they used Emacs 22 rather than 21.
+
+The basic usage procedure is:
+
+  1. Load \"bbdb2tbird.el\" into an Emacs that's configured to use your BBDB
+     database.
+
+  2. M-x bbdb2tbird RET
+
+  3. The \"*bbdb2tbird*\" buffer should now be in your window.  Write this
+     buffer to a file name ending in \".ldif\", such as \"addressbook.ldif\".
+
+  4. From the Thunderbird Address Book window, select the \"Tools -> Import\"
+     menu item and follow the prompts to import the \".ldif\" file you just
+     wrote.
+
+  5. Once you've examined the imported address book entries and are
+     satisfied, you can move them from the category Thunderbird created
+     during import to the \"Personal Address Book\" category.
+
+Warning: The Thunderbird Address Book is very limited and dumbed-down
+compared to BBDB.
+
+For purposes of future debugging, here are the versions of various involved
+packages when I used when this program worked for me:
+
+  * GNU Emacs 21.4
+  * BBDB 2.35
+  * Icedove 1.5.0.10.dfsg1-3 (Debian packaging of a fork of Thunderbird)
+
+HISTORY:
+
+Version 1.1 (2007-06-01): Documentation changes.
+
+Version 1.0 (2007-05-24): First and probably only release by Neil Van Dyke.")

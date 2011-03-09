@@ -1,0 +1,15 @@
+(:summary    "Special subdirs.el to go along with write-subdirs-el"
+ :created    "2000"
+ :updated    "2000"
+ :license    "GPL-2"
+ :authors    (("Tom Breton" . "tob@world.std.com"))
+ :maintainer ("Tom Breton" . "tob@world.std.com")
+ :keywords   ("lisp" "internal")
+ :homepage   "http://panix.com/~tehom/"
+ :commentary "\
+tehom-normal-top-level-add-subdirs-to-load-path's behavior is
+different than normal-top-level-add-subdirs-to-load-path.  It
+assumes directories that have their own subdirs.el are handled by
+that subdirs.el and therefore doesn't explore them.  It also assumes
+that the absence or presence of .nosearch indicates whether such a
+directory-tree's root should be part of load-path or not.")

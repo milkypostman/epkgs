@@ -1,0 +1,13 @@
+(:summary    "Guess whether to use indent-tabs-mode when finding file"
+ :created    "2003"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("Dave Love" . "fx@gnu.org"))
+ :maintainer ("Dave Love" . "fx@gnu.org")
+ :provided   (indent-tabs-maybe)
+ :keywords   ("convenience" "files")
+ :homepage   "http://www.loveshack.ukfsn.org/emacs/"
+ :commentary "\
+Defines function `indent-tabs-maybe' for addition to
+`find-file-hooks'.  Allows setting `indent-tabs-mode' appropriate
+to the file's existing indentation style.")

@@ -1,0 +1,11 @@
+(:created    "1999"
+ :updated    "2000"
+ :license    "GPL-2"
+ :authors    (("Benjamin Drieu"))
+ :maintainer ("Benjamin Drieu")
+ :provided   (pong)
+ :required   ((("emacs" cl gamegrid)))
+ :keywords   ("games")
+ :homepage   "http://www.grassouille.org/emacs/index.en.html"
+ :commentary "\
+This is an implementation of the classical game pong.")

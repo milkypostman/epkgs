@@ -1,0 +1,9 @@
+(:summary    "Jump to where you (almost) want"
+ :repository (git . "https://github.com/tomoya/fuzzyjump.el.git")
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-2"
+ :authors    (("Tomoya Otake" . "tomoya.ton@gmail.com"))
+ :maintainer ("Tomoya Otake" . "tomoya.ton@gmail.com")
+ :provided   (fuzzyjump)
+ :homepage   "https://github.com/tomoya/fuzzyjump.el")

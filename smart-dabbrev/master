@@ -1,0 +1,9 @@
+(:summary    "Smarter dabbrev-expand"
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-2"
+ :provided   (smart-dabbrev)
+ :required   ((("emacs" dabbrev)))
+ :commentary "\
+If there were successful expansions in the current buffer then
+offer those first, instead of starting all over again.")

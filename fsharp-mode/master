@@ -1,0 +1,6 @@
+(:repository (svn . "https://fsharp-mode.svn.sourceforge.net/svnroot/fsharp-mode")
+ :updated    "20050204"
+ :license    "GPL"
+ :provided   (fsharp fsharp-font fsharp-indent inf-fsharp)
+ :required   ((("emacs" cl comint compile custom font-lock info-look)))
+ :homepage   "http://sourceforge.net/projects/fsharp-mode/")

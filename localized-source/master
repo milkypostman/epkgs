@@ -1,0 +1,5 @@
+(:summary    "Show localization for source files, e.g. translations of comments and perhaps names"
+ :updated    "20060505"
+ :license    "GPL-2"
+ :provided   (localized-source)
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/natural-language/")

@@ -1,0 +1,60 @@
+(:summary    "Run tests and get back a hierarchical set of results"
+ :repository (git . "https://github.com/philjackson/etest.git")
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-2"
+ :authors    (("Philip Jackson" . "phil@shellarchive.co.uk"))
+ :maintainer ("Philip Jackson" . "phil@shellarchive.co.uk")
+ :provided   (etest etest-rm-html-simple)
+ :required   ((("emacs" cl outline)
+	       ("xmlgen" xmlgen)))
+ :homepage   "http://www.shellarchive.co.uk/content/etest.html"
+ :wikipage   "http://www.emacswiki.org/ETest"
+ :commentary "\
+etest lets you define tests in a domain specific, hierarchical
+manner and gather results in a simple, structure of the same shape.
+
+To install you must put the location of etest into your
+`load-path', perhaps like this:
+
+(add-to-list 'load-path \"~/.elisp/etest\")
+
+Then actually load etest.el:
+
+(require 'etest)
+
+Valid examples of etest usage might be:
+
+Checking (+ 1 1) yeilds a non-nil result:
+(etest '(ok (+ 1 1)))
+
+You can add an extra argument to the end of any test and it will be
+used as the documentation string for the test:
+
+(etest '(ok (+ 1 1) \"Check 1 + 1 yeilds non-nil\"))
+
+If you omit this string then one will be generated for you.
+
+Checking (+ 1 1) yeilds 2:
+(etest '(eq (+ 1 1) 2))
+
+To combine these you might do this:
+(etest '(\"Check '+' function\" (ok (+ 1 1)) (eq (+ 1 1) 2)))
+
+The string is just a header to split things up and hopefully make
+the output more readable. You can have header groups nest as deeply
+as you like and within each as many tests as you like.
+
+To define your own tests the `deftest' function should be used. For
+example the following can (and is) used to test etest itself:
+
+(deftest '(eres 1)
+    (lambda (test)
+      (etest-ok
+       (plist-get (car (etest-run (list test))) :result))))
+
+Used like this:
+
+(etest '(eres (ok t)))
+
+I can see if etests 'built-ins' are working.")

@@ -1,0 +1,10 @@
+(:created    "19991127"
+ :updated    "1999"
+ :license    "GPL-2"
+ :authors    (("Koji Arai")
+	      ("Toshiro Kuwabara"))
+ :maintainer ("Koji Arai")
+ :provided   (rd-mode)
+ :required   ((("emacs" derived)))
+ :homepage   "http://raa.ruby-lang.org/project/rdtool/"
+ :wikipage   "http://www.emacswiki.org/RdMode")

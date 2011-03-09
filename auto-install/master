@@ -1,0 +1,21 @@
+(:summary    "Auto install elisp file"
+ :created    "20081211"
+ :updated    "20110129"
+ :license    "GPL-3"
+ :authors    (("Andy Stewart" . "lazycat.manatee@gmail.com")
+	      ("rubikitch" . "rubikitch@ruby-lang.org"))
+ :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
+ :provided   (auto-install)
+ :required   ((("emacs" bytecomp cl dired ffap find-func thingatpt url))
+	      (("anything-auto-install" anything-auto-install)))
+ :keywords   ("auto-install")
+ :homepage   "http://www.emacswiki.org/AutoInstall"
+ :wikipage   "http://www.emacswiki.org/AutoInstall"
+ :commentary "\
+Automates the installation of Emacs Lisp files and packages.
+
+`auto-install' provides an automated way to:
+
+(1) Download Emacs Lisp files and packages from common sources
+(2) View them (diff) and save them to your repository
+(3) Compile and Load them")

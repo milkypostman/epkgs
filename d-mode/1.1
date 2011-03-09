@@ -1,0 +1,32 @@
+(:summary    "D-mode"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    ((nil . "2003 ben hinkle bhinkle4@juno.com"))
+ :maintainer (nil . "2003 ben hinkle bhinkle4@juno.com")
+ :provided   (d-mode dlint)
+ :required   ((("cedet" linemark)
+	       ("emacs" cc-mode font-lock)))
+ :wikipage   "http://www.emacswiki.org/DMode"
+ :commentary "\
+Loosely based on version 1.12 of csharp-mode.el by Dennis Haney
+http://davh.dk/script/
+and on the font-lock.el definitions for C and C++.
+
+To activate put this in your .emacs:
+
+(autoload 'd-mode \"d-mode\" 
+  \"Major mode for editing D code.\" t)
+(setq auto-mode-alist (cons '( \"\\\\.d\\\\'\" . d-mode ) auto-mode-alist ))
+
+Put this file in your site-lisp emacs directory.
+Load it into emacs and run
+ M-x byte-compile-file RET RET 
+to compile it into a .elc file
+
+TODO: 
+ nested comments /+ +/
+ ` ` strings
+ cc-mode wants \"else\" clause of \"version\" to have matching \"if\"
+ import c.stdio doesn't highlight stdio
+ enum with storage class 
+ probably lots of other stuff")

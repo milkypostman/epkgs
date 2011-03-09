@@ -1,0 +1,20 @@
+(:summary    "Wanderlust bootstrap"
+ :repository (cvs . ":pserver:anonymous@cvs.m17n.org:/cvs/root")
+ :created    "2000"
+ :updated    "2000"
+ :license    "GPL-2"
+ :authors    (("Yuuichi Teranishi" . "teranisi@gohome.org")
+	      ("Masahiro MURATA" . "muse@ba2.so-net.ne.jp"))
+ :maintainer ("Yuuichi Teranishi" . "teranisi@gohome.org")
+ :provided   (acap bbdb-wl elmo elmo-access elmo-archive elmo-cache elmo-database elmo-date elmo-dop elmo-file elmo-filter elmo-flag elmo-imap4 elmo-internal elmo-localdir elmo-localnews elmo-maildir elmo-map elmo-mime elmo-msgdb elmo-multi elmo-net elmo-nntp elmo-null elmo-pipe elmo-pop3 elmo-search elmo-search-local-file elmo-sendlog elmo-shimbun elmo-signal elmo-spam elmo-split elmo-util elmo-vars elmo-version elsp-bogofilter elsp-bsfilter elsp-generic elsp-header elsp-sa elsp-spamfilter elsp-spamoracle im-wl mmelmo-buffer mmelmo-imap mmimap modb modb-entity modb-generic modb-legacy modb-standard pldap rfc2368 slp wl wl-acap wl-action wl-addrbook wl-address wl-addrmgr wl-batch wl-complete wl-demo wl-dnd wl-draft wl-e21 wl-expire wl-fldmgr wl-folder wl-highlight wl-mailto wl-message wl-mime wl-mule wl-news wl-refile wl-score wl-spam wl-summary wl-template wl-thread wl-util wl-vars wl-version wl-xmas)
+ :required   ((("apel" emu mcharset path-util pces poe poem product static)
+	       ("bbdb" bbdb bbdb-com bbdb-hooks)
+	       ("emacs" backquote browse-url bytecomp cl crm cus-edit custom derived easymenu epa epg epg-config ldap md5 pgg pp ps-print sasl sendmail thingatpt time-stamp timer timezone utf7)
+	       ("flim" eword-decode eword-encode mel mime mime-parse mmbuffer smtp std11)
+	       ("riece" luna)
+	       ("semi" mime-edit mime-pgp mime-play mime-setup mime-view)
+	       ("w3m" shimbun)
+	       (nil bitmap mmgeneric spamfilter)))
+ :keywords   ("mail" "net" "news")
+ :homepage   "http://www.gohome.org/wl/"
+ :wikipage   "http://www.emacswiki.org/WanderLust")

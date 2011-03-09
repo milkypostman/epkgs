@@ -1,0 +1,14 @@
+(:summary    "Base info used in emacs freex"
+ :created    "2007"
+ :updated    "2007"
+ :license    "GPL-2"
+ :authors    (("Per B. Sederberg")
+	      ("Greg Detre"))
+ :maintainer ("Per B. Sederberg")
+ :provided   (freex freex-embed freex-fontify freex-hiert freex-meta freex-mode freex-timestamp freex-xml version-info)
+ :required   ((("emacs" font-lock)))
+ :keywords   ("hypermedia")
+ :homepage   "http://www.princeton.edu/~gdetre/software/freex/docs/index.html"
+ :wikipage   "http://www.emacswiki.org/FreexMode"
+ :commentary "\
+Contributors:")

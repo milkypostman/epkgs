@@ -1,0 +1,24 @@
+(:summary    "Find file with makefile variables expanded"
+ :created    "2009"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Kevin Ryde" . "user42@zip.com.au"))
+ :maintainer ("Kevin Ryde" . "user42@zip.com.au")
+ :provided   (ffap-makefile-vars)
+ :required   ((("emacs" advice)))
+ :keywords   ("files")
+ :homepage   "http://user42.tuxfamily.org/ffap-makefile-vars/index.html"
+ :commentary "\
+This spot of code lets M-x ffap expand makefile macros $(FOO) in a
+filename, like
+
+    PREFIX = /usr
+
+    $(PREFIX)/share/foo
+
+With point on the \"$(PREFIX)/share/foo\" an M-x ffap expands to offer
+\"/usr/share/foo\".  This is good for constructed filenames in makefiles.
+
+Macros are expanded from the definitions in the file and also from
+`process-environment' like \"make\" does.  There's no support for the
+various smart expansions GNU make can do though.")

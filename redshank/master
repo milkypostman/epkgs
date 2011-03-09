@@ -1,0 +1,10 @@
+(:repository (darcs . "http://www.foldr.org/~michaelw/projects/redshank")
+ :created    "2006"
+ :updated    "2008"
+ :authors    (("Michael Weber" . "michaelw@foldr.org"))
+ :maintainer ("Michael Weber" . "michaelw@foldr.org")
+ :provided   (redshank redshank-loader)
+ :required   ((("emacs" cl easymenu eldoc skeleton)
+	       ("paredit" paredit)))
+ :keywords   ("languages" "lisp")
+ :homepage   "http://www.foldr.org/~michaelw/emacs/redshank")

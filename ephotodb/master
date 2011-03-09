@@ -1,0 +1,11 @@
+(:summary    "Provides ephotodb, the Emacs Photo Database:"
+ :repository (svn . "https://ephotodb.svn.sourceforge.net/svnroot/ephotodb")
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-2"
+ :authors    (("Markus Hoenicka" . "markus@mhoenicka.de"))
+ :maintainer ("Markus Hoenicka" . "markus@mhoenicka.de")
+ :provided   (ephotodb)
+ :required   ((("emacs" image-file)))
+ :homepage   "http://ephotodb.sourceforge.net/download.html"
+ :wikipage   "http://www.emacswiki.org/EmacsPhotoDatabase")

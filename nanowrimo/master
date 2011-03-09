@@ -1,0 +1,6 @@
+(:summary    "Elisp for tracking wordcount while working on"
+ :repository (git . "https://github.com/gigamonkey/nanowrimo-elisp.git")
+ :created    "2009"
+ :updated    "2009"
+ :provided   (nanowrimo smart-quote)
+ :homepage   "https://github.com/gigamonkey/nanowrimo-elisp")

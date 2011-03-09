@@ -1,0 +1,5 @@
+(:summary    "Advise kill-ring functions to tag items with what the surrounding whitespace was"
+ :updated    "20051123"
+ :license    "GPL-2"
+ :provided   (yank-whitespace)
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/editing/")

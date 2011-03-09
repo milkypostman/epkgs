@@ -1,0 +1,13 @@
+(:summary    "Misc elisp utilities for ljupdate"
+ :repository (git . "https://github.com/hober/ljupdate.git")
+ :created    "2002"
+ :updated    "2005"
+ :license    "GPL-2"
+ :authors    (("Edward O'Connor" . "ted@oconnor.cx"))
+ :maintainer ("Edward O'Connor" . "ted@oconnor.cx")
+ :provided   (lj-acct lj-compat lj-compose lj-custom lj-edit lj-fill lj-login lj-maint lj-pcomplete lj-protocol lj-util)
+ :required   ((("emacs" autoload cl md5 message pcomplete sendmail viper-cmd)
+	       ("http-emacs" http-post)))
+ :keywords   ("convenience")
+ :homepage   "http://edward.oconnor.cx/ljupdate/"
+ :wikipage   "http://www.emacswiki.org/LjUpdate")

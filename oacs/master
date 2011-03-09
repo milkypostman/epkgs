@@ -1,0 +1,66 @@
+(:summary    "OpenACS extensions"
+ :created    "2003"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("Bart Teeuwisse" . "bart.teeuwisse@thecodemill.biz"))
+ :maintainer ("Bart Teeuwisse" . "bart.teeuwisse@thecodemill.biz")
+ :provided   (oacs oacs-abbrevs oacs-comment oacs-error-log oacs-format oacs-headers oacs-mmm oacs-nxml oacs-occur oacs-psgml oacs-vars)
+ :required   ((("color-occur" color-occur)
+	       ("emacs" autoinsert sql)
+	       ("mmm-mode" mmm-auto mmm-mode)
+	       ("psgml" psgml)))
+ :keywords   ("abbrev" "extensions" "convenience" "tools")
+ :homepage   "http://www.openacs.com/xowiki/ide-emacs"
+ :wikipage   "http://www.emacswiki.org/OACS"
+ :commentary "\
+The latest version of oacs is always available from:
+
+- http://www.thecodemill.biz/services/oacs/
+
+Oacs depends on the psgml/nxml and mmm modules to be
+installed. Psgml and mmm are available from sourceforge.net:
+
+ - http://psgml.sourceforge.net/
+ - http://mmm-mode.sourceforge.net/
+
+Nxml is an alternative to psgml and available from:
+
+
+Psgml/nxml can be installed along side one another. Oacs defaults
+to psgml if both are installed unless oacs-preferred-xml-mode is set
+to nxml.
+
+Color-occur is not required but highly recommended. Especially in
+combination with the various M-oo* keystrokes. (See oacs-occur.el)
+
+- http://www.emacswiki.org/elisp/color-occur.el
+
+Besides oacs specific variables, oacs uses the common Emacs
+variables:
+
+ - user-full-name
+ - user-mail-address
+
+Set them in your .emacs file and your full name and e-mail address
+will be included in all OpenACS headers.
+
+Oacs adds several DTDs to psgml, which in order to use need to be
+installed. The set consists of common HTML DTDs as well as a DTD
+for the OpenACS specific XQL format. You can find a complete set as
+added by oacs at:
+
+- http://www.thecodemill.biz/repository/oacs-dtds.tgz
+
+Installation instructions are included in the archive. If you
+prefer nxml over psgml install XXX instead. Download XXX from:
+
+- http://www.thecodemill.biz/repository/oacs-XXX.tgz
+
+Oacs variables can be customized using:
+
+ - M-x customize-group oacs
+ 
+Oacs is intended to have as little side effects as
+possible. However, it does set various psgml and mmm
+variables. Should they clash with your preferences simply remove
+them from oacs.")

@@ -1,0 +1,5 @@
+(:license    "GPL-2"
+ :provided   (dictem)
+ :required   ((("emacs" cl)))
+ :homepage   "http://sourceforge.net/projects/dictem/"
+ :wikipage   "http://www.emacswiki.org/DictEm")

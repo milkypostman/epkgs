@@ -1,0 +1,18 @@
+(:summary    "Search refinement of ack result with anything"
+ :created    "2010"
+ :updated    "20101220"
+ :license    "GPL-2"
+ :authors    (("Ivan K"))
+ :maintainer ("Ivan K")
+ :provided   (anything-ack)
+ :required   ((("anything" anything)
+	       ("emacs" grep)))
+ :keywords   ("convenience" "unix")
+ :commentary "\
+Do ack in anything buffer. When we search information with ack,
+we often narrow the candidates. Let's use `anything' to do it.
+
+This file is a 'creative' merge of anything-grep.el by
+rubikitch <rubikitch@ruby-lang.org>, http://www.emacswiki.org/cgi-bin/wiki/download/anything-grep.el
+and
+ack.el by Philip Jackson <phil@shellarchive.co.uk>, https://github.com/markhepburn/dotemacs/blob/master/ack.el")

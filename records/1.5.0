@@ -1,0 +1,11 @@
+(:summary    "Records"
+ :repository (cvs . ":pserver:anonymous@records.cvs.sourceforge.net:/cvsroot/records")
+ :created    "2003"
+ :updated    "2003"
+ :license    "GPL-2"
+ :provided   (homepage publish records records-autoloads records-calendar records-diary records-dindex records-format records-hs records-index records-metainfo records-mode records-owner records-query records-ref records-rss records-rss-publish records-search records-sm records-status records-tex records-type records-util records-vars)
+ :required   ((("emacs" calendar easymenu font-lock gnus imenu mail-utils tempo url)
+	       ("mailcrypt" mailcrypt)
+	       (nil htmlize)))
+ :homepage   "http://sourceforge.net/projects/records"
+ :wikipage   "http://www.emacswiki.org/RecordsMode")

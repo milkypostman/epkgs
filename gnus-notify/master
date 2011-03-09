@@ -1,0 +1,15 @@
+(:license    "GPL-2"
+ :authors    (("Mark Triggs" . "mark@dishevelled.net"))
+ :maintainer ("Mark Triggs" . "mark@dishevelled.net")
+ :provided   (gnus-notify)
+ :homepage   "http://www.emacswiki.org/GnusNotify"
+ :wikipage   "http://www.emacswiki.org/GnusNotify"
+ :commentary "\
+This code provides modeline notification of when certain groups contain
+unread messages. Groups for whom unread messages should be indicated are
+chosen by setting a group parameter.
+
+Clicking on a group in the modeline will enter that group and view the new
+message.
+
+Code:")

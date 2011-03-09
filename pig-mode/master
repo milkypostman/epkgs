@@ -1,0 +1,7 @@
+(:repository (git . "https://github.com/motus/pig-mode.git")
+ :created    "2009"
+ :updated    "2009"
+ :license    "as-is"
+ :provided   (pig-mode)
+ :required   ((("emacs" font-lock)))
+ :homepage   "https://github.com/motus/pig-mode")

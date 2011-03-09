@@ -1,0 +1,28 @@
+(:summary    "Minor mode for Cacoo (http://cacoo.com)"
+ :repository (git . "https://github.com/kiwanami/emacs-cacoo.git")
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :provided   (cacoo)
+ :required   ((("emacs" cl easymenu url-file)))
+ :keywords   ("convenience" "diagram")
+ :homepage   "https://github.com/kiwanami/emacs-cacoo"
+ :commentary "\
+Cacooで書いた画像をインラインで表示したり、編集画面をさっと開くことのできる
+マイナーモードです。画像はローカルにキャッシュしていますので、オフラインでも
+画像を見ることができます。インライン表示時には自動的に指定のサイズに縮小します。
+実際にはCacooだけではなく、URLで参照できてEmacsとImageMagickが解釈できる
+図であれば大抵インライン表示できます。
+
+Installation:
+
+必要なもの、環境
+wget, ImageMagick(convert, identify, display)
+
+ロードパスに cacoo.el を置き、以下のように呼び出し用のコードを
+.emacs などに追加してください。以下の例では、Altキーを押しながら「-」
+を押すとOn/Offが切り替わるようになります。
+
+;設定例
+(require 'cacoo)
+(global-set-key (kbd \"M--\") 'toggle-cacoo-minor-mode)")

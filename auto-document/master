@@ -1,0 +1,22 @@
+(:summary    "Automatic document generator of Emacs Lisp"
+ :created    "2009"
+ :updated    "20100504"
+ :license    "GPL-2"
+ :authors    (("rubikitch" . "rubikitch@ruby-lang.org"))
+ :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
+ :provided   (auto-document)
+ :required   ((("emacs" cl)))
+ :keywords   ("docs" "convenience" "lisp")
+ :homepage   "http://www.emacswiki.org/AutoDocument"
+ :wikipage   "http://www.emacswiki.org/AutoDocument"
+ :commentary "\
+This package generates auto-generatable documents in the header in
+Emacs Lisp file. Currently it generates command list: command name
+and first line of docstring. Document is inserted after empty line
+below Commentary section. If auto document is found, it is
+updated. So you can move it to any position.
+
+M-x auto-document inserts/updates auto document of current buffer.
+
+DON'T REMOVE THE EMPTY LINE JUST AFTER GENERATED DOCUMENT! Or
+`auto-document' eats hand-written documents.")

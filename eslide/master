@@ -1,0 +1,3 @@
+(:repository (git . "https://github.com/jrockway/eslide.git")
+ :provided   (eslide)
+ :homepage   "https://github.com/jrockway/eslide")

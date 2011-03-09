@@ -1,0 +1,173 @@
+(:summary    "Create HTML with links.  (Extensions to `htmlize.el'.)"
+ :created    "20000718"
+ :updated    "20110104"
+ :license    "GPL-2"
+ :authors    (("Drew Adams"))
+ :maintainer ("Drew Adams")
+ :provided   (mkhtml mkhtml-htmlize)
+ :required   ((("emacs" cl custom dired easymenu info))
+	      (("info+" info+)))
+ :keywords   ("tools" "hypermedia" "www" "info")
+ :commentary "\
+Extensions to `htmlize.el' (Hrvoje Niksic, hniksic@xemacs.org).
+
+Hrvoje Niksic's `htmlize.el' creates HTML files from fontified
+buffers, but it does not attempt to create any HTML links.  Library
+`mkhtml.el' extends `htmlize.el' by trying to do that in a couple
+of specific cases, interpreting mouse-face'd text in Info and Dired
+buffers as links.  A version of `htmlize.el' named
+`mkhtml-htmlize.el' is provided with the MKHTML package.
+
+Recent versions of `htmlize.el' do not work with `mkhtml.el' - I
+just have not had a chance to update `mkhtml.el'.  For use other
+than with `mkhtml.el', you can get the latest version of
+`htmlize.el' from Niksic's web site at
+`http://fly.srk.fer.hr/~hniksic/emacs/htmlize.el', or perhaps by
+email (hniksic@xemacs.org).
+
+Somewhat related functionality to that of `mkhtml.el' is available
+with `info2www'.  This is a shell script that converts Emacs Info
+files on the fly to HTML.  See
+`http://www-flash.stanford.edu/info2www/info2www.html'.
+
+See also the `makeinfo' utility (Note: texi2html is now obsolete,
+replaced by Makeinfo).  Like mkhtml, makeinfo can convert entire
+Info files to HTML.  The result of converting an Info file with
+makeinfo is a single HTML file.  The result of converting an Info
+file with `mkhtml-file' is an HTML file for each node in the Info
+file.  To produce a single HTML file with multiple Info nodes using
+mkhtml, you need to first merge the nodes with the command
+`Info-merge-subnodes' (see file `info+.el').
+
+-------------------------------------------------------------------
+Main new functions defined here:
+
+   `mkhtml-any-buffer', `mkhtml-convert-std-filename',
+   `mkhtml-dired', `mkhtml-dired-files', `mkhtml-dired-link-fn',
+   `mkhtml-file', `mkhtml-file-menu-item', `mkhtml-files',
+   `mkhtml-get-basefont-size', `mkhtml-get-css-font-size',
+   `mkhtml-get-font-family', `mkhtml-info-buffer',
+   `mkhtml-info-link-fn', `mkhtml-insert-header',
+   `mkhtml-make-HTML-file-name', `mkhtml-merged-info-buffer',
+   `mkhtml-merged-info-link-fn', `mkhtml-non-file-menu-item',
+   `mkhtml-particular-buffer', `mkhtml-plain-buffer',
+   `mkhtml-plain-link-fn', `mkhtml-save-buffer'.
+
+New user options (variables) defined here:
+
+   `mkhtml-dir-sep-replacement', `mkhtml-file-node-sep',
+   `mkhtml-font-size', `mkhtml-hover-link-bg-color',
+   `mkhtml-hover-link-fg-color', `mkhtml-link-color',
+   `mkhtml-preserve-fonts', `mkhtml-visited-link-color'.
+
+Other variable defined here: `mkhtml-version'.
+
+
+ ***** NOTE: The following functions defined in `htmlize.el' have
+             been REDEFINED HERE:
+
+ `htmlize-css-specs' - Adds font-family and font-size too.
+ `htmlize-css-insert-head' - Adds link color too.
+ `htmlize-font-body-tag' - Adds  BASEFONT size too.
+-------------------------------------------------------------------
+
+
+COMMANDS
+
+The main commands defined here are `mkhtml-any-buffer',
+`mkhtml-dired-files' and `mkhtml-file'.  These all try to analyze
+the context (Dired, Info, merged Info) of the buffer or file(s) to
+determine how to create appropriate HTML links.  The most powerful
+of the commands here is `mkhtml-any-buffer'.
+
+If you know the context, you can alternatively use directly one of
+the individual commands `mkhtml-dired', `mkhtml-info-buffer',
+`mkhtml-merged-info-buffer', or `mkhtml-plain-buffer'.  Each of
+these uses the generic function `mkhtml-particular-buffer'.  You
+can also use `mkhtml-particular-buffer' to create your own function
+for creating HTML links in another special context.
+
+Loading this file adds to the `Info' menu-bar menu (in Info mode).
+
+
+RELATED FILES
+
+The MKHTML package contains these files:
+
+`frame-cmds.el': frame and window commands (interactive functions)
+   (uses `frame-fns.el', `icomplete+.el', `strings.el')
+`frame-fns.el': non-interactive frame and window functions
+`htmlize.el': create HTML from font-lock'd buffers
+`icomplete+.el': extends GNU `icomplete.el'
+`info+.el': extends GNU `info.el'
+   (uses `fit-frame.el', `strings.el', `thingatpt+.el')
+`misc-fns.el': miscellaneous non-interactive functions
+`mkhtml.el' (this file): extends `htmlize.el' to treat hyperlinks
+`fit-frame.el': fits frames to their selected window
+   (uses `misc-fns.el', `strings.el')
+`strings.el': miscellaneous string functions
+   (uses `thingatpt+.el')
+`thingatpt+.el' - extends GNU `thingatpt.el'
+
+All of these are loaded automatically, when you load `mkhtml.el'.
+The best way to do that is by adding this to your `~/.emacs' file:
+
+    (require 'mkhtml)
+
+Only `htmlize.el' is strictly required by `mkhtml.el', but
+`info+.el' is also needed if you want to take advantage of certain
+functionalities in `mkhtml.el' (see next paragraph).  The other
+files in this package are not strictly required, but they let you
+take best advantage of `info+.el'.
+
+Commands `mkhtml-merged-info-buffer' and `mkhtml-any-buffer',
+defined here, are able to convert merged Info buffers, which are
+created by command `Info-merge-subnodes' (see file `info+.el').  A
+merged Info buffer contains a merge of an Info node with all of its
+subnodes (perhaps recursively).  This can be useful for creating
+larger HTML files containing several nodes (otherwise, a separate
+HTML file is created for each node).
+
+File `setup-info.el' can be useful if you want to make HTML
+versions of large Info indexes such as the Emacs manual Key Index.
+By default, large index menus are not highlighted in Info, so no
+HTML links are created for them.  File `setup-info.el' allows for
+highlighting larger menus by increasing variable
+`Info-fontify-maximum-menu-size' to 100000.  It also redefines the
+faces in `Info-title-face-alist'.
+
+
+ The following binding is made here:
+
+   menu bar Tools menu        `mkhtml-any-buffer'
+
+ The following bindings are made here for Info mode
+ (these commands are also added to the Info menu-bar menu):
+
+   `c'                        `mkhtml-info-buffer'
+   `w'                        `mkhtml-file'
+
+ The command `mkhtml-merged-info-buffer' is added to the Info
+ menu-bar menu for merged Info buffers.
+
+
+
+CURRENT LIMITATIONS / POSSIBLE IMPROVEMENTS:
+
+  1. Perhaps it would be better to use relative paths, not absolute?
+     Or to make it a user choice?
+  2. No attempt has been made to support other than GNU Emacs
+     (e.g. XEmacs).
+  3. There is no treatment yet of file names in `Note:' (Info cross
+     references).  For example, `Note: (emacs) Minibuffer::' =>
+     a link to \"#(emacs) Minibuffer\" (merged Info buffer) or to
+     \"(emacs) Minibuffer.html\" (normal Info buffer).
+  4. Not yet taking into account `Note: xxx: yyy' (as opposed to
+     `Note: xxx:: yyy').  Currently this links to xxx, not yyy.
+  5. For a merged info buffer, there is no way of knowing if a link
+     is to elsewhere in the same buffer or not.  Most such links
+     are menu items, so they will point to places in the same
+     buffer.  But cross refs (`Note:') may point beyond the buffer.
+     Those are not treated differently here - all links are
+     currently made to point to hashes (#) in the same HTML file
+     derived from the same buffer.")

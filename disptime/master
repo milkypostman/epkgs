@@ -1,0 +1,13 @@
+(:summary    "Display time, load average, etc. in mode line"
+ :created    "19960503"
+ :updated    "20051227"
+ :license    "GPL-2"
+ :authors    (("Noah Friedman" . "friedman@splode.com"))
+ :maintainer (nil . "friedman@splode.com")
+ :provided   (disptime)
+ :required   ((("emacs" timer)
+	       ("itimer" itimer)))
+ :keywords   ("extensions")
+ :homepage   "ftp://ftp.splode.com/pub/users/friedman/emacs-lisp/"
+ :commentary "\
+This is my personal replacement for time.el.")

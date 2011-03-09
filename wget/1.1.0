@@ -1,0 +1,13 @@
+(:created    "2000"
+ :updated    "2000"
+ :license    "GPL-2"
+ :authors    (("Kevin A. Burton" . "burton@openprivacy.org"))
+ :maintainer ("Kevin A. Burton" . "burton@openprivacy.org")
+ :provided   (wget)
+ :required   ((("emacs" cl)))
+ :keywords   ("wget")
+ :wikipage   "http://www.emacswiki.org/EmacsWget"
+ :commentary "\
+This is an interface for wget.  Basically it allows you to pull down URLs and
+then view the output in a buffer.  This is a too to help develop/debug web
+applications.")

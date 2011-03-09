@@ -1,0 +1,45 @@
+(:created    "1997"
+ :updated    "19970316"
+ :provided   (defaultbanner)
+ :homepage   "http://pagesperso-systeme.lip6.fr/Christian.Queinnec/WWW/elisp.html"
+ :commentary "\
+It is usual when distributing a set of files to give them a
+constant header or banner (sometimes with a pleasant
+drawing). Some packages do that with some parameters (autoinsert,
+auto-template, defaultcontent and others, all in LCD). But very
+often, one wants to change the banner and it is a pain to
+consistently update all the files of a distribution to reflect
+that new banner. This package addresses this point and is
+compatible with the defaultcontent.el package.
+
+Whenever a file is visited, its banner is automatically inspected
+and updated if needed. A hook is run that knows about the various
+possible banners (antichronologically ordered), identifies which
+one is used and replace it by the newest possible. When you decide
+to change the banner you just add the new one in front of the
+possible banners and that's all!
+
+The interactive function db-check-file allows to run the hook even
+if not installed. Another function db-check-every-file updates all
+the files given in argument. 
+
+To use this package, add to your .emacs (taking care of load-path)
+         (require 'defaultbanner)
+and it is ready. Then you have to set up the db-banners-alist 
+variable to determine which files must be updated wrt which banners.
+
+Demonstration:
+
+(i) load the defaultbanner package 
+(ii) visit a file named \"foo.bar\"
+	defaultbanner will see that it does not contain any banner
+	and will insert \";;; This is a boring banner.\" 
+(iii) Move to the \"foo.bar\" buffer
+	You can even add some lines before and after the banner but
+	do not try to modify it (or at least leave the word banner in it :)
+(iv) Do \\M-x db-demo
+	This will install a new banner associated to foo.bar and 
+	and will visit again the foo.bar file thus forcing the banner
+	to be updated. 
+(v) Look!
+	a single undo will remove the change.")

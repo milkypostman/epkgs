@@ -1,0 +1,8 @@
+(:summary    "Insert Unicode characters"
+ :created    "20030929"
+ :updated    "20030929"
+ :license    "GPL-2"
+ :authors    (("Norman Walsh" . "ndw@nwalsh.com"))
+ :maintainer ("Norman Walsh" . "ndw@nwalsh.com")
+ :keywords   ("unicode" "xml" "characters")
+ :homepage   "http://nwalsh.com/emacs/xmlchars/")

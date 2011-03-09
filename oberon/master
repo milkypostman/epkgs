@@ -1,0 +1,23 @@
+(:summary    "Major mode for editing Oberon/Oberon-2 program texts"
+ :created    "2006"
+ :updated    "2006"
+ :license    "GPL-2"
+ :authors    (("Karl Landström" . "karl@karllandstrom.se"))
+ :maintainer ("Karl Landström" . "karl@karllandstrom.se")
+ :provided   (oberon-mode)
+ :required   ((("emacs" font-lock newcomment)))
+ :keywords   ("oberon" "languages" "oop")
+ :homepage   "http://www.brgeight.se/"
+ :commentary "\
+The main features of this mode are syntactic highlighting (enabled
+with `font-lock-mode' or `global-font-lock-mode'), automatic
+indentation and filling of comments.
+
+This package has (only) been tested with GNU Emacs 21.4 (the latest
+stable release).
+
+Installation:
+
+Put this file in a directory where Emacs can find it (`C-h v
+load-path' for more info). Then add the following lines to your
+Emacs initialization file:")

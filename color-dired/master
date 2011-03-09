@@ -1,0 +1,12 @@
+(:summary    "Make dired color"
+ :repository (git . "https://github.com/mhayashi1120/Emacs-color-dired.git")
+ :license    "GPL-3"
+ :authors    (("Hayashi Masahiro" . "mhayashi1120@gmail.com"))
+ :maintainer ("Hayashi Masahiro" . "mhayashi1120@gmail.com")
+ :provided   (color-dired)
+ :required   ((("emacs" cl ls-lisp)))
+ :keywords   ("dired" "color")
+ :homepage   "https://github.com/mhayashi1120/Emacs-color-dired"
+ :commentary "\
+color-dired provides colored text that recently changed. (`Today', `This week'
+,`Last week' and `Last week before')")

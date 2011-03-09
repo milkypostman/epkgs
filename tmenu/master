@@ -1,0 +1,51 @@
+(:summary    "A text based interface to the menubar"
+ :created    "2000"
+ :updated    "2000"
+ :license    "GPL-2"
+ :authors    (("Yuji Minejima" . "ggb01164@nifty.ne.jp"))
+ :maintainer ("Yuji Minejima" . "ggb01164@nifty.ne.jp")
+ :provided   (tmenu)
+ :keywords   ("menu" "convenience")
+ :homepage   "http://homepage1.nifty.com/bmonkey/emacs/index-en.html"
+ :commentary "\
+This package provides a text based interface to the menubar.
+In order to test this as you see this file, proceed as follows:
+  1: Load this package:  M-x eval-buffer
+  2: Browse the menubar: M-x tmenu-menubar
+  3: You see something like the following:
+     -------------------------------------------------------------
+     Click mouse-2 on a completion to select it.
+     In this buffer, type RET to select the completion near point.
+     
+     Possible completions are:
+     b > Buffers                        f > Files
+     t > Tools                          e > Edit
+     s > Search                         m > Mule
+     E > Emacs-Lisp                     h > Help
+     -------------------------------------------------------------
+  4: Press the first character (e.g. b for Buffers, E for Emacs-Lisp)
+     to select the menu item.
+     Enter C-g to exit the menu without selecting any item.
+
+
+What's the differences between tmenu.el and tmm.el
+
+ I mainly wrote this package to lean the differences in the menu APIs
+ between GNU Emacs and XEmacs, so I'm afraid there's no earth-shattering
+ features that tmenu.el can be proud of.
+
+ tmm.el
+  * a standard package bundled with GNU Emacs.
+  * is lightweight.
+  * 
+
+ tmenu.el
+  * runs on GNU Emacs and XEmacs.
+  * allow the user to move around the menu hierarchy.
+  * displays radio/toggle buttons.
+  * 
+
+
+Requirements:
+
+Tested with FSF Emacs 20.7.2 and XEmacs 21.1.12.")

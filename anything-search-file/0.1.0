@@ -1,0 +1,9 @@
+(:summary    "Search file by locate or find"
+ :created    "20090819"
+ :updated    "2009"
+ :license    "GPL-3"
+ :authors    (("Takayuki YAMAGUCHI" . "d@ytak.info"))
+ :maintainer ("Takayuki YAMAGUCHI" . "d@ytak.info")
+ :provided   (anything-search-file)
+ :required   ((("anything" anything)))
+ :keywords   ("anything" "locate" "find"))

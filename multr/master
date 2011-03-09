@@ -1,0 +1,9 @@
+(:summary    "Multiple regions handling"
+ :created    "20040414"
+ :updated    "2004"
+ :license    "GPL-2"
+ :authors    (("Zajcev Evgeny" . "zevlg@yandex.ru"))
+ :maintainer ("Zajcev Evgeny" . "zevlg@yandex.ru")
+ :provided   (multr)
+ :keywords   ("regions" "interactive")
+ :homepage   "http://lgarc.narod.ru/xemacs/")

@@ -1,0 +1,17 @@
+(:summary    "Major mode for editing cmd scripts"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Daniel Colascione" . "dan.colascione@gmail.com"))
+ :maintainer ("Daniel Colascione" . "dan.colascione@gmail.com")
+ :provided   (ntcmd)
+ :required   ((("emacs" cl font-lock)))
+ :keywords   ("languages")
+ :commentary "\
+This is a mode for highlighting and indenting Windows cmd scripts.
+It uses a parser in several passes to ensure the buffer is
+interpreted the way that cmd would see it. It also features
+electric indentation.
+
+The default fontification of variable references is basic, but
+there are several faces that can be adjusted to suit your fancy.")

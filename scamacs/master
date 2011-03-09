@@ -1,0 +1,9 @@
+(:repository (git . "https://github.com/RayRacine/Scamacs.git")
+ :created    "2009"
+ :updated    "2009"
+ :authors    (("See AUTHORS file"))
+ :maintainer ("See AUTHORS file")
+ :provided   (sbt scala-mode scala-mode-auto scala-mode-constants scala-mode-feature scala-mode-feature-electric scala-mode-feature-speedbar scala-mode-feature-tags scala-mode-fontlock scala-mode-indent scala-mode-inf scala-mode-lib scala-mode-navigation scala-mode-ui scala-mode-variables)
+ :required   ((("emacs" browse-url cl comint compile easymenu etags font-lock regexp-opt reporter speedbar tool-bar)))
+ :keywords   ("scala" "languages" "oop")
+ :homepage   "https://github.com/RayRacine/Scamacs")

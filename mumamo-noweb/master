@@ -1,0 +1,12 @@
+(:summary    "MuMaMo noweb goo"
+ :created    "2008"
+ :updated    "2008"
+ :authors    (("Jason Riedy" . "jason@acm.org"))
+ :maintainer ("Jason Riedy" . "jason@acm.org")
+ :provided   (mumamo-noweb)
+ :required   ((("nxhtml" mumamo)))
+ :keywords   ("mumamo" "noweb")
+ :commentary "\
+I honestly do not understand the complications in the MuMaMo helper
+routines, so I don't use them.  Intervals appear to be left-closed
+and right-open, so start <= pos < end for all chunks.")

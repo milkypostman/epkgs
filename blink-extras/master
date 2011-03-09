@@ -1,0 +1,4 @@
+(:updated    "19940727"
+ :license    "GPL-2"
+ :provided   (blink-extras)
+ :required   (((nil blink-paren))))

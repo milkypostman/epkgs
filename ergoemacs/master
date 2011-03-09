@@ -1,0 +1,8 @@
+(:repository (svn . "http://ergoemacs.googlecode.com/svn")
+ :created    "2007"
+ :updated    "2009"
+ :license    "GPL-2"
+ :provided   (ergoemacs-mode)
+ :keywords   ("qwerty" "dvorak" "keybinding" "ergonomic" "colemak")
+ :homepage   "http://ergoemacs.org/"
+ :wikipage   "http://www.emacswiki.org/ergoemacs")

@@ -1,0 +1,4 @@
+(:repository (git . "https://github.com/tsgates/pylookup.git")
+ :provided   (pylookup)
+ :required   ((("emacs" browse-url cl ido simple)))
+ :homepage   "http://taesoo.org/Opensource/Pylookup")

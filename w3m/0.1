@@ -1,0 +1,30 @@
+(:repository (cvs . ":pserver:anonymous@cvs.namazu.org:/storage/cvsroot")
+ :created    "2000"
+ :updated    "2000"
+ :license    "GPL-2"
+ :authors    (("TSUCHIYA Masatoshi" . "tsuchiya@pine.kuee.kyoto-u.ac.jp")
+	      ("Shun-ichi GOTO" . "gotoh@taiyo.co.jp")
+	      ("Satoru Takabayashi" . "satoru-t@is.aist-nara.ac.jp")
+	      ("Hideyuki SHIRAI" . "shirai@meadowy.org"))
+ :maintainer ("TSUCHIYA Masatoshi" . "tsuchiya@pine.kuee.kyoto-u.ac.jp")
+ :provided   (w3m)
+ :required   ((("apel" pcustom poe poem)
+	       ("emacs" browse-url rfc2368)
+	       ("w3" w3)))
+ :keywords   ("www" "hypermedia")
+ :homepage   "http://emacs-w3m.namazu.org/"
+ :wikipage   "http://www.emacswiki.org/emacs-w3m"
+ :commentary "\
+w3m.el is the interface program of w3m on Emacs.  For more detail
+about w3m, see:
+
+   http://ei5nazha.yz.yamagata-u.ac.jp/~aito/w3m/
+
+
+How to install:
+
+Please put this file to appropriate directory, and if you want
+byte-compile it.  And add following lisp expressions to your
+~/.emacs.
+
+    (autoload 'w3m \"w3m\" \"Interface for w3m on Emacs.\" t)")

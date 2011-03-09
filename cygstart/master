@@ -1,0 +1,14 @@
+(:summary    "Run Windows application associated with a file"
+ :repository (git . "https://github.com/lieutar/cygstart.el.git")
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("U-TreeFrog\\lieutar" . "lieutar@treefrog"))
+ :maintainer ("U-TreeFrog\\lieutar" . "lieutar@treefrog")
+ :provided   (cygstart)
+ :keywords   ("mouse" "dired" "explorer")
+ :homepage   "https://github.com/lieutar/cygstart.el"
+ :commentary "\
+Original source code is:
+      w32-browser.el (C) 2004-2010, Drew Adame, all rights reserved.
+      http://www.emacswiki.org/cgi-bin/wiki/w32-browser.el")

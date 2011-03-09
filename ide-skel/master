@@ -1,0 +1,217 @@
+(:summary    "IDE skeleton for Emacs Lisp hackers"
+ :created    "20080424"
+ :updated    "2008"
+ :license    "GPL-2"
+ :provided   (ide-skel)
+ :required   ((("emacs" cl complete imenu info mwheel recentf tree-widget)
+	       ("emhacks" tabbar)))
+ :keywords   ("ide" "speedbar")
+ :homepage   "http://www.emacswiki.org/IdeSkel"
+ :wikipage   "http://www.emacswiki.org/IdeSkel"
+ :commentary "\
+Ide-skel is a skeleton (or framework) of IDE for Emacs users.
+  Like Eclipse, it can be used as is with some predefined plugins
+  on board, but is designed to extend by Emacs Lisp programmers to
+  suite their own needs.  Emacs 22 only, tested under Linux only
+  (under Windows ide-skel.el will rather not work, sorry).
+
+** Configuration in .emacs
+
+    (require 'ide-skel)
+
+    ;; optional, but useful - see Emacs Manual
+    (partial-completion-mode)
+    (icomplete-mode)
+
+    ;; for convenience
+    (global-set-key [f4] 'ide-skel-proj-find-files-by-regexp)
+    (global-set-key [f5] 'ide-skel-proj-grep-files-by-regexp)
+    (global-set-key [f10] 'ide-skel-toggle-left-view-window)
+    (global-set-key [f11] 'ide-skel-toggle-bottom-view-window)
+    (global-set-key [f12] 'ide-skel-toggle-right-view-window)
+    (global-set-key [C-next] 'tabbar-backward)
+    (global-set-key [C-prior]  'tabbar-forward)
+
+** Side view windows
+
+  Left and right view windows are \"speedbars\" - they are embedded
+  inside main Emacs frame and can be open/closed independently.
+  Right view window summarizes information related to the current
+  editor buffer - it can present content of such buffer in another
+  way (eg. Imenu tree), or show an extra panel for buffer major
+  mode operations (see SQL*Plus mode plugin example).  Left view
+  window contains buffers such like buffer list (yet another,
+  popular way for switching buffers), filesystem/project browser
+  for easy navigation, or Info documentation browser,
+  or... whatever you wish.
+
+  Side view windows are special - they cannot take focus and we can
+  operate on it only with mouse (!).  Some window operations like
+  delete-other-windows (C-x 1) are slighty modified to treat side
+  view windows specially.
+
+** Bottom view window
+
+  Let auxiliary buffers (*shell*, *Messages*, *Help*, *Compilation*
+  and another buffers with '*' in name) pop up/show in bottom
+  window only.  BUT, if you want, you can open any buffer in any
+  window (except side windows) as usual - that's only nice
+  heuristic, not pressure.
+
+  Bottom view window remembers last selected buffer within it, so
+  if you close this window and open later, it will show you buffer
+  which you expect.
+
+** Tabbars
+
+  Ide-skel uses (great) tabbar.el package with some modifications:
+
+    - there is no division into major mode groups (like in
+      Eclipse),
+
+    - side view windows, bottom view window and editor windows have
+      different tabsets,
+
+    - you can scroll tabs with mouse wheel,
+
+    - the Home button in window left corner acts as window menu
+      (you can add your items to it in your plugin),
+
+    - mouse-3 click on tab kills its buffer
+
+* Project
+
+  Here, \"project\" means a directory tree checked out from CVS or
+  SVN.  One project can contain source files of many types.  When
+  we edit any project file, Emacs can easily find the project root
+  directory simply by looking at filesystem.
+
+  So, we can execute many commands (grep, find, replace) on all
+  project source files or on all project source files of the same
+  type as file edited now (see Project menu).  Ide-skel package
+  also automatically configures partial-completion-mode for project
+  edited now.
+
+  There is no configuration for concrete projects needed (and
+  that's great advantage in my opinion).
+
+If you find this package useful, send me a postcard to address:
+
+ Peter Karpiuk
+ Scott Tiger S.A.
+ ul. Gawinskiego 8
+ 01-645 Warsaw
+ Poland
+
+
+* Notes for Emacs Lisp hackers
+
+  Each side window buffer should have:
+
+    - name that begins with space,
+
+    - tab label (string) - buffer local IDE-SKEL-TABBAR-TAB-LABEL
+      variable,
+
+    - keep condition function (IDE-SKEL-KEEP-CONDITION-FUNCTION),
+
+    - menu (IDE-SKEL-TABBAR-MENU-FUNCTION) - optional.
+
+  Side window buffer is enabled (can be choosed by mouse click on
+  his tab) if it has buffer local variable IDE-SKEL-TABBAR-ENABLED
+  set to non-nil.  There may be many live side window buffers, but
+  unavailable in current context (\"context\" means buffer edited in
+  editor window) if they have IDE-SKEL-TABBAR-ENABLED set to nil.
+
+  Hiding side window operation disables all window buffers.  \"Show
+  side window\" event handler should enable (and maybe create) side
+  window buffers based on current context.  When you switch to
+  other buffer in editor window (switching the context), all side
+  window buffers for which keep condition function returns nil are
+  disabled.  Handlers for EDITOR-BUFFER-CHANGED event should enable
+  (and maybe create) additional buffers based on current context.
+
+** Side window events
+
+  Event handlers should be implemented as an abnormal hook:
+
+    ide-skel-side-view-window-functions
+
+  It should be function with parameters
+
+    - side: symbol LEFT or RIGHT
+
+    - event-type: symbol for event:
+      SHOW/EDITOR-BUFFER-CHANGED/TAB-CHANGE/HIDE
+
+    - list (optional): event parameters specific for event type.
+
+  Events are send only for opened (existing and visible) windows.
+
+  Hook functions are called in order until one of them returns
+  non-nil.
+
+*** Show
+
+  After side window open.  Event handler should enable (and maybe
+  create) buffers appropriate for current context.  After event
+  handle, if no side window buffer is selected, there will be
+  selected one of them.  No parameters.
+
+*** Editor Buffer Changed
+
+  After editor buffer changed (aka context switch).
+
+  Before event, buffers for which keep condition function returns
+  nil, are disabled.  Event handler should enable (and maybe
+  create) buffers appropriate for new context.
+
+  Parameters: before-buffer current-buffer.
+
+*** Tab Change
+
+  Before side window buffer change (as result of mouse click on tab
+  or ide-skel-side-window-switch-to-buffer function call).
+  Parameters: current-buffer new-buffer
+
+*** Hide
+
+  Before side window hiding.  After event handling, all side window
+  buffers are disabled.
+
+*** Functions & vars
+
+  In plugins, you can use variables with self-descriptive names:
+
+  ide-skel-selected-frame
+  ide-skel-current-editor-window
+  ide-skel-current-editor-buffer
+  ide-skel-current-left-view-window
+  ide-skel-current-right-view-window
+
+  Moreover, when user selects another buffer to edit, the
+
+    ide-skel-editor-buffer-changed-hook
+
+  hook is run.  It is similar to \"editor buffer changed\" event, but
+  has no parameters and is run even when all side windows are
+  closed.
+
+**** Functions
+
+  ide-skel-side-window-switch-to-buffer (side-window buffer)
+    Switch buffer in side window (please use only this function for
+    this operation).
+
+  ide-skel-get-side-view-buffer-create (name side-sym tab-label
+     help-string keep-condition-function)
+    Create new buffer for side view window.  NAME should begin with
+    space, side sym should be LEFT or RIGHT.
+
+**** Local variables in side window buffers
+
+  ide-skel-tabbar-tab-label
+  ide-skel-tabbar-tab-help-string
+  ide-skel-tabbar-menu-function
+  ide-skel-tabbar-enabled
+  ide-skel-keep-condition-function")

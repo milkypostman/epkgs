@@ -1,0 +1,3 @@
+(:summary    "Create and manage multiple shells within Emacs"
+ :license    "GPL-3"
+ :provided   (multi-eshell))

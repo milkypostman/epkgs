@@ -1,0 +1,16 @@
+(:summary    "Client library for the Wordnik API"
+ :repository (git . "https://github.com/hober/wordnik-el.git")
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Edward O'Connor" . "hober0@gmail.com"))
+ :maintainer ("Edward O'Connor" . "hober0@gmail.com")
+ :provided   (wordnik)
+ :required   ((("emacs" json url)))
+ :keywords   ("convenience")
+ :homepage   "http://edward.oconnor.cx/elisp/"
+ :commentary "\
+Emacs client library for Wordnik's API.
+
+This currently only handles the public API methods; auth and the
+private methods will come at a later date.")

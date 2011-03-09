@@ -1,0 +1,17 @@
+(:summary    "Highlight last visible line when scrolling"
+ :created    "2007"
+ :updated    "20030127"
+ :license    "GPL-2"
+ :provided   (highlight-context-line)
+ :required   ((("emacs" advice)))
+ :keywords   ("services" "user")
+ :homepage   "http://www.skamphausen.de/cgi-bin/ska/highlight-context-line"
+ :commentary "\
+HighlightContextLine on the Web:
+Main page:
+http://www.skamphausen.de/cgi-bin/ska/highlight-context-line
+
+This piece of code highlights the last visible line when scrolling
+full windows. It was inspired by the postscript viewer gv which
+does a similar thing using a line across the screen It honours the
+variable next-screen-context-lines.")

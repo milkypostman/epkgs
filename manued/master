@@ -1,0 +1,9 @@
+(:updated    "20001020"
+ :license    "GPL"
+ :authors    (("YAMAUCHI")
+	      ("Hitoshi »³Æâ ÀÆ" . "yamauchi@mpi-sb.mpg.de"))
+ :maintainer ("YAMAUCHI")
+ :provided   (manued)
+ :required   ((("emacs" easymenu)))
+ :keywords   ("proofreading" "docs")
+ :homepage   "http://www.mpi-inf.mpg.de/~hitoshi/otherprojects/manued/index.shtml")

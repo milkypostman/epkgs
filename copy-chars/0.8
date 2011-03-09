@@ -1,0 +1,29 @@
+(:summary    "Automated typing by copying characters"
+ :created    "2001"
+ :updated    "20011028"
+ :license    "GPL-2"
+ :authors    (("Riku Saikkonen" . "riku.saikkonen@hut.fi"))
+ :maintainer ("Riku Saikkonen" . "riku.saikkonen@hut.fi")
+ :provided   (copy-chars)
+ :required   ((("emacs" easy-mmode)))
+ :keywords   ("abbrev" "convenience")
+ :homepage   "http://users.tkk.fi/u/rsaikkon/software/elisp/"
+ :commentary "\
+This package adds support for copying data from a buffer to
+another a few characters at a time. It is meant mostly as an
+amusement to impress your friends with (\"wow, do you really type
+that fast?\").
+
+To use it, load this package and:
+1. Visit a buffer with some data that you want to copy.
+   Go to the start of your data and execute the command
+   M-x copychars-start-copy-at-point.
+2. Go somewhere where you want to copy data (e.g., create an empty
+   file). Run M-x copychars-mode, and start pressing the function
+   keys f5, f6, f7 and f8, with or without Shift. Repeatedly pressing
+   f5 to f8 looks kind of like you're typing the characters yourself.
+
+See the description for `copychars-mode' for more information.
+
+You may want to set `copychars-default-regexp' to the value in its
+description, to make the keys always jump over whitespace.")

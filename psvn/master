@@ -1,0 +1,12 @@
+(:summary    "Subversion interface for emacs"
+ :created    "2009"
+ :updated    "20091029"
+ :license    "GPL-2"
+ :authors    (("Stefan Reichoer" . "stefan@xsteve.at"))
+ :maintainer ("Stefan Reichoer" . "stefan@xsteve.at")
+ :provided   (psvn)
+ :required   ((("emacs" cl diff-mode dired easymenu ediff-util ediff-wind elp log-edit overlay pp vc-hooks)
+	       (nil cl-macs))
+	      (("emacs" mailcap)))
+ :homepage   "http://www.xsteve.at/prg/vc_svn/"
+ :wikipage   "http://www.emacswiki.org/SvnStatusMode")

@@ -1,0 +1,14 @@
+(:summary    "Navigator for 2ch for Emacsen"
+ :repository (git . "https://github.com/naota/navi2ch.git")
+ :created    "2000"
+ :updated    "2008"
+ :license    "GPL-2"
+ :authors    (("Taiki SUGAWARA" . "taiki@users.sourceforge.net"))
+ :maintainer ("Taiki SUGAWARA" . "taiki@users.sourceforge.net")
+ :provided   (gikope izonmoji-mode navi2ch navi2ch-article navi2ch-articles navi2ch-auto-modify navi2ch-be2ch navi2ch-board navi2ch-board-misc navi2ch-bookmark navi2ch-config navi2ch-directory navi2ch-e21 navi2ch-face navi2ch-futaba navi2ch-head navi2ch-history navi2ch-http-date navi2ch-jbbs-net navi2ch-jbbs-shitaraba navi2ch-js-livedoor-move navi2ch-list navi2ch-localfile navi2ch-logo navi2ch-machibbs navi2ch-megabbs navi2ch-message navi2ch-migemo navi2ch-mona navi2ch-multibbs navi2ch-net navi2ch-oyster navi2ch-p2 navi2ch-pizaunix navi2ch-popup-article navi2ch-search navi2ch-spamfilter navi2ch-splash navi2ch-thumbnail navi2ch-track-mouse navi2ch-util navi2ch-vars navi2ch-version navi2ch-xmas)
+ :required   ((("emacs" base64 browse-url ccl cl regexp-opt timer timezone wid-edit widget)
+	       ("migemo" migemo)
+	       ("w3m" w3m)
+	       (nil bitmap spamfilter)))
+ :keywords   ("network")
+ :homepage   "https://github.com/naota/navi2ch")

@@ -1,0 +1,37 @@
+(:summary    "Interactively toggle highlighting of lines"
+ :created    "2003"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("Benjamin Rutt" . "brutt@bloomington.in.us"))
+ :maintainer ("Benjamin Rutt" . "brutt@bloomington.in.us")
+ :provided   (hll)
+ :homepage   "http://www.bloomington.in.us/~brutt/emacs.html"
+ :commentary "\
+This package provides interactive highlighting of lines, useful if
+you are viewing lines of data in a buffer with a group of people
+and want to refer to specific lines.  The easiest function to start
+with is `hll-toggle-line', which toggles whether the current line
+is highlighted or not.  There is also `hll-highlight-line' and
+`hll-unhighlight-line' which do the obvious.  There is also
+`hll-unhighlight-buffer' which turns off hll highlighting for the
+entire buffer.
+
+Navigation between highlighted lines is provided; see
+`hll-next-highlight' and `hll-prev-highlight'.
+
+To use, place the file in your load-path and add
+
+(require 'hll)
+
+to your ~/.emacs.
+
+This package is most useful with some keybindings.  I use the
+following:
+
+(global-set-key (kbd \"C-c h h\") 'hll-toggle-line)
+(global-set-key (kbd \"C-c h p\") 'hll-prev-highlight)
+(global-set-key (kbd \"C-c h n\") 'hll-next-highlight)
+(global-set-key (kbd \"C-c h u\") 'hll-unhighlight-buffer)
+
+Note:  this package probably only works on GNU Emacs.  Untested on
+XEmacs, patches accepted.")

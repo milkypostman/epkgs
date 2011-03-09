@@ -1,0 +1,14 @@
+(:summary    "Html parser for Emacs"
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-3"
+ :authors    (("khiker" . "khiker.mail+elisp@gmail.com"))
+ :maintainer ("khiker" . "khiker.mail+elisp@gmail.com")
+ :provided   (html-parse)
+ :required   ((("xml-parse" xml-parse)))
+ :keywords   ("html" "parse")
+ :commentary "\
+parse HTML(XHTML) to S-expression.
+
+This library requires xml-parse.el.
+- ftp://ftp.newartisans.com/pub/emacs/xml-parse.el")

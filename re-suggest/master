@@ -1,0 +1,33 @@
+(:summary    "[R]egular [E]xpression-based [C]ommand [S]uggester"
+ :repository (git . "https://github.com/tlh/re-suggest.el.git")
+ :created    "20100729"
+ :updated    "2010"
+ :license    "GPL-2"
+ :authors    (("tlh" . "thunkout@gmail.com"))
+ :maintainer ("tlh" . "thunkout@gmail.com")
+ :provided   (recs)
+ :required   ((("emacs" cl)))
+ :keywords   ("command" "suggestion" "regexp")
+ :homepage   "https://github.com/tlh/re-suggest.el"
+ :wikipage   "http://www.emacswiki.org/ReSuggest"
+ :commentary "\
+Say you discover a new, more efficient sequence of commands to do
+something.  You want to start using it, but your muscle memory
+continues to do it the old way.  Before long you forget the new
+way, and continue doing things the old way.  With recs, Emacs can
+recognize the old pattern when you use it, and suggest the new the
+pattern, training you to be a better Emacs user.
+
+recs.el is a simple command suggestion minor-mode.  It works by
+recording the names of the commands you enter into a ring-like
+string which is then matched against a list of command-pattern
+regexps.  When a match is detected recs suggests a more efficient
+way of doing things.  recs looks strictly at sequences of commands,
+not sequences of keystrokes, avoiding complications resulting from
+different keybindings in different modes.
+
+The advantage of this approach is that we can match any command
+sequence that a regexp is powerful enough to match.
+
+The disadvantage of this approach is that we can only match command
+sequences that a regexp is powerful enough to match.")

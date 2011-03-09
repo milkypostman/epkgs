@@ -1,0 +1,26 @@
+(:summary    "Manage your todos in an extremely easy way!"
+ :created    "2007"
+ :updated    "2009"
+ :license    "GPL-3"
+ :authors    (("William Xu" . "william.xwl@gmail.com"))
+ :maintainer ("William Xu" . "william.xwl@gmail.com")
+ :provided   (easy-todo)
+ :homepage   "http://xwl.appspot.com/"
+ :commentary "\
+`easy-todo-mode' is a very easy todo manager. It simply adds some
+highlighted keywords, some special prefix flags(for indicating
+different status of todo items) upon `text-mode'.
+
+It supports four different prefix flags, namely, \"^> \"(ongoing),
+\"^- \"(todo), \"^| \"(unfinished), \"^o \"(done). Here's a screenshot:
+
+,----
+| > (work) Check compress() function
+| - (easy-todo) Sort by catagory/tag?
+| | (emms) share music with iTunes user?
+| o (misc) take a cup of tea
+`----
+
+Put this file into your load-path and the following into your
+~/.emacs:
+          (autoload 'easy-todo-mode \"easy-todo\")")

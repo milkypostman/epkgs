@@ -1,0 +1,9 @@
+(:summary    "Packaging & system definition for Emacs"
+ :repository (bzr . "http://bazaar.launchpad.net/~egh/pases/trunk/")
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Erik Hetzner" . "egh@e6h.org"))
+ :maintainer ("Erik Hetzner" . "egh@e6h.org")
+ :homepage   "https://launchpad.net/pases"
+ :wikipage   "http://www.emacswiki.org/Pases")

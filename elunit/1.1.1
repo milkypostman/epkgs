@@ -1,0 +1,30 @@
+(:summary    "Emacs Lisp Unit Testing framework"
+ :created    "20060817"
+ :updated    "20071116"
+ :license    "GPL-3"
+ :authors    (("Phil Hagelberg" . "technomancy@gmail.com"))
+ :maintainer ("Phil Hagelberg" . "technomancy@gmail.com")
+ :provided   (elunit)
+ :required   ((("emacs" cl)))
+ :keywords   ("unit" "test" "tdd")
+ :homepage   "http://www.emacswiki.org/ElUnit"
+ :wikipage   "http://www.emacswiki.org/ElUnit"
+ :commentary "\
+Inspired by regress.el by Wayne Mesard and Tom Breton, Test::Unit
+by Nathaniel Talbott, and xUnit by Kent Beck
+
+ElUnit exists to accomodate test-driven development of Emacs Lisp
+programs.  Tests are divided up into suites.  Each test makes a
+number of assertions to ensure that things are going according to
+expected.
+
+Tests are divided into suites for the purpose of hierarchical
+structure and hooks.  The hierarchy allows suites to belong to
+suites, in essence creating test trees.  The hooks are meant to
+allow for extra setup that happens once per test, for both before
+and after it runs.
+
+You may use Emacs' built-in `assert' function for checking such
+things, but the assertions at the bottom of this file provide much
+better reporting if you use them.  Using `assert-that' is preferred
+over built-in `assert'.")

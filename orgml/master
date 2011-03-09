@@ -1,0 +1,44 @@
+(:summary    "Export org mode files as xml"
+ :repository (git . "https://github.com/dhruvbansal/orgml.git")
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-2"
+ :authors    (("Dhruv Bansal" . "dhruv@ph.utexas.edu"))
+ :maintainer ("Dhruv Bansal" . "dhruv@ph.utexas.edu")
+ :provided   (orgml orgml-common orgml-content orgml-heading orgml-plain-lists orgml-properties orgml-text)
+ :keywords   ("orgmode" "xml")
+ :homepage   "https://github.com/dhruvbansal/orgml"
+ :commentary "\
+OrgML is a package to export Org Mode files to XML.  The XML file
+produced from an Org Mode file contains all the information in the
+original file without any of the quirky (but wonderful!) Org Mode
+syntax.  A section of an Org Mode file which looks like
+
+  * Top Level Heading
+  This is some text.
+  ** Subheading                    :tag1:tag2
+  This is some /italic/ text
+  ** TODO A todo item
+     DEADLINE: <2009-01-11 Sun 18:00>
+
+Would be transformed to (ignoring the preceding XML boilerplate)
+
+  <heading level=\"1\">
+    <title>Top Level Heading</title>
+    <paragraph>This is some text.</paragraph>
+    <heading level=\"2\">
+      <title>Subheading</title>
+      <tags>
+        <tag>tag1</tag>
+        <tag>tag2</tag>
+      </tags>
+      <paragraph>This is some <italics>italic</italics> text.</paragraph>
+      <headline level=\"3\" todo=\"TODO\">
+        <title>A todo item</title>
+        <deadline>2009-01-11 Sun 18:00</deadline>
+      </heading>
+    </heading>
+  </heading>
+
+The information is all there waiting to be read by some tool which
+understands XML.")

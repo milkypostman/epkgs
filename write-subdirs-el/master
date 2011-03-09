@@ -1,0 +1,110 @@
+(:summary    "Create subdirs.el files"
+ :created    "2000"
+ :updated    "2000"
+ :license    "GPL-2"
+ :authors    (("Tom Breton" . "tob@world.std.com"))
+ :maintainer ("Tom Breton" . "tob@world.std.com")
+ :keywords   ("local" "version")
+ :homepage   "http://panix.com/~tehom/"
+ :commentary "\
+This code creates subdirs.el files for directory trees.
+
+Motivation
+
+Why do that, you ask?  By way of explanation, subdirectories of
+site-lisp automatically become part of the load-path when you start
+Emacs.  That makes site-lisp an appealing place to put Elisp
+packages.
+
+But there is more subdirs.el could do for you.  For instance, it
+could set up Info-default-directory-list and autoloads.
+
+As I write this, package maintainers generally don't use
+subdirs.el.  Perhaps they mostly don't know about it.  I hope
+write-subdirs-el will help change that.
+
+I have a vision of a thousand elisp packages that require no more
+setup than being placed in site-lisp.  (And sometimes a
+command-line \"make\").  And I imagine a thousand package maintainers
+who can provide easy installation for their users with little or no
+more work then typing M-x tehom-wse-entry.
+
+Installation:
+
+Place write-subdirs-el anywhere in your load-path
+
+IMPORTANT: Replace your existing site-lisp/subdirs.el with
+new-subdirs-el.el.  That is, put site-lisp/subdirs.el somewhere
+safe and rename new-subdirs-el.el to that. If you use the old
+version and build subdirs.els with this package, some directory
+trees (those that have no Elisp code in their root directories, but
+do have Elisp in their subdirectories) will be unexpectedly omitted
+from load-path.
+
+If you can't load a subdirs.el that's not hanging off site-lisp,
+it's a known bug that's fixed by new-subdirs-el.el
+
+Customizations:
+
+If you want it to generate autoloads, customize
+tehom-wse-do-autoloads-p to t.
+
+WARNING: If the autoloads don't work, emacs won't start.  That's
+not under my control, it's up to the maintainers of the individual
+packages,
+
+Entry points:
+
+IMPORTANT: You will need to have read and write permissions to all
+the directories in question.  If not, nothing will happen.
+
+tehom-wse-do-all-dirs-in-site-lisp will tackle every single
+directory in site-lisp in one command.  You'll probably want to run
+this exactly once.
+
+tehom-wse-make-subdirs-el will make subdirs.el for any given
+directory tree.
+
+tehom-wse-entry will make a subdirs.el for a directory in your
+load-path.  It's a little more convenient than navigating your
+load-path manually.
+
+Testing
+
+This has not been easy to test.  Testing it properly requires
+dealing with a whole test directory structure.  The standard elisp
+distribution directory could perhaps be used, but mine is
+non-standard.  I could create a whole directory tree, but that's a
+lot of work just to test one part of this.  Testing it properly
+also requires starting emacs a lot of times.  I've done that to a
+degree, but obviously automated testing was out of the question.
+
+So while I've given it what testing I could, there's a bit of a
+cross-your-fingers-and-hope factor.  PLEASE inspect any subdirs.el
+it writes and if there are obvious problems, don't use it.  (ie,
+move it somewhere out of your load-path)
+
+IMPORTANT: At worst, your system can be restored to the way it was
+by restoring your old site-lisp/subdirs.el and erasing any
+subdirs.el and .nosearch files in site-lisp's subdirectories.  I
+don't think that will ever be neccessary, but I wanted to point it
+out just in case.
+
+Non-features:
+
+If a subdirectory being examined itself contains a subdirs.el, that
+directory could be handled by a call to that file, nothing more.
+NB we'd have to exclude the directory tree root from this,
+otherwise we could possibly call our file itself in an infinite
+loop.  This probably isn't worth doing, because no packages are so
+deep they would get any use out of nested subdirs.el's
+
+Changelog:
+
+Version 1.2: Provided code in new-subdirs-el.el to get around
+startup's inability to handle working from directories that aren't
+already in load-path.
+
+Version 1.1: Fixed the bug where Info-path was sometimes missed.
+Changed the output to add some appropriate local variables
+including no-update-autoloads.")

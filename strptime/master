@@ -1,0 +1,7 @@
+(:summary    "Partial implementation of POSIX date and time parsing"
+ :created    "2006"
+ :updated    "2006"
+ :provided   (strptime)
+ :required   ((("emacs" regexp-opt)))
+ :homepage   "http://www.emacswiki.org/StrPTime"
+ :wikipage   "http://www.emacswiki.org/StrPTime")

@@ -1,0 +1,47 @@
+(:summary    "Parse a sendmail-style alias file"
+ :created    "19920407"
+ :updated    "20090826"
+ :license    "GPL-2"
+ :authors    (("Roland McGrath" . "roland@frob.com")
+	      ("Noah Friedman" . "friedman@splode.com"))
+ :maintainer (nil . "friedman@splode.com")
+ :provided   (sendmail-alias)
+ :required   ((("emacs" sendmail)))
+ :keywords   ("mail" "extensions")
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
+ :commentary "\
+This file redefines `build-mail-alias' and `build-mail-abbrevs'
+functions with versions that read sendmail-style alias files (see
+aliases(5)).  It uses define-mail-{alias/abbrev}, and should work with
+either mailalias.el or mailabbrev.el.
+
+You must load this file AFTER loading mailabbrev or mailalias.
+One way to insure this always happens so to put the following in your
+.emacs:
+
+       (eval-after-load \"mailabbrev\"
+                        '(load \"sendmail-alias\"))
+
+       (eval-after-load \"mailalias\"
+                        '(load \"sendmail-alias\"))
+
+There are other caveats to be aware of as well.
+The function `mail-setup', called by `mail' in sendmail.el, has a call
+to build-mail-aliases hardwired in.  If you use mailabbrevs instead, you
+don't need to set mail-aliases also, since that means parsing a possibly
+large aliases file twice.  The recommended way to use mailabbrevs is to
+do `(add-hook 'mail-setup-hook 'mail-abbrevs-setup)'.  However, you
+cannot prevent building mail-aliases by doing anything on
+mail-setup-hook since that is called after build-mail-aliases has
+already been called.  You can, however, do the following:
+
+       (add-hook 'mail-mode-hook
+                 (lambda ()
+                   (and (boundp 'mail-setup-hook)
+                        (memq 'mail-abbrevs-setup mail-setup-hook)
+                        (setq mail-aliases nil))))
+
+This works because build-mail-aliases only rebuilds mail-aliases if it
+is set to `t'.
+This is unpleasantly warty.  mail-setup should be changed to have a hook
+for building aliases or abbrevs so that only one or the other is done.")

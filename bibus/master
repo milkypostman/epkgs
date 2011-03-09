@@ -1,0 +1,10 @@
+(:created    "2006"
+ :updated    "20060827"
+ :license    "GPL-2"
+ :authors    ((nil . "wenbinye@163.com"))
+ :maintainer (nil . "wenbinye@163.com")
+ :provided   (bibus)
+ :required   ((("emacs" cl tree-widget)
+	       ("mysql" mysql)))
+ :homepage   "http://www.emacswiki.org/Bibus"
+ :wikipage   "http://www.emacswiki.org/Bibus")

@@ -1,0 +1,28 @@
+(:summary    "Preview perl pod documentation"
+ :created    "2007"
+ :updated    "2008"
+ :license    "GPL-3"
+ :authors    (("Kevin Ryde" . "user42@zip.com.au"))
+ :maintainer ("Kevin Ryde" . "user42@zip.com.au")
+ :provided   (perl-pod-preview)
+ :required   ((("emacs" man)))
+ :keywords   ("docs")
+ :wikipage   "http://www.emacswiki.org/PerlPodPreview"
+ :commentary "\
+M-x perl-pod-preview displays a preview of Perl POD format documentation
+using \"pod2man\" and \"man\".  It can show pod inlined in perl code or in a
+separate pod file.
+
+The best feature is that when re-previewing the same file or buffer the
+existing position in the preview is preserved, so if you've just changed
+the source a little you should be still quite close to where you were in
+the preview, to see how the change has come out.
+
+cperl-mode.el has M-x cperl-pod-to-manpage which does a similar thing,
+but it goes from the disk copy of a buffer, so it can't work out of
+tar-mode members etc, and it generates a new buffer every time.
+
+Running man for the formatting is pretty unsophisticated, but it's a
+fairly deliberate choice because pod2man+man is probably how most people
+will look at your docs, so seeing what it gives is a good thing.  The
+`perl-pod-preview' docstring has some further notes.")

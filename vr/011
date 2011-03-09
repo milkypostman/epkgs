@@ -1,0 +1,6 @@
+(:repository (cvs . ":pserver:anonymous@emacs-vr-mode.cvs.sourceforge.net:/cvsroot/emacs-vr-mode")
+ :created    "1999"
+ :updated    "2003"
+ :license    "GPL-2"
+ :homepage   "http://emacs-vr-mode.sourceforge.net/"
+ :wikipage   "http://www.emacswiki.org/VrMode")

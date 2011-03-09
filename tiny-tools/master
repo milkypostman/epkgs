@@ -1,0 +1,92 @@
+(:summary    "Tiny Tools configure center"
+ :repository (git . "git://git.sv.gnu.org/emacs-tiny-tools.git")
+ :created    "2007"
+ :updated    "2007"
+ :license    "GPL-2"
+ :authors    (("Jari Aalto"))
+ :maintainer ("Jari Aalto")
+ :provided   (calist complete-menu date-parse fnexpand tiny-setup tinyadvice tinyappend tinybookmark tinybuffer tinycache tinychist tinycomment tinycompile tinycygwin tinydebian tinydesk tinydiff tinydired tinyeat tinyef tinygnus tinyhotlist tinyigrep tinyindent tinyirc tinylib tinylib-ad tinyliba tinylibb tinylibck tinylibenv tinylibid tinylibm tinylibmail tinylibmenu tinylibo tinylibt tinylibxe tinyliby tinylisp tinyload tinylock tinylpr tinymacro tinymail tinymailbox tinymy tinynbr tinypad tinypage tinypair tinypath tinyperl tinypgp tinyprocmail tinyreplace tinyrmail tinyscroll tinysearch tinytab tinytag tinytf tinyurl tinyvc tinyxreg)
+ :required   ((("efs" efs passwd)
+	       ("emacs" advice ange-ftp assoc backquote cl cl-compat compile custom dired easymenu font-lock gnus info jka-compr lisp-mnt lpr mail-utils man message outline pp rect reporter rmail sendmail thingatpt timer timezone view wid-edit)
+	       ("folding" folding)
+	       ("igrep" igrep)
+	       ("itimer" itimer)))
+ :keywords   ("extensions")
+ :homepage   "http://www.nongnu.org/emacs-tiny-tools/"
+ :wikipage   "http://www.emacswiki.org/TinyTools"
+ :commentary "\
+Preface, overview of options
+
+     This file will configure all Tiny Tool files. The alternative method
+     is to look into each package individually and to follow instructions
+     there to set up the files.
+
+     To use this file, see control function `tinypath-setup' for
+     full description. Try this:
+
+         M-x RET load-library RET tiny-setup RET
+         C-h f tinypath-setup
+         M-x tinypath-setup-display
+
+         M-x tiny-setup RET                       Default 'all setup
+
+      To setup all tools from $HOME/.emacs, use:
+
+         (load \"~/path/to/tinypath.el\")   ;; Emacs autosetup, SEE THIS!
+         (require 'tiny-setup)            ;; control center
+         (tiny-setup 'all)                ;; configure all at once.
+
+      To activate individual features:
+
+         (tiny-setup nil '(tinymy--defadvice))  ;; Add smart M-x compile
+
+     After you have loaded this file, have a look at the *Messages*
+,      (Emacs) or *Message-Log* (XEmcs) buffers, where you can find
+     messgaes from the setup procedure.
+
+     Emacs 21.x news: Windowed Emacs modeline contains new feature,
+     where you can activate and deactivate minor modes. Shoot
+     modeline with your mouse and follow message: \"Mouse-3: minor
+     mode menu\". Minor modes available here are installed to that menu.
+
+ Administration
+
+     This part should concern the maintainer only.
+
+    Autoload files
+
+     If *loaddef* files were not included in the package or if they were
+     mistakenly deleted. The tiny-setup.el startup is not possible
+     without the autoload files.
+
+     To generate autoloads recursively, call function
+     `tiny-setup-autoload-batch-update' with the ROOT
+     directory of your lisp files. The only requirement is that each
+     directory name is unique, because the generated autoload file name
+     contains directory name: *tiny-autoload-loaddefs-DIRNAME.el*
+
+    Compilation check
+
+     To check for possible leaks in code, ran the byte compilation
+     function from shell by using XEmacs compiler. The Emacs byte
+     compiler is not that good in findings all errors.
+     See function `tiny-setup-compile-kit-all'.
+
+    Profiling
+
+     To check how much time each file load would take, see function
+     `tiny-setup-test-load-time-libraries'. Here are results as of
+     2001-03-18 running Win9x/512Meg/400Mhz, Emacs 20.7, non-compiled
+     files:
+
+         Timing tinyliba,  took     2.025000 secs (autoloads)
+         Timing tinylibb,  took     0.011000 secs
+         Timing tinylibm,  took     0.977000 secs
+         Timing tinylib,   took     0.982000 secs
+         Timing tinylibxe, took     0.000000 secs
+         Timing tinylibid, took     0.006000 secs
+         Timing tinylibo,  took     0.005000 secs
+         Timing tinylibt,  took     0.011000 secs
+         total time is 4.027999997138977 seconds
+
+}}}")

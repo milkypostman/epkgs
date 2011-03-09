@@ -1,0 +1,9 @@
+(:summary    "`replace-string' and `query-replace' `anything.el' interface"
+ :repository (git . "https://github.com/k1LoW/anything-replace-string.git")
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-2"
+ :provided   (anything-replace-string)
+ :required   ((("anything" anything)
+	       ("emacs" cl)))
+ :homepage   "https://github.com/k1LoW/anything-replace-string")

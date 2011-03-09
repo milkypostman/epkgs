@@ -1,0 +1,5 @@
+(:summary    "Convert escape sequences in a file"
+ :updated    "20060125"
+ :license    "GPL-2"
+ :provided   (octal-chars)
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/natural-language/")

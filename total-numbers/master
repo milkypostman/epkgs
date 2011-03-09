@@ -1,0 +1,5 @@
+(:summary    "Add up all the numbers found in matches for a given pattern"
+ :updated    "20050812"
+ :license    "GPL-2"
+ :provided   (total-numbers)
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/misc/")

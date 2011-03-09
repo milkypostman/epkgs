@@ -1,0 +1,10 @@
+(:summary    "Send SMS messages directly from XEmacs"
+ :created    "2001"
+ :updated    "20020115"
+ :license    "GPL-2"
+ :maintainer ("Jarl Friis" . "jarl@diku.dk")
+ :provided   (esms esms-conf esms-ssp-funs)
+ :keywords   ("sms" "elisp" "esms")
+ :homepage   "http://emacs-sms.sf.net/"
+ :commentary "\
+use `tcpdump -s 4096 -w myorange.dk` while submiting a SMS via browser to hack'em")

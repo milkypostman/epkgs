@@ -1,0 +1,15 @@
+(:summary    "Caps Lock mode"
+ :created    "2002"
+ :updated    "2002"
+ :license    "GPL-2"
+ :authors    (("John Paul Wallington" . "jpw@shootybangbang.com"))
+ :maintainer ("John Paul Wallington" . "jpw@shootybangbang.com")
+ :provided   (caps-lock)
+ :keywords   ("convenience" "keyboard")
+ :homepage   "http://www.shootybangbang.com/"
+ :commentary "\
+Simulates Caps Lock.  Inspired by Hemlock on CMU Common Lisp; by
+capslock.el - a quick and dirty Emacs 19 caps-lock minor mode
+written by Eberhard Mattes; and by the deficiencies of an earlier
+effort called lockcaps, which was a little too simple-minded and
+had a crappy name.")

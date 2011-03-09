@@ -1,0 +1,8 @@
+(:repository (git . "https://github.com/tomoya/search-web.el.git")
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-2"
+ :authors    (("Tomoya Otake" . "tomoya.ton@gmail.com"))
+ :maintainer ("Tomoya Otake" . "tomoya.ton@gmail.com")
+ :provided   (search-web)
+ :homepage   "https://github.com/tomoya/search-web.el")

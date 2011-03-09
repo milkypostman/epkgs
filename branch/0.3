@@ -1,0 +1,41 @@
+(:summary    "Working with multiple branches of projects"
+ :created    "2004"
+ :updated    "2005"
+ :license    "GPL-2"
+ :authors    (("Rob Walker" . "rob@tenfoot.org.uk"))
+ :maintainer ("Rob Walker" . "rob@tenfoot.org.uk")
+ :provided   (branch)
+ :required   ((("emacs" easy-mmode easymenu)))
+ :keywords   ("branch" "ediff" "compare")
+ :homepage   "http://www.tenfoot.org.uk/emacs/modes.html#branch"
+ :commentary "\
+This minor mode assists working with multiple branches of a project.
+It provides a menu (Branch) which has entries to find or compare against the
+version of the current file in other branches.  Multiple projects are
+supported, each with different branch structures
+
+To use, first define the branches of the projects you want to use.
+This can be done using customize (M-x customize-group RET branch RET) or by
+setting the variable branch-index directly within your .emacs.
+Each project is a list containing name, a root path and branches.
+Each branch is a cons cell of name and a path relative to the root. E.g:
+ \"Project A\" in ~/work/project-A with branches:
+   \"Development\" in head,
+   \"Version 1\" in v1
+ \"Project B\" in /somedir/devel/projB with branches:
+   \"Branch 2\" in branches/2,
+   \"Branch 1\" in branches/1
+   \"Version 1.1\" in releases/1.1
+would be set with:
+(setq branch-index '((\"Project A\" \"~/work/project-A\"
+                      ((\"Development\" . \"head\")
+                       (\"Version 1\"   . \"v1\")))
+                     (\"Project B\" \"/somedir/devel/projB\"
+                      ((\"Branch 2\"    . \"branches/2\")
+                       (\"Branch 1\"    . \"branches/1\")
+                       (\"Version 1.1\" . \"releases/1.1\")))))
+
+To enable branch mode when opening a file, add branch-mode-find-file-hook
+to find-file-hook by placing the following in your .emacs:
+  (add-hook 'find-file-hooks 'branch-mode-find-file-hook)
+or call branch-mode to toggle it on or off.")

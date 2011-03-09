@@ -1,0 +1,6 @@
+(:repository (svn . "http://caml.inria.fr/svn")
+ :license    "GPL"
+ :provided   (caml caml-compat caml-emacs caml-font caml-help caml-hilit caml-types caml-xemacs camldebug inf-caml)
+ :required   ((("emacs" comint compile derived font-lock imenu info overlay shell thingatpt)))
+ :homepage   "http://caml.inria.fr/"
+ :wikipage   "http://www.emacswiki.org/CamlMode")

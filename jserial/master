@@ -1,0 +1,9 @@
+(:created    "1999"
+ :updated    "20000908"
+ :license    "GPL-2"
+ :authors    (("Phillip Lord" . "plord@hgmp.mrc.ac.uk"))
+ :maintainer ("Phillip Lord")
+ :provided   (jserial)
+ :required   ((("jdee" jde)))
+ :keywords   ("java" "tools")
+ :homepage   "http://homepages.cs.ncl.ac.uk/phillip.lord/emacs.html")

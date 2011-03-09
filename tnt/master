@@ -1,0 +1,7 @@
+(:repository (cvs . ":pserver:anonymous@tnt.cvs.sourceforge.net:/cvsroot/tnt")
+ :created    "1998"
+ :updated    "1998"
+ :license    "as-is"
+ :provided   (tnt tnt-proxy tnt-tabs toc tocstr)
+ :required   ((("emacs" cl custom)))
+ :homepage   "http://tnt.sourceforge.net/")

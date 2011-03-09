@@ -1,0 +1,12 @@
+(:summary    "Two pleasant color themes"
+ :repository (git . "https://github.com/purcell/color-theme-sanityinc.git")
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :provided   (color-theme-sanityinc)
+ :required   ((("color-theme" color-theme)))
+ :keywords   ("themes")
+ :homepage   "https://github.com/purcell/color-theme-sanityinc"
+ :commentary "\
+Here are two slightly subdued color themes that are easy on the eyes
+and cover a reasonably complete set of faces.")

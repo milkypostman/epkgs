@@ -1,0 +1,72 @@
+(:summary    "Narrow/widen on blocks of php, css, javascript"
+ :created    "2005"
+ :updated    "2005"
+ :license    "GPL-2"
+ :authors    (("Peter Heslin" . "p.j.heslin@dur.ac.uk"))
+ :maintainer ("Peter Heslin" . "p.j.heslin@dur.ac.uk")
+ :provided   (html-script)
+ :required   ((("emacs" cl)))
+ :homepage   "http://www.dur.ac.uk/p.j.heslin/Software/Emacs/"
+ :wikipage   "http://www.emacswiki.org/HtmlScript"
+ :commentary "\
+When using html-mode or nxml-mode to edit (X)HTML, this file
+enables you to narrow the visible buffer to show just a
+php/javascript/visual basic script block, or a css style block, and
+then to switch from html-mode or nxml-mode to the appropriate mode
+for that block.  When finished editing that block, it enable you
+easily to show the whole buffer and switch back to the original
+mode again.
+
+The user interface consists of a single keystroke: by default, F12.
+To change it, customize the value of 'html-script-key.  In html-mode
+or nxml-mode, this key looks to see if the cursor is inside a
+script/style block, and if it is, it narrows the buffer to that
+block and switches to the appropriate mode.  Hit the same key again
+to go back to editing the whole file in the original mode.
+
+This file used to be called nxml-script.el, when it only supported
+nxml-mode; now it has been completely rewritten and made a bit more
+general, so it can be used with any major mode for editing (X)HTML.
+
+The original idea was taken from html-helper-mode.el
+
+Installation:
+
+To install, put this file in your load-path, and require it via
+your .emacs.
+
+ (require 'html-script)
+
+There are various customizations available, including a list of
+modes in which to install html-script (defaults to html-mode and
+nxml-mode). 
+
+You also need to have the relevant autoloads set up for the script
+modes you want to use, like so:
+
+ (autoload 'php-mode \"php-mode\" \"PHP mode\" t)
+
+Supported major modes for script/style blocks include php-mode,
+css-mode, javascript-generic-mode, jde-mode, visual-basic-mode.
+
+You might also need to tell emacs to open .php, .jsp and such files
+in html-mode or nxml-mode, like so:
+
+ (setq auto-mode-alist (cons '(\"\\\\.php[34]?$\" . nxml-mode) auto-mode-alist))
+
+BUGS:
+
+I regularly use only CSS and PHP, very occasionally Javascript, and
+Visual Basic not at all, and so the code for these last two has not
+been tested.
+
+Changes:
+
+1.0 First public release of nxml-script.el
+
+2.0 Changed name to html-script.el and completely rewritten.
+Removed 'nxml-script-function and 'nxml-script-region-function, as
+too confusing.  Various user customization variables have changed.
+
+2.1 Bugfix for javascript and vbscript and added ecmascript mode --
+thanks to Mark Takacs.")

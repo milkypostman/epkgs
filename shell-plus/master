@@ -1,0 +1,4 @@
+(:summary    "Extra bits for talking to shells"
+ :updated    "20060424"
+ :license    "GPL-2"
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/misc/")

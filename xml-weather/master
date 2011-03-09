@@ -1,0 +1,67 @@
+(:summary    "Get xml-weather infos in emacs. "
+ :repository (hg . "http://mercurial.intuxication.org/hg/xml-weather")
+ :created    "200946"
+ :updated    "2009"
+ :license    "GPL-3"
+ :authors    (("Thierry Volpiatto"))
+ :maintainer ("Thierry Volpiatto")
+ :provided   (xml-weather)
+ :required   ((("emacs" cl derived url xml)))
+ :homepage   "http://mercurial.intuxication.org/hg/xml-weather"
+ :commentary "\
+Install:
+=======
+
+1)
+To obtain the feed, you must first register with weather.com[1] to obtain a license key.
+The registration is free but mandatory.
+Once you've registered, you'll receive a confirmation email and a link to the software developer's kit.
+Included in the kit is a comprehensive user's guide, numerous icons, and instructions (and restrictions)
+on use of The Weather Channel logos.
+[1]http://www.weather.com/services/xmloap.html
+
+2)
+Once you have your Partner ID and License Key, you have two ways to set them up:
+
+A) The bad way:
+   Add to .emacs:
+   (setq xml-weather-login \"your Partner ID\")
+   (setq xml-weather-key \"your License Key\")
+
+B) The good way:
+   Be sure to require `auth-sources' and set it up correctly.
+   Add to your ~/.authinfo file this line:(change login and pwd)
+   machine xoap.weather.com port http login <Partner ID> password <License Key>
+
+3) Add to .emacs (be sure xml-weather.el is in your load-path):
+   (require 'xml-weather)
+
+4) (Facultative) Get the icons set from the link to the software developer's kit
+   you will find in your email.
+   Put the icons in the directory of your choice and set it in your .emacs:
+   (setq xml-weather-default-icons-directory \"path/to/your/icons/31x31\")
+   NOTE: I use the 31x31 directory but you can choose bigger icons if you want.
+         If `xml-weather-default-icons-directory' is nil or doesn't exist,
+         your builtin will be displayed with text only.
+
+5) (Facultative) Get the moon icons set:
+   http://mercurial.intuxication.org/hg/xml-weather/file/66f18bcb2ed8/moon-icons2
+   And
+   (setq xml-weather-moon-icons-directory \"Path/to/moon/icons/31X31\")
+   NOTE: If `xml-weather-moon-icons-directory' is not found, an empty image will be
+   displayed.
+
+Usage:
+=====
+M-x xml-weather-today-at (you will have a button for forecast)
+M-x xml-weather-forecast-at (go straight to forecast)
+In these two functions you will have two prompt:
+One (e.g CityName) where you enter the name of the place where you want meteo
+and another where you will have completion for all the possible city names
+xml-weather know.(Hit TAB ==> must match).
+xml-weather.el provide a ticker that show a builtin for current conditions
+all the `xml-weather-timer-delay' seconds.
+You will have to set your current location with `xml-weather-default-id'.
+You can fetch it with M-x xml-weather-show-id.
+Run the ticker with M-x xml-weather-run-ticker
+Stop timer with M-x xml-weather-ticker-cancel-timer.")

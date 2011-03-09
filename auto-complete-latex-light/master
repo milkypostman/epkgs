@@ -1,0 +1,30 @@
+(:summary    "An abbreviated version of the auto-complete-latex"
+ :repository (git . "https://github.com/tequilasunset/auto-complete-latex-light.git")
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("tequilasunset" . "tequilasunset.mac@gmail.com"))
+ :maintainer ("tequilasunset" . "tequilasunset.mac@gmail.com")
+ :provided   (auto-complete-latex-light)
+ :required   ((("auto-complete" auto-complete)
+	       ("emacs" cl)))
+ :keywords   ("latex" "completion")
+ :homepage   "https://github.com/tequilasunset/auto-complete-latex-light"
+ :commentary "\
+Last year, I wrote the auto-complete-latex for completing the
+latex keywords. It had many useful functions, but in some situations,
+it degraded PC's performance. So I rewrote a simple version of it.
+
+This program provides the two sources for auto-complete-mode
+under the modes for latex. Provided sources are below:
+
+`ac-source-latex-commands-in-same-mode-buffers',
+`ac-source-latex-dictionary'.
+
+Note that this version is not compatible with auto-complete-latex.
+If you want to use all functions, please try the original version
+<https://bitbucket.org/tequilasunset/auto-complete-latex>.
+
+Requirements:
+
+auto-complete-mode - <http://github.com/m2ym/auto-complete>")

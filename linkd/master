@@ -1,0 +1,54 @@
+(:summary    "Make hypertext with active links in any buffer"
+ :created    "20080314"
+ :updated    "20100307"
+ :license    "GPL-3"
+ :authors    (("David O'Toole" . "dto@gnu.org")
+	      (nil . "eduardoochs@gmail.com"))
+ :maintainer ("Shaun Johnson" . "shaun@slugfest.demon.co.uk")
+ :provided   (linkd)
+ :required   ((("emacs" cl easymenu))
+	      ((nil htmlize)))
+ :keywords   ("hypermedia" "help")
+ :homepage   "http://www.emacswiki.org/LinkdMode"
+ :wikipage   "http://www.emacswiki.org/LinkdMode"
+ :commentary "\
+Make hypertext with active links in any buffer
+
+
+(@* \"Overview\") ----------------------------------------------------
+
+ Linkd-mode is a major mode that automatically recognizes and
+ processes certain S-expressions, called \"links\", embedded in plain
+ text files.  Links may be followed by invoking certain interactive
+ functions when point is on the link text.  Links may also be
+ interpreted as marking up the surrounding text.  Different types
+ of links have different behaviors when followed, and they may have
+ different interpretations as markup.
+
+ With Linkd mode, you can do the following:
+ * Embed hyperlinks to files, webpages, or documentation into
+   any type of text file in any major mode.
+ * Delimit and name regions of text (\"blocks\") in these text files.
+   See (@> \"Stars\")
+ * Extract and send blocks to other programs for processing.
+   See (@> \"Processing blocks\")
+ * Identify and mark locations and concepts in source code.
+   See (@> \"Tags\")
+ * Embed active data objects (\"datablocks\") into text files.
+   See (@> \"Datablocks\")
+ * Convert Lisp source-code listings to LaTeX for publication.
+   See (@> \"Exporting to LaTeX\")
+ * Define new link behaviors.
+
+ For detailed information about using linkd-mode, see the online
+ manual: http://dto.github.com/notebook/linkd.html.
+
+
+(@* \"TODO\") --------------------------------------------------------
+
+ * Should have a proper history of link navigation, like in Info,
+   for forward and backward link following, instead of just saving
+   the previous location.
+
+ * Should have a link follow behavior that takes you from @> to the
+   corresponding @*, not just to the next link (@* or @>).")

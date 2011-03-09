@@ -1,0 +1,52 @@
+(:summary    "Operate on buffers like dired"
+ :created    "20000908"
+ :updated    "20011107"
+ :license    "GPL-2"
+ :authors    (("Colin Walters" . "walters@verbum.org"))
+ :maintainer ("Colin Walters" . "walters@verbum.org")
+ :provided   (ibuffer)
+ :required   ((("emacs" cl derived easymenu font-lock lmenu overlay)))
+ :keywords   ("buffer" "convenience")
+ :homepage   "http://www.shootybangbang.com/"
+ :wikipage   "http://www.emacswiki.org/IbufferMode"
+ :commentary "\
+ibuffer.el is an advanced replacement for the `buffer-menu' which
+is normally distributed with Emacs.  Its interface is intended to
+be analogous to that of Dired.
+
+Place this file somewhere in your `load-path', and add:
+
+(require 'ibuffer)
+
+to your ~/.emacs file.  After that, you should be able to type 'M-x
+ibuffer' to get started.  'h' will give a brief usage description.
+
+Note that if you want to get the best performance out of ibuffer
+(especially if you usually have more than 50 buffers open), you
+should byte-compile it.  Type 'M-x emacs-lisp-byte-compile' when
+you have this file open, and a compiled version will be written in
+the same directory.
+
+A few tips on usage:
+
+* If you use global-font-lock-mode, and want fontification in
+  ibuffer, be sure to say
+
+(global-font-lock-mode 1)
+
+ before you do (require 'ibuffer) in your ~/.emacs file.  For more
+ precise control over highlighting, customize the variable
+ `ibuffer-fontification-level'.
+
+Just for fun, here is the author's favorite `ibuffer-formats'
+configuration:
+
+(setq ibuffer-formats '((mark modified read-only \" \" (name 16 16) \" \"
+                        (size 6 -1 :right) \" \" (mode 16 16 :center)
+                         \" \" (process 8 -1) \" \" filename)
+                    	   (mark \" \" (name 16 -1) \" \" filename))
+      ibuffer-elide-long-columns t
+      ibuffer-eliding-string \"&\")
+
+Remember, you can switch between formats using
+`ibuffer-switch-format', bound to ` by default.")

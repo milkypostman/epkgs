@@ -1,0 +1,8 @@
+(:summary    "W32 specific.  execute any of the 'Explorer verbs' available for a file or directory"
+ :created    "2002"
+ :updated    "2002"
+ :license    "GPL-2"
+ :authors    (("Patrick Anderson" . "patware@freeshell.org"))
+ :maintainer ("Patrick Anderson" . "patware@freeshell.org")
+ :provided   (w32-shell-execute)
+ :keywords   ("convenience" "processes"))

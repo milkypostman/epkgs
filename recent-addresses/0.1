@@ -1,0 +1,21 @@
+(:summary    "Store and recall recently used email addresses"
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-2"
+ :authors    (("Nikolaj Schumacher" . "bugs@nschum.de"))
+ :maintainer ("Nikolaj Schumacher" . "bugs@nschum.de")
+ :provided   (recent-addresses)
+ :required   ((("emacs" cl iswitchb message)))
+ :keywords   ("convenience" "mail")
+ :homepage   "http://nschum.de/src/emacs/recent-addresses/"
+ :wikipage   "http://www.emacswiki.org/RecentAddresses"
+ :commentary "\
+recent-addresses allows you to quickly look up previously used addresses.
+
+Add the following to your .emacs:
+
+(add-to-list 'load-path \"/path/to/recent-addresses\")
+(require 'recent-addresses)
+(recent-addresses-mode 1)
+
+See the documentation for `recent-addresses-mode' for further instructions.")

@@ -1,0 +1,30 @@
+(:summary    "Remember buffer positions per-window, not per buffer"
+ :created    "2006"
+ :updated    "20090113"
+ :license    "GPL-2"
+ :authors    (("Jorgen Schaefer" . "forcer@forcix.cx"))
+ :maintainer ("Jorgen Schaefer" . "forcer@forcix.cx")
+ :provided   (winpoint)
+ :keywords   ("winpoint")
+ :commentary "\
+When two windows view the same buffer at the same time, and one
+window is switched to another buffer and back, point is now the
+same as in the other window, not as it was before we switched away.
+This mode tries to work around this problem by storing and
+restoring per-window positions for each buffer.
+
+
+Installation:
+
+Put winpoint.el to your load-path.
+The load-path is usually ~/elisp/.
+It's set in your ~/.emacs like this:
+(add-to-list 'load-path (expand-file-name \"~/elisp\"))
+
+And the following to your ~/.emacs startup file.
+
+(require 'winpoint)
+
+And add below to enable `winpoint'.
+
+     (window-point-remember-mode 1)")

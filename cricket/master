@@ -1,0 +1,10 @@
+(:summary    "Get live cricket scores and news updates from inside emacs"
+ :created    "2002"
+ :updated    "2002"
+ :license    "GPL-2"
+ :authors    (("Anand B Pillai" . "anand_pillai@delmia.com"))
+ :maintainer ("Anand B Pillai" . "anand_pillai@delmia.com")
+ :provided   (cricket)
+ :required   ((("emacs" browse-url cl custom url)
+	       ("w3" w3)))
+ :keywords   ("tools" "sports" "cricket" "live" "news"))

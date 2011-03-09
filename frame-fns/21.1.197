@@ -1,0 +1,19 @@
+(:summary    "Non-interactive frame and window functions"
+ :created    "19960305"
+ :updated    "20110104"
+ :license    "GPL-2"
+ :authors    (("Drew Adams"))
+ :maintainer ("Drew Adams")
+ :provided   (frame-fns)
+ :required   ((("emacs" avoid cl)))
+ :keywords   ("internal" "extensions" "local" "frames")
+ :commentary "\
+Non-interactive frame and window functions.
+
+ Main new functions defined here:
+
+   `1-window-frames-on', `distance', `flash-ding',
+   `frame-geom-spec-cons', `frame-geom-value-cons',
+   `frame-geom-spec-numeric', `frame-geom-value-numeric',
+   `frames-on', `get-a-frame', `get-frame-name',
+   `multi-window-frames-on', `read-frame', `window-coords'.")

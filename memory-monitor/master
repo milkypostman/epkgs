@@ -1,0 +1,4 @@
+(:updated    "20041204"
+ :license    "GPL-2"
+ :provided   (memory-monitor)
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/misc/")

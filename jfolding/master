@@ -1,0 +1,10 @@
+(:created    "1999"
+ :updated    "20000626"
+ :license    "GPL-2"
+ :authors    (("Phillip Lord" . "p.lord@hgmp.mrc.ac.uk"))
+ :maintainer ("Phillip Lord")
+ :provided   (jfolding)
+ :required   ((("emacs" hideshow)
+	       ("folding" folding)))
+ :keywords   ("java" "tools" "folding")
+ :homepage   "http://homepages.cs.ncl.ac.uk/phillip.lord/emacs.html")

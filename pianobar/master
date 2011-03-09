@@ -1,0 +1,8 @@
+(:repository (git . "https://github.com/agrif/pianobar.el.git")
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-3"
+ :provided   (pianobar)
+ :required   ((("emacs" comint)))
+ :homepage   "https://github.com/agrif/pianobar.el.git"
+ :wikipage   "http://www.emacswiki.org/PianobarMode")

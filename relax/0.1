@@ -1,0 +1,31 @@
+(:summary    "For browsing and interacting with CouchDB"
+ :repository (git . "https://github.com/technomancy/relax.el.git")
+ :created    "20090511"
+ :updated    "2009"
+ :license    "GPL-3"
+ :authors    (("Phil Hagelberg"))
+ :maintainer ("Phil Hagelberg")
+ :provided   (relax)
+ :required   ((("emacs" json mm-util thingatpt url)))
+ :keywords   ("database" "http")
+ :homepage   "https://github.com/technomancy/relax.el"
+ :commentary "\
+Interact with CouchDB databases from within Emacs, with ease!
+
+M-x relax to get started. From there hit C-h b.
+
+Installation:
+
+Use ELPA. (http://tromey.com/elpa/install.html)
+
+If installing by hand for some reason, place on your load path and
+put this in your init file:
+
+(autoload 'relax \"relax\" \"Connect to the CouchDB database at db-url.\" t)
+
+It depends on json.el and javascript.el. These are available
+through ELPA or if you need to get them manually download from
+http://edward.oconnor.cx/elisp/json.el and
+http://www.brgeight.se/downloads/emacs/javascript.el
+
+Tested with CouchDB 0.9.")

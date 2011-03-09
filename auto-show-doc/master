@@ -1,0 +1,5 @@
+(:summary    "Show documentation as point moves"
+ :updated    "20070913"
+ :license    "GPL-2"
+ :provided   (auto-show-doc)
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/elisp-dev-tools/")

@@ -1,0 +1,14 @@
+(:summary    "Thing at Point optional utilities"
+ :created    "2008"
+ :updated    "2009"
+ :license    "GPL-3"
+ :authors    (("MATSUYAMA Tomohiro" . "t.matsuyama.pub@gmail.com"))
+ :maintainer ("MATSUYAMA Tomohiro" . "t.matsuyama.pub@gmail.com")
+ :provided   (thing-opt)
+ :required   ((("emacs" cl thingatpt)))
+ :keywords   ("convenience")
+ :homepage   "http://www.emacswiki.org/ThingAtPointOptional"
+ :wikipage   "http://www.emacswiki.org/ThingAtPointOptional"
+ :commentary "\
+TODO documentation
+TODO forward-string by syntax (?)")

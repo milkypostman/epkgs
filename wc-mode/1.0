@@ -1,0 +1,14 @@
+(:repository (git . "https://github.com/bnbeckwith/wc-mode.git")
+ :created    "20100619"
+ :updated    "20100619"
+ :license    "GPL-3"
+ :authors    (("Benjamin Beckwith"))
+ :maintainer ("Benjamin Beckwith")
+ :provided   (wc-mode)
+ :homepage   "https://github.com/bnbeckwith/wc-mode"
+ :commentary "\
+Read the following for how to use the 'how-many' function
+http://www.neverfriday.com/sweetfriday/2008/06/emacs-tip-word-counting-with-a.html
+The following site had a good idea on how to produce number of chars
+http://xahlee.org/emacs/elisp_count-region.html
+Inspired by http://750words.com")

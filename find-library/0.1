@@ -1,0 +1,42 @@
+(:summary    "A library finder with completion capability"
+ :license    "GPL-2"
+ :authors    (("Takeshi Morishima" . "tm@interaccess.com"))
+ :maintainer ("Takeshi Morishima" . "tm@interaccess.com")
+ :provided   (find-library)
+ :keywords   ("files" "lisp")
+ :commentary "\
+This module can be used to find an Emacs Lisp library with
+completion capability. This may be useful when coding an elisp
+program on Emacs and want to view another library file. M-x
+find-function is probably the most commonly used command, but
+sometimes a library name is more convenient, especially if
+completion is available.
+
+This command lists shadow libraries as well in the completion list.
+Shadow libraries will have suffix \"<number>\" to the library name as
+completion string. This provides a convenient way to check the
+existence of a shadow, and can proceed to open to see what it is.
+
+A completion table cache is maintained to avoid unnecessary library
+scan. Its validity is checked against load-path and modification
+time of each directory listed in load-path each time the command is
+invoked.
+
+
+To install, place this file in your load-path (and byte compile if
+you like), and add the following in .emacs.
+
+  (autoload 'find-library \"find-library\" \"find-library\" t)
+
+To use, type M-x find-library, then it prompts for a library name
+to open. It automatically generates a completion table for all
+library files in load-path. It also cache the last entry so that it
+will not generate completion list everytime the command is
+invoked. The timestamp info of each load-path directory is used to
+detect the change in library file listings.
+
+Library loading command is also defined in this module. M-x
+find-and-load-library is the command for this. Please add the
+following to .emacs for autoload setup.
+
+  (autoload 'find-and-load-library \"find-library\" \"find-library\" t)")

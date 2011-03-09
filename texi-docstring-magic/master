@@ -1,0 +1,9 @@
+(:summary    "Munge internal docstrings into texi"
+ :created    "1998"
+ :updated    "20070701"
+ :license    "GPL-3"
+ :authors    (("David Aspinall" . "da@dcs.ed.ac.uk"))
+ :maintainer ("David Aspinall" . "da@dcs.ed.ac.uk")
+ :provided   (texi-docstring-magic)
+ :keywords   ("lisp" "docs" "tex")
+ :homepage   "http://www.ctan.org/tex-archive/macros/texinfo/texinfo/util/")

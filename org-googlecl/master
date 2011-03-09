@@ -1,0 +1,4 @@
+(:repository (git . "https://github.com/rileyrg/org-googlecl.git")
+ :provided   (org-googlecl)
+ :homepage   "https://github.com/rileyrg/org-googlecl"
+ :wikipage   "http://www.emacswiki.org/org-googlecl")

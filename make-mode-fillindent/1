@@ -1,0 +1,34 @@
+(:summary    "Filling indented makefile comments"
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-3"
+ :authors    (("Kevin Ryde" . "user42@zip.com.au"))
+ :maintainer ("Kevin Ryde" . "user42@zip.com.au")
+ :provided   (make-mode-fillindent)
+ :required   ((("emacs" make-mode)))
+ :keywords   ("files")
+ :commentary "\
+This is a spot of code for makefile-mode to let fill-paragraph (M-q) work
+on indented comments like
+
+	foo:
+		# this is
+		# some comment
+		echo hi
+
+In Emacs 22 and 21 makefile-mode uses a special makefile-fill-paragraph
+for filling.  It handles \"#\" comments at the start of a line, but does
+nothing if they're indented.  Doing nothing is particularly disconcerting
+if you use filladapt.el, because filladapt-debug shows a correct
+prefix+paragraph analysis yet M-q has no effect.
+
+Whether or not writing indented comments in a makefile is a good idea is
+another question of course.  \"make\" runs them with the shell, which will
+ignore them.  The happy side-effect is to get an echo from make, so you
+see them as the rule runs (whereas unindented makefile comments are
+consumed by make).
+
+Paragraph identification in Emacs 21 and XEmacs 21 makefile-mode isn't
+really setup for indented comments, and no attempt is made here to do
+anything about that.  The suggestion is to use filladapt which gets it
+right (or is easier to configure if it doesn't).")

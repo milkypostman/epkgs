@@ -1,0 +1,21 @@
+(:summary    "Integrated Development Environment for Csharp"
+ :repository (cvs . ":pserver:anonymous@csde.cvs.sourceforge.net:/cvsroot/csde")
+ :created    "2001"
+ :updated    "2001"
+ :license    "GPL-2"
+ :maintainer ("Matt Bruce")
+ :provided   (csde csde-autoloads csde-bug csde-compile csde-complete csde-csharp-font-lock csde-csharp-grammar csde-csharpdoc csde-csharpdoc-gen csde-db csde-dbo csde-dbs csde-gen csde-help csde-imenu csde-import csde-make csde-package csde-parse csde-run csde-setnu csde-stat csde-which-method csde-widgets)
+ :required   ((("cedet" semantic-imenu semantic-sb senator)
+	       ("elib" avltree)
+	       ("emacs" browse-url cc-mode cl compile cus-edit custom easymenu eieio font-lock gud imenu reporter semantic sort speedbar tempo wid-edit)
+	       ("jdee" beanshell)
+	       ("setnu" setnu)
+	       (nil csde-wiz semantic-bnf semantic-mode)))
+ :keywords   ("csharp" "tools")
+ :homepage   "http://csde.sourceforge.net/"
+ :commentary "\
+The latest version of the CSDE is available at
+<URL:http://www.sourceforge.com/>.
+
+Please send any comments, bugs, or upgrade requests to
+Matt Bruce (mattsbruce@hotmail.com)")

@@ -1,0 +1,13 @@
+(:summary    "Access Google Maps from Emacs"
+ :repository (git . "git://git.naquadah.org/google-maps.git")
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Julien Danjou" . "julien@danjou.info"))
+ :maintainer ("Julien Danjou" . "julien@danjou.info")
+ :provided   (google-maps google-maps-base google-maps-geocode google-maps-static org-location-google-maps)
+ :required   ((("emacs" cl json org org-agenda solar url-util)))
+ :keywords   ("comm")
+ :homepage   "http://julien.danjou.info/google-maps-el.html"
+ :commentary "\
+None")

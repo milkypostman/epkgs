@@ -1,0 +1,24 @@
+(:summary    "Music creation tool built on Ecasound"
+ :created    "2007"
+ :updated    "20070126"
+ :license    "GPL-2"
+ :authors    (("David O'Toole" . "dto@gnu.org"))
+ :maintainer ("David O'Toole" . "dto@gnu.org")
+ :provided   (ecaspace)
+ :required   ((("cell" cell)
+	       ("ecasound" ecasound)
+	       ("emms" jack)))
+ :keywords   ("multimedia")
+ :commentary "\
+This package implements a front-end to Mario Lang's ecasound.el
+(and therefore to Ecasound.)
+
+The file ecasound.el is included with ecasound. You may download
+ecasound from http://eca.cx
+
+Terminology: An \"ecaspace\" is a library of sound projects and
+recordings.  A session is a set of tracks. A track consists of an
+ecasound input, a corresponding output, a set of operations to be
+performed, and finally a collection of takes. A take identifies an
+individual audio file. A \"take set\" is the set of new takes created
+when the engine is started with record-enabled tracks.")

@@ -1,0 +1,5 @@
+(:summary    "Find functions matching a pattern, that have interactive definitions"
+ :updated    "20050204"
+ :license    "GPL-2"
+ :provided   (find-commands)
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/elisp-dev-tools/")

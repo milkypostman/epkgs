@@ -1,0 +1,84 @@
+(:created    "1999"
+ :updated    "20030123"
+ :license    "GPL-2"
+ :authors    (("Tim Wichmann" . "wichmann@itwm.uni-kl.de"))
+ :maintainer ("Tim Wichmann" . "wichmann@itwm.uni-kl.de")
+ :provided   (mma)
+ :required   ((("emacs" cl)
+	       (nil func-menu)))
+ :homepage   "http://www.itwm.fhg.de/as/asemployees/wichmann/mma.html"
+ :commentary "\
+This Emacs mode provides a programming mode for writing Mathematica
+package files.
+It provides
+ o a simple indentation machine
+ o font-lock support
+ o function-menu support for XEmacs
+ o imenu support for Emacs
+ o some simple functions for activating/deactivating debug code
+
+The indentation machine works as follows:
+-----------------------------------------
+
+If point is on the leading whitespace of the current line, indents as far 
+as the preceding non-empty line and moves point to the first non-whitespace
+character of the line.
+If point is not on the leading whitespace of the current line, indents by
+steps of `mma-indentation'.
+If called with prefix argument, aligns rest of current line with the next
+whitespace character position in previous lines:
+
+    ---------- Buffer: foo.m ----------
+    MyOptionName -> MyValue
+    Another-!--> Value
+    ---------- Buffer: foo.m ----------
+
+Calling with prefix argument yields:
+
+    ---------- Buffer: foo.m ----------
+    MyOptionName -> MyValue
+    Another      -!--> Value
+    ---------- Buffer: foo.m ----------
+
+(Difficult to explain. Just try it and see the result.)
+If called with negative prefix argument, aligns with whitespace in 
+following lines.
+The variable `mma-indent-align-at-eolp' specifies if `mma-indent-line'
+indents by steps of `mma-indentation' (value is nil) or aligns to
+whitespace (value is non-nil) if point is at the end of line.\"
+
+Activating/Deactivating debug code:
+-----------------------------------
+
+Since Mathematica does not provide a source code debugger, I often find
+myself writing pieces of code like
+  Print[ \"value1= \", somevariable ];
+when I am debugging my Mathematica functions, removing them as soon as
+the bug is fixed - and inserting them back on if another bug occurs.
+To simplify this procedure you can mark debug code with a special marker
+comment like this
+  (*: DEBUG MyFunction :*)
+  Print[ \"value1= \", somvevariable ];
+  (*: ENDDEBUG :*)
+(Use the function `mma-debug-insert' to insert a debug code skeleton).
+Each debug code has a marker, in the above example it is \"MyFunction\".
+The functions `mma-debug-on' and `mma-debug-off' activate or deactivate
+your debug code. Both take a regexp as argument and act only on debug code
+which marker matches the regexp. Thus, (mma-debug-off \"MyFun.*\") would turn
+off the above debug code (i.e., it inserts additional comments surrounding
+the Print statement). (mma-debug-on \".*\") turns on all debug code.
+The variable `mma-debug-fontify' determines whether to re-fontify
+the buffer after a change to the debug code.
+Customizing the variables `mma-debug-start-1', `mma-debug-start-2', and
+`mma-debug-end' you can change the special markers for you favorite
+style.
+
+Installation: 
+
+To use mma-mode you should add the following to your .emacs file:
+	(autoload 'mma-mode \"mma.el\" \"Mathematica package file mode\" t)
+     (setq auto-mode-alist
+           (cons '(\"\\\\.m\\\\'\" . mma-mode) auto-mode-alist))
+
+
+Note: Mathematica is a registered trademark of Wolfram Research, Inc.")

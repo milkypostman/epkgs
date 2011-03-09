@@ -1,0 +1,43 @@
+(:summary    "Fold/unfold XML according to keywords"
+ :created    "2001"
+ :updated    "2001"
+ :license    "GPL-2"
+ :authors    (("Tom Breton" . "tob@world.std.com"))
+ :maintainer ("Tom Breton" . "tob@world.std.com")
+ :provided   (tehom-psgml-fold-by-key)
+ :required   ((("arrange" arrange)
+	       ("emacs" cl)
+	       ("psgml" psgml)
+	       ("tehom-psgml" tehom-psgml)))
+ :keywords   ("hypermedia")
+ :homepage   "http://panix.com/~tehom/"
+ :commentary "\
+What it does:
+
+When writing an XML or SGML document, using a dtd that supports
+keywords, you can add keywords describing what its part talk about.
+(That's always been part of psgml)
+
+Then you can interactively hide or show sections of the document
+according to keywords.  They don't have to be contiguous or in any
+special relation to each other.  This package finds them according
+to keywords.
+
+This allows you to focus on the sections that interest you at the
+moment, without worrying about where you put them.
+
+Entry points: `tehom-psgml-fbk-refold' is the main entry point.  If
+you've edited the document and changed its keywords, use
+`tehom-psgml-fbk-refresh-keys'.  That's all.
+
+About the code:
+
+This is quick and dirty.  Opportunities for optimization abound: it
+collects and compares on strings, whereas it could use symbols.  It
+doesn't know anything about the dtd, so it explores subtrees that
+can't hold keys.  It unfolds and refolds and re^n-folds.  But it
+works and it saves me time.
+
+The set operations require `cl' at runtime.  To recode them all
+would be a real chore, and would mean including a fair chunk of
+`cl' in this package anyways, so I just use `cl'.")

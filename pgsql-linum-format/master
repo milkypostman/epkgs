@@ -1,0 +1,10 @@
+(:summary    "Dimitri Fontaine"
+ :repository (git . "https://github.com/dimitri/pgsql-linum-format.git")
+ :created    "20110121"
+ :updated    "2011"
+ :authors    (("Dimitri Fontaine" . "dim@tapoueh.org"))
+ :maintainer ("Dimitri Fontaine" . "dim@tapoueh.org")
+ :provided   (pgsql-linum-format)
+ :required   ((("emacs" linum)))
+ :keywords   ("postgresql" "plpgsql" "linum")
+ :homepage   "https://github.com/dimitri/pgsql-linum-format")

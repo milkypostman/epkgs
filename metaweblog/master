@@ -1,0 +1,6 @@
+(:summary    "An emacs library to access metaweblog based weblogs"
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-2"
+ :provided   (metaweblog)
+ :required   ((("xml-rpc" xml-rpc))))

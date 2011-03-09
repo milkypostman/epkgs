@@ -1,0 +1,28 @@
+(:summary    "Mode for editing X resource database files"
+ :created    "199405"
+ :updated    "2000"
+ :license    "GPL-2"
+ :maintainer (nil . "barry@python.org")
+ :provided   (xrdb-mode)
+ :required   ((("emacs" custom reporter)))
+ :keywords   ("data" "languages")
+ :homepage   "http://www.python.org/emacs/"
+ :commentary "\
+This file provides a major mode for editing X resource database
+files.  It includes font-lock definitions and commands for
+controlling indentation, re-indenting by subdivisions, and loading
+and merging into the the resource database.
+
+To use, put the following in your .emacs:
+
+(autoload 'xrdb-mode \"xrdb-mode\" \"Mode for editing X resource files\" t)
+
+You may also want something like:
+
+(setq auto-mode-alist
+      (append '((\"\\\\.Xdefaults$\"    . xrdb-mode)
+                (\"\\\\.Xenvironment$\" . xrdb-mode)
+                (\"\\\\.Xresources$\"   . xrdb-mode)
+                (\"*.\\\\.ad$\"         . xrdb-mode)
+                )
+              auto-mode-alist))")

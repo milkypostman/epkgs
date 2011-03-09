@@ -1,0 +1,10 @@
+(:summary    "Calculate Levenshtein distance"
+ :created    "2003"
+ :updated    "2003"
+ :license    "as-is"
+ :authors    (("Art Taylor"))
+ :maintainer ("Art Taylor")
+ :provided   (levenshtein)
+ :required   ((("emacs" cl)))
+ :keywords   ("levenshtein" "string" "edit" "distance")
+ :wikipage   "http://www.emacswiki.org/LevenshteinDistance")

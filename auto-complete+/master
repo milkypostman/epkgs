@@ -1,0 +1,23 @@
+(:summary    "Auto complete plus"
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-3"
+ :authors    (("ahei" . "ahei0802@126.com"))
+ :maintainer ("ahei" . "ahei0802@126.com")
+ :provided   (auto-complete+)
+ :required   ((("auto-complete" auto-complete)))
+ :keywords   ("auto" "complete" "plus" "regexp")
+ :homepage   "http://www.emacswiki.org/AutoCompletePlus"
+ :wikipage   "http://www.emacswiki.org/AutoCompletePlus"
+ :commentary "\
+This library auto-complete+ extend library auto-complete with let users to
+define regexp to ignore files when they expand use
+ac-source-files-in-current-dir and ac-source-filename, and filter invalid
+symbol when they expand use ac-source-symbols, because there so many garbage
+in obarray.
+
+Installation:
+
+Copy auto-complete+.el to your load-path and add to your .emacs:
+
+(require 'auto-complete+)")

@@ -1,0 +1,47 @@
+(:summary    "Major mode for editing (Standard) ML"
+ :created    "2010"
+ :updated    "20100304"
+ :license    "GPL-3"
+ :authors    (("Lars Bo Nielsen")
+	      ("Olin Shivers")
+	      ("Fritz Knabe (?)")
+	      ("Steven Gilmore (?)")
+	      ("(Stefan Monnier)" . "monnier@iro.umontreal.ca"))
+ :maintainer ("(Stefan Monnier)" . "monnier@iro.umontreal.ca")
+ :provided   (sml-compat sml-defs sml-mode sml-move sml-proc sml-util)
+ :required   ((("emacs" cl comint compile custom info skeleton smerge-mode)))
+ :keywords   ("sml")
+ :homepage   "http://www.iro.umontreal.ca/~monnier/elisp"
+ :wikipage   "http://www.emacswiki.org/SMLMode"
+ :commentary "\
+HISTORY
+
+Still under construction: History obscure, needs a biographer as
+well as a M-x doctor. Change Log on request.
+
+Hacked by Olin Shivers for comint from Lars Bo Nielsen's sml.el.
+
+Hacked by Matthew Morley to incorporate Fritz Knabe's hilite and
+font-lock patterns, some of Steven Gilmore's (reduced) easy-menus,
+and numerous bugs and bug-fixes.
+
+DESCRIPTION
+
+See accompanying info file: sml-mode.info
+
+FOR YOUR .EMACS FILE
+
+If sml-mode.el lives in some non-standard directory, you must tell
+emacs where to get it. This may or may not be necessary:
+
+(add-to-list 'load-path \"~jones/lib/emacs/\")
+
+Then to access the commands autoload sml-mode with that command:
+
+(load \"sml-mode-startup\")
+
+sml-mode-hook is run whenever a new sml-mode buffer is created.
+
+Finally, there are inferior-sml-{mode,load}-hooks -- see comments
+in sml-proc.el. For much more information consult the mode's *info*
+tree.")

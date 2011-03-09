@@ -1,0 +1,9 @@
+(:summary    "More function for time/date"
+ :created    "2010"
+ :updated    "20100516"
+ :license    "GPL-3"
+ :authors    (("rubikitch" . "rubikitch@ruby-lang.org"))
+ :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
+ :provided   (time-ext)
+ :required   ((("emacs" cl)))
+ :keywords   ("lisp"))

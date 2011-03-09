@@ -1,0 +1,4 @@
+(:updated    "20041120"
+ :license    "GPL-2"
+ :provided   (seq-numbering)
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/webstuff/")

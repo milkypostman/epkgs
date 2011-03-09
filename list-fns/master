@@ -1,0 +1,11 @@
+(:summary    "List-searching and manipulation functions"
+ :created    "1991"
+ :updated    "20061025"
+ :license    "GPL-2"
+ :authors    (("Noah Friedman" . "friedman@splode.com"))
+ :maintainer (nil . "friedman@splode.com")
+ :provided   (list-fns)
+ :homepage   "ftp://ftp.splode.com/pub/users/friedman/emacs-lisp/"
+ :commentary "\
+Some of these functions are fairly general-purpose.  Others manipulate
+special-purpose lists, e.g. auto-mode-alist.")

@@ -1,0 +1,21 @@
+(:summary    "Compile files as they're used"
+ :updated    "20071116"
+ :license    "public-domain"
+ :authors    (("Daniel Colascione" . "dan.colascione@gmail.com"))
+ :maintainer ("Daniel Colascione" . "dan.colascione@gmail.com")
+ :provided   (byte-code-cache)
+ :required   ((("emacs" advice bytecomp)))
+ :commentary "\
+Description:
+Automatically cache byte-compiled versions of .el files as they're
+loaded, automatically recompiling them as necessary.
+
+Install:
+Load this file as early as possible in ~/.emacs (after setting
+variables, and after custom, if you used custom to set them.)
+Anything loaded after it will be automatically byte-compiled.
+
+This file cannot byte-compile itself, so you should do that
+separately.
+
+Author: Daniel Colascione <dan.colascione@gmail.com>")

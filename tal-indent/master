@@ -1,0 +1,14 @@
+(:summary    "Handles indentation functions for tal-mode"
+ :created    "2001"
+ :updated    "2004"
+ :license    "GPL-2"
+ :authors    (("Rick Bielawski" . "rbielaws@i1.net"))
+ :maintainer ("Rick Bielawski" . "rbielaws@i1.net")
+ :provided   (tal-indent)
+ :required   ((("tal-mode" tal-mode)))
+ :keywords   ("languages" "extensions" "tandem" "compaq" "hp" "tal" "ptal")
+ :commentary "\
+This file is written exclusively as an extension to tal-mode.el.  The
+presence of this file or it's compiled version on the load path should be
+detected by tal-mode and result in tal-mode using the routines here for
+indent functions.")

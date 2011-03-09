@@ -1,0 +1,32 @@
+(:summary    "Perform actions(compile/run, etc) in buffer based on mode/filename"
+ :created    "2005"
+ :updated    "2009"
+ :license    "GPL-3"
+ :authors    (("William Xu" . "william.xwl@gmail.com"))
+ :maintainer ("William Xu" . "william.xwl@gmail.com")
+ :provided   (buffer-action)
+ :homepage   "http://xwl.appspot.com/"
+ :commentary "\
+This is a mostly rewritten based on ideas from Seiji Zenitani
+<zenitani@mac.com>'s `smart-compile.el'. Besides compile action, i've
+add a run action, and maybe more in the future.
+
+Let me illustrate it by an example. Suppose you are editing a file
+named `foo.c'. To compile it, `M-x buffer-action-compile', it will run
+a shell command similar to `gcc -o foo foo.c -O2'; to run the
+executable binary `foo' , `M-x buffer-action-run', it will run a shell
+command similar to `./foo'. Sounds neat, right?
+
+What kind of shell commands or lisp expressions to call for each
+action(compile/run) is configurable through `buffer-action-table'.
+
+To use, add this file to your load-path and the following to your
+.emacs:
+      (autoload 'buffer-action-compile \"buffer-action\")
+      (autoload 'buffer-action-run \"buffer-action\")
+
+TODO
+
+- Recognize Makefile in a directory, so don't bother me when calling
+  the compile command from different file buffers, which all belongs
+  to the same directory.")

@@ -1,0 +1,12 @@
+(:summary    "Major mode for editing Clay source files"
+ :repository (hg . "http://bitbucket.org/prafulla/clay-mode")
+ :created    "20100519"
+ :updated    "2010"
+ :license    "GPL-2"
+ :authors    (("Prafulla Kiran" . "prafulla@tachyontech.net"))
+ :maintainer ("Prafulla Kiran" . "prafulla@tachyontech.net")
+ :provided   (clay-mode)
+ :keywords   ("clay" "major-mode")
+ :homepage   "http://bitbucket.org/prafulla/clay-mode"
+ :commentary "\
+This mode is designed to make development in Clay easier for Emacs users")

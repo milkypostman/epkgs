@@ -1,0 +1,20 @@
+(:summary    "A major-mode similar to outline-mode"
+ :created    "2003"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("Kevin A. Burton"))
+ :maintainer ("Kevin A. Burton")
+ :provided   (dash-outline-mode)
+ :commentary "\
+Mode which is similar to `outline-mode' but matches 'dash' outlines.
+
+Specifically:
+
+- is a beginning
+- is another level
+- is another level
+
+This is the way I think of outlines. I assume some people would agree.
+
+NOTE: If you enjoy this software, please consider a donation to the EFF
+(http://www.eff.org)")

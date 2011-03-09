@@ -1,0 +1,8 @@
+(:summary    "Edit all lines matching a given regexp"
+ :created    "1985"
+ :updated    "19970304"
+ :license    "GPL-2"
+ :authors    (("Per Abrahamsen" . "abraham@dina.kvl.dk"))
+ :maintainer ("Per Abrahamsen" . "abraham@dina.kvl.dk")
+ :provided   (all)
+ :keywords   ("matching"))

@@ -1,0 +1,25 @@
+(:summary    "Interface to nopaste.pl"
+ :repository (git . "https://github.com/avar/nopaste.git")
+ :created    "20071122"
+ :updated    "2010"
+ :license    "GPL-2"
+ :authors    (("Ævar Arnfjörð Bjarmason" . "avar@cpan.org"))
+ :maintainer ("Ævar Arnfjörð Bjarmason" . "avar@cpan.org")
+ :provided   (nopaste)
+ :keywords   ("comm")
+ :homepage   "https://github.com/avar/nopaste"
+ :wikipage   "http://www.emacswiki.org/nopaste"
+ :commentary "\
+Interfaces with paste bots via the `nopaste' which is part of the
+`App::Nopaste' CPAN distribution found at
+http://github.com/sartak/app-nopaste
+
+Example usage with a custom path and nick:
+
+(require 'nopaste)
+(setq nopaste-nick \"avar\")
+
+The recommended keybindings are:
+
+(global-set-key (kbd \"C-c n p\") 'nopaste)
+(global-set-key (kbd \"C-c n y\") 'nopaste-yank-url)")

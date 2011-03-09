@@ -1,0 +1,10 @@
+(:summary    "Editing mode for MELabs PIC Basic"
+ :created    "1996"
+ :updated    "1996"
+ :license    "GPL"
+ :authors    (("Fred White" . "fwhite@alum.mit.edu"))
+ :maintainer ("Fred White" . "fwhite@alum.mit.edu")
+ :adapted-by ("Dave Love" . "d.love@dl.ac.uk")
+ :provided   (pic-basic-mode)
+ :required   ((("emacs" cl)))
+ :keywords   ("languages" "basic"))

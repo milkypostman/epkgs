@@ -1,0 +1,139 @@
+(:created    "2006"
+ :updated    "2006"
+ :provided   (gnugo)
+ :required   ((("emacs" cl time-date)
+	       (nil gnugo-xpms)))
+ :homepage   "http://www.gnuvola.org/software/j/gnugo/"
+ :commentary "\
+Playing
+-------
+
+This file provides the command `gnugo' which allows you to play the game of
+go against the external program \"gnugo\" (http://www.gnu.org/software/gnugo)
+in a dedicated Emacs buffer, or to resume a game in progress.  NOTE: In
+this file, to avoid confusion w/ elisp vars and funcs, we use the term \"GNU
+Go\" to refer to the process object created by running the external program.
+
+At the start of a new game, you can pass additional command-line arguments
+to GNU Go to specify level, board size, color, komi, handicap, etc.  By
+default GNU Go plays at level 10, board size 19, color white, and zero for
+both komi and handicap.
+
+To play a stone, move the cursor to the desired vertice and type `SPC' or
+`RET'; to pass, `P' (note: uppercase); to quit, `q'; to undo one of your
+moves (as well as a possibly intervening move by GNU Go), `u'.  To undo
+back through an arbitrary stone that you played, place the cursor on a
+stone and type `U' (note: uppercase).  Other keybindings are described in
+the `gnugo-board-mode' documentation, which you may view with the command
+`describe-mode' (normally `C-h m') in that buffer.  The buffer name shows
+the last move and who is currently to play.  Capture counts and other info
+are shown on the mode line immediately following the major mode name.
+
+While GNU Go is pondering its next move, certain commands that rely on its
+assistence will result in a \"still waiting\" error.  Do not be alarmed; that
+is normal.  When it is your turn again you may retry the command.  In the
+meantime, you can use Emacs for other tasks, or start an entirely new game
+with `C-u M-x gnugo'.  (NOTE: A new game will slow down all games. :-)
+
+If GNU Go should crash during a game the mode line will show \"no process\".
+Please report the event to the GNU Go maintainers so that they can improve
+the program.
+
+This code was tested with:
+- GNU Emacs: 21.3 / 22.0.50 (from CVS)
+- GNU Go: 3.3.15 / 3.4 / 3.6
+
+
+Meta-Playing (aka Customizing)
+------------------------------
+
+Customization is presently limited to
+  vars:            `gnugo-program'
+                   `gnugo-animation-string'
+                   `gnugo-mode-line'
+                   `gnugo-X-face' `gnugo-O-face' `gnugo-grid-face'
+                   `gnugo-xpms'
+  normal hooks:    `gnugo-board-mode-hook'
+                   `gnugo-post-move-hook'
+  and the keymap:  `gnugo-board-mode-map'
+
+The variable `gnugo-xpms' is a special case.  To set it you need to load
+gnugo-xpms.el (http://www.emacswiki.org) or some other library w/ congruent
+interface.
+
+
+Meta-Meta-Playing (aka Hacking)
+-------------------------------
+
+You may wish to first fix the bugs:
+- `gnugo-toggle-dead-group' only half-complete; see docstring for details
+- probably sgf handling is not 100% to spec
+- subprocess should provide scoring details, gnugo.el not yet blissful
+
+Otherwise (we can live w/ some bugs), here are some ideas:
+- talk GTP over the network
+- \"assist minor mode\" (see gnugo-extra.el for work in progress)
+- using assist minor mode, gnugo-v-gnugo (ibid)
+- extract GNUGO Board mode and sgf stuff into sgf.el; make gnugo.el use it
+- make gnugo (the external program) support query (read-only) thread
+  so as to be able to lift \"still waiting\" restriction
+- alternatively, extend GNUGO Board mode to manage another subprocess
+  dedicated to analysis (no genmove)
+- command `C' to add a comment to the sgf tree
+- command `C-u =' to label a position
+- sgf tree display, traversal (belongs in sgf.el); review game history
+  in another buffer; branch subgame tree at arbitrary point
+- subgame branch matriculation (maturity: child leaves the family)
+- dribble the sgf tree
+- \"undo undo undoing\"; integrate Emacs undo, GTP undo, subgame branching
+- make buffer name format configurable (but enforce uniqueness)
+- more tilde escapes for `gnugo-mode-line'
+- make veneration configurable
+- make animation more configurable; lift same-color-stones-only
+  restriction; allow sequencing rather than lock-step; include sound
+- [your hacking ideas here]
+
+Some gnugo.el hackers update http://www.emacswiki.org -- check it out!
+
+
+History
+-------
+
+Originally gnugo.el was written to interact w/ \"gnugo --mode text\" and then
+\"gnugo --mode emacs\" as the subprocess.  Those versions were released as
+1.x, w/ x < 14.  In Novemeber 2002, gnugo.el was changed to interact w/
+\"gnugo --mode gtp\", but was released as 1.14 through 1.26, even though the
+proper versions should be 2.0.x for \"--mode gtp\", and 2.1.x for XPM image
+support.  (Sorry about the confusion.)
+
+Thus we arrive at at the current version.  The first gnugo.el to be
+released w/ a `gnugo-version' variable is \"2.2.0\".  The versioning scheme
+is strictly monotonically increasing numbers and dots, no letters or other
+suffixes (and none of this even/odd crap).  Here we list, aside from the
+bugfixes, some of the notable changes introduced in each released version:
+
+2.2.x -- uncluttered, letters and numbers hidden, board centered
+         buffer name shows last move and current player
+         mode-line customization (var `gnugo-mode-line')
+         new commands: `=', `h', `s', `F', `R', `l', `U', `C-c C-p'
+         program option customization (var `gnugo-program')
+         new hooks (vars `gnugo-post-move-hook', `gnugo-board-mode-hook')
+         multiple independent buffers/games
+         XPM set can be changed on the fly (global and/or local)
+         font-locking for \"X\", \"O\", \"[xo]\"
+         undo by N moves, by \"move pair\", or by board position
+         grid (letters and numbers) visibility can be toggled
+
+
+History Predicted
+-----------------
+
+If you are an elisp programmer, this section might not apply to you;
+the GPL allows you to define the future of the code you receive under
+its terms, as long as you do not deny that freedom to subsequent users.
+
+For users who are not elisp programmers, you can look forward to gradual
+refinement in 2.x, splitting into gnugo.el and sgf.el in 3.x, and then
+eventual merging into GNU Emacs for 4.x (if RMS gives it the thumbs-up).
+If it is not accepted into Emacs at that time, a new maintainer will be
+sought.  In any case, it will no longer be bundled w/ ttn-pers-elisp.")

@@ -1,0 +1,9 @@
+(:summary    "A GNU Emacs interface to Blogger"
+ :repository (svn . "http://e-blog.googlecode.com/svn")
+ :created    "2007"
+ :updated    "2007"
+ :license    "GPL-2"
+ :authors    (("Mikey Coulson" . "miketcoulson@gmail.com"))
+ :maintainer ("Mikey Coulson" . "miketcoulson@gmail.com")
+ :homepage   "http://code.google.com/p/e-blog/"
+ :wikipage   "http://www.emacswiki.org/Eblog")

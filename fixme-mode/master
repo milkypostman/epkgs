@@ -1,0 +1,11 @@
+(:summary    "Makes FIXME, TODO, etc. appear in big, angry letters"
+ :created    "2010"
+ :updated    "2010"
+ :license    "MIT"
+ :authors    (("Bryan Waite")
+	      ("based on some code found at"))
+ :maintainer ("Bryan Waite")
+ :provided   (fixme-mode)
+ :required   ((("emacs" cl)))
+ :homepage   "http://www.emacswiki.org/FixmeMode"
+ :wikipage   "http://www.emacswiki.org/FixmeMode")

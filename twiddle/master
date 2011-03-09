@@ -1,0 +1,18 @@
+(:summary    "Mode-line display hack"
+ :created    "19970312"
+ :updated    "19970314"
+ :license    "GPL-2"
+ :authors    (("Noah Friedman" . "friedman@prep.ai.mit.edu"))
+ :maintainer (nil . "friedman@prep.ai.mit.edu")
+ :provided   (twiddle)
+ :required   ((("emacs" timer)
+	       ("itimer" itimer)))
+ :keywords   ("extensions")
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
+ :commentary "\
+Inspired by a similar hack by Jim Blandy <jimb@cyclic.com>.
+
+There are two user commands of interest: twiddle-start and twiddle-compile.
+
+If you write new twiddles, try to minimize or avoid consing, since those
+functions are called constantly.")

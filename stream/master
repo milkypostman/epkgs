@@ -1,0 +1,12 @@
+(:summary    "A stream library in elisp"
+ :created    "2002"
+ :updated    "2002"
+ :license    "GPL-2"
+ :authors    (("Akimichi Tatsukawa" . "akimichi@mbox.co.jp")
+	      ("delayed evaluation"))
+ :maintainer ("Akimichi Tatsukawa" . "akimichi@mbox.co.jp")
+ :provided   (stream)
+ :keywords   ("stream" "delayed" "evaluation")
+ :commentary "\
+This package provides a stream library.
+   Please refer to the chapter 3.5 of the book \"Structure and Interpretation of Computer Program\"(SICP).")

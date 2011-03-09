@@ -1,0 +1,29 @@
+(:summary    "Fold HTML elements"
+ :repository (git . "https://github.com/ataka/html-fold.git")
+ :created    "20050510"
+ :updated    "2010"
+ :license    "GPL-2"
+ :authors    (("Masayuki Ataka" . "masayuki.ataka@gmail.com"))
+ :maintainer ("Masayuki Ataka" . "masayuki.ataka@gmail.com")
+ :provided   (html-fold)
+ :required   ((("emacs" overlay)))
+ :keywords   ("html" "wp")
+ :homepage   "https://github.com/ataka/html-fold"
+ :commentary "\
+This file provides support for hiding and unhiding HTML elements.
+
+Acknowledgements:
+
+html-fold is depeloped based on tex-fold.el in AUCTeX, written by 
+Ralf Angeli <angeli@iwi.uni-sb.de>.
+
+Caveats:
+
+The display string of content which should display part of itself
+is made by copying the text from the buffer together with its text
+properties.  If fontification has not happened when this is done
+(e.g. because of lazy or just-in-time font locking) the intended
+fontification will not show up.  Maybe this could be improved by
+using some sort of \"lazy folding\" or refreshing the window upon
+scrolling.  As a workaround fontification of the whole buffer
+currently is forced before folding it.")

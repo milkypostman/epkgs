@@ -1,0 +1,11 @@
+(:summary    "Mode for editing Powershell scripts"
+ :repository (git . "https://github.com/fperrin/powershell-mode.git")
+ :created    "2009"
+ :updated    "2010"
+ :license    "GPL-3"
+ :provided   (powershell-mode)
+ :required   (nil
+	      (("emacs" compile speedbar)))
+ :keywords   ("powershell" "monad" "msh")
+ :homepage   "https://github.com/fperrin/powershell-mode"
+ :wikipage   "http://www.emacswiki.org/PowerShell")

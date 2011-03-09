@@ -1,0 +1,11 @@
+(:created    "20061117"
+ :updated    "2007"
+ :license    "MIT"
+ :authors    (("Ryan Davis" . "ryand-ruby@zenspider.com"))
+ :maintainer ("Ryan Davis" . "ryand-ruby@zenspider.com")
+ :provided   (autotest)
+ :required   ((("emacs" shell))
+	      (("unit-test" unit-test)))
+ :keywords   ("testing" "ruby" "convenience")
+ :commentary "\
+Sets up an autotest buffer and provides convenience methods.")

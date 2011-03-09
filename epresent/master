@@ -1,0 +1,27 @@
+(:summary    "Simple presentation mode for Emacs"
+ :repository (git . "https://github.com/technomancy/epresent.git")
+ :created    "20080612"
+ :updated    "2008"
+ :license    "GPL-3"
+ :authors    (("Tom Tromey" . "tromey@redhat.com"))
+ :maintainer ("Tom Tromey" . "tromey@redhat.com")
+ :provided   (epresent)
+ :keywords   ("gui")
+ :homepage   "https://github.com/technomancy/epresent"
+ :commentary "\
+This is a simple presentation mode for Emacs.  It works best in
+Emacs 23, which has nicer font rendering.
+
+To use, invoke epresent-run-frame in an outline-mode buffer.  This
+will make a full-screen frame.  Use n/p to navigate, or q to quit.
+(There are some other key bindings too.)  Some special markup is
+available as well:
+
+  \"#\" marks a comment line
+  \"* @Something\" means that this outline node starts a new page
+  \"@toc\" by itself on a line means to insert a table-of-contents here
+  \"[File Text]\" means insert FILE as an image, with TEXT underneath
+  \"=Text=\" means to format text using a mono font, useful for code
+
+Probably this should be redone as a muse back end, using muse
+markup instead.")

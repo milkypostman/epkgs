@@ -1,0 +1,127 @@
+(:summary    "Implementation of vi's dot command for Emacs"
+ :created    "1998"
+ :updated    "1998"
+ :license    "GPL-2"
+ :authors    (("Will Mengarini" . "seldon@eskimo.com"))
+ :maintainer ("Will Mengarini" . "seldon@eskimo.com")
+ :provided   (vi-dot)
+ :required   ((("emacs" advice cl)))
+ :keywords   ("abbrev" "vi" "dot" "universal" "argument" "typematic" "repeat")
+ :homepage   "http://www.eskimo.com/~seldon/"
+ :commentary "\
+Sometimes the fastest way to get something done is just to lean on a key;
+moving forward through a series of words by leaning on M-f is an example.
+But 'forward-page is orthodoxily bound to C-x ], so moving forward through
+several pages requires
+  Loop until desired page is reached:
+    Hold down control key with left pinkie.
+    Tap <x>.
+    Lift left pinkie off control key.
+    Tap <]>.
+This is a pain in the ass.
+
+This package defines a command that repeats the preceding command,
+whatever that was.  The command is called `vi-dot' because the vi editor,
+Emacs's arch-rival among the Great Unwashed, does that when \".\" is pressed
+in its command mode.
+
+Starting with GNU Emacs 20.3, this package is part of Emacs, and the
+`vi-dot' command is bound to the key sequence C-x z.  (You can actually
+keep repeating the most recent command by just repeating the z after the
+first C-x z.)  However, you can use this package with older versions of
+GNU Emacs by installing it yourself.  Here's how:
+[1] Copy this file to a directory that appears in your load-path.
+    `load-path' is the name of a variable that contains a list of
+    directories Emacs searches for files to load.  To prepend another
+    directory to load-path, put a line like
+    (add-to-list 'load-path \"c:/My_Directory\") in your .emacs file.
+[2] Then, put the line
+      (require 'vi-dot)
+    in your .emacs file.  (Don't try to use an autoload, because then the
+    first time vi-dot is invoked, some data the command may need to know
+    about the preceding command won't have been set.)  Then put the line
+      (global-set-key \"\\C-xz\" 'vi-dot)
+    in your .emacs to give the command its orthodox binding of C-x z.
+[3] Those lines in your .emacs will be evaluated every time you start a
+    new Emacs session, & will cause this package to be available in that
+    session.  To make it available in the session in which you typed the
+    lines into your .emacs file, move the cursor to the (require) line,
+    type C-SPC to set the mark, move it to the beginning of the line after
+    the `global-set-key', and type M-x eval-region.  You should then see
+    \"nil\" in the echo area; that's the value of the final form evaluated.
+    If you see an error message, there's a typo.  You won't need to do
+    this `eval-region' again; in the future, when you load Emacs, that
+    region will be evaluated along with the rest of your .emacs at load
+    time.  This is just for adding lines to .emacs during a running
+    session.
+That's it; vi-dot is installed & ready for use.
+
+Since the whole point of vi-dot is to let you repeat commands that are
+bound to multiple keystrokes by leaning on a *single* key, it seems not to
+make sense to bind vi-dot itself to a multiple-character key sequence, but
+there aren't any appropriate single characters left in the orthodox global
+map.  (Meta characters don't count because they require two keystrokes if
+you don't have a real meta key, and things like function keys can't be
+relied on to be available to all users.  We considered rebinding C-z,
+since C-x C-z is also bound to the same command, but RMS decided too many
+users were accustomed to the orthodox meaning of C-z.)  So the vi-dot
+command checks what key sequence it was invoked by, and allows you to
+repeat the final key in that sequence to keep repeating the command.
+For example, C-x ] C-x z z z will move forward 4 pages.
+
+This works correctly inside a keyboard macro as far as recording and
+playback go, but `edit-kbd-macro' gets it wrong.  That shouldn't really
+matter; if you need to edit something like
+  C-x ]              ;; forward-page
+  C-x z              ;; vi-dot
+  zz                 ;; self-insert-command * 2
+  C-x                ;; Control-X-prefix
+you can just kill the bogus final 2 lines, then duplicate the vi-dot line
+as many times as it's really needed.  Also, `edit-kbd-macro' works
+correctly if `vi-dot' is invoked through a rebinding to a single keystroke
+and the global variable vi-dot-repeat-on-final-keystroke is set to a value
+that doesn't include that keystroke.  For example, the lines
+  (global-set-key \"\\C-z\" 'vi-dot)
+  (setq vi-dot-repeat-on-final-keystroke \"z\")
+in your .emacs would allow `edit-kbd-macro' to work correctly when C-z was
+used in a keyboard macro to invoke `vi-dot', but would still allow C-x z
+to be used for `vi-dot' elsewhere.  The real reason for documenting this
+isn't that anybody would need it for the `edit-kbd-macro' problem, but
+that there might be other unexpected ramifications of re-executing on
+repetitions of the final keystroke, and this shows how to do workarounds.
+
+If the preceding command had a prefix argument, that argument is applied
+to the vi-dot command, unless the vi-dot command is given a new prefix
+argument, in which case it applies that new prefix argument to the
+preceding command.  This means a key sequence like C-u - C-x C-t can be
+repeated.  (It shoves the preceding line upward in the buffer.)
+
+Here are some other key sequences with which vi-dot might be useful:
+  C-u - C-t      [shove preceding character backward in line]
+  C-u - M-t      [shove preceding word backward in sentence]
+        C-x ^    enlarge-window [one line] (assuming frame has > 1 window)
+  C-u - C-x ^    [shrink window one line]
+        C-x `    next-error
+  C-u - C-x `    [previous error]
+        C-x DEL  backward-kill-sentence
+        C-x e    call-last-kbd-macro
+        C-x r i  insert-register
+        C-x r t  string-rectangle
+        C-x TAB  indent-rigidly [one character]
+  C-u - C-x TAB  [outdent rigidly one character]
+        C-x {    shrink-window-horizontally
+        C-x }    enlarge-window-horizontally
+
+Using vi-dot.el doesn't entail a performance hit.  There's a
+straightforward way to implement a package like this that would save some
+data about each command as it was executed, but that Lisp would need to be
+interpreted on every keystroke, which is Bad.  This implementation doesn't
+do it that way; the peformance impact on almost all keystrokes is 0.
+
+Buried in the implementation is a reference to a function in my
+typematic.el package, which isn't part of GNU Emacs.  However, that
+package is *not* required by vi-dot; the reference allows it to be used,
+but doesn't require it.
+
+I've been told that this version of vi-dot.el is incompatible with XEmacs
+because XEmacs lacks a num-input-keys variable.")

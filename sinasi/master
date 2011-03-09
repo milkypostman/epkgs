@@ -1,0 +1,31 @@
+(:summary    "Sinasi Is Not A SproutCore IDE"
+ :repository (git . "https://github.com/emk/sinasi.git")
+ :created    "20100309"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Eric Kidd")
+	      ("Phil Hagelberg")
+	      ("Eric Schulte"))
+ :maintainer ("Eric Kidd")
+ :provided   (sinasi)
+ :required   ((("emacs" cl)
+	       ("jump" jump)))
+ :keywords   ("sproutcore" "project")
+ :homepage   "https://github.com/emk/sinasi"
+ :commentary "\
+Sinasi Is Not A SproutCore IDE
+
+Anything good about Sinasi is the work of Phil Hagelberg and Eric
+Schulte.  Anything bad is the fault of Eric Kidd.
+
+Sinasi is a hacked copy of Rinari, an excellent Emacs toolkit for
+working with Rails applications.  Sinasi ports a few of the many Rinari
+features to work with SproutCore applications.  In particular, it allows
+you to flip between models, unit tests, fixtures, controllers, etc., in
+a SproutCore source tree.
+
+You need to install Rinari and js2.el to get this working,
+at least for now.  Eventually, I might add support for installing via
+ELPA.
+
+Please feel free to fork this project on github and enhance it.")

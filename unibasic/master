@@ -1,0 +1,41 @@
+(:summary    "Copyright (C) 1998 Pat Thoyts <pat@zsplat.freeserve.co.uk>"
+ :created    "1998"
+ :updated    "19990827"
+ :license    "GPL-2"
+ :authors    (("Pat Thoyts" . "pat@zsplat.freeserve.co.uk"))
+ :maintainer ("Pat Thoyts" . "pat@zsplat.freeserve.co.uk")
+ :provided   (unibasic-mode)
+ :required   ((("emacs" regexp-opt reporter)))
+ :keywords   ("languages")
+ :wikipage   "http://www.emacswiki.org/UniBASICMode"
+ :commentary "\
+-----------
+
+  Provides a major mode that understands the syntax of UniBasic program
+  files. This is a basic style language used to program the UniData
+  relational database. unibasic-mode provides text coloration using 
+  font-lock mode and understands how to indent the source code.
+
+INSTALLATION
+ ------------
+
+  You may need to have make-regexp available. More recent versions of
+  FSF Emacs have got `regex-opt' already. unibasic-mode will try and
+  use this. If it isn't available it will go for make-regexp and if
+  that isn't available it'll ask for it.
+
+  Variables you should consider changing are:
+  `unibasic-initial-indent'      `unibasic-default-indent'
+  `unibasic-case-indent'         `unibasic-comment-column'
+  `unibasic-capitalize-keywords' `unibasic-no-blank-lines'
+
+  To use this mode, put unibasic-mode.el somewhere in your emacs load
+  path, compile it (using M-x byte-compile-file) and add the
+  following to your init file:
+
+  (autoload 'unibasic-mode \"unibasic-mode\" \"Unibasic mode.\" t)
+    (setq auto-mode-alist 
+      (append '((\"\\\\.ub$\" . unibasic-mode)) auto-mode-alist))
+
+  _OR_
+    type in `M-x unibasic-mode' once the file has been loaded.")

@@ -1,0 +1,13 @@
+(:summary    "OCCAM2 mode for GNU emacs"
+ :license    "GPL-2"
+ :authors    (("Jesper Larsson Traff")
+	      ("Jared C. Saia" . "saia@itl.atr.co.jp")
+	      ("Phil Nitschke" . "phil@mrad.com.au"))
+ :keywords   ("occam" "languages")
+ :homepage   "http://wotug.org/tools.shtml"
+ :wikipage   "http://www.emacswiki.org/OccamMode"
+ :commentary "\
+Just plug it in and run.  Requires no modification.
+TAB and CR automatically indents.
+All OCCAM keywords (which are separated into process keywords (which force
+indentation) and reserved words) are recognised and uppercase'd.")

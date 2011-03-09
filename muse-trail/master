@@ -1,0 +1,97 @@
+(:summary    "Trails for muse projects. "
+ :updated    "20080215"
+ :license    "GPL-2"
+ :maintainer ("Phillip Lord" . "phillip.lord@newcastle.ac.uk")
+ :provided   (muse-trail)
+ :required   ((("emacs" cl)))
+ :homepage   "http://homepages.cs.ncl.ac.uk/phillip.lord/emacs.html"
+ :commentary "\
+This file provides the ability to add \"trails\" through a set of muse files;
+in short to provide a natural ordering for files, rather like LaTeX2HTML or
+Info files for instance. At the moment, only HTML publishing output is
+supported, although the system would probably extend more naturally to more
+linear formats.
+
+For some websites, you need to work through from start to finish or,
+alternatively, follow one or more paths through the pages. This is
+particularly true for tutorial websites where the reader needs to see one
+part first to make sense of the later pages. Basically, you need a book. 
+Trails add this functionality - although unlike a book, it's possible for a
+single page to occur in multiple places. 
+
+A Trail consists of one or more pages. A page can itself contain a trail --
+so you can do subtrails. When published each page gets a next, previous
+and up link if they exist. If the page is, itself, a trail an index of all
+files below it will be added. 
+
+To get this to work, first you must define a trail. Here for example is the
+test trail I have used from development. You can specify links, text for
+those links and subtrails. 
+
+(setq test-muse-trail-test-trail
+      `(
+        ,(muse-trail 
+          :text \"Trail 1, Item 1\" 
+          :link \"trail-1-item-1\")
+
+        ,(muse-trail
+          :text \"Trail 1, Item 2\"
+          :link \"trail-1-item-2\")
+      
+        ,(muse-trail
+          :text \"subtrail 1 -index\"
+          :link \"subtrail-1\"
+          :trail 
+          `(
+            ,(muse-trail
+              :text \"Trail 2, Item 1\"
+              :link \"trail-2-item-1\")
+            ,(muse-trail
+              :text \"Trail 2, Item 2\"
+              :link \"trail-2-item-2\")))))
+
+Next you add the trail to your project. I use my own muse-settings.el which
+allows me to create and configure projects in the same location as the muse
+files; this is what it looks like. 
+
+(muse-settings-add-project
+ `(\"trail\"
+   (,(muse-settings-local-path) :default \"index.html\"
+    :trail ,test-muse-trail-test-trail)
+   (:base \"trail\" :path ,(muse-settings-local-path))))
+
+Finally, you need to add publishing support. I do this in my header and
+footer files. So
+ 
+<lisp>(muse-trail-html-navigation-table)</lisp>
+
+adds a cutesy little navigation bar in which I put in my header.xml. Then
+in my footer.xml I add
+
+<lisp>(muse-trail-html-trail-if-trail)</lisp>
+
+which adds a un-numbered listing of the trail underneath the current file,
+if it has one. Finally, you need an index file called \"trail-index.muse\".
+This will be the index for the entire project. 
+
+
+Notes
+
+A few more things to add here. Stylesheet support is needed. Full trail
+information for placement above or to the left of the main content would be
+good. A \"<trail>\" tag to control where the trail listing occurs. 
+
+Finally I want to do some nifty stuff, like adding timing information to
+each item, and adding it up for entire trail. 
+
+Status
+
+
+This code is in active development. The core stuff works, but the
+documentation is lacking and there are some nice features that have not
+been described yet. 
+
+Feedback is welcome. 
+
+
+begin basic data structure stuff")

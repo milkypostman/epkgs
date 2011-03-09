@@ -1,0 +1,21 @@
+(:repository (git . "https://github.com/myuhe/inlineR.el.git")
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL"
+ :maintainer ("myuhe")
+ :provided   (inlineR)
+ :required   ((("ess" ess-site)))
+ :keywords   ("convenience")
+ :homepage   "https://github.com/myuhe/inlineR.el"
+ :commentary "\
+cacoo.el is very useful.
+You should install cacoo.el.
+In detail, 
+https://github.com/kiwanami/emacs-cacoo
+
+Installation:
+
+Put the inlineR.el to your
+load-path.
+Add to .emacs:
+(require 'inlineR)")

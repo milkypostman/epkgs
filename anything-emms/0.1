@@ -1,0 +1,46 @@
+(:summary    "Integrate EMMS with `anything.el'"
+ :created    "20090212"
+ :updated    "20090512"
+ :license    "GPL-3"
+ :authors    (("Andy Stewart" . "lazycat.manatee@gmail.com"))
+ :maintainer ("Andy Stewart" . "lazycat.manatee@gmail.com")
+ :provided   (anything-emms)
+ :required   ((("anything" anything)
+	       ("emms" emms emms-playlist-mode emms-source-file)
+	       ("emms-extension" emms-extension)))
+ :keywords   ("emms" "anything")
+ :commentary "\
+Integrate EMMS with `anything.el'.
+
+Below are commands you can use:
+
+`anything-emms-playlist'
+     Play EMMS playlist with `anything'.
+`anything-emms-directory'
+     Play EMMS directory with `anything'.
+`anything-emms-file'
+     Play EMMS directory with `anything'.
+
+Or you can also make this package integrate with `anything',
+just setup like below:
+
+(setq anything-sources
+      (list
+       anything-c-source-emms-playlist
+       anything-c-source-emms-directory
+       anything-c-source-emms-file
+       ))
+
+
+Installation:
+
+Put anything-emms.el to your load-path.
+The load-path is usually ~/elisp/.
+It's set in your ~/.emacs like this:
+(add-to-list 'load-path (expand-file-name \"~/elisp\"))
+
+And the following to your ~/.emacs startup file.
+
+(require 'anything-emms)
+
+No need more.")

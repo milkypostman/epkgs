@@ -1,0 +1,21 @@
+(:repository (git . "https://github.com/yaotti/hatena-tools.git")
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-2"
+ :authors    (("Hiroshige Umino" . "yaotti@gmail.com"))
+ :maintainer ("Hiroshige Umino" . "yaotti@gmail.com")
+ :provided   (hatena-group-keyword-mode)
+ :required   ((("emacs" cl derived font-lock)
+	       ("html-helper-mode" html-helper-mode)))
+ :keywords   ("blog" "hatena")
+ :homepage   "https://github.com/yaotti/hatena-tools"
+ :commentary "\
+* hatena-group-keyword-mode.elについて
+
+このパッケージは，「はてなグループキーワードライター」をEmacsから使えるよう
+にし，はてなグループのキーワードを簡単に更新するためのメジャーモー
+ド，hatena-group-keyword-modeを提供します．hatena-group-keyword-modeは，
+html-helper-modeの派生モードとして定義されていますので，
+html-helper-modeが提供する各種機能も利用できます．
+
+なお，このプログラムはsimple-hatena-mode.el(http://coderepos.org/share/wiki/SimpleHatenaMode)を参考にさせてもらっています．")

@@ -1,0 +1,8 @@
+(:summary    "Undo/redo position"
+ :updated    "20091016"
+ :license    "GPL-2"
+ :provided   (point-undo)
+ :required   ((("emacs" cl)))
+ :commentary "\
+This package allows you to undo/redo point and window-start.
+It is like w3m's UNDO/REDO commands.")

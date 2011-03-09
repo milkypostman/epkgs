@@ -1,0 +1,33 @@
+(:summary    "A mode for editing Visual Basic programs"
+ :created    "1996"
+ :updated    "1996"
+ :license    "GPL-2"
+ :authors    (("Fred White" . "fwhite@alum.mit.edu"))
+ :maintainer ("Fred White" . "fwhite@alum.mit.edu")
+ :adapted-by ("Dave Love" . "d.love@dl.ac.uk")
+ :provided   (vbnet-mode)
+ :keywords   ("languages" "basic" "evil")
+ :homepage   "http://www.emacswiki.org/VbDotNetMode"
+ :wikipage   "http://www.emacswiki.org/VbDotNetMode"
+ :commentary "\
+Purpose of this package:
+ This is a mode for editing programs written in The World's Most
+ Successful Programming Language.  It features automatic
+ indentation, font locking, keyword capitalization, and some minor
+ convenience functions.
+
+Installation instructions
+ Put vbnet-mode.el somewhere in your path, compile it, and add the
+ following to your init file:
+
+ (autoload 'vbnet-mode \"vbnet-mode\" \"Visual Basic mode.\" t)
+ (setq auto-mode-alist (append '((\"\\\\.\\\\(frm\\\\|bas\\\\|cls\\\\)$\" .
+                                 vbnet-mode)) auto-mode-alist))
+
+Of course, under Windows 3.1, you'll have to name this file
+something shorter than visual-basic-mode.el
+
+Revisions:
+1.0 18-Apr-96  Initial version
+1.1 Accomodate emacs 19.29+ font-lock-defaults
+    Simon Marshall <Simon.Marshall@esrin.esa.it>")

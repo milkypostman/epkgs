@@ -1,0 +1,48 @@
+(:summary    "Frontend to dict client"
+ :created    "19980924"
+ :updated    "19981002"
+ :license    "GPL-2"
+ :authors    (("Alexander Vorobiev" . "sparrow@sparrow.diamant.ru"))
+ :maintainer ("Alexander Vorobiev" . "sparrow@sparrow.diamant.ru")
+ :provided   (dict)
+ :required   ((("emacs" cl)))
+ :keywords   ("dict")
+ :wikipage   "http://www.emacswiki.org/DictMode"
+ :commentary "\
+Make sure that your dict client is properly installed. It can be
+obtained from http://www.dict.org
+Then you may setq several variables. These are default values:
+
+(setq dict-pathname \"dict\")
+This should be pathname of your dict executable
+
+(setq dict-server-host nil)
+Hostname or ip address of dictd server, if 'nil' dict client will be
+called without -h option which means that it will try to connect to
+dict.org servers
+
+(setq dict-server-port nil)
+Tcp port where dictd listens
+
+(setq dict-db-name nil)
+Database name. Default (nil) is to lookup in all databases. List of
+available databases could be received using M-x dict-list-databases
+
+(setq dict-strategy nil)
+Lookup strategy to use. List of available strategies could be received
+using M-x dict-list-strategies
+
+Now you can lookup words using M-x dict-lookup-words. Default is to
+lookup the word under cursor. You can also bind this function to some
+key sequence, for example, C-c d
+
+(global-set-key [(control ?c) d] 'dict-lookup-words)
+
+
+LCD Archive Entry:
+dict|Alexander Vorobiev|sparrow@sparrow.diamant.ru|
+frontend for dict client|
+$Date: 1998/10/02 14:36:23 $|$Revision: 1.6 $||
+
+RCS $Id: dict.el,v 1.6 1998/10/02 14:36:23 root Exp $
+The revision number does NOT coincide with the version number.")

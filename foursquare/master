@@ -1,0 +1,26 @@
+(:summary    "Foursquare client for Emacs"
+ :repository (git . "https://github.com/hober/foursquare-el.git")
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-3"
+ :authors    (("Edward O'Connor" . "hober0@gmail.com"))
+ :maintainer ("Edward O'Connor" . "hober0@gmail.com")
+ :provided   (foursquare)
+ :required   ((("37emacs" rest-api)
+	       ("emacs" json url)
+	       ("geocode" geocode)))
+ :keywords   ("convenience")
+ :homepage   "https://github.com/hober/foursquare-el"
+ :commentary "\
+Bare-bones [Foursquare][] API client library for Emacs. API methods
+are all prefixed `4sq-'. No OAuth yet; I'll try adopting
+[psanford/emacs-oauth][] soon.
+
+Depends on `geocode.el` from [hober/geocode-el][] and on
+`rest-api.el` from [hober/37emacs][].
+
+[Foursquare]:            http://foursquare.com/
+[psanford/emacs-oauth]:  http://github.com/psanford/emacs-oauth
+[hober/geocode-el]:      http://github.com/hober/geocode-el
+[hober/37emacs]:         http://github.com/hober/37emacs
+[hober/md-readme]:       http://github.com/hober/md-readme")

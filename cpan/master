@@ -1,0 +1,15 @@
+(:repository (git . "https://github.com/imakado/cpan.el.git")
+ :license    "GPL-2"
+ :provided   (cpan)
+ :required   ((("anything" anything)
+	       ("emacs" browse-url cl rx url-util woman)))
+ :keywords   ("perl")
+ :homepage   "https://github.com/imakado/cpan.el"
+ :commentary "\
+Tested on Emacs 22
+
+you need these commands:
+'perl', 'perldoc', 'zcat'
+
+to check PATH,
+M-x getenv PATH")

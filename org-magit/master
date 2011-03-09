@@ -1,0 +1,11 @@
+(:summary    "Basic support for magit links"
+ :repository (git . "https://github.com/sigma/org-magit.git")
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-2"
+ :authors    (("Yann Hodique" . "yann.hodique@gmail.com"))
+ :maintainer ("Yann Hodique" . "yann.hodique@gmail.com")
+ :provided   (org-magit)
+ :required   ((("emacs" org)
+	       ("magit" magit)))
+ :homepage   "https://github.com/sigma/org-magit")

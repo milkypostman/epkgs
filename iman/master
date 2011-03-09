@@ -1,0 +1,49 @@
+(:summary    "Call man & Info viewers with completion"
+ :created    "2000"
+ :updated    "2000"
+ :license    "GPL-2"
+ :authors    (("Yuji Minejima" . "ggb01164@nifty.ne.jp"))
+ :maintainer ("Yuji Minejima" . "ggb01164@nifty.ne.jp")
+ :provided   (iman)
+ :keywords   ("local" "help")
+ :homepage   "http://homepage1.nifty.com/bmonkey/emacs/"
+ :wikipage   "http://www.emacswiki.org/Iman"
+ :commentary "\
+Call the viewers of Unix manual pages and GNU Info with completion.
+
+This package provides the `iman' command.
+The `iman' command reads the name of a Unix manual page or an item of
+GNU Info top directory in the minibuffer with completion, and shows
+that page.
+
+The job of actually showing the page is done by calling the standard
+viewers.
+
+
+Requirements:
+
+Tested with FSF Emacs 20.6.2 and XEmacs 21.1.9 on Debian GNU/Linux.
+
+You need a man(1) program. You probably have one already if you
+run a Unix like system.
+
+
+Enhancements:
+
+completing-help.el (>= version 3.3)
+  With this packege, short descriptions on completions is displayed
+  by pressing <TAB> (XEmacs only) or `?' which looks like:
+  -----------------------------------------------------------------
+  Click mouse-2 on a completion to select it.
+  In this buffer, type RET to select the completion near point.
+   
+  Possible completions are:
+  find(1)             - search for files in a directory hierarchy
+  findaffix(1)        - Interactive spelling checking
+  finding files: (find).   Listing and operating on files that mat$
+  findoidjoins(1)     - list joins on oids between PostgreSQL tabl$
+  findsuper(8)        - No manpage for this program, utility or fu$
+  -----------------------------------------------------------------
+
+  You can get completing-help.el at
+  http://homepage1.nifty.com/bmonkey/emacs/elisp/completing-help.el")

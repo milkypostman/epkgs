@@ -1,0 +1,61 @@
+(:summary    "A web server in Emacs Lisp"
+ :license    "GPL-2"
+ :authors    (("Eric Marsden" . "emarsden@laas.fr"))
+ :maintainer ("Eric Marsden" . "emarsden@laas.fr")
+ :provided   (httpd)
+ :required   ((("emacs" calendar cl)))
+ :keywords   ("games")
+ :homepage   "http://emarsden.chez.com/downloads/"
+ :wikipage   "http://www.emacswiki.org/EmacsHttpd"
+ :commentary "\
+httpd.el is an HTTP server embedded in the Emacs. It can handle GET
+and HEAD requests; adding support for POST should not be too
+difficult. Since Emacs does not (yet!) provide server sockets, you
+need a helper program to bind to the socket and forward requests.
+There are two ways of doing this: use a service like inetd to
+launch a fresh emacs instance for each incoming request, or use a
+program which forwards requests via gnuserv. The second method
+obviously provides better performance.
+
+First method: To run this from a service such as inetd, using a
+line such as the following in /etc/inetd.conf :
+
+8080 stream tcp nowait.10000 nobody /usr/bin/emacs emacs -batch \\
+   -l /path/to/httpd.el -f httpd-serve
+
+To use tcpserver instead, invoke as
+
+ /usr/bin/tcpserver 0 8080 /usr/bin/fixcrio /usr/bin/emacs -batch \\
+   -l /path/to/httpd.el -f httpd-serve
+
+(tcpserver is part of the ucspi-tcp package by Dan Bernstein; see
+<URL:http://cr.yp.to/ucspi-tcp.html>). You could also use netcat
+with an appropriate shell script emacs-httpd
+
+ while : ; do nc -l -p 8080 -e emacs-httpd ; done
+
+however for me this doesn't work, perhaps because of buffering
+problems.
+
+
+Second method (thanks to John Wiegley): use httpd-serve, a Python
+script which forwards HTTP requests to an emacs process via
+gnuserv. This method provides much better performance than the
+first, since you avoid forking a new emacs process for each
+request. Download httpd-serve from
+<URL:http://www.gci-net.com/users/j/johnw/emacs.html>
+
+
+I have only tested this code with Emacs; it may need modifications
+to work with XEmacs.
+
+
+Acknowledgements
+
+httpd.el was inspired by pshttpd, an HTTP server written in
+Postscript by Anders Karlsson <URL:http://www.pugo.org:8080/>.
+
+Thanks to John Wiegley and Cyprian Adam Laskowski.
+
+
+Code")

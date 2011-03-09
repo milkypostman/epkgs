@@ -1,0 +1,53 @@
+(:summary    "Emacs SANE frontend"
+ :repository (git . "https://github.com/jave/emsane.git")
+ :authors    (("Joakim Verona")
+	      ("GPL"))
+ :maintainer ("Joakim Verona")
+ :provided   (emsane emsane-config emsane-multi emsane-postop emsane-query)
+ :required   ((("emacs" eieio)))
+ :homepage   "https://github.com/jave/emsane"
+ :commentary "\
+Emsane is an Emancs frontend for SANE.  Emsane runs scanadf with
+various jobs, to make it easy to scan books, magazines etc.
+
+SANE is an acronym for \"scanner acces now easy\", scanner support
+available for free operating systems, see
+http://www.sane-project.org/
+
+Author: Joakim Verona, (C) FSF 2009, 2010, GPL
+
+Some interesting Emsane features:
+- convenient Emacs interface to scanning
+- handles one or several scanners
+- use different scanner settings for different sections of a book
+- the power of tramp lets you run scanners remotely over ssh
+- dired your scans
+- postprocess scans:
+  - format conversions, to djvu for instance
+  - unpaper
+- multi-scanner mode, scan different sections of a book with different scanners to speed up scanning
+
+Quick usage:
+- Define scanners and jobs in a file, \"emsane-config.el\"
+for instance. See sample.
+- load \"emsane\" and \"emsane-config\"
+- start scanning with \"emsane-scan-start
+- check out the keybindings, but mostly you use \"return\" and \"n\" while scanning.
+
+Some Emsane concepts:
+scanner - a set of options describing a scanner
+section - a list of scanner and postprocessing settings
+job  - a list of sections
+
+A section definition can contain:
+- paper size; expressed as an alias(ISO sizes or common book sizes), or width x height
+- front or duplex scan
+- color/lineart
+- resolution
+- file name pattern
+- postprocessing options
+
+emsane.el is complemented by other Emacs packages such as dired,
+and some of my own packages such as dired-sequence.el, and a patch
+to the Emacs core to optionaly use imagemagick for image display,
+so djvu files can be shown in Emacs.")

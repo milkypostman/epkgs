@@ -1,0 +1,12 @@
+(:summary    "Mouse-button chording"
+ :repository (git . "https://github.com/akrito/acme-mouse.git")
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-2"
+ :authors    (("Alex Kritikos (my gmail.com username is alex.kritikos)")
+	      ("Alex Kritikos")
+	      ("see section 'Terms'."))
+ :maintainer ("Alex Kritikos (my gmail.com username is alex.kritikos)")
+ :provided   (acme-mouse)
+ :required   ((("emacs" cl)))
+ :homepage   "https://github.com/akrito/acme-mouse")

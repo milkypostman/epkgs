@@ -1,0 +1,11 @@
+(:summary    "Eclipse like color theme function"
+ :repository (git . "https://github.com/takaken/color-theme-eclipse.git")
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-2"
+ :authors    (("Kentaro Takahashi"))
+ :maintainer ("Kentaro Takahashi")
+ :provided   (color-theme-eclipse)
+ :required   ((("color-theme" color-theme)))
+ :keywords   ("faces" "local")
+ :homepage   "https://github.com/takaken/color-theme-eclipse")

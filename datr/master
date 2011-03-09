@@ -1,0 +1,6 @@
+(:summary    "Major mode for editing DATR files"
+ :created    "2007"
+ :updated    "2007"
+ :license    "GPL-2"
+ :provided   (datr)
+ :homepage   "http://www.cis.uni-muenchen.de/~wastl/emacs/")

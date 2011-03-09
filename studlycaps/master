@@ -1,0 +1,18 @@
+(:summary    "StudlyCapify as you type"
+ :updated    "20051004"
+ :license    "GPL-2"
+ :authors    (("Harley Gorrell" . "harley@mahalito.net"))
+ :maintainer ("Harley Gorrell" . "harley@mahalito.net")
+ :provided   (StudlyCaps)
+ :wikipage   "http://www.emacswiki.org/StudlyCaps"
+ :commentary "\
+* An (ab)use of abbrev-mode.
+* Written as a Christmas gift for James, who likes StudlyCaps.
+* When StudlyCaps is activated it adds the current set of
+  StudlyCapped words in the buffer to the global abbrev
+  table.
+* If you use new StudlyCapped words rescan the buffer
+  or use the function StudlyCaps-add-word-at-point.
+  (global-set-key [f6] 'StudlyCaps-add-word-at-point)
+
+TODO: When reading the db not all the words are in StudlyCaps.")

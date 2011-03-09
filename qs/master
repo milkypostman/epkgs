@@ -1,0 +1,12 @@
+(:summary    "Search utility"
+ :created    "2004"
+ :updated    "2004"
+ :license    "GPL-2"
+ :keywords   ("convenience" "hypermedia")
+ :homepage   "http://emacs.kldp.net/~jay/emacs/"
+ :commentary "\
+Quickly search via the web search engine with one key stroke.
+sample usage:
+1. load this file into your emacs and eval:
+   (define-key mode-specific-map \"d\" 'qs-search)
+2. try \"C-c d\" and enter \"g Emacs\"")

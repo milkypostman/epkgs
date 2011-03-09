@@ -1,0 +1,15 @@
+(:created    "2010"
+ :updated    "20100829"
+ :license    "GPL-2"
+ :authors    (("Yen-Chin,Lee" . "coldnew.tw@gmail.com"))
+ :maintainer ("Yen-Chin,Lee" . "coldnew.tw@gmail.com")
+ :provided   (elscreen-vim-mode)
+ :required   ((("elscreen" elscreen)
+	       ("emacs" cl)
+	       ("vim-mode" vim)))
+ :keywords   ("vim" "elscreen")
+ :commentary "\
+use elscreen as tab in vim-mode
+
+Put this file into your load-path and the following into your ~/.emacs:
+  (require 'elscreen-vim-mode)")

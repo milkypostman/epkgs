@@ -1,0 +1,10 @@
+(:license    "GPL-2"
+ :authors    (("Tom Cook")
+	      ("Dept. of Biostatistics")
+	      ("University of Wisconsin - Madison")
+	      ("Madison")
+	      (nil . "cook@biostat.wisc.edu"))
+ :maintainer ("Tom Cook")
+ :provided   (sas sas-fontlock)
+ :required   ((("emacs" font-lock shell)))
+ :homepage   "ftp://ftp.biostat.wisc.edu/pub/cook/sas-mode/")

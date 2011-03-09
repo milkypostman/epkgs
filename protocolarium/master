@@ -1,0 +1,33 @@
+(:summary    "A set of buffer IO routines"
+ :repository (git . "https://github.com/macdice/protocolarium.git")
+ :created    "2009"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Thomas Munro" . "munro@ip9.org"))
+ :maintainer ("Thomas Munro" . "munro@ip9.org")
+ :provided   (bio clock fix fix-fields-44 memcache omnibuf pomodoro)
+ :required   ((("alert" alert)
+	       ("emacs" cl)
+	       ("spread" spread)))
+ :keywords   ("buffer" "binary" "input")
+ :homepage   "https://github.com/macdice/protocolarium"
+ :commentary "\
+This is my experimental library of input routines based on buffers.
+The general contract is that you should check how much data is
+available in the buffer before attempting to read (or peek) from it.
+This is intented to support event-based input (ie 'reactor' style),
+which is the natural way of processing input (from processes or network)
+in Emacs.
+
+There are also a couple of 'blocking' read functions, which wait for
+input -- this is completely unnatural in Emacs, but sometimes it seems
+hard to avoid in simple code (without something like continuations).
+
+TODO naming -- BIO sounds like it involves output too; ehiggs suggested
+bile (buffer input library for Emacs), following that line of thinking
+could take me to bike (k = ?)...  search continues
+
+TODO tidy
+
+TODO this is quite inefficient code, I like the API but the
+implementation needs some work")

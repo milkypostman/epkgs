@@ -1,0 +1,9 @@
+(:summary    "Helpers for s5 org export"
+ :repository (git . "https://github.com/sigma/org-s5.git")
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-2"
+ :authors    (("Yann Hodique" . "yann.hodique@gmail.com"))
+ :maintainer ("Yann Hodique" . "yann.hodique@gmail.com")
+ :provided   (org-s5)
+ :homepage   "https://github.com/sigma/org-s5")

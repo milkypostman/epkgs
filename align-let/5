@@ -1,0 +1,18 @@
+(:summary    "Align expressions in a lisp \"let\""
+ :created    "2005"
+ :updated    "2007"
+ :license    "GPL-2"
+ :authors    (("Kevin Ryde" . "user42@zip.com.au"))
+ :maintainer ("Kevin Ryde" . "user42@zip.com.au")
+ :provided   (align-let)
+ :keywords   ("languages")
+ :wikipage   "http://www.emacswiki.org/AlignLet"
+ :commentary "\
+This is a spot of code for aligning the values in a \"let\" form.  See
+examples in the docstring below.  It's designed for elisp and scheme but
+probably works with other lisp variants.
+
+The regexp-based align.el might be able to do the same as the code below,
+but it seemed to hard to get lisp nesting recognised properly.
+
+Designed for Emacs 21, works with XEmacs 21 too.")

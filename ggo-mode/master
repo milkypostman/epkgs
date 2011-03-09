@@ -1,0 +1,21 @@
+(:summary    "Gengetopt major mode"
+ :created    "2002"
+ :updated    "20020713"
+ :license    "GPL-2"
+ :authors    (("Matthew K. Junker"))
+ :maintainer ("Matthew K. Junker")
+ :provided   (ggo-mode)
+ :keywords   ("extensions" "convenience" "local")
+ :commentary "\
+A major mode for editing gengetopt files.
+
+Modify `ggo-skeleton' to suit your format.  The current contents
+are based on proposals I have made.
+
+initialization suggestions:
+(add-to-list 'auto-mode-alist '(\"\\\\.ggo\\\\'\" . ggo-mode))
+(autoload 'ggo-mode \"ggo-mode\" \"gengetopt files\" t)
+(add-to-list 'auto-insert-alist '(ggo-mode . ggo-skeleton))
+
+Written for Emacs version 21.  May or may not work with previous
+versions.")

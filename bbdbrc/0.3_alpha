@@ -1,0 +1,7 @@
+(:updated    "20020613"
+ :license    "GPL-2"
+ :authors    (("Deepak Goel" . "deego@glue.umd.edu"))
+ :maintainer ("Deepak Goel" . "deego@glue.umd.edu")
+ :provided   (bbdbrc)
+ :required   ((("emacs" cl)))
+ :homepage   "http://www.gnufans.net/~deego/emacs.html")

@@ -1,0 +1,20 @@
+(:summary    "Edit pages on an Oddmuse wiki"
+ :created    "2006"
+ :updated    "20080421"
+ :license    "GPL-2"
+ :provided   (oddmuse)
+ :required   ((("emacs" cl sgml-mode skeleton url)))
+ :homepage   "http://www.emacswiki.org/OddmuseMode"
+ :wikipage   "http://www.emacswiki.org/OddmuseMode"
+ :commentary "\
+A simple mode to edit pages on Oddmuse wikis using Emacs.
+
+Since text formatting rules depend on the wiki you're writing for,
+the font-locking can only be an approximation.
+
+Put this file in a directory on your `load-path' and
+add this to your init file:
+(require 'oddmuse)
+(setq url-proxy-services '((\"http\" . \"your.proxy.host:portnumber\")) ; if needed
+(oddmuse-mode-initialize)
+And then use M-x oddmuse-edit to start editing.")

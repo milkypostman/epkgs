@@ -1,0 +1,22 @@
+(:summary    "Contacts management"
+ :repository (git . "git://git.naquadah.org/org-contacts.git")
+ :created    "2010"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Julien Danjou" . "julien@danjou.info"))
+ :maintainer ("Julien Danjou" . "julien@danjou.info")
+ :provided   (org-contacts)
+ :required   ((("emacs" gnus gnus-art org)))
+ :keywords   ("outlines" "hypermedia" "calendar")
+ :homepage   "http://julien.danjou.info/org-contacts.html"
+ :commentary "\
+This file contains the code for managing your contacts into Org-mode.
+
+To enter new contacts, you can use `org-capture' and a template just like
+this:
+
+        (\"c\" \"Contacts\" entry (file \"~/Org/contacts.org\")
+         \"* %(org-contacts-template-name)
+:PROPERTIES:
+:EMAIL: %(org-contacts-template-email)
+:END:\")))")

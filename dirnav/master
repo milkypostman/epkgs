@@ -1,0 +1,14 @@
+(:summary    "Navigate folders and files with TAB"
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-2"
+ :authors    ((nil . "bardelli.marco@gmail.com"))
+ :maintainer (nil . "bardelli.marco@gmail.com")
+ :provided   (dirnav)
+ :required   ((("emacs" windmove)))
+ :commentary "\
+Navigate dirs with TAB and q splitting window.
+View files quickly. Suggest `dired-details'
+Features that might be required by this library:
+
+  `windmove'")

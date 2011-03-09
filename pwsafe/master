@@ -1,0 +1,48 @@
+(:summary    "Emacs interface to pwsafe"
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-2"
+ :authors    (("Stefan Reichoer"))
+ :maintainer ("Stefan Reichoer")
+ :provided   (pwsafe)
+ :homepage   "http://www.xsteve.at/prg/emacs/"
+ :commentary "\
+pwsafe.el provides an Emacs interface for pwsafe:
+http://nsd.dyndns.org/pwsafe, http://passwordsafe.sourceforge.net
+On a debian or ubuntu system, just use: apt-get install pwsafe
+to install pwsafe
+
+The latest version of pwsafe.el can be found at:
+http://www.xsteve.at/prg/emacs/
+
+Usage:
+put the following in your .emacs:
+(require 'pwsafe)
+Then run M-x pwsafe
+- if the password database file does not yet exist it will be created now
+- otherwise a list of nicknames for your stored passwords is shown
+
+Important commands:
+a: Add a new entry to the pwsafe database (see: pwsafe-primary-database)
+
+U: copy the user name for the entry at point
+P: copy the password for the entry at point
+B: copy the user name and then the password for the entry at point
+
+s u: First select an entry via ido, then perform the action as described above
+s p: \"
+s b: \"
+
+Note: If ido does not work, try to initialize it like this:
+(when (require 'ido \"ido\" t)
+  (ido-mode 'buffer))
+
+It is also possible to feed passwords from the pwsafe database
+when emacs asks for a password. This is done by advising the read-password function
+See the documentation for the variable pwsafe-feed-read-passwd-rules for details
+
+I am very interested in feedback about the usability and about
+security concerns for this package
+
+Before using pwsafe.el, I used a simple unencrypted text file
+for my passwords. So this package enhances the security for my use case.")

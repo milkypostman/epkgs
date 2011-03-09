@@ -1,0 +1,50 @@
+(:summary    "Simple mode to highlight whitespaces"
+ :created    "20020807"
+ :updated    "2002"
+ :license    "GPL-2"
+ :authors    (("Aurélien Tisné" . "address@bogus.example.com"))
+ :maintainer ("Aurélien Tisné" . "address@bogus.example.com")
+ :provided   (show-whitespace-mode)
+ :keywords   ("convenience" "editing")
+ :wikipage   "http://www.emacswiki.org/ShowWhitespaceMode"
+ :commentary "\
+Introduction:
+
+Whitespaces (spaces and tabs) are not visible by default. This package,
+when it is activated, highlights spaces and tabs. It may be useful to see
+trailing whitespaces (and to decide to use 'delete-trailing-whitespace').
+Highlight rules can be easily change to fit your need (specific highlights
+for leading and trailing spaces for instance).
+
+You can choose between two modes of highlighting:
+ - color: show whitespaces with faces
+ - mark: show whitespaces with specific characters
+Use 'cutomize-group RET show-whitespace' to see the description.
+
+Usage:
+
+Go to the appropriate buffer and press:
+  M-x show-whitespace-mode RET
+
+The function `turn-on-show-whitespace-mode' could be added to any major
+mode hook to activate Show-Whitespace Mode for all buffers in that
+mode.  For example, the following line will activate Show-Whitespace
+Mode in all SGML mode buffers:
+
+(add-hook 'sgml-mode-hook 'turn-on-show-whitespace-mode)
+
+Support:
+
+ Any comments, suggestions, bug reports or upgrade requests are welcome.
+
+Compatibility:
+
+ This version of show-whitespace has been developed with NTEmacs 21.2.1
+ under MS Windows XP (nt5.1). It has been tested on linux both in X
+ and console.
+ Please, let me know if it works with other OS and versions of Emacs.
+
+Thanks:
+
+I would like to thank Pieter Pareit for the suggestion of the mark style;
+and for his precious tips.")

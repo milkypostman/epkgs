@@ -1,0 +1,11 @@
+(:summary    "Insert a pre-defined license text"
+ :created    "2010"
+ :updated    "20101216"
+ :license    "GPL-3"
+ :authors    (("Seong-Kook Shin" . "cinsky@gmail.com"))
+ :maintainer ("Seong-Kook Shin" . "cinsky@gmail.com")
+ :provided   (xlicense)
+ :required   ((("emacs" skeleton)))
+ :keywords   ("abbrev" "convenience")
+ :commentary "\
+$Id: xlicense.el,v 1.2 2010/12/16 12:09:41 cinsk Exp $")

@@ -1,0 +1,56 @@
+(:summary    "Dedicated minibuffer frame that highlights when prompting"
+ :created    "2002"
+ :updated    "20021016"
+ :license    "GPL-2"
+ :authors    (("Neil W. Van Dyke" . "neil@neilvandyke.org"))
+ :maintainer ("Neil W. Van Dyke" . "neil@neilvandyke.org")
+ :provided   (perkymbf)
+ :required   ((("emacs" advice cl custom)))
+ :homepage   "http://www.neilvandyke.org/perkymbf/"
+ :commentary "\
+`perkymbf' makes your Emacs use a dedicated minibuffer frame that becomes
+visually highlighted whenever it is prompting for input.  The author finds
+this helpful on a large X display.
+
+`perkymbf' was developed under FSF Emacs 20.7 on a GNU/Linux system, and has
+also tested successfully under FSF Emacs 21.2.  (Unfortunately, the Emacs21
+fringe is *not* colored `perkymbf-active-background-color' when prompting.)
+`perkymbf' has not been tested on non-Un*xish systems, nor with XEmacs.
+
+To install `perkymbf', put this file somewhere in your load path, add the
+following line to your `~/.emacs' file, restart Emacs, and optionally
+customize any features you like under Environment->Perkymbf.
+
+    (when window-system (require 'perkymbf))
+
+If you wish to set `default-frame-alist' or `minibuffer-frame-alist' in
+your `~/.emacs', you should do it before loading `perkymbf', like so:
+
+    (when window-system
+      (setq minibuffer-frame-alist
+            '((width                 . 181)
+              (height                . 1)
+              (left                  . (+ 2))
+              (top                   . (- 6))
+              (title                 . \"Emacs Minibuffer\")
+              (internal-border-width . 4)))
+      (require 'perkymbf))
+
+If you later find that you have some funky package that is pretending to
+read from the minibuffer, but the minibuffer frame isn't becoming
+highlighted, add something like the following to your `~/.emacs' file (in
+this example, `funky-password-reader' is the name of the function that is
+pretending to read from the minibuffer).
+
+    (perkymbf-defadvice-echoprompter funky-password-reader)
+
+Now that you have a perky minibuffer frame, you might wish to have your X
+window manager do special handling of it.  The X window class of the
+minibuffer frame is `Emacs', and the X window name is `minibuffer'.  For
+example, if you use Larswm, your `.larswmrc' will probably have a line
+something like:
+
+    larswm.toolclass.0: Emacs~minibuffer
+
+The exact window manager configuration is left as an exercise for the
+reader.")

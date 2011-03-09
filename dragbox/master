@@ -1,0 +1,32 @@
+(:summary    "Draw a bounding box interactively"
+ :repository (git . "https://github.com/jave/dragbox.git")
+ :authors    (("Joakim Verona")
+	      ("GPL"))
+ :maintainer ("Joakim Verona")
+ :provided   (dragbox)
+ :required   ((("emacs" image-mode xml)))
+ :homepage   "https://github.com/jave/dragbox"
+ :commentary "\
+Draw a bounding box on an image interactively.
+
+Use m-x dragbox-start to try it out, enter a the name of an image
+file compatible with SVG, such as jpg or png.
+
+Then mark the upper left corner with the left mouse button.
+Mark the lower right corner with the right mouse button.
+
+The bounding box will be drawn as a grey rectangle over the
+image. This requires an Emacs compiled with SVG support.
+
+An ocr application of the  bounding box is included,
+which will require tesseract, gocr, or ocrad installed.
+
+for instance, select an image region as per above, then do:
+   m-x dragbox-ocr-gocr-image-region
+if everything works as it should,
+the image region should be ocr:ed and the text shown in the
+message area. The ocr:ed text will also be put in the kill ring.
+
+Please not that this is only alpha quality, feedback appreciated.
+
+Author: Joakim Verona, (C) FSF 2009, GPL")

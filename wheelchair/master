@@ -1,0 +1,2 @@
+(:repository (git . "https://github.com/senny/wheelchair.el.git")
+ :homepage   "https://github.com/senny/wheelchair.el")

@@ -1,0 +1,121 @@
+(:summary    "Indicate the fill column with a thin line"
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-2"
+ :authors    (("Alp Aker" . "aker@pitt.edu"))
+ :maintainer ("Alp Aker" . "aker@pitt.edu")
+ :provided   (fill-column-rule)
+ :keywords   ("convenience" "tools")
+ :homepage   "http://www.emacswiki.org/FillColumnRule"
+ :wikipage   "http://www.emacswiki.org/FillColumnRule"
+ :commentary "\
+Many modern editors and IDEs indicate the location of the fill column with
+a thin line (in design parlance, a `rule') running the length of the
+editing window.  Fill-column-rule implements this facility in Emacs.
+
+Installation
+============
+
+Put this file somewhere in your load path and put
+
+  (require 'fill-column-rule)
+
+in your .emacs.  To toggle display of the fill-column rule in a buffer,
+use the command `fcr-mode'.
+
+Under v23 and later, it is recommended that you set line-move-visual to
+nil when using fcr-mode.  To ensure that that happens add the following to
+your .emacs:
+
+  (setq fcr-handle-line-move-visual t)
+
+Then line-move-visual will be automatically set to nil when fcr-mode is
+enabled and restored to its previous value when fcr-mode is disabled.
+
+Customization
+=============
+
+See the documentation of the variables `fcr-handle-line-move-visual',
+`fcr-rule-character', `fcr-color', and `fcr-fallback-character', or use the
+Customization menu (under Convenience).
+
+Troubleshooting
+===============
+
+o If the fill-column rule is misaligned on some lines but otherwise
+  looks normal, then you're most likely not displaying the buffer
+  contents with a monospaced font.  Note that certain font-lock
+  themes set some faces so that they look monospaced aren't quite
+  so.  You can tell if that's the source of the problem by turning
+  off font-lock and resetting fcr-mode.
+
+o If the fill-column rule is a dashed (rather than uninterrupted) line,
+  and the buffer is unibyte, then that is the intended behavior.  If the
+  buffer is multibyte, the issue is one of font selection; see the next
+  section.
+
+o If activating fcr-mode increases the line spacing in the window, then
+  you need to change the font options for fcr-mode. See the next section.
+
+o If the fill-column rule looks too thick (say, has the width of a normal
+  column) or is a series of boxes, then the problem is most likely one of
+  font selection.  Again, see the next section.
+
+Font Selection
+==== =========
+
+The following remarks are pitched at an introductory level, for
+inexperienced users; apologies if others find that tedious.
+
+Fill-column-rule draws the rule using non-ascii whitespace characters; it
+depends on Emacs to find a font that can display them and that has the
+same character height as the default font in use.  Several of the problems
+described in the previous section arise when it can't do so.
+
+The solution is explicitly to request a particular font family.  To see
+which font families Emacs recognizes, evaluate the following form:
+
+  (insert (mapconcat 'identity (font-family-list) \"\\n\"))
+
+On v22 use:
+
+  (insert (mapconcat 'car (x-font-family-list) \"\\n\"))
+
+You can then ask fill-column-rule to use a specific font by setting the
+variable `fcr-font' to the name of a font family (the value should be a
+string). You might have to try various options before finding one that
+displays well on screen.
+
+If explicitly specifying the font family doesn't work, then it might be
+that the fontset in use specifies an inappropriate font for thin space
+characters, in which case the fontset specification needs to be modified
+directly.  Get a list of possible font choices (distinct from font
+*families*) by evaluating the form:
+
+  (insert (mapconcat 'identity (x-list-fonts \"10646\") \"\\n\"))
+
+When there are multiple options for a font, choose the one that is
+\"medium-normal-normal\".
+
+Now tell the fontset to use that font for a thin space:
+
+  (set-fontset-font \"fontset-foo\" #x200A
+     \"-apple-DejaVu_Sans-medium-normal-normal--0-0-0-0-m-0-iso10646-1\")
+
+(If you don't know which fontset to modify, use M-x list-fontsets to see
+the possibilities.)
+
+Known Issues
+===== ======
+
+o The rule extends only to end of the buffer contents (as opposed
+  to running the full length of the editing window).
+
+o If the buffer contents do not end in a newline, then the rule
+  extends only to the penultimate line.
+
+Todo
+====
+
+o Play well with outline minor mode and other forms of folding
+  (nxhtml mode, etc.).")

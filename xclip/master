@@ -1,0 +1,11 @@
+(:summary    "Emacs Interface to XClip"
+ :created    "20071230"
+ :updated    "20080210"
+ :license    "GPL-3"
+ :authors    (("Leo Shidai Liu" . "shidai.liu@gmail.com"))
+ :maintainer ("Leo Shidai Liu" . "shidai.liu@gmail.com")
+ :provided   (xclip)
+ :keywords   ("convenience" "tools")
+ :commentary "\
+This code provides an Emacs interface to the tool with the same
+name on http://people.debian.org/~kims/xclip/.")

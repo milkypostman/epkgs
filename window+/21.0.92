@@ -1,0 +1,24 @@
+(:summary    "Extensions to `window.el'"
+ :created    "19960125"
+ :updated    "20110104"
+ :license    "GPL-2"
+ :authors    (("Drew Adams"))
+ :maintainer ("Drew Adams")
+ :provided   (window+)
+ :keywords   ("internal" "window")
+ :commentary "\
+Extensions to `window.el'.
+
+
+ ***** NOTE: The following function defined in `window.el' has been
+             REDEFINED HERE:
+
+ `count-windows' -
+    Only use arg MINIBUF if current frame has a minibuffer.
+
+ `quit-window' - Call `delete-window' inside `condition-case'.
+
+
+ This file should be loaded after loading the standard GNU file
+ `window.el'.  So, in your `~/.emacs' file, do this:
+ (eval-after-load \"window\" '(require 'window+))")

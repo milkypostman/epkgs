@@ -1,0 +1,6 @@
+(:repository (hg . "http://www.yatex.org/hgrepos/yatex")
+ :provided   (yahtml yatex yatex19 yatexadd yatexenv yatexgen yatexhie yatexhks yatexinf yatexlib yatexmth yatexprc yatexsec)
+ :required   ((("comment" comment)
+	       ("emacs" font-lock info)))
+ :homepage   "http://www.yatex.org/"
+ :wikipage   "http://www.emacswiki.org/YaTeX")

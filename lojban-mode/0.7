@@ -1,0 +1,44 @@
+(:summary    "Lojban text mode w/ syntactical highlighting"
+ :created    "20021121"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("Michele Bini"))
+ :maintainer ("Michele Bini" . "mibin@libero.it")
+ :provided   (lojban lojban-mode)
+ :required   ((("emacs" font-lock)))
+ :keywords   ("lojban" "languages")
+ :homepage   "http://www.emacswiki.org/LojbanMode"
+ :wikipage   "http://www.emacswiki.org/LojbanMode"
+ :commentary "\
+This file provides a specialized minor mode for lojban text.
+
+It includes syntactical highlighting for lojban words.
+The three basic word types (cmavo, cmene, and brivla), sentence
+separators and attitudinal indicators are highlighted with
+different faces.
+
+There is specialized support for `outline-mode' with valid lojban
+headers, though this is quite an experimental feature.
+
+Where ordinary outlines would look like these:
+   * Header 1
+   ** Subheader 1
+   ** Subheader 2
+   ** Subheader 3
+
+In lojban mode you can use the cmavo ni'o in a similar (though
+reversed) way you could use asterisks.
+   ni'oni'o pamoi tcita
+   ni'o pamoi tcita
+   ni'o remoi tcita
+   ni'o cimoi tcita
+
+This file requires lojban.el, a lojban utility function library you
+should have received in the same way you received this file.
+
+Typical user .emacs configuration:
+    (setq load-path
+      (cons \"/path/to/lojban-mode.el/and/lojban.el\"
+        load-path))
+    (autoload 'lojban-mode \"lojban-mode\" nil t)
+Additional configuration is available via M-x customize lojban-mode")

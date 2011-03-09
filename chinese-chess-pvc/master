@@ -1,0 +1,16 @@
+(:summary    "A chinese chess computer player"
+ :created    "2007"
+ :updated    "20070215"
+ :license    "GPL-2"
+ :authors    ((nil . "wenbinye@163.com"))
+ :maintainer (nil . "wenbinye@163.com")
+ :provided   (chinese-chess-pvc)
+ :required   ((("chinese-chess" chinese-chess)
+	       ("emacs" cl)))
+ :commentary "\
+This is NOT the computer player, it's just a front end of a ucci program.
+You can get a ucci program from http://www.elephantbase.net/, then set
+chinese-chess-pvc-program to the program.
+
+Put this file into your load-path and the following into your ~/.emacs:
+  (require 'chinese-chess-pvc)")

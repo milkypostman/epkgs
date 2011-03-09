@@ -1,0 +1,7 @@
+(:summary    "Library for ruby/elisp interaction"
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-2"
+ :provided   (relisp)
+ :homepage   "http://rubyforge.org/frs/download.php/63431/relisp-1.0.1.tgz"
+ :wikipage   "http://www.emacswiki.org/ReLisp")

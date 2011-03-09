@@ -1,0 +1,24 @@
+(:summary    "Quickly insert a newsgroup name into a buffer using completion"
+ :created    "2001"
+ :updated    "2001"
+ :license    "GPL-2"
+ :provided   (ngn)
+ :required   ((("emacs" cl)))
+ :homepage   "http://www.davep.org/emacs/"
+ :commentary "\
+ngn.el provides commands for quickly inserting a newsgroup name into a
+buffer.
+
+The latest ngn.el is always available from:
+
+  <URL:http://www.davep.org/emacs/#ngn.el>
+
+INSTALLATION:
+
+o Drop ngn.el somwehere into your `load-path'. Try your site-lisp
+  directory for example (you might also want to byte-compile the file).
+
+o Add the following autoload statements to your ~/.emacs file:
+
+  (autoload 'ngn-insert-name \"ngn\" \"Insert a newsgroup name at `point'\" t)
+  (autoload 'ngn-insert-url  \"ngn\" \"Insert a newsgroup URL at `point'\" t)")

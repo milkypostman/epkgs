@@ -1,0 +1,39 @@
+(:summary    "Calendar functions for the Roman Catholic liturgical calendar"
+ :created    "2002"
+ :updated    "2002"
+ :license    "GPL-2"
+ :authors    (("Bill White" . "billw@wolfram.com"))
+ :maintainer ("Bill White" . "billw@wolfram.com")
+ :provided   (cal-benedictine cal-catholic cal-catholic-diary cal-dominican cal-franciscan cal-particular cal-sanctoral cal-sanctoral-updates cal-seasonal cal-seasonal-updates)
+ :required   ((("emacs" cal-menu calendar)))
+ :keywords   ("calendar")
+ :homepage   "http://members.wri.com/billw/creed/catholic-calendar/index.html"
+ :commentary "\
+This collection of functions implements the features of calendar.el
+and diary.el that deal with the Roman Catholic liturgical calendar.
+
+Comments, corrections, and improvements should be sent to
+
+Bill White
+billw@wolfram.com
+Wolfram Research
+100 Trade Center Drive
+Champaign Illinois 61820
+
+
+Credits
+
+-- Kenneth G. Bath and his ROMCAL program. See
+   <url:http://romcal.homepage.com/index.html>
+
+-- Tom McGinnis for ldate.el and the Franciscan calendar:
+<url:http://www.andrew.cmu.edu/~tfm/romcal/romcal-source.html> and
+for fixing the code for the second part of Ordinary Time.
+
+-- Daily Roman Missal, 4th ed., Socias
+
+-- The Order of Prayer In the Liturgy of the Hours and Celebration
+   of the Eucharist, 1999, 2000 and 2001 editions, Paulist Press.
+
+
+Code:")

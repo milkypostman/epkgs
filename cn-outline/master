@@ -1,0 +1,12 @@
+(:summary    "Minor mode for column-number-base line folding"
+ :repository (git . "https://github.com/wakaran/cn-outline.git")
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("kitokitoki" . "morihenotegami@gmail.com"))
+ :maintainer ("kitokitoki" . "morihenotegami@gmail.com")
+ :provided   (cn-outline)
+ :keywords   ("outliner")
+ :homepage   "https://github.com/wakaran/cn-outline"
+ :commentary "\
+C-u 3 C-x $ 相当。")

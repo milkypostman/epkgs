@@ -1,0 +1,20 @@
+(:summary    "Display formfeed with horizontal line"
+ :created    "2009"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Kevin Ryde" . "user42@zip.com.au"))
+ :maintainer ("Kevin Ryde" . "user42@zip.com.au")
+ :provided   (formfeed-hline)
+ :required   ((("emacs" disp-table)))
+ :keywords   ("frames")
+ :homepage   "http://user42.tuxfamily.org/formfeed-hline/index.html"
+ :commentary "\
+`M-x formfeed-hline-mode' global minor mode displays control-L formfeeds
+as a horizontal line like
+
+    ^L-------------------------------------
+
+The dashes follow the window width and the face is `escape-glyph' like
+the default ^L display.  The ^L is still shown so it's familiar and
+hopefully can't be confused with a literal line of dashes.  See the
+docstring in `formfeed-hline-mode' below for more.")

@@ -1,0 +1,7 @@
+(:repository (git . "https://github.com/omouse/processing-emacs.git")
+ :created    "2008"
+ :updated    "2009"
+ :license    "GPL-3"
+ :provided   (processing-mode)
+ :required   ((("emacs" cl compile)
+	       ("yasnippet" yasnippet))))

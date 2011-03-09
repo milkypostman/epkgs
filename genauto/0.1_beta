@@ -1,0 +1,7 @@
+(:updated    "20090227"
+ :license    "GPL-2"
+ :authors    (("Deepak Goel" . "deego@gnufans.org"))
+ :maintainer ("Deepak Goel" . "deego@gnufans.org")
+ :provided   (genauto)
+ :required   ((("emacs" cl)))
+ :homepage   "http://www.gnufans.net/~deego/emacs.html")

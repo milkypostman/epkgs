@@ -1,0 +1,7 @@
+(:summary    "Random RMAIL utilities"
+ :created    "19950421"
+ :updated    "19950601"
+ :authors    (("Noah Friedman" . "friedman@prep.ai.mit.edu"))
+ :maintainer ("Noah Friedman" . "friedman@prep.ai.mit.edu")
+ :provided   (rmail-frobs)
+ :homepage   "ftp://ftp.splode.com/pub/users/friedman/emacs-lisp/")

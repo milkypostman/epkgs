@@ -1,0 +1,11 @@
+(:summary    "Interact with PHPUnit"
+ :repository (git . "https://github.com/ieure/phpunit-el.git")
+ :created    "20081201"
+ :updated    "20070102"
+ :license    "GPL-3"
+ :authors    (("Ian Eure"))
+ :maintainer ("Ian Eure" . "ian.eure@gmail.com")
+ :provided   (phpunit)
+ :required   ((("emacs" compile)))
+ :keywords   ("php" "phpunit" "xunit" "tests")
+ :homepage   "https://github.com/ieure/phpunit-el")

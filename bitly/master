@@ -1,0 +1,25 @@
+(:summary    "Shorten URLs with bit.ly from emacs"
+ :repository (git . "https://github.com/vivekhaldar/bitly.el.git")
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-2"
+ :authors    (("Vivek Haldar" . "vh@vivekhaldar.com"))
+ :maintainer ("Vivek Haldar" . "vh@vivekhaldar.com")
+ :provided   (bitly)
+ :required   ((("emacs" thingatpt url)))
+ :homepage   "https://github.com/vivekhaldar/bitly.el"
+ :wikipage   "http://www.emacswiki.org/BitLy"
+ :commentary "\
+bitly.el allows shortening URLs through the api the bit.ly service
+provides. See http://code.google.com/p/bitly-api/ for info about
+the bit.ly api service.
+
+Installation:
+You will need to register with bit.ly and get an API key. Customize
+the variables bitly-username and bitly-api-key.
+
+Description:
+Interactive functions:
+bitly-shorten
+    Shorten a URL (prompted for in the minibuffer) and insert at
+    point.")

@@ -1,0 +1,91 @@
+(:summary    "Project scope with transparent tags files"
+ :created    "20091211"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Paul M. Rodriguez" . "paulmrodriguez@gmail.com"))
+ :maintainer ("Paul M. Rodriguez" . "paulmrodriguez@gmail.com")
+ :provided   (projector)
+ :required   ((("emacs" cl dired-x find-dired grep tramp))
+	      (("emacs" ede)))
+ :keywords   ("tools" "convenience" "files" "unix")
+ :homepage   "http://gopher.ruricolist.com:70/lisp/"
+ :commentary "\
+Projector's purpose is to fit the concept of a project to Emacs
+habits.  Its features build on existing libraries.  Its internal
+structure maps to the file system.  Individual projects are
+configured by editing text files---there are no special interfaces
+to learn and no knowledge of Emacs Lisp is required.  It is
+designed to be both easy to use and easy to extend.  Projector does
+not try to be an IDE; just Emacs plus projects.
+
+Projector is conceptually simple: a project is just a tags file.
+Regenerating the tags file is done asynchronously using find to
+pipe a list of files to etags.  This means that Projector has to do
+very little internally, keeping it fast.  The tags file is
+regenerated after every save, so Projector is always up-to-date.
+(The essential difference between Projector and the tags facility
+is that Projector sets and accesses tags files on a buffer-local
+basis only.  Everything else builds on this.)
+
+Usage
+
+Your system must have `find' and `etags'.
+
+If Projector.el is in your load-path, call `projector-mode' to
+activate it.  By default Projector commands use C-z as their
+prefix, to keep project-scoped commands as close as possible to the
+muscle memory of their models.  Customize `projector-prefix' to
+change this.
+
+You create and load a project in the same way: open any file in the
+project and simply call any Projector command.  Projector will
+prompt for the root of the project if it does not exist.  The rest
+is handled in the background.
+
+Configuration
+
+Global configuration is done with Customize.  Per-project
+configuration is done by editing two files for each project: the
+ignores file and the conf file.
+
+The ignores file is a list of names or glob patterns, one per line,
+to be excluded from the project.  The concept and syntax imitates a
+version-control system's dot-ignore file.  Open the ignores file of
+the current project for editing with `projector-edit-ignores'.
+
+The conf file is a list of keys and values, one per line.  The keys
+may be any variable in Emacs, and the value may be any value that
+Emacs considers safe.  For example, to make a project read-only
+(useful for reading code), put the following line in its conf:
+     projector-read-only t
+(Note the conf file is just a front-end for `dir-locals'.)
+
+Extending
+
+Functions that other programs might want to use generally begin
+with projector-read, projector-list, or projector-do.  New project
+commands should use `make-projector-command' to ensure that the
+project is active.
+
+A project is just a tags file.  Tags files are kept in
+subdirectories of `projector-tags-dir'.  By default this is a
+subdirectory of `user-emacs-directory'.  Thus the tags file for
+/home/user/project1 as a project root would be
+/home/user/.emacs.d/tags/home/user/project1/TAGS.  However
+Projector will use--and overwrite--an existing tags file in the
+project root if that is present.
+
+Regenerating the tags file is done asynchronously using find to
+pipe a list of files to etags.  The parameters for the find command
+are generated the same way `rgrep' does it--by parsing
+`vc-directory-exclusion-list' and `completion-ignored-extensions'
+(along with any patterns specified in the ignores file).
+
+If you want a function to be assignable on a project-local basis to
+`projector-find-file-function', `projector-find-tag-function',
+`projector-completing-read-function' or `projector-vc-function', it
+must have a non-nil projector-safe property.
+
+TODO: a default conf file?  A series of questions for conf?  'ask as a value?
+file-truename for finding project.
+use widgets for conf, targets, ignores, &c. (get sym 'custom-type).")

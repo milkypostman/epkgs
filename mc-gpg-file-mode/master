@@ -1,0 +1,61 @@
+(:summary    "Automatically gpg decrypt/encrypt files ending with '.gpg'"
+ :created    "2004"
+ :updated    "2004"
+ :license    "GPL-2"
+ :authors    (("Josef Bauer"))
+ :maintainer ("Josef Bauer")
+ :provided   (mc-gpg-file-mode)
+ :required   ((("mailcrypt" mailcrypt)))
+ :commentary "\
+Abstract:
+
+This mode helps you to handle gpg encrypted files in emacs
+comfortably. This can be useful to store secrets (passwords etc.)
+When you open a file with ending 'gpg' it gets decrypted and
+displayed in emacs and it gets encrypted just before you save
+it. Similar to auto-compression-mode for '.gz' files just that you
+need your pass-phrase for decryption.
+
+How to use this:
+
+* make sure that mailcrypt is installed and functional
+
+* Put this file in a place where emacs can find it. e.g. put this
+  in your .emacs file:
+
+  (setq load-path (cons (expand-file-name \"~/sw/share/emacs/site-lisp\") load-path)) 
+
+  and put this file in the directory ~/sw/share/emacs/site-lisp
+
+* Put this in your .emacs file:
+
+  (require 'mailcrypt)
+  (mc-setversion \"gpg\")
+  (require 'mc-gpg-file-mode)
+
+* Optionally put something like this in your .emacs if your gpg
+  user id does not match your account name or such
+
+  (setq mc-gpg-user-id \"josef.bauer.nospam@web.de\")
+
+* Just open a gpg encrypted file in emacs and 'hope' that it gets
+  decrypted after loading
+
+Dependencies:
+
+mailcrypt as found at http://mailcrypt.sourceforge.net. This
+version of mc-gpg-file-mode should work with mailcrypt version
+3.5.8.
+
+Compatability:
+
+This version of mc-gpg-file-mode was tested with (GNU) emacs
+21.3.1, gpg 1.2.4 and mailcrypt 3.5.8 on linux 2.6 (SuSE 9.1).
+
+History:
+
+For a long time I used an encrypted file for passwords and such
+that I manually en- and decrypted using mailcrypt in emacs. Then I
+started to write a generic mode that decrypted the buffer after
+loading. When I found mc-auto-encrypt.el I extended my mode to
+automatically encrypt the file before writing.")

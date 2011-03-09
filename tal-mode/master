@@ -1,0 +1,26 @@
+(:summary    "Handles the Tandem/NSK/Guardian TAL & PTAL languages"
+ :created    "2001"
+ :updated    "2004"
+ :license    "GPL-2"
+ :authors    (("Rick Bielawski" . "rbielaws@i1.net"))
+ :maintainer ("Rick Bielawski" . "rbielaws@i1.net")
+ :provided   (tal-mode)
+ :required   ((("column-marker" column-marker)
+	       ("emacs" imenu which-func)
+	       ("tal-indent" tal-indent)))
+ :keywords   ("languages" "extensions" "tandem" "guardian" "nsk" "tal" "ptal")
+ :homepage   "http://www.emacswiki.org/TalMode"
+ :wikipage   "http://www.emacswiki.org/TalMode"
+ :commentary "\
+TAL is Tandem's Transaction Application Language.
+pTAL is the newer 'portable' version of the language.
+
+Keywords as of G06.05 are recognized by this version of tal-mode.
+TAL words not supported in pTAL are highlighted with a warning face.
+
+Both ! and -- style comments are handled correctly (I think).
+
+Movement by balanced expressions is supported.  That is, begin/end pairs
+  are recognized.
+
+imenu recognizes ?section <name>, ?page <name> and <type> PROC <name>.")

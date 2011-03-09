@@ -1,0 +1,30 @@
+(:summary    "Org-links to OSM maps"
+ :repository (git . "https://github.com/SebastianRose/org-osm.git")
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Sebastian Rose")
+	      ("sebastian_rose gmx de"))
+ :maintainer ("Sebastian Rose")
+ :provided   (org-osm-link osm-maps)
+ :required   ((("emacs" org)))
+ :homepage   "https://github.com/SebastianRose/org-osm"
+ :commentary "\
+Add a special Org link type, that, when clicked, opens an
+SVG image of a certain track.
+
+Example link:
+  [[track:((12.0399212 14.919293)(32.12394 15.342345))FILE.svg][Track]]
+
+An link's path consists of a list of coordinates and the
+filename.  As usual, the description part (\\\"Track\\\" in
+this case) is optional.
+See the documentation for `osm-track-regexp' for a
+description of the coordinates.
+
+Installation
+------------
+
+Make sure `osm-maps.el' and `org-osm-link.el' are in your
+`load-path' and add this to your emacs setup:
+    (require 'org-osm-link)")

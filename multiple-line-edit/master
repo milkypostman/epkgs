@@ -1,0 +1,160 @@
+(:summary    "Edit multiple line at a time"
+ :repository (git . "https://github.com/k-talo/multiple-line-edit.el.git")
+ :created    "20101010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :provided   (multiple-line-edit)
+ :required   ((("emacs" cl easymenu)))
+ :keywords   ("abbrev" "convenience" "emulations" "wp")
+ :homepage   "https://github.com/k-talo/multiple-line-edit.el"
+ :commentary "\
+Overview
+========
+This library provides `multiple line edit' feature.
+
+You can edit each side, leading and trailing edge, of
+multiple line with this library.
+
+
+INSTALLING
+==========
+To install this library, save this file to a directory in your
+`load-path' (you can view the current `load-path' using \"C-h v
+load-path RET\" within Emacs), then add the following line to your
+.emacs startup file:
+
+   (require 'multiple-line-edit)
+
+
+USING
+=====
+To start multiple line edit, follow the instructions described
+below.
+
+  1. Select multiple line that you want to edit.
+
+  2. If you want to edit the leading edges of each line,
+     type `M-x mulled/edit-leading-edges RET'.
+
+     Or if you want to edit the trailing edges of each line,
+     type `M-x mulled/edit-trailing-edges RET'.
+
+     NOTE: You can run these commands by selecting menu items
+           placed in `\"Edit\" > \"Multiple Line Edit\"'.
+
+  3. When multiple line edit is activated, the cursor will be
+     appeared on each selected lines.
+
+     And then, your modification will be applied to each lines
+     at a time.
+
+     NOTE: While multiple line edit is active, indicator icons
+           will be appear on the fringes if you are running Emacs
+           on graphical environment like X Window System.
+
+          (The icon `>>' will be used for leading edges edit, and
+           the icon `<<' will be used for trailing edges edit)
+
+     While you are in multiple line editing, you can toggle leading
+     edge edit and trailing edge edit by commands `mulled/edit-leading-edges'
+     and `mulled/edit-trailing-edges'.
+
+     Note that multiple edit will be exit when the color of cursor
+     on each line is red, it means cursor position is out of the
+     range on some lines.
+
+  4. To finish multiple line edit, type `C-g', or move cursor
+     to outside of the each line.
+
+  5. If you finished multiple line edit unexpectedly, you can
+     restore multiple line edit session by command `undo'.
+
+     This behavior is customized via user option
+     `mulled/reactivate-by-undo'.
+
+Also check out the customization group
+
+  `M-x customize-group RET multiple-line-edit RET'
+
+
+COMMANDS
+========
+ `M-x mulled/edit-trailing-edges RET'
+
+     Start editing on trailing edge of multiple line.
+     
+     You have to select lines, that you want to edit at a time,
+     before you run this command.
+     
+     When called with prefix argument, cursor remains at current
+     position.
+     
+     Otherwise, cursor will be moved to beginning of the lines.
+     
+     You can abort multiple lines edit by typing \"C-g\"
+     or move cursor to outside of each line.
+
+ `M-x mulled/edit-leading-edges RET'
+
+     Start editing on leading edge of multiple line.
+     
+     You have to select lines, that you want to edit at a time,
+     before you run this command.
+     
+     When called with prefix argument, cursor remains at current
+     position.
+     
+     Otherwise, cursor will be moved to end of the lines.
+     
+     You can abort multiple lines edit by typing \"C-g\"
+     or move cursor to outside of each line.
+
+ `M-x mulled/switch-direction RET'
+
+     Switch Leading Edges Edit and Trailing Edges Edit.
+           
+     When called with prefix argument, cursor won't be moved to
+     each edges.
+           
+     Otherwise, cursor will be moved to either edge.
+     
+     You can also switch editing direction by commands
+     `mulled/edit-leading-edges' and `mulled/edit-trailing-edges'.
+
+ `C-g'
+ `M-x mulled/abort RET'
+
+     Exit from multiple line edit.
+     You can restore multiple line edit session, which aborted
+     by this command, with the command `undo'.
+
+ `M-x mulled/force-abort RET'
+     Force abort multiple line edit.
+     Try this command when multiple line edit is broken
+     by errors.
+
+
+Key map Examples
+================
+This library does not assign keys by default.
+Put lines below to your .emacs start up file then
+customize them as you like.
+
+  (global-set-key \"\\C-c<\" 'mulled/edit-trailing-edges)
+  (global-set-key \"\\C-c>\" 'mulled/edit-leading-edges)
+
+
+KNOWN PROBLEMS
+==============
+- Codes aside, this document should be rewritten.
+  My English sucks :-(
+
+- Multiple line edit won't work with commands that sets
+  non-nil value to the variable `inhibit-modification-hooks'
+  like `YASnippet'.
+ 
+  We wrote experimental patches to run `YASnippet' with
+  `multiple-line-edit', put a line below in your .emacs startup
+  file if you are interested in.
+ 
+     (mulled/experimental/install-yas-support)")

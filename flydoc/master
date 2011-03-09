@@ -1,0 +1,25 @@
+(:created    "2008"
+ :updated    "2008"
+ :license    "GPL-3"
+ :authors    (("MATSUYAMA Tomohiro" . "t.matsuyama.pub@gmail.com"))
+ :maintainer ("MATSUYAMA Tomohiro" . "t.matsuyama.pub@gmail.com")
+ :provided   (flydoc)
+ :required   ((("emacs" cl easy-mmode thingatpt)))
+ :keywords   ("convenience")
+ :commentary "\
+To use flydoc, put the following code into your ~/.emacs:
+
+(require 'flydoc)
+(flydoc-default-setup)
+(global-flydoc-mode 1)
+(global-set-key \"\\C-ce\" 'flydoc-explain)
+
+TODO more general
+TODO remove require
+TODO documentation
+TODO multi document support
+TODO semantic support
+TODO autoload
+TODO hightlight (partially done)
+TODO refactoring
+TODO celdoc")

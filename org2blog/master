@@ -1,0 +1,12 @@
+(:summary    "Blog from Org mode to wordpress"
+ :repository (git . "https://github.com/punchagan/org2blog.git")
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Puneeth Chaganti" . "punchagan+org2blog@gmail.com"))
+ :maintainer ("Puneeth Chaganti" . "punchagan+org2blog@gmail.com")
+ :provided   (org2blog org2blog-autoloads)
+ :required   ((("emacs" org)
+	       ("metaweblog" metaweblog)
+	       ("xml-rpc" xml-rpc)))
+ :homepage   "https://github.com/punchagan/org2blog")

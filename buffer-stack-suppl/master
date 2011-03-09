@@ -1,0 +1,8 @@
+(:created    "2010"
+ :updated    "20101222"
+ :license    "GPL-2"
+ :provided   (buffer-stack-suppl)
+ :required   ((("emacs" cl)))
+ :commentary "\
+Put this file into your load-path and the following into your ~/.emacs:
+  (require 'buffer-stack-suppl)")

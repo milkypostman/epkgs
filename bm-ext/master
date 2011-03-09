@@ -1,0 +1,4 @@
+(:license    "GPL-3"
+ :provided   (bm-ext)
+ :required   ((("bm" bm)
+	       ("emacs" cl))))

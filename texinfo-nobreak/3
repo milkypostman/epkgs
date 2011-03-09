@@ -1,0 +1,15 @@
+(:summary    "Texinfo line break workarounds"
+ :created    "2006"
+ :updated    "2008"
+ :license    "GPL-3"
+ :authors    (("Kevin Ryde" . "user42@zip.com.au"))
+ :maintainer ("Kevin Ryde" . "user42@zip.com.au")
+ :provided   (texinfo-nobreak)
+ :keywords   ("tex")
+ :commentary "\
+This is a spot of code to avoid line breaks in texinfo source files at
+places makeinfo doesn't handle quite right, by setting
+fill-nobreak-predicate to avoid bad breaks with fill-paragraph etc
+(including when using filladapt.el).
+
+Designed for Emacs 21 and up.")

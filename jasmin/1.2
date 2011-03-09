@@ -1,0 +1,44 @@
+(:summary    "Major editing mode for Jasmin Java bytecode assembler files"
+ :created    "2002"
+ :updated    "20021016"
+ :license    "GPL-2"
+ :authors    (("Neil W. Van Dyke" . "neil@neilvandyke.org"))
+ :maintainer ("Neil W. Van Dyke" . "neil@neilvandyke.org")
+ :provided   (jasmin)
+ :required   ((("emacs" faces font-lock)))
+ :homepage   "http://www.neilvandyke.org/jasmin-emacs/"
+ :wikipage   "http://www.emacswiki.org/JasminMode"
+ :commentary "\
+THIS PACKAGE IS NO LONGER BEING MAINTAINED.
+
+`jasmin.el' is an Emacs major mode for editing Jasmin Java bytecode
+assembler files.
+
+Major features are:
+
+  * Indenting, with a little non-indenting formatting thrown in.
+
+  * Font-lock fontifying.  (If you find this to be too slow, set
+    `jasmin-fontify-instructions' to nil.)
+
+  * Quick-reference help on instructions and directives.
+
+The absolute easiest way to install this if you're not yet an Emacs weenie
+is to copy this file to some directory (say, `/home/joebob/emacs/'), and put
+something like the following in your `.emacs' file:
+
+    (load \"/home/joebob/emacs/jasmin.el\")
+
+As you might suspect, the easiest way isn't the best way, but this'll get
+you by if you're in a hurry.
+
+This package was tested with GNU Emacs 19.31, and should work with any
+recent version.  It'll probably work with the prodigal XEmacs too.
+
+Used as references were Jonathan Meyer's Jasmin documentation (Jul 1996,
+`http://found.cs.nyu.edu/meyer/jasmin/'), and a draft JavaSoft \"Java Virtual
+Machine Specification\" (1.0 Beta, 22 Aug 1995,
+`http://www.javasoft.com/doc/language_vm_specification.html').  At this
+writing, the Java VM book Meyer co-authored with Troy Downing
+(O'Reilly&Associates, ISBN 1-56592-194-1) has not yet been published.  Sun
+also has a Java VM book due out any day now (Sun/Addison-Wesley).")

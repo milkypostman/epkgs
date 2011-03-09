@@ -1,0 +1,17 @@
+(:summary    "Emacs ebook viewer"
+ :repository (git . "https://github.com/ryebread/ebv.git")
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-2"
+ :authors    (("Liubin"))
+ :maintainer ("Liubin")
+ :provided   (ebv)
+ :required   ((("emacs" cl parse-time url url-http xml)
+	       ("w3m" w3m)))
+ :keywords   ("ebook")
+ :homepage   "https://github.com/ryebread/ebv"
+ :commentary "\
+A book search and view client.
+
+
+Your should add the following to your Emacs configuration file:")

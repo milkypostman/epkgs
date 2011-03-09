@@ -1,0 +1,11 @@
+(:summary    "Functions for dealing with arch/tla completions"
+ :created    "2004"
+ :updated    "2004"
+ :license    "GPL-2"
+ :authors    (("Sacha Chua" . "sacha@free.net.ph"))
+ :maintainer ("Sacha Chua" . "sacha@free.net.ph")
+ :provided   (pcmpl-arch)
+ :required   ((("emacs" executable pcomplete)))
+ :commentary "\
+These functions provide completion rules for the `tla' tool of the
+arch revision control system.")

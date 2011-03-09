@@ -1,0 +1,13 @@
+(:summary    "Micro minimal object system for GNU Emacs Lisp"
+ :repository (git . "https://github.com/dto/eon.git")
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-3"
+ :authors    (("David O'Toole" . "dto@gnu.org"))
+ :maintainer ("David O'Toole" . "dto@gnu.org")
+ :provided   (eon)
+ :required   ((("emacs" cl)))
+ :keywords   ("oop")
+ :wikipage   "http://www.emacswiki.org/EonObjects"
+ :commentary "\
+FIXME")

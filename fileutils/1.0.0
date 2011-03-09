@@ -1,0 +1,17 @@
+(:summary    "Unix utils as emacs functions"
+ :created    "2000"
+ :updated    "2000"
+ :license    "GPL-2"
+ :authors    (("Kevin A. Burton" . "burton@openprivacy.org"))
+ :maintainer ("Kevin A. Burton" . "burton@openprivacy.org")
+ :provided   (fileutils)
+ :keywords   ("fileutils" "unix" "commands")
+ :commentary "\
+This package provides a set of emulated UNIX commands which are provided by
+almost all POSIX compliant Operating Systems.  The real commands are not
+executed themselves, this is all done through ELisp.  All of the commands
+provided here are interactive.
+
+Note that in order to correctly emulate these commands there is no command
+prefix and since these have short names (md, ls, mv, etc) they could conflict
+with future Emacs lisp functions.")

@@ -1,0 +1,10 @@
+(:summary    "Mode for editing Factor source"
+ :repository (git . "git://factorcode.org/git/factor.git")
+ :created    "2008"
+ :updated    "2010"
+ :authors    (("Jose Antonio Ortega Ruiz" . "jao@gnu.org"))
+ :maintainer ("Jose Antonio Ortega Ruiz" . "jao@gnu.org")
+ :provided   (factor-mode fuel-autodoc fuel-base fuel-completion fuel-connection fuel-debug fuel-debug-uses fuel-edit fuel-eval fuel-font-lock fuel-help fuel-listener fuel-log fuel-markup fuel-menu fuel-mode fuel-popup fuel-refactor fuel-scaffold fuel-stack fuel-syntax fuel-table fuel-xref)
+ :required   ((("emacs" advice button cl comint etags font-lock ring thingatpt)))
+ :keywords   ("languages" "fuel" "factor")
+ :homepage   "http://gitweb.factorcode.org/gitweb.cgi?p=factor/.git")

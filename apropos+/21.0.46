@@ -1,0 +1,13 @@
+(:summary    "Extensions to `apropos.el'"
+ :created    "20000622"
+ :updated    "20110103"
+ :license    "GPL-2"
+ :authors    (("Drew Adams"))
+ :maintainer ("Drew Adams")
+ :provided   (apropos+)
+ :required   ((("emacs" apropos)))
+ :keywords   ("help")
+ :commentary "\
+New command `apropos-user-options'.
+
+ It only lists user-definable variables.")

@@ -1,0 +1,7 @@
+(:created    "2010"
+ :updated    "2010"
+ :license    "GPL-2"
+ :provided   (find-file-in-tags)
+ :required   ((("emacs" etags)))
+ :homepage   "http://www.emacswiki.org/find-file-in-tags"
+ :wikipage   "http://www.emacswiki.org/find-file-in-tags")

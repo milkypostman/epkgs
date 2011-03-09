@@ -1,0 +1,15 @@
+(:summary    "Minimalist unit testing framework"
+ :created    "2008"
+ :updated    "20101212"
+ :license    "GPL-2"
+ :authors    (("rubikitch" . "rubikitch@ruby-lang.org"))
+ :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
+ :provided   (el-expectations)
+ :required   ((("emacs" cl))
+	      (("el-mock" el-mock)))
+ :keywords   ("lisp" "testing" "unittest")
+ :homepage   "http://www.emacswiki.org/EmacsLispExpectations"
+ :wikipage   "http://www.emacswiki.org/EmacsLispExpectations"
+ :commentary "\
+Emacs Lisp Expectations framework is a minimalist unit testing
+framework in Emacs Lisp.")

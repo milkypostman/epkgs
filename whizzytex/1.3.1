@@ -1,0 +1,34 @@
+(:summary    "WhizzyTeX, a WYSIWIG environment for LaTeX"
+ :created    "2001"
+ :updated    "2007"
+ :license    "GPL-2"
+ :authors    (("Didier Remy" . "didier.remy@inria.fr"))
+ :maintainer ("Didier Remy" . "didier.remy@inria.fr")
+ :provided   (whizzytex)
+ :required   ((("emacs" comint overlay timer)))
+ :homepage   "http://cristal.inria.fr/whizzytex/"
+ :wikipage   "http://www.emacswiki.org/WhizzyTeX"
+ :commentary "\
+WhizzyTeX is a minor Emacs mode for previewing LaTeX while your editing
+
+To install whizzytex, your also need its two companion files
+  
+  whizzytex             (A bash shell-script)
+  whizzytex.sty         (A LaTeX macro package)
+
+The variable whizzy-command-name should be the relative or full path
+of the executable shell-script, which should itself contain provide the
+full or relative part of whizzytex.sty in its PACKAGE variable.
+
+To install whizzytex, then add to your ~/.emacs file:
+
+  (autoload 'whizzytex-mode \"whizzytex\"
+       \"WhizzyTeX, a minor-mode WYSIWYG environment for LaTeX\" t)
+
+To launch WhizzyTeX, tyoe Esc-x whizzytex-mode
+This applies only to the current buffer.
+
+Some user variable control the setting.
+See the documentation for details by typing (once autoloaded)
+
+   Esc-x describe-function whizzytex-mode")

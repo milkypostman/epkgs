@@ -1,0 +1,30 @@
+(:summary    "Random mail frobnication utilities"
+ :created    "1992"
+ :updated    "20101102"
+ :license    "GPL-2"
+ :authors    (("Noah Friedman" . "friedman@splode.com"))
+ :maintainer (nil . "friedman@splode.com")
+ :provided   (fmailutils)
+ :required   ((("emacs" sendmail)))
+ :keywords   ("mail" "extensions")
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
+ :commentary "\
+These functions are meant to be primitives with which to build other
+header-parsing and manipulating routines.
+
+These functions use mail-header-separator to determine the end of the
+mail header list in a given buffer.  This string is by default set to
+\"--text follows this line--\" but you can change it to something else
+temporarily via a (let ...).  To hack incoming email messages in their
+presentation buffer, for example, you would bind that variable to \"\".
+
+I find it particular useful to put this in my .emacs:
+   (require 'fmailutils)
+   (add-hook 'mail-send-hook 'fmailutils-add-fcc-related-headers)
+So that my saved messages get threaded properly with VM and GNUS.
+
+Inspiration for this package came from a couple of mail-parsing
+functions written by Mike Williams around 1991 or so.
+
+New versions of this program should usually be available from
+http://www.splode.com/~friedman/software/emacs-lisp/index.html")

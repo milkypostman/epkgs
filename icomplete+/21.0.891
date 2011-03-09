@@ -1,0 +1,45 @@
+(:summary    "Extensions to `icomplete.el'"
+ :created    "19951016"
+ :updated    "20110104"
+ :license    "GPL-2"
+ :authors    (("Drew Adams"))
+ :maintainer ("Drew Adams")
+ :provided   (icomplete+)
+ :required   ((("emacs" icomplete)))
+ :keywords   ("help" "abbrev" "internal" "extensions" "local")
+ :commentary "\
+Extensions to `icomplete.el'.
+
+ Faces defined here:
+
+   `icompletep-choices', `icompletep-determined',
+   `icompletep-keys', `icompletep-nb-candidates'.
+
+ User option defined here:
+
+   `icompletep-prospects-length'.
+
+ Macros defined here (but identical to those in Emacs 23):
+
+   `with-local-quit', `with-no-input'.
+
+
+ ***** NOTE: The following functions defined in `icomplete.el'
+             have been REDEFINED HERE:
+
+   `icomplete-completions' -
+      Prepends total number of candidates.
+      Sorts alternatives alphabetically, uses different face.
+      Highlights key-binding text.
+      Appends number of remaining cycle candidates (for Icicles).
+
+   `icomplete-exhibit' -
+      Saves match-data.
+      Doesn't insert if input begins with `('
+        (e.g. `repeat-complex-command').
+      Ensures that the insertion doesn't deactivate mark.
+
+
+ This file should be loaded after loading the standard GNU file
+ `icomplete.el'.  So, in your `~/.emacs' file, do this:
+ (eval-after-load \"icomplete\" '(progn (require 'icomplete+)))")

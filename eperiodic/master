@@ -1,0 +1,16 @@
+(:summary    "Periodic table for Emacs"
+ :created    "2001"
+ :updated    "20080712"
+ :license    "GPL-2"
+ :authors    (("Matthew P. Hodges" . "mphodges@member.fsf.org"))
+ :maintainer ("Matthew P. Hodges" . "mphodges@member.fsf.org")
+ :provided   (eperiodic)
+ :required   ((("emacs" cl dired)))
+ :wikipage   "http://www.emacswiki.org/PeriodicTableForEmacs"
+ :commentary "\
+Package to display a periodic table in Emacs.
+
+The data were mostly derived from the GPeriodic package, available
+from <http://gperiodic.seul.org/>. Thanks are due to Kyle R. Burton
+<mortis@voicenet.com> for making available the raw data needed for
+this package.")

@@ -1,0 +1,74 @@
+(:summary    "Code to assist on-the-fly documentation"
+ :created    "2000"
+ :updated    "2000"
+ :license    "GPL-2"
+ :authors    (("Tom Breton" . "tehom@localhost"))
+ :maintainer ("Tom Breton" . "tehom@localhost")
+ :provided   (rmb)
+ :required   ((("emacs" cl imenu)
+	       ("psgml" psgml)
+	       ("tehom-4" tehom-4)
+	       ("tehom-psgml" tehom-psgml)
+	       (nil local-vars)))
+ :keywords   ("docs" "lisp" "local")
+ :homepage   "http://panix.com/~tehom/"
+ :commentary "\
+To use this package, you need:
+
+psgml (http://www.lysator.liu.se/projects/about_psgml.html)
+the rambledocs dtd (bundled with this distribution)
+the outline dtd (bundled with this distribution)
+tehom-psgml, my psgml extensions.
+emacs (Of course)
+imenu (Bundled with emacs 19+)
+
+Rationale:
+
+This package is meant to help organize on-the-fly ramblings that
+occur in the course of contructing code.  
+
+Writing documentation seems to be the bane of most programmers.  Of
+course when you're actually writing code, you know why you're doing
+what you're doing.  But often it never gets written down, or only
+gets jotted down later according to memory.
+
+I find that I tend to write the most and best commentary when I'm
+actually in the midst of constructing source code.  Basically I'm
+face to face with whatever needs work or doesn't work, at which
+time it's easy to say what the trouble is and what needs to be done
+about it.
+
+The problem with this approach is that it tends to leave commentary
+lying haphazardly around, spread between comments in the source and
+half-hearted attempts to organize the commentary into some sort of
+coherency in other files.
+
+The idea of the rambledocs package is that you can instantly jump
+between your source code and a dedicated, structured doc file, so
+you can document your thinking and your plans in the context of
+your actual coding work.
+
+It's not meant as a substitute for flowing commentary that explains
+individual lines of code, which properly belongs in the source code
+file.  It is appropriate for a hyer level of documentation, to
+explain overall design, rationale, musings, pitfalls, and future
+potentials and plans.
+
+It's not a substitute for changelogs either, but there is some
+overlap.
+
+I deliberately made the rambledocs dtd quite freeform, because IMO for
+this purpose it's better to err on the side of underconstraining
+the programmer than overconstraining.
+
+Limitations:
+
+For the time being, rambledocs only supports elisp.  It could be made
+to support other languages as well by rewriting just the elisp
+section and changing a few explicit calls into funcall's on
+suitable variables.
+
+Praise:
+
+imenu was extremely easy to borrow from. I commend Ake and Lars for
+the cleanness of their code.")

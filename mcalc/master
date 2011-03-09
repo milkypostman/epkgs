@@ -1,0 +1,7 @@
+(:created    "2002"
+ :updated    "2002"
+ :license    "GPL-2"
+ :provided   (mcalc)
+ :required   ((("emacs" cl)))
+ :homepage   "http://www.ii.uib.no/~hove/lisp/index.html"
+ :wikipage   "http://www.emacswiki.org/SimpleRpnCalculator")

@@ -1,0 +1,42 @@
+(:summary    "Create an Atom feed"
+ :repository (git . "https://github.com/fperrin/atom.git")
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Frédéric Perrin" . "frederic.perrin@resel.fr"))
+ :maintainer ("Frédéric Perrin" . "frederic.perrin@resel.fr")
+ :provided   (atom xml-xhtml-entities)
+ :required   ((("emacs" cl url-parse xml)))
+ :keywords   ("www" "hypermedia" "atom" "rss")
+ :homepage   "https://github.com/fperrin/atom"
+ :commentary "\
+This is a library for creating an Atom feed from a Lisp program.
+The normal usage is to create a feed with `atom-create', giving it
+a title and a Web address. Once the feed has been created, entries
+may be added to the feed, by specifying (at the minimum) a title, a
+permanent link and the content of the entry. Text-only, HTML and
+XHTML entries are supported.
+
+It is possible to produce both Atom and RSS feeds.
+
+A typical usage would look like this:
+
+(let ((my-atom-feed (atom-create \"My feed\" \"http://example.org\")))
+  ; A simple, text-only entry
+  (atom-add-text-entry
+   my-atom-feed
+   \"Hello world\"
+   \"http://example.org/hello\"
+   \"Hello the world!\")
+
+  (atom-add-xhtml-entry
+   my-atom-feed
+   \"An XHTML example\"
+   \"http://example.org/html-example\"
+   \"<p>One can also use <acronym>XHTML</acronym> in the entries.</p>\")
+
+  (atom-print my-atom-feed)
+  ;; If you prefer RSS feeds:
+  (atom-to-rss-print my-atom-feed))
+
+Full documentation is available at <http://tar-jx.bz/code/atom.html>.")

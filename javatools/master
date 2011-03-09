@@ -1,0 +1,5 @@
+(:summary    "Java functions to compile and run small java programs"
+ :license    "GPL-2"
+ :authors    (("Halil Oezdemir" . "halillix@googlemail.com"))
+ :maintainer ("Halil Oezdemir" . "halillix@googlemail.com")
+ :keywords   ("java" "programming"))

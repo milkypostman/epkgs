@@ -1,0 +1,22 @@
+(:summary    "Chinese-wubi input method in Emacs"
+ :created    "2005"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("William Xu" . "william.xwl@gmail.com"))
+ :maintainer ("William Xu" . "william.xwl@gmail.com")
+ :provided   (wubi)
+ :required   ((("emacs" quail)))
+ :homepage   "http://xwl.appspot.com/"
+ :commentary "\
+Put this file into your load-path and the following into your
+~/.emacs:
+
+(require 'wubi)
+(register-input-method
+ \"chinese-wubi\" \"Chinese\" 'quail-use-package \"wubi\" \"wubi\")
+(setq default-input-method \"chinese-wubi\")
+
+History
+
+This is forked from Yuwen Dai <daiyuwen@freeshell.org>'s wubi.el
+extension.")

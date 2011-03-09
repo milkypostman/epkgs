@@ -1,0 +1,12 @@
+(:summary    "Commands to browse and write emboss code"
+ :created    "2007"
+ :updated    "2007"
+ :license    "GPL-2"
+ :authors    ((nil . "wenbinye@gmail.com"))
+ :maintainer (nil . "wenbinye@gmail.com")
+ :provided   (emboss)
+ :required   ((("emacs" cc-mode cl etags hippie-exp)
+	       ("tempo-x" tempo-x)))
+ :keywords   ("c" "convenience")
+ :commentary "\
+For useful information, See document of `emboss-mode'.")

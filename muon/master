@@ -1,0 +1,10 @@
+(:summary    "A mode for interacting with MU*s"
+ :repository (git . "https://github.com/stesla/muon.git")
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Samuel Tesla" . "samuel@athena"))
+ :maintainer ("Samuel Tesla" . "samuel@athena")
+ :provided   (muon)
+ :required   ((("emacs" cl comint)))
+ :homepage   "https://github.com/stesla/muon")

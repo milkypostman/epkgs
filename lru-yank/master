@@ -1,0 +1,21 @@
+(:summary    "Least Recently Used stacking for kill-ring"
+ :repository (git . "https://github.com/lewang/le_emacs_LRU_yank.git")
+ :created    "20060708"
+ :updated    "20110203"
+ :license    "GPL-2"
+ :authors    (("Le Wang"))
+ :maintainer ("Le Wang (lewang.emacs!!!gmayo.com remove exclamations")
+ :provided   (LRU-yank)
+ :required   ((("emacs" cl)))
+ :homepage   "https://github.com/lewang/le_emacs_LRU_yank"
+ :wikipage   "http://www.emacswiki.org/LRU-yank"
+ :commentary "\
+Implements LRU (Least Recently Used) stacking for kill-ring.
+
+By default Emacs treats the kill-ring as a \"ring\", I find it more useful
+to move each yanked item to the top of a stack instead.  This way
+recently used (inserted) stuff are always at the top -- think alt-tab in
+Windows.
+
+Before using this package, you should try M-- M-y (negative prefix arg to
+yank-pop), as it may already do what you want.")

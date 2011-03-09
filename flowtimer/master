@@ -1,0 +1,10 @@
+(:summary    "Let yourself work in sprints"
+ :repository (git . "https://github.com/jrockway/time-utils-el.git")
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Jonathan Rockway" . "jon@jrock.us"))
+ :maintainer ("Jonathan Rockway" . "jon@jrock.us")
+ :provided   (flowtimer)
+ :keywords   ("convenience")
+ :homepage   "https://github.com/jrockway/time-utils-el")

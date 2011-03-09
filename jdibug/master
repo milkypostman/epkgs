@@ -1,0 +1,7 @@
+(:repository (svn . "http://jdibug.googlecode.com/svn")
+ :provided   (elog jdi jdibug jdibug-expr jdibug-menu jdibug-run jdibug-ui jdwp)
+ :required   ((("cedet" semantic-java)
+	       ("emacs" bindat cc-mode cl easymenu eieio)
+	       ("tree-mode" tree-mode)
+	       (nil jdibug-java-expr-wy)))
+ :homepage   "http://code.google.com/p/jdibug/")

@@ -1,0 +1,69 @@
+(:summary    "A major mode for editing screenplay files"
+ :repository (cvs . ":pserver:anonymous@cvs.savannah.nongnu.org:/sources/screenplay")
+ :created    "2000"
+ :updated    "2004"
+ :license    "GPL-2"
+ :authors    (("V. L. Simpson" . "vls@freeshell.org"))
+ :maintainer ("V. L. Simpson" . "vls@freeshell.org")
+ :provided   (screenplay)
+ :required   ((("emacs" reporter)))
+ :homepage   "http://www.nongnu.org/screenplay/"
+ :wikipage   "http://www.emacswiki.org/ScreenPlay"
+ :commentary "\
+Massive complete start-over re-write back-to-the-drawing-board
+start-from-square-one bottom-of-the-barrel-looking-up release.
+
+Screenplay mode is designed as a submission draft editor.  Which
+means that it'll make something you can send to Speilberg to be
+rejected as unsuitable by some schmuck first reader.
+
+Latest version is always available at:
+http://www.nongnu.org/screenplay/files/screenplay.el
+http://savannah.nongnu.org/cvs/?group=screenplay
+
+Installing and using screenplay.el:
+Put this file somewhere on your emacs load-path.
+Load the file with 'load-libray RET screenplay RET'.
+Open up your Academy Award Winner(TM), M-x screenplay-mode and have
+at it.
+The TAB and RET keys let you insert and edit the basic screenplay
+elements: scene headings; action blocks; dialog blocks.
+
+TAB-RET asks for and inserts a scene heading, e.g., INT. HOUSE -- DAY.
+
+TAB-TAB-RET moves into action block mode, e.g., Describing the
+house exploding.
+
+TAB-TAB-TAB-RET does the dialog thing, e.g.,
+        BOB
+  Gee, the house just
+  exploded.
+
+To edit a pre-existing screenplay element, place cursor within that
+element and execute the appropriate command with a prefix argument:
+.e.g., C-u TAB-TAB RET will reset left and right margins as needed
+for an action block.
+
+Bugs and caveats:
+
+Don't enter any spurious newlines when finished editing any one
+particular element.  Just hit the key combo for the next thing you
+want to do, e.g., INT. HOUSE -- DAY(Type TAB-TAB-RET to go into an
+action block.
+
+
+Remember kiddies:
+\"Nobody knows anything\" -- William Goldman _Adventures in the Screentrade_
+
+TODO:  Better documentation.  
+Implement project handling:  Revision control, state control, etc.
+Make the editing commands work from any point within a screenplay
+element instead of end-of-line only.
+
+Get all hard coded values into def{custom,var}'s
+
+Implement code for wrylies since I keep getting patches for them.
+
+
+Write a frikkin' screenplay instead of procrastinating with this
+thing.")

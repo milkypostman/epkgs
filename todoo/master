@@ -1,0 +1,36 @@
+(:summary    "Major mode for editing TODO files"
+ :created    "20010306"
+ :updated    "20041228"
+ :license    "GPL-2"
+ :authors    (("Daniel Lundin" . "daniel@codefactory.se"))
+ :maintainer ("Muli Ben-Yehuda" . "mulix@mulix.org")
+ :provided   (todoo)
+ :required   ((("emacs" custom easymenu outline)))
+ :keywords   ("todo" "todo" "project" "management")
+ :homepage   "http://www.mulix.org/code.html"
+ :wikipage   "http://www.emacswiki.org/ToDoo"
+ :commentary "\
+todoo.el is a mode for editing TODO files in an outline-mode fashion. 
+ It has similarities to Oliver Seidel's todo-mode.el , but todoo.el
+ has  been significantly simplified to better adhere to mine and
+ other users' needs at the time. 
+
+Installation example (~/.emacs):
+
+(autoload 'todoo \"todoo\" \"TODO Mode\" t)
+(add-to-list 'auto-mode-alist '(\"TODO$\" . todoo-mode))
+
+To show your personal todo-list:
+M-x todoo
+
+To be prompted a filename, supply any prefix to 'todoo':
+C-u M-x todoo
+
+For information on keybindings:
+C-h f todoo-mode RET
+
+Customize your todoo with:
+M-x customize-group RET  todoo RET
+
+Thanks to Kai Grossjohann for immediate feedback on the first
+version, eventually leading to this more fit-for-human-consumption version.")

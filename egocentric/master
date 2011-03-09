@@ -1,0 +1,24 @@
+(:summary    "Highlight your name inside emacs buffers"
+ :created    "20010423"
+ :updated    "20101025"
+ :license    "GPL-2"
+ :authors    (("Benjamin Drieu" . "bdrieu@april.org"))
+ :maintainer ("Benjamin Drieu" . "bdrieu@april.org")
+ :provided   (egocentric)
+ :keywords   ("convenience")
+ :homepage   "http://www.grassouille.org/emacs/index.en.html"
+ :commentary "\
+This package highlights occurrences of your own name and/or
+nickname.  Quite useful for daily kibozing.
+
+Main purpose is to be used within your favourite Emacs mailer.  To
+use egocentric.el with Gnus, simply use the following inside your
+Gnus init file.
+
+(add-hook 'gnus-article-prepare-hook 'egocentric-mode-on)
+(autoload 'egocentric-mode \"egocentric\"
+          \"Highlight your name or various keywords in buffers\")
+
+If you do not want your own mails to be highlighted when reading
+messages, you might like to use egocentric-mode-maybe and customize
+the egocentric-email-address-to-ignore variable instead.")

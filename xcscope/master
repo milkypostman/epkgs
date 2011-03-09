@@ -1,0 +1,9 @@
+(:repository (cvs . ":pserver:anonymous@cscope.cvs.sourceforge.net:/cvsroot/cscope")
+ :created    "20000419"
+ :updated    "20020404"
+ :license    "GPL-2"
+ :authors    (("Darryl Okahata"))
+ :maintainer ("Darryl Okahata")
+ :provided   (xcscope)
+ :required   ((("emacs" easymenu)))
+ :homepage   "http://cscope.sourceforge.net/")

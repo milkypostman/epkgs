@@ -1,0 +1,32 @@
+(:summary    "Emacs integration for dpaste.de"
+ :repository (hg . "http://bitbucket.org/gregnewman/dpastede")
+ :created    "20091218"
+ :updated    "2009"
+ :license    "GPL-2"
+ :authors    (("Greg Newman" . "grep@20seven.org")
+	      ("Guilherme Gondim" . "semente@taurinus.org"))
+ :maintainer ("Greg Newman" . "greg@20seven.org")
+ :provided   (dpastede)
+ :keywords   ("paste" "pastie" "pastebin" "dpaste" "python")
+ :homepage   "http://bitbucket.org/gregnewman/dpastede"
+ :commentary "\
+dpastede.el provides functions to post a region or buffer to
+<http://dpaste.de> and put the paste URL into the kill-ring.
+
+Installation and setup:
+
+Put this file in a directory where Emacs can find it. On GNU/Linux
+it's usually /usr/local/share/emacs/site-lisp/ and on Windows it's
+something like \"C:\\Program Files\\Emacs<version>\\site-lisp\". Then
+add the follow instructions in your .emacs.el:
+
+    (require 'dpastede nil)
+    (global-set-key (kbd \"C-c p\") 'dpastede-region-or-buffer)
+    (setq dpastede-poster \"Guido van Rossum\")
+
+Then with C-c p you can run `dpastede-region-or-buffer'. With a prefix
+argument (C-u C-c p), your paste will use the hold option.
+
+Todo:
+
+- Use emacs lisp code to post paste instead curl (version 0.3)")

@@ -1,0 +1,15 @@
+(:summary    "Imenu tag selection a la ido"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-2"
+ :authors    (("Georg Brandl" . "georg@python.org"))
+ :maintainer ("Georg Brandl" . "georg@python.org")
+ :provided   (idomenu)
+ :required   ((("emacs" ido imenu)))
+ :commentary "\
+This package provides the `idomenu' command for selecting an imenu tag using
+ido completion.  The buffer needs to have support for imenu already enabled.
+
+Add something like the following to your .emacs:
+
+(autoload 'idomenu \"idomenu\" nil t)")

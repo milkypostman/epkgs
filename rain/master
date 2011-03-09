@@ -1,0 +1,19 @@
+(:summary    "Display raindrops in a buffer"
+ :created    "2002"
+ :updated    "2002"
+ :license    "GPL-2"
+ :authors    (("Ryan Yeske" . "rcyeske@vcn.bc.ca"))
+ :maintainer ("Ryan Yeske" . "rcyeske@vcn.bc.ca")
+ :provided   (rain)
+ :required   ((("emacs" gamegrid)))
+ :keywords   ("games")
+ :commentary "\
+This is a cheap rip off of rain(6) from BSD.
+
+M-x rain RET to start raining
+M-x rain-stop RET to stop raining
+
+Note: rain.el is timer driven and thus it will keep raining even
+when you bury the buffer.  I'm not really sure how to implement a
+clean way to stop it.  Bind all keys to rain-stop?  Use sit-for
+with a big value or with a loop and quit when it returns?")

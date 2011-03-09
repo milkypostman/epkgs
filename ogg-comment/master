@@ -1,0 +1,31 @@
+(:summary    "Read Ogg-Vorbis file headers"
+ :created    "20030926"
+ :updated    "2004"
+ :license    "GPL-2"
+ :authors    (("lawrence mitchell" . "wence@gmx.li"))
+ :maintainer ("lawrence mitchell" . "wence@gmx.li")
+ :provided   (ogg-comment)
+ :required   ((("emacs" cl)))
+ :keywords   ("music")
+ :homepage   "http://www.ph.ed.ac.uk/~s0198183/"
+ :commentary "\
+This file provides a minimal interface to reading the \"comment\"
+section from an Ogg-Vorbis stream as defined in <URL:
+http://www.xiph.org/ogg/vorbis/doc/Vorbis_I_spec.html>
+It relies on all the comments being in the first 28kilobytes of
+the file, thus removing the need to read the whole ogg file into
+an Emacs buffer.
+
+The implementation is rather \"byte-oriented\", due to the way the
+Ogg-Vorbis file headers are specified.  Any improvements in making
+the implementation more emacsy would be welcomed.
+
+Installation:
+To use, put this file somewhere in your `load-path' and do
+(require 'ogg-comment).
+You can then read ogg comments from a file by doing:
+M-x oggc-show-header RET.
+
+This file is mainly designed to be used in conjunction with
+mp3player.el <URL: http://www.nongnu.org/mp3player/>, and its
+followup EMMS <URL: http://www.gnu.org/software/emms/>.")

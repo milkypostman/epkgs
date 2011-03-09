@@ -1,0 +1,4 @@
+(:updated    "20060123"
+ :provided   (find-page-file)
+ :required   ((("emacs" browse-url)))
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/webstuff/webmastering/")

@@ -1,0 +1,18 @@
+(:summary    "Show usage of charsets in a buffer"
+ :created    "2002"
+ :updated    "2002"
+ :license    "GPL-2"
+ :keywords   ("mule" "hi-lock")
+ :wikipage   "http://www.emacswiki.org/BufferCharset"
+ :commentary "\
+- display-buffer-charsets
+    Displays list of charsets used in current buffer.
+
+  - show-buffer-charset-characters C-x w c
+
+    Uses hi-lock-mode to highlight in current buffer characters
+    from chosen charset.
+    Creates and adds to local history (hi-lock-interactive-patterns)
+    regexpx matching characters from a given charset.
+    Characters from different charsets can be highlighted by
+    different colors according to chosen face.")

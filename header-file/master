@@ -1,0 +1,15 @@
+(:summary    "Assign a major mode for header files"
+ :repository (git . "https://github.com/0x4b/header-file-mode.git")
+ :updated    "2010"
+ :license    "GPL-2"
+ :authors    (("Kirk Kelsey"))
+ :maintainer ("Kirk Kelsey")
+ :provided   (header-file)
+ :required   ((("emacs" find-file)))
+ :homepage   "https://github.com/0x4b/header-file-mode"
+ :commentary "\
+By assigning header-file-mode to .h files in auto-mode-alist, header files
+we be opened in the mode used by the corresponding implementation file (as
+determined by the `find-file' package). If a corresponding file cannot be
+found, the mode assigned in `header-file-default-mode' is used. This is not
+a proper mode in its own right, simply a trampoline to other modes.")

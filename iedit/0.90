@@ -1,0 +1,39 @@
+(:summary    "Edit multiple regions with the same content simultaneously"
+ :created    "2010"
+ :updated    "20110225"
+ :license    "GPL-3"
+ :authors    (("Victor Ren" . "victorhge@gmail.com"))
+ :maintainer ("Victor Ren" . "victorhge@gmail.com")
+ :provided   (iedit)
+ :required   ((("emacs" cl help-macro)))
+ :keywords   ("occurrence" "region" "replace" "simultaneous")
+ :homepage   "http://www.emacswiki.org/Iedit"
+ :wikipage   "http://www.emacswiki.org/Iedit"
+ :commentary "\
+This package provides a more intuitive way of replace-string operation:
+
+- Select the occurrence in the buffer
+  In Transient Mark mode, just mark a region, the content of the 
+  region will be used as the occurrence. (if Transient Mark mode is disabled,
+  using C-u C-x C-x or C-SPC C-SPC to activate it just for this one time).
+
+- Start iedit minor mode - by press C-;
+  All occurrences of the content in the buffer are highlighted
+
+- Edit one of the contents
+  The change is applied to other contents simultaneously
+
+- Finish - by pressing C-; again
+
+If Transient Mark mode is disabled or the region is not active,
+the `current-word' is used as the occurrence by default.
+
+You can also switch to iedit mode from isearch mode directly. The current
+search string is used as the occurrence.
+
+If you would like to replace-string on certain region, use \"narrowing\" first.
+
+Suggested key bindings:
+
+(define-key global-map (kbd \"C-;\") 'iedit-mode)
+(define-key isearch-mode-map (kbd \"C-;\") 'iedit-mode)")

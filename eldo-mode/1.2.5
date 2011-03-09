@@ -1,0 +1,38 @@
+(:summary    "Major mode for Eldo netlist files"
+ :created    "2003"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("Emmanuel Rouat" . "emmanuel.rouat@wanadoo.fr")
+	      ("Geert A. M. Van der Plas" . "geert_vanderplas@email.com")
+	      ("Carlin J. Vieri")
+	      ("MIT AI Lab" . "cvieri@ai.mit.edu"))
+ :maintainer ("Emmanuel Rouat" . "emmanuel.rouat@wanadoo.fr")
+ :provided   (eldo-mode)
+ :required   ((("emacs" compile easymenu font-lock imenu lucid overlay skeleton speedbar tempo)))
+ :keywords   ("eldospiceanalog" "simulatornetlist")
+ :homepage   "http://spice-mode.4t.com/"
+ :commentary "\
+This major mode for Xemacs-21 provides support for editing ELDO   
+netlist files. It should also work on Emacs-20 (partially tested)
+
+You may wish to add something like the following to your ~/.emacs file:
+(autoload 'eldo-mode \"eldo-mode\" nil t)          
+(setq auto-mode-alist (cons '(\"\\\\.cir$\"  . eldo-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '(\"\\\\.ckt$\"  . eldo-mode) auto-mode-alist))
+
+Put this file in the emacs load-path so emacs can find it (check the manual).
+(I put it in the dedicated ~/.xemacs/lisp directory)
+This mode will activate automatically on files which end by .ckt or .cir
+This mode requires font-lock, easymenu, and optionally func-menu or imenu..
+
+Most of the code of this mode was shamelessly stolen from vhdl-mode (ron whitby)
+and vhdl-electric mode - and from an emacs mode using 'hilit, written at Anacad
+Also some borrowings from tcl-mode and zillions of .el files
+Functions/subckt support from spice-mode by C.J Vieri
+Empty file initialize inspired by rpm-spec-mode (Stig Bjørlykke)
+(also Changelog support)
+'Eldo-colorized-libraries' based on code by Frederic MIENVILLE
+Some regexps/ideas were taken/shared with Geert Van Der Plas' spice-mode  
+( see http://www.esat.kuleuven.ac.be/~vdplas/emacs/ )
+
+Good they were there... I HATE ELISP!!!!!")

@@ -1,0 +1,14 @@
+(:summary    "Functions to make productive use of the http://del.icio.us API"
+ :repository (git . "http://git.wjsullivan.net/delicious-el.git")
+ :created    "2004"
+ :updated    "2007"
+ :license    "GPL-3"
+ :authors    (("John Sullivan" . "john@wjsullivan.net"))
+ :maintainer ("John Sullivan" . "john@wjsullivan.net")
+ :provided   (delicioapi delicious delicious-html muse-delicious planner-delicious)
+ :required   ((("37emacs" rest-api)
+	       ("emacs" thingatpt url xml)
+	       ("planner" planner)))
+ :keywords   ("comm" "hypermedia")
+ :homepage   "http://wjsullivan.net/delicious-el.html"
+ :wikipage   "http://www.emacswiki.org/DeliciousEl")

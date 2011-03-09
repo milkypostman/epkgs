@@ -1,0 +1,13 @@
+(:summary    "Edward O'Connor's second color theme"
+ :created    "1997"
+ :updated    "2010"
+ :license    "GPL-2"
+ :authors    (("Edward O'Connor" . "ted@oconnor.cx"))
+ :maintainer ("Edward O'Connor" . "ted@oconnor.cx")
+ :provided   (color-theme-hober2)
+ :required   ((("color-theme" color-theme)))
+ :keywords   ("local")
+ :homepage   "http://edward.oconnor.cx/elisp/"
+ :commentary "\
+This is my second color theme. Apologies for the formatting; this
+file is automatically extracted from a LaTeX master file.")

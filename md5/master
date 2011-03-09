@@ -1,0 +1,4 @@
+(:summary    "MD5 Message Digest Algorithm"
+ :license    "GPL-2"
+ :provided   (md5)
+ :homepage   "http://www.gentei.org/~yuuji/software/biff-el.html")

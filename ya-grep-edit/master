@@ -1,0 +1,74 @@
+(:summary    "Edit grepped lines and write them back to files"
+ :repository (git . "https://github.com/k-talo/ya-grep-edit.el.git")
+ :created    "20101116"
+ :updated    "2010"
+ :license    "GPL-3"
+ :provided   (ya-grep-edit)
+ :required   ((("emacs" cl grep))
+	      (("emacs" hilit-chg)))
+ :keywords   ("convenience" "wp")
+ :homepage   "https://github.com/k-talo/ya-grep-edit.el"
+ :commentary "\
+Overview
+========
+This library makes the grepped lines *grep* buffer, which is made
+by command  `M-x grep', editable and write them back to original
+files.
+
+
+INSTALLING
+==========
+To install this library, save this file to a directory in your
+`load-path' (you can view the current `load-path' using \"C-h v
+load-path RET\" within Emacs), then add the following line to your
+.emacs startup file:
+
+   (require 'ya-grep-edit)
+
+
+USING
+=====
+To start edit and write back grepped lines, follow the instructions
+described below.
+
+  1. Start grep command by `M-x grep'.
+     The grepped lines appears in *grep* buffer.
+
+     You can switch indication-style of the path in each line
+     from three kinds of methods:
+
+       1: Show Directory
+       2: Show Directory But Common Prefix
+       3: Hide Directory
+
+     by selecting sub-menu from `Grep > Ya Grep Edit > View,
+     or typing `C-c 1', `C-c 2' or `C-c 3'.
+
+  2. Select *grep* buffer then type `C-c C-e', or select menu
+     `Grep > Ya Grep Edit > Edit > Start Edit'.
+     This makes grepped lines editable.
+
+  3. Edit grepped lines as you like.
+     If you want to cancel editing on a line, put cursor on the line
+     then type `C-c C-r', or select menu `Grep > Ya Grep Edit > Edit >
+     Revert Line'.
+
+  4. To write back changes to files, type `C-c C-c', or select menu 
+     `Grep > Ya Grep Edit > Edit > Save Changes' in *grep* buffer,
+     then type `yes' to a prompt.
+
+Also check out the customization group
+
+  `M-x customize-group RET ya-grep-edit RET'
+
+
+KNOWN PROBLEMS
+==============
+- This library relies on information provided by font-lock to
+  parse the contents of *grep* buffer, so it may not work
+  when `font-lock-mode' is off.
+
+
+WISH LIST
+=========
+- Implement user option `yage/auto-save-before-save-changes'.")

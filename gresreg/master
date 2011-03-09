@@ -1,0 +1,12 @@
+(:summary    "Query-replace in all buffer"
+ :created    "2004"
+ :updated    "20091020"
+ :license    "GPL-3"
+ :authors    (("Matsushita Akihisa" . "akihisa@mail.ne.jp"))
+ :maintainer ("Matsushita Akihisa" . "akihisa@mail.ne.jp")
+ :provided   (gresreg)
+ :keywords   ("isearch")
+ :homepage   "http://www.bookshelf.jp/"
+ :commentary "\
+The latest version of this program can be downloaded from
+http://www.bookshelf.jp/elc/gresreg.el")

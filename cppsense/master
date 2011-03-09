@@ -1,0 +1,6 @@
+(:summary    "Simple, heuristic, tag-based C++ coding assistant"
+ :created    "2007"
+ :updated    "2007"
+ :license    "GPL-2"
+ :provided   (cppsense)
+ :required   ((("emacs" cl etags))))

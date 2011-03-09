@@ -1,0 +1,6 @@
+(:created    "2002"
+ :updated    "2002"
+ :license    "GPL-2"
+ :provided   (webinfo)
+ :required   ((("emacs" cl)))
+ :homepage   "http://www.davep.org/emacs/")

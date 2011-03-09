@@ -1,0 +1,28 @@
+(:summary    "Sophisticated example of `tree-widget' usage"
+ :repository (cvs . ":pserver:anonymous@emhacks.cvs.sourceforge.net:/cvsroot/emhacks/")
+ :created    "20010216"
+ :updated    "2005"
+ :license    "GPL-2"
+ :authors    (("David Ponce" . "david@dponce.com"))
+ :maintainer ("David Ponce" . "david@dponce.com")
+ :provided   (dir-tree findstr gdiff gdiff-setup jjar jmaker jsee overlay-fix recentf ruler-mode swbuff tabbar tree-widget tree-widget-examples)
+ :required   ((("emacs" cl compile easymenu mwheel tempo timer vc wid-edit)
+	       ("igrep" igrep)
+	       ("jdee" jde)))
+ :keywords   ("extensions")
+ :homepage   "http://emhacks.sourceforge.net/"
+ :commentary "\
+This library is a sophisticated example of usage of the tree-widget
+library.  It provides the `dir-tree' command which shows the
+content of a directory in a tree widget.
+
+A directory content is read when the corresponding tree node is
+expanded for the first time.  To refresh the content of an expanded
+directory, click on its name with the mouse-2 button.  Also, you
+can change the sample select/unselect state of a file by clicking
+on its name with the mouse-2 button.
+
+To install and use, put this file on your Emacs-Lisp load path and
+add the following into your ~/.emacs start up file:
+
+(require 'dir-tree)")

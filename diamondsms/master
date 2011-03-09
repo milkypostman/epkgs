@@ -1,0 +1,39 @@
+(:summary    "Send SMS' via GNU/Emacs"
+ :created    "2008"
+ :updated    "2009"
+ :license    "GPL-3"
+ :authors    (("Yoni Rabkin" . "yonirabkin@member.fsf.org"))
+ :maintainer ("Yoni Rabkin" . "yonirabkin@member.fsf.org")
+ :provided   (diamondsms)
+ :required   ((("emacs" url xml)))
+ :commentary "\
+Installation:
+
+Add the following to your .emacs file:
+
+(add-to-list 'load-path X)
+
+...where X is the directory path where diamondsms.el is stored.
+
+(require 'diamondsms)
+
+(setq diamondsms-account-id A
+      diamondsms-pin-code B
+      diamondsms-default-from-number C)
+
+...where A is your DiamonCard account ID number, B your DiamondCard
+pin code and C is the number you wish the messages to be seen as
+originating (A, B, C should be strings)
+
+Set the variable `diamondsms-phonebook-alist' to contain the names
+and numbers of the people you want to contact. For example:
+
+(setq diamondsms-phonebook-alist
+      '((\"whitehouse\" . \"0012024571111\")
+	   (\"ASPCA\"      . \"0018882762210\")))
+
+To send a message:
+M-x diamondsms-send-sms
+
+To send a message without using the phonebook:
+M-x diamondsms-send-sms-to-number")

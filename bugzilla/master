@@ -1,0 +1,2 @@
+(:provided   (bugzilla)
+ :required   ((("emacs" url))))

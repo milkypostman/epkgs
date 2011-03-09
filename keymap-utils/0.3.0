@@ -1,0 +1,19 @@
+(:summary    "Keymap utilities"
+ :repository (git . "https://github.com/tarsius/keymap-utils.git")
+ :created    "20080830"
+ :updated    "20101101"
+ :license    "GPL-3"
+ :authors    (("Jonas Bernoulli" . "jonas@bernoul.li"))
+ :maintainer ("Jonas Bernoulli" . "jonas@bernoul.li")
+ :provided   (keymap-utils)
+ :required   ((("emacs" cl)
+	       ("save-sexp" save-sexp)))
+ :keywords   ("convenience" "extensions")
+ :homepage   "https://github.com/tarsius/keymap-utils"
+ :commentary "\
+This library provides additional functions to work with keymaps.
+
+* keymap predicates (e.g. `kmu-keymap-variable-p')
+* key lookup (e.g. `kmu-lookup-parent-key')
+* replace keymap in place (e.g. `kmu-set-mapvar')
+* keymap pretty printing (`kmu-pp-keymap'; VERY experimental)")

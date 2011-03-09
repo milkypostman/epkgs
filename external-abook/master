@@ -1,0 +1,7 @@
+(:summary    "Enable the use of external address books from within Emacs"
+ :created    "2008"
+ :updated    "2008"
+ :license    "as-is"
+ :provided   (external-abook)
+ :homepage   "http://www.emacswiki.org/ExternalAbook"
+ :wikipage   "http://www.emacswiki.org/ExternalAbook")

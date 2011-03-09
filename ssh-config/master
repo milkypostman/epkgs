@@ -1,0 +1,8 @@
+(:summary    "Manage both ssh and dsh confguration from emacs"
+ :repository (git . "https://github.com/renard/ssh-config-el.git")
+ :created    "20101122"
+ :updated    "2010"
+ :provided   (ssh-config)
+ :required   ((("emacs" org)))
+ :keywords   ("ssh")
+ :homepage   "https://github.com/renard/ssh-config-el")

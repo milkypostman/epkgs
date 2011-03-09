@@ -1,0 +1,120 @@
+(:summary    "Major mode for editing Metafont or MetaPost sources"
+ :created    "1997"
+ :updated    "1997"
+ :license    "GPL-2"
+ :authors    (("Ulrik Vieth" . "vieth@thphy.uni-duesseldorf.de"))
+ :maintainer ("Ulrik Vieth" . "vieth@thphy.uni-duesseldorf.de")
+ :provided   (meta-mode)
+ :required   ((("emacs" easymenu)))
+ :keywords   ("metafont" "metapost" "tex" "languages")
+ :commentary "\
+Description:
+
+This Emacs Lisp package provides a major mode for editing Metafont
+or MetaPost sources.  It includes all the necessary code to set up
+a major mode including an approriate syntax table, keymap, and a
+mode-specific pull-down menu.  It also provides a sophisticated set
+of font-lock patterns, a fancy indentation function adapted from
+AUC-TeX's latex.el, and some basic mode-specific editing functions
+such as functions to move to the beginning or end of the enclosing
+environment, or to mark, re-indent, or comment-out environments.
+On the other hand, it doesn't yet provide any functionality for
+running Metafont or MetaPost in a shell buffer form within Emacs,
+but such functionality might be added later, either as part of this
+package or as a separate Emacs Lisp package.
+
+Installation:
+
+Install this file (meta-mode.el) in your personal or system-wide
+Emacs Lisp directory and add these lines to your startup files:
+
+ (autoload 'metafont-mode \"meta-mode\" \"Metafont editing mode.\" t)
+ (autoload 'metapost-mode \"meta-mode\" \"MetaPost editing mode.\" t)
+
+ (setq auto-mode-alist
+       (append '((\"\\\\.mf\\\\'\" . metafont-mode)
+                 (\"\\\\.mp\\\\'\" . metapost-mode)) auto-mode-alist))
+
+An interface to running Metafont or MetaPost as a shell process
+from within Emacs is currently under development as a separate
+Emacs Lisp package (meta-buf.el).  In order to have that package
+loaded automatically when first entering Metafont or MetaPost mode,
+you might use the load-hook provided in this package by adding
+these lines to your startup file:
+
+ (add-hook 'meta-mode-load-hook 
+           '(lambda () (require 'meta-buf)))
+
+The add-on package loaded this way may in turn make use of the
+mode-hooks provided in this package to activate additional features
+when entering Metafont or MetaPost mode.
+
+Font Lock Support:
+
+If you are using global-font-lock-mode (introduced in Emacs 19.31),
+fontification in Metafont and/or MetaPost mode will be activated
+automatically.  To speed up fontification for the rather complex
+patterns used in these modes, it may be a good idea to activate
+lazy-lock as a font-lock-support-mode (introduced in Emacs 19.32)
+by adding these lines to your startup file:
+
+ (global-font-lock-mode t)
+ (setq font-lock-support-mode 'lazy-lock-mode)
+
+If you are using an older version of Emacs, which doesn't provide
+global-font-lock-mode or font-lock-support-mode, you can also
+activate fontification in Metafont and/or MetaPost mode by adding
+the following lines to your startup file:
+
+ (add-hook 'meta-common-mode-hook 'turn-on-font-lock)
+ (add-hook 'meta-common-mode-hook 'turn-on-lazy-lock)
+
+Customization:
+
+Following the usual Emacs Lisp coding conventions, the major modes
+defined in this package provide several hook variables to allow for
+local customization when entering the modes.  In particular, there
+is a `meta-common-mode-hook' which applies to both modes as well as
+`metafont-mode-hook' and `metapost-mode-hook' which apply to the
+individual modes.  In addition, there are several variables and
+regexps controlling e.g. the behavior of the indentation function,
+which may be customized via `edit-options'.  Please refer to the
+docstrings in the code below for details.
+
+Availability:
+
+This package is currently available via my \"TeX Software\" WWW page:
+
+ http://www.thphy.uni-duesseldorf.de/~vieth/subjects/tex/software.html
+
+As of this version 1.0, this package will be uploaded to CTAN
+archives, where it shall find a permanent home, presumably in
+tex-archive/support/emacs-modes.  It will also be submitted for
+integration into the GNU Emacs distribution at that time.
+
+History:
+
+v 0.0 -- 1997/02/01  UV  Started writing meta-mode.el.
+v 0.1 -- 1997/02/02  UV  Added preliminary set of font-lock patterns.
+v 0.2 -- 1997/02/03  UV  Improved and debugged font-lock patterns.
+                         Added indent-line-function for TAB.
+v 0.3 -- 1997/02/17  UV  Improved font-lock patterns and syntax table.
+                         Improved and debbuged indentation function.
+v 0.4 -- 1997/02/18  UV  Added functions to indent regions for M-C-q,
+                         also added a preliminary mode-specific menu.
+v 0.5 -- 1997/02/19  UV  Added functions to skip to next or previous 
+                         defun and to re-indent or comment-out defuns.
+v 0.6 -- 1997/02/20  UV  More debugging, testing and clean-up.
+v 0.7 -- 1997/02/22  UV  Use easymenu to define mode-specific menu.
+v 0.8 -- 1997/02/24  UV  Added completion function for M-TAB.
+v 0.9 -- 1997/03/08  UV  Added fill-paragraph function for comments.
+                         Also fixed a few remaining font-lock problems.
+                         Added meta-mode-load-hook to load meta-buf.el.
+v 1.0 -- 1997/04/07  UV  Cleanup for official public release.
+
+Historical Footnote:
+
+This package was begun on February 1, 1997, exactly 20 years after
+the genesis of TeX took place according to Don Knuth's own account
+(cf. ``The Errors of TeX'', reprinted in ``Literate Programming'',
+Chapter 10, p. 249).  What better date could there be to choose?")

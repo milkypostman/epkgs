@@ -1,0 +1,5 @@
+(:summary    "Major mode for editing ESRI avenue scrips"
+ :created    "2002"
+ :updated    "2002"
+ :license    "GPL-2"
+ :provided   (avenue-mode))

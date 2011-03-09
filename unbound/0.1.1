@@ -1,0 +1,16 @@
+(:summary    "Find convenient unbound keystrokes"
+ :repository (git . "https://github.com/haxney/unbound.git")
+ :created    "2007"
+ :updated    "2007"
+ :license    "GPL-2"
+ :authors    (("Davis Herring" . "herring@lanl.gov"))
+ :maintainer ("Davis Herring")
+ :provided   (unbound)
+ :required   ((("emacs" cl)))
+ :keywords   ("keyboard")
+ :homepage   "https://github.com/haxney/unbound"
+ :commentary "\
+The only entry point is `describe-unbound-keys'; it prompts for the maximum
+complexity to allow, which should probably be at least 5 to find enough
+keys to be worthwhile.  Lisp may call just `unbound-keys' to get a list of
+key representations suitable for `define-key'.")

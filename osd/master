@@ -1,0 +1,70 @@
+(:summary    "On-screen display"
+ :created    "20031214"
+ :updated    "20041008"
+ :license    "GPL-2"
+ :authors    (("Daniel Brockman" . "drlion@deepwood.net"))
+ :maintainer ("Daniel Brockman" . "drlion@deepwood.net")
+ :provided   (osd)
+ :keywords   ("multimedia")
+ :wikipage   "http://www.emacswiki.org/OnScreenDisplay"
+ :commentary "\
+This file implements a thin Emacs front-end to a small program
+called `osd_cat', written by Martijn van de Streek
+<martijn@foodfight.org>.  That program in turn is a front-end to
+the X OSD Library, a cool piece of software for overlaying text on
+an X display written by Andre Renaud <andre@ignavus.net>.  While
+I'm dropping names, I might as well mention Tim Wright
+<tim@ignavus.net>, the current maintainer of the X OSD Library, who
+apparently also made significant contributions to the
+aforementioned `osd_cat'.
+
+Presumably, an Emacs front-end to an X OSD library is useful in any
+situation where the user needs or wants to be informed of something
+regardless of whether or not their eyes are currently focused on an
+Emacs frame.  The reason I wrote it because I thought it would be
+neat to have the artist's name and title of the song pop up
+whenever EMMS starts playing something new.
+
+EMMS, by the way, is the Emacs Multi-Media System created by Jorgen
+Schaefer <forcer@forcix.cx> and Ulrik Jensen <terryp@daimi.au.dk>,
+inspired by an earlier music player front-end for Emacs called
+`mp3player'.  For more information, see
+<http://www.gnu.org/software/emms>.
+
+Instructions:
+
+First of all, you will probably want to put this file somewhere
+Emacs looks, most likely `~/.elisp/', and add the following line to
+your `.emacs':
+
+ (require 'osd)
+
+To get the basic functionality working, you have to download and
+install the X OSD Library and the `osd_cat' utility if you don't
+already have them.  You can get these packages from, for instance,
+ - the web (<http://www.ignavus.net/>),
+ - Debian's APT (`xosd-bin' and `libxosd2'), or
+ - Gentoo's Portage (`x11-libs/xosd').
+
+For neat EMMS integration, try this:
+
+ (add-hook 'emms-player-start-hook
+           (lambda () (osd-broadcast-string
+                       (emms-playlist-get-current))
+
+If you think the on-screen text looks a little boring, try using
+the following settings instead of the defaults.  These are designed
+to match the Zenburn color theme, which can be found at
+<http://www.deepwood.net/software/zenburn/zenburn.el>.
+
+ (setq osd-program-args
+       '(\"--pos\"          \"top\"
+         \"--offset\"       \"30\"
+         \"--align\"        \"center\"
+         \"--delay\"        \"3\"
+         \"--color\"        \"#dcdccc\"
+         \"--outline\"      \"1\"
+         \"--shadow\"       \"3\"
+         \"--shadowcolour\" \"#1e2320\"
+         \"--font\"
+         \"-*-new century schoolbook-bold-i-*-*-24-*-*-*-*-*-*-*\"))")

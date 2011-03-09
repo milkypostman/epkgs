@@ -1,0 +1,7 @@
+(:repository (git . "https://github.com/kmuto/review-el.git")
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-2"
+ :provided   (review-mode)
+ :required   ((("emacs" font-lock)))
+ :homepage   "https://github.com/kmuto/review-el")

@@ -1,0 +1,22 @@
+(:summary    "Query archie servers and parse the results"
+ :created    "1997"
+ :updated    "1997"
+ :license    "GPL-2"
+ :authors    (("Lars Magne Ingebrigtsen" . "lmi@gnus.org"))
+ :maintainer ("Lars Magne Ingebrigtsen" . "lmi@gnus.org")
+ :provided   (archie)
+ :required   ((("emacs" cl custom)))
+ :keywords   ("util" "network")
+ :homepage   "http://quimby.gnus.org/elisp/"
+ :commentary "\
+The `M-x archie' command will connect to an archie server and send
+a search request.  It'll return control to the user immediately,
+and a window with the search results will be popped up when the
+results have arrived.
+
+You can do several concurrent searches using different servers, but
+you can only have one outstanding request to each server at a time.
+
+Put the following in your .emacs:
+
+ (autoload 'archie \"archie\" nil t)")

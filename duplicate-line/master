@@ -1,0 +1,23 @@
+(:summary    "Easily dublicate a line"
+ :created    "19940629"
+ :updated    "1994"
+ :license    "GPL-1"
+ :authors    (("Ray Nickson" . "nickson@cs.uq.oz.au"))
+ :maintainer ("Ray Nickson" . "nickson@cs.uq.oz.au")
+ :provided   (dublicate-line)
+ :commentary "\
+Here's a couple of commands I find indispensible;; they might as well
+see the light of day now, while I'm thinking of them.  I bind them
+thus:
+
+(global-set-key \"\\M-p\" 'duplicate-previous-line)
+(global-set-key \"\\M-n\" 'duplicate-following-line)
+
+and they behave in ordinary text buffers something like the same keys
+do in buffers with history, duplicating lines from nearby in the
+buffer.
+
+I included my `point-at' macro rather than expanding it out by hand.
+
+Copyright notice included even though I doubt it's needed on something
+so small.")

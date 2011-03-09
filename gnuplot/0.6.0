@@ -1,0 +1,122 @@
+(:summary    "Drive gnuplot from within emacs"
+ :created    "199828"
+ :updated    "2002"
+ :license    "GPL-2"
+ :authors    (("Bruce Ravel" . "ravel@phys.washington.edu"))
+ :maintainer ("Bruce Ravel" . "ravel@phys.washington.edu")
+ :provided   (gnuplot gnuplot-gui info-look)
+ :required   ((("emacs" cl comint custom easymenu info overlay reporter wid-edit widget)
+	       (nil toolbar xpm)))
+ :keywords   ("gnuplot" "plotting")
+ :homepage   "http://cars9.uchicago.edu/~ravel/software/gnuplot-mode.html"
+ :wikipage   "http://www.emacswiki.org/GnuPlot"
+ :commentary "\
+This is a major mode for composing gnuplot scripts and displaying
+their results using gnuplot.  It is optimized for use with gnuplot
+3.7 or one of the later patchlevels of \"version 3.6\".  It should
+also work very handily with version 3.5.  This mode offers several
+tools to help you compose your scripts, including syntax
+colorization using either font-lock or hilit19, a syntax table
+appropriate to gnuplot, key bindings, pull-down menus, indentation,
+keyword completions and variable customization using the Custom
+package.  Once the script is composed, there are several function
+for sending some or all of the script to gnuplot.  The interaction
+with the gnuplot process is within a comint buffer.
+
+   C-c C-l       send current line to gnuplot
+   C-c C-v       send current line to gnuplot and move forward 1 line
+   C-c C-r       send current region to gnuplot
+   C-c C-b       send entire buffer to gnuplot
+   C-c C-f       send a file to gnuplot
+   C-c C-i       insert filename at point
+   C-c C-n       negate set option on current line
+   C-c C-c       comment region
+   C-c C-o       set arguments for command at point
+  S-mouse-2      set arguments for command under mouse cursor
+   C-c C-h       read the gnuplot info file
+   C-c C-e       show-gnuplot-buffer
+   C-c C-k       kill gnuplot process
+   C-c C-u       submit a bug report about gnuplot-mode
+M-tab or M-ret   complete keyword before point
+     ret         newline and indent
+     tab         indent current line
+
+Gnuplot-mode adds two key bindings to the comint buffer:
+    M-C-p        plot the current script buffer line-by-line
+    M-C-f        save the current script buffer and load that file
+
+These two functions are useful for starting up gnuplot-mode.
+
+M-x gnuplot-mode
+        start gnuplot-mode in the current buffer
+
+M-x gnuplot-make-buffer
+        open a new buffer (which is not visiting a file) and start
+        gnuplot-mode in that buffer
+
+---------------------------------------------------------------------
+
+Other lisp files used by gnuplot.el
+
+info-look.el (comes with GNU Emacs 20):
+  This provides the interface to the gnuplot-info file and provides
+  on-line help and keyword completion functionality.  The version
+  of info-look.el that comes with version 20.2 of Emacs contains a
+  bug that will impede its interaction with the gnuplot info file.
+  You should use the version from the gnuplot-mode homepage
+  instead.  info-look is not distributed with XEmacs and so should
+  be installed along with gnuplot-mode when using XEmacs.
+
+gnuplot-gui.el (written by Bruce):
+  Defines the GUI interface for setting setting arguments to
+  gnuplot options.  This uses the widget package extensively.
+
+---------------------------------------------------------------------
+
+This mode was inspired by the original gnu-plot-mode by Gershon
+Elber, which is distributed with gnuplot itself and which dates
+back to the early 90's.  Although this mode encompasses the
+functionality of the original, the two share no code and the
+current implementation takes advantage of many features of modern
+versions of emacs and adheres (or so I intend) to the major mode
+conventions described in the emacs-lisp reference for version 19
+and later.
+
+---------------------------------------------------------------------
+
+                        Installation
+                        ============
+
+A recent version of this file can be found at
+  http://feff.phys.washington.edu/~ravel/software/gnuplot-mode/
+
+To autoload gnuplot-mode on any file with gp extension, put this in
+your .emacs file
+  (autoload 'gnuplot-mode \"gnuplot\" \"gnuplot major mode\" t)
+  (autoload 'gnuplot-make-buffer \"gnuplot\" \"open a buffer in gnuplot-mode\" t)
+
+Something like
+  (setq auto-mode-alist (append '((\"\\\\.gp$\" . gnuplot-mode))
+			           auto-mode-alist))
+is useful for having files ending in .gp start up in gnuplot-mode.
+
+Something like
+  (global-set-key [(f9)] 'gnuplot-make-buffer)
+may be useful.  This binds f9 to the function that opens a scratch
+buffer (i.e. one that is not visiting a file) in gnuplot-mode.
+This is handy for your quick 'n' dirty plotting chores.
+
+To use the `gnuplot-info-lookup-symbol' function, the file
+gnuplot.info MUST be installed somewhere that info can find it.
+This means you must either:
+  1.  Copy gnuplot.info to the normal info directory or
+  2.  Make sure info can find gnuplot.info by putting this in your
+      .emacs file:
+        (setenv \"INFOPATH\"
+	      (concat (getenv \"INFOPATH\") \":\"
+                   (expand-file-name \"/path/to/file\")))
+      where \"/path/to/file\" is the location of gnuplot.info
+
+This had been tested extensively with Emacs 19.34 and 20.2 and
+XEmacs 20.3 and in a limited manner with Emacs 19.30 and XEmacs
+19.14.")

@@ -1,0 +1,26 @@
+(:summary    "Anything integration for eproject"
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-3"
+ :authors    (("Daniel Hackney" . "dan@haxney.org"))
+ :maintainer ("Daniel Hackney" . "dan@haxney.org")
+ :provided   (anything-eproject)
+ :keywords   ("convenience" "project")
+ :commentary "\
+Allows opening and closing eproject projects through anything, as well as
+selection of files within a project.
+
+To activate, add anything-eproject.el to your load path and
+
+  (require 'anything-eproject)
+
+to your .emacs. You can then use the following sources
+
+ `anything-c-source-eproject-files'
+   Search for files in the current eProject.
+`anything-c-source-eproject-projects'
+   Open or close eProject projects.
+
+
+Eproject: http://www.emacswiki.org/emacs/eproject
+Anything: http://www.emacswiki.org/emacs/Anything")

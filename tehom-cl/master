@@ -1,0 +1,14 @@
+(:summary    "Extra support for the cl package structures"
+ :created    "2000"
+ :updated    "2000"
+ :license    "GPL-2"
+ :authors    (("Tom Breton" . "tob@world.std.com"))
+ :maintainer ("Tom Breton" . "tob@world.std.com")
+ :provided   (tehom-cl)
+ :required   ((("emacs" cl)
+	       ("tehom-font-lock" tehom-font-lock)))
+ :keywords   ("extensions" "tools" "lisp")
+ :homepage   "http://panix.com/~tehom/"
+ :commentary "\
+These functions give the cl package's structures a little more of
+the Common Lisp functionality.")

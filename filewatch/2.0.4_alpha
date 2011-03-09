@@ -1,0 +1,9 @@
+(:updated    "20020621"
+ :license    "GPL"
+ :authors    (("Deepak Goel" . "deego@glue.umd.edu"))
+ :maintainer ("Deepak Goel" . "deego@glue.umd.edu")
+ :provided   (filewatch)
+ :required   ((("emacs" cl)
+	       ("timerfunctions" timerfunctions)
+	       (nil runshell)))
+ :homepage   "http://www.gnufans.net/~deego/emacs.html")

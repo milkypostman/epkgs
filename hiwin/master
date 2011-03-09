@@ -1,0 +1,10 @@
+(:summary    "Visible active window mode"
+ :repository (git . "https://github.com/tomoya/hiwin-mode.git")
+ :created    "2009"
+ :updated    "2010"
+ :license    "GPL-2"
+ :authors    (("ksugita"))
+ :maintainer ("ksugita")
+ :provided   (hiwin)
+ :keywords   ("faces" "editing" "emulating")
+ :homepage   "https://github.com/tomoya/hiwin-mode")

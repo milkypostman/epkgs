@@ -1,0 +1,3 @@
+(:repository (git . "https://github.com/dholm/outlookedit.git")
+ :provided   (outlookedit)
+ :homepage   "https://github.com/dholm/outlookedit")

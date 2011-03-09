@@ -1,0 +1,53 @@
+(:summary    "Directory Commander"
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-3"
+ :authors    (("Sebastian Tennant" . "sebyte@gmail.com"))
+ :maintainer ("Sebastian Tennant" . "sebyte@gmail.com")
+ :provided   (commandir)
+ :commentary "\
+I think you'll agree this macro is handy.
+
+  Call it with arguments of your choosing to define interactive
+  commands that either provide instant access to existing files in
+  a specified directory, or return named buffers which will be
+  written to files (with the same name) within the same specified
+  directory.
+
+  The first argument to the macro call is the name of interactive
+  command you want to able to issue.
+
+  The second argument is the string to be displayed when prompted
+  for a file name.
+
+  The third argument is the name of a default file which will be
+  visited if you don't provide a file name when prompted, .i.e.,
+  you just hit RET.
+
+  Unless the fourth argument to the macro call is 'stack (a symbol)
+  point will move to the end of the buffer immediately after the
+  file is visited.
+
+  If the fifth argument (the last) to the macro call is non-nil,
+  a pretty date-time stamp is inserted at point's final position.
+
+  Finally, if a file named '.template' is found in the specified
+  directory, its contents are automatically inserted when a new
+  file is created and any file local variables it may conatin are
+  evaluated.
+
+Installation:
+
+  Put this file somewhere in your load-path and add the line:
+
+   (require 'commmandir)
+
+  to your ~/.emacs.   Then add calls to commandir, e.g.,
+
+   (commandir memo \"Memo subject: \" \"~/memo\" \"misc\" 'stack)
+
+ When Emacs has loaded you can then type 'M-x memo RET' to compose a
+ new memo or edit an old one.
+
+
+commandir.el begins here")

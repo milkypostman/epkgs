@@ -1,0 +1,2 @@
+(:repository (git . "https://github.com/skeeto/w8.git")
+ :homepage   "https://github.com/skeeto/w8")

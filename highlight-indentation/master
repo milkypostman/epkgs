@@ -1,0 +1,10 @@
+(:summary    "Function for highlighting indentation"
+ :repository (git . "https://github.com/antonj/Highlight-Indentation-for-Emacs.git")
+ :created    "201004"
+ :license    "GPL-2"
+ :authors    (("Anton Johansson" . "anton.johansson@gmail.com"))
+ :maintainer ("Anton Johansson" . "anton.johansson@gmail.com")
+ :provided   (highlight-indentation)
+ :homepage   "https://github.com/antonj/Highlight-Indentation-for-Emacs"
+ :commentary "\
+Customize `highlight-indent-face' to suit your theme.")

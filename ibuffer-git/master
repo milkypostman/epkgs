@@ -1,0 +1,20 @@
+(:summary    "Show git status in ibuffer column"
+ :repository (git . "https://github.com/jrockway/ibuffer-git.git")
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Jonathan Rockway" . "jon@jrock.us"))
+ :maintainer ("Jonathan Rockway" . "jon@jrock.us")
+ :provided   (ibuffer-git)
+ :required   ((("emacs" cl ibuffer)))
+ :keywords   ("convenience")
+ :homepage   "http://jrockway.github.com/ibuffer-git/"
+ :commentary "\
+This package adds git integration to Ibuffer.  Two columns are
+defined, git-status and git-status-mini.
+
+To actually make these columns show up, you need to customize
+`ibuffer-formats'.  The symbol `git-status-mini' can be inserted
+where you want it, and `git-status' should be inserted with
+something as something like `(git-status 8 8 :left)', where 8 is
+the number you picked for `ibuffer-git-column-length'.")

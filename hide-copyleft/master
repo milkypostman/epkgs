@@ -1,0 +1,41 @@
+(:summary    "Hide obnoxious copyright prologs"
+ :created    "1997"
+ :updated    "1997"
+ :license    "GPL-2"
+ :provided   (hide-copyleft)
+ :commentary "\
+Written by Jamie Zawinski <jwz@netscape.com>, 19-jan-91.
+Minor fixes by Martin Buchholz, 14-may-97.
+Licenses added, minor mode by Reini Urban, 2000-01-14 and 2000-02-26.
+
+I sometimes find it tiresome to have fifteen lines of copyright notice at
+the beginning of each file.  Meta-< does not take you to the beginning of
+the code, it takes you a windowfull or two away, which can be tedious on
+slow terminal lines.
+
+I know what the copyright notice says; so this code makes all but the first
+line of it be invisible, by using Emacs's selective-display feature.  The
+text is still present and unmodified, but it is invisible.
+
+Elide the copyright notice with \"Meta-X hide-copyleft-region\".  Make it
+visible again with \"Control-U Meta-X hide-copyleft-region\".  Or, if you're
+sure you're not gonna get sued, you can do something like this in your
+.emacs file:
+
+(autoload 'hide-copyleft-region   \"hide-copyleft\" nil t)
+(autoload 'unhide-copyleft-region \"hide-copyleft\" nil t)
+(mapcar '(lambda (hook) (add-hook hook 'hide-copyleft-region))
+	   '(emacs-lisp-mode-hook lisp-mode-hook
+	     cperl-mode-hook perl-mode-hook c-mode-hook
+          autolisp-mode-hook))
+(add-hook 'emacs-lisp-mode-hook 'hide-copyleft-region)
+(add-hook 'c-mode-hook 'hide-copyleft-region)
+(global-set-key \"\\C-ch\" 'hide-copyleft-mode)
+
+This code (obviously) has quite specific knowledge of the wording of the 
+various copyrights I've run across.  Let me know if you find one on which
+it fails.
+
+Todo: 
+  go the into the © mode, say show © in the statusline, only iff a 
+  message was hidden.")

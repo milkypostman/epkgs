@@ -1,0 +1,14 @@
+(:summary    "Hober's ERC bot for OPN's #emacs channel"
+ :created    "2002"
+ :updated    "2002"
+ :license    "GPL-2"
+ :authors    (("Edward O'Connor" . "ted@oconnor.cx"))
+ :maintainer ("Edward O'Connor" . "ted@oconnor.cx")
+ :provided   (mallow)
+ :required   ((("emacs" erc erc-stamp url)
+	       ("erc-robot" erc-robot)))
+ :keywords   ("comm")
+ :homepage   "http://edward.oconnor.cx/elisp/"
+ :commentary "\
+A simple bot that I'm running in OPN's #emacs channel. I run it
+in a detached screen session.")

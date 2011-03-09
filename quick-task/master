@@ -1,0 +1,96 @@
+(:summary    "Execute common tasks quickly"
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-2"
+ :authors    (("Stefan Reichoer"))
+ :maintainer ("Stefan Reichoer")
+ :provided   (quick-task)
+ :homepage   "http://www.xsteve.at/prg/emacs/"
+ :commentary "\
+quick-task.el provides several features to execute custom emacs functions
+using very few keystrokes
+For a function that is needed repeatedly, there is only one keystroke necessary!!
+
+quick-task.el respects global and local targets
+the global targets (stored in quick-task-global-targets) should be defined
+in your .emacs. These settings are always available.
+The local settings can be calculated in .quick-task.el files
+(see the variable quick-task-local-targets)
+
+The targets are described as lists of tuples. Each tuple consists
+of a description (a string) and either a function or a menu, see
+the usage below for examples.
+
+The latest version of quick-task.el can be found at:
+http://www.xsteve.at/prg/emacs/
+
+Usage:
+put the following in your .emacs:
+(require 'quick-task)
+(global-set-key [f8] 'quick-task)
+
+Here is an example .quick-task.el file:
+(setq quick-task-local-targets '((\"quick-task-fun\" my-quick-task-fun)
+                                 (\"quick-task-menu\" my-quick-task-menu)))
+
+(defun my-quick-task-fun ()
+  (interactive)
+  (message \"my-quick-task-fun called!\"))
+
+(defun my-quick-task-build1 ()
+  (interactive)
+  (message \"my-quick-task-build1 called!\"))
+
+(defun my-quick-task-ediff-proj1 ()
+  (interactive)
+  (ediff-directories \"/mnt/projects/proj1/\" \"/home/xsteve/projects/proj1/\" nil))
+
+(defun my-quick-task-scons-proj1 ()
+  (interactive)
+  (message \"Running scons for proj1\")
+  (let ((default-directory \"c:/projekte/proj1/\"))
+    (compile \"scons\")))
+
+(quick-task-define-menu my-quick-task-menu
+  '((\"Build\"
+     [\"software\" my-quick-task-build1]
+     [\"1: scons proj1\" my-quick-task-scons-proj1]
+     )
+    (\"other\"
+     [\"fun\" my-quick-task-fun]
+     )
+    [\"ediff proj1\" my-quick-task-ediff-proj1]
+    [\"9: another fun\" my-quick-task-fun]
+    (\"find-file\"
+     [open \"*e:*~/.emacs\"]
+     [open \"*q:*.quick-task.el*/home/stefan/site-lisp/xsteve/.quick-task.el\"]
+     )
+   (\"dired\"
+    [open  \"*u:*/media/usb0\"]
+    [open2 \"*h:*/media/sda2/hpodder\"]
+    [open  \"*d:*~/Desktop\"]
+    )
+    ))
+
+Hitting C-u F8 allows to select a target. The selected target is
+executed immediately.
+Hitting F8 executes the previously selected action without asking.
+
+The convenience function quick-task-make-quick-task-function
+defines a function for a single action. This is useful to bind a
+menu to a key. The following example binds the key F10 to provide
+the my-quick-task-menu
+(global-set-key [f10] (quick-task-make-quick-task-function my-quick-task-menu-func my-quick-task-menu))
+my-quick-task-menu functions can now be accessed by the following keystrokes:
+F10 b s    :  run my-quick-task-menu
+F10 b 1    :  run my-quick-task-scons-proj1
+F10 o f    :  run my-quick-task-fun
+F10 e      :  run my-quick-task-ediff-proj1
+F10 9      :  run my-quick-task-fun
+F10 f e    :  open the file ~/.emacs
+F10 f q    :  open the file /home/stefan/site-lisp/xsteve/.quick-task.el
+F10 d u    :  open the dired buffer for /media/usb0/
+F10 d h    :  open the dired buffer for /media/sda2/hpodder/ in the other window
+F10 d d    :  open the dired buffer for ~/Desktop/
+
+Please contact me, if you find quick-task.el useful, or if you have ideas for improvements.")

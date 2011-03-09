@@ -1,0 +1,42 @@
+(:summary    "List and operate on emacs timers"
+ :repository (git . "https://github.com/pheaver/itimer-el.git")
+ :created    "2009"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Philip Weaver" . "philip.weaver@gmail.com"))
+ :maintainer ("Philip Weaver" . "philip.weaver@gmail.com")
+ :provided   (itimer)
+ :homepage   "https://github.com/pheaver/itimer-el"
+ :commentary "\
+TODO
+visualization:
+  - colorized output
+  - support sorting
+  - custom formats, like ibuffer
+  - customize window behavior
+  - customizable exit action such as restore window configuration
+timer modification:
+  - create timer
+  - delete timer
+  - change timer--time
+  - change timer--function
+
+FIXME
+if the list of timers changes while we are in the buffer,
+itimer-current-timer could return the wrong timer.
+
+note to self, here are some important functions:
+timer--activate      timer--args
+timer--function      timer--high-seconds
+timer--idle-delay    timer--low-seconds
+timer--repeat-delay  timer--time
+timer--time-less-p   timer--triggered
+timer--usecs         timer-activate
+timer-activate-when-idle     timer-create
+timer-duration       timer-event-handler
+timer-inc-time       timer-next-integral-multiple-of-time
+timer-relative-time  timer-set-function
+timer-set-idle-time  timer-set-time
+timer-set-time-with-usecs    timer-until
+
+(define-derived-mode itimer-mode fundamental-mode \"Timer\")")

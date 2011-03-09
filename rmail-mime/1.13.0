@@ -1,0 +1,12 @@
+(:summary    "MIME extender for RMAIL"
+ :repository (cvs . ":pserver:anonymous@cvs.m17n.org:/cvs/root")
+ :created    "19970217"
+ :license    "GPL-2"
+ :authors    (("MORIOKA Tomohiko" . "tomo@m17n.org"))
+ :maintainer ("MORIOKA Tomohiko" . "tomo@m17n.org")
+ :provided   (rmail-mime)
+ :required   ((("emacs" rmail)
+	       ("semi" mime-view)))
+ :keywords   ("mime" "multimedia" "mail")
+ :homepage   "http://www.kanji.zinbun.kyoto-u.ac.jp/~tomo/lemi/"
+ :wikipage   "http://www.emacswiki.org/RmailMime")

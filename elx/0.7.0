@@ -1,0 +1,18 @@
+(:summary    "Extract information from Emacs Lisp libraries"
+ :repository (git . "https://github.com/tarsius/elx.git")
+ :created    "20081202"
+ :updated    "20110309"
+ :license    "GPL-3"
+ :authors    (("Jonas Bernoulli" . "jonas@bernoul.li"))
+ :maintainer ("Jonas Bernoulli" . "jonas@bernoul.li")
+ :provided   (elx)
+ :required   ((("dconv" dconv)
+	       ("emacs" cl lisp-mnt)
+	       ("vcomp" vcomp)))
+ :keywords   ("docs" "libraries" "packages")
+ :homepage   "https://github.com/tarsius/elx"
+ :commentary "\
+This package extracts information from Emacs Lisp libraries.  It
+extends `lisp-mnt', which is only suitable for libraries that closely
+follow the header conventions.  Unfortunately there are many libraries
+that do not - this library tries to cope with that.")

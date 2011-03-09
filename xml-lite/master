@@ -1,0 +1,22 @@
+(:summary    "An indentation-engine for XML"
+ :created    "2001"
+ :updated    "2001"
+ :license    "GPL-2"
+ :authors    (("Mike Williams" . "mdub@bigfoot.com"))
+ :maintainer ("Mike Williams" . "mdub@bigfoot.com")
+ :provided   (xml-lite)
+ :required   ((("emacs" cl custom sgml-mode)))
+ :keywords   ("xml")
+ :homepage   "http://www.dogbiscuit.org/mdub/software/"
+ :commentary "\
+This package provides a simple indentation engine for XML.  It is
+intended for use in situations where the full power of the popular PSGML
+package (DTD parsing, syntax checking) is not required.
+
+xml-lite is designed to be used in conjunction with the default GNU
+Emacs sgml-mode, to provide a lightweight XML-editing environment.
+
+Updates will be made available at:
+    http://www.bigfoot.com/~mdub/software/xml-lite.el
+
+Note: the font-lock support that was in this package has been removed.")

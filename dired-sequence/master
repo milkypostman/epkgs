@@ -1,0 +1,40 @@
+(:summary    "Handle files that are named in a sequential manner in dired"
+ :repository (git . "https://github.com/jave/dired-sequence.git")
+ :provided   (dired-sequence)
+ :homepage   "https://github.com/jave/dired-sequence"
+ :commentary "\
+Media files, like image files and sound files are often named
+according to numerical patterns.  Some types of operations on media
+files are lossy, resulting in missing files, files not being named
+in the intended order, etc.
+
+One example is image files scanned from a book.  Each page gets a
+file name like 0001.djvu for instance.  If the scanner accidentaly
+double-feeds pages, image file names no longer match book page
+numbers. Another example is converting compact discs to audio
+files.
+
+This library is intended to help fix issues like these.
+
+Some concepts:
+
+Sequence Expression: Used both for matching filenames, and generating
+new filenames. Therefore a string compliant with the \"format\"
+function rather than a normal regexp is used.  example \"00-%4d.djvu\" ,
+\"%4d\" is interpreted for pattern matching.  This will match filenames
+looking like \"00-0001.djvu\" etc.  
+
+Gap: A gap in the sequential numbering of files, some files are
+aparently missing in the middle of a sequence
+
+Offset: Used when offseting sequential filenames up or down in
+sequence.
+
+TODO:
+
+Maybe it would be useful with a more complete regexp syntax for mark
+expressions, but so far the current syntax is convenient and has
+worked well.
+
+It would be nice to be able to set a bunch of section names in
+one go, maybe similar to fsdired.")

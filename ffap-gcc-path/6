@@ -1,0 +1,14 @@
+(:summary    "Get gcc's include path for ffap-c-path"
+ :created    "2007"
+ :updated    "2009"
+ :license    "GPL-3"
+ :authors    (("Kevin Ryde" . "user42@zip.com.au"))
+ :maintainer ("Kevin Ryde" . "user42@zip.com.au")
+ :provided   (ffap-gcc-path)
+ :required   ((("emacs" ffap)))
+ :keywords   ("files")
+ :homepage   "http://user42.tuxfamily.org/ffap-gcc-path/index.html"
+ :commentary "\
+The default `ffap-c-path' is \"/usr/include\" and \"/usr/local/include\",
+but gcc has a separate directory for bits it provides, like float.h.
+This spot of code extracts gcc's path by parsing the output of \"gcc -v\".")

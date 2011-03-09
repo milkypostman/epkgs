@@ -1,0 +1,74 @@
+(:summary    "Load the corresponding C/C++ header or source file for the current buffer"
+ :created    "2002"
+ :updated    "20020709"
+ :license    "GPL-2"
+ :authors    (("Mohamed Hendawi" . "moedev@hendawi.com"))
+ :maintainer ("Mohamed Hendawi" . "moedev@hendawi.com")
+ :keywords   ("c" "languages" "oop")
+ :homepage   "http://www.hendawi.com/"
+ :commentary "\
+This Emacs lisp file provides the function \"sourcepair-load\" which will load
+the corresponding header or source file for the current buffer.  For example,
+if you are looking at the file FooParser.cpp and enter M-x sourcepair-load 
+(or whatever keybinding you've set), the file FooParser.h will be loaded.  
+It also works the other way as well.  To use it put this file somewhere 
+in your lisp library path and then add something like this to your .emacs 
+file:
+
+(load-file \"sourcepair.el\")
+
+KEYBINDINGS:
+
+You should set a keybinding to use this function easily.  For example, I add
+the following to my .emacs file:
+
+(define-key global-map \"\\C-xz\" 'sourcepair-load)
+
+
+GLOBAL VARIABLES:
+
+There are five global variables that can be used to adjust how the function
+works:
+
+sourcepair-source-extensions :
+
+   A list containing the recognized extensions for source files.  By default
+   this is set to ( \".cpp\" \".cxx\" \".cc\" \".c\" ).  For example: with the default 
+   setting if you are looking at \"foo.h\", the function will look for 
+   \"foo.cpp\", \"foo.cxx\", \"foo.cc\" or \"foo.c\" in that order in the 
+   directories specified by sourcepair-source-path.
+
+sourcepair-header-extensions :
+
+   A list containing the recognized extensions for header files.  By default
+   this is set to ( \".h\" \".hpp\" \".hh\" ).  For example: with the default 
+   setting if you are looking at \"foo.cpp\", the function will look for 
+   \"foo.h\", \"foo.hpp\" or \"foo.hh\" in that order in the directories specified
+   by sourcepair-header-path.
+   
+sourcepair-source-path :
+
+   A list containing the path's to search for source files.  By default this
+   is set to ( \".\" ) which means source files will only be searched for in
+   the current directory.  Paths that end in \"/*\" will be searched 
+   recursively.  For example, if you specified sourcepair-source-path as
+   ( \".\" \"../*\" ) the function will look for source files first in the 
+   current directory, and then in the parent directory, and then in any 
+   subdirectories of the parent directory.
+
+sourcepair-header-path :
+
+   Similar to sourcepair-source-path except for header files.
+
+sourcepair-recurse-ignore :
+
+   A list containing directories to ignore when recursively searching
+   subdirectories for header or source files.  By default this is set
+   to ( \"CVS\" )
+
+
+For example, in my .emacs file I have the following:
+
+(setq sourcepair-source-path    '( \".\" \"../*\" ))
+(setq sourcepair-header-path    '( \".\" \"include\" \"../include\" \"../*\"))
+(setq sourcepair-recurse-ignore '( \"CVS\" \"Obj\" \"Debug\" \"Release\" ))")

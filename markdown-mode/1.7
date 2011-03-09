@@ -1,0 +1,100 @@
+(:summary    "Major mode to edit Markdown files in Emacs"
+ :repository (git . "git://code.jblevins.org/markdown-mode.git")
+ :created    "2007"
+ :updated    "2009"
+ :license    "GPL-2"
+ :authors    (("Jason Blevins" . "jrblevin@sdf.lonestar.org"))
+ :maintainer ("Jason Blevins" . "jrblevin@sdf.lonestar.org")
+ :provided   (markdown-mode)
+ :required   ((("emacs" easymenu font-lock outline)))
+ :keywords   ("markdown" "major" "mode")
+ :homepage   "http://jblevins.org/projects/markdown-mode/"
+ :wikipage   "http://www.emacswiki.org/MarkdownMode"
+ :commentary "\
+markdown-mode is a major mode for editing [Markdown][]-formatted
+text files in GNU Emacs.  markdown-mode is free software, licensed
+under the GNU GPL.
+
+ [Markdown]: http://daringfireball.net/projects/markdown/
+
+The latest stable version is markdown-mode 1.7, released on October 1, 2009:
+
+   * [markdown-mode.el][]
+   * [Screenshot][]
+   * [Release notes][]
+
+markdown-mode is also available in the Debian
+[emacs-goodies-el](http://packages.debian.org/emacs-goodies-el)
+package (beginning with revision 27.0-1) and the OpenBSD
+[textproc/markdown-mode](http://pkgsrc.se/textproc/markdown-mode) package.
+
+ [markdown-mode.el]: http://jblevins.org/projects/markdown-mode/markdown-mode.el
+ [screenshot]: http://jblevins.org/projects/markdown-mode/screenshots/20080604-001.png
+ [release notes]: http://jblevins.org/projects/markdown-mode/rev-1-7
+
+The latest development version can be downloaded directly
+([markdown-mode.el][devel.el]) or it can be obtained from the
+(browsable and clonable) Git repository at
+<http://jblevins.org/git/markdown-mode.git>.  The entire repository,
+including the full project history, can be cloned via the Git protocol
+by running
+
+    git clone git://jblevins.org/git/markdown-mode.git
+
+ [devel.el]: http://jblevins.org/git/markdown-mode.git/plain/markdown-mode.el
+
+Dependencies:
+
+markdown-mode requires easymenu, a standard package since GNU Emacs
+19 and XEmacs 19, which provides a uniform interface for creating
+menus in GNU Emacs and XEmacs.
+
+Installation:
+
+Make sure to place `markdown-mode.el` somewhere in the load-path and add
+the following lines to your `.emacs` file to associate markdown-mode
+with `.text` files:
+
+    (autoload 'markdown-mode \"markdown-mode.el\"
+       \"Major mode for editing Markdown files\" t)
+    (setq auto-mode-alist
+       (cons '(\"\\\\.text\" . markdown-mode) auto-mode-alist))
+
+There is no consensus on an official file extension so change `.text` to
+`.mdwn`, `.md`, `.mdt`, or whatever you call your markdown files.
+
+Customization:
+
+Although no configuration is *necessary* there are a few things
+that can be customized.  The `M-x customize-mode` command
+provides an interface to all of the possible customizations:
+
+  * `markdown-command` - the command used to run Markdown
+    (default: `markdown`).
+
+  * `markdown-hr-length` - the length of horizontal rules
+    (default: `5`).
+
+  * `markdown-bold-underscore` - set to a non-nil value to use two
+    underscores for bold instead of two asterisks (default: `nil`).
+
+  * `markdown-italic-underscore` - set to a non-nil value to use
+    underscores for italic instead of asterisks (default: `nil`).
+
+  * `markdown-indent-function` - the function to use for automatic
+    indentation (default: `markdown-indent-line`).
+
+  * `markdown-indent-on-enter` - set to a non-nil value to
+    automatically indent new lines when the enter key is pressed
+    (default: `t`)
+
+  * `markdown-uri-types` - a list of protocols for URIs that
+    `markdown-mode' should highlight.
+
+  * `markdown-enable-math` - syntax highlighting for
+    LaTeX fragments (default: `nil`).
+
+Additionally, the faces used for syntax highlighting can be modified to
+your liking by issuing `M-x customize-group RET markdown-faces`
+or by using the \"Markdown Faces\" link at the bottom of the mode
+customization screen.")

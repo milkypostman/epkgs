@@ -1,0 +1,32 @@
+(:summary    "Try out a new idea by commenting out old code"
+ :repository (git . "https://github.com/lewang/le_emacs_try_code.git")
+ :created    "20110202"
+ :updated    "20110203"
+ :license    "GPL-3"
+ :provided   (try-code)
+ :keywords   ("programming" "language")
+ :homepage   "https://github.com/lewang/le_emacs_try_code"
+ :wikipage   "http://www.emacswiki.org/TryCode"
+ :commentary "\
+Comments out a chunk of code to allow you to try some new code.  When you
+reinvoke the function in the old or new section, you can choose which one
+to keep.
+
+To try it out, select some code in any programming mode buffer, press C-?,
+add some \"test code\" and press C-? again.
+
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License as
+published by the Free Software Foundation; either version 3, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; see the file COPYING.  If not, write to
+the Free Software Foundation, Inc., 51 Franklin Street, Fifth
+Floor, Boston, MA 02110-1301, USA.")

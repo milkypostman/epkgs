@@ -1,0 +1,20 @@
+(:summary    "A simple MP3 Tag Editor for GNU Emacs"
+ :created    "1999"
+ :updated    "1999"
+ :license    "GPL-2"
+ :authors    (("Steve Kemp" . "stevek@epc.co.uk"))
+ :maintainer ("Steve Kemp" . "stevek@epc.co.uk")
+ :provided   (mp3-tools)
+ :required   ((("emacs" easymenu wid-edit widget)))
+ :keywords   ("tools" "convenience" "data")
+ :commentary "\
+This started out life a small collection of tools related to MP3
+files, but it has since evolved into a simple MP3 Tag editor.
+
+ Currently there is only support for editting the information in
+one file at a time - but I shall be adding the ability to edit
+all the files in a directory soon.
+
+ In addition to the editor there is a nice function for creating
+playlists - recursively adding every MP3 file it can find to the
+list.")

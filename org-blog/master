@@ -1,0 +1,60 @@
+(:summary    "Create and publish a blog with org-mode"
+ :created    "2006"
+ :updated    "20070613"
+ :license    "GPL-2"
+ :authors    (("David O'Toole" . "dto@gnu.org"))
+ :maintainer ("David O'Toole" . "dto@gnu.org")
+ :provided   (org-blog)
+ :required   ((("emacs" org-publish)))
+ :keywords   ("hypermedia" "tools")
+ :homepage   "http://www.emacswiki.org/OrgBlog"
+ :wikipage   "http://www.emacswiki.org/OrgBlog"
+ :commentary "\
+This program adds simple blog publishing support to org-mode. It is
+built on top of org-publish.el.
+
+You should read the documentation for org-publish.el before
+continuing.
+
+The latest version of this program, and of org-publish.el, can be
+found at: http://dto.freeshell.org/notebook/OrgMode.html
+
+1. Basic configuration
+
+   First add (require 'org-blog) to your emacs initialization file. 
+
+   Then set the variable org-blog-directory (you can also leave it
+   as the default, \"~/blog/\"). This directory should be different
+   from the directory where your normal *.org files are stored,
+   otherwise they will get \"posted\".
+
+   You should also set the variable
+   org-blog-unfinished-directory. The default is
+   \"~/blog/unfinished\". This is the directory where unfinished
+   posts are stored. You can leave posts in the unfinished
+   directory while you are working on them, and they won't be
+   published.
+
+2. Create a post 
+
+   Use M-x org-blog-new-post. You'll be prompted for a
+   filename. Enter a short name for this post (without the \".org\")
+   and press RET. You'll see a new buffer with a blank TITLE field.
+
+   You can work on more than one post at once. They'll all be
+   stored in your `org-blog-unfinished-directory'. To view a list
+   of posts in progress, use M-x
+   org-blog-find-unfinished-posts. You'll see the directory listing
+   of `org-blog-unfinished-directory', and you can use RET to
+   select a post to edit.
+
+3. Finish a post
+
+   When your post is ready, visit the file and hit M-x
+   org-blog-finish-post. This does not mean the post is published
+   on your website, only that the post is \"finished\" and given a
+   timestamped filename. Your blog post and updated index will be
+   published when you execute M-x org-publish-all.
+
+   But first, let's take a detour to make sure blog publishing is
+   set up properly.")

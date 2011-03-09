@@ -1,0 +1,56 @@
+(:summary    "CUA style buffer-switching"
+ :created    "20020426"
+ :updated    "20040427"
+ :license    "GPL-2"
+ :authors    (("lawrence mitchell" . "wence@gmx.li"))
+ :maintainer ("lawrence mitchell" . "wence@gmx.li")
+ :provided   (cua-emul)
+ :required   ((("emacs" cl)))
+ :keywords   ("buffer-switching" "convenience")
+ :homepage   "http://www.ph.ed.ac.uk/~s0198183/"
+ :commentary "\
+This file provides some emulation of CUA style buffer manipulation, in
+the form of a minor mode.  In particular it provides the following (I
+ think useful) functions:
+`cua-emul-next-buffer' -- Switch to the next buffer in the buffer
+                          list, like CUA style ctrl-tab.
+`cua-emul-previous-buffer' -- Switch to the previous buffer in the
+                              buffer list, like CUA style
+                              ctrl-shift-tab.
+`cua-emul-kill-buffer' -- Kill and maybe save the current buffer,
+                          like CUA ctrl-f4.
+`cua-emul-kill-frame' -- Kill the current frame, or
+                         `save-buffers-kill-emacs' if the current
+                         frame is the only one, like CUA alt-f4.
+
+Compatibility:
+Tested in Emacs 20.4 and Emacs 21.1/21.2.
+Not tested in XEmacs, though I don't think there should be a problem.
+The only thing you might have to worry about is that the
+keybindings are specified in a way compatible with your Emacs.
+
+Installation:
+To use this file, put it somewhere in your load-path, optionally
+byte compile it and then add the following to your .emacs:
+(require  'cua-emul)
+(turn-on-cua-emul-mode)
+
+Alternately:
+If you just want the functionality of the above mentioned commands,
+but don't want the whole minor mode, the bits you have to pull out
+are:
+`cua-emul-delete-from-list', both the variable and the function
+`cua-emul-invisible-buffers', and whichever of the above mentioned
+commands you want.
+
+Note, by default, if you have any keybindings on keys cua-emul-mode
+uses, they will not be overriden, if you want to force cua-emul-mode
+to override keybindings, set the variable `cua-emul-force' to a
+non-nil value.  If you do set `cua-emul-force', you may also want to
+set `cua-emul-save-and-restore-keys' to a non-nil value so that
+overriden keybindings are restored when `cua-emul-mode' is turned
+off.
+
+If you like CUA keybindings a lot you might also want to look at
+`pc-selection-mode', `pc-bindings-mode', (both included with Emacs
+21) and `cua-mode' by Kim F.  Storm -- see <URL:http://www.cua.dk/>.")

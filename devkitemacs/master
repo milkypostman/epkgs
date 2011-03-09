@@ -1,0 +1,22 @@
+(:summary    "Helper functions for working with the devkitpro package (NDS and PSP development)"
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-2"
+ :authors    (("Jonathan Arkell" . "jonnay@jonnay.net"))
+ :maintainer ("Jonathan Arkell" . "jonnay@jonnay.net")
+ :provided   (devkitemacs)
+ :homepage   "http://www.emacswiki.org/DevKitEmacs"
+ :wikipage   "http://www.emacswiki.org/DevKitEmacs"
+ :commentary "\
+Some emacsy goodness for devkit pro
+
+This file is still REALLLY raw.  It will get better and better.
+
+customize the group.  In particular, customize the devkitemacs-emulator, devkitemacs-card-path and devkitemacs-projects vars.
+Once you have set up your projects, you can change the current project with devkitemacs-set-current-project.
+Use the following fuctions to build and work with your project:
+ - devkitemacs-build
+ - devkitemacs-clean
+ - devkitemacs-emulate
+ - devkitemacs-install
+ - devkitemacs-shell")

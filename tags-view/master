@@ -1,0 +1,36 @@
+(:summary    "Display and navigate tags browsing history"
+ :repository (git . "https://github.com/markhepburn/tags-view.git")
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-3"
+ :authors    (("Mark Hepburn" . "mark.hepburn@gmail.com"))
+ :maintainer ("Mark Hepburn" . "mark.hepburn@gmail.com")
+ :provided   (tags-view)
+ :required   ((("emacs" cl)))
+ :keywords   ("extensions" "tools" "convenience" "files")
+ :homepage   "https://github.com/markhepburn/tags-view"
+ :commentary "\
+Functionality to supplement the different tags operations, usually
+bound to M-./M-* Currently supports etags.el and gtags.el; any
+others?
+
+As you navigate through a source tree it can become easy to forget
+how you got to your current location -- you could call M-*
+repeatedly to pop back up the stack, but this would lose your
+current location.  This module allows you to view the path taken,
+and if desired to jump immediately back to any intermediate
+location, delete any extranous locations, etc.
+
+I don't think this exists, but I haven't looked too hard -- I'd
+like the practice of writing something to completion for emacs for
+once, before realising someone else has already provided it!
+Update: ok, I went looking, and of course it exists:
+http://www.emacswiki.org/emacs/EtagsStack
+I'd like to think this offers a little bit different; it supports
+gtags as well out of the box and in theory at least can be
+extended to others, and it offers a few more operations on the
+chronological trace.  Of course, if you need any of that is up to
+you :)
+
+Bugs: Most probably.  The gtags backend in particular really
+hasn't copped much testing yet.")

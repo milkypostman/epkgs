@@ -1,0 +1,47 @@
+(:summary    "Processing Java-style Unicode character escapes"
+ :created    "2006"
+ :updated    "2006"
+ :license    "GPL-2"
+ :authors    (("Dave Love" . "fx@gnu.org"))
+ :maintainer ("Dave Love" . "fx@gnu.org")
+ :provided   (uniesc)
+ :required   (nil
+	      (("emacs" syntax)))
+ :keywords   ("data" "languages")
+ :homepage   "http://www.loveshack.ukfsn.org/emacs/"
+ :commentary "\
+C99 defines escape sequences for Unicode characters in strings and
+languages like Python do similarly.  This package defines functions
+for encoding, decoding and composing (i.e. displaying with the
+appropriate character) such sequences.
+
+The basic form of such sequences is `\\uXXXX' or `\\UXXXXXXXX', where
+X is a hex digit.  The first is obviously confined to the BMP and
+the latter can represent all of UCS.  In fact, Java uses utf-16
+(sigh), not \\U escapes, so supplementary characters appear as
+surrogate pairs from \\u sequences
+<URL:http://java.sun.com/docs/books/jls/third_edition/html/lexical.html#3.3>,
+
+Java also specifies that the `u' in the escape can be repeated,
+which C and Python don't support.  Escapes may (Java) or may not
+(Python?) be allowed outside strings; you can control that (in
+Emacs 22 only) with `uniesc-strings-only'.
+
+A possible use is to put `uniesc-compose-buffer' on a mode hook for
+Python, Java, &c. e.g.:
+
+(add-hook 'python-mode-hook
+          (lambda ()
+            (require 'uniesc)
+            (set (make-local-variable 'uniesc-match-regexp)
+                 uniesc-c-style-match)
+            (set (make-local-variable 'uniesc-strings-only) t)
+            (uniesc-compose-buffer)))
+
+Fixme:  There should probably be font-lock support for maintaining
+the composition; I'm not sure how to balance dealing with multi-u
+escapes between command prefix args and mode-specific local
+variables.  Java escapes actually represent utf-16 sequences,
+including surrogate pairs, but surrogates aren't currently handled.
+
+Test cases: \\u00ff \\uu0078 \\\\u00fe \\U0010000 \\u03B1 β")

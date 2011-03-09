@@ -1,0 +1,18 @@
+(:summary    "Some utilities for calfw.el"
+ :repository (git . "https://github.com/myuhe/calfw-gcal.el.git")
+ :license    "GPL-3"
+ :maintainer ("myuhe")
+ :provided   (calfw-gcal)
+ :required   ((("calfw" calfw)))
+ :keywords   ("convenience" "calendar")
+ :homepage   "https://github.com/myuhe/calfw-gcal.el"
+ :commentary "\
+It is necessary to calfw.el Configurations
+
+
+Installation:
+
+Put the calfw-gcal.el to your
+load-path.
+Add to .emacs:
+(require 'calfw-gcal)")

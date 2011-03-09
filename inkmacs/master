@@ -1,0 +1,13 @@
+(:summary    "Inkscape Emacs fusion"
+ :repository (git . "https://github.com/jave/inkmacs.git")
+ :license    "GPL"
+ :authors    (("joakim verona"))
+ :maintainer ("joakim verona")
+ :provided   (inkmacs)
+ :required   ((("emacs" dbus)
+	       (nil dbus-introspection dbus-proxy)))
+ :homepage   "https://github.com/jave/inkmacs"
+ :wikipage   "http://www.emacswiki.org/Inkmacs"
+ :commentary "\
+Experimental integration between inkscape and Emacs using dbus.
+See README.org")

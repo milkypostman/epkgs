@@ -1,0 +1,13 @@
+(:summary    "A constraint propagation library in elisp"
+ :created    "2002"
+ :updated    "20020418"
+ :license    "GPL-2"
+ :authors    (("Akimichi Tatsukawa" . "akimichi@mbox.co.jp"))
+ :maintainer ("Akimichi Tatsukawa" . "akimichi@mbox.co.jp")
+ :provided   (constraint)
+ :required   ((("emacs" cl eieio)))
+ :keywords   ("constraint")
+ :commentary "\
+This package provides a constraint propagation library.
+Please refer to the chapter 3 of the book \"Structure and Interpretation
+of Computer Program\"(SICP).")

@@ -1,0 +1,42 @@
+(:summary    "Created flashcard decks using existing dicitonary files"
+ :created    "2002"
+ :updated    "2002"
+ :license    "GPL-2"
+ :authors    (("Alex Schroeder" . "alex@gnu.org"))
+ :maintainer ("Alex Schroeder" . "alex@gnu.org")
+ :provided   (flashmaker)
+ :required   ((("emacs" wid-edit widget)))
+ :keywords   ("vocab")
+ :homepage   "http://www.emacswiki.org/FlashMaker"
+ :wikipage   "http://www.emacswiki.org/FlashMaker"
+ :commentary "\
+This package provides a number of wizards to help you create
+flashcard decks based on a number of existing dictionaries.
+currently supported are all dictionaries in the KANJIDIC and EDICT
+format, ie. KANJIDIC, EDICT, ENUMDIC, JDDICT, COMPDIC.
+
+Use `flashmaker-kanjidic-filter' to create a new flashcard deck
+based on a KANJIDIC format file.
+
+Use `flashmaker-edict-filter' to create a new flashcard deck based
+on a KANJIDIC format file, and an EDICT format file.  The KANJIDIC
+file will be used to classify all characters, and then the
+expressions in the EDICT file will be filtered according to this
+classification, thus producing a subset of the EDICT File limited
+to the kanji you want to practice.
+
+When reading the files, the encoding can be problematic.  If your
+Emacs does not recognize EUC-JP automatically, I recommend the
+following addition to your init file:
+
+(add-to-list 'auto-coding-alist '(\"edict\\\\'\" . euc-jp))
+(add-to-list 'auto-coding-alist '(\"kanjidic\\\\'\" . euc-jp))
+
+When saving the files, I recommend the coding system iso-2022-jp.
+
+In debian, use \"apt-get install kanjidic\" for a large dictionary of
+Japanese kanji including a document explaining the format of the
+dictionary file.
+
+You can use flashcard decks to practice using flashcard.el by
+Jorgen Schaefer.")

@@ -1,0 +1,11 @@
+(:summary    "Interact with simple-note.appspot.com"
+ :repository (git . "https://github.com/cefstat/simplenote.el.git")
+ :created    "2009"
+ :updated    "2010"
+ :license    "GPL-2"
+ :authors    (("Konstantinos Efstathiou" . "konstantinos@efstathiou.gr"))
+ :maintainer ("Konstantinos Efstathiou" . "konstantinos@efstathiou.gr")
+ :provided   (simplenote)
+ :required   ((("emacs" cl json url widget)))
+ :keywords   ("simplenote")
+ :homepage   "https://github.com/cefstat/simplenote.el")

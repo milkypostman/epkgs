@@ -1,0 +1,11 @@
+(:summary    "An elisp port of Mozilla Universal Charset Auto Detector"
+ :created    "2006"
+ :updated    "20100409"
+ :license    "GPL-2"
+ :authors    (("Qichen Huang" . "unicad.el@gmail.com"))
+ :maintainer ("Qichen Huang" . "unicad.el@gmail.com")
+ :provided   (unicad)
+ :required   ((("emacs" cl)))
+ :keywords   ("coding-system" "auto-coding-functions")
+ :homepage   "http://www.emacswiki.org/Unicad"
+ :wikipage   "http://www.emacswiki.org/Unicad")

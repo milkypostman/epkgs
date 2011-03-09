@@ -1,0 +1,11 @@
+(:summary    "A new major mode for editing verilog files"
+ :repository (cvs . ":pserver:anonymous@vlog-mode.cvs.sourceforge.net:/cvsroot/vlog-mode")
+ :created    "2004"
+ :updated    "2004"
+ :license    "GPL-2"
+ :authors    (("Sun Yijiang"))
+ :maintainer ("Sun Yijiang")
+ :provided   (vlog-align vlog-auto vlog-indent vlog-lib vlog-mode vlog-signal vlog-skel)
+ :required   ((("emacs" cl font-lock)))
+ :keywords   ("languages" "verilog")
+ :homepage   "http://vlog-mode.sourceforge.net/")

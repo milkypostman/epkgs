@@ -1,0 +1,97 @@
+(:summary    "Simple window manager for emacs"
+ :repository (git . "https://github.com/kiwanami/emacs-window-manager.git")
+ :created    "2010"
+ :updated    "2011"
+ :license    "GPL-3"
+ :provided   (e2wm e2wm-config)
+ :required   ((("emacs" cl easymenu imenu windmove)
+	       ("window-layout" window-layout)))
+ :keywords   ("tools" "window" "manager")
+ :homepage   "https://github.com/kiwanami/emacs-window-manager"
+ :commentary "\
+EmacsにWindow管理を入れたコンセプト実装。
+・バッファの表示履歴の管理
+・ポップアップ場所の固定
+・EclipseのPerspectiveみたいなイメージ
+・プラグインによる拡張
+
+パースペクティブ
+・メインコーディング画面
+・２画面比較画面
+・ドキュメント参照画面
+　・followモード
+・バッファ一覧画面
+　・機能バッファも含めるかどうか
+　・バッファ選択したらパースペクティブを選択
+
+○インストール
+1) e2wm.el, window-layout.el をロードパスに置く。
+2) 以下を .emacs に書く
+   (require 'e2wm)
+3) M-x e2wm:start-management で開始。
+   ※止めるには (prefix) C-q か、 M-x e2wm:stop-management で終了。
+
+○開発方針
+とりあえずやりたいこと（Window管理、パースペクティブ、プラグイン）を
+実装してみて、整理・汎用化を後で考えてみる。
+
+このプログラムを実行して入ってしまうアドバイスやフック
+* advice 
+ - buffer系
+    switch-to-buffer, pop-to-buffer
+ - window-configuration系
+    current-window-configuration
+    window-configuration-frame
+    compare-window-configurations
+    set-window-configuration
+    window-configuration-p
+* hook
+    kill-buffer-hook
+    window-configuration-change-hook
+    completion-setup-hook
+    after-save-hook
+* override variable
+    special-display-function
+
+○略語、表記など
+pst          : perspective
+e2wm:c-       : カスタマイズ変数
+e2wm:$        : 構造体定義
+
+○ソース構成
+全体カスタマイズ / e2wm:c-
+基本関数
+履歴管理 / e2wm:history-
+パースペクティブフレームワーク / e2wm:pst-
+パースペクティブセット / e2wm:pstset-
+アドバイス（switch-to-buffer, pop-to-bufferなど）
+プラグインフレームワーク / e2wm:plugin-
+メニュー / e2wm:menu-
+プラグイン定義 / e2wm:def-plugin-
+パースペクティブ定義 / e2wm:dp-
+  code  / e2wm:dp-code-
+  doc   / e2wm:dp-doc-
+  two   / e2wm:dp-two-
+  dashboard / e2wm:dp-dashboard-
+  array / e2wm:dp-array-
+全体制御
+
+更新履歴
+
+Revision 1.2  2011/01/28  sakurai
+elscreen対応, e2wm開始・終了時のウインドウ保存改善
+subウインドウがたまに残ってしまう問題の改善と動作速度改善
+faceのバグ修正など
+
+Revision 1.1  2010/06/07  sakurai
+名前の変更 (ewm.el -> e2wm.el)
+未宣言の変数のバグ修正
+管理開始、終了用hook追加
+filesのソートでキャレットが頭にくるように修正
+filesのfaceを自前で用意するように修正
+twoでバッファ一覧から左右に並べられる機能追加
+複数フレーム対応
+twoの機能強化
+
+Revision 1.0  2010/05/28  sakurai
+初回リリース")

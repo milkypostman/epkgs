@@ -1,0 +1,31 @@
+(:summary    "Emacs support for BitKeeper configuration management"
+ :created    "2003"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("Bryan O'Sullivan" . "bos@serpentine.com"))
+ :maintainer ("Bryan O'Sullivan" . "bos@serpentine.com")
+ :provided   (bk)
+ :required   ((("emacs" advice cl diff-mode easymenu man timer vc view)
+	       ("x-migrant" x-migrant)
+	       (nil view-less)))
+ :commentary "\
+This mode builds upon Emacs's VC mode to provide flexible
+integration with the BitKeeper software configuration management
+product.
+
+To get going as quickly as possible, load this file into Emacs and
+type `C-c b h', which runs bk-help-overview, which prints a helpful
+usage overview.
+
+Much of the inspiration for bk.el comes from Rajesh
+Vaidheeswarran's excellent p4.el, which does an admirably thorough
+job for the Perforce SCM product.  In fact, substantial chunks of
+code are adapted from p4.el.
+
+This code has been developed under XEmacs 21.4, and probably will
+not work as well under GNU Emacs (albeit tested under 21.2).
+Patches to enhance the portability of this code, fix bugs, and add
+features are most welcome.  You can obtain a BitKeeper repository
+for this package by cloning bk://bk-emacs.bkbits.net/emacs
+
+Please send problem reports and suggestions to bos@serpentine.com.")

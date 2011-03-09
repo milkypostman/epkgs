@@ -1,0 +1,18 @@
+(:summary    "Mode line mail indicator for gnus"
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-2"
+ :authors    (("Philip Jackson" . "phil@shellarchive.co.uk"))
+ :maintainer ("Philip Jackson" . "phil@shellarchive.co.uk")
+ :provided   (gnus-checker)
+ :homepage   "http://www.shellarchive.co.uk/content/emacs.html"
+ :commentary "\
+Set `gnus-checker-groups' to an alist of (group . face) pairs and
+then you will get an indicator for those groups in their respective
+faces.
+
+for example:
+
+(setq gnus-checker-groups
+      '((\"nnmaildir:inbox\" . font-lock-warning-face)
+        (\"nnmaildir:porn-casting\" . font-lock-too-small-face)))")

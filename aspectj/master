@@ -1,0 +1,12 @@
+(:summary    "AspectJ extensions to Java mode"
+ :repository (cvs . ":pserver:anonymous@aspectj4emacs.cvs.sourceforge.net:/cvsroot/aspectj4emacs")
+ :created    "1998"
+ :updated    "2000"
+ :license    "GPL-2"
+ :authors    (("Gregor Kiczales and William Griswold"))
+ :maintainer ("Gregor Kiczales and William Griswold")
+ :provided   (ajdee aspectj-mode)
+ :required   ((("emacs" browse-url cc-mode cl custom easy-mmode easymenu font-lock imenu overlay)
+	       ("jdee" jde)))
+ :keywords   ("jde" "jdee" "tools" "aspectj")
+ :homepage   "http://aspectj4emacs.sourceforge.net/")

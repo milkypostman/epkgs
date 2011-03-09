@@ -1,0 +1,21 @@
+(:summary    "Undo groups of changes"
+ :updated    "20030317"
+ :license    "GPL-2"
+ :authors    (("Harley Gorrell" . "harley@mahalito.net"))
+ :maintainer ("Harley Gorrell" . "harley@mahalito.net")
+ :provided   (undo-group)
+ :commentary "\
+* Undo a group of changes at a time.
+* You explicitly set the group mark.
+* Make your undo-limit and undo-strong-limit really big!
+
+An undo boundary is marked with a single nil (nil). A
+undo group boundary is marked with a double nil (nil
+nil).  This choice means the present undo code does not
+have to be changed and you can undo though groups with a
+pause at the group boundary.  This also relies upon the
+fact that the function undo-boundary will not add a
+boundary if one is already there.
+
+Presently, if invoked without a group boundary it will
+undo to the beginning.")

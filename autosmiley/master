@@ -1,0 +1,21 @@
+(:summary    "Convert smileys into their graphical representation"
+ :created    "20060315"
+ :license    "GPL-2"
+ :authors    (("Damyan Pepper (gmail account")
+	      ("username damyanp)"))
+ :maintainer ("Damyan Pepper (gmail account")
+ :provided   (autosmiley)
+ :required   ((("emacs" smiley)))
+ :homepage   "http://www.emacswiki.org/AutoSmiley"
+ :wikipage   "http://www.emacswiki.org/AutoSmiley"
+ :commentary "\
+Defines the minor mode autosmiley-mode that converts smileys like
+:-) into their graphical representations on the fly.
+
+Tested on:
+
+GNU Emacs 22.0.50.1 (i386-mingw-nt5.1.2600) of 2006-03-14 on W2ONE
+
+History:
+
+20060315 - First Release")

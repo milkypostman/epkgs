@@ -1,0 +1,22 @@
+(:summary    "Extensions to `options.el'"
+ :created    "19960206"
+ :updated    "20110104"
+ :license    "GPL-2"
+ :authors    (("Drew Adams"))
+ :maintainer ("Drew Adams")
+ :provided   (options+)
+ :required   ((("emacs" options)))
+ :keywords   ("docs" "help" "internal")
+ :commentary "\
+Extensions to `options.el'.
+
+
+ ***** NOTE: The following function defined in `options.el' has
+             been REDEFINED HERE:
+
+ `list-options' - Runs `list-options-hook' at end.
+
+
+ This file should be loaded after loading the standard GNU file
+ `options.el'.  So, in your `~/.emacs' file, do this:
+ (eval-after-load \"options\" '(progn (require 'options+))")

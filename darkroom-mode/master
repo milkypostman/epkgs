@@ -1,0 +1,7 @@
+(:repository (hg . "http://bitbucket.org/phromo/darkroom-mode")
+ :authors    (("Martin Svenson"))
+ :maintainer ("Martin Svenson")
+ :provided   (darkroom-mode frame-local-vars)
+ :required   ((("emacs" cl)
+	       (nil w32-fullscreen)))
+ :homepage   "http://bitbucket.org/phromo/darkroom-mode")

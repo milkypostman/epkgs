@@ -1,0 +1,10 @@
+(:summary    "An interface to the Eclipse IDE"
+ :repository (git . "https://github.com/senny/emacs-eclim.git")
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-3"
+ :provided   (company-emacs-eclim decompile eclim eclim-ant eclim-java eclim-maven eclim-problems eclim-project)
+ :required   ((("company" company)
+	       ("emacs" cl compile json)))
+ :homepage   "https://github.com/senny/emacs-eclim"
+ :wikipage   "http://www.emacswiki.org/EmacsEclim")

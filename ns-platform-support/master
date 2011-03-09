@@ -1,0 +1,5 @@
+(:created    "1993"
+ :updated    "2009"
+ :license    "GPL-3"
+ :provided   (ns-platform-support)
+ :wikipage   "http://www.emacswiki.org/NSPlatformSupport")

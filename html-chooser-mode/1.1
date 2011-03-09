@@ -1,0 +1,58 @@
+(:summary    "Use nxml-mode or html-mode, depending, and"
+ :created    "2005"
+ :updated    "2005"
+ :license    "GPL-2"
+ :authors    (("Peter Heslin" . "p.j.heslin@dur.ac.uk"))
+ :maintainer ("Peter Heslin" . "p.j.heslin@dur.ac.uk")
+ :provided   (html-chooser-mode)
+ :homepage   "http://www.dur.ac.uk/p.j.heslin/Software/Emacs/"
+ :wikipage   "http://www.emacswiki.org/HtmlChooserMode"
+ :commentary "\
+nxml-mode is an excellent mode for authoring XHTML (see
+http://www.emacswiki.org/cgi-bin/wiki/NxmlModeForXHTML), but it
+only works for XHTML. Even people who prefer XHTML still must often
+deal with legacy HTML documents, and so many people need to work
+with files in both flavors.  Unfortunately, both usually have the
+same .html or .htm extension, and so are treated identically by
+auto-mode-alist.  If, as a result, you accidentally open an HTML
+file in nxml-mode, Emacs churns CPU while it tried in vain to
+validate it, until you kill the buffer.
+
+This file provides a dummy major mode called html-chooser-mode that
+looks at a file, and if it seems to be XHTML, switches to
+nxml-mode, and if it seems to be regular HTML, switches to
+html-mode (or html-helper-mode, or whatever).  If the file is empty
+or otherwise cannot be understood, the user is prompted to choose
+which mode, and if empty, is offered the possibility of inserting
+several skeletons or templates appropriate to that mode.
+
+In fact, you may not need html-chooser-mode at all, since you can
+get most of its functionality by putting this in your .emacs file:
+
+ (setq magic-mode-alist (cons '(\"<\\\\?xml\\\\s \" . nxml-mode) magic-mode-alist))
+ (setq auto-mode-alist  (cons '(\"\\\\.x?html?$\" . html-mode) auto-mode-alist))
+
+In this way, all files with a .html extension will be opened in
+html-mode, except for those containing <?xml at the start, which
+will be opened in nxml-mode.  This doesn't handle new files well,
+though: it puts them into html-mode, even if your intention is to
+create an XHTML file with nxml-mode.  It also completely fails to
+work on older versions of Emacs that don't implement
+magic-mode-alist.  Hence html-chooser-mode.
+
+Installation:
+
+Put these lines in your .emacs file:
+
+ (when (boundp 'magic-mode-alist)
+   (setq magic-mode-alist
+               (cons '(\"<\\\\?xml\\\\s \" . nxml-mode) magic-mode-alist)))
+
+ (setq auto-mode-alist (cons '(\"\\\\.x?html?$\" . html-chooser-mode) auto-mode-alist))
+ (autoload 'html-chooser-mode \"html-chooser-mode\")
+
+Changes:
+
+1.0 Initial release
+1.1 Don't offer to insert a template if there's already text in the
+    buffer (as for HTML fragments)")

@@ -1,0 +1,12 @@
+(:summary    "Common Lisp `tagbody' for Emacs Lisp"
+ :created    "2000"
+ :updated    "2000"
+ :license    "GPL-2"
+ :authors    (("Michael Abraham Shulman" . "viritrilbia@users.sourceforge.net"))
+ :maintainer ("Michael Abraham Shulman" . "viritrilbia@users.sourceforge.net")
+ :provided   (tagbody)
+ :required   ((("emacs" cl)))
+ :keywords   ("extensions")
+ :commentary "\
+This file defines the equivalent of the Common Lisp `tagbody'
+special form for Emacs Lisp.")

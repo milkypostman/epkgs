@@ -1,0 +1,21 @@
+(:summary    "Mode for automatically handle multiple tags files with Mactag rubygem"
+ :repository (git . "https://github.com/rejeep/mactag.el.git")
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Johan Andersson" . "johan.rejeep@gmail.com"))
+ :maintainer ("Johan Andersson" . "johan.rejeep@gmail.com")
+ :provided   (mactag)
+ :keywords   ("speed" "convenience")
+ :homepage   "https://github.com/rejeep/mactag.el"
+ :commentary "\
+If your web application is running Rails 3, you can use the Mactag
+gem with FSSM to automatically update tags files. mactag.el makes
+sure Emacs tags files list is up to date with those tags files.
+
+To use it. Make sure this file is in your Emacs `load-path'. Then:
+  (require 'mactag)
+
+If your Rails project has a directory named `mactag-tags-dir-name'
+in it's root. The find-tag command will automatically load all
+tags files and look for tags in them.")

@@ -1,0 +1,35 @@
+(:repository (git . "git://gri.git.sourceforge.net/gitroot/gri/gri")
+ :created    "19940114"
+ :updated    "2009"
+ :license    "GPL-2"
+ :authors    (("Peter S. Galbraith" . "psg@debian.org"))
+ :maintainer ("Peter S. Galbraith" . "psg@debian.org")
+ :provided   (gri-mode)
+ :required   ((("emacs" cl imenu info)))
+ :keywords   ("gri" "xemacs")
+ :homepage   "http://gri.sourceforge.net/"
+ :commentary "\
+This major mode for GNU emacs provides support for editing Gri files.
+Gri is a graphics plotting language that produces beautiful postscript
+output suitable for publications.  Gri is written by Dan Kelley,
+Dalhousie University.  General info about Gri is available at
+
+      http://gri.sourceforge.net
+
+Full documentation on the installation and use of gri-mode.el is
+provided in the Gri manual, included in source form in gri's source tar
+file, in Info and HTML form in binary packages, and on-line at
+
+      http://gri.sourceforge.net/gridoc/html/Emacs.html
+
+Features of gri-mode include:
+
+  Automatic indentation for block structures, line continuations, 
+    and comments.  
+  Parenthesis matching support.  
+  Gri command completion (using abbreviations in your gri buffer)
+  Displays help and info-manual about the gri command on the current line.  
+  Hide user commands at the beginning of gri buffers (similar to Outline 
+    mode)
+  Run gri from within emacs.
+  Display (possibly compressed) postscript file associated with gri file.")

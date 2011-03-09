@@ -1,0 +1,8 @@
+(:summary    "Insert JsDoc style comment easily"
+ :repository (git . "https://github.com/mooz/js-doc.git")
+ :license    "GPL-2"
+ :authors    (("mooz" . "stillpedant@gmail.com"))
+ :maintainer ("mooz" . "stillpedant@gmail.com")
+ :provided   (js-doc)
+ :keywords   ("document" "comments")
+ :homepage   "http://mooz.github.com/")

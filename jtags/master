@@ -1,0 +1,11 @@
+(:repository (cvs . ":pserver:anonymous@jtags.cvs.sourceforge.net:/cvsroot/jtags")
+ :created    "200105"
+ :updated    "2001"
+ :license    "GPL-2"
+ :authors    (("Alexander Baltatzis" . "alexander@baltatzis.com")
+	      ("Johan Dykström" . "johan.dykstrom@relogic.se"))
+ :maintainer ("Alexander Baltatzis" . "alexander@baltatzis.com")
+ :provided   (jtags)
+ :required   ((("emacs" cl etags)))
+ :keywords   ("java" "tags" "etags")
+ :homepage   "http://jtags.sourceforge.net/")

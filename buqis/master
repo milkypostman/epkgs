@@ -1,0 +1,37 @@
+(:summary    "Quick buffers switcher"
+ :created    "20031120"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("Zajcev Evgeny" . "zevlg@yandex.ru"))
+ :provided   (buqis)
+ :keywords   ("buffers" "matching")
+ :homepage   "http://www.emacswiki.org/BufferQuickSwitcher"
+ :wikipage   "http://www.emacswiki.org/BufferQuickSwitcher"
+ :commentary "\
+Main feature of buqis is fast navigation and abbility to attach
+some info, used by buqis to filter buffers to selected frame. Say
+in frame1 you work with emacs lisp files, in frame2 you work under
+project written in C and frame3 you use to browse Web with w3m. So
+in frame1 you want swithing only to .el buffers, in frame2 to .c,
+.h or info and frame3 only for w3m buffers. You may do it executing
+`buqis-put-frame-ctx' command.
+
+You may start by adding next to your .emacs:
+
+	(require 'buqis)
+	(buqis-install-keybinds)
+	(buqis-add-default-ctxs)
+
+To change buqis context to selected frame use:
+
+	M-x buqis-put-frame-ctx <RET>
+
+If you want buqis context in title then set `frame-title-format' to
+something like this:
+
+	(setq frame-title-format
+	      '(\"Emacs: %b\"
+		(buqis-current-context \" -\")
+		(buqis-current-context buqis-current-context)
+		(buqis-current-context \"-\")
+		\" %*%& %f\"))")

@@ -1,0 +1,16 @@
+(:summary    "Annoy denizens of alt.fan.warlord"
+ :created    "19930105"
+ :updated    "19940907"
+ :authors    (("Noah Friedman" . "friedman@prep.ai.mit.edu"))
+ :maintainer (nil . "friedman@prep.ai.mit.edu")
+ :provided   (warlord)
+ :required   ((("emacs" yow)
+	       ("flame" flame)))
+ :keywords   ("extensions" "games" "warlord")
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
+ :commentary "\
+This revision of warlord.el requires my version of flame.el in which I
+cleaned up the namespace and added functions like `flame-string'.
+
+I also decided to require yow, which is possible in emacs 19.
+(In emacs 18, yow.el did not provide itself.)")

@@ -1,0 +1,12 @@
+(:summary    "Right-click searching"
+ :created    "2006"
+ :updated    "2006"
+ :license    "GPL-2"
+ :authors    (("Dan McCarthy" . "daniel.c.mccarthy@gmail.com")
+	      ("Dan McCarthy")
+	      ("see section 'Terms'."))
+ :maintainer ("Dan McCarthy" . "daniel.c.mccarthy@gmail.com")
+ :provided   (acme-search)
+ :required   ((("emacs" cl)))
+ :homepage   "http://www.emacswiki.org/AcmeSearch"
+ :wikipage   "http://www.emacswiki.org/AcmeSearch")

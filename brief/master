@@ -1,0 +1,10 @@
+(:summary    "Brief-Emulation for Emacs"
+ :created    "2001"
+ :updated    "20010703"
+ :license    "GPL-2"
+ :authors    (("Mirko Link" . "mirkolink@mirkolinkonline.de"))
+ :maintainer ("Mirko Link" . "mirkolink@mirkolinkonline.de")
+ :provided   (brief)
+ :required   ((("emacs" bs rect view)))
+ :keywords   ("emulations" "brief")
+ :homepage   "http://www.emacs.mirkolinkonline.de/spiele.html")

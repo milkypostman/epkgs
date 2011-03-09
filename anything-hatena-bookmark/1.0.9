@@ -1,0 +1,33 @@
+(:summary    "Hatena::Bookmark anything.el interface"
+ :repository (git . "https://github.com/wakaran/anything-hatena-bookmark.git")
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-2"
+ :provided   (anything-hatena-bookmark)
+ :required   ((("anything" anything)
+	       ("emacs" cl sha1 url xml)))
+ :homepage   "https://github.com/wakaran/anything-hatena-bookmark"
+ :commentary "\
+`anything-hatena-bookmark' is `anything' interface of your Hatena::Bookmark.
+`anything-c-source-hatena-bookmark' is a source for your Hatena::Bookmark.
+`anything-hatena-bookmark-get-dump' is function to get dump your Hatena::Bookmark.
+
+Install
+Put this file into load-path'ed directory, and byte compile it if
+desired.  And put the following expression into your ~/.emacs.
+
+(require 'anything-hatena-bookmark)
+
+And, you should execute `anything-hatena-bookmark-get-dump to reflesh dump file.
+
+Change Log
+1.0.9:use migemo and multiline.
+1.0.8:suport new dump rss format (2009/01/21). modify trim function.
+1.0.7:suport new dump rss format.
+1.0.6:require xml.el.
+1.0.5:(let ((url-request-extra-headers nil)))
+1.0.4:add summary(bookmark comment).add some action.
+1.0.3:need not be initialized `anything-hatena-bookmark-get-dump'
+1.0.2:use `push' for setting `url-request-extra-headers'
+1.0.1:use read-passwd. set \"less\" option.
+1.0.0:")

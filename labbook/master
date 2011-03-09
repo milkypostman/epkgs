@@ -1,0 +1,41 @@
+(:summary    "Provides a labbook log"
+ :updated    "20000417"
+ :license    "GPL-2"
+ :authors    (("Phillip Lord" . "p.lord@hgmp.mrc.ac.uk"))
+ :maintainer ("Phillip Lord" . "p.lord@hgmp.mrc.ac.uk")
+ :provided   (labbook)
+ :required   ((("emacs" add-log)))
+ :keywords   ("logging" "labbook")
+ :homepage   "http://homepages.cs.ncl.ac.uk/phillip.lord/emacs.html"
+ :commentary "\
+The package provides the ability to keep a labbook. It is based on
+(and uses) the \"ChangeLog\" features of emacs, but differs in that
+it keeps all of its log messages in one place. From a specifiable
+root directory it creates a file per month in a directory per
+year. It derives its format from the ChangeLog format except that
+the heading is not necessarily the name of a file. 
+
+Bugs
+
+1) The completing read buisness does not happen if current buffer is
+not file associated which it a bit of a pain. There are a couple of
+obvious hacks around this. (Change to a file name buffer, and have
+completing read kill this as a suggestion!
+
+ToDo
+
+1) Should define derived mode for these change logs, so that I can
+use a slightly different keymap. Would be nice to have functions
+for moving backwards for a period of time in menu items for
+instance
+2) Linkage to calendar mode perhaps?
+
+History
+
+$Log: labbook.el,v $
+Revision 1.2  2000/04/17 16:11:19  lord
+Added more hooks. Changed standard file name.
+Fixed bug with variable name (thanks to Rodney Stromlund for this).
+
+Revision 1.1  2000/04/11 19:23:56  phil
+Initial checkin")

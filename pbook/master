@@ -1,0 +1,4 @@
+(:summary    "Format a program listing for LaTeX"
+ :updated    "20040517"
+ :provided   (pbook)
+ :required   ((("emacs" cl))))

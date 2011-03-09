@@ -1,0 +1,16 @@
+(:summary    "Workgroups for windows (for Emacs)"
+ :repository (git . "https://github.com/tlh/workgroups.el.git")
+ :created    "20100722"
+ :updated    "2010"
+ :license    "GPL-2"
+ :authors    (("tlh" . "thunkout@gmail.com"))
+ :maintainer ("tlh" . "thunkout@gmail.com")
+ :provided   (workgroups)
+ :required   ((("emacs" cl)))
+ :keywords   ("session" "management" "window-configuration" "persistence")
+ :homepage   "https://github.com/tlh/workgroups.el"
+ :wikipage   "http://www.emacswiki.org/WorkgroupsForWindows"
+ :commentary "\
+See the file README.md in `workgroups.el's directory
+
+Installation:")

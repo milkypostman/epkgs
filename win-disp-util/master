@@ -1,0 +1,12 @@
+(:summary    "Window display utilities and optimizations"
+ :created    "19990613"
+ :updated    "20101116"
+ :license    "GPL-2"
+ :authors    (("Noah Friedman" . "friedman@splode.com"))
+ :maintainer (nil . "friedman@splode.com")
+ :provided   (wdu win-disp-util)
+ :keywords   ("extensions")
+ :homepage   "ftp://ftp.splode.com/pub/users/friedman/emacs-lisp/"
+ :commentary "\
+Updates of this program may be available via the URL
+http://www.splode.com/~friedman/software/emacs-lisp/")

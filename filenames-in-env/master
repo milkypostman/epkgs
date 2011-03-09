@@ -1,0 +1,5 @@
+(:summary    "Put environment variables into filenames where possible"
+ :updated    "20060501"
+ :license    "GPL-2"
+ :provided   (filenames-in-env)
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/file-handling/")

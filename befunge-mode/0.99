@@ -1,0 +1,65 @@
+(:summary    "An interpreter/debugger for the 2D Befunge programming language"
+ :license    "GPL-2"
+ :provided   (befunge befunge-mode)
+ :required   ((("emacs" calc calc-ext cl)
+	       (nil hscroll)))
+ :keywords   ("games")
+ :homepage   "http://www.emacswiki.org/BefungeMode"
+ :wikipage   "http://www.emacswiki.org/BefungeMode"
+ :commentary "\
+This is an interpreter/debugger for  Chris Pressey's wonderful 
+2D Befunge programming language.
+See http://www.catseye.mb.ca/esoteric/befunge/ for details
+and Befunge sources.
+Befunge just cries out to be run in an Emacs buffer; there are 
+faster ways of running it but this mode provides a nice
+visual environment for debugging or development :-)
+
+This mode is for \"Classic\" Befunge-93 only (IMHO much the best
+version, on account of its beautiful Scheme-like minimalism).
+
+In order for the examples sinus.bf and mandel.bf to work,
+the stack has to be of >= 32 bit signed longs, as in the full Befunge
+specification (as deduced from the behaviour of Chris Pressey's
+C version). To get this to work I have used the bignum implementation
+from the calc package, which must be installed. (Thanks
+to Deepak Goel's tip on the EmacsWiki for this.) If for some
+reason you don't have calc installed, you'll need to replace all
+the math-* functions by ordinary equivalents, i.e -
+
+        (car (math-idivmod x y)) --> (/ x y)
+        (math-add x y)           --> (+ x y)
+        (math-sub x y)           --> (- x y)
+        (math-mul x y)           --> (* x y)
+        (math-imod x y)          --> (% x y)
+        (math-lessp x y)         --> (< x y)
+        (math-equal x y)         --> (= x y)
+        (math-format-number x)   --> x
+        (math-read-number x)     --> (string-to-number x)
+
+Installing calc is very simple with Emacs 20; get calc-2.02f.tar.gz
+untar and follow the instructions. It's not so trivial with
+Emacs 21 as you need to apply a patch to the calc sources first
+(although in fact the parts of calc needed for Befunge do not
+require this; but it seems possible that you might want to
+use calc for some other purposes too). 
+
+Incidentally, sinus.bf needs to be able to write and retrieve
+a -1 as a character in FungeSpace, so signed characters must be 
+emulated; see the befunge-get function below.
+
+I actually wrote this interpreter partly for an iPAQ running 
+Rainer Keuchel's amazing Emacs 20 port (http://www.rainer-keuchel.de 
+for this and many other good things ported to wince). In the 
+function befunge-run-finished-p there are a couple of adaptations
+to help with running the interpreter on a PocketPC.
+It is mainly developed using Emacs 20.7 but runs under 21.2,
+though with one or two problems to do with the way focus behaves.
+It doesn't work with XEmacs.
+
+See also the docstring for befunge-mode below.
+
+I'd be most grateful for any improvements, extensions &c.
+Any Emacs gurus reading this won't need to be told that I'm no elisp
+expert; if anybody sees how to do part or all of it better, that
+would be wonderful.")

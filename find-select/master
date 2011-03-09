@@ -1,0 +1,13 @@
+(:summary    "Find file utilities"
+ :repository (git . "https://github.com/mhayashi1120/Emacs-find-select.git")
+ :license    "GPL-3"
+ :authors    (("Hayashi Masahiro" . "mhayashi1120@gmail.com"))
+ :maintainer ("Hayashi Masahiro" . "mhayashi1120@gmail.com")
+ :provided   (find-select)
+ :required   ((("emacs" find-cmd)))
+ :keywords   ("find" "command" "result" "xargs")
+ :homepage   "https://github.com/mhayashi1120/Emacs-find-select"
+ :commentary "\
+You can use `find' command-line option like S Expression.
+Provides easy way of editing find complex arguments and to display
+full command-line to small buffer.")

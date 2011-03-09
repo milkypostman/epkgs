@@ -1,0 +1,45 @@
+(:summary    "Make a WindowMaker menu out of Redhat .desktop files"
+ :created    "2003"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("Thomas Link"))
+ :maintainer ("Thomas Link")
+ :provided   (desktop2wmaker)
+ :required   ((("emacs" cl)))
+ :homepage   "http://members.a1.net/t.link/CompEmacsDesktopToWmaker.html"
+ :commentary "\
+The elisp function `desktop2wmaker' searches the directories in
+`desktop2wmaker-dir-list' for .desktop files and builds a
+Windowmaker-menu, which is written to `desktop2wmaker-out'. 
+After writing the file, the shell-command `desktop2wmaker-postprocess'
+is run on it. Make sure that your LANG-variable and
+`desktop2wmaker-lang' are set properly. `desktop2wmaker' does not try to
+recreate the menu of the Gnome/KDE environments, but builds a menu based
+on the applications' categories.
+
+In order to use the \"Rebuild menu\" entry, you have to declare
+`desktop2wmaker' as autoload and to run gnuserv (and of course (X)Emacs
+as well). Put something like this into your init file:
+
+<example>
+	(autoload 'desktop2wmaker \"desktop2wmaker\"
+	  \"Read *.desktop files and write a WindowMaker menu file.\" t)
+	(unless (get-process \"gnuserv\")
+	  (gnuserv-start))
+</example>
+
+If you don't run (X)Emacs in background all the time, change the value
+of `desktop2wmaker-preferred-rebuild-method' to \"emacs\" or invoke the
+function as =(desktop2wmaker nil \"emacs\")=. From the shell, you could
+run this function as:
+
+<example>
+	emacs -batch -vanilla -l PATH_TO_DESKTOP2WMAKER.EL -eval '(desktop2wmaker t \"emacs\")'
+</example>
+
+The `desktop2wmaker-out' menu file can be included in WMRootMenu by
+inserting something like this:
+
+<example>
+	(Desktop, OPEN_MENU, \"~/GNUstep/Defaults/desktop-menu\"),
+</example>")

@@ -1,0 +1,57 @@
+(:summary    "An Emacs Interface To Meteorological Data"
+ :repository (cvs . ":pserver:anonymous@cvs.gna.org:/var/cvs/emeteo")
+ :created    "2004"
+ :updated    "2004"
+ :license    "GPL-2"
+ :authors    (("Sebastian Freundt" . "hroptatyr@gna.org"))
+ :maintainer ("Sebastian Freundt" . "hroptatyr@gna.org")
+ :provided   (emeteo emeteo-conversion emeteo-eyecandy emeteo-frob emeteo-gnus emeteo-modeline emeteo-parse emeteo-stations emeteo-storage emeteo-utils)
+ :required   ((("emacs" cl timer)))
+ :keywords   ("metar" "meteo" "weather")
+ :homepage   "http://gna.org/projects/emeteo/"
+ :wikipage   "http://www.emacswiki.org/EmacsMeteo"
+ :commentary "\
+emeteo is a general emacs interface to provide meteorologic data
+
+For more information, see the following URLs:
+* http://gna.org/projects/emeteo/
+
+
+Installation:
+
+Put emeteo.el in your load-path, and put (require 'emeteo) in your .emacs.
+To optionally use the modeline feature, try (require 'emeteo-modeline) and
+M-x emeteo RET :)
+
+
+Configuration:
+
+Use M-x customize-group RET emeteo RET to get an overview
+of all the variables you can tweak.
+
+
+Usage:
+Within emacs-lisp you would probably want to invoke something like:
+  (emeteo-fetch 'berlin)
+or any other spec from `emeteo-data-sources'
+
+The return value will be of the form
+  (berlin ((temp \"10.0°\")))
+or something, a list with the specname in the car and an alist in the cdr
+
+BEWARE: the return value syntax might change during the alpha status.
+
+
+The variable `emeteo-data-sources' is chunk-driven. This means you may add everything
+you want as long as the list itself is of the form
+  (data-identifier data)
+_and_ data is entirely of the form :keyword value.
+There is no predefined set of supported or necessary keywords. Everything that use this
+variable has to make sure itself to not produce unexpected results due to missing 
+keywords.
+
+On the other hand, most of the provided functionality lets you customize which keywords
+to use for which purposes.
+
+
+This project is just to demonstrate my definition of usability! >8) <- hroptatyr")

@@ -1,0 +1,6 @@
+(:license    "GPL-2"
+ :provided   (jimminy remem)
+ :required   ((("emacs" overlay time-stamp timer)
+	       ("itimer" itimer)))
+ :homepage   "http://www.remem.org/"
+ :wikipage   "http://www.emacswiki.org/RememMode")

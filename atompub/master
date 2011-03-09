@@ -1,0 +1,47 @@
+(:summary    "Implementation of draft atom-api"
+ :repository (bzr . "http://bazaar.launchpad.net/~egh/atompub.el/trunk/")
+ :created    "2006"
+ :updated    "2006"
+ :license    "GPL-2"
+ :authors    (("Erik Hetzner" . "ehetzner@gmail.com"))
+ :maintainer ("Erik Hetzner" . "ehetzner@gmail.com")
+ :provided   (atom-api atom-api-muse muse-atom)
+ :required   ((("emacs" url url-auth url-cache xml)
+	       ("muse" muse muse-html)))
+ :homepage   "https://launchpad.net/atompub.el"
+ :wikipage   "http://www.emacswiki.org/EmacsAtomApi"
+ :commentary "\
+It has been tested on emacs21 and 22 (cvs). The URL package may
+cause you trouble; the latest version from Emacs CVS seems to
+work. The one with emacs21 on debian unstable does not seem to
+work. I am trying to keep a working copy at the projet web
+site. Diffs for working on other emacs are welcomed.
+
+You can customize atom-api:feed/seed-urls to point to atom apis.
+
+This relies upon nxml-mode to edit atom entries. You may add some
+filter functions to atom-api:filters/entry/pre-edit &
+/post-edit. Filters are already there to fix blogger.com
+peculiarities.
+
+To begin a new entry, type M-x atom-api:entry/new. This will prompt
+for a title and open a new buffer with your new entry.
+
+To edit an entry, type M-x atom-api:entry/edit. You can then type
+the title, date, or id of the entry to fetch & edit it.
+
+After you edit a buffer run atom-api:entry/publish. This works for
+new or edited buffers.
+
+If you type return after running atom-api:entry/delete, it will try
+to delete the currently edited entry.
+
+To do:
+
+Add support for 'magic' file extension; ie, be able to 'open' and
+'save' atom entries as files.
+
+Clean up variable/function names.
+
+Decrease deviation from spec; also, increase the conformity to the
+spec.")

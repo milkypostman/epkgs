@@ -1,0 +1,13 @@
+(:summary    "Sticky key for capital letters"
+ :created    "2009"
+ :updated    "20101031"
+ :license    "GPL-2"
+ :authors    (("rubikitch" . "rubikitch@ruby-lang.org"))
+ :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
+ :provided   (sticky)
+ :required   ((("emacs" cl)))
+ :keywords   ("convenience")
+ :commentary "\
+Input capital letters and some symbols with not shift key but sticky key.
+See `use-sticky-key' docstring.
+[EVAL IT] (describe-function 'use-sticky-key)")

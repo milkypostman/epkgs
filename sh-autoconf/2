@@ -1,0 +1,14 @@
+(:summary    "Autoconf flavour for sh-mode"
+ :created    "2002"
+ :updated    "2007"
+ :license    "GPL-2"
+ :authors    (("Kevin Ryde" . "user42@zip.com.au"))
+ :maintainer ("Kevin Ryde" . "user42@zip.com.au")
+ :provided   (sh-autoconf)
+ :required   ((("emacs" sh-script)))
+ :keywords   ("languages")
+ :wikipage   "http://www.emacswiki.org/ShAutoconf"
+ :commentary "\
+This code adds a shell type \"autoconf\" to sh-mode, for use in autoconf
+configure.in, acinclude.m4, etc.  This is good if you've got a lot of
+shell in your configury (and like sh-mode for shell editing).")

@@ -1,0 +1,59 @@
+(:summary    "Common Lisp style implementation of multi-dimensional arrays --"
+ :created    "1999"
+ :updated    "1999"
+ :license    "GPL-2"
+ :authors    (("David Bakhash" . "cadet@alum.edu"))
+ :maintainer ("David Bakhash" . "cadet@alum.edu")
+ :provided   (cl-array)
+ :required   ((("emacs" cl)))
+ :keywords   ("extensions" "lisp")
+ :wikipage   "http://www.emacswiki.org/ArrayExtension"
+ :commentary "\
+This package is designed as an API for multi-dimensional arrays.  It
+strives to conform to the Common Lisp specification for
+multi-dimensional arrays.  The limitations of this package are a
+direct result of the limitations of Emacs Lisp.
+
+Some things to note.  If you're going to use this package, to port
+real CL code to (X)Emacs, then you must replace the following function
+calls:
+
+aref          ==>     aref*
+arrayp        ==>     arrayp*
+
+This last one is the most crucial since, if you don't, the code
+will not err when it should, since I'm using elisp `vectors' to
+store the array structures.  This being done, the code should work
+(with respect to arrays), provided that they're not using
+fill-pointers, displacement, etc.
+
+ Here are some examples of how it's used...
+
+(setq 3D-array (make-array '(5 8 10) :initial-element 0))
+(arrayp* 3D-array)
+==> t
+(vectorp* 3D-array)
+==> nil
+(array-in-bounds-p 3D-array 1 1 1)
+==> t
+(array-in-bounds-p 3D-array 20 20 20)
+==> nil
+(aref* 3D-array 2 4 6)
+==> 0
+(aref* 3D-array 2 4 6)
+==> 10
+(setf (aref* 3D-array 10 20 30) 5)
+==> ERROR
+(setf (aref* 3D-array 2 4 6) 5)
+==> 5
+(loop for i below (array-total-size 3D-array)
+  do
+  (setf (row-major-aref 3D-array i) (* i i)))
+(row-major-aref 3D-array 12)
+==> 144
+(array-rank 3D-array)
+==> 3
+(array-dimension 3D-array 2)
+==> 8
+(array-total-size 3D-array)
+==> 400")

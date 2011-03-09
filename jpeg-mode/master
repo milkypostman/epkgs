@@ -1,0 +1,6 @@
+(:summary    "Major mode for JPEG files"
+ :updated    "20060322"
+ :license    "GPL-2"
+ :provided   (jpeg-mode)
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/graphics/"
+ :wikipage   "http://www.emacswiki.org/JpegMode")

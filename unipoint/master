@@ -1,0 +1,7 @@
+(:repository (git . "https://github.com/apgwoz/unipoint.git")
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-2"
+ :provided   (unipoint)
+ :required   ((("emacs" thingatpt)))
+ :homepage   "https://github.com/apgwoz/unipoint")

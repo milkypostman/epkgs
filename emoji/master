@@ -1,0 +1,11 @@
+(:repository (git . "https://github.com/imakado/emoji.git")
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-2"
+ :authors    (("IMAKADO" . "ken.imakado@gmail.com"))
+ :maintainer ("IMAKADO" . "ken.imakado@gmail.com")
+ :provided   (emoji)
+ :required   ((("anything" anything)
+	       ("emacs" cl)))
+ :keywords   ("cellphonejapanese")
+ :homepage   "http://github.com/imakado/emoji")

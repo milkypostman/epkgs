@@ -1,0 +1,15 @@
+(:summary    "Talking to a cruisecontrol server with emacs"
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-2"
+ :authors    (("Jonathan Arkell" . "jonnay@jonnay.net"))
+ :maintainer ("Jonathan Arkell" . "jonnay@jonnay.net")
+ :provided   (cruisecontrol)
+ :commentary "\
+Installation:
+Load this file in your .emacs with  (load-file \"cruiecontrol.el\")
+and then customize it with
+M-x customize-group <RET> cruise-control <RET>
+In order not to give up on the current JMX control, which provides a compmlete list, a switch, '-xmlport' can be added to the command line interface.
+interactive commands: 
+cruisecontrol-build - Launch a cruisecontrol build.  Promps for project name")

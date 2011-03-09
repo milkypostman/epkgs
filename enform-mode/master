@@ -1,0 +1,17 @@
+(:summary    "Handles the Tandem/NSK/Guardian ENFORM report language"
+ :created    "2005"
+ :updated    "2005"
+ :license    "GPL-2"
+ :authors    (("Rick Bielawski" . "rbielaws@i1.net"))
+ :maintainer ("Rick Bielawski" . "rbielaws@i1.net")
+ :provided   (enform-mode)
+ :required   ((("emacs" imenu which-func)
+	       (nil enform-indent)))
+ :keywords   ("languages" "extensions" "tandem" "guardian" "nsk" "enform")
+ :homepage   "http://www.emacswiki.org/EnformMode"
+ :wikipage   "http://www.emacswiki.org/EnformMode"
+ :commentary "\
+ENFORM is Tandem's Report Language.
+
+Keywords as of \"Third Edition - July 1991\" are recognized.
+See source file comments for installation instructions.")

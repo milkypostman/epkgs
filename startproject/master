@@ -1,0 +1,14 @@
+(:summary    "Simple project starter"
+ :repository (git . "https://github.com/myfreeweb/startproject.git")
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("myfreeweb" . "me@myfreeweb.ru"))
+ :maintainer ("myfreeweb" . "me@myfreeweb.ru")
+ :provided   (startproject)
+ :required   ((("emacs" ido))
+	      (("emacs" vc)))
+ :keywords   ("tools")
+ :homepage   "https://github.com/myfreeweb/startproject"
+ :commentary "\
+Simple project starter. See README.md for more info.")

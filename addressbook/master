@@ -1,0 +1,17 @@
+(:summary    "A simple addressbook"
+ :repository (cvs . ":pserver:anonymous@cvs.sv.gnu.org:/sources/addressbook")
+ :created    "2007"
+ :updated    "2009"
+ :license    "GPL-3"
+ :maintainer ("Jose E. Marchesi")
+ :provided   (abook)
+ :required   ((("emacs" cl mm-decode url)
+	       ("vcard" vcard)))
+ :keywords   ("contacts" "applications")
+ :homepage   "http://www.nongnu.org/addressbook/"
+ :wikipage   "http://www.emacswiki.org/AddressBook"
+ :commentary "\
+A simple vCard based addressbook for Emacs
+
+To see the structure of this file activate the outline minor mode
+and execute M-xhide-body")

@@ -1,0 +1,102 @@
+(:summary    "Setup useful packages"
+ :repository (hg . "https://yisp.googlecode.com/hg/")
+ :created    "20060211"
+ :license    "GPL-2"
+ :maintainer ("Duzy Chan(ղÐÀÃú)" . "code@duzy.info")
+ :provided   (nqp-mode yisp-basis yisp-helpers yisp-input-method yisp-pin yisp-scp yisp-stock yisp-third-party yisp-utils yisp-visit-track)
+ :required   ((("emacs" quail widget)))
+ :keywords   ("convenience")
+ :homepage   "http://code.google.com/p/yisp/"
+ :commentary "\
+(add-to-list 'load-path \"/home/duzy/elisp/yisp\")
+(add-to-list 'load-path \"/home/duzy/elisp/yisp/third-party\")
+(add-to-list 'load-path \"/home/duzy/elisp/yisp/third-party/g-client\")
+(load \"hooks\")
+(load \"keys\")
+(load \"yisp-screen\")
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Directory settings.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(setq my-home default-directory)
+(setq home-dir-list
+      (cond
+       ((string= system-type \"windows-nt\")
+        (list
+         \"d:/dz\"
+	 \"d:/duzy\"
+	 \"d:/tools/msys/1.1/home/duzy\"
+         \"e:/dz\"
+         \"e:/duzy\"
+	 \"e:/msys/home/duzy\"
+	 \"e:/\"
+         ))
+       ((string= system-type \"cygwin\")
+	(list
+         \"/cygdrive/d/dz\"
+         \"/cygdrive/d/duzy\"
+         \"/cygdrive/e/dz\"
+         \"/cygdrive/e/duzy\"
+         ))
+       ((string= system-type \"gnu/linux\")
+        (list (getenv \"HOME\") (concat \"/home/\" (getenv \"USER\"))
+         \"/home/dz\"
+         \"/home/duzy\"
+         ))
+       (t nil)))
+(let ((i home-dir-list) (home-dir nil))
+  (while i
+    (if (file-directory-p (car i))
+        (progn
+          (setq home-dir (car i))
+          (setq i nil))
+      (setq i (cdr i))))
+  (if home-dir
+      (setq my-home home-dir)
+    ;;(yisp-error \"No valid home direcotry found!\")))
+    (message \"No valid home direcotry found!\")))
+
+;;(if (not (file-exists-p))
+;;    (error (format \"The home directory of 'yisp' does not exists.\" my-home)))
+
+(setq my-works (concat my-home \"/works\"))
+(setq my-elisp (concat my-home \"/elisp\"))
+(setq my-yisp (concat my-elisp \"/yisp\"))
+;(setq my-yisp \"e:/msys/home/duzy/elisp/yisp\")
+(setq third-party (concat my-yisp \"/third-party\"))
+(setq my-load-path-list (list my-elisp my-yisp third-party
+                              ;;(concat third-party \"/el-from-emacs22\")
+                              (concat third-party \"/epl\")
+                              (concat third-party \"/eieio\")
+                              (concat third-party \"/semantic\")
+                              (concat third-party \"/speedbar\")
+                              (concat third-party \"/ecb\")
+                              (concat third-party \"/g-client\")
+                              (concat third-party \"/emacs-jabber\")))
+;; Add \"yisp\" directory to the load path
+(let ((i my-load-path-list))
+  (while i
+    (if (car i) (add-to-list 'load-path (car i)))
+    (setq i (cdr i))))
+
+;; change the work directory into the specified one.
+(if (file-directory-p my-works)
+    (progn (cd my-works)
+           (setq default-directory my-works)))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Packages loading...
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(require 'yisp-visit-track)
+(require 'yisp-helpers)
+;;(require 'yisp-input-method)
+(require 'yisp-scp)
+(require 'yisp-third-party)
+(require 'yisp-pin)
+;;(yisp-third-party-psvn)
+;;(yisp-third-party-svn-vc)
+;;(yisp-third-party-tabbar)
+;;(yisp-third-party-haskell-mode)
+;;(require 'yisp-stock)
+(yisp-pin-activate)")

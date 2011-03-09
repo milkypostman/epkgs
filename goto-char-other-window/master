@@ -1,0 +1,5 @@
+(:summary    "Jump to a specified place in the other window"
+ :updated    "20060301"
+ :license    "GPL-2"
+ :provided   (goto-char-other-window)
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/editing/")

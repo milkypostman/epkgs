@@ -1,0 +1,40 @@
+(:summary    "Portable Texinfo formatter"
+ :created    "20000707"
+ :updated    "1997"
+ :license    "GPL-2"
+ :authors    (("TAKAHASHI Kaoru" . "kaoru@kaisei.org")
+	      ("Yoshiki Hayashi" . "yoshiki@xemacs.org")
+	      ("Katsumi Yamaoka" . "yamaoka@jpl.org"))
+ :maintainer ("TAKAHASHI Kaoru" . "kaoru@kaisei.org")
+ :provided   (ptexinfmt)
+ :required   ((("emacs" texinfmt)))
+ :keywords   ("maint" "tex" "docs" "emulation" "compatibility")
+ :commentary "\
+Original code: Yoshiki Hayashi <yoshiki@xemacs.org>
+	makeinfo.el (gnujdoc project)
+
+Support texinfmt.el 2.32 or later.
+
+Modified by Yamaoka not to use APEL functions.
+
+Unimplemented command:
+ @abbr{ABBREVIATION}
+ @float ... @end float, @caption{TEXT}, @shortcaption{TEXT}, @listoffloats
+ @deftypecv[x]
+ @headitem
+ @comma{}
+ @quotation (optional arguments)
+ @acronym{ACRONYM[, MEANING]} (optional argument)
+ @dofirstparagraphindent
+ @indent
+ @verbatiminclude FILENAME
+ @\\
+ @definfoenclose phoo,//,\\\\
+ @deftypeivar CLASS DATA-TYPE VARIABLE-NAME
+ @deftypeop CATEGORY CLASS DATA-TYPE NAME ARGUMENTS...
+ @allowcodebreaks false
+ @thischapternum
+ @quotedblleft @quotedblright
+ @quoteleft @quoteright  @quotedblbase @quotesinglbase
+ @guillemetleft @guillemetright @guilsinglleft @guilsinglright.
+ @clicksequence, @click, @clickstyle, @arrow")

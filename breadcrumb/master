@@ -1,0 +1,10 @@
+(:summary    "Breadcrumb.  Set breadcrumb bookmarks and jump to them"
+ :repository (git . "https://github.com/pheaver/breadcrumb.git")
+ :created    "2004"
+ :updated    "2008"
+ :license    "GPL-2"
+ :provided   (breadcrumb)
+ :required   ((("emacs" info)))
+ :keywords   ("breadcrumb" "quick" "bookmark" "bookmarks")
+ :homepage   "http://breadcrumbemacs.sourceforge.net"
+ :wikipage   "http://www.emacswiki.org/BreadcrumbForEmacs")

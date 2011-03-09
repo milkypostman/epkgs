@@ -1,0 +1,13 @@
+(:summary    "A MIME encoding/decoding library"
+ :repository (cvs . ":pserver:anonymous@cvs.m17n.org:/cvs/root")
+ :created    "19950625"
+ :updated    "1999"
+ :license    "GPL-2"
+ :authors    (("MORIOKA Tomohiko" . "tomo@m17n.org"))
+ :maintainer ("MORIOKA Tomohiko" . "tomo@m17n.org")
+ :provided   (eword-decode eword-encode mel mel-b-ccl mel-b-dl mel-b-el mel-g mel-q mel-q-ccl mel-u mime mime-def mime-parse mmbuffer mmcooked mmdual smtp std11)
+ :required   ((("apel" mcharset path-util pccl pcustom poe poem)
+	       ("emacs" ccl cl custom mail-utils)
+	       ("riece" luna)))
+ :keywords   ("mime" "quoted-printable" "uuencode")
+ :homepage   "http://www.kanji.zinbun.kyoto-u.ac.jp/~tomo/lemi/")

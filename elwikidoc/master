@@ -1,0 +1,40 @@
+(:summary    "Use elisp doc strings to make other documentation"
+ :repository (git . "https://github.com/nicferrier/elwikidoc.git")
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Nic Ferrier" . "nic@ferrier.me.uk"))
+ :maintainer ("Nic Ferrier" . "nic@ferrier.me.uk")
+ :keywords   ("lisp")
+ :homepage   "https://github.com/nicferrier/elwikidoc"
+ :commentary "\
+This is for making documentation from Elisp doc strings. It is
+intended as an alternative to using info.
+
+Right now, the only output format is creole-wiki. But that could
+change.
+
+Source code
+
+The wikidoc source code is not in a public repo yet.
+
+Style note
+
+This codes uses the emacs style of:
+
+   wikidoc---private-function 
+
+for private functions.
+
+Examples
+
+This is the main paragraph converter:
+
+(wikidoc--convert \"this is a function.
+ this is an example
+ this should 'not' be changed to a link
+This is the main text. It can include references to other 'functions'.
+When there are 'two' references 'on the same line' it should
+still work.\")
+
+###autoload")

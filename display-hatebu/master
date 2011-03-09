@@ -1,0 +1,13 @@
+(:summary    "はてなブックマークでブックマークされた数をモードラインに表示する"
+ :created    "2010"
+ :updated    "20100504"
+ :license    "GPL-2"
+ :authors    (("rubikitch" . "rubikitch@ruby-lang.org"))
+ :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
+ :provided   (display-hatebu)
+ :required   ((("emacs" cl)))
+ :keywords   ("hypermedia")
+ :commentary "\
+はてなブックマークでブックマークされた数をモードラインに表示します。
+
+M-x display-hatebu-set-url でURLをセットすると1分おきにブックマーク数を更新します。")

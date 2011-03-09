@@ -1,0 +1,7 @@
+(:summary    "Axcess and Netlinx editing support"
+ :license    "GPL"
+ :authors    (("Jeff Bowden" . "jlb@houseofdistraction.com"))
+ :maintainer ("Jeff Bowden" . "jlb@houseofdistraction.com")
+ :provided   (axcess)
+ :homepage   "http://www.emacswiki.org/AxcessMode"
+ :wikipage   "http://www.emacswiki.org/AxcessMode")

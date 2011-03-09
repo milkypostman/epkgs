@@ -1,0 +1,11 @@
+(:summary    "Mode for viewing system logfiles"
+ :updated    "20030317"
+ :license    "GPL-2"
+ :authors    (("Harley Gorrell" . "harley@mahalito.net"))
+ :maintainer ("Harley Gorrell" . "harley@mahalito.net")
+ :provided   (syslog-mode)
+ :keywords   ("syslog")
+ :wikipage   "http://www.emacswiki.org/SyslogMode"
+ :commentary "\
+* Handy functions for looking at system logs.
+* Fontifys the date and su messages.")

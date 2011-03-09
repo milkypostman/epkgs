@@ -1,0 +1,28 @@
+(:summary    "Emacs interface to 37signals' Backpack"
+ :repository (git . "https://github.com/hober/37emacs.git")
+ :created    "2005"
+ :updated    "2008"
+ :license    "GPL-2"
+ :authors    (("Edward O'Connor" . "ted@oconnor.cx"))
+ :maintainer ("Edward O'Connor" . "ted@oconnor.cx")
+ :provided   (backpack highrise rest-api)
+ :required   ((("emacs" cl eudc pp url xml)))
+ :keywords   ("convenience")
+ :homepage   "http://edward.oconnor.cx/elisp/"
+ :commentary "\
+backpack.el is intended to be an Emacs interface to Backpack. At the
+moment, it's an undocumented, fairly bare-bones, but complete
+implementation of the Backpack API. I'll be adding a UI soon.
+
+Please set `backpack-username' and `backpack-api-key' appropriately.
+
+I've been developing this under a fairly recent build of Emacs' CVS
+HEAD. There are known incompatibilities between this code and XEmacs'
+versions of url.el and xml.el.
+
+You may have noticed the lack of adequate documentation. It's on the
+way, but for now, you can use the Backpack API docs:
+
+               <URL:http://www.backpackit.com/api/>
+
+Share and Enjoy!")

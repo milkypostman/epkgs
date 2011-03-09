@@ -1,0 +1,49 @@
+(:summary    "Secondary selection commands"
+ :created    "20080523"
+ :updated    "20110104"
+ :license    "GPL-3"
+ :authors    (("Drew Adams"))
+ :maintainer ("Drew Adams")
+ :provided   (second-sel)
+ :keywords   ("region" "selection" "yank" "paste" "edit")
+ :commentary "\
+Commands that use the secondary selection.
+
+ Commands defined here:
+
+   `isearch-yank-secondary', `primary-to-secondary',
+   `rotate-secondary-selection-yank-pointer', `secondary-dwim',
+   `secondary-swap-region', `secondary-to-primary',
+   `yank-pop-commands', `yank-pop-secondary', `yank-secondary'.
+
+ User options defined here:
+
+   `secondary-selection-ring-max',
+   `secondary-selection-yank-commands',
+   `secondary-selection-yank-secondary-commands',
+
+ Non-interactive functions defined here:
+
+   `add-secondary-to-ring', `current-secondary-selection'.
+
+ Internal variables defined here:
+
+   `secondary-selection-ring',
+   `secondary-selection-ring-yank-pointer', `yank-undo-function'.
+
+
+ ***** NOTE: The following functions defined in `mouse.el'
+             have been REDEFINED or ADVISED HERE:
+
+   `mouse-drag-secondary',  `mouse-secondary-save-then-kill'.
+
+
+ Suggested key bindings:
+
+  (global-set-key [(control meta ?y)]     'secondary-dwim)
+  (define-key esc-map \"y\"                 'yank-pop-commands)
+  (define-key isearch-mode-map \"\\C-\\M-y\"  'isearch-yank-secondary)
+
+ You might want to also use library `browse-kill-ring+.el' (and
+ `browse-kill-ring.el').  I do.  If you do that, then load
+ `second-sel.el' first.")

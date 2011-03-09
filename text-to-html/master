@@ -1,0 +1,5 @@
+(:updated    "20070312"
+ :license    "GPL-2"
+ :provided   (text-to-html)
+ :required   ((("replace-regexp-list" replace-regexp-list)))
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/webstuff/")

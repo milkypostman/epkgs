@@ -1,0 +1,5 @@
+(:updated    "20031009"
+ :authors    (("Hiroyuki Komatsu" . "komatsu@taiyaki.org"))
+ :maintainer ("Hiroyuki Komatsu" . "komatsu@taiyaki.org")
+ :provided   (word-count)
+ :wikipage   "http://www.emacswiki.org/WordCount")

@@ -1,0 +1,10 @@
+(:summary    "Navigate and edit CSV files"
+ :created    "2006"
+ :updated    "2006"
+ :license    "GPL-2"
+ :provided   (csv-nav)
+ :homepage   "http://www.emacswiki.org/CsvNav"
+ :wikipage   "http://www.emacswiki.org/CsvNav"
+ :commentary "\
+Use `csv-nav-mode' to edit CSV files such as contacts exported from
+other applications.")

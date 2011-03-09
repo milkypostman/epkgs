@@ -1,0 +1,26 @@
+(:summary    "Install color themes"
+ :repository (bzr . "http+urllib://bzr.savannah.gnu.org/r/color-theme/trunk/")
+ :created    "1999"
+ :updated    "2000"
+ :license    "GPL-2"
+ :authors    (("Jonadab the Unsightly One" . "jonadab@bright.net"))
+ :maintainer ("Xavier Maillard" . "zedek@gnu.org")
+ :provided   (color-theme muse-setup)
+ :required   ((("emacs" cl cus-face easymenu reporter sendmail wid-edit)
+	       ("muse" muse-colors muse-docbook muse-html muse-latex muse-mode muse-project muse-texinfo muse-wiki)))
+ :keywords   ("faces")
+ :homepage   "http://www.nongnu.org/color-theme/index.html"
+ :wikipage   "http://www.emacswiki.org/ColorTheme"
+ :commentary "\
+Please read README and BUGS files for any relevant help.
+Contributors (not themers) should also read HACKING file.
+
+Thanks
+
+Deepak Goel  <deego@glue.umd.edu>
+S. Pokrovsky <pok@nbsp.nsk.su> for ideas and discussion.
+Gordon Messmer <gordon@dragonsdawn.net> for ideas and discussion.
+Sriram Karra <karra@cs.utah.edu> for the color-theme-submit stuff.
+Olgierd `Kingsajz' Ziolko <kingsajz@rpg.pl> for the spec-filter idea.
+Brian Palmer for color-theme-library ideas and code
+All the users that contributed their color themes.")
