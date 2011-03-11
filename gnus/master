@@ -16,8 +16,7 @@
 	       ("w3" w3 w3-vars)
 	       ("w3m" w3m)
 	       ("xml-rpc" xml-rpc))
-	      (("dropdown-list" dropdown-list)
-	       ("emacs" secrets)))
+	      (("emacs" secrets)))
  :keywords   ("news" "mail")
  :homepage   "http://gnus.org"
  :wikipage   "http://www.emacswiki.org/Gnus")

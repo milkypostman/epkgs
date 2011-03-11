@@ -61,4 +61,8 @@ Better menu and defaults for msearch-enslave-buffer and
 msearch-release-buffer.
 
 2010-08-19, 0:0, TN:
-Added menu button for explicitely setting msearch-word.")
+Added menu button for explicitely setting msearch-word.
+
+2011-03-10, 16:15, TN:
+Added custom-variable msearch-max-length and avoid crash through
+too long msearch words.")
