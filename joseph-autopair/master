@@ -1,6 +1,6 @@
 (:repository (git . "https://github.com/jixiuf/joseph-autopair.git")
  :created    "20110302"
- :updated    "2011"
+ :updated    "20100304"
  :license    "GPL-3"
  :authors    (("Joseph" . "jixiuf@gmail.com"))
  :maintainer ("Joseph" . "jixiuf@gmail.com")
@@ -24,7 +24,7 @@ this package doesn't use skeleton or anything like this.
  so that when you press `Backspace' between \"(\" and \")\"
  both \"(\" and \")\" is deleted.
 
- This is only enabled when the \"tail\" is `stringp'
+ This is only enabled when the \"tail\" is `string'
  what is that means?
  because \"tail\" can be a `string' or a lisp sentence
  when it is a `string' , it will be inserted directly.
@@ -44,7 +44,7 @@ this package doesn't use skeleton or anything like this.
                    (\"[\" (save-excursion (insert \"]\")))
 
  but a litter difference exists :
- when the \"tail\" is `stringp' then I can get the length of tail
+ when the \"tail\" is `string' then I can get the length of tail
  eazyly, so that I can delete or skip it depending
  on the length of \"tail\".
  that means only string type \"tail\" can be skipped
