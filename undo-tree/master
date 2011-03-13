@@ -1,6 +1,6 @@
 (:repository (git . "http://www.dr-qubit.org/git/undo-tree.git")
- :created    "2010"
- :updated    "2010"
+ :created    "2011"
+ :updated    "2011"
  :license    "GPL-3"
  :authors    (("Toby Cubitt" . "toby-undo-tree@dr-qubit.org"))
  :maintainer ("Toby Cubitt" . "toby-undo-tree@dr-qubit.org")
