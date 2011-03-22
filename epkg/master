@@ -1,7 +1,7 @@
 (:summary    "The stupid package tracker for Emacs"
  :repository (git . "https://github.com/tarsius/epkg.git")
  :created    "20100101"
- :updated    "20110217"
+ :updated    "20110304"
  :license    "GPL-3"
  :authors    (("Jonas Bernoulli" . "jonas@bernoul.li"))
  :maintainer ("Jonas Bernoulli" . "jonas@bernoul.li")
@@ -30,13 +30,4 @@ currently not available.
 This branch however can be used to list all packages available from the
 Emacsmirror (https://github.com/emacsmirror).  In it's current form it
 is similar to `ell.el' which lists package recorded in the Emacs Lisp
-List (http://www.damtp.cam.ac.uk/user/sje30/emacs/ell.html).
-
-The following packages which are not distributed with Emacs are
-required by this version of epkg: `listing', `magit' and `vcomp'.
-
-The easiest way to install epkg is to clone the bootstrap repository
-at https://github.com/emacsmirror/.emacs.d and follow the instructions
-in the README.md file inside this repository.  However lacking the
-package managment features which justify this the steps required to
-install this package are a bit to involved.")
+List.")

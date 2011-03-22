@@ -1,2 +1,37 @@
-(:homepage   "http://www.emacswiki.org/RainbowDelimiters"
- :wikipage   "http://www.emacswiki.org/RainbowDelimiters")
+(:summary    "Colorize nested delimiters: () [] {}"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :provided   (rainbow-delimiters)
+ :required   ((("emacs" cl)))
+ :homepage   "http://www.emacswiki.org/RainbowDelimiters"
+ :wikipage   "http://www.emacswiki.org/RainbowDelimiters"
+ :commentary "\
+This is a \"rainbow parentheses\" mode which includes support for
+parens \"()\", brackets \"[]\", and braces \"{}\". It conveys nesting
+depth by using a different face for each level. It correctly
+colorizes statements of the same depth - if two statements are the
+same level, they will be the same color.
+
+Great care has been taken to make this mode FAST. You should see
+no discernable change in scrolling or editing speed when using it
+with delimiter-rich languages such as Clojure, Lisp and Scheme.
+
+The only exception is with extremely large nested data structures
+having hundreds of delimiters; in that case there will be a brief
+pause to colorize the structure the very first time it is
+displayed on screen; from then on editing this structure will
+perform at full speed.
+
+Default colors come from ZenBurn vim/emacs theme, available here:
+http://slinky.imukuppi.org/zenburnpage/
+
+Help would be appreciated in improving the default color scheme.
+Since Emacs does not currently have color correction, colors
+appear differently wide gamut displays compared to how they look
+on most SRGB monitors. I use a wide-gamut display; I have tried
+to select the best default colors I can from popular SRGB themes.
+If you make a change to the default color scheme, please send it
+to (Jeremy Rayman, jeremy.rayman.public@gmail.com).  A list of
+colors in any form would be fine; a proper patch is not required.
+This would be a useful contribution.")
