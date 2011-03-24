@@ -4,4 +4,4 @@
 	       ("redo" redo)
 	       ("undo-tree" undo-tree)))
  :homepage   "http://gitorious.org/vimpulse/vimpulse"
- :wikipage   "http://www.emacswiki.org/vimpulse")
+ :wikipage   "http://www.emacswiki.org/Vimpulse")

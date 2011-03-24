@@ -23,9 +23,13 @@ pause to colorize the structure the very first time it is
 displayed on screen; from then on editing this structure will
 perform at full speed.
 
-Default colors come from ZenBurn vim/emacs theme, available here:
-http://slinky.imukuppi.org/zenburnpage/
+Default colors have been chosen with the philosophy that it's
+better to err on the side of less intrusion than to be more
+colorful. Color schemes are always a matter of taste.
+If you do take the time to design a new color scheme,
+Please send it in! (jeremy.rayman@gmail.com)
 
+NOTE:
 Help would be appreciated in improving the default color scheme.
 Since Emacs does not currently have color correction, colors
 appear differently wide gamut displays compared to how they look
