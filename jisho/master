@@ -1,0 +1,46 @@
+(:summary    "English/Japanese dictionary for Emacs"
+ :repository (git . "https://github.com/laysakura/jisho.git")
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Sho Nakatani" . "lay.sakura@gmail.com"))
+ :maintainer ("Sho Nakatani" . "lay.sakura@gmail.com")
+ :provided   (deferred jisho)
+ :required   ((("emacs" cl pp)))
+ :keywords   ("english" "japanese" "dictionary" "jisho")
+ :homepage   "https://github.com/laysakura/jisho"
+ :commentary "\
+jisho.el is (English->Japanese | Japanese->English) dictionary
+working on Emacs. This software makes use of SPACE ALC (http://www.alc.co.jp/)
+database. Even if you get frustrated by using this software,
+NEVER REPORT TO ALC, rather tell the author what bothers you :-)
+This software also uses deferred.el. Big Thanks to Mr. SAKURAI MAsashi :-D
+
+Requirement:
+Internet connection
+
+Installation:
+
+1. Extract archive.
+    $ tar xvf jisho-el.tar.gz
+
+2. Put 'jisho-el' directory to somewhere and cd to it.
+   For example:
+    $ mv jisho-el ~/lib
+    $ cd ~/lib/jisho-el
+
+3. byte-comple jisho.el
+    $ make
+
+4. Create a symbolic link in a directory with PATH
+    # make install
+  or
+    $ chmod u+x main.py
+    # ln -s `pwd`/main.py /usr/local/bin/jisho
+
+5. Put jisho.el and diferred.el into a directory with load-path.
+   For Example:
+    $ cp *.el *.elc ~/.emacs.d/
+
+6. Add following to .emacs:
+    (require 'jisho)")

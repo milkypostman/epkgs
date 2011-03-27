@@ -1,0 +1,21 @@
+(:summary    "Contacts management"
+ :repository (git . "https://github.com/AndreaCrotti/org-passwords.git")
+ :created    "2010"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Andrea Crotti" . "andrea.crotti.0@gmail.com"))
+ :maintainer ("Andrea Crotti" . "andrea.crotti.0@gmail.com")
+ :keywords   ("passwords" "outlines")
+ :homepage   "https://github.com/AndreaCrotti/org-passwords"
+ :commentary "\
+This file contains the code for managing your passwords with Org-mode
+
+To enter new passwords, you can use `org-capture' and a template just like
+this:
+
+        (\"p\" \"password\" entry (file \"~/org/secrects.org.gpg\")
+         \"* %(org-passwords-template-name)
+:PROPERTIES:
+:username: %(org-passwords-template-username)
+:password: %(org-passwords-template-password)
+:END:\")))")

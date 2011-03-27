@@ -1,0 +1,6 @@
+(:repository (git . "https://github.com/apgwoz/activator-el.git")
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-2"
+ :provided   (activator)
+ :homepage   "https://github.com/apgwoz/activator-el")

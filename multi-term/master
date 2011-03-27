@@ -1,6 +1,6 @@
 (:summary    "Managing multiple terminal buffers in Emacs"
  :created    "20080919"
- :updated    "20110215"
+ :updated    "20100513"
  :license    "GPL-3"
  :authors    (("Andy Stewart" . "lazycat.manatee@gmail.com"))
  :maintainer ("ahei" . "ahei0802@gmail.com")

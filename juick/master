@@ -6,7 +6,7 @@
  :authors    (("mad" . "owner.mad.epa@gmail.com"))
  :maintainer ("mad" . "owner.mad.epa@gmail.com")
  :provided   (jabber-geoloc jabber-ibb jabber-moods jabber-tune juick)
- :required   ((("emacs" browse-url button epa epg)
+ :required   ((("emacs" browse-url button)
 	       ("google-maps" google-maps)
 	       ("jabber" jabber-chatbuffer jabber-si-common)))
  :keywords   ("juick")
