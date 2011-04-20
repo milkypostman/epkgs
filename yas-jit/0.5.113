@@ -1,0 +1,33 @@
+(:summary    "Loads Yasnippets on demand (makes start up faster)"
+ :created    "20101027"
+ :updated    "20101101"
+ :license    "GPL-3"
+ :authors    (("Matthew L. Fidler"))
+ :maintainer ("Matthew L. Fidler")
+ :provided   (yas-jit)
+ :required   ((("emacs" cl)
+	       ("yasnippet" yasnippet)))
+ :keywords   ("yasnippet" "fast")
+ :commentary "\
+Usage:
+  Instead of using
+
+  (require 'yasnippet)
+  (setq yas/root-directory snippet-directory)
+  (yas/load-directory yas/root-directory)
+
+  which takes some time on initial loading, use
+
+  (require 'yas-jit)
+  (setq yas/root-directory snippet-directory)
+  (yas/jit-load)
+
+  Note this works assuming that each load directory contains a list
+  of modes. Currently the release version of yasnippet does not use
+  this paradigm. However the svn trunk does.
+
+  Also note that yasnippet requires something in the hash,
+  otherwise it loads everything.  Therefore text-mode snippets are
+  loaded by default.
+
+  This may be put into the trunk of Yasnippet.")

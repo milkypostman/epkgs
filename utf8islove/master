@@ -1,0 +1,6 @@
+(:summary    "Quail package for TeX integration"
+ :repository (git . "https://github.com/robsimmons/utf8islove.git")
+ :license    "GPL-3"
+ :authors    (("Robert J. Simmons"))
+ :maintainer ("Robert J. Simmons")
+ :homepage   "https://github.com/robsimmons/utf8islove")

@@ -1,0 +1,12 @@
+(:summary    "A source for auto-complete"
+ :repository (git . "https://github.com/whitypig/auto-complete-ya-gtags.git")
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("whitypig" . "whitypig@gmail.com"))
+ :maintainer ("whitypig" . "whitypig@gmail.com")
+ :provided   (auto-complete-ya-gtags)
+ :required   ((("auto-complete" auto-complete)
+	       ("emacs" cl)))
+ :keywords   ("auto-complete")
+ :homepage   "https://github.com/whitypig/auto-complete-ya-gtags")

@@ -1,4 +1,5 @@
-(:created    "20110326"
+(:repository (git . "https://github.com/jixiuf/anything-dired-history.git")
+ :created    "20110326"
  :updated    "2011"
  :license    "GPL-3"
  :authors    (("Joseph" . "jixiuf@gmail.com"))
@@ -7,6 +8,7 @@
  :required   ((("anything" anything)
 	       ("emacs" dired)))
  :keywords   ("anything" "dired" "history")
+ :homepage   "https://github.com/jixiuf/anything-dired-history"
  :commentary "\
 Someone like to reuse the current dired buffer to visit
 another directory, so that you just need open one dired

@@ -1,0 +1,4 @@
+(:repository (git . "https://github.com/bkyle/maven-mode.git")
+ :authors    (("Bryan Kyle" . "bryan.kyle@gmail.com"))
+ :maintainer ("Bryan Kyle" . "bryan.kyle@gmail.com")
+ :homepage   "https://github.com/bkyle/maven-mode")

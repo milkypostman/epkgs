@@ -1,0 +1,13 @@
+(:summary    "Function library about file and directory"
+ :repository (git . "https://github.com/jixiuf/joseph-file-util.git")
+ :created    "20110331"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Joseph" . "jixiuf@gmail.com"))
+ :maintainer ("Joseph" . "jixiuf@gmail.com")
+ :provided   (joseph-file-util)
+ :keywords   ("files" "directory")
+ :homepage   "https://github.com/jixiuf/joseph-file-util"
+ :commentary "\
+some functions handle file and directory.
+ look examples above each function for detail.")

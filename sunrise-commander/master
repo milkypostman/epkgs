@@ -5,7 +5,7 @@
  :authors    (("José Alfredo Romero L." . "escherdragon@gmail.com"))
  :maintainer ("José Alfredo Romero L." . "escherdragon@gmail.com")
  :provided   (sunrise-commander)
- :required   ((("emacs" cl desktop dired dired-x esh-mode find-dired font-lock recentf sort term))
+ :required   ((("emacs" cl desktop dired dired-aux dired-x esh-mode find-dired font-lock recentf sort term))
 	      (("emacs" bookmark)))
  :keywords   ("sunrise" "commander" "files" "manager" "midnight" "norton" "orthodox")
  :homepage   "http://joseito.republika.pl/"

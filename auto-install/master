@@ -1,6 +1,6 @@
 (:summary    "Auto install elisp file"
  :created    "20081211"
- :updated    "20110129"
+ :updated    "20110412"
  :license    "GPL-3"
  :authors    (("Andy Stewart" . "lazycat.manatee@gmail.com")
 	      ("rubikitch" . "rubikitch@ruby-lang.org"))

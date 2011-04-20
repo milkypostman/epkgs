@@ -1,12 +1,12 @@
-(:created    "2000"
- :updated    "2000"
+(:summary    "Cddb interface"
+ :repository (git . "https://github.com/larsmagne/cddb.el.git")
+ :created    "1998"
+ :updated    "2011"
  :license    "GPL-2"
- :authors    (("Christopher Bowron" . "bowronch@cse.msu.edu"))
- :maintainer ("Christopher Bowron" . "bowronch@cse.msu.edu")
- :provided   (cddb)
- :commentary "\
-Quick Hack to interface to CDDB online cd database
-
-Things To Do:
-fix it so that cddb-insert-tracks doesnt open up a different buffer
-make more robust")
+ :authors    (("Lars Magne Ingebrigtsen" . "larsi@gnus.org"))
+ :maintainer ("Lars Magne Ingebrigtsen" . "larsi@gnus.org")
+ :provided   (cddb expect)
+ :required   ((("emacs" cl message timer)
+	       (nil captitle)))
+ :keywords   ("music")
+ :homepage   "https://github.com/larsmagne/cddb.el")

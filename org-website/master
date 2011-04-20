@@ -12,10 +12,11 @@
  :commentary "\
 Required modules:
   - `string-template': http://elisp-string-template.git.chezwam.org
-  - `dirtree': http://www.splode.com/~friedman/software/emacs-lisp/src/dirtree.el
+  - `dirtree':
+    http://www.splode.com/~friedman/software/emacs-lisp/src/dirtree.el
 
-This basically setup some hooks to be launched when publishing. Used hooks are:
-`org-publish-before-export-hook' and `org-publish-after-export-hook'.
+This basically setup some hooks to be launched when publishing. Used hooks
+are: `org-publish-before-export-hook' and `org-publish-after-export-hook'.
 
 In addition all variables from `org-website-publish-with-vars' are visible.
 Refer to `org-website-publish-with-vars' for further information.")

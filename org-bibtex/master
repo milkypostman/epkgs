@@ -1,0 +1,26 @@
+(:summary    "Convert between Org headings and bibtex entries"
+ :repository (git . "https://github.com/eschulte/org-bibtex.git")
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-2"
+ :authors    (("Eric Schulte"))
+ :maintainer ("Eric Schulte")
+ :provided   (org-bibtex)
+ :required   ((("emacs" org)))
+ :keywords   ("org-mode" "bibtex")
+ :homepage   "https://github.com/eschulte/org-bibtex"
+ :commentary "\
+- Run `org-bibtex' to export the current file to a .bib.
+
+- Run `org-bibtex-check' or `org-bibtex-check-all' to check and
+  fill in missing field of either the current, or all headlines
+
+- Run `org-bibtex-create' to add a bibtex entry
+
+- Use `org-bibtex-read' to read a bibtex entry after `point' or in
+  the active region, then call `org-bibtex-write' in a .org file to
+  insert a heading for the read bibtex entry
+
+- All Bibtex information is taken from the document compiled by
+  Andrew Roberts from the Bibtex manual, available at
+  http://www.andy-roberts.net/misc/latex/sessions/bibtex/bibentries.pdf")

@@ -1,0 +1,37 @@
+(:repository (git . "https://github.com/jixiuf/joseph-single-dired.git")
+ :created    "20110403"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Joseph" . "jixiuf@gmail.com"))
+ :maintainer ("Joseph" . "jixiuf@gmail.com")
+ :provided   (joseph-single-dired)
+ :required   ((("emacs" dired)))
+ :keywords   ("dired" "single" "buffer")
+ :homepage   "https://github.com/jixiuf/joseph-single-dired"
+ :commentary "\
+In Dired, when you choose a directory to visit,
+ it is normally visited in a new buffer – the
+ Dired buffer you chose it in is not deleted.
+ Some people don’t like this behavior, because as you
+ navigate around the directory tree you accumulate
+ Dired buffers, one for each directory you visit.
+
+ So ,`joseph-single-dired.el' can make you just open
+ a single dired buffer.
+ I bind `dired-mouse-find-alternate-file' on [mouse-2]
+ so even you click on a directory in dired buffer ,
+ it will reuse current dired buffer too.
+
+
+Installation:
+
+ Just put `joseph-single-dired.el' to your load-path.
+ The load-path is usually ~/elisp/.
+ It's set in your ~/.emacs like this:
+ (add-to-list 'load-path (expand-file-name \"~/elisp\"))
+
+ Add the following to your ~/.emacs startup file.
+
+ (eval-after-load 'dired '(progn (require 'joseph-single-dired)))
+
+ No need more.")

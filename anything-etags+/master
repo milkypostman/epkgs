@@ -76,9 +76,9 @@ I use GNU/Emacs,and this is my config file about etags
 (global-set-key \"\\M-.\" 'anything-etags+-select-one-key)
 ;;list all visited tags
 (global-set-key \"\\M-*\" 'anything-etags+-history)
-;;go back directly 
+;;go back directly
 (global-set-key \"\\M-,\" 'anything-etags+-history-action-go-back)
-;;go forward directly 
+;;go forward directly
 (global-set-key \"\\M-/\" 'anything-etags+-history-action-go-forward)
 
 and how to work with etags-table.el

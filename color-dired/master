@@ -1,8 +1,8 @@
 (:summary    "Make dired color"
  :repository (git . "https://github.com/mhayashi1120/Emacs-color-dired.git")
  :license    "GPL-3"
- :authors    (("Hayashi Masahiro" . "mhayashi1120@gmail.com"))
- :maintainer ("Hayashi Masahiro" . "mhayashi1120@gmail.com")
+ :authors    (("Masahiro Hayashi" . "mhayashi1120@gmail.com"))
+ :maintainer ("Masahiro Hayashi" . "mhayashi1120@gmail.com")
  :provided   (color-dired)
  :required   ((("emacs" cl ls-lisp)))
  :keywords   ("dired" "color")

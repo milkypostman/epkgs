@@ -1,0 +1,12 @@
+(:repository (git . "https://github.com/slackorama/io-emacs.git")
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-2"
+ :authors    (("Seth Mason"))
+ :maintainer ("Seth Mason")
+ :provided   (io-mode-inf)
+ :required   ((("emacs" comint)))
+ :keywords   ("io" "languages")
+ :homepage   "https://github.com/slackorama/io-emacs"
+ :commentary "\
+Run an Io interpreter in Emacs.")

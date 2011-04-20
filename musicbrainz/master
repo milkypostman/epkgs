@@ -1,0 +1,14 @@
+(:summary    "Musicbrainz interface"
+ :repository (git . "https://github.com/larsmagne/musicbrainz.el.git")
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-2"
+ :authors    (("Lars Magne Ingebrigtsen" . "larsi@gnus.org"))
+ :maintainer ("Lars Magne Ingebrigtsen" . "larsi@gnus.org")
+ :provided   (musicbrainz)
+ :required   ((("emacs" cl message mm-url url)))
+ :keywords   ("music")
+ :homepage   "https://github.com/larsmagne/musicbrainz.el"
+ :commentary "\
+This library queries the musicbrainz.org data base and converts the
+entries into cddb form.")

@@ -7,7 +7,7 @@
 	      ("Alberto Garcia" . "agarcia@igalia.com"))
  :maintainer ("Y. Hayamizu" . "y.hayamizu@gmail.com")
  :provided   (ssl twittering-mode)
- :required   ((("emacs" cl jka-compr parse-time sha1 url xml))
+ :required   ((("emacs" cl jka-compr parse-time sha1 skeleton url xml))
 	      (("emacs" epa epg tls url-methods)
 	       (nil alpaca)))
  :keywords   ("twitter" "web")

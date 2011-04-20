@@ -4,11 +4,10 @@
  :updated    "1994"
  :license    "GPL-3"
  :maintainer (nil . "python-mode@python.org")
- :provided   (doctest-mode highlight-indentation pars-part-output py-bug-numbered-tests pycomplete python-mode)
- :required   ((("emacs" ansi-color cl comint compile custom easymenu imenu info-look reporter)
+ :provided   (doctest-mode highlight-indentation pars-part-output py-bug-numbered-tests pycomplete python-mode python-mode-test)
+ :required   ((("emacs" ansi-color cl comint compile custom info-look reporter)
 	       ("mmm-mode" mmm-auto)
-	       ("pymacs" pymacs)
-	       ("thing-at-point-utils" ar-comment-lor beg-end thing-at-point-utils thingatpt-utils-base)))
+	       ("pymacs" pymacs)))
  :keywords   ("python" "languages" "oop")
  :homepage   "https://launchpad.net/python-mode"
  :wikipage   "http://www.emacswiki.org/PythonMode"
@@ -68,4 +67,9 @@ python-mode@python.org.
 
 When in a Python mode buffer, do a C-h m for more help.  It's doubtful that
 a texinfo manual would be very useful, but if you want to contribute one,
-we'll certainly accept it!")
+we'll certainly accept it!
+
+ToDo
+Question calls of `py-guess-indent-offset', as
+required indent may change throughout the buffer.
+Rather may it be called by argument")

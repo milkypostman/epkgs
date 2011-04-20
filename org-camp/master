@@ -1,0 +1,7 @@
+(:summary    "Import TODO items from basecamp into org-mode"
+ :repository (git . "https://github.com/0x4b/org-camp.git")
+ :updated    "2011"
+ :license    "GPL-2"
+ :authors    (("Kirk Kelsey"))
+ :maintainer ("Kirk Kelsey")
+ :homepage   "https://github.com/0x4b/org-camp")

@@ -1,1 +1,11 @@
-()
+(:summary    "Editing Sound Files"
+ :repository (git . "https://github.com/larsmagne/scan.el.git")
+ :created    "2001"
+ :updated    "2011"
+ :license    "GPL-2"
+ :authors    (("Lars Magne Ingebrigtsen" . "larsi@gnus.org"))
+ :maintainer ("Lars Magne Ingebrigtsen" . "larsi@gnus.org")
+ :provided   (scan)
+ :required   ((("emacs" cl gnus-util)))
+ :keywords   ("music")
+ :homepage   "https://github.com/larsmagne/scan.el")

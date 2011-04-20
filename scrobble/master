@@ -1,0 +1,19 @@
+(:summary    "Interfacing with last.fm"
+ :repository (git . "https://github.com/larsmagne/scrobble.el.git")
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Lars Magne Ingebrigtsen" . "larsi@gnus.org"))
+ :maintainer ("Lars Magne Ingebrigtsen" . "larsi@gnus.org")
+ :provided   (scrobble)
+ :required   ((("emacs" cl mm-url)))
+ :keywords   ("home" "automation")
+ :homepage   "https://github.com/larsmagne/scrobble.el"
+ :commentary "\
+This library provides an interface to the (old-style) last.fm
+scrobbling interface.  It tries to do this in a pretty reliable
+way, and retries the scrobbling if last.fm is down, which it pretty
+often is.
+
+Usage: Set `scrobble-user' and `scrobble-password', and then just call
+(scrobble artist album track).")

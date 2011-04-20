@@ -1,0 +1,5 @@
+(:summary    "Makes it easier to quickly add todos"
+ :repository (git . "https://github.com/gyordanov/smart-todo.el.git")
+ :license    "GPL-2"
+ :provided   (smart-todo)
+ :homepage   "https://github.com/gyordanov/smart-todo.el")

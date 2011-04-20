@@ -1,0 +1,15 @@
+(:summary    "Generic index mode for Emacs"
+ :repository (git . "https://github.com/medikoo/el-index.git")
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-2"
+ :authors    (("Mariusz Nowak" . "mariusz+el-index@medikoo.com")
+	      ("Karl Fogel" . "kfogel@red-bean.com")
+	      (nil . "mariusz+el-index@medikoo.com")
+	      ("Free Software Foundation")
+	      ("Inc."))
+ :maintainer ("Mariusz Nowak" . "mariusz+el-index@medikoo.com")
+ :provided   (el-index/el-index)
+ :homepage   "https://github.com/medikoo/el-index"
+ :commentary "\
+See README.")

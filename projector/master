@@ -1,0 +1,40 @@
+(:summary    "Projects in an Emacs idiom"
+ :created    "20091211"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Paul M. Rodriguez" . "paulmrodriguez@gmail.com"))
+ :maintainer ("Paul M. Rodriguez" . "paulmrodriguez@gmail.com")
+ :provided   (projector)
+ :required   ((("emacs" cl dired-x etags find-dired grep tramp-sh)))
+ :keywords   ("tools" "convenience" "files" "unix")
+ :homepage   "http://gopher.ruricolist.com:70/lisp/"
+ :commentary "\
+Short answer: projector variables + tags + Ido = Projector.
+
+- Generates tags file for project and update it (in background)
+  every time you save.
+- Uses familiar Emacs features: project variables and tags tables.
+- Provides project-scoped versions of most file, buffer, dir and tag commands.
+- Parallel project commands using C-z prefix: i.e. C-z C-f for
+  `projector-find-file', C-z b for `projector-switch-to-buffer-',
+  &c.
+- Maintain project as context by ensuring that killed buffers are
+  replaced with other buffers belonged to the same project.
+- Any project command can be limited to a subset of files filtering
+  by wildcard, regexp, substring, mode, or predicate.
+- ALlows remote projects.
+- Allows read-only projects (handy for reading code).
+- Ignore files by extension or regexp, globally or per-project.
+
+TODO:
+make complete-tag use fast-etags-completion-table.
+new commentary.
+don't prompt for root in fileless buffers.
+image-file-name-extensions? mailcap-mime-extensions?
+use org-open?
+editing ignore patterns in buffer, saving as a dir-local?
+handle multiple occasions of a single tag
+cf. org-ctags? defining additional regexps?
+M-* pop-tag-mark
+tags-table-set-list
+tags-search, tags-qr, tags-loop-continue, tags-apropos, list-tags,")

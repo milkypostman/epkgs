@@ -5,4 +5,4 @@
  :provided   (ergoemacs-mode)
  :keywords   ("qwerty" "dvorak" "keybinding" "ergonomic" "colemak")
  :homepage   "http://ergoemacs.org/"
- :wikipage   "http://www.emacswiki.org/ergoemacs")
+ :wikipage   "http://www.emacswiki.org/ErgoEmacs")

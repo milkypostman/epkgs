@@ -5,7 +5,7 @@
  :authors    (("Anton Johansson" . "anton.johansson@gmail.com"))
  :maintainer ("Anton Johansson" . "anton.johansson@gmail.com")
  :provided   (scss-mode)
- :required   ((("emacs" compile derived)))
+ :required   ((("emacs" compile derived flymake)))
  :keywords   ("scss" "css" "mode")
  :homepage   "https://github.com/antonj/scss-mode"
  :wikipage   "http://www.emacswiki.org/ScssMode"

@@ -3,6 +3,7 @@
  :created    "20101129"
  :updated    "2010"
  :provided   (gnus-identities)
+ :required   ((("emacs" message)))
  :keywords   ("gnus" "identities")
  :homepage   "https://github.com/renard/gnus-identities"
  :commentary "\

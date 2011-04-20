@@ -1,0 +1,11 @@
+(:summary    "An interactive, iterative 'git blame' mode for Emacs"
+ :repository (git . "https://github.com/mbunkus/mo-git-blame.git")
+ :created    "2009"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Moritz Bunkus" . "moritz@bunkus.org"))
+ :maintainer ("Moritz Bunkus" . "moritz@bunkus.org")
+ :provided   (mo-git-blame)
+ :required   ((("emacs" cl easymenu ido)))
+ :keywords   ("tools")
+ :homepage   "https://github.com/mbunkus/mo-git-blame")

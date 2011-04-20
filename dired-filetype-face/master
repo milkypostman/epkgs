@@ -1,0 +1,31 @@
+(:summary    "Faces for different filetype in dired buffer"
+ :repository (git . "https://github.com/jixiuf/dired-filetype-face.git")
+ :created    "20110404"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Joseph" . "jixiuf@gmail.com"))
+ :maintainer ("Joseph" . "jixiuf@gmail.com")
+ :provided   (dired-filetype-face)
+ :required   ((("emacs" custom dired)))
+ :keywords   ("dired" "filetype" "face" "custom")
+ :homepage   "https://github.com/jixiuf/dired-filetype-face"
+ :commentary "\
+Set faces for different file type in dired buffer. I use a dark
+ background, so maybe the default face doesn't meet your request.
+ you can : M-x: customize-group dired-filetype-face  RET
+ And maybe M-x: customize-group dired-faces  RET
+ may do some help for you.
+
+
+Installation:
+
+Just put `dired-filetype-face.el' to your load-path.
+The load-path is usually ~/elisp/.
+It's set in your ~/.emacs like this:
+(add-to-list 'load-path (expand-file-name \"~/elisp\"))
+
+Add the following to your ~/.emacs startup file.
+
+(eval-after-load 'dired '(progn (require 'dired-filetype-face)))
+
+No need more.")

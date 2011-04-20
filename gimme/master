@@ -1,0 +1,9 @@
+(:summary    "GIMME Interesting Music on My Emacs"
+ :repository (git . "https://github.com/konr/GIMME.git")
+ :license    "GPL-2"
+ :authors    (("Konrad Scorciapino" . "scorciapino@gmail.com"))
+ :maintainer ("Konrad Scorciapino" . "scorciapino@gmail.com")
+ :provided   (gimme gimme-custom gimme-etc gimme-filter gimme-playlist gimme-status-mode gimme-tree gimme-tree-faces gimme-utils)
+ :required   ((("emacs" timer)))
+ :homepage   "https://github.com/konr/GIMME"
+ :wikipage   "http://www.emacswiki.org/GIMME")

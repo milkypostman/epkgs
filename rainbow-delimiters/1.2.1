@@ -1,0 +1,65 @@
+(:summary    "Color nested parentheses, brackets, and braces according to their depth"
+ :created    "20100902"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Jeremy L. Rayman" . "jeremy.rayman@gmail.com"))
+ :maintainer ("Jeremy L. Rayman" . "jeremy.rayman@gmail.com")
+ :provided   (rainbow-delimiters)
+ :required   ((("emacs" cl)))
+ :keywords   ("faces" "convenience" "lisp" "matching" "tools")
+ :homepage   "http://www.emacswiki.org/RainbowDelimiters"
+ :wikipage   "http://www.emacswiki.org/RainbowDelimiters"
+ :commentary "\
+This is a \"rainbow parentheses\" mode which includes support for
+parens \"()\", brackets \"[]\", and braces \"{}\". It conveys nesting
+depth by using a different face for each level.  It colors all
+statements at a given level using the same color - if several
+statements are all at the same nested depth, they will all be the
+same color.
+
+Great care has been taken to make this mode FAST. You should see no
+discernible change in scrolling or editing speed while using it,
+even with delimiter-rich languages like Clojure, Lisp, and Scheme.
+
+The one exception is with extremely large nested data structures
+having hundreds of delimiters; in that case there will be a brief
+pause to colorize the structure the very first time it is displayed
+on screen; from then on editing this structure will perform at full
+speed.
+
+Default colors have been chosen with the philosophy that it's
+better be less intrusive than to be more colorful. Color schemes
+are always a matter of taste.  If you do take the time to design a
+new color scheme, please post it on the EmacsWiki page!
+URL: http://www.emacswiki.org/emacs/RainbowDelimiters
+
+Installation:
+
+1. Place rainbow-delimiters.el on your emacs load-path.
+
+2. Compile the file (necessary for speed):
+M-x byte-compile-file <location of rainbow-delimiters.el>
+
+3. Add the following to your dot-emacs/init file:
+(require 'rainbow-delimiters)
+
+4. Add hooks for modes where you want it enabled, for example:
+(add-hook 'clojure-mode-hook 'rainbow-delimiters-mode)
+
+- To activate rainbow-delimiters mode temporarily in a buffer:
+M-x rainbow-delimiters-mode
+
+Customization:
+
+To customize various options, including the color scheme:
+M-x customize-group rainbow-delimiters
+
+color-theme.el users:
+If you use the color-theme package, you can specify custom colors
+by adding the appropriate faces to your theme.
+- Faces take the form of:
+  'rainbow-delimiters-depth-#-face' with # being the depth.
+  Depth begins at 1, the outermost color.
+  Faces exist for depths 1-12.
+- The unmatched delimiter face is:
+  'rainbow-delimiters-unmatched-delimiter-face'")
