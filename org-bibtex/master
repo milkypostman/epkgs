@@ -6,7 +6,7 @@
  :authors    (("Eric Schulte"))
  :maintainer ("Eric Schulte")
  :provided   (org-bibtex)
- :required   ((("emacs" org)))
+ :required   ((("emacs" bibtex org)))
  :keywords   ("org-mode" "bibtex")
  :homepage   "https://github.com/eschulte/org-bibtex"
  :commentary "\

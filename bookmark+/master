@@ -1,10 +1,10 @@
 (:summary    "Bookmark+: extensions to standard library `bookmark.el'"
  :created    "20000915"
- :updated    "20110103"
+ :updated    "20110412"
  :license    "GPL-3"
  :authors    (("Drew Adams")
 	      ("Thierry Volpiatto"))
- :provided   (bookmark+ bookmark+-1 bookmark+-bmu bookmark+-chg bookmark+-doc bookmark+-lit bookmark+-mac)
+ :provided   (bookmark+ bookmark+-1 bookmark+-bmu bookmark+-chg bookmark+-doc bookmark+-key bookmark+-lit bookmark+-mac)
  :required   ((("emacs" bookmark browse-url cl dired-aux dired-x ffap gnus gnus-sum info man pp repeat)
 	       ("w3m" w3m))
 	      (("crosshairs" crosshairs)
@@ -25,6 +25,8 @@ Bookmark+: extensions to standard library `bookmark.el'.
    `bookmark+-lit.el' - (optional) code for highlighting bookmarks
    `bookmark+-bmu.el' - code for the `*Bookmark List*' (bmenu)
    `bookmark+-1.el'   - other required code (non-bmenu)
+   `bookmark+-key.el' - key and menu bindings
+
    `bookmark+-doc.el' - documentation (comment-only file)
    `bookmark+-chg.el' - change log (comment-only file)
 
