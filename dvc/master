@@ -11,7 +11,7 @@
 	       ("highline" highline)
 	       (nil dvc-autoloads dvc-version)))
  :homepage   "http://download.gna.org/dvc/"
- :wikipage   "http://www.emacswiki.org/DVC"
+ :wikipage   "http://www.emacswiki.org/Dvc"
  :commentary "\
 This file provides the low-level functions used by the DVC interfaces
 to distributed revison control systems.")

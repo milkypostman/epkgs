@@ -1,6 +1,6 @@
 (:repository (git . "https://github.com/pft/gimpmode.git")
- :created    "2010"
- :updated    "2010"
+ :created    "2011"
+ :updated    "2011"
  :license    "GPL-3"
  :authors    (("but please"))
  :maintainer ("but please")

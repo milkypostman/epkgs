@@ -3,10 +3,10 @@
  :created    "2011"
  :updated    "2011"
  :license    "GPL-3"
- :authors    (("Hayashi Masahiro" . "mhayashi1120@gmail.com"))
- :maintainer ("Hayashi Masahiro" . "mhayashi1120@gmail.com")
+ :authors    (("Masahiro Hayashi" . "mhayashi1120@gmail.com"))
+ :maintainer ("Masahiro Hayashi" . "mhayashi1120@gmail.com")
  :provided   (fsvn fsvn-admin fsvn-blame fsvn-browse fsvn-cmd fsvn-config fsvn-data fsvn-debug fsvn-deps fsvn-dev fsvn-diff fsvn-dired fsvn-env fsvn-fs fsvn-logview fsvn-magic fsvn-minibuf fsvn-mode fsvn-msgedit fsvn-parasite fsvn-popup fsvn-proc fsvn-proclist fsvn-propview fsvn-pub fsvn-publish fsvn-select fsvn-svk fsvn-tortoise fsvn-ui fsvn-url fsvn-win fsvn-xml mw32cmp)
- :required   ((("emacs" bytecomp diff diff-mode dired dired-aux easymenu ls-lisp menu-bar xml)
+ :required   ((("emacs" bytecomp chart diff diff-mode dired dired-aux easymenu ls-lisp menu-bar xml)
 	       (nil mw32script))
 	      (("emacs" electric)))
  :keywords   ("subversion" "svn")
