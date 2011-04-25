@@ -1,0 +1,16 @@
+(:repository (git . "https://github.com/markhepburn/mplayer-mode.git")
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Mark Hepburn" . "mark.hepburn@gmail.com"))
+ :maintainer ("Mark Hepburn" . "mark.hepburn@gmail.com")
+ :provided   (mplayer-mode)
+ :homepage   "https://github.com/markhepburn/mplayer-mode"
+ :commentary "\
+Owes a lot in initial idea to the emacs video editor gneve
+(http://www.1010.co.uk/gneve.html).  This mode controls mplayer
+directly, using its slave-mode (see
+http://www.mplayerhq.hu/DOCS/tech/slave.txt), which accepts
+commands on stdin.  The original motivation was to facilitate note
+taking from videos; hence it is possible to pause, skip backwards
+and forwards, and insert a timestamp of the current position.")

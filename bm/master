@@ -38,7 +38,7 @@ Description:
      to enable/disable persistent bookmarks (buffer local).
 
    - List bookmarks with annotations and context in a separate buffer,
-     see `bm-show' (current buffer) and `bm-show-all' (all buffers).
+     see `bm-show' (current buffer) and `bm-show-all' (all open buffers).
      See `bm-show-mode-map' for key bindings.
 
    - Remove all bookmarks in current buffer with `bm-remove-all-current-buffer' and
@@ -55,8 +55,8 @@ Description:
 
 Known limitations:
 
-  This package is developed and tested on GNU Emacs 22.x. It should
-  work on all GNU Emacs 21.x, GNU Emacs 23.x and also on XEmacs
+  This package is developed and tested on GNU Emacs 23.x. It should
+  work on all GNU Emacs 21.x, GNU Emacs 22.x and also on XEmacs
   21.x with some limitations.
 
   There are some incompatibilities with lazy-lock when using
@@ -190,4 +190,5 @@ Acknowledgements:
  - Thanks to Jonathan Kotta <jpkotta(at)gmail.com> for mouse support and fringe
    markers on left or right side.
  - Thanks to Juanma Barranquero <lekktu(at)gmail.com> for making `bm-show' an
-   electric window, cleaning up the code, fixing bugs and fixing spelling errors.")
+   electric window, cleaning up the code, finding and fixing bugs and 
+   correcting spelling errors.")
