@@ -1,12 +1,12 @@
 (:summary    "Control Git from Emacs"
- :repository (git . "https://github.com/philjackson/magit.git")
+ :repository (git . "https://github.com/magit/magit.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"
- :provided   (magit magit-bisect magit-key-mode magit-svn magit-topgit rebase-mode)
+ :provided   (magit magit-bisect magit-key-mode magit-simple-keys magit-svn magit-topgit rebase-mode)
  :required   ((("emacs" assoc cl diff-mode easymenu ediff iswitchb log-edit pcomplete server view)))
  :keywords   ("tools")
- :homepage   "http://philjackson.github.com/magit"
+ :homepage   "https://github.com/magit/magit"
  :wikipage   "http://www.emacswiki.org/Magit"
  :commentary "\
 Invoking the magit-status function will show a buffer with the
