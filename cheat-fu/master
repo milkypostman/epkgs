@@ -1,6 +1,6 @@
 (:repository (git . "https://github.com/jpablobr/cheat-fu-mode.git")
  :created    "2011"
- :updated    "20110426"
+ :updated    "20110428"
  :license    "GPL-3"
  :authors    ((nil . "xjpablobrx@gmail.com"))
  :maintainer (nil . "xjpablobrx@gmail.com")
