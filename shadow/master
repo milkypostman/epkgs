@@ -1,0 +1,13 @@
+(:summary    "That's not the file. That's shadow"
+ :repository (git . "https://github.com/mooz/shadow.el.git")
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("mooz" . "stillpedant@gmail.com"))
+ :maintainer ("mooz" . "stillpedant@gmail.com")
+ :provided   (shadow)
+ :required   ((("emacs" cl)))
+ :keywords   ("files" "processes")
+ :homepage   "https://github.com/mooz/shadow.el"
+ :commentary "\
+See https://github.com/ujihisa/shadow.vim to check basic idea.")

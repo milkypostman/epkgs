@@ -1,0 +1,21 @@
+(:summary    "Simple task timer package"
+ :license    "GPL-2"
+ :authors    (("Jeremy Cowgar" . "jeremy@cowgar.com"))
+ :maintainer ("Jeremy Cowgar" . "jeremy@cowgar.com")
+ :provided   (task-timer)
+ :keywords   ("timer" "task-timer")
+ :homepage   "http://www.emacswiki.org/TaskTimer"
+ :wikipage   "http://www.emacswiki.org/TaskTimer"
+ :commentary "\
+This package allows you to time an activity. Start the timer then
+when stoppig the timer it will report the amount of time elapsed
+
+Requirements:
+
+Only tested on Emacs 23
+
+Installation:
+
+Add below code in your .emacs
+
+(require 'task-timer)")

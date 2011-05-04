@@ -4,7 +4,7 @@
  :authors    (("joakim verona"))
  :maintainer ("joakim verona")
  :provided   (inkmacs)
- :required   ((("emacs" dbus)
+ :required   ((("emacs" dbus org org-exp)
 	       (nil dbus-introspection dbus-proxy)))
  :homepage   "https://github.com/jave/inkmacs"
  :wikipage   "http://www.emacswiki.org/Inkmacs"

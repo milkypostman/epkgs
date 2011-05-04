@@ -6,7 +6,7 @@
  :authors    (("Julien Danjou" . "julien@danjou.info"))
  :maintainer ("Julien Danjou" . "julien@danjou.info")
  :provided   (google-maps google-maps-base google-maps-geocode google-maps-static org-location-google-maps)
- :required   ((("emacs" cl json org org-agenda solar url-util)))
+ :required   ((("emacs" cl easymenu json org org-agenda solar url-util)))
  :keywords   ("comm")
  :homepage   "http://julien.danjou.info/google-maps-el.html"
  :commentary "\

@@ -5,11 +5,12 @@
  :license    "GPL-3"
  :authors    (("Carsten Dominik" . "carsten@orgmode.org"))
  :maintainer ("Carsten Dominik" . "carsten@orgmode.org")
- :provided   (ob ob-C ob-R ob-asymptote ob-calc ob-clojure ob-comint ob-css ob-ditaa ob-dot ob-emacs-lisp ob-eval ob-exp ob-gnuplot ob-haskell ob-js ob-keys ob-latex ob-ledger ob-lisp ob-lob ob-matlab ob-maxima ob-mscgen ob-ocaml ob-octave ob-org ob-oz ob-perl ob-plantuml ob-python ob-ref ob-ruby ob-sass ob-scheme ob-screen ob-sh ob-sql ob-sqlite ob-table ob-tangle org org-agenda org-annotate-file org-archive org-ascii org-attach org-bbdb org-beamer org-bibtex org-bookmark org-capture org-checklist org-choose org-clock org-collector org-colview org-colview-xemacs org-compat org-contacts org-contribdir org-crypt org-ctags org-datetree org-depend org-docbook org-docview org-drill org-elisp-symbol org-entities org-eshell org-eval org-eval-light org-exp org-exp-bibtex org-exp-blocks org-expiry org-export org-export-generic org-export-latex org-faces org-feed org-footnote org-freemind org-generic org-git-link org-gnus org-habit org-html org-icalendar org-id org-indent org-info org-infojs org-inlinetask org-interactive-query org-invoice org-irc org-jira org-jsinfo org-latex org-learn org-list org-mac-iCal org-mac-link-grabber org-mac-message org-macs org-mairix org-man org-mew org-mhe org-mime org-mks org-mobile org-mouse org-mtags org-notmuch org-panel org-pcomplete org-plot org-protocol org-publish org-registry org-remember org-rmail org-screen org-secretary org-special-blocks org-src org-static-mathjax org-table org-taskjuggler org-timer org-toc org-track org-velocity org-vm org-w3m org-wikinodes org-wl org-xoxo org2rem orgtbl-sqlinsert)
+ :provided   (ob ob-C ob-R ob-asymptote ob-calc ob-clojure ob-comint ob-css ob-ditaa ob-dot ob-emacs-lisp ob-eval ob-exp ob-gnuplot ob-haskell ob-js ob-keys ob-latex ob-ledger ob-lisp ob-lob ob-matlab ob-maxima ob-mscgen ob-ocaml ob-octave ob-org ob-oz ob-perl ob-plantuml ob-python ob-ref ob-ruby ob-sass ob-scheme ob-screen ob-sh ob-sql ob-sqlite ob-table ob-tangle org org-agenda org-annotate-file org-archive org-ascii org-attach org-bbdb org-beamer org-bibtex org-bookmark org-capture org-checklist org-choose org-clock org-collector org-colview org-colview-xemacs org-compat org-contacts org-contacts-wl org-contribdir org-crypt org-ctags org-datetree org-depend org-docbook org-docview org-drill org-elisp-symbol org-entities org-eshell org-eval org-eval-light org-exp org-exp-bibtex org-exp-blocks org-expiry org-export org-export-generic org-export-latex org-faces org-feed org-footnote org-freemind org-generic org-git-link org-gnus org-habit org-html org-icalendar org-id org-indent org-info org-infojs org-inlinetask org-interactive-query org-invoice org-irc org-jira org-jsinfo org-latex org-learn org-list org-mac-iCal org-mac-link-grabber org-mac-message org-macs org-mairix org-man org-mew org-mhe org-mime org-mks org-mobile org-mouse org-mtags org-notmuch org-panel org-pcomplete org-plot org-protocol org-publish org-registry org-remember org-rmail org-screen org-secretary org-special-blocks org-src org-static-mathjax org-table org-taskjuggler org-timer org-toc org-track org-velocity org-vm org-w3m org-wikinodes org-wl org-xoxo org2rem orgtbl-sqlinsert)
  :required   ((("bbdb" bbdb bbdb-com)
 	       ("cdlatex" cdlatex)
 	       ("emacs" assoc autoload bibtex bookmark button cal-iso calc calc-store calc-trail calendar cc-mode cl cmuscheme comint diary-lib easymenu electric epg erc erc-log esh-mode eshell find-func find-lisp font-lock footnote format-spec gnus gnus-art gnus-sum hi-lock holidays icalendar info mailcap message mh-e mh-search mh-utils notifications noutline octave-inf outline overlay parse-time pcomplete pp ps-print remember reporter rmail sha1 shell solar table term time time-date url-handlers url-parse xml)
 	       ("ess" ess)
+	       ("flim" std11)
 	       ("gnuplot" gnuplot)
 	       ("haskell-mode" inf-haskell)
 	       ("jira" jira)
@@ -23,7 +24,7 @@
 	       ("swank-clojure" swank-clojure)
 	       ("tuareg" tuareg)
 	       ("vm" vm vm-search)
-	       ("wanderlust" wl)
+	       ("wanderlust" elmo wl wl-address wl-summary)
 	       (nil htmlize notmuch)))
  :keywords   ("outlines" "hypermedia" "calendar" "wp")
  :homepage   "http://orgmode.org"
