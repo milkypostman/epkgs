@@ -1,0 +1,18 @@
+(:summary    "Highlighting commands"
+ :created    "19951011"
+ :updated    "20110505"
+ :license    "GPL-2"
+ :authors    (("Drew Adams"))
+ :maintainer ("Drew Adams")
+ :provided   (highlight)
+ :required   ((("emacs" cl))
+	      (("faces+" faces+)
+	       ("frame-fns" frame-fns)
+	       ("menu-bar+" menu-bar+)))
+ :keywords   ("faces" "help" "local")
+ :homepage   "http://www.emacswiki.org/HighLight"
+ :wikipage   "http://www.emacswiki.org/HighLight"
+ :commentary "\
+Highlighting commands.
+
+   More description below.")

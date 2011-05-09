@@ -27,7 +27,6 @@
 	       ("yasnippet" yasnippet)))
  :keywords   ("files" "frames" "help" "matching" "outlines" "processes" "tools" "convenience" "anything")
  :homepage   "http://www.emacswiki.org/emacs/Anything"
- :wikipage   "http://www.emacswiki.org/Anything"
  :commentary "\
 Start with M-x anything, narrow the list by typing some pattern,
 select with up/down/pgup/pgdown/C-p/C-n/C-v/M-v, choose with enter,

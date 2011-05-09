@@ -1,0 +1,49 @@
+(:summary    "Graphical file chooser for Emacs on Mac OS X"
+ :repository (git . "https://github.com/mbarnett/eproject-peepopen.git")
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Geoffrey Grosenbach" . "boss@topfunky.com"))
+ :maintainer ("Geoffrey Grosenbach" . "boss@topfunky.com")
+ :provided   (eproject-peepopen)
+ :keywords   ("textmate" "osx" "mac")
+ :homepage   "https://github.com/mbarnett/eproject-peepopen"
+ :commentary "\
+A sensible fuzzy file chooser with a beautiful Mac OS X GUI.
+This version replaces peeopen.el's dependency on the heavy-weight
+textmate mode with a lighter weight dependency on jrockway's eproject
+needed only for identifying the root directory of a project
+
+Calls the external PeepOpen.app when you hit Meta-t (or equivalent) in eproject-mode.
+
+   M-t - Go to File
+
+Installation:
+
+This plugin assumes that you've already loaded Jonathan Rockway's
+eproject.el in your emacs configuration. Load this file afterward.
+
+Copy this file to ~/.emacs.d/vendor/eproject-peepopen.el
+
+
+You'll also need eproject.el:
+
+  $ cd ~/.emacs.d/vendor
+  $ git clone https://github.com/jrockway/eproject.git
+
+Require both libraries and activate eproject.
+In most Emacs distributions, you'll do this in ~/.emacs.d/init.el
+or your personal configuration file.
+
+In Aquamacs, this goes in ~/Library/Preferences/Aquamacs Emacs/Preferences.el.
+
+  (add-to-list 'load-path \"~/.emacs.d/vendor/eproject.el\")
+  (require 'eproject)
+  (add-to-list 'load-path \"~/.emacs.d/vendor/\")
+  (require 'eproject-peepopen)
+
+For Emacs 23 or Aquamacs, use this to open files in the existing frame:
+
+  (setq ns-pop-up-frames nil)
+
+###autoload")

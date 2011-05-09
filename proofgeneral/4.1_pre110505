@@ -1,0 +1,26 @@
+(:summary    "Proof General theorem prover interface"
+ :repository (cvs . ":pserver:anon@cvs.inf.ed.ac.uk:/disk/cvs/proofgen")
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL"
+ :authors    (("David Aspinall")
+	      ("Yves Bertot")
+	      ("Healfdene Goguen,")
+	      ("Thomas Kleymann and Dilip Sequeira"))
+ :maintainer ("David Aspinall")
+ :provided   (acl2 bufhist coq coq-abbrev coq-db coq-indent coq-local-vars coq-mmm coq-syntax coq-unicode-tokens hol-light hol98 holes isabelle-system isar isar-find-theorems isar-keywords isar-mmm isar-syntax isar-unicode-tokens lego lego-syntax local-vars-list pg-assoc pg-autotest pg-custom pg-dev pg-fontsets pg-goals pg-movie pg-pamacs pg-pbrpm pg-pgip pg-pgip-test pg-response pg-test pg-user pg-vars pg-xml pgshell phox phox-extraction phox-font phox-fun phox-lang phox-outline phox-pbrpm phox-sym-lock phox-tags proof proof-autoloads proof-auxmodes proof-compat proof-config proof-depends proof-easy-config proof-faces proof-indent proof-maths-menu proof-menu proof-mmm proof-script proof-shell proof-site proof-splash proof-syntax proof-toolbar proof-unicode-tokens proof-useropts proof-utils scomint span twelf twelf-font twelf-old unicode-chars unicode-tokens)
+ :required   ((("emacs" cl comint completion custom easymenu elp etags font-lock newcomment outline quail reporter ring whitespace xml)
+	       ("maths-menu" maths-menu)
+	       ("mmm-mode" mmm-auto)))
+ :keywords   ("languages")
+ :homepage   "http://proofgeneral.inf.ed.ac.uk/"
+ :commentary "\
+This file loads Proof General.  It is required by the
+individual prover modes.  Loading order of PG is:
+
+1. proof-site (variables, autoloads & stubs for mode functions)
+2. stub <PA>-mode function sets proof-assistant-symbol and related variables
+3. prover-dependent variables defined in pg-custom
+4. stub explicitly loads <PA>/<PA>.el and execute real mode function
+5. <PA>.el requires this file, rest of PG loaded here
+6. further modules loaded by autoloads/prover-specific requires.")

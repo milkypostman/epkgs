@@ -1,0 +1,6 @@
+(:summary    "Clickable text defined by regular expression, controlled by font-lock"
+ :repository (git . "https://github.com/rolandwalker/button-lock.git")
+ :provided   (button-lock wiki-nav)
+ :required   ((("emacs" cl font-lock)))
+ :homepage   "https://github.com/rolandwalker/button-lock"
+ :wikipage   "http://www.emacswiki.org/ButtonLockMode")

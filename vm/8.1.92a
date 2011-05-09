@@ -1,5 +1,5 @@
 (:summary    "Entry points for VM"
- :repository (bzr . "http://bazaar.launchpad.net/~vm/vm/trunk/")
+ :repository (bzr . "lp:vm")
  :created    "1998"
  :updated    "2003"
  :license    "GPL-2"
@@ -12,4 +12,4 @@
 	       ("vm" vm-autoloads)
 	       ("vm-thread" vm-thread)
 	       (nil highlight-headers)))
- :homepage   "https://launchpad.net/viewmail")
+ :homepage   "https://launchpad.net/vm")

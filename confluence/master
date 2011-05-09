@@ -1,7 +1,7 @@
 (:summary    "Emacs mode for interacting with confluence wikis"
  :repository (svn . "http://confluence-el.googlecode.com/svn")
- :created    "2008"
- :updated    "2008"
+ :created    "2011"
+ :updated    "2011"
  :license    "GPL-2"
  :authors    (("James Ahlborn"))
  :maintainer ("James Ahlborn")

@@ -1,0 +1,49 @@
+(:summary    "Miscellaneous commands (interactive functions)"
+ :created    "19950802"
+ :updated    "20110507"
+ :license    "GPL-2"
+ :authors    (("Drew Adams"))
+ :maintainer ("Drew Adams")
+ :provided   (misc-cmds)
+ :required   ((("emacs" cl))
+	      (("emacs" hl-line newcomment)
+	       ("frame-fns" frame-fns)
+	       ("misc-fns" misc-fns)))
+ :keywords   ("internal" "unix" "extensions" "maint" "local")
+ :commentary "\
+Miscellaneous commands (interactive functions).
+
+ Commands defined here:
+
+   `beginning-of-line+', `beginning-or-indentation', `chgrp',
+   `chmod', `chown', `clear-regexp-search-history',
+   `clear-regexp-search-ring' `clear-search-history',
+   `clear-search-ring', `clear-search-histories',
+   `count-chars-in-region', `delete-lines', `end-of-line+',
+   `forward-char-same-line', `forward-overlay',
+   `goto-previous-mark', `hide/show-comments', `indirect-buffer',
+   `kill-buffer-and-its-windows', `mark-buffer-after-point',
+   `mark-buffer-before-point', `recenter-top-bottom',
+   `recenter-top-bottom-1', `recenter-top-bottom-2',
+   `region-length', `region-to-buffer', `region-to-file',
+   `revert-buffer-no-confirm', `selection-length',
+   `view-X11-colors'.
+
+ Non-interactive functions defined here:
+
+   `line-number-at-pos', `read-shell-file-command'.
+
+ Suggested key bindings:
+
+  (define-key ctl-x-map [home] 'mark-buffer-before-point)
+  (define-key ctl-x-map [end]  'mark-buffer-after-point)
+  (define-key ctl-x-map \"\\M-f\" 'region-to-file)
+  (global-set-key [C-S-f1]     'region-to-buffer)
+  (global-set-key [C-S-backspace] 'region-to-file)
+  (global-set-key [home]       'backward-line-text)
+  (global-set-key [f5]         'revert-buffer-no-confirm) ; A la MS Windows
+  (substitute-key-definition   'kill-buffer
+                               'kill-buffer-and-its-windows global-map)
+  (substitute-key-definition   'beginning-of-line 'beginning-of-line+ global-map)
+  (substitute-key-definition   'end-of-line 'end-of-line+ global-map)
+  (substitute-key-definition   'recenter 'recenter-top-bottom global-map)")
