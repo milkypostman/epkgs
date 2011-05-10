@@ -1,0 +1,26 @@
+(:summary    "Windows by number"
+ :created    "20100912"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Paul M. Rodriguez" . "paulmrodriguez@gmail.com"))
+ :maintainer ("Paul M. Rodriguez" . "paulmrodriguez@gmail.com")
+ :provided   (numwin)
+ :keywords   ("convenience")
+ :homepage   "http://gopher.ruricolist.com:70/lisp/"
+ :commentary "\
+Since they have to be cycled through, managing more than three
+windows at a time, without resorting to the mouse, is painful; and
+resorting to the mouse is, for any self-respecting Emacs user, an
+admission of defeat. There are a number of libraries extant that
+work around this problem by assigning numbers to windows and
+reserving a key sequence for each. Numwin is less obstrusive. It
+displays numbers only when they make sense for a particular
+operation: for switching windows, say, numbering them only makes
+sense if there are more than two. It prints numbers, sensibly, at
+the far left of the modeline---the only position that is visible no
+matter the window layout---and it always numbers the selected
+window 0. This more general approach works not just for switching
+windows, but also works for deleting, splitting (vertically or
+horizontally), \"zooming\" (with `delete-other-windows'), growing,
+shrinking, and swapping windows, and displaying buffers and files
+in them.")
