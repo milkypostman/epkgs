@@ -1,15 +1,14 @@
 (:summary    "More th-at-point edit functions"
  :repository (bzr . "http://bazaar.launchpad.net/~a-roehler/s-x-emacs-werkstatt/thing-at-point-utils/")
  :created    "2010"
- :updated    "2010"
+ :updated    "20100906"
  :license    "GPL-2"
  :authors    (("Andreas Roehler" . "andreas.roehler@easy-emacs.de")
 	      ("unless")
 	      ("indicated otherwise"))
  :maintainer ("Andreas Roehler" . "andreas.roehler@easy-emacs.de")
- :provided   (ar-comment-lor ar-comment-test-lor beg-end footnote-init footnote-tests misc-utils sh-beg-end string-strip thing-at-point-markup thing-at-point-utils thingatpt-before-after thingatpt-classes-in-delimited-list thingatpt-classes-in-markup-list thingatpt-classes-in-rest-list thingatpt-classes-in-unpaired-delimited-list thingatpt-count-ratio thingatpt-delimited-list-in-delimited-list thingatpt-delimited-list-in-markup-list thingatpt-delimited-list-in-rest-list thingatpt-delimited-list-in-unpaired-delimited-list thingatpt-helper-functions thingatpt-highlight thingatpt-markup-list-in-delimited-list thingatpt-markup-list-in-major-forms-restricted-list thingatpt-python-expressions thingatpt-unpaired-delimited-list-in-delimited-list thingatpt-unpaired-delimited-list-in-markup-list thingatpt-unpaired-delimited-list-in-rest-list thingatpt-utils-base thingatpt-utils-test triplequoted)
- :required   ((("emacs" footnote overlay sh-script time-stamp)
-	       ("python-mode" python-mode)))
+ :provided   (ar-comment-lor ar-comment-test-lor beg-end footnote-init footnote-tests misc-utils sh-beg-end string-strip thing-at-point-markup thing-at-point-utils thing-in-thing thingatpt-before-after thingatpt-count-ratio thingatpt-highlight thingatpt-python-expressions thingatpt-utils-base thingatpt-utils-test)
+ :required   ((("emacs" footnote overlay sh-script time-stamp)))
  :keywords   ("convenience")
  :homepage   "https://launchpad.net/s-x-emacs-werkstatt"
  :wikipage   "http://www.emacswiki.org/ThingAtPointUtils"
