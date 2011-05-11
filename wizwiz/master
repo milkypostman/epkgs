@@ -1,3 +1,0 @@
-(:repository (git . "https://github.com/skeeto/wizwiz.git")
- :provided   (wizwiz)
- :homepage   "https://github.com/skeeto/wizwiz")

@@ -1,2 +1,0 @@
-(:repository (git . "https://github.com/fogus/orb.el.git")
- :homepage   "https://github.com/fogus/orb.el")
