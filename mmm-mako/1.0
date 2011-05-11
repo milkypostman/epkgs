@@ -1,0 +1,20 @@
+(:summary    "MMM submode class for Mako Templates"
+ :repository (hg . "http://bitbucket.org/pjenvey/mmm-mako")
+ :created    "2007"
+ :updated    "2007"
+ :license    "GPL-2"
+ :authors    (("Philip Jenvey" . "pjenvey@groovie.org"))
+ :maintainer ("Philip Jenvey" . "pjenvey@groovie.org")
+ :provided   (mmm-mako)
+ :required   ((("mmm-mode" mmm-auto mmm-compat mmm-vars)))
+ :homepage   "http://bitbucket.org/pjenvey/mmm-mako"
+ :commentary "\
+Parts of this code was borrowed from mmm-myghty mode. (Thanks Ben
+Bangert and Michael Abraham Shulman)
+
+Bugs -
+mmm classes with :back delimeters of \"$\" (such as Mako's ## and %)
+will carry the :back match over to the next line when <return> is
+used to end the line (probably because the original \"$\" marker is
+moved to the next line and mmm-mode doesn't automatically update
+the match).")
