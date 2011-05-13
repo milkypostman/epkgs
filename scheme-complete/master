@@ -1,37 +1,4 @@
-(:summary    "Smart tab completion for Emacs"
- :provided   (scheme-complete)
+(:provided   (scheme-complete)
  :required   ((("emacs" cl scheme)))
  :homepage   "http://www.emacswiki.org/SchemeComplete"
- :wikipage   "http://www.emacswiki.org/SchemeComplete"
- :commentary "\
-This file provides a single function, `scheme-smart-complete',
-which you can use for intelligent, context-sensitive completion
-for any Scheme implementation.  To use it just load this file and
-bind that function to a key in your preferred mode:
-
-(autoload 'scheme-smart-complete \"scheme-complete\" nil t)
-(eval-after-load 'scheme
-  '(progn (define-key scheme-mode-map \"\\e\\t\" 'scheme-smart-complete)))
-
-Alternately, you may want to just bind TAB to the
-`scheme-complete-or-indent' function, which indents at the start
-of a line and otherwise performs the smart completion:
-
-(eval-after-load 'scheme
-  '(progn (define-key scheme-mode-map \"\\t\" 'scheme-complete-or-indent)))
-
-If you use eldoc-mode (included in Emacs), you can also get live
-scheme documentation with:
-
-(autoload 'scheme-get-current-symbol-info \"scheme-complete\" nil t)
-(add-hook 'scheme-mode-hook
-  (lambda ()
-    (make-local-variable 'eldoc-documentation-function)
-    (setq eldoc-documentation-function 'scheme-get-current-symbol-info)
-    (eldoc-mode)))
-
-There's a single custom variable, `scheme-default-implementation',
-which you can use to specify your preferred implementation when we
-can't infer it from the source code.
-
-That's all there is to it.")
+ :wikipage   "http://www.emacswiki.org/SchemeComplete")
