@@ -4,7 +4,7 @@
  :updated    "2010"
  :license    "GPL-3"
  :provided   (magit magit-bisect magit-key-mode magit-simple-keys magit-stgit magit-svn magit-topgit rebase-mode)
- :required   ((("emacs" assoc cl diff-mode easymenu ediff iswitchb log-edit pcomplete server view)))
+ :required   ((("emacs" assoc cl diff-mode easymenu ediff ido iswitchb log-edit pcomplete server view)))
  :keywords   ("tools")
  :homepage   "https://github.com/magit/magit"
  :wikipage   "http://www.emacswiki.org/Magit"

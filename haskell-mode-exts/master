@@ -2,6 +2,6 @@
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"
- :provided   (haskell-align-imports haskell-installed-packages haskell-navigate-imports haskell-packages-exports haskell-sort-imports inf-haskell-send-cmd)
+ :provided   (haskell-align-imports haskell-installed-packages haskell-move-nested haskell-navigate-imports haskell-packages-exports haskell-sort-imports inf-haskell-send-cmd)
  :required   ((("emacs" cl)))
  :homepage   "http://chrisdone.com/tags/emacs.html")
