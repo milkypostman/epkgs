@@ -19,9 +19,13 @@ https://code.google.com/apis/console/
 
 Usage:
 (require 'google-translate)
-(setq google-translate-api-key \"<API-KEY>\"    ;; You must visit the Google APIs console to get your API key
-      google-translate-source-language \"en\"   ;; The source-language is language that the source text is written in
-      google-translate-target-language \"ru\")  ;; The target-language is language that the source text is translated into
+(setq
+ google-translate-api-key \"<API-KEY>\"     ;; You must visit the Google APIs console to get your API key
+ google-translate-source-language \"en\"    ;; The source-language is language that the source text is written in
+ google-translate-target-language \"ru\"    ;; The target-language is language that the source text is translated into
+ google-translate-word-output '(nil)      ;; \\
+ google-translate-region-output '(t . t)  ;;  > first (t - output in buffer, nil - output in message)
+ google-translate-buffer-output '(t . t)) ;; /  second (t - split horizontally, nil - split vertically)
 (global-set-key (kbd \"C-x t\") 'google-translate-word)
 
 Google APIs Console: http://code.google.com/apis/console

@@ -6,6 +6,6 @@
  :authors    (("Juergen Hoetzel" . "juergen@archlinux.org"))
  :maintainer ("Juergen Hoetzel" . "juergen@archlinux.org")
  :provided   (tramp-adb)
- :required   ((("emacs" tramp)))
+ :required   ((("emacs" tramp-sh)))
  :keywords   ("comm" "processes")
  :homepage   "https://github.com/juergenhoetzel/tramp-adb")

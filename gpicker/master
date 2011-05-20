@@ -6,7 +6,7 @@
  :authors    (("Aliaksey Kandratsenka" . "alk@tut.by"))
  :maintainer ("Aliaksey Kandratsenka" . "alk@tut.by")
  :provided   (gpicker)
- :required   ((("emacs" cl ffap imenu)))
+ :required   ((("emacs" ffap imenu)))
  :keywords   ("autocompletion")
  :homepage   "http://www.nongnu.org/gpicker/"
  :wikipage   "http://www.emacswiki.org/Gpicker")

@@ -2,8 +2,8 @@
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"
- :authors    (("Nathaniel Flath" . "nflath@gmail.com"))
- :maintainer ("Nathaniel Flath" . "nflath@gmail.com")
+ :authors    (("Nathaniel Flath" . "fla0103@gmail.com"))
+ :maintainer ("Nathaniel Flath" . "fla0103@gmail.com")
  :provided   (mv-shell)
  :homepage   "https://github.com/nflath/mv-shell"
  :wikipage   "http://www.emacswiki.org/mv-shell"

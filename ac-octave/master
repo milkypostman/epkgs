@@ -8,5 +8,5 @@
  :provided   (ac-octave)
  :required   ((("auto-complete" auto-complete)
 	       ("emacs" cl octave-inf)))
- :keywords   ("octave" "auto-compldte" "complettion")
+ :keywords   ("octave" "auto-complete" "completion")
  :homepage   "https://github.com/coldnew/ac-octave")
