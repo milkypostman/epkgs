@@ -4,6 +4,7 @@
  :updated    "2009"
  :license    "GPL-3"
  :provided   (nose)
+ :required   ((("emacs" cl)))
  :keywords   ("nose" "python" "testing")
  :homepage   "http://bitbucket.org/durin42/nosemacs"
  :commentary "\
