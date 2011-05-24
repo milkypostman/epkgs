@@ -1,0 +1,7 @@
+(:repository (git . "https://github.com/chrisdone/haskell-emacs.git")
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-3"
+ :provided   (hs hs-align-imports hs-cabal hs-cabal-mode hs-completion hs-config hs-errors hs-faces hs-interactive-mode hs-lang-en hs-lang-pirate hs-mode hs-move-nested hs-navigate-imports hs-process hs-project hs-sort-imports hs-tags hs-types)
+ :required   ((("emacs" cl)))
+ :homepage   "https://github.com/chrisdone/haskell-emacs")

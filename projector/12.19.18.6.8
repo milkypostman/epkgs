@@ -1,0 +1,49 @@
+(:summary    "Projects in an Emacs idiom"
+ :created    "20091211"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Paul M. Rodriguez" . "paulmrodriguez@gmail.com"))
+ :maintainer ("Paul M. Rodriguez" . "paulmrodriguez@gmail.com")
+ :provided   (projector)
+ :required   ((("emacs" cl dired-aux dired-x etags files-x find-dired grep ido tramp vc-hooks)))
+ :keywords   ("project")
+ :homepage   "http://gopher.ruricolist.com:70/lisp/"
+ :commentary "\
+Projector.el has the following features, which are the least I
+expect, and the most I desire, from any implementation of the
+concept of a project:
+
+ It is practical for large projects containing thousands of files.
+
+ It creates and updates tags files automatically and in the
+ background, without ever having to wait for
+ `tags-completion-table' to refresh.
+
+ It restricts tags commands to act on only one project at a time.
+
+ When possible, it replaces a killed buffer with another buffer in
+ the same project. (This sound trivial, but once you get used to
+ it, it becomes sine qua non.)
+
+ It supports remote and read-only projects and defines a command to
+ toggle writable projects read-only. (Again, this sounds trivial,
+ but it makes projects as useful for reading code as writing it,
+ especially with `view-read-only'.)
+
+ It defines a command to \"edit\" the whole project in a single Dired
+ buffer. (This simplifies such complex-sounding operations as
+ renaming across the project, searching subsets of project files,
+ running shell commands on subsets of project files, &c.)
+
+ It uses Ido to navigate project files, buffers, and tags.
+
+ It defines commands to cycle through project files in a stable
+ order (handy for macros).
+
+ It defines useful project versions of familiar commands: version
+ control in project (`projector-vc'), grep in project
+ (`projector-grep'), incremental search in project
+ (`projector-isearch'), list buffers in project
+ (`projector-list-buffers'), &c.
+
+Call M-x apropos-projector for a full list of commands.")

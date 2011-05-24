@@ -1,0 +1,11 @@
+(:summary    "Library to access SimpleGeo's API"
+ :repository (git . "https://github.com/ieure/simplegeo-el.git")
+ :created    "2011"
+ :updated    "2011"
+ :authors    (("Ian Eure" . "ian@simplegeo.com"))
+ :maintainer ("Ian Eure" . "ian@simplegeo.com")
+ :keywords   ("comm")
+ :homepage   "https://github.com/ieure/simplegeo-el"
+ :commentary "\
+Requirements:
+  emacs-oauth https://github.com/psanford/emacs-oauth/")

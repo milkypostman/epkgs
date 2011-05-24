@@ -1,0 +1,18 @@
+(:summary    "Add or remove some filladapt patterns"
+ :created    "2007"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Kevin Ryde" . "user42@zip.com.au"))
+ :maintainer ("Kevin Ryde" . "user42@zip.com.au")
+ :provided   (filladapt-pat)
+ :keywords   ("convenience" "filladapt")
+ :homepage   "http://user42.tuxfamily.org/filladapt-pat/index.html"
+ :commentary "\
+This is some functions to add or remove patterns filladapt uses for
+paragraph filling.  They're designed to go in a mode hook and operate
+buffer-local, but can also be used interactively for occasional changes
+to the patterns.
+
+The setups work whether or not filladapt has loaded yet and do nothing if
+you haven't turned on filladapt, or for that matter if you don't have it
+at all.")

@@ -1,9 +1,10 @@
 (:summary    "A major-mode for editing Lua scripts"
- :repository (cvs . ":pserver:anonymous@cvs.luaforge.net:/cvsroot/lua-mode")
+ :repository (git . "https://github.com/immerrr/lua-mode.git")
  :created    "1997"
- :updated    "2010"
+ :updated    "2011"
  :license    "GPL-2"
- :authors    ((nil . "rrt@sc3d.org")
+ :authors    ((nil . "immerrr+lua@gmail.com")
+	      (nil . "rrt@sc3d.org")
 	      (nil . "juergen@hoetzel.info")
 	      (nil . "cvogler@gradient.cis.upenn.edu")
 	      (nil . "mogul-lua@gelatinous.com")
@@ -11,11 +12,11 @@
 	      ("with tons of assistance from")
 	      ("Paul Du Bois" . "pld-lua@gelatinous.com")
 	      ("Aaron Smith" . "aaron-lua@gelatinous.com"))
- :maintainer (nil . "rrt@sc3d.org")
+ :maintainer (nil . "immerrr+lua@gmail.com")
  :provided   (lua-mode)
  :required   ((("emacs" comint)))
  :keywords   ("languages" "processes" "tools")
- :homepage   "http://luaforge.net/projects/lua-mode/"
+ :homepage   "https://github.com/immerrr/lua-mode"
  :wikipage   "http://www.emacswiki.org/LuaMode"
  :commentary "\
 Thanks to Tobias Polzin <polzin@gmx.de> for function indenting
@@ -31,11 +32,14 @@ Adam D. Moss <adam@gimp.org>.
 
 INSTALLATION:
 
-To install, just drop this file into a directory on your load-path (and
-byte-compile it).  To set up Emacs to automatically edit files ending in
-\".lua\" using lua-mode add the following to your init file:
-   (setq auto-mode-alist (cons '(\"\\\\.lua$\" . lua-mode) auto-mode-alist))
-   (autoload 'lua-mode \"lua-mode\" \"Lua editing mode.\" t)
+To install, just copy this file into a directory on your load-path
+(and byte-compile it). To set up Emacs to automatically edit files
+ending in \".lua\" or with a lua hash-bang line using lua-mode add
+the following to your init file:
+
+(autoload 'lua-mode \"lua-mode\" \"Lua editing mode.\" t)
+(add-to-list 'auto-mode-alist '(\"\\\\.lua$\" . lua-mode))
+(add-to-list 'interpreter-mode-alist '(\"lua\" . lua-mode))
 
 Usage
 
@@ -60,7 +64,5 @@ prefix for major-mode commands.
 
 You can customise the keybindings either by setting `lua-prefix-key'
 or by putting the following in your .emacs
-     (setq lua-mode-map (make-sparse-keymap))
-and
      (define-key lua-mode-map <your-key> <function>)
 for all the functions you need.")
