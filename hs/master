@@ -2,6 +2,7 @@
  :created    "2011"
  :updated    "2011"
  :license    "GPL-3"
- :provided   (hs hs-align-imports hs-cabal hs-cabal-mode hs-completion hs-config hs-errors hs-faces hs-interactive-mode hs-lang-en hs-lang-pirate hs-mode hs-move-nested hs-navigate-imports hs-process hs-project hs-sort-imports hs-tags hs-types)
- :required   ((("emacs" cl)))
+ :provided   (hs hs-align-imports hs-cabal hs-cabal-mode hs-completion hs-config hs-errors hs-faces hs-interactive-mode hs-lang-en hs-lang-pirate hs-mode hs-move-nested hs-navigate-imports hs-process hs-project hs-sort-imports hs-string hs-tags hs-types hs-ui)
+ :required   ((("auto-complete" auto-complete)
+	       ("emacs" cl)))
  :homepage   "https://github.com/chrisdone/haskell-emacs")
