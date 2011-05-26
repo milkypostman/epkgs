@@ -3,8 +3,8 @@
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"
- :authors    (("James Youngman" . "james@youngman.org"))
- :maintainer ("James Youngman" . "james@youngman.org")
+ :authors    (("James Youngman" . "youngman@google.com"))
+ :maintainer ("James Youngman" . "youngman@google.com")
  :provided   (vimvars)
  :keywords   ("local-variables" "vi" "vim" "emulations")
  :homepage   "https://github.com/jamesyoungman/vimvars"

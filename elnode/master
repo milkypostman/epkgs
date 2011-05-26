@@ -1,5 +1,4 @@
-(:summary    "A simple emacs async HTTP server"
- :repository (git . "https://github.com/nicferrier/elnode.git")
+(:repository (git . "https://github.com/nicferrier/elnode.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"
@@ -16,11 +15,10 @@ webserver toolkit.
 
 You can define HTTP request handlers and start an HTTP server
 attached to the handler. Many HTTP servers can be started, each
-must have it's own TCP port.
+must have it's own TCP port. Handlers can defer processing with a
+signal (which allows comet style resource management)
 
 See elnode-start for how to start an HTTP server.
-
-See functions titled nicferrier-... for example handlers.
 
 Source code
 
