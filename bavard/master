@@ -1,0 +1,30 @@
+(:summary    "Emacs interface to the Google Translate"
+ :repository (git . "https://github.com/avshramko/bavard.git")
+ :created    "2011"
+ :updated    "2011"
+ :authors    (("Andrey Shramko" . "t0mmydnua@yandex.ru"))
+ :maintainer ("Andrey Shramko" . "t0mmydnua@yandex.ru")
+ :provided   (bavard)
+ :required   ((("auto-complete" popup)
+	       ("emacs" cl url)))
+ :homepage   "https://github.com/avshramko/bavard"
+ :commentary "\
+Please send suggestions and bug reports to <t0mmydnua@yandex.ru>
+You should always be able to find the latest version here:
+
+https://github.com/avshramko/bavard
+
+Note that you need a Google API key to use this; you can
+get one by following the instructions here:
+
+https://code.google.com/apis/console/
+
+Usage:
+(require 'bavard)
+(setq bavard-api-key \"<API-KEY>\") ;; You must visit the Google APIs console to get your API key
+(global-set-key (kbd \"<f1>\") 'bavard-word)
+(global-set-key (kbd \"<f2>\") 'bavard-region)
+(global-set-key (kbd \"<f3>\") 'bavard-string)
+
+Google APIs Console: http://code.google.com/apis/console
+Language reference: http://code.google.com/intl/ru/apis/language/translate/v2/using_rest.html#language-params")
