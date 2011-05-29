@@ -19,12 +19,9 @@ get one by following the instructions here:
 
 https://code.google.com/apis/console/
 
-Usage:
-(require 'bavard)
-(setq bavard-api-key \"<API-KEY>\") ;; You must visit the Google APIs console to get your API key
-(global-set-key (kbd \"<f1>\") 'bavard-word)
-(global-set-key (kbd \"<f2>\") 'bavard-region)
-(global-set-key (kbd \"<f3>\") 'bavard-string)
+Requirements:
 
-Google APIs Console: http://code.google.com/apis/console
-Language reference: http://code.google.com/intl/ru/apis/language/translate/v2/using_rest.html#language-params")
+This section describes the requirements of Bavard. Just follow these steps and the requirements of Bavard are fulfilled.
+
+Emacs-version: Bavard works only with (X)Emacs >=23! If you have an older one, please upgrade.
+Install popup.el: Get it from https://github.com/m2ym/popup-el, read the setup-instructions file README.markdown.")

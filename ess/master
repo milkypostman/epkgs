@@ -7,7 +7,6 @@
  :required   ((("emacs" assoc browse-url cc-vars comint compile custom easymenu executable font-lock hideshow imenu info lisp-mode paren reporter shell speedbar thingatpt tooltip)))
  :keywords   ("statistical" "support")
  :homepage   "http://ess.r-project.org"
- :wikipage   "http://www.emacswiki.org/EssMode"
  :commentary "\
 PURPOSE
 
