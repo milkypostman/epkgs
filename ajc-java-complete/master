@@ -1,4 +1,4 @@
-(:summary    "Auto Java Completion fo GNU Emacs"
+(:summary    "Auto Java Completion for GNU Emacs"
  :repository (git . "https://github.com/jixiuf/ajc-java-complete.git")
  :created    "2011"
  :updated    "2011"

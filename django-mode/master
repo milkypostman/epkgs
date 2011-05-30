@@ -6,7 +6,7 @@
  :authors    (("MyFreeWeb" . "me@myfreeweb.ru"))
  :maintainer ("MyFreeWeb" . "me@myfreeweb.ru")
  :provided   (django-html-mode django-mode)
- :required   ((("emacs" nxml-mode)
+ :required   ((("emacs" nxml-mode python)
 	       ("python-mode" python-mode)))
  :keywords   ("languages")
  :homepage   "https://github.com/myfreeweb/django-mode")
