@@ -1,0 +1,16 @@
+(:summary    "Programming language gauche editing tools"
+ :repository (git . "https://github.com/mhayashi1120/Emacs-gosh-mode.git")
+ :license    "GPL-3"
+ :authors    (("Masahiro Hayashi" . "mhayashi1120@gmail.com"))
+ :maintainer ("Masahiro Hayashi" . "mhayashi1120@gmail.com")
+ :provided   (erefactor gosh-config gosh-const gosh-dev gosh-mode gosh-mode-test)
+ :required   ((("el-expectations" el-expectations)
+	       ("el-mock" el-mock)
+	       ("emacs" cl cmuscheme flymake info-look scheme))
+	      (("auto-complete" auto-complete-config)
+	       ("emacs" eldoc)))
+ :keywords   ("lisp" "gauche" "scheme" "edit")
+ :homepage   "https://github.com/mhayashi1120/Emacs-gosh-mode"
+ :commentary "\
+gosh-mode forked from scheme-complete.el
+Many code is duplicated but specialize to Gauche.")

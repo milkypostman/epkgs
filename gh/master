@@ -1,0 +1,10 @@
+(:summary    "Api definition for gh.el"
+ :repository (git . "https://github.com/sigma/gh.el.git")
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-2"
+ :authors    (("Yann Hodique" . "yann.hodique@gmail.com"))
+ :maintainer ("Yann Hodique" . "yann.hodique@gmail.com")
+ :provided   (gh-api gh-auth gh-common gh-gist)
+ :required   ((("emacs" eieio json)))
+ :homepage   "https://github.com/sigma/gh.el")

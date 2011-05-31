@@ -46,4 +46,4 @@ Use paredit as you normally would with any other mode; for instance:
   (add-hook 'clojure-mode-hook 'turn-on-paredit)
 
 See Swank Clojure (http://github.com/technomancy/swank-clojure) for
-better interaction with subprocesses.")
+better interaction with subprocesses via SLIME.")

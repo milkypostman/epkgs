@@ -1,8 +1,0 @@
-(:summary    "Documentation authoring the WikiWay"
- :repository (git . "https://github.com/ericbmerritt/wikimark.git")
- :created    "2001"
- :updated    "2002"
- :license    "GPL-2"
- :provided   (wikimark)
- :required   ((("emacs" compile easy-mmode info thingatpt)))
- :homepage   "https://github.com/ericbmerritt/wikimark")
