@@ -1,0 +1,15 @@
+(:summary    "Autocompletion routines for R"
+ :created    "20100823"
+ :license    "GPL-3"
+ :authors    (("Matthew L. Fidler"))
+ :maintainer ("Matthew L. Fidler")
+ :provided   (ac-R)
+ :required   ((("ess" ess-help)))
+ :homepage   "ac-R.el"
+ :commentary "\
+Put this file into load-path'ed directory, and byte compile it if
+desired.  And put the following expression into your ~/.emacs.
+
+(require 'ac-R)
+
+Most of this was hacked from the Ess sources for completion.")
