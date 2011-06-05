@@ -1,6 +1,0 @@
-(:summary    "Refactoring utilities"
- :license    "GPL-3"
- :authors    (("Hayashi Masahiro" . "mhayashi1120@gmail.com"))
- :maintainer ("Hayashi Masahiro" . "mhayashi1120@gmail.com")
- :provided   (refactor)
- :keywords   ("lisp" "refactor"))

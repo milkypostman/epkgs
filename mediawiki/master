@@ -1,7 +1,7 @@
 (:summary    "Mediawiki frontend"
  :repository (bzr . "http://bazaar.launchpad.net/~hexmode/mediawiki-el/trunk/")
  :created    "200417"
- :updated    "2010"
+ :updated    "2011"
  :license    "GPL-3"
  :authors    (("Mark A. Hershberger" . "mah@everybody.org"))
  :maintainer ("Mark A. Hershberger" . "mah@everybody.org")
@@ -9,7 +9,7 @@
  :required   ((("emacs" cl mm-url mml ring url-http)))
  :keywords   ("mediawiki" "wikipedia" "network" "wiki")
  :homepage   "https://launchpad.net/mediawiki-el"
- :wikipage   "http://www.emacswiki.org/MediaWiki"
+ :wikipage   "http://www.emacswiki.org/MediaWikiMode"
  :commentary "\
 This version of mediawiki.el represents a merging of
 wikipedia-mode.el (maintained by Uwe Brauer <oub at mat.ucm.es>)

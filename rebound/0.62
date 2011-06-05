@@ -1,0 +1,36 @@
+(:summary    "A minor mode for persisent window-relative values of point"
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-2"
+ :authors    (("Alp Aker" . "alp.tekin.aker@gmail.com"))
+ :maintainer ("Alp Aker" . "alp.tekin.aker@gmail.com")
+ :provided   (rebound)
+ :keywords   ("convenience")
+ :homepage   "http://www.emacswiki.org/Rebound"
+ :wikipage   "http://www.emacswiki.org/Rebound"
+ :commentary "\
+Emacs conveniently allows one to work on different parts of the same
+buffer at the same time, but the rules governing buffer display are, for
+some people's editing habits, less than ideal.  Suppose for example that
+one is editing two parts of buffer <buf> in windows <win1> and <win2>,
+switches briefly to another buffer in <win2>, then returns to editing
+<buf> in <win2>.  This latter window will now display the same part of
+<buf> as <win1>, rather than the portion that one was just recently
+editing in it.  Rebound creates persistent values of point and
+window-start, so that in cases like that just described <win2> will return
+to its previous position in <buf>.
+
+In some cases, such as looking up a function definition via
+`describe-function', it makes sense for Rebound to allow other Lisp
+programs to fix the value of point.  The package is reasonably intelligent
+in identifying when when it should do so.  Further control over
+repositioning is provided by the variables `rebound-no-reposition-names',
+`rebound-no-reposition-regexps', and `rebound-reposition-tests'.  Note
+also that rebound always ignores minibuffer windows.
+
+To install the package, put this file in your load path and put:
+
+ (require 'rebound)
+
+in your .emacs.  To toggle rebound on and off, use the command
+`rebound-mode'.")

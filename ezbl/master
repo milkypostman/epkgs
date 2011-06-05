@@ -2,7 +2,8 @@
  :repository (git . "https://github.com/haxney/ezbl.git")
  :license    "GPL-3"
  :provided   (ezbl)
- :required   ((("emacs" cl url-cookie)))
+ :required   ((("emacs" cl url-cookie))
+	      ((nil xwidget)))
  :homepage   "https://github.com/haxney/ezbl"
  :wikipage   "http://www.emacswiki.org/ezbl"
  :commentary "\

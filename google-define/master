@@ -1,6 +1,5 @@
-(:summary    "Pulls definitions from google and displays them in a buffer"
- :created    "2007"
- :updated    "2010"
+(:created    "2007"
+ :updated    "2011"
  :license    "as-is"
  :provided   (google-define)
  :required   ((("emacs" font-lock)))
