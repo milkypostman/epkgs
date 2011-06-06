@@ -3,8 +3,8 @@
  :created    "2011"
  :updated    "2011"
  :license    "GPL-2"
- :authors    (("Yann Hodique" . "yhodique@vmware.com"))
- :maintainer ("Yann Hodique" . "yhodique@vmware.com")
- :provided   (gh gh-api gh-auth gh-autoloads gh-common gh-gist)
+ :authors    (("Yann Hodique" . "yhodique@gmail.com"))
+ :maintainer ("Yann Hodique" . "yhodique@gmail.com")
+ :provided   (gh gh-api gh-auth gh-common gh-gist)
  :required   ((("emacs" cl eieio json)))
  :homepage   "https://github.com/sigma/gh.el")
