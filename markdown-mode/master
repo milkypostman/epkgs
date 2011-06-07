@@ -1,12 +1,12 @@
 (:summary    "Major mode to edit Markdown files in Emacs"
  :repository (git . "git://code.jblevins.org/markdown-mode.git")
- :created    "2007"
- :updated    "2009"
+ :created    "2011"
+ :updated    "2011"
  :license    "GPL-2"
- :authors    (("Jason Blevins" . "jrblevin@sdf.lonestar.org"))
- :maintainer ("Jason Blevins" . "jrblevin@sdf.lonestar.org")
+ :authors    (("Jason R. Blevins" . "jrblevin@sdf.org"))
+ :maintainer ("Jason R. Blevins" . "jrblevin@sdf.org")
  :provided   (markdown-mode)
- :required   ((("emacs" easymenu font-lock outline)))
+ :required   ((("emacs" easymenu font-lock outline thingatpt)))
  :keywords   ("markdown" "major" "mode")
  :homepage   "http://jblevins.org/projects/markdown-mode/"
  :wikipage   "http://www.emacswiki.org/MarkdownMode"
@@ -86,6 +86,11 @@ provides an interface to all of the possible customizations:
 
   * `markdown-indent-on-enter` - set to a non-nil value to
     automatically indent new lines when the enter key is pressed
+    (default: `t`)
+
+  * `markdown-follow-wiki-link-on-enter` - set to a non-nil value
+    to automatically open a linked document in a new buffer if the
+    cursor is an wiki link
     (default: `t`)
 
   * `markdown-uri-types` - a list of protocols for URIs that
