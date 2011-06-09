@@ -3,7 +3,7 @@
  :updated    "2008"
  :license    "GPL-2"
  :provided   (spartan-wiki)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :homepage   "http://www.emacswiki.org/SpartanWiki"
  :wikipage   "http://www.emacswiki.org/SpartanWiki"
  :commentary "\

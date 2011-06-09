@@ -5,7 +5,8 @@
  :authors    (("Matthew P. Hodges" . "mphodges@member.fsf.org"))
  :maintainer ("Matthew P. Hodges" . "mphodges@member.fsf.org")
  :provided   (eimp)
- :required   ((("emacs" image-mode trace)))
+ :required   ((("image-mode" image-mode)
+	       ("trace" trace)))
  :wikipage   "http://www.emacswiki.org/EmacsImageManipulation"
  :commentary "\
 This package allows interactive image manipulation from within

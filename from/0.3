@@ -5,7 +5,9 @@
  :authors    (("Henrik Enberg" . "henrik@enberg.org"))
  :maintainer ("Henrik Enberg" . "henrik@enberg.org")
  :provided   (from)
- :required   ((("emacs" cl mail-extr parse-time rfc2047)))
+ :required   ((("cl" cl)
+	       ("gnus" parse-time rfc2047)
+	       ("mail-extr" mail-extr)))
  :keywords   ("mail")
  :commentary "\
 This package lets you quickly see subjects and senders of messages in

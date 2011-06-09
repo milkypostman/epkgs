@@ -1,0 +1,69 @@
+(:summary    "Facilitate reply to unsolicited commercial email"
+ :created    "19961210"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("stanislav shalunov" . "shalunov@mccme.ru"))
+ :maintainer ("stanislav shalunov" . "shalunov@mccme.ru")
+ :provided   (uce)
+ :required   ((("sendmail" sendmail)))
+ :keywords   ("mail" "uce" "unsolicited" "commercial" "email")
+ :commentary "\
+The code in this file provides a semi-automatic means of replying
+to unsolicited commercial email (UCE) you might get.  Currently, it
+only works with Rmail and Gnus.  If you would like to make it work
+with other mail readers, see the mail-client dependent section of
+uce-reply-to-uce.  Please let me know about your changes so I can
+incorporate them.  I'd appreciate it.
+
+The command uce-reply-to-uce, if called when the current message
+buffer is a UCE, will setup a reply *mail* buffer as follows.  It
+scans the full headers of the message for: 1) the normal return
+address of the sender (From, Reply-To lines), and puts these
+addresses into the To: header, along with abuse@offenders.host; 2)
+the mailhub that first saw this message, and adds the address of
+its postmaster into the To: header; and 3), finally, it looks at
+the Message-Id and adds the postmaster of that host to the list of
+addresses.
+
+Then, we add an \"Errors-To: nobody@localhost\" header, so that if
+some of these addresses are not actually correct, we will never see
+bounced mail.  Also, mail-self-blind and mail-archive-file-name
+take no effect: the ideology is that we don't want to save junk or
+replies to junk.
+
+Then we insert a template into the buffer (a customizable message
+that explains what has happened), customizable signature, and the
+original message with full headers and envelope for postmasters.
+Then the buffer is left for editing.
+
+The reason that the function uce-reply-to-uce is mail-client
+dependent is that we want the full headers of the original message,
+nothing stripped.  If we use the normal means of inserting the
+original message into the *mail* buffer, headers like Received:
+(not really headers, but envelope lines) will be stripped, while
+they bear valuable information for us and postmasters.  I do wish
+that there would be some portable way to write this function, but I
+am not aware of any.
+
+Usage:
+
+Place uce.el in your load-path (and optionally byte-compile it).
+Add the following line to your ~/.emacs:
+(autoload 'uce-reply-to-uce \"uce\" \"Reply to UCEs\" t nil)
+If you want to use it with Gnus rather than Rmail:
+(setq uce-mail-reader 'gnus)
+
+Options:
+
+uce-message-text is a template that will be inserted into buffer.
+It has a reasonable default.  If you want to write some scarier
+one, please do so and send it to me.  Please keep it polite.
+
+uce-signature behaves just like mail-signature.  If nil, nothing is
+inserted, if t, file ~/.signature is used, if a string, its
+contents are inserted into buffer.
+
+uce-uce-separator is a line that separates your message from the
+UCE that you enclose.
+
+uce-subject-line will be used as the subject of the outgoing message.")

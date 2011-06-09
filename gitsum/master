@@ -4,4 +4,4 @@
  :updated    "2008"
  :license    "GPL-3"
  :provided   (gitsum)
- :required   ((("emacs" cl))))
+ :required   ((("cl" cl))))

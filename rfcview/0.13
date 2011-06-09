@@ -5,7 +5,8 @@
  :authors    (("Neil W. Van Dyke" . "neil@neilvandyke.org"))
  :maintainer ("Neil W. Van Dyke" . "neil@neilvandyke.org")
  :provided   (rfcview)
- :required   ((("emacs" goto-addr view)))
+ :required   ((("goto-addr" goto-addr)
+	       ("view" view)))
  :homepage   "http://www.loveshack.ukfsn.org/emacs/"
  :wikipage   "http://www.emacswiki.org/RfcView"
  :commentary "\

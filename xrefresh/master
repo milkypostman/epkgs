@@ -2,7 +2,7 @@
  :authors    (("Stefan Thomas" . "justmoon@members.fsf.org"))
  :maintainer ("Stefan Thomas" . "justmoon@members.fsf.org")
  :provided   (xrefresh)
- :required   ((("emacs" json)))
+ :required   ((("json" json)))
  :homepage   "https://github.com/justmoon/xrefresh-emacs"
  :commentary "\
 o For more information, please see

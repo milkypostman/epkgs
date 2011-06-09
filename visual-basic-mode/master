@@ -6,7 +6,7 @@
  :maintainer ("Fred White" . "fwhite@alum.mit.edu")
  :adapted-by ("Dave Love" . "d.love@dl.ac.uk")
  :provided   (visual-basic-mode)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("languages" "basic" "evil")
  :homepage   "http://www.emacswiki.org/VisualBasicMode"
  :wikipage   "http://www.emacswiki.org/VisualBasicMode"

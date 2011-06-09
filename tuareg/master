@@ -1,8 +1,13 @@
 (:summary    "Caml mode for (X)Emacs"
  :license    "GPL-2"
  :provided   (ocamlspot sym-lock tuareg)
- :required   ((("emacs" cl comint compile custom easymenu font-lock))
+ :required   ((("cl" cl)
+	       ("comint" comint)
+	       ("compile" compile)
+	       ("custom" custom)
+	       ("easymenu" easymenu)
+	       ("emacs-core" font-lock))
 	      (("caml" caml-help caml-types)
-	       ("emacs" speedbar)))
+	       ("cedet" speedbar)))
  :homepage   "http://tuareg.forge.ocamlcore.org/"
  :wikipage   "http://www.emacswiki.org/TuaregMode")

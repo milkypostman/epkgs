@@ -6,6 +6,6 @@
 	      ("highlight"))
  :maintainer ("Keywords; iswitchb")
  :provided   (iswitchb-highlight)
- :required   ((("emacs" iswitchb)))
+ :required   ((("iswitchb" iswitchb)))
  :homepage   "http://www.emacswiki.org/IswitchbHighlight"
  :wikipage   "http://www.emacswiki.org/IswitchbHighlight")

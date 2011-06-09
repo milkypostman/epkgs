@@ -5,7 +5,7 @@
  :authors    (("Peter S. Galbraith" . "psg@debian.org"))
  :maintainer ("Peter S. Galbraith" . "psg@debian.org")
  :provided   (ff-paths)
- :required   ((("emacs" ffap)))
+ :required   ((("ffap" ffap)))
  :keywords   ("find-file" "ffap" "paths" "search")
  :homepage   "http://people.debian.org/~psg/elisp/"
  :commentary "\

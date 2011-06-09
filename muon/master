@@ -6,5 +6,6 @@
  :authors    (("Samuel Tesla" . "samuel@athena"))
  :maintainer ("Samuel Tesla" . "samuel@athena")
  :provided   (muon)
- :required   ((("emacs" cl comint)))
+ :required   ((("cl" cl)
+	       ("comint" comint)))
  :homepage   "https://github.com/stesla/muon")

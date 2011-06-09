@@ -6,7 +6,7 @@
 	      ("Ngai Kim Hoong"))
  :maintainer ("Drew Adams")
  :provided   (telnet-contrib)
- :required   ((("emacs" telnet)))
+ :required   ((("telnet" telnet)))
  :keywords   ("unix" "comm")
  :commentary "\
 Two alternative versions of telnet functions for MS Windows.

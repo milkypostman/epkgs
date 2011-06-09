@@ -5,7 +5,7 @@
  :authors    (("Joseph" . "jixiuf@gmail.com"))
  :maintainer ("Joseph" . "jixiuf@gmail.com")
  :provided   (term-toggle)
- :required   ((("emacs" term)))
+ :required   ((("term" term)))
  :keywords   ("term" "toggle" "shell")
  :commentary "\
 Most of code is got from 

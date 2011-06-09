@@ -1,0 +1,42 @@
+(:summary    "`auto-fill' by refilling paragraphs on changes"
+ :created    "2000"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Dave Love" . "fx@gnu.org"))
+ :maintainer ("Miles Bader" . "miles@gnu.org")
+ :provided   (refill)
+ :required   ((("cl" cl)))
+ :keywords   ("wp")
+ :wikipage   "http://www.emacswiki.org/RefillMode"
+ :commentary "\
+Provides a mode where paragraphs are refilled after changes in them
+(using `after-change-functions').  This gives something akin to typical
+word processor-style filling.  We restrict refilling due to
+self-insertion to the characters which trigger auto-fill.
+
+It partly satisfies a todo item in enriched.el for some value of
+`without slowing down editing too much'.  It doesn't attempt to do
+anything (using `window-size-change-functions'?) about resizing
+windows -- who cares?
+
+This implementation is probably fragile and missing some special
+cases -- not extensively tested.  Yanking paragraph breaks, for
+instance, won't DTRT by refilling all the relevant paragraphs.
+
+You could do it a bit more efficiently (and robustly?) with just an
+auto-fill function, but that doesn't cope with changes other than
+through self-insertion.  (Using auto-fill and after-change
+functions together didn't seem winning.)  This could probably
+benefit from a less-general and faster `fill-paragraph-function',
+ideally as a primitive.
+
+The work is done in a local post-command hook but only if
+`refill-doit' has been set by the after-change function.  Using
+`post-command-hook' ensures simply that refilling only happens
+once per command.
+
+[Per Abrahamsen's maniac.el does a similar thing, but operates from
+post-command-hook.  I don't understand the statement in it that
+after-change-functions don't work for this purpose; perhaps there was
+some Emacs bug at the time.  ISTR maniac has problems with
+whitespace at the end of paragraphs.]")

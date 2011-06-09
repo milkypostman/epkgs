@@ -5,7 +5,10 @@
  :authors    (("Kevin Ryde" . "user42@zip.com.au"))
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (checkdoc-keywords)
- :required   ((("emacs" checkdoc cl finder lisp-mnt)))
+ :required   ((("checkdoc" checkdoc)
+	       ("cl" cl)
+	       ("finder" finder)
+	       ("lisp-mnt" lisp-mnt)))
  :keywords   ("docs" "lisp" "maint")
  :homepage   "http://user42.tuxfamily.org/checkdoc-keywords/index.html"
  :commentary "\

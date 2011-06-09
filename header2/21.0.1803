@@ -6,7 +6,7 @@
 	      ("Drew Adams"))
  :maintainer ("Drew Adams")
  :provided   (header2)
- :required   ((("emacs" cl))
+ :required   ((("cl" cl))
 	      (("lib-requires" lib-requires)))
  :keywords   ("tools" "docs" "maint" "abbrev" "local")
  :commentary "\

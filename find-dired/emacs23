@@ -1,0 +1,10 @@
+(:summary    "Run a `find' command and dired the output"
+ :created    "1992"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Roland McGrath" . "roland@gnu.org")
+	      ("Sebastian Kremer" . "sk@thp.uni-koeln.de"))
+ :maintainer ("FSF")
+ :provided   (find-dired)
+ :required   ((("dired" dired)))
+ :keywords   ("unix"))

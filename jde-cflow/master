@@ -4,6 +4,6 @@
  :authors    (("Eric Friedman" . "ericdfriedman@hotmail.com"))
  :maintainer ("Phillip Lord")
  :provided   (jde-cflow)
- :required   ((("emacs" tempo)
-	       ("jdee" jde)))
+ :required   ((("jdee" jde)
+	       ("tempo" tempo)))
  :homepage   "http://homepages.cs.ncl.ac.uk/phillip.lord/emacs.html")

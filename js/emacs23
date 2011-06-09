@@ -1,0 +1,21 @@
+(:summary    "Major mode for editing JavaScript"
+ :created    "2008"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Karl Landstrom" . "karl.landstrom@brgeight.se")
+	      ("Daniel Colascione" . "dan.colascione@gmail.com"))
+ :maintainer ("Daniel Colascione" . "dan.colascione@gmail.com")
+ :provided   (js)
+ :required   ((("cc-mode" cc-mode)
+	       ("cl" cl)
+	       ("comint" comint)
+	       ("easymenu" easymenu)
+	       ("emacs-core" font-lock pp)
+	       ("etags" etags)
+	       ("ido" ido)
+	       ("imenu" imenu)
+	       ("newcomment" newcomment)
+	       ("thingatpt" thingatpt))
+	      (("json" json)
+	       ("nxhtml" moz)))
+ :keywords   ("languages" "oop" "javascript"))

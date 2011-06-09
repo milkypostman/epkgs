@@ -5,7 +5,8 @@
  :authors    (("Dimitri Fontaine" . "dim@tapoueh.org"))
  :maintainer ("Dimitri Fontaine" . "dim@tapoueh.org")
  :provided   (rcirc-groups rcirc-notify-mode)
- :required   ((("emacs" cl rcirc)))
+ :required   ((("cl" cl)
+	       ("rcirc" rcirc)))
  :keywords   ("irc" "rcirc" "notify")
  :homepage   "http://blog.tapoueh.org/projects.html#sec17"
  :wikipage   "http://www.emacswiki.org/rcircGroupMode")

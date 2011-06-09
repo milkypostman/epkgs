@@ -7,7 +7,7 @@
  :maintainer ("Issac Trotts" . "issactrotts@google.com")
  :provided   (nav)
  :required   ((("ack" ack)
-	       ("emacs" dired)))
+	       ("dired" dired)))
  :homepage   "http://code.google.com/p/emacs-nav/"
  :wikipage   "http://www.emacswiki.org/Nav"
  :commentary "\

@@ -4,7 +4,7 @@
  :maintainer ("Naoto Morishima" . "naoto@morishima.net")
  :provided   (elscreen)
  :required   ((("apel" static)
-	       ("emacs" dired)
+	       ("dired" dired)
 	       (nil alist)))
  :homepage   "http://www.morishima.net/~naoto/software/elscreen/"
  :wikipage   "http://www.emacswiki.org/EmacsLispScreen")

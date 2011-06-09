@@ -5,7 +5,7 @@
  :authors    (("Phil Hagelberg" . "technomancy@gmail.com"))
  :maintainer ("Phil Hagelberg" . "technomancy@gmail.com")
  :provided   (idle-highlight)
- :required   ((("emacs" thingatpt)))
+ :required   ((("thingatpt" thingatpt)))
  :keywords   ("convenience")
  :homepage   "https://github.com/technomancy/dotfiles/blob/master/.emacs.old/idle-highlight.el"
  :wikipage   "http://www.emacswiki.org/IdleHighlight"

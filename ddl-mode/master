@@ -6,7 +6,8 @@
  :maintainer ("Rick Bielawski" . "rbielaws@i1.net")
  :provided   (ddl-mode)
  :required   ((("column-marker" column-marker)
-	       ("emacs" imenu which-func)))
+	       ("imenu" imenu)
+	       ("which-func" which-func)))
  :keywords   ("languages" "extensions" "tandem" "compaq" "hp")
  :homepage   "http://www.emacswiki.org/DDLMode"
  :wikipage   "http://www.emacswiki.org/DDLMode"

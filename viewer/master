@@ -5,7 +5,7 @@
  :authors    (("rubikitch" . "rubikitch@ruby-lang.org"))
  :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
  :provided   (viewer)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("view" "extensions")
  :commentary "\
 Viewer is view-mode extension. View-mode is finger-friendly than

@@ -5,7 +5,8 @@
  :authors    ((nil . "wenbinye@163.com"))
  :maintainer (nil . "wenbinye@163.com")
  :provided   (tree-mode)
- :required   ((("emacs" cl tree-widget)))
+ :required   ((("cl" cl)
+	       ("tree-widget" tree-widget)))
  :keywords   ("help" "convenience" "widget")
  :homepage   "http://www.emacswiki.org/TreeMode"
  :wikipage   "http://www.emacswiki.org/TreeMode")

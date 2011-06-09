@@ -4,4 +4,4 @@
  :maintainer ("Alexandre Brillant" . "abrillant@wanadoo.fr")
  :provided   (dacode)
  :required   (nil
-	      (("emacs" easymenu))))
+	      (("easymenu" easymenu))))

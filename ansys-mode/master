@@ -6,7 +6,11 @@
  :authors    (("H. Dieter Wilhelm" . "dieter@duenenhof-wilhelm.de"))
  :maintainer ("H. Dieter Wilhelm")
  :provided   (ansys-mode ansys-process)
- :required   ((("emacs" align comint custom easymenu reporter)))
+ :required   ((("align" align)
+	       ("comint" comint)
+	       ("custom" custom)
+	       ("easymenu" easymenu)
+	       ("reporter" reporter)))
  :keywords   ("languages" "convenience")
  :homepage   "http://code.google.com/p/ansys-mode/"
  :wikipage   "http://www.emacswiki.org/AnsysMode"

@@ -3,8 +3,11 @@
  :updated    "2001"
  :license    "GPL-2"
  :provided   (concordance)
- :required   ((("emacs" cl info thingatpt timer)
-	       ("tellib" tellib)))
+ :required   ((("cl" cl)
+	       ("info" info)
+	       ("tellib" tellib)
+	       ("thingatpt" thingatpt)
+	       ("timer" timer)))
  :keywords   ("text" "statistics" "concordance")
  :homepage   "http://members.a1.net/t.link/filestats.html"
  :commentary "\

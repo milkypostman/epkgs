@@ -1,0 +1,67 @@
+(:summary    "Create manual template instantiations from g++ 2.7.2 output"
+ :created    "19961210"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Tom Houlder" . "thoulder@icor.fr"))
+ :maintainer ("Tom Houlder" . "thoulder@icor.fr")
+ :provided   (mantemp)
+ :keywords   ("templates")
+ :commentary "\
+The following is a typical error message from g++ using STL (here
+with split lines):
+
+AFile.o(.text+0x2d5): undefined reference to
+  `vector<double>::begin(void)'
+AFile.o(.text+0x2e7): undefined reference to
+  `vector<double>::insert(double *, unsigned int, double const &)'
+AnotherFile.o(.text+0x226b8): undefined reference to
+  `operator!=(rb_tree<basic_string<char>, pair<basic_string<char>
+  const, AClass *>, select1st<pair<basic_string<char> const, AClass
+  *>, basic_string<char> >, less<basic_string<char> > >::iterator
+  const &, rb_tree<basic_string<char>, pair<basic_string<char>
+  const, AClass *>, select1st<pair<basic_string<char> const, AClass
+  *>, basic_string<char> >, less<basic_string<char> > >::iterator
+  const &)'
+
+The message means that in the object file AFile.o there is one
+uninstantiated template class, vector<double>, and in AnotherFile.o
+there is one uninstantiated template function, operator!=(...).  To
+turn this output into manual template instantiations, copy from the
+first name of an objective file (here this is AFile.o) to right
+after the very last `'' of the output.  Put this in a buffer and
+call `mantemp-make-mantemps-buffer' with the point in the buffer.
+You can also use `mantemp-make-mantemps-region' directly on the
+region if the output is already in Emacs.
+
+The resulting buffer yields (connect the three output lines above
+if you want to try):
+
+template operator!=(rb_tree<basic_string<char>,
+  pair<basic_string<char> const, AClass *>,
+  select1st<pair<basic_string<char> const, AClass *>,
+  basic_string<char> >, less<basic_string<char> > >::iterator const
+  &, rb_tree<basic_string<char>, pair<basic_string<char> const,
+  AClass *>, select1st<pair<basic_string<char> const, AClass *>,
+  basic_string<char> >, less<basic_string<char> > >::iterator const
+  &);
+template class vector<double>;
+
+which can be included in your C++ program.  However, its probably
+better to include the necessary header files in the buffer and
+compile it as a stand alone implementation file.
+
+Sometimes, an uninstantiated template may cause a message like the
+following
+
+main.cc:66: invalid use of undefined type
+  `struct valarray<double,arrayminusopclass<double,c_array<double> > >'
+
+Follow the same procedure as above and the line is changed to
+
+template struct valarray<double,
+  arrayminusopclass<double,c_array<double> > >;
+
+g++ does not output the templates that are needed by the
+uninstantiated templates.  Therefore you will often get new error
+messages after the first instantiations have been included and you
+must repeat the operation.")

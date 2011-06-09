@@ -5,7 +5,7 @@
  :authors    (("rubikitch" . "rubikitch@ruby-lang.org"))
  :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
  :provided   (sticky)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("convenience")
  :commentary "\
 Input capital letters and some symbols with not shift key but sticky key.

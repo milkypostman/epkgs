@@ -7,8 +7,14 @@
 	      ("Emmanuel Briot" . "briot@gnat.com"))
  :maintainer ("Stephen Leake" . "stephen_leake@member.fsf.org")
  :provided   (ada-aunit ada-mode ada-prj ada-stmt ada-support ada-vms ada-xref gpr-mode)
- :required   ((("emacs" comint compile cus-edit easymenu find-file))
-	      (("emacs" align skeleton which-func)))
+ :required   ((("comint" comint)
+	       ("compile" compile)
+	       ("custom" cus-edit)
+	       ("easymenu" easymenu)
+	       ("find-file" find-file))
+	      (("align" align)
+	       ("skeleton" skeleton)
+	       ("which-func" which-func)))
  :keywords   ("languages" "ada")
  :homepage   "http://stephe-leake.org/emacs/ada-mode/emacs-ada-mode.html"
  :wikipage   "http://www.emacswiki.org/AdaMode"

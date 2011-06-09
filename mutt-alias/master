@@ -3,7 +3,7 @@
  :updated    "2008"
  :license    "GPL-2"
  :provided   (mutt-alias)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :homepage   "http://www.davep.org/emacs/"
  :wikipage   "http://www.emacswiki.org/MuttAliases"
  :commentary "\

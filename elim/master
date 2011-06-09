@@ -3,7 +3,11 @@
  :updated    "2011"
  :license    "GPL-3"
  :provided   (dbus-util elim garak)
- :required   ((("emacs" assoc browse-url dbus tree-widget xml))
+ :required   ((("assoc" assoc)
+	       ("browse-url" browse-url)
+	       ("dbus" dbus)
+	       ("tree-widget" tree-widget)
+	       ("xml" xml))
 	      (("lui" lui)))
  :homepage   "https://savannah.nongnu.org/projects/elim"
  :wikipage   "http://www.emacswiki.org/ELIM")

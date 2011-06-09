@@ -6,7 +6,8 @@
  :authors    (("Phil Hagelberg" . "technomancy@gmail.com"))
  :maintainer ("Phil Hagelberg" . "technomancy@gmail.com")
  :provided   (augment)
- :required   ((("emacs" cl json)))
+ :required   ((("cl" cl)
+	       ("json" json)))
  :keywords   ("augment" "testing" "metadata")
  :homepage   "http://augment.rubyforge.org/"
  :commentary "\

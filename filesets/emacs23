@@ -1,0 +1,42 @@
+(:summary    "Handle group of files"
+ :created    "2002"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Thomas Link" . "sanobast-emacs@yahoo.de"))
+ :maintainer ("FSF")
+ :provided   (filesets)
+ :required   ((("cl" cl)
+	       ("easymenu" easymenu)))
+ :keywords   ("filesets" "convenience")
+ :homepage   "http://members.a1.net/t.link/CompEmacsFilesets.html"
+ :wikipage   "http://www.emacswiki.org/FileSets"
+ :commentary "\
+Define filesets, which can be opened or saved with the power of one or
+two mouse clicks only.  A fileset is either a list of files, a file
+pattern, a base directory and a search pattern (for files), or an
+inclusion group (i.e. a base file including other files).
+
+Usage:
+1. Put (require 'filesets) and (filesets-init) in your .emacs file.
+2. Type ;; M-x filesets-edit or choose \"Edit Filesets\" from the menu.
+3. Save your customizations.
+
+Caveat: Fileset names have to be unique.
+
+Filesets.el adds a nifty filesets menu to your menubar.  If you change
+your filesets on the fly, don't forget to select \"Save Filesets\" from
+the menu.
+
+Pressing on the first item in the submenu will open all files at once.
+Define your own function, e.g. browse-url, for opening a fileset's
+files.  Or define external viewers for opening files with other
+programs.  See `filesets-external-viewers'.
+
+BTW, if you close a fileset, files, which have been changed, will
+be silently saved.  Change this behavior by setting
+`filesets-save-buffer-fn'.
+
+Supported modes for inclusion groups (`filesets-ingroup-patterns'):
+- Elisp
+- Emacs-Wiki (simple names only)
+- LaTeX")

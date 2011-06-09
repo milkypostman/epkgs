@@ -5,7 +5,10 @@
  :authors    (("Colin Walters" . "walters@verbum.org"))
  :maintainer ("Colin Walters" . "walters@verbum.org")
  :provided   (ibuffer)
- :required   ((("emacs" cl derived easymenu font-lock lmenu overlay)))
+ :required   ((("cl" cl)
+	       ("easymenu" easymenu)
+	       ("emacs-core" derived font-lock overlay)
+	       ("emacs-obsolete" lmenu)))
  :keywords   ("buffer" "convenience")
  :homepage   "http://www.shootybangbang.com/"
  :wikipage   "http://www.emacswiki.org/IbufferMode"

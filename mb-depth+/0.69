@@ -6,7 +6,7 @@
  :maintainer ("Drew Adams")
  :provided   (mb-depth+)
  :required   (nil
-	      (("emacs" mb-depth)))
+	      (("mb-depth" mb-depth)))
  :keywords   ("convenience")
  :commentary "\
 This library modifies library `mb-depth.el' slightly, to let you

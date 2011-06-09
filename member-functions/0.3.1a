@@ -5,7 +5,7 @@
  :authors    (("Ron Lawrence" . "ral@bit-net.com"))
  :maintainer ("Ron Lawrence" . "ral@bit-net.com")
  :provided   (member-function)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :homepage   "http://www.emacswiki.org/ExpandMemberFunctions"
  :wikipage   "http://www.emacswiki.org/ExpandMemberFunctions"
  :commentary "\

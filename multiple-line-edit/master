@@ -4,7 +4,8 @@
  :updated    "2010"
  :license    "GPL-3"
  :provided   (multiple-line-edit)
- :required   ((("emacs" cl easymenu)))
+ :required   ((("cl" cl)
+	       ("easymenu" easymenu)))
  :keywords   ("abbrev" "convenience" "emulations" "wp")
  :homepage   "https://github.com/k-talo/multiple-line-edit.el"
  :commentary "\

@@ -1,0 +1,52 @@
+(:summary    "Major mode for editing DCL command files"
+ :created    "1997"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Odd Gripenstam" . "gripenstamol@decus.se"))
+ :maintainer ("Odd Gripenstam" . "gripenstamol@decus.se")
+ :provided   (dcl-mode)
+ :required   ((("tempo" tempo)))
+ :keywords   ("dcl" "editing" "major-mode" "languages")
+ :commentary "\
+DCL mode is a package for editing DCL command files.  It helps you
+indent lines, add leading `$' and trailing `-', move around in the
+code and insert lexical functions.
+
+Type `C-h m' when you are editing a .COM file to get more
+information about this mode.
+
+To use templates you will need a version of tempo.el that is at
+least later than the buggy 1.1.1, which was included with my versions of
+Emacs.  I used version 1.2.4.
+The latest tempo.el distribution can be fetched from
+ftp.lysator.liu.se in the directory /pub/emacs.
+I recommend setting (setq tempo-interactive t).  This will make
+tempo prompt you for values to put in the blank spots in the templates.
+
+There is limited support for imenu.  The limitation is that you need
+a version of imenu.el that uses imenu-generic-expression.  I found
+the version I use in Emacs 19.30.  (It was *so* much easier to hook
+into that version than the one in 19.27...)
+
+Any feedback will be welcomed.  If you write functions for
+dcl-calc-command-indent-function or dcl-calc-cont-indent-function,
+please send them to the maintainer.
+
+
+Ideas for improvement:
+* Better font-lock support.
+* Change meaning of `left margin' when dcl-tab-always-indent is nil.
+  Consider the following line (`_' is the cursor):
+    $ label: _ command
+  Pressing tab with the cursor at the underline now inserts a tab.
+  This should be part of the left margin and pressing tab should indent
+  the line.
+* Make M-LFD work properly with comments in all cases.  Now it only
+  works on comment-only lines.  But what is \"properly\"? New rules for
+  indenting comments?
+* Even smarter indentation of continuation lines.
+* A delete-indentation function (M-^) that joins continued lines,
+  including lines with end line comments?
+* Handle DECK/EOD.
+* `indent list' commands: C-M-q, C-u TAB.  What is a list in DCL? One
+  complete command line? A block? A subroutine?")

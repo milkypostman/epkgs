@@ -5,10 +5,11 @@
  :provided   (ac-cake cake cake-inflector)
  :required   ((("anything" anything)
 	       ("auto-complete" auto-complete)
-	       ("emacs" cl easy-mmode)
+	       ("cl" cl)
+	       ("easy-mmode" easy-mmode)
 	       ("historyf" historyf))
 	      (("anything" anything-show-completion)
-	       ("emacs" imenu)
+	       ("imenu" imenu)
 	       ("tail" tail)))
  :homepage   "http://wiki.github.com/k1LoW/emacs-cake/"
  :wikipage   "http://www.emacswiki.org/Cake")

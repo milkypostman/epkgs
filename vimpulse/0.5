@@ -1,7 +1,10 @@
 (:repository (git . "git://gitorious.org/vimpulse/vimpulse.git")
  :provided   (vimpulse vimpulse-compatibility vimpulse-dependencies vimpulse-ex vimpulse-misc-keybindings vimpulse-modal vimpulse-operator vimpulse-paren-matching vimpulse-test vimpulse-text-object-system vimpulse-utils vimpulse-viper-function-redefinitions vimpulse-visual-mode)
- :required   ((("emacs" advice cl paren viper)
+ :required   ((("advice" advice)
+	       ("cl" cl)
+	       ("paren" paren)
 	       ("redo" redo)
-	       ("undo-tree" undo-tree)))
+	       ("undo-tree" undo-tree)
+	       ("viper" viper)))
  :homepage   "http://gitorious.org/vimpulse/vimpulse"
  :wikipage   "http://www.emacswiki.org/Vimpulse")

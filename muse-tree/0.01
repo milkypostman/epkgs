@@ -5,7 +5,7 @@
  :authors    (("Ye Wenbin" . "wenbinye@gmail.com"))
  :maintainer ("Ye Wenbin" . "wenbinye@gmail.com")
  :provided   (muse-tree)
- :required   ((("emacs" cl)
+ :required   ((("cl" cl)
 	       ("tree-mode" tree-mode)))
  :keywords   ("help" "convenience")
  :commentary "\

@@ -1,5 +1,5 @@
 (:updated    "20050118"
  :license    "GPL-2"
  :provided   (compare-windows-interactively)
- :required   ((("emacs" compare-w)))
+ :required   ((("compare-w" compare-w)))
  :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/editing/")

@@ -6,7 +6,7 @@
  :authors    (("John Russell" . "drjimmy42@yahoo.com"))
  :maintainer ("Nascif A. Abousalh-Neto" . "nascif@acm.org")
  :provided   (pmd)
- :required   ((("emacs" compile)))
+ :required   ((("compile" compile)))
  :keywords   ("pmd" "major-mode")
  :homepage   "http://pmd.sourceforge.net/"
  :wikipage   "http://www.emacswiki.org/EmacsPmd"

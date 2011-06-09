@@ -5,8 +5,11 @@
  :authors    (("Lennart Staflin" . "lenst@lysator.liu.se")
 	      ("James Clark" . "jjc@clark.com"))
  :maintainer ("Lennart Staflin" . "lenst@lysator.liu.se")
- :provided   (psgml psgml-api psgml-charent psgml-debug psgml-dtd psgml-edit psgml-info psgml-lucid psgml-other psgml-parse psgml-sysdep sgml-mode)
- :required   ((("emacs" cl easymenu edebug elp)))
+ :provided   (psgml psgml-api psgml-charent psgml-debug psgml-dtd psgml-edit psgml-info psgml-lucid psgml-other psgml-parse psgml-sysdep)
+ :required   ((("cl" cl)
+	       ("easymenu" easymenu)
+	       ("edebug" edebug)
+	       ("elp" elp)))
  :keywords   ("languages")
  :homepage   "http://www.lysator.liu.se/projects/about_psgml.html"
  :wikipage   "http://www.emacswiki.org/PsgmlMode"

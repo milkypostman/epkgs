@@ -6,7 +6,7 @@
  :authors    (("John Wiegley" . "johnw@newartisans.com"))
  :maintainer ("John Wiegley" . "johnw@newartisans.com")
  :provided   (regex-tool)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("regex" "languages" "programming" "development")
  :commentary "\
 This program currently uses frames only.

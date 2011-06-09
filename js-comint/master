@@ -6,7 +6,7 @@
  :authors    (("Paul Huff" . "paul.huff@gmail.com"))
  :maintainer ("Paul Huff" . "paul.huff@gmail.com")
  :provided   (js-comint)
- :required   ((("emacs" comint)))
+ :required   ((("comint" comint)))
  :keywords   ("javascript" "inferior-mode" "convenience")
  :homepage   "http://js-comint-el.sourceforge.net/"
  :commentary "\

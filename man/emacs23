@@ -1,0 +1,74 @@
+(:summary    "Browse UNIX manual pages"
+ :created    "1993"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Barry A. Warsaw" . "bwarsaw@cen.com"))
+ :maintainer ("FSF")
+ :adapted-by ("ESR")
+ :provided   (man)
+ :required   ((("assoc" assoc)
+	       ("button" button)
+	       ("cl" cl)
+	       ("emacs-core" env)))
+ :keywords   ("help")
+ :wikipage   "http://www.emacswiki.org/ManMode"
+ :commentary "\
+This code provides a function, `man', with which you can browse
+UNIX manual pages.  Formatting is done in background so that you
+can continue to use your Emacs while processing is going on.
+
+The mode also supports hypertext-like following of manual page SEE
+ALSO references, and other features.  See below or do `?' in a
+manual page buffer for details.
+
+========== Credits and History ==========
+In mid 1991, several people posted some interesting improvements to
+man.el from the standard Emacs 18.57 distribution.  I liked many of
+these, but wanted everything in one single package, so I decided
+to incorporate them into a single manual browsing mode.  While
+much of the code here has been rewritten, and some features added,
+these folks deserve lots of credit for providing the initial
+excellent packages on which this one is based.
+
+Nick Duffek <duffek@chaos.cs.brandeis.edu>, posted a very nice
+improvement which retrieved and cleaned the manpages in a
+background process, and which correctly deciphered such options as
+man -k.
+
+Eric Rose <erose@jessica.stanford.edu>, submitted manual.el which
+provided a very nice manual browsing mode.
+
+This package was available as `superman.el' from the LCD package
+for some time before it was accepted into Emacs 19.  The entry
+point and some other names have been changed to make it a drop-in
+replacement for the old man.el package.
+
+Francesco Potorti` <pot@cnuce.cnr.it> cleaned it up thoroughly,
+making it faster, more robust and more tolerant of different
+systems' man idiosyncrasies.
+
+========== Features ==========
++ Runs \"man\" in the background and pipes the results through a
+  series of sed and awk scripts so that all retrieving and cleaning
+  is done in the background.  The cleaning commands are configurable.
++ Syntax is the same as Un*x man
++ Functionality is the same as Un*x man, including \"man -k\" and
+  \"man <section>\", etc.
++ Provides a manual browsing mode with keybindings for traversing
+  the sections of a manpage, following references in the SEE ALSO
+  section, and more.
++ Multiple manpages created with the same man command are put into
+  a narrowed buffer circular list.
+
+============= TODO ===========
+- Add a command for printing.
+- The awk script deletes multiple blank lines.  This behavior does
+  not allow to understand if there was indeed a blank line at the
+  end or beginning of a page (after the header, or before the
+  footer).  A different algorithm should be used.  It is easy to
+  compute how many blank lines there are before and after the page
+  headers, and after the page footer.  But it is possible to compute
+  the number of blank lines before the page footer by heuristics
+  only.  Is it worth doing?
+- Allow a user option to mean that all the manpages should go in
+  the same buffer, where they can be browsed with M-n and M-p.")

@@ -6,9 +6,9 @@
  :authors    (("Jonas Bernoulli" . "jonas@bernoul.li"))
  :maintainer ("Jonas Bernoulli" . "jonas@bernoul.li")
  :provided   (xpkg)
- :required   ((("elm" elm)
+ :required   ((("cl" cl)
+	       ("elm" elm)
 	       ("elx" elx)
-	       ("emacs" cl)
 	       ("magit" magit)))
  :keywords   ("git" "packages")
  :homepage   "https://github.com/tarsius/xpkg"

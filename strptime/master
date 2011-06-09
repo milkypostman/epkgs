@@ -2,6 +2,6 @@
  :created    "2006"
  :updated    "2006"
  :provided   (strptime)
- :required   ((("emacs" regexp-opt)))
+ :required   ((("regexp-opt" regexp-opt)))
  :homepage   "http://www.emacswiki.org/StrPTime"
  :wikipage   "http://www.emacswiki.org/StrPTime")

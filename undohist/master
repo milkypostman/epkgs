@@ -6,7 +6,7 @@
  :authors    (("MATSUYAMA Tomohiro" . "tomo@cx4a.org"))
  :maintainer ("MATSUYAMA Tomohiro" . "tomo@cx4a.org")
  :provided   (undohist)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("convenience")
  :homepage   "https://github.com/m2ym/undohist-el"
  :commentary "\

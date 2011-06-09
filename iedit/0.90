@@ -5,7 +5,8 @@
  :authors    (("Victor Ren" . "victorhge@gmail.com"))
  :maintainer ("Victor Ren" . "victorhge@gmail.com")
  :provided   (iedit)
- :required   ((("emacs" cl help-macro)))
+ :required   ((("cl" cl)
+	       ("help-macro" help-macro)))
  :keywords   ("occurrence" "region" "replace" "simultaneous")
  :homepage   "http://www.emacswiki.org/Iedit"
  :wikipage   "http://www.emacswiki.org/Iedit"

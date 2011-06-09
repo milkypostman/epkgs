@@ -5,4 +5,4 @@
  :authors    (("Suraj Acharya" . "sacharya@cs.indiana.edu"))
  :maintainer ("Suraj Acharya" . "sacharya@cs.indiana.edu")
  :provided   (xquery-mode)
- :required   ((("emacs" nxml-mode))))
+ :required   ((("nxml-mode" nxml-mode))))

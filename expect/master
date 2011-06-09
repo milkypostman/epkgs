@@ -5,6 +5,7 @@
  :authors    (("Lars Magne Ingebrigtsen" . "lmi@gnus.org"))
  :maintainer ("Lars Magne Ingebrigtsen" . "lmi@gnus.org")
  :provided   (expect)
- :required   ((("emacs" cl timer)))
+ :required   ((("cl" cl)
+	       ("timer" timer)))
  :keywords   ("extensions" "processes")
  :homepage   "http://quimby.gnus.org/elisp/")

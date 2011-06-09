@@ -3,5 +3,6 @@
  :updated    "2009"
  :license    "GPL-3"
  :provided   (processing-mode)
- :required   ((("emacs" cl compile)
+ :required   ((("cl" cl)
+	       ("compile" compile)
 	       ("yasnippet" yasnippet))))

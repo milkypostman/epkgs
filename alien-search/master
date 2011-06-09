@@ -4,7 +4,10 @@
  :updated    "2010"
  :license    "GPL-3"
  :provided   (alien-search)
- :required   ((("emacs" align cl menu-bar re-builder)))
+ :required   ((("align" align)
+	       ("cl" cl)
+	       ("emacs-core" menu-bar)
+	       (nil re-builder)))
  :keywords   ("convenience" "emulations" "matching" "tools" "unix" "wp")
  :homepage   "https://github.com/k-talo/alien-search.el"
  :commentary "\

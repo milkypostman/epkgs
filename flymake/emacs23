@@ -1,0 +1,16 @@
+(:summary    "A universal on-the-fly syntax checker"
+ :created    "2003"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Pavel Kobyakov" . "pk_at_work@yahoo.com"))
+ :maintainer ("Pavel Kobyakov" . "pk_at_work@yahoo.com")
+ :provided   (flymake)
+ :required   ((("cl" cl)
+	       ("compile" compile)
+	       ("emacs-core" overlay)))
+ :keywords   ("c" "languages" "tools")
+ :wikipage   "http://www.emacswiki.org/FlyMake"
+ :commentary "\
+Flymake is a minor Emacs mode performing on-the-fly syntax
+checks using the external syntax check tool (for C/C++ this
+is usually the compiler)")

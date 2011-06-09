@@ -5,8 +5,9 @@
  :authors    ((nil . "wenbinye@163.com"))
  :maintainer (nil . "wenbinye@163.com")
  :provided   (glade-mode)
- :required   ((("emacs" cl xml)
-	       ("tree-mode" tree-mode)))
+ :required   ((("cl" cl)
+	       ("tree-mode" tree-mode)
+	       ("xml" xml)))
  :commentary "\
 1. Why I write it?
    Sometimes, I use glade draw a interface, I forget what signal I

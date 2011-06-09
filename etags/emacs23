@@ -1,0 +1,12 @@
+(:summary    "Etags facility for Emacs"
+ :created    "1985"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Roland McGrath" . "roland@gnu.org"))
+ :maintainer ("FSF")
+ :provided   (etags)
+ :required   ((("apropos" apropos)
+	       ("button" button)
+	       ("cl" cl)
+	       ("ring" ring)))
+ :keywords   ("tools"))

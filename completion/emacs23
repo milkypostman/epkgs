@@ -1,0 +1,14 @@
+(:summary    "Dynamic word-completion code"
+ :created    "1990"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Jim Salem" . "alem@bbnplanet.com")
+	      ("(ideas suggested by Brewster Kahle)"))
+ :maintainer ("FSF")
+ :provided   (completion)
+ :keywords   ("abbrev" "convenience")
+ :wikipage   "http://www.emacswiki.org/Completion"
+ :commentary "\
+What to put in .emacs
+-----------------------
+(dynamic-completion-mode)")

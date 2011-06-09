@@ -6,7 +6,12 @@
  :authors    (("Alberto Griggio" . "agriggio@users.sourceforge.net"))
  :maintainer ("Alberto Griggio" . "agriggio@users.sourceforge.net")
  :provided   (ahg)
- :required   ((("emacs" cl diff-mode easymenu ewoc grep log-edit)))
+ :required   ((("cl" cl)
+	       ("diff-mode" diff-mode)
+	       ("easymenu" easymenu)
+	       ("ewoc" ewoc)
+	       ("grep" grep)
+	       ("log-edit" log-edit)))
  :homepage   "https://disi.unitn.it/~griggio/ahg.html"
  :commentary "\
 A simple Emacs interface for the Mercurial (Hg) Distributed SCM.

@@ -5,7 +5,7 @@
  :authors    (("Taiki SUGAWARA" . "buzz.taiki@gmail.com"))
  :maintainer ("Taiki SUGAWARA" . "buzz.taiki@gmail.com")
  :provided   (lcomp)
- :required   ((("emacs" easy-mmode)))
+ :required   ((("easy-mmode" easy-mmode)))
  :keywords   ("tools" "convenience")
  :commentary "\
 This package provides following features:

@@ -5,7 +5,7 @@
  :authors    (("Taiki SUGAWARA" . "buzz.taiki@gmail.com"))
  :maintainer ("Taiki SUGAWARA" . "buzz.taiki@gmail.com")
  :provided   (trans-regions)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("convenience")
  :commentary "\
 This package provides transpose regoins command.

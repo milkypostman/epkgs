@@ -5,7 +5,9 @@
  :authors    (("Tomoji Kagatani" . "kagatani@rbc.ncl.omron.co.jp"))
  :maintainer ("Brian D. Carlstrom" . "bdc@ai.mit.edu")
  :provided   (esmtpmail)
- :required   ((("emacs" mail-utils sendmail time-stamp)
+ :required   ((("mail-utils" mail-utils)
+	       ("sendmail" sendmail)
+	       ("time-stamp" time-stamp)
 	       ("vm" vm-misc vm-pop)))
  :keywords   ("mail")
  :homepage   "http://www.robf.de/Hacking/elisp/"

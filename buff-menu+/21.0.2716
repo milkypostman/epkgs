@@ -4,7 +4,7 @@
  :license    "GPL-2"
  :authors    (("Drew Adams"))
  :provided   (buff-menu+)
- :required   ((("emacs" cl))
+ :required   ((("cl" cl))
 	      (("fit-frame" fit-frame)
 	       ("misc-cmds" misc-cmds)
 	       ("misc-fns" misc-fns)))

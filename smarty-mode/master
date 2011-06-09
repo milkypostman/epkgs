@@ -4,7 +4,8 @@
  :license    "GPL-2"
  :maintainer ("Benj Carson")
  :provided   (smarty-mode)
- :required   ((("emacs" font-lock regexp-opt)))
+ :required   ((("emacs-core" font-lock)
+	       ("regexp-opt" regexp-opt)))
  :keywords   ("smarty" "php" "languages" "templates")
  :wikipage   "http://www.emacswiki.org/SmartyMode"
  :commentary "\

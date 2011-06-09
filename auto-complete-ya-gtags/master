@@ -7,6 +7,6 @@
  :maintainer ("whitypig" . "whitypig@gmail.com")
  :provided   (auto-complete-ya-gtags)
  :required   ((("auto-complete" auto-complete)
-	       ("emacs" cl)))
+	       ("cl" cl)))
  :keywords   ("auto-complete")
  :homepage   "https://github.com/whitypig/auto-complete-ya-gtags")

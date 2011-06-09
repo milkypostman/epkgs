@@ -5,7 +5,8 @@
  :authors    (("Alan Shutko" . "ats@hubert.wustl.edu"))
  :maintainer ("Alan Shutko" . "ats@hubert.wustl.edu")
  :provided   (neophyte)
- :required   ((("emacs" advice helper)))
+ :required   ((("advice" advice)
+	       ("emacs-core" helper)))
  :keywords   ("help" "learn")
  :commentary "\
 I created this mode to address a concern that emacs was \"*very

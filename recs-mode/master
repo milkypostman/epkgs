@@ -6,7 +6,7 @@
  :authors    (("tlh" . "thunkout@gmail.com"))
  :maintainer ("tlh" . "thunkout@gmail.com")
  :provided   (recs-mode)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("command" "suggestion" "regexp")
  :homepage   "https://github.com/tlh/recs-mode.el"
  :wikipage   "http://www.emacswiki.org/Recs"

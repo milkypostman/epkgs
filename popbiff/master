@@ -5,5 +5,6 @@
  :authors    (("Dominique de Waleffe" . "ddw@acm.org"))
  :maintainer ("Dominique de Waleffe" . "ddw@acm.org")
  :provided   (popbiff)
- :required   ((("emacs" ange-ftp cl)))
+ :required   ((("ange-ftp" ange-ftp)
+	       ("cl" cl)))
  :keywords   ("mail" "tools"))

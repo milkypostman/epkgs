@@ -5,7 +5,7 @@
  :authors    (("Aurélien Tisné" . "aurelien.tisne@free.fr"))
  :maintainer ("Aurélien Tisné" . "aurelien.tisne@free.fr")
  :provided   (show-functions)
- :required   ((("emacs" wid-edit)))
+ :required   ((("widget" wid-edit)))
  :keywords   ("convenience")
  :homepage   "http://aurelien.tisne.free.fr/emacs-pages/emacs.html"
  :commentary "\

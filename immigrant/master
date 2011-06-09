@@ -6,7 +6,7 @@
  :authors    (("Giants"))
  :maintainer ("Jonas Bernoulli" . "jonas@bernoul.li")
  :provided   (immigrant)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("convenience" "lisp")
  :homepage   "http://github.com/tarsius/immigrant"
  :commentary "\

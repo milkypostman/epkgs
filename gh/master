@@ -6,5 +6,7 @@
  :authors    (("Yann Hodique" . "yhodique@gmail.com"))
  :maintainer ("Yann Hodique" . "yhodique@gmail.com")
  :provided   (gh gh-api gh-auth gh-common gh-gist)
- :required   ((("emacs" cl eieio json)))
+ :required   ((("cedet" eieio)
+	       ("cl" cl)
+	       ("json" json)))
  :homepage   "https://github.com/sigma/gh.el")

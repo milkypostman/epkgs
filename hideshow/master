@@ -1,7 +1,9 @@
 (:created    "2005"
  :updated    "2005"
  :provided   (hideshow)
- :required   ((("emacs" cl easymenu overlay)))
+ :required   ((("cl" cl)
+	       ("easymenu" easymenu)
+	       ("emacs-core" overlay)))
  :homepage   "http://www.gnuvola.org/software/j/hideshow/"
  :wikipage   "http://www.emacswiki.org/HideShow"
  :commentary "\

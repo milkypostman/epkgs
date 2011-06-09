@@ -3,7 +3,9 @@
  :authors    (("Hans Halvorson (hhalvors -at- princeton -dot- edu)"))
  :maintainer ("Hans Halvorson (hhalvors -at- princeton -dot- edu)")
  :provided   (bibsnarf)
- :required   ((("emacs" bibtex cl mm-url)))
+ :required   ((("bibtex" bibtex)
+	       ("cl" cl)
+	       ("gnus" mm-url)))
  :commentary "\
 This program searches simultaneously through several bibliography
 databases, and produces a summary of the results.  You can then

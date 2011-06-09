@@ -3,7 +3,8 @@
  :updated    "2007"
  :license    "GPL-2"
  :provided   (rcirc-late-fix)
- :required   ((("emacs" cl rcirc)))
+ :required   ((("cl" cl)
+	       ("rcirc" rcirc)))
  :homepage   "http://www.emacswiki.org/rcircLateFix"
  :wikipage   "http://www.emacswiki.org/rcircLateFix"
  :commentary "\

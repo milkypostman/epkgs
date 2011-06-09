@@ -5,7 +5,10 @@
  :authors    (("Colin Marquardt" . "colin@marquardt-home.de"))
  :maintainer ("Colin Marquardt" . "colin@marquardt-home.de")
  :provided   (auto-lang)
- :required   ((("emacs" flyspell ispell overlay trace)))
+ :required   ((("emacs-core" overlay)
+	       ("flyspell" flyspell)
+	       ("ispell" ispell)
+	       ("trace" trace)))
  :keywords   ("convenience" "ispell" "flyspell")
  :wikipage   "http://www.emacswiki.org/AutoLangMode"
  :commentary "\

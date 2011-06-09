@@ -3,7 +3,7 @@
  :authors    (("Jason Meade" . "jemeade@gmail.com"))
  :maintainer ("Jason Meade" . "jemeade@gmail.com")
  :provided   (slurp)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :commentary "\
 slurp.el is a handly tool used to search a file hierarchy for files with
 names that match a regular expression. Slurp will load those files into

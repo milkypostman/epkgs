@@ -5,7 +5,9 @@
  :authors    (("mulander" . "netprobe@gmail.com"))
  :maintainer ("mulander" . "netprobe@gmail.com")
  :provided   (blip)
- :required   ((("emacs" cl json url url-http)))
+ :required   ((("cl" cl)
+	       ("json" json)
+	       ("url" url url-http)))
  :keywords   ("comm")
  :homepage   "http://www.emacswiki.org/Blip"
  :wikipage   "http://www.emacswiki.org/Blip"

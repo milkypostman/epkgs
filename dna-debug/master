@@ -1,4 +1,4 @@
 (:repository (git . "https://github.com/jave/dna-debug.git")
  :provided   (dna-debug)
- :required   ((("emacs" json)))
+ :required   ((("json" json)))
  :homepage   "https://github.com/jave/dna-debug")

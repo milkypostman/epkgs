@@ -4,7 +4,11 @@
  :authors    (("Eduardo Ochs" . "eduardoochs@gmail.com"))
  :maintainer ("Eduardo Ochs" . "eduardoochs@gmail.com")
  :provided   (eev eev-all eev-bounded eev-browse-url eev-compose eev-glyphs eev-insert eev-langs eev-math-glyphs eev-mini-steps eev-sshot eev-steps htmlize-eev)
- :required   ((("emacs" add-log dired jit-lock outline ps-mode)
+ :required   ((("add-log" add-log)
+	       ("dired" dired)
+	       ("emacs-core" jit-lock)
+	       ("outline" outline)
+	       ("ps-mode" ps-mode)
 	       (nil htmlize)))
  :keywords   ("e-scripts" "help" "hyperlinks" "hypertext" "processes" "shell" "tex")
  :homepage   "http://angg.twu.net/emacs.html"

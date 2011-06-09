@@ -7,8 +7,10 @@
  :maintainer ("John Sullivan" . "john@wjsullivan.net")
  :provided   (delicioapi delicious delicious-html muse-delicious planner-delicious)
  :required   ((("37emacs" rest-api)
-	       ("emacs" thingatpt url xml)
-	       ("planner" planner)))
+	       ("planner" planner)
+	       ("thingatpt" thingatpt)
+	       ("url" url)
+	       ("xml" xml)))
  :keywords   ("comm" "hypermedia")
  :homepage   "http://wjsullivan.net/delicious-el.html"
  :wikipage   "http://www.emacswiki.org/DeliciousEl")

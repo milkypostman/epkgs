@@ -6,5 +6,5 @@
  :authors    (("Ola Bini" . "ola.bini@gmail.com"))
  :maintainer ("Ola Bini" . "ola.bini@gmail.com")
  :provided   (antlr-runtime)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :homepage   "https://github.com/olabini/antlr-elisp")

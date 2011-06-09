@@ -5,7 +5,9 @@
  :authors    (("Kahlil (Kal) HODGSON" . "dorge@tpg.com.au"))
  :maintainer ("Kahlil (Kal) HODGSON" . "dorge@tpg.com.au")
  :provided   (mon-doc-help-tidy tidy)
- :required   ((("emacs" cl compile easymenu)))
+ :required   ((("cl" cl)
+	       ("compile" compile)
+	       ("easymenu" easymenu)))
  :keywords   ("languages")
  :commentary "\
 Provides a simple interface to the HTML Tidy program -- a free

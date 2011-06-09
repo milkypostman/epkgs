@@ -1,0 +1,20 @@
+(:summary    "Footnote support for message mode"
+ :created    "1997"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Steven L Baur" . "steve@xemacs.org"))
+ :maintainer ("Steven L Baur" . "steve@xemacs.org")
+ :provided   (footnote)
+ :required   ((("cl" cl)))
+ :keywords   ("mail" "news")
+ :wikipage   "http://www.emacswiki.org/FootnoteMode"
+ :commentary "\
+This file provides footnote[1] support for message-mode in emacsen.
+footnote-mode is implemented as a minor mode.
+
+[1] Footnotes look something like this.  Along with some decorative
+stuff.
+
+TODO:
+Reasonable Undo support.
+more language styles.")

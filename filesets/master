@@ -3,7 +3,8 @@
  :updated    "2002"
  :license    "GPL-2"
  :provided   (filesets)
- :required   ((("emacs" cl easymenu)))
+ :required   ((("cl" cl)
+	       ("easymenu" easymenu)))
  :keywords   ("filesets" "convenience")
  :homepage   "http://members.a1.net/t.link/CompEmacsFilesets.html"
  :wikipage   "http://www.emacswiki.org/FileSets"

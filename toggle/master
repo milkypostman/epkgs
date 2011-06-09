@@ -5,7 +5,7 @@
  :authors    (("Ryan Davis" . "ryand-ruby@zenspider.com"))
  :maintainer ("Ryan Davis" . "ryand-ruby@zenspider.com")
  :provided   (toggle)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("files" "extensions" "convenience")
  :commentary "\
 This package provides the ability to quickly open a corresponding

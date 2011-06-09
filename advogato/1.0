@@ -5,7 +5,7 @@
  :authors    (("Ramakrishnan M" . "rkrishnan@debian.org"))
  :maintainer ("Ramakrishnan M" . "rkrishnan@debian.org")
  :provided   (advogato)
- :required   ((("emacs" url)
+ :required   ((("url" url)
 	       ("xml-rpc" xml-rpc)))
  :commentary "\
 advogato.el implements the XML-RPC interface to advogato.org

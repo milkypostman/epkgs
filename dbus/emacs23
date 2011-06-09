@@ -1,0 +1,16 @@
+(:summary    "Elisp bindings for D-Bus"
+ :created    "2007"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Michael Albinus" . "michael.albinus@gmx.de"))
+ :maintainer ("Michael Albinus" . "michael.albinus@gmx.de")
+ :provided   (dbus)
+ :required   ((("cl" cl)
+	       ("xml" xml)))
+ :keywords   ("comm" "hardware")
+ :commentary "\
+This package provides language bindings for the D-Bus API.  D-Bus
+is a message bus system, a simple way for applications to talk to
+one another.  See <http://dbus.freedesktop.org/> for details.
+
+Low-level language bindings are implemented in src/dbusbind.c.")

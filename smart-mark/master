@@ -6,7 +6,8 @@
  :authors    (("Brian Jiang" . "brianjcj@gmail.com"))
  :maintainer ("Brian Jiang" . "brianjcj@gmail.com")
  :provided   (smart-mark)
- :required   ((("emacs" sgml-mode thingatpt)))
+ :required   ((("sgml-mode" sgml-mode)
+	       ("thingatpt" thingatpt)))
  :keywords   ("convenience")
  :homepage   "https://github.com/brianjcj/smart-mark"
  :commentary "\

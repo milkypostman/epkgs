@@ -5,7 +5,7 @@
  :authors    (("Olaf Sylvester" . "olaf@geekware.de"))
  :maintainer ("Olaf Sylvester" . "olaf@geekware.de")
  :provided   (highlight-regexp)
- :required   ((("emacs" advice)))
+ :required   ((("advice" advice)))
  :keywords   ("convenience")
  :homepage   "http://www.geekware.de/software/emacs/"
  :commentary "\

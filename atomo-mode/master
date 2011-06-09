@@ -6,6 +6,7 @@
  :authors    (("Michael Kohl" . "citizen428@gmail.com"))
  :maintainer ("Michael Kohl" . "citizen428@gmail.com")
  :provided   (atomo-mode)
- :required   ((("emacs" font-lock newcomment)))
+ :required   ((("emacs-core" font-lock)
+	       ("newcomment" newcomment)))
  :keywords   ("atomo" "major" "mode")
  :homepage   "https://github.com/citizen428/atomo-mode")

@@ -3,7 +3,9 @@
  :updated    "2004"
  :license    "GPL-2"
  :provided   (c-eldoc)
- :required   ((("emacs" cc-defs cl eldoc)))
+ :required   ((("cc-mode" cc-defs)
+	       ("cl" cl)
+	       ("eldoc" eldoc)))
  :homepage   "http://www.emacswiki.org/CEldocMode"
  :wikipage   "http://www.emacswiki.org/CEldocMode"
  :commentary "\

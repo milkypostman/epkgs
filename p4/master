@@ -2,7 +2,11 @@
  :repository (cvs . ":pserver:anonymous@p4el.cvs.sourceforge.net:/cvsroot/p4el")
  :license    "GPL-2"
  :provided   (p4)
- :required   ((("emacs" browse-url dired easymenu ediff timer)))
+ :required   ((("browse-url" browse-url)
+	       ("dired" dired)
+	       ("easymenu" easymenu)
+	       ("ediff" ediff)
+	       ("timer" timer)))
  :homepage   "http://p4el.sourceforge.net/"
  :commentary "\
 Applied the GNU G.P.L. to this file - rv 3/27/1997

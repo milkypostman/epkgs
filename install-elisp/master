@@ -5,7 +5,7 @@
  :authors    (("rubikitch" . "rubikitch@ruby-lang.org"))
  :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
  :provided   (install-elisp)
- :required   ((("emacs" find-func)))
+ :required   ((("find-func" find-func)))
  :keywords   ("lisp" "convenience" "maint")
  :homepage   "http://www.emacswiki.org/InstallElisp"
  :wikipage   "http://www.emacswiki.org/InstallElisp"

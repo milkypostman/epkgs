@@ -1,0 +1,16 @@
+(:summary    "Support for visiting image files"
+ :created    "2000"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Miles Bader" . "miles@gnu.org"))
+ :maintainer ("Miles Bader" . "miles@gnu.org")
+ :provided   (image-file)
+ :required   ((("emacs-core" image)))
+ :keywords   ("multimedia")
+ :commentary "\
+Defines a file-name-handler hook that transforms visited (or
+inserted) image files so that they are displayed by Emacs as
+images.  This is done by putting a `display' text-property on the
+image data, with the image-data still present underneath; if the
+resulting buffer file is saved to another name it will correctly save
+the image data to the new file.")

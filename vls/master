@@ -1,4 +1,5 @@
 (:provided   (allegro-vls-elisp cl-vls-elisp clisp-vls-elisp scheme-vls-elisp vls)
- :required   ((("emacs" comint lisp-mode)))
+ :required   ((("comint" comint)
+	       ("lisp-mode" lisp-mode)))
  :homepage   "http://www.interhack.net/projects/vls/"
  :wikipage   "http://www.emacswiki.org/VanillaLispShell")

@@ -6,7 +6,7 @@
  :authors    (("Johan Andersson" . "johan.rejeep@gmail.com"))
  :maintainer ("Johan Andersson" . "johan.rejeep@gmail.com")
  :provided   (ansi)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("color" "ansi")
  :homepage   "https://github.com/rejeep/ansi"
  :commentary "\

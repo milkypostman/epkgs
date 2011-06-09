@@ -5,7 +5,7 @@
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")
  :provided   (face-remap+)
- :required   ((("emacs" face-remap)))
+ :required   ((("emacs-core" face-remap)))
  :keywords   ("window" "frame" "face" "font")
  :commentary "\
 Commands `text-scale-decrease', `text-scale-increase', and

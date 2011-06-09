@@ -5,7 +5,7 @@
  :authors    (("rubikitch" . "rubikitch@ruby-lang.org"))
  :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
  :provided   (unify-buffer)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("convenience")
  :commentary "\
 Concatenate multiple buffers into one buffer.

@@ -5,7 +5,7 @@
  :authors    (("KOSEKI Yoshinori" . "kose@meadowy.org"))
  :maintainer ("KOSEKI Yoshinori" . "kose@meadowy.org")
  :provided   (iimage)
- :required   ((("emacs" image-file)))
+ :required   ((("image-file" image-file)))
  :keywords   ("multimedia")
  :homepage   "http://www.netlaputa.ne.jp/~kose/Emacs/iimage.html"
  :commentary "\

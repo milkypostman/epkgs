@@ -5,7 +5,7 @@
  :authors    (("Noah Friedman" . "friedman@splode.com"))
  :maintainer (nil . "friedman@splode.com")
  :provided   (fmailutils)
- :required   ((("emacs" sendmail)))
+ :required   ((("sendmail" sendmail)))
  :keywords   ("mail" "extensions")
  :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
  :commentary "\

@@ -5,7 +5,7 @@
  :maintainer ("Yen-Chin,Lee")
  :provided   (auto-complete-etags)
  :required   ((("auto-complete" auto-complete)
-	       ("emacs" cl)))
+	       ("cl" cl)))
  :commentary "\
 Put this file into your load-path and the following into your ~/.emacs:
   (require 'auto-complete-etags)")

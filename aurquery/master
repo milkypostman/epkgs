@@ -6,7 +6,7 @@
  :authors    (("Christopher M. Brannon" . "cmbrannon@cox.net"))
  :maintainer ("Christopher M. Brannon" . "cmbrannon@cox.net")
  :provided   (aurquery)
- :required   ((("emacs" json)))
+ :required   ((("json" json)))
  :keywords   ("aur")
  :homepage   "https://github.com/CMB/aurquery-el"
  :commentary "\

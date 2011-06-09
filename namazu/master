@@ -1,5 +1,8 @@
 (:updated    "20000224"
  :provided   (namazu)
- :required   ((("emacs" browse-url custom jka-compr man)
+ :required   ((("browse-url" browse-url)
+	       ("custom" custom)
+	       ("emacs-core" jka-compr)
+	       ("man" man)
 	       ("mew" mew)))
  :wikipage   "http://www.emacswiki.org/Namazu")

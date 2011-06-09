@@ -6,9 +6,10 @@
  :maintainer ("Matthew L. Fidler")
  :provided   (color-theme-emacs-revert-theme color-theme-vim-insert-mode key-choices)
  :required   ((("color-theme" color-theme)
-	       ("emacs" easymenu viper)
+	       ("easymenu" easymenu)
 	       ("ergoemacs" ergoemacs-mode)
 	       ("vimpulse" vimpulse)
+	       ("viper" viper)
 	       ("viper-in-more-modes" viper-in-more-modes)))
  :keywords   ("viper" "ergoemacs" "cua" "crisp" "edt" "tpu")
  :commentary "\

@@ -1,0 +1,18 @@
+(:summary    "Minor mode for motion in CapitalizedWordIdentifiers"
+ :created    "2002"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Dave Love" . "fx@gnu.org"))
+ :maintainer ("Dave Love" . "fx@gnu.org")
+ :provided   (cap-words)
+ :keywords   ("languages")
+ :homepage   "http://www.loveshack.ukfsn.org/emacs/"
+ :commentary "\
+Provides Capitalized Words minor mode for word movement in
+identifiers CapitalizedLikeThis.
+
+Note that the same effect could be obtained by frobbing the
+category of upper case characters to produce word boundaries, but
+the necessary processing isn't done for ASCII characters.
+
+Fixme: This doesn't work properly for mouse double clicks.")

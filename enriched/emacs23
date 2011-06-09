@@ -1,0 +1,23 @@
+(:summary    "Read and save files in text/enriched format"
+ :created    "1994"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Boris Goldowsky" . "boris@gnu.org"))
+ :maintainer ("Boris Goldowsky" . "boris@gnu.org")
+ :provided   (enriched)
+ :keywords   ("wp" "faces")
+ :wikipage   "http://www.emacswiki.org/EnrichedMode"
+ :commentary "\
+This file implements reading, editing, and saving files with
+text-properties such as faces, levels of indentation, and true line
+breaks distinguished from newlines just used to fit text into the window.
+
+The file format used is the MIME text/enriched format, which is a
+standard format defined in internet RFC 1563.  All standard annotations
+are supported except for <smaller> and <bigger>, which are currently not
+possible to display.
+
+A separate file, enriched.doc, contains further documentation and other
+important information about this code.  It also serves as an example
+file in text/enriched format.  It should be in the etc directory of your
+emacs distribution.")

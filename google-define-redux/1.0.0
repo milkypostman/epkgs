@@ -6,7 +6,8 @@
 	      ("MON KEY"))
  :maintainer ("MON KEY")
  :provided   (google-define-redux)
- :required   ((("emacs" cl font-lock)))
+ :required   ((("cl" cl)
+	       ("emacs-core" font-lock)))
  :keywords   ("applications" "comm" "external" "processes" "hypermedia")
  :commentary "\
 =================================================================

@@ -5,7 +5,7 @@
  :authors    (("Fredrik Glöckner" . "fredrigl@math.uio.no"))
  :maintainer ("Fredrik Glöckner" . "fredrigl@math.uio.no")
  :provided   (ldraw-mode)
- :required   ((("emacs" cl)
+ :required   ((("cl" cl)
 	       ("w3" w3)))
  :keywords   ("util")
  :homepage   "http://www.math.uio.no/~fredrigl/technic/ldraw-mode/")

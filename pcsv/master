@@ -4,7 +4,7 @@
  :authors    (("Masahiro Hayashi" . "mhayashi1120@gmail.com"))
  :maintainer ("Masahiro Hayashi" . "mhayashi1120@gmail.com")
  :provided   (pcsv)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("csv" "parse")
  :homepage   "https://github.com/mhayashi1120/Emacs-pcsv"
  :commentary "\

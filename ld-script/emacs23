@@ -1,0 +1,10 @@
+(:summary    "GNU linker script editing mode for Emacs"
+ :created    "2001"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Masatake YAMATO" . "jet@gyve.org"))
+ :maintainer ("Masatake YAMATO" . "jet@gyve.org")
+ :provided   (ld-script)
+ :keywords   ("languages" "faces")
+ :commentary "\
+Major mode for editing GNU linker (ld) scripts.")

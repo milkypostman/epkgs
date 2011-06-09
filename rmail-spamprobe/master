@@ -5,7 +5,7 @@
  :authors    (("Henrik Enberg" . "enberg@printf.se"))
  :maintainer ("Henrik Enberg" . "enberg@printf.se")
  :provided   (rmail-spamprobe)
- :required   ((("emacs" rmail)))
+ :required   ((("rmail" rmail)))
  :keywords   ("mail")
  :homepage   "http://www.emacswiki.org/RmailSpamprobe"
  :wikipage   "http://www.emacswiki.org/RmailSpamprobe"

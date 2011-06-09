@@ -4,7 +4,8 @@
  :authors    ((nil . "wenbinye@163.com"))
  :maintainer (nil . "wenbinye@163.com")
  :provided   (bibus)
- :required   ((("emacs" cl tree-widget)
-	       ("mysql" mysql)))
+ :required   ((("cl" cl)
+	       ("mysql" mysql)
+	       ("tree-widget" tree-widget)))
  :homepage   "http://www.emacswiki.org/Bibus"
  :wikipage   "http://www.emacswiki.org/Bibus")

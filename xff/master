@@ -5,7 +5,7 @@
  :authors    (("Thomas Link"))
  :maintainer ("Thomas Link")
  :provided   (xff)
- :required   ((("emacs" cl)
+ :required   ((("cl" cl)
 	       ("tellib" tellib)))
  :keywords   ("files" "find-file")
  :homepage   "http://members.a1.net/t.link/CompEmacsXff.html"

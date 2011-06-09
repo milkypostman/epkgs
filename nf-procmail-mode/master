@@ -5,7 +5,7 @@
  :authors    (("Noah Friedman" . "friedman@splode.com"))
  :maintainer (nil . "friedman@splode.com")
  :provided   (nf-procmail-mode)
- :required   ((("emacs" derived font-lock)))
+ :required   ((("emacs-core" derived font-lock)))
  :homepage   "ftp://ftp.splode.com/pub/users/friedman/emacs-lisp/"
  :commentary "\
 This is a mode for editing .procmailrc.

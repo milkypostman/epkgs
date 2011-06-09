@@ -1,7 +1,7 @@
 (:summary    "Functions to query the user"
  :license    "GPL-2"
  :provided   (query)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :commentary "\
 This library implements a small number of functions that can be used
 by other programs to prompt the user for answers, with easily

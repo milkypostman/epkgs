@@ -3,6 +3,6 @@
  :created    "2007"
  :updated    "2007"
  :provided   (date-util emacs-easy-budget)
- :required   ((("emacs" timezone)))
+ :required   ((("timezone" timezone)))
  :keywords   ("personal" "financial" "financial" "files" "part" "gnu" "part" "emacs-easy-budget" "gpl")
  :homepage   "http://code.google.com/p/emacs-easy-budget/")

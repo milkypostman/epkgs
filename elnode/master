@@ -5,7 +5,8 @@
  :authors    (("Nic Ferrier" . "nferrier+elnode@ferrier.me.uk"))
  :maintainer ("Nic Ferrier" . "nferrier+elnode@ferrier.me.uk")
  :provided   (elnode)
- :required   ((("emacs" cl mailcap mm-encode)))
+ :required   ((("cl" cl)
+	       ("gnus" mailcap mm-encode)))
  :keywords   ("lisp")
  :homepage   "https://github.com/nicferrier/elnode"
  :wikipage   "http://www.emacswiki.org/Elnode"

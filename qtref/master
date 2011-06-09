@@ -6,7 +6,7 @@
  :authors    (("whitypig" . "whitypig@gmail.com"))
  :maintainer ("whitypig" . "whitypig@gmail.com")
  :provided   (qtref)
- :required   ((("emacs" cl)
+ :required   ((("cl" cl)
 	       ("w3m" w3m)))
  :keywords   ("convenience" "languages" "help" "qt")
  :homepage   "https://github.com/whitypig/qtref"

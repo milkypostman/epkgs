@@ -1,0 +1,15 @@
+(:summary    "Lisp language extension for writing statement skeletons"
+ :created    "1993"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Daniel Pfeiffer" . "occitan@esperanto.org"))
+ :maintainer ("FSF")
+ :provided   (skeleton)
+ :keywords   ("extensions" "abbrev" "languages" "tools")
+ :wikipage   "http://www.emacswiki.org/SkeletonMode"
+ :commentary "\
+A very concise language extension for writing structured statement
+skeleton insertion commands for programming language modes.  This
+originated in shell-script mode and was applied to ada-mode's
+commands which shrunk to one third.  And these commands are now
+user configurable.")

@@ -6,7 +6,9 @@
  :authors    (("Frédéric Perrin" . "frederic.perrin@resel.fr"))
  :maintainer ("Frédéric Perrin" . "frederic.perrin@resel.fr")
  :provided   (atom xml-xhtml-entities)
- :required   ((("emacs" cl url-parse xml)))
+ :required   ((("cl" cl)
+	       ("url" url-parse)
+	       ("xml" xml)))
  :keywords   ("www" "hypermedia" "atom" "rss")
  :homepage   "https://github.com/fperrin/atom"
  :commentary "\

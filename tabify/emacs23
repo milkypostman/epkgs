@@ -1,0 +1,9 @@
+(:summary    "Tab conversion commands for Emacs"
+ :created    "1985"
+ :updated    "2011"
+ :license    "GPL-3"
+ :maintainer ("FSF")
+ :provided   (tabify)
+ :commentary "\
+Commands to optimize spaces to tabs or expand tabs to spaces in a region
+(`tabify' and `untabify').  The variable tab-width does the obvious.")

@@ -1,0 +1,39 @@
+(:summary    "General command interpreter in a window stuff"
+ :created    "1988"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Olin Shivers" . "shivers@cs.cmu.edu")
+	      ("Simon Marshall" . "simon@gnu.org"))
+ :maintainer ("FSF")
+ :provided   (comint)
+ :required   ((("ring" ring)))
+ :keywords   ("processes")
+ :wikipage   "http://www.emacswiki.org/ComintMode"
+ :commentary "\
+This file defines a general command-interpreter-in-a-buffer package
+(comint mode).  The idea is that you can build specific process-in-a-buffer
+modes on top of comint mode -- e.g., Lisp, shell, scheme, T, soar, ....
+This way, all these specific packages share a common base functionality,
+and a common set of bindings, which makes them easier to use (and
+saves code, implementation time, etc., etc.).
+
+Several packages are already defined using comint mode:
+- shell.el defines a shell-in-a-buffer mode.
+- cmulisp.el defines a simple lisp-in-a-buffer mode.
+
+- The file cmuscheme.el defines a scheme-in-a-buffer mode.
+- The file tea.el tunes scheme and inferior-scheme modes for T.
+- The file soar.el tunes Lisp and inferior-lisp modes for Soar.
+- cmutex.el defines TeX and LaTeX modes that invoke TeX, LaTeX, BibTeX,
+  previewers, and printers from within Emacs.
+- background.el allows csh-like job control inside Emacs.
+It is pretty easy to make new derived modes for other processes.
+
+For documentation on the functionality provided by Comint mode, and
+the hooks available for customising it, see the comments below.
+For further information on the standard derived modes (shell,
+inferior-lisp, inferior-scheme, ...), see the relevant source files.
+
+For hints on converting existing process modes (e.g., tex-mode,
+background, dbx, gdb, kermit, prolog, telnet) to use comint-mode
+instead of shell-mode, see the notes at the end of this file.")

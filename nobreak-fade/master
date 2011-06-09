@@ -5,7 +5,8 @@
  :authors    (("Kevin Ryde" . "user42@zip.com.au"))
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (nobreak-fade)
- :required   ((("emacs" help-mode thingatpt)))
+ :required   ((("help-mode" help-mode)
+	       ("thingatpt" thingatpt)))
  :keywords   ("convenience" "filling")
  :homepage   "http://user42.tuxfamily.org/nobreak-fade/index.html"
  :wikipage   "http://www.emacswiki.org/NobreakFade"

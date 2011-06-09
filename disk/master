@@ -5,7 +5,8 @@
  :authors    (("David O'Toole" . "dto@monad.lab"))
  :maintainer ("David O'Toole" . "dto@monad.lab")
  :provided   (disk)
- :required   ((("emacs" cl rx)))
+ :required   ((("cl" cl)
+	       ("rx" rx)))
  :keywords   ("hardware")
  :wikipage   "http://www.emacswiki.org/DiskKey"
  :commentary "\

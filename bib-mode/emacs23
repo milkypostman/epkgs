@@ -1,0 +1,14 @@
+(:summary    "Major mode for editing bib files"
+ :created    "1989"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Henry Kautz")
+	      ("(according to authors.el)"))
+ :maintainer ("FSF")
+ :provided   (bib-mode)
+ :keywords   ("bib")
+ :commentary "\
+GNU Emacs code to help maintain databases compatible with (troff)
+  refer and lookbib.  The file bib-file should be set to your
+  bibliography file.  Keys are automagically inserted as you type,
+  and appropriate keys are presented for various kinds of entries.")

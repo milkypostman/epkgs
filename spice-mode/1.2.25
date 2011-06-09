@@ -8,7 +8,14 @@
 	      ("MIT AI Lab" . "cvieri@ai.mit.edu"))
  :maintainer ("Geert A. M. Van der Plas" . "geert_vanderplas@email.com")
  :provided   (spice-mode)
- :required   ((("emacs" comint compile easymenu font-lock imenu lucid overlay speedbar tempo)))
+ :required   ((("cedet" speedbar)
+	       ("comint" comint)
+	       ("compile" compile)
+	       ("easymenu" easymenu)
+	       ("emacs-core" font-lock overlay)
+	       ("emacs-obsolete" lucid)
+	       ("imenu" imenu)
+	       ("tempo" tempo)))
  :keywords   ("spice" "eldo" "hspice" "layla" "mondriaan" "fasthenry" "cdl" "spectre" "compatibility" "netlist" "editing")
  :homepage   "http://spice-mode.4t.com/"
  :commentary "\

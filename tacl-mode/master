@@ -6,7 +6,8 @@
  :maintainer ("Rick Bielawski" . "rbielaws@i1.net")
  :provided   (tacl-mode)
  :required   ((("column-marker" column-marker)
-	       ("emacs" imenu which-func)
+	       ("imenu" imenu)
+	       ("which-func" which-func)
 	       (nil tacl-indent)))
  :keywords   ("languages" "extensions" "tandem" "guardian" "nsk" "tacl")
  :homepage   "http://www.emacswiki.org/TaclMode"

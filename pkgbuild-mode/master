@@ -3,5 +3,9 @@
  :updated    "20071020"
  :license    "GPL-2"
  :provided   (pkgbuild-mode)
- :required   ((("emacs" advice cl easymenu etags sh-script)))
+ :required   ((("advice" advice)
+	       ("cl" cl)
+	       ("easymenu" easymenu)
+	       ("etags" etags)
+	       ("sh-script" sh-script)))
  :homepage   "https://github.com/juergenhoetzel/pkgbuild-mode")

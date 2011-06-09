@@ -1,7 +1,10 @@
 (:summary    "Top-level of distel package, loads all subparts"
  :repository (svn . "http://distel.googlecode.com/svn")
  :provided   (derl distel distel-ie edb epmd erl erl-service erlext net-fsm patmatch)
- :required   ((("emacs" cl easy-mmode ewoc font-lock md5 overlay)
-	       ("erlang" erlang))
+ :required   ((("cl" cl)
+	       ("easy-mmode" easy-mmode)
+	       ("emacs-core" font-lock md5 overlay)
+	       ("erlang" erlang)
+	       ("ewoc" ewoc))
 	      (("w3m" w3m)))
  :homepage   "http://fresh.homeunix.net/~luke/distel/")

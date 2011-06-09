@@ -4,5 +4,6 @@
  :authors    (("Nic Ferrier" . "nferrier@tapsellferrier.co.uk"))
  :maintainer ("Nic Ferrier" . "nferrier@tapsellferrier.co.uk")
  :provided   (emacs-imap)
- :required   ((("emacs" imap message qp timezone)))
+ :required   ((("gnus" imap message qp)
+	       ("timezone" timezone)))
  :keywords   ("mail" "version"))

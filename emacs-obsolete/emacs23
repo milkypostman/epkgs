@@ -1,0 +1,19 @@
+(:summary    "AWK code editing commands for Emacs"
+ :created    "1988"
+ :updated    "2011"
+ :license    "GPL-3"
+ :maintainer ("FSF")
+ :provided   (awk-mode cl-compat fast-lock iso-acc iso-insert iso-swed lazy-lock levents lmenu lucid options resume rnews rnewspost sc scribe swedish sym-comp vc-mcvs x-menu)
+ :required   ((("cl" cl)
+	       ("emacs-core" disp-table font-lock syntax)
+	       ("hippie-exp" hippie-exp)
+	       ("mail-utils" mail-utils)
+	       ("sendmail" sendmail)
+	       ("supercite" supercite)
+	       ("vc" vc vc-cvs)))
+ :keywords   ("unix" "languages")
+ :commentary "\
+This file has been obsolete since Emacs 22.1.
+
+Sets up C-mode with support for awk-style #-comments and a lightly
+hacked syntax table.")

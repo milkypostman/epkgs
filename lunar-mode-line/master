@@ -6,7 +6,8 @@
  :authors    (("Ben Voui" . "intrigeri@boum.org"))
  :maintainer (nil . "intrigeri@boum.org")
  :provided   (lunar-mode-line)
- :required   ((("emacs" calendar lunar timer)))
+ :required   ((("calendar" calendar lunar)
+	       ("timer" timer)))
  :keywords   ("extensions")
  :wikipage   "http://www.emacswiki.org/LunarModeLine"
  :commentary "\

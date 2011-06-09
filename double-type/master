@@ -4,7 +4,7 @@
  :updated    "2010"
  :license    "GPL-3"
  :provided   (double-type)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("abbrev" "convenience" "emulations" "wp")
  :homepage   "https://github.com/k-talo/double-type.el"
  :commentary "\

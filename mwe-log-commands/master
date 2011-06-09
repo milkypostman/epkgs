@@ -5,7 +5,7 @@
  :authors    (("Michael Weber" . "michaelw@foldr.org"))
  :maintainer ("Michael Weber" . "michaelw@foldr.org")
  :provided   (mwe-log-commands)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("help")
  :homepage   "http://www.foldr.org/~michaelw/emacs/"
  :wikipage   "http://www.emacswiki.org/CommandLogMode"

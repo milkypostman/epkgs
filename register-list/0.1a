@@ -5,7 +5,7 @@
  :authors    (("Bastien Guerry" . "bzg@altern.org"))
  :maintainer ("Bastien Guerry" . "bzg@altern.org")
  :provided   (register-list)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("register")
  :commentary "\
 This library lets you list and edit registers.  M-x `register-list'

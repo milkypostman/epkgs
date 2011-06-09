@@ -5,7 +5,10 @@
  :authors    (("Matthew P. Hodges" . "mphodges@member.fsf.org"))
  :maintainer ("Matthew P. Hodges" . "mphodges@member.fsf.org")
  :provided   (apt-utils)
- :required   ((("emacs" browse-url dired jka-compr trace)))
+ :required   ((("browse-url" browse-url)
+	       ("dired" dired)
+	       ("emacs-core" jka-compr)
+	       ("trace" trace)))
  :wikipage   "http://www.emacswiki.org/InterfaceToAPT"
  :commentary "\
 Package to interface Emacs with APT.  Start things off using e.g.:

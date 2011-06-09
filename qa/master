@@ -2,8 +2,8 @@
  :created    "2004"
  :updated    "2004"
  :provided   (qa)
- :required   ((("edb" database)
-	       ("emacs" cl)))
+ :required   ((("cl" cl)
+	       ("edb" database)))
  :homepage   "http://www.gnuvola.org/software/qa/"
  :commentary "\
 See qa.info for documentation.")

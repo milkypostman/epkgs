@@ -4,7 +4,8 @@
  :license    "GPL-2"
  :authors    (("Alex Schroeder" . "alex@gnu.org"))
  :provided   (wiki-remote)
- :required   ((("emacs" easy-mmode thingatpt)
+ :required   ((("easy-mmode" easy-mmode)
+	       ("thingatpt" thingatpt)
 	       ("w3" w3)
 	       ("w3m" w3m)))
  :keywords   ("hypermedia")

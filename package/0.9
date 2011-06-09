@@ -5,7 +5,12 @@
  :authors    (("Tom Tromey" . "tromey@redhat.com"))
  :maintainer ("Tom Tromey" . "tromey@redhat.com")
  :provided   (package)
- :required   ((("emacs" autoload dired info lisp-mnt reporter tar-mode)))
+ :required   ((("dired" dired)
+	       ("emacs-core" autoload)
+	       ("info" info)
+	       ("lisp-mnt" lisp-mnt)
+	       ("reporter" reporter)
+	       ("tar-mode" tar-mode)))
  :keywords   ("tools")
  :homepage   "http://tromey.com/elpa/index.html"
  :commentary "\

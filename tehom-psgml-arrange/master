@@ -6,7 +6,7 @@
  :maintainer ("Tom Breton" . "tob@world.std.com")
  :provided   (tehom-psgml-arrange)
  :required   ((("arrange" arrange)
-	       ("emacs" cl)
+	       ("cl" cl)
 	       ("psgml" psgml)
 	       ("tehom-psgml" tehom-psgml)))
  :keywords   ("hypermedia" "extensions" "tools")

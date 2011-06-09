@@ -1,0 +1,20 @@
+(:summary    "Info package for Emacs"
+ :created    "1985"
+ :updated    "2011"
+ :license    "GPL-3"
+ :maintainer ("FSF")
+ :provided   (info)
+ :required   ((("cedet" speedbar)
+	       ("cl" cl)
+	       ("emacs-core" jka-compr)
+	       ("finder" finder)))
+ :keywords   ("help")
+ :wikipage   "http://www.emacswiki.org/Info"
+ :commentary "\
+Note that nowadays we expect Info files to be made using makeinfo.
+In particular we make these assumptions:
+ - a menu item MAY contain colons but not colon-space \": \"
+ - a menu item ending with \": \" (but not \":: \") is an index entry
+ - a node name MAY NOT contain a colon
+This distinction is to support indexing of computer programming
+language terms that may contain \":\" but not \": \".")

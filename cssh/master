@@ -5,7 +5,11 @@
  :authors    (("Dimitri Fontaine" . "dim@tapoueh.org"))
  :maintainer ("Dimitri Fontaine" . "dim@tapoueh.org")
  :provided   (cssh)
- :required   ((("emacs" cl dired ibuffer term tramp)))
+ :required   ((("cl" cl)
+	       ("dired" dired)
+	       ("ibuffer" ibuffer)
+	       ("term" term)
+	       ("tramp" tramp)))
  :keywords   ("clusterssh" "ssh" "cssh")
  :homepage   "http://tapoueh.org/projects.html#sec17"
  :wikipage   "http://www.emacswiki.org/ClusterSSH")

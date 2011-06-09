@@ -1,0 +1,17 @@
+(:summary    "Only show defaults in prompts when applicable"
+ :created    "2000"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Miles Bader" . "miles@gnu.org"))
+ :maintainer ("Miles Bader" . "miles@gnu.org")
+ :provided   (minibuf-eldef)
+ :keywords   ("convenience")
+ :commentary "\
+Defines the mode `minibuffer-electric-default-mode'.
+
+When active, minibuffer prompts that show a default value only show
+the default when it's applicable -- that is, when hitting RET would
+yield the default value.  If the user modifies the input such that
+hitting RET would enter a non-default value, the prompt is modified
+to remove the default indication (which is restored if the input is
+ever restore to the match the initial input).")

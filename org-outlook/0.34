@@ -5,7 +5,7 @@
  :authors    (("Matthew L. Fidler"))
  :maintainer ("Matthew L. Fidler")
  :provided   (outlook-org)
- :required   ((("emacs" org)))
+ :required   ((("org-mode" org)))
  :homepage   "http://www.emacswiki.org/OrgOutlook"
  :wikipage   "http://www.emacswiki.org/OrgOutlook"
  :commentary "\

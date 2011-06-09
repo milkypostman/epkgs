@@ -6,7 +6,9 @@
  :authors    (("Ryan Yeske"))
  :maintainer ("Ryan Yeske")
  :provided   (rcirc)
- :required   ((("emacs" cl ring time-date)))
+ :required   ((("cl" cl)
+	       ("gnus" time-date)
+	       ("ring" ring)))
  :keywords   ("comm")
  :homepage   "https://github.com/rcy/rcirc"
  :wikipage   "http://www.emacswiki.org/rcirc"

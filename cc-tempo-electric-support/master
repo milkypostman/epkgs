@@ -4,7 +4,8 @@
  :license    "GPL-2"
  :authors    (("Klaus Berndl" . "klaus.berndl@sdm.de"))
  :provided   (cc-tempo-electric-support)
- :required   ((("emacs" cc-mode tempo)))
+ :required   ((("cc-mode" cc-mode)
+	       ("tempo" tempo)))
  :homepage   "http://homepages.cs.ncl.ac.uk/phillip.lord/emacs.html"
  :commentary "\
 This package provides support for insertion of electric characters

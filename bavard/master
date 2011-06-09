@@ -5,8 +5,9 @@
  :authors    (("Andrey Shramko" . "t0mmydnua@yandex.ru"))
  :maintainer ("Andrey Shramko" . "t0mmydnua@yandex.ru")
  :provided   (bavard)
- :required   ((("auto-complete" popup)
-	       ("emacs" cl url)))
+ :required   ((("cl" cl)
+	       ("popup" popup)
+	       ("url" url)))
  :homepage   "https://github.com/avshramko/bavard"
  :commentary "\
 Please send suggestions and bug reports to <t0mmydnua@yandex.ru>

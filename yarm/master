@@ -4,9 +4,10 @@
  :license    "GPL-2"
  :provided   (yarm)
  :required   ((("anything" anything)
-	       ("emacs" cl easy-mmode)
+	       ("cl" cl)
+	       ("easy-mmode" easy-mmode)
 	       ("historyf" historyf)
 	       (nil inflections))
 	      (("anything" anything-show-completion)
-	       ("emacs" imenu)))
+	       ("imenu" imenu)))
  :homepage   "https://github.com/k1LoW/emacs-yarm")

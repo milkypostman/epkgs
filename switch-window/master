@@ -5,6 +5,7 @@
  :authors    (("Dimitri Fontaine" . "dim@tapoueh.org"))
  :maintainer ("Dimitri Fontaine" . "dim@tapoueh.org")
  :provided   (switch-window)
- :required   ((("emacs" cl quail)))
+ :required   ((("cl" cl)
+	       ("emacs-core" quail)))
  :keywords   ("window" "navigation")
  :homepage   "http://tapoueh.org/projects.html#sec19")

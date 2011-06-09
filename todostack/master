@@ -6,7 +6,7 @@
  :maintainer ("Evans Winner" . "ego111@gmail.com")
  :provided   (todostack)
  :required   (nil
-	      (("emacs" lisp-mnt)))
+	      (("lisp-mnt" lisp-mnt)))
  :keywords   ("calendar")
  :commentary "\
 GENERAL USE

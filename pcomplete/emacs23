@@ -1,0 +1,104 @@
+(:summary    "Programmable completion"
+ :created    "1999"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("John Wiegley" . "johnw@gnu.org"))
+ :maintainer ("John Wiegley" . "johnw@gnu.org")
+ :provided   (pcmpl-cvs pcmpl-gnu pcmpl-linux pcmpl-rpm pcmpl-unix pcomplete)
+ :required   ((("cl" cl)
+	       ("executable" executable)))
+ :keywords   ("processes" "abbrev")
+ :commentary "\
+This module provides a programmable completion facility using
+\"completion functions\".  Each completion function is responsible
+for producing a list of possible completions relevant to the current
+argument position.
+
+To use pcomplete with shell-mode, for example, you will need the
+following in your .emacs file:
+
+  (add-hook 'shell-mode-hook 'pcomplete-shell-setup)
+
+Most of the code below simply provides support mechanisms for
+writing completion functions.  Completion functions themselves are
+very easy to write.  They have few requirements beyond those of
+regular Lisp functions.
+
+Consider the following example, which will complete against
+filenames for the first two arguments, and directories for all
+remaining arguments:
+
+  (defun pcomplete/my-command ()
+    (pcomplete-here (pcomplete-entries))
+    (pcomplete-here (pcomplete-entries))
+    (while (pcomplete-here (pcomplete-dirs))))
+
+Here are the requirements for completion functions:
+
+@ They must be called \"pcomplete/MAJOR-MODE/NAME\", or
+  \"pcomplete/NAME\".  This is how they are looked up, using the NAME
+  specified in the command argument (the argument in first
+  position).
+
+@ They must be callable with no arguments.
+
+@ Their return value is ignored.  If they actually return normally,
+  it means no completions were available.
+
+@ In order to provide completions, they must throw the tag
+  `pcomplete-completions'.  The value must be a completion table
+  (i.e. a table that can be passed to try-completion and friends)
+  for the final argument.
+
+@ To simplify completion function logic, the tag `pcompleted' may
+  be thrown with a value of nil in order to abort the function.  It
+  means that there were no completions available.
+
+When a completion function is called, the variable `pcomplete-args'
+is in scope, and contains all of the arguments specified on the
+command line.  The variable `pcomplete-last' is the index of the
+last argument in that list.
+
+The variable `pcomplete-index' is used by the completion code to
+know which argument the completion function is currently examining.
+It always begins at 1, meaning the first argument after the command
+name.
+
+To facilitate writing completion logic, a special macro,
+`pcomplete-here', has been provided which does several things:
+
+ 1. It will throw `pcompleted' (with a value of nil) whenever
+    `pcomplete-index' exceeds `pcomplete-last'.
+
+ 2. It will increment `pcomplete-index' if the final argument has
+    not been reached yet.
+
+ 3. It will evaluate the form passed to it, and throw the result
+    using the `pcomplete-completions' tag, if it is called when
+    `pcomplete-index' is pointing to the final argument.
+
+Sometimes a completion function will want to vary the possible
+completions for an argument based on the previous one.  To
+facilitate tests like this, the function `pcomplete-test' and
+`pcomplete-match' are provided.  Called with one argument, they
+test the value of the previous command argument.  Otherwise, a
+relative index may be given as an optional second argument, where 0
+refers to the current argument, 1 the previous, 2 the one before
+that, etc.  The symbols `first' and `last' specify absolute
+offsets.
+
+Here is an example which will only complete against directories for
+the second argument if the first argument is also a directory:
+
+  (defun pcomplete/example ()
+     (pcomplete-here (pcomplete-entries))
+     (if (pcomplete-test 'file-directory-p)
+         (pcomplete-here (pcomplete-dirs))
+       (pcomplete-here (pcomplete-entries))))
+
+For generating completion lists based on directory contents, see
+the functions `pcomplete-entries', `pcomplete-dirs',
+`pcomplete-executables' and `pcomplete-all-entries'.
+
+Consult the documentation for `pcomplete-here' for information
+about its other arguments.")

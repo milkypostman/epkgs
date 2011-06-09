@@ -1,0 +1,190 @@
+(:summary    "Pass a URL to a WWW browser"
+ :created    "19950403"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Denis Howe" . "dbh@doc.ic.ac.uk"))
+ :maintainer ("FSF")
+ :provided   (browse-url)
+ :required   ((("cl" cl)
+	       ("dired" dired)
+	       ("executable" executable)
+	       ("term" term)
+	       ("thingatpt" thingatpt)
+	       ("url" url-handlers)
+	       ("w3" w3))
+	      ((nil w3-auto)))
+ :keywords   ("hypertext" "hypermedia" "mouse")
+ :wikipage   "http://www.emacswiki.org/BrowseUrl"
+ :commentary "\
+This package provides functions which read a URL (Uniform Resource
+Locator) from the minibuffer, defaulting to the URL around point,
+and ask a World-Wide Web browser to load it.  It can also load the
+URL associated with the current buffer.  Different browsers use
+different methods of remote control so there is one function for
+each supported browser.  If the chosen browser is not running, it
+is started.  Currently there is support for the following browsers,
+some of them probably now obsolete:
+
+Function                           Browser     Earliest version
+browse-url-mozilla                 Mozilla     Don't know
+browse-url-firefox                 Firefox     Don't know (tried with 1.0.1)
+browse-url-galeon                  Galeon      Don't know
+browse-url-epiphany                Epiphany    Don't know
+browse-url-netscape                Netscape    1.1b1
+browse-url-mosaic                  XMosaic/mMosaic <= 2.4
+browse-url-cci                     XMosaic     2.5
+browse-url-w3                      w3          0
+browse-url-w3-gnudoit              w3 remotely
+browse-url-text-*	              Any text browser     0
+browse-url-generic                 arbitrary
+browse-url-default-windows-browser MS-Windows browser
+browse-url-default-macosx-browser  Mac OS X browser
+browse-url-gnome-moz               GNOME interface to Mozilla
+browse-url-kde                     KDE konqueror (kfm)
+browse-url-elinks                  Elinks      Don't know (tried with 0.12.GIT)
+
+[A version of the Netscape browser is now free software
+<URL:http://www.mozilla.org/>, albeit not GPLed, so it is
+reasonable to have that as the default.]
+
+Note that versions of Netscape before 1.1b1 did not have remote
+control.  <URL:http://www.netscape.com/newsref/std/x-remote.html>.
+
+Browsers can cache Web pages so it may be necessary to tell them to
+reload the current page if it has changed (e.g. if you have edited
+it).  There is currently no perfect automatic solution to this.
+
+Netscape allows you to specify the id of the window you want to
+control but which window DO you want to control and how do you
+discover its id?
+
+William M.  Perry's excellent \"w3\" WWW browser for
+Emacs <URL:ftp://cs.indiana.edu/pub/elisp/w3/>
+has a function w3-follow-url-at-point, but that
+doesn't let you edit the URL like browse-url.
+The `gnuserv' package that can be used to control it in another
+Emacs process is available from
+<URL:ftp://ftp.splode.com/pub/users/friedman/packages/>.
+
+Lynx is now distributed by the FSF.  See also
+<URL:http://lynx.browser.org/>.
+
+Free graphical browsers that could be used by `browse-url-generic'
+include Chimera <URL:ftp://ftp.cs.unlv.edu/pub/chimera> and
+<URL:http://www.unlv.edu/chimera/>, Arena
+<URL:ftp://ftp.yggdrasil.com/pub/dist/web/arena> and Amaya
+<URL:ftp://ftp.w3.org/pub/amaya>.  mMosaic
+<URL:ftp://ftp.enst.fr/pub/mbone/mMosaic/>,
+<URL:http://www.enst.fr/~dauphin/mMosaic/> (with development
+support for Java applets and multicast) can be used like Mosaic by
+setting `browse-url-mosaic-program' appropriately.
+
+I [Denis Howe, not Dave Love] recommend Nelson Minar
+<nelson@santafe.edu>'s excellent html-helper-mode.el for editing
+HTML and thank Nelson for his many useful comments on this code.
+<URL:http://www.santafe.edu/%7Enelson/hhm-beta/>
+
+See also hm--html-menus <URL:http://www.tnt.uni-hannover.de/%7Emuenkel/
+software/own/hm--html-menus/>.  For composing correct HTML see also
+PSGML the general SGML structure editor package
+<URL:ftp://ftp.lysator.liu.se/pub/sgml>; hm--html-menus can be used
+with this.
+
+This package generalises function html-previewer-process in Marc
+Andreessen's html-mode (LCD modes/html-mode.el.Z).  See also the
+ffap.el package.  The huge hyperbole package also contains similar
+functions.
+
+
+Help!
+
+Can you write and test some code for the Macintrash and Windoze
+Netscape remote control APIs?  (See the URL above).
+
+Do any other browsers have remote control?
+
+
+Usage
+
+To display the URL at or before point:
+M-x browse-url-at-point RET
+or, similarly but with the opportunity to edit the URL extracted from
+the buffer, use:
+M-x browse-url
+
+To display a URL by shift-clicking on it, put this in your ~/.emacs
+file:
+     (global-set-key [S-mouse-2] 'browse-url-at-mouse)
+(Note that using Shift-mouse-1 is not desirable because
+that event has a standard meaning in Emacs.)
+
+To display the current buffer in a web browser:
+M-x browse-url-of-buffer RET
+
+To display the current region in a web browser:
+M-x browse-url-of-region RET
+
+In Dired, to display the file named on the current line:
+M-x browse-url-of-dired-file RET
+
+
+Customisation (~/.emacs)
+
+To see what variables are available for customization, type
+`M-x set-variable browse-url TAB'.  Better, use
+`M-x customize-group browse-url'.
+
+Bind the browse-url commands to keys with the `C-c C-z' prefix
+(as used by html-helper-mode):
+	(global-set-key \"\\C-c\\C-z.\" 'browse-url-at-point)
+	(global-set-key \"\\C-c\\C-zb\" 'browse-url-of-buffer)
+	(global-set-key \"\\C-c\\C-zr\" 'browse-url-of-region)
+	(global-set-key \"\\C-c\\C-zu\" 'browse-url)
+	(global-set-key \"\\C-c\\C-zv\" 'browse-url-of-file)
+	(add-hook 'dired-mode-hook
+		  (lambda ()
+	             (local-set-key \"\\C-c\\C-zf\" 'browse-url-of-dired-file)))
+
+Browse URLs in mail messages under RMAIL by clicking mouse-2:
+	(add-hook 'rmail-mode-hook (lambda () ; rmail-mode startup
+	  (define-key rmail-mode-map [mouse-2] 'browse-url-at-mouse)))
+Alternatively, add `goto-address' to `rmail-show-message-hook'.
+
+Gnus provides a standard feature to activate URLs in article
+buffers for invocation of browse-url.
+
+Use the Emacs w3 browser when not running under X11:
+	(or (eq window-system 'x)
+	    (setq browse-url-browser-function 'browse-url-w3))
+
+To always save modified buffers before displaying the file in a browser:
+	(setq browse-url-save-file t)
+
+To get round the Netscape caching problem, you could EITHER have
+write-file in html-helper-mode make Netscape reload the document:
+
+	(autoload 'browse-url-netscape-reload \"browse-url\"
+	  \"Ask a WWW browser to redisplay the current file.\" t)
+	(add-hook 'html-helper-mode-hook
+		  (lambda ()
+		     (add-hook 'local-write-file-hooks
+			       (lambda ()
+				  (let ((local-write-file-hooks))
+				    (save-buffer))
+				  (browse-url-netscape-reload)
+				  t)			; => file written by hook
+			       t)))			; append to l-w-f-hooks
+
+OR have browse-url-of-file ask Netscape to load and then reload the
+file:
+
+	(add-hook 'browse-url-of-file-hook 'browse-url-netscape-reload)
+
+You may also want to customise browse-url-netscape-arguments, e.g.
+	(setq browse-url-netscape-arguments '(\"-install\"))
+
+or similarly for the other browsers.
+
+To invoke different browsers for different URLs:
+     (setq browse-url-browser-function '((\"^mailto:\" . browse-url-mail)
+     				    (\".\" . browse-url-netscape)))")

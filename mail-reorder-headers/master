@@ -5,6 +5,6 @@
  :authors    (("Noah Friedman" . "friedman@prep.ai.mit.edu"))
  :maintainer (nil . "friedman@prep.ai.mit.edu")
  :provided   (mail-reorder-headers)
- :required   ((("emacs" rfc822)
-	       ("fmailutils" fmailutils)))
+ :required   ((("fmailutils" fmailutils)
+	       ("rfc822" rfc822)))
  :keywords   ("mail" "extensions"))

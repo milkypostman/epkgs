@@ -1,0 +1,64 @@
+(:summary    "Manage game analysis trees in Emacs"
+ :created    "19971210"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Ian T Zimmerman" . "itz@rahul.net"))
+ :maintainer ("Ian T Zimmerman" . "itz@rahul.net")
+ :provided   (gametree)
+ :required   ((("emacs-core" derived)
+	       ("outline" outline)))
+ :keywords   ("games")
+ :commentary "\
+This little hack has enabled me to keep track of my email chess
+ games in Emacs.  For a long time I dreamt about writing a real,
+ graphical tree editor; but, then the idea struck me, why do it
+ graphically, when it can be done in Emacs? :-)  And in fact Emacs
+ almost had what I needed out of the box, namely the powerful
+ Outline mode.  This code is built entirely on Outline mode, it
+ only adds two commands that I found indispensable when dealing
+ with the special kind of trees that analysis trees comprise.
+
+ The built-in documentation should be enough to explain the use,
+ along with the following example (yes, this is a real game).
+
+ *** 23. f4 ef 24. Nf3 Rf3 -/+
+ 25. Rf3 Qh2 26. Kh1 Qh1 27. Ke2 Qg2 -+
+ ******* 25. gf3 Nce3 26. Qe2 Nf1 -/+
+ 27. Qe5 Ne5 28. Kf1 Nf3 -/+
+ 27. Kf1 Nh2 28. Kf2 Ng4 29. fg4 Rf8 30. Ke1 Qg3 31. Kd1 Rf2 -+
+
+ Place the preceding in a scratch buffer, load this code, and do
+ M-x gametree-mode.  Now place the cursor just after the `Nf3' and
+ before the `Rf3' on the first line, and do C-c C-j.  The result is
+
+ *** 23. f4 ef 24. Nf3
+ ****** 24: Rf3 -/+
+ 25. Rf3 Qh2 26. Kh1 Qh1 27. Ke2 Qg2 -+
+ ******* 25. gf3 Nce3 26. Qe2 Nf1 -/+
+ 27. Qe5 Ne5 28. Kf1 Nf3 -/+
+ 27. Kf1 Nh2 28. Kf2 Ng4 29. fg4 Rf8 30. Ke1 Qg3 31. Kd1 Rf2 -+
+
+ Now you can add another subvariation on Black's 24th move: with
+ the cursor still on the first line, do C-c C-v, and voila
+
+ *** 23. f4 ef 24. Nf3
+ 24:
+ ****** 24: Rf3 -/+
+ 25. Rf3 Qh2 26. Kh1 Qh1 27. Ke2 Qg2 -+
+ ******* 25. gf3 Nce3 26. Qe2 Nf1 -/+
+ 27. Qe5 Ne5 28. Kf1 Nf3 -/+
+ 27. Kf1 Nh2 28. Kf2 Ng4 29. fg4 Rf8 30. Ke1 Qg3 31. Kd1 Rf2 -+
+
+ and the cursor is positioned on the new line just after the move
+ number, so you can start typing the new analysis.  That's it,
+ quite simple.
+
+ As of version 1.1, a simple score reducer has been implemented.
+ As you type in leaf variations, you can add a numerical score tag
+ to them with C-c ; . Then, with the cursor on a variation higher
+ up in the tree, you can do C-c ^ and the program will compute the
+ reduced score of the internal variation based on the scores of its
+ children (which are recursively computed).  You can use any range
+ of numbers you wish as scores, maybe -1000 to 1000 or 0 to 100,
+ all that matters to the program is that higher means better for
+ White, lower means better for Black.")

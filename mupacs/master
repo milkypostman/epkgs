@@ -3,8 +3,15 @@
  :updated    "2002"
  :license    "GPL-2"
  :maintainer ("Olivier Ramare" . "ramare@agat.univ-lille1.fr")
- :provided   (lazy-lock mupad mupad-bus mupad-fontification mupad-help mupad-run mupad-xemacs sli-tools)
- :required   ((("emacs" advice backquote cc-mode disp-table easymenu font-lock gud imenu regexp-opt)))
+ :provided   (mupad mupad-bus mupad-fontification mupad-help mupad-run sli-tools)
+ :required   ((("advice" advice)
+	       ("cc-mode" cc-mode)
+	       ("easymenu" easymenu)
+	       ("emacs-core" backquote disp-table font-lock)
+	       ("emacs-obsolete" lazy-lock)
+	       ("gud" gud)
+	       ("imenu" imenu)
+	       ("regexp-opt" regexp-opt)))
  :keywords   ("progmodes")
  :homepage   "http://mupacs.sourceforge.net/"
  :wikipage   "http://www.emacswiki.org/MuPACS"

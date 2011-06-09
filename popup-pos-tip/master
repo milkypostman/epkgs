@@ -5,8 +5,8 @@
  :authors    (("S. Irie"))
  :maintainer ("S. Irie")
  :provided   (popup-pos-tip)
- :required   ((("auto-complete" popup)
-	       ("emacs" cl)
+ :required   ((("cl" cl)
+	       ("popup" popup)
 	       ("pos-tip" pos-tip)))
  :keywords   ("tooltip")
  :commentary "\

@@ -3,7 +3,9 @@
  :created    "20101217"
  :updated    "2010"
  :provided   (db-sql)
- :required   ((("emacs" cl sql tramp)))
+ :required   ((("cl" cl)
+	       ("sql" sql)
+	       ("tramp" tramp)))
  :keywords   ("tramp" "sql")
  :homepage   "https://github.com/renard/db-sql-el"
  :commentary "\

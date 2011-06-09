@@ -5,7 +5,7 @@
  :authors    (("James Clark"))
  :maintainer ("James Clark")
  :provided   (nxml-enc nxml-glyph nxml-maint nxml-mode nxml-ns nxml-outln nxml-parse nxml-rap nxml-uchnm nxml-util rng-cmpct rng-dt rng-loc rng-match rng-nxml rng-parse rng-pttrn rng-uri rng-util rng-valid rng-xsd xmltok xsd-regexp)
- :required   ((("emacs" easymenu)))
+ :required   ((("easymenu" easymenu)))
  :keywords   ("xml")
  :homepage   "http://www.thaiopensource.com/nxml-mode/"
  :wikipage   "http://www.emacswiki.org/NxmlMode"

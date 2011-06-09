@@ -4,7 +4,8 @@
  :authors    (("Daniel Colascione" . "dan.colascione@gmail.com"))
  :maintainer ("Daniel Colascione" . "dan.colascione@gmail.com")
  :provided   (byte-code-cache)
- :required   ((("emacs" advice bytecomp)))
+ :required   ((("advice" advice)
+	       ("emacs-core" bytecomp)))
  :commentary "\
 Description:
 Automatically cache byte-compiled versions of .el files as they're

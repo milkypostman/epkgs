@@ -5,8 +5,8 @@
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")
  :provided   (ls-lisp+)
- :required   ((("emacs" ls-lisp)
-	       ("files+" files+)))
+ :required   ((("files+" files+)
+	       ("ls-lisp" ls-lisp)))
  :keywords   ("internal" "extensions" "local" "files" "dired")
  :commentary "\
 Enhancements of standard library `ls-lisp.el'.

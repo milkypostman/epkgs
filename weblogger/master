@@ -4,7 +4,10 @@
  :updated    "2009"
  :license    "GPL-3"
  :provided   (weblogger)
- :required   ((("emacs" cl message reporter ring)
+ :required   ((("cl" cl)
+	       ("gnus" message)
+	       ("reporter" reporter)
+	       ("ring" ring)
 	       ("xml-rpc" xml-rpc)))
  :keywords   ("weblog" "blogger" "cms" "movable" "type" "openweblog" "blog")
  :homepage   "https://launchpad.net/weblogger-el"

@@ -6,7 +6,9 @@
  :authors    (("Aleksei Gusev" . "aleksei.gusev@gmail.com"))
  :maintainer ("Aleksei Gusev" . "aleksei.gusev@gmail.com")
  :provided   (yari)
- :required   ((("emacs" ansi-color cl thingatpt)))
+ :required   ((("ansi-color" ansi-color)
+	       ("cl" cl)
+	       ("thingatpt" thingatpt)))
  :keywords   ("tools")
  :homepage   "https://github.com/hron/yari.el"
  :wikipage   "http://www.emacswiki.org/YARI"

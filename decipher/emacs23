@@ -1,0 +1,74 @@
+(:summary    "Cryptanalyze monoalphabetic substitution ciphers"
+ :created    "1995"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Christopher J. Madsen" . "chris_madsen@geocities.com"))
+ :maintainer ("Christopher J. Madsen" . "chris_madsen@geocities.com")
+ :provided   (decipher)
+ :required   ((("cl" cl)))
+ :keywords   ("games")
+ :wikipage   "http://www.emacswiki.org/DecipherMode"
+ :commentary "\
+Quick Start:
+
+To decipher a message, type or load it into a buffer and type
+`M-x decipher'.  This will format the buffer and place it into
+Decipher mode.  You can save your work to a file with the normal
+Emacs save commands; when you reload the file it will automatically
+enter Decipher mode.
+
+I'm not going to discuss how to go about breaking a cipher; try
+your local library for a book on cryptanalysis.  One book you might
+find is:
+  Cryptanalysis:  A study of ciphers and their solution
+  Helen Fouche Gaines
+  ISBN 0-486-20097-3
+
+This package is designed to help you crack simple substitution
+ciphers where one letter stands for another.  It works for ciphers
+with or without word divisions.  (You must set the variable
+decipher-ignore-spaces for ciphers without word divisions.)
+
+First, some quick definitions:
+  ciphertext   The encrypted message (what you start with)
+  plaintext    The decrypted message (what you are trying to get)
+
+Decipher mode displays ciphertext in uppercase and plaintext in
+lowercase.  You must enter the plaintext in lowercase; uppercase
+letters are interpreted as commands.  The ciphertext may be entered
+in mixed case; `M-x decipher' will convert it to uppercase.
+
+Decipher mode depends on special characters in the first column of
+each line.  The command `M-x decipher' inserts these characters for
+you.  The characters and their meanings are:
+  (   The plaintext & ciphertext alphabets on the first line
+  )   The ciphertext & plaintext alphabets on the second line
+  :   A line of ciphertext (with plaintext below)
+  >   A line of plaintext  (with ciphertext above)
+  %   A comment
+Each line in the buffer MUST begin with one of these characters (or
+be left blank).  In addition, comments beginning with `%!' are reserved
+for checkpoints; see decipher-make-checkpoint & decipher-restore-checkpoint
+for more information.
+
+While the cipher message may contain digits or punctuation, Decipher
+mode will ignore these characters.
+
+The buffer is made read-only so it can't be modified by normal
+Emacs commands.
+
+Decipher supports Font Lock mode.  To use it, you can also add
+    (add-hook 'decipher-mode-hook 'turn-on-font-lock)
+See the variable `decipher-font-lock-keywords' if you want to customize
+the faces used.  I'd like to thank Simon Marshall for his help in making
+Decipher work well with Font Lock.
+
+Things To Do:
+
+Email me if you have any suggestions or would like to help.
+But be aware that I work on Decipher only sporadically.
+
+1. The consonant-line shortcut
+2. More functions for analyzing ciphertext
+
+===================================================================")

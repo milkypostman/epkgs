@@ -1,0 +1,57 @@
+(:summary    "Emulate mark, cut, copy and paste from Motif"
+ :created    "19950926"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Michael Staats" . "michael@thp.uni-duisburg.de"))
+ :maintainer ("Michael Staats" . "michael@thp.uni-duisburg.de")
+ :provided   (pc-select)
+ :keywords   ("convenience" "emulations")
+ :commentary "\
+This package emulates the mark, copy, cut and paste look-and-feel of motif
+programs (which is the same as the MAC gui and (sorry for that) MS-Windows).
+It modifies the keybindings of the cursor keys and the next, prior,
+home and end keys. They will modify mark-active.
+You can still get the old behavior of cursor moving with the
+control sequences C-f, C-b, etc.
+This package uses transient-mark-mode and
+delete-selection-mode.
+
+In addition to that all key-bindings from the pc-mode are
+done here too (as suggested by RMS).
+
+As I found out after I finished the first version, s-region.el tries
+to do the same.... But my code is a little more complete and using
+delete-selection-mode is very important for the look-and-feel.
+Pete Forman <pete.forman@airgun.wg.waii.com> provided some motif
+compliant keybindings which I added. I had to modify them a little
+to add the -mark and -nomark functionality of cursor moving.
+
+Credits:
+Many thanks to all who made comments.
+Thanks to RMS and Ralf Muschall <prm@rz.uni-jena.de> for criticism.
+Kevin Cutts <cutts@ukraine.corp.mot.com> added the beginning-of-buffer
+and end-of-buffer functions which I modified a little.
+David Biesack <sasdjb@unx.sas.com> suggested some more cleanup.
+Thanks to Pete Forman <pete.forman@airgun.wg.waii.com>
+for additional motif keybindings.
+Thanks to jvromans@squirrel.nl (Johan Vromans) for a bug report
+concerning setting of this-command.
+Dan Nicolaescu <done@ece.arizona.ro> suggested suppressing the
+scroll-up/scroll-down error.
+Eli Barzilay (eli@cs.bgu.ac.il) suggested the sexps functions and
+keybindings.
+
+Ok, some details about the idea of PC Selection mode:
+
+ o The standard keys for moving around (right, left, up, down, home, end,
+   prior, next, called \"move-keys\" from now on) will always de-activate
+   the mark.
+ o If you press \"Shift\" together with the \"move-keys\", the region
+   you pass along is activated
+ o You have the copy, cut and paste functions (as in many other programs)
+   which will operate on the active region
+   It was not possible to bind them to C-v, C-x and C-c for obvious
+   emacs reasons.
+   They will be bound according to the \"old\" behavior to S-delete (cut),
+   S-insert (paste) and C-insert (copy). These keys do the same in many
+   other programs.")

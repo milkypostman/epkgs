@@ -5,7 +5,8 @@
  :authors    (("Ulf Jasper" . "ulf.jasper@web.de"))
  :maintainer ("Ulf Jasper" . "ulf.jasper@web.de")
  :provided   (bubbles)
- :required   ((("emacs" cl gamegrid)))
+ :required   ((("cl" cl)
+	       ("gamegrid" gamegrid)))
  :keywords   ("games")
  :homepage   "http://ulf.epplejasper.de/EmacsFunStuff.html"
  :commentary "\

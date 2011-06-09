@@ -7,7 +7,9 @@
  :maintainer ("Yuuichi Teranishi" . "teranisi@gohome.org")
  :provided   (ept ept-align ept-dump ept-kochi-x ept-mode ept-outline ept-setup ept-solaris ept-w3m)
  :required   ((("apel" product)
-	       ("emacs" cl derived outline)
+	       ("cl" cl)
+	       ("emacs-core" derived)
+	       ("outline" outline)
 	       ("w3m" w3m)))
  :keywords   ("presentation")
  :homepage   "http://elpoint.sourceforge.net/"

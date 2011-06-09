@@ -9,8 +9,8 @@
 	      ("Juergen Hoetzel" . "juergen@archlinux.org"))
  :maintainer ("Jeffrey Chu" . "jochu0@gmail.com")
  :provided   (swank-clojure-extra)
- :required   ((("clojure-mode" clojure-mode)
-	       ("emacs" assoc)
+ :required   ((("assoc" assoc)
+	       ("clojure-mode" clojure-mode)
 	       ("slime" slime)))
  :keywords   ("languages" "lisp")
  :homepage   "https://github.com/vu3rdd/swank-clojure-extra"

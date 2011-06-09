@@ -1,0 +1,27 @@
+(:summary    "Unique buffer names dependent on file name"
+ :created    "1989"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Dick King" . "king@reasoning.com"))
+ :maintainer ("FSF")
+ :provided   (uniquify)
+ :required   ((("cl" cl)))
+ :keywords   ("files")
+ :wikipage   "http://www.emacswiki.org/uniquify"
+ :commentary "\
+Emacs's standard method for making buffer names unique adds <2>, <3>,
+etc. to the end of (all but one of) the buffers.  This file replaces
+that behavior, for buffers visiting files and dired buffers, with a
+uniquification that adds parts of the file name until the buffer names
+are unique.  For instance, buffers visiting /u/mernst/tmp/Makefile and
+/usr/projects/zaphod/Makefile would be named Makefile|tmp and
+Makefile|zaphod, respectively (instead of Makefile and Makefile<2>).
+Other buffer name styles are also available.
+
+To use this file, do (require 'uniquify)
+and set uniquify-buffer-name-style to one of its non-nil alternative values.
+
+For other options, see \"User-visible variables\", below.
+
+A version of uniquify.el that works under Emacs 18, Emacs 19, XEmacs,
+and InfoDock is available from the maintainer.")

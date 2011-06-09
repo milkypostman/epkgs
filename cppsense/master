@@ -3,4 +3,5 @@
  :updated    "2007"
  :license    "GPL-2"
  :provided   (cppsense)
- :required   ((("emacs" cl etags))))
+ :required   ((("cl" cl)
+	       ("etags" etags))))

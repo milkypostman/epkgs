@@ -5,7 +5,7 @@
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")
  :provided   (apropos-fn+var)
- :required   ((("emacs" apropos)))
+ :required   ((("apropos" apropos)))
  :keywords   ("apropos")
  :commentary "\
 Standard `apropos' commands `apropos-variable' and

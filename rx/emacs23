@@ -1,0 +1,89 @@
+(:summary    "Sexp notation for regular expressions"
+ :created    "2001"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Gerd Moellmann" . "gerd@gnu.org"))
+ :maintainer ("FSF")
+ :provided   (rx)
+ :keywords   ("strings" "regexps" "extensions")
+ :wikipage   "http://www.emacswiki.org/rx"
+ :commentary "\
+This is another implementation of sexp-form regular expressions.
+It was unfortunately written without being aware of the Sregex
+package coming with Emacs, but as things stand, Rx completely
+covers all regexp features, which Sregex doesn't, doesn't suffer
+from the bugs mentioned in the commentary section of Sregex, and
+uses a nicer syntax (IMHO, of course :-).
+
+This significantly extended version of the original, is almost
+compatible with Sregex.  The only incompatibility I (fx) know of is
+that the `repeat' form can't have multiple regexp args.
+
+Now alternative forms are provided for a degree of compatibility
+with Shivers' attempted definitive SRE notation
+<URL:http://www.ai.mit.edu/~/shivers/sre.txt>.  SRE forms not
+catered for include: dsm, uncase, w/case, w/nocase, ,@<exp>,
+,<exp>, (word ...), word+, posix-string, and character class forms.
+Some forms are inconsistent with SRE, either for historical reasons
+or because of the implementation -- simple translation into Emacs
+regexp strings.  These include: any, word.  Also, case-sensitivity
+and greediness are controlled by variables external to the regexp,
+and you need to feed the forms to the `posix-' functions to get
+SRE's POSIX semantics.  There are probably more difficulties.
+
+Rx translates a sexp notation for regular expressions into the
+usual string notation.  The translation can be done at compile-time
+by using the `rx' macro.  It can be done at run-time by calling
+function `rx-to-string'.  See the documentation of `rx' for a
+complete description of the sexp notation.
+
+Some examples of string regexps and their sexp counterparts:
+
+\"^[a-z]*\"
+(rx (and line-start (0+ (in \"a-z\"))))
+
+\"\\n[^ \\t]\"
+(rx (and \"\\n\" (not blank))), or
+(rx (and \"\\n\" (not (any \" \\t\"))))
+
+\"\\\\*\\\\*\\\\* EOOH \\\\*\\\\*\\\\*\\n\"
+(rx \"*** EOOH ***\\n\")
+
+\"\\\\<\\\\(catch\\\\|finally\\\\)\\\\>[^_]\"
+(rx (and word-start (submatch (or \"catch\" \"finally\")) word-end
+         (not (any ?_))))
+
+\"[ \\t\\n]*:\\\\([^:]+\\\\|$\\\\)\"
+(rx (and (zero-or-more (in \" \\t\\n\")) \":\"
+         (submatch (or line-end (one-or-more (not (any ?:)))))))
+
+\"^content-transfer-encoding:\\\\(\\n?[\\t ]\\\\)*quoted-printable\\\\(\\n?[\\t ]\\\\)*\"
+(rx (and line-start
+         \"content-transfer-encoding:\"
+         (+ (? ?\\n)) blank
+	    \"quoted-printable\"
+	    (+ (? ?\\n)) blank))
+
+(concat \"^\\\\(?:\" something-else \"\\\\)\")
+(rx (and line-start (eval something-else))), statically or
+(rx-to-string '(and line-start ,something-else)), dynamically.
+
+(regexp-opt '(STRING1 STRING2 ...))
+(rx (or STRING1 STRING2 ...)), or in other words, `or' automatically
+calls `regexp-opt' as needed.
+
+\"^;;\\\\s-*\\n\\\\|^\\n\"
+(rx (or (and line-start \";;\" (0+ space) ?\\n)
+        (and line-start ?\\n)))
+
+\"\\\\$[I]d: [^ ]+ \\\\([^ ]+\\\\) \"
+(rx (and \"$Id: \"
+         (1+ (not (in \" \")))
+         \" \"
+         (submatch (1+ (not (in \" \"))))
+         \" \"))
+
+\"\\\\\\\\\\\\\\\\\\\\[\\\\w+\"
+(rx (and ?\\\\ ?\\\\ ?\\[ (1+ word)))
+
+etc.")

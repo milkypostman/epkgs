@@ -4,7 +4,7 @@
  :license    "GPL-2"
  :authors    (("Zajcev Evgeny" . "zevlg@yandex.ru"))
  :provided   (tpum)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("tools" "menus")
  :homepage   "http://lgarc.narod.ru/xemacs/"
  :commentary "\

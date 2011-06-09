@@ -4,7 +4,9 @@
  :authors    (("Torsten Hilbrich" . "dictionary@myrkr.in-berlin.de"))
  :maintainer ("Torsten Hilbrich" . "dictionary@myrkr.in-berlin.de")
  :provided   (connection dictionary link)
- :required   ((("emacs" cl custom easymenu tooltip)))
+ :required   ((("cl" cl)
+	       ("custom" custom)
+	       ("easymenu" easymenu)
+	       ("emacs-core" tooltip)))
  :keywords   ("interface" "dictionary")
- :homepage   "http://me.in-berlin.de/~myrkr/dictionary/download.html"
- :wikipage   "http://www.emacswiki.org/DictionaryMode")
+ :homepage   "http://me.in-berlin.de/~myrkr/dictionary/download.html")

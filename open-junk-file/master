@@ -5,7 +5,7 @@
  :authors    (("rubikitch" . "rubikitch@ruby-lang.org"))
  :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
  :provided   (open-junk-file)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("convenience" "tools")
  :commentary "\
 M-x `open-junk-file' opens a new file whose filename is derived from

@@ -3,6 +3,6 @@
  :authors    (("Marco Baringer" . "mb@bese.it"))
  :maintainer ("Marco Baringer" . "mb@bese.it")
  :provided   (vnesting)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :homepage   "http://www.emacswiki.org/VnestingMode"
  :wikipage   "http://www.emacswiki.org/VnestingMode")

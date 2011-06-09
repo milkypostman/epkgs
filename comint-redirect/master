@@ -4,4 +4,4 @@
  :authors    (("Peter Breton"))
  :maintainer ("Peter Breton")
  :provided   (comint-redirect)
- :required   ((("emacs" comint))))
+ :required   ((("comint" comint))))

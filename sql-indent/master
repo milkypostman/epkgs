@@ -6,7 +6,8 @@
 	      ("Matt Henry" . "mcthenry+gnu@gmail.com"))
  :maintainer ("Matt Henry" . "mcthenry+gnu@gmail.com")
  :provided   (sql-indent)
- :required   ((("emacs" regexp-opt sql)))
+ :required   ((("regexp-opt" regexp-opt)
+	       ("sql" sql)))
  :keywords   ("languages")
  :homepage   "http://www.emacswiki.org/SqlIndent"
  :wikipage   "http://www.emacswiki.org/SqlIndent"

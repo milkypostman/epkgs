@@ -6,7 +6,7 @@
  :authors    (("tlh" . "thunkout@gmail.com"))
  :maintainer ("tlh" . "thunkout@gmail.com")
  :provided   (workgroups)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("session" "management" "window-configuration" "persistence")
  :homepage   "https://github.com/tlh/workgroups.el"
  :wikipage   "http://www.emacswiki.org/WorkgroupsForWindows"

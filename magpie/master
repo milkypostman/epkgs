@@ -3,7 +3,7 @@
  :license    "GPL-2"
  :maintainer ("Aidan Schofield")
  :provided   (magpie)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("acronym" "expansion" "dabbrev" "hippie")
  :homepage   "http://www.emacswiki.org/MagpieExpansion"
  :wikipage   "http://www.emacswiki.org/MagpieExpansion"

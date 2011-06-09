@@ -5,7 +5,9 @@
  :license    "GPL-3"
  :maintainer ("Jose E. Marchesi")
  :provided   (abook)
- :required   ((("emacs" cl mm-decode url)
+ :required   ((("cl" cl)
+	       ("gnus" mm-decode)
+	       ("url" url)
 	       ("vcard" vcard)))
  :keywords   ("contacts" "applications")
  :homepage   "http://www.nongnu.org/addressbook/"

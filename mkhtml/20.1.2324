@@ -5,7 +5,11 @@
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")
  :provided   (mkhtml mkhtml-htmlize)
- :required   ((("emacs" cl custom dired easymenu info))
+ :required   ((("cl" cl)
+	       ("custom" custom)
+	       ("dired" dired)
+	       ("easymenu" easymenu)
+	       ("info" info))
 	      (("info+" info+)))
  :keywords   ("tools" "hypermedia" "www" "info")
  :commentary "\

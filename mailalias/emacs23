@@ -1,0 +1,12 @@
+(:summary    "Expand and complete mailing address aliases"
+ :created    "1985"
+ :updated    "2011"
+ :license    "GPL-3"
+ :maintainer ("FSF")
+ :provided   (mailalias)
+ :required   ((("sendmail" sendmail)))
+ :keywords   ("mail")
+ :commentary "\
+Basic functions for defining and expanding mail aliases.
+These seal off the interface to the alias-definition parts of a
+.mailrc file formatted for BSD's Mail or USL's mailx.")

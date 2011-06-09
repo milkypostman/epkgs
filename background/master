@@ -1,4 +1,4 @@
 (:created    "1998"
  :updated    "1998"
  :provided   (background)
- :required   ((("emacs" shell))))
+ :required   ((("shell" shell))))

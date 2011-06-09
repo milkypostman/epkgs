@@ -6,6 +6,6 @@
  :authors    (("mooz" . "stillpedant@gmail.com"))
  :maintainer ("mooz" . "stillpedant@gmail.com")
  :provided   (epydoc)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("python" "anything" "imenu")
  :homepage   "https://github.com/mooz/epydoc")

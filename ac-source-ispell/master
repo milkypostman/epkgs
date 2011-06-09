@@ -7,7 +7,7 @@
  :maintainer ("tequilasunset" . "tequilasunset.mac@gmail.com")
  :provided   (ac-source-ispell)
  :required   ((("auto-complete" auto-complete)
-	       ("emacs" ispell)))
+	       ("ispell" ispell)))
  :keywords   ("ispell")
  :homepage   "http://bitbucket.org/tequilasunset/ac-source-ispell"
  :commentary "\

@@ -5,8 +5,9 @@
  :authors    (("Thomas Link"))
  :maintainer ("Thomas Link")
  :provided   (wordnet)
- :required   ((("emacs" ispell thingatpt)
-	       ("tellib" tellib)))
+ :required   ((("ispell" ispell)
+	       ("tellib" tellib)
+	       ("thingatpt" thingatpt)))
  :keywords   ("wordnet" "dictionary" "lookup")
  :homepage   "http://members.a1.net/t.link/CompEmacsWordnet.html"
  :commentary "\

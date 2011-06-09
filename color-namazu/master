@@ -4,8 +4,8 @@
  :maintainer ("Matsushita Akihisa" . "akihisa@mail.ne.jp")
  :provided   (color-namazu)
  :required   ((("color-occur" color-occur)
-	       ("emacs" view)
-	       ("namazu" namazu)))
+	       ("namazu" namazu)
+	       ("view" view)))
  :keywords   ("namazu" "highlight")
  :homepage   "http://www.bookshelf.jp/"
  :commentary "\

@@ -2,6 +2,6 @@
  :license    "GPL-2"
  :provided   (oremus)
  :required   ((("autocue" autocue)
-	       ("emacs" cl)
+	       ("cl" cl)
 	       ("w3" w3)))
  :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/webstuff/")

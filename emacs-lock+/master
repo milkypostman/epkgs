@@ -4,7 +4,7 @@
  :license    "GPL-3"
  :authors    (("Michael Heerdegen"))
  :provided   (emacs-lock+)
- :required   ((("emacs" emacs-lock)))
+ :required   ((("emacs-lock" emacs-lock)))
  :keywords   ("lock" "extensions")
  :homepage   "http://www.emacswiki.org/EmacsLockPlus"
  :wikipage   "http://www.emacswiki.org/EmacsLockPlus"

@@ -5,9 +5,9 @@
  :authors    (("Damien Elmes" . "emacs@ichi2.net"))
  :maintainer ("Damien Elmes" . "emacs@ichi2.net")
  :provided   (fc)
- :required   ((("emacs" time-date)
-	       ("flashcard" flashcard)
-	       ("flashcard-sm5" flashcard-sm5))
+ :required   ((("flashcard" flashcard)
+	       ("flashcard-sm5" flashcard-sm5)
+	       ("gnus" time-date))
 	      ((nil kakasi)))
  :keywords   ("flashcard" "japanese")
  :homepage   "http://ichi2.net/flashcard/"

@@ -1,0 +1,10 @@
+(:summary    "WordStar emulation mode for GNU Emacs"
+ :created    "1991"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Juergen Nickelsen" . "nickel@cs.tu-berlin.de"))
+ :maintainer ("Juergen Nickelsen" . "nickel@cs.tu-berlin.de")
+ :provided   (ws-mode)
+ :keywords   ("emulations")
+ :commentary "\
+This emulates WordStar, with a major mode.")

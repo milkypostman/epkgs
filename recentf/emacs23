@@ -1,0 +1,21 @@
+(:summary    "Setup a menu of recently opened files"
+ :created    "199919"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("David Ponce" . "david@dponce.com"))
+ :maintainer ("David Ponce" . "david@dponce.com")
+ :provided   (recentf)
+ :required   ((("easymenu" easymenu)
+	       ("timer" timer)
+	       ("tree-widget" tree-widget)))
+ :keywords   ("files")
+ :commentary "\
+This package maintains a menu for visiting files that were operated
+on recently.  When enabled a new \"Open Recent\" sub menu is
+displayed in the \"File\" menu.  The recent files list is
+automatically saved across Emacs sessions.  You can customize the
+number of recent files displayed, the location of the menu and
+others options (see the source code for details).
+
+To enable this package, add the following to your .emacs:
+(recentf-mode 1)")

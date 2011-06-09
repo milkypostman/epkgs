@@ -7,7 +7,7 @@
  :provided   (crosshairs)
  :required   ((("col-highlight" col-highlight)
 	       ("hl-line+" hl-line+))
-	      (("emacs" hl-line)))
+	      (("hl-line" hl-line)))
  :keywords   ("faces" "frames" "emulation" "highlight" "cursor" "accessibility")
  :homepage   "http://www.emacswiki.org/CrosshairHighlighting"
  :wikipage   "http://www.emacswiki.org/CrosshairHighlighting"

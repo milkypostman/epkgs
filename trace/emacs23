@@ -1,0 +1,113 @@
+(:summary    "Tracing facility for Emacs Lisp functions"
+ :created    "19921215"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Hans Chalupsky" . "hans@cs.buffalo.edu"))
+ :maintainer ("FSF")
+ :provided   (trace)
+ :required   ((("advice" advice)))
+ :keywords   ("tools" "lisp")
+ :commentary "\
+Introduction:
+=============
+A simple trace package that utilizes advice.el. It generates trace
+information in a Lisp-style fashion and inserts it into a trace output
+buffer. Tracing can be done in the background (or silently) so that
+generation of trace output won't interfere with what you are currently
+doing.
+
+Requirement:
+============
+trace.el needs advice.el version 2.0 or later which you can get from the
+same place from where you got trace.el.
+
+Restrictions:
+=============
+- Traced subrs when called interactively will always show nil as the
+  value of their arguments.
+- Only functions/macros/subrs that are called via their function cell will
+  generate trace output, hence, you won't get trace output for:
+  + Subrs called directly from other subrs/C-code
+  + Compiled calls to subrs that have special byte-codes associated
+    with them (e.g., car, cdr, ...)
+  + Macros that were expanded during compilation
+- All the restrictions that apply to advice.el
+
+Installation:
+=============
+Put this file together with advice.el (version 2.0 or later) somewhere
+into your Emacs `load-path', byte-compile it/them for efficiency, and
+put the following autoload declarations into your .emacs
+
+   (autoload 'trace-function \"trace\" \"Trace a function\" t)
+   (autoload 'trace-function-background \"trace\" \"Trace a function\" t)
+
+or explicitly load it with (require 'trace) or (load \"trace\").
+
+Usage:
+======
+- To trace a function say `M-x trace-function' which will ask you for the
+  name of the function/subr/macro to trace, as well as for the buffer
+  into which trace output should go.
+- If you want to trace a function that switches buffers or does other
+  display oriented stuff use `M-x trace-function-background' which will
+  generate the trace output silently in the background without popping
+  up windows and doing other irritating stuff.
+- To untrace a function say `M-x untrace-function'.
+- To untrace all currently traced functions say `M-x untrace-all'.
+
+Examples:
+=========
+
+ (defun fact (n)
+   (if (= n 0) 1
+     (* n (fact (1- n)))))
+ fact
+
+ (trace-function 'fact)
+ fact
+
+ Now, evaluating this...
+
+ (fact 4)
+ 24
+
+ ...will generate the following in *trace-buffer*:
+
+ 1 -> fact: n=4
+ | 2 -> fact: n=3
+ | | 3 -> fact: n=2
+ | | | 4 -> fact: n=1
+ | | | | 5 -> fact: n=0
+ | | | | 5 <- fact: 1
+ | | | 4 <- fact: 1
+ | | 3 <- fact: 2
+ | 2 <- fact: 6
+ 1 <- fact: 24
+
+
+ (defun ack (x y z)
+   (if (= x 0)
+       (+ y z)
+     (if (and (<= x 2) (= z 0))
+         (1- x)
+       (if (and (> x 2) (= z 0))
+           y
+         (ack (1- x) y (ack x y (1- z)))))))
+ ack
+
+ (trace-function 'ack)
+ ack
+
+ Try this for some interesting trace output:
+
+ (ack 3 3 1)
+ 27
+
+
+The following does something similar to the functionality of the package
+log-message.el by Robert Potter, which is giving you a chance to look at
+messages that might have whizzed by too quickly (you won't see subr
+generated messages though):
+
+(trace-function-background 'message \"*Message Log*\")")

@@ -6,7 +6,8 @@
  :authors    (("Colin Walters" . "walters@verbum.org"))
  :maintainer ("Nick Hurley" . "hurley@cis.ohio-state.edu")
  :provided   (browse-kill-ring)
- :required   ((("emacs" cl derived overlay)))
+ :required   ((("cl" cl)
+	       ("emacs-core" derived overlay)))
  :keywords   ("convenience")
  :homepage   "https://github.com/todesschaf/browse-kill-ring"
  :wikipage   "http://www.emacswiki.org/BrowseKillRing"

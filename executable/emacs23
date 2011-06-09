@@ -1,0 +1,35 @@
+(:summary    "Base functionality for executable interpreter scripts"
+ :created    "1994"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Daniel Pfeiffer" . "occitan@esperanto.org"))
+ :maintainer ("Daniel Pfeiffer" . "occitan@esperanto.org")
+ :provided   (executable)
+ :required   ((("compile" compile)))
+ :keywords   ("languages" "unix")
+ :commentary "\
+executable.el is used by certain major modes to insert a suitable
+#! line at the beginning of the file, if the file does not already
+have one.
+
+Unless it has a magic number, a Unix file with executable mode is passed to
+a new instance of the running shell (or to a Bourne shell if a csh is
+running and the file starts with `:').  Only a shell can start such a file,
+exec() cannot, which is why it is important to have a magic number in every
+executable script.  Such a magic number is made up by the characters `#!'
+the filename of an interpreter (in COFF, ELF or somesuch format) and one
+optional argument.
+
+This library is for certain major modes like sh-, awk-, perl-, tcl- or
+makefile-mode to insert or update a suitable #! line at the beginning of
+the file, if the file does not already have one and the file is not a
+default file of that interpreter (like .profile or makefile).  It also
+makes the file executable if it wasn't, as soon as it's saved.
+
+It also allows debugging scripts, with an adaptation of compile, as far
+as interpreters give out meaningful error messages.
+
+Modes that use this should nconc `executable-map' to the end of their own
+keymap and `executable-font-lock-keywords' to the end of their own font
+lock keywords.  Their mode-setting commands should call
+`executable-set-magic'.")

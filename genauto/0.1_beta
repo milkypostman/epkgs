@@ -3,5 +3,5 @@
  :authors    (("Deepak Goel" . "deego@gnufans.org"))
  :maintainer ("Deepak Goel" . "deego@gnufans.org")
  :provided   (genauto)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :homepage   "http://www.gnufans.net/~deego/emacs.html")

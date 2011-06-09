@@ -1,0 +1,11 @@
+(:summary    "Major mode for editing Texinfo files"
+ :created    "1985"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Robert J. Chassell"))
+ :maintainer ("FSF")
+ :provided   (texinfo)
+ :required   ((("cl" cl)
+	       ("tex-mode" tex-mode)))
+ :keywords   ("maint" "tex" "docs")
+ :wikipage   "http://www.emacswiki.org/Texinfo")

@@ -6,7 +6,8 @@
  :authors    (("Edward O'Connor" . "hober0@gmail.com"))
  :maintainer ("Edward O'Connor" . "hober0@gmail.com")
  :provided   (wordnik)
- :required   ((("emacs" json url)))
+ :required   ((("json" json)
+	       ("url" url)))
  :keywords   ("convenience")
  :homepage   "http://edward.oconnor.cx/elisp/"
  :commentary "\

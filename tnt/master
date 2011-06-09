@@ -3,5 +3,6 @@
  :updated    "1998"
  :license    "as-is"
  :provided   (tnt tnt-proxy tnt-tabs toc tocstr)
- :required   ((("emacs" cl custom)))
+ :required   ((("cl" cl)
+	       ("custom" custom)))
  :homepage   "http://tnt.sourceforge.net/")

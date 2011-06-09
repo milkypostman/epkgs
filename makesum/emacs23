@@ -1,0 +1,10 @@
+(:summary    "Generate key binding summary for Emacs"
+ :created    "1985"
+ :updated    "2011"
+ :license    "GPL-3"
+ :maintainer ("FSF")
+ :provided   (makesum)
+ :keywords   ("help")
+ :commentary "\
+Displays a nice human-readable summary of all keybindings in a
+two-column format.")

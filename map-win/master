@@ -5,7 +5,7 @@
  :authors    (("Noah Friedman" . "friedman@prep.ai.mit.edu"))
  :maintainer (nil . "friedman@prep.ai.mit.edu")
  :provided   (map-win)
- :required   ((("emacs" backquote)))
+ :required   ((("emacs-core" backquote)))
  :keywords   ("extensions" "macros")
  :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
  :commentary "\

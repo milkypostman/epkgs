@@ -5,7 +5,8 @@
  :authors    (("Kevin Ryde" . "user42@zip.com.au"))
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (ffap-include-start)
- :required   ((("emacs" advice thingatpt)))
+ :required   ((("advice" advice)
+	       ("thingatpt" thingatpt)))
  :keywords   ("files")
  :homepage   "http://user42.tuxfamily.org/ffap-include-start/index.html"
  :commentary "\

@@ -6,7 +6,8 @@
 	      (nil . "eduardoochs@gmail.com"))
  :maintainer ("Shaun Johnson" . "shaun@slugfest.demon.co.uk")
  :provided   (linkd)
- :required   ((("emacs" cl easymenu))
+ :required   ((("cl" cl)
+	       ("easymenu" easymenu))
 	      ((nil htmlize)))
  :keywords   ("hypermedia" "help")
  :homepage   "http://www.emacswiki.org/LinkdMode"

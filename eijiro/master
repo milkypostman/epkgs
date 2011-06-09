@@ -6,7 +6,8 @@
  :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
  :provided   (eijiro)
  :required   ((("anything" anything anything-match-plugin)
-	       ("emacs" cl thingatpt)))
+	       ("cl" cl)
+	       ("thingatpt" thingatpt)))
  :keywords   ("languages" "data" "dictionary")
  :commentary "\
 インターネットで販売されている最強の英和辞典・和英辞典である英辞郎を

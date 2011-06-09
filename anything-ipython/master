@@ -4,7 +4,7 @@
  :authors    (("Thierry Volpiatto"))
  :maintainer ("Thierry Volpiatto")
  :provided   (anything-ipython)
- :required   ((("emacs" cl)
+ :required   ((("cl" cl)
 	       (nil ipython)))
  :keywords   ("ipython" "python")
  :homepage   "http://mercurial.intuxication.org/hg/anythingipython"

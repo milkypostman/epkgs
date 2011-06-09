@@ -6,7 +6,7 @@
  :authors    ((nil . "tm8st@hotmail.co.jp"))
  :maintainer (nil . "tm8st@hotmail.co.jp")
  :provided   (generic-range-opt)
- :required   ((("emacs" cl)
+ :required   ((("cl" cl)
 	       ("thing-opt" thing-opt)))
  :keywords   ("convenience" "delete" "kill" "copy" "mark")
  :homepage   "https://github.com/tm8st/emacs-generic-range-opt"

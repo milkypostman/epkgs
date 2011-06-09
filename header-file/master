@@ -5,7 +5,7 @@
  :authors    (("Kirk Kelsey"))
  :maintainer ("Kirk Kelsey")
  :provided   (header-file)
- :required   ((("emacs" find-file)))
+ :required   ((("find-file" find-file)))
  :homepage   "https://github.com/0x4b/header-file-mode"
  :commentary "\
 By assigning header-file-mode to .h files in auto-mode-alist, header files

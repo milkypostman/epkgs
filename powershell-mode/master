@@ -5,7 +5,8 @@
  :license    "GPL-3"
  :provided   (powershell-mode)
  :required   (nil
-	      (("emacs" compile speedbar)))
+	      (("cedet" speedbar)
+	       ("compile" compile)))
  :keywords   ("powershell" "monad" "msh")
  :homepage   "https://github.com/fperrin/powershell-mode"
  :wikipage   "http://www.emacswiki.org/PowerShell")

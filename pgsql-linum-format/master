@@ -5,6 +5,6 @@
  :authors    (("Dimitri Fontaine" . "dim@tapoueh.org"))
  :maintainer ("Dimitri Fontaine" . "dim@tapoueh.org")
  :provided   (pgsql-linum-format)
- :required   ((("emacs" linum)))
+ :required   ((("linum" linum)))
  :keywords   ("postgresql" "plpgsql" "linum")
  :homepage   "https://github.com/dimitri/pgsql-linum-format")

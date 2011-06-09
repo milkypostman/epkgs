@@ -5,7 +5,7 @@
  :authors    (("Toby Cubitt" . "toby-undo-tree@dr-qubit.org"))
  :maintainer ("Toby Cubitt" . "toby-undo-tree@dr-qubit.org")
  :provided   (undo-tree)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("undo" "redo" "history" "tree")
  :homepage   "http://www.dr-qubit.org/emacs.php"
  :wikipage   "http://www.emacswiki.org/UndoTree"

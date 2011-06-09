@@ -6,7 +6,7 @@
  :authors    (("David O'Toole" . "dto@gnu.org"))
  :maintainer ("David O'Toole" . "dto@gnu.org")
  :provided   (gestures)
- :required   ((("emacs" strokes)))
+ :required   ((("strokes" strokes)))
  :homepage   "https://github.com/dto/emacs-gestures"
  :commentary "\
 Here is my preliminary configuration and stroke library for using

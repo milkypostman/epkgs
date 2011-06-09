@@ -3,7 +3,7 @@
  :license    "GPL-2"
  :maintainer ("Phillip Lord" . "phillip.lord@newcastle.ac.uk")
  :provided   (muse-trail)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :homepage   "http://homepages.cs.ncl.ac.uk/phillip.lord/emacs.html"
  :commentary "\
 This file provides the ability to add \"trails\" through a set of muse files;

@@ -6,7 +6,8 @@
  :authors    (("Thierry Volpiatto - thierry dot volpiatto at gmail dot com"))
  :maintainer ("Thierry Volpiatto")
  :provided   (anything-traverse iterator traverselisp)
- :required   ((("emacs" cl derived)))
+ :required   ((("cl" cl)
+	       ("emacs-core" derived)))
  :keywords   ("data" "regexp")
  :homepage   "http://mercurial.intuxication.org/hg/traverselisp"
  :wikipage   "http://www.emacswiki.org/TraverseDirectory"

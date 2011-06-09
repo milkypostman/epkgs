@@ -3,7 +3,7 @@
  :license    "GPL-2"
  :maintainer ("Aidan Schofield")
  :provided   (move-and)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("delete" "kill" "copy" "keys")
  :homepage   "http://www.emacswiki.org/DeleteKillAndCopy"
  :wikipage   "http://www.emacswiki.org/DeleteKillAndCopy"

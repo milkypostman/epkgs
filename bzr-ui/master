@@ -5,7 +5,7 @@
  :authors    (("Mike Mattie"))
  :maintainer ("Mike Mattie")
  :provided   (bzr-ui)
- :required   ((("emacs" vc-bzr)
+ :required   ((("vc" vc-bzr)
 	       (nil cm-path)))
  :commentary "\
 Utility functions to navigate a working copy. It assumes that all of

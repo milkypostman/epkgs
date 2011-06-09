@@ -6,7 +6,7 @@
  :authors    ((nil . "doom@kzsu.stanford.edu"))
  :maintainer (nil . "doom@kzsu.stanford.edu")
  :provided   (perlnow)
- :required   ((("emacs" cl)
+ :required   ((("cl" cl)
 	       ("template" template)))
  :homepage   "https://github.com/doomvox/perlnow"
  :wikipage   "http://www.emacswiki.org/PerlNow"

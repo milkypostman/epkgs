@@ -6,7 +6,7 @@
  :authors    (("Takahiro HIMURA" . "taka@himura.jp"))
  :maintainer ("Takahiro HIMURA" . "taka@himura.jp")
  :provided   (howm-gtd)
- :required   ((("emacs" cl)
+ :required   ((("cl" cl)
 	       ("howm" action-lock howm)))
  :keywords   ("calendar" "docs")
  :homepage   "https://github.com/himura/howm-gtd")

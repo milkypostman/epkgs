@@ -1,6 +1,7 @@
 (:summary    "Indentation support for shell-script modes for some shells"
  :provided   (shindent)
- :required   ((("emacs" advice sh-script)))
+ :required   ((("advice" advice)
+	       ("sh-script" sh-script)))
  :commentary "\
 This is an \"add-on\" for sh-script.el to implementation indentation
 for some shells.   csh derivatives are not supported,  but sh

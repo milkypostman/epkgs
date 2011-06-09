@@ -3,7 +3,8 @@
  :updated    "2003"
  :license    "GPL-2"
  :provided   (mtorus)
- :required   ((("emacs" cl timer)))
+ :required   ((("cl" cl)
+	       ("timer" timer)))
  :keywords   ("bookmarks" "navigation" "tools" "extensions" "user")
  :homepage   "http://www.skamphausen.de/cgi-bin/ska/mtorus"
  :wikipage   "http://www.emacswiki.org/MTorus"

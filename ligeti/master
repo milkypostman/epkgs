@@ -5,6 +5,6 @@
  :authors    (("David O'Toole" . "dto@gnu.org"))
  :maintainer ("David O'Toole" . "dto@gnu.org")
  :provided   (ligeti)
- :required   ((("csound-x" csound-x)
-	       ("emacs" cl)))
+ :required   ((("cl" cl)
+	       ("csound-x" csound-x)))
  :keywords   ("multimedia"))

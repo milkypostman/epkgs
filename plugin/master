@@ -2,7 +2,7 @@
  :updated    "2003"
  :license    "GPL-2"
  :provided   (plugin)
- :required   ((("emacs" cl)
+ :required   ((("cl" cl)
 	       ("loop-constructs" loop-constructs)
 	       ("record" record)))
  :homepage   "http://gmarceau.qc.ca/")

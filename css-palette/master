@@ -4,7 +4,7 @@
  :authors    (("but please"))
  :maintainer ("but please")
  :provided   (css-palette)
- :required   ((("emacs" cl)
+ :required   ((("cl" cl)
 	       ("nxhtml" css-color)))
  :keywords   ("processes" "css" "multimedia" "extensions" "tools")
  :homepage   "http://niels.kicks-ass.org/"

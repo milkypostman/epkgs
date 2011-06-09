@@ -5,7 +5,8 @@
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")
  :provided   (help-macro+)
- :required   ((("emacs" backquote help-macro)))
+ :required   ((("emacs-core" backquote)
+	       ("help-macro" help-macro)))
  :keywords   ("help")
  :commentary "\
 Extensions to `help-macro.el'.

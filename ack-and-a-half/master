@@ -6,7 +6,10 @@
  :authors    (("Jacob Helwig" . "jacob+ack@technosorcery.net"))
  :maintainer ("Jacob Helwig" . "jacob+ack@technosorcery.net")
  :provided   (ack-and-a-half)
- :required   ((("emacs" cl compile grep iswitchb)))
+ :required   ((("cl" cl)
+	       ("compile" compile)
+	       ("grep" grep)
+	       ("iswitchb" iswitchb)))
  :homepage   "http://technosorcery.net"
  :commentary "\
 ack-and-a-half.el provides a simple compilation mode for the perl

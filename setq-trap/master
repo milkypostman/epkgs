@@ -5,7 +5,7 @@
  :authors    (("Noah Friedman" . "friedman@prep.ai.mit.edu"))
  :maintainer (nil . "friedman@prep.ai.mit.edu")
  :provided   (setq-trap)
- :required   ((("emacs" backquote)))
+ :required   ((("emacs-core" backquote)))
  :keywords   ("extensions")
  :homepage   "ftp://ftp.splode.com/pub/users/friedman/emacs-lisp/"
  :commentary "\

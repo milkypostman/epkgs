@@ -6,7 +6,7 @@
  :authors    (("Jonas Bernoulli" . "jonas@bernoul.li"))
  :maintainer ("Jonas Bernoulli" . "jonas@bernoul.li")
  :provided   (vcomp)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("versions")
  :homepage   "https://github.com/tarsius/vcomp"
  :commentary "\

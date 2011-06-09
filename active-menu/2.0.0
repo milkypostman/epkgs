@@ -1,6 +1,6 @@
 (:license    "GPL-2"
  :provided   (active-menu)
- :required   ((("emacs" timer)))
+ :required   ((("timer" timer)))
  :homepage   "http://www.skamphausen.de/cgi-bin/ska/"
  :wikipage   "http://www.emacswiki.org/ActiveMenu"
  :commentary "\

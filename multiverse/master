@@ -3,7 +3,7 @@
  :updated    "20081217"
  :license    "GPL-2"
  :provided   (multiverse)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :homepage   "http://www.emacswiki.org/Multiverse"
  :wikipage   "http://www.emacswiki.org/Multiverse"
  :commentary "\

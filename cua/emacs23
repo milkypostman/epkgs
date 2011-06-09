@@ -1,0 +1,242 @@
+(:summary    "Emulate CUA key bindings"
+ :created    "1997"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Kim F. Storm" . "storm@cua.dk"))
+ :maintainer ("Kim F. Storm" . "storm@cua.dk")
+ :provided   (cua-base cua-gmrk cua-rect)
+ :required   ((("rect" rect)))
+ :keywords   ("keyboard" "emulations" "convenience" "cua")
+ :homepage   "http://www.cua.dk/cua.html"
+ :wikipage   "http://www.emacswiki.org/CuaMode"
+ :commentary "\
+This is the CUA package which provides a complete emulation of the
+standard CUA key bindings (Motif/Windows/Mac GUI) for selecting and
+manipulating the region where S-<movement> is used to highlight &
+extend the region.
+
+CUA style key bindings for cut and paste
+----------------------------------------
+
+This package allows the C-z, C-x, C-c, and C-v keys to be
+bound appropriately according to the Motif/Windows GUI, i.e.
+	C-z	-> undo
+	C-x	-> cut
+	C-c	-> copy
+	C-v	-> paste
+
+The tricky part is the handling of the C-x and C-c keys which
+are normally used as prefix keys for most of emacs' built-in
+commands.  With CUA they still do!!!
+
+Only when the region is currently active (and highlighted since
+transient-mark-mode is used), the C-x and C-c keys will work as CUA
+keys
+	C-x -> cut
+	C-c -> copy
+When the region is not active, C-x and C-c works as prefix keys!
+
+This probably sounds strange and difficult to get used to - but
+based on my own experience and the feedback from many users of
+this package, it actually works very well and users adapt to it
+instantly - or at least very quickly.  So give it a try!
+... and in the few cases where you make a mistake and accidentally
+delete the region - you just undo the mistake (with C-z).
+
+If you really need to perform a command which starts with one of
+the prefix keys even when the region is active, you have three options:
+- press the prefix key twice very quickly (within 0.2 seconds),
+- press the prefix key and the following key within 0.2 seconds, or
+- use the SHIFT key with the prefix key, i.e. C-X or C-C
+
+This behavior can be customized via the
+cua-prefix-override-inhibit-delay variable.
+
+In addition to using the shifted movement keys, you can also use
+[C-space] to start the region and use unshifted movement keys to extend
+it. To cancel the region, use [C-space] or [C-g].
+
+If you prefer to use the standard emacs cut, copy, paste, and undo
+bindings, customize cua-enable-cua-keys to nil.
+
+
+Typing text replaces the region
+-------------------------------
+
+When the region is active, i.e. highlighted, the text in region is
+replaced by the text you type.
+
+The replaced text is saved in register 0 which can be inserted using
+the key sequence M-0 C-v (see the section on register support below).
+
+If you have just replaced a highlighted region with typed text,
+you can repeat the replace with M-v.  This will search forward
+for a streach of text identical to the previous contents of the
+region (i.e. the contents of register 0) and replace it with the
+text you typed to replace the original region.  Repeating M-v will
+replace the next matching region and so on.
+
+Example:  Suppose you have a line like this
+  The redo operation will redo the last redoable command
+which you want to change into
+  The repeat operation will repeat the last repeatable command
+This is done by highlighting the first occurrence of \"redo\"
+and type \"repeat\" M-v M-v.
+
+Note: Since CUA-mode duplicates the functionality of the
+delete-selection-mode, that mode is automatically disabled when
+CUA-mode is enabled.
+
+
+CUA mode indications
+--------------------
+You can choose to let CUA use different cursor colors to indicate
+overwrite mode and read-only buffers.  For example, the following
+setting will use a RED cursor in normal (insertion) mode in
+read-write buffers, a YELLOW cursor in overwrite mode in read-write
+buffers, and a GREEN cursor read-only buffers:
+
+ (setq cua-normal-cursor-color \"red\")
+ (setq cua-overwrite-cursor-color \"yellow\")
+ (setq cua-read-only-cursor-color \"green\")
+
+
+CUA register support
+--------------------
+Emacs' standard register support is also based on a separate set of
+\"register commands\".
+
+CUA's register support is activated by providing a numeric
+prefix argument to the C-x, C-c, and C-v commands. For example,
+to copy the selected region to register 2, enter [M-2 C-c].
+Or if you have activated the keypad prefix mode, enter [kp-2 C-c].
+
+And CUA will copy and paste normal region as well as rectangles
+into the registers, i.e. you use exactly the same command for both.
+
+In addition, the last highlighted text that is deleted (not
+copied), e.g. by [delete] or by typing text over a highlighted
+region, is automatically saved in register 0, so you can insert it
+using [M-0 C-v].
+
+CUA rectangle support
+---------------------
+Emacs' normal rectangle support is based on interpreting the region
+between the mark and point as a \"virtual rectangle\", and using a
+completely separate set of \"rectangle commands\" [C-x r ...] on the
+region to copy, kill, fill a.s.o. the virtual rectangle.
+
+cua-mode's superior rectangle support uses a true visual
+representation of the selected rectangle, i.e. it highlights the
+actual part of the buffer that is currently selected as part of the
+rectangle.  Unlike emacs' traditional rectangle commands, the
+selected rectangle always as straight left and right edges, even
+when those are in the middle of a TAB character or beyond the end
+of the current line.  And it does this without actually modifying
+the buffer contents (it uses display overlays to visualize the
+virtual dimensions of the rectangle).
+
+This means that cua-mode's rectangles are not limited to the actual
+contents of the buffer, so if the cursor is currently at the end of a
+short line, you can still extend the rectangle to include more columns
+of longer lines in the same rectangle.  And you can also have the
+left edge of a rectangle start in the middle of a TAB character.
+Sounds strange? Try it!
+
+To start a rectangle, use [C-return] and extend it using the normal
+movement keys (up, down, left, right, home, end, C-home,
+C-end). Once the rectangle has the desired size, you can cut or
+copy it using C-x and C-c (or C-w and M-w), and you can
+subsequently insert it - as a rectangle - using C-v (or C-y).  So
+the only new command you need to know to work with cua-mode
+rectangles is C-return!
+
+Normally, when you paste a rectangle using C-v (C-y), each line of
+the rectangle is inserted into the existing lines in the buffer.
+If overwrite-mode is active when you paste a rectangle, it is
+inserted as normal (multi-line) text.
+
+If you prefer the traditional rectangle marking (i.e. don't want
+straight edges), [M-p] toggles this for the current rectangle,
+or you can customize cua-virtual-rectangle-edges.
+
+And there's more: If you want to extend or reduce the size of the
+rectangle in one of the other corners of the rectangle, just use
+[return] to move the cursor to the \"next\" corner.  Or you can use
+the [M-up], [M-down], [M-left], and [M-right] keys to move the
+entire rectangle overlay (but not the contents) in the given
+direction.
+
+[C-return] cancels the rectangle
+[C-space] activates the region bounded by the rectangle
+
+If you type a normal (self-inserting) character when the rectangle is
+active, the character is inserted on the \"current side\" of every line
+of the rectangle.  The \"current side\" is the side on which the cursor
+is currently located. If the rectangle is only 1 column wide,
+insertion will be performed to the left when the cursor is at the
+bottom of the rectangle.  So, for example, to comment out an entire
+paragraph like this one, just place the cursor on the first character
+of the first line, and enter the following:
+    C-return M-} ; ; <space>  C-return
+
+cua-mode's rectangle support also includes all the normal rectangle
+functions with easy access:
+
+[M-a] aligns all words at the left edge of the rectangle
+[M-b] fills the rectangle with blanks (tabs and spaces)
+[M-c] closes the rectangle by removing all blanks at the left edge
+      of the rectangle
+[M-f] fills the rectangle with a single character (prompt)
+[M-i] increases the first number found on each line of the rectangle
+      by the amount given by the numeric prefix argument (default 1)
+      It recognizes 0x... as hexadecimal numbers
+[M-k] kills the rectangle as normal multi-line text (for paste)
+[M-l] downcases the rectangle
+[M-m] copies the rectangle as normal multi-line text (for paste)
+[M-n] fills each line of the rectangle with increasing numbers using
+      a supplied format string (prompt)
+[M-o] opens the rectangle by moving the highlighted text to the
+      right of the rectangle and filling the rectangle with blanks.
+[M-p] toggles virtual straight rectangle edges
+[M-P] inserts tabs and spaces (padding) to make real straight edges
+[M-q] performs text filling on the rectangle
+[M-r] replaces REGEXP (prompt) by STRING (prompt) in rectangle
+[M-R] reverse the lines in the rectangle
+[M-s] fills each line of the rectangle with the same STRING (prompt)
+[M-t] performs text fill of the rectangle with TEXT (prompt)
+[M-u] upcases the rectangle
+[M-|] runs shell command on rectangle
+[M-'] restricts rectangle to lines with CHAR (prompt) at left column
+[M-/] restricts rectangle to lines matching REGEXP (prompt)
+[C-?] Shows a brief list of the above commands.
+
+[M-C-up] and [M-C-down] scrolls the lines INSIDE the rectangle up
+and down; lines scrolled outside the top or bottom of the rectangle
+are lost, but can be recovered using [C-z].
+
+CUA Global Mark
+---------------
+The final feature provided by CUA is the \"global mark\", which
+makes it very easy to copy bits and pieces from the same and other
+files into the current text.  To enable and cancel the global mark,
+use [S-C-space].  The cursor will blink when the global mark
+is active.  The following commands behave differently when the global
+mark is set:
+<ch>  All characters (including newlines) you type are inserted
+      at the global mark!
+[C-x] If you cut a region or rectangle, it is automatically inserted
+      at the global mark, and the global mark is advanced.
+[C-c] If you copy a region or rectangle, it is immediately inserted
+      at the global mark, and the global mark is advanced.
+[C-v] Copies a single character to the global mark.
+[C-d] Moves (i.e. deletes and inserts) a single character to the
+      global mark.
+[backspace] deletes the character before the global mark, while
+[delete] deletes the character after the global mark.
+
+[S-C-space] Jumps to and cancels the global mark.
+[C-u S-C-space] Cancels the global mark (stays in current buffer).
+
+[TAB] Indents the current line or rectangle to the column of the
+      global mark.")

@@ -7,8 +7,9 @@
  :maintainer ("Lars Magne Ingebrigtsen" . "larsi@gnus.org")
  :provided   (dae)
  :required   ((("cddb" cddb)
-	       ("emacs" cl)
-	       (nil musicbrainz scan)))
+	       ("cl" cl)
+	       ("musicbrainz" musicbrainz)
+	       ("scan" scan)))
  :keywords   ("music")
  :homepage   "https://github.com/larsmagne/dae.el"
  :commentary "\

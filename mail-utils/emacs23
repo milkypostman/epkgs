@@ -1,0 +1,12 @@
+(:summary    "Utility functions used both by rmail and rnews"
+ :created    "1985"
+ :updated    "2011"
+ :license    "GPL-3"
+ :maintainer ("FSF")
+ :provided   (mail-utils)
+ :required   ((("lisp-mode" lisp-mode)
+	       ("rfc822" rfc822)))
+ :keywords   ("mail" "news")
+ :commentary "\
+Utility functions for mail and netnews handling.  These handle fine
+points of header parsing.")

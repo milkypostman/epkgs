@@ -1,5 +1,5 @@
 (:summary    "Major mode for editing .gle files"
  :license    "GPL-2"
  :provided   (gle-mode)
- :required   ((("emacs" lmenu)))
+ :required   ((("emacs-obsolete" lmenu)))
  :homepage   "http://glx.sourceforge.net/downloads/downloads.html")

@@ -2,7 +2,7 @@
  :created    "20051207"
  :license    "GPL-2"
  :provided   (winsize)
- :required   ((("emacs" windmove)))
+ :required   ((("windmove" windmove)))
  :commentary "\
 This file contains functions for interactive resizing of Emacs
 windows.  To use it put it in your `load-path' and add the following

@@ -8,8 +8,9 @@
 	      ("Phil Hagelberg" . "technomancy@gmail.com"))
  :maintainer ("Jeffrey Chu" . "jochu0@gmail.com")
  :provided   (clojure-mode clojure-test-mode)
- :required   ((("emacs" cl which-func)
-	       ("slime" slime)))
+ :required   ((("cl" cl)
+	       ("slime" slime)
+	       ("which-func" which-func)))
  :keywords   ("languages" "lisp")
  :wikipage   "http://www.emacswiki.org/ClojureMode"
  :commentary "\

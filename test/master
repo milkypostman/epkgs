@@ -6,5 +6,4 @@
  :authors    (("Wang Liang" . "netcasper@gmail.com"))
  :maintainer ("Wang Liang" . "netcasper@gmail.com")
  :provided   (test)
- :required   ((("emacs" cl)))
- :wikipage   "http://www.emacswiki.org/test")
+ :required   ((("cl" cl))))

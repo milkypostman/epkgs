@@ -6,8 +6,9 @@
  :authors    (("Erik Hetzner" . "ehetzner@gmail.com"))
  :maintainer ("Erik Hetzner" . "ehetzner@gmail.com")
  :provided   (atom-api atom-api-muse muse-atom)
- :required   ((("emacs" url url-auth url-cache xml)
-	       ("muse" muse muse-html)))
+ :required   ((("muse" muse muse-html)
+	       ("url" url url-auth url-cache)
+	       ("xml" xml)))
  :homepage   "https://launchpad.net/atompub.el"
  :wikipage   "http://www.emacswiki.org/EmacsAtomApi"
  :commentary "\

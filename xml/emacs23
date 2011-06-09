@@ -1,0 +1,57 @@
+(:summary    "XML parser"
+ :created    "2000"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Emmanuel Briot" . "briot@gnat.com"))
+ :maintainer ("Mark A. Hershberger" . "mah@everybody.org")
+ :provided   (xml)
+ :keywords   ("xml" "data")
+ :wikipage   "http://www.emacswiki.org/XmlMode"
+ :commentary "\
+This file contains a somewhat incomplete non-validating XML parser.  It
+parses a file, and returns a list that can be used internally by
+any other Lisp libraries.
+
+FILE FORMAT
+
+The document type declaration may either be ignored or (optionally)
+parsed, but currently the parsing will only accept element
+declarations.  The XML file is assumed to be well-formed.  In case
+of error, the parsing stops and the XML file is shown where the
+parsing stopped.
+
+It also knows how to ignore comments and processing instructions.
+
+The XML file should have the following format:
+   <node1 attr1=\"name1\" attr2=\"name2\" ...>value
+      <node2 attr3=\"name3\" attr4=\"name4\">value2</node2>
+      <node3 attr5=\"name5\" attr6=\"name6\">value3</node3>
+   </node1>
+Of course, the name of the nodes and attributes can be anything.  There can
+be any number of attributes (or none), as well as any number of children
+below the nodes.
+
+There can be only top level node, but with any number of children below.
+
+LIST FORMAT
+
+The functions `xml-parse-file', `xml-parse-region' and
+`xml-parse-tag' return a list with the following format:
+
+   xml-list   ::= (node node ...)
+   node       ::= (qname attribute-list . child_node_list)
+   child_node_list ::= child_node child_node ...
+   child_node ::= node | string
+   qname      ::= (:namespace-uri . \"name\") | \"name\"
+   attribute_list ::= ((qname . \"value\") (qname . \"value\") ...)
+                      | nil
+   string     ::= \"...\"
+
+Some macros are provided to ease the parsing of this list.
+Whitespace is preserved.  Fixme: There should be a tree-walker that
+can remove it.
+
+TODO:
+ * xml:base, xml:space support
+ * more complete DOCTYPE parsing
+ * pi support")

@@ -5,7 +5,7 @@
  :authors    (("Markus Triska" . "markus.triska@gmx.at"))
  :maintainer ("Markus Triska" . "markus.triska@gmx.at")
  :provided   (pointback)
- :required   ((("emacs" assoc)))
+ :required   ((("assoc" assoc)))
  :keywords   ("convenience")
  :homepage   "http://stud4.tuwien.ac.at/~e0225855/pointback/pointback.html"
  :commentary "\

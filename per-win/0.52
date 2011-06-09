@@ -6,8 +6,6 @@
  :maintainer ("Alp Aker" . "aker@pitt.edu")
  :provided   (per-win)
  :keywords   ("convenience")
- :homepage   "http://www.emacswiki.org/PerWin"
- :wikipage   "http://www.emacswiki.org/PerWin"
  :commentary "\
 Emacs conveniently allows one to work on different parts of the same
 buffer at the same time, but the rules governing buffer display are, for

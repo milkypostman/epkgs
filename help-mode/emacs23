@@ -1,0 +1,14 @@
+(:summary    "`help-mode' used by *Help* buffers"
+ :created    "1985"
+ :updated    "2011"
+ :license    "GPL-3"
+ :maintainer ("FSF")
+ :provided   (help-mode)
+ :required   ((("button" button)
+	       ("easymenu" easymenu)
+	       ("find-func" find-func)
+	       ("view" view)))
+ :keywords   ("help" "internal")
+ :commentary "\
+Defines `help-mode', which is the mode used by *Help* buffers, and
+associated support machinery, such as adding hyperlinks, etc.,")

@@ -7,7 +7,7 @@
 	      ("and from thing-opt.el by MATSUYAMA Tomohiro"))
  :maintainer ("Henry G. Weller")
  :provided   (thingatpt-ext)
- :required   ((("emacs" thingatpt)))
+ :required   ((("thingatpt" thingatpt)))
  :keywords   ("completion" "ui" "user" "interface" "sources")
  :commentary "\
 Lots of additions to the `thingatpt' package.

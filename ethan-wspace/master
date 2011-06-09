@@ -5,7 +5,7 @@
  :authors    (("Ethan Glasser-Camp" . "ethan@betacantrips.com"))
  :maintainer ("Ethan Glasser-Camp" . "ethan@betacantrips.com")
  :provided   (ethan-wspace)
- :required   ((("emacs" assoc)))
+ :required   ((("assoc" assoc)))
  :keywords   ("whitespace" "tab" "newline" "trailing" "clean")
  :homepage   "https://github.com/glasserc/ethan-wspace"
  :wikipage   "http://www.emacswiki.org/EthanWhitespace"

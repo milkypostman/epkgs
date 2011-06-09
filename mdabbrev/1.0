@@ -5,7 +5,7 @@
  :authors    (("Scott Frazer" . "frazer.scott@gmail.com"))
  :maintainer ("Scott Frazer" . "frazer.scott@gmail.com")
  :provided   (mdabbrev)
- :required   ((("emacs" dabbrev)))
+ :required   ((("dabbrev" dabbrev)))
  :keywords   ("abbrev" "expand" "completion" "convenience")
  :commentary "\
 Dynamic abbreviation expansion in the middle of a word.  For example, if

@@ -1,0 +1,13 @@
+(:summary    "Run MIT Scheme under Emacs"
+ :created    "1986"
+ :updated    "2011"
+ :license    "GPL-3"
+ :maintainer ("FSF")
+ :provided   (xscheme)
+ :required   ((("scheme" scheme)))
+ :keywords   ("languages" "lisp")
+ :commentary "\
+A major mode for interacting with MIT Scheme.
+
+Requires MIT Scheme release 5 or later.
+Changes to Control-G handler require runtime version 13.85 or later.")

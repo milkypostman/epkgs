@@ -2,4 +2,5 @@
  :updated    "2003"
  :license    "GPL-2"
  :provided   (rst)
- :required   ((("emacs" cl compile))))
+ :required   ((("cl" cl)
+	       ("compile" compile))))

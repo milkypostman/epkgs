@@ -1,0 +1,10 @@
+(:summary    "Allow several users to talk to each other through Emacs"
+ :created    "1995"
+ :updated    "2011"
+ :license    "GPL-3"
+ :maintainer ("FSF")
+ :provided   (talk)
+ :keywords   ("comm" "frames")
+ :commentary "\
+This is a multi-user talk package that runs in Emacs.
+Use talk-connect to bring a new person into the conversation.")

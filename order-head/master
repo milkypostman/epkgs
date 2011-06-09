@@ -5,8 +5,8 @@
  :authors    (("Noah Friedman" . "friedman@splode.com"))
  :maintainer (nil . "friedman@splode.com")
  :provided   (order-head)
- :required   ((("emacs" rfc822)
-	       ("fmailutils" fmailutils)))
+ :required   ((("fmailutils" fmailutils)
+	       ("rfc822" rfc822)))
  :keywords   ("mail" "extensions")
  :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
  :commentary "\

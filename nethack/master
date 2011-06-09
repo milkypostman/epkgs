@@ -6,7 +6,9 @@
  :authors    (("Ryan Yeske" . "rcyeske@vcn.bc.ca"))
  :maintainer ("Ryan Yeske" . "rcyeske@vcn.bc.ca")
  :provided   (nethack nethack-api nethack-cmd nethack-compat nethack-example nethack-keys nethack-nhlaunch nethack-tiles nh-bot)
- :required   ((("emacs" cl gamegrid overlay)))
+ :required   ((("cl" cl)
+	       ("emacs-core" overlay)
+	       ("gamegrid" gamegrid)))
  :keywords   ("games")
  :homepage   "http://www.nongnu.org/nethack-el/"
  :wikipage   "http://www.emacswiki.org/NethackMode"

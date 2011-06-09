@@ -5,7 +5,9 @@
  :authors    (("Leo"))
  :maintainer ("Leo")
  :provided   (kmacro-ring-list)
- :required   ((("emacs" cl ewoc kmacro pp)))
+ :required   ((("cl" cl)
+	       ("emacs-core" kmacro pp)
+	       ("ewoc" ewoc)))
  :keywords   ("convenience" "tools")
  :commentary "\
 In the course of editing text in Emacs a handful of keyboard macros

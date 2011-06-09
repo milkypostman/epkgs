@@ -1,6 +1,6 @@
 (:summary    "Dale Worley's teco-in-elisp interpreter"
  :license    "public-domain"
  :provided   (teco)
- :required   ((("emacs" backquote)))
+ :required   ((("emacs-core" backquote)))
  :homepage   "http://www.emacswiki.org/TecoInterpreterInElisp"
  :wikipage   "http://www.emacswiki.org/TecoInterpreterInElisp")

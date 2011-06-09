@@ -4,7 +4,7 @@
 	      ("GPL"))
  :maintainer ("Joakim Verona")
  :provided   (emsane emsane-config emsane-multi emsane-postop emsane-query)
- :required   ((("emacs" eieio)))
+ :required   ((("cedet" eieio)))
  :homepage   "https://github.com/jave/emsane"
  :commentary "\
 Emsane is an Emancs frontend for SANE.  Emsane runs scanadf with

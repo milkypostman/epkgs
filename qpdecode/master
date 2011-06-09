@@ -5,8 +5,8 @@
  :authors    (("Noah Friedman" . "friedman@prep.ai.mit.edu"))
  :maintainer (nil . "friedman@prep.ai.mit.edu")
  :provided   (qpdecode)
- :required   ((("emacs" sendmail)
-	       ("fmailutils" fmailutils)))
+ :required   ((("fmailutils" fmailutils)
+	       ("sendmail" sendmail)))
  :keywords   ("mime" "decoding" "extensions" "vm" "rmail")
  :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
  :commentary "\

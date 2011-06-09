@@ -7,8 +7,9 @@
  :maintainer ("Matt Swift" . "swift@alum.mit.edu")
  :provided   (swiftex)
  :required   ((("auctex" font-latex)
-	       ("emacs" outline tex-mode)
 	       ("hilit-swiftex" hilit-swiftex)
+	       ("outline" outline)
+	       ("tex-mode" tex-mode)
 	       (nil tex-site)))
  :keywords   ("tex" "latex" "doc" "ltxdoc" "dtx")
  :homepage   "http://www.ctan.org/tex-archive/support/emacs-modes/swiftex/"

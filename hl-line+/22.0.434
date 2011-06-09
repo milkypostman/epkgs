@@ -5,7 +5,7 @@
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")
  :provided   (hl-line+)
- :required   ((("emacs" hl-line)))
+ :required   ((("hl-line" hl-line)))
  :keywords   ("highlight" "cursor" "accessibility")
  :commentary "\
 This library extends standard library `hl-line.el' in these ways:

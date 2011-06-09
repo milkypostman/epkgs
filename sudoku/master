@@ -5,7 +5,10 @@
  :authors    (("Jesse Rosenthal" . "jesse.k.rosenthal@gmail.com"))
  :maintainer ("Jesse Rosenthal" . "jesse.k.rosenthal@gmail.com")
  :provided   (sudoku)
- :required   ((("emacs" cl easy-mmode easymenu url)
+ :required   ((("cl" cl)
+	       ("easy-mmode" easy-mmode)
+	       ("easymenu" easymenu)
+	       ("url" url)
 	       ("w3" w3)))
  :homepage   "http://www.columbia.edu/~jr2075/elisp/"
  :wikipage   "http://www.emacswiki.org/Sudoku"

@@ -4,6 +4,6 @@
  :authors    ((nil . "coldnew coldnew.tw@gmail.com"))
  :maintainer (nil . "coldnew coldnew.tw@gmail.com")
  :provided   (vim-elscreen)
- :required   ((("elscreen" elscreen)
-	       ("emacs" cl)
+ :required   ((("cl" cl)
+	       ("elscreen" elscreen)
 	       ("vim-mode" vim))))

@@ -5,7 +5,7 @@
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")
  :provided   (thumb-frm)
- :required   ((("emacs" cl)
+ :required   ((("cl" cl)
 	       ("frame-cmds" frame-cmds))
 	      (("doremi-frm" doremi-frm)))
  :keywords   ("frame" "icon")

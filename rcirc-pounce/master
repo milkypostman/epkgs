@@ -3,7 +3,7 @@
  :updated    "2007"
  :license    "GPL-2"
  :provided   (rcirc-pounce)
- :required   ((("emacs" rcirc)))
+ :required   ((("rcirc" rcirc)))
  :homepage   "http://www.emacswiki.org/rcircPounce"
  :wikipage   "http://www.emacswiki.org/rcircPounce"
  :commentary "\

@@ -6,7 +6,12 @@
  :authors    (("Daniel Brockman" . "daniel@brockman.se"))
  :maintainer ("Daniel Brockman" . "daniel@brockman.se")
  :provided   (bongo bongo-emacs21 bongo-lastfm bongo-mplayer lastfm-submit)
- :required   ((("emacs" cl cus-edit custom electric find-func format-spec rx time-date))
+ :required   ((("cl" cl)
+	       ("custom" cus-edit custom)
+	       ("electric" electric)
+	       ("find-func" find-func)
+	       ("gnus" format-spec time-date)
+	       ("rx" rx))
 	      (("volume" volume)))
  :homepage   "http://www.emacswiki.org/cgi-bin/wiki/Bongo"
  :wikipage   "http://www.emacswiki.org/Bongo")

@@ -5,7 +5,8 @@
  :authors    (("Patrick Gundlach" . "patrick@gundla.ch"))
  :maintainer ("Patrick Gundlach" . "patrick@gundla.ch")
  :provided   (etexshow pgxml)
- :required   ((("emacs" overlay thingatpt)))
+ :required   ((("emacs-core" overlay)
+	       ("thingatpt" thingatpt)))
  :keywords   ("tex")
  :homepage   "http://levana.de/emacs/"
  :commentary "\

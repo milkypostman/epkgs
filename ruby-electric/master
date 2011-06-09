@@ -4,6 +4,6 @@
  :updated    "2005"
  :maintainer ("Jakub Kuźma" . "qoobaa@gmail.com")
  :provided   (ruby-electric)
- :required   ((("emacs" ruby-mode)))
+ :required   ((("ruby-mode" ruby-mode)))
  :keywords   ("languages" "ruby")
  :homepage   "https://github.com/qoobaa/ruby-electric")

@@ -1,0 +1,71 @@
+(:summary    "User Interface for running GDB"
+ :created    "2002"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Nick Roberts" . "nickrob@gnu.org"))
+ :maintainer ("FSF")
+ :provided   (gdb-ui)
+ :required   ((("bindat" bindat)
+	       ("emacs-core" tooltip)
+	       ("gud" gud)
+	       ("json" json)))
+ :keywords   ("unix" "tools")
+ :commentary "\
+This mode acts as a graphical user interface to GDB.  You can interact with
+GDB through the GUD buffer in the usual way, but there are also further
+buffers which control the execution and describe the state of your program.
+It separates the input/output of your program from that of GDB, if
+required, and watches expressions in the speedbar.  It also uses features of
+Emacs 21 such as the fringe/display margin for breakpoints, and the toolbar
+(see the GDB Graphical Interface section in the Emacs info manual).
+
+By default, M-x gdb will start the debugger.
+
+This file has evolved from gdba.el that was included with GDB 5.0 and
+written by Tom Lord and Jim Kingdon.  It uses GDB's annotation interface.
+You don't need to know about annotations to use this mode as a debugger,
+but if you are interested developing the mode itself, see the Annotations
+section in the GDB info manual.
+
+GDB developers plan to make the annotation interface obsolete.  A new
+interface called GDB/MI (machine interface) has been designed to replace it.
+Some GDB/MI commands are used in this file through the CLI command
+'interpreter mi <mi-command>'.  To help with the process of fully migrating
+Emacs from annotations to GDB/MI, there is an experimental package called
+gdb-mi in the Emacs Lisp Package Archive (\"http://tromey.com/elpa/\").  It
+comprises of modified gud.el and a file called gdb-mi.el which replaces
+gdb-ui.el.  When installed, this overrides the current files and invoking
+M-x gdb will use GDB/MI directly (starts with \"gdb -i=mi\").  When deleted
+('d' followed by 'x' in Package Menu mode), the files are deleted and old
+functionality restored.  This provides a convenient way to review the
+current status/contribute to its improvement.  For someone who just wants to
+use GDB, however, the current mode in Emacs 22 is a much better option.
+There is also a file, also called gdb-mi.el, a version of which is included
+the GDB distribution.  This will probably only work with versions
+distributed with GDB 6.5 or later.  Unlike the version in ELPA it works on
+top of gdb-ui.el and you can only start it with M-x gdbmi.
+
+This mode SHOULD WORK WITH GDB 5.0 or later but you will NEED AT LEAST
+GDB 6.0 to use watch expressions.  It works best with GDB 6.4 or later
+where watch expressions will update more quickly.
+
+Windows Platforms:
+
+If you are using Emacs and GDB on Windows you will need to flush the buffer
+explicitly in your program if you want timely display of I/O in Emacs.
+Alternatively you can make the output stream unbuffered, for example, by
+using a macro:
+
+          #ifdef UNBUFFERED
+	     setvbuf (stdout, (char *) NULL, _IONBF, 0);
+	     #endif
+
+and compiling with -DUNBUFFERED while debugging.
+
+If you are using Cygwin GDB and find that the source is not being displayed
+in Emacs when you step through it, possible solutions are to:
+
+  1) Use Cygwin X Windows and Cygwin Emacs.
+       (Since 22.1 Emacs builds under Cygwin.)
+  2) Use MinGW GDB instead.
+  3) Use cygwin-mount.el")

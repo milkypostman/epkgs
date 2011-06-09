@@ -5,7 +5,7 @@
  :authors    ((nil . "wenbinye@163.com"))
  :maintainer (nil . "wenbinye@163.com")
  :provided   (type-test)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :commentary "\
 TODO:
 * 模板文字设置为不能更改

@@ -6,7 +6,5 @@
  :maintainer ("Patrick Anderson" . "patware@freeshell.org")
  :provided   (interpreter-minor)
  :keywords   ("convenience" "multimedia")
- :homepage   "http://www.emacswiki.org/InterpreterMinor"
- :wikipage   "http://www.emacswiki.org/InterpreterMinor"
  :commentary "\
 This isn't a minor mode at all, though that was my initial vision.  right now it's more like easy-mmode.")

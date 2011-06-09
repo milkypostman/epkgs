@@ -5,6 +5,7 @@
  :authors    (("Lars Magne Ingebrigtsen" . "larsi@gnus.org"))
  :maintainer ("Lars Magne Ingebrigtsen" . "larsi@gnus.org")
  :provided   (vtx)
- :required   ((("emacs" cl term)))
+ :required   ((("cl" cl)
+	       ("term" term)))
  :keywords   ("television")
  :homepage   "http://quimby.gnus.org/elisp/")

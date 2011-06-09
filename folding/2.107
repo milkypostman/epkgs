@@ -7,7 +7,10 @@
 	      ("Anders Lindgren" . "andersl@csd.uu.se"))
  :maintainer ("Jari Aalto" . "jari.aalto@poboxes.com")
  :provided   (folding folding-isearch)
- :required   ((("emacs" advice cl custom easymenu)))
+ :required   ((("advice" advice)
+	       ("cl" cl)
+	       ("custom" custom)
+	       ("easymenu" easymenu)))
  :keywords   ("tools")
  :homepage   "http://www.emacswiki.org/FoldingMode"
  :wikipage   "http://www.emacswiki.org/FoldingMode"

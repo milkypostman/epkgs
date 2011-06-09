@@ -5,7 +5,8 @@
  :authors    (("Robert Widhopf-Fenk"))
  :maintainer ("Robert Widhopf-Fenk")
  :provided   (ahk-mode)
- :required   ((("emacs" cl font-lock)
+ :required   ((("cl" cl)
+	       ("emacs-core" font-lock)
 	       ("w3" w3)))
  :keywords   ("autohotkey" "major" "mode")
  :homepage   "http://www.robf.de/Hacking/elisp/"

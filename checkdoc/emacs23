@@ -1,0 +1,148 @@
+(:summary    "Check documentation strings for style requirements"
+ :created    "1997"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Eric M. Ludlam" . "zappo@gnu.org"))
+ :maintainer ("Eric M. Ludlam" . "zappo@gnu.org")
+ :provided   (checkdoc)
+ :required   ((("emacs-core" autoload)
+	       ("help-mode" help-mode)
+	       ("ispell" ispell)
+	       ("lisp-mnt" lisp-mnt)
+	       ("thingatpt" thingatpt)))
+ :keywords   ("docs" "maint" "lisp")
+ :wikipage   "http://www.emacswiki.org/CheckDoc"
+ :commentary "\
+The Emacs Lisp manual has a nice chapter on how to write
+documentation strings.  Many stylistic suggestions are fairly
+deterministic and easy to check for syntactically, but also easy
+to forget.  The main checkdoc engine will perform the stylistic
+checks needed to make sure these styles are remembered.
+
+There are two ways to use checkdoc:
+  1) Periodically use `checkdoc' or `checkdoc-current-buffer'.
+     `checkdoc' is a more interactive version of
+     `checkdoc-current-buffer'
+  2) Use `checkdoc-minor-mode' to automatically check your
+     documentation whenever you evaluate Lisp code with C-M-x
+     or [menu-bar emacs-lisp eval-buffer].  Additional key-bindings
+     are also provided under C-c ? KEY
+       (require 'checkdoc)
+       (add-hook 'emacs-lisp-mode-hook
+	             '(lambda () (checkdoc-minor-mode 1)))
+
+Using `checkdoc':
+
+  The commands `checkdoc' and `checkdoc-ispell' are the top-level
+entry points to all of the different checks that are available.  It
+breaks examination of your Lisp file into four sections (comments,
+documentation, messages, and spacing) and indicates its current
+state in a status buffer.
+
+  The Comments check examines your headers, footers, and
+various tags (such as \"Code:\") to make sure that your code is ready
+for easy integration into existing systems.
+
+  The Documentation check deals with documentation strings
+and their elements that help make Emacs easier to use.
+
+  The Messages check ensures that the strings displayed in the
+minibuffer by some commands (such as `error' and `y-or-n-p')
+are consistent with the Emacs environment.
+
+  The Spacing check cleans up white-space at the end of lines.
+
+  The interface while working with documentation and messages is
+slightly different when being run in the interactive mode.  The
+interface offers several options, including the ability to skip to
+the next error, or back up to previous errors.  Auto-fixing is
+turned off at this stage, but you can use the `f' or `F' key to fix
+a given error (if the fix is available.)
+
+Auto-fixing:
+
+  There are four classifications of style errors in terms of how
+easy they are to fix.  They are simple, complex, really complex,
+and impossible.  (Impossible really means that checkdoc does not
+have a fixing routine yet.)  Typically white-space errors are
+classified as simple, and are auto-fixed by default.  Typographic
+changes are considered complex, and the user is asked if they want
+the problem fixed before checkdoc makes the change.  These changes
+can be done without asking if `checkdoc-autofix-flag' is properly
+set.  Potentially redundant changes are considered really complex,
+and the user is always asked before a change is inserted.  The
+variable `checkdoc-autofix-flag' controls how these types of errors
+are fixed.
+
+Spell checking text:
+
+  The variable `checkdoc-spellcheck-documentation-flag' can be set
+to customize how spell checking is to be done.  Since spell
+checking can be quite slow, you can optimize how best you want your
+checking done.  The default is `defun', which spell checks each time
+`checkdoc-defun' or `checkdoc-eval-defun' is used.  Setting to nil
+prevents spell checking during normal usage.
+  Setting this variable to nil does not mean you cannot take
+advantage of the spell checking.  You can instead use the
+interactive functions `checkdoc-ispell-*' to check the spelling of
+your documentation.
+  There is a list of Lisp-specific words which checkdoc will
+install into Ispell on the fly, but only if Ispell is not already
+running.  Use `ispell-kill-ispell' to make checkdoc restart it with
+these words enabled.
+
+Checking parameters:
+
+  You might not always want a function to have its parameters listed
+in order.  When this is the case, put the following comment just in
+front of the documentation string: \"; checkdoc-order: nil\"  This
+overrides the value of `checkdoc-arguments-in-order-flag'.
+
+  If you specifically wish to avoid mentioning a parameter of a
+function in the doc string (such as a hidden parameter, or a
+parameter which is very obvious like events), you can have checkdoc
+skip looking for it by putting the following comment just in front
+of the documentation string: \"; checkdoc-params: (args go here)\"
+
+Checking message strings:
+
+  The text that follows the `error' and `y-or-n-p' commands is
+also checked.  The documentation for `error' clearly states some
+simple style rules to follow which checkdoc will auto-fix for you.
+`y-or-n-p' also states that it should end in a space.  I added that
+it should end in \"? \" since that is almost always used.
+
+Adding your own checks:
+
+  You can experiment with adding your own checks by setting the
+hooks `checkdoc-style-hooks' and `checkdoc-comment-style-hooks'.
+Return a string which is the error you wish to report.  The cursor
+position should be preserved.
+
+Error errors:
+
+  Checkdoc does not always flag errors correctly.  There are a
+couple ways you can coax your file into passing all of checkdoc's
+tests through buffer local variables.
+
+  The variable `checkdoc-verb-check-experimental-flag' can be used
+to turn off the check for verb-voice in case you use words that are
+not semantically verbs, but are still in the incomplete list.
+
+  The variable `checkdoc-symbol-words' can be a list of words that
+happen to also be symbols.  This is not a problem for one-word
+symbols, but if you use a hyphenated word that is also a symbol,
+then you may need this.
+
+  The symbol `checkdoc-force-docstrings-flag' can be set to nil if
+you have many undocumented functions you don't wish to document.
+
+  See the above section \"Checking Parameters\" for details about
+parameter checking.
+
+Dependencies:
+
+  This file requires lisp-mnt (Lisp maintenance routines) for the
+  comment checkers.
+
+  Requires custom for Emacs v20.")

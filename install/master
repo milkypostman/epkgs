@@ -5,7 +5,8 @@
  :authors    (("Stefan Monnier" . "monnier@gnu.org"))
  :maintainer ("Stefan Monnier" . "monnier@gnu.org")
  :provided   (install)
- :required   ((("emacs" cl em-glob)))
+ :required   ((("cl" cl)
+	       ("eshell" em-glob)))
  :homepage   "http://www.iro.umontreal.ca/~monnier/elisp/"
  :commentary "\
 This little package is meant to ease up the task of installing

@@ -5,7 +5,7 @@
  :authors    (("Bob Glickstein" . "bobg@zanshin.com"))
  :maintainer ("Bob Glickstein" . "bobg@zanshin.com")
  :provided   (winhist)
- :required   ((("emacs" ring)))
+ :required   ((("ring" ring)))
  :commentary "\
 `winhist-mode' is a global mode that records every change to the
 window configuration in a \"ring\" (like the yank ring or the mark

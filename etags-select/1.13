@@ -5,7 +5,8 @@
  :authors    (("Scott Frazer" . "frazer.scott@gmail.com"))
  :maintainer ("Scott Frazer" . "frazer.scott@gmail.com")
  :provided   (etags-select)
- :required   ((("emacs" custom etags)))
+ :required   ((("custom" custom)
+	       ("etags" etags)))
  :keywords   ("etags" "tags" "tag" "select")
  :homepage   "http://www.emacswiki.org/EtagsSelect"
  :wikipage   "http://www.emacswiki.org/EtagsSelect"

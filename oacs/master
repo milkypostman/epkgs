@@ -5,10 +5,11 @@
  :authors    (("Bart Teeuwisse" . "bart.teeuwisse@thecodemill.biz"))
  :maintainer ("Bart Teeuwisse" . "bart.teeuwisse@thecodemill.biz")
  :provided   (oacs oacs-abbrevs oacs-comment oacs-error-log oacs-format oacs-headers oacs-mmm oacs-nxml oacs-occur oacs-psgml oacs-vars)
- :required   ((("color-occur" color-occur)
-	       ("emacs" autoinsert sql)
+ :required   ((("autoinsert" autoinsert)
+	       ("color-occur" color-occur)
 	       ("mmm-mode" mmm-auto mmm-mode)
-	       ("psgml" psgml)))
+	       ("psgml" psgml)
+	       ("sql" sql)))
  :keywords   ("abbrev" "extensions" "convenience" "tools")
  :homepage   "http://www.openacs.com/xowiki/ide-emacs"
  :wikipage   "http://www.emacswiki.org/OACS"

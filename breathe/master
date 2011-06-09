@@ -3,5 +3,5 @@
  :license    "GPL-2"
  :provided   (breathe)
  :required   ((("banner" banner)
-	       ("emacs" cl)))
+	       ("cl" cl)))
  :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/well-being/")

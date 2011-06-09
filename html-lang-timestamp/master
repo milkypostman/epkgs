@@ -4,7 +4,7 @@
  :authors    (("Holger Schauer" . "holger.schauer@gmx.de"))
  :maintainer ("Holger Schauer" . "holger.schauer@gmx.de")
  :provided   (html-lang-timestamp)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("utils" "html" "time")
  :commentary "\
 If you setq this into `html-helper-timestamp-hook' you will get

@@ -6,7 +6,9 @@
 	      ("Greg McGary" . "gkm@magilla.cichlid.com"))
  :maintainer ("François Pinard" . "pinard@iro.umontreal.ca")
  :provided   (po-mode)
- :required   ((("emacs" compile custom etags)
+ :required   ((("compile" compile)
+	       ("custom" custom)
+	       ("etags" etags)
 	       (nil po-compat)))
  :keywords   ("gettext")
  :wikipage   "http://www.emacswiki.org/PoMode"

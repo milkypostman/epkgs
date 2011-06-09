@@ -5,6 +5,6 @@
  :authors    (("D. Goel" . "deego@glue.umd.edu"))
  :maintainer ("D. Goel" . "deego@glue.umd.edu")
  :provided   (fetch)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("tramp" "ange-ftp" "mirror" "remote" "refresh" "update" "files")
  :homepage   "http://www.gnufans.net/~deego/emacs.html")

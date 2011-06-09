@@ -3,7 +3,7 @@
  :updated    "2004"
  :license    "GPL-2"
  :provided   (aok)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :commentary "\
 search all buffers, all buffers whose filenames have a certain
 type, or all buffers in a certain mode, with `all-occur',

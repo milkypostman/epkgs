@@ -5,7 +5,7 @@
  :authors    (("Tom Breton" . "tob@world.std.com"))
  :maintainer ("Tom Breton" . "tob@world.std.com")
  :provided   (tehom-cl)
- :required   ((("emacs" cl)
+ :required   ((("cl" cl)
 	       ("tehom-font-lock" tehom-font-lock)))
  :keywords   ("extensions" "tools" "lisp")
  :homepage   "http://panix.com/~tehom/"

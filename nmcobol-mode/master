@@ -7,7 +7,9 @@
  :provided   (nmcobol-mode)
  :required   ((("anchored-transpose" anchored-transpose)
 	       ("column-marker" column-marker)
-	       ("emacs" imenu paren which-func)))
+	       ("imenu" imenu)
+	       ("paren" paren)
+	       ("which-func" which-func)))
  :keywords   ("languages" "cobol" "tandem" "guardian" "nsk")
  :commentary "\
 NMCOBOL -- COmmon Business Oriented Language - in ?TANDEM line format.

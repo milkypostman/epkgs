@@ -2,5 +2,6 @@
  :updated    "1989"
  :license    "GPL"
  :provided   (hugs-mode)
- :required   ((("emacs" easymenu shell)))
+ :required   ((("easymenu" easymenu)
+	       ("shell" shell)))
  :homepage   "http://meltin.net/hacks/emacs/")

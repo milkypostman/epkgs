@@ -6,9 +6,10 @@
  :authors    (("Dan Pomohaci" . "dan.pomohaci@gmail.com"))
  :maintainer ("Dan Pomohaci" . "dan.pomohaci@gmail.com")
  :provided   (epm epm-autoloads epm-config epm-rally epm-scrum epm-taskjuggler)
- :required   ((("emacs" cl org)
+ :required   ((("cl" cl)
 	       ("gnuplot" gnuplot)
-	       ("muse" muse muse-mode)))
+	       ("muse" muse muse-mode)
+	       ("org-mode" org)))
  :keywords   ("project" "management" "muse" "scrum")
  :homepage   "http://code.google.com/p/epm-mode/"
  :wikipage   "http://www.emacswiki.org/EpmMode")

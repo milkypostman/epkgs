@@ -6,7 +6,11 @@
  :authors    (("Edward O'Connor" . "ted@oconnor.cx"))
  :maintainer ("Edward O'Connor" . "ted@oconnor.cx")
  :provided   (backpack highrise rest-api)
- :required   ((("emacs" cl eudc pp url xml)))
+ :required   ((("cl" cl)
+	       ("emacs-core" pp)
+	       ("eudc" eudc)
+	       ("url" url)
+	       ("xml" xml)))
  :keywords   ("convenience")
  :homepage   "http://edward.oconnor.cx/elisp/"
  :commentary "\

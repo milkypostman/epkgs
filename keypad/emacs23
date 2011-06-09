@@ -1,0 +1,76 @@
+(:summary    "Simplified keypad bindings"
+ :created    "2002"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Kim F. Storm" . "storm@cua.dk"))
+ :maintainer ("Kim F. Storm" . "storm@cua.dk")
+ :provided   (keypad)
+ :keywords   ("keyboard" "convenience")
+ :commentary "\
+The keypad package allows easy binding of the keypad keys to
+various commonly used sets of commands.
+
+With the following setup, the keypad can be used for numeric data
+entry when NumLock is off, and to give numeric prefix arguments to
+emacs commands, when NumLock on on.
+
+ keypad-setup         => Plain Numeric Keypad
+ keypad-numlock-setup => Prefix numeric args
+
+   +--------+--------+--------+
+   |  M-7   |  M-8   |  M-9   | <- numlock on
+   |   7    |   8    |   9    | <- numlock off
+   +--------+--------+--------+
+   |  M-4   |  M-5   |  M-6   |
+   |   4    |   5    |   6    |
+   +--------+--------+--------+
+   |  M-1   |  M-2   |  M-3   |
+   |   1    |   2    |   3    |
+   +--------+--------+--------+
+   |       M-0       |  M--   |
+   |        0        |   .    |
+   +-----------------+--------+
+
+The following keypad setup is used for navigation together with
+modes like cua-mode which uses shifted movement keys to extend the
+region.
+
+ keypad-setup         => Cursor keys
+ keypad-shifted-setup => Shifted cursor keys
+
+   +--------+--------+--------+
+   | S-home | S-up   | S-PgUp | <- shifted, numlock off
+   |  Home  |  up    |  PgUp  | <- unshifted, numlock off
+   +--------+--------+--------+
+   | S-left |S-space |S-right |
+   |  left  | space  | right  |
+   +--------+--------+--------+
+   | S-end  | S-down | S-PgDn |
+   |  end   |  down  |  PgDn  |
+   +--------+--------+--------+
+   |    S-insert     |S-delete|
+   |     insert      | delete |
+   +-----------------+--------+
+
+The following setup binds the unshifted keypad keys to plain
+numeric keys when NumLock is either on or off, but the decimal key
+produces either a . (NumLock off) or a , (NumLock on).  This is
+useful for e.g. Danish users where the decimal separator is a
+comma.
+
+ keypad-setup         => Plain Numeric Keypad
+ keypad-numlock-setup => Numeric Keypad with Decimal key: ,
+
+   +--------+--------+--------+
+   |   7    |   8    |   9    | <- numlock on
+   |   7    |   8    |   9    | <- numlock off
+   +--------+--------+--------+
+   |   4    |   5    |   6    |
+   |   4    |   5    |   6    |
+   +--------+--------+--------+
+   |   1    |   2    |   3    |
+   |   1    |   2    |   3    |
+   +--------+--------+--------+
+   |        0        |   ,    |
+   |        0        |   .    |
+   +-----------------+--------+")

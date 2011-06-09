@@ -1,0 +1,7 @@
+(:summary    "List one abbrev table alphabetically ordered"
+ :created    "1986"
+ :updated    "2011"
+ :license    "GPL-3"
+ :maintainer ("FSF")
+ :provided   (abbrevlist)
+ :keywords   ("abbrev"))

@@ -5,8 +5,8 @@
  :authors    (("khiker" . "khiker.mail+elisp@gmail.com"))
  :maintainer ("khiker" . "khiker.mail+elisp@gmail.com")
  :provided   (popup-kill-ring)
- :required   ((("auto-complete" popup)
-	       ("emacs" cl)
+ :required   ((("cl" cl)
+	       ("popup" popup)
 	       ("pos-tip" pos-tip)))
  :keywords   ("popup" "kill-ring" "pos-tip")
  :commentary "\

@@ -1,0 +1,9 @@
+(:summary    "Simple Emacs Spreadsheet"
+ :created    "2002"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Jonathan Yavner" . "jyavner@member.fsf.org"))
+ :maintainer ("Jonathan Yavner" . "jyavner@member.fsf.org")
+ :provided   (ses)
+ :required   ((("emacs-core" unsafep)))
+ :keywords   ("spreadsheet"))

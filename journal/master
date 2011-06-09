@@ -2,9 +2,10 @@
  :updated    "20071126"
  :license    "GPL-2"
  :provided   (journal)
- :required   ((("emacs" cl time-stamp)
+ :required   ((("cl" cl)
 	       ("generic-text" generic-text)
 	       ("html-helper-mode" html-helper-mode)
+	       ("time-stamp" time-stamp)
 	       ("versor" handsfree-read-number)))
  :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/webstuff/"
  :wikipage   "http://www.emacswiki.org/Journal")

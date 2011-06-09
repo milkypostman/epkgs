@@ -1,0 +1,14 @@
+(:summary    "TeX, LaTeX, and SliTeX mode commands"
+ :created    "1985"
+ :updated    "2011"
+ :license    "GPL-3"
+ :maintainer ("FSF")
+ :provided   (tex-mode)
+ :required   ((("cl" cl)
+	       ("compare-w" compare-w)
+	       ("compile" compile)
+	       ("shell" shell)
+	       ("skeleton" skeleton)
+	       ("thingatpt" thingatpt)))
+ :keywords   ("tex")
+ :wikipage   "http://www.emacswiki.org/TeX")

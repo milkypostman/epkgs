@@ -5,7 +5,7 @@
  :authors    (("Yoni Rabkin" . "yonirabkin@member.fsf.org"))
  :maintainer ("Yoni Rabkin" . "yonirabkin@member.fsf.org")
  :provided   (linphone linphone-modeline)
- :required   ((("emacs" timer)))
+ :required   ((("timer" timer)))
  :homepage   "http://yrk.livejournal.com/281763.html"
  :commentary "\
 Written against Linphone version 3.3.2 on GNU/Linux")

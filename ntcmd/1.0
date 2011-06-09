@@ -5,7 +5,8 @@
  :authors    (("Daniel Colascione" . "dan.colascione@gmail.com"))
  :maintainer ("Daniel Colascione" . "dan.colascione@gmail.com")
  :provided   (ntcmd)
- :required   ((("emacs" cl font-lock)))
+ :required   ((("cl" cl)
+	       ("emacs-core" font-lock)))
  :keywords   ("languages")
  :commentary "\
 This is a mode for highlighting and indenting Windows cmd scripts.

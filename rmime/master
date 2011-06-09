@@ -3,7 +3,8 @@
  :authors    (("Ray Moody" . "moody@cray.com"))
  :maintainer ("Ray Moody" . "moody@cray.com")
  :provided   (rmime)
- :required   ((("emacs" mh-e rmail)
+ :required   ((("mh-e" mh-e)
+	       ("rmail" rmail)
 	       ("vm" vm)))
  :keywords   ("mime" "mail")
  :commentary "\

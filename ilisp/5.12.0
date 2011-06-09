@@ -1,6 +1,11 @@
 (:repository (cvs . ":pserver:anonymous@ilisp.cvs.sourceforge.net:/cvsroot/ilisp")
  :provided   (cltl2 comint-ipc compat-fsf-19 compat-fsf-20 compat-fsf-21 compat-fsf18 completer il-luc19 ilcompat ilisp ilisp-ccl ilisp-chs ilisp-cl-easy-menu ilisp-ext ilisp-key ilisp-lw ilisp-menu ilisp-mnb ilisp-scheme-easy-menu)
- :required   ((("dismal" simple-menu)
-	       ("emacs" browse-url cl comint easymenu imenu thingatpt)))
+ :required   ((("browse-url" browse-url)
+	       ("cl" cl)
+	       ("comint" comint)
+	       ("dismal" simple-menu)
+	       ("easymenu" easymenu)
+	       ("imenu" imenu)
+	       ("thingatpt" thingatpt)))
  :homepage   "http://sourceforge.net/projects/ilisp/"
  :wikipage   "http://www.emacswiki.org/ILispMode")

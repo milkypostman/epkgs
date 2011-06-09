@@ -7,6 +7,9 @@
 	      ("Phil Sung"))
  :maintainer ("Piaw Na")
  :provided   (gdoc-mode google-emacs-utilities gtags gtags-aliases)
- :required   ((("emacs" cl etags tree-widget wid-browse)))
+ :required   ((("cl" cl)
+	       ("etags" etags)
+	       ("tree-widget" tree-widget)
+	       ("widget" wid-browse)))
  :homepage   "http://code.google.com/p/google-gtags/"
  :wikipage   "http://www.emacswiki.org/GnuGlobal")

@@ -5,5 +5,5 @@
  :authors    (("Andrew Gwozdziewycz" . "web@apgwoz.com"))
  :maintainer ("Andrew Gwozdziewycz" . "web@apgwoz.com")
  :provided   (amigo)
- :required   ((("emacs" url url-http)))
+ :required   ((("url" url url-http)))
  :keywords   ("comm" "friendfeed"))

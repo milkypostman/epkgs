@@ -5,7 +5,8 @@
  :authors    (("Kevin Ryde" . "user42@zip.com.au"))
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (aumix-mode)
- :required   ((("emacs" cl term)))
+ :required   ((("cl" cl)
+	       ("term" term)))
  :keywords   ("multimedia" "mixer" "aumix")
  :homepage   "http://user42.tuxfamily.org/aumix-mode/index.html"
  :wikipage   "http://www.emacswiki.org/aumix-emacs"

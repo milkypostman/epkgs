@@ -6,6 +6,6 @@
  :authors    (("Le Wang"))
  :maintainer ("Le Wang")
  :provided   (whole-line-funcs)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("convenience" "whole-line" "region" "editing")
  :homepage   "https://github.com/lewang/le_emacs_whole_line_funcs")

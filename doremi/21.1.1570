@@ -5,9 +5,9 @@
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")
  :provided   (doremi)
- :required   ((("emacs" cl)
+ :required   ((("cl" cl)
 	       ("ring+" ring+))
-	      (("emacs" mwheel)))
+	      (("emacs-core" mwheel)))
  :keywords   ("keys" "cycle" "repeat" "higher-order")
  :homepage   "http://www.emacswiki.org/DoReMi"
  :wikipage   "http://www.emacswiki.org/DoReMi"

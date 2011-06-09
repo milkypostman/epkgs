@@ -4,4 +4,4 @@
  :authors    (("ThierryVolpiatto"))
  :maintainer ("ThierryVolpiatto")
  :provided   (thumb-page)
- :required   ((("emacs" cl))))
+ :required   ((("cl" cl))))

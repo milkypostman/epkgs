@@ -6,7 +6,7 @@
  :authors    (("Tomohiro Matsuyama" . "tomo@cx4a.org"))
  :maintainer ("Tomohiro Matsuyama" . "tomo@cx4a.org")
  :provided   (popwin popwin-yatex)
- :required   ((("emacs" cl)
+ :required   ((("cl" cl)
 	       ("yatex" yatex)))
  :keywords   ("convenience")
  :homepage   "https://github.com/m2ym/popwin-el"

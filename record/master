@@ -5,5 +5,5 @@
  :authors    (("Guillaume Marceau"))
  :maintainer ("Guillaume Marceau")
  :provided   (record)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :homepage   "http://gmarceau.qc.ca/")

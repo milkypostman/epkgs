@@ -5,7 +5,7 @@
  :authors    (("LEE Sau Dan" . "sdlee@cs.hku.hk"))
  :maintainer ("LEE Sau Dan" . "sdlee@cs.hku.hk")
  :provided   (mtools)
- :required   ((("emacs" dired)))
+ :required   ((("dired" dired)))
  :keywords   ("mtools" "dired")
  :commentary "\
 See the documentation of (function mtools-file-name-handler)")

@@ -5,7 +5,7 @@
  :authors    (("David O'Toole" . "dto@gnu.org"))
  :maintainer ("David O'Toole" . "dto@gnu.org")
  :provided   (vex)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("hypermedia" "multimedia" "extensions")
  :commentary "\
 This is a proof-of-concept. Requires recent (i.e. CVS) GNU Emacs.")

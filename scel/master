@@ -4,7 +4,9 @@
  :updated    "2003"
  :license    "GPL-2"
  :provided   (sclang sclang-browser sclang-dev sclang-document sclang-help sclang-help-minor-mode sclang-interp sclang-language sclang-menu sclang-minor-mode sclang-mode sclang-server sclang-util sclang-vars sclang-widgets)
- :required   ((("emacs" cl font-lock tree-widget))
-	      (("emacs" view)
+ :required   ((("cl" cl)
+	       ("emacs-core" font-lock)
+	       ("tree-widget" tree-widget))
+	      (("view" view)
 	       ("xcscope" xcscope)))
  :homepage   "supercollider.sourceforge.net/")

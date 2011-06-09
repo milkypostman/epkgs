@@ -5,7 +5,7 @@
  :authors    (("Jorgen Schaefer"))
  :maintainer ("Jorgen Schaefer")
  :provided   (srfi)
- :required   ((("emacs" url)))
+ :required   ((("url" url)))
  :keywords   ("scheme" "documentation" "programming")
  :commentary "\
 This file provides a functionality to view SRFIs, Scheme Requests

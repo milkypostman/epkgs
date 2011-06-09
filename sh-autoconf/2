@@ -5,7 +5,7 @@
  :authors    (("Kevin Ryde" . "user42@zip.com.au"))
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (sh-autoconf)
- :required   ((("emacs" sh-script)))
+ :required   ((("sh-script" sh-script)))
  :keywords   ("languages")
  :wikipage   "http://www.emacswiki.org/ShAutoconf"
  :commentary "\

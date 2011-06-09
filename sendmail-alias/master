@@ -6,7 +6,7 @@
 	      ("Noah Friedman" . "friedman@splode.com"))
  :maintainer (nil . "friedman@splode.com")
  :provided   (sendmail-alias)
- :required   ((("emacs" sendmail)))
+ :required   ((("sendmail" sendmail)))
  :keywords   ("mail" "extensions")
  :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
  :commentary "\

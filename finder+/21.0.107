@@ -5,7 +5,7 @@
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")
  :provided   (finder+)
- :required   ((("emacs" finder))
+ :required   ((("finder" finder))
 	      (("autofit-frame" autofit-frame)
 	       ("fit-frame" fit-frame)))
  :keywords   ("help")

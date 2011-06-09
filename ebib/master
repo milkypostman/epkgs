@@ -3,6 +3,7 @@
  :updated    "2010"
  :license    "as-is"
  :provided   (ebib)
- :required   ((("emacs" cl easymenu)))
+ :required   ((("cl" cl)
+	       ("easymenu" easymenu)))
  :homepage   "https://github.com/joostkremers/ebib"
  :wikipage   "http://www.emacswiki.org/Ebib")

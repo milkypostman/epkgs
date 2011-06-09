@@ -5,7 +5,7 @@
  :authors    (("Tom Pierce" . "tom@pierceport.com"))
  :maintainer ("Tom Pierce" . "tom@pierceport.com")
  :provided   (tsql-indent)
- :required   ((("emacs" sql)))
+ :required   ((("sql" sql)))
  :keywords   ("languages" "sql" "tsql")
  :homepage   "http://www.emacswiki.org/TsqlIndent"
  :wikipage   "http://www.emacswiki.org/TsqlIndent"

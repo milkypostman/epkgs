@@ -6,7 +6,7 @@
  :authors    (("David O'Toole" . "dto@gnu.org"))
  :maintainer ("David O'Toole" . "dto@gnu.org")
  :provided   (eon)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("oop")
  :wikipage   "http://www.emacswiki.org/EonObjects"
  :commentary "\

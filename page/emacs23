@@ -1,0 +1,11 @@
+(:summary    "Page motion commands for Emacs"
+ :created    "1985"
+ :updated    "2011"
+ :license    "GPL-3"
+ :maintainer ("FSF")
+ :provided   (page)
+ :keywords   ("wp" "convenience")
+ :wikipage   "http://www.emacswiki.org/PageMode"
+ :commentary "\
+This code provides the page-oriented movement and selection commands
+documented in the Emacs manual.")

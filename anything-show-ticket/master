@@ -5,5 +5,5 @@
  :authors    (("kitokitoki"))
  :maintainer ("kitokitoki")
  :provided   (anything-show-ticket)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :homepage   "https://github.com/kitokitoki/anything-show-ticket")

@@ -1,0 +1,36 @@
+(:summary    "Emulate insert-directory completely in Emacs Lisp"
+ :created    "1992"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Sebastian Kremer" . "sk@thp.uni-koeln.de"))
+ :maintainer ("FSF")
+ :provided   (ls-lisp)
+ :required   ((("cl" cl)))
+ :keywords   ("unix" "dired")
+ :wikipage   "http://www.emacswiki.org/LsLisp"
+ :commentary "\
+OVERVIEW ==========================================================
+
+This file redefines the function `insert-directory' to implement it
+directly from Emacs lisp, without running ls in a subprocess.  It
+is useful if you cannot afford to fork Emacs on a real memory UNIX,
+or other non-UNIX platforms if you don't have the ls
+program, or if you want a different format from what ls offers.
+
+This function can use regexps instead of shell wildcards.  If you
+enter regexps remember to double each $ sign.  For example, to
+include files *.el, enter `.*\\.el$$', resulting in the regexp
+`.*\\.el$'.
+
+RESTRICTIONS ======================================================
+
+* A few obscure ls switches are still ignored: see the docstring of
+`insert-directory'.
+
+TO DO =============================================================
+
+Complete handling of F switch (if/when possible).
+
+FJW: May be able to sort much faster by consing the sort key onto
+the front of each list element, sorting and then stripping the key
+off again!")

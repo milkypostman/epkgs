@@ -6,7 +6,11 @@
  :authors    (("Jonathan Rockway" . "jon@jrock.us"))
  :maintainer ("Jonathan Rockway" . "jon@jrock.us")
  :provided   (eproject eproject-extras)
- :required   ((("emacs" cl eshell ibuf-ext ibuffer iswitchb)))
+ :required   ((("cl" cl)
+	       ("eshell" eshell)
+	       ("ibuffer" ibuffer)
+	       ("iswitchb" iswitchb)
+	       (nil ibuf-ext)))
  :keywords   ("programming" "projects")
  :homepage   "https://github.com/jrockway/eproject"
  :wikipage   "http://www.emacswiki.org/eproject"

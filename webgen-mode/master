@@ -2,7 +2,7 @@
  :created    "2010"
  :updated    "20100206"
  :provided   (webgen-mode)
- :required   ((("emacs" autoinsert)))
+ :required   ((("autoinsert" autoinsert)))
  :keywords   ("webgen" "minor" "mode")
  :homepage   "http://www.emacswiki.org/WebgenMode"
  :wikipage   "http://www.emacswiki.org/WebgenMode")

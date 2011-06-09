@@ -4,8 +4,15 @@
  :updated    "2003"
  :license    "GPL-2"
  :provided   (homepage publish records records-autoloads records-calendar records-diary records-dindex records-format records-hs records-index records-metainfo records-mode records-owner records-query records-ref records-rss records-rss-publish records-search records-sm records-status records-tex records-type records-util records-vars)
- :required   ((("emacs" calendar easymenu font-lock gnus imenu mail-utils tempo url)
+ :required   ((("calendar" calendar)
+	       ("easymenu" easymenu)
+	       ("emacs-core" font-lock)
+	       ("gnus" gnus)
+	       ("imenu" imenu)
+	       ("mail-utils" mail-utils)
 	       ("mailcrypt" mailcrypt)
+	       ("tempo" tempo)
+	       ("url" url)
 	       (nil htmlize)))
  :homepage   "http://sourceforge.net/projects/records"
  :wikipage   "http://www.emacswiki.org/RecordsMode")

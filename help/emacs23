@@ -1,0 +1,11 @@
+(:summary    "Help commands for Emacs"
+ :created    "1985"
+ :updated    "2011"
+ :license    "GPL-3"
+ :maintainer ("FSF")
+ :provided   (help help-fns)
+ :required   ((("help-macro" help-macro)))
+ :keywords   ("help" "internal")
+ :commentary "\
+This code implements GNU Emacs' on-line help system, the one invoked by
+`M-x help-for-help'.")

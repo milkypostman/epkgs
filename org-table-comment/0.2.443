@@ -4,7 +4,7 @@
  :license    "GPL-3"
  :maintainer ("Matthew L. Fidler")
  :provided   (org-table-comment)
- :required   ((("emacs" org-table)))
+ :required   ((("org-mode" org-table)))
  :keywords   ("org-mode" "orgtbl")
  :commentary "\
 This allows you to create org-tables in languages that do not have

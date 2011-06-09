@@ -5,7 +5,7 @@
  :authors    (("Kevin Ryde" . "user42@zip.com.au"))
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (scroll-1)
- :required   ((("emacs" view)))
+ :required   ((("view" view)))
  :keywords   ("convenience")
  :homepage   "http://user42.tuxfamily.org/scroll-1/index.html"
  :commentary "\

@@ -5,6 +5,8 @@
  :authors    (("Christoffer S. Hansen" . "csh@freecode.dk"))
  :maintainer ("Christoffer S. Hansen" . "csh@freecode.dk")
  :provided   (policy-switch)
- :required   ((("emacs" cl desktop winner)))
+ :required   ((("cl" cl)
+	       ("desktop" desktop)
+	       ("winner" winner)))
  :homepage   "http://www.emacswiki.org/PolicySwitch"
  :wikipage   "http://www.emacswiki.org/PolicySwitch")

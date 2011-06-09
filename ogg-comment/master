@@ -5,7 +5,7 @@
  :authors    (("lawrence mitchell" . "wence@gmx.li"))
  :maintainer ("lawrence mitchell" . "wence@gmx.li")
  :provided   (ogg-comment)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("music")
  :homepage   "http://www.ph.ed.ac.uk/~s0198183/"
  :commentary "\

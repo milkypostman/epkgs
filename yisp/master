@@ -4,7 +4,8 @@
  :license    "GPL-2"
  :maintainer ("Duzy Chan(ղÐÀÃú)" . "code@duzy.info")
  :provided   (nqp-mode yisp-basis yisp-helpers yisp-input-method yisp-pin yisp-scp yisp-stock yisp-third-party yisp-utils yisp-visit-track)
- :required   ((("emacs" quail widget)))
+ :required   ((("emacs-core" quail)
+	       ("widget" widget)))
  :keywords   ("convenience")
  :homepage   "http://code.google.com/p/yisp/"
  :commentary "\

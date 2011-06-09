@@ -5,6 +5,6 @@
  :authors    (("Art Taylor"))
  :maintainer ("Art Taylor")
  :provided   (levenshtein)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("levenshtein" "string" "edit" "distance")
  :wikipage   "http://www.emacswiki.org/LevenshteinDistance")

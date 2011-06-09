@@ -7,7 +7,7 @@
  :maintainer ("Thomas Munro" . "munro@ip9.org")
  :provided   (bio clock fix fix-fields-44 memcache omnibuf pomodoro)
  :required   ((("alert" alert)
-	       ("emacs" cl)
+	       ("cl" cl)
 	       ("spread" spread)))
  :keywords   ("buffer" "binary" "input")
  :homepage   "https://github.com/macdice/protocolarium"

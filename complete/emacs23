@@ -1,0 +1,66 @@
+(:summary    "Partial completion mechanism plus other goodies"
+ :created    "1990"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Dave Gillespie" . "daveg@synaptics.com"))
+ :maintainer ("Dave Gillespie" . "daveg@synaptics.com")
+ :provided   (complete)
+ :keywords   ("abbrev" "convenience" "special" "thanks" "to" "hallvard" "furuseth" "his" "many" "ideas")
+ :commentary "\
+Extended completion for the Emacs minibuffer.
+
+The basic idea is that the command name or other completable text is
+divided into words and each word is completed separately, so that
+\"M-x p-b\" expands to \"M-x print-buffer\".  If the entry is ambiguous
+each word is completed as much as possible and then the cursor is
+left at the first position where typing another letter will resolve
+the ambiguity.
+
+Word separators for this purpose are hyphen, space, and period.
+These would most likely occur in command names, Info menu items,
+and file names, respectively.  But all word separators are treated
+alike at all times.
+
+This completion package replaces the old-style completer's key
+bindings for TAB, SPC, RET, and `?'.  The old completer is still
+available on the Meta versions of those keys.  If you set
+PC-meta-flag to nil, the old completion keys will be left alone
+and the partial completer will use the Meta versions of the keys.
+
+
+Usage:  M-x partial-completion-mode.  During completable minibuffer entry,
+
+    TAB    means to do a partial completion;
+    SPC    means to do a partial complete-word;
+    RET    means to do a partial complete-and-exit;
+    ?      means to do a partial completion-help.
+
+If you set PC-meta-flag to nil, then TAB, SPC, RET, and ? perform
+original Emacs completions, and M-TAB etc. do partial completion.
+To do this, put the command,
+
+      (setq PC-meta-flag nil)
+
+in your .emacs file.  To load partial completion automatically, put
+
+      (partial-completion-mode t)
+
+in your .emacs file, too.  Things will be faster if you byte-compile
+this file when you install it.
+
+As an extra feature, in cases where RET would not normally
+complete (such as `C-x b'), the M-RET key will always do a partial
+complete-and-exit.  Thus `C-x b f.c RET' will select or create a
+buffer called \"f.c\", but `C-x b f.c M-RET' will select the existing
+buffer whose name matches that pattern (perhaps \"filing.c\").
+(PC-meta-flag does not affect this behavior; M-RET used to be
+undefined in this situation.)
+
+The regular M-TAB (lisp-complete-symbol) command also supports
+partial completion in this package.
+
+In addition, this package includes a feature for accessing include
+files.  For example, `C-x C-f <sys/time.h> RET' reads the file
+/usr/include/sys/time.h.  The variable PC-include-file-path is a
+list of directories in which to search for include files.  Completion
+is supported in include file names.")

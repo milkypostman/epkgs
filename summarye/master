@@ -3,7 +3,8 @@
  :authors    ((nil . "narazaki@cs.cis.nagasaki-u.ac.jp"))
  :maintainer (nil . "narazaki@cs.cis.nagasaki-u.ac.jp")
  :provided   (summarye)
- :required   ((("emacs" cl which-func)))
+ :required   ((("cl" cl)
+	       ("which-func" which-func)))
  :homepage   "http://www.emacswiki.org/SummaryEditMode"
  :wikipage   "http://www.emacswiki.org/SummaryEditMode"
  :commentary "\

@@ -6,7 +6,7 @@
 	      ("Le Wang & Others"))
  :maintainer ("Matthew L. Fidler")
  :provided   (auto-indent-mode)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("auto" "indentation")
  :commentary "\
 Provides auto-indentation minor mode.  This allows the following:

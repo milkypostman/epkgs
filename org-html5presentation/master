@@ -5,7 +5,9 @@
  :authors    (("Carsten Dominik" . "carsten@orgmode.org"))
  :maintainer ("Carsten Dominik" . "carsten@orgmode.org")
  :provided   (org-html5presentation)
- :required   ((("emacs" cl org-exp org-table table)
+ :required   ((("cl" cl)
+	       ("org-mode" org-exp org-table)
+	       ("table" table)
 	       (nil htmlize)))
  :keywords   ("outlines" "hypermedia" "calendar" "wp")
  :homepage   "http://orgmode.org"

@@ -4,7 +4,8 @@
  :authors    (("Masahiro Hayashi" . "mhayashi1120@gmail.com"))
  :maintainer ("Masahiro Hayashi" . "mhayashi1120@gmail.com")
  :provided   (wgrep)
- :required   ((("emacs" cl grep)))
+ :required   ((("cl" cl)
+	       ("grep" grep)))
  :keywords   ("grep" "edit" "extensions")
  :homepage   "https://github.com/mhayashi1120/Emacs-wgrep"
  :commentary "\

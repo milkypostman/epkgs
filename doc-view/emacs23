@@ -1,0 +1,79 @@
+(:summary    "View PDF/PostScript/DVI files in Emacs"
+ :created    "2007"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Tassilo Horn" . "tassilo@member.fsf.org"))
+ :maintainer ("Tassilo Horn" . "tassilo@member.fsf.org")
+ :provided   (doc-view)
+ :required   ((("cl" cl)
+	       ("dired" dired)
+	       ("emacs-core" jka-compr)
+	       ("image-mode" image-mode)))
+ :keywords   ("files" "pdf" "ps" "dvi")
+ :wikipage   "http://www.emacswiki.org/DocViewMode"
+ :commentary "\
+DocView is a document viewer for Emacs.  It converts PDF, PS and DVI files
+to a set of PNG files, one PNG for each page, and displays the PNG images
+inside an Emacs buffer.  This buffer uses `doc-view-mode' which provides
+convenient key bindings for browsing the document.
+
+To use it simply open a document file with
+
+    C-x C-f ~/path/to/document RET
+
+and the document will be converted and displayed, if your emacs supports png
+images.  With `C-c C-c' you can toggle between the rendered images
+representation and the source text representation of the document.
+
+Since conversion may take some time all the PNG images are cached in a
+subdirectory of `doc-view-cache-directory' and reused when you want to view
+that file again.  To reconvert a document hit `g' (`doc-view-reconvert-doc')
+when displaying the document.  To delete all cached files use
+`doc-view-clear-cache'.  To open the cache with dired, so that you can tidy
+it out use `doc-view-dired-cache'.
+
+When conversion in underway the first page will be displayed as soon as it
+is available and the available pages are refreshed every
+`doc-view-conversion-refresh-interval' seconds.  If that variable is nil the
+pages won't be displayed before conversion of the document finished
+completely.
+
+DocView lets you select a slice of the displayed pages.  This slice will be
+remembered and applied to all pages of the current document.  This enables
+you to cut away the margins of a document to save some space.  To select a
+slice you can use `doc-view-set-slice' (bound to `s s') which will query you
+for the coordinates of the slice's top-left corner and its width and height.
+A much more convenient way to do the same is offered by the command
+`doc-view-set-slice-using-mouse' (bound to `s m').  After invocation you
+only have to press mouse-1 at the top-left corner and drag it to the
+bottom-right corner of the desired slice.  To reset the slice use
+`doc-view-reset-slice' (bound to `s r').
+
+You can also search within the document.  The command `doc-view-search'
+(bound to `C-s') queries for a search regexp and initializes a list of all
+matching pages and messages how many match-pages were found.  After that you
+can jump to the next page containing a match with an additional `C-s'.  With
+`C-r' you can do the same, but backwards.  To search for a new regexp give a
+prefix arg to one of the search functions, e.g. by typing `C-u C-s'.  The
+searching works by using a plain text representation of the document.  If
+that doesn't already exist the first invocation of `doc-view-search' (or
+`doc-view-search-backward') starts the conversion.  When that finishes and
+you're still viewing the document (i.e. you didn't switch to another buffer)
+you're queried for the regexp then.
+
+Dired users can simply hit `v' on a document file.  If it's a PS, PDF or DVI
+it will be opened using `doc-view-mode'.
+
+
+Configuration:
+
+If the images are too small or too big you should set the \"-rXXX\" option in
+`doc-view-ghostscript-options' to another value.  (The bigger your screen,
+the higher the value.)
+
+This and all other options can be set with the customization interface.
+Simply do
+
+    M-x customize-group RET doc-view RET
+
+and modify them to your needs.")

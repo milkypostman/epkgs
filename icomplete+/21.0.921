@@ -5,7 +5,7 @@
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")
  :provided   (icomplete+)
- :required   ((("emacs" icomplete)))
+ :required   ((("icomplete" icomplete)))
  :keywords   ("help" "abbrev" "internal" "extensions" "local")
  :commentary "\
 Extensions to `icomplete.el'.

@@ -5,7 +5,7 @@
  :authors    (("Qichen Huang" . "unicad.el@gmail.com"))
  :maintainer ("Qichen Huang" . "unicad.el@gmail.com")
  :provided   (unicad)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("coding-system" "auto-coding-functions")
  :homepage   "http://www.emacswiki.org/Unicad"
  :wikipage   "http://www.emacswiki.org/Unicad")

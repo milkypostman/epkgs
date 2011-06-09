@@ -6,7 +6,7 @@
  :authors    (("Steffen Schwigon" . "ss5@renormalist.net"))
  :maintainer ("Steffen Schwigon" . "ss5@renormalist.net")
  :provided   (pod-mode)
- :required   ((("emacs" cl)
+ :required   ((("cl" cl)
 	       ("perldoc" perldoc)))
  :keywords   ("perl" "pod")
  :homepage   "https://github.com/renormalist/emacs-pod-mode"

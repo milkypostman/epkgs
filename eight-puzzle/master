@@ -5,7 +5,7 @@
  :authors    ((nil . "wenbinye@163.com"))
  :maintainer (nil . "wenbinye@163.com")
  :provided   (eight-puzzle)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("game" "eight" "puzzle")
  :homepage   "http://www.emacswiki.org/EightPuzzle"
  :wikipage   "http://www.emacswiki.org/EightPuzzle"

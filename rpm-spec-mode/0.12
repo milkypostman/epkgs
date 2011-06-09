@@ -5,7 +5,9 @@
  :authors    (("Stig Bjørlykke"))
  :maintainer ("Stig Bjørlykke")
  :provided   (rpm-spec-mode)
- :required   ((("emacs" cc-mode easymenu sh-script)
+ :required   ((("cc-mode" cc-mode)
+	       ("easymenu" easymenu)
+	       ("sh-script" sh-script)
 	       ("shindent" shindent)))
  :keywords   ("unix" "languages")
  :wikipage   "http://www.emacswiki.org/RpmSpecMode"

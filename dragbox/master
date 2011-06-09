@@ -4,7 +4,8 @@
 	      ("GPL"))
  :maintainer ("Joakim Verona")
  :provided   (dragbox)
- :required   ((("emacs" image-mode xml)))
+ :required   ((("image-mode" image-mode)
+	       ("xml" xml)))
  :homepage   "https://github.com/jave/dragbox"
  :commentary "\
 Draw a bounding box on an image interactively.

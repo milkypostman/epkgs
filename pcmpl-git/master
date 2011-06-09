@@ -6,7 +6,8 @@
  :authors    (("Leo" . "sdl.web@gmail.com"))
  :maintainer ("Leo" . "sdl.web@gmail.com")
  :provided   (pcmpl-git pcmpl-git-parse)
- :required   ((("emacs" cl pcomplete)))
+ :required   ((("cl" cl)
+	       ("pcomplete" pcomplete)))
  :keywords   ("tools")
  :homepage   "https://github.com/leoliu/pcmpl-git-el"
  :commentary "\

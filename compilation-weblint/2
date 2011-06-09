@@ -5,7 +5,7 @@
  :authors    (("Kevin Ryde" . "user42@zip.com.au"))
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (compilation-weblint)
- :required   ((("emacs" compile)))
+ :required   ((("compile" compile)))
  :keywords   ("processes")
  :commentary "\
 This spot of code adds a `compilation-error-regexp-alist' pattern for

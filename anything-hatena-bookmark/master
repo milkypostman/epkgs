@@ -5,7 +5,10 @@
  :license    "GPL-2"
  :provided   (anything-hatena-bookmark)
  :required   ((("anything" anything)
-	       ("emacs" cl sha1 url xml)))
+	       ("cl" cl)
+	       ("gnus" sha1)
+	       ("url" url)
+	       ("xml" xml)))
  :homepage   "https://github.com/wakaran/anything-hatena-bookmark"
  :commentary "\
 `anything-hatena-bookmark' is `anything' interface of your Hatena::Bookmark.

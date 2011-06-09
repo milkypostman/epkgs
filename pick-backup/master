@@ -3,6 +3,7 @@
  :updated    "2007"
  :license    "GPL-2"
  :provided   (pick-backup)
- :required   ((("emacs" diff ediff)))
+ :required   ((("diff" diff)
+	       ("ediff" ediff)))
  :homepage   "http://nschum.de/src/emacs/pick-backup/"
  :wikipage   "http://www.emacswiki.org/PickBackup")

@@ -7,7 +7,10 @@
 	      ("joaotavora" . "joaotavora@gmail.com"))
  :maintainer ("pluskid" . "pluskid@gmail.com")
  :provided   (yasnippet yasnippet-debug)
- :required   ((("emacs" assoc cl easymenu help-mode))
+ :required   ((("assoc" assoc)
+	       ("cl" cl)
+	       ("easymenu" easymenu)
+	       ("help-mode" help-mode))
 	      (("dropdown-list" dropdown-list)))
  :keywords   ("convenience" "emulation")
  :homepage   "http://code.google.com/p/yasnippet/"

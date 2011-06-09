@@ -5,7 +5,7 @@
  :authors    (("Lennart Staflin" . "lenst@lysator.liu.se"))
  :maintainer ("Lennart Staflin" . "lenst@lysator.liu.se")
  :provided   (corba)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :homepage   "http://www.emacswiki.org/CorbaImplementation"
  :wikipage   "http://www.emacswiki.org/CorbaImplementation"
  :commentary "\

@@ -4,7 +4,7 @@
  :authors    (("Tim Wichmann" . "wichmann@itwm.uni-kl.de"))
  :maintainer ("Tim Wichmann" . "wichmann@itwm.uni-kl.de")
  :provided   (mma)
- :required   ((("emacs" cl)
+ :required   ((("cl" cl)
 	       (nil func-menu)))
  :homepage   "http://www.itwm.fhg.de/as/asemployees/wichmann/mma.html"
  :commentary "\

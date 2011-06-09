@@ -3,7 +3,7 @@
  :authors    (("Phillip Lord" . "phillip.lord@newcastle.ac.uk"))
  :maintainer ("Phillip Lord" . "phillip.lord@newcastle.ac.uk")
  :provided   (muse-definition)
- :required   ((("emacs" assoc)))
+ :required   ((("assoc" assoc)))
  :homepage   "http://homepages.cs.ncl.ac.uk/phillip.lord/emacs.html"
  :commentary "\
 This adds support for definitions in a muse project. There are two new tags

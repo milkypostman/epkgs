@@ -1,7 +1,10 @@
 (:summary    "Completion for PLT Scheme"
  :license    "GPL-2"
  :provided   (plt-completions)
- :required   ((("emacs" cl derived scheme thingatpt)))
+ :required   ((("cl" cl)
+	       ("emacs-core" derived)
+	       ("scheme" scheme)
+	       ("thingatpt" thingatpt)))
  :homepage   "http://www.emacswiki.org/PltCompletions"
  :wikipage   "http://www.emacswiki.org/PltCompletions"
  :commentary "\

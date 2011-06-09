@@ -3,7 +3,7 @@
  :updated    "2008"
  :license    "GPL-2"
  :provided   (tld)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :homepage   "http://www.davep.org/emacs/"
  :commentary "\
 tld.el provides a command for looking up TLDs, either by searching for a

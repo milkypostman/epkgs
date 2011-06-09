@@ -6,7 +6,7 @@
 	      ("Brian Logan" . "bsl@cs.bham.ac.uk"))
  :maintainer ("Brian Logan" . "b.s.logan@cs.bham.ac.uk")
  :provided   (pop-help-mode)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("poplog")
  :commentary "\
 pop-help-mode (was pop-sys-file-mode)

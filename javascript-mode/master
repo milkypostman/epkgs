@@ -5,7 +5,8 @@
  :authors    (("Peter Kruse" . "pete@netzblick.de"))
  :maintainer ("Peter Kruse" . "pete@netzblick.de")
  :provided   (javascript-mode)
- :required   ((("emacs" browse-url tempo)))
+ :required   ((("browse-url" browse-url)
+	       ("tempo" tempo)))
  :keywords   ("languages")
  :homepage   "http://www.brigadoon.de/peter/"
  :wikipage   "http://www.emacswiki.org/JavaScriptMode"

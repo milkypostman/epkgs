@@ -5,7 +5,8 @@
  :authors    (("Martin Blais" . "blais@furius.ca"))
  :maintainer ("Martin Blais" . "blais@furius.ca")
  :provided   (qtdoc)
- :required   ((("emacs" browse-url iswitchb)))
+ :required   ((("browse-url" browse-url)
+	       ("iswitchb" iswitchb)))
  :homepage   "http://furius.ca/pubcode/"
  :commentary "\
 Lookup Qt documentation in a Browser from Emacs. Emacs tells your running web

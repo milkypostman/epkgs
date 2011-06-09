@@ -1,0 +1,11 @@
+(:summary    "Implement Soundex algorithm"
+ :created    "19930515"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Christian Plaunt" . "chris@bliss.berkeley.edu"))
+ :maintainer ("FSF")
+ :provided   (soundex)
+ :keywords   ("matching")
+ :commentary "\
+The Soundex algorithm maps English words into representations of
+how they sound.  Words with vaguely similar sound map to the same string.")

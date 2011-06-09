@@ -6,7 +6,7 @@
 	      ("Florian Adamsky (see wiki)"))
  :maintainer ("Matthew L. Fidler")
  :provided   (linum-off)
- :required   ((("emacs" linum)))
+ :required   ((("linum" linum)))
  :commentary "\
 Put this in your load path and then:
 (require 'linum-off)")

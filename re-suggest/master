@@ -6,10 +6,9 @@
  :authors    (("tlh" . "thunkout@gmail.com"))
  :maintainer ("tlh" . "thunkout@gmail.com")
  :provided   (recs)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("command" "suggestion" "regexp")
  :homepage   "https://github.com/tlh/re-suggest.el"
- :wikipage   "http://www.emacswiki.org/ReSuggest"
  :commentary "\
 Say you discover a new, more efficient sequence of commands to do
 something.  You want to start using it, but your muscle memory

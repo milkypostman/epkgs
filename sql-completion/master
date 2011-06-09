@@ -5,7 +5,7 @@
  :authors    ((nil . "wenbinye@163.com"))
  :maintainer (nil . "wenbinye@163.com")
  :provided   (sql-completion)
- :required   ((("emacs" cl)
+ :required   ((("cl" cl)
 	       ("mysql" mysql)))
  :homepage   "http://www.emacswiki.org/SqlCompletion"
  :wikipage   "http://www.emacswiki.org/SqlCompletion"

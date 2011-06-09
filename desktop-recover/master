@@ -5,7 +5,9 @@
  :authors    ((nil . "doom@kzsu.stanford.edu"))
  :maintainer (nil . "doom@kzsu.stanford.edu")
  :provided   (desktop-recover desktop-recover-setup desktop-setup menuacc)
- :required   ((("emacs" cl desktop thingatpt)
+ :required   ((("cl" cl)
+	       ("desktop" desktop)
+	       ("thingatpt" thingatpt)
 	       (nil desktop-recover-autosave)))
  :homepage   "https://github.com/doomvox/desktop-recover"
  :wikipage   "http://www.emacswiki.org/DesktopRecover"

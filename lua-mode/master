@@ -14,7 +14,7 @@
 	      ("Aaron Smith" . "aaron-lua@gelatinous.com"))
  :maintainer (nil . "immerrr+lua@gmail.com")
  :provided   (lua-mode)
- :required   ((("emacs" comint)))
+ :required   ((("comint" comint)))
  :keywords   ("languages" "processes" "tools")
  :homepage   "https://github.com/immerrr/lua-mode"
  :wikipage   "http://www.emacswiki.org/LuaMode"

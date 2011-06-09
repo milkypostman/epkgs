@@ -1,4 +1,5 @@
 (:license    "GPL"
  :provided   (xsl-mode)
- :required   ((("emacs" advice font-lock)
+ :required   ((("advice" advice)
+	       ("emacs-core" font-lock)
 	       ("psgml" psgml))))

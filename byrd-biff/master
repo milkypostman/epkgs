@@ -4,4 +4,4 @@
  :authors    (("Mike Williams" . "byrd@comp.vuw.ac.nz"))
  :maintainer ("Mike Williams" . "byrd@comp.vuw.ac.nz")
  :provided   (byrd-biff)
- :required   ((("emacs" timer))))
+ :required   ((("timer" timer))))

@@ -5,7 +5,7 @@
  :authors    (("Thomas Link"))
  :maintainer ("Thomas Link")
  :provided   (desktop2wmaker)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :homepage   "http://members.a1.net/t.link/CompEmacsDesktopToWmaker.html"
  :commentary "\
 The elisp function `desktop2wmaker' searches the directories in

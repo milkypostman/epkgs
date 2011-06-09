@@ -5,6 +5,7 @@
  :authors    ((nil . "sarah mount snim2@snim2.org"))
  :maintainer (nil . "sarah mount snim2@snim2.org")
  :provided   (posterous)
- :required   ((("emacs" url xml)))
+ :required   ((("url" url)
+	       ("xml" xml)))
  :keywords   ("posterous" "blog")
  :homepage   "https://github.com/snim2/posterous.el")

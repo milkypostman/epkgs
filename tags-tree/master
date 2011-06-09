@@ -4,7 +4,8 @@
  :authors    ((nil . "wenbinye@163.com"))
  :maintainer (nil . "wenbinye@163.com")
  :provided   (tags-tree)
- :required   ((("emacs" cl etags)
+ :required   ((("cl" cl)
+	       ("etags" etags)
 	       ("tree-mode" tree-mode)))
  :commentary "\
 Put this file into your load-path and the following into your ~/.emacs:

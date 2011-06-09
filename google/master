@@ -6,7 +6,8 @@
  :authors    (("Edward O'Connor" . "ted@oconnor.cx"))
  :maintainer ("Edward O'Connor" . "ted@oconnor.cx")
  :provided   (google)
- :required   ((("emacs" json url)))
+ :required   ((("json" json)
+	       ("url" url)))
  :keywords   ("comm" "processes" "tools")
  :homepage   "http://edward.oconnor.cx/elisp/"
  :wikipage   "http://www.emacswiki.org/GoogleInterface"

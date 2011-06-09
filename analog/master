@@ -5,7 +5,8 @@
  :authors    (("Matthew P. Hodges" . "mphodges@member.fsf.org"))
  :maintainer ("Matthew P. Hodges" . "mphodges@member.fsf.org")
  :provided   (analog)
- :required   ((("emacs" dired pp)))
+ :required   ((("dired" dired)
+	       ("emacs-core" pp)))
  :commentary "\
 Package to keep track of a list of specified files or the output of
 specified commands. The principal variable to modify is

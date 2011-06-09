@@ -1,6 +1,6 @@
 (:updated    "20031031"
  :license    "GPL-2"
  :provided   (h4x0r)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :homepage   "http://zancanda.staticcling.org/emacs/"
  :wikipage   "http://www.emacswiki.org/EliteSpeech")

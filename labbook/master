@@ -4,7 +4,7 @@
  :authors    (("Phillip Lord" . "p.lord@hgmp.mrc.ac.uk"))
  :maintainer ("Phillip Lord" . "p.lord@hgmp.mrc.ac.uk")
  :provided   (labbook)
- :required   ((("emacs" add-log)))
+ :required   ((("add-log" add-log)))
  :keywords   ("logging" "labbook")
  :homepage   "http://homepages.cs.ncl.ac.uk/phillip.lord/emacs.html"
  :commentary "\

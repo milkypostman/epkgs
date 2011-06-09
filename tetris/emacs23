@@ -1,0 +1,11 @@
+(:summary    "Implementation of Tetris for Emacs"
+ :created    "19970813"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Glynn Clements" . "glynn@sensei.co.uk"))
+ :maintainer ("Glynn Clements" . "glynn@sensei.co.uk")
+ :provided   (tetris)
+ :required   ((("cl" cl)
+	       ("gamegrid" gamegrid)))
+ :keywords   ("games")
+ :wikipage   "http://www.emacswiki.org/TetrisMode")

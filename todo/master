@@ -1,7 +1,7 @@
 (:created    "1996"
  :updated    "19980318"
  :provided   (todo)
- :required   ((("emacs" browse-url)
+ :required   ((("browse-url" browse-url)
 	       (nil eval-reg fileinmail)))
  :homepage   "http://pagesperso-systeme.lip6.fr/Christian.Queinnec/WWW/elisp.html"
  :wikipage   "http://www.emacswiki.org/ToDo")

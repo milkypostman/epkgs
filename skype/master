@@ -6,7 +6,8 @@
  :authors    (("SAKURAI Masashi" . "m.sakurai@kiwanami.net"))
  :maintainer ("SAKURAI Masashi" . "m.sakurai@kiwanami.net")
  :provided   (skype)
- :required   ((("emacs" cl dbus)))
+ :required   ((("cl" cl)
+	       ("dbus" dbus)))
  :keywords   ("skype" "chat")
  :homepage   "https://github.com/kiwanami/emacs-skype"
  :commentary "\

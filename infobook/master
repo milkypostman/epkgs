@@ -5,7 +5,7 @@
  :authors    (("Noah Friedman" . "friedman@prep.ai.mit.edu"))
  :maintainer (nil . "friedman@prep.ai.mit.edu")
  :provided   (infobook)
- :required   ((("emacs" info)))
+ :required   ((("info" info)))
  :keywords   ("extensions")
  :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
  :commentary "\

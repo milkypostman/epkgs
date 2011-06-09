@@ -5,7 +5,8 @@
  :authors    (("Seong-Kook Shin" . "cinsky@gmail.com"))
  :maintainer ("Seong-Kook Shin" . "cinsky@gmail.com")
  :provided   (vc-jump)
- :required   ((("emacs" cl vc)))
+ :required   ((("cl" cl)
+	       ("vc" vc)))
  :keywords   ("tools")
  :homepage   "http://www.emacswiki.org/VC-Jump"
  :wikipage   "http://www.emacswiki.org/VC-Jump"

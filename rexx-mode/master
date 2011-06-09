@@ -1,6 +1,7 @@
 (:created    "1993"
  :updated    "1993"
  :license    "GPL-1"
- :provided   (comint rexx-debug rexx-mode)
- :required   ((("emacs" font-lock)))
+ :provided   (rexx-debug rexx-mode)
+ :required   ((("comint" comint)
+	       ("emacs-core" font-lock)))
  :wikipage   "http://www.emacswiki.org/RexxMode")

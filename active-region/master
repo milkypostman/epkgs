@@ -1,4 +1,4 @@
 (:repository (git . "https://github.com/snj14/active-region.git")
  :provided   (active-region)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :homepage   "https://github.com/snj14/active-region")

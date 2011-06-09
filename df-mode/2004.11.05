@@ -6,7 +6,7 @@
 	      ("Frederik Fouvry" . "frederik.fouvry@coli.uni-saarland.de"))
  :maintainer ("Benjamin Drieu" . "bdrieu@april.org")
  :provided   (df-mode)
- :required   ((("emacs" timer)))
+ :required   ((("timer" timer)))
  :keywords   ("unix" "tools")
  :homepage   "http://www.emacswiki.org/DfMode"
  :wikipage   "http://www.emacswiki.org/DfMode"

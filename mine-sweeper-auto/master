@@ -3,7 +3,7 @@
  :updated    "2005"
  :license    "GPL-2"
  :provided   (mine-sweeper-auto)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :commentary "\
 This package extends mine-sweeper.el with a `mine-auto' function to go
 around the board marking or opening squares the same as you might do

@@ -6,8 +6,6 @@
 	      ("ChunYe Wang" . "charleswang@peoplemail.com.cn"))
  :maintainer ("Ye Wenbin" . "wenbinye@163.com")
  :provided   (eim)
- :required   ((("emacs" cl)))
- :homepage   "http://www.emacswiki.org/Eim"
- :wikipage   "http://www.emacswiki.org/Eim"
+ :required   ((("cl" cl)))
  :commentary "\
 Change Log:")

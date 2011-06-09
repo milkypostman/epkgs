@@ -4,6 +4,6 @@
  :authors    (("D. Goel" . "deego@glue.umd.edu"))
  :maintainer ("D. Goel" . "deego@glue.umd.edu")
  :provided   (alert)
- :required   ((("emacs" cl)
+ :required   ((("cl" cl)
 	       ("timerfunctions" timerfunctions)))
  :homepage   "http://www.gnufans.net/~deego/emacs.html")

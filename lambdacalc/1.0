@@ -5,7 +5,7 @@
  :authors    (("Michael Olson" . "mwolson@gnu.org"))
  :maintainer ("Michael Olson" . "mwolson@gnu.org")
  :provided   (lambdacalc)
- :required   ((("emacs" pp)))
+ :required   ((("emacs-core" pp)))
  :commentary "\
 This file provides an interpreter for untyped lambda calculus
 expressions.

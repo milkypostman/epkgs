@@ -2,6 +2,6 @@
  :updated    "20071012"
  :license    "GPL-2"
  :provided   (electric-space)
- :required   ((("emacs" cl)
+ :required   ((("cl" cl)
 	       (nil speak-parens)))
  :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/editing/")

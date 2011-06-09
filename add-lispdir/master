@@ -1,5 +1,5 @@
 (:updated    "20060126"
  :license    "GPL-2"
  :provided   (add-lispdir)
- :required   ((("emacs" info)))
+ :required   ((("info" info)))
  :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/basics/")

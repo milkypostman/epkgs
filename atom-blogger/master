@@ -5,7 +5,8 @@
  :authors    (("raman"))
  :maintainer ("raman")
  :provided   (atom-blogger)
- :required   ((("emacs" cl derived)))
+ :required   ((("cl" cl)
+	       ("emacs-core" derived)))
  :keywords   ("blogger" "atom" "api")
  :homepage   "http://www.emacswiki.org/AtomBlogger"
  :wikipage   "http://www.emacswiki.org/AtomBlogger"

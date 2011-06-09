@@ -4,8 +4,15 @@
  :license    "GPL-2"
  :authors    (("Bruce Ravel" . "ravel@phys.washington.edu"))
  :maintainer ("Bruce Ravel" . "ravel@phys.washington.edu")
- :provided   (gnuplot gnuplot-gui info-look)
- :required   ((("emacs" cl comint custom easymenu info overlay reporter wid-edit widget)
+ :provided   (gnuplot gnuplot-gui)
+ :required   ((("cl" cl)
+	       ("comint" comint)
+	       ("custom" custom)
+	       ("easymenu" easymenu)
+	       ("info" info)
+	       ("info-look" info-look)
+	       ("reporter" reporter)
+	       ("widget" wid-edit widget)
 	       (nil toolbar xpm)))
  :keywords   ("gnuplot" "plotting")
  :homepage   "http://cars9.uchicago.edu/~ravel/software/gnuplot-mode.html"

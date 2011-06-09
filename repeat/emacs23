@@ -1,0 +1,73 @@
+(:summary    "Convenient way to repeat the previous command"
+ :created    "1998"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Will Mengarini" . "seldon@eskimo.com"))
+ :maintainer ("Will Mengarini" . "seldon@eskimo.com")
+ :provided   (repeat)
+ :keywords   ("convenience" "vi" "repeat")
+ :commentary "\
+Sometimes the fastest way to get something done is just to lean on a key;
+moving forward through a series of words by leaning on M-f is an example.
+But 'forward-page is orthodoxily bound to C-x ], so moving forward through
+several pages requires
+  Loop until desired page is reached:
+    Hold down control key with left pinkie.
+    Tap <x>.
+    Lift left pinkie off control key.
+    Tap <]>.
+This is a pain in the ass.
+
+This package defines a command that repeats the preceding command,
+whatever that was, including its arguments, whatever they were.
+This command is connected to the key C-x z.
+To repeat the previous command once, type C-x z.
+To repeat it a second time immediately after, type just z.
+By typing z again and again, you can repeat the command over and over.
+
+This works correctly inside a keyboard macro as far as recording and
+playback go, but `edit-kbd-macro' gets it wrong.  That shouldn't really
+matter; if you need to edit something like
+  C-x ]              ;; forward-page
+  C-x z              ;; repeat
+  zz                 ;; self-insert-command * 2
+  C-x                ;; Control-X-prefix
+you can just kill the bogus final 2 lines, then duplicate the repeat line
+as many times as it's really needed.  Also, `edit-kbd-macro' works
+correctly if `repeat' is invoked through a rebinding to a single keystroke
+and the global variable repeat-on-final-keystroke is set to a value
+that doesn't include that keystroke.  For example, the lines
+  (global-set-key \"\\C-z\" 'repeat)
+  (setq repeat-on-final-keystroke \"z\")
+in your .emacs would allow `edit-kbd-macro' to work correctly when C-z was
+used in a keyboard macro to invoke `repeat', but would still allow C-x z
+to be used for `repeat' elsewhere.  The real reason for documenting this
+isn't that anybody would need it for the `edit-kbd-macro' problem, but
+that there might be other unexpected ramifications of re-executing on
+repetitions of the final keystroke, and this shows how to do workarounds.
+
+If the preceding command had a prefix argument, that argument is applied
+to the repeat command, unless the repeat command is given a new prefix
+argument, in which case it applies that new prefix argument to the
+preceding command.  This means a key sequence like C-u - C-x C-t can be
+repeated.  (It shoves the preceding line upward in the buffer.)
+
+Here are some other key sequences with which repeat might be useful:
+  C-u - C-t      [shove preceding character backward in line]
+  C-u - M-t      [shove preceding word backward in sentence]
+        C-x ^    enlarge-window [one line] (assuming frame has > 1 window)
+  C-u - C-x ^    [shrink window one line]
+        C-x `    next-error
+  C-u - C-x `    [previous error]
+        C-x DEL  backward-kill-sentence
+        C-x e    call-last-kbd-macro
+        C-x r i  insert-register
+        C-x r t  string-rectangle
+        C-x TAB  indent-rigidly [one character]
+  C-u - C-x TAB  [outdent rigidly one character]
+        C-x {    shrink-window-horizontally
+        C-x }    enlarge-window-horizontally
+
+This command was first called `vi-dot', because
+it was inspired by the `.' command in the vi editor,
+but it was renamed to make its name more meaningful.")

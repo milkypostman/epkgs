@@ -6,7 +6,11 @@
  :authors    (("James Ahlborn"))
  :maintainer ("James Ahlborn")
  :provided   (confluence confluence-edit)
- :required   ((("emacs" browse-url ediff image-file thingatpt url-http)
+ :required   ((("browse-url" browse-url)
+	       ("ediff" ediff)
+	       ("image-file" image-file)
+	       ("thingatpt" thingatpt)
+	       ("url" url-http)
 	       ("xml-rpc" xml-rpc)))
  :keywords   ("confluence" "wiki" "xmlrpc")
  :homepage   "http://code.google.com/p/confluence-el/"

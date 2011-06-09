@@ -1,0 +1,52 @@
+(:summary    "Silly walks for Python"
+ :created    "200311"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Dave Love" . "fx@gnu.org"))
+ :maintainer ("FSF")
+ :provided   (python python-21)
+ :required   ((("ansi-color" ansi-color)
+	       ("comint" comint)
+	       ("compile" compile)
+	       ("hippie-exp" hippie-exp)))
+ :keywords   ("languages")
+ :commentary "\
+Major mode for editing Python, with support for inferior processes.
+
+There is another Python mode, python-mode.el:
+http://launchpad.net/python-mode
+used by XEmacs, and originally maintained with Python.
+That isn't covered by an FSF copyright assignment (?), unlike this
+code, and seems not to be well-maintained for Emacs (though I've
+submitted fixes).  This mode is rather simpler and is better in
+other ways.  In particular, using the syntax functions with text
+properties maintained by font-lock makes it more correct with
+arbitrary string and comment contents.
+
+This doesn't implement all the facilities of python-mode.el.  Some
+just need doing, e.g. catching exceptions in the inferior Python
+buffer (but see M-x pdb for debugging).  [Actually, the use of
+`compilation-shell-minor-mode' now is probably enough for that.]
+Others don't seem appropriate.  For instance,
+`forward-into-nomenclature' should be done separately, since it's
+not specific to Python, and I've installed a minor mode to do the
+job properly in Emacs 23.  [CC mode 5.31 contains an incompatible
+feature, `subword-mode' which is intended to have a similar
+effect, but actually only affects word-oriented keybindings.]
+
+Other things seem more natural or canonical here, e.g. the
+{beginning,end}-of-defun implementation dealing with nested
+definitions, and the inferior mode following `cmuscheme'.  (The
+inferior mode can find the source of errors from
+`python-send-region' & al via `compilation-shell-minor-mode'.)
+There is (limited) symbol completion using lookup in Python and
+Eldoc support also using the inferior process.  Successive TABs
+cycle between possible indentations for the line.
+
+Even where it has similar facilities, this mode is incompatible
+with python-mode.el in some respects.  For instance, various key
+bindings are changed to obey Emacs conventions.
+
+TODO: See various Fixmes below.
+
+Fixme: This doesn't support (the nascent) Python 3 .")

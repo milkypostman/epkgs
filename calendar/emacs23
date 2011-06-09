@@ -1,0 +1,95 @@
+(:summary    "Calendar functions"
+ :created    "1988"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Edward M. Reingold" . "reingold@cs.uiuc.edu"))
+ :maintainer ("Glenn Morris" . "rgm@gnu.org")
+ :provided   (appt cal-bahai cal-china cal-coptic cal-dst cal-french cal-hebrew cal-html cal-islam cal-iso cal-julian cal-mayan cal-menu cal-move cal-persia cal-tex cal-x calendar diary-lib holidays lunar solar)
+ :keywords   ("calendar")
+ :wikipage   "http://www.emacswiki.org/CalendarMode"
+ :commentary "\
+This collection of functions implements a calendar window.  It
+generates a calendar for the current month, together with the
+previous and coming months, or for any other three-month period.
+The calendar can be scrolled forward and backward in the window to
+show months in the past or future; the cursor can move forward and
+backward by days, weeks, or months, making it possible, for
+instance, to jump to the date a specified number of days, weeks, or
+months from the date under the cursor.  The user can display a list
+of holidays and other notable days for the period shown; the
+notable days can be marked on the calendar, if desired.  The user
+can also specify that dates having corresponding diary entries (in
+a file that the user specifies) be marked; the diary entries for
+any date can be viewed in a separate window.  The diary and the
+notable days can be viewed independently of the calendar.  Dates
+can be translated from the (usual) Gregorian calendar to the day of
+the year/days remaining in year, to the ISO commercial calendar, to
+the Julian (old style) calendar, to the Hebrew calendar, to the
+Islamic calendar, to the Baha'i calendar, to the French
+Revolutionary calendar, to the Mayan calendar, to the Chinese
+calendar, to the Coptic calendar, to the Ethiopic calendar, and to
+the astronomical (Julian) day number.  Times of sunrise/sunset can
+be displayed, as can the phases of the moon.  Appointment
+notification for diary entries is available.  Calendar printing via
+LaTeX is available.
+
+The following files are part of the calendar/diary code:
+
+   appt.el                    Appointment notification
+   cal-bahai.el               Baha'i calendar
+   cal-china.el               Chinese calendar
+   cal-coptic.el              Coptic/Ethiopic calendars
+   cal-dst.el                 Daylight saving time rules
+   cal-french.el              French revolutionary calendar
+   cal-hebrew.el              Hebrew calendar
+   cal-html.el                Calendars in HTML
+   cal-islam.el               Islamic calendar
+   cal-iso.el                 ISO calendar
+   cal-julian.el              Julian/astronomical calendars
+   cal-mayan.el               Mayan calendars
+   cal-menu.el                Menu support
+   cal-move.el                Movement in the calendar
+   cal-persia.el              Persian calendar
+   cal-tex.el                 Calendars in LaTeX
+   cal-x.el                   Dedicated frame functions
+   calendar.el                This file
+   diary-lib.el               Diary functions
+   holidays.el                Holiday functions
+   lunar.el                   Phases of the moon
+   solar.el                   Sunrise/sunset, equinoxes/solstices
+
+Technical details of all the calendrical calculations can be found in
+``Calendrical Calculations: The Millennium Edition'' by Edward M. Reingold
+and Nachum Dershowitz, Cambridge University Press (2001).
+
+An earlier version of the technical details appeared in
+``Calendrical Calculations'' by Nachum Dershowitz and Edward M. Reingold,
+Software--Practice and Experience, Volume 20, Number 9 (September, 1990),
+pages 899-928, and in ``Calendrical Calculations, Part II: Three Historical
+Calendars'' by E. M. Reingold,  N. Dershowitz, and S. M. Clamen,
+Software--Practice and Experience, Volume 23, Number 4 (April, 1993),
+pages 383-404.
+
+Hard copies of these two papers can be obtained by sending email to
+reingold@cs.uiuc.edu with the SUBJECT \"send-paper-cal\" (no quotes) and
+the message BODY containing your mailing address (snail).
+
+
+A note on free variables:
+
+The calendar passes around a few dynamically bound variables, which
+unfortunately have rather common names.  They are meant to be
+available for external functions, so the names can't be changed.
+
+displayed-month, displayed-year: bound in calendar-generate, the
+  central month of the 3 month calendar window
+original-date, number: bound in diary-list-entries, the arguments
+  with which that function was called.
+date, entry: bound in diary-list-sexp-entries (qv)
+
+Bound in diary-list-entries:
+diary-entries-list: use in d-l, appt.el, and by diary-add-to-list
+diary-saved-point: only used in diary-lib.el, passed to the display func
+date-string: only used in diary-lib.el
+list-only: don't modify the diary-buffer, just return a list of entries
+file-glob-attrs: yuck")

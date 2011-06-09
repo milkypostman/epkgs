@@ -5,7 +5,7 @@
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")
  :provided   (highlight)
- :required   ((("emacs" cl))
+ :required   ((("cl" cl))
 	      (("faces+" faces+)
 	       ("frame-fns" frame-fns)
 	       ("menu-bar+" menu-bar+)))

@@ -1,7 +1,8 @@
 (:summary    "An interpreter/debugger for the 2D Befunge programming language"
  :license    "GPL-2"
  :provided   (befunge befunge-mode)
- :required   ((("emacs" calc calc-ext cl)
+ :required   ((("calc" calc calc-ext)
+	       ("cl" cl)
 	       (nil hscroll)))
  :keywords   ("games")
  :homepage   "http://www.emacswiki.org/BefungeMode"

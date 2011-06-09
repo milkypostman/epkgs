@@ -5,7 +5,8 @@
  :authors    (("Andrey Torba" . "andrey.torba@gmail.com"))
  :maintainer ("Andrey Torba" . "andrey.torba@gmail.com")
  :provided   (google-translate)
- :required   ((("emacs" json url)))
+ :required   ((("json" json)
+	       ("url" url)))
  :keywords   ("convenience")
  :homepage   "https://github.com/andreo/google-translator"
  :commentary "\

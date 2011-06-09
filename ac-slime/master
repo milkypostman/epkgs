@@ -2,5 +2,5 @@
  :authors    (("Steve Purcell" . "steve@sanityinc.com"))
  :maintainer ("Steve Purcell" . "steve@sanityinc.com")
  :provided   (ac-slime)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :homepage   "https://github.com/purcell/ac-slime")

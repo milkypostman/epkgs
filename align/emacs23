@@ -1,0 +1,21 @@
+(:summary    "Align text to a specific column, by regexp"
+ :created    "1999"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("John Wiegley" . "johnw@gnu.org"))
+ :maintainer ("FSF")
+ :provided   (align)
+ :keywords   ("convenience" "languages" "lisp")
+ :commentary "\
+This mode allows you to align regions in a context-sensitive fashion.
+The classic use is to align assignments:
+
+   int a = 1;
+   short foo = 2;
+   double blah = 4;
+
+becomes
+
+   int    a    = 1;
+   short  foo  = 2;
+   double blah = 4;")

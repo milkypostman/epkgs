@@ -6,7 +6,7 @@
  :authors    (("R.W. van 't Veer"))
  :maintainer ("R.W. van 't Veer")
  :provided   (elein)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("tools" "processes")
  :homepage   "https://github.com/remvee/elein"
  :commentary "\

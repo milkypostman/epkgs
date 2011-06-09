@@ -2,5 +2,6 @@
  :created    "2011"
  :updated    "2011"
  :provided   (commit-patch-buffer)
- :required   ((("emacs" log-edit vc)))
+ :required   ((("log-edit" log-edit)
+	       ("vc" vc)))
  :homepage   "https://github.com/caldwell/commit-patch")

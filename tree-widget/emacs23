@@ -1,0 +1,97 @@
+(:summary    "Tree widget"
+ :created    "20010216"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("David Ponce" . "david@dponce.com"))
+ :maintainer ("David Ponce" . "david@dponce.com")
+ :provided   (tree-widget)
+ :required   ((("cl" cl)
+	       ("widget" wid-edit)))
+ :keywords   ("extensions")
+ :commentary "\
+This library provide a tree widget useful to display data
+structures organized in a hierarchical order.
+
+The following properties are specific to the tree widget:
+
+:open
+   Set to non-nil to expand the tree.  By default the tree is
+   collapsed.
+
+:node
+   Specify the widget used to represent the value of a tree node.
+   By default this is an `item' widget which displays the
+   tree-widget :tag property value if defined, or a string
+   representation of the tree-widget value.
+
+:keep
+   Specify a list of properties to keep when the tree is collapsed
+   so they can be recovered when the tree is expanded.  This
+   property can be used in child widgets too.
+
+:expander (obsoletes :dynargs)
+   Specify a function to be called to dynamically provide the
+   tree's children in response to an expand request.  This function
+   will be passed the tree widget and must return a list of child
+   widgets.  Child widgets returned by the :expander function are
+   stored in the :args property of the tree widget.
+
+:expander-p
+   Specify a predicate which must return non-nil to indicate that
+   the :expander function above has to be called.  By default, to
+   speed up successive expand requests, the :expander-p predicate
+   return non-nil when the :args value is nil.  So, by default, to
+   refresh child values, it is necessary to set the :args property
+   to nil, then redraw the tree.
+
+:open-icon  (default `tree-widget-open-icon')
+:close-icon (default `tree-widget-close-icon')
+:empty-icon (default `tree-widget-empty-icon')
+:leaf-icon  (default `tree-widget-leaf-icon')
+   Those properties define the icon widgets associated to tree
+   nodes.  Icon widgets must derive from the `tree-widget-icon'
+   widget.  The :tag and :glyph-name property values are
+   respectively used when drawing the text and graphic
+   representation of the tree.  The :tag value must be a string
+   that represent a node icon, like \"[+]\" for example.  The
+   :glyph-name value must the name of an image found in the current
+   theme, like \"close\" for example (see also the variable
+   `tree-widget-theme').
+
+:guide      (default `tree-widget-guide')
+:end-guide  (default `tree-widget-end-guide')
+:no-guide   (default `tree-widget-no-guide')
+:handle     (default `tree-widget-handle')
+:no-handle  (default `tree-widget-no-handle')
+   Those properties define `item'-like widgets used to draw the
+   tree guide lines.  The :tag property value is used when drawing
+   the text representation of the tree.  The graphic look and feel
+   is given by the images named \"guide\", \"no-guide\", \"end-guide\",
+   \"handle\", and \"no-handle\" found in the current theme (see also
+   the variable `tree-widget-theme').
+
+These are the default :tag values for icons, and guide lines:
+
+open-icon    \"[-]\"
+close-icon   \"[+]\"
+empty-icon   \"[X]\"
+leaf-icon    \"\"
+guide        \" |\"
+no-guide     \"  \"
+end-guide    \" `\"
+handle       \"-\"
+no-handle    \" \"
+
+The text representation of a tree looks like this:
+
+[-] 1        (open-icon :node)
+ |-[+] 1.0   (guide+handle+close-icon :node)
+ |-[X] 1.1   (guide+handle+empty-icon :node)
+ `-[-] 1.2   (end-guide+handle+open-icon :node)
+    |- 1.2.1 (no-guide+no-handle+guide+handle+leaf-icon leaf)
+    `- 1.2.2 (no-guide+no-handle+end-guide+handle+leaf-icon leaf)
+
+By default, images will be used instead of strings to draw a
+nice-looking tree.  See the `tree-widget-image-enable',
+`tree-widget-themes-directory', and `tree-widget-theme' options for
+more details.")

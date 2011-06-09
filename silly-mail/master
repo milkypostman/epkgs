@@ -3,9 +3,9 @@
  :license    "GPL-2"
  :maintainer ("Noah Friedman" . "friedman@splode.com")
  :provided   (silly-mail)
- :required   ((("emacs" sendmail)
-	       ("horoscope" horoscope)
+ :required   ((("horoscope" horoscope)
 	       ("kibologize" kibologize)
+	       ("sendmail" sendmail)
 	       ("shop" shop)
 	       ("uboat" uboat)
 	       ("youwill" youwill)))

@@ -5,7 +5,7 @@
  :authors    (("rubikitch" . "rubikitch@ruby-lang.org"))
  :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
  :provided   (screenshot)
- :required   ((("emacs" cl))
+ :required   ((("cl" cl))
 	      (("yaoddmuse" yaoddmuse)))
  :keywords   ("images" "hypermedia")
  :homepage   "http://www.emacswiki.org/ScreenShot"

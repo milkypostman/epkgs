@@ -3,7 +3,7 @@
  :updated    "2002"
  :license    "GPL-2"
  :provided   (icmp-info)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :homepage   "http://www.davep.org/emacs/"
  :commentary "\
 icmp-info.el provides a set of functions for getting information about

@@ -4,6 +4,6 @@
  :updated    "2010"
  :maintainer (nil . "kyle@nonpolynomial.com")
  :provided   (jerkcity)
- :required   ((("emacs" cookie1)))
+ :required   ((("cookie1" cookie1)))
  :keywords   ("dongs" "games" "also-dongs")
  :homepage   "https://github.com/qdot/jerkcity-project")

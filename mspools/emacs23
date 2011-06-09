@@ -1,0 +1,91 @@
+(:summary    "Show mail spools waiting to be read"
+ :created    "19970122"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Stephen Eglen" . "stephen@gnu.org"))
+ :maintainer ("Stephen Eglen" . "stephen@gnu.org")
+ :provided   (mspools)
+ :required   ((("vm" vm-vars)))
+ :keywords   ("mail")
+ :homepage   "http://www.anc.ed.ac.uk/~stephen/emacs/"
+ :commentary "\
+If you use a mail filter (e.g. procmail, filter) to put mail messages in
+folders, this file will let you see which folders have mail waiting
+to be read in them.  It assumes that new mail for the file `folder'
+is written by the filter to a file called `folder.spool'.  (If the
+file writes directly to `folder' you may lose mail if new mail
+arrives whilst you are reading the folder in emacs, hence the use
+of a spool file.)  For example, the following procmail recipe puts
+any mail with `emacs' in the subject line into the spool file
+`emacs.spool', ready to go into the folder `emacs'.
+:0:
+* ^Subject.*emacs
+emacs.spool
+
+It also assumes that all of your spool files and mail folders live
+in the directory pointed to by `mspools-folder-directory', so you must
+set this (see Installation).
+
+When you run `mspools-show', it creates a *spools* buffer containing
+all of the spools in the folder directory that are waiting to be
+read.  On each line is the spool name and its size in bytes.  Move
+to the line of the folder that you would like to read, and then
+press return or space.  The mailer (VM or RMAIL) should then read
+that folder and get the new mail for you.  When you return to the
+*spools* buffer, you will either see \"*\" to indicate that the spool
+has been read, or the remaining unread spools, depending on the
+value of `mspools-update'.
+
+This file should work with both VM and RMAIL.  See the variable
+`mspools-using-vm' for details.
+
+Basic installation.
+(autoload 'mspools-show \"mspools\" \"Show outstanding mail spools.\" t)
+(setq mspools-folder-directory \"~/MAIL/\")
+
+If you use VM, mspools-folder-directory will default to vm-folder-directory
+unless you have already given it a value.
+
+Extras.
+
+(global-set-key '[S-f1] 'mspools-show) ;Bind mspools-show to Shift F1.
+(setq mspools-update t)                ;Automatically update buffer.
+
+Interface with the mail filter.
+We assume that the mail filter drops new mail into the spool
+`folder.spool'.  If your spool files are something like folder.xyz
+for inbox `folder', then do:
+(setq mspools-suffix \"xyz\")
+If you use other conventions for your spool files, this code will
+need rewriting.
+
+Warning for VM users
+Don't use if you are not sure what you are doing.  The value of
+vm-spool-files is altered, so you may not be able to read incoming
+mail with VM if this is incorrectly set.
+
+Useful settings for VM
+vm-auto-get-new-mail should be t (the default).
+
+Acknowledgements
+Thanks to jond@mitre.org (Jonathan Doughty) for help with code for
+setting up vm-spool-files.
+
+TODO
+
+What if users have mail spools in more than one directory?  Extend
+mspools-folder-directory to be a list of directories?  Currently,
+if mail spools are in other directories, the way to read them is to
+put a symbolic link to the spool into the mspools-folder-directory.
+
+I was going to add mouse support so that you could click on a line
+to visit the buffer.  Tell me if you want it, and I can put the
+code in (I don't use the mouse much, so I haven't bothered with it
+so far).
+
+Rather than showing size in bytes, could we see the number of msgs
+waiting?  (Could be more time demanding / system dependent).
+Maybe just call a perl script to do all the hard work, and
+visualize the results in the buffer.
+
+Shrink wrap the buffer to remove excess white-space?")

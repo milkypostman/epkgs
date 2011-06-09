@@ -5,7 +5,8 @@
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")
  :provided   (mouse+)
- :required   ((("emacs" cl mouse))
+ :required   ((("cl" cl)
+	       ("emacs-core" mouse))
 	      (("second-sel" second-sel)))
  :keywords   ("mouse")
  :homepage   "http://www.emacswiki.org/MousePlus"

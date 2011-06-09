@@ -3,7 +3,9 @@
  :updated    "2010"
  :license    "GPL-2"
  :provided   (ebm)
- :required   ((("emacs" cl parse-time url)))
+ :required   ((("cl" cl)
+	       ("gnus" parse-time)
+	       ("url" url)))
  :homepage   "https://github.com/ryebread/ebm"
  :commentary "\
 Feature Request:")

@@ -5,7 +5,8 @@
  :authors    (("Kevin Ryde" . "user42@zip.com.au"))
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (makeinfo-info)
- :required   ((("emacs" info makeinfo)))
+ :required   ((("info" info)
+	       ("makeinfo" makeinfo)))
  :keywords   ("docs" "tex")
  :wikipage   "http://www.emacswiki.org/MakeinfoInfo"
  :commentary "\

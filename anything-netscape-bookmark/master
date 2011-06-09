@@ -5,7 +5,7 @@
  :license    "GPL-2"
  :provided   (anything-netscape-bookmark)
  :required   ((("anything" anything)
-	       ("emacs" cl)))
+	       ("cl" cl)))
  :keywords   ("url" "bookmark" "browse" "netscape")
  :homepage   "https://github.com/tm8st/emacs-anything-netscape-bookmark"
  :commentary "\

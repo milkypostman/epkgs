@@ -6,5 +6,6 @@
  :authors    (("myfreeweb" . "me@myfreeweb.ru"))
  :maintainer ("myfreeweb" . "me@myfreeweb.ru")
  :provided   (less-mode)
- :required   ((("emacs" compile derived)))
+ :required   ((("compile" compile)
+	       ("emacs-core" derived)))
  :homepage   "https://github.com/myfreeweb/less-mode")

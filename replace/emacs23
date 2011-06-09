@@ -1,0 +1,8 @@
+(:summary    "Replace commands for Emacs"
+ :created    "1985"
+ :updated    "2011"
+ :license    "GPL-3"
+ :maintainer ("FSF")
+ :commentary "\
+This package supplies the string and regular-expression replace functions
+documented in the Emacs user's manual.")

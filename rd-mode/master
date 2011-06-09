@@ -5,6 +5,6 @@
 	      ("Toshiro Kuwabara"))
  :maintainer ("Koji Arai")
  :provided   (rd-mode)
- :required   ((("emacs" derived)))
+ :required   ((("emacs-core" derived)))
  :homepage   "http://raa.ruby-lang.org/project/rdtool/"
  :wikipage   "http://www.emacswiki.org/RdMode")

@@ -3,7 +3,7 @@
  :updated    "2006"
  :license    "GPL-2"
  :provided   (123-menu)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("convenience")
  :homepage   "http://www.emacswiki.org/OneTwoThreeMenu"
  :wikipage   "http://www.emacswiki.org/OneTwoThreeMenu"

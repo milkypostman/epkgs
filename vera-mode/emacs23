@@ -1,0 +1,50 @@
+(:summary    "Major mode for editing Vera files"
+ :created    "1997"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Reto Zimmermann" . "reto@gnu.org"))
+ :maintainer ("Reto Zimmermann" . "reto@gnu.org")
+ :provided   (vera-mode)
+ :required   ((("cc-mode" cc-cmds)
+	       ("easymenu" easymenu)
+	       ("emacs-core" font-lock)
+	       ("hippie-exp" hippie-exp)
+	       ("reporter" reporter)))
+ :keywords   ("languages" "vera")
+ :commentary "\
+This package provides a simple Emacs major mode for editing Vera code.
+It includes the following features:
+
+  - Syntax highlighting
+  - Indentation
+  - Word/keyword completion
+  - Block commenting
+  - Works under GNU Emacs and XEmacs
+
+
+Documentation
+
+See comment string of function `vera-mode' or type `C-h m' in Emacs.
+
+
+Installation
+
+Prerequisites:  GNU Emacs 20.X/21.X, XEmacs 20.X/21.X
+
+Put `vera-mode.el' into the `site-lisp' directory of your Emacs installation
+or into an arbitrary directory that is added to the load path by the
+following line in your Emacs start-up file (`.emacs'):
+
+  (setq load-path (cons (expand-file-name \"<directory-name>\") load-path))
+
+If you already have the compiled `vera-mode.elc' file, put it in the same
+directory.  Otherwise, byte-compile the source file:
+  Emacs:  M-x byte-compile-file  ->  vera-mode.el
+  Unix:   emacs -batch -q -no-site-file -f batch-byte-compile vera-mode.el
+
+Add the following lines to the `site-start.el' file in the `site-lisp'
+directory of your Emacs installation or to your Emacs start-up file
+(`.emacs'):
+
+  (autoload 'vera-mode \"vera-mode\" \"Vera Mode\" t)
+  (setq auto-mode-alist (cons '(\"\\\\.vr[hi]?\\\\'\" . vera-mode) auto-mode-alist))")

@@ -6,7 +6,7 @@
 	      ("Greg Detre"))
  :maintainer ("Per B. Sederberg")
  :provided   (freex freex-embed freex-fontify freex-hiert freex-meta freex-mode freex-timestamp freex-xml version-info)
- :required   ((("emacs" font-lock)))
+ :required   ((("emacs-core" font-lock)))
  :keywords   ("hypermedia")
  :homepage   "http://www.princeton.edu/~gdetre/software/freex/docs/index.html"
  :wikipage   "http://www.emacswiki.org/FreexMode"

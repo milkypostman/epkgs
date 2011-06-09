@@ -5,7 +5,7 @@
  :authors    (("Alessandro Di Marco" . "dmr@c0nc3pt.com"))
  :maintainer ("Alessandro Di Marco" . "dmr@c0nc3pt.com")
  :provided   (w3xt)
- :required   ((("emacs" cl)
+ :required   ((("cl" cl)
 	       ("w3m" w3m)))
  :keywords   ("mime")
  :commentary "\

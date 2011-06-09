@@ -6,7 +6,8 @@
  :authors    (("Nikolaj Schumacher" . "bugs@nschum.de"))
  :maintainer ("Nikolaj Schumacher" . "bugs@nschum.de")
  :provided   (echo-pick)
- :required   ((("emacs" cl eldoc)))
+ :required   ((("cl" cl)
+	       ("eldoc" eldoc)))
  :keywords   ("convenience")
  :homepage   "http://nschum.de/src/emacs/echo-pick"
  :commentary "\

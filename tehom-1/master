@@ -5,7 +5,7 @@
  :authors    (("Tom Breton" . "tehom@localhost"))
  :maintainer ("Tom Breton" . "tehom@localhost")
  :provided   (tehom-1)
- :required   ((("emacs" gnus-eform gnus-util)))
+ :required   ((("gnus" gnus-eform gnus-util)))
  :keywords   ("extensions")
  :homepage   "www.panix.com/~tehom/"
  :commentary "\

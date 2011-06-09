@@ -5,9 +5,9 @@
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")
  :provided   (synonyms)
- :required   ((("emacs" cl))
-	      (("emacs" thingatpt)
-	       ("icicles" icicles)
+ :required   ((("cl" cl))
+	      (("icicles" icicles)
+	       ("thingatpt" thingatpt)
 	       ("thingatpt+" thingatpt+)))
  :keywords   ("text" "dictionary" "thesaurus" "spelling" "apropos" "help")
  :homepage   "http://www.emacswiki.org/Synonyms"

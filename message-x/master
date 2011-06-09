@@ -5,7 +5,7 @@
  :authors    (("Kai Grossjohann" . "grossjohann@ls6.informatik.uni-dortmund.de"))
  :maintainer ("Kai Grossjohann" . "grossjohann@ls6.informatik.uni-dortmund.de")
  :provided   (message-x)
- :required   ((("emacs" message)))
+ :required   ((("gnus" message)))
  :keywords   ("news" "mail" "compose" "completion")
  :commentary "\
 The most recent version of this can always be fetched from the

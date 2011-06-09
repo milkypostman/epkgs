@@ -5,7 +5,8 @@
  :authors    (("Matthew Kennedy" . "mkennedy@killr.ath.cx"))
  :maintainer ("Matthew Kennedy" . "mkennedy@killr.ath.cx")
  :provided   (color-theme-x)
- :required   ((("emacs" cl time-stamp)))
+ :required   ((("cl" cl)
+	       ("time-stamp" time-stamp)))
  :keywords   ("convenience" "faces" "frames")
  :commentary "\
 $Id: color-theme-x.el,v 1.2 2004/01/04 03:58:15 mkennedy Exp $

@@ -5,7 +5,7 @@
  :authors    (("Edward O'Connor" . "hober0@gmail.com"))
  :maintainer ("Edward O'Connor" . "hober0@gmail.com")
  :provided   (html5-langs html5-ncr html5-tok whattf-dt)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("hypermedia" "wp")
  :homepage   "http://edward.oconnor.cx/elisp/"
  :commentary "\

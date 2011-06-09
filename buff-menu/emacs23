@@ -1,0 +1,12 @@
+(:summary    "Buffer menu main function and support functions"
+ :created    "1985"
+ :updated    "2011"
+ :license    "GPL-3"
+ :maintainer ("FSF")
+ :keywords   ("convenience")
+ :commentary "\
+Edit, delete, or change attributes of all currently active Emacs
+buffers from a list summarizing their state.  A good way to browse
+any special or scratch buffers you have loaded, since you can't find
+them by filename.  The single entry point is `list-buffers',
+normally bound to C-x C-b.")

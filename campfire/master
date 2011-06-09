@@ -6,8 +6,10 @@
  :authors    (("Tim Harper"))
  :maintainer ("Tim Harper")
  :provided   (campfire)
- :required   ((("emacs" button json url url-http)
-	       ("twittering-mode" ssl)))
+ :required   ((("button" button)
+	       ("json" json)
+	       ("twittering-mode" ssl)
+	       ("url" url url-http)))
  :keywords   ("campfire" "chat")
  :homepage   "https://github.com/timcharper/campfire-el.git"
  :commentary "\

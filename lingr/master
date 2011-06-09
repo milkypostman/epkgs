@@ -6,7 +6,11 @@
  :authors    (("lugecy" . "lugecy@gmail.com"))
  :maintainer ("lugecy" . "lugecy@gmail.com")
  :provided   (lingr)
- :required   ((("emacs" cl json parse-time timezone url)))
+ :required   ((("cl" cl)
+	       ("gnus" parse-time)
+	       ("json" json)
+	       ("timezone" timezone)
+	       ("url" url)))
  :keywords   ("chat" "client" "internet")
  :homepage   "https://github.com/lugecy/lingr-el"
  :commentary "\

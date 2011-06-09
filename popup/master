@@ -6,7 +6,7 @@
  :authors    (("Tomohiro Matsuyama" . "tomo@cx4a.org"))
  :maintainer ("Tomohiro Matsuyama" . "tomo@cx4a.org")
  :provided   (popup)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("lisp")
  :homepage   "https://github.com/m2ym/popup-el"
  :wikipage   "http://www.emacswiki.org/PopUp")

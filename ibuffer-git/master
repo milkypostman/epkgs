@@ -6,7 +6,8 @@
  :authors    (("Jonathan Rockway" . "jon@jrock.us"))
  :maintainer ("Jonathan Rockway" . "jon@jrock.us")
  :provided   (ibuffer-git)
- :required   ((("emacs" cl ibuffer)))
+ :required   ((("cl" cl)
+	       ("ibuffer" ibuffer)))
  :keywords   ("convenience")
  :homepage   "http://jrockway.github.com/ibuffer-git/"
  :commentary "\

@@ -3,7 +3,10 @@
  :authors    (("Eric Marsden" . "emarsden@laas.fr"))
  :maintainer ("Eric Marsden" . "emarsden@laas.fr")
  :provided   (dict-web)
- :required   ((("emacs" browse-url cl easymenu url)
+ :required   ((("browse-url" browse-url)
+	       ("cl" cl)
+	       ("easymenu" easymenu)
+	       ("url" url)
 	       ("w3" w3-forms)))
  :keywords   ("dictionary")
  :homepage   "http://emarsden.chez.com/downloads/"

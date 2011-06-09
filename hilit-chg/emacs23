@@ -1,0 +1,113 @@
+(:summary    "Minor mode displaying buffer changes with special face"
+ :created    "1998"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Richard Sharman" . "rsharman@pobox.com"))
+ :maintainer ("Richard Sharman" . "rsharman@pobox.com")
+ :provided   (hilit-chg)
+ :required   ((("ediff" ediff-util)
+	       ("widget" wid-edit)))
+ :keywords   ("faces")
+ :commentary "\
+A minor mode: \"Highlight Changes mode\".
+
+When Highlight Changes mode is enabled changes to the buffer are
+recorded with a text property.  Normally these ranges of text are
+displayed in a distinctive face.  However, sometimes it is
+desirable to temporarily not see these changes.  Instead of
+disabling Highlight Changes mode (which would remove the text property)
+use the command highlight-changes-visible-mode.
+
+Two faces are supported: one for changed or inserted text and
+another for the first character after text has been deleted.
+
+When Highlight Changes mode is on (even if changes are not visible)
+you can go to the next or previous change with
+`highlight-changes-next-change' or `highlight-changes-previous-change'.
+
+Command highlight-compare-with-file shows changes in this file
+compared with another file (by default the previous version of the
+file).
+
+The command highlight-compare-buffers compares two buffers by
+highlighting their differences.
+
+You can \"age\" different sets of changes by using
+`highlight-changes-rotate-faces'.  This rotates through a series
+of different faces, so you can distinguish \"new\" changes from \"older\"
+changes.  You can customize these \"rotated\" faces in two ways.  You can
+either explicitly define each face by customizing
+`highlight-changes-face-list'.  If, however, the faces differ from
+`highlight-changes-face' only in the foreground color, you can simply set
+`highlight-changes-colors'.  If `highlight-changes-face-list' is nil when
+the faces are required they will be constructed from
+`highlight-changes-colors'.
+
+You can automatically rotate faces when the buffer is saved;
+see function `highlight-changes-rotate-faces' for how to do this.
+
+The hook `highlight-changes-mode-hook' is called when
+Highlight Changes mode is turned on or off.
+When it called, variable `highlight-changes-mode' has been updated
+to the new value.
+
+Example usage:
+(defun my-highlight-changes-mode-hook ()
+  (if highlight-changes-mode
+      (add-hook 'write-file-functions 'highlight-changes-rotate-faces nil t)
+    (remove-hook 'write-file-functions 'highlight-changes-rotate-faces t)
+    ))
+
+
+          Automatically enabling Highlight Changes mode
+
+
+Normally, Highlight Changes mode is turned on explicitly in a buffer.
+
+If you prefer to have it automatically invoked you can do it as
+follows.
+
+1. Most modes have a major-hook, typically called MODE-hook.  You
+can use `add-hook' to call `highlight-changes-mode'.
+
+  Example:
+	(add-hook 'c-mode-hook 'highlight-changes-mode)
+
+However, this cannot be done for Fundamental mode for there is no
+such hook.
+
+2. You can use the function `global-highlight-changes-mode'
+
+This function, which is fashioned after the way `global-font-lock' works,
+toggles on or off global Highlight Changes mode.  When activated, it turns
+on Highlight Changes mode in all \"suitable\" existing buffers and will turn
+it on in new \"suitable\" buffers to be created.
+
+A buffer's \"suitability\" is determined by variable
+`highlight-changes-global-modes', as follows.  If it is
+* nil  -- then no buffers are suitable;
+* a function -- this function is called and the result is used.  As
+  an example, if the value is `buffer-file-name' then all buffers
+  who are visiting files are suitable, but others (like dired
+  buffers) are not;
+* a list -- then the buffer is suitable if and only if its mode is in the
+  list, except if the first element is `not', in which case the test
+  is reversed (i.e. it is a list of unsuitable modes).
+* Otherwise, the buffer is suitable if its name does not begin with
+  ` ' or `*' and if `buffer-file-name' returns true.
+
+To enable it for future sessions put this in your ~/.emacs file:
+		(global-highlight-changes-mode t)
+
+
+    Possible bindings:
+(global-set-key '[C-right] 'highlight-changes-next-change)
+(global-set-key '[C-left]  'highlight-changes-previous-change)
+
+    Other interactive functions (that could be bound if desired):
+highlight-changes-mode
+highlight-changes-toggle-visibility
+highlight-changes-remove-highlight
+highlight-compare-with-file
+highlight-compare-buffers
+highlight-changes-rotate-faces")

@@ -5,6 +5,6 @@
  :authors    (("Akira TAGOH" . "akira@tagoh.org"))
  :maintainer ("Akira TAGOH" . "akira@tagoh.org")
  :provided   (mew-ical)
- :required   ((("emacs" browse-url)))
+ :required   ((("browse-url" browse-url)))
  :keywords   ("mew" "icalendar")
  :homepage   "http://code.google.com/p/mew-ical/")

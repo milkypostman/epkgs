@@ -6,8 +6,9 @@
  :authors    (("Jonas Bernoulli" . "jonas@bernoul.li"))
  :maintainer ("Jonas Bernoulli" . "jonas@bernoul.li")
  :provided   (elx)
- :required   ((("dconv" dconv)
-	       ("emacs" cl lisp-mnt)
+ :required   ((("cl" cl)
+	       ("dconv" dconv)
+	       ("lisp-mnt" lisp-mnt)
 	       ("vcomp" vcomp)))
  :keywords   ("docs" "libraries" "packages")
  :homepage   "https://github.com/tarsius/elx"

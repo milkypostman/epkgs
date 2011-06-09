@@ -4,7 +4,9 @@
  :updated    "2009"
  :license    "GPL-3"
  :provided   (company-emacs-eclim decompile eclim eclim-ant eclim-java eclim-maven eclim-problems eclim-project)
- :required   ((("company" company)
-	       ("emacs" cl compile json)))
+ :required   ((("cl" cl)
+	       ("company" company)
+	       ("compile" compile)
+	       ("json" json)))
  :homepage   "https://github.com/senny/emacs-eclim"
  :wikipage   "http://www.emacswiki.org/EmacsEclim")

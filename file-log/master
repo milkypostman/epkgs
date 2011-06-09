@@ -5,7 +5,7 @@
  :authors    (("Frederic Lepied" . "frederic.lepied@sugix.frmug.org"))
  :maintainer ("Frederic Lepied" . "frederic.lepied@sugix.frmug.org")
  :provided   (file-log)
- :required   ((("emacs" add-log)))
+ :required   ((("add-log" add-log)))
  :keywords   ("maint" "vc" "cvs")
  :commentary "\
 These simple functions  let you add  log entries for files you edit

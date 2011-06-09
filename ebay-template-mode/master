@@ -2,7 +2,7 @@
  :authors    (("MON KEY"))
  :maintainer ("MON KEY")
  :provided   (ebay-template-mode ebay-template-tools)
- :required   ((("emacs" cl)
+ :required   ((("cl" cl)
 	       ("html-lite" html-lite)
 	       ("xmlgen" xmlgen)
 	       (nil ebay-template-html-utils smith-poster-utils xml-gen))))

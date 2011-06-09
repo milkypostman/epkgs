@@ -6,7 +6,7 @@
  :authors    (("Nikolaj Schumacher" . "bugs@nschum.de"))
  :maintainer ("Nikolaj Schumacher" . "bugs@nschum.de")
  :provided   (kill-ring-search)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("convenience" "matching")
  :homepage   "http://nschum.de/src/emacs/kill-ring-search"
  :wikipage   "http://www.emacswiki.org/KillRingSearch"

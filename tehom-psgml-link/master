@@ -5,7 +5,7 @@
  :authors    (("Tom Breton" . "tehom@localhost"))
  :maintainer ("Tom Breton" . "tehom@localhost")
  :provided   (tehom-psgml-link)
- :required   ((("emacs" cl)
+ :required   ((("cl" cl)
 	       ("psgml" psgml)))
  :keywords   ("hypermedia")
  :homepage   "http://panix.com/~tehom/"

@@ -2,6 +2,7 @@
  :updated    "2009"
  :license    "GPL-3"
  :provided   (grail-fn grail-profile)
- :required   ((("emacs" cl find-func)))
+ :required   ((("cl" cl)
+	       ("find-func" find-func)))
  :homepage   "http://www.emacswiki.org/Grail"
  :wikipage   "http://www.emacswiki.org/Grail")

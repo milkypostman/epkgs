@@ -4,6 +4,6 @@
  :authors    (("Deepak Goel" . "deego@gnufans.org"))
  :maintainer ("Deepak Goel" . "deego@gnufans.org")
  :provided   (mkback)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("backup" "project")
  :homepage   "http://www.gnufans.net/~deego/emacs.html")

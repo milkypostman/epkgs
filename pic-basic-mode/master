@@ -6,5 +6,5 @@
  :maintainer ("Fred White" . "fwhite@alum.mit.edu")
  :adapted-by ("Dave Love" . "d.love@dl.ac.uk")
  :provided   (pic-basic-mode)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("languages" "basic"))

@@ -5,6 +5,7 @@
  :authors    (("Daniel M. German" . "dmgerman@acm.org"))
  :maintainer ("Daniel M. German" . "dmgerman@acm.org")
  :provided   (anaya)
- :required   ((("emacs" cl url)
+ :required   ((("cl" cl)
+	       ("url" url)
 	       ("w3" w3 w3-forms)))
  :keywords   ("dictionary" "spanish" "english"))

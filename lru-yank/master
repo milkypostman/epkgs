@@ -6,7 +6,7 @@
  :authors    (("Le Wang"))
  :maintainer ("Le Wang (lewang.emacs!!!gmayo.com remove exclamations")
  :provided   (LRU-yank)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :homepage   "https://github.com/lewang/le_emacs_LRU_yank"
  :wikipage   "http://www.emacswiki.org/LRU-yank"
  :commentary "\

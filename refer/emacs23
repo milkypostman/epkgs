@@ -1,0 +1,51 @@
+(:summary    "Look up references in bibliography files"
+ :created    "1992"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Ashwin Ram" . "ashwin@cc.gatech.edu"))
+ :maintainer ("Gernot Heiser" . "gernot@acm.org")
+ :adapted-by ("ESR")
+ :provided   (refer)
+ :keywords   ("bib")
+ :commentary "\
+Functions to look up references in bibliography files given lists of
+keywords, similar to refer(1).  I don't use tags since tags on .bib files
+only picks up the cite key, where as refer-find-entry looks for occurrences
+of keywords anywhere in the bibliography entry.
+
+To use:
+     (autoload 'refer-find-entry \"refer\" nil t)
+or   (require 'refer)
+
+     To look for an article by Knuth about semaphores:
+         Invoke refer-find-entry, then in response to the Keywords: prompt,
+         say: Knuth semaphores (a blank-separated list of keywords to be used
+         as search strings).
+
+     To continue the previous search, i.e., to search for the next occurrence
+     of the keywords, use refer-find-next-entry, or invoke refer-find-entry
+     with a prefix argument.
+
+	Once you've found the entry you want to reference, invoke
+	refer-yank-key to insert it at point in the current buffer
+	(typically as the argument of a \\cite{} command).
+
+	I use (define-key tex-mode-map    \"\\C-c\\C-y\"  'refer-yank-key)
+	to bind this often-used function to a key in (la)tex-mode.
+
+     If the list of bibliography files changes, reinitialize the variable
+     refer-bib-files.
+
+To customize:
+     See variables refer-bib-files, refer-cache-bib-files and
+     refer-bib-files-regexp.  By default, these are set up so that refer
+     looks for the keywords you specify in all the .bib files in the current
+     directory.
+
+     The only assumption I make about bib files is that they contain a bunch
+     of entries, one to a paragraph.  refer-find-entry searches paragraph by
+     paragraph, looking for a paragraph containing all the keywords
+     specified.  So you should be able to use pretty much any bib file with
+     this code.  If your bib file does not use paragraphs to separate
+     entries, try setting the paragraph-start/separate variables, or changing
+     the (forward-paragraph 1) call in refer-find-entry-in-file.")

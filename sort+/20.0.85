@@ -5,7 +5,8 @@
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")
  :provided   (sort+)
- :required   ((("emacs" cl sort)))
+ :required   ((("cl" cl)
+	       ("emacs-core" sort)))
  :keywords   ("unix" "tools" "sorting")
  :commentary "\
 Extensions to `sort.el'.

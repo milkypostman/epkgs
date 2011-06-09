@@ -6,7 +6,7 @@
  :maintainer ("Robert Widhopf-Fenk")
  :provided   (bbdb-rf)
  :required   ((("bbdb" bbdb bbdb-autoloads bbdb-print bbdb-snarf bbdb-vm)
-	       ("emacs" message)
+	       ("gnus" message)
 	       ("vm" vm)))
  :keywords   ("bbbd" "vm" "xemacs")
  :homepage   "http://www.robf.de/Hacking/elisp/"

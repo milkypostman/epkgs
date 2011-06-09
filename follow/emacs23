@@ -1,0 +1,208 @@
+(:summary    "Synchronize windows showing the same buffer"
+ :created    "19950525"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Anders Lindgren" . "andersl@andersl.com"))
+ :maintainer ("FSF (Anders' email bounces")
+ :provided   (follow)
+ :required   ((("easymenu" easymenu)))
+ :keywords   ("display" "window" "convenience")
+ :wikipage   "http://www.emacswiki.org/FollowMode"
+ :commentary "\
+{{{ Documentation
+
+`Follow mode' is a minor mode for Emacs and XEmacs that
+combines windows into one tall virtual window.
+
+The feeling of a \"virtual window\" has been accomplished by the use
+of two major techniques:
+
+* The windows always display adjacent sections of the buffer.
+  This means that whenever one window is moved, all the
+  others will follow.  (Hence the name Follow mode.)
+
+* Should the point (cursor) end up outside a window, another
+  window displaying that point is selected, if possible.  This
+  makes it possible to walk between windows using normal cursor
+  movement commands.
+
+Follow mode comes to its prime when a large screen and two
+side-by-side window are used.  The user can, with the help of Follow
+mode, use two full-height windows as though they are one.
+Imagine yourself editing a large function, or section of text,
+and being able to use 144 lines instead of the normal 72... (your
+mileage may vary).
+
+To test this package, make sure `follow' is loaded, or will be
+autoloaded when activated (see below).  Then do the following:
+
+* Find your favorite file (preferably a long one).
+
+* Resize Emacs so that it will be wide enough for two full size
+  columns.  Delete the other windows and split the window with
+  the commands `C-x 1 C-x 3'.
+
+* Give the command:
+	M-x follow-mode <RETURN>
+
+* Now the display should look something like (assuming the text \"71\"
+  is on line 71):
+
+		    +----------+----------+
+		    |1         |73        |
+		    |2         |74        |
+		    |3         |75        |
+		         ...        ...
+		    |71        |143       |
+		    |72        |144       |
+		    +----------+----------+
+
+  As you can see, the right-hand window starts at line 73, the line
+  immediately below the end of the left-hand window.  As long as
+  `follow-mode' is active, the two windows will follow each other!
+
+* Play around and enjoy! Scroll one window and watch the other.
+  Jump to the beginning or end.  Press `Cursor down' at the last
+  line of the left-hand window.  Enter new lines into the
+  text.  Enter long lines spanning several lines, or several
+  windows.
+
+* Should you find `Follow' mode annoying, just type
+	M-x follow-mode <RETURN>
+  to turn it off.
+
+
+The command `follow-delete-other-windows-and-split' maximises the
+visible area of the current buffer.
+
+I recommend adding it, and `follow-mode', to hotkeys in the global
+key map.  To do so, add the following lines (replacing `[f7]' and
+`[f8]' with your favorite keys) to the init file:
+
+(global-set-key [f8] 'follow-mode)
+(global-set-key [f7] 'follow-delete-other-windows-and-split)
+
+
+There exist two system variables that control the appearence of
+lines wider than the window containing them.  The default is to
+truncate long lines whenever a window isn't as wide as the frame.
+
+To make sure lines are never truncated, please place the following
+lines in your init file:
+
+(setq truncate-lines nil)
+(setq truncate-partial-width-windows nil)
+
+
+Since the display of XEmacs is pixel-oriented, a line could be
+clipped in half at the bottom of the window.
+
+To make XEmacs avoid clipping (normal) lines, please place the
+following line in your init-file:
+
+(setq pixel-vertical-clip-threshold 30)
+
+
+The correct way to cofigurate Follow mode, or any other mode for
+that matter, is to create one or more functions that do
+whatever you would like to do.  These functions are then added to
+a hook.
+
+When `Follow' mode is activated, functions stored in the hook
+`follow-mode-hook' are called.  When it is deactivated
+`follow-mode-off-hook' is run.
+
+The keymap `follow-key-map' contains key bindings activated by
+`follow-mode'.
+
+Example:
+(add-hook 'follow-mode-hook 'my-follow-mode-hook)
+
+(defun my-follow-mode-hook ()
+   (define-key follow-mode-map \"\\C-ca\" 'your-favorite-function)
+   (define-key follow-mode-map \"\\C-cb\" 'another-function))
+
+
+Usage:
+
+To activate, issue the command \"M-x follow-mode\"
+and press Return.  To deactivate, do it again.
+
+The following is a list of commands useful when follow-mode is active.
+
+	follow-scroll-up			 C-c . C-v
+		Scroll text in a Follow mode window chain up.
+
+	follow-scroll-down			 C-c . v
+		Like `follow-scroll-up', but in the other direction.
+
+	follow-delete-other-windows-and-split	 C-c . 1
+		Maximize the visible area of the current buffer,
+		and enter Follow mode. 	This is a very convenient
+		way to start Follow mode, hence we recomend that
+		this command be added to the global keymap.
+
+	follow-recenter				 C-c . C-l
+		Place the point in the center of the middle window,
+		or a specified number of lines from either top or bottom.
+
+	follow-switch-to-buffer			 C-c . b
+		Switch buffer in all windows displaying the current buffer
+		in this frame.
+
+	follow-switch-to-buffer-all		 C-c . C-b
+		Switch buffer in all windows in the selected frame.
+
+	follow-switch-to-current-buffer-all
+		Show the current buffer in all windows on the current
+		frame and turn on `follow-mode'.
+
+	follow-first-window			 C-c . <
+		Select the first window in the frame showing the same buffer.
+
+	follow-last-window			 C-c . >
+		Select the last window in the frame showing the same buffer.
+
+	follow-next-window			 C-c . n
+		Select the next window in the frame showing the same buffer.
+
+	follow-previous-window			 C-c . p
+		Select the previous window showing the same buffer.
+
+
+Well, it seems ok, but what if I really want to look at two different
+positions in the text? Here are two simple methods to use:
+
+1) Use multiple frames; `follow' mode only affects windows displayed
+   in the same frame. (My apoligies to you who can't use frames.)
+
+2) Bind `follow-mode' to key so you can turn it off whenever
+   you want to view two locations.  Of course, `follow' mode can
+   be reactivated by hitting the same key again.
+
+   Example from my ~/.emacs:
+	(global-set-key [f8] 'follow-mode)
+
+
+Implementation:
+
+In an ideal world, follow mode would have been implemented in the
+kernel of the display routines, making sure that the windows (using
+follow mode) ALWAYS are aligned.  On planet Earth, however, we must
+accept a solution where we ALMOST ALWAYS can make sure that the
+windows are aligned.
+
+Follow mode does this in three places:
+1) After each user command.
+2) After a process output has been perfomed.
+3) When a scrollbar has been moved.
+
+This will cover most situations. (Let me know if there are other
+situations that should be covered.)
+
+Note that only the selected window is checked, for the reason of
+efficiency and code complexity. (I.e. it is possible to make a
+non-selected windows unaligned.  It will, however, pop right back
+when it is selected.)
+
+}}}")

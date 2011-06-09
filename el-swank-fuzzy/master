@@ -5,7 +5,7 @@
  :authors    (("Takeshi Banse" . "takebi@laafc.net"))
  :maintainer ("Takeshi Banse" . "takebi@laafc.net")
  :provided   (el-swank-fuzzy)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("matching" "completion" "string")
  :homepage   "http://www.emacswiki.org/ElSwankFuzzy"
  :wikipage   "http://www.emacswiki.org/ElSwankFuzzy"

@@ -5,7 +5,7 @@
  :authors    (("Slavomir Kaslev" . "slavomir.kaslev@gmail.com"))
  :maintainer ("Slavomir Kaslev" . "slavomir.kaslev@gmail.com")
  :provided   (etom)
- :required   ((("emacs" comint)))
+ :required   ((("comint" comint)))
  :keywords   ("maya" "mel")
  :homepage   "http://www.emacswiki.org/EmacsToMaya"
  :wikipage   "http://www.emacswiki.org/EmacsToMaya")

@@ -1,0 +1,18 @@
+(:summary    "Client interface to LDAP for Emacs"
+ :created    "1998"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Oscar Figueiredo" . "oscar@cpe.fr"))
+ :maintainer ("FSF")
+ :provided   (ldap)
+ :required   ((("cl" cl)
+	       ("custom" custom)))
+ :keywords   ("comm")
+ :homepage   "http://polydistortion.net/sw/emacs-lisp/"
+ :commentary "\
+This package provides basic functionality to perform searches on LDAP
+   servers.  It requires a command line utility generally named
+   `ldapsearch' to actually perform the searches.  That program can be
+   found in all LDAP developer kits such as:
+     - UM-LDAP 3.3 (http://www.umich.edu/~dirsvcs/ldap/)
+     - OpenLDAP (http://www.openldap.org/)")

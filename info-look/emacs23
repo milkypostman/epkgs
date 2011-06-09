@@ -1,0 +1,13 @@
+(:summary    "Major-mode-sensitive Info index lookup facility"
+ :created    "1995"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Ralph Schleicher" . "rs@nunatak.allgaeu.org"))
+ :maintainer ("Ralph Schleicher" . "rs@nunatak.allgaeu.org")
+ :provided   (info-look)
+ :required   ((("info" info)))
+ :keywords   ("help" "languages")
+ :wikipage   "http://www.emacswiki.org/InfoLook"
+ :commentary "\
+Really cool code to lookup info indexes.
+Try especially info-lookup-symbol (aka C-h S).")

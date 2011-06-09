@@ -5,7 +5,11 @@
  :authors    (("Trey Jackson" . "trey@cs.berkeley.edu"))
  :maintainer ("Trey Jackson" . "bigfaceworm@hotmail.com")
  :provided   (sig-quote)
- :required   ((("emacs" cl mail-utils message mh-comp sendmail)
+ :required   ((("cl" cl)
+	       ("gnus" message)
+	       ("mail-utils" mail-utils)
+	       ("mh-e" mh-comp)
+	       ("sendmail" sendmail)
 	       ("vm" vm)))
  :homepage   "http://www.emacswiki.org/sig-quote"
  :wikipage   "http://www.emacswiki.org/sig-quote")

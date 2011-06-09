@@ -5,7 +5,7 @@
  :authors    (("Mario Domgörgen" . "kanaldrache@gmx.de"))
  :maintainer ("Mario Domgörgen" . "kanaldrache@gmx.de")
  :provided   (oggel)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("ripping" "encoding" "ogg-vorbis")
  :homepage   "http://www.emacswiki.org/OggelMode"
  :wikipage   "http://www.emacswiki.org/OggelMode"

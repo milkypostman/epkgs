@@ -5,7 +5,7 @@
  :authors    (("Ryan Yeske" . "rcyeske@vcn.bc.ca"))
  :maintainer ("Ryan Yeske" . "rcyeske@vcn.bc.ca")
  :provided   (rain)
- :required   ((("emacs" gamegrid)))
+ :required   ((("gamegrid" gamegrid)))
  :keywords   ("games")
  :commentary "\
 This is a cheap rip off of rain(6) from BSD.

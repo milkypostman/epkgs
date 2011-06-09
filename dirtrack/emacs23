@@ -1,0 +1,91 @@
+(:summary    "Directory Tracking by watching the prompt"
+ :created    "199617"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Peter Breton" . "pbreton@cs.umb.edu"))
+ :maintainer ("Peter Breton" . "pbreton@cs.umb.edu")
+ :provided   (dirtrack)
+ :required   ((("comint" comint)
+	       ("shell" shell)))
+ :keywords   ("processes")
+ :commentary "\
+Shell directory tracking by watching the prompt.
+
+This is yet another attempt at a directory-tracking package for
+Emacs shell-mode.  However, this package makes one strong assumption:
+that you can customize your shell's prompt to contain the
+current working directory.  Most shells do support this, including
+almost every type of Bourne and C shell on Unix, the native shells on
+Windows95 (COMMAND.COM) and Windows NT (CMD.EXE), and most 3rd party
+Windows shells.  If you cannot do this, or do not wish to, this package
+will be useless to you.
+
+Installation:
+
+1) Set your shell's prompt to contain the current working directory.
+You may need to consult your shell's documentation to find out how to
+do this.
+
+Note that directory tracking is done by matching regular expressions,
+therefore it is *VERY IMPORTANT* for your prompt to be easily
+distinguishable from other output.  If your prompt regexp is too general,
+you will see error messages from the dirtrack filter as it attempts to cd
+to non-existent directories.
+
+2) Set the variable `dirtrack-list' to an appropriate value.  This
+should be a list of two elements: the first is a regular expression
+which matches your prompt up to and including the pathname part.
+The second is a number which tells which regular expression group to
+match to extract only the pathname.  If you use a multi-line prompt,
+add 't' as a third element.  Note that some of the functions in
+'comint.el' assume a single-line prompt (eg, comint-bol).
+
+Determining this information may take some experimentation.  Using
+`dirtrack-debug-mode' may help; it causes the directory-tracking
+filter to log messages to the buffer `dirtrack-debug-buffer'.
+
+3) Activate `dirtrack-mode'.  You may wish to turn ordinary shell
+tracking off by calling `shell-dirtrack-mode'.
+
+Examples:
+
+1) On Windows NT, my prompt is set to emacs$S$P$G.
+'dirtrack-list' is set to (list \"^emacs \\\\([a-zA-Z]:.*\\\\)>\" 1)
+
+2) On Solaris running bash, my prompt is set like this:
+   PS1=\"\\w\\012emacs@\\h(\\!) [\\t]% \"
+   'dirtrack-list' is set to (list \"^\\\\([/~].*\\\\)\\nemacs@[^%]+% *\" 1 t)
+
+I'd appreciate other examples from people who use this package.
+
+Here's one from Stephen Eglen:
+
+  Running under tcsh:
+  (setq-default dirtrack-list '(\"^%E \\\\([^ ]+\\\\)\" 1))
+
+  It might be worth mentioning in your file that emacs sources start up
+  files of the form: ~/.emacs_<SHELL> where <SHELL> is the name of the
+  shell.  So for example, I have the following in ~/.emacs_tcsh:
+
+  set prompt = \"%%E %~ %h% \"
+
+  This produces a prompt of the form:
+  %E /var/spool 10%
+
+  This saves me from having to use the %E prefix in other non-emacs
+  shells.
+
+A final note:
+
+  I run LOTS of shell buffers through Emacs, sometimes as different users
+  (eg, when logged in as myself, I'll run a root shell in the same Emacs).
+  If you do this, and the shell prompt contains a ~, Emacs will interpret
+  this relative to the user which owns the Emacs process, not the user
+  who owns the shell buffer.  This may cause dirtrack to behave strangely
+  (typically it reports that it is unable to cd to a directory
+  with a ~ in it).
+
+  The same behavior can occur if you use dirtrack with remote filesystems
+  (using telnet, rlogin, etc) as Emacs will be checking the local
+  filesystem, not the remote one.  This problem is not specific to dirtrack,
+  but also affects file completion, etc.")

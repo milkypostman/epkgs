@@ -5,7 +5,8 @@
  :authors    (("Shawn Betts" . "sabetts@sfu.ca"))
  :maintainer ("Shawn Betts" . "sabetts@sfu.ca")
  :provided   (mailx)
- :required   ((("emacs" font-lock mail-utils)))
+ :required   ((("emacs-core" font-lock)
+	       ("mail-utils" mail-utils)))
  :keywords   ("mail")
  :commentary "\
 Its really annoying when subpar systems don't have GNUS

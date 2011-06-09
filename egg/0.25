@@ -4,4 +4,9 @@
  :updated    "2008"
  :license    "GPL-3"
  :provided   (egg)
- :required   ((("emacs" cl derived ediff electric ffap ring))))
+ :required   ((("cl" cl)
+	       ("ediff" ediff)
+	       ("electric" electric)
+	       ("emacs-core" derived)
+	       ("ffap" ffap)
+	       ("ring" ring))))

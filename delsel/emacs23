@@ -1,0 +1,32 @@
+(:summary    "Delete selection if you insert"
+ :created    "1992"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Matthieu Devin" . "devin@lucid.com"))
+ :maintainer ("FSF")
+ :provided   (delsel)
+ :keywords   ("convenience" "emulations")
+ :commentary "\
+This file makes the active region be pending delete, meaning that
+text inserted while the region is active will replace the region contents.
+This is a popular behavior of personal computers text editors.
+
+Interface:
+
+Commands which will delete the selection need a 'delete-selection
+property on their symbols; commands which insert text but don't
+have this property won't delete the selection.  It can be one of
+the values:
+ 'yank
+     For commands which do a yank; ensures the region about to be
+     deleted isn't yanked.
+ 'supersede
+     Delete the active region and ignore the current command,
+     i.e. the command will just delete the region.
+ 'kill
+     `kill-region' is used on the selection, rather than
+     `delete-region'.  (Text selected with the mouse will typically
+     be yankable anyhow.)
+ non-nil
+     The normal case: delete the active region prior to executing
+     the command which will insert replacement text.")

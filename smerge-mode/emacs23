@@ -1,0 +1,25 @@
+(:summary    "Minor mode to resolve diff3 conflicts"
+ :created    "1999"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Stefan Monnier" . "monnier@iro.umontreal.ca"))
+ :maintainer ("Stefan Monnier" . "monnier@iro.umontreal.ca")
+ :provided   (smerge-mode)
+ :required   ((("cl" cl)
+	       ("diff-mode" diff-mode)))
+ :keywords   ("tools" "revision-control" "merge" "cvs" "conflict")
+ :commentary "\
+Provides a lightweight alternative to emerge/ediff.
+To use it, simply add to your .emacs the following lines:
+
+  (autoload 'smerge-mode \"smerge-mode\" nil t)
+
+you can even have it turned on automatically with the following
+piece of code in your .emacs:
+
+  (defun sm-try-smerge ()
+    (save-excursion
+  	 (goto-char (point-min))
+  	 (when (re-search-forward \"^<<<<<<< \" nil t)
+  	   (smerge-mode 1))))
+  (add-hook 'find-file-hook 'sm-try-smerge t)")

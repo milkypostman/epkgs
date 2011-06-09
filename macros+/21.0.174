@@ -5,9 +5,10 @@
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")
  :provided   (macros+)
- :required   ((("emacs" cl macros))
-	      (("emacs" thingatpt)
-	       ("icicles" icicles)
+ :required   ((("cl" cl)
+	       ("emacs-core" macros))
+	      (("icicles" icicles)
+	       ("thingatpt" thingatpt)
 	       ("thingatpt+" thingatpt+)))
  :keywords   ("abbrev" "local")
  :commentary "\

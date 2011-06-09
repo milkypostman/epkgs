@@ -8,7 +8,14 @@
 	      ("MIT AI Lab" . "cvieri@ai.mit.edu"))
  :maintainer ("Emmanuel Rouat" . "emmanuel.rouat@wanadoo.fr")
  :provided   (eldo-mode)
- :required   ((("emacs" compile easymenu font-lock imenu lucid overlay skeleton speedbar tempo)))
+ :required   ((("cedet" speedbar)
+	       ("compile" compile)
+	       ("easymenu" easymenu)
+	       ("emacs-core" font-lock overlay)
+	       ("emacs-obsolete" lucid)
+	       ("imenu" imenu)
+	       ("skeleton" skeleton)
+	       ("tempo" tempo)))
  :keywords   ("eldospiceanalog" "simulatornetlist")
  :homepage   "http://spice-mode.4t.com/"
  :commentary "\

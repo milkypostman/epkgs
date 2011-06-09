@@ -5,7 +5,7 @@
  :authors    (("Leo Shidai Liu" . "shidai.liu@gmail.com"))
  :maintainer ("Leo Shidai Liu" . "shidai.liu@gmail.com")
  :provided   (cal-china-plus)
- :required   ((("emacs" cal-china diary-lib)))
+ :required   ((("calendar" cal-china diary-lib)))
  :keywords   ("calendar" "convenience" "local")
  :commentary "\
 All functions are prefixed with calendar-chinese- unless it is

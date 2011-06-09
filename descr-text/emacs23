@@ -1,0 +1,12 @@
+(:summary    "Describe text mode"
+ :created    "1994"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Boris Goldowsky" . "boris@gnu.org"))
+ :maintainer ("FSF")
+ :provided   (descr-text)
+ :required   ((("emacs-core" quail)
+	       ("help-mode" help-mode)))
+ :keywords   ("faces" "unicode" "multilingual")
+ :commentary "\
+Describe-Text Mode.")

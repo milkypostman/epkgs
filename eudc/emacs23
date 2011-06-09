@@ -1,0 +1,24 @@
+(:summary    "Emacs Unified Directory Client"
+ :created    "1998"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Oscar Figueiredo" . "oscar@cpe.fr"))
+ :maintainer ("Pavel Janík" . "pavel@janik.cz")
+ :provided   (eudc eudc-vars eudcb-bbdb eudcb-ldap eudcb-mab eudcb-ph)
+ :required   ((("cl" cl)
+	       ("custom" custom)
+	       ("easymenu" easymenu)
+	       ("emacs-core" overlay)
+	       ("executable" executable)
+	       ("ldap" ldap)
+	       ("widget" wid-edit)))
+ :keywords   ("comm")
+ :wikipage   "http://www.emacswiki.org/EUDC"
+ :commentary "\
+This package provides a common interface to query directory servers using
+   different protocols such as LDAP, CCSO PH/QI or BBDB.  Queries can be
+   made through an interactive form or inline. Inline query strings in
+   buffers are expanded with appropriately formatted query results
+   (especially used to expand email addresses in message buffers).  EUDC
+   also interfaces with the BBDB package to let you register query results
+   into your own BBDB database.")

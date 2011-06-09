@@ -4,7 +4,9 @@
  :authors    (("Holger Schauer" . "holger.schauer@gmx.de"))
  :maintainer ("Holger Schauer" . "holger.schauer@gmx.de")
  :provided   (ilisp-browse-cltl2)
- :required   ((("emacs" browse-url cl url)))
+ :required   ((("browse-url" browse-url)
+	       ("cl" cl)
+	       ("url" url)))
  :keywords   ("utils" "lisp" "ilisp" "www")
  :commentary "\
 This gives you two top-level-functions useful when programming lisp:

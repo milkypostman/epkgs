@@ -5,7 +5,7 @@
  :authors    (("Sascha Wilde" . "swilde@sha-bang.de"))
  :maintainer ("Sascha Wilde" . "swilde@sha-bang.de")
  :provided   (sokoban)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("games")
  :homepage   "http://www.sha-bang.de/emacs.html"
  :wikipage   "http://www.emacswiki.org/SokobanMode"

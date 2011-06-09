@@ -3,7 +3,7 @@
  :updated    "20041009"
  :license    "GPL-2"
  :provided   (reco)
- :required   ((("emacs" url url-parse url-vars)))
+ :required   ((("url" url url-parse url-vars)))
  :commentary "\
 'reco' establishes a TCP connection with the server and sends an
 HTTP request string.  The server (hopefully) responds with some

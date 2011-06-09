@@ -1,0 +1,23 @@
+(:summary    "Balanced binary trees, AVL-trees"
+ :created    "19910510"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Per Cederqvist" . "ceder@lysator.liu.se")
+	      ("Inge Wallin" . "inge@lysator.liu.se")
+	      ("Thomas Bellman" . "bellman@lysator.liu.se"))
+ :maintainer ("FSF")
+ :provided   (avl-tree)
+ :required   ((("cl" cl)))
+ :keywords   ("extensions" "data" "structures")
+ :commentary "\
+An AVL tree is a nearly-perfect balanced binary tree.  A tree consists of
+two elements, the root node and the compare function.  The actual tree
+has a dummy node as its root with the real root in the left pointer.
+
+Each node of the tree consists of one data element, one left
+sub-tree and one right sub-tree.  Each node also has a balance
+count, which is the difference in depth of the left and right
+sub-trees.
+
+The functions with names of the form \"avl-tree--\" are intended for
+internal use only.")

@@ -8,7 +8,7 @@
  :maintainer ("MORIOKA Tomohiko" . "morioka@jaist.ac.jp")
  :provided   (emh emh-comp emh-face emh-setup)
  :required   ((("apel" emu)
-	       ("emacs" mh-comp mh-e)
+	       ("mh-e" mh-comp mh-e)
 	       ("semi" mime-bbdb mime-edit mime-view semi-setup)
 	       (nil mime-text)))
  :keywords   ("mh" "mime" "multimedia" "encoded-word" "multilingual" "mail")

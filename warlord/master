@@ -4,8 +4,8 @@
  :authors    (("Noah Friedman" . "friedman@prep.ai.mit.edu"))
  :maintainer (nil . "friedman@prep.ai.mit.edu")
  :provided   (warlord)
- :required   ((("emacs" yow)
-	       ("flame" flame)))
+ :required   ((("flame" flame)
+	       ("yow" yow)))
  :keywords   ("extensions" "games" "warlord")
  :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
  :commentary "\

@@ -6,8 +6,10 @@
  :maintainer ("Takeshi Banse" . "takebi@laafc.net")
  :provided   (anything-el-swank-fuzzy)
  :required   ((("anything" anything anything-complete)
+	       ("cl" cl)
 	       ("el-swank-fuzzy" el-swank-fuzzy)
-	       ("emacs" cl eldoc term))
+	       ("eldoc" eldoc)
+	       ("term" term))
 	      (("anything" anything-show-completion)))
  :keywords   ("matching" "convenience" "anything")
  :commentary "\

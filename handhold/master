@@ -5,7 +5,9 @@
  :authors    (("Tom Breton" . "tob@world.std.com"))
  :maintainer ("Tom Breton" . "tob@world.std.com")
  :provided   (handhold)
- :required   ((("emacs" cl pp wid-edit widget)))
+ :required   ((("cl" cl)
+	       ("emacs-core" pp)
+	       ("widget" wid-edit widget)))
  :keywords   ("extensions" "maint" "tools" "lisp")
  :homepage   "http://panix.com/~tehom/"
  :commentary "\

@@ -8,7 +8,7 @@
 	      ("Eric Schulte"))
  :maintainer ("Eric Kidd")
  :provided   (sinasi)
- :required   ((("emacs" cl)
+ :required   ((("cl" cl)
 	       ("jump" jump)))
  :keywords   ("sproutcore" "project")
  :homepage   "https://github.com/emk/sinasi"

@@ -3,7 +3,7 @@
  :updated    "2008"
  :license    "GPL-3"
  :provided   (btxdb database db-isbn db-nosetf db-oldnames db-rdb db-search db-sort db-tagged db-two-dbs edb-1int-to-single edb-meta edb-t-human-names edb-t-places-usuk edb-t-timedate1 edbibtex)
- :required   ((("emacs" cl)
+ :required   ((("cl" cl)
 	       (nil edbcore)))
  :keywords   ("edb" "database" "forms")
  :homepage   "http://www.gnuvola.org/software/edb/"

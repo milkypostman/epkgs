@@ -1,0 +1,9 @@
+(:summary    "MS-Dos specific functions"
+ :created    "1991"
+ :updated    "2011"
+ :license    "GPL-3"
+ :maintainer ("Morten Welinder" . "terra@diku.dk")
+ :provided   (dos-fns)
+ :keywords   ("internal")
+ :commentary "\
+Part of this code is taken from (or derived from) demacs.")

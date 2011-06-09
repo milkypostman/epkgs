@@ -6,7 +6,7 @@
  :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
  :provided   (anything-rurima)
  :required   ((("anything" anything-config anything-match-plugin)
-	       ("emacs" cl)))
+	       ("cl" cl)))
  :keywords   ("convenience" "languages")
  :commentary "\
 Rubyリファレンスマニュアル刷新計画(るりま)をanythingで検索します。

@@ -1,0 +1,64 @@
+(:summary    "Extensive outline mode for use alone and with other modes"
+ :created    "199112"
+ :updated    "2011"
+ :license    "GPL-3"
+ :provided   (allout)
+ :required   ((("cl" cl)
+	       ("easymenu" easymenu)
+	       ("emacs-core" overlay)
+	       ("gnus" pgg pgg-gpg pgg-parse)))
+ :keywords   ("outlines" "wp" "languages")
+ :homepage   "http://myriadicity.net/Sundry/EmacsAllout"
+ :wikipage   "http://www.emacswiki.org/AllOut"
+ :commentary "\
+Allout outline minor mode provides extensive outline formatting and
+and manipulation beyond standard emacs outline mode.  Some features:
+
+ - Classic outline-mode topic-oriented navigation and exposure adjustment
+ - Topic-oriented editing including coherent topic and subtopic
+   creation, promotion, demotion, cut/paste across depths, etc.
+ - Incremental search with dynamic exposure and reconcealment of text
+ - Customizable bullet format -- enables programming-language specific
+   outlining, for code-folding editing.  (Allout code itself is to try it;
+   formatted as an outline -- do ESC-x eval-buffer in allout.el; but
+   emacs local file variables need to be enabled when the
+   file was visited -- see `enable-local-variables'.)
+ - Configurable per-file initial exposure settings
+ - Symmetric-key and key-pair topic encryption, plus symmetric passphrase
+   mnemonic support, with verification against an established passphrase
+   (using a stashed encrypted dummy string) and user-supplied hint
+   maintenance.  (See allout-toggle-current-subtree-encryption docstring.
+   Currently only GnuPG encryption is supported, and integration
+   with gpg-agent is not yet implemented.)
+ - Automatic topic-number maintenance
+ - \"Hot-spot\" operation, for single-keystroke maneuvering and
+   exposure control (see the allout-mode docstring)
+ - Easy rendering of exposed portions into numbered, latex, indented, etc
+   outline styles
+ - Careful attention to whitespace -- enabling blank lines between items
+   and maintenance of hanging indentation (in paragraph auto-fill and
+   across topic promotion and demotion) of topic bodies consistent with
+   indentation of their topic header.
+
+and more.
+
+See the `allout-mode' function's docstring for an introduction to the
+mode.
+
+The latest development version and helpful notes are available at
+http://myriadicity.net/Sundry/EmacsAllout .
+
+The outline menubar additions provide quick reference to many of
+the features, and see the docstring of the variable `allout-init'
+for instructions on priming your Emacs session for automatic
+activation of allout-mode.
+
+See the docstring of the variables `allout-layout' and
+`allout-auto-activation' for details on automatic activation of
+`allout-mode' as a minor mode.  (It has changed since allout
+3.x, for those of you that depend on the old method.)
+
+Note -- the lines beginning with `;;;_' are outline topic headers.
+       Just `ESC-x eval-buffer' to give it a whirl.
+
+ken manheimer (ken dot manheimer at gmail dot com)")

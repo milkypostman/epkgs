@@ -8,7 +8,8 @@
 	      ("then Chris Page"))
  :maintainer ("Chris Page" . "cpage@opendylan.org")
  :provided   (dylan-mode slime-dylan)
- :required   ((("emacs" font-lock tree-widget)))
+ :required   ((("emacs-core" font-lock)
+	       ("tree-widget" tree-widget)))
  :homepage   "https://github.com/dylan-lang/dylan-mode"
  :commentary "\
 Dylan mode is a major mode for editing Dylan programs. It provides

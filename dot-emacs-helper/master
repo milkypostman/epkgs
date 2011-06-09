@@ -5,7 +5,8 @@
  :authors    ((nil . "wenbinye@gmail.com"))
  :maintainer (nil . "wenbinye@gmail.com")
  :provided   (dot-emacs-helper)
- :required   ((("emacs" button cl)))
+ :required   ((("button" button)
+	       ("cl" cl)))
  :commentary "\
 * Who need it?
  If you only write hundreds lines in .emacs, you won't consider this

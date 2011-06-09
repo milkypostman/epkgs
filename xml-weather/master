@@ -6,7 +6,10 @@
  :authors    (("Thierry Volpiatto"))
  :maintainer ("Thierry Volpiatto")
  :provided   (xml-weather)
- :required   ((("emacs" cl derived url xml)))
+ :required   ((("cl" cl)
+	       ("emacs-core" derived)
+	       ("url" url)
+	       ("xml" xml)))
  :homepage   "http://mercurial.intuxication.org/hg/xml-weather"
  :commentary "\
 Install:

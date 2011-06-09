@@ -1,0 +1,102 @@
+(:summary    "Folding extensions for outline-mode and outline-minor-mode"
+ :created    "19940127"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Kevin Broadey" . "kevinb@bartley.demon.co.uk"))
+ :maintainer ("FSF")
+ :provided   (foldout)
+ :required   ((("outline" outline)))
+ :keywords   ("folding" "outlines")
+ :commentary "\
+This file provides folding editor extensions for outline-mode and
+outline-minor-mode buffers.  What's a \"folding editor\"?  Read on...
+
+Imagine you're in an outline-mode buffer and you've hidden all the text and
+subheadings under your level-1 headings.  You now want to look at the stuff
+hidden under one of these headings.  Normally you'd do C-c C-e (show-entry)
+to expose the body or C-c C-i to expose the child (level-2) headings.
+
+With foldout, you do C-c C-z (foldout-zoom-subtree).  This exposes the body
+and child subheadings and narrows the buffer so that only the level-1
+heading, the body and the level-2 headings are visible.  If you now want to
+look under one of the level-2 headings, position the cursor on it and do C-c
+C-z again.  This exposes the level-2 body and its level-3 child subheadings
+and narrows the buffer again.  You can keep on zooming in on successive
+subheadings as much as you like.  A string in the modeline tells you how
+deep you've gone.
+
+When zooming in on a heading you might only want to see the child
+subheadings.  You do this by specifying a numeric argument: C-u C-c C-z.
+You can specify the number of levels of children too (c.f. show-children):
+e.g. M-2 C-c C-z exposes two levels of child subheadings.  Alternatively,
+you might only be interested in the body.  You do this by specifying a
+negative argument: M-- C-c C-z.  You can also cause the whole subtree to be
+expanded, similar to C-c C-s (show-subtree), by specifying a zero argument:
+M-0 C-c C-z.
+
+While you're zoomed in you can still use outline-mode's exposure and hiding
+functions.  It won't upset foldout at all.  Also, since the buffer is
+narrowed, \"global\" editing actions will only affect the stuff under the
+zoomed-in heading.  This is useful for restricting changes to a particular
+chapter or section of your document.
+
+You unzoom (exit) a fold by doing C-c C-x (foldout-exit-fold).  This hides
+all the text and subheadings under the top-level heading and returns you to
+the previous view of the buffer.  Specifying a numeric argument exits that
+many folds.  Specifying a zero argument exits *all* folds.
+
+You might want to exit a fold *without* hiding the text and subheadings.
+You do this by specifying a negative argument.  For example, M--2 C-c C-x
+exits two folds and leaves the text and subheadings exposed.
+
+Foldout also provides mouse bindings for entering and exiting folds and for
+showing and hiding text.  Hold down Meta and Control, then click a mouse
+button as follows:-
+
+  mouse-1 (foldout-mouse-zoom) zooms in on the heading clicked on:-
+
+    single click	expose body
+    double click	expose subheadings
+    triple click	expose body and subheadings
+    quad click	expose entire subtree
+
+  mouse-2 (foldout-mouse-show) exposes text under the heading clicked on:-
+
+    single click	expose body
+    double click	expose subheadings
+    triple click	expose body and subheadings
+    quad click	expose entire subtree
+
+  mouse-3 (foldout-mouse-hide-or-exit) hides text under the heading clicked
+  on or exits the fold:-
+
+    single click	hide subtree
+    double click	exit fold and hide text
+    triple click	exit fold without hiding text
+    quad click	exit all folds and hide text
+
+You can change the modifier keys used by setting `foldout-mouse-modifiers'.
+
+Installation:
+
+To use foldout, put this in your .emacs:-
+
+   (require 'foldout)
+
+If you don't want it loaded until you need it, try this instead:-
+
+   (eval-after-load \"outline\" '(require 'foldout))
+
+Advertisements:
+
+Get out-xtra.el by Per Abrahamsen <abraham@iesd.auc.dk> for more
+outline-mode goodies.  In particular, `outline-hide-sublevels' makes
+setup a lot easier.
+
+folding.el by Jamie Lokier <u90jl@ecs.ox.ac.uk> supports folding by
+recognising special marker text in you file.
+
+c-outline.el (by me) provides outline-mode support to recognise `C'
+statements as outline headings, so with foldout you can have a folding `C'
+code editor without having to put in start- and end-of-fold markers.  This
+is a real winner!")

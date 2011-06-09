@@ -6,6 +6,7 @@
  :authors    (("Juergen Hoetzel" . "juergen@archlinux.org"))
  :maintainer ("Juergen Hoetzel" . "juergen@archlinux.org")
  :provided   (nexus nexus-widget)
- :required   ((("emacs" mm-url xml)))
+ :required   ((("gnus" mm-url)
+	       ("xml" xml)))
  :keywords   ("comm")
  :homepage   "https://github.com/juergenhoetzel/emacs-nexus")

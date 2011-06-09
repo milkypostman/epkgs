@@ -6,7 +6,8 @@
  :authors    (("Fabián Ezequiel Gallina"))
  :maintainer ("Fabián Ezequiel Gallina")
  :provided   (gautocomplete)
- :required   ((("emacs" cl minibuffer)))
+ :required   ((("cl" cl)
+	       ("emacs-core" minibuffer)))
  :homepage   "https://github.com/fgallina/gautocomplete"
  :commentary "\
 Names with \"--\" are for functions and variables that are meant to

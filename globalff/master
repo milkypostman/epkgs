@@ -3,7 +3,8 @@
  :updated    "20070403"
  :license    "GPL-2"
  :provided   (globalff)
- :required   ((("emacs" cl overlay)))
+ :required   ((("cl" cl)
+	       ("emacs-core" overlay)))
  :homepage   "http://www.emacswiki.org/GlobalFF"
  :wikipage   "http://www.emacswiki.org/GlobalFF"
  :commentary "\

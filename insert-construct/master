@@ -2,5 +2,5 @@
  :updated    "20041204"
  :license    "GPL-2"
  :provided   (insert-construct)
- :required   ((("emacs" tempo)))
+ :required   ((("tempo" tempo)))
  :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/handsfree/")

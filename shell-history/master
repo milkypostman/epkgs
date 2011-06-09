@@ -5,7 +5,7 @@
  :authors    (("rubikitch" . "rubikitch@ruby-lang.org"))
  :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
  :provided   (shell-history)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("processes" "convenience")
  :commentary "\
 Add command of `shell-command', `shell-command-on-region',

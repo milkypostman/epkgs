@@ -6,6 +6,6 @@
  :authors    (("Jonas Baumann"))
  :maintainer ("Jonas Baumann")
  :provided   (plone-mode)
- :required   ((("emacs" json)))
+ :required   ((("json" json)))
  :keywords   ("plone" "zope" "python")
  :homepage   "https://github.com/jone/plone-mode.el")

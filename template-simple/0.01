@@ -5,7 +5,7 @@
  :authors    (("Ye Wenbin" . "wenbinye@gmail.com"))
  :maintainer ("Ye Wenbin" . "wenbinye@gmail.com")
  :provided   (template-simple)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("tools" "convenience")
  :commentary "\
 * Why not template?

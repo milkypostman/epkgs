@@ -3,7 +3,7 @@
  :updated    "2008"
  :license    "GPL-2"
  :provided   (contentswitch)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :commentary "\
 Since the advent of timid.el, anything.el and similar tools one can
 quickly open a recent file by typing a part of its name without

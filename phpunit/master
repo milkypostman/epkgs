@@ -6,6 +6,6 @@
  :authors    (("Ian Eure"))
  :maintainer ("Ian Eure" . "ian.eure@gmail.com")
  :provided   (phpunit)
- :required   ((("emacs" compile)))
+ :required   ((("compile" compile)))
  :keywords   ("php" "phpunit" "xunit" "tests")
  :homepage   "https://github.com/ieure/phpunit-el")

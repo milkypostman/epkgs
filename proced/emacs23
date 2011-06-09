@@ -1,0 +1,31 @@
+(:summary    "Operate on system processes like dired"
+ :created    "2008"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Roland Winkler" . "winkler@gnu.org"))
+ :maintainer ("Roland Winkler" . "winkler@gnu.org")
+ :provided   (proced)
+ :required   ((("gnus" time-date)))
+ :keywords   ("processes" "unix")
+ :commentary "\
+Proced makes an Emacs buffer containing a listing of the current
+system processes.  You can use the normal Emacs commands to move around
+in this buffer, and special Proced commands to operate on the processes
+listed.  See `proced-mode' for getting started.
+
+To do:
+- interactive temporary customizability of flags in `proced-grammar-alist'
+- allow \"sudo kill PID\", \"renice PID\"
+
+Thoughts and Ideas
+- Currently, `process-attributes' returns the list of
+  command-line arguments of a process as one concatenated string.
+  This format is compatible with `shell-command'.  Also, under
+  MS-Windows, the command-line arguments are actually stored as a
+  single string, so that it is impossible to reverse-engineer it back
+  into separate arguments.  Alternatively, `process-attributes'
+  could (try to) return a list of strings that correspond to individual
+  command-line arguments.  Then one could feed such a list of
+  command-line arguments into `call-process' or `start-process'.
+  Are there real-world applications when such a feature would be useful?
+  What about something like `proced-restart-pid'?")

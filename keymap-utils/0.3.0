@@ -6,7 +6,7 @@
  :authors    (("Jonas Bernoulli" . "jonas@bernoul.li"))
  :maintainer ("Jonas Bernoulli" . "jonas@bernoul.li")
  :provided   (keymap-utils)
- :required   ((("emacs" cl)
+ :required   ((("cl" cl)
 	       ("save-sexp" save-sexp)))
  :keywords   ("convenience" "extensions")
  :homepage   "https://github.com/tarsius/keymap-utils"

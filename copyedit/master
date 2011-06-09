@@ -5,7 +5,9 @@
  :authors    (("Paul M. Rodriguez" . "paulmrodriguez@gmail.com"))
  :maintainer ("Paul M. Rodriguez" . "paulmrodriguez@gmail.com")
  :provided   (copyedit)
- :required   ((("emacs" cc-defs cl thingatpt)))
+ :required   ((("cc-mode" cc-defs)
+	       ("cl" cl)
+	       ("thingatpt" thingatpt)))
  :keywords   ("editing")
  :homepage   "http://www.emacswiki.org/CopyeditMode"
  :wikipage   "http://www.emacswiki.org/CopyeditMode"

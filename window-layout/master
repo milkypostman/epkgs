@@ -4,7 +4,7 @@
  :updated    "2011"
  :license    "GPL-3"
  :provided   (window-layout)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("window" "layout")
  :homepage   "https://github.com/kiwanami/emacs-window-layout"
  :commentary "\

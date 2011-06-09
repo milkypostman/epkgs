@@ -1,0 +1,137 @@
+(:summary    "Use dired to browse and manipulate your images"
+ :created    "2005"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Mathias Dahl" . "mathias.rem0veth1s.dahl@gmail.com"))
+ :maintainer ("Mathias Dahl" . "mathias.rem0veth1s.dahl@gmail.com")
+ :provided   (image-dired)
+ :required   ((("dired" dired)
+	       ("gnus" format-spec)
+	       ("widget" wid-edit widget)))
+ :keywords   ("multimedia")
+ :commentary "\
+BACKGROUND
+==========
+
+ I needed a program to browse, organize and tag my pictures.  I got
+tired of the old gallery program I used as it did not allow
+multi-file operations easily.  Also, it put things out of my
+control.  Image viewing programs I tested did not allow multi-file
+operations or did not do what I wanted it to.
+
+ So, I got the idea to use the wonderful functionality of Emacs and
+`dired' to do it.  It would allow me to do almost anything I wanted,
+which is basically just to browse all my pictures in an easy way,
+letting me manipulate and tag them in various ways.  `dired' already
+provide all the file handling and navigation facilities; I only
+needed to add some functions to display the images.
+
+ I briefly tried out thumbs.el, and although it seemed more
+powerful than this package, it did not work the way I wanted to.  It
+was too slow to created thumbnails of all files in a directory (I
+currently keep all my 2000+ images in the same directory) and
+browsing the thumbnail buffer was slow too.  image-dired.el will not
+create thumbnails until they are needed and the browsing is done
+quickly and easily in dired.  I copied a great deal of ideas and
+code from there though... :)
+
+ `image-dired' stores the thumbnail files in `image-dired-dir'
+using the file name format ORIGNAME.thumb.ORIGEXT.  For example
+~/.emacs.d/image-dired/myimage01.thumb.jpg.  The \"database\" is for
+now just a plain text file with the following format:
+
+file-name-non-directory;comment:comment-text;tag1;tag2;tag3;...;tagN
+
+
+PREREQUISITES
+=============
+
+* The ImageMagick package.  Currently, `convert' and `mogrify' are
+used.  Find it here: http://www.imagemagick.org.
+
+* For non-lossy rotation of JPEG images, the JpegTRAN program is
+needed.
+
+* For `image-dired-get-exif-data' and `image-dired-write-exif-data' to work,
+the command line tool `exiftool' is needed.  It can be found here:
+http://www.sno.phy.queensu.ca/~phil/exiftool/.  These two functions
+are, among other things, used for writing comments to image files
+using `image-dired-thumbnail-set-image-description' and to create
+\"unique\" file names using `image-dired-get-exif-file-name' (used by
+`image-dired-copy-with-exif-file-name').
+
+
+USAGE
+=====
+
+This information has been moved to the manual.  Type `C-h r' to open
+the Emacs manual and go to the node Thumbnails by typing `g
+Thumbnails RET'.
+
+Quickstart: M-x image-dired RET DIRNAME RET
+
+where DIRNAME is a directory containing image files.
+
+LIMITATIONS
+===========
+
+* Supports all image formats that Emacs and convert supports, but
+the thumbnails are hard-coded to JPEG format.
+
+* WARNING: The \"database\" format used might be changed so keep a
+backup of `image-dired-db-file' when testing new versions.
+
+
+TODO
+====
+
+* Support gallery creation when using per-directory thumbnail
+storage.
+
+* Some sort of auto-rotate function based on rotate info in the
+EXIF data.
+
+* Check if exiftool exist before trying to call it to give a better
+error message.
+
+* Investigate if it is possible to also write the tags to the image
+files.
+
+* From thumbs.el: Add an option for clean-up/max-size functionality
+  for thumbnail directory.
+
+* From thumbs.el: Add setroot function.
+
+* From thumbs.el: Add image resizing, if useful (image-dired's automatic
+ \"image fit\" might be enough)
+
+* From thumbs.el: Add the \"modify\" commands (emboss, negate,
+  monochrome etc).
+
+* Asynchronous creation of thumbnails.
+
+* Add `image-dired-display-thumbs-ring' and functions to cycle that.  Find
+out which is best, saving old batch just before inserting new, or
+saving the current batch in the ring when inserting it.  Adding it
+probably needs rewriting `image-dired-display-thumbs' to be more general.
+
+* Find some way of toggling on and off really nice keybindings in
+dired (for example, using C-n or <down> instead of C-S-n).  Richard
+suggested that we could keep C-t as prefix for image-dired commands
+as it is currently not used in dired.  He also suggested that
+`dired-next-line' and `dired-previous-line' figure out if
+image-dired is enabled in the current buffer and, if it is, call
+`image-dired-dired-next-line' and
+`image-dired-dired-previous-line', respectively.  Update: This is
+partly done; some bindings have now been added to dired.
+
+* Enhanced gallery creation with basic CSS-support and pagination
+of tag pages with many pictures.
+
+* Rewrite `image-dired-modify-mark-on-thumb-original-file' to be
+less ugly.
+
+* In some way keep track of buffers and windows and stuff so that
+it works as the user expects.
+
+* More/better documentation")

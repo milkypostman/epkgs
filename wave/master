@@ -5,6 +5,7 @@
  :authors    (("Lars Magne Ingebrigtsen" . "larsi@ifi.uio.no"))
  :maintainer ("Lars Magne Ingebrigtsen" . "larsi@ifi.uio.no")
  :provided   (wave)
- :required   ((("emacs" cl message)))
+ :required   ((("cl" cl)
+	       ("gnus" message)))
  :keywords   ("music")
  :homepage   "http://quimby.gnus.org/elisp/")

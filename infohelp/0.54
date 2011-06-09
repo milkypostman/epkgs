@@ -5,7 +5,7 @@
  :authors    (("Lennart Borgman"))
  :maintainer ("Lennart Borgman")
  :provided   (infohelp)
- :required   ((("emacs" info)))
+ :required   ((("info" info)))
  :keywords   ("help" "info")
  :homepage   "http://ourcomments.org/Emacs/DL/elisp/"
  :wikipage   "http://www.emacswiki.org/InfoHelp"

@@ -1,6 +1,8 @@
 (:summary    "Access the ESV Bible text api"
  :license    "GPL-2"
  :provided   (esv)
- :required   ((("emacs" calendar url xml)))
+ :required   ((("calendar" calendar)
+	       ("url" url)
+	       ("xml" xml)))
  :homepage   "http://www.emacswiki.org/EsvMode"
  :wikipage   "http://www.emacswiki.org/EsvMode")

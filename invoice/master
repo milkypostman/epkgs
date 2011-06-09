@@ -5,7 +5,7 @@
  :authors    (("Noah Friedman" . "friedman@prep.ai.mit.edu"))
  :maintainer (nil . "friedman@prep.ai.mit.edu")
  :provided   (invoice)
- :required   ((("emacs" time-stamp)))
+ :required   ((("time-stamp" time-stamp)))
  :keywords   ("extensions")
  :homepage   "ftp://ftp.splode.com/pub/users/friedman/emacs-lisp/"
  :commentary "\

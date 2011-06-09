@@ -3,7 +3,7 @@
  :authors    (("Phillip Lord" . "p.lord@russet.org.uk"))
  :maintainer ("Phillip Lord" . "p.lord@russet.org.uk")
  :provided   (dir-shell)
- :required   ((("emacs" shell)))
+ :required   ((("shell" shell)))
  :keywords   ("shell" "working" "directory")
  :homepage   "http://homepages.cs.ncl.ac.uk/phillip.lord/emacs.html"
  :commentary "\

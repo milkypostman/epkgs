@@ -6,5 +6,5 @@
  :authors    (("Sang-gi Lee" . "kaisyu@gmail.com"))
  :maintainer ("Sang-gi Lee" . "kaisyu@gmail.com")
  :provided   (lotto-check lotto-gen)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :homepage   "http://bitbucket.org/kaisyu/lotto-check")

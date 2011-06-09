@@ -5,7 +5,7 @@
  :authors    (("Kevin Rodgers" . "ihs_4664@yahoo.com"))
  :maintainer ("Kevin Rodgers" . "ihs_4664@yahoo.com")
  :provided   (follow-mouse)
- :required   ((("emacs" custom)))
+ :required   ((("custom" custom)))
  :keywords   ("mouse")
  :commentary "\
 By default, a window within an Emacs frame must be selected by

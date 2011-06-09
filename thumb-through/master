@@ -4,6 +4,7 @@
  :updated    "2010"
  :license    "GPL-3"
  :provided   (thumb-through)
- :required   ((("emacs" font-lock thingatpt)))
+ :required   ((("emacs-core" font-lock)
+	       ("thingatpt" thingatpt)))
  :keywords   ("html")
  :homepage   "https://github.com/apgwoz/thumb-through")

@@ -5,5 +5,5 @@
  :license    "GPL-2"
  :provided   (anything-replace-string)
  :required   ((("anything" anything)
-	       ("emacs" cl)))
+	       ("cl" cl)))
  :homepage   "https://github.com/k1LoW/anything-replace-string")

@@ -5,9 +5,9 @@
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")
  :provided   (strings)
- :required   ((("emacs" cl))
-	      (("emacs" thingatpt)
-	       ("misc-fns" misc-fns)
+ :required   ((("cl" cl))
+	      (("misc-fns" misc-fns)
+	       ("thingatpt" thingatpt)
 	       ("thingatpt+" thingatpt+)))
  :keywords   ("internal" "strings" "text")
  :commentary "\

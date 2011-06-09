@@ -5,7 +5,7 @@
  :authors    (("Karl Chen" . "quarl@nospam.quarl.org"))
  :maintainer ("Karl Chen" . "quarl@nospam.quarl.org")
  :provided   (apache-mode)
- :required   ((("emacs" regexp-opt)))
+ :required   ((("regexp-opt" regexp-opt)))
  :keywords   ("languages" "faces")
  :commentary "\
 (autoload 'apache-mode \"apache-mode\" nil t)

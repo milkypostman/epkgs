@@ -1,5 +1,5 @@
 (:summary    "Major mode for highlighting a numbered todo list"
- :repository (git . "https://github.com/biilly/todo-list-mode.git")
+ :repository (git . "https://github.com/billyist/todo-list-mode.git")
  :created    "200901"
  :updated    "2009"
  :license    "GPL-3"

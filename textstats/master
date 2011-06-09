@@ -3,8 +3,12 @@
  :updated    "2001"
  :license    "GPL-2"
  :provided   (textstats)
- :required   ((("emacs" cl info overlay thingatpt timer)
-	       ("tellib" tellib)))
+ :required   ((("cl" cl)
+	       ("emacs-core" overlay)
+	       ("info" info)
+	       ("tellib" tellib)
+	       ("thingatpt" thingatpt)
+	       ("timer" timer)))
  :keywords   ("text" "statistics" "word" "counting")
  :homepage   "http://members.a1.net/t.link/filestats.html"
  :commentary "\

@@ -5,7 +5,8 @@
  :authors    (("Noah Friedman" . "friedman@splode.com"))
  :maintainer (nil . "friedman@splode.com")
  :provided   (flash-paren)
- :required   ((("emacs" custom timer)))
+ :required   ((("custom" custom)
+	       ("timer" timer)))
  :keywords   ("extensions")
  :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
  :commentary "\

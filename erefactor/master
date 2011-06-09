@@ -3,7 +3,8 @@
  :authors    (("Hayashi Masahiro" . "mhayashi1120@gmail.com"))
  :maintainer ("Hayashi Masahiro" . "mhayashi1120@gmail.com")
  :provided   (erefactor)
- :required   ((("emacs" advice cl)))
+ :required   ((("advice" advice)
+	       ("cl" cl)))
  :keywords   ("elisp" "refactor" "lint")
  :commentary "\
 Following utilities for Emacs-Lisp.

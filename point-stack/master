@@ -1,4 +1,3 @@
 (:repository (git . "https://github.com/mattharrison/point-stack.git")
  :provided   (point-stack)
- :homepage   "https://github.com/mattharrison/point-stack"
- :wikipage   "http://www.emacswiki.org/PointStack")
+ :homepage   "https://github.com/mattharrison/point-stack")

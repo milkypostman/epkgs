@@ -3,6 +3,6 @@
  :updated    "2007"
  :license    "GPL-2"
  :provided   (arscanner arscanner-mode)
- :required   ((("emacs" outline)))
+ :required   ((("outline" outline)))
  :homepage   "http://arscanner.adullact.net/arscanner-en.html"
  :wikipage   "http://www.emacswiki.org/ArScanner")

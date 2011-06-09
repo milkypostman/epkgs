@@ -6,6 +6,7 @@
 	      ("Kumar Appaiah" . "a.kumar@alumni.iitm.ac.in"))
  :maintainer ("Laurent Pelecq" . "laurent.pelecq@soleil.org")
  :provided   (muttrc-mode)
- :required   ((("emacs" jka-compr man)))
+ :required   ((("emacs-core" jka-compr)
+	       ("man" man)))
  :homepage   "http://www.emacswiki.org/MuttRc"
  :wikipage   "http://www.emacswiki.org/MuttRc")

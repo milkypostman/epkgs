@@ -1,0 +1,13 @@
+(:summary    "Update the copyright notice in current buffer"
+ :created    "1991"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Daniel Pfeiffer" . "occitan@esperanto.org"))
+ :maintainer ("Daniel Pfeiffer" . "occitan@esperanto.org")
+ :provided   (copyright)
+ :keywords   ("maint" "tools")
+ :commentary "\
+Allows updating the copyright year and above mentioned GPL version manually
+or when saving a file.
+Do (add-hook 'before-save-hook 'copyright-update), or use
+M-x customize-variable RET before-save-hook RET.")

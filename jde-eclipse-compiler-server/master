@@ -5,7 +5,7 @@
  :authors    (("Suraj Acharya" . "sacharya@cs.indiana.edu"))
  :maintainer ("Suraj Acharya" . "sacharya@cs.indiana.edu")
  :provided   (jde-eclipse-compiler-server)
- :required   ((("emacs" flymake)
+ :required   ((("flymake" flymake)
 	       ("jdee" jde jde-compile)))
  :keywords   ("flymake" "jde-mode" "java" "eclipse" "ecj" "version")
  :commentary "\

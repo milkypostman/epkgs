@@ -5,7 +5,9 @@
  :authors    (("Scott Frazer" . "frazer.scott@gmail.com"))
  :maintainer ("Scott Frazer" . "frazer.scott@gmail.com")
  :provided   (grep-ed)
- :required   ((("emacs" custom grep hilit-chg)))
+ :required   ((("custom" custom)
+	       ("grep" grep)
+	       ("hilit-chg" hilit-chg)))
  :keywords   ("grep")
  :homepage   "http://www.emacswiki.org/GrepEd"
  :wikipage   "http://www.emacswiki.org/GrepEd"

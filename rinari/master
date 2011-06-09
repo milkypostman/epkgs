@@ -6,10 +6,14 @@
  :authors    (("Phil Hagelberg")
 	      ("Eric Schulte"))
  :maintainer ("Phil Hagelberg")
- :provided   (inf-ruby pcmpl-rake rinari rinari-camps rinari-merb ruby-compilation-rspec ruby-mode)
- :required   ((("emacs" cl comint compile pcomplete)
+ :provided   (inf-ruby pcmpl-rake rinari rinari-camps rinari-merb ruby-compilation-rspec)
+ :required   ((("cl" cl)
+	       ("comint" comint)
+	       ("compile" compile)
 	       ("jump" jump)
-	       ("ruby-compilation" ruby-compilation)))
+	       ("pcomplete" pcomplete)
+	       ("ruby-compilation" ruby-compilation)
+	       ("ruby-mode" ruby-mode)))
  :keywords   ("ruby" "rails" "project" "convenience" "web")
  :commentary "\
 Rinari Is Not A Ruby IDE.

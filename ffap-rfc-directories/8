@@ -5,7 +5,8 @@
  :authors    (("Kevin Ryde" . "user42@zip.com.au"))
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (ffap-rfc-directories)
- :required   ((("emacs" advice ffap)))
+ :required   ((("advice" advice)
+	       ("ffap" ffap)))
  :keywords   ("files")
  :homepage   "http://user42.tuxfamily.org/ffap-rfc-directories/index.html"
  :commentary "\

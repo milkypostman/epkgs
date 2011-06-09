@@ -5,7 +5,7 @@
  :authors    (("Marcelo Toledo" . "marcelo@marcelotoledo.org"))
  :maintainer ("Marcelo Toledo" . "marcelo@marcelotoledo.org")
  :provided   (chronometer)
- :required   ((("emacs" ehelp)))
+ :required   ((("ehelp" ehelp)))
  :keywords   ("tools" "convenience")
  :homepage   "http://www.marcelotoledo.org/stuff/"
  :wikipage   "http://www.emacswiki.org/ChronometerMode")

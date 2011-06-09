@@ -5,9 +5,13 @@
  :authors    (("Dimitri Fontaine" . "dim@tapoueh.org"))
  :maintainer ("Dimitri Fontaine" . "dim@tapoueh.org")
  :provided   (el-get)
- :required   ((("emacs" autoload bytecomp cl dired info)
+ :required   ((("cl" cl)
+	       ("dired" dired)
+	       ("emacs-core" autoload bytecomp)
+	       ("info" info)
 	       ("notify" notify))
-	      (("emacs" notifications package)))
+	      (("package" package)
+	       (nil notifications)))
  :keywords   ("package" "elisp" "install" "elpa" "git" "git-svn" "bzr" "cvs" "svn" "darcs" "hg" "apt-get" "fink" "pacman" "http" "http-tar" "emacswiki")
  :homepage   "https://github.com/dimitri/el-get"
  :commentary "\

@@ -1,0 +1,8 @@
+(:summary    "Common Data Language (CDL) utility functions for GNU Emacs"
+ :created    "1993"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Ata Etemadi" . "atae@spva.physics.imperial.ac.uk"))
+ :maintainer ("FSF")
+ :provided   (cdl)
+ :keywords   ("data"))

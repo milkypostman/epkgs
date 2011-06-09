@@ -5,8 +5,9 @@
  :authors    (("Ye Wenbin" . "wenbinye@gmail.com"))
  :maintainer ("Ye Wenbin" . "wenbinye@gmail.com")
  :provided   (cgi+)
- :required   ((("cgi" cgi)
-	       ("emacs" calendar cl)
+ :required   ((("calendar" calendar)
+	       ("cgi" cgi)
+	       ("cl" cl)
 	       ("httpd" httpd)))
  :commentary "\
 Just a toy. Maybe it can help you write html in lisp.

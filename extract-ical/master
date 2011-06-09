@@ -4,7 +4,7 @@
  :authors    (("Seth Falcon" . "seth@userprimary.net"))
  :maintainer ("Seth Falcon" . "seth@userprimary.net")
  :provided   (extract-ical)
- :required   ((("emacs" gnus)))
+ :required   ((("gnus" gnus)))
  :keywords   ("icalendar" "ical" "vcal" "gnus")
  :commentary "\
 extract-ical provides send-invite-to-ical to extract an

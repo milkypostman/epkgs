@@ -6,7 +6,7 @@
  :authors    (("V. L. Simpson" . "vls@freeshell.org"))
  :maintainer ("V. L. Simpson" . "vls@freeshell.org")
  :provided   (screenplay)
- :required   ((("emacs" reporter)))
+ :required   ((("reporter" reporter)))
  :homepage   "http://www.nongnu.org/screenplay/"
  :wikipage   "http://www.emacswiki.org/ScreenPlay"
  :commentary "\

@@ -5,7 +5,7 @@
  :authors    (("Oliver Scholz" . "epameinondas@gmx.de"))
  :maintainer ("Oliver Scholz" . "epameinondas@gmx.de")
  :provided   (gnus-propfont)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("news" "mail")
  :homepage   "http://www.emacswiki.org/GnusPropFont"
  :wikipage   "http://www.emacswiki.org/GnusPropFont"

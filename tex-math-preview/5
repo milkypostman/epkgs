@@ -5,7 +5,8 @@
  :authors    (("Kevin Ryde" . "user42@zip.com.au"))
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (tex-math-preview)
- :required   ((("emacs" tex-mode thingatpt)))
+ :required   ((("tex-mode" tex-mode)
+	       ("thingatpt" thingatpt)))
  :keywords   ("tex")
  :wikipage   "http://www.emacswiki.org/TexMathPreview"
  :commentary "\

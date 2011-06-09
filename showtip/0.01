@@ -5,7 +5,7 @@
  :authors    (("Ye Wenbin" . "wenbinye@gmail.com"))
  :maintainer ("Ye Wenbin" . "wenbinye@gmail.com")
  :provided   (showtip)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("help")
  :commentary "\
 This library export one function for elisp programer to show

@@ -1,0 +1,14 @@
+(:summary    "Run Grep as inferior of Emacs, parse match messages"
+ :created    "1985"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Roland McGrath" . "roland@gnu.org"))
+ :maintainer ("FSF")
+ :provided   (grep)
+ :required   ((("compile" compile)
+	       ("find-dired" find-dired)))
+ :keywords   ("tools" "processes")
+ :wikipage   "http://www.emacswiki.org/GrepMode"
+ :commentary "\
+This package provides the grep facilities documented in the Emacs
+user's manual.")

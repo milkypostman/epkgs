@@ -8,7 +8,6 @@
  :required   ((("apel" poe)))
  :keywords   ("data")
  :homepage   "http://user42.tuxfamily.org/tcd-format/index.html"
- :wikipage   "http://www.emacswiki.org/TcdFormat"
  :commentary "\
 This code sets up human-readable decode of XTide .tcd tide constituent
 database files using the `buffer-file-format' mechanism and the

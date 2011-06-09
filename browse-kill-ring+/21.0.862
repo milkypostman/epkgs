@@ -6,7 +6,7 @@
  :maintainer ("Drew Adams")
  :provided   (browse-kill-ring+)
  :required   ((("browse-kill-ring" browse-kill-ring)
-	       ("emacs" cl))
+	       ("cl" cl))
 	      (("second-sel" second-sel)))
  :keywords   ("convenience")
  :commentary "\

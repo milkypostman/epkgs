@@ -5,7 +5,8 @@
  :authors    (("Rick Bielawski" . "rbielaws@i1.net"))
  :maintainer ("Rick Bielawski" . "rbielaws@i1.net")
  :provided   (enform-mode)
- :required   ((("emacs" imenu which-func)
+ :required   ((("imenu" imenu)
+	       ("which-func" which-func)
 	       (nil enform-indent)))
  :keywords   ("languages" "extensions" "tandem" "guardian" "nsk" "enform")
  :homepage   "http://www.emacswiki.org/EnformMode"

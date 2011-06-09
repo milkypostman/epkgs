@@ -6,7 +6,7 @@
  :authors    (("David O'Toole" . "dto@gnu.org"))
  :maintainer ("David O'Toole" . "dto@gnu.org")
  :provided   (radio)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("convenience" "hypermedia")
  :commentary "\
 Radio-mode lets you add plaintext topic tags to your code.

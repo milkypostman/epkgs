@@ -5,7 +5,7 @@
  :authors    (("Lawrence Mitchell" . "wence@gmx.li"))
  :maintainer ("Lawrence Mitchell" . "wence@gmx.li")
  :provided   (ascii-table)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :homepage   "http://www.ph.ed.ac.uk/~s0198183/"
  :wikipage   "http://www.emacswiki.org/AsciiTable"
  :commentary "\

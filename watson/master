@@ -3,8 +3,12 @@
  :authors    (("Eric Marsden" . "emarsden@laas.fr"))
  :maintainer ("Eric Marsden" . "emarsden@laas.fr")
  :provided   (watson)
- :required   ((("emacs" backquote browse-url cl url wid-browse widget)
-	       ("w3" w3-forms)))
+ :required   ((("browse-url" browse-url)
+	       ("cl" cl)
+	       ("emacs-core" backquote)
+	       ("url" url)
+	       ("w3" w3-forms)
+	       ("widget" wid-browse widget)))
  :keywords   ("web" "search")
  :homepage   "http://emarsden.chez.com/downloads/"
  :commentary "\

@@ -5,8 +5,9 @@
  :authors    (("Mike Mattie" . "codermattie@gmail.com"))
  :maintainer ("Mike Mattie" . "codermattie@gmail.com")
  :provided   (parser parser-fn)
- :required   ((("closure" closure)
-	       ("emacs" cl help-fns)))
+ :required   ((("cl" cl)
+	       ("closure" closure)
+	       ("help" help-fns)))
  :keywords   ("parser")
  :homepage   "http://www.emacswiki.org/ParserCompiler"
  :wikipage   "http://www.emacswiki.org/ParserCompiler"

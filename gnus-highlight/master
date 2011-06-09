@@ -5,5 +5,5 @@
  :authors    (("Wes Hardaker"))
  :maintainer ("Wes Hardaker")
  :provided   (gnus-highlight)
- :required   ((("emacs" gnus-art)))
+ :required   ((("gnus" gnus-art)))
  :homepage   "http://www.hardakers.net/elisp/")

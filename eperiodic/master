@@ -5,7 +5,8 @@
  :authors    (("Matthew P. Hodges" . "mphodges@member.fsf.org"))
  :maintainer ("Matthew P. Hodges" . "mphodges@member.fsf.org")
  :provided   (eperiodic)
- :required   ((("emacs" cl dired)))
+ :required   ((("cl" cl)
+	       ("dired" dired)))
  :wikipage   "http://www.emacswiki.org/PeriodicTableForEmacs"
  :commentary "\
 Package to display a periodic table in Emacs.

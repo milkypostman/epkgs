@@ -5,7 +5,10 @@
  :license    "GPL-3"
  :maintainer (nil . "auctex-devel@gnu.org")
  :provided   (reftex reftex-auc reftex-base reftex-cite reftex-dcr reftex-global reftex-index reftex-parse reftex-ref reftex-sel reftex-toc reftex-vars)
- :required   ((("emacs" cl custom easymenu reporter)))
+ :required   ((("cl" cl)
+	       ("custom" custom)
+	       ("easymenu" easymenu)
+	       ("reporter" reporter)))
  :keywords   ("tex")
  :homepage   "http://www.gnu.org/software/auctex/reftex.html"
  :wikipage   "http://www.emacswiki.org/RefTeX"

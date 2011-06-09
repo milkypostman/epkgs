@@ -5,7 +5,9 @@
  :maintainer ("Hasan Veldstra" . "h@vidiowiki.com")
  :adapted-by ("Hasan Veldstra")
  :provided   (http-twiddle)
- :required   ((("emacs" cl easy-mmode font-lock)))
+ :required   ((("cl" cl)
+	       ("easy-mmode" easy-mmode)
+	       ("emacs-core" font-lock)))
  :keywords   ("http" "rest" "soap")
  :commentary "\
 This is a program for testing hand-written HTTP requests. You write

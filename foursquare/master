@@ -7,8 +7,9 @@
  :maintainer ("Edward O'Connor" . "hober0@gmail.com")
  :provided   (foursquare)
  :required   ((("37emacs" rest-api)
-	       ("emacs" json url)
-	       ("geocode" geocode)))
+	       ("geocode" geocode)
+	       ("json" json)
+	       ("url" url)))
  :keywords   ("convenience")
  :homepage   "https://github.com/hober/foursquare-el"
  :commentary "\

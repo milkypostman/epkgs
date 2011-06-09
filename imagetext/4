@@ -5,7 +5,8 @@
  :authors    (("Kevin Ryde" . "user42@zip.com.au"))
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (imagetext)
- :required   ((("emacs" bindat image-dired)
+ :required   ((("bindat" bindat)
+	       ("image-dired" image-dired)
 	       ("tumme" tumme)))
  :keywords   ("multimedia")
  :commentary "\

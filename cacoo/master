@@ -4,8 +4,11 @@
  :updated    "2011"
  :license    "GPL-3"
  :provided   (cacoo cacoo-plugins)
- :required   ((("deferred" concurrent)
-	       ("emacs" cl easymenu json url-file)))
+ :required   ((("cl" cl)
+	       ("deferred" concurrent)
+	       ("easymenu" easymenu)
+	       ("json" json)
+	       ("url" url-file)))
  :keywords   ("convenience" "diagram")
  :homepage   "https://github.com/kiwanami/emacs-cacoo"
  :commentary "\

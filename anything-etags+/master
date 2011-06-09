@@ -6,7 +6,8 @@
  :maintainer ("Joseph" . "jixiuf@gmail.com")
  :provided   (anything-etags+)
  :required   ((("anything" anything)
-	       ("emacs" custom etags))
+	       ("custom" custom)
+	       ("etags" etags))
 	      (("anything" anything-config anything-match-plugin)))
  :keywords   ("anything" "etags" "go" "back" "forward")
  :homepage   "https://github.com/jixiuf/anything-etags-plus"

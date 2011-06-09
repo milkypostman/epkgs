@@ -1,0 +1,11 @@
+(:summary    "Convert text to morse code and back"
+ :created    "1995"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Rick Farnbach" . "rick_farnbach@mentorg.com"))
+ :maintainer ("Rick Farnbach" . "rick_farnbach@mentorg.com")
+ :provided   (morse)
+ :keywords   ("games")
+ :commentary "\
+Converts text to Morse code and back with M-x morse-region and
+M-x unmorse-region (though Morse code is no longer official :-().")

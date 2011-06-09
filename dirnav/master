@@ -5,7 +5,7 @@
  :authors    ((nil . "bardelli.marco@gmail.com"))
  :maintainer (nil . "bardelli.marco@gmail.com")
  :provided   (dirnav)
- :required   ((("emacs" windmove)))
+ :required   ((("windmove" windmove)))
  :commentary "\
 Navigate dirs with TAB and q splitting window.
 View files quickly. Suggest `dired-details'

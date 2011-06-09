@@ -5,7 +5,9 @@
  :authors    (("Mike Williams" . "mdub@bigfoot.com"))
  :maintainer ("Mike Williams" . "mdub@bigfoot.com")
  :provided   (xml-lite)
- :required   ((("emacs" cl custom sgml-mode)))
+ :required   ((("cl" cl)
+	       ("custom" custom)
+	       ("sgml-mode" sgml-mode)))
  :keywords   ("xml")
  :homepage   "http://www.dogbiscuit.org/mdub/software/"
  :commentary "\

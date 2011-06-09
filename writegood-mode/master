@@ -6,7 +6,9 @@
  :authors    (("Benjamin Beckwith"))
  :maintainer ("Benjamin Beckwith")
  :provided   (writegood-mode)
- :required   ((("emacs" cl faces regexp-opt)))
+ :required   ((("cl" cl)
+	       ("emacs-core" faces)
+	       ("regexp-opt" regexp-opt)))
  :keywords   ("writing" "weasel-words" "grammar")
  :homepage   "https://github.com/bnbeckwith/writegood-mode"
  :commentary "\

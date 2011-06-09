@@ -5,7 +5,7 @@
  :authors    (("Tom Breton" . "tehom@localhost"))
  :maintainer ("Tom Breton" . "tehom@localhost")
  :provided   (tehom-4)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("extensions")
  :homepage   "www.panix.com/~tehom/"
  :commentary "\

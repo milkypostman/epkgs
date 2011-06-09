@@ -5,7 +5,11 @@
 	      (nil . "heddy.boubaker@cena.fr"))
  :maintainer ("Heddy Boubaker" . "heddy.boubaker@cena.fr")
  :provided   (mode-compile mode-compile-kill)
- :required   ((("emacs" backquote byte-compile cl compile custom pp reporter)))
+ :required   ((("cl" cl)
+	       ("compile" compile)
+	       ("custom" custom)
+	       ("emacs-core" backquote byte-compile pp)
+	       ("reporter" reporter)))
  :keywords   ("compile" "compilation" "languages" "xemacs" "gnu" "work" "with" "gnu" "work" "ftp" "www")
  :homepage   "http://www.tls.cena.fr/~boubaker/Emacs/"
  :wikipage   "http://www.emacswiki.org/ModeCompile")

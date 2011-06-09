@@ -1,0 +1,256 @@
+(:summary    "Minor mode for doing \\label, \\ref, \\cite, \\index in LaTeX"
+ :repository (cvs . ":pserver:anonymous@cvs.savannah.nongnu.org:/sources/auctex")
+ :created    "1997"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Carsten Dominik" . "dominik@science.uva.nl"))
+ :maintainer (nil . "auctex-devel@gnu.org")
+ :provided   (reftex reftex-auc reftex-cite reftex-dcr reftex-global reftex-index reftex-parse reftex-ref reftex-sel reftex-toc reftex-vars reftex-vcr)
+ :required   ((("cl" cl)
+	       ("custom" custom)
+	       ("easymenu" easymenu)))
+ :keywords   ("tex")
+ :homepage   "http://www.gnu.org/software/auctex/reftex.html"
+ :wikipage   "http://www.emacswiki.org/RefTeX"
+ :commentary "\
+RefTeX is a minor mode with distinct support for \\ref, \\label, \\cite,
+and \\index commands in (multi-file) LaTeX documents.
+- A table of contents provides easy access to any part of a document.
+- Labels are created semi-automatically.
+- Definition context of labels is provided when creating a reference.
+- Citations are simplified with efficient database lookup.
+- Text phrases can be collected in a file, for later global indexing.
+- The index preview buffer helps to check and edit index entries.
+
+
+INSTALLATION
+------------
+
+- If this file is part of an X/Emacs distribution, it is installed.
+- For XEmacs 21.x, you need to install the RefTeX plug-in package
+  available from the XEmacs distribution sites.
+- If you have downloaded this file from the maintainers webpage, follow
+  the instructions in the INSTALL file of the distrubution.
+
+To turn RefTeX Mode on and off in a buffer, use `M-x reftex-mode'.
+
+To turn on RefTeX Mode for all LaTeX files, add the following lines
+to your .emacs file:
+
+  (add-hook 'LaTeX-mode-hook 'turn-on-reftex)   ; AUCTeX LaTeX mode
+  (add-hook 'latex-mode-hook 'turn-on-reftex)   ; Emacs latex mode
+
+
+DOCUMENTATION
+-------------
+
+See below for a short summary of how to use RefTeX.
+
+There is an extensive texinfo document describing RefTeX in detail.
+One way to view this documentation is `M-x reftex-info RET'.
+
+The documentation in various formats is also available at
+
+    http://zon.astro.uva.nl/~dominik/Tools/
+
+---------------------------------------------------------------------------
+
+Introduction
+************
+
+RefTeX is a specialized package for support of labels, references,
+citations, and the index in LaTeX.  RefTeX wraps itself round 4 LaTeX
+macros: `\\label', `\\ref', `\\cite', and `\\index'.  Using these macros
+usually requires looking up different parts of the document and
+searching through BibTeX database files.  RefTeX automates these
+time-consuming tasks almost entirely.  It also provides functions to
+display the structure of a document and to move around in this
+structure quickly.
+
+   *Note Imprint::, for information about who to contact for help, bug
+reports or suggestions.
+
+Environment
+===========
+
+RefTeX needs to access all files which are part of a multifile
+document, and the BibTeX database files requested by the
+`\\bibliography' command.  To find these files, RefTeX will require a
+search path, i.e. a list of directories to check.  Normally this list
+is stored in the environment variables `TEXINPUTS' and `BIBINPUTS'
+which are also used by RefTeX.  However, on some systems these
+variables do not contain the full search path.  If RefTeX does not work
+for you because it cannot find some files, read *Note Finding Files::.
+
+Entering RefTeX Mode
+====================
+
+To turn RefTeX Mode on and off in a particular buffer, use `M-x
+reftex-mode'.  To turn on RefTeX Mode for all LaTeX files, add the
+following lines to your `.emacs' file:
+
+     (add-hook 'LaTeX-mode-hook 'turn-on-reftex)   ; with AUCTeX LaTeX mode
+     (add-hook 'latex-mode-hook 'turn-on-reftex)   ; with Emacs latex mode
+
+RefTeX in a Nutshell
+====================
+
+  1. Table of Contents
+     Typing `C-c =' (`reftex-toc') will show a table of contents of the
+     document.  This buffer can display sections, labels and index
+     entries defined in the document.  From the buffer, you can jump
+     quickly to every part of your document.  Press `?' to get help.
+
+  2. Labels and References
+     RefTeX helps to create unique labels and to find the correct key
+     for references quickly.  It distinguishes labels for different
+     environments, knows about all standard environments (and many
+     others), and can be configured to recognize any additional labeled
+     environments you have defined yourself (variable
+     `reftex-label-alist').
+
+        * Creating Labels
+          Type `C-c (' (`reftex-label') to insert a label at point.
+          RefTeX will either
+             - derive a label from context (default for section labels)
+             - prompt for a label string (default for figures and
+               tables) or
+             - insert a simple label made of a prefix and a number (all
+               other environments)
+
+          Which labels are created how is configurable with the variable
+          `reftex-insert-label-flags'.
+
+        * Referencing Labels
+          To make a reference, type `C-c )' (`reftex-reference').  This
+          shows an outline of the document with all labels of a certain
+          type (figure, equation,...) and some label context.
+          Selecting a label inserts a `\\ref{LABEL}' macro into the
+          original buffer.
+
+  3. Citations
+     Typing `C-c [' (`reftex-citation') will let you specify a regular
+     expression to search in current BibTeX database files (as
+     specified in the `\\bibliography' command) and pull out a list of
+     matches for you to choose from.  The list is _formatted_ and
+     sorted.  The selected article is referenced as `\\cite{KEY}' (see
+     the variable `reftex-cite-format' if you want to insert different
+     macros).
+
+  4. Index Support
+     RefTeX helps to enter index entries.  It also compiles all entries
+     into an alphabetically sorted `*Index*' buffer which you can use
+     to check and edit the entries.  RefTeX knows about the standard
+     index macros and can be configured to recognize any additional
+     macros you have defined (`reftex-index-macros').  Multiple indices
+     are supported.
+
+        * Creating Index Entries
+          To index the current selection or the word at point, type
+          `C-c /' (`reftex-index-selection-or-word').  The default macro
+          `reftex-index-default-macro' will be used.  For a more
+          complex entry type `C-c <' (`reftex-index'), select any of
+          the index macros and enter the arguments with completion.
+
+        * The Index Phrases File (Delayed Indexing)
+          Type `C-c \\' (`reftex-index-phrase-selection-or-word') to add
+          the current word or selection to a special _index phrase
+          file_.  RefTeX can later search the document for occurrences
+          of these phrases and let you interactively index the matches.
+
+        * Displaying and Editing the Index
+          To display the compiled index in a special buffer, type `C-c
+          >' (`reftex-display-index').  From that buffer you can check
+          and edit all entries.
+
+  5. Viewing Cross-References
+     When point is on the KEY argument of a cross-referencing macro
+     (`\\label', `\\ref', `\\cite', `\\bibitem', `\\index', and variations)
+     or inside a BibTeX database entry, you can press `C-c &'
+     (`reftex-view-crossref') to display corresponding locations in the
+     document and associated BibTeX database files.
+     When the enclosing macro is `\\cite' or `\\ref' and no other message
+     occupies the echo area, information about the citation or label
+     will automatically be displayed in the echo area.
+
+  6. Multifile Documents
+     Multifile Documents are fully supported.  The included files must
+     have a file variable `TeX-master' or `tex-main-file' pointing to
+     the master file.  RefTeX provides cross-referencing information
+     from all parts of the document, and across document borders
+     (`xr.sty').
+
+  7. Document Parsing
+     RefTeX needs to parse the document in order to find labels and
+     other information.  It does it automatically once and updates its
+     list internally when `reftex-label' and `reftex-index' are used.
+     To enforce reparsing, call any of the commands described above
+     with a raw `C-u' prefix, or press the `r' key in the label
+     selection buffer, the table of contents buffer, or the index
+     buffer.
+
+  8. AUCTeX
+     If your major LaTeX mode is AUCTeX, RefTeX can cooperate with it
+     (see variable `reftex-plug-into-AUCTeX').  AUCTeX contains style
+     files which trigger appropriate settings in RefTeX, so that for
+     many of the popular LaTeX packages no additional customizations
+     will be necessary.
+
+  9. Useful Settings
+     To make RefTeX faster for large documents, try these:
+          (setq reftex-enable-partial-scans t)
+          (setq reftex-save-parse-info t)
+          (setq reftex-use-multiple-selection-buffers t)
+
+     To integrate with AUCTeX, use
+          (setq reftex-plug-into-AUCTeX t)
+
+     To make your own LaTeX macro definitions known to RefTeX,
+     customize the variables
+          `reftex-label-alist'          (for label macros/environments)
+          `reftex-section-levels'       (for sectioning commands)
+          `reftex-cite-format'          (for `\\cite'-like macros)
+          `reftex-index-macros'         (for `\\index'-like macros)
+          `reftex-index-default-macro'  (to set the default macro)
+     If you have a large number of macros defined, you may want to write
+     an AUCTeX style file to support them with both AUCTeX and RefTeX.
+
+ 10. Where Next?
+     Go ahead and use RefTeX.  Use its menus until you have picked up
+     the key bindings.  For an overview of what you can do in each of
+     the different special buffers, press `?'.  Read the manual if you
+     get stuck, of if you are curious what else might be available.
+     The first part of the manual explains in a tutorial way how to use
+     and customize RefTeX.  The second part is a command and variable
+     reference.
+
+---------------------------------------------------------------------------
+
+AUTHOR
+======
+
+Carsten Dominik <dominik@science.uva.nl>
+
+        with contributions from Stephen Eglen
+
+RefTeX is bundled with Emacs and available as a plug-in package for
+XEmacs 21.x.  If you need to install it yourself, you can find a
+distribution at
+
+   http://zon.astro.uva.nl/~dominik/Tools/
+
+THANKS TO:
+---------
+Thanks to the people on the Net who have used RefTeX and helped
+developing it with their reports.  In particular thanks to
+
+   Fran Burstall, Alastair Burt, Soren Dayton, Stephen Eglen,
+   Karl Eichwalder, Peter Galbraith, Dieter Kraft, Kai Grossjohann,
+   Frank Harrell, Adrian Lanz, Rory Molinari, Stefan Monnier,
+   Laurent Mugnier, Sudeep Kumar Palat, Daniel Polani, Robin Socha,
+   Richard Stanton, Allan Strand, Jan Vroonhof, Christoph Wedler,
+   Alan Williams.
+
+Finally thanks to Uwe Bolick who first got me (some years ago) into
+supporting LaTeX labels and references with an editor (which was
+MicroEmacs at the time).")

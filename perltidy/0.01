@@ -5,7 +5,7 @@
  :authors    (("Ye Wenbin" . "wenbinye@gmail.com"))
  :maintainer ("Ye Wenbin" . "wenbinye@gmail.com")
  :provided   (perltidy)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("tools" "convenience" "languages")
  :commentary "\
 As the PBP(Perl Best Practice) suggest, put this to your ~/.perltidyrc:

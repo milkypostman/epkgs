@@ -6,7 +6,10 @@
  :authors    (("Jason R. Blevins" . "jrblevin@sdf.org"))
  :maintainer ("Jason R. Blevins" . "jrblevin@sdf.org")
  :provided   (markdown-mode)
- :required   ((("emacs" easymenu font-lock outline thingatpt)))
+ :required   ((("easymenu" easymenu)
+	       ("emacs-core" font-lock)
+	       ("outline" outline)
+	       ("thingatpt" thingatpt)))
  :keywords   ("markdown" "major" "mode")
  :homepage   "http://jblevins.org/projects/markdown-mode/"
  :wikipage   "http://www.emacswiki.org/MarkdownMode"

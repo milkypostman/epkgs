@@ -6,7 +6,7 @@
  :authors    (("Juri Pakaste" . "juri@iki.fi"))
  :maintainer ("Juri Pakaste" . "juri@iki.fi")
  :provided   (pgrok)
- :required   ((("emacs" find-dired)))
+ :required   ((("find-dired" find-dired)))
  :homepage   "https://launchpad.net/pgrok"
  :commentary "\
 pgrok loads project settings from specially named files (see

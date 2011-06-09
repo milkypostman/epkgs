@@ -5,8 +5,11 @@
  :license    "GPL-2"
  :authors    (("John Wiegley" . "johnw@gnu.org"))
  :maintainer ("John Wiegley" . "johnw@gnu.org")
- :provided   (ldg-complete ldg-exec ldg-mode ldg-post ldg-regex ldg-register ldg-state ldg-texi ledger timeclock)
- :required   ((("emacs" cl esh-arg esh-util pcomplete rx)))
+ :provided   (ldg-complete ldg-exec ldg-mode ldg-post ldg-regex ldg-register ldg-state ldg-texi ledger)
+ :required   ((("cl" cl)
+	       ("eshell" esh-arg esh-util)
+	       ("pcomplete" pcomplete)
+	       ("rx" rx)))
  :keywords   ("data")
  :homepage   "https://github.com/jwiegley/ledger"
  :wikipage   "http://www.emacswiki.org/LedgerMode"

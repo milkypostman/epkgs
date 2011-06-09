@@ -2,7 +2,7 @@
  :updated    "2001"
  :license    "GPL-2"
  :provided   (lbdb)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :homepage   "http://www.davep.org/emacs/"
  :commentary "\
 lbdb.el is an emacs interface to the Little Brother's Database. You can

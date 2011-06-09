@@ -1,0 +1,31 @@
+(:summary    "Get the `thing' at point"
+ :created    "19910328"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Mike Williams" . "mikew@gopher.dosli.govt.nz"))
+ :maintainer ("FSF")
+ :provided   (thingatpt)
+ :keywords   ("extensions" "matching" "mouse")
+ :commentary "\
+This file provides routines for getting the \"thing\" at the location of
+point, whatever that \"thing\" happens to be.  The \"thing\" is defined by
+its beginning and end positions in the buffer.
+
+The function bounds-of-thing-at-point finds the beginning and end
+positions by moving first forward to the end of the \"thing\", and then
+backwards to the beginning.  By default, it uses the corresponding
+forward-\"thing\" operator (eg. forward-word, forward-line).
+
+Special cases are allowed for using properties associated with the named
+\"thing\":
+
+  forward-op		Function to call to skip forward over a \"thing\" (or
+                     with a negative argument, backward).
+
+  beginning-op	Function to call to skip to the beginning of a \"thing\".
+  end-op		Function to call to skip to the end of a \"thing\".
+
+Reliance on existing operators means that many `things' can be accessed
+without further code:  eg.
+    (thing-at-point 'line)
+    (thing-at-point 'page)")

@@ -6,7 +6,14 @@
  :authors    (("Tony Graham" . "tkg@menteith.com"))
  :maintainer ("Tony Graham" . "tkg@menteith.com")
  :provided   (xslide xslide-abbrev xslide-data xslide-font xslide-indent xslide-process)
- :required   ((("emacs" cl compile etags font-lock imenu reporter sendmail speedbar)))
+ :required   ((("cedet" speedbar)
+	       ("cl" cl)
+	       ("compile" compile)
+	       ("emacs-core" font-lock)
+	       ("etags" etags)
+	       ("imenu" imenu)
+	       ("reporter" reporter)
+	       ("sendmail" sendmail)))
  :keywords   ("languages" "xsl" "xml")
  :homepage   "http://www.menteith.com/wiki/xslide"
  :commentary "\

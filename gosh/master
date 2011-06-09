@@ -1,7 +1,7 @@
 (:summary    "An interface to Gauche"
  :license    "GPL-2"
  :provided   (gosh)
- :required   ((("emacs" pcomplete)))
+ :required   ((("pcomplete" pcomplete)))
  :commentary "\
 Adapted from the Lush <http://lush.sourceforge.net/> Emacs interface.
 Modifications for Gauche are by Yury Sulsky and Issac Trotts.

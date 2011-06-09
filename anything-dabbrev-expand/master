@@ -6,7 +6,7 @@
  :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
  :provided   (anything-dabbrev-expand)
  :required   ((("anything" anything)
-	       ("emacs" dabbrev))
+	       ("dabbrev" dabbrev))
 	      (("anything" anything-show-completion)))
  :keywords   ("dabbrev" "convenience" "anything")
  :commentary "\

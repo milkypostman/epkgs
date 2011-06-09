@@ -1,0 +1,33 @@
+(:summary    "Print current function in mode line"
+ :created    "1994"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Alex Rezinsky" . "alexr@msil.sps.mot.com")
+	      ("(doesn't seem to be responsive any more)"))
+ :maintainer ("Alex Rezinsky" . "alexr@msil.sps.mot.com")
+ :provided   (which-func)
+ :required   ((("imenu" imenu)))
+ :keywords   ("mode-line" "imenu" "tools")
+ :wikipage   "http://www.emacswiki.org/WhichFuncMode"
+ :commentary "\
+This package prints name of function where your current point is
+located in mode line. It assumes that you work with imenu package
+and imenu--index-alist is up to date.
+
+KNOWN BUGS
+----------
+Really this package shows not \"function where the current point is
+located now\", but \"nearest function which defined above the current
+point\". So if your current point is located after end of function
+FOO but before begin of function BAR, FOO will be displayed in mode
+line.
+- if two windows display the same buffer, both windows
+  show the same `which-func' information.
+
+TODO LIST
+---------
+    1. Dependence on imenu package should be removed.  Separate
+function determination mechanism should be used to determine the end
+of a function as well as the beginning of a function.
+    2. This package should be realized with the help of overlay
+properties instead of imenu--index-alist variable.")

@@ -5,7 +5,15 @@
  :license    "GPL-2"
  :maintainer ("Rudi Schlatte" . "rudi@constantly.at")
  :provided   (maude-mode)
- :required   ((("emacs" ansi-color cl comint compile derived easymenu font-lock imenu newcomment rx)))
+ :required   ((("ansi-color" ansi-color)
+	       ("cl" cl)
+	       ("comint" comint)
+	       ("compile" compile)
+	       ("easymenu" easymenu)
+	       ("emacs-core" derived font-lock)
+	       ("imenu" imenu)
+	       ("newcomment" newcomment)
+	       ("rx" rx)))
  :keywords   ("maude")
  :homepage   "http://sourceforge.net/projects/maude-mode/"
  :wikipage   "http://www.emacswiki.org/MaudeMode")

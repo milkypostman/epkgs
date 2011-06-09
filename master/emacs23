@@ -1,0 +1,33 @@
+(:summary    "Make a buffer the master over another buffer"
+ :created    "1999"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Alex Schroeder" . "alex@gnu.org"))
+ :maintainer ("Alex Schroeder" . "alex@gnu.org")
+ :provided   (master)
+ :keywords   ("comm")
+ :wikipage   "http://www.emacswiki.org/MasterMode"
+ :commentary "\
+master-mode is a minor mode which enables you to scroll another
+buffer (the slave) without leaving your current buffer (the master).
+
+It can be used by sql.el, for example: The SQL buffer is the master
+and its SQLi buffer is the slave.  This allows you to scroll the SQLi
+buffer containing the output from the SQL buffer containing the
+commands.
+
+This is how to use sql.el and master.el together: The variable
+sql-buffer contains the slave buffer.  It is a local variable in the
+SQL buffer.
+
+(add-hook 'sql-mode-hook
+	   (function (lambda ()
+		       (master-mode t)
+		       (master-set-slave sql-buffer))))
+(add-hook 'sql-set-sqli-hook
+	   (function (lambda ()
+		       (master-set-slave sql-buffer))))
+
+Thanks to all the people who helped me out:
+
+Rob Riepel <networking.stanford.edu>")

@@ -1,0 +1,110 @@
+(:summary    "Directional window-selection routines"
+ :created    "1998"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Hovav Shacham" . "hovav@cs.stanford.edu"))
+ :maintainer ("Hovav Shacham" . "hovav@cs.stanford.edu")
+ :provided   (windmove)
+ :keywords   ("window" "movement" "convenience")
+ :wikipage   "http://www.emacswiki.org/WindMove"
+ :commentary "\
+This package defines a set of routines, windmove-{left,up,right,
+down}, for selection of windows in a frame geometrically.  For
+example, `windmove-right' selects the window immediately to the
+right of the currently-selected one.  This functionality is similar
+to the window-selection controls of the BRIEF editor of yore.
+
+One subtle point is what happens when the window to the right has
+been split vertically; for example, consider a call to
+`windmove-right' in this setup:
+
+                   -------------
+                   |      | A  |
+                   |      |    |
+                   |      |-----
+                   | *    |    |    (* is point in the currently
+                   |      | B  |     selected window)
+                   |      |    |
+                   -------------
+
+There are (at least) three reasonable things to do:
+(1) Always move to the window to the right of the top edge of the
+    selected window; in this case, this policy selects A.
+(2) Always move to the window to the right of the bottom edge of
+    the selected window; in this case, this policy selects B.
+(3) Move to the window to the right of point in the selected
+    window.  This may select either A or B, depending on the
+    position of point; in the illustrated example, it would select
+    B.
+
+Similar issues arise for all the movement functions.  Windmove
+resolves this problem by allowing the user to specify behavior
+through a prefix argument.  The cases are thus:
+* if no argument is given to the movement functions, or the
+  argument given is zero, movement is relative to point;
+* if a positive argument is given, movement is relative to the top
+  or left edge of the selected window, depending on whether the
+  movement is to be horizontal or vertical;
+* if a negative argument is given, movement is relative to the
+  bottom or right edge of the selected window, depending on whether
+  the movement is to be horizontal or vertical.
+
+
+Another feature enables wrap-around mode when the variable
+`windmove-wrap-around' is set to a non-nil value.  In this mode,
+movement that falls off the edge of the frame will wrap around to
+find the window on the opposite side of the frame.  Windmove does
+the Right Thing about the minibuffer; for example, consider:
+
+                   -------------
+                   |    *      |
+                   |-----------|
+                   |     A     |
+                   |-----------|    (* is point in the currently
+                   |  B   | C  |     selected window)
+                   |      |    |
+                   -------------
+
+With wraparound enabled, windmove-down will move to A, while
+windmove-up will move to the minibuffer if it is active, or to
+either B or C depending on the prefix argument.
+
+
+A set of default keybindings is supplied: shift-{left,up,right,down}
+invoke the corresponding Windmove function.  See the installation
+section if you wish to use these keybindings.
+
+
+Installation:
+
+Put the following line in your `.emacs' file:
+
+    (windmove-default-keybindings)         ; shifted arrow keys
+
+or
+
+    (windmove-default-keybindings 'hyper)  ; etc.
+
+to use another modifier key.
+
+
+If you wish to enable wrap-around, also add a line like:
+
+   (setq windmove-wrap-around t)
+
+
+Note: If you have an Emacs that manifests a bug that sometimes
+causes the occasional creation of a \"lost column\" between windows,
+so that two adjacent windows do not actually touch, you may want to
+increase the value of `windmove-window-distance-delta' to 2 or 3:
+
+    (setq windmove-window-distance-delta 2)
+
+
+Acknowledgements:
+
+Special thanks to Julian Assange (proff@iq.org), whose
+change-windows-intuitively.el predates Windmove, and provided the
+inspiration for it.  Kin Cho (kin@symmetrycomm.com) was the first
+to suggest wrap-around behavior.  Thanks also to Gerd Moellmann
+(gerd@gnu.org) for his comments and suggestions.")

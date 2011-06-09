@@ -5,7 +5,7 @@
  :authors    (("Kevin Rodgers" . "ihs_4664@yahoo.com"))
  :maintainer ("Kevin Rodgers" . "ihs_4664@yahoo.com")
  :provided   (minibuffer-complete-cycle)
- :required   ((("emacs" custom)))
+ :required   ((("custom" custom)))
  :keywords   ("completion")
  :commentary "\
 The `minibuffer-complete' command, bound by default to TAB in the

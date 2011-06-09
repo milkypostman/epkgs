@@ -5,6 +5,6 @@
  :authors    (("Noah Friedman" . "friedman@splode.com"))
  :maintainer (nil . "friedman@splode.com")
  :provided   (fshell)
- :required   ((("emacs" shell)))
+ :required   ((("shell" shell)))
  :keywords   ("extensions" "processes")
  :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html")

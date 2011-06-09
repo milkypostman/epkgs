@@ -5,7 +5,7 @@
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")
  :provided   (misc-fns)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("internal" "unix" "lisp" "extensions" "local")
  :commentary "\
 Miscellaneous non-interactive functions.

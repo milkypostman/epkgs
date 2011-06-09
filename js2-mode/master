@@ -6,7 +6,9 @@
  :authors    (("Steve Yegge" . "steve.yegge@gmail.com"))
  :maintainer ("Steve Yegge" . "steve.yegge@gmail.com")
  :provided   (js2-build js2-mode)
- :required   ((("emacs" cc-cmds cc-engine cc-langs cc-mode cl imenu)))
+ :required   ((("cc-mode" cc-cmds cc-engine cc-langs cc-mode)
+	       ("cl" cl)
+	       ("imenu" imenu)))
  :keywords   ("languages" "javascript")
  :homepage   "http://code.google.com/p/js2-mode/"
  :wikipage   "http://www.emacswiki.org/Js2Mode"

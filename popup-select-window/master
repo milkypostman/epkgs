@@ -5,7 +5,7 @@
  :authors    (("HAMANO Kiyoto" . "khiker.mail@gmail.com"))
  :maintainer ("HAMANO Kiyoto" . "khiker.mail@gmail.com")
  :provided   (popup-select-window)
- :required   ((("auto-complete" popup)))
+ :required   ((("popup" popup)))
  :keywords   ("popup" "select-window" "window")
  :commentary "\
 Extend a `select-window'.

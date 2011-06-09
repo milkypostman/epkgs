@@ -4,5 +4,5 @@
  :authors    (("James"))
  :maintainer ("James")
  :provided   (erc-extra-command-cl erc-extra-command-elisp erc-extra-commands-mode)
- :required   ((("emacs" erc)))
+ :required   ((("erc" erc)))
  :homepage   "https://github.com/nixeagle/erc-extra-commands")

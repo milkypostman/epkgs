@@ -1,0 +1,13 @@
+(:summary    "Support the easymenu interface for defining a menu"
+ :created    "1994"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Richard Stallman" . "rms@gnu.org"))
+ :maintainer ("Richard Stallman" . "rms@gnu.org")
+ :provided   (easymenu)
+ :keywords   ("emulations")
+ :wikipage   "http://www.emacswiki.org/EasyMenu"
+ :commentary "\
+This is compatible with easymenu.el by Per Abrahamsen
+but it is much simpler as it doesn't try to support other Emacs versions.
+The code was mostly derived from lmenu.el.")

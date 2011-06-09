@@ -3,7 +3,7 @@
  :updated    "2008"
  :license    "GPL-2"
  :provided   (thinks)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :homepage   "http://www.davep.org/emacs/"
  :commentary "\
 thinks.el is a little bit of silliness inspired by the think bubbles you

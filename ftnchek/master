@@ -5,6 +5,7 @@
  :authors    (("Judah Milgram" . "milgram@cgpp.com"))
  :maintainer ("Judah Milgram" . "milgram@cgpp.com")
  :provided   (ftnchek-mode)
- :required   ((("emacs" compile fortran)))
+ :required   ((("compile" compile)
+	       ("fortran" fortran)))
  :keywords   ("fortran" "syntax" "semantic")
  :homepage   "http://www.tux.org/~milgram/ftnchekel.html")

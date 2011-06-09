@@ -5,7 +5,7 @@
  :authors    (("Ulrik Vieth" . "vieth@thphy.uni-duesseldorf.de"))
  :maintainer ("Ulrik Vieth" . "vieth@thphy.uni-duesseldorf.de")
  :provided   (meta-mode)
- :required   ((("emacs" easymenu)))
+ :required   ((("easymenu" easymenu)))
  :keywords   ("metafont" "metapost" "tex" "languages")
  :commentary "\
 Description:

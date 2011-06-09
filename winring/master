@@ -4,7 +4,8 @@
  :updated    "2010"
  :license    "GPL-3"
  :provided   (winring)
- :required   ((("emacs" reporter ring)))
+ :required   ((("reporter" reporter)
+	       ("ring" ring)))
  :keywords   ("frames" "tools")
  :homepage   "http://launchpad.net/winring"
  :wikipage   "http://www.emacswiki.org/WinRing"

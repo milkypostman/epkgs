@@ -1,0 +1,69 @@
+(:summary    "Major mode for ANTLR grammar files"
+ :created    "1999"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    ((nil . "christoph.wedler@sap.com"))
+ :maintainer (nil . "christoph.wedler@sap.com")
+ :provided   (antlr-mode)
+ :required   ((("cc-mode" cc-mode)
+	       ("cl" cl)
+	       ("easymenu" easymenu)))
+ :keywords   ("languages" "antlr" "code" "generator")
+ :homepage   "http://antlr-mode.sourceforge.net/"
+ :wikipage   "http://www.emacswiki.org/AntlrMode"
+ :commentary "\
+The Emacs package ANTLR-Mode provides: syntax highlighting for ANTLR grammar
+files, automatic indentation, menus containing rule/token definitions and
+supported options and various other things like running ANTLR from within
+Emacs.
+
+For details, check <http://antlr-mode.sourceforge.net/> or, if you prefer
+the manual style, follow all commands mentioned in the documentation of
+`antlr-mode'.  ANTLR is a LL(k)-based recognition tool which generates
+lexers, parsers and tree transformers in Java, C++ or Sather and can be
+found at <http://www.antlr.org/>.
+
+Bug fixes, bug reports, improvements, and suggestions for the newest version
+are strongly appreciated.
+
+To-do/Wish-list:
+
+ * Next Version [C-c C-w].  Produce HTML document with syntax highlighted
+   and hyper-links (using htmlize).
+ * Next Version [C-c C-u].  Insert/update special comments: each rule lists
+   all rules which use the current rule.  With font-lock update.
+ * Next Version.  Make hiding much more customizable.
+ * Planned [C-c C-j].  Jump to generated coding.
+ * Planned.  Further support for imenu, i.e., include entries for method
+   definitions at beginning of grammar class.
+ * Planned [C-c C-p].  Pack/unpack rule/subrule & options (one/multi-line).
+
+ * Probably.  Show rules/dependencies for ANT like for Makefile (does ANT
+   support vocabularies and grammar inheritance?), I have to look at
+   jde-ant.el: http://jakarta.apache.org/ant/manual/OptionalTasks/antlr.html
+ * Probably.  Make `indent-region' faster, especially in actions.  ELP
+   profiling in a class init action shows half the time is spent in
+   `antlr-next-rule', the other half in `c-guess-basic-syntax'.
+ * Unlikely.  Sather as generated language with syntax highlighting etc/.
+   Questions/problems: is sather-mode.el the standard mode for sather, is it
+   still supported, what is its relationship to eiffel3.el?  Requirement:
+   this mode must not depend on a Sather mode.
+ * Unlikely.  Faster syntax highlighting: sectionize the buffer into Antlr
+   and action code and run special highlighting functions on these regions.
+   Problems: code size, this mode would depend on font-lock internals.
+
+Installation:
+
+This file requires Emacs-20.3, XEmacs-20.4 or higher and package cc-mode.
+
+If antlr-mode is not part of your distribution, put this file into your
+load-path and the following into your ~/.emacs:
+  (autoload 'antlr-mode \"antlr-mode\" nil t)
+  (setq auto-mode-alist (cons '(\"\\\\.g\\\\'\" . antlr-mode) auto-mode-alist))
+  (add-hook 'speedbar-load-hook  ; would be too late in antlr-mode.el
+	       (lambda () (speedbar-add-supported-extension \".g\")))
+
+I strongly recommend to use font-lock with a support mode like fast-lock,
+lazy-lock or better jit-lock (Emacs-21.1+) / lazy-shot (XEmacs).
+
+To customize, use menu item \"Antlr\" -> \"Customize Antlr\".")

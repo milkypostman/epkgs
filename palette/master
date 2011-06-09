@@ -5,7 +5,7 @@
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")
  :provided   (palette)
- :required   ((("emacs" cl)
+ :required   ((("cl" cl)
 	       ("hexrgb" hexrgb))
 	      (("icicles" icicles)))
  :keywords   ("color" "rgb" "hsv" "hexadecimal" "face" "frame")

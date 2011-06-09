@@ -4,7 +4,9 @@
  :updated    "2011"
  :license    "GPL-3"
  :provided   (ibuffer-vc)
- :required   ((("emacs" ibuf-ext ibuffer vc-hooks)))
+ :required   ((("ibuffer" ibuffer)
+	       ("vc" vc-hooks)
+	       (nil ibuf-ext)))
  :keywords   ("themes")
  :homepage   "https://github.com/purcell/ibuffer-vc"
  :commentary "\

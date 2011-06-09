@@ -5,7 +5,7 @@
 	      ("username damyanp)"))
  :maintainer ("Damyan Pepper (gmail account")
  :provided   (autosmiley)
- :required   ((("emacs" smiley)))
+ :required   ((("gnus" smiley)))
  :homepage   "http://www.emacswiki.org/AutoSmiley"
  :wikipage   "http://www.emacswiki.org/AutoSmiley"
  :commentary "\

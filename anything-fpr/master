@@ -6,7 +6,7 @@
 	      ("Masashi" . "m.sakurai@kiwanami.net"))
  :maintainer ("SAKURAI")
  :provided   (anything-find-project-resources)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("anything" "files" "project")
  :homepage   "https://github.com/kiwanami/emacs-anything-fpr"
  :commentary "\

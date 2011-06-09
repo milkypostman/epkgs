@@ -1,0 +1,12 @@
+(:summary    "Major mode to edit CSS files"
+ :created    "2006"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Stefan Monnier" . "monnier@iro.umontreal.ca"))
+ :maintainer ("Stefan Monnier" . "monnier@iro.umontreal.ca")
+ :provided   (css-mode)
+ :required   ((("cl" cl)))
+ :keywords   ("hypermedia")
+ :wikipage   "http://www.emacswiki.org/CSS"
+ :commentary "\
+Yet another CSS mode.")

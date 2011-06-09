@@ -5,7 +5,7 @@
  :authors    (("Tamas Patrovics"))
  :maintainer ("Tamas Patrovics")
  :provided   (timid)
- :required   ((("emacs" iswitchb)))
+ :required   ((("iswitchb" iswitchb)))
  :keywords   ("completion")
  :commentary "\
 I work with files. Lots of files. So I want to open files as

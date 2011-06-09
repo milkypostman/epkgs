@@ -4,7 +4,7 @@
  :authors    (("giraud"))
  :maintainer ("giraud")
  :provided   (fip)
- :required   ((("emacs" url)))
+ :required   ((("url" url)))
  :commentary "\
 This package offers you a function `fip' which pop up a new buffer
 with songs that are played on FIP (a french radio I used to listen,

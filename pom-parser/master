@@ -3,5 +3,6 @@
  :updated    "20071112"
  :license    "as-is"
  :provided   (pom-parser)
- :required   ((("emacs" cl xml)
-	       ("jdee" jde))))
+ :required   ((("cl" cl)
+	       ("jdee" jde)
+	       ("xml" xml))))

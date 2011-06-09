@@ -6,7 +6,8 @@
  :authors    (("Le Wang"))
  :maintainer ("Le Wang")
  :provided   (xargs-grep)
- :required   ((("emacs" compile grep)))
+ :required   ((("compile" compile)
+	       ("grep" grep)))
  :homepage   "https://github.com/lewang/le_emacs_xargs_grep"
  :wikipage   "http://www.emacswiki.org/xargs-grep"
  :commentary "\

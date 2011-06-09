@@ -3,7 +3,7 @@
  :updated    "2008"
  :license    "GPL-3"
  :provided   (ruby-compilation)
- :required   ((("emacs" ansi-color)
+ :required   ((("ansi-color" ansi-color)
 	       ("rinari" pcmpl-rake)))
  :commentary "\
 Allow for execution of ruby processes dumping the results into a

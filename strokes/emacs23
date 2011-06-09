@@ -1,0 +1,163 @@
+(:summary    "Control Emacs through mouse strokes"
+ :created    "1997"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("David Bakhash" . "cadet@alum.mit.edu"))
+ :maintainer ("FSF")
+ :provided   (strokes)
+ :required   ((("cl" cl)
+	       ("emacs-core" pp)))
+ :keywords   ("lisp" "mouse" "extensions")
+ :wikipage   "http://www.emacswiki.org/StrokesMode"
+ :commentary "\
+This is the strokes package.  It is intended to allow the user to
+control Emacs by means of mouse strokes.  Once strokes is loaded, you
+can always get help be invoking `strokes-help':
+
+> M-x strokes-help
+
+and you can learn how to use the package.  A mouse stroke, for now,
+can be defined as holding the shift key and the middle button, for
+instance, and then moving the mouse in whatever pattern you wish,
+which you have set Emacs to understand as mapping to a given
+command.  For example, you may wish the have a mouse stroke that
+looks like a capital `C' which means `copy-region-as-kill'.  Treat
+strokes just like you do key bindings.  For example, Emacs sets key
+bindings globally with the `global-set-key' command.  Likewise, you
+can do
+
+> M-x strokes-global-set-stroke
+
+to interactively program in a stroke.  It would be wise to set the
+first one to this very command, so that from then on, you invoke
+`strokes-global-set-stroke' with a stroke.  Likewise, there may
+eventually be a `strokes-local-set-stroke' command, also analogous
+to `local-set-key'.
+
+You can always unset the last stroke definition with the command
+
+> M-x strokes-unset-last-stroke
+
+and the last stroke that was added to `strokes-global-map' will be
+removed.
+
+Other analogies between strokes and key bindings are as follows:
+
+   1) To describe a stroke binding, you can type
+
+      > M-x strokes-describe-stroke
+
+      analogous to `describe-key'.  It's also wise to have a stroke,
+      like an `h', for help, or a `?', mapped to `describe-stroke'.
+
+   2) stroke bindings are set internally through the Lisp function
+      `strokes-define-stroke', similar to the `define-key' function.
+      some examples for a 3x3 stroke grid would be
+
+      (strokes-define-stroke c-mode-stroke-map
+                     '((0 . 0) (1 . 1) (2 . 2))
+                     'kill-region)
+      (strokes-define-stroke strokes-global-map
+                     '((0 . 0) (0 . 1) (0 . 2) (1 . 2) (2 . 2))
+                     'list-buffers)
+
+      however, if you would probably just have the user enter in the
+      stroke interactively and then set the stroke to whatever he/she
+      entered.  The Lisp function to interactively read a stroke is
+      `strokes-read-stroke'.  This is especially helpful when you're
+      on a fast computer that can handle a 9x9 stroke grid.
+
+      NOTE: only global stroke bindings are currently implemented,
+      however mode- and buffer-local stroke bindings may eventually
+      be implemented in a future version.
+
+The important variables to be aware of for this package are listed
+below.  They can all be altered through the customizing package via
+
+> M-x customize
+
+and customizing the group named `strokes'.  You can also read
+documentation on the variables there.
+
+`strokes-minimum-match-score' (determines the threshold of error that
+makes a stroke acceptable or unacceptable.  If your strokes aren't
+matching, then you should raise this variable.
+
+`strokes-grid-resolution' (determines the grid dimensions that you use
+when defining/reading strokes.  The finer the grid your computer can
+handle, the more you can do, but even a 3x3 grid is pretty cool.)
+The default value (9) should be fine for most decent computers.
+NOTE: This variable should not be set to a number less than 3.
+
+`strokes-display-strokes-buffer' will allow you to hide the strokes
+buffer when doing simple strokes.  This is a speedup for slow
+computers as well as people who don't want to see their strokes.
+
+If you find that your mouse is accelerating too fast, you can
+execute an X command to slow it down.  A good possibility is
+
+% xset m 5/4 8
+
+which seems, heuristically, to work okay, without much disruption.
+
+Whenever you load in the strokes package, you will be able to save
+what you've done upon exiting Emacs.  You can also do
+
+> M-x strokes-prompt-user-save-strokes
+
+and it will save your strokes in ~/.strokes, or you may wish to change
+this by setting the variable `strokes-file'.
+
+Note that internally, all of the routines that are part of this
+package are able to deal with complex strokes, as they are a superset
+of simple strokes.  However, the default of this package will map
+S-mouse-2 to the command `strokes-do-stroke', and M-mouse-2 to
+`strokes-do-complex-stroke'.  Complex strokes are terminated
+with mouse button 3.
+
+You can also toggle between strokes mode by simple typing
+
+> M-x strokes-mode
+
+I hope that, with the help of others, this package will be useful
+in entering in pictographic-like language text using the mouse
+(i.e. Korean).  Japanese and Chinese are a bit trickier, but I'm
+sure that with help it can be done.  The next version will allow
+the user to enter strokes which \"remove the pencil from the paper\"
+so to speak, so one character can have multiple strokes.
+
+NOTE (Oct 7, 2006): The URLs below seem to be invalid!!!
+
+You can read more about strokes at:
+
+http://www.mit.edu/people/cadet/strokes-help.html
+
+If you're interested in using strokes for writing English into Emacs
+using strokes, then you'll want to read about it on the web page above
+or just download from http://www.mit.edu/people/cadet/strokes-abc.el,
+which is nothing but a file with some helper commands for inserting
+alphanumerics and punctuation.
+
+Great thanks to Rob Ristroph for his generosity in letting me use
+his PC to develop this, Jason Johnson for his help in algorithms,
+Euna Kim for her help in Korean, and massive thanks to the helpful
+guys on the help instance on athena (zeno, jered, amu, gsstark,
+ghudson, etc) Special thanks to Steve Baur, Kyle Jones, and Hrvoje
+Niksic for all their help.  And special thanks to Dave Gillespie
+for all the elisp help--he is responsible for helping me use the cl
+macros at (near) max speed.
+
+Tasks: (what I'm getting ready for future version)...
+2) use 'strokes-read-complex-stroke for Korean, etc.
+4) buffer-local 'strokes-local-map, and mode-stroke-maps would be nice
+6) add some hooks, like `strokes-read-stroke-hook'
+7) See what people think of the factory settings.  Should I change
+   them?  They're all pretty arbitrary in a way.  I guess they
+   should be minimal, but computers are getting lots faster, and
+   if I choose the defaults too conservatively, then strokes will
+   surely disappoint some people on decent machines (until they
+   figure out M-x customize).  I need feedback.
+Other: I always have the most beta version of strokes, so if you
+       want it just let me know.
+
+Fixme: Use pbm instead of xpm for pixmaps to work generally.")

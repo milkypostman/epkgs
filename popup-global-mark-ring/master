@@ -6,7 +6,7 @@
  :authors    (("whitypig" . "whitypig@gmail.com"))
  :maintainer ("whitypig" . "whitypig@gmail.com")
  :provided   (popup-global-mark-ring)
- :required   ((("auto-complete" popup)))
+ :required   ((("popup" popup)))
  :keywords   ("lisp" "popup" "meadow")
  :homepage   "https://github.com/whitypig/popup-global-mark-ring"
  :commentary "\

@@ -3,7 +3,7 @@
  :updated    "2001"
  :license    "GPL-2"
  :provided   (ngn)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :homepage   "http://www.davep.org/emacs/"
  :commentary "\
 ngn.el provides commands for quickly inserting a newsgroup name into a

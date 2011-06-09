@@ -6,7 +6,9 @@
  :authors    (("Joost Diepenmaat" . "joost@zeekat.nl"))
  :maintainer ("Joost Diepenmaat" . "joost@zeekat.nl")
  :provided   (iswitch-menu)
- :required   ((("emacs" cl iswitchb tmm)))
+ :required   ((("cl" cl)
+	       ("iswitchb" iswitchb)
+	       ("tmm" tmm)))
  :keywords   ("matching" "frames" "terminals" "menus")
  :wikipage   "http://www.emacswiki.org/IswitchMenu"
  :commentary "\

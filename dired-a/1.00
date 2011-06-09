@@ -4,7 +4,8 @@
  :authors    (("Inge Frick" . "inge@nada.kth.se"))
  :maintainer ("Inge Frick" . "inge@nada.kth.se")
  :provided   (dired-a)
- :required   ((("emacs" dired dired-aux)))
+ :required   ((("dired" dired)
+	       ("dired-aux" dired-aux)))
  :keywords   ("dired")
  :commentary "\
 This file contains a number of extensions to dired.

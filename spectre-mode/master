@@ -5,7 +5,8 @@
 	      ("Geert Van der Plas" . "geert_vanderplas@email.com"))
  :maintainer ("Wouter De Cock" . "wouter.decock@esat.kuleuven.ac.be")
  :provided   (active-file ntlst-aux ntlst-section spectre-mode)
- :required   ((("emacs" font-lock speedbar)))
+ :required   ((("cedet" speedbar)
+	       ("emacs-core" font-lock)))
  :keywords   ("spectre" "files" "affirma")
  :homepage   "http://spice-mode.4t.com/"
  :commentary "\

@@ -5,7 +5,7 @@
  :authors    (("Noah Friedman" . "friedman@splode.com"))
  :maintainer (nil . "friedman@splode.com")
  :provided   (buffer-fns)
- :required   ((("emacs" pp)
+ :required   ((("emacs-core" pp)
 	       ("emacs-variants" emacs-variants)
 	       ("list-fns" list-fns)))
  :homepage   "ftp://ftp.splode.com/pub/users/friedman/emacs-lisp/"

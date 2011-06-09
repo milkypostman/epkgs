@@ -3,6 +3,6 @@
  :updated    "2004"
  :license    "GPL-2"
  :provided   (buffer-timer)
- :required   ((("emacs" gnus-spec)))
+ :required   ((("gnus" gnus-spec)))
  :homepage   "https://github.com/hardaker/elisp-buffer-timer"
  :wikipage   "http://www.emacswiki.org/BufferTimer")

@@ -4,7 +4,9 @@
  :maintainer ("Phillip Lord" . "p.lord@russet.org.uk")
  :provided   (pabbrev)
  :required   ((("cedet" working)
-	       ("emacs" cl overlay thingatpt)))
+	       ("cl" cl)
+	       ("emacs-core" overlay)
+	       ("thingatpt" thingatpt)))
  :homepage   "http://homepages.cs.ncl.ac.uk/phillip.lord/emacs.html"
  :commentary "\
 The code provides a abbreviation expansion for Emacs.  Its fairly

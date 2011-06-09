@@ -5,7 +5,8 @@
  :authors    (("Karl Landström" . "karl@karllandstrom.se"))
  :maintainer ("Karl Landström" . "karl@karllandstrom.se")
  :provided   (oberon-mode)
- :required   ((("emacs" font-lock newcomment)))
+ :required   ((("emacs-core" font-lock)
+	       ("newcomment" newcomment)))
  :keywords   ("oberon" "languages" "oop")
  :homepage   "http://www.brgeight.se/"
  :commentary "\

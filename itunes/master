@@ -2,7 +2,8 @@
  :authors    (("Sean O'Rourke" . "sorourke@cs.ucsd.edu"))
  :maintainer ("Sean O'Rourke" . "sorourke@cs.ucsd.edu")
  :provided   (itunes)
- :required   ((("emacs" cl xml)))
+ :required   ((("cl" cl)
+	       ("xml" xml)))
  :keywords   ("multimedia")
  :commentary "\
 Allows OS X Emacs users to control iTunes without having to leave

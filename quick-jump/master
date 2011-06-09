@@ -5,7 +5,7 @@
  :authors    (("Joseph" . "jixiuf@gmail.com"))
  :maintainer ("Joseph" . "jixiuf@gmail.com")
  :provided   (quick-jump)
- :required   ((("emacs" ring)))
+ :required   ((("ring" ring)))
  :keywords   ("quick" "jump" "marker")
  :homepage   "https://github.com/jixiuf/quick-jump"
  :commentary "\

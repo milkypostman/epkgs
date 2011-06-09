@@ -5,7 +5,7 @@
  :authors    ((nil . "wenbinye@163.com"))
  :maintainer (nil . "wenbinye@163.com")
  :provided   (fenc)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :commentary "\
 Put this file into your load-path and the following into your ~/.emacs:
   (require 'fenc)")

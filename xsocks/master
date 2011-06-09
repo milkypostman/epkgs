@@ -5,7 +5,7 @@
  :authors    (("Alessandro Di Marco" . "dmr@c0nc3pt.com"))
  :maintainer ("Alessandro Di Marco" . "dmr@c0nc3pt.com")
  :provided   (xsocks)
- :required   ((("emacs" socks)))
+ :required   ((("socks" socks)))
  :keywords   ("socks")
  :commentary "\
 xsocks extends the socks behavior with a new feature `socks-doproxy', which

@@ -5,7 +5,8 @@
  :authors    (("Akimichi Tatsukawa" . "akimichi@mbox.co.jp"))
  :maintainer ("Akimichi Tatsukawa" . "akimichi@mbox.co.jp")
  :provided   (constraint)
- :required   ((("emacs" cl eieio)))
+ :required   ((("cedet" eieio)
+	       ("cl" cl)))
  :keywords   ("constraint")
  :commentary "\
 This package provides a constraint propagation library.

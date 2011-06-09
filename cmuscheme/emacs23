@@ -1,0 +1,77 @@
+(:summary    "Scheme process in a buffer. Adapted from tea.el"
+ :created    "1988"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Olin Shivers" . "olin.shivers@cs.cmu.edu"))
+ :maintainer ("FSF")
+ :provided   (cmuscheme)
+ :required   ((("comint" comint)
+	       ("scheme" scheme)))
+ :keywords   ("processes" "lisp")
+ :wikipage   "http://www.emacswiki.org/CmuScheme"
+ :commentary "\
+This is a customization of comint-mode (see comint.el)
+
+Written by Olin Shivers (olin.shivers@cs.cmu.edu). With bits and pieces
+lifted from scheme.el, shell.el, clisp.el, newclisp.el, cobol.el, et al..
+8/88
+
+Please send me bug reports, bug fixes, and extensions, so that I can
+merge them into the master source.
+
+The changelog is at the end of this file.
+
+NOTE: MIT Cscheme, when invoked with the -emacs flag, has a special user
+interface that communicates process state back to the superior emacs by
+outputting special control sequences. The gnumacs package, xscheme.el, has
+lots and lots of special purpose code to read these control sequences, and
+so is very tightly integrated with the cscheme process. The cscheme
+interrupt handler and debugger read single character commands in cbreak
+mode; when this happens, xscheme.el switches to special keymaps that bind
+the single letter command keys to emacs functions that directly send the
+character to the scheme process.  Cmuscheme mode does *not* provide this
+functionality. If you are a cscheme user, you may prefer to use the
+xscheme.el/cscheme -emacs interaction.
+
+Here's a summary of the pros and cons, as I see them.
+xscheme: Tightly integrated with inferior cscheme process!  A few commands
+	     not in cmuscheme. But. Integration is a bit of a hack.  Input
+	     history only keeps the immediately prior input. Bizarre
+	     keybindings.
+
+cmuscheme: Not tightly integrated with inferior cscheme process.  But.
+           Carefully integrated functionality with the entire suite of
+           comint-derived CMU process modes. Keybindings reminiscent of
+           Zwei and Hemlock. Good input history. A few commands not in
+           xscheme.
+
+It's a tradeoff. Pay your money; take your choice. If you use a Scheme
+that isn't Cscheme, of course, there isn't a choice. Xscheme.el is *very*
+Cscheme-specific; you must use cmuscheme.el.  Interested parties are
+invited to port xscheme functionality on top of comint mode...
+
+CHANGE LOG
+===========================================================================
+8/88 Olin
+Created.
+
+2/15/89 Olin
+Removed -emacs flag from process invocation. It's only useful for
+cscheme, and makes cscheme assume it's running under xscheme.el,
+which messes things up royally. A bug.
+
+5/22/90 Olin
+- Upgraded to use comint-send-string and comint-send-region.
+- run-scheme now offers to let you edit the command line if
+  you invoke it with a prefix-arg. M-x scheme is redundant, and
+  has been removed.
+- Explicit references to process \"scheme\" have been replaced with
+  (scheme-proc). This allows better handling of multiple process bufs.
+- Added scheme-send-last-sexp, bound to C-x C-e. A gnu convention.
+- Have not added process query facility a la cmulisp.el's lisp-show-arglist
+  and friends, but interested hackers might find a useful application
+  of this facility.
+
+3/12/90 Olin
+- scheme-load-file and scheme-compile-file no longer switch-to-scheme.
+  Tale suggested this.")

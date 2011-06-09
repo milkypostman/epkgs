@@ -5,8 +5,9 @@
  :authors    (("Matthieu Lemerre" . "racin@free.fr"))
  :maintainer ("Matthieu Lemerre" . "racin@free.fr")
  :provided   (task)
- :required   ((("emacs" ring))
-	      (("emacs" ido iswitchb)))
+ :required   ((("ring" ring))
+	      (("ido" ido)
+	       ("iswitchb" iswitchb)))
  :keywords   ("convenience")
  :homepage   "http://racin.free.fr/old/projects.html#task-mode"
  :wikipage   "http://www.emacswiki.org/TaskMode"

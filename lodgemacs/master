@@ -4,7 +4,9 @@
  :updated    "2009"
  :license    "GPL-2"
  :provided   (lodgemacs)
- :required   ((("emacs" browse-url json url)))
+ :required   ((("browse-url" browse-url)
+	       ("json" json)
+	       ("url" url)))
  :homepage   "http://bitbucket.org/bhagany/lodgemacs"
  :commentary "\
 This package was inspired Sebastian Wiesner's pastemacs, found at

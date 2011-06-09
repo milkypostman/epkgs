@@ -4,6 +4,6 @@
  :authors    (("Jianing Yang"))
  :maintainer ("Jianing Yang")
  :provided   (ob-pygment ob-twopi)
- :required   ((("emacs" ob ob-eval)))
+ :required   ((("org-mode" ob ob-eval)))
  :keywords   ("syntax" "highlighting")
  :homepage   "https://github.com/jianingy/org-babel-plugins")

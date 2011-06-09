@@ -6,7 +6,7 @@
  :authors    (("Daniel Brockman" . "daniel@brockman.se"))
  :maintainer ("Daniel Brockman" . "daniel@brockman.se")
  :provided   (volume)
- :required   ((("emacs" electric)))
+ :required   ((("electric" electric)))
  :homepage   "https://github.com/dbrock/volume-el"
  :wikipage   "http://www.emacswiki.org/Volume"
  :commentary "\

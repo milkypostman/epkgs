@@ -3,7 +3,7 @@
  :updated    "20090814"
  :license    "GPL-3"
  :provided   (dropdown-list)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("convenience" "menu")
  :commentary "\
 According to Jaeyoun Chung, \"overlay code stolen from company-mode.el.\"")

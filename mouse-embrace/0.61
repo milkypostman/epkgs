@@ -4,5 +4,5 @@
  :authors    (("Stefan Reichoer"))
  :maintainer ("Stefan Reichoer")
  :provided   (mouse-embrace)
- :required   ((("emacs" easy-mmode)))
+ :required   ((("easy-mmode" easy-mmode)))
  :homepage   "http://www.xsteve.at/prg/emacs/")

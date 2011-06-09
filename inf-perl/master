@@ -5,7 +5,10 @@
  :authors    ((nil . "wenbinye@163.com"))
  :maintainer (nil . "wenbinye@163.com")
  :provided   (inf-perl)
- :required   ((("emacs" cl comint cperl-mode shell)))
+ :required   ((("cl" cl)
+	       ("comint" comint)
+	       ("cperl-mode" cperl-mode)
+	       ("shell" shell)))
  :commentary "\
 This is a customisation of comint-mode (see comint.el)
 

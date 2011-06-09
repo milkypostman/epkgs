@@ -6,7 +6,7 @@
  :authors    (("Mark Hepburn" . "mark.hepburn@gmail.com"))
  :maintainer ("Mark Hepburn" . "mark.hepburn@gmail.com")
  :provided   (tags-view)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("extensions" "tools" "convenience" "files")
  :homepage   "https://github.com/markhepburn/tags-view"
  :commentary "\

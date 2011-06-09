@@ -5,7 +5,7 @@
  :authors    (("Kahlil Hodgson" . "dorge@tpg.com.au"))
  :maintainer ("Kahlil Hodgson" . "dorge@tpg.com.au")
  :provided   (mouse-drag-fix)
- :required   ((("emacs" mouse-drag)))
+ :required   ((("mouse-drag" mouse-drag)))
  :commentary "\
 Fixes to bugs/anomalies in the `mouse-drag-drag' function (see
 commentary to mouse-drag.el) that occur when mouse leaves the

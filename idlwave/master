@@ -4,7 +4,14 @@
  :updated    "2011"
  :license    "GPL-3"
  :provided   (idlw-complete-structtag idlw-help idlw-roprompt idlw-shell idlw-toolbar idlwave idlwave-help idlwave-shell idlwave-toolbar)
- :required   ((("emacs" browse-url cl comint imenu overlay timer wid-edit widget xml)))
+ :required   ((("browse-url" browse-url)
+	       ("cl" cl)
+	       ("comint" comint)
+	       ("emacs-core" overlay)
+	       ("imenu" imenu)
+	       ("timer" timer)
+	       ("widget" wid-edit widget)
+	       ("xml" xml)))
  :keywords   ("languages")
  :homepage   "http://idlwave.org/"
  :wikipage   "http://www.emacswiki.org/IdlMode"

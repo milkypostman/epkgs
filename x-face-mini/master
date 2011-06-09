@@ -5,6 +5,6 @@
  :authors    (("Yuuichi Teranishi" . "teranisi@gohome.org"))
  :maintainer ("Yuuichi Teranishi" . "teranisi@gohome.org")
  :provided   (x-face-mini)
- :required   ((("emacs" cl)
+ :required   ((("cl" cl)
 	       ("x-face" x-face)))
  :keywords   ("x-face" "thumbnails" "netpbm"))

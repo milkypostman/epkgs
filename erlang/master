@@ -5,8 +5,16 @@
  :authors    (("Anders Lindgren"))
  :maintainer ("Anders Lindgren")
  :provided   (erlang erlang-eunit erlang-flymake erlang-start)
- :required   ((("emacs" advice cl comint compile etags flymake font-lock man tempo)
-	       ("hyperbole" tags)))
+ :required   ((("advice" advice)
+	       ("cl" cl)
+	       ("comint" comint)
+	       ("compile" compile)
+	       ("emacs-core" font-lock)
+	       ("etags" etags)
+	       ("flymake" flymake)
+	       ("hyperbole" tags)
+	       ("man" man)
+	       ("tempo" tempo)))
  :keywords   ("erlang" "languages" "processes")
  :homepage   "http://www.erlang.org/doc/apps/tools/erlang_mode_chapter.html"
  :commentary "\

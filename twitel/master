@@ -6,8 +6,10 @@
  :authors    (("Neil Roberts"))
  :maintainer ("Neil Roberts")
  :provided   (twitel)
- :required   ((("emacs" cl url url-http xml)
-	       ("oauth" oauth)))
+ :required   ((("cl" cl)
+	       ("oauth" oauth)
+	       ("url" url url-http)
+	       ("xml" xml)))
  :keywords   ("twitter")
  :homepage   "http://git.busydoingnothing.co.uk/cgit.cgi/twitel.git"
  :commentary "\

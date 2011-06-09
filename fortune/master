@@ -2,5 +2,5 @@
  :updated    "20060129"
  :license    "GPL-2"
  :provided   (fortune)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :wikipage   "http://www.emacswiki.org/Fortune")

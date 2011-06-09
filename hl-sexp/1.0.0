@@ -5,7 +5,7 @@
  :authors    (("Edward O'Connor" . "ted@oconnor.cx"))
  :maintainer ("Edward O'Connor" . "ted@oconnor.cx")
  :provided   (hl-sexp)
- :required   ((("emacs" thingatpt)))
+ :required   ((("thingatpt" thingatpt)))
  :keywords   ("faces" "frames" "emulation")
  :homepage   "http://edward.oconnor.cx/elisp/"
  :commentary "\

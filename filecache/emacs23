@@ -1,0 +1,123 @@
+(:summary    "Find files using a pre-loaded cache"
+ :created    "199610"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Peter Breton" . "pbreton@cs.umb.edu"))
+ :maintainer ("Peter Breton" . "pbreton@cs.umb.edu")
+ :provided   (filecache)
+ :required   ((("find-lisp" find-lisp)))
+ :keywords   ("convenience")
+ :commentary "\
+The file-cache package is an attempt to make it easy to locate files
+by name, without having to remember exactly where they are located.
+This is very handy when working with source trees. You can also add
+frequently used files to the cache to create a hotlist effect.
+The cache can be used with any interactive command which takes a
+filename as an argument.
+
+It is worth noting that this package works best when most of the files
+in the cache have unique names, or (if they have the same name) exist in
+only a few directories. The worst case is many files all with
+the same name and in different directories, for example a big source tree
+with a Makefile in each directory. In such a case, you should probably
+use an alternate strategy to find the files.
+
+ADDING FILES TO THE CACHE:
+
+Use the following functions to add items to the file cache:
+
+  * `file-cache-add-file': Adds a single file to the cache
+
+  * `file-cache-add-file-list': Adds a list of files to the cache
+
+The following functions use the regular expressions in
+`file-cache-delete-regexps' to eliminate unwanted files:
+
+  * `file-cache-add-directory': Adds the files in a directory to the
+    cache. You can also specify a regular expression to match the files
+    which should be added.
+
+  * `file-cache-add-directory-list': Same as above, but acts on a list
+    of directories. You can use `load-path', `exec-path' and the like.
+
+  * `file-cache-add-directory-using-find': Uses the `find' command to
+    add a directory tree to the cache.
+
+  * `file-cache-add-directory-using-locate': Uses the `locate' command to
+    add files matching a pattern to the cache.
+
+  * `file-cache-add-directory-recursively': Uses the find-lisp package to
+    add all files matching a pattern to the cache.
+
+Use the function `file-cache-clear-cache' to remove all items from the
+cache. There are a number of `file-cache-delete' functions provided
+as well, but in general it is probably better to not worry too much
+about extra files in the cache.
+
+The most convenient way to initialize the cache is with an
+`eval-after-load' function, as noted in the ADDING FILES
+AUTOMATICALLY section.
+
+FINDING FILES USING THE CACHE:
+
+You can use the file-cache with any function that expects a filename as
+an argument. For example:
+
+1) Invoke a function which expects a filename as an argument:
+   M-x find-file
+
+2) Begin typing a file name.
+
+3) Invoke `file-cache-minibuffer-complete' (bound by default to
+C-TAB) to complete on the filename using the cache.
+
+4) When you have found a unique completion, the minibuffer contents
+will change to the full name of that file.
+
+If there are a number of directories which contain the completion,
+invoking `file-cache-minibuffer-complete' repeatedly will cycle through
+them.
+
+5) You can then edit the minibuffer contents, or press RETURN.
+
+It is much easier to simply try it than trying to explain it :)
+
+ADDING FILES AUTOMATICALLY
+
+For maximum utility, you should probably define an `eval-after-load'
+form which loads your favorite files:
+
+     (eval-after-load
+      \"filecache\"
+      '(progn
+	    (message \"Loading file cache...\")
+	    (file-cache-add-directory-using-find \"~/projects\")
+	    (file-cache-add-directory-list load-path)
+	    (file-cache-add-directory \"~/\")
+	    (file-cache-add-file-list (list \"~/foo/bar\" \"~/baz/bar\"))
+	   ))
+
+If you clear and reload the cache frequently, it is probably easiest
+to put your initializations in a function:
+
+  (eval-after-load
+    \"filecache\"
+     '(my-file-cache-initialize))
+
+  (defun my-file-cache-initialize ()
+     (interactive)
+	(message \"Loading file cache...\")
+	(file-cache-add-directory-using-find \"~/projects\")
+	(file-cache-add-directory-list load-path)
+	(file-cache-add-directory \"~/\")
+	(file-cache-add-file-list (list \"~/foo/bar\" \"~/baz/bar\"))
+  ))
+
+Of course, you can still add files to the cache afterwards, via
+Lisp functions.
+
+RELATED WORK:
+
+This package is a distant relative of Noah Friedman's fff utilities.
+Our goal is pretty similar, but the implementation strategies are
+different.")

@@ -4,7 +4,16 @@
  :updated    "2011"
  :license    "GPL-2"
  :provided   (libmpdee mingus mingus-stays-home)
- :required   ((("emacs" cl custom dired edebug reporter sendmail thingatpt time-date url wid-edit)
+ :required   ((("cl" cl)
+	       ("custom" custom)
+	       ("dired" dired)
+	       ("edebug" edebug)
+	       ("gnus" time-date)
+	       ("reporter" reporter)
+	       ("sendmail" sendmail)
+	       ("thingatpt" thingatpt)
+	       ("url" url)
+	       ("widget" wid-edit)
 	       (nil taggit)))
  :keywords   ("multimedia" "elisp" "music" "mpd")
  :homepage   "https://github.com/pft/mingus"

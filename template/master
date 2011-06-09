@@ -5,7 +5,8 @@
  :authors    (("Christoph Wedler" . "wedler@users.sourceforge.net"))
  :maintainer ("Christoph Wedler" . "wedler@users.sourceforge.net")
  :provided   (template)
- :required   ((("emacs" cl custom)))
+ :required   ((("cl" cl)
+	       ("custom" custom)))
  :keywords   ("template" "comments" "decoration" "auto-updating" "data" "tools")
  :homepage   "http://emacs-template.sourceforge.net/"
  :wikipage   "http://www.emacswiki.org/TemplatesMode"

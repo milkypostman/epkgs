@@ -4,7 +4,7 @@
  :authors    (("Karl M. Hegbloom" . "karlheg@inetarena.com"))
  :maintainer ("Karl M. Hegbloom" . "karlheg@inetarena.com")
  :provided   (after-save-commands)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("processesunix")
  :commentary "\
 Set up a list of file-name matching regular expressions associated

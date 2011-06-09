@@ -1,0 +1,16 @@
+(:summary    "Check declare-function statements"
+ :created    "2007"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Glenn Morris" . "rgm@gnu.org"))
+ :maintainer ("Glenn Morris" . "rgm@gnu.org")
+ :provided   (check-declare)
+ :keywords   ("lisp" "tools" "maint")
+ :commentary "\
+The byte-compiler often warns about undefined functions that you
+know will actually be defined when it matters.  The `declare-function'
+statement allows you to suppress these warnings.  This package
+checks that all such statements in a file or directory are accurate.
+The entry points are `check-declare-file' and `check-declare-directory'.
+
+For more information, see Info node `elisp(Declaring Functions)'.")

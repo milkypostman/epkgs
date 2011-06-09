@@ -5,7 +5,8 @@
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")
  :provided   (frame-fns)
- :required   ((("emacs" avoid cl)))
+ :required   ((("avoid" avoid)
+	       ("cl" cl)))
  :keywords   ("internal" "extensions" "local" "frames")
  :commentary "\
 Non-interactive frame and window functions.

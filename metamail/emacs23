@@ -1,0 +1,17 @@
+(:summary    "Metamail interface for GNU Emacs"
+ :created    "1993"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Masanobu UMEDA" . "umerin@mse.kyutech.ac.jp"))
+ :maintainer ("Masanobu UMEDA" . "umerin@mse.kyutech.ac.jp")
+ :provided   (metamail)
+ :keywords   ("mail" "news" "mime" "multimedia")
+ :commentary "\
+Note: Metamail does not have all the options which are compatible with
+the environment variables.  For that reason, metamail.el has to
+hack the environment variables.  In addition, there is no way to
+display all header fields without extra informative body messages
+which are suppressed by the \"-q\" option.
+
+The idea of using metamail to process MIME messages is from
+gnus-mime.el by Spike <Spike@world.std.com>.")

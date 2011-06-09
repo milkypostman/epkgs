@@ -1,0 +1,16 @@
+(:summary    "Fortran mode for GNU Emacs"
+ :created    "1986"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Michael D. Prange" . "prange@erl.mit.edu"))
+ :maintainer ("Glenn Morris" . "rgm@gnu.org")
+ :provided   (fortran)
+ :keywords   ("fortran" "languages")
+ :commentary "\
+This mode is documented in the Emacs manual.
+
+Note that it is for editing Fortran77 or Fortran90 fixed source
+form.  For editing Fortran 90 free format source, use `f90-mode'
+(f90.el).  It is meant to support the GNU Fortran language
+implemented by g77 (its extensions to Fortran77 and
+interpretations, e.g. of blackslash in strings).")

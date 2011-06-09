@@ -3,4 +3,4 @@
  :updated    "19960520"
  :license    "GPL-2"
  :provided   (logger)
- :required   ((("emacs" assoc))))
+ :required   ((("assoc" assoc))))

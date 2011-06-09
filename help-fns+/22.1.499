@@ -5,8 +5,10 @@
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")
  :provided   (help-fns+)
- :required   ((("emacs" cl help-fns wid-edit))
-	      (("emacs" image-dired)
+ :required   ((("cl" cl)
+	       ("help" help-fns)
+	       ("widget" wid-edit))
+	      (("image-dired" image-dired)
 	       ("wid-edit+" wid-edit+)))
  :keywords   ("help" "faces")
  :commentary "\

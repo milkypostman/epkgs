@@ -5,7 +5,8 @@
  :authors    ((nil . "kai.grossjohann@cs.uni-dortmund.de"))
  :maintainer (nil . "arjen@wiersma.org")
  :provided   (worklog)
- :required   ((("emacs" cl timezone)))
+ :required   ((("cl" cl)
+	       ("timezone" timezone)))
  :keywords   ("timetracker")
  :homepage   "http://www.wiersma.org"
  :wikipage   "http://www.emacswiki.org/WorklogMode"

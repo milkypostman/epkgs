@@ -6,7 +6,7 @@
  :authors    (("David M. Cooke" . "david.m.cooke@gmail.com"))
  :maintainer ("David M. Cooke" . "david.m.cooke@gmail.com")
  :provided   (omake)
- :required   ((("emacs" rx)))
+ :required   ((("rx" rx)))
  :keywords   ("omake")
  :homepage   "http://bitbucket.org/dmcooke/omake-mode"
  :commentary "\

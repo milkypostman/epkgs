@@ -5,7 +5,9 @@
  :authors    (("David Lindquist" . "david.lindquist@gmail.com"))
  :maintainer ("David Lindquist" . "david.lindquist@gmail.com")
  :provided   (ecmascript-mode)
- :required   ((("emacs" cc-mode font-lock regexp-opt)))
+ :required   ((("cc-mode" cc-mode)
+	       ("emacs-core" font-lock)
+	       ("regexp-opt" regexp-opt)))
  :keywords   ("languages" "ecmascript" "javascript")
  :homepage   "http://www.emacswiki.org/ECMAScriptMode"
  :wikipage   "http://www.emacswiki.org/ECMAScriptMode"

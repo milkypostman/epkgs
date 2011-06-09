@@ -5,7 +5,7 @@
  :authors    (("Noah Friedman" . "friedman@splode.com"))
  :maintainer (nil . "friedman@splode.com")
  :provided   (vm-advices)
- :required   ((("emacs" advice)
+ :required   ((("advice" advice)
 	       ("vm-addons" vm-addons)
 	       ("win-disp-util" win-disp-util)))
  :commentary "\

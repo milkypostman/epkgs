@@ -1,0 +1,14 @@
+(:summary    "Run `diff' in compilation-mode"
+ :created    "1992"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Frank Bresz")
+	      ("(according to authors.el)"))
+ :maintainer ("FSF")
+ :provided   (diff)
+ :keywords   ("unix" "tools")
+ :wikipage   "http://www.emacswiki.org/DiffMode"
+ :commentary "\
+This package helps you explore differences between files, using the
+UNIX command diff(1).  The commands are `diff' and `diff-backup'.
+You can specify options with `diff-switches'.")

@@ -1,0 +1,29 @@
+(:summary    "Mail sending via system's mail client"
+ :created    "2005"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("David Reitter" . "david.reitter@gmail.com"))
+ :maintainer ("David Reitter" . "david.reitter@gmail.com")
+ :provided   (mailclient)
+ :required   ((("mail-utils" mail-utils)
+	       ("sendmail" sendmail)))
+ :keywords   ("mail")
+ :commentary "\
+This package allows to hand over a buffer to be sent off
+via the system's designated e-mail client.
+Note that the e-mail client will display the contents of the buffer
+again for editing.
+The e-mail client is taken to be whoever handles a mailto: URL
+via `browse-url'.
+Mailto: URLs are composed according to RFC2368.
+
+MIME bodies are not supported - we rather expect the mail client
+to encode the body and add, for example, a digital signature.
+The mailto URL RFC calls for \"short text messages that are
+actually the content of automatic processing.\"
+So mailclient.el is ideal for situations where an e-mail is
+generated automatically, and the user can edit it in the
+mail client (e.g. bug-reports).
+
+To activate:
+(setq send-mail-function 'mailclient-send-it) ; if you use `mail'")

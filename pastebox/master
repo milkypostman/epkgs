@@ -3,7 +3,7 @@
  :updated    "2009"
  :license    "GPL-3"
  :provided   (pastebox)
- :required   ((("emacs" url)))
+ :required   ((("url" url)))
  :keywords   ("pastepastebinpastebox")
  :commentary "\
 Support for pasting a buffer or region to PasteBox powered sites such

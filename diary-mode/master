@@ -1,6 +1,6 @@
 (:updated    "20060123"
  :license    "GPL-2"
  :provided   (diary-mode)
- :required   ((("emacs" calendar)))
+ :required   ((("calendar" calendar)))
  :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/editing/"
  :wikipage   "http://www.emacswiki.org/DiaryMode")

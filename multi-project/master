@@ -5,7 +5,9 @@
  :authors    (("Shawn Ellis" . "shawn.ellis17@gmail.com"))
  :maintainer ("Shawn Ellis" . "shawn.ellis17@gmail.com")
  :provided   (multi-project)
- :required   ((("emacs" compile easymenu etags)))
+ :required   ((("compile" compile)
+	       ("easymenu" easymenu)
+	       ("etags" etags)))
  :keywords   ("project")
  :homepage   "http://bitbucket.org/ellisvelo/multi-project"
  :commentary "\

@@ -4,5 +4,6 @@
  :authors    (("John Andrews" . "john.m.andrews@gmail.com"))
  :maintainer ("John Andrews" . "john.m.andrews@gmail.com")
  :provided   (pivotal-tracker)
- :required   ((("emacs" url xml)))
+ :required   ((("url" url)
+	       ("xml" xml)))
  :homepage   "https://github.com/jxa/pivotal-tracker")

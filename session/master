@@ -5,7 +5,8 @@
  :authors    (("Christoph Wedler" . "wedler@users.sourceforge.net"))
  :maintainer ("Christoph Wedler" . "wedler@users.sourceforge.net")
  :provided   (session)
- :required   ((("emacs" cl custom)))
+ :required   ((("cl" cl)
+	       ("custom" custom)))
  :keywords   ("session" "session" "management" "desktop" "data" "tools")
  :homepage   "http://emacs-session.sourceforge.net/"
  :wikipage   "http://www.emacswiki.org/EmacsSession"

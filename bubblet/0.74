@@ -5,7 +5,8 @@
  :authors    (("Paul Du Bois" . "dubois@infinite-machine.com"))
  :maintainer ("Paul Du Bois" . "dubois@infinite-machine.com")
  :provided   (bubblet)
- :required   ((("emacs" cl cus-edit)))
+ :required   ((("cl" cl)
+	       ("custom" cus-edit)))
  :keywords   ("game" "puzzle")
  :commentary "\
 Inspired by the original Palm Bubblet by Frank Fejes (www.oopdreams.com),

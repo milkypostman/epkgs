@@ -4,8 +4,14 @@
  :updated    "2011"
  :license    "GPL-3"
  :provided   (eide eide-compare eide-config eide-edit eide-help eide-keys eide-menu eide-popup eide-project eide-search eide-svn eide-windows)
- :required   ((("emacs" desktop dired ediff etags font-lock hideshow imenu mwheel)
-	       ("xcscope" xcscope)
-	       (nil gdb-ui)))
+ :required   ((("desktop" desktop)
+	       ("dired" dired)
+	       ("ediff" ediff)
+	       ("emacs-core" font-lock mwheel)
+	       ("etags" etags)
+	       ("gdb-ui" gdb-ui)
+	       ("hideshow" hideshow)
+	       ("imenu" imenu)
+	       ("xcscope" xcscope)))
  :homepage   "http://home.gna.org/emacs-ide/"
  :wikipage   "http://www.emacswiki.org/Emacs-IDE")

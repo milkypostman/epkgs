@@ -3,4 +3,4 @@
  :updated    "2006"
  :license    "GPL"
  :provided   (dbk)
- :required   ((("emacs" xml))))
+ :required   ((("xml" xml))))

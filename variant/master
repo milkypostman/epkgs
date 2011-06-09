@@ -3,8 +3,9 @@
  :authors    (("Phillip Lord"))
  :maintainer ("Phillip Lord")
  :provided   (variant)
- :required   ((("cedet" working)
-	       ("emacs" assoc cl)
+ :required   ((("assoc" assoc)
+	       ("cedet" working)
+	       ("cl" cl)
 	       ("variant-abbc" variant-abbc)))
  :homepage   "http://homepages.cs.ncl.ac.uk/phillip.lord/emacs.html"
  :commentary "\

@@ -6,7 +6,8 @@
  :authors    (("Sebastian Freundt" . "hroptatyr@gna.org"))
  :maintainer ("Sebastian Freundt" . "hroptatyr@gna.org")
  :provided   (emeteo emeteo-conversion emeteo-eyecandy emeteo-frob emeteo-gnus emeteo-modeline emeteo-parse emeteo-stations emeteo-storage emeteo-utils)
- :required   ((("emacs" cl timer)))
+ :required   ((("cl" cl)
+	       ("timer" timer)))
  :keywords   ("metar" "meteo" "weather")
  :homepage   "http://gna.org/projects/emeteo/"
  :wikipage   "http://www.emacswiki.org/EmacsMeteo"

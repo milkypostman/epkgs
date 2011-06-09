@@ -7,7 +7,11 @@
 	      ("Surendra Singhi" . "surendra@asu.edu"))
  :maintainer ("Surendra Singhi" . "surendra@asu.edu")
  :provided   (table)
- :required   ((("emacs" advice backquote easymenu quail rect tabify)))
+ :required   ((("advice" advice)
+	       ("easymenu" easymenu)
+	       ("emacs-core" backquote quail)
+	       ("rect" rect)
+	       ("tabify" tabify)))
  :keywords   ("wp" "convenience")
  :homepage   "http://table.sourceforge.net/"
  :wikipage   "http://www.emacswiki.org/TableMode"

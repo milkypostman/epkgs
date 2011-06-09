@@ -6,7 +6,8 @@
  :authors    (("Chris Wanstrath" . "chris@ozmm.org"))
  :maintainer ("Chris Wanstrath" . "chris@ozmm.org")
  :provided   (textmate)
- :required   ((("emacs" cl imenu)))
+ :required   ((("cl" cl)
+	       ("imenu" imenu)))
  :keywords   ("textmate" "osx" "mac")
  :wikipage   "http://www.emacswiki.org/TextMate"
  :commentary "\

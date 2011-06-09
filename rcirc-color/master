@@ -3,7 +3,7 @@
  :updated    "2010"
  :license    "GPL-2"
  :provided   (rcirc-color)
- :required   ((("emacs" rcirc)))
+ :required   ((("rcirc" rcirc)))
  :commentary "\
 Use /COLOR to list all colored nicks with their color
 Use /COLOR NICK COLOR to color NICK using COLOR")

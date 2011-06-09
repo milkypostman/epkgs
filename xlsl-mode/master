@@ -2,6 +2,6 @@
  :updated    "2008"
  :license    "GPL-2"
  :provided   (xlsl-mode)
- :required   ((("emacs" newcomment)))
+ :required   ((("newcomment" newcomment)))
  :keywords   ("lsl" "second" "life" "linden" "scripting" "language")
  :homepage   "http://xahlee.org/sl/ls-emacs.html")

@@ -6,7 +6,7 @@
  :maintainer ("JoeBloggs" . "vapniks@yahoo.com")
  :provided   (erc-babel)
  :required   ((("babel" babel)
-	       ("emacs" erc)))
+	       ("erc" erc)))
  :keywords   ("comm" "languages")
  :commentary "\
 This library integrates babel (http://www.emacswiki.org/emacs/babel.el) with ERC 

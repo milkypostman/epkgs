@@ -4,7 +4,8 @@
  :authors    (("ThierryVolpiatto"))
  :maintainer ("ThierryVolpiatto")
  :provided   (bookmark-search)
- :required   ((("emacs" bookmark cl)))
+ :required   ((("bookmark" bookmark)
+	       ("cl" cl)))
  :keywords   ("bookmarks")
  :commentary "\
 ----------

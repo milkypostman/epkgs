@@ -1,0 +1,14 @@
+(:summary    "\"Picture mode\" -- editing using quarter-plane screen model"
+ :created    "1985"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("K. Shane Hartman"))
+ :maintainer ("FSF")
+ :provided   (picture)
+ :keywords   ("convenience" "wp")
+ :wikipage   "http://www.emacswiki.org/PictureMode"
+ :commentary "\
+This code provides the picture-mode commands documented in the Emacs
+manual.  The screen is treated as a semi-infinite quarter-plane with
+support for rectangle operations and `etch-a-sketch' character
+insertion in any of eight directions.")

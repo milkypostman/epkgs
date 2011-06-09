@@ -1,0 +1,13 @@
+(:summary    "List command history"
+ :created    "1985"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("K. Shane Hartman"))
+ :maintainer ("FSF")
+ :provided   (chistory)
+ :keywords   ("convenience")
+ :commentary "\
+This really has nothing to do with list-command-history per se, but
+its a nice alternative to C-x ESC ESC (repeat-complex-command) and
+functions as a lister if given no pattern.  It's not important
+enough to warrant a file of its own.")

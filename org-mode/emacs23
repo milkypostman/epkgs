@@ -1,0 +1,73 @@
+(:summary    "Outline-based notes management and organizer"
+ :repository (git . "git://repo.or.cz/org-mode.git")
+ :created    "2004"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Carsten Dominik" . "carsten@orgmode.org"))
+ :maintainer ("Carsten Dominik" . "carsten@orgmode.org")
+ :provided   (org org-agenda org-archive org-ascii org-attach org-bbdb org-bibtex org-clock org-colview org-compat org-crypt org-datetree org-docbook org-exp org-exp-blocks org-export-latex org-faces org-feed org-footnote org-freemind org-gnus org-habit org-html org-icalendar org-id org-indent org-info org-infojs org-inlinetask org-install org-irc org-jsinfo org-latex org-list org-mac-message org-macs org-mew org-mhe org-mobile org-mouse org-plot org-protocol org-publish org-remember org-rmail org-src org-table org-timer org-vm org-w3m org-wl org-xoxo)
+ :required   ((("bbdb" bbdb bbdb-com)
+	       ("calendar" cal-iso calendar diary-lib holidays solar)
+	       ("cdlatex" cdlatex)
+	       ("cl" cl)
+	       ("easymenu" easymenu)
+	       ("emacs-core" font-lock)
+	       ("epg" epg)
+	       ("erc" erc erc-log)
+	       ("find-func" find-func)
+	       ("footnote" footnote)
+	       ("gnuplot" gnuplot)
+	       ("gnus" gnus gnus-sum mailcap message parse-time sha1 time-date)
+	       ("icalendar" icalendar)
+	       ("info" info)
+	       ("mew" mew)
+	       ("mh-e" mh-e mh-search mh-utils)
+	       ("outline" noutline outline)
+	       ("ps-print" ps-print)
+	       ("remember" remember)
+	       ("reporter" reporter)
+	       ("rmail" rmail)
+	       ("table" table)
+	       ("time" time)
+	       ("vm" vm vm-search)
+	       ("wanderlust" wl)
+	       ("xml" xml)
+	       (nil htmlize)))
+ :keywords   ("outlines" "hypermedia" "calendar" "wp")
+ :homepage   "http://orgmode.org"
+ :wikipage   "http://www.emacswiki.org/OrgMode"
+ :commentary "\
+Org-mode is a mode for keeping notes, maintaining ToDo lists, and doing
+project planning with a fast and effective plain-text system.
+
+Org-mode develops organizational tasks around NOTES files that contain
+information about projects as plain text.  Org-mode is implemented on
+top of outline-mode, which makes it possible to keep the content of
+large files well structured.  Visibility cycling and structure editing
+help to work with the tree.  Tables are easily created with a built-in
+table editor.  Org-mode supports ToDo items, deadlines, time stamps,
+and scheduling.  It dynamically compiles entries into an agenda that
+utilizes and smoothly integrates much of the Emacs calendar and diary.
+Plain text URL-like links connect to websites, emails, Usenet
+messages, BBDB entries, and any files related to the projects.  For
+printing and sharing of notes, an Org-mode file can be exported as a
+structured ASCII file, as HTML, or (todo and agenda items only) as an
+iCalendar file.  It can also serve as a publishing tool for a set of
+linked webpages.
+
+Installation and Activation
+---------------------------
+See the corresponding sections in the manual at
+
+  http://orgmode.org/org.html#Installation
+
+Documentation
+-------------
+The documentation of Org-mode can be found in the TeXInfo file.  The
+distribution also contains a PDF version of it.  At the homepage of
+Org-mode, you can read the same text online as HTML.  There is also an
+excellent reference card made by Philip Rooke.  This card can be found
+in the etc/ directory of Emacs 22.
+
+A list of recent changes can be found at
+http://orgmode.org/Changes.html")

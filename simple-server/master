@@ -6,7 +6,7 @@
  :authors    (("Eric Schulte"))
  :maintainer ("Eric Schulte")
  :provided   (simple-file-server simple-server)
- :required   ((("emacs" org org-exp)
+ :required   ((("org-mode" org org-exp)
 	       (nil htmlize)))
  :commentary "\
 `simple-server' implements a very simple http server which will

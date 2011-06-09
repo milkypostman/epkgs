@@ -5,7 +5,8 @@
  :authors    (("MATSUYAMA Tomohiro" . "t.matsuyama.pub@gmail.com"))
  :maintainer ("MATSUYAMA Tomohiro" . "t.matsuyama.pub@gmail.com")
  :provided   (thing-opt)
- :required   ((("emacs" cl thingatpt)))
+ :required   ((("cl" cl)
+	       ("thingatpt" thingatpt)))
  :keywords   ("convenience")
  :homepage   "http://www.emacswiki.org/ThingAtPointOptional"
  :wikipage   "http://www.emacswiki.org/ThingAtPointOptional"

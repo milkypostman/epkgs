@@ -4,7 +4,9 @@
  :authors    (("MATSUYAMA Tomohiro" . "t.matsuyama.pub@gmail.com"))
  :maintainer ("MATSUYAMA Tomohiro" . "t.matsuyama.pub@gmail.com")
  :provided   (flydoc)
- :required   ((("emacs" cl easy-mmode thingatpt)))
+ :required   ((("cl" cl)
+	       ("easy-mmode" easy-mmode)
+	       ("thingatpt" thingatpt)))
  :keywords   ("convenience")
  :commentary "\
 To use flydoc, put the following code into your ~/.emacs:

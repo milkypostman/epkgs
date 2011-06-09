@@ -5,7 +5,9 @@
  :authors    (("TSUCHIYA Masatoshi" . "tsuchiya@namazu.org"))
  :maintainer ("TSUCHIYA Masatoshi" . "tsuchiya@namazu.org")
  :provided   (shell-command)
- :required   ((("emacs" comint custom shell)))
+ :required   ((("comint" comint)
+	       ("custom" custom)
+	       ("shell" shell)))
  :keywords   ("shell")
  :commentary "\
 This is an enhancement of shell-command, shell-command-on-region,

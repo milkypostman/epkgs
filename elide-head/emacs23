@@ -1,0 +1,27 @@
+(:summary    "Hide headers in files"
+ :created    "1999"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Dave Love" . "fx@gnu.org"))
+ :maintainer ("Dave Love" . "fx@gnu.org")
+ :provided   (elide-head)
+ :keywords   ("outlines" "tools")
+ :commentary "\
+Functionality for eliding boilerplate text (normally copyright
+notices) in file headers to avoid clutter when you know what it
+says.
+
+`elide-head-headers-to-hide' controls what is elided by the command
+`elide-head'.  A buffer-local invisible overlay manages the
+elision.
+
+You might add `elide-head' to appropriate major mode hooks or to
+`find-file-hook'.  Please do not do this in site init files.  If
+you do, information may be hidden from users who don't know it
+already.
+
+Note that `hs-minor-mode' will do a similar job by default, but
+it's not selective about what leading commentary it hides.
+
+Inspired by jwz's hide-copyleft.el, for which we don't have an
+assignment.")

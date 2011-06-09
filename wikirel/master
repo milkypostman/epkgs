@@ -5,7 +5,7 @@
  :authors    (("Aaron S. Hawley"))
  :maintainer ("Aaron S. Hawley")
  :provided   (wikirel)
- :required   ((("emacs" browse-url)
+ :required   ((("browse-url" browse-url)
 	       ("oddmuse" oddmuse)))
  :keywords   ("hypermedia")
  :homepage   "http://www.emacswiki.org/WikiRel"

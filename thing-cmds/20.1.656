@@ -5,8 +5,9 @@
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")
  :provided   (thing-cmds)
- :required   ((("emacs" repeat thingatpt)
-	       (nil hide-comnt))
+ :required   ((("hide-comnt" hide-comnt)
+	       ("repeat" repeat)
+	       ("thingatpt" thingatpt))
 	      (("thingatpt+" thingatpt+)))
  :keywords   ("thingatpt" "thing" "region" "selection")
  :homepage   "http://www.emacswiki.org/ThingAtPointCommands"

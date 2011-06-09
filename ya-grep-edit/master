@@ -4,8 +4,9 @@
  :updated    "2010"
  :license    "GPL-3"
  :provided   (ya-grep-edit)
- :required   ((("emacs" cl grep))
-	      (("emacs" hilit-chg)))
+ :required   ((("cl" cl)
+	       ("grep" grep))
+	      (("hilit-chg" hilit-chg)))
  :keywords   ("convenience" "wp")
  :homepage   "https://github.com/k-talo/ya-grep-edit.el"
  :commentary "\

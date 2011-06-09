@@ -5,5 +5,5 @@
  :authors    (("Denis Martinez" . "deuns.martinez@gmail.com"))
  :maintainer ("Denis Martinez" . "deuns.martinez@gmail.com")
  :provided   (fcsh-mode)
- :required   ((("emacs" comint)))
+ :required   ((("comint" comint)))
  :keywords   ("fcsh" "flex" "flash" "actionscript" "mxml" "adobe"))

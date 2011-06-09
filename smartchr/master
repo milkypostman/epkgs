@@ -6,7 +6,7 @@
  :authors    (("IMAKADO" . "ken.imakado@gmail.com"))
  :maintainer ("IMAKADO" . "ken.imakado@gmail.com")
  :provided   (smartchr)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :homepage   "https://github.com/imakado/emacs-smartchr"
  :commentary "\
 (global-set-key (kbd \"=\") (smartchr '(\" = \" \" == \" \" === \")))

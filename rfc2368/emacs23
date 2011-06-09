@@ -1,0 +1,25 @@
+(:summary    "Support for rfc2368"
+ :created    "1998"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Sen Nagata" . "sen@eccosys.com"))
+ :maintainer ("Sen Nagata" . "sen@eccosys.com")
+ :provided   (rfc2368)
+ :keywords   ("mail")
+ :commentary "\
+notes:
+
+  -repeat after me: \"the colon is not part of the header name...\"
+  -if w3 becomes part of emacs, then it may make sense to have this
+   file depend on w3 -- the maintainer of w3 says merging w/ Emacs
+   is planned!
+
+historical note:
+
+  this is intended as a replacement for mailto.el
+
+acknowledgements:
+
+  the functions that deal w/ unhexifying in this file were basically
+taken from w3 -- i hope to replace them w/ something else soon OR
+perhaps if w3 becomes a part of emacs soon, use the functions from w3.")

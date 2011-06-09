@@ -1,0 +1,81 @@
+(:summary    "Tcl code editing commands for Emacs"
+ :created    "1994"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Tom Tromey" . "tromey@redhat.com")
+	      ("Chris Lindblad" . "cjl@lcs.mit.edu"))
+ :maintainer ("FSF")
+ :provided   (tcl)
+ :required   ((("add-log" add-log)
+	       ("comint" comint)
+	       ("dabbrev" dabbrev)
+	       ("imenu" imenu)
+	       ("outline" outline)))
+ :keywords   ("languages" "tcl")
+ :wikipage   "http://www.emacswiki.org/TclMode"
+ :commentary "\
+CUSTOMIZATION NOTES:
+* tcl-proc-list can be used to customize a list of things that
+\"define\" other things.  Eg in my project I put \"defvar\" in this
+list.
+* tcl-typeword-list is similar, but uses font-lock-type-face.
+* tcl-keyword-list is a list of keywords.  I've generally used this
+for flow-control words.  Eg I add \"unwind_protect\" to this list.
+* tcl-builtin-list lists commands to be given font-lock-builtin-face.
+* tcl-type-alist can be used to minimally customize indentation
+according to context.
+
+THANKS FOR CRITICISM AND SUGGESTIONS TO:
+Guido Bosch <Guido.Bosch@loria.fr>
+pgs1002@esc.cam.ac.uk (Dr P.G. Sjoerdsma)
+Mike Scheidler <c23mts@kocrsv01.delcoelect.com>
+Matt Newman <men@charney.colorado.edu>
+rwhitby@research.canon.oz.au (Rod Whitby)
+h9118101@hkuxa.hku.hk (Yip Chi Lap [Beta])
+Pertti Tapio Kasanen <ptk@delta.hut.fi>
+schmid@fb3-s7.math.TU-Berlin.DE (Gregor Schmid)
+warsaw@nlm.nih.gov (Barry A. Warsaw)
+Carl Witty <cwitty@ai.mit.edu>
+T. V. Raman <raman@crl.dec.com>
+Jesper Pedersen <blackie@imada.ou.dk>
+dfarmer@evolving.com (Doug Farmer)
+\"Chris Alfeld\" <calfeld@math.utah.edu>
+Ben Wing <ben@xemacs.org>
+
+KNOWN BUGS:
+* In Tcl \"#\" is not always a comment character.  This can confuse tcl.el
+  in certain circumstances.  For now the only workaround is to use
+  font-lock which will mark the # chars accordingly or enclose offending
+  hash characters in quotes or precede them with a backslash.  Note that
+  using braces won't work -- quotes change the syntax class of characters
+  between them, while braces do not.  If you don't use font-lock, the
+  electric-# mode helps alleviate this problem somewhat.
+* indent-tcl-exp is untested.
+
+TODO:
+* make add-log-tcl-defun smarter.  should notice if we are in the
+  middle of a defun, or between defuns.  should notice if point is
+  on first line of defun (or maybe even in comments before defun).
+* Allow continuation lines to be indented under the first argument
+  of the preceding line, like this:
+     [list something \\
+           something-else]
+* There is a request that indentation work like this:
+       button .fred -label Fred \\
+                    -command {puts fred}
+* Should have tcl-complete-symbol that queries the inferior process.
+* Should have describe-symbol that works by sending the magic
+  command to a tclX process.
+* Need C-x C-e binding (tcl-eval-last-exp).
+* Write indent-region function that is faster than indenting each
+  line individually.
+* tcl-figure-type should stop at \"beginning of line\" (only ws
+  before point, and no \"\\\" on previous line).  (see tcl-real-command-p).
+* overrides some comint keybindings; fix.
+* Trailing \\ will eat blank lines.  Should deal with this.
+  (this would help catch some potential bugs).
+* Inferior should display in half the screen, not the whole screen.
+* Indentation should deal with \"switch\".
+* Consider writing code to find help files automatically (for
+  common cases).
+* `#' shouldn't insert `\\#' when point is in string.")

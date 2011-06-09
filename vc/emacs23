@@ -1,0 +1,516 @@
+(:summary    "Drive a version-control system from within Emacs"
+ :created    "1992"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("FSF (see below for full credits)"))
+ :maintainer ("Andre Spiegel" . "spiegel@gnu.org")
+ :provided   (vc vc-annotate vc-arch vc-bzr vc-cvs vc-dav vc-dir vc-dispatcher vc-git vc-hg vc-hooks vc-mtn vc-rcs vc-sccs vc-svn)
+ :required   ((("add-log" add-log)
+	       ("cl" cl)
+	       ("dired" dired)
+	       ("emacs-core" tool-bar)
+	       ("ewoc" ewoc)
+	       ("gnus" parse-time sha1)
+	       ("grep" grep)
+	       ("url" url url-dav)))
+ :keywords   ("tools")
+ :commentary "\
+This mode is fully documented in the Emacs user's manual.
+
+Supported version-control systems presently include CVS, RCS, GNU
+Arch, Subversion, Bzr, Git, Mercurial, Monotone and SCCS
+(or its free replacement, CSSC).
+
+If your site uses the ChangeLog convention supported by Emacs, the
+function `log-edit-comment-to-change-log' could prove a useful checkin hook,
+although you might prefer to use C-c C-a (i.e. `log-edit-insert-changelog')
+from the commit buffer instead or to set `log-edit-setup-invert'.
+
+When using SCCS, RCS, CVS: be careful not to do repo surgery, or
+operations like registrations and deletions and renames, outside VC
+while VC is running. The support for these systems was designed
+when disks were much slower, and the code maintains a lot of
+internal state in order to reduce expensive operations to a
+minimum. Thus, if you mess with the repo while VC's back is turned,
+VC may get seriously confused.
+
+When using Subversion or a later system, anything you do outside VC
+*through the VCS tools* should safely interlock with VC
+operations. Under these VC does little state caching, because local
+operations are assumed to be fast.  The dividing line is
+
+ADDING SUPPORT FOR OTHER BACKENDS
+
+VC can use arbitrary version control systems as a backend.  To add
+support for a new backend named SYS, write a library vc-sys.el that
+contains functions of the form `vc-sys-...' (note that SYS is in lower
+case for the function and library names).  VC will use that library if
+you put the symbol SYS somewhere into the list of
+`vc-handled-backends'.  Then, for example, if `vc-sys-registered'
+returns non-nil for a file, all SYS-specific versions of VC commands
+will be available for that file.
+
+VC keeps some per-file information in the form of properties (see
+vc-file-set/getprop in vc-hooks.el).  The backend-specific functions
+do not generally need to be aware of these properties.  For example,
+`vc-sys-working-revision' should compute the working revision and
+return it; it should not look it up in the property, and it needn't
+store it there either.  However, if a backend-specific function does
+store a value in a property, that value takes precedence over any
+value that the generic code might want to set (check for uses of
+the macro `with-vc-properties' in vc.el).
+
+In the list of functions below, each identifier needs to be prepended
+with `vc-sys-'.  Some of the functions are mandatory (marked with a
+`*'), others are optional (`-').
+
+BACKEND PROPERTIES
+
+* revision-granularity
+
+  Takes no arguments.  Returns either 'file or 'repository.  Backends
+  that return 'file have per-file revision numbering; backends
+  that return 'repository have per-repository revision numbering,
+  so a revision level implicitly identifies a changeset
+
+STATE-QUERYING FUNCTIONS
+
+* registered (file)
+
+  Return non-nil if FILE is registered in this backend.  Both this
+  function as well as `state' should be careful to fail gracefully
+  in the event that the backend executable is absent.  It is
+  preferable that this function's body is autoloaded, that way only
+  calling vc-registered does not cause the backend to be loaded
+  (all the vc-FOO-registered functions are called to try to find
+  the controlling backend for FILE.
+
+* state (file)
+
+  Return the current version control state of FILE.  For a list of
+  possible values, see `vc-state'.  This function should do a full and
+  reliable state computation; it is usually called immediately after
+  C-x v v.  If you want to use a faster heuristic when visiting a
+  file, put that into `state-heuristic' below.  Note that under most
+  VCSes this won't be called at all, dir-status is used instead.
+
+- state-heuristic (file)
+
+  If provided, this function is used to estimate the version control
+  state of FILE at visiting time.  It should be considerably faster
+  than the implementation of `state'.  For a list of possible values,
+  see the doc string of `vc-state'.
+
+- dir-status (dir update-function)
+
+  Produce RESULT: a list of lists of the form (FILE VC-STATE EXTRA)
+  for the files in DIR.
+  EXTRA can be used for backend specific information about FILE.
+  If a command needs to be run to compute this list, it should be
+  run asynchronously using (current-buffer) as the buffer for the
+  command.  When RESULT is computed, it should be passed back by
+  doing: (funcall UPDATE-FUNCTION RESULT nil).
+  If the backend uses a process filter, hence it produces partial results,
+  they can be passed back by doing:
+     (funcall UPDATE-FUNCTION RESULT t)
+  and then do a (funcall UPDATE-FUNCTION RESULT nil)
+  when all the results have been computed.
+  To provide more backend specific functionality for `vc-dir'
+  the following functions might be needed: `dir-extra-headers',
+  `dir-printer', `extra-dir-menu' and `dir-status-files'.
+
+- dir-status-files (dir files default-state update-function)
+
+  This function is identical to dir-status except that it should
+  only report status for the specified FILES. Also it needs to
+  report on all requested files, including up-to-date or ignored
+  files. If not provided, the default is to consider that the files
+  are in DEFAULT-STATE.
+
+- dir-extra-headers (dir)
+
+  Return a string that will be added to the *vc-dir* buffer header.
+
+- dir-printer (fileinfo)
+
+  Pretty print the `vc-dir-fileinfo' FILEINFO.
+  If a backend needs to show more information than the default FILE
+  and STATE in the vc-dir listing, it can store that extra
+  information in `vc-dir-fileinfo->extra'.  This function can be
+  used to display that extra information in the *vc-dir* buffer.
+
+- status-fileinfo-extra (file)
+
+  Compute `vc-dir-fileinfo->extra' for FILE.
+
+* working-revision (file)
+
+  Return the working revision of FILE.  This is the revision fetched
+  by the last checkout or upate, not necessarily the same thing as the
+  head or tip revision.  Should return \"0\" for a file added but not yet
+  committed.
+
+- latest-on-branch-p (file)
+
+  Return non-nil if the working revision of FILE is the latest revision
+  on its branch (many VCSes call this the 'tip' or 'head' revision).
+  The default implementation always returns t, which means that
+  working with non-current revisions is not supported by default.
+
+* checkout-model (files)
+
+  Indicate whether FILES need to be \"checked out\" before they can be
+  edited.  See `vc-checkout-model' for a list of possible values.
+
+- workfile-unchanged-p (file)
+
+  Return non-nil if FILE is unchanged from the working revision.
+  This function should do a brief comparison of FILE's contents
+  with those of the repository copy of the working revision.  If
+  the backend does not have such a brief-comparison feature, the
+  default implementation of this function can be used, which
+  delegates to a full vc-BACKEND-diff.  (Note that vc-BACKEND-diff
+  must not run asynchronously in this case, see variable
+  `vc-disable-async-diff'.)
+
+- mode-line-string (file)
+
+  If provided, this function should return the VC-specific mode
+  line string for FILE.  The returned string should have a
+  `help-echo' property which is the text to be displayed as a
+  tooltip when the mouse hovers over the VC entry on the mode-line.
+  The default implementation deals well with all states that
+  `vc-state' can return.
+
+STATE-CHANGING FUNCTIONS
+
+* create-repo (backend)
+
+  Create an empty repository in the current directory and initialize
+  it so VC mode can add files to it.  For file-oriented systems, this
+  need do no more than create a subdirectory with the right name.
+
+* register (files &optional rev comment)
+
+  Register FILES in this backend.  Optionally, an initial revision REV
+  and an initial description of the file, COMMENT, may be specified,
+  but it is not guaranteed that the backend will do anything with this.
+  The implementation should pass the value of vc-register-switches
+  to the backend command.  (Note: in older versions of VC, this
+  command took a single file argument and not a list.)
+
+- init-revision (file)
+
+  The initial revision to use when registering FILE if one is not
+  specified by the user.  If not provided, the variable
+  vc-default-init-revision is used instead.
+
+- responsible-p (file)
+
+  Return non-nil if this backend considers itself \"responsible\" for
+  FILE, which can also be a directory.  This function is used to find
+  out what backend to use for registration of new files and for things
+  like change log generation.  The default implementation always
+  returns nil.
+
+- could-register (file)
+
+  Return non-nil if FILE could be registered under this backend.  The
+  default implementation always returns t.
+
+- receive-file (file rev)
+
+  Let this backend \"receive\" a file that is already registered under
+  another backend.  The default implementation simply calls `register'
+  for FILE, but it can be overridden to do something more specific,
+  e.g. keep revision numbers consistent or choose editing modes for
+  FILE that resemble those of the other backend.
+
+- unregister (file)
+
+  Unregister FILE from this backend.  This is only needed if this
+  backend may be used as a \"more local\" backend for temporary editing.
+
+* checkin (files rev comment)
+
+  Commit changes in FILES to this backend.  REV is a historical artifact
+  and should be ignored.  COMMENT is used as a check-in comment.
+  The implementation should pass the value of vc-checkin-switches to
+  the backend command.
+
+* find-revision (file rev buffer)
+
+  Fetch revision REV of file FILE and put it into BUFFER.
+  If REV is the empty string, fetch the head of the trunk.
+  The implementation should pass the value of vc-checkout-switches
+  to the backend command.
+
+* checkout (file &optional editable rev)
+
+  Check out revision REV of FILE into the working area.  If EDITABLE
+  is non-nil, FILE should be writable by the user and if locking is
+  used for FILE, a lock should also be set.  If REV is non-nil, that
+  is the revision to check out (default is the working revision).
+  If REV is t, that means to check out the head of the current branch;
+  if it is the empty string, check out the head of the trunk.
+  The implementation should pass the value of vc-checkout-switches
+  to the backend command.
+
+* revert (file &optional contents-done)
+
+  Revert FILE back to the working revision.  If optional
+  arg CONTENTS-DONE is non-nil, then the contents of FILE have
+  already been reverted from a version backup, and this function
+  only needs to update the status of FILE within the backend.
+  If FILE is in the `added' state it should be returned to the
+  `unregistered' state.
+
+- rollback (files)
+
+  Remove the tip revision of each of FILES from the repository.  If
+  this function is not provided, trying to cancel a revision is
+  caught as an error.  (Most backends don't provide it.)  (Also
+  note that older versions of this backend command were called
+  'cancel-version' and took a single file arg, not a list of
+  files.)
+
+- merge (file rev1 rev2)
+
+  Merge the changes between REV1 and REV2 into the current working file.
+
+- merge-news (file)
+
+  Merge recent changes from the current branch into FILE.
+
+- steal-lock (file &optional revision)
+
+  Steal any lock on the working revision of FILE, or on REVISION if
+  that is provided.  This function is only needed if locking is
+  used for files under this backend, and if files can indeed be
+  locked by other users.
+
+- modify-change-comment (files rev comment)
+
+  Modify the change comments associated with the files at the
+  given revision.  This is optional, many backends do not support it.
+
+- mark-resolved (files)
+
+  Mark conflicts as resolved.  Some VC systems need to run a
+  command to mark conflicts as resolved.
+
+HISTORY FUNCTIONS
+
+* print-log (files buffer &optional shortlog start-revision limit)
+
+  Insert the revision log for FILES into BUFFER.
+  If SHORTLOG is true insert a short version of the log.
+  If LIMIT is true insert only insert LIMIT log entries.  If the
+  backend does not support limiting the number of entries to show
+  it should return `limit-unsupported'.
+  If START-REVISION is given, then show the log starting from the
+  revision.  At this point START-REVISION is only required to work
+  in conjunction with LIMIT = 1.
+
+* log-outgoing (backend remote-location)
+
+  Insert in BUFFER the revision log for the changes that will be
+  sent when performing a push operation to REMOTE-LOCATION.
+
+* log-incoming (backend remote-location)
+
+  Insert in BUFFER the revision log for the changes that will be
+  received when performing a pull operation from REMOTE-LOCATION.
+
+- log-view-mode ()
+
+  Mode to use for the output of print-log.  This defaults to
+  `log-view-mode' and is expected to be changed (if at all) to a derived
+  mode of `log-view-mode'.
+
+- show-log-entry (revision)
+
+  If provided, search the log entry for REVISION in the current buffer,
+  and make sure it is displayed in the buffer's window.  The default
+  implementation of this function works for RCS-style logs.
+
+- comment-history (file)
+
+  Return a string containing all log entries that were made for FILE.
+  This is used for transferring a file from one backend to another,
+  retaining comment information.
+
+- update-changelog (files)
+
+  Using recent log entries, create ChangeLog entries for FILES, or for
+  all files at or below the default-directory if FILES is nil.  The
+  default implementation runs rcs2log, which handles RCS- and
+  CVS-style logs.
+
+* diff (files &optional rev1 rev2 buffer)
+
+  Insert the diff for FILE into BUFFER, or the *vc-diff* buffer if
+  BUFFER is nil.  If REV1 and REV2 are non-nil, report differences
+  from REV1 to REV2.  If REV1 is nil, use the working revision (as
+  found in the repository) as the older revision; if REV2 is nil,
+  use the current working-copy contents as the newer revision.  This
+  function should pass the value of (vc-switches BACKEND 'diff) to
+  the backend command.  It should return a status of either 0 (no
+  differences found), or 1 (either non-empty diff or the diff is
+  run asynchronously).
+
+- revision-completion-table (files)
+
+  Return a completion table for existing revisions of FILES.
+  The default is to not use any completion table.
+
+- annotate-command (file buf &optional rev)
+
+  If this function is provided, it should produce an annotated display
+  of FILE in BUF, relative to revision REV.  Annotation means each line
+  of FILE displayed is prefixed with version information associated with
+  its addition (deleted lines leave no history) and that the text of the
+  file is fontified according to age.
+
+- annotate-time ()
+
+  Only required if `annotate-command' is defined for the backend.
+  Return the time of the next line of annotation at or after point,
+  as a floating point fractional number of days.  The helper
+  function `vc-annotate-convert-time' may be useful for converting
+  multi-part times as returned by `current-time' and `encode-time'
+  to this format.  Return nil if no more lines of annotation appear
+  in the buffer.  You can safely assume that point is placed at the
+  beginning of each line, starting at `point-min'.  The buffer that
+  point is placed in is the Annotate output, as defined by the
+  relevant backend.  This function also affects how much of the line
+  is fontified; where it leaves point is where fontification begins.
+
+- annotate-current-time ()
+
+  Only required if `annotate-command' is defined for the backend,
+  AND you'd like the current time considered to be anything besides
+  (vc-annotate-convert-time (current-time)) -- i.e. the current
+  time with hours, minutes, and seconds included.  Probably safe to
+  ignore.  Return the current-time, in units of fractional days.
+
+- annotate-extract-revision-at-line ()
+
+  Only required if `annotate-command' is defined for the backend.
+  Invoked from a buffer in vc-annotate-mode, return the revision
+  corresponding to the current line, or nil if there is no revision
+  corresponding to the current line.
+  If the backend supports annotating through copies and renames,
+  and displays a file name and a revision, then return a cons
+  (REVISION . FILENAME).
+
+TAG SYSTEM
+
+- create-tag (dir name branchp)
+
+  Attach the tag NAME to the state of the working copy.  This
+  should make sure that files are up-to-date before proceeding with
+  the action.  DIR can also be a file and if BRANCHP is specified,
+  NAME should be created as a branch and DIR should be checked out
+  under this new branch.  The default implementation does not
+  support branches but does a sanity check, a tree traversal and
+  assigns the tag to each file.
+
+- retrieve-tag (dir name update)
+
+  Retrieve the version tagged by NAME of all registered files at or below DIR.
+  If UPDATE is non-nil, then update buffers of any files in the
+  tag that are currently visited.  The default implementation
+  does a sanity check whether there aren't any uncommitted changes at
+  or below DIR, and then performs a tree walk, using the `checkout'
+  function to retrieve the corresponding revisions.
+
+MISCELLANEOUS
+
+- make-version-backups-p (file)
+
+  Return non-nil if unmodified repository revisions of FILE should be
+  backed up locally.  If this is done, VC can perform `diff' and
+  `revert' operations itself, without calling the backend system.  The
+  default implementation always returns nil.
+
+- root (file)
+  Return the root of the VC controlled hierarchy for file.
+
+- repository-hostname (dirname)
+
+  Return the hostname that the backend will have to contact
+  in order to operate on a file in DIRNAME.  If the return value
+  is nil, it means that the repository is local.
+  This function is used in `vc-stay-local-p' which backends can use
+  for their convenience.
+
+- previous-revision (file rev)
+
+  Return the revision number that precedes REV for FILE, or nil if no such
+  revision exists.
+
+- next-revision (file rev)
+
+  Return the revision number that follows REV for FILE, or nil if no such
+  revision exists.
+
+- log-edit-mode ()
+
+  Turn on the mode used for editing the check in log.  This
+  defaults to `log-edit-mode'.  If changed, it should use a mode
+  derived from`log-edit-mode'.
+
+- check-headers ()
+
+  Return non-nil if the current buffer contains any version headers.
+
+- clear-headers ()
+
+  In the current buffer, reset all version headers to their unexpanded
+  form.  This function should be provided if the state-querying code
+  for this backend uses the version headers to determine the state of
+  a file.  This function will then be called whenever VC changes the
+  version control state in such a way that the headers would give
+  wrong information.
+
+- delete-file (file)
+
+  Delete FILE and mark it as deleted in the repository.  If this
+  function is not provided, the command `vc-delete-file' will
+  signal an error.
+
+- rename-file (old new)
+
+  Rename file OLD to NEW, both in the working area and in the
+  repository.  If this function is not provided, the renaming
+  will be done by (vc-delete-file old) and (vc-register new).
+
+- find-file-hook ()
+
+  Operation called in current buffer when opening a file.  This can
+  be used by the backend to setup some local variables it might need.
+
+- extra-menu ()
+
+  Return a menu keymap, the items in the keymap will appear at the
+  end of the Version Control menu.  The goal is to allow backends
+  to specify extra menu items that appear in the VC menu.  This way
+  you can provide menu entries for functionality that is specific
+  to your backend and which does not map to any of the VC generic
+  concepts.
+
+- extra-dir-menu ()
+
+  Return a menu keymap, the items in the keymap will appear at the
+  end of the VC Status menu.  The goal is to allow backends to
+  specify extra menu items that appear in the VC Status menu.  This
+  makes it possible to provide menu entries for functionality that
+  is specific to a backend and which does not map to any of the VC
+  generic concepts.
+
+- conflicted-files (dir)
+
+  Return the list of files where conflict resolution is needed in
+  the project that contains DIR.
+  FIXME: what should it do with non-text conflicts?")

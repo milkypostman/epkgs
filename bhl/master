@@ -5,8 +5,9 @@
  :authors    (("Bastien Guerry" . "bzg@altern.org"))
  :maintainer ("Bastien Guerry" . "bzg@altern.org")
  :provided   (bhl)
- :required   ((("emacs" footnote texnfo-upd))
-	      (("emacs" reporter)))
+ :required   ((("footnote" footnote)
+	       ("texnfo-upd" texnfo-upd))
+	      (("reporter" reporter)))
  :keywords   ("convert" "plain" "text" "html" "latex" "sgml" "linuxdoc" "texinfo")
  :homepage   "http://www.nongnu.org/bhl/"
  :wikipage   "http://www.emacswiki.org/BhlMode"

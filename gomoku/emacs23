@@ -1,0 +1,48 @@
+(:summary    "Gomoku game between you and Emacs"
+ :created    "1988"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Philippe Schnoebelen" . "phs@lsv.ens-cachan.fr"))
+ :maintainer ("FSF")
+ :adapted-by ("ESR")
+ :provided   (gomoku)
+ :keywords   ("games")
+ :commentary "\
+RULES:
+
+Gomoku is a game played between two players on a rectangular board.  Each
+player, in turn, marks a free square of its choice. The winner is the first
+one to mark five contiguous squares in any direction (horizontally,
+vertically or diagonally).
+
+I have been told that, in \"The TRUE Gomoku\", some restrictions are made
+about the squares where one may play, or else there is a known forced win
+for the first player. This program has no such restriction, but it does not
+know about the forced win, nor do I.
+See http://renju.nu/r1rulhis.htm for more information.
+
+
+There are two main places where you may want to customize the program: key
+bindings and board display. These features are commented in the code. Go
+and see.
+
+
+HOW TO USE:
+
+The command \"M-x gomoku\" displays a
+board, the size of which depends on the size of the current window. The
+size of the board is easily modified by giving numeric arguments to the
+gomoku command and/or by customizing the displaying parameters.
+
+Emacs plays when it is its turn. When it is your turn, just put the cursor
+on the square where you want to play and hit RET, or X, or whatever key you
+bind to the command gomoku-human-plays. When it is your turn, Emacs is
+idle: you may switch buffers, read your mail, ... Just come back to the
+*Gomoku* buffer and resume play.
+
+
+ALGORITHM:
+
+The algorithm is briefly described in section \"THE SCORE TABLE\". Some
+parameters may be modified if you want to change the style exhibited by the
+program.")

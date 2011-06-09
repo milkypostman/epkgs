@@ -3,7 +3,7 @@
  :updated    "20031117"
  :license    "GPL-2"
  :provided   (pack-windows)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :homepage   "http://lampwww.epfl.ch/~schinz/elisp/"
  :commentary "\
 Resize all windows vertically to display as much information as possible

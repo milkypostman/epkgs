@@ -3,4 +3,4 @@
  :updated    "2008"
  :license    "GPL-2"
  :provided   (file-journal)
- :required   ((("emacs" cl))))
+ :required   ((("cl" cl))))

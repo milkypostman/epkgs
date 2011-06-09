@@ -5,7 +5,8 @@
  :authors    ((nil . "wenbinye@gmail.com"))
  :maintainer (nil . "wenbinye@gmail.com")
  :provided   (help-dwim)
- :required   ((("emacs" cl woman)))
+ :required   ((("cl" cl)
+	       ("woman" woman)))
  :keywords   ("help" "convenience")
  :commentary "\
 I write a number of commands to search documents of symbols and

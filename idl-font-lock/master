@@ -5,7 +5,7 @@
  :authors    (("Eric Eide" . "eeide@cs.utah.edu"))
  :maintainer ("Eric Eide" . "eeide@cs.utah.edu")
  :provided   (idl-font-lock)
- :required   ((("emacs" font-lock)))
+ :required   ((("emacs-core" font-lock)))
  :keywords   ("idl" "languages" "faces")
  :homepage   "http://www.cs.utah.edu/~eeide/emacs/"
  :commentary "\

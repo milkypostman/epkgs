@@ -5,7 +5,9 @@
  :authors    ((nil . "wenbinye@163.com"))
  :maintainer (nil . "wenbinye@163.com")
  :provided   (incr)
- :required   ((("emacs" calculator cl rect)
+ :required   ((("calculator" calculator)
+	       ("cl" cl)
+	       ("rect" rect)
 	       (nil hannum)))
  :keywords   ("convenience")
  :commentary "\

@@ -5,7 +5,8 @@
  :authors    (("Will Mengarini" . "seldon@eskimo.com"))
  :maintainer ("Will Mengarini" . "seldon@eskimo.com")
  :provided   (jiggle)
- :required   ((("emacs" advice cl)))
+ :required   ((("advice" advice)
+	       ("cl" cl)))
  :keywords   ("frames" "hardware" "jiggle" "cursor" "shake")
  :homepage   "http://www.eskimo.com/~seldon/"
  :commentary "\

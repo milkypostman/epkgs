@@ -5,7 +5,7 @@
  :authors    (("David Edmondson" . "dme@dme.org"))
  :maintainer ("David Edmondson" . "dme@dme.org")
  :provided   (erc-robot)
- :required   ((("emacs" erc erc-stamp)))
+ :required   ((("erc" erc erc-stamp)))
  :keywords   ("erc" "irc" "chat" "robot" "bot")
  :homepage   "http://www.emacswiki.org/ErcRobot"
  :wikipage   "http://www.emacswiki.org/ErcRobot"

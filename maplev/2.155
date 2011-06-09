@@ -6,7 +6,13 @@
 	      ("and Roland Winkler" . "roland.winkler@physik.uni-erlangen.de"))
  :maintainer ("Joseph S. Riel" . "joer@k-online.com")
  :provided   (maplev)
- :required   ((("emacs" abbrevlist align cl comint font-lock imenu info)))
+ :required   ((("abbrevlist" abbrevlist)
+	       ("align" align)
+	       ("cl" cl)
+	       ("comint" comint)
+	       ("emacs-core" font-lock)
+	       ("imenu" imenu)
+	       ("info" info)))
  :keywords   ("maple" "languages")
  :homepage   "http://www.mapleprimes.com/blog/joe-riel/emacs-mode-for-maple"
  :commentary "\

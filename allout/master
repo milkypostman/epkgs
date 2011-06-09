@@ -3,7 +3,10 @@
  :updated    "2010"
  :license    "GPL-3"
  :provided   (allout)
- :required   ((("emacs" cl easymenu overlay pgg pgg-gpg pgg-parse)))
+ :required   ((("cl" cl)
+	       ("easymenu" easymenu)
+	       ("emacs-core" overlay)
+	       ("gnus" pgg pgg-gpg pgg-parse)))
  :keywords   ("outlines" "wp" "languages")
  :homepage   "http://myriadicity.net/Sundry/EmacsAllout"
  :wikipage   "http://www.emacswiki.org/AllOut"

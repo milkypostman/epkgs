@@ -5,7 +5,7 @@
  :authors    (("Kevin Ryde" . "user42@zip.com.au"))
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (perl-pod-coding)
- :required   ((("emacs" mm-util)))
+ :required   ((("gnus" mm-util)))
  :wikipage   "http://www.emacswiki.org/PerlPodCoding"
  :commentary "\
 This is a spot of code to get an Emacs coding system from the \"=encoding\"

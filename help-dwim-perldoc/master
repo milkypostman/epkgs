@@ -4,8 +4,10 @@
  :authors    ((nil . "wenbinye@gmail.com"))
  :maintainer (nil . "wenbinye@gmail.com")
  :provided   (help-dwim-perldoc)
- :required   ((("emacs" cl tree-widget woman)
-	       ("help-dwim" help-dwim))
+ :required   ((("cl" cl)
+	       ("help-dwim" help-dwim)
+	       ("tree-widget" tree-widget)
+	       ("woman" woman))
 	      (("tree-mode" tree-mode)))
  :commentary "\
 Put this file into your load-path and the following into your ~/.emacs:

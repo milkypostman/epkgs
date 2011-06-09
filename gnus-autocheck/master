@@ -1,6 +1,6 @@
 (:repository (git . "https://github.com/slaanesh/gnus-autocheck.git")
  :license    "GPL-2"
  :provided   (gnus-autocheck)
- :required   ((("emacs" gnus)))
+ :required   ((("gnus" gnus)))
  :homepage   "https://github.com/slaanesh/gnus-autocheck"
  :wikipage   "http://www.emacswiki.org/GnusAutoCheck")

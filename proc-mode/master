@@ -5,7 +5,8 @@
  :authors    (("Pat Thoyts" . "pat@zsplat.freeserve.co.uk"))
  :maintainer ("Pat Thoyts" . "pat@zsplat.freeserve.co.uk")
  :provided   (proc-mode)
- :required   ((("emacs" regexp-opt reporter)))
+ :required   ((("regexp-opt" regexp-opt)
+	       ("reporter" reporter)))
  :keywords   ("languages")
  :commentary "\
 -----------

@@ -1,0 +1,38 @@
+(:summary    "Incremental search minor mode"
+ :created    "1992"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Daniel LaLiberte" . "liberte@cs.uiuc.edu"))
+ :maintainer ("FSF")
+ :keywords   ("matching")
+ :commentary "\
+Instructions
+
+For programmed use of isearch-mode, e.g. calling (isearch-forward),
+isearch-mode behaves modally and does not return until the search
+is completed.  It uses a recursive-edit to behave this way.
+
+The key bindings active within isearch-mode are defined below in
+`isearch-mode-map' which is given bindings close to the default
+characters of the original isearch.el.  With `isearch-mode',
+however, you can bind multi-character keys and it should be easier
+to add new commands.  One bug though: keys with meta-prefix cannot
+be longer than two chars.  Also see minibuffer-local-isearch-map
+for bindings active during `isearch-edit-string'.
+
+isearch-mode should work even if you switch windows with the mouse,
+in which case isearch-mode is terminated automatically before the
+switch.
+
+The search ring and completion commands automatically put you in
+the minibuffer to edit the string.  This gives you a chance to
+modify the search string before executing the search.  There are
+three commands to terminate the editing: C-s and C-r exit the
+minibuffer and search forward and reverse respectively, while C-m
+exits and does a nonincremental search.
+
+Exiting immediately from isearch uses isearch-edit-string instead
+of nonincremental-search, if search-nonincremental-instead is non-nil.
+The name of this option should probably be changed if we decide to
+keep the behavior.  No point in forcing nonincremental search until
+the last possible moment.")

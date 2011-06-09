@@ -5,7 +5,10 @@
  :authors    (("Norman Walsh" . "ndw@nwalsh.com"))
  :maintainer ("Norman Walsh" . "ndw@nwalsh.com")
  :provided   (dbide-abbrev dbide-data dbide-font dbide-process docbookide)
- :required   ((("emacs" cl compile etags font-lock)))
+ :required   ((("cl" cl)
+	       ("compile" compile)
+	       ("emacs-core" font-lock)
+	       ("etags" etags)))
  :keywords   ("languages" "xml" "docbook")
  :homepage   "http://nwalsh.com/emacs/docbookide/"
  :commentary "\

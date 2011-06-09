@@ -4,7 +4,7 @@
  :authors    (("Neil W. Van Dyke" . "nwv@acm.org"))
  :maintainer ("Neil W. Van Dyke" . "nwv@acm.org")
  :provided   (webjump)
- :required   ((("emacs" browse-url)))
+ :required   ((("browse-url" browse-url)))
  :keywords   ("comm" "www")
  :homepage   "http://www.neilvandyke.org/webjump/"
  :wikipage   "http://www.emacswiki.org/WebJump"

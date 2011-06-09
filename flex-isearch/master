@@ -5,7 +5,8 @@
  :authors    (("Jonathan Kotta" . "jpkotta@gmail.com"))
  :maintainer ("Jonathan Kotta" . "jpkotta@gmail.com")
  :provided   (flex-isearch)
- :required   ((("emacs" cl regexp-opt)))
+ :required   ((("cl" cl)
+	       ("regexp-opt" regexp-opt)))
  :keywords   ("convenience" "search")
  :homepage   "http://www.emacswiki.org/FlexIsearch"
  :wikipage   "http://www.emacswiki.org/FlexIsearch"

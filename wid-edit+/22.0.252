@@ -6,7 +6,7 @@
 	      ("Lennart Borgman"))
  :maintainer ("Drew Adams")
  :provided   (wid-edit+)
- :required   ((("emacs" wid-edit)))
+ :required   ((("widget" wid-edit)))
  :keywords   ("widget" "color")
  :commentary "\
 Extensions to standard library `wid-edit.el'.

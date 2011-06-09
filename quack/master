@@ -2,7 +2,15 @@
  :updated    "20101223"
  :license    "GPL-2"
  :provided   (quack)
- :required   ((("emacs" advice browse-url cmuscheme compile custom easymenu font-lock scheme thingatpt)))
+ :required   ((("advice" advice)
+	       ("browse-url" browse-url)
+	       ("cmuscheme" cmuscheme)
+	       ("compile" compile)
+	       ("custom" custom)
+	       ("easymenu" easymenu)
+	       ("emacs-core" font-lock)
+	       ("scheme" scheme)
+	       ("thingatpt" thingatpt)))
  :homepage   "http://www.neilvandyke.org/quack/"
  :wikipage   "http://www.emacswiki.org/QuackMode"
  :commentary "\

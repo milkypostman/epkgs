@@ -6,7 +6,7 @@
  :authors    (("mooz" . "stillpedant@gmail.com"))
  :maintainer ("mooz" . "stillpedant@gmail.com")
  :provided   (shadow)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("files" "processes")
  :homepage   "https://github.com/mooz/shadow.el"
  :commentary "\

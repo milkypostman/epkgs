@@ -5,9 +5,8 @@
  :license    "GPL-3"
  :authors    (("Kazuhiro NISHIYAMA" . "zn@mbf.nifty.com"))
  :maintainer ("Kazuhiro NISHIYAMA" . "zn@mbf.nifty.com")
- :provided   (gravatar wl-gravatar)
- :required   ((("emacs" image url url-cache)
-	       ("gnus" gnus-xmas)))
+ :provided   (wl-gravatar)
+ :required   ((("gnus" gravatar)))
  :keywords   ("faces" "tools" "extensions" "mail")
  :homepage   "https://github.com/dabrahams/wl-gravatar"
  :commentary "\

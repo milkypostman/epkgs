@@ -5,5 +5,5 @@
  :authors    (("Philip Weaver" . "philip.weaver@gmail.com"))
  :maintainer ("Philip Weaver" . "philip.weaver@gmail.com")
  :provided   (episode-names media-files media-files-config)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :homepage   "https://github.com/pheaver/media-files.el")

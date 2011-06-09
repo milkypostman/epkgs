@@ -6,8 +6,9 @@
  :maintainer ("Rick Bielawski" . "rbielaws@i1.net")
  :provided   (tal-mode)
  :required   ((("column-marker" column-marker)
-	       ("emacs" imenu which-func)
-	       ("tal-indent" tal-indent)))
+	       ("imenu" imenu)
+	       ("tal-indent" tal-indent)
+	       ("which-func" which-func)))
  :keywords   ("languages" "extensions" "tandem" "guardian" "nsk" "tal" "ptal")
  :homepage   "http://www.emacswiki.org/TalMode"
  :wikipage   "http://www.emacswiki.org/TalMode"

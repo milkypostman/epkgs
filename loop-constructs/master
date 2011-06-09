@@ -5,7 +5,7 @@
  :authors    (("Guillaume Marceau"))
  :maintainer ("Guillaume Marceau")
  :provided   (loop-constructs)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :homepage   "http://gmarceau.qc.ca/"
  :commentary "\
 Defines a few sugary loop constructs which claim to be both

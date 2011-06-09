@@ -5,5 +5,5 @@
  :license    "GPL-2"
  :provided   (xcode-document-viewer)
  :required   ((("anything" anything)
-	       ("emacs" thingatpt)))
+	       ("thingatpt" thingatpt)))
  :homepage   "https://github.com/imakado/emacs-xcode-document-viewer")

@@ -5,7 +5,7 @@
  :authors    (("Tom Breton" . "tob@world.std.com"))
  :maintainer ("Tom Breton" . "tob@world.std.com")
  :provided   (tehom-3)
- :required   ((("emacs" cust-print)
+ :required   ((("emacs-core" cust-print)
 	       (nil cl-read)))
  :keywords   ("extensions")
  :homepage   "www.panix.com/~tehom/"

@@ -6,6 +6,6 @@
  :maintainer ("IMAKADO" . "ken.imakado@gmail.com")
  :provided   (emoji)
  :required   ((("anything" anything)
-	       ("emacs" cl)))
+	       ("cl" cl)))
  :keywords   ("cellphonejapanese")
  :homepage   "http://github.com/imakado/emoji")

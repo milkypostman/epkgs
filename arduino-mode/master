@@ -6,7 +6,7 @@
  :authors    (("Christopher Grim" . "christopher.grim@gmail.com"))
  :maintainer ("Christopher Grim" . "christopher.grim@gmail.com")
  :provided   (arduino-mode)
- :required   ((("emacs" cc-fonts cc-langs cc-menus cc-mode)))
+ :required   ((("cc-mode" cc-fonts cc-langs cc-menus cc-mode)))
  :keywords   ("languages" "arduino")
  :homepage   "https://github.com/bookest/arduino-mode"
  :commentary "\

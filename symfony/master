@@ -6,9 +6,11 @@
  :provided   (symfony)
  :required   ((("anything" anything anything-grep anything-match-plugin)
 	       ("anything-project" anything-project)
-	       ("emacs" cl etags rx)
+	       ("cl" cl)
+	       ("etags" etags)
 	       ("php-completion" php-completion)
-	       ("php-mode" php-mode)))
+	       ("php-mode" php-mode)
+	       ("rx" rx)))
  :homepage   "https://github.com/imakado/emacs-symfony"
  :commentary "\
 tested on emamcs22 and emacs23

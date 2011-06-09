@@ -1,0 +1,23 @@
+(:summary    "Scroll all buffers together minor mode"
+ :created    "1997"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Gary D. Foster" . "gary.foster@corp.sun.com"))
+ :maintainer ("Gary D. Foster" . "gary.foster@corp.sun.com")
+ :provided   (scroll-all)
+ :keywords   ("scroll" "crisp" "brief" "lock")
+ :wikipage   "http://www.emacswiki.org/ScrollAllMode"
+ :commentary "\
+This mode allows multiple buffers to be 'locked' so that scrolling
+   up or down lines in any buffer causes all the buffers to mirror
+   the scrolling.  It hooks into the post-command-hook to check for
+   potential scrolling commands and if we're locked, mirrors them in all
+   windows.  This allows us to grab line-at-a-time scrolling as well as
+   screen-at-a-time scrolling, and doesn't remap any of the keyboard
+   commands to do it.
+
+You can enable and disable this mode with the 'scroll-all-mode' command.
+
+Suggestions/ideas from:
+   Rick Macdonald <rickm@vsl.com>
+   Anders Lindgren <andersl@csd.uu.se>")

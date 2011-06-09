@@ -6,7 +6,7 @@
 	      ("Aaron S. Hawley" . "ashawley@gnu.uvm.edu"))
  :maintainer ("Mark Triggs,")
  :provided   (integers)
- :required   ((("emacs" thingatpt)))
+ :required   ((("thingatpt" thingatpt)))
  :keywords   ("convenience")
  :homepage   "http://www.burlingtontelecom.net/~ashawley/"
  :wikipage   "http://www.emacswiki.org/Integers"

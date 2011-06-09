@@ -5,7 +5,8 @@
  :authors    (("Bastien" . "bzg@altern.org"))
  :maintainer ("Bastien" . "bzg@altern.org")
  :provided   (windresize)
- :required   ((("emacs" ring windmove)))
+ :required   ((("ring" ring)
+	       ("windmove" windmove)))
  :keywords   ("window")
  :commentary "\
 This mode let's you edit the window configuration interactively just

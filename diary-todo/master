@@ -5,7 +5,7 @@
  :authors    (("Martin Schwenke" . "martin@meltin.net"))
  :maintainer (nil . "martin@meltin.net")
  :provided   (diary-todo)
- :required   ((("emacs" todo-mode)))
+ :required   ((("todo-mode" todo-mode)))
  :keywords   ("diary" "todo")
  :homepage   "http://meltin.net/hacks/emacs/"
  :commentary "\

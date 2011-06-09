@@ -4,7 +4,8 @@
  :authors    (("Ricardo E. Gonzalez"))
  :maintainer ("tie-mode at tensilica dot com")
  :provided   (tie-mode)
- :required   ((("emacs" compile easymenu)))
+ :required   ((("compile" compile)
+	       ("easymenu" easymenu)))
  :keywords   ("languages")
  :homepage   "http://www.emacswiki.org/TieMode"
  :wikipage   "http://www.emacswiki.org/TieMode"

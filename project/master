@@ -5,7 +5,10 @@
  :authors    (("Alan Shutko" . "ats@acm.org"))
  :maintainer ("Alan Shutko" . "ats@acm.org")
  :provided   (project)
- :required   ((("emacs" appt cl time-date timezone)))
+ :required   ((("calendar" appt)
+	       ("cl" cl)
+	       ("gnus" time-date)
+	       ("timezone" timezone)))
  :keywords   ("calendar")
  :commentary "\
 project-summarize : Sumarize time spent on heirarchy in given time

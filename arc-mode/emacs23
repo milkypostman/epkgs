@@ -1,0 +1,83 @@
+(:summary    "Simple editing of archives"
+ :created    "1995"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Morten Welinder" . "terra@gnu.org"))
+ :maintainer ("Morten Welinder" . "terra@gnu.org")
+ :provided   (arc-mode archive-mode)
+ :keywords   ("files" "archives" "msdog" "editing" "major-mode")
+ :commentary "\
+NAMING: \"arc\" is short for \"archive\" and does not refer specifically
+to files whose name end in \".arc\"
+
+This code does not decode any files internally, although it does
+understand the directory level of the archives.  For this reason,
+you should expect this code to need more fiddling than tar-mode.el
+(although it at present has fewer bugs :-)  In particular, I have
+not tested this under Ms-Dog myself.
+-------------------------------------
+INTERACTION: arc-mode.el should play together with
+
+* ange-ftp.el: Remote archives (i.e., ones that ange-ftp has brought
+               to you) are handled by doing all updates on a local
+               copy.  When you make changes to a remote file the
+               changes will first take effect when the archive buffer
+               is saved.  You will be warned about this.
+
+* dos-fns.el:  (Part of Emacs 19).  You get automatic ^M^J <--> ^J
+               conversion.
+
+arc-mode.el does not work well with crypt++.el; for the archives as
+such this could be fixed (but wouldn't be useful) by declaring such
+archives to be \"remote\".  For the members this is a general Emacs
+problem that 19.29's file formats may fix.
+-------------------------------------
+ARCHIVE TYPES: Currently only the archives below are handled, but the
+structure for handling just about anything is in place.
+
+			Arc	Lzh	Zip	Zoo	 Rar
+			----------------------------------------
+View listing		Intern	Intern	Intern	Intern   Y
+Extract member	Y	Y	Y	Y        Y
+Save changed member	Y	Y	Y	Y        N
+Add new member	N	N	N	N        N
+Delete member	Y	Y	Y	Y        N
+Rename member	Y	Y	N	N        N
+Chmod		-	Y	Y	-        N
+Chown		-	Y	-	-        N
+Chgrp		-	Y	-	-        N
+
+Special thanks to Bill Brodie <wbrodie@panix.com> for very useful tips
+on the first released version of this package.
+
+This code is partly based on tar-mode.el from Emacs.
+-------------------------------------
+ARCHIVE STRUCTURES:
+(This is mostly for myself.)
+
+ARC         A series of (header,file).  No interactions among members.
+
+LZH         A series of (header,file).  Headers are checksummed.  No
+            interaction among members.
+            Headers come in three flavours called level 0, 1 and 2 headers.
+            Level 2 header is free of DOS specific restrictions and most
+            prevalently used.  Also level 1 and 2 headers consist of base
+            and extension headers.  For more details see
+            http://homepage1.nifty.com/dangan/en/Content/Program/Java/jLHA/Notes/Notes.html
+            http://www.osirusoft.com/joejared/lzhformat.html
+
+ZIP         A series of (lheader,fil) followed by a \"central directory\"
+            which is a series of (cheader) followed by an end-of-
+            central-dir record possibly followed by junk.  The e-o-c-d
+            links to c-d.  cheaders link to lheaders which are basically
+            cut-down versions of the cheaders.
+
+ZOO         An archive header followed by a series of (header,file).
+            Each member header points to the next.  The archive is
+            terminated by a bogus header with a zero next link.
+-------------------------------------
+HOOKS: `foo' means one of the supported archive types.
+
+archive-mode-hook
+archive-foo-mode-hook
+archive-extract-hooks")

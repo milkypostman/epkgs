@@ -5,8 +5,9 @@
  :authors    (("Takeshi Banse" . "takebi@laafc.net"))
  :maintainer ("Takeshi Banse" . "takebi@laafc.net")
  :provided   (eval-sexp-fu)
- :required   ((("emacs" cl rx)
-	       ("highlight" highlight)))
+ :required   ((("cl" cl)
+	       ("highlight" highlight)
+	       ("rx" rx)))
  :keywords   ("lisp" "highlight" "convenience")
  :homepage   "http://www.emacswiki.org/EvalSexpFu"
  :wikipage   "http://www.emacswiki.org/EvalSexpFu"

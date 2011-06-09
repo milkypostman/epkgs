@@ -6,6 +6,7 @@
 	      ("Johan Dykström" . "johan.dykstrom@relogic.se"))
  :maintainer ("Alexander Baltatzis" . "alexander@baltatzis.com")
  :provided   (jtags)
- :required   ((("emacs" cl etags)))
+ :required   ((("cl" cl)
+	       ("etags" etags)))
  :keywords   ("java" "tags" "etags")
  :homepage   "http://jtags.sourceforge.net/")

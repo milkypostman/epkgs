@@ -4,7 +4,7 @@
  :license    "GPL-3"
  :authors    ((nil . "andy stewart lazycat.manatee@gmail.com"))
  :provided   (elisp-depend)
- :required   ((("emacs" thingatpt)))
+ :required   ((("thingatpt" thingatpt)))
  :keywords   ("elisp-depend")
  :homepage   "http://www.emacswiki.org/ElispDepend"
  :wikipage   "http://www.emacswiki.org/ElispDepend"

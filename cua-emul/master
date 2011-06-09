@@ -5,7 +5,7 @@
  :authors    (("lawrence mitchell" . "wence@gmx.li"))
  :maintainer ("lawrence mitchell" . "wence@gmx.li")
  :provided   (cua-emul)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("buffer-switching" "convenience")
  :homepage   "http://www.ph.ed.ac.uk/~s0198183/"
  :commentary "\

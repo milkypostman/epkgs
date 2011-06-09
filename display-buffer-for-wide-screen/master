@@ -5,7 +5,7 @@
  :authors    (("rubikitch" . "rubikitch@ruby-lang.org"))
  :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
  :provided   (display-buffer-for-wide-screen)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("extensions")
  :commentary "\
 Set `display-buffer-function' to

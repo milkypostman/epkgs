@@ -1,0 +1,9 @@
+(:summary    "Electric Command History Mode"
+ :created    "1985"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("K. Shane Hartman"))
+ :maintainer ("FSF")
+ :provided   (echistory)
+ :required   ((("chistory" chistory)
+	       ("electric" electric))))

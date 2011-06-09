@@ -5,7 +5,7 @@
  :authors    (("Ulf Jasper" . "ulf.jasper@web.de"))
  :maintainer ("Ulf Jasper" . "ulf.jasper@web.de")
  :provided   (u-color-cycle)
- :required   ((("emacs" overlay)))
+ :required   ((("emacs-core" overlay)))
  :keywords   ("games" "fun" "eye-candy" "ulf" "exp")
  :homepage   "http://ulf.epplejasper.de/EmacsFunStuff.html"
  :commentary "\

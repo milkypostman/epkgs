@@ -5,7 +5,8 @@
  :authors    (("Yoni Rabkin" . "yonirabkin@member.fsf.org"))
  :maintainer ("Yoni Rabkin" . "yonirabkin@member.fsf.org")
  :provided   (diamondsms)
- :required   ((("emacs" url xml)))
+ :required   ((("url" url)
+	       ("xml" xml)))
  :commentary "\
 Installation:
 

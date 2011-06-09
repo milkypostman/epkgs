@@ -1,0 +1,13 @@
+(:summary    "Convert refer-style references to ones usable by Latex bib"
+ :created    "1989"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Henry Kautz" . "kautz@research.att.com"))
+ :maintainer ("FSF")
+ :provided   (refbib refer-to-bibtex)
+ :keywords   ("bib" "tex")
+ :commentary "\
+Use: from a buffer containing the refer-style bibliography,
+  M-x r2b-convert-buffer
+Program will prompt for an output buffer name, and will log
+warnings during the conversion process in the buffer *Log*.")

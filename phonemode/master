@@ -3,5 +3,5 @@
  :authors    (("Deepak Goel" . "dgoel@wam.umd.edu"))
  :maintainer ("Deepak Goel" . "dgoel@wam.umd.edu")
  :provided   (phonemode)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :homepage   "http://www.gnufans.net/~deego/emacs.html")

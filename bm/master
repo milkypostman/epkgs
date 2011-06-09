@@ -2,7 +2,8 @@
  :repository (cvs . ":pserver:anonymous@cvs.savannah.nongnu.org:/sources/bm")
  :license    "GPL-2"
  :provided   (bm)
- :required   ((("emacs" info overlay)))
+ :required   ((("emacs-core" overlay)
+	       ("info" info)))
  :homepage   "http://www.nongnu.org/bm/"
  :wikipage   "http://www.emacswiki.org/VisibleBookmarks"
  :commentary "\

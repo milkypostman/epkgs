@@ -4,7 +4,8 @@
  :authors    (("Benjamin Drieu"))
  :maintainer ("Benjamin Drieu")
  :provided   (pong)
- :required   ((("emacs" cl gamegrid)))
+ :required   ((("cl" cl)
+	       ("gamegrid" gamegrid)))
  :keywords   ("games")
  :homepage   "http://www.grassouille.org/emacs/index.en.html"
  :commentary "\

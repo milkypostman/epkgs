@@ -5,7 +5,7 @@
  :authors    (("Matthew L. Fidler"))
  :maintainer ("Matthew L. Fidler")
  :provided   (yas-jit)
- :required   ((("emacs" cl))
+ :required   ((("cl" cl))
 	      (("yasnippet" yasnippet)
 	       (nil yasnippet-bundle)))
  :keywords   ("yasnippet" "fast")

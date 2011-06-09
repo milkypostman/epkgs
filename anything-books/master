@@ -6,8 +6,8 @@
  :authors    (("SAKURAI Masashi" . "m.sakurai@kiwanami.net"))
  :maintainer ("SAKURAI Masashi" . "m.sakurai@kiwanami.net")
  :provided   (anything-books)
- :required   ((("deferred" concurrent)
-	       ("emacs" cl)))
+ :required   ((("cl" cl)
+	       ("deferred" concurrent)))
  :keywords   ("anything" "convenience")
  :homepage   "https://github.com/kiwanami/emacs-anything-books"
  :commentary "\

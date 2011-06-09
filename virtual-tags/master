@@ -6,7 +6,7 @@
  :authors    ((nil . "tm8st@hotmail.co.jp"))
  :maintainer (nil . "tm8st@hotmail.co.jp")
  :provided   (virtual-tags)
- :required   ((("emacs" etags)
+ :required   ((("etags" etags)
 	       ("gtags" gtags)
 	       (nil anything-etags)))
  :keywords   ("tags" "virtual")

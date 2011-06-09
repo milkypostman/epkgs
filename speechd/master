@@ -6,7 +6,9 @@
  :authors    (("Milan Zamazal" . "pdm@brailcom.org"))
  :maintainer ("Milan Zamazal" . "pdm@brailcom.org")
  :provided   (braille brltty mmanager speechd speechd-braille speechd-brltty speechd-bug speechd-common speechd-compile speechd-out speechd-speak speechd-ssip speechd-version)
- :required   ((("emacs" cl eieio reporter)))
+ :required   ((("cedet" eieio)
+	       ("cl" cl)
+	       ("reporter" reporter)))
  :homepage   "http://www.freebsoft.org/speechd-el"
  :commentary "\
 This library allows you to communicate with Speech Dispatcher.

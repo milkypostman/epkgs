@@ -6,7 +6,7 @@
  :authors    (("Yoshiki Kurihara" . "kurihara@cpan.org"))
  :maintainer ("Yoshiki Kurihara" . "kurihara@cpan.org")
  :provided   (tmt-mode)
- :required   ((("emacs" tempo)))
+ :required   ((("tempo" tempo)))
  :keywords   ("perl" "template" "mode")
  :homepage   "https://github.com/yoshiki/tmt-mode"
  :commentary "\

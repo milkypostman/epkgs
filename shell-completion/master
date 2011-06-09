@@ -5,7 +5,8 @@
  :authors    (("Ye Wenbin" . "wenbinye@163.com"))
  :maintainer ("Ye Wenbin" . "wenbinye@163.com")
  :provided   (shell-completion)
- :required   ((("emacs" cl comint)))
+ :required   ((("cl" cl)
+	       ("comint" comint)))
  :keywords   ("completion" "shell")
  :commentary "\
 Put this file into your load-path and the following into your ~/.emacs:

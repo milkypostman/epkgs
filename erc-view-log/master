@@ -6,7 +6,7 @@
 	      ("Thomas Riccardi" . "riccardi.thomas@gmail.com"))
  :maintainer ("Antoine Levitt")
  :provided   (erc-view-log)
- :required   ((("emacs" erc)))
+ :required   ((("erc" erc)))
  :keywords   ("erc" "viewer" "logs" "colors")
  :homepage   "http://github.com/Niluge-KiWi/erc-view-log/"
  :wikipage   "http://www.emacswiki.org/ErcViewLog"

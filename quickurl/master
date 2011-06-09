@@ -5,7 +5,10 @@
  :authors    (("Dave Pearson" . "davep@davep.org"))
  :maintainer ("Dave Pearson" . "davep@davep.org")
  :provided   (quickurl)
- :required   ((("emacs" browse-url cl pp thingatpt)))
+ :required   ((("browse-url" browse-url)
+	       ("cl" cl)
+	       ("emacs-core" pp)
+	       ("thingatpt" thingatpt)))
  :keywords   ("hypermedia")
  :homepage   "http://www.davep.org/emacs/"
  :commentary "\

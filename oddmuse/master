@@ -3,7 +3,10 @@
  :updated    "20080421"
  :license    "GPL-2"
  :provided   (oddmuse)
- :required   ((("emacs" cl sgml-mode skeleton url)))
+ :required   ((("cl" cl)
+	       ("sgml-mode" sgml-mode)
+	       ("skeleton" skeleton)
+	       ("url" url)))
  :homepage   "http://www.emacswiki.org/OddmuseMode"
  :wikipage   "http://www.emacswiki.org/OddmuseMode"
  :commentary "\

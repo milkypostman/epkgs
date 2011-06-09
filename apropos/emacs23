@@ -1,0 +1,42 @@
+(:summary    "Apropos commands for users and programmers"
+ :created    "1989"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Joe Wells" . "jbw@bigbird.bu.edu")
+	      ("Daniel Pfeiffer" . "occitan@esperanto.org"))
+ :maintainer ("Joe Wells" . "jbw@bigbird.bu.edu")
+ :provided   (apropos)
+ :required   ((("button" button)
+	       ("cl" cl)))
+ :keywords   ("help")
+ :wikipage   "http://www.emacswiki.org/AproposMode"
+ :commentary "\
+The ideas for this package were derived from the C code in
+src/keymap.c and elsewhere.  The functions in this file should
+always be byte-compiled for speed.  Someone should rewrite this in
+C (as part of src/keymap.c) for speed.
+
+The idea for super-apropos is based on the original implementation
+by Lynn Slater <lrs@esl.com>.
+
+History:
+Fixed bug, current-local-map can return nil.
+Change, doesn't calculate key-bindings unless needed.
+Added super-apropos capability, changed print functions.
+Made fast-apropos and super-apropos share code.
+Sped up fast-apropos again.
+Added apropos-do-all option.
+Added fast-command-apropos.
+Changed doc strings to comments for helping functions.
+Made doc file buffer read-only, buried it.
+Only call substitute-command-keys if do-all set.
+
+Optionally use configurable faces to make the output more legible.
+Differentiate between command, function and macro.
+Apropos-command (ex command-apropos) does cmd and optionally user var.
+Apropos shows all 3 aspects of symbols (fn, var and plist)
+Apropos-documentation (ex super-apropos) now finds all it should.
+New apropos-value snoops through all values and optionally plists.
+Reading DOC file doesn't load nroff.
+Added hypertext following of documentation, mouse-2 on variable gives value
+  from buffer in active window.")

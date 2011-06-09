@@ -5,7 +5,9 @@
  :authors    (("Peter S. Galbraith" . "psg@debian.org"))
  :maintainer ("Peter S. Galbraith" . "psg@debian.org")
  :provided   (gri-mode)
- :required   ((("emacs" cl imenu info)))
+ :required   ((("cl" cl)
+	       ("imenu" imenu)
+	       ("info" info)))
  :keywords   ("gri" "xemacs")
  :homepage   "http://gri.sourceforge.net/"
  :commentary "\

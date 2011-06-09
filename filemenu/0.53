@@ -5,7 +5,7 @@
  :authors    (("Will Mengarini" . "seldon@eskimo.com"))
  :maintainer ("Will Mengarini" . "seldon@eskimo.com")
  :provided   (filemenu)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("abbrev" "files" "filemenu" "menu")
  :homepage   "http://www.eskimo.com/~seldon/"
  :commentary "\

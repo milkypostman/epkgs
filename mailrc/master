@@ -4,7 +4,7 @@
  :authors    (("Joakim Hove" . "joakim.hove@phys.ntnu.no"))
  :maintainer ("Joakim Hove" . "joakim.hove@phys.ntnu.no")
  :provided   (mailrc)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("mailrc" "adressbook")
  :commentary "\
 Installation:

@@ -6,7 +6,8 @@
  :authors    (("Nikolaj Schumacher" . "bugs@nschum.de"))
  :maintainer ("Nikolaj Schumacher" . "bugs@nschum.de")
  :provided   (compile-bookmarks)
- :required   ((("emacs" compile recentf)))
+ :required   ((("compile" compile)
+	       ("recentf" recentf)))
  :keywords   ("tools" "processes")
  :homepage   "http://nschum.de/src/emacs/compile-bookmarks"
  :wikipage   "http://www.emacswiki.org/CompileBookmarks"

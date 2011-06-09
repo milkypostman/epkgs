@@ -5,7 +5,8 @@
  :authors    (("Kevin Ryde" . "user42@zip.com.au"))
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (tty-format)
- :required   ((("emacs" ansi-color cus-face)))
+ :required   ((("ansi-color" ansi-color)
+	       ("custom" cus-face)))
  :keywords   ("wp" "faces")
  :wikipage   "http://www.emacswiki.org/TtyFormat"
  :commentary "\

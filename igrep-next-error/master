@@ -5,7 +5,7 @@
  :authors    (("Kevin Rodgers" . "ihs_4664@yahoo.com"))
  :maintainer ("Kevin Rodgers" . "ihs_4664@yahoo.com")
  :provided   (igrep-next-error)
- :required   ((("emacs" custom)
+ :required   ((("custom" custom)
 	       ("igrep" igrep)))
  :keywords   ("search" "highlight")
  :commentary "\

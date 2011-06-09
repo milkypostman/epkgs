@@ -5,7 +5,8 @@
  :authors    (("Sacha Chua" . "sacha@free.net.ph"))
  :maintainer ("Sacha Chua" . "sacha@free.net.ph")
  :provided   (pcmpl-arch)
- :required   ((("emacs" executable pcomplete)))
+ :required   ((("executable" executable)
+	       ("pcomplete" pcomplete)))
  :commentary "\
 These functions provide completion rules for the `tla' tool of the
 arch revision control system.")

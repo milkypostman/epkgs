@@ -2,5 +2,5 @@
  :authors    (("Sami Salkosuo" . "sami@roguemail.net"))
  :maintainer ("Sami Salkosuo" . "sami@roguemail.net")
  :provided   (elite-for-emacs)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :homepage   "http://www.elite-for-emacs.org/elite-for-emacs/")

@@ -5,7 +5,7 @@
  :authors    (("Stephen Eglen" . "stephen@anc.ed.ac.uk"))
  :maintainer ("Stephen Eglen" . "stephen@anc.ed.ac.uk")
  :provided   (fm)
- :required   ((("emacs" overlay)))
+ :required   ((("emacs-core" overlay)))
  :keywords   ("outlines")
  :homepage   "http://www.anc.ed.ac.uk/~stephen/emacs/"
  :commentary "\

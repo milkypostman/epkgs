@@ -1,0 +1,152 @@
+(:summary    "A Newsticker for Emacs"
+ :repository (cvs . ":pserver:anonymous@cvs.savannah.nongnu.org:/sources/newsticker")
+ :created    "2003"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Ulf Jasper" . "ulf.jasper@web.de"))
+ :maintainer ("Ulf Jasper" . "ulf.jasper@web.de")
+ :provided   (newst-backend newst-plainview newst-reader newst-ticker newst-treeview newsticker)
+ :required   ((("emacs-core" derived)
+	       ("gnus" time-date)
+	       ("tree-widget" tree-widget)
+	       ("widget" wid-edit widget)
+	       ("xml" xml)))
+ :keywords   ("news" "rss" "atom")
+ :homepage   "http://www.nongnu.org/newsticker/"
+ :wikipage   "http://www.emacswiki.org/NewsTicker"
+ :commentary "\
+Overview
+--------
+
+Newsticker provides a newsticker for Emacs.  A newsticker is a thing
+that asynchronously retrieves headlines from a list of news sites,
+prepares these headlines for reading, and allows for loading the
+corresponding articles in a web browser.
+
+Headlines consist of a title and (possibly) a small description.  They
+are contained in \"RSS\" (RDF Site Summary) or \"Atom\" files.  Newsticker
+should work with the following RSS formats:
+ * RSS 0.91
+   (see http://backend.userland.com/rss091 or
+   http://my.netscape.com/publish/formats/rss-spec-0.91.html)
+ * RSS 0.92
+   (see http://backend.userland.com/rss092)
+ * RSS 1.0
+   (see http://purl.org/rss/1.0/spec)
+ * RSS 2.0
+   (see http://blogs.law.harvard.edu/tech/rss)
+as well as the following Atom formats:
+ * Atom 0.3
+ * Atom 1.0
+   (see http://www.ietf.org/internet-drafts/draft-ietf-atompub-format-11.txt)
+That makes Newsticker.el an \"Atom aggregator, \"RSS reader\", \"RSS
+aggregator\", and \"Feed Reader\".
+
+Newsticker provides several commands for reading headlines, navigating
+through them, marking them as read/unread, hiding old headlines
+etc.  Headlines can be displayed as plain text or as rendered HTML.
+
+Headlines can be displayed in the echo area, either scrolling like
+messages in a stock-quote ticker, or just changing.
+
+Newsticker allows for automatic processing of headlines by providing
+hooks and (sample) functions for automatically downloading images and
+enclosed files (as delivered by podcasts, e.g.).
+
+Requirements
+------------
+Newsticker can be used with GNU Emacs version 21.1 or later as well as
+XEmacs.  It requires an XML-parser (`xml.el') which is part of GNU
+Emacs.  If you are using XEmacs you want to get the `net-utils' package
+which contains `xml.el' for XEmacs.
+
+Newsticker requires a program which can retrieve files via http and
+prints them to stdout.  By default Newsticker will use wget for this
+task.
+
+Installation
+------------
+
+If you are using Newsticker as part of GNU Emacs there is no need to
+perform any installation steps in order to use Newsticker.  Otherwise
+place Newsticker in a directory where Emacs can find it.  Add the
+following line to your Emacs startup file (`~/.emacs').
+  (add-to-list 'load-path \"/path/to/newsticker/\")
+  (autoload 'newsticker-start \"newsticker\" \"Emacs Newsticker\" t)
+  (autoload 'newsticker-show-news \"newsticker\" \"Emacs Newsticker\" t)
+
+If you are using `imenu', which allows for navigating with the help of a
+menu, you should add the following to your Emacs startup file
+(`~/.emacs').
+  (add-hook 'newsticker-mode-hook 'imenu-add-menubar-index)
+
+That's it.
+
+Usage
+-----
+The command newsticker-show-news will display all available headlines in
+a special buffer, called `*newsticker*'.  It will also start the
+asynchronous download of headlines.  The modeline in the `*newsticker*'
+buffer informs whenever new headlines have arrived.  Clicking
+mouse-button 2 or pressing RET in this buffer on a headline will call
+browse-url to load the corresponding news story in your favourite web
+browser.
+
+The scrolling, or flashing of headlines in the echo area, can be started
+with the command newsticker-start-ticker.  It can be stopped with
+newsticker-stop-ticker.
+
+If you just want to start the periodic download of headlines use the
+command newsticker-start.  Calling newsticker-stop will stop the
+periodic download, but will call newsticker-stop-ticker as well.
+
+Configuration
+-------------
+All Newsticker options are customizable, i.e. they can be changed with
+Emacs customization methods: Call the command customize-group and enter
+`newsticker' for the customization group.
+
+All Newsticker options have reasonable default values, so that in most
+cases it is not necessary to customize settings before starting
+Newsticker for the first time.
+
+Newsticker options are organized in the following groups.
+
+* newsticker-feed contains options that define which news
+  feeds are retrieved and how this is done.
+  o newsticker-url-list defines the list of headlines which are
+    retrieved.
+  o newsticker-retrieval-interval defines how often headlines are
+    retrieved.
+* newsticker-headline-processing contains options that define how the
+  retrieved headlines are processed.
+  o newsticker-keep-obsolete-items decides whether unread headlines that
+    have been removed from the feed are kept in the Newsticker cache.
+* newsticker-layout contains options that define how the buffer for
+  reading news headlines is formatted.
+  o newsticker-item-format defines how the title of a headline is
+    formatted.
+* newsticker-ticker contains options that define how headlines are shown
+  in the echo area.
+  o newsticker-display-interval and newsticker-scroll-smoothly define
+    how headlines are shown in the echo area.
+* newsticker-hooks contains options for hooking other Emacs commands to
+  newsticker functions.
+  o newsticker-new-item-functions allows for automatic processing of
+    headlines.  See `newsticker-download-images', and
+    `newsticker-download-enclosures' for sample functions.
+* newsticker-miscellaneous contains other Newsticker options.
+
+Please have a look at the customization buffers for the complete list of
+options.
+
+Remarks
+-------
+This newsticker is designed do its job silently in the background
+without disturbing you.  However, it is probably impossible to prevent
+such a tool from slightly attenuating your Editor's responsiveness every
+once in a while.
+
+Byte-compiling newsticker.el is recommended.
+
+======================================================================")

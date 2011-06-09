@@ -5,7 +5,10 @@
  :authors    (("Kahlil (Kal) HODGSON" . "dorge@tpg.com.au"))
  :maintainer ("Kahlil (Kal) HODGSON" . "dorge@tpg.com.au")
  :provided   (plsql)
- :required   ((("emacs" align cl imenu sql)))
+ :required   ((("align" align)
+	       ("cl" cl)
+	       ("imenu" imenu)
+	       ("sql" sql)))
  :keywords   ("languages")
  :homepage   "http://www.emacswiki.org/PlsqlMode"
  :wikipage   "http://www.emacswiki.org/PlsqlMode")

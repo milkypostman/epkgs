@@ -5,7 +5,8 @@
  :authors    (("Eugene V. Markov"))
  :maintainer ("Eugene V. Markov")
  :provided   (bookmark-add)
- :required   ((("emacs" bookmark wid-edit)))
+ :required   ((("bookmark" bookmark)
+	       ("widget" wid-edit)))
  :keywords   ("bookmarks" "placeholders" "annotations")
  :commentary "\
 `bookmark-open-in-symply-buffer' will generate buffer named

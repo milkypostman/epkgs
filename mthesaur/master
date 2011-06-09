@@ -4,7 +4,8 @@
  :authors    (("Tad Ashlock" . "taashlo@cyberdude.com"))
  :maintainer ("Tad Ashlock" . "taashlo@cyberdude.com")
  :provided   (mthesaur)
- :required   ((("emacs" cl thingatpt)))
+ :required   ((("cl" cl)
+	       ("thingatpt" thingatpt)))
  :commentary "\
 This code was inspired by thesaurus.el by Ray Nickson.
 

@@ -5,7 +5,8 @@
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")
  :provided   (cc-mode+)
- :required   ((("emacs" cc-mode cl))
+ :required   ((("cc-mode" cc-mode)
+	       ("cl" cl))
 	      (("imenu+" imenu+)))
  :keywords   ("c" "programming")
  :commentary "\

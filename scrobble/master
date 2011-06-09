@@ -6,7 +6,8 @@
  :authors    (("Lars Magne Ingebrigtsen" . "larsi@gnus.org"))
  :maintainer ("Lars Magne Ingebrigtsen" . "larsi@gnus.org")
  :provided   (scrobble)
- :required   ((("emacs" cl mm-url)))
+ :required   ((("cl" cl)
+	       ("gnus" mm-url)))
  :keywords   ("home" "automation")
  :homepage   "https://github.com/larsmagne/scrobble.el"
  :commentary "\

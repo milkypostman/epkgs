@@ -1,0 +1,13 @@
+(:summary    "Major mode for editing and running Prolog under Emacs"
+ :created    "1986"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Masanobu UMEDA" . "umerin@mse.kyutech.ac.jp"))
+ :maintainer ("Masanobu UMEDA" . "umerin@mse.kyutech.ac.jp")
+ :provided   (prolog)
+ :keywords   ("languages")
+ :wikipage   "http://www.emacswiki.org/PrologMode"
+ :commentary "\
+This package provides a major mode for editing Prolog.  It knows
+about Prolog syntax and comments, and can send regions to an inferior
+Prolog interpreter process.  Font locking is tuned towards GNU Prolog.")

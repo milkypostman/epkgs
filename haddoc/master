@@ -6,7 +6,7 @@
  :authors    (("Martin Blais" . "blais@furius.ca"))
  :maintainer ("Martin Blais" . "blais@furius.ca")
  :provided   (haddoc)
- :required   ((("emacs" browse-url)))
+ :required   ((("browse-url" browse-url)))
  :homepage   "http://furius.ca/haddoc/"
  :commentary "\
 From a database of parsed Python HTML indexes, queries that database using an

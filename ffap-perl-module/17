@@ -5,7 +5,10 @@
  :authors    (("Kevin Ryde" . "user42@zip.com.au"))
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (ffap-perl-module)
- :required   ((("emacs" advice cl ffap thingatpt)))
+ :required   ((("advice" advice)
+	       ("cl" cl)
+	       ("ffap" ffap)
+	       ("thingatpt" thingatpt)))
  :keywords   ("files")
  :homepage   "http://user42.tuxfamily.org/ffap-perl-module/index.html"
  :commentary "\

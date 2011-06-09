@@ -5,7 +5,8 @@
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")
  :provided   (imenu+)
- :required   ((("emacs" cl imenu)))
+ :required   ((("cl" cl)
+	       ("imenu" imenu)))
  :keywords   ("tools" "menus")
  :commentary "\
 Extensions to `imenu.el'.

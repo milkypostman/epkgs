@@ -4,7 +4,7 @@
  :authors    (("Kevin A. Burton" . "burton@openprivacy.org"))
  :maintainer ("Kevin A. Burton" . "burton@openprivacy.org")
  :provided   (wget)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("wget")
  :wikipage   "http://www.emacswiki.org/EmacsWget"
  :commentary "\

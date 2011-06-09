@@ -1,6 +1,4 @@
 (:created    "2008"
  :updated    "2008"
  :license    "GPL-2"
- :provided   (echoline-mode)
- :homepage   "http://www.emacswiki.org/Echoline"
- :wikipage   "http://www.emacswiki.org/Echoline")
+ :provided   (echoline-mode))

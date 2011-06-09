@@ -7,7 +7,7 @@
 	      ("sebastian_rose gmx de"))
  :maintainer ("Sebastian Rose")
  :provided   (org-osm-link osm-maps)
- :required   ((("emacs" org)))
+ :required   ((("org-mode" org)))
  :homepage   "https://github.com/SebastianRose/org-osm"
  :commentary "\
 Add a special Org link type, that, when clicked, opens an

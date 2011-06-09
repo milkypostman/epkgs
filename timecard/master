@@ -1,3 +1,3 @@
 (:summary    "Keep track of time spent on tasks"
  :provided   (timecard)
- :required   ((("emacs" cl))))
+ :required   ((("cl" cl))))

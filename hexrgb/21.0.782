@@ -5,7 +5,7 @@
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")
  :provided   (hexrgb)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("number" "hex" "rgb" "color" "background" "frames" "display")
  :commentary "\
 Functions to manipulate colors, including RGB hex strings.

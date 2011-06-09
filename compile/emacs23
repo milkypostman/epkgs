@@ -1,0 +1,54 @@
+(:summary    "Run compiler as inferior of Emacs, parse error messages"
+ :created    "1985"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Roland McGrath" . "roland@gnu.org")
+	      ("Daniel Pfeiffer" . "occitan@esperanto.org"))
+ :maintainer ("FSF")
+ :provided   (compile)
+ :required   ((("cl" cl)
+	       ("comint" comint)
+	       ("emacs-core" tool-bar)))
+ :keywords   ("tools" "processes")
+ :commentary "\
+This package provides the compile facilities documented in the Emacs user's
+manual.
+
+This mode uses some complex data-structures:
+
+  LOC (or location) is a list of (COLUMN LINE FILE-STRUCTURE)
+
+COLUMN and LINE are numbers parsed from an error message.  COLUMN and maybe
+LINE will be nil for a message that doesn't contain them.  Then the
+location refers to a indented beginning of line or beginning of file.
+Once any location in some file has been jumped to, the list is extended to
+(COLUMN LINE FILE-STRUCTURE MARKER TIMESTAMP . VISITED)
+for all LOCs pertaining to that file.
+MARKER initially points to LINE and COLUMN in a buffer visiting that file.
+Being a marker it sticks to some text, when the buffer grows or shrinks
+before that point.  VISITED is t if we have jumped there, else nil.
+TIMESTAMP is necessary because of \"incremental compilation\": `omake -P'
+polls filesystem for changes and recompiles when a file is modified
+using the same *compilation* buffer. this necessitates re-parsing markers.
+
+  FILE-STRUCTURE is a list of
+  ((FILENAME DIRECTORY) FORMATS (LINE LOC ...) ...)
+
+FILENAME is a string parsed from an error message.  DIRECTORY is a string
+obtained by following directory change messages.  DIRECTORY will be nil for
+an absolute filename.  FORMATS is a list of formats to apply to FILENAME if
+a file of that name can't be found.
+The rest of the list is an alist of elements with LINE as key.  The keys
+are either nil or line numbers.  If present, nil comes first, followed by
+the numbers in decreasing order.  The LOCs for each line are again an alist
+ordered the same way.  Note that the whole file structure is referenced in
+every LOC.
+
+  MESSAGE is a list of (LOC TYPE END-LOC)
+
+TYPE is 0 for info or 1 for warning if the message matcher identified it as
+such, 2 otherwise (for a real error).  END-LOC is a LOC pointing to the
+other end, if the parsed message contained a range.  If the end of the
+range didn't specify a COLUMN, it defaults to -1, meaning end of line.
+These are the value of the `message' text-properties in the compilation
+buffer.")

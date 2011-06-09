@@ -1,4 +1,4 @@
 (:updated    "20040413"
  :provided   (autoload-make)
- :required   ((("emacs" autoload)))
+ :required   ((("emacs-core" autoload)))
  :homepage   "http://sugarshark.com/elisp/ProjectPage.html")

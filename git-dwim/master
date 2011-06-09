@@ -5,7 +5,7 @@
  :authors    (("rubikitch" . "rubikitch@ruby-lang.org"))
  :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
  :provided   (git-dwim)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("git" "tools" "convenience")
  :homepage   "http://www.emacswiki.org/GitDwim"
  :wikipage   "http://www.emacswiki.org/GitDwim"

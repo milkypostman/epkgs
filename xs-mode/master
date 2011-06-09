@@ -5,7 +5,8 @@
  :authors    ((nil . "wenbinye@gmail.com"))
  :maintainer (nil . "wenbinye@gmail.com")
  :provided   (xs-mode)
- :required   ((("emacs" cc-mode cl)))
+ :required   ((("cc-mode" cc-mode)
+	       ("cl" cl)))
  :commentary "\
 This elisp is for fix font-lock highlighting when use c-mode as
 major mode in XS files. The indentation of XS code is too difficult

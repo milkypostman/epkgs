@@ -4,7 +4,7 @@
  :license    "GPL-2"
  :authors    (("Zajcev Evgeny" . "zevlg@yandex.ru"))
  :provided   (prefixkey)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("keyboard")
  :homepage   "http://lgarc.narod.ru/xemacs/"
  :wikipage   "http://www.emacswiki.org/PrefixKey"

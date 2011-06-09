@@ -5,7 +5,8 @@
  :authors    (("Eli Barzilay" . "eli@barzilay.org"))
  :maintainer ("Eli Barzilay" . "eli@barzilay.org")
  :provided   (calculator)
- :required   ((("emacs" ehelp electric)))
+ :required   ((("ehelp" ehelp)
+	       ("electric" electric)))
  :keywords   ("tools" "convenience")
  :homepage   "http://www.barzilay.org/"
  :wikipage   "http://www.emacswiki.org/SimpleCalculator"

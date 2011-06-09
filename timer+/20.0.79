@@ -5,9 +5,10 @@
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")
  :provided   (timer+)
- :required   ((("emacs" cl timer))
-	      (("emacs" thingatpt)
-	       ("icicles" icicles)
+ :required   ((("cl" cl)
+	       ("timer" timer))
+	      (("icicles" icicles)
+	       ("thingatpt" thingatpt)
 	       ("thingatpt+" thingatpt+)))
  :keywords   ("processes" "calendar")
  :commentary "\

@@ -5,7 +5,7 @@
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")
  :provided   (oneonone)
- :required   ((("emacs" cl)
+ :required   ((("cl" cl)
 	       ("hexrgb" hexrgb))
 	      (("files+" files+)
 	       ("fit-frame" fit-frame)

@@ -5,7 +5,8 @@
  :authors    (("Kim F. Storm" . "storm@cua.dk"))
  :maintainer ("Kim F. Storm" . "storm@cua.dk")
  :provided   (ido)
- :required   ((("emacs" cl custom)))
+ :required   ((("cl" cl)
+	       ("custom" custom)))
  :keywords   ("extensions" "convenience")
  :homepage   "http://www.cua.dk/ido.html"
  :wikipage   "http://www.emacswiki.org/InteractivelyDoThings"

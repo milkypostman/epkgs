@@ -6,4 +6,4 @@
 	      ("Sami Samhuri" . "sami.samhuri@gmail.com"))
  :maintainer ("Jonathan Arkell" . "jonnay@jonnay.net")
  :provided   (mojo)
- :required   ((("emacs" json))))
+ :required   ((("json" json))))

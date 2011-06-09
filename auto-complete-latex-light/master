@@ -7,7 +7,7 @@
  :maintainer ("tequilasunset" . "tequilasunset.mac@gmail.com")
  :provided   (auto-complete-latex-light)
  :required   ((("auto-complete" auto-complete)
-	       ("emacs" cl)))
+	       ("cl" cl)))
  :keywords   ("latex" "completion")
  :homepage   "https://github.com/tequilasunset/auto-complete-latex-light"
  :commentary "\

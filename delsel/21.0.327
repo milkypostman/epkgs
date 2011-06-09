@@ -6,7 +6,7 @@
 	      ("Drew Adams"))
  :maintainer ("D. ADAMS")
  :provided   (delsel)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("abbrev" "emulations" "local" "convenience")
  :commentary "\
 Let DEL delete the region; let character insertion replace it.

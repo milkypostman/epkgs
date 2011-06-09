@@ -5,8 +5,8 @@
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")
  :provided   (compile+)
- :required   ((("compile-" compile-)
-	       ("emacs" compile))
+ :required   ((("compile" compile)
+	       ("compile-" compile-))
 	      (("misc-fns" misc-fns)))
  :keywords   ("tools" "processes")
  :commentary "\

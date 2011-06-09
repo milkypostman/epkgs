@@ -5,7 +5,7 @@
  :authors    (("Edward O'Connor" . "ted@oconnor.cx"))
  :maintainer ("Edward O'Connor" . "ted@oconnor.cx")
  :provided   (xml-event)
- :required   ((("emacs" xml)))
+ :required   ((("xml" xml)))
  :keywords   ("comm" "tools" "processes")
  :homepage   "http://edward.oconnor.cx/elisp/"
  :commentary "\

@@ -3,7 +3,7 @@
  :updated    "20050612"
  :license    "GPL-2"
  :provided   (imdb-adds)
- :required   ((("emacs" easymenu)))
+ :required   ((("easymenu" easymenu)))
  :keywords   ("imdb" "movies" "additions" "submission" "major-mode")
  :homepage   "http://home.snafu.de/ohei/"
  :wikipage   "http://www.emacswiki.org/IMDbAddsMode")

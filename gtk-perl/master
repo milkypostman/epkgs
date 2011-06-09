@@ -5,4 +5,6 @@
  :authors    ((nil . "wenbinye@163.com"))
  :maintainer (nil . "wenbinye@163.com")
  :provided   (gtk-perl)
- :required   ((("emacs" cl complete cperl-mode))))
+ :required   ((("cl" cl)
+	       ("complete" complete)
+	       ("cperl-mode" cperl-mode))))

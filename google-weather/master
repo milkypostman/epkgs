@@ -6,7 +6,12 @@
  :authors    (("Julien Danjou" . "julien@danjou.info"))
  :maintainer ("Julien Danjou" . "julien@danjou.info")
  :provided   (google-weather org-google-weather)
- :required   ((("emacs" cl format-spec image solar time-date url url-cache xml)))
+ :required   ((("calendar" solar)
+	       ("cl" cl)
+	       ("emacs-core" image)
+	       ("gnus" format-spec time-date)
+	       ("url" url url-cache)
+	       ("xml" xml)))
  :keywords   ("comm")
  :homepage   "http://julien.danjou.info/google-weather-el.html"
  :commentary "\

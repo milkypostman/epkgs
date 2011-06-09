@@ -5,7 +5,7 @@
  :authors    (("Mathias Kegelmann"))
  :maintainer ("Mathias Kegelmann")
  :provided   (mogo)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("games")
  :commentary "\
 This client runs \"mogo\" in a buffer *mogo* and sets the buffer's

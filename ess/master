@@ -4,7 +4,24 @@
  :updated    "1996"
  :license    "GPL-2"
  :provided   (ess ess-arc-d ess-bugs-d ess-bugs-l ess-comp ess-compat ess-custom ess-dde ess-dump ess-eldoc ess-font-lock ess-help ess-inf ess-jags-d ess-lsp-l ess-menu ess-mode ess-mous ess-mouse ess-noweb ess-omg-d ess-omg-l ess-r-a ess-r-args ess-r-d ess-roxy ess-rutils ess-s-l ess-s3-d ess-s4-d ess-sas-a ess-sas-d ess-sas-l ess-site ess-sp3-d ess-sp4-d ess-sp5-d ess-sp6-d ess-sp6w-d ess-sta-d ess-sta-l ess-swv ess-toolbar ess-utils ess-vst-d ess-xls-d essd-els essddr make-regexp mouseme msdos noweb-font-lock-mode noweb-mode)
- :required   ((("emacs" assoc browse-url cc-vars comint compile custom easymenu executable font-lock hideshow imenu info lisp-mode paren reporter shell speedbar thingatpt tooltip)))
+ :required   ((("assoc" assoc)
+	       ("browse-url" browse-url)
+	       ("cc-mode" cc-vars)
+	       ("cedet" speedbar)
+	       ("comint" comint)
+	       ("compile" compile)
+	       ("custom" custom)
+	       ("easymenu" easymenu)
+	       ("emacs-core" font-lock tooltip)
+	       ("executable" executable)
+	       ("hideshow" hideshow)
+	       ("imenu" imenu)
+	       ("info" info)
+	       ("lisp-mode" lisp-mode)
+	       ("paren" paren)
+	       ("reporter" reporter)
+	       ("shell" shell)
+	       ("thingatpt" thingatpt)))
  :keywords   ("statistical" "support")
  :homepage   "http://ess.r-project.org"
  :commentary "\

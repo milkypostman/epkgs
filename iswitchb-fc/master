@@ -5,7 +5,9 @@
  :authors    (("Benjamin Rutt" . "brutt@bloomington.in.us"))
  :maintainer ("Benjamin Rutt" . "brutt@bloomington.in.us")
  :provided   (iswitchb-fc)
- :required   ((("emacs" cl filecache iswitchb)))
+ :required   ((("cl" cl)
+	       ("filecache" filecache)
+	       ("iswitchb" iswitchb)))
  :commentary "\
 This package allows you to use iswitchb-like functionality to
 switch to not only your current buffers, but also any files in your

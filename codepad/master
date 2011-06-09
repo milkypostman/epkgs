@@ -5,7 +5,8 @@
  :authors    (("Rüdiger Sonderfeld" . "ruediger@c-plusplus.de"))
  :maintainer ("Rüdiger Sonderfeld" . "ruediger@c-plusplus.de")
  :provided   (codepad)
- :required   ((("emacs" cl url-http)))
+ :required   ((("cl" cl)
+	       ("url" url-http)))
  :keywords   ("codepad" "paste" "pastie" "pastebin")
  :homepage   "https://github.com/ruediger/emacs-codepad"
  :commentary "\

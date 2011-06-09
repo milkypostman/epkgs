@@ -9,7 +9,13 @@
 	      ("(Stefan Monnier)" . "monnier@iro.umontreal.ca"))
  :maintainer ("(Stefan Monnier)" . "monnier@iro.umontreal.ca")
  :provided   (sml-compat sml-defs sml-mode sml-move sml-proc sml-util)
- :required   ((("emacs" cl comint compile custom info skeleton smerge-mode)))
+ :required   ((("cl" cl)
+	       ("comint" comint)
+	       ("compile" compile)
+	       ("custom" custom)
+	       ("info" info)
+	       ("skeleton" skeleton)
+	       ("smerge-mode" smerge-mode)))
  :keywords   ("sml")
  :homepage   "http://www.iro.umontreal.ca/~monnier/elisp"
  :wikipage   "http://www.emacswiki.org/SMLMode"

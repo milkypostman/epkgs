@@ -5,6 +5,6 @@
  :authors    (("Ulf Jasper" . "ulf.jasper@web.de"))
  :maintainer ("Ulf Jasper" . "ulf.jasper@web.de")
  :provided   (u-mandelbrot)
- :required   ((("emacs" overlay)))
+ :required   ((("emacs-core" overlay)))
  :keywords   ("games" "ulf" "exp")
  :homepage   "http://ulf.epplejasper.de/EmacsFunStuff.html")

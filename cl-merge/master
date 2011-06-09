@@ -6,7 +6,7 @@
  :authors    (("Daniel Hackney"))
  :maintainer ("Daniel Hackney")
  :provided   (cl-merge)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("internal" "lisp")
  :homepage   "https://github.com/haxney/cl-merge"
  :commentary "\

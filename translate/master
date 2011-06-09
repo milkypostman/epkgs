@@ -4,7 +4,7 @@
  :authors    (("Holger Schauer" . "holger.schauer@gmx.de"))
  :maintainer ("Holger Schauer" . "holger.schauer@gmx.de")
  :provided   (translate)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("translation" "words")
  :commentary "\
 This little utility automizes the access to a _WORDLIST_ which contains

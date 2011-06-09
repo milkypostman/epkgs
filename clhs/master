@@ -2,7 +2,10 @@
  :created    "2008"
  :updated    "2008"
  :provided   (clhs)
- :required   ((("emacs" browse-url cl thingatpt url)))
+ :required   ((("browse-url" browse-url)
+	       ("cl" cl)
+	       ("thingatpt" thingatpt)
+	       ("url" url)))
  :keywords   ("lisp" "common" "lisp" "ansi" "cl" "hyperspec")
  :homepage   "http://www.podval.org/~sds/software.html"
  :commentary "\

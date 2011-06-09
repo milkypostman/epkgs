@@ -5,7 +5,10 @@
  :authors    (("Ye Wenbin" . "wenbinye@gmail.com"))
  :maintainer ("Ye Wenbin" . "wenbinye@gmail.com")
  :provided   (emoticons)
- :required   ((("emacs" cl format-spec tree-widget xml)))
+ :required   ((("cl" cl)
+	       ("gnus" format-spec)
+	       ("tree-widget" tree-widget)
+	       ("xml" xml)))
  :keywords   ("games" "wp")
  :homepage   "http://www.emacswiki.org/Emoticons"
  :wikipage   "http://www.emacswiki.org/Emoticons"

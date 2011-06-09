@@ -1,0 +1,303 @@
+(:summary    "Manipulate an alternative (\"virtual\") cursor"
+ :created    "1994"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Peter Stephenson" . "pws@ibmth.df.unipi.it"))
+ :maintainer ("FSF")
+ :provided   (vcursor)
+ :required   ((("compare-w" compare-w)))
+ :keywords   ("virtual" "cursor" "convenience")
+ :commentary "\
+Latest changes
+==============
+
+- *IMPORTANT* vcursor-key-bindings is now nil by default, to avoid
+  side-effects when the package is loaded.  This means no keys are
+  bound by default.  Use customize to change it to t to restore
+  the old behavior.  (If you do it by hand in .emacs, it
+  must come before vcursor is loaded.)
+- You can alter the main variables and the vcursor face via
+  M-x customize: go to the Editing group and find Vcursor.
+- vcursor-auto-disable can now be 'copy (actually any value not nil
+  or t), which means that copying from the vcursor will be turned
+  off after any operation not involving the vcursor, but the
+  vcursor itself will be left alone.
+- works on dumb terminals with Emacs 19.29 and later
+- new keymap vcursor-map for binding to a prefix key
+- vcursor-compare-windows substantially improved
+- vcursor-execute-{key,command} much better about using the
+  right keymaps and arranging for the correct windows to be used
+- vcursor-window-funcall can call functions interactively
+- vcursor-interpret-input for special effects
+
+Introduction
+============
+
+Virtual cursor commands.  I got this idea from the old BBC micro.
+You need Emacs 19 or 20 and a window system for the best effects.
+For character terminals, at least Emacs 19.29 is required
+(special behavior for the overlay property
+\"before-string\" must be implemented).  Search for \"dumb terminals\"
+for more information.
+
+This is much easier to use than the instructions are to read.
+First, you need to let vcursor define some keys: setting
+vcursor-key-bindings to t before loading, or by customize, will
+define various keys with the prefix C-S.  You'll have to read
+further if you don't want this.  Then I suggest you simply load it
+and play around with holding down Ctrl and Shift and pressing up,
+down, left, right, tab, return, and see what happens.  (Find a
+scratch buffer before using C-S-tab: that toggles copying.)
+
+Most of the functions described in this documentation are in
+parentheses so that if you have the package loaded you can type C-h
+f on top of them for help.
+
+Using the cursor keys with both control and shift held down moves
+around a virtual cursor, which is initially at point.  When active,
+it appears with an underline through it to distinguish it from the
+normal cursor.  You can then use one of the other commands to copy
+characters from the location of the virtual cursor to point.  This
+is very useful, for example, when copying some previous text while
+making changes to it at the same time, since you never have to move
+the \"real\" cursor away from where you are inserting.
+
+The remaining default key bindings are based around the PC-type
+cluster found above the cursor keys on a lot of keyboards, the
+function keys which my limited knowledge of X terminals expects to
+find at the top.  Some functions are duplicated in more obvious
+places for the X version.
+
+All the keybindings require you to hold down control and shift at
+once.  I assumed this combination wouldn't be heavily bound by most
+people and that it would be easy to type with the left hand.
+Inevitably it will clash with some other packages, but I can't help
+that: an intuitive binding is a prerequisite here.  See below for
+other alternatives (search for \"Oemacs\").  There is also a keymap
+which you can bind to a prefix key, which may give some more
+intuitive alternatives in some cases, see `The vcursor keymap' below.
+
+Holding down control and shift and pressing insert (vcursor-copy)
+copies one character from wherever the virtual cursor is to point;
+point and the virtual cursor advance in the separate and equal
+station to which... (etc.).  M-C-S-return (vcursor-copy-line)
+copies to the end of the line instead of just one character,
+C-S-delete or C-S-remove (vcursor-copy-word) copies a word.
+
+A more general way of copying is to use C-S-tab, which is a toggle.
+In the \"on\" state, moving the virtual cursor will copy the
+moved-over text to the normal cursor position (including when going
+backwards, though each piece of text moved over is copied forwards:
+compare the behavior of C-S-up and C-S-left).
+
+However, that's just a small part of the magic.  If the virtual
+cursor goes off the display, it will be redisplayed in some other
+window.  (See the function (vcursor-find-window) for details of how
+this window is chosen.)  This gives you fingertip control over two
+windows at once.
+
+C-S-return (vcursor-disable) disables the virtual cursor, removing
+it so that it starts from point whenever you move it again --- note
+that simply moving the cursor and virtual cursor on top of one
+another does not have this effect.
+
+If you give C-S-return a positive prefix arg, it will also delete the
+window (unless it's the current one).  Whenever the virtual cursor
+goes off-screen in its own window, point in that window is moved as
+well to restore it to view.  (It's easier that way, that's why.
+However, point doesn't move unless the view in the window does, so
+it's not tied to the virtual cursor location.)
+
+You can also use C-S-return with a negative prefix argument which
+forces the vcursor to appear at point.  This is particularly useful if
+you actually want to edit in another window but would like to
+remember the current cursor location for examining or copying from
+that buffer.  (I just hit C-S-right C-S-left, but I'm a hopeless
+lowbrow.)
+
+There is also C-S-f6 (vcursor-other-window) which behaves like
+C-x o on the virtual rather than the real cursor, except that it
+will create another window if necessary.
+
+The keys C-S-prior (vcursor-scroll-down) and C-S-next
+(vcursor-scroll-up) (i.e., PageUp and PageDown) will scroll the
+virtual cursor window, appropriately chosen.  They will always
+create a new window or take over an old one if necessary.
+Likewise, M-C-S-left and M-C-S-right move you to the
+beginning or end of a line, C-S-home and C-S-end the
+beginning or end of a buffer (these are also on M-C-S-up and
+M-C-S-down for those of us stuck with DEC keyboards).
+
+C-S-f7 (vcursor-goto) will take you to the vcursor position
+(swapping windows if it seems sensible) and (unless you give it a
+prefix argument) delete the virtual cursor, so this is useful for
+you to take over editing at the virtual cursor position.  It is not
+an error if the virtual cursor is not active; it simply leaves you
+at point, because that is where the virtual cursor would start
+from.
+
+In a similar vein, M-C-S-tab (hope your left hand's flexible;
+C-S-select on DEC keyboards) (vcursor-swap-point) will take you to
+the virtual cursor position but simultaneously put the virtual
+cursor at the old cursor position.  It is also supposed to ensure
+that both are visible.
+
+C-S-f8 (C-S-find on DEC keyboards) (vcursor-isearch-forward)
+allows you to do an isearch in another window.  It works a bit like
+vcursor-scroll-*; it moves into another window, calls isearch
+there, and sets the virtual cursor position to the point found.  In
+other words, it works just like isearch but with the virtual cursor
+instead of the real one (that's why it's called a \"virtual
+cursor\").  While you are isearching, you are editing in the virtual
+cursor window, but when you have finished you return to where you
+started.  Note that once you are in isearch all the keys are normal
+--- use C-s, not C-S-f8, to search for the next occurrence.
+
+If you set the variable vcursor-auto-disable, then any command
+which does not involve moving or copying from the virtual cursor
+causes the virtual cursor to be disabled.  If you set it to non-nil
+but not t, then the vcursor itself will remain active, but copying
+will be turned off, so that the next time the vcursor is moved no
+text is copied over.  Experience shows that this setting is
+particularly useful.  If you don't intend to use this, you can
+comment out the `add-hook' line at the bottom of this file.  (This
+feature partially emulates the way the \"copy\" key on the BBC micro
+worked; actually, the copy cursor was homed when you hit return.
+This was in keeping with the line-by-line way of entering BASIC,
+but is less appropriate here.)
+
+vcursor-compare-windows is now a reliable adaption of
+compare-windows, which compares between point in the current buffer
+and the vcursor location in the other one.  It is an error if
+vcursor is not set, however it will be brought up in another window
+if it is not currently visible.  The prefix argument acts just like
+compare-windows, ignoring whitespace if set.  (In versions before
+1.6, this simply called compare-windows, which was much less likely
+to pick the two windows you wanted.)
+
+There is a way of moving the virtual cursor using ordinary
+commands: C-S-f9 (vcursor-execute-key) reads a key string,
+moves to the virtual cursor position, executes the command bound to
+the string, then returns to the original point.  Thus C-S-f9 M-m
+moves the virtual cursor back to the first non-whitespace character
+on its line.  As the command is called interactively all the usual
+ways of passing information to the command called, such as by a
+prefix argument, are available.  This has many uses not necessarily
+related to moving the vcursor itself; it can do essentially
+everything that the \\C-x 4 series of commands can do and a lot
+more.  Note, however, that a new window is not used if the vcursor
+is visible in the current one:  this can lead to some strange effects,
+but it is preferable to making a new window every time the vcursor
+is moved in this may.
+
+C-S-f10 (C-S-x) (vcursor-execute-command) behaves the same way but
+you enter the name of the command.  To do anything really
+complicated, you are better off using M-C-S-tab
+(vcursor-swap-point), doing whatever it is, then calling M-C-S-tab
+again.
+
+If you want to add your own moving or copying functions you should
+be able to do this fairly easily with (vcursor-relative-move) and
+(vcursor-copy) together with (vcursor-get-char-count).  If you want to
+do something in a different window, use (vcursor-window-funcall).
+
+Key bindings
+============
+
+There is an alternative set of key bindings which will be used
+automatically for a PC if Oemacs is detected.  This set uses separate
+control, shift and meta keys with function keys 1 to 10.  In
+particular, movement keys are concentrated on f5 to f8 with (in
+increasing order of distance travelled) C-, M- and S- as prefixes.
+See the actual bindings below (search for C-f1).  This is because the
+C-S- prefix is represented by weird key sequences and the set is
+incomplete; if you don't mind that, some hints are given in comments
+below.
+
+You can specify the usual or the Oemacs bindings by setting the
+variable vcursor-key-bindings to `xterm' or `oemacs'.  You can also set
+it to nil, in which case vcursor will not make any key bindings
+and you can define your own.  The default is t, which makes vcursor
+guess (it will use xterm unless it thinks Oemacs is running).  The
+oemacs set will work on an X terminal with function keys, but the
+xterm set will not work under Oemacs.
+
+Usage on dumb terminals
+=======================
+
+If Emacs has set the variable window-system to nil, vcursor will
+assume that overlays cannot be displayed in a different face,
+and will instead use a string (the variable vcursor-string, by
+default \"**>\") to show its position.  This was first implemented
+in Emacs 19.29.  Unlike the old-fashioned overlay arrow (as used
+by debuggers), this appears between existing text, which can
+make it hard to read if you're not used to it.  (This seemed the
+better option here.)  This means moving the vcursor up and down is
+a very efficient way of locating it!
+
+Everything else should function as expected, but there is no way to
+get an easy key binding for the vcursor keys on a generic terminal.
+Consequently a special keymap is defined for you to use traditional
+methods: the keymap, however, is available on any terminal type.
+
+The vcursor keymap
+==================
+
+In addition to any other bindings, vcursor-map contains key definitions
+for handling the vcursor.  You should assign this to a prefix key
+in the usual way, e.g.
+     (global-set-key [f14] vcursor-map)
+and also as usual \\C-h in this map will list the key definitions, which
+are designed to be easy to remember.
+
+A special feature is provided by (vcursor-use-vcursor-map), bound
+to t in that keymap.  With this in effect, the main keymap
+is overridden by the vcursor map, so keys like \\C-p and so on
+move the vcursor instead.  Remember how to turn it off (type t),
+or you are in serious trouble!  Note that the cursor keys are not
+bound by default in this keymap and will continue to move the
+ordinary cursor.
+
+Interpreted input
+=================
+
+Just occasionally, you may want to pretend the strings copied from
+the vcursor position are to be interpreted as if you had typed them
+from the keyboard.  Normally, they will just insert themselves anyway,
+but in some modes (Info and calc for example) typing ordinary characters
+does something else.  To get this effect, set
+vcursor-interpret-input to t.  This is normally not a good idea as
+interpreting input is very much slower than copying text.
+
+Un-features
+===========
+
+ - The vcursor will not move to point-max, since otherwise it would
+   disappear.  However, no error is flagged as point-max is a valid
+   point in the buffer.  Thus cursor right or down at the second
+   last point in the file does not flag an error, which is inconsistent,
+   and if copying is on the last character (typically newline) will
+   be repeatedly copied.  (I've tried making it flag an error
+   instead and that's worse since often the vcursor is sent to
+   point in some other window, which may be point-max.)
+ - The vcursor widens when over a tab character or right at the
+   end of the line.  You're welcome to consider this a feature;
+   it's just a part of how overlays work.
+ - The vcursor obscures the real cursor.  Creative use of overlays
+   could cure this.
+ - The vcursor does not remember its own previous positions.  If
+   you cycle it back into a window it was in before, it will be at
+   point in that window.  Often, that is where a previous recenter
+   left point, not where the vcursor was before.
+   (Note, however, that the vcursor does remember where it *is*,
+   even if it's off-screen.  This can also lead to surprises, but I
+   don't think it's a bug.)
+ - vcursor-window-funcall could perhaps be smarter about restoring
+   the previous window state on failure.
+ - The logic in vcursor-find-window is rather complicated and
+   therefore bug-prone, though in practice it seems to work OK.
+
+Possible enhancements:
+It would be easy to implement vcursor-push (save vcursor position
+as mark and deactivate) and vcursor-pop (deactivate vcursor and
+move to last pushed position) functions.")

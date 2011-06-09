@@ -5,7 +5,7 @@
  :authors    (("Jason Spiro" . "jasonspiro3@gmail.com"))
  :maintainer ("Jason Spiro" . "jasonspiro3@gmail.com")
  :provided   (beginner)
- :required   ((("emacs" saveplace)))
+ :required   ((("saveplace" saveplace)))
  :keywords   ("help" "wp" "emulations")
  :commentary "\
 The purpose of beginner-mode is to make Emacs less imposing, so people will

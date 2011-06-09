@@ -3,12 +3,17 @@
  :license    "GPL-3"
  :authors    (("Masahiro Hayashi" . "mhayashi1120@gmail.com"))
  :maintainer ("Masahiro Hayashi" . "mhayashi1120@gmail.com")
- :provided   (erefactor gosh-config gosh-const gosh-dev gosh-mode gosh-mode-test)
- :required   ((("el-expectations" el-expectations)
+ :provided   (gosh-config gosh-const gosh-dev gosh-mode gosh-mode-test)
+ :required   ((("cl" cl)
+	       ("cmuscheme" cmuscheme)
+	       ("el-expectations" el-expectations)
 	       ("el-mock" el-mock)
-	       ("emacs" cl cmuscheme flymake info-look scheme))
+	       ("erefactor" erefactor)
+	       ("flymake" flymake)
+	       ("info-look" info-look)
+	       ("scheme" scheme))
 	      (("auto-complete" auto-complete-config)
-	       ("emacs" eldoc)))
+	       ("eldoc" eldoc)))
  :keywords   ("lisp" "gauche" "scheme" "edit")
  :homepage   "https://github.com/mhayashi1120/Emacs-gosh-mode"
  :commentary "\

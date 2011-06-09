@@ -5,7 +5,7 @@
  :authors    (("Kevin Rodgers" . "ihs_4664@yahoo.com"))
  :maintainer ("Kevin Rodgers" . "ihs_4664@yahoo.com")
  :provided   (goto-last-change)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("convenience")
  :homepage   "http://www.emacswiki.org/GotoLastChange"
  :wikipage   "http://www.emacswiki.org/GotoLastChange"

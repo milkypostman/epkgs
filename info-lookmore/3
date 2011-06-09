@@ -5,7 +5,7 @@
  :authors    (("Kevin Ryde" . "user42@zip.com.au"))
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (info-lookmore)
- :required   ((("emacs" info-look)))
+ :required   ((("info-look" info-look)))
  :keywords   ("help" "languages")
  :homepage   "http://user42.tuxfamily.org/info-lookmore/index.html"
  :commentary "\

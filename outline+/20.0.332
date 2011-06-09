@@ -5,7 +5,8 @@
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")
  :provided   (outline+)
- :required   ((("emacs" cl outline)))
+ :required   ((("cl" cl)
+	       ("outline" outline)))
  :keywords   ("abbrev" "matching" "local")
  :commentary "\
 Extensions to `outline.el'.

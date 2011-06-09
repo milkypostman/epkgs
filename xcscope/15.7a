@@ -5,5 +5,5 @@
  :authors    (("Darryl Okahata"))
  :maintainer ("Darryl Okahata")
  :provided   (xcscope)
- :required   ((("emacs" easymenu)))
+ :required   ((("easymenu" easymenu)))
  :homepage   "http://cscope.sourceforge.net/")

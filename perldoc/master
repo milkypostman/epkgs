@@ -4,10 +4,11 @@
  :authors    ((nil . "wenbinye@gmail.com"))
  :maintainer (nil . "wenbinye@gmail.com")
  :provided   (perldoc)
- :required   ((("emacs" cl woman)
+ :required   ((("cl" cl)
 	       ("pde" pde-vars)
 	       ("tree-mode" tree-mode)
-	       ("windata" windata)))
+	       ("windata" windata)
+	       ("woman" woman)))
  :wikipage   "http://www.emacswiki.org/PerlDoc"
  :commentary "\
 Put this file into your load-path and the following into your ~/.emacs:

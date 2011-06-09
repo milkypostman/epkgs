@@ -4,7 +4,9 @@
  :authors    (("Tim Anderson" . "tma@netspace.net.au"))
  :maintainer ("Tim Anderson")
  :provided   (browse-help)
- :required   ((("emacs" browse-url cl cus-edit)))
+ :required   ((("browse-url" browse-url)
+	       ("cl" cl)
+	       ("custom" cus-edit)))
  :keywords   ("help" "browser")
  :commentary "\
 This package provides support for context-sensitive help within Emacs.

@@ -5,7 +5,9 @@
  :authors    (("Michael Weber" . "michaelw@foldr.org"))
  :maintainer ("Michael Weber" . "michaelw@foldr.org")
  :provided   (mwe-color-box)
- :required   ((("emacs" cl rect thingatpt)))
+ :required   ((("cl" cl)
+	       ("rect" rect)
+	       ("thingatpt" thingatpt)))
  :keywords   ("faces" "games")
  :homepage   "http://www.foldr.org/~michaelw/emacs/"
  :commentary "\

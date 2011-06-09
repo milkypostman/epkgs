@@ -5,7 +5,8 @@
  :authors    (("Ye Wenbin" . "wenbinye@gmail.com"))
  :maintainer ("Ye Wenbin" . "wenbinye@gmail.com")
  :provided   (rss)
- :required   ((("emacs" cl xml)))
+ :required   ((("cl" cl)
+	       ("xml" xml)))
  :keywords   ("tools")
  :commentary "\
 This library provides basic functions to manipulate RSS file.

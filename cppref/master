@@ -6,7 +6,7 @@
  :authors    (("Kentaro Kuribayashi"))
  :maintainer ("Kentaro Kuribayashi")
  :provided   (cppref)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :homepage   "https://github.com/kentaro/emacs-cppref"
  :commentary "\
 * Description

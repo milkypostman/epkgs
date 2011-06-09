@@ -6,7 +6,7 @@
  :authors    (("Paul Huff" . "paul.huff@gmail.com"))
  :maintainer ("Paul Huff" . "paul.huff@gmail.com")
  :provided   (facebook)
- :required   ((("emacs" json)))
+ :required   ((("json" json)))
  :keywords   ("facebook" "frivolity")
  :homepage   "http://facebook-el.sourceforge.net/"
  :commentary "\

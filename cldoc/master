@@ -3,7 +3,7 @@
  :updated    "20041201"
  :license    "GPL-2"
  :provided   (cldoc)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("extensions")
  :homepage   "http://homepage1.nifty.com/bmonkey/emacs/index-en.html"
  :commentary "\

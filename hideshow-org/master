@@ -3,7 +3,7 @@
  :updated    "2009"
  :license    "GPL-2"
  :provided   (hideshow-org)
- :required   ((("emacs" hideshow)))
+ :required   ((("hideshow" hideshow)))
  :keywords   ("c" "java" "lisp" "tools" "editing" "comments" "blocks" "hide" "outlines" "org-mode" "files" "part" "gnu")
  :homepage   "https://github.com/secelis/hideshow-org"
  :commentary "\

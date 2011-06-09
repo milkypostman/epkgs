@@ -5,6 +5,6 @@
  :authors    (("Dimitri Fontaine" . "dim@tapoueh.org"))
  :maintainer ("Dimitri Fontaine" . "dim@tapoueh.org")
  :provided   (mailq)
- :required   ((("emacs" simple)))
+ :required   ((("emacs-core" simple)))
  :keywords   ("mailq" "mode-line")
  :homepage   "https://github.com/dimitri/mailq-el")

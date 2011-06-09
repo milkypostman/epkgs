@@ -5,7 +5,10 @@
  :authors    (("Christoph Wedler" . "wedler@users.sourceforge.net"))
  :maintainer ("(Please use `M-x x-symbol-package-bug' to contact the maintainer)")
  :provided   (add gif png x-symbol x-symbol-bib x-symbol-emacs x-symbol-hooks x-symbol-image x-symbol-macs x-symbol-mule x-symbol-myuc x-symbol-nomule x-symbol-sgml x-symbol-tex x-symbol-texi x-symbol-vars x-symbol-xmacs)
- :required   ((("emacs" cl font-lock fontset lucid reporter warnings)))
+ :required   ((("cl" cl)
+	       ("emacs-core" font-lock fontset warnings)
+	       ("emacs-obsolete" lucid)
+	       ("reporter" reporter)))
  :keywords   ("wysiwyg" "latex" "html" "wp" "math" "internationalization")
  :homepage   "http://x-symbol.sourceforge.net/"
  :wikipage   "http://www.emacswiki.org/XSymbolMode"

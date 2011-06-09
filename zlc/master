@@ -6,6 +6,6 @@
  :authors    (("mooz" . "stillpedant@gmail.com"))
  :maintainer ("mooz" . "stillpedant@gmail.com")
  :provided   (zlc)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("matching" "convenience")
  :homepage   "http://github.com/mooz/emacs-zlc")

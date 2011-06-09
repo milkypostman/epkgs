@@ -1,7 +1,7 @@
 (:summary    "A MoinMoin 1.2.x -> MediaWiki 1.7.x converter"
  :license    "GPL-2"
  :provided   (mm2mw)
- :required   ((("emacs" url)))
+ :required   ((("url" url)))
  :commentary "\
 To use this, just find the base name of your MoinMoin Wiki and the
 base name of your new MediaWiki installations, and feed them to

@@ -5,7 +5,7 @@
  :authors    (("Aurélien Tisné" . "aurelien.tisne@free.fr"))
  :maintainer ("Aurélien Tisné" . "aurelien.tisne@free.fr")
  :provided   (prg-comment)
- :required   ((("emacs" tempo)))
+ :required   ((("tempo" tempo)))
  :keywords   ("convenience" "comments")
  :homepage   "http://aurelien.tisne.free.fr/emacs-pages/emacs/prg-comment-doc.html"
  :commentary "\

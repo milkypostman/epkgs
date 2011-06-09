@@ -3,8 +3,10 @@
  :authors    (("WJCarpenter" . "bill-feedmail@carpenter.org"))
  :maintainer ("WJCarpenter" . "bill-feedmail@carpenter.org")
  :provided   (feedmail)
- :required   ((("emacs" custom mail-utils smtpmail)
-	       ("flim" smtp)))
+ :required   ((("custom" custom)
+	       ("flim" smtp)
+	       ("mail-utils" mail-utils)
+	       ("smtpmail" smtpmail)))
  :keywords   ("email" "queue" "mail" "sendmail" "message" "spray" "smtp" "draft")
  :commentary "\
 If you use feedmail, I invite you to send me some email about it.

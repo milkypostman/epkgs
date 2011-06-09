@@ -6,7 +6,11 @@
  :authors    (("Mark A. Hershberger" . "mah@everybody.org"))
  :maintainer ("Mark A. Hershberger" . "mah@everybody.org")
  :provided   (xml-rpc)
- :required   ((("emacs" cl reporter timezone url-http xml)))
+ :required   ((("cl" cl)
+	       ("reporter" reporter)
+	       ("timezone" timezone)
+	       ("url" url-http)
+	       ("xml" xml)))
  :keywords   ("xml" "rpc" "network")
  :homepage   "https://launchpad.net/xml-rpc-el"
  :wikipage   "http://www.emacswiki.org/XmlRpc"

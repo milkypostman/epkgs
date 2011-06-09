@@ -5,7 +5,9 @@
  :authors    (("John Connors" . "johnc@yagc.ndo.co.uk"))
  :maintainer ("John Connors" . "johnc@yagc.ndo.co.uk")
  :provided   (ectags ectags-select)
- :required   ((("emacs" cl custom easymenu)))
+ :required   ((("cl" cl)
+	       ("custom" custom)
+	       ("easymenu" easymenu)))
  :keywords   ("exuberant-ctags" "ectags" "tag" "select")
  :homepage   "http://www.emacswiki.org/EctagsSelect"
  :wikipage   "http://www.emacswiki.org/EctagsSelect"

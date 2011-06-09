@@ -5,7 +5,7 @@
  :authors    (("David Megginson" . "dmeggins@uottawa.ca"))
  :maintainer ("David Megginson" . "dmeggins@uottawa.ca")
  :provided   (steno)
- :required   ((("emacs" derived)))
+ :required   ((("emacs-core" derived)))
  :commentary "\
 This package has some similarities to Emacs' Changelog support,
 but it is designed for a different purpose.  It allows users

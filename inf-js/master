@@ -2,4 +2,5 @@
  :authors    (("Bryan Kyle" . "bryan.kyle@gmail.com"))
  :maintainer ("Bryan Kyle" . "bryan.kyle@gmail.com")
  :provided   (inf-js)
- :required   ((("emacs" comint compile))))
+ :required   ((("comint" comint)
+	       ("compile" compile))))

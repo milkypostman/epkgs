@@ -5,7 +5,7 @@
  :authors    (("Jorgen Schaefer"))
  :maintainer ("Jorgen Schaefer")
  :provided   (duck)
- :required   ((("emacs" cmuscheme)))
+ :required   ((("cmuscheme" cmuscheme)))
  :keywords   ("scheme" "programming")
  :commentary "\
 This is a collection of simple utility functions for Scheme

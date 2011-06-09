@@ -6,7 +6,8 @@
  :authors    (("Nikolaj Schumacher" . "bugs@nschum.de"))
  :maintainer ("Nikolaj Schumacher" . "bugs@nschum.de")
  :provided   (test-case-mode)
- :required   ((("emacs" cl compile))
+ :required   ((("cl" cl)
+	       ("compile" compile))
 	      (("fringe-helper" fringe-helper)))
  :keywords   ("tools")
  :homepage   "http://nschum.de/src/emacs/test-case-mode"

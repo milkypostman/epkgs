@@ -5,7 +5,10 @@
  :authors    (("Tim Read" . "tim.read@fp.co.nz"))
  :maintainer ("Tim Read" . "tim.read@fp.co.nz")
  :provided   (ansys-mod)
- :required   ((("emacs" backquote easymenu paren reporter)))
+ :required   ((("easymenu" easymenu)
+	       ("emacs-core" backquote)
+	       ("paren" paren)
+	       ("reporter" reporter)))
  :keywords   ("languages")
  :commentary "\
 This package provides Emacs support for Ansys.

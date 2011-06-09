@@ -5,8 +5,10 @@
  :authors    (("David Engster" . "dengste@eml.cc"))
  :maintainer ("David Engster" . "dengste@eml.cc")
  :provided   (mairix)
- :required   ((("emacs" cl cus-edit widget)
-	       ("vm" vm)))
+ :required   ((("cl" cl)
+	       ("custom" cus-edit)
+	       ("vm" vm)
+	       ("widget" widget)))
  :keywords   ("mail" "searching")
  :homepage   "http://randomsample.de/"
  :commentary "\

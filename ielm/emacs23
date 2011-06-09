@@ -1,0 +1,16 @@
+(:summary    "Interaction mode for Emacs Lisp"
+ :created    "19940225"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("David Smith" . "maa036@lancaster.ac.uk"))
+ :maintainer ("FSF")
+ :provided   (ielm)
+ :required   ((("comint" comint)
+	       ("emacs-core" pp)))
+ :keywords   ("lisp")
+ :commentary "\
+Provides a nice interface to evaluating Emacs Lisp expressions.
+Input is handled by the comint package, and output is passed
+through the pretty-printer.
+
+To start: M-x ielm.  Type C-h m in the *ielm* buffer for more info.")

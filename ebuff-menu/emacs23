@@ -1,0 +1,13 @@
+(:summary    "Electric-buffer-list mode"
+ :created    "1985"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Richard Mlynarik" . "mly@ai.mit.edu"))
+ :maintainer ("FSF")
+ :provided   (ebuff-menu)
+ :required   ((("electric" electric)))
+ :keywords   ("convenience")
+ :commentary "\
+Who says one can't have typeout windows in GNU Emacs?   The entry
+point, `electric-buffer-list' works like ^r select buffer from the
+ITS Emacs lunar or tmacs libraries.")

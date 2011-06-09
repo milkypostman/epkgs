@@ -4,7 +4,9 @@
  :updated    "2010"
  :license    "GPL-2"
  :provided   (mk-project)
- :required   ((("emacs" cl grep thingatpt)))
+ :required   ((("cl" cl)
+	       ("grep" grep)
+	       ("thingatpt" thingatpt)))
  :homepage   "http://www.littleredbat.net/mk/code/mk-project.html"
  :commentary "\
 Quickly switch between projects and perform operations on a

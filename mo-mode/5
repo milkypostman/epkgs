@@ -5,7 +5,8 @@
  :authors    (("Kevin Ryde" . "user42@zip.com.au"))
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (mo-mode)
- :required   ((("emacs" mm-util po)
+ :required   ((("gnus" mm-util)
+	       ("po" po)
 	       (nil po-compat)))
  :keywords   ("data")
  :wikipage   "http://www.emacswiki.org/MoMode"

@@ -6,7 +6,8 @@
 	      (nil . "ssj20@cam.ac.uk"))
  :maintainer ("Seb James")
  :provided   (tex-wcount)
- :required   ((("emacs" assoc timer)))
+ :required   ((("assoc" assoc)
+	       ("timer" timer)))
  :commentary "\
 `tex-wcount-mode' is a minor mode that puts into the modeline a running
 count of the words in a latex buffer.  It uses the program detex, which must

@@ -5,7 +5,7 @@
  :authors    (("Lucas Bonnet" . "lucas@rincevent.net"))
  :maintainer ("Lucas Bonnet" . "lucas@rincevent.net")
  :provided   (buffer-move)
- :required   ((("emacs" windmove)))
+ :required   ((("windmove" windmove)))
  :keywords   ("lispconvenience")
  :commentary "\
 This file is for lazy people wanting to swap buffers without

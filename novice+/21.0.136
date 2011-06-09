@@ -5,9 +5,10 @@
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")
  :provided   (novice+)
- :required   ((("emacs" cl novice))
-	      (("emacs" thingatpt)
-	       ("icicles" icicles)
+ :required   ((("cl" cl)
+	       ("emacs-core" novice))
+	      (("icicles" icicles)
+	       ("thingatpt" thingatpt)
 	       ("thingatpt+" thingatpt+)))
  :keywords   ("internal" "help")
  :commentary "\

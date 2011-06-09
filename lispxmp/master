@@ -5,7 +5,9 @@
  :authors    (("rubikitch" . "rubikitch@ruby-lang.org"))
  :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
  :provided   (lispxmp)
- :required   ((("emacs" cl newcomment pp))
+ :required   ((("cl" cl)
+	       ("emacs-core" pp)
+	       ("newcomment" newcomment))
 	      (("paredit" paredit)))
  :keywords   ("lisp" "convenience")
  :homepage   "http://www.emacswiki.org/LispXmp"

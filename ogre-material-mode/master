@@ -5,6 +5,6 @@
  :authors    ((nil . "f.degroef@gmail.com"))
  :maintainer (nil . "f.degroef@gmail.com")
  :provided   (ogre-material-mode)
- :required   ((("emacs" cc-mode)))
+ :required   ((("cc-mode" cc-mode)))
  :keywords   ("languages")
  :homepage   "http://bitbucket.org/sevas/ogre-material-mode")

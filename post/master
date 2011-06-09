@@ -6,7 +6,9 @@
 	      ("Roland Rosenfeld" . "roland@spinnaker.de"))
  :maintainer ("Eric Kidd" . "eric.kidd@pobox.com")
  :provided   (post)
- :required   ((("emacs" cl derived easymenu)))
+ :required   ((("cl" cl)
+	       ("easymenu" easymenu)
+	       ("emacs-core" derived)))
  :keywords   ("mail")
  :homepage   "http://post-mode.sourceforge.net/"
  :wikipage   "http://www.emacswiki.org/PostMode"

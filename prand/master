@@ -5,7 +5,8 @@
  :authors    ((nil . "wenbinye@163.com"))
  :maintainer (nil . "wenbinye@163.com")
  :provided   (prand)
- :required   ((("emacs" calc calc-ext calc-misc cl)))
+ :required   ((("calc" calc calc-ext calc-misc)
+	       ("cl" cl)))
  :commentary "\
 Put this file into your load-path and the following into your ~/.emacs:
   (require 'prand)")

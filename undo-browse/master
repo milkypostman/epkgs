@@ -5,7 +5,8 @@
  :authors    (("D. Goel" . "deego@gnufans.org"))
  :maintainer ("D. Goel" . "deego@gnufans.org")
  :provided   (ub)
- :required   ((("emacs" cl hilit-chg)
+ :required   ((("cl" cl)
+	       ("hilit-chg" hilit-chg)
 	       ("mkback" mkback)))
  :homepage   "http://www.gnufans.net/~deego/emacs.html"
  :wikipage   "http://www.emacswiki.org/UndoBrowse")

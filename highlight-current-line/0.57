@@ -5,7 +5,7 @@
  :authors    (("Christoph Conrad" . "christoph.conrad@gmx"))
  :maintainer ("Christoph Conrad" . "christoph.conrad@gmx")
  :provided   (highlight-current-line)
- :required   ((("emacs" custom)))
+ :required   ((("custom" custom)))
  :keywords   ("faces")
  :homepage   "http://www.emacswiki.org/HighlightCurrentLine"
  :wikipage   "http://www.emacswiki.org/HighlightCurrentLine"

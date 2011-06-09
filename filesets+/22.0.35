@@ -5,7 +5,8 @@
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")
  :provided   (filesets+)
- :required   ((("emacs" cl filesets)))
+ :required   ((("cl" cl)
+	       ("filesets" filesets)))
  :commentary "\
 Extensions to `filesets.el'.
 

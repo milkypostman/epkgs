@@ -4,8 +4,8 @@
  :authors    (("Shelagh Manton"))
  :maintainer ("Shelagh Manton")
  :provided   (ob-lilypond)
- :required   ((("emacs" ob ob-eval)
-	       ("lilypond" lilypond-mode)))
+ :required   ((("lilypond" lilypond-mode)
+	       ("org-mode" ob ob-eval)))
  :keywords   ("literate" "programming" "weaving" "markup")
  :homepage   "http://orgmode.org"
  :commentary "\

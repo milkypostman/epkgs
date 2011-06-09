@@ -1,0 +1,9 @@
+(:summary    "Interface to Ghostscript"
+ :created    "1998"
+ :updated    "2011"
+ :license    "GPL-3"
+ :maintainer ("FSF")
+ :provided   (gs)
+ :keywords   ("internal")
+ :commentary "\
+This code is experimental.  Don't use it.")

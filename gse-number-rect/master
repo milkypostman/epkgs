@@ -5,6 +5,6 @@
  :authors    (("Scott Evans"))
  :maintainer ("Scott Evans")
  :provided   (gse-number-rect)
- :required   ((("emacs" rect)))
+ :required   ((("rect" rect)))
  :keywords   ("extensions")
  :homepage   "http://antisleep.com/elisp/")

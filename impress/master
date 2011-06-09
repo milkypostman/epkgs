@@ -5,7 +5,8 @@
  :authors    (("David O'Toole" . "dto@gnu.org"))
  :maintainer ("David O'Toole" . "dto@gnu.org")
  :provided   (impress)
- :required   ((("emacs" cl org)))
+ :required   ((("cl" cl)
+	       ("org-mode" org)))
  :keywords   ("tools" "files")
  :homepage   "https://github.com/dto/emacs-impress"
  :commentary "\

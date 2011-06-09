@@ -1,0 +1,9 @@
+(:summary    "(un)comment regions of buffers"
+ :created    "1999"
+ :updated    "2011"
+ :license    "GPL-3"
+ :maintainer ("Stefan Monnier" . "monnier@iro.umontreal.ca")
+ :provided   (newcomment)
+ :keywords   ("comments" "uncomment")
+ :commentary "\
+A replacement for simple.el's comment-related functions.")

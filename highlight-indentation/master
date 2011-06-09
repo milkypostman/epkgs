@@ -6,5 +6,6 @@
  :maintainer ("Anton Johansson" . "anton.johansson@gmail.com")
  :provided   (highlight-indentation)
  :homepage   "https://github.com/antonj/Highlight-Indentation-for-Emacs"
+ :wikipage   "http://www.emacswiki.org/HighlightIndentation"
  :commentary "\
 Customize `highlight-indent-face' to suit your theme.")

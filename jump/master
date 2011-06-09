@@ -5,9 +5,9 @@
  :license    "GPL-3"
  :authors    (("Eric Schulte"))
  :maintainer ("Eric Schulte")
- :provided   (jump which-func)
- :required   ((("emacs" imenu)
-	       ("findr" findr)
+ :provided   (jump)
+ :required   ((("findr" findr)
+	       ("which-func" which-func)
 	       (nil inflections)))
  :keywords   ("project" "convenience" "navigation")
  :wikipage   "http://www.emacswiki.org/Jump"

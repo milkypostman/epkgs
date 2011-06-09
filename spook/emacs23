@@ -1,0 +1,18 @@
+(:summary    "Spook phrase utility for overloading the NSA line eater"
+ :created    "198705"
+ :updated    "2011"
+ :license    "GPL-3"
+ :maintainer ("FSF")
+ :provided   (spook)
+ :required   ((("cookie1" cookie1)))
+ :keywords   ("games")
+ :commentary "\
+Steve Strassmann <straz@media-lab.media.mit.edu> didn't write
+this, and even if he did, he really didn't mean for you to use it
+in an anarchistic way.
+
+To use this:
+ Just before sending mail, do M-x spook.
+ A number of phrases will be inserted into your buffer, to help
+ give your message that extra bit of attractiveness for automated
+ keyword scanners.  Help defeat the NSA trunk trawler!")

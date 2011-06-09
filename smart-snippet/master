@@ -6,7 +6,7 @@
  :authors    ((nil . "pluskid.zju@gmail.com"))
  :maintainer (nil . "pluskid.zju@gmail.com")
  :provided   (smart-snippet)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("snippet" "smart" "condition")
  :homepage   "http://code.google.com/p/smart-snippet/"
  :commentary "\

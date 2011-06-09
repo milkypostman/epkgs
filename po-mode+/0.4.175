@@ -6,7 +6,7 @@
 	      ("Gaute Hvoslef Kvalnes."))
  :maintainer ("Gaute Hvoslef Kvalnes" . "gaute@verdsveven.com")
  :provided   (po-mode+)
- :required   ((("emacs" cl)
+ :required   ((("cl" cl)
 	       ("po-mode" po-mode)))
  :keywords   ("gettext")
  :commentary "\

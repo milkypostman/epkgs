@@ -1,0 +1,25 @@
+(:summary    "Network functions"
+ :created    "199716"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Peter Breton" . "pbreton@cs.umb.edu"))
+ :maintainer ("Peter Breton" . "pbreton@cs.umb.edu")
+ :provided   (net-utils)
+ :keywords   ("network" "comm")
+ :commentary "\
+There are three main areas of functionality:
+
+* Wrap common network utility programs (ping, traceroute, netstat,
+nslookup, arp, route). Note that these wrappers are of the diagnostic
+functions of these programs only.
+
+* Implement some very basic protocols in Emacs Lisp (finger and whois)
+
+* Support connections to HOST/PORT, generally for debugging and the like.
+In other words, for doing much the same thing as \"telnet HOST PORT\", and
+then typing commands.
+
+PATHS
+
+On some systems, some of these programs are not in normal user path,
+but rather in /sbin, /usr/sbin, and so on.")

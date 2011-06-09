@@ -5,8 +5,9 @@
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")
  :provided   (faces+)
- :required   ((("emacs" cl faces))
-	      (("emacs" thingatpt)
+ :required   ((("cl" cl)
+	       ("emacs-core" faces))
+	      (("thingatpt" thingatpt)
 	       ("thingatpt+" thingatpt+)))
  :keywords   ("faces" "local")
  :commentary "\

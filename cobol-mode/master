@@ -6,7 +6,8 @@
  :maintainer ("Rick Bielawski" . "rbielaws@i1.net")
  :provided   (cobol-mode)
  :required   ((("column-marker" column-marker)
-	       ("emacs" imenu which-func)
+	       ("imenu" imenu)
+	       ("which-func" which-func)
 	       (nil cobol-indent)))
  :keywords   ("languages" "cobol" "tandem" "guardian" "nsk")
  :homepage   "http://www.emacswiki.org/CobolMode"

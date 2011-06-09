@@ -5,7 +5,7 @@
  :authors    (("Will Mengarini" . "seldon@eskimo.com"))
  :maintainer ("Will Mengarini" . "seldon@eskimo.com")
  :provided   (diminish)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("extensions" "diminish" "minor" "codeprose")
  :homepage   "http://www.eskimo.com/~seldon/"
  :wikipage   "http://www.emacswiki.org/DiminishedModes"

@@ -3,7 +3,7 @@
  :updated    "2008"
  :license    "GPL-2"
  :provided   (javadoc-help)
- :required   ((("emacs" thingatpt)))
+ :required   ((("thingatpt" thingatpt)))
  :keywords   ("javadoc" "help" "lookup" "java")
  :homepage   "http://javadochelp.sourceforge.net/"
  :wikipage   "http://www.emacswiki.org/JavadocHelp"

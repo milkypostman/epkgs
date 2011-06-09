@@ -4,7 +4,8 @@
  :license    "GPL-2"
  :maintainer (nil . "barry@python.org")
  :provided   (xrdb-mode)
- :required   ((("emacs" custom reporter)))
+ :required   ((("custom" custom)
+	       ("reporter" reporter)))
  :keywords   ("data" "languages")
  :homepage   "http://www.python.org/emacs/"
  :commentary "\

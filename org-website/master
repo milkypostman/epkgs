@@ -5,7 +5,7 @@
  :license    "GPL-3"
  :provided   (org-website)
  :required   ((("dirtree" dirtree)
-	       ("emacs" org-html org-publish)
+	       ("org-mode" org-html org-publish)
 	       ("string-template" string-template)))
  :keywords   ("org")
  :homepage   "https://github.com/renard/org-website"

@@ -5,7 +5,10 @@
  :authors    (("Kevin A. Burton" . "burton@openprivacy.org"))
  :maintainer ("Kevin A. Burton" . "burton@openprivacy.org")
  :provided   (cvs-commit)
- :required   ((("emacs" easymenu font-lock log-edit vc vc-hooks)
+ :required   ((("easymenu" easymenu)
+	       ("emacs-core" font-lock)
+	       ("log-edit" log-edit)
+	       ("vc" vc vc-hooks)
 	       (nil cvs-diff)))
  :keywords   ("cvs" "commit")
  :commentary "\

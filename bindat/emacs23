@@ -1,0 +1,176 @@
+(:summary    "Binary data structure packing and unpacking"
+ :created    "2002"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Kim F. Storm" . "storm@cua.dk"))
+ :maintainer ("Kim F. Storm" . "storm@cua.dk")
+ :provided   (bindat)
+ :keywords   ("comm" "data" "processes")
+ :commentary "\
+Packing and unpacking of (binary) data structures.
+
+ The data formats used in binary files and network protocols are
+ often structed data which can be described by a C-style structure
+ such as the one shown below.  Using the bindat package, decoding
+ and encoding binary data formats like these is made simple using a
+ structure specification which closely resembles the C style
+ structure declarations.
+
+ Encoded (binary) data is stored in a unibyte string or vector,
+ while the decoded data is stored in an alist with (FIELD . VALUE)
+ pairs.
+
+Example:
+
+ Consider the following C structures:
+
+ struct header {
+	unsigned long	dest_ip;
+	unsigned long	src_ip;
+	unsigned short	dest_port;
+	unsigned short	src_port;
+ };
+
+ struct data {
+	unsigned char	type;
+	unsigned char	opcode;
+	unsigned long	length;  /* In little endian order */
+	unsigned char	id[8];   /* nul-terminated string  */
+	unsigned char	data[/* (length + 3) & ~3 */];
+ };
+
+ struct packet {
+	struct header	header;
+	unsigned char	items;
+	unsigned char   filler[3];
+	struct data	item[/* items */];
+ };
+
+ The corresponding Lisp bindat specification looks like this:
+
+ (setq header-bindat-spec
+   '((dest-ip   ip)
+	(src-ip    ip)
+	(dest-port u16)
+	(src-port  u16)))
+
+ (setq data-bindat-spec
+   '((type      u8)
+	(opcode	   u8)
+	(length	   u16r)  ;; little endian order
+	(id	   strz 8)
+	(data	   vec (length))
+	(align     4)))
+
+ (setq packet-bindat-spec
+   '((header    struct header-bindat-spec)
+	(items     u8)
+	(fill      3)
+	(item	   repeat (items)
+		   (struct data-bindat-spec))))
+
+
+ A binary data representation may look like
+  [ 192 168 1 100 192 168 1 101 01 28 21 32 2 0 0 0
+    2 3 5 0 ?A ?B ?C ?D ?E ?F 0 0 1 2 3 4 5 0 0 0
+    1 4 7 0 ?B ?C ?D ?E ?F ?G 0 0 6 7 8 9 10 11 12 0 ]
+
+ The corresponding decoded structure looks like
+
+     ((header
+       (dest-ip   . [192 168 1 100])
+       (src-ip    . [192 168 1 101])
+       (dest-port . 284)
+       (src-port  . 5408))
+      (items . 2)
+      (item ((data . [1 2 3 4 5])
+     	(id . \"ABCDEF\")
+     	(length . 5)
+     	(opcode . 3)
+     	(type . 2))
+            ((data . [6 7 8 9 10 11 12])
+     	(id . \"BCDEFG\")
+     	(length . 7)
+     	(opcode . 4)
+     	(type . 1))))
+
+ To access a specific value in this structure, use the function
+ bindat-get-field with the structure as first arg followed by a list
+ of field names and array indexes, e.g. using the data above,
+   (bindat-get-field decoded-structure 'item 1 'id)
+ returns \"BCDEFG\".
+
+Binary Data Structure Specification Format
+------------------------------------------
+
+We recommend using names that end in `-bindat-spec'; such names
+are recognized automatically as \"risky\" variables.
+
+The data specification is formatted as follows:
+
+SPEC    ::= ( ITEM... )
+
+ITEM    ::= ( [FIELD] TYPE )
+         |  ( [FIELD] eval FORM )    -- eval FORM for side-effect only
+         |  ( [FIELD] fill LEN )     -- skip LEN bytes
+         |  ( [FIELD] align LEN )    -- skip to next multiple of LEN bytes
+         |  ( [FIELD] struct SPEC_NAME )
+         |  ( [FIELD] union TAG_VAL (TAG SPEC)... [(t SPEC)] )
+         |  ( [FIELD] repeat COUNT ITEM... )
+
+         -- In (eval EXPR), the value of the last field is available in
+            the dynamically bound variable `last'.
+
+TYPE    ::= ( eval EXPR )		-- interpret result as TYPE
+	    |  u8   | byte		-- length 1
+         |  u16  | word | short      -- length 2, network byte order
+         |  u24                      -- 3-byte value
+         |  u32  | dword | long      -- length 4, network byte order
+         |  u16r | u24r | u32r       -- little endian byte order.
+	    |  str LEN                  -- LEN byte string
+         |  strz LEN                 -- LEN byte (zero-terminated) string
+         |  vec LEN [TYPE]           -- vector of LEN items of TYPE (default: u8)
+         |  ip                       -- 4 byte vector
+         |  bits LEN                 -- List with bits set in LEN bytes.
+
+         -- Note: 32 bit values may be limited by emacs' INTEGER
+            implementation limits.
+
+         -- Example: `bits 2' will unpack 0x28 0x1c to (2 3 4 11 13)
+                                      and 0x1c 0x28 to (3 5 10 11 12).
+
+FIELD   ::= ( eval EXPR )		-- use result as NAME
+         |  NAME
+
+LEN     ::= ARG
+         |  <omitted> | nil		-- LEN = 1
+
+
+TAG_VAL ::= ARG
+
+TAG     ::= LISP_CONSTANT
+         |  ( eval EXPR )		-- return non-nil if tag match;
+					   current TAG_VAL in `tag'.
+
+ARG     ::= ( eval EXPR )		-- interpret result as ARG
+         |  INTEGER_CONSTANT
+         |  DEREF
+
+DEREF   ::= ( [NAME | INTEGER]... )	-- Field NAME or Array index relative
+                                        to current structure spec.
+                                     -- see bindat-get-field
+
+A `union' specification
+   ([FIELD] union TAG_VAL (TAG SPEC) ... [(t SPEC)])
+is interpreted by evalling TAG_VAL and then comparing that to
+each TAG using equal; if a match is found, the corresponding SPEC
+is used.
+If TAG is a form (eval EXPR), EXPR is evalled with `tag' bound to the
+value of TAG_VAL; the corresponding SPEC is used if the result is non-nil.
+Finally, if TAG is t, the corresponding SPEC is used unconditionally.
+
+An `eval' specification
+ ([FIELD] eval FORM)
+is interpreted by evalling FORM for its side effects only.
+If FIELD is specified, the value is bound to that field.
+The FORM may access and update `bindat-raw' and `bindat-idx' (see `bindat-unpack').")

@@ -6,7 +6,7 @@
  :authors    (("Chris Done" . "chrisdone@gmail.com"))
  :maintainer ("Chris Done" . "chrisdone@gmail.com")
  :provided   (zencoding-mode)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("convenience")
  :homepage   "https://github.com/rooney/zencoding"
  :wikipage   "http://www.emacswiki.org/ZenCoding"

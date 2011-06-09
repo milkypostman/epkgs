@@ -6,7 +6,9 @@
 	      ("John Palmieri" . "palmieri@math.washington.edu"))
  :maintainer ("John Palmieri" . "palmieri@math.washington.edu")
  :provided   (bufcomp light)
- :required   ((("emacs" cl custom ispell)))
+ :required   ((("cl" cl)
+	       ("custom" custom)
+	       ("ispell" ispell)))
  :keywords   ("completion")
  :homepage   "http://www.math.washington.edu/~palmieri/Emacs/light.html"
  :wikipage   "http://www.emacswiki.org/LightningCompletion")

@@ -4,7 +4,7 @@
  :authors    (("baron"))
  :maintainer ("baron")
  :provided   (nazna)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("arithmetic" "math")
  :homepage   "https://github.com/baron/nazna.el"
  :commentary "\

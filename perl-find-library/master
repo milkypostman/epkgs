@@ -5,7 +5,9 @@
  :authors    (("Nelson Elhage" . "nelhage@mit.edu"))
  :maintainer ("Nelson Elhage" . "nelhage@mit.edu")
  :provided   (perl-find-library)
- :required   ((("emacs" cl cperl-mode find-lisp)))
+ :required   ((("cl" cl)
+	       ("cperl-mode" cperl-mode)
+	       ("find-lisp" find-lisp)))
  :keywords   ("util" "perl")
  :commentary "\
 The main functionality provided by this file is in the

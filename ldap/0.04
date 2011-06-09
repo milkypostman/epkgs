@@ -5,7 +5,7 @@
  :authors    (("Andrew J Cosgriff" . "ajc@bing.wattle.id.au"))
  :maintainer ("Andrew J Cosgriff" . "ajc@bing.wattle.id.au")
  :provided   (ldap)
- :required   ((("emacs" backquote)))
+ :required   ((("emacs-core" backquote)))
  :keywords   ("ldap" "search")
  :homepage   "http://polydistortion.net/sw/emacs-lisp/"
  :commentary "\

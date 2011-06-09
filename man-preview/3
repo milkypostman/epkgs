@@ -5,7 +5,7 @@
  :authors    (("Kevin Ryde" . "user42@zip.com.au"))
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (man-preview)
- :required   ((("emacs" man)))
+ :required   ((("man" man)))
  :keywords   ("docs")
  :wikipage   "http://www.emacswiki.org/ManPreview"
  :commentary "\

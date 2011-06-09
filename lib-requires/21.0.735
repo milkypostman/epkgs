@@ -5,7 +5,9 @@
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")
  :provided   (lib-requires)
- :required   ((("emacs" cl find-func loadhist)))
+ :required   ((("cl" cl)
+	       ("emacs-core" loadhist)
+	       ("find-func" find-func)))
  :keywords   ("libraries" "files")
  :commentary "\
 Commands to list Emacs Lisp library dependencies.

@@ -6,7 +6,8 @@
  :authors    (("Philip Jackson" . "phil@shellarchive.co.uk"))
  :maintainer ("Philip Jackson" . "phil@shellarchive.co.uk")
  :provided   (etest etest-rm-html-simple)
- :required   ((("emacs" cl outline)
+ :required   ((("cl" cl)
+	       ("outline" outline)
 	       ("xmlgen" xmlgen)))
  :homepage   "http://www.shellarchive.co.uk/content/etest.html"
  :wikipage   "http://www.emacswiki.org/ETest"

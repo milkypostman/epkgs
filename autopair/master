@@ -4,7 +4,7 @@
  :updated    "2010"
  :license    "GPL-3"
  :provided   (autopair autopair-tests)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("convenience" "emulations")
  :homepage   "http://code.google.com/p/autopair/"
  :commentary "\

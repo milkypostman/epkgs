@@ -7,7 +7,7 @@
 	      ("Functions for debug message are all commented out."))
  :maintainer ("Akimichi Tatsukawa" . "akimichi@mbox.co.jp")
  :provided   (eparser)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("calculator" "math" "functional" "language" "emile" "exp" "emile" "emile" "revision" "emile" "functions" "debug" "message" "all" "commented")
  :homepage   "http://akimichi.homeunix.net/~emile/aki/hiki.cgi?CpadElisp"
  :wikipage   "http://www.emacswiki.org/CalculationPad"

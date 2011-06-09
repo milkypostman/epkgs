@@ -1,6 +1,0 @@
-(:created    "1992"
- :updated    "1992"
- :license    "GPL"
- :provided   (bibtex)
- :required   (((nil x-mouse)))
- :wikipage   "http://www.emacswiki.org/BibTeX")

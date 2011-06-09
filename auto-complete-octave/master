@@ -5,7 +5,7 @@
  :maintainer ("coldnew")
  :provided   (auto-complete-octave)
  :required   ((("auto-complete" auto-complete)
-	       ("emacs" cl)))
+	       ("cl" cl)))
  :keywords   ("octave" "auto-complete")
  :commentary "\
 This is for GNU Octave 3.2.0

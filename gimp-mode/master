@@ -5,9 +5,14 @@
  :authors    (("but please"))
  :maintainer ("but please")
  :provided   (fud gimp-mode)
- :required   ((("emacs" cl cmuscheme eldoc outline ring thingatpt)
+ :required   ((("cl" cl)
+	       ("cmuscheme" cmuscheme)
+	       ("eldoc" eldoc)
+	       ("outline" outline)
+	       ("ring" ring)
 	       ("scheme-complete" scheme-complete)
-	       ("snippet" snippet)))
+	       ("snippet" snippet)
+	       ("thingatpt" thingatpt)))
  :keywords   ("processes" "multimedia" "extensions" "tools" "gimp" "scheme")
  :homepage   "http://niels.kicks-ass.org/gimpmode"
  :wikipage   "http://www.emacswiki.org/GimpMode"

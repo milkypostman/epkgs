@@ -6,7 +6,13 @@
  :authors    (("Turadg Aleahmad"))
  :maintainer ("Aaron S. Hawley" . "ashawley@users.sourceforge.net")
  :provided   (php-mode)
- :required   ((("emacs" add-log cc-langs cc-mode custom etags font-lock regexp-opt speedbar)))
+ :required   ((("add-log" add-log)
+	       ("cc-mode" cc-langs cc-mode)
+	       ("cedet" speedbar)
+	       ("custom" custom)
+	       ("emacs-core" font-lock)
+	       ("etags" etags)
+	       ("regexp-opt" regexp-opt)))
  :keywords   ("php" "languages" "oop")
  :wikipage   "http://www.emacswiki.org/PhpMode"
  :commentary "\

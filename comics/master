@@ -3,7 +3,7 @@
  :updated    "20070218"
  :license    "GPL-2"
  :provided   (comics)
- :required   ((("emacs" calendar)))
+ :required   ((("calendar" calendar)))
  :homepage   "http://vh213601.truman.edu/~belanger/emacs.html"
  :wikipage   "http://www.emacswiki.org/ComicsMode"
  :commentary "\

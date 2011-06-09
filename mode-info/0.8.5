@@ -7,7 +7,11 @@
  :maintainer ("TSUCHIYA Masatoshi" . "tsuchiya@namazu.org")
  :provided   (mi-config mi-elisp mi-emacs mi-fontify mi-gauche mi-guile mi-index mi-libc mi-make mi-octave mi-perl mi-ruby mi-scheme mi-util mode-info)
  :required   ((("apel" pcustom poe)
-	       ("emacs" cl custom font-lock help-mode info)))
+	       ("cl" cl)
+	       ("custom" custom)
+	       ("emacs-core" font-lock)
+	       ("help-mode" help-mode)
+	       ("info" info)))
  :keywords   ("info")
  :homepage   "http://www.namazu.org/~tsuchiya/elisp/mode-info.en.html"
  :commentary "\

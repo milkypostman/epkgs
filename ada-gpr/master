@@ -5,5 +5,5 @@
  :authors    (("Rolf Ebert"))
  :maintainer ("Rolf Ebert")
  :provided   (ada-gpr ada-gpr-mode)
- :required   ((("emacs" ada-mode)))
+ :required   ((("ada-mode" ada-mode)))
  :keywords   ("languages" "ada"))

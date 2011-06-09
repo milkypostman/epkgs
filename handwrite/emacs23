@@ -1,0 +1,46 @@
+(:summary    "Turns your emacs buffer into a handwritten document"
+ :created    "199621"
+ :updated    "2011"
+ :license    "GPL-3"
+ :provided   (handwrite)
+ :required   ((("ps-print" ps-print)))
+ :keywords   ("wp" "print" "postscript" "cursive" "writing")
+ :commentary "\
+The function handwrite creates PostScript output containing a
+handwritten version of the current buffer..
+Other functions that may be useful are
+
+     handwrite-10pt: sets the font size to 10 and finds corresponding
+                     values for the line spacing and the number of lines
+                     on a page.
+     handwrite-11pt: which is similar
+     handwrite-12pt: which is also similar
+     handwrite-13pt: which is similar, too
+
+     handwrite-set-pagenumber: set and unset page numbering
+
+
+If you are not satisfied with the type page there are a number of
+variables you may want to set.
+
+
+ Installation
+
+type at your prompt \"emacs -l handwrite.el\" or put this file on your
+Emacs-Lisp load path,  add the following into your ~/.emacs startup file
+
+               (require 'handwrite)
+
+\"M-x handwrite\"  or \"Write by hand\"  in the edit menu should work now.
+
+
+I tried to make it `iso_8859_1'-friendly, but there are some exotic
+characters missing.
+
+
+Known bugs: -Page feeds do not do their work, but are ignored instead.
+            -Tabs are not always properly displayed.
+            -Handwrite may create corrupt PostScript if it encounters
+             unknown characters.
+
+Thanks to anyone who emailed me suggestions!")

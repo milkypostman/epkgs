@@ -6,7 +6,10 @@
 	      ("Brian Logan" . "bsl@cs.bham.ac.uk"))
  :maintainer ("Brian Logan" . "b.s.logan@cs.bham.ac.uk")
  :provided   (pop-mode)
- :required   ((("emacs" add-log cl easymenu font-lock)))
+ :required   ((("add-log" add-log)
+	       ("cl" cl)
+	       ("easymenu" easymenu)
+	       ("emacs-core" font-lock)))
  :keywords   ("processes" "poplog")
  :commentary "\
 Pop-11 mode and inferior Pop-11 mode for XEmacs/GNU Eemacs.

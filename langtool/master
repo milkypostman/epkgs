@@ -4,6 +4,7 @@
  :authors    (("Masahiro Hayashi" . "mhayashi1120@gmail.com"))
  :maintainer ("Masahiro Hayashi" . "mhayashi1120@gmail.com")
  :provided   (langtool)
- :required   ((("emacs" cl flymake)))
+ :required   ((("cl" cl)
+	       ("flymake" flymake)))
  :keywords   ("grammer" "checker" "java")
  :homepage   "https://github.com/mhayashi1120/Emacs-langtool")

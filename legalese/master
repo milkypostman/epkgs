@@ -5,7 +5,7 @@
  :authors    (("Jorgen Schaefer" . "forcer@forcix.cx"))
  :maintainer ("Jorgen Schaefer" . "forcer@forcix.cx")
  :provided   (legalese)
- :required   ((("emacs" finder)))
+ :required   ((("finder" finder)))
  :keywords   ("convenience")
  :commentary "\
 This file adds the sometimes necessary legalese to your files. That

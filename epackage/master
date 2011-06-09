@@ -6,7 +6,8 @@
  :authors    (("Jari Aalto" . "jari.aalto@cante.net"))
  :maintainer ("Jari Aalto" . "jari.aalto@cante.net")
  :provided   (epackage)
- :required   ((("emacs" finder whitespace)))
+ :required   ((("finder" finder)
+	       ("whitespace" whitespace)))
  :keywords   ("tools")
  :homepage   "https://github.com/jaalto/project--emacs-epackage"
  :wikipage   "http://www.emacswiki.org/Epackage"

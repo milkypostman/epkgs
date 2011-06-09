@@ -2,6 +2,6 @@
  :updated    "20070816"
  :license    "GPL-2"
  :provided   (use-package)
- :required   ((("emacs" info)))
+ :required   ((("info" info)))
  :homepage   "http://www.emacswiki.org/UsePackage"
  :wikipage   "http://www.emacswiki.org/UsePackage")

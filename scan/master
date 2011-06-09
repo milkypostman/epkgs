@@ -6,6 +6,7 @@
  :authors    (("Lars Magne Ingebrigtsen" . "larsi@gnus.org"))
  :maintainer ("Lars Magne Ingebrigtsen" . "larsi@gnus.org")
  :provided   (scan)
- :required   ((("emacs" cl gnus-util)))
+ :required   ((("cl" cl)
+	       ("gnus" gnus-util)))
  :keywords   ("music")
  :homepage   "https://github.com/larsmagne/scan.el")

@@ -5,7 +5,8 @@
  :authors    (("David Vazquez" . "davazp@es.gnu.org"))
  :maintainer ("David Vazquez" . "davazp@es.gnu.org")
  :provided   (erc-tex)
- :required   ((("emacs" cl erc)))
+ :required   ((("cl" cl)
+	       ("erc" erc)))
  :keywords   ("comm" "tex")
  :homepage   "http://www.emacswiki.org/ErcTex"
  :wikipage   "http://www.emacswiki.org/ErcTex"

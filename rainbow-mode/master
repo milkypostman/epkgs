@@ -6,7 +6,9 @@
  :authors    (("Julien Danjou" . "julien@danjou.info"))
  :maintainer ("Julien Danjou" . "julien@danjou.info")
  :provided   (rainbow-mode)
- :required   ((("emacs" cl faces regexp-opt)))
+ :required   ((("cl" cl)
+	       ("emacs-core" faces)
+	       ("regexp-opt" regexp-opt)))
  :keywords   ("faces")
  :homepage   "http://julien.danjou.info/rainbow-mode.html"
  :commentary "\

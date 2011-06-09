@@ -2,6 +2,6 @@
  :updated    "2011"
  :license    "as-is"
  :provided   (google-define)
- :required   ((("emacs" font-lock)))
+ :required   ((("emacs-core" font-lock)))
  :homepage   "http://www.emacswiki.org/google-define"
  :wikipage   "http://www.emacswiki.org/google-define")

@@ -1,0 +1,19 @@
+(:summary    "A Socks v5 Client for Emacs"
+ :created    "1996"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("William M. Perry" . "wmperry@gnu.org")
+	      ("Dave Love" . "fx@gnu.org"))
+ :maintainer ("William M. Perry" . "wmperry@gnu.org")
+ :provided   (socks)
+ :required   ((("custom" custom)
+	       ("widget" wid-edit)))
+ :keywords   ("comm" "firewalls")
+ :commentary "\
+This is an implementation of the SOCKS v5 protocol as defined in
+RFC 1928.
+
+TODO
+- Finish the redirection rules stuff
+- Implement composition of servers.  Recursively evaluate the
+  redirection rules and do SOCKS-over-HTTP and SOCKS-in-SOCKS")

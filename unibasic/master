@@ -5,7 +5,8 @@
  :authors    (("Pat Thoyts" . "pat@zsplat.freeserve.co.uk"))
  :maintainer ("Pat Thoyts" . "pat@zsplat.freeserve.co.uk")
  :provided   (unibasic-mode)
- :required   ((("emacs" regexp-opt reporter)))
+ :required   ((("regexp-opt" regexp-opt)
+	       ("reporter" reporter)))
  :keywords   ("languages")
  :wikipage   "http://www.emacswiki.org/UniBASICMode"
  :commentary "\

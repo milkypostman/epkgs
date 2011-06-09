@@ -5,7 +5,9 @@
  :authors    (("Nic Ferrier" . "nferrier@tapsellferrier.co.uk"))
  :maintainer ("Nic Ferrier" . "nferrier@tapsellferrier.co.uk")
  :provided   (imapua)
- :required   ((("emacs" cl imap message qp timezone)))
+ :required   ((("cl" cl)
+	       ("gnus" imap message qp)
+	       ("timezone" timezone)))
  :keywords   ("mail" "version")
  :homepage   "http://www.emacswiki.org/imapua"
  :wikipage   "http://www.emacswiki.org/imapua"

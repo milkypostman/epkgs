@@ -1,0 +1,24 @@
+(:summary    "Automatically reveal hidden text at point"
+ :created    "2000"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Stefan Monnier" . "monnier@iro.umontreal.ca"))
+ :maintainer ("Stefan Monnier" . "monnier@iro.umontreal.ca")
+ :provided   (reveal)
+ :keywords   ("outlines")
+ :commentary "\
+Reveal mode is a minor mode that makes sure that text around point
+is always visible.  When point enters a region of hidden text,
+`reveal-mode' temporarily makes it visible.
+
+This is normally used in conjunction with `outline-minor-mode',
+`hs-minor-mode', `hide-ifdef-mode', ...
+
+It only works with packages that hide text using overlays.
+Packages can provide special support for it by placing
+a function in the `reveal-toggle-invisible' property on the symbol
+used as the value of the `invisible' overlay property.
+The function is called right after revealing (or re-hiding) the
+text with two arguments: the overlay and a boolean that's non-nil
+if we have just revealed the text.  When revealing, that function
+may re-hide some of the text.")

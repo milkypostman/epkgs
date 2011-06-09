@@ -4,7 +4,7 @@
  :updated    "20070302"
  :license    "GPL-2"
  :provided   (nero)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :homepage   "http://code.google.com/p/nero-el/"
  :commentary "\
 Nero is a fast interactive web browser that runs under Emacs.  It

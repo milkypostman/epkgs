@@ -3,4 +3,4 @@
  :updated    "20041221"
  :license    "GPL-2"
  :provided   (docmap)
- :required   ((("emacs" outline))))
+ :required   ((("outline" outline))))

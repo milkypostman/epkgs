@@ -5,7 +5,7 @@
  :authors    (("Martin Rudalics" . "rudalics@gmx.at"))
  :maintainer ("Martin Rudalics" . "rudalics@gmx.at")
  :provided   (speck)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("spell" "checking")
  :homepage   "http://www.emacswiki.org/SpeckMode"
  :wikipage   "http://www.emacswiki.org/SpeckMode"

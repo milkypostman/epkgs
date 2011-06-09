@@ -7,7 +7,7 @@
 	      ("Katsumi Yamaoka" . "yamaoka@jpl.org"))
  :maintainer ("TAKAHASHI Kaoru" . "kaoru@kaisei.org")
  :provided   (ptexinfmt)
- :required   ((("emacs" texinfmt)))
+ :required   ((("texinfmt" texinfmt)))
  :keywords   ("maint" "tex" "docs" "emulation" "compatibility")
  :commentary "\
 Original code: Yoshiki Hayashi <yoshiki@xemacs.org>

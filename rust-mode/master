@@ -5,7 +5,7 @@
  :authors    (("Graydon Hoare"))
  :maintainer ("Graydon Hoare")
  :provided   (rust-mode)
- :required   ((("emacs" cc-fonts cc-langs cc-mode)))
+ :required   ((("cc-mode" cc-fonts cc-langs cc-mode)))
  :keywords   ("c" "languages")
  :homepage   "https://github.com/graydon/rust-mode"
  :commentary "\

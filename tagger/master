@@ -3,7 +3,7 @@
  :updated    "2007"
  :license    "GPL-2"
  :provided   (tagger)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :commentary "\
 When one finds out about something it's useful if the information
 is recorded somewhere. I usually use some file to dump everything

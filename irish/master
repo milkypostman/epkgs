@@ -1,5 +1,5 @@
 (:updated    "20070708"
  :license    "GPL-2"
  :provided   (irish)
- :required   ((("emacs" iso-transl)))
+ :required   ((("emacs-core" iso-transl)))
  :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/natural-language/")

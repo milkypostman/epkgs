@@ -6,8 +6,8 @@
  :authors    (("myfreeweb" . "me@myfreeweb.ru"))
  :maintainer ("myfreeweb" . "me@myfreeweb.ru")
  :provided   (startproject)
- :required   ((("emacs" ido))
-	      (("emacs" vc)))
+ :required   ((("ido" ido))
+	      (("vc" vc)))
  :keywords   ("tools")
  :homepage   "https://github.com/myfreeweb/startproject"
  :commentary "\

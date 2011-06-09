@@ -3,7 +3,8 @@
  :created    "2011"
  :updated    "2011"
  :provided   (wysiwyg-tex)
- :required   ((("emacs" cl doc-view)
+ :required   ((("cl" cl)
+	       ("doc-view" doc-view)
 	       (nil doc-view-fit-page)))
  :homepage   "https://github.com/laysakura/WYSIWYG-TeX-el"
  :commentary "\

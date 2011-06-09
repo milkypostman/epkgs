@@ -5,7 +5,9 @@
  :authors    (("Kevin Ryde" . "user42@zip.com.au"))
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (man-completion)
- :required   ((("emacs" cl man thingatpt)))
+ :required   ((("cl" cl)
+	       ("man" man)
+	       ("thingatpt" thingatpt)))
  :keywords   ("data")
  :commentary "\
 This spot of code extends M-x man with completion of man page names and

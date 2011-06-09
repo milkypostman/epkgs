@@ -5,7 +5,8 @@
  :authors    (("Noah Friedman" . "friedman@splode.com"))
  :maintainer (nil . "friedman@splode.com")
  :provided   (yow-fns)
- :required   ((("emacs" cookie1 yow)))
+ :required   ((("cookie1" cookie1)
+	       ("yow" yow)))
  :homepage   "ftp://ftp.splode.com/pub/users/friedman/emacs-lisp/"
  :commentary "\
 Some of these functions have been added to official emacs distributions

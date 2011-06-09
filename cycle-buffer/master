@@ -3,7 +3,7 @@
  :authors    (("Vladimir Alexiev" . "vladimir@cs.ualberta.ca"))
  :maintainer ("same")
  :provided   (cycle-buffer)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("switch-to-buffer" "cycle" "buffer" "list")
  :homepage   "http://www.emacswiki.org/CycleBuffer"
  :wikipage   "http://www.emacswiki.org/CycleBuffer"

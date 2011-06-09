@@ -7,7 +7,11 @@
  :maintainer ("Lee Jong-Gyu" . "jglee1027@gmail.com")
  :provided   (jda)
  :required   ((("anything" anything)
-	       ("emacs" cl hi-lock ido imenu thingatpt)))
+	       ("cl" cl)
+	       ("hi-lock" hi-lock)
+	       ("ido" ido)
+	       ("imenu" imenu)
+	       ("thingatpt" thingatpt)))
  :keywords   ("languages" "tools")
  :homepage   "https://github.com/jglee1027/jda-minor-mode"
  :commentary "\

@@ -5,5 +5,7 @@
  :authors    (("Trey Jackson" . "trey@cs.berkeley.edu"))
  :maintainer ("Trey Jackson" . "trey@cs.berkeley.edu")
  :provided   (rmail-extras)
- :required   ((("emacs" ange-ftp cl rmail)))
+ :required   ((("ange-ftp" ange-ftp)
+	       ("cl" cl)
+	       ("rmail" rmail)))
  :keywords   ("mail" "time"))

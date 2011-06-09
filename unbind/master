@@ -3,5 +3,5 @@
  :updated    "2002"
  :license    "GPL-2"
  :provided   (unbind)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :homepage   "http://www.davep.org/emacs/")

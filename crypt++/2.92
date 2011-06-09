@@ -6,8 +6,8 @@
 	      ("Rod Whitby" . "rwhitby@research.canon.oz.au")
 	      ("Kyle E. Jones" . "kyle@uunet.uu.net"))
  :provided   (crypt crypt++ crypt+pgp-pub)
- :required   ((("emacs" reporter)
-	       ("mailcrypt" mailcrypt)
+ :required   ((("mailcrypt" mailcrypt)
+	       ("reporter" reporter)
 	       (nil pam)))
  :keywords   ("extensions")
  :wikipage   "http://www.emacswiki.org/CryptPlusPlus"

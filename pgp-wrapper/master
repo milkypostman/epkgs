@@ -4,4 +4,4 @@
  :authors    (("Peter Breton"))
  :maintainer ("Peter Breton")
  :provided   (pgp-wrapper)
- :required   ((("emacs" comint))))
+ :required   ((("comint" comint))))

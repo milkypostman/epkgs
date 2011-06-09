@@ -5,7 +5,7 @@
  :authors    (("MORIOKA Tomohiko" . "morioka@jaist.ac.jp"))
  :maintainer ("MORIOKA Tomohiko" . "morioka@jaist.ac.jp")
  :provided   (rmail-mime)
- :required   ((("emacs" rmail)
+ :required   ((("rmail" rmail)
 	       ("semi" mime-view)))
  :keywords   ("mime" "multimedia" "mail")
  :homepage   "http://www.kanji.zinbun.kyoto-u.ac.jp/~tomo/lemi/"

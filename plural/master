@@ -5,7 +5,7 @@
  :authors    (("Aaron S. Hawley"))
  :maintainer ("Aaron S. Hawley")
  :provided   (plural)
- :required   ((("emacs" thingatpt)))
+ :required   ((("thingatpt" thingatpt)))
  :keywords   ("convenience" "spelling")
  :commentary "\
 On any word try `M-x plural-make-plural'.")

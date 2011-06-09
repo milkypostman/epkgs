@@ -5,7 +5,7 @@
  :authors    (("Kevin Ryde" . "user42@zip.com.au"))
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (gtk-look)
- :required   ((("emacs" browse-url)))
+ :required   ((("browse-url" browse-url)))
  :keywords   ("tools" "c")
  :wikipage   "http://www.emacswiki.org/GtkLook"
  :commentary "\

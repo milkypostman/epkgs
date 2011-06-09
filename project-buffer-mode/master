@@ -4,7 +4,8 @@
  :authors    (("Cedric Lallain" . "kandjar76@hotmail.com"))
  :maintainer ("Cedric Lallain" . "kandjar76@hotmail.com")
  :provided   (fsproject iproject project-buffer-mode project-buffer-mode+ project-buffer-occur sln-mode)
- :required   ((("emacs" cl ewoc)))
+ :required   ((("cl" cl)
+	       ("ewoc" ewoc)))
  :keywords   ("project" "mode" "buffer" "viewer" "generic")
  :homepage   "http://repo.or.cz/w/project-buffer-mode.git"
  :wikipage   "http://www.emacswiki.org/ProjectBufferMode"

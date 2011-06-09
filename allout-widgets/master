@@ -2,7 +2,9 @@
  :created    "200512"
  :updated    "20071219"
  :provided   (allout-item-settings allout-tests allout-widgets)
- :required   ((("emacs" cl overlay wid-edit widget)))
+ :required   ((("cl" cl)
+	       ("emacs-core" overlay)
+	       ("widget" wid-edit widget)))
  :keywords   ("outlines")
  :homepage   "http://myriadicity.net/Sundry/EmacsAllout"
  :commentary "\

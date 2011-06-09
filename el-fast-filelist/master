@@ -8,7 +8,8 @@
  :maintainer ("Mariusz Nowak" . "medikoo+el-fast-filelist@medikoo.com")
  :provided   (el-fast-filelist/el-fast-filelist)
  :required   (nil
-	      ((nil el-index/el-index el-kit/directory el-kit/file el-kit/key el-kit/list)))
+	      (("el-index" el-index/el-index)
+	       (nil el-kit/directory el-kit/file el-kit/key el-kit/list)))
  :homepage   "https://github.com/medikoo/el-fast-filelist"
  :commentary "\
 See README.")

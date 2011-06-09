@@ -5,7 +5,7 @@
  :authors    (("Kahlil (Kal) HODGSON" . "dorge@tpg.com.au"))
  :maintainer ("Kahlil (Kal) HODGSON" . "dorge@tpg.com.au")
  :provided   (title-time)
- :required   ((("emacs" time)))
+ :required   ((("time" time)))
  :keywords   ("convenience")
  :commentary "\
 Just like display-time except that time, date, mail and appointment

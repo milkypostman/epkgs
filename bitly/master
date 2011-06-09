@@ -6,7 +6,8 @@
  :authors    (("Vivek Haldar" . "vh@vivekhaldar.com"))
  :maintainer ("Vivek Haldar" . "vh@vivekhaldar.com")
  :provided   (bitly)
- :required   ((("emacs" thingatpt url)))
+ :required   ((("thingatpt" thingatpt)
+	       ("url" url)))
  :homepage   "https://github.com/vivekhaldar/bitly.el"
  :wikipage   "http://www.emacswiki.org/BitLy"
  :commentary "\

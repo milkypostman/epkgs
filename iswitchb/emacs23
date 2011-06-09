@@ -1,0 +1,225 @@
+(:summary    "Switch between buffers using substrings"
+ :created    "1996"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Stephen Eglen" . "stephen@gnu.org"))
+ :maintainer ("Stephen Eglen" . "stephen@gnu.org")
+ :provided   (iswitchb)
+ :required   ((("emacs-core" font-lock)))
+ :keywords   ("completion" "convenience")
+ :commentary "\
+Installation:
+To get the functions in this package bound to keys, use
+M-x iswitchb-mode or customize the option `iswitchb-mode'.
+Alternatively, add the following line to your .emacs:
+(iswitchb-mode 1)
+
+As you type in a substring, the list of buffers currently matching
+the substring is displayed as you type.  The list is ordered so
+that the most recent buffers visited come at the start of the list.
+The buffer at the start of the list will be the one visited when
+you press return.  By typing more of the substring, the list is
+narrowed down so that gradually the buffer you want will be at the
+top of the list.  Alternatively, you can use C-s and C-r to rotate
+buffer names in the list until the one you want is at the top of
+the list.  Completion is also available so that you can see what is
+common to all of the matching buffers as you type.
+
+This code is similar to a couple of other packages.  Michael R Cook
+<cook@sightpath.com> wrote a similar buffer switching package, but
+does exact matching rather than substring matching on buffer names.
+I also modified a couple of functions from icomplete.el to provide
+the completion feedback in the minibuffer.
+
+Example
+
+If I have two buffers called \"123456\" and \"123\", with \"123456\" the
+most recent, when I use iswitchb, I first of all get presented with
+the list of all the buffers
+
+      iswitch  {123456,123}
+
+If I then press 2:
+      iswitch 2[3]{123456,123}
+
+The list in {} are the matching buffers, most recent first (buffers
+visible in the current frame are put at the end of the list by
+default).  At any time I can select the item at the head of the
+list by pressing RET.  I can also put the first element at the end
+of the list by pressing C-s, or put the last element at the head of
+the list by pressing C-r.  The item in [] indicates what can be
+added to my input by pressing TAB.  In this case, I will get \"3\"
+added to my input.  So, press TAB:
+	 iswitch 23{123456,123}
+
+At this point, I still have two matching buffers.
+If I want the first buffer in the list, I simply press RET.  If I
+wanted the second in the list, I could press C-s to move it to the
+top of the list and then RET to select it.
+
+However, if I type 4, I only have one match left:
+      iswitch 234[123456] [Matched]
+
+Since there is only one matching buffer left, it is given in [] and we
+see the text [Matched] afterwards.  I can now press TAB or RET to go
+to that buffer.
+
+If however, I now type \"a\":
+      iswitch 234a [No match]
+There are no matching buffers.  If I press RET or TAB, I can be
+prompted to create a new buffer called \"234a\".
+
+Of course, where this function comes in really useful is when you
+can specify the buffer using only a few keystrokes.  In the above
+example, the quickest way to get to the \"123456\" buffer would be
+just to type 4 and then RET (assuming there isn't any newer buffer
+with 4 in its name).
+
+To see a full list of all matching buffers in a separate buffer,
+hit ? or press TAB when there are no further completions to the
+substring.  Repeated TAB presses will scroll you through this
+separate buffer.
+
+The buffer at the head of the list can be killed by pressing C-k.
+If the buffer needs saving, you will be queried before the buffer
+is killed.
+
+If you find that the file you are after is not in a buffer, you can
+press C-x C-f to immediately drop into find-file.
+
+See the doc string of iswitchb for full keybindings and features.
+(describe-function 'iswitchb)
+
+Case matching: The case of strings when matching can be ignored or
+used depending on the value of iswitchb-case (default is the same
+as case-fold-search, normally t).  Imagine you have the following
+buffers:
+
+INBOX *info* *scratch*
+
+Then these will be the matching buffers, depending on how you type
+the two letters `in' and the value of iswitchb-case:
+
+iswitchb-case   user input  | matching buffers
+----------------------------------------------
+nil             in          | *info*
+t               in          | INBOX, *info*
+t               IN          | INBOX
+t               In          | [No match]
+
+Customisation
+
+See the User Variables section below for easy ways to change the
+functionality of the program.  These are accessible using the
+custom package.
+To modify the keybindings, use something like:
+
+(add-hook 'iswitchb-mode-hook 'iswitchb-my-keys)
+(defun iswitchb-my-keys ()
+ \"Add my keybindings for iswitchb.\"
+ (define-key iswitchb-mode-map \" \" 'iswitchb-next-match))
+
+Seeing all the matching buffers
+
+If you have many matching buffers, they may not all fit onto one
+line of the minibuffer.  In Emacs 21, the variable
+`resize-mini-windows' controls how many lines of the minibuffer can
+be seen.  For older versions of emacs, you can use
+`resize-minibuffer-mode'.  You can also limit iswitchb so that it
+only shows a certain number of lines -- see the documentation for
+`iswitchb-minibuffer-setup-hook'.
+
+Changing the list of buffers
+
+By default, the list of current buffers is most recent first,
+oldest last, with the exception that the buffers visible in the
+current frame are put at the end of the list.  A hook exists to
+allow other functions to order the list.  For example, if you add:
+
+(add-hook 'iswitchb-make-buflist-hook 'iswitchb-summaries-to-end)
+
+then all buffers matching \"Summary\" are moved to the end of the
+list.  (I find this handy for keeping the INBOX Summary and so on
+out of the way.)  It also moves buffers matching \"output\\*$\" to the
+end of the list (these are created by AUCTeX when compiling.)
+Other functions could be made available which alter the list of
+matching buffers (either deleting or rearranging elements.)
+
+Font-Lock
+
+font-lock is used to highlight the first matching buffer.  To
+switch this off, set (setq iswitchb-use-faces nil).  Colouring of
+the matching buffer name was suggested by Carsten Dominik
+(dominik@strw.leidenuniv.nl)
+
+Replacement for read-buffer
+
+iswitchb-read-buffer has been written to be a drop in replacement
+for the normal buffer selection routine `read-buffer'.  To use
+iswitch for all buffer selections in Emacs, add:
+(setq read-buffer-function 'iswitchb-read-buffer)
+(This variable was introduced in Emacs 20.3.)
+XEmacs users can get the same behavior by doing:
+(defalias 'read-buffer 'iswitchb-read-buffer)
+since `read-buffer' is defined in lisp.
+
+Using iswitchb for other completion tasks.
+
+Kin Cho (kin@neoscale.com) sent the following suggestion to use
+iswitchb for other completion tasks.
+
+(defun my-icompleting-read (prompt choices)
+  \"Use iswitch as a completing-read replacement to choose from
+choices.  PROMPT is a string to prompt with.  CHOICES is a list of
+strings to choose from.\"
+  (let ((iswitchb-make-buflist-hook
+         (lambda ()
+           (setq iswitchb-temp-buflist choices))))
+    (iswitchb-read-buffer prompt)))
+
+example:
+(my-icompleting-read \"Which fruit? \" '
+		     (\"apple\" \"pineapple\" \"pear\" \"bananas\" \"oranges\") )
+
+Kin Cho also suggested the following defun.  Once you have a subset of
+matching buffers matching your current prompt, you can then press
+e.g. C-o to restrict matching to those buffers and clearing the prompt:
+(defun iswitchb-exclude-nonmatching()
+   \"Make iswitchb work on only the currently matching names.\"
+   (interactive)
+   (setq iswitchb-buflist iswitchb-matches)
+   (setq iswitchb-rescan t)
+   (delete-minibuffer-contents))
+
+(add-hook 'iswitchb-define-mode-map-hook
+	  '(lambda () (define-key
+			iswitchb-mode-map \"\\C-o\"
+			'iswitchb-exclude-nonmatching)))
+
+Other lisp packages extend iswitchb behavior to other tasks.  See
+ido.el (by Kim Storm) and mcomplete.el (Yuji Minejima).
+
+Window managers: Switching frames/focus follows mouse; Sawfish.
+
+If you switch to a buffer that is visible in another frame,
+iswitchb can switch focus to that frame.  If your window manager
+uses \"click to focus\" policy for window selection, you should also
+set focus-follows-mouse to nil.
+
+iswitch functionality has also been implemented for switching
+between windows in the Sawfish window manager.
+
+Regexp matching
+
+There is provision for regexp matching within iswitchb, enabled
+through `iswitchb-regexp'.  This allows you to type `c$' for
+example and see all buffer names ending in `c'.  No completion
+mechanism is currently offered when regexp searching.
+
+TODO
+
+Acknowledgements
+
+Thanks to Jari Aalto <jari.aalto@poboxes.com> for help with the
+first version of this package, iswitch-buffer.  Thanks also to many
+others for testing earlier versions.")

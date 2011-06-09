@@ -5,7 +5,11 @@
  :authors    ((nil . "christoph.wedler@sap.com"))
  :maintainer (nil . "christoph.wedler@sap.com")
  :provided   (antlr-mode)
- :required   ((("emacs" cc-mode cl compile easymenu font-lock)))
+ :required   ((("cc-mode" cc-mode)
+	       ("cl" cl)
+	       ("compile" compile)
+	       ("easymenu" easymenu)
+	       ("emacs-core" font-lock)))
  :keywords   ("languages" "antlr" "code" "generator")
  :homepage   "http://antlr-mode.sourceforge.net/"
  :wikipage   "http://www.emacswiki.org/AntlrMode"

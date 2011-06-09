@@ -5,8 +5,8 @@
  :authors    (("Jeremiah Dodds" . "jeremiah.dodds@gmail.com"))
  :maintainer ("Jeremiah Dodds" . "jeremiah.dodds@gmail.com")
  :provided   (qooxdoo)
- :required   ((("emacs" thingatpt)
-	       ("eproject" eproject eproject-extras)))
+ :required   ((("eproject" eproject eproject-extras)
+	       ("thingatpt" thingatpt)))
  :keywords   ("convenience" "docs")
  :homepage   "https://github.com/jdodds/qooxdoo.el"
  :commentary "\

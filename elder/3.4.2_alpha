@@ -3,6 +3,6 @@
  :authors    (("Deepak Goel" . "deego@glue.umd.edu"))
  :maintainer ("Deepak Goel" . "deego@glue.umd.edu")
  :provided   (elder)
- :required   ((("emacs" cl)
+ :required   ((("cl" cl)
 	       (nil elder-set-keys)))
  :homepage   "http://www.gnufans.net/~deego/emacs.html")

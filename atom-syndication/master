@@ -4,7 +4,7 @@
  :updated    "2010"
  :license    "GPL-3"
  :provided   (atom-syndication)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("standards" "hypermedia")
  :homepage   "https://github.com/dmj/atom-syndication"
  :commentary "\

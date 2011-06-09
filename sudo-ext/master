@@ -5,7 +5,7 @@
  :authors    (("rubikitch" . "rubikitch@ruby-lang.org"))
  :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
  :provided   (sudo-ext)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("unix")
  :commentary "\
 `sudo' support in Emacs.

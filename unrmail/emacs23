@@ -1,0 +1,9 @@
+(:summary    "Convert Rmail Babyl files to mailbox files"
+ :created    "1992"
+ :updated    "2011"
+ :license    "GPL-3"
+ :maintainer ("FSF")
+ :provided   (unrmail)
+ :required   (nil
+	      (("rmime" rmime)))
+ :keywords   ("mail"))

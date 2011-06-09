@@ -4,6 +4,6 @@
  :authors    (("Sylvain Bougerel" . "sylvain.bougerel.devel@gmail.com"))
  :maintainer ("Sylvain Bougerel" . "sylvain.bougerel.devel@gmail.com")
  :provided   (profiles)
- :required   ((("emacs" custom)))
+ :required   ((("custom" custom)))
  :homepage   "http://www.emacswiki.org/Profiles"
  :wikipage   "http://www.emacswiki.org/Profiles")

@@ -6,8 +6,6 @@
  :maintainer ("Craig McDaniel" . "craigmcd@gmail.com")
  :provided   (ppindent)
  :keywords   ("languages" "c")
- :homepage   "http://www.emacswiki.org/PpIndent"
- :wikipage   "http://www.emacswiki.org/PpIndent"
  :commentary "\
 PPINDENT indents C-preprocessor statements depending on the current
 #if..., #el.., #endif level. It only modifies lines with \"#\" as the

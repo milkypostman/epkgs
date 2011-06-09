@@ -5,7 +5,9 @@
  :authors    (("Richard Y. Kim"))
  :maintainer ("Richard Y. Kim")
  :provided   (m56k)
- :required   ((("emacs" advice cl lucid)))
+ :required   ((("advice" advice)
+	       ("cl" cl)
+	       ("emacs-obsolete" lucid)))
  :commentary "\
 This provides a major mode called m56k-mode to aid those who
 edit assembly language files using Motorola's 56300 (and 56000)

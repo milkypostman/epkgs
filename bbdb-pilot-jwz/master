@@ -5,7 +5,7 @@
  :maintainer ("Noah Friedman" . "friedman@splode.com")
  :provided   (bbdb-pilot-jwz)
  :required   ((("bbdb" bbdb)
-	       ("emacs" cl)))
+	       ("cl" cl)))
  :homepage   "ftp://ftp.splode.com/pub/users/friedman/emacs-lisp/"
  :commentary "\
 pilot-addresses expects a file with the following 19 fields:

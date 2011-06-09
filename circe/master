@@ -6,8 +6,11 @@
  :authors    (("Jorgen Schaefer" . "forcer@forcix.cx"))
  :maintainer ("Jorgen Schaefer" . "forcer@forcix.cx")
  :provided   (circe circe-auto circe-chanop circe-e21 circe-highlight-all-nicks circe-log circe-xemacs incomplete lcs lui-format lui-irc-colors lui-logging lui-xemacs)
- :required   ((("emacs" autoload font-lock overlay ring time-date timer)
-	       ("lui" lui)))
+ :required   ((("emacs-core" autoload font-lock overlay)
+	       ("gnus" time-date)
+	       ("lui" lui)
+	       ("ring" ring)
+	       ("timer" timer)))
  :keywords   ("irc" "chat")
  :homepage   "http://www.nongnu.org/circe/"
  :wikipage   "http://www.emacswiki.org/Circe"

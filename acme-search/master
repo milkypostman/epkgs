@@ -7,6 +7,6 @@
 	      ("see section 'Terms'."))
  :maintainer ("Dan McCarthy" . "daniel.c.mccarthy@gmail.com")
  :provided   (acme-search)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :homepage   "http://www.emacswiki.org/AcmeSearch"
  :wikipage   "http://www.emacswiki.org/AcmeSearch")

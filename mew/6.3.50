@@ -4,7 +4,9 @@
  :authors    (("Kazu Yamamoto" . "kazu@mew.org"))
  :maintainer ("Kazu Yamamoto" . "kazu@mew.org")
  :provided   (mew mew-addrbook mew-attach mew-auth mew-blvs mew-bq mew-cache mew-complete mew-config mew-const mew-darwin mew-decode mew-demo mew-draft mew-edit mew-encode mew-env mew-exec mew-ext mew-fib mew-func mew-gemacs mew-header mew-highlight mew-imap mew-imap2 mew-key mew-lang-jp mew-lang-kr mew-lang-latin mew-local mew-mark mew-message mew-mime mew-minibuf mew-mule mew-mule3 mew-net mew-nntp mew-nntp2 mew-passwd mew-pgp mew-pick mew-pop mew-refile mew-scan mew-search mew-smime mew-smtp mew-sort mew-ssh mew-ssl mew-summary mew-summary2 mew-summary3 mew-summary4 mew-syntax mew-thread mew-unix mew-vars mew-vars2 mew-vars3 mew-varsx mew-virtual mew-win32)
- :required   ((("emacs" ange-ftp faces timer)
+ :required   ((("ange-ftp" ange-ftp)
+	       ("emacs-core" faces)
+	       ("timer" timer)
 	       ("w3m" mew-w3m)))
  :homepage   "http://www.mew.org/"
  :wikipage   "http://www.emacswiki.org/Mew"

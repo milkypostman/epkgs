@@ -3,8 +3,12 @@
  :updated    "19980806"
  :license    "GPL-2"
  :provided   (asp-cfml-helper-mode cfml-helper-mode jsp-cfml-helper-mode php-cfml-helper-mode)
- :required   ((("emacs" cc-mode cl easymenu font-lock tempo)
+ :required   ((("cc-mode" cc-mode)
+	       ("cl" cl)
+	       ("easymenu" easymenu)
+	       ("emacs-core" font-lock)
 	       ("jdee" jde)
+	       ("tempo" tempo)
 	       ("visual-basic-mode" visual-basic-mode)
 	       (nil psgml-html)))
  :keywords   ("html" "major-mode")

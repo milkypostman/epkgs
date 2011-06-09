@@ -5,7 +5,8 @@
  :authors    (("Thomas Link" . "samul@web.de"))
  :maintainer ("Thomas Link" . "samul@web.de")
  :provided   (remarks)
- :required   ((("emacs" cl overlay)
+ :required   ((("cl" cl)
+	       ("emacs-core" overlay)
 	       ("tellib" tellib)))
  :keywords   ("annotations" "remarks" "notes")
  :homepage   "http://members.a1.net/t.link/CompEmacsRemarks.html"

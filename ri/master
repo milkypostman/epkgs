@@ -6,7 +6,8 @@
  :authors    (("Phil Hagelberg" . "technomancy@gmail.com"))
  :maintainer ("Phil Hagelberg" . "technomancy@gmail.com")
  :provided   (ri)
- :required   ((("emacs" ido thingatpt)))
+ :required   ((("ido" ido)
+	       ("thingatpt" thingatpt)))
  :keywords   ("tools" "documentation")
  :wikipage   "http://www.emacswiki.org/RiEl"
  :commentary "\

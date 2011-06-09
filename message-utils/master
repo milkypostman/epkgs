@@ -3,5 +3,6 @@
  :authors    (("Holger Schauer" . "holger.schauer@gmx.de"))
  :maintainer ("Holger Schauer" . "holger.schauer@gmx.de")
  :provided   (message-utils)
- :required   ((("emacs" custom message)))
+ :required   ((("custom" custom)
+	       ("gnus" message)))
  :keywords   ("utils" "message"))

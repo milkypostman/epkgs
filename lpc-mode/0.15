@@ -4,6 +4,6 @@
  :authors    (("Vivek Dasmohapatra" . "vivek@etla.org"))
  :maintainer ("Vivek Dasmohapatra" . "vivek@etla.org")
  :provided   (lpc-mode)
- :required   ((("emacs" regexp-opt)))
+ :required   ((("regexp-opt" regexp-opt)))
  :keywords   ("languages" "lpc")
  :homepage   "http://rtfm.etla.org/emacs/lpc-mode/")

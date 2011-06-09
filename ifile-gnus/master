@@ -2,4 +2,4 @@
  :updated    "2002"
  :license    "GPL"
  :provided   (ifile-gnus)
- :required   ((("emacs" gnus-int gnus-util))))
+ :required   ((("gnus" gnus-int gnus-util))))

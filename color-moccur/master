@@ -2,8 +2,9 @@
  :updated    "20100723"
  :license    "GPL-3"
  :provided   (color-moccur)
- :required   ((("ee" ee-autoloads)
-	       ("emacs" cl overlay)
+ :required   ((("cl" cl)
+	       ("ee" ee-autoloads)
+	       ("emacs-core" overlay)
 	       ("migemo" migemo)
 	       ("moccur-edit" moccur-edit)))
  :homepage   "http://www.bookshelf.jp/"

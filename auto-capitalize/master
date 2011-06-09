@@ -3,4 +3,4 @@
  :updated    "20011205"
  :license    "GPL-2"
  :provided   (auto-capitalize)
- :required   ((("emacs" cl))))
+ :required   ((("cl" cl))))

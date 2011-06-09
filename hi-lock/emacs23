@@ -1,0 +1,73 @@
+(:summary    "Minor mode for interactive automatic highlighting"
+ :created    "2000"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("David M. Koppelman" . "koppel@ece.lsu.edu"))
+ :maintainer ("David M. Koppelman" . "koppel@ece.lsu.edu")
+ :provided   (hi-lock)
+ :required   ((("emacs-core" font-lock)))
+ :keywords   ("faces" "matching" "display")
+ :wikipage   "http://www.emacswiki.org/HiLock"
+ :commentary "\
+With the hi-lock commands text matching interactively entered
+ regexp's can be highlighted.  For example, `M-x highlight-regexp
+ RET clearly RET RET' will highlight all occurrences of `clearly'
+ using a yellow background face.  New occurrences of `clearly' will
+ be highlighted as they are typed.  `M-x unhighlight-regexp RET'
+ will remove the highlighting.  Any existing face can be used for
+ highlighting and a set of appropriate faces is provided.  The
+ regexps can be written into the current buffer in a form that will
+ be recognized the next time the corresponding file is read (when
+ file patterns is turned on).
+
+ Applications:
+
+   In program source code highlight a variable to quickly see all
+   places it is modified or referenced:
+   M-x highlight-regexp ground_contact_switches_closed RET RET
+
+   In a shell or other buffer that is showing lots of program
+   output, highlight the parts of the output you're interested in:
+   M-x highlight-regexp Total execution time [0-9]+ RET hi-blue-b RET
+
+   In buffers displaying tables, highlight the lines you're interested in:
+   M-x highlight-lines-matching-regexp January 2000 RET hi-black-b RET
+
+   When writing text, highlight personal cliches.  This can be
+   amusing.
+   M-x highlight-phrase as can be seen RET RET
+
+ Setup:
+
+   Put the following code in your .emacs file.  This turns on
+   hi-lock mode and adds a \"Regexp Highlighting\" entry
+   to the edit menu.
+
+   (global-hi-lock-mode 1)
+
+   To enable the use of patterns found in files (presumably placed
+   there by hi-lock) include the following in your .emacs file:
+
+   (setq hi-lock-file-patterns-policy 'ask)
+
+   If you get tired of being asked each time a file is loaded replace
+   `ask' with a function that returns t if patterns should be read.
+
+   You might also want to bind the hi-lock commands to more
+   finger-friendly sequences:
+
+   (define-key hi-lock-map \"\\C-z\\C-h\" 'highlight-lines-matching-regexp)
+   (define-key hi-lock-map \"\\C-zi\" 'hi-lock-find-patterns)
+   (define-key hi-lock-map \"\\C-zh\" 'highlight-regexp)
+   (define-key hi-lock-map \"\\C-zp\" 'highlight-phrase)
+   (define-key hi-lock-map \"\\C-zr\" 'unhighlight-regexp)
+   (define-key hi-lock-map \"\\C-zb\" 'hi-lock-write-interactive-patterns))
+
+   See the documentation for hi-lock-mode `C-h f hi-lock-mode' for
+   additional instructions.
+
+Sample file patterns:
+
+Hi-lock: ((\"^;;; .*\" (0 (quote hi-black-hb) t)))
+Hi-lock: ( (\"make-variable-buffer-\\\\(local\\\\)\" (0 font-lock-keyword-face)(1 'italic append)))))
+Hi-lock: end")

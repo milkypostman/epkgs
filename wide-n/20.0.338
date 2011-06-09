@@ -5,7 +5,7 @@
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")
  :provided   (wide-n)
- :required   ((("emacs" repeat)))
+ :required   ((("repeat" repeat)))
  :keywords   ("narrow" "restriction" "widen")
  :homepage   "http://www.emacswiki.org/MultipleNarrowings"
  :wikipage   "http://www.emacswiki.org/MultipleNarrowings"

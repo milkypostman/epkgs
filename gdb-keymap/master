@@ -2,7 +2,7 @@
  :authors    (("Jaeyoun Chung" . "jay@kldp.org"))
  :maintainer ("Jaeyoun Chung" . "jay@kldp.org")
  :provided   (gdb-keymap)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("convenience" "c")
  :homepage   "http://emacs.kldp.net/~jay/emacs/"
  :commentary "\

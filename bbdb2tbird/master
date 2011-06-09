@@ -6,7 +6,7 @@
  :maintainer ("Neil Van Dyke" . "neil@neilvandyke.org")
  :provided   (bbdb2tbird)
  :required   ((("bbdb" bbdb)
-	       ("emacs" cl)))
+	       ("cl" cl)))
  :keywords   ("bbdb" "addressbook" "export" "thunderbird" "icedove" "ldif" "ldap")
  :homepage   "http://www.neilvandyke.org/bbdb2tbird/"
  :commentary "\

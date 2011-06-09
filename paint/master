@@ -5,5 +5,5 @@
  :authors    (("Taiki SUGAWARA" . "buzz.taiki@gmail.com"))
  :maintainer ("Taiki SUGAWARA" . "buzz.taiki@gmail.com")
  :provided   (paint)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("tools"))

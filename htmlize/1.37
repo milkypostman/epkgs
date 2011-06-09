@@ -5,7 +5,8 @@
  :authors    (("Hrvoje Niksic" . "hniksic@xemacs.org"))
  :maintainer ("Hrvoje Niksic" . "hniksic@xemacs.org")
  :provided   (htmlize)
- :required   ((("emacs" cl custom)))
+ :required   ((("cl" cl)
+	       ("custom" custom)))
  :keywords   ("hypermedia" "extensions")
  :homepage   "http://fly.srk.fer.hr/~hniksic/"
  :wikipage   "http://www.emacswiki.org/Htmlize"

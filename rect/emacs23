@@ -1,0 +1,24 @@
+(:summary    "Rectangle functions for GNU Emacs"
+ :created    "1985"
+ :updated    "2011"
+ :license    "GPL-3"
+ :maintainer ("Didier Verna" . "didier@xemacs.org")
+ :provided   (rect)
+ :keywords   ("internal")
+ :commentary "\
+This package provides the operations on rectangles that are documented
+in the Emacs manual.
+
+### NOTE: this file has been almost completely rewritten by Didier Verna
+<didier@xemacs.org> in July 1999. The purpose of this rewrite is to be less
+intrusive and fill lines with whitespaces only when needed. A few functions
+are untouched though, as noted above their definition.
+
+Global key bindings
+
+###autoload (define-key ctl-x-r-map \"c\" 'clear-rectangle)
+###autoload (define-key ctl-x-r-map \"k\" 'kill-rectangle)
+###autoload (define-key ctl-x-r-map \"d\" 'delete-rectangle)
+###autoload (define-key ctl-x-r-map \"y\" 'yank-rectangle)
+###autoload (define-key ctl-x-r-map \"o\" 'open-rectangle)
+###autoload (define-key ctl-x-r-map \"t\" 'string-rectangle)")

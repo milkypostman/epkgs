@@ -5,7 +5,7 @@
  :authors    (("rubikitch" . "rubikitch@ruby-lang.org"))
  :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
  :provided   (el-expectations)
- :required   ((("emacs" cl))
+ :required   ((("cl" cl))
 	      (("el-mock" el-mock)))
  :keywords   ("lisp" "testing" "unittest")
  :homepage   "http://www.emacswiki.org/EmacsLispExpectations"

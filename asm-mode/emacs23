@@ -1,0 +1,30 @@
+(:summary    "Mode for editing assembler code"
+ :created    "1991"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Eric S. Raymond" . "esr@snark.thyrsus.com"))
+ :maintainer ("FSF")
+ :provided   (asm-mode)
+ :keywords   ("tools" "languages")
+ :commentary "\
+This mode was written by Eric S. Raymond <esr@snark.thyrsus.com>,
+inspired by an earlier asm-mode by Martin Neitzel.
+
+This minor mode is based on text mode.  It defines a private abbrev table
+that can be used to save abbrevs for assembler mnemonics.  It binds just
+five keys:
+
+	TAB		tab to next tab stop
+	:		outdent preceding label, tab to tab stop
+	comment char	place or move comment
+			asm-comment-char specifies which character this is;
+			you can use a different character in different
+			Asm mode buffers.
+	C-j, C-m	newline and tab to tab stop
+
+Code is indented to the first tab stop level.
+
+This mode runs two hooks:
+  1) An asm-mode-set-comment-hook before the part of the initialization
+depending on asm-comment-char, and
+  2) an asm-mode-hook at the end of initialization.")

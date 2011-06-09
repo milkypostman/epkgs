@@ -5,9 +5,9 @@
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")
  :provided   (misc-cmds)
- :required   ((("emacs" cl))
-	      (("emacs" hl-line)
-	       ("frame-fns" frame-fns)
+ :required   ((("cl" cl))
+	      (("frame-fns" frame-fns)
+	       ("hl-line" hl-line)
 	       ("misc-fns" misc-fns)))
  :keywords   ("internal" "unix" "extensions" "maint" "local")
  :commentary "\

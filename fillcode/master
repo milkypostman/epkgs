@@ -3,6 +3,7 @@
  :updated    "2007"
  :license    "GPL-2"
  :provided   (fillcode)
- :required   ((("emacs" cc-bytecomp cc-engine cl)))
+ :required   ((("cc-mode" cc-bytecomp cc-engine)
+	       ("cl" cl)))
  :homepage   "http://snarfed.org/space/fillcode"
  :wikipage   "http://www.emacswiki.org/Fillcode")

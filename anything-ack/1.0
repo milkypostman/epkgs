@@ -6,7 +6,7 @@
  :maintainer ("Ivan K")
  :provided   (anything-ack)
  :required   ((("anything" anything)
-	       ("emacs" grep)))
+	       ("grep" grep)))
  :keywords   ("convenience" "unix")
  :commentary "\
 Do ack in anything buffer. When we search information with ack,

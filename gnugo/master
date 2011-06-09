@@ -1,7 +1,8 @@
 (:created    "2006"
  :updated    "2006"
  :provided   (gnugo)
- :required   ((("emacs" cl time-date)
+ :required   ((("cl" cl)
+	       ("gnus" time-date)
 	       (nil gnugo-xpms)))
  :homepage   "http://www.gnuvola.org/software/j/gnugo/"
  :commentary "\

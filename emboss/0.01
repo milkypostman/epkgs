@@ -5,7 +5,10 @@
  :authors    ((nil . "wenbinye@gmail.com"))
  :maintainer (nil . "wenbinye@gmail.com")
  :provided   (emboss)
- :required   ((("emacs" cc-mode cl etags hippie-exp)
+ :required   ((("cc-mode" cc-mode)
+	       ("cl" cl)
+	       ("etags" etags)
+	       ("hippie-exp" hippie-exp)
 	       ("tempo-x" tempo-x)))
  :keywords   ("c" "convenience")
  :commentary "\

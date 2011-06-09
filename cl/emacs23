@@ -1,0 +1,28 @@
+(:summary    "Common Lisp extensions for Emacs"
+ :created    "1993"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Dave Gillespie" . "daveg@synaptics.com"))
+ :maintainer ("Dave Gillespie" . "daveg@synaptics.com")
+ :provided   (cl cl-19 cl-specs)
+ :required   ((("edebug" edebug)))
+ :keywords   ("extensions")
+ :commentary "\
+These are extensions to Emacs Lisp that provide a degree of
+Common Lisp compatibility, beyond what is already built-in
+in Emacs Lisp.
+
+This package was written by Dave Gillespie; it is a complete
+rewrite of Cesar Quiroz's original cl.el package of December 1986.
+
+Bug reports, comments, and suggestions are welcome!
+
+This file contains the portions of the Common Lisp extensions
+package which should always be present.
+
+
+Future notes:
+
+Once Emacs 19 becomes standard, many things in this package which are
+messy for reasons of compatibility can be greatly simplified.  For now,
+I prefer to maintain one unified version.")

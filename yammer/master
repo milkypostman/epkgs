@@ -6,7 +6,8 @@
  :authors    (("Peter Sanford" . "peter@petersdanceparty.com"))
  :maintainer ("Peter Sanford" . "peter@petersdanceparty.com")
  :provided   (yammer)
- :required   ((("emacs" image-file json)
+ :required   ((("image-file" image-file)
+	       ("json" json)
 	       ("oauth" oauth)))
  :keywords   ("comm")
  :homepage   "https://github.com/psanford/emacs-yammer"

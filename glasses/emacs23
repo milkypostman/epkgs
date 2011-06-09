@@ -1,0 +1,35 @@
+(:summary    "Make cantReadThis readable"
+ :created    "1999"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Milan Zamazal" . "pdm@zamazal.org"))
+ :maintainer ("Milan Zamazal" . "pdm@zamazal.org")
+ :provided   (glasses)
+ :required   ((("cl" cl)))
+ :keywords   ("tools")
+ :wikipage   "http://www.emacswiki.org/GlassesMode"
+ :commentary "\
+This file defines a minor mode for making unreadableIdentifiersLikeThis
+readable.  In some environments, for instance Java, it is common to use such
+unreadable identifiers.  It is not good to use underscores in identifiers of
+your own project in such an environment to make your sources more readable,
+since it introduces undesirable confusion, which is worse than the
+unreadability.  Fortunately, you use Emacs for the subproject, so the
+problem can be solved some way.
+
+This file defines the `glasses-mode' minor mode, which displays underscores
+between all the pairs of lower and upper English letters.  (This only
+displays underscores, the text is not changed actually.)  Alternatively, you
+can say you want the capitals in some given face (e.g. bold).
+
+The mode does something usable, though not perfect.  Improvement suggestions
+from Emacs experts are welcome.
+
+If you like in-identifier separators different from underscores, change the
+value of the variable `glasses-separator' appropriately.  See also the
+variables `glasses-face' and `glasses-convert-on-write-p'.  You can also use
+the command `M-x customize-group RET glasses RET'.
+
+If you set any of the variables `glasses-separator' or `glasses-face' after
+glasses.el is loaded in a different way than through customize, you
+should call the function `glasses-set-overlay-properties' afterwards.")

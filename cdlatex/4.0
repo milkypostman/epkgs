@@ -6,7 +6,9 @@
  :maintainer ("Carsten Dominik" . "dominik@science.uva.nl")
  :provided   (cdlatex)
  :required   ((("auctex" texmathp)
-	       ("emacs" cl easymenu finder)))
+	       ("cl" cl)
+	       ("easymenu" easymenu)
+	       ("finder" finder)))
  :keywords   ("tex")
  :homepage   "http://staff.science.uva.nl/~dominik/Tools/cdlatex/"
  :wikipage   "http://www.emacswiki.org/CDLaTeX"

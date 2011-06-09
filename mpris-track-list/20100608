@@ -5,7 +5,7 @@
  :authors    (("Changyuan Yu" . "reivzy@gmail.com"))
  :maintainer ("Changyuan Yu" . "reivzy@gmail.com")
  :provided   (mpris-track-list)
- :required   ((("emacs" cl)
+ :required   ((("cl" cl)
 	       ("mpris-dbus" mpris-dbus)))
  :keywords   ("dbus" "mpris")
  :commentary "\

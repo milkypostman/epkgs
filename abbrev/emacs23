@@ -1,0 +1,15 @@
+(:summary    "Abbrev mode commands for Emacs"
+ :created    "1985"
+ :updated    "2011"
+ :license    "GPL-3"
+ :maintainer ("FSF")
+ :provided   (abbrev)
+ :required   ((("cl" cl)))
+ :keywords   ("abbrev" "convenience")
+ :wikipage   "http://www.emacswiki.org/AbbrevMode"
+ :commentary "\
+This facility is documented in the Emacs Manual.
+
+Todo:
+
+- Cleanup name space.")

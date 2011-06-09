@@ -1,0 +1,56 @@
+(:summary    "Mode for keeping track of how much you work"
+ :created    "19990325"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("John Wiegley" . "johnw@gnu.org"))
+ :maintainer ("John Wiegley" . "johnw@gnu.org")
+ :provided   (timeclock)
+ :keywords   ("calendar" "data")
+ :wikipage   "http://www.emacswiki.org/TimeClock"
+ :commentary "\
+This mode is for keeping track of time intervals.  You can use it
+for whatever purpose you like, but the typical scenario is to keep
+track of how much time you spend working on certain projects.
+
+Use `timeclock-in' when you start on a project, and `timeclock-out'
+when you're done.  Once you've collected some data, you can use
+`timeclock-workday-remaining' to see how much time is left to be
+worked today (where `timeclock-workday' specifies the length of the
+working day), and `timeclock-when-to-leave' to calculate when you're free.
+
+You'll probably want to bind the timeclock commands to some handy
+keystrokes.  At the moment, C-x t is unused:
+
+  (require 'timeclock)
+
+  (define-key ctl-x-map \"ti\" 'timeclock-in)
+  (define-key ctl-x-map \"to\" 'timeclock-out)
+  (define-key ctl-x-map \"tc\" 'timeclock-change)
+  (define-key ctl-x-map \"tr\" 'timeclock-reread-log)
+  (define-key ctl-x-map \"tu\" 'timeclock-update-modeline)
+  (define-key ctl-x-map \"tw\" 'timeclock-when-to-leave-string)
+
+If you want Emacs to display the amount of time \"left\" to your
+workday in the modeline, you can either set the value of
+`timeclock-modeline-display' to t using M-x customize, or you
+can add this code to your .emacs file:
+
+  (require 'timeclock)
+  (timeclock-modeline-display)
+
+To cancel this modeline display at any time, just call
+`timeclock-modeline-display' again.
+
+You may also want Emacs to ask you before exiting, if you are
+currently working on a project.  This can be done either by setting
+`timeclock-ask-before-exiting' to t using M-x customize (this is
+the default), or by adding the following to your .emacs file:
+
+  (add-hook 'kill-emacs-query-functions 'timeclock-query-out)
+
+NOTE: If you change your .timelog file without using timeclock's
+functions, or if you change the value of any of timeclock's
+customizable variables, you should run the command
+`timeclock-reread-log'.  This will recompute any discrepancies in
+your average working time, and will make sure that the various
+display functions return the correct value.")

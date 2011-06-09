@@ -2,6 +2,6 @@
  :updated    "1987"
  :license    "GPL"
  :provided   (reportmail)
- :required   ((("emacs" timer)
-	       ("itimer" itimer)))
+ :required   ((("itimer" itimer)
+	       ("timer" timer)))
  :homepage   "http://www.cis.upenn.edu/~bcpierce/papers/index.shtml#Emacs%20Hacks")

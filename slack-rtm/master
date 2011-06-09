@@ -6,7 +6,12 @@
  :authors    (("Seth Mason"))
  :maintainer ("Seth Mason")
  :provided   (rtm slack-rtm)
- :required   ((("emacs" cl custom ido org url-http url-util xml)))
+ :required   ((("cl" cl)
+	       ("custom" custom)
+	       ("ido" ido)
+	       ("org-mode" org)
+	       ("url" url-http url-util)
+	       ("xml" xml)))
  :keywords   ("remember" "the" "milk" "productivity" "todo")
  :homepage   "https://github.com/slackorama/slack-rtm"
  :commentary "\

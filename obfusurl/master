@@ -3,7 +3,8 @@
  :updated    "2008"
  :license    "GPL-2"
  :provided   (obfusurl)
- :required   ((("emacs" cl thingatpt)))
+ :required   ((("cl" cl)
+	       ("thingatpt" thingatpt)))
  :homepage   "http://www.davep.org/emacs/"
  :commentary "\
 obfusurl.el provides `obfuscate-url', a command that will obfuscate an

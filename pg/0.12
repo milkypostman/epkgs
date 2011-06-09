@@ -3,7 +3,7 @@
  :authors    (("Eric Marsden" . "emarsden@laas.fr"))
  :maintainer ("Helmut Eller" . "heller@common-lisp.net")
  :provided   (pg)
- :required   ((("emacs" cl)))
+ :required   ((("cl" cl)))
  :keywords   ("data" "comm" "database" "postgresql")
  :homepage   "http://www.online-marketwatch.com/pgel/pg.html"
  :commentary "\

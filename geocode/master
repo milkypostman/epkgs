@@ -7,7 +7,7 @@
  :maintainer ("Edward O'Connor" . "hober0@gmail.com")
  :provided   (geocode)
  :required   ((("csv" csv)
-	       ("emacs" url)))
+	       ("url" url)))
  :keywords   ("convenience")
  :homepage   "https://github.com/hober/geocode-e"
  :commentary "\

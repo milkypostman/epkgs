@@ -4,7 +4,10 @@
  :authors    ((nil . "martin@meltin.net"))
  :maintainer (nil . "martin@meltin.net")
  :provided   (eiffel)
- :required   ((("emacs" compile easymenu font-lock imenu)))
+ :required   ((("compile" compile)
+	       ("easymenu" easymenu)
+	       ("emacs-core" font-lock)
+	       ("imenu" imenu)))
  :keywords   ("eiffel" "languages" "oop")
  :homepage   "http://meltin.net/hacks/emacs/"
  :commentary "\

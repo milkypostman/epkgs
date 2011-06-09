@@ -1,0 +1,52 @@
+(:summary    "Check external references in an Info document"
+ :created    "2003"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Kevin Ryde" . "user42@zip.com.au"))
+ :maintainer ("Kevin Ryde" . "user42@zip.com.au")
+ :provided   (info-xref)
+ :required   ((("custom" cus-start)
+	       ("info" info)
+	       (nil cus-load)))
+ :keywords   ("docs")
+ :wikipage   "http://www.emacswiki.org/InfoXref"
+ :commentary "\
+This file implements some simple checking of external cross references in
+info files, by attempting to visit the nodes specified.
+
+\"makeinfo\" checks references internal to a document, but not external
+references, which makes it rather easy for mistakes to creep in or node
+name changes to go unnoticed.  `Info-validate' doesn't check external
+references either.
+
+`M-x info-xref-check' checks one file.  When invoked from an Info-mode or
+texinfo-mode buffer, the current info file is the default at the prompt.
+
+`M-x info-xref-check-all' looks at everything in the normal info path.
+This might be a lot of files but it's a good way to check the consistency
+of the whole system.
+
+Results are shown in a buffer.  The format is a bit rough, but hopefully
+there won't be too many problems normally, and correcting them is a
+manual process anyway, a case of finding the right spot in the original
+.texi and finding what node it ought to point to.
+
+When a target info file doesn't exist there's clearly no way to validate
+node references within it.  A message is given for missing target files
+(once per source document), it could be simply that the target hasn't
+been installed, or it could be a mistake in the reference.
+
+Indirect info files are understood, just pass the top-level foo.info to
+`info-xref-check' and it traverses all sub-files.  Compressed info files
+are accepted too, as usual for `Info-mode'.
+
+`info-xref-check-all' is rather permissive in what it considers an info
+file.  It has to be since info files don't necessarily have a \".info\"
+suffix (eg. this is usual for the emacs manuals).  One consequence of
+this is that if for instance there's a source code directory in
+`Info-directory-list' then a lot of extraneous files might be read, which
+will be time consuming but should be harmless.
+
+`M-x info-xref-check-all-custom' is a related command, it goes through
+all info document references in customizable variables, checking them
+like info file cross references.")

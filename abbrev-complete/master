@@ -4,7 +4,8 @@
  :authors    (("Matsushita Akihisa" . "akihisa@mail.ne.jp"))
  :maintainer ("Matsushita Akihisa" . "akihisa@mail.ne.jp")
  :provided   (abbrev-complete)
- :required   ((("emacs" dabbrev hippie-exp)))
+ :required   ((("dabbrev" dabbrev)
+	       ("hippie-exp" hippie-exp)))
  :keywords   ("abbrev" "expand" "completion" "convenience")
  :commentary "\
 abbrev mode completion function

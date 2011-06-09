@@ -5,9 +5,10 @@
  :authors    (("Ye Wenbin" . "wenbinye@gmail.com"))
  :maintainer ("Ye Wenbin" . "wenbinye@gmail.com")
  :provided   (perldb-ui)
- :required   ((("emacs" cl gud)
-	       ("windata" windata)
-	       (nil gdb-ui)))
+ :required   ((("cl" cl)
+	       ("gdb-ui" gdb-ui)
+	       ("gud" gud)
+	       ("windata" windata)))
  :commentary "\
 Warning: Not finish yet! But you may have a try and give me some
 advices.")

@@ -3,7 +3,8 @@
  :updated    "2002"
  :license    "GPL-2"
  :provided   (nesc-mode)
- :required   ((("emacs" cc-mode derived font-lock)))
+ :required   ((("cc-mode" cc-mode)
+	       ("emacs-core" derived font-lock)))
  :keywords   ("c" "languages")
  :commentary "\
 put this in your .emacs:

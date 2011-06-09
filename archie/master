@@ -5,7 +5,8 @@
  :authors    (("Lars Magne Ingebrigtsen" . "lmi@gnus.org"))
  :maintainer ("Lars Magne Ingebrigtsen" . "lmi@gnus.org")
  :provided   (archie)
- :required   ((("emacs" cl custom)))
+ :required   ((("cl" cl)
+	       ("custom" custom)))
  :keywords   ("util" "network")
  :homepage   "http://quimby.gnus.org/elisp/"
  :commentary "\

@@ -1,0 +1,31 @@
+(:summary    "Automatic dictionary switcher for flyspell"
+ :repository (git . "https://github.com/nschum/auto-dictionary-mode.git")
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-2"
+ :authors    (("Nikolaj Schumacher" . "bugs@nschum.de"))
+ :maintainer ("Nikolaj Schumacher" . "bugs@nschum.de")
+ :provided   (auto-dictionary)
+ :required   ((("cl" cl)
+	       ("flyspell" flyspell)
+	       ("ispell" ispell)))
+ :keywords   ("wp")
+ :homepage   "http://nschum.de/src/emacs/auto-dictionary"
+ :wikipage   "http://www.emacswiki.org/AutoDictionaryMode"
+ :commentary "\
+Add the following to your .emacs file:
+(require 'auto-dictionary)
+(add-hook 'flyspell-mode-hook (lambda () (auto-dictionary-mode 1)))
+
+Then just type.  When you stop for a few moments `auto-dictionary-mode' will
+start evaluating the content.
+
+You can also force a check using `adict-guess-dictionary', whether or not
+`auto-dictionary-mode' is enabled.
+
+If you're unhappy with the results, call `adict-change-dictionary' to
+change it and stop automatic checks.
+
+You can use `adict-change-dictionary-hook' to hook into any of these changes,
+or `adict-conditional-insert' to insert text (like signatures) that will
+automatically conform to the language.")

@@ -5,7 +5,11 @@
  :authors    (("Dave Love" . "fx@gnu.org"))
  :maintainer ("Dave Love" . "fx@gnu.org")
  :provided   (fx-misc)
- :required   ((("emacs" add-log imenu man spook vc)))
+ :required   ((("add-log" add-log)
+	       ("imenu" imenu)
+	       ("man" man)
+	       ("spook" spook)
+	       ("vc" vc)))
  :keywords   ("extensions")
  :homepage   "http://www.loveshack.ukfsn.org/emacs/"
  :commentary "\

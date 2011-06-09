@@ -1,0 +1,8 @@
+(:summary    "Lisp routines for Windows NT"
+ :created    "1994"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Geoff Voelker" . "voelker@cs.washington.edu"))
+ :maintainer ("Geoff Voelker" . "voelker@cs.washington.edu")
+ :provided   (w32-vars)
+ :keywords   ("internal"))

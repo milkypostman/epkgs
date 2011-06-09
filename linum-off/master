@@ -6,7 +6,7 @@
 	      ("Florian Adamsky (see wiki)"))
  :maintainer ("Matthew L. Fidler")
  :provided   (linum-off)
- :required   ((("emacs" linum)))
+ :required   ((("linum" linum)))
  :keywords   ("line" "numbering")
  :commentary "\
 Put this in your load path and then:

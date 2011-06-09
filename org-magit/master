@@ -6,6 +6,6 @@
  :authors    (("Yann Hodique" . "yann.hodique@gmail.com"))
  :maintainer ("Yann Hodique" . "yann.hodique@gmail.com")
  :provided   (org-magit)
- :required   ((("emacs" org)
-	       ("magit" magit)))
+ :required   ((("magit" magit)
+	       ("org-mode" org)))
  :homepage   "https://github.com/sigma/org-magit")

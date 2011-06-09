@@ -5,7 +5,7 @@
  :authors    (("Andy Stewart" . "lazycat.manatee@gmail.com"))
  :maintainer ("Andy Stewart" . "lazycat.manatee@gmail.com")
  :provided   (rcirc-notify+)
- :required   ((("emacs" rcirc)))
+ :required   ((("rcirc" rcirc)))
  :keywords   ("rcirc" "notify")
  :commentary "\
 Notify popup for rcirc

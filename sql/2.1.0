@@ -5,10 +5,12 @@
  :authors    (("Alex Schroeder" . "alex@gnu.org"))
  :maintainer ("Michael Mauger" . "mmaug@yahoo.com")
  :provided   (sql)
- :required   ((("emacs" comint custom regexp-opt)))
+ :required   ((("comint" comint)
+	       ("custom" custom)
+	       ("regexp-opt" regexp-opt)))
  :keywords   ("comm" "languages" "processes")
- :homepage   "http://www.emacswiki.org/SQL"
- :wikipage   "http://www.emacswiki.org/SQL"
+ :homepage   "http://www.emacswiki.org/SqlMode"
+ :wikipage   "http://www.emacswiki.org/SqlMode"
  :commentary "\
 Please send bug reports and bug fixes to the mailing list at
 help-gnu-emacs@gnu.org.  If you want to subscribe to the mailing

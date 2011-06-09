@@ -5,8 +5,8 @@
  :authors    (("Noah Friedman" . "friedman@splode.com"))
  :maintainer (nil . "friedman@splode.com")
  :provided   (ysq-modeline)
- :required   ((("emacs" timer)
-	       ("itimer" itimer)
+ :required   ((("itimer" itimer)
+	       ("timer" timer)
 	       ("ysq" ysq)))
  :keywords   ("extensions")
  :homepage   "ftp://ftp.splode.com/pub/users/friedman/emacs-lisp/"

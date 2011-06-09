@@ -5,7 +5,8 @@
  :authors    (("Kevin Ryde" . "user42@zip.com.au"))
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (xtide)
- :required   ((("emacs" calendar time-date)))
+ :required   ((("calendar" calendar)
+	       ("gnus" time-date)))
  :keywords   ("calendar")
  :wikipage   "http://www.emacswiki.org/XTide"
  :commentary "\
