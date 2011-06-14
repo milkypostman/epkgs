@@ -8,6 +8,7 @@
  :maintainer ("John Wiegley" . "johnw@gnu.org")
  :provided   (initsplit)
  :required   ((("cl" cl)
+	       ("emacs-core" simple)
 	       ("find-func" find-func)))
  :keywords   ("lisp")
  :homepage   "https://github.com/dabrahams/initsplit"

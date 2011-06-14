@@ -3,12 +3,11 @@
  :created    "2011"
  :updated    "2011"
  :license    "GPL-2"
- :authors    (("Alp Aker" . "aker@pitt.edu"))
- :maintainer ("Alp Aker" . "aker@pitt.edu")
+ :authors    (("Alp Aker" . "alp.tekin.aker@gmail.com"))
+ :maintainer ("Alp Aker" . "alp.tekin.aker@gmail.com")
  :provided   (frame-bufs)
  :keywords   ("convenience" "buffers")
  :homepage   "https://github.com/alpaker/Frame-Bufs"
- :wikipage   "http://www.emacswiki.org/FrameBufs"
  :commentary "\
 Frame-bufs extends Emacs's buffer menu so that it understands a
 distinction between those buffers that associated with a frame and those
@@ -41,28 +40,28 @@ in your .emacs.
 Usage
 =====
 
-Frame-bufs operates fairly transparently.  The typical way a buffer
-becomes associated with a frame is by being selected in a window on the
-frame.  By default a new buffer menu initially lists all buffers, with a
-new fourth column after the initial CRM columns--the `F' column.  Buffers
-associated with the selected frame are indicated with an `o' in this
-column.
+Frame-bufs operates fairly transparently.  The buffer menu now has two
+modes.  In \"full-list\" mode, it lists all buffers; in \"frame-list\" mode it
+lists only those buffers that are associated with the selected frame.  One
+can toggle between the modes by typing \"F\".
 
-By typing `F' one can toggle between listing all buffers (\"full-list
-mode\") and listing only those buffers associated with the selected frame
-(\"frame-list mode\").  In frame-list mode, the fourth `F' column is
-suppressed.  Full-list/frame-list status is also indicated in the mode
-line.
+In full-list mode, there is a new fourth column after the initial CRM
+columns--the `F' column.  Buffers associated with the selected frame are
+indicated with an `o' in this column.  In frame-list mode, the fourth `F'
+column is suppressed.  (Full-list/frame-list status is also indicated in
+the mode line.)
 
-Two other new commands are available in the buffer menu.  By typing `A' a
-buffer can be marked as to be added to the buffers associated with the
-selected frame.  By typing `N' a buffer can be marked as to have its
-association with the selected frame severed.  As with other actions in the
-buffer menu, these changes take effect when `Buffer-menu-execute' is
-called.
+The typical way a buffer becomes associated with a frame is by being
+selected in a window on the frame.  One can manually associate buffers
+with a frame, and disassociate them as well, using two other new commands
+in the buffer menu.  By typing `A' a buffer can be marked as to be added
+to the buffers associated with the selected frame.  By typing `N' a buffer
+can be marked as to have its association with the selected frame
+severed.  As with other actions in the buffer menu, these changes take
+effect when `Buffer-menu-execute' is called.
 
-In subsequent calls the buffer menu opens in frame-list or full-list mode
-according as it was last in frame-list or full-list mode.
+When first called, the buffer menu open in full-list mode.  In subsequent
+calls it opens in whatever mode it was last in.
 
 Criteria That Control Buffer-Frame Association
 ==============================================
@@ -101,24 +100,6 @@ o Three variables control which buffers are associated with a newly created
      new frame when the frame-creating command terminates, it will still
      be associated with the new frame.)
 
-Other Customization Options
-===========================
-
-o To rebind the new buffer menu commands, alter their bindings in the
-  keymap `frame-bufs-mode-map'.
-
-o The indicator bit used for frame-associated buffers (default `o') can be
-  set via the variable `frame-bufs-associated-buffer-bit'.
-
-o The strings used to indicate frame-list/full-list state in the buffer
-  menu's mode line can be changed by setting the variables
-  `frame-bufs-mode-line-frame-list-string' and
-  `frame-bufs-mode-line-full-list-string'.  The mode-line indication can
-  be turned off by setting `frame-bufs-mode-line-indication' to
-  nil.  (This latter variable can be set to any valid mode-line construct;
-  users setting this variable to a custom mode-line construct will
-  probably want to make use of the variable `frame-bufs-full-list'.)
-
 Other Commands and Features
 ===========================
 
@@ -150,6 +131,24 @@ o `frame-bufs-reset-all-frames' resets the associated buffers of all
 
 By default, none of these commands has a key binding.
 
+Other Customization Options
+===========================
+
+o To rebind the new buffer menu commands, alter their bindings in the
+  keymap `frame-bufs-mode-map'.
+
+o The indicator bit used for frame-associated buffers (default `o') can be
+  set via the variable `frame-bufs-associated-buffer-bit'.
+
+o The strings used to indicate frame-list/full-list state in the buffer
+  menu's mode line can be changed by setting the variables
+  `frame-bufs-mode-line-frame-list-string' and
+  `frame-bufs-mode-line-full-list-string'.  The mode-line indication can
+  be turned off by setting `frame-bufs-mode-line-indication' to
+  nil.  (This latter variable can be set to any valid mode-line construct;
+  users setting this variable to a custom mode-line construct will
+  probably want to make use of the variable `frame-bufs-full-list'.)
+
 Compatibility
 =============
 
@@ -168,4 +167,11 @@ o To use a frame's associated-buffer list from within a Lisp progam, it is
   order is meaningless.  The list returned by `frame-bufs-buffer-list'
   will contain only live, non-internal buffers; be updated to reflect the
   current value of frame-bufs-always-include-names; and be sorted
-  stably by selection order on the current frame.")
+  stably by selection order on the current frame.
+
+
+Acknowledgements
+============================
+
+Thanks to Greg Bognar for alpha testing and to Drew Adams for suggesting
+many improvements.")

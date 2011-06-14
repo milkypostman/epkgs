@@ -18,6 +18,7 @@
 	       ("thing-at-point-utils" thingatpt-python-expressions)))
  :keywords   ("python" "languages" "oop")
  :homepage   "https://launchpad.net/python-mode"
+ :wikipage   "http://www.emacswiki.org/PythonMode"
  :commentary "\
 This is a major mode for editing Python programs.  It was developed by Tim
 Peters after an original idea by Michael A. Guravage.  Tim subsequently

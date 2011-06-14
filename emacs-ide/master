@@ -13,5 +13,4 @@
 	       ("hideshow" hideshow)
 	       ("imenu" imenu)
 	       ("xcscope" xcscope)))
- :homepage   "http://home.gna.org/emacs-ide/"
- :wikipage   "http://www.emacswiki.org/Emacs-IDE")
+ :homepage   "http://home.gna.org/emacs-ide/")

@@ -59,7 +59,7 @@
 	       ("vm" vm vm-search)
 	       ("wanderlust" wl)
 	       ("xml" xml)
-	       (nil htmlize notifications notmuch swank-clojure)))
+	       (nil htmlize notifications notmuch rcodetools swank-clojure)))
  :keywords   ("outlines" "hypermedia" "calendar" "wp")
  :homepage   "http://orgmode.org"
  :wikipage   "http://www.emacswiki.org/OrgMode"

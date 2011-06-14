@@ -1,5 +1,5 @@
 (:summary    "Enhanced support for editing and running Scheme code"
- :updated    "20101223"
+ :updated    "20110604"
  :license    "GPL-2"
  :provided   (quack)
  :required   ((("advice" advice)
@@ -103,6 +103,9 @@ RELEASE ANNOUNCEMENTS EMAIL:
     neil@neilvandyke.org to add you to the moderated `scheme-announce' list.
 
 HISTORY:
+
+    Version 0.41 (2011-06-04)
+        * Added `sxml-match' to `scheme-indent-function'.
 
     Version 0.40 (2010-12-22)
         * Added indent rules for Racket `let:', `let*:', and `match'.  And
