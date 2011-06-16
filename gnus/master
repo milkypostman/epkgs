@@ -47,7 +47,8 @@
 	       ("xml" xml)
 	       ("xml-rpc" xml-rpc)
 	       (nil ert))
-	      ((nil secrets)))
+	      (("epg" epa)
+	       (nil secrets)))
  :keywords   ("news" "mail")
  :homepage   "http://gnus.org"
  :wikipage   "http://www.emacswiki.org/Gnus")

@@ -1,4 +1,4 @@
-(:repository (git . "https://github.com/avvo/fuzzy-find-in-project.git")
+(:repository (git . "https://github.com/justinweiss/fuzzy-find-in-project.git")
  :created    "20081014"
  :updated    "2008"
  :license    "as-is"
