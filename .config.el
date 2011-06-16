@@ -23,7 +23,7 @@
 
 (let ((d "/home/work/emacsmirror/"))
   (setq elm-package-repositories         (concat d "packages/")
-	elm-package-git-template         (concat d "git-template/")
+	elm-package-git-template         (concat d ".git-template/")
 	elm-wiki-repository              (concat d "emacswiki/page/")
 	elm-internal-packages-repository (concat d "emacs/packages/")))
 
