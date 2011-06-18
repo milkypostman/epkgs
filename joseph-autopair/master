@@ -1,6 +1,6 @@
 (:repository (git . "https://github.com/jixiuf/joseph-autopair.git")
  :created    "20110302"
- :updated    "20100304"
+ :updated    "20110617"
  :license    "GPL-3"
  :authors    (("Joseph" . "jixiuf@gmail.com"))
  :maintainer ("Joseph" . "jixiuf@gmail.com")
@@ -37,7 +37,7 @@ this package doesn't use skeleton or anything like this.
  `backward-delete-char-untabify' `delete-backward-char'.
 
 
- Actually: 
+ Actually:
  a pair like this in `joseph-autopair-alist':
                    (\"[\" \"]\")
   equals to:
@@ -45,7 +45,7 @@ this package doesn't use skeleton or anything like this.
 
  but a litter difference exists :
  when the \"tail\" is `string' then I can get the length of tail
- eazyly, so that I can delete or skip it depending
+ easyly, so that I can delete or skip it depending
  on the length of \"tail\".
  that means only string type \"tail\" can be skipped
   and auto deleted .")

@@ -1,7 +1,7 @@
 (:summary    "Whitespace customizations for emacs"
  :repository (git . "https://github.com/glasserc/ethan-wspace.git")
- :created    "2010"
- :updated    "2010"
+ :created    "2011"
+ :updated    "2011"
  :authors    (("Ethan Glasser-Camp" . "ethan@betacantrips.com"))
  :maintainer ("Ethan Glasser-Camp" . "ethan@betacantrips.com")
  :provided   (ethan-wspace)
