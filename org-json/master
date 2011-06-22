@@ -1,4 +1,5 @@
-(:created    "20101027"
+(:summary    "Conversion between org and json"
+ :created    "20101027"
  :updated    "2010"
  :license    "GPL-2"
  :authors    (("Changyuan Yu" . "rei.vzy@gmail.com"))

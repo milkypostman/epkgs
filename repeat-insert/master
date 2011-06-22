@@ -1,5 +1,7 @@
 (:created    "1990"
  :updated    "1990"
  :license    "GPL"
+ :provided   (repeat-insert)
+ :required   ((("cl" cl)))
  :homepage   "http://www.emacswiki.org/RepeatInsert"
  :wikipage   "http://www.emacswiki.org/RepeatInsert")

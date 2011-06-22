@@ -36,11 +36,11 @@
 	"anything-etags" ; part of anything FIXME true?
 	"anything-multi-sources" ; part of anything FIXME true?
 	"bongo-mplayer" ; merged into bongo
-	"ob-lisp" ; merged into org-mode
 	"dig"
 	"flow-fill"
 	"maxima"
 	"meg"
+	"ob-lisp" ; merged into org-mode
 	"org-ctags"
 	"org-drill"
 	"org-mouse"
@@ -54,6 +54,7 @@
 	"tap-mode"
 	"vm-bobofilter"
 	"vm-vcard"
+	"wiki-nav" ; distributed with button-lock
 	"y2k-mode"
 	))
 

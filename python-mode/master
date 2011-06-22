@@ -11,6 +11,7 @@
 	       ("compile" compile)
 	       ("custom" custom)
 	       ("highlight-indentation" highlight-indentation)
+	       ("imenu" imenu)
 	       ("info-look" info-look)
 	       ("mmm-mode" mmm-auto)
 	       ("pymacs" pymacs)

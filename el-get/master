@@ -7,7 +7,7 @@
  :provided   (el-get)
  :required   ((("cl" cl)
 	       ("dired" dired)
-	       ("emacs-core" autoload bytecomp)
+	       ("emacs-core" autoload bytecomp simple)
 	       ("info" info)
 	       ("notify" notify))
 	      (("package" package)

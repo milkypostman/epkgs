@@ -1,0 +1,15 @@
+(:summary    "Extensions to `find-func.el'"
+ :created    "20080907"
+ :updated    "20110615"
+ :license    "GPL-3"
+ :authors    (("Drew Adams"))
+ :maintainer ("Drew Adams")
+ :provided   (find-func+)
+ :required   ((("find-func" find-func)))
+ :keywords   ("emacs-lisp" "functions" "variables")
+ :commentary "\
+Extensions to `find-func.el'.
+
+ Commands defined here:
+
+   `find-library-other-window'.")
