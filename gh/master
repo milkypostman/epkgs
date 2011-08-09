@@ -5,7 +5,7 @@
  :license    "GPL-2"
  :authors    (("Yann Hodique" . "yhodique@gmail.com"))
  :maintainer ("Yann Hodique" . "yhodique@gmail.com")
- :provided   (gh gh-api gh-auth gh-common gh-gist)
+ :provided   (gh gh-api gh-auth gh-common gh-gist gh-pulls)
  :required   ((("cedet" eieio)
 	       ("cl" cl)
 	       ("json" json)))

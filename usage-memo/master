@@ -1,12 +1,13 @@
 (:summary    "Integration of Emacs help system and memo"
  :created    "2007"
- :updated    "20100509"
+ :updated    "20110722"
  :license    "GPL-2"
  :authors    (("rubikitch" . "rubikitch@ruby-lang.org"))
  :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
  :provided   (usage-memo)
  :required   ((("cl" cl)
-	       ("emacs-core" font-lock)))
+	       ("emacs-core" font-lock)
+	       ("view" view)))
  :keywords   ("convenience" "languages" "lisp" "help" "tools" "docs")
  :homepage   "http://www.emacswiki.org/UsageMemo"
  :wikipage   "http://www.emacswiki.org/UsageMemo"

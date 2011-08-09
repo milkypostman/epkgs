@@ -1,6 +1,6 @@
-(:summary    "Major mode to edit Markdown files in Emacs"
+(:summary    "Emacs Major mode for Markdown-formatted text files"
  :repository (git . "git://code.jblevins.org/markdown-mode.git")
- :created    "2011"
+ :created    "2007"
  :updated    "2011"
  :license    "GPL-2"
  :authors    (("Jason R. Blevins" . "jrblevin@sdf.org"))
@@ -10,7 +10,7 @@
 	       ("emacs-core" font-lock)
 	       ("outline" outline)
 	       ("thingatpt" thingatpt)))
- :keywords   ("markdown" "major" "mode")
+ :keywords   ("markdown" "github" "flavored" "markdown" "itex")
  :homepage   "http://jblevins.org/projects/markdown-mode/"
  :wikipage   "http://www.emacswiki.org/MarkdownMode"
  :commentary "\
@@ -72,35 +72,62 @@ Although no configuration is *necessary* there are a few things
 that can be customized.  The `M-x customize-mode` command
 provides an interface to all of the possible customizations:
 
-  * `markdown-command` - the command used to run Markdown
-    (default: `markdown`).
+  * `markdown-command' - the command used to run Markdown (default:
+    `markdown').  This variable may be customized to pass
+    command-line options to your Markdown processor of choice, but
+    this command must accept input from `stdin`.  If it does not, a
+    simple wrapper script can be used to write `stdin` to a file
+    and then pass that file to your Markdown interpreter.  Ideally,
+    this command will produce an XHTML fragment around which
+    markdown-mode will wrap a header and footer (which can be
+    further customized).  However, it attempts to detect whether
+    the command produces standalone XHTML output (via
+    `markdown-xhtml-standalone-regexp'), in which case no header
+    and footer content will be added.
 
-  * `markdown-hr-length` - the length of horizontal rules
-    (default: `5`).
+  * `markdown-command-needs-filename' - set to non-nil if
+    `markdown-command' does not accept input from stdin (default: nil).
+     Instead, it will be passed a filename as the final command-line
+     option.  As a result, you will only be able to run Markdown
+     from buffers which are visiting a file.
 
-  * `markdown-bold-underscore` - set to a non-nil value to use two
-    underscores for bold instead of two asterisks (default: `nil`).
+  * `markdown-hr-string' - string to use when inserting horizontal
+    rules (default: `* * * * *').
 
-  * `markdown-italic-underscore` - set to a non-nil value to use
-    underscores for italic instead of asterisks (default: `nil`).
+  * `markdown-bold-underscore' - set to a non-nil value to use two
+    underscores for bold instead of two asterisks (default: `nil').
 
-  * `markdown-indent-function` - the function to use for automatic
-    indentation (default: `markdown-indent-line`).
+  * `markdown-italic-underscore' - set to a non-nil value to use
+    underscores for italic instead of asterisks (default: `nil').
 
-  * `markdown-indent-on-enter` - set to a non-nil value to
+  * `markdown-indent-function' - the function to use for automatic
+    indentation (default: `markdown-indent-line').
+
+  * `markdown-indent-on-enter' - set to a non-nil value to
     automatically indent new lines when the enter key is pressed
-    (default: `t`)
+    (default: `t')
 
-  * `markdown-follow-wiki-link-on-enter` - set to a non-nil value
+  * `markdown-follow-wiki-link-on-enter' - set to a non-nil value
     to automatically open a linked document in a new buffer if the
     cursor is an wiki link
-    (default: `t`)
+    (default: `t')
 
-  * `markdown-uri-types` - a list of protocols for URIs that
+  * `markdown-uri-types' - a list of protocols for URIs that
     `markdown-mode' should highlight.
 
-  * `markdown-enable-math` - syntax highlighting for
-    LaTeX fragments (default: `nil`).
+  * `markdown-enable-math' - syntax highlighting for
+    LaTeX fragments (default: `nil').
+
+  * `markdown-css-path' - CSS file to link to in XHTML output.
+
+  * `markdown-xhtml-header-content' - additional content to include
+    in the XHTML <head> block.
+
+  * `markdown-xhtml-standalone-regexp' - a regular expression which
+    indicates whether the output of `markdown-command' is standalone
+    XHTML (default: `^\\\\(\\<\\?xml\\\\|\\<!DOCTYPE\\\\|\\<html\\\\)`).  If
+    this is not matched, we assume this output is a fragment and add
+    our own header and footer.
 
 Additionally, the faces used for syntax highlighting can be modified to
 your liking by issuing `M-x customize-group RET markdown-faces`

@@ -1,7 +1,7 @@
 (:summary    "An Emacs interface to w3m"
  :repository (cvs . ":pserver:anonymous@cvs.namazu.org:/storage/cvsroot")
- :created    "2000"
- :updated    "2008"
+ :created    "2011"
+ :updated    "2011"
  :license    "GPL-2"
  :authors    (("TSUCHIYA Masatoshi" . "tsuchiya@namazu.org")
 	      ("Shun-ichi GOTO" . "gotoh@taiyo.co.jp")

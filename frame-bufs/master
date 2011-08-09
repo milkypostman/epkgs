@@ -8,6 +8,7 @@
  :provided   (frame-bufs)
  :keywords   ("convenience" "buffers")
  :homepage   "https://github.com/alpaker/Frame-Bufs"
+ :wikipage   "http://www.emacswiki.org/FrameBufs"
  :commentary "\
 Frame-bufs extends Emacs's buffer menu so that it understands a
 distinction between those buffers that associated with a frame and those

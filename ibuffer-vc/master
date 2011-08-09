@@ -4,7 +4,8 @@
  :updated    "2011"
  :license    "GPL-3"
  :provided   (ibuffer-vc)
- :required   ((("ibuffer" ibuffer)
+ :required   ((("cl" cl)
+	       ("ibuffer" ibuffer)
 	       ("vc" vc-hooks)
 	       (nil ibuf-ext)))
  :keywords   ("themes")

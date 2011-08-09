@@ -8,6 +8,7 @@
  :required   ((("cl" cl)
 	       ("dired" dired)
 	       ("emacs-core" autoload bytecomp simple)
+	       ("help-mode" help-mode)
 	       ("info" info)
 	       ("notify" notify))
 	      (("package" package)

@@ -28,6 +28,6 @@ Installation:
 
 Or:
 (autoload 'anything-dired-history-view \"anything-dired-history\"
-   \"view dired directories you have visited.\" t)        
+   \"view dired directories you have visited.\" t)
 (setq-default anything-dired-history-cache-file \"~/.emacs.d/dired-history\")
 (define-key dired-mode-map \",\" 'anything-dired-history-view)")

@@ -3,6 +3,9 @@
  :license    "GPL-2"
  :authors    (("Konrad Scorciapino" . "scorciapino@gmail.com"))
  :maintainer ("Konrad Scorciapino" . "scorciapino@gmail.com")
- :provided   (gimme gimme-bookmark gimme-custom gimme-etc gimme-filter gimme-playlist gimme-status-mode gimme-tagwriter gimme-utils)
- :required   ((("timer" timer)))
- :homepage   "https://github.com/konr/GIMME")
+ :provided   (gimme gimme-bookmark gimme-custom gimme-eq gimme-etc gimme-filter gimme-inspect gimme-lyrics gimme-playlist gimme-status-mode gimme-tagwriter gimme-utils hexrgb htmlr)
+ :required   ((("cl" cl)
+	       ("sgml-mode" sgml-mode)
+	       ("timer" timer)))
+ :homepage   "https://github.com/konr/GIMME"
+ :wikipage   "http://www.emacswiki.org/GIMME")

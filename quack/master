@@ -1,5 +1,5 @@
 (:summary    "Enhanced support for editing and running Scheme code"
- :updated    "20110604"
+ :updated    "20110731"
  :license    "GPL-2"
  :provided   (quack)
  :required   ((("advice" advice)
@@ -27,14 +27,12 @@ INTRODUCTION:
 
 COMPATIBILITY:
 
-    GNU Emacs 22 -- Yes.  Quack is now developed under GNU Emacs 22 on a
-    GNU/Linux system, which is the preferred platform for Quacksmokers.
-    Quack should work under GNU Emacs 22 on any Un*x-like OS.  Reportedly,
+    GNU Emacs 23 and 22 -- Yes.  Quack is now developed under GNU Emacs 23
+    on a GNU/Linux system, which is the preferred platform for Quacksmokers.
+    Quack should work under GNU Emacs 23 on any Un*x-like OS.  Reportedly,
     Quack also works with GNU Emacs 22 on Apple Mac OS X and Microsoft
     Windows (NT, 2000, XP), but the author has no means of testing on those
     platforms.
-
-    GNU Emacs 22 -- Yes.
 
     GNU Emacs 21 -- Probably, but no longer tested.
 
@@ -103,6 +101,9 @@ RELEASE ANNOUNCEMENTS EMAIL:
     neil@neilvandyke.org to add you to the moderated `scheme-announce' list.
 
 HISTORY:
+
+    Version 0.42 (2011-07-30):
+        * Added compile error regexp for \"raco\".
 
     Version 0.41 (2011-06-04)
         * Added `sxml-match' to `scheme-indent-function'.

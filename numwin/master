@@ -1,0 +1,33 @@
+(:summary    "Windows by number"
+ :created    "20100912"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Paul M. Rodriguez" . "pmr@ruricolist.com"))
+ :maintainer ("Paul M. Rodriguez" . "pmr@ruricolist.com")
+ :provided   (numwin)
+ :keywords   ("convenience")
+ :homepage   "http://gopher.ruricolist.com:70/lisp/"
+ :commentary "\
+Rather than take the long way around with `other-window', I found
+myself reaching for the mouse whenever I had more than three
+windows at a time. I tried some libraries that had the right
+idea--switching windows by number--but did it wrong, indexing each
+window with a number bound to a key sequence. The right way to do
+it is:
+
+ Show numbers only when it make sense. When switching windows, for
+ example, only number for more than two.
+
+ Instead of inventing new bindings, remap old ones. Selecting
+ windows should use `C-x o' (or whatever `other-window' was bound
+ to).
+
+ Put numbers at the extreme left of the mode line (where they are
+ always visible).
+
+ Always number the selected window 0, so you know where you are.
+
+Then I took the same idea and applied it to everything to do with
+windows: deleting, splitting (vertically and horizontally),
+\"zooming\" (with `delete-other-windows'), growing, shrinking, and
+swapping windows, and displaying buffers and files in them.")

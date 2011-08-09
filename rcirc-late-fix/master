@@ -15,6 +15,13 @@ overlays.
 Please mail me (hugows@gmail.com) about any improvements or bug
 reports you have regarding this file.
 
+Changes (16/07/2011) by Elias Pipping
+[x] Use rcirc-response-formats for building the name string
+[x] Support s/word// and s/word//g for removing matching text
+[x] s/a/b/g bug for input \"aaaaaa\" fixed
+
+plus some cleanup/improvements
+
 Changes (31/01/2011) Fix two warnings
 
 Changes (11/12/2007) (Tks tsdh for the suggestions)

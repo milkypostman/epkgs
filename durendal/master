@@ -13,10 +13,11 @@
  :homepage   "https://github.com/technomancy/durendal"
  :commentary "\
 \"Count Roland smites upon the marble stone;
-I cannot tell you how he hewed it and smote;
-Yet the blade breaks not nor splinters, though it groans;
-Upward to heaven it rebounds from the blow.\"
---From The Song of Roland
+  I cannot tell you how he hewed it and smote;
+  Yet the blade breaks not nor splinters, though it groans;
+  Upward to heaven it rebounds from the blow.\"
+
+–From The Song of Roland
 (Translated by Dorothy Sayers, Viking Penguin, NY, NY, 1957)
 
 Durendal is a bucket of tricks for Clojure that are too

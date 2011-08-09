@@ -1,4 +1,4 @@
-(:summary    "Way to interact with the Github site through Emacs"
+(:summary    "Interact with Github Issues through Emacs"
  :repository (git . "https://github.com/abhiyerra/github.el.git")
  :created    "20100523"
  :license    "GPL-2"

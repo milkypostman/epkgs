@@ -1,6 +1,6 @@
 (:summary    "Provides an interface for turning line-numbering off"
  :created    "20100920"
- :updated    "20110208"
+ :updated    "20110727"
  :license    "GPL-3"
  :authors    (("Matthew L. Fidler")
 	      ("Florian Adamsky (see wiki)"))

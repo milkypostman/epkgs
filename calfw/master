@@ -5,7 +5,7 @@
  :license    "GPL-3"
  :authors    (("SAKURAI Masashi" . "m.sakurai@kiwanami.net"))
  :maintainer ("SAKURAI Masashi" . "m.sakurai@kiwanami.net")
- :provided   (calfw calfw-howm calfw-ical calfw-org)
+ :provided   (calfw calfw-cal calfw-howm calfw-ical calfw-org)
  :required   ((("calendar" calendar holidays)
 	       ("cl" cl)
 	       ("howm" howm)

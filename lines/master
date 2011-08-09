@@ -1,5 +1,4 @@
-(:summary    "Help deal with data-files. OLDER VERSIONS SECURITY RISK"
- :updated    "20041214"
+(:updated    "20110624"
  :license    "GPL"
  :authors    (("Deepak Goel" . "deego@glue.umd.edu"))
  :maintainer ("Deepak Goel" . "deego@glue.umd.edu")

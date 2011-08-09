@@ -1,6 +1,6 @@
 (:summary    "Minibuffer input completion and cycling"
  :created    "19950801"
- :updated    "20110603"
+ :updated    "20110807"
  :license    "GPL-2"
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")
@@ -42,8 +42,10 @@
 	       ("frame-cmds" frame-cmds)
 	       ("fuzzy-match" fuzzy-match)
 	       ("gnus" mailcap)
+	       ("help-fns+" help-fns+)
 	       ("help-mode" help-mode)
 	       ("hexrgb" hexrgb)
+	       ("highlight" highlight)
 	       ("image-dired" image-dired)
 	       ("info+" info+)
 	       ("levenshtein" levenshtein)

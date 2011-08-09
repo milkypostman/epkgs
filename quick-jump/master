@@ -23,7 +23,7 @@ quick-jump.el works like `register' in Emacs. but it is
   10, it's line 5 now.
   go back and go forward are related to `qj-current-marker'.
 
-  when you `quick-jump-go-back' or `quick-jump-go-forward' 
+  when you `quick-jump-go-back' or `quick-jump-go-forward'
   it will decide whether push current position to `qj-marker-ring'
   automaticly or not . when the count of lines between current line
   and the line of `qj-current-marker' are larger than `qj-line-count',

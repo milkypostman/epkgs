@@ -3,12 +3,14 @@
  :created    "2010"
  :updated    "2011"
  :license    "GPL-3"
- :provided   (e2wm e2wm-config)
+ :provided   (e2wm e2wm-config e2wm-vcs)
  :required   ((("cl" cl)
 	       ("easymenu" easymenu)
 	       ("imenu" imenu)
+	       ("magit" magit)
 	       ("windmove" windmove)
-	       ("window-layout" window-layout)))
+	       ("window-layout" window-layout)
+	       (nil dsvn)))
  :keywords   ("tools" "window" "manager")
  :homepage   "https://github.com/kiwanami/emacs-window-manager"
  :commentary "\
