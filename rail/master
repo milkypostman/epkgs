@@ -1,0 +1,12 @@
+(:summary    "Replace Agent-string Internal Library"
+ :repository (git . "git://github.com/uwabami/rail.git")
+ :created    "1999"
+ :updated    "1999"
+ :license    "GPL-2"
+ :authors    (("SHIMADA Mitsunobu" . "simm-emacs@fan.gr.jp"))
+ :maintainer ("SHIMADA Mitsunobu" . "simm-emacs@fan.gr.jp")
+ :provided   (rail rail-common rail-make-table rail-mime-example rail-mime-example-1-13 rail-mime-example-1-14 rail-mule rail-pj rail-table-flim rail-table-meadow rail-table-mule rail-table-semi rail-table-utf2000 rail-table-xmas rail-user-agent rail-vars rail-xmas)
+ :keywords   ("mule" "xemacs" "meadow" "genji" "flim" "semi" "rail")
+ :homepage   "https://github.com/uwabami/rail"
+ :commentary "\
+Current version supports only MULE, FLIM, and SEMI.")

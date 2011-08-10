@@ -1,4 +1,5 @@
 (:summary    "General interface for text checkers"
+ :repository (git . "git://github.com/tlikonen/wcheck-mode.git")
  :created    "20090704"
  :updated    "2011"
  :license    "GPL-3"
@@ -6,7 +7,7 @@
  :maintainer ("Teemu Likonen" . "tlikonen@iki.fi")
  :provided   (wcheck-mode)
  :keywords   ("text" "spell" "check" "languages" "ispell")
- :homepage   "http://www.emacswiki.org/WcheckMode"
+ :homepage   "https://github.com/tlikonen/wcheck-mode"
  :wikipage   "http://www.emacswiki.org/WcheckMode"
  :commentary "\
 General interface for text checkers

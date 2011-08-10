@@ -1,0 +1,14 @@
+(:summary    "Go to alternative file"
+ :repository (git . "git://github.com/doitian/alternative-files-el.git")
+ :created    "20110611"
+ :updated    "20110611"
+ :license    "GPL-2"
+ :provided   (alternative-files el-expectations el-mock)
+ :required   ((("advice" advice)
+	       ("cl" cl)))
+ :keywords   ("navigation")
+ :homepage   "https://github.com/doitian/alternative-files-el"
+ :commentary "\
+See README.md
+
+Customizations")

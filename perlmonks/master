@@ -1,0 +1,30 @@
+(:summary    "A simple interface to www.perlmonks.org"
+ :repository (git . "git://github.com/metaperl/emacs-perlmonks.git")
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-2"
+ :provided   (perlmonks)
+ :required   ((("emacs-core" menu-bar)
+	       (nil perlmonks-auth)))
+ :homepage   "https://github.com/metaperl/emacs-perlmonks"
+ :commentary "\
+Create a file named perlmonks-auth.el like so:
+
+(setq perlmonks-username \"some-monk\")
+(setq perlmonks-password \"some-pass\")
+
+(provide 'perlmonks-auth)
+
+and make sure it is on your load-path somewhere
+
+Then evaluate *this* file and then use the editing and posting commands
+perlmonks-paragraph
+perlmonks-code
+perlmonks-blockquote
+
+
+ M-x perlmonks-seekers-of-perl-wisdom
+ M-x perlmonks-meditation
+ M-x perlmonks-reply
+
+to edit a buffer for submission to Perlmonks")

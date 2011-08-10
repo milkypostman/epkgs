@@ -1,0 +1,11 @@
+(:summary    "A simple pythonbrew wrapper for Emacs"
+ :repository (git . "git://github.com/franckcuny/pythonbrew-mini.el.git")
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Damien Krotkine" . "dams@cpan.org")
+	      ("Franck Cuny" . "franck@lumberjaph.net"))
+ :maintainer ("Damien Krotkine" . "dams@cpan.org")
+ :provided   (pythonbrew-mini)
+ :keywords   ("python" "pythonbrew")
+ :homepage   "https://github.com/franckcuny/pythonbrew-mini.el")

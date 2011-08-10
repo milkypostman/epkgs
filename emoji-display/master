@@ -1,0 +1,26 @@
+(:repository (git . "git://github.com/ikazuhiro/emoji-display.git")
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Kazuhiro Ito" . "kzhr@d1.dion.ne.jp"))
+ :maintainer ("Kazuhiro Ito" . "kzhr@d1.dion.ne.jp")
+ :provided   (emoji-display)
+ :keywords   ("emoji")
+ :homepage   "https://github.com/ikazuhiro/emoji-display"
+ :commentary "\
+Emacs 23 or later is required.
+Get emoji images from FireMobileSimulator or EmojiPrint.
+  FireMobileSimulator http://firemobilesimulator.org/
+  EmojiPrint          http://www.takaaki.info/addon/emojiprint/
+
+1. Place .el files to a loadable directory, and byte-compile as needed.
+2. Set emoji-display-image-directory variable appropriately or place
+image directory to the same directory of .el files.
+3. Add your ~/.emacs as below code.
+
+(require 'emoji-display)
+(emoji-display-mode)
+
+Known problems
+* Resources are exhausted on MS Windows.
+* Some animated images are corrupted.")

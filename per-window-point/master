@@ -1,0 +1,47 @@
+(:summary    "Persisent per-window values of point"
+ :repository (git . "git://github.com/alpaker/Per-Window-Point.git")
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-2"
+ :authors    (("Alp Aker" . "alp.tekin.aker@gmail.com"))
+ :maintainer ("Alp Aker" . "alp.tekin.aker@gmail.com")
+ :provided   (per-window-point)
+ :keywords   ("convenience")
+ :homepage   "https://github.com/alpaker/Per-Window-Point"
+ :commentary "\
+Emacs conveniently allows one to work on different parts of the same
+buffer at the same time, but the rules governing buffer display are, for
+some people's editing habits, less than ideal.  Suppose for example that
+one is editing two parts of buffer <buf> in windows <win1> and <win2>,
+switches briefly to another buffer in <win2>, then returns to editing
+<buf> in <win2>.  This latter window will now display the same part of
+<buf> as <win1>, rather than the portion that one was just recently
+editing in it.  Per-window-point creates persistent values of point and
+window-start, so that in cases like that just described <win2> will return
+to its previous position in <buf>.
+
+In some cases, such as looking up a function definition via
+`describe-function', it makes sense for per-window-point to allow other
+Lisp programs to fix the value of point.  The package is reasonably
+intelligent in identifying when when it should do so.  Further control
+over repositioning is provided by the variables `pwp-no-reposition-names',
+`pwp-no-reposition-regexps', and `pwp-reposition-tests'.  Note also that
+the package always ignores minibuffer windows.
+
+To install the package, put this file in your load path and put:
+
+ (require 'per-window-point)
+
+in your .emacs.  To toggle per-window-point on and off, use the command
+`pwp-mode', or place 
+
+ (pwp-mode 1)
+
+in your .emacs to enable it automatically.
+
+A Note on v24 (July, 2011):  The buffer display routines in v24 are
+currently being rewritten in preparation for the release of v24.1. As
+they've been changing on a near-daily basis, I'm not going to try to keep
+up with them until the relevant code stabilizes (which is supposed to
+happen by August, 2011).  Until then, users who build v24 from source
+using a recent rev might see irregular behavior.")

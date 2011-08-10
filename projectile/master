@@ -1,0 +1,13 @@
+(:summary    "Manage and navigate projects in Emacs easily"
+ :repository (git . "git://github.com/bbatsov/projectile.git")
+ :created    "20113107"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Bozhidar Batsov"))
+ :maintainer ("Bozhidar Batsov")
+ :provided   (projectile)
+ :required   ((("cl" cl)))
+ :keywords   ("project" "convenience")
+ :homepage   "https://github.com/bbatsov/projectile"
+ :commentary "\
+This library provides easy project management and navigation.")

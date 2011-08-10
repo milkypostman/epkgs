@@ -1,11 +1,12 @@
 (:summary    "Two-pane file manager for Emacs based on Dired and inspired by MC"
+ :repository (git . "git://github.com/escherdragon/sunrise-commander.git")
  :created    "20070924"
  :updated    "2011"
  :license    "GPL-3"
  :authors    (("José Alfredo Romero L." . "escherdragon@gmail.com")
 	      ("Štěpán Němec" . "stepnem@gmail.com"))
  :maintainer ("José Alfredo Romero L." . "escherdragon@gmail.com")
- :provided   (sunrise-commander sunrise-x-buttons sunrise-x-checkpoints sunrise-x-loop sunrise-x-mirror sunrise-x-modeline sunrise-x-popviewer sunrise-x-tabs sunrise-x-tree sunrise-x-w32-addons)
+ :provided   (sunrise-commander sunrise-x-buttons sunrise-x-checkpoints sunrise-x-loop sunrise-x-mirror sunrise-x-modeline sunrise-x-old-checkpoints sunrise-x-popviewer sunrise-x-tabs sunrise-x-tree sunrise-x-w32-addons)
  :required   ((("bookmark" bookmark)
 	       ("cl" cl)
 	       ("custom" cus-edit)
@@ -22,6 +23,7 @@
 	       ("term" term)
 	       ("tree-widget" tree-widget)))
  :keywords   ("files" "dired" "midnight" "commander" "norton" "orthodox")
+ :homepage   "https://github.com/escherdragon/sunrise-commander"
  :commentary "\
 Here is another two-pane mc emulation layer for Emacs. It's built on top of
 Dired and takes advantage of all its features, offering at the same time the

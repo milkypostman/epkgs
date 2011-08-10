@@ -1,0 +1,20 @@
+(:summary    "Bookmark plugin for e2wm.el"
+ :repository (git . "git://github.com/myuhe/e2wm-bookmark.el.git")
+ :created    "20110705"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("myuhe"))
+ :maintainer ("myuhe")
+ :provided   (e2wm-bookmark)
+ :required   ((("bookmark" bookmark)
+	       ("e2wm" e2wm)))
+ :keywords   ("window" "manager" "convenience")
+ :homepage   "https://github.com/myuhe/e2wm-bookmark.el"
+ :commentary "\
+e2wm is window manager. e2wm makes windowlayout easy.
+e2wm-bookmark is a plugin for e2wm. this provides small window
+to manage bookmarks. this cooperate with files plugin and 
+buffer history plugin.
+
+
+require")

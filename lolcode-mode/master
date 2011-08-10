@@ -1,0 +1,10 @@
+(:summary    "Major mode for editing LOLCODE"
+ :repository (git . "git://github.com/bodil/lolcode-mode.git")
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-2"
+ :authors    (("Bodil Stokke" . "lolcode@bodil.tv"))
+ :maintainer ("Bodil Stokke" . "lolcode@bodil.tv")
+ :provided   (lolcode-mode)
+ :keywords   ("lolcode" "major" "mode")
+ :homepage   "https://github.com/bodil/lolcode-mode")

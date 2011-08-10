@@ -1,0 +1,10 @@
+(:repository (git . "git://github.com/davidmiller/thrift-mode.git")
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-2"
+ :authors    (("David Miller" . "david@deadpansincerity.com"))
+ :maintainer ("David Miller" . "david@deadpansincerity.com")
+ :provided   (thrift-mode)
+ :required   ((("emacs-core" font-lock)))
+ :keywords   ("thrift")
+ :homepage   "https://github.com/davidmiller/thrift-mode")
