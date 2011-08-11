@@ -3,7 +3,7 @@
  :authors    (("Matsushita Akihisa" . "akihisa@mail.ne.jp"))
  :maintainer ("Matsushita Akihisa" . "akihisa@mail.ne.jp")
  :provided   (color-occur)
- :keywords   ("occur" "highlight" "convenience")
+ :keywords   ("convenience" "highlight" "occur")
  :homepage   "http://www.bookshelf.jp/"
  :commentary "\
 color-occur highlight occur buffer and file buffer. Furthermore

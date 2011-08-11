@@ -6,7 +6,7 @@
  :authors    (("Romain Goffe" . "romain.goffe@gmail.com"))
  :maintainer ("Romain Goffe" . "romain.goffe@gmail.com")
  :provided   (songbook-mode)
- :keywords   ("patacrep" "songbook" "major-mode")
+ :keywords   ("major-mode" "patacrep" "songbook")
  :homepage   "https://github.com/crep4ever/songbook-emacs-mode"
  :commentary "\
 This mode was higly inspired from the work of 

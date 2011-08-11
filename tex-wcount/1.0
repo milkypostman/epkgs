@@ -2,9 +2,6 @@
  :created    "1997"
  :updated    "1997"
  :license    "GPL-2"
- :authors    (("Seb James")
-	      (nil . "ssj20@cam.ac.uk"))
- :maintainer ("Seb James")
  :provided   (tex-wcount)
  :required   ((("assoc" assoc)
 	       ("timer" timer)))

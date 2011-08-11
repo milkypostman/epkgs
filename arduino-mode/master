@@ -7,7 +7,7 @@
  :maintainer ("Christopher Grim" . "christopher.grim@gmail.com")
  :provided   (arduino-mode)
  :required   ((("cc-mode" cc-fonts cc-langs cc-menus cc-mode)))
- :keywords   ("languages" "arduino")
+ :keywords   ("arduino" "languages")
  :homepage   "https://github.com/bookest/arduino-mode"
  :commentary "\
 Based on derived-mode-ex.el found here:

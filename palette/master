@@ -8,7 +8,7 @@
  :required   ((("cl" cl)
 	       ("hexrgb" hexrgb))
 	      (("icicles" icicles)))
- :keywords   ("color" "rgb" "hsv" "hexadecimal" "face" "frame")
+ :keywords   ("color" "face" "frame" "hexadecimal" "hsv" "rgb")
  :commentary "\
 To use this library:
 

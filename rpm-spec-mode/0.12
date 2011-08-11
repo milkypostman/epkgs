@@ -2,14 +2,14 @@
  :created    "2002"
  :updated    "2002"
  :license    "GPL-2"
- :authors    (("Stig Bjørlykke"))
- :maintainer ("Stig Bjørlykke")
+ :authors    (("Stig Bjørlykke," . "stigb@tihlde.org"))
+ :maintainer ("Stig Bjørlykke," . "stigb@tihlde.org")
  :provided   (rpm-spec-mode)
  :required   ((("cc-mode" cc-mode)
 	       ("easymenu" easymenu)
 	       ("sh-script" sh-script)
 	       ("shindent" shindent)))
- :keywords   ("unix" "languages")
+ :keywords   ("languages" "unix")
  :wikipage   "http://www.emacswiki.org/RpmSpecMode"
  :commentary "\
 This mode is used for editing spec files used for building RPM packages.

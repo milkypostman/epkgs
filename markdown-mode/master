@@ -10,7 +10,7 @@
 	       ("emacs-core" font-lock)
 	       ("outline" outline)
 	       ("thingatpt" thingatpt)))
- :keywords   ("markdown" "github" "flavored" "markdown" "itex")
+ :keywords   ("github flavored markdown" "itex" "markdown")
  :homepage   "http://jblevins.org/projects/markdown-mode/"
  :wikipage   "http://www.emacswiki.org/MarkdownMode"
  :commentary "\

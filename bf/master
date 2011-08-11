@@ -5,7 +5,7 @@
  :authors    (("Mario Lang" . "mlang@delysid.org"))
  :maintainer ("Mario Lang" . "mlang@delysid.org")
  :provided   (bf)
- :keywords   ("lisp" "matching" "games" "languages")
+ :keywords   ("games" "languages" "lisp" "matching")
  :commentary "\
 This implements a BrainFuck interpreter and a compiler written in
 Emacs-Lisp.  To demonstrate that the implementation is really working,

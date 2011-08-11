@@ -6,7 +6,7 @@
  :maintainer ("FSF")
  :provided   (regexp-opt)
  :required   ((("cl" cl)))
- :keywords   ("strings" "regexps" "extensions")
+ :keywords   ("extensions" "regexps" "strings")
  :wikipage   "http://www.emacswiki.org/RegexpOpt"
  :commentary "\
 The \"opt\" in \"regexp-opt\" stands for \"optim\\\\(al\\\\|i[sz]e\\\\)\".

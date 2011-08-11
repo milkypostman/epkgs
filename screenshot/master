@@ -7,7 +7,7 @@
  :provided   (screenshot)
  :required   ((("cl" cl))
 	      (("yaoddmuse" yaoddmuse)))
- :keywords   ("images" "hypermedia")
+ :keywords   ("hypermedia" "images")
  :homepage   "http://www.emacswiki.org/ScreenShot"
  :wikipage   "http://www.emacswiki.org/ScreenShot"
  :commentary "\

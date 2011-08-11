@@ -3,9 +3,8 @@
  :created    "20110611"
  :updated    "20110611"
  :license    "GPL-2"
- :provided   (alternative-files el-expectations el-mock)
- :required   ((("advice" advice)
-	       ("cl" cl)))
+ :provided   (alternative-files)
+ :required   ((("cl" cl)))
  :keywords   ("navigation")
  :homepage   "https://github.com/doitian/alternative-files-el"
  :commentary "\

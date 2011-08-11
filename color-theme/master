@@ -1,5 +1,5 @@
 (:summary    "Install color themes"
- :repository (bzr . "http+urllib://bzr.savannah.gnu.org/r/color-theme/trunk/")
+ :repository (bzr . "http://bzr.savannah.gnu.org/color-theme/trunk/")
  :created    "1999"
  :updated    "2000"
  :license    "GPL-2"

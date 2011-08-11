@@ -2,8 +2,7 @@
  :created    "20060622"
  :updated    "20060709"
  :license    "GPL-2"
- :authors    (("Gaute Hvoslef Kvalnes" . "gaute@verdsveven.com")
-	      ("Gaute Hvoslef Kvalnes."))
+ :authors    (("Gaute Hvoslef Kvalnes" . "gaute@verdsveven.com"))
  :maintainer ("Gaute Hvoslef Kvalnes" . "gaute@verdsveven.com")
  :provided   (po-mode+)
  :required   ((("cl" cl)

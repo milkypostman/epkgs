@@ -4,8 +4,7 @@
  :license    "GPL-2"
  :authors    (("Geert A. M. Van der Plas" . "geert_vanderplas@email.com")
 	      ("Emmanuel Rouat" . "emmanuel.rouat@wanadoo.fr")
-	      ("Carlin J. Vieri")
-	      ("MIT AI Lab" . "cvieri@ai.mit.edu"))
+	      ("Carlin J. Vieri, MIT AI Lab" . "cvieri@ai.mit.edu"))
  :maintainer ("Geert A. M. Van der Plas" . "geert_vanderplas@email.com")
  :provided   (spice-mode)
  :required   ((("cedet" speedbar)
@@ -16,7 +15,7 @@
 	       ("emacs-obsolete" lucid)
 	       ("imenu" imenu)
 	       ("tempo" tempo)))
- :keywords   ("spice" "eldo" "hspice" "layla" "mondriaan" "fasthenry" "cdl" "spectre" "compatibility" "netlist" "editing")
+ :keywords   ("cdl" "eldo" "fasthenry" "hspice" "layla" "mondriaan" "netlist editing" "spectre compatibility" "spice")
  :homepage   "http://spice-mode.4t.com/"
  :commentary "\
 The original spice-mode.el created by C. Vieri has been modified

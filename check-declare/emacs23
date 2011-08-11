@@ -5,7 +5,7 @@
  :authors    (("Glenn Morris" . "rgm@gnu.org"))
  :maintainer ("Glenn Morris" . "rgm@gnu.org")
  :provided   (check-declare)
- :keywords   ("lisp" "tools" "maint")
+ :keywords   ("lisp" "maint" "tools")
  :commentary "\
 The byte-compiler often warns about undefined functions that you
 know will actually be defined when it matters.  The `declare-function'

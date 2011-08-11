@@ -9,8 +9,6 @@
 	       ("cl" cl)
 	       ("thingatpt" thingatpt)))
  :keywords   ("editing")
- :homepage   "http://www.emacswiki.org/CopyeditMode"
- :wikipage   "http://www.emacswiki.org/CopyeditMode"
  :commentary "\
 This is a minor mode for writers and editors which tweaks the
 behavior of some Emacs commands to make them more efficient at

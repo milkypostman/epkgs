@@ -3,7 +3,7 @@
  :updated    "2009"
  :license    "GPL-3"
  :provided   (idna)
- :keywords   ("idna" "idn" "domain" "name" "internationalization")
+ :keywords   ("domain name" "idn" "idna" "internationalization")
  :commentary "\
 A simple wrapper around the command line \"idn\" utility in GNU
 Libidn to make IDNA ToASCII and ToUnicode operations available in

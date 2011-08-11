@@ -6,7 +6,7 @@
  :maintainer ("Matthew L. Fidler")
  :provided   (texmate-import texmate-to-yas textmate-import textmate-to-yas)
  :required   ((("url" url)))
- :keywords   ("yasnippet" "textmate")
+ :keywords   ("textmate" "yasnippet")
  :commentary "\
 This library allows you to import TextMate bundle snippets to
  Yasnippet

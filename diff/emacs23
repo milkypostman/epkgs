@@ -2,11 +2,10 @@
  :created    "1992"
  :updated    "2011"
  :license    "GPL-3"
- :authors    (("Frank Bresz")
-	      ("(according to authors.el)"))
+ :authors    (("Frank Bresz"))
  :maintainer ("FSF")
  :provided   (diff)
- :keywords   ("unix" "tools")
+ :keywords   ("tools" "unix")
  :wikipage   "http://www.emacswiki.org/DiffMode"
  :commentary "\
 This package helps you explore differences between files, using the

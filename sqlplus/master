@@ -9,7 +9,7 @@
 	       ("skeleton" skeleton)
 	       ("sql" sql)
 	       ("tabify" tabify)))
- :keywords   ("sql" "sqlplus" "oracle" "plsql")
+ :keywords   ("oracle" "plsql" "sql" "sqlplus")
  :homepage   "http://www.emacswiki.org/SqlPlus"
  :wikipage   "http://www.emacswiki.org/SqlPlus"
  :commentary "\

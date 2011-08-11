@@ -6,7 +6,7 @@
  :maintainer ("Scott Frazer" . "frazer.scott@gmail.com")
  :provided   (mdabbrev)
  :required   ((("dabbrev" dabbrev)))
- :keywords   ("abbrev" "expand" "completion" "convenience")
+ :keywords   ("abbrev" "completion" "convenience" "expand")
  :commentary "\
 Dynamic abbreviation expansion in the middle of a word.  For example, if
 the cursor is on the letter 'b' in \"foo_bar\" and the word \"foo_quux_bar\" is

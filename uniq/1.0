@@ -5,4 +5,4 @@
  :authors    (("Art Taylor"))
  :maintainer ("Art Taylor")
  :provided   (uniq)
- :keywords   ("uniq" "duplicates"))
+ :keywords   ("duplicates" "uniq"))

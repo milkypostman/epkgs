@@ -8,7 +8,7 @@
  :required   ((("cl" cl)
 	       ("custom" cus-edit)
 	       ("strings" strings)))
- :keywords   ("internal" "lisp" "extensions" "abbrev")
+ :keywords   ("abbrev" "extensions" "internal" "lisp")
  :commentary "\
 Extensions to standard library `simple.el'.
 

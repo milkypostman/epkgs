@@ -7,5 +7,5 @@
  :provided   (posterous)
  :required   ((("url" url)
 	       ("xml" xml)))
- :keywords   ("posterous" "blog")
+ :keywords   ("blog" "posterous")
  :homepage   "https://github.com/snim2/posterous.el")

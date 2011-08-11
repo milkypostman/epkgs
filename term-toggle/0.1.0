@@ -6,7 +6,7 @@
  :maintainer ("Joseph" . "jixiuf@gmail.com")
  :provided   (term-toggle)
  :required   ((("term" term)))
- :keywords   ("term" "toggle" "shell")
+ :keywords   ("shell" "term" "toggle")
  :commentary "\
 Most of code is got from 
  http://user.it.uu.se/~mic/shell-toggle.el

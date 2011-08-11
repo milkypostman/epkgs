@@ -4,7 +4,7 @@
  :authors    (("Harley Gorrell" . "harley@panix.com"))
  :maintainer ("Harley Gorrell" . "harley@panix.com")
  :provided   (dna-mode)
- :keywords   ("dna" "editing")
+ :keywords   ("dna" "editing" "emacs")
  :commentary "\
 * A collection of functions for editing DNA sequences.  It
   provides functions to make editing dna in Emacs easier.

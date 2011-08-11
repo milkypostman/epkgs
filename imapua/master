@@ -8,7 +8,7 @@
  :required   ((("cl" cl)
 	       ("gnus" imap message qp)
 	       ("timezone" timezone)))
- :keywords   ("mail" "version")
+ :keywords   ("mail")
  :homepage   "http://www.emacswiki.org/imapua"
  :wikipage   "http://www.emacswiki.org/imapua"
  :commentary "\

@@ -3,10 +3,9 @@
  :updated    "2011"
  :license    "GPL-3"
  :authors    (("Anders Lindgren" . "andersl@andersl.com"))
- :maintainer ("FSF (Anders' email bounces")
  :provided   (follow)
  :required   ((("easymenu" easymenu)))
- :keywords   ("display" "window" "convenience")
+ :keywords   ("convenience" "display" "minor-mode" "window")
  :wikipage   "http://www.emacswiki.org/FollowMode"
  :commentary "\
 {{{ Documentation

@@ -9,7 +9,7 @@
  :required   ((("alert" alert)
 	       ("cl" cl)
 	       ("spread" spread)))
- :keywords   ("buffer" "binary" "input")
+ :keywords   ("binary" "buffer" "input")
  :homepage   "https://github.com/macdice/protocolarium"
  :commentary "\
 This is my experimental library of input routines based on buffers.

@@ -11,7 +11,7 @@
  :required   ((("advice" advice)
 	       ("cc-mode" cc-engine)
 	       ("emacs-core" font-lock)))
- :keywords   ("font-lock" "emacs-lisp" "change-log" "texinfo" "c" "java" "perl" "html" "tcl" "ruby" "mail" "news")
+ :keywords   ("c" "change-log" "emacs-lisp" "font-lock" "html" "java" "mail" "news" "perl" "ruby" "tcl" "texinfo")
  :wikipage   "http://www.emacswiki.org/DevelockMode"
  :commentary "\
 Develock is a minor mode which provides the ability to make font-

@@ -5,7 +5,7 @@
  :maintainer ("Matsushita Akihisa" . "akihisa@mail.ne.jp")
  :provided   (moccur-edit)
  :required   ((("color-moccur" color-moccur)))
- :keywords   ("moccur" "edit")
+ :keywords   ("edit" "moccur")
  :homepage   "http://www.bookshelf.jp/"
  :commentary "\
 moccur-edit provides to edit moccur buffer of color-moccur.el and

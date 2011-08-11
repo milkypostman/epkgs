@@ -3,7 +3,7 @@
  :authors    ((nil . "an00na@gmail.com"))
  :maintainer (nil . "an00na@gmail.com")
  :provided   (visible-lines)
- :keywords   ("convenience" "continuation")
+ :keywords   ("continuation" "convenience")
  :homepage   "http://www.emacswiki.org/VisibleLines"
  :wikipage   "http://www.emacswiki.org/VisibleLines"
  :commentary "\

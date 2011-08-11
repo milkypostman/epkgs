@@ -5,7 +5,7 @@
  :authors    (("John Paul Wallington" . "jpw@shootybangbang.com"))
  :maintainer ("John Paul Wallington" . "jpw@shootybangbang.com")
  :provided   (floatbg)
- :keywords   ("background" "frames" "faces")
+ :keywords   ("background" "faces" "frames")
  :homepage   "http://www.shootybangbang.com/"
  :commentary "\
 Modifies backgound color by moving through an hsv color model, like 

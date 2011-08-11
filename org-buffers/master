@@ -8,5 +8,5 @@
  :provided   (org-buffers)
  :required   ((("cl" cl)
 	       ("org-mode" org)))
- :keywords   ("outlines" "hypermedia" "calendar" "wp")
+ :keywords   ("calendar" "hypermedia" "outlines" "wp")
  :homepage   "http://orgmode.org")

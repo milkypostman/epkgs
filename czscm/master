@@ -5,7 +5,7 @@
  :authors    (("Noah Friedman" . "friedman@prep.ai.mit.edu"))
  :maintainer (nil . "friedman@prep.ai.mit.edu")
  :provided   (czscm)
- :keywords   ("interpreters" "languages" "scheme" "lisp")
+ :keywords   ("interpreters" "languages" "lisp" "scheme")
  :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
  :commentary "\
 \"It's not merely cheezy, it's full-on spray-can cheez.\"

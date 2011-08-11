@@ -10,6 +10,6 @@
 	       ("tempo" tempo)
 	       ("url" url)
 	       ("xml-parse" xml-parse)))
- :keywords   ("doxygen" "documentation")
+ :keywords   ("documentation" "doxygen")
  :homepage   "http://doxymacs.sourceforge.net/"
  :wikipage   "http://www.emacswiki.org/DoxyMacs")

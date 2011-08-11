@@ -6,7 +6,7 @@
  :maintainer ("Martin Rudalics" . "rudalics@gmx.at")
  :provided   (speck)
  :required   ((("cl" cl)))
- :keywords   ("spell" "checking")
+ :keywords   ("checking" "spell")
  :homepage   "http://www.emacswiki.org/SpeckMode"
  :wikipage   "http://www.emacswiki.org/SpeckMode"
  :commentary "\

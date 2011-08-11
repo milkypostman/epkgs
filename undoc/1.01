@@ -5,7 +5,7 @@
  :authors    (("Joshua D. Guttman" . "guttman@mitre.org"))
  :maintainer ("Joshua D. Guttman" . "guttman@mitre.org")
  :provided   (undoc)
- :keywords   ("word" "word" "processors")
+ :keywords   ("word" "word processors ")
  :homepage   "http://www.ccs.neu.edu/home/guttman/"
  :wikipage   "http://www.emacswiki.org/UnDoc"
  :commentary "\

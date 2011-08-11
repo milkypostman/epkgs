@@ -6,7 +6,7 @@
  :maintainer ("Seiji Zenitani" . "zenitani@mac.com")
  :provided   (mac-key-mode)
  :required   ((("redo" redo)))
- :keywords   ("tools" "mac")
+ :keywords   ("mac" "tools")
  :wikipage   "http://www.emacswiki.org/MacKeyMode"
  :commentary "\
 This package provides mac-key-mode, a minor mode that provides

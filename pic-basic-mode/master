@@ -7,4 +7,4 @@
  :adapted-by ("Dave Love" . "d.love@dl.ac.uk")
  :provided   (pic-basic-mode)
  :required   ((("cl" cl)))
- :keywords   ("languages" "basic"))
+ :keywords   ("basic" "languages"))

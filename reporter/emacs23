@@ -5,7 +5,7 @@
  :maintainer ("FSF")
  :provided   (reporter)
  :required   ((("sendmail" sendmail)))
- :keywords   ("maint" "mail" "tools")
+ :keywords   ("mail" "maint" "tools")
  :homepage   "http://www.python.org/emacs/"
  :commentary "\
 End User Interface

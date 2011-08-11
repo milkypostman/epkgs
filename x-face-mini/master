@@ -7,4 +7,4 @@
  :provided   (x-face-mini)
  :required   ((("cl" cl)
 	       ("x-face" x-face)))
- :keywords   ("x-face" "thumbnails" "netpbm"))
+ :keywords   ("emacs" "netpbm" "thumbnails" "x-face"))

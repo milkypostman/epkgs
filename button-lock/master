@@ -7,7 +7,7 @@
  :provided   (button-lock wiki-nav)
  :required   ((("cl" cl)
 	       ("emacs-core" font-lock)))
- :keywords   ("mouse" "button" "hyperlink")
+ :keywords   ("button" "hyperlink" "mouse")
  :homepage   "https://github.com/rolandwalker/button-lock"
  :wikipage   "http://www.emacswiki.org/ButtonLockMode"
  :commentary "\

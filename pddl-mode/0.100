@@ -12,7 +12,7 @@
 	       ("lisp-mode" lisp-mode)
 	       ("pcomplete" pcomplete)
 	       ("regexp-opt" regexp-opt)))
- :keywords   ("pddl" "planning" "files")
+ :keywords   ("files" "pddl" "planning")
  :homepage   "http://www.emacswiki.org/PDDLMode"
  :wikipage   "http://www.emacswiki.org/PDDLMode"
  :commentary "\

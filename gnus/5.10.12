@@ -36,6 +36,6 @@
 	       ("w3m" w3m)
 	       ("widget" wid-edit)
 	       ("xml-rpc" xml-rpc)))
- :keywords   ("news" "mail")
+ :keywords   ("mail" "news")
  :homepage   "http://gnus.org"
  :wikipage   "http://www.emacswiki.org/Gnus")

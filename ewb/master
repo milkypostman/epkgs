@@ -3,7 +3,7 @@
  :updated    "2002"
  :license    "GPL-2"
  :provided   (ewb)
- :keywords   ("browser" "web" "net")
+ :keywords   ("browser" "net" "web")
  :homepage   "http://www.emacswiki.org/EmacsWebBrowser"
  :wikipage   "http://www.emacswiki.org/EmacsWebBrowser"
  :commentary "\

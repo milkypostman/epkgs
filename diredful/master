@@ -9,7 +9,7 @@
 	       ("dired" dired)
 	       ("dired-x" dired-x)
 	       ("widget" widget)))
- :keywords   ("dired" "colors" "extension" "widget")
+ :keywords   ("colors" "dired" "extension" "widget")
  :homepage   "http://www.emacswiki.org/Diredful"
  :wikipage   "http://www.emacswiki.org/Diredful"
  :commentary "\

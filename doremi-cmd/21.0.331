@@ -7,7 +7,7 @@
  :provided   (doremi-cmd)
  :required   ((("doremi" doremi))
 	      (("color-theme" color-theme)))
- :keywords   ("keys" "cycle" "repeat")
+ :keywords   ("cycle" "keys" "repeat")
  :commentary "\
 Miscellaneous Do Re Mi commands.
 

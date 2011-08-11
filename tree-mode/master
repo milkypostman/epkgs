@@ -7,6 +7,6 @@
  :provided   (tree-mode)
  :required   ((("cl" cl)
 	       ("tree-widget" tree-widget)))
- :keywords   ("help" "convenience" "widget")
+ :keywords   ("convenience" "help" "widget")
  :homepage   "http://www.emacswiki.org/TreeMode"
  :wikipage   "http://www.emacswiki.org/TreeMode")

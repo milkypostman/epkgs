@@ -6,7 +6,7 @@
  :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
  :provided   (shell-history)
  :required   ((("cl" cl)))
- :keywords   ("processes" "convenience")
+ :keywords   ("convenience" "processes")
  :commentary "\
 Add command of `shell-command', `shell-command-on-region',
 `compile', `grep', and `background' to shell history file,

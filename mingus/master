@@ -15,7 +15,7 @@
 	       ("url" url)
 	       ("widget" wid-edit)
 	       (nil taggit)))
- :keywords   ("multimedia" "elisp" "music" "mpd")
+ :keywords   ("elisp" "mpd" "multimedia" "music")
  :homepage   "https://github.com/pft/mingus"
  :wikipage   "http://www.emacswiki.org/Mingus"
  :commentary "\

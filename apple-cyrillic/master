@@ -3,7 +3,7 @@
  :license    "as-is"
  :authors    (("Artyom Bolshakov" . "tweekane@gmail.com"))
  :maintainer ("Artyom Bolshakov" . "tweekane@gmail.com")
- :keywords   ("multilingual" "input" "method" "cyrillic" "apple")
+ :keywords   ("apple" "cyrillic" "input method" "multilingual")
  :homepage   "https://github.com/TweeKane/apple-cyrillic.el"
  :commentary "\
 This method for Cyrillic Apple Keyboard with Numeric Keypad 

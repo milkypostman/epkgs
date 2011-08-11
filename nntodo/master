@@ -8,7 +8,7 @@
  :required   ((("cl" cl)
 	       ("easy-mmode" easy-mmode)
 	       ("gnus" gnus-start nnheader nnmail nnmbox nnoo)))
- :keywords   ("news" "mail" "calendar" "convenience")
+ :keywords   ("calendar" "convenience" "mail" "news")
  :wikipage   "http://www.emacswiki.org/TodoGnus"
  :commentary "\
 Warning: this is alpha code!  Use at your own risk!  Don your

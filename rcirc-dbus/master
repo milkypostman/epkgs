@@ -4,4 +4,4 @@
  :maintainer ("Frederico Muñoz" . "fsmunoz@gmail.com")
  :provided   (rcirc-dbus)
  :required   ((("dbus" dbus)))
- :keywords   ("rcirc" "dbus"))
+ :keywords   ("dbus" "rcirc"))

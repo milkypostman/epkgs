@@ -3,6 +3,6 @@
  :updated    "2009"
  :license    "GPL-2"
  :provided   (ergoemacs-mode)
- :keywords   ("qwerty" "dvorak" "keybinding" "ergonomic" "colemak")
+ :keywords   ("colemak" "dvorak" "ergonomic" "keybinding" "qwerty")
  :homepage   "http://ergoemacs.org/"
  :wikipage   "http://www.emacswiki.org/ergoemacs")

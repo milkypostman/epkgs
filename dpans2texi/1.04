@@ -4,7 +4,7 @@
  :license    "GPL-2"
  :authors    (("Jesper Harder" . "harder@phys.au.dk"))
  :maintainer ("Jesper Harder" . "harder@phys.au.dk")
- :keywords   ("lisp" "documentation")
+ :keywords   ("documentation" "lisp")
  :homepage   "http://www.phys.au.dk/~harder/dpans.html"
  :commentary "\
 This program converts the TeX sources for the draft proposed ANSI

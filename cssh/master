@@ -10,6 +10,6 @@
 	       ("ibuffer" ibuffer)
 	       ("term" term)
 	       ("tramp" tramp)))
- :keywords   ("clusterssh" "ssh" "cssh")
+ :keywords   ("clusterssh" "cssh" "ssh")
  :homepage   "http://tapoueh.org/projects.html#sec17"
  :wikipage   "http://www.emacswiki.org/ClusterSSH")

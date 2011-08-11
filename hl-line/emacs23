@@ -5,7 +5,7 @@
  :authors    (("Dave Love" . "fx@gnu.org"))
  :maintainer ("FSF")
  :provided   (hl-line)
- :keywords   ("faces" "frames" "emulations")
+ :keywords   ("emulations" "faces" "frames")
  :commentary "\
 Provides a local minor mode (toggled by M-x hl-line-mode) and
 a global minor mode (toggled by M-x global-hl-line-mode) to

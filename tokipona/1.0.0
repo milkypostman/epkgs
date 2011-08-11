@@ -6,5 +6,5 @@
  :maintainer ("Edward O'Connor" . "hober0@gmail.com")
  :provided   (tokipona)
  :required   ((("emacs-core" quail)))
- :keywords   ("multilingual" "input" "method" "toki" "pona")
+ :keywords   ("input method" "multilingual" "toki pona")
  :homepage   "http://edward.oconnor.cx/elisp/")

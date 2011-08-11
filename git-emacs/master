@@ -15,7 +15,7 @@
 	       ("time-stamp" time-stamp)
 	       ("vc" vc vc-git))
 	      (("hl-line" hl-line)))
- :keywords   ("git" "version" "control" "release" "management")
+ :keywords   ("git" "release management" "version control")
  :commentary "\
 Some related packages were used directly or as inspiration:
   - psvn.el (Stefan Reichoer)

@@ -9,7 +9,7 @@
 	       ("cperl-mode" cperl-mode)
 	       ("custom" cus-edit custom)
 	       ("emacs-core" faces font-lock)))
- :keywords   ("html" "hypermedia" "markup" "etags")
+ :keywords   ("etags" "html" "hypermedia" "markup")
  :homepage   "http://rtfm.etla.org/emacs/htmlfontify/"
  :wikipage   "http://www.emacswiki.org/HtmlFontify"
  :commentary "\

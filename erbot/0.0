@@ -30,6 +30,6 @@
 	       ("url" url)
 	       ("wtf" wtf)
 	       (nil bash-quotes erc-nickserv lispy)))
- :keywords   ("erc" "irc" "chat" "robot" "bot")
+ :keywords   ("bot" "chat" "erc" "irc" "robot")
  :homepage   "http://mwolson.org/projects/"
  :wikipage   "http://www.emacswiki.org/EmacsRobots")

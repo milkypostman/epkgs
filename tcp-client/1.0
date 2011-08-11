@@ -4,6 +4,6 @@
  :maintainer ("Cedric Lallain" . "kandjar76@hotmail.com")
  :provided   (tcp-client)
  :required   ((("record-type" record-type)))
- :keywords   ("tcp" "network" "connection" "client")
+ :keywords   ("client" "connection" "network" "tcp")
  :homepage   "http://www.emacswiki.org/TcpClient"
  :wikipage   "http://www.emacswiki.org/TcpClient")

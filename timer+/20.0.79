@@ -10,7 +10,7 @@
 	      (("icicles" icicles)
 	       ("thingatpt" thingatpt)
 	       ("thingatpt+" thingatpt+)))
- :keywords   ("processes" "calendar")
+ :keywords   ("calendar" "processes")
  :commentary "\
 Extensions to `timer.el'.
 

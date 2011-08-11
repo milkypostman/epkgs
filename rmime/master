@@ -6,7 +6,7 @@
  :required   ((("mh-e" mh-e)
 	       ("rmail" rmail)
 	       ("vm" vm)))
- :keywords   ("mime" "mail")
+ :keywords   ("mail" "mime")
  :commentary "\
 RMIME provides MIME support for several Emacs message reading
 packages.  RMIME has been designed with RMAIL in mind, but it has

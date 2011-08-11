@@ -12,7 +12,7 @@
 	       ("emacs-core" backquote quail)
 	       ("rect" rect)
 	       ("tabify" tabify)))
- :keywords   ("wp" "convenience")
+ :keywords   ("convenience" "wp")
  :homepage   "http://table.sourceforge.net/"
  :wikipage   "http://www.emacswiki.org/TableMode"
  :commentary "\

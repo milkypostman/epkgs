@@ -4,7 +4,7 @@
  :license    "GPL-3"
  :authors    (("Daniel Pfeiffer" . "occitan@esperanto.org"))
  :maintainer ("Daniel Pfeiffer" . "occitan@esperanto.org")
- :adapted-by ("ESR")
+ :adapted-by ("ESR, Daniel Pfeiffer")
  :provided   (two-column)
  :keywords   ("wp")
  :commentary "\

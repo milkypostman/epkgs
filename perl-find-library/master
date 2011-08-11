@@ -8,7 +8,7 @@
  :required   ((("cl" cl)
 	       ("cperl-mode" cperl-mode)
 	       ("find-lisp" find-lisp)))
- :keywords   ("util" "perl")
+ :keywords   ("perl" "util")
  :commentary "\
 The main functionality provided by this file is in the
  `perl-read-library' function, which reads the name of a perl

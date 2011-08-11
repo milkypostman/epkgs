@@ -5,7 +5,7 @@
  :authors    (("Ian Zimmerman"))
  :maintainer ("Ian Zimmerman")
  :provided   (dig-browser)
- :keywords   ("network" "communication" "domain" "zone")
+ :keywords   ("communication" "domain" "network" "zone")
  :commentary "\
 Originally I had the idea of wrapping dig (actually a clone whose output
 is easier to parse) in a simple Gtk GUI program with just a clickable

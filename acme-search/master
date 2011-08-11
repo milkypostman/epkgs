@@ -2,9 +2,7 @@
  :created    "2006"
  :updated    "2006"
  :license    "GPL-2"
- :authors    (("Dan McCarthy" . "daniel.c.mccarthy@gmail.com")
-	      ("Dan McCarthy")
-	      ("see section 'Terms'."))
+ :authors    (("Dan McCarthy" . "daniel.c.mccarthy@gmail.com"))
  :maintainer ("Dan McCarthy" . "daniel.c.mccarthy@gmail.com")
  :provided   (acme-search)
  :required   ((("cl" cl)))

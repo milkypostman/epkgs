@@ -4,7 +4,7 @@
  :authors    (("Harley Gorrell" . "harley@mahalito.net"))
  :maintainer ("Harley Gorrell" . "harley@mahalito.net")
  :provided   (syslog-mode)
- :keywords   ("syslog")
+ :keywords   ("emacs" "syslog")
  :wikipage   "http://www.emacswiki.org/SyslogMode"
  :commentary "\
 * Handy functions for looking at system logs.

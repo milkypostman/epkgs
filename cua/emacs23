@@ -6,7 +6,7 @@
  :maintainer ("Kim F. Storm" . "storm@cua.dk")
  :provided   (cua-base cua-gmrk cua-rect)
  :required   ((("rect" rect)))
- :keywords   ("keyboard" "emulations" "convenience" "cua")
+ :keywords   ("convenience" "cua" "emulations" "keyboard")
  :homepage   "http://www.cua.dk/cua.html"
  :wikipage   "http://www.emacswiki.org/CuaMode"
  :commentary "\

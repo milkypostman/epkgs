@@ -1,8 +1,7 @@
 (:summary    "Major mode for editing organizer list files"
  :created    "19970802"
  :updated    "20030318"
- :authors    (("Oliver Seidel" . "os10000@seidel-space.de")
-	      ("[Not clear the above works"))
+ :authors    (("Oliver Seidel" . "os10000@seidel-space.de"))
  :maintainer ("Oliver Seidel" . "os10000@seidel-space.de")
  :provided   (organizer-mode)
  :required   ((("bbdb" bbdb)

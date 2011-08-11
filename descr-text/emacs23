@@ -7,6 +7,6 @@
  :provided   (descr-text)
  :required   ((("emacs-core" quail)
 	       ("help-mode" help-mode)))
- :keywords   ("faces" "unicode" "multilingual")
+ :keywords   ("faces" "multilingual" "unicode")
  :commentary "\
 Describe-Text Mode.")

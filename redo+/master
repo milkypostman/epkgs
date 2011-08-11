@@ -2,11 +2,8 @@
  :created    "1985"
  :updated    "1995"
  :license    "GPL-2"
- :authors    (("Kyle E. Jones")
-	      ("S. Irie"))
- :maintainer ("Kyle E. Jones")
  :provided   (redo+)
- :keywords   ("lisp" "extensions")
+ :keywords   ("extensions" "lisp")
  :homepage   "http://www.emacswiki.org/RedoPlus"
  :wikipage   "http://www.emacswiki.org/RedoPlus"
  :commentary "\

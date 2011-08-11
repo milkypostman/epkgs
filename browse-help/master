@@ -7,7 +7,7 @@
  :required   ((("browse-url" browse-url)
 	       ("cl" cl)
 	       ("custom" cus-edit)))
- :keywords   ("help" "browser")
+ :keywords   ("browser" "help")
  :commentary "\
 This package provides support for context-sensitive help within Emacs.
 It parses user supplied help files to build up an index of topics and

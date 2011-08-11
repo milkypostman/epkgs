@@ -2,8 +2,8 @@
  :created    "2006"
  :updated    "2006"
  :license    "GPL-2"
- :authors    (("Stefan Reichoer"))
- :maintainer ("Stefan Reichoer")
+ :authors    (("Stefan Reichoer," . "stefan@xsteve.at"))
+ :maintainer ("Stefan Reichoer," . "stefan@xsteve.at")
  :provided   (dar)
  :homepage   "http://www.xsteve.at/prg/emacs/dar.html"
  :commentary "\

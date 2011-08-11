@@ -2,7 +2,6 @@
  :authors    (("Tom Cook")
 	      ("Dept. of Biostatistics")
 	      ("University of Wisconsin - Madison")
-	      ("Madison")
 	      (nil . "cook@biostat.wisc.edu"))
  :maintainer ("Tom Cook")
  :provided   (sas sas-fontlock)

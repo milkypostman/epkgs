@@ -12,7 +12,7 @@
 	       ("ispell" ispell))
 	      (("cedet" semantic)
 	       (nil nxml)))
- :keywords   ("completion" "ui" "user" "interface")
+ :keywords   ("completion" "ui" "user interface")
  :homepage   "http://www.dr-qubit.org/emacs.php#predictive"
  :wikipage   "http://www.emacswiki.org/CompletionUI"
  :commentary "\

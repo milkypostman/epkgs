@@ -3,7 +3,7 @@
  :updated    "2008"
  :license    "GPL-2"
  :provided   (taskjuggler-mode)
- :keywords   ("user" "files" "part")
+ :keywords   ("user")
  :homepage   "http://www.skamphausen.de/cgi-bin/ska/taskjuggler-mode"
  :wikipage   "http://www.emacswiki.org/Taskjuggler"
  :commentary "\

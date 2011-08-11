@@ -6,7 +6,7 @@
  :maintainer ("ahei" . "ahei0802@126.com")
  :provided   (dired-lis)
  :required   ((("dired-isearch" dired-isearch)))
- :keywords   ("dired" "letter" "isearch")
+ :keywords   ("dired" "isearch" "letter")
  :homepage   "http://www.emacswiki.org/DiredLis"
  :wikipage   "http://www.emacswiki.org/DiredLis"
  :commentary "\

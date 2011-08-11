@@ -6,7 +6,7 @@
  :maintainer ("Drew Adams")
  :provided   (hl-line+)
  :required   ((("hl-line" hl-line)))
- :keywords   ("highlight" "cursor" "accessibility")
+ :keywords   ("accessibility" "cursor" "highlight")
  :commentary "\
 This library extends standard library `hl-line.el' in these ways:
 

@@ -6,7 +6,7 @@
  :maintainer ("Drew Adams")
  :provided   (vc-hooks+)
  :required   ((("vc" vc vc-hooks)))
- :keywords   ("version" "control")
+ :keywords   ("control" "version")
  :commentary "\
 Extensions to `vc-hooks.el'.
 

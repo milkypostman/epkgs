@@ -8,7 +8,7 @@
  :required   ((("cl" cl)
 	       ("imenu" imenu)
 	       ("info" info)))
- :keywords   ("gri" "xemacs")
+ :keywords   ("emacs" "gri" "xemacs")
  :homepage   "http://gri.sourceforge.net/"
  :commentary "\
 This major mode for GNU emacs provides support for editing Gri files.

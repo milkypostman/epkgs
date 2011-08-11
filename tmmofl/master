@@ -7,7 +7,7 @@
  :required   ((("cl" cl)
 	       ("easy-mmode" easy-mmode)
 	       ("emacs-core" font-lock)))
- :keywords   ("minor" "mode" "font" "lock")
+ :keywords   ("font lock" "minor mode")
  :homepage   "http://homepages.cs.ncl.ac.uk/phillip.lord/emacs.html"
  :commentary "\
 This code is used to run to functions depending on whether the

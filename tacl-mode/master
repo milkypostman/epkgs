@@ -9,7 +9,7 @@
 	       ("imenu" imenu)
 	       ("which-func" which-func)
 	       (nil tacl-indent)))
- :keywords   ("languages" "extensions" "tandem" "guardian" "nsk" "tacl")
+ :keywords   ("extensions" "guardian" "languages" "nsk" "tacl" "tandem")
  :homepage   "http://www.emacswiki.org/TaclMode"
  :wikipage   "http://www.emacswiki.org/TaclMode"
  :commentary "\

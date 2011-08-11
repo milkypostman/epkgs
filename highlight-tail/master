@@ -4,7 +4,7 @@
  :maintainer ("Rafal Jedruszek" . "necui-emahte@nic-nac-project.net")
  :provided   (highlight-tail)
  :required   ((("cl" cl)))
- :keywords   ("highlight" "tail" "eye-candy" "visual-effect" "light" "color" "burn")
+ :keywords   ("burn" "color" "eye-candy" "highlight" "light" "tail" "visual-effect")
  :commentary "\
 === WHAT IS IT?
 

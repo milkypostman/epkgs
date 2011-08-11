@@ -4,7 +4,7 @@
  :maintainer ("Helmut Eller" . "heller@common-lisp.net")
  :provided   (pg)
  :required   ((("cl" cl)))
- :keywords   ("data" "comm" "database" "postgresql")
+ :keywords   ("comm" "data" "database" "postgresql")
  :homepage   "http://www.online-marketwatch.com/pgel/pg.html"
  :commentary "\
 Overview ==========================================================

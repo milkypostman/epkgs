@@ -5,7 +5,7 @@
  :authors    (("IRIE Shinsuke"))
  :maintainer ("IRIE Shinsuke")
  :provided   (menu-tree)
- :keywords   ("localization" "japanese" "menu-bar")
+ :keywords   ("japanese" "localization" "menu-bar")
  :homepage   "https://code.launchpad.net/~irie/+junk/menu-tree.el"
  :wikipage   "http://www.emacswiki.org/MenuTree"
  :commentary "\

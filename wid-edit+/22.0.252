@@ -2,12 +2,11 @@
  :created    "20071221"
  :updated    "20110104"
  :license    "GPL-2"
- :authors    (("Drew Adams")
-	      ("Lennart Borgman"))
+ :authors    (("Drew Adams, Lennart Borgman"))
  :maintainer ("Drew Adams")
  :provided   (wid-edit+)
  :required   ((("widget" wid-edit)))
- :keywords   ("widget" "color")
+ :keywords   ("color" "widget")
  :commentary "\
 Extensions to standard library `wid-edit.el'.
 

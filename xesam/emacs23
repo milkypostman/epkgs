@@ -10,7 +10,7 @@
 	       ("timer" timer)
 	       ("url" url)
 	       ("widget" wid-edit widget)))
- :keywords   ("tools" "hypermedia")
+ :keywords   ("hypermedia" "tools")
  :commentary "\
 This package provides an interface to Xesam, a D-Bus based \"eXtEnsible
 Search And Metadata specification\".  It has been tested with

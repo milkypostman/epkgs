@@ -5,7 +5,7 @@
  :maintainer ("Harley Gorrell" . "harley@mahalito.net")
  :provided   (osx-itunes)
  :required   ((("osx-osascript" osx-osascript)))
- :keywords   ("osx" "osascript" "itunes")
+ :keywords   ("itunes" "osascript" "osx")
  :commentary "\
 * Now I dont have to touch a mouse to fiddle with itunes.
    Handy when you are remotely logged into the machine,

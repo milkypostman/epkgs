@@ -2,14 +2,13 @@
  :created    "20101018"
  :updated    "20110208"
  :license    "GPL-3"
- :authors    (("Matthew Fidler")
-	      ("Nathaniel Cunningham"))
+ :authors    (("Matthew Fidler, Nathaniel Cunningham"))
  :maintainer ("Matthew L. Fidler")
  :provided   (tabbar-ruler)
  :required   ((("cl" cl)
 	       ("easymenu" easymenu)
 	       ("emhacks" tabbar)))
- :keywords   ("tabbar" "ruler" "mode" "menu" "tool")
+ :keywords   ("menu" "ruler mode" "tabbar")
  :commentary "\
 Tabbar appearance based on reverse engineering Aquaemacs code and
 changing to my preferences, and Emacs Wiki.

@@ -15,7 +15,7 @@
 	       ("gnus" format-spec sasl)
 	       ("xml" xml)
 	       ("zeroconf" zeroconf)))
- :keywords   ("rudel" "collaboration")
+ :keywords   ("collaboration" "rudel")
  :homepage   "http://rudel.sourceforge.net/"
  :wikipage   "http://www.emacswiki.org/Rudel"
  :commentary "\

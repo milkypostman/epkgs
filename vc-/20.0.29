@@ -5,7 +5,7 @@
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")
  :provided   (vc-)
- :keywords   ("internal" "tools" "unix" "local")
+ :keywords   ("internal" "local" "tools" "unix")
  :commentary "\
 Extensions to `vc.el'.
 

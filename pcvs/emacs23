@@ -6,7 +6,7 @@
  :required   ((("add-log" add-log)
 	       ("cl" cl)
 	       ("ewoc" ewoc)))
- :keywords   ("cvs" "version" "control" "release" "management")
+ :keywords   ("cvs" "release management" "version control")
  :commentary "\
 PCL-CVS is a front-end to the CVS version control system.  For people
 familiar with VC, it is somewhat like VC-dired: it presents the status of

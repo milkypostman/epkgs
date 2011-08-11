@@ -11,5 +11,5 @@
 	       ("iimage" iimage)
 	       ("org-mode" org)
 	       ("uuidgen" uuidgen)))
- :keywords   ("tools" "hypermedia")
+ :keywords   ("hypermedia" "tools")
  :homepage   "https://github.com/dto/folio.git")

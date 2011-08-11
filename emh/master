@@ -10,5 +10,5 @@
  :required   ((("apel" emu)
 	       ("mh-e" mh-comp mh-e)
 	       ("semi" mime-bbdb mime-edit mime-view semi-setup)))
- :keywords   ("mh" "mime" "multimedia" "encoded-word" "multilingual" "mail")
+ :keywords   ("encoded-word" "mail" "mh" "mime" "multilingual" "multimedia")
  :homepage   "http://www.kanji.zinbun.kyoto-u.ac.jp/~tomo/lemi/")

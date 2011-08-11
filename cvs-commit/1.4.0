@@ -10,7 +10,7 @@
 	       ("log-edit" log-edit)
 	       ("vc" vc vc-hooks)
 	       (nil cvs-diff)))
- :keywords   ("cvs" "commit")
+ :keywords   ("commit" "cvs")
  :commentary "\
 cvs-commit.el is a Emacs modification for smarter cvs-commit management.  It
 contains the following features:

@@ -8,7 +8,7 @@
  :required   ((("custom" custom)
 	       ("easymenu" easymenu)
 	       ("outline" outline)))
- :keywords   ("todo" "todo" "project" "management")
+ :keywords   ("project management" "todo")
  :homepage   "http://www.mulix.org/code.html"
  :wikipage   "http://www.emacswiki.org/ToDoo"
  :commentary "\

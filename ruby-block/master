@@ -6,6 +6,6 @@
  :maintainer ("khiker" . "khiker.mail+elisp@gmail.com")
  :provided   (ruby-block)
  :required   ((("ruby-mode" ruby-mode)))
- :keywords   ("languages" "faces" "ruby")
+ :keywords   ("faces" "languages" "ruby")
  :homepage   "http://www.emacswiki.org/RubyBlockMode"
  :wikipage   "http://www.emacswiki.org/RubyBlockMode")

@@ -4,7 +4,7 @@
  :authors    (("Harley Gorrell" . "harley@mahalito.net"))
  :maintainer ("Harley Gorrell" . "harley@mahalito.net")
  :provided   (osx-osascript)
- :keywords   ("osx" "osascript" "applescript")
+ :keywords   ("applescript" "osascript" "osx")
  :commentary "\
 * run applescript from Emacs via osascript
 * This is not an applescript mode.

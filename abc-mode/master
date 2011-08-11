@@ -7,7 +7,7 @@
  :provided   (abc-mode)
  :required   ((("custom" cus-face)
 	       ("easymenu" easymenu)))
- :keywords   ("local" "docs")
+ :keywords   ("docs" "local")
  :wikipage   "http://www.emacswiki.org/AbcMode"
  :commentary "\
 A major mode for editing abc music files.  Includes some abc2midi

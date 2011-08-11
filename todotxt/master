@@ -3,9 +3,7 @@
  :created    "2011"
  :updated    "2011"
  :license    "GPL-3"
- :authors    (("Rick Dillon" . "rpdillon@etherplex.org")
-	      ("Rick Dillon")
-	      ("all rights reserved."))
+ :authors    (("Rick Dillon" . "rpdillon@etherplex.org"))
  :maintainer ("Rick Dillon" . "rpdillon@etherplex.org")
  :provided   (todotxt)
  :keywords   ("todotxt")

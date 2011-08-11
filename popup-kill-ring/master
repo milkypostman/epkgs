@@ -8,7 +8,7 @@
  :required   ((("cl" cl)
 	       ("popup" popup)
 	       ("pos-tip" pos-tip)))
- :keywords   ("popup" "kill-ring" "pos-tip")
+ :keywords   ("kill-ring" "popup" "pos-tip")
  :commentary "\
 Manage your `kill-ring' (select and paste).
 

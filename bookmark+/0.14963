@@ -2,8 +2,7 @@
  :created    "20000915"
  :updated    "20110801"
  :license    "GPL-3"
- :authors    (("Drew Adams")
-	      ("Thierry Volpiatto"))
+ :authors    (("Drew Adams, Thierry Volpiatto"))
  :provided   (bookmark+ bookmark+-1 bookmark+-bmu bookmark+-chg bookmark+-doc bookmark+-key bookmark+-lit bookmark+-mac)
  :required   ((("bookmark" bookmark)
 	       ("browse-url" browse-url)
@@ -27,7 +26,7 @@
 	       ("image-mode" image-mode)
 	       ("linkd" linkd)
 	       ("pp+" pp+)))
- :keywords   ("bookmarks" "placeholders" "annotations" "search" "info" "url" "gnus")
+ :keywords   ("annotations" "bookmarks" "gnus" "info" "placeholders" "search" "url")
  :homepage   "http://www.emacswiki.org/BookmarkPlus"
  :wikipage   "http://www.emacswiki.org/BookmarkPlus"
  :commentary "\

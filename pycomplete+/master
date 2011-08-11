@@ -3,7 +3,7 @@
  :provided   (pycomplete+)
  :required   ((("pymacs" pymacs)
 	       ("python-mode" python-mode)))
- :keywords   ("python" "complete" "completion")
+ :keywords   ("complete" "completion" "python")
  :commentary "\
 Replace pycomplete.el included in python-mode with this file, then you'll
 have a more intelligent python code completion.")

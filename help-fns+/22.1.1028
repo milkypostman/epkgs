@@ -13,7 +13,7 @@
 	       ("image-dired" image-dired)
 	       ("wid-edit+" wid-edit+)
 	       (nil finder-inf)))
- :keywords   ("help" "faces")
+ :keywords   ("faces" "help")
  :commentary "\
 Extensions to `help-fns.el'.  Also includes a redefinition of
    `describe-face', which is from `faces.el'.

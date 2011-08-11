@@ -7,7 +7,7 @@
  :provided   (shell-completion)
  :required   ((("cl" cl)
 	       ("comint" comint)))
- :keywords   ("completion" "shell")
+ :keywords   ("completion" "emacs" "shell")
  :commentary "\
 Put this file into your load-path and the following into your ~/.emacs:
 (require 'shell-completion)

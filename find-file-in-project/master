@@ -3,12 +3,10 @@
  :created    "20080318"
  :updated    "2009"
  :license    "GPL-3"
- :authors    (("Phil Hagelberg")
-	      ("Doug Alcorn")
-	      ("and Will Farrington"))
- :maintainer ("Phil Hagelberg")
+ :authors    (("Phil Hagelberg, Doug Alcorn, and Will Farrington"))
+ :maintainer ("Phil Hagelberg, Doug Alcorn, and Will Farrington")
  :provided   (find-file-in-project)
- :keywords   ("project" "convenience")
+ :keywords   ("convenience" "project")
  :homepage   "https://github.com/technomancy/find-file-in-project"
  :wikipage   "http://www.emacswiki.org/FindFileInProject"
  :commentary "\

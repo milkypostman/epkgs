@@ -5,7 +5,7 @@
  :authors    (("Will Mengarini" . "seldon@eskimo.com"))
  :maintainer ("Will Mengarini" . "seldon@eskimo.com")
  :provided   (repeat)
- :keywords   ("convenience" "vi" "repeat")
+ :keywords   ("convenience" "repeat" "vi")
  :commentary "\
 Sometimes the fastest way to get something done is just to lean on a key;
 moving forward through a series of words by leaning on M-f is an example.

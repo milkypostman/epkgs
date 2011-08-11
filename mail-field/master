@@ -5,7 +5,7 @@
  :authors    ((nil . "kevin davidson tkld@quadstone.com"))
  :maintainer (nil . "kevin davidson tkld@quadstone.com")
  :provided   (mail-field)
- :keywords   ("mail" "message" "fields")
+ :keywords   ("fields" "mail" "message")
  :homepage   "http://www.emacswiki.org/MailField"
  :wikipage   "http://www.emacswiki.org/MailField"
  :commentary "\

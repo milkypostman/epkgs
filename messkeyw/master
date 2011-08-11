@@ -4,7 +4,7 @@
  :license    "GPL-2"
  :provided   (messkeyw)
  :required   ((("cl" cl)))
- :keywords   ("mail" "news" "keywords")
+ :keywords   ("keywords" "mail" "news")
  :commentary "\
 This provides a hookable mechanism by which to have Keywords
 headers automatically generated based on word frequency of the

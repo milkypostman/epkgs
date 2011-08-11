@@ -9,7 +9,7 @@
 	       ("repeat" repeat)
 	       ("thingatpt" thingatpt))
 	      (("thingatpt+" thingatpt+)))
- :keywords   ("thingatpt" "thing" "region" "selection")
+ :keywords   ("region" "selection" "thing" "thingatpt")
  :homepage   "http://www.emacswiki.org/ThingAtPointCommands"
  :wikipage   "http://www.emacswiki.org/ThingAtPointCommands"
  :commentary "\

@@ -3,11 +3,9 @@
  :created    "2009"
  :updated    "2009"
  :license    "GPL"
- :authors    (("David Aspinall")
-	      ("Yves Bertot")
-	      ("Healfdene Goguen,")
+ :authors    (("David Aspinall, Yves Bertot, Healfdene Goguen,")
 	      ("Thomas Kleymann and Dilip Sequeira"))
- :maintainer ("David Aspinall")
+ :maintainer ("David Aspinall, Yves Bertot, Healfdene Goguen,")
  :provided   (acl2 bufhist coq coq-abbrev coq-db coq-indent coq-local-vars coq-mmm coq-syntax coq-unicode-tokens hol-light hol98 holes isabelle-system isar isar-find-theorems isar-keywords isar-mmm isar-syntax isar-unicode-tokens lego lego-syntax local-vars-list pg-assoc pg-autotest pg-custom pg-dev pg-fontsets pg-goals pg-movie pg-pamacs pg-pbrpm pg-pgip pg-pgip-test pg-response pg-test pg-user pg-vars pg-xml pgshell phox phox-extraction phox-font phox-fun phox-lang phox-outline phox-pbrpm phox-sym-lock phox-tags proof proof-autoloads proof-auxmodes proof-compat proof-config proof-depends proof-easy-config proof-faces proof-indent proof-maths-menu proof-menu proof-mmm proof-script proof-shell proof-site proof-splash proof-syntax proof-toolbar proof-unicode-tokens proof-useropts proof-utils scomint span twelf twelf-font twelf-old unicode-chars unicode-tokens)
  :required   ((("cl" cl)
 	       ("comint" comint)

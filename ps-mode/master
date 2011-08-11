@@ -6,5 +6,5 @@
  :maintainer ("Peter Kleiweg" . "p.c.j.kleiweg@rug.nl")
  :provided   (ps-mode)
  :required   ((("easymenu" easymenu)))
- :keywords   ("postscript" "languages")
+ :keywords   ("languages" "postscript")
  :homepage   "http://odur.let.rug.nl/~kleiweg/postscript/postscript.html")

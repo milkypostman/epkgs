@@ -3,5 +3,5 @@
  :updated    "2004"
  :license    "GPL-2"
  :provided   (beatnik-mode)
- :keywords   ("esoterica" "beatnik" "version")
+ :keywords   ("beatnik" "esoterica")
  :homepage   "http://zaaf.nl/emacs/emacs.html")

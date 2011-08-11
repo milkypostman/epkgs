@@ -6,7 +6,7 @@
  :authors    (("kentaro" . "kentarok@gmail.com"))
  :maintainer ("kentaro" . "kentarok@gmail.com")
  :provided   (taskpaper)
- :keywords   ("tools" "task")
+ :keywords   ("task" "tools")
  :homepage   "https://github.com/jonasoberschweiber/taskpaper-el"
  :commentary "\
 * Install

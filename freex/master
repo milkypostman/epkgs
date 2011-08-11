@@ -2,9 +2,8 @@
  :created    "2007"
  :updated    "2007"
  :license    "GPL-2"
- :authors    (("Per B. Sederberg")
-	      ("Greg Detre"))
- :maintainer ("Per B. Sederberg")
+ :authors    (("Per B. Sederberg, Greg Detre"))
+ :maintainer ("Per B. Sederberg, Greg Detre")
  :provided   (freex freex-embed freex-fontify freex-hiert freex-meta freex-mode freex-timestamp freex-xml version-info)
  :required   ((("emacs-core" font-lock)))
  :keywords   ("hypermedia")

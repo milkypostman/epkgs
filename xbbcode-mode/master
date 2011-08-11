@@ -2,5 +2,5 @@
  :updated    "2009"
  :license    "GPL-3"
  :provided   (xbbcode-mode)
- :keywords   ("bbcode" "php" "lightweight" "markup")
+ :keywords   ("bbcode" "lightweight markup" "php")
  :homepage   "http://xahlee.org/emacs/xbbcode-mode.html")

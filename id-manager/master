@@ -6,7 +6,7 @@
  :provided   (id-manager)
  :required   ((("cl" cl)
 	       ("widget" wid-edit widget)))
- :keywords   ("password" "convenience")
+ :keywords   ("convenience" "password")
  :homepage   "https://github.com/kiwanami/emacs-id-manager"
  :commentary "\
 ID-password management utility.

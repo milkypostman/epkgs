@@ -6,7 +6,7 @@
  :maintainer ("Ulrik Vieth" . "vieth@thphy.uni-duesseldorf.de")
  :provided   (meta-mode)
  :required   ((("easymenu" easymenu)))
- :keywords   ("metafont" "metapost" "tex" "languages")
+ :keywords   ("languages" "metafont" "metapost" "tex")
  :commentary "\
 Description:
 

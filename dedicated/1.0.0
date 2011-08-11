@@ -5,7 +5,7 @@
  :authors    (("Eric Crampton" . "eric@atdesk.com"))
  :maintainer ("Eric Crampton" . "eric@atdesk.com")
  :provided   (dedicated)
- :keywords   ("dedicated" "buffer")
+ :keywords   ("buffer" "dedicated")
  :commentary "\
 This minor mode allows you to toggle a window's \"dedicated\" flag.
 When a window is \"dedicated\", Emacs will not select files into that

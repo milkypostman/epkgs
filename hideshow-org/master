@@ -4,7 +4,7 @@
  :license    "GPL-2"
  :provided   (hideshow-org)
  :required   ((("hideshow" hideshow)))
- :keywords   ("c" "java" "lisp" "tools" "editing" "comments" "blocks" "hide" "outlines" "org-mode" "files" "part" "gnu")
+ :keywords   ("blocks" "c" "comments" "editing" "hide" "java" "lisp" "org-mode" "outlines" "tools")
  :homepage   "https://github.com/secelis/hideshow-org"
  :commentary "\
 hideshow-org.el provides an org-mode like interface to the

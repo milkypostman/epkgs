@@ -7,7 +7,7 @@
  :provided   (couchdb)
  :required   ((("json" json)
 	       ("url" url)))
- :keywords   ("data" "convenience")
+ :keywords   ("convenience" "data")
  :homepage   "http://edward.oconnor.cx/elisp/"
  :commentary "\
 Prety basic, bare-bones CouchDb client library for Emacs Lisp.

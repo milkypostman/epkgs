@@ -10,7 +10,7 @@
 	      (("fit-frame" fit-frame)
 	       ("frame-cmds" frame-cmds)
 	       ("zoom-frm" zoom-frm)))
- :keywords   ("local" "frames")
+ :keywords   ("frames" "local")
  :homepage   "http://www.emacswiki.org/OneOnOneEmacs"
  :wikipage   "http://www.emacswiki.org/OneOnOneEmacs"
  :commentary "\

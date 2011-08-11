@@ -3,7 +3,7 @@
  :updated    "2009"
  :license    "GPL-2"
  :provided   (multiselect)
- :keywords   ("user" "gui" "files" "part")
+ :keywords   ("gui" "user")
  :homepage   "http://www.skamphausen.de/cgi-bin/ska/multiselect"
  :commentary "\
 Select non-contiguous regions or lines and later insert the

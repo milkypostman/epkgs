@@ -8,7 +8,7 @@
  :provided   (skype)
  :required   ((("cl" cl)
 	       ("dbus" dbus)))
- :keywords   ("skype" "chat")
+ :keywords   ("chat" "skype")
  :homepage   "https://github.com/kiwanami/emacs-skype"
  :commentary "\
 Improving Skype GUI.

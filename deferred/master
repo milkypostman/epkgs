@@ -8,7 +8,7 @@
  :provided   (concurrent deferred)
  :required   ((("cl" cl)
 	       ("emacs-core" pp)))
- :keywords   ("deferred" "async")
+ :keywords   ("async" "deferred")
  :homepage   "https://github.com/kiwanami/emacs-deferred"
  :wikipage   "http://www.emacswiki.org/DeferredTask"
  :commentary "\

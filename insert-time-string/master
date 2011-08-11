@@ -3,7 +3,7 @@
  :license    "GPL-3"
  :authors    (("Kevin Rodgers" . "kevin.d.rodgers@gmail.com"))
  :maintainer ("Kevin Rodgers" . "kevin.d.rodgers@gmail.com")
- :keywords   ("time" "date" "convenience")
+ :keywords   ("convenience" "date" "time")
  :commentary "\
 Usage:
 M-x insert-time-string

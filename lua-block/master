@@ -6,7 +6,7 @@
  :maintainer ("khiker" . "khiker.mail+elisp@gmail.com")
  :provided   (lua-block)
  :required   ((("lua-mode" lua-mode)))
- :keywords   ("languages" "faces" "lua")
+ :keywords   ("faces" "languages" "lua")
  :homepage   "http://www.emacswiki.org/LuaBlockMode"
  :wikipage   "http://www.emacswiki.org/LuaBlockMode"
  :commentary "\

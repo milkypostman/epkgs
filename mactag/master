@@ -6,7 +6,7 @@
  :authors    (("Johan Andersson" . "johan.rejeep@gmail.com"))
  :maintainer ("Johan Andersson" . "johan.rejeep@gmail.com")
  :provided   (mactag)
- :keywords   ("speed" "convenience")
+ :keywords   ("convenience" "speed")
  :homepage   "https://github.com/rejeep/mactag.el"
  :commentary "\
 If your web application is running Rails 3, you can use the Mactag

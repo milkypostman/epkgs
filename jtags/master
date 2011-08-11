@@ -8,5 +8,5 @@
  :provided   (jtags)
  :required   ((("cl" cl)
 	       ("etags" etags)))
- :keywords   ("java" "tags" "etags")
+ :keywords   ("etags" "java" "tags")
  :homepage   "http://jtags.sourceforge.net/")

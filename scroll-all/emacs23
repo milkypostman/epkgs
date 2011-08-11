@@ -5,7 +5,7 @@
  :authors    (("Gary D. Foster" . "gary.foster@corp.sun.com"))
  :maintainer ("Gary D. Foster" . "gary.foster@corp.sun.com")
  :provided   (scroll-all)
- :keywords   ("scroll" "crisp" "brief" "lock")
+ :keywords   ("brief" "crisp" "lock" "scroll")
  :wikipage   "http://www.emacswiki.org/ScrollAllMode"
  :commentary "\
 This mode allows multiple buffers to be 'locked' so that scrolling

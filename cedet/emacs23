@@ -36,6 +36,6 @@
 	       ("tramp" tramp)
 	       ("widget" wid-edit widget)
 	       (nil db-typecache)))
- :keywords   ("oo" "lisp")
+ :keywords   ("lisp" "oo")
  :homepage   "http://cedet.sourceforge.net/"
  :wikipage   "http://www.emacswiki.org/CollectionOfEmacsDevelopmentEnvironmentTools")

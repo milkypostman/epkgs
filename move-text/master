@@ -1,10 +1,7 @@
 (:created    "2009"
  :updated    "2009"
  :license    "GPL-3"
- :authors    (("Jason M" . "jasonm23@gmail.com")
-	      ("Extracted from basic-edit-toolkit.el by Andy Stewart.")
-	      ("Andy Stewart")
-	      ("all rights reserved."))
+ :authors    (("Jason M" . "jasonm23@gmail.com"))
  :maintainer ("Jason M" . "jasonm23@gmail.com")
  :provided   (move-text)
  :keywords   ("edit")

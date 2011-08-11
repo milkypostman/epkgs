@@ -6,5 +6,5 @@
  :maintainer ("Art Taylor")
  :provided   (levenshtein)
  :required   ((("cl" cl)))
- :keywords   ("levenshtein" "string" "edit" "distance")
+ :keywords   ("levenshtein" "string edit distance")
  :wikipage   "http://www.emacswiki.org/LevenshteinDistance")

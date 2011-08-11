@@ -6,7 +6,7 @@
  :authors    (("Thomas Kappler" . "tkappler@gmail.com"))
  :maintainer ("Thomas Kappler" . "tkappler@gmail.com")
  :provided   (h2o)
- :keywords   ("lisp" "help" "readme" "orgmode" "header" "documentation" "github")
+ :keywords   ("documentation" "github" "header" "help" "lisp" "orgmode" "readme")
  :homepage   "https://github.com/punchagan/h2o"
  :commentary "\
 The git-based source code hosting site <http://github.com> has

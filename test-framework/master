@@ -7,7 +7,7 @@
  :required   ((("advice" advice)
 	       ("cl" cl)
 	       ("emacs-core" warnings)))
- :keywords   ("unit" "testing")
+ :keywords   ("testing" "unit")
  :homepage   "https://github.com/epsilon47/test-framework.el"
  :commentary "\
 This file provides assertions, tests, suites, fixtures,

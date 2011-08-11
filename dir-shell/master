@@ -4,7 +4,7 @@
  :maintainer ("Phillip Lord" . "p.lord@russet.org.uk")
  :provided   (dir-shell)
  :required   ((("shell" shell)))
- :keywords   ("shell" "working" "directory")
+ :keywords   ("shell" "working directory")
  :homepage   "http://homepages.cs.ncl.ac.uk/phillip.lord/emacs.html"
  :commentary "\
 The package provides a variety of different ways to interact with

@@ -2,9 +2,8 @@
  :repository (git . "https://github.com/kiwanami/emacs-anything-fpr.git")
  :updated    "20090219"
  :license    "GPL-2"
- :authors    (("SAKURAI")
-	      ("Masashi" . "m.sakurai@kiwanami.net"))
- :maintainer ("SAKURAI")
+ :authors    (("SAKURAI, Masashi" . "m.sakurai@kiwanami.net"))
+ :maintainer ("SAKURAI, Masashi" . "m.sakurai@kiwanami.net")
  :provided   (anything-find-project-resources)
  :required   ((("cl" cl)))
  :keywords   ("anything" "files" "project")

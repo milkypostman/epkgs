@@ -6,7 +6,7 @@
  :provided   (anything-netscape-bookmark)
  :required   ((("anything" anything)
 	       ("cl" cl)))
- :keywords   ("url" "bookmark" "browse" "netscape")
+ :keywords   ("bookmark" "browse" "netscape" "url")
  :homepage   "https://github.com/tm8st/emacs-anything-netscape-bookmark"
  :commentary "\
 Chromeなどのブラウザからエクスポートしたブックマークファイルの内容を、

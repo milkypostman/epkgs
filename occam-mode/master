@@ -3,7 +3,7 @@
  :authors    (("Jesper Larsson Traff")
 	      ("Jared C. Saia" . "saia@itl.atr.co.jp")
 	      ("Phil Nitschke" . "phil@mrad.com.au"))
- :keywords   ("occam" "languages")
+ :keywords   ("languages" "occam")
  :homepage   "http://wotug.org/tools.shtml"
  :wikipage   "http://www.emacswiki.org/OccamMode"
  :commentary "\

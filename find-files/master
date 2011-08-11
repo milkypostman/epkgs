@@ -5,5 +5,5 @@
  :authors    (("Robert Fenk"))
  :maintainer ("Robert Fenk")
  :provided   (find-files)
- :keywords   ("find-file" "glob" "patternconvenience")
+ :keywords   ("convenience " "find-file" "glob pattern")
  :homepage   "http://www.robf.de/Hacking/elisp/")

@@ -10,5 +10,5 @@
 	       ("emacs-core" font-lock overlay)
 	       ("grep" grep)
 	       ("iimage" iimage)))
- :keywords   ("recipes" "convenience")
+ :keywords   ("convenience" "recipes")
  :homepage   "https://github.com/sshelagh/recipe-mode")

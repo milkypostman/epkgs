@@ -2,8 +2,6 @@
  :created    "2011"
  :updated    "2011"
  :license    "GPL-3"
- :authors    (("but please"))
- :maintainer ("but please")
  :provided   (fud gimp-mode)
  :required   ((("cl" cl)
 	       ("cmuscheme" cmuscheme)
@@ -13,7 +11,7 @@
 	       ("scheme-complete" scheme-complete)
 	       ("snippet" snippet)
 	       ("thingatpt" thingatpt)))
- :keywords   ("processes" "multimedia" "extensions" "tools" "gimp" "scheme")
+ :keywords   ("extensions" "gimp" "multimedia" "processes" "scheme" "tools")
  :homepage   "http://niels.kicks-ass.org/gimpmode"
  :wikipage   "http://www.emacswiki.org/GimpMode"
  :commentary "\

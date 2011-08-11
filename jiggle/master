@@ -7,7 +7,7 @@
  :provided   (jiggle)
  :required   ((("advice" advice)
 	       ("cl" cl)))
- :keywords   ("frames" "hardware" "jiggle" "cursor" "shake")
+ :keywords   ("cursor" "frames" "hardware" "jiggle" "shake")
  :homepage   "http://www.eskimo.com/~seldon/"
  :commentary "\
 When small fonts are used to pack a maximum amount of text onto the

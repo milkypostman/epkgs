@@ -5,7 +5,7 @@
  :authors    (("Dave Love" . "fx@gnu.org"))
  :maintainer ("Dave Love" . "fx@gnu.org")
  :provided   (benchmark)
- :keywords   ("lisp" "extensions")
+ :keywords   ("extensions" "lisp")
  :homepage   "http://quimby.gnus.org/elisp/"
  :commentary "\
 Utilities for timing the execution of forms, including the time

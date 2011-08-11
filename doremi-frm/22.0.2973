@@ -16,7 +16,7 @@
 	       ("frame-cmds" frame-cmds)
 	       ("palette" palette)
 	       ("strings" strings)))
- :keywords   ("frames" "extensions" "convenience" "keys" "repeat" "cycle")
+ :keywords   ("convenience" "cycle" "extensions" "frames" "keys" "repeat")
  :commentary "\
 Do Re Mi commands to incrementally adjust face attributes and
    frame parameters using arrow keys or mouse wheel.

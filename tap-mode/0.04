@@ -5,7 +5,7 @@
  :authors    (("Steffen Schwigon" . "ss5@renormalist.net"))
  :maintainer ("Steffen Schwigon" . "ss5@renormalist.net")
  :provided   (tap-mode)
- :keywords   ("testing" "tap")
+ :keywords   ("tap" "testing")
  :homepage   "https://github.com/renormalist/emacs-tap-mode"
  :commentary "\
 This mode is built with help of the \"Emacs language mode creation

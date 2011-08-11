@@ -6,7 +6,7 @@
  :maintainer ("Drew Adams")
  :provided   (col-highlight)
  :required   ((("vline" vline)))
- :keywords   ("faces" "frames" "emulation" "highlight" "cursor" "accessibility")
+ :keywords   ("accessibility" "cursor" "emulation" "faces" "frames" "highlight")
  :commentary "\
 This library highlights the current column.  When you move the
  cursor, the highlighting follows (tracks the cursor), as long as

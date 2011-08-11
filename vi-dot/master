@@ -7,7 +7,7 @@
  :provided   (vi-dot)
  :required   ((("advice" advice)
 	       ("cl" cl)))
- :keywords   ("abbrev" "vi" "dot" "universal" "argument" "typematic" "repeat")
+ :keywords   ("abbrev" "dot" "repeat" "typematic" "universal argument" "vi")
  :homepage   "http://www.eskimo.com/~seldon/"
  :commentary "\
 Sometimes the fastest way to get something done is just to lean on a key;

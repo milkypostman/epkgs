@@ -6,7 +6,7 @@
  :provided   (smarty-mode)
  :required   ((("emacs-core" font-lock)
 	       ("regexp-opt" regexp-opt)))
- :keywords   ("smarty" "php" "languages" "templates")
+ :keywords   ("languages" "php" "smarty" "templates")
  :wikipage   "http://www.emacswiki.org/SmartyMode"
  :commentary "\
 Smarty-mode is for highlighting html templates written for the smarty

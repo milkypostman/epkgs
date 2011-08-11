@@ -3,14 +3,12 @@
  :created    "20100309"
  :updated    "2010"
  :license    "GPL-3"
- :authors    (("Eric Kidd")
-	      ("Phil Hagelberg")
-	      ("Eric Schulte"))
- :maintainer ("Eric Kidd")
+ :authors    (("Eric Kidd, Phil Hagelberg, Eric Schulte"))
+ :maintainer ("Eric Kidd, Phil Hagelberg, Eric Schulte")
  :provided   (sinasi)
  :required   ((("cl" cl)
 	       ("jump" jump)))
- :keywords   ("sproutcore" "project")
+ :keywords   ("project" "sproutcore")
  :homepage   "https://github.com/emk/sinasi"
  :commentary "\
 Sinasi Is Not A SproutCore IDE

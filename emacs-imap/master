@@ -6,4 +6,4 @@
  :provided   (emacs-imap)
  :required   ((("gnus" imap message qp)
 	       ("timezone" timezone)))
- :keywords   ("mail" "version"))
+ :keywords   ("mail"))

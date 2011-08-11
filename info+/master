@@ -13,7 +13,7 @@
 	       ("strings" strings)
 	       ("thingatpt" thingatpt)
 	       ("thingatpt+" thingatpt+)))
- :keywords   ("help" "docs" "internal")
+ :keywords   ("docs" "help" "internal")
  :homepage   "http://www.emacswiki.org/InfoPlus"
  :wikipage   "http://www.emacswiki.org/InfoPlus"
  :commentary "\

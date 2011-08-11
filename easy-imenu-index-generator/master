@@ -4,7 +4,7 @@
  :updated    "2010"
  :license    "GPL-2"
  :provided   (easy-imenu-index-generator easy-imenu-index-generator-config)
- :keywords   ("convenience" "imenu" "easy")
+ :keywords   ("convenience" "easy" "imenu")
  :homepage   "https://github.com/tm8st/emacs-easy-imenu-index-generator"
  :commentary "\
 imenuのインデックス生成処理を書くのが億劫な場合に、

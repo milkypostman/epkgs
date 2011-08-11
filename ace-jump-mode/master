@@ -7,5 +7,5 @@
  :maintainer ("winterTTr" . "winterttr@gmail.com")
  :provided   (ace-jump-mode)
  :required   ((("cl" cl)))
- :keywords   ("motion" "location" "cursor")
+ :keywords   ("cursor" "location" "motion")
  :homepage   "https://github.com/winterTTr/ace-jump-mode")

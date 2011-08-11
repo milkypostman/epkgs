@@ -4,7 +4,7 @@
  :license    "GPL-3"
  :authors    (("Philippe Schnoebelen" . "phs@lsv.ens-cachan.fr"))
  :maintainer ("FSF")
- :adapted-by ("ESR")
+ :adapted-by ("ESR, Daniel Pfeiffer" . "occitan@esperanto.org")
  :provided   (gomoku)
  :keywords   ("games")
  :commentary "\

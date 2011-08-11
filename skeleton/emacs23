@@ -5,7 +5,7 @@
  :authors    (("Daniel Pfeiffer" . "occitan@esperanto.org"))
  :maintainer ("FSF")
  :provided   (skeleton)
- :keywords   ("extensions" "abbrev" "languages" "tools")
+ :keywords   ("abbrev" "extensions" "languages" "tools")
  :wikipage   "http://www.emacswiki.org/SkeletonMode"
  :commentary "\
 A very concise language extension for writing structured statement

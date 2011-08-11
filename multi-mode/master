@@ -8,7 +8,7 @@
  :required   ((("advice" advice)
 	       ("emacs-core" font-lock)
 	       ("imenu" imenu)))
- :keywords   ("languages" "extensions" "files")
+ :keywords   ("extensions" "files" "languages")
  :homepage   "http://www.loveshack.ukfsn.org/emacs/"
  :commentary "\
 This is a framework for a sort of meta mode which provides support

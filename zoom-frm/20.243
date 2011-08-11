@@ -6,7 +6,7 @@
  :maintainer ("Drew Adams")
  :provided   (zoom-frm)
  :required   ((("frame-cmds" frame-cmds)))
- :keywords   ("frames" "extensions" "convenience")
+ :keywords   ("convenience" "extensions" "frames")
  :commentary "\
 Commands to zoom font size.
 

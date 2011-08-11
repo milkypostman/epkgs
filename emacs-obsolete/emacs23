@@ -11,7 +11,7 @@
 	       ("sendmail" sendmail)
 	       ("supercite" supercite)
 	       ("vc" vc vc-cvs)))
- :keywords   ("unix" "languages")
+ :keywords   ("languages" "unix")
  :commentary "\
 This file has been obsolete since Emacs 22.1.
 

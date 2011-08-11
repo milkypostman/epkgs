@@ -8,7 +8,7 @@
  :required   (nil
 	      (("fit-frame" fit-frame)
 	       ("frame-fns" frame-fns)))
- :keywords   ("tools" "processes")
+ :keywords   ("processes" "tools")
  :commentary "\
 Extensions to `compile.el'.
 

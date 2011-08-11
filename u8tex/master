@@ -2,7 +2,7 @@
  :created    "2000"
  :updated    "20001208"
  :license    "GPL-2"
- :keywords   ("mule" "multilingual" "unicode" "input" "method" "tex")
+ :keywords   ("input method" "mule" "multilingual" "tex" "unicode")
  :commentary "\
 This file is intended for use with Markus Kuhn's Unicode fonts,
 see <http://www.cl.cam.ac.uk/~mgk25/unicode.html>, and the

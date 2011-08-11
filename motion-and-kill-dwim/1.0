@@ -5,7 +5,7 @@
  :authors    (("Scott Frazer" . "frazer.scott@gmail.com"))
  :maintainer ("Scott Frazer" . "frazer.scott@gmail.com")
  :provided   (motion-and-kill-dwim)
- :keywords   ("motion" "kill" "dwim")
+ :keywords   ("dwim" "kill" "motion")
  :commentary "\
 A set of motion and kill do-what-I-mean commands.
 

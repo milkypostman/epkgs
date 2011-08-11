@@ -7,7 +7,7 @@
  :provided   (xml-stream)
  :required   ((("xml" xml)
 	       ("xml-event" xml-event)))
- :keywords   ("comm" "tools" "processes")
+ :keywords   ("comm" "processes" "tools")
  :homepage   "http://edward.oconnor.cx/elisp/"
  :commentary "\
 See <URL:http://etherx.jabber.org/streams/> for more about simple

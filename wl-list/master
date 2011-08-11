@@ -3,6 +3,7 @@
  :updated    "2003"
  :license    "GPL-2"
  :authors    (("Zajcev Evgeny" . "zevlg@yandex.ru"))
+ :maintainer ("none, mail me if you want to maintain this code.")
  :provided   (wl-list)
  :keywords   ("hypermedia")
  :commentary "\

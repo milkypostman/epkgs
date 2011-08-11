@@ -5,7 +5,7 @@
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")
  :provided   (diff-mode-)
- :keywords   ("data" "matching" "tools" "unix" "local" "font" "face")
+ :keywords   ("data" "face" "font" "local" "matching" "tools" "unix")
  :homepage   "http://www.emacswiki.org/DiffMode"
  :wikipage   "http://www.emacswiki.org/DiffMode"
  :commentary "\

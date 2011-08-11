@@ -13,7 +13,7 @@
 	       ("imenu" imenu)
 	       ("skeleton" skeleton)
 	       ("tempo" tempo)))
- :keywords   ("aplac" "syntax" "simulator" "netlist")
+ :keywords   ("aplac" "netlist" "simulator" "syntax")
  :homepage   "http://spice-mode.4t.com/"
  :commentary "\
 This major mode for emacs provides support for editing APLAC   

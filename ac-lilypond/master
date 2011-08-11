@@ -6,7 +6,7 @@
  :maintainer ("Shelagh Manton" . "shelagh.manton@gmail.com")
  :provided   (ac-lilypond)
  :required   ((("auto-complete" auto-complete)))
- :keywords   ("lilypond" "auto-completion" "convenience")
+ :keywords   ("auto-completion" "convenience" "lilypond")
  :commentary "\
 A file to set up the use of LilyPond with auto-complete which can be found
 at http://www.cx4a.org/pub/auto-complete.el

@@ -24,7 +24,7 @@
 	       ("twittering-mode" ssl)
 	       ("widget" wid-edit)
 	       (nil ibuf-ext)))
- :keywords   ("irc" "chat" "client" "internet")
+ :keywords   ("chat" "client" "internet" "irc")
  :homepage   "http://savannah.gnu.org/projects/erc/"
  :wikipage   "http://www.emacswiki.org/ERC"
  :commentary "\

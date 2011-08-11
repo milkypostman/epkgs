@@ -3,7 +3,6 @@
  :updated    "1997"
  :license    "GPL-2"
  :authors    (("Andy Norman" . "ange@hplb.hpl.hp.com")
-	      ("originally based on server.el")
 	      ("Hrvoje Niksic" . "hniksic@xemacs.org"))
  :maintainer ("Jan Vroonhof" . "vroonhof@math.ethz.ch")
  :provided   (gnuserv gnuserv-compat)

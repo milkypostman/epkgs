@@ -3,9 +3,8 @@
  :created    "2008"
  :updated    "2008"
  :license    "GPL-3"
- :authors    (("Peter Williams")
-	      ("et al."))
- :maintainer ("Peter Williams")
+ :authors    (("Peter Williams, et al."))
+ :maintainer ("Peter Williams, et al.")
  :provided   (rspec-mode)
  :required   ((("ansi-color" ansi-color)
 	       ("ruby-mode" ruby-mode))

@@ -5,4 +5,4 @@
  :authors    (("Adrian Kubala" . "adrian@sixfingeredman.net"))
  :maintainer ("Adrian Kubala" . "adrian@sixfingeredman.net")
  :provided   (buffer-stack)
- :keywords   ("buffer" "buffers" "switching" "buffers"))
+ :keywords   ("buffer" "buffers" "switching buffers"))

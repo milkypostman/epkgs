@@ -6,6 +6,6 @@
  :provided   (autotest)
  :required   ((("shell" shell))
 	      (("unit-test" unit-test)))
- :keywords   ("testing" "ruby" "convenience")
+ :keywords   ("convenience" "ruby" "testing")
  :commentary "\
 Sets up an autotest buffer and provides convenience methods.")

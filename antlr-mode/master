@@ -10,7 +10,7 @@
 	       ("compile" compile)
 	       ("easymenu" easymenu)
 	       ("emacs-core" font-lock)))
- :keywords   ("languages" "antlr" "code" "generator")
+ :keywords   ("antlr" "code generator" "languages")
  :homepage   "http://antlr-mode.sourceforge.net/"
  :wikipage   "http://www.emacswiki.org/AntlrMode"
  :commentary "\

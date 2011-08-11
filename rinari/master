@@ -3,9 +3,8 @@
  :created    "20061110"
  :updated    "2008"
  :license    "GPL-3"
- :authors    (("Phil Hagelberg")
-	      ("Eric Schulte"))
- :maintainer ("Phil Hagelberg")
+ :authors    (("Phil Hagelberg, Eric Schulte"))
+ :maintainer ("Phil Hagelberg, Eric Schulte")
  :provided   (inf-ruby pcmpl-rake rinari rinari-camps rinari-merb ruby-compilation-rspec)
  :required   ((("cl" cl)
 	       ("comint" comint)
@@ -14,7 +13,7 @@
 	       ("pcomplete" pcomplete)
 	       ("ruby-compilation" ruby-compilation)
 	       ("ruby-mode" ruby-mode)))
- :keywords   ("ruby" "rails" "project" "convenience" "web")
+ :keywords   ("convenience" "project" "rails" "ruby" "web")
  :commentary "\
 Rinari Is Not A Ruby IDE.
 

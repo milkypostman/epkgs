@@ -8,6 +8,6 @@
  :required   ((("custom" cus-edit)
 	       ("emacs-core" autoload pp))
 	      (("emacs-core" byte-compile)))
- :keywords   ("maint" "tools" "internal")
+ :keywords   ("internal" "maint" "tools")
  :homepage   "http://repo.or.cz/w/elinstall.git"
  :wikipage   "http://www.emacswiki.org/elinstall")

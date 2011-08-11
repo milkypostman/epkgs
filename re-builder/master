@@ -4,7 +4,7 @@
  :license    "GPL-2"
  :authors    (("Detlev Zundel" . "detlev.zundel@stud.uni-karlsruhe.de"))
  :maintainer ("Detlev Zundel" . "detlev.zundel@stud.uni-karlsruhe.de")
- :keywords   ("matching" "lisp" "tools")
+ :keywords   ("lisp" "matching" "tools")
  :wikipage   "http://www.emacswiki.org/ReBuilder"
  :commentary "\
 $Id: re-builder.el,v 1.2 2000/01/12 23:39:35 dzu Exp $

@@ -7,7 +7,7 @@
  :maintainer ("Yoshiki Kurihara" . "kurihara@cpan.org")
  :provided   (tx-mode)
  :required   ((("tempo" tempo)))
- :keywords   ("perl" "template" "mode")
+ :keywords   ("mode" "perl" "template")
  :homepage   "https://github.com/yoshiki/tx-mode"
  :commentary "\
 This is a major mode for editing files written in Text::Xslate syntax.

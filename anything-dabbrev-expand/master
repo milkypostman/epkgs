@@ -8,7 +8,7 @@
  :required   ((("anything" anything)
 	       ("dabbrev" dabbrev))
 	      (("anything" anything-show-completion)))
- :keywords   ("dabbrev" "convenience" "anything")
+ :keywords   ("anything" "convenience" "dabbrev")
  :commentary "\
 Dynamic abbrev for multiple selection using `anything', and partial dabbrev.
 This package is tested on Emacs 22.")

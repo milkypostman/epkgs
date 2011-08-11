@@ -4,7 +4,7 @@
  :authors    (("Harley Gorrell" . "harley@mahalito.net"))
  :maintainer ("Harley Gorrell" . "harley@mahalito.net")
  :provided   (ssh-config-mode)
- :keywords   ("ssh" "configuration")
+ :keywords   ("configuration" "emacs" "ssh")
  :commentary "\
 * Fontifys the ssh config keywords.
 * keys for skipping from host section to host section.

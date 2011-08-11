@@ -8,5 +8,5 @@
  :required   ((("bs" bs)
 	       ("rect" rect)
 	       ("view" view)))
- :keywords   ("emulations" "brief")
+ :keywords   ("brief" "emulations")
  :homepage   "http://www.emacs.mirkolinkonline.de/spiele.html")

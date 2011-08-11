@@ -5,7 +5,7 @@
  :authors    (("Holger Schauer" . "holger.schauer@gmx.de"))
  :maintainer ("Holger Schauer" . "holger.schauer@gmx.de")
  :provided   (fortune)
- :keywords   ("games" "utils" "mail")
+ :keywords   ("games" "mail" "utils")
  :wikipage   "http://www.emacswiki.org/Fortune"
  :commentary "\
 This utility allows you to automatically cut regions to a fortune

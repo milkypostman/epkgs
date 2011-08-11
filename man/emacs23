@@ -4,7 +4,7 @@
  :license    "GPL-3"
  :authors    (("Barry A. Warsaw" . "bwarsaw@cen.com"))
  :maintainer ("FSF")
- :adapted-by ("ESR")
+ :adapted-by ("ESR, pot")
  :provided   (man)
  :required   ((("assoc" assoc)
 	       ("button" button)

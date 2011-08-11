@@ -6,5 +6,5 @@
  :maintainer ("Sebastian Tennant" . "sebyte@gmail.com")
  :provided   (eap eap-autoloads eap-dired-keybindings)
  :required   ((("comint" comint)))
- :keywords   ("audio" "player" "ogg")
+ :keywords   ("audio" "ogg" "player")
  :homepage   "http://home.gna.org/eap/")

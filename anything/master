@@ -44,7 +44,7 @@
 	       ("shell-command" shell-command)
 	       ("w3m" w3m-bookmark)
 	       ("yasnippet" yasnippet)))
- :keywords   ("files" "frames" "help" "matching" "outlines" "processes" "tools" "convenience" "anything")
+ :keywords   ("anything" "convenience" "files" "frames" "help" "matching" "outlines" "processes" "tools")
  :homepage   "http://www.emacswiki.org/emacs/Anything"
  :wikipage   "http://www.emacswiki.org/Anything"
  :commentary "\

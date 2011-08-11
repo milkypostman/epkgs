@@ -2,12 +2,11 @@
  :created    "1986"
  :updated    "2011"
  :license    "GPL-3"
- :authors    (("Richard Mlynarik")
-	      ("(according to ack.texi and authors.el)"))
+ :authors    (("Richard Mlynarik"))
  :maintainer ("FSF")
  :provided   (ehelp)
  :required   ((("electric" electric)))
- :keywords   ("help" "extensions")
+ :keywords   ("extensions" "help")
  :commentary "\
 This package provides a pre-packaged `Electric Help Mode' for
 browsing on-line help screens.  There is one entry point,

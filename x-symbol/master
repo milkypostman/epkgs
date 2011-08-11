@@ -9,7 +9,7 @@
 	       ("emacs-core" font-lock fontset warnings)
 	       ("emacs-obsolete" lucid)
 	       ("reporter" reporter)))
- :keywords   ("wysiwyg" "latex" "html" "wp" "math" "internationalization")
+ :keywords   ("html" "internationalization" "latex" "math" "wp" "wysiwyg")
  :homepage   "http://x-symbol.sourceforge.net/"
  :wikipage   "http://www.emacswiki.org/XSymbolMode"
  :commentary "\

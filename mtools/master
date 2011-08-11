@@ -6,6 +6,6 @@
  :maintainer ("LEE Sau Dan" . "sdlee@cs.hku.hk")
  :provided   (mtools)
  :required   ((("dired" dired)))
- :keywords   ("mtools" "dired")
+ :keywords   ("dired" "mtools")
  :commentary "\
 See the documentation of (function mtools-file-name-handler)")

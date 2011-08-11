@@ -5,7 +5,7 @@
  :maintainer ("Holger Schauer" . "holger.schauer@gmx.de")
  :provided   (html-lang-timestamp)
  :required   ((("cl" cl)))
- :keywords   ("utils" "html" "time")
+ :keywords   ("html" "time" "utils")
  :commentary "\
 If you setq this into `html-helper-timestamp-hook' you will get
 language dependent timestamps. \"german\" and \"english\" are predefined,

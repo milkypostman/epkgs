@@ -8,7 +8,7 @@
  :required   ((("anything" anything anything-complete)
 	       ("slime" slime slime-c-p-c slime-fuzzy slime-repl))
 	      (("anything" anything-show-completion)))
- :keywords   ("convenience" "anything" "slime")
+ :keywords   ("anything" "convenience" "slime")
  :commentary "\
 Some Anything and SLIME Configurations for using SLIME within the
 Anything interface. (The `ascsa-' prefix comes here.)

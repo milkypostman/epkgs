@@ -4,7 +4,7 @@
  :maintainer ("same")
  :provided   (cycle-buffer)
  :required   ((("cl" cl)))
- :keywords   ("switch-to-buffer" "cycle" "buffer" "list")
+ :keywords   ("cycle buffer list" "switch-to-buffer")
  :homepage   "http://www.emacswiki.org/CycleBuffer"
  :wikipage   "http://www.emacswiki.org/CycleBuffer"
  :commentary "\

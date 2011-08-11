@@ -4,7 +4,7 @@
  :license    "GPL-3"
  :provided   (pastebox)
  :required   ((("url" url)))
- :keywords   ("pastepastebinpastebox")
+ :keywords   ("paste" "pastebin" "pastebox")
  :commentary "\
 Support for pasting a buffer or region to PasteBox powered sites such
 as pastebin.ch

@@ -4,6 +4,6 @@
  :maintainer ("Cedric Lallain" . "kandjar76@hotmail.com")
  :provided   (xcscope+)
  :required   ((("xcscope" xcscope)))
- :keywords   ("xcscope" "cscope")
+ :keywords   ("cscope" "xcscope")
  :homepage   "http://www.emacswiki.org/XCscopePlus"
  :wikipage   "http://www.emacswiki.org/XCscopePlus")

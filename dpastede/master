@@ -3,11 +3,10 @@
  :created    "20091218"
  :updated    "2009"
  :license    "GPL-2"
- :authors    (("Greg Newman" . "grep@20seven.org")
-	      ("Guilherme Gondim" . "semente@taurinus.org"))
+ :authors    (("Greg Newman" . "grep@20seven.org"))
  :maintainer ("Greg Newman" . "greg@20seven.org")
  :provided   (dpastede)
- :keywords   ("paste" "pastie" "pastebin" "dpaste" "python")
+ :keywords   ("dpaste" "paste" "pastebin" "pastie" "python")
  :homepage   "http://bitbucket.org/gregnewman/dpastede"
  :commentary "\
 dpastede.el provides functions to post a region or buffer to

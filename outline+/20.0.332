@@ -7,7 +7,7 @@
  :provided   (outline+)
  :required   ((("cl" cl)
 	       ("outline" outline)))
- :keywords   ("abbrev" "matching" "local")
+ :keywords   ("abbrev" "local" "matching")
  :commentary "\
 Extensions to `outline.el'.
 

@@ -7,7 +7,7 @@
  :provided   (cmuscheme)
  :required   ((("comint" comint)
 	       ("scheme" scheme)))
- :keywords   ("processes" "lisp")
+ :keywords   ("lisp" "processes")
  :wikipage   "http://www.emacswiki.org/CmuScheme"
  :commentary "\
 This is a customization of comint-mode (see comint.el)

@@ -3,5 +3,5 @@
  :authors    (("Phillip Lord" . "p.lord@hgmp.mrc.ac.uk"))
  :maintainer ("Phillip Lord")
  :provided   (tmmofl-x)
- :keywords   ("minor" "mode" "font" "lock" "toggling" "tmmofl")
+ :keywords   ("font lock" "minor mode" "tmmofl" "toggling")
  :homepage   "http://homepages.cs.ncl.ac.uk/phillip.lord/emacs.html")

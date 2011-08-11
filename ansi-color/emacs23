@@ -5,7 +5,7 @@
  :authors    (("Alex Schroeder" . "alex@gnu.org"))
  :maintainer ("Alex Schroeder" . "alex@gnu.org")
  :provided   (ansi-color)
- :keywords   ("comm" "processes" "terminals" "services")
+ :keywords   ("comm" "processes" "services" "terminals")
  :homepage   "http://www.emacswiki.org/AnsiColor"
  :wikipage   "http://www.emacswiki.org/AnsiColor"
  :commentary "\

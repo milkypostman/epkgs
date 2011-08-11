@@ -7,7 +7,7 @@
  :maintainer ("Rafael Sánchez-Aguilú" . "rafael@cornerdimension.com")
  :provided   (emotion)
  :required   ((("cl" cl)))
- :keywords   ("movement" "convenience" "searching")
+ :keywords   ("convenience" "movement" "searching")
  :homepage   "https://github.com/rlph/emotion"
  :commentary "\
 Original idea taken from EasyMotion plugin for Vim but still needs

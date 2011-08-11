@@ -8,7 +8,7 @@
  :provided   (table)
  :required   ((("easymenu" easymenu)
 	       ("regexp-opt" regexp-opt)))
- :keywords   ("wp" "convenience")
+ :keywords   ("convenience" "wp")
  :homepage   "http://table.sourceforge.net/"
  :wikipage   "http://www.emacswiki.org/TableMode"
  :commentary "\

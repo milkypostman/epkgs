@@ -2,7 +2,7 @@
  :updated    "2005"
  :license    "GPL-2"
  :authors    (("Mark Haiman" . "mhaiman@macaulay.ucsd.edu")
-	      ("Nick Reingold")
+	      ("Nick Reingold,")
 	      ("John Palmieri" . "palmieri@math.washington.edu"))
  :maintainer ("John Palmieri" . "palmieri@math.washington.edu")
  :provided   (bufcomp light)

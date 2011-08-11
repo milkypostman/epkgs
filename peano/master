@@ -8,4 +8,4 @@
 	       ("emacs-core" font-lock)
 	       ("org-mode" org)
 	       ("rx" rx)))
- :keywords   ("outlines" "convenience" "tools"))
+ :keywords   ("convenience" "outlines" "tools"))

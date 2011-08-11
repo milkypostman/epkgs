@@ -7,5 +7,5 @@
  :provided   (texinfo)
  :required   ((("cl" cl)
 	       ("tex-mode" tex-mode)))
- :keywords   ("maint" "tex" "docs")
+ :keywords   ("docs" "maint" "tex")
  :wikipage   "http://www.emacswiki.org/Texinfo")

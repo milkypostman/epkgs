@@ -4,6 +4,6 @@
  :authors    (("Trey Jackson" . "bigfaceworm@gmail.com"))
  :maintainer ("Trey Jackson" . "bigfaceworm@gmail.com")
  :provided   (framemove)
- :keywords   ("frame" "movement" "convenience")
+ :keywords   ("convenience" "frame" "movement")
  :homepage   "http://www.emacswiki.org/FrameMove"
  :wikipage   "http://www.emacswiki.org/FrameMove")

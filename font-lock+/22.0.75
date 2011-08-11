@@ -6,7 +6,7 @@
  :maintainer ("Drew Adams")
  :provided   (font-lock+)
  :required   ((("emacs-core" font-lock)))
- :keywords   ("languages" "faces" "highlighting")
+ :keywords   ("faces" "highlighting" "languages")
  :commentary "\
 Enhancements to standard library `font-lock.el'.
 

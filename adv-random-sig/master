@@ -5,7 +5,7 @@
  :authors    (("Raymond Scholz" . "ray@zonix.de"))
  :maintainer ("Raymond Scholz" . "ray@zonix.de")
  :provided   (adv-random-sig)
- :keywords   ("news" "mail" "signature" "random")
+ :keywords   ("mail" "news" "random" "signature")
  :homepage   "http://www.zonix.de/projects/emacs/lisp"
  :wikipage   "http://www.emacswiki.org/AdvRandomSig"
  :commentary "\

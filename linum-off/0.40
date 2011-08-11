@@ -2,9 +2,8 @@
  :created    "20100920"
  :updated    "20100929"
  :license    "GPL-3"
- :authors    (("Matthew L. Fidler")
-	      ("Florian Adamsky (see wiki)"))
- :maintainer ("Matthew L. Fidler")
+ :authors    (("Matthew L. Fidler, Florian Adamsky (see wiki)"))
+ :maintainer ("Matthew L. Fidler, Florian Adamsky (see wiki)")
  :provided   (linum-off)
  :required   ((("linum" linum)))
  :commentary "\

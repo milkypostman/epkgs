@@ -6,7 +6,7 @@
  :maintainer ("Joseph" . "jixiuf@gmail.com")
  :provided   (joseph-single-dired)
  :required   ((("dired" dired)))
- :keywords   ("dired" "single" "buffer")
+ :keywords   ("buffer" "dired" "single")
  :homepage   "https://github.com/jixiuf/joseph-single-dired"
  :commentary "\
 In Dired, when you choose a directory to visit,

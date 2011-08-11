@@ -14,7 +14,7 @@
 	       ("menu-bar+" menu-bar+)
 	       ("thingatpt" thingatpt)
 	       ("thingatpt+" thingatpt+)))
- :keywords   ("matching" "help" "internal" "tools" "local")
+ :keywords   ("help" "internal" "local" "matching" "tools")
  :homepage   "http://www.emacswiki.org/ReplacePlus"
  :wikipage   "http://www.emacswiki.org/ReplacePlus"
  :commentary "\

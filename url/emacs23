@@ -11,6 +11,6 @@
 	       ("ldap" ldap)
 	       ("twittering-mode" ssl)
 	       ("xml" xml)))
- :keywords   ("comm" "data" "processes" "hypermedia")
+ :keywords   ("comm" "data" "hypermedia" "processes")
  :commentary "\
 Registered URI schemes: http://www.iana.org/assignments/uri-schemes")

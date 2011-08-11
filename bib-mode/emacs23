@@ -2,8 +2,7 @@
  :created    "1989"
  :updated    "2011"
  :license    "GPL-3"
- :authors    (("Henry Kautz")
-	      ("(according to authors.el)"))
+ :authors    (("Henry Kautz"))
  :maintainer ("FSF")
  :provided   (bib-mode)
  :keywords   ("bib")

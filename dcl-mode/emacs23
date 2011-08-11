@@ -6,7 +6,7 @@
  :maintainer ("Odd Gripenstam" . "gripenstamol@decus.se")
  :provided   (dcl-mode)
  :required   ((("tempo" tempo)))
- :keywords   ("dcl" "editing" "major-mode" "languages")
+ :keywords   ("dcl" "editing" "languages" "major-mode")
  :commentary "\
 DCL mode is a package for editing DCL command files.  It helps you
 indent lines, add leading `$' and trailing `-', move around in the

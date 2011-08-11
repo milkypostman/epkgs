@@ -8,7 +8,7 @@
  :required   ((("cl" cl-specs)
 	       ("easymenu" easymenu)
 	       (nil edebug-cl-read)))
- :keywords   ("lisp" "tools" "maint")
+ :keywords   ("lisp" "maint" "tools")
  :commentary "\
 This minor mode allows programmers to step through Emacs Lisp
 source code while executing functions.  You can also set

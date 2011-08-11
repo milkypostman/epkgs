@@ -3,7 +3,7 @@
  :maintainer ("Jaeyoun Chung" . "jay@kldp.org")
  :provided   (gdb-keymap)
  :required   ((("cl" cl)))
- :keywords   ("convenience" "c")
+ :keywords   ("c" "convenience")
  :homepage   "http://emacs.kldp.net/~jay/emacs/"
  :commentary "\
 running gdb with c program, what in the heck should i type all the

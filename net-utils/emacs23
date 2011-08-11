@@ -5,7 +5,7 @@
  :authors    (("Peter Breton" . "pbreton@cs.umb.edu"))
  :maintainer ("Peter Breton" . "pbreton@cs.umb.edu")
  :provided   (net-utils)
- :keywords   ("network" "comm")
+ :keywords   ("comm" "network")
  :commentary "\
 There are three main areas of functionality:
 

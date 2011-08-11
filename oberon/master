@@ -7,7 +7,7 @@
  :provided   (oberon-mode)
  :required   ((("emacs-core" font-lock)
 	       ("newcomment" newcomment)))
- :keywords   ("oberon" "languages" "oop")
+ :keywords   ("languages" "oberon" "oop")
  :homepage   "http://www.brgeight.se/"
  :commentary "\
 The main features of this mode are syntactic highlighting (enabled

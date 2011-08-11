@@ -2,8 +2,7 @@
  :created    "2009"
  :updated    "2009"
  :license    "GPL-2"
- :authors    (("Florian v. Savigny (florian at fsavigny dot dee ee)")
-	      ("(Please direct any comments there.)"))
+ :authors    (("Florian v. Savigny (florian at fsavigny dot dee ee)"))
  :maintainer ("Florian v. Savigny (florian at fsavigny dot dee ee)")
  :provided   (xabcd)
  :commentary "\

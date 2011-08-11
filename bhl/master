@@ -8,7 +8,7 @@
  :required   ((("footnote" footnote)
 	       ("texnfo-upd" texnfo-upd))
 	      (("reporter" reporter)))
- :keywords   ("convert" "plain" "text" "html" "latex" "sgml" "linuxdoc" "texinfo")
+ :keywords   ("convert" "html" "latex" "linuxdoc" "plain" "sgml" "texinfo" "text")
  :homepage   "http://www.nongnu.org/bhl/"
  :wikipage   "http://www.emacswiki.org/BhlMode"
  :commentary "\

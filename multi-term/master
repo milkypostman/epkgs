@@ -9,7 +9,7 @@
 	       ("cl" cl)
 	       ("term" term))
 	      (("ecb" ecb)))
- :keywords   ("term" "terminal" "multiple" "buffer")
+ :keywords   ("multiple buffer" "term" "terminal")
  :homepage   "http://www.emacswiki.org/MultiTerm"
  :wikipage   "http://www.emacswiki.org/MultiTerm"
  :commentary "\

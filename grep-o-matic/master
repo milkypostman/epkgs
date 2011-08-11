@@ -6,7 +6,7 @@
  :maintainer ("Avi Rozen" . "avi.rozen@gmail.com")
  :provided   (grep-o-matic)
  :required   ((("grep" grep)))
- :keywords   ("tools" "processes" "search")
+ :keywords   ("processes" "search" "tools")
  :commentary "\
 This package lets the user launch a search, with a single key combination,
 for the word under the cursor, in the current repository, or the current

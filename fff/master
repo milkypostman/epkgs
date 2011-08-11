@@ -5,7 +5,7 @@
  :authors    (("Noah Friedman" . "friedman@splode.com"))
  :maintainer (nil . "friedman@splode.com")
  :provided   (fff)
- :keywords   ("extensions" "searching" "files" "commands" "tools")
+ :keywords   ("commands" "extensions" "files" "searching" "tools")
  :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
  :commentary "\
 This package provides several shortcut commands for visiting or

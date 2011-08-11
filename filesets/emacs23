@@ -7,7 +7,7 @@
  :provided   (filesets)
  :required   ((("cl" cl)
 	       ("easymenu" easymenu)))
- :keywords   ("filesets" "convenience")
+ :keywords   ("convenience" "filesets")
  :homepage   "http://members.a1.net/t.link/CompEmacsFilesets.html"
  :wikipage   "http://www.emacswiki.org/FileSets"
  :commentary "\

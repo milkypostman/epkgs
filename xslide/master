@@ -14,7 +14,7 @@
 	       ("imenu" imenu)
 	       ("reporter" reporter)
 	       ("sendmail" sendmail)))
- :keywords   ("languages" "xsl" "xml")
+ :keywords   ("languages" "xml" "xsl")
  :homepage   "http://www.menteith.com/wiki/xslide"
  :commentary "\
 Functions for editing XSL stylesheets

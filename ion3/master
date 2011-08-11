@@ -2,7 +2,7 @@
  :created    "2006"
  :updated    "2006"
  :license    "GPL-2"
- :authors    (("Stefan Reichör"))
- :maintainer ("Stefan Reichör")
+ :authors    (("Stefan Reichör," . "stefan@xsteve.at"))
+ :maintainer ("Stefan Reichör," . "stefan@xsteve.at")
  :provided   (ion3)
  :homepage   "http://www.xsteve.at/prg/emacs/")

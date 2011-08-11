@@ -8,7 +8,7 @@
  :required   ((("anything" anything anything-match-plugin)
 	       ("cl" cl)
 	       ("thingatpt" thingatpt)))
- :keywords   ("languages" "data" "dictionary")
+ :keywords   ("data" "dictionary" "languages")
  :commentary "\
 インターネットで販売されている最強の英和辞典・和英辞典である英辞郎を
 anything.elで検索する。

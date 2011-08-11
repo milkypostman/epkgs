@@ -6,7 +6,7 @@
  :provided   (gist)
  :required   ((("cl" cl)
 	       ("xml" xml)))
- :keywords   ("gist" "git" "github" "paste" "pastie" "pastebin")
+ :keywords   ("gist" "git" "github" "paste" "pastebin" "pastie")
  :homepage   "https://github.com/defunkt/gist.el"
  :commentary "\
 Uses your local GitHub config if it can find it.

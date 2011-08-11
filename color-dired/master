@@ -6,7 +6,7 @@
  :provided   (color-dired)
  :required   ((("cl" cl)
 	       ("ls-lisp" ls-lisp)))
- :keywords   ("dired" "color")
+ :keywords   ("color" "dired")
  :homepage   "https://github.com/mhayashi1120/Emacs-color-dired"
  :commentary "\
 color-dired provides colored text that recently changed. (`Today', `This week'

@@ -3,13 +3,13 @@
  :updated    "20100307"
  :license    "GPL-3"
  :authors    (("David O'Toole" . "dto@gnu.org")
-	      (nil . "eduardoochs@gmail.com"))
+	      ("Eduardo Ochs" . "eduardoochs@gmail.com"))
  :maintainer ("Shaun Johnson" . "shaun@slugfest.demon.co.uk")
  :provided   (linkd)
  :required   ((("cl" cl)
 	       ("easymenu" easymenu))
 	      ((nil htmlize)))
- :keywords   ("hypermedia" "help")
+ :keywords   ("help" "hypermedia")
  :homepage   "http://www.emacswiki.org/LinkdMode"
  :wikipage   "http://www.emacswiki.org/LinkdMode"
  :commentary "\

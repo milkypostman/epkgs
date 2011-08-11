@@ -3,9 +3,7 @@
  :created    "2009"
  :updated    "2009"
  :license    "GPL-2"
- :authors    (("Alex Kritikos (my gmail.com username is alex.kritikos)")
-	      ("Alex Kritikos")
-	      ("see section 'Terms'."))
+ :authors    (("Alex Kritikos (my gmail.com username is alex.kritikos)"))
  :maintainer ("Alex Kritikos (my gmail.com username is alex.kritikos)")
  :provided   (acme-mouse)
  :required   ((("cl" cl)))

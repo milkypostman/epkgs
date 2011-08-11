@@ -7,7 +7,7 @@
  :maintainer ("Johan Andersson" . "johan.rejeep@gmail.com")
  :provided   (package-spec)
  :required   ((("package" package)))
- :keywords   ("speed" "convenience")
+ :keywords   ("convenience" "speed")
  :homepage   "https://github.com/rejeep/package-spec"
  :commentary "\
 With package-spec.el you can specify what package.el sources and

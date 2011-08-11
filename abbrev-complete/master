@@ -6,7 +6,7 @@
  :provided   (abbrev-complete)
  :required   ((("dabbrev" dabbrev)
 	       ("hippie-exp" hippie-exp)))
- :keywords   ("abbrev" "expand" "completion" "convenience")
+ :keywords   ("abbrev" "completion" "convenience" "expand")
  :commentary "\
 abbrev mode completion function
 

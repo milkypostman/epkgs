@@ -2,7 +2,7 @@
  :created    "2002"
  :updated    "2002"
  :license    "GPL-2"
- :keywords   ("mule" "hi-lock")
+ :keywords   ("hi-lock" "mule")
  :wikipage   "http://www.emacswiki.org/BufferCharset"
  :commentary "\
 - display-buffer-charsets

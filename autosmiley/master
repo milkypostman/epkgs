@@ -1,9 +1,8 @@
 (:summary    "Convert smileys into their graphical representation"
  :created    "20060315"
  :license    "GPL-2"
- :authors    (("Damyan Pepper (gmail account")
-	      ("username damyanp)"))
- :maintainer ("Damyan Pepper (gmail account")
+ :authors    (("Damyan Pepper (gmail account, username damyanp)"))
+ :maintainer ("Damyan Pepper (gmail account, username damyanp)")
  :provided   (autosmiley)
  :required   ((("gnus" smiley)))
  :homepage   "http://www.emacswiki.org/AutoSmiley"

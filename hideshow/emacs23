@@ -6,7 +6,7 @@
 	      ("Dan Nicolaescu" . "dann@ics.uci.edu"))
  :maintainer ("Thien-Thi Nguyen" . "ttn@gnu.org")
  :provided   (hideshow)
- :keywords   ("c" "java" "lisp" "tools" "editing" "comments" "blocks" "hide" "outlines")
+ :keywords   ("blocks" "c" "comments" "editing" "hide" "java" "lisp" "outlines" "tools")
  :homepage   "http://www.gnuvola.org/software/j/hideshow/"
  :wikipage   "http://www.emacswiki.org/HideShow"
  :commentary "\

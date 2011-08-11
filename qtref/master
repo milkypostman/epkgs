@@ -8,7 +8,7 @@
  :provided   (qtref)
  :required   ((("cl" cl)
 	       ("w3m" w3m)))
- :keywords   ("convenience" "languages" "help" "qt")
+ :keywords   ("convenience" "help" "languages" "qt")
  :homepage   "https://github.com/whitypig/qtref"
  :commentary "\
 Prerequisites:

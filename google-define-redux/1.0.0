@@ -2,13 +2,12 @@
  :created    "20100203"
  :updated    "2010"
  :license    "GPL-3"
- :authors    (("Jeremy English")
-	      ("MON KEY"))
+ :authors    (("Jeremy English, MON KEY"))
  :maintainer ("MON KEY")
  :provided   (google-define-redux)
  :required   ((("cl" cl)
 	       ("emacs-core" font-lock)))
- :keywords   ("applications" "comm" "external" "processes" "hypermedia")
+ :keywords   ("applications" "comm" "external" "hypermedia" "processes")
  :commentary "\
 =================================================================
 DESCRIPTION:

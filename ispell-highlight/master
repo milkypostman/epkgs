@@ -6,7 +6,7 @@
  :provided   (ispell-highlight)
  :required   ((("ispell" ispell)
 	       (nil hyper-apropos)))
- :keywords   ("vm" "draft" "handling")
+ :keywords   ("draft" "handling" "vm")
  :homepage   "http://www.robf.de/Hacking/elisp/"
  :commentary "\
 1) Type `M-x byte-compile-file \"ispell-hl.el\"' to byte compile

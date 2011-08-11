@@ -5,7 +5,7 @@
  :authors    (("Ken Manheimer" . "klm@i.am"))
  :maintainer ("Ken Manheimer" . "klm@i.am")
  :provided   (icomplete)
- :keywords   ("help" "abbrev")
+ :keywords   ("abbrev" "help")
  :wikipage   "http://www.emacswiki.org/IcompleteMode"
  :commentary "\
 Loading this package implements a more fine-grained minibuffer

@@ -6,7 +6,7 @@
  :authors    (("Julian Scheid" . "julians37@googlemail.com"))
  :maintainer ("Julian Scheid" . "julians37@googlemail.com")
  :provided   (dtrt-indent)
- :keywords   ("convenience" "files" "languages" "c")
+ :keywords   ("c" "convenience" "files" "languages")
  :homepage   "https://savannah.nongnu.org/projects/dtrt-indent/"
  :commentary "\
 A minor mode that guesses the indentation offset originally used

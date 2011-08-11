@@ -3,9 +3,8 @@
  :created    "20000208"
  :updated    "2001"
  :license    "GPL-2"
- :authors    (("John Wiegley" . "johnw@gnu.org")
-	      ("Dave Abrahams" . "dave@boostpro.com"))
- :maintainer ("John Wiegley" . "johnw@gnu.org")
+ :authors    ((nil . "dave@boostpro.com"))
+ :maintainer (nil . "dave@boostpro.com")
  :provided   (initsplit)
  :required   ((("cl" cl)
 	       ("emacs-core" simple)

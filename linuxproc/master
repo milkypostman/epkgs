@@ -5,7 +5,7 @@
  :authors    (("Noah Friedman" . "friedman@splode.com"))
  :maintainer (nil . "friedman@splode.com")
  :provided   (linuxproc)
- :keywords   ("linux" "proc" "extensions")
+ :keywords   ("extensions" "linux" "proc")
  :homepage   "ftp://ftp.splode.com/pub/users/friedman/emacs-lisp/"
  :commentary "\
 Note: Some parts of this file handler are unnecessary in Emacs 21.1 and

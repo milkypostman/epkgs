@@ -6,5 +6,5 @@
  :authors    (("ksugita"))
  :maintainer ("ksugita")
  :provided   (hiwin)
- :keywords   ("faces" "editing" "emulating")
+ :keywords   ("editing" "emulating" "faces")
  :homepage   "https://github.com/tomoya/hiwin-mode")

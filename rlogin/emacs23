@@ -7,7 +7,7 @@
  :provided   (rlogin)
  :required   ((("comint" comint)
 	       ("shell" shell)))
- :keywords   ("unix" "comm")
+ :keywords   ("comm" "unix")
  :wikipage   "http://www.emacswiki.org/RloginMode"
  :commentary "\
 Support for remote logins using `rlogin'.

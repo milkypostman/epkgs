@@ -2,9 +2,8 @@
  :created    "2010"
  :updated    "2010"
  :license    "MIT"
- :authors    (("Bryan Waite")
-	      ("based on some code found at"))
- :maintainer ("Bryan Waite")
+ :authors    (("Bryan Waite, based on some code found at"))
+ :maintainer ("Bryan Waite, based on some code found at")
  :provided   (fixme-mode)
  :required   ((("cl" cl)))
  :homepage   "http://www.emacswiki.org/FixmeMode"

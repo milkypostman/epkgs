@@ -9,7 +9,7 @@
  :required   ((("cl" cl)
 	       ("url" url-parse)
 	       ("xml" xml)))
- :keywords   ("www" "hypermedia" "atom" "rss")
+ :keywords   ("atom" "hypermedia" "rss" "www")
  :homepage   "https://github.com/fperrin/atom"
  :commentary "\
 This is a library for creating an Atom feed from a Lisp program.

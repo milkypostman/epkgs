@@ -8,7 +8,7 @@
  :required   ((("cl" cl)
 	       ("emacs-core" overlay)
 	       ("tellib" tellib)))
- :keywords   ("annotations" "remarks" "notes")
+ :keywords   ("annotations" "notes" "remarks")
  :homepage   "http://members.a1.net/t.link/CompEmacsRemarks.html"
  :commentary "\
 ;---(:excerpt-beg remarks :name desc)---

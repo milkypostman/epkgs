@@ -6,7 +6,7 @@
  :required   ((("color-occur" color-occur)
 	       ("namazu" namazu)
 	       ("view" view)))
- :keywords   ("namazu" "highlight")
+ :keywords   ("highlight" "namazu")
  :homepage   "http://www.bookshelf.jp/"
  :commentary "\
 color-namazu highlights *every* match for the current search

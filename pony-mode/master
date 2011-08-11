@@ -11,5 +11,5 @@
 	       ("sgml-mode" sgml-mode)
 	       ("sql" sql)
 	       ("thingatpt" thingatpt)))
- :keywords   ("python" "django")
+ :keywords   ("django" "python")
  :homepage   "https://github.com/davidmiller/pony-mode")

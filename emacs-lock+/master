@@ -5,7 +5,7 @@
  :authors    (("Michael Heerdegen"))
  :provided   (emacs-lock+)
  :required   ((("emacs-lock" emacs-lock)))
- :keywords   ("lock" "extensions")
+ :keywords   ("extensions" "lock")
  :homepage   "http://www.emacswiki.org/EmacsLockPlus"
  :wikipage   "http://www.emacswiki.org/EmacsLockPlus"
  :commentary "\

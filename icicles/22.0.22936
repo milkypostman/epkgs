@@ -1,6 +1,6 @@
 (:summary    "Minibuffer input completion and cycling"
  :created    "19950801"
- :updated    "20110807"
+ :updated    "20110809"
  :license    "GPL-2"
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")
@@ -65,7 +65,7 @@
 	       ("wid-edit+" wid-edit+)
 	       ("widget" wid-edit)
 	       ("yow" yow)))
- :keywords   ("extensions" "help" "abbrev" "local" "minibuffer" "keys" "apropos" "completion" "matching" "regexp" "command")
+ :keywords   ("abbrev" "apropos" "command" "completion" "extensions" "help" "keys" "local" "matching" "minibuffer" "regexp")
  :homepage   "http://www.emacswiki.org/Icicles"
  :wikipage   "http://www.emacswiki.org/Icicles"
  :commentary "\

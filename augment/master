@@ -8,7 +8,7 @@
  :provided   (augment)
  :required   ((("cl" cl)
 	       ("json" json)))
- :keywords   ("augment" "testing" "metadata")
+ :keywords   ("augment" "metadata" "testing")
  :homepage   "http://augment.rubyforge.org/"
  :commentary "\
 augment.el is a frontend for augment, a system for gathering and

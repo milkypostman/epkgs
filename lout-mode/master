@@ -7,5 +7,5 @@
 	       ("compile" compile)
 	       ("easymenu" easymenu)
 	       ("reporter" reporter)))
- :keywords   ("wp" "lout")
+ :keywords   ("lout" "wp")
  :homepage   "http://emarsden.chez.com/lout/")

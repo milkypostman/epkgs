@@ -7,7 +7,7 @@
  :provided   (mail-hist)
  :required   ((("ring" ring)
 	       ("sendmail" sendmail)))
- :keywords   ("mail" "history")
+ :keywords   ("history" "mail")
  :commentary "\
 Thanks to Jim Blandy for mentioning ring.el.  It saved a lot of
 time.

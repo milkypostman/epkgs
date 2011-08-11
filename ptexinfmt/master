@@ -8,7 +8,7 @@
  :maintainer ("TAKAHASHI Kaoru" . "kaoru@kaisei.org")
  :provided   (ptexinfmt)
  :required   ((("texinfmt" texinfmt)))
- :keywords   ("maint" "tex" "docs" "emulation" "compatibility")
+ :keywords   ("compatibility" "docs" "emulation" "maint" "tex")
  :commentary "\
 Original code: Yoshiki Hayashi <yoshiki@xemacs.org>
 	makeinfo.el (gnujdoc project)

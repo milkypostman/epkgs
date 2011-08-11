@@ -6,7 +6,7 @@
  :maintainer ("Andy Stewart" . "lazycat.manatee@gmail.com")
  :provided   (rcirc-notify+)
  :required   ((("rcirc" rcirc)))
- :keywords   ("rcirc" "notify")
+ :keywords   ("notify" "rcirc")
  :commentary "\
 Notify popup for rcirc
 

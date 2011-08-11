@@ -9,7 +9,7 @@
 	       ("emacs-core" pp)
 	       ("newcomment" newcomment))
 	      (("paredit" paredit)))
- :keywords   ("lisp" "convenience")
+ :keywords   ("convenience" "lisp")
  :homepage   "http://www.emacswiki.org/LispXmp"
  :wikipage   "http://www.emacswiki.org/LispXmp"
  :commentary "\

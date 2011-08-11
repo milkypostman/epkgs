@@ -2,8 +2,7 @@
  :created    "20000621"
  :updated    "20110104"
  :license    "GPL-2"
- :authors    (("Peter Steiner" . "unistein@isbe.ch")
-	      ("Drew Adams"))
+ :authors    (("Peter Steiner" . "unistein@isbe.ch"))
  :maintainer ("Drew Adams")
  :provided   (show-wspace)
  :required   ((("cl" cl)))

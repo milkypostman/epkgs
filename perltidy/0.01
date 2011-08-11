@@ -6,7 +6,7 @@
  :maintainer ("Ye Wenbin" . "wenbinye@gmail.com")
  :provided   (perltidy)
  :required   ((("cl" cl)))
- :keywords   ("tools" "convenience" "languages")
+ :keywords   ("convenience" "languages" "tools")
  :commentary "\
 As the PBP(Perl Best Practice) suggest, put this to your ~/.perltidyrc:
 ## .perltidyrc --- configuration for perltidy

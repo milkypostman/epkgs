@@ -5,6 +5,6 @@
  :authors    (("Masatake YAMATO" . "jet@gyve.org"))
  :maintainer ("Masatake YAMATO" . "jet@gyve.org")
  :provided   (ld-script)
- :keywords   ("languages" "faces")
+ :keywords   ("faces" "languages")
  :commentary "\
 Major mode for editing GNU linker (ld) scripts.")

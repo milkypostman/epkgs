@@ -2,8 +2,8 @@
  :created    "1994"
  :updated    "20000526"
  :license    "GPL-2"
- :authors    (("Richard Y. Kim"))
- :maintainer ("Richard Y. Kim")
+ :authors    (("Richard Y. Kim," . "ryk@coho.com"))
+ :maintainer ("Richard Y. Kim," . "ryk@coho.com")
  :provided   (m56k)
  :required   ((("advice" advice)
 	       ("cl" cl)

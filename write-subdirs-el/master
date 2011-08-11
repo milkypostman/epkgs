@@ -4,7 +4,7 @@
  :license    "GPL-2"
  :authors    (("Tom Breton" . "tob@world.std.com"))
  :maintainer ("Tom Breton" . "tob@world.std.com")
- :keywords   ("local" "version")
+ :keywords   ("local")
  :homepage   "http://panix.com/~tehom/"
  :commentary "\
 This code creates subdirs.el files for directory trees.

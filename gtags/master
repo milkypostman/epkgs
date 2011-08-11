@@ -1,11 +1,8 @@
 (:repository (svn . "http://google-gtags.googlecode.com/svn")
  :updated    "2004"
  :license    "GPL-2"
- :authors    (("Piaw Na")
-	      ("Arthur A. Gleckler")
-	      ("Leandro Groisman")
-	      ("Phil Sung"))
- :maintainer ("Piaw Na")
+ :authors    (("Piaw Na, Arthur A. Gleckler, Leandro Groisman, Phil Sung"))
+ :maintainer ("Piaw Na, Arthur A. Gleckler, Leandro Groisman, Phil Sung")
  :provided   (gdoc-mode google-emacs-utilities gtags gtags-aliases)
  :required   ((("cl" cl)
 	       ("etags" etags)

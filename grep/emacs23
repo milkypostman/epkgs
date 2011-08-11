@@ -7,7 +7,7 @@
  :provided   (grep)
  :required   ((("compile" compile)
 	       ("find-dired" find-dired)))
- :keywords   ("tools" "processes")
+ :keywords   ("processes" "tools")
  :wikipage   "http://www.emacswiki.org/GrepMode"
  :commentary "\
 This package provides the grep facilities documented in the Emacs

@@ -9,5 +9,5 @@
  :required   ((("cl" cl)
 	       ("emacs-core" backquote)
 	       ("reporter" reporter)))
- :keywords   ("opengl")
+ :keywords   ("minor-mode" "opengl")
  :homepage   "http://www.cs.utah.edu/~karra/code/")

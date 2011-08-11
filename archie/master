@@ -7,7 +7,7 @@
  :provided   (archie)
  :required   ((("cl" cl)
 	       ("custom" custom)))
- :keywords   ("util" "network")
+ :keywords   ("network" "util")
  :homepage   "http://quimby.gnus.org/elisp/"
  :commentary "\
 The `M-x archie' command will connect to an archie server and send

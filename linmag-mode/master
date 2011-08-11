@@ -2,7 +2,7 @@
  :created    "2009"
  :updated    "2009"
  :license    "GPL-2"
- :keywords   ("user" "files" "part" "flavour")
+ :keywords   ("user")
  :homepage   "http://www.skamphausen.de/cgi-bin/ska/linmag-mode"
  :commentary "\
 This is a major mode for writing articles for the Linux Magazin

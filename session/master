@@ -7,7 +7,7 @@
  :provided   (session)
  :required   ((("cl" cl)
 	       ("custom" custom)))
- :keywords   ("session" "session" "management" "desktop" "data" "tools")
+ :keywords   ("data" "desktop" "session" "session management" "tools")
  :homepage   "http://emacs-session.sourceforge.net/"
  :wikipage   "http://www.emacswiki.org/EmacsSession"
  :commentary "\

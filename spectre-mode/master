@@ -7,7 +7,7 @@
  :provided   (active-file ntlst-aux ntlst-section spectre-mode)
  :required   ((("cedet" speedbar)
 	       ("emacs-core" font-lock)))
- :keywords   ("spectre" "files" "affirma")
+ :keywords   ("affirma" "spectre files")
  :homepage   "http://spice-mode.4t.com/"
  :commentary "\
 Most of the code of this mode was shamelessly stolen from eldo-mode

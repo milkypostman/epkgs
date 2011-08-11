@@ -7,7 +7,7 @@
  :provided   (imenu+)
  :required   ((("cl" cl)
 	       ("imenu" imenu)))
- :keywords   ("tools" "menus")
+ :keywords   ("menus" "tools")
  :commentary "\
 Extensions to `imenu.el'.
 

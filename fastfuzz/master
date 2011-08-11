@@ -5,7 +5,7 @@
  :authors    (("Will Mengarini" . "seldon@eskimo.com"))
  :maintainer ("Will Mengarini" . "seldon@eskimo.com")
  :provided   (fastfuzz)
- :keywords   ("extensions" "float" "floating" "point" "fuzz")
+ :keywords   ("extensions" "float" "floating point" "fuzz")
  :homepage   "http://www.eskimo.com/~seldon/"
  :commentary "\
 Try this with C-x C-e:

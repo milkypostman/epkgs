@@ -5,7 +5,7 @@
  :authors    (("Gerd Moellmann" . "gerd@gnu.org"))
  :maintainer ("FSF")
  :provided   (rx)
- :keywords   ("strings" "regexps" "extensions")
+ :keywords   ("extensions" "regexps" "strings")
  :wikipage   "http://www.emacswiki.org/rx"
  :commentary "\
 This is another implementation of sexp-form regular expressions.

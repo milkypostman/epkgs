@@ -5,7 +5,7 @@
  :authors    (("Kevin A. Burton" . "burton@openprivacy.org"))
  :maintainer ("Kevin A. Burton" . "burton@openprivacy.org")
  :provided   (fileutils)
- :keywords   ("fileutils" "unix" "commands")
+ :keywords   ("commands" "fileutils" "unix")
  :commentary "\
 This package provides a set of emulated UNIX commands which are provided by
 almost all POSIX compliant Operating Systems.  The real commands are not

@@ -11,7 +11,7 @@
 	       ("custom" custom)
 	       ("easymenu" easymenu)
 	       ("reporter" reporter)))
- :keywords   ("languages" "convenience")
+ :keywords   ("convenience" "languages")
  :homepage   "http://code.google.com/p/ansys-mode/"
  :wikipage   "http://www.emacswiki.org/AnsysMode"
  :commentary "\

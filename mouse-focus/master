@@ -3,7 +3,7 @@
  :updated    "2009"
  :license    "GPL-2"
  :provided   (mouse-focus)
- :keywords   ("mouse" "gui" "files" "part")
+ :keywords   ("gui" "mouse")
  :homepage   "http://www.skamphausen.de/cgi-bin/ska/mouse-focus"
  :commentary "\
 Common window managers in Un*x usually implement several focus

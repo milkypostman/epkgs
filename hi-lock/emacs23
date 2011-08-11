@@ -6,7 +6,7 @@
  :maintainer ("David M. Koppelman" . "koppel@ece.lsu.edu")
  :provided   (hi-lock)
  :required   ((("emacs-core" font-lock)))
- :keywords   ("faces" "matching" "display")
+ :keywords   ("display" "faces" "matching" "minor-mode")
  :wikipage   "http://www.emacswiki.org/HiLock"
  :commentary "\
 With the hi-lock commands text matching interactively entered

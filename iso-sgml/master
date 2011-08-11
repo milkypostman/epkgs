@@ -5,4 +5,4 @@
  :authors    (("Frederic Lepied" . "lepied@cenaath.cena.dgac.fr"))
  :maintainer (nil . "lepied@cenaath.cena.dgac.fr")
  :provided   (iso-sgml)
- :keywords   ("sgml" "html" "iso" "latin"))
+ :keywords   ("html" "iso" "latin" "sgml"))

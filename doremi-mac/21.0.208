@@ -6,7 +6,7 @@
  :maintainer ("Drew Adams")
  :provided   (doremi-mac)
  :required   ((("cl" cl)))
- :keywords   ("extensions" "convenience" "keys" "repeat" "cycle")
+ :keywords   ("convenience" "cycle" "extensions" "keys" "repeat")
  :commentary "\
 A macro for defining Do Re Mi commands.
 

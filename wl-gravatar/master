@@ -7,7 +7,7 @@
  :maintainer ("Kazuhiro NISHIYAMA" . "zn@mbf.nifty.com")
  :provided   (wl-gravatar)
  :required   ((("gnus" gravatar)))
- :keywords   ("faces" "tools" "extensions" "mail")
+ :keywords   ("extensions" "faces" "mail" "tools")
  :homepage   "https://github.com/dabrahams/wl-gravatar"
  :commentary "\
 Usage:

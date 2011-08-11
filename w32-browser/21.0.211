@@ -2,11 +2,10 @@
  :created    "20040311"
  :updated    "20110104"
  :license    "GPL-2"
- :authors    (("Emacs Wiki")
-	      ("Drew Adams"))
+ :authors    (("Emacs Wiki, Drew Adams"))
  :maintainer ("Drew Adams")
  :provided   (w32-browser)
- :keywords   ("mouse" "dired" "explorer")
+ :keywords   ("dired" "explorer" "mouse")
  :commentary "\
 Run Windows application associated with a file.
 

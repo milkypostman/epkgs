@@ -10,7 +10,7 @@
 	       ("emacs-core" faces))
 	      (("icicles" icicles)
 	       ("misc-fns" misc-fns)))
- :keywords   ("calendar" "mouse" "local")
+ :keywords   ("calendar" "local" "mouse")
  :commentary "\
 Extensions and corrections to `calendar.el', `cal-french.el',
    and `diary-lib.el'.  Calendar, diary, appointments stuff.

@@ -7,7 +7,7 @@
  :provided   (cus-edit cus-face cus-start custom)
  :required   ((("widget" wid-edit widget)
 	       (nil cus-load)))
- :keywords   ("help" "faces")
+ :keywords   ("faces" "help")
  :commentary "\
 This file only contains the code needed to declare and initialize
 user options.  The code to customize options is autoloaded from

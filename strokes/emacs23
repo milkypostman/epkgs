@@ -7,7 +7,7 @@
  :provided   (strokes)
  :required   ((("cl" cl)
 	       ("emacs-core" pp)))
- :keywords   ("lisp" "mouse" "extensions")
+ :keywords   ("extensions" "lisp" "mouse")
  :wikipage   "http://www.emacswiki.org/StrokesMode"
  :commentary "\
 This is the strokes package.  It is intended to allow the user to

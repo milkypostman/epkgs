@@ -6,7 +6,7 @@
  :maintainer ("Edward O'Connor" . "ted@oconnor.cx")
  :provided   (xml-event)
  :required   ((("xml" xml)))
- :keywords   ("comm" "tools" "processes")
+ :keywords   ("comm" "processes" "tools")
  :homepage   "http://edward.oconnor.cx/elisp/"
  :commentary "\
 Typical usage:

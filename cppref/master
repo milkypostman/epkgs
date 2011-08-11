@@ -3,8 +3,8 @@
  :created    "2009"
  :updated    "2009"
  :license    "GPL-3"
- :authors    (("Kentaro Kuribayashi"))
- :maintainer ("Kentaro Kuribayashi")
+ :authors    (("Kentaro Kuribayashi," . "kentarok@gmail.com"))
+ :maintainer ("Kentaro Kuribayashi," . "kentarok@gmail.com")
  :provided   (cppref)
  :required   ((("cl" cl)))
  :homepage   "https://github.com/kentaro/emacs-cppref"

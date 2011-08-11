@@ -9,7 +9,7 @@
 	       ("custom" custom)
 	       ("easymenu" easymenu)
 	       ("facemenu" facemenu)))
- :keywords   ("help" "extensions" "faces" "hypermedia")
+ :keywords   ("extensions" "faces" "help" "hypermedia")
  :commentary "\
 The widget library is partially documented in the `widget' Info
 file.

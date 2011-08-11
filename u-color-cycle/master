@@ -6,7 +6,7 @@
  :maintainer ("Ulf Jasper" . "ulf.jasper@web.de")
  :provided   (u-color-cycle)
  :required   ((("emacs-core" overlay)))
- :keywords   ("games" "fun" "eye-candy" "ulf" "exp")
+ :keywords   ("eye-candy" "fun" "games")
  :homepage   "http://ulf.epplejasper.de/EmacsFunStuff.html"
  :commentary "\
 u-color-cycle provides a set of commands which temporarily change the

@@ -7,7 +7,7 @@
  :maintainer ("Bozhidar Batsov")
  :provided   (projectile)
  :required   ((("cl" cl)))
- :keywords   ("project" "convenience")
+ :keywords   ("convenience" "project")
  :homepage   "https://github.com/bbatsov/projectile"
  :commentary "\
 This library provides easy project management and navigation.")

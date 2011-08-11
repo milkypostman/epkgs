@@ -21,7 +21,7 @@
 	       ("outline" outline)
 	       ("tmm" tmm)
 	       (nil db-summary)))
- :keywords   ("ee" "convenience" "tools" "outlines")
+ :keywords   ("convenience" "ee" "outlines" "tools")
  :homepage   "http://www.jurta.org/en/emacs/ee/"
  :wikipage   "http://www.emacswiki.org/CategorizingInformationManager"
  :commentary "\

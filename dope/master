@@ -2,14 +2,13 @@
  :created    "2002"
  :updated    "20051212"
  :license    "GPL-2"
- :authors    (("D. Goel" . "deego@glue.umd.edu")
-	      ("Steve Youngs" . "youngs@xemacs.org"))
- :maintainer ("D. Goel" . "deego@glue.umd.edu")
+ :authors    ((nil . "youngs@xemacs.org"))
+ :maintainer (nil . "youngs@xemacs.org")
  :provided   (dope)
  :required   ((("cl" cl)
 	       ("custom" custom)
 	       ("emacs-core" pp)
 	       ("thingatpt" thingatpt)
 	       ("widget" wid-edit widget)))
- :keywords   ("dotemacs" "startup" "speed" "profile" "error")
+ :keywords   ("dotemacs" "error" "profile" "speed" "startup")
  :homepage   "http://www.gnufans.net/~deego/emacs.html")

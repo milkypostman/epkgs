@@ -9,7 +9,7 @@
 	       ("reporter" reporter)
 	       ("ring" ring)
 	       ("xml-rpc" xml-rpc)))
- :keywords   ("weblog" "blogger" "cms" "movable" "type" "openweblog" "blog")
+ :keywords   ("blog" "blogger" "cms" "movable" "openweblog" "type" "weblog")
  :homepage   "https://launchpad.net/weblogger-el"
  :wikipage   "http://www.emacswiki.org/WebloggerMode"
  :commentary "\

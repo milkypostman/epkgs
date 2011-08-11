@@ -4,12 +4,12 @@
  :license    "GPL-3"
  :authors    (("James Clark" . "jjc@jclark.com"))
  :maintainer ("FSF")
- :adapted-by ("ESR")
+ :adapted-by ("ESR, Daniel Pfeiffer" . "occitan@esperanto.org")
  :provided   (sgml-mode)
  :required   ((("cl" cl)
 	       ("outline" outline)
 	       ("skeleton" skeleton)))
- :keywords   ("wp" "hypermedia" "comm" "languages")
+ :keywords   ("comm" "hypermedia" "languages" "wp")
  :commentary "\
 Configurable major mode for editing document in the SGML standard general
 markup language.  As an example contains a mode for editing the derived

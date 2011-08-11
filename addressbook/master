@@ -9,7 +9,7 @@
 	       ("gnus" mm-decode)
 	       ("url" url)
 	       ("vcard" vcard)))
- :keywords   ("contacts" "applications")
+ :keywords   ("applications" "contacts")
  :homepage   "http://www.nongnu.org/addressbook/"
  :wikipage   "http://www.emacswiki.org/AddressBook"
  :commentary "\

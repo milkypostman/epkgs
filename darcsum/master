@@ -3,9 +3,7 @@
  :created    "2004"
  :updated    "2004"
  :license    "GPL-2"
- :authors    (("John Wiegley" . "johnw@gnu.org")
-	      (nil . "chneukirchen@gmail.com")
-	      (nil . "simon@joyful.com"))
+ :authors    (("John Wiegley" . "johnw@gnu.org"))
  :maintainer ("John Wiegley" . "johnw@gnu.org")
  :provided   (darcsum)
  :required   ((("add-log" add-log)

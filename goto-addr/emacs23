@@ -7,7 +7,7 @@
  :provided   (goto-addr)
  :required   ((("emacs-core" overlay)
 	       ("thingatpt" thingatpt)))
- :keywords   ("mh-e" "www" "mouse" "mail")
+ :keywords   ("mail" "mh-e" "mouse" "www")
  :commentary "\
 This package allows you to click or hit a key sequence while on a
 URL or e-mail address, and either load the URL into a browser of

@@ -5,5 +5,5 @@
  :license    "GPL-3"
  :provided   (string-template)
  :required   ((("cl" cl)))
- :keywords   ("string" "functionality")
+ :keywords   ("emacs" "functionality" "string")
  :homepage   "https://github.com/renard/string-template-el")

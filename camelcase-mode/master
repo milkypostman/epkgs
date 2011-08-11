@@ -4,5 +4,5 @@
  :authors    ((nil . "c.r.manning caroma@ai.mit.edu"))
  :maintainer (nil . "c.r.manning caroma@ai.mit.edu")
  :provided   (camelCase)
- :keywords   ("camelcase" "camel" "case" "word" "mode")
+ :keywords   ("camel" "camelcase" "case" "mode" "word")
  :wikipage   "http://www.emacswiki.org/CamelCase")

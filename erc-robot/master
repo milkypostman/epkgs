@@ -6,7 +6,7 @@
  :maintainer ("David Edmondson" . "dme@dme.org")
  :provided   (erc-robot)
  :required   ((("erc" erc erc-stamp)))
- :keywords   ("erc" "irc" "chat" "robot" "bot")
+ :keywords   ("bot" "chat" "erc" "irc" "robot")
  :homepage   "http://www.emacswiki.org/ErcRobot"
  :wikipage   "http://www.emacswiki.org/ErcRobot"
  :commentary "\

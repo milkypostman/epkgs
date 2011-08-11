@@ -2,15 +2,12 @@
  :created    "19951122"
  :updated    "20110104"
  :license    "GPL-2"
- :authors    (("Bard Bloom")
-	      (nil . "bard@theory.lcs.mit.edu")
-	      ("Drew Adams"))
  :maintainer ("Drew Adams")
  :provided   (wimpy-del)
  :required   (nil
 	      (("frame-fns" frame-fns)
 	       ("strings" strings)))
- :keywords   ("region" "cut" "kill" "copy")
+ :keywords   ("copy" "cut" "kill" "region")
  :commentary "\
 Require confirmation for large region deletion.
  Replacements for `kill-region' and `clipboard-kill-region'.

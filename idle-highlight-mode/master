@@ -3,9 +3,8 @@
  :created    "20080513"
  :updated    "2011"
  :license    "GPL-3"
- :authors    (("Phil Hagelberg")
-	      ("Cornelius Mika"))
- :maintainer ("Phil Hagelberg")
+ :authors    (("Phil Hagelberg, Cornelius Mika"))
+ :maintainer ("Phil Hagelberg, Cornelius Mika")
  :provided   (idle-highlight-mode)
  :required   ((("thingatpt" thingatpt)))
  :keywords   ("convenience")

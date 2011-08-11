@@ -4,7 +4,7 @@
  :maintainer ("Jonathan Marten" . "jonathan.marten@uk.sun.com")
  :provided   (sendmail-mode)
  :required   ((("regexp-opt" regexp-opt)))
- :keywords   ("languages" "faces")
+ :keywords   ("faces" "languages")
  :commentary "\
 Sendmail configuration files are usually pretty unintelligible, so
 some help with syntax colouring and comment indentation is always

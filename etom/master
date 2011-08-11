@@ -6,6 +6,6 @@
  :maintainer ("Slavomir Kaslev" . "slavomir.kaslev@gmail.com")
  :provided   (etom)
  :required   ((("comint" comint)))
- :keywords   ("maya" "mel")
+ :keywords   ("emacs" "maya" "mel")
  :homepage   "http://www.emacswiki.org/EmacsToMaya"
  :wikipage   "http://www.emacswiki.org/EmacsToMaya")

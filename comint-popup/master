@@ -6,7 +6,7 @@
  :maintainer (nil . "friedman@splode.com")
  :provided   (comint-popup)
  :required   ((("pb-popup" pb-popup)))
- :keywords   ("extensions" "processes" "comint")
+ :keywords   ("comint" "extensions" "processes")
  :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
  :commentary "\
 This program is enabled by putting something like the

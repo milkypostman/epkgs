@@ -5,6 +5,6 @@
  :required   ((("emacs-core" font-lock)
 	       ("etags" etags)
 	       (nil func-menu)))
- :keywords   ("languages" "files" "part")
+ :keywords   ("languages")
  :homepage   "http://www.exd.at/~hoerandl/chill.html"
  :wikipage   "http://www.emacswiki.org/ChillModePackage")

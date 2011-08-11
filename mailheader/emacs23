@@ -6,7 +6,7 @@
  :maintainer ("Erik Naggum" . "erik@naggum.no")
  :provided   (mailheader)
  :required   ((("cl" cl)))
- :keywords   ("tools" "mail" "news")
+ :keywords   ("mail" "news" "tools")
  :commentary "\
 This package provides an abstraction to RFC822-style messages, used in
 mail, news, and some other systems.  The simple syntactic rules for such

@@ -7,7 +7,7 @@
  :maintainer ("SAKURAI Masashi" . "m.sakurai@kiwanami.net")
  :provided   (inertial-scroll)
  :required   ((("deferred" deferred)))
- :keywords   ("scroll" "deferred")
+ :keywords   ("deferred" "scroll")
  :homepage   "https://github.com/kiwanami/emacs-inertial-scroll"
  :wikipage   "http://www.emacswiki.org/InertialScrolling"
  :commentary "\

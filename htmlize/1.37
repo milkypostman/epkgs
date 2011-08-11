@@ -7,7 +7,7 @@
  :provided   (htmlize)
  :required   ((("cl" cl)
 	       ("custom" custom)))
- :keywords   ("hypermedia" "extensions")
+ :keywords   ("extensions" "hypermedia")
  :homepage   "http://fly.srk.fer.hr/~hniksic/"
  :wikipage   "http://www.emacswiki.org/Htmlize"
  :commentary "\

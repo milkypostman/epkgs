@@ -6,7 +6,7 @@
  :maintainer ("Changyuan Yu" . "rei.vzy@gmail.com")
  :provided   (couchdb-document-text)
  :required   ((("couchdb-document" couchdb-document)))
- :keywords   ("files" "couchdb" "json" "org")
+ :keywords   ("couchdb" "files" "json" "org")
  :commentary "\
 Example:
 

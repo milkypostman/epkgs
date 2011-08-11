@@ -8,7 +8,7 @@
  :maintainer ("Jakub Narębski" . "jnareb@gmail.com")
  :provided   (sierotki)
  :required   ((("cl" cl)))
- :keywords   ("tex" "wp" "convenience")
+ :keywords   ("convenience" "tex" "wp")
  :commentary "\
 Installation:
 

@@ -11,7 +11,7 @@
 	       ("vimpulse" vimpulse)
 	       ("viper" viper)
 	       ("viper-in-more-modes" viper-in-more-modes)))
- :keywords   ("viper" "ergoemacs" "cua" "crisp" "edt" "tpu")
+ :keywords   ("crisp" "cua" "edt" "ergoemacs" "tpu" "viper")
  :commentary "\
 Put the library key-choices.el in the load path and then put
 (require 'key-choices)

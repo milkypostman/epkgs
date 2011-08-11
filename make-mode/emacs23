@@ -10,7 +10,7 @@
  :required   ((("add-log" add-log)
 	       ("dabbrev" dabbrev)
 	       ("imenu" imenu)))
- :keywords   ("unix" "tools")
+ :keywords   ("tools" "unix")
  :commentary "\
 A major mode for editing makefiles.  The mode knows about Makefile
 syntax and defines M-n and M-p to move to next and previous productions.

@@ -8,7 +8,7 @@
  :provided   (ri)
  :required   ((("ido" ido)
 	       ("thingatpt" thingatpt)))
- :keywords   ("tools" "documentation")
+ :keywords   ("documentation" "tools")
  :wikipage   "http://www.emacswiki.org/RiEl"
  :commentary "\
 ri.el provides an Emacs frontend to Ruby's `ri' documentation

@@ -3,7 +3,7 @@
  :updated    "2011"
  :license    "GPL-3"
  :authors    (("Per Bothner" . "per@bothner.com"))
- :maintainer ("Dan Nicolaescu" . "dann@ics.uci.edu")
+ :maintainer (nil . "per@bothner.com")
  :provided   (term)
  :required   ((("ange-ftp" ange-ftp)
 	       ("cl" cl)

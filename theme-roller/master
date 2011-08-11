@@ -7,7 +7,7 @@
  :maintainer ("Yves Senn" . "yves.senn@gmail.com")
  :provided   (theme-roller theme-roller-macro)
  :required   ((("color-theme" color-theme)))
- :keywords   ("color-theme" "theme")
+ :keywords   ("color-theme" "emacs" "theme")
  :homepage   "https://github.com/senny/theme-roller.el"
  :wikipage   "http://www.emacswiki.org/ThemeRollerEl"
  :commentary "\

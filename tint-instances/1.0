@@ -5,7 +5,7 @@
  :authors    (("Uwe Schabe" . "uwe@cad-cam-concept.de"))
  :maintainer ("Uwe Schabe" . "uwe@cad-cam-concept.de")
  :provided   (tint-instances)
- :keywords   ("tint-instances" "tinting" "highlighting")
+ :keywords   ("highlighting  " "tint-instances" "tinting")
  :commentary "\
 This emacs script takes the word where point is currently on and tints
 all instances of this word in the current buffer.

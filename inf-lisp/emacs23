@@ -7,7 +7,7 @@
  :provided   (inf-lisp)
  :required   ((("comint" comint)
 	       ("lisp-mode" lisp-mode)))
- :keywords   ("processes" "lisp")
+ :keywords   ("lisp" "processes")
  :commentary "\
 Hacked from tea.el by Olin Shivers (shivers@cs.cmu.edu). 8/88
 

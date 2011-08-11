@@ -5,7 +5,7 @@
  :maintainer ("Masahiro Hayashi" . "mhayashi1120@gmail.com")
  :provided   (rect+)
  :required   ((("rect" rect)))
- :keywords   ("rectangle" "edit")
+ :keywords   ("edit" "rectangle")
  :homepage   "https://github.com/mhayashi1120/Emacs-rectplus"
  :commentary "\
 rect+.el provides extensions to rect.el")

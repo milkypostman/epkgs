@@ -10,4 +10,4 @@
 	       ("custom" custom)
 	       ("url" url)
 	       ("w3" w3)))
- :keywords   ("tools" "sports" "cricket" "live" "news"))
+ :keywords   ("cricket" "live" "news" "sports" "tools"))

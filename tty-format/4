@@ -7,7 +7,7 @@
  :provided   (tty-format)
  :required   ((("ansi-color" ansi-color)
 	       ("custom" cus-face)))
- :keywords   ("wp" "faces")
+ :keywords   ("faces" "wp")
  :wikipage   "http://www.emacswiki.org/TtyFormat"
  :commentary "\
 This is two additions to `format-alist' for decoding

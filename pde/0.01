@@ -19,7 +19,7 @@
 	       ("tmm" tmm)
 	       ("woman" woman)
 	       (nil re-builder)))
- :keywords   ("languages" "tools" "convenience" "unix")
+ :keywords   ("convenience" "languages" "tools" "unix")
  :homepage   "http://search.cpan.org/~yewenbin/Emacs-PDE/"
  :commentary "\
 Put this file into your load-path and the following into your ~/.emacs:

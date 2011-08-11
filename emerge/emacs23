@@ -3,4 +3,4 @@
  :authors    (("Dale R. Worley" . "worley@world.std.com"))
  :maintainer ("Dale R. Worley" . "worley@world.std.com")
  :provided   (emerge)
- :keywords   ("unix" "tools"))
+ :keywords   ("tools" "unix"))

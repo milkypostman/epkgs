@@ -6,4 +6,4 @@
  :maintainer ("Rolf Ebert")
  :provided   (ada-gpr ada-gpr-mode)
  :required   ((("ada-mode" ada-mode)))
- :keywords   ("languages" "ada"))
+ :keywords   ("ada" "languages"))

@@ -7,5 +7,5 @@
  :maintainer ("David O'Toole" . "dto@gnu.org")
  :provided   (cell grid)
  :required   ((("cl" cl)))
- :keywords   ("hypermedia" "tools" "lisp")
+ :keywords   ("hypermedia" "lisp" "tools")
  :wikipage   "http://www.emacswiki.org/CellMode")

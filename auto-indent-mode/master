@@ -2,8 +2,7 @@
  :created    "20101106"
  :updated    "20110408"
  :license    "GPL-3"
- :authors    (("Matthew L. Fidler")
-	      ("Le Wang & Others"))
+ :authors    (("Matthew L. Fidler, Le Wang & Others"))
  :maintainer ("Matthew L. Fidler")
  :provided   (auto-indent-mode)
  :required   ((("cl" cl)))

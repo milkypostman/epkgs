@@ -3,8 +3,8 @@
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"
- :authors    (("Stefan Reichoer"))
- :maintainer ("Stefan Reichoer")
+ :authors    (("Stefan Reichoer," . "stefan@xsteve.at"))
+ :maintainer ("Stefan Reichoer," . "stefan@xsteve.at")
  :provided   (baz baz-dvc bzr bzr-core bzr-dvc bzr-gnus bzr-revision bzr-revlog bzr-submit bzr-tests dvc-about dvc-annotate dvc-be dvc-bookmarks dvc-buffers dvc-bug dvc-cmenu dvc-config dvc-core dvc-defs dvc-diff dvc-emacs dvc-fileinfo dvc-gnus dvc-lisp dvc-log dvc-register dvc-revlist dvc-revlog dvc-site dvc-state dvc-status dvc-tests-utils dvc-tips dvc-ui dvc-unified dvc-utils dvc-xemacs tla tla-autoconf tla-bconfig tla-browse tla-core tla-defs tla-dvc tla-gnus tla-tests xdarcs xdarcs-core xdarcs-dvc xgit xgit-annotate xgit-core xgit-dvc xgit-gnus xgit-log xgit-log-edit xgit-rebase-todo xgit-revision xhg xhg-annotate xhg-be xhg-core xhg-dvc xhg-gnus xhg-log xhg-mq xhg-revision xmtn-automate xmtn-base xmtn-basic-io xmtn-compat xmtn-conflicts xmtn-dvc xmtn-ids xmtn-match xmtn-minimal xmtn-multi-status xmtn-propagate xmtn-revlist xmtn-run xmtn-sync xmtn-tests)
  :required   ((("add-log" add-log)
 	       ("cl" cl)

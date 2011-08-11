@@ -7,7 +7,7 @@
  :maintainer ("Kenichirou Oyama" . "k1lowxb@gmail.com")
  :provided   (anything-exuberant-ctags)
  :required   ((("anything" anything)))
- :keywords   ("anything" "exuberant" "ctags")
+ :keywords   ("anything" "exuberant ctags")
  :homepage   "https://github.com/k1LoW/anything-exuberant-ctags"
  :commentary "\
 This package use `anything' as a interface to find tag with Exuberant ctags.

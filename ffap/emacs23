@@ -6,7 +6,7 @@
  :maintainer ("FSF")
  :provided   (ffap)
  :required   ((("mail-extr" mail-extr)))
- :keywords   ("files" "hypermedia" "matching" "mouse" "convenience")
+ :keywords   ("convenience" "files" "hypermedia" "matching" "mouse")
  :commentary "\
 Command find-file-at-point replaces find-file.  With a prefix, it
 behaves exactly like find-file.  Without a prefix, it first tries

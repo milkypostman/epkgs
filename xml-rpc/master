@@ -11,7 +11,7 @@
 	       ("timezone" timezone)
 	       ("url" url-http)
 	       ("xml" xml)))
- :keywords   ("xml" "rpc" "network")
+ :keywords   ("network" "rpc" "xml")
  :homepage   "https://launchpad.net/xml-rpc-el"
  :wikipage   "http://www.emacswiki.org/XmlRpc"
  :commentary "\

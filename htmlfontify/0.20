@@ -9,6 +9,6 @@
 	       ("emacs-core" faces font-lock)
 	       ("emacs-obsolete" fast-lock)
 	       (nil hfy-emacs20)))
- :keywords   ("html" "hypermedia" "markup" "etags")
+ :keywords   ("etags" "html" "hypermedia" "markup")
  :homepage   "http://rtfm.etla.org/emacs/htmlfontify/"
  :wikipage   "http://www.emacswiki.org/HtmlFontify")

@@ -7,7 +7,7 @@
  :provided   (anything-dired-history)
  :required   ((("anything" anything)
 	       ("dired" dired)))
- :keywords   ("anything" "dired" "history")
+ :keywords   ("anything" "dired history")
  :homepage   "https://github.com/jixiuf/anything-dired-history"
  :commentary "\
 Someone like to reuse the current dired buffer to visit

@@ -4,7 +4,6 @@
  :updated    "20110203"
  :license    "GPL-2"
  :authors    (("Le Wang"))
- :maintainer ("Le Wang (lewang.emacs!!!gmayo.com remove exclamations")
  :provided   (LRU-yank)
  :required   ((("cl" cl)))
  :homepage   "https://github.com/lewang/le_emacs_LRU_yank"

@@ -9,7 +9,7 @@
 	       ("cl" cl)
 	       ("psgml" psgml)
 	       ("tehom-psgml" tehom-psgml)))
- :keywords   ("hypermedia" "extensions" "tools")
+ :keywords   ("extensions" "hypermedia" "tools")
  :homepage   "http://panix.com/~tehom/"
  :commentary "\
 Purpose

@@ -8,7 +8,7 @@
  :required   ((("anything" anything)
 	       ("emacs-core" simple)
 	       ("url" url)))
- :keywords   ("convenience" "anything" "javadoc" "help" "lookup")
+ :keywords   ("anything" "convenience" "help" "javadoc" "lookup")
  :commentary "\
 Some anything configurations for quickly open javadocs.
 

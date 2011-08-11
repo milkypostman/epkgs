@@ -3,9 +3,7 @@
  :created    "2011"
  :updated    "2011"
  :license    "GPL-3"
- :authors    (("Jonas Baumann"))
- :maintainer ("Jonas Baumann")
  :provided   (plone-mode)
  :required   ((("json" json)))
- :keywords   ("plone" "zope" "python")
+ :keywords   ("emacs" "plone" "python" "zope")
  :homepage   "https://github.com/jone/plone-mode.el")

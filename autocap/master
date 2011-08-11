@@ -5,7 +5,7 @@
  :authors    (("Dave Love" . "fx@gnu.org"))
  :maintainer ("Dave Love" . "fx@gnu.org")
  :provided   (autocap)
- :keywords   ("convenience" "abbrev" "wp")
+ :keywords   ("abbrev" "convenience" "wp")
  :homepage   "http://www.loveshack.ukfsn.org/emacs/"
  :commentary "\
 auto-capitalize-mode attempts to capitalize (only) the beginning of

@@ -20,6 +20,6 @@
 	       ("tiny-tools" calist)
 	       ("w3" images w3)
 	       (nil x-face-mule)))
- :keywords   ("mail" "news" "mime" "multimedia" "multilingual" "encoded-word")
+ :keywords   ("encoded-word" "mail" "mime" "multilingual" "multimedia" "news")
  :homepage   "http://www.kanji.zinbun.kyoto-u.ac.jp/~tomo/lemi/"
  :wikipage   "http://www.emacswiki.org/SemiIsEmacsMimeInterface")

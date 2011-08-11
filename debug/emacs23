@@ -6,6 +6,6 @@
  :provided   (debug)
  :required   ((("button" button)
 	       ("help-mode" help-mode)))
- :keywords   ("lisp" "tools" "maint")
+ :keywords   ("lisp" "maint" "tools")
  :commentary "\
 This is a major mode documented in the Emacs Lisp manual.")

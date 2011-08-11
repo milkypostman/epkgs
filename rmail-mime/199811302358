@@ -7,6 +7,6 @@
  :provided   (rmail-mime)
  :required   ((("rmail" rmail)
 	       ("semi" mime-view)))
- :keywords   ("mime" "multimedia" "mail")
+ :keywords   ("mail" "mime" "multimedia")
  :homepage   "http://www.kanji.zinbun.kyoto-u.ac.jp/~tomo/lemi/"
  :wikipage   "http://www.emacswiki.org/RmailMime")

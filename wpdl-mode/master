@@ -5,7 +5,7 @@
  :authors    (("Scott Andrew Borton" . "scott@pp.htv.fi"))
  :maintainer ("Scott Andrew Borton" . "scott@pp.htv.fi")
  :provided   (wpdl-mode)
- :keywords   ("wpdl" "major-mode")
+ :keywords   ("major-mode" "wpdl")
  :commentary "\
 This mode is an example used in a tutorial about Emacs
 mode creation. The tutorial can be found here:

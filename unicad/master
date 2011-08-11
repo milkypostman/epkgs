@@ -6,6 +6,6 @@
  :maintainer ("Qichen Huang" . "unicad.el@gmail.com")
  :provided   (unicad)
  :required   ((("cl" cl)))
- :keywords   ("coding-system" "auto-coding-functions")
+ :keywords   ("auto-coding-functions" "coding-system")
  :homepage   "http://www.emacswiki.org/Unicad"
  :wikipage   "http://www.emacswiki.org/Unicad")

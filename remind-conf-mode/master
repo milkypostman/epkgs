@@ -3,13 +3,12 @@
  :created    "2008"
  :updated    "2011"
  :license    "GPL-2"
- :authors    (("Shelagh Manton" . "shelagh.manton@gmail.com")
-	      ("David F. Skoll"))
+ :authors    (("Shelagh Manton" . "shelagh.manton@gmail.com"))
  :maintainer ("Shelagh Manton" . "shelagh.manton@gmail.com")
  :provided   (ac-remind remind-conf-mode)
  :required   ((("auto-complete" auto-complete)
 	       ("emacs-core" font-lock overlay)))
- :keywords   ("remind" "configuration" "convenience")
+ :keywords   ("configuration" "convenience" "remind")
  :homepage   "https://github.com/sshelagh/remind-conf-mode"
  :commentary "\
 Use this mode to help with the configuration of remind configuration files.

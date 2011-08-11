@@ -7,7 +7,7 @@
  :provided   (impress)
  :required   ((("cl" cl)
 	       ("org-mode" org)))
- :keywords   ("tools" "files")
+ :keywords   ("files" "tools")
  :homepage   "https://github.com/dto/emacs-impress"
  :commentary "\
 DONE groups

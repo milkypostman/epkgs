@@ -6,7 +6,7 @@
  :maintainer ("Markus Mohnen and Paul Kinnucan")
  :provided   (jde-findbugs)
  :required   ((("jdee" jde-compile jde-package)))
- :keywords   ("java" "bug" "finder")
+ :keywords   ("bug" "emacs" "finder" "java")
  :commentary "\
 This package provides an interface from JDE (see
 http://jde.sunsite.dk/) to Findbugs (see

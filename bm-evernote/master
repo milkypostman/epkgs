@@ -7,7 +7,7 @@
  :maintainer ("ARISAWA Akihiro" . "awasira@gmail.com")
  :provided   (bm-evernote)
  :required   (((nil evernote-mode)))
- :keywords   ("evernote" "bookmark")
+ :keywords   ("bookmark" "evernote")
  :homepage   "https://github.com/awasira/bm-evernote"
  :commentary "\
 Add the following snippet to the ~/.emacs.d/init.el file:

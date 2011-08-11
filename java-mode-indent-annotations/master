@@ -5,7 +5,7 @@
  :authors    (("Suraj Acharya" . "sacharya@cs.indiana.edu"))
  :maintainer ("Suraj Acharya" . "sacharya@cs.indiana.edu")
  :provided   (java-mode-indent-annotations)
- :keywords   ("cc-mode" "java" "annotations" "indentation")
+ :keywords   ("annotations" "cc-mode" "indentation" "java")
  :commentary "\
 This library tries to indent java annotations
 (http://java.sun.com/j2se/1.5.0/docs/guide/language/annotations.html)

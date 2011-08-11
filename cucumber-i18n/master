@@ -6,7 +6,7 @@
  :authors    (("Yves Senn" . "yves.senn@gmail.com"))
  :maintainer ("Yves Senn" . "yves.senn@gmail.com")
  :provided   (cucumber-i18n)
- :keywords   ("ruby" "cucumber" "rails")
+ :keywords   ("cucumber" "rails" "ruby")
  :homepage   "http://www.emacswiki.org/emacs/CucumberI18nEl"
  :wikipage   "http://www.emacswiki.org/CucumberI18nEl"
  :commentary "\

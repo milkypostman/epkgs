@@ -6,4 +6,4 @@
  :maintainer ("Denis Martinez" . "deuns.martinez@gmail.com")
  :provided   (fcsh-mode)
  :required   ((("comint" comint)))
- :keywords   ("fcsh" "flex" "flash" "actionscript" "mxml" "adobe"))
+ :keywords   ("actionscript" "adobe" "fcsh" "flash" "flex" "mxml"))

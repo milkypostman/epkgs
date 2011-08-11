@@ -7,5 +7,5 @@
  :provided   (switch-window)
  :required   ((("cl" cl)
 	       ("emacs-core" quail)))
- :keywords   ("window" "navigation")
+ :keywords   ("navigation" "window")
  :homepage   "http://tapoueh.org/projects.html#sec19")

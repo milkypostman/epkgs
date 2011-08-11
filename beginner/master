@@ -6,7 +6,7 @@
  :maintainer ("Jason Spiro" . "jasonspiro3@gmail.com")
  :provided   (beginner)
  :required   ((("saveplace" saveplace)))
- :keywords   ("help" "wp" "emulations")
+ :keywords   ("emulations" "help" "wp")
  :commentary "\
 The purpose of beginner-mode is to make Emacs less imposing, so people will
 try it instead of gedit, kate, et cetera.  One way to do it is to

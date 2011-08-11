@@ -5,7 +5,7 @@
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")
  :provided   (second-sel)
- :keywords   ("region" "selection" "yank" "paste" "edit")
+ :keywords   ("edit" "paste" "region" "selection" "yank")
  :commentary "\
 Commands that use the secondary selection.
 

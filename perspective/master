@@ -7,7 +7,7 @@
  :maintainer ("Nathan Weizenbaum")
  :provided   (perspective)
  :required   ((("cl" cl)))
- :keywords   ("workspace" "convenience" "frames")
+ :keywords   ("convenience" "frames" "workspace")
  :commentary "\
 This package provides tagged workspaces in Emacs, similar to
 workspaces in windows managers such as Awesome and XMonad (and

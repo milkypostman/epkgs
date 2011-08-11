@@ -5,7 +5,7 @@
  :maintainer ("Eric Engstrom")
  :provided   (promela-mode)
  :required   ((("emacs-core" font-lock)))
- :keywords   ("spin" "promela" "tools")
+ :keywords   ("promela" "spin" "tools")
  :commentary "\
 This file contains code for a GNU Emacs major mode for editing
 	PROMELA (SPIN) program files.

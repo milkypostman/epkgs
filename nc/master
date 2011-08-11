@@ -8,7 +8,7 @@
  :provided   (nc)
  :required   ((("easymenu" easymenu)
 	       ("shell" shell)))
- :keywords   ("files" "browser" "directory" "shell")
+ :keywords   ("directory" "file browser" "shell")
  :homepage   "http://www.emacswiki.org/NortonCommanderMode"
  :wikipage   "http://www.emacswiki.org/NortonCommanderMode"
  :commentary "\

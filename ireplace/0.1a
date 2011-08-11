@@ -6,7 +6,7 @@
  :maintainer ("Michael Schierl" . "schierlm-public@gmx.de")
  :provided   (ireplace)
  :required   ((("assoc" assoc)))
- :keywords   ("replace" "search" "matching")
+ :keywords   ("matching" "replace" "search")
  :commentary "\
 Sometimes it happens that you are in isearch mode - having entered
 a larger regular expression - and notice that there are much more

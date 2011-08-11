@@ -5,5 +5,5 @@
  :authors    (("Will Mengarini" . "seldon@eskimo.com"))
  :maintainer ("Will Mengarini" . "seldon@eskimo.com")
  :provided   (orwell)
- :keywords   ("abbrev" "emulations" "terminals" "del" "delete" "swap" "exchange" "keymap" "key" "map" "binding" "orthodox" "war" "peace" "freedom" "slavery" "erase" "backspace")
+ :keywords   ("abbrev" "backspace" "binding" "del" "delete" "emulations" "erase" "exchange" "freedom" "key map" "keymap" "orthodox" "peace" "slavery" "swap" "terminals" "war")
  :homepage   "http://www.eskimo.com/~seldon/")

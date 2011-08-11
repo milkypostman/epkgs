@@ -1,10 +1,5 @@
 (:created    "1993"
  :updated    "1993"
- :authors    (("David Fox")
-	      (nil . "fox@cs.nyu.edu")
-	      ("and Frank E. Ritter")
-	      (nil . "ritter@cs.cmu.edu"))
- :maintainer ("David Fox")
  :provided   (auto-aligner dismal dismal-data-structures dismal-extensions dismal-metacolumn dismal-simple-menus float-changes heaps rmatrix semi-coder simple-menu soar-misc vectors)
  :required   ((("cl" cl)
 	       ("info" info)))

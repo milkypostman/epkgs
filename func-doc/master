@@ -6,7 +6,7 @@
  :required   ((("cc-mode" cc-mode)
 	       ("info" info)
 	       ("oo-browser" c-mode)))
- :keywords   ("info" "completion" "commands" "latex" "perl" "awk" "texinfo")
+ :keywords   ("awk" "commands" "completion" "info" "latex" "perl" "texinfo")
  :wikipage   "http://www.emacswiki.org/FuncDoc"
  :commentary "\
 New versions of this package (if they exist) may be found at:

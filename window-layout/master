@@ -5,7 +5,7 @@
  :license    "GPL-3"
  :provided   (window-layout)
  :required   ((("cl" cl)))
- :keywords   ("window" "layout")
+ :keywords   ("layout" "window")
  :homepage   "https://github.com/kiwanami/emacs-window-layout"
  :commentary "\
 Split a frame or window into some windows according to a layout

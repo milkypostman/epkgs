@@ -8,7 +8,7 @@
  :provided   (generic-range-opt)
  :required   ((("cl" cl)
 	       ("thing-opt" thing-opt)))
- :keywords   ("convenience" "delete" "kill" "copy" "mark")
+ :keywords   ("convenience" "copy" "delete" "kill" "mark")
  :homepage   "https://github.com/tm8st/emacs-generic-range-opt"
  :commentary "\
 様々な範囲へのdelete, copy, kill, markを定義する為のelです.

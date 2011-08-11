@@ -7,7 +7,7 @@
  :provided   (bookmark-add)
  :required   ((("bookmark" bookmark)
 	       ("widget" wid-edit)))
- :keywords   ("bookmarks" "placeholders" "annotations")
+ :keywords   ("annotations" "bookmarks" "placeholders")
  :commentary "\
 `bookmark-open-in-symply-buffer' will generate buffer named
 *Bookmark list*, which shows bookmarks from .emacs.bmk.

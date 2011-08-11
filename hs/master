@@ -2,13 +2,7 @@
  :created    "2011"
  :updated    "2011"
  :license    "GPL-3"
- :provided   (auto-complete auto-complete-config auto-complete-etags fuzzy hs hs-align-imports hs-cabal hs-cabal-mode hs-completion hs-config hs-errors hs-faces hs-indent hs-indent-test hs-interactive-mode hs-lang-en hs-lang-pirate hs-macros hs-mode hs-move-nested hs-navigate-imports hs-process hs-project hs-sort-imports hs-string hs-tags hs-types hs-ui paredit popup)
- :required   ((("cl" cl)
-	       ("emacs-core" pp)
-	       ("newcomment" newcomment)
-	       ("regexp-opt" regexp-opt)
-	       ("thingatpt" thingatpt)
-	       (nil rcodetools))
-	      (("cedet" semantic-ia)
-	       (nil semantic/ia)))
+ :provided   (hs hs-align-imports hs-cabal hs-cabal-mode hs-completion hs-config hs-errors hs-faces hs-indent hs-indent-test hs-interactive-mode hs-lang-en hs-lang-pirate hs-macros hs-mode hs-move-nested hs-navigate-imports hs-process hs-project hs-sort-imports hs-string hs-tags hs-types hs-ui)
+ :required   ((("auto-complete" auto-complete)
+	       ("cl" cl)))
  :homepage   "https://github.com/chrisdone/haskell-emacs")

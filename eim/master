@@ -2,9 +2,8 @@
  :created    "2004"
  :updated    "2004"
  :license    "GPL-2"
- :authors    (("Ye Wenbin" . "wenbinye@163.com")
-	      ("ChunYe Wang" . "charleswang@peoplemail.com.cn"))
- :maintainer ("Ye Wenbin" . "wenbinye@163.com")
+ :authors    ((nil . "charleswang@peoplemail.com.cn"))
+ :maintainer (nil . "charleswang@peoplemail.com.cn")
  :provided   (eim)
  :required   ((("cl" cl)))
  :commentary "\

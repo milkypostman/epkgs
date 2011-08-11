@@ -6,7 +6,7 @@
  :authors    (("Johan Andersson" . "johan.rejeep@gmail.com"))
  :maintainer ("Johan Andersson" . "johan.rejeep@gmail.com")
  :provided   (wrap-region)
- :keywords   ("speed" "convenience")
+ :keywords   ("convenience" "speed")
  :wikipage   "http://www.emacswiki.org/WrapRegion"
  :commentary "\
 wrap-region is a minor mode that wraps a region with

@@ -7,7 +7,7 @@
 	       ("flim" smtp)
 	       ("mail-utils" mail-utils)
 	       ("smtpmail" smtpmail)))
- :keywords   ("email" "queue" "mail" "sendmail" "message" "spray" "smtp" "draft")
+ :keywords   ("draft" "email" "mail" "message" "queue" "sendmail" "smtp" "spray")
  :commentary "\
 If you use feedmail, I invite you to send me some email about it.
 I appreciate feedback about problems you find or suggestions for

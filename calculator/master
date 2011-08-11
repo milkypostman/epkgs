@@ -7,7 +7,7 @@
  :provided   (calculator)
  :required   ((("ehelp" ehelp)
 	       ("electric" electric)))
- :keywords   ("tools" "convenience")
+ :keywords   ("convenience" "tools")
  :homepage   "http://www.barzilay.org/"
  :wikipage   "http://www.emacswiki.org/SimpleCalculator"
  :commentary "\

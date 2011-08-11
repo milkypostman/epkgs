@@ -9,7 +9,7 @@
 	       ("cl" cl)
 	       ("custom" custom)
 	       ("emacs-core" font-lock)))
- :keywords   ("c" "languages" "faces")
+ :keywords   ("c" "faces" "languages")
  :wikipage   "http://www.emacswiki.org/CWarnMode"
  :commentary "\
 {{{ Documentation

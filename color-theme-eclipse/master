@@ -8,5 +8,5 @@
  :adapted-by ("Yesudeep Mangalapilly")
  :provided   (color-theme-eclipse)
  :required   ((("color-theme" color-theme)))
- :keywords   ("eclipse" "color" "theme")
+ :keywords   ("color" "eclipse" "emacs" "theme")
  :homepage   "https://github.com/takaken/color-theme-eclipse")

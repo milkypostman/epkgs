@@ -1,8 +1,0 @@
-(:summary    "Scrmable words in a buffer"
- :updated    "20060912"
- :license    "GPL-2"
- :authors    ((nil . "harley@panix.com"))
- :maintainer (nil . "harley@panix.com")
- :provided   (scrmable)
- :commentary "\
-* http://www.livejournal.com/users/jwz/256229.html")

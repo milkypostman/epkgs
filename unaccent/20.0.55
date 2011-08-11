@@ -7,7 +7,7 @@
  :provided   (unaccent)
  :required   (nil
 	      (("strings" strings)))
- :keywords   ("language" "accents")
+ :keywords   ("accents" "language")
  :commentary "\
 Functions dealing with accented characters.
 

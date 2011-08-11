@@ -7,7 +7,7 @@
  :provided   (ido)
  :required   ((("ffap" ffap))
 	      (("tramp" tramp)))
- :keywords   ("extensions" "convenience")
+ :keywords   ("convenience" "extensions")
  :homepage   "http://www.cua.dk/ido.html"
  :wikipage   "http://www.emacswiki.org/InteractivelyDoThings"
  :commentary "\

@@ -7,7 +7,7 @@
  :provided   (etags-select)
  :required   ((("custom" custom)
 	       ("etags" etags)))
- :keywords   ("etags" "tags" "tag" "select")
+ :keywords   ("etags" "select" "tag" "tags")
  :homepage   "http://www.emacswiki.org/EtagsSelect"
  :wikipage   "http://www.emacswiki.org/EtagsSelect"
  :commentary "\

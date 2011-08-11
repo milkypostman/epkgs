@@ -4,7 +4,7 @@
  :authors    (("Masahiro Hayashi" . "mhayashi1120@gmail.com"))
  :maintainer ("Masahiro Hayashi" . "mhayashi1120@gmail.com")
  :provided   (gather)
- :keywords   ("utility" "regexp")
+ :keywords   ("regexp" "utility")
  :homepage   "https://github.com/mhayashi1120/Emacs-gather"
  :commentary "\
 gather.el provides search regexp and kill text. This is not replacing

@@ -4,7 +4,7 @@
  :updated    "20110203"
  :license    "GPL-3"
  :provided   (try-code)
- :keywords   ("programming" "language")
+ :keywords   ("language" "modes" "programming")
  :homepage   "https://github.com/lewang/le_emacs_try_code"
  :wikipage   "http://www.emacswiki.org/TryCode"
  :commentary "\

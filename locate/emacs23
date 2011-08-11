@@ -6,7 +6,7 @@
  :maintainer ("Peter Breton" . "pbreton@cs.umb.edu")
  :provided   (locate)
  :required   ((("dired" dired)))
- :keywords   ("unix" "files")
+ :keywords   ("files" "unix")
  :wikipage   "http://www.emacswiki.org/LocateMode"
  :commentary "\
 Search a database of files and use dired commands on the result.

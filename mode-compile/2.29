@@ -10,6 +10,6 @@
 	       ("custom" custom)
 	       ("emacs-core" backquote byte-compile pp)
 	       ("reporter" reporter)))
- :keywords   ("compile" "compilation" "languages" "xemacs" "gnu" "work" "with" "gnu" "work" "ftp" "www")
+ :keywords   ("anymore" "compilation" "compile" "do" "emacs" "emacses" "for" "fsf" "ftp" "gnu" "languages" "modes" "must" "not" "tested" "with" "work" "www" "xemacs")
  :homepage   "http://www.tls.cena.fr/~boubaker/Emacs/"
  :wikipage   "http://www.emacswiki.org/ModeCompile")

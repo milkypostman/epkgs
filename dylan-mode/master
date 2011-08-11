@@ -3,9 +3,7 @@
  :created    "1994"
  :updated    "1996"
  :license    "GPL-1"
- :authors    (("Robert Stockton" . "rgs@cs.cmu.edu")
-	      ("others")
-	      ("then Chris Page"))
+ :authors    (("Robert Stockton" . "rgs@cs.cmu.edu"))
  :maintainer ("Chris Page" . "cpage@opendylan.org")
  :provided   (dylan-mode slime-dylan)
  :required   ((("emacs-core" font-lock)

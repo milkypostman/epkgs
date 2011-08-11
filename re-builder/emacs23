@@ -9,7 +9,7 @@
 	       ("rx" rx)
 	       ("sregex" sregex)
 	       (nil lisp-re)))
- :keywords   ("matching" "lisp" "tools")
+ :keywords   ("lisp" "matching" "tools")
  :wikipage   "http://www.emacswiki.org/ReBuilder"
  :commentary "\
 When I have to come up with regular expressions that are more

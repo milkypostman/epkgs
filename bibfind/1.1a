@@ -8,7 +8,7 @@
  :required   ((("bibtex" bibtex)
 	       ("url" url-cookie)
 	       ("w3" w3-forms)))
- :keywords   ("tex" "www" "wp")
+ :keywords   ("tex" "wp" "www")
  :commentary "\
 This packages provides an Emacs Lisp interface to obtaining BibTeX
 entries from an online source.  Currently supported sources are

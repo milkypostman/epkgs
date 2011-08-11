@@ -3,7 +3,7 @@
  :license    "GPL-2"
  :authors    (("Andrew J Cosgriff" . "ajc@bing.wattle.id.au"))
  :maintainer ("Andrew J Cosgriff" . "ajc@bing.wattle.id.au")
- :keywords   ("palm" "pilot" "memo")
+ :keywords   ("memo" "palm" "pilot")
  :homepage   "http://polydistortion.net/sw/emacs-lisp/"
  :commentary "\
 Inspired by David Maslen :)

@@ -8,7 +8,7 @@
  :required   ((("cl" cl)
 	       ("highlight" highlight)
 	       ("rx" rx)))
- :keywords   ("lisp" "highlight" "convenience")
+ :keywords   ("convenience" "highlight" "lisp")
  :homepage   "http://www.emacswiki.org/EvalSexpFu"
  :wikipage   "http://www.emacswiki.org/EvalSexpFu"
  :commentary "\

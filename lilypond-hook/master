@@ -6,7 +6,7 @@
  :authors    (("Martyn Jago"))
  :maintainer ("Martyn Jago")
  :provided   (lilypond-hook)
- :keywords   ("lilypond" "score" "engraving" "music")
+ :keywords   ("engraving" "lilypond" "music" "score")
  :homepage   "https://github.com/mjago/lilypond-hook"
  :commentary "\
 This package provides an Emacs post-save hook to automate the generation

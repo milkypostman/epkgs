@@ -6,7 +6,7 @@
  :maintainer ("Joyer Huang" . "collger@eyou.com")
  :provided   (hexview-mode)
  :required   ((("cl" cl)))
- :keywords   ("hex" "view" "fast" "user" "interface")
+ :keywords   ("fast" "hex" "user interface" "view")
  :homepage   "http://www.emacswiki.org/HexviewMode"
  :wikipage   "http://www.emacswiki.org/HexviewMode"
  :commentary "\

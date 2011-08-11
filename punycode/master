@@ -3,7 +3,7 @@
  :updated    "2009"
  :license    "GPL-3"
  :provided   (punycode)
- :keywords   ("punycode" "idna" "idn" "unicode" "encoding")
+ :keywords   ("encoding" "idn" "idna" "punycode" "unicode")
  :commentary "\
 A simple wrapper around the command line \"idn\" utility in GNU
 Libidn to make punycode operations available in Emacs.

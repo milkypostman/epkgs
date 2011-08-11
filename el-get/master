@@ -13,7 +13,7 @@
 	       ("notify" notify))
 	      (("package" package)
 	       (nil notifications)))
- :keywords   ("package" "elisp" "install" "elpa" "git" "git-svn" "bzr" "cvs" "svn" "darcs" "hg" "apt-get" "fink" "pacman" "http" "http-tar" "emacswiki")
+ :keywords   ("apt-get" "bzr" "cvs" "darcs" "elisp" "elpa" "emacs" "emacswiki" "fink" "git" "git-svn" "hg" "http" "http-tar" "install" "package" "pacman" "svn")
  :homepage   "https://github.com/dimitri/el-get"
  :commentary "\
 Version String are now inspired by how Emacs itself numbers its version.

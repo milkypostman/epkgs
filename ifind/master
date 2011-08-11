@@ -7,7 +7,7 @@
  :provided   (ifind)
  :required   ((("custom" custom)
 	       ("igrep" igrep)))
- :keywords   ("tools" "processes" "search")
+ :keywords   ("processes" "search" "tools")
  :commentary "\
 The `ifind' command is like `igrep-find' (which in turn is like
 `grep-find'), except that it uses the awk program to show just one

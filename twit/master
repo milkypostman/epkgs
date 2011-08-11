@@ -3,10 +3,8 @@
  :created    "20070316"
  :updated    "20070319"
  :license    "GPL-2"
- :authors    (("thorne" . "thorne@timbral.net")
-	      ("jonnay" . "jonnay@jonnay.net")
-	      ("docgnome" . "docgnome@gmail.com"))
- :maintainer ("thorne" . "thorne@timbral.net")
+ :authors    ((nil . "docgnome@gmail.com"))
+ :maintainer (nil . "docgnome@gmail.com")
  :provided   (twit)
  :required   ((("cl" cl)
 	       ("url" url url-http)

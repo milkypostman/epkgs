@@ -2,12 +2,11 @@
  :created    "20001207"
  :updated    "20110104"
  :license    "GPL-2"
- :authors    (("Binu Jose Philip")
-	      ("Drew Adams"))
+ :authors    (("Binu Jose Philip, Drew Adams"))
  :maintainer ("Drew Adams")
  :provided   (w32browser-dlgopen)
  :required   ((("cl" cl)))
- :keywords   ("files" "extensions" "convenience" "dialog")
+ :keywords   ("convenience" "dialog" "extensions" "files")
  :commentary "\
 Opens MS Windows standard Open file dialog box.
 

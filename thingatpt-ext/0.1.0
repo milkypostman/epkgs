@@ -8,7 +8,7 @@
  :maintainer ("Henry G. Weller")
  :provided   (thingatpt-ext)
  :required   ((("thingatpt" thingatpt)))
- :keywords   ("completion" "ui" "user" "interface" "sources")
+ :keywords   ("completion" "sources" "ui" "user interface")
  :commentary "\
 Lots of additions to the `thingatpt' package.
 

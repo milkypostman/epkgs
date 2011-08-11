@@ -6,7 +6,7 @@
  :maintainer ("Taiki SUGAWARA" . "buzz.taiki@gmail.com")
  :provided   (lcomp)
  :required   ((("easy-mmode" easy-mmode)))
- :keywords   ("tools" "convenience")
+ :keywords   ("convenience" "tools")
  :commentary "\
 This package provides following features:
 

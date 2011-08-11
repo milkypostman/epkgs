@@ -7,7 +7,7 @@
  :maintainer ("John Wiegley" . "johnw@newartisans.com")
  :provided   (regex-tool)
  :required   ((("cl" cl)))
- :keywords   ("regex" "languages" "programming" "development")
+ :keywords   ("development" "languages" "programming" "regex")
  :commentary "\
 This program currently uses frames only.
 

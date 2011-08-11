@@ -7,7 +7,7 @@
  :provided   (template)
  :required   ((("cl" cl)
 	       ("custom" custom)))
- :keywords   ("template" "comments" "decoration" "auto-updating" "data" "tools")
+ :keywords   ("auto-updating" "comment decoration" "data" "template" "tools")
  :homepage   "http://emacs-template.sourceforge.net/"
  :wikipage   "http://www.emacswiki.org/TemplatesMode"
  :commentary "\

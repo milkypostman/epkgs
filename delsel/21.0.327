@@ -2,12 +2,11 @@
  :created    "19951201"
  :updated    "20110224"
  :license    "GPL-2"
- :authors    (("Matthieu Devin" . "devin@lucid.com")
-	      ("Drew Adams"))
+ :authors    (("Matthieu Devin" . "devin@lucid.com"))
  :maintainer ("D. ADAMS")
  :provided   (delsel)
  :required   ((("cl" cl)))
- :keywords   ("abbrev" "emulations" "local" "convenience")
+ :keywords   ("abbrev" "convenience" "emulations" "local")
  :commentary "\
 Let DEL delete the region; let character insertion replace it.
 

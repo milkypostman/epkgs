@@ -7,7 +7,7 @@
  :provided   (tumme)
  :required   ((("dired" dired)
 	       ("gnus" format-spec)))
- :keywords   ("images" "thumbnails" "dired")
+ :keywords   ("dired" "images" "thumbnails")
  :homepage   "http://www.emacswiki.org/Tumme"
  :wikipage   "http://www.emacswiki.org/Tumme"
  :commentary "\

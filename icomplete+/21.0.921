@@ -6,7 +6,7 @@
  :maintainer ("Drew Adams")
  :provided   (icomplete+)
  :required   ((("icomplete" icomplete)))
- :keywords   ("help" "abbrev" "internal" "extensions" "local")
+ :keywords   ("abbrev" "extensions" "help" "internal" "local")
  :commentary "\
 Extensions to `icomplete.el'.
 

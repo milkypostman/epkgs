@@ -9,7 +9,7 @@
 	       ("emacs-core" font-lock)
 	       ("paren" paren)
 	       ("timer" timer)))
- :keywords   ("reduce" "languages")
+ :keywords   ("languages" "reduce")
  :commentary "\
 ******************
 USE OF REDUCE MODE

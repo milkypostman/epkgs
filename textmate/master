@@ -8,7 +8,7 @@
  :provided   (textmate)
  :required   ((("cl" cl)
 	       ("imenu" imenu)))
- :keywords   ("textmate" "osx" "mac")
+ :keywords   ("mac" "osx" "textmate")
  :wikipage   "http://www.emacswiki.org/TextMate"
  :commentary "\
 This minor mode exists to mimick TextMate's awesome

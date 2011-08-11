@@ -4,7 +4,7 @@
  :authors    (("Tobias.Naehring" . "i@tn-home.de"))
  :maintainer ("Tobias.Naehring" . "i@tn-home.de")
  :provided   (msearch)
- :keywords   ("search" "mouse")
+ :keywords   ("for" "mouse" "search")
  :homepage   "http://www.emacswiki.org/msearch"
  :wikipage   "http://www.emacswiki.org/msearch"
  :commentary "\

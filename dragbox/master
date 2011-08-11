@@ -1,8 +1,5 @@
 (:summary    "Draw a bounding box interactively"
  :repository (git . "https://github.com/jave/dragbox.git")
- :authors    (("Joakim Verona")
-	      ("GPL"))
- :maintainer ("Joakim Verona")
  :provided   (dragbox)
  :required   ((("image-mode" image-mode)
 	       ("xml" xml)))

@@ -6,7 +6,7 @@
  :maintainer ("Drew Adams")
  :provided   (fit-frame)
  :required   ((("cl" cl)))
- :keywords   ("internal" "extensions" "convenience" "local")
+ :keywords   ("convenience" "extensions" "internal" "local")
  :commentary "\
 Resize a frame.  In particular, fit a frame to its buffers.
 

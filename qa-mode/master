@@ -6,5 +6,5 @@
  :authors    (("Yves Senn" . "yves.senn@gmail.com"))
  :maintainer ("Yves Senn" . "yves.senn@gmail.com")
  :provided   (qa-mode)
- :keywords   ("qa" "supermemo" "major" "mode")
+ :keywords   ("major" "mode" "qa" "supermemo")
  :homepage   "https://github.com/senny/qa-mode")

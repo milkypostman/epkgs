@@ -3,9 +3,8 @@
  :created    "2008"
  :updated    "2009"
  :license    "GPL-2"
- :authors    (("pluskid" . "pluskid@gmail.com")
-	      ("joaotavora" . "joaotavora@gmail.com"))
- :maintainer ("pluskid" . "pluskid@gmail.com")
+ :authors    ((nil . "joaotavora@gmail.com"))
+ :maintainer (nil . "joaotavora@gmail.com")
  :provided   (yasnippet yasnippet-debug)
  :required   ((("assoc" assoc)
 	       ("cl" cl)

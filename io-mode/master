@@ -11,5 +11,5 @@
 	       ("emacs-core" font-lock)
 	       ("hideshow" hideshow)
 	       ("newcomment" newcomment)))
- :keywords   ("languages" "io")
+ :keywords   ("io" "languages")
  :homepage   "http://github.com/superbobry/io-mode")
