@@ -6,8 +6,15 @@
  :authors    (("Bozhidar Batsov"))
  :maintainer ("Bozhidar Batsov")
  :provided   (projectile)
- :required   ((("cl" cl)))
+ :required   ((("cl" cl)
+	       ("easymenu" easymenu)
+	       ("thingatpt" thingatpt)))
  :keywords   ("convenience" "project")
  :homepage   "https://github.com/bbatsov/projectile"
  :commentary "\
-This library provides easy project management and navigation.")
+This library provides easy project management and navigation. The
+concept of a project is pretty basic - just a folder containing
+special file. Currently git, mercurial and bazaar repos are
+considered projects by default. If you want to mark a folder
+manually as a project just create an empty .projectile file in
+it. Some of projectile's features:")

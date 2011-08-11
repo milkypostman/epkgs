@@ -9,7 +9,7 @@
 	       ("custom" custom)
 	       ("etags" etags))
 	      (("anything" anything-config anything-match-plugin)))
- :keywords   ("anything" "etags " "forward" "go back")
+ :keywords   ("anything" "etags")
  :homepage   "https://github.com/jixiuf/anything-etags-plus"
  :commentary "\
 This package use `anything' as a interface to find tag with Etags.
