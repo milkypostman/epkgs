@@ -1,6 +1,0 @@
-(:created    "2003"
- :updated    "2003"
- :license    "GPL-2"
- :provided   (rst)
- :required   ((("cl" cl)
-	       ("compile" compile))))
