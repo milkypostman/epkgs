@@ -2,8 +2,8 @@
  :created    "2002"
  :updated    "20090208"
  :license    "GPL-2"
- :authors    (("Matthew P. Hodges"))
- :maintainer ("Matthew P. Hodges")
+ :authors    (("Matthew P. Hodges" . "mphodges@member.fsf.org"))
+ :maintainer ("Matthew P. Hodges" . "mphodges@member.fsf.org")
  :provided   (apt-utils)
  :required   ((("browse-url" browse-url)
 	       ("dired" dired)

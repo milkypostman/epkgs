@@ -1,5 +1,5 @@
 (:updated    "19981017"
- :homepage   "http://www.xcf.berkeley.edu/~ali/"
+ :homepage   "http://www.xcf.berkeley.edu/~ali"
  :commentary "\
 Allows arbitrary elisp code to be embedded within your source code.
 The main function, elpp-process, takes an input buffer, finds the lisp

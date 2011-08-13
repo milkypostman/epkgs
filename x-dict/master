@@ -5,7 +5,7 @@
  :authors    (("Stefan Reichoer," . "stefan@xsteve.at"))
  :maintainer ("Stefan Reichoer," . "stefan@xsteve.at")
  :provided   (x-dict)
- :homepage   "http://www.xsteve.at/prg/emacs/"
+ :homepage   "http://www.xsteve.at/prg/emacs"
  :commentary "\
 x-dict.el provides an Emacs interface for the following dictionaries:
  URL            language

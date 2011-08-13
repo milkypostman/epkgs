@@ -8,4 +8,4 @@
  :required   ((("cl" cl)
 	       ("timer" timer)))
  :keywords   ("extensions" "processes")
- :homepage   "http://quimby.gnus.org/elisp/")
+ :homepage   "http://quimby.gnus.org/elisp")

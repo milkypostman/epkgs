@@ -4,7 +4,7 @@
  :provided   (gdb-keymap)
  :required   ((("cl" cl)))
  :keywords   ("c" "convenience")
- :homepage   "http://emacs.kldp.net/~jay/emacs/"
+ :homepage   "http://emacs.kldp.net/~jay/emacs"
  :commentary "\
 running gdb with c program, what in the heck should i type all the
 verbose keys for stop, step, next, return and inspecting the datas?

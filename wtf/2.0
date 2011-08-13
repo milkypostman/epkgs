@@ -6,7 +6,7 @@
  :maintainer ("Michael Olson" . "mwolson@gnu.org")
  :provided   (wtf)
  :required   ((("custom" cus-edit)))
- :homepage   "http://mwolson.org/"
+ :homepage   "http://mwolson.org"
  :commentary "\
 wtf.el provides the ability to look up the definitions of popular
 conversational and computing acronyms.

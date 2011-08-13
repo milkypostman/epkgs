@@ -4,7 +4,7 @@
  :license    "GPL-2"
  :provided   (mutt-alias)
  :required   ((("cl" cl)))
- :homepage   "http://www.davep.org/emacs/"
+ :homepage   "http://www.davep.org/emacs"
  :wikipage   "http://www.emacswiki.org/MuttAliases"
  :commentary "\
 mutt-alias allows you to lookup and insert the expansion of mutt mail

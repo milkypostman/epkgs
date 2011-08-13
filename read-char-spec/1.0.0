@@ -6,7 +6,7 @@
  :maintainer ("Edward O'Connor" . "hober0@gmail.com")
  :provided   (read-char-spec)
  :keywords   ("convenience")
- :homepage   "http://edward.oconnor.cx/elisp/"
+ :homepage   "http://edward.oconnor.cx/elisp"
  :commentary "\
 Provides a generalization of the `y-or-n-p' UI for when you have
 other possible answers. `read-char-spec' is to `read-char' as

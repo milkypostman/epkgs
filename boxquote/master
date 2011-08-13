@@ -5,7 +5,7 @@
  :provided   (boxquote)
  :required   ((("cl" cl)
 	       ("rect" rect)))
- :homepage   "http://www.davep.org/emacs/"
+ :homepage   "http://www.davep.org/emacs"
  :wikipage   "http://www.emacswiki.org/BoxQuote"
  :commentary "\
 boxquote provides a set of functions for using a text quoting style that

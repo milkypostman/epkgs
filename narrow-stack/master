@@ -6,7 +6,7 @@
  :provided   (narrow-stack)
  :required   ((("advice" advice)))
  :keywords   ("narrow")
- :homepage   "http://www.imada.sdu.dk/~blackie/emacs/"
+ :homepage   "http://www.imada.sdu.dk/~blackie/emacs"
  :commentary "\
 Narrowing, as implemented in Emacs has one limitation, which I find very
 annoying, namely that it is not possible to narrow within a narrowing,

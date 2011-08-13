@@ -3,4 +3,4 @@
  :maintainer ("Sami Salkosuo" . "sami@roguemail.net")
  :provided   (elite-for-emacs)
  :required   ((("cl" cl)))
- :homepage   "http://www.elite-for-emacs.org/elite-for-emacs/")
+ :homepage   "http://www.elite-for-emacs.org/elite-for-emacs")

@@ -4,12 +4,13 @@
  :updated    "2002"
  :license    "GPL-2"
  :authors    (("$Author$"))
+ :maintainer ("Matthew O. Smith" . "m0smith@yahoo.com")
  :provided   (starteam vc-starteam)
  :required   ((("dired" dired)
 	       ("elib" string)
 	       ("vc" vc)))
  :keywords   ("tools")
- :homepage   "http://sourceforge.net/projects/starteam-el/"
+ :homepage   "http://sourceforge.net/projects/starteam-el"
  :wikipage   "http://www.emacswiki.org/StarTeam"
  :commentary "\
 Contributors:

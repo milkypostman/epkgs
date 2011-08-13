@@ -8,7 +8,7 @@
  :provided   (nav)
  :required   ((("ack" ack)
 	       ("dired" dired)))
- :homepage   "http://code.google.com/p/emacs-nav/"
+ :homepage   "http://code.google.com/p/emacs-nav"
  :wikipage   "http://www.emacswiki.org/Nav"
  :commentary "\
 To use this file, put something like the following in your

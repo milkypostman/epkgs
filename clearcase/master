@@ -16,5 +16,5 @@
 	       ("timer" timer)
 	       ("tq" tq)))
  :keywords   ("clearcase" "tools")
- :homepage   "http://members.verizon.net/kevin.a.esler/EmacsClearCase/"
+ :homepage   "http://members.verizon.net/kevin.a.esler/EmacsClearCase"
  :wikipage   "http://www.emacswiki.org/ClearCase")

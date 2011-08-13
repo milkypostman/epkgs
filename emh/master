@@ -11,4 +11,4 @@
 	       ("mh-e" mh-comp mh-e)
 	       ("semi" mime-bbdb mime-edit mime-view semi-setup)))
  :keywords   ("encoded-word" "mail" "mh" "mime" "multilingual" "multimedia")
- :homepage   "http://www.kanji.zinbun.kyoto-u.ac.jp/~tomo/lemi/")
+ :homepage   "http://www.kanji.zinbun.kyoto-u.ac.jp/~tomo/lemi")

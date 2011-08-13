@@ -8,5 +8,5 @@
 	       ("info" info)
 	       ("shell" shell)
 	       ("thingatpt" thingatpt)))
- :homepage   "http://caml.inria.fr/"
+ :homepage   "http://caml.inria.fr"
  :wikipage   "http://www.emacswiki.org/CamlMode")

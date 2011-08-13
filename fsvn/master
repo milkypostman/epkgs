@@ -18,7 +18,7 @@
 	       (nil mw32script))
 	      (("electric" electric)))
  :keywords   ("subversion" "svn")
- :homepage   "http://fsvn.sourceforge.jp/"
+ :homepage   "http://fsvn.sourceforge.jp"
  :commentary "\
 fsvn supports
  * GNU Emacs 23.x or later.

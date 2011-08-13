@@ -2,8 +2,8 @@
  :created    "1996"
  :updated    "2011"
  :license    "GPL-3"
- :authors    (("John Heidemann"))
- :maintainer ("John Heidemann")
+ :authors    (("John Heidemann" . "johnh@isi.edu"))
+ :maintainer ("John Heidemann" . "johnh@isi.edu")
  :provided   (mouse-drag)
  :keywords   ("mouse")
  :commentary "\

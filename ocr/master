@@ -2,5 +2,5 @@
  :updated    "20040914"
  :license    "GPL-2"
  :provided   (ocr)
- :homepage   "http://mdxi.collapsar.net/hacks/emacs/ocr-mode/"
+ :homepage   "http://mdxi.collapsar.net/hacks/emacs/ocr-mode"
  :wikipage   "http://www.emacswiki.org/OcrMode")

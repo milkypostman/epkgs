@@ -8,4 +8,4 @@
 	       ("easymenu" easymenu)
 	       ("reporter" reporter)))
  :keywords   ("lout" "wp")
- :homepage   "http://emarsden.chez.com/lout/")
+ :homepage   "http://emarsden.chez.com/lout")

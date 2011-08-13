@@ -8,4 +8,4 @@
 	       ("cl" cl)
 	       ("edmacro" edmacro)))
  :keywords   ("macros")
- :homepage   "http://www.imada.sdu.dk/~blackie/emacs/")
+ :homepage   "http://www.imada.sdu.dk/~blackie/emacs")

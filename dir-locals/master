@@ -6,7 +6,7 @@
  :maintainer ("Dave Love" . "fx@gnu.org")
  :provided   (dir-locals)
  :keywords   ("files")
- :homepage   "http://www.loveshack.ukfsn.org/emacs/"
+ :homepage   "http://www.loveshack.ukfsn.org/emacs"
  :commentary "\
 It can be useful to specify local variables directory-wide, e.g. to
 define CC mode styles consistently.  This library implements such a

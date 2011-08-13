@@ -10,4 +10,4 @@
 	       ("emacs-core" backquote)
 	       ("reporter" reporter)))
  :keywords   ("minor-mode" "opengl")
- :homepage   "http://www.cs.utah.edu/~karra/code/")
+ :homepage   "http://www.cs.utah.edu/~karra/code")

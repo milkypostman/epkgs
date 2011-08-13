@@ -5,7 +5,7 @@
  :authors    (("Dave Love" . "fx@gnu.org"))
  :maintainer ("Dave Love" . "fx@gnu.org")
  :provided   (cif)
- :homepage   "http://www.loveshack.ukfsn.org/emacs/"
+ :homepage   "http://www.loveshack.ukfsn.org/emacs"
  :commentary "\
 Has a superset (roughly) of the useful functionality of a version
 done by Martyn Winn.  This is a completely different implementation

@@ -6,5 +6,5 @@
  :maintainer ("Martin Blais" . "blais@furius.ca")
  :provided   (smartquotes)
  :keywords   ("characters" "unicode")
- :homepage   "http://furius.ca/pubcode/"
+ :homepage   "http://furius.ca/pubcode"
  :wikipage   "http://www.emacswiki.org/SmartQuotes")

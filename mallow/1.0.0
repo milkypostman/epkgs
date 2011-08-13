@@ -9,7 +9,7 @@
 	       ("erc-robot" erc-robot)
 	       ("url" url)))
  :keywords   ("comm")
- :homepage   "http://edward.oconnor.cx/elisp/"
+ :homepage   "http://edward.oconnor.cx/elisp"
  :commentary "\
 A simple bot that I'm running in OPN's #emacs channel. I run it
 in a detached screen session.")

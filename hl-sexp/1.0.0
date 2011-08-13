@@ -7,7 +7,7 @@
  :provided   (hl-sexp)
  :required   ((("thingatpt" thingatpt)))
  :keywords   ("emulation" "faces" "frames")
- :homepage   "http://edward.oconnor.cx/elisp/"
+ :homepage   "http://edward.oconnor.cx/elisp"
  :commentary "\
 A cheap hack of hl-line.el to highlight the thingy at point instead
 of the line at point. Sort of inspired by a post by Kent Pitman to

@@ -12,7 +12,7 @@
 	       ("ring" ring)
 	       ("timer" timer)))
  :keywords   ("chat" "irc")
- :homepage   "http://www.nongnu.org/circe/"
+ :homepage   "http://www.nongnu.org/circe"
  :wikipage   "http://www.emacswiki.org/Circe"
  :commentary "\
 This is yet another IRC client for Emacs. It is not as small as

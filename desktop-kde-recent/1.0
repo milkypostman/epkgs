@@ -5,4 +5,4 @@
  :maintainer ("Michel Schinz" . "schinz@alphanet.ch")
  :provided   (desktop-kde-recent)
  :keywords   ("desktop" "kde")
- :homepage   "http://lampwww.epfl.ch/~schinz/elisp/")
+ :homepage   "http://lampwww.epfl.ch/~schinz/elisp")

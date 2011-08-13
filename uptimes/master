@@ -6,7 +6,7 @@
  :required   ((("cl" cl)
 	       ("emacs-core" pp)
 	       ("timer" timer)))
- :homepage   "http://www.davep.org/emacs/"
+ :homepage   "http://www.davep.org/emacs"
  :commentary "\
 uptimes provides a simple system for tracking and displaying the uptimes
 of your emacs sessions. Simply loading uptimes.el from your ~/.emacs file

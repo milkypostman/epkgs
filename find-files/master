@@ -6,4 +6,4 @@
  :maintainer ("Robert Fenk")
  :provided   (find-files)
  :keywords   ("convenience " "find-file" "glob pattern")
- :homepage   "http://www.robf.de/Hacking/elisp/")
+ :homepage   "http://www.robf.de/Hacking/elisp")

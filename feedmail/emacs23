@@ -1,7 +1,7 @@
 (:summary    "Assist other email packages to massage outgoing messages"
  :license    "public-domain"
- :authors    (("Bill Carpenter"))
- :maintainer ("Bill Carpenter")
+ :authors    (("Bill Carpenter" . "bill@carpenter.org"))
+ :maintainer ("Bill Carpenter" . "bill@carpenter.org")
  :provided   (feedmail)
  :required   ((("cl" cl)
 	       ("mail-utils" mail-utils)

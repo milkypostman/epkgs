@@ -4,7 +4,7 @@
  :provided   (bm)
  :required   ((("emacs-core" overlay)
 	       ("info" info)))
- :homepage   "http://www.nongnu.org/bm/"
+ :homepage   "http://www.nongnu.org/bm"
  :wikipage   "http://www.emacswiki.org/VisibleBookmarks"
  :commentary "\
 Description:

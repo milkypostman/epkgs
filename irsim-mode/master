@@ -1,5 +1,5 @@
 (:provided   (irsim-mode)
  :required   ((("cl" cl)
 	       ("emacs-core" font-lock)))
- :homepage   "http://code.google.com/p/irsim-mode/"
+ :homepage   "http://code.google.com/p/irsim-mode"
  :wikipage   "http://www.emacswiki.org/IrsimMode")

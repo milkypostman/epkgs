@@ -6,7 +6,7 @@
  :maintainer ("Kyle Jones" . "kyle_jones@wonderworks.com")
  :provided   (c-comment-edit)
  :keywords   ("languages")
- :homepage   "http://www.wonderworks.com/"
+ :homepage   "http://www.wonderworks.com"
  :commentary "\
 Send bug reports to kyle_jones@wonderworks.com
 

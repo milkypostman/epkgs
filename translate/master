@@ -1,8 +1,8 @@
 (:created    "2003"
  :updated    "20030727"
  :license    "GPL-2"
- :authors    (("Holger Schauer"))
- :maintainer ("Holger Schauer")
+ :authors    (("Holger Schauer" . "holger.schauer@gmx.de"))
+ :maintainer ("Holger Schauer" . "holger.schauer@gmx.de")
  :provided   (translate)
  :required   ((("cl" cl)))
  :keywords   ("translation" "words")

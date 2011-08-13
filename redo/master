@@ -4,7 +4,7 @@
  :license    "GPL-2"
  :provided   (redo)
  :keywords   ("extensions" "lisp")
- :homepage   "http://www.wonderworks.com/"
+ :homepage   "http://www.wonderworks.com"
  :wikipage   "http://www.emacswiki.org/RedoMode"
  :commentary "\
 Derived partly from lisp/prim/simple.el in XEmacs.

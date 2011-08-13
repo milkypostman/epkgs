@@ -9,7 +9,7 @@
 	       ("gnus" message)
 	       ("vm" vm)))
  :keywords   ("bbbd" "vm" "xemacs")
- :homepage   "http://www.robf.de/Hacking/elisp/"
+ :homepage   "http://www.robf.de/Hacking/elisp"
  :commentary "\
 Put this file into your load path and add the following line to your ~/.vm
 or BBDB startup file or ~/.emacs resp.  ~/.xemacs/init.el ...

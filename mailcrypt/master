@@ -8,5 +8,5 @@
 	       ("itimer" itimer)
 	       ("rfc822" rfc822)
 	       ("timer" timer)))
- :homepage   "http://mailcrypt.sourceforge.net/"
+ :homepage   "http://mailcrypt.sourceforge.net"
  :wikipage   "http://www.emacswiki.org/MailCrypt")

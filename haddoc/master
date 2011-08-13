@@ -7,7 +7,7 @@
  :maintainer ("Martin Blais" . "blais@furius.ca")
  :provided   (haddoc)
  :required   ((("browse-url" browse-url)))
- :homepage   "http://furius.ca/haddoc/"
+ :homepage   "http://furius.ca/haddoc"
  :commentary "\
 From a database of parsed Python HTML indexes, queries that database using an
 external tool (haddoc-lookup) and directs a web browser to the selected page.

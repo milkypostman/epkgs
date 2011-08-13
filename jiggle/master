@@ -8,7 +8,7 @@
  :required   ((("advice" advice)
 	       ("cl" cl)))
  :keywords   ("cursor" "frames" "hardware" "jiggle" "shake")
- :homepage   "http://www.eskimo.com/~seldon/"
+ :homepage   "http://www.eskimo.com/~seldon"
  :commentary "\
 When small fonts are used to pack a maximum amount of text onto the
 screen, the steady box cursor used by default with Emacs under windowing

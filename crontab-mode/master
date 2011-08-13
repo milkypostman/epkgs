@@ -1,5 +1,6 @@
 (:summary    "Mode for editing crontab files"
  :updated    "20051004"
+ :license    "GPL-2"
  :authors    (("Harley Gorrell" . "harley@mahalito.net"))
  :maintainer ("Harley Gorrell" . "harley@mahalito.net")
  :provided   (crontab-mode)

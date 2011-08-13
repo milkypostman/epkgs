@@ -8,7 +8,7 @@
  :required   (nil
 	      (("emacs-core" syntax)))
  :keywords   ("data" "languages")
- :homepage   "http://www.loveshack.ukfsn.org/emacs/"
+ :homepage   "http://www.loveshack.ukfsn.org/emacs"
  :commentary "\
 C99 defines escape sequences for Unicode characters in strings and
 languages like Python do similarly.  This package defines functions

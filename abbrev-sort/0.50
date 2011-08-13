@@ -8,7 +8,7 @@
  :required   ((("advice" advice)
 	       ("cl" cl)))
  :keywords   ("abbrev" "convenience")
- :homepage   "http://www.eskimo.com/~seldon/"
+ :homepage   "http://www.eskimo.com/~seldon"
  :commentary "\
 If you have a large number of abbrevs (I have 471) you may want to put
 them under version control.  If you do that with standard Emacs, you'll

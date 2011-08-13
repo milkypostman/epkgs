@@ -4,4 +4,4 @@
  :provided   (etrack)
  :required   ((("cl" cl)
 	       ("comint" comint)))
- :homepage   "http://www.gnuvola.org/software/etrack/")
+ :homepage   "http://www.gnuvola.org/software/etrack")

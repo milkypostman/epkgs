@@ -8,7 +8,7 @@
  :required   ((("emacs-core" cust-print)
 	       (nil cl-read)))
  :keywords   ("extensions")
- :homepage   "www.panix.com/~tehom/"
+ :homepage   "www.panix.com/~tehom"
  :commentary "\
 This package is intended to easily save and restore the state of
 any moderately complex elisp application.  To use it, represent all

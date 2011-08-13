@@ -2,8 +2,8 @@
  :created    "1999"
  :updated    "1999"
  :license    "GPL-2"
- :authors    (("Erik Helander"))
- :maintainer ("Erik Helander")
+ :authors    (("Erik Helander" . "erik.helander@telia.com"))
+ :maintainer ("Erik Helander" . "erik.helander@telia.com")
  :provided   (psgml-table)
  :required   ((("psgml" psgml-parse)))
  :commentary "\

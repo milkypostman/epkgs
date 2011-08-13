@@ -7,7 +7,7 @@
  :provided   (fm)
  :required   ((("emacs-core" overlay)))
  :keywords   ("outlines")
- :homepage   "http://www.anc.ed.ac.uk/~stephen/emacs/"
+ :homepage   "http://www.anc.ed.ac.uk/~stephen/emacs"
  :commentary "\
 As you move through the lines of an output buffer (such as from
 `grep' or `occur'), another window highlights the corresponding

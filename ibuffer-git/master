@@ -9,7 +9,7 @@
  :required   ((("cl" cl)
 	       ("ibuffer" ibuffer)))
  :keywords   ("convenience")
- :homepage   "http://jrockway.github.com/ibuffer-git/"
+ :homepage   "http://jrockway.github.com/ibuffer-git"
  :commentary "\
 This package adds git integration to Ibuffer.  Two columns are
 defined, git-status and git-status-mini.

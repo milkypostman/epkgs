@@ -2,8 +2,8 @@
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"
- :authors    (("U-ITIHQ\\Tobias.Naehring"))
- :maintainer ("U-ITIHQ\\Tobias.Naehring")
+ :authors    (("U-ITIHQ\\Tobias.Naehring" . "tobias.naehring@rechner64.itihq.local"))
+ :maintainer ("U-ITIHQ\\Tobias.Naehring" . "tobias.naehring@rechner64.itihq.local")
  :provided   (calc-inline)
  :keywords   ("tools" "wp")
  :commentary "\

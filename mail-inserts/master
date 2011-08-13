@@ -3,4 +3,4 @@
  :license    "GPL-2"
  :provided   (mail-inserts)
  :required   (((nil aw)))
- :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/email/")
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/email")

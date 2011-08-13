@@ -2,4 +2,4 @@
  :updated    "20011003"
  :provided   (iuscheme)
  :required   ((("cmuscheme" cmuscheme)))
- :homepage   "http://www.cs.indiana.edu/chezscheme/emacs/")
+ :homepage   "http://www.cs.indiana.edu/chezscheme/emacs")

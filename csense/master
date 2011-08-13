@@ -8,7 +8,7 @@
 	       ("csharp-mode" csharp-mode)
 	       ("etags" etags)
 	       ("rx" rx)))
- :homepage   "http://code.google.com/p/csense/"
+ :homepage   "http://code.google.com/p/csense"
  :wikipage   "http://www.emacswiki.org/CSense"
  :commentary "\
 Generic Code Sense frontend for assistance during coding.

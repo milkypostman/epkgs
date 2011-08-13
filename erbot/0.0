@@ -31,5 +31,5 @@
 	       ("wtf" wtf)
 	       (nil bash-quotes erc-nickserv lispy)))
  :keywords   ("bot" "chat" "erc" "irc" "robot")
- :homepage   "http://mwolson.org/projects/"
+ :homepage   "http://mwolson.org/projects"
  :wikipage   "http://www.emacswiki.org/EmacsRobots")

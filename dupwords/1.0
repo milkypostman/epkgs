@@ -2,8 +2,10 @@
  :created    "19980727"
  :updated    "20040411"
  :license    "GPL-2"
+ :authors    ((nil . "stephen eglen stephen@anc.ed.ac.uk"))
+ :maintainer (nil . "stephen eglen stephen@anc.ed.ac.uk")
  :keywords   ("wp")
- :homepage   "http://www.anc.ed.ac.uk/~stephen/emacs/"
+ :homepage   "http://www.anc.ed.ac.uk/~stephen/emacs"
  :commentary "\
 This program will find duplicate words in sentences.  For example,
 in the sentence `The the cat sat on the mat', it will notice that

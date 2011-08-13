@@ -6,4 +6,4 @@
  :provided   (lpc-mode)
  :required   ((("regexp-opt" regexp-opt)))
  :keywords   ("languages" "lpc")
- :homepage   "http://rtfm.etla.org/emacs/lpc-mode/")
+ :homepage   "http://rtfm.etla.org/emacs/lpc-mode")

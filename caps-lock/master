@@ -6,7 +6,7 @@
  :maintainer ("John Paul Wallington" . "jpw@shootybangbang.com")
  :provided   (caps-lock)
  :keywords   ("convenience" "keyboard")
- :homepage   "http://www.shootybangbang.com/"
+ :homepage   "http://www.shootybangbang.com"
  :commentary "\
 Simulates Caps Lock.  Inspired by Hemlock on CMU Common Lisp; by
 capslock.el - a quick and dirty Emacs 19 caps-lock minor mode

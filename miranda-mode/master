@@ -4,4 +4,4 @@
  :provided   (miranda-mode)
  :required   ((("easymenu" easymenu)
 	       ("shell" shell)))
- :homepage   "http://meltin.net/hacks/emacs/")
+ :homepage   "http://meltin.net/hacks/emacs")

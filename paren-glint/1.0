@@ -2,10 +2,12 @@
  :created    "2005"
  :updated    "2005"
  :license    "GPL-2"
+ :authors    (("Karl Landström" . "kland@comhem.se"))
+ :maintainer ("Karl Landström" . "kland@comhem.se")
  :provided   (paren-glint)
  :required   ((("advice" advice)))
  :keywords   ("faces" "languages")
- :homepage   "http://www.brgeight.se/"
+ :homepage   "http://www.brgeight.se"
  :commentary "\
 Installation:
 

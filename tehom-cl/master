@@ -8,7 +8,7 @@
  :required   ((("cl" cl)
 	       ("tehom-font-lock" tehom-font-lock)))
  :keywords   ("extensions" "lisp" "tools")
- :homepage   "http://panix.com/~tehom/"
+ :homepage   "http://panix.com/~tehom"
  :commentary "\
 These functions give the cl package's structures a little more of
 the Common Lisp functionality.")

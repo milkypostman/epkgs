@@ -6,7 +6,7 @@
  :maintainer ("Neil W. Van Dyke" . "neil@neilvandyke.org")
  :provided   (sigbegone)
  :required   ((("custom" cus-edit custom)))
- :homepage   "http://www.neilvandyke.org/sigbegone/"
+ :homepage   "http://www.neilvandyke.org/sigbegone"
  :commentary "\
 INTRODUCTION:
 

@@ -3,7 +3,7 @@
  :maintainer ("Berend de Boer" . "berend@pobox.com")
  :provided   (xplain-mode)
  :keywords   ("xplain")
- :homepage   "http://www.pobox.com/~berend/emacs/"
+ :homepage   "http://www.pobox.com/~berend/emacs"
  :commentary "\
 Syntax hightlighting makes creating Xplain databases even more pleasant.
 

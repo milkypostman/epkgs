@@ -2,8 +2,8 @@
  :created    "1997"
  :updated    "2011"
  :license    "GPL-3"
- :authors    (("Gary D. Foster"))
- :maintainer ("Gary D. Foster")
+ :authors    (("Gary D. Foster" . "gary.foster@corp.sun.com"))
+ :maintainer ("Gary D. Foster" . "gary.foster@corp.sun.com")
  :provided   (crisp)
  :required   ((("cl" cl)
 	       ("scroll-all" scroll-all)))

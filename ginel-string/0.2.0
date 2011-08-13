@@ -5,7 +5,7 @@
  :authors    (("Stefan Hornburg" . "racke@gundel.han.de"))
  :maintainer ("Stefan Hornburg" . "racke@gundel.han.de")
  :provided   (ginel-string)
- :homepage   "http://www.han.de/~racke/ginel/"
+ :homepage   "http://www.han.de/~racke/ginel"
  :commentary "\
 * User functions
 ginel-string-split STRING REGEXP

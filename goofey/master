@@ -5,4 +5,4 @@
  :authors    (("Andrew J Cosgriff" . "ajc@bing.wattle.id.au"))
  :maintainer ("Andrew J Cosgriff" . "ajc@bing.wattle.id.au")
  :keywords   ("emacs" "goofey" "message")
- :homepage   "http://polydistortion.net/sw/emacs-lisp/")
+ :homepage   "http://polydistortion.net/sw/emacs-lisp")

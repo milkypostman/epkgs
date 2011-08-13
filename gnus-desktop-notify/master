@@ -4,7 +4,7 @@
  :provided   (gnus-desktop-notify)
  :required   ((("assoc" assoc)
 	       ("gnus" format-spec gnus-group)))
- :homepage   "http://www.thregr.org/~wavexx/hacks/gnus-desktop-notify/"
+ :homepage   "http://www.thregr.org/~wavexx/hacks/gnus-desktop-notify"
  :wikipage   "http://www.emacswiki.org/GnusDesktopNotify"
  :commentary "\
 Desktop notification integration in Gnus!? Ohh goody!

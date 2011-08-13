@@ -7,7 +7,7 @@
  :maintainer ("Julian Scheid" . "julians37@googlemail.com")
  :provided   (dtrt-indent)
  :keywords   ("c" "convenience" "files" "languages")
- :homepage   "https://savannah.nongnu.org/projects/dtrt-indent/"
+ :homepage   "https://savannah.nongnu.org/projects/dtrt-indent"
  :commentary "\
 A minor mode that guesses the indentation offset originally used
 for creating source code files and transparently adjusts the

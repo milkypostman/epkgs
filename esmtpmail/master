@@ -10,7 +10,7 @@
 	       ("time-stamp" time-stamp)
 	       ("vm" vm-misc vm-pop)))
  :keywords   ("mail")
- :homepage   "http://www.robf.de/Hacking/elisp/"
+ :homepage   "http://www.robf.de/Hacking/elisp"
  :commentary "\
 Send Mail to smtp host from esmtpmail temp buffer.
 

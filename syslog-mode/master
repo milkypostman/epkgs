@@ -1,5 +1,6 @@
 (:summary    "Mode for viewing system logfiles"
  :updated    "20030317"
+ :license    "GPL-2"
  :authors    (("Harley Gorrell" . "harley@mahalito.net"))
  :maintainer ("Harley Gorrell" . "harley@mahalito.net")
  :provided   (syslog-mode)

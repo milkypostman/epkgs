@@ -10,7 +10,7 @@
 	       ("easymenu" easymenu)
 	       ("url" url)
 	       ("w3" w3)))
- :homepage   "http://www.columbia.edu/~jr2075/elisp/"
+ :homepage   "http://www.columbia.edu/~jr2075/elisp"
  :wikipage   "http://www.emacswiki.org/Sudoku"
  :commentary "\
 `sudoku-mode' is a major mode for solving sudoku puzzles. The rules are

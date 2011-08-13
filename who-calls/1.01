@@ -7,7 +7,7 @@
  :provided   (who-calls)
  :required   ((("emacs-core" bytecomp)))
  :keywords   ("lisp")
- :homepage   "http://www.phys.au.dk/~harder/"
+ :homepage   "http://www.phys.au.dk/~harder"
  :commentary "\
 `who-calls' displays all known callers of an Emacs Lisp function.
 To bind it to key, say `C-c C-w', add something like this to your

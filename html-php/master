@@ -7,7 +7,7 @@
  :provided   (html-php)
  :required   ((("multi-mode" multi-mode)))
  :keywords   ("languages")
- :homepage   "http://www.loveshack.ukfsn.org/emacs/"
+ :homepage   "http://www.loveshack.ukfsn.org/emacs"
  :commentary "\
 Multiple-mode editing of PHP embedded in HTML.  Subject to the
 limitations of multi-mode.el.  Note that there's no attempt to deal

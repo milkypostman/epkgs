@@ -2,12 +2,12 @@
  :created    "1999"
  :updated    "1999"
  :license    "GPL-2"
- :authors    (("Tom Breton"))
- :maintainer ("Tom Breton")
+ :authors    (("Tom Breton" . "tehom@localhost"))
+ :maintainer ("Tom Breton" . "tehom@localhost")
  :provided   (tehom-1)
  :required   ((("gnus" gnus-eform gnus-util)))
  :keywords   ("extensions")
- :homepage   "www.panix.com/~tehom/"
+ :homepage   "www.panix.com/~tehom"
  :commentary "\
 tehom-edit-form is a generalization of edit-form (Which is very
 cool; thanks Lars)

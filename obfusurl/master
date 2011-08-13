@@ -5,7 +5,7 @@
  :provided   (obfusurl)
  :required   ((("cl" cl)
 	       ("thingatpt" thingatpt)))
- :homepage   "http://www.davep.org/emacs/"
+ :homepage   "http://www.davep.org/emacs"
  :commentary "\
 obfusurl.el provides `obfuscate-url', a command that will obfuscate an
 URL under the cursor. This might be useful if you are writing out an URL

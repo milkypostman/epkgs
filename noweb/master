@@ -9,7 +9,7 @@
 	       ("easy-mmode" easy-mmode)
 	       ("multi-mode" multi-mode)))
  :keywords   ("languages" "tools")
- :homepage   "http://www.loveshack.ukfsn.org/emacs/"
+ :homepage   "http://www.loveshack.ukfsn.org/emacs"
  :commentary "\
 A sort of major mode for the noweb literate programming system.
 noweb files contain documentation regions which should be edited in

@@ -9,5 +9,5 @@
 	       ("cl" cl)
 	       ("timezone" timezone)))
  :keywords   ("webdav")
- :homepage   "http://www.gohome.org/eldav/"
+ :homepage   "http://www.gohome.org/eldav"
  :wikipage   "http://www.emacswiki.org/ElDav")

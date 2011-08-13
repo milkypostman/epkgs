@@ -3,4 +3,4 @@
  :license    "GPL-2"
  :provided   (csv-writer)
  :required   ((("cl" cl)))
- :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/data-structures/")
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/data-structures")

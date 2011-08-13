@@ -4,4 +4,4 @@
  :provided   (breathe)
  :required   ((("banner" banner)
 	       ("cl" cl)))
- :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/well-being/")
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/well-being")

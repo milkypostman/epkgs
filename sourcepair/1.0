@@ -5,7 +5,7 @@
  :authors    (("Mohamed Hendawi" . "moedev@hendawi.com"))
  :maintainer ("Mohamed Hendawi" . "moedev@hendawi.com")
  :keywords   ("c" "languages" "oop")
- :homepage   "http://www.hendawi.com/"
+ :homepage   "http://www.hendawi.com"
  :commentary "\
 This Emacs lisp file provides the function \"sourcepair-load\" which will load
 the corresponding header or source file for the current buffer.  For example,

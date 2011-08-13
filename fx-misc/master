@@ -11,7 +11,7 @@
 	       ("spook" spook)
 	       ("vc" vc)))
  :keywords   ("extensions")
- :homepage   "http://www.loveshack.ukfsn.org/emacs/"
+ :homepage   "http://www.loveshack.ukfsn.org/emacs"
  :commentary "\
 Some functions and settings from my .emacs that might be useful to
 other people but don't merit a package.  Some of them have been

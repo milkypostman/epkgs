@@ -1,4 +1,4 @@
 (:updated    "19970727"
  :provided   (padr)
  :required   ((("cl" cl)))
- :homepage   "http://www.neilvandyke.org/padr/")
+ :homepage   "http://www.neilvandyke.org/padr")

@@ -11,7 +11,7 @@
 	       ("regexp-opt" regexp-opt)
 	       ("thingatpt" thingatpt)
 	       (nil lisp-doc rep\.structures)))
- :homepage   "http://www.davep.org/emacs/"
+ :homepage   "http://www.davep.org/emacs"
  :wikipage   "http://www.emacswiki.org/SawFishMode"
  :commentary "\
 sawfish.el is an emacs mode for writing code for the sawfish window

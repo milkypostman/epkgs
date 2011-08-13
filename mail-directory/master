@@ -7,4 +7,4 @@
  :provided   (mail-directory)
  :required   ((("cl" cl)))
  :keywords   ("email")
- :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/email/")
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/email")

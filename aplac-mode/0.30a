@@ -14,7 +14,7 @@
 	       ("skeleton" skeleton)
 	       ("tempo" tempo)))
  :keywords   ("aplac" "netlist" "simulator" "syntax")
- :homepage   "http://spice-mode.4t.com/"
+ :homepage   "http://spice-mode.4t.com"
  :commentary "\
 This major mode for emacs provides support for editing APLAC   
 netlist files. It might work on other emacs. I'm testing on emacs21.

@@ -2,8 +2,8 @@
  :created    "1995"
  :updated    "2011"
  :license    "GPL-3"
- :authors    (("Paul D. Smith"))
- :maintainer ("Paul D. Smith")
+ :authors    (("Paul D. Smith" . "psmith@baynetworks.com"))
+ :maintainer ("Paul D. Smith" . "psmith@baynetworks.com")
  :provided   (snmp-mode)
  :required   ((("cl" cl)
 	       ("imenu" imenu)

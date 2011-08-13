@@ -2,4 +2,6 @@
  :created    "1999"
  :updated    "20030517"
  :license    "GPL-2"
+ :authors    ((nil . "roland.winkler@physik.uni-erlangen.de"))
+ :maintainer (nil . "roland.winkler@physik.uni-erlangen.de")
  :provided   (umlaute))

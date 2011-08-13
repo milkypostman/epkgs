@@ -3,7 +3,7 @@
  :updated    "2009"
  :maintainer ("Peter Ilberg" . "peter.ilberg@gmail.com")
  :provided   (malyon malyon-mode)
- :homepage   "http://www.ifarchive.org/"
+ :homepage   "http://www.ifarchive.org"
  :wikipage   "http://www.emacswiki.org/MalyonMode"
  :commentary "\
 This package provides a basic interpreter for version 3, 5, 8 z code

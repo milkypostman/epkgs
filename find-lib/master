@@ -6,7 +6,7 @@
  :maintainer ("lawrence mitchell" . "wence@gmx.li")
  :provided   (find-lib)
  :keywords   ("files" "finding")
- :homepage   "http://www.ph.ed.ac.uk/~s0198183/"
+ :homepage   "http://www.ph.ed.ac.uk/~s0198183"
  :commentary "\
 Have you ever spent time searching for a .el file you know you have
 somewhere?  Or have you ever tried to remember exactly what a file

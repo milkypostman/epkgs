@@ -6,7 +6,7 @@
  :maintainer ("John Paul Wallington" . "jpw@shootybangbang.com")
  :provided   (floatbg)
  :keywords   ("background" "faces" "frames")
- :homepage   "http://www.shootybangbang.com/"
+ :homepage   "http://www.shootybangbang.com"
  :commentary "\
 Modifies backgound color by moving through an hsv color model, like 
 floatbg for X-Windows by Jan Rekers.

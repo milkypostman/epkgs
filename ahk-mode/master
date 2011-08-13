@@ -9,7 +9,7 @@
 	       ("emacs-core" font-lock)
 	       ("w3" w3)))
  :keywords   ("autohotkey" "major mode")
- :homepage   "http://www.robf.de/Hacking/elisp/"
+ :homepage   "http://www.robf.de/Hacking/elisp"
  :commentary "\
 AutoHotKey: Automation, Hotkeys and Scripting for Windows at
 http://www.autohotkey.com/ is a cool tool to make daily life

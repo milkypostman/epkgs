@@ -8,6 +8,6 @@
  :required   ((("itimer" itimer)
 	       ("timer" timer)))
  :keywords   ("extensions")
- :homepage   "ftp://ftp.splode.com/pub/users/friedman/emacs-lisp/"
+ :homepage   "ftp://ftp.splode.com/pub/users/friedman/emacs-lisp"
  :commentary "\
 This is my personal replacement for time.el.")

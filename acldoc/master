@@ -1,4 +1,4 @@
-(:license    "LGPL-2.1"
+(:license    "GPL-2"
  :provided   (acldoc)
  :required   ((("url" url)))
- :homepage   "http://compbio.ucdenver.edu/hunter/")
+ :homepage   "http://compbio.ucdenver.edu/hunter")

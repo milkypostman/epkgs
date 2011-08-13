@@ -12,7 +12,7 @@
 	       ("easymenu" easymenu)
 	       ("reporter" reporter)))
  :keywords   ("convenience" "languages")
- :homepage   "http://code.google.com/p/ansys-mode/"
+ :homepage   "http://code.google.com/p/ansys-mode"
  :wikipage   "http://www.emacswiki.org/AnsysMode"
  :commentary "\
 Editor support for working with Ansys FEA.

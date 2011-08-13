@@ -3,4 +3,4 @@
  :license    "GPL-2"
  :provided   (csv-vocab-mode)
  :required   ((("csv-mode" csv-mode)))
- :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/natural-language/")
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/natural-language")

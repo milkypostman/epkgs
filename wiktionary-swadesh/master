@@ -4,4 +4,4 @@
  :provided   (wiktionary-swadesh)
  :required   ((("csv-writer" csv-writer)
 	       ("read-table-data" read-table-data)))
- :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/natural-language/")
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/natural-language")

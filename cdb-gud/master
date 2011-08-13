@@ -1,5 +1,7 @@
 (:summary    "Grand Unified Debugger mode for running CDB"
  :license    "GPL-2"
+ :authors    (("Stephan Doll" . "stephan_doll@dantz.com"))
+ :maintainer ("Aaron Brady" . "abrady0@yahoo.com")
  :commentary "\
 This package provides Emacs (GUD) integration for Microsoft's CDB
 debugger.  (CDB is the text-mode version of WinDbg).  For more

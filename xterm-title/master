@@ -6,7 +6,7 @@
  :maintainer (nil . "friedman@splode.com")
  :provided   (xterm-title)
  :required   ((("xterm-frobs" xterm-frobs)))
- :homepage   "ftp://ftp.splode.com/pub/users/friedman/emacs-lisp/"
+ :homepage   "ftp://ftp.splode.com/pub/users/friedman/emacs-lisp"
  :commentary "\
 To use this, put something like the following in your .emacs:
 

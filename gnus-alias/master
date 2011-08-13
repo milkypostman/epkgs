@@ -7,7 +7,7 @@
  :provided   (gnus-alias)
  :required   ((("gnus" message)))
  :keywords   ("gnus" "identity" "mail" "news" "personality")
- :homepage   "http://www.northbound-train.com/"
+ :homepage   "http://www.northbound-train.com"
  :wikipage   "http://www.emacswiki.org/GnusAlias"
  :commentary "\
 gnus-alias provides a simple mechanism to switch Identities when

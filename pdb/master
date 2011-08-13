@@ -7,7 +7,7 @@
  :provided   (pdb)
  :required   ((("emacs-core" latin1-disp)))
  :keywords   ("data")
- :homepage   "http://www.loveshack.ukfsn.org/emacs/"
+ :homepage   "http://www.loveshack.ukfsn.org/emacs"
  :commentary "\
 PDB mode is a major mode for editing Protein Databank (PDB) files
 (according to the CCP4 definition of them).  It provides various

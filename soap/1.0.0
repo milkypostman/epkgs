@@ -8,7 +8,7 @@
  :required   ((("url" url)
 	       ("xml" xml)))
  :keywords   ("comm" "processes" "tools")
- :homepage   "http://edward.oconnor.cx/elisp/"
+ :homepage   "http://edward.oconnor.cx/elisp"
  :commentary "\
 You should always be able to find the latest version here:
 

@@ -6,4 +6,4 @@
  :maintainer ("John C. G. Sturdy" . "john@cb1.com")
  :provided   (insertions)
  :keywords   ("convenience")
- :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/editing/")
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/editing")

@@ -5,5 +5,5 @@
  :provided   (pick-backup)
  :required   ((("diff" diff)
 	       ("ediff" ediff)))
- :homepage   "http://nschum.de/src/emacs/pick-backup/"
+ :homepage   "http://nschum.de/src/emacs/pick-backup"
  :wikipage   "http://www.emacswiki.org/PickBackup")

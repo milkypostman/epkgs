@@ -5,4 +5,4 @@
 	       ("custom" custom)
 	       ("emacs-core" font-lock)
 	       ("outline" outline)))
- :homepage   "http://www.mozart-oz.org/")
+ :homepage   "http://www.mozart-oz.org")

@@ -2,8 +2,8 @@
  :created    "2001"
  :updated    "20080712"
  :license    "GPL-2"
- :authors    (("Matthew P. Hodges"))
- :maintainer ("Matthew P. Hodges")
+ :authors    (("Matthew P. Hodges" . "mphodges@member.fsf.org"))
+ :maintainer ("Matthew P. Hodges" . "mphodges@member.fsf.org")
  :provided   (eperiodic)
  :required   ((("cl" cl)
 	       ("dired" dired)))

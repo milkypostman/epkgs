@@ -4,7 +4,7 @@
  :license    "GPL-2"
  :provided   (smartsig)
  :required   ((("cl" cl)))
- :homepage   "http://www.davep.org/emacs/"
+ :homepage   "http://www.davep.org/emacs"
  :commentary "\
 This code is designed for use when editing email and news articles. It
 lets you create signatures that automatically adapt to what you're

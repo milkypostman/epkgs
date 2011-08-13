@@ -7,7 +7,7 @@
  :provided   (qtdoc)
  :required   ((("browse-url" browse-url)
 	       ("iswitchb" iswitchb)))
- :homepage   "http://furius.ca/pubcode/"
+ :homepage   "http://furius.ca/pubcode"
  :commentary "\
 Lookup Qt documentation in a Browser from Emacs. Emacs tells your running web
 browser to open up the appropriate page.

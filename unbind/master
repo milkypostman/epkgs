@@ -4,4 +4,4 @@
  :license    "GPL-2"
  :provided   (unbind)
  :required   ((("cl" cl)))
- :homepage   "http://www.davep.org/emacs/")
+ :homepage   "http://www.davep.org/emacs")

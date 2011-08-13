@@ -7,7 +7,7 @@
  :provided   (mwe-log-commands)
  :required   ((("cl" cl)))
  :keywords   ("help")
- :homepage   "http://www.foldr.org/~michaelw/emacs/"
+ :homepage   "http://www.foldr.org/~michaelw/emacs"
  :wikipage   "http://www.emacswiki.org/CommandLogMode"
  :commentary "\
 This add-on can be used to demo Emacs to an audience.  When

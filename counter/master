@@ -7,7 +7,7 @@
  :provided   (counter)
  :required   ((("cl" cl)))
  :keywords   ("abbrev")
- :homepage   "http://www.eskimo.com/~seldon/"
+ :homepage   "http://www.eskimo.com/~seldon"
  :commentary "\
 This package implements a function, `counter', that can be invoked to
 insert series of numbers into text.  You'll probably want to bind that

@@ -1,5 +1,6 @@
 (:summary    "Undo groups of changes"
  :updated    "20030317"
+ :license    "GPL-2"
  :authors    (("Harley Gorrell" . "harley@mahalito.net"))
  :maintainer ("Harley Gorrell" . "harley@mahalito.net")
  :provided   (undo-group)

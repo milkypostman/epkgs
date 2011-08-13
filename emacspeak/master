@@ -65,7 +65,7 @@
 	       (nil bmk-mgr dtk-voices emacspeak-personality emacspeak-speak))
 	      (("cedet" speedbar)))
  :keywords   ("dectalk" "emacspeak" "speech")
- :homepage   "http://emacspeak.sourceforge.net/"
+ :homepage   "http://emacspeak.sourceforge.net"
  :wikipage   "http://www.emacswiki.org/EmacSpeak"
  :commentary "\
 The complete audio desktop.

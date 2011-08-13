@@ -4,6 +4,6 @@
  :provided   (qa)
  :required   ((("cl" cl)
 	       ("edb" database)))
- :homepage   "http://www.gnuvola.org/software/qa/"
+ :homepage   "http://www.gnuvola.org/software/qa"
  :commentary "\
 See qa.info for documentation.")

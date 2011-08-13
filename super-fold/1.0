@@ -5,7 +5,7 @@
  :authors    (("Paolo Gianrossi" . "paolino.gnu@disi.unige.it"))
  :maintainer ("Paolo Gianrossi" . "paolino.gnu@disi.unige.it")
  :provided   (super-fold)
- :homepage   "http://np-salesman.net/programs/"
+ :homepage   "http://np-salesman.net/programs"
  :commentary "\
 Super folding makes possible to selectively hide portions of the buffer. It
  allows to fold a region,  a function or a block

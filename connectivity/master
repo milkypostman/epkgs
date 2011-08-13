@@ -3,4 +3,4 @@
  :provided   (connectivity)
  :required   ((("cl" cl)
 	       ("webmaster-macros" webmaster-macros)))
- :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/webstuff/")
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/webstuff")

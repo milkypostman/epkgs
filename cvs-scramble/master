@@ -5,7 +5,7 @@
  :maintainer (nil . "friedman@splode.com")
  :provided   (cvs-scramble)
  :keywords   ("cvs")
- :homepage   "ftp://ftp.splode.com/pub/users/friedman/emacs-lisp/"
+ :homepage   "ftp://ftp.splode.com/pub/users/friedman/emacs-lisp"
  :commentary "\
 Implements the (trivial) scramble/descrambling methods for CVS pserver
 passwords.  Method A, the only implemented method as of 1998-07-30, is a

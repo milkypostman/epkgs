@@ -33,7 +33,7 @@
 	       ("xml" xml))
 	      (("image-mode" image-mode)))
  :keywords   ("hypermedia" "www")
- :homepage   "http://emacs-w3m.namazu.org/"
+ :homepage   "http://emacs-w3m.namazu.org"
  :wikipage   "http://www.emacswiki.org/emacs-w3m"
  :commentary "\
 Emacs-w3m is an Emacs interface to the w3m program.  For more

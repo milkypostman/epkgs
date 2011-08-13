@@ -4,7 +4,7 @@
  :license    "GPL-2"
  :provided   (thinks)
  :required   ((("cl" cl)))
- :homepage   "http://www.davep.org/emacs/"
+ :homepage   "http://www.davep.org/emacs"
  :commentary "\
 thinks.el is a little bit of silliness inspired by the think bubbles you
 see in cartoons. It allows you to

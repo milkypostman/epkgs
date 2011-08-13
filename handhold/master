@@ -9,7 +9,7 @@
 	       ("emacs-core" pp)
 	       ("widget" wid-edit widget)))
  :keywords   ("extensions" "lisp" "maint" "tools")
- :homepage   "http://panix.com/~tehom/"
+ :homepage   "http://panix.com/~tehom"
  :commentary "\
 Holds the user's hand while building a sexp, and puts it on top of
 the kill ring when built.

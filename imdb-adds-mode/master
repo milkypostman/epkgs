@@ -5,5 +5,5 @@
  :provided   (imdb-adds)
  :required   ((("easymenu" easymenu)))
  :keywords   ("additions" "imdb" "major-mode" "movies" "submission")
- :homepage   "http://home.snafu.de/ohei/"
+ :homepage   "http://home.snafu.de/ohei"
  :wikipage   "http://www.emacswiki.org/IMDbAddsMode")

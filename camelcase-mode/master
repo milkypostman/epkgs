@@ -1,6 +1,8 @@
 (:summary    "Minor mode for editing with camelCase words"
  :created    "20010519"
  :license    "GPL-2"
+ :authors    ((nil . "c.r.manning caroma@ai.mit.edu"))
+ :maintainer (nil . "c.r.manning caroma@ai.mit.edu")
  :provided   (camelCase)
  :keywords   ("camel" "camelcase" "case" "mode" "word")
  :wikipage   "http://www.emacswiki.org/CamelCase")

@@ -20,5 +20,5 @@
 	       (nil password sha1-el))
 	      (("dbus" dbus)
 	       ("gnus" password-cache)))
- :homepage   "http://emacs-jabber.sourceforge.net/"
+ :homepage   "http://emacs-jabber.sourceforge.net"
  :wikipage   "http://www.emacswiki.org/JabberEl")

@@ -3,5 +3,5 @@
  :license    "GPL-2"
  :provided   (filladapt)
  :required   ((("custom" custom)))
- :homepage   "http://www.wonderworks.com/"
+ :homepage   "http://www.wonderworks.com"
  :wikipage   "http://www.emacswiki.org/FillAdapt")

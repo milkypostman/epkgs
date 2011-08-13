@@ -6,7 +6,7 @@
  :maintainer ("Will Mengarini" . "seldon@eskimo.com")
  :provided   (fastfuzz)
  :keywords   ("extensions" "float" "floating point" "fuzz")
- :homepage   "http://www.eskimo.com/~seldon/"
+ :homepage   "http://www.eskimo.com/~seldon"
  :commentary "\
 Try this with C-x C-e:
   (= (+ 0.1 0.2) 0.3)

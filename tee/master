@@ -5,7 +5,7 @@
  :maintainer ("Patrick Gundlach" . "patrick@gundla.ch")
  :provided   (tee)
  :keywords   ("calendar")
- :homepage   "http://levana.de/emacs/"
+ :homepage   "http://levana.de/emacs"
  :commentary "\
 Just invoke M-x Tee and enter time 
 

@@ -9,4 +9,4 @@
 	       ("newcomment" newcomment)
 	       ("regexp-opt" regexp-opt)
 	       ("thingatpt" thingatpt)))
- :homepage   "http://primate.net/~itz/yaham/")
+ :homepage   "http://primate.net/~itz/yaham")

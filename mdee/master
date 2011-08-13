@@ -6,4 +6,4 @@
  :maintainer ("Kevin A. Burton" . "burton@peerfear.org")
  :provided   (idl-docindex mdee xpcshell)
  :required   ((("javascript-mode" javascript-mode)))
- :homepage   "http://mdee.mozdev.org/")
+ :homepage   "http://mdee.mozdev.org")

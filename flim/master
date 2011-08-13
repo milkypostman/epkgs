@@ -13,4 +13,4 @@
 	       ("mail-utils" mail-utils)
 	       ("riece" luna)))
  :keywords   ("mime" "quoted-printable" "uuencode")
- :homepage   "http://www.kanji.zinbun.kyoto-u.ac.jp/~tomo/lemi/")
+ :homepage   "http://www.kanji.zinbun.kyoto-u.ac.jp/~tomo/lemi")

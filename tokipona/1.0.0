@@ -7,4 +7,4 @@
  :provided   (tokipona)
  :required   ((("emacs-core" quail)))
  :keywords   ("input method" "multilingual" "toki pona")
- :homepage   "http://edward.oconnor.cx/elisp/")
+ :homepage   "http://edward.oconnor.cx/elisp")

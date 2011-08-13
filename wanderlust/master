@@ -31,5 +31,5 @@
 	       ("w3m" shimbun)
 	       (nil bitmap mmgeneric spamfilter)))
  :keywords   ("mail" "net news")
- :homepage   "http://www.gohome.org/wl/"
+ :homepage   "http://www.gohome.org/wl"
  :wikipage   "http://www.emacswiki.org/WanderLust")

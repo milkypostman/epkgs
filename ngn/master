@@ -4,7 +4,7 @@
  :license    "GPL-2"
  :provided   (ngn)
  :required   ((("cl" cl)))
- :homepage   "http://www.davep.org/emacs/"
+ :homepage   "http://www.davep.org/emacs"
  :commentary "\
 ngn.el provides commands for quickly inserting a newsgroup name into a
 buffer.

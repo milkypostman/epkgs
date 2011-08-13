@@ -5,5 +5,5 @@
  :authors    (("Jason F. McBrayer"))
  :maintainer ("Jason F. McBrayer")
  :provided   (bbcode-mode)
- :homepage   "http://bitbucket.org/jfm/emacs-bbcode/"
+ :homepage   "http://bitbucket.org/jfm/emacs-bbcode"
  :wikipage   "http://www.emacswiki.org/BbCode")

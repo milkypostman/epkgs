@@ -37,7 +37,7 @@
 	       ("view" view)
 	       ("widget" wid-edit)))
  :keywords   ("extensions")
- :homepage   "http://www.nongnu.org/emacs-tiny-tools/"
+ :homepage   "http://www.nongnu.org/emacs-tiny-tools"
  :wikipage   "http://www.emacswiki.org/TinyTools"
  :commentary "\
 Preface, overview of options

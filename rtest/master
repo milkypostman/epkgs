@@ -15,6 +15,6 @@
 	       ("tehom-font-lock" tehom-font-lock)
 	       ("tehom-inflisp" tehom-inflisp)))
  :keywords   ("extensions" "lisp")
- :homepage   "http://www.panix.com/~tehom/"
+ :homepage   "http://www.panix.com/~tehom"
  :commentary "\
 See the rtest docs")

@@ -2,4 +2,4 @@
  :license    "GPL-2"
  :provided   (compare-windows-interactively)
  :required   ((("compare-w" compare-w)))
- :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/editing/")
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/editing")

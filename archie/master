@@ -8,7 +8,7 @@
  :required   ((("cl" cl)
 	       ("custom" custom)))
  :keywords   ("network" "util")
- :homepage   "http://quimby.gnus.org/elisp/"
+ :homepage   "http://quimby.gnus.org/elisp"
  :commentary "\
 The `M-x archie' command will connect to an archie server and send
 a search request.  It'll return control to the user immediately,

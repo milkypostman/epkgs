@@ -6,7 +6,7 @@
  :maintainer ("lawrence mitchell" . "wence@gmx.li")
  :provided   (whitespace-mode)
  :keywords   ("languages" "whitespace")
- :homepage   "http://www.ph.ed.ac.uk/~s0198183/"
+ :homepage   "http://www.ph.ed.ac.uk/~s0198183"
  :wikipage   "http://www.emacswiki.org/WhitespaceMode"
  :commentary "\
 This is an Emacs major mode for the Whitespace programming

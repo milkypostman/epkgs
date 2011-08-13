@@ -1,4 +1,4 @@
 (:summary    "Go through my web tree, and convert mailtos into a reference to a contact details page"
  :updated    "20050118"
  :license    "GPL-2"
- :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/webstuff/")
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/webstuff")

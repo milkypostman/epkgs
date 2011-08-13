@@ -16,7 +16,7 @@
 	       ("xml" xml)
 	       ("zeroconf" zeroconf)))
  :keywords   ("collaboration" "rudel")
- :homepage   "http://rudel.sourceforge.net/"
+ :homepage   "http://rudel.sourceforge.net"
  :wikipage   "http://www.emacswiki.org/Rudel"
  :commentary "\
 Rudel is a framework for collaborative editing in Emacs.  Its

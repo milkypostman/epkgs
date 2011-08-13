@@ -10,7 +10,7 @@
 	       ("easymenu" easymenu)
 	       ("emacs-core" derived)))
  :keywords   ("mail")
- :homepage   "http://post-mode.sourceforge.net/"
+ :homepage   "http://post-mode.sourceforge.net"
  :wikipage   "http://www.emacswiki.org/PostMode"
  :commentary "\
 This is a major mode for use with mutt (http://www.mutt.org/), slrn, or most

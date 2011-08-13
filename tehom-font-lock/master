@@ -7,7 +7,7 @@
  :provided   (tehom-font-lock)
  :required   ((("emacs-core" font-lock)))
  :keywords   ("extensions" "maint" "tools")
- :homepage   "http://panix.com/~tehom/"
+ :homepage   "http://panix.com/~tehom"
  :commentary "\
 This is a little thing I wrote because building expressions for
 fontlock mode was a PITA.  Now for the common case you can build a

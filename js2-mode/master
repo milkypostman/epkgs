@@ -10,7 +10,7 @@
 	       ("cl" cl)
 	       ("imenu" imenu)))
  :keywords   ("javascript" "languages")
- :homepage   "http://code.google.com/p/js2-mode/"
+ :homepage   "http://code.google.com/p/js2-mode"
  :wikipage   "http://www.emacswiki.org/Js2Mode"
  :commentary "\
 This JavaScript editing mode supports:

@@ -2,11 +2,11 @@
  :created    "1999"
  :updated    "1999"
  :license    "GPL-2"
- :authors    (("Tom Breton"))
- :maintainer ("Tom Breton")
+ :authors    (("Tom Breton" . "tehom@localhost"))
+ :maintainer ("Tom Breton" . "tehom@localhost")
  :provided   (tehom-2)
  :keywords   ("extensions")
- :homepage   "www.panix.com/~tehom/"
+ :homepage   "www.panix.com/~tehom"
  :commentary "\
 This code is to make history lists more generally available.  It is
 mostly modified from isearch.el

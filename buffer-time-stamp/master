@@ -2,8 +2,8 @@
  :created    "2004"
  :updated    "20060109"
  :license    "GPL-2"
- :authors    (("Matthew P. Hodges"))
- :maintainer ("Matthew P. Hodges")
+ :authors    (("Matthew P. Hodges" . "mphodges@member.fsf.org"))
+ :maintainer ("Matthew P. Hodges" . "mphodges@member.fsf.org")
  :provided   (buffer-time-stamp)
  :wikipage   "http://www.emacswiki.org/DisplayBufferTimeStamps"
  :commentary "\

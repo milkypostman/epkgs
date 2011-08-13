@@ -4,5 +4,5 @@
  :authors    (("Christian Jauvin" . "cjauvin@gmail.com"))
  :maintainer ("Christian Jauvin" . "cjauvin@gmail.com")
  :provided   (find-file-suggest)
- :homepage   "http://code.google.com/p/find-file-suggest/"
+ :homepage   "http://code.google.com/p/find-file-suggest"
  :wikipage   "http://www.emacswiki.org/FindFileSuggest")

@@ -4,4 +4,4 @@
  :required   ((("autocue" autocue)
 	       ("cl" cl)
 	       ("w3" w3)))
- :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/webstuff/")
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/webstuff")

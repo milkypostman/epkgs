@@ -9,7 +9,7 @@
  :required   ((("cl" cl)
 	       ("gnus" sha1)))
  :keywords   ("comm")
- :homepage   "http://ejab.sourceforge.net/"
+ :homepage   "http://ejab.sourceforge.net"
  :wikipage   "http://www.emacswiki.org/EmacsJab"
  :commentary "\
 This file and those that accompany it define a Jabber client for

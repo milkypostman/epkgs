@@ -4,4 +4,4 @@
  :provided   (find-dired-lisp)
  :required   ((("dired" dired)
 	       ("findr" findr)))
- :homepage   "http://www.bookshelf.jp/")
+ :homepage   "http://www.bookshelf.jp")

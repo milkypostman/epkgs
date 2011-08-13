@@ -7,5 +7,5 @@
 	       ("html-helper-mode" html-helper-mode)
 	       ("time-stamp" time-stamp)
 	       ("versor" handsfree-read-number)))
- :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/webstuff/"
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/webstuff"
  :wikipage   "http://www.emacswiki.org/Journal")

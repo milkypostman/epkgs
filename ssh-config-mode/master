@@ -1,5 +1,6 @@
 (:summary    "Mode for fontification of ~/.ssh/config"
  :updated    "20060907"
+ :license    "GPL-2"
  :authors    (("Harley Gorrell" . "harley@mahalito.net"))
  :maintainer ("Harley Gorrell" . "harley@mahalito.net")
  :provided   (ssh-config-mode)

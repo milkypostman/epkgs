@@ -3,6 +3,8 @@
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"
+ :authors    (("SAKURAI Masashi" . "m.sakurai@kiwanami.net"))
+ :maintainer ("SAKURAI Masashi" . "m.sakurai@kiwanami.net")
  :provided   (inertial-scroll)
  :required   ((("deferred" deferred)))
  :keywords   ("deferred" "scroll")

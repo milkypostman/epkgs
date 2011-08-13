@@ -7,7 +7,7 @@
  :provided   (ff-paths)
  :required   ((("ffap" ffap)))
  :keywords   ("ffap" "find-file" "paths" "search")
- :homepage   "http://people.debian.org/~psg/elisp/"
+ :homepage   "http://people.debian.org/~psg/elisp"
  :commentary "\
 New versions of this package (if they exist) may be found at:
   http://people.debian.org/~psg/elisp/ff-paths.el

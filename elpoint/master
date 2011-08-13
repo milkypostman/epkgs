@@ -12,5 +12,5 @@
 	       ("outline" outline)
 	       ("w3m" w3m)))
  :keywords   ("presentation")
- :homepage   "http://elpoint.sourceforge.net/"
+ :homepage   "http://elpoint.sourceforge.net"
  :wikipage   "http://www.emacswiki.org/Elpoint")

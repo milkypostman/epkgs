@@ -16,4 +16,4 @@
 	       ("imenu" imenu)
 	       ("jdee" jde)))
  :keywords   ("aspectj" "jde" "jdee" "tools")
- :homepage   "http://aspectj4emacs.sourceforge.net/")
+ :homepage   "http://aspectj4emacs.sourceforge.net")

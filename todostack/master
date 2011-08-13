@@ -1,7 +1,7 @@
 (:summary    "Keep a to-do list as a simple stack"
  :created    "2011"
  :updated    "20110514"
- :license    "GPL3"
+ :license    "GPL-3"
  :authors    (("Evans Winner" . "ego111@gmail.com"))
  :maintainer ("Evans Winner" . "ego111@gmail.com")
  :provided   (todostack)

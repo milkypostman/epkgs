@@ -8,7 +8,7 @@
  :required   ((("json" json)
 	       ("url" url)))
  :keywords   ("convenience" "data")
- :homepage   "http://edward.oconnor.cx/elisp/"
+ :homepage   "http://edward.oconnor.cx/elisp"
  :commentary "\
 Prety basic, bare-bones CouchDb client library for Emacs Lisp.
 Lightly tested. Share and Enjoy! The latest version lives here:

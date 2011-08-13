@@ -5,6 +5,6 @@
  :provided   (binclock)
  :required   ((("cl" cl)
 	       ("easymenu" easymenu)))
- :homepage   "http://www.davep.org/emacs/"
+ :homepage   "http://www.davep.org/emacs"
  :commentary "\
 binclock displays the current time using a binary display.")

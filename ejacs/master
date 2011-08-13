@@ -8,7 +8,7 @@
 	       ("gnus" parse-time)
 	       ("help" help-fns)))
  :keywords   ("javascript" "languages")
- :homepage   "http://code.google.com/p/ejacs/"
+ :homepage   "http://code.google.com/p/ejacs"
  :wikipage   "http://www.emacswiki.org/Ejacs"
  :commentary "\
 This package provides a simple interactive shell interface to

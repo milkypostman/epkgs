@@ -2,4 +2,4 @@
  :provided   (backup)
  :required   ((("diff" diff)
 	       ("dired" dired)))
- :homepage   "http://www.cs.utah.edu/~eeide/emacs/")
+ :homepage   "http://www.cs.utah.edu/~eeide/emacs")

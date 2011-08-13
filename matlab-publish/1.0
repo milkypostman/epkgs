@@ -1,6 +1,8 @@
 (:created    "20090225"
  :updated    "20090308"
  :license    "GPL-1"
+ :authors    ((nil . "uwe brauer oub@mat.ucm.es"))
+ :maintainer (nil . "uwe brauer oub@mat.ucm.es")
  :provided   (matlab-publish)
  :required   ((("matlab" matlab)))
  :commentary "\

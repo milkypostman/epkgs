@@ -1,4 +1,4 @@
 (:summary    "Model functions for generic text"
  :updated    "20060217"
  :provided   (gentext-models)
- :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/editing/")
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/editing")

@@ -8,7 +8,7 @@
  :provided   (facebook)
  :required   ((("json" json)))
  :keywords   ("facebook" "frivolity")
- :homepage   "http://facebook-el.sourceforge.net/"
+ :homepage   "http://facebook-el.sourceforge.net"
  :commentary "\
 First pass at interfacing with facebook.  You must add the \"developers 
   app\" and get your own application api-key and application secret key to 

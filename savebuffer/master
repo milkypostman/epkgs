@@ -1,4 +1,4 @@
 (:updated    "20050201"
  :provided   (savebuffer)
  :required   ((("filenames-in-env" filenames-in-env)))
- :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/persistence/")
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/persistence")

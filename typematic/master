@@ -6,7 +6,7 @@
  :maintainer ("Will Mengarini" . "seldon@eskimo.com")
  :provided   (typematic)
  :keywords   ("abbrev" "hardware" "typematic" "typm" "universal argument")
- :homepage   "http://www.eskimo.com/~seldon/"
+ :homepage   "http://www.eskimo.com/~seldon"
  :commentary "\
 Standard Emacs interprets a single C-u as giving the following command an
 argument of 4, & each subsequent C-u multiplies that argument by 4.  That

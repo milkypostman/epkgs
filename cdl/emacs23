@@ -2,7 +2,7 @@
  :created    "1993"
  :updated    "2011"
  :license    "GPL-3"
- :authors    (("Ata Etemadi"))
+ :authors    (("Ata Etemadi" . "atae@spva.physics.imperial.ac.uk"))
  :maintainer ("FSF")
  :provided   (cdl)
  :keywords   ("data"))

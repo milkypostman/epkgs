@@ -5,4 +5,4 @@
 	       ("mh-e" mh-e mh-utils)
 	       ("mpg123" mpg123)
 	       ("view" view)))
- :homepage   "http://www.gentei.org/~yuuji/software/")
+ :homepage   "http://www.gentei.org/~yuuji/software")

@@ -3,6 +3,8 @@
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"
+ :authors    (("Seungcheol Jung" . "scjung.hyu@gmail.com"))
+ :maintainer ("Seungcheol Jung" . "scjung.hyu@gmail.com")
  :provided   (mk-project+)
  :required   ((("mk-project" mk-project)))
  :homepage   "https://github.com/scjung/mk-project-plus"

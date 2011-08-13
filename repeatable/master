@@ -4,5 +4,5 @@
  :license    "GPL-2"
  :provided   (repeatable)
  :required   ((("advice" advice)))
- :homepage   "http://furius.ca/pubcode/"
+ :homepage   "http://furius.ca/pubcode"
  :wikipage   "http://www.emacswiki.org/Repeatable")

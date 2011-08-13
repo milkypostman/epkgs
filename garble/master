@@ -5,7 +5,7 @@
  :provided   (garble)
  :required   ((("cl" cl)
 	       ("gnus" parse-time)))
- :homepage   "http://www.davep.org/emacs/"
+ :homepage   "http://www.davep.org/emacs"
  :commentary "\
 garble.el is an emacs interface for garble, a command line tool for
 talking to various Garmin <URL:http://www.garmin.com/> GPS units. See

@@ -6,7 +6,7 @@
  :maintainer ("John C. G. Sturdy" . "john@cb1.com")
  :provided   (joystick)
  :keywords   ("hardware")
- :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/hardware/"
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/hardware"
  :wikipage   "http://www.emacswiki.org/JoyStick"
  :commentary "\
 This listens (and occasionally talks) to a companion process which

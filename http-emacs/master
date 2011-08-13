@@ -12,6 +12,6 @@
 	       ("hexl" hexl)
 	       ("thingatpt" thingatpt)))
  :keywords   ("hypermedia")
- :homepage   "http://savannah.nongnu.org/projects/http-emacs/"
+ :homepage   "http://savannah.nongnu.org/projects/http-emacs"
  :commentary "\
 Use `http-post' to post to a URL.")

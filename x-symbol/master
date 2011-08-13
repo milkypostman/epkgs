@@ -10,7 +10,7 @@
 	       ("emacs-obsolete" lucid)
 	       ("reporter" reporter)))
  :keywords   ("html" "internationalization" "latex" "math" "wp" "wysiwyg")
- :homepage   "http://x-symbol.sourceforge.net/"
+ :homepage   "http://x-symbol.sourceforge.net"
  :wikipage   "http://www.emacswiki.org/XSymbolMode"
  :commentary "\
 If you want to use package x-symbol, please visit the URL (use

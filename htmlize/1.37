@@ -8,7 +8,7 @@
  :required   ((("cl" cl)
 	       ("custom" custom)))
  :keywords   ("extensions" "hypermedia")
- :homepage   "http://fly.srk.fer.hr/~hniksic/"
+ :homepage   "http://fly.srk.fer.hr/~hniksic"
  :wikipage   "http://www.emacswiki.org/Htmlize"
  :commentary "\
 This package converts the buffer text and the associated

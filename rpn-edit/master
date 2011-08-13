@@ -3,4 +3,4 @@
  :license    "GPL-2"
  :provided   (rpn-edit)
  :required   ((("cl" cl)))
- :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/handsfree/")
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/handsfree")

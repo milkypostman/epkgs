@@ -3,7 +3,7 @@
  :updated    "2005"
  :license    "GPL-2"
  :provided   (constellations)
- :homepage   "http://www.davep.org/emacs/"
+ :homepage   "http://www.davep.org/emacs"
  :commentary "\
 constellations.el provides a constellation abbreviation lookup tool. I
 can never remember the abbreviations for most constellations so, when I'm

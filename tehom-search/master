@@ -5,7 +5,7 @@
  :authors    (("Tom Breton" . "tob@world.std.com"))
  :maintainer ("Tom Breton" . "tob@world.std.com")
  :keywords   ("extensions")
- :homepage   "http://panix.com/~tehom/"
+ :homepage   "http://panix.com/~tehom"
  :commentary "\
 Inspired by Bob Glickstein's sregex, this package lets you compose
 regular expressions for regex searching in a special buffer, in the

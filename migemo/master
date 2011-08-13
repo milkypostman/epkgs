@@ -3,5 +3,5 @@
  :authors    (("Satoru Takabayashi" . "satoru-t@is.aist-nara.ac.jp"))
  :maintainer ("Satoru Takabayashi" . "satoru-t@is.aist-nara.ac.jp")
  :provided   (migemo)
- :homepage   "http://0xcc.net/migemo/"
+ :homepage   "http://0xcc.net/migemo"
  :wikipage   "http://www.emacswiki.org/Migemo")

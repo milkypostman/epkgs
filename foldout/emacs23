@@ -2,7 +2,7 @@
  :created    "19940127"
  :updated    "2011"
  :license    "GPL-3"
- :authors    (("Kevin Broadey"))
+ :authors    (("Kevin Broadey" . "kevinb@bartley.demon.co.uk"))
  :maintainer ("FSF")
  :provided   (foldout)
  :required   ((("outline" outline)))

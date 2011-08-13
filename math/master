@@ -5,4 +5,4 @@
  :provided   (math)
  :required   ((("comint" comint)
 	       ("shell" shell)))
- :homepage   "http://library.wolfram.com/infocenter/MathSource/4567/")
+ :homepage   "http://library.wolfram.com/infocenter/MathSource/4567")

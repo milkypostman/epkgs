@@ -6,7 +6,7 @@
  :maintainer ("Simon Josefsson" . "jas@pdc.kth.se")
  :provided   (rijndael)
  :keywords   ("aes" "blocks" "cipher" "cryptography" "encryption" "rijndael" "symmetric")
- :homepage   "http://josefsson.org/aes/"
+ :homepage   "http://josefsson.org/aes"
  :commentary "\
 This is a implementation of the Rijndael block cipher algorithm in
 Emacs Lisp.  Rijndael has been chosen as the Advanced Encryption

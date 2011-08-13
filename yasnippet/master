@@ -12,7 +12,7 @@
 	       ("help-mode" help-mode))
 	      (("dropdown-list" dropdown-list)))
  :keywords   ("convenience" "emulation")
- :homepage   "http://code.google.com/p/yasnippet/"
+ :homepage   "http://code.google.com/p/yasnippet"
  :wikipage   "http://www.emacswiki.org/Yasnippet"
  :commentary "\
 Basic steps to setup:

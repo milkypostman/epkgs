@@ -5,7 +5,7 @@
  :authors    (("Stefan Reichoer," . "stefan@xsteve.at"))
  :maintainer ("Stefan Reichoer," . "stefan@xsteve.at")
  :provided   (quick-task)
- :homepage   "http://www.xsteve.at/prg/emacs/"
+ :homepage   "http://www.xsteve.at/prg/emacs"
  :commentary "\
 quick-task.el provides several features to execute custom emacs functions
 using very few keystrokes

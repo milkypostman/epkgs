@@ -6,7 +6,7 @@
  :maintainer ("William Xu" . "william.xwl@gmail.com")
  :provided   (wubi)
  :required   ((("emacs-core" quail)))
- :homepage   "http://xwl.appspot.com/"
+ :homepage   "http://xwl.appspot.com"
  :commentary "\
 Put this file into your load-path and the following into your
 ~/.emacs:

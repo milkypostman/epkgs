@@ -11,4 +11,4 @@
 	       ("gentext-texinfo" gentext-texinfo)
 	       ("versor" modal-functions)
 	       (nil gentext-muse text-sentences)))
- :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/editing/")
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/editing")

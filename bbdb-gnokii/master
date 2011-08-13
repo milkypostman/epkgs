@@ -3,13 +3,13 @@
  :updated    "20060419"
  :license    "GPL-2"
  :authors    (("Martin Schwenke" . "martin@meltin.net")
-	      ("Reiner Steib")
+	      ("Reiner Steib" . "reiner.steib@gmx.de")
 	      ("Len Trigg" . "len@reeltwo.com"))
  :maintainer ("Martin Schwenke" . "martin@meltin.net")
  :provided   (bbdb-gnokii)
  :required   ((("bbdb" bbdb)))
  :keywords   ("bbdb" "gnokii" "nokia")
- :homepage   "http://meltin.net/hacks/emacs/"
+ :homepage   "http://meltin.net/hacks/emacs"
  :commentary "\
 Exports BBDB phone entries to a contacts file that can be used by
 gnokii to write them to a Nokia mobile phone.

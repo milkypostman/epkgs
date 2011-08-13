@@ -4,7 +4,7 @@
  :license    "GPL-2"
  :authors    (("Anders Holst" . "aho@sans.kth.se"))
  :maintainer ("Noah Friedman" . "friedman@splode.com")
- :homepage   "ftp://ftp.splode.com/pub/users/friedman/emacs-lisp/"
+ :homepage   "ftp://ftp.splode.com/pub/users/friedman/emacs-lisp"
  :commentary "\
 This file contains changes by Noah Friedman.
 Based on original author's version 1.0 of 1993-11-18

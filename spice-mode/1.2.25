@@ -16,7 +16,7 @@
 	       ("imenu" imenu)
 	       ("tempo" tempo)))
  :keywords   ("cdl" "eldo" "fasthenry" "hspice" "layla" "mondriaan" "netlist editing" "spectre compatibility" "spice")
- :homepage   "http://spice-mode.4t.com/"
+ :homepage   "http://spice-mode.4t.com"
  :commentary "\
 The original spice-mode.el created by C. Vieri has been modified
 extensively. These changes have been heavily influenced by the eldo-mode.el

@@ -6,4 +6,4 @@
  :maintainer ("Edward O'Connor" . "ted@oconnor.cx")
  :provided   (lmselect)
  :keywords   ("convenience")
- :homepage   "http://edward.oconnor.cx/elisp/")
+ :homepage   "http://edward.oconnor.cx/elisp")

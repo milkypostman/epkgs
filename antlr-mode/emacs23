@@ -2,6 +2,8 @@
  :created    "1999"
  :updated    "2011"
  :license    "GPL-3"
+ :authors    ((nil . "christoph.wedler@sap.com"))
+ :maintainer (nil . "christoph.wedler@sap.com")
  :provided   (antlr-mode)
  :required   ((("cc-mode" cc-mode)
 	       ("cl" cl)

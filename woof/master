@@ -5,7 +5,7 @@
  :authors    (("Stefan Reichoer," . "stefan@xsteve.at"))
  :maintainer ("Stefan Reichoer," . "stefan@xsteve.at")
  :provided   (woof)
- :homepage   "http://www.xsteve.at/prg/emacs/"
+ :homepage   "http://www.xsteve.at/prg/emacs"
  :commentary "\
 The problem:
 You work on different computers and you want to send files or

@@ -24,7 +24,7 @@
 	       ("twittering-mode" ssl)
 	       ("widget" wid-edit)))
  :keywords   ("chat" "client" "internet" "irc")
- :homepage   "http://savannah.gnu.org/projects/erc/"
+ :homepage   "http://savannah.gnu.org/projects/erc"
  :wikipage   "http://www.emacswiki.org/ERC"
  :commentary "\
 ERC is a powerful, modular, and extensible IRC client for Emacs.

@@ -7,7 +7,7 @@
  :provided   (dom5)
  :required   ((("dom" dom)))
  :keywords   ("xml")
- :homepage   "http://edward.oconnor.cx/elisp/"
+ :homepage   "http://edward.oconnor.cx/elisp"
  :commentary "\
 An implementation of the various new DOM methods defined in the HTML5
 draft specification.

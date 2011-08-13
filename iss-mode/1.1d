@@ -4,4 +4,4 @@
  :authors    (("Stefan Reichoer," . "stefan@xsteve.at"))
  :maintainer ("Stefan Reichoer," . "stefan@xsteve.at")
  :provided   (iss-mode)
- :homepage   "http://www.xsteve.at/prg/emacs/")
+ :homepage   "http://www.xsteve.at/prg/emacs")

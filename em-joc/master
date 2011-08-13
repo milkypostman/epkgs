@@ -4,4 +4,4 @@
  :authors    (("Joe Casadonte" . "emacs@northbound-train.com"))
  :maintainer ("Joe Casadonte" . "emacs@northbound-train.com")
  :provided   (em-joc)
- :homepage   "http://www.northbound-train.com/")
+ :homepage   "http://www.northbound-train.com")

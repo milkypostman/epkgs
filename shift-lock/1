@@ -6,7 +6,7 @@
  :maintainer ("John Paul Wallington" . "jpw@pobox.com")
  :provided   (shift-lock)
  :keywords   ("convenience" "emulations" "lisp" "tools")
- :homepage   "http://www.shootybangbang.com/"
+ :homepage   "http://www.shootybangbang.com"
  :commentary "\
 Inspired by ZWEI Electric Shift Lock Mode on the LISPM,
 `shift-lock-mode' is a minor mode that uppercases everything except

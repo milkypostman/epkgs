@@ -11,5 +11,5 @@
 	       ("muse" muse muse-mode)
 	       ("org-mode" org)))
  :keywords   ("management" "muse" "project" "scrum")
- :homepage   "http://code.google.com/p/epm-mode/"
+ :homepage   "http://code.google.com/p/epm-mode"
  :wikipage   "http://www.emacswiki.org/EpmMode")

@@ -2,8 +2,8 @@
  :created    "1994"
  :updated    "2011"
  :license    "GPL-3"
- :authors    (("Jan Schormann"))
- :maintainer ("Jan Schormann")
+ :authors    (("Jan Schormann" . "jan.schormann@rechen-gilde.de"))
+ :maintainer ("Jan Schormann" . "jan.schormann@rechen-gilde.de")
  :provided   (solitaire)
  :keywords   ("games")
  :commentary "\

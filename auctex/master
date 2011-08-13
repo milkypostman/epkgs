@@ -14,5 +14,5 @@
 	       ("reporter" reporter)
 	       ("texinfo" texinfo)
 	       (nil tex-site)))
- :homepage   "http://www.gnu.org/software/auctex/"
+ :homepage   "http://www.gnu.org/software/auctex"
  :wikipage   "http://www.emacswiki.org/AUCTeX")

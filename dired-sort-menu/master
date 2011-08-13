@@ -2,15 +2,15 @@
  :created    "2000"
  :updated    "20010726"
  :license    "GPL-2"
- :authors    (("Francis J. Wright"))
- :maintainer ("Francis J. Wright")
+ :authors    (("Francis J. Wright" . "f.j.wright@maths.qmw.ac.uk"))
+ :maintainer ("Francis J. Wright" . "f.j.wright@maths.qmw.ac.uk")
  :provided   (dired-sort-menu)
  :required   ((("ange-ftp" ange-ftp)
 	       ("dired" dired)
 	       ("easymenu" easymenu)
 	       ("widget" wid-edit)))
  :keywords   ("dialogue" "dired" "menu" "sort")
- :homepage   "http://centaur.maths.qmw.ac.uk/Emacs/"
+ :homepage   "http://centaur.maths.qmw.ac.uk/Emacs"
  :wikipage   "http://www.emacswiki.org/DiredSortMenu"
  :commentary "\
 This package, which is intended for use with GNU Emacs 20/21,

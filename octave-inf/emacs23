@@ -2,8 +2,8 @@
  :created    "1997"
  :updated    "2010"
  :license    "GPL-3"
- :authors    (("Kurt Hornik"))
- :maintainer ("Kurt Hornik")
+ :authors    (("Kurt Hornik" . "kurt.hornik@wu-wien.ac.at"))
+ :maintainer ("Kurt Hornik" . "kurt.hornik@wu-wien.ac.at")
  :provided   (octave-inf)
  :required   ((("comint" comint)
 	       ("octave-mod" octave-mod)))

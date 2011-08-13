@@ -8,7 +8,7 @@
  :required   ((("emacs-core" font-lock)
 	       ("newcomment" newcomment)))
  :keywords   ("languages" "oberon" "oop")
- :homepage   "http://www.brgeight.se/"
+ :homepage   "http://www.brgeight.se"
  :commentary "\
 The main features of this mode are syntactic highlighting (enabled
 with `font-lock-mode' or `global-font-lock-mode'), automatic

@@ -8,7 +8,7 @@
  :provided   (js-comint)
  :required   ((("comint" comint)))
  :keywords   ("convenience" "inferior-mode" "javascript")
- :homepage   "http://js-comint-el.sourceforge.net/"
+ :homepage   "http://js-comint-el.sourceforge.net"
  :commentary "\
 js-comint.el let's you run an inferior javascript process in emacs, 
 and defines a few functions for sending javascript input to it quickly.

@@ -2,8 +2,8 @@
  :created    "2005"
  :updated    "2005"
  :license    "GPL-2"
- :authors    (("Kumar Appaiah"))
- :maintainer ("Kumar Appaiah")
+ :authors    (("Kumar Appaiah" . "akumar_nospam@ee.iitm.ac.in"))
+ :maintainer ("Kumar Appaiah" . "akumar_nospam@ee.iitm.ac.in")
  :provided   (bc-mode)
  :required   ((("cc-mode" cc-mode)))
  :homepage   "http://www.emacswiki.org/BCMode"

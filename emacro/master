@@ -60,5 +60,5 @@
 	       ("which" which)
 	       (nil big-menubar cua cua-mode enotes func-menu htmlize mac pcl-cvs-defs rsz-minibuf scrat tex-site w3-auto)))
  :keywords   ("configuration" "setup")
- :homepage   "http://emacro.sourceforge.net/"
+ :homepage   "http://emacro.sourceforge.net"
  :wikipage   "http://www.emacswiki.org/EmacsMacro")

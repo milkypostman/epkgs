@@ -2,12 +2,12 @@
  :created    "1999"
  :updated    "1999"
  :license    "GPL-2"
- :authors    (("Tom Breton"))
- :maintainer ("Tom Breton")
+ :authors    (("Tom Breton" . "tehom@localhost"))
+ :maintainer ("Tom Breton" . "tehom@localhost")
  :provided   (safe-equal)
  :required   ((("cl" cl)))
  :keywords   ("extensions")
- :homepage   "http://panix.com/~tehom/"
+ :homepage   "http://panix.com/~tehom"
  :commentary "\
 This also runs in Common Lisp, but various tree-walking is not
 complete, since I just moved it over.  For one thing, it doesn't

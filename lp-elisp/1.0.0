@@ -6,7 +6,7 @@
  :maintainer ("Edward O'Connor" . "ted@oconnor.cx")
  :provided   (lp-elisp)
  :required   ((("two-mode-mode" two-mode-mode)))
- :homepage   "http://edward.oconnor.cx/elisp/"
+ :homepage   "http://edward.oconnor.cx/elisp"
  :commentary "\
 At one time, my .emacs file was a literate program made with this
 poor-man's literate programming system for Emacs Lisp. It uses

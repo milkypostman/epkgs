@@ -5,5 +5,5 @@
  :license    "GPL-2"
  :authors    (("Mikey Coulson" . "miketcoulson@gmail.com"))
  :maintainer ("Mikey Coulson" . "miketcoulson@gmail.com")
- :homepage   "http://code.google.com/p/e-blog/"
+ :homepage   "http://code.google.com/p/e-blog"
  :wikipage   "http://www.emacswiki.org/Eblog")

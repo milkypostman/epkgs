@@ -6,7 +6,7 @@
  :maintainer ("Joe Reiss" . "joe@joereiss.net")
  :provided   (cycle-mini)
  :keywords   ("completion" "minibuffer")
- :homepage   "http://joereiss.net/"
+ :homepage   "http://joereiss.net"
  :commentary "\
 This is an extension to the completing-read commands in the
 minibuffer.  It allows you to cycle through the current list of

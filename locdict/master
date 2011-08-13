@@ -5,7 +5,7 @@
  :authors    (("Lars Magne Ingebrigtsen" . "lmi@gnus.org"))
  :maintainer ("Lars Magne Ingebrigtsen" . "lmi@gnus.org")
  :keywords   ("language")
- :homepage   "http://quimby.gnus.org/elisp/"
+ :homepage   "http://quimby.gnus.org/elisp"
  :commentary "\
 Usage:
 

@@ -4,7 +4,7 @@
  :authors    (("Andrew J Cosgriff" . "ajc@bing.wattle.id.au"))
  :maintainer ("Andrew J Cosgriff" . "ajc@bing.wattle.id.au")
  :keywords   ("memo" "palm" "pilot")
- :homepage   "http://polydistortion.net/sw/emacs-lisp/"
+ :homepage   "http://polydistortion.net/sw/emacs-lisp"
  :commentary "\
 Inspired by David Maslen :)
 

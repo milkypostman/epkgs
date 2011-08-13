@@ -3,4 +3,4 @@
  :license    "GPL-2"
  :provided   (html-from-latex)
  :required   ((("replace-regexp-list" replace-regexp-list)))
- :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/webstuff/")
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/webstuff")

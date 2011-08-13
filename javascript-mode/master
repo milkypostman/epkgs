@@ -8,7 +8,7 @@
  :required   ((("browse-url" browse-url)
 	       ("tempo" tempo)))
  :keywords   ("languages")
- :homepage   "http://www.brigadoon.de/peter/"
+ :homepage   "http://www.brigadoon.de/peter"
  :wikipage   "http://www.emacswiki.org/JavaScriptMode"
  :commentary "\
 Get the latest version from

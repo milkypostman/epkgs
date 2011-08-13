@@ -6,4 +6,4 @@
  :maintainer ("K.Handa" . "handa@etl.go.jp")
  :provided   (mgp)
  :keywords   ("magic point" "mgp")
- :homepage   "http://member.wide.ad.jp/wg/mgp/")
+ :homepage   "http://member.wide.ad.jp/wg/mgp")

@@ -8,7 +8,7 @@
  :required   ((("gnus" tm-view)
 	       ("vcard" vcard)))
  :keywords   ("gnus" "mime" "rmail" "tm" "vcard")
- :homepage   "http://polydistortion.net/sw/emacs-lisp/"
+ :homepage   "http://polydistortion.net/sw/emacs-lisp"
  :commentary "\
 Noah Friedman wrote a generic bit of Emacs Lisp to parse VCard
 data, saying \"it'd be neat if somebody made this work with TM, so

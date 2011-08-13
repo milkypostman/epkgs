@@ -7,7 +7,7 @@
  :provided   (tpum)
  :required   ((("cl" cl)))
  :keywords   ("menus" "tools")
- :homepage   "http://lgarc.narod.ru/xemacs/"
+ :homepage   "http://lgarc.narod.ru/xemacs"
  :commentary "\
 This package aimed to bring popup menus to be more usable for
 keyboard friendly and mouse unfriendly people like me.  On the one

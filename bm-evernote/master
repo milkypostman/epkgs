@@ -3,6 +3,8 @@
  :created    "2011"
  :updated    "2011"
  :license    "GPL-3"
+ :authors    (("ARISAWA Akihiro" . "awasira@gmail.com"))
+ :maintainer ("ARISAWA Akihiro" . "awasira@gmail.com")
  :provided   (bm-evernote)
  :required   (((nil evernote-mode)))
  :keywords   ("bookmark" "evernote")

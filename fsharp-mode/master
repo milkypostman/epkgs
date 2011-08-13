@@ -8,4 +8,4 @@
 	       ("custom" custom)
 	       ("emacs-core" font-lock)
 	       ("info-look" info-look)))
- :homepage   "http://sourceforge.net/projects/fsharp-mode/")
+ :homepage   "http://sourceforge.net/projects/fsharp-mode")

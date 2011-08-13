@@ -6,7 +6,7 @@
  :maintainer ("Joe Casadonte" . "emacs@northbound-train.com")
  :provided   (hobo)
  :keywords   ("comm" "remote" "scp" "tramp")
- :homepage   "http://www.northbound-train.com/"
+ :homepage   "http://www.northbound-train.com"
  :wikipage   "http://www.emacswiki.org/HoboMode"
  :commentary "\
 Hobo facilitates editing remote files by automating file transfers

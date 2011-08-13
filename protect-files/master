@@ -6,7 +6,7 @@
  :maintainer ("Dave Love" . "fx@gnu.org")
  :provided   (protect-files)
  :keywords   ("tools")
- :homepage   "http://www.loveshack.ukfsn.org/emacs/"
+ :homepage   "http://www.loveshack.ukfsn.org/emacs"
  :commentary "\
 This is a mechanism for preventing at least accidental modification
 of files matching defined patterns (see `protect-files-alist').  It

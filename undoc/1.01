@@ -6,7 +6,7 @@
  :maintainer ("Joshua D. Guttman" . "guttman@mitre.org")
  :provided   (undoc)
  :keywords   ("word" "word processors ")
- :homepage   "http://www.ccs.neu.edu/home/guttman/"
+ :homepage   "http://www.ccs.neu.edu/home/guttman"
  :wikipage   "http://www.emacswiki.org/UnDoc"
  :commentary "\
 We first substitute reasonable ASCII equivalents for some MS Word 

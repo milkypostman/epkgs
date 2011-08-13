@@ -6,7 +6,7 @@
  :maintainer ("Guillaume Marceau")
  :provided   (loop-constructs)
  :required   ((("cl" cl)))
- :homepage   "http://gmarceau.qc.ca/"
+ :homepage   "http://gmarceau.qc.ca"
  :commentary "\
 Defines a few sugary loop constructs which claim to be both
 versatile and seamlessly usable accross both functionnal and

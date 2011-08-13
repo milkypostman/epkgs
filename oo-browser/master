@@ -10,5 +10,5 @@
 	       ("info" info)
 	       (nil id-menubars pydoc)))
  :keywords   ("c" "oop" "tools")
- :homepage   "http://sourceforge.net/projects/oo-browser/"
+ :homepage   "http://sourceforge.net/projects/oo-browser"
  :wikipage   "http://www.emacswiki.org/ObjectOrientedBrowser")

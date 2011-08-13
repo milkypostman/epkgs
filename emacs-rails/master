@@ -21,4 +21,4 @@
 	       ("flymake" flymake)
 	       ("predictive" predictive)))
  :keywords   ("languages" "oop" "rails" "ruby")
- :homepage   "http://rubyforge.org/projects/emacs-rails/")
+ :homepage   "http://rubyforge.org/projects/emacs-rails")

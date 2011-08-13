@@ -2,6 +2,8 @@
  :created    "20090317"
  :updated    "2009"
  :license    "GPL-1"
+ :authors    ((nil . "uwe brauer oub@mat.ucm.es"))
+ :maintainer (nil . "uwe brauer oub@mat.ucm.es")
  :provided   (bbdbadapt-ispell)
  :commentary "\
 I wanted to have the ispell dict selected 

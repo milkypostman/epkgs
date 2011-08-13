@@ -1,4 +1,4 @@
 (:updated    "20051116"
  :license    "GPL-2"
  :provided   (filenames-in-buffers)
- :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/file-handling/")
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/file-handling")

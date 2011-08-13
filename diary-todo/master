@@ -7,7 +7,7 @@
  :provided   (diary-todo)
  :required   ((("todo-mode" todo-mode)))
  :keywords   ("diary" "todo")
- :homepage   "http://meltin.net/hacks/emacs/"
+ :homepage   "http://meltin.net/hacks/emacs"
  :commentary "\
 Takes the file specified by `todo-file-top', removes the
 todo-prefix stuff from each line and inserts in the diary for the

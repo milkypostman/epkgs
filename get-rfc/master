@@ -6,7 +6,7 @@
  :maintainer ("lawrence mitchell" . "wence@gmx.li")
  :provided   (get-rfc)
  :keywords   ("convenience" "rfcs")
- :homepage   "http://www.ph.ed.ac.uk/~s0198183/"
+ :homepage   "http://www.ph.ed.ac.uk/~s0198183"
  :wikipage   "http://www.emacswiki.org/GetRFC"
  :commentary "\
 This is a tiny little package to alleviate the pain of having to

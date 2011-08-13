@@ -8,5 +8,5 @@
 	       ("etags" etags)
 	       ("tree-widget" tree-widget)
 	       ("widget" wid-browse)))
- :homepage   "http://code.google.com/p/google-gtags/"
+ :homepage   "http://code.google.com/p/google-gtags"
  :wikipage   "http://www.emacswiki.org/GnuGlobal")

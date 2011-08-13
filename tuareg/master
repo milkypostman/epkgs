@@ -9,5 +9,5 @@
 	       ("emacs-core" font-lock))
 	      (("caml" caml-help caml-types)
 	       ("cedet" speedbar)))
- :homepage   "http://tuareg.forge.ocamlcore.org/"
+ :homepage   "http://tuareg.forge.ocamlcore.org"
  :wikipage   "http://www.emacswiki.org/TuaregMode")

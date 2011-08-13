@@ -3,8 +3,8 @@
  :created    "2009"
  :updated    "2009"
  :license    "GPL-3"
- :authors    (("Mark Hepburn"))
- :maintainer ("Mark Hepburn")
+ :authors    (("Mark Hepburn" . "mark.hepburn@gmail.com"))
+ :maintainer ("Mark Hepburn" . "mark.hepburn@gmail.com")
  :provided   (tags-view)
  :required   ((("cl" cl)))
  :keywords   ("convenience" "extensions" "files" "tools")

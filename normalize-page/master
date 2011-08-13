@@ -3,4 +3,4 @@
  :provided   (normalize-page)
  :required   ((("page-attributes" page-attributes)
 	       ("webmaster-macros" webmaster-macros)))
- :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/webstuff/webmastering/")
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/webstuff/webmastering")

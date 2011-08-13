@@ -23,7 +23,7 @@
 	       ("zeroconf" zeroconf)
 	       (nil timer-funcs)))
  :keywords   ("comm" "processes")
- :homepage   "http://savannah.gnu.org/projects/tramp/"
+ :homepage   "http://savannah.gnu.org/projects/tramp"
  :wikipage   "http://www.emacswiki.org/TrampMode"
  :commentary "\
 This package provides remote file editing, similar to ange-ftp.

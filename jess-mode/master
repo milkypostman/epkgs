@@ -9,7 +9,7 @@
  :required   ((("comint" comint)
 	       ("lisp-mode" lisp-mode)))
  :keywords   ("jess" "languages")
- :homepage   "http://jess-mode.sourceforge.net/"
+ :homepage   "http://jess-mode.sourceforge.net"
  :commentary "\
 The major mode for editing Jess code. Very similar to CLIPS, which
 in turn is a close relative of Lisp. Much of the code was borrowed

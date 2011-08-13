@@ -6,7 +6,7 @@
  :maintainer ("Jaeyoun Chung" . "jay@kldp.org")
  :provided   (accelerate-keyboard)
  :keywords   ("convenience")
- :homepage   "http://emacs.kldp.net/~jay/emacs/"
+ :homepage   "http://emacs.kldp.net/~jay/emacs"
  :commentary "\
 Accelerate effective keyboard input speed. If your computer provides way
 too slow keyboard input speed. This is a kludge to fix that.

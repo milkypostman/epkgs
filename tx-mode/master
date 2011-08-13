@@ -3,6 +3,8 @@
  :created    "2010"
  :updated    "2010"
  :license    "GPL-2"
+ :authors    (("Yoshiki Kurihara" . "kurihara@cpan.org"))
+ :maintainer ("Yoshiki Kurihara" . "kurihara@cpan.org")
  :provided   (tx-mode)
  :required   ((("tempo" tempo)))
  :keywords   ("mode" "perl" "template")

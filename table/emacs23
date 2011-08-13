@@ -2,8 +2,8 @@
  :created    "200008"
  :updated    "2011"
  :license    "GPL-3"
- :authors    (("Takaaki Ota"))
- :maintainer ("Takaaki Ota")
+ :authors    (("Takaaki Ota" . "takaaki.ota@am.sony.com"))
+ :maintainer ("Takaaki Ota" . "takaaki.ota@am.sony.com")
  :provided   (table)
  :required   ((("easymenu" easymenu)
 	       ("regexp-opt" regexp-opt)))

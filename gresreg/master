@@ -6,7 +6,7 @@
  :maintainer ("Matsushita Akihisa" . "akihisa@mail.ne.jp")
  :provided   (gresreg)
  :keywords   ("isearch")
- :homepage   "http://www.bookshelf.jp/"
+ :homepage   "http://www.bookshelf.jp"
  :commentary "\
 The latest version of this program can be downloaded from
 http://www.bookshelf.jp/elc/gresreg.el")

@@ -8,4 +8,4 @@
  :required   ((("cl" cl)
 	       ("term" term)))
  :keywords   ("television")
- :homepage   "http://quimby.gnus.org/elisp/")
+ :homepage   "http://quimby.gnus.org/elisp")

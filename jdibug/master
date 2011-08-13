@@ -6,4 +6,4 @@
 	       ("easymenu" easymenu)
 	       ("tree-mode" tree-mode)
 	       (nil jdibug-java-expr-wy)))
- :homepage   "http://code.google.com/p/jdibug/")
+ :homepage   "http://code.google.com/p/jdibug")

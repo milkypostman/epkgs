@@ -1,5 +1,6 @@
 (:summary    "ICaps a word (an annoying diversion)"
  :updated    "20030318"
+ :license    "GPL-2"
  :authors    (("Harley Gorrell" . "harley@mahalito.net"))
  :maintainer ("Harley Gorrell" . "harley@mahalito.net")
  :provided   (iCaps)

@@ -8,7 +8,7 @@
  :required   ((("easymenu" easymenu)
 	       ("tempo" tempo)))
  :keywords   ("html" "major-mode")
- :homepage   "http://tuvalu.santafe.edu/~nelson/hhm-beta/"
+ :homepage   "http://tuvalu.santafe.edu/~nelson/hhm-beta"
  :wikipage   "http://www.emacswiki.org/HtmlHelperMode"
  :commentary "\
 {{{ 

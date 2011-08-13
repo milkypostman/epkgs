@@ -6,7 +6,7 @@
  :maintainer ("lawrence mitchell" . "wence@gmx.li")
  :provided   (cite)
  :keywords   ("mail" "news")
- :homepage   "http://www.ph.ed.ac.uk/~s0198183/"
+ :homepage   "http://www.ph.ed.ac.uk/~s0198183"
  :wikipage   "http://www.emacswiki.org/cite"
  :commentary "\
 This is yet another citing engine for Emacs.  It's to trivial-cite

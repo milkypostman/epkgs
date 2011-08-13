@@ -33,7 +33,7 @@
 	       ("vc" vc)
 	       ("widget" wid-edit)
 	       (nil dvc-autoloads dvc-version)))
- :homepage   "http://download.gna.org/dvc/"
+ :homepage   "http://download.gna.org/dvc"
  :commentary "\
 This file provides the low-level functions used by the DVC interfaces
 to distributed revison control systems.")

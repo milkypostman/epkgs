@@ -5,5 +5,5 @@
 	       ("calendar" calendar)
 	       ("cl" cl)
 	       ("efs" efs)))
- :homepage   "http://billstclair.com/blogmax/"
+ :homepage   "http://billstclair.com/blogmax"
  :wikipage   "http://www.emacswiki.org/BlogMax")

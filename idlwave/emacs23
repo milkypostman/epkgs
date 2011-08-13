@@ -16,7 +16,7 @@
 	       ("timer" timer)
 	       ("widget" wid-edit widget)))
  :keywords   ("languages")
- :homepage   "http://idlwave.org/"
+ :homepage   "http://idlwave.org"
  :wikipage   "http://www.emacswiki.org/IdlMode"
  :commentary "\
 IDLWAVE enables feature-rich development and interaction with IDL,

@@ -7,7 +7,7 @@
  :provided   (install)
  :required   ((("cl" cl)
 	       ("eshell" em-glob)))
- :homepage   "http://www.iro.umontreal.ca/~monnier/elisp/"
+ :homepage   "http://www.iro.umontreal.ca/~monnier/elisp"
  :commentary "\
 This little package is meant to ease up the task of installing
 third party ELisp packages.  I.e. it takes care of placing it in

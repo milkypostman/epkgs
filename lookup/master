@@ -18,5 +18,5 @@
 	       ("view" view)
 	       ("w3m" w3m)))
  :keywords   ("dictionary")
- :homepage   "http://lookup.sourceforge.net/"
+ :homepage   "http://lookup.sourceforge.net"
  :wikipage   "http://www.emacswiki.org/LookUp")

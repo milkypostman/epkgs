@@ -5,7 +5,7 @@
  :authors    (("David Engster" . "dengste@eml.cc"))
  :maintainer ("David Engster" . "dengste@eml.cc")
  :provided   (minimap)
- :homepage   "http://www.randomsample.de/"
+ :homepage   "http://www.randomsample.de"
  :wikipage   "http://www.emacswiki.org/MiniMap"
  :commentary "\
 This file is an implementation of a minimap sidebar, i.e., a

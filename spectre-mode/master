@@ -8,7 +8,7 @@
  :required   ((("cedet" speedbar)
 	       ("emacs-core" font-lock)))
  :keywords   ("affirma" "spectre files")
- :homepage   "http://spice-mode.4t.com/"
+ :homepage   "http://spice-mode.4t.com"
  :commentary "\
 Most of the code of this mode was shamelessly stolen from eldo-mode
 (Manu Rouat & GVdP) and spice-mode (Geert Van der Plas & Manu). Language

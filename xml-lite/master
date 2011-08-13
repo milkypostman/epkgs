@@ -9,7 +9,7 @@
 	       ("custom" custom)
 	       ("sgml-mode" sgml-mode)))
  :keywords   ("xml")
- :homepage   "http://www.dogbiscuit.org/mdub/software/"
+ :homepage   "http://www.dogbiscuit.org/mdub/software"
  :commentary "\
 This package provides a simple indentation engine for XML.  It is
 intended for use in situations where the full power of the popular PSGML

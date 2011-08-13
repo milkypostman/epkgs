@@ -8,7 +8,7 @@
  :required   ((("bbdb" bbdb)
 	       ("cl" cl)))
  :keywords   ("addressbook" "bbdb" "export" "icedove" "ldap" "ldif" "thunderbird")
- :homepage   "http://www.neilvandyke.org/bbdb2tbird/"
+ :homepage   "http://www.neilvandyke.org/bbdb2tbird"
  :commentary "\
 \"bbdb2tbird.el\" is an Emacs Lisp program I hacked up mostly on 2007-05-22 to
 migrate my BBDB contact database of over 3000 entries to the Address Book of

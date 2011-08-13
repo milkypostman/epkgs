@@ -7,7 +7,7 @@
  :provided   (ogg-comment)
  :required   ((("cl" cl)))
  :keywords   ("music")
- :homepage   "http://www.ph.ed.ac.uk/~s0198183/"
+ :homepage   "http://www.ph.ed.ac.uk/~s0198183"
  :commentary "\
 This file provides a minimal interface to reading the \"comment\"
 section from an Ogg-Vorbis stream as defined in <URL:

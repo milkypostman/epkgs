@@ -9,5 +9,5 @@
  :required   ((("ffap" ffap)
 	       ("imenu" imenu)))
  :keywords   ("autocompletion")
- :homepage   "http://www.nongnu.org/gpicker/"
+ :homepage   "http://www.nongnu.org/gpicker"
  :wikipage   "http://www.emacswiki.org/Gpicker")

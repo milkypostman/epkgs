@@ -3,5 +3,5 @@
  :provided   (auto-aligner dismal dismal-data-structures dismal-extensions dismal-metacolumn dismal-simple-menus float-changes heaps rmatrix semi-coder simple-menu soar-misc vectors)
  :required   ((("cl" cl)
 	       ("info" info)))
- :homepage   "http://acs.ist.psu.edu/dismal/"
+ :homepage   "http://acs.ist.psu.edu/dismal"
  :wikipage   "http://www.emacswiki.org/Dismal")

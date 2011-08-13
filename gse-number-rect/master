@@ -7,4 +7,4 @@
  :provided   (gse-number-rect)
  :required   ((("rect" rect)))
  :keywords   ("extensions")
- :homepage   "http://antisleep.com/elisp/")
+ :homepage   "http://antisleep.com/elisp")

@@ -1,4 +1,4 @@
 (:updated    "20061201"
  :license    "GPL-2"
  :provided   (load-directory)
- :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/basics/")
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/basics")

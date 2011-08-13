@@ -7,7 +7,7 @@
  :provided   (ginel-template)
  :required   ((("custom" custom)))
  :keywords   ("extensions" "languages" "tools")
- :homepage   "http://www.han.de/~racke/ginel/"
+ :homepage   "http://www.han.de/~racke/ginel"
  :commentary "\
 * Introduction to Templates
 Programmers and other text writers often use similar text chunks again

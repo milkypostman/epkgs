@@ -5,7 +5,7 @@
  :provided   (javadoc-help)
  :required   ((("thingatpt" thingatpt)))
  :keywords   ("help" "java" "javadoc" "lookup")
- :homepage   "http://javadochelp.sourceforge.net/"
+ :homepage   "http://javadochelp.sourceforge.net"
  :wikipage   "http://www.emacswiki.org/JavadocHelp"
  :commentary "\
 Javadoc-Help is an add-on module for Emacs that let you search a class

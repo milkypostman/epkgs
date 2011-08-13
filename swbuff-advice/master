@@ -6,7 +6,7 @@
  :maintainer ("Joe Casadonte" . "emacs@northbound-train.com")
  :provided   (swbuff-advice)
  :keywords   ("alternate" "filters" "regexps" "swbuff")
- :homepage   "http://www.northbound-train.com/"
+ :homepage   "http://www.northbound-train.com"
  :commentary "\
 The swbuff package provides a way to cycle thru the buffers,
  optionally filtering out certain buffers via a regexp.  The

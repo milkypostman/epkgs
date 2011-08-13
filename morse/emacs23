@@ -2,8 +2,8 @@
  :created    "1995"
  :updated    "2011"
  :license    "GPL-3"
- :authors    (("Rick Farnbach"))
- :maintainer ("Rick Farnbach")
+ :authors    (("Rick Farnbach" . "rick_farnbach@mentorg.com"))
+ :maintainer ("Rick Farnbach" . "rick_farnbach@mentorg.com")
  :provided   (morse)
  :keywords   ("games")
  :commentary "\

@@ -2,12 +2,12 @@
  :created    "1999"
  :updated    "1999"
  :license    "GPL-2"
- :authors    (("Tom Breton"))
- :maintainer ("Tom Breton")
+ :authors    (("Tom Breton" . "tehom@localhost"))
+ :maintainer ("Tom Breton" . "tehom@localhost")
  :provided   (tehom-func-args)
  :required   (((nil local-vars)))
  :keywords   ("extensions")
- :homepage   "http://panix.com/~tehom/"
+ :homepage   "http://panix.com/~tehom"
  :commentary "\
 Known bugs: Because of the way it works, it can fail on functions
 where \"documentation\" returns something that doesn't end at or

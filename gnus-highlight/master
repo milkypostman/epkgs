@@ -6,4 +6,4 @@
  :maintainer ("Wes Hardaker")
  :provided   (gnus-highlight)
  :required   ((("gnus" gnus-art)))
- :homepage   "http://www.hardakers.net/elisp/")
+ :homepage   "http://www.hardakers.net/elisp")

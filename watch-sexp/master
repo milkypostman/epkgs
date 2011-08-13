@@ -3,4 +3,4 @@
  :updated    "2007"
  :license    "GPL-2"
  :provided   (watch-sexp)
- :homepage   "http://www.skamphausen.de/cgi-bin/ska/")
+ :homepage   "http://www.skamphausen.de/cgi-bin/ska")

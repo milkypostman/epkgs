@@ -1,4 +1,4 @@
 (:updated    "20050118"
  :license    "GPL-2"
  :provided   (structure-edit)
- :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/editing/")
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/editing")

@@ -9,4 +9,4 @@
 	       ("easymenu" easymenu)
 	       ("ecasound" ecasound)
 	       ("ilisp" ilisp)))
- :homepage   "http://lilypond.org/")
+ :homepage   "http://lilypond.org")

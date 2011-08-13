@@ -7,4 +7,4 @@
  :provided   (sas sas-fontlock)
  :required   ((("emacs-core" font-lock)
 	       ("shell" shell)))
- :homepage   "ftp://ftp.biostat.wisc.edu/pub/cook/sas-mode/")
+ :homepage   "ftp://ftp.biostat.wisc.edu/pub/cook/sas-mode")

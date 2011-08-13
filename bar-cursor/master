@@ -6,7 +6,7 @@
  :maintainer ("Joe Casadonte" . "emacs@northbound-train.com")
  :provided   (bar-cursor)
  :keywords   ("bar" "cursor" "overwrite")
- :homepage   "http://www.northbound-train.com/"
+ :homepage   "http://www.northbound-train.com"
  :commentary "\
 Simple package to convert the block cursor into a bar cursor.  In
  overwrite mode, the bar cursor changes back into a block cursor.

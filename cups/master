@@ -4,7 +4,7 @@
  :license    "GPL-2"
  :authors    (("Jesse Rosenthal" . "jesse.k.rosenthal@gmail.com"))
  :maintainer ("Jesse Rosenthal" . "jesse.k.rosenthal@gmail.com")
- :homepage   "http://www.columbia.edu/~jr2075/elisp/"
+ :homepage   "http://www.columbia.edu/~jr2075/elisp"
  :commentary "\
 If you have cups on your *nix machine, this script will read your
 conf file (usually \"/etc/cups/printers.conf\") and allow you to

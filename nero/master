@@ -5,7 +5,7 @@
  :license    "GPL-2"
  :provided   (nero)
  :required   ((("cl" cl)))
- :homepage   "http://code.google.com/p/nero-el/"
+ :homepage   "http://code.google.com/p/nero-el"
  :commentary "\
 Nero is a fast interactive web browser that runs under Emacs.  It
 uses 'lynx -dump' to generate page content.  Navigation is

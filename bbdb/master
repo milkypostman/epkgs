@@ -31,5 +31,5 @@
 	       ("url" url)
 	       ("vm" vm vm-folder vm-macro vm-message vm-mime vm-misc vm-motion vm-summary vm-undo vm-vars vm-version)
 	       (nil dates)))
- :homepage   "http://bbdb.sourceforge.net/"
+ :homepage   "http://bbdb.sourceforge.net"
  :wikipage   "http://www.emacswiki.org/BbdbMode")

@@ -4,4 +4,4 @@
  :authors    (("Noah Friedman" . "friedman@splode.com"))
  :maintainer (nil . "friedman@splode.com")
  :provided   (deep-copy)
- :homepage   "ftp://ftp.splode.com/pub/users/friedman/emacs-lisp/")
+ :homepage   "ftp://ftp.splode.com/pub/users/friedman/emacs-lisp")

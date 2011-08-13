@@ -7,7 +7,7 @@
  :required   ((("ispell" ispell)
 	       (nil hyper-apropos)))
  :keywords   ("draft" "handling" "vm")
- :homepage   "http://www.robf.de/Hacking/elisp/"
+ :homepage   "http://www.robf.de/Hacking/elisp"
  :commentary "\
 1) Type `M-x byte-compile-file \"ispell-hl.el\"' to byte compile
    this library and put it somewhere in your load-path (you can

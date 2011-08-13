@@ -2,4 +2,4 @@
  :updated    "20071029"
  :license    "GPL-2"
  :provided   (flatten-saved-pages)
- :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/webstuff/")
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/webstuff")

@@ -4,7 +4,7 @@
  :license    "GPL-2"
  :provided   (tld)
  :required   ((("cl" cl)))
- :homepage   "http://www.davep.org/emacs/"
+ :homepage   "http://www.davep.org/emacs"
  :commentary "\
 tld.el provides a command for looking up TLDs, either by searching for a
 specific TLD or by searching country names.

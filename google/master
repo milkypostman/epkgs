@@ -9,7 +9,7 @@
  :required   ((("json" json)
 	       ("url" url)))
  :keywords   ("comm" "processes" "tools")
- :homepage   "http://edward.oconnor.cx/elisp/"
+ :homepage   "http://edward.oconnor.cx/elisp"
  :wikipage   "http://www.emacswiki.org/GoogleInterface"
  :commentary "\
 You should always be able to find the latest version here:

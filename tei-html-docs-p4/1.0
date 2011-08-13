@@ -3,7 +3,7 @@
  :authors    (("Peter Heslin" . "p.j.heslin@dur.ac.uk"))
  :maintainer ("Peter Heslin" . "p.j.heslin@dur.ac.uk")
  :provided   (tei-html-docs-p4)
- :homepage   "http://www.dur.ac.uk/p.j.heslin/Software/Emacs/"
+ :homepage   "http://www.dur.ac.uk/p.j.heslin/Software/Emacs"
  :commentary "\
 A quick but useful hack for TEI-P4 XML documents: it provides a
 function that looks up the name of the element before point and

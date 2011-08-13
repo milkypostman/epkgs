@@ -2,7 +2,7 @@
  :created    "2000"
  :updated    "2011"
  :license    "GPL-3"
- :authors    (("Francis J. Wright"))
+ :authors    (("Francis J. Wright" . "f.j.wright@qmul.ac.uk"))
  :maintainer ("FSF")
  :adapted-by ("Eli Zaretskii" . "eliz@gnu.org")
  :provided   (woman)

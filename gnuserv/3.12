@@ -10,7 +10,7 @@
 	       ("custom" custom)
 	       ("w3" devices)))
  :keywords   ("environment" "processes" "terminals")
- :homepage   "http://meltin.net/hacks/emacs/"
+ :homepage   "http://meltin.net/hacks/emacs"
  :commentary "\
 Gnuserv is run when Emacs needs to operate as a server for other
 processes.  Specifically, any number of files can be attached for

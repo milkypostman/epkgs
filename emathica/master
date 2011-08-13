@@ -2,6 +2,6 @@
  :created    "2010"
  :updated    "2010"
  :license    "GPL-2"
- :authors    (("Burkhard Zimmermann"))
- :maintainer ("Burkhard Zimmermann")
+ :authors    (("Burkhard Zimmermann" . "b.zimmermann@risc.uni-linz.ac.at"))
+ :maintainer ("Burkhard Zimmermann" . "b.zimmermann@risc.uni-linz.ac.at")
  :homepage   "https://github.com/bz/emathica")

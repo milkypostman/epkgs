@@ -10,7 +10,7 @@
 	       ("easymenu" easymenu)
 	       ("finder" finder)))
  :keywords   ("tex")
- :homepage   "http://staff.science.uva.nl/~dominik/Tools/cdlatex/"
+ :homepage   "http://staff.science.uva.nl/~dominik/Tools/cdlatex"
  :wikipage   "http://www.emacswiki.org/CDLaTeX"
  :commentary "\
 CDLaTeX is a minor mode supporting fast insertion of environment

@@ -6,4 +6,4 @@
  :maintainer ("Guillaume Marceau")
  :provided   (record)
  :required   ((("cl" cl)))
- :homepage   "http://gmarceau.qc.ca/")
+ :homepage   "http://gmarceau.qc.ca")

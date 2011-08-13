@@ -8,7 +8,7 @@
 	       ("emacs-core" font-lock)
 	       ("thingatpt" thingatpt)
 	       ("widget" wid-edit widget)))
- :homepage   "http://emacsmp3player.sourceforge.net/"
+ :homepage   "http://emacsmp3player.sourceforge.net"
  :wikipage   "http://www.emacswiki.org/MpthreePlayer"
  :commentary "\
 Some codes and ideas borrowed from mpg123 by HIROSE Yuuji [yuuji@gentei.org]

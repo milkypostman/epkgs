@@ -18,5 +18,5 @@
 	       ("thingatpt" thingatpt)
 	       ("timer" timer)
 	       ("tree-widget" tree-widget)))
- :homepage   "http://common-lisp.net/project/slime/"
+ :homepage   "http://common-lisp.net/project/slime"
  :wikipage   "http://www.emacswiki.org/SlimeMode")

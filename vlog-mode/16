@@ -9,4 +9,4 @@
  :required   ((("cl" cl)
 	       ("emacs-core" font-lock)))
  :keywords   ("languages" "verilog")
- :homepage   "http://vlog-mode.sourceforge.net/")
+ :homepage   "http://vlog-mode.sourceforge.net")

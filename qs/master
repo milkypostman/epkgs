@@ -3,7 +3,7 @@
  :updated    "2004"
  :license    "GPL-2"
  :keywords   ("convenience" "hypermedia")
- :homepage   "http://emacs.kldp.net/~jay/emacs/"
+ :homepage   "http://emacs.kldp.net/~jay/emacs"
  :commentary "\
 Quickly search via the web search engine with one key stroke.
 sample usage:

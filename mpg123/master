@@ -2,5 +2,5 @@
  :provided   (mpg123)
  :required   ((("emacs-core" overlay)
 	       ("smart-dnd" smart-dnd)))
- :homepage   "http://www.gentei.org/~yuuji/software/mpg123el/"
+ :homepage   "http://www.gentei.org/~yuuji/software/mpg123el"
  :wikipage   "http://www.emacswiki.org/Mpg123")

@@ -6,4 +6,4 @@
  :maintainer ("Matthieu Lemerre" . "racin@free.fr")
  :provided   (qemu)
  :keywords   ("comm" "terminals")
- :homepage   "http://racin.free.fr/")
+ :homepage   "http://racin.free.fr")

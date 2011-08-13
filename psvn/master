@@ -16,5 +16,5 @@
 	       ("vc" vc-hooks)
 	       (nil cl-macs))
 	      (("gnus" mailcap)))
- :homepage   "http://www.xsteve.at/prg/vc_svn/"
+ :homepage   "http://www.xsteve.at/prg/vc_svn"
  :wikipage   "http://www.emacswiki.org/SvnStatusMode")

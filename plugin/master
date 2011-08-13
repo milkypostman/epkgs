@@ -5,4 +5,4 @@
  :required   ((("cl" cl)
 	       ("loop-constructs" loop-constructs)
 	       ("record" record)))
- :homepage   "http://gmarceau.qc.ca/")
+ :homepage   "http://gmarceau.qc.ca")

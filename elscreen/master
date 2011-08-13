@@ -6,5 +6,5 @@
  :required   ((("apel" static)
 	       ("dired" dired)
 	       (nil alist)))
- :homepage   "http://www.morishima.net/~naoto/software/elscreen/"
+ :homepage   "http://www.morishima.net/~naoto/software/elscreen"
  :wikipage   "http://www.emacswiki.org/EmacsLispScreen")

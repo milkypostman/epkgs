@@ -9,4 +9,4 @@
  :required   ((("cl" cl)
 	       ("etags" etags)))
  :keywords   ("etags" "java" "tags")
- :homepage   "http://jtags.sourceforge.net/")
+ :homepage   "http://jtags.sourceforge.net")

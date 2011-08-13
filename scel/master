@@ -9,4 +9,4 @@
 	       ("tree-widget" tree-widget))
 	      (("view" view)
 	       ("xcscope" xcscope)))
- :homepage   "supercollider.sourceforge.net/")
+ :homepage   "supercollider.sourceforge.net")

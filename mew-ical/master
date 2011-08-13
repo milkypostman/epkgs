@@ -7,4 +7,4 @@
  :provided   (mew-ical)
  :required   ((("browse-url" browse-url)))
  :keywords   ("icalendar" "mew")
- :homepage   "http://code.google.com/p/mew-ical/")
+ :homepage   "http://code.google.com/p/mew-ical")

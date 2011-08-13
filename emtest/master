@@ -13,5 +13,5 @@
 	      (("button" button)
 	       ("elib" dll)
 	       ("outline-magic" outline-magic)))
- :homepage   "https://savannah.nongnu.org/projects/emtest/"
+ :homepage   "https://savannah.nongnu.org/projects/emtest"
  :wikipage   "http://www.emacswiki.org/Emtest")

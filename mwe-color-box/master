@@ -9,7 +9,7 @@
 	       ("rect" rect)
 	       ("thingatpt" thingatpt)))
  :keywords   ("faces" "games")
- :homepage   "http://www.foldr.org/~michaelw/emacs/"
+ :homepage   "http://www.foldr.org/~michaelw/emacs"
  :commentary "\
 Color-boxify current buffer with M-x mwe:color-box-buffer
 Sit back.  Enjoy. :)

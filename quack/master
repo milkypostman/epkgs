@@ -11,7 +11,7 @@
 	       ("emacs-core" font-lock)
 	       ("scheme" scheme)
 	       ("thingatpt" thingatpt)))
- :homepage   "http://www.neilvandyke.org/quack/"
+ :homepage   "http://www.neilvandyke.org/quack"
  :wikipage   "http://www.emacswiki.org/QuackMode"
  :commentary "\
 INTRODUCTION:

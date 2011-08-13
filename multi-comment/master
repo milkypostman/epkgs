@@ -9,7 +9,7 @@
 	       ("multi-mode" multi-mode)
 	       ("newcomment" newcomment)))
  :keywords   ("languages")
- :homepage   "http://www.loveshack.ukfsn.org/emacs/"
+ :homepage   "http://www.loveshack.ukfsn.org/emacs"
  :commentary "\
 Provides `multi-comment-mode', which is suitable for putting on a
 programming language major mode hook.  It uses the multi-mode

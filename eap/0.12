@@ -7,4 +7,4 @@
  :provided   (eap eap-autoloads eap-dired-keybindings)
  :required   ((("comint" comint)))
  :keywords   ("audio" "ogg" "player")
- :homepage   "http://home.gna.org/eap/")
+ :homepage   "http://home.gna.org/eap")

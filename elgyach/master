@@ -11,5 +11,5 @@
 	       ("gnus" time-date)
 	       ("hippie-exp" hippie-exp)
 	       ("mpg123" mpg123)))
- :homepage   "http://www.nongnu.org/elgyach/"
+ :homepage   "http://www.nongnu.org/elgyach"
  :wikipage   "http://www.emacswiki.org/ElGyach")

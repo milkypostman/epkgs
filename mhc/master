@@ -14,5 +14,5 @@
 	       ("semi" mime-edit)
 	       ("wanderlust" elmo-localdir wl-summary)
 	       (nil bitmap cmail)))
- :homepage   "http://www.quickhack.net/mhc/"
+ :homepage   "http://www.quickhack.net/mhc"
  :wikipage   "http://www.emacswiki.org/MessageHarmonizedCalendaring")

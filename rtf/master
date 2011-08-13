@@ -8,5 +8,5 @@
  :provided   (rtf rtf-controls rtf-par rtf-reader rtf-tables state-m)
  :required   ((("cl" cl)
 	       ("emacs-core" code-pages)))
- :homepage   "http://savannah.nongnu.org/projects/emacs-rtf/"
+ :homepage   "http://savannah.nongnu.org/projects/emacs-rtf"
  :wikipage   "http://www.emacswiki.org/RTFMode")

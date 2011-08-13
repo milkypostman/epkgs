@@ -3,5 +3,5 @@
  :required   ((("comment" comment)
 	       ("emacs-core" font-lock)
 	       ("info" info)))
- :homepage   "http://www.yatex.org/"
+ :homepage   "http://www.yatex.org"
  :wikipage   "http://www.emacswiki.org/YaTeX")

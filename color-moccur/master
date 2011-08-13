@@ -7,7 +7,7 @@
 	       ("emacs-core" overlay)
 	       ("migemo" migemo)
 	       ("moccur-edit" moccur-edit)))
- :homepage   "http://www.bookshelf.jp/"
+ :homepage   "http://www.bookshelf.jp"
  :commentary "\
 If this program doesn't run, I might change the program for the
 worse.  So please send mail to akihisa@mail.ne.jp .

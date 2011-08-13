@@ -7,4 +7,4 @@
 	       ("erlang" erlang)
 	       ("ewoc" ewoc))
 	      (("w3m" w3m)))
- :homepage   "http://fresh.homeunix.net/~luke/distel/")
+ :homepage   "http://fresh.homeunix.net/~luke/distel")

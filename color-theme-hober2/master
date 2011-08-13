@@ -7,7 +7,7 @@
  :provided   (color-theme-hober2)
  :required   ((("color-theme" color-theme)))
  :keywords   ("local")
- :homepage   "http://edward.oconnor.cx/elisp/"
+ :homepage   "http://edward.oconnor.cx/elisp"
  :commentary "\
 This is my second color theme. Apologies for the formatting; this
 file is automatically extracted from a LaTeX master file.")

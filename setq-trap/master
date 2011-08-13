@@ -7,7 +7,7 @@
  :provided   (setq-trap)
  :required   ((("emacs-core" backquote)))
  :keywords   ("extensions")
- :homepage   "ftp://ftp.splode.com/pub/users/friedman/emacs-lisp/"
+ :homepage   "ftp://ftp.splode.com/pub/users/friedman/emacs-lisp"
  :commentary "\
 For this to work, all the code in which you want to debug setq calls
 must not be byte-compiled.  Even if you modified the byte-compiler not

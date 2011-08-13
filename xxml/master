@@ -4,4 +4,4 @@
  :authors    (("François Pinard" . "pinard@iro.umontreal.ca"))
  :maintainer ("François Pinard" . "pinard@iro.umontreal.ca")
  :provided   (xxml)
- :homepage   "http://xxml.progiciels-bpi.ca/")
+ :homepage   "http://xxml.progiciels-bpi.ca")

@@ -4,7 +4,7 @@
  :maintainer ("Matsushita Akihisa" . "akihisa@mail.ne.jp")
  :provided   (color-occur)
  :keywords   ("convenience" "highlight" "occur")
- :homepage   "http://www.bookshelf.jp/"
+ :homepage   "http://www.bookshelf.jp"
  :commentary "\
 color-occur highlight occur buffer and file buffer. Furthermore
 color-occur show the matching line of file buffer in other window.")

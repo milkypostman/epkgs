@@ -7,7 +7,7 @@
  :provided   (pair-mode)
  :required   ((("skeleton" skeleton)))
  :keywords   ("convenience")
- :homepage   "http://www.loveshack.ukfsn.org/emacs/"
+ :homepage   "http://www.loveshack.ukfsn.org/emacs"
  :commentary "\
 A trivial (local) minor mode, and a global version, which binds
 suitable characters to `skeleton-pair-insert-maybe'.  Thus typing

@@ -3,6 +3,8 @@
  :created    "2009"
  :updated    "2010"
  :license    "GPL-3"
+ :authors    (("Christopher Suckling" . "suckling@gmail.com"))
+ :maintainer ("Christopher Suckling" . "suckling@gmail.com")
  :provided   (org-mac-protocol)
  :required   ((("org-mode" org-bibtex org-protocol)))
  :keywords   ("hyperlinks" "outlines" "wp")

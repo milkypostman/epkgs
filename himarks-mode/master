@@ -6,7 +6,7 @@
  :maintainer ("none, mail me if you want to maintain this code.")
  :provided   (himarks-mode)
  :keywords   ("tools")
- :homepage   "http://lgarc.narod.ru/xemacs/"
+ :homepage   "http://lgarc.narod.ru/xemacs"
  :commentary "\
 Just highlights markers.
 

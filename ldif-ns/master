@@ -6,7 +6,7 @@
  :maintainer ("Dave Love" . "fx@gnu.org")
  :provided   (ldif-ns)
  :keywords   ("data")
- :homepage   "http://www.loveshack.ukfsn.org/emacs/"
+ :homepage   "http://www.loveshack.ukfsn.org/emacs"
  :commentary "\
 This package converts some types of name service records to LDIF
 format for loading into an LDAP server with the appropriate schema.

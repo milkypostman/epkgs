@@ -4,7 +4,7 @@
  :license    "GPL-2"
  :provided   (icmp-info)
  :required   ((("cl" cl)))
- :homepage   "http://www.davep.org/emacs/"
+ :homepage   "http://www.davep.org/emacs"
  :commentary "\
 icmp-info.el provides a set of functions for getting information about
 ICMP types and codes. This could be useful for the occasional packet log

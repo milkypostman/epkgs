@@ -6,7 +6,7 @@
  :maintainer ("Paul M. Rodriguez" . "pmr@ruricolist.com")
  :provided   (numwin)
  :keywords   ("convenience")
- :homepage   "http://gopher.ruricolist.com:70/lisp/"
+ :homepage   "http://gopher.ruricolist.com:70/lisp"
  :commentary "\
 Rather than take the long way around with `other-window', I found
 myself reaching for the mouse whenever I had more than three

@@ -7,7 +7,7 @@
  :maintainer ("V. L. Simpson" . "vls@freeshell.org")
  :provided   (screenplay)
  :required   ((("reporter" reporter)))
- :homepage   "http://www.nongnu.org/screenplay/"
+ :homepage   "http://www.nongnu.org/screenplay"
  :wikipage   "http://www.emacswiki.org/ScreenPlay"
  :commentary "\
 Massive complete start-over re-write back-to-the-drawing-board

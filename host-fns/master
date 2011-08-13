@@ -7,4 +7,4 @@
  :provided   (host-fns)
  :required   ((("file-fns" file-fns)
 	       ("string-fns" string-fns)))
- :homepage   "ftp://ftp.splode.com/pub/users/friedman/emacs-lisp/")
+ :homepage   "ftp://ftp.splode.com/pub/users/friedman/emacs-lisp")

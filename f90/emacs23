@@ -2,7 +2,7 @@
  :created    "1995"
  :updated    "2011"
  :license    "GPL-3"
- :authors    (("Torbj\\\"orn Einarsson"))
+ :authors    (("Torbj\\\"orn Einarsson" . "torbjorn.einarsson@era.ericsson.se"))
  :maintainer ("Glenn Morris" . "rgm@gnu.org")
  :provided   (f90)
  :keywords   ("fortran" "languages")

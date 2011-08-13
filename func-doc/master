@@ -1,7 +1,7 @@
 (:created    "19960115"
  :updated    "20011211"
- :authors    (("Peter S. Galbraith"))
- :maintainer ("Peter S. Galbraith")
+ :authors    (("Peter S. Galbraith" . "galbraithp@dfo-mpo.gc.ca"))
+ :maintainer ("Peter S. Galbraith" . "galbraithp@dfo-mpo.gc.ca")
  :provided   (func-doc)
  :required   ((("cc-mode" cc-mode)
 	       ("info" info)

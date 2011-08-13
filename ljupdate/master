@@ -14,5 +14,5 @@
 	       ("sendmail" sendmail)
 	       ("viper" viper-cmd)))
  :keywords   ("convenience")
- :homepage   "http://edward.oconnor.cx/ljupdate/"
+ :homepage   "http://edward.oconnor.cx/ljupdate"
  :wikipage   "http://www.emacswiki.org/LjUpdate")

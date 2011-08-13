@@ -8,5 +8,5 @@
  :required   ((("cl" cl)
 	       ("gnus" time-date)
 	       ("xml" xml)))
- :homepage   "http://sidebrain.sourceforge.net/"
+ :homepage   "http://sidebrain.sourceforge.net"
  :wikipage   "http://www.emacswiki.org/SideBrain")

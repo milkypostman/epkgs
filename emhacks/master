@@ -18,7 +18,7 @@
 	       ("vc" vc)
 	       ("widget" wid-edit)))
  :keywords   ("convenience" "extensions")
- :homepage   "http://emhacks.sourceforge.net/"
+ :homepage   "http://emhacks.sourceforge.net"
  :commentary "\
 This package provides the commands `swbuff-switch-to-next-buffer'
 and `swbuff-switch-to-previous-buffer' to respectively switch to

@@ -4,5 +4,5 @@
  :license    "GPL-2"
  :provided   (ergoemacs-mode)
  :keywords   ("colemak" "dvorak" "ergonomic" "keybinding" "qwerty")
- :homepage   "http://ergoemacs.org/"
+ :homepage   "http://ergoemacs.org"
  :wikipage   "http://www.emacswiki.org/ergoemacs")

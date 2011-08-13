@@ -7,7 +7,7 @@
  :provided   (paren-glint)
  :required   ((("advice" advice)))
  :keywords   ("faces" "languages")
- :homepage   "http://www.brgeight.se/"
+ :homepage   "http://www.brgeight.se"
  :commentary "\
 Installation:
 

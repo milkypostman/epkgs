@@ -3,8 +3,8 @@
  :created    "2009"
  :updated    "2011"
  :license    "GPL-3"
- :authors    (("Alexandru Harsanyi"))
- :maintainer ("Alexandru Harsanyi")
+ :authors    (("Alexandru Harsanyi" . "alexharsanyi@gmail.com"))
+ :maintainer ("Alexandru Harsanyi" . "alexharsanyi@gmail.com")
  :provided   (jira2 soap-client soap-inspect)
  :required   ((("cl" cl)
 	       ("emacs-core" warnings)

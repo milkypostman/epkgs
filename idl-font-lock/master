@@ -7,7 +7,7 @@
  :provided   (idl-font-lock)
  :required   ((("emacs-core" font-lock)))
  :keywords   ("faces" "idl" "languages")
- :homepage   "http://www.cs.utah.edu/~eeide/emacs/"
+ :homepage   "http://www.cs.utah.edu/~eeide/emacs"
  :commentary "\
 This file provides the data that Font Lock Mode needs in order to decorate
 OMG IDL (a.k.a. CORBA IDL) files.  The Font Lock patterns will match and

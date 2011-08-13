@@ -14,4 +14,4 @@
 	       ("imenu" imenu)
 	       ("reporter" reporter)))
  :keywords   ("tools")
- :homepage   "http://www.specman-mode.com/")
+ :homepage   "http://www.specman-mode.com")

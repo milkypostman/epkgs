@@ -11,7 +11,7 @@
 	       ("emacs-core" font-lock overlay)
 	       ("regexp-opt" regexp-opt)))
  :keywords   ("convenience" "faces" "languages" "tools")
- :homepage   "http://mmm-mode.sourceforge.net/"
+ :homepage   "http://mmm-mode.sourceforge.net"
  :wikipage   "http://www.emacswiki.org/MmmMode"
  :commentary "\
 MMM Mode is a minor mode that allows multiple major modes to

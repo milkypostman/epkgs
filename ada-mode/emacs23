@@ -3,7 +3,7 @@
  :updated    "2011"
  :license    "GPL-3"
  :authors    (("Rolf Ebert" . "ebert@inf.enst.fr")
-	      ("Markus Heritsch")
+	      ("Markus Heritsch" . "markus.heritsch@studbox.uni-stuttgart.de")
 	      ("Emmanuel Briot" . "briot@gnat.com"))
  :maintainer ("Stephen Leake" . "stephen_leake@member.fsf.org")
  :provided   (ada-mode ada-prj ada-stmt ada-xref)

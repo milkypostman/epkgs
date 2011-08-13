@@ -3,5 +3,7 @@
  :created    "2009"
  :updated    "2009"
  :license    "GPL-3"
+ :authors    (("Jonas Reinsch" . "jonas@collabmode.org"))
+ :maintainer ("Jonas Reinsch" . "jonas@collabmode.org")
  :keywords   ("collab" "collaboration" "collaborative" "editing")
  :homepage   "http://collabmode.org")

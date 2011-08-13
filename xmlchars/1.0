@@ -5,4 +5,4 @@
  :authors    (("Norman Walsh" . "ndw@nwalsh.com"))
  :maintainer ("Norman Walsh" . "ndw@nwalsh.com")
  :keywords   ("characters" "unicode" "xml")
- :homepage   "http://nwalsh.com/emacs/xmlchars/")
+ :homepage   "http://nwalsh.com/emacs/xmlchars")

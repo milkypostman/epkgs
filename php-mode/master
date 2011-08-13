@@ -3,6 +3,7 @@
  :created    "19990517"
  :updated    "20081212"
  :license    "GPL-3"
+ :maintainer ("Aaron S. Hawley" . "ashawley@users.sourceforge.net")
  :provided   (php-mode)
  :required   ((("add-log" add-log)
 	       ("cc-mode" cc-langs cc-mode)

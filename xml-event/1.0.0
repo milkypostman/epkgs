@@ -7,7 +7,7 @@
  :provided   (xml-event)
  :required   ((("xml" xml)))
  :keywords   ("comm" "processes" "tools")
- :homepage   "http://edward.oconnor.cx/elisp/"
+ :homepage   "http://edward.oconnor.cx/elisp"
  :commentary "\
 Typical usage:
 

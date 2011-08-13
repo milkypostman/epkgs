@@ -6,7 +6,7 @@
  :maintainer ("Dave Love" . "fx@gnu.org")
  :provided   (autocap)
  :keywords   ("abbrev" "convenience" "wp")
- :homepage   "http://www.loveshack.ukfsn.org/emacs/"
+ :homepage   "http://www.loveshack.ukfsn.org/emacs"
  :commentary "\
 auto-capitalize-mode attempts to capitalize (only) the beginning of
 sentences.  It uses the abbrev expansion hook.  You probably want to

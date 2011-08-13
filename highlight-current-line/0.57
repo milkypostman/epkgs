@@ -2,8 +2,8 @@
  :created    "19971010"
  :updated    "2003"
  :license    "GPL-2"
- :authors    (("Christoph Conrad"))
- :maintainer ("Christoph Conrad")
+ :authors    (("Christoph Conrad" . "christoph.conrad@gmx"))
+ :maintainer ("Christoph Conrad" . "christoph.conrad@gmx")
  :provided   (highlight-current-line)
  :required   ((("custom" custom)))
  :keywords   ("faces")

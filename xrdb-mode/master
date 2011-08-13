@@ -7,7 +7,7 @@
  :required   ((("custom" custom)
 	       ("reporter" reporter)))
  :keywords   ("data" "languages")
- :homepage   "http://www.python.org/emacs/"
+ :homepage   "http://www.python.org/emacs"
  :commentary "\
 This file provides a major mode for editing X resource database
 files.  It includes font-lock definitions and commands for

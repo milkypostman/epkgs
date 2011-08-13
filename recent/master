@@ -6,7 +6,7 @@
  :maintainer ("Patrick Gundlach" . "patrick@gundla.ch")
  :provided   (recent)
  :keywords   ("convenience")
- :homepage   "http://levana.de/emacs/"
+ :homepage   "http://levana.de/emacs"
  :commentary "\
 put in an emacs load path and write the following line into your
 .emacs file: 

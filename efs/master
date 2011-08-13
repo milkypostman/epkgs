@@ -12,4 +12,4 @@
 	       ("dired" dired)
 	       ("emacs-core" backquote)
 	       ("view" view)))
- :homepage   "http://www-pu.informatik.uni-tuebingen.de/users/sperber/software/efs/")
+ :homepage   "http://www-pu.informatik.uni-tuebingen.de/users/sperber/software/efs")

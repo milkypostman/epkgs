@@ -3,4 +3,4 @@
  :license    "GPL-2"
  :provided   (journal-at-exit)
  :required   ((("journal" journal)))
- :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/webstuff/")
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/webstuff")

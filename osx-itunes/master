@@ -1,5 +1,6 @@
 (:summary    "Control itunes from emacs"
  :updated    "20040415"
+ :license    "GPL-2"
  :authors    (("Harley Gorrell" . "harley@mahalito.net"))
  :maintainer ("Harley Gorrell" . "harley@mahalito.net")
  :provided   (osx-itunes)

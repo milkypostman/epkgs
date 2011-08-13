@@ -12,5 +12,5 @@
 	       ("hyperbole" tags)
 	       ("imenu" imenu)
 	       ("thingatpt" thingatpt)))
- :homepage   "http://sourceforge.net/projects/ilisp/"
+ :homepage   "http://sourceforge.net/projects/ilisp"
  :wikipage   "http://www.emacswiki.org/ILispMode")

@@ -3,4 +3,4 @@
  :updated    "2008"
  :license    "Apache-2.0"
  :provided   (rhtml-minor-mode)
- :homepage   "http://www.dedasys.com/freesoftware/")
+ :homepage   "http://www.dedasys.com/freesoftware")

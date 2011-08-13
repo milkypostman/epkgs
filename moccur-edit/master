@@ -6,7 +6,7 @@
  :provided   (moccur-edit)
  :required   ((("color-moccur" color-moccur)))
  :keywords   ("edit" "moccur")
- :homepage   "http://www.bookshelf.jp/"
+ :homepage   "http://www.bookshelf.jp"
  :commentary "\
 moccur-edit provides to edit moccur buffer of color-moccur.el and
 to apply the changes to the file.

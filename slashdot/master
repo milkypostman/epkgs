@@ -4,7 +4,7 @@
  :license    "GPL-2"
  :provided   (slashdot)
  :required   ((("cl" cl)))
- :homepage   "http://www.davep.org/emacs/"
+ :homepage   "http://www.davep.org/emacs"
  :commentary "\
 This package provides a method of reading the slashdot headlines captured
 with slashcache.lisp <URL:http://www.davep.org/lisp/slashcache.lisp> and

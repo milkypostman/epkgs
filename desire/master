@@ -3,8 +3,8 @@
  :updated    "20010212"
  :license    "GPL-2"
  :authors    (("Martin Schwenke" . "martin@meltin.net")
-	      ("Graham Williams"))
+	      ("Graham Williams" . "graham.williams@cmis.csiro.au"))
  :maintainer (nil . "martin@meltin.net")
  :provided   (desire)
  :keywords   ("configuration" "setup")
- :homepage   "http://meltin.net/hacks/emacs/")
+ :homepage   "http://meltin.net/hacks/emacs")

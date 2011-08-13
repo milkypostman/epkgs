@@ -7,7 +7,7 @@
  :provided   (osx-plist)
  :required   ((("xml" xml)))
  :keywords   ("convenience")
- :homepage   "http://edward.oconnor.cx/elisp/"
+ :homepage   "http://edward.oconnor.cx/elisp"
  :wikipage   "http://www.emacswiki.org/MacOSXPlist"
  :commentary "\
 Simple parser for Mac OS X plist files. The main entry point is

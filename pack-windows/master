@@ -4,7 +4,7 @@
  :license    "GPL-2"
  :provided   (pack-windows)
  :required   ((("cl" cl)))
- :homepage   "http://lampwww.epfl.ch/~schinz/elisp/"
+ :homepage   "http://lampwww.epfl.ch/~schinz/elisp"
  :commentary "\
 Resize all windows vertically to display as much information as possible
 with the command `M-x pack-windows'.

@@ -7,7 +7,7 @@
  :provided   (edom)
  :required   ((("xml" xml)))
  :keywords   ("xml")
- :homepage   "http://edward.oconnor.cx/elisp/"
+ :homepage   "http://edward.oconnor.cx/elisp"
  :commentary "\
 Very basic, very primitive DOM methods that operate on the output of
 xml.el's XML parsing routines.

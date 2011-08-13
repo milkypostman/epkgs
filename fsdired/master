@@ -3,6 +3,8 @@
  :created    "2006"
  :updated    "2006"
  :license    "GPL-2"
+ :authors    ((nil . "joakim verona joakim@verona.se"))
+ :maintainer (nil . "joakim verona joakim@verona.se")
  :provided   (fsdired)
  :required   (nil
 	      (("hide-lines" hide-lines)))

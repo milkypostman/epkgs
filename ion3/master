@@ -5,4 +5,4 @@
  :authors    (("Stefan Reichör," . "stefan@xsteve.at"))
  :maintainer ("Stefan Reichör," . "stefan@xsteve.at")
  :provided   (ion3)
- :homepage   "http://www.xsteve.at/prg/emacs/")
+ :homepage   "http://www.xsteve.at/prg/emacs")

@@ -7,7 +7,7 @@
  :provided   (haskell-latex)
  :required   ((("multi-mode" multi-mode)))
  :keywords   ("languages" "wp")
- :homepage   "http://www.loveshack.ukfsn.org/emacs/"
+ :homepage   "http://www.loveshack.ukfsn.org/emacs"
  :commentary "\
 This provides a mode for editing literate Haskell with the LaTeX
 \\begin{code}...\\end{code} convention (but not the `Bird tracks'

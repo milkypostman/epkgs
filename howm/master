@@ -8,5 +8,5 @@
 	       ("emacs-core" font-lock)
 	       ("gnus" mailcap)
 	       ("migemo" migemo)))
- :homepage   "http://howm.sourceforge.jp/"
+ :homepage   "http://howm.sourceforge.jp"
  :wikipage   "http://www.emacswiki.org/HowmMode")

@@ -2,12 +2,12 @@
  :created    "2001"
  :updated    "20010327"
  :license    "GPL-2"
- :authors    (("Riku Saikkonen"))
- :maintainer ("Riku Saikkonen")
+ :authors    (("Riku Saikkonen" . "riku.saikkonen@hut.fi"))
+ :maintainer ("Riku Saikkonen" . "riku.saikkonen@hut.fi")
  :provided   (cparen)
  :required   ((("emacs-core" font-lock)))
  :keywords   ("faces" "lisp")
- :homepage   "http://users.tkk.fi/u/rsaikkon/software/elisp/"
+ :homepage   "http://users.tkk.fi/u/rsaikkon/software/elisp"
  :commentary "\
 This package makes font-lock more colourful by colouring
 parentheses in Lisp-derived modes. In Lisp mode, the package

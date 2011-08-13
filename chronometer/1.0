@@ -7,5 +7,5 @@
  :provided   (chronometer)
  :required   ((("ehelp" ehelp)))
  :keywords   ("convenience" "tools")
- :homepage   "http://www.marcelotoledo.org/stuff/"
+ :homepage   "http://www.marcelotoledo.org/stuff"
  :wikipage   "http://www.emacswiki.org/ChronometerMode")

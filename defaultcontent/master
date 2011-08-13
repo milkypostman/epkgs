@@ -1,7 +1,7 @@
 (:created    "1993"
  :updated    "20011224"
- :authors    (("Christian Queinnec"))
- :maintainer ("Christian Queinnec")
+ :authors    (("Christian Queinnec" . "christian.queinnec@lip6.fr"))
+ :maintainer ("Christian Queinnec" . "christian.queinnec@lip6.fr")
  :provided   (defaultcontent)
  :keywords   ("contents" "default")
  :homepage   "http://pagesperso-systeme.lip6.fr/Christian.Queinnec/WWW/elisp.html"

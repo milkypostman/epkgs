@@ -5,4 +5,4 @@
  :maintainer ("mooz" . "stillpedant@gmail.com")
  :provided   (js-doc)
  :keywords   ("comments" "document")
- :homepage   "http://mooz.github.com/")
+ :homepage   "http://mooz.github.com")

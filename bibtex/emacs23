@@ -3,11 +3,11 @@
  :updated    "2011"
  :license    "GPL-3"
  :authors    (("Stefan Schoef" . "schoef@offis.uni-oldenburg.de")
-	      ("Bengt Martensson")
+	      ("Bengt Martensson" . "bengt@mathematik.uni-bremen.de")
 	      ("Marc Shapiro" . "marc.shapiro@acm.org")
 	      ("Mike Newton" . "newton@gumby.cs.caltech.edu")
 	      ("Aaron Larson" . "alarson@src.honeywell.com")
-	      ("Dirk Herrmann"))
+	      ("Dirk Herrmann" . "d.herrmann@tu-bs.de"))
  :maintainer ("Roland Winkler" . "winkler@gnu.org")
  :provided   (bibtex)
  :required   ((("button" button)))

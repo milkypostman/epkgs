@@ -7,7 +7,7 @@
  :required   ((("emacs-core" quail)
 	       ("widget" widget)))
  :keywords   ("convenience")
- :homepage   "http://code.google.com/p/yisp/"
+ :homepage   "http://code.google.com/p/yisp"
  :commentary "\
 (add-to-list 'load-path \"/home/duzy/elisp/yisp\")
 (add-to-list 'load-path \"/home/duzy/elisp/yisp/third-party\")

@@ -10,7 +10,7 @@
  :required   ((("emacs-core" backquote)
 	       ("sendmail" sendmail)))
  :keywords   ("extensions" "zenirc")
- :homepage   "www.zenirc.org/"
+ :homepage   "www.zenirc.org"
  :wikipage   "http://www.emacswiki.org/ZenIRC"
  :commentary "\
 <vuori> The first Lisp-interpreter of the People's Republic

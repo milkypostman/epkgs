@@ -3,7 +3,7 @@
  :updated    "2007"
  :license    "GPL-2"
  :authors    (("khiker" . "khiker+elisp@gmail.com")
-	      ("plus"))
+	      ("plus" . "mlb33828@nifty.com"))
  :maintainer ("khiker" . "khiker+elisp@gmail.com")
  :provided   (dabbrev-expand-multiple)
  :required   ((("dabbrev" dabbrev)))

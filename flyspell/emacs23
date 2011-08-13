@@ -2,7 +2,7 @@
  :created    "1998"
  :updated    "2011"
  :license    "GPL-3"
- :authors    (("Manuel Serrano"))
+ :authors    (("Manuel Serrano" . "manuel.serrano@sophia.inria.fr"))
  :maintainer ("FSF")
  :provided   (flyspell)
  :required   ((("ispell" ispell)))

@@ -23,7 +23,7 @@
 	       ("widget" wid-edit)
 	       (nil csde-wiz semantic-bnf semantic-mode)))
  :keywords   ("csharp" "tools")
- :homepage   "http://csde.sourceforge.net/"
+ :homepage   "http://csde.sourceforge.net"
  :commentary "\
 The latest version of the CSDE is available at
 <URL:http://www.sourceforge.com/>.

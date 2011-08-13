@@ -11,7 +11,7 @@
 	       ("outline" outline)
 	       ("thingatpt" thingatpt)))
  :keywords   ("github flavored markdown" "itex" "markdown")
- :homepage   "http://jblevins.org/projects/markdown-mode/"
+ :homepage   "http://jblevins.org/projects/markdown-mode"
  :wikipage   "http://www.emacswiki.org/MarkdownMode"
  :commentary "\
 markdown-mode is a major mode for editing [Markdown][]-formatted

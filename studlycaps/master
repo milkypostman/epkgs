@@ -1,5 +1,6 @@
 (:summary    "StudlyCapify as you type"
  :updated    "20051004"
+ :license    "GPL-2"
  :authors    (("Harley Gorrell" . "harley@mahalito.net"))
  :maintainer ("Harley Gorrell" . "harley@mahalito.net")
  :provided   (StudlyCaps)

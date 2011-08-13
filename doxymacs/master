@@ -2,11 +2,14 @@
  :created    "2001"
  :updated    "2010"
  :license    "GPL-2"
+ :authors    (("Ryan T. Sammartino" . "ryan.sammartino@gmail.com")
+	      ("Kris Verbeeck" . "kris.verbeeck@advalvas.be"))
+ :maintainer ("Ryan T. Sammartino" . "ryan.sammartino@gmail.com")
  :provided   (doxymacs)
  :required   ((("custom" custom)
 	       ("tempo" tempo)
 	       ("url" url)
 	       ("xml-parse" xml-parse)))
  :keywords   ("documentation" "doxygen")
- :homepage   "http://doxymacs.sourceforge.net/"
+ :homepage   "http://doxymacs.sourceforge.net"
  :wikipage   "http://www.emacswiki.org/DoxyMacs")

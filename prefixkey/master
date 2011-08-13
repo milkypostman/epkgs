@@ -7,7 +7,7 @@
  :provided   (prefixkey)
  :required   ((("cl" cl)))
  :keywords   ("keyboard")
- :homepage   "http://lgarc.narod.ru/xemacs/"
+ :homepage   "http://lgarc.narod.ru/xemacs"
  :wikipage   "http://www.emacswiki.org/PrefixKey"
  :commentary "\
 This program provides prefix key, i.e. special key which in

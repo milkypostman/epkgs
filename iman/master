@@ -6,7 +6,7 @@
  :maintainer ("Yuji Minejima" . "ggb01164@nifty.ne.jp")
  :provided   (iman)
  :keywords   ("help" "local")
- :homepage   "http://homepage1.nifty.com/bmonkey/emacs/"
+ :homepage   "http://homepage1.nifty.com/bmonkey/emacs"
  :wikipage   "http://www.emacswiki.org/Iman"
  :commentary "\
 Call the viewers of Unix manual pages and GNU Info with completion.

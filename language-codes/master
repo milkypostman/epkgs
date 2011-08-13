@@ -1,4 +1,4 @@
 (:summary    "Map between language names and language codes"
  :updated    "20060501"
  :license    "GPL-2"
- :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/natural-language/")
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/natural-language")

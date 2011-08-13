@@ -8,7 +8,7 @@
  :provided   (integers)
  :required   ((("thingatpt" thingatpt)))
  :keywords   ("convenience")
- :homepage   "http://www.burlingtontelecom.net/~ashawley/"
+ :homepage   "http://www.burlingtontelecom.net/~ashawley"
  :wikipage   "http://www.emacswiki.org/Integers"
  :commentary "\
 The functions understand all integers, including negative ones.

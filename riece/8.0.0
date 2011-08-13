@@ -15,5 +15,5 @@
 	       ("url" url url-irc)
 	       ("widget" wid-edit)))
  :keywords   ("irc" "riece")
- :homepage   "http://www.nongnu.org/riece/"
+ :homepage   "http://www.nongnu.org/riece"
  :wikipage   "http://www.emacswiki.org/RieceIrcClient")

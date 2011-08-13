@@ -9,7 +9,7 @@
 	       ("imenu" imenu)
 	       ("info" info)))
  :keywords   ("emacs" "gri" "xemacs")
- :homepage   "http://gri.sourceforge.net/"
+ :homepage   "http://gri.sourceforge.net"
  :commentary "\
 This major mode for GNU emacs provides support for editing Gri files.
 Gri is a graphics plotting language that produces beautiful postscript

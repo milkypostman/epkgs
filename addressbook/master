@@ -10,7 +10,7 @@
 	       ("url" url)
 	       ("vcard" vcard)))
  :keywords   ("applications" "contacts")
- :homepage   "http://www.nongnu.org/addressbook/"
+ :homepage   "http://www.nongnu.org/addressbook"
  :wikipage   "http://www.emacswiki.org/AddressBook"
  :commentary "\
 A simple vCard based addressbook for Emacs

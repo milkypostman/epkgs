@@ -3,4 +3,4 @@
  :license    "GPL-2"
  :provided   (insert-construct)
  :required   ((("tempo" tempo)))
- :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/handsfree/")
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/handsfree")

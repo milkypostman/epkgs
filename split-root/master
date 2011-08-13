@@ -4,4 +4,4 @@
  :license    "GPL-2"
  :provided   (split-root)
  :required   ((("cl" cl)))
- :homepage   "http://nschum.de/src/emacs/split-root/")
+ :homepage   "http://nschum.de/src/emacs/split-root")

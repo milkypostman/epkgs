@@ -6,7 +6,7 @@
  :maintainer (nil . "rajeev1998@yahoo.com")
  :provided   (java-open)
  :keywords   ("convenience" "java")
- :homepage   "http://www.mayura.com/misc/"
+ :homepage   "http://www.mayura.com/misc"
  :commentary "\
 Purpose
 -------

@@ -7,7 +7,7 @@
  :provided   (iread)
  :required   ((("cl" cl)))
  :keywords   ("emacs")
- :homepage   "http://gopher.ruricolist.com:70/lisp/"
+ :homepage   "http://gopher.ruricolist.com:70/lisp"
  :wikipage   "http://www.emacswiki.org/IncrementalRead"
  :commentary "\
 Iread is Isearch without the search---a utility for acting

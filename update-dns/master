@@ -6,7 +6,7 @@
  :maintainer ("Noah Friedman" . "friedman@splode.com")
  :provided   (update-dns)
  :keywords   ("extensions")
- :homepage   "ftp://ftp.splode.com/pub/users/friedman/emacs-lisp/"
+ :homepage   "ftp://ftp.splode.com/pub/users/friedman/emacs-lisp"
  :commentary "\
 Every time you change the data in a DNS file, no matter how trivial the
 change, make sure you increase the serial number.

@@ -6,4 +6,4 @@
  :maintainer ("Darryl Okahata")
  :provided   (xcscope)
  :required   ((("easymenu" easymenu)))
- :homepage   "http://cscope.sourceforge.net/")
+ :homepage   "http://cscope.sourceforge.net")

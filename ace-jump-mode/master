@@ -3,8 +3,8 @@
  :created    "2011"
  :updated    "2011"
  :license    "GPL-3"
- :authors    (("winterTTr"))
- :maintainer ("winterTTr")
+ :authors    (("winterTTr" . "winterttr@gmail.com"))
+ :maintainer ("winterTTr" . "winterttr@gmail.com")
  :provided   (ace-jump-mode)
  :required   ((("cl" cl)))
  :keywords   ("cursor" "location" "motion")

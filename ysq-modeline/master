@@ -9,7 +9,7 @@
 	       ("timer" timer)
 	       ("ysq" ysq)))
  :keywords   ("extensions")
- :homepage   "ftp://ftp.splode.com/pub/users/friedman/emacs-lisp/"
+ :homepage   "ftp://ftp.splode.com/pub/users/friedman/emacs-lisp"
  :commentary "\
 This module is still heavily under development
 and probably unusuably buggy.

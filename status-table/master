@@ -3,4 +3,4 @@
  :required   ((("page-attributes" page-attributes)
 	       ("page-status" page-status)
 	       ("webmaster-macros" webmaster-macros)))
- :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/webstuff/webmastering/")
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/webstuff/webmastering")

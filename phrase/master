@@ -6,4 +6,4 @@
  :maintainer ("Dave Love" . "fx@gnu.org")
  :provided   (phrase)
  :keywords   ("convenience")
- :homepage   "http://www.loveshack.ukfsn.org/emacs/")
+ :homepage   "http://www.loveshack.ukfsn.org/emacs")

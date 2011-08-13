@@ -10,7 +10,7 @@
 	       ("gnus" time-date))
 	      ((nil kakasi)))
  :keywords   ("flashcard" "japanese")
- :homepage   "http://ichi2.net/flashcard/"
+ :homepage   "http://ichi2.net/flashcard"
  :commentary "\
 This file contains a bunch of convenience routines for flashcard
 and flashcard-sm5 to make the user interface friendlier. It

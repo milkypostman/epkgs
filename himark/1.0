@@ -2,9 +2,9 @@
  :created    "1999"
  :updated    "20010214"
  :license    "GPL-2"
- :authors    (("Roland Winkler")
+ :authors    (("Roland Winkler" . "roland.winkler@physik.uni-erlangen.de")
 	      ("based on ideas by Ehud Karni" . "ehud@unix.simonwiesel.co.il"))
- :maintainer ("Roland Winkler")
+ :maintainer ("Roland Winkler" . "roland.winkler@physik.uni-erlangen.de")
  :provided   (himark)
  :keywords   ("faces")
  :commentary "\

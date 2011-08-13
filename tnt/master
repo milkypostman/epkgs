@@ -5,4 +5,4 @@
  :provided   (tnt tnt-proxy tnt-tabs toc tocstr)
  :required   ((("cl" cl)
 	       ("custom" custom)))
- :homepage   "http://tnt.sourceforge.net/")
+ :homepage   "http://tnt.sourceforge.net")

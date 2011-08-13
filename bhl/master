@@ -9,7 +9,7 @@
 	       ("texnfo-upd" texnfo-upd))
 	      (("reporter" reporter)))
  :keywords   ("convert" "html" "latex" "linuxdoc" "plain" "sgml" "texinfo" "text")
- :homepage   "http://www.nongnu.org/bhl/"
+ :homepage   "http://www.nongnu.org/bhl"
  :wikipage   "http://www.emacswiki.org/BhlMode"
  :commentary "\
 BHL mode is a mode wich enables you to convert plain text files into
