@@ -3,4 +3,5 @@
  :maintainer ("Bryan Kyle" . "bryan.kyle@gmail.com")
  :provided   (inf-js)
  :required   ((("comint" comint)
-	       ("compile" compile))))
+	       ("compile" compile)))
+ :homepage   "https://github.com/bkyle/inf-js")

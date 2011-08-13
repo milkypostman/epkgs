@@ -12,4 +12,5 @@
 	       ("ido" ido)
 	       ("yasnippet" yasnippet)
 	       (nil flyparse-mode)))
- :keywords   ("language" "modes"))
+ :keywords   ("language" "modes")
+ :homepage   "https://github.com/aemoncannon/as3-mode")

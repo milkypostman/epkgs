@@ -9,4 +9,5 @@
 	       ("electric" electric)
 	       ("emacs-core" derived)
 	       ("ffap" ffap)
-	       ("ring" ring))))
+	       ("ring" ring)))
+ :homepage   "https://github.com/bogolisk/egg")

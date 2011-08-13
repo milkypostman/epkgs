@@ -18,6 +18,7 @@
 	       ("term" term))
 	      (("ange-ftp" ange-ftp)))
  :keywords   ("processes")
+ :homepage   "https://github.com/jwiegley/eshell"
  :commentary "\
 _* What does Eshell offer you?
 

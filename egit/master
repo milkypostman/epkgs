@@ -7,6 +7,7 @@
  :required   ((("cl" cl)
 	       ("ewoc" ewoc)
 	       (nil git)))
+ :homepage   "https://github.com/jimhourihan/egit"
  :commentary "\
 This file contains an interface to git commands which are not
 (currently) part of git.el. Primarily, this is a view of the git commit

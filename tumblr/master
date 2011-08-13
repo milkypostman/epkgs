@@ -7,6 +7,7 @@
  :provided   (tumblr)
  :required   ((("http-post-simple" http-post-simple)))
  :keywords   ("tumblr")
+ :homepage   "https://github.com/travisjeffery/tumblr-for-emacs"
  :wikipage   "http://www.emacswiki.org/Tumblr"
  :commentary "\
 This is a set of interactive function used to post to Tumblr.

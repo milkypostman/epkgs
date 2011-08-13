@@ -6,6 +6,7 @@
  :maintainer ("Justin Weiss")
  :provided   (fuzzy-find-in-project)
  :keywords   ("convenience" "project")
+ :homepage   "https://github.com/justinweiss/fuzzy-find-in-project"
  :commentary "\
 Requires ruby, rubygems, and the `fuzzy_file_finder' rubygem. 
 

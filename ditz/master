@@ -7,6 +7,7 @@
  :maintainer ("Kentaro Kuribayashi" . "kentarok@gmail.com")
  :provided   (ditz)
  :keywords   ("ditz" "todo")
+ :homepage   "https://github.com/kentaro/emacs-ditz"
  :wikipage   "http://www.emacswiki.org/Ditz"
  :commentary "\
 See README file or the website below:

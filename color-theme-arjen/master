@@ -8,6 +8,7 @@
  :provided   (color-theme-arjen)
  :required   ((("color-theme" color-theme)))
  :keywords   ("local")
+ :homepage   "https://github.com/credmp/color-theme-arjen"
  :commentary "\
 This was my first color theme. It has been hacked into shape over
 the last couple of years and I still use it every single day.

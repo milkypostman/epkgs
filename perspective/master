@@ -8,6 +8,7 @@
  :provided   (perspective)
  :required   ((("cl" cl)))
  :keywords   ("convenience" "frames" "workspace")
+ :homepage   "https://github.com/nex3/perspective-el"
  :commentary "\
 This package provides tagged workspaces in Emacs, similar to
 workspaces in windows managers such as Awesome and XMonad (and

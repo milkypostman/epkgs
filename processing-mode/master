@@ -5,4 +5,5 @@
  :provided   (processing-mode)
  :required   ((("cl" cl)
 	       ("compile" compile)
-	       ("yasnippet" yasnippet))))
+	       ("yasnippet" yasnippet)))
+ :homepage   "https://github.com/omouse/processing-emacs")

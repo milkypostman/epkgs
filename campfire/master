@@ -11,7 +11,7 @@
 	       ("twittering-mode" ssl)
 	       ("url" url url-http)))
  :keywords   ("campfire" "chat")
- :homepage   "https://github.com/timcharper/campfire-el.git"
+ :homepage   "https://github.com/timcharper/campfire-el"
  :commentary "\
 This file is NOT part of GNU Emacs.
 

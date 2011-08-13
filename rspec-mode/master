@@ -10,6 +10,7 @@
 	       ("ruby-mode" ruby-mode))
 	      (("snippet" snippet)))
  :keywords   ("rspec" "ruby")
+ :homepage   "https://github.com/pezra/rspec-mode"
  :wikipage   "http://www.emacswiki.org/RspecMode"
  :commentary "\
 This file is NOT part of GNU Emacs.

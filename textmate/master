@@ -9,6 +9,7 @@
  :required   ((("cl" cl)
 	       ("imenu" imenu)))
  :keywords   ("mac" "osx" "textmate")
+ :homepage   "https://github.com/defunkt/textmate.el"
  :wikipage   "http://www.emacswiki.org/TextMate"
  :commentary "\
 This minor mode exists to mimick TextMate's awesome

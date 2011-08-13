@@ -9,6 +9,7 @@
  :required   (nil
 	      (("twit" twit)))
  :keywords   ("convenience")
+ :homepage   "https://github.com/hober/selftest-el"
  :commentary "\
 This is a simple library for managing your personal unit tests. If
 you're unfamiliar with the concept, please read this blog post:

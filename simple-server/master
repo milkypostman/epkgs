@@ -8,6 +8,7 @@
  :provided   (simple-file-server simple-server)
  :required   ((("org-mode" org org-exp)
 	       (nil htmlize)))
+ :homepage   "https://github.com/eschulte/simple-server"
  :commentary "\
 `simple-server' implements a very simple http server which will
 hopefully be able to hand off GET requests to functions specified

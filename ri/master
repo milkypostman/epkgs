@@ -9,6 +9,7 @@
  :required   ((("ido" ido)
 	       ("thingatpt" thingatpt)))
  :keywords   ("documentation" "tools")
+ :homepage   "https://github.com/technomancy/ri.el"
  :wikipage   "http://www.emacswiki.org/RiEl"
  :commentary "\
 ri.el provides an Emacs frontend to Ruby's `ri' documentation

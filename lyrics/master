@@ -1,4 +1,5 @@
 (:repository (git . "git://github.com/death/lyrics.git")
  :provided   (lyrics)
  :required   ((("mingus" libmpdee)
-	       ("url" url url-http))))
+	       ("url" url url-http)))
+ :homepage   "https://github.com/death/lyrics")

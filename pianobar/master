@@ -4,5 +4,5 @@
  :license    "GPL-3"
  :provided   (pianobar)
  :required   ((("comint" comint)))
- :homepage   "https://github.com/agrif/pianobar.el.git"
+ :homepage   "https://github.com/agrif/pianobar.el"
  :wikipage   "http://www.emacswiki.org/PianobarMode")

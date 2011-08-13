@@ -12,4 +12,4 @@
 	       ("org-mode" org)
 	       ("uuidgen" uuidgen)))
  :keywords   ("hypermedia" "tools")
- :homepage   "https://github.com/dto/folio.git")
+ :homepage   "https://github.com/dto/folio")

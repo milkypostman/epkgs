@@ -4,4 +4,5 @@
  :updated    "2008"
  :license    "GPL-3"
  :provided   (gitsum)
- :required   ((("cl" cl))))
+ :required   ((("cl" cl)))
+ :homepage   "https://github.com/chneukirchen/gitsum")

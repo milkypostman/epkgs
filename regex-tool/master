@@ -8,6 +8,7 @@
  :provided   (regex-tool)
  :required   ((("cl" cl)))
  :keywords   ("development" "languages" "programming" "regex")
+ :homepage   "https://github.com/jwiegley/regex-tool"
  :commentary "\
 This program currently uses frames only.
 
