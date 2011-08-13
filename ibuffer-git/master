@@ -1,5 +1,5 @@
 (:summary    "Show git status in ibuffer column"
- :repository (git . "https://github.com/jrockway/ibuffer-git.git")
+ :repository (git . "git://github.com/jrockway/ibuffer-git.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"

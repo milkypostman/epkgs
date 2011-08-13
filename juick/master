@@ -1,5 +1,5 @@
 (:summary    "Improvement reading juick@juick.com"
- :repository (git . "https://github.com/mad/emacs-juick-el.git")
+ :repository (git . "git://github.com/mad/emacs-juick-el.git")
  :created    "2009"
  :updated    "2009"
  :license    "GPL-3"

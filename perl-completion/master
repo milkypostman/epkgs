@@ -1,4 +1,4 @@
-(:repository (git . "https://github.com/imakado/perl-completion.git")
+(:repository (git . "git://github.com/imakado/perl-completion.git")
  :created    "2009"
  :updated    "2009"
  :license    "GPL-2"

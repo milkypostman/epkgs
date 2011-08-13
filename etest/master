@@ -1,5 +1,5 @@
 (:summary    "Run tests and get back a hierarchical set of results"
- :repository (git . "https://github.com/philjackson/etest.git")
+ :repository (git . "git://github.com/philjackson/etest.git")
  :created    "2008"
  :updated    "2008"
  :license    "GPL-2"

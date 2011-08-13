@@ -1,5 +1,5 @@
 (:summary    "Framework for unit testing"
- :repository (git . "https://github.com/epsilon47/test-framework.el.git")
+ :repository (git . "git://github.com/epsilon47/test-framework.el.git")
  :created    "201005"
  :authors    (("Vegard Øye" . "vegard_oye@hotmail.com"))
  :maintainer ("Vegard Øye" . "vegard_oye@hotmail.com")

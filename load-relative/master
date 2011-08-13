@@ -1,5 +1,5 @@
 (:summary    "Relative file load (within a multi-file Emacs package)"
- :repository (git . "https://github.com/rocky/emacs-load-relative.git")
+ :repository (git . "git://github.com/rocky/emacs-load-relative.git")
  :license    "GPL-3"
  :authors    (("Rocky Bernstein"))
  :maintainer ("Rocky Bernstein")

@@ -1,5 +1,5 @@
 (:summary    "Adaptive filename suggestions based on"
- :repository (git . "https://github.com/cjauvin/find-file-suggest.git")
+ :repository (git . "git://github.com/cjauvin/find-file-suggest.git")
  :created    "2008"
  :authors    (("Christian Jauvin" . "cjauvin@gmail.com"))
  :maintainer ("Christian Jauvin" . "cjauvin@gmail.com")

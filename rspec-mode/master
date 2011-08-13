@@ -1,5 +1,5 @@
 (:summary    "Enhance ruby-mode for RSpec"
- :repository (git . "https://github.com/pezra/rspec-mode.git")
+ :repository (git . "git://github.com/pezra/rspec-mode.git")
  :created    "2008"
  :updated    "2008"
  :license    "GPL-3"

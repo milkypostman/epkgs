@@ -1,5 +1,5 @@
 (:summary    "A color theme that resembles the TextMate Mac Classic theme. "
- :repository (git . "https://github.com/jbw/color-theme-mac-classic.git")
+ :repository (git . "git://github.com/jbw/color-theme-mac-classic.git")
  :license    "GPL-3"
  :provided   (color-theme-mac-classic)
  :homepage   "https://github.com/jbw/color-theme-mac-classic")

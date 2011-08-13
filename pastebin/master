@@ -1,5 +1,5 @@
 (:summary    "A simple interface to the www.pastebin.com webservice"
- :repository (git . "https://github.com/nicferrier/elpastebin.git")
+ :repository (git . "git://github.com/nicferrier/elpastebin.git")
  :created    "2008"
  :updated    "2008"
  :license    "GPL-2"

@@ -1,4 +1,4 @@
 (:summary    "Emacs interface to the Clojure Debugging Toolkit"
- :repository (git . "https://github.com/GeorgeJahad/cdt.git")
+ :repository (git . "git://github.com/GeorgeJahad/cdt.git")
  :license    "GPL"
  :homepage   "http://georgejahad.com/clojure/cdt.html")

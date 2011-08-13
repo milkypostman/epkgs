@@ -1,5 +1,5 @@
 (:summary    "Major mode for editing .pod-files"
- :repository (git . "https://github.com/renormalist/emacs-pod-mode.git")
+ :repository (git . "git://github.com/renormalist/emacs-pod-mode.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-2"

@@ -1,5 +1,5 @@
 (:summary    "Unit test front-end"
- :repository (git . "https://github.com/nschum/test-case-mode.git")
+ :repository (git . "git://github.com/nschum/test-case-mode.git")
  :created    "2009"
  :updated    "2009"
  :license    "GPL-2"

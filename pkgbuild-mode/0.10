@@ -1,4 +1,4 @@
-(:repository (git . "https://github.com/juergenhoetzel/pkgbuild-mode.git")
+(:repository (git . "git://github.com/juergenhoetzel/pkgbuild-mode.git")
  :created    "2010"
  :updated    "20071020"
  :license    "GPL-2"

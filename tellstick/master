@@ -1,5 +1,5 @@
 (:summary    "Controlling tellstick controllers"
- :repository (git . "https://github.com/larsmagne/tellstick.el.git")
+ :repository (git . "git://github.com/larsmagne/tellstick.el.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"

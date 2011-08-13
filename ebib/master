@@ -1,4 +1,4 @@
-(:repository (git . "https://github.com/joostkremers/ebib.git")
+(:repository (git . "git://github.com/joostkremers/ebib.git")
  :created    "2010"
  :updated    "2010"
  :license    "as-is"

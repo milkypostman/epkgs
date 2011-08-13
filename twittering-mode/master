@@ -1,4 +1,4 @@
-(:repository (git . "https://github.com/hayamiz/twittering-mode.git")
+(:repository (git . "git://github.com/hayamiz/twittering-mode.git")
  :created    "2007"
  :updated    "2008"
  :license    "GPL-2"

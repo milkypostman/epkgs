@@ -1,5 +1,5 @@
 (:summary    "Drawing with metapost interactively in Emacs"
- :repository (git . "https://github.com/liyu1981/metapost-mode-.git")
+ :repository (git . "git://github.com/liyu1981/metapost-mode-.git")
  :authors    (("Yu LI" . "liyu1981@gmail.com"))
  :maintainer ("Yu LI" . "liyu1981@gmail.com")
  :provided   (metapost-mode+)

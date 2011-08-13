@@ -1,5 +1,5 @@
 (:summary    "Edit grepped lines and write them back to files"
- :repository (git . "https://github.com/k-talo/ya-grep-edit.el.git")
+ :repository (git . "git://github.com/k-talo/ya-grep-edit.el.git")
  :created    "20101116"
  :updated    "2010"
  :license    "GPL-3"

@@ -1,5 +1,5 @@
 (:summary    "Execute Emacs lisp in a separate process"
- :repository (git . "https://github.com/nschum/async-eval.el.git")
+ :repository (git . "git://github.com/nschum/async-eval.el.git")
  :created    "2009"
  :updated    "2009"
  :license    "GPL-2"

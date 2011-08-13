@@ -1,5 +1,5 @@
 (:summary    "Export org mode files as xml"
- :repository (git . "https://github.com/dhruvbansal/orgml.git")
+ :repository (git . "git://github.com/dhruvbansal/orgml.git")
  :created    "2008"
  :updated    "2008"
  :license    "GPL-2"

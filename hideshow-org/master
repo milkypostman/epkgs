@@ -1,4 +1,4 @@
-(:repository (git . "https://github.com/secelis/hideshow-org.git")
+(:repository (git . "git://github.com/secelis/hideshow-org.git")
  :created    "2009"
  :updated    "2009"
  :license    "GPL-2"

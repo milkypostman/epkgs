@@ -1,4 +1,4 @@
-(:repository (git . "https://github.com/nflath/hungry-delete.git")
+(:repository (git . "git://github.com/nflath/hungry-delete.git")
  :created    "2009"
  :updated    "2009"
  :license    "GPL-3"

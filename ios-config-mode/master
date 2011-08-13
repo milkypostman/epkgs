@@ -1,4 +1,4 @@
-(:repository (git . "https://github.com/nibrahim/IOS-config-mode.git")
+(:repository (git . "git://github.com/nibrahim/IOS-config-mode.git")
  :created    "2004"
  :updated    "2004"
  :license    "GPL-2"

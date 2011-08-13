@@ -1,4 +1,4 @@
-(:repository (git . "https://github.com/fsmunoz/wmii-el.git")
+(:repository (git . "git://github.com/fsmunoz/wmii-el.git")
  :license    "GPL-3"
  :provided   (wmii)
  :homepage   "https://github.com/fsmunoz/wmii-el")

@@ -1,5 +1,5 @@
 (:summary    "Helpers for s5 org export"
- :repository (git . "https://github.com/sigma/org-s5.git")
+ :repository (git . "git://github.com/sigma/org-s5.git")
  :created    "2009"
  :updated    "2009"
  :license    "GPL-2"

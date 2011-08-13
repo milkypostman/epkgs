@@ -1,5 +1,5 @@
 (:summary    "Mode for editing Powershell scripts"
- :repository (git . "https://github.com/fperrin/powershell-mode.git")
+ :repository (git . "git://github.com/fperrin/powershell-mode.git")
  :created    "2009"
  :updated    "2010"
  :license    "GPL-3"

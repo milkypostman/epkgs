@@ -1,5 +1,5 @@
 (:summary    "Two pleasant color themes"
- :repository (git . "https://github.com/purcell/color-theme-sanityinc.git")
+ :repository (git . "git://github.com/purcell/color-theme-sanityinc.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"

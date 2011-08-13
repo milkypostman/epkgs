@@ -1,5 +1,5 @@
 (:summary    "Jumping Interactively through global mark ring"
- :repository (git . "https://github.com/whitypig/popup-global-mark-ring.git")
+ :repository (git . "git://github.com/whitypig/popup-global-mark-ring.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"

@@ -1,5 +1,5 @@
 (:summary    "Posts text to textsnip for sharing"
- :repository (git . "https://github.com/functionreturnfunction/textsnip.el.git")
+ :repository (git . "git://github.com/functionreturnfunction/textsnip.el.git")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-2"

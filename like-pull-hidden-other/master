@@ -1,4 +1,4 @@
-(:repository (git . "https://github.com/kitokitoki/like-pull-hidden-other-el.git")
+(:repository (git . "git://github.com/kitokitoki/like-pull-hidden-other-el.git")
  :created    "2009"
  :updated    "2009"
  :license    "GPL-3"

@@ -1,5 +1,5 @@
 (:summary    "Translate text using Google Translate API"
- :repository (git . "https://github.com/andreo/google-translator.git")
+ :repository (git . "git://github.com/andreo/google-translator.git")
  :created    "2010"
  :updated    "2010"
  :authors    (("Andrey Torba" . "andrey.torba@gmail.com"))

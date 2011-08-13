@@ -1,5 +1,5 @@
 (:summary    "Global minor mode for inertial scrolling "
- :repository (git . "https://github.com/kiwanami/emacs-inertial-scroll.git")
+ :repository (git . "git://github.com/kiwanami/emacs-inertial-scroll.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"

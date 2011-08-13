@@ -1,4 +1,4 @@
-(:repository (git . "https://github.com/apgwoz/unipoint.git")
+(:repository (git . "git://github.com/apgwoz/unipoint.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-2"

@@ -1,5 +1,5 @@
 (:summary    "Interactively insert items from kill-ring"
- :repository (git . "https://github.com/todesschaf/browse-kill-ring.git")
+ :repository (git . "git://github.com/todesschaf/browse-kill-ring.git")
  :created    "20010407"
  :updated    "20021029"
  :license    "GPL-2"

@@ -1,4 +1,4 @@
-(:repository (git . "https://github.com/lut4rp/almost-monokai.git")
+(:repository (git . "git://github.com/lut4rp/almost-monokai.git")
  :license    "GPL-2"
  :authors    (("Prateek Saxena" . "prtksxna@gmail.com"))
  :maintainer ("Prateek Saxena" . "prtksxna@gmail.com")

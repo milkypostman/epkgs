@@ -1,5 +1,5 @@
 (:summary    "Simple window manager for emacs"
- :repository (git . "https://github.com/kiwanami/emacs-window-manager.git")
+ :repository (git . "git://github.com/kiwanami/emacs-window-manager.git")
  :created    "2010"
  :updated    "2011"
  :license    "GPL-3"

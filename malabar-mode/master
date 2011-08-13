@@ -1,5 +1,5 @@
 (:summary    "A better Java mode for Emacs"
- :repository (git . "https://github.com/espenhw/malabar-mode.git")
+ :repository (git . "git://github.com/espenhw/malabar-mode.git")
  :created    "2009"
  :updated    "2010"
  :license    "GPL-2"

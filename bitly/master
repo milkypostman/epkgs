@@ -1,5 +1,5 @@
 (:summary    "Shorten URLs with bit.ly from emacs"
- :repository (git . "https://github.com/vivekhaldar/bitly.el.git")
+ :repository (git . "git://github.com/vivekhaldar/bitly.el.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-2"

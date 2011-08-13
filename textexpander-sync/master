@@ -1,5 +1,5 @@
 (:summary    "A utility to import textexpander entries into abbrev-mode"
- :repository (git . "https://github.com/tedroden/textexpander-sync-el.git")
+ :repository (git . "git://github.com/tedroden/textexpander-sync-el.git")
  :created    "2009"
  :updated    "2009"
  :license    "GPL-2"

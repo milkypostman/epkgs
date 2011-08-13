@@ -1,5 +1,5 @@
 (:summary    "A *visual* way to choose a window to switch to"
- :repository (git . "https://github.com/dimitri/switch-window.git")
+ :repository (git . "git://github.com/dimitri/switch-window.git")
  :created    "20100430"
  :updated    "2010"
  :authors    (("Dimitri Fontaine" . "dim@tapoueh.org"))

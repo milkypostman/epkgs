@@ -1,5 +1,5 @@
 (:summary    "A mode to help configure remind"
- :repository (git . "https://github.com/sshelagh/remind-conf-mode.git")
+ :repository (git . "git://github.com/sshelagh/remind-conf-mode.git")
  :created    "2008"
  :updated    "2011"
  :license    "GPL-2"

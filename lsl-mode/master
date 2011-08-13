@@ -1,4 +1,4 @@
-(:repository (git . "https://github.com/taladar/lsl-mode.git")
+(:repository (git . "git://github.com/taladar/lsl-mode.git")
  :created    "2006"
  :updated    "2006"
  :license    "GPL-2"

@@ -1,5 +1,5 @@
 (:summary    "IDL editing mode for GNU Emacs"
- :repository (git . "https://github.com/jdtsmith/idlwave.git")
+ :repository (git . "git://github.com/jdtsmith/idlwave.git")
  :created    "1999"
  :updated    "2011"
  :license    "GPL-3"

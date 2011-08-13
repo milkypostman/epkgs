@@ -1,5 +1,5 @@
 (:summary    "Emacs git commit history interface ala gitk and qgit"
- :repository (git . "https://github.com/jimhourihan/egit.git")
+ :repository (git . "git://github.com/jimhourihan/egit.git")
  :created    "2008"
  :updated    "2008"
  :license    "GPL-2"

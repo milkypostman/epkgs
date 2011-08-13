@@ -1,4 +1,4 @@
-(:repository (git . "https://github.com/tsgates/gtklookup.git")
+(:repository (git . "git://github.com/tsgates/gtklookup.git")
  :provided   (gtklookup gtklookup-autoload)
  :required   ((("anything" anything)
 	       ("browse-url" browse-url)

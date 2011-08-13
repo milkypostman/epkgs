@@ -1,5 +1,5 @@
 (:summary    "Bond autocompletion support for inf-ruby"
- :repository (git . "https://github.com/pd/inf-ruby-bond.git")
+ :repository (git . "git://github.com/pd/inf-ruby-bond.git")
  :created    "201011"
  :updated    "2010"
  :license    "GPL-3"

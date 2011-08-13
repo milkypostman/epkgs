@@ -1,5 +1,5 @@
 (:summary    "Control Git from Emacs"
- :repository (git . "https://github.com/magit/magit.git")
+ :repository (git . "git://github.com/magit/magit.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"

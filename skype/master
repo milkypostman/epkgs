@@ -1,5 +1,5 @@
 (:summary    "Skype UI for emacs users."
- :repository (git . "https://github.com/kiwanami/emacs-skype.git")
+ :repository (git . "git://github.com/kiwanami/emacs-skype.git")
  :created    "2009"
  :updated    "2010"
  :license    "GPL-3"

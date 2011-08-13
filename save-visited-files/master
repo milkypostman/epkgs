@@ -1,4 +1,4 @@
-(:repository (git . "https://github.com/nflath/save-visited-files.git")
+(:repository (git . "git://github.com/nflath/save-visited-files.git")
  :created    "2009"
  :updated    "2009"
  :provided   (save-visited-files)

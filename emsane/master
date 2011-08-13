@@ -1,5 +1,5 @@
 (:summary    "Emacs SANE frontend"
- :repository (git . "https://github.com/jave/emsane.git")
+ :repository (git . "git://github.com/jave/emsane.git")
  :provided   (emsane emsane-config emsane-multi emsane-postop emsane-query)
  :required   ((("cedet" eieio)))
  :homepage   "https://github.com/jave/emsane"

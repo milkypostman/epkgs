@@ -1,5 +1,5 @@
 (:summary    "Kill text between delimiters"
- :repository (git . "https://github.com/thomas11/delim-kill.git")
+ :repository (git . "git://github.com/thomas11/delim-kill.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"

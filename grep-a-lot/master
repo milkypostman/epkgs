@@ -1,5 +1,5 @@
 (:summary    "Manages multiple search results buffers for grep.el"
- :repository (git . "https://github.com/ZungBang/emacs-grep-a-lot.git")
+ :repository (git . "git://github.com/ZungBang/emacs-grep-a-lot.git")
  :created    "2008"
  :updated    "2009"
  :license    "GPL-3"

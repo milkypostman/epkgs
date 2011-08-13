@@ -1,5 +1,5 @@
 (:summary    "Org-babel functions for pygment evaluation"
- :repository (git . "https://github.com/jianingy/org-babel-plugins.git")
+ :repository (git . "git://github.com/jianingy/org-babel-plugins.git")
  :license    "GPL-3"
  :authors    (("Jianing Yang"))
  :maintainer ("Jianing Yang")

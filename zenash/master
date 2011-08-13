@@ -1,5 +1,5 @@
 (:summary    "A low-saturation, light-background version of zenburn"
- :repository (git . "https://github.com/yarkun/zenash.git")
+ :repository (git . "git://github.com/yarkun/zenash.git")
  :license    "GPL-2"
  :authors    (("Yavuz Arkun"))
  :maintainer ("Yavuz Arkun")

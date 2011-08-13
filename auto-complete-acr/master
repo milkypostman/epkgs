@@ -1,5 +1,5 @@
 (:summary    "Auto-complete-mode extension for GNU R"
- :repository (git . "https://github.com/myuhe/auto-complete-acr.el.git")
+ :repository (git . "git://github.com/myuhe/auto-complete-acr.el.git")
  :created    "20090413"
  :updated    "2009"
  :license    "GPL-3"

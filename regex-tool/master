@@ -1,5 +1,5 @@
 (:summary    "A regular expression evaluation tool for programmers"
- :repository (git . "https://github.com/jwiegley/regex-tool.git")
+ :repository (git . "git://github.com/jwiegley/regex-tool.git")
  :created    "20071029"
  :updated    "20071117"
  :license    "GPL-2"

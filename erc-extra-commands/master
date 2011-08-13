@@ -1,4 +1,4 @@
-(:repository (git . "https://github.com/nixeagle/erc-extra-commands.git")
+(:repository (git . "git://github.com/nixeagle/erc-extra-commands.git")
  :created    "20100626"
  :license    "GPL-3"
  :authors    (("James"))

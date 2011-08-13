@@ -1,5 +1,5 @@
 (:summary    "Function library about file and directory"
- :repository (git . "https://github.com/jixiuf/joseph-file-util.git")
+ :repository (git . "git://github.com/jixiuf/joseph-file-util.git")
  :created    "20110331"
  :updated    "2011"
  :license    "GPL-3"

@@ -1,5 +1,5 @@
 (:summary    "Major mode for Django web framework"
- :repository (git . "https://github.com/myfreeweb/django-mode.git")
+ :repository (git . "git://github.com/myfreeweb/django-mode.git")
  :created    "2010"
  :updated    "2010"
  :license    "Apache-2.0"

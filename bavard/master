@@ -1,5 +1,5 @@
 (:summary    "Emacs interface to the Google Translate"
- :repository (git . "https://github.com/avshramko/bavard.git")
+ :repository (git . "git://github.com/avshramko/bavard.git")
  :created    "2011"
  :updated    "2011"
  :authors    (("Andrey Shramko" . "t0mmydnua@yandex.ru"))

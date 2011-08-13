@@ -1,5 +1,5 @@
 (:summary    "Finding any resource of a project"
- :repository (git . "https://github.com/kiwanami/emacs-anything-fpr.git")
+ :repository (git . "git://github.com/kiwanami/emacs-anything-fpr.git")
  :updated    "20090219"
  :license    "GPL-2"
  :authors    (("SAKURAI, Masashi" . "m.sakurai@kiwanami.net"))

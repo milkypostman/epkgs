@@ -1,5 +1,5 @@
 (:summary    "Easy implement imenu-create-index-function"
- :repository (git . "https://github.com/tm8st/emacs-easy-imenu-index-generator.git")
+ :repository (git . "git://github.com/tm8st/emacs-easy-imenu-index-generator.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-2"

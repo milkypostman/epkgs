@@ -1,5 +1,5 @@
 (:summary    "Assign files to projects, programatically"
- :repository (git . "https://github.com/jrockway/eproject.git")
+ :repository (git . "git://github.com/jrockway/eproject.git")
  :created    "20081120"
  :updated    "2009"
  :license    "GPL-2"

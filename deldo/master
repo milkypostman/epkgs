@@ -1,5 +1,5 @@
 (:summary    "Time-stamp: <2009-11-05 17:00:17 qdot>"
- :repository (git . "https://github.com/qdot/deldo.git")
+ :repository (git . "git://github.com/qdot/deldo.git")
  :created    "2009"
  :updated    "2009"
  :homepage   "https://github.com/qdot/deldo"

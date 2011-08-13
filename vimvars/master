@@ -1,5 +1,5 @@
 (:summary    "Emacs support for VI modelines"
- :repository (git . "https://github.com/jamesyoungman/vimvars.git")
+ :repository (git . "git://github.com/jamesyoungman/vimvars.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"

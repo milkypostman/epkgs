@@ -1,5 +1,5 @@
 (:summary    "Unfold CSS-selector-like expressions to markup"
- :repository (git . "https://github.com/rooney/zencoding.git")
+ :repository (git . "git://github.com/rooney/zencoding.git")
  :created    "2009"
  :updated    "20091120"
  :license    "GPL-3"

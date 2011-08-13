@@ -1,4 +1,4 @@
-(:repository (git . "https://github.com/justmoon/xrefresh-emacs.git")
+(:repository (git . "git://github.com/justmoon/xrefresh-emacs.git")
  :authors    (("Stefan Thomas" . "justmoon@members.fsf.org"))
  :maintainer ("Stefan Thomas" . "justmoon@members.fsf.org")
  :provided   (xrefresh)

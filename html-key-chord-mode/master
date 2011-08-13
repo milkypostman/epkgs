@@ -1,5 +1,5 @@
 (:summary    "Support html tagging key chord"
- :repository (git . "https://github.com/tomoya/html-key-chord-mode.git")
+ :repository (git . "git://github.com/tomoya/html-key-chord-mode.git")
  :created    "2008"
  :updated    "2008"
  :license    "GPL-2"

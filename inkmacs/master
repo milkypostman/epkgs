@@ -1,5 +1,5 @@
 (:summary    "Inkscape Emacs fusion"
- :repository (git . "https://github.com/jave/inkmacs.git")
+ :repository (git . "git://github.com/jave/inkmacs.git")
  :license    "GPL"
  :authors    (("joakim verona"))
  :maintainer ("joakim verona")

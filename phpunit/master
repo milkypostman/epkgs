@@ -1,5 +1,5 @@
 (:summary    "Interact with PHPUnit"
- :repository (git . "https://github.com/ieure/phpunit-el.git")
+ :repository (git . "git://github.com/ieure/phpunit-el.git")
  :created    "20081201"
  :updated    "20070102"
  :license    "GPL-3"

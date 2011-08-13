@@ -1,5 +1,5 @@
 (:summary    "Minibuffer-like completion functions"
- :repository (git . "https://github.com/fgallina/gautocomplete.git")
+ :repository (git . "git://github.com/fgallina/gautocomplete.git")
  :created    "2009"
  :updated    "2009"
  :license    "GPL-3"

@@ -1,5 +1,5 @@
 (:summary    "Emacs interface to the Google API"
- :repository (git . "https://github.com/hober/google-el.git")
+ :repository (git . "git://github.com/hober/google-el.git")
  :created    "2002"
  :updated    "2008"
  :license    "GPL-2"

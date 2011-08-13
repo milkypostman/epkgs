@@ -1,5 +1,5 @@
 (:summary    "ENhanced Scala Interaction Mode for Emacs"
- :repository (git . "https://github.com/aemoncannon/ensime.git")
+ :repository (git . "git://github.com/aemoncannon/ensime.git")
  :license    "GPL-2"
  :provided   (ensime ensime-auto-complete ensime-builder ensime-config ensime-debug ensime-doc ensime-inf ensime-refactor ensime-sbt ensime-search ensime-test ensime-undo)
  :required   ((("apropos" apropos)

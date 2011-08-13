@@ -1,5 +1,5 @@
 (:summary    "Major mode to edit QA files for SuperMemo"
- :repository (git . "https://github.com/senny/qa-mode.git")
+ :repository (git . "git://github.com/senny/qa-mode.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-2"

@@ -1,4 +1,4 @@
-(:repository (git . "https://github.com/doomvox/desktop-recover.git")
+(:repository (git . "git://github.com/doomvox/desktop-recover.git")
  :created    "2009"
  :updated    "20090708"
  :license    "GPL-2"

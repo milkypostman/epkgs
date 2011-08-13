@@ -1,4 +1,4 @@
-(:repository (git . "https://github.com/jixiuf/joseph-autopair.git")
+(:repository (git . "git://github.com/jixiuf/joseph-autopair.git")
  :created    "20110302"
  :updated    "20110617"
  :license    "GPL-3"

@@ -1,5 +1,5 @@
 (:summary    "Showing arglist of function at point"
- :repository (git . "https://github.com/peccu/show-arglist.el.git")
+ :repository (git . "git://github.com/peccu/show-arglist.el.git")
  :created    "20101001"
  :updated    "2010"
  :authors    (("Kentaro Shimatani" . "kentarou.shimatani@gmail.com"))

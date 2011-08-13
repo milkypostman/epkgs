@@ -1,5 +1,5 @@
 (:summary    "Emacs interface to Ditz issue tracking system "
- :repository (git . "https://github.com/kentaro/emacs-ditz.git")
+ :repository (git . "git://github.com/kentaro/emacs-ditz.git")
  :created    "2008"
  :updated    "2008"
  :license    "GPL-3"

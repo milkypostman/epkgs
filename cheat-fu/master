@@ -1,4 +1,4 @@
-(:repository (git . "https://github.com/jpablobr/cheat-fu-mode.git")
+(:repository (git . "git://github.com/jpablobr/cheat-fu-mode.git")
  :created    "2011"
  :updated    "20110428"
  :license    "GPL-3"

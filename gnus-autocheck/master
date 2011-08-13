@@ -1,4 +1,4 @@
-(:repository (git . "https://github.com/slaanesh/gnus-autocheck.git")
+(:repository (git . "git://github.com/slaanesh/gnus-autocheck.git")
  :license    "GPL-2"
  :provided   (gnus-autocheck)
  :required   ((("gnus" gnus)))

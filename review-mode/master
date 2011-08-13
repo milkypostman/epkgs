@@ -1,4 +1,4 @@
-(:repository (git . "https://github.com/kmuto/review-el.git")
+(:repository (git . "git://github.com/kmuto/review-el.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-2"

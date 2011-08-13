@@ -1,5 +1,5 @@
 (:summary    "Major mode for Clojure code"
- :repository (git . "https://github.com/technomancy/clojure-mode.git")
+ :repository (git . "git://github.com/technomancy/clojure-mode.git")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-3"

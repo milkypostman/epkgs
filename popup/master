@@ -1,5 +1,5 @@
 (:summary    "Visual Popup User Interface"
- :repository (git . "https://github.com/m2ym/popup-el.git")
+ :repository (git . "git://github.com/m2ym/popup-el.git")
  :created    "2009"
  :updated    "2011"
  :license    "GPL-3"

@@ -1,4 +1,4 @@
-(:repository (git . "https://github.com/krl/ii-mode.git")
+(:repository (git . "git://github.com/krl/ii-mode.git")
  :provided   (ii-mode)
  :homepage   "https://github.com/krl/ii-mode"
  :wikipage   "http://www.emacswiki.org/ii-mode")

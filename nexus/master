@@ -1,5 +1,5 @@
 (:summary    "REST Client for Nexus Maven Repository servers"
- :repository (git . "https://github.com/juergenhoetzel/emacs-nexus.git")
+ :repository (git . "git://github.com/juergenhoetzel/emacs-nexus.git")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-3"

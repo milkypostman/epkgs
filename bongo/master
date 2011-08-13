@@ -1,5 +1,5 @@
 (:summary    "Flexible and usable media player for Emacs"
- :repository (git . "https://github.com/dbrock/bongo.git")
+ :repository (git . "git://github.com/dbrock/bongo.git")
  :created    "2005"
  :updated    "2010"
  :license    "GPL-2"

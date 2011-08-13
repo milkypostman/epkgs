@@ -1,5 +1,5 @@
 (:summary    "Major mode for editing Text::MicroTemplate syntax"
- :repository (git . "https://github.com/yoshiki/tmt-mode.git")
+ :repository (git . "git://github.com/yoshiki/tmt-mode.git")
  :created    "2009"
  :updated    "2009"
  :license    "GPL-2"

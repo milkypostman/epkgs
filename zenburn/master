@@ -1,5 +1,5 @@
 (:summary    "Just some alien fruit salad to keep you in the zone"
- :repository (git . "https://github.com/dbrock/zenburn-el.git")
+ :repository (git . "git://github.com/dbrock/zenburn-el.git")
  :created    "2003"
  :updated    "2011"
  :license    "GPL-2"

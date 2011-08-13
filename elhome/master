@@ -1,5 +1,5 @@
 (:summary    "A framework for a \"home\" Emacs configuration"
- :repository (git . "https://github.com/dabrahams/elhome.git")
+ :repository (git . "git://github.com/dabrahams/elhome.git")
  :created    "20101102"
  :license    "public-domain"
  :authors    (("Dave Abrahams" . "dave@boostpro.com"))

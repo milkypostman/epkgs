@@ -1,5 +1,5 @@
 (:summary    "Incremental search for the kill ring"
- :repository (git . "https://github.com/nschum/kill-ring-search.el.git")
+ :repository (git . "git://github.com/nschum/kill-ring-search.el.git")
  :created    "2008"
  :updated    "2008"
  :license    "GPL-2"

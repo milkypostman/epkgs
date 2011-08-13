@@ -1,5 +1,5 @@
 (:summary    "Breadcrumb.  Set breadcrumb bookmarks and jump to them"
- :repository (git . "https://github.com/pheaver/breadcrumb.git")
+ :repository (git . "git://github.com/pheaver/breadcrumb.git")
  :created    "2004"
  :updated    "2008"
  :license    "GPL-2"

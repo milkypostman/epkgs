@@ -1,5 +1,5 @@
 (:summary    "Display and navigate tags browsing history"
- :repository (git . "https://github.com/markhepburn/tags-view.git")
+ :repository (git . "git://github.com/markhepburn/tags-view.git")
  :created    "2009"
  :updated    "2009"
  :license    "GPL-3"

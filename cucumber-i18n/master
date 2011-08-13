@@ -1,5 +1,5 @@
 (:summary    "Translate i18n keys inside cucumber features"
- :repository (git . "https://github.com/senny/cucumber-i18n.el.git")
+ :repository (git . "git://github.com/senny/cucumber-i18n.el.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"

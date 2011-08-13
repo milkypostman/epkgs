@@ -1,5 +1,5 @@
 (:summary    "Tools for developing plone / zope / python with emacs"
- :repository (git . "https://github.com/jone/plone-mode.el.git")
+ :repository (git . "git://github.com/jone/plone-mode.el.git")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-3"

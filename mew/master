@@ -1,5 +1,5 @@
 (:summary    "Messaging in the Emacs World"
- :repository (git . "https://github.com/kazu-yamamoto/Mew.git")
+ :repository (git . "git://github.com/kazu-yamamoto/Mew.git")
  :created    "1994"
  :authors    (("Kazu Yamamoto" . "kazu@mew.org"))
  :maintainer ("Kazu Yamamoto" . "kazu@mew.org")

@@ -1,5 +1,5 @@
 (:summary    "Arjen Wiersma's preferred color theme"
- :repository (git . "https://github.com/credmp/color-theme-arjen.git")
+ :repository (git . "git://github.com/credmp/color-theme-arjen.git")
  :created    "2001"
  :updated    "2008"
  :license    "GPL-3"

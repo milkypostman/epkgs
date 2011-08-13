@@ -1,5 +1,5 @@
 (:summary    "Playing movies"
- :repository (git . "https://github.com/larsmagne/movie.el.git")
+ :repository (git . "git://github.com/larsmagne/movie.el.git")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-2"

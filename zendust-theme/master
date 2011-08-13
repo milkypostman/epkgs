@@ -1,5 +1,5 @@
 (:summary    "Mid-tone, low-contrast custom theme for faces"
- :repository (git . "https://github.com/yarkun/zendust.git")
+ :repository (git . "git://github.com/yarkun/zendust.git")
  :created    "2010"
  :updated    "2010"
  :homepage   "https://github.com/yarkun/zendust")

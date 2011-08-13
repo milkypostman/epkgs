@@ -1,5 +1,5 @@
 (:summary    "[R]egular [E]xpression-based [C]ommand [S]uggester"
- :repository (git . "https://github.com/tlh/re-suggest.el.git")
+ :repository (git . "git://github.com/tlh/re-suggest.el.git")
  :created    "20100729"
  :updated    "2010"
  :license    "GPL-2"

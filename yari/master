@@ -1,5 +1,5 @@
 (:summary    "Yet Another RI interface for Emacs"
- :repository (git . "https://github.com/hron/yari.el.git")
+ :repository (git . "git://github.com/hron/yari.el.git")
  :created    "20100424"
  :updated    "2010"
  :license    "GPL-3"

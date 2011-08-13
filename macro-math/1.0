@@ -1,5 +1,5 @@
 (:summary    "In-buffer mathematical operations"
- :repository (git . "https://github.com/nschum/macro-math.el.git")
+ :repository (git . "git://github.com/nschum/macro-math.el.git")
  :created    "2007"
  :updated    "2009"
  :license    "GPL-2"

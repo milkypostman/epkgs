@@ -1,5 +1,5 @@
 (:summary    "Mode for automatically handle multiple tags files with Mactag rubygem"
- :repository (git . "https://github.com/rejeep/mactag.el.git")
+ :repository (git . "git://github.com/rejeep/mactag.el.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"

@@ -1,5 +1,5 @@
 (:summary    "Interface to web translation services such as Babelfish"
- :repository (git . "https://github.com/juergenhoetzel/babel.git")
+ :repository (git . "git://github.com/juergenhoetzel/babel.git")
  :license    "GPL-2"
  :authors    (("Eric Marsden" . "emarsden@laas.fr")
 	      ("Juergen Hoetzel" . "juergen@hoetzel.info"))

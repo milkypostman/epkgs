@@ -1,5 +1,5 @@
 (:summary    "Calendar view framework on Emacs"
- :repository (git . "https://github.com/kiwanami/emacs-calfw.git")
+ :repository (git . "git://github.com/kiwanami/emacs-calfw.git")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-3"

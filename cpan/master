@@ -1,4 +1,4 @@
-(:repository (git . "https://github.com/imakado/cpan.el.git")
+(:repository (git . "git://github.com/imakado/cpan.el.git")
  :license    "GPL-2"
  :provided   (cpan)
  :required   ((("anything" anything)

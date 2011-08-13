@@ -1,5 +1,5 @@
 (:summary    "Find files in a project quickly"
- :repository (git . "https://github.com/technomancy/find-file-in-project.git")
+ :repository (git . "git://github.com/technomancy/find-file-in-project.git")
  :created    "20080318"
  :updated    "2009"
  :license    "GPL-3"

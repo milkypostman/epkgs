@@ -1,5 +1,5 @@
 (:summary    "Major mode for editing Dylan programs"
- :repository (git . "https://github.com/dylan-lang/dylan-mode.git")
+ :repository (git . "git://github.com/dylan-lang/dylan-mode.git")
  :created    "1994"
  :updated    "1996"
  :license    "GPL-1"

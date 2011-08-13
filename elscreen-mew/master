@@ -1,4 +1,4 @@
-(:repository (git . "https://github.com/masutaka/elscreen-mew.git")
+(:repository (git . "git://github.com/masutaka/elscreen-mew.git")
  :created    "2008"
  :license    "GPL-2"
  :authors    (("Takashi Masuda" . "masutaka@nifty.com"))

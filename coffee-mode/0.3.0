@@ -1,5 +1,5 @@
 (:summary    "Major mode to edit CoffeeScript files in Emacs"
- :repository (git . "https://github.com/defunkt/coffee-mode.git")
+ :repository (git . "git://github.com/defunkt/coffee-mode.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-2"

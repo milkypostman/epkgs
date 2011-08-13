@@ -1,5 +1,5 @@
 (:summary    "[R]eg[E]xp-based [C]ommand [S]uggestion"
- :repository (git . "https://github.com/tlh/recs-mode.el.git")
+ :repository (git . "git://github.com/tlh/recs-mode.el.git")
  :created    "20100729"
  :updated    "2010"
  :license    "GPL-2"

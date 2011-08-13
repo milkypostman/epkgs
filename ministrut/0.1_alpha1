@@ -1,5 +1,5 @@
 (:summary    "Dedicated minibuffer frame as X11 strut"
- :repository (git . "https://github.com/tarsius/ministrut.git")
+ :repository (git . "git://github.com/tarsius/ministrut.git")
  :created    "20100304"
  :updated    "20100304"
  :license    "GPL-3"

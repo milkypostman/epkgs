@@ -1,5 +1,5 @@
 (:summary    "Major mode for editing Less files"
- :repository (git . "https://github.com/myfreeweb/less-mode.git")
+ :repository (git . "git://github.com/myfreeweb/less-mode.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"

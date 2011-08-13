@@ -1,5 +1,5 @@
 (:summary    "Emacs Got Git"
- :repository (git . "https://github.com/bogolisk/egg.git")
+ :repository (git . "git://github.com/bogolisk/egg.git")
  :created    "2008"
  :updated    "2008"
  :license    "GPL-3"

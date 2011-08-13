@@ -1,5 +1,5 @@
 (:summary    "A SIMPLE web-server run by emacs"
- :repository (git . "https://github.com/eschulte/simple-server.git")
+ :repository (git . "git://github.com/eschulte/simple-server.git")
  :created    "2008"
  :updated    "2008"
  :license    "GPL-2"

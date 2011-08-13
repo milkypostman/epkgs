@@ -1,4 +1,4 @@
-(:repository (git . "https://github.com/joodie/slime-complete-locals.git")
+(:repository (git . "git://github.com/joodie/slime-complete-locals.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-2"

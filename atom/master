@@ -1,5 +1,5 @@
 (:summary    "Create an Atom feed"
- :repository (git . "https://github.com/fperrin/atom.git")
+ :repository (git . "git://github.com/fperrin/atom.git")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-3"

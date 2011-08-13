@@ -1,5 +1,5 @@
 (:summary    "A set of buffer IO routines"
- :repository (git . "https://github.com/macdice/protocolarium.git")
+ :repository (git . "git://github.com/macdice/protocolarium.git")
  :created    "2009"
  :updated    "2010"
  :license    "GPL-3"

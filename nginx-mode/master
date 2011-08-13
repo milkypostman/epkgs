@@ -1,5 +1,5 @@
 (:summary    "Major mode for editing nginx config files"
- :repository (git . "https://github.com/ajc/nginx-mode.git")
+ :repository (git . "git://github.com/ajc/nginx-mode.git")
  :created    "20101015"
  :updated    "2010"
  :license    "GPL-2"

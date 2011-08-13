@@ -1,5 +1,5 @@
 (:summary    "Major mode for viewing ERC logs"
- :repository (git . "https://github.com/Niluge-KiWi/erc-view-log.git")
+ :repository (git . "git://github.com/Niluge-KiWi/erc-view-log.git")
  :created    "2010"
  :updated    "2010"
  :authors    (("Antoine Levitt")

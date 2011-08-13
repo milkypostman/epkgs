@@ -1,5 +1,5 @@
 (:summary    "Emacs Lisp testing framework"
- :repository (git . "https://github.com/nschum/elk-test.git")
+ :repository (git . "git://github.com/nschum/elk-test.git")
  :created    "2009"
  :updated    "2009"
  :license    "GPL-2"

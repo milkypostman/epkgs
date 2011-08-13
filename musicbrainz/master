@@ -1,5 +1,5 @@
 (:summary    "Musicbrainz interface"
- :repository (git . "https://github.com/larsmagne/musicbrainz.el.git")
+ :repository (git . "git://github.com/larsmagne/musicbrainz.el.git")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-2"

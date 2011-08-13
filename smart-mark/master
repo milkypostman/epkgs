@@ -1,5 +1,5 @@
 (:summary    "Smart Mark for GNU Emacs"
- :repository (git . "https://github.com/brianjcj/smart-mark.git")
+ :repository (git . "git://github.com/brianjcj/smart-mark.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"

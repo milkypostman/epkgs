@@ -1,4 +1,4 @@
 (:summary    "Minor mode to move cursor up / down like binary search"
- :repository (git . "https://github.com/beketa/binmove.git")
+ :repository (git . "git://github.com/beketa/binmove.git")
  :provided   (binmove)
  :homepage   "https://github.com/beketa/binmove")

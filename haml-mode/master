@@ -1,5 +1,5 @@
 (:summary    "Major mode for editing Haml files"
- :repository (git . "https://github.com/nex3/haml-mode.git")
+ :repository (git . "git://github.com/nex3/haml-mode.git")
  :created    "20070308"
  :updated    "2008"
  :authors    (("Nathan Weizenbaum"))

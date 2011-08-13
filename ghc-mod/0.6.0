@@ -1,4 +1,4 @@
-(:repository (git . "https://github.com/kazu-yamamoto/ghc-mod.git")
+(:repository (git . "git://github.com/kazu-yamamoto/ghc-mod.git")
  :created    "2009"
  :authors    (("Kazu Yamamoto" . "kazu@mew.org"))
  :maintainer ("Kazu Yamamoto" . "kazu@mew.org")

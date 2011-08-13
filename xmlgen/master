@@ -1,5 +1,5 @@
 (:summary    "A DSL for generating XML"
- :repository (git . "https://github.com/philjackson/xmlgen.git")
+ :repository (git . "git://github.com/philjackson/xmlgen.git")
  :created    "2008"
  :updated    "2008"
  :license    "GPL-2"

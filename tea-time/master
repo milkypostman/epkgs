@@ -1,5 +1,5 @@
 (:summary    "Simple timer package"
- :repository (git . "https://github.com/krick/tea-time.git")
+ :repository (git . "git://github.com/krick/tea-time.git")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-2"

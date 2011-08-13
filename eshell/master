@@ -1,5 +1,5 @@
 (:summary    "The Emacs command shell"
- :repository (git . "https://github.com/jwiegley/eshell.git")
+ :repository (git . "git://github.com/jwiegley/eshell.git")
  :created    "1999"
  :updated    "2009"
  :license    "GPL-3"

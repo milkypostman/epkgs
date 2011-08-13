@@ -1,5 +1,5 @@
 (:summary    "Send & twiddle & resend HTTP requests"
- :repository (git . "https://github.com/hassy/http-twiddle.git")
+ :repository (git . "git://github.com/hassy/http-twiddle.git")
  :created    "20060201"
  :authors    (("Luke Gorrie" . "luke@synap.se"))
  :maintainer ("Hasan Veldstra" . "h@vidiowiki.com")

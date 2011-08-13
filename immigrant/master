@@ -1,5 +1,5 @@
 (:summary    "Delicatessen from other lisps"
- :repository (git . "https://github.com/tarsius/immigrant.git")
+ :repository (git . "git://github.com/tarsius/immigrant.git")
  :created    "20101107"
  :updated    "20101107"
  :license    "GPL-3"

@@ -1,5 +1,5 @@
 (:summary    "Foursquare client for Emacs"
- :repository (git . "https://github.com/hober/foursquare-el.git")
+ :repository (git . "git://github.com/hober/foursquare-el.git")
  :created    "2009"
  :updated    "2009"
  :license    "GPL-3"

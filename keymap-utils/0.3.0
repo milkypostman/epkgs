@@ -1,5 +1,5 @@
 (:summary    "Keymap utilities"
- :repository (git . "https://github.com/tarsius/keymap-utils.git")
+ :repository (git . "git://github.com/tarsius/keymap-utils.git")
  :created    "20080830"
  :updated    "20101101"
  :license    "GPL-3"

@@ -1,5 +1,5 @@
 (:summary    "Major mode to edit Io language files in Emacs"
- :repository (git . "https://github.com/superbobry/io-mode.git")
+ :repository (git . "git://github.com/superbobry/io-mode.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-2"

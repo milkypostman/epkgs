@@ -1,5 +1,5 @@
 (:summary    "Major mode for editing Text::Xslate syntax"
- :repository (git . "https://github.com/yoshiki/tx-mode.git")
+ :repository (git . "git://github.com/yoshiki/tx-mode.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-2"

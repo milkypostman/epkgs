@@ -1,3 +1,3 @@
-(:repository (git . "https://github.com/murphy-md/atoctx.git")
+(:repository (git . "git://github.com/murphy-md/atoctx.git")
  :updated    "2010"
  :homepage   "https://github.com/murphy-md/atoctx")

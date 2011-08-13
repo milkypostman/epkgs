@@ -1,5 +1,5 @@
 (:summary    "Intelligent tab completion and indentation"
- :repository (git . "https://github.com/haxney/smart-tab.git")
+ :repository (git . "git://github.com/haxney/smart-tab.git")
  :created    "20090524"
  :updated    "2009"
  :license    "GPL-3"

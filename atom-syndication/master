@@ -1,5 +1,5 @@
 (:summary    "Elisp implementation of the atom syndication format"
- :repository (git . "https://github.com/dmj/atom-syndication.git")
+ :repository (git . "git://github.com/dmj/atom-syndication.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"

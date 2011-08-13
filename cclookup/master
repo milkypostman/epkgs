@@ -1,4 +1,4 @@
-(:repository (git . "https://github.com/tsgates/cclookup.git")
+(:repository (git . "git://github.com/tsgates/cclookup.git")
  :provided   (cclookup)
  :required   ((("browse-url" browse-url)
 	       ("cl" cl)

@@ -1,5 +1,5 @@
 (:summary    "An interface to the XCode IDE"
- :repository (git . "https://github.com/senny/emacs-xcode.git")
+ :repository (git . "git://github.com/senny/emacs-xcode.git")
  :created    "2009"
  :updated    "2009"
  :license    "GPL-3"

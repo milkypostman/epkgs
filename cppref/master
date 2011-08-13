@@ -1,5 +1,5 @@
 (:summary    "A Simple C++ Reference Viewer"
- :repository (git . "https://github.com/kentaro/emacs-cppref.git")
+ :repository (git . "git://github.com/kentaro/emacs-cppref.git")
  :created    "2009"
  :updated    "2009"
  :license    "GPL-3"

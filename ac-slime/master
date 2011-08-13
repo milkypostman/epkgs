@@ -1,4 +1,4 @@
-(:repository (git . "https://github.com/purcell/ac-slime.git")
+(:repository (git . "git://github.com/purcell/ac-slime.git")
  :authors    (("Steve Purcell" . "steve@sanityinc.com"))
  :maintainer ("Steve Purcell" . "steve@sanityinc.com")
  :provided   (ac-slime)

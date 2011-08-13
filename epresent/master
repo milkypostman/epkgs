@@ -1,5 +1,5 @@
 (:summary    "Simple presentation mode for Emacs"
- :repository (git . "https://github.com/technomancy/epresent.git")
+ :repository (git . "git://github.com/technomancy/epresent.git")
  :created    "20080612"
  :updated    "2008"
  :license    "GPL-3"

@@ -1,5 +1,5 @@
 (:summary    "Extract and format documentation from lisp files"
- :repository (git . "https://github.com/dto/ldoc.git")
+ :repository (git . "git://github.com/dto/ldoc.git")
  :created    "2009"
  :updated    "2009"
  :license    "GPL-3"

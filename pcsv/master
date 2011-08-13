@@ -1,5 +1,5 @@
 (:summary    "Parser of csv"
- :repository (git . "https://github.com/mhayashi1120/Emacs-pcsv.git")
+ :repository (git . "git://github.com/mhayashi1120/Emacs-pcsv.git")
  :license    "GPL-3"
  :authors    (("Masahiro Hayashi" . "mhayashi1120@gmail.com"))
  :maintainer ("Masahiro Hayashi" . "mhayashi1120@gmail.com")

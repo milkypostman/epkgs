@@ -1,5 +1,5 @@
 (:summary    "A mode for interacting with MU*s"
- :repository (git . "https://github.com/stesla/muon.git")
+ :repository (git . "git://github.com/stesla/muon.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"

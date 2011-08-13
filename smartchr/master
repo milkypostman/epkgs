@@ -1,5 +1,5 @@
 (:summary    "Emacs version of smartchr.vim"
- :repository (git . "https://github.com/imakado/emacs-smartchr.git")
+ :repository (git . "git://github.com/imakado/emacs-smartchr.git")
  :created    "2009"
  :updated    "2009"
  :license    "GPL-2"

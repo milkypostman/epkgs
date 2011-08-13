@@ -1,5 +1,5 @@
 (:summary    "Add a `cl-merge-struct' function"
- :repository (git . "https://github.com/haxney/cl-merge.git")
+ :repository (git . "git://github.com/haxney/cl-merge.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"

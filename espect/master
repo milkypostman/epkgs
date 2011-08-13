@@ -1,5 +1,5 @@
 (:summary    "Aspect-oriented buffer settings"
- :repository (git . "https://github.com/rafl/espect.git")
+ :repository (git . "git://github.com/rafl/espect.git")
  :license    "GPL-2"
  :provided   (espect)
  :homepage   "https://github.com/rafl/espect"

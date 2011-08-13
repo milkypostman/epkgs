@@ -1,5 +1,5 @@
 (:summary    "For browsing and interacting with CouchDB"
- :repository (git . "https://github.com/technomancy/relax.el.git")
+ :repository (git . "git://github.com/technomancy/relax.el.git")
  :created    "20090511"
  :updated    "2009"
  :license    "GPL-3"

@@ -1,5 +1,5 @@
 (:summary    "Minimalist Emacs appearance"
- :repository (git . "https://github.com/dandavison/minimal.git")
+ :repository (git . "git://github.com/dandavison/minimal.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"

@@ -1,5 +1,5 @@
 (:summary    "CC Mode derived mode for rust"
- :repository (git . "https://github.com/graydon/rust-mode.git")
+ :repository (git . "git://github.com/graydon/rust-mode.git")
  :created    "2009"
  :license    "GPL-2"
  :authors    (("Graydon Hoare"))

@@ -1,4 +1,4 @@
-(:repository (git . "https://github.com/imakado/emacs-anything-w3m.git")
+(:repository (git . "git://github.com/imakado/emacs-anything-w3m.git")
  :license    "GPL-2"
  :authors    (("IMAKADO" . "ken.imakado@gmail.com"))
  :maintainer ("IMAKADO" . "ken.imakado@gmail.com")

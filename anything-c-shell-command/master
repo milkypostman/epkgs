@@ -1,4 +1,4 @@
-(:repository (git . "https://github.com/kitokitoki/anything-c-shell-command.git")
+(:repository (git . "git://github.com/kitokitoki/anything-c-shell-command.git")
  :created    "2009"
  :updated    "2009"
  :license    "GPL-2"

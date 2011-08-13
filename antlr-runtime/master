@@ -1,5 +1,5 @@
 (:summary    "Antlr runtime"
- :repository (git . "https://github.com/olabini/antlr-elisp.git")
+ :repository (git . "git://github.com/olabini/antlr-elisp.git")
  :created    "2008"
  :updated    "2008"
  :license    "GPL-2"

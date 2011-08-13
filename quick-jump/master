@@ -1,4 +1,4 @@
-(:repository (git . "https://github.com/jixiuf/quick-jump.git")
+(:repository (git . "git://github.com/jixiuf/quick-jump.git")
  :created    "20110222"
  :updated    "2011"
  :license    "GPL-3"

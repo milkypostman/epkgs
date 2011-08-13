@@ -1,5 +1,5 @@
 (:summary    "Play chess in Emacs"
- :repository (git . "https://github.com/jwiegley/emacs-chess.git")
+ :repository (git . "git://github.com/jwiegley/emacs-chess.git")
  :created    "2001"
  :updated    "2001"
  :license    "GPL-2"

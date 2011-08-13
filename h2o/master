@@ -1,5 +1,5 @@
 (:summary    "Orgmode-formatted READMEs for your ELisp"
- :repository (git . "https://github.com/punchagan/h2o.git")
+ :repository (git . "git://github.com/punchagan/h2o.git")
  :created    "2009"
  :updated    "2009"
  :license    "GPL-3"

@@ -1,5 +1,5 @@
 (:summary    "Can use the function with built-in xyzzy"
- :repository (git . "https://github.com/tomoya/xyzzy.el.git")
+ :repository (git . "git://github.com/tomoya/xyzzy.el.git")
  :created    "2008"
  :updated    "2008"
  :license    "GPL-2"

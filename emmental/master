@@ -1,5 +1,5 @@
 (:summary    "Take snapshots with Emacs"
- :repository (git . "https://github.com/jave/emmental.git")
+ :repository (git . "git://github.com/jave/emmental.git")
  :provided   (emmental)
  :homepage   "https://github.com/jave/emmental"
  :commentary "\

@@ -1,5 +1,5 @@
 (:summary    "A major mode for `mailq' interaction"
- :repository (git . "https://github.com/dimitri/mailq-el.git")
+ :repository (git . "git://github.com/dimitri/mailq-el.git")
  :created    "20100617"
  :updated    "2010"
  :authors    (("Dimitri Fontaine" . "dim@tapoueh.org"))

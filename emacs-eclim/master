@@ -1,5 +1,5 @@
 (:summary    "An interface to the Eclipse IDE"
- :repository (git . "https://github.com/senny/emacs-eclim.git")
+ :repository (git . "git://github.com/senny/emacs-eclim.git")
  :created    "2009"
  :updated    "2009"
  :license    "GPL-3"

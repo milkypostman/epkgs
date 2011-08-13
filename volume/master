@@ -1,5 +1,5 @@
 (:summary    "Tweak your sound card volume from Emacs"
- :repository (git . "https://github.com/dbrock/volume-el.git")
+ :repository (git . "git://github.com/dbrock/volume-el.git")
  :created    "2005"
  :updated    "2008"
  :license    "GPL-2"

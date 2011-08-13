@@ -1,5 +1,5 @@
 (:summary    "Persistent Undo History for GNU Emacs"
- :repository (git . "https://github.com/m2ym/undohist-el.git")
+ :repository (git . "git://github.com/m2ym/undohist-el.git")
  :created    "2009"
  :updated    "2011"
  :license    "GPL-3"

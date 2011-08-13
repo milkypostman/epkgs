@@ -1,5 +1,5 @@
 (:summary    "Major mode for editing Sass files"
- :repository (git . "https://github.com/nex3/sass-mode.git")
+ :repository (git . "git://github.com/nex3/sass-mode.git")
  :created    "20070315"
  :updated    "2008"
  :authors    (("Nathan Weizenbaum"))

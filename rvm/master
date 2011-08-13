@@ -1,5 +1,5 @@
 (:summary    "Emacs integration for rvm"
- :repository (git . "https://github.com/senny/rvm.el.git")
+ :repository (git . "git://github.com/senny/rvm.el.git")
  :created    "2010"
  :updated    "2011"
  :license    "GPL-3"

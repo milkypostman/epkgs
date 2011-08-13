@@ -1,5 +1,5 @@
 (:summary    "Add and remove indentation during copy and paste"
- :repository (git . "https://github.com/deactivated/dedent-el.git")
+ :repository (git . "git://github.com/deactivated/dedent-el.git")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-3"

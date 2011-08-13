@@ -1,5 +1,5 @@
 (:summary    "Minor mode and any commands for Emacsen on X-Window System"
- :repository (git . "https://github.com/lieutar/framov.el.git")
+ :repository (git . "git://github.com/lieutar/framov.el.git")
  :created    "2003"
  :updated    "2003"
  :license    "GPL-2"

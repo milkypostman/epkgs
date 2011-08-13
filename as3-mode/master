@@ -1,5 +1,5 @@
 (:summary    "A simple mode for editing Actionscript 3 files"
- :repository (git . "https://github.com/aemoncannon/as3-mode.git")
+ :repository (git . "git://github.com/aemoncannon/as3-mode.git")
  :created    "2007"
  :updated    "2007"
  :license    "GPL-2"

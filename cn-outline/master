@@ -1,5 +1,5 @@
 (:summary    "Minor mode for column-number-base line folding"
- :repository (git . "https://github.com/wakaran/cn-outline.git")
+ :repository (git . "git://github.com/wakaran/cn-outline.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"

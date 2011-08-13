@@ -1,5 +1,5 @@
 (:summary    "Bridging between bookmark and evernote-mode"
- :repository (git . "https://github.com/awasira/bm-evernote.git")
+ :repository (git . "git://github.com/awasira/bm-evernote.git")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-3"

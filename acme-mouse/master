@@ -1,5 +1,5 @@
 (:summary    "Mouse-button chording"
- :repository (git . "https://github.com/akrito/acme-mouse.git")
+ :repository (git . "git://github.com/akrito/acme-mouse.git")
  :created    "2009"
  :updated    "2009"
  :license    "GPL-2"

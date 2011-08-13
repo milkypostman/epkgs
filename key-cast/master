@@ -1,5 +1,5 @@
 (:summary    "Key comannd casting interface"
- :repository (git . "https://github.com/k1LoW/emacs-key-cast.git")
+ :repository (git . "git://github.com/k1LoW/emacs-key-cast.git")
  :created    "20090129"
  :updated    "2009"
  :license    "GPL-3"

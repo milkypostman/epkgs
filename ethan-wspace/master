@@ -1,5 +1,5 @@
 (:summary    "Whitespace customizations for emacs"
- :repository (git . "https://github.com/glasserc/ethan-wspace.git")
+ :repository (git . "git://github.com/glasserc/ethan-wspace.git")
  :created    "2011"
  :updated    "2011"
  :authors    (("Ethan Glasser-Camp" . "ethan@betacantrips.com"))

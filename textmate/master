@@ -1,5 +1,5 @@
 (:summary    "TextMate minor mode for Emacs"
- :repository (git . "https://github.com/defunkt/textmate.el.git")
+ :repository (git . "git://github.com/defunkt/textmate.el.git")
  :created    "20081122"
  :updated    "2009"
  :license    "GPL-3"

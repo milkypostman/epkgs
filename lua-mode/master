@@ -1,5 +1,5 @@
 (:summary    "A major-mode for editing Lua scripts"
- :repository (git . "https://github.com/immerrr/lua-mode.git")
+ :repository (git . "git://github.com/immerrr/lua-mode.git")
  :created    "1997"
  :updated    "2011"
  :license    "GPL-2"

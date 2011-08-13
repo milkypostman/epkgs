@@ -1,5 +1,5 @@
 (:summary    "Interface with twitter.com"
- :repository (git . "https://github.com/docgnome/twit.el.git")
+ :repository (git . "git://github.com/docgnome/twit.el.git")
  :created    "20070316"
  :updated    "20070319"
  :license    "GPL-2"

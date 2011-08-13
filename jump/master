@@ -1,5 +1,5 @@
 (:summary    "Build functions which contextually jump between files"
- :repository (git . "https://github.com/eschulte/jump.el.git")
+ :repository (git . "git://github.com/eschulte/jump.el.git")
  :created    "20080821"
  :updated    "2008"
  :license    "GPL-3"

@@ -1,5 +1,5 @@
 (:summary    "Minor mode for the Sinatra web mini-framework"
- :repository (git . "https://github.com/eschulte/sinatra_el.git")
+ :repository (git . "git://github.com/eschulte/sinatra_el.git")
  :created    "20090228"
  :updated    "2009"
  :license    "GPL-3"

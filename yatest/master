@@ -1,5 +1,5 @@
 (:summary    "Simple test framework"
- :repository (git . "https://github.com/lieutar/yatest.el.git")
+ :repository (git . "git://github.com/lieutar/yatest.el.git")
  :created    "2008"
  :updated    "2008"
  :license    "GPL-2"

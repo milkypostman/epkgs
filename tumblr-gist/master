@@ -1,5 +1,5 @@
 (:summary    "Ties the Gist and Tumblr integration to allow syntax highlighted and revision controlled region pasting"
- :repository (git . "https://github.com/dleslie/tumblr-gist.el.git")
+ :repository (git . "git://github.com/dleslie/tumblr-gist.el.git")
  :created    "2010"
  :license    "GPL-3"
  :maintainer ("Dan Leslie" . "dan@ironoxide.ca")

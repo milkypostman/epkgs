@@ -1,5 +1,5 @@
 (:summary    "Goto last change"
- :repository (git . "https://github.com/martinp26/goto-chg.git")
+ :repository (git . "git://github.com/martinp26/goto-chg.git")
  :created    "20020516"
  :updated    "2008"
  :license    "GPL-2"

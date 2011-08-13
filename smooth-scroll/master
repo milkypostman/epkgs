@@ -1,5 +1,5 @@
 (:summary    "Minor mode for smooth scrolling"
- :repository (git . "https://github.com/k-talo/smooth-scroll.el.git")
+ :repository (git . "git://github.com/k-talo/smooth-scroll.el.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"

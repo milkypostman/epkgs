@@ -1,5 +1,5 @@
 (:summary    "Micro minimal object system for GNU Emacs Lisp"
- :repository (git . "https://github.com/dto/eon.git")
+ :repository (git . "git://github.com/dto/eon.git")
  :created    "2008"
  :updated    "2008"
  :license    "GPL-3"

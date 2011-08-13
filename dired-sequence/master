@@ -1,5 +1,5 @@
 (:summary    "Handle files that are named in a sequential manner in dired"
- :repository (git . "https://github.com/jave/dired-sequence.git")
+ :repository (git . "git://github.com/jave/dired-sequence.git")
  :provided   (dired-sequence)
  :homepage   "https://github.com/jave/dired-sequence"
  :commentary "\

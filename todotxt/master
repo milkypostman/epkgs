@@ -1,5 +1,5 @@
 (:summary    "A major mode for editing todo.txt files"
- :repository (git . "https://github.com/rpdillon/todotxt.el.git")
+ :repository (git . "git://github.com/rpdillon/todotxt.el.git")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-3"

@@ -1,5 +1,5 @@
 (:summary    "Quote jerkcity comics"
- :repository (git . "https://github.com/qdot/jerkcity-project.git")
+ :repository (git . "git://github.com/qdot/jerkcity-project.git")
  :created    "2010"
  :updated    "2010"
  :maintainer (nil . "kyle@nonpolynomial.com")

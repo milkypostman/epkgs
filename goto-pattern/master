@@ -1,5 +1,5 @@
 (:summary    "An easy way to navigate to a predefined pattern"
- :repository (git . "https://github.com/cjauvin/goto-pattern.git")
+ :repository (git . "git://github.com/cjauvin/goto-pattern.git")
  :created    "20081209"
  :authors    (("Christian Jauvin" . "cjauvin@gmail.com"))
  :maintainer ("Christian Jauvin" . "cjauvin@gmail.com")

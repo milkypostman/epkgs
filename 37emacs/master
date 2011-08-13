@@ -1,5 +1,5 @@
 (:summary    "Emacs interface to 37signals' Backpack"
- :repository (git . "https://github.com/hober/37emacs.git")
+ :repository (git . "git://github.com/hober/37emacs.git")
  :created    "2005"
  :updated    "2008"
  :license    "GPL-2"

@@ -1,5 +1,5 @@
 (:summary    "Mode for editing files used in Drela's aerodynamic codes"
- :repository (git . "https://github.com/cloudchamber/Drela-mode.git")
+ :repository (git . "git://github.com/cloudchamber/Drela-mode.git")
  :created    "2010"
  :updated    "2010"
  :authors    (("Kenneth Jensen" . "kjensen@alum.mit.edu"))

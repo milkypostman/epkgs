@@ -1,5 +1,5 @@
 (:summary    "A source for auto-complete"
- :repository (git . "https://github.com/whitypig/auto-complete-ya-gtags.git")
+ :repository (git . "git://github.com/whitypig/auto-complete-ya-gtags.git")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-3"

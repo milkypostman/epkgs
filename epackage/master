@@ -1,5 +1,5 @@
 (:summary    "Distributed Emacs Lisp Package System (DELPS)"
- :repository (git . "https://github.com/jaalto/project--emacs-epackage.git")
+ :repository (git . "git://github.com/jaalto/project--emacs-epackage.git")
  :created    "2011"
  :updated    "2011"
  :license    "GPL"

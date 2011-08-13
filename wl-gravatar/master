@@ -1,5 +1,5 @@
 (:summary    "Gravatar fetch/store functions"
- :repository (git . "https://github.com/dabrahams/wl-gravatar.git")
+ :repository (git . "git://github.com/dabrahams/wl-gravatar.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"

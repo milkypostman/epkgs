@@ -1,5 +1,5 @@
 (:summary    "Clickable text defined by regular expression, controlled by font-lock"
- :repository (git . "https://github.com/rolandwalker/button-lock.git")
+ :repository (git . "git://github.com/rolandwalker/button-lock.git")
  :created    "2011"
  :updated    "20110529"
  :authors    (("D Roland Walker" . "walker@pobox.com"))

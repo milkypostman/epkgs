@@ -1,5 +1,5 @@
 (:summary    "Misc elisp utilities for ljupdate"
- :repository (git . "https://github.com/hober/ljupdate.git")
+ :repository (git . "git://github.com/hober/ljupdate.git")
  :created    "2002"
  :updated    "2005"
  :license    "GPL-2"

@@ -1,5 +1,5 @@
 (:summary    "Anything command for PDF books"
- :repository (git . "https://github.com/kiwanami/emacs-anything-books.git")
+ :repository (git . "git://github.com/kiwanami/emacs-anything-books.git")
  :created    "2010"
  :updated    "20110204"
  :license    "GPL-3"

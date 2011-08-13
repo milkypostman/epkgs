@@ -1,5 +1,5 @@
 (:summary    "An Emacs mode to fetch lyrics"
- :repository (git . "https://github.com/febuiles/lyricwiki.el.git")
+ :repository (git . "git://github.com/febuiles/lyricwiki.el.git")
  :created    "20081201"
  :updated    "2009"
  :license    "GPL-2"

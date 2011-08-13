@@ -1,5 +1,5 @@
 (:summary    "See Redmine on Emacs"
- :repository (git . "https://github.com/fukamachi/redmine-el.git")
+ :repository (git . "git://github.com/fukamachi/redmine-el.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-2"

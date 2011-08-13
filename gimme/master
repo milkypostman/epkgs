@@ -1,5 +1,5 @@
 (:summary    "GIMME Interesting Music on My Emacs"
- :repository (git . "https://github.com/konr/GIMME.git")
+ :repository (git . "git://github.com/konr/GIMME.git")
  :license    "GPL-2"
  :authors    (("Konrad Scorciapino" . "scorciapino@gmail.com"))
  :maintainer ("Konrad Scorciapino" . "scorciapino@gmail.com")

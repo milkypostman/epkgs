@@ -1,5 +1,5 @@
 (:summary    "An interface with Qt API reference on Emacs"
- :repository (git . "https://github.com/whitypig/qtref.git")
+ :repository (git . "git://github.com/whitypig/qtref.git")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-3"

@@ -1,5 +1,5 @@
 (:summary    "Make ibuffer's buffer list aware of files' vc status"
- :repository (git . "https://github.com/purcell/ibuffer-vc.git")
+ :repository (git . "git://github.com/purcell/ibuffer-vc.git")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-3"

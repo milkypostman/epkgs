@@ -1,5 +1,5 @@
 (:summary    "A bucket of tricks for Clojure and Slime"
- :repository (git . "https://github.com/technomancy/durendal.git")
+ :repository (git . "git://github.com/technomancy/durendal.git")
  :created    "20100813"
  :updated    "2010"
  :license    "GPL-3"

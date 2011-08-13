@@ -1,4 +1,4 @@
-(:repository (git . "https://github.com/hardaker/elisp-switch-files.git")
+(:repository (git . "git://github.com/hardaker/elisp-switch-files.git")
  :created    "2004"
  :updated    "2004"
  :license    "GPL-2"

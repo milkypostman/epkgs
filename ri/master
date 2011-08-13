@@ -1,5 +1,5 @@
 (:summary    "Ruby Documentation Lookup"
- :repository (git . "https://github.com/technomancy/ri.el.git")
+ :repository (git . "git://github.com/technomancy/ri.el.git")
  :created    "20080919"
  :updated    "2008"
  :license    "GPL-3"

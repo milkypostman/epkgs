@@ -1,4 +1,4 @@
-(:repository (git . "https://github.com/death/reddit-mode.git")
+(:repository (git . "git://github.com/death/reddit-mode.git")
  :provided   (reddit)
  :required   ((("cl" cl)
 	       ("json" json)

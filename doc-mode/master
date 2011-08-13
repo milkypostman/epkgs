@@ -1,5 +1,5 @@
 (:summary    "Convenient editing of in-code documentation"
- :repository (git . "https://github.com/nschum/doc-mode.git")
+ :repository (git . "git://github.com/nschum/doc-mode.git")
  :created    "2007"
  :updated    "2009"
  :license    "GPL-2"

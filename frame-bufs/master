@@ -1,5 +1,5 @@
 (:summary    "A minor mode for frame-relative buffer lists"
- :repository (git . "https://github.com/alpaker/Frame-Bufs.git")
+ :repository (git . "git://github.com/alpaker/Frame-Bufs.git")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-2"

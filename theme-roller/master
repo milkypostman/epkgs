@@ -1,5 +1,5 @@
 (:summary    "A collection of activly maintained emacs themes"
- :repository (git . "https://github.com/senny/theme-roller.el.git")
+ :repository (git . "git://github.com/senny/theme-roller.el.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"

@@ -1,5 +1,5 @@
 (:summary    "Use iswitch to access menus"
- :repository (git . "https://github.com/joodie/iswitch-menu.git")
+ :repository (git . "git://github.com/joodie/iswitch-menu.git")
  :created    "2008"
  :updated    "2008"
  :license    "GPL-2"

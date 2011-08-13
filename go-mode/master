@@ -1,5 +1,5 @@
 (:summary    "Mode for playing, browsing, and editing go games"
- :repository (git . "https://github.com/eschulte/go-mode.git")
+ :repository (git . "git://github.com/eschulte/go-mode.git")
  :created    "2008"
  :updated    "2008"
  :license    "GPL-2"

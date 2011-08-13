@@ -1,5 +1,5 @@
 (:summary    "Sort files to go to different places in dired"
- :repository (git . "https://github.com/jave/fsdired.git")
+ :repository (git . "git://github.com/jave/fsdired.git")
  :created    "2006"
  :updated    "2006"
  :license    "GPL-2"

@@ -1,5 +1,5 @@
 (:summary    "Jong-Gyu Development Assistant minor mode for Developers"
- :repository (git . "https://github.com/jglee1027/jda-minor-mode.git")
+ :repository (git . "git://github.com/jglee1027/jda-minor-mode.git")
  :created    "20110318"
  :updated    "2011"
  :license    "GPL-3"

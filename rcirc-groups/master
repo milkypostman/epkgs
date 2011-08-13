@@ -1,5 +1,5 @@
 (:summary    "An emacs buffer in rcirc-groups major mode"
- :repository (git . "https://github.com/dimitri/rcirc-groups.git")
+ :repository (git . "git://github.com/dimitri/rcirc-groups.git")
  :created    "20090627"
  :updated    "2009"
  :authors    (("Dimitri Fontaine" . "dim@tapoueh.org"))

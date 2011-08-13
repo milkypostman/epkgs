@@ -1,5 +1,5 @@
 (:summary    "Multi major modes for Google Web Toolkit code"
- :repository (git . "https://github.com/fhd/gwt-mumamo.git")
+ :repository (git . "git://github.com/fhd/gwt-mumamo.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-2"

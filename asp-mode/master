@@ -1,5 +1,5 @@
 (:summary    "Major mode for editing ASP files"
- :repository (git . "https://github.com/chrisdone/asp-mode.git")
+ :repository (git . "git://github.com/chrisdone/asp-mode.git")
  :created    "2009"
  :updated    "2009"
  :license    "GPL-2"

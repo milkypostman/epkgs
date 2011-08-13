@@ -1,5 +1,5 @@
 (:summary    "Interface to nopaste.pl"
- :repository (git . "https://github.com/avar/nopaste.git")
+ :repository (git . "git://github.com/avar/nopaste.git")
  :created    "20071122"
  :updated    "2010"
  :license    "GPL-2"

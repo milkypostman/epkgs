@@ -1,5 +1,5 @@
 (:summary    "Show columnized view of list elements"
- :repository (git . "https://github.com/tarsius/listing.git")
+ :repository (git . "git://github.com/tarsius/listing.git")
  :created    "20100605"
  :updated    "20101223"
  :license    "GPL-3"

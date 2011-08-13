@@ -1,5 +1,5 @@
 (:summary    "Undo/redo without making undo tree"
- :repository (git . "https://github.com/k-talo/linear-undo.el.git")
+ :repository (git . "git://github.com/k-talo/linear-undo.el.git")
  :created    "20101119"
  :updated    "2010"
  :license    "GPL-3"

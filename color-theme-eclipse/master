@@ -1,5 +1,5 @@
 (:summary    "Eclipse color theme for GNU Emacs"
- :repository (git . "https://github.com/takaken/color-theme-eclipse.git")
+ :repository (git . "git://github.com/takaken/color-theme-eclipse.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-2"

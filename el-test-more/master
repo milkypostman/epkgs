@@ -1,5 +1,5 @@
 (:summary    "Simple unit test framework for emacs lisp"
- :repository (git . "https://github.com/k-talo/el-test-more.el.git")
+ :repository (git . "git://github.com/k-talo/el-test-more.el.git")
  :created    "20101116"
  :updated    "2010"
  :license    "GPL-3"

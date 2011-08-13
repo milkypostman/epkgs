@@ -1,5 +1,5 @@
 (:summary    "Helps you pop up and pop out shell buffer easily"
- :repository (git . "https://github.com/whitypig/shell-pop.git")
+ :repository (git . "git://github.com/whitypig/shell-pop.git")
  :created    "20090531"
  :updated    "20100528"
  :license    "GPL-2"

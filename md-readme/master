@@ -1,5 +1,5 @@
 (:summary    "Markdown-formatted READMEs for your ELisp"
- :repository (git . "https://github.com/thomas11/md-readme.git")
+ :repository (git . "git://github.com/thomas11/md-readme.git")
  :created    "2009"
  :updated    "2009"
  :license    "GPL-3"

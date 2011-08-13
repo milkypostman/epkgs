@@ -1,5 +1,5 @@
 (:summary    "Translate english using excite's service"
- :repository (git . "https://github.com/lieutar/excite-translate.el.git")
+ :repository (git . "git://github.com/lieutar/excite-translate.el.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"

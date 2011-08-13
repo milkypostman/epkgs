@@ -1,5 +1,5 @@
 (:summary    "Grammer check utility using LanguageTool"
- :repository (git . "https://github.com/mhayashi1120/Emacs-langtool.git")
+ :repository (git . "git://github.com/mhayashi1120/Emacs-langtool.git")
  :license    "GPL-3"
  :authors    (("Masahiro Hayashi" . "mhayashi1120@gmail.com"))
  :maintainer ("Masahiro Hayashi" . "mhayashi1120@gmail.com")

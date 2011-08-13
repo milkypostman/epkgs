@@ -1,5 +1,5 @@
 (:summary    "Run Windows application associated with a file"
- :repository (git . "https://github.com/lieutar/cygstart.el.git")
+ :repository (git . "git://github.com/lieutar/cygstart.el.git")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-3"

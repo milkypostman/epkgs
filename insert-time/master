@@ -1,4 +1,4 @@
-(:repository (git . "https://github.com/rmm5t/insert-time.el.git")
+(:repository (git . "git://github.com/rmm5t/insert-time.el.git")
  :created    "2007"
  :updated    "2007"
  :license    "GPL-2"

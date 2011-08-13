@@ -1,5 +1,5 @@
 (:summary    "Automatic setting of code style variables"
- :repository (git . "https://github.com/nschum/guess-style.git")
+ :repository (git . "git://github.com/nschum/guess-style.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-2"

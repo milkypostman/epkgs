@@ -1,5 +1,5 @@
 (:summary    "GTD with howm"
- :repository (git . "https://github.com/himura/howm-gtd.git")
+ :repository (git . "git://github.com/himura/howm-gtd.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"

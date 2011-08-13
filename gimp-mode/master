@@ -1,4 +1,4 @@
-(:repository (git . "https://github.com/pft/gimpmode.git")
+(:repository (git . "git://github.com/pft/gimpmode.git")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-3"

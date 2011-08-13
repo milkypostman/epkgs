@@ -1,5 +1,5 @@
 (:summary    "An Org-mode tool for buffer management"
- :repository (git . "https://github.com/dandavison/org-buffers.git")
+ :repository (git . "git://github.com/dandavison/org-buffers.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"

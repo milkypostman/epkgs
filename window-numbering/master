@@ -1,5 +1,5 @@
 (:summary    "Numbered window shortcuts"
- :repository (git . "https://github.com/nschum/window-numbering.el.git")
+ :repository (git . "git://github.com/nschum/window-numbering.el.git")
  :created    "2007"
  :updated    "2007"
  :license    "GPL-2"

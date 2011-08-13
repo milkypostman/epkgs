@@ -1,5 +1,5 @@
 (:summary    "Minor mode for visual feedback on some operations"
- :repository (git . "https://github.com/k-talo/volatile-highlights.el.git")
+ :repository (git . "git://github.com/k-talo/volatile-highlights.el.git")
  :created    "2001"
  :updated    "2010"
  :license    "GPL-3"

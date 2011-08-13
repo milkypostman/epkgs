@@ -1,5 +1,5 @@
 (:summary    "MH Calendar"
- :repository (git . "https://github.com/yoshinari-nomura/mhc.git")
+ :repository (git . "git://github.com/yoshinari-nomura/mhc.git")
  :created    "19940704"
  :authors    (("Yoshinari Nomura" . "nom@quickhack.net"))
  :maintainer ("Yoshinari Nomura" . "nom@quickhack.net")

@@ -1,5 +1,5 @@
 (:summary    "Sync directories within dired"
- :repository (git . "https://github.com/renard/dired-sync.git")
+ :repository (git . "git://github.com/renard/dired-sync.git")
  :created    "20101202"
  :updated    "2010"
  :provided   (dired-sync)

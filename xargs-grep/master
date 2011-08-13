@@ -1,5 +1,5 @@
 (:summary    "Grep large sets of files by using xargs"
- :repository (git . "https://github.com/lewang/le_emacs_xargs_grep.git")
+ :repository (git . "git://github.com/lewang/le_emacs_xargs_grep.git")
  :created    "20110207"
  :updated    "2011"
  :license    "GPL-3"

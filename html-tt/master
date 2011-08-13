@@ -1,5 +1,5 @@
 (:summary    "Template Toolkit for html-helper-mode"
- :repository (git . "https://github.com/yoshiki/html-tt.git")
+ :repository (git . "git://github.com/yoshiki/html-tt.git")
  :created    "2002"
  :updated    "2002"
  :license    "GPL-2"

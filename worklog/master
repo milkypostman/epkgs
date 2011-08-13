@@ -1,4 +1,4 @@
-(:repository (git . "https://github.com/credmp/worklog.git")
+(:repository (git . "git://github.com/credmp/worklog.git")
  :created    "2002"
  :updated    "2002"
  :license    "GPL-2"
