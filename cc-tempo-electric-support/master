@@ -2,7 +2,7 @@
  :created    "2000"
  :updated    "20000217"
  :license    "GPL-2"
- :authors    (("Klaus Berndl" . "klaus.berndl@sdm.de"))
+ :authors    (("Klaus Berndl"))
  :provided   (cc-tempo-electric-support)
  :required   ((("cc-mode" cc-mode)
 	       ("tempo" tempo)))

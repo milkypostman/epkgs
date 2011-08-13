@@ -2,8 +2,8 @@
  :created    "1998"
  :updated    "19981222"
  :license    "GPL-2"
- :authors    (("Kai Grossjohann" . "kai.grossjohann@cs.uni-dortmund.de"))
- :maintainer ("Kai Grossjohann" . "kai.grossjohann@cs.uni-dortmund.de")
+ :authors    (("Kai Grossjohann"))
+ :maintainer ("Kai Grossjohann")
  :provided   (pc-keys)
  :keywords   ("convenience")
  :commentary "\

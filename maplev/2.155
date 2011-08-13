@@ -3,7 +3,7 @@
  :updated    "20060602"
  :license    "GPL-2"
  :authors    (("Joseph S. Riel" . "joer@k-online.com")
-	      ("and Roland Winkler" . "roland.winkler@physik.uni-erlangen.de"))
+	      ("and Roland Winkler"))
  :maintainer ("Joseph S. Riel" . "joer@k-online.com")
  :provided   (maplev)
  :required   ((("abbrevlist" abbrevlist)

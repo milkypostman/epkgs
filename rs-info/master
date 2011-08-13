@@ -1,8 +1,8 @@
 (:summary    "Some info related functions"
  :updated    "20080321"
  :license    "GPL-2"
- :authors    (("Reiner Steib" . "reiner.steib@gmx.de"))
- :maintainer ("Reiner Steib" . "reiner.steib@gmx.de")
+ :authors    (("Reiner Steib"))
+ :maintainer ("Reiner Steib")
  :provided   (rs-info)
  :keywords   ("info")
  :homepage   "http://theotp1.physik.uni-ulm.de/~ste/"

@@ -2,8 +2,8 @@
  :created    "2008"
  :updated    "2008"
  :license    "GPL-2"
- :authors    (("Vikram Visweswaraiah" . "vviswesw@cisco.com"))
- :maintainer ("Vikram Visweswaraiah" . "vviswesw@cisco.com")
+ :authors    (("Vikram Visweswaraiah (vviswesw at cisco.com)"))
+ :maintainer ("Vikram Visweswaraiah (vviswesw at cisco.com)")
  :commentary "\
 If you don't know what oprofile is, read about it at 
 <http://oprofile.sourceforge.net/>. If you start using it, particularly,

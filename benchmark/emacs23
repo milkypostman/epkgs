@@ -6,7 +6,6 @@
  :maintainer ("Dave Love" . "fx@gnu.org")
  :provided   (benchmark)
  :keywords   ("extensions" "lisp")
- :homepage   "http://quimby.gnus.org/elisp/"
  :commentary "\
 Utilities for timing the execution of forms, including the time
 taken for GC.  Note that prior to timing code you may want to

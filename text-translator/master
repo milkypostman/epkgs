@@ -3,7 +3,7 @@
  :updated    "2010"
  :license    "GPL-2"
  :authors    (("khiker" . "khiker.mail+elisp@gmail.com")
-	      ("plus" . "mlb33828@nifty.com"))
+	      ("plus"))
  :maintainer ("khiker" . "khiker.mail+elisp@gmail.com")
  :provided   (text-translator text-translator-load text-translator-vars)
  :homepage   "http://www.emacswiki.org/TextTranslator"

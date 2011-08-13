@@ -7,7 +7,7 @@
  :provided   (json)
  :required   ((("cl" cl)))
  :keywords   ("convenience")
- :homepage   "http://edward.oconnor.cx/elisp/"
+ :homepage   "http://edward.oconnor.cx/elisp"
  :wikipage   "http://www.emacswiki.org/JSON"
  :commentary "\
 This is a library for parsing and generating JSON (JavaScript Object

@@ -1,9 +1,7 @@
 (:summary    "A torus for buffer navigation. A ring of buffers, and a ring of buffer rings"
  :created    "20090416"
  :updated    "2009"
- :license    "GPL-3"
- :authors    ((nil . "mike mattie codermattie@gmail.com"))
- :maintainer (nil . "mike mattie codermattie@gmail.com")
+ :license    "GPL-v3"
  :provided   (buffer-ring)
  :required   ((("dynamic-ring" dynamic-ring)))
  :homepage   "http://www.emacswiki.org/BufferRing"

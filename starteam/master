@@ -4,7 +4,6 @@
  :updated    "2002"
  :license    "GPL-2"
  :authors    (("$Author$"))
- :maintainer ("Matthew O. Smith" . "m0smith@yahoo.com")
  :provided   (starteam vc-starteam)
  :required   ((("dired" dired)
 	       ("elib" string)

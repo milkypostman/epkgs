@@ -2,8 +2,8 @@
  :created    "1997"
  :updated    "19970302"
  :license    "GPL-2"
- :authors    (("Frederic Lepied" . "frederic.lepied@sugix.frmug.org"))
- :maintainer ("Frederic Lepied" . "frederic.lepied@sugix.frmug.org")
+ :authors    (("Frederic Lepied"))
+ :maintainer ("Frederic Lepied")
  :provided   (file-log)
  :required   ((("add-log" add-log)))
  :keywords   ("cvs" "maint" "vc")

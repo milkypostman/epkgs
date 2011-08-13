@@ -3,7 +3,7 @@
  :updated    "1999"
  :license    "GPL-2"
  :authors    (("Benjamin Drieu" . "bdrieu@april.org")
-	      ("Frederik Fouvry" . "frederik.fouvry@coli.uni-saarland.de"))
+	      ("Frederik Fouvry"))
  :maintainer ("Benjamin Drieu" . "bdrieu@april.org")
  :provided   (df-mode)
  :required   ((("timer" timer)))

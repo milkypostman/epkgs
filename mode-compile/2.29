@@ -1,9 +1,8 @@
 (:summary    "Smart command for compiling files"
  :created    "1994"
  :license    "GPL-2"
- :authors    (("Heddy Boubaker" . "heddy.boubaker@cena.fr")
-	      (nil . "heddy.boubaker@cena.fr"))
- :maintainer ("Heddy Boubaker" . "heddy.boubaker@cena.fr")
+ :authors    (("Heddy Boubaker"))
+ :maintainer ("Heddy Boubaker")
  :provided   (mode-compile mode-compile-kill)
  :required   ((("cl" cl)
 	       ("compile" compile)

@@ -1,5 +1,4 @@
 (:summary    "Default, simple IRC client"
- :repository (git . "https://github.com/rcy/rcirc.git")
  :created    "2005"
  :updated    "2011"
  :license    "GPL-3"
@@ -10,7 +9,6 @@
 	       ("gnus" time-date)
 	       ("ring" ring)))
  :keywords   ("comm")
- :homepage   "https://github.com/rcy/rcirc"
  :wikipage   "http://www.emacswiki.org/rcirc"
  :commentary "\
 Internet Relay Chat (IRC) is a form of instant communication over

@@ -7,7 +7,7 @@
  :provided   (mspools)
  :required   ((("vm" vm-vars)))
  :keywords   ("mail")
- :homepage   "http://www.anc.ed.ac.uk/~stephen/emacs/"
+ :homepage   "http://www.anc.ed.ac.uk/~stephen/emacs"
  :commentary "\
 If you use a mail filter (e.g. procmail, filter) to put mail messages in
 folders, this file will let you see which folders have mail waiting

@@ -2,7 +2,7 @@
  :created    "2000"
  :updated    "2011"
  :license    "GPL-3"
- :authors    (("Kai Grossjohann" . "kai.grossjohann@cs.uni-dortmund.de")
+ :authors    (("Kai Grossjohann")
 	      ("Alex Schroeder" . "alex@gnu.org")
 	      ("Chong Yidong" . "cyd@stupidchicken.com"))
  :maintainer ("Chong Yidong" . "cyd@stupidchicken.com")

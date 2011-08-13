@@ -2,8 +2,6 @@
  :created    "2009"
  :updated    "2009"
  :license    "GPL-2"
- :authors    (("Kobayashi Takaaki" . "kobapan@gmail.com"))
- :maintainer ("Kobayashi Takaaki" . "kobapan@gmail.com")
  :provided   (kokopelli)
  :commentary "\
 Installation

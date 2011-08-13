@@ -2,8 +2,8 @@
  :created    "1997"
  :updated    "1997"
  :license    "GPL-2"
- :authors    (("Tim Read" . "tim.read@fp.co.nz"))
- :maintainer ("Tim Read" . "tim.read@fp.co.nz")
+ :authors    (("Tim Read"))
+ :maintainer ("Tim Read")
  :provided   (ansys-mod)
  :required   ((("easymenu" easymenu)
 	       ("emacs-core" backquote)

@@ -1,5 +1,5 @@
 (:summary    "Query and retrieve BibTeX from NCBI pubmed via TeXMed in Emacs"
- :license    "GPL-2"
+ :license    "GPL2"
  :authors    (("Emanuel Heitlinger" . "emanuelheitlinger@gmail.com"))
  :maintainer ("Emanuel Heitlinger" . "emanuelheitlinger@gmail.com")
  :provided   (TeXMed)

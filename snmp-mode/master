@@ -1,7 +1,0 @@
-(:created    "1998"
- :updated    "19980304"
- :license    "GPL-2"
- :provided   (snmp-mode)
- :required   ((("cl" cl)
-	       ("tempo" tempo)))
- :homepage   "http://www.hardakers.net/elisp/")

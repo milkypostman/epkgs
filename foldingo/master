@@ -1,7 +1,7 @@
 (:created    "1995"
  :updated    "20011224"
- :authors    (("Christian Queinnec" . "christian.queinnec@lip6.fr"))
- :maintainer ("Christian Queinnec" . "christian.queinnec@lip6.fr")
+ :authors    (("Christian Queinnec"))
+ :maintainer ("Christian Queinnec")
  :provided   (foldingo)
  :required   ((("emacs-core" menu-bar)))
  :keywords   ("folding" "mode")

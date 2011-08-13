@@ -2,8 +2,8 @@
  :created    "1999"
  :updated    "1999"
  :license    "GPL-2"
- :authors    (("Tom Breton" . "tehom@localhost"))
- :maintainer ("Tom Breton" . "tehom@localhost")
+ :authors    (("Tom Breton"))
+ :maintainer ("Tom Breton")
  :provided   (tehom-2)
  :keywords   ("extensions")
  :homepage   "www.panix.com/~tehom/"

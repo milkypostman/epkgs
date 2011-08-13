@@ -3,7 +3,7 @@
  :updated    "2008"
  :license    "GPL-3"
  :authors    (("khiker" . "khiker.mail+elisp@gmail.com")
-	      ("plus" . "mlb33828@nifty.com"))
+	      ("plus"))
  :maintainer ("khiker" . "khiker.mail+elisp@gmail.com")
  :provided   (parenthesis)
  :keywords   ("lisp")

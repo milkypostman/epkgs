@@ -2,8 +2,6 @@
  :created    "2003"
  :updated    "20040823"
  :license    "GPL-2"
- :authors    (("Francis J. Wright" . "f.j.wright@qmul.ac.uk"))
- :maintainer ("Francis J. Wright" . "f.j.wright@qmul.ac.uk")
  :provided   (csv-mode)
  :required   ((("emacs-core" sort)))
  :keywords   ("convenience")

@@ -2,8 +2,8 @@
  :created    "2000"
  :updated    "20010726"
  :license    "GPL-2"
- :authors    (("Francis J. Wright" . "f.j.wright@maths.qmw.ac.uk"))
- :maintainer ("Francis J. Wright" . "f.j.wright@maths.qmw.ac.uk")
+ :authors    (("Francis J. Wright"))
+ :maintainer ("Francis J. Wright")
  :provided   (dired-sort-menu)
  :required   ((("ange-ftp" ange-ftp)
 	       ("dired" dired)

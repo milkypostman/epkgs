@@ -7,7 +7,7 @@
  :provided   (webjump)
  :required   ((("browse-url" browse-url)))
  :keywords   ("comm" "www")
- :homepage   "http://www.neilvandyke.org/webjump/"
+ :homepage   "http://www.neilvandyke.org/webjump"
  :wikipage   "http://www.emacswiki.org/WebJump"
  :commentary "\
 WebJump provides a sort of ``programmable hotlist'' of Web sites that can

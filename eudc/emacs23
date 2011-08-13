@@ -3,7 +3,7 @@
  :updated    "2011"
  :license    "GPL-3"
  :authors    (("Oscar Figueiredo" . "oscar@cpe.fr"))
- :maintainer ("Pavel Janík" . "pavel@janik.cz")
+ :maintainer ("Pavel Janík")
  :provided   (eudc eudc-vars eudcb-bbdb eudcb-ldap eudcb-mab eudcb-ph)
  :required   ((("cl" cl)
 	       ("custom" custom)

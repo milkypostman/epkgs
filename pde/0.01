@@ -14,11 +14,11 @@
 	       ("imenu" imenu)
 	       ("imenu-tree" imenu-tree)
 	       ("perldoc" perldoc)
+	       ("re-builder" re-builder)
 	       ("template-simple" template-simple)
 	       ("tempo-x" tempo-x)
 	       ("tmm" tmm)
-	       ("woman" woman)
-	       (nil re-builder)))
+	       ("woman" woman)))
  :keywords   ("convenience" "languages" "tools" "unix")
  :homepage   "http://search.cpan.org/~yewenbin/Emacs-PDE/"
  :commentary "\

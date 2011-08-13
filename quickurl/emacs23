@@ -10,7 +10,7 @@
 	       ("emacs-core" pp)
 	       ("thingatpt" thingatpt)))
  :keywords   ("hypermedia")
- :homepage   "http://www.davep.org/emacs/"
+ :homepage   "http://www.davep.org/emacs"
  :commentary "\
 This package provides a simple method of inserting an URL based on the
 text at point in the current buffer. This is part of an on-going effort

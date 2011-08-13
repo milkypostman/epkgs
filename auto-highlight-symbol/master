@@ -3,8 +3,8 @@
  :created    "2009"
  :updated    "2010"
  :license    "GPL-3"
- :authors    (("Mitsuo Saito" . "arch320@nospam.gmail.com"))
- :maintainer ("Mitsuo Saito" . "arch320@nospam.gmail.com")
+ :authors    (("Mitsuo Saito"))
+ :maintainer ("Mitsuo Saito")
  :provided   (auto-highlight-symbol auto-highlight-symbol-config)
  :required   ((("cl" cl)
 	       ("easy-mmode" easy-mmode)))

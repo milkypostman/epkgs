@@ -10,7 +10,7 @@
 	       ("custom" cus-edit custom)
 	       ("emacs-core" faces font-lock)))
  :keywords   ("etags" "html" "hypermedia" "markup")
- :homepage   "http://rtfm.etla.org/emacs/htmlfontify/"
+ :homepage   "http://rtfm.etla.org/emacs/htmlfontify"
  :wikipage   "http://www.emacswiki.org/HtmlFontify"
  :commentary "\
 I have made some changes to make it work for Emacs 22.   A lot of

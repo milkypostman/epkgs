@@ -2,7 +2,6 @@
  :repository (hg . "http://bitbucket.org/lyro/vim-mode/")
  :created    "2009"
  :updated    "2011"
- :license    "GPL-2"
  :authors    (("Frank Fischer" . "frank.fischer@mathematik.tu-chemnitz.de"))
  :maintainer ("Frank Fischer" . "frank.fischer@mathematik.tu-chemnitz.de")
  :provided   (vim vim-commands vim-compat vim-core vim-defs vim-ex vim-ex-commands vim-insert-mode vim-keymap vim-macs vim-maps vim-modes vim-motions vim-normal-mode vim-scroll vim-search vim-undo vim-visual-mode vim-window)

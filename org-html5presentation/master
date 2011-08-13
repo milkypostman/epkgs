@@ -2,8 +2,6 @@
  :created    "2004"
  :updated    "2010"
  :license    "GPL-3"
- :authors    (("Carsten Dominik" . "carsten@orgmode.org"))
- :maintainer ("Carsten Dominik" . "carsten@orgmode.org")
  :provided   (org-html5presentation)
  :required   ((("cl" cl)
 	       ("org-mode" org-exp org-table)

@@ -2,8 +2,6 @@
  :created    "2011"
  :updated    "2011"
  :license    "GPL-3"
- :authors    (("Seong-Kook Shin" . "cinsky@gmail.com"))
- :maintainer ("Seong-Kook Shin" . "cinsky@gmail.com")
  :provided   (vc-jump)
  :required   ((("cl" cl)
 	       ("vc" vc)))

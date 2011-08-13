@@ -10,7 +10,6 @@
 	       ("dired" dired)
 	       ("emacs-core" font-core)))
  :keywords   ("buffer" "convenience")
- :homepage   "http://www.shootybangbang.com/"
  :wikipage   "http://www.emacswiki.org/IbufferMode"
  :commentary "\
 ibuffer.el is an advanced replacement for the `buffer-menu' which

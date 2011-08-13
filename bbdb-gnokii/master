@@ -3,7 +3,7 @@
  :updated    "20060419"
  :license    "GPL-2"
  :authors    (("Martin Schwenke" . "martin@meltin.net")
-	      ("Reiner Steib" . "reiner.steib@gmx.de")
+	      ("Reiner Steib")
 	      ("Len Trigg" . "len@reeltwo.com"))
  :maintainer ("Martin Schwenke" . "martin@meltin.net")
  :provided   (bbdb-gnokii)

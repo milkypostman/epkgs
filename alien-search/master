@@ -7,7 +7,7 @@
  :required   ((("align" align)
 	       ("cl" cl)
 	       ("emacs-core" menu-bar)
-	       (nil re-builder)))
+	       ("re-builder" re-builder)))
  :keywords   ("convenience" "emulations" "matching" "tools" "unix" "wp")
  :homepage   "https://github.com/k-talo/alien-search.el"
  :commentary "\

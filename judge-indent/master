@@ -3,8 +3,6 @@
  :created    "2011"
  :updated    "2011"
  :license    "GPL-3"
- :authors    (("yascentur" . "screenname@gmail.com"))
- :maintainer ("yascentur" . "screenname@gmail.com")
  :provided   (judge-indent)
  :required   ((("cl" cl)))
  :keywords   ("indent" "tab")

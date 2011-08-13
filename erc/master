@@ -18,7 +18,7 @@
 	       ("flyspell" flyspell)
 	       ("gnus" format-spec time-date tls)
 	       ("hippie-exp" hippie-exp)
-	       ("ibuffer" ibuffer)
+	       ("ibuffer" ibuf-ext ibuffer)
 	       ("imenu" imenu)
 	       ("iswitchb" iswitchb)
 	       ("mail-extr" mail-extr)
@@ -28,7 +28,7 @@
 	       ("twittering-mode" ssl)
 	       ("viper" viper)
 	       ("widget" wid-edit)
-	       (nil ibuf-ext window)))
+	       (nil window)))
  :keywords   ("chat" "client" "internet" "irc")
  :homepage   "http://savannah.gnu.org/projects/erc/"
  :wikipage   "http://www.emacswiki.org/ERC"

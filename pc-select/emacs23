@@ -2,8 +2,8 @@
  :created    "19950926"
  :updated    "2011"
  :license    "GPL-3"
- :authors    (("Michael Staats" . "michael@thp.uni-duisburg.de"))
- :maintainer ("Michael Staats" . "michael@thp.uni-duisburg.de")
+ :authors    (("Michael Staats"))
+ :maintainer ("Michael Staats")
  :provided   (pc-select)
  :keywords   ("convenience" "emulations")
  :commentary "\

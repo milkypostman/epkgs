@@ -1,6 +1,5 @@
 (:summary    "Invoke osascript on OSX"
  :updated    "20040412"
- :license    "GPL-2"
  :authors    (("Harley Gorrell" . "harley@mahalito.net"))
  :maintainer ("Harley Gorrell" . "harley@mahalito.net")
  :provided   (osx-osascript)

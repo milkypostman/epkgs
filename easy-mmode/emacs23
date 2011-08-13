@@ -2,7 +2,7 @@
  :created    "1997"
  :updated    "2011"
  :license    "GPL-3"
- :authors    (("Georges Brun-Cottan" . "georges.brun-cottan@inria.fr"))
+ :authors    (("Georges Brun-Cottan"))
  :maintainer ("Stefan Monnier" . "monnier@gnu.org")
  :provided   (easy-mmode)
  :required   ((("cl" cl)))

@@ -1,15 +1,14 @@
 (:summary    "Create and edit WYSIWYG text based embedded tables"
- :repository (cvs . ":pserver:anonymous@table.cvs.sourceforge.net:/cvsroot/table")
  :created    "200008"
  :updated    "2011"
  :license    "GPL-3"
- :authors    (("Takaaki Ota" . "takaaki.ota@am.sony.com"))
- :maintainer ("Takaaki Ota" . "takaaki.ota@am.sony.com")
+ :authors    (("Takaaki Ota"))
+ :maintainer ("Takaaki Ota")
  :provided   (table)
  :required   ((("easymenu" easymenu)
 	       ("regexp-opt" regexp-opt)))
  :keywords   ("convenience" "wp")
- :homepage   "http://table.sourceforge.net/"
+ :homepage   "http://table.sourceforge.net"
  :wikipage   "http://www.emacswiki.org/TableMode"
  :commentary "\
 -------------

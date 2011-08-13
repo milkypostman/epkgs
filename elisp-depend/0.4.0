@@ -2,7 +2,6 @@
  :created    "20090111"
  :updated    "2010"
  :license    "GPL-3"
- :authors    ((nil . "andy stewart lazycat.manatee@gmail.com"))
  :provided   (elisp-depend)
  :required   ((("thingatpt" thingatpt)))
  :keywords   ("elisp-depend")

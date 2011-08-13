@@ -6,7 +6,7 @@
  :maintainer ("Dave Love" . "fx@gnu.org")
  :provided   (cfengine)
  :keywords   ("languages")
- :homepage   "http://www.loveshack.ukfsn.org/emacs/"
+ :homepage   "http://www.loveshack.ukfsn.org/emacs"
  :commentary "\
 Provides support for editing GNU Cfengine files, including
 font-locking, Imenu and indention, but with no special keybindings.

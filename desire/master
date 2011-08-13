@@ -3,7 +3,7 @@
  :updated    "20010212"
  :license    "GPL-2"
  :authors    (("Martin Schwenke" . "martin@meltin.net")
-	      ("Graham Williams" . "graham.williams@cmis.csiro.au"))
+	      ("Graham Williams"))
  :maintainer (nil . "martin@meltin.net")
  :provided   (desire)
  :keywords   ("configuration" "setup")

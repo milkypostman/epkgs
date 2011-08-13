@@ -2,8 +2,8 @@
  :created    "1986"
  :updated    "2011"
  :license    "GPL-3"
- :authors    (("Kevin Gallagher" . "kevin.gallagher@boeing.com"))
- :maintainer ("Kevin Gallagher" . "kevin.gallagher@boeing.com")
+ :authors    (("Kevin Gallagher"))
+ :maintainer ("Kevin Gallagher")
  :provided   (edt)
  :required   ((("ehelp" ehelp)
 	       ("picture" picture)))

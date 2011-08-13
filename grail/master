@@ -1,6 +1,6 @@
 (:created    "2009"
  :updated    "2009"
- :license    "GPL-3"
+ :license    "LGPL-v3"
  :provided   (grail-fn grail-profile)
  :required   ((("cl" cl)
 	       ("find-func" find-func)))

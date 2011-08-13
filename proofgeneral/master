@@ -2,7 +2,6 @@
  :repository (cvs . ":pserver:anon@cvs.inf.ed.ac.uk:/disk/cvs/proofgen")
  :created    "2009"
  :updated    "2009"
- :license    "GPL"
  :authors    (("David Aspinall, Yves Bertot, Healfdene Goguen,")
 	      ("Thomas Kleymann and Dilip Sequeira"))
  :maintainer ("David Aspinall, Yves Bertot, Healfdene Goguen,")

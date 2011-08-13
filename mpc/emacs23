@@ -1,5 +1,4 @@
 (:summary    "A client for the Music Player Daemon"
- :repository (bzr . "http://www.iro.umontreal.ca/~monnier/bzr/mpc/")
  :created    "2006"
  :updated    "2011"
  :license    "GPL-3"
@@ -8,7 +7,7 @@
  :provided   (mpc)
  :required   ((("cl" cl)))
  :keywords   ("multimedia")
- :homepage   "http://www.iro.umontreal.ca/~monnier/elisp/"
+ :homepage   "http://www.iro.umontreal.ca/~monnier/elisp"
  :wikipage   "http://www.emacswiki.org/Mpc"
  :commentary "\
 This is an Emacs front end to the Music Player Daemon.

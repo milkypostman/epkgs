@@ -1,7 +1,7 @@
 (:summary    "RMAIL coupler to /usr/uci/post mailer"
  :created    "19860113"
  :license    "public-domain"
- :authors    (("Gary Delp" . "delp@huey.udel.edu"))
+ :authors    (("Gary Delp"))
  :maintainer ("FSF")
  :provided   (mailpost)
  :required   ((("mailalias" mailalias)

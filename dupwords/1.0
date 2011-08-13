@@ -2,8 +2,6 @@
  :created    "19980727"
  :updated    "20040411"
  :license    "GPL-2"
- :authors    ((nil . "stephen eglen stephen@anc.ed.ac.uk"))
- :maintainer (nil . "stephen eglen stephen@anc.ed.ac.uk")
  :keywords   ("wp")
  :homepage   "http://www.anc.ed.ac.uk/~stephen/emacs/"
  :commentary "\

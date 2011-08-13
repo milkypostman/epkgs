@@ -2,8 +2,8 @@
  :created    "2001"
  :updated    "20010327"
  :license    "GPL-2"
- :authors    (("Riku Saikkonen" . "riku.saikkonen@hut.fi"))
- :maintainer ("Riku Saikkonen" . "riku.saikkonen@hut.fi")
+ :authors    (("Riku Saikkonen"))
+ :maintainer ("Riku Saikkonen")
  :provided   (cparen)
  :required   ((("emacs-core" font-lock)))
  :keywords   ("faces" "lisp")

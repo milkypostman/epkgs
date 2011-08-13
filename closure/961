@@ -1,7 +1,7 @@
 (:summary    "Experimental closure prototypes"
  :created    "2008"
  :updated    "2008"
- :license    "GPL-3"
+ :license    "LGPL-V3"
  :authors    (("Mike Mattie"))
  :maintainer ("Mike Mattie")
  :provided   (closure)

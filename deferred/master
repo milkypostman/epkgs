@@ -3,8 +3,6 @@
  :created    "2010"
  :updated    "2011"
  :license    "GPL-3"
- :authors    (("SAKURAI Masashi" . "m.sakurai@kiwanami.net"))
- :maintainer ("SAKURAI Masashi" . "m.sakurai@kiwanami.net")
  :provided   (concurrent deferred)
  :required   ((("cl" cl)
 	       ("emacs-core" pp)))

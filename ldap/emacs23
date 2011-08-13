@@ -8,7 +8,6 @@
  :required   ((("cl" cl)
 	       ("custom" custom)))
  :keywords   ("comm")
- :homepage   "http://polydistortion.net/sw/emacs-lisp/"
  :commentary "\
 This package provides basic functionality to perform searches on LDAP
    servers.  It requires a command line utility generally named

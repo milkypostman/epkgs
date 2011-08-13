@@ -3,8 +3,6 @@
  :created    "2010"
  :updated    "20110204"
  :license    "GPL-3"
- :authors    (("SAKURAI Masashi" . "m.sakurai@kiwanami.net"))
- :maintainer ("SAKURAI Masashi" . "m.sakurai@kiwanami.net")
  :provided   (anything-books)
  :required   ((("cl" cl)
 	       ("deferred" concurrent)))

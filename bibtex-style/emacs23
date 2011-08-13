@@ -6,7 +6,7 @@
  :maintainer ("Stefan Monnier" . "monnier@iro.umontreal.ca")
  :provided   (bibtex-style)
  :keywords   ("tex")
- :homepage   "http://www.iro.umontreal.ca/~monnier/elisp/"
+ :homepage   "http://www.iro.umontreal.ca/~monnier/elisp"
  :commentary "\
 Done: font-lock, imenu, outline, commenting, indentation.
 Todo: tab-completion.

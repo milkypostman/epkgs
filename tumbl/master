@@ -2,8 +2,6 @@
  :created    "20071029"
  :updated    "2007"
  :license    "GPL-2"
- :authors    (("Carl Groner" . "c.groner@gmail.com"))
- :maintainer ("Carl Groner" . "c.groner@gmail.com")
  :provided   (tumbl)
  :required   ((("http-post-simple" http-post-simple)))
  :homepage   "http://www.emacswiki.org/Tumbl"

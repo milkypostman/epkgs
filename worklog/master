@@ -2,8 +2,6 @@
  :created    "2002"
  :updated    "2002"
  :license    "GPL-2"
- :authors    ((nil . "kai.grossjohann@cs.uni-dortmund.de"))
- :maintainer (nil . "arjen@wiersma.org")
  :provided   (worklog)
  :required   ((("cl" cl)
 	       ("timezone" timezone)))

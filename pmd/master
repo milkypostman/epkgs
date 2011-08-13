@@ -3,8 +3,6 @@
  :created    "2004"
  :updated    "2002"
  :license    "GPL-2"
- :authors    (("John Russell" . "drjimmy42@yahoo.com"))
- :maintainer ("Nascif A. Abousalh-Neto" . "nascif@acm.org")
  :provided   (pmd)
  :required   ((("compile" compile)))
  :keywords   ("major-mode" "pmd")

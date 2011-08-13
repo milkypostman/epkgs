@@ -8,7 +8,7 @@
  :required   ((("cl" cl)
 	       ("easymenu" easymenu)))
  :keywords   ("xml")
- :homepage   "http://www.thaiopensource.com/nxml-mode/"
+ :homepage   "http://www.thaiopensource.com/nxml-mode"
  :wikipage   "http://www.emacswiki.org/NxmlMode"
  :commentary "\
 See nxml-rap.el for description of parsing strategy.")

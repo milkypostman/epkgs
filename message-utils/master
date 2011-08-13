@@ -1,7 +1,7 @@
 (:updated    "20000619"
  :license    "GPL-2"
- :authors    (("Holger Schauer" . "holger.schauer@gmx.de"))
- :maintainer ("Holger Schauer" . "holger.schauer@gmx.de")
+ :authors    (("Holger Schauer"))
+ :maintainer ("Holger Schauer")
  :provided   (message-utils)
  :required   ((("custom" custom)
 	       ("gnus" message)))

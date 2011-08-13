@@ -5,9 +5,8 @@
  :license    "GPL-3"
  :provided   (ibuffer-vc)
  :required   ((("cl" cl)
-	       ("ibuffer" ibuffer)
-	       ("vc" vc-hooks)
-	       (nil ibuf-ext)))
+	       ("ibuffer" ibuf-ext ibuffer)
+	       ("vc" vc-hooks)))
  :keywords   ("themes")
  :homepage   "https://github.com/purcell/ibuffer-vc"
  :commentary "\

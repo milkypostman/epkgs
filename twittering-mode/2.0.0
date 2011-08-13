@@ -3,7 +3,7 @@
  :updated    "2008"
  :license    "GPL-2"
  :authors    (("Y. Hayamizu" . "y.hayamizu@gmail.com")
-	      ("Tsuyoshi CHO" . "tsuyoshi.cho+develop@gmail.com")
+	      ("Tsuyoshi CHO")
 	      ("Alberto Garcia" . "agarcia@igalia.com"))
  :maintainer ("Y. Hayamizu" . "y.hayamizu@gmail.com")
  :provided   (ssl twittering-mode)

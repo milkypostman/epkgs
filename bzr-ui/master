@@ -1,7 +1,7 @@
 (:summary    "Utility functions to navigate a working copy of a bazaar repository"
  :created    "2009"
  :updated    "2009"
- :license    "GPL-3"
+ :license    "LGPL-v3"
  :authors    (("Mike Mattie"))
  :maintainer ("Mike Mattie")
  :provided   (bzr-ui)

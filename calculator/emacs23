@@ -9,7 +9,7 @@
 	       ("ehelp" ehelp)
 	       ("electric" electric)))
  :keywords   ("convenience" "tools")
- :homepage   "http://www.barzilay.org/"
+ :homepage   "http://www.barzilay.org"
  :wikipage   "http://www.emacswiki.org/SimpleCalculator"
  :commentary "\
 A calculator for Emacs.

@@ -2,8 +2,8 @@
  :created    "2004"
  :updated    "2004"
  :license    "GPL-2"
- :authors    (("ChunYe Wang" . "charleswang@peoplemail.com.cn"))
- :maintainer ("ChunYe Wang" . "charleswang@peoplemail.com.cn")
+ :authors    (("ChunYe Wang"))
+ :maintainer ("ChunYe Wang")
  :provided   (wcy-swbuff)
  :keywords   ("buffer" "convenience")
  :commentary "\

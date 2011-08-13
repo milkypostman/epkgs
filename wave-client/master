@@ -3,8 +3,6 @@
  :created    "2009"
  :updated    "2009"
  :license    "Apache-2.0"
- :authors    (("Andrew Hyatt" . "ahyatt@gmail.com"))
- :maintainer ("Andrew Hyatt" . "ahyatt@gmail.com")
  :provided   (wave-client wave-client-browser-channel wave-client-websocket wave-data wave-display wave-edit wave-list wave-update wave-util websocket)
  :required   ((("calc" calc)
 	       ("cl" cl)

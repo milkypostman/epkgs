@@ -2,7 +2,6 @@
  :repository (git . "https://github.com/jaalto/project--emacs-epackage.git")
  :created    "2011"
  :updated    "2011"
- :license    "GPL"
  :authors    (("Jari Aalto" . "jari.aalto@cante.net"))
  :maintainer ("Jari Aalto" . "jari.aalto@cante.net")
  :provided   (epackage)

@@ -3,8 +3,8 @@
  :created    "2011"
  :updated    "2011"
  :license    "GPL-3"
- :authors    (("U-TreeFrog\\lieutar" . "lieutar@treefrog"))
- :maintainer ("U-TreeFrog\\lieutar" . "lieutar@treefrog")
+ :authors    (("U-TreeFrog\\lieutar"))
+ :maintainer ("U-TreeFrog\\lieutar")
  :provided   (cygstart)
  :keywords   ("dired" "explorer" "mouse")
  :homepage   "https://github.com/lieutar/cygstart.el"

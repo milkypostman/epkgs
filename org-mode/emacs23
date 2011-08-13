@@ -3,8 +3,6 @@
  :created    "2004"
  :updated    "2011"
  :license    "GPL-3"
- :authors    (("Carsten Dominik" . "carsten@orgmode.org"))
- :maintainer ("Carsten Dominik" . "carsten@orgmode.org")
  :provided   (org org-agenda org-archive org-ascii org-attach org-bbdb org-bibtex org-clock org-colview org-compat org-crypt org-datetree org-docbook org-exp org-exp-blocks org-export-latex org-faces org-feed org-footnote org-freemind org-gnus org-habit org-html org-icalendar org-id org-indent org-info org-infojs org-inlinetask org-install org-irc org-jsinfo org-latex org-list org-mac-message org-macs org-mew org-mhe org-mobile org-mouse org-plot org-protocol org-publish org-remember org-rmail org-src org-table org-timer org-vm org-w3m org-wl org-xoxo)
  :required   ((("bbdb" bbdb bbdb-com)
 	       ("calendar" cal-iso calendar diary-lib holidays solar)

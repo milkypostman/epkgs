@@ -2,8 +2,8 @@
  :created    "1997"
  :updated    "2011"
  :license    "GPL-3"
- :authors    (("Gary D. Foster" . "gary.foster@corp.sun.com"))
- :maintainer ("Gary D. Foster" . "gary.foster@corp.sun.com")
+ :authors    (("Gary D. Foster"))
+ :maintainer ("Gary D. Foster")
  :provided   (scroll-all)
  :keywords   ("brief" "crisp" "lock" "scroll")
  :wikipage   "http://www.emacswiki.org/ScrollAllMode"

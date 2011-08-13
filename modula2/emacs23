@@ -1,7 +1,7 @@
 (:summary    "Modula-2 editing support package"
  :license    "public-domain"
- :authors    (("Michael Schmidt" . "michael@pbinfo.uucp")
-	      ("Tom Perrine" . "perrin@logicon.arpa"))
+ :authors    (("Michael Schmidt")
+	      ("Tom Perrine"))
  :maintainer ("FSF")
  :provided   (modula2)
  :keywords   ("languages")

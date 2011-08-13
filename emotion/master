@@ -2,7 +2,7 @@
  :repository (git . "git://github.com/rlph/emotion.git")
  :created    "20110712"
  :updated    "2011"
- :license    "GPL-3"
+ :license    "GPL3"
  :authors    (("Rafael Sánchez-Aguilú" . "rafael@cornerdimension.com"))
  :maintainer ("Rafael Sánchez-Aguilú" . "rafael@cornerdimension.com")
  :provided   (emotion)

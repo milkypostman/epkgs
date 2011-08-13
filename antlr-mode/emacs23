@@ -2,14 +2,12 @@
  :created    "1999"
  :updated    "2011"
  :license    "GPL-3"
- :authors    ((nil . "christoph.wedler@sap.com"))
- :maintainer (nil . "christoph.wedler@sap.com")
  :provided   (antlr-mode)
  :required   ((("cc-mode" cc-mode)
 	       ("cl" cl)
 	       ("easymenu" easymenu)))
  :keywords   ("antlr" "code generator" "languages")
- :homepage   "http://antlr-mode.sourceforge.net/"
+ :homepage   "http://antlr-mode.sourceforge.net"
  :wikipage   "http://www.emacswiki.org/AntlrMode"
  :commentary "\
 The Emacs package ANTLR-Mode provides: syntax highlighting for ANTLR grammar

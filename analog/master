@@ -2,8 +2,8 @@
  :created    "2000"
  :updated    "20050816"
  :license    "GPL-2"
- :authors    (("Matthew P. Hodges" . "mphodges@member.fsf.org"))
- :maintainer ("Matthew P. Hodges" . "mphodges@member.fsf.org")
+ :authors    (("Matthew P. Hodges"))
+ :maintainer ("Matthew P. Hodges")
  :provided   (analog)
  :required   ((("dired" dired)
 	       ("emacs-core" pp)))

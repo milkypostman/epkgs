@@ -2,8 +2,6 @@
  :repository (git . "https://github.com/snim2/posterous.el.git")
  :created    "20100514"
  :license    "GPL-2"
- :authors    ((nil . "sarah mount snim2@snim2.org"))
- :maintainer (nil . "sarah mount snim2@snim2.org")
  :provided   (posterous)
  :required   ((("url" url)
 	       ("xml" xml)))

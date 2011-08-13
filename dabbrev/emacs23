@@ -4,7 +4,7 @@
  :license    "GPL-3"
  :authors    (("Don Morrison")
 	      ("Lars Lindberg"))
- :maintainer ("Lars Lindberg" . "lars.lindberg@sypro.cap.se")
+ :maintainer ("Lars Lindberg")
  :provided   (dabbrev)
  :keywords   ("abbrev" "completion" "convenience" "expand")
  :commentary "\

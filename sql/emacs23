@@ -9,7 +9,6 @@
 	       ("custom" custom)
 	       ("regexp-opt" regexp-opt)))
  :keywords   ("comm" "languages" "processes")
- :homepage   "http://www.emacswiki.org/SqlMode"
  :wikipage   "http://www.emacswiki.org/SqlMode"
  :commentary "\
 Please send bug reports and bug fixes to the mailing list at

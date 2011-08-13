@@ -1,5 +1,4 @@
 (:summary    "Locate Emacs Lisp file shadowings"
- :repository (git . "https://github.com/mooz/shadow.el.git")
  :created    "1995"
  :updated    "2011"
  :license    "GPL-3"
@@ -7,7 +6,6 @@
  :maintainer ("Terry Jones" . "terry@santafe.edu")
  :provided   (shadow)
  :keywords   ("lisp")
- :homepage   "https://github.com/mooz/shadow.el"
  :commentary "\
 The functions in this file detect (`load-path-shadows-find')
 and display (`list-load-path-shadows') potential load-path
