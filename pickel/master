@@ -8,7 +8,7 @@
  :provided   (pickel)
  :required   ((("cl" cl)))
  :keywords   ("object" "serialization")
- :homepage   "http://github.com/tlh/pickel.el"
+ :homepage   "https://github.com/tlh/pickel.el"
  :commentary "\
 pickel is an elisp object serialization package.  It can serialize
  and deserialize most elisp objects, including any combination of

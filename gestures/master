@@ -7,7 +7,6 @@
  :maintainer ("David O'Toole" . "dto@gnu.org")
  :provided   (gestures)
  :required   ((("strokes" strokes)))
- :homepage   "https://github.com/dto/emacs-gestures"
  :commentary "\
 Here is my preliminary configuration and stroke library for using
 Emacs with a touchscreen. See strokes.el in Emacs for details on

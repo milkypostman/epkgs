@@ -8,5 +8,4 @@
  :provided   (cell grid)
  :required   ((("cl" cl)))
  :keywords   ("hypermedia" "lisp" "tools")
- :homepage   "https://github.com/dto/cell-mode"
  :wikipage   "http://www.emacswiki.org/CellMode")

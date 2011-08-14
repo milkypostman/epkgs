@@ -1,7 +1,0 @@
-(:created    "2008"
- :updated    "2008"
- :license    "GPL-2"
- :provided   (xlsl-mode)
- :required   ((("newcomment" newcomment)))
- :keywords   ("linden scripting language" "lsl" "second life")
- :homepage   "http://xahlee.org/sl/ls-emacs.html")

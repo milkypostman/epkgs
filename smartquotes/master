@@ -1,0 +1,10 @@
+(:summary    "Insertion of unicode quotes in text documents"
+ :created    "20070826"
+ :updated    "2007"
+ :license    "GPL-2"
+ :authors    (("Martin Blais" . "blais@furius.ca"))
+ :maintainer ("Martin Blais" . "blais@furius.ca")
+ :provided   (smartquotes)
+ :keywords   ("characters" "unicode")
+ :homepage   "http://furius.ca/pubcode"
+ :wikipage   "http://www.emacswiki.org/SmartQuotes")

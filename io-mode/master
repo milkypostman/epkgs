@@ -12,4 +12,4 @@
 	       ("hideshow" hideshow)
 	       ("newcomment" newcomment)))
  :keywords   ("io" "languages")
- :homepage   "http://github.com/superbobry/io-mode")
+ :homepage   "https://github.com/superbobry/io-mode")

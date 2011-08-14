@@ -5,5 +5,4 @@
  :authors    (("kitokitoki" . "morihenotegami@gmail.com"))
  :maintainer ("kitokitoki" . "morihenotegami@gmail.com")
  :provided   (like-pull-hidden-other)
- :keywords   ("convenience")
- :homepage   "https://github.com/kitokitoki/like-pull-hidden-other-el")
+ :keywords   ("convenience"))

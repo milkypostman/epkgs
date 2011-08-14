@@ -8,4 +8,4 @@
  :required   ((("anything" anything)
 	       ("cl" cl)))
  :keywords   ("cellphone" "japanese")
- :homepage   "http://github.com/imakado/emoji")
+ :homepage   "https://github.com/imakado/emoji")

@@ -8,7 +8,6 @@
  :provided   (eon)
  :required   ((("cl" cl)))
  :keywords   ("oop")
- :homepage   "https://github.com/dto/eon"
  :wikipage   "http://www.emacswiki.org/EonObjects"
  :commentary "\
 FIXME")

@@ -8,7 +8,6 @@
  :required   ((("cl" cl)
 	       ("org-mode" org)))
  :keywords   ("files" "tools")
- :homepage   "https://github.com/dto/emacs-impress"
  :commentary "\
 DONE groups
 DONE paths

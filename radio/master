@@ -8,7 +8,6 @@
  :provided   (radio)
  :required   ((("cl" cl)))
  :keywords   ("convenience" "hypermedia")
- :homepage   "https://github.com/dto/radio"
  :commentary "\
 Radio-mode lets you add plaintext topic tags to your code.
 

@@ -6,7 +6,6 @@
  :maintainer ("kitokitoki" . "morihenotegami@gmail.com")
  :provided   (source-highlight)
  :keywords   ("convenience")
- :homepage   "https://github.com/kitokitoki/source-highlight-el"
  :commentary "\
 GNU source-highlight を emacs から利用するための拡張です。
 

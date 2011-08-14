@@ -7,7 +7,6 @@
  :provided   (anything-c-shell-command)
  :required   ((("anything" anything)))
  :keywords   ("anything")
- :homepage   "https://github.com/kitokitoki/anything-c-shell-command"
  :commentary "\
 This package use `anything' as a interface to execute shell command.
 

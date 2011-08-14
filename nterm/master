@@ -1,6 +1,5 @@
-(:summary    "New TERMinal emulator"
- :created    "20091001"
- :updated    "2009"
+(:created    "20091001"
+ :updated    "2010"
  :authors    (("Ivan Kanis" . "look-for-me@your-favorite-search.engine"))
  :maintainer ("Ivan Kanis" . "look-for-me@your-favorite-search.engine")
  :provided   (nterm nterm-gr)
@@ -9,12 +8,12 @@
  :homepage   "http://kanis.fr/nterm.html"
  :wikipage   "http://www.emacswiki.org/NewTerminal"
  :commentary "\
-Copyright is a the bottome of this file
+Copyright is at the bottom of this file
 
 Disclaimer: nterm is *alpha* software. It will blow up. Don't blame
 me, I warned you! A good terminal emulator architecture has display
 memory and a table of functions for each character coming in. I
-have been int the terminal emulation business for seven years so I
+have been in the terminal emulation business for seven years so I
 ought to know.
 
 Nterm is meant to be a full vt100 compatible terminal emulator. It
@@ -59,9 +58,6 @@ memory.
 The recorder takes a trace of characters received by the
 terminal. Someone can easily reproduce a bug by replaying the trace
 both on xterm and nterm.
-
-It's not complete yet but it passes the first three tests of
-vttest. I will get back to it when I have time.
 
 The latest version is at http://kanis.fr/hg/lisp/ivan/nterm.el
 

@@ -4,7 +4,7 @@
  :required   ((("cl" cl)
 	       ("gnus" time-date)
 	       (nil gnugo-xpms)))
- :homepage   "http://www.gnuvola.org/software/j/gnugo"
+ :homepage   "http://www.gnuvola.org/software/personal-elisp/dist/lisp/"
  :commentary "\
 Playing
 -------

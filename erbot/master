@@ -1,7 +1,8 @@
 (:summary    "Another robot for ERC"
+ :repository (cvs . ":pserver:anonymous@cvs.savannah.nongnu.org:/sources/erbot ")
  :created    "2002"
- :updated    "20060824"
- :license    "GPL-2"
+ :updated    "20090926"
+ :license    "GPL-3"
  :authors    (("David Edmunston" . "dme@dme.org"))
  :maintainer ("Deepak Goel" . "deego@gnufans.org")
  :provided   (erball erbbdb erbc erbc2 erbc3 erbc4 erbc5 erbc6 erbcompat erbcountry erbcspecial erbdata erbedit erbeng erbforget erbim erbjavadoc erbkarma erblisp erblog erbmerge erbmsg erbot erbot-lispy erbpnet erbrss erbtrain erbtranslate erbunlisp erburl erbutils erbwiki)
@@ -29,7 +30,9 @@
 	       ("units" units)
 	       ("url" url)
 	       ("wtf" wtf)
-	       (nil bash-quotes erc-nickserv lispy)))
+	       (nil bash-quotes lispy))
+	      (("erc" erc-services)
+	       (nil erc-nickserv)))
  :keywords   ("bot" "chat" "erc" "irc" "robot")
- :homepage   "http://mwolson.org/projects"
- :wikipage   "http://www.emacswiki.org/EmacsRobots")
+ :homepage   "https://savannah.nongnu.org/projects/erbot/"
+ :wikipage   "http://www.emacswiki.org/ErBot")

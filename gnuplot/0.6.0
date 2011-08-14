@@ -15,7 +15,7 @@
 	       ("widget" wid-edit widget)
 	       (nil toolbar xpm)))
  :keywords   ("gnuplot" "plotting")
- :homepage   "http://cars9.uchicago.edu/~ravel/software/gnuplot-mode.html"
+ :homepage   "http://xafs.org/BruceRavel/GnuplotMode"
  :wikipage   "http://www.emacswiki.org/GnuPlot"
  :commentary "\
 This is a major mode for composing gnuplot scripts and displaying

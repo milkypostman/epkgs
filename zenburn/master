@@ -7,4 +7,4 @@
  :maintainer ("Daniel Brockman" . "daniel@brockman.se")
  :provided   (zenburn)
  :required   ((("color-theme" color-theme)))
- :homepage   "http://github.com/dbrock/zenburn-el")
+ :homepage   "https://github.com/dbrock/zenburn-el")
