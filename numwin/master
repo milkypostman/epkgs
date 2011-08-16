@@ -8,26 +8,31 @@
  :keywords   ("convenience")
  :homepage   "http://gopher.ruricolist.com:70/lisp"
  :commentary "\
-Rather than take the long way around with `other-window', I found
-myself reaching for the mouse whenever I had more than three
-windows at a time. I tried some libraries that had the right
-idea--switching windows by number--but did it wrong, indexing each
-window with a number bound to a key sequence. The right way to do
-it is:
+Switching windows in Emacs, without resorting to the mouse, is
+awkward because you have to follow the cyclic ordering of windows -
+that is, go in circles. There are some libraries that make life
+easier by indexing each window by a number bound to a key sequence.
+But they only fix window switching, whereas the real problem is
+more general.
 
- Show numbers only when it make sense. When switching windows, for
- example, only number for more than two.
+None of the things we do with windows - deleting, splitting
+(vertically and horizontally), \"zooming\" (with
+`delete-other-windows'), growing, shrinking, and swapping windows,
+and displaying buffers and files in them - none of these things
+should require us to switch windows at all.
 
- Instead of inventing new bindings, remap old ones. Selecting
- windows should use `C-x o' (or whatever `other-window' was bound
- to).
+Numwin fixes all of these operations by remapping them to new
+commands, and only intrudes itself when numbering makes sense. When
+there are only two windows, for example, `numwin-other' just calls
+`other-window'.
 
- Put numbers at the extreme left of the mode line (where they are
- always visible).
-
- Always number the selected window 0, so you know where you are.
-
-Then I took the same idea and applied it to everything to do with
-windows: deleting, splitting (vertically and horizontally),
-\"zooming\" (with `delete-other-windows'), growing, shrinking, and
-swapping windows, and displaying buffers and files in them.")
+This leads to a subtle, but important, consideration. Because
+Numwin only displays numbers when needed, it can re-number the
+windows in cyclic order every time. This sounds confusing, but it's
+a good thing, because it means the number of the selected window
+(or the active minibuffer) is always 0. And since you know for sure
+the selected window is 0, you can rely on muscle memory - no
+glancing at the screen - which keeps the affordances of Numwin the
+same as those of stock Emacs, modulo one extra keystroke (which
+doesn't even have to be 0: it can be SPC or RET, anything but a
+number).")

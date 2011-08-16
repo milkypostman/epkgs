@@ -1,5 +1,5 @@
-(:created    "2006"
- :updated    "2006"
+(:created    "1999"
+ :updated    "2008"
  :provided   (gnugo)
  :required   ((("cl" cl)
 	       ("gnus" time-date)
