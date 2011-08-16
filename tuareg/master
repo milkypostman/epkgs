@@ -1,13 +1,37 @@
-(:summary    "Caml mode for (X)Emacs"
+(:summary    "OCaml mode for Emacs"
+ :repository (svn . "svn://svn.forge.ocamlcore.org/svn/tuareg")
+ :created    "19970108"
+ :updated    "2006"
  :license    "GPL-2"
- :provided   (ocamlspot sym-lock tuareg)
+ :authors    (("Albert Cohen" . "albert.cohen@inria.fr")
+	      ("Sam Steingold" . "sds@gnu.org")
+	      ("Christophe Troestler" . "christophe.troestler@umons.ac.be")
+	      ("Till Varoquaux" . "till@pps.jussieu.fr")
+	      ("Sean McLaughlin" . "seanmcl@gmail.com"))
+ :maintainer ("Albert Cohen" . "albert.cohen@inria.fr")
+ :provided   (tuareg tuareg2)
  :required   ((("cl" cl)
 	       ("comint" comint)
 	       ("compile" compile)
 	       ("custom" custom)
 	       ("easymenu" easymenu)
-	       ("emacs-core" font-lock))
+	       ("emacs-core" derived)
+	       ("shell" shell))
 	      (("caml" caml-help caml-types)
 	       ("cedet" speedbar)))
+ :keywords   ("languages" "ocaml")
  :homepage   "http://tuareg.forge.ocamlcore.org"
- :wikipage   "http://www.emacswiki.org/TuaregMode")
+ :wikipage   "http://www.emacswiki.org/TuaregMode"
+ :commentary "\
+Description:
+Tuareg helps editing OCaml code, to highlight important parts of
+the code, to run an OCaml toplevel, and to run the OCaml debugger
+within Emacs.
+
+Installation:
+If you have permissions to the local `site-lisp' directory, you
+only have to copy `tuareg.el' and `ocamldebug.el' Otherwise, copy
+`tuareg.el' and `ocamldebug.el' to a local directory and add the
+following line to your `.emacs'
+
+(add-to-list 'load-path \"DIR\")")
