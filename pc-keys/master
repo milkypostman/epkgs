@@ -5,7 +5,7 @@
  :authors    (("Kai Grossjohann" . "kai.grossjohann@cs.uni-dortmund.de"))
  :maintainer ("Kai Grossjohann" . "kai.grossjohann@cs.uni-dortmund.de")
  :provided   (pc-keys)
- :keywords   ("convenience")
+ :keywords   (convenience)
  :commentary "\
 Some useful bindings for Home and End keys: Hit the key once to go
 to the beginning/end of a line, hit it twice in a row to go to the

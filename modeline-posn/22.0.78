@@ -5,7 +5,7 @@
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")
  :provided   (modeline-posn)
- :keywords   ("column" "mode-line" "region")
+ :keywords   (column mode-line region)
  :homepage   "http://www.emacswiki.org/ModeLinePosition"
  :wikipage   "http://www.emacswiki.org/ModeLinePosition"
  :commentary "\

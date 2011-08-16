@@ -6,7 +6,7 @@
  :provided   (nqp-mode yisp-basis yisp-helpers yisp-input-method yisp-pin yisp-scp yisp-stock yisp-third-party yisp-utils yisp-visit-track)
  :required   ((("emacs-core" quail)
 	       ("widget" widget)))
- :keywords   ("convenience")
+ :keywords   (convenience)
  :homepage   "http://code.google.com/p/yisp"
  :commentary "\
 (add-to-list 'load-path \"/home/duzy/elisp/yisp\")

@@ -7,7 +7,7 @@
  :provided   (ls-lisp+)
  :required   ((("files+" files+)
 	       ("ls-lisp" ls-lisp)))
- :keywords   ("dired" "extensions" "files" "internal" "local")
+ :keywords   (dired extensions files internal local)
  :commentary "\
 Enhancements of standard library `ls-lisp.el'.
 

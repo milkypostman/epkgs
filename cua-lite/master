@@ -5,7 +5,7 @@
  :authors    (("Joe Casadonte" . "emacs@northbound-train.com"))
  :maintainer ("Joe Casadonte" . "emacs@northbound-train.com")
  :provided   (cua-lite)
- :keywords   ("convenience" "cua" "emulations")
+ :keywords   (convenience cua emulations)
  :homepage   "http://www.northbound-train.com"
  :wikipage   "http://www.emacswiki.org/CuaLightMode"
  :commentary "\

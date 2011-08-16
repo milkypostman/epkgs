@@ -6,7 +6,7 @@
  :maintainer ("Drew Adams")
  :provided   (wid-edit+)
  :required   ((("widget" wid-edit)))
- :keywords   ("color" "widget")
+ :keywords   (color widget)
  :commentary "\
 Extensions to standard library `wid-edit.el'.
 

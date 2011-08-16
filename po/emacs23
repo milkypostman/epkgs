@@ -9,7 +9,7 @@
  :provided   (po)
  :required   (nil
 	      (("emacs-core" code-pages)))
- :keywords   ("files")
+ :keywords   (files)
  :wikipage   "http://www.emacswiki.org/PoMode"
  :commentary "\
 This package makes sure visiting PO files decodes them correctly,

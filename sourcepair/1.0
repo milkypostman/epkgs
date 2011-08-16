@@ -4,7 +4,7 @@
  :license    "GPL-2"
  :authors    (("Mohamed Hendawi" . "moedev@hendawi.com"))
  :maintainer ("Mohamed Hendawi" . "moedev@hendawi.com")
- :keywords   ("c" "languages" "oop")
+ :keywords   (c languages oop)
  :homepage   "http://www.hendawi.com"
  :commentary "\
 This Emacs lisp file provides the function \"sourcepair-load\" which will load

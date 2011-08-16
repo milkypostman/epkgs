@@ -5,7 +5,7 @@
  :authors    (("Hovav Shacham" . "hovav@cs.stanford.edu"))
  :maintainer ("Hovav Shacham" . "hovav@cs.stanford.edu")
  :provided   (windmove)
- :keywords   ("convenience" "movement" "window")
+ :keywords   (convenience movement window)
  :wikipage   "http://www.emacswiki.org/WindMove"
  :commentary "\
 This package defines a set of routines, windmove-{left,up,right,

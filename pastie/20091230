@@ -5,7 +5,7 @@
  :maintainer ("Christian Neukirchen")
  :provided   (pastie)
  :required   ((("cl" cl)))
- :keywords   ("pastie" "webservices")
+ :keywords   (pastie webservices)
  :homepage   "http://www.emacswiki.org/Pastie"
  :wikipage   "http://www.emacswiki.org/Pastie"
  :commentary "\

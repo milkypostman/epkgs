@@ -3,7 +3,7 @@
  :authors    (("Jeremy Cowgar" . "jeremy@cowgar.com"))
  :maintainer ("Jeremy Cowgar" . "jeremy@cowgar.com")
  :provided   (task-timer)
- :keywords   ("task-timer" "timer")
+ :keywords   (task-timer timer)
  :homepage   "http://www.emacswiki.org/TaskTimer"
  :wikipage   "http://www.emacswiki.org/TaskTimer"
  :commentary "\

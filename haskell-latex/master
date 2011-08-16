@@ -6,7 +6,7 @@
  :maintainer ("Dave Love" . "fx@gnu.org")
  :provided   (haskell-latex)
  :required   ((("multi-mode" multi-mode)))
- :keywords   ("languages" "wp")
+ :keywords   (languages wp)
  :homepage   "http://www.loveshack.ukfsn.org/emacs"
  :commentary "\
 This provides a mode for editing literate Haskell with the LaTeX

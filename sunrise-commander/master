@@ -22,7 +22,7 @@
 	       ("recentf" recentf)
 	       ("term" term)
 	       ("tree-widget" tree-widget)))
- :keywords   ("dired" "files" "midnight commander" "norton" "orthodox")
+ :keywords   (dired files midnight\ commander norton orthodox)
  :homepage   "https://github.com/escherdragon/sunrise-commander"
  :commentary "\
 Here is another two-pane mc emulation layer for Emacs. It's built on top of

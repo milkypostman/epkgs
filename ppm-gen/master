@@ -8,7 +8,7 @@
  :required   ((("cedet" eieio eieio-base eieio-comp)
 	       ("cl" cl)
 	       ("image-mode" image-mode)))
- :keywords   ("bitmap" "draw" "generator" "ppm" "ray tracing")
+ :keywords   (bitmap draw generator ppm ray\ tracing)
  :homepage   "http://www.emacswiki.org/PpmGen"
  :wikipage   "http://www.emacswiki.org/PpmGen"
  :commentary "\

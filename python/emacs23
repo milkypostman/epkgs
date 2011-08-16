@@ -9,7 +9,7 @@
 	       ("comint" comint)
 	       ("compile" compile)
 	       ("hippie-exp" hippie-exp)))
- :keywords   ("languages")
+ :keywords   (languages)
  :commentary "\
 Major mode for editing Python, with support for inferior processes.
 

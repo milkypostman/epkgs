@@ -4,7 +4,7 @@
  :authors    (("Michael John Downes" . "mjd@ams.org"))
  :maintainer ("Michael John Downes" . "mjd@ams.org")
  :provided   (keydef)
- :keywords   ("convenience" "customization" "keyboard" "keys" "lisp")
+ :keywords   (convenience customization keyboard keys lisp)
  :commentary "\
 The macro keydef provides a simplified interface to define-key that
 smoothly handles a number of common complications.

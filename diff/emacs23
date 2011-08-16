@@ -5,7 +5,7 @@
  :authors    (("Frank Bresz"))
  :maintainer ("FSF")
  :provided   (diff)
- :keywords   ("tools" "unix")
+ :keywords   (tools unix)
  :wikipage   "http://www.emacswiki.org/DiffMode"
  :commentary "\
 This package helps you explore differences between files, using the

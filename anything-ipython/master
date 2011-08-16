@@ -6,7 +6,7 @@
  :provided   (anything-ipython)
  :required   ((("cl" cl)
 	       (nil ipython)))
- :keywords   ("ipython" "python")
+ :keywords   (ipython python)
  :homepage   "http://mercurial.intuxication.org/hg/anythingipython"
  :commentary "\
 ==========

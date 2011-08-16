@@ -5,7 +5,7 @@
  :authors    (("rubikitch" . "rubikitch@ruby-lang.org"))
  :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
  :provided   (d-insert-import d-insert-import-data)
- :keywords   ("convenience" "d" "import")
+ :keywords   (convenience d import)
  :commentary "\
 `d-insert-import' prepends appropriate import statement for the
 function at point.")

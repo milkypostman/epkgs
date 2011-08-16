@@ -10,7 +10,7 @@
 	       ("oauth" oauth)
 	       ("url" url url-http)
 	       ("xml" xml)))
- :keywords   ("twitter")
+ :keywords   (twitter)
  :homepage   "http://git.busydoingnothing.co.uk/cgit.cgi/twitel.git"
  :commentary "\
 A Twitter client for emacs that can view your friends timeline and

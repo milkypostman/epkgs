@@ -8,7 +8,7 @@
  :provided   (anything-books)
  :required   ((("cl" cl)
 	       ("deferred" concurrent)))
- :keywords   ("anything" "convenience")
+ :keywords   (anything convenience)
  :homepage   "https://github.com/kiwanami/emacs-anything-books"
  :commentary "\
 This program collects PDF files in your book directory and show

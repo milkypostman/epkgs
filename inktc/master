@@ -6,7 +6,7 @@
  :maintainer (nil . "friedman@splode.com")
  :provided   (inktc)
  :required   ((("comint" comint)))
- :keywords   ("communication" "extensions")
+ :keywords   (communication extensions)
  :homepage   "ftp://ftp.splode.com/pub/users/friedman/emacs-lisp"
  :commentary "\
 inktc is a chat system written by Marco Nicosia <marco@inktomi.com>.

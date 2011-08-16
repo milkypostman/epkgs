@@ -8,7 +8,7 @@
  :provided   (epackage)
  :required   ((("finder" finder)
 	       ("whitespace" whitespace)))
- :keywords   ("tools")
+ :keywords   (tools)
  :homepage   "https://github.com/jaalto/project--emacs-epackage"
  :wikipage   "http://www.emacswiki.org/Epackage"
  :commentary "\

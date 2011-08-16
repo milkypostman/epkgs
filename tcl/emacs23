@@ -11,7 +11,7 @@
 	       ("dabbrev" dabbrev)
 	       ("imenu" imenu)
 	       ("outline" outline)))
- :keywords   ("languages" "modes" "tcl")
+ :keywords   (languages modes tcl)
  :wikipage   "http://www.emacswiki.org/TclMode"
  :commentary "\
 CUSTOMIZATION NOTES:

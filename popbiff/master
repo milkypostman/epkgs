@@ -7,4 +7,4 @@
  :provided   (popbiff)
  :required   ((("ange-ftp" ange-ftp)
 	       ("cl" cl)))
- :keywords   ("mail" "tools"))
+ :keywords   (mail tools))

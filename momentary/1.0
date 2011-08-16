@@ -5,7 +5,7 @@
  :authors    (("John Wiegley" . "johnw@gnu.org"))
  :maintainer ("John Wiegley" . "johnw@gnu.org")
  :provided   (momentary)
- :keywords   ("convenience")
+ :keywords   (convenience)
  :commentary "\
 The main interface function is `with-output-to-momentary-buffer',
 which has the same syntax and behavior as

@@ -6,7 +6,7 @@
  :maintainer ("Tom Breton" . "tehom@localhost")
  :provided   (tehom-func-args)
  :required   (((nil local-vars)))
- :keywords   ("extensions")
+ :keywords   (extensions)
  :homepage   "http://panix.com/~tehom"
  :commentary "\
 Known bugs: Because of the way it works, it can fail on functions

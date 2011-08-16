@@ -8,7 +8,7 @@
 	       ("cl" cl)
 	       ("emacs-core" menu-bar)
 	       ("re-builder" re-builder)))
- :keywords   ("convenience" "emulations" "matching" "tools" "unix" "wp")
+ :keywords   (convenience emulations matching tools unix wp)
  :homepage   "https://github.com/k-talo/alien-search.el"
  :commentary "\
 CAUTION

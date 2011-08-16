@@ -11,6 +11,6 @@
 	       ("thingatpt" thingatpt)
 	       ("url" url)
 	       ("xml" xml)))
- :keywords   ("comm" "hypermedia")
+ :keywords   (comm hypermedia)
  :homepage   "http://wjsullivan.net/delicious-el.html"
  :wikipage   "http://www.emacswiki.org/DeliciousEl")

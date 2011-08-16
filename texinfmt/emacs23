@@ -6,4 +6,4 @@
  :provided   (texinfmt)
  :required   ((("texinfo" texinfo)
 	       ("texnfo-upd" texnfo-upd)))
- :keywords   ("docs" "maint" "tex"))
+ :keywords   (docs maint tex))

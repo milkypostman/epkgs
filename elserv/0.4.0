@@ -15,7 +15,7 @@
 	       ("mhc" mhc mhc-face)
 	       ("semi" mime-view)
 	       ("w3m" w3m)))
- :keywords   ("http")
+ :keywords   (http)
  :homepage   "http://elserv.sourceforge.net"
  :wikipage   "http://www.emacswiki.org/ElServ"
  :commentary "\

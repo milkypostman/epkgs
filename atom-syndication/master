@@ -5,7 +5,7 @@
  :license    "GPL-3"
  :provided   (atom-syndication)
  :required   ((("cl" cl)))
- :keywords   ("hypermedia" "standards")
+ :keywords   (hypermedia standards)
  :homepage   "https://github.com/dmj/atom-syndication"
  :commentary "\
 1 About

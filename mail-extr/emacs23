@@ -5,7 +5,7 @@
  :authors    (("Joe Wells" . "jbw@cs.bu.edu"))
  :maintainer ("FSF")
  :provided   (mail-extr)
- :keywords   ("mail")
+ :keywords   (mail)
  :commentary "\
 The entry point of this code is
 

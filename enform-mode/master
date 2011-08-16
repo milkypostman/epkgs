@@ -8,7 +8,7 @@
  :required   ((("imenu" imenu)
 	       ("which-func" which-func)
 	       (nil enform-indent)))
- :keywords   ("enform" "extensions" "guardian" "languages" "nsk" "tandem")
+ :keywords   (enform extensions guardian languages nsk tandem)
  :homepage   "http://www.emacswiki.org/EnformMode"
  :wikipage   "http://www.emacswiki.org/EnformMode"
  :commentary "\

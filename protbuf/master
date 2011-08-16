@@ -5,7 +5,7 @@
  :authors    (("Noah Friedman" . "friedman@splode.com"))
  :maintainer (nil . "friedman@splode.com")
  :provided   (protbuf)
- :keywords   ("extensions")
+ :keywords   (extensions)
  :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
  :wikipage   "http://www.emacswiki.org/ProtBuf"
  :commentary "\

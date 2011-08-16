@@ -5,7 +5,7 @@
  :authors    (("Matsushita Akihisa" . "akihisa@mail.ne.jp"))
  :maintainer ("Matsushita Akihisa" . "akihisa@mail.ne.jp")
  :provided   (gresreg)
- :keywords   ("isearch")
+ :keywords   (isearch)
  :homepage   "http://www.bookshelf.jp"
  :commentary "\
 The latest version of this program can be downloaded from

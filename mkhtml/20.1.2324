@@ -11,7 +11,7 @@
 	       ("easymenu" easymenu)
 	       ("info" info))
 	      (("info+" info+)))
- :keywords   ("hypermedia" "info" "tools" "www")
+ :keywords   (hypermedia info tools www)
  :commentary "\
 Extensions to `htmlize.el' (Hrvoje Niksic, hniksic@xemacs.org).
 

@@ -8,7 +8,7 @@
  :required   ((("cc-mode" cc-mode)
 	       ("cl" cl))
 	      (("imenu+" imenu+)))
- :keywords   ("c" "programming")
+ :keywords   (c programming)
  :commentary "\
 Extensions to `c-mode.el' & `cc-mode.el'.
 

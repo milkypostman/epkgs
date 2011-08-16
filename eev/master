@@ -10,7 +10,7 @@
 	       ("outline" outline)
 	       ("ps-mode" ps-mode)
 	       (nil htmlize)))
- :keywords   ("e-scripts" "help" "hyperlinks" "hypertext" "processes" "shell" "tex")
+ :keywords   (e-scripts help hyperlinks hypertext processes shell tex)
  :homepage   "http://angg.twu.net/emacs.html"
  :wikipage   "http://www.emacswiki.org/EevMode"
  :commentary "\

@@ -6,7 +6,7 @@
  :maintainer ("Daniel Pfeiffer" . "occitan@esperanto.org")
  :provided   (executable)
  :required   ((("compile" compile)))
- :keywords   ("languages" "unix")
+ :keywords   (languages unix)
  :commentary "\
 executable.el is used by certain major modes to insert a suitable
 #! line at the beginning of the file, if the file does not already

@@ -8,7 +8,7 @@
  :required   ((("cc-mode" cc-mode)
 	       ("emacs-core" font-lock)
 	       ("regexp-opt" regexp-opt)))
- :keywords   ("ecmascript" "javascript" "languages")
+ :keywords   (ecmascript javascript languages)
  :homepage   "http://www.emacswiki.org/ECMAScriptMode"
  :wikipage   "http://www.emacswiki.org/ECMAScriptMode"
  :commentary "\

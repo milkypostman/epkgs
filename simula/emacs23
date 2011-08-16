@@ -6,7 +6,7 @@
  :maintainer (nil . "simula-mode@ifi.uio.no")
  :adapted-by ("ESR")
  :provided   (simula)
- :keywords   ("languages")
+ :keywords   (languages)
  :commentary "\
 A major mode for editing the Simula language.  It knows about Simula
 syntax and standard indentation commands.  It also provides convenient

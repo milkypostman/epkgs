@@ -11,7 +11,7 @@
 	       ("easymenu" easymenu)
 	       ("emacs-core" overlay)
 	       ("regexp-opt" regexp-opt)))
- :keywords   ("languages")
+ :keywords   (languages)
  :commentary "\
 This mode borrows heavily from the Pascal-mode and the cc-mode of Emacs
 

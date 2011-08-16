@@ -5,7 +5,7 @@
  :authors    (("Rick Bielawski" . "rbielaws@i1.net"))
  :maintainer ("Rick Bielawski" . "rbielaws@i1.net")
  :provided   (popup-ruler)
- :keywords   ("convenience" "tools")
+ :keywords   (convenience tools)
  :homepage   "http://www.emacswiki.org/PopupRuler"
  :wikipage   "http://www.emacswiki.org/PopupRuler"
  :commentary "\

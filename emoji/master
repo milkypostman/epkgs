@@ -7,5 +7,5 @@
  :provided   (emoji)
  :required   ((("anything" anything)
 	       ("cl" cl)))
- :keywords   ("cellphone" "japanese")
+ :keywords   (cellphone japanese)
  :homepage   "https://github.com/imakado/emoji")

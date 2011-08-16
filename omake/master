@@ -7,7 +7,7 @@
  :maintainer ("David M. Cooke" . "david.m.cooke@gmail.com")
  :provided   (omake)
  :required   ((("rx" rx)))
- :keywords   ("omake")
+ :keywords   (omake)
  :homepage   "http://bitbucket.org/dmcooke/omake-mode"
  :commentary "\
 Uses some code from python-mode.el, which has the following licence:

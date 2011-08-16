@@ -4,7 +4,7 @@
  :authors    (("Jason M" . "jasonm23@gmail.com"))
  :maintainer ("Jason M" . "jasonm23@gmail.com")
  :provided   (move-text)
- :keywords   ("edit")
+ :keywords   (edit)
  :homepage   "http://www.emacswiki.org/MoveText"
  :wikipage   "http://www.emacswiki.org/MoveText"
  :commentary "\

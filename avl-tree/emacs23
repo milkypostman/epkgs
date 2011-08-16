@@ -8,7 +8,7 @@
  :maintainer ("FSF")
  :provided   (avl-tree)
  :required   ((("cl" cl)))
- :keywords   ("data structures" "extensions")
+ :keywords   (data\ structures extensions)
  :commentary "\
 An AVL tree is a nearly-perfect balanced binary tree.  A tree consists of
 two elements, the root node and the compare function.  The actual tree

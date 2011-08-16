@@ -5,7 +5,7 @@
  :authors    (("Edward O'Connor" . "ted@oconnor.cx"))
  :maintainer ("Edward O'Connor" . "ted@oconnor.cx")
  :provided   (tiger)
- :keywords   ("languages")
+ :keywords   (languages)
  :homepage   "http://edward.oconnor.cx/elisp"
  :commentary "\
 This mode only supports font-locking, unfortunately. If you'd like

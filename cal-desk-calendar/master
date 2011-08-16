@@ -6,4 +6,4 @@
  :maintainer ("D. Dale Gulledge" . "dsplat@rochester.rr.com")
  :provided   (cal-desk-calendar)
  :required   ((("calendar" calendar diary-lib lunar solar)))
- :keywords   ("calendar"))
+ :keywords   (calendar))

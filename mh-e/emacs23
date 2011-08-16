@@ -16,7 +16,7 @@
 	       ("sendmail" sendmail)
 	       ("timer" timer)
 	       (nil mh-xemacs toolbar)))
- :keywords   ("mail")
+ :keywords   (mail)
  :wikipage   "http://www.emacswiki.org/MH-E"
  :commentary "\
 MH-E is an Emacs interface to the MH mail system.

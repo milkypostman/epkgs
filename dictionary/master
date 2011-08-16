@@ -8,5 +8,5 @@
 	       ("custom" custom)
 	       ("easymenu" easymenu)
 	       ("emacs-core" tooltip)))
- :keywords   ("dictionary" "interface")
+ :keywords   (dictionary interface)
  :homepage   "http://me.in-berlin.de/~myrkr/dictionary/download.html")

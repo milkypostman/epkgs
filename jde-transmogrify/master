@@ -3,4 +3,4 @@
  :license    "GPL-2"
  :authors    (("Nascif A. Abousalh Neto" . "nascif@acm.org"))
  :maintainer ("Nascif A. Abousalh Neto")
- :keywords   ("java" "refactoring" "tools"))
+ :keywords   (java refactoring tools))

@@ -7,7 +7,7 @@
  :maintainer ("Nascif A. Abousalh-Neto" . "nascif@acm.org")
  :provided   (pmd)
  :required   ((("compile" compile)))
- :keywords   ("major-mode" "pmd")
+ :keywords   (major-mode pmd)
  :homepage   "http://pmd.sourceforge.net"
  :wikipage   "http://www.emacswiki.org/EmacsPmd"
  :commentary "\

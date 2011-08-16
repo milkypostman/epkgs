@@ -5,7 +5,7 @@
  :license    "GPL-2"
  :authors    (("Felix H. Dahlke" . "fhd@ubercode.de"))
  :maintainer ("Felix H. Dahlke" . "fhd@ubercode.de")
- :keywords   ("gwt" "languages")
+ :keywords   (gwt languages)
  :homepage   "https://github.com/fhd/gwt-mumamo"
  :wikipage   "http://www.emacswiki.org/GwtMuMaMo"
  :commentary "\

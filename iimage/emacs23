@@ -6,7 +6,7 @@
  :maintainer ("KOSEKI Yoshinori" . "kose@meadowy.org")
  :provided   (iimage)
  :required   ((("image-file" image-file)))
- :keywords   ("multimedia")
+ :keywords   (multimedia)
  :homepage   "http://www.netlaputa.ne.jp/~kose/Emacs/iimage.html"
  :commentary "\
 Iimage is a minor mode that displays images, when image-filename

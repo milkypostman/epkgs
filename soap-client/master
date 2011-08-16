@@ -11,7 +11,7 @@
 	       ("gnus" mm-decode)
 	       ("url" url url-http url-util)
 	       ("xml" xml)))
- :keywords   ("comm" "hypermedia" "soap" "web-services")
+ :keywords   (comm hypermedia soap web-services)
  :homepage   "http://code.google.com/p/emacs-soap-client"
  :wikipage   "http://www.emacswiki.org/SoapClient"
  :commentary "\

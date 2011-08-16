@@ -11,7 +11,7 @@
 	      (("easymenu" easymenu)
 	       ("w32-browser" w32-browser)
 	       ("yasnippet" yasnippet)))
- :keywords   ("nsis")
+ :keywords   (nsis)
  :homepage   "http://www.emacswiki.org/NsisMode"
  :wikipage   "http://www.emacswiki.org/NsisMode"
  :commentary "\

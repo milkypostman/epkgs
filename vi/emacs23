@@ -4,7 +4,7 @@
 	      ("Felix S. T. Wu" . "wu@crys.wisc.edu"))
  :maintainer ("Neal Ziring" . "nz@rsch.wisc.edu")
  :provided   (vi)
- :keywords   ("emulations")
+ :keywords   (emulations)
  :commentary "\
 Originally written by : seismo!wucs!nz@rsch.wisc.edu (Neal Ziring)
 Extensively redesigned and rewritten by wu@crys.wisc.edu (Felix S.T. Wu)

@@ -5,7 +5,7 @@
  :authors    (("Akimichi Tatsukawa" . "akimichi@mbox.co.jp"))
  :maintainer ("Akimichi Tatsukawa" . "akimichi@mbox.co.jp")
  :provided   (stream)
- :keywords   ("delayed evaluation" "stream")
+ :keywords   (delayed\ evaluation stream)
  :commentary "\
 This package provides a stream library.
    Please refer to the chapter 3.5 of the book \"Structure and Interpretation of Computer Program\"(SICP).")

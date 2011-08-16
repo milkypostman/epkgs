@@ -6,7 +6,7 @@
  :maintainer ("Kahlil (Kal) HODGSON" . "dorge@tpg.com.au")
  :provided   (timeclock-x)
  :required   ((("timeclock" timeclock)))
- :keywords   ("convenience" "data")
+ :keywords   (convenience data)
  :commentary "\
 Extra features for John Wiegley's timeclock package:
 

@@ -6,7 +6,7 @@
  :authors    (("kitokitoki" . "morihenotegami@gmail.com"))
  :maintainer ("kitokitoki" . "morihenotegami@gmail.com")
  :provided   (cn-outline)
- :keywords   ("outliner")
+ :keywords   (outliner)
  :homepage   "https://github.com/wakaran/cn-outline"
  :commentary "\
 C-u 3 C-x $ 相当。")

@@ -8,7 +8,7 @@
  :required   ((("cl" cl)
 	       ("easymenu" easymenu)
 	       ("emhacks" tabbar)))
- :keywords   ("menu" "ruler mode" "tabbar")
+ :keywords   (menu ruler\ mode tabbar)
  :commentary "\
 Tabbar appearance based on reverse engineering Aquaemacs code and
 changing to my preferences, and Emacs Wiki.

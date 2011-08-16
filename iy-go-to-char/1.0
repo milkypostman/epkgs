@@ -3,7 +3,7 @@
  :updated    "20090823"
  :license    "GPL-2"
  :provided   (iy-go-to-char)
- :keywords   ("navigation" "search")
+ :keywords   (navigation search)
  :homepage   "http://www.emacswiki.org/IyGoToChar"
  :wikipage   "http://www.emacswiki.org/IyGoToChar"
  :commentary "\

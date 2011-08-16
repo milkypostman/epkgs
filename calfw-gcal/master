@@ -4,7 +4,7 @@
  :maintainer ("myuhe")
  :provided   (calfw-gcal)
  :required   ((("calfw" calfw)))
- :keywords   ("calendar" "convenience")
+ :keywords   (calendar convenience)
  :homepage   "https://github.com/myuhe/calfw-gcal.el"
  :commentary "\
 It is necessary to calfw.el Configurations

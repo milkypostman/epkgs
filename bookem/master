@@ -5,5 +5,5 @@
  :authors    (("Kevin J. Fletcher" . "kevinjohn.fletcher@googlemail.com"))
  :maintainer ("Kevin J. Fletcher" . "kevinjohn.fletcher@googlemail.com")
  :provided   (bookem)
- :keywords   ("bookem" "bookmarks")
+ :keywords   (bookem bookmarks)
  :homepage   "http://github.com/kjfletch/bookem-el")

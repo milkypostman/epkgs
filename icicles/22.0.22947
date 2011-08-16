@@ -65,7 +65,7 @@
 	       ("wid-edit+" wid-edit+)
 	       ("widget" wid-edit)
 	       ("yow" yow)))
- :keywords   ("abbrev" "apropos" "command" "completion" "extensions" "help" "keys" "local" "matching" "minibuffer" "regexp")
+ :keywords   (abbrev apropos command completion extensions help keys local matching minibuffer regexp)
  :homepage   "http://www.emacswiki.org/Icicles"
  :wikipage   "http://www.emacswiki.org/Icicles"
  :commentary "\

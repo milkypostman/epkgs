@@ -5,7 +5,7 @@
  :authors    (("TN"))
  :maintainer ("TN")
  :provided   (application)
- :keywords   ("application" "dired")
+ :keywords   (application dired)
  :commentary "\
 Files with binary format are better opened in appropriate
 applications. This regards for an instance Openoffice-files or

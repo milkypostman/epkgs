@@ -5,7 +5,7 @@
  :authors    (("Alex Schroeder" . "alex@gnu.org"))
  :maintainer ("Alex Schroeder" . "alex@gnu.org")
  :provided   (unparen)
- :keywords   ("convenience")
+ :keywords   (convenience)
  :homepage   "http://www.emacswiki.org/UnParenMode"
  :wikipage   "http://www.emacswiki.org/UnParenMode"
  :commentary "\

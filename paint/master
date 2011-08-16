@@ -6,4 +6,4 @@
  :maintainer ("Taiki SUGAWARA" . "buzz.taiki@gmail.com")
  :provided   (paint)
  :required   ((("cl" cl)))
- :keywords   ("tools"))
+ :keywords   (tools))

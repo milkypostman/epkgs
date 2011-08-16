@@ -4,7 +4,7 @@
  :maintainer ("Aidan Schofield")
  :provided   (magpie)
  :required   ((("cl" cl)))
- :keywords   ("acronym" "dabbrev" "expansion" "hippie")
+ :keywords   (acronym dabbrev expansion hippie)
  :homepage   "http://www.emacswiki.org/MagpieExpansion"
  :wikipage   "http://www.emacswiki.org/MagpieExpansion"
  :commentary "\

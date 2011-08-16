@@ -5,7 +5,7 @@
  :authors    (("Ralph Schleicher" . "rs@ralph-schleicher.de"))
  :maintainer ("Ralph Schleicher" . "rs@ralph-schleicher.de")
  :provided   (regexp-char)
- :keywords   ("extensions")
+ :keywords   (extensions)
  :commentary "\
 Although `regexp-opt-charset' exists, the interface is neither
 documented nor general enough for my needs.  The `regexp-char'

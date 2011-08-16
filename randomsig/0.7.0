@@ -6,7 +6,7 @@
  :maintainer ("Hans-Juergen Ficker" . "hj@backmes.de")
  :provided   (randomsig)
  :required   ((("cl" cl)))
- :keywords   ("mail" "random" "signature")
+ :keywords   (mail random signature)
  :homepage   "http://www.backmes.de/scripts+programs.html"
  :wikipage   "http://www.emacswiki.org/RandomSig"
  :commentary "\

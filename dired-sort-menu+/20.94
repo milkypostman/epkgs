@@ -6,7 +6,7 @@
  :maintainer ("Drew Adams")
  :provided   (dired-sort-menu+)
  :required   ((("dired-sort-menu" dired-sort-menu)))
- :keywords   ("directories" "dired" "diredp")
+ :keywords   (directories dired diredp)
  :commentary "\
 Extensions to `dired-sort-menu.el'
 

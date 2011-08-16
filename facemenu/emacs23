@@ -7,7 +7,7 @@
  :provided   (facemenu)
  :required   ((("button" button)
 	       ("help" help)))
- :keywords   ("faces")
+ :keywords   (faces)
  :commentary "\
 This file defines a menu of faces (bold, italic, etc) which allows you to
 set the face used for a region of the buffer.  Some faces also have

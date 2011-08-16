@@ -13,7 +13,7 @@
 	       ("thingatpt" thingatpt)
 	       ("url" url-http)
 	       ("xml-rpc" xml-rpc)))
- :keywords   ("confluence" "wiki" "xmlrpc")
+ :keywords   (confluence wiki xmlrpc)
  :homepage   "http://code.google.com/p/confluence-el"
  :wikipage   "http://www.emacswiki.org/ConfluenceMode"
  :commentary "\

@@ -8,7 +8,7 @@
  :provided   (socks)
  :required   ((("custom" custom)
 	       ("widget" wid-edit)))
- :keywords   ("comm" "firewalls")
+ :keywords   (comm firewalls)
  :commentary "\
 This is an implementation of the SOCKS v5 protocol as defined in
 RFC 1928.

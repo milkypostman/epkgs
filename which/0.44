@@ -5,7 +5,7 @@
  :authors    (("Christoph Conrad" . "christoph.conrad@gmx.de"))
  :maintainer ("Christoph Conrad")
  :provided   (which)
- :keywords   ("matching")
+ :keywords   (matching)
  :commentary "\
 `which' is an interactive function which takes a program name (string)
 as argument and searches all executables with this name in all paths of

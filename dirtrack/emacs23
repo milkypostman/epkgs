@@ -7,7 +7,7 @@
  :provided   (dirtrack)
  :required   ((("comint" comint)
 	       ("shell" shell)))
- :keywords   ("processes")
+ :keywords   (processes)
  :commentary "\
 Shell directory tracking by watching the prompt.
 

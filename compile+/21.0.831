@@ -8,7 +8,7 @@
  :required   ((("compile" compile)
 	       ("compile-" compile-))
 	      (("misc-fns" misc-fns)))
- :keywords   ("processes" "tools")
+ :keywords   (processes tools)
  :commentary "\
 Extensions to `compile.el'.
 

@@ -5,7 +5,7 @@
  :maintainer ("Dino Chiesa" . "dpchiesa@hotmail.com")
  :provided   (rfringe)
  :required   ((("emacs-core" fringe)))
- :keywords   ("bitmap" "fringe")
+ :keywords   (bitmap fringe)
  :homepage   "http://www.emacswiki.org/RFringe"
  :wikipage   "http://www.emacswiki.org/RFringe"
  :commentary "\

@@ -7,7 +7,7 @@
  :provided   (etags-stack)
  :required   ((("custom" custom)
 	       ("etags" etags)))
- :keywords   ("tags")
+ :keywords   (tags)
  :homepage   "http://www.emacswiki.org/EtagsStack"
  :wikipage   "http://www.emacswiki.org/EtagsStack"
  :commentary "\

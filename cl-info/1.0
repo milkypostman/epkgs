@@ -5,7 +5,7 @@
  :authors    (("John Wiegley" . "johnw@newartisans.com"))
  :maintainer ("John Wiegley" . "johnw@newartisans.com")
  :provided   (cl-info)
- :keywords   ("doc" "hyperspec" "info" "lisp")
+ :keywords   (doc hyperspec info lisp)
  :commentary "\
 If you'd rather read HyperSpec references very quickly within Emacs, this
 module is for you.  It rebinds the meaning of C-h f in lisp-mode buffers to

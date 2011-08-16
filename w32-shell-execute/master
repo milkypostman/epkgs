@@ -5,4 +5,4 @@
  :authors    (("Patrick Anderson" . "patware@freeshell.org"))
  :maintainer ("Patrick Anderson" . "patware@freeshell.org")
  :provided   (w32-shell-execute)
- :keywords   ("convenience" "processes"))
+ :keywords   (convenience processes))

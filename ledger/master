@@ -10,7 +10,7 @@
 	       ("eshell" esh-arg esh-util)
 	       ("pcomplete" pcomplete)
 	       ("rx" rx)))
- :keywords   ("data")
+ :keywords   (data)
  :homepage   "https://github.com/jwiegley/ledger"
  :wikipage   "http://www.emacswiki.org/LedgerMode"
  :commentary "\

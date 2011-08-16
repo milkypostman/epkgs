@@ -6,7 +6,7 @@
  :maintainer ("FSF")
  :provided   (thumbs)
  :required   ((("dired" dired)))
- :keywords   ("multimedia")
+ :keywords   (multimedia)
  :wikipage   "http://www.emacswiki.org/ThumbsMode"
  :commentary "\
 This package create two new modes: thumbs-mode and thumbs-view-image-mode.

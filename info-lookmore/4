@@ -6,7 +6,7 @@
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (info-lookmore)
  :required   ((("info-look" info-look)))
- :keywords   ("help" "info-look" "languages")
+ :keywords   (help info-look languages)
  :homepage   "http://user42.tuxfamily.org/info-lookmore/index.html"
  :commentary "\
 This is some more stuff for `info-lookup-symbol' -- some specific manuals

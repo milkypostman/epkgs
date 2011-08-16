@@ -9,7 +9,7 @@
 	       ("custom" cus-edit)
 	       ("vm" vm)
 	       ("widget" widget)))
- :keywords   ("mail" "searching")
+ :keywords   (mail searching)
  :commentary "\
 This is an interface to the mairix mail search engine.  Mairix is
 written by Richard Curnow and is licensed under the GPL.  See the

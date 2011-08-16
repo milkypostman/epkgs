@@ -5,7 +5,7 @@
  :authors    (("Morten Welinder" . "terra@gnu.org"))
  :maintainer ("Morten Welinder" . "terra@gnu.org")
  :provided   (arc-mode archive-mode)
- :keywords   ("archives" "editing" "files" "major-mode" "msdog")
+ :keywords   (archives editing files major-mode msdog)
  :commentary "\
 NAMING: \"arc\" is short for \"archive\" and does not refer specifically
 to files whose name end in \".arc\"

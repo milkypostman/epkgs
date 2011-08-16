@@ -5,7 +5,7 @@
  :authors    (("Dave Love" . "fx@gnu.org"))
  :maintainer ("Dave Love" . "fx@gnu.org")
  :provided   (protect-files)
- :keywords   ("tools")
+ :keywords   (tools)
  :homepage   "http://www.loveshack.ukfsn.org/emacs"
  :commentary "\
 This is a mechanism for preventing at least accidental modification

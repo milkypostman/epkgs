@@ -7,7 +7,7 @@
  :provided   (winner)
  :required   ((("cl" cl)
 	       ("ring" ring)))
- :keywords   ("convenience" "frames")
+ :keywords   (convenience frames)
  :wikipage   "http://www.emacswiki.org/WinnerMode"
  :commentary "\
 Winner mode is a global minor mode that records the changes in the

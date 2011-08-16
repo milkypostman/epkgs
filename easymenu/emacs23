@@ -5,7 +5,7 @@
  :authors    (("Richard Stallman" . "rms@gnu.org"))
  :maintainer ("Richard Stallman" . "rms@gnu.org")
  :provided   (easymenu)
- :keywords   ("emulations")
+ :keywords   (emulations)
  :wikipage   "http://www.emacswiki.org/EasyMenu"
  :commentary "\
 This is compatible with easymenu.el by Per Abrahamsen

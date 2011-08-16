@@ -3,7 +3,7 @@
  :updated    "2009"
  :license    "GPL-2"
  :provided   (wcy-desktop)
- :keywords   ("convenience")
+ :keywords   (convenience)
  :homepage   "http://www.emacswiki.org/WcyDesktop"
  :wikipage   "http://www.emacswiki.org/WcyDesktop"
  :commentary "\

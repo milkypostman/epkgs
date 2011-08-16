@@ -7,7 +7,7 @@
  :provided   (proc-mode)
  :required   ((("regexp-opt" regexp-opt)
 	       ("reporter" reporter)))
- :keywords   ("languages")
+ :keywords   (languages)
  :commentary "\
 -----------
  This is an emacs major mode to provide some help to programmers who

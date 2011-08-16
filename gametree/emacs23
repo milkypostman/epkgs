@@ -7,7 +7,7 @@
  :provided   (gametree)
  :required   ((("emacs-core" derived)
 	       ("outline" outline)))
- :keywords   ("games")
+ :keywords   (games)
  :commentary "\
 This little hack has enabled me to keep track of my email chess
  games in Emacs.  For a long time I dreamt about writing a real,

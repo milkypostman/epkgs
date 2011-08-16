@@ -4,7 +4,7 @@
  :license    "GPL-3"
  :authors    (("MON KEY"))
  :maintainer ("MON KEY")
- :keywords   ("applications" "comm" "external" "hypermedia" "processes")
+ :keywords   (applications comm external hypermedia processes)
  :commentary "\
 =================================================================
 DESCRIPTION:

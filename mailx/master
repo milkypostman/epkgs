@@ -7,7 +7,7 @@
  :provided   (mailx)
  :required   ((("emacs-core" font-lock)
 	       ("mail-utils" mail-utils)))
- :keywords   ("mail")
+ :keywords   (mail)
  :commentary "\
 Its really annoying when subpar systems don't have GNUS
 installed. I can't stand using another mail program because they

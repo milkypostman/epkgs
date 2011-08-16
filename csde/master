@@ -22,7 +22,7 @@
 	       ("tempo" tempo)
 	       ("widget" wid-edit)
 	       (nil csde-wiz semantic-bnf semantic-mode)))
- :keywords   ("csharp" "tools")
+ :keywords   (csharp tools)
  :homepage   "http://csde.sourceforge.net"
  :commentary "\
 The latest version of the CSDE is available at

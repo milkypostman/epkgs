@@ -6,7 +6,7 @@
  :maintainer ("Bastien Guerry" . "bzg@altern.org")
  :provided   (register-list)
  :required   ((("cl" cl)))
- :keywords   ("register")
+ :keywords   (register)
  :commentary "\
 This library lets you list and edit registers.  M-x `register-list'
 displays a list of currently set registers.

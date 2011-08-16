@@ -6,7 +6,7 @@
  :provided   (fsproject iproject project-buffer-mode project-buffer-mode+ project-buffer-occur sln-mode)
  :required   ((("cl" cl)
 	       ("ewoc" ewoc)))
- :keywords   ("buffer" "generic" "mode" "project" "viewer")
+ :keywords   (buffer generic mode project viewer)
  :homepage   "http://repo.or.cz/w/project-buffer-mode.git"
  :wikipage   "http://www.emacswiki.org/ProjectBufferMode"
  :commentary "\

@@ -7,7 +7,7 @@
  :maintainer ("Masayuki Ataka" . "masayuki.ataka@gmail.com")
  :provided   (html-fold)
  :required   ((("emacs-core" overlay)))
- :keywords   ("html" "wp")
+ :keywords   (html wp)
  :homepage   "https://github.com/ataka/html-fold"
  :commentary "\
 This file provides support for hiding and unhiding HTML elements.

@@ -4,7 +4,7 @@
  :maintainer ("FSF")
  :provided   (hanoi)
  :required   ((("cl" cl)))
- :keywords   ("games")
+ :keywords   (games)
  :commentary "\
 Solves the Towers of Hanoi puzzle while-U-wait.
 

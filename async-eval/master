@@ -6,7 +6,7 @@
  :authors    (("Nikolaj Schumacher" . "bugs@nschum.de"))
  :maintainer ("Nikolaj Schumacher" . "bugs@nschum.de")
  :provided   (async-eval)
- :keywords   ("extensions" "lisp" "processes")
+ :keywords   (extensions lisp processes)
  :homepage   "http://nschum.de/src/emacs/async-eval"
  :wikipage   "http://www.emacswiki.org/AsyncEval"
  :commentary "\

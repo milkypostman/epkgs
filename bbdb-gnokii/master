@@ -8,7 +8,7 @@
  :maintainer ("Martin Schwenke" . "martin@meltin.net")
  :provided   (bbdb-gnokii)
  :required   ((("bbdb" bbdb)))
- :keywords   ("bbdb" "gnokii" "nokia")
+ :keywords   (bbdb gnokii nokia)
  :homepage   "http://meltin.net/hacks/emacs"
  :commentary "\
 Exports BBDB phone entries to a contacts file that can be used by

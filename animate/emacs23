@@ -4,7 +4,7 @@
  :license    "GPL-3"
  :maintainer ("Richard Stallman" . "rms@gnu.org")
  :provided   (animate)
- :keywords   ("games")
+ :keywords   (games)
  :commentary "\
 (animate-string STRING VPOS &optional HPOS)
 makes the string STRING appear starting at VPOS, HPOS

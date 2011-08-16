@@ -7,7 +7,7 @@
  :provided   (hl-spotlight)
  :required   ((("hl-line" hl-line))
 	      (("centered-cursor-mode" centered-cursor-mode)))
- :keywords   ("accessibility" "cursor" "highlight")
+ :keywords   (accessibility cursor highlight)
  :commentary "\
 This library extends standard library `hl-line.el'.  It provides
  local and global modes to highlight several lines surrounding

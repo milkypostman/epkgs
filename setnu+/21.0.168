@@ -8,7 +8,7 @@
  :required   ((("setnu" setnu))
 	      (("fit-frame" fit-frame)
 	       ("frame-cmds" frame-cmds)))
- :keywords   ("lines")
+ :keywords   (lines)
  :commentary "\
 Extensions to `setnu.el'.
 

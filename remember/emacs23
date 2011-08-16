@@ -7,7 +7,7 @@
  :maintainer ("John Wiegley" . "johnw@gnu.org")
  :provided   (remember)
  :required   ((("calendar" calendar)))
- :keywords   ("data" "memory" "pim" "todo")
+ :keywords   (data memory pim todo)
  :homepage   "http://repo.or.cz/w/remember-el.git"
  :wikipage   "http://www.emacswiki.org/RememberMode"
  :commentary "\

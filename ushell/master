@@ -6,7 +6,7 @@
  :maintainer ("David O'Toole" . "dto@gnu.org")
  :provided   (ushell)
  :required   ((("eon" eon)))
- :keywords   ("lisp")
+ :keywords   (lisp)
  :commentary "\
 This is a Universal Shell inspired by the Symbolics Genera
 operating system. In designing ushell I started with what I could

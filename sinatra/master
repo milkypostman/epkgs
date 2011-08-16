@@ -11,5 +11,5 @@
 	       ("rinari" inf-ruby)
 	       ("ruby-compilation" ruby-compilation)
 	       ("ruby-mode" ruby-mode)))
- :keywords   ("convenience" "framework" "project" "ruby" "sinatra" "web")
+ :keywords   (convenience framework project ruby sinatra web)
  :homepage   "https://github.com/eschulte/sinatra_el")

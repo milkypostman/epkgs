@@ -4,7 +4,7 @@
  :authors    (("Harley Gorrell" . "harley@panix.com"))
  :maintainer ("Harley Gorrell" . "harley@panix.com")
  :provided   (jhg-cload)
- :keywords   ("compile" "emacs" "load")
+ :keywords   (compile emacs load)
  :commentary "\
 * Attempt to compile elisp right before it is loaded.
   Only compile files which are under your chosen paths and

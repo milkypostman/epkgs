@@ -6,6 +6,6 @@
  :maintainer ("Andy Stewart" . "lazycat.manatee@gmail.com")
  :provided   (speedbar-extension)
  :required   ((("sr-speedbar" sr-speedbar)))
- :keywords   ("speedbar")
+ :keywords   (speedbar)
  :commentary "\
 Some extensions for speedbar.")

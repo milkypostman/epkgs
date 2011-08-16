@@ -7,7 +7,7 @@
  :maintainer ("R.W. van 't Veer")
  :provided   (elein)
  :required   ((("cl" cl)))
- :keywords   ("processes" "tools")
+ :keywords   (processes tools)
  :homepage   "https://github.com/remvee/elein"
  :commentary "\
 Provides support for running leiningen commands like swank and test.")

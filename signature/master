@@ -5,7 +5,7 @@
  :authors    (("Benjamin Drieu" . "drieu@alpha10.bocal.cs.univ-paris8.fr"))
  :maintainer ("Benjamin Drieu" . "drieu@alpha10.bocal.cs.univ-paris8.fr")
  :provided   (signature)
- :keywords   ("mail")
+ :keywords   (mail)
  :homepage   "http://www.grassouille.org/emacs/index.en.html"
  :commentary "\
 signature.el inserts random signatures at the end of a mail.

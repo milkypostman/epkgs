@@ -11,7 +11,7 @@
 	       ("json" json)
 	       ("magit" magit)
 	       ("url" url)))
- :keywords   ("git" "github" "magit")
+ :keywords   (git github magit)
  :homepage   "https://github.com/nex3/magithub"
  :commentary "\
 This package does two things.  First, it extends Magit's UI with

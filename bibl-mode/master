@@ -8,5 +8,5 @@
  :required   ((("easymenu" easymenu)
 	       ("reporter" reporter)
 	       ("telnet" telnet)))
- :keywords   ("bibliographies" "databases" "internet")
+ :keywords   (bibliographies databases internet)
  :wikipage   "http://www.emacswiki.org/BiblMode")

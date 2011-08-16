@@ -5,7 +5,7 @@
  :provided   (anything-R)
  :required   ((("anything" anything)
 	       ("ess" ess-site)))
- :keywords   ("anything" "convenience" "gnu r")
+ :keywords   (anything convenience gnu\ r)
  :commentary "\
 It is necessary to Some Anything and ESS Configurations for using R before
 

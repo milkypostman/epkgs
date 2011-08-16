@@ -3,7 +3,7 @@
  :updated    "2000"
  :license    "GPL-2"
  :provided   (file-ext)
- :keywords   ("grep" "tools")
+ :keywords   (grep tools)
  :homepage   "http://www.emacs.mirkolinkonline.de/extras.html"
  :commentary "\
 folgende zusätzliche Funktionen sind zur Zeit unterstützt:

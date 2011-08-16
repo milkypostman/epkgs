@@ -4,5 +4,5 @@
  :updated    "2007"
  :provided   (date-util emacs-easy-budget)
  :required   ((("timezone" timezone)))
- :keywords   ("financial" "personal")
+ :keywords   (financial personal)
  :homepage   "http://code.google.com/p/emacs-easy-budget")

@@ -10,7 +10,7 @@
 	       ("dired" dired)
 	       ("easymenu" easymenu)
 	       ("grep" grep)))
- :keywords   ("processes" "search" "tools")
+ :keywords   (processes search tools)
  :commentary "\
 The `igrep' command is like `grep' except that it takes three
 required arguments (PROGRAM, REGEX, and FILES) and an optional

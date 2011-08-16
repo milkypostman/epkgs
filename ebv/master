@@ -11,7 +11,7 @@
 	       ("url" url url-http)
 	       ("w3m" w3m)
 	       ("xml" xml)))
- :keywords   ("ebook")
+ :keywords   (ebook)
  :homepage   "https://github.com/ryebread/ebv"
  :commentary "\
 A book search and view client.

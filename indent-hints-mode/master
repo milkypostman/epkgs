@@ -6,7 +6,7 @@
  :authors    (("Mitchel Humpherys" . "mitch.special@gmail.com"))
  :maintainer ("Mitchel Humpherys" . "mitch.special@gmail.com")
  :provided   (indent-hints)
- :keywords   ("convenience")
+ :keywords   (convenience)
  :homepage   "https://github.com/mgalgs/indent-hints-mode"
  :commentary "\
 As the Eternal Holy War of tabs-versus-spaces rages on, even within

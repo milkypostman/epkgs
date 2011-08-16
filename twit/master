@@ -9,7 +9,7 @@
  :required   ((("cl" cl)
 	       ("url" url url-http)
 	       ("xml" xml)))
- :keywords   ("comm")
+ :keywords   (comm)
  :homepage   "https://github.com/docgnome/twit.el"
  :wikipage   "http://www.emacswiki.org/TwIt"
  :commentary "\

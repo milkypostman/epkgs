@@ -12,7 +12,7 @@
 	       ("gnus" format-spec time-date)
 	       ("url" url url-cache)
 	       ("xml" xml)))
- :keywords   ("comm")
+ :keywords   (comm)
  :homepage   "http://julien.danjou.info/google-weather-el.html"
  :commentary "\
 This module allows you to fetch Google Weather forecast from the

@@ -5,7 +5,7 @@
  :authors    (("Yuji Minejima" . "ggb01164@nifty.ne.jp"))
  :maintainer ("Yuji Minejima" . "ggb01164@nifty.ne.jp")
  :provided   (bm-man-cmplt)
- :keywords   ("help" "local")
+ :keywords   (help local)
  :commentary "\
 Read man page spec. string (e.g. \"ls(1)\") from the minibuffer with
 completion using Unix command apropos(1).

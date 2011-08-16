@@ -9,7 +9,7 @@
  :required   ((("cl" cl)
 	       ("gnus" message mm-url)
 	       ("url" url)))
- :keywords   ("music")
+ :keywords   (music)
  :homepage   "https://github.com/larsmagne/musicbrainz.el"
  :commentary "\
 This library queries the musicbrainz.org data base and converts the

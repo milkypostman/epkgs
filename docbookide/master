@@ -9,7 +9,7 @@
 	       ("compile" compile)
 	       ("emacs-core" font-lock)
 	       ("etags" etags)))
- :keywords   ("docbook" "languages" "xml")
+ :keywords   (docbook languages xml)
  :homepage   "http://nwalsh.com/emacs/docbookide"
  :commentary "\
 Functions for editing DocBook documents

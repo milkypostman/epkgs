@@ -4,7 +4,7 @@
  :authors    (("Kevin A. Burton" . "burton@openprivacy.org"))
  :maintainer ("Kevin A. Burton" . "burton@openprivacy.org")
  :provided   (ebackup)
- :keywords   ("backup")
+ :keywords   (backup)
  :commentary "\
 Some lisp magic to add enhanced backup functions basically it mirrors the
 filesystem that I am editing and copies all new backups into backup directory

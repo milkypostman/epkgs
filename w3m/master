@@ -32,7 +32,7 @@
 	       ("widget" wid-edit)
 	       ("xml" xml))
 	      (("image-mode" image-mode)))
- :keywords   ("hypermedia" "www")
+ :keywords   (hypermedia www)
  :homepage   "http://emacs-w3m.namazu.org"
  :wikipage   "http://www.emacswiki.org/emacs-w3m"
  :commentary "\

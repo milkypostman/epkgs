@@ -7,7 +7,7 @@
  :required   ((("gist" gist)
 	       ("http-post-simple" http-post-simple)
 	       ("tumblr" tumblr)))
- :keywords   ("blog" "gist" "git" "github" "paste" "pastebin" "pastie" "tumblr")
+ :keywords   (blog gist git github paste pastebin pastie tumblr)
  :homepage   "https://github.com/dleslie/tumblr-gist.el"
  :wikipage   "http://www.emacswiki.org/Tumblr-Gist"
  :commentary "\

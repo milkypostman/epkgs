@@ -6,7 +6,7 @@
  :maintainer ("Ye Wenbin" . "wenbinye@gmail.com")
  :provided   (showtip)
  :required   ((("cl" cl)))
- :keywords   ("help")
+ :keywords   (help)
  :commentary "\
 This library export one function for elisp programer to show
 tooltip near the cursor not the mouse.")

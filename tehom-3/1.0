@@ -7,7 +7,7 @@
  :provided   (tehom-3)
  :required   ((("emacs-core" cust-print)
 	       (nil cl-read)))
- :keywords   ("extensions")
+ :keywords   (extensions)
  :homepage   "www.panix.com/~tehom"
  :commentary "\
 This package is intended to easily save and restore the state of

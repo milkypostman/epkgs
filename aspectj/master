@@ -15,5 +15,5 @@
 	       ("emacs-core" font-lock overlay)
 	       ("imenu" imenu)
 	       ("jdee" jde)))
- :keywords   ("aspectj" "jde" "jdee" "tools")
+ :keywords   (aspectj jde jdee tools)
  :homepage   "http://aspectj4emacs.sourceforge.net")

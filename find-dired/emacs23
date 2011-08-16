@@ -7,4 +7,4 @@
  :maintainer ("FSF")
  :provided   (find-dired)
  :required   ((("dired" dired)))
- :keywords   ("unix"))
+ :keywords   (unix))

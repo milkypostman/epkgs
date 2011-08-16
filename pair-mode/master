@@ -6,7 +6,7 @@
  :maintainer ("Dave Love" . "fx@gnu.org")
  :provided   (pair-mode)
  :required   ((("skeleton" skeleton)))
- :keywords   ("convenience")
+ :keywords   (convenience)
  :homepage   "http://www.loveshack.ukfsn.org/emacs"
  :commentary "\
 A trivial (local) minor mode, and a global version, which binds

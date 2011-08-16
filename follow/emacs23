@@ -5,7 +5,7 @@
  :authors    (("Anders Lindgren" . "andersl@andersl.com"))
  :provided   (follow)
  :required   ((("easymenu" easymenu)))
- :keywords   ("convenience" "display" "minor-mode" "window")
+ :keywords   (convenience display minor-mode window)
  :wikipage   "http://www.emacswiki.org/FollowMode"
  :commentary "\
 {{{ Documentation

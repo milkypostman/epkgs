@@ -8,7 +8,7 @@
  :required   ((("ess" ess-site))
 	      (("yasnippet" yasnippet)
 	       (nil yasnippet-bundle)))
- :keywords   ("r" "yasnippet")
+ :keywords   (r yasnippet)
  :commentary "\
 Changes by Matthew Fidler
 

@@ -5,7 +5,7 @@
  :authors    (("Noah Friedman" . "friedman@splode.com"))
  :maintainer (nil . "friedman@splode.com")
  :provided   (pb-popup)
- :keywords   ("extensions")
+ :keywords   (extensions)
  :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
  :commentary "\
 The function `pb-popup' may be attached to a process filter, via

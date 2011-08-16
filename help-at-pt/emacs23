@@ -5,7 +5,7 @@
  :authors    (("Luc Teirlinck" . "teirllm@auburn.edu"))
  :maintainer ("Luc Teirlinck" . "teirllm@auburn.edu")
  :provided   (help-at-pt)
- :keywords   ("help")
+ :keywords   (help)
  :commentary "\
 This file contains functionality to make the help provided by the
 help-echo text or overlay property available to the keyboard user.

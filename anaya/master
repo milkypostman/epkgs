@@ -8,4 +8,4 @@
  :required   ((("cl" cl)
 	       ("url" url)
 	       ("w3" w3 w3-forms)))
- :keywords   ("dictionary" "english" "spanish"))
+ :keywords   (dictionary english spanish))

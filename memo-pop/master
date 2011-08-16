@@ -5,6 +5,6 @@
  :authors    (("Kazuo YAGI" . "kyagi@1liner.jp"))
  :maintainer ("Kazuo YAGI" . "kyagi@1liner.jp")
  :provided   (memo-pop)
- :keywords   ("tools")
+ :keywords   (tools)
  :homepage   "http://www.emacswiki.org/MemoPop"
  :wikipage   "http://www.emacswiki.org/MemoPop")

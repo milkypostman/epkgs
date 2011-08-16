@@ -6,7 +6,7 @@
  :authors    (("Andrew J Cosgriff" . "andrew@cosgriff.name"))
  :maintainer ("Andrew J Cosgriff" . "andrew@cosgriff.name")
  :provided   (nginx-mode)
- :keywords   ("nginx")
+ :keywords   (nginx)
  :homepage   "https://github.com/ajc/nginx-mode"
  :commentary "\
 This is a quick mode for editing Nginx config files, as I didn't find

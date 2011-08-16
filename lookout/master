@@ -7,7 +7,7 @@
  :provided   (lookout)
  :required   ((("bbdb" bbdb)
 	       ("csv" csv)))
- :keywords   ("calendar" "diary" "util")
+ :keywords   (calendar diary util)
  :homepage   "http://ulf.epplejasper.de/EmacsCalendarAndDiary.html"
  :commentary "\
 Some calendar tools such as Outlook allow for exporting diary data as

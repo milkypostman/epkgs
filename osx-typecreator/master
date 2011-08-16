@@ -4,7 +4,7 @@
  :authors    (("Harley Gorrell" . "harley@mahalito.net"))
  :maintainer ("Harley Gorrell" . "harley@mahalito.net")
  :provided   (osx-typecreator)
- :keywords   ("creator" "osx" "type")
+ :keywords   (creator osx type)
  :commentary "\
 * Sets the type and creator on OSX systems based on major-mode or
   buffer-file-name.

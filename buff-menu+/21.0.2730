@@ -8,7 +8,7 @@
 	      (("fit-frame" fit-frame)
 	       ("misc-cmds" misc-cmds)
 	       ("misc-fns" misc-fns)))
- :keywords   ("convenience" "local" "mouse")
+ :keywords   (convenience local mouse)
  :homepage   "http://www.emacswiki.org/BufferMenuPlus"
  :wikipage   "http://www.emacswiki.org/BufferMenuPlus"
  :commentary "\

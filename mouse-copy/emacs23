@@ -5,7 +5,7 @@
  :authors    (("John Heidemann" . "johnh@isi.edu"))
  :maintainer ("John Heidemann" . "johnh@isi.edu")
  :provided   (mouse-copy)
- :keywords   ("mouse")
+ :keywords   (mouse)
  :wikipage   "http://www.emacswiki.org/MouseCopy"
  :commentary "\
 What is ``mouse-copy.el''?

@@ -9,7 +9,7 @@
  :required   ((("image-file" image-file)
 	       ("json" json)
 	       ("oauth" oauth)))
- :keywords   ("comm")
+ :keywords   (comm)
  :homepage   "https://github.com/psanford/emacs-yammer"
  :commentary "\
 Simple mode for browsing and posting to yammer.com.

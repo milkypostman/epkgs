@@ -4,7 +4,7 @@
  :authors    ((nil . "ddutt@cisco.com"))
  :maintainer ("Dinesh G Dutt" . "ddutt@cisco.com")
  :provided   (ietfdoc)
- :keywords   ("application" "fyi" "internet-draft" "rfc")
+ :keywords   (application fyi internet-draft rfc)
  :commentary "\
 This module allows various IETF documents such as RFCs, internet drafts,
 BCPs etc to be retrieved. I based this off the RFC retrieval code that was

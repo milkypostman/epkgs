@@ -5,7 +5,7 @@
  :authors    (("Aaron S. Hawley"))
  :maintainer ("Aaron S. Hawley")
  :provided   (bmi)
- :keywords   ("games" "health")
+ :keywords   (games health)
  :commentary "\
 To calculate your BMI from your weight in pounds, and your height
 in feet and inches, run:

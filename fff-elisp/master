@@ -6,7 +6,7 @@
  :maintainer (nil . "friedman@splode.com")
  :provided   (fff-elisp)
  :required   ((("fff" fff)))
- :keywords   ("commands" "extensions" "files" "searching" "tools")
+ :keywords   (commands extensions files searching tools)
  :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
  :commentary "\
 This package is an extension of fff.el which provides shortcut commands

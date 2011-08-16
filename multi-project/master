@@ -8,7 +8,7 @@
  :required   ((("compile" compile)
 	       ("easymenu" easymenu)
 	       ("etags" etags)))
- :keywords   ("project")
+ :keywords   (project)
  :homepage   "http://bitbucket.org/ellisvelo/multi-project"
  :commentary "\
 Multi-project makes it easier to work with different projects by

@@ -5,7 +5,7 @@
  :authors    (("David K}gedal" . "davidk@lysator.liu.se"))
  :maintainer ("David K}gedal" . "davidk@lysator.liu.se")
  :provided   (tempo)
- :keywords   ("extensions" "languages" "tools")
+ :keywords   (extensions languages tools)
  :wikipage   "http://www.emacswiki.org/TempoMode"
  :commentary "\
 This file provides a simple way to define powerful templates, or

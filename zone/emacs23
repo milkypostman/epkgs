@@ -9,7 +9,7 @@
 	       ("life" life)
 	       ("tabify" tabify)
 	       ("timer" timer)))
- :keywords   ("games")
+ :keywords   (games)
  :wikipage   "http://www.emacswiki.org/ZoneMode"
  :commentary "\
 Don't zone out in front of Emacs!  Try M-x zone.

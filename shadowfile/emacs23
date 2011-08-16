@@ -6,7 +6,7 @@
  :maintainer ("Boris Goldowsky" . "boris@gnu.org")
  :provided   (shadowfile)
  :required   ((("ange-ftp" ange-ftp)))
- :keywords   ("comm" "files")
+ :keywords   (comm files)
  :wikipage   "http://www.emacswiki.org/ShadowFile"
  :commentary "\
 This package helps you to keep identical copies of files in more than one

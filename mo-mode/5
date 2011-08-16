@@ -8,7 +8,7 @@
  :required   ((("gnus" mm-util)
 	       ("po" po)
 	       (nil po-compat)))
- :keywords   ("data")
+ :keywords   (data)
  :wikipage   "http://www.emacswiki.org/MoMode"
  :commentary "\
 This code adds decoding and viewing of .mo and .gmo message catalogue

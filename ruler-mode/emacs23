@@ -7,7 +7,7 @@
  :provided   (ruler-mode)
  :required   ((("emacs-core" fringe scroll-bar)
 	       ("widget" wid-edit)))
- :keywords   ("convenience")
+ :keywords   (convenience)
  :wikipage   "http://www.emacswiki.org/RulerMode"
  :commentary "\
 This library provides a minor mode to display a ruler in the header

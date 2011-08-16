@@ -8,7 +8,7 @@
  :required   ((("cl" cl)
 	       ("ehelp" ehelp)
 	       ("electric" electric)))
- :keywords   ("convenience" "tools")
+ :keywords   (convenience tools)
  :homepage   "http://www.barzilay.org"
  :wikipage   "http://www.emacswiki.org/SimpleCalculator"
  :commentary "\

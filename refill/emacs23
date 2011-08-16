@@ -6,7 +6,7 @@
  :maintainer ("Miles Bader" . "miles@gnu.org")
  :provided   (refill)
  :required   ((("cl" cl)))
- :keywords   ("wp")
+ :keywords   (wp)
  :wikipage   "http://www.emacswiki.org/RefillMode"
  :commentary "\
 Provides a mode where paragraphs are refilled after changes in them

@@ -6,7 +6,7 @@
  :maintainer ("Drew Adams")
  :provided   (apropos-fn+var)
  :required   ((("apropos" apropos)))
- :keywords   ("apropos")
+ :keywords   (apropos)
  :commentary "\
 Standard `apropos' commands `apropos-variable' and
  `apropos-command' do not distinguish, by command name, between the

@@ -10,7 +10,7 @@
 	       ("gnus" mm-url)
 	       ("json" json)
 	       ("url" url-handlers)))
- :keywords   ("translation" "web")
+ :keywords   (translation web)
  :homepage   "https://github.com/juergenhoetzel/babel"
  :wikipage   "http://www.emacswiki.org/BabelMode"
  :commentary "\

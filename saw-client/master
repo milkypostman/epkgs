@@ -5,6 +5,6 @@
  :authors    (("Jeremy Hankins nowan at nowan dot org"))
  :maintainer ("Jeremy Hankins nowan at nowan dot org")
  :provided   (saw-client)
- :keywords   ("sawfish")
+ :keywords   (sawfish)
  :homepage   "http://www.emacswiki.org/SawClient"
  :wikipage   "http://www.emacswiki.org/SawClient")

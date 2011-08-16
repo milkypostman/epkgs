@@ -6,7 +6,7 @@
  :maintainer ("Ken Stevens" . "k.stevens@ieee.org")
  :provided   (ispell)
  :required   ((("ehelp" ehelp)))
- :keywords   ("unix" "wp")
+ :keywords   (unix wp)
  :homepage   "http://kdstevens.com/~stevens/ispell-page.html"
  :wikipage   "http://www.emacswiki.org/InteractiveSpell"
  :commentary "\

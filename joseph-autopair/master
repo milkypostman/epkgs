@@ -5,7 +5,7 @@
  :authors    (("Joseph" . "jixiuf@gmail.com"))
  :maintainer ("Joseph" . "jixiuf@gmail.com")
  :provided   (joseph-autopair)
- :keywords   ("autopair" "parentheses" "skeleton")
+ :keywords   (autopair parentheses skeleton)
  :homepage   "https://github.com/jixiuf/joseph-autopair"
  :commentary "\
 this package doesn't use skeleton or anything like this.

@@ -6,7 +6,7 @@
  :authors    (("Alp Aker" . "alp.tekin.aker@gmail.com"))
  :maintainer ("Alp Aker" . "alp.tekin.aker@gmail.com")
  :provided   (per-window-point)
- :keywords   ("convenience")
+ :keywords   (convenience)
  :homepage   "https://github.com/alpaker/Per-Window-Point"
  :commentary "\
 Emacs conveniently allows one to work on different parts of the same

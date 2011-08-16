@@ -5,7 +5,7 @@
  :maintainer ("FSF")
  :provided   (spook)
  :required   ((("cookie1" cookie1)))
- :keywords   ("games")
+ :keywords   (games)
  :commentary "\
 Steve Strassmann <straz@media-lab.media.mit.edu> didn't write
 this, and even if he did, he really didn't mean for you to use it

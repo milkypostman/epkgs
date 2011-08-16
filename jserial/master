@@ -5,5 +5,5 @@
  :maintainer ("Phillip Lord")
  :provided   (jserial)
  :required   ((("jdee" jde)))
- :keywords   ("java" "tools")
+ :keywords   (java tools)
  :homepage   "http://homepages.cs.ncl.ac.uk/phillip.lord/emacs.html")

@@ -5,5 +5,5 @@
  :authors    (("Zajcev Evgeny" . "zevlg@yandex.ru"))
  :maintainer ("Zajcev Evgeny" . "zevlg@yandex.ru")
  :provided   (multr)
- :keywords   ("interactive" "regions")
+ :keywords   (interactive regions)
  :homepage   "http://lgarc.narod.ru/xemacs")

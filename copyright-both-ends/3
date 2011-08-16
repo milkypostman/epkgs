@@ -5,7 +5,7 @@
  :authors    (("Kevin Ryde" . "user42@zip.com.au"))
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (copyright-both-ends)
- :keywords   ("tools")
+ :keywords   (tools)
  :homepage   "http://user42.tuxfamily.org/copyright-both-ends/index.html"
  :commentary "\
 `copyright-both-ends-update' does a `copyright-update' to update a

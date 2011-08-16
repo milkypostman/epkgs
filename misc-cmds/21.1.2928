@@ -9,7 +9,7 @@
 	      (("frame-fns" frame-fns)
 	       ("hl-line" hl-line)
 	       ("misc-fns" misc-fns)))
- :keywords   ("extensions" "internal" "local" "maint" "unix")
+ :keywords   (extensions internal local maint unix)
  :commentary "\
 Miscellaneous commands (interactive functions).
 

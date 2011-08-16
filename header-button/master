@@ -7,7 +7,7 @@
  :maintainer ("Jonas Bernoulli" . "jonas@bernoul.li")
  :provided   (header-button)
  :required   ((("button" button)))
- :keywords   ("extensions")
+ :keywords   (extensions)
  :homepage   "https://github.com/tarsius/header-button"
  :commentary "\
 This package extends `button' by adding support for adding buttons to

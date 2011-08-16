@@ -8,7 +8,7 @@
  :required   ((("cl" cl)
 	       ("emacs-core" derived font-lock)
 	       ("html-helper-mode" html-helper-mode)))
- :keywords   ("blog" "hatena")
+ :keywords   (blog hatena)
  :homepage   "https://github.com/yaotti/hatena-tools"
  :commentary "\
 * hatena-group-keyword-mode.elについて

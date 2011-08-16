@@ -5,7 +5,7 @@
  :authors    (("Karl Fogel" . "kfogel@red-bean.com"))
  :maintainer ("FSF")
  :provided   (saveplace)
- :keywords   ("bookmarks" "placeholders")
+ :keywords   (bookmarks placeholders)
  :wikipage   "http://www.emacswiki.org/SavePlace"
  :commentary "\
 Automatically save place in files, so that visiting them later

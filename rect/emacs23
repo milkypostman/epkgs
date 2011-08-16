@@ -4,7 +4,7 @@
  :license    "GPL-3"
  :maintainer ("Didier Verna" . "didier@xemacs.org")
  :provided   (rect)
- :keywords   ("internal")
+ :keywords   (internal)
  :commentary "\
 This package provides the operations on rectangles that are documented
 in the Emacs manual.

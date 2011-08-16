@@ -5,7 +5,7 @@
  :maintainer ("Seth Falcon" . "seth@userprimary.net")
  :provided   (extract-ical)
  :required   ((("gnus" gnus)))
- :keywords   ("gnus" "ical" "icalendar" "vcal")
+ :keywords   (gnus ical icalendar vcal)
  :commentary "\
 extract-ical provides send-invite-to-ical to extract an
 icalendar event from a buffer, write it to a temporary

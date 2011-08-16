@@ -7,6 +7,6 @@
  :required   (nil
 	      (("cedet" speedbar)
 	       ("compile" compile)))
- :keywords   ("monad" "msh" "powershell")
+ :keywords   (monad msh powershell)
  :homepage   "https://github.com/fperrin/powershell-mode"
  :wikipage   "http://www.emacswiki.org/PowerShell")

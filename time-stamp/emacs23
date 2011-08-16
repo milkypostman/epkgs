@@ -4,7 +4,7 @@
  :license    "GPL-3"
  :maintainer ("Stephen Gildea" . "gildea@stop.mail-abuse.org")
  :provided   (time-stamp)
- :keywords   ("tools")
+ :keywords   (tools)
  :wikipage   "http://www.emacswiki.org/TimeStamp"
  :commentary "\
 A template in a file can be updated with a new time stamp when

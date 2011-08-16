@@ -7,7 +7,7 @@
  :maintainer ("yascentur" . "screenname@gmail.com")
  :provided   (judge-indent)
  :required   ((("cl" cl)))
- :keywords   ("indent" "tab")
+ :keywords   (indent tab)
  :homepage   "https://github.com/yascentur/judge-indent-el"
  :commentary "\
 The `judge-indent-mode' judges, soon after finding file,

@@ -7,7 +7,7 @@
  :provided   (msb)
  :required   ((("cl" cl)
 	       ("dired" dired)))
- :keywords   ("buffer" "menu" "mouse")
+ :keywords   (buffer menu mouse)
  :commentary "\
 Purpose of this package:
   1. Offer a function for letting the user choose buffer,

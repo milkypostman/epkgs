@@ -5,5 +5,5 @@
  :authors    (("Noah Friedman" . "friedman@prep.ai.mit.edu"))
  :maintainer (nil . "friedman@prep.ai.mit.edu")
  :provided   (emacs-name)
- :keywords   ("extensions" "games")
+ :keywords   (extensions games)
  :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html")

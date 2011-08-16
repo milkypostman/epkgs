@@ -7,7 +7,7 @@
  :provided   (crisp)
  :required   ((("cl" cl)
 	       ("scroll-all" scroll-all)))
- :keywords   ("brief" "crisp" "emulations")
+ :keywords   (brief crisp emulations)
  :commentary "\
 Keybindings and minor functions to duplicate the functionality and
 finger-feel of the CRiSP/Brief editor.  This package is designed to

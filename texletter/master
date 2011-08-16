@@ -5,7 +5,7 @@
  :authors    (("Stefan Kamphausen" . "mail@skamphausen.de"))
  :maintainer ("Stefan Kamphausen" . "mail@skamphausen.de")
  :provided   (texletter)
- :keywords   ("tex" "wp")
+ :keywords   (tex wp)
  :homepage   "http://www.skamphausen.de/cgi-bin/ska"
  :commentary "\
 TEXLetter on the Web:

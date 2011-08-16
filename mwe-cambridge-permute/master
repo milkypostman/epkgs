@@ -5,7 +5,7 @@
  :authors    (("Michael Weber" . "michaelw@foldr.org"))
  :maintainer ("Michael Weber" . "michaelw@foldr.org")
  :provided   (cambridge-permute)
- :keywords   ("games")
+ :keywords   (games)
  :homepage   "http://www.foldr.org/~michaelw/emacs"
  :commentary "\
 tested with: GNU/Emacs 21.3.50

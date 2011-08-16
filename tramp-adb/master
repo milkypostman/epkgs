@@ -7,7 +7,7 @@
  :maintainer ("Juergen Hoetzel" . "juergen@archlinux.org")
  :provided   (tramp-adb)
  :required   ((("tramp" tramp)))
- :keywords   ("comm" "processes")
+ :keywords   (comm processes)
  :homepage   "https://github.com/juergenhoetzel/tramp-adb"
  :commentary "\
 In order to activate this package, perform the following steps:

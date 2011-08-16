@@ -7,7 +7,7 @@
  :maintainer ("Jose Antonio Ortega" . "jao@gnu.org")
  :provided   (mdfind)
  :required   ((("org-mode" org)))
- :keywords   ("data")
+ :keywords   (data)
  :commentary "\
 A quick and dirty major mode for displaying results of OS X's
 `mdfind' command. Put this file in your load path and require

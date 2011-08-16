@@ -6,7 +6,7 @@
  :maintainer ("David O'Toole" . "dto@gnu.org")
  :provided   (golisp)
  :required   ((("cl" cl)))
- :keywords   ("extensions" "hypermedia" "lisp" "tools")
+ :keywords   (extensions hypermedia lisp tools)
  :wikipage   "http://www.emacswiki.org/GoLispMode"
  :commentary "\
 Golisp-mode is a small lisp code navigation and indexing tool for

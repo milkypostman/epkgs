@@ -7,7 +7,7 @@
  :provided   (recentf-ext)
  :required   ((("cl" cl)
 	       ("recentf" recentf)))
- :keywords   ("convenience" "files")
+ :keywords   (convenience files)
  :commentary "\
 Extension of `recentf' package.
 

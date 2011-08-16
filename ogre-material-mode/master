@@ -6,5 +6,5 @@
  :maintainer (nil . "f.degroef@gmail.com")
  :provided   (ogre-material-mode)
  :required   ((("cc-mode" cc-mode)))
- :keywords   ("languages")
+ :keywords   (languages)
  :homepage   "http://bitbucket.org/sevas/ogre-material-mode")

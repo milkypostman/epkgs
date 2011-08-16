@@ -7,7 +7,7 @@
  :provided   (sdic-inline-pos-tip)
  :required   ((("pos-tip" pos-tip)
 	       ("sdic-inline" sdic-inline)))
- :keywords   ("dictionary" "tooltip")
+ :keywords   (dictionary tooltip)
  :commentary "\
 This program was written as a sample of pos-tip.el library, and
 provides the tooltip showing word meanings at cursor position

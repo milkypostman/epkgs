@@ -14,7 +14,7 @@
 	       ("thingatpt" thingatpt)
 	       ("url" url))
 	      (("anything-auto-install" anything-auto-install)))
- :keywords   ("auto-install")
+ :keywords   (auto-install)
  :homepage   "http://www.emacswiki.org/AutoInstall"
  :wikipage   "http://www.emacswiki.org/AutoInstall"
  :commentary "\

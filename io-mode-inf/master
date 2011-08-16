@@ -6,7 +6,7 @@
  :maintainer ("Seth Mason")
  :provided   (io-mode-inf)
  :required   ((("comint" comint)))
- :keywords   ("io" "languages")
+ :keywords   (io languages)
  :homepage   "https://github.com/slackorama/io-emacs"
  :commentary "\
 Run an Io interpreter in Emacs.")

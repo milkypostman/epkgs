@@ -5,7 +5,7 @@
  :authors    (("Alp Aker" . "alp.tekin.aker@gmail.com"))
  :maintainer ("Alp Aker" . "alp.tekin.aker@gmail.com")
  :provided   (rebound)
- :keywords   ("convenience")
+ :keywords   (convenience)
  :commentary "\
 Emacs conveniently allows one to work on different parts of the same
 buffer at the same time, but the rules governing buffer display are, for

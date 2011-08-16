@@ -7,7 +7,7 @@
  :maintainer ("André Riemann" . "andre.riemann@web.de")
  :provided   (erc-highlight-nicknames)
  :required   ((("erc" erc erc-button)))
- :keywords   ("comm" "faces")
+ :keywords   (comm faces)
  :homepage   "https://github.com/amalloy/erc-highlight-nick"
  :wikipage   "http://www.emacswiki.org/ErcHighlightNicknames"
  :commentary "\

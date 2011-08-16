@@ -5,7 +5,7 @@
  :authors    (("Terry Jones" . "terry@santafe.edu"))
  :maintainer ("Terry Jones" . "terry@santafe.edu")
  :provided   (shadow)
- :keywords   ("lisp")
+ :keywords   (lisp)
  :commentary "\
 The functions in this file detect (`load-path-shadows-find')
 and display (`list-load-path-shadows') potential load-path

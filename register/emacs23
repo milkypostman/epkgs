@@ -4,7 +4,7 @@
  :license    "GPL-3"
  :maintainer ("FSF")
  :provided   (register)
- :keywords   ("internal")
+ :keywords   (internal)
  :commentary "\
 This package of functions emulates and somewhat extends the venerable
 TECO's `register' feature, which permits you to save various useful

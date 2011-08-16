@@ -5,7 +5,7 @@
  :authors    (("Michael Staats" . "michael@thp.uni-duisburg.de"))
  :maintainer ("Michael Staats" . "michael@thp.uni-duisburg.de")
  :provided   (pc-select)
- :keywords   ("convenience" "emulations")
+ :keywords   (convenience emulations)
  :commentary "\
 This package emulates the mark, copy, cut and paste look-and-feel of motif
 programs (which is the same as the MAC gui and (sorry for that) MS-Windows).

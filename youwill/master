@@ -4,7 +4,7 @@
  :authors    (("Bob Manson" . "manson@cygnus.com"))
  :maintainer ("Noah Friedman" . "friedman@prep.ai.mit.edu")
  :provided   (youwill)
- :keywords   ("extensions")
+ :keywords   (extensions)
  :homepage   "ftp://ftp.splode.com/pub/users/friedman/emacs-lisp"
  :commentary "\
 Bob Manson originally wrote this program in ksh.

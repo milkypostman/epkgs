@@ -6,7 +6,7 @@
  :maintainer ("Matthew L. Fidler")
  :provided   (linum-off)
  :required   ((("linum" linum)))
- :keywords   ("line" "numbering")
+ :keywords   (line numbering)
  :commentary "\
 Put this in your load path and then:
 (require 'linum-off)")

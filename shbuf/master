@@ -3,4 +3,4 @@
  :provided   (shbuf)
  :required   ((("cl" cl)
 	       ("distel" erlext)))
- :keywords   ("erlang" "network" "shared buffers"))
+ :keywords   (erlang network shared\ buffers))

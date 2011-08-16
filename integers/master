@@ -7,7 +7,7 @@
  :maintainer ("Mark Triggs,")
  :provided   (integers)
  :required   ((("thingatpt" thingatpt)))
- :keywords   ("convenience")
+ :keywords   (convenience)
  :homepage   "http://www.burlingtontelecom.net/~ashawley"
  :wikipage   "http://www.emacswiki.org/Integers"
  :commentary "\

@@ -4,7 +4,7 @@
  :license    "GPL-3"
  :maintainer ("Geoff Voelker" . "voelker@cs.washington.edu")
  :provided   (dos-w32)
- :keywords   ("internal")
+ :keywords   (internal)
  :commentary "\
 Parts of this code are duplicated functions taken from dos-fns.el
 and winnt.el.")

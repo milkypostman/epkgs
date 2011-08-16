@@ -5,7 +5,7 @@
  :authors    (("Tom Houlder" . "thoulder@icor.fr"))
  :maintainer ("Tom Houlder" . "thoulder@icor.fr")
  :provided   (mantemp)
- :keywords   ("templates")
+ :keywords   (templates)
  :commentary "\
 The following is a typical error message from g++ using STL (here
 with split lines):

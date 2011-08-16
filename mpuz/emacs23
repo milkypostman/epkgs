@@ -5,7 +5,7 @@
  :authors    (("Philippe Schnoebelen" . "phs@lsv.ens-cachan.fr"))
  :maintainer ("Philippe Schnoebelen" . "phs@lsv.ens-cachan.fr")
  :provided   (mpuz)
- :keywords   ("games")
+ :keywords   (games)
  :commentary "\
 `M-x mpuz' generates a random multiplication puzzle.  This is a
 multiplication example in which each digit has been consistently replaced

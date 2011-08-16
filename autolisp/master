@@ -12,6 +12,6 @@
 	       ("imenu" imenu)
 	       ("lisp-mode" lisp-mode)
 	       ("outline" outline)))
- :keywords   ("autolisp" "major-mode")
+ :keywords   (autolisp major-mode)
  :homepage   "http://autocad.xarch.at/lsp_tools"
  :wikipage   "http://www.emacswiki.org/AutoLispMode")

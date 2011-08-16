@@ -7,7 +7,7 @@
  :provided   (constraint)
  :required   ((("cedet" eieio)
 	       ("cl" cl)))
- :keywords   ("constraint")
+ :keywords   (constraint)
  :commentary "\
 This package provides a constraint propagation library.
 Please refer to the chapter 3 of the book \"Structure and Interpretation

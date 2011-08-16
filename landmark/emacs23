@@ -4,7 +4,7 @@
  :license    "GPL-3"
  :provided   (landmark)
  :required   ((("cl" cl)))
- :keywords   ("adaptive search" "chemotaxis" "games" "gomoku" "neural network")
+ :keywords   (adaptive\ search chemotaxis games gomoku neural\ network)
  :commentary "\
 Lm is a relatively non-participatory game in which a robot
 attempts to maneuver towards a tree at the center of the window

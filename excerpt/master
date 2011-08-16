@@ -8,7 +8,7 @@
  :required   ((("emacs-core" overlay)
 	       ("file-properties" file-properties)
 	       ("tellib" tellib)))
- :keywords   ("editing" "summaries" "text snippets" "writing reports")
+ :keywords   (editing summaries text\ snippets writing\ reports)
  :homepage   "http://members.a1.net/t.link/CompEmacsExcerpt.html"
  :commentary "\
 ;---(:excerpt-beg excerpt :name doc)---

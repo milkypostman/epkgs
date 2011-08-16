@@ -5,7 +5,7 @@
  :authors    (("Edward M. Reingold" . "reingold@cs.uiuc.edu"))
  :maintainer ("Glenn Morris" . "rgm@gnu.org")
  :provided   (appt cal-bahai cal-china cal-coptic cal-dst cal-french cal-hebrew cal-html cal-islam cal-iso cal-julian cal-mayan cal-menu cal-move cal-persia cal-tex cal-x calendar diary-lib holidays lunar solar)
- :keywords   ("calendar")
+ :keywords   (calendar)
  :wikipage   "http://www.emacswiki.org/CalendarMode"
  :commentary "\
 This collection of functions implements a calendar window.  It

@@ -12,7 +12,7 @@
 	       ("eldoc" eldoc)
 	       ("newcomment" newcomment))
 	      (("fringe-helper" fringe-helper)))
- :keywords   ("lisp")
+ :keywords   (lisp)
  :homepage   "http://nschum.de/src/emacs/elk-test"
  :wikipage   "http://www.emacswiki.org/ElkTest"
  :commentary "\

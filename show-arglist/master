@@ -5,7 +5,7 @@
  :authors    (("Kentaro Shimatani" . "kentarou.shimatani@gmail.com"))
  :maintainer ("Kentaro Shimatani" . "kentarou.shimatani@gmail.com")
  :provided   (show-arglist)
- :keywords   ("function")
+ :keywords   (function)
  :homepage   "https://github.com/peccu/show-arglist.el"
  :commentary "\
 Put this into your ~/.emacs.d/init.d or ~/.emacs:

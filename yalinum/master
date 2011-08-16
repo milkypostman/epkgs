@@ -6,7 +6,7 @@
  :authors    ((nil . "tm8st@hotmail.co.jp"))
  :maintainer (nil . "tm8st@hotmail.co.jp")
  :provided   (yalinum)
- :keywords   ("convenience" "line" "linum" "number")
+ :keywords   (convenience line linum number)
  :homepage   "https://github.com/tm8st/emacs-yalinum"
  :commentary "\
 linum.elをベースとして、

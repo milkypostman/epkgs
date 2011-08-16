@@ -7,7 +7,7 @@
  :maintainer ("Daniel Hackney")
  :provided   (cl-merge)
  :required   ((("cl" cl)))
- :keywords   ("internal" "lisp")
+ :keywords   (internal lisp)
  :homepage   "https://github.com/haxney/cl-merge"
  :commentary "\
 Provides the `cl-merge-struct' function to merge structures created by the cl

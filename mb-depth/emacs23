@@ -5,7 +5,7 @@
  :authors    (("Miles Bader" . "miles@gnu.org"))
  :maintainer ("Miles Bader" . "miles@gnu.org")
  :provided   (mb-depth)
- :keywords   ("convenience")
+ :keywords   (convenience)
  :commentary "\
 Defines the minor mode `minibuffer-depth-indicate-mode'.
 

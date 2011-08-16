@@ -8,7 +8,7 @@
  :provided   (echo-pick)
  :required   ((("cl" cl)
 	       ("eldoc" eldoc)))
- :keywords   ("convenience")
+ :keywords   (convenience)
  :homepage   "http://nschum.de/src/emacs/echo-pick"
  :commentary "\
 A bunch of modes (e.g. Eldoc) exist that display information about the cursor

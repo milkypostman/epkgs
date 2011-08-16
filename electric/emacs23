@@ -5,6 +5,6 @@
  :authors    (("K. Shane Hartman"))
  :maintainer ("FSF")
  :provided   (electric)
- :keywords   ("extensions")
+ :keywords   (extensions)
  :commentary "\
 zaaaaaaap")

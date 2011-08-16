@@ -11,7 +11,7 @@
 	       ("easymenu" easymenu)
 	       ("help-mode" help-mode))
 	      (("dropdown-list" dropdown-list)))
- :keywords   ("convenience" "emulation")
+ :keywords   (convenience emulation)
  :homepage   "http://code.google.com/p/yasnippet"
  :wikipage   "http://www.emacswiki.org/Yasnippet"
  :commentary "\

@@ -6,7 +6,7 @@
  :authors    (("Ian Eure" . "ian.eure@gmail.com"))
  :maintainer ("Ian Eure" . "ian.eure@gmail.com")
  :provided   (python-pep8)
- :keywords   ("languages" "python")
+ :keywords   (languages python)
  :homepage   "http://gist.github.com/302847"
  :commentary "\
 (autoload 'python-pep8 \"python-pep8\")

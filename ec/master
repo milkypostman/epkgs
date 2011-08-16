@@ -3,7 +3,7 @@
  :license    "GPL-2"
  :authors    (("Patrick Gundlach" . "patrick@gundla.ch"))
  :maintainer ("Patrick Gundlach" . "patrick@gundla.ch")
- :keywords   ("unix")
+ :keywords   (unix)
  :homepage   "http://levana.de/emacs"
  :commentary "\
 Ok, you wanted some comments:

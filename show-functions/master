@@ -6,7 +6,7 @@
  :maintainer ("Aurélien Tisné" . "aurelien.tisne@free.fr")
  :provided   (show-functions)
  :required   ((("widget" wid-edit)))
- :keywords   ("convenience")
+ :keywords   (convenience)
  :homepage   "http://aurelien.tisne.free.fr/emacs-pages/emacs.html"
  :commentary "\
 This package build a temporary buffer containing the list of all 

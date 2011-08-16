@@ -5,7 +5,7 @@
  :authors    (("Olaf Sylvester" . "olaf@geekware.de"))
  :maintainer ("Olaf Sylvester" . "olaf@geekware.de")
  :provided   (ibs)
- :keywords   ("convenience")
+ :keywords   (convenience)
  :homepage   "http://www.geekware.de/software/emacs"
  :commentary "\
 This Emacs package provides a minor mode for buffer cycling;

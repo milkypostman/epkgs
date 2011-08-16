@@ -6,6 +6,6 @@
  :maintainer ("Mario Lang" . "mlang@delysid.org")
  :provided   (ecasound-ewf)
  :required   ((("ecasound" ecasound)))
- :keywords   ("audio" "ecasound" "files" "wave")
+ :keywords   (audio ecasound files wave)
  :commentary "\
 This is a major mode for ecasound .ewf file format.")

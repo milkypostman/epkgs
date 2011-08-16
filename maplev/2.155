@@ -13,7 +13,7 @@
 	       ("emacs-core" font-lock)
 	       ("imenu" imenu)
 	       ("info" info)))
- :keywords   ("languages" "maple")
+ :keywords   (languages maple)
  :homepage   "http://www.mapleprimes.com/blog/joe-riel/emacs-mode-for-maple"
  :commentary "\
 This package defines five major modes:

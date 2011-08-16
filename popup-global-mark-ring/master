@@ -7,7 +7,7 @@
  :maintainer ("whitypig" . "whitypig@gmail.com")
  :provided   (popup-global-mark-ring)
  :required   ((("popup" popup)))
- :keywords   ("emacs" "lisp" "meadow" "popup")
+ :keywords   (emacs lisp meadow popup)
  :homepage   "https://github.com/whitypig/popup-global-mark-ring"
  :commentary "\
 This software is greatly inspired by popup-kill-ring

@@ -9,7 +9,7 @@
 	       ("imenu" imenu)
 	       ("tal-indent" tal-indent)
 	       ("which-func" which-func)))
- :keywords   ("extensions" "guardian" "languages" "nsk" "ptal" "tal" "tandem")
+ :keywords   (extensions guardian languages nsk ptal tal tandem)
  :homepage   "http://www.emacswiki.org/TalMode"
  :wikipage   "http://www.emacswiki.org/TalMode"
  :commentary "\

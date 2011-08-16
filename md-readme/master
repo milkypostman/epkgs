@@ -6,7 +6,7 @@
  :authors    (("Thomas Kappler" . "tkappler@gmail.com"))
  :maintainer ("Thomas Kappler" . "tkappler@gmail.com")
  :provided   (md-readme)
- :keywords   ("documentation" "github" "header" "help" "lisp" "markdown" "readme")
+ :keywords   (documentation github header help lisp markdown readme)
  :homepage   "https://github.com/thomas11/md-readme"
  :wikipage   "http://www.emacswiki.org/MdReadme"
  :commentary "\

@@ -6,7 +6,7 @@
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (compilation-always-kill)
  :required   ((("advice" advice)))
- :keywords   ("processes")
+ :keywords   (processes)
  :homepage   "http://user42.tuxfamily.org/compilation-always-kill/index.html"
  :commentary "\
 `compilation-always-kill-mode' minor mode makes M-x compile kill any

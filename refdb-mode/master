@@ -10,6 +10,6 @@
  :required   ((("easy-mmode" easy-mmode)
 	       ("easymenu" easymenu)
 	       ("emacs-core" derived)))
- :keywords   ("bibliography" "docbook" "tei" "xml")
+ :keywords   (bibliography docbook tei xml)
  :homepage   "http://refdb.sourceforge.net"
  :wikipage   "http://www.emacswiki.org/RefdbMode")

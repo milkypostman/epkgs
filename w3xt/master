@@ -7,7 +7,7 @@
  :provided   (w3xt)
  :required   ((("cl" cl)
 	       ("w3m" w3m)))
- :keywords   ("mime")
+ :keywords   (mime)
  :commentary "\
 w3XT lets generic lisp functions to be called when certain MIME types are
  encountered. Once `w3m-content-type-alist' is properly configured with a

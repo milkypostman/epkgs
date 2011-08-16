@@ -8,7 +8,7 @@
  :required   ((("cl" cl)
 	       ("emacs-core" font-lock)
 	       ("view" view)))
- :keywords   ("convenience" "docs" "help" "languages" "lisp" "tools")
+ :keywords   (convenience docs help languages lisp tools)
  :homepage   "http://www.emacswiki.org/UsageMemo"
  :wikipage   "http://www.emacswiki.org/UsageMemo"
  :commentary "\

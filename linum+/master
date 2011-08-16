@@ -6,7 +6,7 @@
  :maintainer ("ahei" . "ahei0802@gmail.com")
  :provided   (linum+)
  :required   ((("linum" linum)))
- :keywords   ("line" "number")
+ :keywords   (line number)
  :homepage   "http://www.emacswiki.org/LinumPlus"
  :wikipage   "http://www.emacswiki.org/LinumPlus"
  :commentary "\

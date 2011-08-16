@@ -7,7 +7,7 @@
  :provided   (edt)
  :required   ((("ehelp" ehelp)
 	       ("picture" picture)))
- :keywords   ("emulations")
+ :keywords   (emulations)
  :commentary "\
 This is Version 4.0 of the EDT Emulation for Emacs 19 and above.
 It comes with special functions which replicate nearly all of EDT's

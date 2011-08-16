@@ -7,7 +7,7 @@
  :maintainer ("Yves Senn" . "yves.senn@gmx.ch")
  :provided   (rvm)
  :required   ((("cl" cl)))
- :keywords   ("ruby" "rvm")
+ :keywords   (ruby rvm)
  :homepage   "https://github.com/senny/rvm.el"
  :wikipage   "http://www.emacswiki.org/RvmEl"
  :commentary "\

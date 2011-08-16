@@ -5,7 +5,7 @@
  :authors    (("Jan Schormann" . "jan.schormann@rechen-gilde.de"))
  :maintainer ("Jan Schormann" . "jan.schormann@rechen-gilde.de")
  :provided   (solitaire)
- :keywords   ("games")
+ :keywords   (games)
  :commentary "\
 This mode is for playing a well-known game of solitaire
 in which you jump pegs across other pegs.

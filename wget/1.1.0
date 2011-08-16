@@ -5,7 +5,7 @@
  :maintainer ("Kevin A. Burton" . "burton@openprivacy.org")
  :provided   (wget)
  :required   ((("cl" cl)))
- :keywords   ("wget")
+ :keywords   (wget)
  :wikipage   "http://www.emacswiki.org/EmacsWget"
  :commentary "\
 This is an interface for wget.  Basically it allows you to pull down URLs and

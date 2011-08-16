@@ -5,7 +5,7 @@
  :authors    (("Emmanuel Briot" . "briot@gnat.com"))
  :maintainer ("Mark A. Hershberger" . "mah@everybody.org")
  :provided   (xml)
- :keywords   ("data" "xml")
+ :keywords   (data xml)
  :wikipage   "http://www.emacswiki.org/XmlMode"
  :commentary "\
 This file contains a somewhat incomplete non-validating XML parser.  It

@@ -5,7 +5,7 @@
  :authors    (("Simon Josefsson" . "jas@pdc.kth.se"))
  :maintainer ("Simon Josefsson" . "jas@pdc.kth.se")
  :provided   (rijndael)
- :keywords   ("aes" "blocks" "cipher" "cryptography" "encryption" "rijndael" "symmetric")
+ :keywords   (aes blocks cipher cryptography encryption rijndael symmetric)
  :homepage   "http://josefsson.org/aes"
  :commentary "\
 This is a implementation of the Rijndael block cipher algorithm in

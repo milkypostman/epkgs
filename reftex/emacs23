@@ -9,7 +9,7 @@
  :required   ((("cl" cl)
 	       ("custom" custom)
 	       ("easymenu" easymenu)))
- :keywords   ("tex")
+ :keywords   (tex)
  :homepage   "http://www.gnu.org/software/auctex/reftex.html"
  :wikipage   "http://www.emacswiki.org/RefTeX"
  :commentary "\

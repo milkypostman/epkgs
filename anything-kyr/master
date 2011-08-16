@@ -6,7 +6,7 @@
  :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
  :provided   (anything-kyr anything-kyr-config)
  :required   ((("anything" anything)))
- :keywords   ("anything" "convenience")
+ :keywords   (anything convenience)
  :commentary "\
 Show context-aware commands by `anything'. It avoids forgetting
 existence of appropriate commands. KYR is an abbreviation of \"Kuuki

@@ -20,6 +20,6 @@
 	       ("signature" signature)
 	       ("tiny-tools" calist)
 	       ("w3" w3)))
- :keywords   ("encoded-word" "mail" "mime" "multilingual" "multimedia" "news")
+ :keywords   (encoded-word mail mime multilingual multimedia news)
  :homepage   "http://www.kanji.zinbun.kyoto-u.ac.jp/~tomo/lemi"
  :wikipage   "http://www.emacswiki.org/SemiIsEmacsMimeInterface")

@@ -5,7 +5,7 @@
  :license    "GPL-3"
  :authors    (("Nic Ferrier" . "nic@ferrier.me.uk"))
  :maintainer ("Nic Ferrier" . "nic@ferrier.me.uk")
- :keywords   ("lisp")
+ :keywords   (lisp)
  :homepage   "https://github.com/nicferrier/elwikidoc"
  :commentary "\
 This is for making documentation from Elisp doc strings. It is

@@ -6,5 +6,5 @@
  :authors    (("Chris Done" . "chrisdone@gmail.com"))
  :maintainer ("Chris Done" . "chrisdone@gmail.com")
  :provided   (asp-mode)
- :keywords   ("asp" "major-mode")
+ :keywords   (asp major-mode)
  :homepage   "https://github.com/chrisdone/asp-mode")

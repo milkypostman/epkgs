@@ -6,7 +6,7 @@
  :authors    (("Ian Eure" . "ian.eure@gmail.com"))
  :maintainer ("Ian Eure" . "ian.eure@gmail.com")
  :provided   (python-pylint)
- :keywords   ("languages" "python")
+ :keywords   (languages python)
  :homepage   "http://gist.github.com/302848"
  :commentary "\
 (autoload 'python-pylint \"python-pylint\")

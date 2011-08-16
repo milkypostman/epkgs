@@ -5,7 +5,7 @@
  :maintainer ("FSF")
  :provided   (reporter)
  :required   ((("sendmail" sendmail)))
- :keywords   ("mail" "maint" "tools")
+ :keywords   (mail maint tools)
  :commentary "\
 End User Interface
 ==================

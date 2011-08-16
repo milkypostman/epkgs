@@ -6,7 +6,7 @@
  :maintainer (nil . "martin@meltin.net")
  :provided   (diary-todo)
  :required   ((("todo-mode" todo-mode)))
- :keywords   ("diary" "todo")
+ :keywords   (diary todo)
  :homepage   "http://meltin.net/hacks/emacs"
  :commentary "\
 Takes the file specified by `todo-file-top', removes the

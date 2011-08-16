@@ -4,5 +4,5 @@
  :authors    (("Michel Schinz" . "schinz@alphanet.ch"))
  :maintainer ("Michel Schinz" . "schinz@alphanet.ch")
  :provided   (desktop-kde-recent)
- :keywords   ("desktop" "kde")
+ :keywords   (desktop kde)
  :homepage   "http://lampwww.epfl.ch/~schinz/elisp")

@@ -8,7 +8,7 @@
  :required   ((("cl" cl)
 	       ("frame-cmds" frame-cmds))
 	      (("doremi-frm" doremi-frm)))
- :keywords   ("frame" "icon")
+ :keywords   (frame icon)
  :homepage   "http://www.emacswiki.org/FisheyeWithThumbs"
  :wikipage   "http://www.emacswiki.org/FisheyeWithThumbs"
  :commentary "\

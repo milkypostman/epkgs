@@ -11,7 +11,7 @@
 	       ("info" info)
 	       ("recentf" recentf)
 	       ("tree-widget" tree-widget)))
- :keywords   ("ide" "speedbar")
+ :keywords   (ide speedbar)
  :homepage   "http://www.emacswiki.org/IdeSkel"
  :wikipage   "http://www.emacswiki.org/IdeSkel"
  :commentary "\

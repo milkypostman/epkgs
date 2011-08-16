@@ -6,7 +6,7 @@
  :maintainer ("Drew Adams")
  :provided   (help-mode+)
  :required   ((("help-mode" help-mode)))
- :keywords   ("help")
+ :keywords   (help)
  :homepage   "http://www.emacswiki.org/HelpModePlus"
  :wikipage   "http://www.emacswiki.org/HelpModePlus"
  :commentary "\

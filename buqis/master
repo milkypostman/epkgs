@@ -5,7 +5,7 @@
  :authors    (("Zajcev Evgeny" . "zevlg@yandex.ru"))
  :maintainer ("none, mail me if you want to maintain this code.")
  :provided   (buqis)
- :keywords   ("buffers" "matching")
+ :keywords   (buffers matching)
  :homepage   "http://www.emacswiki.org/BufferQuickSwitcher"
  :wikipage   "http://www.emacswiki.org/BufferQuickSwitcher"
  :commentary "\

@@ -6,7 +6,7 @@
  :maintainer ("Steven L Baur" . "steve@xemacs.org")
  :provided   (footnote)
  :required   ((("cl" cl)))
- :keywords   ("mail" "news")
+ :keywords   (mail news)
  :wikipage   "http://www.emacswiki.org/FootnoteMode"
  :commentary "\
 This file provides footnote[1] support for message-mode in emacsen.

@@ -7,7 +7,7 @@
  :maintainer ("Phil Hagelberg, Cornelius Mika")
  :provided   (idle-highlight-mode)
  :required   ((("thingatpt" thingatpt)))
- :keywords   ("convenience")
+ :keywords   (convenience)
  :homepage   "https://github.com/nonsequitur/idle-highlight-mode"
  :wikipage   "http://www.emacswiki.org/IdleHighlight"
  :commentary "\

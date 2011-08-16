@@ -4,7 +4,7 @@
  :authors    (("Harley Gorrell" . "harley@mahalito.net"))
  :maintainer ("Harley Gorrell" . "harley@mahalito.net")
  :provided   (crontab-mode)
- :keywords   ("cron" "crontab" "emacs")
+ :keywords   (cron crontab emacs)
  :wikipage   "http://www.emacswiki.org/CrontabMode"
  :commentary "\
 * I want to keep my crontabs under rcs to keep a history of

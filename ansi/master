@@ -7,7 +7,7 @@
  :maintainer ("Johan Andersson" . "johan.rejeep@gmail.com")
  :provided   (ansi)
  :required   ((("cl" cl)))
- :keywords   ("ansi" "color")
+ :keywords   (ansi color)
  :homepage   "https://github.com/rejeep/ansi"
  :commentary "\
 This package defines functions that turn string into ansi colored

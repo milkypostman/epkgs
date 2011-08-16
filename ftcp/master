@@ -6,7 +6,7 @@
  :maintainer (nil . "friedman@splode.com")
  :provided   (ftcp)
  :required   ((("advice" advice)))
- :keywords   ("extensions")
+ :keywords   (extensions)
  :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
  :commentary "\
 In Emacs 19.30 and prior, emacs can hang indefinitely during a call to

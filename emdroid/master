@@ -5,7 +5,7 @@
  :authors    (("jonnay" . "jonnay@jonnay.net"))
  :maintainer ("jonnay" . "jonnay@jonnay.net")
  :provided   (emdroid)
- :keywords   ("java")
+ :keywords   (java)
  :homepage   "http://www.emacswiki.org/EmDroid"
  :wikipage   "http://www.emacswiki.org/EmDroid"
  :commentary "\

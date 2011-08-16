@@ -13,7 +13,7 @@
 	       ("info+" info+)
 	       ("thingatpt" thingatpt)
 	       ("thingatpt+" thingatpt+)))
- :keywords   ("help")
+ :keywords   (help)
  :homepage   "http://www.emacswiki.org/HelpPlus"
  :wikipage   "http://www.emacswiki.org/HelpPlus"
  :commentary "\

@@ -4,7 +4,7 @@
  :authors    (("Reiner Steib" . "reiner.steib@gmx.de"))
  :maintainer ("Reiner Steib" . "reiner.steib@gmx.de")
  :provided   (rs-info)
- :keywords   ("info")
+ :keywords   (info)
  :homepage   "http://theotp1.physik.uni-ulm.de/~ste"
  :commentary "\
 Some functions related to info mode in Emacs.

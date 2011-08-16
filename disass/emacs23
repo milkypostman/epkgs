@@ -7,7 +7,7 @@
  :maintainer ("FSF")
  :provided   (disass)
  :required   ((("emacs-core" byte-compile)))
- :keywords   ("internal")
+ :keywords   (internal)
  :commentary "\
 The single entry point, `disassemble', disassembles a code object generated
 by the Emacs Lisp byte-compiler.  This doesn't invert the compilation

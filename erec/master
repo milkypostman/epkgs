@@ -5,7 +5,7 @@
  :authors    (("Jorgen Schaefer" . "forcer@forcix.cx"))
  :maintainer ("Jorgen Schaefer" . "forcer@forcix.cx")
  :provided   (erec)
- :keywords   ("multimedia")
+ :keywords   (multimedia)
  :homepage   "http://www.emacswiki.org/ErecMode"
  :wikipage   "http://www.emacswiki.org/ErecMode"
  :commentary "\

@@ -6,7 +6,7 @@
  :maintainer ("Francis J. Wright" . "f.j.wright@qmul.ac.uk")
  :provided   (csv-mode)
  :required   ((("emacs-core" sort)))
- :keywords   ("convenience")
+ :keywords   (convenience)
  :homepage   "http://centaur.maths.qmul.ac.uk/Emacs"
  :wikipage   "http://www.emacswiki.org/CsvMode"
  :commentary "\

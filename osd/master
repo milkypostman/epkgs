@@ -5,7 +5,7 @@
  :authors    (("Daniel Brockman" . "drlion@deepwood.net"))
  :maintainer ("Daniel Brockman" . "drlion@deepwood.net")
  :provided   (osd)
- :keywords   ("multimedia")
+ :keywords   (multimedia)
  :wikipage   "http://www.emacswiki.org/OnScreenDisplay"
  :commentary "\
 This file implements a thin Emacs front-end to a small program

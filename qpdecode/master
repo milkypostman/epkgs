@@ -7,7 +7,7 @@
  :provided   (qpdecode)
  :required   ((("fmailutils" fmailutils)
 	       ("sendmail" sendmail)))
- :keywords   ("decoding" "extensions" "mime" "rmail" "vm")
+ :keywords   (decoding extensions mime rmail vm)
  :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
  :commentary "\
 I recommend putting this in your .emacs, after preloading the

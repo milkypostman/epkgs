@@ -7,7 +7,7 @@
  :provided   (xtide)
  :required   ((("calendar" calendar)
 	       ("gnus" time-date)))
- :keywords   ("calendar")
+ :keywords   (calendar)
  :wikipage   "http://www.emacswiki.org/XTide"
  :commentary "\
 M-x xtide displays a tide height graph in Emacs using the \"tide\" program

@@ -11,7 +11,7 @@
 	       ("cl" cl)
 	       ("custom" custom)
 	       ("easymenu" easymenu)))
- :keywords   ("tools")
+ :keywords   (tools)
  :homepage   "http://www.emacswiki.org/FoldingMode"
  :wikipage   "http://www.emacswiki.org/FoldingMode"
  :commentary "\

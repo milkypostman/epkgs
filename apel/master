@@ -12,7 +12,7 @@
 	       ("emacs-core" ccl cyrillic)
 	       ("enriched" enriched)
 	       ("widget" wid-edit)))
- :keywords   ("compatibility")
+ :keywords   (compatibility)
  :homepage   "http://kanji.zinbun.kyoto-u.ac.jp/~tomo/elisp/APEL"
  :wikipage   "http://www.emacswiki.org/APortableEmacsLibrary"
  :commentary "\

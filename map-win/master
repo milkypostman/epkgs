@@ -6,7 +6,7 @@
  :maintainer (nil . "friedman@prep.ai.mit.edu")
  :provided   (map-win)
  :required   ((("emacs-core" backquote)))
- :keywords   ("extensions" "macros")
+ :keywords   (extensions macros)
  :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
  :commentary "\
 This is pretty much equivalent to the `walk-windows' function in Emacs

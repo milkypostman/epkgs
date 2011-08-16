@@ -8,6 +8,6 @@
  :required   ((("apel" poe poem)
 	       ("cl" cl)
 	       ("timezone" timezone)))
- :keywords   ("webdav")
+ :keywords   (webdav)
  :homepage   "http://www.gohome.org/eldav"
  :wikipage   "http://www.emacswiki.org/ElDav")

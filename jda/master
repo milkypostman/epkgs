@@ -12,7 +12,7 @@
 	       ("ido" ido)
 	       ("imenu" imenu)
 	       ("thingatpt" thingatpt)))
- :keywords   ("languages" "tools")
+ :keywords   (languages tools)
  :homepage   "https://github.com/jglee1027/jda-minor-mode"
  :commentary "\
 JDA(Jong Gyu Development Assistant) is a minor mode for developers

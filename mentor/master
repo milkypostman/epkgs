@@ -8,7 +8,7 @@
  :provided   (mentor url-scgi)
  :required   ((("cl" cl)
 	       ("xml-rpc" xml-rpc)))
- :keywords   ("bittorrent" "rtorrent")
+ :keywords   (bittorrent rtorrent)
  :homepage   "https://github.com/solarus/mentor"
  :commentary "\
 This code plugs the bittorrent client rtorrent into GNU Emacs using XML-RPC.

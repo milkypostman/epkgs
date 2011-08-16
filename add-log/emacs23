@@ -5,7 +5,7 @@
  :maintainer ("FSF")
  :provided   (add-log)
  :required   ((("timezone" timezone)))
- :keywords   ("tools")
+ :keywords   (tools)
  :commentary "\
 This facility is documented in the Emacs Manual.
 

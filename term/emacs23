@@ -9,7 +9,7 @@
 	       ("cl" cl)
 	       ("ehelp" ehelp)
 	       ("ring" ring)))
- :keywords   ("processes")
+ :keywords   (processes)
  :commentary "\
 Speed considerations and a few caveats
 --------------------------------------

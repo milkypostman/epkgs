@@ -7,7 +7,7 @@
  :maintainer ("Paul Huff" . "paul.huff@gmail.com")
  :provided   (js-comint)
  :required   ((("comint" comint)))
- :keywords   ("convenience" "inferior-mode" "javascript")
+ :keywords   (convenience inferior-mode javascript)
  :homepage   "http://js-comint-el.sourceforge.net"
  :commentary "\
 js-comint.el let's you run an inferior javascript process in emacs, 

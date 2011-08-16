@@ -6,7 +6,7 @@
  :maintainer ("Anders Holst" . "aho@sans.kth.se")
  :provided   (hippie-exp)
  :required   ((("comint" comint)))
- :keywords   ("abbrev" "convenience")
+ :keywords   (abbrev convenience)
  :commentary "\
 `hippie-expand' is a single function for a lot of different kinds
  of completions and expansions.  Called repeatedly it tries all

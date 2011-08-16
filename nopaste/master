@@ -6,7 +6,7 @@
  :authors    (("Ævar Arnfjörð Bjarmason" . "avar@cpan.org"))
  :maintainer ("Ævar Arnfjörð Bjarmason" . "avar@cpan.org")
  :provided   (nopaste)
- :keywords   ("comm")
+ :keywords   (comm)
  :homepage   "https://github.com/avar/nopaste"
  :wikipage   "http://www.emacswiki.org/nopaste"
  :commentary "\

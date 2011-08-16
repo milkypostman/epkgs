@@ -7,7 +7,7 @@
  :provided   (mailclient)
  :required   ((("mail-utils" mail-utils)
 	       ("sendmail" sendmail)))
- :keywords   ("mail")
+ :keywords   (mail)
  :commentary "\
 This package allows to hand over a buffer to be sent off
 via the system's designated e-mail client.

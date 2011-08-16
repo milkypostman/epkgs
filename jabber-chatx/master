@@ -6,7 +6,7 @@
  :maintainer ("Rodrigo Lazo" . "rlazo.paz@gmail.com")
  :provided   (jabber-chatx)
  :required   ((("jabber" jabber)))
- :keywords   ("extensions")
+ :keywords   (extensions)
  :commentary "\
 Adds the ability to cicle over your previous send messages on the
 chat buffer so you don't have to write them again.")

@@ -5,7 +5,7 @@
  :authors    (("Kevin Ryde" . "user42@zip.com.au"))
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (do-not-edit)
- :keywords   ("convenience")
+ :keywords   (convenience)
  :homepage   "http://user42.tuxfamily.org/do-not-edit/index.html"
  :commentary "\
 This spot of code makes a buffer read-only if it contains \"DO NOT EDIT\"

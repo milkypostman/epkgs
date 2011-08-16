@@ -5,7 +5,7 @@
  :license    "GPL-2"
  :provided   (alternative-files)
  :required   ((("cl" cl)))
- :keywords   ("navigation")
+ :keywords   (navigation)
  :homepage   "https://github.com/doitian/alternative-files-el"
  :commentary "\
 See README.md

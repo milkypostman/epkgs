@@ -4,7 +4,7 @@
  :authors    (("Seiji Zenitani" . "zenitani@mac.com"))
  :maintainer ("Seiji Zenitani" . "zenitani@mac.com")
  :provided   (utf-8m)
- :keywords   ("mac" "multilingual" "unicode")
+ :keywords   (mac multilingual unicode)
  :commentary "\
 This package provides a modified utf-8 encoding (utf-8m) for Mac OSX
 hfs plus volume format. By setting utf-8m as the file-name-coding-system,

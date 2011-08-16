@@ -6,5 +6,5 @@
  :maintainer ("D. Goel" . "deego@glue.umd.edu")
  :provided   (oct)
  :required   ((("cl" cl)))
- :keywords   ("gnu octave" "matlab")
+ :keywords   (gnu\ octave matlab)
  :homepage   "http://www.gnufans.net/~deego/emacs.html")

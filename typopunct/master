@@ -5,7 +5,7 @@
  :authors    (("Oliver Scholz" . "epameinondas@gmx.de"))
  :maintainer ("Oliver Scholz" . "epameinondas@gmx.de")
  :provided   (typopunct)
- :keywords   ("wp")
+ :keywords   (wp)
  :commentary "\
 This package provides the buffer local minor mode TypoPunct which
 helps inserting typographical punctuation marks.  See the docstring

@@ -5,7 +5,7 @@
  :authors    (("Alex Schroeder" . "alex@gnu.org"))
  :maintainer ("Alex Schroeder" . "alex@gnu.org")
  :provided   (simple-call-tree)
- :keywords   ("programming")
+ :keywords   (programming)
  :homepage   "http://www.emacswiki.org/SimpleCallTree"
  :wikipage   "http://www.emacswiki.org/SimpleCallTree"
  :commentary "\

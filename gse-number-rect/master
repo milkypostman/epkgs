@@ -6,5 +6,5 @@
  :maintainer ("Scott Evans")
  :provided   (gse-number-rect)
  :required   ((("rect" rect)))
- :keywords   ("extensions")
+ :keywords   (extensions)
  :homepage   "http://antisleep.com/elisp")

@@ -5,7 +5,7 @@
  :maintainer ("Matsushita Akihisa" . "akihisa@mail.ne.jp")
  :provided   (mgrep)
  :required   ((("compile" compile)))
- :keywords   ("grep" "memo")
+ :keywords   (grep memo)
  :commentary "\
 Probably, you will search a word under same directory many
 times. mgrep can search under the directory you specified

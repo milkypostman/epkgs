@@ -9,7 +9,7 @@
 	       ("ehelp" ehelp)
 	       ("help-mode" help-mode)
 	       ("info" info)))
- :keywords   ("debug" "help" "internal" "maintenance")
+ :keywords   (debug help internal maintenance)
  :homepage   "http://www.emacswiki.org/XrayPackage"
  :wikipage   "http://www.emacswiki.org/XrayPackage"
  :commentary "\

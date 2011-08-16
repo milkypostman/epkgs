@@ -6,7 +6,7 @@
  :maintainer ("Kai Grossjohann" . "grossjohann@ls6.informatik.uni-dortmund.de")
  :provided   (message-x)
  :required   ((("gnus" message)))
- :keywords   ("completion" "compose" "mail" "news")
+ :keywords   (completion compose mail news)
  :commentary "\
 The most recent version of this can always be fetched from the
 following FTP site:

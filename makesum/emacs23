@@ -4,7 +4,7 @@
  :license    "GPL-3"
  :maintainer ("FSF")
  :provided   (makesum)
- :keywords   ("help")
+ :keywords   (help)
  :commentary "\
 Displays a nice human-readable summary of all keybindings in a
 two-column format.")

@@ -5,7 +5,7 @@
  :provided   (mtorus)
  :required   ((("cl" cl)
 	       ("timer" timer)))
- :keywords   ("bookmarks" "extensions" "navigation" "tools" "user")
+ :keywords   (bookmarks extensions navigation tools user)
  :homepage   "http://www.skamphausen.de/cgi-bin/ska/mtorus"
  :wikipage   "http://www.emacswiki.org/MTorus"
  :commentary "\

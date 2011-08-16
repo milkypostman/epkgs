@@ -6,7 +6,7 @@
  :maintainer ("Dave Love" . "fx@gnu.org")
  :provided   (html-php)
  :required   ((("multi-mode" multi-mode)))
- :keywords   ("languages")
+ :keywords   (languages)
  :homepage   "http://www.loveshack.ukfsn.org/emacs"
  :commentary "\
 Multiple-mode editing of PHP embedded in HTML.  Subject to the

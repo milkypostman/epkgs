@@ -5,7 +5,7 @@
  :authors    (("Kevin Rodgers" . "kevin.d.rodgers@gmail.com"))
  :maintainer ("Kevin Rodgers" . "kevin.d.rodgers@gmail.com")
  :provided   (switch-to-new-buffer)
- :keywords   ("convenience" "files")
+ :keywords   (convenience files)
  :commentary "\
 Emacs provides 2 commands to edit text in a new buffer: switch-to-buffer
 and find-file.  The choice between those commands depends on whether

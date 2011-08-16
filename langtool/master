@@ -6,5 +6,5 @@
  :provided   (langtool)
  :required   ((("cl" cl)
 	       ("flymake" flymake)))
- :keywords   ("checker" "grammer" "java")
+ :keywords   (checker grammer java)
  :homepage   "https://github.com/mhayashi1120/Emacs-langtool")

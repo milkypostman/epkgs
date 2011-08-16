@@ -12,6 +12,6 @@
 	       ("imenu" imenu)
 	       ("info-look" info-look)
 	       ("mode-compile" mode-compile)))
- :keywords   ("math")
+ :keywords   (math)
  :homepage   "http://www.emacswiki.org/EukleidesMode"
  :wikipage   "http://www.emacswiki.org/EukleidesMode")

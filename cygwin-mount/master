@@ -6,4 +6,4 @@
  :maintainer ("Michael Cook" . "mcook@xemacs.org")
  :provided   (cygwin-mount)
  :required   ((("ange-ftp" ange-ftp)))
- :keywords   ("cygwin" "files" "mount"))
+ :keywords   (cygwin files mount))

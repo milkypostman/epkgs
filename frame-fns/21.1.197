@@ -7,7 +7,7 @@
  :provided   (frame-fns)
  :required   ((("avoid" avoid)
 	       ("cl" cl)))
- :keywords   ("extensions" "frames" "internal" "local")
+ :keywords   (extensions frames internal local)
  :commentary "\
 Non-interactive frame and window functions.
 

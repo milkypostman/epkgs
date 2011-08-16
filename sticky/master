@@ -6,7 +6,7 @@
  :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
  :provided   (sticky)
  :required   ((("cl" cl)))
- :keywords   ("convenience")
+ :keywords   (convenience)
  :commentary "\
 Input capital letters and some symbols with not shift key but sticky key.
 See `use-sticky-key' docstring.

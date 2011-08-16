@@ -5,7 +5,7 @@
  :authors    (("David O'Toole" . "dto@gnu.org"))
  :maintainer ("David O'Toole" . "dto@gnu.org")
  :provided   (uuidgen)
- :keywords   ("processes")
+ :keywords   (processes)
  :commentary "\
 This file is a simple wrapper around the command-line UUID
 generator \"uuidgen.\" This is available on Debian in the package

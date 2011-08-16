@@ -6,7 +6,7 @@
  :authors    (("Jonas Bernoulli" . "jonas@bernoul.li"))
  :maintainer ("Jonas Bernoulli" . "jonas@bernoul.li")
  :provided   (save-sexp)
- :keywords   ("convenience")
+ :keywords   (convenience)
  :homepage   "https://github.com/tarsius/save-sexp"
  :commentary "\
 Support for replacing S-expressions in files to save variables similar

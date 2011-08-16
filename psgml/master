@@ -10,7 +10,7 @@
 	       ("easymenu" easymenu)
 	       ("edebug" edebug)
 	       ("elp" elp)))
- :keywords   ("languages")
+ :keywords   (languages)
  :homepage   "http://www.lysator.liu.se/projects/about_psgml.html"
  :wikipage   "http://www.emacswiki.org/PsgmlMode"
  :commentary "\

@@ -9,7 +9,7 @@
 	       ("cl" cl)
 	       ("comint" comint)
 	       (nil maxima)))
- :keywords   ("maxima")
+ :keywords   (maxima)
  :homepage   "http://members3.jcom.home.ne.jp/imaxima/Site/Welcome.html"
  :commentary "\
 This file (and imaxima.lisp) provides image support for interacting

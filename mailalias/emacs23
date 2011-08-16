@@ -5,7 +5,7 @@
  :maintainer ("FSF")
  :provided   (mailalias)
  :required   ((("sendmail" sendmail)))
- :keywords   ("mail")
+ :keywords   (mail)
  :commentary "\
 Basic functions for defining and expanding mail aliases.
 These seal off the interface to the alias-definition parts of a

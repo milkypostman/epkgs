@@ -6,7 +6,7 @@
  :maintainer ("Drew Adams")
  :provided   (find-func+)
  :required   ((("find-func" find-func)))
- :keywords   ("emacs-lisp" "functions" "variables")
+ :keywords   (emacs-lisp functions variables)
  :commentary "\
 Extensions to `find-func.el'.
 

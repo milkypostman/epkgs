@@ -6,7 +6,7 @@
  :maintainer ("Stefan Monnier" . "monnier@gnu.org")
  :provided   (easy-mmode)
  :required   ((("cl" cl)))
- :keywords   ("extensions" "lisp")
+ :keywords   (extensions lisp)
  :commentary "\
 Minor modes are useful and common.  This package makes defining a
 minor mode easy, by focusing on the writing of the minor mode

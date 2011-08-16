@@ -5,7 +5,7 @@
  :maintainer ("Jesper Kjær Pedersen" . "blackie@ifad.dk")
  :provided   (narrow-stack)
  :required   ((("advice" advice)))
- :keywords   ("narrow")
+ :keywords   (narrow)
  :homepage   "http://www.imada.sdu.dk/~blackie/emacs"
  :commentary "\
 Narrowing, as implemented in Emacs has one limitation, which I find very

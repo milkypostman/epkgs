@@ -5,7 +5,7 @@
  :authors    (("K. Shane Hartman"))
  :maintainer ("FSF")
  :provided   (chistory)
- :keywords   ("convenience")
+ :keywords   (convenience)
  :commentary "\
 This really has nothing to do with list-command-history per se, but
 its a nice alternative to C-x ESC ESC (repeat-complex-command) and

@@ -15,7 +15,7 @@
 	      (("align" align)
 	       ("skeleton" skeleton)
 	       ("which-func" which-func)))
- :keywords   ("ada" "languages")
+ :keywords   (ada languages)
  :homepage   "http://stephe-leake.org/emacs/ada-mode/emacs-ada-mode.html"
  :wikipage   "http://www.emacswiki.org/AdaMode"
  :commentary "\

@@ -4,7 +4,7 @@
  :license    "GPL-3"
  :maintainer ("FSF")
  :provided   (compare-w)
- :keywords   ("convenience" "files")
+ :keywords   (convenience files)
  :commentary "\
 This package provides one entry point, compare-windows.  It compares
 text starting from point in two adjacent windows, advancing point

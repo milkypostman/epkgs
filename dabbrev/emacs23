@@ -6,7 +6,7 @@
 	      ("Lars Lindberg"))
  :maintainer ("Lars Lindberg" . "lars.lindberg@sypro.cap.se")
  :provided   (dabbrev)
- :keywords   ("abbrev" "completion" "convenience" "expand")
+ :keywords   (abbrev completion convenience expand)
  :commentary "\
 The purpose with this package is to let you write just a few
 characters of words you've written earlier to be able to expand

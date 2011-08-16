@@ -7,7 +7,7 @@
  :provided   (muse-tree)
  :required   ((("cl" cl)
 	       ("tree-mode" tree-mode)))
- :keywords   ("convenience" "help")
+ :keywords   (convenience help)
  :commentary "\
 muse-tree implement two additional features for muse project:
  1. notify

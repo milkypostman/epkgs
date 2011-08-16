@@ -7,7 +7,7 @@
  :maintainer ("FSF")
  :provided   (comint)
  :required   ((("ring" ring)))
- :keywords   ("processes")
+ :keywords   (processes)
  :wikipage   "http://www.emacswiki.org/ComintMode"
  :commentary "\
 This file defines a general command-interpreter-in-a-buffer package

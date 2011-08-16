@@ -5,6 +5,6 @@
  :license    "GPL-2"
  :provided   (breadcrumb)
  :required   ((("info" info)))
- :keywords   ("bookmark" "bookmarks" "breadcrumb" "quick")
+ :keywords   (bookmark bookmarks breadcrumb quick)
  :homepage   "http://breadcrumbemacs.sourceforge.net"
  :wikipage   "http://www.emacswiki.org/BreadcrumbForEmacs")

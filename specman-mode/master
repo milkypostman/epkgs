@@ -13,5 +13,5 @@
 	       ("filladapt" filladapt)
 	       ("imenu" imenu)
 	       ("reporter" reporter)))
- :keywords   ("tools")
+ :keywords   (tools)
  :homepage   "http://www.specman-mode.com")

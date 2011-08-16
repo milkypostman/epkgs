@@ -5,7 +5,7 @@
  :authors    (("Happy Kohpy" . "bonze.head@gmail.com"))
  :maintainer ("Happy Kohpy" . "bonze.head@gmail.com")
  :provided   (longlines-jp)
- :keywords   ("convenience" "wp")
+ :keywords   (convenience wp)
  :homepage   "http://www.emacswiki.org/LongLinesJpMode"
  :wikipage   "http://www.emacswiki.org/LongLinesJpMode"
  :commentary "\

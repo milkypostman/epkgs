@@ -7,7 +7,7 @@
  :provided   (sequential-command sequential-command-config)
  :required   ((("cl" cl))
 	      (("org-mode" org)))
- :keywords   ("convenience" "lisp")
+ :keywords   (convenience lisp)
  :homepage   "http://www.emacswiki.org/SequentialCommand"
  :wikipage   "http://www.emacswiki.org/SequentialCommand"
  :commentary "\

@@ -13,5 +13,5 @@
 	       ("etags" etags)
 	       ("ring" ring)
 	       ("thingatpt" thingatpt)))
- :keywords   ("factor" "fuel" "languages")
+ :keywords   (factor fuel languages)
  :homepage   "http://gitweb.factorcode.org/gitweb.cgi?p=factor/.git")

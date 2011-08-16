@@ -8,7 +8,7 @@
  :required   ((("advice" advice)
 	       ("apel" poe)
 	       ("cl" cl)))
- :keywords   ("data")
+ :keywords   (data)
  :homepage   "http://user42.tuxfamily.org/sqlite-dump/index.html"
  :wikipage   "http://www.emacswiki.org/SqliteDump"
  :commentary "\

@@ -5,7 +5,7 @@
  :authors    (("Dave Love" . "fx@gnu.org"))
  :maintainer ("Dave Love" . "fx@gnu.org")
  :provided   (cfengine)
- :keywords   ("languages")
+ :keywords   (languages)
  :homepage   "http://www.loveshack.ukfsn.org/emacs"
  :commentary "\
 Provides support for editing GNU Cfengine files, including

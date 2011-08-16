@@ -6,7 +6,7 @@
 	       ("cl" cl)
 	       ("thingatpt" thingatpt)
 	       ("url" url)))
- :keywords   ("ansi cl" "common lisp" "emacs" "hyperspec" "lisp")
+ :keywords   (ansi\ cl common\ lisp emacs hyperspec lisp)
  :homepage   "http://www.podval.org/~sds/software.html"
  :commentary "\
 Kent Pitman and the Harlequin Group (later Xanalys) have made the

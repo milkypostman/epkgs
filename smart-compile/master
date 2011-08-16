@@ -5,7 +5,7 @@
  :authors    (("Seiji Zenitani" . "zenitani@mac.com"))
  :maintainer ("Seiji Zenitani" . "zenitani@mac.com")
  :provided   (smart-compile)
- :keywords   ("tools" "unix")
+ :keywords   (tools unix)
  :homepage   "http://homepage.mac.com/zenitani/comp-e.html"
  :wikipage   "http://www.emacswiki.org/SmartCompile"
  :commentary "\

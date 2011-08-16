@@ -6,7 +6,7 @@
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (sh-autoconf)
  :required   ((("sh-script" sh-script)))
- :keywords   ("languages")
+ :keywords   (languages)
  :wikipage   "http://www.emacswiki.org/ShAutoconf"
  :commentary "\
 This code adds a shell type \"autoconf\" to sh-mode, for use in autoconf

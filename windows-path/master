@@ -6,7 +6,7 @@
  :maintainer ("Victor Ren" . "victorhge@gmail.com")
  :provided   (windows-path)
  :required   ((("cygwin-mount" cygwin-mount)))
- :keywords   ("cygwin" "mount" "paths" "windows")
+ :keywords   (cygwin mount paths windows)
  :commentary "\
 This package lets you use windows-style filenames like \"c:/path/file\" or
 \"c:\\path\\file\" in cygwin emacs.  There is a cygwin-mount.el let you use

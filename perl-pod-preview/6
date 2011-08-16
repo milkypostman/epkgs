@@ -6,7 +6,7 @@
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (perl-pod-preview)
  :required   ((("man" man)))
- :keywords   ("docs")
+ :keywords   (docs)
  :wikipage   "http://www.emacswiki.org/PerlPodPreview"
  :commentary "\
 M-x perl-pod-preview displays a preview of Perl POD format documentation

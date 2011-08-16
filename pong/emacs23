@@ -7,7 +7,7 @@
  :provided   (pong)
  :required   ((("cl" cl)
 	       ("gamegrid" gamegrid)))
- :keywords   ("games")
+ :keywords   (games)
  :homepage   "http://www.grassouille.org/emacs/index.en.html"
  :commentary "\
 This is an implementation of the classical game pong.")

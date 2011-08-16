@@ -8,7 +8,7 @@
  :required   ((("cl" cl)
 	       ("comint" comint)
 	       ("w3" w3)))
- :keywords   ("commwww" "database" "hypermedia")
+ :keywords   (commwww database hypermedia)
  :homepage   "http://fly.srk.fer.hr/~hniksic"
  :commentary "\
 This package might be useful to people who use Oracle's SQL*Plus in

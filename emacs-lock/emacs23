@@ -5,7 +5,7 @@
  :authors    (("Tom Wurgler" . "twurgler@goodyear.com"))
  :maintainer ("Tom Wurgler" . "twurgler@goodyear.com")
  :provided   (emacs-lock)
- :keywords   ("extensions" "processes")
+ :keywords   (extensions processes)
  :commentary "\
 This code sets a buffer-local variable to t if toggle-emacs-lock is run,
 then if the user attempts to exit Emacs, the locked buffer name will be

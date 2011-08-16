@@ -11,4 +11,4 @@
 	       ("iimage" iimage)
 	       ("org-mode" org)
 	       ("uuidgen" uuidgen)))
- :keywords   ("hypermedia" "tools"))
+ :keywords   (hypermedia tools))

@@ -7,7 +7,7 @@
  :provided   (window+)
  :required   (nil
 	      (("fit-frame" fit-frame)))
- :keywords   ("internal" "window")
+ :keywords   (internal window)
  :commentary "\
 Extensions to `window.el'.
 

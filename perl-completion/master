@@ -20,7 +20,7 @@
 	      (("anything" anything-show-completion)
 	       ("color-moccur" color-moccur)
 	       ("url" url)))
- :keywords   ("perl")
+ :keywords   (perl)
  :homepage   "https://github.com/imakado/perl-completion"
  :wikipage   "http://www.emacswiki.org/PerlCompletion"
  :commentary "\

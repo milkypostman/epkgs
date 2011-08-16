@@ -6,7 +6,7 @@
  :maintainer ("Drew Adams")
  :provided   (thingatpt+)
  :required   ((("thingatpt" thingatpt)))
- :keywords   ("extensions" "matching" "mouse")
+ :keywords   (extensions matching mouse)
  :homepage   "http://www.emacswiki.org/ThingAtPointPlus"
  :wikipage   "http://www.emacswiki.org/ThingAtPointPlus"
  :commentary "\

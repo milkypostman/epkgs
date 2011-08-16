@@ -6,7 +6,7 @@
  :maintainer ("Simon Josefsson" . "simon@josefsson.org")
  :provided   (smtpmail)
  :required   ((("sendmail" sendmail)))
- :keywords   ("mail")
+ :keywords   (mail)
  :commentary "\
 Send Mail to smtp host from smtpmail temp buffer.
 

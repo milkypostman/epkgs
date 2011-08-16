@@ -11,6 +11,6 @@
 	       ("emacs-core" derived)
 	       ("outline" outline)
 	       ("w3m" w3m)))
- :keywords   ("presentation")
+ :keywords   (presentation)
  :homepage   "http://elpoint.sourceforge.net"
  :wikipage   "http://www.emacswiki.org/Elpoint")

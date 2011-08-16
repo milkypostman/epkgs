@@ -6,7 +6,7 @@
  :maintainer ("Stefan Hornburg" . "racke@gundel.han.de")
  :provided   (ginel-template)
  :required   ((("custom" custom)))
- :keywords   ("extensions" "languages" "tools")
+ :keywords   (extensions languages tools)
  :homepage   "http://www.han.de/~racke/ginel"
  :commentary "\
 * Introduction to Templates

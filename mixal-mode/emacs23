@@ -5,7 +5,7 @@
  :authors    (("Pieter E.J. Pareit" . "pieter.pareit@gmail.com"))
  :maintainer ("Pieter E.J. Pareit" . "pieter.pareit@gmail.com")
  :provided   (mixal-mode)
- :keywords   ("art" "asm" "computer" "knuth" "languages" "mix" "mixal" "mixvm" "of")
+ :keywords   (art asm computer knuth languages mix mixal mixvm of)
  :commentary "\
 Major mode for the mix asm language.
 The mix asm language is described in \"The Art Of Computer Programming\".

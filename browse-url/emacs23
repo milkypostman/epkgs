@@ -13,7 +13,7 @@
 	       ("url" url-handlers)
 	       ("w3" w3))
 	      ((nil w3-auto)))
- :keywords   ("hypermedia" "hypertext" "mouse")
+ :keywords   (hypermedia hypertext mouse)
  :wikipage   "http://www.emacswiki.org/BrowseUrl"
  :commentary "\
 This package provides functions which read a URL (Uniform Resource

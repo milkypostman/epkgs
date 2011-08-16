@@ -14,7 +14,7 @@
 	       ("hideshow" hideshow)
 	       ("hippie-exp" hippie-exp)
 	       ("ps-print" ps-print)))
- :keywords   ("languages" "vhdl")
+ :keywords   (languages vhdl)
  :homepage   "http://www.iis.ee.ethz.ch/~zimmi/emacs/vhdl-mode.html"
  :wikipage   "http://www.emacswiki.org/VhdlMode"
  :commentary "\

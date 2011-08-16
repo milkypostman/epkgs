@@ -7,5 +7,5 @@
  :provided   (supercite)
  :required   ((("regi" regi)
 	       ("sendmail" sendmail)))
- :keywords   ("mail" "news")
+ :keywords   (mail news)
  :wikipage   "http://www.emacswiki.org/SuperCite")

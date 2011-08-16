@@ -3,5 +3,5 @@
  :license    "GPL-2"
  :authors    (("Benjamin Drieu" . "bdrieu@april.org"))
  :maintainer ("Benjamin Drieu" . "bdrieu@april.org")
- :keywords   ("convenience")
+ :keywords   (convenience)
  :homepage   "http://www.grassouille.org/emacs/index.en.html")

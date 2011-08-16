@@ -7,7 +7,7 @@
  :provided   (hide-comnt)
  :required   (nil
 	      (("newcomment" newcomment)))
- :keywords   ("comments" "hide" "show")
+ :keywords   (comments hide show)
  :commentary "\
 Hide/show comments in code.
 

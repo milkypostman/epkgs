@@ -8,7 +8,7 @@
  :required   ((("cl" cl))
 	      (("thingatpt" thingatpt)
 	       ("thingatpt+" thingatpt+)))
- :keywords   ("apropos" "dictionary" "help" "spelling" "text" "thesaurus")
+ :keywords   (apropos dictionary help spelling text thesaurus)
  :homepage   "http://www.emacswiki.org/Synonyms"
  :wikipage   "http://www.emacswiki.org/Synonyms"
  :commentary "\

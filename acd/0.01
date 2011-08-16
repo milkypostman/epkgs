@@ -9,4 +9,4 @@
 	       ("complete" complete)
 	       ("conf-mode" conf-mode)
 	       ("tempo" tempo)))
- :keywords   ("convenience" "languages"))
+ :keywords   (convenience languages))

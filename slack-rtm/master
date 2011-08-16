@@ -12,7 +12,7 @@
 	       ("org-mode" org)
 	       ("url" url-http url-util)
 	       ("xml" xml)))
- :keywords   ("milk" "productivity" "remember" "the" "todo")
+ :keywords   (milk productivity remember the todo)
  :homepage   "https://github.com/slackorama/slack-rtm"
  :commentary "\
 Pull your tasks from RTM and then shove them into a buffer.")

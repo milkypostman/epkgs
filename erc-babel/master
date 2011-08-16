@@ -7,7 +7,7 @@
  :provided   (erc-babel)
  :required   ((("babel" babel)
 	       ("erc" erc)))
- :keywords   ("comm" "languages")
+ :keywords   (comm languages)
  :commentary "\
 This library integrates babel (http://www.emacswiki.org/emacs/babel.el) with ERC 
 (an emacs IRC client: http://www.emacswiki.org/cgi-bin/wiki/ERC) to provide automatic

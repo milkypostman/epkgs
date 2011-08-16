@@ -7,7 +7,7 @@
  :provided   (aumix-mode)
  :required   ((("cl" cl)
 	       ("term" term)))
- :keywords   ("aumix" "mixer" "multimedia")
+ :keywords   (aumix mixer multimedia)
  :homepage   "http://user42.tuxfamily.org/aumix-mode/index.html"
  :wikipage   "http://www.emacswiki.org/aumix-emacs"
  :commentary "\

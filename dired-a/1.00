@@ -6,7 +6,7 @@
  :provided   (dired-a)
  :required   ((("dired" dired)
 	       ("dired-aux" dired-aux)))
- :keywords   ("dired")
+ :keywords   (dired)
  :commentary "\
 This file contains a number of extensions to dired.
  1. The delete command can delete a non-empty directory by deleting

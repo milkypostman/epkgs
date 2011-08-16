@@ -11,7 +11,7 @@
 	       ("tree-widget" tree-widget)
 	       ("widget" wid-edit widget)
 	       ("xml" xml)))
- :keywords   ("atom" "news" "rss")
+ :keywords   (atom news rss)
  :homepage   "http://www.nongnu.org/newsticker"
  :wikipage   "http://www.emacswiki.org/NewsTicker"
  :commentary "\

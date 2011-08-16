@@ -6,7 +6,7 @@
  :maintainer ("Leo Shidai Liu" . "shidai.liu@gmail.com")
  :provided   (cal-china-plus)
  :required   ((("calendar" cal-china diary-lib)))
- :keywords   ("calendar" "convenience" "local")
+ :keywords   (calendar convenience local)
  :commentary "\
 All functions are prefixed with calendar-chinese- unless it is
 already in cal-china.el; in this case, it is prefixed with

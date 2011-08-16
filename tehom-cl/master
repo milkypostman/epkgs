@@ -7,7 +7,7 @@
  :provided   (tehom-cl)
  :required   ((("cl" cl)
 	       ("tehom-font-lock" tehom-font-lock)))
- :keywords   ("extensions" "lisp" "tools")
+ :keywords   (extensions lisp tools)
  :homepage   "http://panix.com/~tehom"
  :commentary "\
 These functions give the cl package's structures a little more of

@@ -8,7 +8,7 @@
  :provided   (apropos)
  :required   ((("button" button)
 	       ("cl" cl)))
- :keywords   ("help")
+ :keywords   (help)
  :wikipage   "http://www.emacswiki.org/AproposMode"
  :commentary "\
 The ideas for this package were derived from the C code in

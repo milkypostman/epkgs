@@ -8,7 +8,7 @@
  :provided   (ac-source-ispell)
  :required   ((("auto-complete" auto-complete)
 	       ("ispell" ispell)))
- :keywords   ("ispell")
+ :keywords   (ispell)
  :homepage   "http://bitbucket.org/tequilasunset/ac-source-ispell"
  :commentary "\
 Define ac-source-ispell (variable) and ac-complete-ispell (command).")

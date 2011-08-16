@@ -11,7 +11,7 @@
 	       ("lui" lui)
 	       ("ring" ring)
 	       ("timer" timer)))
- :keywords   ("chat" "irc")
+ :keywords   (chat irc)
  :homepage   "http://www.nongnu.org/circe"
  :wikipage   "http://www.emacswiki.org/Circe"
  :commentary "\

@@ -6,7 +6,7 @@
  :maintainer ("Edward O'Connor" . "ted@oconnor.cx")
  :provided   (color-theme-hober2)
  :required   ((("color-theme" color-theme)))
- :keywords   ("local")
+ :keywords   (local)
  :homepage   "http://edward.oconnor.cx/elisp"
  :commentary "\
 This is my second color theme. Apologies for the formatting; this

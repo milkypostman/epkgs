@@ -8,7 +8,7 @@
 	       ("dirtree" dirtree)
 	       ("org-mode" org-html org-publish)
 	       ("string-template" string-template)))
- :keywords   ("emacs" "org")
+ :keywords   (emacs org)
  :homepage   "https://github.com/renard/org-website"
  :commentary "\
 Required modules:

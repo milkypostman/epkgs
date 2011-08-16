@@ -5,7 +5,7 @@
  :authors    (("Mario Domgörgen" . "kanaldrache@gmx.de"))
  :maintainer ("Mario Domgörgen" . "kanaldrache@gmx.de")
  :provided   (html-lite)
- :keywords   ("hypermedia")
+ :keywords   (hypermedia)
  :homepage   "http://www.emacswiki.org/HtmlLite"
  :wikipage   "http://www.emacswiki.org/HtmlLite"
  :commentary "\

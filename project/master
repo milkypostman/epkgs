@@ -9,7 +9,7 @@
 	       ("cl" cl)
 	       ("gnus" time-date)
 	       ("timezone" timezone)))
- :keywords   ("calendar")
+ :keywords   (calendar)
  :commentary "\
 project-summarize : Sumarize time spent on heirarchy in given time
  period.  Default to all projects, beginning of file, and present.

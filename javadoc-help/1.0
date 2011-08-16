@@ -4,7 +4,7 @@
  :license    "GPL-2"
  :provided   (javadoc-help)
  :required   ((("thingatpt" thingatpt)))
- :keywords   ("help" "java" "javadoc" "lookup")
+ :keywords   (help java javadoc lookup)
  :homepage   "http://javadochelp.sourceforge.net"
  :wikipage   "http://www.emacswiki.org/JavadocHelp"
  :commentary "\

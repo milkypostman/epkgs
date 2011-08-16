@@ -5,7 +5,7 @@
  :authors    (("Steve Kemp" . "skx@tardis.ed.ac.uk"))
  :maintainer (nil . "skx@tardis.ed.ac.uk")
  :provided   (keep-buffers)
- :keywords   ("extensions")
+ :keywords   (extensions)
  :commentary "\
 This package allows you to protect buffers, based upon their
 names, from deletion.

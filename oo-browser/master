@@ -9,6 +9,6 @@
 	       ("hyperbole" hmouse-drv hmouse-key hpath hui-mouse hversion hypb set)
 	       ("info" info)
 	       (nil id-menubars pydoc)))
- :keywords   ("c" "oop" "tools")
+ :keywords   (c oop tools)
  :homepage   "http://sourceforge.net/projects/oo-browser"
  :wikipage   "http://www.emacswiki.org/ObjectOrientedBrowser")

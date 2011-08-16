@@ -8,7 +8,7 @@
  :required   ((("emacs-core" syntax)
 	       ("multi-mode" multi-mode)
 	       ("newcomment" newcomment)))
- :keywords   ("languages")
+ :keywords   (languages)
  :homepage   "http://www.loveshack.ukfsn.org/emacs"
  :commentary "\
 Provides `multi-comment-mode', which is suitable for putting on a

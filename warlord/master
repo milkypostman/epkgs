@@ -6,7 +6,7 @@
  :provided   (warlord)
  :required   ((("flame" flame)
 	       ("yow" yow)))
- :keywords   ("extensions" "games" "warlord")
+ :keywords   (extensions games warlord)
  :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
  :commentary "\
 This revision of warlord.el requires my version of flame.el in which I

@@ -6,7 +6,7 @@
  :maintainer ("Kevin Rodgers" . "ihs_4664@yahoo.com")
  :provided   (minibuffer-complete-cycle)
  :required   ((("custom" custom)))
- :keywords   ("completion")
+ :keywords   (completion)
  :commentary "\
 The `minibuffer-complete' command, bound by default to TAB in the
 minibuffer completion keymaps, displays the list of possible

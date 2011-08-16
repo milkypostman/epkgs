@@ -8,7 +8,7 @@
  :provided   (listing)
  :required   ((("header-button" header-button)
 	       ("map-progress" map-progress)))
- :keywords   ("convenience")
+ :keywords   (convenience)
  :homepage   "https://github.com/tarsius/listing"
  :commentary "\
 This library provides function `listing-create' which inserts the

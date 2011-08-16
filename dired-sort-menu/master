@@ -9,7 +9,7 @@
 	       ("dired" dired)
 	       ("easymenu" easymenu)
 	       ("widget" wid-edit)))
- :keywords   ("dialogue" "dired" "menu" "sort")
+ :keywords   (dialogue dired menu sort)
  :homepage   "http://centaur.maths.qmw.ac.uk/Emacs"
  :wikipage   "http://www.emacswiki.org/DiredSortMenu"
  :commentary "\

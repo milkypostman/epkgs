@@ -8,7 +8,7 @@
  :required   ((("cl" cl))
 	      (("yasnippet" yasnippet)
 	       (nil yasnippet-bundle)))
- :keywords   ("fast" "yasnippet")
+ :keywords   (fast yasnippet)
  :commentary "\
 Usage:
   Instead of using

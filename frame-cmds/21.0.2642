@@ -9,7 +9,7 @@
 	       ("frame-fns" frame-fns))
 	      (("misc-fns" misc-fns)
 	       ("strings" strings)))
- :keywords   ("convenience" "extensions" "frames" "internal" "mouse" "windows")
+ :keywords   (convenience extensions frames internal mouse windows)
  :commentary "\
 Frame and window commands (interactive functions).
 

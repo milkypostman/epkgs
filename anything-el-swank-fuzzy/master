@@ -11,7 +11,7 @@
 	       ("eldoc" eldoc)
 	       ("term" term))
 	      (("anything" anything-show-completion)))
- :keywords   ("anything" "convenience" "matching")
+ :keywords   (anything convenience matching)
  :commentary "\
 Some Anything configurations for using the el-swank-fuzzy.el.
 

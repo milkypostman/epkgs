@@ -4,7 +4,7 @@
  :provided   (itunes)
  :required   ((("cl" cl)
 	       ("xml" xml)))
- :keywords   ("multimedia")
+ :keywords   (multimedia)
  :commentary "\
 Allows OS X Emacs users to control iTunes without having to leave
 the safe confines of Emacs.  Simple stop/start/skip is supported,

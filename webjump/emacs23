@@ -6,7 +6,7 @@
  :maintainer ("Neil W. Van Dyke" . "nwv@acm.org")
  :provided   (webjump)
  :required   ((("browse-url" browse-url)))
- :keywords   ("comm" "www")
+ :keywords   (comm www)
  :homepage   "http://www.neilvandyke.org/webjump"
  :wikipage   "http://www.emacswiki.org/WebJump"
  :commentary "\

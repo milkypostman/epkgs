@@ -5,7 +5,7 @@
  :authors    (("John Wiegley" . "johnw@gnu.org"))
  :maintainer ("FSF")
  :provided   (align)
- :keywords   ("convenience" "languages" "lisp")
+ :keywords   (convenience languages lisp)
  :commentary "\
 This mode allows you to align regions in a context-sensitive fashion.
 The classic use is to align assignments:

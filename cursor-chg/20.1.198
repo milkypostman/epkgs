@@ -5,7 +5,7 @@
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")
  :provided   (cursor-chg)
- :keywords   ("accessibility" "cursor")
+ :keywords   (accessibility cursor)
  :homepage   "http://www.emacswiki.org/ChangingCursorDynamically"
  :wikipage   "http://www.emacswiki.org/ChangingCursorDynamically"
  :commentary "\

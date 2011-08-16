@@ -16,7 +16,7 @@
 	       ("info" info)
 	       ("skeleton" skeleton)
 	       ("smerge-mode" smerge-mode)))
- :keywords   ("sml")
+ :keywords   (sml)
  :homepage   "http://www.iro.umontreal.ca/~monnier/elisp"
  :wikipage   "http://www.emacswiki.org/SMLMode"
  :commentary "\

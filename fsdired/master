@@ -8,7 +8,7 @@
  :provided   (fsdired)
  :required   (nil
 	      (("hide-lines" hide-lines)))
- :keywords   ("dired" "environment" "files" "renaming")
+ :keywords   (dired environment files renaming)
  :homepage   "https://github.com/jave/fsdired"
  :commentary "\
 Mark files and move them to different places with the help of dired.

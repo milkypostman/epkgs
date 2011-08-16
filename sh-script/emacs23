@@ -9,7 +9,7 @@
 	       ("comint" comint)
 	       ("executable" executable)
 	       ("skeleton" skeleton)))
- :keywords   ("languages" "unix")
+ :keywords   (languages unix)
  :commentary "\
 Major mode for editing shell scripts.  Bourne, C and rc shells as well
 as various derivatives are supported and easily derived from.  Structured

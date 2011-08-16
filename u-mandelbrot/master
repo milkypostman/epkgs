@@ -6,5 +6,5 @@
  :maintainer ("Ulf Jasper" . "ulf.jasper@web.de")
  :provided   (u-mandelbrot)
  :required   ((("emacs-core" overlay)))
- :keywords   ("games")
+ :keywords   (games)
  :homepage   "http://ulf.epplejasper.de/EmacsFunStuff.html")

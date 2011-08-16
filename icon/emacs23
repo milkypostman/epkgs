@@ -5,6 +5,6 @@
  :authors    (("Chris Smith" . "csmith@convex.com"))
  :maintainer ("Chris Smith" . "csmith@convex.com")
  :provided   (icon)
- :keywords   ("languages")
+ :keywords   (languages)
  :commentary "\
 A major mode for editing the Icon programming language.")

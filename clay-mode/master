@@ -6,7 +6,7 @@
  :authors    (("Prafulla Kiran" . "prafulla@tachyontech.net"))
  :maintainer ("Prafulla Kiran" . "prafulla@tachyontech.net")
  :provided   (clay-mode)
- :keywords   ("clay" "major-mode")
+ :keywords   (clay major-mode)
  :homepage   "http://bitbucket.org/prafulla/clay-mode"
  :commentary "\
 This mode is designed to make development in Clay easier for Emacs users")

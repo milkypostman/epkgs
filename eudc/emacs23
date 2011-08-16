@@ -12,7 +12,7 @@
 	       ("executable" executable)
 	       ("ldap" ldap)
 	       ("widget" wid-edit)))
- :keywords   ("comm")
+ :keywords   (comm)
  :wikipage   "http://www.emacswiki.org/EUDC"
  :commentary "\
 This package provides a common interface to query directory servers using

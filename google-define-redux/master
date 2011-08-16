@@ -7,7 +7,7 @@
  :provided   (google-define-redux)
  :required   ((("cl" cl)
 	       ("emacs-core" font-lock)))
- :keywords   ("applications" "comm" "external" "hypermedia" "processes")
+ :keywords   (applications comm external hypermedia processes)
  :commentary "\
 =================================================================
 DESCRIPTION:

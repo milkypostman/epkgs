@@ -9,7 +9,7 @@
  :required   ((("cl" cl)
 	       ("easymenu" easymenu)
 	       ("newcomment" newcomment)))
- :keywords   ("applescript" "languages")
+ :keywords   (applescript languages)
  :homepage   "https://github.com/tequilasunset/apples-mode"
  :commentary "\
 This program provides a major mode for AppleScript.

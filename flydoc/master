@@ -7,7 +7,7 @@
  :required   ((("cl" cl)
 	       ("easy-mmode" easy-mmode)
 	       ("thingatpt" thingatpt)))
- :keywords   ("convenience")
+ :keywords   (convenience)
  :commentary "\
 To use flydoc, put the following code into your ~/.emacs:
 

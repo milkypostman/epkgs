@@ -6,7 +6,7 @@
  :maintainer ("Drew Adams")
  :provided   (show-wspace)
  :required   ((("cl" cl)))
- :keywords   ("highlight" "whitespace")
+ :keywords   (highlight whitespace)
  :commentary "\
 Highlight whitespace of various kinds.
 

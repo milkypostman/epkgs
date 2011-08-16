@@ -5,7 +5,7 @@
  :authors    (("Dave Love" . "fx@gnu.org"))
  :maintainer ("Dave Love" . "fx@gnu.org")
  :provided   (elide-head)
- :keywords   ("outlines" "tools")
+ :keywords   (outlines tools)
  :commentary "\
 Functionality for eliding boilerplate text (normally copyright
 notices) in file headers to avoid clutter when you know what it

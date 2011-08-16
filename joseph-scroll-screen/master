@@ -6,5 +6,5 @@
  :authors    (("Joseph" . "jixiuf@gmail.com"))
  :maintainer ("Joseph" . "jixiuf@gmail.com")
  :provided   (joseph-scroll-screen)
- :keywords   ("screen" "scroll")
+ :keywords   (screen scroll)
  :homepage   "https://github.com/jixiuf/joseph-scroll-screen")

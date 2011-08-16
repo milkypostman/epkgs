@@ -9,7 +9,7 @@
 	       ("cl" cl)
 	       ("rect" rect)
 	       (nil hannum)))
- :keywords   ("convenience")
+ :keywords   (convenience)
  :commentary "\
 Quick start:
 Type number 0 in any place, then put cursor on the number, M-x

@@ -4,7 +4,7 @@
  :license    "GPL-2"
  :authors    (("Alex Schroeder" . "alex@gnu.org"))
  :maintainer ("Alex Schroeder" . "alex@gnu.org")
- :keywords   ("faces")
+ :keywords   (faces)
  :wikipage   "http://www.emacswiki.org/FaceList"
  :commentary "\
 This code allows you to browse the list of defined faces and to

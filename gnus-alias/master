@@ -6,7 +6,7 @@
  :maintainer ("Joe Casadonte" . "emacs@northbound-train.com")
  :provided   (gnus-alias)
  :required   ((("gnus" message)))
- :keywords   ("gnus" "identity" "mail" "news" "personality")
+ :keywords   (gnus identity mail news personality)
  :homepage   "http://www.northbound-train.com"
  :wikipage   "http://www.emacswiki.org/GnusAlias"
  :commentary "\

@@ -6,7 +6,7 @@
  :maintainer ("Per Abrahamsen" . "abraham@dina.kvl.dk")
  :provided   (cpp)
  :required   ((("emacs-core" pp)))
- :keywords   ("c" "faces" "tools")
+ :keywords   (c faces tools)
  :commentary "\
 Parse a text for C preprocessor conditionals, and highlight or hide
 the text inside the conditionals as you wish.

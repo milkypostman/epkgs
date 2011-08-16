@@ -5,7 +5,7 @@
  :authors    (("Kevin Ryde" . "user42@zip.com.au"))
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (align-let)
- :keywords   ("languages")
+ :keywords   (languages)
  :wikipage   "http://www.emacswiki.org/AlignLet"
  :commentary "\
 This is a spot of code for aligning the values in a \"let\" form.  See

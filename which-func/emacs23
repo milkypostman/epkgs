@@ -7,7 +7,7 @@
  :maintainer ("Alex Rezinsky" . "alexr@msil.sps.mot.com")
  :provided   (which-func)
  :required   ((("imenu" imenu)))
- :keywords   ("imenu" "mode-line" "tools")
+ :keywords   (imenu mode-line tools)
  :wikipage   "http://www.emacswiki.org/WhichFuncMode"
  :commentary "\
 This package prints name of function where your current point is

@@ -9,7 +9,7 @@
  :required   ((("cl" cl)
 	       ("outline" outline)
 	       ("skeleton" skeleton)))
- :keywords   ("comm" "hypermedia" "languages" "wp")
+ :keywords   (comm hypermedia languages wp)
  :commentary "\
 Configurable major mode for editing document in the SGML standard general
 markup language.  As an example contains a mode for editing the derived

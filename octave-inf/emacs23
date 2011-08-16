@@ -7,4 +7,4 @@
  :provided   (octave-inf)
  :required   ((("comint" comint)
 	       ("octave-mod" octave-mod)))
- :keywords   ("languages"))
+ :keywords   (languages))

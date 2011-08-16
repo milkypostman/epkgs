@@ -5,7 +5,7 @@
  :authors    (("Zajcev Evgeny" . "zevlg@yandex.ru"))
  :maintainer ("Zajcev Evgeny" . "zevlg@yandex.ru")
  :provided   (cocol)
- :keywords   ("utils")
+ :keywords   (utils)
  :homepage   "http://lgarc.narod.ru/xemacs"
  :commentary "\
 Show information about total number of lines and nuber of columns

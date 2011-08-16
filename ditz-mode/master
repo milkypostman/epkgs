@@ -6,7 +6,7 @@
  :authors    (("Glenn Hutchings" . "zondo42@googlemail.com"))
  :maintainer ("Glenn Hutchings" . "zondo42@googlemail.com")
  :provided   (ditz-mode)
- :keywords   ("tools")
+ :keywords   (tools)
  :homepage   "http://bitbucket.org/zondo/ditz-mode"
  :wikipage   "http://www.emacswiki.org/DitzMode"
  :commentary "\

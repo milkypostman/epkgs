@@ -7,5 +7,5 @@
  :provided   (ftnchek-mode)
  :required   ((("compile" compile)
 	       ("fortran" fortran)))
- :keywords   ("fortran" "semantic" "syntax")
+ :keywords   (fortran semantic syntax)
  :homepage   "http://www.tux.org/~milgram/ftnchekel.html")

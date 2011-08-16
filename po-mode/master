@@ -10,7 +10,7 @@
 	       ("custom" custom)
 	       ("etags" etags)
 	       (nil po-compat)))
- :keywords   ("gettext")
+ :keywords   (gettext)
  :wikipage   "http://www.emacswiki.org/PoMode"
  :commentary "\
 This package provides the tools meant to help editing PO files,

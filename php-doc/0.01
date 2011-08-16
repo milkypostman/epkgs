@@ -9,4 +9,4 @@
 	       ("complete" complete)
 	       ("tree-mode" tree-mode)
 	       ("windata" windata)))
- :keywords   ("convenience" "languages"))
+ :keywords   (convenience languages))

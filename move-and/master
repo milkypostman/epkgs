@@ -4,7 +4,7 @@
  :maintainer ("Aidan Schofield")
  :provided   (move-and)
  :required   ((("cl" cl)))
- :keywords   ("copy" "delete" "keys" "kill")
+ :keywords   (copy delete keys kill)
  :homepage   "http://www.emacswiki.org/DeleteKillAndCopy"
  :wikipage   "http://www.emacswiki.org/DeleteKillAndCopy"
  :commentary "\

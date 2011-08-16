@@ -24,7 +24,7 @@
 	       ("woman" woman)
 	       ("xml" xml)
 	       (nil htmlize)))
- :keywords   ("hypermedia")
+ :keywords   (hypermedia)
  :homepage   "http://mwolson.org/projects/EmacsMuse.html"
  :wikipage   "http://www.emacswiki.org/EmacsMuse"
  :commentary "\

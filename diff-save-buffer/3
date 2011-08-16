@@ -5,7 +5,7 @@
  :authors    (("Kevin Ryde" . "user42@zip.com.au"))
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (diff-save-buffer)
- :keywords   ("files")
+ :keywords   (files)
  :wikipage   "http://www.emacswiki.org/DiffSaveBuffer"
  :commentary "\
 diff-save-buffer sets up an initial .diff filename for save-buffer in an

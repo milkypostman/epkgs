@@ -10,7 +10,7 @@
 	       ("mmm-mode" mmm-auto mmm-mode)
 	       ("psgml" psgml)
 	       ("sql" sql)))
- :keywords   ("abbrev" "convenience" "extensions" "tools")
+ :keywords   (abbrev convenience extensions tools)
  :homepage   "http://www.openacs.com/xowiki/ide-emacs"
  :wikipage   "http://www.emacswiki.org/OACS"
  :commentary "\

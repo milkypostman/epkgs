@@ -7,6 +7,6 @@
  :maintainer ("Taylor R. Campbell")
  :provided   (paredit)
  :required   ((("newcomment" newcomment)))
- :keywords   ("lisp")
+ :keywords   (lisp)
  :homepage   "http://mumble.net/~campbell/emacs/paredit/paredit.html"
  :wikipage   "http://www.emacswiki.org/ParEdit")

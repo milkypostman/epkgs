@@ -6,7 +6,7 @@
  :maintainer ("Jorgen Schaefer")
  :provided   (duck)
  :required   ((("cmuscheme" cmuscheme)))
- :keywords   ("programming" "scheme")
+ :keywords   (programming scheme)
  :commentary "\
 This is a collection of simple utility functions for Scheme
 programming. It was born when the present author noticed that he

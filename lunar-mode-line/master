@@ -8,7 +8,7 @@
  :provided   (lunar-mode-line)
  :required   ((("calendar" calendar lunar)
 	       ("timer" timer)))
- :keywords   ("extensions")
+ :keywords   (extensions)
  :wikipage   "http://www.emacswiki.org/LunarModeLine"
  :commentary "\
 Inspired by battery.el, by Ralph Schleicher <rs@nunatak.allgaeu.org>.")

@@ -8,6 +8,6 @@
  :provided   (gccsense)
  :required   ((("flymake" flymake)
 	       (nil ctagsfind)))
- :keywords   ("completion" "convenience")
+ :keywords   (completion convenience)
  :homepage   "http://cx4a.org/software/gccsense"
  :wikipage   "http://www.emacswiki.org/GCCSense")

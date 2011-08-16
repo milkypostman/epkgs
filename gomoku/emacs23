@@ -6,7 +6,7 @@
  :maintainer ("FSF")
  :adapted-by ("ESR, Daniel Pfeiffer" . "occitan@esperanto.org")
  :provided   (gomoku)
- :keywords   ("games")
+ :keywords   (games)
  :commentary "\
 RULES:
 

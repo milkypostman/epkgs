@@ -6,7 +6,7 @@
  :maintainer ("David O'Toole" . "dto@gnu.org")
  :provided   (org-blog)
  :required   ((("org-mode" org-publish)))
- :keywords   ("hypermedia" "tools")
+ :keywords   (hypermedia tools)
  :homepage   "http://www.emacswiki.org/OrgBlog"
  :wikipage   "http://www.emacswiki.org/OrgBlog"
  :commentary "\

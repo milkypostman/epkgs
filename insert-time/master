@@ -5,7 +5,7 @@
  :authors    (("Ryan McGeary"))
  :maintainer ("Ryan McGeary")
  :provided   (insert-time)
- :keywords   ("date" "format" "insert" "time")
+ :keywords   (date format insert time)
  :homepage   "https://github.com/rmm5t/insert-time.el"
  :commentary "\
 Purpose

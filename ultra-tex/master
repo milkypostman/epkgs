@@ -12,6 +12,6 @@
 	       ("emacs-core" font-lock)
 	       ("imenu" imenu)
 	       ("light" light)))
- :keywords   ("completion" "tex-mode")
+ :keywords   (completion tex-mode)
  :homepage   "http://www.math.washington.edu/~palmieri/Emacs/ultratex.html"
  :wikipage   "http://www.emacswiki.org/UltraTexMode")

@@ -4,6 +4,6 @@
  :maintainer ("Christian Queinnec" . "christian.queinnec@lip6.fr")
  :provided   (foldingo)
  :required   ((("emacs-core" menu-bar)))
- :keywords   ("folding" "mode")
+ :keywords   (folding mode)
  :homepage   "http://pagesperso-systeme.lip6.fr/Christian.Queinnec/WWW/elisp.html"
  :wikipage   "http://www.emacswiki.org/FoldIngo")

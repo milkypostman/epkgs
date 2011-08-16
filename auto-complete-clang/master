@@ -7,7 +7,7 @@
  :maintainer ("Brian Jiang" . "brianjcj@gmail.com")
  :provided   (auto-complete-clang)
  :required   ((("auto-complete" auto-complete)))
- :keywords   ("completion" "convenience")
+ :keywords   (completion convenience)
  :homepage   "https://github.com/brianjcj/auto-complete-clang"
  :commentary "\
 Auto Completion source for clang. Most of codes are taken from

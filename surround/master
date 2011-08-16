@@ -7,7 +7,7 @@
  :maintainer ("Please send bug reports to the mailing list (below).")
  :provided   (surround)
  :required   (((nil evil)))
- :keywords   ("emulation" "evil" "vi")
+ :keywords   (emulation evil vi)
  :homepage   "https://github.com/timcharper/evil-surround"
  :commentary "\
 This package emulates surround.vim by Tim Pope.

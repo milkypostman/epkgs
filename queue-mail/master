@@ -5,4 +5,4 @@
  :authors    (("John Wiegley" . "johnw@borland.com"))
  :maintainer ("John Wiegley" . "johnw@borland.com")
  :provided   (queue-mail)
- :keywords   ("mail" "queue"))
+ :keywords   (mail queue))

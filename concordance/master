@@ -8,7 +8,7 @@
 	       ("tellib" tellib)
 	       ("thingatpt" thingatpt)
 	       ("timer" timer)))
- :keywords   ("concordance" "text statistics")
+ :keywords   (concordance text\ statistics)
  :homepage   "http://members.a1.net/t.link/filestats.html"
  :commentary "\
 Put this file into your load path -- type \"\\C-h v load-path\" to

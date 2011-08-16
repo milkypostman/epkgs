@@ -7,7 +7,7 @@
  :provided   (windresize)
  :required   ((("ring" ring)
 	       ("windmove" windmove)))
- :keywords   ("window")
+ :keywords   (window)
  :commentary "\
 This mode let's you edit the window configuration interactively just
 by using the keyboard.  Quickstart: M-x windresize")

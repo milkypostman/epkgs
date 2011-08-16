@@ -3,7 +3,7 @@
  :updated    "2011"
  :license    "GPL-3"
  :maintainer ("FSF")
- :keywords   ("convenience")
+ :keywords   (convenience)
  :commentary "\
 Edit, delete, or change attributes of all currently active Emacs
 buffers from a list summarizing their state.  A good way to browse

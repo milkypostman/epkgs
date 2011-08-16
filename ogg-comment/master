@@ -6,7 +6,7 @@
  :maintainer ("lawrence mitchell" . "wence@gmx.li")
  :provided   (ogg-comment)
  :required   ((("cl" cl)))
- :keywords   ("music")
+ :keywords   (music)
  :homepage   "http://www.ph.ed.ac.uk/~s0198183"
  :commentary "\
 This file provides a minimal interface to reading the \"comment\"

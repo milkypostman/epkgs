@@ -4,7 +4,7 @@
  :license    "GPL-3"
  :provided   (handwrite)
  :required   ((("ps-print" ps-print)))
- :keywords   ("cursive writing" "postscript" "print" "wp")
+ :keywords   (cursive\ writing postscript print wp)
  :commentary "\
 The function handwrite creates PostScript output containing a
 handwritten version of the current buffer..

@@ -10,7 +10,7 @@
 	       ("footnote" footnote)
 	       ("sh-script" sh-script)
 	       ("time-stamp" time-stamp)))
- :keywords   ("convenience")
+ :keywords   (convenience)
  :homepage   "https://launchpad.net/s-x-emacs-werkstatt"
  :wikipage   "http://www.emacswiki.org/ThingAtPointUtils"
  :commentary "\

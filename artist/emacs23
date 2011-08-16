@@ -8,7 +8,7 @@
  :required   ((("picture" picture)
 	       ("rect" rect)
 	       ("reporter" reporter)))
- :keywords   ("mouse")
+ :keywords   (mouse)
  :homepage   "http://www.lysator.liu.se/~tab/artist"
  :wikipage   "http://www.emacswiki.org/ArtistMode"
  :commentary "\

@@ -18,4 +18,4 @@
 	       ("thingatpt" thingatpt))
 	      (("json" json)
 	       ("nxhtml" moz)))
- :keywords   ("javascript" "languages" "oop"))
+ :keywords   (javascript languages oop))

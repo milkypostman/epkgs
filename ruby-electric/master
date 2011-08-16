@@ -5,5 +5,5 @@
  :maintainer ("Jakub Kuźma" . "qoobaa@gmail.com")
  :provided   (ruby-electric)
  :required   ((("ruby-mode" ruby-mode)))
- :keywords   ("languages" "ruby")
+ :keywords   (languages ruby)
  :homepage   "https://github.com/qoobaa/ruby-electric")

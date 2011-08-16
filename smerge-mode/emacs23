@@ -7,7 +7,7 @@
  :provided   (smerge-mode)
  :required   ((("cl" cl)
 	       ("diff-mode" diff-mode)))
- :keywords   ("conflict" "cvs" "merge" "revision-control" "tools")
+ :keywords   (conflict cvs merge revision-control tools)
  :commentary "\
 Provides a lightweight alternative to emerge/ediff.
 To use it, simply add to your .emacs the following lines:

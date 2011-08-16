@@ -6,7 +6,7 @@
  :maintainer ("Jonathan Yavner" . "jyavner@member.fsf.org")
  :provided   (testcover)
  :required   ((("edebug" edebug)))
- :keywords   ("lisp" "utility")
+ :keywords   (lisp utility)
  :commentary "\
 * Use `testcover-start' to instrument a Lisp file for coverage testing.
 * Use `testcover-mark-all' to add overlay \"splotches\" to the Lisp file's

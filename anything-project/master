@@ -8,7 +8,7 @@
  :provided   (anything-project)
  :required   ((("anything" anything))
 	      (("anything" anything-grep)))
- :keywords   ("look-for")
+ :keywords   (look-for)
  :homepage   "https://github.com/imakado/anything-project"
  :commentary "\
 anything-project.el is pure emacs lisp version of anything-find-project-resources.el.

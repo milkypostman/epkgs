@@ -6,7 +6,7 @@
  :maintainer ("FSF")
  :provided   (terminal)
  :required   ((("ehelp" ehelp)))
- :keywords   ("comm" "terminals")
+ :keywords   (comm terminals)
  :commentary "\
 This file has been censored by the Communications Decency Act.
 That law was passed under the guise of a ban on pornography, but

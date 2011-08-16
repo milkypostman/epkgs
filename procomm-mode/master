@@ -5,7 +5,7 @@
  :authors    (("Edward Robinson" . "osnibore@gmail.com"))
  :maintainer ("Edward Robinson" . "osnibore@gmail.com")
  :provided   (procomm-mode)
- :keywords   ("aspect" "languages" "procomm" "script")
+ :keywords   (aspect languages procomm script)
  :homepage   "http://www.emacswiki.org/ProcommMode"
  :wikipage   "http://www.emacswiki.org/ProcommMode"
  :commentary "\

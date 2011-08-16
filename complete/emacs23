@@ -5,7 +5,7 @@
  :authors    (("Dave Gillespie" . "daveg@synaptics.com"))
  :maintainer ("Dave Gillespie" . "daveg@synaptics.com")
  :provided   (complete)
- :keywords   ("abbrev" "convenience")
+ :keywords   (abbrev convenience)
  :commentary "\
 Extended completion for the Emacs minibuffer.
 

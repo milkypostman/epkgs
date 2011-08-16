@@ -4,7 +4,7 @@
  :authors    (("Benjamin Rutt"))
  :maintainer ("Benjamin Rutt")
  :provided   (top-mode)
- :keywords   ("extensions" "processes")
+ :keywords   (extensions processes)
  :homepage   "http://www.emacswiki.org/TopMode"
  :wikipage   "http://www.emacswiki.org/TopMode"
  :commentary "\

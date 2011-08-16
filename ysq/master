@@ -5,7 +5,7 @@
  :authors    (("Noah Friedman" . "friedman@splode.com"))
  :maintainer (nil . "friedman@splode.com")
  :provided   (ysq)
- :keywords   ("extensions")
+ :keywords   (extensions)
  :homepage   "ftp://ftp.splode.com/pub/users/friedman/emacs-lisp"
  :commentary "\
 Updates of this program may be available via the URL

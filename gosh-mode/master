@@ -14,7 +14,7 @@
 	       ("scheme" scheme))
 	      (("auto-complete" auto-complete-config)
 	       ("eldoc" eldoc)))
- :keywords   ("edit" "gauche" "lisp" "scheme")
+ :keywords   (edit gauche lisp scheme)
  :homepage   "https://github.com/mhayashi1120/Emacs-gosh-mode"
  :commentary "\
 gosh-mode forked from scheme-complete.el

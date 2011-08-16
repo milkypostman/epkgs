@@ -6,7 +6,7 @@
  :maintainer ("Alessandro Di Marco" . "dmr@c0nc3pt.com")
  :provided   (xsocks)
  :required   ((("socks" socks)))
- :keywords   ("socks")
+ :keywords   (socks)
  :commentary "\
 xsocks extends the socks behavior with a new feature `socks-doproxy', which
  is the dual of `socks-noproxy'. Notice how `socks-doproxy' gets considered

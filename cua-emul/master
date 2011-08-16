@@ -6,7 +6,7 @@
  :maintainer ("lawrence mitchell" . "wence@gmx.li")
  :provided   (cua-emul)
  :required   ((("cl" cl)))
- :keywords   ("buffer-switching" "convenience")
+ :keywords   (buffer-switching convenience)
  :homepage   "http://www.ph.ed.ac.uk/~s0198183"
  :commentary "\
 This file provides some emulation of CUA style buffer manipulation, in

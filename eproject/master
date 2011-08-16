@@ -10,7 +10,7 @@
 	       ("eshell" eshell)
 	       ("ibuffer" ibuf-ext ibuffer)
 	       ("iswitchb" iswitchb)))
- :keywords   ("programming" "projects")
+ :keywords   (programming projects)
  :homepage   "https://github.com/jrockway/eproject"
  :wikipage   "http://www.emacswiki.org/eproject"
  :commentary "\

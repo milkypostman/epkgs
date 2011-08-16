@@ -8,7 +8,7 @@
  :required   ((("bbdb" bbdb bbdb-autoloads bbdb-print bbdb-snarf bbdb-vm)
 	       ("gnus" message)
 	       ("vm" vm)))
- :keywords   ("bbbd" "vm" "xemacs")
+ :keywords   (bbbd vm xemacs)
  :homepage   "http://www.robf.de/Hacking/elisp"
  :commentary "\
 Put this file into your load path and add the following line to your ~/.vm

@@ -5,7 +5,7 @@
  :authors    (("David M. Brown"))
  :maintainer ("FSF")
  :provided   (array)
- :keywords   ("extensions")
+ :keywords   (extensions)
  :wikipage   "http://www.emacswiki.org/ArrayMode"
  :commentary "\
 Commands for editing a buffer interpreted as a rectangular array

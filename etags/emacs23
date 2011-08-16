@@ -9,4 +9,4 @@
 	       ("button" button)
 	       ("cl" cl)
 	       ("ring" ring)))
- :keywords   ("tools"))
+ :keywords   (tools))

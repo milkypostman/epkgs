@@ -10,7 +10,7 @@
 	       ("ispell" ispell)
 	       ("lisp-mnt" lisp-mnt)
 	       ("thingatpt" thingatpt)))
- :keywords   ("docs" "lisp" "maint")
+ :keywords   (docs lisp maint)
  :wikipage   "http://www.emacswiki.org/CheckDoc"
  :commentary "\
 The Emacs Lisp manual has a nice chapter on how to write

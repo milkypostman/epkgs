@@ -5,7 +5,7 @@
  :authors    (("Kevin Ryde" . "user42@zip.com.au"))
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (compilation-recenter-end)
- :keywords   ("processes")
+ :keywords   (processes)
  :commentary "\
 This is a spot of code to recentre compilation windows when a compile
 finishes, so that the end of output is at the bottom of the window, thus

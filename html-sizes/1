@@ -5,7 +5,7 @@
  :authors    (("Kevin Ryde" . "user42@zip.com.au"))
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (html-sizes-update)
- :keywords   ("convenience" "hypermedia")
+ :keywords   (convenience hypermedia)
  :commentary "\
 This is a spot of code offering an `M-x html-sizes-update' to update file
 sizes shown in a HTML web page (based on local file sizes).  See the

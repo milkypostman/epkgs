@@ -9,7 +9,7 @@
 	       ("tellib" tellib)
 	       ("thingatpt" thingatpt)
 	       ("timer" timer)))
- :keywords   ("text statistics" "word counting")
+ :keywords   (text\ statistics word\ counting)
  :homepage   "http://members.a1.net/t.link/filestats.html"
  :commentary "\
 Put this file into your load path -- type \"\\C-h v load-path\" to

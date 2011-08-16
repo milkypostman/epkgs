@@ -8,5 +8,5 @@
  :required   ((("anything" anything anything-match-plugin anything-migemo)
 	       ("cl" cl)
 	       ("howm" howm howm-menu)))
- :keywords   ("anything" "howm")
+ :keywords   (anything howm)
  :homepage   "https://github.com/wakaran/anything-howm")

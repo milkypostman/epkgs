@@ -4,7 +4,7 @@
  :updated    "2010"
  :authors    (("Kenneth Jensen" . "kjensen@alum.mit.edu"))
  :maintainer ("Kenneth Jensen" . "kjensen@alum.mit.edu")
- :keywords   ("aerodynamics" "aswing" "avl")
+ :keywords   (aerodynamics aswing avl)
  :homepage   "https://github.com/cloudchamber/Drela-mode"
  :wikipage   "http://www.emacswiki.org/DrelaMode"
  :commentary "\

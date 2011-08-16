@@ -9,7 +9,7 @@
 	       ("emacs-core" image)
 	       ("flim" mime)
 	       ("mew" mew)))
- :keywords   ("address" "book")
+ :keywords   (address book)
  :homepage   "http://lsdb.sourceforge.jp"
  :wikipage   "http://www.emacswiki.org/LovelySisterDataBase"
  :commentary "\

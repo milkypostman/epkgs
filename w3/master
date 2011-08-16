@@ -21,6 +21,6 @@
 	       ("widget" wid-edit widget)
 	       ("xml" xml)
 	       (nil dtk-voices emacspeak-speak w3-auto w3-site-init xbm-button xpm-button)))
- :keywords   ("comm" "faces" "help" "hypermedia" "mail" "mouse" "news" "processes")
+ :keywords   (comm faces help hypermedia mail mouse news processes)
  :homepage   "http://www.gnu.org/software/w3"
  :wikipage   "http://www.emacswiki.org/w3")

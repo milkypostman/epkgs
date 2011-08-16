@@ -6,7 +6,7 @@
  :maintainer ("Y.Dirson" . "ydirson@altern.org")
  :provided   (hier-imenu)
  :required   ((("imenu" imenu)))
- :keywords   ("hypermedia" "tex" "tools")
+ :keywords   (hypermedia tex tools)
  :homepage   "http://ydirson.free.fr/en/software/hier-imenu.html"
  :commentary "\
 Creates an index-menu (using `imenu'), that reflects the

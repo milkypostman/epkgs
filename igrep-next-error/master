@@ -7,7 +7,7 @@
  :provided   (igrep-next-error)
  :required   ((("custom" custom)
 	       ("igrep" igrep)))
- :keywords   ("highlight" "search")
+ :keywords   (highlight search)
  :commentary "\
 The `igrep-next-error' command is just like the `next-error' Emacs
 command, but it also highlights the matched text in the source buffer

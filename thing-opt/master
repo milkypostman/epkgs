@@ -7,7 +7,7 @@
  :provided   (thing-opt)
  :required   ((("cl" cl)
 	       ("thingatpt" thingatpt)))
- :keywords   ("convenience")
+ :keywords   (convenience)
  :homepage   "http://www.emacswiki.org/ThingAtPointOptional"
  :wikipage   "http://www.emacswiki.org/ThingAtPointOptional"
  :commentary "\

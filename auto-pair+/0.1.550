@@ -5,7 +5,7 @@
  :authors    (("Matthew L. Fidler"))
  :maintainer ("Matthew L. Fidler")
  :provided   (auto-pair+)
- :keywords   ("autopair" "selection" "whitespace")
+ :keywords   (autopair selection whitespace)
  :commentary "\
 Added TextMate wrapping of selection:
 

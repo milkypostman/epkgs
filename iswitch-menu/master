@@ -9,7 +9,7 @@
  :required   ((("cl" cl)
 	       ("iswitchb" iswitchb)
 	       ("tmm" tmm)))
- :keywords   ("frames" "matching" "menus" "terminals")
+ :keywords   (frames matching menus terminals)
  :homepage   "https://github.com/joodie/iswitch-menu"
  :wikipage   "http://www.emacswiki.org/IswitchMenu"
  :commentary "\

@@ -5,4 +5,4 @@
  :authors    (("Stefan Kamphausen" . "kamphausen@insiligence.com"))
  :maintainer ("Stefan Kamphausen" . "kamphausen@insiligence.com")
  :provided   (ska-skel-matlab)
- :keywords   ("languages" "tools"))
+ :keywords   (languages tools))

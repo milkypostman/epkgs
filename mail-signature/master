@@ -4,7 +4,7 @@
  :license    "GPL-2"
  :maintainer ("tkld")
  :provided   (mail-signature)
- :keywords   ("mail")
+ :keywords   (mail)
  :commentary "\
 This is a reworking of the function mail-signature in sendmail.el
 (part of the Emacs distribution) to insert a context sensitive signature.

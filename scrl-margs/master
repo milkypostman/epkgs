@@ -3,7 +3,7 @@
  :updated    "2008"
  :license    "GPL-2"
  :provided   (scrl-margs)
- :keywords   ("scroll")
+ :keywords   (scroll)
  :homepage   "http://www.emacswiki.org/ScrollMargs"
  :wikipage   "http://www.emacswiki.org/ScrollMargs"
  :commentary "\

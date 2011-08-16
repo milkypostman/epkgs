@@ -6,7 +6,7 @@
  :authors    (("Jonas Bernoulli" . "jonas@bernoul.li"))
  :maintainer ("Jonas Bernoulli" . "jonas@bernoul.li")
  :provided   (ministrut)
- :keywords   ("minibuffer")
+ :keywords   (minibuffer)
  :homepage   "http://github.com/tarsius/ministrut"
  :commentary "\
 Emacs supports using a `default-minibuffer-frame' whose minibuffer

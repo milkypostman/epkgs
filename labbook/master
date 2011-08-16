@@ -5,7 +5,7 @@
  :maintainer ("Phillip Lord" . "p.lord@hgmp.mrc.ac.uk")
  :provided   (labbook)
  :required   ((("add-log" add-log)))
- :keywords   ("labbook" "logging")
+ :keywords   (labbook logging)
  :homepage   "http://homepages.cs.ncl.ac.uk/phillip.lord/emacs.html"
  :commentary "\
 The package provides the ability to keep a labbook. It is based on

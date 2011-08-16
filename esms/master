@@ -4,7 +4,7 @@
  :license    "GPL-2"
  :maintainer ("Jarl Friis" . "jarl@diku.dk")
  :provided   (esms esms-conf esms-ssp-funs)
- :keywords   ("elisp" "esms" "sms")
+ :keywords   (elisp esms sms)
  :homepage   "http://emacs-sms.sf.net/"
  :commentary "\
 use `tcpdump -s 4096 -w myorange.dk` while submiting a SMS via browser to hack'em")

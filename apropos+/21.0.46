@@ -6,7 +6,7 @@
  :maintainer ("Drew Adams")
  :provided   (apropos+)
  :required   ((("apropos" apropos)))
- :keywords   ("help")
+ :keywords   (help)
  :commentary "\
 New command `apropos-user-options'.
 

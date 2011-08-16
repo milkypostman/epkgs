@@ -9,7 +9,7 @@
 	       ("eldoc" eldoc)
 	       ("hl-line" hl-line)
 	       ("ruler-mode" ruler-mode)))
- :keywords   ("data")
+ :keywords   (data)
  :wikipage   "http://www.emacswiki.org/HexlMode"
  :commentary "\
 This package implements a major mode for editing binary files.  It uses

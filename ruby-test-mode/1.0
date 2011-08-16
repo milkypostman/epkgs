@@ -7,6 +7,6 @@
 	      ("Caspar Florian Ebeling" . "florian.ebeling@gmail.com"))
  :maintainer ("Roman Scherer" . "roman.scherer@gmx.de")
  :provided   (ruby-test-mode)
- :keywords   ("rspec" "ruby" "test" "unit")
+ :keywords   (rspec ruby test unit)
  :homepage   "https://github.com/r0man/ruby-test-mode"
  :wikipage   "http://www.emacswiki.org/RubyTestMode")

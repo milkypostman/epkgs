@@ -7,7 +7,7 @@
  :maintainer ("khiker" . "khiker+elisp@gmail.com")
  :provided   (dabbrev-expand-multiple)
  :required   ((("dabbrev" dabbrev)))
- :keywords   ("dabbrev")
+ :keywords   (dabbrev)
  :homepage   "http://www.emacswiki.org/DabbrevExpandMultiple"
  :wikipage   "http://www.emacswiki.org/DabbrevExpandMultiple"
  :commentary "\

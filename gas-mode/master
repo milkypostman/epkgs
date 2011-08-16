@@ -5,7 +5,7 @@
  :authors    (("Heike C. Zimmerer" . "hcz@hczim.de"))
  :maintainer ("Heike C. Zimmerer" . "hcz@hczim.de")
  :provided   (gas-mode)
- :keywords   ("languages")
+ :keywords   (languages)
  :homepage   "http://www.hczim.de/software/gas-mode.html"
  :wikipage   "http://www.emacswiki.org/GasMode"
  :commentary "\

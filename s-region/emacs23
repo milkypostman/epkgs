@@ -5,7 +5,7 @@
  :authors    (("Morten Welinder" . "terra@diku.dk"))
  :maintainer ("Morten Welinder" . "terra@diku.dk")
  :provided   (s-region)
- :keywords   ("terminals")
+ :keywords   (terminals)
  :commentary "\
 Having loaded this code you can set the region by holding down the
 shift key and move the cursor to the other end of the region.  The

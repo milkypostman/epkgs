@@ -6,7 +6,7 @@
  :maintainer ("Drew Adams")
  :provided   (ring+)
  :required   ((("ring" ring)))
- :keywords   ("emacs-lisp" "extensions" "lisp")
+ :keywords   (emacs-lisp extensions lisp)
  :homepage   "http://www.emacswiki.org/RingPlus"
  :wikipage   "http://www.emacswiki.org/RingPlus"
  :commentary "\

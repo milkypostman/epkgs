@@ -6,7 +6,7 @@
  :maintainer ("Takeshi Banse" . "takebi@laafc.net")
  :provided   (anything-c-aspell-interactively)
  :required   ((("anything" anything)))
- :keywords   ("anything" "convenience" "unix" "wp")
+ :keywords   (anything convenience unix wp)
  :commentary "\
 Interactive aspell with Anything interface. This is just an
 \"aspell -a\"'s anything interface.")

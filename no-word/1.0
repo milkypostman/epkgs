@@ -5,4 +5,4 @@
  :authors    (("Pierre Gaston" . "pgas@intracom.gr"))
  :maintainer ("Pierre Gaston" . "pgas@intracom.gr")
  :provided   (no-word)
- :keywords   ("word" "word processors "))
+ :keywords   (word word\ processors\ ))

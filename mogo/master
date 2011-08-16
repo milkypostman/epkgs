@@ -6,7 +6,7 @@
  :maintainer ("Mathias Kegelmann")
  :provided   (mogo)
  :required   ((("cl" cl)))
- :keywords   ("games")
+ :keywords   (games)
  :commentary "\
 This client runs \"mogo\" in a buffer *mogo* and sets the buffer's
 major mode to mogo-mode.  MoGo mode redefines RET such that the

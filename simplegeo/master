@@ -4,7 +4,7 @@
  :updated    "2011"
  :authors    (("Ian Eure" . "ian@simplegeo.com"))
  :maintainer ("Ian Eure" . "ian@simplegeo.com")
- :keywords   ("comm")
+ :keywords   (comm)
  :homepage   "https://github.com/ieure/simplegeo-el"
  :commentary "\
 Requirements:

@@ -12,7 +12,7 @@
 	       ("todo-mode" todo-mode)
 	       ("vm" vm)
 	       (nil dired-shell)))
- :keywords   ("calendar" "todo")
+ :keywords   (calendar todo)
  :homepage   "http://home.attbi.com/~shannon1679/organizer-mode.html"
  :wikipage   "http://www.emacswiki.org/OrganizerMode"
  :commentary "\

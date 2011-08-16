@@ -12,7 +12,7 @@
 	       ("timer" timer)
 	       ("widget" wid-edit widget)
 	       ("xml" xml)))
- :keywords   ("languages")
+ :keywords   (languages)
  :homepage   "http://idlwave.org"
  :wikipage   "http://www.emacswiki.org/IdlMode"
  :commentary "\

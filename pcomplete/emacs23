@@ -7,7 +7,7 @@
  :provided   (pcmpl-cvs pcmpl-gnu pcmpl-linux pcmpl-rpm pcmpl-unix pcomplete)
  :required   ((("cl" cl)
 	       ("executable" executable)))
- :keywords   ("abbrev" "processes")
+ :keywords   (abbrev processes)
  :commentary "\
 This module provides a programmable completion facility using
 \"completion functions\".  Each completion function is responsible

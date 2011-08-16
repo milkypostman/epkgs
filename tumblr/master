@@ -6,7 +6,7 @@
  :maintainer ("Travis Jeffery" . "eatsleepgolf@gmail.com")
  :provided   (tumblr)
  :required   ((("http-post-simple" http-post-simple)))
- :keywords   ("tumblr")
+ :keywords   (tumblr)
  :homepage   "https://github.com/travisjeffery/tumblr-for-emacs"
  :wikipage   "http://www.emacswiki.org/Tumblr"
  :commentary "\

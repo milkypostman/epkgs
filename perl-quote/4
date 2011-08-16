@@ -5,7 +5,7 @@
  :authors    (("Kevin Ryde" . "user42@zip.com.au"))
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (perl-quote)
- :keywords   ("languages")
+ :keywords   (languages)
  :homepage   "http://user42.tuxfamily.org/perl-quote/index.html"
  :commentary "\
 This spot of code converts Perl single-quote '' strings to \"\", or back

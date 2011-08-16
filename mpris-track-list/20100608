@@ -7,7 +7,7 @@
  :provided   (mpris-track-list)
  :required   ((("cl" cl)
 	       ("mpris-dbus" mpris-dbus)))
- :keywords   ("dbus" "mpris")
+ :keywords   (dbus mpris)
  :commentary "\
 List playlist via MPRIS, now only support play/stop/pause.
 

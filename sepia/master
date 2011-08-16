@@ -14,7 +14,7 @@
 	       ("tree-widget" tree-widget)
 	       ("w3m" w3m w3m-perldoc)
 	       (nil sepia-snippet)))
- :keywords   ("languages" "perl")
+ :keywords   (languages perl)
  :homepage   "http://search.cpan.org/src/SEANO/Sepia-0.96/Sepia.html"
  :wikipage   "http://www.emacswiki.org/Sepia"
  :commentary "\

@@ -6,6 +6,6 @@
  :maintainer ("Seiji Zenitani" . "zenitani@mac.com")
  :provided   (smart-dnd)
  :required   ((("emacs-core" dnd)))
- :keywords   ("tools")
+ :keywords   (tools)
  :homepage   "http://homepage.mac.com/zenitani/comp-e.html"
  :wikipage   "http://www.emacswiki.org/SmartDnD")

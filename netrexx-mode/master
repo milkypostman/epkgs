@@ -5,5 +5,5 @@
  :provided   (netrexx-mode)
  :required   ((("cedet" speedbar)
 	       ("skeleton" skeleton)))
- :keywords   ("netrexx")
+ :keywords   (netrexx)
  :homepage   "http://zaaf.nl/emacs/emacs.html")

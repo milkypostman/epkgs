@@ -6,7 +6,7 @@
  :maintainer ("Daniel Pfeiffer" . "occitan@esperanto.org")
  :adapted-by ("ESR, Daniel Pfeiffer")
  :provided   (two-column)
- :keywords   ("wp")
+ :keywords   (wp)
  :commentary "\
 Komentario:				 Commentary:
 

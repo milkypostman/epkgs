@@ -6,7 +6,7 @@
  :authors    (("Alp Aker" . "alp.tekin.aker@gmail.com"))
  :maintainer ("Alp Aker" . "alp.tekin.aker@gmail.com")
  :provided   (fci-osx-23-fix fill-column-indicator)
- :keywords   ("convenience")
+ :keywords   (convenience)
  :homepage   "https://github.com/alpaker/Fill-Column-Indicator"
  :wikipage   "http://www.emacswiki.org/FillColumnIndicator"
  :commentary "\

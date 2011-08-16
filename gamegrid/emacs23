@@ -6,4 +6,4 @@
  :maintainer ("Glynn Clements" . "glynn@sensei.co.uk")
  :provided   (gamegrid)
  :required   ((("cl" cl)))
- :keywords   ("games"))
+ :keywords   (games))

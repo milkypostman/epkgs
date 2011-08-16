@@ -4,7 +4,7 @@
  :license    "GPL-2"
  :authors    (("Gabe Wenz" . "wenz@ugcs.caltech.edu"))
  :maintainer ("Gabe Wenz" . "wenz@ugcs.caltech.edu")
- :keywords   ("intel")
+ :keywords   (intel)
  :homepage   "http://wolverine.caltech.edu/tools/emacs86/overview.htm"
  :wikipage   "http://www.emacswiki.org/Asm86Mode"
  :commentary "\

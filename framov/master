@@ -7,5 +7,5 @@
  :provided   (framov)
  :required   ((("cl" cl)
 	       ("easy-mmode" easy-mmode)))
- :keywords   ("frame")
+ :keywords   (frame)
  :homepage   "https://github.com/lieutar/framov.el")

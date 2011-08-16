@@ -7,7 +7,7 @@
  :provided   (flash-paren)
  :required   ((("custom" custom)
 	       ("timer" timer)))
- :keywords   ("extensions")
+ :keywords   (extensions)
  :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
  :commentary "\
 Loading this makes emacs's paren blinking behavior more closely

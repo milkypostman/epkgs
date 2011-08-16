@@ -7,7 +7,7 @@
  :maintainer (nil . "monnier@gnu.org")
  :provided   (ewoc)
  :required   ((("cl" cl)))
- :keywords   ("extensions" "lisp")
+ :keywords   (extensions lisp)
  :commentary "\
 Ewoc Was Once Cookie
 But now it's Emacs' Widget for Object Collections

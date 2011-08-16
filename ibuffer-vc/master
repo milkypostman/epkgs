@@ -7,7 +7,7 @@
  :required   ((("cl" cl)
 	       ("ibuffer" ibuf-ext ibuffer)
 	       ("vc" vc-hooks)))
- :keywords   ("themes")
+ :keywords   (themes)
  :homepage   "https://github.com/purcell/ibuffer-vc"
  :commentary "\
 Adds functionality to ibuffer for grouping buffers by their parent

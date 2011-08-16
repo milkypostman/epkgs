@@ -7,7 +7,7 @@
  :provided   (erc-tex)
  :required   ((("cl" cl)
 	       ("erc" erc)))
- :keywords   ("comm" "tex")
+ :keywords   (comm tex)
  :homepage   "http://www.emacswiki.org/ErcTex"
  :wikipage   "http://www.emacswiki.org/ErcTex"
  :commentary "\

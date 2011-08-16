@@ -6,7 +6,7 @@
  :maintainer ("Drew Adams")
  :provided   (autoload+)
  :required   ((("emacs-core" autoload)))
- :keywords   ("maint")
+ :keywords   (maint)
  :commentary "\
 ***** NOTE: The following function defined in `autoload.el' has
              been REDEFINED HERE:

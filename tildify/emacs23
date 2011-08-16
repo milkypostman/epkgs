@@ -5,7 +5,7 @@
  :authors    (("Milan Zamazal" . "pdm@zamazal.org"))
  :maintainer ("Milan Zamazal" . "pdm@zamazal.org")
  :provided   (tildify)
- :keywords   ("sgml" "tex" "text" "wp")
+ :keywords   (sgml tex text wp)
  :commentary "\
 This package can be typically used for adding forgotten tildes in TeX
 sources or adding `&nbsp;' sequences in SGML (e.g. HTML) texts.

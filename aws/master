@@ -6,7 +6,7 @@
  :authors    (("Ian Eure" . "ian.eure@gmail.com"))
  :maintainer ("Ian Eure" . "ian.eure@gmail.com")
  :provided   (aws)
- :keywords   ("admin" "amazon" "aws")
+ :keywords   (admin amazon aws)
  :homepage   "https://github.com/ieure/aws-el"
  :commentary "\
 (autoload 'ec2-describe-instances \"aws\")

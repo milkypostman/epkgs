@@ -5,7 +5,7 @@
  :authors    (("Kevin Ryde" . "user42@zip.com.au"))
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (arc-lzh-exe)
- :keywords   ("data")
+ :keywords   (data)
  :commentary "\
 This is a spot of code for viewing the contents of LHa (ie. LZH)
 self-extracting executables from `archive-mode'.  The executable part,

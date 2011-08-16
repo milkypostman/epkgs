@@ -3,7 +3,7 @@
  :updated    "20040401"
  :license    "GPL-2"
  :provided   (swiss-move)
- :keywords   ("tools" "user")
+ :keywords   (tools user)
  :homepage   "http://www.skamphausen.de/cgi-bin/ska/swiss-move"
  :wikipage   "http://www.emacswiki.org/SwissMove"
  :commentary "\

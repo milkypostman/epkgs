@@ -6,5 +6,5 @@
  :maintainer ("John Palmieri" . "palmieri@math.washington.edu")
  :provided   (highlight-completion)
  :required   ((("ispell" ispell)))
- :keywords   ("completion")
+ :keywords   (completion)
  :homepage   "http://www.math.washington.edu/~palmieri/Emacs/hlc.html")

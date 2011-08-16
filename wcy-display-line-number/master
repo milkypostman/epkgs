@@ -5,7 +5,7 @@
  :authors    (("ChunYe Wang"))
  :maintainer ("ChunYe Wang")
  :provided   (display-line-number)
- :keywords   ("tools")
+ :keywords   (tools)
  :commentary "\
 Installation:
 

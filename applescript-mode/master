@@ -6,6 +6,6 @@
  :maintainer ("sakito" . "sakito@users.sourceforge.jp")
  :provided   (applescript-mode)
  :required   ((("easymenu" easymenu)))
- :keywords   ("languages" "tools")
+ :keywords   (languages tools)
  :commentary "\
 AppleScript Mode")

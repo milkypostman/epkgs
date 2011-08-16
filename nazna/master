@@ -5,7 +5,7 @@
  :maintainer ("baron")
  :provided   (nazna)
  :required   ((("cl" cl)))
- :keywords   ("arithmetic" "math")
+ :keywords   (arithmetic math)
  :homepage   "https://github.com/baron/nazna.el"
  :commentary "\
 mental arithmetic for emacs

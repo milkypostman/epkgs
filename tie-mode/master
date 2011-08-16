@@ -6,7 +6,7 @@
  :provided   (tie-mode)
  :required   ((("compile" compile)
 	       ("easymenu" easymenu)))
- :keywords   ("languages")
+ :keywords   (languages)
  :homepage   "http://www.emacswiki.org/TieMode"
  :wikipage   "http://www.emacswiki.org/TieMode"
  :commentary "\

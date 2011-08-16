@@ -7,7 +7,7 @@
  :provided   (bytecomp-simplify)
  :required   ((("advice" advice)
 	       ("apropos" apropos)))
- :keywords   ("extensions")
+ :keywords   (extensions)
  :homepage   "http://user42.tuxfamily.org/bytecomp-simplify/index.html"
  :commentary "\
 This spot of code add warnings to the byte compiler to report on possible

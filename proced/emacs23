@@ -6,7 +6,7 @@
  :maintainer ("Roland Winkler" . "winkler@gnu.org")
  :provided   (proced)
  :required   ((("gnus" time-date)))
- :keywords   ("processes" "unix")
+ :keywords   (processes unix)
  :commentary "\
 Proced makes an Emacs buffer containing a listing of the current
 system processes.  You can use the normal Emacs commands to move around

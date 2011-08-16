@@ -6,6 +6,6 @@
  :authors    (("Kazuo YAGI" . "kyagi@1liner.jp"))
  :maintainer ("Kazuo YAGI" . "kyagi@1liner.jp")
  :provided   (shell-pop)
- :keywords   ("shell" "terminal" "tools")
+ :keywords   (shell terminal tools)
  :homepage   "https://github.com/whitypig/shell-pop"
  :wikipage   "http://www.emacswiki.org/ShellPop")

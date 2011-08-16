@@ -5,7 +5,7 @@
  :authors    (("John Heidemann" . "johnh@isi.edu"))
  :maintainer ("John Heidemann" . "johnh@isi.edu")
  :provided   (mouse-drag)
- :keywords   ("mouse")
+ :keywords   (mouse)
  :commentary "\
 What is ``mouse-drag.el''?
 

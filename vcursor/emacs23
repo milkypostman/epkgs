@@ -6,7 +6,7 @@
  :maintainer ("FSF")
  :provided   (vcursor)
  :required   ((("compare-w" compare-w)))
- :keywords   ("convenience" "virtual cursor")
+ :keywords   (convenience virtual\ cursor)
  :commentary "\
 Latest changes
 ==============

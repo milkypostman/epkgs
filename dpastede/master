@@ -6,7 +6,7 @@
  :authors    (("Greg Newman" . "grep@20seven.org"))
  :maintainer ("Greg Newman" . "greg@20seven.org")
  :provided   (dpastede)
- :keywords   ("dpaste" "paste" "pastebin" "pastie" "python")
+ :keywords   (dpaste paste pastebin pastie python)
  :homepage   "http://bitbucket.org/gregnewman/dpastede"
  :commentary "\
 dpastede.el provides functions to post a region or buffer to

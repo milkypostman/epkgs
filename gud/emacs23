@@ -10,7 +10,7 @@
 	       ("comint" comint)
 	       ("emacs-core" tooltip)
 	       ("etags" etags)))
- :keywords   ("tools" "unix")
+ :keywords   (tools unix)
  :commentary "\
 The ancestral gdb.el was by W. Schelter <wfs@rascal.ics.utexas.edu>.
 It was later rewritten by rms.  Some ideas were due to Masanobu.  Grand

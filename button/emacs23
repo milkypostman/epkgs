@@ -5,7 +5,7 @@
  :authors    (("Miles Bader" . "miles@gnu.org"))
  :maintainer ("Miles Bader" . "miles@gnu.org")
  :provided   (button)
- :keywords   ("extensions")
+ :keywords   (extensions)
  :commentary "\
 This package defines functions for inserting and manipulating
 clickable buttons in Emacs buffers, such as might be used for help

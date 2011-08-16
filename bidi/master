@@ -5,7 +5,7 @@
  :authors    (("Alex Schroeder" . "alex@gnu.org"))
  :maintainer ("Alex Schroeder" . "alex@gnu.org")
  :provided   (bidi)
- :keywords   ("wp")
+ :keywords   (wp)
  :commentary "\
 This is modelled after characters.el.  At the moment, however, we
 don't have categories assigned, so we must create them ourselves.

@@ -7,7 +7,7 @@
  :maintainer (nil . "friedman@splode.com")
  :provided   (sendmail-alias)
  :required   ((("sendmail" sendmail)))
- :keywords   ("extensions" "mail")
+ :keywords   (extensions mail)
  :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
  :commentary "\
 This file redefines `build-mail-alias' and `build-mail-abbrevs'

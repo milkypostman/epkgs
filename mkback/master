@@ -5,5 +5,5 @@
  :maintainer ("Deepak Goel" . "deego@gnufans.org")
  :provided   (mkback)
  :required   ((("cl" cl)))
- :keywords   ("backup" "project")
+ :keywords   (backup project)
  :homepage   "http://www.gnufans.net/~deego/emacs.html")

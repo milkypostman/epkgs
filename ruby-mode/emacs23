@@ -7,7 +7,7 @@
  :maintainer ("Yukihiro Matsumoto")
  :provided   (ruby-mode)
  :required   ((("cl" cl)))
- :keywords   ("languages" "ruby")
+ :keywords   (languages ruby)
  :wikipage   "http://www.emacswiki.org/RubyMode"
  :commentary "\
 Provides font-locking, indentation support, and navigation for Ruby code.

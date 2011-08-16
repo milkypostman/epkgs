@@ -7,7 +7,7 @@
 	      ("Chong Yidong" . "cyd@stupidchicken.com"))
  :maintainer ("Chong Yidong" . "cyd@stupidchicken.com")
  :provided   (longlines)
- :keywords   ("convenience" "wp")
+ :keywords   (convenience wp)
  :wikipage   "http://www.emacswiki.org/LongLines"
  :commentary "\
 Some text editors save text files with long lines, and they

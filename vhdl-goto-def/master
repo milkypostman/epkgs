@@ -5,7 +5,7 @@
  :authors    (("wandad guscheh" . "wandad.guscheh@fh-hagenberg.at"))
  :maintainer ("wandad guscheh" . "wandad.guscheh@fh-hagenberg.at")
  :provided   (vhdl-goto-def)
- :keywords   ("vhdl")
+ :keywords   (vhdl)
  :commentary "\
 Usage: Open any vhdl file and invoke vhdl-goto-type-def with key sequence (\\C-c\\C-s by default).
 Cursor will jump to corresponding definition if there is one. Functions searches packages

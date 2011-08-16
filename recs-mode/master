@@ -7,7 +7,7 @@
  :maintainer ("tlh" . "thunkout@gmail.com")
  :provided   (recs-mode)
  :required   ((("cl" cl)))
- :keywords   ("command" "regexp" "suggestion")
+ :keywords   (command regexp suggestion)
  :homepage   "https://github.com/tlh/recs-mode.el"
  :wikipage   "http://www.emacswiki.org/Recs"
  :commentary "\

@@ -7,7 +7,7 @@
  :provided   (cvs-status)
  :required   ((("cl" cl)
 	       ("pcvs" pcvs-util)))
- :keywords   ("cvs" "pcl-cvs" "status" "tools" "tree")
+ :keywords   (cvs pcl-cvs status tools tree)
  :commentary "\
 Todo:
 

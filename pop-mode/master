@@ -10,7 +10,7 @@
 	       ("cl" cl)
 	       ("easymenu" easymenu)
 	       ("emacs-core" font-lock)))
- :keywords   ("poplog" "processes")
+ :keywords   (poplog processes)
  :commentary "\
 Pop-11 mode and inferior Pop-11 mode for XEmacs/GNU Eemacs.
 

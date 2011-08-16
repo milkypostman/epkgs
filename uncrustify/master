@@ -4,7 +4,7 @@
  :updated    "2010"
  :license    "GPL-3"
  :provided   (uncrustify)
- :keywords   ("uncrustify")
+ :keywords   (uncrustify)
  :homepage   "https://github.com/glima/Emacs-uncrustify"
  :commentary "\
 A simple Emacs interface for the uncrustify source code beautifier.

@@ -17,7 +17,7 @@
 	       ("xml" xml)
 	       (nil mw32script))
 	      (("electric" electric)))
- :keywords   ("subversion" "svn")
+ :keywords   (subversion svn)
  :homepage   "http://fsvn.sourceforge.jp"
  :commentary "\
 fsvn supports

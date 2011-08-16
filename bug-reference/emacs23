@@ -4,7 +4,7 @@
  :license    "GPL-3"
  :authors    (("Tom Tromey" . "tromey@redhat.com"))
  :maintainer ("Tom Tromey" . "tromey@redhat.com")
- :keywords   ("tools")
+ :keywords   (tools)
  :commentary "\
 This file provides minor modes for putting clickable overlays on
 references to bugs.  A bug reference is text like \"PR foo/29292\";

@@ -6,7 +6,7 @@
  :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
  :provided   (display-buffer-for-wide-screen)
  :required   ((("cl" cl)))
- :keywords   ("extensions")
+ :keywords   (extensions)
  :commentary "\
 Set `display-buffer-function' to
 `display-buffer-function-according-to-window-width'. It determines

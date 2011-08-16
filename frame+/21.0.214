@@ -7,7 +7,7 @@
  :provided   (frame+)
  :required   ((("emacs-core" frame))
 	      (("fit-frame" fit-frame)))
- :keywords   ("frames")
+ :keywords   (frames)
  :commentary "\
 Extensions to `frame.el'.
 

@@ -16,5 +16,5 @@
 	       ("w3m" w3m)
 	       ("widget" wid-edit widget)
 	       (nil bitmap spamfilter)))
- :keywords   ("network")
+ :keywords   (network)
  :homepage   "https://github.com/naota/navi2ch")

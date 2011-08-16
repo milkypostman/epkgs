@@ -6,7 +6,7 @@
  :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
  :provided   (git-dwim)
  :required   ((("cl" cl)))
- :keywords   ("convenience" "git" "tools")
+ :keywords   (convenience git tools)
  :homepage   "http://www.emacswiki.org/GitDwim"
  :wikipage   "http://www.emacswiki.org/GitDwim"
  :commentary "\

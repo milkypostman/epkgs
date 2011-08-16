@@ -4,7 +4,7 @@
  :license    "GPL-2"
  :authors    (("Lars Magne Ingebrigtsen" . "lmi@gnus.org"))
  :maintainer ("Lars Magne Ingebrigtsen" . "lmi@gnus.org")
- :keywords   ("language")
+ :keywords   (language)
  :homepage   "http://quimby.gnus.org/elisp"
  :commentary "\
 Usage:

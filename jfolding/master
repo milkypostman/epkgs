@@ -6,5 +6,5 @@
  :provided   (jfolding)
  :required   ((("folding" folding)
 	       ("hideshow" hideshow)))
- :keywords   ("folding" "java" "tools")
+ :keywords   (folding java tools)
  :homepage   "http://homepages.cs.ncl.ac.uk/phillip.lord/emacs.html")

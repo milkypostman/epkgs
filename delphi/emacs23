@@ -6,7 +6,7 @@
 	      ("Simon South" . "ssouth@member.fsf.org"))
  :maintainer ("Simon South" . "ssouth@member.fsf.org")
  :provided   (delphi)
- :keywords   ("languages")
+ :keywords   (languages)
  :wikipage   "http://www.emacswiki.org/DelphiMode"
  :commentary "\
 To enter Delphi mode when you find a Delphi source file, one must override

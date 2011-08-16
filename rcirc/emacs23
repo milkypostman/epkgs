@@ -8,7 +8,7 @@
  :required   ((("cl" cl)
 	       ("gnus" time-date)
 	       ("ring" ring)))
- :keywords   ("comm")
+ :keywords   (comm)
  :wikipage   "http://www.emacswiki.org/rcirc"
  :commentary "\
 Internet Relay Chat (IRC) is a form of instant communication over

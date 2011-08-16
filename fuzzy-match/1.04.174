@@ -3,7 +3,7 @@
  :updated    "20110104"
  :license    "GPL-2"
  :provided   (fuzzy-match)
- :keywords   ("completion" "matching" "string")
+ :keywords   (completion matching string)
  :commentary "\
 Purpose:
 

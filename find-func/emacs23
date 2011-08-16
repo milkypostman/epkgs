@@ -5,7 +5,7 @@
  :authors    (("Jens Petersen" . "petersen@kurims.kyoto-u.ac.jp"))
  :maintainer (nil . "petersen@kurims.kyoto-u.ac.jp")
  :provided   (find-func)
- :keywords   ("emacs-lisp" "functions" "variables")
+ :keywords   (emacs-lisp functions variables)
  :wikipage   "http://www.emacswiki.org/FindFunc"
  :commentary "\
 The funniest thing about this is that I can't imagine why a package

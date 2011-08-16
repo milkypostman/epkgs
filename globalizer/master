@@ -3,7 +3,7 @@
  :authors    (("Ed Sinjiashvili" . "mediogre@gmail.com"))
  :maintainer ("Ed Sinjiashvili" . "mediogre@gmail.com")
  :provided   (globalizer)
- :keywords   ("rails")
+ :keywords   (rails)
  :commentary "\
 Scan through a buffer to find strings eligible for translation. 
 Allow user to observe changes and make an educated choice: approve, veto,

@@ -4,7 +4,7 @@
  :license    "GPL-3"
  :maintainer ("FSF")
  :provided   (page)
- :keywords   ("convenience" "wp")
+ :keywords   (convenience wp)
  :wikipage   "http://www.emacswiki.org/PageMode"
  :commentary "\
 This code provides the page-oriented movement and selection commands

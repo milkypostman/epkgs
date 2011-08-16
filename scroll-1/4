@@ -6,7 +6,7 @@
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (scroll-1)
  :required   ((("view" view)))
- :keywords   ("convenience")
+ :keywords   (convenience)
  :homepage   "http://user42.tuxfamily.org/scroll-1/index.html"
  :commentary "\
 This spot of code sets up keys j and k to scroll the window up or down

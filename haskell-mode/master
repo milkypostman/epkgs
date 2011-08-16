@@ -18,7 +18,7 @@
 	       (nil func-menu))
 	      (("emacs-core" latin1-disp syntax)
 	       (nil syntax-ppss)))
- :keywords   ("faces" "files" "haskell")
+ :keywords   (faces files haskell)
  :homepage   "http://projects.haskell.org/haskellmode-emacs"
  :wikipage   "http://www.emacswiki.org/HaskellMode"
  :commentary "\

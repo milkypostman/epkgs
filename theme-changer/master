@@ -7,7 +7,7 @@
  :maintainer ("Joshua B. Griffith" . "josh.griffith@gmail.com")
  :provided   (theme-changer)
  :required   ((("calendar" solar)))
- :keywords   ("color-theme")
+ :keywords   (color-theme)
  :homepage   "https://github.com/hadronzoo/theme-changer"
  :commentary "\
 Given a location and day/night color themes, this file provides a

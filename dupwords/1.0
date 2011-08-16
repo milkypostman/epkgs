@@ -4,7 +4,7 @@
  :license    "GPL-2"
  :authors    ((nil . "stephen eglen stephen@anc.ed.ac.uk"))
  :maintainer (nil . "stephen eglen stephen@anc.ed.ac.uk")
- :keywords   ("wp")
+ :keywords   (wp)
  :homepage   "http://www.anc.ed.ac.uk/~stephen/emacs"
  :commentary "\
 This program will find duplicate words in sentences.  For example,

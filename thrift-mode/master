@@ -6,5 +6,5 @@
  :maintainer ("David Miller" . "david@deadpansincerity.com")
  :provided   (thrift-mode)
  :required   ((("emacs-core" font-lock)))
- :keywords   ("thrift")
+ :keywords   (thrift)
  :homepage   "https://github.com/davidmiller/thrift-mode")

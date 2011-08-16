@@ -7,6 +7,6 @@
  :provided   (tc)
  :required   ((("emacs-core" overlay)
 	       ("mail-extr" mail-extr)))
- :keywords   ("citing" "filling" "mail" "news")
+ :keywords   (citing filling mail news)
  :homepage   "http://www.emacswiki.org/TrivialCite"
  :wikipage   "http://www.emacswiki.org/TrivialCite")

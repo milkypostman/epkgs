@@ -8,7 +8,7 @@
  :provided   (ac-remind remind-conf-mode)
  :required   ((("auto-complete" auto-complete)
 	       ("emacs-core" font-lock overlay)))
- :keywords   ("configuration" "convenience" "remind")
+ :keywords   (configuration convenience remind)
  :homepage   "https://github.com/sshelagh/remind-conf-mode"
  :commentary "\
 Use this mode to help with the configuration of remind configuration files.

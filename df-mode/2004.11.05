@@ -7,7 +7,7 @@
  :maintainer ("Benjamin Drieu" . "bdrieu@april.org")
  :provided   (df-mode)
  :required   ((("timer" timer)))
- :keywords   ("tools" "unix")
+ :keywords   (tools unix)
  :homepage   "http://www.emacswiki.org/DfMode"
  :wikipage   "http://www.emacswiki.org/DfMode"
  :commentary "\

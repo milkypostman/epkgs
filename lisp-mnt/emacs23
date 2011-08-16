@@ -8,7 +8,7 @@
  :required   ((("emacs-core" emacsbug)
 	       ("finder" finder)
 	       ("outline" outline)))
- :keywords   ("docs")
+ :keywords   (docs)
  :commentary "\
 This library adds some services to Emacs-Lisp editing mode.
 

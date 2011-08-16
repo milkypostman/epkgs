@@ -7,7 +7,7 @@
  :provided   (hilit-chg)
  :required   ((("ediff" ediff-util)
 	       ("widget" wid-edit)))
- :keywords   ("faces")
+ :keywords   (faces)
  :commentary "\
 A minor mode: \"Highlight Changes mode\".
 

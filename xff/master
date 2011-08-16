@@ -7,7 +7,7 @@
  :provided   (xff)
  :required   ((("cl" cl)
 	       ("tellib" tellib)))
- :keywords   ("files" "find-file")
+ :keywords   (files find-file)
  :homepage   "http://members.a1.net/t.link/CompEmacsXff.html"
  :commentary "\
 ;---(:excerpt-beg xff :name desc)---

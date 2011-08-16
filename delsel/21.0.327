@@ -6,7 +6,7 @@
  :maintainer ("D. ADAMS")
  :provided   (delsel)
  :required   ((("cl" cl)))
- :keywords   ("abbrev" "convenience" "emulations" "local")
+ :keywords   (abbrev convenience emulations local)
  :commentary "\
 Let DEL delete the region; let character insertion replace it.
 

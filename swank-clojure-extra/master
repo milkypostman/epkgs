@@ -12,7 +12,7 @@
  :required   ((("assoc" assoc)
 	       ("clojure-mode" clojure-mode)
 	       ("slime" slime)))
- :keywords   ("languages" "lisp")
+ :keywords   (languages lisp)
  :homepage   "https://github.com/vu3rdd/swank-clojure-extra"
  :commentary "\
 The purpose of this file is to set up `slime-lisp-implementations'

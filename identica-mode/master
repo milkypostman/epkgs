@@ -15,5 +15,5 @@
 	       ("url" url url-http)
 	       ("w3m" w3m)
 	       ("xml" xml)))
- :keywords   ("identica" "web")
+ :keywords   (identica web)
  :wikipage   "http://www.emacswiki.org/Identica-mode")

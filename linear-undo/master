@@ -5,7 +5,7 @@
  :license    "GPL-3"
  :provided   (linear-undo)
  :required   ((("cl" cl)))
- :keywords   ("emulation" "wp")
+ :keywords   (emulation wp)
  :homepage   "https://github.com/k-talo/linear-undo.el"
  :commentary "\
 Overview

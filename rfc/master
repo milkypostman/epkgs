@@ -3,7 +3,7 @@
  :maintainer ("Katsuya Iida" . "katsuya_iida@hotmail.com")
  :provided   (rfc)
  :required   ((("w3" w3)))
- :keywords   ("rfc" "view")
+ :keywords   (rfc view)
  :homepage   "http://www.emacswiki.org/RFC"
  :wikipage   "http://www.emacswiki.org/RFC"
  :commentary "\

@@ -7,7 +7,7 @@
  :maintainer ("Arjen Wiersma" . "arjen@wiersma.org")
  :provided   (color-theme-arjen)
  :required   ((("color-theme" color-theme)))
- :keywords   ("local")
+ :keywords   (local)
  :homepage   "https://github.com/credmp/color-theme-arjen"
  :commentary "\
 This was my first color theme. It has been hacked into shape over

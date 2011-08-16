@@ -6,7 +6,7 @@
  :maintainer ("Drew Adams")
  :provided   (hexrgb)
  :required   ((("cl" cl)))
- :keywords   ("background" "color" "display" "frames" "hex" "number" "rgb")
+ :keywords   (background color display frames hex number rgb)
  :commentary "\
 Functions to manipulate colors, including RGB hex strings.
 

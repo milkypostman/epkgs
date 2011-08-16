@@ -6,7 +6,7 @@
  :maintainer ("Vinicius Jose Latorre" . "viniciusjl@ig.com.br")
  :provided   (delim-col)
  :required   ((("rect" rect)))
- :keywords   ("internal")
+ :keywords   (internal)
  :commentary "\
 delim-col helps to prettify columns in a text region or rectangle.
 

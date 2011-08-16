@@ -4,7 +4,7 @@
  :license    "GPL-3"
  :maintainer ("FSF")
  :provided   (life)
- :keywords   ("games")
+ :keywords   (games)
  :commentary "\
 A demonstrator for John Horton Conway's \"Life\" cellular automaton
 in Emacs Lisp.  Picks a random one of a set of interesting Life

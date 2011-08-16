@@ -7,7 +7,7 @@
  :maintainer ("Lars Magne Ingebrigtsen" . "larsi@gnus.org")
  :provided   (tellstick)
  :required   ((("cl" cl)))
- :keywords   ("automation" "home")
+ :keywords   (automation home)
  :homepage   "https://github.com/larsmagne/tellstick.el"
  :commentary "\
 Usage example:

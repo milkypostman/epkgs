@@ -5,7 +5,7 @@
  :authors    (("Juri Linkov" . "juri@jurta.org"))
  :maintainer ("Juri Linkov" . "juri@jurta.org")
  :provided   (multi-isearch)
- :keywords   ("matching")
+ :keywords   (matching)
  :commentary "\
 This file adds more dimensions to the search space.  It implements
 various features that extend isearch.  One of them is an ability to

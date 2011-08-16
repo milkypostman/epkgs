@@ -7,4 +7,4 @@
  :maintainer ("Henrik Joensson" . "henrik7205@hotmail.com")
  :provided   (ccm)
  :required   ((("easymenu" easymenu)))
- :keywords   ("ccm" "synergy"))
+ :keywords   (ccm synergy))

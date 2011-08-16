@@ -4,5 +4,5 @@
  :authors    (("Rocky Bernstein"))
  :maintainer ("Rocky Bernstein")
  :provided   (require-file1 require-file3)
- :keywords   ("internal")
+ :keywords   (internal)
  :homepage   "https://github.com/rocky/emacs-load-relative")

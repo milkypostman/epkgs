@@ -7,7 +7,7 @@
  :provided   (po-mode+)
  :required   ((("cl" cl)
 	       ("po-mode" po-mode)))
- :keywords   ("gettext")
+ :keywords   (gettext)
  :commentary "\
 This package is an extension to `po-mode.el', GNU Gettext's major
 mode for editing PO files. It is made for po-mode version 2.01.

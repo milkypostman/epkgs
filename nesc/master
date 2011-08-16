@@ -5,7 +5,7 @@
  :provided   (nesc-mode)
  :required   ((("cc-mode" cc-mode)
 	       ("emacs-core" derived font-lock)))
- :keywords   ("c" "languages")
+ :keywords   (c languages)
  :commentary "\
 put this in your .emacs:
 

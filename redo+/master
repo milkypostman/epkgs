@@ -3,7 +3,7 @@
  :updated    "1995"
  :license    "GPL-2"
  :provided   (redo+)
- :keywords   ("extensions" "lisp")
+ :keywords   (extensions lisp)
  :homepage   "http://www.emacswiki.org/RedoPlus"
  :wikipage   "http://www.emacswiki.org/RedoPlus"
  :commentary "\

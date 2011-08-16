@@ -4,7 +4,7 @@
  :license    "GPL-2"
  :provided   (123-menu)
  :required   ((("cl" cl)))
- :keywords   ("convenience")
+ :keywords   (convenience)
  :homepage   "http://www.emacswiki.org/OneTwoThreeMenu"
  :wikipage   "http://www.emacswiki.org/OneTwoThreeMenu"
  :commentary "\

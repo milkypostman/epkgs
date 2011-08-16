@@ -5,7 +5,7 @@
  :authors    (("Rick Bielawski" . "rbielaws@i1.net"))
  :maintainer ("Rick Bielawski" . "rbielaws@i1.net")
  :provided   (columnize)
- :keywords   ("convenience" "formatting" "tools")
+ :keywords   (convenience formatting tools)
  :homepage   "http://www.emacswiki.org/ColumnizeWords"
  :wikipage   "http://www.emacswiki.org/ColumnizeWords"
  :commentary "\

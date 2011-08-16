@@ -7,7 +7,7 @@
  :provided   (iedit)
  :required   ((("cl" cl)
 	       ("help-macro" help-macro)))
- :keywords   ("occurrence" "region" "replace" "simultaneous")
+ :keywords   (occurrence region replace simultaneous)
  :homepage   "http://www.emacswiki.org/Iedit"
  :wikipage   "http://www.emacswiki.org/Iedit"
  :commentary "\

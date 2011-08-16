@@ -10,5 +10,5 @@
 	       ("mailalias" mailalias)
 	       ("rfc822" rfc822)
 	       ("sendmail" sendmail)))
- :keywords   ("mail")
+ :keywords   (mail)
  :wikipage   "http://www.emacswiki.org/Rmail")

@@ -6,5 +6,5 @@
  :authors    ((nil . "franck@lumberjaph.net"))
  :maintainer (nil . "franck@lumberjaph.net")
  :provided   (pythonbrew-mini)
- :keywords   ("emacs" "python" "pythonbrew")
+ :keywords   (emacs python pythonbrew)
  :homepage   "https://github.com/franckcuny/pythonbrew-mini.el")

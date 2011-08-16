@@ -5,7 +5,7 @@
  :authors    (("Andrew Csillag" . "drew_csillag@geocities.com"))
  :maintainer ("Andrew Csillag" . "drew_csillag@geocities.com")
  :provided   (m4-mode)
- :keywords   ("faces" "languages")
+ :keywords   (faces languages)
  :commentary "\
 A smart editing mode for m4 macro definitions.  It seems to have most of the
 syntax right (sexp motion commands work, but function motion commands don't).

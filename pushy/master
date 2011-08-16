@@ -6,7 +6,7 @@
  :maintainer ("Tamas Patrovics")
  :provided   (pushy)
  :required   ((("iswitchb" iswitchb)))
- :keywords   ("completion")
+ :keywords   (completion)
  :homepage   "http://www.emacswiki.org/PushyCompletion"
  :wikipage   "http://www.emacswiki.org/PushyCompletion"
  :commentary "\

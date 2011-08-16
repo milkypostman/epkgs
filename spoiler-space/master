@@ -4,7 +4,7 @@
  :license    "GPL-2"
  :authors    (("Tom Breton" . "tob@world.std.com"))
  :maintainer ("Tom Breton" . "tob@world.std.com")
- :keywords   ("convenience" "mail" "news")
+ :keywords   (convenience mail news)
  :homepage   "http://panix.com/~tehom"
  :commentary "\
 To install, add the line 

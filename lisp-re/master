@@ -4,7 +4,7 @@
  :license    "GPL-2"
  :authors    (("Detlev Zundel" . "detlev.zundel@stud.uni-karlsruhe.de"))
  :maintainer ("Detlev Zundel" . "detlev.zundel@stud.uni-karlsruhe.de")
- :keywords   ("lisp" "matching")
+ :keywords   (lisp matching)
  :commentary "\
 $Id: lisp-re.el,v 1.1 1999/12/31 18:54:54 dzu Exp $
 

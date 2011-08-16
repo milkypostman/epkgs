@@ -6,7 +6,7 @@
  :maintainer ("Thomas Link")
  :provided   (tellib)
  :required   ((("emacs-core" overlay)))
- :keywords   ("elisp" "library")
+ :keywords   (elisp library)
  :homepage   "http://members.a1.net/t.link/CompEmacsTellib.html"
  :commentary "\
 Installation: Put (require 'tellib) (tellib-install) into your

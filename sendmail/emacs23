@@ -7,7 +7,7 @@
  :required   ((("mail-utils" mail-utils)
 	       ("mailalias" mailalias)
 	       ("rmail" rmail)))
- :keywords   ("mail")
+ :keywords   (mail)
  :commentary "\
 This mode provides mail-sending facilities from within Emacs.  It is
 documented in the Emacs user's manual.")

@@ -6,7 +6,7 @@
  :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
  :provided   (mode-line-frame)
  :required   ((("cl" cl)))
- :keywords   ("extensions" "frames")
+ :keywords   (extensions frames)
  :commentary "\
 This file offers a frame to show various information. The mode-line
 and the header-line play this role, but these are too short. This

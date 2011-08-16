@@ -7,7 +7,7 @@
  :maintainer ("Nikolaj Schumacher" . "bugs@nschum.de")
  :provided   (guess-style)
  :required   ((("cl" cl)))
- :keywords   ("c" "files" "languages")
+ :keywords   (c files languages)
  :homepage   "http://nschum.de/src/emacs/guess-style"
  :wikipage   "http://www.emacswiki.org/GuessStyle"
  :commentary "\

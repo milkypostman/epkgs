@@ -7,7 +7,7 @@
  :maintainer ("Yoshiki Kurihara" . "kurihara@cpan.org")
  :provided   (tmt-mode)
  :required   ((("tempo" tempo)))
- :keywords   ("mode" "perl" "template")
+ :keywords   (mode perl template)
  :homepage   "https://github.com/yoshiki/tmt-mode"
  :commentary "\
 This is a major mode for editing files written in Text::MicroTemplate syntax.

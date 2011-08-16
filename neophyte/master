@@ -7,7 +7,7 @@
  :provided   (neophyte)
  :required   ((("advice" advice)
 	       ("emacs-core" helper)))
- :keywords   ("help" "learn")
+ :keywords   (help learn)
  :commentary "\
 I created this mode to address a concern that emacs was \"*very
 hard*\" to learn and use.  I personally think *very hard* is an

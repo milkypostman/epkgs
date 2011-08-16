@@ -5,5 +5,5 @@
  :authors    (("David Aspinall" . "da@dcs.ed.ac.uk"))
  :maintainer ("David Aspinall" . "da@dcs.ed.ac.uk")
  :provided   (texi-docstring-magic)
- :keywords   ("docs" "lisp" "tex")
+ :keywords   (docs lisp tex)
  :homepage   "http://www.ctan.org/tex-archive/macros/texinfo/texinfo/util")

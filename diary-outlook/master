@@ -5,7 +5,7 @@
  :authors    (("Dave Love" . "fx@gnu.org"))
  :maintainer ("Dave Love" . "fx@gnu.org")
  :provided   (diary-outlook)
- :keywords   ("calendar" "mail")
+ :keywords   (calendar mail)
  :homepage   "http://www.loveshack.ukfsn.org/emacs"
  :commentary "\
 Provides a simple framework for snarfing the pestilential

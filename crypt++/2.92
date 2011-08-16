@@ -9,7 +9,7 @@
  :required   ((("mailcrypt" mailcrypt)
 	       ("reporter" reporter)
 	       (nil pam)))
- :keywords   ("extensions")
+ :keywords   (extensions)
  :wikipage   "http://www.emacswiki.org/CryptPlusPlus"
  :commentary "\
 Please see notes on INSTALLATION and USAGE on the pages below.

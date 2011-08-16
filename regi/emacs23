@@ -5,4 +5,4 @@
  :authors    ((nil . "bwarsaw@cen.com"))
  :maintainer (nil . "bwarsaw@cen.com")
  :provided   (regi)
- :keywords   ("extensions" "matching"))
+ :keywords   (extensions matching))

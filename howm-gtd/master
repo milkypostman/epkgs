@@ -8,5 +8,5 @@
  :provided   (howm-gtd)
  :required   ((("cl" cl)
 	       ("howm" action-lock howm)))
- :keywords   ("calendar" "docs")
+ :keywords   (calendar docs)
  :homepage   "https://github.com/himura/howm-gtd")

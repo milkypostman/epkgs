@@ -5,7 +5,7 @@
  :maintainer ("FSF")
  :provided   (undigest)
  :required   ((("rmail" rmail)))
- :keywords   ("mail")
+ :keywords   (mail)
  :commentary "\
 See Internet RFC 934 and RFC 1153.
 Also limited support for MIME digest encapsulation.")

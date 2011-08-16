@@ -5,4 +5,4 @@
  :authors    (("Geoff Voelker" . "voelker@cs.washington.edu"))
  :maintainer ("Geoff Voelker" . "voelker@cs.washington.edu")
  :provided   (w32-vars)
- :keywords   ("internal"))
+ :keywords   (internal))

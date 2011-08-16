@@ -8,7 +8,7 @@
  :required   ((("column-marker" column-marker)
 	       ("imenu" imenu)
 	       ("which-func" which-func)))
- :keywords   ("compaq" "extensions" "hp" "languages" "tandem")
+ :keywords   (compaq extensions hp languages tandem)
  :homepage   "http://www.emacswiki.org/DDLMode"
  :wikipage   "http://www.emacswiki.org/DDLMode"
  :commentary "\

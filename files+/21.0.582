@@ -8,7 +8,7 @@
  :required   (nil
 	      (("misc-fns" misc-fns)
 	       ("strings" strings)))
- :keywords   ("extensions" "internal" "local")
+ :keywords   (extensions internal local)
  :homepage   "http://www.emacswiki.org/FilesPlus"
  :wikipage   "http://www.emacswiki.org/FilesPlus"
  :commentary "\

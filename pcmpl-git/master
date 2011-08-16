@@ -8,7 +8,7 @@
  :provided   (pcmpl-git pcmpl-git-parse)
  :required   ((("cl" cl)
 	       ("pcomplete" pcomplete)))
- :keywords   ("tools")
+ :keywords   (tools)
  :homepage   "https://github.com/leoliu/pcmpl-git-el"
  :commentary "\
 Complete both git commands and their options and arguments. Type

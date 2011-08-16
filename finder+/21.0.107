@@ -8,6 +8,6 @@
  :required   ((("finder" finder))
 	      (("autofit-frame" autofit-frame)
 	       ("fit-frame" fit-frame)))
- :keywords   ("help")
+ :keywords   (help)
  :commentary "\
 Extensions to standard library finder.el")

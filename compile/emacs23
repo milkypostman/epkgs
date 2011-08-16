@@ -9,7 +9,7 @@
  :required   ((("cl" cl)
 	       ("comint" comint)
 	       ("emacs-core" tool-bar)))
- :keywords   ("processes" "tools")
+ :keywords   (processes tools)
  :commentary "\
 This package provides the compile facilities documented in the Emacs user's
 manual.

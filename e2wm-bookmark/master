@@ -8,7 +8,7 @@
  :provided   (e2wm-bookmark)
  :required   ((("bookmark" bookmark)
 	       ("e2wm" e2wm)))
- :keywords   ("convenience" "window manager")
+ :keywords   (convenience window\ manager)
  :homepage   "https://github.com/myuhe/e2wm-bookmark.el"
  :commentary "\
 e2wm is window manager. e2wm makes windowlayout easy.

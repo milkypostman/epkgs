@@ -5,7 +5,7 @@
  :authors    (("wandad guscheh" . "wandad.guscheh@fh-hagenberg.at"))
  :maintainer ("wandad guscheh" . "wandad.guscheh@fh-hagenberg.at")
  :provided   (vhdl-process-wave)
- :keywords   ("vhdl")
+ :keywords   (vhdl)
  :commentary "\
 This file can be used with saved modelsim wave files. Just invoke
 vhdl-process-wave command while in saved buffer, save the buffer,

@@ -8,5 +8,5 @@
  :provided   (scan)
  :required   ((("cl" cl)
 	       ("gnus" gnus-util)))
- :keywords   ("music")
+ :keywords   (music)
  :homepage   "https://github.com/larsmagne/scan.el")

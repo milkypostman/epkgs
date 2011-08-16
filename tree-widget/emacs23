@@ -7,7 +7,7 @@
  :provided   (tree-widget)
  :required   ((("cl" cl)
 	       ("widget" wid-edit)))
- :keywords   ("extensions")
+ :keywords   (extensions)
  :commentary "\
 This library provide a tree widget useful to display data
 structures organized in a hierarchical order.

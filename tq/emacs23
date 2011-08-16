@@ -6,7 +6,7 @@
  :maintainer ("FSF")
  :adapted-by ("ESR")
  :provided   (tq)
- :keywords   ("extensions")
+ :keywords   (extensions)
  :commentary "\
 This file manages receiving a stream asynchronously, parsing it
 into transactions, and then calling the associated handler function

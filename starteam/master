@@ -9,7 +9,7 @@
  :required   ((("dired" dired)
 	       ("elib" string)
 	       ("vc" vc)))
- :keywords   ("tools")
+ :keywords   (tools)
  :homepage   "http://sourceforge.net/projects/starteam-el"
  :wikipage   "http://www.emacswiki.org/StarTeam"
  :commentary "\

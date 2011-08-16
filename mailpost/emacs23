@@ -6,7 +6,7 @@
  :provided   (mailpost)
  :required   ((("mailalias" mailalias)
 	       ("sendmail" sendmail)))
- :keywords   ("mail")
+ :keywords   (mail)
  :commentary "\
 Yet another mail interface.  this for the rmail system to provide
  the missing sendmail interface on systems without /usr/lib/sendmail,

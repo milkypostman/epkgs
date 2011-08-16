@@ -5,7 +5,7 @@
  :authors    (("Alex Schroeder" . "alex@gnu.org"))
  :maintainer ("Alex Schroeder" . "alex@gnu.org")
  :provided   (erobot)
- :keywords   ("games")
+ :keywords   (games)
  :homepage   "http://www.emacswiki.org/EmacsRobots"
  :wikipage   "http://www.emacswiki.org/EmacsRobots"
  :commentary "\

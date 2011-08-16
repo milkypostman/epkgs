@@ -17,6 +17,6 @@
 	       ("sendmail" sendmail)
 	       ("vm" vm)
 	       (nil h-skip-bytec id-menubars sw-process x-mouse)))
- :keywords   ("hypermedia")
+ :keywords   (hypermedia)
  :homepage   "http://sourceforge.net/projects/hyperbole"
  :wikipage   "http://www.emacswiki.org/Hyperbole")

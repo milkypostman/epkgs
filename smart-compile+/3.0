@@ -5,7 +5,7 @@
  :authors    (("Seiji Zenitani" . "zenitani@mac.com"))
  :maintainer ("Seiji Zenitani" . "zenitani@mac.com")
  :provided   (smart-compile+)
- :keywords   ("tools" "unix")
+ :keywords   (tools unix)
  :commentary "\
 This package provides `smart-compile' function.
 You can associates a particular file with a paticular compile functions,

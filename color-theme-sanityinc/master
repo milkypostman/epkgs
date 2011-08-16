@@ -5,7 +5,7 @@
  :license    "GPL-3"
  :provided   (color-theme-sanityinc)
  :required   ((("color-theme" color-theme)))
- :keywords   ("themes")
+ :keywords   (themes)
  :homepage   "https://github.com/purcell/color-theme-sanityinc"
  :commentary "\
 Here are two slightly subdued color themes that are easy on the eyes

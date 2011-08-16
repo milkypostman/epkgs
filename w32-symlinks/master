@@ -6,7 +6,7 @@
  :maintainer ("Francis J. Wright" . "f.j.wright@qmul.ac.uk")
  :provided   (w32-symlinks)
  :required   ((("dired-aux" dired-aux)))
- :keywords   ("convenience" "files" "unix")
+ :keywords   (convenience files unix)
  :commentary "\
 This file is intended to be used with NTEmacs 21, i.e. GNU Emacs 21
 compiled as a native Microsoft Windows application and running on

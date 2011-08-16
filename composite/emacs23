@@ -4,4 +4,4 @@
  :license    "GPL-3"
  :authors    (("Kenichi HANDA" . "handa@etl.go.jp"))
  :maintainer ("Kenichi HANDA" . "handa@etl.go.jp")
- :keywords   ("character composition" "mule" "multilingual"))
+ :keywords   (character\ composition mule multilingual))

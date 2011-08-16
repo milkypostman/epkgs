@@ -8,7 +8,7 @@
  :required   ((("cl" cl)
 	       ("compile" compile)
 	       ("emacs-core" overlay)))
- :keywords   ("c" "languages" "tools")
+ :keywords   (c languages tools)
  :wikipage   "http://www.emacswiki.org/FlyMake"
  :commentary "\
 Flymake is a minor Emacs mode performing on-the-fly syntax

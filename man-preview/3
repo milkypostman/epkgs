@@ -6,7 +6,7 @@
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (man-preview)
  :required   ((("man" man)))
- :keywords   ("docs")
+ :keywords   (docs)
  :wikipage   "http://www.emacswiki.org/ManPreview"
  :commentary "\
 M-x man-preview displays a preview of man nroff source using \"man -l\".

@@ -5,4 +5,4 @@
  :authors    (("Masanobu Umeda"))
  :maintainer (nil . "umerin@mse.kyutech.ac.jp")
  :provided   (timezone)
- :keywords   ("news"))
+ :keywords   (news))

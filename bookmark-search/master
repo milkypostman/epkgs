@@ -6,7 +6,7 @@
  :provided   (bookmark-search)
  :required   ((("bookmark" bookmark)
 	       ("cl" cl)))
- :keywords   ("bookmarks")
+ :keywords   (bookmarks)
  :commentary "\
 ----------
 

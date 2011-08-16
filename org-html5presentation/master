@@ -9,7 +9,7 @@
 	       ("org-mode" org-exp org-table)
 	       ("table" table)
 	       (nil htmlize)))
- :keywords   ("calendar" "hypermedia" "outlines" "wp")
+ :keywords   (calendar hypermedia outlines wp)
  :homepage   "http://orgmode.org"
  :commentary "\
 About HTML5 presentation, see http://www.html5rocks.com/

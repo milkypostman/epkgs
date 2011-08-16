@@ -10,5 +10,5 @@
 	       ("json" json)
 	       ("url" url)
 	       ("widget" widget)))
- :keywords   ("simplenote")
+ :keywords   (simplenote)
  :homepage   "https://github.com/cefstat/simplenote.el")

@@ -5,7 +5,7 @@
  :maintainer ("Drew Adams")
  :provided   (line-num)
  :required   ((("cl" cl)))
- :keywords   ("local")
+ :keywords   (local)
  :commentary "\
 Display line numbers in left-margin of buffer.
 

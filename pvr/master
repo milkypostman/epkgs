@@ -9,5 +9,5 @@
  :required   ((("cl" cl)
 	       ("gnus" time-date)
 	       ("xml" xml)))
- :keywords   ("extensions" "processes")
+ :keywords   (extensions processes)
  :homepage   "https://github.com/larsmagne/pvr.el")

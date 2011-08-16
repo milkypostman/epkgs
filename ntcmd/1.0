@@ -7,7 +7,7 @@
  :provided   (ntcmd)
  :required   ((("cl" cl)
 	       ("emacs-core" font-lock)))
- :keywords   ("languages")
+ :keywords   (languages)
  :commentary "\
 This is a mode for highlighting and indenting Windows cmd scripts.
 It uses a parser in several passes to ensure the buffer is

@@ -6,7 +6,7 @@
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (make-mode-fillindent)
  :required   ((("make-mode" make-mode)))
- :keywords   ("files")
+ :keywords   (files)
  :commentary "\
 This is a spot of code for makefile-mode to let fill-paragraph (M-q) work
 on indented comments like

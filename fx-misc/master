@@ -10,7 +10,7 @@
 	       ("man" man)
 	       ("spook" spook)
 	       ("vc" vc)))
- :keywords   ("extensions")
+ :keywords   (extensions)
  :homepage   "http://www.loveshack.ukfsn.org/emacs"
  :commentary "\
 Some functions and settings from my .emacs that might be useful to

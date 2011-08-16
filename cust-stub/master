@@ -5,7 +5,7 @@
  :authors    (("Noah Friedman" . "friedman@splode.com"))
  :maintainer (nil . "friedman@splode.com")
  :provided   (cust-stub)
- :keywords   ("extensions")
+ :keywords   (extensions)
  :homepage   "ftp://ftp.splode.com/pub/users/friedman/emacs-lisp"
  :commentary "\
 Emacs 19.34 and earlier, and XEmacs 19.14 and earlier, do not have the

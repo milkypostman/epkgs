@@ -6,7 +6,7 @@
  :maintainer ("SAKURAI, Masashi" . "m.sakurai@kiwanami.net")
  :provided   (anything-find-project-resources)
  :required   ((("cl" cl)))
- :keywords   ("anything" "files" "project")
+ :keywords   (anything files project)
  :homepage   "https://github.com/kiwanami/emacs-anything-fpr"
  :commentary "\
 The command `anything-find-resource' emulates the eclipse command

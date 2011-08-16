@@ -12,7 +12,7 @@
 	       ("reporter" reporter)
 	       ("vc" vc vc-hooks)
 	       (nil ediff-tbar rcs)))
- :keywords   ("comparing" "merging" "patching" "tools" "unix")
+ :keywords   (comparing merging patching tools unix)
  :wikipage   "http://www.emacswiki.org/EdiffMode"
  :commentary "\
 Never read that diff output again!

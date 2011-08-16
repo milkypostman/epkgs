@@ -5,7 +5,7 @@
  :authors    (("Rick Farnbach" . "rick_farnbach@mentorg.com"))
  :maintainer ("Rick Farnbach" . "rick_farnbach@mentorg.com")
  :provided   (morse)
- :keywords   ("games")
+ :keywords   (games)
  :commentary "\
 Converts text to Morse code and back with M-x morse-region and
 M-x unmorse-region (though Morse code is no longer official :-().")

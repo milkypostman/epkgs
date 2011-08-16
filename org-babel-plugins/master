@@ -5,5 +5,5 @@
  :maintainer ("Jianing Yang")
  :provided   (ob-pygment ob-twopi)
  :required   ((("org-mode" ob ob-eval)))
- :keywords   ("highlighting" "syntax")
+ :keywords   (highlighting syntax)
  :homepage   "https://github.com/jianingy/org-babel-plugins")

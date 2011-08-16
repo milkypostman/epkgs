@@ -6,7 +6,7 @@
  :maintainer ("Tom Breton" . "tehom@localhost")
  :provided   (tehom-1)
  :required   ((("gnus" gnus-eform gnus-util)))
- :keywords   ("extensions")
+ :keywords   (extensions)
  :homepage   "www.panix.com/~tehom"
  :commentary "\
 tehom-edit-form is a generalization of edit-form (Which is very

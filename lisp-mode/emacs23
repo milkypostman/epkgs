@@ -6,7 +6,7 @@
  :provided   (lisp-mode)
  :required   ((("edebug" edebug)
 	       ("emacs-core" bytecomp)))
- :keywords   ("languages" "lisp")
+ :keywords   (languages lisp)
  :commentary "\
 The base major mode for editing Lisp code (used also for Emacs Lisp).
 This mode is documented in the Emacs manual.")

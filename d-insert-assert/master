@@ -6,7 +6,7 @@
  :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
  :provided   (d-insert-assert)
  :required   ((("cc-mode" cc-mode)))
- :keywords   ("convenience" "d" "languages")
+ :keywords   (convenience d languages)
  :commentary "\
 Make D language's assert expression verbose automatically when
 saving file.  If you are familiar with xUnit, you may write many

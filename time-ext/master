@@ -6,4 +6,4 @@
  :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
  :provided   (time-ext)
  :required   ((("cl" cl)))
- :keywords   ("lisp"))
+ :keywords   (lisp))

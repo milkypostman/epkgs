@@ -6,7 +6,7 @@
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (gtk-look)
  :required   ((("browse-url" browse-url)))
- :keywords   ("c" "tools")
+ :keywords   (c tools)
  :wikipage   "http://www.emacswiki.org/GtkLook"
  :commentary "\
 M-x gtk-lookup-symbol displays HTML documentation for Gtk and Gnome

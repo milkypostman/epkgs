@@ -8,4 +8,4 @@
  :required   ((("cl" cl)
 	       ("compile" compile)
 	       ("gnus" format-spec)))
- :keywords   ("tools"))
+ :keywords   (tools))

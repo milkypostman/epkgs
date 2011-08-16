@@ -10,7 +10,7 @@
 	       ("json" json)
 	       ("twittering-mode" ssl)
 	       ("url" url url-http)))
- :keywords   ("campfire" "chat")
+ :keywords   (campfire chat)
  :homepage   "https://github.com/timcharper/campfire-el"
  :commentary "\
 This file is NOT part of GNU Emacs.

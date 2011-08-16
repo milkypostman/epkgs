@@ -12,7 +12,7 @@
 	       ("dired" dired)
 	       ("imenu" imenu)
 	       ("man" man)))
- :keywords   ("help" "unix")
+ :keywords   (help unix)
  :wikipage   "http://www.emacswiki.org/WoMan"
  :commentary "\
 WoMan implements a subset of the formatting performed by the Emacs

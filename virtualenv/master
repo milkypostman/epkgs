@@ -6,7 +6,7 @@
  :authors    (("Aaron Culich" . "aculich@gmail.com"))
  :maintainer ("Aaron Culich" . "aculich@gmail.com")
  :provided   (virtualenv)
- :keywords   ("python" "virtualenv")
+ :keywords   (python virtualenv)
  :homepage   "https://github.com/aculich/virtualenv.el"
  :commentary "\
 This is a minor mode for setting the virtual environment for the

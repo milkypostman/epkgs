@@ -6,7 +6,7 @@
  :maintainer ("Stefan Monnier" . "monnier@iro.umontreal.ca")
  :provided   (css-mode)
  :required   ((("cl" cl)))
- :keywords   ("hypermedia")
+ :keywords   (hypermedia)
  :wikipage   "http://www.emacswiki.org/CSS"
  :commentary "\
 Yet another CSS mode.")

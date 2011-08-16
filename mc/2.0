@@ -9,7 +9,7 @@
 	       ("dired" dired)
 	       ("easymenu" easymenu)
 	       ("emacs-core" font-lock)))
- :keywords   ("commander" "midnight")
+ :keywords   (commander midnight)
  :homepage   "http://www.emacswiki.org/MidnightCommanderMode"
  :wikipage   "http://www.emacswiki.org/MidnightCommanderMode"
  :commentary "\

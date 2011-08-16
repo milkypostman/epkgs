@@ -7,7 +7,7 @@
  :provided   (impress)
  :required   ((("cl" cl)
 	       ("org-mode" org)))
- :keywords   ("files" "tools")
+ :keywords   (files tools)
  :commentary "\
 DONE groups
 DONE paths

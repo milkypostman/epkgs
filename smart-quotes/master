@@ -6,7 +6,7 @@
  :authors    (("Gareth Rees" . "gdr@garethrees.org"))
  :maintainer ("Gareth Rees" . "gdr@garethrees.org")
  :provided   (smart-quotes)
- :keywords   ("abbrev")
+ :keywords   (abbrev)
  :homepage   "https://github.com/gareth-rees/smart-quotes"
  :wikipage   "http://www.emacswiki.org/SmartQuotes"
  :commentary "\

@@ -5,5 +5,5 @@
  :authors    (("Abhi Yerra" . "abhi@berkeley.edu"))
  :maintainer ("Abhi Yerra" . "abhi@berkeley.edu")
  :provided   (github)
- :keywords   ("github")
+ :keywords   (github)
  :homepage   "https://github.com/abhiyerra/github.el")

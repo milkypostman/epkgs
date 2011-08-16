@@ -6,7 +6,7 @@
  :maintainer ("Frank Haun" . "fh@fhaun.de")
  :provided   (hamster-mode)
  :required   ((("emacs-core" font-lock)))
- :keywords   ("languages")
+ :keywords   (languages)
  :wikipage   "http://www.emacswiki.org/HamsterMode"
  :commentary "\
 Major Mode for editing hamster scripts (*.hsc, *.hsm).

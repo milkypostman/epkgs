@@ -8,7 +8,7 @@
  :required   ((("cl" cl)
 	       ("pcvs" pcvs-util)
 	       ("widget" wid-edit)))
- :keywords   ("cvs" "log" "rcs" "sccs" "tools" "version-control")
+ :keywords   (cvs log rcs sccs tools version-control)
  :commentary "\
 Major mode to browse revision log histories.
 Currently supports the format output by:

@@ -8,7 +8,7 @@
  :required   ((("cl" cl)
 	       ("ring+" ring+))
 	      (("emacs-core" mwheel)))
- :keywords   ("cycle" "higher-order" "keys" "repeat")
+ :keywords   (cycle higher-order keys repeat)
  :homepage   "http://www.emacswiki.org/DoReMi"
  :wikipage   "http://www.emacswiki.org/DoReMi"
  :commentary "\

@@ -6,7 +6,7 @@
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (ffap-gcc-path)
  :required   ((("ffap" ffap)))
- :keywords   ("files")
+ :keywords   (files)
  :homepage   "http://user42.tuxfamily.org/ffap-gcc-path/index.html"
  :commentary "\
 The default `ffap-c-path' is \"/usr/include\" and \"/usr/local/include\",

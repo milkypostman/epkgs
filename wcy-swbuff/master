@@ -5,7 +5,7 @@
  :authors    (("ChunYe Wang" . "charleswang@peoplemail.com.cn"))
  :maintainer ("ChunYe Wang" . "charleswang@peoplemail.com.cn")
  :provided   (wcy-swbuff)
- :keywords   ("buffer" "convenience")
+ :keywords   (buffer convenience)
  :commentary "\
 Place this file somewhere in your `load-path', and add:
 

@@ -6,6 +6,6 @@
  :maintainer ("Andy Stewart" . "lazycat.manatee@gmail.com")
  :provided   (doc-view-extension)
  :required   ((("doc-view" doc-view)))
- :keywords   ("doc-view")
+ :keywords   (doc-view)
  :commentary "\
 This package have some little extensions functions for `doc-view'")

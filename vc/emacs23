@@ -13,7 +13,7 @@
 	       ("gnus" parse-time sha1)
 	       ("grep" grep)
 	       ("url" url url-dav)))
- :keywords   ("tools")
+ :keywords   (tools)
  :commentary "\
 This mode is fully documented in the Emacs user's manual.
 

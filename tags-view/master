@@ -7,7 +7,7 @@
  :maintainer ("Mark Hepburn" . "mark.hepburn@gmail.com")
  :provided   (tags-view)
  :required   ((("cl" cl)))
- :keywords   ("convenience" "extensions" "files" "tools")
+ :keywords   (convenience extensions files tools)
  :homepage   "https://github.com/markhepburn/tags-view"
  :commentary "\
 Functionality to supplement the different tags operations, usually

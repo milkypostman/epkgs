@@ -4,7 +4,7 @@
  :license    "GPL-3"
  :maintainer ("FSF")
  :provided   (find-file)
- :keywords   ("c" "matching" "tools")
+ :keywords   (c matching tools)
  :wikipage   "http://www.emacswiki.org/FindFile"
  :commentary "\
 PURPOSE:

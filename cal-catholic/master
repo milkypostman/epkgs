@@ -6,7 +6,7 @@
  :maintainer ("Bill White" . "billw@wolfram.com")
  :provided   (cal-benedictine cal-catholic cal-catholic-diary cal-dominican cal-franciscan cal-particular cal-sanctoral cal-sanctoral-updates cal-seasonal cal-seasonal-updates)
  :required   ((("calendar" cal-menu calendar)))
- :keywords   ("calendar")
+ :keywords   (calendar)
  :homepage   "http://members.wri.com/billw/creed/catholic-calendar/index.html"
  :commentary "\
 This collection of functions implements the features of calendar.el

@@ -7,7 +7,7 @@
  :adapted-by ("Dave Love" . "d.love@dl.ac.uk")
  :provided   (scheme)
  :required   ((("lisp-mode" lisp-mode)))
- :keywords   ("languages" "lisp")
+ :keywords   (languages lisp)
  :wikipage   "http://www.emacswiki.org/Scheme"
  :commentary "\
 The major mode for editing Scheme-type Lisp code, very similar to

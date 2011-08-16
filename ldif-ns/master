@@ -5,7 +5,7 @@
  :authors    (("Dave Love" . "fx@gnu.org"))
  :maintainer ("Dave Love" . "fx@gnu.org")
  :provided   (ldif-ns)
- :keywords   ("data")
+ :keywords   (data)
  :homepage   "http://www.loveshack.ukfsn.org/emacs"
  :commentary "\
 This package converts some types of name service records to LDIF

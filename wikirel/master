@@ -7,7 +7,7 @@
  :provided   (wikirel)
  :required   ((("browse-url" browse-url)
 	       ("oddmuse" oddmuse)))
- :keywords   ("hypermedia")
+ :keywords   (hypermedia)
  :homepage   "http://www.emacswiki.org/WikiRel"
  :wikipage   "http://www.emacswiki.org/WikiRel"
  :commentary "\

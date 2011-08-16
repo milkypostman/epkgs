@@ -19,7 +19,7 @@
 	       ("org-mode" org)
 	       ("ses" ses)
 	       (nil keykit-interaction keykit-mode)))
- :keywords   ("csound")
+ :keywords   (csound)
  :homepage   "http://www.zogotounga.net/comp/stef-elisp-2.19.zip"
  :commentary "\
 -------------

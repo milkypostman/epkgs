@@ -6,7 +6,7 @@
  :maintainer ("F. Thomas May" . "uw-nsr!uw-warp!tom@beaver.cs.washington.edu")
  :adapted-by ("ESR")
  :provided   (blackbox)
- :keywords   ("games")
+ :keywords   (games)
  :commentary "\
 by F. Thomas May <uw-nsr!uw-warp!tom@beaver.cs.washington.edu>
 doc comment by Root Boy Jim <rbj@dsys.icst.nbs.gov>, 27 Apr 89

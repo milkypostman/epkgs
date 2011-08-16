@@ -9,7 +9,7 @@
  :required   ((("cl" cl)
 	       ("emacs-core" faces)
 	       ("regexp-opt" regexp-opt)))
- :keywords   ("grammar" "weasel-words" "writing")
+ :keywords   (grammar weasel-words writing)
  :homepage   "https://github.com/bnbeckwith/writegood-mode"
  :commentary "\
 This minor mode tries to find and highlight problems with your

@@ -10,7 +10,7 @@
 	       ("etags" etags))
 	      (("alien-search" alien-search)
 	       ("emacs-core" menu-bar)))
- :keywords   ("convenience" "emulations" "wp")
+ :keywords   (convenience emulations wp)
  :homepage   "https://github.com/k-talo/volatile-highlights.el"
  :commentary "\
 Overview

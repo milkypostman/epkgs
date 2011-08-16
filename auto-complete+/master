@@ -6,7 +6,7 @@
  :maintainer ("ahei" . "ahei0802@126.com")
  :provided   (auto-complete+)
  :required   ((("auto-complete" auto-complete)))
- :keywords   ("auto" "complete" "plus" "regexp")
+ :keywords   (auto complete plus regexp)
  :homepage   "http://www.emacswiki.org/AutoCompletePlus"
  :wikipage   "http://www.emacswiki.org/AutoCompletePlus"
  :commentary "\

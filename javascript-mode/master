@@ -7,7 +7,7 @@
  :provided   (javascript-mode)
  :required   ((("browse-url" browse-url)
 	       ("tempo" tempo)))
- :keywords   ("languages")
+ :keywords   (languages)
  :homepage   "http://www.brigadoon.de/peter"
  :wikipage   "http://www.emacswiki.org/JavaScriptMode"
  :commentary "\

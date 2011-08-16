@@ -6,7 +6,7 @@
  :maintainer ("Taiki SUGAWARA" . "buzz.taiki@gmail.com")
  :provided   (trans-regions)
  :required   ((("cl" cl)))
- :keywords   ("convenience")
+ :keywords   (convenience)
  :commentary "\
 This package provides transpose regoins command.
 

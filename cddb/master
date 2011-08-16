@@ -10,5 +10,5 @@
 	       ("expect" expect)
 	       ("gnus" message)
 	       (nil captitle)))
- :keywords   ("music")
+ :keywords   (music)
  :homepage   "https://github.com/larsmagne/cddb.el")

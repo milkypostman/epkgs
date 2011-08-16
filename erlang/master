@@ -15,7 +15,7 @@
 	       ("hyperbole" tags)
 	       ("man" man)
 	       ("tempo" tempo)))
- :keywords   ("erlang" "languages" "processes")
+ :keywords   (erlang languages processes)
  :homepage   "http://www.erlang.org/doc/apps/tools/erlang_mode_chapter.html"
  :commentary "\
 Introduction:

@@ -10,7 +10,7 @@
 	       ("rx" rx)
 	       ("skeleton" skeleton)
 	       ("thingatpt" thingatpt)))
- :keywords   ("extras" "python" "refactor" "utility")
+ :keywords   (extras python refactor utility)
  :homepage   "http://bitbucket.org/mickey/python-extras"
  :commentary "\
 Random grab bag of extras for \\\\[python-mode] and

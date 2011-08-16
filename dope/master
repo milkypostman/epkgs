@@ -10,5 +10,5 @@
 	       ("emacs-core" pp)
 	       ("thingatpt" thingatpt)
 	       ("widget" wid-edit widget)))
- :keywords   ("dotemacs" "error" "profile" "speed" "startup")
+ :keywords   (dotemacs error profile speed startup)
  :homepage   "http://www.gnufans.net/~deego/emacs.html")

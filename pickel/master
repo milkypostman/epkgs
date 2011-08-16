@@ -7,7 +7,7 @@
  :maintainer ("tlh" . "thunkout@gmail.com")
  :provided   (pickel)
  :required   ((("cl" cl)))
- :keywords   ("object" "serialization")
+ :keywords   (object serialization)
  :homepage   "https://github.com/tlh/pickel.el"
  :commentary "\
 pickel is an elisp object serialization package.  It can serialize

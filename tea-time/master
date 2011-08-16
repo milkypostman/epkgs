@@ -6,7 +6,7 @@
  :authors    (("konsty" . "antipin.konstantin@googlemail.com"))
  :maintainer ("konsty" . "antipin.konstantin@googlemail.com")
  :provided   (tea-time)
- :keywords   ("tea-time" "timer")
+ :keywords   (tea-time timer)
  :homepage   "https://github.com/krick/tea-time"
  :wikipage   "http://www.emacswiki.org/tea-time"
  :commentary "\

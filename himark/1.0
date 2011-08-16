@@ -6,7 +6,7 @@
 	      ("based on ideas by Ehud Karni" . "ehud@unix.simonwiesel.co.il"))
  :maintainer ("Roland Winkler" . "roland.winkler@physik.uni-erlangen.de")
  :provided   (himark)
- :keywords   ("faces")
+ :keywords   (faces)
  :commentary "\
 himark.el provides marking of text in a buffer by highlighting.
 Unlike transient-mark-mode the marking is permanent and can be

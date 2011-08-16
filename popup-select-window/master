@@ -6,7 +6,7 @@
  :maintainer ("HAMANO Kiyoto" . "khiker.mail@gmail.com")
  :provided   (popup-select-window)
  :required   ((("popup" popup)))
- :keywords   ("popup" "select-window" "window")
+ :keywords   (popup select-window window)
  :commentary "\
 Extend a `select-window'.
 

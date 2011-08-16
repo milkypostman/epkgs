@@ -5,7 +5,7 @@
  :authors    (("Masanobu UMEDA" . "umerin@mse.kyutech.ac.jp"))
  :maintainer ("Masanobu UMEDA" . "umerin@mse.kyutech.ac.jp")
  :provided   (metamail)
- :keywords   ("mail" "mime" "multimedia" "news")
+ :keywords   (mail mime multimedia news)
  :commentary "\
 Note: Metamail does not have all the options which are compatible with
 the environment variables.  For that reason, metamail.el has to

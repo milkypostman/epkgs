@@ -8,5 +8,5 @@
  :provided   (vlog-align vlog-auto vlog-indent vlog-lib vlog-mode vlog-signal vlog-skel)
  :required   ((("cl" cl)
 	       ("emacs-core" font-lock)))
- :keywords   ("languages" "verilog")
+ :keywords   (languages verilog)
  :homepage   "http://vlog-mode.sourceforge.net")

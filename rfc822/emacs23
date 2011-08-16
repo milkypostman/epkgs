@@ -5,7 +5,7 @@
  :authors    (("Richard Mlynarik" . "mly@eddie.mit.edu"))
  :maintainer ("FSF")
  :provided   (rfc822)
- :keywords   ("mail")
+ :keywords   (mail)
  :commentary "\
 Support functions for parsing RFC-822 headers, used by mail and news
 modes.")

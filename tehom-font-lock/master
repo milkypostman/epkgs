@@ -6,7 +6,7 @@
  :maintainer ("Tom Breton" . "tob@world.std.com")
  :provided   (tehom-font-lock)
  :required   ((("emacs-core" font-lock)))
- :keywords   ("extensions" "maint" "tools")
+ :keywords   (extensions maint tools)
  :homepage   "http://panix.com/~tehom"
  :commentary "\
 This is a little thing I wrote because building expressions for

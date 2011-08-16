@@ -5,5 +5,5 @@
  :maintainer ("Vivek Dasmohapatra" . "vivek@etla.org")
  :provided   (lpc-mode)
  :required   ((("regexp-opt" regexp-opt)))
- :keywords   ("languages" "lpc")
+ :keywords   (languages lpc)
  :homepage   "http://rtfm.etla.org/emacs/lpc-mode")

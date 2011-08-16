@@ -5,7 +5,7 @@
  :maintainer ("FSF")
  :provided   (mailabbrev)
  :required   ((("sendmail" sendmail)))
- :keywords   ("mail")
+ :keywords   (mail)
  :commentary "\
 This file ensures that, when the point is in a To:, CC:, BCC:, or From:
 field, word-abbrevs are defined for each of your mail aliases.  These

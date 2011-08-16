@@ -26,7 +26,7 @@
 	       ("image-mode" image-mode)
 	       ("linkd" linkd)
 	       ("pp+" pp+)))
- :keywords   ("annotations" "bookmarks" "gnus" "info" "placeholders" "search" "url")
+ :keywords   (annotations bookmarks gnus info placeholders search url)
  :homepage   "http://www.emacswiki.org/BookmarkPlus"
  :wikipage   "http://www.emacswiki.org/BookmarkPlus"
  :commentary "\

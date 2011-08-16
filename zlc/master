@@ -7,5 +7,5 @@
  :maintainer ("mooz" . "stillpedant@gmail.com")
  :provided   (zlc)
  :required   ((("cl" cl)))
- :keywords   ("convenience" "matching")
+ :keywords   (convenience matching)
  :homepage   "https://github.com/mooz/emacs-zlc")

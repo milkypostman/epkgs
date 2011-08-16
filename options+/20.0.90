@@ -6,7 +6,7 @@
  :maintainer ("Drew Adams")
  :provided   (options+)
  :required   ((("emacs-obsolete" options)))
- :keywords   ("docs" "help" "internal")
+ :keywords   (docs help internal)
  :commentary "\
 Extensions to `options.el'.
 

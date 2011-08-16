@@ -8,7 +8,7 @@
  :provided   (browse-kill-ring)
  :required   ((("cl" cl)
 	       ("emacs-core" derived overlay)))
- :keywords   ("convenience")
+ :keywords   (convenience)
  :homepage   "https://github.com/todesschaf/browse-kill-ring"
  :wikipage   "http://www.emacswiki.org/BrowseKillRing"
  :commentary "\

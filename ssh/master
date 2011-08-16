@@ -7,7 +7,7 @@
  :provided   (ssh)
  :required   ((("comint" comint)
 	       ("shell" shell)))
- :keywords   ("comm" "unix")
+ :keywords   (comm unix)
  :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
  :commentary "\
 Support for remote logins using `ssh'.

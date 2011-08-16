@@ -9,7 +9,7 @@
  :required   ((("cl" cl)
 	       ("emacs-core" overlay)
 	       ("gamegrid" gamegrid)))
- :keywords   ("games")
+ :keywords   (games)
  :homepage   "http://www.nongnu.org/nethack-el"
  :wikipage   "http://www.emacswiki.org/NethackMode"
  :commentary "\

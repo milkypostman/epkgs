@@ -24,7 +24,7 @@
 	       ("w32" w32-vars)
 	       ("widget" wid-edit widget))
 	      (("gnus" mailcap)))
- :keywords   ("internal")
+ :keywords   (internal)
  :commentary "\
 This file is loaded uncompiled when dumping Emacs.
 Doc-strings should adhere to the conventions of make-docfile.")

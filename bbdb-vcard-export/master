@@ -7,4 +7,4 @@
  :provided   (bbdb-vcard-export)
  :required   ((("bbdb" bbdb)
 	       ("easy-mmode" easy-mmode)))
- :keywords   ("ipod" "vcard"))
+ :keywords   (ipod vcard))

@@ -23,7 +23,7 @@
 	       ("ring" ring)
 	       ("whitespace" whitespace)
 	       ("xml" xml)))
- :keywords   ("languages")
+ :keywords   (languages)
  :homepage   "http://proofgeneral.inf.ed.ac.uk"
  :commentary "\
 This file loads Proof General.  It is required by the

@@ -9,7 +9,7 @@
 	       ("emacs-core" tooltip)
 	       ("gud" gud)
 	       ("json" json)))
- :keywords   ("tools" "unix")
+ :keywords   (tools unix)
  :commentary "\
 This mode acts as a graphical user interface to GDB.  You can interact with
 GDB through the GUD buffer in the usual way, but there are also further

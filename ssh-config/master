@@ -4,5 +4,5 @@
  :updated    "2010"
  :provided   (ssh-config)
  :required   ((("org-mode" org)))
- :keywords   ("emacs" "ssh")
+ :keywords   (emacs ssh)
  :homepage   "https://github.com/renard/ssh-config-el")

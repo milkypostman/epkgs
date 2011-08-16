@@ -7,7 +7,7 @@
  :provided   (zeroconf)
  :required   ((("cl" cl)
 	       ("dbus" dbus)))
- :keywords   ("comm" "hardware")
+ :keywords   (comm hardware)
  :commentary "\
 This package provides an interface to the Avahi, the zeroconf
 daemon under GNU/Linux.  The communication mean with Avahi is

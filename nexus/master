@@ -8,5 +8,5 @@
  :provided   (nexus nexus-widget)
  :required   ((("gnus" mm-url)
 	       ("xml" xml)))
- :keywords   ("comm")
+ :keywords   (comm)
  :homepage   "https://github.com/juergenhoetzel/emacs-nexus")

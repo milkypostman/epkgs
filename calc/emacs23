@@ -8,7 +8,7 @@
  :required   ((("calendar" cal-dst)
 	       ("thingatpt" thingatpt))
 	      (("info" info)))
- :keywords   ("convenience" "extensions")
+ :keywords   (convenience extensions)
  :commentary "\
 Calc is split into many files.  This file is the main entry point.
 This file includes autoload commands for various other basic Calc

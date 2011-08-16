@@ -5,7 +5,7 @@
  :authors    (("Hedderik van Rijn" . "hvr-actrmode@van-rijn.org"))
  :maintainer ("Hedderik van Rijn" . "hvr-actrmode@van-rijn.org")
  :provided   (actr-mode)
- :keywords   ("act-r")
+ :keywords   (act-r)
  :homepage   "http://www.van-rijn.org/actr-mode"
  :commentary "\
 This code is a very much extended version of the lisp-mode that comes

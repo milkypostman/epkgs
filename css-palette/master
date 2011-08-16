@@ -4,7 +4,7 @@
  :provided   (css-palette)
  :required   ((("cl" cl)
 	       ("nxhtml" css-color)))
- :keywords   ("css" "extensions" "multimedia" "processes" "tools")
+ :keywords   (css extensions multimedia processes tools)
  :homepage   "http://niels.kicks-ass.org/"
  :wikipage   "http://www.emacswiki.org/CssPalette"
  :commentary "\

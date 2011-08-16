@@ -6,4 +6,4 @@
  :provided   (unrmail)
  :required   (nil
 	      (("rmime" rmime)))
- :keywords   ("mail"))
+ :keywords   (mail))

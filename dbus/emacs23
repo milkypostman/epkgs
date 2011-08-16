@@ -7,7 +7,7 @@
  :provided   (dbus)
  :required   ((("cl" cl)
 	       ("xml" xml)))
- :keywords   ("comm" "hardware")
+ :keywords   (comm hardware)
  :commentary "\
 This package provides language bindings for the D-Bus API.  D-Bus
 is a message bus system, a simple way for applications to talk to

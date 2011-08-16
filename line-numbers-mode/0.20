@@ -6,7 +6,7 @@
  :maintainer (nil . "gchen275@yahoo.com")
  :provided   (line-numbers-mode)
  :required   ((("cl" cl)))
- :keywords   ("display" "line numbering" "minor-mode")
+ :keywords   (display line\ numbering minor-mode)
  :wikipage   "http://www.emacswiki.org/LineNumbers"
  :commentary "\
 This package implements a minor mode for XEmacs which, when enabled,

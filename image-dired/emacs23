@@ -8,7 +8,7 @@
  :required   ((("dired" dired)
 	       ("gnus" format-spec)
 	       ("widget" wid-edit widget)))
- :keywords   ("multimedia")
+ :keywords   (multimedia)
  :commentary "\
 BACKGROUND
 ==========

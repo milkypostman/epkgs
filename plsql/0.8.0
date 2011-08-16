@@ -9,6 +9,6 @@
 	       ("cl" cl)
 	       ("imenu" imenu)
 	       ("sql" sql)))
- :keywords   ("languages")
+ :keywords   (languages)
  :homepage   "http://www.emacswiki.org/PlsqlMode"
  :wikipage   "http://www.emacswiki.org/PlsqlMode")

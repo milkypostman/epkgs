@@ -4,6 +4,6 @@
  :license    "GPL-3"
  :maintainer ("FSF")
  :provided   (gs)
- :keywords   ("internal")
+ :keywords   (internal)
  :commentary "\
 This code is experimental.  Don't use it.")

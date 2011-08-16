@@ -8,7 +8,7 @@
  :required   ((("assoc" assoc)
 	       ("gnus" imap message)
 	       ("sendmail" sendmail)))
- :keywords   ("mail")
+ :keywords   (mail)
  :commentary "\
 This module provides hashtable-like functions on top of imap.el
 functionality.  All the authentication is handled by auth-source so

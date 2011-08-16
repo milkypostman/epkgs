@@ -6,4 +6,4 @@
  :maintainer ("Jonathan Yavner" . "jyavner@member.fsf.org")
  :provided   (ses)
  :required   ((("emacs-core" unsafep)))
- :keywords   ("spreadsheet"))
+ :keywords   (spreadsheet))

@@ -6,7 +6,7 @@
  :maintainer ("Joseph" . "jixiuf@gmail.com")
  :provided   (quick-jump)
  :required   ((("ring" ring)))
- :keywords   ("jump" "marker" "quick")
+ :keywords   (jump marker quick)
  :homepage   "https://github.com/jixiuf/quick-jump"
  :commentary "\
 quick-jump.el works like `register' in Emacs. but it is

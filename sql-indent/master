@@ -8,7 +8,7 @@
  :provided   (sql-indent)
  :required   ((("regexp-opt" regexp-opt)
 	       ("sql" sql)))
- :keywords   ("languages")
+ :keywords   (languages)
  :homepage   "http://www.emacswiki.org/SqlIndent"
  :wikipage   "http://www.emacswiki.org/SqlIndent"
  :commentary "\

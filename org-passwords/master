@@ -5,7 +5,7 @@
  :license    "GPL-3"
  :authors    (("Andrea Crotti" . "andrea.crotti.0@gmail.com"))
  :maintainer ("Andrea Crotti" . "andrea.crotti.0@gmail.com")
- :keywords   ("outlines" "passwords")
+ :keywords   (outlines passwords)
  :homepage   "https://github.com/AndreaCrotti/org-passwords"
  :commentary "\
 This file contains the code for managing your passwords with Org-mode

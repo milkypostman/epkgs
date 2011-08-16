@@ -8,7 +8,7 @@
  :required   ((("cl" cl)
 	       ("compile" compile)
 	       ("iswitchb" iswitchb)))
- :keywords   ("matching" "tools")
+ :keywords   (matching tools)
  :homepage   "http://nschum.de/src/emacs/full-ack"
  :wikipage   "http://www.emacswiki.org/FullAck"
  :commentary "\

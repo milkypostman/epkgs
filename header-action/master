@@ -4,7 +4,7 @@
  :authors    (("Holger Schauer" . "holger.schauer@gmx.de"))
  :maintainer ("Holger Schauer" . "holger.schauer@gmx.de")
  :provided   (header-action)
- :keywords   ("mail" "utils")
+ :keywords   (mail utils)
  :commentary "\
 This mainly defines a function `header-action' which should be
 hooked into `mail-send-hook', `news-inews-hook' and `message-send-hook'.

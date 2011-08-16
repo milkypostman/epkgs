@@ -5,7 +5,7 @@
  :authors    (("Florian v. Savigny" . "lorian@fsavigny.de")
 	      ("James Clark" . "jjc@clark.com"))
  :maintainer ("Florian v. Savigny" . "lorian@fsavigny.de")
- :keywords   ("languages")
+ :keywords   (languages)
  :commentary "\
 Set of three user functions to comfortably find elements with
 certain IDs. It was of course conceived while using psgml-mode, but

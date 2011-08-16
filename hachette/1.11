@@ -10,7 +10,7 @@
 	       ("thingatpt" thingatpt)
 	       ("url" url)
 	       ("widget" widget)))
- :keywords   ("dictionaire" "french dictionary" "hachette")
+ :keywords   (dictionaire french\ dictionary hachette)
  :commentary "\
 Initialy based on dict-web.el by Eric Marsden (but now very different)
 

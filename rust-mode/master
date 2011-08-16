@@ -6,7 +6,7 @@
  :maintainer ("Graydon Hoare")
  :provided   (rust-mode)
  :required   ((("cc-mode" cc-fonts cc-langs cc-mode)))
- :keywords   ("c" "languages")
+ :keywords   (c languages)
  :homepage   "https://github.com/graydon/rust-mode"
  :commentary "\
 This is a derived CC mode for the rust language, partly a

@@ -9,5 +9,5 @@
  :required   ((("auto-complete" auto-complete)
 	       ("cl" cl)
 	       ("octave-inf" octave-inf)))
- :keywords   ("auto-complete" "completion" "octave")
+ :keywords   (auto-complete completion octave)
  :homepage   "https://github.com/coldnew/ac-octave")

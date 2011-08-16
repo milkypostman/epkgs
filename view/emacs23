@@ -5,7 +5,7 @@
  :authors    (("K. Shane Hartman"))
  :maintainer ("Inge Frick" . "inge@nada.kth.se")
  :provided   (view)
- :keywords   ("files")
+ :keywords   (files)
  :wikipage   "http://www.emacswiki.org/ViewMode"
  :commentary "\
 This package provides the `view' minor mode documented in the Emacs

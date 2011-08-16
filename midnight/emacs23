@@ -7,7 +7,7 @@
  :provided   (midnight)
  :required   ((("cl" cl)
 	       ("timer" timer)))
- :keywords   ("utilities")
+ :keywords   (utilities)
  :wikipage   "http://www.emacswiki.org/MidnightMode"
  :commentary "\
 To use the file, put (require 'midnight) into your .emacs.  Then, at

@@ -5,5 +5,5 @@
  :authors    (("Edward O'Connor" . "ted@oconnor.cx"))
  :maintainer ("Edward O'Connor" . "ted@oconnor.cx")
  :provided   (lmselect)
- :keywords   ("convenience")
+ :keywords   (convenience)
  :homepage   "http://edward.oconnor.cx/elisp")

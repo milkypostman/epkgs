@@ -6,7 +6,7 @@
  :authors    (("Phil Hagelberg" . "technomancy@gmail.com"))
  :maintainer ("Phil Hagelberg" . "technomancy@gmail.com")
  :provided   (conspire)
- :keywords   ("collaboration")
+ :keywords   (collaboration)
  :homepage   "http://rubyforge.org/projects/conspire"
  :commentary "\
 Let's use git for real-time collaborative editing!

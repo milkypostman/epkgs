@@ -10,7 +10,7 @@
 	       ("emacs-core" font-lock)
 	       ("hippie-exp" hippie-exp)
 	       ("reporter" reporter)))
- :keywords   ("languages" "vera")
+ :keywords   (languages vera)
  :commentary "\
 This package provides a simple Emacs major mode for editing Vera code.
 It includes the following features:

@@ -7,7 +7,7 @@
  :adapted-by ("Dave Love" . "d.love@dl.ac.uk")
  :provided   (visual-basic-mode)
  :required   ((("cl" cl)))
- :keywords   ("basic" "evil" "languages")
+ :keywords   (basic evil languages)
  :homepage   "http://www.emacswiki.org/VisualBasicMode"
  :wikipage   "http://www.emacswiki.org/VisualBasicMode"
  :commentary "\

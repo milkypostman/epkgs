@@ -7,7 +7,7 @@
  :provided   (ffap-rfc-space)
  :required   ((("advice" advice)
 	       ("ffap" ffap)))
- :keywords   ("files")
+ :keywords   (files)
  :homepage   "http://user42.tuxfamily.org/ffap-rfc-space/index.html"
  :commentary "\
 M-x ffap doesn't recognise a space in an RFC like \"RFC 1234\", only say

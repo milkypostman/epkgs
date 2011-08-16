@@ -5,7 +5,7 @@
  :authors    (("Jorgen Schaefer" . "forcer@forcix.cx"))
  :maintainer ("Jorgen Schaefer" . "forcer@forcix.cx")
  :provided   (lui)
- :keywords   ("application" "user-interface")
+ :keywords   (application user-interface)
  :homepage   "http://www.emacswiki.org/LuiMode"
  :wikipage   "http://www.emacswiki.org/LuiMode"
  :commentary "\

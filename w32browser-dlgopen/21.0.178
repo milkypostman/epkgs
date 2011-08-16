@@ -6,7 +6,7 @@
  :maintainer ("Drew Adams")
  :provided   (w32browser-dlgopen)
  :required   ((("cl" cl)))
- :keywords   ("convenience" "dialog" "extensions" "files")
+ :keywords   (convenience dialog extensions files)
  :commentary "\
 Opens MS Windows standard Open file dialog box.
 

@@ -6,7 +6,7 @@
  :authors    (("Marco Parrone"))
  :maintainer ("Marco Parrone")
  :provided   (cfs)
- :keywords   ("cfs" "crypto" "external" "filesystem" "frontend")
+ :keywords   (cfs crypto external filesystem frontend)
  :homepage   "http://www.gnu.org/software/cfs-el/cfs-el.html"
  :commentary "\
 GNU cfs-el is a frontend for using CFS (Criptographic File System)

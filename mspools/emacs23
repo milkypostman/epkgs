@@ -6,7 +6,7 @@
  :maintainer ("Stephen Eglen" . "stephen@gnu.org")
  :provided   (mspools)
  :required   ((("vm" vm-vars)))
- :keywords   ("mail")
+ :keywords   (mail)
  :homepage   "http://www.anc.ed.ac.uk/~stephen/emacs"
  :commentary "\
 If you use a mail filter (e.g. procmail, filter) to put mail messages in

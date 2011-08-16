@@ -4,7 +4,7 @@
  :license    "GPL-2"
  :authors    (("Lars Clausen" . "lrclause@shasta.cs.uiuc.edu"))
  :maintainer ("Lars Clausen" . "lrclause@shasta.cs.uiuc.edu")
- :keywords   ("convenience")
+ :keywords   (convenience)
  :commentary "\
 right-justify shifts all lines to the right, to the right-most character
 found in the region.  May untabify as a part of the process.")

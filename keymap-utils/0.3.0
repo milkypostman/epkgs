@@ -8,7 +8,7 @@
  :provided   (keymap-utils)
  :required   ((("cl" cl)
 	       ("save-sexp" save-sexp)))
- :keywords   ("convenience" "extensions")
+ :keywords   (convenience extensions)
  :homepage   "https://github.com/tarsius/keymap-utils"
  :commentary "\
 This library provides additional functions to work with keymaps.

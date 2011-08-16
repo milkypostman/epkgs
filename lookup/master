@@ -17,6 +17,6 @@
 	       ("url" url-http url-parse)
 	       ("view" view)
 	       ("w3m" w3m)))
- :keywords   ("dictionary")
+ :keywords   (dictionary)
  :homepage   "http://lookup.sourceforge.net"
  :wikipage   "http://www.emacswiki.org/LookUp")

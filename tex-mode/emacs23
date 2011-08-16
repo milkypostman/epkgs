@@ -10,5 +10,5 @@
 	       ("shell" shell)
 	       ("skeleton" skeleton)
 	       ("thingatpt" thingatpt)))
- :keywords   ("tex")
+ :keywords   (tex)
  :wikipage   "http://www.emacswiki.org/TeX")

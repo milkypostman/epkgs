@@ -6,7 +6,7 @@
  :authors    (("Austin Frank" . "austin.frank@gmail.com"))
  :maintainer ("Austin Frank" . "austin.frank@gmail.com")
  :provided   (epom)
- :keywords   ("tools")
+ :keywords   (tools)
  :homepage   "https://github.com/aufrank/epom"
  :commentary "\
 Utility functions for tracking workflow in the Pomodoro time

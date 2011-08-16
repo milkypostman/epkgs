@@ -5,7 +5,7 @@
  :authors    (("Joe Casadonte" . "emacs@northbound-train.com"))
  :maintainer ("Joe Casadonte" . "emacs@northbound-train.com")
  :provided   (toggle-buffer)
- :keywords   ("buffer" "toggle")
+ :keywords   (buffer toggle)
  :homepage   "http://www.northbound-train.com"
  :commentary "\
 This package provides a way to toggle back and forth between the

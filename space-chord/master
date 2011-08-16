@@ -6,7 +6,7 @@
  :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
  :provided   (space-chord)
  :required   ((("key-chord" key-chord)))
- :keywords   ("convenience")
+ :keywords   (convenience)
  :commentary "\
 A thumb is a finger of the strongest! Let's utilize a thumb.
 This package defines key-chord starting with Space.

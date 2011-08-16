@@ -7,7 +7,7 @@
  :provided   (google-translate)
  :required   ((("json" json)
 	       ("url" url)))
- :keywords   ("convenience")
+ :keywords   (convenience)
  :homepage   "https://github.com/andreo/google-translator"
  :commentary "\
 This is a library for rapid text translating

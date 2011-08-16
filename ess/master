@@ -22,7 +22,7 @@
 	       ("reporter" reporter)
 	       ("shell" shell)
 	       ("thingatpt" thingatpt)))
- :keywords   ("statistical" "support")
+ :keywords   (statistical support)
  :homepage   "http://ess.r-project.org"
  :commentary "\
 PURPOSE

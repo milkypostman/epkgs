@@ -2,7 +2,7 @@
  :license    "public-domain"
  :maintainer ("FSF")
  :provided   (meese)
- :keywords   ("games")
+ :keywords   (games)
  :commentary "\
 Adds a hook to protect the impressionable young minds of America
 from reading certain files in the Emacs distribution using Emacs.

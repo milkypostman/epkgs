@@ -5,7 +5,7 @@
  :authors    (("khiker" . "khiker.mail+elisp@gmail.com"))
  :maintainer ("khiker" . "khiker.mail+elisp@gmail.com")
  :provided   (elscreen-edit-server)
- :keywords   ("edit-server" "elscreen")
+ :keywords   (edit-server elscreen)
  :commentary "\
 Work together a GoogleChrome extension \"Edit with Emacs\"
 and elscreen.el.

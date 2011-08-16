@@ -4,7 +4,7 @@
  :license    "GPL-3"
  :maintainer ("FSF")
  :provided   (noutline outline)
- :keywords   ("outlines")
+ :keywords   (outlines)
  :wikipage   "http://www.emacswiki.org/OutlineMode"
  :commentary "\
 This package is a major mode for editing outline-format documents.

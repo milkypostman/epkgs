@@ -7,5 +7,5 @@
  :maintainer ("mooz" . "stillpedant@gmail.com")
  :provided   (epydoc)
  :required   ((("cl" cl)))
- :keywords   ("anything" "imenu" "python")
+ :keywords   (anything imenu python)
  :homepage   "https://github.com/mooz/epydoc")

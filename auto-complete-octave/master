@@ -6,7 +6,7 @@
  :provided   (auto-complete-octave)
  :required   ((("auto-complete" auto-complete)
 	       ("cl" cl)))
- :keywords   ("auto-complete" "octave")
+ :keywords   (auto-complete octave)
  :commentary "\
 This is for GNU Octave 3.2.0
 

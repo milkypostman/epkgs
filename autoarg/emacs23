@@ -5,7 +5,7 @@
  :authors    (("Dave Love" . "fx@gnu.org"))
  :maintainer ("Dave Love" . "fx@gnu.org")
  :provided   (autoarg)
- :keywords   ("abbrev" "emulations")
+ :keywords   (abbrev emulations)
  :commentary "\
 This provides `autoarg-mode', a global minor mode meant to emulate
 a facility reported from Twenex Emacs whereby digit keys supplied

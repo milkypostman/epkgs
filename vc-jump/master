@@ -7,7 +7,7 @@
  :provided   (vc-jump)
  :required   ((("cl" cl)
 	       ("vc" vc)))
- :keywords   ("tools")
+ :keywords   (tools)
  :homepage   "http://www.emacswiki.org/VC-Jump"
  :wikipage   "http://www.emacswiki.org/VC-Jump"
  :commentary "\

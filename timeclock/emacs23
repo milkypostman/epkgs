@@ -5,7 +5,7 @@
  :authors    (("John Wiegley" . "johnw@gnu.org"))
  :maintainer ("John Wiegley" . "johnw@gnu.org")
  :provided   (timeclock)
- :keywords   ("calendar" "data")
+ :keywords   (calendar data)
  :wikipage   "http://www.emacswiki.org/TimeClock"
  :commentary "\
 This mode is for keeping track of time intervals.  You can use it

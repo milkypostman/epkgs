@@ -6,7 +6,7 @@
  :maintainer ("khiker" . "khiker.mail+elisp@gmail.com")
  :provided   (html-parse)
  :required   ((("xml-parse" xml-parse)))
- :keywords   ("html" "parse")
+ :keywords   (html parse)
  :commentary "\
 parse HTML(XHTML) to S-expression.
 

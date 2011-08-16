@@ -5,7 +5,7 @@
  :authors    (("Ian Eure" . "ian.eure@gmail.com"))
  :maintainer ("Ian Eure" . "ian.eure@gmail.com")
  :provided   (scratch)
- :keywords   ("editing")
+ :keywords   (editing)
  :homepage   "https://github.com/ieure/scratch-el"
  :commentary "\
 (autoload 'scratch \"scratch\" nil t)")

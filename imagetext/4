@@ -8,7 +8,7 @@
  :required   ((("bindat" bindat)
 	       ("image-dired" image-dired)
 	       ("tumme" tumme)))
- :keywords   ("multimedia")
+ :keywords   (multimedia)
  :commentary "\
 This code extends `image-mode' in Emacs 22 and `auto-image-file-mode' in
 Emacs 21 and 22 to show text comment parts of PNG, JPEG and GIF files.

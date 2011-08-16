@@ -6,4 +6,4 @@
  :maintainer ("David O'Toole" . "dto@gnu.org")
  :provided   (vwindow)
  :required   ((("cell" grid)))
- :keywords   ("data" "lisp"))
+ :keywords   (data lisp))

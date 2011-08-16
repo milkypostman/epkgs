@@ -7,7 +7,7 @@
  :adapted-by ("Daniel Pfeiffer" . "occitan@esperanto.org")
  :provided   (autoinsert)
  :required   ((("finder" finder)))
- :keywords   ("convenience")
+ :keywords   (convenience)
  :wikipage   "http://www.emacswiki.org/AutoInsertMode"
  :commentary "\
 The following defines an association list for text to be

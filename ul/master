@@ -1,7 +1,7 @@
 (:summary    "Insert/remove underlining in Emacs"
  :license    "GPL-2"
  :provided   (ul)
- :keywords   ("wp")
+ :keywords   (wp)
  :commentary "\
 This is a hacked version of the Free Software Foundation's
 `underline.el', by Theron Tlax <thorne@timbral.net>.  It implements

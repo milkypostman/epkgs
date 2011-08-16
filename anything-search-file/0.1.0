@@ -6,4 +6,4 @@
  :maintainer ("Takayuki YAMAGUCHI" . "d@ytak.info")
  :provided   (anything-search-file)
  :required   ((("anything" anything)))
- :keywords   ("anything" "find" "locate"))
+ :keywords   (anything find locate))

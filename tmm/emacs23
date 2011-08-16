@@ -8,6 +8,6 @@
  :required   ((("calendar" cal-menu)
 	       ("electric" electric)
 	       ("emacs-core" mouse)))
- :keywords   ("convenience")
+ :keywords   (convenience)
  :commentary "\
 This package provides text mode access to the menu bar.")

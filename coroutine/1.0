@@ -7,7 +7,7 @@
  :provided   (coroutine)
  :required   ((("cl" cl)
 	       ("tagbody" tagbody)))
- :keywords   ("extensions")
+ :keywords   (extensions)
  :homepage   "http://www.emacswiki.org/CoRoutines"
  :wikipage   "http://www.emacswiki.org/CoRoutines"
  :commentary "\

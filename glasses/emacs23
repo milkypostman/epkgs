@@ -6,7 +6,7 @@
  :maintainer ("Milan Zamazal" . "pdm@zamazal.org")
  :provided   (glasses)
  :required   ((("cl" cl)))
- :keywords   ("tools")
+ :keywords   (tools)
  :wikipage   "http://www.emacswiki.org/GlassesMode"
  :commentary "\
 This file defines a minor mode for making unreadableIdentifiersLikeThis

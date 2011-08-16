@@ -5,6 +5,6 @@
  :authors    (("Juergen Nickelsen" . "nickel@cs.tu-berlin.de"))
  :maintainer ("Juergen Nickelsen" . "nickel@cs.tu-berlin.de")
  :provided   (ws-mode)
- :keywords   ("emulations")
+ :keywords   (emulations)
  :commentary "\
 This emulates WordStar, with a major mode.")

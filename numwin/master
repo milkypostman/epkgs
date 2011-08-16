@@ -5,7 +5,7 @@
  :authors    (("Paul M. Rodriguez" . "pmr@ruricolist.com"))
  :maintainer ("Paul M. Rodriguez" . "pmr@ruricolist.com")
  :provided   (numwin)
- :keywords   ("convenience")
+ :keywords   (convenience)
  :homepage   "http://gopher.ruricolist.com:70/lisp"
  :commentary "\
 Switching windows in Emacs, without resorting to the mouse, is

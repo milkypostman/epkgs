@@ -6,7 +6,7 @@
  :maintainer ("Gernot Heiser" . "gernot@acm.org")
  :adapted-by ("ESR")
  :provided   (refer)
- :keywords   ("bib")
+ :keywords   (bib)
  :commentary "\
 Functions to look up references in bibliography files given lists of
 keywords, similar to refer(1).  I don't use tags since tags on .bib files

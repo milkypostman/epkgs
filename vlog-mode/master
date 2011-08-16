@@ -10,5 +10,5 @@
 	       ("cl" cl)
 	       ("emacs-core" font-lock)
 	       ("hideshow" hideshow)))
- :keywords   ("languages" "verilog")
+ :keywords   (languages verilog)
  :homepage   "http://vlog-mode.sourceforge.net")

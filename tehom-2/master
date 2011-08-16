@@ -5,7 +5,7 @@
  :authors    (("Tom Breton" . "tehom@localhost"))
  :maintainer ("Tom Breton" . "tehom@localhost")
  :provided   (tehom-2)
- :keywords   ("extensions")
+ :keywords   (extensions)
  :homepage   "www.panix.com/~tehom"
  :commentary "\
 This code is to make history lists more generally available.  It is

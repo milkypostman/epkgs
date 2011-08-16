@@ -5,7 +5,7 @@
  :maintainer ("Masahiro Hayashi" . "mhayashi1120@gmail.com")
  :provided   (find-select)
  :required   ((("emacs-core" find-cmd)))
- :keywords   ("command" "find" "result" "xargs")
+ :keywords   (command find result xargs)
  :homepage   "https://github.com/mhayashi1120/Emacs-find-select"
  :commentary "\
 You can use `find' command-line option like S Expression.

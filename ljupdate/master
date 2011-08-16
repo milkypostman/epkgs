@@ -13,6 +13,6 @@
 	       ("pcomplete" pcomplete)
 	       ("sendmail" sendmail)
 	       ("viper" viper-cmd)))
- :keywords   ("convenience")
+ :keywords   (convenience)
  :homepage   "http://edward.oconnor.cx/ljupdate"
  :wikipage   "http://www.emacswiki.org/LjUpdate")

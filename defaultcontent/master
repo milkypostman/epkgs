@@ -3,7 +3,7 @@
  :authors    (("Christian Queinnec" . "christian.queinnec@lip6.fr"))
  :maintainer ("Christian Queinnec" . "christian.queinnec@lip6.fr")
  :provided   (defaultcontent)
- :keywords   ("contents" "default")
+ :keywords   (contents default)
  :homepage   "http://pagesperso-systeme.lip6.fr/Christian.Queinnec/WWW/elisp.html"
  :commentary "\
 The purpose of this package is to provide a default content for

@@ -4,7 +4,7 @@
  :license    "GPL-3"
  :maintainer ("Guanpeng Xu" . "herberteuler@hotmail.com")
  :provided   (subedit)
- :keywords   ("subedit")
+ :keywords   (subedit)
  :homepage   "http://www.emacswiki.org/Subedit"
  :wikipage   "http://www.emacswiki.org/Subedit"
  :commentary "\

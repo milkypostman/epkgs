@@ -5,7 +5,7 @@
  :authors    (("Andy Stewart" . "lazycat.manatee@gmail.com"))
  :maintainer ("Andy Stewart" . "lazycat.manatee@gmail.com")
  :provided   (mail-notify)
- :keywords   ("mail" "notify")
+ :keywords   (mail notify)
  :homepage   "http://www.emacswiki.org/MailNotify"
  :wikipage   "http://www.emacswiki.org/MailNotify"
  :commentary "\

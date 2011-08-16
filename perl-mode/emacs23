@@ -7,7 +7,7 @@
  :adapted-by ("ESR")
  :provided   (perl-mode)
  :required   ((("cl" cl)))
- :keywords   ("languages")
+ :keywords   (languages)
  :wikipage   "http://www.emacswiki.org/PerlMode"
  :commentary "\
 To enter perl-mode automatically, add (autoload 'perl-mode \"perl-mode\")

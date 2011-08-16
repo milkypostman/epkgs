@@ -6,7 +6,7 @@
  :maintainer ("Ryan Yeske" . "rcyeske@vcn.bc.ca")
  :provided   (rain)
  :required   ((("gamegrid" gamegrid)))
- :keywords   ("games")
+ :keywords   (games)
  :commentary "\
 This is a cheap rip off of rain(6) from BSD.
 

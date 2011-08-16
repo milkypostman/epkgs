@@ -5,7 +5,7 @@
  :authors    (("Morten Welinder" . "terra@diku.dk"))
  :maintainer ("Morten Welinder" . "terra@diku.dk")
  :provided   (desktop)
- :keywords   ("convenience")
+ :keywords   (convenience)
  :wikipage   "http://www.emacswiki.org/DeskTop"
  :commentary "\
 Save the Desktop, i.e.,

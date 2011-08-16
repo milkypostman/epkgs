@@ -6,7 +6,7 @@
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (tcd-format)
  :required   ((("apel" poe)))
- :keywords   ("data")
+ :keywords   (data)
  :homepage   "http://user42.tuxfamily.org/tcd-format/index.html"
  :commentary "\
 This code sets up human-readable decode of XTide .tcd tide constituent

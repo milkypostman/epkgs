@@ -9,7 +9,7 @@
 	       ("shop" shop)
 	       ("uboat" uboat)
 	       ("youwill" youwill)))
- :keywords   ("extensions" "mail")
+ :keywords   (extensions mail)
  :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
  :commentary "\
 To use this, put the following in your .emacs:

@@ -3,7 +3,7 @@
  :updated    "2006"
  :license    "GPL-2"
  :provided   (c-toggle-dot-pointer)
- :keywords   ("c" "languages")
+ :keywords   (c languages)
  :commentary "\
 Kind of hard to describe - try it! :-) Basically, if you're on a \"*\",
 it will delete the \"*\" and then change all references using that variable

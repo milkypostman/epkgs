@@ -6,7 +6,7 @@
  :maintainer ("Tamas Patrovics")
  :provided   (timid)
  :required   ((("iswitchb" iswitchb)))
- :keywords   ("completion")
+ :keywords   (completion)
  :commentary "\
 I work with files. Lots of files. So I want to open files as
 effortlessly as possible. This package is a part of the quest for the

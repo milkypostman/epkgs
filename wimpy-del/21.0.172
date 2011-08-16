@@ -7,7 +7,7 @@
  :required   (nil
 	      (("frame-fns" frame-fns)
 	       ("strings" strings)))
- :keywords   ("copy" "cut" "kill" "region")
+ :keywords   (copy cut kill region)
  :commentary "\
 Require confirmation for large region deletion.
  Replacements for `kill-region' and `clipboard-kill-region'.

@@ -4,7 +4,7 @@
  :license    "GPL-2"
  :provided   (highlight-context-line)
  :required   ((("advice" advice)))
- :keywords   ("services" "user")
+ :keywords   (services user)
  :homepage   "http://www.skamphausen.de/cgi-bin/ska/highlight-context-line"
  :commentary "\
 HighlightContextLine on the Web:

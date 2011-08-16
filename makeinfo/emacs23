@@ -8,7 +8,7 @@
  :required   ((("compile" compile)
 	       ("info" info)
 	       ("texinfo" texinfo)))
- :keywords   ("convenience" "docs")
+ :keywords   (convenience docs)
  :commentary "\
 The Texinfo mode `makeinfo' related commands are:
 

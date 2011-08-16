@@ -5,7 +5,7 @@
  :authors    (("Tom Breton" . "tob@world.std.com"))
  :maintainer ("Tom Breton" . "tob@world.std.com")
  :provided   (caselet)
- :keywords   ("extensions" "lisp")
+ :keywords   (extensions lisp)
  :homepage   "http://panix.com/~tehom"
  :commentary "\
 None.")

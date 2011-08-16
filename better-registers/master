@@ -3,7 +3,7 @@
  :updated    "2005"
  :license    "GPL-2"
  :provided   (better-registers)
- :keywords   ("macro" "register")
+ :keywords   (macro register)
  :homepage   "http://www.emacswiki.org/BetterRegisters"
  :wikipage   "http://www.emacswiki.org/BetterRegisters"
  :commentary "\

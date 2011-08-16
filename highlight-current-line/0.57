@@ -6,7 +6,7 @@
  :maintainer ("Christoph Conrad" . "christoph.conrad@gmx")
  :provided   (highlight-current-line)
  :required   ((("custom" custom)))
- :keywords   ("faces")
+ :keywords   (faces)
  :homepage   "http://www.emacswiki.org/HighlightCurrentLine"
  :wikipage   "http://www.emacswiki.org/HighlightCurrentLine"
  :commentary "\

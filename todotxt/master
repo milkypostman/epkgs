@@ -6,5 +6,5 @@
  :authors    (("Rick Dillon" . "rpdillon@etherplex.org"))
  :maintainer ("Rick Dillon" . "rpdillon@etherplex.org")
  :provided   (todotxt)
- :keywords   ("todotxt")
+ :keywords   (todotxt)
  :homepage   "https://github.com/rpdillon/todotxt.el")

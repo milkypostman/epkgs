@@ -6,7 +6,7 @@
  :maintainer ("Kevin Rodgers" . "ihs_4664@yahoo.com")
  :provided   (goto-last-change)
  :required   ((("cl" cl)))
- :keywords   ("convenience")
+ :keywords   (convenience)
  :homepage   "http://www.emacswiki.org/GotoLastChange"
  :wikipage   "http://www.emacswiki.org/GotoLastChange"
  :commentary "\

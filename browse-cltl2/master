@@ -7,7 +7,7 @@
  :required   ((("browse-url" browse-url)
 	       ("cl" cl)
 	       ("url" url)))
- :keywords   ("ilisp" "lisp" "utils" "www")
+ :keywords   (ilisp lisp utils www)
  :commentary "\
 This gives you two top-level-functions useful when programming lisp:
 cltl2-view-function-definition and cltl2-view-index

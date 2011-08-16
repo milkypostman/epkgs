@@ -5,7 +5,7 @@
  :authors    (("Joe Reiss" . "joe@joereiss.net"))
  :maintainer ("Joe Reiss" . "joe@joereiss.net")
  :provided   (cycle-mini)
- :keywords   ("completion" "minibuffer")
+ :keywords   (completion minibuffer)
  :homepage   "http://joereiss.net"
  :commentary "\
 This is an extension to the completing-read commands in the

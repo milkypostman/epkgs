@@ -7,7 +7,7 @@
  :maintainer ("Yuta Namiki")
  :provided   (mark-select)
  :required   ((("cl" cl)))
- :keywords   ("lisp")
+ :keywords   (lisp)
  :homepage   "https://github.com/namikister/mark-select"
  :commentary "\
 mark-select-multi

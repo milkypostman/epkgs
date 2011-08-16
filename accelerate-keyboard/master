@@ -5,7 +5,7 @@
  :authors    (("Jaeyoun Chung" . "jay@kldp.org"))
  :maintainer ("Jaeyoun Chung" . "jay@kldp.org")
  :provided   (accelerate-keyboard)
- :keywords   ("convenience")
+ :keywords   (convenience)
  :homepage   "http://emacs.kldp.net/~jay/emacs"
  :commentary "\
 Accelerate effective keyboard input speed. If your computer provides way

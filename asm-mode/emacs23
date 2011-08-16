@@ -5,7 +5,7 @@
  :authors    (("Eric S. Raymond" . "esr@snark.thyrsus.com"))
  :maintainer ("FSF")
  :provided   (asm-mode)
- :keywords   ("languages" "tools")
+ :keywords   (languages tools)
  :commentary "\
 This mode was written by Eric S. Raymond <esr@snark.thyrsus.com>,
 inspired by an earlier asm-mode by Martin Neitzel.

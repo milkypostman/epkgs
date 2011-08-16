@@ -8,5 +8,5 @@
  :provided   (auto-complete-ya-gtags)
  :required   ((("auto-complete" auto-complete)
 	       ("cl" cl)))
- :keywords   ("auto-complete")
+ :keywords   (auto-complete)
  :homepage   "https://github.com/whitypig/auto-complete-ya-gtags")

@@ -6,7 +6,7 @@
  :maintainer ("Alex Schroeder" . "alex@gnu.org")
  :provided   (flashmaker)
  :required   ((("widget" wid-edit widget)))
- :keywords   ("vocab")
+ :keywords   (vocab)
  :homepage   "http://www.emacswiki.org/FlashMaker"
  :wikipage   "http://www.emacswiki.org/FlashMaker"
  :commentary "\

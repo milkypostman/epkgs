@@ -6,7 +6,7 @@
  :maintainer ("Jorgen Schaefer")
  :provided   (srfi)
  :required   ((("url" url)))
- :keywords   ("documentation" "programming" "scheme")
+ :keywords   (documentation programming scheme)
  :commentary "\
 This file provides a functionality to view SRFIs, Scheme Requests
 for Implementation, using a simple M-x srfi command. To update the

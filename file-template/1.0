@@ -6,7 +6,7 @@
  :maintainer ("Scott Frazer" . "frazer.scott@gmail.com")
  :provided   (file-template)
  :required   ((("custom" custom)))
- :keywords   ("template")
+ :keywords   (template)
  :commentary "\
 Insert template into buffer, performing tag expansions.  Inspired by
 auto-insert and auto-insert-tkld.

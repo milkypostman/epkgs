@@ -6,7 +6,7 @@
 	      ("code snippet and its history."))
  :maintainer ("Drew Adams")
  :provided   (pretty-lambdada)
- :keywords   ("convenience" "display")
+ :keywords   (convenience display)
  :commentary "\
 Whenever \"lambda\" appears as a separate word, it is displayed using the
  Greek letter.

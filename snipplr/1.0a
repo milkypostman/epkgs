@@ -7,7 +7,7 @@
  :provided   (snipplr)
  :required   ((("widget" wid-edit widget)
 	       ("xml-rpc" xml-rpc)))
- :keywords   ("extensions" "tools")
+ :keywords   (extensions tools)
  :homepage   "http://www.emacswiki.org/SnipplrMode"
  :wikipage   "http://www.emacswiki.org/SnipplrMode"
  :commentary "\

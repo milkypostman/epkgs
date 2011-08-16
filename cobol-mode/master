@@ -9,7 +9,7 @@
 	       ("imenu" imenu)
 	       ("which-func" which-func)
 	       (nil cobol-indent)))
- :keywords   ("cobol" "guardian" "languages" "nsk" "tandem")
+ :keywords   (cobol guardian languages nsk tandem)
  :homepage   "http://www.emacswiki.org/CobolMode"
  :wikipage   "http://www.emacswiki.org/CobolMode"
  :commentary "\

@@ -5,7 +5,7 @@
  :authors    (("Frederic Lepied" . "frederic.lepied@sugix.frmug.org"))
  :maintainer ("Frederic Lepied" . "frederic.lepied@sugix.frmug.org")
  :provided   (expand)
- :keywords   ("abbrev")
+ :keywords   (abbrev)
  :commentary "\
 This package defines abbrevs which expand into structured constructs
 for certain languages.  The construct is indented for you,

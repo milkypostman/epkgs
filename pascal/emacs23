@@ -6,7 +6,7 @@
  :maintainer ("Espen Skoglund" . "esk@gnu.org")
  :provided   (pascal)
  :required   ((("cl" cl)))
- :keywords   ("languages")
+ :keywords   (languages)
  :wikipage   "http://www.emacswiki.org/PascalMode"
  :commentary "\
 USAGE

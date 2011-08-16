@@ -6,7 +6,7 @@
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (formfeed-hline)
  :required   ((("emacs-core" disp-table)))
- :keywords   ("frames")
+ :keywords   (frames)
  :homepage   "http://user42.tuxfamily.org/formfeed-hline/index.html"
  :commentary "\
 `M-x formfeed-hline-mode' global minor mode displays control-L formfeeds

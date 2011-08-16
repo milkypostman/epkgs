@@ -8,7 +8,7 @@
  :required   ((("cl" cl)
 	       ("emacs-core" loadhist)
 	       ("find-func" find-func)))
- :keywords   ("files" "libraries")
+ :keywords   (files libraries)
  :commentary "\
 Commands to list Emacs Lisp library dependencies.
 

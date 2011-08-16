@@ -9,7 +9,7 @@
  :required   ((("anything" anything)
 	       ("cl" cl)
 	       ("xml" xml)))
- :keywords   ("redmine" "web")
+ :keywords   (redmine web)
  :homepage   "https://github.com/fukamachi/redmine-el"
  :commentary "\
 redmine.el is an utility for redmine.el

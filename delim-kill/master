@@ -6,7 +6,7 @@
  :authors    (("Thomas Kappler" . "tkappler@gmail.com"))
  :maintainer ("Thomas Kappler" . "tkappler@gmail.com")
  :provided   (delim-kill)
- :keywords   ("convenience" "languages")
+ :keywords   (convenience languages)
  :homepage   "https://github.com/thomas11/delim-kill"
  :commentary "\
 Kill text between two delimiters, preserving structure.

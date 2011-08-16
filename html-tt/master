@@ -9,5 +9,5 @@
  :required   ((("emacs-core" font-lock)
 	       ("html-helper-mode" html-helper-mode)
 	       ("tempo" tempo)))
- :keywords   ("languages" "tools")
+ :keywords   (languages tools)
  :homepage   "https://github.com/yoshiki/html-tt")

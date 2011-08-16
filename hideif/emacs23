@@ -7,7 +7,7 @@
  :maintainer ("FSF")
  :provided   (hideif)
  :required   ((("cc-mode" cc-mode)))
- :keywords   ("c" "outlines")
+ :keywords   (c outlines)
  :commentary "\
 To initialize, toggle the hide-ifdef minor mode with
 

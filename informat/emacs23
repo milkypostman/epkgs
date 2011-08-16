@@ -5,7 +5,7 @@
  :maintainer ("FSF")
  :provided   (informat)
  :required   ((("info" info)))
- :keywords   ("help")
+ :keywords   (help)
  :commentary "\
 Nowadays, the Texinfo formatting commands always tagify a buffer
 (as does `makeinfo') since @anchor commands need tag tables.")

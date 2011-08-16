@@ -5,7 +5,7 @@
  :authors    (("Yuji Minejima" . "ggb01164@nifty.ne.jp"))
  :maintainer ("Yuji Minejima" . "ggb01164@nifty.ne.jp")
  :provided   (mcomplete)
- :keywords   ("abbrev" "help" "local")
+ :keywords   (abbrev help local)
  :homepage   "http://homepage1.nifty.com/bmonkey/emacs/index-en.html"
  :wikipage   "http://www.emacswiki.org/McompleteMode"
  :commentary "\

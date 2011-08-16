@@ -8,5 +8,5 @@
  :required   ((("comint" comint)
 	       ("comint-redirect" comint-redirect)
 	       ("inf-lisp" inf-lisp)))
- :keywords   ("extensions" "lisp")
+ :keywords   (extensions lisp)
  :homepage   "http://panix.com/~tehom")

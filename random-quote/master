@@ -5,7 +5,7 @@
  :authors    (("Alessandro Di Marco" . "dmr@gmx.it"))
  :maintainer ("Alessandro Di Marco" . "dmr@gmx.it")
  :provided   (random-quote)
- :keywords   ("quote" "random")
+ :keywords   'random
  :commentary "\
 random-quote provides a simple mechanism to pick a random quote in a
  file. It is sufficient to put the file name containing the quotes in the

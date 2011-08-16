@@ -5,6 +5,6 @@
  :authors    (("Taiki SUGAWARA" . "buzz.taiki@gmail.com"))
  :maintainer ("Taiki SUGAWARA" . "buzz.taiki@gmail.com")
  :provided   (vline)
- :keywords   ("editing" "emulating" "faces")
+ :keywords   (editing emulating faces)
  :homepage   "http://www.emacswiki.org/VlineMode"
  :wikipage   "http://www.emacswiki.org/VlineMode")

@@ -4,7 +4,7 @@
  :authors    (("Noah S. Friedman" . "friedman@splode.com"))
  :maintainer (nil . "friedman@splode.com")
  :provided   (cvs-scramble)
- :keywords   ("cvs")
+ :keywords   (cvs)
  :homepage   "ftp://ftp.splode.com/pub/users/friedman/emacs-lisp"
  :commentary "\
 Implements the (trivial) scramble/descrambling methods for CVS pserver

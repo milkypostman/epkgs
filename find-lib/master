@@ -5,7 +5,7 @@
  :authors    (("lawrence mitchell" . "wence@gmx.li"))
  :maintainer ("lawrence mitchell" . "wence@gmx.li")
  :provided   (find-lib)
- :keywords   ("files" "finding")
+ :keywords   (files finding)
  :homepage   "http://www.ph.ed.ac.uk/~s0198183"
  :commentary "\
 Have you ever spent time searching for a .el file you know you have

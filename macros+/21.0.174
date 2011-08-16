@@ -10,7 +10,7 @@
 	      (("icicles" icicles)
 	       ("thingatpt" thingatpt)
 	       ("thingatpt+" thingatpt+)))
- :keywords   ("abbrev" "local")
+ :keywords   (abbrev local)
  :commentary "\
 Extensions to `macros.el'.
 

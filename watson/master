@@ -9,7 +9,7 @@
 	       ("url" url)
 	       ("w3" w3-forms)
 	       ("widget" wid-browse widget)))
- :keywords   ("search" "web")
+ :keywords   (search web)
  :homepage   "http://emarsden.chez.com/downloads"
  :commentary "\
 Overview ==========================================================

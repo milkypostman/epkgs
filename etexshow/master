@@ -7,7 +7,7 @@
  :provided   (etexshow pgxml)
  :required   ((("emacs-core" overlay)
 	       ("thingatpt" thingatpt)))
- :keywords   ("tex")
+ :keywords   (tex)
  :homepage   "http://levana.de/emacs/"
  :commentary "\
 see also help-file 

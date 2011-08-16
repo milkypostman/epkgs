@@ -5,7 +5,7 @@
  :authors    (("Gustavo Sverzut Barbieri" . "barbieri@gmail.com"))
  :maintainer ("Gustavo Sverzut Barbieri" . "barbieri@gmail.com")
  :provided   (edje-mode)
- :keywords   ("edje" "major-mode")
+ :keywords   (edje major-mode)
  :commentary "\
 This mode is based on tutorial from Scott Andrew Borton:
 http://two-wugs.net/emacs/mode-tutorial.html")

@@ -10,7 +10,7 @@
 	       ("cl" cl)
 	       ("musicbrainz" musicbrainz)
 	       ("scan" scan)))
- :keywords   ("music")
+ :keywords   (music)
  :homepage   "https://github.com/larsmagne/dae.el"
  :commentary "\
 This library provides an interface for ripping, scanning and

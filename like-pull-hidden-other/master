@@ -5,4 +5,4 @@
  :authors    (("kitokitoki" . "morihenotegami@gmail.com"))
  :maintainer ("kitokitoki" . "morihenotegami@gmail.com")
  :provided   (like-pull-hidden-other)
- :keywords   ("convenience"))
+ :keywords   (convenience))

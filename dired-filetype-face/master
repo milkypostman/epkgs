@@ -8,7 +8,7 @@
  :provided   (dired-filetype-face)
  :required   ((("custom" custom)
 	       ("dired" dired)))
- :keywords   ("custom" "dired" "face" "filetype")
+ :keywords   (custom dired face filetype)
  :homepage   "https://github.com/jixiuf/dired-filetype-face"
  :commentary "\
 Set faces for different file type in dired buffer. I use a dark

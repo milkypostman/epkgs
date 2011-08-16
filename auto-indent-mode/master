@@ -6,7 +6,7 @@
  :maintainer ("Matthew L. Fidler")
  :provided   (auto-indent-mode)
  :required   ((("cl" cl)))
- :keywords   ("auto" "indentation")
+ :keywords   (auto indentation)
  :commentary "\
 Provides auto-indentation minor mode.  This allows the following:
 

@@ -7,7 +7,7 @@
  :provided   (battery)
  :required   ((("cl" cl)
 	       ("timer" timer)))
- :keywords   ("hardware")
+ :keywords   (hardware)
  :commentary "\
 There is at present support for GNU/Linux, OS X and Windows.  This
 library supports both the `/proc/apm' file format of Linux version

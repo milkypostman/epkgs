@@ -8,7 +8,7 @@
  :required   ((("browse-kill-ring" browse-kill-ring)
 	       ("cl" cl))
 	      (("second-sel" second-sel)))
- :keywords   ("convenience")
+ :keywords   (convenience)
  :commentary "\
 Extensions to `browse-kill-ring.el'.
 

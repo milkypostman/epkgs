@@ -8,7 +8,7 @@
  :provided   (auto-highlight-symbol auto-highlight-symbol-config)
  :required   ((("cl" cl)
 	       ("easy-mmode" easy-mmode)))
- :keywords   ("convenience" "face" "highlight" "match")
+ :keywords   (convenience face highlight match)
  :homepage   "https://github.com/mitsuo-saito/auto-highlight-symbol-mode"
  :commentary "\
 If you have `linkd.el' turn on `linkd-mode'

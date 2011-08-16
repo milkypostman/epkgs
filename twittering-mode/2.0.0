@@ -17,7 +17,7 @@
 	       ("gnus" tls)
 	       ("url" url-methods)
 	       (nil alpaca)))
- :keywords   ("twitter" "web")
+ :keywords   (twitter web)
  :homepage   "http://twmode.sourceforge.net"
  :wikipage   "http://www.emacswiki.org/TwitteringMode"
  :commentary "\

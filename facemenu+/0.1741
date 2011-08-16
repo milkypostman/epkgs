@@ -14,7 +14,7 @@
 	       ("help-fns+" help-fns+)
 	       ("hexrgb" hexrgb)
 	       ("palette" palette)))
- :keywords   ("convenience" "extensions" "faces" "local" "menus")
+ :keywords   (convenience extensions faces local menus)
  :homepage   "http://www.emacswiki.org/FaceMenuPlus"
  :wikipage   "http://www.emacswiki.org/FaceMenuPlus"
  :commentary "\

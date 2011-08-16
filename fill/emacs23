@@ -3,7 +3,7 @@
  :updated    "2011"
  :license    "GPL-3"
  :maintainer ("FSF")
- :keywords   ("wp")
+ :keywords   (wp)
  :commentary "\
 All the commands for filling text.  These are documented in the Emacs
 manual.")

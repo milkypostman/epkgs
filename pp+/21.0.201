@@ -6,7 +6,7 @@
  :maintainer ("Drew Adams")
  :provided   (pp+)
  :required   ((("emacs-core" pp)))
- :keywords   ("lisp")
+ :keywords   (lisp)
  :commentary "\
 Extensions to `pp.el'.
 

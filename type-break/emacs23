@@ -7,7 +7,7 @@
  :provided   (type-break)
  :required   ((("itimer" itimer)
 	       ("timer" timer)))
- :keywords   ("extensions" "timers")
+ :keywords   (extensions timers)
  :wikipage   "http://www.emacswiki.org/TypeBreakMode"
  :commentary "\
 The docstring for the function `type-break-mode' summarizes most of the

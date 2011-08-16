@@ -7,7 +7,7 @@
  :provided   (jde-eclipse-compiler-server)
  :required   ((("flymake" flymake)
 	       ("jdee" jde jde-compile)))
- :keywords   ("ecj" "eclipse" "flymake" "java" "jde-mode")
+ :keywords   (ecj eclipse flymake java jde-mode)
  :commentary "\
 * Eclipse java compiler
 

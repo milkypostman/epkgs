@@ -6,7 +6,7 @@
  :maintainer ("Rob Riepel" . "riepel@networking.stanford.edu")
  :provided   (tpu-edt)
  :required   ((("picture" picture)))
- :keywords   ("emulations")
+ :keywords   (emulations)
  :commentary "\
 %% TPU-edt -- Emacs emulating TPU emulating EDT
 

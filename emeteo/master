@@ -8,7 +8,7 @@
  :provided   (emeteo emeteo-conversion emeteo-eyecandy emeteo-frob emeteo-gnus emeteo-modeline emeteo-parse emeteo-stations emeteo-storage emeteo-utils)
  :required   ((("cl" cl)
 	       ("timer" timer)))
- :keywords   ("emacs" "metar" "meteo" "weather")
+ :keywords   (emacs metar meteo weather)
  :homepage   "http://gna.org/projects/emeteo"
  :wikipage   "http://www.emacswiki.org/EmacsMeteo"
  :commentary "\

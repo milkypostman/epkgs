@@ -5,5 +5,5 @@
  :authors    (("Matthieu Lemerre" . "racin@free.fr"))
  :maintainer ("Matthieu Lemerre" . "racin@free.fr")
  :provided   (qemu)
- :keywords   ("comm" "terminals")
+ :keywords   (comm terminals)
  :homepage   "http://racin.free.fr")

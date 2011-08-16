@@ -5,7 +5,7 @@
  :maintainer ("Karl M. Hegbloom" . "karlheg@inetarena.com")
  :provided   (after-save-commands)
  :required   ((("cl" cl)))
- :keywords   ("processes" "unix")
+ :keywords   (processes unix)
  :commentary "\
 Set up a list of file-name matching regular expressions associated
 with shell commands to run after saving the file.

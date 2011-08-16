@@ -9,7 +9,7 @@
 	       ("grep" grep))
 	      (("compile+" compile+)
 	       ("thingatpt+" thingatpt+)))
- :keywords   ("compile" "processes" "tools")
+ :keywords   (compile processes tools)
  :homepage   "http://www.emacswiki.org/GrepPlus"
  :wikipage   "http://www.emacswiki.org/GrepPlus"
  :commentary "\

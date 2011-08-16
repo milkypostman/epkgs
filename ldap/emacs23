@@ -7,7 +7,7 @@
  :provided   (ldap)
  :required   ((("cl" cl)
 	       ("custom" custom)))
- :keywords   ("comm")
+ :keywords   (comm)
  :commentary "\
 This package provides basic functionality to perform searches on LDAP
    servers.  It requires a command line utility generally named

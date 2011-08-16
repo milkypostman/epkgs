@@ -8,7 +8,7 @@
  :required   ((("custom" custom)
 	       ("easymenu" easymenu)
 	       ("reporter" reporter)))
- :keywords   ("languages")
+ :keywords   (languages)
  :commentary "\
 This package provides Emacs support for Octave.
 It defines Octave mode, a major mode for editing

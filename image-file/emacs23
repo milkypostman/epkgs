@@ -6,7 +6,7 @@
  :maintainer ("Miles Bader" . "miles@gnu.org")
  :provided   (image-file)
  :required   ((("emacs-core" image)))
- :keywords   ("multimedia")
+ :keywords   (multimedia)
  :commentary "\
 Defines a file-name-handler hook that transforms visited (or
 inserted) image files so that they are displayed by Emacs as

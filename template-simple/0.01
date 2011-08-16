@@ -6,7 +6,7 @@
  :maintainer ("Ye Wenbin" . "wenbinye@gmail.com")
  :provided   (template-simple)
  :required   ((("cl" cl)))
- :keywords   ("convenience" "tools")
+ :keywords   (convenience tools)
  :commentary "\
 * Why not template?
   A template.el is already exists, and it does everything well.

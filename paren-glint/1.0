@@ -6,7 +6,7 @@
  :maintainer ("Karl Landström" . "kland@comhem.se")
  :provided   (paren-glint)
  :required   ((("advice" advice)))
- :keywords   ("faces" "languages")
+ :keywords   (faces languages)
  :homepage   "http://www.brgeight.se"
  :commentary "\
 Installation:

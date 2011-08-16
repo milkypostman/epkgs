@@ -27,7 +27,7 @@
 	       ("widget" wid-edit)
 	       ("winring" winring)
 	       (nil thing)))
- :keywords   ("browser" "code" "programming" "tools")
+ :keywords   (browser code programming tools)
  :homepage   "http://ecb.sourceforge.net"
  :wikipage   "http://www.emacswiki.org/EmacsCodeBrowser"
  :commentary "\

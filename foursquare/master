@@ -10,7 +10,7 @@
 	       ("geocode" geocode)
 	       ("json" json)
 	       ("url" url)))
- :keywords   ("convenience")
+ :keywords   (convenience)
  :homepage   "https://github.com/hober/foursquare-el"
  :commentary "\
 Bare-bones [Foursquare][] API client library for Emacs. API methods

@@ -7,7 +7,7 @@
  :maintainer ("Federico Builes" . "federico.builes@gmail.com")
  :provided   (lyricwiki)
  :required   ((("url" url)))
- :keywords   ("lyrics" "lyricwiki")
+ :keywords   (lyrics lyricwiki)
  :homepage   "https://github.com/febuiles/lyricwiki.el"
  :wikipage   "http://www.emacswiki.org/LyricWiki"
  :commentary "\

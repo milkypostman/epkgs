@@ -6,7 +6,7 @@
  :maintainer ("stanislav shalunov" . "shalunov@mccme.ru")
  :provided   (uce)
  :required   ((("sendmail" sendmail)))
- :keywords   ("mail" "uce" "unsolicited commercial email")
+ :keywords   (mail uce unsolicited\ commercial\ email)
  :commentary "\
 The code in this file provides a semi-automatic means of replying
 to unsolicited commercial email (UCE) you might get.  Currently, it

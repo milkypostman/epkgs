@@ -5,7 +5,7 @@
  :authors    (("S. Irie"))
  :maintainer ("S. Irie")
  :provided   (grab-and-drag)
- :keywords   ("mouse" "scroll")
+ :keywords   (mouse scroll)
  :homepage   "http://www.emacswiki.org/GrabAndDrag"
  :wikipage   "http://www.emacswiki.org/GrabAndDrag"
  :commentary "\

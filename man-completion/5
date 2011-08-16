@@ -8,7 +8,7 @@
  :required   ((("cl" cl)
 	       ("man" man)
 	       ("thingatpt" thingatpt)))
- :keywords   ("data")
+ :keywords   (data)
  :commentary "\
 This spot of code extends M-x man with completion of man page names and
 filenames, and a new default page name at point which collapses hyphens

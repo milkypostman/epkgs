@@ -6,7 +6,7 @@
  :maintainer ("FSF")
  :provided   (rcompile)
  :required   ((("compile" compile)))
- :keywords   ("processes" "tools")
+ :keywords   (processes tools)
  :commentary "\
 This package is for running a remote compilation and using emacs to parse
 the error messages. It works by rsh'ing the compilation to a remote host

@@ -5,7 +5,7 @@
  :authors    (("Jorgen Schaefer"))
  :maintainer ("Damien Elmes" . "emacs@repose.cx")
  :provided   (flashcard)
- :keywords   ("applications" "flashcard")
+ :keywords   (applications flashcard)
  :homepage   "http://ichi2.net/flashcard"
  :wikipage   "http://www.emacswiki.org/FlashCard"
  :commentary "\

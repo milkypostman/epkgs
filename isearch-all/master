@@ -4,7 +4,7 @@
  :authors    (("Matsushita Akihisa" . "akihisa@mail.ne.jp"))
  :maintainer ("Matsushita Akihisa" . "akihisa@mail.ne.jp")
  :provided   (isearch-all)
- :keywords   ("isearch")
+ :keywords   (isearch)
  :commentary "\
 The latest version of this program can be downloaded from
 http://www.bookshelf.jp/elc/isearch-all.el")

@@ -9,7 +9,7 @@
 	      (("misc-fns" misc-fns)
 	       ("thingatpt" thingatpt)
 	       ("thingatpt+" thingatpt+)))
- :keywords   ("internal" "strings" "text")
+ :keywords   (internal strings text)
  :commentary "\
 Miscellaneous string functions.
 

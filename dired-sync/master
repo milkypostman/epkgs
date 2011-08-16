@@ -3,7 +3,7 @@
  :created    "20101202"
  :updated    "2010"
  :provided   (dired-sync)
- :keywords   ("dired" "emacs" "rsync")
+ :keywords   (dired emacs rsync)
  :homepage   "https://github.com/renard/dired-sync"
  :wikipage   "http://www.emacswiki.org/DiredSync"
  :commentary "\

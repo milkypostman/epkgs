@@ -5,4 +5,4 @@
  :provided   (message-utils)
  :required   ((("custom" custom)
 	       ("gnus" message)))
- :keywords   ("message" "utils"))
+ :keywords   (message utils))

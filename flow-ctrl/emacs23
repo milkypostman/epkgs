@@ -6,7 +6,7 @@
  :maintainer ("FSF")
  :adapted-by ("ESR")
  :provided   (flow-ctrl)
- :keywords   ("hardware")
+ :keywords   (hardware)
  :commentary "\
 Terminals that use XON/XOFF flow control can cause problems with
 GNU Emacs users.  This file contains Emacs Lisp code that makes it

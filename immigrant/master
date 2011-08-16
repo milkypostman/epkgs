@@ -7,7 +7,7 @@
  :maintainer ("Jonas Bernoulli" . "jonas@bernoul.li")
  :provided   (immigrant)
  :required   ((("cl" cl)))
- :keywords   ("convenience" "lisp")
+ :keywords   (convenience lisp)
  :homepage   "http://github.com/tarsius/immigrant"
  :commentary "\
 This package defines some functions and macros found in lisps other

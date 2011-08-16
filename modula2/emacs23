@@ -4,7 +4,7 @@
 	      ("Tom Perrine" . "perrin@logicon.arpa"))
  :maintainer ("FSF")
  :provided   (modula2)
- :keywords   ("languages")
+ :keywords   (languages)
  :commentary "\
 A major mode for editing Modula-2 code.  It provides convenient abbrevs
 for Modula-2 keywords, knows about the standard layout rules, and supports

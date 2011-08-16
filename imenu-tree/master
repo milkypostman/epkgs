@@ -9,4 +9,4 @@
 	       ("imenu" imenu)
 	       ("tree-mode" tree-mode)
 	       ("windata" windata)))
- :keywords   ("convenience" "help"))
+ :keywords   (convenience help))

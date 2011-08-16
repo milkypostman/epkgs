@@ -5,4 +5,4 @@
  :authors    (("Alan Shutko" . "ats@acm.org"))
  :maintainer ("Alan Shutko" . "ats@acm.org")
  :provided   (desktop-entry)
- :keywords   ("mail" "multimedia" "news"))
+ :keywords   (mail multimedia news))

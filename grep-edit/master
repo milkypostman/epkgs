@@ -4,7 +4,7 @@
  :authors    (("Matsushita Akihisa" . "akihisa@mail.ne.jp"))
  :maintainer ("Matsushita Akihisa" . "akihisa@mail.ne.jp")
  :provided   (grep-edit)
- :keywords   ("edit" "grep")
+ :keywords   (edit grep)
  :commentary "\
 grep-edit provides to edit grep buffer and to apply the changes to
 the file.")

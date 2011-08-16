@@ -7,7 +7,7 @@
  :maintainer ("David O'Toole" . "dto@gnu.org")
  :provided   (radio)
  :required   ((("cl" cl)))
- :keywords   ("convenience" "hypermedia")
+ :keywords   (convenience hypermedia)
  :commentary "\
 Radio-mode lets you add plaintext topic tags to your code.
 

@@ -17,7 +17,7 @@
 	       ("tree-widget" tree-widget)
 	       ("vc" vc)
 	       ("widget" wid-edit)))
- :keywords   ("convenience" "extensions")
+ :keywords   (convenience extensions)
  :homepage   "http://emhacks.sourceforge.net"
  :commentary "\
 This package provides the commands `swbuff-switch-to-next-buffer'

@@ -5,7 +5,7 @@
  :maintainer ("FSF")
  :provided   (help help-fns)
  :required   ((("help-macro" help-macro)))
- :keywords   ("help" "internal")
+ :keywords   (help internal)
  :commentary "\
 This code implements GNU Emacs' on-line help system, the one invoked by
 `M-x help-for-help'.")

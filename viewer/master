@@ -6,7 +6,7 @@
  :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
  :provided   (viewer)
  :required   ((("cl" cl)))
- :keywords   ("extensions" "view")
+ :keywords   (extensions view)
  :commentary "\
 Viewer is view-mode extension. View-mode is finger-friendly than
 normal editing because of many alphabetical commands. Let's use

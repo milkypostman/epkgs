@@ -6,5 +6,5 @@
  :provided   (thumb-through)
  :required   ((("emacs-core" font-lock)
 	       ("thingatpt" thingatpt)))
- :keywords   ("html")
+ :keywords   (html)
  :homepage   "https://github.com/apgwoz/thumb-through")

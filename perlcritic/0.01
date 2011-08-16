@@ -7,7 +7,7 @@
  :provided   (perlcritic)
  :required   ((("cl" cl)
 	       ("compile" compile)))
- :keywords   ("convenience" "tools")
+ :keywords   (convenience tools)
  :commentary "\
 Put this file into your load-path and the following into your ~/.emacs:
   (require 'perlcritic)")

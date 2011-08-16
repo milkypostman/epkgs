@@ -6,7 +6,7 @@
  :maintainer ("Drew Adams")
  :provided   (misc-fns)
  :required   ((("cl" cl)))
- :keywords   ("extensions" "internal" "lisp" "local" "unix")
+ :keywords   (extensions internal lisp local unix)
  :commentary "\
 Miscellaneous non-interactive functions.
 

@@ -6,5 +6,5 @@
  :authors    (("Kyle Hargraves" . "pd@krh.me"))
  :maintainer ("Kyle Hargraves" . "pd@krh.me")
  :provided   (inf-ruby-bond)
- :keywords   ("languages" "ruby")
+ :keywords   (languages ruby)
  :homepage   "https://github.com/pd/inf-ruby-bond")

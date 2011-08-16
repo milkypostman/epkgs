@@ -6,7 +6,7 @@
  :maintainer ("FSF")
  :provided   (foldout)
  :required   ((("outline" outline)))
- :keywords   ("folding" "outlines")
+ :keywords   (folding outlines)
  :commentary "\
 This file provides folding editor extensions for outline-mode and
 outline-minor-mode buffers.  What's a \"folding editor\"?  Read on...

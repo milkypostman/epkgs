@@ -6,7 +6,7 @@
  :maintainer ("Peter Stephenson" . "pws@pwstephenson.fsnet.co.uk")
  :provided   (xref)
  :required   ((("reporter" reporter)))
- :keywords   ("cross-references" "hypertext" "links")
+ :keywords   (cross-references hypertext links)
  :wikipage   "http://www.emacswiki.org/XRefMode"
  :commentary "\
 A simple but powerful way of adding cross-references or hypertext

@@ -5,7 +5,7 @@
  :license    "GPL-2"
  :provided   (textsnip)
  :required   ((("http-post-simple" http-post-simple)))
- :keywords   ("comm" "tools")
+ :keywords   (comm tools)
  :homepage   "https://github.com/functionreturnfunction/textsnip.el"
  :commentary "\
 This file adds a command called \"post-to-textsnip\".  When invoked, it will

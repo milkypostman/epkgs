@@ -5,5 +5,5 @@
  :authors    (("Dave Abrahams" . "dave@boostpro.com"))
  :maintainer ("Dave Abrahams" . "dave@boostpro.com")
  :provided   (elhome)
- :keywords   ("lisp")
+ :keywords   (lisp)
  :homepage   "https://github.com/dabrahams/elhome")

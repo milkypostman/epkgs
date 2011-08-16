@@ -5,7 +5,7 @@
  :authors    (("Henry Kautz" . "kautz@research.att.com"))
  :maintainer ("FSF")
  :provided   (refbib refer-to-bibtex)
- :keywords   ("bib" "tex")
+ :keywords   (bib tex)
  :commentary "\
 Use: from a buffer containing the refer-style bibliography,
   M-x r2b-convert-buffer

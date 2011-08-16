@@ -3,7 +3,7 @@
  :updated    "2011"
  :license    "GPL-3"
  :maintainer ("FSF")
- :keywords   ("wp")
+ :keywords   (wp)
  :commentary "\
 This package provides the fundamental text mode documented in the
 Emacs user's manual.")

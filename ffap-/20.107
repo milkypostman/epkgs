@@ -6,7 +6,7 @@
  :maintainer ("Drew Adams")
  :provided   (ffap-)
  :required   ((("ffap" ffap)))
- :keywords   ("convenience" "files" "hypermedia" "matching" "mouse")
+ :keywords   (convenience files hypermedia matching mouse)
  :commentary "\
 Extensions to library `ffap.el'.
 

@@ -9,7 +9,7 @@
 	       ("dired" dired)
 	       ("emacs-core" jka-compr)
 	       ("image-mode" image-mode)))
- :keywords   ("dvi" "files" "pdf" "ps")
+ :keywords   (dvi files pdf ps)
  :wikipage   "http://www.emacswiki.org/DocViewMode"
  :commentary "\
 DocView is a document viewer for Emacs.  It converts PDF, PS and DVI files

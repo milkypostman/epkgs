@@ -15,7 +15,7 @@
 	       ("imenu" imenu)
 	       ("timer" timer)
 	       ("widget" wid-edit widget)))
- :keywords   ("languages")
+ :keywords   (languages)
  :homepage   "http://idlwave.org"
  :wikipage   "http://www.emacswiki.org/IdlMode"
  :commentary "\

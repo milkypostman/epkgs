@@ -4,7 +4,7 @@
  :authors    (("Iñigo Serna" . "inigoserna@gmail.com"))
  :maintainer ("Iñigo Serna" . "inigoserna@gmail.com")
  :provided   (devel-notes)
- :keywords   ("annotations" "devel" "org" "todo")
+ :keywords   (annotations devel org todo)
  :homepage   "http://www.emacswiki.org/DevelNotes"
  :wikipage   "http://www.emacswiki.org/DevelNotes"
  :commentary "\

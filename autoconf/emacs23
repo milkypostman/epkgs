@@ -5,7 +5,7 @@
  :authors    (("Dave Love" . "fx@gnu.org"))
  :maintainer ("Dave Love" . "fx@gnu.org")
  :provided   (autoconf autoconf-mode)
- :keywords   ("languages")
+ :keywords   (languages)
  :wikipage   "http://www.emacswiki.org/AutoconfMode"
  :commentary "\
 Provides fairly minimal font-lock, imenu and indentation support

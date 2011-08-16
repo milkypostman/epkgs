@@ -6,6 +6,6 @@
  :maintainer ("Taiki SUGAWARA" . "buzz.taiki@gmail.com")
  :provided   (descbinds-anything)
  :required   ((("anything" anything)))
- :keywords   ("anything" "help")
+ :keywords   (anything help)
  :commentary "\
 This package is a replacement of `describe-bindings'.")

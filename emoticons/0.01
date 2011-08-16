@@ -9,7 +9,7 @@
 	       ("gnus" format-spec)
 	       ("tree-widget" tree-widget)
 	       ("xml" xml)))
- :keywords   ("games" "wp")
+ :keywords   (games wp)
  :homepage   "http://www.emacswiki.org/Emoticons"
  :wikipage   "http://www.emacswiki.org/Emoticons"
  :commentary "\

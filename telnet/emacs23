@@ -7,7 +7,7 @@
  :provided   (telnet)
  :required   ((("comint" comint)
 	       ("shell" shell)))
- :keywords   ("comm" "unix")
+ :keywords   (comm unix)
  :wikipage   "http://www.emacswiki.org/TelnetMode"
  :commentary "\
 This mode is intended to be used for telnet or rsh to a remote host;

@@ -5,7 +5,7 @@
  :maintainer ("FSF")
  :provided   (bruce)
  :required   ((("cookie1" cookie1)))
- :keywords   ("games")
+ :keywords   (games)
  :commentary "\
 This program was written to protest the miss-named \"Communications
 Decency Act of 1996. This Act bans \"indecent speech\", whatever that is,

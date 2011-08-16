@@ -7,7 +7,7 @@
  :provided   (finder)
  :required   ((("find-func" find-func)
 	       ("lisp-mnt" lisp-mnt)))
- :keywords   ("help")
+ :keywords   (help)
  :wikipage   "http://www.emacswiki.org/FinderMode"
  :commentary "\
 This mode uses the Keywords library header to provide code-finding

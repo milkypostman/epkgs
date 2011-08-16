@@ -5,7 +5,7 @@
  :authors    (("Kevin Ryde" . "user42@zip.com.au"))
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (filladapt-pat)
- :keywords   ("convenience")
+ :keywords   (convenience)
  :homepage   "http://user42.tuxfamily.org/filladapt-pat/index.html"
  :commentary "\
 This is some functions to add or remove patterns filladapt uses for

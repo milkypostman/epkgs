@@ -9,7 +9,7 @@
 	       ("cl" cl)
 	       ("pcvs" pcvs-util)
 	       ("ring" ring)))
- :keywords   ("commit" "cvs" "log" "pcl-cvs")
+ :keywords   (commit cvs log pcl-cvs)
  :commentary "\
 Todo:
 

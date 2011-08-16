@@ -7,7 +7,7 @@
  :maintainer ("Nikolaj Schumacher" . "bugs@nschum.de")
  :provided   (highlight-parentheses)
  :required   ((("cl" cl)))
- :keywords   ("faces" "matching")
+ :keywords   (faces matching)
  :homepage   "http://nschum.de/src/emacs/highlight-parentheses"
  :wikipage   "http://www.emacswiki.org/HighlightParentheses"
  :commentary "\

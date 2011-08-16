@@ -7,7 +7,7 @@
  :provided   (tex-math-preview)
  :required   ((("tex-mode" tex-mode)
 	       ("thingatpt" thingatpt)))
- :keywords   ("tex")
+ :keywords   (tex)
  :wikipage   "http://www.emacswiki.org/TexMathPreview"
  :commentary "\
 M-x tex-math-preview previews TeX math expressions.  Put point in a TeX,

@@ -9,7 +9,7 @@
 	      ("Till Varoquaux" . "till@pps.jussieu.fr")
 	      ("Sean McLaughlin" . "seanmcl@gmail.com"))
  :maintainer ("Albert Cohen" . "albert.cohen@inria.fr")
- :provided   (tuareg tuareg2)
+ :provided   (ocamldebug tuareg tuareg2)
  :required   ((("cl" cl)
 	       ("comint" comint)
 	       ("compile" compile)
@@ -19,7 +19,7 @@
 	       ("shell" shell))
 	      (("caml" caml-help caml-types)
 	       ("cedet" speedbar)))
- :keywords   ("languages" "ocaml")
+ :keywords   (languages ocaml)
  :homepage   "http://tuareg.forge.ocamlcore.org"
  :wikipage   "http://www.emacswiki.org/TuaregMode"
  :commentary "\

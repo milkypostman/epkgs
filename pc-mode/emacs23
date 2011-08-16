@@ -4,4 +4,4 @@
  :license    "GPL-3"
  :maintainer ("FSF")
  :provided   (pc-mode)
- :keywords   ("emulations"))
+ :keywords   (emulations))

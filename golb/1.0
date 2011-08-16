@@ -6,7 +6,7 @@
  :maintainer ("Jorgen Schaefer" . "forcer@forcix.cx")
  :provided   (golb)
  :required   ((("time-stamp" time-stamp)))
- :keywords   ("web")
+ :keywords   (web)
  :commentary "\
 Golb is a very simple homepage and weblog generator. Basically it
 provides a simple function which creates an html file from

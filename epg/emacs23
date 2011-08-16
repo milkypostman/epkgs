@@ -10,6 +10,6 @@
 	       ("emacs-core" derived font-lock)
 	       ("mail-utils" mail-utils)
 	       ("widget" wid-edit widget)))
- :keywords   ("gnupg" "pgp")
+ :keywords   (gnupg pgp)
  :homepage   "http://epg.sourceforge.jp"
  :wikipage   "http://www.emacswiki.org/EasyPG")

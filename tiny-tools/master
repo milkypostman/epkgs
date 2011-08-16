@@ -36,7 +36,7 @@
 	       ("timezone" timezone)
 	       ("view" view)
 	       ("widget" wid-edit)))
- :keywords   ("extensions")
+ :keywords   (extensions)
  :homepage   "http://www.nongnu.org/emacs-tiny-tools"
  :wikipage   "http://www.emacswiki.org/TinyTools"
  :commentary "\

@@ -6,7 +6,7 @@
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (nroff-filladapt)
  :required   ((("filladapt" filladapt)))
- :keywords   ("wp")
+ :keywords   (wp)
  :commentary "\
 This is a spot of code to help filladapt work with the various possible
 nroff comment prefixes, such as \\\" .\\\" and '''.  See the docstring in

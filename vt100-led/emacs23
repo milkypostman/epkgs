@@ -5,4 +5,4 @@
  :authors    (("Howard Gayle"))
  :maintainer ("FSF")
  :provided   (vt100-led)
- :keywords   ("hardware"))
+ :keywords   (hardware))

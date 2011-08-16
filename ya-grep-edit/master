@@ -7,7 +7,7 @@
  :required   ((("cl" cl)
 	       ("grep" grep))
 	      (("hilit-chg" hilit-chg)))
- :keywords   ("convenience" "wp")
+ :keywords   (convenience wp)
  :homepage   "https://github.com/k-talo/ya-grep-edit.el"
  :commentary "\
 Overview

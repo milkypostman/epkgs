@@ -6,7 +6,7 @@
  :maintainer (nil . "friedman@splode.com")
  :provided   (eldoc)
  :required   ((("help" help-fns)))
- :keywords   ("extensions")
+ :keywords   (extensions)
  :wikipage   "http://www.emacswiki.org/ElDoc"
  :commentary "\
 This program was inspired by the behavior of the \"mouse documentation

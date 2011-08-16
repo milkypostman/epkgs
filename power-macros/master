@@ -7,5 +7,5 @@
  :required   ((("advice" advice)
 	       ("cl" cl)
 	       ("edmacro" edmacro)))
- :keywords   ("macros")
+ :keywords   (macros)
  :homepage   "http://www.imada.sdu.dk/~blackie/emacs")

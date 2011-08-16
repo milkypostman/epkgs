@@ -9,7 +9,7 @@
 	       ("easymenu" easymenu)
 	       ("json" json)
 	       ("url" url-file)))
- :keywords   ("convenience" "diagram")
+ :keywords   (convenience diagram)
  :homepage   "https://github.com/kiwanami/emacs-cacoo"
  :commentary "\
 A minor mode for editing a document with Cacoo diagrams.  Diagrams

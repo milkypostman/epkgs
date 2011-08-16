@@ -7,7 +7,7 @@
  :provided   (html-helper-mode html-mode)
  :required   ((("easymenu" easymenu)
 	       ("tempo" tempo)))
- :keywords   ("html" "major-mode")
+ :keywords   (html major-mode)
  :homepage   "http://tuvalu.santafe.edu/~nelson/hhm-beta"
  :wikipage   "http://www.emacswiki.org/HtmlHelperMode"
  :commentary "\

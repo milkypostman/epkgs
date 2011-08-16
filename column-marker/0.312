@@ -5,7 +5,7 @@
  :authors    (("Rick Bielawski" . "rbielaws@i1.net"))
  :maintainer ("Rick Bielawski" . "rbielaws@i1.net")
  :provided   (column-marker)
- :keywords   ("convenience" "highlight" "tools")
+ :keywords   (convenience highlight tools)
  :homepage   "http://www.emacswiki.org/ColumnMarker"
  :wikipage   "http://www.emacswiki.org/ColumnMarker"
  :commentary "\

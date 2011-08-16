@@ -3,7 +3,7 @@
  :updated    "20020703"
  :license    "GPL-2"
  :maintainer (nil . "martin@meltin.net")
- :keywords   ("diary" "palm" "pilot")
+ :keywords   (diary palm pilot)
  :homepage   "http://meltin.net/hacks/emacs"
  :commentary "\
 This program installs all of the events from the Emacs diary for

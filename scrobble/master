@@ -8,7 +8,7 @@
  :provided   (scrobble)
  :required   ((("cl" cl)
 	       ("gnus" mm-url)))
- :keywords   ("automation" "home")
+ :keywords   (automation home)
  :homepage   "https://github.com/larsmagne/scrobble.el"
  :commentary "\
 This library provides an interface to the (old-style) last.fm

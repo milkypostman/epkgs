@@ -9,7 +9,7 @@
  :required   ((("cl" cl)
 	       ("emacs-core" simple)
 	       ("find-func" find-func)))
- :keywords   ("lisp")
+ :keywords   (lisp)
  :homepage   "https://github.com/dabrahams/initsplit"
  :wikipage   "http://www.emacswiki.org/InitSplit"
  :commentary "\

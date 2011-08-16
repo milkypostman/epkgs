@@ -3,7 +3,7 @@
  :updated    "20080527"
  :maintainer ("Drew Adams")
  :provided   (occur-schroeder)
- :keywords   ("occur" "search")
+ :keywords   (occur search)
  :commentary "\
 From Alex Schroeder's code at
 http://www.emacswiki.org/cgi-bin/wiki/AlexSchroederConfigInit

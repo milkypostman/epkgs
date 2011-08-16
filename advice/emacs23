@@ -7,7 +7,7 @@
  :provided   (advice advice-preload)
  :required   ((("emacs-core" byte-compile bytecomp warnings)
 	       ("help" help-fns)))
- :keywords   ("extensions" "lisp" "tools")
+ :keywords   (extensions lisp tools)
  :commentary "\
 NOTE: This documentation is slightly out of date. In particular, all the
 references to Emacs-18 are obsolete now, because it is not any longer

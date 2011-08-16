@@ -14,7 +14,7 @@
 	       ("reporter" reporter)
 	       ("widget" wid-edit widget)
 	       (nil toolbar xpm)))
- :keywords   ("gnuplot" "plotting")
+ :keywords   (gnuplot plotting)
  :homepage   "http://xafs.org/BruceRavel/GnuplotMode"
  :wikipage   "http://www.emacswiki.org/GnuPlot"
  :commentary "\

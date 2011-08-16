@@ -8,7 +8,7 @@
  :required   ((("comint" comint)
 	       ("custom" custom)
 	       ("regexp-opt" regexp-opt)))
- :keywords   ("comm" "languages" "processes")
+ :keywords   (comm languages processes)
  :wikipage   "http://www.emacswiki.org/SqlMode"
  :commentary "\
 Please send bug reports and bug fixes to the mailing list at

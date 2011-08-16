@@ -5,7 +5,7 @@
  :authors    (("Miles Bader" . "miles@gnu.org"))
  :maintainer ("Miles Bader" . "miles@gnu.org")
  :provided   (rfn-eshadow)
- :keywords   ("convenience" "minibuffer")
+ :keywords   (convenience minibuffer)
  :commentary "\
 Defines the mode `file-name-shadow-mode'.
 

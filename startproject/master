@@ -8,7 +8,7 @@
  :provided   (startproject)
  :required   ((("ido" ido))
 	      (("vc" vc)))
- :keywords   ("tools")
+ :keywords   (tools)
  :homepage   "https://github.com/myfreeweb/startproject"
  :commentary "\
 Simple project starter. See README.md for more info.")

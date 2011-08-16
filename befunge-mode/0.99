@@ -4,7 +4,7 @@
  :required   ((("calc" calc calc-ext)
 	       ("cl" cl)
 	       (nil hscroll)))
- :keywords   ("games")
+ :keywords   (games)
  :homepage   "http://www.emacswiki.org/BefungeMode"
  :wikipage   "http://www.emacswiki.org/BefungeMode"
  :commentary "\

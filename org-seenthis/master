@@ -6,7 +6,7 @@
  :maintainer ("Julien Barnier" . "julien@nozav.org")
  :provided   (org-seenthis)
  :required   ((("xml" xml)))
- :keywords   ("orgmode" "seenthis")
+ :keywords   (orgmode seenthis)
  :homepage   "https://github.com/juba/org-seenthis"
  :commentary "\
 For installation and usage, see README.org")

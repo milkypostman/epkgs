@@ -7,7 +7,7 @@
  :provided   (mb-depth+)
  :required   (nil
 	      (("mb-depth" mb-depth)))
- :keywords   ("convenience")
+ :keywords   (convenience)
  :commentary "\
 This library modifies library `mb-depth.el' slightly, to let you
  decide what depth indicator format to use, and which face to

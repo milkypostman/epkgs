@@ -9,5 +9,5 @@
 	       ("eldoc" eldoc)
 	       ("paredit" paredit)
 	       ("skeleton" skeleton)))
- :keywords   ("languages" "lisp")
+ :keywords   (languages lisp)
  :homepage   "http://www.foldr.org/~michaelw/emacs/redshank")

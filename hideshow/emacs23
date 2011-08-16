@@ -6,7 +6,7 @@
 	      ("Dan Nicolaescu" . "dann@ics.uci.edu"))
  :maintainer ("Thien-Thi Nguyen" . "ttn@gnu.org")
  :provided   (hideshow)
- :keywords   ("blocks" "c" "comments" "editing" "hide" "java" "lisp" "outlines" "tools")
+ :keywords   (blocks c comments editing hide java lisp outlines tools)
  :wikipage   "http://www.emacswiki.org/HideShow"
  :commentary "\
 * Commands provided

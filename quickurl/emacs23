@@ -9,7 +9,7 @@
 	       ("cl" cl)
 	       ("emacs-core" pp)
 	       ("thingatpt" thingatpt)))
- :keywords   ("hypermedia")
+ :keywords   (hypermedia)
  :homepage   "http://www.davep.org/emacs"
  :commentary "\
 This package provides a simple method of inserting an URL based on the

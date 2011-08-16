@@ -7,7 +7,7 @@
  :provided   (ftelnet)
  :required   ((("comint" comint)
 	       ("shell" shell)))
- :keywords   ("comm" "unix")
+ :keywords   (comm unix)
  :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
  :commentary "\
 This code originally derived from emacs 19.29 rlogin.el, and was then

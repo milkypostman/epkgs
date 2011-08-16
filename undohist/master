@@ -7,7 +7,7 @@
  :maintainer ("MATSUYAMA Tomohiro" . "tomo@cx4a.org")
  :provided   (undohist)
  :required   ((("cl" cl)))
- :keywords   ("convenience")
+ :keywords   (convenience)
  :homepage   "https://github.com/m2ym/undohist-el"
  :commentary "\
 This extension provides a way to use undo history of

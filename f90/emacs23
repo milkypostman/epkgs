@@ -5,7 +5,7 @@
  :authors    (("Torbj\\\"orn Einarsson" . "torbjorn.einarsson@era.ericsson.se"))
  :maintainer ("Glenn Morris" . "rgm@gnu.org")
  :provided   (f90)
- :keywords   ("fortran" "languages")
+ :keywords   (fortran languages)
  :commentary "\
 Major mode for editing F90 programs in FREE FORMAT.
 The minor language revision F95 is also supported (with font-locking).

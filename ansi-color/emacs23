@@ -5,7 +5,7 @@
  :authors    (("Alex Schroeder" . "alex@gnu.org"))
  :maintainer ("Alex Schroeder" . "alex@gnu.org")
  :provided   (ansi-color)
- :keywords   ("comm" "processes" "services" "terminals")
+ :keywords   (comm processes services terminals)
  :wikipage   "http://www.emacswiki.org/AnsiColor"
  :commentary "\
 This file provides a function that takes a string or a region

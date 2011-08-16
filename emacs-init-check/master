@@ -6,7 +6,7 @@
  :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
  :provided   (emacs-init-check)
  :required   ((("cl" cl)))
- :keywords   ("lisp" "vc")
+ :keywords   (lisp vc)
  :commentary "\
 Do error check your ~/.emacs.el automatically by:
   emacs -batch --eval '(setq debug-on-error t)' -l ~/.emacs

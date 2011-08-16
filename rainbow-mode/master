@@ -9,7 +9,7 @@
  :required   ((("cl" cl)
 	       ("emacs-core" faces)
 	       ("regexp-opt" regexp-opt)))
- :keywords   ("faces")
+ :keywords   (faces)
  :homepage   "http://julien.danjou.info/rainbow-mode.html"
  :commentary "\
 This minor mode will set background color to strings that matches color

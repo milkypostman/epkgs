@@ -9,7 +9,7 @@
 	       ("cl" cl)
 	       ("dom" dom)
 	       ("xml" xml)))
- :keywords   ("xml")
+ :keywords   (xml)
  :commentary "\
 If you are working with XML documents, you may parse the documents
 using the XML parser included with Emacs (xml.el), and pass the data

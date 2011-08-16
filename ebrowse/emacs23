@@ -10,7 +10,7 @@
 	       ("ebuff-menu" ebuff-menu)
 	       ("emacs-core" helper)
 	       ("view" view)))
- :keywords   ("tags" "tools")
+ :keywords   (tags tools)
  :commentary "\
 This package implements
 

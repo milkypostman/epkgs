@@ -3,7 +3,7 @@
  :license    "GPL-2"
  :authors    (("quodlibetor" . "quodlibetor@gmail.com"))
  :maintainer ("quodlibetor" . "quodlibetor@gmail.com")
- :keywords   ("keyconfig" "latex")
+ :keywords   (keyconfig latex)
  :homepage   "http://www.emacswiki.org/TabInTabular"
  :wikipage   "http://www.emacswiki.org/TabInTabular"
  :commentary "\

@@ -13,7 +13,7 @@
 	       ("pcomplete" pcomplete)
 	       ("ruby-compilation" ruby-compilation)
 	       ("ruby-mode" ruby-mode)))
- :keywords   ("convenience" "project" "rails" "ruby" "web")
+ :keywords   (convenience project rails ruby web)
  :homepage   "https://github.com/technomancy/rinari"
  :commentary "\
 Rinari Is Not A Ruby IDE.

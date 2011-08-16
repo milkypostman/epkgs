@@ -12,7 +12,7 @@
 	       ("js" js)
 	       ("markdown-mode" markdown-mode)
 	       ("textile-mode" textile-mode)))
- :keywords   ("html" "language" "markup")
+ :keywords   (html language markup)
  :homepage   "https://github.com/nex3/haml-mode"
  :wikipage   "http://www.emacswiki.org/HamlMode"
  :commentary "\

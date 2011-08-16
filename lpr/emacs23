@@ -4,7 +4,7 @@
  :license    "GPL-3"
  :maintainer ("FSF")
  :provided   (lpr)
- :keywords   ("unix")
+ :keywords   (unix)
  :commentary "\
 Commands to send the region or a buffer to your printer.  Entry points
 are `lpr-buffer', `print-buffer', `lpr-region', or `print-region'; option

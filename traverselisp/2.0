@@ -8,7 +8,7 @@
  :provided   (anything-traverse iterator traverselisp)
  :required   ((("cl" cl)
 	       ("emacs-core" derived)))
- :keywords   ("data" "regexp")
+ :keywords   (data regexp)
  :homepage   "http://mercurial.intuxication.org/hg/traverselisp"
  :wikipage   "http://www.emacswiki.org/TraverseDirectory"
  :commentary "\

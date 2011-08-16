@@ -7,7 +7,7 @@
  :provided   (grade)
  :required   ((("calc" calc)
 	       ("easymenu" easymenu)))
- :keywords   ("grade")
+ :keywords   (grade)
  :homepage   "http://vh213601.truman.edu/~belanger/emacs.html"
  :wikipage   "http://www.emacswiki.org/GradeMode"
  :commentary "\

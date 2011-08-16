@@ -7,7 +7,7 @@
  :maintainer ("Johan Andersson" . "johan.rejeep@gmail.com")
  :provided   (keats keats-interactive)
  :required   ((("easymenu" easymenu)))
- :keywords   ("convenience" "help")
+ :keywords   (convenience help)
  :homepage   "https://github.com/rejeep/keats"
  :wikipage   "http://www.emacswiki.org/KeatsMode"
  :commentary "\

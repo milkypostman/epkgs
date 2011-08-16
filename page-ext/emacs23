@@ -5,7 +5,7 @@
  :authors    (("Robert J. Chassell" . "bob@gnu.org"))
  :maintainer ("Robert J. Chassell" . "bob@gnu.org")
  :provided   (page-ext)
- :keywords   ("data" "wp")
+ :keywords   (data wp)
  :commentary "\
 You may use these commands to handle an address list or other
 small data base.")

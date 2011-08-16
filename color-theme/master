@@ -13,7 +13,7 @@
 	       ("reporter" reporter)
 	       ("sendmail" sendmail)
 	       ("widget" wid-edit)))
- :keywords   ("faces")
+ :keywords   (faces)
  :homepage   "http://www.nongnu.org/color-theme/index.html"
  :wikipage   "http://www.emacswiki.org/ColorTheme"
  :commentary "\

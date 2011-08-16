@@ -6,7 +6,7 @@
  :maintainer ("Stefan Monnier" . "monnier@iro.umontreal.ca")
  :provided   (smie)
  :required   ((("cl" cl)))
- :keywords   ("indentation" "internal" "languages" "lisp" "parsing")
+ :keywords   (indentation internal languages lisp parsing)
  :commentary "\
 While working on the SML indentation code, the idea grew that maybe
 I could write something generic to do the same thing, and at the

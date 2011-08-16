@@ -5,7 +5,7 @@
  :authors    (("Tamas Patrovics"))
  :maintainer ("Tamas Patrovics")
  :provided   (autoinfo)
- :keywords   ("convenience")
+ :keywords   (convenience)
  :commentary "\
 This minor-mode monitors if something is selected in the buffer
 where it is turned on and if the user is idle it fetches

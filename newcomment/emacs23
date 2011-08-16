@@ -4,6 +4,6 @@
  :license    "GPL-3"
  :maintainer ("Stefan Monnier" . "monnier@iro.umontreal.ca")
  :provided   (newcomment)
- :keywords   ("comments" "uncomment")
+ :keywords   (comments uncomment)
  :commentary "\
 A replacement for simple.el's comment-related functions.")

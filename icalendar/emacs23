@@ -6,7 +6,7 @@
  :maintainer ("Ulf Jasper" . "ulf.jasper@web.de")
  :provided   (icalendar)
  :required   ((("calendar" calendar)))
- :keywords   ("calendar")
+ :keywords   (calendar)
  :homepage   "http://ulf.epplejasper.de/EmacsCalendarAndDiary.html"
  :wikipage   "http://www.emacswiki.org/iCalendar"
  :commentary "\

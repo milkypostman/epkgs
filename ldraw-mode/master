@@ -7,5 +7,5 @@
  :provided   (ldraw-mode)
  :required   ((("cl" cl)
 	       ("w3" w3)))
- :keywords   ("util")
+ :keywords   (util)
  :homepage   "http://www.math.uio.no/~fredrigl/technic/ldraw-mode")

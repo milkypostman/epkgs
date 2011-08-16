@@ -5,4 +5,4 @@
  :authors    (("Per Abrahamsen" . "abraham@dina.kvl.dk"))
  :maintainer ("Per Abrahamsen" . "abraham@dina.kvl.dk")
  :provided   (all)
- :keywords   ("matching"))
+ :keywords   (matching))

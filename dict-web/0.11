@@ -8,7 +8,7 @@
 	       ("easymenu" easymenu)
 	       ("url" url)
 	       ("w3" w3-forms)))
- :keywords   ("dictionary")
+ :keywords   (dictionary)
  :homepage   "http://emarsden.chez.com/downloads"
  :wikipage   "http://www.emacswiki.org/DictWeb"
  :commentary "\

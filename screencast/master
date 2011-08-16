@@ -5,7 +5,7 @@
  :authors    (("Esben Andreasen" . "esbenandreasen@gmail.com"))
  :maintainer ("Esben Andreasen" . "esbenandreasen@gmail.com")
  :provided   (screencast)
- :keywords   ("demo" "screencast")
+ :keywords   (demo screencast)
  :homepage   "http://www.emacswiki.org/ScreencastMode"
  :wikipage   "http://www.emacswiki.org/ScreencastMode"
  :commentary "\

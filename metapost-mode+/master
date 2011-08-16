@@ -4,7 +4,7 @@
  :maintainer ("Yu LI" . "liyu1981@gmail.com")
  :provided   (metapost-mode+)
  :required   ((("doc-view" doc-view)))
- :keywords   ("metapost")
+ :keywords   (metapost)
  :homepage   "https://github.com/liyu1981/metapost-mode-"
  :wikipage   "http://www.emacswiki.org/MetapostModePlus"
  :commentary "\

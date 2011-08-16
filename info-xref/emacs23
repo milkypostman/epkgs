@@ -8,7 +8,7 @@
  :required   ((("custom" cus-start)
 	       ("info" info)
 	       (nil cus-load)))
- :keywords   ("docs")
+ :keywords   (docs)
  :wikipage   "http://www.emacswiki.org/InfoXref"
  :commentary "\
 This file implements some simple checking of external cross references in

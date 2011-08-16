@@ -5,6 +5,6 @@
  :authors    (("John Palmieri" . "palmieri@math.washington.edu"))
  :maintainer ("John Palmieri" . "palmieri@math.washington.edu")
  :provided   (latex-symbols)
- :keywords   ("tex symbols" "xpm")
+ :keywords   (tex\ symbols xpm)
  :homepage   "http://www.math.washington.edu/~palmieri/Emacs/latex-symbols.html"
  :wikipage   "http://www.emacswiki.org/LaTeXSymbols")

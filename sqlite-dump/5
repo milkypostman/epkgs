@@ -6,7 +6,7 @@
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (sqlite-dump)
  :required   ((("advice" advice)))
- :keywords   ("data")
+ :keywords   (data)
  :homepage   "http://user42.tuxfamily.org/sqlite-dump/index.html"
  :wikipage   "http://www.emacswiki.org/SqliteDump"
  :commentary "\

@@ -5,7 +5,7 @@
  :license    "GPL-3"
  :provided   (autopair autopair-tests)
  :required   ((("cl" cl)))
- :keywords   ("convenience" "emulations")
+ :keywords   (convenience emulations)
  :homepage   "http://code.google.com/p/autopair"
  :commentary "\
 Another stab at making braces and quotes pair like in

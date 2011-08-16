@@ -6,7 +6,7 @@
  :maintainer ("FSF")
  :provided   (tar-mode)
  :required   ((("cl" cl)))
- :keywords   ("unix")
+ :keywords   (unix)
  :wikipage   "http://www.emacswiki.org/TarMode"
  :commentary "\
 This package attempts to make dealing with Unix 'tar' archives easier.

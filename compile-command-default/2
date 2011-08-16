@@ -5,7 +5,7 @@
  :authors    (("Kevin Ryde" . "user42@zip.com.au"))
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (compile-command-default)
- :keywords   ("processes")
+ :keywords   (processes)
  :commentary "\
 This spot of code lets you establish a default `compile-command' for
 M-x compile etc.

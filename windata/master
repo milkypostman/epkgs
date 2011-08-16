@@ -6,7 +6,7 @@
  :maintainer (nil . "wenbinye@gmail.com")
  :provided   (windata)
  :required   ((("cl" cl)))
- :keywords   ("convenience" "frames")
+ :keywords   (convenience frames)
  :commentary "\
 This extension is useful when you want save window configuration
 between emacs sessions or for emacs lisp programer who want handle

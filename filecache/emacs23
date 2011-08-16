@@ -6,7 +6,7 @@
  :maintainer ("Peter Breton" . "pbreton@cs.umb.edu")
  :provided   (filecache)
  :required   ((("find-lisp" find-lisp)))
- :keywords   ("convenience")
+ :keywords   (convenience)
  :commentary "\
 The file-cache package is an attempt to make it easy to locate files
 by name, without having to remember exactly where they are located.

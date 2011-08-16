@@ -8,7 +8,7 @@
  :required   ((("comint" comint)
 	       ("custom" custom)
 	       ("shell" shell)))
- :keywords   ("convenience" "shell")
+ :keywords   (convenience shell)
  :commentary "\
 defshell.el makes it easy to run different inferior shells at the
 same time, by defining new commands for the Bourne (M-x sh), C (M-x

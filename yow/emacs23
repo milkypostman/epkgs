@@ -6,7 +6,7 @@
  :maintainer ("FSF")
  :provided   (yow)
  :required   ((("cookie1" cookie1)))
- :keywords   ("games")
+ :keywords   (games)
  :commentary "\
 Important pinheadery for GNU Emacs.
 

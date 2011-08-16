@@ -8,7 +8,7 @@
  :provided   (header2)
  :required   ((("cl" cl))
 	      (("lib-requires" lib-requires)))
- :keywords   ("abbrev" "docs" "local" "maint" "tools")
+ :keywords   (abbrev docs local maint tools)
  :commentary "\
 Support for creation and update of file headers.
 

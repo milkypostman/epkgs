@@ -8,7 +8,7 @@
  :required   ((("anything" anything)
 	       ("auto-complete" auto-complete))
 	      (("anything" anything-match-plugin anything-show-completion)))
- :keywords   ("convenience")
+ :keywords   (convenience)
  :commentary "\
 Auto Complete with Anything. It enables us to narrow candidates
 with anything interface. If you have anything-match-plugin.el,

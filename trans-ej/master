@@ -5,7 +5,7 @@
  :provided   (trans-ej)
  :required   ((("button" button)
 	       ("url" url-util)))
- :keywords   ("multilingual" "translation")
+ :keywords   (multilingual translation)
  :homepage   "http://www.emacswiki.org/TransEJ"
  :wikipage   "http://www.emacswiki.org/TransEJ"
  :commentary "\

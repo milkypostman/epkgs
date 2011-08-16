@@ -7,7 +7,7 @@
  :provided   (image-mode)
  :required   ((("cl" cl)
 	       ("emacs-core" image)))
- :keywords   ("multimedia")
+ :keywords   (multimedia)
  :commentary "\
 Defines a major mode for visiting image files
 that allows conversion between viewing the text of the file

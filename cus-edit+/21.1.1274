@@ -10,7 +10,7 @@
 	       ("custom" cus-edit))
 	      (("autofit-frame" autofit-frame)
 	       ("wid-edit+" wid-edit+)))
- :keywords   ("customize" "faces" "help")
+ :keywords   (customize faces help)
  :commentary "\
 Enhancements to `cus-edit.el'.
 

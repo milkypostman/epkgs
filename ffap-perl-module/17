@@ -9,7 +9,7 @@
 	       ("cl" cl)
 	       ("ffap" ffap)
 	       ("thingatpt" thingatpt)))
- :keywords   ("files")
+ :keywords   (files)
  :homepage   "http://user42.tuxfamily.org/ffap-perl-module/index.html"
  :commentary "\
 This spot of code lets M-x ffap find the source file for a Perl module.

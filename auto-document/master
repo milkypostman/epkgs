@@ -6,7 +6,7 @@
  :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
  :provided   (auto-document)
  :required   ((("cl" cl)))
- :keywords   ("convenience" "docs" "lisp")
+ :keywords   (convenience docs lisp)
  :homepage   "http://www.emacswiki.org/AutoDocument"
  :wikipage   "http://www.emacswiki.org/AutoDocument"
  :commentary "\

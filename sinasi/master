@@ -8,7 +8,7 @@
  :provided   (sinasi)
  :required   ((("cl" cl)
 	       ("jump" jump)))
- :keywords   ("project" "sproutcore")
+ :keywords   (project sproutcore)
  :homepage   "https://github.com/emk/sinasi"
  :commentary "\
 Sinasi Is Not A SproutCore IDE

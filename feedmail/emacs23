@@ -6,7 +6,7 @@
  :required   ((("cl" cl)
 	       ("mail-utils" mail-utils)
 	       ("smtpmail" smtpmail)))
- :keywords   ("draft" "email" "mail" "message" "queue" "sendmail" "smtp" "spray")
+ :keywords   (draft email mail message queue sendmail smtp spray)
  :commentary "\
 A replacement for parts of Emacs' sendmail.el (specifically,
 it's what handles your outgoing mail after you hit C-c C-c in mail

@@ -11,7 +11,7 @@
 	       ("diff" diff)
 	       ("gnus" gnus-art mm-decode))
 	      ((nil vc-darcs)))
- :keywords   ("completion" "convenience" "tools" "vc")
+ :keywords   (completion convenience tools vc)
  :homepage   "http://joyful.com/repos/darcsum"
  :commentary "\
 Load this file and run M-x darcsum-whatsnew.  This will display a

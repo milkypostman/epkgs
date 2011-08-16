@@ -7,7 +7,7 @@
  :maintainer ("Jonas Bernoulli" . "jonas@bernoul.li")
  :provided   (vcomp)
  :required   ((("cl" cl)))
- :keywords   ("versions")
+ :keywords   (versions)
  :homepage   "https://github.com/tarsius/vcomp"
  :commentary "\
 Compare version strings.

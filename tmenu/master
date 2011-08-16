@@ -5,7 +5,7 @@
  :authors    (("Yuji Minejima" . "ggb01164@nifty.ne.jp"))
  :maintainer ("Yuji Minejima" . "ggb01164@nifty.ne.jp")
  :provided   (tmenu)
- :keywords   ("convenience" "menu")
+ :keywords   (convenience menu)
  :homepage   "http://homepage1.nifty.com/bmonkey/emacs/index-en.html"
  :commentary "\
 This package provides a text based interface to the menubar.

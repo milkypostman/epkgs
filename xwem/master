@@ -16,6 +16,6 @@
 	       ("strokes" strokes)
 	       ("time" time)
 	       (nil color-selector xpm-button xpm-mode)))
- :keywords   ("xlib" "xwem")
+ :keywords   (xlib xwem)
  :homepage   "http://xwem.org"
  :wikipage   "http://www.emacswiki.org/XWindowEmacsManager")

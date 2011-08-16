@@ -10,6 +10,6 @@
 	       ("etags" etags)
 	       ("hippie-exp" hippie-exp)
 	       ("tempo-x" tempo-x)))
- :keywords   ("c" "convenience")
+ :keywords   (c convenience)
  :commentary "\
 For useful information, See document of `emboss-mode'.")

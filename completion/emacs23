@@ -6,7 +6,7 @@
 	      ("(ideas suggested by Brewster Kahle)"))
  :maintainer ("FSF")
  :provided   (completion)
- :keywords   ("abbrev" "convenience")
+ :keywords   (abbrev convenience)
  :wikipage   "http://www.emacswiki.org/Completion"
  :commentary "\
 What to put in .emacs

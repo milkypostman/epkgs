@@ -6,5 +6,5 @@
  :authors    (("Bodil Stokke" . "lolcode@bodil.tv"))
  :maintainer ("Bodil Stokke" . "lolcode@bodil.tv")
  :provided   (lolcode-mode)
- :keywords   ("lolcode" "major" "mode")
+ :keywords   (lolcode major mode)
  :homepage   "https://github.com/bodil/lolcode-mode")

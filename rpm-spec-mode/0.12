@@ -9,7 +9,7 @@
 	       ("easymenu" easymenu)
 	       ("sh-script" sh-script)
 	       ("shindent" shindent)))
- :keywords   ("languages" "unix")
+ :keywords   (languages unix)
  :wikipage   "http://www.emacswiki.org/RpmSpecMode"
  :commentary "\
 This mode is used for editing spec files used for building RPM packages.

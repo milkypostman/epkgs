@@ -6,7 +6,7 @@
  :maintainer ("FSF")
  :provided   (ehelp)
  :required   ((("electric" electric)))
- :keywords   ("extensions" "help")
+ :keywords   (extensions help)
  :commentary "\
 This package provides a pre-packaged `Electric Help Mode' for
 browsing on-line help screens.  There is one entry point,

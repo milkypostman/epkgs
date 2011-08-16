@@ -8,7 +8,7 @@
  :provided   (key-cast)
  :required   ((("cl" cl)
 	       ("easy-mmode" easy-mmode)))
- :keywords   ("command" "key" "keycaster" "log")
+ :keywords   (command key keycaster log)
  :homepage   "http://wiki.github.com/k1LoW/emacs-key-cast"
  :commentary "\
 This package cast key command.

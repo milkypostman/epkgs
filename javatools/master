@@ -2,4 +2,4 @@
  :license    "GPL-2"
  :authors    (("Halil Oezdemir" . "halillix@googlemail.com"))
  :maintainer ("Halil Oezdemir" . "halillix@googlemail.com")
- :keywords   ("java" "programming"))
+ :keywords   (java programming))

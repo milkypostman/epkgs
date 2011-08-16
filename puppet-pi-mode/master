@@ -2,7 +2,7 @@
  :license    "GPL-2"
  :provided   (puppet-pi-mode)
  :required   ((("emacs-core" font-lock)))
- :keywords   ("puppet")
+ :keywords   (puppet)
  :homepage   "https://github.com/t9md/puppet-pi-mode.el"
  :commentary "\
 Puppet ( http://www.puppetlabs.com/ ) provides command line documentation

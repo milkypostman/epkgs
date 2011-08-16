@@ -6,7 +6,7 @@
  :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
  :provided   (sudo-ext)
  :required   ((("cl" cl)))
- :keywords   ("unix")
+ :keywords   (unix)
  :commentary "\
 `sudo' support in Emacs.
 Currently it has two features.

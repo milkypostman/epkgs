@@ -9,5 +9,5 @@
  :required   ((("nxml-mode" nxml-mode)
 	       ("python" python)
 	       ("python-mode" python-mode)))
- :keywords   ("languages")
+ :keywords   (languages)
  :homepage   "https://github.com/myfreeweb/django-mode")

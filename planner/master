@@ -35,7 +35,7 @@
 	       ("w3m" w3m)
 	       ("wanderlust" wl wl-summary)
 	       (nil gnats xtla)))
- :keywords   ("hypermedia")
+ :keywords   (hypermedia)
  :homepage   "http://www.wjsullivan.net/PlannerMode.htm"
  :wikipage   "http://www.emacswiki.org/PlannerMode"
  :commentary "\

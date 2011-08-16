@@ -6,7 +6,7 @@
  :authors    (("Kentaro Kuribayashi" . "kentarok@gmail.com"))
  :maintainer ("Kentaro Kuribayashi" . "kentarok@gmail.com")
  :provided   (ditz)
- :keywords   ("ditz" "todo")
+ :keywords   (ditz todo)
  :homepage   "https://github.com/kentaro/emacs-ditz"
  :wikipage   "http://www.emacswiki.org/Ditz"
  :commentary "\

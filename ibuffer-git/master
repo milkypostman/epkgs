@@ -8,7 +8,7 @@
  :provided   (ibuffer-git)
  :required   ((("cl" cl)
 	       ("ibuffer" ibuffer)))
- :keywords   ("convenience")
+ :keywords   (convenience)
  :homepage   "http://jrockway.github.com/ibuffer-git"
  :commentary "\
 This package adds git integration to Ibuffer.  Two columns are

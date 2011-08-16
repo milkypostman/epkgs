@@ -10,7 +10,7 @@
 	       ("button" button)
 	       ("google-maps" google-maps)
 	       ("jabber" jabber-chatbuffer jabber-si-common)))
- :keywords   ("juick")
+ :keywords   (juick)
  :homepage   "https://github.com/mad/emacs-juick-el"
  :commentary "\
 Markup message recivied from juick@juick.com and some usefull keybindings.")

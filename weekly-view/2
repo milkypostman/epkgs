@@ -6,7 +6,7 @@
  :maintainer ("Doug Alcorn" . "doug@lathi.net")
  :provided   (weekly-view)
  :required   ((("cal-desk-calendar" cal-desk-calendar)))
- :keywords   ("calendar" "diary" "view" "week")
+ :keywords   (calendar diary view week)
  :commentary "\
 Version: 2
 X-URL: http://www.lathi.net/twiki-bin/view/Main/EmacsWeeklyView

@@ -60,7 +60,7 @@
 	       ("xml" xml)
 	       (nil android dbif document document-vars makefile psgml-mode semantic-c-by semantic-erlang-by semantic-f90-by semantic-make-by semantic-scm-by srecode-template-wy thing wisent-c-wy wisent-calc-wy wisent-csharp-wy wisent-dot-wy wisent-java-tags-wy wisent-javascript-jv-wy wisent-php-wy wisent-python-wy))
 	      (("python" python)))
- :keywords   ("syntax")
+ :keywords   (syntax)
  :homepage   "http://cedet.sourceforge.net"
  :wikipage   "http://www.emacswiki.org/CollectionOfEmacsDevelopmentEnvironmentTools"
  :commentary "\

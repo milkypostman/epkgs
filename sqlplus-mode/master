@@ -8,7 +8,7 @@
  :maintainer ("Martin Schwenke" . "martin@meltin.net")
  :provided   (sqlplus-mode)
  :required   ((("emacs-core" font-lock)))
- :keywords   ("oracle" "sql" "sqlplus")
+ :keywords   (oracle sql sqlplus)
  :homepage   "http://meltin.net/hacks/emacs"
  :wikipage   "http://www.emacswiki.org/SqlPlusMode"
  :commentary "\

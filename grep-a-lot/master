@@ -8,7 +8,7 @@
  :provided   (grep-a-lot)
  :required   ((("advice" advice)
 	       ("grep" grep)))
- :keywords   ("convenience" "search" "tools")
+ :keywords   (convenience search tools)
  :homepage   "https://github.com/ZungBang/emacs-grep-a-lot"
  :commentary "\
 This package manages multiple search results buffers:

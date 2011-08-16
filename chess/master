@@ -11,7 +11,7 @@
 	       ("emacs-core" autoload sort)
 	       ("rx" rx))
 	      (("pcomplete" pcomplete)))
- :keywords   ("games")
+ :keywords   (games)
  :homepage   "http://www.newartisans.com/software/emacs-chess.html"
  :wikipage   "http://www.emacswiki.org/ChessMode"
  :commentary "\

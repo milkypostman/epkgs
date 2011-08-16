@@ -6,7 +6,7 @@
  :maintainer ("Stephen Berman" . "stephen.berman@gmx.net")
  :provided   (todo-mode)
  :required   ((("time-stamp" time-stamp)))
- :keywords   ("calendar" "todo")
+ :keywords   (calendar todo)
  :wikipage   "http://www.emacswiki.org/TodoMode"
  :commentary "\
 Mode Description

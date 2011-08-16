@@ -6,7 +6,7 @@
  :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
  :provided   (auto-async-byte-compile)
  :required   ((("cl" cl)))
- :keywords   ("convenience" "lisp")
+ :keywords   (convenience lisp)
  :homepage   "http://www.emacswiki.org/AutoAsyncByteCompile"
  :wikipage   "http://www.emacswiki.org/AutoAsyncByteCompile"
  :commentary "\

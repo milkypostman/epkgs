@@ -7,7 +7,7 @@
  :provided   (help-dwim)
  :required   ((("cl" cl)
 	       ("woman" woman)))
- :keywords   ("convenience" "help")
+ :keywords   (convenience help)
  :commentary "\
 I write a number of commands to search documents of symbols and
 display them. It is hard to bind a common key for those command.

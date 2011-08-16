@@ -5,7 +5,7 @@
  :authors    (("Matthew K. Junker"))
  :maintainer ("Matthew K. Junker")
  :provided   (ggo-mode)
- :keywords   ("convenience" "extensions" "local")
+ :keywords   (convenience extensions local)
  :commentary "\
 A major mode for editing gengetopt files.
 

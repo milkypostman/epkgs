@@ -7,7 +7,7 @@
  :provided   (else-mode)
  :required   ((("setnu" setnu)
 	       (nil expand-a-word)))
- :keywords   ("abbreviation" "language" "placeholder" "sensitive" "template" "token")
+ :keywords   (abbreviation language placeholder sensitive template token)
  :homepage   "http://home.exetel.com.au/peterm"
  :wikipage   "http://www.emacswiki.org/ElseMode"
  :commentary "\

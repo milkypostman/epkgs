@@ -11,7 +11,7 @@
 	       ("outline" outline)
 	       ("tex-mode" tex-mode)
 	       (nil tex-site)))
- :keywords   ("doc" "dtx" "latex" "ltxdoc" "tex")
+ :keywords   (doc dtx latex ltxdoc tex)
  :homepage   "http://www.ctan.org/tex-archive/support/emacs-modes/swiftex"
  :commentary "\
 This file is distributed by its author with

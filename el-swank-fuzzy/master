@@ -6,7 +6,7 @@
  :maintainer ("Takeshi Banse" . "takebi@laafc.net")
  :provided   (el-swank-fuzzy)
  :required   ((("cl" cl)))
- :keywords   ("completion" "matching" "string")
+ :keywords   (completion matching string)
  :homepage   "http://www.emacswiki.org/ElSwankFuzzy"
  :wikipage   "http://www.emacswiki.org/ElSwankFuzzy"
  :commentary "\

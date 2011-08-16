@@ -6,7 +6,7 @@
  :maintainer ("A. Burton" . "burton@openprivacy.org")
  :provided   (mc-safe-sign-message)
  :required   ((("mailcrypt" mailcrypt)))
- :keywords   ("encryption" "mailcrypt" "message" "sign")
+ :keywords   (encryption mailcrypt message sign)
  :commentary "\
 I became tired of mc-sign signing mails that I had already encrypted.  This
 is just some lisp magic to *only* sign if I haven't encrypted.  This also

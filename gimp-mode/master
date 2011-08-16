@@ -11,7 +11,7 @@
 	       ("scheme-complete" scheme-complete)
 	       ("snippet" snippet)
 	       ("thingatpt" thingatpt)))
- :keywords   ("extensions" "gimp" "multimedia" "processes" "scheme" "tools")
+ :keywords   (extensions gimp multimedia processes scheme tools)
  :homepage   "http://niels.kicks-ass.org/gimpmode"
  :wikipage   "http://www.emacswiki.org/GimpMode"
  :commentary "\

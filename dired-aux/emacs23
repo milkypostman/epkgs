@@ -8,7 +8,7 @@
  :required   ((("diff" diff)
 	       ("dired" dired))
 	      (("gnus" mailcap)))
- :keywords   ("files")
+ :keywords   (files)
  :commentary "\
 The parts of dired mode not normally used.  This is a space-saving hack
 to avoid having to load a large mode when all that's wanted are a few

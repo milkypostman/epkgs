@@ -8,7 +8,7 @@
  :provided   (ejab ejab-connect ejab-draft ejab-misc ejab-msg ejab-msg-disp ejab-obj ejab-presence ejab-rost-disp ejab-roster ejab-utils ejab-xml)
  :required   ((("cl" cl)
 	       ("gnus" sha1)))
- :keywords   ("comm")
+ :keywords   (comm)
  :homepage   "http://ejab.sourceforge.net"
  :wikipage   "http://www.emacswiki.org/EmacsJab"
  :commentary "\

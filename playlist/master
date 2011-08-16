@@ -5,7 +5,7 @@
  :authors    (("Shawn Betts" . "sabetts@vcn.bc.ca"))
  :maintainer ("Shawn Betts" . "sabetts@vcn.bc.ca")
  :provided   (playlist)
- :keywords   ("multimedia")
+ :keywords   (multimedia)
  :commentary "\
 Maintain a playlist and play songs.
 to run:

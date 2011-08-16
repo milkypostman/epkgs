@@ -6,7 +6,7 @@
  :maintainer ("Drew Adams")
  :provided   (ediff+)
  :required   ((("ediff" ediff-help ediff-util ediff-wind)))
- :keywords   ("comparing" "merging" "patching" "version control")
+ :keywords   (comparing merging patching version\ control)
  :commentary "\
 Ediff enhancements added by this library: Toggle case-sensitivity.
 

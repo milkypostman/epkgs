@@ -4,7 +4,7 @@
  :updated    "2010"
  :provided   (gnus-identities)
  :required   ((("gnus" message)))
- :keywords   ("gnus" "identities")
+ :keywords   (gnus identities)
  :homepage   "https://github.com/renard/gnus-identities"
  :commentary "\
 (see gnus-identities-change for details)")

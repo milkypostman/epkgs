@@ -9,7 +9,7 @@
  :required   ((("cl" cl)
 	       ("easymenu" easymenu)
 	       ("emacs-core" derived)))
- :keywords   ("mail")
+ :keywords   (mail)
  :homepage   "http://post-mode.sourceforge.net"
  :wikipage   "http://www.emacswiki.org/PostMode"
  :commentary "\

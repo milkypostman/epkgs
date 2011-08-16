@@ -4,7 +4,7 @@
  :license    "GPL-3"
  :maintainer ("FSF")
  :provided   (doctor)
- :keywords   ("games")
+ :keywords   (games)
  :commentary "\
 The single entry point `doctor', simulates a Rogerian analyst using
 phrase-production techniques similar to the classic ELIZA demonstration

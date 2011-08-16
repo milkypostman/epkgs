@@ -5,7 +5,7 @@
  :authors    (("Zajcev Evgeny" . "zevlg@yandex.ru"))
  :maintainer ("none, mail me if you want to maintain this code.")
  :provided   (himarks-mode)
- :keywords   ("tools")
+ :keywords   (tools)
  :homepage   "http://lgarc.narod.ru/xemacs"
  :commentary "\
 Just highlights markers.

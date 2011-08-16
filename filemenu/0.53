@@ -6,7 +6,7 @@
  :maintainer ("Will Mengarini" . "seldon@eskimo.com")
  :provided   (filemenu)
  :required   ((("cl" cl)))
- :keywords   ("abbrev" "filemenu" "files" "menu")
+ :keywords   (abbrev filemenu files menu)
  :homepage   "http://www.eskimo.com/~seldon"
  :commentary "\
 This package lets you set up one or more menus of names of files you visit

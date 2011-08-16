@@ -7,7 +7,7 @@
  :provided   (attic)
  :required   ((("ediff" ediff)
 	       ("tellib" tellib)))
- :keywords   ("backup" "files" "tools")
+ :keywords   (backup files tools)
  :homepage   "http://members.a1.net/t.link/CompEmacsAttic.html"
  :commentary "\
 ;---(:excerpt-beg attic :name desc)---

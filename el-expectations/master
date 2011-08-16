@@ -7,7 +7,7 @@
  :provided   (el-expectations)
  :required   ((("cl" cl))
 	      (("el-mock" el-mock)))
- :keywords   ("lisp" "testing" "unittest")
+ :keywords   (lisp testing unittest)
  :homepage   "http://www.emacswiki.org/EmacsLispExpectations"
  :wikipage   "http://www.emacswiki.org/EmacsLispExpectations"
  :commentary "\

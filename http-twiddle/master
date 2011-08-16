@@ -8,7 +8,7 @@
  :required   ((("cl" cl)
 	       ("easy-mmode" easy-mmode)
 	       ("emacs-core" font-lock)))
- :keywords   ("http" "rest" "soap")
+ :keywords   (http rest soap)
  :homepage   "https://github.com/hassy/http-twiddle"
  :commentary "\
 This is a program for testing hand-written HTTP requests. You write

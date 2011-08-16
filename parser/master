@@ -8,7 +8,7 @@
  :required   ((("cl" cl)
 	       ("closure" closure)
 	       ("help" help-fns)))
- :keywords   ("parser")
+ :keywords   (parser)
  :homepage   "http://www.emacswiki.org/ParserCompiler"
  :wikipage   "http://www.emacswiki.org/ParserCompiler"
  :commentary "\

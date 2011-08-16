@@ -6,7 +6,7 @@
  :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
  :provided   (display-hatebu)
  :required   ((("cl" cl)))
- :keywords   ("hypermedia")
+ :keywords   (hypermedia)
  :commentary "\
 はてなブックマークでブックマークされた数をモードラインに表示します。
 

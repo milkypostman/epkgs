@@ -9,7 +9,7 @@
 	       ("cl" cl)
 	       ("finder" finder)
 	       ("lisp-mnt" lisp-mnt)))
- :keywords   ("docs" "lisp" "maint")
+ :keywords   (docs lisp maint)
  :homepage   "http://user42.tuxfamily.org/checkdoc-keywords/index.html"
  :commentary "\
 This spot of code extends M-x checkdoc to check that Keywords: contains

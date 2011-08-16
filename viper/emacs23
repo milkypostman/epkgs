@@ -8,7 +8,7 @@
  :required   ((("advice" advice)
 	       ("reporter" reporter)
 	       ("ring" ring)))
- :keywords   ("emulations")
+ :keywords   (emulations)
  :wikipage   "http://www.emacswiki.org/ViperMode"
  :commentary "\
 Viper is a full-featured Vi emulator for Emacs and XEmacs.  It emulates and

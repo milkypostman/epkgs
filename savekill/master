@@ -6,7 +6,7 @@
  :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
  :provided   (savekill)
  :required   ((("cl" cl)))
- :keywords   ("tools")
+ :keywords   (tools)
  :commentary "\
 Save kill ring to disk every time `kill-ring' is updated.
 It is a risk hedge of Emacs sudden death.")

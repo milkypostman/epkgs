@@ -4,7 +4,7 @@
  :authors    (("Dinesh G Dutt" . "ddutt@cisco.com"))
  :maintainer ("Dinesh G Dutt" . "ddutt@cisco.com")
  :provided   (apm)
- :keywords   ("apm" "system")
+ :keywords   (apm system)
  :commentary "\
 This module allows APM to be used from within (X)Emacs. APM is the power
 management module available on Linux machines running on PCs. APM can be

@@ -3,4 +3,4 @@
  :updated    "2001"
  :authors    (("Alex Schroeder" . "alex@gnu.org"))
  :maintainer ("Alex Schroeder" . "alex@gnu.org")
- :keywords   ("lisp"))
+ :keywords   (lisp))

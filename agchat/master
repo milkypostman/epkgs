@@ -6,7 +6,7 @@
  :maintainer (nil . "friedman@splode.com")
  :provided   (agchat)
  :required   ((("comint" comint)))
- :keywords   ("communication" "extensions")
+ :keywords   (communication extensions)
  :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
  :commentary "\
 AgChat is a chat system written by silver Harloe <silver@silverchat.com>.

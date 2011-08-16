@@ -15,7 +15,7 @@
 	       ("second-sel" second-sel)
 	       ("unaccent" unaccent)
 	       ("w32browser-dlgopen" w32browser-dlgopen)))
- :keywords   ("convenience" "internal" "local")
+ :keywords   (convenience internal local)
  :homepage   "http://www.emacswiki.org/HelpMenuBarPlus"
  :wikipage   "http://www.emacswiki.org/HelpMenuBarPlus"
  :commentary "\

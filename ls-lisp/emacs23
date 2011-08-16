@@ -6,7 +6,7 @@
  :maintainer ("FSF")
  :provided   (ls-lisp)
  :required   ((("cl" cl)))
- :keywords   ("dired" "unix")
+ :keywords   (dired unix)
  :wikipage   "http://www.emacswiki.org/LsLisp"
  :commentary "\
 OVERVIEW ==========================================================

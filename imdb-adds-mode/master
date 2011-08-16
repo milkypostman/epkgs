@@ -4,6 +4,6 @@
  :license    "GPL-2"
  :provided   (imdb-adds)
  :required   ((("easymenu" easymenu)))
- :keywords   ("additions" "imdb" "major-mode" "movies" "submission")
+ :keywords   (additions imdb major-mode movies submission)
  :homepage   "http://home.snafu.de/ohei"
  :wikipage   "http://www.emacswiki.org/IMDbAddsMode")

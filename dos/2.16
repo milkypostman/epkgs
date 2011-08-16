@@ -5,7 +5,7 @@
  :maintainer ("Arni Magnusson")
  :provided   (dos)
  :required   ((("outline" outline)))
- :keywords   ("languages")
+ :keywords   (languages)
  :homepage   "http://www.emacswiki.org/DosMode"
  :wikipage   "http://www.emacswiki.org/DosMode"
  :commentary "\

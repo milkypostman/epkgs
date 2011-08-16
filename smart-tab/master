@@ -8,7 +8,7 @@
  :maintainer ("Daniel Hackney" . "dan@haxney.org")
  :provided   (smart-tab)
  :required   ((("easy-mmode" easy-mmode)))
- :keywords   ("abbrev" "convenience")
+ :keywords   (abbrev convenience)
  :homepage   "https://github.com/haxney/smart-tab"
  :commentary "\
 From http://www.emacswiki.org/cgi-bin/wiki/TabCompletion#toc2. There are a

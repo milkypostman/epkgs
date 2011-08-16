@@ -8,7 +8,7 @@
  :provided   (compile-bookmarks)
  :required   ((("compile" compile)
 	       ("recentf" recentf)))
- :keywords   ("processes" "tools")
+ :keywords   (processes tools)
  :homepage   "http://nschum.de/src/emacs/compile-bookmarks"
  :wikipage   "http://www.emacswiki.org/CompileBookmarks"
  :commentary "\

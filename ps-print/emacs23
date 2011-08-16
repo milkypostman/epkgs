@@ -12,7 +12,7 @@
 	       ("emacs-core" printing)
 	       ("lpr" lpr)
 	       ("zeroconf" zeroconf)))
- :keywords   ("postscript" "print" "wp")
+ :keywords   (postscript print wp)
  :wikipage   "http://www.emacswiki.org/PsPrint"
  :commentary "\
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

@@ -6,7 +6,7 @@
  :maintainer ("Benjamin Drieu" . "bdrieu@april.org")
  :provided   (tail)
  :required   ((("electric" electric)))
- :keywords   ("tools")
+ :keywords   (tools)
  :homepage   "http://www.grassouille.org/emacs/index.en.html"
  :wikipage   "http://www.emacswiki.org/TailEl"
  :commentary "\

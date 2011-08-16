@@ -6,7 +6,7 @@
  :maintainer ("Drew Adams")
  :provided   (face-remap+)
  :required   ((("emacs-core" face-remap)))
- :keywords   ("face" "font" "frame" "window")
+ :keywords   (face font frame window)
  :commentary "\
 Commands `text-scale-decrease', `text-scale-increase', and
  `text-scale-adjust' (bound to `C-x C--', `C-x C-+', `C-x C-=', and

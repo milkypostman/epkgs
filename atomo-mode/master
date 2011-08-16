@@ -8,5 +8,5 @@
  :provided   (atomo-mode)
  :required   ((("emacs-core" font-lock)
 	       ("newcomment" newcomment)))
- :keywords   ("atomo" "major" "mode")
+ :keywords   (atomo major mode)
  :homepage   "https://github.com/citizen428/atomo-mode")

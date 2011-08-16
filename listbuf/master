@@ -5,7 +5,7 @@
  :authors    (("Noah Friedman" . "friedman@splode.com"))
  :maintainer (nil . "friedman@splode.com")
  :provided   (listbuf)
- :keywords   ("extensions" "frobs" "gratuitous knobs")
+ :keywords   (extensions frobs gratuitous\ knobs)
  :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
  :commentary "\
 The standard list-buffers command is a primitive in Emacs 18, but no

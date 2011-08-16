@@ -5,6 +5,6 @@
  :authors    (("Lars R. Clausen" . "lrclause@cs.uiuc.edu"))
  :maintainer ("Lars R. Clausen" . "lrclause@cs.uiuc.edu")
  :provided   (save-history)
- :keywords   ("convenience")
+ :keywords   (convenience)
  :commentary "\
 Hook-functions to load and save minibuffer histories between sessions.")

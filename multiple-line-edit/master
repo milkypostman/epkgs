@@ -6,7 +6,7 @@
  :provided   (multiple-line-edit)
  :required   ((("cl" cl)
 	       ("easymenu" easymenu)))
- :keywords   ("abbrev" "convenience" "emulations" "wp")
+ :keywords   (abbrev convenience emulations wp)
  :homepage   "https://github.com/k-talo/multiple-line-edit.el"
  :commentary "\
 Overview

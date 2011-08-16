@@ -7,5 +7,5 @@
  :maintainer ("myuhe")
  :provided   (auto-complete-acr ess-R-object-popup)
  :required   ((("auto-complete" auto-complete)))
- :keywords   ("auto-complete")
+ :keywords   (auto-complete)
  :homepage   "https://github.com/myuhe/auto-complete-acr.el")

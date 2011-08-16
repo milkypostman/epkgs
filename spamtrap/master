@@ -4,7 +4,7 @@
  :license    "GPL-2"
  :authors    (("Lars Clausen" . "lrclause@shasta.cs.uiuc.edu"))
  :maintainer ("Lars Clausen" . "lrclause@shasta.cs.uiuc.edu")
- :keywords   ("mail")
+ :keywords   (mail)
  :commentary "\
 This code is intended to be run when a message is being sent.  It will
 check if any receiver host is a spam trap (by matching `spam-trap-regexp'

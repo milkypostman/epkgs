@@ -5,7 +5,7 @@
  :authors    (("Kim F. Storm" . "storm@cua.dk"))
  :maintainer ("Kim F. Storm" . "storm@cua.dk")
  :provided   (keypad)
- :keywords   ("convenience" "keyboard")
+ :keywords   (convenience keyboard)
  :commentary "\
 The keypad package allows easy binding of the keypad keys to
 various commonly used sets of commands.

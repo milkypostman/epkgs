@@ -8,7 +8,7 @@
  :provided   (pod-mode)
  :required   ((("cl" cl)
 	       ("perldoc" perldoc)))
- :keywords   ("perl" "pod")
+ :keywords   (perl pod)
  :homepage   "https://github.com/renormalist/emacs-pod-mode"
  :wikipage   "http://www.emacswiki.org/PodMode"
  :commentary "\

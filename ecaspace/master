@@ -8,7 +8,7 @@
  :required   ((("cell" cell)
 	       ("ecasound" ecasound)
 	       ("emms" jack)))
- :keywords   ("multimedia")
+ :keywords   (multimedia)
  :commentary "\
 This package implements a front-end to Mario Lang's ecasound.el
 (and therefore to Ecasound.)

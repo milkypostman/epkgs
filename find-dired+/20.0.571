@@ -12,7 +12,7 @@
 	       ("find-dired-" find-dired-))
 	      (("dired+" dired+)
 	       ("thingatpt+" thingatpt+)))
- :keywords   ("internal" "local" "matching" "tools" "unix")
+ :keywords   (internal local matching tools unix)
  :commentary "\
 Extensions to `find-dired.el'.
 

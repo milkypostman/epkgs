@@ -9,7 +9,7 @@
 	      (("faces+" faces+)
 	       ("frame-fns" frame-fns)
 	       ("menu-bar+" menu-bar+)))
- :keywords   ("faces" "help" "local")
+ :keywords   (faces help local)
  :homepage   "http://www.emacswiki.org/HighLight"
  :wikipage   "http://www.emacswiki.org/HighLight"
  :commentary "\

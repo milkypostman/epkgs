@@ -8,7 +8,7 @@
  :required   ((("cl" cl)
 	       ("json" json)
 	       ("url" url url-http)))
- :keywords   ("comm")
+ :keywords   (comm)
  :homepage   "http://www.emacswiki.org/Blip"
  :wikipage   "http://www.emacswiki.org/Blip"
  :commentary "\

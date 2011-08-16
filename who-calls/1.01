@@ -6,7 +6,7 @@
  :maintainer ("Jesper Harder" . "harder@ifa.au.dk")
  :provided   (who-calls)
  :required   ((("emacs-core" bytecomp)))
- :keywords   ("lisp")
+ :keywords   (lisp)
  :homepage   "http://www.phys.au.dk/~harder"
  :commentary "\
 `who-calls' displays all known callers of an Emacs Lisp function.

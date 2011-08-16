@@ -8,7 +8,7 @@
  :provided   (geocode)
  :required   ((("csv" csv)
 	       ("url" url)))
- :keywords   ("convenience")
+ :keywords   (convenience)
  :homepage   "https://github.com/hober/geocode-e"
  :commentary "\
 This is my initial, very rough cut of an Elisp API client for

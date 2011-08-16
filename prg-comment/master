@@ -6,7 +6,7 @@
  :maintainer ("Aurélien Tisné" . "aurelien.tisne@free.fr")
  :provided   (prg-comment)
  :required   ((("tempo" tempo)))
- :keywords   ("comments" "convenience")
+ :keywords   (comments convenience)
  :homepage   "http://aurelien.tisne.free.fr/emacs-pages/emacs/prg-comment-doc.html"
  :commentary "\
 This package defines headers and comment facilities that help the

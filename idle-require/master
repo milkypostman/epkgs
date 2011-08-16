@@ -6,7 +6,7 @@
  :authors    (("Nikolaj Schumacher" . "bugs@nschum.de"))
  :maintainer ("Nikolaj Schumacher" . "bugs@nschum.de")
  :provided   (idle-require)
- :keywords   ("internal")
+ :keywords   (internal)
  :homepage   "http://nschum.de/src/emacs/idle-require"
  :commentary "\
 Add the following to your .emacs file:

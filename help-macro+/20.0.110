@@ -7,7 +7,7 @@
  :provided   (help-macro+)
  :required   ((("emacs-core" backquote)
 	       ("help-macro" help-macro)))
- :keywords   ("help")
+ :keywords   (help)
  :commentary "\
 Extensions to `help-macro.el'.
 

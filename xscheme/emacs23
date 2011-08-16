@@ -5,7 +5,7 @@
  :maintainer ("FSF")
  :provided   (xscheme)
  :required   ((("scheme" scheme)))
- :keywords   ("languages" "lisp")
+ :keywords   (languages lisp)
  :commentary "\
 A major mode for interacting with MIT Scheme.
 

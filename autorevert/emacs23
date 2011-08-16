@@ -7,7 +7,7 @@
  :provided   (autorevert)
  :required   ((("cl" cl)
 	       ("timer" timer)))
- :keywords   ("convenience")
+ :keywords   (convenience)
  :commentary "\
 Introduction:
 

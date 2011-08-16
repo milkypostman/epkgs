@@ -5,7 +5,7 @@
  :authors    (("Markus Triska" . "markus.triska@gmx.at"))
  :maintainer ("FSF")
  :provided   (linum)
- :keywords   ("convenience")
+ :keywords   (convenience)
  :homepage   "http://stud4.tuwien.ac.at/~e0225855/linum/linum.html"
  :commentary "\
 Display line numbers for the current buffer.

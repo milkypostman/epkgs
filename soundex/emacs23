@@ -5,7 +5,7 @@
  :authors    (("Christian Plaunt" . "chris@bliss.berkeley.edu"))
  :maintainer ("FSF")
  :provided   (soundex)
- :keywords   ("matching")
+ :keywords   (matching)
  :commentary "\
 The Soundex algorithm maps English words into representations of
 how they sound.  Words with vaguely similar sound map to the same string.")

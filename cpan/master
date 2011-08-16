@@ -7,7 +7,7 @@
 	       ("rx" rx)
 	       ("url" url-util)
 	       ("woman" woman)))
- :keywords   ("perl")
+ :keywords   (perl)
  :homepage   "https://github.com/imakado/cpan.el"
  :commentary "\
 Tested on Emacs 22

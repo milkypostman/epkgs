@@ -5,7 +5,7 @@
  :authors    (("Michael D. Prange" . "prange@erl.mit.edu"))
  :maintainer ("Glenn Morris" . "rgm@gnu.org")
  :provided   (fortran)
- :keywords   ("fortran" "languages")
+ :keywords   (fortran languages)
  :commentary "\
 This mode is documented in the Emacs manual.
 

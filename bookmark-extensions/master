@@ -15,7 +15,7 @@
 	       ("w3m" w3m))
 	      (("anything-delicious" anything-delicious)
 	       ("w3m" w3m-bookmark)))
- :keywords   ("annotations" "bookmarks" "delicious" "firefox" "gnus" "info" "man" "placeholders" "search" "woman")
+ :keywords   (annotations bookmarks delicious firefox gnus info man placeholders search woman)
  :homepage   "http://mercurial.intuxication.org/hg/emacs-bookmark-extension"
  :wikipage   "http://www.emacswiki.org/BookmarkExtension"
  :commentary "\

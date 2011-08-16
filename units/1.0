@@ -3,7 +3,7 @@
  :updated    "2002"
  :license    "GPL-1"
  :provided   (units)
- :keywords   ("conversion")
+ :keywords   (conversion)
  :commentary "\
 Dirty hack to do units conversion using units.dat from units package.
 likely buggy. Fixes/patches/flames/comments are welcome.

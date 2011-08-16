@@ -6,7 +6,7 @@
  :maintainer ("David Shilvock" . "davels@shaw.ca")
  :provided   (mirror-mode)
  :required   ((("cl" cl)))
- :keywords   ("tools")
+ :keywords   (tools)
  :homepage   "http://www.emacswiki.org/MirrorMode"
  :wikipage   "http://www.emacswiki.org/MirrorMode"
  :commentary "\

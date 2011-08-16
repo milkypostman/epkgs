@@ -6,7 +6,7 @@
  :authors    (("Tom Tromey" . "tromey@redhat.com"))
  :maintainer ("Tom Tromey" . "tromey@redhat.com")
  :provided   (epresent)
- :keywords   ("gui")
+ :keywords   (gui)
  :homepage   "https://github.com/technomancy/epresent"
  :commentary "\
 This is a simple presentation mode for Emacs.  It works best in

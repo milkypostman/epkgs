@@ -5,7 +5,7 @@
  :authors    (("Jorgen Schaefer"))
  :maintainer ("Jorgen Schaefer")
  :provided   (idlehelp)
- :keywords   ("help")
+ :keywords   (help)
  :commentary "\
 A help system that displays help information when you're idle.
 Modeled after eldoc, but extensible.

@@ -5,7 +5,7 @@
  :authors    (("jerry" . "unidevel@yahoo.com.cn"))
  :maintainer ("Andy Stewart" . "lazycat.manatee@gmail.com")
  :provided   (oicq)
- :keywords   ("china" "oicq" "qq" "tecent")
+ :keywords   (china oicq qq tecent)
  :homepage   "http://www.emacswiki.org/Oicq"
  :wikipage   "http://www.emacswiki.org/Oicq"
  :commentary "\

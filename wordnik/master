@@ -8,7 +8,7 @@
  :provided   (wordnik)
  :required   ((("json" json)
 	       ("url" url)))
- :keywords   ("convenience")
+ :keywords   (convenience)
  :homepage   "http://edward.oconnor.cx/elisp"
  :commentary "\
 Emacs client library for Wordnik's API.

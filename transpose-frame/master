@@ -3,7 +3,7 @@
  :authors    (("S. Irie"))
  :maintainer ("S. Irie")
  :provided   (transpose-frame)
- :keywords   ("window")
+ :keywords   (window)
  :homepage   "http://www.emacswiki.org/TransposeFrame"
  :wikipage   "http://www.emacswiki.org/TransposeFrame"
  :commentary "\

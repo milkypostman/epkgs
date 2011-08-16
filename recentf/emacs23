@@ -8,7 +8,7 @@
  :required   ((("easymenu" easymenu)
 	       ("timer" timer)
 	       ("tree-widget" tree-widget)))
- :keywords   ("files")
+ :keywords   (files)
  :commentary "\
 This package maintains a menu for visiting files that were operated
 on recently.  When enabled a new \"Open Recent\" sub menu is

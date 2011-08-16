@@ -6,7 +6,7 @@
  :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
  :provided   (unify-buffer)
  :required   ((("cl" cl)))
- :keywords   ("convenience")
+ :keywords   (convenience)
  :commentary "\
 Concatenate multiple buffers into one buffer.
 It is useful to view multiple buffers simultaneously.")

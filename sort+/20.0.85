@@ -7,7 +7,7 @@
  :provided   (sort+)
  :required   ((("cl" cl)
 	       ("emacs-core" sort)))
- :keywords   ("sorting" "tools" "unix")
+ :keywords   (sorting tools unix)
  :commentary "\
 Extensions to `sort.el'.
 

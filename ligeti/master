@@ -7,4 +7,4 @@
  :provided   (ligeti)
  :required   ((("cl" cl)
 	       ("csound-x" csound-x)))
- :keywords   ("multimedia"))
+ :keywords   (multimedia))

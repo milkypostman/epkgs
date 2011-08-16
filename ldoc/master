@@ -7,7 +7,7 @@
  :maintainer ("David O'Toole" . "dto@gnu.org")
  :provided   (ldoc)
  :required   ((("org-mode" org)))
- :keywords   ("lisp" "tools")
+ :keywords   (lisp tools)
  :commentary "\
 LDOC reads Common Lisp and Emacs Lisp files, extracting headers,
 definitions, and docstrings. It works with org-mode to produce

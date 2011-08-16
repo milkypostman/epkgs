@@ -10,7 +10,7 @@
 	       ("button" button)
 	       ("cl" cl)
 	       ("emacs-core" env)))
- :keywords   ("help")
+ :keywords   (help)
  :wikipage   "http://www.emacswiki.org/ManMode"
  :commentary "\
 This code provides a function, `man', with which you can browse

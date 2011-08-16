@@ -5,7 +5,7 @@
  :authors    (("Daniel Pfeiffer" . "occitan@esperanto.org"))
  :maintainer ("Daniel Pfeiffer" . "occitan@esperanto.org")
  :provided   (copyright)
- :keywords   ("maint" "tools")
+ :keywords   (maint tools)
  :commentary "\
 Allows updating the copyright year and above mentioned GPL version manually
 or when saving a file.

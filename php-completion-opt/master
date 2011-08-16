@@ -7,7 +7,7 @@
  :maintainer ("kitokitoki" . "morihenotegami@gmail.com")
  :provided   (php-completion-opt)
  :required   ((("php-completion" php-completion)))
- :keywords   ("convenience")
+ :keywords   (convenience)
  :commentary "\
 Change Log
 1.0.2: phpcmpopt-manual-vertical-pop-up (垂直分割) を追加。

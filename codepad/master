@@ -7,7 +7,7 @@
  :provided   (codepad)
  :required   ((("cl" cl)
 	       ("url" url-http)))
- :keywords   ("codepad" "paste" "pastebin" "pastie")
+ :keywords   (codepad paste pastebin pastie)
  :homepage   "https://github.com/ruediger/emacs-codepad"
  :commentary "\
 This code can be used to paste code to codepad.org.

@@ -5,7 +5,7 @@
  :provided   (anything-ack)
  :required   ((("anything" anything)
 	       ("grep" grep)))
- :keywords   ("convenience" "unix")
+ :keywords   (convenience unix)
  :commentary "\
 Do ack in anything buffer. When we search information with ack,
 we often narrow the candidates. Let's use `anything' to do it.

@@ -5,4 +5,4 @@
  :authors    (("bzg AT altern DOT org"))
  :maintainer ("bzg AT altern DOT org")
  :provided   (bibtex-utils)
- :keywords   ("bibtex"))
+ :keywords   (bibtex))

@@ -6,5 +6,5 @@
  :authors    (("Donald Ephraim Curtis" . "dcurtis@milkbox.net"))
  :maintainer ("Donald Ephraim Curtis" . "dcurtis@milkbox.net")
  :provided   (hl-sentence)
- :keywords   ("highlighting")
+ :keywords   (highlighting)
  :homepage   "https://github.com/milkypostman/hl-sentence")

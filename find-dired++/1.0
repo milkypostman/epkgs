@@ -4,6 +4,6 @@
  :maintainer ("Cedric Lallain" . "kandjar76@hotmail.com")
  :provided   (find-dired++)
  :required   ((("find-dired" find-dired)))
- :keywords   ("find-dired")
+ :keywords   (find-dired)
  :homepage   "http://www.emacswiki.org/FindDiredPlusPlus"
  :wikipage   "http://www.emacswiki.org/FindDiredPlusPlus")

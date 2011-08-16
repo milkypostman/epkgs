@@ -7,7 +7,7 @@
  :provided   (ange-ftp)
  :required   ((("comint" comint)
 	       ("emacs-core" backquote)))
- :keywords   ("comm")
+ :keywords   (comm)
  :wikipage   "http://www.emacswiki.org/AngeFtp"
  :commentary "\
 This package attempts to make accessing files and directories using FTP

@@ -10,7 +10,7 @@
 	       ("imenu" imenu)
 	       ("paren" paren)
 	       ("which-func" which-func)))
- :keywords   ("cobol" "guardian" "languages" "nsk" "tandem")
+ :keywords   (cobol guardian languages nsk tandem)
  :commentary "\
 NMCOBOL -- COmmon Business Oriented Language - in ?TANDEM line format.
 

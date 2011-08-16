@@ -6,7 +6,7 @@
  :maintainer ("Christopher J. Madsen" . "chris_madsen@geocities.com")
  :provided   (decipher)
  :required   ((("cl" cl)))
- :keywords   ("games")
+ :keywords   (games)
  :wikipage   "http://www.emacswiki.org/DecipherMode"
  :commentary "\
 Quick Start:

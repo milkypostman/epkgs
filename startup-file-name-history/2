@@ -5,7 +5,7 @@
  :authors    (("Kevin Ryde" . "user42@zip.com.au"))
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (startup-file-name-history)
- :keywords   ("files")
+ :keywords   (files)
  :commentary "\
 This is a spot of code to get filenames passed on the Emacs command line
 added to `file-name-history' (as well as opened in buffers in the usual

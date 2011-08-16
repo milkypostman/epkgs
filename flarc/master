@@ -7,7 +7,7 @@
  :provided   (flarc)
  :required   ((("radio" radio)
 	       (nil usb)))
- :keywords   ("multimedia")
+ :keywords   (multimedia)
  :commentary "\
 This is FLARC!
 

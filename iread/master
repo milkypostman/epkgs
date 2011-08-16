@@ -6,7 +6,7 @@
  :maintainer ("Paul M. Rodriguez" . "paulmrodriguez@gmail.com")
  :provided   (iread)
  :required   ((("cl" cl)))
- :keywords   ("emacs")
+ :keywords   (emacs)
  :homepage   "http://gopher.ruricolist.com:70/lisp"
  :wikipage   "http://www.emacswiki.org/IncrementalRead"
  :commentary "\

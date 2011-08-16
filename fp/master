@@ -6,7 +6,7 @@
  :authors    (("Stephen Lee" . "lihjhengguang@gmail.com"))
  :maintainer ("Stephen Lee" . "lihjhengguang@gmail.com")
  :provided   (fp)
- :keywords   ("lisp")
+ :keywords   (lisp)
  :homepage   "https://github.com/qingl/fpdotel"
  :commentary "\
 This file provides some functions which I find useful, but may not perform

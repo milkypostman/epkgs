@@ -10,7 +10,7 @@
 	       ("windmove" windmove))
 	      (("redo" redo)
 	       ("redo+" redo+)))
- :keywords   ("emulation" "vim")
+ :keywords   (emulation vim)
  :homepage   "http://bitbucket.org/lyro/vim-mode"
  :wikipage   "http://www.emacswiki.org/VimMode"
  :commentary "\

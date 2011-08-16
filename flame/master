@@ -6,7 +6,7 @@
 	      ("Noah Friedman" . "friedman@splode.com"))
  :maintainer ("Noah Friedman" . "friedman@splode.com")
  :provided   (flame friedman-flame)
- :keywords   ("games")
+ :keywords   (games)
  :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
  :commentary "\
 This program was inspired from a version written in 1986 by

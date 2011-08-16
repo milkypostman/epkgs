@@ -5,7 +5,7 @@
  :authors    (("Matthieu Devin" . "devin@lucid.com"))
  :maintainer ("FSF")
  :provided   (delsel)
- :keywords   ("convenience" "emulations")
+ :keywords   (convenience emulations)
  :commentary "\
 This file makes the active region be pending delete, meaning that
 text inserted while the region is active will replace the region contents.

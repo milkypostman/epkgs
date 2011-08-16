@@ -12,7 +12,7 @@
 	       ("json" json)
 	       ("org-mode" org org-agenda)
 	       ("url" url-util)))
- :keywords   ("comm")
+ :keywords   (comm)
  :homepage   "http://julien.danjou.info/google-maps-el.html"
  :commentary "\
 None")

@@ -4,5 +4,5 @@
  :authors    (("mooz" . "stillpedant@gmail.com"))
  :maintainer ("mooz" . "stillpedant@gmail.com")
  :provided   (js-doc)
- :keywords   ("comments" "document")
+ :keywords   (comments document)
  :homepage   "http://mooz.github.com")

@@ -8,6 +8,6 @@
  :provided   (espuds espuds-buffer espuds-helpers espuds-input espuds-misc espuds-movement espuds-region espuds-text)
  :required   ((("cl" cl)
 	       ("edmacro" edmacro)))
- :keywords   ("test")
+ :keywords   (test)
  :homepage   "https://github.com/rejeep/espuds"
  :wikipage   "http://www.emacswiki.org/Espuds")

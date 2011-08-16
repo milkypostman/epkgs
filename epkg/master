@@ -11,10 +11,11 @@
 	       ("help-mode" help-mode)
 	       ("listing" listing)
 	       ("magit" magit)
+	       ("tree-widget" tree-widget)
 	       ("vcomp" vcomp))
 	      (("oddmuse" oddmuse)
 	       ("yaoddmuse" yaoddmuse)))
- :keywords   ("git" "libraries" "packages")
+ :keywords   (git libraries packages)
  :homepage   "https://github.com/tarsius/epkg"
  :commentary "\
 The stupid package tracker for Emacs.

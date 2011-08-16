@@ -5,7 +5,7 @@
  :authors    (("Alex Schroeder" . "alex@gnu.org"))
  :maintainer ("Alex Schroeder" . "alex@gnu.org")
  :provided   (sql-transform)
- :keywords   ("sql")
+ :keywords   (sql)
  :homepage   "http://www.emacswiki.org/SqlTransform"
  :wikipage   "http://www.emacswiki.org/SqlTransform"
  :commentary "\

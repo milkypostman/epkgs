@@ -5,7 +5,7 @@
  :authors    (("Masahiko Sato" . "ms@sail.stanford.edu"))
  :maintainer ("Masahiko Sato" . "ms@sail.stanford.edu")
  :provided   (vip)
- :keywords   ("emulations")
+ :keywords   (emulations)
  :commentary "\
 A full-featured vi(1) emulator.
 

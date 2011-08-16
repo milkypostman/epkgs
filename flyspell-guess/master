@@ -6,7 +6,7 @@
  :maintainer ("Alessandro Di Marco" . "dmr@c0nc3pt.com")
  :provided   (flyspell-guess)
  :required   ((("flyspell" flyspell)))
- :keywords   ("convenience")
+ :keywords   (convenience)
  :commentary "\
 Still too lazy to write one ;-)
 

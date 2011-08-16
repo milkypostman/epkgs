@@ -8,4 +8,4 @@
  :required   ((("ange-ftp" ange-ftp)
 	       ("cl" cl)
 	       ("rmail" rmail)))
- :keywords   ("mail" "time"))
+ :keywords   (mail time))

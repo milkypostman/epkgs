@@ -6,7 +6,7 @@
  :maintainer ("FSF")
  :provided   (isearchb)
  :required   ((("iswitchb" iswitchb)))
- :keywords   ("lisp")
+ :keywords   (lisp)
  :commentary "\
 This module allows you to switch to buffers even faster than with
 iswitchb!  It is not intended to replace it, however, as it works

@@ -22,7 +22,7 @@
 	       ("url" url-parse url-util)
 	       ("zeroconf" zeroconf)
 	       (nil timer-funcs)))
- :keywords   ("comm" "processes")
+ :keywords   (comm processes)
  :homepage   "http://savannah.gnu.org/projects/tramp"
  :wikipage   "http://www.emacswiki.org/TrampMode"
  :commentary "\

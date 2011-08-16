@@ -6,7 +6,7 @@
  :maintainer ("FSF")
  :provided   (flyspell)
  :required   ((("ispell" ispell)))
- :keywords   ("convenience")
+ :keywords   (convenience)
  :wikipage   "http://www.emacswiki.org/FlySpell"
  :commentary "\
 Flyspell is a minor Emacs mode performing on-the-fly spelling

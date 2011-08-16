@@ -6,7 +6,7 @@
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (perl-pod-gt)
  :required   ((("emacs-core" overlay)))
- :keywords   ("wp")
+ :keywords   (wp)
  :wikipage   "http://www.emacswiki.org/PerlPodGt"
  :commentary "\
 This spot of code helps when writing Perl POD markup forms like C<...>,

@@ -5,5 +5,5 @@
  :authors    (("Stefan Hornburg" . "racke@gundel.han.de"))
  :maintainer ("Stefan Hornburg" . "racke@gundel.han.de")
  :provided   (ginel)
- :keywords   ("extensions")
+ :keywords   (extensions)
  :homepage   "http://www.han.de/~racke/ginel")

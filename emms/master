@@ -17,7 +17,7 @@
 	       ("url" url)
 	       ("w3m" w3m)
 	       ("xml" xml)))
- :keywords   ("emms" "mpeg" "multimedia")
+ :keywords   (emms mpeg multimedia)
  :homepage   "http://www.gnu.org/software/emms"
  :wikipage   "http://www.emacswiki.org/EMMS"
  :commentary "\

@@ -6,7 +6,7 @@
  :maintainer ("Michael Abraham Shulman" . "viritrilbia@users.sourceforge.net")
  :provided   (tagbody)
  :required   ((("cl" cl)))
- :keywords   ("extensions")
+ :keywords   (extensions)
  :commentary "\
 This file defines the equivalent of the Common Lisp `tagbody'
 special form for Emacs Lisp.")

@@ -5,7 +5,7 @@
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")
  :provided   (find-dired-)
- :keywords   ("internal" "local" "matching" "tools" "unix")
+ :keywords   (internal local matching tools unix)
  :commentary "\
 Extensions to `find-dired.el'.
 

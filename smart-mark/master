@@ -8,7 +8,7 @@
  :provided   (smart-mark)
  :required   ((("sgml-mode" sgml-mode)
 	       ("thingatpt" thingatpt)))
- :keywords   ("convenience")
+ :keywords   (convenience)
  :homepage   "https://github.com/brianjcj/smart-mark"
  :commentary "\
 Simulate some vim command. Mark context in the (), <>, [], \"\", '', html tag,

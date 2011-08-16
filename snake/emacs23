@@ -7,4 +7,4 @@
  :provided   (snake)
  :required   ((("cl" cl)
 	       ("gamegrid" gamegrid)))
- :keywords   ("games"))
+ :keywords   (games))

@@ -8,7 +8,7 @@
  :required   ((("cl" cl)
 	       ("desktop" desktop)
 	       ("dired-aux" dired-aux)))
- :keywords   ("files")
+ :keywords   (files)
  :wikipage   "http://www.emacswiki.org/DiredMode"
  :commentary "\
 This is a major mode for directory browsing and editing.  It is

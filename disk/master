@@ -7,7 +7,7 @@
  :provided   (disk)
  :required   ((("cl" cl)
 	       ("rx" rx)))
- :keywords   ("hardware")
+ :keywords   (hardware)
  :wikipage   "http://www.emacswiki.org/DiskKey"
  :commentary "\
 This program provides an alternative disk mounting tool. It is

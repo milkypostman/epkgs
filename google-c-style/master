@@ -3,7 +3,7 @@
  :license    "GPL-1"
  :provided   (google-c-style)
  :required   ((("cc-mode" cc-defs)))
- :keywords   ("c" "tools")
+ :keywords   (c tools)
  :homepage   "http://code.google.com/p/google-styleguide"
  :commentary "\
 Provides the google C/C++ coding style. You may wish to add

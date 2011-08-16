@@ -8,7 +8,7 @@
  :required   ((("cl" cl)
 	       ("popup" popup)
 	       ("pos-tip" pos-tip)))
- :keywords   ("tooltip")
+ :keywords   (tooltip)
  :commentary "\
 This program provides some functions which are compatible with the
 ones provided by popup.el. User can easily replace popup.el's tooltip

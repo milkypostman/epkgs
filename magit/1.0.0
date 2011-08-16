@@ -14,7 +14,7 @@
 	       ("log-edit" log-edit)
 	       ("pcomplete" pcomplete)
 	       ("view" view)))
- :keywords   ("tools")
+ :keywords   (tools)
  :homepage   "https://github.com/magit/magit"
  :wikipage   "http://www.emacswiki.org/Magit"
  :commentary "\

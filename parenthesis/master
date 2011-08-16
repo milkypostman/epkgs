@@ -6,7 +6,7 @@
 	      ("plus" . "mlb33828@nifty.com"))
  :maintainer ("khiker" . "khiker.mail+elisp@gmail.com")
  :provided   (parenthesis)
- :keywords   ("lisp")
+ :keywords   (lisp)
  :commentary "\
 Insert pair of parenthesis.
 If region is active and transient-mark-mode is not nil, insert

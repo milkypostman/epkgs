@@ -9,7 +9,7 @@
  :required   ((("ansi-color" ansi-color)
 	       ("cl" cl)
 	       ("thingatpt" thingatpt)))
- :keywords   ("tools")
+ :keywords   (tools)
  :homepage   "https://github.com/hron/yari.el"
  :wikipage   "http://www.emacswiki.org/YARI"
  :commentary "\

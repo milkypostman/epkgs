@@ -5,7 +5,7 @@
  :authors    (("Daniel Hackney" . "dan@haxney.org"))
  :maintainer ("Daniel Hackney" . "dan@haxney.org")
  :provided   (anything-eproject)
- :keywords   ("convenience" "project")
+ :keywords   (convenience project)
  :commentary "\
 Allows opening and closing eproject projects through anything, as well as
 selection of files within a project.

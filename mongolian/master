@@ -4,7 +4,7 @@
  :license    "GPL-3"
  :authors    (("John Sturdy" . "john.sturdy@ul.ie"))
  :maintainer ("John Sturdy" . "john.sturdy@ul.ie")
- :keywords   ("languages")
+ :keywords   (languages)
  :commentary "\
 According to the layout diagrams available from the OLPC project,
 and others, the Mongolian Cyrillic keyboard layout is quite, but

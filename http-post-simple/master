@@ -5,7 +5,7 @@
  :provided   (http-post-simple)
  :required   ((("cl" cl)
 	       ("url" url url-http)))
- :keywords   ("comm" "data" "hypermedia" "processes")
+ :keywords   (comm data hypermedia processes)
  :commentary "\
 Provides ways to use the url library to perform HTTP POST requests.
 See the documentation to `http-post-simple' for more information.

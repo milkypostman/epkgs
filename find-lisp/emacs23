@@ -6,7 +6,7 @@
  :maintainer ("Peter Breton")
  :provided   (find-lisp)
  :required   ((("dired" dired)))
- :keywords   ("unix")
+ :keywords   (unix)
  :commentary "\
 This is a very generalized form of find; it basically implements a
 recursive directory descent. The conditions which bound the search

@@ -8,7 +8,7 @@
  :provided   (shell)
  :required   ((("ansi-color" ansi-color)
 	       ("comint" comint)))
- :keywords   ("processes")
+ :keywords   (processes)
  :wikipage   "http://www.emacswiki.org/ShellMode"
  :commentary "\
 This file defines a shell-in-a-buffer package (shell mode) built on

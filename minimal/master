@@ -6,7 +6,7 @@
  :authors    (("Dan Davison" . "dandavison7@gmail.com"))
  :maintainer ("Dan Davison" . "dandavison7@gmail.com")
  :provided   (minimal)
- :keywords   ("appearance" "minimalism")
+ :keywords   (appearance minimalism)
  :homepage   "https://github.com/dandavison/minimal"
  :wikipage   "http://www.emacswiki.org/MinimalMode"
  :commentary "\

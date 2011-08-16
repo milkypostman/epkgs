@@ -3,7 +3,7 @@
  :authors    (("Kalle Niemitalo" . "tosi@stekt.oulu.fi"))
  :maintainer ("Kalle Niemitalo" . "tosi@stekt.oulu.fi")
  :provided   (sie)
- :keywords   ("lisp" "local")
+ :keywords   (lisp local)
  :commentary "\
 This file implements an interpreter of a Scheme-like language.
 But unlike real Scheme, it isn't properly tail-recursive.

@@ -6,7 +6,7 @@
  :maintainer ("Avi Rozen" . "avi.rozen@gmail.com")
  :provided   (repository-root)
  :required   ((("widget" wid-edit widget)))
- :keywords   ("project" "repository" "root")
+ :keywords   (project repository root)
  :commentary "\
 This package provides a utility for deducing the repository root directory
 for a given file, based on pre-defined or user provided matching criteria.

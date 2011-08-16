@@ -3,6 +3,6 @@
  :updated    "2006"
  :license    "GPL-2"
  :provided   (poker)
- :keywords   ("games")
+ :keywords   (games)
  :homepage   "http://www.emacswiki.org/EmacsPoker"
  :wikipage   "http://www.emacswiki.org/EmacsPoker")

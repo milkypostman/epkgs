@@ -8,7 +8,7 @@
  :required   ((("custom" custom)
 	       ("grep" grep)
 	       ("hilit-chg" hilit-chg)))
- :keywords   ("grep")
+ :keywords   (grep)
  :homepage   "http://www.emacswiki.org/GrepEd"
  :wikipage   "http://www.emacswiki.org/GrepEd"
  :commentary "\

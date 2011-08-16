@@ -5,7 +5,7 @@
  :authors    (("Barry A. Warsaw"))
  :maintainer ("FSF")
  :provided   (elp)
- :keywords   ("debugging" "lisp" "tools")
+ :keywords   (debugging lisp tools)
  :commentary "\
 If you want to profile a bunch of functions, set elp-function-list
 to the list of symbols, then do a M-x elp-instrument-list.  This

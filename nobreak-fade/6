@@ -7,7 +7,7 @@
  :provided   (nobreak-fade)
  :required   ((("help-mode" help-mode)
 	       ("thingatpt" thingatpt)))
- :keywords   ("convenience")
+ :keywords   (convenience)
  :homepage   "http://user42.tuxfamily.org/nobreak-fade/index.html"
  :wikipage   "http://www.emacswiki.org/NobreakFade"
  :commentary "\

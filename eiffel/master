@@ -8,7 +8,7 @@
 	       ("easymenu" easymenu)
 	       ("emacs-core" font-lock)
 	       ("imenu" imenu)))
- :keywords   ("eiffel" "languages" "oop")
+ :keywords   (eiffel languages oop)
  :homepage   "http://meltin.net/hacks/emacs"
  :commentary "\
 NEW VERSIONS

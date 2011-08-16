@@ -6,7 +6,7 @@
  :maintainer ("FSF")
  :provided   (uniquify)
  :required   ((("cl" cl)))
- :keywords   ("files")
+ :keywords   (files)
  :wikipage   "http://www.emacswiki.org/uniquify"
  :commentary "\
 Emacs's standard method for making buffer names unique adds <2>, <3>,

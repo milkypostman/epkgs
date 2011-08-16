@@ -7,7 +7,7 @@
  :provided   (twiddle)
  :required   ((("itimer" itimer)
 	       ("timer" timer)))
- :keywords   ("extensions")
+ :keywords   (extensions)
  :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
  :commentary "\
 Inspired by a similar hack by Jim Blandy <jimb@cyclic.com>.

@@ -2,7 +2,7 @@
  :license    "public-domain"
  :maintainer ("FSF")
  :provided   (studly)
- :keywords   ("games")
+ :keywords   (games)
  :commentary "\
 Functions to studlycapsify a region, word, or buffer.  Possibly the
 esoteric significance of studlycapsification escapes you; that is,

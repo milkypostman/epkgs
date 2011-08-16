@@ -7,5 +7,5 @@
  :provided   (expect)
  :required   ((("cl" cl)
 	       ("timer" timer)))
- :keywords   ("extensions" "processes")
+ :keywords   (extensions processes)
  :homepage   "http://quimby.gnus.org/elisp")

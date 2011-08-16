@@ -7,7 +7,7 @@
  :provided   (unibasic-mode)
  :required   ((("regexp-opt" regexp-opt)
 	       ("reporter" reporter)))
- :keywords   ("languages")
+ :keywords   (languages)
  :wikipage   "http://www.emacswiki.org/UniBASICMode"
  :commentary "\
 -----------

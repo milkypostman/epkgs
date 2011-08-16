@@ -4,7 +4,7 @@
  :license    "GPL-2"
  :provided   (cldoc)
  :required   ((("cl" cl)))
- :keywords   ("extensions")
+ :keywords   (extensions)
  :homepage   "http://homepage1.nifty.com/bmonkey/emacs/index-en.html"
  :commentary "\
 cldoc.el is basically an eldoc clone for Common Lisp.

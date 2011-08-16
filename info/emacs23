@@ -8,7 +8,7 @@
 	       ("cl" cl)
 	       ("emacs-core" jka-compr)
 	       ("finder" finder)))
- :keywords   ("help")
+ :keywords   (help)
  :wikipage   "http://www.emacswiki.org/Info"
  :commentary "\
 Note that nowadays we expect Info files to be made using makeinfo.

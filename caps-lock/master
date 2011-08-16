@@ -5,7 +5,7 @@
  :authors    (("John Paul Wallington" . "jpw@shootybangbang.com"))
  :maintainer ("John Paul Wallington" . "jpw@shootybangbang.com")
  :provided   (caps-lock)
- :keywords   ("convenience" "keyboard")
+ :keywords   (convenience keyboard)
  :homepage   "http://www.shootybangbang.com"
  :commentary "\
 Simulates Caps Lock.  Inspired by Hemlock on CMU Common Lisp; by

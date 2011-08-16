@@ -6,7 +6,7 @@
  :maintainer ("Dave Gillespie" . "daveg@synaptics.com")
  :provided   (cl cl-19 cl-specs)
  :required   ((("edebug" edebug)))
- :keywords   ("extensions")
+ :keywords   (extensions)
  :commentary "\
 These are extensions to Emacs Lisp that provide a degree of
 Common Lisp compatibility, beyond what is already built-in

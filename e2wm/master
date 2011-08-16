@@ -11,7 +11,7 @@
 	       ("windmove" windmove)
 	       ("window-layout" window-layout)
 	       (nil dsvn)))
- :keywords   ("tools" "window manager")
+ :keywords   (tools window\ manager)
  :homepage   "https://github.com/kiwanami/emacs-window-manager"
  :commentary "\
 EmacsにWindow管理を入れたコンセプト実装。

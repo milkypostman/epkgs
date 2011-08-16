@@ -7,7 +7,7 @@
  :provided   (flex-isearch)
  :required   ((("cl" cl)
 	       ("regexp-opt" regexp-opt)))
- :keywords   ("convenience" "search")
+ :keywords   (convenience search)
  :homepage   "http://www.emacswiki.org/FlexIsearch"
  :wikipage   "http://www.emacswiki.org/FlexIsearch"
  :commentary "\

@@ -6,7 +6,7 @@
  :maintainer ("rubikitch")
  :provided   (icicles-iswitchb)
  :required   ((("iswitchb" iswitchb)))
- :keywords   ("abbrev" "apropos" "command" "completion" "extensions" "help" "internal" "iswitchb" "local" "matching" "minibuffer" "regexp")
+ :keywords   (abbrev apropos command completion extensions help internal iswitchb local matching minibuffer regexp)
  :homepage   "http://www.emacswiki.org/IciclesIswitchb"
  :wikipage   "http://www.emacswiki.org/IciclesIswitchb"
  :commentary "\

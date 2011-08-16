@@ -6,5 +6,5 @@
 	      ("Graham Williams" . "graham.williams@cmis.csiro.au"))
  :maintainer (nil . "martin@meltin.net")
  :provided   (desire)
- :keywords   ("configuration" "setup")
+ :keywords   (configuration setup)
  :homepage   "http://meltin.net/hacks/emacs")

@@ -5,7 +5,7 @@
  :authors    (("Kevin Ryde" . "user42@zip.com.au"))
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (parasep)
- :keywords   ("convenience")
+ :keywords   (convenience)
  :homepage   "http://user42.tuxfamily.org/parasep/index.html"
  :commentary "\
 These few functions add further paragraph separators to

@@ -8,7 +8,7 @@
 	       ("easymenu" easymenu)
 	       ("find-func" find-func)
 	       ("view" view)))
- :keywords   ("help" "internal")
+ :keywords   (help internal)
  :commentary "\
 Defines `help-mode', which is the mode used by *Help* buffers, and
 associated support machinery, such as adding hyperlinks, etc.,")

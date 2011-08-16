@@ -6,7 +6,7 @@
  :maintainer ("Daniel Pfeiffer" . "occitan@esperanto.org")
  :provided   (conf-mode)
  :required   ((("newcomment" newcomment)))
- :keywords   ("conf" "ini" "java" "windows")
+ :keywords   (conf ini java windows)
  :commentary "\
 This mode is designed to edit many similar varieties of Conf/Ini files and
 Java properties.  It started out from Aurélien Tisné's ini-mode.

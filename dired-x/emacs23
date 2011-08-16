@@ -9,7 +9,7 @@
  :required   ((("dired" dired)
 	       ("dired-aux" dired-aux)
 	       ("man" man)))
- :keywords   ("dired" "extensions" "files")
+ :keywords   (dired extensions files)
  :commentary "\
 This is Sebastian Kremer's excellent dired-x.el (Dired Extra), version
 1.191, hacked up for GNU Emacs.  Redundant or conflicting material has

@@ -6,7 +6,7 @@
  :maintainer ("Markus Triska" . "markus.triska@gmx.at")
  :provided   (pointback)
  :required   ((("assoc" assoc)))
- :keywords   ("convenience")
+ :keywords   (convenience)
  :homepage   "http://stud4.tuwien.ac.at/~e0225855/pointback/pointback.html"
  :commentary "\
 When you have two windows X and Y showing different sections of the

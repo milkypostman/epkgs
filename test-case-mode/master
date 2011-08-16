@@ -9,7 +9,7 @@
  :required   ((("cl" cl)
 	       ("compile" compile))
 	      (("fringe-helper" fringe-helper)))
- :keywords   ("tools")
+ :keywords   (tools)
  :homepage   "http://nschum.de/src/emacs/test-case-mode"
  :wikipage   "http://www.emacswiki.org/TestCaseMode"
  :commentary "\

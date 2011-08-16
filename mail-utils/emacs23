@@ -6,7 +6,7 @@
  :provided   (mail-utils)
  :required   ((("lisp-mode" lisp-mode)
 	       ("rfc822" rfc822)))
- :keywords   ("mail" "news")
+ :keywords   (mail news)
  :commentary "\
 Utility functions for mail and netnews handling.  These handle fine
 points of header parsing.")

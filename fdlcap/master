@@ -5,7 +5,7 @@
  :authors    (("Aaron S. Hawley"))
  :maintainer ("Aaron S. Hawley")
  :provided   (fdlcap)
- :keywords   ("convenience" "wp")
+ :keywords   (convenience wp)
  :homepage   "http://www.emacswiki.org/RotateWordCapitalization"
  :wikipage   "http://www.emacswiki.org/RotateWordCapitalization"
  :commentary "\

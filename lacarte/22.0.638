@@ -5,7 +5,7 @@
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")
  :provided   (lacarte)
- :keywords   ("abbrev" "command" "completion" "extensions" "help" "internal" "keys" "local" "matching" "menu" "menu-bar" "minibuffer")
+ :keywords   (abbrev command completion extensions help internal keys local matching menu menu-bar minibuffer)
  :homepage   "http://www.emacswiki.org/LaCarte"
  :wikipage   "http://www.emacswiki.org/LaCarte"
  :commentary "\

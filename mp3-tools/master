@@ -7,7 +7,7 @@
  :provided   (mp3-tools)
  :required   ((("easymenu" easymenu)
 	       ("widget" wid-edit widget)))
- :keywords   ("convenience" "data" "tools")
+ :keywords   (convenience data tools)
  :commentary "\
 This started out life a small collection of tools related to MP3
 files, but it has since evolved into a simple MP3 Tag editor.

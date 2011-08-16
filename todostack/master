@@ -7,7 +7,7 @@
  :provided   (todostack)
  :required   (nil
 	      (("lisp-mnt" lisp-mnt)))
- :keywords   ("calendar")
+ :keywords   (calendar)
  :commentary "\
 GENERAL USE
 

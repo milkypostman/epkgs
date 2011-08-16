@@ -6,4 +6,4 @@
  :maintainer ("Andrew Gwozdziewycz" . "web@apgwoz.com")
  :provided   (amigo)
  :required   ((("url" url url-http)))
- :keywords   ("comm" "friendfeed"))
+ :keywords   (comm friendfeed))

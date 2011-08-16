@@ -6,7 +6,7 @@
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (compilation-perl)
  :required   ((("compile" compile)))
- :keywords   ("processes")
+ :keywords   (processes)
  :commentary "\
 This is a spot of code adding `compilation-error-regexp-alist' patterns
 for Perl

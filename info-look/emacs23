@@ -6,7 +6,7 @@
  :maintainer ("Ralph Schleicher" . "rs@nunatak.allgaeu.org")
  :provided   (info-look)
  :required   ((("info" info)))
- :keywords   ("help" "languages")
+ :keywords   (help languages)
  :wikipage   "http://www.emacswiki.org/InfoLook"
  :commentary "\
 Really cool code to lookup info indexes.

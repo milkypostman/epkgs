@@ -9,7 +9,7 @@
  :required   ((("findr" findr)
 	       ("which-func" which-func)
 	       (nil inflections)))
- :keywords   ("convenience" "navigation" "project")
+ :keywords   (convenience navigation project)
  :homepage   "https://github.com/eschulte/jump.el"
  :wikipage   "http://www.emacswiki.org/Jump"
  :commentary "\

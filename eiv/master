@@ -7,7 +7,7 @@
  :provided   (eiv)
  :required   ((("cl" cl)
 	       ("traverselisp" iterator traverselisp)))
- :keywords   ("image" "picture")
+ :keywords   (image picture)
  :homepage   "http://www.emacswiki.org/EmacsImageViewer"
  :wikipage   "http://www.emacswiki.org/EmacsImageViewer"
  :commentary "\

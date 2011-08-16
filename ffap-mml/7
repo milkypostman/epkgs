@@ -7,7 +7,7 @@
  :provided   (ffap-mml)
  :required   ((("advice" advice)
 	       ("ffap" ffap)))
- :keywords   ("files")
+ :keywords   (files)
  :homepage   "http://user42.tuxfamily.org/ffap-mml/index.html"
  :commentary "\
 This spot of code to lets M-x ffap find a file attached as a Gnus message

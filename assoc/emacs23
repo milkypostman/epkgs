@@ -6,7 +6,7 @@
  :maintainer ("Barry A. Warsaw" . "bwarsaw@cen.com")
  :provided   (assoc)
  :required   ((("cl" cl)))
- :keywords   ("extensions")
+ :keywords   (extensions)
  :commentary "\
 Association list utilities providing insertion, deletion, sorting
 fetching off key-value pairs in association lists.")

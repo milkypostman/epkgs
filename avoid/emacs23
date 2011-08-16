@@ -5,7 +5,7 @@
  :authors    (("Boris Goldowsky" . "boris@gnu.org"))
  :maintainer ("Boris Goldowsky" . "boris@gnu.org")
  :provided   (avoid)
- :keywords   ("mouse")
+ :keywords   (mouse)
  :commentary "\
 For those who are annoyed by the mouse pointer obscuring text,
 this mode moves the mouse pointer - either just a little out of

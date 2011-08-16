@@ -5,7 +5,7 @@
  :license    "GPL-3"
  :provided   (el-test-more)
  :required   ((("cl" cl)))
- :keywords   ("convenience" "lisp" "tools")
+ :keywords   (convenience lisp tools)
  :homepage   "https://github.com/k-talo/el-test-more.el"
  :commentary "\
 Overview

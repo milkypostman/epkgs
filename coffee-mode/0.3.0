@@ -10,6 +10,6 @@
 	       ("easymenu" easymenu)
 	       ("emacs-core" font-lock)
 	       ("newcomment" newcomment)))
- :keywords   ("coffeescript" "major" "mode")
+ :keywords   (coffeescript major mode)
  :homepage   "https://github.com/defunkt/coffee-mode"
  :wikipage   "http://www.emacswiki.org/CoffeeMode")

@@ -5,7 +5,7 @@
  :authors    (("Aaron S. Hawley"))
  :maintainer ("Aaron S. Hawley")
  :provided   (regexpl)
- :keywords   ("lisp")
+ :keywords   (lisp)
  :commentary "\
 The function `regexpl-search-replace-list' takes a cons-ed list of
 patterns and replacements.  It find the nearest match (ties defer

@@ -7,5 +7,5 @@
  :provided   (wave)
  :required   ((("cl" cl)
 	       ("gnus" message)))
- :keywords   ("music")
+ :keywords   (music)
  :homepage   "http://quimby.gnus.org/elisp")

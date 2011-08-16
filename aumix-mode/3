@@ -6,7 +6,7 @@
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (aumix-mode)
  :required   ((("term" term)))
- :keywords   ("multimedia")
+ :keywords   (multimedia)
  :homepage   "http://user42.tuxfamily.org/aumix-mode/index.html"
  :wikipage   "http://www.emacswiki.org/aumix-emacs"
  :commentary "\

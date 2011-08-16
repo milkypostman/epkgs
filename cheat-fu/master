@@ -5,7 +5,7 @@
  :authors    ((nil . "xjpablobrx@gmail.com"))
  :maintainer (nil . "xjpablobrx@gmail.com")
  :provided   (cheat-fu)
- :keywords   ("bash" "cheats")
+ :keywords   (bash cheats)
  :homepage   "https://github.com/jpablobr/cheat-fu-mode"
  :wikipage   "http://www.emacswiki.org/CheatFuMode"
  :commentary "\

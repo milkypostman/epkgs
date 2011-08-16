@@ -7,5 +7,5 @@
  :maintainer ("David Miller" . "david@deadpansincerity.com")
  :provided   (dizzee)
  :required   ((("cl" cl)))
- :keywords   ("emacs" "processes")
+ :keywords   (emacs processes)
  :homepage   "https://github.com/davidmiller/dizzee")

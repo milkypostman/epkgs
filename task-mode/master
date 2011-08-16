@@ -8,7 +8,7 @@
  :required   ((("ring" ring))
 	      (("ido" ido)
 	       ("iswitchb" iswitchb)))
- :keywords   ("convenience")
+ :keywords   (convenience)
  :homepage   "http://racin.free.fr/old/projects.html#task-mode"
  :wikipage   "http://www.emacswiki.org/TaskMode"
  :commentary "\

@@ -6,7 +6,7 @@
  :maintainer (nil . "friedman@prep.ai.mit.edu")
  :provided   (invoice)
  :required   ((("time-stamp" time-stamp)))
- :keywords   ("extensions")
+ :keywords   (extensions)
  :homepage   "ftp://ftp.splode.com/pub/users/friedman/emacs-lisp"
  :commentary "\
 I use this to ease updating my TeX-format invoice forms for all my

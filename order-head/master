@@ -7,7 +7,7 @@
  :provided   (order-head)
  :required   ((("fmailutils" fmailutils)
 	       ("rfc822" rfc822)))
- :keywords   ("extensions" "mail")
+ :keywords   (extensions mail)
  :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
  :commentary "\
 This package used to be called mail-reorder-headers.el,

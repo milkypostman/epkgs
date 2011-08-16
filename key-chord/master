@@ -4,7 +4,7 @@
  :license    "GPL-2"
  :provided   (key-chord)
  :required   ((("advice" advice)))
- :keywords   ("chord" "input" "keyboard")
+ :keywords   (chord input keyboard)
  :homepage   "http://www.emacswiki.org/KeyChord"
  :wikipage   "http://www.emacswiki.org/KeyChord"
  :commentary "\

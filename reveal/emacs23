@@ -5,7 +5,7 @@
  :authors    (("Stefan Monnier" . "monnier@iro.umontreal.ca"))
  :maintainer ("Stefan Monnier" . "monnier@iro.umontreal.ca")
  :provided   (reveal)
- :keywords   ("outlines")
+ :keywords   (outlines)
  :commentary "\
 Reveal mode is a minor mode that makes sure that text around point
 is always visible.  When point enters a region of hidden text,

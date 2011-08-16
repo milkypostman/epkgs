@@ -6,6 +6,6 @@
  :maintainer ("Seong-Kook Shin" . "cinsky@gmail.com")
  :provided   (xlicense)
  :required   ((("skeleton" skeleton)))
- :keywords   ("abbrev" "convenience")
+ :keywords   (abbrev convenience)
  :commentary "\
 $Id: xlicense.el,v 1.2 2010/12/16 12:09:41 cinsk Exp $")

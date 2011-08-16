@@ -7,7 +7,7 @@
  :required   ((("cl" cl)
 	       ("gnus" parse-time)
 	       ("help" help-fns)))
- :keywords   ("javascript" "languages")
+ :keywords   (javascript languages)
  :homepage   "http://code.google.com/p/ejacs"
  :wikipage   "http://www.emacswiki.org/Ejacs"
  :commentary "\

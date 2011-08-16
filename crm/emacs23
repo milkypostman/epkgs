@@ -5,7 +5,7 @@
  :authors    (("Sen Nagata" . "sen@eccosys.com"))
  :maintainer ("Sen Nagata" . "sen@eccosys.com")
  :provided   (crm)
- :keywords   ("completion" "minibuffer" "multiple elements")
+ :keywords   (completion minibuffer multiple\ elements)
  :commentary "\
 This code defines a function, `completing-read-multiple', which
 provides the ability to read multiple strings in the minibuffer,

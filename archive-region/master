@@ -7,7 +7,7 @@
  :provided   (archive-region)
  :required   ((("cl" cl)
 	       ("newcomment" newcomment)))
- :keywords   ("languages")
+ :keywords   (languages)
  :commentary "\
 Extend C-w to have archive feature.
 C-u C-w moves region to the archive file.

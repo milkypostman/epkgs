@@ -7,7 +7,7 @@
  :provided   (anything-rurima)
  :required   ((("anything" anything-config anything-match-plugin)
 	       ("cl" cl)))
- :keywords   ("convenience" "languages")
+ :keywords   (convenience languages)
  :commentary "\
 Rubyリファレンスマニュアル刷新計画(るりま)をanythingで検索します。
 

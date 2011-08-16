@@ -6,7 +6,7 @@
  :maintainer ("Stefan Monnier" . "monnier@iro.umontreal.ca")
  :provided   (mpc)
  :required   ((("cl" cl)))
- :keywords   ("multimedia")
+ :keywords   (multimedia)
  :homepage   "http://www.iro.umontreal.ca/~monnier/elisp"
  :wikipage   "http://www.emacswiki.org/Mpc"
  :commentary "\

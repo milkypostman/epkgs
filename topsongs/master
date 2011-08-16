@@ -5,7 +5,7 @@
  :authors    (("Alessandro Di Marco" . "dmr@c0nc3pt.com"))
  :maintainer ("Alessandro Di Marco" . "dmr@c0nc3pt.com")
  :provided   (topsongs)
- :keywords   ("emms")
+ :keywords   (emms)
  :commentary "\
 TopSongs provides a song database for the lazy emacser. TopSongs interacts
  with both EMMS and mp3info, in order to provide handy commands such as

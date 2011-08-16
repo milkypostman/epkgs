@@ -2,7 +2,7 @@
  :authors    (("Berend de Boer" . "berend@pobox.com"))
  :maintainer ("Berend de Boer" . "berend@pobox.com")
  :provided   (guido-mode)
- :keywords   ("guido")
+ :keywords   (guido)
  :homepage   "http://www.pobox.com/~berend/emacs"
  :commentary "\
 Add this to your .emacs file to load and bind it to files with extension

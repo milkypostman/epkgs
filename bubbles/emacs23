@@ -7,7 +7,7 @@
  :provided   (bubbles)
  :required   ((("cl" cl)
 	       ("gamegrid" gamegrid)))
- :keywords   ("games")
+ :keywords   (games)
  :homepage   "http://ulf.epplejasper.de/EmacsFunStuff.html"
  :commentary "\
 Bubbles is a puzzle game.  Its goal is to remove as many bubbles as

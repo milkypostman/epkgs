@@ -9,7 +9,7 @@
 	       ("diff" diff)
 	       ("dired" dired)
 	       ("emacs-core" font-core)))
- :keywords   ("buffer" "convenience")
+ :keywords   (buffer convenience)
  :wikipage   "http://www.emacswiki.org/IbufferMode"
  :commentary "\
 ibuffer.el is an advanced replacement for the `buffer-menu' which

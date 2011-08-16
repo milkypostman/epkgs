@@ -9,6 +9,6 @@
  :required   ((("cl" cl)
 	       ("custom" custom)
 	       ("ispell" ispell)))
- :keywords   ("completion")
+ :keywords   (completion)
  :homepage   "http://www.math.washington.edu/~palmieri/Emacs/light.html"
  :wikipage   "http://www.emacswiki.org/LightningCompletion")

@@ -4,7 +4,7 @@
  :license    "GPL-3"
  :maintainer ("FSF")
  :provided   (nroff-mode)
- :keywords   ("wp")
+ :keywords   (wp)
  :wikipage   "http://www.emacswiki.org/NroffMode"
  :commentary "\
 This package is a major mode for editing nroff source code.  It knows

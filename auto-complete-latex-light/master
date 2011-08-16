@@ -8,7 +8,7 @@
  :provided   (auto-complete-latex-light)
  :required   ((("auto-complete" auto-complete)
 	       ("cl" cl)))
- :keywords   ("completion" "latex")
+ :keywords   (completion latex)
  :homepage   "https://github.com/tequilasunset/auto-complete-latex-light"
  :commentary "\
 Last year, I wrote the auto-complete-latex for completing the

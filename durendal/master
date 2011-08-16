@@ -9,7 +9,7 @@
  :required   ((("clojure-mode" clojure-mode)
 	       ("paredit" paredit)
 	       ("slime" slime slime-repl)))
- :keywords   ("clojure" "lisp" "slime")
+ :keywords   (clojure lisp slime)
  :homepage   "https://github.com/technomancy/durendal"
  :commentary "\
 \"Count Roland smites upon the marble stone;

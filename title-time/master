@@ -6,7 +6,7 @@
  :maintainer ("Kahlil (Kal) HODGSON" . "dorge@tpg.com.au")
  :provided   (title-time)
  :required   ((("time" time)))
- :keywords   ("convenience")
+ :keywords   (convenience)
  :commentary "\
 Just like display-time except that time, date, mail and appointment
 notification are presented in the title-bar rather than the

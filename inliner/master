@@ -6,7 +6,7 @@
  :maintainer ("myuhe")
  :provided   (inlineR)
  :required   ((("ess" ess-site)))
- :keywords   ("convenience")
+ :keywords   (convenience)
  :homepage   "https://github.com/myuhe/inlineR.el"
  :commentary "\
 cacoo.el is very cool.

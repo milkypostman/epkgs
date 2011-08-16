@@ -6,7 +6,7 @@
  :maintainer ("Sascha Wilde" . "swilde@sha-bang.de")
  :provided   (sokoban)
  :required   ((("cl" cl)))
- :keywords   ("games")
+ :keywords   (games)
  :homepage   "http://www.sha-bang.de/emacs.html"
  :wikipage   "http://www.emacswiki.org/SokobanMode"
  :commentary "\

@@ -7,7 +7,7 @@
  :provided   (bbdb2tbird)
  :required   ((("bbdb" bbdb)
 	       ("cl" cl)))
- :keywords   ("addressbook" "bbdb" "export" "icedove" "ldap" "ldif" "thunderbird")
+ :keywords   (addressbook bbdb export icedove ldap ldif thunderbird)
  :homepage   "http://www.neilvandyke.org/bbdb2tbird"
  :commentary "\
 \"bbdb2tbird.el\" is an Emacs Lisp program I hacked up mostly on 2007-05-22 to

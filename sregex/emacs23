@@ -6,7 +6,7 @@
  :maintainer ("Bob Glickstein" . "bobg+sregex@zanshin.com")
  :provided   (sregex)
  :required   ((("cl" cl)))
- :keywords   ("extensions")
+ :keywords   (extensions)
  :commentary "\
 This package allows you to write regular expressions using a
 totally new, Lisp-like syntax.

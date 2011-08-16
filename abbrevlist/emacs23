@@ -4,4 +4,4 @@
  :license    "GPL-3"
  :maintainer ("FSF")
  :provided   (abbrevlist)
- :keywords   ("abbrev"))
+ :keywords   (abbrev))

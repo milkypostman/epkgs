@@ -6,7 +6,7 @@
  :provided   (winring)
  :required   ((("reporter" reporter)
 	       ("ring" ring)))
- :keywords   ("frames" "tools")
+ :keywords   (frames tools)
  :homepage   "http://launchpad.net/winring"
  :wikipage   "http://www.emacswiki.org/WinRing"
  :commentary "\

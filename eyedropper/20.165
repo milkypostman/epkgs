@@ -6,7 +6,7 @@
  :maintainer ("Drew Adams")
  :provided   (eyedropper)
  :required   ((("hexrgb" hexrgb)))
- :keywords   ("color" "face" "frame" "hexadecimal" "hsv" "rgb")
+ :keywords   (color face frame hexadecimal hsv rgb)
  :commentary "\
 Use the commands defined here to examine or save the background or
  foreground color at the text cursor or the mouse pointer.

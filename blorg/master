@@ -12,7 +12,7 @@
 	       ("org-mode" org)
 	       ("regexp-opt" regexp-opt)
 	       ("time-stamp" time-stamp)))
- :keywords   ("atom" "blog" "feed" "html" "org-mode" "publishing" "rss")
+ :keywords   (atom blog feed html org-mode publishing rss)
  :wikipage   "http://www.emacswiki.org/Blorg"
  :commentary "\
 blorg creates a blog from an org file.  Just edit your `org-mode'

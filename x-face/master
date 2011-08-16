@@ -20,7 +20,7 @@
 	       ("semi" mime-image)
 	       ("vm" vm-macro vm-misc)
 	       (nil alist highlight-headers tl-list tm-image)))
- :keywords   ("cmail" "gnus" "mail" "mew" "mh-e" "rmail" "semi-gnus" "vm" "wl" "x-face" "x-face-mule")
+ :keywords   (cmail gnus mail mew mh-e rmail semi-gnus vm wl x-face x-face-mule)
  :homepage   "http://www.jpl.org/ftp/pub/elisp"
  :wikipage   "http://www.emacswiki.org/XFace"
  :commentary "\

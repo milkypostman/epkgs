@@ -11,7 +11,7 @@
 	       ("reporter" reporter)
 	       ("subword" subword)
 	       ("widget" widget)))
- :keywords   ("c" "languages" "oop")
+ :keywords   (c languages oop)
  :homepage   "http://cc-mode.sourceforge.net"
  :wikipage   "http://www.emacswiki.org/CcMode"
  :commentary "\

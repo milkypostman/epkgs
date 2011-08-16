@@ -7,7 +7,7 @@
 	       ("easymenu" easymenu)
 	       ("emacs-core" overlay)
 	       ("gnus" pgg pgg-gpg pgg-parse)))
- :keywords   ("languages" "outlines" "wp")
+ :keywords   (languages outlines wp)
  :homepage   "http://myriadicity.net/Sundry/EmacsAllout"
  :wikipage   "http://www.emacswiki.org/AllOut"
  :commentary "\

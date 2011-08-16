@@ -5,5 +5,5 @@
  :authors    (("Hiroshige Umino" . "yaotti@gmail.com"))
  :maintainer ("Hiroshige Umino" . "yaotti@gmail.com")
  :provided   (anything-with-everything)
- :keywords   ("anything")
+ :keywords   (anything)
  :homepage   "https://github.com/yaotti/anything-with-everything.el")

@@ -6,7 +6,7 @@
  :provided   (labbook-sign)
  :required   ((("labbook" labbook)
 	       ("mailcrypt" mailcrypt)))
- :keywords   ("labbook" "logging" "signing")
+ :keywords   (labbook logging signing)
  :homepage   "http://homepages.cs.ncl.ac.uk/phillip.lord/emacs.html"
  :commentary "\
 This file is an add-on to labbook.el and provides additional

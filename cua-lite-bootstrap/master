@@ -5,7 +5,7 @@
  :authors    (("Joe Casadonte" . "emacs@northbound-train.com"))
  :maintainer ("Joe Casadonte" . "emacs@northbound-train.com")
  :provided   (cua-lite-bootstrap)
- :keywords   ("cua" "emulator")
+ :keywords   (cua emulator)
  :homepage   "http://www.northbound-train.com"
  :commentary "\
 cua-lite is a CUA emulator package for Emacs.  cua-lite-bootstrap

@@ -14,7 +14,7 @@
 	      (("fit-frame" fit-frame)
 	       ("frame-cmds" frame-cmds)
 	       ("ring+" ring+)))
- :keywords   ("internal" "tools" "unix")
+ :keywords   (internal tools unix)
  :commentary "\
 Extensions for `vc.el'.
 

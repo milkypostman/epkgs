@@ -6,7 +6,7 @@
  :maintainer ("Eric Eide" . "eeide@cs.utah.edu")
  :provided   (idl-font-lock)
  :required   ((("emacs-core" font-lock)))
- :keywords   ("faces" "idl" "languages")
+ :keywords   (faces idl languages)
  :homepage   "http://www.cs.utah.edu/~eeide/emacs"
  :commentary "\
 This file provides the data that Font Lock Mode needs in order to decorate

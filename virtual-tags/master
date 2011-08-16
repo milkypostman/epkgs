@@ -9,7 +9,7 @@
  :required   ((("etags" etags)
 	       ("gtags" gtags)
 	       (nil anything-etags)))
- :keywords   ("tags" "virtual")
+ :keywords   (tags virtual)
  :homepage   "https://github.com/tm8st/emacs-virtual-tags"
  :commentary "\
 仮想的にTAGSとやりとりするためのelです。

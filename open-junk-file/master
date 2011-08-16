@@ -6,7 +6,7 @@
  :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
  :provided   (open-junk-file)
  :required   ((("cl" cl)))
- :keywords   ("convenience" "tools")
+ :keywords   (convenience tools)
  :commentary "\
 M-x `open-junk-file' opens a new file whose filename is derived from
 current time. You can write short program in it. It helps to

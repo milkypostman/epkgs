@@ -6,5 +6,5 @@
  :maintainer ("D. Goel" . "deego@glue.umd.edu")
  :provided   (fetch)
  :required   ((("cl" cl)))
- :keywords   ("ange-ftp" "files" "mirror" "refresh" "remote" "tramp" "update")
+ :keywords   (ange-ftp files mirror refresh remote tramp update)
  :homepage   "http://www.gnufans.net/~deego/emacs.html")

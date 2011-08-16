@@ -5,4 +5,4 @@
  :authors    (("Ata Etemadi" . "atae@spva.physics.imperial.ac.uk"))
  :maintainer ("FSF")
  :provided   (cdl)
- :keywords   ("data"))
+ :keywords   (data))

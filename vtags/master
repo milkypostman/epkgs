@@ -5,7 +5,7 @@
  :license    "GPL-2"
  :authors    (("Edward Bishop"))
  :maintainer ("FSF")
- :keywords   ("tools")
+ :keywords   (tools)
  :homepage   "https://savannah.gnu.org/projects/vtags"
  :wikipage   "http://www.emacswiki.org/VTags"
  :commentary "\

@@ -7,7 +7,7 @@
  :maintainer ("Christopher M. Brannon" . "cmbrannon@cox.net")
  :provided   (aurquery)
  :required   ((("json" json)))
- :keywords   ("aur")
+ :keywords   (aur)
  :homepage   "https://github.com/CMB/aurquery-el"
  :commentary "\
 This program provides an interface to the Arch User Repository (AUR).

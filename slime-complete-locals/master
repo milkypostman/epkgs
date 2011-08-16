@@ -5,6 +5,6 @@
  :authors    ((nil . "joost diepenmaat - joost@zeekat.nl"))
  :maintainer (nil . "joost diepenmaat - joost@zeekat.nl")
  :provided   (slime-complete-locals)
- :keywords   ("abbrev" "convenience" "slime")
+ :keywords   (abbrev convenience slime)
  :homepage   "https://github.com/joodie/slime-complete-locals"
  :wikipage   "http://www.emacswiki.org/SlimeCompleteLocals")

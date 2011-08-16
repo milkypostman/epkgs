@@ -3,7 +3,7 @@
  :updated    "2011"
  :license    "GPL-3"
  :provided   (keychain-environment)
- :keywords   ("agent" "gpg" "keychain" "ssh")
+ :keywords   (agent gpg keychain ssh)
  :commentary "\
 Designed for use with Keychain (see:
 http://docs.funtoo.org/wiki/Keychain) a tool for loading the SSH

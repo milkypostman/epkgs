@@ -7,7 +7,7 @@
  :provided   (el-mock)
  :required   ((("advice" advice)
 	       ("cl" cl)))
- :keywords   ("lisp" "testing" "unittest")
+ :keywords   (lisp testing unittest)
  :homepage   "http://www.emacswiki.org/EmacsLispMock"
  :wikipage   "http://www.emacswiki.org/EmacsLispMock"
  :commentary "\

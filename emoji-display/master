@@ -5,7 +5,7 @@
  :authors    (("Kazuhiro Ito" . "kzhr@d1.dion.ne.jp"))
  :maintainer ("Kazuhiro Ito" . "kzhr@d1.dion.ne.jp")
  :provided   (emoji-display)
- :keywords   ("emoji")
+ :keywords   (emoji)
  :homepage   "https://github.com/ikazuhiro/emoji-display"
  :commentary "\
 Emacs 23 or later is required.

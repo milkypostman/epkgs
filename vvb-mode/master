@@ -6,7 +6,7 @@
  :maintainer (nil . "gchen275@yahoo.com")
  :provided   (vvb-mode)
  :required   ((("cl" cl)))
- :keywords   ("minor-mode" "visual highlighting")
+ :keywords   (minor-mode visual\ highlighting)
  :commentary "\
 This package implements a minor mode for XEmacs which, when enabled,
 will display a transient or permanent visible vertical bar at a user-

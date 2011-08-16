@@ -7,7 +7,7 @@
  :maintainer ("FSF")
  :provided   (imenu)
  :required   ((("cl" cl)))
- :keywords   ("convenience" "tools")
+ :keywords   (convenience tools)
  :wikipage   "http://www.emacswiki.org/ImenuMode"
  :commentary "\
 Purpose of this package:

@@ -6,7 +6,7 @@
  :maintainer ("FSF")
  :provided   (kermit)
  :required   ((("shell" shell)))
- :keywords   ("comm")
+ :keywords   (comm)
  :commentary "\
 I'm not sure, but I think somebody asked about running kermit under shell
 mode a while ago.  Anyway, here is some code that I find useful.  The result

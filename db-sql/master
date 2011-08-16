@@ -6,7 +6,7 @@
  :required   ((("cl" cl)
 	       ("sql" sql)
 	       ("tramp" tramp)))
- :keywords   ("emacs" "sql" "tramp")
+ :keywords   (emacs sql tramp)
  :homepage   "https://github.com/renard/db-sql-el"
  :commentary "\
 Connect to remote database using a tramp syntax.

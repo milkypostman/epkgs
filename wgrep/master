@@ -6,7 +6,7 @@
  :provided   (wgrep)
  :required   ((("cl" cl)
 	       ("grep" grep)))
- :keywords   ("edit" "extensions" "grep")
+ :keywords   (edit extensions grep)
  :homepage   "https://github.com/mhayashi1120/Emacs-wgrep"
  :commentary "\
 wgrep provides to edit grep buffer and to apply the changes to

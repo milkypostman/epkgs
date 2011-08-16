@@ -5,7 +5,7 @@
  :authors    (("Ulf Jasper" . "ulf.jasper@web.de"))
  :maintainer ("Ulf Jasper" . "ulf.jasper@web.de")
  :provided   (csv)
- :keywords   ("util")
+ :keywords   (util)
  :homepage   "http://ulf.epplejasper.de/EmacsGeneralPurpose.html"
  :wikipage   "http://www.emacswiki.org/CsvMode"
  :commentary "\

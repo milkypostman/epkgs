@@ -7,7 +7,7 @@
  :provided   (ielm)
  :required   ((("comint" comint)
 	       ("emacs-core" pp)))
- :keywords   ("lisp")
+ :keywords   (lisp)
  :commentary "\
 Provides a nice interface to evaluating Emacs Lisp expressions.
 Input is handled by the comint package, and output is passed

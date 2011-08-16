@@ -9,5 +9,5 @@
  :required   ((("cl" cl)
 	       ("easymenu" easymenu)
 	       ("ido" ido)))
- :keywords   ("tools")
+ :keywords   (tools)
  :homepage   "https://github.com/mbunkus/mo-git-blame")

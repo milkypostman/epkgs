@@ -8,7 +8,7 @@
  :required   ((("ispell" ispell)
 	       ("tellib" tellib)
 	       ("thingatpt" thingatpt)))
- :keywords   ("dictionary" "lookup" "wordnet")
+ :keywords   (dictionary lookup wordnet)
  :homepage   "http://members.a1.net/t.link/CompEmacsWordnet.html"
  :commentary "\
 ;---(:excerpt-beg Word-Net :name desc)---

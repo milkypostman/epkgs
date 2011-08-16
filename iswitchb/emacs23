@@ -6,7 +6,7 @@
  :maintainer ("Stephen Eglen" . "stephen@gnu.org")
  :provided   (iswitchb)
  :required   ((("emacs-core" font-lock)))
- :keywords   ("completion" "convenience")
+ :keywords   (completion convenience)
  :commentary "\
 Installation:
 To get the functions in this package bound to keys, use

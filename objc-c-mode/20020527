@@ -4,7 +4,7 @@
  :provided   (objc-c-mode)
  :required   ((("cc-mode" cc-mode)
 	       ("emacs-core" font-lock)))
- :keywords   ("objc" "objective-c")
+ :keywords   (objc objective-c)
  :homepage   "http://www.foldr.org/~michaelw/objective-c/index.html#objc-mode"
  :commentary "\
 ==============

@@ -5,5 +5,5 @@
  :license    "GPL-2"
  :authors    (("Lars Magne Ingebrigtsen" . "larsi@gnus.org"))
  :maintainer ("Lars Magne Ingebrigtsen" . "larsi@gnus.org")
- :keywords   ("extensions" "processes")
+ :keywords   (extensions processes)
  :homepage   "https://github.com/larsmagne/movie.el")

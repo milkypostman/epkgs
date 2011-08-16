@@ -7,7 +7,7 @@
  :provided   (diff-mode)
  :required   ((("cl" cl)
 	       ("smerge-mode" smerge-mode)))
- :keywords   ("convenience" "diff" "patch")
+ :keywords   (convenience diff patch)
  :wikipage   "http://www.emacswiki.org/DiffMode"
  :commentary "\
 Provides support for font-lock, outline, navigation

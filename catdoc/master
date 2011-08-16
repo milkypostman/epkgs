@@ -4,4 +4,4 @@
  :authors    (("Steve Kemp" . "skx@tardis.ed.ac.uk"))
  :maintainer ("Steve Kemp" . "skx@tardis.ed.ac.uk")
  :provided   (catdoc)
- :keywords   ("conversion" "local" "ms word" "text" "tools"))
+ :keywords   (conversion local ms\ word text tools))

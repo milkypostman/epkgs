@@ -5,7 +5,7 @@
  :authors    (("Mike Williams" . "mikew@gopher.dosli.govt.nz"))
  :maintainer ("FSF")
  :provided   (thingatpt)
- :keywords   ("extensions" "matching" "mouse")
+ :keywords   (extensions matching mouse)
  :commentary "\
 This file provides routines for getting the \"thing\" at the location of
 point, whatever that \"thing\" happens to be.  The \"thing\" is defined by

@@ -4,7 +4,7 @@
  :license    "GPL-3"
  :maintainer ("FSF")
  :provided   (ring)
- :keywords   ("extensions")
+ :keywords   (extensions)
  :commentary "\
 This code defines a ring data structure.  A ring is a
     (hd-index length . vector)

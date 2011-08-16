@@ -5,7 +5,7 @@
  :authors    (("Seiji Zenitani" . "zenitani@mac.com"))
  :maintainer ("Seiji Zenitani" . "zenitani@mac.com")
  :provided   (a-menu)
- :keywords   ("tools" "unix")
+ :keywords   (tools unix)
  :commentary "\
 This package provides `a-menu' function.
 It enables you to build your own menu in the menu bar,

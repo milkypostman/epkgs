@@ -6,7 +6,7 @@
  :maintainer ("Edward O'Connor" . "ted@oconnor.cx")
  :provided   (json)
  :required   ((("cl" cl)))
- :keywords   ("convenience")
+ :keywords   (convenience)
  :homepage   "http://edward.oconnor.cx/elisp"
  :wikipage   "http://www.emacswiki.org/JSON"
  :commentary "\

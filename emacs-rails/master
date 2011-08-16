@@ -20,5 +20,5 @@
 	      (("completion-ui" completion-ui)
 	       ("flymake" flymake)
 	       ("predictive" predictive)))
- :keywords   ("languages" "oop" "rails" "ruby")
+ :keywords   (languages oop rails ruby)
  :homepage   "http://rubyforge.org/projects/emacs-rails")

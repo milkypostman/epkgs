@@ -5,7 +5,7 @@
  :authors    (("Patrick Gundlach" . "patrick@gundla.ch"))
  :maintainer ("Patrick Gundlach" . "patrick@gundla.ch")
  :provided   (recent)
- :keywords   ("convenience")
+ :keywords   (convenience)
  :homepage   "http://levana.de/emacs"
  :commentary "\
 put in an emacs load path and write the following line into your

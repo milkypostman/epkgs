@@ -5,7 +5,7 @@
  :authors    (("rubikitch" . "rubikitch@ruby-lang.org"))
  :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
  :provided   (minor-mode-hack)
- :keywords   ("lisp")
+ :keywords   (lisp)
  :commentary "\
 A hack of minor-modes.
 

@@ -6,7 +6,7 @@
  :maintainer ("Alex Schroeder" . "alex@gnu.org")
  :provided   (wiki-projects)
  :required   ((("wiki" wiki)))
- :keywords   ("hypermedia")
+ :keywords   (hypermedia)
  :wikipage   "http://www.emacswiki.org/WikiProjects"
  :commentary "\
 This package is an optional extension to wiki.el.

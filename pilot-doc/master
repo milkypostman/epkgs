@@ -3,5 +3,5 @@
  :license    "GPL-2"
  :authors    (("Daryn W Hanright" . "palmheads@planetnz.com"))
  :maintainer ("Daryn W Hanright" . "palmheads@planetnz.com")
- :keywords   ("doc" "palm" "pilot")
+ :keywords   (doc palm pilot)
  :homepage   "http://www.planetnz.com")

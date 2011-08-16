@@ -6,5 +6,5 @@
  :maintainer (nil . "friedman@splode.com")
  :provided   (fshell)
  :required   ((("shell" shell)))
- :keywords   ("extensions" "processes")
+ :keywords   (extensions processes)
  :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html")

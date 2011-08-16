@@ -14,6 +14,6 @@
 	       ("imenu" imenu)
 	       ("newcomment" newcomment)
 	       ("rx" rx)))
- :keywords   ("maude")
+ :keywords   (maude)
  :homepage   "http://sourceforge.net/projects/maude-mode"
  :wikipage   "http://www.emacswiki.org/MaudeMode")

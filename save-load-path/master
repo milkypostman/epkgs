@@ -5,7 +5,7 @@
  :authors    (("rubikitch" . "rubikitch@ruby-lang.org"))
  :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
  :provided   (save-load-path)
- :keywords   ("lisp")
+ :keywords   (lisp)
  :commentary "\
 Prepare `load-path' for testing in emacs -Q.
 First, save your `load-path' in your .emacs.

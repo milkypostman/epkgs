@@ -8,7 +8,7 @@
  :required   ((("itimer" itimer)
 	       ("timer" timer)
 	       ("ysq" ysq)))
- :keywords   ("extensions")
+ :keywords   (extensions)
  :homepage   "ftp://ftp.splode.com/pub/users/friedman/emacs-lisp"
  :commentary "\
 This module is still heavily under development

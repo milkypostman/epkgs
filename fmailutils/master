@@ -6,7 +6,7 @@
  :maintainer (nil . "friedman@splode.com")
  :provided   (fmailutils)
  :required   ((("sendmail" sendmail)))
- :keywords   ("extensions" "mail")
+ :keywords   (extensions mail)
  :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
  :commentary "\
 These functions are meant to be primitives with which to build other

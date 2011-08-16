@@ -6,7 +6,7 @@
  :maintainer ("Michael Weber" . "michaelw@foldr.org")
  :provided   (mwe-log-commands)
  :required   ((("cl" cl)))
- :keywords   ("help")
+ :keywords   (help)
  :homepage   "http://www.foldr.org/~michaelw/emacs"
  :wikipage   "http://www.emacswiki.org/CommandLogMode"
  :commentary "\

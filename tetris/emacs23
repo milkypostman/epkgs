@@ -7,5 +7,5 @@
  :provided   (tetris)
  :required   ((("cl" cl)
 	       ("gamegrid" gamegrid)))
- :keywords   ("games")
+ :keywords   (games)
  :wikipage   "http://www.emacswiki.org/TetrisMode")

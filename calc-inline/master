@@ -5,7 +5,7 @@
  :authors    (("U-ITIHQ\\Tobias.Naehring" . "tobias.naehring@rechner64.itihq.local"))
  :maintainer ("U-ITIHQ\\Tobias.Naehring" . "tobias.naehring@rechner64.itihq.local")
  :provided   (calc-inline)
- :keywords   ("tools" "wp")
+ :keywords   (tools wp)
  :commentary "\
 Matlab-like calc.
 

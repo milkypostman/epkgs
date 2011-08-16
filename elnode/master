@@ -7,7 +7,7 @@
  :provided   (elnode)
  :required   ((("cl" cl)
 	       ("gnus" mailcap mm-encode)))
- :keywords   ("lisp")
+ :keywords   (lisp)
  :homepage   "https://github.com/nicferrier/elnode"
  :wikipage   "http://www.emacswiki.org/Elnode"
  :commentary "\

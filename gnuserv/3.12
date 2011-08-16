@@ -9,7 +9,7 @@
  :required   ((("cl" cl)
 	       ("custom" custom)
 	       ("w3" devices)))
- :keywords   ("environment" "processes" "terminals")
+ :keywords   (environment processes terminals)
  :homepage   "http://meltin.net/hacks/emacs"
  :commentary "\
 Gnuserv is run when Emacs needs to operate as a server for other

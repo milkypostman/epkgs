@@ -10,7 +10,7 @@
 	      (("icicles" icicles)
 	       ("thingatpt" thingatpt)
 	       ("thingatpt+" thingatpt+)))
- :keywords   ("help" "internal")
+ :keywords   (help internal)
  :commentary "\
 Extensions to `novice.el'.
 

@@ -5,7 +5,7 @@
  :authors    (("K. Shane Hartman"))
  :maintainer ("FSF")
  :provided   (picture)
- :keywords   ("convenience" "wp")
+ :keywords   (convenience wp)
  :wikipage   "http://www.emacswiki.org/PictureMode"
  :commentary "\
 This code provides the picture-mode commands documented in the Emacs

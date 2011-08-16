@@ -6,7 +6,7 @@
  :maintainer ("Vinicius Jose Latorre" . "viniciusjl@ig.com.br")
  :provided   (ebnf-abn ebnf-bnf ebnf-dtd ebnf-ebx ebnf-iso ebnf-otz ebnf-yac ebnf2ps)
  :required   ((("ps-print" ps-print)))
- :keywords   ("ebnf" "postscript" "wp")
+ :keywords   (ebnf postscript wp)
  :wikipage   "http://www.emacswiki.org/EbnfToPsPackage"
  :commentary "\
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

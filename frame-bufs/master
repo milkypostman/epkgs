@@ -6,7 +6,7 @@
  :authors    (("Alp Aker" . "alp.tekin.aker@gmail.com"))
  :maintainer ("Alp Aker" . "alp.tekin.aker@gmail.com")
  :provided   (frame-bufs)
- :keywords   ("buffers" "convenience")
+ :keywords   (buffers convenience)
  :homepage   "https://github.com/alpaker/Frame-Bufs"
  :wikipage   "http://www.emacswiki.org/FrameBufs"
  :commentary "\

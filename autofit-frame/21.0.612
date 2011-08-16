@@ -9,7 +9,7 @@
 	       ("fit-frame" fit-frame))
 	      (("misc-fns" misc-fns)
 	       ("strings" strings)))
- :keywords   ("convenience" "extensions" "internal" "local")
+ :keywords   (convenience extensions internal local)
  :commentary "\
 Automatically resize one-window frames to fit.
 

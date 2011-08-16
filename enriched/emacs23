@@ -5,7 +5,7 @@
  :authors    (("Boris Goldowsky" . "boris@gnu.org"))
  :maintainer ("Boris Goldowsky" . "boris@gnu.org")
  :provided   (enriched)
- :keywords   ("faces" "wp")
+ :keywords   (faces wp)
  :wikipage   "http://www.emacswiki.org/EnrichedMode"
  :commentary "\
 This file implements reading, editing, and saving files with

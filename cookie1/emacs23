@@ -5,7 +5,7 @@
  :authors    (("Eric S. Raymond" . "esr@snark.thyrsus.com"))
  :maintainer ("FSF")
  :provided   (cookie1)
- :keywords   ("extensions" "games")
+ :keywords   (extensions games)
  :commentary "\
 Support for random cookie fetches from phrase files, used for such
 critical applications as emulating Zippy the Pinhead and confounding

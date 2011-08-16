@@ -5,5 +5,5 @@
  :maintainer (nil . "kyle@nonpolynomial.com")
  :provided   (jerkcity)
  :required   ((("cookie1" cookie1)))
- :keywords   ("also-dongs" "dongs" "games")
+ :keywords   (also-dongs dongs games)
  :homepage   "https://github.com/qdot/jerkcity-project")

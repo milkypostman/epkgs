@@ -6,7 +6,7 @@
  :authors    (("Phil Hagelberg, Doug Alcorn, and Will Farrington"))
  :maintainer ("Phil Hagelberg, Doug Alcorn, and Will Farrington")
  :provided   (find-file-in-project)
- :keywords   ("convenience" "project")
+ :keywords   (convenience project)
  :homepage   "https://github.com/technomancy/find-file-in-project"
  :wikipage   "http://www.emacswiki.org/FindFileInProject"
  :commentary "\

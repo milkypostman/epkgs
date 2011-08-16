@@ -7,7 +7,7 @@
  :maintainer ("Brian Logan" . "b.s.logan@cs.bham.ac.uk")
  :provided   (pop-help-mode)
  :required   ((("cl" cl)))
- :keywords   ("poplog")
+ :keywords   (poplog)
  :commentary "\
 pop-help-mode (was pop-sys-file-mode)
                                                                  
