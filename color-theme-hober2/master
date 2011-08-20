@@ -9,5 +9,6 @@
  :keywords   (local)
  :homepage   "http://edward.oconnor.cx/elisp"
  :commentary "\
-This is my second color theme. Apologies for the formatting; this
-file is automatically extracted from a LaTeX master file.")
+This file has been obsolete (and has not been updated) since I ported
+my color theme to use Emacs' Custom Theme machinery; see
+hober2-theme.el for the latest version.")
