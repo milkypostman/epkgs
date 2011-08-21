@@ -1,0 +1,12 @@
+(:summary    "Control Hg from Emacs"
+ :repository (git . "git://github.com/ananthakumaran/monky.git")
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Anantha kumaran" . "ananthakumaran@gmail.com"))
+ :maintainer ("Anantha kumaran" . "ananthakumaran@gmail.com")
+ :provided   (monky)
+ :required   ((("cl" cl)
+	       ("pcomplete" pcomplete)))
+ :keywords   (tools)
+ :homepage   "https://github.com/ananthakumaran/monky")

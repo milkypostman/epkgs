@@ -1,0 +1,22 @@
+(:summary    "Anything-sources and some utilities for gist"
+ :repository (git . "git://github.com/byplayer/anything-gist.el.git")
+ :created    "20090413"
+ :updated    "2010"
+ :license    "GPL-3"
+ :maintainer ("myuhe")
+ :provided   (anything-gist)
+ :required   ((("anything" anything)
+	       ("cl" cl)
+	       ("gist" gist)))
+ :keywords   (anything convenience gist git)
+ :homepage   "https://github.com/byplayer/anything-gist.el"
+ :commentary "\
+It is necessary to Some Anything and gist.el Configurations 
+
+
+Installation:
+
+Put the gist.el to your
+load-path.
+Add to .emacs:
+(require 'anything-gist)")

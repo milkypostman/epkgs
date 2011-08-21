@@ -1,0 +1,31 @@
+(:summary    "Harvest e-mail address from read/written articles"
+ :repository (git . "git://github.com/jwiegley/gnus-harvest.git")
+ :created    "20110815"
+ :updated    "2011"
+ :license    "GPL-2"
+ :authors    (("John Wiegley" . "johnw@gnu.org"))
+ :maintainer ("John Wiegley" . "johnw@gnu.org")
+ :provided   (gnus-harvest)
+ :required   ((("gnus" gnus)
+	       ("mailalias" mailalias)
+	       ("sendmail" sendmail))
+	      (("bbdb" bbdb bbdb-com)))
+ :keywords   (email gnus)
+ :homepage   "https://github.com/jwiegley/gnus-harvest"
+ :commentary "\
+This code requires that SQLite3 be installed.  Check to see if the command
+\"sqlite3\" is already available on your system.
+
+Once you have that, add this to your .emacs:
+
+  (eval-after-load \"gnus\"
+    '(progn (require 'gnus-harvest)
+            (gnus-harvest-install)))
+
+If you use message-x and ido, you can get TAB completion of harvested
+address in your To:, Cc: and From: fields by using this instead of the
+above:
+
+  (eval-after-load \"gnus\"
+    '(progn (require 'gnus-harvest)
+            (gnus-harvest-install 'message-x)))")

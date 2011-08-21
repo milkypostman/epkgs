@@ -1,0 +1,38 @@
+(:summary    "Extensible vi layer"
+ :repository (git . "git://gitorious.org/evil/evil.git")
+ :created    "20110301"
+ :license    "GPL-2"
+ :authors    (("Frank Fischer" . "frank.fischer@mathematik.tu-chemnitz.de")
+	      ("Vegard Øye" . "vegard_oye@hotmail.com")
+	      ("Nikolai Weibull" . "now@bitwi.se"))
+ :provided   (ert evil evil-common evil-compatibility evil-digraphs evil-ex evil-insert evil-integration evil-interactive evil-maps evil-motions evil-operators evil-repeat evil-replace evil-search evil-states evil-tests evil-types evil-undo evil-vars evil-visual evil-window goto-chg undo-tree)
+ :required   ((("button" button)
+	       ("cl" cl)
+	       ("debug" debug)
+	       ("easymenu" easymenu)
+	       ("elp" elp)
+	       ("ewoc" ewoc)
+	       ("ffap" ffap)
+	       ("find-func" find-func)
+	       ("help" help)
+	       ("imenu" imenu)
+	       ("rect" rect)
+	       ("windmove" windmove)))
+ :keywords   (emulation vim)
+ :homepage   "http://gitorious.org/evil"
+ :commentary "\
+Evil is an extensible vi layer for Emacs. It emulates the main
+features of Vim, and provides facilities for writing custom
+extensions.
+
+Evil lives in a Git repository. To obtain Evil, do
+
+     git clone git://gitorious.org/evil/evil.git
+
+Evil is discussed at <implementations-list at lists.ourproject.org>,
+a mailing list to which you can subscribe at:
+
+http://lists.ourproject.org/cgi-bin/mailman/listinfo/implementations-list
+
+Subscription is not required; we usually reply within a few days
+and CC our replies back to you.")

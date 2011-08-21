@@ -1,0 +1,9 @@
+(:summary    "Run a ruby process in a compilation buffer"
+ :repository (git . "git://github.com/jpablobr/ruby-comint.el.git")
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Jose Pablo Barrantes" . "xjpablobrx@gmail.com"))
+ :maintainer ("Jose Pablo Barrantes" . "xjpablobrx@gmail.com")
+ :provided   (ruby-comint)
+ :homepage   "https://github.com/jpablobr/ruby-comint.el")

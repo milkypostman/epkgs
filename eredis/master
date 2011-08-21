@@ -1,0 +1,5 @@
+(:repository (svn . "http://eredis.googlecode.com/svn")
+ :provided   (eredis)
+ :required   ((("cl" cl)
+	       ("org-mode" org-table)))
+ :homepage   "http://code.google.com/p/eredis")
