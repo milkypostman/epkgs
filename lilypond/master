@@ -8,5 +8,5 @@
 	       ("compile" compile)
 	       ("easymenu" easymenu)
 	       ("ecasound" ecasound)
-	       ("ilisp" ilisp)))
+	       (nil ilisp)))
  :homepage   "http://lilypond.org")

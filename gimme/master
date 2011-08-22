@@ -3,7 +3,7 @@
  :license    "GPL-2"
  :authors    (("Konrad Scorciapino" . "scorciapino@gmail.com"))
  :maintainer ("Konrad Scorciapino" . "scorciapino@gmail.com")
- :provided   (gimme gimme-augmented gimme-autocomplete gimme-bookmark gimme-custom gimme-eq gimme-etc gimme-filter gimme-inspect gimme-lyrics gimme-playlist gimme-status-mode gimme-tagwriter gimme-utils)
+ :provided   (gimme gimme-augmented gimme-autocomplete gimme-bookmark gimme-collection gimme-custom gimme-emacs gimme-eq gimme-inspect gimme-playlist gimme-status-mode gimme-tagwriter gimme-utils)
  :required   ((("hexrgb" hexrgb)
 	       ("htmlr" htmlr)
 	       ("timer" timer)))
