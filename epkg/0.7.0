@@ -1,0 +1,27 @@
+(:summary    "The stupid package tracker for Emacs"
+ :repository (git . "git://github.com/tarsius/epkg.git")
+ :created    "20100101"
+ :updated    "20110823"
+ :license    "GPL-3"
+ :authors    (("Jonas Bernoulli" . "jonas@bernoul.li"))
+ :maintainer ("Jonas Bernoulli" . "jonas@bernoul.li")
+ :provided   (epkg epkg-ui)
+ :required   ((("cl" cl)
+	       ("finder" finder)
+	       ("help-mode" help-mode)
+	       ("listing" listing)
+	       ("magit" magit)
+	       ("map-progress" map-progress)
+	       ("vcomp" vcomp))
+	      (("oddmuse" oddmuse)
+	       ("yaoddmuse" yaoddmuse)))
+ :keywords   (git libraries packages)
+ :homepage   "https://github.com/tarsius/epkg"
+ :commentary "\
+The stupid package tracker for Emacs.
+
+       ,- going to be
+       |
+Epkg is a package manager for Emacs packages.  It makes heavy use of
+Git - the stupid content tracker.  Packages are installed by cloning
+the package's git repository from the Emacsmirror.")
