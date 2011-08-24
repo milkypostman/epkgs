@@ -1,6 +1,6 @@
 (:summary    "Extensions to `info.el'"
  :created    "19950912"
- :updated    "20110224"
+ :updated    "20110823"
  :license    "GPL-2"
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")
