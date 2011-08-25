@@ -1,0 +1,6 @@
+(:license    "GPL-2"
+ :authors    (("Mark Oakden" . "mark@oakden.org"))
+ :maintainer ("Mark Oakden" . "mark@oakden.org")
+ :provided   (ics)
+ :required   ((("comint" comint)
+	       ("emacs-core" overlay))))

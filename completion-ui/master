@@ -1,5 +1,5 @@
-(:created    "2009"
- :updated    "2009"
+(:created    "2010"
+ :updated    "2010"
  :license    "GPL-2"
  :authors    (("Toby Cubitt" . "toby-predictive@dr-qubit.org"))
  :maintainer ("Toby Cubitt" . "toby-predictive@dr-qubit.org")
@@ -9,7 +9,8 @@
 	       ("dabbrev" dabbrev)
 	       ("etags" etags)
 	       ("flyspell" flyspell)
-	       ("ispell" ispell))
+	       ("ispell" ispell)
+	       ("pos-tip" pos-tip))
 	      (("cedet" semantic)
 	       (nil nxml)))
  :keywords   (completion ui user\ interface)

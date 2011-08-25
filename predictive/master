@@ -1,9 +1,9 @@
-(:created    "2009"
- :updated    "2009"
+(:created    "2010"
+ :updated    "2010"
  :license    "GPL-2"
  :authors    (("Toby Cubitt" . "toby-predictive@dr-qubit.org"))
  :maintainer ("Toby Cubitt" . "toby-predictive@dr-qubit.org")
- :provided   (dict-tree heap predictive predictive-auto-overlay-auto-dict predictive-html predictive-latex predictive-latex-graphicx predictive-texinfo queue tNFA trie)
+ :provided   (dict-tree heap pos-tip predictive predictive-auto-overlay-auto-dict predictive-html predictive-latex predictive-latex-graphicx predictive-texinfo queue tNFA trie)
  :required   ((("advice" advice)
 	       ("auto-overlays" auto-overlay-flat auto-overlay-line auto-overlay-nested auto-overlay-self auto-overlay-word auto-overlays)
 	       ("avl-tree" avl-tree)
