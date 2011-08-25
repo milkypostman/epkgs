@@ -19,7 +19,6 @@
 	       ("grep" grep)
 	       ("imenu" imenu)
 	       ("info" info)
-	       ("iswitchb" iswitchb)
 	       ("jabber" jabber)
 	       ("org-mode" org)
 	       ("recentf" recentf)
@@ -37,7 +36,6 @@
 	       ("bm" bm)
 	       ("cedet" semantic)
 	       ("filecache" filecache)
-	       ("fit-frame" fit-frame)
 	       ("gtags" gtags)
 	       ("ipa" ipa)
 	       ("migemo" migemo)
@@ -50,22 +48,22 @@
  :commentary "\
 Start with M-x anything, narrow the list by typing some pattern,
 select with up/down/pgup/pgdown/C-p/C-n/C-v/M-v, choose with enter,
-left/right moves between sources. With TAB actions can be selected
+left/right moves between sources.  With TAB actions can be selected
 if the selected candidate has more than one possible action.
 
 Note that anything.el provides only the framework and some example
-configurations for demonstration purposes. See anything-config.el
+configurations for demonstration purposes.  See anything-config.el
 for practical, polished, easy to use configurations which can be
-used to assemble a custom personalized configuration. And many
+used to assemble a custom personalized configuration.  And many
 other configurations are in the EmacsWiki.
 
 http://www.emacswiki.org/cgi-bin/wiki/download/anything-config.el
 http://www.emacswiki.org/cgi-bin/emacs/AnythingSources
 
-Maintainer's configuration is in the EmacsWiki. It would tell you
+Maintainer's configuration is in the EmacsWiki.  It would tell you
 many tips to write smart sources!
 
 http://www.emacswiki.org/cgi-bin/emacs/RubikitchAnythingConfiguration
 
-Here is Japanese translation of `anything-sources' attributes. Thanks.
+Here is Japanese translation of `anything-sources' attributes.  Thanks.
 http://d.hatena.ne.jp/sirocco634/20091012/1255336649")

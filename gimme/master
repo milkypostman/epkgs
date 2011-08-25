@@ -1,8 +1,8 @@
 (:summary    "GIMME Interesting Music on My Emacs"
  :repository (git . "git://github.com/konr/GIMME.git")
  :license    "GPL-2"
- :authors    (("Konrad Scorciapino" . "scorciapino@gmail.com"))
- :maintainer ("Konrad Scorciapino" . "scorciapino@gmail.com")
+ :authors    (("Konrad Scorciapino" . "konr@konr.mobi"))
+ :maintainer ("Konrad Scorciapino" . "konr@konr.mobi")
  :provided   (gimme gimme-augmented gimme-autocomplete gimme-bookmark gimme-collection gimme-custom gimme-emacs gimme-eq gimme-inspect gimme-playlist gimme-status-mode gimme-tagwriter gimme-utils)
  :required   ((("hexrgb" hexrgb)
 	       ("htmlr" htmlr)
