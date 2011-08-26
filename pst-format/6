@@ -6,7 +6,7 @@
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (pst-format)
  :keywords   (data)
- :homepage   "http://user42.tuxfamily.org/pst-format/index.html"
+ :homepage   "http://user42.tuxfamily.org/pst-format"
  :commentary "\
 This is a bit of fun turning perl \"Storable\" module binary data into
 something human readable, just with Data::Dumper.  There's no re-writing

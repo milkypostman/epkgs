@@ -3,4 +3,4 @@
  :license    "GPL-2"
  :maintainer ("Noah Friedman" . "friedman@prep.ai.mit.edu")
  :provided   (hack-locals)
- :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html")
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp")

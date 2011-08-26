@@ -5,7 +5,7 @@
  :maintainer ("Noah Friedman" . "friedman@prep.ai.mit.edu")
  :provided   (horoscope)
  :keywords   (extensions)
- :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
  :commentary "\
 Bob Manson originally wrote this program in ksh,
 then later converted it to emacs lisp.

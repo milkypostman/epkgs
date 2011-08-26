@@ -6,7 +6,7 @@
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (perl-quote)
  :keywords   (languages)
- :homepage   "http://user42.tuxfamily.org/perl-quote/index.html"
+ :homepage   "http://user42.tuxfamily.org/perl-quote"
  :commentary "\
 This spot of code converts Perl single-quote '' strings to \"\", or back
 again.  q{} and qq{} styles are supported, as are Locale::TextDomain

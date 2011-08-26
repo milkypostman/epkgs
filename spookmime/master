@@ -6,7 +6,7 @@
  :maintainer (nil . "friedman@splode.com")
  :provided   (spookmime)
  :keywords   (fnord)
- :homepage   "ftp://ftp.splode.com/pub/users/friedman/emacs-lisp"
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
  :commentary "\
 Original concept by Bryan O'Sullivan <bos@serpentine.com>.
 

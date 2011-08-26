@@ -8,7 +8,7 @@
  :provided   (linkd)
  :required   ((("cl" cl)
 	       ("easymenu" easymenu))
-	      ((nil htmlize)))
+	      (("htmlize" htmlize)))
  :keywords   (help hypermedia)
  :homepage   "http://www.emacswiki.org/LinkdMode"
  :wikipage   "http://www.emacswiki.org/LinkdMode"

@@ -7,7 +7,7 @@
  :provided   (ffap-gcc-path)
  :required   ((("ffap" ffap)))
  :keywords   (files)
- :homepage   "http://user42.tuxfamily.org/ffap-gcc-path/index.html"
+ :homepage   "http://user42.tuxfamily.org/ffap-gcc-path"
  :commentary "\
 The default `ffap-c-path' is \"/usr/include\" and \"/usr/local/include\",
 but gcc has a separate directory for bits it provides, like float.h.

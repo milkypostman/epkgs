@@ -4,4 +4,4 @@
  :authors    (("Noah Friedman" . "friedman@prep.ai.mit.edu"))
  :maintainer (nil . "friedman@prep.ai.mit.edu")
  :provided   (geek)
- :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html")
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp")

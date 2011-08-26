@@ -6,4 +6,4 @@
  :maintainer (nil . "friedman@splode.com")
  :provided   (kbd-fns)
  :required   ((("list-fns" list-fns)))
- :homepage   "ftp://ftp.splode.com/pub/users/friedman/emacs-lisp")
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp")

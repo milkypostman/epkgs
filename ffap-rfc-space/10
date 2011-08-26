@@ -8,7 +8,7 @@
  :required   ((("advice" advice)
 	       ("ffap" ffap)))
  :keywords   (files)
- :homepage   "http://user42.tuxfamily.org/ffap-rfc-space/index.html"
+ :homepage   "http://user42.tuxfamily.org/ffap-rfc-space"
  :commentary "\
 M-x ffap doesn't recognise a space in an RFC like \"RFC 1234\", only say
 \"RFC-1234\".  The entry in `ffap-alist' in Emacs 22 and earlier allows it,

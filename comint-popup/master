@@ -7,7 +7,7 @@
  :provided   (comint-popup)
  :required   ((("pb-popup" pb-popup)))
  :keywords   (comint extensions processes)
- :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
  :commentary "\
 This program is enabled by putting something like the
 following in your .emacs:

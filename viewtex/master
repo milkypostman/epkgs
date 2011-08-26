@@ -3,4 +3,4 @@
  :license    "GPL-2"
  :provided   (viewtex)
  :required   ((("comint" comint)))
- :homepage   "ftp://ftp.splode.com/pub/users/friedman/emacs-lisp")
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp")

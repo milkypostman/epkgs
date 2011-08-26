@@ -10,7 +10,7 @@
 	       ("uboat" uboat)
 	       ("youwill" youwill)))
  :keywords   (extensions mail)
- :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
  :commentary "\
 To use this, put the following in your .emacs:
 

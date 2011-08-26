@@ -6,7 +6,7 @@
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (perl-use-utf8-coding)
  :required   ((("advice" advice)))
- :homepage   "http://user42.tuxfamily.org/perl-use-utf8-coding/index.html"
+ :homepage   "http://user42.tuxfamily.org/perl-use-utf8-coding"
  :commentary "\
 This spot of code gets an Emacs coding system from a \"use utf8;\" pragma
 in Perl code.  That pragma means strings and identifiers have or may have

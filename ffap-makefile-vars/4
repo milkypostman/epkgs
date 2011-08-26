@@ -7,7 +7,7 @@
  :provided   (ffap-makefile-vars)
  :required   ((("advice" advice)))
  :keywords   (files)
- :homepage   "http://user42.tuxfamily.org/ffap-makefile-vars/index.html"
+ :homepage   "http://user42.tuxfamily.org/ffap-makefile-vars"
  :commentary "\
 This spot of code lets M-x ffap expand makefile macros $(FOO) in a
 filename, like

@@ -6,7 +6,7 @@
  :maintainer (nil . "friedman@splode.com")
  :provided   (lat1conv)
  :keywords   (extensions)
- :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
  :commentary "\
 Perform conversion of some Latin-1 (same as iso8859-1) to equivalent
 7-bit ascii sequences when possible.  I wrote this for converting mail

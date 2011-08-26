@@ -8,7 +8,7 @@
  :required   ((("advice" advice)
 	       ("custom" cus-face)
 	       ("emacs-core" disp-table)))
- :homepage   "http://user42.tuxfamily.org/unicode-disp/index.html"
+ :homepage   "http://user42.tuxfamily.org/unicode-disp"
  :commentary "\
 M-x unicode-disp changes the display table to show selected unicode chars
 as ascii equivalents or near equivalents.  The chars affected are a

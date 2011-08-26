@@ -6,4 +6,4 @@
  :maintainer ("Noah Friedman" . "friedman@splode.com")
  :provided   (twiki-outline)
  :required   ((("outline" outline)))
- :homepage   "ftp://ftp.splode.com/pub/users/friedman/emacs-lisp")
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp")

@@ -6,7 +6,7 @@
 	      ("Vegard Øye" . "vegard_oye@hotmail.com"))
  :maintainer ("Please send bug reports to the mailing list (below).")
  :provided   (surround)
- :required   (((nil evil)))
+ :required   ((("evil" evil)))
  :keywords   (emulation evil vi)
  :homepage   "https://github.com/timcharper/evil-surround"
  :commentary "\

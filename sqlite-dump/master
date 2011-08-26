@@ -9,7 +9,7 @@
 	       ("apel" poe)
 	       ("cl" cl)))
  :keywords   (data)
- :homepage   "http://user42.tuxfamily.org/sqlite-dump/index.html"
+ :homepage   "http://user42.tuxfamily.org/sqlite-dump"
  :wikipage   "http://www.emacswiki.org/SqliteDump"
  :commentary "\
 This spot of code runs the sqlite3 program to \".dump\" a database file as

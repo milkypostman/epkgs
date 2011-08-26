@@ -6,7 +6,7 @@
  :maintainer (nil . "friedman@splode.com")
  :provided   (what-domain)
  :keywords   (extensions)
- :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
  :commentary "\
 For several years there has been a command `what-domain' defined in
 mail-extr.el, which is shipped with Emacs.  But it has several

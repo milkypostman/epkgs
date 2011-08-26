@@ -5,4 +5,4 @@
  :provided   (w3m-multibookmarks)
  :required   ((("cl" cl)
 	       ("w3m" w3m w3m-util)))
- :homepage   "http://www.well.com/~discover/emacs-w3m-stuff")
+ :homepage   "http://www.well.com/~discover")

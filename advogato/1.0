@@ -7,6 +7,7 @@
  :provided   (advogato)
  :required   ((("url" url)
 	       ("xml-rpc" xml-rpc)))
+ :homepage   "http://www.zerobeat.in"
  :commentary "\
 advogato.el implements the XML-RPC interface to advogato.org
 Needs xml-rpc.el from http://elisp.info/

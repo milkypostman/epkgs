@@ -4,4 +4,4 @@
  :authors    (("Noah Friedman" . "friedman@prep.ai.mit.edu"))
  :maintainer ("Noah Friedman" . "friedman@prep.ai.mit.edu")
  :provided   (rmail-frobs)
- :homepage   "ftp://ftp.splode.com/pub/users/friedman/emacs-lisp")
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp")

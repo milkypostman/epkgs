@@ -7,7 +7,7 @@
  :provided   (ftcp)
  :required   ((("advice" advice)))
  :keywords   (extensions)
- :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
  :commentary "\
 In Emacs 19.30 and prior, emacs can hang indefinitely during a call to
 open-network-stream if the remote host is down, because it must wait for

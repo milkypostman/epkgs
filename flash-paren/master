@@ -8,7 +8,7 @@
  :required   ((("custom" custom)
 	       ("timer" timer)))
  :keywords   (extensions)
- :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
  :commentary "\
 Loading this makes emacs's paren blinking behavior more closely
 approximate the behavior of Zmacs.  It should work under X or on ascii

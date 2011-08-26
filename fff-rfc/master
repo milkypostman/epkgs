@@ -6,4 +6,4 @@
  :maintainer (nil . "friedman@splode.com")
  :provided   (fff-rfc)
  :required   ((("fff" fff)))
- :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html")
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp")

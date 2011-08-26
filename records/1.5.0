@@ -8,11 +8,11 @@
 	       ("easymenu" easymenu)
 	       ("emacs-core" font-lock)
 	       ("gnus" gnus)
+	       ("htmlize" htmlize)
 	       ("imenu" imenu)
 	       ("mail-utils" mail-utils)
 	       ("mailcrypt" mailcrypt)
 	       ("tempo" tempo)
-	       ("url" url)
-	       (nil htmlize)))
+	       ("url" url)))
  :homepage   "http://sourceforge.net/projects/records"
  :wikipage   "http://www.emacswiki.org/RecordsMode")

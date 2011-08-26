@@ -7,7 +7,7 @@
  :provided   (compilation-always-kill)
  :required   ((("advice" advice)))
  :keywords   (processes)
- :homepage   "http://user42.tuxfamily.org/compilation-always-kill/index.html"
+ :homepage   "http://user42.tuxfamily.org/compilation-always-kill"
  :commentary "\
 `compilation-always-kill-mode' minor mode makes M-x compile kill any
 existing compilation process without its normal `yes-or-no-p' query.

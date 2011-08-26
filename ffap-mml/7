@@ -8,7 +8,7 @@
  :required   ((("advice" advice)
 	       ("ffap" ffap)))
  :keywords   (files)
- :homepage   "http://user42.tuxfamily.org/ffap-mml/index.html"
+ :homepage   "http://user42.tuxfamily.org/ffap-mml"
  :commentary "\
 This spot of code to lets M-x ffap find a file attached as a Gnus message
 meta-language (MML) part, as per `C-c C-a' (mml-attach-part) when

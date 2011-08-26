@@ -6,7 +6,7 @@
  :maintainer (nil . "friedman@splode.com")
  :provided   (ns-browse)
  :keywords   (extensions)
- :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
  :commentary "\
 Updates of this program may be available via the URL
 http://www.splode.com/~friedman/software/emacs-lisp/

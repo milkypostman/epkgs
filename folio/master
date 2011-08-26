@@ -1,5 +1,4 @@
 (:summary    "GNOME-integrated notetaking system built on Org"
- :repository (git . "git://github.com/dto/folio.git")
  :created    "2009"
  :updated    "2009"
  :license    "GPL-3"

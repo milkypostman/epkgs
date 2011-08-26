@@ -6,7 +6,7 @@
  :maintainer (nil . "friedman@splode.com")
  :provided   (save-undo)
  :keywords   (extensions)
- :homepage   "ftp://ftp.splode.com/pub/users/friedman/emacs-lisp"
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
  :commentary "\
 The default behavior of undo is that when editing in one buffer, an
 undo boundary is created in another buffer the first time it is edited.

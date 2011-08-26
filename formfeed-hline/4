@@ -7,7 +7,7 @@
  :provided   (formfeed-hline)
  :required   ((("emacs-core" disp-table)))
  :keywords   (frames)
- :homepage   "http://user42.tuxfamily.org/formfeed-hline/index.html"
+ :homepage   "http://user42.tuxfamily.org/formfeed-hline"
  :commentary "\
 `M-x formfeed-hline-mode' global minor mode displays control-L formfeeds
 as a horizontal line like

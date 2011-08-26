@@ -4,7 +4,7 @@
  :license    "GPL-2"
  :authors    (("Jesse Rosenthal" . "jesse.k.rosenthal@gmail.com"))
  :maintainer ("Jesse Rosenthal" . "jesse.k.rosenthal@gmail.com")
- :homepage   "http://www.columbia.edu/~jr2075/elisp/index.html"
+ :homepage   "http://columbia.edu/~jr2075/elisp"
  :commentary "\
 This just adds in a feature I can't see to find in AUCTeX: the
 ability to do on-the-fly rewriting of three dots as `\\ldots'. Not a

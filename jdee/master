@@ -23,6 +23,7 @@
 	       ("etags" etags)
 	       ("executable" executable)
 	       ("flymake" flymake)
+	       ("htmlize" htmlize)
 	       ("imenu" imenu)
 	       ("jdee" jde-autoload)
 	       ("regexp-opt" regexp-opt)
@@ -31,7 +32,7 @@
 	       ("thingatpt" thingatpt)
 	       ("tree-widget" tree-widget)
 	       ("widget" wid-edit widget)
-	       (nil htmlize semantic/senator)))
+	       (nil semantic/senator)))
  :keywords   (java tools)
  :homepage   "http://jdee.sourceforge.net"
  :wikipage   "http://www.emacswiki.org/JavaDevelopmentEnvironment")

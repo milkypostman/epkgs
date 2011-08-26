@@ -8,7 +8,7 @@
  :required   ((("advice" advice)
 	       ("ffap" ffap)))
  :keywords   (files)
- :homepage   "http://user42.tuxfamily.org/ffap-rfc-directories/index.html"
+ :homepage   "http://user42.tuxfamily.org/ffap-rfc-directories"
  :commentary "\
 This spot of code makes M-x ffap look in some local directories for RFC
 files before offering the ftp download in `ffap-rfc-path'.  It's good if

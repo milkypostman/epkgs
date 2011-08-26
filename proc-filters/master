@@ -6,7 +6,7 @@
  :maintainer (nil . "friedman@splode.com")
  :provided   (proc-filters)
  :keywords   (extensions)
- :homepage   "ftp://ftp.splode.com/pub/users/friedman/emacs-lisp"
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
  :commentary "\
 These are basically my templates for useful process filters.
 They have been designed to work with inferior processes that may emit

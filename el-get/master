@@ -11,8 +11,7 @@
 	       ("help-mode" help-mode)
 	       ("info" info)
 	       ("notify" notify))
-	      (("package" package)
-	       (nil notifications)))
+	      ((nil notifications package)))
  :keywords   (apt-get bzr cvs darcs elisp elpa emacs emacswiki fink git git-svn hg http http-tar install package pacman svn)
  :homepage   "https://github.com/dimitri/el-get"
  :commentary "\

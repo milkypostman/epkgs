@@ -6,7 +6,7 @@
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (do-not-edit)
  :keywords   (convenience)
- :homepage   "http://user42.tuxfamily.org/do-not-edit/index.html"
+ :homepage   "http://user42.tuxfamily.org/do-not-edit"
  :commentary "\
 This spot of code makes a buffer read-only if it contains \"DO NOT EDIT\"
 or \"DO NOT MODIFY\", to keep you from accidentally editing generated

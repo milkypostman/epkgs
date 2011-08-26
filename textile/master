@@ -1,4 +1,3 @@
-(:repository (git . "git://zancanda.staticcling.org/textile.git")
- :license    "GPL-2"
+(:license    "GPL-2"
  :provided   (textile textile2)
  :wikipage   "http://www.emacswiki.org/TextileMode")

@@ -6,7 +6,7 @@
  :maintainer (nil . "friedman@splode.com")
  :provided   (diacriticalize)
  :keywords   (extensions)
- :homepage   "ftp://ftp.splode.com/pub/users/friedman/emacs-lisp"
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
  :commentary "\
 These commands let one pepper regions of text with gratuitous
 diacritical marks (and remove them).  There is no particularly good

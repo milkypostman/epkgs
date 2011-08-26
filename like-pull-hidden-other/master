@@ -1,5 +1,4 @@
-(:repository (git . "git://github.com/kitokitoki/like-pull-hidden-other-el.git")
- :created    "2009"
+(:created    "2009"
  :updated    "2009"
  :license    "GPL-3"
  :authors    (("kitokitoki" . "morihenotegami@gmail.com"))

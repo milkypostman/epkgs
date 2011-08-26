@@ -7,7 +7,7 @@
  :provided   (fff-elisp)
  :required   ((("fff" fff)))
  :keywords   (commands extensions files searching tools)
- :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
  :commentary "\
 This package is an extension of fff.el which provides shortcut commands
 for visiting emacs lisp libraries based on file name or function defined

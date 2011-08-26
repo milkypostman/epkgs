@@ -12,12 +12,12 @@
 	       ("dired" dired)
 	       ("emacs-core" derived font-lock pp)
 	       ("gnus" pgg pgg-gpg)
+	       ("htmlize" htmlize)
 	       ("httpd" httpd)
 	       ("info" info)
 	       ("table" table)
 	       ("vc" vc vc-hooks)
-	       ("xml-parse" xml-parse)
-	       (nil htmlize)))
+	       ("xml-parse" xml-parse)))
  :keywords   (hypermedia)
  :homepage   "http://mwolson.org/projects/EmacsWikiMode.html"
  :wikipage   "http://www.emacswiki.org/EmacsWikiMode"

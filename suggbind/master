@@ -7,7 +7,7 @@
  :provided   (suggbind)
  :required   ((("advice" advice)))
  :keywords   (extensions)
- :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
  :commentary "\
 Emacs 19.30 changed the behavior of execute-extended-command (i.e. the
 command which lets you run other commands by typing ``M-x foo'' so that

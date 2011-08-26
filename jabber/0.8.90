@@ -1,0 +1,24 @@
+(:repository (git . "git://emacs-jabber.git.sourceforge.net/gitroot/emacs-jabber/emacs-jabber")
+ :created    "2003"
+ :updated    "2008"
+ :license    "GPL-2"
+ :provided   (fsm jabber jabber-activity jabber-ahc jabber-ahc-presence jabber-alert jabber-autoaway jabber-avatar jabber-awesome jabber-bookmarks jabber-browse jabber-chat jabber-chatbuffer jabber-chatstates jabber-compose jabber-conn jabber-console jabber-core jabber-disco jabber-events jabber-export jabber-feature-neg jabber-festival jabber-ft-client jabber-ft-common jabber-ft-server jabber-gmail jabber-history jabber-iq jabber-keepalive jabber-keymap jabber-libnotify jabber-logon jabber-menu jabber-modeline jabber-muc jabber-muc-nick-coloring jabber-muc-nick-completion jabber-newdisco jabber-osd jabber-ourversion jabber-ping jabber-presence jabber-private jabber-ratpoison jabber-register jabber-roster jabber-sasl jabber-sawfish jabber-screen jabber-search jabber-si-client jabber-si-common jabber-si-server jabber-socks5 jabber-time jabber-truncate jabber-util jabber-vcard jabber-vcard-avatars jabber-version jabber-watch jabber-widget jabber-wmii jabber-xmessage jabber-xml srv)
+ :required   ((("assoc" assoc)
+	       ("button" button)
+	       ("cl" cl)
+	       ("ewoc" ewoc)
+	       ("festival" festival)
+	       ("gnus" dns format-spec mailcap sasl sha1 starttls time-date tls)
+	       ("hexrgb" hexrgb)
+	       ("hippie-exp" hippie-exp)
+	       ("jabber" jabber-autoloads)
+	       ("osd" osd)
+	       ("sgml-mode" sgml-mode)
+	       ("twittering-mode" ssl)
+	       ("widget" wid-edit widget)
+	       ("xml" xml)
+	       (nil password sha1-el))
+	      (("dbus" dbus)
+	       ("gnus" password-cache)))
+ :homepage   "http://emacs-jabber.sourceforge.net"
+ :wikipage   "http://www.emacswiki.org/JabberEl")

@@ -1,5 +1,4 @@
 (:summary    "Text file tag navigator with etags search integration"
- :repository (git . "git://github.com/dto/radio.git")
  :created    "2007"
  :updated    "2008"
  :license    "GPL-3"

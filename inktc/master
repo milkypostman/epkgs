@@ -7,7 +7,7 @@
  :provided   (inktc)
  :required   ((("comint" comint)))
  :keywords   (communication extensions)
- :homepage   "ftp://ftp.splode.com/pub/users/friedman/emacs-lisp"
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
  :commentary "\
 inktc is a chat system written by Marco Nicosia <marco@inktomi.com>.
 inktc.el derived from agchat.el.")

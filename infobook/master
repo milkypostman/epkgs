@@ -7,6 +7,6 @@
  :provided   (infobook)
  :required   ((("info" info)))
  :keywords   (extensions)
- :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
  :commentary "\
 TODO: Add keymaps?")

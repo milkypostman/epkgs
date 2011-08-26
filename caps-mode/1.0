@@ -2,6 +2,7 @@
  :created    "2004"
  :updated    "2004"
  :license    "GPL-2"
+ :homepage   "http://tromey.com/elpa"
  :commentary "\
 This is a simple minor mode in which all letters are inserted in
 captialized form.  It works for Latin-1 as well as ASCII.

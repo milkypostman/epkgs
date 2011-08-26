@@ -7,7 +7,7 @@
  :provided   (scroll-1)
  :required   ((("view" view)))
  :keywords   (convenience)
- :homepage   "http://user42.tuxfamily.org/scroll-1/index.html"
+ :homepage   "http://user42.tuxfamily.org/scroll-1"
  :commentary "\
 This spot of code sets up keys j and k to scroll the window up or down
 one line in chosen major modes.")

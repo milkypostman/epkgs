@@ -6,7 +6,7 @@
 	      ("Noah Friedman" . "friedman@splode.com"))
  :maintainer (nil . "friedman@splode.com")
  :provided   (vkill)
- :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
  :commentary "\
 M-x vkill creates a buffer containing ps(1) output and allows you to
 mvoe around in it marking processes to be sent a signal.  Type a `?'

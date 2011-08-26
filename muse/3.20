@@ -14,6 +14,7 @@
 	       ("emacs-core" derived font-lock pp)
 	       ("footnote" footnote)
 	       ("gnus" message)
+	       ("htmlize" htmlize)
 	       ("httpd" httpd)
 	       ("info" info)
 	       ("man" man)
@@ -22,8 +23,7 @@
 	       ("texnfo-upd" texnfo-upd)
 	       ("widget" wid-edit)
 	       ("woman" woman)
-	       ("xml" xml)
-	       (nil htmlize)))
+	       ("xml" xml)))
  :keywords   (hypermedia)
  :homepage   "http://mwolson.org/projects/EmacsMuse.html"
  :wikipage   "http://www.emacswiki.org/EmacsMuse"

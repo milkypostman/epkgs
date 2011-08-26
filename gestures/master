@@ -1,5 +1,4 @@
 (:summary    "Configuration for strokes-mode with a touchscreen"
- :repository (git . "git://github.com/dto/emacs-gestures.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"

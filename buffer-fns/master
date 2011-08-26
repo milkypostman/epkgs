@@ -8,7 +8,7 @@
  :required   ((("emacs-core" pp)
 	       ("emacs-variants" emacs-variants)
 	       ("list-fns" list-fns)))
- :homepage   "ftp://ftp.splode.com/pub/users/friedman/emacs-lisp"
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
  :commentary "\
 This package defines a number of other unrelated functions, except that
 they all more or less have to do with buffer manipulation, buffer or

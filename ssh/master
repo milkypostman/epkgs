@@ -8,7 +8,7 @@
  :required   ((("comint" comint)
 	       ("shell" shell)))
  :keywords   (comm unix)
- :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
  :commentary "\
 Support for remote logins using `ssh'.
 This program is layered on top of shell.el; the code here only accounts

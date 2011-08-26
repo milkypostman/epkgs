@@ -6,7 +6,7 @@
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (filladapt-pat)
  :keywords   (convenience)
- :homepage   "http://user42.tuxfamily.org/filladapt-pat/index.html"
+ :homepage   "http://user42.tuxfamily.org/filladapt-pat"
  :commentary "\
 This is some functions to add or remove patterns filladapt uses for
 paragraph filling.  They're designed to go in a mode hook and operate

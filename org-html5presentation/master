@@ -6,9 +6,9 @@
  :maintainer ("Carsten Dominik" . "carsten@orgmode.org")
  :provided   (org-html5presentation)
  :required   ((("cl" cl)
+	       ("htmlize" htmlize)
 	       ("org-mode" org-exp org-table)
-	       ("table" table)
-	       (nil htmlize)))
+	       ("table" table)))
  :keywords   (calendar hypermedia outlines wp)
  :homepage   "http://orgmode.org"
  :commentary "\

@@ -8,7 +8,7 @@
  :required   ((("advice" advice)
 	       ("apropos" apropos)))
  :keywords   (extensions)
- :homepage   "http://user42.tuxfamily.org/bytecomp-simplify/index.html"
+ :homepage   "http://user42.tuxfamily.org/bytecomp-simplify"
  :commentary "\
 This spot of code add warnings to the byte compiler to report on possible
 simplifications in the code compiled.  Eg. (kill-buffer (current-buffer))

@@ -8,6 +8,7 @@
  :required   ((("advice" advice)
 	       ("vm-addons" vm-addons)
 	       ("win-disp-util" win-disp-util)))
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
  :commentary "\
 These patches cannot be autoloaded.
 To use, require it in ~/.vm.")

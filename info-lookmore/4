@@ -7,7 +7,7 @@
  :provided   (info-lookmore)
  :required   ((("info-look" info-look)))
  :keywords   (help info-look languages)
- :homepage   "http://user42.tuxfamily.org/info-lookmore/index.html"
+ :homepage   "http://user42.tuxfamily.org/info-lookmore"
  :commentary "\
 This is some more stuff for `info-lookup-symbol' -- some specific manuals
 to add and a couple of mode setups.

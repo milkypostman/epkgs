@@ -8,7 +8,7 @@
  :required   ((("help-mode" help-mode)
 	       ("thingatpt" thingatpt)))
  :keywords   (convenience)
- :homepage   "http://user42.tuxfamily.org/nobreak-fade/index.html"
+ :homepage   "http://user42.tuxfamily.org/nobreak-fade"
  :wikipage   "http://www.emacswiki.org/NobreakFade"
  :commentary "\
 This is some \"nobreak\" functions for `fill-nobreak-predicate'.

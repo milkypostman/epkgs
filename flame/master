@@ -7,7 +7,7 @@
  :maintainer ("Noah Friedman" . "friedman@splode.com")
  :provided   (flame friedman-flame)
  :keywords   (games)
- :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
  :commentary "\
 This program was inspired from a version written in 1986 by
 Ian G. Batten <batten@uk.ac.bham.multics>, which had been derived from

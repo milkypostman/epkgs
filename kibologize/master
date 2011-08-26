@@ -5,7 +5,7 @@
 	      ("Noah Friedman" . "friedman@prep.ai.mit.edu"))
  :maintainer (nil . "friedman@prep.ai.mit.edu")
  :provided   (kibologize)
- :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
  :commentary "\
 Originally written by James Parry based on \"flame.el\" by Ian G. Batten &
 others.  Completely rewritten 1997-03-14 by Noah Friedman.

@@ -10,4 +10,4 @@
 	       ("list-fns" list-fns)
 	       ("string-fns" string-fns)
 	       ("vm" vm)))
- :homepage   "ftp://ftp.splode.com/pub/users/friedman/emacs-lisp")
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp")

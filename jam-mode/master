@@ -2,4 +2,4 @@
  :provided   (jam-mode)
  :required   ((("emacs-core" generic)
 	       (nil generic-mode)))
- :homepage   "http://www.tenfoot.org.uk/emacs/modes.html#branch")
+ :homepage   "http://www.tenfoot.org.uk/emacs/modes.html")

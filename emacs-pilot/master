@@ -7,7 +7,7 @@
 	       ("calendar" calendar diary-lib)
 	       ("cl" cl)
 	       ("easymenu" easymenu)))
- :homepage   "http://bruda.ca/emacs-pilot"
+ :homepage   "http://bruda.ca/emacs-pilot/"
  :wikipage   "http://www.emacswiki.org/EmacsPilot"
  :commentary "\
 Various functions transfer the following databases to and from the

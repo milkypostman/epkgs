@@ -6,7 +6,7 @@
  :provided   (rheeet-mail\.el)
  :required   ((("fmailutils" fmailutils)
 	       ("order-head" order-head)))
- :homepage   "ftp://ftp.splode.com/pub/users/friedman/emacs-lisp"
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
  :commentary "\
 To use with VM: autoload this package, then do
   (add-hook 'vm-reply-hook 'rheeet-maybe-frob-subject-line)")

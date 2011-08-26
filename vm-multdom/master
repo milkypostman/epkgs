@@ -7,7 +7,7 @@
  :provided   (vm-multdom)
  :required   ((("fmailutils" fmailutils)
 	       ("vm" vm-message)))
- :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
  :commentary "\
 This file contains enhancements to VM for processing mail from multiple
 domains that is forwarded to one site.  Specifically, it looks for the

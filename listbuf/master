@@ -6,7 +6,7 @@
  :maintainer (nil . "friedman@splode.com")
  :provided   (listbuf)
  :keywords   (extensions frobs gratuitous\ knobs)
- :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
  :commentary "\
 The standard list-buffers command is a primitive in Emacs 18, but no
 other primitives call it (that I know of), so it can be replaced in a

@@ -7,7 +7,7 @@
  :provided   (fmailutils)
  :required   ((("sendmail" sendmail)))
  :keywords   (extensions mail)
- :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
  :commentary "\
 These functions are meant to be primitives with which to build other
 header-parsing and manipulating routines.

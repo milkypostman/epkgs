@@ -8,4 +8,4 @@
  :required   ((("cl" cl)
 	       ("w3" w3)))
  :keywords   (util)
- :homepage   "http://www.math.uio.no/~fredrigl/technic/ldraw-mode")
+ :homepage   "http://www.math.uio.no/~fredrigl")

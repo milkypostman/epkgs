@@ -1,5 +1,4 @@
 (:summary    "Abstract spreadsheet display engine for GNU Emacs"
- :repository (git . "git://github.com/dto/cell-mode.git")
  :created    "2006"
  :updated    "20090104"
  :license    "GPL-3"

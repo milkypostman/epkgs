@@ -28,6 +28,7 @@
 	       ("help-macro" help-macro)
 	       ("helpex" helpex)
 	       ("hippie-exp" hippie-exp)
+	       ("htmlize" htmlize)
 	       ("icomplete" icomplete)
 	       ("imenu" imenu)
 	       ("ireplace" ireplace)
@@ -58,7 +59,7 @@
 	       ("w3" w3)
 	       ("w3m" w3m)
 	       ("which" which)
-	       (nil big-menubar cua cua-mode enotes func-menu htmlize mac pcl-cvs-defs rsz-minibuf scrat tex-site w3-auto)))
+	       (nil big-menubar cua cua-mode enotes func-menu mac pcl-cvs-defs rsz-minibuf scrat tex-site w3-auto)))
  :keywords   (configuration setup)
  :homepage   "http://emacro.sourceforge.net"
  :wikipage   "http://www.emacswiki.org/EmacsMacro")

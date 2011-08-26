@@ -1,5 +1,4 @@
-(:repository (git . "git://github.com/dto/emacs-impress.git")
- :created    "2008"
+(:created    "2008"
  :updated    "2008"
  :license    "GPL-3"
  :authors    (("David O'Toole" . "dto@gnu.org"))

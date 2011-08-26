@@ -6,6 +6,6 @@
  :maintainer (nil . "ben@piglet.cr.usgs.gov")
  :provided   (kill-a-lawyer)
  :keywords   (extensions)
- :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
  :commentary "\
 I'm not a lawyer, Jim, I'm a hacker.")

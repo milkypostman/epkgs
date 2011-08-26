@@ -10,7 +10,7 @@
 	       ("finder" finder)
 	       ("lisp-mnt" lisp-mnt)))
  :keywords   (docs lisp maint)
- :homepage   "http://user42.tuxfamily.org/checkdoc-keywords/index.html"
+ :homepage   "http://user42.tuxfamily.org/checkdoc-keywords"
  :commentary "\
 This spot of code extends M-x checkdoc to check that Keywords: contains
 at least one keyword known to `finder-by-keywords'.  See the docstring of

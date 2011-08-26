@@ -1,5 +1,4 @@
 (:summary    "Php-completion optional utilities"
- :repository (git . "git://github.com/kitokitoki/php-completion-opt.git")
  :created    "2009"
  :updated    "2009"
  :license    "GPL-3"

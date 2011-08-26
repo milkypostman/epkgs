@@ -6,7 +6,7 @@
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (copyright-both-ends)
  :keywords   (tools)
- :homepage   "http://user42.tuxfamily.org/copyright-both-ends/index.html"
+ :homepage   "http://user42.tuxfamily.org/copyright-both-ends"
  :commentary "\
 `copyright-both-ends-update' does a `copyright-update' to update a
 copyright notice you might have at both the start and end of a file.

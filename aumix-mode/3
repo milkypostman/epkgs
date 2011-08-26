@@ -7,7 +7,7 @@
  :provided   (aumix-mode)
  :required   ((("term" term)))
  :keywords   (multimedia)
- :homepage   "http://user42.tuxfamily.org/aumix-mode/index.html"
+ :homepage   "http://user42.tuxfamily.org/aumix-mode"
  :wikipage   "http://www.emacswiki.org/aumix-emacs"
  :commentary "\
 \"M-x aumix\" runs the aumix sound volume mixer program in a buffer.

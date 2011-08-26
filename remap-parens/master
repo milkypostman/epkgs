@@ -1,3 +1,3 @@
 (:license    "public-domain"
  :provided   (remap-parens)
- :homepage   "ftp://ftp.splode.com/pub/users/friedman/emacs-lisp")
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp")

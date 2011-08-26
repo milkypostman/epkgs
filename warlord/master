@@ -7,7 +7,7 @@
  :required   ((("flame" flame)
 	       ("yow" yow)))
  :keywords   (extensions games warlord)
- :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
  :commentary "\
 This revision of warlord.el requires my version of flame.el in which I
 cleaned up the namespace and added functions like `flame-string'.

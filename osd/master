@@ -6,6 +6,7 @@
  :maintainer ("Daniel Brockman" . "drlion@deepwood.net")
  :provided   (osd)
  :keywords   (multimedia)
+ :homepage   "http://www.brockman.se"
  :wikipage   "http://www.emacswiki.org/OnScreenDisplay"
  :commentary "\
 This file implements a thin Emacs front-end to a small program

@@ -7,7 +7,7 @@
  :provided   (map-win)
  :required   ((("emacs-core" backquote)))
  :keywords   (extensions macros)
- :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
  :commentary "\
 This is pretty much equivalent to the `walk-windows' function in Emacs
 19, but the macro is \"cleaner\" since it avoids creating local variables

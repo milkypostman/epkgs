@@ -18,6 +18,7 @@
 	       ("footnote" footnote)
 	       ("gnuplot" gnuplot)
 	       ("gnus" gnus gnus-sum mailcap message parse-time sha1 time-date)
+	       ("htmlize" htmlize)
 	       ("icalendar" icalendar)
 	       ("info" info)
 	       ("mew" mew)
@@ -31,8 +32,7 @@
 	       ("time" time)
 	       ("vm" vm vm-search)
 	       ("wanderlust" wl)
-	       ("xml" xml)
-	       (nil htmlize)))
+	       ("xml" xml)))
  :keywords   (calendar hypermedia outlines wp)
  :homepage   "http://orgmode.org"
  :wikipage   "http://www.emacswiki.org/OrgMode"

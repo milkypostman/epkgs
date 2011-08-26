@@ -6,7 +6,7 @@
  :maintainer (nil . "friedman@splode.com")
  :provided   (escreen)
  :keywords   (extensions)
- :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html"
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
  :wikipage   "http://www.emacswiki.org/EmacsScreen"
  :commentary "\
 To install, put this file in your load-path, byte-compile it, and add

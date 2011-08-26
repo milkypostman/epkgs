@@ -7,7 +7,7 @@
  :provided   (yow-fns)
  :required   ((("cookie1" cookie1)
 	       ("yow" yow)))
- :homepage   "ftp://ftp.splode.com/pub/users/friedman/emacs-lisp"
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
  :commentary "\
 Some of these functions have been added to official emacs distributions
 already.a")

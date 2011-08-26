@@ -11,11 +11,10 @@
 	       ("comint" comint)
 	       ("custom" cus-face)
 	       ("edmacro" edmacro)
-	       ("ilisp" completer)
 	       ("itimer" itimer)
 	       ("strokes" strokes)
 	       ("time" time)
-	       (nil color-selector xpm-button xpm-mode)))
+	       (nil color-selector completer xpm-button xpm-mode)))
  :keywords   (xlib xwem)
  :homepage   "http://xwem.org"
  :wikipage   "http://www.emacswiki.org/XWindowEmacsManager")

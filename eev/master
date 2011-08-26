@@ -7,9 +7,9 @@
  :required   ((("add-log" add-log)
 	       ("dired" dired)
 	       ("emacs-core" jit-lock)
+	       ("htmlize" htmlize)
 	       ("outline" outline)
-	       ("ps-mode" ps-mode)
-	       (nil htmlize)))
+	       ("ps-mode" ps-mode)))
  :keywords   (e-scripts help hyperlinks hypertext processes shell tex)
  :homepage   "http://angg.twu.net/emacs.html"
  :wikipage   "http://www.emacswiki.org/EevMode"

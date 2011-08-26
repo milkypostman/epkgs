@@ -7,4 +7,4 @@
  :provided   (fshell)
  :required   ((("shell" shell)))
  :keywords   (extensions processes)
- :homepage   "http://www.splode.com/~friedman/software/emacs-lisp/index.html")
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp")

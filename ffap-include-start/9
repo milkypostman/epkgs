@@ -8,7 +8,7 @@
  :required   ((("advice" advice)
 	       ("thingatpt" thingatpt)))
  :keywords   (files)
- :homepage   "http://user42.tuxfamily.org/ffap-include-start/index.html"
+ :homepage   "http://user42.tuxfamily.org/ffap-include-start"
  :commentary "\
 M-x ffap normally only recognises an include like
 
