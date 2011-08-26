@@ -14,6 +14,7 @@
 	       ("compile" compile)
 	       ("dired" dired)
 	       ("dired-aux" dired-aux)
+	       ("dired-x" dired-x)
 	       ("ffap" ffap)
 	       ("find-func" find-func)
 	       ("grep" grep)
