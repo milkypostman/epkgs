@@ -1,5 +1,4 @@
-(:summary    "Access the ESV Bible text api"
- :license    "GPL-2"
+(:license    "GPL-2"
  :provided   (esv)
  :required   ((("calendar" calendar)
 	       ("url" url)

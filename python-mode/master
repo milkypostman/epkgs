@@ -1,5 +1,5 @@
 (:summary    "Major mode for editing Python programs"
- :repository (bzr . "http://bazaar.launchpad.net/~python-mode-devs/python-mode/python-mode/")
+ :repository (bzr . "http://bazaar.launchpad.net/~python-mode-devs/python-mode/python-mode")
  :created    "199202"
  :updated    "1994"
  :license    "GPL-3"

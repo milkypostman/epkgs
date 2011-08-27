@@ -1,5 +1,5 @@
 (:summary    "Major mode for editing GNU LilyPond music scores"
- :repository (git . "git://git.sv.gnu.org/lilypond.git")
+ :repository (git . "git://git.savannah.gnu.org/lilypond.git")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-3"
