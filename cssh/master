@@ -1,5 +1,5 @@
 (:summary    "Clusterssh implementation for emacs"
- :repository (git . "git@github.com:emacsmirror/cssh.git")
+ :repository (git . "git://github.com/dimitri/cssh.git")
  :created    "20080926"
  :updated    "2008"
  :authors    (("Dimitri Fontaine" . "dim@tapoueh.org"))
@@ -8,6 +8,7 @@
  :required   ((("cl" cl)
 	       ("dired" dired)
 	       ("ibuffer" ibuffer)
+	       ("shell" shell)
 	       ("term" term)
 	       ("tramp" tramp)))
  :keywords   (clusterssh cssh ssh)

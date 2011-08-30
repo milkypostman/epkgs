@@ -1,0 +1,46 @@
+(:summary    "A global annotator/highlighter for GNU Emacs"
+ :repository (svn . "http://annot.googlecode.com/svn")
+ :created    "2010"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("tkykhs" . "tkykhs@gmail.com"))
+ :maintainer ("tkykhs")
+ :provided   (annot)
+ :keywords   (convenience frames local multimedia terminals tools)
+ :homepage   "http://code.google.com/p/annot"
+ :commentary "\
+Description:
+
+`annot.el' is a general and scalable annotation manager that works on GNU
+Emacs.  It lets you add/remove/edit annotations and highlights on any file
+and manages them for later use. All annotations are stored separately for
+each annotated file and get reproduced when the file is opened again. You can
+even store annotations on non-editable files.  Because annot keeps track of
+md5 checksums of annotated files, annotations won't disappear even when file
+names are changed.
+
+Requirement:
+
+GNU Emacs 23 or higher.
+
+Installation:
+
+Insert the following line to your .emacs:
+
+ (require 'annot)
+
+Keybindings:
+
+* [C-x a]    -  add a new annotation/highlight or edit an existing annotation on point.
+                You can also use [C-x C-a]. (annot-edit/add)
+* [C-x r]    -  remove annotation at point. (annot-remove)
+* [C-x w]    -  insert an image at point. (annot-add-image)
+
+User Commands:
+
+* `annot-edit/add'  - either edit the annotation at point, if there is,
+                      or else add a new annotation or highlight.
+* `annot-remove'    - remove the annotation/highlight at point.
+* `annot-add'       - add a new annotation/highlight at point.
+* `annot-edit'      - edit the annotation at point.
+* `annot-add-image' - insert an image at point.")

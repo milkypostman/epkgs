@@ -1,6 +1,7 @@
 (:summary    "Mode to execute z code files version 3, 5, 8"
- :created    "2009"
- :updated    "2009"
+ :created    "2011"
+ :updated    "2011"
+ :license    "as-is"
  :maintainer ("Peter Ilberg" . "peter.ilberg@gmail.com")
  :provided   (malyon malyon-mode)
  :homepage   "http://www.ifarchive.org"
