@@ -4,7 +4,7 @@
  :updated    "1994"
  :license    "GPL-3"
  :maintainer (nil . "python-mode@python.org")
- :provided   (doctest-mode pars-part-output py-bug-numbered-tests pycomplete python-mode python-mode-test)
+ :provided   (doctest-mode pars-part-output py-bug-numbered-tests pycomplete pymacs python-mode python-mode-test)
  :required   ((("ansi-color" ansi-color)
 	       ("cl" cl)
 	       ("comint" comint)
@@ -14,7 +14,6 @@
 	       ("imenu" imenu)
 	       ("info-look" info-look)
 	       ("mmm-mode" mmm-auto)
-	       ("pymacs" pymacs)
 	       ("reporter" reporter)))
  :keywords   (languages oop python)
  :homepage   "https://launchpad.net/python-mode"
