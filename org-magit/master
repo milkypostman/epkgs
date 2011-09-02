@@ -6,8 +6,10 @@
  :authors    (("Yann Hodique" . "yann.hodique@gmail.com"))
  :maintainer ("Yann Hodique" . "yann.hodique@gmail.com")
  :provided   (org-magit)
- :required   ((("magit" magit)
+ :required   ((("cl" cl)
+	       ("magit" magit)
 	       ("org-mode" org)))
+ :keywords   (git magit outlines)
  :homepage   "https://github.com/sigma/org-magit"
  :commentary "\
 This module adds support for magit links in org buffers. The following links
