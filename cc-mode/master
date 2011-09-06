@@ -1,8 +1,8 @@
 (:summary    "Major mode for editing C and similar languages"
  :repository (cvs . ":pserver:anonymous@cc-mode.cvs.sourceforge.net:/cvsroot/cc-mode")
  :created    "1985"
- :updated    "2006"
- :license    "GPL-2"
+ :updated    "2011"
+ :license    "GPL-3"
  :maintainer (nil . "bug-cc-mode@gnu.org")
  :provided   (cc-align cc-awk cc-bytecomp cc-cmds cc-compat cc-defs cc-engine cc-fix cc-fonts cc-guess cc-langs cc-lobotomy cc-menus cc-mode cc-styles cc-subword cc-vars)
  :required   ((("custom" custom)
