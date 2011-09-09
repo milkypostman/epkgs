@@ -1,7 +1,5 @@
 (:summary    "Fillcode minor mode"
- :created    "2007"
- :updated    "2007"
- :license    "GPL-2"
+ :license    "public-domain"
  :provided   (fillcode)
  :required   ((("cc-mode" cc-bytecomp cc-engine)
 	       ("cl" cl)))

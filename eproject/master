@@ -5,7 +5,7 @@
  :license    "GPL-2"
  :authors    (("Jonathan Rockway" . "jon@jrock.us"))
  :maintainer ("Jonathan Rockway" . "jon@jrock.us")
- :provided   (eproject eproject-extras)
+ :provided   (eproject eproject-extras eproject-tags)
  :required   ((("cl" cl)
 	       ("eshell" eshell)
 	       ("ibuffer" ibuf-ext ibuffer)

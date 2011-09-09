@@ -1,7 +1,7 @@
 (:summary    "Open anything / QuickSilver-like candidate-selection framework"
  :repository (git . "git://repo.or.cz/anything-config.git")
  :created    "2007"
- :updated    "2010"
+ :updated    "2011"
  :license    "GPL-2"
  :authors    (("Tamas Patrovics"))
  :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
