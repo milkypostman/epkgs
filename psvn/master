@@ -1,6 +1,6 @@
 (:summary    "Subversion interface for emacs"
- :created    "2009"
- :updated    "20091029"
+ :created    "2011"
+ :updated    "2011"
  :license    "GPL-2"
  :authors    (("Stefan Reichoer" . "stefan@xsteve.at"))
  :maintainer ("Stefan Reichoer" . "stefan@xsteve.at")
