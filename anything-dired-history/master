@@ -23,11 +23,15 @@ have visited to file `anything-dired-history-cache-file'
 Installation:
 
 (require 'anything-dired-history)
-(setq anything-dired-history-cache-file \"~/.emacs.d/dired-history\")
 (define-key dired-mode-map \",\" 'anything-dired-history-view)
+
+(require 'savehist)
+(setq savehist-additional-variables
+      '( anything-dired-history-variable
+         ))
+(savehist-mode 1)
 
 Or:
 (autoload 'anything-dired-history-view \"anything-dired-history\"
    \"view dired directories you have visited.\" t)
-(setq-default anything-dired-history-cache-file \"~/.emacs.d/dired-history\")
 (define-key dired-mode-map \",\" 'anything-dired-history-view)")

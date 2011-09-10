@@ -14,11 +14,18 @@
 	      ("Aaron Smith" . "aaron-lua@gelatinous.com"))
  :maintainer (nil . "immerrr+lua@gmail.com")
  :provided   (lua-mode)
- :required   ((("comint" comint)))
+ :required   ((("cl" cl)
+	       ("comint" comint)))
  :keywords   (languages processes tools)
  :homepage   "https://github.com/immerrr/lua-mode"
  :wikipage   "http://www.emacswiki.org/LuaMode"
  :commentary "\
+Thanks to Rafael Sanchez <rafael@cornerdimension.com> for patch
+adding lua-mode to interpreter-mode-alist
+
+Thanks to Leonardo Etcheverry <leo@kalio.net> for enabling
+narrow-to-defun functionality
+
 Thanks to Tobias Polzin <polzin@gmx.de> for function indenting
 patch: Indent \"(\" like \"{\"
 

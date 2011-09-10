@@ -10,5 +10,6 @@
  :homepage   "https://github.com/gareth-rees/smart-quotes"
  :wikipage   "http://www.emacswiki.org/SmartQuotes"
  :commentary "\
-In Smart Quotes minor mode, the ' and \" keys insert left and
-right quotation marks according to the context around point.")
+Smart Quotes is a minor mode that rebinds the ' and \" keys to
+insert left and right quotation marks according to the context
+before point.")

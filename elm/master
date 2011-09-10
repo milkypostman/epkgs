@@ -1,7 +1,7 @@
 (:summary    "Maintain the Emacsmirror"
  :repository (git . "git://github.com/tarsius/elm.git")
  :created    "20081202"
- :updated    "20110822"
+ :updated    "2011"
  :license    "GPL-3"
  :authors    (("Jonas Bernoulli" . "jonas@bernoul.li"))
  :maintainer ("Jonas Bernoulli" . "jonas@bernoul.li")
