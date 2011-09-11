@@ -37,4 +37,8 @@ following areas:
  M-x perlmonks-seekers-of-perl-wisdom
  M-x perlmonks-meditation
  M-x perlmonks-reply
-Just call one of those commands while in your .monks buffer")
+Just call one of those commands while in your .monks buffer
+
+* Screencasts
+- perlmonks-reply
+http://www.youtube.com/watch?v=fjzfDdKaCoc")

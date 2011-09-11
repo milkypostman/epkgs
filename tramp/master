@@ -25,7 +25,7 @@
 	       (nil timer-funcs tramp-loaddefs)))
  :keywords   (comm processes)
  :homepage   "http://savannah.gnu.org/projects/tramp"
- :wikipage   "http://www.emacswiki.org/Tramp"
+ :wikipage   "http://www.emacswiki.org/TrampMode"
  :commentary "\
 This package provides remote file editing, similar to ange-ftp.
 The difference is that ange-ftp uses FTP to transfer files between

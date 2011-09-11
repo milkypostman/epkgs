@@ -1,7 +1,7 @@
 (:summary    "Clickable buttons in header lines"
  :repository (git . "git://github.com/tarsius/header-button.git")
  :created    "20100604"
- :updated    "20101219"
+ :updated    "2011"
  :license    "GPL-3"
  :authors    (("Jonas Bernoulli" . "jonas@bernoul.li"))
  :maintainer ("Jonas Bernoulli" . "jonas@bernoul.li")
