@@ -17,8 +17,9 @@ right time and by automating many of the usual tasks such as
 creating new files and saving files.
 
 Deft is open source software and may be freely distributed and
-modified under the BSD license.  Version 0.2 is the latest stable
-version.  You may download it directly here:
+modified under the BSD license.  Version 0.3 is the latest stable
+version, released on September 11, 2011.  You may download it
+directly here:
 
   * [deft.el](http://jblevins.org/projects/deft/deft.el)
 
@@ -134,6 +135,11 @@ Note that the mode need not be a traditional text mode.  If you
 prefer to write notes as LaTeX fragments, for example, you could
 set `deft-extension' to \"tex\" and `deft-text-mode' to `latex-mode'.
 
+If you prefer `org-mode', then simply use
+
+    (setq deft-extension \"org\")
+    (setq deft-text-mode 'org-mode)
+
 You can easily set up a global keyboard binding for Deft.  For
 example, to bind it to F8, add the following code to your `.emacs`
 file:
@@ -156,6 +162,10 @@ platforms, such as Linux, via Emacs.
 
 History
 -------
+
+Version 0.3 (2011-09-11):
+
+* Internationalization: support filtering with multibyte characters.
 
 Version 0.2 (2011-08-22):
 

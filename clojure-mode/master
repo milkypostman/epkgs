@@ -7,7 +7,7 @@
 	      ("Lennart Staflin" . "lenst@lysator.liu.se")
 	      ("Phil Hagelberg" . "technomancy@gmail.com"))
  :maintainer ("Jeffrey Chu" . "jochu0@gmail.com")
- :provided   (clojure-mode clojure-test-mode)
+ :provided   (clojure-mode clojure-test-mode clojurescript-mode)
  :required   ((("cl" cl)
 	       ("slime" slime)
 	       ("which-func" which-func)))
