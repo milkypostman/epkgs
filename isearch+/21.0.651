@@ -1,0 +1,85 @@
+(:summary    "Extensions to `isearch.el'"
+ :created    "19951215"
+ :updated    "20110912"
+ :license    "GPL-2"
+ :authors    (("Drew Adams"))
+ :maintainer ("Drew Adams")
+ :provided   (isearch+)
+ :required   (nil
+	      (("misc-cmds" misc-cmds)))
+ :keywords   (help internal local matching)
+ :homepage   "http://www.emacswiki.org/IsearchPlus"
+ :wikipage   "http://www.emacswiki.org/IsearchPlus"
+ :commentary "\
+Extensions to `isearch.el'.
+
+ Commands defined here:
+
+   `isearchp-init-edit', `isearchp-toggle-invisible',
+   `isearchp-toggle-regexp-quote-yank',
+   `isearchp-toggle-set-region', `isearch-toggle-word',
+   `isearchp-yank-sexp-symbol-or-char',
+   `isearchp-sexp-symbol-or-char',
+   `set-region-around-search-target'.
+
+ User options defined here:
+
+   `isearchp-initiate-edit-commands' (Emacs 22+),
+   `isearchp-regexp-quote-yank-flag', `isearchp-set-region-flag'.
+
+ Faces defined here:
+
+   `isearch-fail'.
+
+ Non-interactive functions defined here:
+
+   `isearchp-fail-pos', `isearchp-highlight-lighter',
+   `isearchp-set-region', `isearchp-update-edit-init-commands'
+   (Emacs 22+).
+
+ Internal variables defined here:
+
+   `isearchp-last-non-nil-invisible'.
+
+
+ ***** NOTE: The following functions defined in `isearch.el' have
+             been REDEFINED HERE:
+
+ `isearch-edit-string' - Put point at mismatch position.
+ `isearch-mode-help'   - End isearch.  List bindings.
+ `isearch-message'     - Highlight failed part of search string in
+                         echo area, in face `isearch-fail'.
+ `isearch-toggle-case-fold' - Show case sensitivity in mode-line.
+ `isearch-yank-string' - Respect `isearchp-regexp-quote-yank-flag'.
+
+
+ The following bindings are made here for incremental search mode
+ (`C-s' prefix):
+
+   `C-`'        `isearchp-toggle-regexp-quote-yank'
+   `C-+'        `isearchp-toggle-invisible'
+   `C-SPC'      `isearchp-toggle-set-region'
+   `C-c'        `isearch-toggle-case-fold'
+   `C-h'        `isearch-mode-help'
+   `C-t'        `isearch-toggle-regexp'
+   `M-w'        `isearch-toggle-word'
+   `C-end'      `goto-longest-line' (if defined)
+   `C-M-tab'    `isearch-complete' (on MS Windows)
+   `next'       `isearch-repeat-forward'
+   `prior'      `isearch-repeat-backward'
+
+
+ User option `isearchp-initiate-edit-commands' causes certain keys
+ not to exit Isearch but rather to edit the search string.
+ Customize it to `nil' if you do not want this behavior at all.
+
+
+ The following bindings are made here for incremental search edit
+ mode:
+
+   `C-M-tab'    `isearch-complete-edit' (MS Windows only)
+
+
+ This file should be loaded after loading the standard GNU file
+ `isearch.el'.  So, in your `~/.emacs' file, do this:
+ (eval-after-load \"isearch\" '(require 'isearch+))")

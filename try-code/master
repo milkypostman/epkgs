@@ -1,7 +1,7 @@
 (:summary    "Try out a new idea by commenting out old code"
  :repository (git . "git://github.com/lewang/le_emacs_try_code.git")
  :created    "20110202"
- :updated    "20110203"
+ :updated    "20110909"
  :license    "GPL-3"
  :provided   (try-code)
  :keywords   (language modes programming)

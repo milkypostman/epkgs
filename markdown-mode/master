@@ -137,6 +137,12 @@ provides an interface to all of the possible customizations:
     this is not matched, we assume this output is a fragment and add
     our own header and footer.
 
+  * `markdown-link-space-sub-char' - a character to replace spaces
+    when mapping wiki links to filenames (default: `_`).
+    For example, use an underscore for compatibility with the
+    Python Markdown WikiLinks extension or a hyphen for compatibility
+    with Github wiki links.
+
 Additionally, the faces used for syntax highlighting can be modified to
 your liking by issuing `M-x customize-group RET markdown-faces`
 or by using the \"Markdown Faces\" link at the bottom of the mode
