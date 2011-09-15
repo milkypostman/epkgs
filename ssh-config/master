@@ -3,6 +3,8 @@
  :created    "20101122"
  :updated    "2010"
  :provided   (ssh-config)
- :required   ((("org-mode" org)))
+ :required   ((("org-mode" org))
+	      (("emacs-core" files)
+	       ("vc" vc-hooks)))
  :keywords   (emacs ssh)
  :homepage   "https://github.com/renard/ssh-config-el")
