@@ -1,0 +1,11 @@
+(:summary    "Define hooks which run after changing a status of network"
+ :repository (git . "git://github.com/k-ten/networkmanager-el.git")
+ :created    "2010"
+ :updated    "2011"
+ :license    "GPL-2"
+ :authors    (("Hironori OKAMOTO" . "k.ten87@gmail.com"))
+ :maintainer ("Hironori OKAMOTO" . "k.ten87@gmail.com")
+ :provided   (networkmanager)
+ :required   ((("dbus" dbus)))
+ :keywords   (comm convenience unix)
+ :homepage   "https://github.com/k-ten/networkmanager-el")
