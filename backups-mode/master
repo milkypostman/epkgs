@@ -1,0 +1,3 @@
+(:repository (git . "git://github.com/chadbraunduin/backups-mode.git")
+ :provided   (backups-mode)
+ :homepage   "http://chadbraunduin.blogspot.com/2011/08/backups-mode.html")

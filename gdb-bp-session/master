@@ -1,0 +1,22 @@
+(:summary    "Save and Restore breakpoints for Emacs gdb"
+ :repository (git . "git://github.com/jglee1027/gdb-bp-session.git")
+ :created    "20110915"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Lee Jong-Gyu" . "jglee1027@gmail.com"))
+ :maintainer ("Lee Jong-Gyu" . "jglee1027@gmail.com")
+ :provided   (gdb-bp-session)
+ :required   ((("gud" gud)))
+ :keywords   (languages tools)
+ :homepage   "https://github.com/jglee1027/gdb-bp-session"
+ :commentary "\
+gdb-bp-session provides keeping breakpoints which you set recently
+in gdb.  You should kill gdb buffer using `gdb-kill-buffer'
+function \"C-x k\" to save current breakpoints, that's all. Is it too
+easy? The current breakpionts are saved to
+`$HOME/.$PROCESS_NAME-breakpoints.gdb'
+
+* Installation
+  Edit your ~/.emacs file to add the line:
+    (add-to-list 'load-path \"/path/to/gdb-bp-session\")
+    (require 'gdb-bp-session)")

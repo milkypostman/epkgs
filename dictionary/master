@@ -1,4 +1,5 @@
 (:summary    "An interface to RFC 2229 dictionary server"
+ :repository (git . "git://github.com/myrkr/dictionary-el.git")
  :updated    "20041002"
  :license    "GPL-2"
  :authors    (("Torsten Hilbrich" . "dictionary@myrkr.in-berlin.de"))
@@ -7,6 +8,7 @@
  :required   ((("cl" cl)
 	       ("custom" custom)
 	       ("easymenu" easymenu)
-	       ("emacs-core" tooltip)))
+	       ("emacs-core" tooltip)
+	       (nil balloon-help)))
  :keywords   (dictionary interface)
- :homepage   "http://me.in-berlin.de/~myrkr/dictionary/download.html")
+ :homepage   "http://www.myrkr.in-berlin.de/dictionary/index.html")

@@ -1,0 +1,12 @@
+(:repository (git . "git://github.com/whitypig/auto-complete-ctags.git")
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("whitypig" . "whitypig@gmail.com"))
+ :maintainer ("whitypig" . "whitypig@gmail.com")
+ :provided   (auto-complete-ctags)
+ :required   ((("auto-complete" auto-complete)
+	       ("button" button)
+	       ("cl" cl)))
+ :keywords   (auto-complete-mode ctags)
+ :homepage   "https://github.com/whitypig/auto-complete-ctags")

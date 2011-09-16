@@ -1,22 +1,22 @@
 (:summary    "Drive gnuplot from within emacs"
+ :repository (git . "git://github.com/bruceravel/gnuplot-mode.git")
  :created    "199828"
- :updated    "2002"
+ :updated    "2011"
  :license    "GPL-2"
- :authors    (("Bruce Ravel" . "ravel@phys.washington.edu"))
- :maintainer ("Bruce Ravel" . "ravel@phys.washington.edu")
- :provided   (gnuplot gnuplot-gui)
+ :authors    (("Bruce Ravel" . "bruceravel1@gmail.com"))
+ :maintainer ("Bruce Ravel" . "bruceravel1@gmail.com")
+ :provided   (gnuplot gnuplot-gui info-look)
  :required   ((("cl" cl)
 	       ("comint" comint)
 	       ("custom" custom)
 	       ("easymenu" easymenu)
+	       ("emacs-core" overlay)
 	       ("info" info)
-	       ("info-look" info-look)
 	       ("reporter" reporter)
 	       ("widget" wid-edit widget)
 	       (nil toolbar xpm)))
  :keywords   (gnuplot plotting)
- :homepage   "http://xafs.org/BruceRavel/GnuplotMode"
- :wikipage   "http://www.emacswiki.org/GnuPlot"
+ :homepage   "https://github.com/bruceravel/gnuplot-mode"
  :commentary "\
 This is a major mode for composing gnuplot scripts and displaying
 their results using gnuplot.  It is optimized for use with gnuplot
@@ -95,7 +95,7 @@ and later.
                         ============
 
 A recent version of this file can be found at
-  http://feff.phys.washington.edu/~ravel/software/gnuplot-mode/
+  http://guthub.com/bruceravel/gnuplot-mode/
 
 To autoload gnuplot-mode on any file with gp extension, put this in
 your .emacs file

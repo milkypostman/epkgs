@@ -1,0 +1,10 @@
+(:summary    "Use ido (nearly) everywhere"
+ :repository (git . "git://github.com/technomancy/ido-ubiquitous.git")
+ :created    "20110901"
+ :license    "GPL-3"
+ :authors    (("Unknown"))
+ :maintainer ("Unknown")
+ :provided   (ido-ubiquitous)
+ :required   ((("ido" ido)))
+ :keywords   (convenience)
+ :homepage   "https://github.com/technomancy/ido-ubiquitous")

@@ -1,13 +1,13 @@
 (:summary    "Dynamic filesystem explorer and buffer switcher"
+ :repository (git . "git://github.com/sjbach/lusty-emacs.git")
  :created    "2010"
  :updated    "2010"
  :provided   (lusty-explorer)
  :required   ((("cl" cl)
-	       ("emacs-core" font-lock)
+	       ("dired" dired)
 	       ("ido" ido)))
  :keywords   (convenience files matching)
- :homepage   "http://www.emacswiki.org/LustyExplorer"
- :wikipage   "http://www.emacswiki.org/LustyExplorer"
+ :homepage   "https://github.com/sjbach/lusty-emacs"
  :commentary "\
 -----------
 
@@ -58,4 +58,6 @@ Jan Rehders
 Hugo Schmitt
 Volkan Yazici
 René Kyllingstad
-Alex Schroeder")
+Alex Schroeder
+Tassilo Horn
+Sasha Kovar")

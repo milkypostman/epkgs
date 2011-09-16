@@ -1,0 +1,11 @@
+(:summary    "TextLint is a tool to check your scientific writing for common style errors from Emacs"
+ :repository (git . "git://github.com/DamienCassou/textlint.git")
+ :created    "20110902"
+ :updated    "2011"
+ :license    "GPL-2"
+ :authors    (("Damien Cassou" . "damien.cassou@gmail.com"))
+ :maintainer ("Damien Cassou" . "damien.cassou@gmail.com")
+ :provided   (textlint)
+ :homepage   "https://github.com/DamienCassou/textlint"
+ :commentary "\
+bla bla")
