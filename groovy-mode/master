@@ -1,5 +1,5 @@
 (:summary    "Groovy mode derived mode"
- :repository (bzr . "http://bazaar.launchpad.net/~russel/groovy-emacs-mode/trunk/")
+ :repository (bzr . "http://bazaar.launchpad.net/~russel/groovy-emacs-mode/trunk")
  :created    "20060801"
  :license    "GPL-2"
  :authors    (("Russel Winder" . "russel@russel.org.uk"))

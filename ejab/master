@@ -1,5 +1,5 @@
 (:summary    "Jabber client for Emacs"
- :repository (cvs . ":pserver:anonymous@ejab.cvs.sourceforge.net:/cvsroot/ejab/")
+ :repository (cvs . ":pserver:anonymous@ejab.cvs.sourceforge.net:/cvsroot/ejab")
  :created    "2000"
  :updated    "2000"
  :license    "GPL-2"

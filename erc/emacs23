@@ -1,5 +1,5 @@
 (:summary    "An Emacs Internet Relay Chat client"
- :repository (git . "git://git.sv.gnu.org/erc.git")
+ :repository (git . "git://git.savannah.gnu.org/erc.git")
  :created    "1997"
  :updated    "2011"
  :license    "GPL-3"

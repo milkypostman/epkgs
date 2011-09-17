@@ -3,6 +3,6 @@
  :updated    "20000122"
  :license    "GPL-2"
  :authors    (("Tom Breton" . "tob@world.std.com"))
- :homepage   "http://panix.com/~tehom"
+ :homepage   "http://www.panix.com/~tehom"
  :commentary "\
 Future maintainers, please hit 'M-x time-stamp' when you're done.")

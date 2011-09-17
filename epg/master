@@ -1,5 +1,5 @@
 (:summary    "The EasyPG Library"
- :repository (git . "git://git.sourceforge.jp/gitroot/epg/epg.git")
+ :repository (git . "git://git.sourceforge.jp/gitroot/epg/epg")
  :created    "1999"
  :updated    "2006"
  :license    "GPL-2"

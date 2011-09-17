@@ -7,7 +7,7 @@
  :provided   (idle-highlight)
  :required   ((("thingatpt" thingatpt)))
  :keywords   (convenience)
- :homepage   "https://github.com/technomancy/dotfiles/blob/master/.emacs.old/idle-highlight.el"
+ :homepage   "https://github.com/technomancy/dotfiles"
  :wikipage   "http://www.emacswiki.org/IdleHighlight"
  :commentary "\
 Based on some snippets by fledermaus from the #emacs channel.

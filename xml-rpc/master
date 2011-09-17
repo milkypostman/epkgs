@@ -1,5 +1,5 @@
 (:summary    "An elisp implementation of clientside XML-RPC"
- :repository (bzr . "http://bazaar.launchpad.net/~hexmode/xml-rpc-el/trunk/")
+ :repository (bzr . "http://bazaar.launchpad.net/~hexmode/xml-rpc-el/trunk")
  :created    "200113"
  :updated    "2010"
  :license    "GPL-3"

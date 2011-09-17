@@ -7,7 +7,7 @@
  :provided   (tehom-func-args)
  :required   (((nil local-vars)))
  :keywords   (extensions)
- :homepage   "http://panix.com/~tehom"
+ :homepage   "http://www.panix.com/~tehom"
  :commentary "\
 Known bugs: Because of the way it works, it can fail on functions
 where \"documentation\" returns something that doesn't end at or

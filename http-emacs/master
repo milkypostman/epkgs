@@ -1,5 +1,5 @@
 (:summary    "Simple HTTP POST"
- :repository (cvs . ":pserver:anonymous@cvs.sv.gnu.org:/sources/http-emacs")
+ :repository (cvs . ":pserver:anonymous@cvs.savannah.gnu.org:/sources/http-emacs")
  :created    "2002"
  :updated    "2003"
  :license    "GPL-2"

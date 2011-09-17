@@ -6,4 +6,4 @@
  :maintainer ("Ulrik Jensen" . "terryp@daimi.au.dk")
  :provided   (emacs-wiki-boxes)
  :keywords   (wiki)
- :homepage   "http://sugarshark.com/elisp/ProjectPage.html")
+ :homepage   "http://sugarshark.com/ProjectPage.html")

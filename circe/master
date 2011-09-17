@@ -1,5 +1,5 @@
 (:summary    "Client for IRC in Emacs"
- :repository (cvs . ":pserver:anonymous@cvs.savannah.nongnu.org:/sources/circe/")
+ :repository (cvs . ":pserver:anonymous@cvs.savannah.nongnu.org:/sources/circe")
  :created    "2005"
  :updated    "2005"
  :license    "GPL-2"

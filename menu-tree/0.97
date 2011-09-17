@@ -1,4 +1,4 @@
-(:repository (bzr . "http://bazaar.launchpad.net/~irie/%2Bjunk/menu-tree.el/")
+(:repository (bzr . "http://bazaar.launchpad.net/~irie/%2Bjunk/menu-tree.el")
  :created    "2008"
  :updated    "2010"
  :license    "GPL-3"

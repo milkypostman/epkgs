@@ -7,7 +7,7 @@
  :provided   (tehom-1)
  :required   ((("gnus" gnus-eform gnus-util)))
  :keywords   (extensions)
- :homepage   "www.panix.com/~tehom"
+ :homepage   "http://www.panix.com/~tehom"
  :commentary "\
 tehom-edit-form is a generalization of edit-form (Which is very
 cool; thanks Lars)

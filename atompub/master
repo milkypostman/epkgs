@@ -1,5 +1,5 @@
 (:summary    "Implementation of draft atom-api"
- :repository (bzr . "http://bazaar.launchpad.net/~egh/atompub.el/trunk/")
+ :repository (bzr . "http://bazaar.launchpad.net/~egh/atompub.el/trunk")
  :created    "2006"
  :updated    "2006"
  :license    "GPL-2"

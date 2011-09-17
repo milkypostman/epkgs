@@ -5,7 +5,7 @@
  :authors    (("Tom Breton" . "tob@world.std.com"))
  :maintainer ("Tom Breton" . "tob@world.std.com")
  :keywords   (convenience mail news)
- :homepage   "http://panix.com/~tehom"
+ :homepage   "http://www.panix.com/~tehom"
  :commentary "\
 To install, add the line 
 

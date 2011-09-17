@@ -1,5 +1,5 @@
 (:summary    "Setup CEDET environment"
- :repository (bzr . "bzr://cedet.bzr.sourceforge.net/bzrroot/cedet/code/trunk/")
+ :repository (bzr . "bzr://cedet.bzr.sourceforge.net/bzrroot/cedet/code/trunk")
  :created    "2002"
  :updated    "2011"
  :license    "GPL-3"

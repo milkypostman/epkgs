@@ -1,5 +1,5 @@
 (:summary    "Emacs interface to gyach"
- :repository (cvs . ":pserver:anonymous@cvs.savannah.nongnu.org:/sources/elgyach/")
+ :repository (cvs . ":pserver:anonymous@cvs.savannah.nongnu.org:/sources/elgyach")
  :created    "2002"
  :updated    "2002"
  :license    "GPL-2"

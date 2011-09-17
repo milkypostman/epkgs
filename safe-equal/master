@@ -7,7 +7,7 @@
  :provided   (safe-equal)
  :required   ((("cl" cl)))
  :keywords   (extensions)
- :homepage   "http://panix.com/~tehom"
+ :homepage   "http://www.panix.com/~tehom"
  :commentary "\
 This also runs in Common Lisp, but various tree-walking is not
 complete, since I just moved it over.  For one thing, it doesn't

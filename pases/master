@@ -1,5 +1,5 @@
 (:summary    "Packaging & system definition for Emacs"
- :repository (bzr . "http://bazaar.launchpad.net/~egh/pases/trunk/")
+ :repository (bzr . "http://bazaar.launchpad.net/~egh/pases/trunk")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"

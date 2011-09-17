@@ -1,5 +1,5 @@
 (:summary    "Tiny Tools configure center"
- :repository (git . "git://git.sv.gnu.org/emacs-tiny-tools.git")
+ :repository (git . "git://git.savannah.gnu.org/emacs-tiny-tools.git")
  :created    "2007"
  :updated    "2007"
  :license    "GPL-2"

@@ -1,5 +1,5 @@
 (:summary    "Quick switch between Emacs buffers"
- :repository (cvs . ":pserver:anonymous@emhacks.cvs.sourceforge.net:/cvsroot/emhacks/")
+ :repository (cvs . ":pserver:anonymous@emhacks.cvs.sourceforge.net:/cvsroot/emhacks")
  :created    "19981112"
  :updated    "2004"
  :license    "GPL-2"

@@ -1,5 +1,5 @@
 (:summary    "More th-at-point edit functions"
- :repository (bzr . "http://bazaar.launchpad.net/~a-roehler/s-x-emacs-werkstatt/thing-at-point-utils/")
+ :repository (bzr . "http://bazaar.launchpad.net/~a-roehler/s-x-emacs-werkstatt/thing-at-point-utils")
  :created    "2010"
  :updated    "20100906"
  :license    "GPL-2"

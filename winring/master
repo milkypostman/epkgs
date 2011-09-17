@@ -1,5 +1,5 @@
 (:summary    "Window configuration rings"
- :repository (bzr . "http://bazaar.launchpad.net/~barry/winring/trunk/")
+ :repository (bzr . "http://bazaar.launchpad.net/~barry/winring/trunk")
  :created    "1997"
  :updated    "2010"
  :license    "GPL-3"

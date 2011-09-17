@@ -11,7 +11,7 @@
 	       ("tehom-cl" tehom-cl)
 	       (nil local-vars)))
  :keywords   (extensions lisp maint tools)
- :homepage   "http://panix.com/~tehom"
+ :homepage   "http://www.panix.com/~tehom"
  :commentary "\
 This code lets you excerpt list-forms in a few keystrokes, without
 (much) chance of changing their logic.  

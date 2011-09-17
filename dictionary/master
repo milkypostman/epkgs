@@ -8,7 +8,6 @@
  :required   ((("cl" cl)
 	       ("custom" custom)
 	       ("easymenu" easymenu)
-	       ("emacs-core" tooltip)
-	       (nil balloon-help)))
+	       ("emacs-core" tooltip)))
  :keywords   (dictionary interface)
  :homepage   "http://www.myrkr.in-berlin.de/dictionary/index.html")

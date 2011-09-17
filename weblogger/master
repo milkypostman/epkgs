@@ -1,5 +1,5 @@
 (:summary    "Weblog maintenance via XML-RPC APIs"
- :repository (bzr . "http://bazaar.launchpad.net/~hexmode/weblogger-el/trunk/")
+ :repository (bzr . "http://bazaar.launchpad.net/~hexmode/weblogger-el/trunk")
  :created    "2002"
  :updated    "2009"
  :license    "GPL-3"

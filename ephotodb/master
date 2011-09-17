@@ -7,5 +7,5 @@
  :maintainer ("Markus Hoenicka" . "markus@mhoenicka.de")
  :provided   (ephotodb)
  :required   ((("image-file" image-file)))
- :homepage   "http://ephotodb.sourceforge.net/download.html"
+ :homepage   "http://ephotodb.sourceforge.net"
  :wikipage   "http://www.emacswiki.org/EmacsPhotoDatabase")

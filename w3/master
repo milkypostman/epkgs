@@ -1,5 +1,5 @@
 (:summary    "Main functions for emacs-w3 on all platforms/versions"
- :repository (git . "git://git.sv.gnu.org/w3.git")
+ :repository (git . "git://git.savannah.gnu.org/w3.git")
  :created    "20071115"
  :updated    "2008"
  :license    "GPL-2"

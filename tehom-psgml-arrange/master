@@ -10,7 +10,7 @@
 	       ("psgml" psgml)
 	       ("tehom-psgml" tehom-psgml)))
  :keywords   (extensions hypermedia tools)
- :homepage   "http://panix.com/~tehom"
+ :homepage   "http://www.panix.com/~tehom"
  :commentary "\
 Purpose
 
