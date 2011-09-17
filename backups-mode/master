@@ -1,3 +1,12 @@
-(:repository (git . "git://github.com/chadbraunduin/backups-mode.git")
+(:summary    "Major mode for autosaving files and listing, viewing, and reverting Emacs generated backups"
+ :repository (git . "git://github.com/chadbraunduin/backups-mode.git")
+ :created    "20110827"
+ :updated    "2011"
+ :authors    (("Chad Braun-Duin" . "chadbraunduin@gmail.com"))
+ :maintainer ("Chad Braun-Duin" . "chadbraunduin@gmail.com")
  :provided   (backups-mode)
- :homepage   "http://chadbraunduin.blogspot.com/2011/08/backups-mode.html")
+ :keywords   (autosave autosaving backup backups diff)
+ :homepage   "http://chadbraunduin.blogspot.com/2011/08/backups-mode.html"
+ :commentary "\
+The purpose of these commands and this new major mode is to loosely approximate the autosave-with-versions API
+ recently instituted by Apple for Mac OS X Lion.")
