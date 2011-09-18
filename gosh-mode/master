@@ -17,5 +17,5 @@
  :keywords   (edit gauche lisp scheme)
  :homepage   "https://github.com/mhayashi1120/Emacs-gosh-mode"
  :commentary "\
-gosh-mode forked from scheme-complete.el
+gosh-mode is forked from scheme-complete.el
 Many code is duplicated but specialize to Gauche.")
