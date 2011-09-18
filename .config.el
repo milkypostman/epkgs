@@ -27,10 +27,10 @@
 
 (setq elm-directory "/home/work/emacsmirror/"
 
-      elm-package-repositories         (expand-file-name "packages/"       elm-directory)
-      elm-package-git-template         (expand-file-name ".git-template/"  elm-directory)
-      elm-wiki-repository              (expand-file-name "emacswiki/page/" elm-directory)
-      elm-internal-packages-repository (expand-file-name "emacs/packages/" elm-directory))
+      elm-package-repositories         (expand-file-name "packages/"         elm-directory)
+      elm-package-git-template         (expand-file-name ".git-template/"    elm-directory)
+      elm-wiki-repository              (expand-file-name "emacswiki/mirror/" elm-directory)
+      elm-internal-packages-repository (expand-file-name "emacs/packages/"   elm-directory))
 
 (setq elx-wiki-directory elm-wiki-repository)
 
