@@ -4,12 +4,16 @@
 ;;
 ;;   `elm-setup-file'
 ;;
+;;   `elm-directory'
 ;;   `elm-package-repositories'
 ;;   `elm-package-git-template'
 ;;   `elm-wiki-repository'
 ;;   `elm-internal-package-repository'
 ;;
 ;;   `elx-wiki-directory' *
+;;
+;;   `minmacs-repository'
+;;   `minmacs-generated-file'
 ;;
 ;;   `elm-create-version-epkgs'
 ;;   `elm-package-attic'
@@ -21,13 +25,17 @@
 
 (setq elm-setup-file (or (buffer-file-name) load-file-name))
 
-(let ((d "/home/work/emacsmirror/"))
-  (setq elm-package-repositories         (concat d "packages/")
-	elm-package-git-template         (concat d ".git-template/")
-	elm-wiki-repository              (concat d "emacswiki/page/")
-	elm-internal-packages-repository (concat d "emacs/packages/")))
+(setq elm-directory "/home/work/emacsmirror/"
+
+      elm-package-repositories         (expand-file-name "packages/"       elm-directory)
+      elm-package-git-template         (expand-file-name ".git-template/"  elm-directory)
+      elm-wiki-repository              (expand-file-name "emacswiki/page/" elm-directory)
+      elm-internal-packages-repository (expand-file-name "emacs/packages/" elm-directory))
 
 (setq elx-wiki-directory elm-wiki-repository)
+
+(setq minmacs-repository     (expand-file-name "emacs/mirror/"   elm-directory)
+      minmacs-generated-file (expand-file-name ".minmacs-inf.el" epkg-epkg-repository))
 
 (setq elm-create-version-epkgs 1)
 
@@ -8206,5 +8214,8 @@
 ;; End:
 
 (require 'elm)
+
+(require 'minmacs)
+(load-file minmacs-generated-file)
 
 ;;; epkgs/.config ends here
