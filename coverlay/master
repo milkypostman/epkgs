@@ -1,0 +1,28 @@
+(:summary    "Code Coverage Overlay for Emacs"
+ :repository (git . "git://github.com/twada/coverlay.el.git")
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Takuto Wada" . "takuto.wada@gmail.com"))
+ :maintainer ("Takuto Wada" . "takuto.wada@gmail.com")
+ :provided   (coverlay)
+ :required   ((("csv-mode" csv-mode)))
+ :keywords   (coverage overlay)
+ :homepage   "http://github.com/twada/coverlay.el"
+ :commentary "\
+------------
+
+add this to your .emacs or init.el
+(add-to-list 'load-path \"~/.emacs.d/path/to/coverlay/dir\")
+
+and load it
+(require 'coverlay)
+
+then keymap it if you want
+ (define-key js2-mode-map \"\\C-c5\" 'coverlay-toggle-overlays)
+
+Dependencies
+------------
+
+This overlay depends on `csv-mode`.
+And the expectations depend on `el-expectataions.el`.")

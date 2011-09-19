@@ -10,13 +10,17 @@
 ;;   `elm-wiki-repository'
 ;;   `elm-internal-package-repository'
 ;;
+;;   `epkg-db-file'
+;;
 ;;   `elx-wiki-directory' *
 ;;
 ;;   `minmacs-repository'
 ;;   `minmacs-generated-file'
 ;;
 ;;   `elm-create-version-epkgs'
+;;
 ;;   `elm-package-attic'
+;;
 ;;
 ;;   `elx-remap-keywords' *
 ;;   `elx-remap-names' *
@@ -31,6 +35,8 @@
       elm-package-git-template         (expand-file-name ".git-template/"    elm-directory)
       elm-wiki-repository              (expand-file-name "emacswiki/mirror/" elm-directory)
       elm-internal-packages-repository (expand-file-name "emacs/packages/"   elm-directory))
+
+(setq epkg-db-file (expand-file-name ".epkg-db.el" epkg-epkg-repository))
 
 (setq elx-wiki-directory elm-wiki-repository)
 

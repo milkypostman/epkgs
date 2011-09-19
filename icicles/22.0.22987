@@ -1,6 +1,6 @@
 (:summary    "Minibuffer input completion and cycling"
  :created    "19950801"
- :updated    "20110908"
+ :updated    "20110918"
  :license    "GPL-2"
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")
@@ -20,6 +20,7 @@
 	       ("filesets" filesets)
 	       ("imenu" imenu)
 	       ("info" info)
+	       ("locate" locate)
 	       ("recentf" recentf)
 	       ("shell" shell)
 	       ("thingatpt" thingatpt))

@@ -1,0 +1,50 @@
+(:summary    "Try to avoid showing same buffer in two windows on the same frame"
+ :repository (git . "git://github.com/lewang/unique-window-buffers.git")
+ :created    "20110917"
+ :updated    "20110919"
+ :license    "GPL-3"
+ :authors    (("Le Wang"))
+ :maintainer ("Le Wang")
+ :provided   (unique-window-buffers)
+ :required   ((("cl" cl)))
+ :homepage   "https://github.com/lewang/unique-window-buffers"
+ :commentary "\
+I was annoyed that when splitting windows the same buffer shows up in the
+new window.  It also happens when quitting help.  So I made this.
+
+
+Some notes for the author:
+
+`split-window-*' all call `split-window'
+
+`bury-buffer' calls `switch-to-prev-buffer'
+
+`quit-window' calls `switch-to-prev-buffer', but also has a separate
+  code-path that restores directly from window parameter `quit-restore'
+
+`kill-buffer' calls first kills the buffer, then calls
+`replace-buffer-in-windows' to scrub the buffer from other windows.
+`kill-buffer' has to be adviced to make the replace buffer unique.
+
+
+`replace-buffer-in-windows' calls `switch-to-prev-buffer'
+
+
+So advice functions `switch-to-prev-buffer' `quit-window' `split-window'
+
+
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License as
+published by the Free Software Foundation; either version 3, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; see the file COPYING.  If not, write to
+the Free Software Foundation, Inc., 51 Franklin Street, Fifth
+Floor, Boston, MA 02110-1301, USA.a")
