@@ -1,49 +1,4 @@
-;;; epkgs/.config --- configure and load `elm.el'
-
-;; The following variables are set here:
-;;
-;;   `elm-setup-file'
-;;
-;;   `elm-directory'
-;;   `elm-package-repositories'
-;;   `elm-package-git-template'
-;;   `elm-wiki-repository'
-;;   `elm-internal-package-repository'
-;;
-;;   `epkg-db-file'
-;;
-;;   `elx-wiki-directory' *
-;;
-;;   `minmacs-repository'
-;;   `minmacs-generated-file'
-;;
-;;   `elm-create-version-epkgs'
-;;
-;;   `elm-package-attic'
-;;
-;;
-;;   `elx-remap-keywords' *
-;;   `elx-remap-names' *
-;;
-;;   `xpkg-feature-alist' *
-
-(setq elm-setup-file (or (buffer-file-name) load-file-name))
-
-(setq elm-directory "/home/work/emacsmirror/"
-
-      elm-package-repositories         (expand-file-name "packages/"         elm-directory)
-      elm-package-git-template         (expand-file-name ".git-template/"    elm-directory)
-      elm-wiki-repository              (expand-file-name "emacswiki/mirror/" elm-directory)
-      elm-internal-packages-repository (expand-file-name "emacs/packages/"   elm-directory))
-
-(setq epkg-db-file (expand-file-name ".epkg-db.el" epkg-epkg-repository))
-
-(setq elx-wiki-directory elm-wiki-repository)
-
-(setq minmacs-repository     (expand-file-name "emacs/mirror/"   elm-directory)
-      minmacs-generated-file (expand-file-name ".minmacs-inf.el" epkg-epkg-repository))
-
-(setq elm-create-version-epkgs 1)
+;;; var/epkgs/.cache --- where the old version of elm stores stuff
 
 (setq elm-package-attic
       '(
@@ -335,7 +290,7 @@
 	(application . "application")
 	(appmenu . "nxhtml")
 	(appmenu-fold . "nxhtml")
-	(appt . "calendar")
+	(appt . "appt")
 	(apropos . "apropos")
 	(apropos+ . "apropos+")
 	(apropos-fn+var . "apropos-fn+var")
@@ -374,6 +329,7 @@
 	(assoc . "assoc")
 	(astronomy . "astronomy")
 	(async-eval . "async-eval")
+	(atim-unscroll . "atim-unscroll")
 	(atom . "atom")
 	(atom-api . "atompub")
 	(atom-api-muse . "atompub")
@@ -413,6 +369,7 @@
 	(auto-document . "auto-document")
 	(auto-highlight-symbol . "auto-highlight-symbol")
 	(auto-highlight-symbol-config . "auto-highlight-symbol")
+	(auto-indent . "auto-indent")
 	(auto-indent-mode . "auto-indent-mode")
 	(auto-install . "auto-install")
 	(auto-install-extension . "auto-install-extension")
@@ -916,6 +873,7 @@
 	(chess-gnuchess . "chess")
 	(chess-ics . "chess")
 	(chess-ics1 . "chess")
+	(chess-ics2 . "chess")
 	(chess-images . "chess")
 	(chess-input . "chess")
 	(chess-irc . "chess")
@@ -1137,6 +1095,7 @@
 	(couchdb-document . "couchdb-document")
 	(couchdb-document-text . "couchdb-document-text")
 	(counter . "counter")
+	(coverlay . "coverlay")
 	(cpan . "cpan")
 	(cparen . "cparen")
 	(cperl-mode . "cperl-mode")
@@ -1354,6 +1313,7 @@
 	(diff-mode . "diff-mode")
 	(diff-mode- . "diff-mode-")
 	(diff-save-buffer . "diff-save-buffer")
+	(diffstat . "diffstat")
 	(dig . "gnus")
 	(dig-browser . "dig-browser")
 	(diminish . "diminish")
@@ -1852,6 +1812,32 @@
 	(el-expectations . "el-expectations")
 	(el-fast-filelist/el-fast-filelist . "el-fast-filelist")
 	(el-get . "el-get")
+	(el-get-apt-get . "el-get")
+	(el-get-autoloads . "el-get")
+	(el-get-build . "el-get")
+	(el-get-byte-compile . "el-get")
+	(el-get-bzr . "el-get")
+	(el-get-core . "el-get")
+	(el-get-custom . "el-get")
+	(el-get-cvs . "el-get")
+	(el-get-darcs . "el-get")
+	(el-get-dependencies . "el-get")
+	(el-get-elpa . "el-get")
+	(el-get-emacsmirror . "el-get")
+	(el-get-emacswiki . "el-get")
+	(el-get-fink . "el-get")
+	(el-get-git . "el-get")
+	(el-get-git-svn . "el-get")
+	(el-get-hg . "el-get")
+	(el-get-http . "el-get")
+	(el-get-http-tar . "el-get")
+	(el-get-list-packages . "el-get")
+	(el-get-methods . "el-get")
+	(el-get-notify . "el-get")
+	(el-get-pacman . "el-get")
+	(el-get-recipes . "el-get")
+	(el-get-status . "el-get")
+	(el-get-svn . "el-get")
 	(el-index/el-index . "el-index")
 	(el-markup . "el-markup")
 	(el-mock . "el-mock")
@@ -2034,12 +2020,12 @@
 	(emacspeak-cyclebuffer . "emacspeak")
 	(emacspeak-daisy . "emacspeak")
 	(emacspeak-damlite . "emacspeak")
+	(emacspeak-dbus . "emacspeak")
 	(emacspeak-desktop . "emacspeak")
 	(emacspeak-dictionary . "emacspeak")
 	(emacspeak-dired . "emacspeak")
 	(emacspeak-dismal . "emacspeak")
 	(emacspeak-dmacro . "emacspeak")
-	(emacspeak-ebook . "emacspeak")
 	(emacspeak-ecb . "emacspeak")
 	(emacspeak-ediary . "emacspeak")
 	(emacspeak-ediff . "emacspeak")
@@ -2048,6 +2034,7 @@
 	(emacspeak-enriched . "emacspeak")
 	(emacspeak-entertain . "emacspeak")
 	(emacspeak-eperiodic . "emacspeak")
+	(emacspeak-epub . "emacspeak")
 	(emacspeak-erc . "emacspeak")
 	(emacspeak-eshell . "emacspeak")
 	(emacspeak-ess . "emacspeak")
@@ -2555,6 +2542,7 @@
 	(erlext . "distel")
 	(ermm . "emacs-ringing")
 	(erobot . "erobot")
+	(ert-extras . "ert-extras")
 	(ert2 . "nxhtml")
 	(es-demo . "elserv")
 	(es-mhc . "elserv")
@@ -2630,6 +2618,7 @@
 	(ess-sas-d . "ess")
 	(ess-sas-l . "ess")
 	(ess-site . "ess")
+	(ess-smart-underscore . "ess-smart-underscore")
 	(ess-sp3-d . "ess")
 	(ess-sp4-d . "ess")
 	(ess-sp5-d . "ess")
@@ -2918,6 +2907,7 @@
 	(frame-local-vars . "darkroom-mode")
 	(framemove . "framemove")
 	(framov . "framov")
+	(frb . "frb")
 	(free-tagging . "free-tagging")
 	(freex . "freex")
 	(freex-embed . "freex")
@@ -3678,6 +3668,7 @@
 	(ido-ubiquitous . "ido-ubiquitous")
 	(idomenu . "idomenu")
 	(idxdoc . "nxhtml")
+	(idxdocindex . "nxhtml")
 	(idxgds . "nxhtml")
 	(idxsearch . "nxhtml")
 	(idxsql . "nxhtml")
@@ -5183,6 +5174,7 @@
 	(one-key-default . "one-key")
 	(one-key-dir . "one-key-dir")
 	(oneonone . "oneonone")
+	(online-search . "online-search")
 	(ontology . "nclosemacs")
 	(oo-browser-autoloads . "oo-browser")
 	(ooc-grammar-macros . "ooc-mode")
@@ -5458,6 +5450,7 @@
 	(pedals . "versor")
 	(peepopen . "peepopen")
 	(peg . "peg")
+	(per-win . "per-win")
 	(per-window-point . "per-window-point")
 	(perkymbf . "perkymbf")
 	(perl-completion . "perl-completion")
@@ -5769,6 +5762,7 @@
 	(pwsafe . "pwsafe")
 	(py-bug-numbered-tests . "python-mode")
 	(py-indent . "py-indent")
+	(py-shell-complete . "python-mode")
 	(pycomplete . "python-mode")
 	(pycomplete+ . "pycomplete+")
 	(pylit . "pylit")
@@ -6229,6 +6223,7 @@
 	(rtf-support . "rtf-support")
 	(rtf-tables . "rtf")
 	(rtm . "slack-rtm")
+	(rtmpdump . "nxhtml")
 	(rtree . "gnus")
 	(ruby-block . "ruby-block")
 	(ruby-comint . "ruby-comint")
@@ -7424,6 +7419,7 @@
 	(unipoint . "unipoint")
 	(uniq . "uniq")
 	(unique . "unique")
+	(unique-window-buffers . "unique-window-buffers")
 	(uniquify . "uniquify")
 	(unit-test . "unit-test")
 	(units . "units")
@@ -7851,6 +7847,7 @@
 	(wiktionary-swadesh . "wiktionary-swadesh")
 	(wimpy-del . "wimpy-del")
 	(win-disp-util . "win-disp-util")
+	(win-switch . "win-switch")
 	(windata . "windata")
 	(windmove . "windmove")
 	(window+ . "window+")
@@ -7947,6 +7944,7 @@
 	(wrolo-logic . "hyperbole")
 	(wrolo-menu . "hyperbole")
 	(ws-mode . "ws-mode")
+	(ws-tests . "ws-tests")
 	(ws-trim . "ws-trim")
 	(wsh-repl . "wsh-repl")
 	(wtf . "wtf")
@@ -8218,10 +8216,4 @@
 ;; mode:emacs-lisp
 ;; auto-compile-flag:nil
 ;; End:
-
-(require 'elm)
-
-(require 'minmacs)
-(load-file minmacs-generated-file)
-
-;;; epkgs/.config ends here
+;;; var/epkgs/.cache ends here

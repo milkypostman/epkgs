@@ -1,4 +1,5 @@
-(:repository (git . "http://www.dr-qubit.org/git/undo-tree.git")
+(:summary    "Treat undo history as a tree"
+ :repository (git . "http://www.dr-qubit.org/git/undo-tree.git")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-3"
@@ -6,7 +7,7 @@
  :maintainer ("Toby Cubitt" . "toby-undo-tree@dr-qubit.org")
  :provided   (undo-tree)
  :required   ((("cl" cl)))
- :keywords   (history redo tree undo)
+ :keywords   (convenience files history redo tree undo)
  :homepage   "http://www.dr-qubit.org/emacs.php"
  :wikipage   "http://www.emacswiki.org/UndoTree"
  :commentary "\

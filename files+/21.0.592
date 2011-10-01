@@ -1,6 +1,6 @@
 (:summary    "Enhancements of standard library `files.el'"
  :created    "19950811"
- :updated    "20110425"
+ :updated    "20110921"
  :license    "GPL-3"
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")

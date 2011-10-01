@@ -7,5 +7,6 @@
  :maintainer ("Damien Cassou" . "damien.cassou@gmail.com")
  :provided   (textlint)
  :homepage   "https://github.com/DamienCassou/textlint"
+ :wikipage   "http://www.emacswiki.org/TextLint"
  :commentary "\
 bla bla")

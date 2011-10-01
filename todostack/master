@@ -8,6 +8,8 @@
  :required   (nil
 	      (("lisp-mnt" lisp-mnt)))
  :keywords   (calendar)
+ :homepage   "http://www.emacswiki.org/TodoStack"
+ :wikipage   "http://www.emacswiki.org/TodoStack"
  :commentary "\
 GENERAL USE
 

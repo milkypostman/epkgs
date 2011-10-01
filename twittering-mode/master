@@ -15,6 +15,7 @@
 	       ("xml" xml))
 	      (("epg" epa epg)
 	       ("gnus" tls)
+	       ("revive" revive)
 	       ("url" url-methods)
 	       (nil alpaca)))
  :keywords   (twitter web)

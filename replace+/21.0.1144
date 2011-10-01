@@ -1,6 +1,6 @@
 (:summary    "Extensions to `replace.el'"
  :created    "19960130"
- :updated    "20110901"
+ :updated    "20110922"
  :license    "GPL-2"
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")

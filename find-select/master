@@ -4,7 +4,8 @@
  :authors    (("Masahiro Hayashi" . "mhayashi1120@gmail.com"))
  :maintainer ("Masahiro Hayashi" . "mhayashi1120@gmail.com")
  :provided   (find-select)
- :required   ((("emacs-core" find-cmd)))
+ :required   ((("cl" cl)
+	       ("emacs-core" find-cmd)))
  :keywords   (command find result xargs)
  :homepage   "https://github.com/mhayashi1120/Emacs-find-select"
  :commentary "\

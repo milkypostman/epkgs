@@ -1,0 +1,10 @@
+(:summary    "Code to work with FluidDB"
+ :repository (git . "git://github.com/hdurer/fluiddb.el.git")
+ :created    "2009"
+ :updated    "2010"
+ :license    "GPL-2"
+ :provided   (fluiddb fluiddbinterface fluiddbutils)
+ :required   ((("cl" cl)
+	       ("json" json)
+	       ("url" url)))
+ :homepage   "https://github.com/hdurer/fluiddb.el")

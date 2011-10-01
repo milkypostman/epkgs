@@ -1,7 +1,7 @@
 (:summary    "Quickly traverse all backups of a file"
  :repository (git . "git://github.com/lewang/backup-walker.git")
  :created    "20110907"
- :updated    "20110919"
+ :updated    "20110920"
  :license    "GPL-3"
  :authors    (("Le Wang"))
  :maintainer ("Le Wang")
@@ -36,9 +36,6 @@ The typical workflow is:
 Additionally, note that all the diff-mode facilities are available in the
 `backup-walker' buffer.
 
-
-TODO: when moving between backups, if we parse the diff output, then we can
-locate the point to be more consistent.  It's not hard.
 
 
 

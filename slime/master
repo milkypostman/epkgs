@@ -13,7 +13,6 @@
 	       ("emacs-core" bytecomp font-lock overlay pp)
 	       ("etags" etags)
 	       ("gud" gud)
-	       ("hideshow" hideshow)
 	       ("outline" outline)
 	       ("thingatpt" thingatpt)
 	       ("timer" timer)

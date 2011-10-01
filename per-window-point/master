@@ -8,6 +8,7 @@
  :provided   (per-window-point)
  :keywords   (convenience)
  :homepage   "https://github.com/alpaker/Per-Window-Point"
+ :wikipage   "http://www.emacswiki.org/PerWindowPoint"
  :commentary "\
 Emacs conveniently allows one to work on different parts of the same
 buffer at the same time, but the rules governing buffer display are, for

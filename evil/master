@@ -16,6 +16,7 @@
 	       (nil ert)))
  :keywords   (emulation vim)
  :homepage   "http://gitorious.org/evil"
+ :wikipage   "http://www.emacswiki.org/Evil"
  :commentary "\
 Evil is an extensible vi layer for Emacs. It emulates the main
 features of Vim, and provides facilities for writing custom

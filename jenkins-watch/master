@@ -1,0 +1,8 @@
+(:repository (git . "git://github.com/ataylor284/jenkins-watch.git")
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-2"
+ :authors    (("Andrew Taylor" . "ataylor@redtoad.ca"))
+ :maintainer ("Andrew Taylor" . "ataylor@redtoad.ca")
+ :provided   (jenkins-watch)
+ :homepage   "https://github.com/ataylor284/jenkins-watch")

@@ -1,7 +1,7 @@
 (:summary    "Try to avoid showing same buffer in two windows on the same frame"
  :repository (git . "git://github.com/lewang/unique-window-buffers.git")
  :created    "20110917"
- :updated    "20110919"
+ :updated    "20110923"
  :license    "GPL-3"
  :authors    (("Le Wang"))
  :maintainer ("Le Wang")
@@ -22,7 +22,7 @@ Some notes for the author:
 `quit-window' calls `switch-to-prev-buffer', but also has a separate
   code-path that restores directly from window parameter `quit-restore'
 
-`kill-buffer' calls first kills the buffer, then calls
+`kill-buffer' first kills the buffer, then calls
 `replace-buffer-in-windows' to scrub the buffer from other windows.
 `kill-buffer' has to be adviced to make the replace buffer unique.
 
@@ -31,6 +31,7 @@ Some notes for the author:
 
 
 So advice functions `switch-to-prev-buffer' `quit-window' `split-window'
+`kill-buffer'
 
 
 
