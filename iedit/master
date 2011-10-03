@@ -1,6 +1,6 @@
 (:summary    "Edit multiple regions with the same content simultaneously"
  :created    "2010"
- :updated    "20110225"
+ :updated    "20111002"
  :license    "GPL-3"
  :authors    (("Victor Ren" . "victorhge@gmail.com"))
  :maintainer ("Victor Ren" . "victorhge@gmail.com")
