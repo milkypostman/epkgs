@@ -1,0 +1,55 @@
+(:summary    "Macro to create commands that insert Unicode chars"
+ :created    "20111004"
+ :updated    "20111004"
+ :license    "GPL-3"
+ :authors    (("Drew Adams"))
+ :maintainer ("Drew Adams")
+ :provided   (ucs-cmds)
+ :keywords   (characters commands encoding ucs-names unicode)
+ :commentary "\
+Macro `ucs-make-commands' creates simple commands that insert
+ Unicode characters.
+
+ You know about vanilla command `ucs-insert' (`C-x 8 RET'), which
+ lets you type input to complete against a Unicode character name
+ and then inserts that character.
+
+ There are *many* completion candidates, so it can be a bit slow.
+ Sometimes you might want a command that just inserts one given
+ Unicode character.  You can use macro `ucs-make-commands' to
+ create one or more such simple character-insertion commands.
+
+ Obviously, you can bind the commands to keys, effectively adding
+ Unicode characters to your keyboard.  You can use a prefix
+ argument with any of the commands to insert multiple copies of the
+ given character.
+
+ Macro `ucs-make-commands' takes a regexp as argument, which is
+ matched against all Unicode character names in `ucs-names'.
+ Commands are created for those characters that match.  The
+ commands created have the same names as the characters they
+ insert, except that `SPC' characters in the character names are
+ replaced by hyphens (`-'), and the command names are lowercase,
+ not uppercase like the character names.
+
+
+ Icicles Can Help
+ ----------------
+
+ Both the commands created using macro `ucs-make-commands' and the
+ more general command `ucs-insert' are enhanced if you use
+ `Icicles' (http://www.emacswiki.org/cgi-bin/wiki/icicles.el).
+
+ For both, you can use more powerful completion with `Icicles',
+ including regexp, substring (a subset of regexp), and various
+ kinds of fuzzy matching.
+
+ But more importantly, you can use progressive completion, to match
+ parts of a candidate name in any order.  And you can \"chip away at
+ the non-elephant\", removing whole sets of candidates that match
+ patterns that you are *not* interested in.
+
+ With `Icicles', `ucs-insert' (but not the commands defined using
+ `ucs-make-commands') has the additional advantage that it displays
+ the characters themselves next to their names, in `*Completions*':
+ WYSIWYG.")
