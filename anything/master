@@ -4,7 +4,7 @@
  :updated    "2011"
  :license    "GPL-2"
  :authors    (("Tamas Patrovics"))
- :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
+ :maintainer ("Tamas Patrovics")
  :provided   (anything anything-complete anything-config anything-grep anything-gtags anything-ipa anything-match-plugin anything-menu anything-migemo anything-multi-sources anything-obsolete anything-show-completion anything-startup autodoc)
  :required   ((("advice" advice)
 	       ("bookmark" bookmark)

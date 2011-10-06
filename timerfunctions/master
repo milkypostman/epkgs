@@ -1,0 +1,7 @@
+(:created    "20001120"
+ :updated    "20111004"
+ :license    "GPL-2"
+ :authors    (("Deepak Goel" . "deego@gnufans.org"))
+ :maintainer ("Deepak Goel" . "deego@gnufans.org")
+ :provided   (timerfunctions)
+ :homepage   "http://www.gnufans.net/~deego/emacs.html")

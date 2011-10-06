@@ -4,6 +4,7 @@
       '(
 	"anything-etags" ; part of anything FIXME true?
 	"anything-multi-sources" ; part of anything FIXME true?
+	"appt"
 	"bongo-mplayer" ; merged into bongo
 	"dig"
 	"flow-fill"
