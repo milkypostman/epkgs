@@ -1,10 +1,12 @@
 (:summary    "Customizable behavior for `mouse-3'"
  :created    "20101130"
- :updated    "20110225"
+ :updated    "20111007"
  :license    "GPL-3"
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")
  :provided   (mouse3)
+ :required   (nil
+	      ((nil naked)))
  :keywords   (keymap kill menu mouse rectangle region)
  :homepage   "http://www.emacswiki.org/Mouse3"
  :wikipage   "http://www.emacswiki.org/Mouse3"

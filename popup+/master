@@ -1,0 +1,13 @@
+(:summary    "Enhancement of `popup.el'"
+ :repository (git . "git://github.com/scjung/popup-plus.git")
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-2"
+ :authors    (("Seung Cheol Jung"))
+ :maintainer ("Seung Cheol Jung")
+ :provided   (popup+)
+ :required   ((("popup" popup)))
+ :keywords   (tooltip)
+ :homepage   "https://github.com/scjung/popup-plus"
+ :commentary "\
+TODO")

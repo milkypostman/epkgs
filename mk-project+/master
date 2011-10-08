@@ -1,10 +1,10 @@
 (:summary    "Enhancement of `mk-project.el'"
  :repository (git . "git://github.com/scjung/mk-project-plus.git")
- :created    "2010"
- :updated    "2010"
+ :created    "2011"
+ :updated    "2011"
  :license    "GPL-3"
- :authors    (("Seungcheol Jung" . "scjung.hyu@gmail.com"))
- :maintainer ("Seungcheol Jung" . "scjung.hyu@gmail.com")
+ :authors    (("Seung Cheol Jung" . "scjung.hyu@gmail.com"))
+ :maintainer ("Seung Cheol Jung" . "scjung.hyu@gmail.com")
  :provided   (mk-project+)
  :required   ((("mk-project" mk-project)))
  :homepage   "https://github.com/scjung/mk-project-plus"
