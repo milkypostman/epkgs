@@ -41,6 +41,7 @@
 	       ("man" man)
 	       ("org-mode" org org-exp)
 	       ("outline" outline)
+	       ("pianobar" pianobar)
 	       ("psvn" psvn)
 	       ("regexp-opt" regexp-opt)
 	       ("reporter" reporter)
