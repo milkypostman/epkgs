@@ -1,27 +1,161 @@
 (:summary    "Navigation with marks on a ring of rings (torus)"
+ :repository (cvs . ":pserver:anonymous@cvs.mtorus.berlios.de:/cvsroot/mtorus")
  :created    "2002"
- :updated    "2003"
+ :updated    "2004"
  :license    "GPL-2"
- :provided   (mtorus)
+ :authors    (("Stefan Kamphausen" . "mail@skamphausen.de")
+	      ("Sebastian Freundt" . "hroptatyr@users.berlios.de"))
+ :maintainer ("Stefan Kamphausen" . "mail@skamphausen.de")
+ :provided   (mtorus mtorus-auto-rings mtorus-convert mtorus-display mtorus-element mtorus-state mtorus-topology mtorus-type mtorus-utils)
  :required   ((("cl" cl)
-	       ("timer" timer)))
+	       ("timer" timer)
+	       ("tree-widget" tree-widget)))
  :keywords   (bookmarks extensions navigation tools user)
- :homepage   "http://www.skamphausen.de/cgi-bin/ska/mtorus"
  :wikipage   "http://www.emacswiki.org/MTorus"
  :commentary "\
-FIXMEs
- - generic interface for special lists, because currently the
-   (only) special list (buffer list) behaviour is hard coded in a
-   way that's probably not sensible for lists like recent-files or
-   the like
- - handling of invalid markers
-   -> (don't display, quietly discard?)
-   -> the correct while-loop which deletes invalid in
-   mtorus-jump-current-marker or mtorus-current-buffer
-   -> what happens when a buffer is reverted (or killed and
-   reopened)?
+This file contains both the old mtorus code from revision 1.6
+and the new (more abstract) mtorus frontend code from the current
+development
+If I (hroptatyr) ever get that synch done from my personal wiki page
+to the berlios project page you can follow these new changes yourselves.
+Finally I'd like to add that I kept all the ;;; Usage and ;;; History
+lines until the MTorus 2.0 is stable at last.
+For information on how to fiddle with the new frontend/backend stuff
+you can visit the EmacsWiki page listed below
+
 MTorus on the Web:
 Main page:
+http://mtorus.berlios.de
+Stefan's pages:
 http://www.skamphausen.de/software/skamacs/mtorus.html
 German intro:
-http://www.skamphausen.de/xemacs/lisp/mtorus.html")
+http://www.skamphausen.de/xemacs/lisp/mtorus.html
+English intro:
+http://www.emacswiki.org/cgi-bin/wiki/MTorus
+Project page:
+http://developer.berlios.de/projects/mtorus
+EmacsWiki page:
+http://www.emacswiki.org/wiki.pl?MTorus
+
+ToDo: (in planner syntax)
+#A1  _ manage currying for keyword definition (2004.09.14)
+#A2  _ write docs (2004.09.14)
+#A3  _ bring back mtorus-1.6 special lists (2004.09.14)
+#A4  _ make current-element/ring frame/window-local (2004.09.14)
+#A5  _ mtorus-state doesnt restore topology correctly (2004.09.14)
+
+Getting Started
+ ===============
+- Place the MTorus directory somewhere in your 'load-path and put
+
+    (require 'mtorus)
+
+in your .emacs
+Now you have a useless element on your torus called mtorus-universe.
+
+* Try to find some buffers that are worth to form a ring and do
+
+    M-x mtorus-create-ring RET
+
+Enter some appropriate name for that ring.
+Go to a buffer which should be part of the ring created and enter
+
+    M-x mtorus-create-element RET
+
+When asked for a type just enter buffer or marker.
+These are the only types predefined by default.
+
+- Repeat this element creation step until you have enough buffers on your ring.
+
+- Now you are able to navigate through your torus with the commands
+
+    mtorus-next-element
+    mtorus-prev-element
+    mtorus-parent-element
+    mtorus-child-element
+
+- If you rather want to simulate mtorus-1.6 navigation behavior try
+  navigating with the commands
+
+    mtorus-uncle-element
+    mtorus-aunt-element
+    mtorus-nephew-element
+    mtorus-niece-element
+
+
+To treat your command history with care, bind these commands to some keys.
+
+Suggested Keybindings:
+- I have H-kp-6, H-kp-4, H-kp-8 and H-kp-2 keys bound to
+  mtorus-next-element, mtorus-prev-element, mtorus-parent-element and
+  mtorus-child-element respectively -- [[hroptatyr]]
+  For selection of an element I user H-kp-5
+- I prefer shift -left/right/up/down -- StefanKamphausen
+
+
+To see some of the modularized external stuff in action put
+
+    (require 'mtorus-auto-rings)
+
+in your .emacs. :D
+
+
+Usage: (still recent, since everything tries to emulate mtorus-1.6)
+ ===================================================================
+MTorus lets you work with several groups of buffers, each group
+being a separate ring.  This is all for easier navigation through
+buffers.  I've been using some buffer cycling functions on (shift
+left and shift right) for quite a long time now and I find myself
+cycling through larger and larger lists every day.  Starting one
+instance of (X)Emacs for each editing context isn't the way and I
+found no way of doing what I want with frames.  An `editing context'
+means a logical grouping of buffers.  This could be a group for
+quick edit of the emacs configuration files while you're actually
+working on some (Ruby/Perl/whatever-) program or it could be all
+the headers of your C project while all the .c-files make up
+another group.  Whatever you can think of.  You could even make
+different parts of your buffers (point positions) show up in
+different groups like when one set of functions spread throughout
+one (or more) files is responsible for one specific task or like
+working on a chapter in a LaTeX-document while defining some macros
+at the top of the file.  There is always a default group which
+contains all the open buffers and can not be altered.
+
+Like so:
++- Ring: C-code -------------------------------------------------+
+|                                                                |
+| +- marker ---+  +- marker ---+  +- marker ---+                 |
+| | main.cc/224|  | main.cc/567|  | main.hh/312|                 |
+| +------------+  +------------+  +------------+                 |
+|                                                                |
+| +- marker ---+  +- marker ----+                                |
+| | *Occur*/84 |  | README/1388 |                                |
+| +------------+  +-------------+                                |
+|                                                                |
++----------------------------------------------------------------+
+
++- Ring: quick --------------------------------------------------+
+|                                                                |
+|                                                                |
+| +- marker ---+  +- marker -----+                               |
+| | .emacs/224 |  | *scratch*/33 |                               |
+| +------------+  +--------------+                               |
+|                                                                |
++----------------------------------------------------------------+
+
++- Ring: doc ----------------------------------------------------+
+|                                                                |
+|                                                                |
+| +- marker ---+  +- marker ---+                                 |
+| | *info*/999 |  | Man: ls/1  |                                 |
+| +------------+  +------------+                                 |
+|                                                                |
++----------------------------------------------------------------+
+
+Choosing another entry in such a group is done by actually cycling
+through the group (like with e.g. the kill-ring) and since the
+entries are made of a buffer together with a position (and that is a
+marker) each of the groups is comparable to the mark-ring.  And
+since we are cycling through a collection of those rings we are
+using a Torus here.  Hence the name: \"mtorus\": mark-torus.
+(A \"group\" will usually be referred to as a \"ring\" from now.)")

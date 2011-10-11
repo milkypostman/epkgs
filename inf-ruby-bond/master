@@ -1,7 +1,7 @@
 (:summary    "Bond autocompletion support for inf-ruby"
  :repository (git . "git://github.com/pd/inf-ruby-bond.git")
  :created    "201011"
- :updated    "2010"
+ :updated    "2011"
  :license    "GPL-3"
  :authors    (("Kyle Hargraves" . "pd@krh.me"))
  :maintainer ("Kyle Hargraves" . "pd@krh.me")
