@@ -1,0 +1,17 @@
+(:summary    "Group ibuffer's list by VC project, or show VC status"
+ :repository (git . "git://github.com/purcell/ibuffer-vc.git")
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Steve Purcell" . "steve@sanityinc.com"))
+ :maintainer ("Steve Purcell" . "steve@sanityinc.com")
+ :provided   (ibuffer-vc)
+ :required   ((("cl" cl)
+	       ("ibuffer" ibuf-ext ibuffer)
+	       ("vc" vc-hooks)))
+ :keywords   (themes)
+ :homepage   "https://github.com/purcell/ibuffer-vc"
+ :commentary "\
+Adds functionality to ibuffer for grouping buffers by their parent
+vc root directory, and for displaying and/or sorting by the vc
+status of listed files.")

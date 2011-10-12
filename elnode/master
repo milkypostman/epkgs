@@ -1,4 +1,5 @@
-(:repository (git . "git://github.com/nicferrier/elnode.git")
+(:summary    "A simple emacs async HTTP server"
+ :repository (git . "git://github.com/nicferrier/elnode.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"
@@ -7,7 +8,7 @@
  :provided   (elnode)
  :required   ((("cl" cl)
 	       ("gnus" mailcap mm-encode)))
- :keywords   (lisp)
+ :keywords   (http lisp)
  :homepage   "https://github.com/nicferrier/elnode"
  :wikipage   "http://www.emacswiki.org/Elnode"
  :commentary "\
@@ -15,8 +16,8 @@ This is an elisp version of the popular node.js asynchronous
 webserver toolkit.
 
 You can define HTTP request handlers and start an HTTP server
-attached to the handler. Many HTTP servers can be started, each
-must have it's own TCP port. Handlers can defer processing with a
+attached to the handler.  Many HTTP servers can be started, each
+must have it's own TCP port.  Handlers can defer processing with a
 signal (which allows comet style resource management)
 
 See elnode-start for how to start an HTTP server.
@@ -28,11 +29,8 @@ elnode's code can be found here:
 
 Style note
 
-This codes uses the emacs style of:
+This codes uses the Emacs style of:
 
-   elnode--private-function 
+   elnode--private-function
 
-for private functions.
-
-
-Code")
+for private functions.")

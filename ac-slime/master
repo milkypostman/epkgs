@@ -1,6 +1,14 @@
-(:repository (git . "git://github.com/purcell/ac-slime.git")
+(:summary    "An auto-complete source using slime completions"
+ :repository (git . "git://github.com/purcell/ac-slime.git")
  :authors    (("Steve Purcell" . "steve@sanityinc.com"))
  :maintainer ("Steve Purcell" . "steve@sanityinc.com")
  :provided   (ac-slime)
  :required   ((("cl" cl)))
- :homepage   "https://github.com/purcell/ac-slime")
+ :homepage   "https://github.com/purcell/ac-slime"
+ :commentary "\
+Usage:
+    (require 'ac-slime)
+    (add-hook 'slime-mode-hook 'set-up-slime-ac)
+    (add-hook 'slime-repl-mode-hook 'set-up-slime-ac)
+    (eval-after-load \"auto-complete\"
+      '(add-to-list 'ac-modes 'slime-repl-mode))")
