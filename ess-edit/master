@@ -1,0 +1,62 @@
+(:summary    "Convenient editing of R code"
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Thomas Alexander Gerds" . "tagteam@sund.ku.dk"))
+ :maintainer ("Thomas Alexander Gerds" . "tagteam@sund.ku.dk")
+ :provided   (ess-edit)
+ :required   ((("emacs-core" overlay)))
+ :keywords   (convenience)
+ :commentary "\
+Compatibility: Emacs23 XEmacs21
+
+usage 
+--------------------------------------------------------------------
+
+load this file, then open some R-code, put
+the point inside the a call to an R function, e.g.
+
+ c(1,2,3,4)
+
+then try
+
+M-x ess-edit-indent-call-sophisticatedly
+or
+M-x ess-edit-insert-vector RET letters[1:10] RET
+or
+M-x ess-edit-insert-call RET agrep RET
+
+in my init.el i have the following
+(defun my-R-mode ()
+ (interactive)
+ (define-key ess-mode-map \"\\M-F\" 'ess-eval-function-and-go)
+ (define-key ess-mode-map \"\\M-j\" 'ess-eval-region-and-go)
+ (define-key ess-mode-map \"\\M-r\" 'copy-region-as-kill)
+ (define-key ess-mode-map \"\\M-k\" 'R-inferior-clear)
+ (define-key ess-mode-map \"\\M-q\" 'my-indent-paragraph)
+ (make-variable-buffer-local 'hippie-expand-try-functions-list)
+ (setq hippie-expand-try-functions-list
+	(append (list 'ess-complete-object-name)
+		hippie-expand-try-functions-list))
+ (define-key ess-mode-map \"\\M-e\" 'ess-complete-object-name)
+ (define-key ess-mode-map \"\\M-u\" 'ess-edit-dev-off)
+ (define-key ess-mode-map \"\\C-cf\" 'ess-edit-insert-call)
+ (define-key ess-mode-map \"\\C-cv\" 'ess-edit-insert-vector)
+ (define-key ess-mode-map \"\\C-cp\" 'ess-edit-insert-path)
+ (define-key ess-mode-map \"\\C-ch\" 'ess-edit-mark-call)
+ (define-key ess-mode-map \"\\C-cF\" 'ess-edit-insert-file-name)
+ (define-key ess-mode-map \"\\M-\\t\" 'ess-edit-indent-call-sophisticatedly)
+ (define-key ess-mode-map [(meta return)] '(lambda () (interactive) (ess-edit-next-arg nil)))
+ (define-key ess-mode-map \"\\M-A\" '(lambda () (interactive) (s-goto-next-arg t)))
+ (define-key ess-mode-map \"\\M-\\C-c\" 's-config)
+ (define-key ess-mode-map \"\\M-l\" 'mark-line)
+ (define-key ess-mode-map [(delete)] 'backward-or-forward-delete-char)
+ (define-key ess-mode-map [(backspace)] 'delete-backward-char)
+ (define-key ess-mode-map [(meta backspace)] 'backward-kill-word)
+ (setq ess-fancy-comments nil))
+
+Issues
+still a bit buggy, e.g. when there are comments in a function call
+
+code
+---------------variables -------------------------------------------")
