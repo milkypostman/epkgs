@@ -4,7 +4,7 @@
  :license    "GPL-3"
  :authors    (("Joseph" . "jixiuf@gmail.com"))
  :maintainer ("Joseph" . "jixiuf@gmail.com")
- :provided   (anything-etags+)
+ :provided   (anything-etags+ ctags-update)
  :required   ((("anything" anything)
 	       ("custom" custom)
 	       ("etags" etags))
@@ -15,6 +15,8 @@
 This package use `anything' as a interface to find tag with Etags.
 
  it support multiple tag files.
+ and it can recursively searches each parent directory for a file named
+ 'TAGS'. so you needn't add this special to `tags-table-list'
 
  if you use GNU/Emacs ,you can set `tags-table-list' like this.
  (setq tags-table-list '(\"/java/tags/TAGS\"

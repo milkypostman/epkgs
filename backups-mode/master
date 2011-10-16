@@ -1,11 +1,13 @@
 (:summary    "Major mode for autosaving files and listing, viewing, and reverting Emacs generated backups"
  :repository (git . "git://github.com/chadbraunduin/backups-mode.git")
  :created    "20110827"
- :updated    "2011"
+ :updated    "20111012"
  :license    "GPL-3"
  :authors    (("Chad Braun-Duin" . "chadbraunduin@gmail.com"))
- :maintainer ("Chad Braun-Duin" . "chadbraunduin@gmail.com")
- :provided   (backups-mode)
+ :maintainer ("Chad Braun-Duin")
+ :provided   (backup-walker backups-mode)
+ :required   ((("cl" cl)
+	       ("diff" diff)))
  :keywords   (autosave autosaving backup backups diff)
  :homepage   "http://chadbraunduin.blogspot.com/2011/08/backups-mode.html"
  :commentary "\
@@ -16,32 +18,33 @@ Installation
  git clone git@github.com:chadbraunduin/backups-mode.git
  cd backups-mode
  # copy to your emacs load-path
- cp backups-mode.el ~/.emacs.d/
+ cp backups-mode.el bm-utilities.el backup-walker.el ~/.emacs.d/
  # this assumes ~/.emacs.d/ is in your emacs load-path
  # add the following to .emacs
  (require 'backups-mode)
+ (backups-mode-start)
 
 Addtional Configuration
- ;; putting this in your .emacs will allow you to change version control settings. These are the default settings found in backups-mode.el.
- (setq backup-by-copying t
- delete-old-versions t
- kept-new-versions 6
- kept-old-versions 2
- version-control t)
- Documentation on these settings can be found here: <http://www.gnu.org/software/emacs/elisp/html_node/Numbered-Backups.html>
+  putting this in your .emacs will allow you to change version control settings. These are the default settings found in backups-mode.el.
+  (setq backup-by-copying t
+   delete-old-versions t
+   kept-new-versions 6
+   kept-old-versions 2
+   version-control t)
+  Documentation on these settings can be found here: http://www.gnu.org/software/emacs/elisp/html_node/Numbered-Backups.html
 
 My Personal Configuration
- As an example, here's the configuration from my .emacs file
- (defvar backup-directory \"~/.emacs-backups/backups/\")
- (defvar tramp-backup-directory \"~/.emacs-backups/tramp-backups/\")
- ;; backups-mode needs to be loaded after setting your backup directory variables
- (require 'backups-mode)
- (setq kept-new-versions 7
- kept-old-versions 3)
+  As an example, here's the configuration from my .emacs file
+  (require 'backups-mode)
+  (defvar backup-directory \"~/.emacs-backups/backups/\")
+  (defvar tramp-backup-directory \"~/.emacs-backups/tramp-backups/\")
+  (backups-mode-start)
+  keep all versions forever
+  (setq delete-old-versions 1)
 
 Usage
  While editing a file-based buffer there are two new commands and some changes to note.
-   Now, whenever you kill a buffer or kill emacs, all file-based buffers will be saved without prompting.
+ Now, whenever you kill a buffer or kill emacs, all file-based buffers will be saved without prompting.
  New Commands while editing a file:
    save-version (\\C-cv) will backup the previously saved version of the file.
    list-backups (\\C-cb) will open a backups-mode buffer.

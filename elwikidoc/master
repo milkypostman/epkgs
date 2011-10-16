@@ -1,7 +1,7 @@
 (:summary    "Use elisp doc strings to make other documentation"
  :repository (git . "git://github.com/nicferrier/elwikidoc.git")
  :created    "2010"
- :updated    "2010"
+ :updated    "2011"
  :license    "GPL-3"
  :authors    (("Nic Ferrier" . "nic@ferrier.me.uk"))
  :maintainer ("Nic Ferrier" . "nic@ferrier.me.uk")
@@ -35,6 +35,4 @@ This is the main paragraph converter:
  this should 'not' be changed to a link
 This is the main text. It can include references to other 'functions'.
 When there are 'two' references 'on the same line' it should
-still work.\")
-
-###autoload")
+still work.\")")
