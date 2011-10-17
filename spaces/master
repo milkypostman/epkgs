@@ -1,0 +1,12 @@
+(:summary    "Create and switch between named window configurations"
+ :repository (git . "git://github.com/chumpage/spaces.el.git")
+ :authors    (("Steven Thomas"))
+ :maintainer ("Steven Thomas")
+ :provided   (spaces)
+ :required   ((("cl" cl)
+	       ("ido" ido)))
+ :homepage   "https://github.com/chumpage/spaces.el"
+ :commentary "\
+Spaces helps you manage complex window configurations by letting you
+give them names and quickly switch between them. The core functions
+are sp-new-space, sp-delete-space, and sp-switch-space.")

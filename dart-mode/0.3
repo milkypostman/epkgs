@@ -1,0 +1,24 @@
+(:summary    "Major mode for editing Dart files"
+ :repository (git . "git://github.com/nex3/dart-mode.git")
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Nathan Weizenbaum"))
+ :maintainer ("Nathan Weizenbaum")
+ :provided   (dart-mode)
+ :required   ((("cc-mode" cc-langs cc-mode)
+	       ("cl" cl)))
+ :keywords   (language)
+ :homepage   "https://github.com/nex3/dart-mode"
+ :commentary "\
+To install, save this on your load path and add the following to
+your .emacs file:
+
+(require 'dart-mode)
+
+Known bugs:
+
+* Multiline strings using \"\"\" and ''' are not recognized. They fontify
+  correctly, but only because they look like three strings in a row.
+* In a map with identifier keys, the first key is fontified like a label.
+* else blocks are indented incorrectly.")
