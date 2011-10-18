@@ -1,4 +1,5 @@
-(:repository (git . "git://github.com/nflath/save-visited-files.git")
+(:summary    "Save opened files across sessions"
+ :repository (git . "git://github.com/nflath/save-visited-files.git")
  :created    "2009"
  :updated    "2009"
  :license    "GPL-3"
