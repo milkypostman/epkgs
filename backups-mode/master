@@ -51,4 +51,5 @@ Usage
  The backups-mode buffer will list all backups Emacs has created for the file and will allow you these options:
    view-backup (<enter>) will open a backup file read-only.
    revert-backup (R) will backup the current file then replace the current file with the backup you've chosen.
-   diff 2 files. (d + d) You can choose from the current file or any backup files and diff two of them.")
+   diff 2 files (d + d) You can choose from the current file or any backup files and diff two of them.
+   purge backups (p [+ p] + x) You can delete backups in a batch fashion by marking backups then executing a deletion of all the marked backups.")

@@ -1,0 +1,60 @@
+(:summary    "ERP(Enterprise Ressource Planning) in plain text. "
+ :repository (git . "git://github.com/tj64/erp-mode.git")
+ :created    "20110625"
+ :updated    "20110625"
+ :license    "GPL-3"
+ :authors    (("Thorsten" . "tj@data-driven.de"))
+ :maintainer ("Thorsten" . "tj@data-driven.de")
+ :provided   (erp-acc erp-crm erp-hrm erp-mode erp-op erp-pd erp-sp erp-stm)
+ :required   ((("easymenu" easymenu)
+	       (nil erp-exp erp-mobile)))
+ :homepage   "https://github.com/tj64/erp-mode"
+ :commentary "\
+ERP-mode for Emacs (Enterprise Ressource Planning) 
+
+Emacs has been used by programmers, scientists, freelancers and
+other users as a feature-rich personnal ressource planning tool for
+many years now. In fact, the facilities provided for communication
+(e.g. Gnus), organisation (e.g. Org), writing, reporting and
+presentations (e.g. LaTex, Org-babel), calculations (e.g. Calc,
+Org-tables) as well as accounting (e.g. Ledger) are often
+incredibly powerfull and efficient to use. In combination with a
+version control system like e.g. GIT, this text-based ressource
+planning environment can be easily turned into a sophisticated
+collaborative system for groups of users that keeps track of every
+single change of the shared text-files in a distributed fast
+database (thats what GIT is). 
+
+ERP-software has long been one of the last big market segments
+entirely dominated by proprietary software of leading software
+companies. This changed in the last years with the appearance of
+several Open-Source ERP-Software projects. Often, there is a huge
+gap between marketing and real software-quality in these projects,
+and the Open-Source philosophy is quickly abandoned once the
+intensive marketing resulted in commercial success for the company
+backing the project.
+
+The aim of erp-mode is to make the power of Emacs ressource
+planning tools more accessible to average users of ERP-software,
+enabling the Emacs power-users and programmers to use Emacs as a
+license free and highly customizable software in
+ERP-consulting. Therefore, erp-mode is more concerned with hiding
+already available functionality (and the resulting complexity)
+rather than with adding new functionality. It should be an
+extremely simple yet efficient frontend for the uninitialized
+ERP-User, while at the same time providing all the Emacs power for
+the ERP-Integrator and -Programmer (under the hood).
+
+
+Installation:
+
+Put erp.el to your load-path.
+The load-path is usually ~/elisp/.
+It's set in your ~/.emacs like this:
+(add-to-list 'load-path (expand-file-name \"~/elisp\"))
+
+And the following to your ~/.emacs startup file.
+
+(require 'erp-mode)
+
+No need more.")
