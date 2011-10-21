@@ -1,5 +1,5 @@
 (:summary    "Functions to make productive use of the http://del.icio.us API"
- :repository (git . "http://git.wjsullivan.net/delicious-el.git")
+ :repository (git . "git://gitorious.org/delicious-el/delicious-el.git")
  :created    "2004"
  :updated    "2007"
  :license    "GPL-3"
@@ -12,5 +12,4 @@
 	       ("url" url)
 	       ("xml" xml)))
  :keywords   (comm hypermedia)
- :homepage   "http://wjsullivan.net/delicious-el.html"
  :wikipage   "http://www.emacswiki.org/DeliciousEl")

@@ -16,7 +16,8 @@
 	       ("info-look" info-look)
 	       ("mmm-mode" mmm-auto)
 	       ("pymacs" pymacs)
-	       ("reporter" reporter)))
+	       ("reporter" reporter)
+	       ("shell" shell)))
  :keywords   (languages oop python)
  :homepage   "https://launchpad.net/python-mode"
  :commentary "\
