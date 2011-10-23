@@ -8215,6 +8215,5 @@
 
 ;; Local Variables:
 ;; mode:emacs-lisp
-;; auto-compile-flag:nil
 ;; End:
 ;;; var/epkgs/.cache ends here

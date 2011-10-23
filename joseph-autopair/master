@@ -1,6 +1,6 @@
 (:repository (git . "git://github.com/jixiuf/joseph-autopair.git")
  :created    "20110302"
- :updated    "20110617"
+ :updated    "2011"
  :license    "GPL-3"
  :authors    (("Joseph" . "jixiuf@gmail.com"))
  :maintainer ("Joseph" . "jixiuf@gmail.com")
@@ -22,7 +22,7 @@ this package doesn't use skeleton or anything like this.
  `delete-backward-char'
  `backward-delete-char-untabify'
  so that when you press `Backspace' between \"(\" and \")\"
- both \"(\" and \")\" is deleted.
+ both \"(\" and \")\" are deleted.
 
  This is only enabled when the \"tail\" is `string'
  what is that means?
@@ -31,8 +31,8 @@ this package doesn't use skeleton or anything like this.
  when it is a lisp sentence ,it will be eval.
  see the default value of `joseph-autopair-alist'.
 
-     `joseph-autopair-origin-backward-delete-char-untabify'
-     `joseph-autopair-origin-delete-backward-char'
+     `origin-backward-delete-char-untabify-1'
+     `origin-delete-backward-char-1'
  are the original
  `backward-delete-char-untabify' `delete-backward-char'.
 
