@@ -1,0 +1,8 @@
+(:summary    "Emacs highlighting using Ethan Schoonover’s Solarized color scheme"
+ :repository (git . "git://github.com/milkypostman/emacs-color-theme-solarized.git")
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :provided   (color-theme-solarized)
+ :required   ((("color-theme" color-theme)))
+ :homepage   "https://github.com/milkypostman/emacs-color-theme-solarized")
