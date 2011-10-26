@@ -3,8 +3,9 @@
  :created    "2009"
  :updated    "2009"
  :license    "GPL-3"
- :provided   (company-emacs-eclim decompile eclim eclim-ant eclim-java eclim-maven eclim-problems eclim-project)
- :required   ((("cl" cl)
+ :provided   (ac-emacs-eclim-source company-emacs-eclim decompile eclim eclim-ant eclim-java eclim-maven eclim-problems eclim-project)
+ :required   ((("auto-complete" auto-complete)
+	       ("cl" cl)
 	       ("company" company)
 	       ("compile" compile)
 	       ("json" json)))

@@ -22,6 +22,7 @@
 	       ("dired" dired)
 	       ("dired-aux" dired-aux)
 	       ("dired-x" dired-x)
+	       ("easy-mmode" easy-mmode)
 	       ("easymenu" easymenu)
 	       ("eldoc" eldoc)
 	       ("elib" stack-f)
