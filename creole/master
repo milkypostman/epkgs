@@ -2,7 +2,11 @@
  :repository (git . "git://github.com/nicferrier/elwikicreole.git")
  :created    "2011"
  :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Nic Ferrier" . "nferrier@ferrier.me.uk"))
+ :maintainer ("Nic Ferrier" . "nferrier@ferrier.me.uk")
  :provided   (creole)
+ :keywords   (creole lisp wiki)
  :homepage   "https://github.com/nicferrier/elwikicreole"
  :commentary "\
 This is a WikiCreole wiki parser. WikiCreole is something like the
