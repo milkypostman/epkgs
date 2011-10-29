@@ -59,7 +59,8 @@ You can choose whether to run specs using 'rake spec' or the 'spec'
 command. Use the customization interface (customize-group
 rspec-mode) or override using (setq rspec-use-rake-flag TVAL).
 
-Options will be loaded from spec.opts or .rspec if it exists, otherwise it
+Options will be loaded from spec.opts or .rspec if it exists and
+rspec-use-opts-file-when-available is not set to nil, otherwise it
 will fallback to defaults.
 
 Dependencies
