@@ -1,0 +1,25 @@
+(:summary    "Open recently closed files"
+ :repository (git . "git://github.com/ajvargo/Lazarus.git")
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-3"
+ :provided   (lazarus)
+ :homepage   "https://github.com/ajvargo/Lazarus"
+ :commentary "\
+Lazarus is a minor mode for opening files that have been closed.
+The idea is to provide a 'web browser' sort of functionality to
+recover from accidental kills. It provides several convenience
+functions to this end. It also allows the conjuring of an interactive
+buffer to manage or jump to the closed files.
+
+Lazarus will save a list of closed files when you close Emacs, and
+read them back in when you start the mode.
+
+It will save the last 20 files that have been closed.
+
+You can customize the file path and number of files saved
+by M-x customize-group lazarus
+
+recentf.el was leaned on for writing this.
+http://stackoverflow.com/questions/2227401/how-to-get-a-list-of-last-closed-files-in-emacs
+was also used for inspiration")
