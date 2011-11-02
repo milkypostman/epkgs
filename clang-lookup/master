@@ -1,0 +1,17 @@
+(:summary    "Goto symbol definition using clang"
+ :repository (git . "git://github.com/sheijk/clang-lookup.git")
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-2"
+ :authors    (("Jan Rehders" . "cmdkeen@gmx.de"))
+ :maintainer ("Jan Rehders" . "cmdkeen@gmx.de")
+ :provided   (clang-lookup)
+ :homepage   "https://github.com/sheijk/clang-lookup"
+ :commentary "\
+A simple minor mode to use clang to navigate to a symbol's definition
+Add something like this to your .emacs:
+
+(autoload 'clang-goto-symbol-at-point \"clang-lookup\")
+(define-key 'c++-mode-map (kbd \"M-.\") 'clang-goto-symbol-at-point)
+
+This is a very early version lacking reasonable error handling etc.")

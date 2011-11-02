@@ -1,0 +1,18 @@
+(:summary    "A parser for the Creole Wiki language"
+ :repository (git . "git://github.com/nicferrier/elwikicreole.git")
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Nic Ferrier" . "nferrier@ferrier.me.uk"))
+ :maintainer ("Nic Ferrier" . "nferrier@ferrier.me.uk")
+ :provided   (creole)
+ :required   (((nil ert)))
+ :keywords   (creole lisp wiki)
+ :homepage   "https://github.com/nicferrier/elwikicreole"
+ :commentary "\
+This is a WikiCreole wiki parser. WikiCreole is something like the
+Wiki language used by OddMuse, which is the EmacsWiki wiki
+language.
+
+WikiCreole is an emerging standard documented at:
+http://www.wikicreole.org/wiki/Creole1.0")

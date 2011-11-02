@@ -4,7 +4,7 @@
  :updated    "1994"
  :license    "GPL-3"
  :maintainer (nil . "python-mode@python.org")
- :provided   (column-marker doctest-mode pars-part-output py-bug-numbered-tests py-shell-complete pycomplete python-mode python-mode-shell-install python-mode-test)
+ :provided   (column-marker doctest-mode pars-part-output py-bug-numbered-tests pycomplete python-mode python-mode-shell-install python-mode-test)
  :required   ((("ansi-color" ansi-color)
 	       ("cc-mode" cc-cmds)
 	       ("cl" cl)
@@ -12,8 +12,8 @@
 	       ("compile" compile)
 	       ("custom" custom)
 	       ("highlight-indentation" highlight-indentation)
+	       ("hippie-exp" hippie-exp)
 	       ("imenu" imenu)
-	       ("info-look" info-look)
 	       ("mmm-mode" mmm-auto)
 	       ("pymacs" pymacs)
 	       ("reporter" reporter)

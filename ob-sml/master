@@ -1,0 +1,10 @@
+(:summary    "Org-babel functions for template evaluation"
+ :repository (git . "git://github.com/swannodette/ob-sml.git")
+ :license    "GPL-3"
+ :authors    (("David Nolen"))
+ :maintainer ("David Nolen")
+ :provided   (ob-sml)
+ :required   ((("org-mode" ob ob-comint ob-eval ob-ref)
+	       ("sml-mode" sml-mode)))
+ :keywords   (literate\ programming reproducible\ research)
+ :homepage   "http://orgmode.org")

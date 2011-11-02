@@ -3,7 +3,7 @@
  :created    "2011"
  :updated    "2011"
  :license    "GPL-3"
- :provided   (eide eide-compare eide-config eide-edit eide-help eide-keys eide-menu eide-popup eide-project eide-search eide-svn eide-windows)
+ :provided   (eide eide-compare eide-config eide-edit eide-git eide-help eide-keys eide-menu eide-popup eide-project eide-search eide-svn eide-windows)
  :required   ((("desktop" desktop)
 	       ("dired" dired)
 	       ("ediff" ediff)

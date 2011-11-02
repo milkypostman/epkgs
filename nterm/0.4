@@ -1,7 +1,7 @@
 (:created    "20091001"
- :updated    "2010"
- :authors    (("Ivan Kanis" . "look-for-me@your-favorite-search.engine"))
- :maintainer ("Ivan Kanis" . "look-for-me@your-favorite-search.engine")
+ :updated    "2011"
+ :authors    (("Ivan Kanis" . "ivan.kanis@googlemail.com"))
+ :maintainer ("Ivan Kanis" . "ivan.kanis@googlemail.com")
  :provided   (nterm nterm-gr)
  :required   ((("cl" cl)))
  :keywords   (shell terminal)
@@ -17,7 +17,7 @@ A good terminal emulator architecture has display memory and a
 table of functions for each character coming in. I have been in the
 terminal emulation business for seven years so I ought to know.
 
-Nterm is meant to be a full vt100 compatible terminal emulator. It
+Nterm is a full vt100 compatible terminal emulator. It
 has the following features:
 
  - G0 G1 switching with shift in and shift out
@@ -31,15 +31,25 @@ has the following features:
  - Double width character
  - Double height character
 
+Ultimately I would like to use nterm instead of xterm. There's a
+lot of work left to be done though.
+
+Drawing character are hard coded to be used with a 12x24 font. If
+you are a bit of an artist have a look at nterm-gr.el and submit an
+alternate graphic font that works for you, I will include it...
+
+I use the following font on Ubuntu:
+\"-unknown-DejaVu Sans Mono-normal-normal-*-20-*-*-*-m-0-iso10646-1\"
+
 TODO
-- fix line drawing single width characters
 - bind C-c C-c to interrupt
-- fix slow crolling
+- fix slow scrolling
 - fix buffer popping when changing cursor position
 - ANSI color
 - VT52 compatibility mode
 - Copy and paste mechanism
-- xterm emulator
+- xterm emulation
+- Unicode characters
 - Directory tracking
 - Handle multiple instance
 - Look for TBD in this file for other things...
@@ -47,7 +57,7 @@ TODO
 I think nterm is easier to maintain than term. One look at term's
 term-emulate-terminal function should convince anyone that term
 cannot be maintained anymore. Compare with nterm equivalent
-function nterm-emulate it is only 25 lines long.
+function nterm-emulate it is only 26 lines long.
 
 It has a recording mode (f11) so that you can record and replay
 traces. It has a terminal memory so that area of the terminal can

@@ -1,0 +1,34 @@
+(:summary    "Multiple major mode support for web editing"
+ :repository (git . "git://github.com/fgallina/multi-web-mode.git")
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-3"
+ :authors    (("Fabián Ezequiel Gallina" . "fabian@gnu.org.ar"))
+ :maintainer ("Fabián Ezequiel Gallina" . "fabian@gnu.org.ar")
+ :provided   (django-html-mode espresso fixme-mode hexcolour moz multi-web-mode multi-web-utils php-mode tabkey2)
+ :required   ((("cc-mode" cc-langs cc-mode)
+	       ("cedet" speedbar)
+	       ("cl" cl)
+	       ("comint" comint)
+	       ("custom" custom)
+	       ("easymenu" easymenu)
+	       ("emacs-core" font-lock pp)
+	       ("etags" etags)
+	       ("flymake" flymake)
+	       ("ido" ido)
+	       ("imenu" imenu)
+	       ("newcomment" newcomment)
+	       ("regexp-opt" regexp-opt)
+	       ("sgml-mode" sgml-mode)
+	       ("thingatpt" thingatpt))
+	      (("json" json)
+	       ("nxhtml" appmenu)))
+ :keywords   (convenience languages wp)
+ :homepage   "https://github.com/fgallina/multi-web-mode"
+ :commentary "\
+Multi Web Mode is a minor mode wich makes web editing in Emacs much easier.
+
+Basically what it does is select the appropiate major mode
+automatically when you move the point and also calculates the
+correct indentation of chunks according to the indentation of the
+most relevant major mode.")

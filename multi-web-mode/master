@@ -1,0 +1,17 @@
+(:summary    "Multiple major mode support for web editing"
+ :repository (git . "git://github.com/fgallina/multi-web-mode.git")
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-3"
+ :authors    (("Fabián Ezequiel Gallina" . "fabian@gnu.org.ar"))
+ :maintainer ("Fabián Ezequiel Gallina" . "fabian@gnu.org.ar")
+ :provided   (multi-web-mode)
+ :keywords   (convenience languages wp)
+ :homepage   "https://github.com/fgallina/multi-web-mode"
+ :commentary "\
+Multi Web Mode is a minor mode wich makes web editing in Emacs much easier.
+
+Basically what it does is select the appropiate major mode
+automatically when you move the point and also calculates the
+correct indentation of chunks according to the indentation of the
+most relevant major mode.")
