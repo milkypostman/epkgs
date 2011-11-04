@@ -11,6 +11,7 @@
 	       ("comint" comint)
 	       ("compile" compile)
 	       ("custom" custom)
+	       ("help" help-fns)
 	       ("highlight-indentation" highlight-indentation)
 	       ("hippie-exp" hippie-exp)
 	       ("imenu" imenu)
