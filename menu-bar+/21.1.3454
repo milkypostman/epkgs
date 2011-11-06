@@ -1,0 +1,90 @@
+(:summary    "Extensions to `menu-bar.el'"
+ :created    "19950817"
+ :updated    "20111104"
+ :license    "GPL-2"
+ :authors    (("Drew Adams"))
+ :maintainer ("Drew Adams")
+ :provided   (menu-bar+)
+ :required   ((("cl" cl)
+	       ("emacs-core" menu-bar))
+	      (("apropos+" apropos+)
+	       ("help+" help+)
+	       ("help-fns+" help-fns+)
+	       ("info+" info+)
+	       ("misc-cmds" misc-cmds)
+	       ("second-sel" second-sel)
+	       ("unaccent" unaccent)
+	       ("w32browser-dlgopen" w32browser-dlgopen)))
+ :keywords   (convenience internal local)
+ :homepage   "http://www.emacswiki.org/HelpMenuBarPlus"
+ :wikipage   "http://www.emacswiki.org/HelpMenuBarPlus"
+ :commentary "\
+Extensions to `menu-bar.el'.  Redefines the default menu bar.
+
+ Main differences:
+
+   1. Menus \"Search\", \"Frames\" and \"Do Re Mi\" were added.
+   2. Menus \"File\", \"Edit\", & \"Help\" were changed.
+   3. Menu order was changed.
+   4. Buffer-local menus are separated from global menus via \"||\".
+
+
+ User options defined here:
+
+   `menu-barp-select-buffer-function'.
+
+ Commands defined here:
+
+   `describe-menubar', `menu-bar-create-directory',
+   `menu-bar-next-tag-other-window', `menu-bar-select-frame' (Emacs
+   20), `menu-bar-word-search-backward' (Emacs 22+),
+   `menu-bar-word-search-forward' (Emacs 22+),
+   `nonincremental-repeat-search-backward' (Emacs 22+),
+   `nonincremental-repeat-search-forward' (Emacs 22+),
+   `nonincremental-repeat-word-search-backward' (Emacs < 22),
+   `nonincremental-repeat-word-search-forward' (Emacs < 22),
+
+ Non-interactive functions defined here:
+
+   `fill-paragraph-ala-mode'.
+
+ Macros defined here:
+
+   `menu-bar-make-toggle-any-version'.
+
+ Variables defined here:
+
+   `menu-bar-apropos-menu', `menu-bar-describe-menu',
+   `menu-bar-divider-menu', `menu-bar-doremi-menu',
+   `menu-bar-edit-fill-menu', `menu-bar-edit-region-menu',
+   `menu-bar-edit-sort-menu', `menu-bar-emacs-lisp-manual-menu',
+   `menu-bar-emacs-manual-menu', `menu-bar-frames-menu',
+   `menu-bar-i-search-menu' (Emacs < 22), `menu-bar-print-menu',
+   `menu-bar-search-replace-menu', `menu-bar-search-tags-menu',
+   `menu-bar-whereami-menu', `yank-menu'.
+
+
+ ***** NOTE: The following functions defined in `menu-bar.el' have
+             been REDEFINED HERE:
+
+ `kill-this-buffer' - Deletes buffer's windows as well, if
+                      `sub-kill-buffer-and-its-windows'.
+
+ `menu-bar-options-save' - Added options are saved (>= Emacs 21).
+
+ `menu-bar-select-buffer' (Emacs 20-22) - Uses -other-frame.
+
+ `menu-bar-select-frame' - Use Emacs 22 version for Emacs 20.
+
+
+ ***** NOTE: The following variables defined in `menu-bar.el' have
+             been REDEFINED HERE:
+
+ `menu-bar-edit-menu', `menu-bar-file(s)-menu',
+ `menu-bar-manuals-menu', `menu-bar-options-menu',
+ `menu-bar-search-menu'.
+
+
+ This file should be loaded after loading the standard GNU file
+ `menu-bar.el'.  So, in your `~/.emacs' file, do this:
+ (eval-after-load \"menu-bar\" '(require 'menu-bar+))")

@@ -1,6 +1,6 @@
 (:summary    "Highlighting commands"
  :created    "19951011"
- :updated    "20110913"
+ :updated    "20111104"
  :license    "GPL-2"
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")

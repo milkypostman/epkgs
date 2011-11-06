@@ -1,6 +1,6 @@
 (:summary    "Highlight matching block"
- :created    "2009"
- :updated    "2009"
+ :created    "2011"
+ :updated    "2011"
  :license    "GPL-2"
  :authors    (("khiker" . "khiker.mail+elisp@gmail.com"))
  :maintainer ("khiker" . "khiker.mail+elisp@gmail.com")
