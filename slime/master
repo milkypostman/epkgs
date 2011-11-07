@@ -16,6 +16,7 @@
 	       ("outline" outline)
 	       ("thingatpt" thingatpt)
 	       ("timer" timer)
-	       ("tree-widget" tree-widget)))
+	       ("tree-widget" tree-widget)
+	       (nil un-define)))
  :homepage   "http://common-lisp.net/project/slime"
  :wikipage   "http://www.emacswiki.org/SlimeMode")
