@@ -6,7 +6,7 @@
  :maintainer ("Jay Belanger" . "belanger@truman.edu")
  :provided   (grade)
  :required   ((("calc" calc)
-	       ("easymenu" easymenu)))
+	       ("emacs-core" easymenu)))
  :keywords   (grade)
  :homepage   "http://vh213601.truman.edu/~belanger/emacs.html"
  :wikipage   "http://www.emacswiki.org/GradeMode"

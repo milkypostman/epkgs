@@ -7,5 +7,5 @@
  :provided   (compile-dwim)
  :required   ((("cl" cl)
 	       ("compile" compile)
-	       ("gnus" format-spec)))
+	       ("format-spec" format-spec)))
  :keywords   (tools))

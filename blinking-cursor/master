@@ -2,5 +2,5 @@
  :updated    "1997"
  :license    "GPL-1"
  :provided   (blinking-cursor)
- :required   ((("timer" timer)))
+ :required   ((("emacs-core" timer)))
  :homepage   "http://www.wonderworks.com")

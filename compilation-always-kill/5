@@ -5,7 +5,7 @@
  :authors    (("Kevin Ryde" . "user42@zip.com.au"))
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (compilation-always-kill)
- :required   ((("advice" advice)))
+ :required   ((("emacs-core" advice)))
  :keywords   (processes)
  :homepage   "http://user42.tuxfamily.org/compilation-always-kill"
  :commentary "\

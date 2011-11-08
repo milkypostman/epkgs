@@ -8,9 +8,9 @@
  :provided   (http-cookies http-get http-post simple-emacswiki simple-wiki simple-wiki-completion simple-wiki-definitions simple-wiki-edit)
  :required   ((("cl" cl)
 	       ("emacs-core" font-lock)
-	       ("gnus" time-date)
 	       ("hexl" hexl)
-	       ("thingatpt" thingatpt)))
+	       ("thingatpt" thingatpt)
+	       ("time-date" time-date)))
  :keywords   (hypermedia)
  :homepage   "http://savannah.nongnu.org/projects/http-emacs"
  :commentary "\

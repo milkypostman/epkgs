@@ -6,7 +6,7 @@
  :maintainer ("Bob Glickstein" . "bobg@zanshin.com")
  :provided   (wcount)
  :required   ((("assoc" assoc)
-	       ("timer" timer)))
+	       ("emacs-core" timer)))
  :commentary "\
 `wcount-mode' is a minor mode that puts into the modeline a running
 count of the words in the buffer.  Because computing the number of

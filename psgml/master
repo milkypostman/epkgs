@@ -7,9 +7,9 @@
  :maintainer ("Lennart Staflin" . "lenst@lysator.liu.se")
  :provided   (psgml psgml-api psgml-charent psgml-debug psgml-dtd psgml-edit psgml-info psgml-lucid psgml-other psgml-parse psgml-sysdep)
  :required   ((("cl" cl)
-	       ("easymenu" easymenu)
 	       ("edebug" edebug)
-	       ("elp" elp)))
+	       ("elp" elp)
+	       ("emacs-core" easymenu)))
  :keywords   (languages)
  :homepage   "http://www.lysator.liu.se/projects/about_psgml.html"
  :wikipage   "http://www.emacswiki.org/PsgmlMode"

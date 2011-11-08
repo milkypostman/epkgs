@@ -3,7 +3,6 @@
  :updated    "2003"
  :license    "GPL-2"
  :provided   (sqled-mode)
- :required   ((("custom" custom)
-	       ("easymenu" easymenu)))
+ :required   ((("emacs-core" custom easymenu)))
  :homepage   "http://www.emacswiki.org/SqlEdMode"
  :wikipage   "http://www.emacswiki.org/SqlEdMode")

@@ -6,7 +6,7 @@
  :maintainer ("Joseph" . "jixiuf@gmail.com")
  :provided   (anything-dired-history)
  :required   ((("anything" anything)
-	       ("dired" dired)))
+	       ("emacs-core" dired)))
  :keywords   (anything dired\ history)
  :homepage   "https://github.com/jixiuf/anything-dired-history"
  :commentary "\

@@ -8,8 +8,7 @@
  :provided   (yasnippet yasnippet-debug)
  :required   ((("assoc" assoc)
 	       ("cl" cl)
-	       ("easymenu" easymenu)
-	       ("help-mode" help-mode))
+	       ("emacs-core" easymenu help-mode))
 	      (("dropdown-list" dropdown-list)))
  :keywords   (convenience emulation)
  :homepage   "http://code.google.com/p/yasnippet"

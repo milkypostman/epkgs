@@ -1,5 +1,4 @@
 (:summary    "Navigation with marks on a ring of rings (torus)"
- :repository (cvs . ":pserver:anonymous@cvs.mtorus.berlios.de:/cvsroot/mtorus")
  :created    "2002"
  :updated    "2004"
  :license    "GPL-2"
@@ -8,7 +7,7 @@
  :maintainer ("Stefan Kamphausen" . "mail@skamphausen.de")
  :provided   (mtorus mtorus-auto-rings mtorus-convert mtorus-display mtorus-element mtorus-state mtorus-topology mtorus-type mtorus-utils)
  :required   ((("cl" cl)
-	       ("timer" timer)
+	       ("emacs-core" timer)
 	       ("tree-widget" tree-widget)))
  :keywords   (bookmarks extensions navigation tools user)
  :wikipage   "http://www.emacswiki.org/MTorus"

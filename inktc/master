@@ -5,7 +5,7 @@
  :authors    (("Noah Friedman" . "friedman@splode.com"))
  :maintainer (nil . "friedman@splode.com")
  :provided   (inktc)
- :required   ((("comint" comint)))
+ :required   ((("emacs-core" comint)))
  :keywords   (communication extensions)
  :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
  :commentary "\

@@ -6,8 +6,8 @@
  :authors    (("Milan Zamazal" . "pdm@brailcom.org"))
  :maintainer ("Milan Zamazal" . "pdm@brailcom.org")
  :provided   (braille brltty mmanager speechd speechd-braille speechd-brltty speechd-bug speechd-common speechd-compile speechd-out speechd-speak speechd-ssip speechd-version)
- :required   ((("cedet" eieio)
-	       ("cl" cl)
+ :required   ((("cl" cl)
+	       ("eieio" eieio)
 	       ("reporter" reporter)))
  :homepage   "http://www.freebsoft.org/speechd-el"
  :commentary "\

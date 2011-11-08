@@ -3,8 +3,8 @@
  :created    "2008"
  :provided   (ce ce-macros ce-unadorned ce-validate)
  :required   ((("cl" cl)
-	       ("custom" custom)
-	       ("emacs-core" pp)))
+	       ("emacs-core" custom)
+	       ("pp" pp)))
  :homepage   "https://github.com/jessealama/ce-el"
  :commentary "\
 Copyediting has many facets.  The Stanford Encyclopedia of

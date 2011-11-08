@@ -1,6 +1,6 @@
 (:authors    (("ffrances"))
  :maintainer ("ffrances")
  :provided   (diameter-avp)
- :required   ((("gnus" hex-util)))
+ :required   ((("hex-util" hex-util)))
  :homepage   "http://www.emacswiki.org/diameter-avp"
  :wikipage   "http://www.emacswiki.org/diameter-avp")

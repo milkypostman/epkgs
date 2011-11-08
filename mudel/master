@@ -5,7 +5,7 @@
  :authors    (("Jorgen Schaefer"))
  :maintainer ("Jorgen Schaefer")
  :provided   (mudel)
- :required   ((("comint" comint)))
+ :required   ((("emacs-core" comint)))
  :keywords   (application games)
  :commentary "\
 This is a simple comint-based MUD client that provides an

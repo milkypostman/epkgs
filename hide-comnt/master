@@ -6,7 +6,7 @@
  :maintainer ("Drew Adams")
  :provided   (hide-comnt)
  :required   (nil
-	      (("newcomment" newcomment)))
+	      (("emacs-core" newcomment)))
  :keywords   (comments hide show)
  :commentary "\
 Hide/show comments in code.

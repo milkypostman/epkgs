@@ -4,7 +4,7 @@
  :license    "GPL-2"
  :provided   (garble)
  :required   ((("cl" cl)
-	       ("gnus" parse-time)))
+	       ("parse-time" parse-time)))
  :homepage   "http://www.davep.org/emacs"
  :commentary "\
 garble.el is an emacs interface for garble, a command line tool for

@@ -5,9 +5,10 @@
  :authors    (("Joyer Huang" . "collger@eyou.com"))
  :maintainer ("Joyer Huang" . "collger@eyou.com")
  :provided   (ppm-gen)
- :required   ((("cedet" eieio eieio-base eieio-comp)
-	       ("cl" cl)
-	       ("image-mode" image-mode)))
+ :required   ((("cl" cl)
+	       ("eieio" eieio eieio-base)
+	       ("emacs-core" image-mode)
+	       (nil eieio-comp)))
  :keywords   (bitmap draw generator ppm ray\ tracing)
  :homepage   "http://www.emacswiki.org/PpmGen"
  :wikipage   "http://www.emacswiki.org/PpmGen"

@@ -5,7 +5,7 @@
  :license    "GPL-3"
  :authors    (("Chad Braun-Duin" . "chadbraunduin@gmail.com"))
  :maintainer ("Chad Braun-Duin")
- :provided   (backup-walker backups-mode)
+ :provided   (backups-mode)
  :required   ((("cl" cl)
 	       ("diff" diff)))
  :keywords   (autosave autosaving backup backups diff)

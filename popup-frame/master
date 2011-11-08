@@ -1,11 +1,11 @@
 (:summary    "Popup frame management"
- :repository (git . "git://github.com/Sarcasm/popup-frame.el.git")
+ :repository (git . "git://github.com/Sarcasm/popup-frame.git")
  :updated    "2011"
  :license    "GPL-3"
  :provided   (popup-frame)
  :required   ((("cl" cl)))
  :keywords   (convenience frames)
- :homepage   "https://github.com/Sarcasm/popup-frame.el"
+ :homepage   "https://github.com/Sarcasm/popup-frame"
  :commentary "\
 This file aimed to provide some utility functions for the
 management of popup frames. A popup frame is a 'X Window' with no

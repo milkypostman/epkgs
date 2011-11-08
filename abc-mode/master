@@ -5,8 +5,7 @@
  :authors    (("Matthew K. Junker"))
  :maintainer ("Matthew K. Junker")
  :provided   (abc-mode)
- :required   ((("custom" cus-face)
-	       ("easymenu" easymenu)))
+ :required   ((("emacs-core" cus-face easymenu)))
  :keywords   (docs local)
  :wikipage   "http://www.emacswiki.org/AbcMode"
  :commentary "\

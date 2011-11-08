@@ -1,8 +1,0 @@
-(:summary    "REGular expression Interpreting engine"
- :created    "1993"
- :updated    "2011"
- :license    "GPL-3"
- :authors    ((nil . "bwarsaw@cen.com"))
- :maintainer (nil . "bwarsaw@cen.com")
- :provided   (regi)
- :keywords   (extensions matching))

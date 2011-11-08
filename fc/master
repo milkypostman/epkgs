@@ -7,7 +7,7 @@
  :provided   (fc)
  :required   ((("flashcard" flashcard)
 	       ("flashcard-sm5" flashcard-sm5)
-	       ("gnus" time-date))
+	       ("time-date" time-date))
 	      ((nil kakasi)))
  :keywords   (flashcard japanese)
  :homepage   "http://ichi2.net/flashcard"

@@ -4,9 +4,9 @@
  :license    "GPL-3"
  :authors    (("Joseph" . "jixiuf@gmail.com"))
  :maintainer ("Joseph" . "jixiuf@gmail.com")
- :provided   (anything-etags+ ctags-update)
+ :provided   (anything-etags+)
  :required   ((("anything" anything)
-	       ("custom" custom)
+	       ("emacs-core" custom)
 	       ("etags" etags))
 	      (("anything" anything-config anything-match-plugin)))
  :keywords   (anything etags)

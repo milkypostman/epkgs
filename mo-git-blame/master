@@ -7,7 +7,7 @@
  :maintainer ("Moritz Bunkus" . "moritz@bunkus.org")
  :provided   (mo-git-blame)
  :required   ((("cl" cl)
-	       ("easymenu" easymenu)
+	       ("emacs-core" easymenu)
 	       ("ido" ido)))
  :keywords   (tools)
  :homepage   "https://github.com/mbunkus/mo-git-blame")

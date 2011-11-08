@@ -9,8 +9,8 @@
  :required   ((("calc" calc)
 	       ("cl" cl)
 	       ("ewoc" ewoc)
-	       ("gnus" tls)
 	       ("json" json)
+	       ("tls" tls)
 	       ("url" url url-parse)))
  :homepage   "http://code.google.com/p/wave-client-for-emacs"
  :wikipage   "http://www.emacswiki.org/Google_Wave_for_Emacs"

@@ -2,5 +2,5 @@
  :updated    "1993"
  :license    "GPL-2"
  :provided   (viewtex)
- :required   ((("comint" comint)))
+ :required   ((("emacs-core" comint)))
  :homepage   "http://www.splode.com/~friedman/software/emacs-lisp")

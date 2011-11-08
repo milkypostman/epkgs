@@ -4,8 +4,7 @@
  :maintainer ("Christopher Brown (skeptomai)" . "cb@opscode.com")
  :provided   (opscode-sign)
  :required   ((("cl" cl)
-	       ("emacs-core" base64)
-	       ("gnus" sha1)))
+	       ("emacs-core" base64 sha1)))
  :keywords   (chef elisp openssl opscode rsa signature)
  :homepage   "https://github.com/skeptomai/opscode-emacs-sign"
  :commentary "\

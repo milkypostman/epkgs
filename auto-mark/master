@@ -6,7 +6,7 @@
  :maintainer ("MATSUYAMA Tomohiro" . "t.matsuyama.pub@gmail.com")
  :provided   (auto-mark)
  :required   ((("cl" cl)
-	       ("easy-mmode" easy-mmode)))
+	       ("emacs-core" easy-mmode)))
  :keywords   (convenience)
  :homepage   "http://www.emacswiki.org/AutoMark"
  :wikipage   "http://www.emacswiki.org/AutoMark"

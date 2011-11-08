@@ -3,7 +3,7 @@
  :authors    (("S. Irie"))
  :maintainer ("S. Irie")
  :provided   (trans-ej)
- :required   ((("button" button)
+ :required   ((("emacs-core" button)
 	       ("url" url-util)))
  :keywords   (multilingual translation)
  :homepage   "http://www.emacswiki.org/TransEJ"

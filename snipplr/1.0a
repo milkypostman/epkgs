@@ -5,7 +5,7 @@
  :authors    (("Dale K. Hawkins" . "dkhawk@gmail.com"))
  :maintainer ("Dale K. Hawkins" . "dkhawk@gmail.com")
  :provided   (snipplr)
- :required   ((("widget" wid-edit widget)
+ :required   ((("emacs-core" wid-edit widget)
 	       ("xml-rpc" xml-rpc)))
  :keywords   (extensions tools)
  :homepage   "http://www.emacswiki.org/SnipplrMode"

@@ -6,11 +6,11 @@
  :maintainer ("Dimitri Fontaine" . "dim@tapoueh.org")
  :provided   (el-get)
  :required   ((("cl" cl)
-	       ("dired" dired)
-	       ("emacs-core" autoload bytecomp)
+	       ("emacs-core" autoload bytecomp dired)
 	       ("info" info)
 	       ("notify" notify))
-	      ((nil notifications package)))
+	      (("notifications" notifications)
+	       ("package" package)))
  :keywords   (apt-get bzr cvs darcs elisp elpa emacs emacswiki fink git git-svn hg http http-tar install package pacman svn)
  :homepage   "https://github.com/dimitri/el-get"
  :wikipage   "http://www.emacswiki.org/el-get"

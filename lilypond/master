@@ -6,7 +6,7 @@
  :provided   (lilypond-mode lilypond-song)
  :required   ((("cl" cl)
 	       ("compile" compile)
-	       ("easymenu" easymenu)
 	       ("ecasound" ecasound)
+	       ("emacs-core" easymenu)
 	       (nil ilisp)))
  :homepage   "http://lilypond.org")

@@ -5,6 +5,6 @@
  :authors    (("Sebastian Tennant" . "sebyte@gmail.com"))
  :maintainer ("Sebastian Tennant" . "sebyte@gmail.com")
  :provided   (eap eap-autoloads eap-dired-keybindings)
- :required   ((("comint" comint)))
+ :required   ((("emacs-core" comint)))
  :keywords   (audio ogg player)
  :homepage   "http://home.gna.org/eap")

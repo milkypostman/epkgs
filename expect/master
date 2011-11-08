@@ -6,6 +6,6 @@
  :maintainer ("Lars Magne Ingebrigtsen" . "lmi@gnus.org")
  :provided   (expect)
  :required   ((("cl" cl)
-	       ("timer" timer)))
+	       ("emacs-core" timer)))
  :keywords   (extensions processes)
  :homepage   "http://quimby.gnus.org/elisp")

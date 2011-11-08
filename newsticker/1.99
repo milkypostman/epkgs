@@ -7,10 +7,9 @@
  :maintainer ("Ulf Jasper" . "ulf.jasper@web.de")
  :provided   (newsticker newsticker-backend newsticker-plainview newsticker-reader newsticker-testsuite newsticker-ticker newsticker-treeview)
  :required   ((("cl" cl)
-	       ("emacs-core" derived)
-	       ("gnus" time-date)
+	       ("emacs-core" derived wid-edit widget)
+	       ("time-date" time-date)
 	       ("tree-widget" tree-widget)
-	       ("widget" wid-edit widget)
 	       ("xml" xml)))
  :keywords   (atom news rss)
  :homepage   "http://www.nongnu.org/newsticker"

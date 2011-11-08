@@ -6,13 +6,13 @@
  :maintainer ("Drew Adams")
  :provided   (help-fns+)
  :required   ((("cl" cl)
-	       ("help" help-fns)
-	       ("info" info)
-	       ("widget" wid-edit))
-	      (("help-mode" help-mode)
+	       ("emacs-core" help-fns wid-edit)
+	       ("info" info))
+	      (("emacs-core" help-mode)
 	       ("image-dired" image-dired)
+	       ("naked" naked)
 	       ("wid-edit+" wid-edit+)
-	       (nil finder-inf naked)))
+	       (nil finder-inf)))
  :keywords   (faces help)
  :commentary "\
 Extensions to `help-fns.el'.  Also includes a redefinition of

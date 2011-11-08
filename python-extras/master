@@ -5,7 +5,7 @@
  :license    "GPL-3"
  :maintainer ("Mickey Petersen")
  :provided   (python-extras)
- :required   ((("comint" comint)
+ :required   ((("emacs-core" comint)
 	       ("python" python)
 	       ("rx" rx)
 	       ("skeleton" skeleton)

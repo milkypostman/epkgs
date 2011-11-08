@@ -5,7 +5,7 @@
  :authors    (("Seth Mason"))
  :maintainer ("Seth Mason")
  :provided   (io-mode-inf)
- :required   ((("comint" comint)))
+ :required   ((("emacs-core" comint)))
  :keywords   (io languages)
  :homepage   "https://github.com/slackorama/io-emacs"
  :commentary "\

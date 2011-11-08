@@ -6,7 +6,7 @@
  :maintainer ("Matthew L. Fidler")
  :provided   (tabbar-ruler)
  :required   ((("cl" cl)
-	       ("easymenu" easymenu)
+	       ("emacs-core" easymenu)
 	       ("emhacks" tabbar)))
  :keywords   (menu ruler\ mode tabbar)
  :commentary "\

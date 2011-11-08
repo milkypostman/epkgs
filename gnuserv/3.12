@@ -7,7 +7,7 @@
  :maintainer ("Jan Vroonhof" . "vroonhof@math.ethz.ch")
  :provided   (gnuserv gnuserv-compat)
  :required   ((("cl" cl)
-	       ("custom" custom)
+	       ("emacs-core" custom)
 	       ("w3" devices)))
  :keywords   (environment processes terminals)
  :homepage   "http://meltin.net/hacks/emacs/"

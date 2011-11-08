@@ -7,9 +7,9 @@
  :maintainer ("Matthew Kennedy" . "mkennedy@gentoo.org")
  :provided   (gyach gyach-away gyach-button gyach-cipher gyach-complete gyach-custom gyach-events gyach-extra gyach-faces gyach-highlight gyach-ignore gyach-logging gyach-mpg123el gyach-profile gyach-quote gyach-room gyach-score gyach-state gyach-url gyach-version match mpg123el-show utility)
  :required   ((("cl" cl)
-	       ("comint" comint)
-	       ("gnus" time-date)
+	       ("emacs-core" comint)
 	       ("hippie-exp" hippie-exp)
-	       ("mpg123" mpg123)))
+	       ("mpg123" mpg123)
+	       ("time-date" time-date)))
  :homepage   "http://www.nongnu.org/elgyach"
  :wikipage   "http://www.emacswiki.org/ElGyach")

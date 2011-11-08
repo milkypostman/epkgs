@@ -3,7 +3,7 @@
  :updated    "2008"
  :license    "GPL-2"
  :provided   (trashcan)
- :required   ((("dired" dired)))
+ :required   ((("emacs-core" dired)))
  :keywords   (amiga bin can macos recycle trash windows)
  :commentary "\
 The file trashcan.el contains a recoverable file deletion system

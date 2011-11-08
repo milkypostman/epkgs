@@ -1,4 +1,4 @@
-(:repository (git . "git://github.com/travisjeffery/tumblr-for-emacs.git")
+(:repository (git . "git://github.com/travisjeffery/emacs-tumblr.git")
  :created    "2008"
  :updated    "2008"
  :license    "GPL-2"
@@ -7,7 +7,7 @@
  :provided   (tumblr)
  :required   ((("http-post-simple" http-post-simple)))
  :keywords   (tumblr)
- :homepage   "https://github.com/travisjeffery/tumblr-for-emacs"
+ :homepage   "https://github.com/travisjeffery/emacs-tumblr"
  :wikipage   "http://www.emacswiki.org/Tumblr"
  :commentary "\
 This is a set of interactive function used to post to Tumblr.

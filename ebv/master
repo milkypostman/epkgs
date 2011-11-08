@@ -7,7 +7,7 @@
  :maintainer ("Liubin")
  :provided   (ebv)
  :required   ((("cl" cl)
-	       ("gnus" parse-time)
+	       ("parse-time" parse-time)
 	       ("url" url url-http)
 	       ("w3m" w3m)
 	       ("xml" xml)))

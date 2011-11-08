@@ -5,9 +5,9 @@
  :authors    (("Alan Shutko" . "ats@acm.org"))
  :maintainer ("Alan Shutko" . "ats@acm.org")
  :provided   (project)
- :required   ((("appt" appt)
+ :required   ((("calendar" appt)
 	       ("cl" cl)
-	       ("gnus" time-date)
+	       ("time-date" time-date)
 	       ("timezone" timezone)))
  :keywords   (calendar)
  :commentary "\

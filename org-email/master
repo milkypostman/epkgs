@@ -6,7 +6,7 @@
  :authors    (("Nic Ferrier" . "nferrier@ferrier.me.uk"))
  :maintainer ("Nic Ferrier" . "nferrier@ferrier.me.uk")
  :provided   (org-email)
- :required   (((nil ert)))
+ :required   ((("ert" ert)))
  :keywords   (lisp)
  :homepage   "https://github.com/nicferrier/org-email"
  :commentary "\

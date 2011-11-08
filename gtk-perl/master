@@ -6,5 +6,5 @@
  :maintainer (nil . "wenbinye@163.com")
  :provided   (gtk-perl)
  :required   ((("cl" cl)
-	       ("complete" complete)
-	       ("cperl-mode" cperl-mode))))
+	       ("cperl-mode" cperl-mode)
+	       ("emacs-obsolete" complete))))

@@ -1,12 +1,12 @@
-(:summary    "Main entry point for gh.el library"
+(:summary    "Api definition for gh.el"
  :repository (git . "git://github.com/sigma/gh.el.git")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-2"
- :authors    (("Yann Hodique" . "yhodique@gmail.com"))
- :maintainer ("Yann Hodique" . "yhodique@gmail.com")
+ :authors    (("Yann Hodique" . "yann.hodique@gmail.com"))
+ :maintainer ("Yann Hodique" . "yann.hodique@gmail.com")
  :provided   (gh gh-api gh-auth gh-common gh-gist gh-pulls gh-repos)
- :required   ((("cedet" eieio)
-	       ("cl" cl)
+ :required   ((("cl" cl)
+	       ("eieio" eieio)
 	       ("json" json)))
  :homepage   "https://github.com/sigma/gh.el")

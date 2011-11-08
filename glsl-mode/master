@@ -8,6 +8,7 @@
 	       ("find-file" find-file)))
  :keywords   (languages)
  :homepage   "https://github.com/jimhourihan/glsl-mode"
+ :wikipage   "http://www.emacswiki.org/GLSL"
  :commentary "\
 Major mode for editing OpenGLSL grammar files, usually files ending with
 `.vert', `.frag', `.glsl', `.geom'.  Is is based on c-mode plus some

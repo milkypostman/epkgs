@@ -8,6 +8,6 @@
  :provided   (ac-octave)
  :required   ((("auto-complete" auto-complete)
 	       ("cl" cl)
-	       ("octave-inf" octave-inf)))
+	       ("octave-mod" octave-inf)))
  :keywords   (auto-complete completion octave)
  :homepage   "https://github.com/coldnew/ac-octave")

@@ -3,7 +3,7 @@
  :updated    "2003"
  :license    "GPL-2"
  :provided   (netrexx-mode)
- :required   ((("cedet" speedbar)
-	       ("skeleton" skeleton)))
+ :required   ((("skeleton" skeleton)
+	       ("speedbar" speedbar)))
  :keywords   (netrexx)
  :homepage   "http://zaaf.nl/emacs/emacs.html")

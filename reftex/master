@@ -6,8 +6,7 @@
  :maintainer (nil . "auctex-devel@gnu.org")
  :provided   (reftex reftex-auc reftex-base reftex-cite reftex-dcr reftex-global reftex-index reftex-parse reftex-ref reftex-sel reftex-toc reftex-vars)
  :required   ((("cl" cl)
-	       ("custom" custom)
-	       ("easymenu" easymenu)
+	       ("emacs-core" custom easymenu)
 	       ("reporter" reporter)))
  :keywords   (tex)
  :homepage   "http://www.gnu.org/software/auctex/reftex.html"

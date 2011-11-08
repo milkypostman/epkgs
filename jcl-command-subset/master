@@ -5,8 +5,8 @@
  :authors    (("Johan Claesson" . "johan.claesson@ericsson.com"))
  :maintainer ("Johan Claesson" . "johan.claesson@ericsson.com")
  :provided   (jcl-command-subset)
- :required   ((("advice" advice)
-	       ("cl" cl)
+ :required   ((("cl" cl)
+	       ("emacs-core" advice)
 	       ("ido" ido)))
  :keywords   (menu)
  :commentary "\

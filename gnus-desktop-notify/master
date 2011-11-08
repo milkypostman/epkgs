@@ -3,7 +3,8 @@
  :maintainer ("Yuri D'Elia" . "wavexx@users.sf.net")
  :provided   (gnus-desktop-notify)
  :required   ((("assoc" assoc)
-	       ("gnus" format-spec gnus-group)))
+	       ("format-spec" format-spec)
+	       ("gnus" gnus-group)))
  :homepage   "http://www.thregr.org/~wavexx/hacks/gnus-desktop-notify"
  :wikipage   "http://www.emacswiki.org/GnusDesktopNotify"
  :commentary "\

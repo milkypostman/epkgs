@@ -6,7 +6,7 @@
  :maintainer ("Mirko Link" . "mirkolink@mirkolinkonline.de")
  :provided   (brief)
  :required   ((("bs" bs)
-	       ("rect" rect)
+	       ("emacs-core" rect)
 	       ("view" view)))
  :keywords   (brief emulations)
  :homepage   "http://www.emacs.mirkolinkonline.de/spiele.html")

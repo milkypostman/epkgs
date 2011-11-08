@@ -6,7 +6,7 @@
  :provided   (cacoo cacoo-plugins)
  :required   ((("cl" cl)
 	       ("deferred" concurrent)
-	       ("easymenu" easymenu)
+	       ("emacs-core" easymenu)
 	       ("json" json)
 	       ("url" url-file)))
  :keywords   (convenience diagram)

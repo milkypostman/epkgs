@@ -5,12 +5,6 @@
  :license    "GPL-3"
  :authors    (("Bozhidar Batsov" . "bozhidar.batsov@gmail.com"))
  :maintainer ("Bozhidar Batsov" . "bozhidar.batsov@gmail.com")
- :provided   (color-theme color-theme-zenburn)
- :required   ((("cl" cl)
-	       ("custom" cus-face)
-	       ("easymenu" easymenu)
-	       ("reporter" reporter)
-	       ("widget" wid-edit)))
  :homepage   "https://github.com/bbatsov/zenburn-emacs"
  :commentary "\
 A port of the popular Vim theme Zenburn for Emacs 24, built on top of

@@ -3,6 +3,6 @@
  :authors    (("YAMAUCHI, Hitoshi »³Æâ ÀÆ" . "yamauchi@mpi-sb.mpg.de"))
  :maintainer ("YAMAUCHI, Hitoshi »³Æâ ÀÆ" . "yamauchi@mpi-sb.mpg.de")
  :provided   (manued)
- :required   ((("easymenu" easymenu)))
+ :required   ((("emacs-core" easymenu)))
  :keywords   (docs proofreading)
  :homepage   "http://www.mpi-inf.mpg.de/~hitoshi/otherprojects/manued/index.shtml")

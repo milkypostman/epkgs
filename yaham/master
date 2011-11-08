@@ -2,11 +2,9 @@
  :created    "2007"
  :updated    "20070903"
  :provided   (yaham yaham-autoloads yaham-hugs yaham-proc yaham-skel yaham-tab)
- :required   ((("comint" comint)
-	       ("compile" compile)
-	       ("easymenu" easymenu)
+ :required   ((("compile" compile)
+	       ("emacs-core" comint easymenu newcomment)
 	       ("imenu" imenu)
-	       ("newcomment" newcomment)
 	       ("regexp-opt" regexp-opt)
 	       ("thingatpt" thingatpt)))
  :homepage   "http://primate.net/~itz/yaham")

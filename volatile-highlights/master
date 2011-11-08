@@ -4,9 +4,8 @@
  :updated    "2010"
  :license    "GPL-3"
  :provided   (volatile-highlights)
- :required   ((("advice" advice)
-	       ("cl" cl)
-	       ("easy-mmode" easy-mmode)
+ :required   ((("cl" cl)
+	       ("emacs-core" advice easy-mmode)
 	       ("etags" etags))
 	      (("alien-search" alien-search)
 	       ("emacs-core" menu-bar)))

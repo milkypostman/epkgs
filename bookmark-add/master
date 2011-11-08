@@ -6,7 +6,7 @@
  :maintainer ("Eugene V. Markov")
  :provided   (bookmark-add)
  :required   ((("bookmark" bookmark)
-	       ("widget" wid-edit)))
+	       ("emacs-core" wid-edit)))
  :keywords   (annotations bookmarks placeholders)
  :commentary "\
 `bookmark-open-in-symply-buffer' will generate buffer named

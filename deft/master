@@ -5,7 +5,7 @@
  :authors    (("Jason R. Blevins" . "jrblevin@sdf.org"))
  :maintainer ("Jason R. Blevins" . "jrblevin@sdf.org")
  :provided   (deft)
- :required   ((("widget" widget)))
+ :required   ((("emacs-core" widget)))
  :keywords   (notational\ velocity notes plain\ text simplenote)
  :homepage   "http://jblevins.org/projects/deft"
  :wikipage   "http://www.emacswiki.org/DeftMode"

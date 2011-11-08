@@ -3,9 +3,7 @@
  :license    "GPL"
  :provided   (fsharp fsharp-font fsharp-indent inf-fsharp)
  :required   ((("cl" cl)
-	       ("comint" comint)
 	       ("compile" compile)
-	       ("custom" custom)
-	       ("emacs-core" font-lock)
+	       ("emacs-core" comint custom font-lock)
 	       ("info-look" info-look)))
  :homepage   "http://sourceforge.net/projects/fsharp-mode")

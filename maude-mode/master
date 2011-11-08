@@ -7,12 +7,9 @@
  :provided   (maude-mode)
  :required   ((("ansi-color" ansi-color)
 	       ("cl" cl)
-	       ("comint" comint)
 	       ("compile" compile)
-	       ("easymenu" easymenu)
-	       ("emacs-core" derived font-lock)
+	       ("emacs-core" comint derived easymenu font-lock newcomment)
 	       ("imenu" imenu)
-	       ("newcomment" newcomment)
 	       ("rx" rx)))
  :keywords   (maude)
  :homepage   "http://sourceforge.net/projects/maude-mode"

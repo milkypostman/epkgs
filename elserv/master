@@ -9,7 +9,7 @@
  :required   ((("apel" mcharset pces poem product static)
 	       ("calendar" calendar)
 	       ("cl" cl)
-	       ("custom" cus-edit custom)
+	       ("emacs-core" cus-edit custom)
 	       ("emacs-wiki-mode" emacs-wiki)
 	       ("flim" std11)
 	       ("mhc" mhc mhc-face)

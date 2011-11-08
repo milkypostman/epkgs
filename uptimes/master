@@ -4,8 +4,8 @@
  :license    "GPL-2"
  :provided   (uptimes)
  :required   ((("cl" cl)
-	       ("emacs-core" pp)
-	       ("timer" timer)))
+	       ("emacs-core" timer)
+	       ("pp" pp)))
  :homepage   "http://www.davep.org/emacs"
  :commentary "\
 uptimes provides a simple system for tracking and displaying the uptimes

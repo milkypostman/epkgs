@@ -4,7 +4,7 @@
  :license    "GPL-2"
  :provided   (tooltip-help)
  :required   ((("eldoc" eldoc)
-	       ("help" help)))
+	       ("emacs-core" help)))
  :commentary "\
 F1 is a useless key on my keyboard, because I don't use it in
 Emacs, so I thought I bound some kind of help function on it.

@@ -4,10 +4,10 @@
  :license    "GPL-2"
  :provided   (concordance)
  :required   ((("cl" cl)
+	       ("emacs-core" timer)
 	       ("info" info)
 	       ("tellib" tellib)
-	       ("thingatpt" thingatpt)
-	       ("timer" timer)))
+	       ("thingatpt" thingatpt)))
  :keywords   (concordance text\ statistics)
  :homepage   "http://members.a1.net/t.link/filestats.html"
  :commentary "\

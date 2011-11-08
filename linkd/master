@@ -7,7 +7,7 @@
  :maintainer ("Shaun Johnson" . "shaun@slugfest.demon.co.uk")
  :provided   (linkd)
  :required   ((("cl" cl)
-	       ("easymenu" easymenu))
+	       ("emacs-core" easymenu))
 	      (("htmlize" htmlize)))
  :keywords   (help hypermedia)
  :homepage   "http://www.emacswiki.org/LinkdMode"

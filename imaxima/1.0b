@@ -5,9 +5,8 @@
  :authors    (("Jesper Harder" . "harder@ifa.au.dk"))
  :maintainer ("Jesper Harder" . "harder@ifa.au.dk")
  :provided   (imath imaxima imaxima-autoconf-variables)
- :required   ((("advice" advice)
-	       ("cl" cl)
-	       ("comint" comint)
+ :required   ((("cl" cl)
+	       ("emacs-core" advice comint)
 	       (nil maxima)))
  :keywords   (maxima)
  :homepage   "http://members3.jcom.home.ne.jp/imaxima/Site/Welcome.html"

@@ -8,7 +8,7 @@
  :provided   (google-maps google-maps-base google-maps-geocode google-maps-static org-location-google-maps)
  :required   ((("calendar" solar)
 	       ("cl" cl)
-	       ("easymenu" easymenu)
+	       ("emacs-core" easymenu)
 	       ("json" json)
 	       ("org-mode" org org-agenda)
 	       ("url" url-util)))

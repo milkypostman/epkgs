@@ -5,9 +5,8 @@
  :authors    (("Terrence Brannon" . "bauhaus@metaperl.com"))
  :maintainer ("Terrence Brannon" . "bauhaus@metaperl.com")
  :provided   (asciidoc)
- :required   ((("apropos" apropos)
-	       ("cl" cl)
-	       ("easymenu" easymenu)))
+ :required   ((("cl" cl)
+	       ("emacs-core" apropos easymenu)))
  :keywords   (text-formatting)
  :homepage   "http://www.emacswiki.org/AsciiDoc"
  :wikipage   "http://www.emacswiki.org/AsciiDoc")

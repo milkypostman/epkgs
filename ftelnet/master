@@ -5,7 +5,7 @@
  :authors    (("Noah Friedman"))
  :maintainer ("Noah Friedman" . "friedman@prep.ai.mit.edu")
  :provided   (ftelnet)
- :required   ((("comint" comint)
+ :required   ((("emacs-core" comint)
 	       ("shell" shell)))
  :keywords   (comm unix)
  :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"

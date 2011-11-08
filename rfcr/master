@@ -4,4 +4,4 @@
  :authors    (("Sami Salkosuo"))
  :maintainer ("Sami Salkosuo")
  :provided   (rfcr)
- :required   ((("widget" widget))))
+ :required   ((("emacs-core" widget))))

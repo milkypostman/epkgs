@@ -6,7 +6,7 @@
  :maintainer ("Drew Adams")
  :provided   (novice+)
  :required   ((("cl" cl)
-	       ("emacs-core" novice))
+	       ("novice" novice))
 	      (("icicles" icicles)
 	       ("thingatpt" thingatpt)
 	       ("thingatpt+" thingatpt+)))

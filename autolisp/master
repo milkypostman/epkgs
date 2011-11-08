@@ -6,11 +6,9 @@
  :maintainer ("Reini Urban" . "rurban@xarch.tu-graz.ac.at")
  :provided   (autolisp)
  :required   ((("cl" cl)
-	       ("easymenu" easymenu)
-	       ("emacs-core" font-lock)
+	       ("emacs-core" easymenu font-lock lisp-mode)
 	       ("folding" folding)
 	       ("imenu" imenu)
-	       ("lisp-mode" lisp-mode)
 	       ("outline" outline)))
  :keywords   (autolisp major-mode)
  :homepage   "http://autocad.xarch.at/lsp_tools"

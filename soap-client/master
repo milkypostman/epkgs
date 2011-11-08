@@ -7,9 +7,9 @@
  :maintainer ("Alexandru Harsanyi" . "alexharsanyi@gmail.com")
  :provided   (jira2 soap-client soap-inspect)
  :required   ((("cl" cl)
-	       ("emacs-core" warnings)
 	       ("gnus" mm-decode)
 	       ("url" url url-http url-util)
+	       ("warnings" warnings)
 	       ("xml" xml)))
  :keywords   (comm hypermedia soap web-services)
  :homepage   "http://code.google.com/p/emacs-soap-client"

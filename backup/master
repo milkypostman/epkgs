@@ -1,5 +1,5 @@
 (:license    "GPL-2"
  :provided   (backup)
  :required   ((("diff" diff)
-	       ("dired" dired)))
+	       ("emacs-core" dired)))
  :homepage   "http://www.cs.utah.edu/~eeide/emacs")

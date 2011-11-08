@@ -5,9 +5,9 @@
  :authors    (("Noah Friedman" . "friedman@splode.com"))
  :maintainer (nil . "friedman@splode.com")
  :provided   (buffer-fns)
- :required   ((("emacs-core" pp)
-	       ("emacs-variants" emacs-variants)
-	       ("list-fns" list-fns)))
+ :required   ((("emacs-variants" emacs-variants)
+	       ("list-fns" list-fns)
+	       ("pp" pp)))
  :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
  :commentary "\
 This package defines a number of other unrelated functions, except that

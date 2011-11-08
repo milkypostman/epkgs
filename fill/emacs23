@@ -1,9 +1,0 @@
-(:summary    "Fill commands for Emacs"
- :created    "1985"
- :updated    "2011"
- :license    "GPL-3"
- :maintainer ("FSF")
- :keywords   (wp)
- :commentary "\
-All the commands for filling text.  These are documented in the Emacs
-manual.")

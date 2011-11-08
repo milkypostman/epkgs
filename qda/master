@@ -4,10 +4,10 @@
  :license    "GPL-2"
  :provided   (qda qda-docs qda-indexing qda-memos qda-misc qda-modes qda-tree qda-view-tree)
  :required   ((("cl" cl)
-	       ("easymenu" easymenu)
 	       ("electric" electric)
-	       ("emacs-core" derived pp)
-	       ("gnus" gnus-range)))
+	       ("emacs-core" derived easymenu)
+	       ("gnus" gnus-range)
+	       ("pp" pp)))
  :homepage   "http://gna.org/projects/qda-emacs"
  :commentary "\
 This is the main file for the qda program

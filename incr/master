@@ -7,7 +7,7 @@
  :provided   (incr)
  :required   ((("calculator" calculator)
 	       ("cl" cl)
-	       ("rect" rect)
+	       ("emacs-core" rect)
 	       (nil hannum)))
  :keywords   (convenience)
  :commentary "\

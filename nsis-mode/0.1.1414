@@ -8,7 +8,7 @@
  :required   ((("cl" cl)
 	       ("emacs-core" font-lock)
 	       ("hideshow" hideshow))
-	      (("easymenu" easymenu)
+	      (("emacs-core" easymenu)
 	       ("w32-browser" w32-browser)
 	       ("yasnippet" yasnippet)))
  :keywords   (nsis)

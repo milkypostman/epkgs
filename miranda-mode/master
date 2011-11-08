@@ -2,6 +2,6 @@
  :updated    "20010315"
  :license    "GPL"
  :provided   (miranda-mode)
- :required   ((("easymenu" easymenu)
+ :required   ((("emacs-core" easymenu)
 	       ("shell" shell)))
  :homepage   "http://meltin.net/hacks/emacs")

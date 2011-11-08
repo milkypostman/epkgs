@@ -7,8 +7,8 @@
  :maintainer ("Nic Ferrier" . "nferrier@ferrier.me.uk")
  :provided   (creole)
  :required   ((("cl" cl)
-	       ("htmlfontify" htmlfontify)
-	       (nil ert)))
+	       ("ert" ert)
+	       ("htmlfontify" htmlfontify)))
  :keywords   (creole lisp wiki)
  :homepage   "https://github.com/nicferrier/elwikicreole"
  :commentary "\

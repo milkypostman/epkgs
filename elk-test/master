@@ -6,11 +6,10 @@
  :authors    (("Nikolaj Schumacher" . "bugs@nschum.de"))
  :maintainer ("Nikolaj Schumacher" . "bugs@nschum.de")
  :provided   (elk-test)
- :required   ((("button" button)
-	       ("cl" cl)
+ :required   ((("cl" cl)
 	       ("compile" compile)
 	       ("eldoc" eldoc)
-	       ("newcomment" newcomment))
+	       ("emacs-core" button newcomment))
 	      (("fringe-helper" fringe-helper)))
  :keywords   (lisp)
  :homepage   "http://nschum.de/src/emacs/elk-test"

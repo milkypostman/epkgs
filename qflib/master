@@ -2,5 +2,5 @@
  :updated    "2000"
  :license    "GPL-2"
  :provided   (qflib)
- :required   ((("easymenu" easymenu)))
+ :required   ((("emacs-core" easymenu)))
  :homepage   "http://www.qfs.de/en/elisp/download.html")

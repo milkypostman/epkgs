@@ -7,5 +7,5 @@
  :maintainer ("Samuel Tesla" . "samuel@athena")
  :provided   (muon)
  :required   ((("cl" cl)
-	       ("comint" comint)))
+	       ("emacs-core" comint)))
  :homepage   "https://github.com/stesla/muon")

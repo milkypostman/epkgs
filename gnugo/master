@@ -2,7 +2,7 @@
  :updated    "2008"
  :provided   (gnugo)
  :required   ((("cl" cl)
-	       ("gnus" time-date)
+	       ("time-date" time-date)
 	       (nil gnugo-xpms)))
  :homepage   "http://www.gnuvola.org/software/personal-elisp/dist/lisp/"
  :commentary "\

@@ -11,14 +11,11 @@
  :maintainer ("Albert Cohen" . "albert.cohen@inria.fr")
  :provided   (ocamldebug tuareg tuareg2)
  :required   ((("cl" cl)
-	       ("comint" comint)
 	       ("compile" compile)
-	       ("custom" custom)
-	       ("easymenu" easymenu)
-	       ("emacs-core" derived)
+	       ("emacs-core" comint custom derived easymenu)
 	       ("shell" shell))
 	      (("caml" caml-help caml-types)
-	       ("cedet" speedbar)))
+	       ("speedbar" speedbar)))
  :keywords   (languages ocaml)
  :homepage   "http://tuareg.forge.ocamlcore.org"
  :wikipage   "http://www.emacswiki.org/TuaregMode"

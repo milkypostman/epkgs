@@ -5,9 +5,9 @@
  :authors    (("Dave Love" . "fx@gnu.org"))
  :maintainer ("Dave Love" . "fx@gnu.org")
  :provided   (multi-comment)
- :required   ((("emacs-core" syntax)
+ :required   ((("emacs-core" newcomment)
 	       ("multi-mode" multi-mode)
-	       ("newcomment" newcomment)))
+	       ("syntax" syntax)))
  :keywords   (languages)
  :homepage   "http://www.loveshack.ukfsn.org/emacs"
  :commentary "\

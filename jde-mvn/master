@@ -7,7 +7,7 @@
  :required   ((("cl" cl)
 	       ("jdee" efc)
 	       ("json" json)
-	       ("nxml-mode" nxml-mode)
+	       ("nxml" nxml-mode)
 	       ("url" url)
 	       ("xml" xml)))
  :homepage   "http://bitbucket.org/espenhw/jde-mvn")

@@ -5,8 +5,8 @@
  :authors    (("Will Mengarini" . "seldon@eskimo.com"))
  :maintainer ("Will Mengarini" . "seldon@eskimo.com")
  :provided   (vi-dot)
- :required   ((("advice" advice)
-	       ("cl" cl)))
+ :required   ((("cl" cl)
+	       ("emacs-core" advice)))
  :keywords   (abbrev dot repeat typematic universal\ argument vi)
  :homepage   "http://www.eskimo.com/~seldon"
  :commentary "\

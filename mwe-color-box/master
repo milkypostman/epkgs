@@ -6,7 +6,7 @@
  :maintainer ("Michael Weber" . "michaelw@foldr.org")
  :provided   (mwe-color-box)
  :required   ((("cl" cl)
-	       ("rect" rect)
+	       ("emacs-core" rect)
 	       ("thingatpt" thingatpt)))
  :keywords   (faces games)
  :homepage   "http://www.foldr.org/~michaelw/emacs"

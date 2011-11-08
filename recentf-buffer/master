@@ -5,8 +5,8 @@
  :authors    (("Eugene V. Markov"))
  :maintainer ("Eugene V. Markov")
  :provided   (recentf-buffer)
- :required   ((("recentf" recentf)
-	       ("widget" wid-edit)))
+ :required   ((("emacs-core" wid-edit)
+	       ("recentf" recentf)))
  :keywords   (annotations bookmarks placeholders)
  :commentary "\
 It's addition to recentf.el.

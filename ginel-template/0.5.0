@@ -5,7 +5,7 @@
  :authors    (("Stefan Hornburg" . "racke@gundel.han.de"))
  :maintainer ("Stefan Hornburg" . "racke@gundel.han.de")
  :provided   (ginel-template)
- :required   ((("custom" custom)))
+ :required   ((("emacs-core" custom)))
  :keywords   (extensions languages tools)
  :homepage   "http://www.han.de/~racke/ginel"
  :commentary "\

@@ -6,7 +6,7 @@
  :maintainer ("Matthew P. Hodges" . "mphodges@member.fsf.org")
  :provided   (eperiodic)
  :required   ((("cl" cl)
-	       ("dired" dired)))
+	       ("emacs-core" dired)))
  :wikipage   "http://www.emacswiki.org/PeriodicTableForEmacs"
  :commentary "\
 Package to display a periodic table in Emacs.

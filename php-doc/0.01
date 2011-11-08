@@ -6,7 +6,7 @@
  :maintainer ("Ye Wenbin" . "wenbinye@gmail.com")
  :provided   (php-doc)
  :required   ((("cl" cl)
-	       ("complete" complete)
+	       ("emacs-obsolete" complete)
 	       ("tree-mode" tree-mode)
 	       ("windata" windata)))
  :keywords   (convenience languages))

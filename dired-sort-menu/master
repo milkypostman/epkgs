@@ -6,9 +6,7 @@
  :maintainer ("Francis J. Wright" . "f.j.wright@maths.qmw.ac.uk")
  :provided   (dired-sort-menu)
  :required   ((("ange-ftp" ange-ftp)
-	       ("dired" dired)
-	       ("easymenu" easymenu)
-	       ("widget" wid-edit)))
+	       ("emacs-core" dired easymenu wid-edit)))
  :keywords   (dialogue dired menu sort)
  :homepage   "http://centaur.maths.qmw.ac.uk/Emacs"
  :wikipage   "http://www.emacswiki.org/DiredSortMenu"

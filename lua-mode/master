@@ -15,7 +15,7 @@
  :maintainer (nil . "immerrr+lua@gmail.com")
  :provided   (lua-mode)
  :required   ((("cl" cl)
-	       ("comint" comint)))
+	       ("emacs-core" comint)))
  :keywords   (languages processes tools)
  :homepage   "https://github.com/immerrr/lua-mode"
  :wikipage   "http://www.emacswiki.org/LuaMode"

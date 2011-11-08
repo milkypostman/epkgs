@@ -6,7 +6,7 @@
  :provided   (anything-hatena-bookmark)
  :required   ((("anything" anything)
 	       ("cl" cl)
-	       ("gnus" sha1)
+	       ("emacs-core" sha1)
 	       ("url" url)
 	       ("xml" xml)))
  :homepage   "https://github.com/wakaran/anything-hatena-bookmark"

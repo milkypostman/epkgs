@@ -6,8 +6,8 @@
  :maintainer (nil . "wenbinye@163.com")
  :provided   (inf-perl)
  :required   ((("cl" cl)
-	       ("comint" comint)
 	       ("cperl-mode" cperl-mode)
+	       ("emacs-core" comint)
 	       ("shell" shell)))
  :commentary "\
 This is a customisation of comint-mode (see comint.el)

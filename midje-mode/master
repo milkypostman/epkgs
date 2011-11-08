@@ -2,6 +2,6 @@
  :repository (git . "git://github.com/dnaumov/midje-mode.git")
  :provided   (clojure-jump-to-file midje-mode midje-mode-praise)
  :required   ((("clojure-mode" clojure-mode)
-	       ("newcomment" newcomment)
+	       ("emacs-core" newcomment)
 	       ("slime" slime)))
  :homepage   "https://github.com/dnaumov/midje-mode")

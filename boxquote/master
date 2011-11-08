@@ -4,7 +4,7 @@
  :license    "GPL-2"
  :provided   (boxquote)
  :required   ((("cl" cl)
-	       ("rect" rect)))
+	       ("emacs-core" rect)))
  :homepage   "http://www.davep.org/emacs"
  :wikipage   "http://www.emacswiki.org/BoxQuote"
  :commentary "\
