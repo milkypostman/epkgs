@@ -7,10 +7,11 @@
  :maintainer ("Nic Ferrier" . "nferrier@ferrier.me.uk")
  :provided   (elnode)
  :required   ((("cl" cl)
+	       ("creole" creole)
 	       ("ert" ert)
 	       ("gnus" mailcap mm-encode)
 	       ("url" url-util)))
- :keywords   (http lisp)
+ :keywords   (http hypermedia lisp)
  :homepage   "https://github.com/nicferrier/elnode"
  :wikipage   "http://www.emacswiki.org/Elnode"
  :commentary "\
