@@ -9,7 +9,7 @@
  :required   ((("apel" emu filename invisible path-util poe)
 	       ("bbdb" bbdb bbdb-com)
 	       ("cl" cl)
-	       ("emacs-core" custom)
+	       ("emacs" custom)
 	       ("flim" mel mime std11)
 	       ("gnus" mailcap)
 	       ("mail-utils" mail-extr mail-utils)

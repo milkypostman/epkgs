@@ -6,7 +6,7 @@
  :provided   (redshank redshank-loader)
  :required   ((("cl" cl)
 	       ("eldoc" eldoc)
-	       ("emacs-core" easymenu)
+	       ("emacs" easymenu)
 	       ("paredit" paredit)
 	       ("skeleton" skeleton)))
  :keywords   (languages lisp)

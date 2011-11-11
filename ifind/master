@@ -5,7 +5,7 @@
  :authors    (("Kevin Rodgers" . "ihs_4664@yahoo.com"))
  :maintainer ("Kevin Rodgers" . "ihs_4664@yahoo.com")
  :provided   (ifind)
- :required   ((("emacs-core" custom)
+ :required   ((("emacs" custom)
 	       ("igrep" igrep)))
  :keywords   (processes search tools)
  :commentary "\

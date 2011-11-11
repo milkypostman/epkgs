@@ -4,7 +4,7 @@
  :license    "GPL-2"
  :provided   (sawfish)
  :required   ((("cl" cl)
-	       ("emacs-core" easymenu font-lock)
+	       ("emacs" easymenu font-lock)
 	       ("inf-lisp" inf-lisp)
 	       ("info" info)
 	       ("pp" pp)

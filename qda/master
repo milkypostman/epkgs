@@ -5,7 +5,7 @@
  :provided   (qda qda-docs qda-indexing qda-memos qda-misc qda-modes qda-tree qda-view-tree)
  :required   ((("cl" cl)
 	       ("electric" electric)
-	       ("emacs-core" derived easymenu)
+	       ("emacs" derived easymenu)
 	       ("gnus" gnus-range)
 	       ("pp" pp)))
  :homepage   "http://gna.org/projects/qda-emacs"

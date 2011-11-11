@@ -12,7 +12,7 @@
  :provided   (ocamldebug tuareg tuareg2)
  :required   ((("cl" cl)
 	       ("compile" compile)
-	       ("emacs-core" comint custom derived easymenu)
+	       ("emacs" comint custom derived easymenu)
 	       ("shell" shell))
 	      (("caml" caml-help caml-types)
 	       ("speedbar" speedbar)))

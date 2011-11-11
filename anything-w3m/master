@@ -3,7 +3,7 @@
  :authors    (("IMAKADO" . "ken.imakado@gmail.com"))
  :maintainer ("IMAKADO" . "ken.imakado@gmail.com")
  :provided   (anything-w3m)
- :required   ((("emacs-core" dired)
+ :required   ((("emacs" dired)
 	       ("w3m-type-ahead" w3m-type-ahead)))
  :homepage   "https://github.com/imakado/emacs-anything-w3m"
  :commentary "\

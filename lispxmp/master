@@ -6,7 +6,7 @@
  :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
  :provided   (lispxmp)
  :required   ((("cl" cl)
-	       ("emacs-core" newcomment)
+	       ("emacs" newcomment)
 	       ("pp" pp))
 	      (("paredit" paredit)))
  :keywords   (convenience lisp)

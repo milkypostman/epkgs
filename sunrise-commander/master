@@ -10,7 +10,7 @@
  :required   ((("bookmark" bookmark)
 	       ("cl" cl)
 	       ("desktop" desktop)
-	       ("emacs-core" cus-edit dired dired-aux dired-x easymenu font-lock)
+	       ("emacs" cus-edit dired dired-aux dired-x easymenu font-lock)
 	       ("enriched" enriched)
 	       ("eshell" esh-mode)
 	       ("find-dired" find-dired)

@@ -6,7 +6,7 @@
  :maintainer ("Tom Breton" . "tob@world.std.com")
  :provided   (tehom-inflisp)
  :required   ((("comint-redirect" comint-redirect)
-	       ("emacs-core" comint)
+	       ("emacs" comint)
 	       ("inf-lisp" inf-lisp)))
  :keywords   (extensions lisp)
  :homepage   "http://www.panix.com/~tehom")

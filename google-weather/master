@@ -8,7 +8,7 @@
  :provided   (google-weather org-google-weather)
  :required   ((("calendar" solar)
 	       ("cl" cl)
-	       ("emacs-core" image)
+	       ("emacs" image)
 	       ("format-spec" format-spec)
 	       ("time-date" time-date)
 	       ("url" url url-cache)

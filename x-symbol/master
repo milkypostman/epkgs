@@ -6,7 +6,7 @@
  :maintainer ("(Please use `M-x x-symbol-package-bug' to contact the maintainer)")
  :provided   (add gif png x-symbol x-symbol-bib x-symbol-emacs x-symbol-hooks x-symbol-image x-symbol-macs x-symbol-mule x-symbol-myuc x-symbol-nomule x-symbol-sgml x-symbol-tex x-symbol-texi x-symbol-vars x-symbol-xmacs)
  :required   ((("cl" cl)
-	       ("emacs-core" font-lock fontset)
+	       ("emacs" font-lock fontset)
 	       ("emacs-obsolete" lucid)
 	       ("reporter" reporter)
 	       ("warnings" warnings)))

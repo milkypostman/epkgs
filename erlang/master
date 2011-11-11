@@ -7,7 +7,7 @@
  :provided   (erlang erlang-eunit erlang-flymake erlang-start)
  :required   ((("cl" cl)
 	       ("compile" compile)
-	       ("emacs-core" advice comint font-lock)
+	       ("emacs" advice comint font-lock)
 	       ("etags" etags)
 	       ("flymake" flymake)
 	       ("hyperbole" tags)

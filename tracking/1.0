@@ -5,7 +5,7 @@
  :authors    (("Jorgen Schaefer" . "forcer@forcix.cx"))
  :maintainer ("Jorgen Schaefer" . "forcer@forcix.cx")
  :provided   (tracking)
- :required   ((("emacs-core" easy-mmode)))
+ :required   ((("emacs" easy-mmode)))
  :commentary "\
 This file provides a way to globally register buffers as being
 modified and scheduled for user review. The user can cycle through

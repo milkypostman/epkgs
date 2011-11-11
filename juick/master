@@ -7,7 +7,7 @@
  :maintainer ("mad" . "owner.mad.epa@gmail.com")
  :provided   (jabber-geoloc jabber-ibb jabber-moods jabber-tune juick)
  :required   ((("browse-url" browse-url)
-	       ("emacs-core" button)
+	       ("emacs" button)
 	       ("google-maps" google-maps)
 	       ("jabber" jabber-chatbuffer jabber-si-common)))
  :keywords   (juick)

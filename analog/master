@@ -5,7 +5,7 @@
  :authors    (("Matthew P. Hodges" . "mphodges@member.fsf.org"))
  :maintainer ("Matthew P. Hodges" . "mphodges@member.fsf.org")
  :provided   (analog)
- :required   ((("emacs-core" dired)
+ :required   ((("emacs" dired)
 	       ("pp" pp)))
  :commentary "\
 Package to keep track of a list of specified files or the output of

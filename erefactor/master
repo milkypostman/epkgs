@@ -4,7 +4,7 @@
  :maintainer ("Hayashi Masahiro" . "mhayashi1120@gmail.com")
  :provided   (erefactor)
  :required   ((("cl" cl)
-	       ("emacs-core" advice)))
+	       ("emacs" advice)))
  :keywords   (elisp lint refactor)
  :commentary "\
 Following utilities for Emacs-Lisp.

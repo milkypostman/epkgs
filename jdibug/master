@@ -3,7 +3,7 @@
  :required   ((("bindat" bindat)
 	       ("cc-mode" cc-mode)
 	       ("eieio" eieio)
-	       ("emacs-core" easymenu)
+	       ("emacs" easymenu)
 	       ("tree-mode" tree-mode)
 	       (nil jdibug-java-expr-wy semantic-java)))
  :homepage   "http://code.google.com/p/jdibug")

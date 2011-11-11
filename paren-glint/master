@@ -5,7 +5,7 @@
  :authors    (("Karl Landström" . "karl@karllandstrom.se"))
  :maintainer ("Karl Landström" . "karl@karllandstrom.se")
  :provided   (paren-glint)
- :required   ((("emacs-core" advice)))
+ :required   ((("emacs" advice)))
  :keywords   (faces languages)
  :homepage   "http://www.brgeight.se"
  :commentary "\

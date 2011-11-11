@@ -6,7 +6,7 @@
  :authors    (("Tim Harper"))
  :maintainer ("Tim Harper")
  :provided   (campfire)
- :required   ((("emacs-core" button)
+ :required   ((("emacs" button)
 	       ("json" json)
 	       ("twittering-mode" ssl)
 	       ("url" url url-http)))

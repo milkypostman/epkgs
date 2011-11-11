@@ -7,7 +7,7 @@
  :maintainer ("Julien Danjou" . "julien@danjou.info")
  :provided   (erc-track-score)
  :required   ((("cl" cl)
-	       ("emacs-core" timer)
+	       ("emacs" timer)
 	       ("erc" erc erc-match erc-track)))
  :homepage   "http://julien.danjou.info/erc-track-score.html"
  :commentary "\

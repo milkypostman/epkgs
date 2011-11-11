@@ -6,7 +6,7 @@
  :required   ((("assoc" assoc)
 	       ("cl" cl)
 	       ("dns" dns)
-	       ("emacs-core" button sha1 wid-edit widget)
+	       ("emacs" button sha1 wid-edit widget)
 	       ("ewoc" ewoc)
 	       ("festival" festival)
 	       ("format-spec" format-spec)

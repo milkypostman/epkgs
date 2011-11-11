@@ -8,7 +8,7 @@
  :provided   (doc-mode)
  :required   ((("cc-mode" cc-mode)
 	       ("cl" cl)
-	       ("emacs-core" newcomment)
+	       ("emacs" newcomment)
 	       ("semantic" semantic)))
  :keywords   (convenience tools)
  :homepage   "http://nschum.de/src/emacs/doc-mode"

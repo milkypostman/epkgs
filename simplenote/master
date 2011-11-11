@@ -7,7 +7,7 @@
  :maintainer ("Konstantinos Efstathiou" . "konstantinos@efstathiou.gr")
  :provided   (simplenote)
  :required   ((("cl" cl)
-	       ("emacs-core" widget)
+	       ("emacs" widget)
 	       ("json" json)
 	       ("url" url)))
  :keywords   (simplenote)

@@ -6,7 +6,7 @@
  :required   ((("cl" cl)
 	       ("compile" compile)
 	       ("eldoc" eldoc)
-	       ("emacs-core" button comint font-lock help-fns lisp-mode minibuffer)
+	       ("emacs" button comint font-lock help-fns lisp-mode minibuffer)
 	       ("etags" etags)
 	       ("info-look" info-look)
 	       ("scheme" scheme)

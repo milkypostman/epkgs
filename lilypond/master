@@ -7,6 +7,6 @@
  :required   ((("cl" cl)
 	       ("compile" compile)
 	       ("ecasound" ecasound)
-	       ("emacs-core" easymenu)
+	       ("emacs" easymenu)
 	       (nil ilisp)))
  :homepage   "http://lilypond.org")

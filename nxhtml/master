@@ -14,7 +14,7 @@
 	       ("desktop" desktop)
 	       ("ediff" ediff)
 	       ("edmacro" edmacro)
-	       ("emacs-core" advice apropos button bytecomp comint cus-edit dired easymenu font-lock help-mode tutorial uniquify wid-browse wid-edit)
+	       ("emacs" advice apropos button bytecomp comint cus-edit dired easymenu font-lock help-mode tutorial uniquify wid-browse wid-edit)
 	       ("ewoc" ewoc)
 	       ("find-func" find-func)
 	       ("flymake" flymake)

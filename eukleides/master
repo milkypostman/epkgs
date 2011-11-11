@@ -6,7 +6,7 @@
  :provided   (eukleides)
  :required   ((("cl" cl)
 	       ("compile" compile)
-	       ("emacs-core" derived easymenu)
+	       ("emacs" derived easymenu)
 	       ("imenu" imenu)
 	       ("info-look" info-look)
 	       ("mode-compile" mode-compile)

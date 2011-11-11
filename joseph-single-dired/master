@@ -5,7 +5,7 @@
  :authors    (("Joseph" . "jixiuf@gmail.com"))
  :maintainer ("Joseph" . "jixiuf@gmail.com")
  :provided   (joseph-single-dired)
- :required   ((("emacs-core" dired)))
+ :required   ((("emacs" dired)))
  :keywords   (buffer dired single)
  :homepage   "https://github.com/jixiuf/joseph-single-dired"
  :commentary "\

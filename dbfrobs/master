@@ -5,7 +5,7 @@
  :authors    (("Noah Friedman" . "friedman@splode.com"))
  :maintainer (nil . "friedman@splode.com")
  :provided   (dbfrobs)
- :required   ((("emacs-core" advice)))
+ :required   ((("emacs" advice)))
  :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
  :commentary "\
 The user interface for this package consists of the following commands:

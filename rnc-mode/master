@@ -1,3 +1,3 @@
 (:provided   (rnc-mode)
- :required   ((("emacs-core" font-lock)))
+ :required   ((("emacs" font-lock)))
  :homepage   "http://www.pantor.com/download.html")

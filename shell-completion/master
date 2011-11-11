@@ -6,7 +6,7 @@
  :maintainer ("Ye Wenbin" . "wenbinye@163.com")
  :provided   (shell-completion)
  :required   ((("cl" cl)
-	       ("emacs-core" comint)))
+	       ("emacs" comint)))
  :keywords   (completion emacs shell)
  :commentary "\
 Put this file into your load-path and the following into your ~/.emacs:

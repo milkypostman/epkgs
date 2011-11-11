@@ -9,7 +9,7 @@
 	       ("diff-mode" diff-mode)
 	       ("ediff" ediff-util ediff-wind)
 	       ("elp" elp)
-	       ("emacs-core" dired easymenu overlay)
+	       ("emacs" dired easymenu overlay)
 	       ("log-edit" log-edit)
 	       ("pp" pp)
 	       ("vc" vc-hooks)

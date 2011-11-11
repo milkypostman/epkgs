@@ -10,7 +10,7 @@
  :required   ((("cl" cl)
 	       ("completion" completion)
 	       ("elp" elp)
-	       ("emacs-core" comint custom easymenu font-lock newcomment quail)
+	       ("emacs" comint custom easymenu font-lock newcomment quail)
 	       ("etags" etags)
 	       ("maths-menu" maths-menu)
 	       ("mmm-mode" mmm-auto)

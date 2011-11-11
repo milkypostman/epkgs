@@ -15,7 +15,7 @@
 	       ("eieio" eieio)
 	       ("eldoc" eldoc)
 	       ("elib" avltree)
-	       ("emacs-core" comint cus-edit custom easymenu font-lock overlay wid-edit widget)
+	       ("emacs" comint cus-edit custom easymenu font-lock overlay wid-edit widget)
 	       ("emacs-obsolete" lmenu)
 	       ("etags" etags)
 	       ("executable" executable)

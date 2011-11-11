@@ -6,7 +6,7 @@
  :authors    (("Joseph" . "jixiuf@gmail.com"))
  :maintainer ("Joseph" . "jixiuf@gmail.com")
  :provided   (dired-filetype-face)
- :required   ((("emacs-core" custom dired)))
+ :required   ((("emacs" custom dired)))
  :keywords   (custom dired face filetype)
  :homepage   "https://github.com/jixiuf/dired-filetype-face"
  :commentary "\

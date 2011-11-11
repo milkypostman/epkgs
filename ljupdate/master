@@ -7,7 +7,7 @@
  :maintainer ("Edward O'Connor" . "ted@oconnor.cx")
  :provided   (lj-acct lj-compat lj-compose lj-custom lj-edit lj-fill lj-login lj-maint lj-pcomplete lj-protocol lj-util)
  :required   ((("cl" cl)
-	       ("emacs-core" autoload md5)
+	       ("emacs" autoload md5)
 	       ("gnus" message)
 	       ("http-emacs" http-post)
 	       ("pcomplete" pcomplete)

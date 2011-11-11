@@ -6,7 +6,7 @@
  :maintainer ("Vinicius Jose Latorre" . "viniciusjl@ig.com.br")
  :provided   (xray)
  :required   ((("ehelp" ehelp)
-	       ("emacs-core" apropos help-mode)
+	       ("emacs" apropos help-mode)
 	       ("info" info)))
  :keywords   (debug help internal maintenance)
  :homepage   "http://www.emacswiki.org/XrayPackage"

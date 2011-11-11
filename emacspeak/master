@@ -18,7 +18,7 @@
 	       ("desktop" desktop)
 	       ("eldoc" eldoc)
 	       ("elib" stack-f)
-	       ("emacs-core" advice autoload backquote comint cus-edit custom derived dired dired-aux dired-x easy-mmode easymenu timer wid-edit widget)
+	       ("emacs" advice autoload backquote comint cus-edit custom derived dired dired-aux dired-x easy-mmode easymenu timer wid-edit widget)
 	       ("eshell" esh-arg)
 	       ("find-dired" find-dired)
 	       ("find-lisp" find-lisp)

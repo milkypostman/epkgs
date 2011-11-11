@@ -6,7 +6,7 @@
  :maintainer ("Kevin Esler" . "kaesler@us.ibm.com")
  :provided   (clearcase)
  :required   ((("cl" cl)
-	       ("emacs-core" comint custom dired easymenu timer)
+	       ("emacs" comint custom dired easymenu timer)
 	       ("executable" executable)
 	       ("reporter" reporter)
 	       ("ring" ring)

@@ -7,7 +7,7 @@
  :maintainer ("Tomohiro Matsuyama" . "m2ym.pub@gmail.com")
  :provided   (auto-complete auto-complete-config fuzzy)
  :required   ((("cl" cl)
-	       ("emacs-core" help-mode)
+	       ("emacs" help-mode)
 	       ("popup" popup)
 	       ("pp" pp)
 	       ("regexp-opt" regexp-opt)

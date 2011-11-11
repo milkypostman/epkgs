@@ -5,7 +5,7 @@
  :maintainer ("Vegard Øye" . "vegard_oye@hotmail.com")
  :provided   (test-framework)
  :required   ((("cl" cl)
-	       ("emacs-core" advice)
+	       ("emacs" advice)
 	       ("warnings" warnings)))
  :keywords   (testing unit)
  :homepage   "https://github.com/epsilon47/test-framework.el"

@@ -5,7 +5,7 @@
  :authors    (("Michael Olson" . "mwolson@gnu.org"))
  :maintainer ("Michael Olson" . "mwolson@gnu.org")
  :provided   (wtf)
- :required   ((("emacs-core" cus-edit)))
+ :required   ((("emacs" cus-edit)))
  :homepage   "http://mwolson.org"
  :commentary "\
 wtf.el provides the ability to look up the definitions of popular

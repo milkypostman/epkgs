@@ -15,7 +15,7 @@
 	       ("compile" compile)
 	       ("crm" crm)
 	       ("diary-lib" diary-lib)
-	       ("emacs-core" advice derived easymenu font-lock overlay)
+	       ("emacs" advice derived easymenu font-lock overlay)
 	       ("erc" erc)
 	       ("gnus" gnus gnus-msg gnus-sum)
 	       ("grep" grep)

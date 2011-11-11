@@ -5,7 +5,7 @@
  :authors    (("Nelson Minar" . "nelson@santafe.edu"))
  :maintainer ("Nelson Minar" . "nelson@santafe.edu")
  :provided   (html-helper-mode html-mode)
- :required   ((("emacs-core" easymenu)
+ :required   ((("emacs" easymenu)
 	       ("tempo" tempo)))
  :keywords   (html major-mode)
  :homepage   "http://tuvalu.santafe.edu/~nelson/hhm-beta"

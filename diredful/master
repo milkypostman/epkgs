@@ -5,7 +5,7 @@
  :authors    (("Thamer Mahmoud" . "thamer.mahmoud@gmail.com"))
  :maintainer ("Thamer Mahmoud" . "thamer.mahmoud@gmail.com")
  :provided   (diredful)
- :required   ((("emacs-core" cus-edit dired dired-x widget)))
+ :required   ((("emacs" cus-edit dired dired-x widget)))
  :keywords   (colors dired extension widget)
  :homepage   "http://www.emacswiki.org/Diredful"
  :wikipage   "http://www.emacswiki.org/Diredful"

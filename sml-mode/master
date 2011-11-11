@@ -11,7 +11,7 @@
  :provided   (sml-compat sml-defs sml-mode sml-move sml-proc sml-util)
  :required   ((("cl" cl)
 	       ("compile" compile)
-	       ("emacs-core" comint custom)
+	       ("emacs" comint custom)
 	       ("info" info)
 	       ("skeleton" skeleton)
 	       ("smerge-mode" smerge-mode)))

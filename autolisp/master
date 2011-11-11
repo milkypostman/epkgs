@@ -6,7 +6,7 @@
  :maintainer ("Reini Urban" . "rurban@xarch.tu-graz.ac.at")
  :provided   (autolisp)
  :required   ((("cl" cl)
-	       ("emacs-core" easymenu font-lock lisp-mode)
+	       ("emacs" easymenu font-lock lisp-mode)
 	       ("folding" folding)
 	       ("imenu" imenu)
 	       ("outline" outline)))

@@ -5,7 +5,7 @@
  :authors    (("Riku Saikkonen" . "riku.saikkonen@hut.fi"))
  :maintainer ("Riku Saikkonen" . "riku.saikkonen@hut.fi")
  :provided   (cparen)
- :required   ((("emacs-core" font-lock)))
+ :required   ((("emacs" font-lock)))
  :keywords   (faces lisp)
  :homepage   "http://users.tkk.fi/u/rsaikkon/software/elisp"
  :commentary "\

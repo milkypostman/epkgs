@@ -7,7 +7,7 @@
  :maintainer ("Bozhidar Batsov")
  :provided   (projectile)
  :required   ((("cl" cl)
-	       ("emacs-core" easymenu)
+	       ("emacs" easymenu)
 	       ("thingatpt" thingatpt)))
  :keywords   (convenience project)
  :homepage   "https://github.com/bbatsov/projectile"

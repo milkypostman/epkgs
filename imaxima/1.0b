@@ -6,7 +6,7 @@
  :maintainer ("Jesper Harder" . "harder@ifa.au.dk")
  :provided   (imath imaxima imaxima-autoconf-variables)
  :required   ((("cl" cl)
-	       ("emacs-core" advice comint)
+	       ("emacs" advice comint)
 	       (nil maxima)))
  :keywords   (maxima)
  :homepage   "http://members3.jcom.home.ne.jp/imaxima/Site/Welcome.html"

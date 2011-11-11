@@ -8,7 +8,7 @@
  :required   ((("ansi-color" ansi-color)
 	       ("cl" cl)
 	       ("compile" compile)
-	       ("emacs-core" comint custom easymenu)
+	       ("emacs" comint custom easymenu)
 	       ("imenu" imenu)
 	       ("info-look" info-look)
 	       ("mmm-mode" mmm-auto)

@@ -9,7 +9,7 @@
  :required   ((("cedet" data-debug)
 	       ("cl" cl)
 	       ("eieio" eieio eieio-base eieio-datadebug eieio-speedbar)
-	       ("emacs-core" custom easy-mmode easymenu image)
+	       ("emacs" custom easy-mmode easymenu image)
 	       ("format-spec" format-spec)
 	       ("sasl" sasl)
 	       ("speedbar" speedbar)

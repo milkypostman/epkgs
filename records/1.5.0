@@ -5,7 +5,7 @@
  :license    "GPL-2"
  :provided   (homepage publish records records-autoloads records-calendar records-diary records-dindex records-format records-hs records-index records-metainfo records-mode records-owner records-query records-ref records-rss records-rss-publish records-search records-sm records-status records-tex records-type records-util records-vars)
  :required   ((("calendar" calendar)
-	       ("emacs-core" easymenu font-lock)
+	       ("emacs" easymenu font-lock)
 	       ("gnus" gnus)
 	       ("htmlize" htmlize)
 	       ("imenu" imenu)

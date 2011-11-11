@@ -9,7 +9,7 @@
 	       ("cl" cl)
 	       ("cperl-mode" cperl-mode)
 	       ("dabbrev" dabbrev)
-	       ("emacs-core" custom env)
+	       ("emacs" custom env)
 	       ("ffap" ffap)
 	       ("man" man)
 	       ("pp" pp)

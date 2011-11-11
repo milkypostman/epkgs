@@ -8,7 +8,7 @@
  :provided   (ahg)
  :required   ((("cl" cl)
 	       ("diff-mode" diff-mode)
-	       ("emacs-core" easymenu)
+	       ("emacs" easymenu)
 	       ("ewoc" ewoc)
 	       ("grep" grep)
 	       ("log-edit" log-edit)))

@@ -5,7 +5,7 @@
  :authors    (("Kevin Ryde" . "user42@zip.com.au"))
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (ffap-makefile-vars)
- :required   ((("emacs-core" advice)))
+ :required   ((("emacs" advice)))
  :keywords   (files)
  :homepage   "http://user42.tuxfamily.org/ffap-makefile-vars"
  :commentary "\

@@ -9,7 +9,7 @@
  :required   ((("cedet" working)
 	       ("cl" cl)
 	       ("edmacro" edmacro)
-	       ("emacs-core" comint cus-face)
+	       ("emacs" comint cus-face)
 	       ("itimer" itimer)
 	       ("strokes" strokes)
 	       ("time" time)

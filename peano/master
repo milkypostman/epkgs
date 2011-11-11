@@ -5,7 +5,7 @@
  :maintainer ("Dave O'Toole" . "dto@gnu.org")
  :provided   (peano)
  :required   ((("cl" cl)
-	       ("emacs-core" font-lock)
+	       ("emacs" font-lock)
 	       ("org-mode" org)
 	       ("rx" rx)))
  :keywords   (convenience outlines tools))

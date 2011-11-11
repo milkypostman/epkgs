@@ -6,7 +6,7 @@
  :maintainer ("Richard Y. Kim," . "ryk@coho.com")
  :provided   (m56k)
  :required   ((("cl" cl)
-	       ("emacs-core" advice)
+	       ("emacs" advice)
 	       ("emacs-obsolete" lucid)))
  :commentary "\
 This provides a major mode called m56k-mode to aid those who

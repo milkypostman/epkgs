@@ -5,7 +5,7 @@
  :license    "GPL-2"
  :provided   (sclang sclang-browser sclang-dev sclang-document sclang-help sclang-help-minor-mode sclang-interp sclang-language sclang-menu sclang-minor-mode sclang-mode sclang-server sclang-util sclang-vars sclang-widgets)
  :required   ((("cl" cl)
-	       ("emacs-core" font-lock)
+	       ("emacs" font-lock)
 	       ("tree-widget" tree-widget))
 	      (("view" view)
 	       ("xcscope" xcscope)))

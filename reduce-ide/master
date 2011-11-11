@@ -5,7 +5,7 @@
  :authors    (("Francis J. Wright" . "f.j.wright@qmw.ac.uk"))
  :maintainer ("Francis J. Wright" . "f.j.wright@qmw.ac.uk")
  :provided   (reduce-mode reduce-run)
- :required   ((("emacs-core" comint font-lock timer)
+ :required   ((("emacs" comint font-lock timer)
 	       ("paren" paren)))
  :keywords   (languages reduce)
  :commentary "\

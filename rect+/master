@@ -4,7 +4,7 @@
  :authors    (("Masahiro Hayashi" . "mhayashi1120@gmail.com"))
  :maintainer ("Masahiro Hayashi" . "mhayashi1120@gmail.com")
  :provided   (rect+)
- :required   ((("emacs-core" rect)))
+ :required   ((("emacs" rect)))
  :keywords   (edit rectangle)
  :homepage   "https://github.com/mhayashi1120/Emacs-rectplus"
  :commentary "\

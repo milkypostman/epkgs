@@ -12,7 +12,7 @@
 	       ("edebug" edebug)
 	       ("eieio" eieio eieio-base eieio-custom eieio-opt)
 	       ("eldoc" eldoc)
-	       ("emacs-core" autoload custom font-lock rect timer widget)
+	       ("emacs" autoload custom font-lock rect timer widget)
 	       ("etags" etags)
 	       ("inversion" inversion)
 	       ("mode-local" mode-local)

@@ -5,7 +5,7 @@
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")
  :provided   (help-mode+)
- :required   ((("emacs-core" help-mode)))
+ :required   ((("emacs" help-mode)))
  :keywords   (help)
  :homepage   "http://www.emacswiki.org/HelpModePlus"
  :wikipage   "http://www.emacswiki.org/HelpModePlus"

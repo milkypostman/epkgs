@@ -9,7 +9,7 @@
  :required   ((("browse-url" browse-url)
 	       ("cc-mode" cc-mode)
 	       ("cl" cl)
-	       ("emacs-core" custom easy-mmode easymenu font-lock overlay)
+	       ("emacs" custom easy-mmode easymenu font-lock overlay)
 	       ("imenu" imenu)
 	       ("jdee" jde)))
  :keywords   (aspectj jde jdee tools)

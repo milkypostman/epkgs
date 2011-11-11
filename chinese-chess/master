@@ -5,7 +5,7 @@
  :maintainer (nil . "wenbinye@163.com")
  :provided   (chinese-chess)
  :required   ((("cl" cl)
-	       ("emacs-core" cus-edit)))
+	       ("emacs" cus-edit)))
  :commentary "\
 车--马--象--士--将--士--象--马--车
  |   |   |   | \\ | / |   |   |   |

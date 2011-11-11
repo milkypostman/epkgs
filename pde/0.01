@@ -6,7 +6,7 @@
  :maintainer ("Ye Wenbin" . "wenbinye@gmail.com")
  :provided   (pde pde-abbv pde-load pde-patch pde-project pde-util pde-vars perlapi re-builder-x tabbar-x)
  :required   ((("cl" cl)
-	       ("emacs-core" apropos)
+	       ("emacs" apropos)
 	       ("emacs-obsolete" complete)
 	       ("emhacks" tabbar)
 	       ("etags" etags)

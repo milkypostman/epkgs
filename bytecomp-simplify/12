@@ -5,7 +5,7 @@
  :authors    (("Kevin Ryde" . "user42@zip.com.au"))
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (bytecomp-simplify)
- :required   ((("emacs-core" advice apropos)))
+ :required   ((("emacs" advice apropos)))
  :keywords   (extensions)
  :homepage   "http://user42.tuxfamily.org/bytecomp-simplify"
  :commentary "\

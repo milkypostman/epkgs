@@ -6,7 +6,7 @@
  :provided   (css devices font images url-hotlist w3 w3-cfg w3-compat w3-cus w3-dired w3-display w3-emacs w3-emulate w3-fast-parse w3-forms w3-hot w3-hotindex w3-imap w3-imenu w3-java w3-keymap w3-latex w3-menu w3-mouse w3-parse w3-print w3-props w3-speak w3-structure w3-style w3-toolbar w3-vars w3-widget w3-xemac w3-xemacs)
  :required   ((("ange-ftp" ange-ftp)
 	       ("cl" cl)
-	       ("emacs-core" advice cus-edit disp-table easymenu image wid-edit widget)
+	       ("emacs" advice cus-edit disp-table easymenu image wid-edit widget)
 	       ("emacspeak" dtk-css-speech emacspeak emacspeak-fix-interactive emacspeak-sounds)
 	       ("gnus" mailcap mm-decode mm-view)
 	       ("imenu" imenu)

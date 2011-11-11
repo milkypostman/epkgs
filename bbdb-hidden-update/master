@@ -6,7 +6,7 @@
  :maintainer ("Nix")
  :provided   (bbdb-hidden-update)
  :required   ((("bbdb" bbdb)
-	       ("emacs-core" advice)))
+	       ("emacs" advice)))
  :keywords   (mail news)
  :commentary "\
 The `bbdb-notice-hook' allows things to happen whenver a BBDB record

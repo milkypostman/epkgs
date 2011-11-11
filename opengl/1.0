@@ -7,7 +7,7 @@
  :maintainer ("Sriram Karra" . "karra@cs.utah.edu")
  :provided   (OpenGL)
  :required   ((("cl" cl)
-	       ("emacs-core" backquote)
+	       ("emacs" backquote)
 	       ("reporter" reporter)))
  :keywords   (minor-mode opengl)
  :homepage   "http://www.cs.utah.edu/~karra/code")

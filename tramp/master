@@ -11,7 +11,7 @@
 	       ("cl" cl)
 	       ("dbus" dbus)
 	       ("efs" efs-cu)
-	       ("emacs-core" advice base64 bytecomp custom dired timer)
+	       ("emacs" advice base64 bytecomp custom dired timer)
 	       ("format-spec" format-spec)
 	       ("reporter" reporter)
 	       ("shell" shell)

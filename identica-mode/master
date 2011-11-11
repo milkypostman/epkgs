@@ -7,7 +7,7 @@
  :maintainer ("Gabriel Saldana" . "gsaldana@gmail.com")
  :provided   (identica-mode)
  :required   ((("cl" cl)
-	       ("emacs-core" image)
+	       ("emacs" image)
 	       ("json" json)
 	       ("longlines" longlines)
 	       ("oauth" oauth)

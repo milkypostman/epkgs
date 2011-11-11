@@ -7,7 +7,7 @@
  :provided   (parser parser-fn)
  :required   ((("cl" cl)
 	       ("closure" closure)
-	       ("emacs-core" help-fns)))
+	       ("emacs" help-fns)))
  :keywords   (parser)
  :homepage   "http://www.emacswiki.org/ParserCompiler"
  :wikipage   "http://www.emacswiki.org/ParserCompiler"

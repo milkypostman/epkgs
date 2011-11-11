@@ -6,7 +6,7 @@
  :provided   (idlw-complete-structtag idlw-help idlw-roprompt idlw-shell idlw-toolbar idlwave idlwave-help idlwave-shell idlwave-toolbar)
  :required   ((("browse-url" browse-url)
 	       ("cl" cl)
-	       ("emacs-core" comint overlay timer wid-edit widget)
+	       ("emacs" comint overlay timer wid-edit widget)
 	       ("imenu" imenu)
 	       ("xml" xml)))
  :keywords   (languages)

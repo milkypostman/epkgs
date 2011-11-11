@@ -7,7 +7,7 @@
  :maintainer ("Nikolaj Schumacher" . "bugs@nschum.de")
  :provided   (company company-abbrev company-clang company-css company-dabbrev company-dabbrev-code company-eclim company-elisp company-etags company-files company-gtags company-ispell company-keywords company-nxml company-oddmuse company-pysmell company-ropemacs company-semantic company-template company-tempo company-xcode)
  :required   ((("cl" cl)
-	       ("emacs-core" abbrev help-mode)
+	       ("emacs" abbrev help-mode)
 	       ("etags" etags)
 	       ("ispell" ispell)
 	       ("nxml" nxml-mode rng-nxml)

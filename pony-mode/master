@@ -7,7 +7,7 @@
  :maintainer ("David Miller" . "david@deadpansincerity.com")
  :provided   (pony-mode)
  :required   ((("cl" cl)
-	       ("emacs-core" dired-aux easymenu files-x)
+	       ("emacs" dired-aux easymenu files-x)
 	       ("sgml-mode" sgml-mode)
 	       ("sql" sql)
 	       ("thingatpt" thingatpt)))

@@ -7,7 +7,7 @@
  :maintainer ("tequilasunset" . "tequilasunset.mac@gmail.com")
  :provided   (apples-mode)
  :required   ((("cl" cl)
-	       ("emacs-core" easymenu newcomment)))
+	       ("emacs" easymenu newcomment)))
  :keywords   (applescript languages)
  :homepage   "https://github.com/tequilasunset/apples-mode"
  :commentary "\

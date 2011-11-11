@@ -3,7 +3,7 @@
  :created    "2008"
  :provided   (ce ce-macros ce-unadorned ce-validate)
  :required   ((("cl" cl)
-	       ("emacs-core" custom)
+	       ("emacs" custom)
 	       ("pp" pp)))
  :homepage   "https://github.com/jessealama/ce-el"
  :commentary "\

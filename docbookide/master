@@ -7,7 +7,7 @@
  :provided   (dbide-abbrev dbide-data dbide-font dbide-process docbookide)
  :required   ((("cl" cl)
 	       ("compile" compile)
-	       ("emacs-core" font-lock)
+	       ("emacs" font-lock)
 	       ("etags" etags)))
  :keywords   (docbook languages xml)
  :homepage   "http://nwalsh.com/emacs/docbookide"

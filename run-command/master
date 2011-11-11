@@ -4,4 +4,4 @@
  :authors    (("Peter Breton"))
  :maintainer ("Peter Breton")
  :provided   (run-command)
- :required   ((("emacs-core" comint))))
+ :required   ((("emacs" comint))))

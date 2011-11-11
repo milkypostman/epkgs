@@ -7,7 +7,7 @@
 	       ("calendar" cal-julian calendar)
 	       ("cc-mode" cc-mode)
 	       ("efs" efs efs-auto)
-	       ("emacs-core" comint custom)
+	       ("emacs" comint custom)
 	       ("emacs-obsolete" lmenu)
 	       ("info" info)
 	       ("mail-utils" mail-utils)

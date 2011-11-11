@@ -6,7 +6,7 @@
  :maintainer ("Drew Adams")
  :provided   (menu-bar+)
  :required   ((("cl" cl)
-	       ("emacs-core" menu-bar))
+	       ("emacs" menu-bar))
 	      (("apropos+" apropos+)
 	       ("help+" help+)
 	       ("help-fns+" help-fns+)

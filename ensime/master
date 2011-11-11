@@ -5,7 +5,7 @@
  :required   ((("auto-complete" auto-complete)
 	       ("cl" cl)
 	       ("compile" compile)
-	       ("emacs-core" apropos comint easymenu font-lock timer tooltip)
+	       ("emacs" apropos comint easymenu font-lock timer tooltip)
 	       ("etags" etags)
 	       ("hideshow" hideshow)
 	       ("pp" pp)

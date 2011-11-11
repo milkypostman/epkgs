@@ -1,6 +1,6 @@
 (:updated    "20070226"
  :provided   (mozart oz oz-extra oz-server)
  :required   ((("compile" compile)
-	       ("emacs-core" comint custom font-lock)
+	       ("emacs" comint custom font-lock)
 	       ("outline" outline)))
  :homepage   "http://www.mozart-oz.org")

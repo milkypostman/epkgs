@@ -4,7 +4,7 @@
  :license    "GPL-2"
  :provided   (scheme-here)
  :required   ((("cmuscheme" cmuscheme)
-	       ("emacs-core" comint)
+	       ("emacs" comint)
 	       ("scheme" scheme)))
  :homepage   "http://www.emacswiki.org/RunSchemeHere"
  :wikipage   "http://www.emacswiki.org/RunSchemeHere"

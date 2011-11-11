@@ -7,7 +7,7 @@
  :provided   (php-mode)
  :required   ((("add-log" add-log)
 	       ("cc-mode" cc-langs cc-mode)
-	       ("emacs-core" custom font-lock)
+	       ("emacs" custom font-lock)
 	       ("etags" etags)
 	       ("regexp-opt" regexp-opt)
 	       ("speedbar" speedbar)))

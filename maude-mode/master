@@ -8,7 +8,7 @@
  :required   ((("ansi-color" ansi-color)
 	       ("cl" cl)
 	       ("compile" compile)
-	       ("emacs-core" comint derived easymenu font-lock newcomment)
+	       ("emacs" comint derived easymenu font-lock newcomment)
 	       ("imenu" imenu)
 	       ("rx" rx)))
  :keywords   (maude)

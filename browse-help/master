@@ -6,7 +6,7 @@
  :provided   (browse-help)
  :required   ((("browse-url" browse-url)
 	       ("cl" cl)
-	       ("emacs-core" cus-edit)))
+	       ("emacs" cus-edit)))
  :keywords   (browser help)
  :commentary "\
 This package provides support for context-sensitive help within Emacs.

@@ -7,7 +7,7 @@
 	       ("cc-mode" cc-cmds)
 	       ("cl" cl)
 	       ("compile" compile)
-	       ("emacs-core" comint custom help-fns)
+	       ("emacs" comint custom help-fns)
 	       ("highlight-indentation" highlight-indentation)
 	       ("imenu" imenu)
 	       ("mmm-mode" mmm-auto)

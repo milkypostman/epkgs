@@ -13,7 +13,7 @@
 	       ("ediff" ediff)
 	       ("elp" elp)
 	       ("elunit" elunit)
-	       ("emacs-core" cus-edit derived dired dired-x easymenu font-lock overlay rect uniquify wid-edit)
+	       ("emacs" cus-edit derived dired dired-x easymenu font-lock overlay rect uniquify wid-edit)
 	       ("ewoc" ewoc)
 	       ("ffap" ffap)
 	       ("gnus" gnus gnus-art gnus-sum message mml)

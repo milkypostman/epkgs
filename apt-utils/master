@@ -6,7 +6,7 @@
  :maintainer ("Matthew P. Hodges" . "mphodges@member.fsf.org")
  :provided   (apt-utils)
  :required   ((("browse-url" browse-url)
-	       ("emacs-core" dired)
+	       ("emacs" dired)
 	       ("jka-compr" jka-compr)
 	       ("trace" trace)))
  :wikipage   "http://www.emacswiki.org/InterfaceToAPT"

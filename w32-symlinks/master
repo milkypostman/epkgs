@@ -5,7 +5,7 @@
  :authors    (("Francis J. Wright" . "f.j.wright@qmul.ac.uk"))
  :maintainer ("Francis J. Wright" . "f.j.wright@qmul.ac.uk")
  :provided   (w32-symlinks)
- :required   ((("emacs-core" dired-aux)))
+ :required   ((("emacs" dired-aux)))
  :keywords   (convenience files unix)
  :commentary "\
 This file is intended to be used with NTEmacs 21, i.e. GNU Emacs 21

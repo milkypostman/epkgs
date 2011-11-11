@@ -8,7 +8,7 @@
  :required   ((("calendar" calendar solar)
 	       ("cl" cl)
 	       ("diary-lib" diary-lib)
-	       ("emacs-core" faces))
+	       ("emacs" faces))
 	      (("icicles" icicles)
 	       ("misc-fns" misc-fns)))
  :keywords   (calendar local mouse)

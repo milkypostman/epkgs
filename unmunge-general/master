@@ -2,5 +2,5 @@
  :license    "GPL-2"
  :provided   (unmunge-general)
  :required   ((("cl" cl)
-	       ("emacs-core" custom)
+	       ("emacs" custom)
 	       ("gnus" gnus message))))

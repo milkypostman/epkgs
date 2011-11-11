@@ -8,7 +8,7 @@
  :provided   (confluence confluence-edit)
  :required   ((("browse-url" browse-url)
 	       ("ediff" ediff)
-	       ("emacs-core" font-lock)
+	       ("emacs" font-lock)
 	       ("image-file" image-file)
 	       ("thingatpt" thingatpt)
 	       ("url" url-http)

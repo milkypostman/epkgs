@@ -5,7 +5,7 @@
  :authors    (("Phillip Lord" . "p.lord@russet.org.uk"))
  :maintainer ("Phillip Lord" . "p.lord@russet.org.uk")
  :provided   (wide-column)
- :required   ((("emacs-core" easy-mmode)))
+ :required   ((("emacs" easy-mmode)))
  :keywords   (column\ width cursor\ colour minor\ mode)
  :homepage   "http://homepages.cs.ncl.ac.uk/phillip.lord/emacs.html"
  :commentary "\

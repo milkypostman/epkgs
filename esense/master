@@ -4,7 +4,7 @@
  :provided   (esense esense-distel esense-start esense-trace)
  :required   ((("cl" cl)
 	       ("distel" distel)
-	       ("emacs-core" tooltip)
+	       ("emacs" tooltip)
 	       ("erlang" erlang)
 	       ("etags" etags)))
  :homepage   "http://esense.sourceforge.net"

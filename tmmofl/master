@@ -5,7 +5,7 @@
  :maintainer ("Phillip Lord" . "p.lord@hgmp.mrc.ac.uk")
  :provided   (tmmofl)
  :required   ((("cl" cl)
-	       ("emacs-core" easy-mmode font-lock)))
+	       ("emacs" easy-mmode font-lock)))
  :keywords   (font\ lock minor\ mode)
  :homepage   "http://homepages.cs.ncl.ac.uk/phillip.lord/emacs.html"
  :commentary "\

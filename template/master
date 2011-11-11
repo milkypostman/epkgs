@@ -6,7 +6,7 @@
  :maintainer ("Christoph Wedler" . "wedler@users.sourceforge.net")
  :provided   (template)
  :required   ((("cl" cl)
-	       ("emacs-core" custom)))
+	       ("emacs" custom)))
  :keywords   (auto-updating comment\ decoration data template tools)
  :homepage   "http://emacs-template.sourceforge.net"
  :wikipage   "http://www.emacswiki.org/TemplatesMode"

@@ -3,6 +3,6 @@
  :updated    "2006"
  :license    "GPL-2"
  :provided   (repeatable)
- :required   ((("emacs-core" advice)))
+ :required   ((("emacs" advice)))
  :homepage   "http://furius.ca/pubcode"
  :wikipage   "http://www.emacswiki.org/Repeatable")

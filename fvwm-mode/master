@@ -2,6 +2,6 @@
  :updated    "20101029"
  :license    "GPL-2"
  :provided   (fvwm-mode)
- :required   ((("emacs-core" font-lock)))
+ :required   ((("emacs" font-lock)))
  :homepage   "http://www.lair.be/projects_fvwm-mode.php"
  :wikipage   "http://www.emacswiki.org/FvwmMode")

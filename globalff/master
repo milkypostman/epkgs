@@ -4,7 +4,7 @@
  :license    "GPL-2"
  :provided   (globalff)
  :required   ((("cl" cl)
-	       ("emacs-core" overlay)))
+	       ("emacs" overlay)))
  :homepage   "http://www.emacswiki.org/GlobalFF"
  :wikipage   "http://www.emacswiki.org/GlobalFF"
  :commentary "\

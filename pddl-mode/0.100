@@ -5,7 +5,7 @@
  :authors    ((nil . "surendra@asu.edu"))
  :maintainer (nil . "surendra@asu.edu")
  :provided   (PDDL-mode pddl-mode)
- :required   ((("emacs-core" custom easymenu font-lock lisp-mode)
+ :required   ((("emacs" custom easymenu font-lock lisp-mode)
 	       ("imenu" imenu)
 	       ("pcomplete" pcomplete)
 	       ("regexp-opt" regexp-opt)))

@@ -8,7 +8,7 @@
  :maintainer ("Geert A. M. Van der Plas" . "geert_vanderplas@email.com")
  :provided   (spice-mode)
  :required   ((("compile" compile)
-	       ("emacs-core" comint easymenu font-lock overlay)
+	       ("emacs" comint easymenu font-lock overlay)
 	       ("emacs-obsolete" lucid)
 	       ("imenu" imenu)
 	       ("speedbar" speedbar)

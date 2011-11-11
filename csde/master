@@ -11,7 +11,7 @@
 	       ("compile" compile)
 	       ("eieio" eieio)
 	       ("elib" avltree)
-	       ("emacs-core" cus-edit custom easymenu font-lock wid-edit)
+	       ("emacs" cus-edit custom easymenu font-lock wid-edit)
 	       ("gud" gud)
 	       ("imenu" imenu)
 	       ("jdee" beanshell)

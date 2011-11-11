@@ -6,7 +6,7 @@
  :required   ((("anything" anything)
 	       ("cake" cake-inflector)
 	       ("cl" cl)
-	       ("emacs-core" easy-mmode)
+	       ("emacs" easy-mmode)
 	       ("historyf" historyf))
 	      (("anything" anything-show-completion)
 	       ("imenu" imenu)

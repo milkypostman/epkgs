@@ -5,7 +5,7 @@
  :license    "GPL-3"
  :provided   (id-manager)
  :required   ((("cl" cl)
-	       ("emacs-core" wid-edit widget)))
+	       ("emacs" wid-edit widget)))
  :keywords   (convenience password)
  :homepage   "https://github.com/kiwanami/emacs-id-manager"
  :commentary "\

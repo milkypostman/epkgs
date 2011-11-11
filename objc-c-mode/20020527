@@ -3,7 +3,7 @@
  :maintainer ("Michael Weber" . "michaelw@foldr.org")
  :provided   (objc-c-mode)
  :required   ((("cc-mode" cc-mode)
-	       ("emacs-core" font-lock)))
+	       ("emacs" font-lock)))
  :keywords   (objc objective-c)
  :homepage   "http://www.foldr.org/~michaelw/objective-c/index.html#objc-mode"
  :commentary "\

@@ -5,7 +5,7 @@
  :authors    (("Kevin Rodgers" . "ihs_4664@yahoo.com"))
  :maintainer ("Kevin Rodgers" . "ihs_4664@yahoo.com")
  :provided   (defshell)
- :required   ((("emacs-core" comint custom)
+ :required   ((("emacs" comint custom)
 	       ("shell" shell)))
  :keywords   (convenience shell)
  :commentary "\

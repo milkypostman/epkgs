@@ -7,7 +7,7 @@
  :maintainer ("Mario Lang" . "mlang@delysid.org")
  :provided   (chess chess-ai chess-algebraic chess-announce chess-autosave chess-chat chess-clock chess-common chess-crafty chess-database chess-display chess-eco chess-engine chess-epd chess-fen chess-file chess-game chess-german chess-gnuchess chess-ics chess-ics1 chess-ics2 chess-images chess-input chess-irc chess-kibitz chess-link chess-log chess-maint chess-message chess-module chess-network chess-none chess-pgn chess-phalanx chess-plain chess-ply chess-pos chess-puzzle chess-random chess-scid chess-sjeng chess-sound chess-transport chess-tutorial chess-ucb chess-var)
  :required   ((("cl" cl)
-	       ("emacs-core" autoload comint)
+	       ("emacs" autoload comint)
 	       ("rx" rx)
 	       ("sort" sort))
 	      (("pcomplete" pcomplete)))

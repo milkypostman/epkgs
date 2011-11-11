@@ -5,7 +5,7 @@
  :authors    (("Scott Frazer" . "frazer.scott@gmail.com"))
  :maintainer ("Scott Frazer" . "frazer.scott@gmail.com")
  :provided   (etags-stack)
- :required   ((("emacs-core" custom)
+ :required   ((("emacs" custom)
 	       ("etags" etags)))
  :keywords   (tags)
  :homepage   "http://www.emacswiki.org/EtagsStack"

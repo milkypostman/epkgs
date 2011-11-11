@@ -13,7 +13,7 @@
 	       ("cl" cl)
 	       ("compile" compile)
 	       ("eieio" eieio)
-	       ("emacs-core" autoload cus-edit easymenu wid-edit)
+	       ("emacs" autoload cus-edit easymenu wid-edit)
 	       ("escreen" escreen)
 	       ("hideshow" hideshow)
 	       ("imenu" imenu)

@@ -9,7 +9,7 @@
  :required   ((("cgi" cgi)
 	       ("cl" cl)
 	       ("compile" compile)
-	       ("emacs-core" derived dired font-lock)
+	       ("emacs" derived dired font-lock)
 	       ("emacs-obsolete" pgg pgg-gpg)
 	       ("htmlize" htmlize)
 	       ("httpd" httpd)

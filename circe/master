@@ -6,7 +6,7 @@
  :authors    (("Jorgen Schaefer" . "forcer@forcix.cx"))
  :maintainer ("Jorgen Schaefer" . "forcer@forcix.cx")
  :provided   (circe circe-auto circe-chanop circe-e21 circe-highlight-all-nicks circe-log circe-xemacs incomplete lcs lui-format lui-irc-colors lui-logging lui-xemacs)
- :required   ((("emacs-core" autoload font-lock overlay timer)
+ :required   ((("emacs" autoload font-lock overlay timer)
 	       ("lui" lui)
 	       ("ring" ring)
 	       ("time-date" time-date)))

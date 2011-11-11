@@ -5,7 +5,7 @@
  :license    "GPL-3"
  :provided   (e2wm e2wm-config e2wm-vcs)
  :required   ((("cl" cl)
-	       ("emacs-core" easymenu)
+	       ("emacs" easymenu)
 	       ("imenu" imenu)
 	       ("magit" magit)
 	       ("windmove" windmove)

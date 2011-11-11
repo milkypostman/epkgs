@@ -6,7 +6,7 @@
  :maintainer ("Joseph" . "jixiuf@gmail.com")
  :provided   (anything-etags+)
  :required   ((("anything" anything)
-	       ("emacs-core" custom)
+	       ("emacs" custom)
 	       ("etags" etags))
 	      (("anything" anything-config anything-match-plugin)))
  :keywords   (anything etags)

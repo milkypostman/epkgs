@@ -11,7 +11,7 @@
 	       ("chess" chess chess-display chess-network)
 	       ("cl" cl)
 	       ("dframe" dframe)
-	       ("emacs-core" comint easymenu font-lock overlay wid-edit)
+	       ("emacs" comint easymenu font-lock overlay wid-edit)
 	       ("emacspeak" emacspeak)
 	       ("flyspell" flyspell)
 	       ("format-spec" format-spec)

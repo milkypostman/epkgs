@@ -7,7 +7,7 @@
  :maintainer ("François Pinard" . "pinard@iro.umontreal.ca")
  :provided   (po-mode)
  :required   ((("compile" compile)
-	       ("emacs-core" custom)
+	       ("emacs" custom)
 	       ("etags" etags)
 	       (nil po-compat)))
  :keywords   (gettext)

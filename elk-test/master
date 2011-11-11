@@ -9,7 +9,7 @@
  :required   ((("cl" cl)
 	       ("compile" compile)
 	       ("eldoc" eldoc)
-	       ("emacs-core" button newcomment))
+	       ("emacs" button newcomment))
 	      (("fringe-helper" fringe-helper)))
  :keywords   (lisp)
  :homepage   "http://nschum.de/src/emacs/elk-test"

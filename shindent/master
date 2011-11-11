@@ -1,6 +1,6 @@
 (:summary    "Indentation support for shell-script modes for some shells"
  :provided   (shindent)
- :required   ((("emacs-core" advice)
+ :required   ((("emacs" advice)
 	       ("sh-script" sh-script)))
  :commentary "\
 This is an \"add-on\" for sh-script.el to implementation indentation

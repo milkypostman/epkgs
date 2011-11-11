@@ -6,7 +6,7 @@
  :authors    (("Avi Rozen" . "avi.rozen@gmail.com"))
  :maintainer ("Avi Rozen" . "avi.rozen@gmail.com")
  :provided   (grep-a-lot)
- :required   ((("emacs-core" advice)
+ :required   ((("emacs" advice)
 	       ("grep" grep)))
  :keywords   (convenience search tools)
  :homepage   "https://github.com/ZungBang/emacs-grep-a-lot"

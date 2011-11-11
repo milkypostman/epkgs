@@ -8,7 +8,7 @@
  :provided   (ept ept-align ept-dump ept-kochi-x ept-mode ept-outline ept-setup ept-solaris ept-w3m)
  :required   ((("apel" product)
 	       ("cl" cl)
-	       ("emacs-core" derived)
+	       ("emacs" derived)
 	       ("outline" outline)
 	       ("w3m" w3m)))
  :keywords   (presentation)

@@ -2,4 +2,4 @@
  :authors    (("Paul Hobbs"))
  :maintainer ("Paul Hobbs")
  :provided   (copy-from-surrounding-lines)
- :required   ((("emacs-core" misc))))
+ :required   ((("emacs" misc))))

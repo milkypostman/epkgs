@@ -4,7 +4,7 @@
  :provided   (color-moccur)
  :required   ((("cl" cl)
 	       ("ee" ee-autoloads)
-	       ("emacs-core" overlay)
+	       ("emacs" overlay)
 	       ("migemo" migemo)
 	       ("moccur-edit" moccur-edit)))
  :homepage   "http://www.bookshelf.jp"

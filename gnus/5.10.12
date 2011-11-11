@@ -12,7 +12,7 @@
 	       ("browse-url" browse-url)
 	       ("cl" cl)
 	       ("dig" dig)
-	       ("emacs-core" bytecomp custom dired easymenu font-lock sha1 timer wid-edit)
+	       ("emacs" bytecomp custom dired easymenu font-lock sha1 timer wid-edit)
 	       ("emacs-obsolete" pgg)
 	       ("format-spec" format-spec)
 	       ("idna" idna)

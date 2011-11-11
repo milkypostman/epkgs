@@ -7,7 +7,7 @@
  :maintainer ("Jonas Bernoulli" . "jonas@bernoul.li")
  :provided   (epkg epkg-ui)
  :required   ((("cl" cl)
-	       ("emacs-core" help-mode)
+	       ("emacs" help-mode)
 	       ("finder" finder)
 	       ("magit" magit)
 	       ("map-progress" map-progress)

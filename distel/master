@@ -2,7 +2,7 @@
  :repository (git . "git://github.com/massemanet/distel.git")
  :provided   (derl distel distel-ie edb epmd erl erl-service erlext net-fsm patmatch)
  :required   ((("cl" cl)
-	       ("emacs-core" easy-mmode font-lock md5 overlay)
+	       ("emacs" easy-mmode font-lock md5 overlay)
 	       ("erlang" erlang)
 	       ("ewoc" ewoc))
 	      (("w3m" w3m)))

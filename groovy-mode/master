@@ -7,7 +7,7 @@
  :provided   (grails-mode groovy-electric groovy-mode inf-groovy)
  :required   ((("cc-mode" cc-mode)
 	       ("compile" compile)
-	       ("emacs-core" comint)
+	       ("emacs" comint)
 	       ("find-cmd" find-cmd)))
  :homepage   "http://groovy.codehaus.org/Emacs+Plugin"
  :wikipage   "http://www.emacswiki.org/GroovyMode"

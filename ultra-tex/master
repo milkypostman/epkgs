@@ -9,7 +9,7 @@
  :provided   (aucify ultex ultex-cus ultex-setup)
  :required   ((("auctex" bib-cite font-latex tex tex-buf)
 	       ("cl" cl)
-	       ("emacs-core" font-lock)
+	       ("emacs" font-lock)
 	       ("imenu" imenu)
 	       ("light" light)))
  :keywords   (completion tex-mode)

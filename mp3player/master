@@ -4,7 +4,7 @@
  :license    "GPL-2"
  :provided   (mp3player mp3player-scores)
  :required   ((("cl" cl)
-	       ("emacs-core" dired font-lock wid-edit widget)
+	       ("emacs" dired font-lock wid-edit widget)
 	       ("thingatpt" thingatpt)))
  :homepage   "http://emacsmp3player.sourceforge.net"
  :wikipage   "http://www.emacswiki.org/MpthreePlayer"

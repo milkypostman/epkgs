@@ -7,7 +7,7 @@
  :required   ((("cl" cl)
 	       ("ediff" ediff)
 	       ("electric" electric)
-	       ("emacs-core" derived)
+	       ("emacs" derived)
 	       ("ffap" ffap)
 	       ("ring" ring)))
  :homepage   "https://github.com/bogolisk/egg")

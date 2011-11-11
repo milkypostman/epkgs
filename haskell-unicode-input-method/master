@@ -2,5 +2,5 @@
  :created    "2011"
  :updated    "2011"
  :provided   (haskell-unicode-input-method)
- :required   ((("emacs-core" quail)))
+ :required   ((("emacs" quail)))
  :homepage   "https://github.com/roelvandijk/emacs-haskell-unicode-input-method")

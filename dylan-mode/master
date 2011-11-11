@@ -6,7 +6,7 @@
  :authors    (("Robert Stockton" . "rgs@cs.cmu.edu"))
  :maintainer ("Chris Page" . "cpage@opendylan.org")
  :provided   (dylan-mode slime-dylan)
- :required   ((("emacs-core" font-lock)
+ :required   ((("emacs" font-lock)
 	       ("tree-widget" tree-widget)))
  :homepage   "https://github.com/dylan-lang/dylan-mode"
  :commentary "\

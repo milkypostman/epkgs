@@ -6,7 +6,7 @@
  :provided   (hachette)
  :required   ((("cl" cl)
 	       ("dict-web" dict-web)
-	       ("emacs-core" derived widget)
+	       ("emacs" derived widget)
 	       ("thingatpt" thingatpt)
 	       ("url" url)))
  :keywords   (dictionaire french\ dictionary hachette)

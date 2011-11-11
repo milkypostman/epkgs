@@ -7,7 +7,7 @@
  :maintainer ("Michael Abraham Shulman" . "viritrilbia@users.sourceforge.net")
  :provided   (ejab ejab-connect ejab-draft ejab-misc ejab-msg ejab-msg-disp ejab-obj ejab-presence ejab-rost-disp ejab-roster ejab-utils ejab-xml)
  :required   ((("cl" cl)
-	       ("emacs-core" sha1)))
+	       ("emacs" sha1)))
  :keywords   (comm)
  :homepage   "http://ejab.sourceforge.net"
  :wikipage   "http://www.emacswiki.org/EmacsJab"

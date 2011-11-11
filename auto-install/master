@@ -7,7 +7,7 @@
  :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
  :provided   (auto-install)
  :required   ((("cl" cl)
-	       ("emacs-core" bytecomp dired)
+	       ("emacs" bytecomp dired)
 	       ("ffap" ffap)
 	       ("find-func" find-func)
 	       ("thingatpt" thingatpt)

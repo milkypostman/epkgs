@@ -6,7 +6,7 @@
  :provided   (libmpdee mingus mingus-stays-home)
  :required   ((("cl" cl)
 	       ("edebug" edebug)
-	       ("emacs-core" custom dired wid-edit)
+	       ("emacs" custom dired wid-edit)
 	       ("reporter" reporter)
 	       ("sendmail" sendmail)
 	       ("thingatpt" thingatpt)

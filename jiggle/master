@@ -6,7 +6,7 @@
  :maintainer ("Will Mengarini" . "seldon@eskimo.com")
  :provided   (jiggle)
  :required   ((("cl" cl)
-	       ("emacs-core" advice)))
+	       ("emacs" advice)))
  :keywords   (cursor frames hardware jiggle shake)
  :homepage   "http://www.eskimo.com/~seldon"
  :commentary "\

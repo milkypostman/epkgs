@@ -4,7 +4,7 @@
  :authors    (("Jesper Kjær Pedersen" . "blackie@ifad.dk"))
  :maintainer ("Jesper Kjær Pedersen" . "blackie@ifad.dk")
  :provided   (narrow-stack)
- :required   ((("emacs-core" advice)))
+ :required   ((("emacs" advice)))
  :keywords   (narrow)
  :homepage   "http://www.imada.sdu.dk/~blackie/emacs"
  :commentary "\

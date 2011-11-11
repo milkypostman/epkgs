@@ -6,5 +6,5 @@
  :authors    (("Henrik Joensson" . "henrik7205@hotmail.com"))
  :maintainer ("Henrik Joensson" . "henrik7205@hotmail.com")
  :provided   (ccm)
- :required   ((("emacs-core" easymenu)))
+ :required   ((("emacs" easymenu)))
  :keywords   (ccm synergy))

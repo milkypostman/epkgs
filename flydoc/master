@@ -5,7 +5,7 @@
  :maintainer ("MATSUYAMA Tomohiro" . "t.matsuyama.pub@gmail.com")
  :provided   (flydoc)
  :required   ((("cl" cl)
-	       ("emacs-core" easy-mmode)
+	       ("emacs" easy-mmode)
 	       ("thingatpt" thingatpt)))
  :keywords   (convenience)
  :commentary "\

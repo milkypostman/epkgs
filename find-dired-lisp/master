@@ -2,6 +2,6 @@
  :updated    "20091020"
  :license    "GPL-3"
  :provided   (find-dired-lisp)
- :required   ((("emacs-core" dired)
+ :required   ((("emacs" dired)
 	       ("findr" findr)))
  :homepage   "http://www.bookshelf.jp")

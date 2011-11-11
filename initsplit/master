@@ -7,7 +7,7 @@
  :maintainer (nil . "dave@boostpro.com")
  :provided   (initsplit)
  :required   ((("cl" cl)
-	       ("emacs-core" simple)
+	       ("emacs" simple)
 	       ("find-func" find-func)))
  :keywords   (lisp)
  :homepage   "https://github.com/dabrahams/initsplit"

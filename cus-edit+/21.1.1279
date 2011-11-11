@@ -6,7 +6,7 @@
  :maintainer ("Drew Adams")
  :provided   (cus-edit+)
  :required   ((("cl" cl)
-	       ("emacs-core" cus-edit)
+	       ("emacs" cus-edit)
 	       ("speedbar" speedbar))
 	      (("autofit-frame" autofit-frame)
 	       ("wid-edit+" wid-edit+)))

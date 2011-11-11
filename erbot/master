@@ -11,7 +11,7 @@
 	       ("cl" cl)
 	       ("doctor" doctor)
 	       ("dunnet" dunnet)
-	       ("emacs-core" iso-transl quail)
+	       ("emacs" iso-transl quail)
 	       ("erc" erc erc-stamp)
 	       ("faith" faith)
 	       ("find-func" find-func)

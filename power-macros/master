@@ -6,6 +6,6 @@
  :provided   (power-macros)
  :required   ((("cl" cl)
 	       ("edmacro" edmacro)
-	       ("emacs-core" advice)))
+	       ("emacs" advice)))
  :keywords   (macros)
  :homepage   "http://www.imada.sdu.dk/~blackie/emacs")

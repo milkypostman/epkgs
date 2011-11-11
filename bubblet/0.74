@@ -6,7 +6,7 @@
  :maintainer ("Paul Du Bois" . "dubois@infinite-machine.com")
  :provided   (bubblet)
  :required   ((("cl" cl)
-	       ("emacs-core" cus-edit)))
+	       ("emacs" cus-edit)))
  :keywords   (game puzzle)
  :commentary "\
 Inspired by the original Palm Bubblet by Frank Fejes (www.oopdreams.com),

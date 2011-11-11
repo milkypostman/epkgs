@@ -5,7 +5,7 @@
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")
  :provided   (ls-lisp+)
- :required   ((("emacs-core" ls-lisp)
+ :required   ((("emacs" ls-lisp)
 	       ("files+" files+)))
  :keywords   (dired extensions files internal local)
  :commentary "\

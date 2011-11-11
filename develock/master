@@ -9,7 +9,7 @@
  :maintainer ("Katsumi Yamaoka" . "yamaoka@jpl.org")
  :provided   (develock)
  :required   ((("cc-mode" cc-engine)
-	       ("emacs-core" advice font-lock)))
+	       ("emacs" advice font-lock)))
  :keywords   (c change-log emacs-lisp font-lock html java mail news perl ruby tcl texinfo)
  :wikipage   "http://www.emacswiki.org/DevelockMode"
  :commentary "\

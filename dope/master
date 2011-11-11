@@ -6,7 +6,7 @@
  :maintainer (nil . "youngs@xemacs.org")
  :provided   (dope)
  :required   ((("cl" cl)
-	       ("emacs-core" custom wid-edit widget)
+	       ("emacs" custom wid-edit widget)
 	       ("pp" pp)
 	       ("thingatpt" thingatpt)))
  :keywords   (dotemacs error profile speed startup)

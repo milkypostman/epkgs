@@ -8,7 +8,7 @@
  :provided   (maplev)
  :required   ((("align" align)
 	       ("cl" cl)
-	       ("emacs-core" comint font-lock)
+	       ("emacs" comint font-lock)
 	       ("emacs-obsolete" abbrevlist)
 	       ("imenu" imenu)
 	       ("info" info)))

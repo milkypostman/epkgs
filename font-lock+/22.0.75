@@ -5,7 +5,7 @@
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")
  :provided   (font-lock+)
- :required   ((("emacs-core" font-lock)))
+ :required   ((("emacs" font-lock)))
  :keywords   (faces highlighting languages)
  :commentary "\
 Enhancements to standard library `font-lock.el'.

@@ -6,7 +6,7 @@
  :maintainer ("Paul M. Rodriguez" . "pmr@ruricolist.com")
  :provided   (projector)
  :required   ((("cl" cl)
-	       ("emacs-core" apropos dired-x easymenu)
+	       ("emacs" apropos dired-x easymenu)
 	       ("etags" etags)
 	       ("find-dired" find-dired)
 	       ("format-spec" format-spec)

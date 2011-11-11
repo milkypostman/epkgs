@@ -6,7 +6,7 @@
  :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
  :provided   (el-mock)
  :required   ((("cl" cl)
-	       ("emacs-core" advice)))
+	       ("emacs" advice)))
  :keywords   (lisp testing unittest)
  :homepage   "http://www.emacswiki.org/EmacsLispMock"
  :wikipage   "http://www.emacswiki.org/EmacsLispMock"

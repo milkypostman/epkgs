@@ -6,7 +6,7 @@
  :maintainer ("Brennan Sharp" . "brennanzl@xtra.co.nz")
  :provided   (aplac-mode)
  :required   ((("compile" compile)
-	       ("emacs-core" easymenu font-lock overlay)
+	       ("emacs" easymenu font-lock overlay)
 	       ("emacs-obsolete" lucid)
 	       ("imenu" imenu)
 	       ("skeleton" skeleton)

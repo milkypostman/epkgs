@@ -6,7 +6,7 @@
  :maintainer ("Will Mengarini" . "seldon@eskimo.com")
  :provided   (abbrev-sort)
  :required   ((("cl" cl)
-	       ("emacs-core" advice)))
+	       ("emacs" advice)))
  :keywords   (abbrev convenience)
  :homepage   "http://www.eskimo.com/~seldon"
  :commentary "\

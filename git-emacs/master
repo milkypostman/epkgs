@@ -7,7 +7,7 @@
  :provided   (git-blame git-emacs git-emacs-autoloads git-global-keys git-log git-modeline git-status)
  :required   ((("cl" cl)
 	       ("ediff" ediff)
-	       ("emacs-core" easymenu)
+	       ("emacs" easymenu)
 	       ("ewoc" ewoc)
 	       ("grep" grep)
 	       ("ido" ido)

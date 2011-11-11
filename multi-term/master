@@ -6,7 +6,7 @@
  :maintainer ("ahei" . "ahei0802@gmail.com")
  :provided   (multi-term)
  :required   ((("cl" cl)
-	       ("emacs-core" advice)
+	       ("emacs" advice)
 	       ("term" term))
 	      (("ecb" ecb)))
  :keywords   (multiple\ buffer term terminal)

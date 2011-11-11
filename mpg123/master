@@ -1,6 +1,6 @@
 (:updated    "20110113"
  :provided   (mpg123)
- :required   ((("emacs-core" overlay)
+ :required   ((("emacs" overlay)
 	       ("smart-dnd" smart-dnd)))
  :homepage   "http://www.gentei.org/~yuuji/software/mpg123el"
  :wikipage   "http://www.emacswiki.org/Mpg123")

@@ -6,7 +6,7 @@
  :maintainer ("Jesse Rosenthal" . "jesse.k.rosenthal@gmail.com")
  :provided   (sudoku)
  :required   ((("cl" cl)
-	       ("emacs-core" easy-mmode easymenu)
+	       ("emacs" easy-mmode easymenu)
 	       ("url" url)
 	       ("w3" w3)))
  :homepage   "http://www.columbia.edu/~jr2075/elisp"

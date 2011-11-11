@@ -10,7 +10,7 @@
 	       ("cl" cl)
 	       ("compile" compile)
 	       ("eieio" eieio eieio-base eieio-opt)
-	       ("emacs-core" comint easymenu)
+	       ("emacs" comint easymenu)
 	       ("fringe-helper" fringe-helper)
 	       ("semantic" semantic semantic/ctxt semantic/db-find semantic/find semantic/ia semantic/lex semantic/wisent semantic/wisent/comp semantic/wisent/java-tags semantic/wisent/javat-wy)
 	       ("skeleton" skeleton)

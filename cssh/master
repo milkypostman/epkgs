@@ -6,7 +6,7 @@
  :maintainer ("Dimitri Fontaine" . "dim@tapoueh.org")
  :provided   (cssh)
  :required   ((("cl" cl)
-	       ("emacs-core" dired)
+	       ("emacs" dired)
 	       ("ibuffer" ibuffer)
 	       ("shell" shell)
 	       ("term" term)

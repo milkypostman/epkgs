@@ -6,7 +6,7 @@
  :maintainer ("Drew Adams")
  :provided   (timer+)
  :required   ((("cl" cl)
-	       ("emacs-core" timer))
+	       ("emacs" timer))
 	      (("icicles" icicles)
 	       ("thingatpt" thingatpt)
 	       ("thingatpt+" thingatpt+)))

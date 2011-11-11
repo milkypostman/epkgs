@@ -8,7 +8,7 @@
 	      ("Christian Faulhammer" . "fauli@gentoo.org")
 	      ("Ulrich Müller" . "ulm@gentoo.org"))
  :provided   (ebuild-mode gentoo-syntax)
- :required   ((("emacs-core" easymenu font-lock)
+ :required   ((("emacs" easymenu font-lock)
 	       ("sh-script" sh-script)
 	       ("skeleton" skeleton)))
  :keywords   (languages processes)

@@ -7,7 +7,7 @@
  :provided   (blorg)
  :required   ((("calendar" calendar)
 	       ("cl" cl)
-	       ("emacs-core" easy-mmode)
+	       ("emacs" easy-mmode)
 	       ("eshell" em-unix eshell)
 	       ("org-mode" org)
 	       ("regexp-opt" regexp-opt)

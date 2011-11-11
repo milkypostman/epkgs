@@ -5,7 +5,7 @@
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")
  :provided   (autoload+)
- :required   ((("emacs-core" autoload)))
+ :required   ((("emacs" autoload)))
  :keywords   (maint)
  :commentary "\
 ***** NOTE: The following function defined in `autoload.el' has

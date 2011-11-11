@@ -3,7 +3,7 @@
  :updated    "20030127"
  :license    "GPL-2"
  :provided   (highlight-context-line)
- :required   ((("emacs-core" advice)))
+ :required   ((("emacs" advice)))
  :keywords   (services user)
  :homepage   "http://www.skamphausen.de/cgi-bin/ska/highlight-context-line"
  :commentary "\

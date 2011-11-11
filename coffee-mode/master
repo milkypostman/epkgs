@@ -7,7 +7,7 @@
  :maintainer ("Chris Wanstrath" . "chris@ozmm.org")
  :provided   (coffee-mode)
  :required   ((("cl" cl)
-	       ("emacs-core" comint easymenu font-lock newcomment)))
+	       ("emacs" comint easymenu font-lock newcomment)))
  :keywords   (coffeescript major mode)
  :homepage   "https://github.com/defunkt/coffee-mode"
  :wikipage   "http://www.emacswiki.org/CoffeeMode")

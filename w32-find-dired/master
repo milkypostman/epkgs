@@ -5,7 +5,7 @@
  :authors    (("Mathias Dahl" . "brakjoller@gmail.com"))
  :maintainer ("Mathias Dahl" . "brakjoller@gmail.com")
  :provided   (w32-find-dired)
- :required   ((("emacs-core" dired)))
+ :required   ((("emacs" dired)))
  :commentary "\
 This is a light variant of `find-dired' for those who run Emacs on
 w32.

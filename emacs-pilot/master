@@ -7,7 +7,7 @@
 	       ("calendar" calendar)
 	       ("cl" cl)
 	       ("diary-lib" diary-lib)
-	       ("emacs-core" easymenu)))
+	       ("emacs" easymenu)))
  :homepage   "http://bruda.ca/emacs-pilot/"
  :wikipage   "http://www.emacswiki.org/EmacsPilot"
  :commentary "\

@@ -6,7 +6,7 @@
  :authors    (("Andreas Roehler" . "andreas.roehler@easy-emacs.de"))
  :maintainer ("Andreas Roehler" . "andreas.roehler@easy-emacs.de")
  :provided   (ar-comment-lor ar-comment-test-lor beg-end footnote-init footnote-tests misc-utils sh-beg-end string-strip thing-at-point-markup thing-at-point-utils thing-in-thing thingatpt-before-after thingatpt-count-ratio thingatpt-highlight thingatpt-python-expressions thingatpt-utils-base thingatpt-utils-test)
- :required   ((("emacs-core" overlay)
+ :required   ((("emacs" overlay)
 	       ("footnote" footnote)
 	       ("sh-script" sh-script)
 	       ("time-stamp" time-stamp)))

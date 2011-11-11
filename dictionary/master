@@ -6,6 +6,6 @@
  :maintainer ("Torsten Hilbrich" . "dictionary@myrkr.in-berlin.de")
  :provided   (connection dictionary link)
  :required   ((("cl" cl)
-	       ("emacs-core" custom easymenu tooltip)))
+	       ("emacs" custom easymenu tooltip)))
  :keywords   (dictionary interface)
  :homepage   "http://www.myrkr.in-berlin.de/dictionary/index.html")

@@ -7,7 +7,7 @@
  :provided   (mon-doc-help-tidy tidy)
  :required   ((("cl" cl)
 	       ("compile" compile)
-	       ("emacs-core" easymenu)))
+	       ("emacs" easymenu)))
  :keywords   (languages)
  :commentary "\
 Provides a simple interface to the HTML Tidy program -- a free

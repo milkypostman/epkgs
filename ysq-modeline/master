@@ -5,7 +5,7 @@
  :authors    (("Noah Friedman" . "friedman@splode.com"))
  :maintainer (nil . "friedman@splode.com")
  :provided   (ysq-modeline)
- :required   ((("emacs-core" timer)
+ :required   ((("emacs" timer)
 	       ("itimer" itimer)
 	       ("ysq" ysq)))
  :keywords   (extensions)

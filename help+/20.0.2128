@@ -6,7 +6,7 @@
  :maintainer ("Drew Adams")
  :provided   (help+)
  :required   (nil
-	      (("emacs-core" help-macro)
+	      (("emacs" help-macro)
 	       ("frame-fns" frame-fns)
 	       ("help-macro+" help-macro+)
 	       ("info" info)

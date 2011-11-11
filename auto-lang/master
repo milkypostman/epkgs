@@ -5,7 +5,7 @@
  :authors    (("Colin Marquardt" . "colin@marquardt-home.de"))
  :maintainer ("Colin Marquardt" . "colin@marquardt-home.de")
  :provided   (auto-lang)
- :required   ((("emacs-core" overlay)
+ :required   ((("emacs" overlay)
 	       ("flyspell" flyspell)
 	       ("ispell" ispell)
 	       ("trace" trace)))

@@ -10,7 +10,7 @@
 	       ("cl" cl)
 	       ("compile" compile)
 	       ("eldoc" eldoc)
-	       ("emacs-core" autoload env)
+	       ("emacs" autoload env)
 	       ("etags" etags)
 	       ("info" info)
 	       ("pcomplete" pcmpl-unix pcomplete)

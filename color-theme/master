@@ -7,7 +7,7 @@
  :maintainer ("Xavier Maillard" . "zedek@gnu.org")
  :provided   (color-theme muse-setup)
  :required   ((("cl" cl)
-	       ("emacs-core" cus-face easymenu wid-edit)
+	       ("emacs" cus-face easymenu wid-edit)
 	       ("muse" muse-colors muse-docbook muse-html muse-latex muse-mode muse-project muse-texinfo muse-wiki)
 	       ("reporter" reporter)
 	       ("sendmail" sendmail)))

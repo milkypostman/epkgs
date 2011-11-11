@@ -8,7 +8,7 @@
  :maintainer ("Uri Maoz" . "urim@cadence.com")
  :provided   (specman-mode)
  :required   ((("cl" cl)
-	       ("emacs-core" easymenu font-lock)
+	       ("emacs" easymenu font-lock)
 	       ("filladapt" filladapt)
 	       ("imenu" imenu)
 	       ("reporter" reporter)))

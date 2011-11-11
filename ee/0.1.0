@@ -10,7 +10,7 @@
 	       ("bbdb" bbdb-autoloads)
 	       ("cl" cl)
 	       ("edb" database)
-	       ("emacs-core" cus-edit overlay)
+	       ("emacs" cus-edit overlay)
 	       ("etags" etags)
 	       ("finder" finder)
 	       ("gnus" gnus)

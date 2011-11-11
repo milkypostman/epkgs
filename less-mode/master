@@ -7,5 +7,5 @@
  :maintainer ("myfreeweb" . "me@myfreeweb.ru")
  :provided   (less-mode)
  :required   ((("compile" compile)
-	       ("emacs-core" derived)))
+	       ("emacs" derived)))
  :homepage   "https://github.com/myfreeweb/less-mode")

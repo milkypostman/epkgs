@@ -10,7 +10,7 @@
 	       ("cgi" cgi)
 	       ("cl" cl)
 	       ("compile" compile)
-	       ("emacs-core" cus-edit derived font-lock wid-edit)
+	       ("emacs" cus-edit derived font-lock wid-edit)
 	       ("footnote" footnote)
 	       ("gnus" message)
 	       ("htmlize" htmlize)

@@ -7,7 +7,7 @@
  :provided   (cdlatex)
  :required   ((("auctex" texmathp)
 	       ("cl" cl)
-	       ("emacs-core" easymenu)
+	       ("emacs" easymenu)
 	       ("finder" finder)))
  :keywords   (tex)
  :homepage   "http://staff.science.uva.nl/~dominik/Tools/cdlatex"

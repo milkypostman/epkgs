@@ -8,7 +8,7 @@
  :provided   (dir-tree findstr gdiff gdiff-setup jjar jmaker jsee overlay-fix swbuff tabbar tree-widget-examples)
  :required   ((("cl" cl)
 	       ("compile" compile)
-	       ("emacs-core" easymenu mwheel timer wid-edit)
+	       ("emacs" easymenu mwheel timer wid-edit)
 	       ("igrep" igrep)
 	       ("jdee" jde)
 	       ("tempo" tempo)

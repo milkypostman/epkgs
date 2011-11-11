@@ -7,7 +7,7 @@
  :provided   (cricket)
  :required   ((("browse-url" browse-url)
 	       ("cl" cl)
-	       ("emacs-core" custom)
+	       ("emacs" custom)
 	       ("url" url)
 	       ("w3" w3)))
  :keywords   (cricket live news sports tools))

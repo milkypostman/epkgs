@@ -6,7 +6,7 @@
  :authors    (("Julien Danjou" . "julien@danjou.info"))
  :maintainer ("Julien Danjou" . "julien@danjou.info")
  :provided   (offlineimap)
- :required   ((("emacs-core" comint)))
+ :required   ((("emacs" comint)))
  :homepage   "http://julien.danjou.info/offlineimap-el.html"
  :commentary "\
 M-x offlineimap

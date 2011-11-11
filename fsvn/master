@@ -9,7 +9,7 @@
  :required   ((("chart" chart)
 	       ("diff" diff)
 	       ("diff-mode" diff-mode)
-	       ("emacs-core" bytecomp dired dired-aux easymenu ls-lisp menu-bar)
+	       ("emacs" bytecomp dired dired-aux easymenu ls-lisp menu-bar)
 	       ("xml" xml)
 	       (nil mw32script))
 	      (("electric" electric)))

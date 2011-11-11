@@ -5,7 +5,7 @@
  :required   ((("calc" calc calc-keypd)
 	       ("cl" cl)
 	       ("clojure-mode" clojure-mode)
-	       ("emacs-core" comint cus-edit custom easymenu font-lock tabify widget)
+	       ("emacs" comint cus-edit custom easymenu font-lock tabify widget)
 	       ("slime" slime)
 	       ("speedbar" speedbar)
 	       ("thingatpt" thingatpt)

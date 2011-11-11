@@ -12,7 +12,7 @@
 	       ("browse-url" browse-url)
 	       ("cl" cl)
 	       ("crm" crm)
-	       ("emacs-core" backquote bytecomp cus-edit custom derived easymenu md5 timer)
+	       ("emacs" backquote bytecomp cus-edit custom derived easymenu md5 timer)
 	       ("emacs-obsolete" pgg)
 	       ("epa" epa)
 	       ("epg" epg epg-config)

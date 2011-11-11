@@ -3,7 +3,7 @@
  :updated    "20050208"
  :license    "GPL-2"
  :provided   (track-scroll)
- :required   ((("emacs-core" mouse)))
+ :required   ((("emacs" mouse)))
  :keywords   (gui mouse user)
  :homepage   "http://www.skamphausen.de/cgi-bin/ska/track-scroll"
  :wikipage   "http://www.emacswiki.org/TrackScroll"

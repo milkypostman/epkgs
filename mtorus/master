@@ -7,7 +7,7 @@
  :maintainer ("Stefan Kamphausen" . "mail@skamphausen.de")
  :provided   (mtorus mtorus-auto-rings mtorus-convert mtorus-display mtorus-element mtorus-state mtorus-topology mtorus-type mtorus-utils)
  :required   ((("cl" cl)
-	       ("emacs-core" timer)
+	       ("emacs" timer)
 	       ("tree-widget" tree-widget)))
  :keywords   (bookmarks extensions navigation tools user)
  :wikipage   "http://www.emacswiki.org/MTorus"

@@ -5,7 +5,7 @@
  :required   ((("cl" cl)
 	       ("compile" compile)
 	       ("dabbrev" dabbrev)
-	       ("emacs-core" comint easymenu font-lock)
+	       ("emacs" comint easymenu font-lock)
 	       ("etags" etags)
 	       ("executable" executable)
 	       ("hideshow" hideshow)

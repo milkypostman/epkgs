@@ -8,7 +8,7 @@
  :provided   (vlog-align vlog-auto vlog-indent vlog-lib vlog-mode vlog-signal vlog-skel)
  :required   ((("align" align)
 	       ("cl" cl)
-	       ("emacs-core" font-lock)
+	       ("emacs" font-lock)
 	       ("hideshow" hideshow)))
  :keywords   (languages verilog)
  :homepage   "http://vlog-mode.sourceforge.net")

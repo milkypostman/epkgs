@@ -5,10 +5,10 @@
  :license    "GPL-3"
  :provided   (volatile-highlights)
  :required   ((("cl" cl)
-	       ("emacs-core" advice easy-mmode)
+	       ("emacs" advice easy-mmode)
 	       ("etags" etags))
 	      (("alien-search" alien-search)
-	       ("emacs-core" menu-bar)))
+	       ("emacs" menu-bar)))
  :keywords   (convenience emulations wp)
  :homepage   "https://github.com/k-talo/volatile-highlights.el"
  :commentary "\

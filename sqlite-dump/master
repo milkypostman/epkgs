@@ -7,7 +7,7 @@
  :provided   (sqlite-dump)
  :required   ((("apel" poe)
 	       ("cl" cl)
-	       ("emacs-core" advice)))
+	       ("emacs" advice)))
  :keywords   (data)
  :homepage   "http://user42.tuxfamily.org/sqlite-dump"
  :wikipage   "http://www.emacswiki.org/SqliteDump"

@@ -4,5 +4,5 @@
  :authors    (("ffrances"))
  :maintainer ("ffrances")
  :provided   (kis-interface)
- :required   ((("emacs-core" cus-edit dired wid-edit widget)
+ :required   ((("emacs" cus-edit dired wid-edit widget)
 	       ("kis-project" kis-project))))

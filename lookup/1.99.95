@@ -9,7 +9,7 @@
  :required   ((("cl" cl)
 	       ("cookie1" cookie1)
 	       ("descr-text" descr-text)
-	       ("emacs-core" ucs-normalize)
+	       ("emacs" ucs-normalize)
 	       ("hmac-md5" hmac-md5)
 	       ("navi2ch" navi2ch navi2ch-bookmark)
 	       ("semi" mime-view)

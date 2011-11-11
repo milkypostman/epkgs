@@ -4,7 +4,7 @@
  :license    "GPL-2"
  :provided   (concordance)
  :required   ((("cl" cl)
-	       ("emacs-core" timer)
+	       ("emacs" timer)
 	       ("info" info)
 	       ("tellib" tellib)
 	       ("thingatpt" thingatpt)))

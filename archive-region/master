@@ -6,7 +6,7 @@
  :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
  :provided   (archive-region)
  :required   ((("cl" cl)
-	       ("emacs-core" newcomment)))
+	       ("emacs" newcomment)))
  :keywords   (languages)
  :commentary "\
 Extend C-w to have archive feature.

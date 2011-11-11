@@ -11,7 +11,7 @@
 	       ("cl" cl)
 	       ("compile" compile)
 	       ("efs" efs passwd)
-	       ("emacs-core" advice backquote custom dired easymenu font-lock rect timer wid-edit)
+	       ("emacs" advice backquote custom dired easymenu font-lock rect timer wid-edit)
 	       ("emacs-obsolete" cl-compat)
 	       ("folding" folding)
 	       ("gnus" gnus message)

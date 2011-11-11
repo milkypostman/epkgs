@@ -5,7 +5,7 @@
  :authors    (("Mikael Brockman" . "phubuh@phubuh.org"))
  :maintainer ("Mikael Brockman" . "phubuh@phubuh.org")
  :provided   (portage)
- :required   ((("emacs-core" generic-x)))
+ :required   ((("emacs" generic-x)))
  :keywords   (gentoo portage)
  :homepage   "http://www.emacswiki.org/PortageMode"
  :wikipage   "http://www.emacswiki.org/PortageMode")

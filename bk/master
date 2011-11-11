@@ -7,7 +7,7 @@
  :provided   (bk)
  :required   ((("cl" cl)
 	       ("diff-mode" diff-mode)
-	       ("emacs-core" advice easymenu timer)
+	       ("emacs" advice easymenu timer)
 	       ("man" man)
 	       ("vc" vc)
 	       ("view" view)

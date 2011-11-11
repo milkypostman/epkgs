@@ -4,7 +4,7 @@
  :maintainer ("mattcampbell")
  :provided   (emacspeak-rmoo mcp rmoo rmoo-autoload rmoo-code rmoo-list rmoo-local-edit rmoo-mail rmoo-mcp rmoo-objects rmoo-text)
  :required   ((("cl" cl)
-	       ("emacs-core" advice comint)
+	       ("emacs" advice comint)
 	       ("emacspeak" emacspeak-fix-interactive)
 	       ("w3" w3)
 	       (nil emacspeak-speak)))

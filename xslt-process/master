@@ -9,7 +9,7 @@
  :required   ((("browse-url" browse-url)
 	       ("cl" cl)
 	       ("elib" string)
-	       ("emacs-core" custom easymenu wid-edit widget)
+	       ("emacs" custom easymenu wid-edit widget)
 	       ("info" info)
 	       ("reporter" reporter)
 	       ("speedbar" speedbar)))

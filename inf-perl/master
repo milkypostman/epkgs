@@ -7,7 +7,7 @@
  :provided   (inf-perl)
  :required   ((("cl" cl)
 	       ("cperl-mode" cperl-mode)
-	       ("emacs-core" comint)
+	       ("emacs" comint)
 	       ("shell" shell)))
  :commentary "\
 This is a customisation of comint-mode (see comint.el)

@@ -18,7 +18,7 @@
 	       ("bbdb" bbdb)
 	       ("browse-url" browse-url)
 	       ("cl" cl)
-	       ("emacs-core" bytecomp ccl easymenu wid-edit)
+	       ("emacs" bytecomp ccl easymenu wid-edit)
 	       ("flim" eword-encode mime mime-parse std11)
 	       ("gnus" gnus-bcklg gnus-sum nnheader nnmail nnoo)
 	       ("lsdb" lsdb)
@@ -30,7 +30,7 @@
 	       ("timezone" timezone)
 	       ("w3" font)
 	       ("xml" xml))
-	      (("emacs-core" image-mode)))
+	      (("emacs" image-mode)))
  :keywords   (hypermedia www)
  :homepage   "http://emacs-w3m.namazu.org"
  :wikipage   "http://www.emacswiki.org/emacs-w3m"

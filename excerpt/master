@@ -5,7 +5,7 @@
  :authors    (("Thomas Link"))
  :maintainer ("Thomas Link")
  :provided   (excerpt)
- :required   ((("emacs-core" overlay)
+ :required   ((("emacs" overlay)
 	       ("file-properties" file-properties)
 	       ("tellib" tellib)))
  :keywords   (editing summaries text\ snippets writing\ reports)

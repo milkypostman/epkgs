@@ -6,7 +6,7 @@
  :maintainer ("Kahlil (Kal) HODGSON" . "dorge@tpg.com.au")
  :provided   (tidy)
  :required   ((("compile" compile)
-	       ("emacs-core" easymenu)))
+	       ("emacs" easymenu)))
  :keywords   (languages)
  :commentary "\
 Provides a simple interface to the HTML Tidy program -- a free

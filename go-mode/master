@@ -5,7 +5,7 @@
  :license    "GPL-2"
  :provided   (go-board go-gnugo go-gtp go-mode go-sgf sgf-mode)
  :required   ((("cl" cl)
-	       ("emacs-core" comint)
+	       ("emacs" comint)
 	       (nil sgf-board sgf-gnugo sgf-gtp sgf-rw sgf-sgf)))
  :homepage   "https://github.com/eschulte/go-mode"
  :wikipage   "http://www.emacswiki.org/GoMode")

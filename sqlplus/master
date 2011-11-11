@@ -4,7 +4,7 @@
  :license    "GPL-2"
  :provided   (sqlplus)
  :required   ((("cl" cl)
-	       ("emacs-core" font-lock tabify)
+	       ("emacs" font-lock tabify)
 	       ("recentf" recentf)
 	       ("skeleton" skeleton)
 	       ("sql" sql)))

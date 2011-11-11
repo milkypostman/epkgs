@@ -21,7 +21,7 @@
 	       ("dabbrev" dabbrev)
 	       ("diary-lib" diary-lib)
 	       ("electric" electric)
-	       ("emacs-core" autoload button comint easymenu font-lock overlay sha1)
+	       ("emacs" autoload button comint easymenu font-lock overlay sha1)
 	       ("epg" epg)
 	       ("erc" erc erc-log)
 	       ("eshell" esh-mode eshell)

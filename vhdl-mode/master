@@ -8,7 +8,7 @@
  :provided   (vhdl-mode)
  :required   ((("assoc" assoc)
 	       ("compile" compile)
-	       ("emacs-core" easymenu font-lock)
+	       ("emacs" easymenu font-lock)
 	       ("hideshow" hideshow)
 	       ("hippie-exp" hippie-exp)
 	       ("ps-print" ps-print)

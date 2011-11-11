@@ -8,7 +8,7 @@
  :provided   (bongo bongo-emacs21 bongo-lastfm bongo-mplayer lastfm-submit)
  :required   ((("cl" cl)
 	       ("electric" electric)
-	       ("emacs-core" cus-edit custom)
+	       ("emacs" cus-edit custom)
 	       ("find-func" find-func)
 	       ("format-spec" format-spec)
 	       ("rx" rx)

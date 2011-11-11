@@ -1,5 +1,5 @@
 (:updated    "20031114"
  :provided   (biff)
- :required   ((("emacs-core" base64 md5 timer)
+ :required   ((("emacs" base64 md5 timer)
 	       ("itimer" itimer)))
  :homepage   "http://www.gentei.org/~yuuji/software/biff-el.html")

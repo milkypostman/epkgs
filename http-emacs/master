@@ -7,7 +7,7 @@
  :maintainer ("David Hansen" . "david.hansen@physik.fu-berlin.de")
  :provided   (http-cookies http-get http-post simple-emacswiki simple-wiki simple-wiki-completion simple-wiki-definitions simple-wiki-edit)
  :required   ((("cl" cl)
-	       ("emacs-core" font-lock)
+	       ("emacs" font-lock)
 	       ("hexl" hexl)
 	       ("thingatpt" thingatpt)
 	       ("time-date" time-date)))

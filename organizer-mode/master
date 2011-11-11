@@ -7,7 +7,7 @@
  :required   ((("bbdb" bbdb)
 	       ("calendar" calendar)
 	       ("diary-lib" diary-lib)
-	       ("emacs-core" dired)
+	       ("emacs" dired)
 	       ("ffap" ffap)
 	       ("gnus" gnus)
 	       ("todo-mode" todo-mode)

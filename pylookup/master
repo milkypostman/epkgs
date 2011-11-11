@@ -2,6 +2,6 @@
  :provided   (pylookup)
  :required   ((("browse-url" browse-url)
 	       ("cl" cl)
-	       ("emacs-core" simple)
+	       ("emacs" simple)
 	       ("ido" ido)))
  :homepage   "http://taesoo.org/Opensource/Pylookup")

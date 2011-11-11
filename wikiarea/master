@@ -5,7 +5,7 @@
  :authors    (("Edward O'Connor" . "ted@oconnor.cx"))
  :maintainer ("Edward O'Connor" . "ted@oconnor.cx")
  :provided   (wikiarea)
- :required   ((("emacs-core" overlay)
+ :required   ((("emacs" overlay)
 	       ("http-emacs" http-get)
 	       ("pp" pp)))
  :keywords   (convenience)

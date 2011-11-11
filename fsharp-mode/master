@@ -4,6 +4,6 @@
  :provided   (fsharp fsharp-font fsharp-indent inf-fsharp)
  :required   ((("cl" cl)
 	       ("compile" compile)
-	       ("emacs-core" comint custom font-lock)
+	       ("emacs" comint custom font-lock)
 	       ("info-look" info-look)))
  :homepage   "http://sourceforge.net/projects/fsharp-mode")

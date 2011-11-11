@@ -5,7 +5,7 @@
  :authors    (("Kevin Ryde" . "user42@zip.com.au"))
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (unicode-disp)
- :required   ((("emacs-core" advice disp-table)))
+ :required   ((("emacs" advice disp-table)))
  :homepage   "http://user42.tuxfamily.org/unicode-disp"
  :commentary "\
 M-x unicode-disp changes the display table to show selected unicode chars

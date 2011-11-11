@@ -7,7 +7,7 @@
  :required   ((("bbdb" bbdb bbdb-com)
 	       ("cl" cl)
 	       ("cygwin-mount" cygwin-mount)
-	       ("emacs-core" advice bytecomp dired easymenu font-lock overlay timer wid-edit)
+	       ("emacs" advice bytecomp dired easymenu font-lock overlay timer wid-edit)
 	       ("emacs-obsolete" pgg)
 	       ("enriched" enriched)
 	       ("executable" executable)

@@ -3,7 +3,7 @@
  :license    "GPL-2"
  :provided   (rpm)
  :required   ((("elib" cookie)
-	       ("emacs-core" custom dired)))
+	       ("emacs" custom dired)))
  :commentary "\
 This mode provides sort of a  dired buffer to interact with the rpm
 utility used on some GNU/Linux systems to manage software packages.

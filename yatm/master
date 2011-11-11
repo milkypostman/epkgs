@@ -3,5 +3,5 @@
  :updated    "2003"
  :license    "GPL-2"
  :provided   (yatm)
- :required   ((("emacs-core" overlay)
+ :required   ((("emacs" overlay)
 	       ("tmm" tmm))))

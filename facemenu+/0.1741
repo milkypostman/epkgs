@@ -5,7 +5,7 @@
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")
  :provided   (facemenu+)
- :required   ((("emacs-core" easymenu facemenu help-mode)
+ :required   ((("emacs" easymenu facemenu help-mode)
 	       ("eyedropper" eyedropper))
 	      (("doremi-frm" doremi-frm)
 	       ("faces+" faces+)

@@ -5,7 +5,7 @@
  :authors    (("Tim Read" . "tim.read@fp.co.nz"))
  :maintainer ("Tim Read" . "tim.read@fp.co.nz")
  :provided   (ansys-mod)
- :required   ((("emacs-core" backquote easymenu)
+ :required   ((("emacs" backquote easymenu)
 	       ("paren" paren)
 	       ("reporter" reporter)))
  :keywords   (languages)

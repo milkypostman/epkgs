@@ -7,7 +7,7 @@
 	      ("Nikolai Weibull" . "now@bitwi.se"))
  :provided   (evil evil-common evil-compatibility evil-core evil-digraphs evil-ex evil-insert evil-integration evil-interactive evil-maps evil-motions evil-operators evil-repeat evil-replace evil-search evil-tests evil-types evil-undo evil-vars evil-visual evil-window)
  :required   ((("elp" elp)
-	       ("emacs-core" rect)
+	       ("emacs" rect)
 	       ("ert" ert)
 	       ("ffap" ffap)
 	       ("goto-chg" goto-chg)

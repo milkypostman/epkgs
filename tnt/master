@@ -4,5 +4,5 @@
  :license    "as-is"
  :provided   (tnt tnt-proxy tnt-tabs toc tocstr)
  :required   ((("cl" cl)
-	       ("emacs-core" custom)))
+	       ("emacs" custom)))
  :homepage   "http://tnt.sourceforge.net")

@@ -6,7 +6,7 @@
  :maintainer ("Johan Claesson" . "johan.claesson@ericsson.com")
  :provided   (jcl-command-subset)
  :required   ((("cl" cl)
-	       ("emacs-core" advice)
+	       ("emacs" advice)
 	       ("ido" ido)))
  :keywords   (menu)
  :commentary "\

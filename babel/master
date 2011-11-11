@@ -6,7 +6,7 @@
  :maintainer ("Eric Marsden" . "emarsden@laas.fr")
  :provided   (babel)
  :required   ((("cl" cl)
-	       ("emacs-core" easymenu)
+	       ("emacs" easymenu)
 	       ("gnus" mm-url)
 	       ("json" json)
 	       ("url" url-handlers)))

@@ -6,6 +6,6 @@
  :maintainer ("Fritz Knabe" . "knabe@acm.org")
  :provided   (mh-crypt)
  :required   ((("crypt++" crypt++)
-	       ("emacs-core" advice)
+	       ("emacs" advice)
 	       ("mh-e" mh-e)
 	       (nil mh-pick))))

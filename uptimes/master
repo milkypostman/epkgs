@@ -4,7 +4,7 @@
  :license    "GPL-2"
  :provided   (uptimes)
  :required   ((("cl" cl)
-	       ("emacs-core" timer)
+	       ("emacs" timer)
 	       ("pp" pp)))
  :homepage   "http://www.davep.org/emacs"
  :commentary "\

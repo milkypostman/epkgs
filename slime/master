@@ -7,7 +7,7 @@
 	       ("cl" cl)
 	       ("compile" compile)
 	       ("elp" elp)
-	       ("emacs-core" apropos bytecomp comint easymenu font-lock overlay timer)
+	       ("emacs" apropos bytecomp comint easymenu font-lock overlay timer)
 	       ("etags" etags)
 	       ("gud" gud)
 	       ("outline" outline)

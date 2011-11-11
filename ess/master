@@ -8,7 +8,7 @@
 	       ("browse-url" browse-url)
 	       ("cc-mode" cc-vars)
 	       ("compile" compile)
-	       ("emacs-core" comint custom easymenu font-lock lisp-mode tooltip)
+	       ("emacs" comint custom easymenu font-lock lisp-mode tooltip)
 	       ("executable" executable)
 	       ("hideshow" hideshow)
 	       ("imenu" imenu)

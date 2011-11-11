@@ -6,7 +6,7 @@
  :maintainer ("Kevin A. Burton" . "burton@openprivacy.org")
  :provided   (mc)
  :required   ((("browse-url" browse-url)
-	       ("emacs-core" dired easymenu font-lock)))
+	       ("emacs" dired easymenu font-lock)))
  :keywords   (commander midnight)
  :homepage   "http://www.emacswiki.org/MidnightCommanderMode"
  :wikipage   "http://www.emacswiki.org/MidnightCommanderMode"

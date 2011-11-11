@@ -3,7 +3,7 @@
  :updated    "20070903"
  :provided   (yaham yaham-autoloads yaham-hugs yaham-proc yaham-skel yaham-tab)
  :required   ((("compile" compile)
-	       ("emacs-core" comint easymenu newcomment)
+	       ("emacs" comint easymenu newcomment)
 	       ("imenu" imenu)
 	       ("regexp-opt" regexp-opt)
 	       ("thingatpt" thingatpt)))

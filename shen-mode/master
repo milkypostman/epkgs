@@ -6,7 +6,7 @@
  :authors    (("Eric Schulte" . "schulte.eric@gmail.com"))
  :maintainer ("Eric Schulte" . "schulte.eric@gmail.com")
  :provided   (inf-shen shen-mode)
- :required   ((("emacs-core" comint lisp-mode)
+ :required   ((("emacs" comint lisp-mode)
 	       ("imenu" imenu)))
  :keywords   (languages shen)
  :homepage   "https://github.com/eschulte/shen-mode"

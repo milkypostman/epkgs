@@ -7,7 +7,7 @@
  :maintainer ("Peter Sanford" . "peter@petersdanceparty.com")
  :provided   (hmac-sha1 oauth)
  :required   ((("cl" cl)
-	       ("emacs-core" sha1)
+	       ("emacs" sha1)
 	       ("url" url url-util))
 	      (("sasl" sasl)))
  :keywords   (comm)

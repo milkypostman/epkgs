@@ -5,7 +5,7 @@
  :maintainer ("Olivier Ramare" . "ramare@agat.univ-lille1.fr")
  :provided   (mupad mupad-bus mupad-fontification mupad-help mupad-run sli-tools)
  :required   ((("cc-mode" cc-mode)
-	       ("emacs-core" advice backquote disp-table easymenu font-lock)
+	       ("emacs" advice backquote disp-table easymenu font-lock)
 	       ("emacs-obsolete" lazy-lock)
 	       ("gud" gud)
 	       ("imenu" imenu)

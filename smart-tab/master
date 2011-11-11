@@ -8,7 +8,7 @@
 	      ("Daniel Hackney" . "dan@haxney.org"))
  :maintainer ("John SJ Anderson" . "genehack@genehack.org")
  :provided   (smart-tab)
- :required   ((("emacs-core" easy-mmode)))
+ :required   ((("emacs" easy-mmode)))
  :keywords   (extensions)
  :homepage   "https://github.com/genehack/smart-tab"
  :commentary "\

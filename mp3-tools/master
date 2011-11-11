@@ -5,7 +5,7 @@
  :authors    (("Steve Kemp" . "stevek@epc.co.uk"))
  :maintainer ("Steve Kemp" . "stevek@epc.co.uk")
  :provided   (mp3-tools)
- :required   ((("emacs-core" easymenu wid-edit widget)))
+ :required   ((("emacs" easymenu wid-edit widget)))
  :keywords   (convenience data tools)
  :commentary "\
 This started out life a small collection of tools related to MP3

@@ -13,7 +13,7 @@
 	       ("delsel" delsel)
 	       ("ebackup" ebackup)
 	       ("efs" efs-auto)
-	       ("emacs-core" advice bytecomp cus-edit dired env font-lock help-macro mule overlay rect)
+	       ("emacs" advice bytecomp cus-edit dired env font-lock help-macro mule overlay rect)
 	       ("emacs-obsolete" iso-insert pc-select)
 	       ("emhacks" tabbar)
 	       ("ffap" ffap)

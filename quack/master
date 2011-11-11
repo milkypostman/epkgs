@@ -5,7 +5,7 @@
  :required   ((("browse-url" browse-url)
 	       ("cmuscheme" cmuscheme)
 	       ("compile" compile)
-	       ("emacs-core" advice custom easymenu font-lock)
+	       ("emacs" advice custom easymenu font-lock)
 	       ("scheme" scheme)
 	       ("thingatpt" thingatpt)))
  :homepage   "http://www.neilvandyke.org/quack"

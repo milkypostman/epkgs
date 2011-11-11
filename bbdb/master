@@ -10,7 +10,7 @@
 	       ("diary-lib" diary-lib)
 	       ("efs" efs)
 	       ("electric" electric)
-	       ("emacs-core" advice custom faces overlay)
+	       ("emacs" advice custom faces overlay)
 	       ("flim" mel)
 	       ("gnus" gnus gnus-art gnus-sum gnus-win mail-parse message)
 	       ("gnuserv" gnuserv gnuserv-compat)

@@ -6,7 +6,7 @@
  :provided   (eide eide-compare eide-config eide-edit eide-git eide-help eide-keys eide-menu eide-popup eide-project eide-search eide-svn eide-windows)
  :required   ((("desktop" desktop)
 	       ("ediff" ediff)
-	       ("emacs-core" dired font-lock mwheel)
+	       ("emacs" dired font-lock mwheel)
 	       ("etags" etags)
 	       ("hideshow" hideshow)
 	       ("imenu" imenu)

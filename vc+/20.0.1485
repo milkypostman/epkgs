@@ -8,7 +8,7 @@
  :required   ((("cl" cl)
 	       ("dired+" dired+)
 	       ("ediff" ediff)
-	       ("emacs-core" dired)
+	       ("emacs" dired)
 	       ("vc" vc)
 	       ("vc-" vc-))
 	      (("fit-frame" fit-frame)

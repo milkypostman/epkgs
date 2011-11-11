@@ -17,7 +17,7 @@
 	       ("dig" dig)
 	       ("edmacro" edmacro)
 	       ("eieio" eieio eieio-base)
-	       ("emacs-core" base64 bytecomp dired easy-mmode easymenu font-lock help-fns image mouse sha1 timer wid-edit widget)
+	       ("emacs" base64 bytecomp dired easy-mmode easymenu font-lock help-fns image mouse sha1 timer wid-edit widget)
 	       ("emacs-obsolete" pgg)
 	       ("epg" epg epg-config)
 	       ("ert" ert)

@@ -6,7 +6,7 @@
  :maintainer (nil . "bug-cc-mode@gnu.org")
  :provided   (cc-align cc-awk cc-bytecomp cc-cmds cc-compat cc-defs cc-engine cc-fix cc-fonts cc-langs cc-lobotomy cc-menus cc-mode cc-styles cc-subword cc-vars)
  :required   ((("cc-guess" cc-guess)
-	       ("emacs-core" custom font-lock widget)
+	       ("emacs" custom font-lock widget)
 	       ("reporter" reporter)))
  :keywords   (c languages oop)
  :homepage   "http://cc-mode.sourceforge.net"

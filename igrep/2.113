@@ -6,7 +6,7 @@
  :maintainer ("Kevin Rodgers" . "ihs_4664@yahoo.com")
  :provided   (igrep)
  :required   ((("compile" compile)
-	       ("emacs-core" custom dired easymenu)
+	       ("emacs" custom dired easymenu)
 	       ("grep" grep)))
  :keywords   (processes search tools)
  :commentary "\
