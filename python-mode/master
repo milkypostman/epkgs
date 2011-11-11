@@ -1,9 +1,7 @@
-(:summary    "Major mode for editing Python programs"
+(:summary    "Towards an Python-IDE in Emacs"
  :repository (bzr . "http://bazaar.launchpad.net/~python-mode-devs/python-mode/python-mode")
- :created    "199202"
- :updated    "1994"
  :license    "GPL-3"
- :maintainer (nil . "python-mode@python.org")
+ :maintainer ("Andreas Roehler" . "andreas.roehler@online.de")
  :provided   (doctest-mode pars-part-output py-bug-numbered-tests pycomplete python-mode python-mode-shell-install python-mode-test)
  :required   ((("ansi-color" ansi-color)
 	       ("cc-mode" cc-cmds)
@@ -11,75 +9,11 @@
 	       ("compile" compile)
 	       ("emacs-core" comint custom help-fns)
 	       ("highlight-indentation" highlight-indentation)
-	       ("hippie-exp" hippie-exp)
 	       ("imenu" imenu)
 	       ("mmm-mode" mmm-auto)
 	       ("pymacs" pymacs)
-	       ("reporter" reporter)
 	       ("shell" shell)))
- :keywords   (languages oop python)
+ :keywords   (languages oop processes python)
  :homepage   "https://launchpad.net/python-mode"
  :commentary "\
-This is a major mode for editing Python programs.  It was developed by Tim
-Peters after an original idea by Michael A. Guravage.  Tim subsequently
-left the net and in 1995, Barry Warsaw inherited the mode.  Tim came back
-but disavowed all responsibility for the mode.  In fact, we suspect he
-doesn't even use Emacs any more <wink>.  In 2003, python-mode.el was moved
-to its own SourceForge project apart from the Python project, and in 2008
-it was moved to Launchpad for all project administration.  python-mode.el
-is maintained by the volunteers at the python-mode@python.org mailing
-list.
-
-python-mode.el is different than, and pre-dates by many years, the
-python.el that comes with FSF Emacs.  We'd like to merge the two modes but
-have few cycles to do so.  Volunteers are welcome.
-
-pdbtrack support contributed by Ken Manheimer, April 2001.  Skip Montanaro
-has also contributed significantly to python-mode's development.
-
-Author of ipython.el's stuff integrated here is Alexander Schmolck.
-
-Please use Launchpad to submit bugs or patches:
-
-    https://launchpad.net/python-mode
-
-INSTALLATION:
-
-To install, just drop this file into a directory on your load-path and
-byte-compile it.  To set up Emacs to automatically edit files ending in
-\".py\" using python-mode, add to your emacs init file
-
-GNU Emacs: ~/.emacs, ~/.emacs.el, or ~/.emacs.d/init.el
-
-XEmacs: ~/.xemacs/init.el
-
-the following code:
-
-   (setq auto-mode-alist (cons '(\"\\\\.py$\" . python-mode) auto-mode-alist))
-   (setq interpreter-mode-alist (cons '(\"python\" . python-mode)
-                                      interpreter-mode-alist))
-   (autoload 'python-mode \"python-mode\" \"Python editing mode.\" t)
-
-In XEmacs syntax highlighting should be enabled automatically.  In GNU
-Emacs you may have to add these lines to your init file:
-
-   (global-font-lock-mode t)
-   (setq font-lock-maximum-decoration t)
-
-BUG REPORTING:
-
-As mentioned above, please use the Launchpad python-mode project for
-submitting bug reports or patches.  The old recommendation, to use C-c C-b
-will still work, but those reports have a higher chance of getting buried
-in our inboxes.  Please include a complete, but concise code sample and a
-recipe for reproducing the bug.  Send suggestions and other comments to
-python-mode@python.org.
-
-When in a Python mode buffer, do a C-h m for more help.  It's doubtful that
-a texinfo manual would be very useful, but if you want to contribute one,
-we'll certainly accept it!
-
-ToDo
-Question calls of `py-guess-indent-offset', as
-required indent may change throughout the buffer.
-Rather may it be called by argument")
+Code")

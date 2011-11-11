@@ -12,8 +12,8 @@
 	       ("ffap" ffap)
 	       ("goto-chg" goto-chg)
 	       ("imenu" imenu)
-	       ("undo-tree" undo-tree)
-	       ("windmove" windmove)))
+	       ("windmove" windmove))
+	      (("undo-tree" undo-tree)))
  :keywords   (emulation vim)
  :homepage   "http://gitorious.org/evil"
  :wikipage   "http://www.emacswiki.org/Evil"
