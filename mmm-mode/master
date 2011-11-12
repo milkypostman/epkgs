@@ -1,7 +1,7 @@
 (:summary    "Allow Multiple Major Modes in a buffer"
- :repository (cvs . ":pserver:anonymous@mmm-mode.cvs.sourceforge.net:/cvsroot/mmm-mode")
+ :repository (git . "git://github.com/purcell/mmm-mode.git")
  :created    "1999"
- :updated    "2004"
+ :updated    "20040616"
  :license    "GPL-2"
  :authors    (("Michael Abraham Shulman" . "viritrilbia@users.sourceforge.net"))
  :maintainer ("Michael Abraham Shulman" . "viritrilbia@users.sourceforge.net")
@@ -10,7 +10,7 @@
 	       ("emacs" custom font-lock overlay)
 	       ("regexp-opt" regexp-opt)))
  :keywords   (convenience faces languages tools)
- :homepage   "http://mmm-mode.sourceforge.net"
+ :homepage   "https://github.com/purcell/mmm-mode"
  :wikipage   "http://www.emacswiki.org/MmmMode"
  :commentary "\
 MMM Mode is a minor mode that allows multiple major modes to
