@@ -1,4 +1,5 @@
-(:created    "19991127"
+(:repository (git . "git://github.com/uwabami/rdtool.git")
+ :created    "19991127"
  :updated    "1999"
  :license    "GPL-2"
  :authors    (("Koji Arai, Toshiro Kuwabara"))
