@@ -32,5 +32,6 @@ other than that bundled with recent Emacs.
 
 Credits
 
-This mode was, in large part, built using Anton Johansson's
-scss-mode as a template -- thanks Anton! https://github.com/antonj")
+The original code for this mode was, in large part, written using
+Anton Johansson's scss-mode as a template -- thanks Anton!
+https://github.com/antonj")

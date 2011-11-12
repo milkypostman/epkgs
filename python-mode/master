@@ -1,5 +1,7 @@
 (:summary    "Towards an Python-IDE in Emacs"
  :repository (bzr . "http://bazaar.launchpad.net/~python-mode-devs/python-mode/python-mode")
+ :created    "199202"
+ :updated    "1994"
  :license    "GPL-3"
  :maintainer ("Andreas Roehler" . "andreas.roehler@online.de")
  :provided   (doctest-mode pars-part-output py-bug-numbered-tests pycomplete python-mode python-mode-shell-install python-mode-test)
