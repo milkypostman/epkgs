@@ -10,9 +10,9 @@
 	       ("emacs" advice comint font-lock)
 	       ("etags" etags)
 	       ("flymake" flymake)
-	       ("hyperbole" tags)
 	       ("man" man)
-	       ("tempo" tempo)))
+	       ("tempo" tempo)
+	       (nil tags)))
  :keywords   (erlang languages processes)
  :homepage   "http://www.erlang.org/doc/apps/tools/erlang_mode_chapter.html"
  :commentary "\

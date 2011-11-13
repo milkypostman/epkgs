@@ -6,11 +6,10 @@
 	      ("Frank Mittelbach"))
  :maintainer ("Matt Swift" . "swift@alum.mit.edu")
  :provided   (swiftex)
- :required   ((("auctex" font-latex)
-	       ("hilit-swiftex" hilit-swiftex)
+ :required   ((("hilit-swiftex" hilit-swiftex)
 	       ("outline" outline)
 	       ("tex-mode" tex-mode)
-	       (nil tex-site)))
+	       (nil font-latex tex-site)))
  :keywords   (doc dtx latex ltxdoc tex)
  :homepage   "http://www.ctan.org/tex-archive/support/emacs-modes/swiftex"
  :commentary "\

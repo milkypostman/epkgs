@@ -5,10 +5,10 @@
  :authors    (("Carsten Dominik" . "dominik@science.uva.nl"))
  :maintainer ("Carsten Dominik" . "dominik@science.uva.nl")
  :provided   (cdlatex)
- :required   ((("auctex" texmathp)
-	       ("cl" cl)
+ :required   ((("cl" cl)
 	       ("emacs" easymenu)
-	       ("finder" finder)))
+	       ("finder" finder)
+	       (nil texmathp)))
  :keywords   (tex)
  :homepage   "http://staff.science.uva.nl/~dominik/Tools/cdlatex"
  :wikipage   "http://www.emacswiki.org/CDLaTeX"
