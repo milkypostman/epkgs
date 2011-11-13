@@ -1,0 +1,10 @@
+(:summary    "Easy file diffs"
+ :repository (git . "git://github.com/psanford/git-time-machine-el.git")
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Peter Sanford" . "peter@petersdanceparty.com"))
+ :maintainer ("Peter Sanford" . "peter@petersdanceparty.com")
+ :provided   (git-time-machine)
+ :keywords   (tools)
+ :homepage   "https://github.com/psanford/git-time-machine-el")
