@@ -1,7 +1,7 @@
 (:summary    "Least Recently Used stacking for kill-ring"
  :repository (git . "git://github.com/lewang/le_emacs_LRU_yank.git")
  :created    "20060708"
- :updated    "20110920"
+ :updated    "20111106"
  :license    "GPL-2"
  :authors    (("Le Wang"))
  :provided   (LRU-yank)

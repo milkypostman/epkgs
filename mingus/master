@@ -5,15 +5,13 @@
  :license    "GPL-2"
  :provided   (libmpdee mingus mingus-stays-home)
  :required   ((("cl" cl)
-	       ("custom" custom)
-	       ("dired" dired)
 	       ("edebug" edebug)
-	       ("gnus" time-date)
+	       ("emacs" custom dired wid-edit)
 	       ("reporter" reporter)
 	       ("sendmail" sendmail)
 	       ("thingatpt" thingatpt)
+	       ("time-date" time-date)
 	       ("url" url)
-	       ("widget" wid-edit)
 	       (nil taggit)))
  :keywords   (elisp mpd multimedia music)
  :homepage   "https://github.com/pft/mingus"

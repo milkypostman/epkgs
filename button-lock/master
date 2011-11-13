@@ -6,7 +6,7 @@
  :maintainer ("D Roland Walker" . "walker@pobox.com")
  :provided   (button-lock wiki-nav)
  :required   ((("cl" cl)
-	       ("emacs-core" font-lock)))
+	       ("emacs" font-lock)))
  :keywords   (button hyperlink mouse)
  :homepage   "https://github.com/rolandwalker/button-lock"
  :wikipage   "http://www.emacswiki.org/ButtonLockMode"

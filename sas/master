@@ -5,6 +5,6 @@
 	      (nil . "cook@biostat.wisc.edu"))
  :maintainer ("Tom Cook")
  :provided   (sas sas-fontlock)
- :required   ((("emacs-core" font-lock)
+ :required   ((("emacs" font-lock)
 	       ("shell" shell)))
  :homepage   "ftp://ftp.biostat.wisc.edu/pub/cook/sas-mode")

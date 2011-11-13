@@ -5,8 +5,7 @@
  :authors    (("Andrew J Cosgriff" . "ajc@bing.wattle.id.au"))
  :maintainer ("Andrew J Cosgriff" . "ajc@bing.wattle.id.au")
  :provided   (tm-vcard)
- :required   ((("gnus" tm-view)
-	       ("vcard" vcard)))
+ :required   ((("gnus" tm-view vcard)))
  :keywords   (gnus mime rmail tm vcard)
  :homepage   "http://polydistortion.net/sw/emacs-lisp"
  :commentary "\

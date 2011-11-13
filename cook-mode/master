@@ -3,7 +3,7 @@
  :updated    "2005"
  :license    "GPL-2"
  :provided   (cook-mode)
- :required   ((("custom" custom)))
+ :required   ((("emacs" custom)))
  :homepage   "http://www.emacswiki.org/CookMode"
  :wikipage   "http://www.emacswiki.org/CookMode"
  :commentary "\

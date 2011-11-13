@@ -6,9 +6,8 @@
  :maintainer ("Jose E. Marchesi")
  :provided   (abook)
  :required   ((("cl" cl)
-	       ("gnus" mm-decode)
-	       ("url" url)
-	       ("vcard" vcard)))
+	       ("gnus" mm-decode vcard)
+	       ("url" url)))
  :keywords   (applications contacts)
  :homepage   "http://www.nongnu.org/addressbook"
  :wikipage   "http://www.emacswiki.org/AddressBook"

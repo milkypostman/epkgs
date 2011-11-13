@@ -3,5 +3,5 @@
  :authors    (("Phillip Lord" . "phillip.lord@newcastle.ac.uk"))
  :maintainer ("Phillip Lord" . "phillip.lord@newcastle.ac.uk")
  :provided   (pgg-crypt)
- :required   ((("gnus" pgg)))
+ :required   ((("emacs-obsolete" pgg)))
  :homepage   "http://homepages.cs.ncl.ac.uk/phillip.lord/emacs.html")

@@ -4,8 +4,8 @@
  :authors    (("Konrad Scorciapino" . "konr@konr.mobi"))
  :maintainer ("Konrad Scorciapino" . "konr@konr.mobi")
  :provided   (gimme gimme-augmented gimme-autocomplete gimme-bookmark gimme-collection gimme-custom gimme-emacs gimme-eq gimme-help gimme-inspect gimme-playlist gimme-status-mode gimme-tagwriter gimme-utils)
- :required   ((("hexrgb" hexrgb)
-	       ("htmlr" htmlr)
-	       ("timer" timer)))
+ :required   ((("emacs" timer)
+	       ("hexrgb" hexrgb)
+	       ("htmlr" htmlr)))
  :homepage   "https://github.com/konr/GIMME"
  :wikipage   "http://www.emacswiki.org/GIMME")

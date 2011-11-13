@@ -4,5 +4,5 @@
  :authors    (("Noah Friedman" . "friedman@splode.com"))
  :maintainer ("Noah Friedman" . "friedman@splode.com")
  :provided   (doh)
- :required   ((("advice" advice)))
+ :required   ((("emacs" advice)))
  :homepage   "http://www.splode.com/~friedman/software/emacs-lisp")

@@ -1,10 +1,10 @@
 (:summary    "Copyedit entries for the Stanford Encyclopedia of Philosophy"
  :repository (git . "git://github.com/jessealama/ce-el.git")
  :created    "2008"
- :provided   (ce ce-macros ce-unadorned ce-validate)
+ :provided   (ce ce-macros ce-quotes ce-unadorned ce-validate)
  :required   ((("cl" cl)
-	       ("custom" custom)
-	       ("emacs-core" pp)))
+	       ("emacs" custom)
+	       ("pp" pp)))
  :homepage   "https://github.com/jessealama/ce-el"
  :commentary "\
 Copyediting has many facets.  The Stanford Encyclopedia of

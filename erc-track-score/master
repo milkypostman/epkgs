@@ -7,8 +7,8 @@
  :maintainer ("Julien Danjou" . "julien@danjou.info")
  :provided   (erc-track-score)
  :required   ((("cl" cl)
-	       ("erc" erc erc-match erc-track)
-	       ("timer" timer)))
+	       ("emacs" timer)
+	       ("erc" erc erc-match erc-track)))
  :homepage   "http://julien.danjou.info/erc-track-score.html"
  :commentary "\
 Change `erc-track-showcount' value to transform it to a score.

@@ -3,10 +3,8 @@
  :license    "GPL-2"
  :provided   (p4)
  :required   ((("browse-url" browse-url)
-	       ("dired" dired)
-	       ("easymenu" easymenu)
 	       ("ediff" ediff)
-	       ("timer" timer)))
+	       ("emacs" dired easymenu timer)))
  :homepage   "http://p4el.sourceforge.net"
  :commentary "\
 Applied the GNU G.P.L. to this file - rv 3/27/1997

@@ -5,7 +5,7 @@
  :provided   (pabbrev)
  :required   ((("cedet" working)
 	       ("cl" cl)
-	       ("emacs-core" overlay)
+	       ("emacs" overlay)
 	       ("thingatpt" thingatpt)))
  :homepage   "http://homepages.cs.ncl.ac.uk/phillip.lord/emacs.html"
  :commentary "\

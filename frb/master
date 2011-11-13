@@ -3,7 +3,7 @@
  :license    "GPL-2"
  :provided   (frb)
  :required   ((("cl" cl)
-	       ("emacs-core" md5)
+	       ("emacs" md5)
 	       ("highline" highline)
 	       ("json" json)
 	       ("mcomplete" mcomplete)

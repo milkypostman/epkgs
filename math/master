@@ -3,6 +3,6 @@
  :authors    (("Version info is in math-version-string defined after history box"))
  :maintainer ("Version info is in math-version-string defined after history box")
  :provided   (math)
- :required   ((("comint" comint)
+ :required   ((("emacs" comint)
 	       ("shell" shell)))
  :homepage   "http://library.wolfram.com/infocenter/MathSource/4567")

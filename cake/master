@@ -6,7 +6,7 @@
  :required   ((("anything" anything)
 	       ("auto-complete" auto-complete)
 	       ("cl" cl)
-	       ("easy-mmode" easy-mmode)
+	       ("emacs" easy-mmode)
 	       ("historyf" historyf))
 	      (("anything" anything-show-completion)
 	       ("imenu" imenu)

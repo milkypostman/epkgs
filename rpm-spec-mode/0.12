@@ -6,7 +6,7 @@
  :maintainer ("Stig Bjørlykke," . "stigb@tihlde.org")
  :provided   (rpm-spec-mode)
  :required   ((("cc-mode" cc-mode)
-	       ("easymenu" easymenu)
+	       ("emacs" easymenu)
 	       ("sh-script" sh-script)
 	       ("shindent" shindent)))
  :keywords   (languages unix)

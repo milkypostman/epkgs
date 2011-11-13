@@ -6,10 +6,9 @@
  :provided   (hachette)
  :required   ((("cl" cl)
 	       ("dict-web" dict-web)
-	       ("emacs-core" derived)
+	       ("emacs" derived widget)
 	       ("thingatpt" thingatpt)
-	       ("url" url)
-	       ("widget" widget)))
+	       ("url" url)))
  :keywords   (dictionaire french\ dictionary hachette)
  :commentary "\
 Initialy based on dict-web.el by Eric Marsden (but now very different)

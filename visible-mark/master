@@ -1,7 +1,7 @@
 (:summary    "Make marks visible"
  :provided   (visible-mark)
  :required   ((("cl" cl)
-	       ("easy-mmode" easy-mmode)))
+	       ("emacs" easy-mmode)))
  :homepage   "http://www.emacswiki.org/VisibleMark"
  :wikipage   "http://www.emacswiki.org/VisibleMark"
  :commentary "\

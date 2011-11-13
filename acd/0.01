@@ -6,7 +6,7 @@
  :maintainer (nil . "wenbinye@gmail.com")
  :provided   (acd)
  :required   ((("cl" cl)
-	       ("complete" complete)
 	       ("conf-mode" conf-mode)
+	       ("emacs-obsolete" complete)
 	       ("tempo" tempo)))
  :keywords   (convenience languages))

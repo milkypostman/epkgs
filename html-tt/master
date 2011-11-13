@@ -6,7 +6,7 @@
  :authors    (("Yoshiki KURIHARA" . "kurihara@cpan.org"))
  :maintainer ("Yoshiki KURIHARA" . "kurihara@cpan.org")
  :provided   (html-tt)
- :required   ((("emacs-core" font-lock)
+ :required   ((("emacs" font-lock)
 	       ("html-helper-mode" html-helper-mode)
 	       ("tempo" tempo)))
  :keywords   (languages tools)

@@ -1,6 +1,6 @@
 (:summary    "Deletes word from buffer if you stop typing for to long"
  :provided   (write-or-die)
- :required   ((("timer" timer)))
+ :required   ((("emacs" timer)))
  :homepage   "http://www.emacswiki.org/WriteOrDieMode"
  :wikipage   "http://www.emacswiki.org/WriteOrDieMode"
  :commentary "\

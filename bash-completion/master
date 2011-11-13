@@ -6,7 +6,7 @@
  :authors    (("Stephane Zermatten" . "szermatt@gmx.net"))
  :maintainer ("Stephane Zermatten" . "szermatt@gmx.net")
  :provided   (bash-completion sz-testutils)
- :required   ((("comint" comint)))
+ :required   ((("emacs" comint)))
  :homepage   "https://github.com/szermatt/emacs-bash-completion"
  :commentary "\
 This file defines dynamic completion hooks for shell-mode and

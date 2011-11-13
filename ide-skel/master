@@ -4,8 +4,8 @@
  :license    "GPL-2"
  :provided   (ide-skel)
  :required   ((("cl" cl)
-	       ("complete" complete)
-	       ("emacs-core" mwheel)
+	       ("emacs" mwheel)
+	       ("emacs-obsolete" complete)
 	       ("emhacks" tabbar)
 	       ("imenu" imenu)
 	       ("info" info)

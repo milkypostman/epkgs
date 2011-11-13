@@ -5,10 +5,10 @@
  :authors    (("Alex Schroeder" . "alex@gnu.org"))
  :maintainer ("Oliver Scholz" . "epameinondas@gmx.de")
  :provided   (xpath xpath-parser)
- :required   ((("cedet" wisent wisent-comp)
-	       ("cl" cl)
+ :required   ((("cl" cl)
 	       ("dom" dom)
-	       ("xml" xml)))
+	       ("xml" xml)
+	       (nil wisent wisent-comp)))
  :keywords   (xml)
  :commentary "\
 If you are working with XML documents, you may parse the documents

@@ -6,8 +6,8 @@
  :authors    (("$Author$"))
  :maintainer ("Matthew O. Smith" . "m0smith@yahoo.com")
  :provided   (starteam vc-starteam)
- :required   ((("dired" dired)
-	       ("elib" string)
+ :required   ((("elib" string)
+	       ("emacs" dired)
 	       ("vc" vc)))
  :keywords   (tools)
  :homepage   "http://sourceforge.net/projects/starteam-el"

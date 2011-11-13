@@ -6,6 +6,6 @@
  :maintainer ("Dimitri Fontaine" . "dim@tapoueh.org")
  :provided   (switch-window)
  :required   ((("cl" cl)
-	       ("emacs-core" quail)))
+	       ("emacs" quail)))
  :keywords   (navigation window)
  :homepage   "http://tapoueh.org/projects.html#sec19")

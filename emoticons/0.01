@@ -6,7 +6,7 @@
  :maintainer ("Ye Wenbin" . "wenbinye@gmail.com")
  :provided   (emoticons)
  :required   ((("cl" cl)
-	       ("gnus" format-spec)
+	       ("format-spec" format-spec)
 	       ("tree-widget" tree-widget)
 	       ("xml" xml)))
  :keywords   (games wp)

@@ -6,7 +6,7 @@
  :authors    (("Johan Andersson" . "johan.rejeep@gmail.com"))
  :maintainer ("Johan Andersson" . "johan.rejeep@gmail.com")
  :provided   (package-spec)
- :required   (((nil package)))
+ :required   ((("package" package)))
  :keywords   (convenience speed)
  :homepage   "https://github.com/rejeep/package-spec"
  :commentary "\

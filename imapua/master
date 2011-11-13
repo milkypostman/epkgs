@@ -6,7 +6,8 @@
  :maintainer ("Nic Ferrier" . "nferrier@tapsellferrier.co.uk")
  :provided   (imapua)
  :required   ((("cl" cl)
-	       ("gnus" imap message qp)
+	       ("gnus" message qp)
+	       ("imap" imap)
 	       ("timezone" timezone)))
  :keywords   (mail)
  :homepage   "http://www.emacswiki.org/imapua"

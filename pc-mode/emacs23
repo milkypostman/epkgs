@@ -1,7 +1,0 @@
-(:summary    "Emulate certain key bindings used on PCs"
- :created    "1995"
- :updated    "2011"
- :license    "GPL-3"
- :maintainer ("FSF")
- :provided   (pc-mode)
- :keywords   (emulations))

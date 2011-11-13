@@ -5,7 +5,7 @@
  :authors    (("Drew Adams, Lennart Borgman"))
  :maintainer ("Drew Adams")
  :provided   (wid-edit+)
- :required   ((("widget" wid-edit)))
+ :required   ((("emacs" wid-edit)))
  :keywords   (color widget)
  :commentary "\
 Extensions to standard library `wid-edit.el'.

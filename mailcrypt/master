@@ -3,10 +3,8 @@
  :updated    "2001"
  :license    "GPL-2"
  :provided   (mailcrypt)
- :required   ((("comint" comint)
-	       ("easymenu" easymenu)
+ :required   ((("emacs" comint easymenu timer)
 	       ("itimer" itimer)
-	       ("rfc822" rfc822)
-	       ("timer" timer)))
+	       ("rfc822" rfc822)))
  :homepage   "http://mailcrypt.sourceforge.net"
  :wikipage   "http://www.emacswiki.org/MailCrypt")

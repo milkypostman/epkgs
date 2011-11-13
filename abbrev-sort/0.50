@@ -5,8 +5,8 @@
  :authors    (("Will Mengarini" . "seldon@eskimo.com"))
  :maintainer ("Will Mengarini" . "seldon@eskimo.com")
  :provided   (abbrev-sort)
- :required   ((("advice" advice)
-	       ("cl" cl)))
+ :required   ((("cl" cl)
+	       ("emacs" advice)))
  :keywords   (abbrev convenience)
  :homepage   "http://www.eskimo.com/~seldon"
  :commentary "\

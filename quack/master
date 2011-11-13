@@ -2,13 +2,10 @@
  :updated    "20110731"
  :license    "GPL-2"
  :provided   (quack)
- :required   ((("advice" advice)
-	       ("browse-url" browse-url)
+ :required   ((("browse-url" browse-url)
 	       ("cmuscheme" cmuscheme)
 	       ("compile" compile)
-	       ("custom" custom)
-	       ("easymenu" easymenu)
-	       ("emacs-core" font-lock)
+	       ("emacs" advice custom easymenu font-lock)
 	       ("scheme" scheme)
 	       ("thingatpt" thingatpt)))
  :homepage   "http://www.neilvandyke.org/quack"

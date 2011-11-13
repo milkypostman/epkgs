@@ -1,5 +1,5 @@
 (:license    "GPL-2"
  :provided   (jam-mode)
- :required   ((("emacs-core" generic)
+ :required   ((("emacs" generic)
 	       (nil generic-mode)))
  :homepage   "http://www.tenfoot.org.uk/emacs/modes.html")

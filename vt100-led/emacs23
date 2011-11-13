@@ -1,8 +1,0 @@
-(:summary    "Functions for LED control on VT-100 terminals & clones"
- :created    "1988"
- :updated    "2011"
- :license    "GPL-3"
- :authors    (("Howard Gayle"))
- :maintainer ("FSF")
- :provided   (vt100-led)
- :keywords   (hardware))

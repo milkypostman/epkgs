@@ -6,7 +6,7 @@
  :authors    (("Masayuki Ataka" . "masayuki.ataka@gmail.com"))
  :maintainer ("Masayuki Ataka" . "masayuki.ataka@gmail.com")
  :provided   (html-fold)
- :required   ((("emacs-core" overlay)))
+ :required   ((("emacs" overlay)))
  :keywords   (html wp)
  :homepage   "https://github.com/ataka/html-fold"
  :commentary "\

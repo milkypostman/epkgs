@@ -5,10 +5,9 @@
  :provided   (watson)
  :required   ((("browse-url" browse-url)
 	       ("cl" cl)
-	       ("emacs-core" backquote)
+	       ("emacs" backquote wid-browse widget)
 	       ("url" url)
-	       ("w3" w3-forms)
-	       ("widget" wid-browse widget)))
+	       ("w3" w3-forms)))
  :keywords   (search web)
  :homepage   "http://emarsden.chez.com/downloads"
  :commentary "\

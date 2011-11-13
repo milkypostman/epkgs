@@ -6,7 +6,7 @@
  :maintainer ("Drew Adams")
  :provided   (macros+)
  :required   ((("cl" cl)
-	       ("emacs-core" macros))
+	       ("emacs" macros))
 	      (("icicles" icicles)
 	       ("thingatpt" thingatpt)
 	       ("thingatpt+" thingatpt+)))

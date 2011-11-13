@@ -5,5 +5,5 @@
  :authors    (("Noah Friedman" . "friedman@splode.com"))
  :maintainer (nil . "friedman@splode.com")
  :provided   (bytecomp-fns)
- :required   ((("emacs-core" backquote byte-compile)))
+ :required   ((("emacs" backquote byte-compile)))
  :homepage   "http://www.splode.com/~friedman/software/emacs-lisp")

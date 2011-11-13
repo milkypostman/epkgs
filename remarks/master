@@ -6,7 +6,7 @@
  :maintainer ("Thomas Link" . "samul@web.de")
  :provided   (remarks)
  :required   ((("cl" cl)
-	       ("emacs-core" overlay)
+	       ("emacs" overlay)
 	       ("tellib" tellib)))
  :keywords   (annotations notes remarks)
  :homepage   "http://members.a1.net/t.link/CompEmacsRemarks.html"

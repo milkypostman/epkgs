@@ -6,6 +6,6 @@
  :maintainer ("lieutar Ohnishi" . "lieutar@members10.tsukaeru.net")
  :provided   (framov)
  :required   ((("cl" cl)
-	       ("easy-mmode" easy-mmode)))
+	       ("emacs" easy-mmode)))
  :keywords   (frame)
  :homepage   "https://github.com/lieutar/framov.el")

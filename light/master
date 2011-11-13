@@ -7,7 +7,7 @@
  :maintainer ("John Palmieri" . "palmieri@math.washington.edu")
  :provided   (bufcomp light)
  :required   ((("cl" cl)
-	       ("custom" custom)
+	       ("emacs" custom)
 	       ("ispell" ispell)))
  :keywords   (completion)
  :homepage   "http://www.math.washington.edu/~palmieri/Emacs/light.html"

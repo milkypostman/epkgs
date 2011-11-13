@@ -8,8 +8,7 @@
  :provided   (pop-mode)
  :required   ((("add-log" add-log)
 	       ("cl" cl)
-	       ("easymenu" easymenu)
-	       ("emacs-core" font-lock)))
+	       ("emacs" easymenu font-lock)))
  :keywords   (poplog processes)
  :commentary "\
 Pop-11 mode and inferior Pop-11 mode for XEmacs/GNU Eemacs.

@@ -5,6 +5,6 @@
  :authors    (("Geert Van der Plas" . "geert_vanderplas@email.com"))
  :maintainer ("Geert Van der Plas" . "geert_vanderplas@email.com")
  :provided   (dracula-mode)
- :required   ((("emacs-core" font-lock generic)))
+ :required   ((("emacs" font-lock generic)))
  :keywords   (dracula rules\ files)
  :homepage   "http://spice-mode.4t.com")

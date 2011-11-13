@@ -7,13 +7,12 @@
  :maintainer ("Reto Zimmermann" . "reto@gnu.org")
  :provided   (vhdl-mode)
  :required   ((("assoc" assoc)
-	       ("cedet" speedbar)
 	       ("compile" compile)
-	       ("easymenu" easymenu)
-	       ("emacs-core" font-lock)
+	       ("emacs" easymenu font-lock)
 	       ("hideshow" hideshow)
 	       ("hippie-exp" hippie-exp)
-	       ("ps-print" ps-print)))
+	       ("ps-print" ps-print)
+	       ("speedbar" speedbar)))
  :keywords   (languages vhdl)
  :homepage   "http://www.iis.ee.ethz.ch/~zimmi/emacs/vhdl-mode.html"
  :wikipage   "http://www.emacswiki.org/VhdlMode"

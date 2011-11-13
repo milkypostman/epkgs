@@ -6,8 +6,7 @@
  :adapted-by ("Hasan Veldstra")
  :provided   (http-twiddle)
  :required   ((("cl" cl)
-	       ("easy-mmode" easy-mmode)
-	       ("emacs-core" font-lock)))
+	       ("emacs" easy-mmode font-lock)))
  :keywords   (http rest soap)
  :homepage   "https://github.com/hassy/http-twiddle"
  :commentary "\

@@ -6,7 +6,7 @@
  :maintainer ("Dave Love" . "fx@gnu.org")
  :provided   (noweb)
  :required   ((("cl" cl)
-	       ("easy-mmode" easy-mmode)
+	       ("emacs" easy-mmode)
 	       ("multi-mode" multi-mode)))
  :keywords   (languages tools)
  :homepage   "http://www.loveshack.ukfsn.org/emacs"

@@ -5,6 +5,6 @@
  :maintainer ("John C. G. Sturdy" . "john@cb1.com")
  :provided   (majordomo)
  :required   ((("cl" cl)
-	       ("emacs-core" backquote)))
+	       ("emacs" backquote)))
  :keywords   (email)
  :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/email")

@@ -4,10 +4,10 @@
  :license    "GPL-2"
  :provided   (sawfish)
  :required   ((("cl" cl)
-	       ("easymenu" easymenu)
-	       ("emacs-core" font-lock pp)
+	       ("emacs" easymenu font-lock)
 	       ("inf-lisp" inf-lisp)
 	       ("info" info)
+	       ("pp" pp)
 	       ("regexp-opt" regexp-opt)
 	       ("thingatpt" thingatpt)
 	       (nil lisp-doc rep\.structures)))

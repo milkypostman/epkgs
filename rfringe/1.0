@@ -4,7 +4,7 @@
  :authors    (("Dino Chiesa" . "dpchiesa@hotmail.com"))
  :maintainer ("Dino Chiesa" . "dpchiesa@hotmail.com")
  :provided   (rfringe)
- :required   ((("emacs-core" fringe)))
+ :required   ((("emacs" fringe)))
  :keywords   (bitmap fringe)
  :homepage   "http://www.emacswiki.org/RFringe"
  :wikipage   "http://www.emacswiki.org/RFringe"

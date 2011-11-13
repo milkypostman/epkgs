@@ -8,5 +8,5 @@
  :required   ((("avoid" avoid)
 	       ("cl" cl)
 	       ("dabbrev" dabbrev))
-	      (("emacs-core" tooltip)))
+	      (("emacs" tooltip)))
  :homepage   "http://www.gnufans.net/~deego/emacs.html")

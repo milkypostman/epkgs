@@ -6,7 +6,7 @@
  :maintainer ("Daiki Ueno" . "ueno@unixuser.org")
  :provided   (lsdb)
  :required   ((("apel" pces poem product static)
-	       ("emacs-core" image)
+	       ("emacs" image)
 	       ("flim" mime)
 	       ("mew" mew)))
  :keywords   (address book)

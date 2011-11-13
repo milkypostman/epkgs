@@ -6,7 +6,7 @@
  :authors    (("Hironori OKAMOTO" . "k.ten87@gmail.com"))
  :maintainer ("Hironori OKAMOTO" . "k.ten87@gmail.com")
  :provided   (twittering-dframe)
- :required   ((("cedet" dframe)
+ :required   ((("dframe" dframe)
 	       ("twittering-mode" twittering-mode)))
  :keywords   (frames hypermedia)
  :homepage   "https://github.com/k-ten/twittering-dframe")

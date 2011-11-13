@@ -5,7 +5,7 @@
  :provided   (dict-web)
  :required   ((("browse-url" browse-url)
 	       ("cl" cl)
-	       ("easymenu" easymenu)
+	       ("emacs" easymenu)
 	       ("url" url)
 	       ("w3" w3-forms)))
  :keywords   (dictionary)

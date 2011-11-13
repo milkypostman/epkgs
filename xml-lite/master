@@ -6,7 +6,7 @@
  :maintainer ("Mike Williams" . "mdub@bigfoot.com")
  :provided   (xml-lite)
  :required   ((("cl" cl)
-	       ("custom" custom)
+	       ("emacs" custom)
 	       ("sgml-mode" sgml-mode)))
  :keywords   (xml)
  :homepage   "http://www.dogbiscuit.org/mdub/software"

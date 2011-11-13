@@ -5,6 +5,6 @@
  :authors    (("Jonathan Arkell" . "jonnay@jonnay.net"))
  :maintainer ("Jonathan Arkell" . "jonnay@jonnay.net")
  :provided   (wsh-repl)
- :required   ((("comint" comint)))
+ :required   ((("emacs" comint)))
  :homepage   "http://www.emacswiki.org/WshRepl"
  :wikipage   "http://www.emacswiki.org/WshRepl")

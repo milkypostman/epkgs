@@ -5,9 +5,8 @@
  :authors    (("Vinicius Jose Latorre" . "viniciusjl@ig.com.br"))
  :maintainer ("Vinicius Jose Latorre" . "viniciusjl@ig.com.br")
  :provided   (xray)
- :required   ((("apropos" apropos)
-	       ("ehelp" ehelp)
-	       ("help-mode" help-mode)
+ :required   ((("ehelp" ehelp)
+	       ("emacs" apropos help-mode)
 	       ("info" info)))
  :keywords   (debug help internal maintenance)
  :homepage   "http://www.emacswiki.org/XrayPackage"

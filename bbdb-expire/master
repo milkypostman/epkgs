@@ -7,7 +7,7 @@
  :provided   (bbdb-expire)
  :required   ((("bbdb" bbdb bbdb-com bbdb-hooks)
 	       ("bbdb-hidden-update" bbdb-hidden-update)
-	       ("gnus" time-date)))
+	       ("time-date" time-date)))
  :keywords   (mail news)
  :commentary "\
 This file implements expiry of BBDB databases, to stop them getting too

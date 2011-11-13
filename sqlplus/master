@@ -4,11 +4,10 @@
  :license    "GPL-2"
  :provided   (sqlplus)
  :required   ((("cl" cl)
-	       ("emacs-core" font-lock)
+	       ("emacs" font-lock tabify)
 	       ("recentf" recentf)
 	       ("skeleton" skeleton)
-	       ("sql" sql)
-	       ("tabify" tabify)))
+	       ("sql" sql)))
  :keywords   (oracle plsql sql sqlplus)
  :homepage   "http://www.emacswiki.org/SqlPlus"
  :wikipage   "http://www.emacswiki.org/SqlPlus"

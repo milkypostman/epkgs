@@ -4,7 +4,7 @@
  :license    "GPL-2"
  :provided   (ebm)
  :required   ((("cl" cl)
-	       ("gnus" parse-time)
+	       ("parse-time" parse-time)
 	       ("url" url)))
  :homepage   "https://github.com/ryebread/ebm"
  :commentary "\

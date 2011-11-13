@@ -1,5 +1,6 @@
 (:provided   (nclos-eieio nclos-owl-lite nclose-advice nclosemacs nclosemacs-lib nclosemacs-muse-helper ontology)
- :required   ((("cedet" eieio-base tree)
-	       ("cl" cl)))
+ :required   ((("cl" cl)
+	       ("eieio" eieio-base)
+	       (nil tree)))
  :homepage   "http://code.google.com/p/nclosemacs"
  :wikipage   "http://www.emacswiki.org/NClosEmacs")

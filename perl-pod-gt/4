@@ -5,7 +5,7 @@
  :authors    (("Kevin Ryde" . "user42@zip.com.au"))
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (perl-pod-gt)
- :required   ((("emacs-core" overlay)))
+ :required   ((("emacs" overlay)))
  :keywords   (wp)
  :wikipage   "http://www.emacswiki.org/PerlPodGt"
  :commentary "\

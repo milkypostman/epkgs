@@ -4,7 +4,7 @@
  :authors    (("Eric Engstrom" . "eric.engstrom@honeywell.com"))
  :maintainer ("Eric Engstrom")
  :provided   (promela-mode)
- :required   ((("emacs-core" font-lock)))
+ :required   ((("emacs" font-lock)))
  :keywords   (promela spin tools)
  :commentary "\
 This file contains code for a GNU Emacs major mode for editing

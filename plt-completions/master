@@ -2,7 +2,7 @@
  :license    "GPL-2"
  :provided   (plt-completions)
  :required   ((("cl" cl)
-	       ("emacs-core" derived)
+	       ("emacs" derived)
 	       ("scheme" scheme)
 	       ("thingatpt" thingatpt)))
  :homepage   "http://www.emacswiki.org/PltCompletions"

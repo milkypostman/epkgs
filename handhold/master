@@ -6,8 +6,8 @@
  :maintainer ("Tom Breton" . "tob@world.std.com")
  :provided   (handhold)
  :required   ((("cl" cl)
-	       ("emacs-core" pp)
-	       ("widget" wid-edit widget)))
+	       ("emacs" wid-edit widget)
+	       ("pp" pp)))
  :keywords   (extensions lisp maint tools)
  :homepage   "http://www.panix.com/~tehom"
  :commentary "\

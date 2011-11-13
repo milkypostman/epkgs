@@ -5,14 +5,8 @@
  :license    "GPL-3"
  :authors    (("Yves Senn" . "yves.senn@gmx.ch"))
  :maintainer ("Yves Senn" . "yves.senn@gmx.ch")
- :provided   (ert rvm)
- :required   ((("button" button)
-	       ("cl" cl)
-	       ("debug" debug)
-	       ("easymenu" easymenu)
-	       ("ewoc" ewoc)
-	       ("find-func" find-func)
-	       ("help" help)))
+ :provided   (rvm)
+ :required   ((("cl" cl)))
  :keywords   (ruby rvm)
  :homepage   "https://github.com/senny/rvm.el"
  :wikipage   "http://www.emacswiki.org/RvmEl"

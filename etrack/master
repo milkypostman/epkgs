@@ -3,5 +3,5 @@
  :updated    "2011"
  :provided   (etrack)
  :required   ((("cl" cl)
-	       ("comint" comint)))
+	       ("emacs" comint)))
  :homepage   "http://www.gnuvola.org/software/etrack")

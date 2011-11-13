@@ -1,9 +1,0 @@
-(:summary    "Paragraph and sentence parsing"
- :created    "1985"
- :updated    "2011"
- :license    "GPL-3"
- :maintainer ("FSF")
- :keywords   (wp)
- :commentary "\
-This package provides the paragraph-oriented commands documented in the
-Emacs manual.")

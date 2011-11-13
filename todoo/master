@@ -5,8 +5,7 @@
  :authors    (("Daniel Lundin" . "daniel@codefactory.se"))
  :maintainer ("Muli Ben-Yehuda" . "mulix@mulix.org")
  :provided   (todoo)
- :required   ((("custom" custom)
-	       ("easymenu" easymenu)
+ :required   ((("emacs" custom easymenu)
 	       ("outline" outline)))
  :keywords   (project\ management todo)
  :homepage   "http://www.mulix.org/code.html"

@@ -1,7 +1,7 @@
 (:created    "2007"
  :updated    "20090820"
  :provided   (notes-aux notes-emacs notes-first notes-index-mode notes-mode notes-variables notes-xemacs)
- :required   ((("emacs-core" font-lock)
+ :required   ((("emacs" font-lock)
 	       ("mailcrypt" mailcrypt)
 	       (nil npgp pam)))
  :homepage   "http://www.isi.edu/~johnh/SOFTWARE/NOTES_MODE/index.html")

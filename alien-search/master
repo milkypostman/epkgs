@@ -6,7 +6,7 @@
  :provided   (alien-search)
  :required   ((("align" align)
 	       ("cl" cl)
-	       ("emacs-core" menu-bar)
+	       ("emacs" menu-bar)
 	       ("re-builder" re-builder)))
  :keywords   (convenience emulations matching tools unix wp)
  :homepage   "https://github.com/k-talo/alien-search.el"

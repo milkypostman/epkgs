@@ -6,7 +6,7 @@
  :maintainer ("Thierry Volpiatto")
  :provided   (eiv)
  :required   ((("cl" cl)
-	       ("traverselisp" iterator traverselisp)))
+	       (nil iterator traverselisp)))
  :keywords   (image picture)
  :homepage   "http://www.emacswiki.org/EmacsImageViewer"
  :wikipage   "http://www.emacswiki.org/EmacsImageViewer"

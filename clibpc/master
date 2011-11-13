@@ -5,9 +5,9 @@
  :authors    ((nil . "wenbinye@163.com"))
  :maintainer (nil . "wenbinye@163.com")
  :provided   (clibpc)
- :required   ((("button" button)
-	       ("cl" cl)
-	       ("complete" complete)))
+ :required   ((("cl" cl)
+	       ("emacs" button)
+	       ("emacs-obsolete" complete)))
  :commentary "\
 Recently, I began to learn how to write gtk applications. GLib, gtk
 and gnome function is sometimes to long to type which exactly like

@@ -5,8 +5,8 @@
  :authors    (("Mathias Dahl" . "mathias.rem0veth1s.dahl@gmail.com"))
  :maintainer ("Mathias Dahl")
  :provided   (tumme)
- :required   ((("dired" dired)
-	       ("gnus" format-spec)))
+ :required   ((("emacs" dired)
+	       ("format-spec" format-spec)))
  :keywords   (dired images thumbnails)
  :homepage   "http://www.emacswiki.org/Tumme"
  :wikipage   "http://www.emacswiki.org/Tumme"

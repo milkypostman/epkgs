@@ -7,7 +7,7 @@
  :provided   (doremi)
  :required   ((("cl" cl)
 	       ("ring+" ring+))
-	      (("emacs-core" mwheel)))
+	      (("emacs" mwheel)))
  :keywords   (cycle higher-order keys repeat)
  :homepage   "http://www.emacswiki.org/DoReMi"
  :wikipage   "http://www.emacswiki.org/DoReMi"

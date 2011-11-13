@@ -7,9 +7,7 @@
 	      (nil . "markus@mhoenicka.de"))
  :maintainer (nil . "smith@sideshowbarker.net")
  :provided   (refdb-mode refdb-output-mode ris)
- :required   ((("easy-mmode" easy-mmode)
-	       ("easymenu" easymenu)
-	       ("emacs-core" derived)))
+ :required   ((("emacs" derived easy-mmode easymenu)))
  :keywords   (bibliography docbook tei xml)
  :homepage   "http://refdb.sourceforge.net"
  :wikipage   "http://www.emacswiki.org/RefdbMode")

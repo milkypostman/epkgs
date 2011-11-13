@@ -7,7 +7,7 @@
  :maintainer ("Seth Mason")
  :provided   (rtm slack-rtm)
  :required   ((("cl" cl)
-	       ("custom" custom)
+	       ("emacs" custom)
 	       ("ido" ido)
 	       ("org-mode" org)
 	       ("url" url-http url-util)

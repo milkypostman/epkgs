@@ -7,7 +7,7 @@
  :maintainer ("Aemon Cannon")
  :provided   (as3-mode fdb)
  :required   ((("cl" cl)
-	       ("emacs-core" font-lock)
+	       ("emacs" font-lock)
 	       ("gud" gud)
 	       ("ido" ido)
 	       ("yasnippet" yasnippet)

@@ -3,8 +3,6 @@
  :updated    "2003"
  :provided   (monk monk-cdaudio monk-fn-handler monk-midi monk-mp3 monk-ogg monk-prop-edit monk-smpeg monk-watch monk-wav)
  :required   ((("cl" cl)
-	       ("dired" dired)
-	       ("dired-aux" dired-aux)
-	       ("emacs-core" pp)
-	       ("timer" timer)
+	       ("emacs" dired dired-aux timer)
+	       ("pp" pp)
 	       (nil timidity))))

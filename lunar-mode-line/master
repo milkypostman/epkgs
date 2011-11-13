@@ -7,7 +7,7 @@
  :maintainer (nil . "intrigeri@boum.org")
  :provided   (lunar-mode-line)
  :required   ((("calendar" calendar lunar)
-	       ("timer" timer)))
+	       ("emacs" timer)))
  :keywords   (extensions)
  :wikipage   "http://www.emacswiki.org/LunarModeLine"
  :commentary "\

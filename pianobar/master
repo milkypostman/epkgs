@@ -3,6 +3,6 @@
  :updated    "2011"
  :license    "GPL-3"
  :provided   (pianobar)
- :required   ((("comint" comint)))
+ :required   ((("emacs" comint)))
  :homepage   "https://github.com/agrif/pianobar.el"
  :wikipage   "http://www.emacswiki.org/PianobarMode")

@@ -5,8 +5,7 @@
  :license    "GPL-3"
  :provided   (smooth-scroll)
  :required   ((("cl" cl)
-	       ("easy-mmode" easy-mmode)
-	       ("emacs-core" simple)))
+	       ("emacs" easy-mmode simple)))
  :keywords   (convenience emulations frames)
  :homepage   "https://github.com/k-talo/smooth-scroll.el"
  :commentary "\

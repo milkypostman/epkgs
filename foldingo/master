@@ -3,7 +3,7 @@
  :authors    (("Christian Queinnec" . "christian.queinnec@lip6.fr"))
  :maintainer ("Christian Queinnec" . "christian.queinnec@lip6.fr")
  :provided   (foldingo)
- :required   ((("emacs-core" menu-bar)))
+ :required   ((("emacs" menu-bar)))
  :keywords   (folding mode)
  :homepage   "http://pagesperso-systeme.lip6.fr/Christian.Queinnec/WWW/elisp.html"
  :wikipage   "http://www.emacswiki.org/FoldIngo")

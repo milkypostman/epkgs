@@ -5,7 +5,7 @@
  :authors    (("Noah Friedman" . "friedman@splode.com"))
  :maintainer (nil . "friedman@splode.com")
  :provided   (vm-advices)
- :required   ((("advice" advice)
+ :required   ((("emacs" advice)
 	       ("vm-addons" vm-addons)
 	       ("win-disp-util" win-disp-util)))
  :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"

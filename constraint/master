@@ -5,8 +5,8 @@
  :authors    (("Akimichi Tatsukawa" . "akimichi@mbox.co.jp"))
  :maintainer ("Akimichi Tatsukawa" . "akimichi@mbox.co.jp")
  :provided   (constraint)
- :required   ((("cedet" eieio)
-	       ("cl" cl)))
+ :required   ((("cl" cl)
+	       ("eieio" eieio)))
  :keywords   (constraint)
  :commentary "\
 This package provides a constraint propagation library.

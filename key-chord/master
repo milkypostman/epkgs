@@ -3,7 +3,7 @@
  :updated    "2008"
  :license    "GPL-2"
  :provided   (key-chord)
- :required   ((("advice" advice)))
+ :required   ((("emacs" advice)))
  :keywords   (chord input keyboard)
  :homepage   "http://www.emacswiki.org/KeyChord"
  :wikipage   "http://www.emacswiki.org/KeyChord"

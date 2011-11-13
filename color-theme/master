@@ -7,12 +7,10 @@
  :maintainer ("Xavier Maillard" . "zedek@gnu.org")
  :provided   (color-theme muse-setup)
  :required   ((("cl" cl)
-	       ("custom" cus-face)
-	       ("easymenu" easymenu)
+	       ("emacs" cus-face easymenu wid-edit)
 	       ("muse" muse-colors muse-docbook muse-html muse-latex muse-mode muse-project muse-texinfo muse-wiki)
 	       ("reporter" reporter)
-	       ("sendmail" sendmail)
-	       ("widget" wid-edit)))
+	       ("sendmail" sendmail)))
  :keywords   (faces)
  :homepage   "http://www.nongnu.org/color-theme/index.html"
  :wikipage   "http://www.emacswiki.org/ColorTheme"

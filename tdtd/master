@@ -7,7 +7,7 @@
  :maintainer ("Tony Graham" . "tkg@menteith.com")
  :provided   (tdtd tdtd-font-maker)
  :required   ((("cl" cl)
-	       ("emacs-core" font-lock)
+	       ("emacs" font-lock)
 	       ("etags" etags)
 	       ("imenu" imenu)
 	       ("reporter" reporter)

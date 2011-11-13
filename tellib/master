@@ -5,7 +5,7 @@
  :authors    (("Thomas Link"))
  :maintainer ("Thomas Link")
  :provided   (tellib)
- :required   ((("emacs-core" overlay)))
+ :required   ((("emacs" overlay)))
  :keywords   (elisp library)
  :homepage   "http://members.a1.net/t.link/CompEmacsTellib.html"
  :commentary "\

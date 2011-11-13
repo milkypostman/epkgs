@@ -7,9 +7,7 @@
  :maintainer ("H. Dieter Wilhelm")
  :provided   (ansys-mode ansys-process)
  :required   ((("align" align)
-	       ("comint" comint)
-	       ("custom" custom)
-	       ("easymenu" easymenu)
+	       ("emacs" comint custom easymenu)
 	       ("reporter" reporter)))
  :keywords   (convenience languages)
  :homepage   "http://code.google.com/p/ansys-mode"

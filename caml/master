@@ -1,9 +1,8 @@
 (:repository (svn . "http://caml.inria.fr/svn")
  :license    "GPL"
  :provided   (caml caml-compat caml-emacs caml-font caml-help caml-hilit caml-types caml-xemacs camldebug inf-caml)
- :required   ((("comint" comint)
-	       ("compile" compile)
-	       ("emacs-core" derived font-lock overlay)
+ :required   ((("compile" compile)
+	       ("emacs" comint derived font-lock overlay)
 	       ("imenu" imenu)
 	       ("info" info)
 	       ("shell" shell)

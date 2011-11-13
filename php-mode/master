@@ -7,11 +7,10 @@
  :provided   (php-mode)
  :required   ((("add-log" add-log)
 	       ("cc-mode" cc-langs cc-mode)
-	       ("cedet" speedbar)
-	       ("custom" custom)
-	       ("emacs-core" font-lock)
+	       ("emacs" custom font-lock)
 	       ("etags" etags)
-	       ("regexp-opt" regexp-opt)))
+	       ("regexp-opt" regexp-opt)
+	       ("speedbar" speedbar)))
  :keywords   (languages oop php)
  :wikipage   "http://www.emacswiki.org/PhpMode"
  :commentary "\

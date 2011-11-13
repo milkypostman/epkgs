@@ -4,7 +4,7 @@
  :license    "GPL-2"
  :provided   (tex-wcount)
  :required   ((("assoc" assoc)
-	       ("timer" timer)))
+	       ("emacs" timer)))
  :commentary "\
 `tex-wcount-mode' is a minor mode that puts into the modeline a running
 count of the words in a latex buffer.  It uses the program detex, which must

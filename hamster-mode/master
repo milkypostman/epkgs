@@ -5,7 +5,7 @@
  :authors    (("Frank Haun" . "fh@fhaun.de"))
  :maintainer ("Frank Haun" . "fh@fhaun.de")
  :provided   (hamster-mode)
- :required   ((("emacs-core" font-lock)))
+ :required   ((("emacs" font-lock)))
  :keywords   (languages)
  :wikipage   "http://www.emacswiki.org/HamsterMode"
  :commentary "\

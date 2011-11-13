@@ -5,7 +5,7 @@
  :authors    (("Kevin Ryde" . "user42@zip.com.au"))
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (perl-use-utf8-coding)
- :required   ((("advice" advice)))
+ :required   ((("emacs" advice)))
  :homepage   "http://user42.tuxfamily.org/perl-use-utf8-coding"
  :commentary "\
 This spot of code gets an Emacs coding system from a \"use utf8;\" pragma

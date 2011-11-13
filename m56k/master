@@ -5,8 +5,8 @@
  :authors    (("Richard Y. Kim," . "ryk@coho.com"))
  :maintainer ("Richard Y. Kim," . "ryk@coho.com")
  :provided   (m56k)
- :required   ((("advice" advice)
-	       ("cl" cl)
+ :required   ((("cl" cl)
+	       ("emacs" advice)
 	       ("emacs-obsolete" lucid)))
  :commentary "\
 This provides a major mode called m56k-mode to aid those who

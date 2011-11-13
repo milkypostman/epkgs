@@ -5,7 +5,7 @@
  :authors    (("sakito" . "sakito@users.sourceforge.jp"))
  :maintainer ("sakito" . "sakito@users.sourceforge.jp")
  :provided   (applescript-mode)
- :required   ((("easymenu" easymenu)))
+ :required   ((("emacs" easymenu)))
  :keywords   (languages tools)
  :commentary "\
 AppleScript Mode")

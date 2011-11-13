@@ -6,7 +6,7 @@
  :maintainer ("Takeshi Banse" . "takebi@laafc.net")
  :provided   (anything-c-javadoc)
  :required   ((("anything" anything)
-	       ("emacs-core" simple)
+	       ("emacs" simple)
 	       ("url" url)))
  :keywords   (anything convenience help javadoc lookup)
  :commentary "\

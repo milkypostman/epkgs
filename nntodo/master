@@ -6,7 +6,7 @@
  :maintainer ("John Wiegley" . "johnw@gnu.org")
  :provided   (nntodo)
  :required   ((("cl" cl)
-	       ("easy-mmode" easy-mmode)
+	       ("emacs" easy-mmode)
 	       ("gnus" gnus-start nnheader nnmail nnmbox nnoo)))
  :keywords   (calendar convenience mail news)
  :wikipage   "http://www.emacswiki.org/TodoGnus"

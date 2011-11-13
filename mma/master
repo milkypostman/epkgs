@@ -6,7 +6,6 @@
  :provided   (mma)
  :required   ((("cl" cl)
 	       (nil func-menu)))
- :homepage   "http://www.itwm.fhg.de/as/asemployees/wichmann/mma.html"
  :commentary "\
 This Emacs mode provides a programming mode for writing Mathematica
 package files.

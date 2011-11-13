@@ -6,8 +6,7 @@
  :authors    (("David E. Young" . "david.young@fnc.fujitsu.com"))
  :maintainer ("David E. Young" . "david.young@fnc.fujitsu.com")
  :provided   (inf-jess jess-mode)
- :required   ((("comint" comint)
-	       ("lisp-mode" lisp-mode)))
+ :required   ((("emacs" comint lisp-mode)))
  :keywords   (jess languages)
  :homepage   "http://jess-mode.sourceforge.net"
  :commentary "\

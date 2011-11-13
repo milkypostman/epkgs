@@ -6,7 +6,7 @@
 	      ("Ilya Zakharevich" . "ilya@math.ohio-state.edu"))
  :maintainer ("Stefan Hegny" . "hegny@fzi.de")
  :provided   (nc)
- :required   ((("easymenu" easymenu)
+ :required   ((("emacs" easymenu)
 	       ("shell" shell)))
  :keywords   (directory file\ browser shell)
  :homepage   "http://www.emacswiki.org/NortonCommanderMode"

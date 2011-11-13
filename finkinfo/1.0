@@ -3,7 +3,7 @@
  :updated    "2006"
  :license    "GPL-2"
  :provided   (finkinfo)
- :required   ((("emacs-core" font-lock)))
+ :required   ((("emacs" font-lock)))
  :keywords   (convenience)
  :commentary "\
 See: <http://fink.sourceforge.net/doc/packaging/packaging.en.html>

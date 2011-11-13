@@ -5,7 +5,7 @@
  :maintainer ("Masahiro Hayashi" . "mhayashi1120@gmail.com")
  :provided   (color-dired)
  :required   ((("cl" cl)
-	       ("ls-lisp" ls-lisp)))
+	       ("emacs" ls-lisp)))
  :keywords   (color dired)
  :homepage   "https://github.com/mhayashi1120/Emacs-color-dired"
  :commentary "\

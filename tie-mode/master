@@ -5,7 +5,7 @@
  :maintainer ("tie-mode at tensilica dot com")
  :provided   (tie-mode)
  :required   ((("compile" compile)
-	       ("easymenu" easymenu)))
+	       ("emacs" easymenu)))
  :keywords   (languages)
  :homepage   "http://www.emacswiki.org/TieMode"
  :wikipage   "http://www.emacswiki.org/TieMode"

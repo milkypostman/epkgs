@@ -5,7 +5,7 @@
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")
  :provided   (dired-details+)
- :required   ((("dired" dired))
+ :required   ((("emacs" dired))
 	      (("autofit-frame" autofit-frame)
 	       ("dired-details" dired-details)))
  :keywords   (dired frames)

@@ -5,9 +5,9 @@
  :authors    (("Kevin Ryde" . "user42@zip.com.au"))
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (sqlite-dump)
- :required   ((("advice" advice)
-	       ("apel" poe)
-	       ("cl" cl)))
+ :required   ((("apel" poe)
+	       ("cl" cl)
+	       ("emacs" advice)))
  :keywords   (data)
  :homepage   "http://user42.tuxfamily.org/sqlite-dump"
  :wikipage   "http://www.emacswiki.org/SqliteDump"

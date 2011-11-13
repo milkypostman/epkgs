@@ -4,9 +4,9 @@
  :authors    (("Vegard Øye" . "vegard_oye@hotmail.com"))
  :maintainer ("Vegard Øye" . "vegard_oye@hotmail.com")
  :provided   (test-framework)
- :required   ((("advice" advice)
-	       ("cl" cl)
-	       ("emacs-core" warnings)))
+ :required   ((("cl" cl)
+	       ("emacs" advice)
+	       ("warnings" warnings)))
  :keywords   (testing unit)
  :homepage   "https://github.com/epsilon47/test-framework.el"
  :commentary "\

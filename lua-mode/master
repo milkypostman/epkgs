@@ -15,11 +15,14 @@
  :maintainer (nil . "immerrr+lua@gmail.com")
  :provided   (lua-mode)
  :required   ((("cl" cl)
-	       ("comint" comint)))
+	       ("emacs" comint)))
  :keywords   (languages processes tools)
  :homepage   "https://github.com/immerrr/lua-mode"
  :wikipage   "http://www.emacswiki.org/LuaMode"
  :commentary "\
+Thanks to Vedat Hallac <github.com/vhallac> for sharing some of
+his fixes and updates to core indentation logics
+
 Thanks to Rafael Sanchez <rafael@cornerdimension.com> for patch
 adding lua-mode to interpreter-mode-alist
 

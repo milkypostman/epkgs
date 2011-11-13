@@ -1,17 +1,16 @@
 (:summary    "Allow Multiple Major Modes in a buffer"
- :repository (cvs . ":pserver:anonymous@mmm-mode.cvs.sourceforge.net:/cvsroot/mmm-mode")
+ :repository (git . "git://github.com/purcell/mmm-mode.git")
  :created    "1999"
- :updated    "2004"
+ :updated    "20040616"
  :license    "GPL-2"
  :authors    (("Michael Abraham Shulman" . "viritrilbia@users.sourceforge.net"))
  :maintainer ("Michael Abraham Shulman" . "viritrilbia@users.sourceforge.net")
  :provided   (mmm-auto mmm-class mmm-cmds mmm-compat mmm-cweb mmm-mason mmm-mode mmm-myghty mmm-noweb mmm-region mmm-rpm mmm-sample mmm-univ mmm-utils mmm-vars)
  :required   ((("cl" cl)
-	       ("custom" custom)
-	       ("emacs-core" font-lock overlay)
+	       ("emacs" custom font-lock overlay)
 	       ("regexp-opt" regexp-opt)))
  :keywords   (convenience faces languages tools)
- :homepage   "http://mmm-mode.sourceforge.net"
+ :homepage   "https://github.com/purcell/mmm-mode"
  :wikipage   "http://www.emacswiki.org/MmmMode"
  :commentary "\
 MMM Mode is a minor mode that allows multiple major modes to

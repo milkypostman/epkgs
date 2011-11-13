@@ -4,9 +4,10 @@
  :license    "GPL-2"
  :provided   (bbdb-pilot diary-pilot memo-pilot pilot)
  :required   ((("bbdb" bbdb bbdb-com)
-	       ("calendar" calendar diary-lib)
+	       ("calendar" calendar)
 	       ("cl" cl)
-	       ("easymenu" easymenu)))
+	       ("diary-lib" diary-lib)
+	       ("emacs" easymenu)))
  :homepage   "http://bruda.ca/emacs-pilot/"
  :wikipage   "http://www.emacswiki.org/EmacsPilot"
  :commentary "\

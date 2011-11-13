@@ -5,7 +5,7 @@
  :provided   (yarm)
  :required   ((("anything" anything)
 	       ("cl" cl)
-	       ("easy-mmode" easy-mmode)
+	       ("emacs" easy-mmode)
 	       ("historyf" historyf)
 	       (nil inflections))
 	      (("anything" anything-show-completion)

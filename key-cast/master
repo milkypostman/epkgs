@@ -7,7 +7,7 @@
  :maintainer ("Kenichirou Oyama" . "k1lowxb@gmail.com")
  :provided   (key-cast)
  :required   ((("cl" cl)
-	       ("easy-mmode" easy-mmode)))
+	       ("emacs" easy-mmode)))
  :keywords   (command key keycaster log)
  :homepage   "http://wiki.github.com/k1LoW/emacs-key-cast"
  :commentary "\

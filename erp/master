@@ -6,7 +6,7 @@
  :authors    (("Thorsten" . "tj@data-driven.de"))
  :maintainer ("Thorsten" . "tj@data-driven.de")
  :provided   (erp-acc erp-crm erp-hrm erp-mode erp-op erp-pd erp-sp erp-stm)
- :required   ((("easymenu" easymenu)
+ :required   ((("emacs" easymenu)
 	       (nil erp-exp erp-mobile)))
  :homepage   "https://github.com/tj64/erp-mode"
  :commentary "\

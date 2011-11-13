@@ -5,8 +5,8 @@
  :authors    (("Noah Friedman" . "friedman@prep.ai.mit.edu"))
  :maintainer (nil . "friedman@prep.ai.mit.edu")
  :provided   (twiddle)
- :required   ((("itimer" itimer)
-	       ("timer" timer)))
+ :required   ((("emacs" timer)
+	       ("itimer" itimer)))
  :keywords   (extensions)
  :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
  :commentary "\

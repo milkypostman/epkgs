@@ -6,7 +6,7 @@
  :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
  :provided   (usage-memo)
  :required   ((("cl" cl)
-	       ("emacs-core" font-lock)
+	       ("emacs" font-lock)
 	       ("view" view)))
  :keywords   (convenience docs help languages lisp tools)
  :homepage   "http://www.emacswiki.org/UsageMemo"

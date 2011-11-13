@@ -6,7 +6,7 @@
  :maintainer ("Drew Adams")
  :provided   (simple+)
  :required   ((("cl" cl)
-	       ("custom" cus-edit)
+	       ("emacs" cus-edit)
 	       ("strings" strings)))
  :keywords   (abbrev extensions internal lisp)
  :commentary "\

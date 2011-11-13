@@ -5,8 +5,7 @@
  :authors    (("TSUCHIYA Masatoshi" . "tsuchiya@namazu.org"))
  :maintainer ("TSUCHIYA Masatoshi" . "tsuchiya@namazu.org")
  :provided   (shell-command)
- :required   ((("comint" comint)
-	       ("custom" custom)
+ :required   ((("emacs" comint custom)
 	       ("shell" shell)))
  :keywords   (shell)
  :commentary "\

@@ -6,9 +6,9 @@
  :maintainer ("Russel Winder" . "russel@russel.org.uk")
  :provided   (grails-mode groovy-electric groovy-mode inf-groovy)
  :required   ((("cc-mode" cc-mode)
-	       ("comint" comint)
 	       ("compile" compile)
-	       ("emacs-core" find-cmd)))
+	       ("emacs" comint)
+	       ("find-cmd" find-cmd)))
  :homepage   "http://groovy.codehaus.org/Emacs+Plugin"
  :wikipage   "http://www.emacswiki.org/GroovyMode"
  :commentary "\

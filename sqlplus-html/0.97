@@ -6,7 +6,7 @@
  :maintainer ("Hrvoje Niksic" . "hniksic@xemacs.org")
  :provided   (sqlplus-html)
  :required   ((("cl" cl)
-	       ("comint" comint)
+	       ("emacs" comint)
 	       ("w3" w3)))
  :keywords   (commwww database hypermedia)
  :homepage   "http://fly.srk.fer.hr/~hniksic"

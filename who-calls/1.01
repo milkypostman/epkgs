@@ -5,7 +5,7 @@
  :authors    (("Jesper Harder" . "harder@ifa.au.dk"))
  :maintainer ("Jesper Harder" . "harder@ifa.au.dk")
  :provided   (who-calls)
- :required   ((("emacs-core" bytecomp)))
+ :required   ((("emacs" bytecomp)))
  :keywords   (lisp)
  :homepage   "http://www.phys.au.dk/~harder"
  :commentary "\

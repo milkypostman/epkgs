@@ -5,7 +5,7 @@
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")
  :provided   (frame+)
- :required   ((("emacs-core" frame))
+ :required   ((("emacs" frame))
 	      (("fit-frame" fit-frame)))
  :keywords   (frames)
  :commentary "\

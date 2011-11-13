@@ -6,14 +6,14 @@
  :maintainer ("Drew Adams")
  :provided   (help+)
  :required   (nil
-	      (("frame-fns" frame-fns)
-	       ("help-macro" help-macro)
+	      (("emacs" help-macro)
+	       ("frame-fns" frame-fns)
 	       ("help-macro+" help-macro+)
 	       ("info" info)
 	       ("info+" info+)
+	       ("naked" naked)
 	       ("thingatpt" thingatpt)
-	       ("thingatpt+" thingatpt+)
-	       (nil naked)))
+	       ("thingatpt+" thingatpt+)))
  :keywords   (help)
  :homepage   "http://www.emacswiki.org/HelpPlus"
  :wikipage   "http://www.emacswiki.org/HelpPlus"

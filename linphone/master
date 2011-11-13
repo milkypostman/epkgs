@@ -1,11 +1,10 @@
-(:repository (git . "http://yrk.nfshost.com/repos/emacs-linphone.git")
- :created    "2010"
+(:created    "2010"
  :updated    "2010"
  :license    "GPL-3"
  :authors    (("Yoni Rabkin" . "yonirabkin@member.fsf.org"))
  :maintainer ("Yoni Rabkin" . "yonirabkin@member.fsf.org")
  :provided   (linphone linphone-modeline)
- :required   ((("timer" timer)))
+ :required   ((("emacs" timer)))
  :homepage   "http://yrk.livejournal.com/281763.html"
  :commentary "\
 Written against Linphone version 3.3.2 on GNU/Linux")

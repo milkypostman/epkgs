@@ -7,7 +7,7 @@
  :maintainer ("SAKURAI Masashi" . "m.sakurai@kiwanami.net")
  :provided   (concurrent deferred)
  :required   ((("cl" cl)
-	       ("emacs-core" pp)))
+	       ("pp" pp)))
  :keywords   (async deferred)
  :homepage   "https://github.com/kiwanami/emacs-deferred"
  :wikipage   "http://www.emacswiki.org/DeferredTask"

@@ -3,7 +3,7 @@
  :updated    "1998"
  :license    "GPL-2"
  :provided   (change-mode)
- :required   ((("advice" advice)))
+ :required   ((("emacs" advice)))
  :commentary "\
 A minor mode: \"change-mode\".
 

@@ -6,7 +6,7 @@
 	      ("Kris Verbeeck" . "kris.verbeeck@advalvas.be"))
  :maintainer ("Ryan T. Sammartino" . "ryan.sammartino@gmail.com")
  :provided   (doxymacs)
- :required   ((("custom" custom)
+ :required   ((("emacs" custom)
 	       ("tempo" tempo)
 	       ("url" url)
 	       ("xml-parse" xml-parse)))

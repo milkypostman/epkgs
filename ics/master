@@ -2,6 +2,5 @@
  :authors    (("Mark Oakden" . "mark@oakden.org"))
  :maintainer ("Mark Oakden" . "mark@oakden.org")
  :provided   (ics)
- :required   ((("comint" comint)
-	       ("emacs-core" overlay)))
+ :required   ((("emacs" comint overlay)))
  :homepage   "http://www.oakden.eclipse.co.uk/mark/sw/icsel/index.html")

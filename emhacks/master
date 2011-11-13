@@ -8,15 +8,12 @@
  :provided   (dir-tree findstr gdiff gdiff-setup jjar jmaker jsee overlay-fix swbuff tabbar tree-widget-examples)
  :required   ((("cl" cl)
 	       ("compile" compile)
-	       ("easymenu" easymenu)
-	       ("emacs-core" mwheel)
+	       ("emacs" easymenu mwheel timer wid-edit)
 	       ("igrep" igrep)
 	       ("jdee" jde)
 	       ("tempo" tempo)
-	       ("timer" timer)
 	       ("tree-widget" tree-widget)
-	       ("vc" vc)
-	       ("widget" wid-edit)))
+	       ("vc" vc)))
  :keywords   (convenience extensions)
  :homepage   "http://emhacks.sourceforge.net"
  :commentary "\

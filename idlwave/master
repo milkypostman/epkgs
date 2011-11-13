@@ -6,11 +6,8 @@
  :provided   (idlw-complete-structtag idlw-help idlw-roprompt idlw-shell idlw-toolbar idlwave idlwave-help idlwave-shell idlwave-toolbar)
  :required   ((("browse-url" browse-url)
 	       ("cl" cl)
-	       ("comint" comint)
-	       ("emacs-core" overlay)
+	       ("emacs" comint overlay timer wid-edit widget)
 	       ("imenu" imenu)
-	       ("timer" timer)
-	       ("widget" wid-edit widget)
 	       ("xml" xml)))
  :keywords   (languages)
  :homepage   "http://idlwave.org"

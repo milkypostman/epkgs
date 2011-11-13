@@ -4,7 +4,7 @@
  :maintainer ("Alexandre Brillant" . "djefer@club-internet.fr")
  :provided   (jtemplate)
  :required   (nil
-	      (("easymenu" easymenu)
+	      (("emacs" easymenu)
 	       (nil jtemplate-db)))
  :wikipage   "http://www.emacswiki.org/JavaTemplate"
  :commentary "\

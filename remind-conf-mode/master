@@ -7,7 +7,7 @@
  :maintainer ("Shelagh Manton" . "shelagh.manton@gmail.com")
  :provided   (ac-remind remind-conf-mode)
  :required   ((("auto-complete" auto-complete)
-	       ("emacs-core" font-lock overlay)))
+	       ("emacs" font-lock overlay)))
  :keywords   (configuration convenience remind)
  :homepage   "https://github.com/sshelagh/remind-conf-mode"
  :commentary "\

@@ -1,9 +1,0 @@
-(:summary    "Library for implementing grid-based games on Emacs"
- :created    "19970813"
- :updated    "2011"
- :license    "GPL-3"
- :authors    (("Glynn Clements" . "glynn@sensei.co.uk"))
- :maintainer ("Glynn Clements" . "glynn@sensei.co.uk")
- :provided   (gamegrid)
- :required   ((("cl" cl)))
- :keywords   (games))

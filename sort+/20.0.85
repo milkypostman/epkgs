@@ -6,7 +6,7 @@
  :maintainer ("Drew Adams")
  :provided   (sort+)
  :required   ((("cl" cl)
-	       ("emacs-core" sort)))
+	       ("sort" sort)))
  :keywords   (sorting tools unix)
  :commentary "\
 Extensions to `sort.el'.

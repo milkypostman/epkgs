@@ -5,7 +5,7 @@
  :authors    (("Thomas Alexander Gerds" . "tagteam@sund.ku.dk"))
  :maintainer ("Thomas Alexander Gerds" . "tagteam@sund.ku.dk")
  :provided   (ess-edit)
- :required   ((("emacs-core" overlay)))
+ :required   ((("emacs" overlay)))
  :keywords   (convenience)
  :commentary "\
 Compatibility: Emacs23 XEmacs21

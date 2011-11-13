@@ -5,7 +5,7 @@
  :authors    (("Philanecros Heliostein"))
  :maintainer ("Philanecros Heliostein")
  :provided   (pinpoint-mode)
- :required   ((("easymenu" easymenu)))
+ :required   ((("emacs" easymenu)))
  :keywords   (extensions pinpoint)
  :homepage   "https://github.com/philanecros/pinpoint-mode"
  :commentary "\

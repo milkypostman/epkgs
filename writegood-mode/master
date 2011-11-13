@@ -7,7 +7,7 @@
  :maintainer ("Benjamin Beckwith")
  :provided   (writegood-mode)
  :required   ((("cl" cl)
-	       ("emacs-core" faces)
+	       ("emacs" faces)
 	       ("regexp-opt" regexp-opt)))
  :keywords   (grammar weasel-words writing)
  :homepage   "https://github.com/bnbeckwith/writegood-mode"

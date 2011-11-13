@@ -3,19 +3,20 @@
  :created    "2009"
  :updated    "2010"
  :license    "GPL-2"
- :provided   (malabar-abbrevs malabar-annotations malabar-codegen malabar-groovy malabar-import malabar-jump-to-project malabar-misc malabar-mode malabar-project malabar-refactor malabar-reflection malabar-semanticdb malabar-test malabar-util malabar-variables semantic/wisent/javat-wy wisent-java-wy wisent-malabar-java-wy)
+ :provided   (malabar-abbrevs malabar-annotations malabar-codegen malabar-groovy malabar-import malabar-jump-to-project malabar-misc malabar-mode malabar-project malabar-refactor malabar-reflection malabar-semanticdb malabar-test malabar-util malabar-variables wisent-java-wy wisent-malabar-java-wy)
  :required   ((("ansi-color" ansi-color)
 	       ("arc-mode" arc-mode)
 	       ("cc-mode" cc-cmds cc-subword cc-vars)
-	       ("cedet" eieio eieio-base eieio-opt semantic semantic-ctxt semantic-find semantic-ia semantic-lex semantic-load semantic-wisent semanticdb-search srecode srecode-getset srecode-map wisent-comp wisent-java)
 	       ("cl" cl)
-	       ("comint" comint)
 	       ("compile" compile)
-	       ("easymenu" easymenu)
+	       ("eieio" eieio eieio-base eieio-opt)
+	       ("emacs" comint easymenu)
 	       ("fringe-helper" fringe-helper)
+	       ("semantic" semantic semantic/ctxt semantic/db-find semantic/find semantic/ia semantic/lex semantic/wisent semantic/wisent/comp semantic/wisent/java-tags semantic/wisent/javat-wy)
 	       ("skeleton" skeleton)
+	       ("srecode" srecode srecode/getset srecode/map srecode/semantic)
 	       ("subword" subword)
 	       ("thingatpt" thingatpt)
-	       (nil semantic/ctxt semantic/db-find semantic/find semantic/ia semantic/lex semantic/wisent semantic/wisent/comp semantic/wisent/java-tags srecode/getset srecode/map srecode/semantic)))
+	       (nil semantic-ctxt semantic-find semantic-ia semantic-lex semantic-load semantic-wisent semanticdb-search srecode-getset srecode-map wisent-comp wisent-java)))
  :homepage   "https://github.com/espenhw/malabar-mode"
  :wikipage   "http://www.emacswiki.org/MalabarMode")

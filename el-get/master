@@ -6,13 +6,11 @@
  :maintainer ("Dimitri Fontaine" . "dim@tapoueh.org")
  :provided   (el-get el-get-apt-get el-get-autoloads el-get-build el-get-builtin el-get-byte-compile el-get-bzr el-get-core el-get-custom el-get-cvs el-get-darcs el-get-dependencies el-get-elpa el-get-emacsmirror el-get-emacswiki el-get-fink el-get-git el-get-git-svn el-get-hg el-get-http el-get-http-tar el-get-list-packages el-get-methods el-get-notify el-get-pacman el-get-recipes el-get-status el-get-svn)
  :required   ((("cl" cl)
-	       ("dired" dired)
-	       ("emacs-core" autoload bytecomp simple)
-	       ("gnus" sha1)
-	       ("help-mode" help-mode)
+	       ("emacs" autoload bytecomp dired help-mode sha1 simple)
 	       ("info" info)
 	       ("notify" notify))
-	      ((nil notifications package)))
+	      (("notifications" notifications)
+	       ("package" package)))
  :keywords   (apt-get bzr cvs darcs elisp elpa emacs emacswiki fink git git-svn hg http http-tar install package pacman svn)
  :homepage   "https://github.com/dimitri/el-get"
  :wikipage   "http://www.emacswiki.org/el-get"

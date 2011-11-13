@@ -1,9 +1,0 @@
-(:summary    "Format Texinfo files into Info files"
- :created    "1985"
- :updated    "2011"
- :license    "GPL-3"
- :maintainer ("Robert J. Chassell" . "bug-texinfo@gnu.org")
- :provided   (texinfmt)
- :required   ((("texinfo" texinfo)
-	       ("texnfo-upd" texnfo-upd)))
- :keywords   (docs maint tex))

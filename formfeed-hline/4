@@ -5,7 +5,7 @@
  :authors    (("Kevin Ryde" . "user42@zip.com.au"))
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (formfeed-hline)
- :required   ((("emacs-core" disp-table)))
+ :required   ((("emacs" disp-table)))
  :keywords   (frames)
  :homepage   "http://user42.tuxfamily.org/formfeed-hline"
  :commentary "\

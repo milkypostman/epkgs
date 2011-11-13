@@ -5,7 +5,7 @@
  :authors    (("Noah Friedman" . "friedman@splode.com"))
  :maintainer (nil . "friedman@splode.com")
  :provided   (ssh)
- :required   ((("comint" comint)
+ :required   ((("emacs" comint)
 	       ("shell" shell)))
  :keywords   (comm unix)
  :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"

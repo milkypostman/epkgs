@@ -6,7 +6,7 @@
  :maintainer ("Alan Shutko" . "ats@acm.org")
  :provided   (glimpse)
  :required   ((("compile" compile)
-	       ("dired" dired)))
+	       ("emacs" dired)))
  :homepage   "http://www.emacswiki.org/Glimpse"
  :wikipage   "http://www.emacswiki.org/Glimpse"
  :commentary "\

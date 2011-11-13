@@ -1,9 +1,0 @@
-(:summary    "Text mode, and its idiosyncratic commands"
- :created    "1985"
- :updated    "2011"
- :license    "GPL-3"
- :maintainer ("FSF")
- :keywords   (wp)
- :commentary "\
-This package provides the fundamental text mode documented in the
-Emacs user's manual.")

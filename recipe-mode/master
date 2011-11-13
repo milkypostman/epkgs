@@ -7,7 +7,7 @@
  :maintainer ("Shelagh Manton" . "shelagh.manton@gmail.com")
  :provided   (recipe-mode)
  :required   ((("calc" calc-units)
-	       ("emacs-core" font-lock overlay)
+	       ("emacs" font-lock overlay)
 	       ("grep" grep)
 	       ("iimage" iimage)))
  :keywords   (convenience recipes)

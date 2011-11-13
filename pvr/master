@@ -7,7 +7,7 @@
  :maintainer ("Lars Magne Ingebrigtsen" . "lmi@gnus.org")
  :provided   (pvr)
  :required   ((("cl" cl)
-	       ("gnus" time-date)
+	       ("time-date" time-date)
 	       ("xml" xml)))
  :keywords   (extensions processes)
  :homepage   "https://github.com/larsmagne/pvr.el")

@@ -7,6 +7,6 @@
  :maintainer ("Oliver Scholz" . "epameinondas@gmx.de")
  :provided   (rtf rtf-controls rtf-par rtf-reader rtf-tables state-m)
  :required   ((("cl" cl)
-	       ("emacs-core" code-pages)))
+	       ("emacs" code-pages)))
  :homepage   "http://savannah.nongnu.org/projects/emacs-rtf"
  :wikipage   "http://www.emacswiki.org/RTFMode")

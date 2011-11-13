@@ -5,7 +5,7 @@
  :provided   (lout-mode)
  :required   ((("cl" cl)
 	       ("compile" compile)
-	       ("easymenu" easymenu)
+	       ("emacs" easymenu)
 	       ("reporter" reporter)))
  :keywords   (lout wp)
  :homepage   "http://emarsden.chez.com/lout")

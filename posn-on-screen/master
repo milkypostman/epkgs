@@ -1,0 +1,30 @@
+(:summary    "Find the coordinates (x, y) around point on screen"
+ :repository (git . "git://github.com/Sarcasm/posn-on-screen.git")
+ :updated    "2011"
+ :license    "GPL-3"
+ :provided   (posn-on-screen)
+ :keywords   (convenience frames help)
+ :homepage   "https://github.com/Sarcasm/posn-on-screen"
+ :commentary "\
+This package aimed to provide one or more functions to get
+informations about the position on the screen of a visible point.
+With this information someone can create a frame near the point and
+provide a completion UI for example.
+
+Why make a package for such a small thing ?
+Because I saw more than one Emacs package doing that thing and I
+needed it too. I prefer to do that in a separate file because:
+- it can be used by one or more package
+- it can be enhanced to handle different window systems more
+  accurately
+
+Note: At the moment of this writing the code is shamelessly stolen
+from the esense package.
+
+Here is a list of packages that implements similar routines inside
+their code.
+- http://esense.sourceforge.net
+- http://www.emacswiki.org/PosTip
+- http://www.emacswiki.org/emacs/tooltip-help.el
+- http://code.google.com/p/csense/source/browse/trunk/csense.el
+- `dframe-reposition-frame-emacs' in dframe.el (shipped with Emacs)")

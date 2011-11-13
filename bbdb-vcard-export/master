@@ -6,5 +6,5 @@
  :maintainer ("Jim Hourihan" . "jimh@panix.com")
  :provided   (bbdb-vcard-export)
  :required   ((("bbdb" bbdb)
-	       ("easy-mmode" easy-mmode)))
+	       ("emacs" easy-mmode)))
  :keywords   (ipod vcard))

@@ -7,7 +7,7 @@
  :maintainer ("Mitsuo Saito" . "arch320@nospam.gmail.com")
  :provided   (auto-highlight-symbol)
  :required   ((("cl" cl)
-	       ("easy-mmode" easy-mmode)))
+	       ("emacs" easy-mmode)))
  :keywords   (convenience face match)
  :homepage   "https://github.com/mitsuo-saito/auto-highlight-symbol-mode"
  :commentary "\

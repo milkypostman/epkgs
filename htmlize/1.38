@@ -7,7 +7,7 @@
  :maintainer ("Hrvoje Niksic" . "hniksic@xemacs.org")
  :provided   (htmlize)
  :required   ((("cl" cl)
-	       ("custom" custom)))
+	       ("emacs" custom)))
  :keywords   (extensions hypermedia)
  :wikipage   "http://www.emacswiki.org/Htmlize"
  :commentary "\

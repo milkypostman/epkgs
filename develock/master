@@ -8,9 +8,8 @@
 	      ("Oscar Bonilla" . "ob@bitmover.com"))
  :maintainer ("Katsumi Yamaoka" . "yamaoka@jpl.org")
  :provided   (develock)
- :required   ((("advice" advice)
-	       ("cc-mode" cc-engine)
-	       ("emacs-core" font-lock)))
+ :required   ((("cc-mode" cc-engine)
+	       ("emacs" advice font-lock)))
  :keywords   (c change-log emacs-lisp font-lock html java mail news perl ruby tcl texinfo)
  :wikipage   "http://www.emacswiki.org/DevelockMode"
  :commentary "\

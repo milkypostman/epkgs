@@ -5,6 +5,6 @@
  :provided   (ebib)
  :required   ((("bibtex" bibtex)
 	       ("cl" cl)
-	       ("easymenu" easymenu)))
+	       ("emacs" easymenu)))
  :homepage   "https://github.com/joostkremers/ebib"
  :wikipage   "http://www.emacswiki.org/Ebib")
