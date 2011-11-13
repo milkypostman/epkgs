@@ -2,10 +2,11 @@
  :repository (git . "git://github.com/secondplanet/elixir-mode.git")
  :created    "201107"
  :updated    "2011"
- :license    "MIT"
+ :license    "GPL-2"
  :authors    (("Humza Yaqoob"))
  :maintainer ("Humza Yaqoob")
  :provided   (elixir-mode)
+ :required   ((("emacs" comint easymenu)))
  :keywords   (elixir languages)
  :homepage   "https://github.com/secondplanet/elixir-mode"
  :commentary "\

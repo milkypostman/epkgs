@@ -17,7 +17,8 @@
 	       ("reporter" reporter)
 	       ("shell" shell)
 	       ("speedbar" speedbar)
-	       ("thingatpt" thingatpt)))
+	       ("thingatpt" thingatpt))
+	      (("ido" ido)))
  :keywords   (statistical support)
  :homepage   "http://ess.r-project.org"
  :commentary "\

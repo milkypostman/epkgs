@@ -5,7 +5,7 @@
  :license    "GPL-3"
  :authors    (("Jonas Bernoulli" . "jonas@bernoul.li"))
  :maintainer ("Jonas Bernoulli" . "jonas@bernoul.li")
- :provided   (elm elm-vcs elm/rc xpkg)
+ :provided   (elm elm-vcs xpkg)
  :required   ((("arc-mode" arc-mode)
 	       ("cl" cl)
 	       ("elx" elx)
@@ -13,9 +13,9 @@
 	       ("gh" gh-repos)
 	       ("magit" magit)
 	       ("map-progress" map-progress)
+	       ("package" package)
 	       ("save-sexp" save-sexp)
-	       ("vcomp" vcomp)
-	       (nil elm-next epkg-next minmacs)))
+	       ("vcomp" vcomp)))
  :keywords   (git libraries packages)
  :homepage   "https://github.com/emacsmirror/p/wiki/Maintenance"
  :commentary "\
