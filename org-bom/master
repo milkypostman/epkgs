@@ -4,6 +4,6 @@
  :maintainer ("Christian Fortin" . "frozenlock@gmail.com")
  :provided   (org-bom)
  :required   ((("gnus" gnus-util)
-	       ("org-mode" org org-table)))
+	       ("org" org org-table)))
  :keywords   (a bill-of-materials buffer collection create entire of org tables the)
  :homepage   "https://github.com/Frozenlock/Org-Bill-of-materials")

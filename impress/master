@@ -5,7 +5,7 @@
  :maintainer ("David O'Toole" . "dto@gnu.org")
  :provided   (impress)
  :required   ((("cl" cl)
-	       ("org-mode" org)))
+	       ("org" org)))
  :keywords   (files tools)
  :commentary "\
 DONE groups

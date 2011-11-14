@@ -6,7 +6,7 @@
  :authors    (("Jose Antonio Ortega" . "jao@gnu.org"))
  :maintainer ("Jose Antonio Ortega" . "jao@gnu.org")
  :provided   (mdfind)
- :required   ((("org-mode" org)))
+ :required   ((("org" org)))
  :keywords   (data)
  :commentary "\
 A quick and dirty major mode for displaying results of OS X's

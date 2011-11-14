@@ -1,6 +1,6 @@
 (:license    "GPL-2"
  :provided   (org-toodledo)
- :required   ((("org-mode" org)
+ :required   ((("org" org)
 	       ("url" url url-http)
 	       ("w3m" w3m)
 	       ("xml" xml)))

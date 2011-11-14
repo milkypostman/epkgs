@@ -7,6 +7,6 @@
  :maintainer ("Dan Davison" . "dandavison0@gmail.com")
  :provided   (org-buffers)
  :required   ((("cl" cl)
-	       ("org-mode" org)))
+	       ("org" org)))
  :keywords   (calendar hypermedia outlines wp)
  :homepage   "http://orgmode.org")

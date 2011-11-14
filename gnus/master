@@ -35,7 +35,7 @@
 	       ("mailabbrev" mailabbrev)
 	       ("mh-e" mh-comp mh-e)
 	       ("netrc" netrc)
-	       ("org-mode" org-entities)
+	       ("org" org-entities)
 	       ("parse-time" parse-time)
 	       ("password-cache" password-cache)
 	       ("rfc822" rfc822)

@@ -1,7 +1,0 @@
-(:repository (git . "git://github.com/pinard/Pymacs.git")
- :created    "2001"
- :updated    "2003"
- :license    "GPL-2"
- :provided   (pymacs)
- :homepage   "http://pymacs.progiciels-bpi.ca"
- :wikipage   "http://www.emacswiki.org/PyMacs")

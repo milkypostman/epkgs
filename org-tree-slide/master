@@ -6,6 +6,6 @@
  :authors    (("Takaaki ISHIKAWA" . "takaxp@ieee.org"))
  :maintainer ("Takaaki ISHIKAWA" . "takaxp@ieee.org")
  :provided   (org-tree-slide)
- :required   ((("org-mode" org-timer)))
+ :required   ((("org" org-timer)))
  :keywords   (narrowing org-mode presentation)
  :homepage   "https://github.com/takaxp/org-tree-slide")

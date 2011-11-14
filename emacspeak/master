@@ -32,7 +32,7 @@
 	       ("json" json)
 	       ("lisp-mnt" lisp-mnt)
 	       ("man" man)
-	       ("org-mode" org org-exp)
+	       ("org" org org-exp)
 	       ("outline" outline)
 	       ("pianobar" pianobar)
 	       ("psvn" psvn)

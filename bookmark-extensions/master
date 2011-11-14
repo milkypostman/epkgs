@@ -10,7 +10,7 @@
 	       ("cl" cl)
 	       ("emacs" derived)
 	       ("gnus" message)
-	       ("org-mode" org)
+	       ("org" org)
 	       ("url" url)
 	       ("w3m" w3m))
 	      (("anything-delicious" anything-delicious)

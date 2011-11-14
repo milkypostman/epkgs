@@ -8,7 +8,7 @@
  :provided   (org-magit)
  :required   ((("cl" cl)
 	       ("magit" magit)
-	       ("org-mode" org)))
+	       ("org" org)))
  :keywords   (git magit outlines)
  :homepage   "https://github.com/sigma/org-magit"
  :commentary "\

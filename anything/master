@@ -18,7 +18,7 @@
 	       ("imenu" imenu)
 	       ("info" info)
 	       ("jabber" jabber)
-	       ("org-mode" org)
+	       ("org" org)
 	       ("recentf" recentf)
 	       ("shell" shell)
 	       ("shell-history" shell-history)

@@ -7,6 +7,6 @@
  :maintainer ("Puneeth Chaganti" . "punchagan+org2blog@gmail.com")
  :provided   (org2blog org2blog-autoloads)
  :required   ((("metaweblog" metaweblog)
-	       ("org-mode" org)
+	       ("org" org)
 	       ("xml-rpc" xml-rpc)))
  :homepage   "https://github.com/punchagan/org2blog")

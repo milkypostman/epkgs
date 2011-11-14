@@ -3,7 +3,7 @@
  :created    "20101122"
  :updated    "2010"
  :provided   (ssh-config)
- :required   ((("org-mode" org))
+ :required   ((("org" org))
 	      (("emacs" files)
 	       ("vc" vc-hooks)))
  :keywords   (emacs ssh)

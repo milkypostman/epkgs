@@ -9,7 +9,7 @@
  :required   ((("cl" cl)
 	       ("gnuplot" gnuplot)
 	       ("muse" muse muse-mode)
-	       ("org-mode" org)))
+	       ("org" org)))
  :keywords   (management muse project scrum)
  :homepage   "http://code.google.com/p/epm-mode"
  :wikipage   "http://www.emacswiki.org/EpmMode")

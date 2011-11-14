@@ -1,0 +1,17 @@
+(:summary    "Convert icalendar to org"
+ :repository (git . "git://github.com/cofi/ical2org.git")
+ :created    "20101229"
+ :updated    "2011"
+ :license    "GPL-2"
+ :authors    (("Michael Markert" . "markert.michael@googlemail.com"))
+ :maintainer ("Michael Markert" . "markert.michael@googlemail.com")
+ :provided   (ical2org)
+ :required   ((("cl" cl)
+	       ("icalendar" icalendar)
+	       ("org" org)))
+ :keywords   (calendar org)
+ :homepage   "https://github.com/cofi/ical2org"
+ :commentary "\
+Installation:
+
+  (require 'ical2org)")

@@ -7,6 +7,6 @@
  :maintainer ("Christopher Suckling" . "suckling@gmail.com")
  :provided   (org-mac-protocol)
  :required   ((("cl" cl)
-	       ("org-mode" org-bibtex org-protocol)))
+	       ("org" org-bibtex org-protocol)))
  :keywords   (hyperlinks outlines wp)
  :homepage   "https://github.com/claviclaws/org-mac-protocol")
