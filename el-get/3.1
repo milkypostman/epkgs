@@ -1,0 +1,26 @@
+(:summary    "Manage the external elisp bits and pieces you depend upon"
+ :repository (git . "git://github.com/dimitri/el-get.git")
+ :created    "20100617"
+ :updated    "2010"
+ :authors    (("Dimitri Fontaine" . "dim@tapoueh.org"))
+ :maintainer ("Dimitri Fontaine" . "dim@tapoueh.org")
+ :provided   (el-get)
+ :required   ((("cl" cl)
+	       ("emacs" autoload bytecomp dired help-mode simple)
+	       ("info" info)
+	       ("notify" notify))
+	      (("notifications" notifications)
+	       ("package" package)))
+ :keywords   (apt-get bzr cvs darcs elisp elpa emacs emacswiki fink git git-svn hg http http-tar install package pacman svn)
+ :homepage   "https://github.com/dimitri/el-get"
+ :wikipage   "http://www.emacswiki.org/el-get"
+ :commentary "\
+Version String are now inspired by how Emacs itself numbers its version.
+First is the major version number, then a dot, then the minor version
+number.  The minor version number is 0 when still developping the next
+major version.
+
+So 2.0 is a developer release while 2.1 will be the next stable release.
+
+Please note that this versioning policy has been picked while backing
+1.2~dev, so 1.0 was a \"stable\" release in fact.  Ah, history.")
