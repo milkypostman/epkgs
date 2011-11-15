@@ -2036,6 +2036,7 @@
 	(emacspeak-setup . "emacspeak")
 	(emacspeak-sgml-mode . "emacspeak")
 	(emacspeak-sh-script . "emacspeak")
+	(emacspeak-shr . "emacspeak")
 	(emacspeak-sigbegone . "emacspeak")
 	(emacspeak-sounds . "emacspeak")
 	(emacspeak-speedbar . "emacspeak")
