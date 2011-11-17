@@ -9,4 +9,5 @@
  :required   ((("metaweblog" metaweblog)
 	       ("org" org)
 	       ("xml-rpc" xml-rpc)))
+ :keywords   (blog orgmode wordpress)
  :homepage   "https://github.com/punchagan/org2blog")
