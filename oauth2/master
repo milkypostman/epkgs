@@ -1,0 +1,20 @@
+(:summary    "OAuth 2.0 Authorization Protocol"
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Julien Danjou" . "julien@danjou.info"))
+ :maintainer ("Julien Danjou" . "julien@danjou.info")
+ :provided   (oauth2)
+ :required   ((("gnus" plstore)
+	       ("json" json)))
+ :keywords   (comm)
+ :commentary "\
+Implementation of the OAuth 2.0 draft.
+
+The main entry point is `oauth2-auth-and-store' which will return a token
+structure. This token structure can be then used with
+`oauth2-url-retrieve-synchronously' to retrieve any data that need OAuth
+authentication to be accessed.
+
+If the token needs to be refreshed, the code handles it automatically and
+store the new value of the access token.")

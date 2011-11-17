@@ -1,0 +1,19 @@
+(:summary    "Resize windows interactively"
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Bastien" . "bzg@altern.org"))
+ :maintainer ("Bastien" . "bzg@altern.org")
+ :provided   (windresize)
+ :required   (((nil ring windmove)))
+ :keywords   (window)
+ :commentary "\
+This mode lets you edit the window configuration interactively just
+by using the keyboard.
+
+To use it, type M-x windresize; this enters put Emacs in a state
+where the up/down and left/right arrow keys resize the window
+dimensions.  To return Emacs to its ordinary state, type RET.
+
+See the docstring of `windresize' for a detailed description of the
+other commands that are available while windresize is active.")

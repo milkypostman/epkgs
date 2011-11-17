@@ -1,0 +1,17 @@
+(:summary    "Support for Google Contacts in Emacs"
+ :repository (git . "git://git.naquadah.org/google-contacts.el.git")
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Julien Danjou" . "julien@danjou.info"))
+ :maintainer ("Julien Danjou" . "julien@danjou.info")
+ :provided   (google-contacts google-contacts-gnus google-contacts-message google-oauth)
+ :required   ((("emacs" widget)
+	       ("gnus" gnus-art)
+	       ("url" url-cache)
+	       ("xml" xml)
+	       (nil oauth2)))
+ :keywords   (comm)
+ :homepage   "http://julien.danjou.info/google-contacts.el.html"
+ :commentary "\
+This allows you to access your Google Contacts from Emacs.")
