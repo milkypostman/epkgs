@@ -119,6 +119,10 @@ provides an interface to all of the possible customizations:
     cursor is an wiki link
     (default: `t')
 
+  * `markdown-wiki-link-alias-first' - set to a non-nil value to
+    treat aliased wiki links like `[[link text|PageName]]`.
+    When set to nil, they will be treated as `[[PageName|link text]]'.
+
   * `markdown-uri-types' - a list of protocols for URIs that
     `markdown-mode' should highlight.
 

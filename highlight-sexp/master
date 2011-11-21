@@ -5,5 +5,4 @@
  :authors    (("Grégoire Jadi" . "gregoire.jadi@gmail.com"))
  :maintainer ("Grégoire Jadi" . "gregoire.jadi@gmail.com")
  :provided   (highlight-sexp)
- :required   ((("cl" cl)))
  :homepage   "https://github.com/daimrod/highlight-sexp")

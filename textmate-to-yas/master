@@ -1,7 +1,7 @@
 (:summary    "Import Textmate macros into yasnippet syntax"
  :repository (git . "git://github.com/mlf176f2/textmate-to-yas.el.git")
  :created    "20101020"
- :updated    "20111118"
+ :updated    "20111121"
  :license    "GPL-3"
  :authors    (("Matthew L. Fidler"))
  :maintainer ("Matthew L. Fidler")
