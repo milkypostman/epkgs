@@ -5,7 +5,7 @@
  :authors    (("Andy Stewart" . "lazycat.manatee@gmail.com"))
  :maintainer ("Andy Stewart" . "lazycat.manatee@gmail.com")
  :provided   (windresize-extension)
- :required   ((("winresize" windresize)))
+ :required   ((("windresize" windresize)))
  :keywords   (windresize)
  :commentary "\
 Some extension functions for `windresize.el'

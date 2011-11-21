@@ -1,6 +1,6 @@
 (:summary    "Support for creation and update of file headers"
  :created    "19870804"
- :updated    "20110511"
+ :updated    "20111115"
  :license    "GPL-3"
  :authors    (("Lynn Slater")
 	      ("Drew Adams"))

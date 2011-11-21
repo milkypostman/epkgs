@@ -4,8 +4,8 @@
  :provided   (rfc)
  :required   ((("w3" w3)))
  :keywords   (rfc view)
- :homepage   "http://www.emacswiki.org/RFC"
- :wikipage   "http://www.emacswiki.org/RFC"
+ :homepage   "http://www.emacswiki.org/rfc-el"
+ :wikipage   "http://www.emacswiki.org/rfc-el"
  :commentary "\
 With this package, you can view the RFC articles.  To use this
 execute function `rfc-index' or

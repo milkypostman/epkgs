@@ -5,8 +5,8 @@
  :authors    (("Triet Hoai Lai" . "thlai@mail.usyd.edu.au"))
  :maintainer ("Triet Hoai Lai" . "thlai@mail.usyd.edu.au")
  :provided   (ltxsymb)
- :required   ((("cl" cl)
-	       (nil latex)))
+ :required   ((("auctex" latex)
+	       ("cl" cl)))
  :keywords   (latex symbol)
  :homepage   "http://ee.usyd.edu.au/~thlai/emacs"
  :commentary "\

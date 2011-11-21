@@ -9,6 +9,7 @@
  :required   ((("emacs" custom dired)))
  :keywords   (custom dired face filetype)
  :homepage   "https://github.com/jixiuf/dired-filetype-face"
+ :wikipage   "http://www.emacswiki.org/DiredFileTypeFaces"
  :commentary "\
 Set faces for different file type in dired buffer. I use a dark
  background, so maybe the default face doesn't meet your request.

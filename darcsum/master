@@ -1,5 +1,4 @@
 (:summary    "A pcl-cvs like interface for managing darcs patches"
- :repository (darcs . "http://joyful.com/repos/darcsum")
  :created    "2004"
  :updated    "2004"
  :license    "GPL-2"

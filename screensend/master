@@ -8,6 +8,7 @@
  :provided   (screensend)
  :keywords   (lisp screen send terminal tmux)
  :homepage   "https://github.com/benbooth5/screensend.el"
+ :wikipage   "http://www.emacswiki.org/ScreenSend"
  :commentary "\
 screensend.el
 -------------

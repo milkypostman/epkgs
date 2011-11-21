@@ -1,6 +1,6 @@
 (:summary    "Extensions to `info.el'"
  :created    "19950912"
- :updated    "20110823"
+ :updated    "20111115"
  :license    "GPL-2"
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")
@@ -73,6 +73,7 @@ Extensions to `info.el'.
              have been REDEFINED HERE:
 
  `Info-find-emacs-command-nodes' - Added in-progress message.
+ `Info-find-file' (Emacs 23+) - Handle virtual books.
  `Info-find-node', `Info-find-node-2' -
     Call `fit-frame' if `Info-fit-frame-flag'.
  `Info-fontify-node' -

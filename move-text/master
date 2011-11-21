@@ -8,9 +8,9 @@
  :homepage   "http://www.emacswiki.org/MoveText"
  :wikipage   "http://www.emacswiki.org/MoveText"
  :commentary "\
-MoveText is extracted from Basic edit toolkit. 
+MoveText is extracted from Basic edit toolkit.
 It allows you to move the current line using M-up / M-down
-if a region is marked, it will move the region instead. 
+if a region is marked, it will move the region instead.
 
 
 Installation:
@@ -23,8 +23,9 @@ It's set in your ~/.emacs like this:
 And the following to your ~/.emacs startup file.
 
 (require 'move-text)
+(move-text-default-bindings)
 
 
 Acknowledgements:
 
- Feature extracted from basid-edit-toolket.el - by Andy Stewart. (LazyCat)")
+ Feature extracted from basid-edit-toolkit.el - by Andy Stewart. (LazyCat)")

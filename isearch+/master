@@ -1,6 +1,6 @@
 (:summary    "Extensions to `isearch.el'"
  :created    "19951215"
- :updated    "20111113"
+ :updated    "20111114"
  :license    "GPL-2"
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")
