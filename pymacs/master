@@ -3,5 +3,4 @@
  :updated    "2003"
  :license    "GPL-2"
  :provided   (pymacs)
- :homepage   "http://pymacs.progiciels-bpi.ca"
- :wikipage   "http://www.emacswiki.org/PyMacs")
+ :homepage   "http://pymacs.progiciels-bpi.ca")

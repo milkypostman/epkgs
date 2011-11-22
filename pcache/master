@@ -1,0 +1,11 @@
+(:summary    "Persistent caching for Emacs"
+ :repository (git . "git://github.com/sigma/pcache.git")
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-2"
+ :authors    (("Yann Hodique" . "yann.hodique@gmail.com"))
+ :maintainer ("Yann Hodique" . "yann.hodique@gmail.com")
+ :provided   (pcache)
+ :required   ((("cl" cl)
+	       ("eieio" eieio eieio-base)))
+ :homepage   "https://github.com/sigma/pcache")

@@ -1,0 +1,13 @@
+(:summary    "Automatically create Emacs-Lisp Yasnippets"
+ :repository (git . "git://github.com/mlf176f2/el-autoyas.el.git")
+ :created    "20111121"
+ :updated    "20111121"
+ :license    "GPL-3"
+ :authors    (("Matthew L. Fidler"))
+ :maintainer ("Matthew L. Fidler")
+ :provided   (el-autoyas)
+ :required   ((("eldoc" eldoc))
+	      (("yasnippet" yasnippet)
+	       (nil yasnippet-bundle)))
+ :keywords   (emacs lisp mode yasnippet)
+ :homepage   "https://github.com/mlf176f2/el-autoyas.el")

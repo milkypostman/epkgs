@@ -56,5 +56,4 @@
 	       (nil byte-optimize latin-unity mail-abbrevs password text-props timer-funcs win-vm))
 	      (("secrets" secrets)))
  :keywords   (mail news)
- :homepage   "http://gnus.org"
- :wikipage   "http://www.emacswiki.org/Gnus")
+ :homepage   "http://gnus.org")

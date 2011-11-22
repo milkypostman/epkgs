@@ -60,7 +60,6 @@
 	      (("speedbar" speedbar)))
  :keywords   (dectalk emacspeak speech)
  :homepage   "http://emacspeak.sourceforge.net"
- :wikipage   "http://www.emacswiki.org/EmacSpeak"
  :commentary "\
 The complete audio desktop.
 
