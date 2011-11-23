@@ -15,5 +15,4 @@
 	       ("thingatpt" thingatpt)
 	       ("tree-widget" tree-widget)
 	       (nil un-define)))
- :homepage   "http://common-lisp.net/project/slime"
- :wikipage   "http://www.emacswiki.org/SlimeMode")
+ :homepage   "http://common-lisp.net/project/slime")

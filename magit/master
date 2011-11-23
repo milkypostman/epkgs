@@ -17,7 +17,6 @@
 	       ("view" view)))
  :keywords   (tools)
  :homepage   "https://github.com/magit/magit"
- :wikipage   "http://www.emacswiki.org/Magit"
  :commentary "\
 Invoking the magit-status function will show a buffer with the
 status of the current git repository and its working tree.  That

@@ -8,7 +8,6 @@
  :provided   (fci-osx-23-fix fill-column-indicator)
  :keywords   (convenience)
  :homepage   "https://github.com/alpaker/Fill-Column-Indicator"
- :wikipage   "http://www.emacswiki.org/FillColumnIndicator"
  :commentary "\
 Many modern editors and IDEs can graphically indicate the location of the
 fill column by drawing a thin line (in design parlance, a `rule') down the
@@ -31,14 +30,22 @@ Configuration
 =============
 
 By default, fci-mode draws its vertical indicator at the fill column.  If
-you'd like it to be drawn at another column, set `fci-rule-column' to a
-different value.  The default behavior is specified by setting
-`fci-rule-column' to nil.
+you'd like it to be drawn at another column, set `fci-rule-column' to the
+column number.  This variable becomes buffer-local when set, so you can
+use different value for different modes.  The default behavior (drawing
+the rule at the fill column) is specified by setting fci-rule-column to
+nil.
 
 On graphical displays the fill-column rule is drawn using a bitmap
 image.  Its color is controlled by the variable `fci-rule-color', whose
 value can be any valid color name.  The rule's width in pixels is
-determined by the variable `fci-rule-width'; the default value is 2.
+determined by the variable `fci-rule-width'; the default value is 1.
+
+The rule can be drawn as a solid or dashed line, controlled by the
+variable `fci-rule-use-dashes'; the default is nil.  The dash appearance is
+controlled by `fci-dash-pattern', which is the ratio of dash length to
+line height; the default is 0.75. (The value should be a number between 0
+and 1; values outside that interval are coerced to the nearest endpoint.)
 
 The image formats fci-mode can use are XPM, PBM, and XBM.  If Emacs has
 been compiled with the appropriate library it uses XPM images by default;

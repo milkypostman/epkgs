@@ -5,8 +5,7 @@
  :license    "GPL-2"
  :provided   (perlmonks)
  :required   ((("emacs" menu-bar)
-	       ("url" url)
-	       (nil perlmonks-auth)))
+	       ("url" url)))
  :homepage   "https://github.com/metaperl/emacs-perlmonks"
  :commentary "\
 Usage
