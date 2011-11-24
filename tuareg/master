@@ -18,7 +18,6 @@
 	       ("speedbar" speedbar)))
  :keywords   (languages ocaml)
  :homepage   "http://tuareg.forge.ocamlcore.org"
- :wikipage   "http://www.emacswiki.org/TuaregMode"
  :commentary "\
 Description:
 Tuareg helps editing OCaml code, to highlight important parts of
