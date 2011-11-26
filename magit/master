@@ -9,6 +9,7 @@
 	       ("diff-mode" diff-mode)
 	       ("ediff" ediff)
 	       ("emacs" easymenu)
+	       ("eshell" eshell)
 	       ("ido" ido)
 	       ("iswitchb" iswitchb)
 	       ("log-edit" log-edit)

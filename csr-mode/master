@@ -1,0 +1,14 @@
+(:summary    "Major mode for editing .csr files"
+ :repository (git . "git://github.com/trailbound/csr-mode.git")
+ :created    "20111125"
+ :updated    "2011"
+ :license    "GPL-2"
+ :authors    (("Greg Brown" . "gb@trailbound.net"))
+ :maintainer ("Greg Brown" . "gb@trailbound.net")
+ :provided   (csr-mode)
+ :keywords   (csr major-mode)
+ :homepage   "https://github.com/trailbound/csr-mode"
+ :commentary "\
+Thanks to Scott Andrew Borton for his tutorial and example on
+Emacs mode creation. CSR-Mode was built based on and borrowing
+heavily from his wpdl-mode example.")
