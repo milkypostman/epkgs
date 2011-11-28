@@ -1,0 +1,16 @@
+(:summary    "Run commands quickly"
+ :repository (git . "git://github.com/syohex/emacs-quickrun.git")
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-2"
+ :authors    (("Syohei YOSHIDA" . "syohex@gmail.com"))
+ :maintainer ("Syohei YOSHIDA" . "syohex@gmail.com")
+ :provided   (quickrun)
+ :required   ((("cl" cl)))
+ :homepage   "https://github.com/syohex/emacs-quickrun"
+ :commentary "\
+This package respects `quickrun.vim' developed by thinca
+  - https://github.com/thinca/vim-quickrun
+
+To use this package, add these lines to your .emacs file:
+    (require 'quickrun)")

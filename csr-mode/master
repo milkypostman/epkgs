@@ -10,5 +10,5 @@
  :homepage   "https://github.com/trailbound/csr-mode"
  :commentary "\
 Thanks to Scott Andrew Borton for his tutorial and example on
-Emacs mode creation. CSR-Mode was built based on and borrowing
+Emacs mode creation. CSR-Mode was built based on and stealing
 heavily from his wpdl-mode example.")
