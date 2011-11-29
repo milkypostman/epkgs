@@ -5,7 +5,7 @@
  :license    "GPL-3"
  :authors    (("Nic Ferrier" . "nferrier@ferrier.me.uk"))
  :maintainer ("Nic Ferrier" . "nferrier@ferrier.me.uk")
- :provided   (creole creoletable)
+ :provided   (creole)
  :required   ((("cl" cl)
 	       ("ert" ert)
 	       ("htmlfontify" htmlfontify)))

@@ -11,7 +11,6 @@
 	       ("flymake" flymake)))
  :keywords   (css less mode)
  :homepage   "https://github.com/purcell/less-css-mode"
- :wikipage   "http://www.emacswiki.org/LessCssMode"
  :commentary "\
 This mode provides syntax highlighting for LESS CSS files, plus
 optional support for `flymake-mode' and compilation of .less files

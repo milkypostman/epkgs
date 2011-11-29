@@ -1740,6 +1740,7 @@
 	(eim-extension . "eim-extension")
 	(eimp . "eimp")
 	(eiv . "eiv")
+	(el-autoyas . "el-autoyas")
 	(el-expectations . "el-expectations")
 	(el-fast-filelist/el-fast-filelist . "el-fast-filelist")
 	(el-get . "el-get")
