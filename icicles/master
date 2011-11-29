@@ -16,6 +16,7 @@
 	       ("filesets" filesets)
 	       ("imenu" imenu)
 	       ("info" info)
+	       ("locate" locate)
 	       ("proced" proced)
 	       ("recentf" recentf)
 	       ("shell" shell)

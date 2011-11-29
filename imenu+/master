@@ -1,12 +1,13 @@
 (:summary    "Extensions to `imenu.el'"
  :created    "19990826"
- :updated    "20110826"
+ :updated    "20111124"
  :license    "GPL-2"
  :authors    (("Drew Adams"))
  :maintainer ("Drew Adams")
  :provided   (imenu+)
  :required   ((("cl" cl)
-	       ("imenu" imenu)))
+	       ("imenu" imenu))
+	      (("hide-comnt" hide-comnt)))
  :keywords   (menus tools)
  :commentary "\
 Extensions to `imenu.el'.
@@ -14,7 +15,7 @@ Extensions to `imenu.el'.
   New functions defined here:
 
    `imenu-add-defs-to-menubar', `imenu--sort-submenu',
-   `toggle-imenu-sort'.
+   `imenup-invisible-p', `toggle-imenu-sort'.
 
   New user options (variables) defined here:
 
@@ -30,10 +31,12 @@ Extensions to `imenu.el'.
    `imenu-last-sort-function'.
 
 
- ***** NOTE: The following functions defined in `imenu.el' have
-             been REDEFINED HERE:
+ ***** NOTE: The following functions and macro defined in `imenu.el'
+             have been REDEFINED HERE:
 
- `imenu--mouse-menu', `imenu-update-menubar'.
+   `imenu--generic-function', `imenu--make-index-alist' (Emacs
+   21+), `imenu--mouse-menu', `imenu-progress-message',
+   `imenu-update-menubar' (Emacs <22).
 
 
  ***** NOTE: The following variable defined in `imenu.el' has
