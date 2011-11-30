@@ -1,5 +1,4 @@
 (:summary    "Open anything / QuickSilver-like candidate-selection framework"
- :repository (git . "git://repo.or.cz/anything-config.git")
  :created    "2007"
  :updated    "2011"
  :license    "GPL-2"
@@ -42,6 +41,7 @@
 	       ("yasnippet" yasnippet)))
  :keywords   (anything convenience files frames help matching outlines processes tools)
  :homepage   "http://www.emacswiki.org/emacs/Anything"
+ :wikipage   "Anything"
  :commentary "\
 Start with M-x anything, narrow the list by typing some pattern,
 select with up/down/pgup/pgdown/C-p/C-n/C-v/M-v, choose with enter,

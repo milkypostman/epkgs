@@ -1,5 +1,4 @@
 (:summary    "Outline-based notes management and organizer"
- :repository (git . "git://repo.or.cz/org-mode.git")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-3"
@@ -71,6 +70,7 @@
 	       (nil inferior-picolisp notmuch rcodetools swank-clojure)))
  :keywords   (calendar hypermedia outlines wp)
  :homepage   "http://orgmode.org"
+ :wikipage   "OrgMode"
  :commentary "\
 Org-mode is a mode for keeping notes, maintaining ToDo lists, and doing
 project planning with a fast and effective plain-text system.

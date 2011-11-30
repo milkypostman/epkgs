@@ -1,5 +1,4 @@
 (:summary    "Emacs git commit history interface ala gitk and qgit"
- :repository (git . "git://github.com/jimhourihan/egit.git")
  :created    "2008"
  :updated    "2008"
  :license    "GPL-2"
@@ -51,7 +50,9 @@ through comments. For example to highlight all cherry picked commits
 search for \"cherry\", etc.
 
 Start up time can be significant when 10s of thousands of commits are
-being displayed. Unfortunately, this is not an unusual situtation. 
+being displayed so the default is 500. You can increase that after the
+fact by clicking on the number of commits message at the end of the
+buffer. 
 
 TODO
  - graph representation along the left of the commit buffer
@@ -62,7 +63,6 @@ TODO
  - show list of authors/sign-offs related to commits
  - make occur more useful
  - speed up 
- - add \"more\" buttons to end of ewoc to load more commits
  - lazy resolve parent commits
  - make delete tag default to one of the current commit tags
 

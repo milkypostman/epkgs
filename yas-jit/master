@@ -1,5 +1,4 @@
 (:summary    "Loads Yasnippets on demand (makes start up faster)"
- :repository (git . "git://github.com/mlf176f2/yas-jit.el.git")
  :created    "20101027"
  :updated    "20111128"
  :license    "GPL-3"

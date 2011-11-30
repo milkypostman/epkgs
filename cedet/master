@@ -1,5 +1,4 @@
 (:summary    "Setup CEDET environment"
- :repository (bzr . "bzr://cedet.bzr.sourceforge.net/bzrroot/cedet/code/trunk")
  :created    "20021209"
  :updated    "20100717"
  :license    "GPL-2"
@@ -27,7 +26,7 @@
 	       (nil ede-pconf ede-pmake ede-proj makefile-edit semantic-ctxt semantic-decorate-mode semantic-ede-grammar semantic-find semantic-format semantic-imenu semantic-tag-file semantic-util semantic-wisent senator srecode-dictionary srecode-map thing wisent wisent-csharp-wy wisent-dot-wy wisent-php-wy)))
  :keywords   (syntax)
  :homepage   "http://cedet.sourceforge.net"
- :wikipage   "http://www.emacswiki.org/CollectionOfEmacsDevelopmentEnvironmentTools"
+ :wikipage   "CollectionOfEmacsDevelopmentEnvironmentTools"
  :commentary "\
 This library automatically setups your [X]Emacs to use CEDET tools.
 

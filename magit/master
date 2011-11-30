@@ -1,5 +1,4 @@
 (:summary    "Control Git from Emacs"
- :repository (git . "git://github.com/magit/magit.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"
@@ -18,6 +17,7 @@
 	       ("view" view)))
  :keywords   (tools)
  :homepage   "https://github.com/magit/magit"
+ :wikipage   "Magit"
  :commentary "\
 Invoking the magit-status function will show a buffer with the
 status of the current git repository and its working tree.  That

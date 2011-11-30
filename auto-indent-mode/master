@@ -1,7 +1,6 @@
 (:summary    "Auto indent Minor mode"
- :repository (git . "git://github.com/mlf176f2/auto-indent-mode.el.git")
  :created    "20101106"
- :updated    "20111128"
+ :updated    "20111129"
  :license    "GPL-3"
  :authors    (("Matthew L. Fidler, Le Wang & Others"))
  :maintainer ("Matthew L. Fidler")

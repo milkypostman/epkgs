@@ -1,5 +1,4 @@
 (:summary    "Mizar.el -- Mizar Mode for Emacs"
- :repository (git . "git://github.com/JUrban/mizarmode.git")
  :license    "GPL"
  :provided   (edu-test mizar)
  :required   ((("cl" cl)

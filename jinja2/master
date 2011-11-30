@@ -1,5 +1,4 @@
-(:repository (git . "git://github.com/paradoxxxzero/jinja2-mode.git")
- :created    "2011"
+(:created    "2011"
  :updated    "2011"
  :license    "GPL-3"
  :authors    (("Florian Mounier aka paradoxxxzero"))

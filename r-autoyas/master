@@ -1,7 +1,6 @@
 (:summary    "Provides automatically created yasnippets for R function argument lists"
- :repository (git . "git://github.com/mlf176f2/r-autoyas.el.git")
  :created    "20110325"
- :updated    "20111118"
+ :updated    "20111129"
  :license    "GPL-3"
  :authors    (("Sven Hartenstein & Matthew Fidler"))
  :maintainer ("Sven Hartenstein")

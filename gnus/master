@@ -1,5 +1,4 @@
 (:summary    "A newsreader for GNU Emacs"
- :repository (git . "http://git.gnus.org/gnus.git")
  :created    "1990"
  :updated    "2011"
  :license    "GPL-3"
@@ -56,4 +55,5 @@
 	       (nil byte-optimize latin-unity mail-abbrevs password text-props timer-funcs win-vm))
 	      (("secrets" secrets)))
  :keywords   (mail news)
- :homepage   "http://gnus.org")
+ :homepage   "http://gnus.org"
+ :wikipage   "Gnus")

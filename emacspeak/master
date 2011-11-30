@@ -1,5 +1,4 @@
 (:summary    "Emacspeak -- The Complete Audio Desktop"
- :repository (svn . "http://emacspeak.googlecode.com/svn")
  :created    "1994"
  :updated    "20080706"
  :license    "GPL-2"
@@ -60,6 +59,7 @@
 	      (("speedbar" speedbar)))
  :keywords   (dectalk emacspeak speech)
  :homepage   "http://emacspeak.sourceforge.net"
+ :wikipage   "EmacSpeak"
  :commentary "\
 The complete audio desktop.
 
