@@ -1,13 +1,12 @@
 (:summary    "Least Recently Used stacking for kill-ring"
- :repository (git . "git://github.com/lewang/le_emacs_LRU_yank.git")
  :created    "20060708"
- :updated    "20111106"
+ :updated    "20111130"
  :license    "GPL-2"
  :authors    (("Le Wang"))
  :provided   (LRU-yank)
  :required   ((("cl" cl)))
  :homepage   "https://github.com/lewang/le_emacs_LRU_yank"
- :wikipage   "http://www.emacswiki.org/LRU-yank"
+ :wikipage   "LRU-yank"
  :commentary "\
 Implements LRU (Least Recently Used) stacking for kill-ring.
 

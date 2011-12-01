@@ -1,5 +1,4 @@
 (:summary    "An Emacs interface to w3m"
- :repository (cvs . ":pserver:anonymous@cvs.namazu.org:/storage/cvsroot")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-2"
@@ -33,7 +32,7 @@
 	      (("emacs" image-mode)))
  :keywords   (hypermedia www)
  :homepage   "http://emacs-w3m.namazu.org"
- :wikipage   "http://www.emacswiki.org/emacs-w3m"
+ :wikipage   "emacs-w3m"
  :commentary "\
 Emacs-w3m is an Emacs interface to the w3m program.  For more
 detail about w3m, see:

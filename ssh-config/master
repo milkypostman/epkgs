@@ -1,5 +1,4 @@
 (:summary    "Manage both ssh and dsh confguration from emacs"
- :repository (git . "git://github.com/renard/ssh-config-el.git")
  :created    "20101122"
  :updated    "2010"
  :provided   (ssh-config)
@@ -7,4 +6,11 @@
 	      (("emacs" files)
 	       ("vc" vc-hooks)))
  :keywords   (emacs ssh)
- :homepage   "https://github.com/renard/ssh-config-el")
+ :homepage   "https://github.com/renard/ssh-config-el"
+ :commentary "\
+Add support for multipath SSH command:
+ - Org property: :Other-Path: jh1
+ - Result in ssh config:
+   ProxyCommand sh -c \"ssh -q -t PROXY nc -w 60 %h %p || ssh -q -t jh1 nc -w 60 %h %p\"
+
+If PROXY could not be joined, try to connect via jh1.")

@@ -1,5 +1,4 @@
 (:summary    "Major modes for editing and running Erlang"
- :repository (git . "git://github.com/erlang/otp.git")
  :updated    "1996"
  :license    "EPL-1.1"
  :authors    (("Anders Lindgren"))

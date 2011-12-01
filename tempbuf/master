@@ -6,8 +6,7 @@
  :maintainer ("Michele Bini" . "mibin@libero.it")
  :provided   (tempbuf)
  :keywords   (convenience)
- :homepage   "http://www.emacswiki.org/TempbufMode"
- :wikipage   "http://www.emacswiki.org/TempbufMode"
+ :wikipage   "TempbufMode"
  :commentary "\
 Tempbuf-mode is a minor mode that enables buffers to get
 automatically deleted in the background when it can be deduced that

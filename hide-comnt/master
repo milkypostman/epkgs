@@ -8,8 +8,7 @@
  :required   (nil
 	      (("emacs" newcomment)))
  :keywords   (comments hide show)
- :homepage   "http://www.emacswiki.org/HideOrIgnoreComments"
- :wikipage   "http://www.emacswiki.org/HideOrIgnoreComments"
+ :wikipage   "HideOrIgnoreComments"
  :commentary "\
 Hide/show comments in code.
 

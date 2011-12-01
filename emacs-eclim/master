@@ -1,5 +1,4 @@
 (:summary    "An interface to the Eclipse IDE"
- :repository (git . "git://github.com/senny/emacs-eclim.git")
  :created    "2009"
  :updated    "2009"
  :license    "GPL-3"
@@ -10,4 +9,4 @@
 	       ("compile" compile)
 	       ("json" json)))
  :homepage   "https://github.com/senny/emacs-eclim"
- :wikipage   "http://www.emacswiki.org/EmacsEclim")
+ :wikipage   "EmacsEclim")

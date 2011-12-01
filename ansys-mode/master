@@ -1,5 +1,4 @@
 (:summary    "Editor support for working with Ansys FEA"
- :repository (svn . "http://ansys-mode.googlecode.com/svn")
  :created    "2006"
  :updated    "2011"
  :license    "GPL-3"
@@ -11,7 +10,7 @@
 	       ("reporter" reporter)))
  :keywords   (convenience languages)
  :homepage   "http://code.google.com/p/ansys-mode"
- :wikipage   "http://www.emacswiki.org/AnsysMode"
+ :wikipage   "AnsysMode"
  :commentary "\
 Editor support for working with Ansys FEA.
 
