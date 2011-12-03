@@ -5,7 +5,7 @@
  :authors    (("David O'Toole" . "dto@gnu.org"))
  :maintainer ("David O'Toole" . "dto@gnu.org")
  :provided   (org-blog)
- :required   ((("org-mode" org-publish)))
+ :required   ((("org" org-publish)))
  :keywords   (hypermedia tools)
  :homepage   "http://www.emacswiki.org/OrgBlog"
  :wikipage   "http://www.emacswiki.org/OrgBlog"

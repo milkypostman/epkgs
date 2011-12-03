@@ -1,0 +1,10 @@
+(:repository (git . "git://github.com/martialboniou/revive-plus.git")
+ :created    "20110310"
+ :updated    "20111126"
+ :license    "GPL-3"
+ :authors    (("Martial Boniou"))
+ :maintainer ("Martial Boniou")
+ :provided   (revive+)
+ :required   ((("revive" revive)))
+ :keywords   (configuration serialization window)
+ :homepage   "https://github.com/martialboniou/revive-plus")

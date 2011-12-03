@@ -4,7 +4,7 @@
  :authors    (("David Nolen"))
  :maintainer ("David Nolen")
  :provided   (ob-sml)
- :required   ((("org-mode" ob ob-comint ob-eval ob-ref)
+ :required   ((("org" ob ob-comint ob-eval ob-ref)
 	       ("sml-mode" sml-mode)))
  :keywords   (literate\ programming reproducible\ research)
  :homepage   "http://orgmode.org")

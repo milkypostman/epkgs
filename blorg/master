@@ -9,7 +9,7 @@
 	       ("cl" cl)
 	       ("emacs" easy-mmode)
 	       ("eshell" em-unix eshell)
-	       ("org-mode" org)
+	       ("org" org)
 	       ("regexp-opt" regexp-opt)
 	       ("time-stamp" time-stamp)))
  :keywords   (atom blog feed html org-mode publishing rss)

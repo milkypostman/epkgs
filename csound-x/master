@@ -11,7 +11,7 @@
 	       ("thingatpt" thingatpt)
 	       (nil embedded-elisp-library query-sheet swank-clojure-autoload))
 	      (("mmm-mode" mmm-auto)
-	       ("org-mode" org)
+	       ("org" org)
 	       ("ses" ses)
 	       (nil keykit-interaction keykit-mode)))
  :keywords   (csound)

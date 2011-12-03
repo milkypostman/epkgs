@@ -1,5 +1,4 @@
 (:summary    "OCaml mode for Emacs"
- :repository (svn . "svn://svn.forge.ocamlcore.org/svn/tuareg")
  :created    "19970108"
  :updated    "2006"
  :license    "GPL-2"
@@ -18,7 +17,7 @@
 	       ("speedbar" speedbar)))
  :keywords   (languages ocaml)
  :homepage   "http://tuareg.forge.ocamlcore.org"
- :wikipage   "http://www.emacswiki.org/TuaregMode"
+ :wikipage   "TuaregMode"
  :commentary "\
 Description:
 Tuareg helps editing OCaml code, to highlight important parts of

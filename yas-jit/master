@@ -1,6 +1,6 @@
 (:summary    "Loads Yasnippets on demand (makes start up faster)"
  :created    "20101027"
- :updated    "20110929"
+ :updated    "20111128"
  :license    "GPL-3"
  :authors    (("Matthew L. Fidler"))
  :maintainer ("Matthew L. Fidler")
@@ -9,6 +9,7 @@
 	      (("yasnippet" yasnippet)
 	       (nil yasnippet-bundle)))
  :keywords   (fast yasnippet)
+ :homepage   "https://github.com/mlf176f2/yas-jit.el"
  :commentary "\
 Usage:
   Instead of using
@@ -31,7 +32,7 @@ Usage:
   (setq yas/root-directory \"~/.emacs.d/snippets/\");;
 
   This is because the root directory assumes that each load-path
-  contains directories of modes with snippets. 
+  contains directories of modes with snippets.
 
   Also note that yasnippet requires something in the hash,
   otherwise it loads everything.  Therefore text-mode snippets are

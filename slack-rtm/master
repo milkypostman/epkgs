@@ -9,7 +9,7 @@
  :required   ((("cl" cl)
 	       ("emacs" custom)
 	       ("ido" ido)
-	       ("org-mode" org)
+	       ("org" org)
 	       ("url" url-http url-util)
 	       ("xml" xml)))
  :keywords   (milk productivity remember the todo)

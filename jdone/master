@@ -1,0 +1,11 @@
+(:summary    "*job done* diary"
+ :repository (hg . "http://hg.code.sf.net/p/jdone/code")
+ :created    "20111112"
+ :updated    "2011"
+ :authors    (("Oleksandr Gavenko" . "gavenkoa@gmail.com"))
+ :maintainer ("Oleksandr Gavenko" . "gavenkoa@gmail.com")
+ :provided   (jdone)
+ :keywords   (blog blogging gtd microblog)
+ :wikipage   "http://www.emacswiki.org/jdone"
+ :commentary "\
+Very pure release.")

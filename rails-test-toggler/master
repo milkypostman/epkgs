@@ -1,0 +1,21 @@
+(:summary    "Flip between test and implementation in a rails project"
+ :repository (git . "git://github.com/mbriggs/rails-test-toggler.git")
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Matt Briggs" . "matt@mattbriggs.net"))
+ :maintainer ("Matt Briggs" . "matt@mattbriggs.net")
+ :provided   (rails-test-toggler)
+ :keywords   (rails)
+ :homepage   "https://github.com/mbriggs/rails-test-toggler"
+ :commentary "\
+Provides a way to quickly toggle between test and implementation
+
+Installation:
+
+Put rails-test-toggler.el somewhere in your load path, and
+
+(require 'rails-test-toggler)
+
+in your init.el. To toggle between test and implementation, bind
+rtt/toggle-test-and-implementation to something.")

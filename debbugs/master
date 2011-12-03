@@ -1,0 +1,18 @@
+(:summary    "SOAP library to access debbugs servers"
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Michael Albinus" . "michael.albinus@gmx.de"))
+ :maintainer ("Michael Albinus" . "michael.albinus@gmx.de")
+ :provided   (debbugs debbugs-gnu)
+ :required   ((("cl" cl)
+	       ("emacs" widget)
+	       ("soap-client" soap-client)
+	       ("tabulated-list" tabulated-list)))
+ :keywords   (comm hypermedia)
+ :commentary "\
+This package provides some basic functions to access a debbugs SOAP
+server (see <http://wiki.debian.org/DebbugsSoapInterface>).
+
+The SOAP functions \"get_usertag\" and \"get_versions\" are not
+implemented (yet).")

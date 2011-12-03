@@ -1,12 +1,14 @@
 (:summary    "Import Textmate macros into yasnippet syntax"
+ :repository (git . "git://github.com/mlf176f2/textmate-to-yas.el.git")
  :created    "20101020"
- :updated    "20110208"
+ :updated    "20111122"
  :license    "GPL-3"
  :authors    (("Matthew L. Fidler"))
  :maintainer ("Matthew L. Fidler")
  :provided   (texmate-import texmate-to-yas textmate-import textmate-to-yas)
  :required   ((("url" url)))
  :keywords   (textmate yasnippet)
+ :homepage   "https://github.com/mlf176f2/textmate-to-yas.el"
  :commentary "\
 This library allows you to import TextMate bundle snippets to
  Yasnippet

@@ -1,0 +1,42 @@
+(:summary    "Provides automatically created yasnippets for R function argument lists"
+ :created    "20110325"
+ :updated    "20111129"
+ :license    "GPL-3"
+ :authors    (("Sven Hartenstein & Matthew Fidler"))
+ :maintainer ("Sven Hartenstein")
+ :provided   (r-autoyas)
+ :required   ((("ess" ess-site))
+	      (("yasnippet" yasnippet)
+	       (nil yasnippet-bundle)))
+ :keywords   (r yasnippet)
+ :homepage   "https://github.com/mlf176f2/r-autoyas.el"
+ :commentary "\
+Changes by Matthew Fidler
+
+The snippet expansion occurs with the normal tab key.
+
+Attempted to support nested autosnippets;  I'm not sure it works yet.
+
+Usage:
+* Start yas/minor-mode
+
+* To expand a snippet write the function name and press <TAB>
+
+* The value is highlighted.  If you wish to delete the argument,
+  press C-d and the value will disappear
+
+* Alternatively you may press <TAB> to keep the default value.
+  Currently it will be removed unless yasnippet cannot tell if it
+  is modified.
+
+* To exit a snippet and delete remaining arguments, press C-g.
+
+Limitations
+
+* No nice error handling (e.g. when no R process is found).
+
+* No nested autosnippets supported. I think it should be possible
+  to support them, but it turned out that my knowledge of lisp and
+  of yasnippet's snippet organisation is far too limited. I guess
+  the use of yas/exit-all-snippets would have to be replaced by
+  exiting just the \"inner\" snippets. Can anyone help?")

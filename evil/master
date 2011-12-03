@@ -5,7 +5,7 @@
  :authors    (("Frank Fischer" . "frank.fischer@mathematik.tu-chemnitz.de")
 	      ("Vegard Øye" . "vegard_oye@hotmail.com")
 	      ("Nikolai Weibull" . "now@bitwi.se"))
- :provided   (evil evil-common evil-compatibility evil-core evil-digraphs evil-ex evil-insert evil-integration evil-interactive evil-maps evil-motions evil-operators evil-repeat evil-replace evil-search evil-tests evil-types evil-undo evil-vars evil-visual evil-window)
+ :provided   (evil evil-commands evil-common evil-core evil-digraphs evil-ex evil-integration evil-macros evil-maps evil-repeat evil-search evil-states evil-tests evil-types evil-vars)
  :required   ((("elp" elp)
 	       ("emacs" rect)
 	       ("ert" ert)
@@ -16,7 +16,6 @@
 	      (("undo-tree" undo-tree)))
  :keywords   (emulation vim)
  :homepage   "http://gitorious.org/evil"
- :wikipage   "http://www.emacswiki.org/Evil"
  :commentary "\
 Evil is an extensible vi layer for Emacs. It emulates the main
 features of Vim, and provides facilities for writing custom
@@ -27,7 +26,7 @@ Evil lives in a Git repository. To obtain Evil, do
      git clone git://gitorious.org/evil/evil.git
 
 Evil is discussed at <implementations-list at lists.ourproject.org>,
-a mailing list to which you can subscribe at:
+a mailing list you can subscribe to at:
 
 http://lists.ourproject.org/cgi-bin/mailman/listinfo/implementations-list
 

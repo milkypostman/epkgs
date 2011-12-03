@@ -1,0 +1,124 @@
+(:summary    "Edit trac wiki pages in emacs via XML-RPC"
+ :repository (git . "git://github.com/tiborsimko/trac-wiki-el.git")
+ :created    "2006"
+ :updated    "2006"
+ :license    "GPL-2"
+ :authors    (("Shun-ichi GOTO" . "shunichi.goto@gmail.com"))
+ :maintainer ("Shun-ichi GOTO" . "shunichi.goto@gmail.com")
+ :provided   (trac-wiki)
+ :required   ((("browse-url" browse-url)
+	       ("cl" cl)
+	       ("diff" diff)
+	       ("ediff" ediff)
+	       ("emacs" font-lock)
+	       ("hi-lock" hi-lock)
+	       ("mail-utils" mailheader)
+	       ("url" url url-http url-util)
+	       ("w3m" w3m)
+	       ("xml-rpc" xml-rpc)))
+ :keywords   (trac wiki wiki-rpc xml-rpc)
+ :homepage   "https://github.com/tiborsimko/trac-wiki-el"
+ :commentary "\
+Overview:
+
+Features:
+  * Multiple project access.
+  * Retrieve page from remote site and edit it with highlighting.
+  * Commit page with version check and detects remote update.
+  * Diff / Ediff between editing text and original.
+  * Revert local edit.
+  * Merge with most recent version if it is modified by other user.
+  * Show history of page (but not so informative)
+  * Preview page on Emacs with w3m (textual).
+  * Preview page with external browser with CSS.
+  * Search words on remote trac site and view result with highlighting.
+  * Jump to the page from search result.
+  * Completion for macro name and wiki page name in buffer.
+
+Requirement
+ (local side)
+  * Works on Emacs 21.4 or later.
+  * need xml-rpc.el with small patch for I18N (non-ascii)
+  * mule-ucs is required to use CJK text on Emacs 21.4.
+  * Optionally w3m and emacs-w3m is required for previewing.
+ (server side)
+  * Trac 0.10 or later.
+  * XmlRpcPlugin is installed and enabled.
+
+Restriction:
+  * It is not well on error handling (auth fail, spam-filtered, etc.)
+  * Cannot delete page version.
+  * Cannot operates tickets.
+  * Cannot treat tags provided by TagsPlugin.
+
+
+xml-rpc.el is required to use this program.
+It can be get from following URL.  (now, newest is rev 1.7)
+http://cvs.savannah.gnu.org/viewcvs/emacsweblogs/weblogger/lisp/xml-rpc.el
+
+If you want to edit wiki pages with non-ASCII characters,
+you need xml-rpc.el rev 1.7 or later.
+
+Use XmlRpcPlugin r1735 or later.  Earlier versions has a problem
+(see http://trac-hacks.org/ticket/845) on previewing.
+
+emacs-w3m can be get from:
+http://emacs-w3m.namazu.org/index.html
+Of course you must have w3m program because emacs-w3m use it.
+
+Configuration:
+
+ Step 1. Get and enable XmlRpcPlugin on your trac site.
+         http://trac-hacks.org/wiki/XmlRpcPlugin
+
+         Install and setup it with refering the page above.  Don't
+         forget enabling plugin in trac.ini and adding permission
+         to allow user accessing via XML-RPC.  For example, it is
+         recommended to add 'XML_RPC' permission to 'authenticated'
+         subject to allow XML-RPC access only for relyable users.
+
+ Step 2. Set project information variable `trac-projects'
+         in your .emacs.
+
+         If you have a trac site frequently visit to edit, you can
+         register the url of that site with alias name.  To do this
+         use `trac-wiki-define-project' like this:
+
+           (trac-wiki-define-project \"trac-hacks\"
+                                     \"http://trac-hacks.org/\" t)
+
+         1st argument is alias name which is used on selection.
+         2nd arugment is actual url.  3rd optional argument indicates
+         login is required for the site access.
+         If you have multiple instance in one site, you can use
+         `trac-wiki-define-multiple-projects'.
+         Ex.
+            (trac-wiki-define-multiple-projects
+                  '(\"proj1\" \"proj2\" \"test\")
+                   \"http://www.foo.bar.org/\" t)
+
+         An example above is equivalent to three
+         `trac-wiki-define-project' definition.
+
+         Note: Old version of `trac-wiki.el' required XML-RPC
+               end-point url for these functions.  Recent veresion
+               of `trac-wiki.el', however, `trac-wiki.el` expects
+               normal site url instead of end-point url.
+
+ Step 3. Set proxy information.
+
+         Url library gets proxy information via variable
+         `url-proxy-services'.  It is well to set in your .emacs.
+
+         See info of url pakage for more detail.
+         Jump to info node by evaluating this:
+           (Info-goto-node \"(url)Proxies\")
+
+ Step 4. Set autoload and more.
+
+         Set autoload definition in your .emacs for convenience:
+
+          (autoload 'trac-wiki \"trac-wiki\"
+                    \"Trac wiki editing entry-point.\" t)
+
+         And load mule-ucs for Emacs 21.x user.")

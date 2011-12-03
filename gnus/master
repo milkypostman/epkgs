@@ -1,5 +1,4 @@
 (:summary    "A newsreader for GNU Emacs"
- :repository (git . "http://git.gnus.org/gnus.git")
  :created    "1990"
  :updated    "2011"
  :license    "GPL-3"
@@ -35,7 +34,7 @@
 	       ("mailabbrev" mailabbrev)
 	       ("mh-e" mh-comp mh-e)
 	       ("netrc" netrc)
-	       ("org-mode" org-entities)
+	       ("org" org-entities)
 	       ("parse-time" parse-time)
 	       ("password-cache" password-cache)
 	       ("rfc822" rfc822)
@@ -57,4 +56,4 @@
 	      (("secrets" secrets)))
  :keywords   (mail news)
  :homepage   "http://gnus.org"
- :wikipage   "http://www.emacswiki.org/Gnus")
+ :wikipage   "Gnus")

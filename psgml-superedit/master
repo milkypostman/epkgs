@@ -1,0 +1,42 @@
+(:summary    "Additional editing functions for PSGML"
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-2"
+ :authors    (("Andreas Nolda" . "nolda.andreas@googlemail.com"))
+ :maintainer ("Andreas Nolda" . "nolda.andreas@googlemail.com")
+ :provided   (psgml-superedit)
+ :required   ((("psgml" psgml-edit)))
+ :wikipage   "http://www.emacswiki.org/PsgmlSuperedit"
+ :commentary "\
+This file defines additional editing functions for use with PSGML. For the
+most part, they generalise more basic editing functions in dwim ('do what I
+mean') style.
+
+Installation and proposed settings:
+
+(add-hook 'sgml-mode-hook
+          (lambda ()
+            (require 'psgml-superedit)
+            (define-key sgml-mode-map (kbd \"C-c C-e\") 'sgml-insert-element-dwim)
+            (define-key sgml-mode-map (kbd \"C-c DEL\") 'sgml-untag-element) ; freeing C-c -
+            (define-key sgml-mode-map (kbd \"C-c -\") 'sgml-delete-attribute)
+            (define-key sgml-mode-map (kbd \"C-c ?\") 'sgml-insert-pi)
+            (define-key sgml-mode-map (kbd \"M-;\") 'sgml-comment-dwim)
+            (define-key sgml-mode-map (kbd \"C-M-f\") 'sgml-forward-dwim)
+            (define-key sgml-mode-map (kbd \"<C-M-right>\") 'sgml-forward-dwim)
+            (define-key sgml-mode-map (kbd \"C-M-b\") 'sgml-backward-dwim)
+            (define-key sgml-mode-map (kbd \"<C-M-left>\") 'sgml-backward-dwim)
+            (define-key sgml-mode-map (kbd \"C-M-d\") 'sgml-down-dwim)
+            (define-key sgml-mode-map (kbd \"<C-M-down>\") 'sgml-down-dwim)
+            (define-key sgml-mode-map (kbd \"<C-M-next>\") 'sgml-forward-up-dwim)
+            (define-key sgml-mode-map (kbd \"C-M-u\") 'sgml-backward-up-dwim)
+            (define-key sgml-mode-map (kbd \"<C-M-up>\") 'sgml-backward-up-dwim)
+            (define-key sgml-mode-map (kbd \"<C-M-prior>\") 'sgml-backward-up-dwim)
+            (define-key sgml-mode-map (kbd \"C-M-SPC\") 'sgml-mark-dwim) ; caveat: psgml-other binds C-M-SPC, too
+            (define-key sgml-mode-map (kbd \"C-M-k\") 'sgml-kill-dwim)
+            (define-key sgml-mode-map (kbd \"<C-M-delete>\") 'sgml-kill-dwim)
+            (define-key sgml-mode-map (kbd \"<C-M-backspace>\") 'sgml-kill-backward-dwim)))
+
+(setq sgml-show-context-function 'sgml-show-context-xpath)
+
+This file is *NOT* part of PSGML.")

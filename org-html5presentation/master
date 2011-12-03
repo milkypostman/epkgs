@@ -7,7 +7,7 @@
  :provided   (org-html5presentation)
  :required   ((("cl" cl)
 	       ("htmlize" htmlize)
-	       ("org-mode" org-exp org-table)
+	       ("org" org-exp org-table)
 	       ("table" table)))
  :keywords   (calendar hypermedia outlines wp)
  :homepage   "http://orgmode.org"

@@ -16,6 +16,7 @@
 	       ("filesets" filesets)
 	       ("imenu" imenu)
 	       ("info" info)
+	       ("locate" locate)
 	       ("proced" proced)
 	       ("recentf" recentf)
 	       ("shell" shell)
@@ -61,8 +62,7 @@
 	       ("wid-edit+" wid-edit+)
 	       ("yow" yow)))
  :keywords   (abbrev apropos command completion extensions help keys local matching minibuffer regexp)
- :homepage   "http://www.emacswiki.org/Icicles"
- :wikipage   "http://www.emacswiki.org/Icicles"
+ :wikipage   "Icicles"
  :commentary "\
 Minibuffer input completion and cycling of completion candidates.
 

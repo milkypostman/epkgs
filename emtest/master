@@ -3,7 +3,7 @@
  :required   ((("cl" cl)
 	       ("emacs" custom)
 	       ("ewoc" ewoc)
-	       ("org-mode" org-id)
+	       ("org" org-id)
 	       ("outline" outline)
 	       ("pp" pp)
 	       ("predictive" heap)

@@ -9,6 +9,8 @@
 	       ("emacs" advice)
 	       ("ido" ido)))
  :keywords   (menu)
+ :homepage   "http://www.emacswiki.org/CommandSubset"
+ :wikipage   "http://www.emacswiki.org/CommandSubset"
  :commentary "\
 When hitting M-x there is a bazillion of commands to choose from.
 With jcl-define-command-subset one can create a command that works

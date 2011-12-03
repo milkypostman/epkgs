@@ -12,5 +12,4 @@
 	       ("sh-script" sh-script)
 	       ("skeleton" skeleton)))
  :keywords   (languages processes)
- :homepage   "http://www.gentoo.org/proj/en/lisp/emacs/emacs.xml"
- :wikipage   "http://www.emacswiki.org/GentooSyntax")
+ :homepage   "http://www.gentoo.org/proj/en/lisp/emacs/emacs.xml")

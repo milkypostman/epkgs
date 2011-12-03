@@ -1,12 +1,13 @@
-(:summary    "Major mode for Identica"
+(:summary    "Major mode API client for status.net open microblogging"
  :repository (git . "git://git.savannah.gnu.org/identica-mode.git")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-2"
  :authors    (("Gabriel Saldana" . "gsaldana@gmail.com"))
  :maintainer ("Gabriel Saldana" . "gsaldana@gmail.com")
- :provided   (identica-mode)
- :required   ((("cl" cl)
+ :provided   (bbdb-identica identica-friends identica-mode)
+ :required   ((("bbdb" bbdb bbdb-com)
+	       ("cl" cl)
 	       ("emacs" image)
 	       ("json" json)
 	       ("longlines" longlines)
@@ -14,6 +15,7 @@
 	       ("parse-time" parse-time)
 	       ("url" url url-http)
 	       ("w3m" w3m)
-	       ("xml" xml)))
+	       ("xml" xml)
+	       (nil bbdb-mua)))
  :keywords   (identica web)
  :wikipage   "http://www.emacswiki.org/Identica-mode")

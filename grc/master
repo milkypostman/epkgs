@@ -1,12 +1,12 @@
 (:summary    "Google Reader Mode for Emacs"
- :repository (git . "git://github.com/leathekd/grc.git")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-3"
  :authors    (("David Leatherman" . "leathekd@gmail.com"))
  :maintainer ("David Leatherman" . "leathekd@gmail.com")
- :provided   (grc grc-auth grc-comment grc-highlight grc-lib grc-list grc-parse grc-req grc-show)
- :required   ((("cl" cl)
+ :provided   (grc grc-auth grc-highlight grc-lib grc-list grc-parse grc-req grc-show)
+ :required   ((("assoc" assoc)
+	       ("cl" cl)
 	       ("gnus" html2text)
 	       ("json" json)))
  :homepage   "https://github.com/leathekd/grc"

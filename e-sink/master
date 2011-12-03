@@ -1,7 +1,6 @@
 (:summary    "Pipe output of any command to Emacs buffer"
- :repository (git . "git://github.com/lewang/e-sink.git")
  :created    "20110905"
- :updated    "20110907"
+ :updated    "20110912"
  :license    "GPL-3"
  :authors    (("Le Wang"))
  :maintainer ("Le Wang")
@@ -9,7 +8,7 @@
  :required   ((("cl" cl)))
  :keywords   (server shell-integration)
  :homepage   "https://github.com/lewang/e-sink"
- :wikipage   "http://www.emacswiki.org/e-sink"
+ :wikipage   "e-sink"
  :commentary "\
 The following applies to the \"--cmd\" option, which was the default at the time.
 

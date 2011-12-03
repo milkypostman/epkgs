@@ -8,6 +8,6 @@
  :required   ((("cl" cl)
 	       ("color-theme" color-theme)
 	       ("iimage" iimage)
-	       ("org-mode" org)
+	       ("org" org)
 	       ("uuidgen" uuidgen)))
  :keywords   (hypermedia tools))

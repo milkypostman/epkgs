@@ -31,7 +31,7 @@
 	       ("json" json)
 	       ("loadhist" loadhist)
 	       ("nxml" rng-nxml rng-valid)
-	       ("org-mode" org)
+	       ("org" org)
 	       ("outline" outline)
 	       ("ps-print" ps-print)
 	       ("re-builder" re-builder)

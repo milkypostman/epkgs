@@ -6,6 +6,6 @@
  :provided   (peano)
  :required   ((("cl" cl)
 	       ("emacs" font-lock)
-	       ("org-mode" org)
+	       ("org" org)
 	       ("rx" rx)))
  :keywords   (convenience outlines tools))

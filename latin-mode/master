@@ -1,2 +1,0 @@
-(:repository (git . "git://github.com/konr/latin-mode.git")
- :homepage   "https://github.com/konr/latin-mode")

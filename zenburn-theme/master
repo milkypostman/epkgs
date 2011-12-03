@@ -1,5 +1,4 @@
 (:summary    "A low contrast color theme for Emacs"
- :repository (git . "git://github.com/bbatsov/zenburn-emacs.git")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-3"

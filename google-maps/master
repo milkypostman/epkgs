@@ -10,7 +10,7 @@
 	       ("cl" cl)
 	       ("emacs" easymenu)
 	       ("json" json)
-	       ("org-mode" org org-agenda)
+	       ("org" org org-agenda)
 	       ("url" url-util)))
  :keywords   (comm)
  :homepage   "http://julien.danjou.info/google-maps-el.html"

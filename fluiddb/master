@@ -1,9 +1,9 @@
-(:summary    "Code to work with FluidDB"
+(:summary    "Legacy function to work with FluidInfo"
  :repository (git . "git://github.com/hdurer/fluiddb.el.git")
  :created    "2009"
  :updated    "2010"
  :license    "GPL-2"
- :provided   (fluiddb fluiddbinterface fluiddbutils)
+ :provided   (fluiddb fluidinfo fluidinfointerface fluidinfoutils)
  :required   ((("cl" cl)
 	       ("json" json)
 	       ("url" url)))

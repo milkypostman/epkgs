@@ -1,0 +1,8 @@
+(:repository (git . "git://github.com/daimrod/highlight-sexp.git")
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Grégoire Jadi" . "gregoire.jadi@gmail.com"))
+ :maintainer ("Grégoire Jadi" . "gregoire.jadi@gmail.com")
+ :provided   (highlight-sexp)
+ :homepage   "https://github.com/daimrod/highlight-sexp")

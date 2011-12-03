@@ -12,7 +12,6 @@
 	       ("url" url-http)))
  :keywords   (mediawiki network wiki wikipedia)
  :homepage   "https://launchpad.net/mediawiki-el"
- :wikipage   "http://www.emacswiki.org/MediaWikiMode"
  :commentary "\
 This version of mediawiki.el represents a merging of
 wikipedia-mode.el (maintained by Uwe Brauer <oub at mat.ucm.es>)

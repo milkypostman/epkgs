@@ -1,0 +1,14 @@
+(:summary    "Fold DWIM bound to org key-strokes"
+ :created    "20101005"
+ :updated    "20111202"
+ :license    "GPL-3"
+ :authors    (("Matthew L. Fidler & Shane Celis"))
+ :maintainer ("Matthew L. Fidler")
+ :provided   (fold-dwim-org)
+ :required   ((("fold-dwim" fold-dwim)))
+ :keywords   (emacs folding org-mode)
+ :homepage   "https://github.com/mlf176f2/fold-dwim-org"
+ :commentary "\
+Modification of hideshow-org which is located originally at:
+
+git clone git://github.com/secelis/hideshow-org.git")

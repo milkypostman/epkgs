@@ -7,7 +7,7 @@
  :maintainer ("Eric Schulte")
  :provided   (simple-file-server simple-server)
  :required   ((("htmlize" htmlize)
-	       ("org-mode" org org-exp)))
+	       ("org" org org-exp)))
  :homepage   "https://github.com/eschulte/simple-server"
  :commentary "\
 `simple-server' implements a very simple http server which will

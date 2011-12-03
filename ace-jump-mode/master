@@ -8,5 +8,4 @@
  :provided   (ace-jump-mode)
  :required   ((("cl" cl)))
  :keywords   (cursor location motion)
- :homepage   "https://github.com/winterTTr/ace-jump-mode"
- :wikipage   "http://www.emacswiki.org/AceJump")
+ :homepage   "https://github.com/winterTTr/ace-jump-mode")

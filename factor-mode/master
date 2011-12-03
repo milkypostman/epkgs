@@ -1,5 +1,4 @@
 (:summary    "Mode for editing Factor source"
- :repository (git . "git://factorcode.org/git/factor.git")
  :created    "2008"
  :updated    "2010"
  :authors    (("Jose Antonio Ortega Ruiz" . "jao@gnu.org"))

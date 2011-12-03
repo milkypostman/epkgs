@@ -14,9 +14,6 @@ And the following to your ~/.emacs startup file.
 
 (require 'ctags-update)
 (ctags-update-minor-mode 1)
-or
-(autoload 'ctags-update-minor-mode \"ctags-update\" \"update TAGS using ctags\" t)
-(ctags-update-minor-mode 1)
 
 then when you save a file ,`ctags-update' will recursively searches each
 parent directory for a file named 'TAGS'. if found ,it will use

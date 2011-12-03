@@ -1,6 +1,8 @@
 (:summary    "Display all buffers which name and mode match a regexp "
  :license    "GPL-3"
  :provided   (arrange-buffers)
+ :homepage   "http://www.emacswiki.org/rcircDisplayChannels"
+ :wikipage   "http://www.emacswiki.org/rcircDisplayChannels"
  :commentary "\
 (arrange-buffers MATCH-NAME MATCH-MODE)
 Displays all buffers whose name regexp-match MATCH-NAME

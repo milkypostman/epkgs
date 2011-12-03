@@ -1,5 +1,4 @@
 (:summary    "Multi major modes for Google Web Toolkit code"
- :repository (git . "git://github.com/fhd/gwt-mumamo.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-2"
@@ -7,7 +6,7 @@
  :maintainer ("Felix H. Dahlke" . "fhd@ubercode.de")
  :keywords   (gwt languages)
  :homepage   "https://github.com/fhd/gwt-mumamo"
- :wikipage   "http://www.emacswiki.org/GwtMuMaMo"
+ :wikipage   "GwtMuMaMo"
  :commentary "\
 The Google Web Toolkit (GWT) allows you to write client-side code for
 web applications in Java, which is translated to JavaScript by the GWT

@@ -1,0 +1,29 @@
+(:summary    "A simple mode for editing Actionscript 3 files"
+ :repository (git . "git://github.com/austinhaas/actionscript-mode.git")
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-2"
+ :authors    (("Austin Haas"))
+ :maintainer ("Austin Haas")
+ :provided   (actionscript-mode)
+ :required   ((("emacs" font-lock)
+	       ("regexp-opt" regexp-opt)))
+ :keywords   (language modes)
+ :homepage   "https://github.com/austinhaas/actionscript-mode"
+ :wikipage   "http://www.emacswiki.org/ActionScriptMode"
+ :commentary "\
+Add this to your .emacs:
+
+(autoload 'actionscript-mode \"actionscript-mode\" \"Major mode for actionscript.\" t)
+(add-to-list 'auto-mode-alist '(\"\\\\.as$\" . actionscript-mode))
+
+------------------
+TODO
+
+Imenu (imenu-generic-expression or imenu-create-index-function)
+
+------------------
+
+Changes in 7.2
+
+Updated comments.")

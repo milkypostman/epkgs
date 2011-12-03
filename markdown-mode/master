@@ -12,7 +12,6 @@
 	       ("thingatpt" thingatpt)))
  :keywords   (github\ flavored\ markdown itex markdown)
  :homepage   "http://jblevins.org/projects/markdown-mode"
- :wikipage   "http://www.emacswiki.org/MarkdownMode"
  :commentary "\
 markdown-mode is a major mode for editing [Markdown][]-formatted
 text files in GNU Emacs.  markdown-mode is free software, licensed
@@ -118,6 +117,10 @@ provides an interface to all of the possible customizations:
     to automatically open a linked document in a new buffer if the
     cursor is an wiki link
     (default: `t')
+
+  * `markdown-wiki-link-alias-first' - set to a non-nil value to
+    treat aliased wiki links like `[[link text|PageName]]`.
+    When set to nil, they will be treated as `[[PageName|link text]]'.
 
   * `markdown-uri-types' - a list of protocols for URIs that
     `markdown-mode' should highlight.

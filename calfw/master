@@ -10,7 +10,7 @@
 	       ("cl" cl)
 	       ("howm" howm)
 	       ("icalendar" icalendar)
-	       ("org-mode" org org-agenda)
+	       ("org" org org-agenda)
 	       ("url" url)))
  :keywords   (calendar)
  :homepage   "https://github.com/kiwanami/emacs-calfw"

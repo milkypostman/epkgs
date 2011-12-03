@@ -1,5 +1,4 @@
 (:summary    "Google's C/C++ style for c-mode"
- :repository (svn . "http://google-styleguide.googlecode.com/svn")
  :license    "GPL-1"
  :provided   (google-c-style)
  :required   ((("cc-mode" cc-defs)))

@@ -1,0 +1,5 @@
+(:created    "2010"
+ :updated    "2011"
+ :provided   (dbgr-fringe dbgr-regexp)
+ :required   ((("cl" cl)))
+ :homepage   "https://github.com/rocky/emacs-dbgr")

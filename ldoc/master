@@ -5,7 +5,7 @@
  :authors    (("David O'Toole" . "dto@gnu.org"))
  :maintainer ("David O'Toole" . "dto@gnu.org")
  :provided   (ldoc)
- :required   ((("org-mode" org)))
+ :required   ((("org" org)))
  :keywords   (lisp tools)
  :commentary "\
 LDOC reads Common Lisp and Emacs Lisp files, extracting headers,

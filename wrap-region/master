@@ -8,7 +8,6 @@
  :provided   (wrap-region)
  :keywords   (convenience speed)
  :homepage   "https://github.com/rejeep/wrap-region"
- :wikipage   "http://www.emacswiki.org/WrapRegion"
  :commentary "\
 wrap-region is a minor mode that wraps a region with
 punctuations. For tagged markup modes, such as HTML and XML, it

@@ -6,7 +6,7 @@
  :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
  :provided   (sequential-command sequential-command-config)
  :required   ((("cl" cl))
-	      (("org-mode" org)))
+	      (("org" org)))
  :keywords   (convenience lisp)
  :homepage   "http://www.emacswiki.org/SequentialCommand"
  :wikipage   "http://www.emacswiki.org/SequentialCommand"
