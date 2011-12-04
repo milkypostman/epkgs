@@ -1,0 +1,8 @@
+(:summary    "milkypostman's additions to markdown-mode"
+ :repository (git . "git://github.com/milkypostman/markdown-mode-plus.git")
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-3"
+ :provided   (markdown-mode+)
+ :required   ((("markdown-mode" markdown-mode)))
+ :homepage   "https://github.com/milkypostman/markdown-mode-plus")
