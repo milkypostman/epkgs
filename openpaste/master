@@ -1,0 +1,4 @@
+(:summary    "Emacs interface for OpenPastebin"
+ :license    "GPL-2"
+ :provided   (openpaste)
+ :required   ((("xml-rpc" xml-rpc))))

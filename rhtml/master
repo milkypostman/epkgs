@@ -1,0 +1,6 @@
+(:license    "GPL-2"
+ :provided   (rhtml-erb rhtml-fonts rhtml-mode rhtml-navigation rhtml-ruby-hook rhtml-sgml-hacks)
+ :required   ((("cl" cl)
+	       ("ruby-mode" ruby-mode)
+	       ("sgml-mode" sgml-mode)))
+ :homepage   "https://github.com/eschulte/rhtml")

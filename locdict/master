@@ -1,0 +1,19 @@
+(:summary    "Using a local Webster dictionary"
+ :created    "1999"
+ :updated    "1999"
+ :license    "GPL-2"
+ :authors    (("Lars Magne Ingebrigtsen" . "lmi@gnus.org"))
+ :maintainer ("Lars Magne Ingebrigtsen" . "lmi@gnus.org")
+ :keywords   (language)
+ :homepage   "http://quimby.gnus.org/elisp"
+ :commentary "\
+Usage:
+
+Put the following in your .emacs file
+
+(autoload 'locdict \"locdict\" nil t)
+
+and then use `M-x locdict RET word RET' to look up \"word\".
+
+You need to get the dictionary files from somewhere else --
+I certainly wouldn't know a free source.")

@@ -1,0 +1,9 @@
+(:summary    "Create grids of windows"
+ :authors    (("Steven Thomas"))
+ :maintainer ("Steven Thomas")
+ :provided   (window-grid)
+ :required   ((("cl" cl)))
+ :homepage   "https://github.com/chumpage/window-grid.el"
+ :commentary "\
+Window-grid lets you easily create a grid of windows. Just specify
+the rows and columns. The core function is window-grid.")

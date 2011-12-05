@@ -1,0 +1,25 @@
+(:summary    "M-y to answer \"yes\" to `yes-or-no-p'"
+ :created    "2004"
+ :updated    "2009"
+ :license    "GPL-3"
+ :authors    (("Kevin Ryde" . "user42@zip.com.au"))
+ :maintainer ("Kevin Ryde" . "user42@zip.com.au")
+ :provided   (quick-yes)
+ :keywords   (convenience)
+ :wikipage   "QuickYes"
+ :commentary "\
+This is a spot of code for Emacs 21 (and up) to bind M-y to answer \"yes\"
+to a `yes-or-no-p' question.
+
+Some `yes-or-no-p' questions can be disabled, but if you leave them
+enabled as a reminder, or just in case it's important, then M-y is a good
+shortcut for accepting.
+
+If you start typing \"y\" or \"ye\", etc, you can still use M-y to finish it.
+Typing \"y\" is easy to do if you don't immediately notice it's
+`yes-or-no-p' instead of `y-or-n-p'.
+
+quick-yes only affects a `yes-or-no-p' question in the minibuffer, it
+doesn't change a window system dialog box (as used by `yes-or-no-p' when
+the invoking action was a mouse button press instead of something from
+the keyboard).")

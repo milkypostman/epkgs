@@ -1,0 +1,9 @@
+(:summary    "Easy highlighting of summary and article headers"
+ :created    "2006"
+ :updated    "2006"
+ :license    "GPL-2"
+ :authors    (("Wes Hardaker"))
+ :maintainer ("Wes Hardaker")
+ :provided   (gnus-highlight)
+ :required   ((("gnus" gnus-art)))
+ :homepage   "http://www.hardakers.net/elisp")

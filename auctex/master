@@ -1,0 +1,23 @@
+(:summary    "Support for TeX documents"
+ :created    "1985"
+ :updated    "2010"
+ :license    "GPL-3"
+ :maintainer (nil . "auctex-devel@gnu.org")
+ :provided   (bib-cite context context-en context-nl font-latex latex multi-prompt preview prv-emacs tex tex-bar tex-buf tex-fold tex-font tex-fptex tex-info tex-jp tex-mik tex-site tex-style texmathp toolbar-x)
+ :required   ((("cl" cl)
+	       ("crm" crm)
+	       ("desktop" desktop)
+	       ("emacs" comint custom easymenu font-lock overlay)
+	       ("etags" etags)
+	       ("etexshow" etexshow)
+	       ("info" info)
+	       ("outline" outline)
+	       ("reftex" reftex)
+	       ("reporter" reporter)
+	       ("texinfo" texinfo)))
+ :keywords   (tex)
+ :wikipage   "AUCTeX"
+ :commentary "\
+This file provides AUCTeX support for plain TeX as well as basic
+functions used by other AUCTeX modes (e.g. for LaTeX, Texinfo and
+ConTeXt).")

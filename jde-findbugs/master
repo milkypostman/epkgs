@@ -1,0 +1,42 @@
+(:summary    "Findbugs interface for JDE"
+ :created    "20050207"
+ :updated    "2004"
+ :license    "GPL-2"
+ :authors    (("Markus Mohnen and Paul Kinnucan"))
+ :maintainer ("Markus Mohnen and Paul Kinnucan")
+ :provided   (jde-findbugs)
+ :required   ((("jdee" jde-compile jde-package)))
+ :keywords   (bug emacs finder java)
+ :commentary "\
+This package provides an interface from JDE (see
+http://jde.sunsite.dk/) to Findbugs (see
+http://findbugs.sourceforge.net/), a development tool that looks
+for bugs in Java code.
+
+
+Currently it has the following limitations: 
+
+ You cannot yet run the check on a single class, only either the
+ current package, or a directory defined in a variable.  Just have
+ to identify the name(s) of the classes to pass to findbugs.
+ Should be easy.
+
+ You cannot yet specify memory parameters to the JVM.  Should be
+ easy.
+
+ findbugs sometimes outputs extra information to stderr that can
+ trick the compile window into thinking there is an error to jump
+ to.  I'm not sure what to do about this.
+
+ Not all of the error messages output by findbugs in it's \"emacs\"
+ format are actually in the right format (e.g.: UrF). I have
+ submitted a patch to findbugs that helps somewhat at
+ http://sourceforge.net/tracker/index.php?func=detail&aid=1117624&group_id=96405&atid=614695
+
+
+Installation:
+
+ Put this file on your Emacs-Lisp load path and add following into your
+ ~/.emacs startup file
+
+     (require 'jde-findbugs)")

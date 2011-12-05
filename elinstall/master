@@ -1,0 +1,12 @@
+(:created    "2010"
+ :updated    "2010"
+ :license    "GPL-2"
+ :authors    (("Tom Breton (Tehom)" . "tehom@panix.com"))
+ :maintainer ("Tom Breton (Tehom)" . "tehom@panix.com")
+ :provided   (elinstall)
+ :required   ((("emacs" autoload cus-edit)
+	       ("pp" pp))
+	      (("emacs" byte-compile)))
+ :keywords   (internal maint tools)
+ :homepage   "http://repo.or.cz/w/elinstall.git"
+ :wikipage   "elinstall")

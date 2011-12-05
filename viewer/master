@@ -1,0 +1,13 @@
+(:summary    "View-mode extension"
+ :created    "2009"
+ :updated    "20100504"
+ :license    "GPL-2"
+ :authors    (("rubikitch" . "rubikitch@ruby-lang.org"))
+ :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
+ :provided   (viewer)
+ :required   ((("cl" cl)))
+ :keywords   (extensions view)
+ :commentary "\
+Viewer is view-mode extension. View-mode is finger-friendly than
+normal editing because of many alphabetical commands. Let's use
+view-mode more to protect our pinky.")

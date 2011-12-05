@@ -1,0 +1,10 @@
+(:license    "GPL"
+ :provided   (caml caml-compat caml-emacs caml-font caml-help caml-hilit caml-types caml-xemacs camldebug inf-caml)
+ :required   ((("compile" compile)
+	       ("emacs" comint derived font-lock overlay)
+	       ("imenu" imenu)
+	       ("info" info)
+	       ("shell" shell)
+	       ("thingatpt" thingatpt)))
+ :homepage   "http://caml.inria.fr"
+ :wikipage   "CamlMode")

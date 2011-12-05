@@ -1,0 +1,16 @@
+(:summary    "ClearCase/Emacs integration"
+ :created    "1999"
+ :updated    "2007"
+ :license    "GPL-2"
+ :authors    (("Kevin Esler" . "kaesler@us.ibm.com"))
+ :maintainer ("Kevin Esler" . "kaesler@us.ibm.com")
+ :provided   (clearcase)
+ :required   ((("cl" cl)
+	       ("emacs" comint custom dired easymenu timer)
+	       ("executable" executable)
+	       ("reporter" reporter)
+	       ("ring" ring)
+	       ("tq" tq)))
+ :keywords   (clearcase tools)
+ :homepage   "http://members.verizon.net/kevin.a.esler/EmacsClearCase"
+ :wikipage   "ClearCase")

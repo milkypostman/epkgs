@@ -1,0 +1,24 @@
+(:summary    "Quickly open corresponding file (eg test vs impl)"
+ :created    "20060322"
+ :updated    "2007"
+ :license    "MIT"
+ :authors    (("Ryan Davis" . "ryand-ruby@zenspider.com"))
+ :maintainer ("Ryan Davis" . "ryand-ruby@zenspider.com")
+ :provided   (toggle)
+ :required   ((("cl" cl)))
+ :keywords   (convenience extensions files)
+ :commentary "\
+This package provides the ability to quickly open a corresponding
+file for the current buffer by using a bi-directional mapping of
+regular expression pairs. You can select a mapping style from
+`toggle-mapping-styles' using the `toggle-style' function or set
+your default style via the `toggle-mapping-style' variable.
+
+There are 4 different mapping styles in this version: zentest,
+rails, and ruby. Feel free to submit more and I'll incorporate
+them.
+
+Example Mapping (ruby style):
+
+blah.rb <-> test_blah.rb
+lib/blah.rb <-> test/test_blah.rb")

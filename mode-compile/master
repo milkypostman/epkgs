@@ -1,0 +1,229 @@
+(:summary    "Compile files according to major-mode"
+ :created    "1994"
+ :updated    "2006"
+ :license    "GPL-3"
+ :authors    (("Heddy Boubaker" . "heddy.boubaker@cena.fr"))
+ :maintainer ("wanted")
+ :provided   (mode-compile mode-compile-kill)
+ :required   ((("cl" cl)
+	       ("compile" compile)
+	       ("reporter" reporter)))
+ :keywords   (compilation compile languages modes)
+ :wikipage   "ModeCompile"
+ :commentary "\
+This package needs a new maintainer.  Please contact the original author if
+you are interested.
+
+@ Purpose:
+==========
+
+ Provide `mode-compile' function as a replacement  for the use of `compile'
+ command which  is  very dumb  for  creating it's  compilation command (use
+ \"make  -k\" by default).  `mode-compile'  is  a layer  above `compile'; Its
+ purpose is mainly   to  build a  smart  compile-command for  `compile'  to
+ execute  it. This   compile-command is   built   according  to number   of
+ parameters:
+  - the major-mode.
+  - presence or not of a makefile in current directory.
+  - the buffer-file-name and extension.
+  - what is in the current buffer (`main' function,\"#!/path/shell\", ...).
+  - and more ... (see Commentary section below).
+ Most  of  these  parameters  are  higly customizable  throught Emacs  Lisp
+ variables  (to be  set  in your  .emacs  or  through Customization  menu).
+ Running  mode-compile after   an  universal-argument (C-u)  allows  remote
+ compilations, user is  prompted  for a host name   to run the  compilation
+ command on.   Another  function  provided  is  `mode-compile-kill'   which
+ terminate a running compilation session launched by `mode-compile'.
+
+@ Installation:
+===============
+
+  Byte compile this file (*) somewhere in your `load-path' and add in
+ your .emacs:
+ (autoload 'mode-compile \"mode-compile\"
+  \"Command to compile current buffer file based on the major mode\" t)
+ (global-set-key \"\\C-cc\" 'mode-compile)
+ (autoload 'mode-compile-kill \"mode-compile\"
+  \"Command to kill a compilation launched by `mode-compile'\" t)
+ (global-set-key \"\\C-ck\" 'mode-compile-kill)
+
+ By  default mode-compile is  very verbose  and  waits a  few seconds (1 by
+ default) after  each message for   the user to have  time  to read it. You
+ could      set           variables      `mode-compile-expert-p'        and
+ `mode-compile-reading-time'   to  change  this    behaviour.  On X-Windows
+ systems  setting the variable  `mode-compile-other-frame-p'  will create a
+ new frame and launch the compilation command in it.
+
+ (*) Don't take care of messages:
+       ** reference to free variable efs-remote-shell-file-name
+     This is perfectly normal ;-}. But if you know a way to avoid it let me
+     know.
+
+@ Documentation:
+================
+
+ This section will explain how the `compile-command' are built according to
+ the `major-mode' and how to  customize it.  The major modes `mode-compile'
+ currently known are:
+  - c-mode, c++-mode, makefile-mode, dired-mode, ada-mode, emacs-lisp-mode,
+    lisp-interaction-mode, sh-mode, csh-mode, fundamental-mode,  text-mode,
+    indented-text-mode     compilation-mode,  fortran-mode,    c?perl-mode,
+    zsh-mode java-mode, tcl-mode, python-mode, ruby-mode
+ For other modes a default behaviour is provided.
+
+ When    running    `mode-compile'  or     `mode-compile-kill'   the  hooks
+ `mode-compile-(before|after)-(compile|kill)-hook'  are   executed.     The
+ current   buffer   could   be      automaticaly    saved    if    variable
+ `mode-compile-always-save-buffer-p' is  set  to   `t'.  ALL  the  modified
+ buffers could  be automaticaly saved if variable `mode-compile-save-all-p'
+ is set to `t'.
+
+@@ fundamental-mode, text-mode, indented-text-mode & UNKNOWN MODES:
+   *** THIS IS TOO THE DEFAULT BEHAVIOR FOR UNKNOWN MODES ***
+   Try to guess what the file is by:
+  - 1st looking at it's name and extension (see variable
+    `mode-compile-filename-regexp-alist').
+  - 2nd looking at string \"#!/path/shell\" at first line to extract shell
+    to run the script with (see variable `mode-compile-shell-alist').
+  - 3rd looking at a makefile in current directory.
+  - then calling `compile' with the last compile command which is
+    asked to be edited by user ...
+  The `kill-compile' command is then bound dynamically (buffer-local).
+
+@@ compilation-mode:
+   Call `compile' with the last compile command.
+
+@@ makefile-mode:
+   The makefile is run with make throught `compile' (user is prompted
+  for        the        rule         to      run,      see         variable
+  `mode-compile-prefered-default-makerule'  to  see how  a   default choice
+  could be selected).
+
+@@ emacs-lisp-mode, lisp-interaction-mode:
+   If the buffer is a .el file byte-compile it to produce a .elc file,
+  else  just  byte-compile  the   buffer  (this   don't  use  `compile' but
+  `byte-compile').
+
+@@ dired-mode:
+  Find a makefile   in   the directory and  run    make with  it   (like in
+  makefile-mode),  else try  to byte-recompile  all .el   files olders than
+  their associated  .elc  files (unlike  `byte-recompile-directory' this is
+  not  recursive),  finally if  no  .el  files  are present ask compilation
+  command to  user by  calling  `default-compile'.  To  find  a  makefile a
+  regexp is provided which name is `mode-compile-makefile-regexp'.
+
+@@ sh-mode, csh-mode, zsh-mode:
+   Run \"[cz]?sh\" with debugging arguments as specified in
+  `[cz]?sh-dbg-flags' on the currently edited file.
+
+@@ c?perl-mode:
+   Run  file with \"perl   -w\"  (can step   throught errors  with  compile's
+   `next-error' command).
+
+@@ tcl-mode:
+   Run     file  with \"wish\"  (can     step  throught errors with compile's
+   `next-error' command).
+
+@@ c-mode, c++-mode:
+  First it try to see if there is a makefile in the directory, makefiles to
+  look for are  specified  by the variable  `mode-compile-makefile-regexp'.
+  If yes two cases could happen: there  is only one  makefile so use it, or
+  there is more  than one (sometimes when  you need to  write portable soft
+  you  could have  some makefiles by  system:  SunOs.make, HP.make ...), in
+  that case prompt to  user for choice  (with smart completion).   Once the
+  makefile has been selected  it extract the rules from  it and ask to user
+  to   choose  a   rule  to  make  (with  smart  completion,  see  variable
+  `mode-compile-prefered- default-makerule'  to  see  how  a default choice
+  could be selected).
+
+  There are some cases where no makefiles are  presents (YES I KNOW this is
+  bad  practice but you  sometimes have no  needs  to write a Makefile). In
+  that case the  function try  to build  the most intelligent   compilation
+  command by using the favourite  user C/C++ compiler: value of environment
+  variable \"CC\"  or \"CXX\"  or  first found,   in  the PATH,   of  compilers
+  specified in variable  `cc-compilers-list' or `c++-compilers-list'.  Then
+  it look for the  varenv \"CFLAGS\" of  \"CXXFLAGS\" to append to the compiler
+  command,        find            the     file         to          compile:
+  <name-of-the-file-to-compiled>.(c|cc|C|cpp)  (see    *)   and   ask   for
+  confirmation.  If  you  really trust mode-compile   will build  the right
+  command  and  want to  bypass confirmation  you  could  set the  variable
+  `mode-compile-never-edit-command-p' to t.
+
+  (*) How to find <name-of-the-file-to-compiled>:
+   In both case the command try to guess which file has to be compiled:
+  It's a trivial choice when current buffer file is a
+  .(c|C|cc|cpp... -any file with extension specified in
+  `cc-source-file-ext-list' or `c++-source-file-ext-list') file but
+  when it's a .(h|H|hh) file what to do?  The variable
+  `cc-companion-file-regexp' or `c++-companion-file-regexp' specify
+  how to find a .(c|C|cc|cpp...) file from a .(h|H|hh...); This is
+  done by appending .(c|C|cc|cpp) to
+  <filename-without-matching-regexp>.  In c-mode with default value
+  it produce:
+     file.h, file_[Pp].h -> file.c
+     I sometimes use files _p.h to indicate that the file is a private header
+     file for a .c file.
+  In c++-mode with default value it produce:
+     file.hh, file_[Pp].hh -> file.cc
+     I sometimes use files _p.cc to indicate that the file is a private header
+     file for a .cc file.
+  The output of compilation will be a
+  <name-of-the-file-to-compiled>.o file if no `main' function is
+  found inside or a <name-of-the-file-to-compiled> EXECUTABLE file
+  if `main' function found.
+
+@@ ada-mode:
+  Same  as c/c++-mode but  run Ada compiler on the  Ada file.  There are no
+  companion file and no way to find a main function in Ada.
+
+@@ fortran-mode:
+   Same as c-mode but run Fortran compiler on .[Ff](or)? files.
+
+@@ java-mode:
+   Same as c-mode but call \"javac\" without the -o option on .java files
+
+@@  python-mode:
+   Run file with \"python\" (can step throught errors with compile's
+   `next-error' command).
+
+@@  ruby-mode:
+   Run file with \"ruby\" (can step throught errors with compile's
+   `next-error' command).
+
+@@  message-mode:
+   Run `message-send'.
+
+@ Contributors/Helpers:
+=======================
+
+ Adrian Aichner <aichner@ecf.teradyne.com>
+ Bin Mu <mubin@DerivaTech.COM>
+ Charles L.G. Comstock <dgtized@gmail.com>
+ Christian Motschke <motschke@prosun.first.gmd.de>
+ Edward Hartnett <ejh@larry.gsfc.nasa.gov>
+ Gael MARZIOU <Gael_Marziou@grenoble.hp.com>
+ Hartmut MANZ <manz@intes-stuttgart.de>
+ Henry Guillaume <henryg@tusc.com.au>
+ Ian Young <imy@wcl-rs.bham.ac.uk>
+ Ilya Zakharevich <ilya@math.ohio-state.edu>
+ John W. Harwell <ccjohnh@showme.missouri.edu>
+ Kevin Broadey <KevinB@bartley.demon.co.uk>
+ Lawrence R. Dodd <dodd@roebling.poly.edu>
+ Martin Jost <asictest@ztivax.zfe.siemens.de>
+ Michael Welsh Duggan <md5i+@andrew.cmu.edu>
+ Rolf EBERT <rolf@gundog.lbl.gov>
+ Scott Hofmann <scotth@visix.com>
+ Stefan Schoef <Stefan.Schoef@arbi.informatik.uni-oldenburg.de>
+ William A. Perkins <wa_perkins@pnl.gov>
+ boris <boris@cs.rochester.edu>
+
+@ ToDo:
+=======
+
+  Find a new maintainer.
+  Extending this to some others programming languages (modes).
+  Writting an Info documentation.
+  Contributors are greatly accepted (send me diffs and don't forget to
+  update documentation and all comments too please).
+  Maybe Using ange-ftp parse .netrc utilities for remote host and
+  user infos.")

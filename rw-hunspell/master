@@ -1,0 +1,38 @@
+(:summary    "Special functions for Hunspell in ispell.el"
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-2"
+ :authors    (("Ralf Wachinger" . "rwachinger@gmx.de"))
+ :maintainer ("Ralf Wachinger" . "rwachinger@gmx.de")
+ :provided   (rw-hunspell)
+ :required   ((("emacs" easymenu)
+	       ("ispell" ispell)))
+ :keywords   (ispell)
+ :commentary "\
+Additions for Hunspell, which find all existing Hunspell dictionaries
+in the given directories, generate a special alist for Hunspell, and
+optionally create a special menu for selecting the dictionaries.
+
+Save rw-hunspell.el in a convenient directory, preferably in
+your `load-path'. Add the following to your `user-init-file':
+
+  (require 'rw-hunspell)
+
+When the creation starts:
+a) keyboard: 'M-x rw-hunspell-setup RET'
+b) menubar: Tools --> Spell Checking --> Set up Hunspell
+c) automatically when Hunspell is used the first time
+d) `user-init-file', after setting the user options: (rw-hunspell-setup)
+e) when `rw-ispell-change-dictionary' (see rw-ispell.el) is called
+
+ESSENTIAL: `ispell-program-name' must be set to the Hunspell program name.
+ATTENTION: Hunspell is not supported by ispell.el before GNU Emacs 23.x.
+`ispell-dictionary' can be set, in addtion to the default dictionary.
+`ispell-local-dictionary-alist' can be set, as manual list in addition to
+or overriding the automatically generated `rw-hunspell-dictionary' alist.
+
+Todo:
+Make the program more dynamic, particularly the dictionary menu.
+Parsing MS Windows locales from environmental variable LANG, e. g. \"DEU\".
+Possibly full integration in ispell.el, analogous to the functions
+  ispell-find-aspell-dictionaries and ispell-aspell-find-dictionary.")

@@ -1,0 +1,296 @@
+(:summary    "Run commands in another frame"
+ :created    "19950809"
+ :updated    "1997"
+ :license    "GPL-3"
+ :authors    (("Heddy Boubaker" . "heddy.boubaker@cena.dgac.fr"))
+ :maintainer ("wanted")
+ :provided   (command-other-frame)
+ :required   ((("cl" cl)
+	       ("reporter" reporter)
+	       (nil xpm)))
+ :keywords   (command frame)
+ :commentary "\
+This package needs a new maintainer.  Please contact the original
+author if you are interested.
+
+
+@ Purpose:
+==========
+
+ Provide a function `command-other-frame' which create or reuse
+ another frame and run a command in it. One advantage is that you
+ can have one frame per command. You can `defadvise' or redefine
+ some commands so that they will be run always in the same frame
+ thanks to the frame reuse mechanism. Or you can use an automatic
+ pseudo mode to do that (see WARNINGS section).
+
+@ Installation:
+===============
+
+ Byte compile this file somewhere in your `load-path' and add in
+ your .emacs:
+ (require 'command-other-frame)
+ or
+ (autoload 'command-other-frame \"command-other-frame\"
+  \"Run command in another frame\" t)
+ (autoload 'command-other-frame-auto \"command-other-frame\"
+  \"Toggle automatic command-other-frame\" t)
+
+ You maybe want to have my nice icons to indicate the
+ command-other-frame-auto status from the modeline, then just put
+ cof-off.xpm and cof-on.xpm, that you can found in the WWW Access
+ place for this package, in your data-directory.
+
+@@ Sample usage:
+================
+
+ The easiest way to you it is trought command-other-frame-auto (see
+ below) but you can use the function command-other-frame in many
+ way, here are some:
+
+ (defadvice describe-mode (around describe-mode-o-f activate)
+   (if (and (interactive-p)
+            (not command-other-frame-active-p))
+       (command-other-frame 'describe-mode)
+     ad-do-it))
+ ...
+
+ Or if you don't whant to use `defadvice' do the following:
+ (defun my-describe-mode ()
+   (interactive)
+   (command-other-frame 'describe-mode))
+ (define-key help-map \"m\" 'my-describe-mode)
+ ...
+
+ (setq command-other-frame-alist 
+   '((find-file . (nil nil initial))
+     (dired-find-file              . (nil nil initial))
+     (dired-advertised-find-file   . (nil nil initial))
+     (dired-find-file-other-window . (nil nil initial))
+     (find-file-other-window       . (nil nil initial))
+     (Buffer-menu-mouse-select     . (nil nil initial))
+     (Buffer-menu-select           . (nil nil initial))
+     (gnus . (\"News-read\" ((width . 95) (height . 65) (top . 45) (left . 45)) exact))
+     (manual-entry . (\"Man\" ((width . 80) (height . 50)) by-name))
+     (man . (\"Man\" ((width . 80) (height . 50)) by-name))
+     (info . (\"Info\" ((width . 80) (height . 50)) exact t))
+     ))
+
+ This configuration will run info, gnus in their own frames, and
+ man and manual-entry in always the same frame named \"Man\". Any
+ file accessed with find-file, dired-find-file and so on will be
+ displayed in the initial frame (ie: the frame emacs created at
+ startup).
+
+ There is an easiest way to automaticaly run commands in others
+ frame...  It is to setq `command-other-frame-alist' as described
+ above with the commands you wish to be run in other frames and to
+ add in your .emacs (after the require 'command-other-frame):
+ ;; start command-other-frame-auto pseudo mode
+ (command-other-frame-auto t) ;; (see WARNINGS section) You can use
+ `command-other-frame-auto' interactively to enable/disable on the
+ fly the auto pseudo mode. When `command-other-frame-auto' is
+ enabled the string \"[+]\" (or a little window icon if your emacs
+ compiled with xpm) will be added to the modeline.
+
+ As `command-other-frame' is an interactive command too you can use
+ it with M-x command-other-frame (it is actually bound on \\C-x5x),
+ it will prompt you for a command to run.
+
+@ Bug Reports:
+==============
+
+  To report a bug please use function
+  `command-other-frame-submit-bug-report' Please note that this
+  bug-report facility uses Barry Warsaw's reporter.el which is part
+  of GNU Emacs v19 and bundled with many other packages.  If
+  needed, you can obtain a copy of reporter.el at the
+  elisp-archive.
+
+@ Documentation: 
+================
+
+ This section explain the internals mechanisms used and the
+ interface to user.
+
+@@ Reuse mechanism:
+===================
+
+ When running a command with `command-other-frame' a frame is
+ reused or a new frame is created, this explain the reuse
+ mechanism.  Fist a name for the frame is found: if you specify the
+ NAME parameter this is the one which will be used, if it is nil
+ we'll look in FRAME-PARAMS for the 'name parameter, if it is not
+ found we'll look in user variable `command-other-frame-alist' for
+ a name for this COMMAND, finally if all of these failed a name is
+ build by concatenating the name of the current frame
+ (selected-frame) and the COMMAND separated by a '-' (ex:
+ \"emacs-dired\").  Once the name had been found we try to find a
+ frame to reuse according to the REUSE-POLICY if set, or in
+ variable `command-other-frame-alist' for a reuse-policy for this
+ COMMAND or to variable `command-other-frame-reuse-policy', they
+ could contain a value among (create, exact, any, other, first,
+ by-name or by-command and so on - see below -) or a list of these
+ values which are tryed turn by turn, they can contain too a frame
+ object directly or a function, called with the command to run and
+ a name as argument, which should return a valid frame object.
+ What does these values means? ok I'll explain:
+ - default, the command-other-frame-default-frame will be used.
+ - create, means that we'll *never* try to reuse an old frame but we'll
+ always create a new one.
+ - exact, means that we'll try to reuse an old frame with the same name and
+ in which we allready run the same COMMAND (with the use of
+ `command-other- frame' only; If you create a frame manually - or
+ with a command wich do not use command-other-frame like
+ `gnus-other-frame' - and run the command in it command-other-frame
+ has no way to know you did that).
+ - any, means that any frame is reused (this should never fail because there
+ is always at least one frame: the `selected-frame').
+ - other, means that any frame EXCEPT the selected one is reused.
+ - first, means that the first frame in `frame-list' is reused.
+ - last, means that the last frame in `frame-list' is reused.
+ - initial, means the the initial frame (those created when emacs startup)
+ is selected - if it had been deleted we'll use the current frame -.
+ - current, which is the current frame so the command will no be run
+ in another frame, silly isn't it? - but have it's utility when used
+ in a list of policies (not in 1st position).
+ - by-name, means that we'll try to found a frame with the same name.
+ - by-command, means that the first frame in which we allready have launched
+ the same COMMAND (throught `command-other-frame' only, see exact)
+ is reused.  One good thing to do when specifying a reuse-policy
+ list is to order from the most restrictive to the less (ex:
+ '(exact by-command by-name any)).  If a frame has to be created
+ the parameter FRAME-PARAMS is used as the frame-parameters of the
+ frame, if FRAME-PARAMS is nil we look for one in
+ `command-other-frame-alist'.  One important thing to notice is
+ that the 'name parameter is ALWAYS OVERLOADED by the name build
+ for the frame; This is not really true see explanations for NAME
+ parameter above to understand why...  The variable
+ `command-other-frame-create-by-default-p' indicate the behaviour
+ of `command-other-frame' when no reusable frame had been found: if
+ `t' it will create a new frame, else it will use the 'any
+ reuse-policy.
+
+@@ the windows management:
+==========================
+
+ Good the frame had be selected we'll run the command! ... ok! Now
+ we're on the new/reused frame and will use the parameter
+ ONE-WINDOW.  It could have 3 kinds of values: nil, t or a
+ string. If NIL nothing will change in windows configuration in the
+ new frame, if TRUE after the COMMAND had been executed we'll call
+ `delete-other-windows' so that there will be only one window in
+ the frame, whatever it is. The string value should be the name of
+ a buffer (allready existing after the COMMAND had been runned) in
+ which we'll switch to and then delete the others windows so that
+ window containing \"ONE-WINDOW\" will be only one window in the
+ frame (am I clear enought?).
+
+@@ The `auto pseudo mode':
+==========================
+
+ The AUTO-BEHAV parameter in `command-other-frame-alist' is used in
+ `auto mode'. If the command is in the alist and not in the list of
+ excluded commands (`command-other-frame-auto-excluded') the value
+ of AUTO-BEHAV will be checked: If it's 'ask-me user will be
+ interactively asked about running this command in another frame,
+ if it is 'not the command will *not* be run in another frame, any
+ other value will causes the command to be run in another frame
+ without asking.
+
+@ WARNINGS: 
+===========
+
+ Known bugs, restrictions and problems
+
+@@ Disclaimer:
+==============
+
+ THIS PACKAGE IS STILL CONSIDERED AS BETA VERSION
+
+@@ Known bugs & restrictions:
+=============================
+
+ There are some problems with the `auto' stuff used in combination
+ with ONE-WINDOW (if it is nil no problems).  Sometimes the COMMAND
+ doesn't seems to be run in the correct buffer and I didn't found
+ why (this could be embarrassing for, says, `describe-mode' which
+ will describe another mode than those in the buffer).  I've got
+ some stange errors with others commands in the same configuration
+ which I couldn't yet expain too (a repetitive error with dired
+ about a tag - exit - not found \"no catch for tag: exit, nil\",
+ problem too with describe-{function|variable} with completion)...
+
+ As a conclusion the use of this package by calling
+ `command-other-frame' interactively or redefining and rebinding
+ it's own commands have no major known problem, but using the
+ `auto' stuff is more delicate (it seems to work perfectly with
+ things as manual-entry, info, gnus ... but not with dired,
+ describe-{mode|variable|function} at least in combination with
+ ONE-WINDOW as described in the examples).  You should try the
+ command in some differents contexts (auto, adviced...)  to find
+ which one run better, and please report me any problems you could
+ find so that I'll try to solve them all.  I'm currently working on
+ these problems but help from *real* Emacs Lisp wizards will be
+ welcome, I'll be eternally grateful :)
+
+ The help-echo and keymap properties of the extent in the modeline
+ doesn't seems to work but the balloon-help does, there's something
+ here I don't understant and I'm working on.
+
+@ ChangeLog:
+============
+
+ v1.9.1: Cleanup without actually making the package usable again.
+ v1.9: Some debug done...
+       Using Per Abrahamsen's custom
+       New policies: initial, current, last, default.
+       Allows frames and function in policies.
+       command-other-frame-auto is toggable with mouse from the modeline
+       (hum! not really yet) and have a balloon help.
+ v1.8: Yet More portability between XEmacs and FSF Emacs.
+       Some portability to use it under ...hum... Windows NT.
+ v1.7: Yet More portability between XEmacs and FSF Emacs.
+       More protection against use in a non windowed environment.
+       Bug correct in test for window system.
+ v1.6: Documentation cleanup.
+       Few performance improvements.
+       Fixed global-mode-string bug.
+       Fixed cof--auto bug if AUTO-BEHAV is ask-me.
+ v1.5: Modeline-format modified if auto mode is on.
+       Protection against use in a non windowed system.
+       Adding AUTO-BEHAV in command-other-frame-alist.
+ v1.4: More portability.
+       Changes of behaviour in parameter ONE-WINDOW (with backward
+       compatibility anyway).
+       Adding command-other-frame-load-hook.
+       Adding command-other-frame-auto pseudo mode.
+       Adding command-other-frame-active-p.
+       Minors bugs corrections.
+ v1.3: Some more bugs corrections mainly in frame selection.
+       Adding a new reuse policies: `other and `first.
+ v1.2: Adding REUSE-POLICY and RECORD-FLAG in command-other-frame-alist.
+       Adding ONE_WINDOW parameter.
+       Some bugs corrections and performance improvements.
+ v1.1: First public release. 
+
+@ Contributors/Helpers:
+=======================
+
+ Frederic Lepied <lepied@cenaath.cena.dgac.fr>
+ Hans Chalupsky <hans@cs.Buffalo.edu>
+ Jens-U H Petersen <petersen@kurims.kyoto-u.ac.jp>
+ Kevin Esler <esler@pureatria.com>
+ Robert P. Goldman <goldman@src.honeywell.com>
+ Todd A. Scalzott <todd@kastle.com>
+
+@ ToDo:
+=======
+
+ Find a new maintainer.
+ Correcting known bugs and others :)
+ Improving dead-frames deletion.
+ Improving command-other-frame-auto behaviour.
+ Improving ONE-WINDOW parameter behaviour.
+ Loocking for a better hook where to put cof--cleanup in FSF Emacs.
+ Improving the way c-o-f-auto use pre-command-hook.")

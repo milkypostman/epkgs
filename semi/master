@@ -1,0 +1,23 @@
+(:summary    "Setup file for MIME-View"
+ :created    "2000"
+ :updated    "2000"
+ :license    "GPL-2"
+ :authors    (("MORIOKA Tomohiko" . "tomo@m17n.org"))
+ :maintainer ("MORIOKA Tomohiko" . "tomo@m17n.org")
+ :provided   (mail-mime-setup mime-bbdb mime-edit mime-image mime-mc mime-partial mime-pgp mime-play mime-setup mime-view mime-w3 postpet semi-def semi-setup)
+ :required   ((("apel" emu filename invisible path-util poe static)
+	       ("bbdb" bbdb bbdb-com)
+	       ("cl" cl)
+	       ("emacs" custom image)
+	       ("emacs-obsolete" pgg-def pgg-parse)
+	       ("flim" eword-encode mel mime std11)
+	       ("gnus" mailcap)
+	       ("mail-utils" mail-extr mail-utils)
+	       ("mailcrypt" mailcrypt)
+	       ("sendmail" sendmail)
+	       ("signature" signature)
+	       ("w3" w3)
+	       (nil calist)))
+ :keywords   (encoded-word mail mime multilingual multimedia news)
+ :homepage   "http://www.kanji.zinbun.kyoto-u.ac.jp/~tomo/lemi"
+ :wikipage   "SemiIsEmacsMimeInterface")

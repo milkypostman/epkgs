@@ -1,0 +1,24 @@
+(:summary    "Interactive window structure editing"
+ :created    "20051207"
+ :license    "GPL-2"
+ :provided   (winsize)
+ :required   ((("windmove" windmove)))
+ :commentary "\
+This file contains functions for interactive resizing of Emacs
+windows.  To use it put it in your `load-path' and add the following
+to your .emacs:
+
+    (require 'winsize)
+    (global-set-key [(control x) ?+] 'resize-windows)
+
+For more information see `resize-windows'.
+
+These functions are a slightly rewritten version of the second part
+of the second part my proposal for a new `balance-windows' function
+for Emacs 22.  The rewrite is mostly a restructure to more easily
+add new functions.  All functions and variables have been renamed.
+The file was originally named bw-interactive.el.
+
+New ideas for functionality have been to a large part adopted from
+the Emacs Devel mailing list.  Probably most of them originated from
+Drew Adams and Bastien.")

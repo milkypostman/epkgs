@@ -1,0 +1,29 @@
+(:created    "1996"
+ :updated    "1996"
+ :license    "GPL"
+ :authors    (("Inge Frick" . "inge@nada.kth.se"))
+ :maintainer ("Inge Frick" . "inge@nada.kth.se")
+ :provided   (dired-a)
+ :required   ((("emacs" dired dired-aux)))
+ :keywords   (dired)
+ :commentary "\
+This file contains a number of extensions to dired.
+ 1. The delete command can delete a non-empty directory by deleting
+    all its files and subdirectories.
+ 2. The copy command can copy a directory by copying a directory and
+    all its files and subdirectories.
+ 3. Handle archives (tar, arc, lharc, zoo etc.). This is not a replacement
+    for tar-mode or archive-mode but it complements them. There are commands
+    unpacking an entire archive, extracting specified files (it might be
+    better to use tar-mode etc. for this) and get a content listing.
+    Furthermore the copy command is extended to copy marked files to a
+    target that is an archive.
+ 4. View files with a method depending on file name.
+ 5. Print files with a method depending on file name.
+ 6. Remove carriage return at end of lines for marked files.
+ 7. Toggle case for file base name (excluding the extension).
+
+ If you only want some of these extensions, it is fairly easy to lift out
+ the code you want. The first page contains some support functions, the
+ other pages are all independent of each other. ;;;; is used to delimit
+ pages instead of page-marks to avoid possible problems in mail.")

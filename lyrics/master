@@ -1,0 +1,4 @@
+(:provided   (lyrics)
+ :required   ((("mingus" libmpdee)
+	       ("url" url url-http)))
+ :homepage   "https://github.com/death/lyrics")

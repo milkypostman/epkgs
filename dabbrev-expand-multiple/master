@@ -1,0 +1,24 @@
+(:summary    "Dabbrev-expand for multiple"
+ :created    "2007"
+ :updated    "2007"
+ :license    "GPL-2"
+ :authors    (("khiker" . "khiker+elisp@gmail.com")
+	      ("plus" . "mlb33828@nifty.com"))
+ :maintainer ("khiker" . "khiker+elisp@gmail.com")
+ :provided   (dabbrev-expand-multiple)
+ :required   ((("dabbrev" dabbrev)))
+ :keywords   (dabbrev)
+ :wikipage   "DabbrevExpandMultiple"
+ :commentary "\
+Dynamic abbrev for multiple selection.
+This package tested on Emacs 22.
+
+Installation:
+
+Put this file into your load-path, and,
+add following line to .emacs.
+
+  (require 'dabbrev-expand-multiple)
+  (global-set-key \"\\M-/\" 'dabbrev-expand-multiple)
+
+Please match key setting to your favor.")

@@ -1,0 +1,4 @@
+(:license    "GPL-2"
+ :provided   (etach)
+ :required   ((("emacs" font-lock)))
+ :homepage   "http://rulnick.com/etach/download/")

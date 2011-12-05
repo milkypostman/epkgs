@@ -1,0 +1,23 @@
+(:summary    "Jumps to definition of signal, constant or function"
+ :created    "2003"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("wandad guscheh" . "wandad.guscheh@fh-hagenberg.at"))
+ :maintainer ("wandad guscheh" . "wandad.guscheh@fh-hagenberg.at")
+ :provided   (vhdl-goto-def)
+ :keywords   (vhdl)
+ :commentary "\
+Usage: Open any vhdl file and invoke vhdl-goto-type-def with key sequence (\\C-c\\C-s by default).
+Cursor will jump to corresponding definition if there is one. Functions searches packages
+too. If no buffer with package is open, functions asks for location of package.
+
+To get back to the start of the search, press \\C-x\\C-x if corresponding definition has been found
+in the same file, \\C-x b RET if the search has jumped to another buffer.
+
+Functions works for signals, constants, types, subtypes, components and subprograms.
+Works only well for vhdl files with more or less correct syntax. Finds also signals in entity definition.
+
+Also have a look at customization possibilities with \\M-x customize-group whdl. Change option
+use-ido-find-file to nil if ido-find-file is not installed on your system.
+
+If you have any suggestions or found any bugs please mail me at <wandad.guscheh@fh-hagenberg.at>.")

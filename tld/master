@@ -1,0 +1,32 @@
+(:summary    "TLD lookup tool"
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-2"
+ :provided   (tld)
+ :required   ((("cl" cl)))
+ :homepage   "http://www.davep.org/emacs"
+ :commentary "\
+tld.el provides a command for looking up TLDs, either by searching for a
+specific TLD or by searching country names.
+
+One command is provided: `tld'.
+
+The latest tld.el is always available from:
+
+  <URL:http://www.davep.org/emacs/tld.el>
+
+Note that, to some degree, this code duplicates the functionality
+provided by `what-domain' (a command that is part of emacs). tld.el
+differs slightly in that it allows for both TLD and country name
+searches. Also, compared to emacs 20.7, the list of TLDs is more complete
+(yes, I know, I should submit a patch to the emacs maintainers, I will at
+some point).
+
+INSTALLATION:
+
+o Drop tld.el somwehere into your `load-path'. Try your site-lisp
+  directory for example (you might also want to byte-compile the file).
+
+o Add the following autoload statement to your ~/.emacs file:
+
+  (autoload 'tld \"tld\" \"Perform a TLD lookup\" t)")

@@ -1,0 +1,5 @@
+(:summary    "Style hook for the gb4e package"
+ :created    "20040702"
+ :updated    "2004"
+ :license    "GPL"
+ :homepage   "http://www.cis.uni-muenchen.de/~wastl/emacs")

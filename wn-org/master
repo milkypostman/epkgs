@@ -1,0 +1,20 @@
+(:summary    "An org-mode interface for Word Net"
+ :created    "20080717"
+ :updated    "20090411"
+ :license    "GPL-3"
+ :authors    (("Henry G. Weller" . "hweller0@gmail.com"))
+ :maintainer ("Henry G. Weller")
+ :provided   (wn-org)
+ :keywords   (convenience)
+ :commentary "\
+An org-mode based interface for the Word Net dictionary.
+By default all sections (synonyms, antonyms etc.) are generated in an
+org-mode buffer to enable easy and convenient viewing.
+
+Put this file into your load-path and the following into your ~/.emacs:
+  (require 'wn-org)
+
+Suggested key binding:
+  (global-set-key (kbd \"M-s\") 'wn-org-search)
+
+----------------------------------------------------------------------------")

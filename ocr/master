@@ -1,0 +1,6 @@
+(:summary    "Major mode for editing OCR'd documents"
+ :updated    "20040914"
+ :license    "GPL-2"
+ :provided   (ocr)
+ :homepage   "http://mdxi.collapsar.net/hacks/emacs/ocr-mode"
+ :wikipage   "OcrMode")

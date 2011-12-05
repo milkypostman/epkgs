@@ -1,0 +1,28 @@
+(:summary    "Strip MS Word-style formatting to leave a readable ASCII file"
+ :created    "2002"
+ :updated    "2002"
+ :license    "GPL-2"
+ :authors    (("Joshua D. Guttman" . "guttman@mitre.org"))
+ :maintainer ("Joshua D. Guttman" . "guttman@mitre.org")
+ :provided   (undoc)
+ :keywords   (word word\ processors\ )
+ :homepage   "http://www.ccs.neu.edu/home/guttman"
+ :wikipage   "UnDoc"
+ :commentary "\
+We first substitute reasonable ASCII equivalents for some MS Word 
+special characters, after which we extract the ASCII substrings and
+reformat via fill-paragraph.
+
+The text of the Word input document is generally readable as a result,
+although graphics are irretrievable.  Tables are handled crudely, but
+are sometimes readable.  
+
+Put these autoloads in ~/.emacs:
+
+(autoload 'undoc \"undoc\" \"\" t)
+(autoload 'undoc-current-buffer \"undoc\" \"\" t)
+(autoload 'undoc-region-after-mime-decode \"undoc\" \"\" t)
+
+Alternatively, use
+
+(require 'undoc)")

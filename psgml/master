@@ -1,0 +1,37 @@
+(:summary    "SGML-editing mode with parsing support"
+ :created    "2002"
+ :updated    "20020813"
+ :license    "GPL-2"
+ :authors    (("Lennart Staflin" . "lenst@lysator.liu.se")
+	      ("James Clark" . "jjc@clark.com"))
+ :maintainer ("Lennart Staflin" . "lenst@lysator.liu.se")
+ :provided   (psgml psgml-api psgml-charent psgml-debug psgml-dtd psgml-edit psgml-info psgml-lucid psgml-other psgml-parse psgml-sysdep)
+ :required   ((("cl" cl)
+	       ("edebug" edebug)
+	       ("elp" elp)
+	       ("emacs" easymenu)))
+ :keywords   (languages)
+ :homepage   "http://www.lysator.liu.se/projects/about_psgml.html"
+ :wikipage   "PsgmlMode"
+ :commentary "\
+Major mode for editing the SGML document-markup language.
+
+Send bugs to lenst@lysator.liu.se
+
+WHAT IT CAN DO
+
+- Identify structural errors (but it is not a validator)
+- Menus for inserting tags with only the contextually valid tags
+- Edit attribute values in separate window with information about types
+  and defaults
+- Hide attributes
+- Fold elements
+- Indent according to element nesting depth
+- Show context
+- Structure editing: move and kill by element
+- Find next data context
+
+LIMITATIONS
+
+- only accepts the reference concrete syntax, though it does allow
+  unlimited lengths on names")

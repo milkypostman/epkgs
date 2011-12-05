@@ -1,0 +1,10 @@
+(:created    "2000"
+ :updated    "2000"
+ :license    "GPL-1"
+ :provided   (chill-mode)
+ :required   ((("emacs" font-lock)
+	       ("etags" etags)
+	       (nil func-menu)))
+ :keywords   (languages)
+ :homepage   "http://www.exd.at/~hoerandl/chill.html"
+ :wikipage   "ChillModePackage")

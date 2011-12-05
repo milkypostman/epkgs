@@ -1,0 +1,41 @@
+(:summary    "Switch to buffers or file-cache entries with 1 command"
+ :created    "2004"
+ :updated    "2004"
+ :license    "GPL-2"
+ :authors    (("Benjamin Rutt" . "brutt@bloomington.in.us"))
+ :maintainer ("Benjamin Rutt" . "brutt@bloomington.in.us")
+ :provided   (iswitchb-fc)
+ :required   ((("cl" cl)
+	       ("filecache" filecache)
+	       ("iswitchb" iswitchb)))
+ :commentary "\
+This package allows you to use iswitchb-like functionality to
+switch to not only your current buffers, but also any files in your
+previously built filecache (see filecache.el).  This experience is
+liberating; you no longer need to worry whether the file you want
+to go to is open in emacs or not, you just have a single command
+(C-x b) to go to a buffer containing that file.  You don't have to
+worry whether to press C-x b to switch to a buffer or to use C-x
+C-f basename C-TAB to open a file using filecache.
+
+This package is smart enough to uniquify name clashes between
+multiple files with the same basename.  All buffers are at the
+beginning of the input list presented by iswitchb, and all
+filecache entries are at the end.
+
+To use, place the file in your load-path and add
+
+(require 'iswitchb-fc)
+
+to your ~/.emacs, which causes the function iswitchb to refer to
+the new function iswitchb-fc.  Presumably you'd add the above line
+only if you have (iswitchb-mode 1) in your ~/.emacs already,
+otherwise you probably wouldn't care about this package.  To undo
+the effect of loading this package, you would need to do M-x
+load-library iswitchb RET.
+
+This package may only work on GNU Emacs.  Untested on XEmacs,
+but patches will be accepted.
+
+Thanks to Kin Cho (kin@neoscale.com) for the idea and for pointing
+me in the right direction.")

@@ -1,0 +1,15 @@
+(:summary    "Print an ASCII Table"
+ :created    "20040115"
+ :updated    "2005"
+ :license    "GPL-2"
+ :authors    (("Lawrence Mitchell" . "wence@gmx.li"))
+ :maintainer ("Lawrence Mitchell" . "wence@gmx.li")
+ :provided   (ascii-table)
+ :required   ((("cl" cl)))
+ :homepage   "http://www.ph.ed.ac.uk/~s0198183"
+ :wikipage   "AsciiTable"
+ :commentary "\
+Vital for any coder :)
+The function `ascii-table' switches to a new buffer and then prints
+the ascii-table showing Emacs' internal representations of the
+files, and their respective decimal, octal and hexadecimal codes.")

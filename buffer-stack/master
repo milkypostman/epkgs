@@ -1,0 +1,8 @@
+(:summary    "Enhanced intelligent switch-to-other-buffer replacement"
+ :created    "2002"
+ :updated    "2002"
+ :license    "GPL-2"
+ :authors    (("Adrian Kubala" . "adrian@sixfingeredman.net"))
+ :maintainer ("Adrian Kubala" . "adrian@sixfingeredman.net")
+ :provided   (buffer-stack)
+ :keywords   (buffer buffers switching\ buffers))

@@ -1,0 +1,13 @@
+(:summary    "Automated mine sweeping for mine-sweeper.el"
+ :created    "2005"
+ :updated    "2005"
+ :license    "GPL-2"
+ :provided   (mine-sweeper-auto)
+ :required   ((("cl" cl)))
+ :commentary "\
+This package extends mine-sweeper.el with a `mine-auto' function to go
+around the board marking or opening squares the same as you might do
+manually, but automated.
+
+The algorithm used is fairly basic, it probably doesn't detect all
+possible safe moves.")

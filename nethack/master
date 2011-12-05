@@ -1,0 +1,15 @@
+(:summary    "Run Nethack as a subprocess"
+ :created    "20000318"
+ :updated    "2005"
+ :license    "GPL-2"
+ :authors    (("Ryan Yeske" . "rcyeske@vcn.bc.ca"))
+ :maintainer ("Ryan Yeske" . "rcyeske@vcn.bc.ca")
+ :provided   (nethack nethack-api nethack-cmd nethack-compat nethack-example nethack-keys nethack-nhlaunch nethack-tiles nh-bot)
+ :required   ((("cl" cl)
+	       ("emacs" overlay)
+	       ("gamegrid" gamegrid)))
+ :keywords   (games)
+ :homepage   "http://www.nongnu.org/nethack-el"
+ :wikipage   "NethackMode"
+ :commentary "\
+Requires: a copy of Nethack 3.4.x with the lisp window port")

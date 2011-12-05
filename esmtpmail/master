@@ -1,0 +1,29 @@
+(:summary    "Simple SMTP protocol (RFC 821) for sending mail"
+ :created    "1995"
+ :updated    "20070117"
+ :license    "GPL-2"
+ :authors    (("Tomoji Kagatani" . "kagatani@rbc.ncl.omron.co.jp"))
+ :maintainer ("Brian D. Carlstrom" . "bdc@ai.mit.edu")
+ :provided   (esmtpmail)
+ :required   ((("mail-utils" mail-utils)
+	       ("sendmail" sendmail)
+	       ("time-stamp" time-stamp)
+	       ("vm" vm-misc vm-pop)))
+ :keywords   (mail)
+ :homepage   "http://www.robf.de/Hacking/elisp"
+ :commentary "\
+Send Mail to smtp host from esmtpmail temp buffer.
+
+Please add these lines in your .emacs(_emacs) or use customize.
+
+(setq send-mail-function 'esmtpmail-send-it) ; if you use `mail'
+(setq message-send-mail-function 'esmtpmail-send-it) ; if you use `message'
+(setq esmtpmail-default-smtp-server \"YOUR SMTP HOST\")
+(setq esmtpmail-local-domain \"YOUR DOMAIN NAME\")
+(setq esmtpmail-debug-info t) ; only to debug problems
+(load-library \"esmtpmail\")
+(setq esmtpmail-code-conv-from nil)
+(setq user-full-name \"YOUR NAME HERE\")
+
+To queue mail, set esmtpmail-queue-mail to t and use 
+esmtpmail-send-queued-mail to send.")

@@ -1,0 +1,20 @@
+(:summary    "Towards an Python-IDE in Emacs"
+ :created    "199202"
+ :updated    "1994"
+ :license    "GPL-3"
+ :maintainer ("Andreas Roehler" . "andreas.roehler@online.de")
+ :provided   (doctest-mode pars-part-output py-bug-numbered-tests pycomplete python-mode python-mode-shell-install python-mode-test)
+ :required   ((("ansi-color" ansi-color)
+	       ("cc-mode" cc-cmds)
+	       ("cl" cl)
+	       ("compile" compile)
+	       ("emacs" comint custom help-fns)
+	       ("highlight-indentation" highlight-indentation)
+	       ("imenu" imenu)
+	       ("mmm-mode" mmm-auto)
+	       ("pymacs" pymacs)
+	       ("shell" shell)))
+ :keywords   (languages oop processes python)
+ :homepage   "https://launchpad.net/python-mode"
+ :commentary "\
+Code")

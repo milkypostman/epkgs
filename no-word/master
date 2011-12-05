@@ -1,0 +1,8 @@
+(:summary    "Use antiword program to view word documents in emacs"
+ :created    "2002"
+ :updated    "2002"
+ :license    "GPL-2"
+ :authors    (("Pierre Gaston" . "pgas@intracom.gr"))
+ :maintainer ("Pierre Gaston" . "pgas@intracom.gr")
+ :provided   (no-word)
+ :keywords   (word word\ processors\ ))

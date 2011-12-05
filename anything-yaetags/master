@@ -1,0 +1,28 @@
+(:summary    "Yet another etags interface with anything"
+ :created    "2009"
+ :updated    "20090402"
+ :license    "GPL-3"
+ :authors    (("Taiki SUGAWARA" . "buzz.taiki@gmail.com"))
+ :maintainer ("Taiki SUGAWARA" . "buzz.taiki@gmail.com")
+ :provided   (anything-yaetags)
+ :required   ((("anything" anything)
+	       ("cl" cl)
+	       ("etags" etags)))
+ :keywords   (anything etags)
+ :commentary "\
+Yet another etags interface with anything like a anything-gtags.
+
+Try use this package, if you want to find only tag names instead of
+tag declaration lines with anything and etags.
+
+Installation:
+Load this package and add `anything-c-source-yaetags-select' to
+`anything-sources' like followings:
+
+  (require 'anything-yaetags)
+  (add-to-list 'anything-sources 'anything-c-source-yaetags-select)
+
+If you want to use this package for replacement of `find-tag', put
+followings:
+
+  (global-set-key (kbd \"M-.\") 'anything-yaetags-find-tag)")

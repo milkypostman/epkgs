@@ -1,0 +1,8 @@
+(:summary    "Org-babel functions for pygment evaluation"
+ :license    "GPL-3"
+ :authors    (("Jianing Yang"))
+ :maintainer ("Jianing Yang")
+ :provided   (ob-pygment ob-twopi)
+ :required   ((("org" ob ob-eval)))
+ :keywords   (highlighting syntax)
+ :homepage   "https://github.com/jianingy/org-babel-plugins")

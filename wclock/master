@@ -1,0 +1,7 @@
+(:summary    "World clock"
+ :created    "2007"
+ :updated    "2007"
+ :provided   (wclock)
+ :commentary "\
+Display a world clock in a buffer. The time is updated every minute.
+It's part of emacs since 22.1 with the function display-time-world.")

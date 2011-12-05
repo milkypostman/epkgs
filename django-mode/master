@@ -1,0 +1,12 @@
+(:summary    "Major mode for Django web framework"
+ :created    "2010"
+ :updated    "2010"
+ :license    "Apache-2.0"
+ :authors    (("MyFreeWeb" . "me@myfreeweb.ru"))
+ :maintainer ("MyFreeWeb" . "me@myfreeweb.ru")
+ :provided   (django-html-mode django-mode)
+ :required   ((("nxml" nxml-mode)
+	       ("python" python)
+	       ("python-mode" python-mode)))
+ :keywords   (languages)
+ :homepage   "https://github.com/myfreeweb/django-mode")

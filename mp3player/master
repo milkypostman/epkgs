@@ -1,0 +1,36 @@
+(:summary    "Interface to mpg123 or winamp"
+ :created    "1998"
+ :updated    "1999"
+ :license    "GPL-2"
+ :provided   (mp3player mp3player-scores)
+ :required   ((("cl" cl)
+	       ("emacs" dired font-lock wid-edit widget)
+	       ("thingatpt" thingatpt)))
+ :homepage   "http://emacsmp3player.sourceforge.net"
+ :wikipage   "MpthreePlayer"
+ :commentary "\
+Some codes and ideas borrowed from mpg123 by HIROSE Yuuji [yuuji@gentei.org]
+and from mp3-tools by Steve Kemp <skx@tardis.ed.ac.uk>
+Many Thanks to you Yuuji and Steve!!
+
+This package was developed and tested under GNU/Linux - Suze 6.2 and  
+Emacs 20.5.1.  It was reported to work also under some version of
+Xemacs with some errors at compile time.
+
+[30/01/2003] - I'm now using it under Emacs 21.2.1 - Windows XP
+               I made some changes in version 1.3 to support windows.
+               I hate windows.
+
+The programs mpg123 and aumix are required.  They can be downloaded from:
+
+http://www.mpg123.de/ and http://jpj.net/~trevor/aumix.html
+
+Windows user need to download mpg123 and the mixer program from
+
+http://www3.tky.3web.ne.jp/~takuroho/files/mpg123/
+
+CAUTION: The mixer.exe program IS NOT and upgrade for mixer.exe already 
+         present in your c:/WINDOWS directory.  DO NOT REPLACE.
+
+Developped while listening: Chara, the Butthole Surfers, Black Sabbath
+                            and a lot of Ska!")

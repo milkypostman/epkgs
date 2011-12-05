@@ -1,0 +1,38 @@
+(:summary    "A Simple C++ Reference Viewer"
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-3"
+ :authors    (("Kentaro Kuribayashi," . "kentarok@gmail.com"))
+ :maintainer ("Kentaro Kuribayashi," . "kentarok@gmail.com")
+ :provided   (cppref)
+ :required   ((("cl" cl)))
+ :homepage   "https://github.com/kentaro/emacs-cppref"
+ :commentary "\
+* Description
+
+cppref.el is a port of Perl's cppref command, a simple C++
+reference viewer working on a terminal.
+
+* Usage
+
+cppref.el requires cl and emacs-w3m installed in advance. So, add
+the lines below into your .emacs:
+
+  (require 'cppref)
+
+Althogh cppref.el automatically find out the place of
+documentation, if you want to put your the directory at some other
+place, you must add one more line like below:
+
+  (setq cppref-doc-dir \"/path/to/dir\") ;; doesn't end with \"/\"
+
+Then run `cppref' command and type like \"vector::begin\",
+\"io::fopen\", or so.
+
+Acknowledment:
+
+cppref.el is Emacs version of Kazuho Oku's cppref command
+http://search.cpan.org/dist/cppref/
+
+The documents are from http://www.cppreference.com/ (under Creative
+Commons Attribution 3.0 license).")

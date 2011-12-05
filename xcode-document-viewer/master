@@ -1,0 +1,8 @@
+(:summary    "Xcode document viewer"
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-2"
+ :provided   (xcode-document-viewer)
+ :required   ((("anything" anything)
+	       ("thingatpt" thingatpt)))
+ :homepage   "https://github.com/imakado/emacs-xcode-document-viewer")

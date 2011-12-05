@@ -1,0 +1,132 @@
+(:summary    "Read MIME messages"
+ :updated    "19960530"
+ :authors    (("Ray Moody" . "moody@cray.com"))
+ :maintainer ("Ray Moody" . "moody@cray.com")
+ :provided   (rmime)
+ :required   ((("mh-e" mh-e)
+	       ("rmail" rmail)
+	       ("vm" vm)))
+ :keywords   (mail mime)
+ :commentary "\
+RMIME provides MIME support for several Emacs message reading
+packages.  RMIME has been designed with RMAIL in mind, but it has
+also been tested with mh-e and VM.  It should work with most other
+major modes as well.
+
+This is version 1.2 of RMIME.  It was released on May 29th, 1996.
+For up to date information on the latest version of RMIME, please
+see http://www.cinti.net/~rmoody/rmime.
+
+RMIME requires Emacs version 19.28 or greater.  Emacs version 19.29
+or greater is required for full functionality.
+
+To use this file with RMAIL, add the following to your .emacs file:
+
+	(add-hook 'rmail-show-message-hook 'rmime-format)
+	(add-hook 'rmail-edit-mode-hook    'rmime-cancel)
+	(autoload 'rmime-format \"rmime\" \"\" nil)
+
+To use this file with mh-e, add the following to your .emacs file:
+
+	(add-hook 'mh-show-mode-hook 'rmime-format)
+	(autoload 'rmime-format \"rmime\" \"\" nil)
+
+To use this file with VM, add the following to your .emacs file:
+
+	(setq vm-preview-lines t)
+	(add-hook 'vm-select-message-hook 'rmime-format)
+	(autoload 'rmime-format \"rmime\" \"\" nil)
+
+To use this file manually, add the following to your .emacs file:
+
+	(autoload 'rmime-mode   \"rmime\" \"\" t)
+
+-----------------------------------------------------------------
+
+		       Defining new MIME types
+
+Most new MIME types need only to be defined to metamail.  RMIME
+only needs to know about MIME types that should be displayed as
+text in an Emacs buffer.  New MIME types can be defined for
+metamail by placing entries in $HOME/.mailcap or in a system wide
+mailcap file.  This is an important feature of RMIME --- most MIME
+aware packages get their configuration out of mailcap files and so
+should Emacs.
+
+To define new text MIME types to Emacs, define a function in the
+form:
+
+(defun rmime-$(BASETYPE)/$(SUBTYPE) (content type encoding
+					disposition description) ...)
+
+CONTENT is an opaque structure that should only be used with
+rmime-content-excursion or rmime-insert-content or
+rmime-insert-unencoded-content or rmime-rmime-write-content.
+
+TYPE is a string taken from the Content-Type field, or nil if the
+Content-Type field was empty or not supplied.  Comments and
+newlines followed by whitespace have been removed from the string.
+The string may be passed to rmime-parameters for further parsing.
+
+ENCODING is a string taken from the Content-Encoding field.  It has
+been converted to lowercase and is never nil.  The empty string is
+used if the field is empty or not supplied.
+
+DISPOSITION is a string taken from the Content-Disposition field,
+or nil if the Content-Disposition field was empty or not supplied.
+Comments and newlines followed by whitespace have been removed from
+the string.  The string may be passed to rmime-parameters for
+further parsing.
+
+DESCRIPTION is a string taken from the Content-Description field,
+or nil if the Content-Description field was empty or not supplied.
+
+If the rmime-$(BASETYPE)/$(SUBTYPE) symbol has the rmime-unwise
+property set, it will not be called while formatting a
+Multipart/Alternative body part except as a last resort.  This
+property should be set for MIME types that don't produce text or
+produce text that doesn't display well in an Emacs buffer.  This
+property should also be set when SUBTYPE is \"*\".  Also, the
+Multipart/Alternative formatting code will backup if a error symbol
+containing rmime-unknown-conventions is signaled.
+
+The formatting function should insert the MIME body part into the
+Emacs buffer as best as possible.
+
+The formatting function should return a list of four element lists:
+		((point content type encoding)
+		 (point content type encoding)
+			...
+		 (point content type encoding))
+This list of four element lists is used to call metamail.  Metamail
+deals with MIME body parts containing sounds, images, etc by
+calling an external viewer.  If the MIME body part displays
+perfectly in an Emacs buffer, metamail doesn't have to be called
+and the list of four element lists can be the empty list.  Usually,
+metamail needs to be called once for each MIME body part and the
+list of four element lists contains exactly one four element list.
+Multipart body parts may need to call metamail several times.  In
+this case, the list of four element lists can contain many four
+element lists.
+
+POINT is a marker showing where the rmime overlay arrow should
+appear while metamail is showing this MIME body part (or nil if no
+overlay arrow is desired)
+
+CONTENT is the opaque structure (the formatting function's first
+parameter).
+
+TYPE is a character string describing the Content Type to metamail.
+The formatting function's second parameter works fine here.
+
+ENCODING is a character string describing the Content Encoding to
+metamail.  The formatting function's third parameter works fine
+here.
+
+No function starting with \"rmime-\" and containing a slash should be
+defined unless it is safe to call for an unauthenticated message.
+
+The MIME formatting should be independent of Emacs state (ie, fill
+column) and of other MIME messages.  Once formatting is performed
+on a message, it sticks even if the Emacs state changes or new,
+associated MIME messages arrive.")

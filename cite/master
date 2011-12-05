@@ -1,0 +1,39 @@
+(:summary    "Citing engine for Gnus"
+ :created    "20020615"
+ :updated    "2004"
+ :license    "GPL-2"
+ :authors    (("lawrence mitchell" . "wence@gmx.li"))
+ :maintainer ("lawrence mitchell" . "wence@gmx.li")
+ :provided   (cite)
+ :keywords   (mail news)
+ :homepage   "http://www.ph.ed.ac.uk/~s0198183"
+ :wikipage   "cite"
+ :commentary "\
+This is yet another citing engine for Emacs.  It's to trivial-cite
+what trivial-cite is to supercite (i.e. stripped down).  I wrote it
+because, well, I wanted to see if I could.  Doesn't do any fancy
+guessing of cite-prefixes, just tacks a \">\" on the front of the
+quoted article.  See the docstrings of `cite-cite' and
+`cite-parse-headers' for information on extending cite.
+
+Installation:
+To use this package, you have to make it the default citing
+function: First make sure cite.el is somewhere on your `load-path',
+then add: (autoload 'cite-cite \"cite\" \"A simple cite function for
+Emacs\" nil) to your .emacs.
+
+If you are a Gnus user:
+In your ~/.gnus add
+(setq message-cite-function 'cite-cite)
+to make message call `cite-cite' to cite articles.
+Since `cite-cite' also generates an attribution, you probably also
+want to do:
+(setq news-reply-header-hook nil)
+
+or at least make sure that `news-reply-header-hook' doesn't call a
+function which creates an attribution line.
+
+If you are a VM user:
+If you use Emacs' mail-mode to compose replies, add the following
+to your ~/.vm
+(setq mail-citation-hook 'cite-cite)")

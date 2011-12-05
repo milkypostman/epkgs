@@ -1,0 +1,34 @@
+(:summary    "Smart cvs-commit interface for emacs"
+ :created    "2000"
+ :updated    "20040625"
+ :license    "GPL-2"
+ :authors    (("Kevin A. Burton" . "burton@openprivacy.org"))
+ :maintainer ("Kevin A. Burton" . "burton@openprivacy.org")
+ :provided   (cvs-commit)
+ :required   ((("emacs" easymenu font-lock)
+	       ("log-edit" log-edit)
+	       ("vc" vc vc-hooks)
+	       (nil cvs-diff)))
+ :keywords   (commit cvs)
+ :commentary "\
+cvs-commit.el is a Emacs modification for smarter cvs-commit management.  It
+contains the following features:
+
+- emulates console \"cvs commit\" by providing standard cvs comments which most
+  CVS users would expect.
+
+- after commits, show cvs output
+
+- when you run cvs-commit, vc-diff is also ran so that while you are
+  providing your CVS log you can look at what you have actually done so that
+  you don't forget to correctly document something
+
+- when editing your cvs log, you can use C-return to scroll the diff output.
+
+- rebinds C-xC-q so that cvs-commit is the default commit mechanism.  
+
+- manage window geometry so that all this information is shown to the user in
+  an obvious manner.
+
+I don't think this should conflict with current vc operation.  It is possible
+that it is not hooked in perfectly as I have not used in all situations.")

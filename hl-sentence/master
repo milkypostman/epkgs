@@ -1,0 +1,9 @@
+(:summary    "Highlight a sentence based on customizable face"
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Donald Ephraim Curtis" . "dcurtis@milkbox.net"))
+ :maintainer ("Donald Ephraim Curtis" . "dcurtis@milkbox.net")
+ :provided   (hl-sentence)
+ :keywords   (highlighting)
+ :homepage   "https://github.com/milkypostman/hl-sentence")

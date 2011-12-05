@@ -1,0 +1,11 @@
+(:summary    "User-configurable drag-n-drop feature"
+ :created    "20030427"
+ :updated    "2008"
+ :license    "GPL-2"
+ :authors    (("Seiji Zenitani" . "zenitani@mac.com"))
+ :maintainer ("Seiji Zenitani" . "zenitani@mac.com")
+ :provided   (smart-dnd)
+ :required   ((("emacs" dnd)))
+ :keywords   (tools)
+ :homepage   "http://homepage.mac.com/zenitani/comp-e.html"
+ :wikipage   "SmartDnD")

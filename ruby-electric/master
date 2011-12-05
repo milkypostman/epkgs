@@ -1,0 +1,8 @@
+(:summary    "Electric editing commands for ruby files"
+ :created    "2005"
+ :updated    "2005"
+ :maintainer ("Jakub Kuźma" . "qoobaa@gmail.com")
+ :provided   (ruby-electric)
+ :required   ((("ruby-mode" ruby-mode)))
+ :keywords   (languages ruby)
+ :homepage   "https://github.com/qoobaa/ruby-electric")

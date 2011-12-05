@@ -1,0 +1,11 @@
+(:summary    "Automatic generate compile-command"
+ :created    "20071208"
+ :updated    "2007"
+ :license    "GPL-2"
+ :authors    (("Ye Wenbin" . "wenbinye@gmail.com"))
+ :maintainer ("Ye Wenbin" . "wenbinye@gmail.com")
+ :provided   (compile-dwim)
+ :required   ((("cl" cl)
+	       ("compile" compile)
+	       ("format-spec" format-spec)))
+ :keywords   (tools))

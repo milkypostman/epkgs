@@ -1,0 +1,31 @@
+(:summary    "Replace S-expressions in files to save variables"
+ :created    "20100902"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Jonas Bernoulli" . "jonas@bernoul.li"))
+ :maintainer ("Jonas Bernoulli" . "jonas@bernoul.li")
+ :provided   (save-sexp)
+ :keywords   (convenience)
+ :homepage   "https://github.com/tarsius/save-sexp"
+ :commentary "\
+Support for replacing S-expressions in files to save variables similar
+to how easy Customize does it.  In fact most of the code is taken from
+`cus-edit.el' and is just generalized a bit for use outside Customize.
+
+A variable's value can be saved like this:
+
+  (save-sexp-save 'some-variable \"/some/file.el\"
+                  'save-sexp-save-setq-1 'pp-to-string)
+
+But since this is the usecase for which this library was created a
+shortcut exists (which is also an interactive command):
+
+  (save-sexp-save-setq 'some-variable \"/some/file.el\")
+
+If on the other hand you want to use another form than `setq' this
+gets you started:
+
+  (save-sexp-save 'some-variable \"/some/file.el\"
+                  (lambda (var pp)
+                    (save-sexp-default-save 'defvar var pp 2))
+                  'pp-to-string)")

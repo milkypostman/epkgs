@@ -1,0 +1,13 @@
+(:summary    "Fast file access for given folder"
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-2"
+ :authors    (("Mariusz Nowak" . "medikoo+el-fast-filelist@medikoo.com"))
+ :maintainer ("Mariusz Nowak" . "medikoo+el-fast-filelist@medikoo.com")
+ :provided   (el-fast-filelist/el-fast-filelist)
+ :required   (nil
+	      (("el-index" el-index/el-index)
+	       (nil el-kit/directory el-kit/file el-kit/key el-kit/list)))
+ :homepage   "https://github.com/medikoo/el-fast-filelist"
+ :commentary "\
+See README.")

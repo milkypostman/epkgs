@@ -1,0 +1,75 @@
+(:summary    "Interactive and programmatic interface to Ecasound"
+ :created    "2001"
+ :updated    "2002"
+ :license    "GPL-2"
+ :authors    (("Mario Lang" . "mlang@delysid.org"))
+ :maintainer ("Mario Lang" . "mlang@delysid.org")
+ :provided   (ecasound)
+ :required   ((("emacs" comint easymenu)
+	       ("pcomplete" pcomplete)))
+ :keywords   (audio comint ecasound eci pcomplete process)
+ :wikipage   "EcasoundMode"
+ :commentary "\
+This file implements several aspects of ecasound use:
+
+* A derived-major-mode, from comint mode for an inferior ecasound
+process (ecasound-aim-mode).  Complete with context sensitive
+completion and interactive features to control the current process
+using ECI.
+
+* Ecasound Control Interface (ECI) library for programmatic control
+of a Ecasound process.  This allows you to write Ecasound batch
+jobs in Emacs-Lisp with Lisp functions and return values.  Have a
+look at eci-example and ecasound-normalize.
+
+* ecasound-ewf-mode, a mode for editing .ewf files.
+
+
+Usage:
+
+You need a very recent version of ecasound for this file to work correclty.
+Something >=2.1dev12, this currently means you need to compile it
+from CVS.
+
+Put ecasound.el in your load-path and require it in your .emacs.
+Set `ecasound-program' to the path to your ecasound executable.
+
+ (setq load-path (cons \"/home/user/elisp\")
+ (require 'ecasound)
+ (setq ecasound-program \"/home/user/bin/ecasound\"
+       eci-program \"/home/user/bin/ecasound\")
+
+Use M-x ecasound RET to invoke an inferior ecasound process.
+
+For programmatic use of the ECI API, have a look at `eci-init',
+`eci-command' and in general the eci-* namespace.
+
+Bugs:
+
+The function ecasound-copp-increase is used to allow the use of +/-
+on the copp-select button to change the value of the number.
+Strangely, if this function is used, the number field changes,
+but also does no longer be a field, i.e., it can no longer
+be edited.   Any ideas?
+
+Todo:
+
+* Convince Kai to make NetECI look and behave exactly like ecasound -c.
+This would make it very easy to make neteci connections using the current
+code.  Just set eci-program to (host . port).
+* Cache things like c-, cs- and cop-list as well as c-, cs- and
+engine-status in buffer-local variables like it's already done for
+cop- and ladspa-register.
+* Tweak the mode-line to include status informations like engine-status
+or inputs/outputs/chains or the current selected cs or chains.
+* Add NetECI support to fetch status info (eci-hide-output t calls)
+via a separate, not visible buffer.
+* Write eci-cop-register alike support for preset-register.
+* Copy documentation for ECI commands into eci-* docstrings and menu
+:help keywords.
+* Expand the menu.
+* Bind most important interactive functions in ecasound-aim-mode-map
+(which layout to use?)
+* Collapse all the duplicate code into a macro and an alist which
+defines the available eci commands.  (This seems rather complicated
+and is probably not worth the effort.)")

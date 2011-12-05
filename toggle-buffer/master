@@ -1,0 +1,44 @@
+(:summary    "Flips back and forth between two buffers"
+ :created    "2001"
+ :updated    "2001"
+ :license    "GPL-2"
+ :authors    (("Joe Casadonte" . "emacs@northbound-train.com"))
+ :maintainer ("Joe Casadonte" . "emacs@northbound-train.com")
+ :provided   (toggle-buffer)
+ :keywords   (buffer toggle)
+ :homepage   "http://www.northbound-train.com"
+ :commentary "\
+This package provides a way to toggle back and forth between the
+ last two active buffers, without any extra keystrokes (like
+ accepting the default argument to `switch-to-buffer').
+
+Nut & Bolts:
+
+ This package works by advising `switch-to-buffer', so if your
+ favorite buffer switching command does not ultimately call
+ `switch-to-buffer', this won't work.  Packages that alter the
+ current buffer *before* `switch-to-buffer' is called will also not
+ work properly.  Both of these situations may be salvagable with
+ the addition of more advice.  In the first case, just write a bit
+ of advice which essentially duplicates what I'm doing here with
+ `switch-to-buffer'.
+
+ I've provided a hack (and a \"hook\") to help with the second
+ situation.  The hack is to define a second variable (the \"hook\")
+ before the list is altered.  Once `switch-to-buffer' is called,
+ the advice provided in this package will first look for this
+ hook/hack variable and use its value; if that's not found, it will
+ use the value returned by `buffer-name'.
+
+ An example of this is the `swbuff' package, which changes the
+ current buffer before switching to the next one (though I'm not
+ sure why it does this).  Since I use swbuff, I've included its
+ hack along with this package.  You can customize whether or not
+ this hack is loaded (see Customization below).
+
+Installation:
+
+ Put this file on your Emacs-Lisp load path and add the following to your
+ ~/.emacs startup file
+
+    (require 'toggle-buffer)")

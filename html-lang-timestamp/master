@@ -1,0 +1,26 @@
+(:created    "1998"
+ :updated    "1998"
+ :license    "GPL-2"
+ :authors    (("Holger Schauer" . "holger.schauer@gmx.de"))
+ :maintainer ("Holger Schauer" . "holger.schauer@gmx.de")
+ :provided   (html-lang-timestamp)
+ :required   ((("cl" cl)))
+ :keywords   (html time utils)
+ :commentary "\
+If you setq this into `html-helper-timestamp-hook' you will get
+language dependent timestamps. \"german\" and \"english\" are predefined,
+using the \"normal\" current-time-string function.
+
+Of course, you can specify whatever style you want.
+Say you like to have a style \"holgers-horror-timestamp\", you could do:
+(pushnew '(\"holgers-horror\" 
+           \"Raised from the grave at %s minutes past midnight.\"
+           holgers-minutes-after-midnight-calculator)
+         html-lang-timestamp-default-language)
+and voila. \"german\" and \"english\" are predefined, using the
+\"normal\" current-time-string function.
+
+If you like a specific style to be used by default, you can do
+(setq html-lang-timestamp-default-language \"english\")
+If you want to change the style of a current document, use
+M-x html-lang-timestamp-change-lang.")

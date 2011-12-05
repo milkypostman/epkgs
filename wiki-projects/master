@@ -1,0 +1,33 @@
+(:summary    "Manage wiki projects"
+ :created    "2001"
+ :updated    "2001"
+ :license    "GPL-2"
+ :authors    (("Alex Schroeder" . "alex@gnu.org"))
+ :maintainer ("Alex Schroeder" . "alex@gnu.org")
+ :provided   (wiki-projects)
+ :required   ((("wiki" wiki)))
+ :keywords   (hypermedia)
+ :wikipage   "WikiProjects"
+ :commentary "\
+This package is an optional extension to wiki.el.
+
+This used to be wiki-priv.el -- a package to maintain a public and a
+private wiki.  This has now changed.  The public and the private wiki
+are still the two default projects, but it is now very easy to add
+more wiki projects.  A wiki project is a set of directories
+containing pages and a set of publishing rules.
+
+The default setup includes a public and a private project.  The
+public project uses the ~/Wiki directory and publishes HTML files
+into the ~/WebWiki directory.  The private project uses the ~/Wiki
+and the ~/Notes directories and it disables publishing.
+
+Use `wiki-project' to switch projects.  Customize `wiki-projects' to
+set them up.  If you do not customize this variable, the \"Public\"
+project will take the default values from the variables
+`wiki-pub-directory', `wiki-directories' and `wiki-pub-rules'.  Once
+you customize `wiki-projects', switching to a project will overwrite
+any values stored in those three variables.
+
+In order to install, put (require 'wiki-projects) somewhere in your
+~/.emacs file.")

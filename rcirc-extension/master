@@ -1,0 +1,11 @@
+(:summary    "The extensions that i collect"
+ :created    "20080608"
+ :updated    "20080829"
+ :license    "GPL-3"
+ :authors    (("Emacs Guys"))
+ :maintainer ("Andy Stewart" . "lazycat.manatee@gmail.com")
+ :provided   (rcirc-extension)
+ :required   ((("rcirc-pounce" rcirc-pounce)))
+ :keywords   (rcirc)
+ :commentary "\
+These extensions is i collects from Internet, just make rcirc more powerful.")

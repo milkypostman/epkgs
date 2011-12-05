@@ -1,0 +1,12 @@
+(:summary    "Some kind of elisp packaging for and by jemarch"
+ :created    "2005"
+ :updated    "2008"
+ :license    "GPL-2"
+ :authors    (("Jose E. Marchesi" . "jemarch@gnu.org"))
+ :maintainer ("Jose E. Marchesi" . "jemarch@gnu.org")
+ :provided   (jem-pkg)
+ :keywords   (extensions)
+ :homepage   "http://www.jemarch.net/jempkg.html"
+ :wikipage   "JemPkg"
+ :commentary "\
+A kind of elisp packaging for and by jemarch")

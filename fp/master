@@ -1,0 +1,12 @@
+(:summary    "Miscellaneous functions"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Stephen Lee" . "lihjhengguang@gmail.com"))
+ :maintainer ("Stephen Lee" . "lihjhengguang@gmail.com")
+ :provided   (fp)
+ :keywords   (lisp)
+ :homepage   "https://github.com/qingl/fpdotel"
+ :commentary "\
+This file provides some functions which I find useful, but may not perform
+very well due to the extensive use of recursion.")

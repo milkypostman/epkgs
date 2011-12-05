@@ -1,0 +1,11 @@
+(:summary    "Major mode to edit muttrc under Emacs"
+ :created    "2000"
+ :updated    "2002"
+ :license    "GPL-2"
+ :authors    (("Laurent Pelecq" . "laurent.pelecq@soleil.org")
+	      ("Kumar Appaiah" . "a.kumar@alumni.iitm.ac.in"))
+ :maintainer ("Laurent Pelecq" . "laurent.pelecq@soleil.org")
+ :provided   (muttrc-mode)
+ :required   ((("jka-compr" jka-compr)
+	       ("man" man)))
+ :wikipage   "MuttRc")

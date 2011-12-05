@@ -1,0 +1,8 @@
+(:created    "2000"
+ :updated    "20020328"
+ :license    "GPL-2"
+ :authors    (("Stefan Reichoer," . "reichoer@web.de"))
+ :maintainer ("Stefan Reichoer," . "reichoer@web.de")
+ :provided   (grabbox)
+ :required   ((("cl" cl)))
+ :homepage   "http://www.xsteve.at/prg/emacs")

@@ -1,0 +1,13 @@
+(:summary    "Some generally useful process filters"
+ :created    "1992"
+ :updated    "20100429"
+ :license    "GPL-2"
+ :authors    (("Noah Friedman" . "friedman@splode.com"))
+ :maintainer (nil . "friedman@splode.com")
+ :provided   (proc-filters)
+ :keywords   (extensions)
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
+ :commentary "\
+These are basically my templates for useful process filters.
+They have been designed to work with inferior processes that may emit
+output while the user is typing; they won't become mixed.")

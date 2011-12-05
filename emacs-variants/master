@@ -1,0 +1,8 @@
+(:summary    "Identify emacs versions, variants, and platforms"
+ :created    "1999"
+ :updated    "19991011"
+ :license    "GPL-2"
+ :authors    (("Noah Friedman" . "friedman@splode.com"))
+ :maintainer (nil . "friedman@splode.com")
+ :provided   (emacs-variants)
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp")

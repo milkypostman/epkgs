@@ -1,0 +1,50 @@
+(:created    "20110302"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Joseph" . "jixiuf@gmail.com"))
+ :maintainer ("Joseph" . "jixiuf@gmail.com")
+ :provided   (joseph-autopair)
+ :keywords   (autopair parentheses skeleton)
+ :homepage   "https://github.com/jixiuf/joseph-autopair"
+ :commentary "\
+this package doesn't use skeleton or anything like this.
+ it use `after-change-functions' hook.
+ when your buffer changed(insert or delete) ,then
+ `after-change-functions' is activated.
+ So I can judge  whether need to insert some \"tail string\".
+ for example:  for \"(\" the \"tail string\" is \")\".
+ you needn't binding keys on parentheses or any paired character.
+ just typing. so it is more sensitive.
+
+
+ I also remaped:
+ `delete-backward-char'
+ `backward-delete-char-untabify'
+ so that when you press `Backspace' between \"(\" and \")\"
+ both \"(\" and \")\" are deleted.
+
+ This is only enabled when the \"tail\" is `string'
+ what is that means?
+ because \"tail\" can be a `string' or a lisp sentence
+ when it is a `string' , it will be inserted directly.
+ when it is a lisp sentence ,it will be eval.
+ see the default value of `joseph-autopair-alist'.
+
+     `origin-backward-delete-char-untabify-1'
+     `origin-delete-backward-char-1'
+ are the original
+ `backward-delete-char-untabify' `delete-backward-char'.
+
+
+ Actually:
+ a pair like this in `joseph-autopair-alist':
+                   (\"[\" \"]\")
+  equals to:
+                   (\"[\" (save-excursion (insert \"]\")))
+
+ but a litter difference exists :
+ when the \"tail\" is `string' then I can get the length of tail
+ easyly, so that I can delete or skip it depending
+ on the length of \"tail\".
+ that means only string type \"tail\" can be skipped
+  and auto deleted .")

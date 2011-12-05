@@ -1,0 +1,62 @@
+(:summary    "Execute Emacs lisp in a separate process"
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-2"
+ :authors    (("Nikolaj Schumacher" . "bugs@nschum.de"))
+ :maintainer ("Nikolaj Schumacher" . "bugs@nschum.de")
+ :provided   (async-eval)
+ :keywords   (extensions lisp processes)
+ :homepage   "http://nschum.de/src/emacs/async-eval"
+ :wikipage   "AsyncEval"
+ :commentary "\
+Emacs lisp is not multi-threaded.  This library explores possibilities to
+work around this.  It allows forms to be evaluated in a separate Emacs
+process.  This means that the executed code cannot access the current
+environment, and the code's side effects cannot be used directly.
+There is a small overhead from starting a new process.
+
+Say, you need to calculate this:
+
+(let ((sum 0)
+      (i 10000000))
+  (while (> i 0)
+    (setq sum (+ sum i)
+          i (1- i)))
+  sum)
+
+Instead of calling it directly, and blocking the Emacs interface, you can
+call it like this:
+
+(async-eval
+    (lambda (result) (message \"async result: <%s>\" result))
+  (let ((sum 0)
+        (i 10000000))
+    (while (> i 0)
+      (setq sum (+ sum i)
+            i (1- i)))
+    sum))
+
+The first argument is a function that is called with the result once the
+calculation is done.
+
+Since the form is evaluated in a separate process, local functions are not
+available by default.  If you have the following function:
+
+(defun fib (n)
+  \"Intentionally slow fibonacci numbers.\"
+  (if (< n 2)
+      n
+    (+ (fib (1- n)) (fib (- n 2)))))
+
+You cannot do this, as fib won't be defined.
+
+(async-eval
+    (lambda (result) (message \"async result: <%s>\" result))
+  (fib 35))
+
+But you can conveniently export a list functions and variables to the other
+process:
+
+(async-eval-with-export '(fib)
+    (lambda (result) (message \"async result: <%s>\" result))
+  (fib 30))")

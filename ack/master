@@ -1,0 +1,21 @@
+(:summary    "Use ack where you might usually use grep"
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-2"
+ :authors    (("Philip Jackson" . "phil@shellarchive.co.uk"))
+ :maintainer ("Philip Jackson" . "phil@shellarchive.co.uk")
+ :provided   (ack)
+ :required   ((("compile" compile)
+	       ("grep" grep)))
+ :homepage   "http://www.shellarchive.co.uk/content/emacs.html"
+ :wikipage   "Ack"
+ :commentary "\
+ack.el provides a simple compilation mode for the perl grep-a-like
+ack (http://petdance.com/ack/).
+
+If `ack-guess-type' is non-nil and `ack-mode-type-map' has a
+reasonable value then ack.el will try and guess what you would like
+in the --type argument for ack.
+
+To install/use put ack.el in your load-path and (require 'ack) in
+your initialisation file. You can then M-x ack and you're off.")

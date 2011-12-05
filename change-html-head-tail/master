@@ -1,0 +1,7 @@
+(:updated    "20070610"
+ :license    "GPL-2"
+ :provided   (change-html-head-tail)
+ :required   ((("cl" cl)
+	       ("page-structure" page-structure)
+	       ("webmaster-macros" webmaster-macros)))
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/webstuff")

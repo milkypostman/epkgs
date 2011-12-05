@@ -1,0 +1,48 @@
+(:summary    "An event-based XML parsing engine for Emacs"
+ :created    "2002"
+ :updated    "2002"
+ :license    "GPL-2"
+ :authors    (("Edward O'Connor" . "ted@oconnor.cx"))
+ :maintainer ("Edward O'Connor" . "ted@oconnor.cx")
+ :provided   (xml-event)
+ :required   ((("xml" xml)))
+ :keywords   (comm processes tools)
+ :homepage   "http://edward.oconnor.cx/elisp"
+ :commentary "\
+Typical usage:
+
+(require 'xml-event)
+
+(defun my-open-tag-callback (tag attrs my-arg-1 my-arg-2 ...)
+  ...)
+
+(defun my-close-tag-callback (tag  my-arg-1 my-arg-2 ...)
+  ...)
+
+(defun my-empty-tag-callback (tag attrs my-arg-1 my-arg-2 ...)
+  (my-open-tag-callback tag attrs)
+  (my-close-tag-callback tag))
+
+(defun my-content-callback (content my-arg-1 my-arg-2 ...)
+  ...)
+
+my-thingy is my-process or my-buffer
+(xml-event-register-callback my-thingy 'open-tag
+                             'my-open-tag-callback
+                             my-arg-1 my-arg-2 ...)
+(xml-event-register-callback my-thingy 'close-tag
+                             'my-close-tag-callback
+                             my-arg-1 my-arg-2 ...)
+(xml-event-register-callback my-thingy 'empty-tag
+                             'my-empty-tag-callback
+                             my-arg-1 my-arg-2 ...)
+(xml-event-register-callback my-thingy 'content
+                             'my-content-callback
+                             my-arg-1 my-arg-2 ...)
+(xml-event-register-callback my-thingy 'stream-closed
+                             'my-stream-closed-callback
+                             my-arg-1 my-arg-2 ...)
+
+(xml-event-install my-process)
+- or -
+(xml-event-parse my-buffer)")

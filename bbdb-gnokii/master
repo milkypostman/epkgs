@@ -1,0 +1,148 @@
+(:summary    "Export phone entries from BBDB to gnokii contacts file"
+ :created    "2000"
+ :updated    "20060419"
+ :license    "GPL-2"
+ :authors    (("Martin Schwenke" . "martin@meltin.net")
+	      ("Reiner Steib" . "reiner.steib@gmx.de")
+	      ("Len Trigg" . "len@reeltwo.com"))
+ :maintainer ("Martin Schwenke" . "martin@meltin.net")
+ :provided   (bbdb-gnokii)
+ :required   ((("bbdb" bbdb)))
+ :keywords   (bbdb gnokii nokia)
+ :homepage   "http://meltin.net/hacks/emacs"
+ :commentary "\
+Exports BBDB phone entries to a contacts file that can be used by
+gnokii to write them to a Nokia mobile phone.
+
+No responsibility for blowing up your phone... blah, blah, blah...
+I recommend dumping your phone book to a file (using xgnokii, say)
+and keeping it in a safe place until you are sure that
+bbdb-gnokii.el doesn't do anything stupid.
+
+The latest version of this file is available via:
+
+  http://meltin.net/hacks/emacs/
+
+The gnokii web site is
+
+  http://www.gnokii.org/
+
+bbdb-gnokii.el is loosely based on JWZ's bbdb-pilot-jwz.el.
+
+gnokii expects a file with the following format:
+
+   name;number;memory_type;entry_location;caller_group_number;\\
+   subentry_type;subentry_number_type;subentry_id;subentry_text
+
+The length and syntax of \"name\" and \"number\" are limited, so some
+munging goes on.  You can adjust the munging to your needs by
+customizing the variables `bbdb-gnokii-firstname-transform',
+`bbdb-gnokii-lastname-transform' and
+`bbdb-gnokii-location-transform'.
+
+The default settings of these variables reflect Martin's preferences.
+Here is a combination of alternative settings used by Reiner:
+
+  (setq
+   ;; Use long firstnames and lastnames and a short location:
+   bbdb-gnokii-firstname-transform 'bbdb-gnokii-transform-word
+   bbdb-gnokii-lastname-transform  12
+   bbdb-gnokii-location-transform  'bbdb-gnokii-transform-location
+   bbdb-gnokii-max-name-length     16)
+
+The memory_type specifies where to write the contacts (phone memory
+or SIM card).  See variable `bbdb-gnokii-default-memory-type' and
+it's documentation for details.
+
+Configuration:
+
+Add this to your ~/.emacs or equivalent:
+
+  (autoload
+    'bbdb-gnokii-export
+    \"bbdb-gnokii\"
+    \"Export phone entries from BBDB to a Gnokii contacts file.\"
+    t)
+
+If you want to add some standard entries to your phone, you can put
+them in a file and set the following variable:
+
+  (setq bbdb-gnokii-extras-file
+        (expand-file-name \"~/.bbdb-gnokii-extras.txt\"))
+
+The contents of the specified file get appended to the file
+generated from the BBDB (cf. `bbdb-gnokii-extras-file-position').
+My phone vendor preloads a bunch of their numbers into the SIM
+card, and I'm keeping them until I'm sure they're not useful!
+
+Entries are only extracted from the BBDB for entries that have a
+gnokii field.  In general, if this field is present, then all of
+the phone numbers (except those that have locations listed in
+`bbdb-gnokii-exclude-locations') will be exported.
+
+For example:
+
+  Fred Smith - Widget, Inc.
+        mobile: (04) 1234 5678
+          home: (02) 1234 5678
+        gnokii: t
+
+will have 2 items exported:
+
+Fred S mobile;0412345678;...
+Fred S home;0212345678;...
+
+For entries with a name, the default generated name is the first
+word of firstname, space, first letter of lastname.
+
+For entries without a name, but with a company, the default
+generated name is the first word of the company name.
+
+The phone number locations are only appended if there is more than
+1 phone entry exported.
+
+If the gnokii field contains a string in double-quotes, then it
+will be used as the name.
+
+If the gnokii field contains something like location=X then the
+number for location will be put into speed-dial location X.  All
+other entries are put between `bbdb-gnokii-general-min-location'
+and `bbdb-gnokii-general-max-location'.
+
+If the gnokii field contains something like (Y) then the entry will
+belong to caller group Y, otherwise
+`bbdb-gnokii-default-caller-group' is used.
+
+So,
+
+  Fred Smith - Widget, Inc.
+        mobile: (04) 1234 5678
+          home: (02) 1234 5678
+           fax: (02) 8765 4321
+        gnokii: \"Freddy\" (0) mobile=2 home=3
+
+will have 2 items exported:
+
+Freddy mobile;0412345678;...;0;
+Freddy home;0212345678;...;0;
+
+No item is exported for the fax number because it is a member of
+`bbdb-gnokii-exclude-locations'.
+
+If the gnokii field contains \"skip=foo\", the phone number corresponding to
+the location \"foo\" will not be exported.
+
+You can also export a whole BBDB record to a single gnokii entry by
+setting `bbdb-gnokii-phonebook-style' to `multi' or `mega'.  In
+this style the default phone number can be set by specifying the
+associated location in the BBDB gnokii field.  For example, if the
+gnokii field contains \"[work]\" then the phone number with location
+\"work\" will be the default one.  If no default location is
+specified in the gnokii field, then the order of preference is
+determined by `bbdb-gnokii-preferred-phone-locations'.  If
+`bbdb-gnokii-phonebook-style' is set to `mega', an email address
+and postal address are also added to the gnokii entry, when
+available.
+
+See the variables and code below for more details.  You may check all
+customizable variables using `M-x customize-group RET bbdb-gnokii RET'.")

@@ -1,0 +1,11 @@
+(:summary    "Analyze the memory usage of Emacs in various ways"
+ :created    "2002"
+ :updated    "2004"
+ :license    "GPL-2"
+ :authors    (("Stefan Monnier" . "monnier@cs.yale.edu"))
+ :maintainer ("Stefan Monnier" . "monnier@cs.yale.edu")
+ :provided   (memory-usage)
+ :keywords   (maint)
+ :commentary "\
+This package provides the command `memory-usage', which lists all
+buffers and how much memory they use.")

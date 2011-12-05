@@ -1,0 +1,5 @@
+(:summary    "Major mode for editing Cisco router configuration files"
+ :created    "2004"
+ :updated    "2004"
+ :license    "GPL-2"
+ :provided   (cisco-router-mode))

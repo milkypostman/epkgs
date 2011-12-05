@@ -1,0 +1,26 @@
+(:created    "2011"
+ :updated    "20110428"
+ :license    "GPL-3"
+ :authors    ((nil . "xjpablobrx@gmail.com"))
+ :maintainer (nil . "xjpablobrx@gmail.com")
+ :provided   (cheat-fu)
+ :keywords   (bash cheats)
+ :homepage   "https://github.com/jpablobr/cheat-fu-mode"
+ :wikipage   "CheatFuMode"
+ :commentary "\
+This minor mode exists to provide emacs with an interface to cheat-fu
+https://github.com/jpablobr/cheat-fu
+
+You can configure the cheat-fu-sheets root directory by appending
+a directory name onto the `cheat-fu-root'.
+
+Installation
+
+In your emacs config:
+
+(add-to-list 'load-path \"~/.emacs.d/load/path/cheat-fu.el\")
+(require 'cheat-fu)
+(setq cheat-fu-root \"/path/to/.cheat_fu_sheets/\")
+
+----------------------------------------------------------------------------
+- Customization")

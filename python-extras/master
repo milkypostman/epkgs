@@ -1,0 +1,90 @@
+(:summary    "Extras for python-mode"
+ :created    "20100522"
+ :updated    "2010"
+ :license    "GPL-3"
+ :maintainer ("Mickey Petersen")
+ :provided   (python-extras)
+ :required   ((("emacs" comint)
+	       ("python" python)
+	       ("rx" rx)
+	       ("skeleton" skeleton)
+	       ("thingatpt" thingatpt)))
+ :keywords   (extras python refactor utility)
+ :homepage   "http://bitbucket.org/mickey/python-extras"
+ :commentary "\
+Random grab bag of extras for \\\\[python-mode] and
+\\\\[inferior-python-mode].
+
+This package was made to improve Emacs' existing python mode,
+`python.el'.  Unlike packages like ropemacs this module does not have
+any mandatory external dependencies.
+
+
+Several different helper functions were added to:
+
+ * Let you add parameters to the function block you're editing in
+   using the minibuffer;
+
+ * Send the expression under point to either 'dir' or 'help' in
+   inferior python without disrupting your current input.
+
+ * Add basic syntax highlighting to inferior python.
+
+ * Shift regions of code around and reindents according to the
+   indentation depth of that block
+
+
+How to use
+
+By default several commands are bound to various 'C-c' keybinds.
+
+In \\\\[python-mode]:
+
+Misc
+
+<RET> - Now rebound to `newline-and-indent' -- as it should be.
+
+C-S-<up>/<down> - Shifts a region up/down intelligently,
+reindenting as necessary.
+
+Refactor
+
+C-c C-p - Calls `python-mp-add-parameter' which will prompt you for
+a parameter to add to the function point is currently in.  If you
+are not in a function body an error is raised.
+
+
+Extract...
+
+Extracts the string/s-exp/expression at point to the top of the
+current...
+
+  C-c C-e C-b - block
+
+  C-c C-e C-d - def
+
+  C-c C-e C-c - class
+
+In inferior python mode:
+
+Inferior Python
+
+C-c C-d - Invokes `python-mp-send-dir'.  Sends a dir(EXPR) command
+where EXPR is the expression at point.  It will preserve your
+current input.
+
+C-d C-h - Invokes `python-mp-send-help'.  Sends a help(EXPR) command
+where EXPR is the expressio nat point.  It will also preserve your
+current input.
+
+Highlighting - Strings are now highlighted using a special \"safety\"
+font locker to prevent the colors from 'bleeding'.
+
+
+Installation:
+
+Put `python-extras.el' somewhere in your `load-path'.
+
+Now add the following line to your .emacs or init.el:
+
+(require 'python-extras)")

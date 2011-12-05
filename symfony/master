@@ -1,0 +1,39 @@
+(:summary    "Minor mode for editting PHP symfony flamework code"
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-2"
+ :provided   (symfony)
+ :required   ((("anything" anything anything-grep anything-match-plugin)
+	       ("anything-project" anything-project)
+	       ("cl" cl)
+	       ("etags" etags)
+	       ("php-completion" php-completion)
+	       ("php-mode" php-mode)
+	       ("rx" rx)))
+ :homepage   "https://github.com/imakado/emacs-symfony"
+ :commentary "\
+tested on emamcs22 and emacs23
+
+some code taken from rails.el
+
+
+To run test,
+
+git clone git@github.com:imakado/emacs-symfony.git ~/dev/emacs-symfony
+cd ~/dev/emacs-symfony
+./run-test.sh
+=> 0 failures, 0 errors (all tests successful)
+
+
+Installation:
+
+install requires libraries:
+`anything.el' http://www.emacswiki.org/emacs/anything.el
+`anything-match-plugin.el'  http://www.emacswiki.org/emacs/anything-match-plugin.el
+`anything-project.el' http://github.com/imakado/emacs-symfony/tree/master
+`anything-grep'  http://www.emacswiki.org/emacs/anything-grep.el
+
+`symfony.el' http://github.com/imakado/emacs-symfony/tree/master (this file)
+
+add these lines to your .emacs file:
+(require 'symfony)")

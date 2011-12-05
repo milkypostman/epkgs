@@ -1,0 +1,26 @@
+(:summary    "Execute Start Menu shortcuts from inside Emacs"
+ :created    "2005"
+ :updated    "2005"
+ :license    "GPL-2"
+ :authors    (("Mathias Dahl" . "mathias.removethis.dahl@gmail.com"))
+ :maintainer ("Mathias Dahl")
+ :provided   (w32-exec-predef)
+ :required   ((("findr" findr)
+	       ("w32-utl" w32-utl)))
+ :keywords   (shortcuts start\ menu vbscript)
+ :commentary "\
+This package provide the function `w32-exec-predef' which can be
+used to execute shortcuts from the Start Menu in Windows, using
+iswitchb completion. This is yet another step in avoiding to leave
+the safe environment living inside Emacs... :)
+
+The user does not need to keep this list updated himself as there
+is a function, `w32-exec-predef-build', that does it for him. This,
+however, means that the first time in each session that the
+function is run, it will take a bit longer because it will populate
+all information from the Start Menu.
+
+Prerequisites:
+
+* requires findr.el for doing the recursive scan for .lnk files and
+  w32-utl.el for some utility functions.")

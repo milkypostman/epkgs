@@ -1,0 +1,24 @@
+(:summary    "Establish a default for M-x compile"
+ :created    "2008"
+ :updated    "2009"
+ :license    "GPL-3"
+ :authors    (("Kevin Ryde" . "user42@zip.com.au"))
+ :maintainer ("Kevin Ryde" . "user42@zip.com.au")
+ :provided   (compile-command-default)
+ :keywords   (processes)
+ :commentary "\
+This spot of code lets you establish a default `compile-command' for
+M-x compile etc.
+
+Each function in `compile-command-default-functions' can contemplate the
+buffer filename, directory, contents, etc, and decide a compile-command
+they would apply.  The included functions run perl development or test
+programs, either directly or through the test harness.
+
+The operative part is really just the hack to `hack-local-variables' to
+get a good point to establish a default.  The list of functions is mainly
+so they can do weird and wonderful tests for when they apply, and can
+then build something perhaps with absolute directorys etc.
+
+See mode-compile.el for a bigger system geared more towards language
+compiles like gcc etc.")

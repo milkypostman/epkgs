@@ -1,0 +1,5 @@
+(:summary    "Skip initial comments when loading a file"
+ :updated    "20050118"
+ :license    "GPL-2"
+ :provided   (skip-initial-comments)
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/editing")

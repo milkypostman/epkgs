@@ -1,0 +1,32 @@
+(:summary    "A bubble-popping game"
+ :created    "2000"
+ :updated    "2000"
+ :license    "GPL-2"
+ :authors    (("Paul Du Bois" . "dubois@infinite-machine.com"))
+ :maintainer ("Paul Du Bois" . "dubois@infinite-machine.com")
+ :provided   (bubblet)
+ :required   ((("cl" cl)
+	       ("emacs" cus-edit)))
+ :keywords   (game puzzle)
+ :commentary "\
+Inspired by the original Palm Bubblet by Frank Fejes (www.oopdreams.com),
+and by the win32 Bubblet by Daniel Klein (www.hobsoft.de).
+
+Requires emacs 20 or higher.  Load it and M-x bubblet to start playing.
+
+Pop as many bubbles as possible.  You can only pop groups of 2 or more
+bubbles.  Groups are formed from vertically or horizontally adjacent
+bubbles of the same color.  The larger the group, the more points you
+score.  The score for popping a group of size N is N * (N-1)
+
+Usage:
+  M-x bubblet
+  M-x customize-group bubblet
+
+Bindings:
+
+n	new game
+h	help
+u	undo (multiple undo supported)
+q	quit
+C-l	refresh")

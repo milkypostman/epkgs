@@ -1,0 +1,36 @@
+(:summary    "Useful extensions for the C-h prefix"
+ :created    "2003"
+ :updated    "2004"
+ :license    "GPL-2"
+ :authors    (("Michael Schierl" . "schierlm-public@gmx.de"))
+ :maintainer ("Michael Schierl" . "schierlm-public@gmx.de")
+ :provided   (helpex)
+ :required   ((("info" info)))
+ :keywords   (c-h documentation find function help info keymap)
+ :commentary "\
+This file provides additions to the C-h help prefix.
+
+To install it, (auto)load this file and run (helpex-setup-keys).
+
+This will add the following key bindings to the C-h prefix (As a
+mnemonic, think about what the same commands with non-capital
+letters do):
+
+C-h A        `apropos'
+C-h D        `find-function'
+C-h V        `find-variable'
+C-h K        `find-function-on-key'
+C-h 4 f      `find-function-other-window'
+C-h 5 f      `find-function-other-frame'
+C-h 4 k      `find-variable-other-window'
+C-h 5 k      `find-variable-other-frame'
+C-h L        `helpex-find-library'
+C-h o        `helpex-locate-library'
+C-h M        `helpex-show-keymap'
+
+Additionally, it changes the behaviour of Info-goto-node, so that,
+if it is called interactively, the entered string starts with `('
+and does not contain any `)', info file names are auto-completed.
+
+Example: If you press C-h i g ( e m TAB, it will---if you don't have
+other info files starting with `em'---complete it to `(emacs)'.")

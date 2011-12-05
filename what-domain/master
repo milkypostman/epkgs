@@ -1,0 +1,30 @@
+(:summary    "Top-level internet domain name information"
+ :created    "20010920"
+ :updated    "20010921"
+ :license    "GPL-2"
+ :authors    (("Noah Friedman" . "friedman@splode.com"))
+ :maintainer (nil . "friedman@splode.com")
+ :provided   (what-domain)
+ :keywords   (extensions)
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
+ :commentary "\
+For several years there has been a command `what-domain' defined in
+mail-extr.el, which is shipped with Emacs.  But it has several
+limitations:
+
+    * It's not up to date in older versions of emacs
+    * Only resolves 2-letter country codes into domain names
+    * Not callable from lisp because it always writes to the echo area
+
+This package provides the following commands:
+
+    * what-domain-a2       (`what-domain' is aliased to this)
+    * what-domain-a3       (lets you query 3-letter country codes)
+    * what-domain-num      (lets you query numeric country codes)
+    * what-domain-apropos  (lets you search for domain codes by name)
+
+Each of which returns a useful list of information when called from
+lisp, and allows you to perform interactive searches in different ways.
+
+Most of the country codes come from the RIPE Network Coordination
+Centre's tracking of ISO 3166, last updated 1997-08-07 15:59:51 UTC")

@@ -1,0 +1,10 @@
+(:summary    "An interface to RFC 2229 dictionary server"
+ :updated    "20041002"
+ :license    "GPL-2"
+ :authors    (("Torsten Hilbrich" . "dictionary@myrkr.in-berlin.de"))
+ :maintainer ("Torsten Hilbrich" . "dictionary@myrkr.in-berlin.de")
+ :provided   (connection dictionary link)
+ :required   ((("cl" cl)
+	       ("emacs" custom easymenu tooltip)))
+ :keywords   (dictionary interface)
+ :homepage   "http://www.myrkr.in-berlin.de/dictionary/index.html")

@@ -1,0 +1,44 @@
+(:summary    "Quickly grab a stock quote from the net"
+ :created    "19991203"
+ :updated    "2001"
+ :license    "GPL-2"
+ :authors    (("John Wiegley" . "johnw@gnu.org"))
+ :maintainer ("John Wiegley" . "johnw@gnu.org")
+ :provided   (stock-quote)
+ :required   ((("url" url)
+	       ("w3" w3)))
+ :keywords   (data)
+ :wikipage   "StockQuote"
+ :commentary "\
+A simple mode for snarfing stock quotes.
+
+To obtain a quote, type `M-x stock-quote', and enter the ticker
+symbol.
+
+To watch a quote in the modeline, configure the variable
+`stock-quote-in-modeline' with the name of the ticker symbol to
+watch.
+
+To change the way that quotes are obtained, write a new function
+and add-hook it to `stock-quote-data-functions'.  It will be passed
+the ticker name, and should return the price if it can.  The
+default method uses the Money Quick Quotes web page, and the W3
+package.
+
+If you want Emacs to do certain things when certain conditions are
+met, you should configure the triggers and actions variables.  Only
+a few predefined triggers are given, but the mechanism is
+extensible.  Just add your trigger function to
+`stock-quote-trigger-functions'.  It will be given the ticker name
+and price (as a floating point value).  If the function returns a
+string, representing the reason why the trigger is firing, then the
+trigger is considered as having fired, and an action will be
+performed.
+
+Actions are functions that have been add-hook'd to
+`stock-quote-trigger-functions'.  If the first action to return a
+non-nil value is chosen.  They can do anything, and will be passed
+the ticker name, the price, and the reason returned by the trigger
+function.
+
+And always remember: profit isn't real until its real.")

@@ -1,0 +1,28 @@
+(:summary    "Extensions to `frame.el'"
+ :created    "19960412"
+ :updated    "20110629"
+ :license    "GPL-2"
+ :authors    (("Drew Adams"))
+ :maintainer ("Drew Adams")
+ :provided   (frame+)
+ :required   ((("emacs" frame))
+	      (("fit-frame" fit-frame)))
+ :keywords   (frames)
+ :commentary "\
+Extensions to `frame.el'.
+
+
+ ***** NOTE: The following function defined in `frame.el' has been
+             REDEFINED HERE:
+
+ `special-display-popup-frame' (Emacs 20-23) - Call `fit-frame'.
+
+ Note: Starting with Emacs 24, they moved
+ `special-display-popup-frame' to `window.el' from `frame.el'.  So
+ for my enhancement of it for Emacs 24+ you will need library
+ `window+.el', not `frame+.el'.
+
+
+ This file should be loaded after loading the standard GNU file
+ `frame.el'.  So, in your `~/.emacs' file, do this:
+ (eval-after-load \"frame\" '(require 'frame+))")

@@ -1,0 +1,10 @@
+(:summary    "Let there be <leader>"
+ :created    "20110913"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Michael Markert" . "markert.michael@googlemail.com"))
+ :maintainer ("Michael Markert" . "markert.michael@googlemail.com")
+ :provided   (evil-leader)
+ :required   ((("evil" evil)))
+ :keywords   (evil leader vim-emulation)
+ :homepage   "https://github.com/cofi/evil-leader")

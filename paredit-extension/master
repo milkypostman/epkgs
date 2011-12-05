@@ -1,0 +1,12 @@
+(:summary    "Simple extension base on paredit.el"
+ :created    "20080728"
+ :updated    "20080728"
+ :license    "GPL-3"
+ :authors    (("Andy Stewart" . "lazycat.manatee@gmail.com"))
+ :maintainer ("Andy Stewart" . "lazycat.manatee@gmail.com")
+ :provided   (paredit-extension)
+ :required   ((("paredit" paredit)
+	       (nil lazycat-toolkit)))
+ :keywords   (paredit)
+ :commentary "\
+This extension is base on paredit.el of Taylor R. Campbell.")

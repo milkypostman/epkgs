@@ -1,0 +1,14 @@
+(:summary    "User Interface for perl debugger"
+ :created    "20071213"
+ :updated    "2007"
+ :license    "GPL-2"
+ :authors    (("Ye Wenbin" . "wenbinye@gmail.com"))
+ :maintainer ("Ye Wenbin" . "wenbinye@gmail.com")
+ :provided   (perldb-ui)
+ :required   ((("cl" cl)
+	       ("gud" gud)
+	       ("windata" windata)
+	       (nil gdb-ui)))
+ :commentary "\
+Warning: Not finish yet! But you may have a try and give me some
+advices.")

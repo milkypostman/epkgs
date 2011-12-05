@@ -1,0 +1,6 @@
+(:summary    "An Object Oriented Programming System in Elisp"
+ :created    "1992"
+ :updated    "1992"
+ :license    "GPL-2"
+ :provided   (eoops)
+ :wikipage   "EmacsObjectOrientedProgrammingSystem")

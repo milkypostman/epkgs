@@ -1,0 +1,22 @@
+(:summary    "More things for info-look.el"
+ :created    "2008"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Kevin Ryde" . "user42@zip.com.au"))
+ :maintainer ("Kevin Ryde" . "user42@zip.com.au")
+ :provided   (info-lookmore)
+ :required   ((("info-look" info-look)))
+ :keywords   (help info-look languages)
+ :homepage   "http://user42.tuxfamily.org/info-lookmore"
+ :commentary "\
+This is some more stuff for `info-lookup-symbol' -- some specific manuals
+to add and a couple of mode setups.
+
+Functions adding manuals are `interactive' you can M-x whatever to have
+it just for the current session.
+
+For manuals not covered see `info-lookmore-add-doc'.  Usually you have to
+find the node name for the index, then check whether entries can be used
+directly or need mangling.  The easiest is when there's a separate
+\"Functions\" or \"Functions and Variables\" index.  See `info-lookup-alist'
+for the details.")

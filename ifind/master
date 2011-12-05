@@ -1,0 +1,19 @@
+(:summary    "An interface to `find` based on igrep.el"
+ :created    "20031113"
+ :updated    "20040512"
+ :license    "GPL-2"
+ :authors    (("Kevin Rodgers" . "ihs_4664@yahoo.com"))
+ :maintainer ("Kevin Rodgers" . "ihs_4664@yahoo.com")
+ :provided   (ifind)
+ :required   ((("emacs" custom)
+	       ("igrep" igrep)))
+ :keywords   (processes search tools)
+ :commentary "\
+The `ifind' command is like `igrep-find' (which in turn is like
+`grep-find'), except that it uses the awk program to show just one
+line of all files whose names match the user-specified regex.
+
+A default file name pattern is provided (based on the current
+buffer), and the user can customize the `ifind-awk-regex' variable to
+determine which line of each matching file is shown (to provide a
+peek at its content).")

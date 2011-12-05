@@ -1,0 +1,73 @@
+(:created    "2000"
+ :updated    "2000"
+ :license    "GPL-2"
+ :authors    (("Tim Anderson" . "tma@netspace.net.au"))
+ :maintainer ("Tim Anderson")
+ :provided   (browse-help)
+ :required   ((("browse-url" browse-url)
+	       ("cl" cl)
+	       ("emacs" cus-edit)))
+ :keywords   (browser help)
+ :commentary "\
+This package provides support for context-sensitive help within Emacs.
+It parses user supplied help files to build up an index of topics and
+their corresponding URLs. When a topic is looked up, its help
+is displayed to a browser via the browse-url package.
+
+
+Current functionality includes:
+. browsing help for the current word
+. browsing help for the current region
+. interactive searches, with completion
+
+
+Usage:
+
+To use this package, add the following to your .emacs file:
+
+(require 'browse-help)
+
+Now customize `browse-help-files' located in the Help->Browse Help
+customization group. This associates help files with their appropriate
+Emacs modes.
+
+Help files may be:
+. HTML documents
+  The HTML parser will parse entries of the form:
+     <a href=URL>TOPIC</a>
+. Index files
+  Each line must contain entries of the form:
+     TOPIC<tab>URL
+
+To use the help, set up appropriate key bindings for:
+. `browse-help-on-current-word'
+  This searches help associated with the current mode for the current
+  word. If there is a single match, the associated URL will be displayed in
+  a browser. If there are multiple matches, they will be displayed to a
+  Browse Help buffer; from here the appropriate topic can be selected with
+  the mouse.
+  The default key binding is C-c C-w.
+
+. `browse-help-on-current-region'
+  This provides the same basic functionality as
+  `browse-help-on-current-word' except that the search is done using the
+  current selected region.
+  The default key binding is C-c C-r.
+
+. `browse-help-search'
+  This performs an interactive search (with completion) of help
+  associated with the current mode.
+  The default key binding is C-c C-f.
+
+. `browse-help-display-manuals-for-mode'
+  This displays all help associated with a particular mode.
+  The default key binding is C-c C-m.
+
+You can customize the key bindings via `browse-help-key-bindings'.
+
+Other relevant functions:
+. `browse-help-display-manual'
+  Display a single help manual.
+
+. `browse-help-save-manual'
+  Saves manual as an index file, parseable by `browse-help-parse-index'.")

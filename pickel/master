@@ -1,0 +1,73 @@
+(:summary    "Elisp object serialization"
+ :created    "20100929"
+ :updated    "2010"
+ :license    "GPL-2"
+ :authors    (("tlh" . "thunkout@gmail.com"))
+ :maintainer ("tlh" . "thunkout@gmail.com")
+ :provided   (pickel)
+ :required   ((("cl" cl)))
+ :keywords   (object serialization)
+ :homepage   "https://github.com/tlh/pickel.el"
+ :commentary "\
+pickel is an elisp object serialization package.  It can serialize
+ and deserialize most elisp objects, including any combination of
+ lists (conses and nil), vectors, hash-tables, strings, integers,
+ floats, symbols and structs (vectors).  It can't serialize
+ functions, subrs (subroutines) or opaque C types like
+ window-configurations.
+
+ `pickel' works by printing to a stream a set of coded
+ instructions, which can be used by `unpickel' to recreate the
+ original object.  The unpickeled object isn't `eq' to the
+ original, although the two are \"equal\" in the spirit of `equal',
+ in the sense that their structure and content are equal.  For
+ example:
+
+   (setq foo (pickel-to-string '(bar baz)))
+
+   => \"( ... pickeled foo here ... )\"
+
+   (equal (unpickel-string foo) '(bar baz))
+
+   => t
+
+   (eq (unpickel-string foo) '(bar baz))
+
+   => nil
+
+ pickel correctly reconstructs cycles in the object graph.  Take
+ for instance a list that points to itself:
+
+   (let ((foo '(nil)))
+     (setcar foo foo)
+     foo)
+
+   => (#0)
+
+ In the above, the car of foo is set to foo.  Now if we pickel foo
+ to a string, then unpickel that string, we produce an identical
+ self-referential cons:
+
+   (let ((foo '(nil)))
+     (setcar foo foo)
+     (unpickel-string (pickel-to-string foo)))
+
+   => (#0)
+
+ Pickel also correctly recreates `eq' subobjects, including
+ strings, symbols, floats and the collection types.  When two
+ subobjects of an object are `eq', they will be `eq' after
+ unpickeling as well:
+
+   (let* ((foo \"bar\")
+          (baz (unpickel-string
+                 (pickel-to-string (list foo foo)))))
+     (eq (car baz) (cadr baz)))
+
+ => t
+
+
+Installation:
+
+ - put `pickel.el' on your load path and (require 'pickel) where
+   you want to use it.")

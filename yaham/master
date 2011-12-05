@@ -1,0 +1,10 @@
+(:summary    "Simple haskell mode specialized for ghc"
+ :created    "2007"
+ :updated    "20070903"
+ :provided   (yaham yaham-autoloads yaham-hugs yaham-proc yaham-skel yaham-tab)
+ :required   ((("compile" compile)
+	       ("emacs" comint easymenu newcomment)
+	       ("imenu" imenu)
+	       ("regexp-opt" regexp-opt)
+	       ("thingatpt" thingatpt)))
+ :homepage   "http://primate.net/~itz/yaham")

@@ -1,0 +1,16 @@
+(:summary    "Tools for seeking text in files and edit this files"
+ :created    "2000"
+ :updated    "2000"
+ :license    "GPL-2"
+ :provided   (file-ext)
+ :keywords   (grep tools)
+ :homepage   "http://www.emacs.mirkolinkonline.de/extras.html"
+ :commentary "\
+folgende zusätzliche Funktionen sind zur Zeit unterstützt:
+ - Sicherungsdateien in einem festen Verszeichnis
+ - Suchen über mehrere Dateien: `sr' oder `search-about-files'
+ - eine Zeile als Bookmark setzen `set-bookmark-line' (Tastenkombination: C-M-j)
+
+Revision 1.4:
+- Ersetzen über mehrere Dateien erstellt
+- bereits geöffnete Buffer bleiben offen (auch bei der Suche über mehrere Dateien")

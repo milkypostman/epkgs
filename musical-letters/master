@@ -1,0 +1,39 @@
+(:summary    "Play the fluidsynth software synthesizer"
+ :created    "2004"
+ :updated    "2004"
+ :license    "GPL-2"
+ :provided   (musical-letters)
+ :commentary "\
+The flow in `musical-letters-mode' is from the keyboard to Emacs,
+and from Emacs to Fluidsynth. At the Emacs stage, two things
+happen: When a printing character (hereafter, a \"letter\") is input
+by the user, it is inserted into the buffer; then a code associated
+with this letter is sent to fluidsynth, which plays a note. If
+`musical-letters-navigation' is non-nil, navigating the buffer with
+left and right arrow keys, backspace and delete keys also causes
+notes to be played.
+
+The user can change the code values that are sent to fluidsynth by
+setting the variable `musical-letters-tuning'. Currently only one
+sound font file at a time is supported; the user can change this
+font by setting the variable `musical-letters-font'.
+
+Some known issues:
+
+Since we are having trouble binding to non-ASCII keys, that isn't
+really consequential right now anyway. We could scrape around
+inside of ASCII for things like `~' that haven't been mapped yet,
+but I don't think that there are many other things we could
+use... oh yes, \"`\". Well, there are actually more things, but I
+just currently have them embedded in my keyboard, not arrayed
+around the periphery. Will need to get the non-ASCII characters to
+work if I want these extra keys to be usable.
+
+Rather than going through each binding and adding them back in
+explicitly, it might be more effective to have a way to make the
+default binding run before/after whatever sound is associated with
+that action plays. But I don't know how to get at the default
+action. This can be a problem when there are several minor modes
+going at once; for example, musical letters mode and edebug. In
+this case, since `q' (for example) doesn't have the default action,
+it won't be sent to edebug properly.")

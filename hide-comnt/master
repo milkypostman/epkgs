@@ -1,0 +1,31 @@
+(:summary    "Hide/show comments in code"
+ :created    "20110511"
+ :updated    "20111123"
+ :license    "GPL-3"
+ :authors    (("Drew Adams"))
+ :maintainer ("Drew Adams")
+ :provided   (hide-comnt)
+ :required   (nil
+	      (("emacs" newcomment)))
+ :keywords   (comments hide show)
+ :wikipage   "HideOrIgnoreComments"
+ :commentary "\
+Hide/show comments in code.
+
+
+ Macros defined here:
+
+   `with-comments-hidden'.
+
+ Commands defined here:
+
+   `hide/show-comments',
+
+ User options defined here:
+
+   `ignore-comments-flag'.
+
+
+ Put this in your init file (`~/.emacs'):
+
+  (require 'hide-comnt)")

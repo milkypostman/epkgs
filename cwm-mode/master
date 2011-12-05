@@ -1,0 +1,22 @@
+(:summary    "Minor mode for managing windows in columns"
+ :created    "20090128"
+ :updated    "2009"
+ :license    "GPL-3"
+ :authors    (("Petteri Hintsanen" . "petterih@iki.fi"))
+ :maintainer ("Petteri Hintsanen" . "petterih@iki.fi")
+ :provided   (cwm-mode)
+ :required   ((("cl" cl)
+	       ("windmove" windmove)))
+ :keywords   (convenience window)
+ :homepage   "http://koti.kapsi.fi/phintsan/cwm-mode"
+ :commentary "\
+* GNU Emacs 22 or later is required.
+
+* For a general overview, see docstring for cwm-mode, or type `C-h
+  f cwm-mode RET' after loading `cwm-mode.el'.  See also
+  <http://iki.fi/petterih/cwm-mode.html>.
+
+* Most interactive functions have default key bindings with prefix
+  `C-c .'.  Type `C-c . C-h' to display them.
+
+* Please report bugs and suggestions to <petterih@iki.fi>.")

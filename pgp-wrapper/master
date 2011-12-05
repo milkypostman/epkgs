@@ -1,0 +1,7 @@
+(:summary    "Runs PGP command-lines"
+ :created    "199901"
+ :updated    "19991109"
+ :authors    (("Peter Breton"))
+ :maintainer ("Peter Breton")
+ :provided   (pgp-wrapper)
+ :required   ((("emacs" comint))))

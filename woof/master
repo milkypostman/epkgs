@@ -1,0 +1,49 @@
+(:summary    "Emacs interface to exchange files on different computers via woof"
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-2"
+ :authors    (("Stefan Reichoer," . "stefan@xsteve.at"))
+ :maintainer ("Stefan Reichoer," . "stefan@xsteve.at")
+ :provided   (woof)
+ :homepage   "http://www.xsteve.at/prg/emacs"
+ :commentary "\
+The problem:
+You work on different computers and you want to send files or
+the selected text to other hosts.
+
+The solution:
+woof (Web Offer One File): http://www.home.unix-ag.org/simon/woof.html
+woof is a small webserver that serves a given file
+you can download the file on a different host from this webserver
+
+woof.el integrates the woof script in your emacs work-flow:
+You can easily provide a file to download (M-x woof-provide-file)
+And it is also easy to receive such a file on a different host
+(M-x woof-receive or C-u M-x woof-receive)
+
+woof.el needs the woof script from:
+http://www.home.unix-ag.org/simon/woof
+
+woof.el also needs wget
+It should work on GNU/Linux systems, I have also added some hacks to make it work on cygwin.
+
+The latest version of woof.el can be found at:
+http://www.xsteve.at/prg/emacs/
+
+Usage:
+put the following in your .emacs:
+(require 'woof)
+
+(woof-set-download-url-list '(\"http://xxx.xxx.xxx.xxx:8080\" \"http://yyy.yyy.yyy.yyy:8080\"
+                              (\"nice-name\" \"http://zzz.zzz.zzz.zzz:8080\")))
+(global-set-key [<your key here>] 'woof-provide-dwim)
+(global-set-key [<your key here>] 'woof-receive)
+
+If you are using cygwin, you probably need the following also:
+(setq woof-cygwin-bin-path \"c:/cygwin/bin\")
+(setq woof-wget-cmd \"c:/cygwin/bin/wget\")
+(setq woof-cmd \"c:/cygwin/usr/local/bin/woof\")
+
+Woof is also available via the Tools menu
+
+Please contact me, if you find woof.el useful, or if you have ideas for improvements.")

@@ -1,0 +1,18 @@
+(:summary    "Yet another display line numbers"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-2"
+ :authors    ((nil . "tm8st@hotmail.co.jp"))
+ :maintainer (nil . "tm8st@hotmail.co.jp")
+ :provided   (yalinum)
+ :keywords   (convenience line linum number)
+ :homepage   "https://github.com/tm8st/emacs-yalinum"
+ :commentary "\
+linum.elをベースとして、
+現在の位置がバッファ全体から見てどのぐらいの位置かをスクロールバーのように表示する機能を追加したもの。
+主に変更したのは yalinum-update-window。
+
+Installation:
+
+(require 'yalinum)
+(global-yalinum-mode t)")

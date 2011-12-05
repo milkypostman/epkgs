@@ -1,0 +1,22 @@
+(:summary    "Tiny functionality enhancements for evaluating sexps"
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-3"
+ :authors    (("Takeshi Banse" . "takebi@laafc.net"))
+ :maintainer ("Takeshi Banse" . "takebi@laafc.net")
+ :provided   (eval-sexp-fu)
+ :required   ((("cl" cl)
+	       ("highlight" highlight)
+	       ("rx" rx)))
+ :keywords   (convenience highlight lisp)
+ :wikipage   "EvalSexpFu"
+ :commentary "\
+Tiny functionality enhancements for evaluating sexps.
+This package provides:
+- Flashing the sexps during the evaluation.
+- `eval-last-sexp' variants (inner-list/inner-sexp).
+
+Installation:
+
+Put the highlight.el to your load-path.
+Then require this package.")

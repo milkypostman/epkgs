@@ -1,0 +1,11 @@
+(:created    "2007"
+ :updated    "20070920"
+ :license    "GPL-3"
+ :authors    (("Dave O'Toole" . "dto@gnu.org"))
+ :maintainer ("Dave O'Toole" . "dto@gnu.org")
+ :provided   (peano)
+ :required   ((("cl" cl)
+	       ("emacs" font-lock)
+	       ("org" org)
+	       ("rx" rx)))
+ :keywords   (convenience outlines tools))

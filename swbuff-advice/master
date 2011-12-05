@@ -1,0 +1,32 @@
+(:summary    "Provides alternate regexp cycling for swbuff"
+ :created    "2000"
+ :updated    "20010716"
+ :license    "GPL-2"
+ :authors    (("Joe Casadonte" . "emacs@northbound-train.com"))
+ :maintainer ("Joe Casadonte" . "emacs@northbound-train.com")
+ :provided   (swbuff-advice)
+ :keywords   (alternate filters regexps swbuff)
+ :homepage   "http://www.northbound-train.com"
+ :commentary "\
+The swbuff package provides a way to cycle thru the buffers,
+ optionally filtering out certain buffers via a regexp.  The
+ swbuff-advice package provides advice for several 'swbuff'
+ functions to allow the use of more than one set of regexp filters.
+
+ It also provides a way to define inclusive (rather then exclusive)
+ filters, and additive-exclusive filters.  Normally, a buffer is
+ included in the list of buffers to switch to if it does not match
+ at least one of the normal filters.  With inclusive filters, the
+ buffer name must also match EVERY inclusive filter regexp.  with
+ additive-exclusive filters, the buffer name must not match ANY of
+ the additive filters.  See `joc-swbuff-allow-inclusive-regexps'
+ and `joc-swbuff-allow-additive-regexps' for more details.
+
+ For use with swbuff versions 2.1 or later
+
+Installation:
+
+ Put this file on your Emacs-Lisp load path and add the following
+ to your ~/.emacs startup file
+
+    (load-library \"swbuff-advice\")")

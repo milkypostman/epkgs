@@ -1,0 +1,10 @@
+(:summary    "Display the current time using a binary clock"
+ :created    "2000"
+ :updated    "2000"
+ :license    "GPL-2"
+ :provided   (binclock)
+ :required   ((("cl" cl)
+	       ("emacs" easymenu)))
+ :homepage   "http://www.davep.org/emacs"
+ :commentary "\
+binclock displays the current time using a binary display.")

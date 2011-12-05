@@ -1,0 +1,11 @@
+(:created    "2006"
+ :updated    "2006"
+ :license    "GPL-2"
+ :authors    (("Jesper Kjær Pedersen" . "blackie@blackie.dk"))
+ :maintainer ("Jesper Kjær Pedersen" . "blackie@blackie.dk")
+ :provided   (power-macros)
+ :required   ((("cl" cl)
+	       ("edmacro" edmacro)
+	       ("emacs" advice)))
+ :keywords   (macros)
+ :homepage   "http://www.imada.sdu.dk/~blackie/emacs")

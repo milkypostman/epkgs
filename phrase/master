@@ -1,0 +1,9 @@
+(:summary    "Movement by `phrases' in text"
+ :created    "2005"
+ :updated    "2005"
+ :license    "GPL-2"
+ :authors    (("Dave Love" . "fx@gnu.org"))
+ :maintainer ("Dave Love" . "fx@gnu.org")
+ :provided   (phrase)
+ :keywords   (convenience)
+ :homepage   "http://www.loveshack.ukfsn.org/emacs")

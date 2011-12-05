@@ -1,0 +1,168 @@
+(:summary    "Extraxt text & report to main file"
+ :created    "2002"
+ :updated    "2002"
+ :license    "GPL-2"
+ :authors    (("Thomas Link"))
+ :maintainer ("Thomas Link")
+ :provided   (excerpt)
+ :required   ((("emacs" overlay)
+	       ("file-properties" file-properties)
+	       ("tellib" tellib)))
+ :keywords   (editing summaries text\ snippets writing\ reports)
+ :homepage   "http://members.a1.net/t.link/CompEmacsExcerpt.html"
+ :commentary "\
+;---(:excerpt-beg excerpt :name doc)---
+;---(:excerpt-source \"~/Etc/TL-Wiki/CompEmacsExcerpt\")---
+
+** Description
+
+Extraxt text & report to main file. This is done using the following
+commands:
+
+`excerpt-insert' :: A general command for inserting excerpts. Use
+TAB-completion to see which excerpts are available in a certain file.
+(See also the variable `excerpt-sources'.)
+
+`excerpt-insert-excerpt' ::  Insert an excerpt from a file.
+
+`excerpt-insert-with-prefix' :: Insert a prefixed file excerpt.
+
+`excerpt-source' :: Insert a source mark in the source file. The user
+will be asked to enter a category name.
+
+`excerpt-named-source' :: Insert a source mark in the source file. The
+user will be asked to enter a category name and an ID.
+
+`excerpt-insert-pseudo', `excerpt-insert-pseudo-with-prefix' :: Insert a
+pseudo excerpt (a function or a variable) -- search for \":name
+excerpt-commands\" in the source code for an example.
+
+
+Installation: Put (require 'excerpt) (excerpt-install) into your
+startup/user init file.
+
+
+** In the Source File
+
+In the source file these text portions are marked as
+
+<example>
+	\\<format-string NAME\\>\\<comment-string\\>(\\<start-string\\> ID)
+	text to be reported
+	\\<comment-string\\>(\\<end-string\\> ID)
+</example>
+
+NAME ... a string -- may not contain \")\"
+
+FORMAT-STRING is mode sensitive but can be changed via buffer local
+variables. It is possible to use tags like =LaTeX=' =\\\\index=.
+
+START-STRING and END-STRING are global but can be changed via buffer
+local variables.
+
+
+** In the Main File
+
+In the main file text to be reported is marked as 
+
+<example>
+	\\<prefix\\>\\<comment-string\\>(:excerpt NAME [:id ID])
+	\\<prefix\\><comment-string>(:excerpt-source FILE-NAME)
+	\\<prefix\\>[excerpted text]
+	\\<prefix\\>\\<comment-string\\>(:excerpt-end [ID])
+</example>
+
+This text is inserted with one `excerpt-insert' commands and
+automatically updated when setting the buffer/file-local variable
+`excerpt-update-flag' to t or when calling one of the `excerpt--update'
+commands -- preferably via the pop-up menu.
+
+A local keymap covers the excerpt. Pressing =Enter= jumps to the source
+file; =Space= updates the excerpt if `excerpt-bind-space-to-update-flag'
+is non-nil; pressing =Mouse-2= (or rather `excerpt-mouse-button') opens
+a pop-up menu.
+
+If no ID is given, all occurances of category NAME are being excerpted.
+(Hm. To be honest, I'm not sure if this is true, if I planned to
+implement such a feature, and if I've already done so.)
+
+The whole excerpt will be prefixed with the first line's PREFIX. This
+is a convenient way for inserting excerpts as comments.
+
+The file/buffer local variable `excerpt-sources' defines where sources
+are normally located. The default file for `excerpt-insert' is either
+built on the value of this variable or the current buffer's file name.
+
+
+** Caveats
+
+Using regular expressions for finding excerpt sources and excerpt
+targets is of course a fragile solution. There are many ways to confuse
+=excerpt.el=. Here are some tips.
+
+
+*** Headless Excerpts
+
+Headless excerpt won't be visible as excerpts when the file-properties file
+is missing. Once the data of the file-properties file gets out of sync with
+the text, it's pretty hard to restore a headless excerpt properly. You
+can force the use of file-local variables by modifying
+`excerpt-use-file-local-variable', though.
+
+
+*** Copy and Paste
+
+When copying an excerpt, the overlays/extents are only maintained if the
+whole excerpt was selected. This is escpecially important with headless
+excerpts.
+
+
+*** COMMENT-START, COMMENT-END
+
+For hiding excerpt marks to the compiler, text formatter, preprocessor,
+or whatsoever, these marks are enclosed with =COMMENT-START= and
+=COMMENT-END=. This means of course that these variables have to be
+defined somewhere. Normally this is done by the major mode. If this is
+not the case, you could use file local variables or you could use some
+project management package that sets these variables for files in a
+certain directory.
+
+
+** Customization Via Buffer Local Variables
+
+The following variables overwrite global settings if defined as local
+variables:
+
+`excerpt-start-format-string', `excerpt-end-format-string' :: Define
+source start and end marks.
+
+`excerpt-start-string', `excerpt-end-string' :: These variables are
+created by excerpt.el and define the excerpt start and end marks.
+
+`excerpt-sources' :: Either a file name or a directory name where
+excerpt sources are located.
+
+`excerpt-update-flag' :: If non-nil, update all excerpts after opening.
+
+For setting these variables for all files in a specific directory, use
+some project management package. (You could also use CompEmacsFilesets,
+defining some custom :open function.)
+
+
+** Types of excerpts
+
+At the moment there are two \"types\" of excerpts:
+
+excerpt :: Insert marked excerpts.
+
+file :: Insert the whole file. When running the command
+`excerpt-insert', a pseudo excerpt with the name =*FILE*= is generated.
+
+In addition, there are two pseudo excerpts, which can be inserted with
+the `excerpt-insert-pseudo' command: =*FUNCTION*= and =*VARIABLE*=.
+Evaluation and formatting of pseudo excerpts' sources is defined by
+three user options/variables: excerpt-allow-eval-functions,
+excerpt-allow-eval-variables, excerpt-pseudo-excerpt-list. Evaluation of
+functions is of course unsafe.
+
+;---(:excerpt-end excerpt :name doc)---")

@@ -1,0 +1,258 @@
+(:summary    "Indentation support for shell-script modes for some shells"
+ :provided   (shindent)
+ :required   ((("emacs" advice)
+	       ("sh-script" sh-script)))
+ :commentary "\
+This is an \"add-on\" for sh-script.el to implementation indentation
+for some shells.   csh derivatives are not supported,  but sh
+rc derived shells are.
+
+Eventually I'd like to see this merged into sh-script.el,  but for
+now it must be loaded separately,  after which it is invoked
+automatically from sh-script mode's hook.
+
+
+Suggested Setup
+
+One way would simply be to load shindent.el,  by (assuming it is in
+your load-path):
+     (require 'shindent)
+
+Alternatively,  you can arrange for shindent to be loaded whenever
+sh-script.el is loaded, like this:
+     (eval-after-load \"sh-script\"
+       '(require 'shindent))
+
+Customization:
+
+Indentation for rc and es modes is very limited, but for Bourne shells
+and its derivatives it is quite customizable.
+
+The following description applies to sh and derived shells (bash,
+zsh, ...).
+
+There are various customization variables which allow tailoring to
+a wide variety of styles.  Most of these variables are named
+shi-indent-for-XXX and shi-indent-after-XXX.  For example.
+shi-indent-after-if controls the indenting of a line following
+and if statement,  and shi-indent-for-fi controls the indentation
+of the line containing the fi.
+
+You can set each to a numeric value, but it is often more convenient
+to use the symbol '+ or '- which used the \"default\" value (or its
+negative) which is the value in variable  `shi-basic-offset'.
+By changing this one variable you can increase or decrease how much
+indentation there is.
+
+
+Examples are sometimes handy;   some possibilities for indenting
+an sh if statement are:
+
+if [ aaa ] ; then
+    bbb
+else
+    ccc
+fi
+ddd
+
+if [ aaa ] ; then
+        bbb
+    else
+        ccc
+    fi
+ddd
+
+
+If you like `then' on a line by itself,  you could have (shown side by
+side for brevity):
+
+if [ aaa ]        if [ aaa ]        if [ aaa ]       if [ aaa ]
+then                    then          then             then
+      bbb               bbb               bbb              bbb
+else              else              else               else
+      ccc               ccc               ccc              ccc
+fi                fi                fi                 fi
+ddd               ddd               ddd              ddd
+
+
+There are 4 commands to help set these variables:
+
+shi-show-indent
+   This shows what variable controls the indentation of the current
+   line and its value.
+
+shi-set-indent
+   This allows you to set the value of the variable controlling the
+   current line's indentation.  You can enter a number, or one of a
+   number of special symbols to denote the value of shi-basic-offset,
+   or its negative, or half it, or twice it, or..  If you've used
+   cc-mode this should be familiar.
+
+shi-learn-line-indent
+   Simply make the line look the way you want it, then invoke this
+   function.  It will set the value of the variable to the value
+   that makes the line indent like that.  If the value is that of
+   shi-basic-offset it will set it to the symbol `+' and so on.
+   
+shi-learn-buffer-indent
+   This is the deluxe function!  It \"learns\" the whole buffer (use
+   narrowing if you want it to process only part).  It outputs to a
+   buffer *indent* any conflicts it finds, and then outputs to it all
+   the variables it has learned.  This buffer is a sort of Occur mode
+   buffer, allowing you to easily find where something was set.  It is
+   popped to automatically if there are any conflicts found or if
+   `shi-popup-occur-buffer' is non-nil.  It will attempt to learn
+   `shi-indent-comment' if all comments follow the same pattern; if
+   they don't it sets it to nil.  It can be made to set
+   `shi-basic-offset' depending on how variable
+   `shi-learn-basic-offset' is set.  If it does not set it, it will
+   write into the *indent* buffer its guess or guesses if it finds
+   some.
+   Unfortunately, this command can take a long time to run
+   (e.g. if there are large case statements).  Perhaps it does not
+   make sense to run it on large buffers:  if lots of lines have
+   different indentation styles it will produce a lot of
+   diagnostics in the *indent* buffer;  if there is a consistent
+   style then running `shi-learn-buffer-indent' on a small region
+   of the buffer should suffice.   Maybe.
+
+These commands are not bound by default, but can easily be done
+so using a hook.
+
+   Hooks
+
+When hook `shi-set-shell-hook' is called the shell type is known.
+Example use:
+(defun my-shi-set-shell-hook ()
+  (message (format \"shell type: %s  shi-basic-offset it %s\"
+                sh-shell shi-basic-offset))
+  (local-set-key '[f9] 'shi-show-indent)
+  (local-set-key '[f10] 'shi-set-indent)
+  (local-set-key '[f11] 'shi-learn-line-indent)
+  (local-set-key '[f12] 'shi-learn-buffer-indent)
+  )
+(add-hook 'shi-set-shell-hook 'my-shi-set-shell-hook)
+
+`shi-hook' is, I think, obsolete now and may be removed.
+
+
+ 
+Saving indentation values...
+
+After you've learned the values in a buffer, how to you remember
+them?   Originally I had hoped that `shi-learn-buffer-indent'
+would make this unnecessary;  simply learn the values when you visit
+the buffer.
+You can do this automatically like this:
+  (add-hook 'shi-set-shell-hook 'shi-learn-buffer-indent)
+
+However...
+
+For one thing,  `shi-learn-buffer-indent' is extremely slow,
+especially on large-ish buffer.  Also,  if there are conflicts the
+\"last one wins\" which may not produce the desired setting.
+
+So...
+ 
+There is a minimal way of being able to save indentation values and
+to reload them in another buffer or at another point in time.
+
+Note: This should be considered tentative at best...
+It is a bit like cc-mode's styles,  but the user interface is
+different and the internal format is different.  I am assuming that
+while one may deal with only a few different styles of C,  one may
+be faced with a bigger variety of shell script settings.  Perhaps
+this is not true.  Anyway,  this is how to use it.
+
+Use `shi-name-style' to give a name to the indentation settings of
+     the current buffer.
+Use `shi-load-style' to load indentation settings for the current
+     buffer from a specific style.
+Use `shi-save-styles-to-buffer' to write all the styles to a buffer
+     in lisp code.  You can then store it in a file and later use
+     `load-file' to load it.
+
+
+Indentation variables - buffer local or global?
+
+I think that often having them buffer-local makes sense,
+especially if one is using `shi-learn-buffer-indent'.  However, if
+a user sets values using customization,  these changes won't appear
+to work if the variables are already local!
+
+To get round this,  there is a variable `shi-make-vars-local' and 2
+functions: `shi-make-vars-local' and
+`shi-reset-indent-vars-to-global-values' .
+
+If `shi-make-vars-local' is non-nil,  then these variables become
+buffer local when the mode is established.
+If this is nil,  then the variables are global.  At any time you
+can make them local with the command `shi-make-vars-local'.
+Conversely,  to update with the global values you can use the
+command `shi-reset-indent-vars-to-global-values'.
+
+This may be awkward,  but the intent is to cover all cases.
+
+
+Awkward things, pitfalls, ...
+
+Indentation for a sh script is complicated for a number of reasons:
+
+1. You can't format by simply looking at symbols,  you need to look
+   at keywords.  [This is not the case for rc and es shells.]
+2. The character \")\" is used both as a matched pair \"(\" ... \")\" and
+   as a stand-alone symbol (in a case alternative).  This makes
+   things quite tricky!
+3. Here-documents in a script should be treated \"as is\",  and when
+   they terminate we want to revert to the indentation of the line
+   containing the \"<<\" symbol.
+4. A line may be continued using the \"\\\".
+5. The character \"#\" (outside a string) normally starts a comment,
+   but it doesn't in the sequence \"$#\"!
+
+To try and address points 2 3 and 5 I used a feature that cperl mode
+uses,  that of a text's syntax property.  This, however, has 2
+disadvantages:
+1. We need to scan the buffer to find which \")\" symbols belong to a
+   case alternative, to find any here documents, and handle \"$#\".
+2. Setting the text property makes the buffer modified,  and cannot
+   be done in a read-only buffer.  Since you may start visiting a
+   read-only buffer and then want to change something,  we rescan
+   the buffer when going from read-only to non read-only.  Since I
+   couldn't find a suitable hook,  I constructed one (for
+   toggle-read-only) using `advice'.
+
+
+BUGS:
+
+- Here-documents are marked with text properties face and syntax
+  table.  This serves 2 purposes: stopping indentation while inside
+  them, and moving over them when finding the previous line to
+  indent to.  However, if font-lock mode is active when there is
+  any change inside the here-document font-lock clears that
+  property.  This causes several problems: lines after the here-doc
+  will not be re-indentation properly,  words in the here-doc region
+  may be fontified,  and indentation may occur within the
+  here-document.
+  I'm not sure how to fix this, perhaps using the point-entered
+  property.  Anyway, if you use font lock and change a
+  here-document,  I recommend using M-x shi-rescan-buffer after the
+  changes are made.  Similarly, when using higlight-changes-mode,
+  changes inside a here-document may confuse shindent,  but again
+  using `shi-rescan-buffer' should fix them.
+
+- Indenting many lines is slow.  It currently does each line
+  independantly, rather than saving state information.
+
+- `shi-learn-buffer-indent' is extremely slow.
+
+
+Possible Future Plans:
+
+- integrate with sh-script.el.
+- have shi-get-indent-info optionally use and return state info to
+  make indent-region less slow.
+
+Richard Sharman <rsharman@pobox.com>  June 1999.
+Newer versions may be availabale in
+http://pobox.com/~rsharman/emacs/")

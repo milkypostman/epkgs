@@ -1,0 +1,10 @@
+(:summary    "Process-music composition system for csound"
+ :created    "2007"
+ :updated    "2007"
+ :license    "GPL-2"
+ :authors    (("David O'Toole" . "dto@gnu.org"))
+ :maintainer ("David O'Toole" . "dto@gnu.org")
+ :provided   (ligeti)
+ :required   ((("cl" cl)
+	       ("csound-x" csound-x)))
+ :keywords   (multimedia))

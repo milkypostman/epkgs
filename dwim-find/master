@@ -1,0 +1,5 @@
+(:summary    "Find something about the thing at point"
+ :updated    "20070303"
+ :license    "GPL-2"
+ :provided   (dwim-find)
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/editing")

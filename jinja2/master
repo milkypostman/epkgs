@@ -1,0 +1,8 @@
+(:created    "2011"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Florian Mounier aka paradoxxxzero"))
+ :maintainer ("Florian Mounier aka paradoxxxzero")
+ :provided   (jinja2-mode)
+ :required   ((("sgml-mode" sgml-mode)))
+ :homepage   "https://github.com/paradoxxxzero/jinja2-mode")

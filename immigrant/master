@@ -1,0 +1,22 @@
+(:summary    "Delicatessen from other lisps"
+ :created    "20101107"
+ :updated    "20101107"
+ :license    "GPL-3"
+ :authors    (("Giants"))
+ :maintainer ("Jonas Bernoulli" . "jonas@bernoul.li")
+ :provided   (immigrant)
+ :required   ((("cl" cl)))
+ :keywords   (convenience lisp)
+ :homepage   "http://github.com/tarsius/immigrant"
+ :commentary "\
+This package defines some functions and macros found in lisps other
+than Emacs lisp (and maybe other languages too sometime).  History
+has shown that a culture can benefit from embracing immigrants so
+why should programming languages be any different? :-)
+
+Please send my Emacs lisp implementations of your favorite lisp's
+functions and macros so that I can include them here.  Or improve
+those already included.
+
+\"*\" is used as prefix because using e.g. `immigrant-filter' instead
+of `*filter' just wouldn't be as much fun anymore.")

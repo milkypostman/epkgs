@@ -1,0 +1,41 @@
+(:summary    "An extensible fact-learning program"
+ :created    "2004"
+ :updated    "2006"
+ :license    "GPL-2"
+ :authors    (("Jorgen Schaefer"))
+ :maintainer ("Damien Elmes" . "emacs@repose.cx")
+ :provided   (flashcard)
+ :keywords   (applications flashcard)
+ :homepage   "http://ichi2.net/flashcard"
+ :wikipage   "FlashCard"
+ :commentary "\
+This mode helps you to learn facts. To use it, just put the
+following in your .emacs file:
+
+(add-to-list 'auto-mode-alist '(\"\\\\.deck\\\\'\" . flashcard-mode))
+
+Now open any file with a .deck extension (a new file will do). You
+will now be put into flashcard. The first thing you need to do is
+to add cards from any file, with either M-x flashcard-add-card, or
+M-x flashcard-import-from-colon-file.
+
+Now you should get questions asked from flashcard. Just save and
+kill the buffer as usual. If you want to continue where you left
+off, just open the buffer again like any other file.
+
+CAVEAT: Your dialog with the program is NOT saved when you save the
+buffer!
+
+A full bells-and-whistles setup would include the following:
+
+(add-hook 'flashcard-mode-hook
+          'flashcard-add-scroll-to-bottom)
+(add-hook 'flashcard-positive-feedback-functions
+          'flashcard-feedback-highlight-answer)
+(add-hook 'flashcard-positive-feedback-functions
+          'flashcard-feedback-congratulate)
+(add-hook 'flashcard-positive-feedback-functions
+          'flashcard-method-leitner-positive-feedback)
+
+For more documentation, see the website:
+http://www.emacswiki.org/cgi-bin/wiki.pl/FlashCard")

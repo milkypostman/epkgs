@@ -1,0 +1,12 @@
+(:created    "2011"
+ :updated    "2011"
+ :license    "GPL-3"
+ :provided   (dbus-util elim garak)
+ :required   ((("assoc" assoc)
+	       ("browse-url" browse-url)
+	       ("dbus" dbus)
+	       ("tree-widget" tree-widget)
+	       ("xml" xml))
+	      (("lui" lui)))
+ :homepage   "https://savannah.nongnu.org/projects/elim"
+ :wikipage   "ELIM")

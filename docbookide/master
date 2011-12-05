@@ -1,0 +1,22 @@
+(:summary    "DocBook Integrated Development Environment"
+ :created    "2000"
+ :updated    "20000329"
+ :license    "GPL-2"
+ :authors    (("Norman Walsh" . "ndw@nwalsh.com"))
+ :maintainer ("Norman Walsh" . "ndw@nwalsh.com")
+ :provided   (dbide-abbrev dbide-data dbide-font dbide-process docbookide)
+ :required   ((("cl" cl)
+	       ("compile" compile)
+	       ("emacs" font-lock)
+	       ("etags" etags)))
+ :keywords   (docbook languages xml)
+ :homepage   "http://nwalsh.com/emacs/docbookide"
+ :commentary "\
+Functions for editing DocBook documents
+
+Requires dbide-font.el
+Requires 'etags for `find-tag-default'
+Requires 'reporter for `docbook-submit-bug-report'
+
+Send bugs to docbookide-bug@nwalsh.com
+Use `docbook-submit-bug-report' for bug reports")

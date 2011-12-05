@@ -1,0 +1,30 @@
+(:summary    "Convert latin-1 chars to 7bit ascii equivalents"
+ :created    "19980303"
+ :updated    "20061101"
+ :license    "GPL-2"
+ :authors    (("Noah Friedman" . "friedman@splode.com"))
+ :maintainer (nil . "friedman@splode.com")
+ :provided   (lat1conv)
+ :keywords   (extensions)
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
+ :commentary "\
+Perform conversion of some Latin-1 (same as iso8859-1) to equivalent
+7-bit ascii sequences when possible.  I wrote this for converting mail
+and news article reply buffers so they would not contain 8bit characters
+needlessly.  Otherwise, the buffer has to be converted to
+quoted-printable before sending, and that makes it harder to read for
+the recipient if they do not have a MIME-aware reader.
+
+These functions should not be used carelessly.  Sometimes it is not
+appropriate to convert the original text of someone's message, and
+sometimes there is nothing to gain since other 8-bit characters may be
+present anyway.  One possible suggestion is to do something like:
+
+   (add-hook 'mail-citation-hook
+             #'(lambda (&optional beg end)
+                 (lat1conv-to-ascii-query beg end t)
+                 (and (lat1conv-other-8bit-in-region-p beg end)
+                      (message \"warning: 8-bit chars in included text.\"))))
+
+Updates of this program may be available via the URL
+http://www.splode.com/~friedman/software/emacs-lisp/")

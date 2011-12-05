@@ -1,0 +1,27 @@
+(:summary    "Emacs interface to the Google Translate"
+ :created    "2011"
+ :updated    "2011"
+ :authors    (("Andrey Shramko" . "t0mmydnua@yandex.ru"))
+ :maintainer ("Andrey Shramko" . "t0mmydnua@yandex.ru")
+ :provided   (bavard)
+ :required   ((("cl" cl)
+	       ("popup" popup)
+	       ("url" url)))
+ :homepage   "https://github.com/avshramko/bavard"
+ :commentary "\
+Please send suggestions and bug reports to <t0mmydnua@yandex.ru>
+You should always be able to find the latest version here:
+
+https://github.com/avshramko/bavard
+
+Note that you need a Google API key to use this; you can
+get one by following the instructions here:
+
+https://code.google.com/apis/console/
+
+Requirements:
+
+This section describes the requirements of Bavard. Just follow these steps and the requirements of Bavard are fulfilled.
+
+Emacs-version: Bavard works only with (X)Emacs >=23! If you have an older one, please upgrade.
+Install popup.el: Get it from https://github.com/m2ym/popup-el, read the setup-instructions file README.markdown.")

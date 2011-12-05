@@ -1,0 +1,45 @@
+(:summary    "Guess language of current buffer"
+ :created    "2000"
+ :updated    "20020918"
+ :license    "GPL-2"
+ :authors    (("Colin Marquardt" . "colin@marquardt-home.de"))
+ :maintainer ("Colin Marquardt" . "colin@marquardt-home.de")
+ :provided   (auto-lang)
+ :required   ((("emacs" overlay)
+	       ("flyspell" flyspell)
+	       ("ispell" ispell)
+	       ("trace" trace)))
+ :keywords   (convenience flyspell ispell)
+ :wikipage   "AutoLangMode"
+ :commentary "\
+auto-lang is an Emacs package which tries to find the language of
+the current buffer and set ispell-dictionary according to that.  It
+may be useful for writing texts, especially in with conjunction with
+flyspell mode.  It can also differentiate between different encodings
+for the same language.
+
+Documentation:
+
+In your ~/.emacs, add the lines
+  (setq load-path (cons (expand-file-name \"~/path/to/lisp/file/\") load-path))
+  (require 'auto-lang)
+
+Then enable whatever you like in the following:
+
+Automatically enable auto-lang for Gnus:
+(add-hook 'message-setup-hook
+          '(lambda ()
+             (auto-lang-minor-mode t)))
+
+Automatically enable auto-lang for VM:
+(add-hook 'mail-setup-hook
+          '(lambda ()
+             (auto-lang-minor-mode t)))
+
+Automatically enable auto-lang for all text based modes:
+(add-hook 'text-mode-hook
+          '(lambda ()
+             (auto-lang-minor-mode t)))
+
+You can also toggle the mode manually with
+  M-x auto-lang-minor-mode")

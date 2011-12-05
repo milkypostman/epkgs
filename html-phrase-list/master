@@ -1,0 +1,5 @@
+(:summary    "Read a phrase list from HTML"
+ :updated    "20060125"
+ :license    "GPL-2"
+ :provided   (html-phrase-list)
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/natural-language")

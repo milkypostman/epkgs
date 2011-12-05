@@ -1,0 +1,57 @@
+(:summary    "Maintain backups with a time stamp"
+ :created    "2002"
+ :updated    "2002"
+ :license    "GPL-2"
+ :authors    (("Thomas Link"))
+ :maintainer ("Thomas Link")
+ :provided   (attic)
+ :required   ((("ediff" ediff)
+	       ("tellib" tellib)))
+ :keywords   (backup files tools)
+ :homepage   "http://members.a1.net/t.link/CompEmacsAttic.html"
+ :commentary "\
+;---(:excerpt-beg attic :name desc)---
+;---(:excerpt-source \"~/Etc/TL-Wiki/CompEmacsAttic\")---
+
+** Description
+
+This is a simple package for maintaining time-stamped backups.
+
+This is how it works: If a file was last saved on the 19th of July 2002
+and the the current buffer's file is \"~/test\", the command `attic-store'
+will save a copy in \"~/.attic/last/\" and in \"~/.attic/020719/\". If the
+variable `attic-compress-cmd' is set, the backuped files will be
+compressed -- \"gzip\" is used by default. Later you can use the commands
+`attic-compare-with-last' and `attic-compare-with-version' to generate
+an ediff between the current version and one of the backuped ones.
+
+
+** Installation & Usage
+
+Put (require 'attic) (attic-install) into your startup/user init file.
+Call `attic-store' to make a backup.
+
+
+** Important commands
+
+`attic-store' :: Save a backup.
+
+`attic-store-special' :: Save an annotated backup.
+
+`attic-compare-with-last' :: Compare the current file with its last
+backuped version.
+
+`attic-compare-with-version' :: Compare the current file with a backuped
+version.
+
+
+The important variables are:
+
+`attic-date-format' :: This variable defines if you want to make daily,
+weekly, monthly etc. backups.
+
+`attic-compress-cmd' :: Set the command used for compression.
+
+`attic-compress-suffix' :: set the suffix used by `attic-compress-cmd'.
+
+;---(:excerpt-end attic :name desc)---")

@@ -1,0 +1,35 @@
+(:created    "1997"
+ :updated    "19970316"
+ :provided   (supertab)
+ :homepage   "http://pagesperso-systeme.lip6.fr/Christian.Queinnec/WWW/elisp.html"
+ :commentary "\
+The purpose of this package is to enhance the behavior of TAB in
+Lisp-based mode. Usually TAB only indents the current line. After
+loading this file, TAB will perform different actions depending on
+where it is invoked. Consider the following two lines:
+   /-----------------------------------------------
+   |        (foo   (bar hux)       
+   |            wek)
+a single TAB wherever on first line will indent it,
+a single TAB wherever on second line will indent it:
+   /-----------------------------------------------
+   |(foo   (bar hux)       
+   |       wek)
+When a line is correctly indented, TAB within the line becomes meaningful.
+a TAB between foo and (bar hux) will leave a single space:
+   /-----------------------------------------------
+   |(foo (bar hux)       
+   |       wek)
+a TAB after (bar hux) will swallow all the following (useless) spaces.
+a second TAB after (bar hux) will swallow the newline and the 
+                             following spaces before wek:
+   /-----------------------------------------------
+   |(foo (bar hux) wek)
+
+Installation:
+
+To use this file, just (auto)load (or require) it and binds TAB to the
+supertab-handle-tab function:
+    (autoload 'supertab-handle-tab \"supertab\")
+    (define-key {scheme|lisp|emacs-lisp}-mode-map \"\\t\" 
+        'supertab-handle-tab )")

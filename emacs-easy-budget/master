@@ -1,0 +1,7 @@
+(:summary    "Some date utilities used in easy-emacs-budget"
+ :created    "2007"
+ :updated    "2007"
+ :provided   (date-util emacs-easy-budget)
+ :required   ((("timezone" timezone)))
+ :keywords   (financial personal)
+ :homepage   "http://code.google.com/p/emacs-easy-budget")

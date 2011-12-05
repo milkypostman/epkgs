@@ -1,0 +1,26 @@
+(:summary    "Waste time on Internet Relay Chat (ZenIRC client)"
+ :created    "19930603"
+ :updated    "1994"
+ :license    "GPL-2"
+ :authors    (("Ben A. Mesander" . "ben@gnu.ai.mit.edu")
+	      ("Noah Friedman" . "friedman@prep.ai.mit.edu")
+	      ("Per Persson" . "pp@sno.pp.se"))
+ :maintainer (nil . "pp@sno.pp.se")
+ :provided   (zenirc zenirc-18 zenirc-8ball zenirc-away zenirc-bork zenirc-color zenirc-command-queue zenirc-complete zenirc-ctcp-flood zenirc-dcc zenirc-doto zenirc-fill zenirc-finnish zenirc-format zenirc-fortran zenirc-french zenirc-history zenirc-ignore zenirc-iwantop zenirc-klingon zenirc-latin zenirc-meditate zenirc-netsplit zenirc-notify zenirc-oink zenirc-ojnk zenirc-pjg zenirc-popup zenirc-random-away zenirc-random-nick zenirc-signal zenirc-stamp zenirc-swedish zenirc-trigger zenirc-yow zenirc-yow-filter)
+ :required   ((("emacs" backquote)
+	       ("sendmail" sendmail)))
+ :keywords   (extensions zenirc)
+ :homepage   "www.zenirc.org"
+ :wikipage   "ZenIRC"
+ :commentary "\
+<vuori> The first Lisp-interpreter of the People's Republic
+              of China, Lisp-130, was written for a Chinese
+              minicomputer at the Shenyang Science Academy's
+              processing automation department in 1980. It was an
+              implementation of Lisp 1.5, which include 94
+              functions programmed in assembler.
+
+              -- Eero Hyvänen, Juko Seppänen: Lisp-world 2, the
+                 development of Lisp-languages and systems.
+
+         <fn> 1960-03-14  LISP introduced,")

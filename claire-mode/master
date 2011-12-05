@@ -1,0 +1,15 @@
+(:summary    "For claire, an object oriented language"
+ :provided   (claire-mode)
+ :commentary "\
+for claire, an object oriented language [http://www.claire-language.com]
+
+I warn you this is a really big hack, it won't run too fast, 
+but hopefully it won't break. 
+
+to use this file add the following to your 
+~/.emacs file
+
+    (load-library \"~/.emacs.d/claire-mode\")
+
+next time you edit a file with the .cl extension 
+it will start in claire-mode mode (hopefully)")

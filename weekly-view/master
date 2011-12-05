@@ -1,0 +1,20 @@
+(:summary    "Bar graph view of the week's diary events"
+ :created    "2003"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("Doug Alcorn" . "doug@lathi.net"))
+ :maintainer ("Doug Alcorn" . "doug@lathi.net")
+ :provided   (weekly-view)
+ :required   ((("cal-desk-calendar" cal-desk-calendar)))
+ :keywords   (calendar diary view week)
+ :commentary "\
+Version: 2
+X-URL: http://www.lathi.net/twiki-bin/view/Main/EmacsWeeklyView
+
+This package makes a bar graph of the week's diary events
+
+Usage:
+  (require 'weekly-view)
+  (add-hook 'diary-display-hook 'fancy-diary-display-week-graph)
+
+Now when you view your diary it will display the weekly graph.")

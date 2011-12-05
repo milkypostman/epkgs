@@ -1,0 +1,11 @@
+(:summary    "Invoke osascript on OSX"
+ :updated    "20040412"
+ :license    "GPL-2"
+ :authors    (("Harley Gorrell" . "harley@mahalito.net"))
+ :maintainer ("Harley Gorrell" . "harley@mahalito.net")
+ :provided   (osx-osascript)
+ :keywords   (applescript osascript osx)
+ :commentary "\
+* run applescript from Emacs via osascript
+* This is not an applescript mode.
+* Tested with 21.2")

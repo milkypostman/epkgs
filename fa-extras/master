@@ -1,0 +1,4 @@
+(:license    "GPL-1"
+ :provided   (fa-extras)
+ :required   ((("filladapt" filladapt)))
+ :homepage   "http://www.cs.utah.edu/~eeide/emacs")

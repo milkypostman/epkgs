@@ -1,0 +1,26 @@
+(:summary    "Modify desktop to open slowly in the idle-cycle"
+ :updated    "20040607"
+ :license    "GPL-2"
+ :authors    (("Phillip Lord" . "p.lord@russet.org.uk"))
+ :maintainer ("Phillip Lord" . "p.lord@russet.org.uk")
+ :provided   (lazy-desktop)
+ :homepage   "http://homepages.cs.ncl.ac.uk/phillip.lord/emacs.html"
+ :commentary "\
+Desktop is a really nice utility.  Your Emacs will open up as it
+was killed.  I like this.  But this means the total number of open
+buffers tends to grow large.  Sometimes I kill them all, just for
+fun.  What a nasty individual I am.
+
+lazy-desktop does what you'd expect.  It opens up a couple of files
+to be starting with.  And then runs everything else in the idle
+cycle, opening up buffers slowly, hopefully in a way which should
+not annoy you while working.  This way you get (more or less) the
+best of both worlds.
+
+To get this to work do (require 'lazy-desktop) in your .emacs.
+Obviously you need to have desktop working as well. You need to do
+this BEFORE you call `desktop-read', or your emacs will crash when
+starting up.
+
+You can set `lazy-desktop-verbose' if you want it to open buffers
+in a way which will annoy you while working.")

@@ -1,0 +1,12 @@
+(:summary    "Emacs-Lisp tools"
+ :license    "GPL-3"
+ :authors    (("Hayashi Masahiro" . "mhayashi1120@gmail.com"))
+ :maintainer ("Hayashi Masahiro" . "mhayashi1120@gmail.com")
+ :provided   (erefactor)
+ :required   ((("cl" cl)
+	       ("emacs" advice)))
+ :keywords   (elisp lint refactor)
+ :commentary "\
+Following utilities for Emacs-Lisp.
+* Refactoring.
+* Lint.")

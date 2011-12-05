@@ -1,0 +1,12 @@
+(:summary    "Minor mode to visualize epoch timestamps"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Ted Zlatanov" . "tzz@lifelogs.com"))
+ :maintainer ("Ted Zlatanov" . "tzz@lifelogs.com")
+ :provided   (epoch-view)
+ :keywords   (data epoch timestamp unix)
+ :commentary "\
+Use like any other minor mode.  You'll see tooltips with dates
+instead of Unix epoch times.  This mode turns on font-lock and
+leaves it on forever.  You may or may not like that.")

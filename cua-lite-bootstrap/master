@@ -1,0 +1,29 @@
+(:summary    "Bootstrap for cua-lite"
+ :created    "2001"
+ :updated    "20010710"
+ :license    "GPL-2"
+ :authors    (("Joe Casadonte" . "emacs@northbound-train.com"))
+ :maintainer ("Joe Casadonte" . "emacs@northbound-train.com")
+ :provided   (cua-lite-bootstrap)
+ :keywords   (cua emulator)
+ :homepage   "http://www.northbound-train.com"
+ :commentary "\
+cua-lite is a CUA emulator package for Emacs.  cua-lite-bootstrap
+ is a bootstrap program for cua-lite.  Its purpose is to define
+ some autoload's for cua-lite, define a hotkey to toggle cua-lite
+ on and off, and, optionally, load cua-lite and turn it on.  By
+ having this bootstrap file, which has very little resource
+ demands, I hope to encourage people to have cua-lite around and
+ available for use with as little effort as possible.  It can even
+ be included in site files easily enough.
+
+Installation:
+
+ Put this file on your Emacs-Lisp load path and add the following to
+ your ~/.emacs startup file
+
+    (require 'cua-lite-bootstrap)
+
+ To add a directory to your load-path, use something like the following:
+
+     (add-to-list 'load-path (expand-file-name \"/some/load/path\"))")

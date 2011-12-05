@@ -1,0 +1,30 @@
+(:summary    "Update serial number in DNS files"
+ :created    "1994"
+ :updated    "20000211"
+ :license    "GPL-2"
+ :authors    (("Roland McGrath" . "roland@frob.com"))
+ :maintainer ("Noah Friedman" . "friedman@splode.com")
+ :provided   (update-dns)
+ :keywords   (extensions)
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
+ :commentary "\
+Every time you change the data in a DNS file, no matter how trivial the
+change, make sure you increase the serial number.
+Serial field is should be YYYYMMDDNN where NN is the update within a day.
+This program depends on a comment of the form \"Serial (YYYYMMDDNN)\", which
+should be structured as in this example:
+
+       @ IN SOA ns.foo.com. hostmaster.foo.com. (
+                1994102100 ; Serial (YYYYMMDDNN)
+                3600       ; Refresh
+                300        ; Retry
+                3600000    ; Expire
+                3600 )     ; Minumum
+         IN NS ns.foo.com.
+         IN NS secondary-ns.elsewhere.com.
+
+Put these local variables at the bottom of DNS files.
+
+local variables:
+eval: (if (fboundp 'update-dns-serial) (add-hook (make-local-variable 'write-file-hooks) 'update-dns-serial))
+End:")

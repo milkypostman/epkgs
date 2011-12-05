@@ -1,0 +1,2 @@
+(:summary    "Setup yasnippets for use with rspec"
+ :homepage   "https://github.com/gary/yasnippets-rspec")

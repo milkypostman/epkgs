@@ -1,0 +1,40 @@
+(:summary    "Generate regular expression matching a character"
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-3"
+ :authors    (("Ralph Schleicher" . "rs@ralph-schleicher.de"))
+ :maintainer ("Ralph Schleicher" . "rs@ralph-schleicher.de")
+ :provided   (regexp-char)
+ :keywords   (extensions)
+ :commentary "\
+Although `regexp-opt-charset' exists, the interface is neither
+documented nor general enough for my needs.  The `regexp-char'
+function provided in this package solves these issues.  It also
+turned out that `regexp-char' runs much fast for small character
+sets.  Here's a program for measuring the run time.
+
+     (require 'elp)
+     (require 'regexp-opt)
+     (load-file \"./regexp-char.elc\")
+
+     (elp-instrument-list '(regexp-opt-charset regexp-char))
+
+     (with-output-to-temp-buffer \"*regexp-char*\"
+       (let ((elp-use-standard-output t)
+             (elp-sort-by-function nil))
+         (random t)
+         ;; Number of characters in the set.
+         (dolist (m '(1 2 4 8 16 32 64 128 256))
+           (princ (format \"\\f\\nSet Size: %d\\n\\n\" m))
+           (elp-reset-all)
+           ;; Number of runs.
+           (let ((n 100000) s)
+             (dotimes (j n)
+               (setq s (make-string m ?\\s))
+               (dotimes (i (length s))
+                 (aset s i (+ ?\\s (random 94))))
+               (regexp-opt-charset (string-to-list s))
+               (regexp-char s)))
+           (elp-results))))
+
+     (elp-restore-all)")

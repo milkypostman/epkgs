@@ -1,0 +1,21 @@
+(:summary    "Psgml extensions"
+ :created    "2000"
+ :updated    "2000"
+ :license    "GPL-2"
+ :authors    (("Tom Breton" . "tehom@localhost"))
+ :maintainer ("Tom Breton" . "tehom@localhost")
+ :provided   (tehom-psgml)
+ :required   ((("cl" cl)
+	       ("psgml" psgml psgml-edit)))
+ :keywords   (extensions hypermedia)
+ :homepage   "http://www.panix.com/~tehom"
+ :commentary "\
+These are extensions to psgml that I have found useful when working
+with XML, SGML, and HTML.  I would be happy to see them
+incorporated into psgml.  If not, they are offered for general use.
+
+The difference between `tehom-psgml-add-element-to-element' etc and
+`psgml-add-element-to-element' etc is that the new functions let
+the caller stipulate values for the various attributes of the added
+element, while the old version only allows the user to do that at
+runtime.")

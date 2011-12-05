@@ -1,0 +1,7 @@
+(:summary    "Redirect comint output to multiple buffers"
+ :created    "199919"
+ :updated    "19991217"
+ :authors    (("Peter Breton"))
+ :maintainer ("Peter Breton")
+ :provided   (comint-redirect)
+ :required   ((("emacs" comint))))

@@ -1,0 +1,6 @@
+(:created    "2003"
+ :updated    "20030514"
+ :license    "GPL-2"
+ :authors    (("Javier Ballesteros"))
+ :maintainer ("Javier Ballesteros")
+ :provided   (cabecera))

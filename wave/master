@@ -1,0 +1,11 @@
+(:summary    "Editing Sound Files"
+ :created    "2001"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("Lars Magne Ingebrigtsen" . "larsi@ifi.uio.no"))
+ :maintainer ("Lars Magne Ingebrigtsen" . "larsi@ifi.uio.no")
+ :provided   (wave)
+ :required   ((("cl" cl)
+	       ("gnus" message)))
+ :keywords   (music)
+ :homepage   "http://quimby.gnus.org/elisp/")

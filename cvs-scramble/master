@@ -1,0 +1,16 @@
+(:summary    "CVS password-scramble/descramble utilities"
+ :created    "19980730"
+ :updated    "19980919"
+ :authors    (("Noah S. Friedman" . "friedman@splode.com"))
+ :maintainer (nil . "friedman@splode.com")
+ :provided   (cvs-scramble)
+ :keywords   (cvs)
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
+ :commentary "\
+Implements the (trivial) scramble/descrambling methods for CVS pserver
+passwords.  Method A, the only implemented method as of 1998-07-30, is a
+trivial substitution cipher.
+
+\"This is really cute, especially considering that the original
+scrambling table was set up by an one-time elisp function.\"
+  -- Karl Fogel <kfogel@red-bean.com>")

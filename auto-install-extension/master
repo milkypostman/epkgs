@@ -1,0 +1,42 @@
+(:summary    "Some extension functions for auto-install.el"
+ :created    "20090107"
+ :updated    "20090107"
+ :license    "GPL-3"
+ :authors    ((nil . "andy stewart lazycat.manatee@gmail.com"))
+ :maintainer (nil . "andy stewart lazycat.manatee@gmail.com")
+ :provided   (auto-install-extension)
+ :required   ((("auto-install" auto-install)
+	       ("w3m" w3m-util)))
+ :keywords   (auto-install)
+ :commentary "\
+Some extension functions for auto-install.el
+
+This package contain some extension functions for auto-install.el
+Details use see auto-install.el, at:
+http://www.emacswiki.org/emacs/download/auto-install.el
+
+You can below commands:
+
+     `auto-install-from-w3m'         download elisp files with links in w3m
+
+Tips:
+
+     By default, `auto-install-from-w3m' downloads the file of the
+     current link.  If you select text in the w3m buffer,
+     `auto-install-from-w3m' looks for the all valid link in the
+     region and install them.
+
+
+
+Installation:
+
+Put auto-install-extension.el to your load-path.
+The load-path is usually ~/elisp/.
+It's set in your ~/.emacs like this:
+(add-to-list 'load-path (expand-file-name \"~/elisp\"))
+
+And the following to your ~/.emacs startup file.
+
+(require 'auto-install-extension)
+
+No need more.")

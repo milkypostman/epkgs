@@ -1,0 +1,9 @@
+(:summary    "Emacs interface to Growl via growlnotify"
+ :created    "2005"
+ :updated    "2005"
+ :license    "GPL-2"
+ :authors    (("Edward O'Connor" . "ted@evdb.com"))
+ :maintainer ("Edward O'Connor" . "ted@evdb.com")
+ :provided   (growl)
+ :keywords   (convenience)
+ :homepage   "http://edward.oconnor.cx/elisp")

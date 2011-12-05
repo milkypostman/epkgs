@@ -1,0 +1,13 @@
+(:summary    "Javadoc-Help.  Look up Java class on online javadocs in browser"
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-2"
+ :provided   (javadoc-help)
+ :required   ((("thingatpt" thingatpt)))
+ :keywords   (help java javadoc lookup)
+ :homepage   "http://javadochelp.sourceforge.net"
+ :wikipage   "JavadocHelp"
+ :commentary "\
+Javadoc-Help is an add-on module for Emacs that let you search a class
+ through multiple online and local javadocs quickly, and view the found
+ class documentation in the system web browser.")

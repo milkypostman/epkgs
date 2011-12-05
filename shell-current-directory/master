@@ -1,0 +1,9 @@
+(:summary    "Create new shell based on buffer directory"
+ :created    "20070924"
+ :license    "GPL-2"
+ :authors    (("Daniel Polani"))
+ :maintainer ("Daniel Polani")
+ :provided   (shell-current-directory)
+ :keywords   (comint shell)
+ :homepage   "https://github.com/metaperl"
+ :wikipage   "ShellCurrentDirectory")

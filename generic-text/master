@@ -1,0 +1,14 @@
+(:summary    "Generic things that get passed to TeX, LaTeX, html, troff, texinfo etc"
+ :updated    "20061110"
+ :license    "GPL-2"
+ :provided   (generic-text)
+ :required   ((("gentext-bindings" gentext-bindings)
+	       ("gentext-html" gentext-html)
+	       ("gentext-models" gentext-models)
+	       ("gentext-plaintext" gentext-plaintext)
+	       ("gentext-roff" gentext-roff)
+	       ("gentext-tex" gentext-tex)
+	       ("gentext-texinfo" gentext-texinfo)
+	       ("versor" modal-functions)
+	       (nil gentext-muse text-sentences)))
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/editing")

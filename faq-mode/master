@@ -1,0 +1,108 @@
+(:created    "20041231"
+ :updated    "20050103"
+ :license    "GPL-2"
+ :authors    (("Yu Li"))
+ :maintainer ("Yu Li")
+ :provided   (faq-mode)
+ :wikipage   "FaqMode"
+ :commentary "\
+This file is not part of GNU Emacs.
+
+This is free software; you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free
+Software Foundation; either version 2, or (at your option) any later
+version.
+
+This is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License
+for more details.
+
+You should have received a copy of the GNU General Public License
+along with GNU Emacs; see the file COPYING.  If not, write to the
+Free Software Foundation, Inc., 59 Temple Place - Suite 330, Boston,
+MA 02111-1307, USA.
+
+----------
+Motivation
+----------
+
+Maintaining a faq page is not a easy work, especially when this faq
+page is growing. You have to corret mistakes, re-order the questions
+and so on. When the page growing, a index in the head of page is
+necessary, which is just the source of all maintainning problems.
+
+Edit the faq page by using EmacsWiki is a good idea. EmacsWiki make you
+feel like writing but not programming(that was what I think of editing
+HTML page). In other ways, faq page is something predicable and what
+EmacsWiki do not have is some key-bindings and indexing facilities. I
+write this minor mode to solve that problem and to share my experience
+in editing and maintaining a faq pages.
+
+-----------------
+How does it work?
+-----------------
+
+faq-mode work on entry templates. It assume that each entry in faq page
+follow a prior template(can be configured in `faq-entry-template'). The
+template consisit of there part:anchor, title and body. By search according
+to the regexp of anchor or title, all entries can be easily found. Thus
+we can apply some replacing and formating magics on it.
+ 
+-----
+Usage
+-----
+
+faq-mode is provided as minor mode of EmacsWiki. Place
+
+    (require 'faq-mode)
+
+in your .emacs file to load it. M-x faq-mode to toggle it.
+
+faq-mode need not very special configuration in your .emacs. Default it
+have these key bindings
+
+    C-c C-q C-i    Insert a new faq entry
+    C-c C-q n      Move cursor to next faq entry
+    C-c C-q p      Move cursor to previous faq entry
+    C-c C-q C-a    Automatic index all faq entries
+    C-c C-q C-m    Automatic index all faq entries and generate a link list
+
+try these keys in emacs-wiki page:)
+
+NOTE: Defaultly C-c C-q C-m will generate a link list at point or between
+
+    <!-- faq index begin -->
+                            |<- Index will be generated here.
+    <!-- faq index end -->
+
+so place above 2 comment lines to right place as your wish.
+
+Faq entry template and other variables can also be configurated in wiki
+page. Here is a example
+
+    <!-- faq-mode configuration in page
+    faq-entry-template:#faq
+    faq-entry-template:**Q:** 
+    faq-entry-template:
+    faq-entry-template:<blockquote>
+    faq-entry-template:**A:** 
+    faq-entry-template:</blockquote>
+    faq-entry-template:<hr style=\"clear:left;\">
+    //faq-mode configuration in page -->
+
+place above HTML comment fragment in your wiki page's foot and when you
+open that file faq-mode will discover it. After toggle faq minor mode on,
+it will read variable's configuration and configurate it. Variable
+configuration is in form
+
+    NAME:VALUE
+
+and all page configurable variables are
+
+    `faq-entry-template' `faq-anchor-regexp' `faq-title-regexp'
+    `faq-auto-index-format' `faq-make-index-format'
+
+NOTE: Configurating `faq-entry-template' is something different, in which
+each line configuration represent one line and all configuration will be 
+`concat' together.")

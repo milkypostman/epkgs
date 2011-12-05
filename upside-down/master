@@ -1,0 +1,18 @@
+(:summary    "Make regions of text upside-down"
+ :created    "20081014"
+ :updated    "20090513"
+ :license    "GPL-2"
+ :authors    (("Noah Friedman" . "friedman@splode.com"))
+ :maintainer (nil . "friedman@splode.com")
+ :keywords   (extensions)
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
+ :commentary "\
+¿ʇı̣ əsnqɐ ʇ,uɐɔ noʎ ɟı̣ əpoɔı̣un sı̣ pooɓ ʇɐɥʍ
+
+This toy lets you render a region of ascii text upside-down.  That is,
+the characters in the region will be substituted with upside-down
+equivalents (or the nearest approximation) from the unicode character set.
+Running this function twice over a region should reverse the effect.
+
+This might only work properly in utf8 buffers; I haven't tested other
+coding systems.")

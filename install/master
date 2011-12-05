@@ -1,0 +1,76 @@
+(:summary    "Package to ease installation of Elisp packages"
+ :created    "2001"
+ :updated    "2006"
+ :license    "GPL-2"
+ :authors    (("Stefan Monnier" . "monnier@gnu.org"))
+ :maintainer ("Stefan Monnier" . "monnier@gnu.org")
+ :provided   (install)
+ :required   ((("cl" cl)
+	       ("eshell" em-glob)))
+ :homepage   "http://www.iro.umontreal.ca/~monnier/elisp"
+ :commentary "\
+This little package is meant to ease up the task of installing
+third party ELisp packages.  I.e. it takes care of placing it in
+an appropriate location, finds out what code is necessary to get
+the package activated, sets up your .emacs file to activate the
+package, and byte-compiles the package.
+
+It should work on both single-file packages and tarballs.
+
+On tarball packages, it does a bit of guess work to figure out
+where are which files and how to use them.  This is bound to
+fail sometimes.
+
+The main entry points are the following:
+
+M-x install-file RET
+   Takes a file as an argument (an elisp file or a tarball) and installs
+   and activates it.  This includes copying/untarring into the
+   site-lisp area.
+
+M-x install-buffer RET
+   Same thing but with a buffer (elisp or tar mode).
+
+M-x install-directory-inplace RET
+   Takes a directory containing an elisp package (probably tarball you
+   just untarred) and sets it up so it can be used (byte-compiles files,
+   sets up autoloads), and activates it.  All of this without copying it
+   into the site-lisp area.
+
+M-x install-list-packages RET
+   A placeholder for what should become a UI that will allow you to list
+   available/installed/activated packages, activate/deactivate them,
+   install/uninstall, ...
+
+Tested on:
++ ProofGeneral
++ sml-mode
++ AUCTeX   (missed the info page)
++ X-Symbol (as an XEmacs package)
++ Gnus     (but doesn't install the info doc :-( )
++ BBDB     (misses the main info page)
+- WhizzyTeX (needs to hack the perl script and stuff :-( )
+? ECB
+? JDEE
+? preview-latex
+? VM
+? mmm-mode
+? Semantic
+
+The above list should be taken with a heavy grain of salt: each bullet
+was true at some point, but the code of install.el hs changed since and
+the code of those packages as well.
+
+The on-disk structure is as follows:
+- there are two area: the `home' and the `site' each with their
+  respective directory (~/lib/emacs and /usr/share/emacs/site-lisp)
+  and file (.emacs and site-start).
+- There is a distinction between installing and activating.
+  Installing only places the files on disk, whereas activating sets up
+  autoloads and friends.
+- Activation is done on a directory by directory basis.  Each directory
+  has an `autoloads' file.  Loading it activates the package(s)
+  in directory.
+- Single-file packages are placed together in the toplevel directory
+  whereas tarball-packages are placed in their own subdirectory (so they
+  can be activated independently).")

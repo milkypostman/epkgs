@@ -1,0 +1,6 @@
+(:summary    "An interface to the XCode IDE"
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-3"
+ :provided   (xcode)
+ :homepage   "https://github.com/senny/emacs-xcode")

@@ -1,0 +1,9 @@
+(:summary    "Scroll half screen down or up, and highlight current line"
+ :created    "20110301"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Joseph" . "jixiuf@gmail.com"))
+ :maintainer ("Joseph" . "jixiuf@gmail.com")
+ :provided   (joseph-scroll-screen)
+ :keywords   (screen scroll)
+ :homepage   "https://github.com/jixiuf/joseph-scroll-screen")

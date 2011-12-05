@@ -1,0 +1,41 @@
+(:summary    "Project utils"
+ :created    "201107"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Fabián E. Gallina" . "fabian@anue.biz"))
+ :maintainer ("FSF")
+ :provided   (projutils)
+ :required   ((("grep" grep)
+	       ("ido" ido)
+	       ("speedbar" speedbar))
+	      (("full-ack" full-ack)
+	       ("sr-speedbar" sr-speedbar)))
+ :keywords   (languages)
+ :homepage   "https://github.com/fgallina/projutils.el"
+ :commentary "\
+Small library with useful commands for working from the root of
+GNU/Emacs projects (see dir-locals)
+
+Browse project files from root folder: Using speedbar or, if
+available, sr-speedbar.  In the case both are present you can
+control if sr-speedbar should have precedence via the
+`projutils-use-sr-speedbar' variable.
+
+Grep files from the root folder: Using rgrep or, if available, ack
+(from full-ack package).  In the case both are present you can
+control if ack should have precedence via the `projutils-use-ack'
+variable.
+
+Find file in project: The list of files is generated from the
+project root and you can control what should be filtered by setting
+the `projutils-ffip-ignored-dirs', `projutils-ffip-ignored-files',
+`projutils-ffip-allowed-file-extensions',
+`projutils-ffip-ignored-file-extensions',
+`projutils-ffip-ignored-regexps' variables.
+
+Installation:
+
+Add this to your .emacs:
+
+(require 'projutils)
+(projutils-global-mode 1)")

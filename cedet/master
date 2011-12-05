@@ -1,0 +1,73 @@
+(:summary    "Setup CEDET environment"
+ :created    "20021209"
+ :updated    "20100717"
+ :license    "GPL-2"
+ :authors    (("David Ponce" . "david@dponce.com"))
+ :provided   (cedet cedet-android cedet-autogen cedet-build cedet-compat cedet-contrib cedet-contrib-load cedet-cscope cedet-edebug cedet-ediff cedet-files cedet-global cedet-graphviz cedet-idutils cedet-java cedet-load cedet-m3 cedet-update-changelog cedet-update-version cedet-utests cogre cogre-ascii cogre-convert cogre-dot-mode cogre-layout cogre-load cogre-mode cogre-periodic cogre-semantic cogre-srecode cogre-uml cogre-utest data-debug eassist ede-gnustep fame picture-hack pprint qp-base qp-c qp-elisp qp-util quickpeek semantic-ectag-scala semantic-tag-folding wisent-csharp wisent-dot wisent-php working)
+ :required   ((("cl" cl)
+	       ("debug" debug)
+	       ("dframe" dframe)
+	       ("ede" ede)
+	       ("edebug" edebug)
+	       ("eieio" eieio eieio-base eieio-custom eieio-opt)
+	       ("eldoc" eldoc)
+	       ("emacs" autoload custom font-lock rect timer widget)
+	       ("etags" etags)
+	       ("inversion" inversion)
+	       ("mode-local" mode-local)
+	       ("picture" picture)
+	       ("ps-print" ps-print)
+	       ("ring" ring)
+	       ("semantic" semantic)
+	       ("shell" shell)
+	       ("srecode" srecode)
+	       ("tempo" tempo)
+	       ("thingatpt" thingatpt)
+	       (nil ede-pconf ede-pmake ede-proj makefile-edit semantic-ctxt semantic-decorate-mode semantic-ede-grammar semantic-find semantic-format semantic-imenu semantic-tag-file semantic-util semantic-wisent senator srecode-dictionary srecode-map thing wisent wisent-csharp-wy wisent-dot-wy wisent-php-wy)))
+ :keywords   (syntax)
+ :homepage   "http://cedet.sourceforge.net"
+ :wikipage   "CollectionOfEmacsDevelopmentEnvironmentTools"
+ :commentary "\
+This library automatically setups your [X]Emacs to use CEDET tools.
+
+First download the latest CEDET distribution, provided in a
+cedet-<VERSION>.tar.gz tarball, from the project page at:
+<http://sf.net/projects/cedet>.
+ 
+Unpack the tarball in a directory of your choice.  It will install
+the following directory tree:
+
+  cedet
+    |
+    +- common
+    |
+    +- cogre
+    |
+    +- ede
+    |
+    +- eieio
+    |
+    +- semantic
+    |
+    +- speedbar
+    |
+    +- srecode
+    |
+    \\- contrib
+
+Then, add the following into your ~/.emacs startup file:
+
+  (load-file \"<INSTALL-PATH>/cedet/common/cedet.el\")
+
+Once loaded, you can enable additional feature.  For example,
+this will enable some basic and advance features:
+
+  (load-file \"<INSTALL-PATH>/cedet/common/cedet.el\")
+  (global-ede-mode t)
+  (semantic-load-enable-code-helpers)
+  (global-srecode-minor-mode 1)
+
+See the INSTALL file for more.
+
+
+That's it!")

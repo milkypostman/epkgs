@@ -1,0 +1,62 @@
+(:summary    "Use google translate api to perform translations"
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-3"
+ :authors    (("Bruno Tavernier" . "tavernier.bruno@gmail.com"))
+ :maintainer ("Bruno Tavernier" . "tavernier.bruno@gmail.com")
+ :provided   (gtranslate)
+ :keywords   (googleapi language translation words)
+ :commentary "\
+This utility allows for translation via the google translation api.
+
+By using the online translation service, you are bound by its Terms.
+For more information, see:
+http://code.google.com/apis/ajaxlanguage/terms.html
+
+Tested ONLY with: GNU Emacs 23.x and UTF-8 environment.
+
+This module was inspired by text-translator.el
+   http://www.emacswiki.org/emacs/TextTranslator
+
+For a more interactive usage, or to use others translation services,
+consider using babel.el
+   git clone git://github.com/juergenhoetzel/babel.git
+
+
+Installation
+============
+
+To install `gtranslate', make sure this file is saved in a directory in
+your `load-path', and add the line:
+
+  (require 'gtranslate)
+
+to your .emacs file.
+
+Or use the autoload mechanism instead
+
+  (autoload 'gtranslate-translate \"gtranslate\" nil t)
+  (autoload 'gtranslate-translate-auto \"gtranslate\" nil t)
+
+Then create a function for a one way translation, ex: English -> French
+
+  (defun my-en-fr ()
+    (interactive)
+    (gtranslate-translate (gtranslate-region-or-input) \"en\" \"fr\"))
+
+Alternatively you can define a function that work automatically
+in two directions.
+Note that it only works for a Roman alphabet / Non-Roman alphabet
+pair of language, ex: French <-> Japanese.
+
+  (defun my-fr-ja ()
+    (interactive)
+    (gtranslate-translate-auto (gtranslate-region-or-input) \"fr\" \"ja\"))
+
+Finally you can assign shortcuts to your functions
+
+  (global-set-key \"\\M-1\" 'my-fr-ja)
+  (global-set-key \"\\M-2\" 'my-en-fr)
+
+Note: Feel free to replace `gtranslate-region-or-input' in the example
+above by any function of your choice that return a string.")

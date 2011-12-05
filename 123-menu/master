@@ -1,0 +1,17 @@
+(:summary    "Simple menuing system, reminiscent of Lotus 123 in DOS"
+ :created    "2006"
+ :updated    "2006"
+ :license    "GPL-2"
+ :provided   (123-menu)
+ :required   ((("cl" cl)))
+ :keywords   (convenience)
+ :wikipage   "OneTwoThreeMenu"
+ :commentary "\
+Even though I've been using Emacs for years, I still have trouble
+remembering a lot of the key combinations for commands that I don't
+use all the time (e.g.: killing and yanking rectangles, bookmarks,
+etc.). I think Lotus 123 for DOS had a remarkably cool user
+interface in that the menus let you explore around and find things
+if you were a newbie, but once you knew the key sequences, you
+could become very fast with it. This is my attempt at doing
+something like the Lotus 123 menu system for Emacs.")

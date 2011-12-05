@@ -1,0 +1,8 @@
+(:summary    "Search for and replace strings in multiple files"
+ :license    "GPL-2"
+ :provided   (globrep)
+ :required   ((("cl" cl)
+	       ("compile" compile)
+	       ("query" query)
+	       ("vc" vc)))
+ :wikipage   "GlobRep")

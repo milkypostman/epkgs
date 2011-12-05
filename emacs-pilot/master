@@ -1,0 +1,55 @@
+(:summary    "Package for synchronization of various Emacs subsystems with Palm Pilot"
+ :created    "2005"
+ :updated    "2005"
+ :license    "GPL-2"
+ :provided   (bbdb-pilot diary-pilot memo-pilot pilot)
+ :required   ((("bbdb" bbdb bbdb-com)
+	       ("calendar" calendar)
+	       ("cl" cl)
+	       ("diary-lib" diary-lib)
+	       ("emacs" easymenu)))
+ :homepage   "http://bruda.ca/emacs-pilot/"
+ :wikipage   "EmacsPilot"
+ :commentary "\
+Various functions transfer the following databases to and from the
+pilot: BBDB, diary, and memos.  This is part of the `emacs-pilot'
+package <http://turing.ubishops.ca/home/bruda/emacs-pilot/>.  For
+detailed usage information please refer to the README file included
+in the package or accessible directly at
+<http://turing.ubishops.ca/home/bruda/emacs-pilot/emacs-pilot/README>
+
+To use the package, insert the following line into your Emacs
+initialization file:
+
+(require 'pilot)
+
+Autoloads are also available if preferred for the following
+functions (the first two being the main functions).
+  pilot-make-menu (creates the pilot menu, from pilot.el)
+  pilot-add-to-vm (integrates the pilot menu into VM, from pilot.el)
+  bbdb-pilot-to-pilot (pushes the BBDB database to the pilot, from
+                       bbdb-pilot.el)
+  bbdb-pilot-to-bbdb (integrates the pilot address book database into 
+                      BBDB, from bbdb-pilot.el)
+  diary-pilot-to-pilot (synchronizes the diary, from diary-pilot.el)
+  pilot-get-memos (puts pilot memos into a mailbox, from memo-pilot.el)
+  vm-message-to-pilot (exports the current message as memo, from memo-pilot.el)
+
+The package creates the `pilot' customization group, see the
+variables therein for customization.
+
+You need the `pilot-wait' and `pilot-wait-end' scripts or
+equivalent (or set the appropriate customizable variables to the
+empty string) included in this distribution.  You also need the
+`pilot-link' package which does the actual transfer to and from the
+pilot.
+
+Actually, the two scripts are needed only for pure udev systems,
+more specifically on those systems in which /dev/pilot appears when
+the hotsync button is pressed and disappears when the hotsync
+operation completes.  On system in which /dev/pilot persists
+between hotsyncs `pilot-wait' has no effect (so you are better off
+setting `pilot-wait-command' to the empty string) and the use of
+`pilot-wait-end' is harmful (so you MUST set `pilot-end-command' to
+the empty string, otherwise your Emacs will hang after the first
+hotsync operation!).")

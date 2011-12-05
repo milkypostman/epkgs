@@ -1,0 +1,12 @@
+(:summary    "Major mode for editing pinpoint files"
+ :created    "2011"
+ :updated    "2011"
+ :authors    (("Philanecros Heliostein"))
+ :maintainer ("Philanecros Heliostein")
+ :provided   (pinpoint-mode)
+ :required   ((("emacs" easymenu)))
+ :keywords   (extensions pinpoint)
+ :homepage   "https://github.com/philanecros/pinpoint-mode"
+ :commentary "\
+This program is under development and is not ready for distribution
+yet.")

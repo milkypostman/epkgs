@@ -1,0 +1,36 @@
+(:created    "20110326"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Joseph" . "jixiuf@gmail.com"))
+ :maintainer ("Joseph" . "jixiuf@gmail.com")
+ :provided   (anything-dired-history)
+ :required   ((("anything" anything)
+	       ("emacs" dired)))
+ :keywords   (anything dired\ history)
+ :homepage   "https://github.com/jixiuf/anything-dired-history"
+ :commentary "\
+Someone like to reuse the current dired buffer to visit
+another directory, so that you just need open one dired
+buffer. but the bad point is ,you can't  easily go
+forward and back in different dired directory. this file
+can remember dired directory you have visited and list them
+using `anything.el'.
+`anything-dired-history.el' will save all dired directory you
+have visited to file `anything-dired-history-cache-file'
+
+
+Installation:
+
+(require 'anything-dired-history)
+(define-key dired-mode-map \",\" 'anything-dired-history-view)
+
+(require 'savehist)
+(setq savehist-additional-variables
+      '( anything-dired-history-variable
+         ))
+(savehist-mode 1)
+
+Or:
+(autoload 'anything-dired-history-view \"anything-dired-history\"
+   \"view dired directories you have visited.\" t)
+(define-key dired-mode-map \",\" 'anything-dired-history-view)")

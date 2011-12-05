@@ -1,0 +1,4 @@
+(:summary    "Useful stuff for running system"
+ :updated    "20030106"
+ :provided   (sysadmin)
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/sysadmin")

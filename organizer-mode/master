@@ -1,0 +1,280 @@
+(:summary    "Major mode for editing organizer list files"
+ :created    "19970802"
+ :updated    "20030318"
+ :authors    (("Oliver Seidel" . "os10000@seidel-space.de"))
+ :maintainer ("Oliver Seidel" . "os10000@seidel-space.de")
+ :provided   (organizer-mode)
+ :required   ((("bbdb" bbdb)
+	       ("calendar" calendar)
+	       ("diary-lib" diary-lib)
+	       ("emacs" dired)
+	       ("ffap" ffap)
+	       ("gnus" gnus)
+	       ("todo-mode" todo-mode)
+	       ("vm" vm)
+	       (nil dired-shell)))
+ :keywords   (calendar todo)
+ :homepage   "http://home.attbi.com/~shannon1679/organizer-mode.html"
+ :wikipage   "OrganizerMode"
+ :commentary "\
+organizer-mode.el is free software
+
+The following code is meant to provide functions to allow use as an
+organizer.
+
+ This code borrows heavily and shamelessly from todo-mode.el.  Many
+ of the functions are directly from that code with only minor
+ alteration.  The following is information regarding that package.
+
+=======================
+todo-mode.el --- major mode for editing todo list files
+Copyright (C) 1997, 1999, 2001 Free Software Foundation, Inc.
+
+Author: Oliver Seidel <os10000@seidel-space.de>
+  [Not clear the above works, July 2000]
+Created: 2 Aug 1997
+Version: Id: todo-mode.el,v 1.47.4.1 2001/11/13 04:12:45 rms Exp
+Keywords: calendar, todo
+=========================
+
+Quick Installation:
+The easiest install method is to simply put the
+organizer-mode.el file into you home directory, create a directory
+to put organizer files in and put the following into your .emacs
+file:
+
+(load-file \"~/organizer-mode.el\")
+
+Quick Start/Tutorial
+
+To get an idea of what this mode is designed to do and how to set
+things up, do the following steps:
+
+1) M-x organizer-show and type in the name of the new organizer
+file, \"~/Organizer/software_development\" without the quotes.  Type
+in \"Notes\" at the prompt for a new category.
+
+2) Type \"I\" to insert an organizer entry and type \"Need commentary
+for organizer.el /* organizer_program */\" at the prompt.  The word
+inside the C-quotes (/* */) is the name of the organizer we are
+going to create in 5, below.
+
+3)  Type Q to quit and save this organizer file.
+
+4) M-x orgainzer-show and type in the name of the new organizer
+file, \"~/Organizer/organizer_program\" without the quotes.  Type in
+\"Files\" at the prompt for a new category.
+
+5) Type \"I\" to insert an organizer entry and type \"~/organizer-mode.el\".
+
+6) Go to the \"Organizer\" menu and choose \"Diary\" from the \"Create
+linked entry to this page\" submenu.
+
+7) Insert the diary entry \"9:00am See John /* organizer_program */\" into
+the diary for the current date and \"3:00pm See Jim /* organizer_program */\"
+for tomorrow.  Save and kill the buffer.
+
+8) Type Q to quit and save this organizer file.
+
+9) Go to the \"Organizer\" menu and choose \"Todo\" from the \"Create
+linked entry to this page\" submenu. Insert the entry \"Work on
+organizer-mode /* organizer_program */\" into your todo list.
+
+10) If you use bbdb to store your contacts, create an entry for
+\"Thomas Shannon\" with my email \"tshannon@rush.edu\" and
+\"/* software_development */ /* organizer_program */\" somewhere in the
+notes field.  Save the database with M-x bbdb-save-db
+
+12) Start the calendar and press \"O\" to execute the
+'organizer-view-other-diary-files' function.  At the type in
+\"~/Organizer/software_development\" at the prompt.  You should see
+something like this:
+
+Wednesday, December 4, 2002
+===========================
+--- Notes
+Need commentary for organizer.el /* organizer_program */
+----------------------------------------------------------------------------
+----------------------------------------------------------------------------
+-- BBDB
+Thomas Shannon
+            net: tshannon@rush.net
+          notes: /* software_development */ /* organizer_program */
+----------------------------------------------------------------------------
+----------------------------------------------------------------------------
+
+The date will obviously be your current date and if you don't use
+bbdb, my entry above won't be there.
+
+Note that my bbdb entry, with the comment \"/* software_development
+*/\" in the notes field, shows up in the \"software_development\"
+page.  The entry is, therefore, \"linked\" to this page and the
+information is available for when you decide to work on software
+development.  You can also edit the bbdb entry by putting the
+cursor on my name (Shannon), going to the \"organizer\" menu and
+choosing \"BBDB search string\" from the \"Commands on string at
+cursor\" submenu.
+
+13) Put the cursor on the word \"organizer_program\" anywhere on the
+page.  Go to the \"Organizer\" menu and choose \"Go to another
+organizer\" from the \"Commands on string at cursor\" submenu.  You
+should now see something like this:
+
+Wednesday, December 4, 2002
+===========================
+--- Files
+~/organizer-mode.el
+---------------------------------------------------------------------------
+-- [software_development]
+Need commentary for organizer.el /* organizer_program */
+---------------------------------------------------------------------------
+---------------------------------------------------------------------------
+-- BBDB
+Thomas Shannon
+            net: tshannon@rush.net
+          notes: /* software_development */ /* organizer_program */  /* junk */
+----------------------------------------------------------------------------
+----------------------------------------------------------------------------
+9:00am See John /* organizer_program */
+
+Thursday, December 5, 2002
+==========================
+3:00pm See Jim /* organizer_program */
+
+Note that all of the entries in the diary, the todo file, the bbdb
+database and the software_development organizer file with the
+comment \"/* organizer_program */\" also show up in the
+\"organizer_program\" organizer page.  These entries are, therefore,
+linked to this page and the information is available for when you
+decide to do things related to the organizer program.
+
+14) Put your cursor on \"~/organizer-mode.el\" and choose \"Dired
+directory or file\" from the \"Commands on string at cursor\" submenu.
+Hit enter to accept the file name.  You should see this file.
+
+Detailed Comments:
+
+These comments are out of date.  Please see the info file for organzier-mode:
+
+http://home.attbi.com/~shannon1679/organizer-mode.info
+
+I decided to put this mode together because I was intensely
+dissatisified with Personal Information Managers for Linux as the
+programs now stand.  It's my opinion that you should be able to use
+you computer like you would use an organizer that you carry around.
+In other words, if you want to work on a project, you look at the
+proper page in your organizer, which provides all of the
+information needed to start working.  Its my opinion that a proper
+computer organizer should allow you to start with the proper \"page\"
+and do anything from there.
+
+I thought emacs was the best place to start if you're going to do
+this because its possible to do nearly everything with it to begin
+with.  It has a pretty good calendar and todo-mode which are
+essential.  It also allows you to read news (gnus) and mail (vm)
+and has a pretty good contact manager/addressbook (bbdb).
+
+To create a new organizer file, simply use the \"organizer-show\"
+command and type in the name of the new file when prompted.  The
+default directory is \"~/Organizer\" and this directory will be
+created for you.  Insert entries using the same commands as those
+for the todo-mode but the commands use \"organizer\" instead of
+\"todo\" as the first word.  For instance, use
+\"organizer-insert-item-here\" to insert new items into the file in
+the same way tht you use \"todo-insert-item-here\" to insert new
+items into a todo file.
+
+The organizer files in this package are really just todo files that
+are organized in one or more directories.  Usually the
+organizer-directory is the root of this tree.  Files can be
+displayed with the command 'organizer-show'.  Pages associated with
+the files are displayed with the
+'organizer-view-other-diary-entries' command.  'organizer-show' is
+also used to create new files and new entries in existing files
+('organizer-insert-item' or 'organizer-insert-item-here').
+
+As stated above, an entry into an organizer file is nothing more
+than a todo entry.  Indeed, all of the todo-mode functions
+(with \"organizer\" substituted for \"todo\") are there and the
+shortcut keys are the same.  For instance, I might have the
+following entries in my \"development\" organizer file:
+
+ Brian Barry
+ ~/mail/organizer_mail
+ comp.emacs
+ ~/code/organizer-mode.el
+ ~/code
+ My_programs
+ http://www.emacswiki.org/cgi-bin/wiki.pl?SiteMap
+ ~/junk.jpg
+
+These entries allow you to do the following:
+
+ Access Brian Barry in bbdb with organizer-bbdb-at-point.
+ Access organizer_mail with organizer-vm-at-point.
+ Access comp.emacs with organizer-gnus-at-point.
+ Call up organizer-mode.el or the directory with code
+ with find-file-at-point.
+ Access the related organizer page, My_programs, with
+ organizer-at-point.
+ Access the URL with w3m-browse-url, browse-url-netscape or some other variation.
+ Access junk.jpg with its associated dired-guess-shell-alist-user
+ command (xv in my case) using organizer-shell-command-at-point
+
+You can, therefore, do nearly anything associated with the project
+simply by going to the organizer page and using the proper command.
+Your work, therefore, becomes task based.  These commands can (and
+probably should) be bound to shortcut keys.  They are all also
+available from the \"Organizer\" menu.  At some point I'll get around
+to customizing them so that you can input your own commands and use
+your own mail/news/addressbooks.  For now, the package will be best
+for emacs people like me who practically live with the program
+running and do nearly everything with it.
+
+In addition, there are a few additional features which are
+implemented with the 'organizer-view-other-diary-entries'.  This
+command generates an \"organizer page\" from an organizer file.  It
+is probably the best one to use when you don't actually need to
+create a new file or add entries to an existing one.  You start by
+calling the calendar and putting the cursor on the relevant date
+(usually the current one).  When you call the function, the
+computer first displays the contents of your organizer file.  It then
+searches through your diary, the todo-file and your bbdb-file for
+entries which contain the name of the organizer file with C-type
+delimeters (/* */) and also displays them.  For instance, my
+\"development\" organizer page will not only display the information
+above (which is in ~/my_organizer_directory/development\"), but will
+also display the todo entry \"finish organizer-mode.el, /*
+development */\" and the appointment \"June 14, 2002 9:00am send
+Brain Jones the file, /* development */\" entry from my diary file
+on June 14.  It will also display Brian Jones' BBDB entry if /*
+development */ is somewhere in the entry (usually the notes field).
+
+In addition, by putting the proper information in the right places,
+all of you work becomes linked.  For instance, in the notes field
+of Brain's BBDB entry, I might put \"/* development */\" as above.
+Now with organizer-at-point, I can call up the proper page from his
+bbdb entry.  Or I could put \"~/mail/Brian\" which will allow me to
+access the related email box with \"vm-at-point\".  The same goes
+with todo entries and calendar entries.  If used correctly,
+everything can be associated to make access to information from
+anywhere go smoothly.
+
+ Have fun.
+
+Shortcut keys:
+O    calendar-mode   organizer-view-other-diary-entries
+
+All shortcut keys once you are in organizer-mode are the same as
+those in todo-mode.
+
+Todo:
+1) Speedbar mode
+2) info file
+
+Known bugs
+
+Every once in a while in 'organizer-mode' the error, \"Can't find
+category --- $\" or just \"Arithmetic error\" appears.  The work
+around is to simply execute the 'organizer-forward-category'
+command (the \"+\" key) and this will fix it.")

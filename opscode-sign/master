@@ -1,0 +1,11 @@
+(:summary    "Opscode API request signer"
+ :authors    (("Christopher Brown (skeptomai)" . "cb@opscode.com"))
+ :maintainer ("Christopher Brown (skeptomai)" . "cb@opscode.com")
+ :provided   (opscode-sign)
+ :required   ((("cl" cl)
+	       ("emacs" base64 sha1)))
+ :keywords   (chef elisp openssl opscode rsa signature)
+ :homepage   "https://github.com/skeptomai/opscode-emacs-sign"
+ :commentary "\
+Relies on the OpenSSL command line tool to generate an RSA signature 
+for a request")

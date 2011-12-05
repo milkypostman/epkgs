@@ -1,0 +1,6 @@
+(:summary    "Arrange use of an elisp package"
+ :updated    "20070816"
+ :license    "GPL-2"
+ :provided   (use-package)
+ :required   ((("info" info)))
+ :wikipage   "UsePackage")

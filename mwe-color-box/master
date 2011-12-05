@@ -1,0 +1,52 @@
+(:summary    "Display color boxes for each nesting level"
+ :created    "2004"
+ :updated    "20070317"
+ :license    "GPL-2"
+ :authors    (("Michael Weber" . "michaelw@foldr.org"))
+ :maintainer ("Michael Weber" . "michaelw@foldr.org")
+ :provided   (mwe-color-box)
+ :required   ((("cl" cl)
+	       ("emacs" rect)
+	       ("thingatpt" thingatpt)))
+ :keywords   (faces games)
+ :homepage   "http://www.foldr.org/~michaelw/emacs"
+ :commentary "\
+Color-boxify current buffer with M-x mwe:color-box-buffer
+Sit back.  Enjoy. :)
+
+Notes: 
+  * Buffer is made read-only, so that editing is not possible
+
+Inspired by http://www.32768.com/bill/weblog/000660.shtml#000660
+
+
+As an example, uncomment FACTORIAL, mark it, and
+use M-x `mwe:color-box-region/miscbill'.
+
+To get the same colors as on the webpage, eval:
+(custom-set-faces
+ '(mwe:nesting-face-0 ((((class color)) (:background \"#90b0f0\"))))
+ '(mwe:nesting-face-1 ((((class color)) (:background \"#b090f0\"))))
+ '(mwe:nesting-face-2 ((((class color)) (:background \"#f0b090\"))))
+ '(mwe:nesting-face-3 ((((class color)) (:background \"#90b0f0\"))))
+ '(mwe:nesting-face-4 ((((class color)) (:background \"#90f0b0\"))))
+ '(mwe:nesting-face-5 ((((class color)) (:background \"#b0f090\"))))
+ '(mwe:nesting-face-6 ((((class color)) (:background \"#b090f0\"))))
+ '(mwe:nesting-face-7 ((((class color)) (:background \"#90b0f0\"))))
+ '(mwe:nesting-face-8 ((((class color)) (:background \"#b0f090\")))))
+
+(DEFUN FACTORIAL
+  (X)
+  (COND
+   (
+    (EQ X 1)
+    1)
+   (T
+     (* X
+        (FACTORIAL
+         (- X 1)
+         )
+        )
+     )
+   )
+  )")

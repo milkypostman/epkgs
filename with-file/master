@@ -1,0 +1,5 @@
+(:summary    "Perform an operation on a file, restoring other state afterwards"
+ :updated    "20050706"
+ :license    "GPL-2"
+ :provided   (with-file)
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/file-handling")

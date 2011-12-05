@@ -1,0 +1,14 @@
+(:summary    "Edit comments in Ogg Vorbis files"
+ :created    "20030819"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("Jesper Harder" . "harder@ifa.au.dk"))
+ :maintainer ("Jesper Harder" . "harder@ifa.au.dk")
+ :provided   (vorbiscomment)
+ :keywords   (data multimedia)
+ :homepage   "http://www.phys.au.dk/~harder"
+ :commentary "\
+Use `M-x vorbiscomment' to extract the comment headers from an Ogg
+Vorbis file.  `C-c C-c' in the comment buffer writes the comments
+back to the file.  You need the program \"vorbiscomment\" from
+vorbis-tools.")

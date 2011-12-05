@@ -1,0 +1,8 @@
+(:created    "2009"
+ :updated    "2009"
+ :license    "GPL-3"
+ :provided   (grail-fn grail-profile)
+ :required   ((("cl" cl)
+	       ("find-func" find-func)))
+ :homepage   "https://github.com/codermattie/Grail"
+ :wikipage   "Grail")

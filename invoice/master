@@ -1,0 +1,13 @@
+(:summary    "Interface for personal contracting invoice system"
+ :created    "19940101"
+ :updated    "19951215"
+ :license    "GPL-2"
+ :authors    (("Noah Friedman" . "friedman@prep.ai.mit.edu"))
+ :maintainer (nil . "friedman@prep.ai.mit.edu")
+ :provided   (invoice)
+ :required   ((("time-stamp" time-stamp)))
+ :keywords   (extensions)
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
+ :commentary "\
+I use this to ease updating my TeX-format invoice forms for all my
+contracts.  Those forms need my invoice-macros.tex file as well.")

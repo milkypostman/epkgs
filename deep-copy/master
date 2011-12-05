@@ -1,0 +1,7 @@
+(:created    "1991"
+ :updated    "20051123"
+ :license    "GPL-2"
+ :authors    (("Noah Friedman" . "friedman@splode.com"))
+ :maintainer (nil . "friedman@splode.com")
+ :provided   (deep-copy)
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp")

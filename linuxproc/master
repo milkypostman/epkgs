@@ -1,0 +1,41 @@
+(:summary    "File handlers for /proc"
+ :created    "19991030"
+ :updated    "20050613"
+ :license    "GPL-2"
+ :authors    (("Noah Friedman" . "friedman@splode.com"))
+ :maintainer (nil . "friedman@splode.com")
+ :provided   (linuxproc)
+ :keywords   (extensions linux proc)
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
+ :commentary "\
+Note: Some parts of this file handler are unnecessary in Emacs 21.1 and
+later (which finally handles zero-length files in the normal way by just
+reading them to eof; see Gerd Moellmann's change of 2001-04-18).  But if
+you are using an older version of Emacs, read on.
+
+Linux /proc files are not ordinary files and cannot by visited by emacs
+in the normal way.  This handler makes it possible to view, edit, and
+(when allowed) save the contents of /proc files with emacs.
+
+Linux /proc files are also inconsistent about returning modification
+times: some files will always return the current time as the mod time,
+some only change when there is new data, others never change after the
+proc entry is first created (for an example of the last case, see
+/proc/mdstat in kernel versions 2.6.10 or 2.6.11).  It's difficult to
+tell what behavior is most useful in these situations.  Some files can
+be written to modify kernel parameters and the modtime for these should
+not appear to change or you get \"file on disk is newer\" warnings in
+emacs.  Other times, e.g. with auto-revert-mode, the file modtime should
+be updated so that the buffer display keeps up with the latest contents.
+
+The heuristic employed here is that writable files are considered not to
+have changed on disk (so that saving changes is less annoying), but
+read-only files are always newer (so that auto-revert, etc. work).
+
+This package cannot be autoloaded.  To use it, put the following in your
+.emacs:
+
+    (require 'linuxproc)
+
+Thanks to Ralph Schleicher <rs@purple.ul.bawue.de> for discovering a
+method of reading files in /proc by abusing the load reader.")

@@ -1,0 +1,3 @@
+(:summary    "Interactive binary search for a line within a window"
+ :provided   (chop)
+ :wikipage   "ChopMode")

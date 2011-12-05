@@ -1,0 +1,33 @@
+(:summary    "Find emacs lisp libaries and function definitions"
+ :created    "19960326"
+ :updated    "20050517"
+ :license    "GPL-2"
+ :authors    (("Noah Friedman" . "friedman@splode.com"))
+ :maintainer (nil . "friedman@splode.com")
+ :provided   (fff-elisp)
+ :required   ((("fff" fff)))
+ :keywords   (commands extensions files searching tools)
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
+ :commentary "\
+This package is an extension of fff.el which provides shortcut commands
+for visiting emacs lisp libraries based on file name or function defined
+therein.
+
+To use this package, put the following in your .emacs:
+
+  (autoload 'fff-find-emacs-lisp-library                \"fff\" nil t)
+  (autoload 'fff-insert-emacs-lisp-library              \"fff\" nil t)
+  (autoload 'fff-locate-emacs-lisp-library              \"fff\" nil t)
+  (autoload 'fff-find-loaded-elisp-function-or-variable \"fff\" nil t)
+
+The command `fff-elisp-install-map' will bind these commands to a common
+prefix of \"C-c C-f\" (you can change this).  To find a list of them, run
+that command and then type \"C-c C-f C-h\".
+
+If you are using Emacs 19 or later, you can have this happen
+automatically by putting the following in your .emacs:
+
+    (eval-after-load \"fff-elisp\" '(fff-elisp-install-map))
+
+Related works:
+   * find-func.el by Jens Petersen <petersen@kurims.kyoto-u.ac.jp>")

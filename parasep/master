@@ -1,0 +1,14 @@
+(:summary    "More paragraph separators"
+ :created    "2007"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Kevin Ryde" . "user42@zip.com.au"))
+ :maintainer ("Kevin Ryde" . "user42@zip.com.au")
+ :provided   (parasep)
+ :keywords   (convenience)
+ :homepage   "http://user42.tuxfamily.org/parasep"
+ :commentary "\
+These few functions add further paragraph separators to
+`paragraph-separate' and `paragraph-start'.  The functions are designed
+to be used either from a mode hook or interactively for occasional
+changes.")

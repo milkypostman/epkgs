@@ -1,0 +1,11 @@
+(:summary    "Major mode for editing GNU LilyPond music scores"
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-3"
+ :provided   (lilypond-mode lilypond-song)
+ :required   ((("cl" cl)
+	       ("compile" compile)
+	       ("ecasound" ecasound)
+	       ("emacs" easymenu)
+	       (nil ilisp)))
+ :homepage   "http://lilypond.org")

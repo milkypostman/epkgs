@@ -1,0 +1,21 @@
+(:summary    "Functions for calling Android Debug Bridge from Tramp"
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Juergen Hoetzel" . "juergen@archlinux.org"))
+ :maintainer ("Juergen Hoetzel" . "juergen@archlinux.org")
+ :provided   (tramp-adb)
+ :required   ((("tramp" tramp)))
+ :keywords   (comm processes)
+ :homepage   "https://github.com/juergenhoetzel/tramp-adb"
+ :commentary "\
+In order to activate this package, perform the following steps:
+
+- Add a symlink into the Tramp directory
+  ln -s /path/to/this/tramp-adb.el /path/to/tramp/lisp/tramp-adb.el
+
+- Regenerate tramp-loaddefs.el
+  cd /path/to/tramp; rm lisp/tramp-loaddefs.el; make
+
+- Add the following form into your .emacs
+  (setq tramp-adb-sdk-dir \"/path/to/android/sdk\")")

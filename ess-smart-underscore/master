@@ -1,0 +1,12 @@
+(:summary    "Ess Smart Underscore"
+ :created    "20110714"
+ :updated    "20110803"
+ :license    "GPL-3"
+ :authors    (("Matthew L. Fidler"))
+ :maintainer ("Matthew Fidler")
+ :provided   (ess-smart-underscore)
+ :required   ((("ess" ess)))
+ :keywords   (ess underscore)
+ :homepage   "https://github.com/mlf176f2/ess-smart-underscore.el"
+ :commentary "\
+To use, put (require 'ess-smart-underscore) in your ~/.emacs file")

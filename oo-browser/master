@@ -1,0 +1,13 @@
+(:created    "1995"
+ :updated    "1997"
+ :authors    (("Bob Weiner"))
+ :maintainer ("Bob Weiner")
+ :provided   (br br-c++ br-c++-ft br-c-ft br-clos br-clos-ft br-compl br-eif br-eif-ft br-env br-ftr br-info br-init br-java br-java-ft br-lib br-menu br-name br-objc br-objc-ft br-python br-python-ft br-site br-smt br-start br-tree c++-browse c++-mode c-mode clos-brows clos-mode eif-browse eif-calls eif-ise-er eiffel-mode hasht hmouse-br info-browse java-brows objc-brows oo-browser-autoloads pyth-brows smalltalk-mode smt-browse)
+ :required   ((("cc-mode" cc-mode)
+	       ("compile" compile)
+	       ("emacs-obsolete" lmenu)
+	       ("info" info)
+	       (nil hmouse-drv hmouse-key hpath hui-mouse hversion hypb id-menubars pydoc set)))
+ :keywords   (c oop tools)
+ :homepage   "http://sourceforge.net/projects/oo-browser"
+ :wikipage   "ObjectOrientedBrowser")

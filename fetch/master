@@ -1,0 +1,10 @@
+(:summary    "Never type the long remote file name again."
+ :created    "2002"
+ :updated    "20080612"
+ :license    "GPL-2"
+ :authors    (("D. Goel" . "deego@glue.umd.edu"))
+ :maintainer ("D. Goel" . "deego@glue.umd.edu")
+ :provided   (fetch)
+ :required   ((("cl" cl)))
+ :keywords   (ange-ftp files mirror refresh remote tramp update)
+ :homepage   "http://www.gnufans.net/~deego/emacs.html")

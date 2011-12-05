@@ -1,0 +1,9 @@
+(:summary    "Show vertical line (column highlighting) mode"
+ :created    "2002"
+ :updated    "20100202"
+ :license    "GPL-2"
+ :authors    (("Taiki SUGAWARA" . "buzz.taiki@gmail.com"))
+ :maintainer ("Taiki SUGAWARA" . "buzz.taiki@gmail.com")
+ :provided   (vline)
+ :keywords   (editing emulating faces)
+ :wikipage   "VlineMode")

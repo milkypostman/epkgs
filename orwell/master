@@ -1,0 +1,9 @@
+(:summary    "Exchange [C-h] & [DEL] without affecting prefix mappings"
+ :created    "1998"
+ :updated    "1998"
+ :license    "GPL-2"
+ :authors    (("Will Mengarini" . "seldon@eskimo.com"))
+ :maintainer ("Will Mengarini" . "seldon@eskimo.com")
+ :provided   (orwell)
+ :keywords   (abbrev backspace binding del delete emulations erase exchange freedom key\ map keymap orthodox peace slavery swap terminals war)
+ :homepage   "http://www.eskimo.com/~seldon")

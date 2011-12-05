@@ -1,0 +1,27 @@
+(:summary    "Client to get BibTeX entries from the web"
+ :created    "2002"
+ :updated    "20030122"
+ :license    "GPL-2"
+ :authors    (("Nevin Kapur" . "kapur@mts.jhu.edu"))
+ :maintainer ("Nevin Kapur" . "kapur@mts.jhu.edu")
+ :provided   (bibfind)
+ :required   ((("bibtex" bibtex)
+	       ("url" url-cookie)
+	       ("w3" w3-forms)))
+ :keywords   (tex wp www)
+ :commentary "\
+This packages provides an Emacs Lisp interface to obtaining BibTeX
+entries from an online source.  Currently supported sources are
+
+o MathSciNet <http://www.ams.org/mathscinet>
+o Mathematics ArXive <http://front.math.ucdavis.edu/>
+o MRLookup <http://www.ams.org/mrlookup>
+o Zentralblatt <http://www.emis.de/ZMATH/>
+
+On invocation, the function bibfind queries the user for an author
+and title and fetches the BibteX entries corresponding to the
+search results. The result will be a bibtex-mode buffer with the
+search results parsed out.
+
+Note: Access to the some databases is restricted and subscription
+is required.")

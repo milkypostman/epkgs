@@ -1,0 +1,5 @@
+(:created    "2009"
+ :updated    "2009"
+ :provided   (lively)
+ :required   ((("cl" cl)))
+ :wikipage   "Lively")

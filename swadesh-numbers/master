@@ -1,0 +1,5 @@
+(:summary    "Further stuff for swadesh lists"
+ :updated    "20060125"
+ :license    "GPL-2"
+ :provided   (swadesh-numbers)
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/natural-language")

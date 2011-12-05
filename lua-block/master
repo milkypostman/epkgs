@@ -1,0 +1,14 @@
+(:summary    "Highlight matching block"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-2"
+ :authors    (("khiker" . "khiker.mail+elisp@gmail.com"))
+ :maintainer ("khiker" . "khiker.mail+elisp@gmail.com")
+ :provided   (lua-block)
+ :required   ((("lua-mode" lua-mode)))
+ :keywords   (faces languages lua)
+ :wikipage   "LuaBlockMode"
+ :commentary "\
+This is basically a refactored version of ruby-block.el by khiker.
+Some stuff like repeat ... until statements are missing but it
+works well enough.")

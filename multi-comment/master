@@ -1,0 +1,26 @@
+(:summary    "Multi-mode handling of comments and strings"
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-2"
+ :authors    (("Dave Love" . "fx@gnu.org"))
+ :maintainer ("Dave Love" . "fx@gnu.org")
+ :provided   (multi-comment)
+ :required   ((("emacs" newcomment)
+	       ("multi-mode" multi-mode)
+	       ("syntax" syntax)))
+ :keywords   (languages)
+ :homepage   "http://www.loveshack.ukfsn.org/emacs"
+ :commentary "\
+Provides `multi-comment-mode', which is suitable for putting on a
+programming language major mode hook.  It uses the multi-mode
+facility to edit comments and strings in Text mode.  Thus, when
+editing such regions of the buffer, you'll get, for instance, the
+normal text-mode syntax, keymap, abbrevs, and hook functions
+(e.g. flyspell).  Keybindings in the text-mode buffer inherit from
+the base buffer, although they act with the wrong syntax table.
+There's a special case attempt to make M-q, M-j, and C-M-j DTRT by
+acting in the base buffer; there may be others worth doing.
+
+The behaviour depends on functions from newcomment.el, which may
+not be robust and rely on `comment-start-skip' being defined in the
+base major mode.")

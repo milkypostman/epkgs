@@ -1,0 +1,128 @@
+(:license    "GPL-2"
+ :provided   (active-menu)
+ :required   ((("emacs" timer)))
+ :homepage   "http://www.skamphausen.de/cgi-bin/ska/Software"
+ :wikipage   "ActiveMenu"
+ :commentary "\
+Prerequisites:
+
+We made active-menu with the following emacsen:
+XEmacs Value: 21.4 (patch 20) \"Double Solitaire\" XEmacs Lucid
+Gnu Emacs 21.4.1
+Please let us know if other versions work.
+
+
+Installation:
+
+put this file in your load-path and the following in your init
+file (~/.emacs or ~/.xemacs/init.el) if you want to use the
+customisation facility:
+
+(require 'active-menu)
+
+If you turn active-menu on and off frequently, you might want to use
+
+(autoload 'active-menu
+          \"active-menu\"
+          \"Show menu only when mouse is at the top of the frame.\"
+          t)
+
+instead. Now you can toggle active-menu with M-x active-menu. There
+are two different backends available one uses timers to check the
+current mouse position and one tracks the mouse movements.  The
+former is probably better suited for Gnu Emacs whereas the latter
+has been in daily use for years in various versions of XEmacs and
+can be considered stable there.
+
+If your frames change the height when the menu is toggled, try to
+find a suitable value for `active-menu-frame-compensation'. If your
+lines keep jumping up and down adjust
+`active-menu-scroll-compensation'.
+
+
+History:
+2007-03/04  Stefan Kamphausen (mostly)
+        * Friendly fork/take-over.
+        * Gnu Emacs compat.
+        * Totally new timer backend.
+        * Code-reorg and renaming for both backends.
+        * New Webhome
+        * Scroll compensation
+        * Version 2.0.0
+2002-07-13  Claus Brunzema
+        * More customisation stuff
+        * Version 1.0.0
+2002-07-12  Claus Brunzema
+        * Restricted toggling of the menubar to the
+          currently selected frame
+        * Customisation fixes
+        * Redraw fixes
+2002-06-15  Claus Brunzema
+        * Small cleanups
+2002-06-07  Claus Brunzema
+        * Fixed and documented the require-way
+2002-06-06  Claus Brunzema
+        * Code cleanup.
+        * Version 0.9.7 released into public
+2002-06-02  Claus Brunzema
+        * Frame compensation
+2002-05-30  Claus Brunzema
+        * Big rewrite by Claus Brunzema
+2002-05-28  Stefan Kamphausen
+        * Idea and initial implementation
+
+ToDo:
+
+- save and restore menubar-visible-p
+- maybe show different menus if you hit different areas on the top
+  border.
+
+Bugs and Ugliness:
+
+- The menubar stays visible if you pop up some menus and click
+  outside all menus to cancel any selection. It is removed after
+  the first mouse move or key press.
+- Interaction with accelerate-menu looks, er, strange (but you can
+  get used to it).
+- Gnu Emacs with tracking does not yet have the
+  post-command-function 
+- Gnu Emacs with tracking showed an error once when wiggling the
+  mouse quickly. 
+- See FIXMEs in the code below.
+- XEmacs reduces the size of the top window when removing the
+  menubar but does not increase it again when showing it.  This
+  leads to a shrinking top window when using active menu
+  repeatedly. 
+- Gnu Emacs calculates (mouse-pixel-position) relativ to the
+  selected frame whereas XEmacs calculates it relative to the
+  window the mouse is in.  If that were not the case we could just
+  use that function everywhere.
+- Mouse events in Gnu Emacs take care of the fringe wheras
+  `mouse-pixel-position' does not.  Try something like the
+  following in Gnu Emacs and watch the echo area
+ (defun synthesize-mouse-motion-event ()
+   (let* ((mouse-pos (mouse-pixel-position))
+          (mouse-x (cadr mouse-pos))
+          (mouse-y (cddr mouse-pos))
+          (buffer-pos (point)))
+     (list 'mouse-movement
+           (list
+            (selected-window)
+            buffer-pos
+            (cons mouse-x mouse-y)
+            nil))))
+ (defun display-mouse-information (event)
+   (interactive \"e\")
+   (message \"%s  -- %s\" event (synthesize-mouse-motion-event)))
+ (setq track-mouse t)
+ (define-key global-map [mouse-movement] 'display-mouse-information)
+- But then... the mouse event in Gnu Emacs has it's y-coordinate
+  relative to the window, which does not match the behaviour of
+  `mouse-pixel-position'.
+- At least in Gu Emacs there seems to be no way of finding out the
+  whether the mouse has left the frame or whether it is on the menu
+  bar.
+- From reading newsgroup postings I (SK) get the impression that
+  using  [mouse-movement]-binding is not the way to go.   That's
+  why I started the timer-backend in the first place.  But
+  then... the tracking backend seems to work quite well.")

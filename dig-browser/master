@@ -1,0 +1,54 @@
+(:summary    "A dired-style DNS zone browser"
+ :created    "200214"
+ :updated    "20030101"
+ :license    "GPL-2"
+ :authors    (("Ian Zimmerman"))
+ :maintainer ("Ian Zimmerman")
+ :provided   (dig-browser)
+ :keywords   (communication domain network zone)
+ :commentary "\
+Originally I had the idea of wrapping dig (actually a clone whose output
+is easier to parse) in a simple Gtk GUI program with just a clickable
+tree control to represent the DNS info.  But, it seemed a waste, because
+there's really nothing graphical to this.  And dired provided an excellent
+example to follow.
+
+$Id: dig-browser.el,v 1.11 2003/01/01 07:40:49 itz Exp $
+
+$Log: dig-browser.el,v $
+Revision 1.11  2003/01/01 07:40:49  itz
+Don't use first as it seems additional work to compile right.
+
+Revision 1.10  2003/01/01 07:37:55  itz
+Proper sorting implemented!  Thanks go to Thien-Thi Nguyen
+<[EMAIL PROTECTED]> for an initial idea and encouragement, but even more
+thanks to Uri Guttman <[EMAIL PROTECTED]> from whose prototypical
+Sort::Records perl module I took the idea of temporarily prefixing the
+data with their sort keys.
+
+Revision 1.9  2003/01/01 06:28:20  itz
+Prefer the master server for a zone, if known.
+
+Revision 1.8  2002/12/20 21:42:05  itz
+Tie minor loose ends: kill auxiliary buffer after I'm finished with
+it, don't require other packages because the things I use in them are
+autoloaded, and use my own variable for dig program
+
+Revision 1.7  2002/12/19 22:20:14  itz
+Add reverse domain browsing (not very useful because rarely delegated :-\\ )
+
+Revision 1.6  2002/12/19 19:28:02  itz
+Highlight subdomain NS records.  Expand or browse them when clicked.
+
+Revision 1.5  2002/12/19 17:56:36  itz
+Bulletproof interactive input code, acting on suggestion by
+Francesco Potorti` <[EMAIL PROTECTED]>
+
+Revision 1.4  2002/12/19 08:02:22  itz
+Add menu keymap and imenu support
+
+Revision 1.3  2002/12/19 07:21:20  itz
+Sorting works.
+
+Revision 1.2  2002/12/19 04:28:20  itz
+Rewrite subdomain stuff to use text properties instead of markers, to")

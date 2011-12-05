@@ -1,0 +1,55 @@
+(:summary    "Major mode for editing ActionScript 3 code"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Stefan A. van der Meer" . "stefanvandermeer@gmail.com"))
+ :maintainer ("Stefan A. van der Meer" . "stefanvandermeer@gmail.com")
+ :provided   (as3-simple-mode)
+ :required   ((("js" js)))
+ :keywords   (actionscript languages)
+ :homepage   "https://github.com/svdm/as3-simple-mode"
+ :commentary "\
+as3-mode is a simple major mode for editing ActionScript 3 code, deriving
+from js-mode (js.el, included with Emacs). js-mode already does the right
+thing with regards to indentation for AS3 code (not surprising considering
+their similarity), so this mode only adds some AS3-specific fontification.
+
+Some alternative modes for AS3 you might want to look at:
+
+- as3-mode.el by Aemon Cannon (https://github.com/aemoncannon/as3-mode/):
+  Depends on flyparse for live parsing, making it more heavyweight, but it
+  can offer more feedback. Has indentation bugs (on single-line block
+  statements without braces).
+
+- ecmascript-mode.el by David Lindquist (see EmacsWiki.org)
+  Compatible with all ECMAScript-derived languages including AS3, but has
+  font/indent bugs (fontifies keywords in comments, indents \"for each\" blocks
+  wrong, etc).
+
+- actionscript-mode.el by Austin Haas (see EmacsWiki.org)
+  More lightweight than as3-mode, but defines its own set of faces rather
+  than using standard font-lock faces. Borrows indentation from as3-mode,
+  along with the bugs.
+
+All of them have some issues that I found annoying, hence this mode. It aims
+to avoid indentation issues by depending on cc-mode, made easy because
+js-mode already configures cc-mode's indentation the way we need it.
+
+Some fontification of built-ins is borrowed from ecmascript-mode.el.
+
+Tested only on Emacs 24.
+
+Known issues:
+
+- Some parts of js-mode are used that are meant to be private (prefixed with
+  \"js--\").
+
+- Certain syntax for namespace usage is not fontified
+  (e.g., foo.mx_internal::barField.baz)
+
+- Identifiers in package and class declarations are not fontified yet.
+
+- Function definitions that do not specify a return type are underlined as
+  warning, even if you are not compiling in strict mode and hence do not
+  require return types.
+
+- AS3-specific builtins are not fontified, even very common ones.")

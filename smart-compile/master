@@ -1,0 +1,19 @@
+(:summary    "An interface to `compile'"
+ :created    "19981227"
+ :updated    "2009"
+ :license    "GPL-2"
+ :authors    (("Seiji Zenitani" . "zenitani@mac.com"))
+ :maintainer ("Seiji Zenitani" . "zenitani@mac.com")
+ :provided   (smart-compile)
+ :keywords   (tools unix)
+ :homepage   "http://homepage.mac.com/zenitani/comp-e.html"
+ :wikipage   "SmartCompile"
+ :commentary "\
+This package provides `smart-compile' function.
+You can associates a particular file with a particular compile functions,
+by editing `smart-compile-alist'.
+
+To use this package, add these lines to your .emacs file:
+    (require 'smart-compile)
+
+Note that it requires emacs 21 or later.")

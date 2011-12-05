@@ -1,0 +1,12 @@
+(:summary    "Automatic typographical punctuation marks"
+ :created    "2003"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("Oliver Scholz" . "epameinondas@gmx.de"))
+ :maintainer ("Oliver Scholz" . "epameinondas@gmx.de")
+ :provided   (typopunct)
+ :keywords   (wp)
+ :commentary "\
+This package provides the buffer local minor mode TypoPunct which
+helps inserting typographical punctuation marks.  See the docstring
+of the function `typopunct-mode'.")

@@ -1,0 +1,18 @@
+(:license    "GPL-2"
+ :provided   (cpan)
+ :required   ((("anything" anything)
+	       ("browse-url" browse-url)
+	       ("cl" cl)
+	       ("rx" rx)
+	       ("url" url-util)
+	       ("woman" woman)))
+ :keywords   (perl)
+ :homepage   "https://github.com/imakado/cpan.el"
+ :commentary "\
+Tested on Emacs 22
+
+you need these commands:
+'perl', 'perldoc', 'zcat'
+
+to check PATH,
+M-x getenv PATH")

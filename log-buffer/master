@@ -1,0 +1,7 @@
+(:summary    "Log buffer utils"
+ :license    "GPL-2"
+ :authors    (("Cedric Lallain" . "kandjar76@hotmail.com"))
+ :maintainer ("Cedric Lallain" . "kandjar76@hotmail.com")
+ :provided   (log-buffer)
+ :keywords   (log)
+ :wikipage   "LogBuffer")

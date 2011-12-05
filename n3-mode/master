@@ -1,0 +1,5 @@
+(:summary    "Mode for Notation 3"
+ :created    "2007"
+ :updated    "20071215"
+ :homepage   "http://larve.net/people/hugo/2003/scratchpad/NotationThreeEmacsMode.html"
+ :wikipage   "N3Mode")

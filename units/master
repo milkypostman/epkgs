@@ -1,0 +1,11 @@
+(:summary    "Units conversion"
+ :created    "20020916"
+ :updated    "2002"
+ :license    "GPL-1"
+ :provided   (units)
+ :keywords   (conversion)
+ :commentary "\
+Dirty hack to do units conversion using units.dat from units package.
+likely buggy. Fixes/patches/flames/comments are welcome.
+
+only tested on ntemacs 21.2")

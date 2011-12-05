@@ -1,0 +1,47 @@
+(:summary    "Orgmode-formatted READMEs for your ELisp"
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-3"
+ :authors    (("Thomas Kappler" . "tkappler@gmail.com"))
+ :maintainer ("Thomas Kappler" . "tkappler@gmail.com")
+ :provided   (h2o)
+ :keywords   (documentation github header help lisp orgmode readme)
+ :homepage   "https://github.com/punchagan/h2o"
+ :commentary "\
+The git-based source code hosting site <http://github.com> has
+lately become popular for Emacs Lisp projects. Github has a feature
+that displays files named \"README[.suffix]\" automatically on a
+project's main page. If these files are formatted in Orgmode, the
+formatting is interpreted. See
+<http://github.com/guides/readme-formatting> for more information.
+
+Emacs Lisp files customarily have a header in a fairly standardized
+format. h2o extracts this header, re-formats it to Orgmode,
+and writes it to the file \"README.org\" in the same directory. If you
+put your code on github, you could have this run automatically, for
+instance upon saving the file or from a git pre-commit hook, so you
+always have an up-to-date README on github.
+
+It recognizes headings, the GPL license disclaimer which is
+replaced by a shorter notice linking to the GNU project's license
+website, lists, and normal paragraphs. Lists are somewhat tricky to
+recognize automatically, and the program employs a very simple
+heuristic currently.
+
+Dependencies:
+None.
+
+Installation:
+(require 'h2o), then you can call h2o-generate manually. I
+have not found a way to call it automatically that I really like,
+but here is one that works for me:
+
+    (require 'h2o)
+    (dir-locals-set-class-variables
+     'generate-README-with-h2o
+     '((emacs-lisp-mode . ((h2o-generate-readme . t)))))
+    (dolist (dir '(\"~/Projects/wpmail/\" \"~/Projects/h2o/\"))
+      (dir-locals-set-directory-class
+       dir 'generate-README-with-h2o))
+    (add-hook 'after-save-hook 
+              '(lambda () (if (boundp 'h2o-generate-readme) (h2o-generate))))")

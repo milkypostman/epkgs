@@ -1,0 +1,142 @@
+(:summary    "Eclipse compiler as a compile server for JDEE"
+ :created    "20060222"
+ :updated    "2007"
+ :license    "GPL-2"
+ :authors    (("Suraj Acharya" . "sacharya@cs.indiana.edu"))
+ :maintainer ("Suraj Acharya" . "sacharya@cs.indiana.edu")
+ :provided   (jde-eclipse-compiler-server)
+ :required   ((("flymake" flymake)
+	       ("jdee" jde jde-compile)))
+ :keywords   (ecj eclipse flymake java jde-mode)
+ :commentary "\
+* Eclipse java compiler
+
+This library adds the option of using the eclipse java compiler as
+a compile server to `jde-compiler'.  See the section for \"Using the
+batch compiler\" at
+http://help.eclipse.org/help32/index.jsp?topic=/org.eclipse.jdt.doc.isv/guide/jdt_api_compile.htm
+for a description of the eclipse batch compiler and a list of all
+the \"warn\" options that it can take.
+
+Usage:
+
+To use this library, ensure that this file in your load path and
+add the following code to your .emacs:
+(require 'jde-eclipse-compiler-server)
+
+Customizing jde-compiler after this should give you a buffer that looks like this:
+
+Operate on everything in this buffer:
+ Set for Current Session Save for Future Sessions
+ Reset Reset to Saved Erase Customization   Finish
+
+Jde Compiler: Hide Value
+Compiler type
+( ) javac
+( ) javac server
+( ) eclipse java compiler server
+    Path to ecj.jar (or jdt core jar):
+(*) jikes
+    Path to jikes: /opt/jikes-1.22/jikes
+   State: this option has been changed outside the customize buffer.
+
+Note the new option for \"eclipse java compiler server\".  After
+selecting this option you will also need to specify the location of
+the eclipse java compiler classes.
+
+If you've installed eclipse locally then this is the jdtcore.jar
+under <eclipse dir>/plugins/org.eclipse.jdt.core_x.x.x/, where
+x.x.x depends on the version of eclipse you have.
+
+If you don't have eclipse you can download just the JDT
+compiler.  Go to http://download.eclipse.org/eclipse/downloads/ and
+pick the release you want, the latest release is usually stable
+enough to use.  Once you get to the downloads page for the release,
+scroll down to find the link to download the \"JDT Core Batch
+Compiler\".  The 1 MB ecj.jar file is all you need to download.
+
+Check that you have the correct jar by trying to run the compiler
+from a command line like so:
+java -cp <path to jar> org.eclipse.jdt.internal.compiler.batch.Main
+This should print out a usage message for the \"Eclipse Java Compiler\".
+
+This library changes the format of the jde-compiler variable so you
+might encounter problems the first time you switch to using this
+library or the first time you switch back you have a value for
+jde-compiler customized using the old customizer.
+
+If you see a customization buffer like this :
+
+ Set for Current Session Save for Future Sessions
+ Reset Reset to Saved Erase Customization   Finish
+
+jde-compiler: Hide Value
+'((\"eclipse java compiler server\" \"/org.eclipse.jdt.core_3.0.0/org.eclipse.jdt.core_3.1.1.jar\"))
+   State: this option has been set and saved.  (mismatch)
+
+That is, there are no radio buttons to select, set the value of
+jde-compiler manually using the minibuffer to its default.  If you
+are not using jde-eclipse-compiler-server the default is '(\"javac
+server\" \"\"), and if you are it is '(\"javac server\")
+
+* Flymake
+
+Flymake is a minor Emacs mode performing on-the-fly syntax
+checks. It is included in Emacs 23 onwards. For earlier versions
+you can get the latest version from
+http://flymake.sourceforge.net/. It is setup to use the new
+compile.el from Emacs 23 by default, so you might have to comment
+out a line which references `compilation-error-regexp-alist-alist'
+and uncomment the previous line which uses
+`compilation-error-regexp-alist' instead.
+
+You have two options to hook the eclipse java compiler into flymake
+to get automatic error/warning information in your source buffers:
+(To use flymake with ecj you first have to select \"eclipse java
+compiler server\" as your jdee compiler.)
+
+1) jde-ecj-flymake-init : This is the simple, robust and painfully slow
+   method, in which flymake forks a new jvm process each time it
+   decides to error check the buffer.
+
+To use this funtion set the java line in
+`flymake-allowed-file-name-masks' to 
+(\\\"\\\\.java\\\\'\\\" jde-ecj-flymake-init jde-ecj-flymake-cleanup)\"
+
+2) jde-ecj-server-flymake-init: This method involves flymake
+   sending a compile command to the eclipse java compiler server in
+   the JDEE bsh process, detecting when the compiler is done
+   printing errors and warnings and then handing control of the bsh
+   process back to JDEE. This option is much faster than 1) and
+   compares in speed the jikes flymake integration
+   (http://www.emacswiki.org/cgi-bin/wiki/jde-flymake.el) but with
+   java 1.5 syntax support and a larger set of warn
+   options. However, it requires some significant changes to
+   `flymake-process-filter' and
+   `flymake-start-syntax-check-process' and so is more likely to be
+   flaky, and might cause problems if you use flymake with non-java
+   buffers.
+
+To use this funtion set the java line in
+`flymake-allowed-file-name-masks' to
+(\\\"\\\\.java\\\\'\\\" jde-ecj-server-flymake-init jde-ecj-flymake-cleanup)\"
+
+The default flymake behaviour is to change the background of error
+lines to light pink, and for warning lines to light blue. Customize
+the faces `flymake-errline' and `flymake-warnline' to change this
+behavior. Red and yellow underlines for errors and warnings work
+well:
+
+(custom-set-faces
+...
+ '(flymake-errline ((((class color)) (:underline \"OrangeRed\"))))
+ '(flymake-warnline ((((class color)) (:underline \"yellow\"))))
+...
+
+
+ChangeLog
+0.3 - bug fixes from James Ahlborn <jahlborn@healthmarketscience.com>
+      deleted unnecessary \\n at the end of a bsh-eval string that was causing bsh-buffer-eval to fail occasionally. 
+0.2 - Eclipse 3.2 and later support the -Xemacs option which makes
+      it possible to the hook eclipse compiler into flymake.
+0.1 - Initial version")

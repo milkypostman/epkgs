@@ -1,0 +1,27 @@
+(:summary    "Integrate auto-install.el with anything.el"
+ :created    "20090209"
+ :updated    "20100329"
+ :license    "GPL-3"
+ :authors    (("Andy Stewart" . "lazycat.manatee@gmail.com"))
+ :maintainer ("Andy Stewart" . "lazycat.manatee@gmail.com")
+ :provided   (anything-auto-install)
+ :required   ((("anything" anything)
+	       ("auto-install" auto-install)))
+ :keywords   (anything auto-install)
+ :commentary "\
+Integrate auto-install.el with anything.el.
+
+You can use command `anything-auto-install-from-emacswiki'
+install package from EmacsWiki.org.
+
+You can use comamnd `anything-auto-install-from-library'
+update library.
+
+You can also make this package integrate with `anything',
+just setup like below:
+
+(setq anythign-sources
+      (list
+       anything-c-source-auto-install-from-emacswiki
+       anything-c-source-auto-install-from-library
+       ))")

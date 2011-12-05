@@ -1,0 +1,17 @@
+(:summary    "Anything-sources and some utilities for GNU R"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :provided   (anything-R)
+ :required   ((("anything" anything)
+	       ("ess" ess-site)))
+ :keywords   (anything convenience gnu\ r)
+ :commentary "\
+It is necessary to Some Anything and ESS Configurations for using R before
+
+Installation:
+
+Put the anything-R.el, anything.el and ESS to your
+load-path.
+Add to .emacs:
+(require 'anything-R)")

@@ -1,0 +1,7 @@
+(:summary    "Enforce key-bind of Emacs"
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-2"
+ :provided   (drill-instructor)
+ :homepage   "http://wiki.github.com/k1LoW/emacs-drill-instructor"
+ :wikipage   "DrillInstructor")

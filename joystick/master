@@ -1,0 +1,107 @@
+(:summary    "Lisp part of joystick interface for Emacs"
+ :created    "2007"
+ :updated    "2008"
+ :license    "GPL-2"
+ :authors    (("John C. G. Sturdy" . "john@cb1.com"))
+ :maintainer ("John C. G. Sturdy" . "john@cb1.com")
+ :provided   (joystick)
+ :keywords   (hardware)
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/hardware"
+ :wikipage   "JoyStick"
+ :commentary "\
+This listens (and occasionally talks) to a companion process which
+is implemented by joylisp.c.
+
+It makes the joystick events appear like extra function keys.  A
+basic set of bindings is included (search this file for \"Bindings\") .
+
+A help function attempts to draw a typical gamepad and label it
+with the bindings.  On a typical gamepad, this might be the button
+labelled \"10\" or \"BaseBtn4\".
+
+More detail:
+
+The companion process can be started and stopped by
+`joystick-start' and `joystick-stop'.  `joystick-start' has the
+rudiments of multiple joystick support (it lets you select the
+device, and give it a prefix for the stuff it sends back to Emacs)
+but doesn't as yet follow through on that -- for example, there is
+just a plain variable for the joystick process.  But I do intend to
+do that sometime, unless someone else does it first.
+
+The joystick communication process sends s-exps to Emacs, which
+`eval's them in a process filter.  Mostly, they run a function
+`jse' (standing for JoyStick Event), which sticks its argument (the
+event) into the unprocessed event queue.  This makes them look a
+bit like function keys, and fortunately Emacs isn't limited to just
+things which are defined as function keys; any symbol in the event
+queue gets used that way (like, for example, those invented as menu
+entries) .  You define them in the same way as function keys.
+There's a starter set at the end of this file, designed for use
+with a \"Gamepad\"-style controller.
+
+Buttons are sent as \"-down\" and \"-up\" events, but they also act as
+modifiers to each other.  If a button has been used as a modifier
+(i.e. another one was pressed while it was down), it sends a
+\"-release\" event instead of \"-up\".  This way, you can use the same
+buttons as modifiers and commands, according to whether or not they
+have actually modified anything by the time they were released.
+
+Modifier names are abbreviated versions of the button names
+(uppercase letters, lowercase letters immediately following
+uppercase letters, digits are all kept, the rest are dropped).  The
+modifier names come before the button name, in an attempt to align
+with the Emacs practice of putting \"C-\" and \"M-C-\" etc at the start
+of key names.
+
+For example, you can get event sequences like these:
+
+      Trigger-down
+      Trigger-up
+
+      Trigger-down
+      Tr-TopBtn-down
+      Tr-TopBtn-up
+      Trigger-release
+
+Note that if you're using \"-up\" codes for chording, it makes a
+difference which button you take your finger off last.  This makes
+for a potentially extremely subtle chording keyboard!
+
+Axes are sent as \"-next\" and \"-previous\" events, and the rate at
+which they are sent depends on how far the joystick has been pushed
+in that direction.  Modifiers also apply to them.
+
+There are a few other s-exps that the joystick communication
+process sends, but these are mostly for information and some are
+used \"internally\" by this package.  For example, as it initializes,
+the joystick communication process reports back what buttons and
+axes it has; the Lisp code collects those up for use as completion
+tables.
+
+To see for yourself what it sends, run \"joylisp\" directly from a
+shell, and watch its output as you press things.  Type \"quit\" at it
+to make it go away.
+
+I've observed that occasionally my joystick \"disappears\" from the
+system, and comes back as \"/dev/js1\" instead of \"/dev/js0\".
+There's some code at the top of `joystick-start' to try to handle
+things like this.
+
+You can also send commands to control the joystick communication
+process, using `joystick-command'.  This lets you configure the
+sensitivity of each channel, and various things like that.
+
+See the comment at the top of joylisp.c for what the commands are.
+
+Some of the Lisp commands in this package (`joystick-set-rate',
+etc) are packaged versions of `joystick-command'.
+
+Things which it might be good to do to this:
+
+(1) Complete the multiple joystick support
+
+(2) Allow the connection to the joystick communication process to
+    work over the network, so people can put their joystick on their
+    X-server rather than having to have it locally on the host on which
+    their Emacs is running")

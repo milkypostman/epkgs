@@ -1,0 +1,20 @@
+(:summary    "Select non-contiguous regions"
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-2"
+ :provided   (multiselect)
+ :keywords   (gui user)
+ :homepage   "http://www.skamphausen.de/cgi-bin/ska/multiselect"
+ :commentary "\
+Select non-contiguous regions or lines and later insert the
+concatenation of these or delete the selected regions.
+
+ToDo
+* Testing during daily usage.
+* Customize at least the face (well, yes, might be overkill).
+
+Changes
+Version 1.1
+   added multiselect-delete-selection
+Version 1.0
+   Initial Release")

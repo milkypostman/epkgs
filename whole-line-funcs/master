@@ -1,0 +1,10 @@
+(:summary    "Triple-click like line marking functions"
+ :created    "20110131"
+ :updated    "20110203"
+ :license    "GPL-3"
+ :authors    (("Le Wang"))
+ :maintainer ("Le Wang")
+ :provided   (whole-line-funcs)
+ :required   ((("cl" cl)))
+ :keywords   (convenience editing region whole-line)
+ :homepage   "https://github.com/lewang/le_emacs_whole_line_funcs")

@@ -1,0 +1,6 @@
+(:summary    "Interactively flip between recently visited buffers"
+ :created    "2009"
+ :updated    "2009"
+ :provided   (iflipb)
+ :homepage   "http://hg.rosdahl.net/iflipb"
+ :wikipage   "iflipb")

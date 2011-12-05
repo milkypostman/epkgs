@@ -1,0 +1,40 @@
+(:summary    "Set up `mode-line-position'"
+ :created    "20060914"
+ :updated    "20110104"
+ :license    "GPL-2"
+ :authors    (("Drew Adams"))
+ :maintainer ("Drew Adams")
+ :provided   (modeline-posn)
+ :keywords   (column mode-line region)
+ :wikipage   "ModeLinePosition"
+ :commentary "\
+Change variable `mode-line-position' so that the following changes
+ are made to the mode line:
+
+ 1. Highlight the column number when the current column is greater
+    than limit `modelinepos-column-limit'.  Face
+    `modelinepos-column-warning' is used for the highlighting.
+
+ 2. Make `size-indication-mode' show the size of the region,
+    instead of the buffer size, whenever the region is active.
+
+ Note: Loading this library changes the default definition of
+       `mode-line-position'.
+
+ To use this library, put this in your Emacs init file (~/.emacs):
+
+   (require 'modeline-posn)
+
+ To show the column number highlighting, turn on Column Number
+ mode.  You can do that in your Emacs init file this way:
+
+   (column-number-mode 1)
+
+ To show the buffer and region size indication in the mode line,
+ turn on Size Indication.  You can do that in your Emacs init file
+ this way:
+
+   (size-indication-mode 1) ; Turn on Size Indication mode.
+
+ You can customize `modelinepos-column-limit' or bind it to
+ different values for different modes.")

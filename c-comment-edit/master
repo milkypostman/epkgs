@@ -1,0 +1,13 @@
+(:summary    "Edit C comments"
+ :created    "1987"
+ :updated    "1998"
+ :license    "GPL-1"
+ :authors    (("Kyle Jones" . "kyle_jones@wonderworks.com"))
+ :maintainer ("Kyle Jones" . "kyle_jones@wonderworks.com")
+ :provided   (c-comment-edit)
+ :keywords   (languages)
+ :homepage   "http://www.wonderworks.com"
+ :commentary "\
+Send bug reports to kyle_jones@wonderworks.com
+
+The command c-comment-edit is the entry point for this library.")

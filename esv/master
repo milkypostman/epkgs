@@ -1,0 +1,6 @@
+(:license    "GPL-2"
+ :provided   (esv)
+ :required   ((("calendar" calendar)
+	       ("url" url)
+	       ("xml" xml)))
+ :wikipage   "EsvMode")

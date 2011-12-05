@@ -1,0 +1,115 @@
+(:summary    "A fast Lynx-based browser for Emacs"
+ :created    "2007"
+ :updated    "20070302"
+ :license    "GPL-2"
+ :provided   (nero)
+ :required   ((("cl" cl)))
+ :homepage   "http://code.google.com/p/nero-el"
+ :commentary "\
+Nero is a fast interactive web browser that runs under Emacs.  It
+uses 'lynx -dump' to generate page content.  Navigation is
+typically done via numbered links, a la Conkeror.  See
+`nero-follow-link'.  Note that cookies that have been set by Lynx
+continue to apply to Nero.  Nero itself does not set cookies.
+
+Better-than-just-browsing interaction with various useful web
+services is done via elvi, a la Surfraw.  The variable `nero-elvi'
+contains a list of the currently available elvi.  See
+`nero-defelvis' for instructions on how to write your own elvi.
+Elvi are conveniently accessed using the function `nero-query'.
+
+Fast access to commonly used pages is available through a
+programmable hotlist, a la webjump.  The variable `nero-jumps'
+contains a list of the currently available jumps.  See
+`nero-defjump' for instructions on how to write your own jumps.
+Jumps are conveniently accessed using the function `nero-jump'.
+
+Standard bookmarks are also supported, see the variable
+`nero-bookmarks' for details.
+
+Facilities for \"tabbed browsing\" a la (insert name of browser) are
+available.  Use `nero-new-tab' to make a new tab and
+`nero-show-tabs' (and/or `nero-next-tab', `nero-previous-tab') to
+switch between tabs.
+
+Editing source code for remote pages is supported; see
+`nero-edit-source'.  Viewing the GCIDE is partially supported; see
+`nero-browse-url-force-html' (note: I am planning to introduce
+improved GCIDE browsing in a subsequent emacs package).
+
+Nero saves pages that have been browsed for later use.  This means
+that reloading must be specifically requested; otherwise, moving
+around through the pages that have already been loaded once is much
+faster.  One simple further use of the saved information is
+provided by `nero-collect-matching-pages', which is can be used to
+search for pages you have browsed that match a given regexp.
+Future versions of nero may further capitalize on the presence of
+this saved information.
+
+Nero provides facilities that let you easily plug in Emacs Lisp
+code to do the following two things:
+
+ - to change the way pages display; or,
+ - to automatically browse the web for you.
+
+An example of a function that will adjust the way pages display is
+`nero-oddmuse-recent-changes-handler', which I use to simplify the
+presentation of OddMuse recent changes pages.
+
+An example of a function with programmatic web browsing behavior is
+`nero-query-mapquest', which quickly finds and displays maps using
+the mapquest service, cutting out several steps from the usual
+interactive routine for achieving the same result.
+
+If you want to write you own extensions, these examples may help;
+but you should also see `nero-browse-url', the main function for
+display, and `nero-basic-process-processing', the point of entry
+for new content in the Nero recordkeeping system, for key details.
+
+If you are just getting started using Nero, I would advise reading
+over the user-modifiable variables (those with docstrings marked
+with a star, below) and settting them to suit your taste and
+environment.  You should also run `nero-mode-map' from the nero
+buffer and get to know the key commands.  The examples below should
+be enough to get you started, if you have everything configured
+properly (and if not, you should find out as you try the examples).
+
+Example usage:
+
+M-x nero-browse-url RET http://www.roman-emperors.org/nero.htm RET
+7 RET
+b
+C-s otho C-a RET
+o
+M-x nero-query-wikipedia RET fiddle rome RET
+11 M-x nero-download-link RET ~/roman-empire.html
+C-x C-f ~/roman-empire.html
+M-x nero-preview-current-buffer RET
+,
+M-x nero-browse-url RET http://www.gnu.org/graphics/gnu-head.jpg RET
+M-x nero-query-mapquest-local RET 9th and Hennepin RET [requires xv]
+M-x nero-jump RET aster TAB RET
+...
+
+Support:
+
+Checks to: 421 Cedar Ave. #11, Minneapolis, MN, 55454.
+Ideas for works to be done on commission: see AsteroidMeta.
+Thanks.
+
+Ideas for future work:
+
+* decode japanese etc.
+  - I tried to do this, but ran into snags.  It shouldn't be
+    hard, fetch headers and set codings, but I'm going to save
+    it for now.
+
+* set things up so that several nero windows can be used at once.
+  - (But tabs seem to work fine for me.)
+
+* Maybe add some \"session management\" features for storing
+  histories between sessions.
+  - Could be fun; should be totally modular wrt the current code.
+  - maybe no page should be deleted from the multiverse, but
+    rather, when they would be deleted they could be moved
+    to a hidden \"unused\" thread.")

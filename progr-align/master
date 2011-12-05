@@ -1,0 +1,7 @@
+(:created    "2001"
+ :updated    "2001"
+ :license    "GPL-2"
+ :authors    (("Stefan Reichoer," . "stefan@xsteve.at"))
+ :maintainer ("Stefan Reichoer," . "stefan@xsteve.at")
+ :provided   (progr-align)
+ :homepage   "http://www.xsteve.at/prg/emacs")

@@ -1,0 +1,19 @@
+(:summary    "Make new file/recent menu and list recent visited files"
+ :created    "2001"
+ :updated    "2001"
+ :license    "GPL-2"
+ :authors    (("Patrick Gundlach" . "patrick@gundla.ch"))
+ :maintainer ("Patrick Gundlach" . "patrick@gundla.ch")
+ :provided   (recent)
+ :keywords   (convenience)
+ :homepage   "http://levana.de/emacs"
+ :commentary "\
+put in an emacs load path and write the following line into your
+.emacs file: 
+
+(require 'recent)
+
+This file will add a submenu to the Files menu with the last files
+visited. It also gives a command line interface invoked with 
+M-x recent
+Tested only with emacs, not xemacs! Please send me bug-reports!")

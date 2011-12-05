@@ -1,0 +1,5 @@
+(:authors    (("ffrances"))
+ :maintainer ("ffrances")
+ :provided   (diameter-avp)
+ :required   ((("hex-util" hex-util)))
+ :wikipage   "diameter-avp")

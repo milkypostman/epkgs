@@ -1,0 +1,42 @@
+(:summary    "An enhancement to `display-completion-list'"
+ :created    "2000"
+ :updated    "2000"
+ :license    "GPL-2"
+ :authors    (("Yuji Minejima" . "ggb01164@nifty.ne.jp"))
+ :maintainer ("Yuji Minejima" . "ggb01164@nifty.ne.jp")
+ :provided   (completing-help)
+ :keywords   (help local)
+ :homepage   "http://homepage1.nifty.com/bmonkey/emacs/index-en.html"
+ :wikipage   "CompletingHelp"
+ :commentary "\
+This package enhances the completion mechanism of Emacs by
+allowing you to display information on completions.
+
+While entering an argument to a command which supports completion
+in the minibuffer, by pressing `?', you see possible completions
+of what you've entered so far. This is one of the standard features
+of Emacs.
+
+With this package, you can see not only possible completions, but
+also information on them (e.g. docstrings of elisp variables.)
+
+This package directly supports the following standard commands:
+
+    bookmark-jump            (C-x r b)
+    customize-group          (M-x customize-group, also on the menu-bar)
+    customize-option         (M-x customize-option, also on the menu-bar)
+    describe-function        (C-h f)
+    describe-variable        (C-h v)
+    execute-extended-command (M-x)
+    find-function            (M-x find-function)
+    find-variable            (M-x find-variable)
+    setenv                   (M-x setenv)
+    where-is                 (C-h w)
+
+As for the other commands, this package can guess, to some extent,
+what's relevant as help information, based on knowledge of the type
+of argument you are entering, so your custom commands and other
+standard commands might work right off the bat without requiring
+any configuration on your part. You can also add support for a command
+by defining a \"group\" (a property list) for it,
+see \"How this package works\" section.")

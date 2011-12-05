@@ -1,0 +1,97 @@
+(:summary    "Transform REs written in a Lisp like notation to strings"
+ :created    "1999"
+ :updated    "19991231"
+ :license    "GPL-2"
+ :authors    (("Detlev Zundel" . "detlev.zundel@stud.uni-karlsruhe.de"))
+ :maintainer ("Detlev Zundel" . "detlev.zundel@stud.uni-karlsruhe.de")
+ :keywords   (lisp matching)
+ :commentary "\
+$Id: lisp-re.el,v 1.1 1999/12/31 18:54:54 dzu Exp $
+
+The `flat string representation' for a regular expression can
+sometimes be complicated when a notation allowing for clearer
+grouping and more easily remembered operators could be
+`structurally clearer'.
+
+For a Lisp programmer clearly such a notation is the Lisp list
+syntax.  The functions below allow to toy with such a notation for
+regular expressions which was inspired by the REs in the `RScheme'
+system.  They are basically a front end to the string
+representation used in ELisp.  (Although one could conceive
+different backends for other (slightly) different syntaxes, as
+for example the Perl RE syntax)
+
+REs can be specified with the following `function' symbols:
+
+(seq <e1> ...)     - Sequence of expressions
+(or  <e1> ...)     - Alternatives
+(+ <e>)            - One or more occurrences of <e>
+(\\? <e>)           - Zero or one occurrences of <e>
+(* <e>)            - Zero or more occurrences of <e>
+(save <e>)         - Save occurrence of <e> for reference and returning
+(ref <num>)        - Occurrence of <num>th `save'd expression
+(syntax <s>)       - Character of syntax <s>
+(not-syntax <s>)   - Character of syntax other than <s>
+(range <f> <t>)    - Range between <f> and <t>
+(not <r>)          - Complement of range <r>
+(cclass <c1> ..)   - Character class allowing <c1> ... (either chars
+                    or ranges)
+
+If you like more verbose constructs one-or-more, zero-or-one and
+zero-or-more can be used for the postfix operators.
+
+The following symbols can be used as expressions: (zw = zero-width)
+
+any           - Any character
+eol           - End of line (zw)
+bol           - Beginning of line (zw)
+bob           - Beginning of buffer (zw)
+eob           - End of Buffer (zw)
+wordlimit     - Beginning or end of a word (zw)
+not-wordlimit - Not the beginning or end of a word (zw)
+bow           - Beginning of word (zw)
+eow           - End of word (zw)
+wordchar      - Word character
+non-wordchar  - Non-word character
+point         - Position of point (zw)
+cr            - Carriage return
+
+Also the following predefined character classes are available:
+digit, alpha, uppercase, lowercase, hexdigit, printable and  space
+
+As the RE is a normal list you can insert comments just like in any
+other Lisp code - without the need to `extend' the syntax.
+
+This notation introduces a problem with the sub-expressions in REs.
+Because a `(one-or-more <string>)' construct needs to group the
+<string> (if it is longer than one character) to be sensible, there
+might be `unwanted' subexpressions, i.e. groups not resulting from
+`save' constructs, in the string representation.  In other words
+the mapping of the lispy REs to string REs is not injective.  (In
+Perl syntax it could be because Perl has got the `(?' to group
+without allowing references to the group)
+
+To cope with this the `lre-compile-stringmatcher' and
+`lre-compile-buffermatcher' functions return lambda expressions
+that handle the actual matching and return a list of the whole
+matched string and the `save'd parts respectively.  This insulating
+layer makes the mapping lispy RE to lambdas injective.
+
+If you do not want to use them you can still call
+`lre-compile-string' and evaluate the value of `lre-match-list'
+afterwards.  It is a list of the numbers of the subexpressions
+corresponding to the `save's.
+
+Examples:
+
+The notorious (hopelessly inefficient but nevertheless elegant)
+primality test via regexps can thus be written as follows:
+
+(defun is-prime (n)
+  (not (funcall
+      (lre-compile-stringmatcher
+       '(seq bol
+             (save any (one-or-more any))
+             (one-or-more (ref 1))
+             eol))
+      (concat (make-vector n ?1)))))")

@@ -1,0 +1,8 @@
+(:summary    "Android Development with GNU/Emacs"
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Yoni Rabkin" . "yonirabkin@member.fsf.org"))
+ :maintainer ("Yoni Rabkin" . "yonirabkin@member.fsf.org")
+ :provided   (emacs-android)
+ :homepage   "https://github.com/cpc26/emacs-android")

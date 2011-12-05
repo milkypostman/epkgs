@@ -1,0 +1,36 @@
+(:summary    "Search mail with HyperEstraier"
+ :license    "GPL-2"
+ :authors    (("TSUCHIYA Masatoshi" . "tsuchiya@namazu.org"))
+ :maintainer ("TSUCHIYA Masatoshi" . "tsuchiya@namazu.org")
+ :provided   (gnus-est)
+ :required   ((("cl" cl)
+	       ("gnus" gnus-sum nnheader nnmail nnoo)))
+ :keywords   (hyperestraier mail\ searching\ namazu)
+ :homepage   "https://github.com/kawabata/gnus-est"
+ :commentary "\
+This file is modification of gnus-namazu.el 
+
+This file defines the command to search mails and persistent
+articles with HyperEstraier and to browse its results with Gnus.
+
+HyperEstraier is a full-text search engine intended for easy use.  For
+more detail about Namazu, visit the following page:
+
+    http://hyperestraier.org/
+
+
+Quick Start:
+
+If this module has already been installed, only four steps are
+required to search articles with this module.
+
+  (1) Install HyperEstraier.
+
+  (2) Put this expression into your ~/.gnus.
+
+         (gnus-est-insinuate)
+
+  (3) Start Gnus and type M-x gnus-est-create-index RET to make
+      index of articles.
+
+  (4) In group buffer or in summary buffer, type C-c C-n query RET.")

@@ -1,0 +1,34 @@
+(:summary    "Build buffer menu for use in Buff-menu-mode"
+ :created    "19911003"
+ :updated    "20070719"
+ :license    "GPL-2"
+ :authors    (("Noah Friedman" . "friedman@splode.com"))
+ :maintainer (nil . "friedman@splode.com")
+ :provided   (listbuf)
+ :keywords   (extensions frobs gratuitous\ knobs)
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
+ :commentary "\
+The standard list-buffers command is a primitive in Emacs 18, but no
+other primitives call it (that I know of), so it can be replaced in a
+reliable way here.  In most variants of Emacs 19, it's a lisp function
+anyway.  Put this program in a separate file somewhere in your load path
+and put the line
+
+       (load \"listbuf\")
+or
+       (autoload 'listbuf \"listbuf\" nil t)
+
+somewhere in your .emacs file.  You might also wish to do one (but
+not all) of the following:
+
+       (substitute-key-definition 'list-buffers 'listbuf ctl-x-map)
+   or
+       (defalias 'list-buffers 'listbuf)
+   or
+       (defadvice list-buffers (around listbuf activate)
+         (apply 'listbuf (ad-get-args 0)))
+
+The last option is probably the cleanest to undo if necessary.
+
+This package does not use customs because it strives to work with Emacs
+18 and 19, which did not support that interface.")

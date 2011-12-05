@@ -1,0 +1,19 @@
+(:summary    "Transpose regions command"
+ :created    "2010"
+ :updated    "20100224"
+ :license    "GPL-3"
+ :authors    (("Taiki SUGAWARA" . "buzz.taiki@gmail.com"))
+ :maintainer ("Taiki SUGAWARA" . "buzz.taiki@gmail.com")
+ :provided   (trans-regions)
+ :required   ((("cl" cl)))
+ :keywords   (convenience)
+ :commentary "\
+This package provides transpose regoins command.
+
+Usage is very simple, type M-x `trans-regions' and follow a
+mode-line information.
+
+Todo;
+
+- what doing when invoke trans-regoins twice?
+- transposing is incorrect when first regions is bobp.")

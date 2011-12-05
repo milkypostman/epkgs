@@ -1,0 +1,16 @@
+(:summary    "Helper functions for working with qooxdoo"
+ :created    "2011"
+ :updated    "2011"
+ :authors    (("Jeremiah Dodds" . "jeremiah.dodds@gmail.com"))
+ :maintainer ("Jeremiah Dodds" . "jeremiah.dodds@gmail.com")
+ :provided   (qooxdoo)
+ :required   ((("eproject" eproject eproject-extras)
+	       ("thingatpt" thingatpt)))
+ :keywords   (convenience docs)
+ :homepage   "https://github.com/jdodds/qooxdoo.el"
+ :commentary "\
+You'll need eproject, see <https://github.com/jrockway/eproject>.
+
+After that, just (require 'qooxdoo) in your .emacs and you should be good to
+go. By default, \"generate.py source\" will be run each time you save a file,
+and there's a handy api lookup variable bound to C-c C-f.")

@@ -1,0 +1,24 @@
+(:summary    "Some enhanced functions for buffer manipulate"
+ :created    "20090207"
+ :updated    "20090207"
+ :license    "GPL-3"
+ :authors    (("Andy Stewart" . "lazycat.manatee@gmail.com"))
+ :maintainer ("Andy Stewart" . "lazycat.manatee@gmail.com")
+ :provided   (buffer-extension)
+ :keywords   (buffer)
+ :commentary "\
+Some enhanced functions for buffer manipulate.
+
+
+Installation:
+
+Put buffer-extension.el to your load-path.
+The load-path is usually ~/elisp/.
+It's set in your ~/.emacs like this:
+(add-to-list 'load-path (expand-file-name \"~/elisp\"))
+
+And the following to your ~/.emacs startup file.
+
+(require 'buffer-extension)
+
+No need more.")

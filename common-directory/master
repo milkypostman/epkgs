@@ -1,0 +1,5 @@
+(:summary    "Special handling of my common directory"
+ :updated    "20060421"
+ :license    "GPL-2"
+ :provided   (common-directory)
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/file-handling")

@@ -1,0 +1,4 @@
+(:updated    "20060802"
+ :license    "GPL-2"
+ :provided   (cycle-log)
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/well-being")

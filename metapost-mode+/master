@@ -1,0 +1,17 @@
+(:summary    "Drawing with metapost interactively in Emacs"
+ :authors    (("Yu LI" . "liyu1981@gmail.com"))
+ :maintainer ("Yu LI" . "liyu1981@gmail.com")
+ :provided   (metapost-mode+)
+ :required   ((("doc-view" doc-view)))
+ :keywords   (metapost)
+ :homepage   "https://github.com/liyu1981/metapost-mode-"
+ :wikipage   "MetapostModePlus"
+ :commentary "\
+Configuration:
+
+Basically metapost-mode+ should be quite usable with its standard settings, so
+putting
+
+    (require 'metapost-mode+)
+
+into your `user-init-file' should be enough.")

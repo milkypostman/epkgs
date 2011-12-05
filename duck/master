@@ -1,0 +1,14 @@
+(:summary    "A few utilities for Scheme programming"
+ :created    "2005"
+ :updated    "2005"
+ :license    "GPL-2"
+ :authors    (("Jorgen Schaefer"))
+ :maintainer ("Jorgen Schaefer")
+ :provided   (duck)
+ :required   ((("cmuscheme" cmuscheme)))
+ :keywords   (programming scheme)
+ :commentary "\
+This is a collection of simple utility functions for Scheme
+programming. It was born when the present author noticed that he
+used almost none of the functions offered in quack.el by Neil W.
+Van Dyke.")

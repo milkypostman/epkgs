@@ -1,0 +1,9 @@
+(:summary    "Insert snippets of text into a buffer"
+ :created    "2005"
+ :updated    "2005"
+ :license    "GPL-2"
+ :authors    (("Pete Kazmier"))
+ :maintainer ("Pete Kazmier")
+ :provided   (snippet)
+ :required   ((("cl" cl)))
+ :wikipage   "SnippetMode")

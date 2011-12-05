@@ -1,0 +1,76 @@
+(:summary    "Practice your Kanji using a dictionary"
+ :created    "2001"
+ :updated    "2002"
+ :license    "GPL-2"
+ :authors    (("Alex Schroeder" . "alex@gnu.org"))
+ :maintainer ("Alex Schroeder" . "alex@gnu.org")
+ :provided   (kdic)
+ :required   ((("emacs" wid-edit widget)))
+ :wikipage   "KanjiDictionary"
+ :commentary "\
+Use M-x kdic to start a multiple choice practice session.  The data
+is derived from a dictionary.  The dictionary is not included.  You
+will have to get it yourself.  Any file in the kanjidic or edict
+file format will do.
+
+In debian, use \"apt-get install kanjidic\" for a large dictionary of
+Japanese kanji including a document explaining the format of the
+dictionary file.  Set `kdic-dictionary' and
+`kdic-encoding'accordingly.
+
+Inspired by kdrill, a drill program for kanji chars under X writte by
+Philip Brown <phil@bolthole.com>.  The kdrill homepage can be found
+here: http://www.bolthole.com/kdrill/.
+
+Installation: Copy kdic.el into a directory on your load-path, and
+add the following line to your ~/.emacs file:
+(autoload 'kdic \"kdic\" \"Practice kanji and vocabulary.\" t)
+
+You can select subsets of the `kdic-dictionary' by customizing the
+variables `kdic-filter' and `kdic-index-regexp'.  Here are two
+examples of how to set it up.  First use M-x custom-group RET kdic
+RET to customize the appropriate group, and then set the variables
+as suggested:
+
+Example 1:
+
+Set kdic-index-regexp to \"Jouyou grade level\" and set kdic-filter
+to \"Distinct values\" and choose the value \"1\".  This will drill you
+on the 80 easiest kanji -- the ones having a jouyou grade level of
+1.
+
+Example 2:
+
+Set kdic-index-regexp to \"Spahn & Hadamitzky index\" and set
+kdic-filter to \"Grouping\", using sorting function
+\"kdic-index-sort\", group size 50, and group number 1.  This will
+drill you on the first 50 kanji from the Spahn & Hadamitzky index
+(which happens to be the book I use).
+
+When you are happy with the selection, set `kdic-cache' to a
+filename to use as a cache.  This makes parsing and filtering of
+the original dictionary unnecessary, speeding things up when
+starting.  Just delete the file when you want to use another
+dictionary, or when you change the filter.
+
+Advanced usage:
+
+Filtering wizard: `kdic-word-filter' is a wizard that will help you
+combine two dictionaries.  This allows you to sort the kanji in the
+kanjidic file as described above, and then sort the entries in the
+edict file according to the kanji with the highest number.  Thus
+you can produce a list of words to learn that only require the
+simplest kanji!  Example:
+
+Sort the kanji in the kanjidic file according to the \"Jouyou grade
+level\", and choose group number 1 of size 100.  This will sort the
+edict files such that words with only Jouyou grade level 1 come
+first.  From these, the first 100 words will be used.
+
+Flashcard export:
+
+Flashcard.el by Jorgen Schaefer offers a doctor interface instead
+of a multiple choice test.  You can export the current vocabulary
+into a flashcard file using `kdic-to-flashcard'.
+
+Code")

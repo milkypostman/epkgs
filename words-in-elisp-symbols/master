@@ -1,0 +1,5 @@
+(:summary    "Analyze the words used in elisp symbols"
+ :updated    "20050214"
+ :license    "GPL-2"
+ :provided   (words-in-elisp-symbols)
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/natural-language")

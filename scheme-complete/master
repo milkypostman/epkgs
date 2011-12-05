@@ -1,0 +1,3 @@
+(:provided   (scheme-complete)
+ :required   ((("cl" cl)
+	       ("scheme" scheme))))

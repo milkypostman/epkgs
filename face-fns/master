@@ -1,0 +1,8 @@
+(:summary    "Face manipulation functions"
+ :created    "1995"
+ :updated    "20090527"
+ :license    "GPL-2"
+ :authors    (("Noah Friedman" . "friedman@splode.com"))
+ :maintainer (nil . "friedman@splode.com")
+ :provided   (face-fns)
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp")

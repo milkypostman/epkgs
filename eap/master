@@ -1,0 +1,10 @@
+(:summary    "Emacs' AlsaPlayer - \"Music Without Jolts\""
+ :created    "2007"
+ :updated    "2009"
+ :license    "GPL-3"
+ :authors    (("Sebastian Tennant" . "sebyte@gmail.com"))
+ :maintainer ("Sebastian Tennant" . "sebyte@gmail.com")
+ :provided   (eap eap-autoloads eap-dired-keybindings)
+ :required   ((("emacs" comint)))
+ :keywords   (audio ogg player)
+ :homepage   "http://home.gna.org/eap")

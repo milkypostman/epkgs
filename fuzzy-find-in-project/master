@@ -1,0 +1,13 @@
+(:created    "20081014"
+ :updated    "2008"
+ :license    "as-is"
+ :authors    (("Justin Weiss"))
+ :maintainer ("Justin Weiss")
+ :provided   (fuzzy-find-in-project)
+ :keywords   (convenience project)
+ :homepage   "https://github.com/justinweiss/fuzzy-find-in-project"
+ :commentary "\
+Requires ruby, rubygems, and the `fuzzy_file_finder' rubygem. 
+
+The `fuzzy_file_finder' rubygem can be installed with the following command: 
+`sudo gem install --source http://gems.github.com jamis-fuzzy_file_finder'")

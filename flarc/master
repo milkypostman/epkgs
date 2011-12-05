@@ -1,0 +1,40 @@
+(:summary    "Non-destructive, transcoding, annotating audio archiver"
+ :created    "2007"
+ :updated    "2007"
+ :license    "GPL-3"
+ :authors    (("David O'Toole" . "dto@monad.lab"))
+ :maintainer ("David O'Toole" . "dto@monad.lab")
+ :provided   (flarc)
+ :required   ((("radio" radio)
+	       (nil usb)))
+ :keywords   (multimedia)
+ :commentary "\
+This is FLARC!
+
+I own a lot of recording equipment, and I generate lots and lots of
+audio files in various formats---ranging from less than a second to
+several hours in length. Furthermore, I work with several other
+musicians, with whom I constantly exchange recordings. We only want
+to keep about ten percent of this stuff, but we have so much stuff
+now that we need help to organize the work of reviewing and
+annotating the material.
+
+The purpose of FLARC is to help you:
+
+ - extract audio files from USB Mass Storage devices (for example zoom.el)
+   or from CD-Audio / WAV files / etc
+ - create an archive from extracted audio files, or add to an existing archive
+ - store archive contents as FLAC
+ - review, rename, annotate, and slice audio files
+ - create an org-mode file index for each archive with  review file foo.bar
+ - define audio tags and tag your files with auto-completion of tag names
+ - search annotations/tags across multiple archives to find relevant audio
+ - carefully delete unwanted recordings
+ - create ogg vorbis files upon request
+ - burn CD's?
+ - tag regions of files? (or just split files, then tag the pieces...)
+
+You can also use FLARC to organize backups of your purchased CD's; for
+example, when ripping to FLAC from A Better CD Encoder (\"abcde\").
+
+<:6d3aaf1e-85c4-4799-a948-8b80fc9d65fe:>")

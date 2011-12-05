@@ -1,0 +1,44 @@
+(:summary    "Open source file of Java class name under point"
+ :created    "20000729"
+ :updated    "2000"
+ :license    "GPL-2"
+ :authors    ((nil . "rajeev1998@yahoo.com"))
+ :maintainer (nil . "rajeev1998@yahoo.com")
+ :provided   (java-open)
+ :keywords   (convenience java)
+ :homepage   "http://www.mayura.com/misc"
+ :commentary "\
+Purpose
+-------
+java-open adds the ability to open the source file corresponding to a 
+Java class by placing the cursor on the class name and pressing a key.
+No TAGS file or other form of preprocessing is needed.
+
+Usage
+-----
+Example of lines to be added to your .emacs:
+
+    (require 'java-open)
+
+    ; java-open-source-path is similar in function to CLASSPATH
+    (setq java-open-source-path '(\"L:/myprog/source\" \"M:/jdk1.3/src\"))
+
+    ; keyboard shortcuts
+    (global-set-key [f10] 'java-open-class-at-point)
+    (global-set-key [f11] 'java-open-base-class-source)
+
+How it works
+------------
+This code works by searching the current buffer for an import declaration
+corresponding to the class name.  If an import declaration is found then
+the filename and relative path is deduced from the import declaration.
+Then the directories specified in the java-open-source-path are searched
+for the relative path and file, and the file opened if found.
+
+If no import declaration is found then the current directory is searched
+before reporting an error.
+
+Limitations
+-----------
+java-open can only open source files if you point to a class name.  It
+cannot look for a class that contains the method name under the cursor.")

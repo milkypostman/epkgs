@@ -1,0 +1,5 @@
+(:created    "2002"
+ :updated    "2002"
+ :license    "GPL-2"
+ :provided   (fscroll)
+ :homepage   "http://www.davep.org/emacs")

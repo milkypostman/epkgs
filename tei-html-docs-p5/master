@@ -1,0 +1,37 @@
+(:summary    "Show TEI guidelines for current element"
+ :created    "2005"
+ :updated    "2005"
+ :license    "GPL-2"
+ :authors    (("Peter Heslin" . "p.j.heslin@dur.ac.uk"))
+ :maintainer ("Peter Heslin" . "p.j.heslin@dur.ac.uk")
+ :provided   (tei-html-docs-p5)
+ :homepage   "http://www.dur.ac.uk/p.j.heslin/Software/Emacs"
+ :commentary "\
+A quick but useful hack for TEI-P5 XML documents: it provides a
+function that looks up the name of the element before point and
+displays the TEI guidelines for that element.
+
+You need to download and unzip the HTML documentation from
+http://tei.sf.net -- the filename will look something like
+tei-p5-doc-0.1.9.zip
+
+Now set the variable tei-html-docs-p5-dir to the directory with all of
+the ref-*.html files you just unzipped, like so:
+
+   (setq tei-html-docs-p5-dir \"~/TEI_P5/\")
+
+If you don't set tei-html-docs-p5-dir, then the on-line version of the
+docs on the TEI web-site will be used instead.
+
+If it is installed, the docs will be viewed with emacs-w3m
+(http://emacs-w3m.namazu.org/), which requires w3m (apt-get w3m or
+see http://w3m.sourceforge.net/); if w3m is not available, an
+external web browser will be launched.
+
+Then put this package somewhere in your load-path, require it, and
+assign the function tei-html-docs-p5-element-at-point to a
+key-binding, with lines like these in your .emacs (this example
+assumes you use nxml-mode to edit TEI documents):
+
+   (require 'tei-html-docs-p5)
+   (define-key nxml-mode-map (kbd \"<M-f11>\") 'tei-html-docs-p5-element-at-point)")

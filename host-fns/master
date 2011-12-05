@@ -1,0 +1,10 @@
+(:summary    "Functions for querying host name information"
+ :created    "1991"
+ :updated    "20040216"
+ :license    "GPL-2"
+ :authors    (("Noah Friedman" . "friedman@splode.com"))
+ :maintainer (nil . "friedman@splode.com")
+ :provided   (host-fns)
+ :required   ((("file-fns" file-fns)
+	       ("string-fns" string-fns)))
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp")

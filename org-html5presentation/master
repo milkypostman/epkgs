@@ -1,0 +1,17 @@
+(:created    "2004"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Carsten Dominik" . "carsten@orgmode.org"))
+ :maintainer ("Carsten Dominik" . "carsten@orgmode.org")
+ :provided   (org-html5presentation)
+ :required   ((("cl" cl)
+	       ("htmlize" htmlize)
+	       ("org" org-exp org-table)
+	       ("table" table)))
+ :keywords   (calendar hypermedia outlines wp)
+ :homepage   "http://orgmode.org"
+ :commentary "\
+About HTML5 presentation, see http://www.html5rocks.com/
+
+Modifications: Takuto Wada (takuto.wada@gmail.com)
+  fork of https://gist.github.com/509761")

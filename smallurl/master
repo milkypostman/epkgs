@@ -1,0 +1,9 @@
+(:summary    "Tinify URLs"
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-2"
+ :authors    (("Philip Jackson" . "phil@shellarchive.co.uk"))
+ :maintainer ("Philip Jackson" . "phil@shellarchive.co.uk")
+ :provided   (smallurl)
+ :required   ((("gnus" mm-url)))
+ :homepage   "http://www.shellarchive.co.uk/content/emacs.html")

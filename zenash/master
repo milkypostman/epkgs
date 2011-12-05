@@ -1,0 +1,32 @@
+(:summary    "A low-saturation, light-background version of zenburn"
+ :license    "GPL-2"
+ :authors    (("Yavuz Arkun"))
+ :maintainer ("Yavuz Arkun")
+ :provided   (zenash)
+ :required   (((nil color-theme)))
+ :homepage   "https://github.com/yarkun/zenash"
+ :commentary "\
+Some packages ship with broken implementations of `format-spec';
+for example, stable versions of TRAMP and ERC do this.  To fix
+this, you can put the following at the end of your ~/.emacs:
+
+  (unless (zenash-format-spec-works-p)
+    (zenash-define-format-spec))
+
+Thanks to Jani Nurminen, who created the original zenburn color
+theme for vim.  I'm just copying him. :-)
+
+Short-Term Wishlist:
+
+Theme the ansi-term faces `term-red', etc., and the ERC faces
+`fg:erc-color-face1', etc.
+
+Theme `gnus-server-offline-face', `gnus-server-opened-face', and
+`gnus-server-denied-face'.  First, find out what they hell they do.
+
+Theme `gnus-emphasis-highlight-words' after finding out what it
+does.
+
+Theme `emms-stream-name-face' and `emms-stream-url-face'.
+
+Theme `ido-indicator-face'.")

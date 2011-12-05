@@ -1,0 +1,9 @@
+(:summary    "A utility to import textexpander entries into abbrev-mode"
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-2"
+ :authors    (("Ted Roden" . "tedroden@gmail.com"))
+ :maintainer ("Ted Roden" . "tedroden@gmail.com")
+ :provided   (textexpander-sync)
+ :required   ((("osx-plist" osx-plist)))
+ :homepage   "https://github.com/tedroden/textexpander-sync-el")

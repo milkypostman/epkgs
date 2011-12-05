@@ -1,0 +1,56 @@
+(:summary    "Hooks and minor mode to avoid modifying files"
+ :created    "20051114"
+ :updated    "2005"
+ :license    "GPL-2"
+ :authors    (("Dave Love" . "fx@gnu.org"))
+ :maintainer ("Dave Love" . "fx@gnu.org")
+ :provided   (protect-files)
+ :keywords   (tools)
+ :homepage   "http://www.loveshack.ukfsn.org/emacs"
+ :commentary "\
+This is a mechanism for preventing at least accidental modification
+of files matching defined patterns (see `protect-files-alist').  It
+is assumed that modifying such files causes trouble.  An example is
+corruption of a darcs revision control system repository, if you
+edit or create files in the _darcs/current directory.
+
+Functions are defined for use on hooks to try to prevent such
+problems.  When you find such a file, the buffer is made read-only,
+with backups and autosave turned off on the assumption that writing
+anything into its directory is bad news.  You get an error if you
+try to write a file with a matching name.
+
+How to use this is complicated by the fact that the appropriate
+hook mechanisms changed in the unreleased (at time of writing)
+Emacs 22 code base.  That might be relevant should it ever get
+released [:-(] with the hooks unchanged -- see below.  To avoid
+such issues, use the global minor mode `protect-files-mode'.
+[monnier says that the old hook names should still work, though
+presumably there's no guarantee they will continue to.]
+
+To start with, put this file somewhere on your `load-path',
+byte-compile it, and to your .emacs add:
+
+   (require 'protect-files)
+
+once you've loaded it, you can invoke the command
+`protect-files-mode', or customize the option of that name.
+[Compiling is required to have Custom do the right thing with the
+minor mode.]
+
+If for some reason you don't want to use Custom, in Emacs 21 use:
+
+   (add-hook 'find-file-hooks 'protect-files-check-find)
+   (add-hook 'write-file-hooks 'protect-files-check-write)
+
+and in Emacs 22:
+
+   (add-hook 'find-file-hook 'protect-files-check-find)
+   (add-hook 'before-save-hook 'protect-files-check-write)
+
+Confused?  Just use the minor mode.
+
+If you're not using Emacs 21 or later (e.g. XEmacs), this may not
+all work, but you can probably add to the hooks explicitly.
+
+[Fixme:  Maybe this is better done with file-name handlers?]")

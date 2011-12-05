@@ -1,0 +1,26 @@
+(:summary    "Flyspell dictionary guesser"
+ :created    "2007"
+ :updated    "2008"
+ :license    "GPL-3"
+ :authors    (("Alessandro Di Marco" . "dmr@c0nc3pt.com"))
+ :maintainer ("Alessandro Di Marco" . "dmr@c0nc3pt.com")
+ :provided   (flyspell-guess)
+ :required   ((("flyspell" flyspell)))
+ :keywords   (convenience)
+ :commentary "\
+Still too lazy to write one ;-)
+
+Installation:
+
+ Put this file on your Emacs-Lisp  load path, then add the following to your
+ ~/.emacs startup  file:
+
+    (require 'flyspell-guess)
+
+ to load flyspell-guess every time you start Emacs.
+
+    (eval-after-load \"flyspell-guess\" '(flyspell-insinuate-guess-indicator))
+
+ to activate the guess indicator. This last step is optional and it does not
+ affect the flyspell-guess  functioning in any way (except  for the presence
+ of the indicator itself, of course).")

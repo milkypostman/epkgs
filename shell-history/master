@@ -1,0 +1,13 @@
+(:summary    "Integration with shell history"
+ :created    "2008"
+ :updated    "20100504"
+ :license    "GPL-2"
+ :authors    (("rubikitch" . "rubikitch@ruby-lang.org"))
+ :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
+ :provided   (shell-history)
+ :required   ((("cl" cl)))
+ :keywords   (convenience processes)
+ :commentary "\
+Add command of `shell-command', `shell-command-on-region',
+`compile', `grep', and `background' to shell history file,
+eg. ~/.zsh_history.")

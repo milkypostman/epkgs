@@ -1,0 +1,35 @@
+(:created    "2000"
+ :updated    "20020118"
+ :license    "GPL-2"
+ :authors    (("Kevin A. Burton" . "burton@openprivacy.org"))
+ :maintainer ("Kevin A. Burton" . "burton@openprivacy.org")
+ :provided   (ebackup)
+ :keywords   (backup)
+ :commentary "\
+Some lisp magic to add enhanced backup functions basically it mirrors the
+filesystem that I am editing and copies all new backups into backup directory
+that you specify.  Default is ~/.emacs-backup
+
+The ebackup provides an \"enhanced\" backup mechanism for Emacs.  Instead of
+the conventional backup alternatives in the standard Emacs, ebackup provides
+the following.
+
+- keeps all backups in ~/.emacs-backups
+
+- stores files with directory structure.  So for example if you edited the file
+  /home/burton/test.txt the backup file would be saved as
+  ~/.emacs-backups/home/burton/test.txt.1
+
+- support rotation of files.  Each time a file is backed up we store it as a
+  number and then rotate these backups.  Example:
+
+    /home/burton/test.txt.1
+    /home/burton/test.txt.2
+    /home/burton/test.txt.3
+
+Should work out of the box.  All you really need to do is add this to your
+lisp load path and do a (require 'ebackup).  You should also read the backups
+section of the GNU Emacs manual to determine how to turn this on.
+
+Note: Emacs21 also includes numbered backup files but it isn't as advanced as
+ebackup (it doesnt include directory structure).")

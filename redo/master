@@ -1,0 +1,39 @@
+(:summary    "Redo/undo system for XEmacs"
+ :created    "1985"
+ :updated    "1995"
+ :license    "GPL-2"
+ :provided   (redo)
+ :keywords   (extensions lisp)
+ :homepage   "http://www.wonderworks.com"
+ :wikipage   "RedoMode"
+ :commentary "\
+Derived partly from lisp/prim/simple.el in XEmacs.
+
+Emacs' normal undo system allows you to undo an arbitrary
+number of buffer changes.  These undos are recorded as ordinary
+buffer changes themselves.  So when you break the chain of
+undos by issuing some other command, you can then undo all
+the undos.  The chain of recorded buffer modifications
+therefore grows without bound, truncated only at garbage
+collection time.
+
+The redo/undo system is different in two ways:
+  1. The undo/redo command chain is only broken by a buffer
+     modification.  You can move around the buffer or switch
+     buffers and still come back and do more undos or redos.
+  2. The `redo' command rescinds the most recent undo without
+     recording the change as a _new_ buffer change.  It
+     completely reverses the effect of the undo, which
+     includes making the chain of buffer modification records
+     shorter by one, to counteract the effect of the undo
+     command making the record list longer by one.
+
+Installation:
+
+Save this file as redo.el, byte compile it and put the
+resulting redo.elc file in a directory that is listed in
+load-path.
+
+In your .emacs file, add
+  (require 'redo)
+and the system will be enabled.")

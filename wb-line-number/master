@@ -1,0 +1,27 @@
+(:summary    "Window-based line number displaying"
+ :created    "20020112"
+ :updated    "2001"
+ :license    "GPL-2"
+ :authors    (("Naoki Nakamura" . "naoki.y.nakamura@nifty.com"))
+ :maintainer ("Naoki Nakamura" . "naoki.y.nakamura@nifty.com")
+ :provided   (wb-line-number)
+ :keywords   (display line number window)
+ :homepage   "http://homepage1.nifty.com/blankspace/emacs/elisp.html"
+ :commentary "\
+Window-based line number mode, which displays each number of line
+at the left window. Be sure that this is *not* a minor mode.
+So far, This elisp does not work well under Xemacs...
+
+Installation:
+
+Add this file (byte-compiling it is recommended) to your load-path.
+Then add one of these set of lines (or similar ones) to your config:
+
+(require 'wb-line-number)
+
+Type \"M-x wb-line-number-toggle\" to toggle this mode manually.
+
+Optional Setting:
+
+(setq truncate-partial-width-windows nil) ; use continuous line
+(set-scroll-bar-mode nil)                 ; no scroll bar, even in x-window system")

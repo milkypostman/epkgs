@@ -1,0 +1,10 @@
+(:provided   (anything-include)
+ :commentary "\
+For C and C++.
+
+Anything-source made maintenance of history of #include and reusable. 
+
+Can it be recorded that #include <..> and #include \"..\" is copied or is killed in the variable for the history,
+and input the supplementation by way of anything. 
+
+Even if the session cuts, it is reusable because the history is preserved in the file of ~/.anything-include.")

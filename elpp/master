@@ -1,0 +1,69 @@
+(:updated    "19981017"
+ :homepage   "http://www.xcf.berkeley.edu/~ali"
+ :commentary "\
+Allows arbitrary elisp code to be embedded within your source code.
+The main function, elpp-process, takes an input buffer, finds the lisp
+expressions therein, evaluates them, and substitutes them an output buffer
+by their value.
+
+Expressions must be declared before they can be recognized in a source
+file. You can do this with either elpp-defun or elpp-macro. If you don't
+wish to declare new functions or macros, you can use elpp-eval.
+
+
+Usage:
+
+This package is most useful when run by emacs in batch mode. I typically
+define some file \"codegen.el\" which contains something like:
+
+   (defun process-all-my-code ()
+      (load \"elpp.el\")
+      (find-file \"foo.C\") (find-file \"foo.c\") (elpp-process \"foo.C\" \"foo.c\")
+      (find-file \"bar.C\") (find-file \"bar.c\") (elpp-process \"bar.C\" \"bar.c\")
+    )
+
+An example C program that uses Elpp:
+
+ (elpp-defvar elements '(0 1 2 3))
+
+ (elpp-defun arrangements (lst &optional prn)
+  \"Computes all the permutations of the elements in LST. Returns a list of
+ the permutations.\"
+  (if (null lst) (list prn)
+    (mapcan (lambda (x) (arrangements (remove x lst) (cons x prn))) lst)))
+
+ (elpp-defun list-to-array (lst)
+   (cond ((symbolp lst) (symbol-name lst))
+ 	    ((numberp lst) (number-to-string lst))
+ 	    (t (concat \"\\n{ \"
+ 		       (apply 'concat
+ 			      (list-to-array  (car lst))
+ 			      (mapcar (lambda (l)
+ 				        (concat \", \" (list-to-array l)))
+ 				      (cdr lst)))
+ 		       \" }\"))))
+
+ (elpp-defun perm-tab-list () (list-to-array (arrangements elements)))
+
+ (elpp-defun n-perms (&optional n) (length (arrangements elements)))
+
+
+ void
+ permute(const char *lst, char *out, int mode)
+ {
+   int i;
+   int permutation_tab[(n-perms)][(elpp-eval (length elements))] =
+ 				 (perm-tab-list);
+   for(i=0; i<(elpp-eval (length elements)); ++i)
+     out[i] = lst[permutation_tab[mode][i]];
+ }
+
+
+See cgen.el if you are interested in having your Lisp expression
+autogenerate C or C++ code. I have trouble justifying the use of
+elpp in C programming without using cgen.el.
+
+Bugs and Requests:
+
+There will be lots, and there will be features that you will want that
+will be lacking. Mail ali@xcf.berkeley.edu.")

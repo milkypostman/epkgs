@@ -1,0 +1,8 @@
+(:summary    "A simple mode for editing xquery programs"
+ :created    "2005"
+ :updated    "20050326"
+ :license    "GPL-2"
+ :authors    (("Suraj Acharya" . "sacharya@cs.indiana.edu"))
+ :maintainer ("Suraj Acharya" . "sacharya@cs.indiana.edu")
+ :provided   (xquery-mode)
+ :required   ((("nxml" nxml-mode))))

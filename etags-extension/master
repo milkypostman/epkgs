@@ -1,0 +1,10 @@
+(:summary    "A collect extensions for etags"
+ :created    "20080705"
+ :updated    "20080705"
+ :license    "GPL-3"
+ :authors    (("Andy Stewart" . "lazycat.manatee@gmail.com"))
+ :maintainer ("Andy Stewart" . "lazycat.manatee@gmail.com")
+ :provided   (etags-extension)
+ :keywords   (etags)
+ :commentary "\
+A collect functions for etags generate, find, etc.")

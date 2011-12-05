@@ -1,0 +1,4 @@
+(:summary    "Interface with Real Player"
+ :created    "2007"
+ :updated    "2007"
+ :provided   (realplay))

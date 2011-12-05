@@ -1,0 +1,3 @@
+(:summary    "Commands for hiding lines based on a regexp"
+ :provided   (hide-lines)
+ :wikipage   "HideLines")

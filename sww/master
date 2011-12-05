@@ -1,0 +1,8 @@
+(:summary    "Switch to a named window on win32 systems"
+ :created    "2007"
+ :updated    "2007"
+ :license    "GPL-2"
+ :authors    (("Stefan Reichör," . "stefan@xsteve.at"))
+ :maintainer ("Stefan Reichör," . "stefan@xsteve.at")
+ :provided   (sww)
+ :homepage   "http://www.xsteve.at/prg/emacs")

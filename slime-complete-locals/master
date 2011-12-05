@@ -1,0 +1,9 @@
+(:created    "2010"
+ :updated    "2010"
+ :license    "GPL-2"
+ :authors    ((nil . "joost diepenmaat - joost@zeekat.nl"))
+ :maintainer (nil . "joost diepenmaat - joost@zeekat.nl")
+ :provided   (slime-complete-locals)
+ :keywords   (abbrev convenience slime)
+ :homepage   "https://github.com/joodie/slime-complete-locals"
+ :wikipage   "SlimeCompleteLocals")

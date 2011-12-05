@@ -1,0 +1,21 @@
+(:summary    "Count words"
+ :created    "20070901"
+ :updated    "20070901"
+ :license    "GPL-2"
+ :authors    (("thorne" . "thorne@timbral.net"))
+ :maintainer ("thorne" . "thorne@timbral.net")
+ :provided   (wc)
+ :keywords   (wp)
+ :commentary "\
+I can't freaking believe this is still not part of Emacs.
+Maybe it could be done better--this is pretty basic, really.
+I mean, sure you can't trust the word count for things like
+sending rocket ships to the moon, but frankly, is it that
+important?  Anyway, do M-x wc RET and it should pretty much
+work.  It uses the current syntax table's definition of a
+word.
+
+Code.
+
+This is the logic, and can be used in a program.  The other
+functions use this interactively in various ways.")

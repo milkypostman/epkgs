@@ -1,0 +1,3 @@
+(:summary    "Commit only some changes from a diff"
+ :provided   (vc-partial-commit)
+ :homepage   "https://github.com/fperrin/vc-partial-commit")

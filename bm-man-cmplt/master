@@ -1,0 +1,51 @@
+(:summary    "Completion of Unix manual page spec. using apropos(1)"
+ :created    "2000"
+ :updated    "2000"
+ :license    "GPL-2"
+ :authors    (("Yuji Minejima" . "ggb01164@nifty.ne.jp"))
+ :maintainer ("Yuji Minejima" . "ggb01164@nifty.ne.jp")
+ :provided   (bm-man-cmplt)
+ :keywords   (help local)
+ :commentary "\
+Read man page spec. string (e.g. \"ls(1)\") from the minibuffer with
+completion using Unix command apropos(1).
+
+Requirement
+I tested this library with FSF Emacs 20.6.2 and XEmacs 21.1.8.
+
+This library needs Unix command apropos(1) which can perform shell style
+wildcard search of Unix manual page names and their short descriptions.
+
+If your apropos(1) have this capability, you should be able to do
+something like the following in a shell session;
+
+    ~$ apropos -w 'ls*'  # list every man page whose name or discription
+                         # starts with 'ls'
+    ls (1)               - list directory contents
+    lseek (2)            - reposition read/write file offset
+    lstat (2)            - get file status
+    ....
+
+
+Usage (as a programmed completion function for `completing-read')
+
+Give `bm-man-cmplt' to `completing-read' as the second argument COLLECTION.
+See \"(elisp)Completion\".
+
+Example
+#1 Complete with all manual sections.
+     (completing-read \"man page: \" 'bm-man-cmplt)
+
+     ;; read user input using minibuffer with completion
+
+     => \"ls(1)\"
+
+
+#2 Complete with only '3pm' (Perl modules) section.
+     (completing-read \"perl lib: \" 'bm-man-cmplt
+                      (lambda (cell) ; predicate
+                        (string-match \"(3pm)\\\\'\" (car cell))))
+
+     ;; read user input using minibuffer with completion
+
+     => \"Net::Cmd(3pm)\"")

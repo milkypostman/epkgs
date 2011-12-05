@@ -1,0 +1,94 @@
+(:summary    "Automagically guess what is the language of a buffer"
+ :created    "20010423"
+ :updated    "20020701"
+ :license    "GPL-2"
+ :authors    (("Benjamin Drieu" . "bdrieu@april.org"))
+ :maintainer ("Benjamin Drieu" . "bdrieu@april.org")
+ :provided   (guess-lang)
+ :keywords   (languages)
+ :homepage   "http://www.grassouille.org/emacs/index.en.html"
+ :wikipage   "GuessLang"
+ :commentary "\
+Automagically guess what is the language of a buffer.
+
+This works basically by counting occurrences of common words in
+every language that is known and comparing respective numbers.
+Languages currently supported are english, french, german, danish,
+polish, spanish and somewhat russian (based on loosely collected
+words from various .po files ... does anybody want to help ?).
+
+guess-lang.el is based on an idea from Pascal Courtois
+<Pascal.Courtois@nouvo.com> but evolved a lot.
+
+Because ispell.el doesn't use hooks, guess-lang use is a little bit
+tricky and ask you to add things like the two following examples in
+your emacs initialization file.
+
+(add-hook 'latex-mode-hook
+	  (lambda ()
+	    (ispell-change-dictionary (guess-lang-buffer-cached))))
+
+(add-hook 'message-send-hook
+	     (lambda ()
+	       (ispell-change-dictionary (guess-lang-message))
+	       (ispell-message)))
+
+You may try to use the following with \"experimental\" versions of
+ispell (add-hook 'ispell-hook 'guess-lang-set-ispell-dictionnary)
+
+To do:
+- add support for aliases again
+- notify when no dictionnary can be loaded
+- explain how to make new frequency tables of keywords.
+- speed up execution
+- get rid of functional thingies like <html> or \\begin{section}
+- in case of huge buffers, use a better algorithm to check only
+  relevant parts
+
+History:
+
+$Log: guess-lang.el,v $
+Revision 1.1.1.1  2002/07/01 17:04:37  benj
+- version initiale
+
+Revision 1.10  2001/10/17 17:26:54  benj
+- in guess-lang-set-ispell-dictionnary, set the dictionnary only if a
+  language can be found
+
+Revision 1.9  2001/06/13 20:02:09  benj
+- bugfixes
+
+Revision 1.8  2001/06/13 19:38:13  benj
+- added support for separate dictionnaries loaded on demand
+- these are stored in one of th directories specified by the new
+  configuration variable `guess-lang-dictionnaries-path'
+
+Revision 1.7  2001/06/06 12:20:06  drieu
+- added support for swedish thanks to Knut Wannheden
+
+Revision 1.6  2001/06/05 23:59:54  benj
+- added narrowing to save computation time in case of huge buffers
+
+Revision 1.5  2001/06/04 22:38:48  benj
+- added hooks for guess-lang functions
+- updated examples in header
+
+Revision 1.4  2001/06/04 22:34:01  benj
+- added caching capabilities
+- added experimental support for experimental ``ispell hooks''
+- did some cleanup in frequency lists
+- fixed some docstrings
+- added support for Polish thanks to Michel Luczak
+
+Revision 1.3  2001/05/18 22:40:19  benj
+- added support for various charsets
+- changed a bit dictionnaries structure
+- added _experimental_ support for russian
+
+Revision 1.2  2001/05/13 17:28:27  drieu
+- added support for Danish thanks to Ole Laursen
+- added better German frequencies thanks to Jesper Harder
+- replaced all ``ratio'' occurences by ``frequencies''
+
+Revision 1.1  2001/04/24 20:18:11  drieu
+Initial revision")

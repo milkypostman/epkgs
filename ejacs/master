@@ -1,0 +1,14 @@
+(:summary    "Shell interface to javascript interpreter"
+ :license    "GPL-2"
+ :authors    (("Steve Yegge" . "steve.yegge@gmail.com"))
+ :maintainer ("Steve Yegge" . "steve.yegge@gmail.com")
+ :provided   (js-console js-debug js-defs js-exec js-host js-math js-native-array js-native-boolean js-native-date js-native-error js-native-function js-native-math js-native-number js-native-object js-native-regexp js-native-string js-obj-alist js-obj-hybrid js-obj-splay js-parse js-runtime js-util jsre splay-tree)
+ :required   ((("cl" cl)
+	       ("emacs" help-fns)
+	       ("parse-time" parse-time)))
+ :keywords   (javascript languages)
+ :homepage   "http://code.google.com/p/ejacs"
+ :wikipage   "Ejacs"
+ :commentary "\
+This package provides a simple interactive shell interface to
+the JavaScript interpreter.  See ./README for instructions.")

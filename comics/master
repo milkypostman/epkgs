@@ -1,0 +1,461 @@
+(:summary    "Download and read comics from emacs"
+ :created    "2009"
+ :updated    "20070218"
+ :license    "GPL-2"
+ :provided   (comics)
+ :required   ((("calendar" calendar)))
+ :homepage   "http://vh213601.truman.edu/~belanger/emacs.html"
+ :wikipage   "ComicsMode"
+ :commentary "\
+QUICK INTRO:
+============
+
+This package should work for Emacs versions 21.1 and up.
+
+comics.el provides a way to view and store comics that are available
+on the web.  A list of favorite comics can be kept.
+
+To simply read a comic:
+M-x comics-read-comic
+    You will be prompted for a comic to read (with tab completion).
+    With a numeric argument, the comic will be from that many days ago.
+    With a non-numeric argument (such as C-u M-x comics-read-comic), you will
+    be prompted for a date (in the form YYYYMMDD).
+    In the buffer displaying the comic, the following commands are
+    available:
+
+To get a list of all available comics:
+M-x comics-list-comics
+    You will be given a buffer with the categories of the available
+    comics.  (Currently the categories are just the letters that the
+    comics start with.)  Comics that have been chosen as favorites
+    will be in bold.  The following commands will allow you to 
+    sort through the categories:
+    TAB     will toggle the display of the comics in the current category.
+    C-cC-e  will expand all the categories (display all the comics)
+    C-cC-h  will hide all the categories.
+
+Favorite comics:
+Favorite comics can be read separately, and information about them
+can be kept.  comics.el will keep track of which dates the favorites
+comics have been read (starting with the date they were entered as
+favorites).
+To get a list of comics that have been chosen as favorites:
+M-x comics-favorites-list-comics
+    By default, the comics will be in alphabetical order.
+    If the customizable variable `comics-favorites-alphabetical' is
+    nil, then they won't necessarily be in order.  The order can then
+    be adjusted with the following commands:
+    C-cC-a  will put the comics in alphabetical order.
+    C-k     will kill the current comic from the favorite comics list.
+    C-y     will yank a killed comic to the favorites comics list.
+
+Bookmarks:
+Bookmarks are a way of keeping track of particular comics.
+Each comic can have a (default) bookmark, to make it easy to return 
+to a particular date.  Comics can have more than one bookmark, by 
+giving them names. (The default bookmark corresponds to the name \"\".)
+There are global bookmarks, which aren't attached to any comic, but 
+contain the comic information inside.  There is also a default global bookmark.
+
+Commands:
+The following commands are available (as appropriate) in all comics
+related buffers (the buffers displaying the comics as well as the buffers
+with the lists of comics).  The \"current comic\" is the comic being viewed
+or the comic on the current line.
+ d        View the comic from a prompted-for date
+ D        Download the comic from a prompted-for date
+ g        View the comic at the default bookmark
+          With an argument, prompt for a bookmark name
+ G        View the comic at the default global bookmark
+          With an argument, prompt for a bookmark name
+ C-cC-b   Delete a bookmark
+ C-cC-g   Delete a global bookmark
+ f        Add the current comic to the favorites list.
+          With an argument, prompt for a percent to resize the comic
+          when it is displayed.  (A \"t\" here will have the comic
+          resized to fill the buffer when opened.)
+ C        Tell comics that all dates of all favorite comics have been read.
+ l        Switch to a buffer containing the list of favorite
+          comics.  Create one if necessary.
+ C-cC-f   Download all the current favorite comics.
+ C-cC-u   Download all the unread favorite comics.
+ L        Switch to a buffer containing the list of available
+          comics.  Create one if necessary.
+ q        Bury the comic related buffers.
+ k        Kill all the comics buffers
+ K        Kill all the comic related buffers (comics and comic lists)
+
+When the current comic is a favorite, the following are also available:
+ c        Tell comics that all dates of the current comic have been read.
+ C-cC-r   Change the default resizing information for the current comic.
+ C-cC-k   Remove the current comic from the favorites list.
+
+The following commands are available in the buffer displaying a comic:
+ n        View the comic from the next day
+          (with argument N, view the comic from N days forward)
+ N        View the comic from the next day, skipping missing days
+ p        View the comic from the previous day
+          (with argument N, view the comic from P days previous)
+ P        View the comic from the previous day, skipping missing days
+ b        Set this comic as the default bookmark
+          With an argument (C-u b), prompt for a name for
+          the bookmark
+ B        Set this comic as the default global bookmark
+          With an argument (C-u b), prompt for a name for
+          the bookmark
+ DEL      Delete the comic file
+ SPC      Read the next unread date (if the current comic is a favorite)
+ u        Copy the URL of the comic to the kill ring.
+ i        Copy the information (title, author, date) of the
+          comic to the kill ring.
+ U        Copy the URL and info to the kill ring.
+ D        Copy (Duplicate) the comic file to a prompted-for file.
+ C-cC-v   View the comic in an external viewer
+If the variable `comics-buffer-resize' is non-nil and \"convert\"
+from the ImageMagick(TM) utilities is installed, then the following 
+commands are also available.
+ F        Fit the comic to fill the buffer
+ R        Resize the comic to a percentage of its current size
+          (The percentage can be given as a prefix, or it will
+          be prompted for.)
+ O        Restore the comic to its original size.
+This has been tested with version 6.2.6 of the ImageMagick(TM) 
+utilities; it may work with some older versions.
+ImageMagick(TM) is free software which is available at
+http://www.imagemagick.org/
+
+The following commands are available in the buffers containing lists
+of comics:
+ r or RET  Read the comic on the current line.
+           With a numeric argument, the comic will be from that many
+           days before.
+           With a non-numeric argument (such as C-u M-x comics-read-comic), 
+           you will be prompted for a date (in the form YYYYMMDD).
+           If the point is on a category line, toggle the display of
+           the comics in the category.
+ R or F    Like \"r\", but only downloads the comic (it doesn't display it).
+ C-cC-d    Download the current comic and as many back strips as possible.
+           With argument N, download N comics.
+
+
+NOTE:  The list `comics-list' is used for completion and getting 
+       information for downloading the comics.  It is defined
+       using the initial value of `comics-categorized-list'.
+       If `comics-categorized-list' is changed after \"comics\"
+       is loaded, `comics-list' won't match `comics-categorized-list'.
+       If `comics-categorized-list' is made smaller, this isn't a
+       problem, but if new comics are added to `comics-categorized-list'
+       after \"comics\" is loaded, the function `comics-update-comics-list'
+       should be run.
+
+To you these commands, it may be useful to put
+ (autoload 'comics-read-comic \"comics\" \"Read a comic.\" t)
+ (autoload 'comics-favorites-list-comics \"comics\"
+           \"Go to a list of favorite comics.\" t)
+in your .emacs
+
+Customizable variables:
+ Storing:
+ comics-dir (default: \"~/Comics/\")
+             This is the directory to store the comics.
+ comics-favorites-file (default: \"~/.comics-favorites\")
+             A file to keep a list of the favorite comics in.
+ comics-bookmark-file (default: \"~/.comics-bookmarks\")
+             A file to keep the comics bookmarks in.
+ comics-save-urls (default: t)
+             Non-nil means store the urls of the downloaded comics.
+ comics-url-file (default: (concat comics-dir \"/comics-urls\"))
+             A file to keep the comics urls in.
+ comics-filename-long-date (default: t)
+             If non-nil, use (e.g.) 2004_August_1 as the date in 
+             the filenames, otherwise use 2004_08_01.
+ comics-use-separate-comic-directories (default: nil)
+             If non-nil, use separate directories for the separate 
+             comics.
+ comics-temp-dir (default: \"/tmp/\")
+             The directory for temporary files.
+
+ Viewing:
+ comics-buffer-resize (default: t)
+             If non-nil, enable commands to resize comics.
+ comics-buffer-resize-on-open (default: nil)
+             If t, open comics at a size to fill the buffer.
+             If a number, open comics at that percent of the original size.
+             If nil, open comics at original size.
+ comics-view-comics-with-external-viewer (default: nil)
+             If non-nil, use an external viewer to view comics.
+ comics-external-viewer (default: \"display\")
+             The external viewer to view the comics with.
+ comics-external-viewer-args (default: nil)
+             The arguments to pass to the external viewer.
+
+ Lists:
+ comics-print-list-instructions (default: nil)
+             If non-nil, print the instructions at the top 
+             when creating a comics list.
+ comics-favorites-alphabetical (default: t)
+             If non-nil, keep favorite comics in alphabetical order.
+
+ Misc:
+ comics-fetch-misses-allowed (default: 3)
+             The number of times fetch back can fail to fetch a 
+             comic before it gives up.
+ comics-adjust-current-time (default: t)
+             How to adjust today's date when computing today.
+             If t, then today's date will be computed by looking at 
+             the time zone of the web site.  
+             If a number, it will be number of hours to adjust today's 
+             day by when computing today; comics will regard today as 
+             your computer time + `comics-adjust-current-time' hours.
+             If nil, then today's date will the date where you are.
+ comics-use-ido-completion (default: nil)
+             If non-nil and `ido' is available, use `ido' for comic name 
+             completions.
+
+A list of useful commands:
+M-x comics-read-comic
+    Read a prompted-for comic.
+    With a numeric argument, the comic will be from that many days ago.
+    With a non-numeric argument (such as C-u M-x comics-read-comic), you will
+    be prompted for a date (in the form YYYYMMDD).
+M-x comics-fetch-comic
+    Download a prompted-for comic.
+    With a numeric argument, the comic will be from that many days ago.
+    With a non-numeric argument (such as C-u M-x comics-read-comic), you will
+    be prompted for a date (in the form YYYYMMDD).
+M-x comics-add-favorite
+    Prompt for a comic to add to the favorite comics list.
+    With an argument, prompt for a percent to resize the comic
+    when it is displayed.  (A \"t\" here will have the comic
+    resized to fill the buffer when opened.)
+    (If the customizable variable `comics-get-storage-info' is
+     non-nil, then this will also prompt for information on how
+     to store the comic.  Entering a \"D\" will put the comic
+     in a separate subdirectory, otherwise it will be stored in the
+     default comics directory, and \"L\" will save the comic with
+     the date written out, otherwise the comics will be saved with
+     the date in numeric form.  These can be combined.  Entering
+     a \"t\" will use the default storage method, which is customizable.)
+M-x comics-remove-favorite
+    Prompt for a comic to remove from the favorite comics list.
+M-x comics-kill-comics-buffers
+    Kill all the buffers used for viewing comics.
+M-x comics-list-comics
+    You will be given a buffer with the categories of the available
+    comics.
+M-x comics-favorites-list-comics
+    You will be given a buffer with a list of all the favorite comics.
+M-x comics-fetch-favorite-comics
+    This will download a copy of the comics listed in the favorite
+    comics list.
+M-x comics-fetch-this-comic-back
+    This will prompt you for a comic, then retrieve the current strip
+    and as many older strips as it can.  The variable
+    `comics-fetch-misses-allowed' will determine how many days in
+    a row comics can fail to fetch a comic before it decides it's done.
+    With arg N, fetch comics that many days back.
+M-x comics-fetch-favorite-comics-back
+    This will retrieve the current favorite comics and as many older 
+    strips as it can.  With arg N, fetch comics that many days back.
+M-x comics-goto-bookmark
+    This will prompt you for a comic and will display the comic at the
+    default bookmark.  With an argument, you will also be prompted for
+    a bookmark name.
+M-x comics-goto-global-bookmark
+    This will display the comic at the global default bookmark.
+    With an argument, you will be prompted for a bookmark name.
+M-x comics-delete-bookmark
+    This will prompt you for a comic and a bookmark, and will
+    delete the bookmark
+M-x comics-delete-global-bookmark
+    This will prompt you for a bookmark, and will delete the 
+    global bookmark
+
+NOTE:  If any of these comics are no longer available, or if there
+       are ideas for more comics, please let me know so I can
+       keep the list up-to-date.
+       Please let me know of any other suggestions, bugs, comments,...
+       belanger@truman.edu
+
+ANOTHER NOTE:  With the addition of the ability to keep track of dates on which the
+       favorites have been read, the format of the comics-favorites list has 
+       changed slightly.  If you didn't have storage information in the 
+       comics-favorites list and simply had the comic names, the difference
+       won't matter, otherwise you might wish to edit .comics-favorites and
+       change entries like (\"Comic Name\" \"D\") to (\"Comic Name\" nil nil \"D\").
+
+CHANGES:
+
+3 April 2010
+
+Fix `run-hooks' problem.
+(Patch by Wesley Dawson.)
+
+17 January 2010
+
+Fixed problem retrieving comics.com comics.
+
+24 August 2009
+
+Added a variable, `comics-show-title', which if non-nil will cause the
+comic title and author to appear in the comic buffer.  By default it
+is nil. (Patch by Dave Täht)
+
+20 August 2009
+
+Added \"Girl Genius\"  (Thanks to Dave Täht)
+
+23 Feb 2009
+
+Fixed bug in `comics-favorites-catch-up-comic'
+
+11 Feb 2009
+
+Fixed Piled Higher and Deeper.
+(Patch by Dr. Reimar Finken)
+
+7 Feb 2009
+
+Fixed kingfeatures comics.
+
+12 Jan 2009
+Fixed comics.com comics, dilbert.
+
+17 Feb 2007
+Fix a problem downloading Xkcd.
+
+Add \"D\" binding to comics-buffer, which will copy the file for the current 
+comic.
+
+Increase `comics-fetch-misses-allowed' to 7
+If date of favorite comic being read is earlier than the earliest date,
+don't add it to the dates-read list.
+Add ShortPacked and Zippy.
+Add \"N\" and \"P\" keybindings for comics buffers, which will read the next 
+or previous comic, but skip any dates in which the comic cannot be obtained.  
+(The most days skipped will be `comics-fetch-misses-allowed'.
+
+Some keybinding changes.
+Remove fetch-only buffers.
+
+Now keeps track of which days the favorite comics have been read.
+Resizing information can be kept on a per-comic basis.
+(Suggested by Andy Scott.)
+
+Added the customizable variable `comics-buffer-resize-on-open'.
+If t, this will cause the comic to fill the buffer when open.
+If a number, this will cause the comic to be resized by that
+percentage when opened.
+
+Add a \"c\" binding to calendar that will prompt for a comic 
+to display.
+
+SPC will sequence through the unread favorite comics.
+(Suggested by Andy Scott.)
+If your favorites list contains extra storage information, such
+as (\"Comic Name\" \"D\"), then that needs to be changed to
+(\"Comic Name\" nil \"D\").  If you never put extra storage 
+information in, then you don't need to worry about this.
+
+Use `comics-bury-comic-related-buffers' to bury buffers.
+
+Add bindings \"k\" and \"K\" to all comic related buffers.  These
+will kill all comic/comic related buffers.
+
+Add bindings \"l\" and \"L\" to comics buffer, to go to the list of
+favorite or all comics, respectively.
+Add bindings \"u\" and \"i\", to copy URL and information, respectively,
+of comic to kill ring.
+Suggested by Andy Scott.
+
+Change resizing keys \"f\" and \"r\" to \"F\" and \"R\" in comics buffer.
+Use \"f\" and \"r\" for adding and removing from favorites list.
+Use `ido' completion when available.
+Many other fixes and improvements.
+Suggested by Andy Scott.
+
+Changed `comics-select-list' to `comics-favorites-list' and changed
+the format.  This is no longer customizable, instead commands
+are made to add or remove comics from the list.
+Also, a buffer list for the favorite comics was added.  (See the
+intro above.)
+
+More fixes and cleanups due to Detlev Zundel.
+
+Made modes for the comics buffer and the comics list buffers.
+Information on the keybindings can now be gotten with 
+C-hm (describe mode).  \"h\" and \"?\" in the comics-buffer now
+calls describe-mode.
+(Suggested by Detlev Zundel.)
+
+Added some interactive help in the browsing mode.
+(Due to Detlev Zundel)
+In the comics-buffer, \"h\" and \"?\" will give a list of available keys.
+
+Added comics-kill-comics-buffers
+
+Added a simple test to check if a downloaded Snoopy comic is really
+a comic.
+
+Added a simple test to make sure the downloaded file is an image.
+
+Added Snoopy from Japan.
+
+Added some messages for fetching comics.
+
+Added the customizable variables 
+ comics-filename-long-date
+      If non-nil, use the `2004_August_01' form of the date in file
+      names, otherwise use `2004_08_01'.  (The latter form will 
+      the calender order the same as alphabetical order.)
+ comics-use-separate-comic-directories
+      If non-nil, each comic strip series will have its own 
+      subdirectory of `comics-dir', otherwise all comics are
+      in the same directory.
+
+Some bug fixes.
+
+Added the customizable variable:
+ comics-adjust-current-time:
+     This determines what date to use when trying to fetch a
+     current comic.  If this variable is `t', then comics.el
+     uses the current date at the website (based on a guess 
+     of which time zone it is in).  If this variable is a number,
+     that number of hours will be added to the current time 
+     and that date will be used.  (So if you think the websites 
+     are a couple of time zones away, you could set this to 2...)
+     If this variable is nil, simply find the current date where you
+     are at.
+     This is an attempt to deal with the problem of looking for
+     current comics when, because of time zone differences, it is
+     a different day at your computer and the web site, so you wouldn't
+     be able to download the \"current\" comic.
+     It only applies when you are trying to get only a current comic,
+     (comics-read-comic, comics-fetch-comic, comics-fetch-all-comics,
+     comics-fetch-some-comics), and if the functions are given an 
+     argument of \"-\" (C-u - M-x comics-read-comic), then there will be
+     no attempts to adjust the time.
+     I couldn't test this out very well, so if there are any problems
+     with it, please let me know immediately so I can fix it.
+     Thanks
+
+Added global bookmarks.
+(Note that some bookmark bindings were changed)
+
+Added bookmarks.
+
+Added some resizing commands
+
+Added some new keys to the comic buffer keymap
+
+Added a face for the comics categories.
+Changed how faces were applied.
+
+Created different faces for various parts of the buffer.
+(Comic titles, dates, instructions, ...)
+Added some keys to help move around in the list buffers.
+
+Fixed a few keymap problems.
+Then, created distinct keymaps for the different buffers that
+are created.")

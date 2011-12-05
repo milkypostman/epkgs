@@ -1,0 +1,6 @@
+(:summary    "Convert docbook to muse"
+ :created    "2006"
+ :updated    "2006"
+ :license    "GPL"
+ :provided   (dbk)
+ :required   ((("xml" xml))))

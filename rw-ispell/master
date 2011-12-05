@@ -1,0 +1,31 @@
+(:summary    "Additional functions for ispell.el"
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-2"
+ :authors    (("Ralf Wachinger" . "rwachinger@gmx.de"))
+ :maintainer ("Ralf Wachinger" . "rwachinger@gmx.de")
+ :provided   (rw-ispell)
+ :required   ((("emacs" easymenu)
+	       ("ispell" ispell)))
+ :keywords   (ispell)
+ :commentary "\
+Associating freely personal dictionaries with
+general dictionaries for Ispell, Aspell and Hunspell,
+creating personal dictionary files if necessary, and
+changing general and personal dictionaries at the same time.
+
+Save rw-ispell.el in a convenient directory, preferably in
+your `load-path'. Add the following to your `user-init-file':
+
+  (require 'rw-ispell)
+
+When the setup starts:
+a) keyboard: 'M-x rw-ispell-set-up-pdicts RET'
+b) menubar: Tools --> Spell Checking --> Set up Personal Dictionaries
+c) automatically when the spellchecker is used the first time
+d) `user-init-file', after setting the user options:
+   (rw-ispell-set-up-pdicts)
+
+Todo:
+Settings in `ispell-message-dictionary-alist' are not considered yet.
+Possibly full integration in ispell.el.")

@@ -1,0 +1,25 @@
+(:summary    "Dired view mode"
+ :created    "2006"
+ :updated    "2006"
+ :license    "GPL-2"
+ :authors    (("William Xu" . "william.xwl@gmail.com"))
+ :maintainer ("William Xu" . "william.xwl@gmail.com")
+ :provided   (dired-view)
+ :wikipage   "DiredView"
+ :commentary "\
+When browsing files in dired buffer, it would be convenient to be
+able to jump to a file by typing that filename's first
+character. This is what this extension does.
+
+Put this file into your load-path and the following into your
+~/.emacs:
+      (require 'dired-view)
+
+To enable it by default,
+
+      (add-hook 'dired-mode-hook 'dired-view-minor-mode-on)
+
+Also, you could define keys to toggle it,
+
+      (define-key dired-mode-map (kbd \";\") 'dired-view-minor-mode-toggle)
+      (define-key dired-mode-map (kbd \":\") 'dired-view-minor-mode-dired-toggle)")

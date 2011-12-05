@@ -1,0 +1,64 @@
+(:summary    "Rearrange XML/SGML easily"
+ :created    "2000"
+ :updated    "2000"
+ :license    "GPL-2"
+ :authors    (("Tom Breton" . "tob@world.std.com"))
+ :maintainer ("Tom Breton" . "tob@world.std.com")
+ :provided   (tehom-psgml-arrange)
+ :required   ((("arrange" arrange)
+	       ("cl" cl)
+	       ("psgml" psgml)
+	       ("tehom-psgml" tehom-psgml)))
+ :keywords   (extensions hypermedia tools)
+ :homepage   "http://www.panix.com/~tehom"
+ :commentary "\
+Purpose
+
+Rearranging SGML and XML elements without doing a lot of navigating
+by hand.  Useful on rambledocs (rmb) documents, when you've
+accumulated a lot of nodes in random order.
+
+Usage
+
+Basically you use tehom-psgml-arr-set-name-property on each type of
+node you want to move.  Then you alternate using
+tehom-psgml-arr-cut and tehom-psgml-arr-paste.
+
+***WARNING***: This code completely expects you to know what you're
+doing.  It supports my work habits, but a lot more work could be
+done wrt safety and foolproofness.  If you don't know SGML or XML,
+this package will merely help you ruin your document very fast.
+
+The cut nodes better come from somewhere that can afford to lose
+them, otherwise you'll invalidate you document.
+
+Similarly, you have to paste them somewhere that can accept them.
+
+If some of your nodes have the same name, some will be duplicated,
+some left out.
+
+Non-features:  (Plenty)
+
+Ideally, this would be surrounded by one or more wrapper functions
+that collect all the user's interactions before cutting, including
+where to paste back in.
+
+It would intelligently help the user indicate which attribute is
+the \"name\" attribute of a node, and would understand a
+configuration list.
+
+It would hold the user's hand wrt choosing a paste spot.
+
+It would deal with paste-back-in on a hier, programmable level.
+One desirable functionality is to create a new node at the same
+time in the same place, in effect demoting some nodes to lower
+level in an outline-like dtd.
+
+It would only offer to cut nodes that can safely be removed and can
+safely be pasted to the target element.
+
+It would allow sets of nodes, rather than basically supporting just
+one type at a time.
+
+It would test that all the nodes offered to be cut had unique
+names, error if not.")

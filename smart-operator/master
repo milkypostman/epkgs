@@ -1,0 +1,34 @@
+(:summary    "Insert operators with surrounding spaces smartly"
+ :created    "2004"
+ :updated    "2009"
+ :license    "GPL-3"
+ :authors    (("William Xu" . "william.xwl@gmail.com"))
+ :maintainer ("William Xu" . "william.xwl@gmail.com")
+ :provided   (smart-operator)
+ :homepage   "http://xwl.appspot.com"
+ :wikipage   "SmartOperator"
+ :commentary "\
+When typing operators, this package can automatically insert spaces
+before and after operators. For instance, `=' will become ` = ', `+='
+will become ` += '. This is handy for writing C-style sources.
+
+To use, put this file to your load-path and the following to your
+~/.emacs:
+            (require 'smart-operator)
+
+Then `M-x smart-operator-mode' for toggling this minor mode.
+
+Usage Tips
+----------
+
+- If you want it to insert operator with surrounding spaces , you'd
+  better not type the front space yourself, instead, type operator
+  directly. smart-operator-mode will also take this as a hint on how
+  to properly insert spaces in some specific occasions. For
+  example, in c-mode, `a*' -> `a * ', `char *' -> `char *'.
+
+Acknowledgements
+
+Nikolaj Schumacher <n_schumacher@web.de>, for suggesting
+reimplementing as a minor mode and providing an initial patch for
+that.")

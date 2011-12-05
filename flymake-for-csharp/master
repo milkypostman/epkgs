@@ -1,0 +1,8 @@
+(:summary    "C# mode derived mode"
+ :updated    "2010"
+ :authors    (("Dino Chiesa"))
+ :maintainer ("Dino Chiesa")
+ :provided   (flymake-for-csharp)
+ :required   ((("flymake" flymake)))
+ :keywords   (flymake)
+ :wikipage   "FlymakeCsharp")

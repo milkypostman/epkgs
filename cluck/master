@@ -1,0 +1,10 @@
+(:summary    "Enhanced support for Chicken Scheming"
+ :license    "GPL-2"
+ :provided   (cluck)
+ :required   ((("browse-url" browse-url)
+	       ("cmuscheme" cmuscheme)
+	       ("compile" compile)
+	       ("emacs" advice custom easymenu font-lock)
+	       ("scheme" scheme)
+	       ("thingatpt" thingatpt)))
+ :homepage   "https://github.com/ddp/cluck")

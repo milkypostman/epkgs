@@ -1,0 +1,13 @@
+(:summary    "Pomodoro time management in emacs"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Austin Frank" . "austin.frank@gmail.com"))
+ :maintainer ("Austin Frank" . "austin.frank@gmail.com")
+ :provided   (epom)
+ :keywords   (tools)
+ :homepage   "https://github.com/aufrank/epom"
+ :commentary "\
+Utility functions for tracking workflow in the Pomodoro time
+management system.  Eventual goal is to interact with org mode,
+todochiku, and magit")

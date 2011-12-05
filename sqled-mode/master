@@ -1,0 +1,7 @@
+(:summary    "Major Mode for editing sql, sqlplus and pl/sql code"
+ :created    "2003"
+ :updated    "2003"
+ :license    "GPL-2"
+ :provided   (sqled-mode)
+ :required   ((("emacs" custom easymenu)))
+ :wikipage   "SqlEdMode")

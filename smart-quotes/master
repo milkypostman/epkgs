@@ -1,0 +1,14 @@
+(:summary    "Smart Quotes minor mode for GNU Emacs"
+ :created    "20071020"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Gareth Rees" . "gdr@garethrees.org"))
+ :maintainer ("Gareth Rees" . "gdr@garethrees.org")
+ :provided   (smart-quotes)
+ :keywords   (abbrev)
+ :homepage   "https://github.com/gareth-rees/smart-quotes"
+ :wikipage   "SmartQuotes"
+ :commentary "\
+Smart Quotes is a minor mode that rebinds the ' and \" keys to
+insert left and right quotation marks according to the context
+before point.")

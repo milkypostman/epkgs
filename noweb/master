@@ -1,0 +1,41 @@
+(:summary    "Noweb mode for literate programming"
+ :created    "200310"
+ :updated    "2004"
+ :license    "GPL-2"
+ :authors    (("Dave Love" . "fx@gnu.org"))
+ :maintainer ("Dave Love" . "fx@gnu.org")
+ :provided   (noweb)
+ :required   ((("cl" cl)
+	       ("emacs" easy-mmode)
+	       ("multi-mode" multi-mode)))
+ :keywords   (languages tools)
+ :homepage   "http://www.loveshack.ukfsn.org/emacs"
+ :commentary "\
+A sort of major mode for the noweb literate programming system.
+noweb files contain documentation regions which should be edited in
+a major mode `noweb-doc-mode' and code regions which should be
+edited in major mode `noweb-code-mode'.  These are separated by
+marker regions which are edited in a separate `noweb-mode'.  (It's
+arguable whether this is better than treating the marker as the
+same mode as its following `chunk', but may cause less disturbance,
+even with font-lock and `parse-sexp-lookup-properties' in force.)
+The code and doc modes can be customized globally or set in file
+local variables, e.g.:
+
+Local variables:
+mode: noweb
+noweb-code-mode: c-mode
+noweb-doc-mode: nroff-mode
+End:
+
+This is mostly compatible command- and keymap-wise with Thorsten
+Ohl's old noweb-mode.el.  It is based on my multi-mode.el, and
+inherits issues that has, especially in Emacs < 21.4.
+
+Inter-chunk Outline and Imenu support is provided only in the noweb
+buffer, i.e. when point is in a chunk header.  This could probably
+be improved.
+
+Perhaps needs commands for weaving and tangling the buffer rather
+than relying on make.  Could use dealing with gerd's
+<<name -*-mode-*->> notation for multiple code modes.")

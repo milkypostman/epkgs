@@ -1,0 +1,4 @@
+(:license    "GPL-2"
+ :provided   (apt)
+ :homepage   "http://www.netfort.gr.jp/~dancer/software/apt-mode.html"
+ :wikipage   "AptMode")

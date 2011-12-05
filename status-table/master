@@ -1,0 +1,6 @@
+(:updated    "20050220"
+ :provided   (status-table)
+ :required   ((("page-attributes" page-attributes)
+	       ("page-status" page-status)
+	       ("webmaster-macros" webmaster-macros)))
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/webstuff/webmastering")

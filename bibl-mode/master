@@ -1,0 +1,12 @@
+(:summary    "A major mode for maintaining bibliography files"
+ :created    "1994"
+ :updated    "19950605"
+ :license    "GPL-2"
+ :authors    (("Bryan O'Sullivan" . "bos@serpentine.com"))
+ :maintainer ("Bryan O'Sullivan" . "bos@serpentine.com")
+ :provided   (bibl-mode)
+ :required   ((("emacs" easymenu)
+	       ("reporter" reporter)
+	       ("telnet" telnet)))
+ :keywords   (bibliographies databases internet)
+ :wikipage   "BiblMode")

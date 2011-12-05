@@ -1,0 +1,5 @@
+(:summary    "Comment a line in a banner style"
+ :license    "GPL-3"
+ :provided   (line-comment-banner)
+ :required   ((("cl" cl)))
+ :wikipage   "LineCommentBanner")

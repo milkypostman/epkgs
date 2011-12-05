@@ -1,0 +1,15 @@
+(:summary    "Qda project setup"
+ :created    "2007"
+ :updated    "2007"
+ :license    "GPL-2"
+ :provided   (qda qda-docs qda-indexing qda-memos qda-misc qda-modes qda-tree qda-view-tree)
+ :required   ((("cl" cl)
+	       ("electric" electric)
+	       ("emacs" derived easymenu)
+	       ("gnus" gnus-range)
+	       ("pp" pp)))
+ :homepage   "http://gna.org/projects/qda-emacs"
+ :commentary "\
+This is the main file for the qda program
+It pulls in all of the required files
+and sets up all of the project-specific functions.")

@@ -1,0 +1,5 @@
+(:authors    (("Mike Williams" . "mike-w@cs.aukuni.ac.nz"))
+ :maintainer ("Mike Williams" . "mike-w@cs.aukuni.ac.nz")
+ :provided   (modula3)
+ :required   ((("cl" cl)))
+ :homepage   "http://tinderbox.elegosoft.com/tinderbox/lxr/source/m3-misc/m3.org/goodies/index.html")

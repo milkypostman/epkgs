@@ -1,0 +1,11 @@
+(:summary    "Some extension for eldoc"
+ :created    "20081207"
+ :updated    "20100504"
+ :license    "GPL-3"
+ :authors    (("Andy Stewart" . "lazycat.manatee@gmail.com"))
+ :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
+ :provided   (eldoc-extension)
+ :required   ((("eldoc" eldoc)))
+ :keywords   (eldoc)
+ :commentary "\
+Some extension for eldoc")

@@ -1,0 +1,6 @@
+(:summary    "Toggle to and from the *shell* buffer"
+ :created    "1997"
+ :updated    "1998"
+ :license    "GPL-2"
+ :provided   (shell-toggle)
+ :homepage   "http://user.it.uu.se/~mic")

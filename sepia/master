@@ -1,0 +1,26 @@
+(:summary    "Simple Emacs-Perl InterAction: ugly, yet effective"
+ :created    "2011"
+ :updated    "2011"
+ :authors    (("Sean O'Rourke" . "seano@cpan.org"))
+ :maintainer ("Sean O'Rourke" . "seano@cpan.org")
+ :provided   (sepia sepia-cpan sepia-ido sepia-tree sepia-w3m)
+ :required   ((("cl" cl)
+	       ("cperl-mode" cperl-mode)
+	       ("eldoc" eldoc)
+	       ("emacs" button)
+	       ("gud" gud)
+	       ("ido" ido)
+	       ("tree-widget" tree-widget)
+	       ("w3m" w3m w3m-perldoc)
+	       (nil sepia-snippet)))
+ :keywords   (languages perl)
+ :homepage   "http://search.cpan.org/src/SEANO/Sepia-0.96/Sepia.html"
+ :wikipage   "Sepia"
+ :commentary "\
+Sepia is a set of tools for Perl development in Emacs.  Its goal is
+to extend CPerl mode with two contributions: fast code navigation
+and interactive development.  It is inspired by Emacs' current
+support for a number of other languages, including Lisp, Python,
+Ruby, and Emacs Lisp.
+
+See sepia.texi, which comes with the distribution.")

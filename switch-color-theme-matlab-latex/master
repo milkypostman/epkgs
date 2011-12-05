@@ -1,0 +1,30 @@
+(:summary    "Color themes for matlab"
+ :created    "20080116"
+ :updated    "2008"
+ :license    "GPL-2"
+ :authors    (("Da Zhang"))
+ :maintainer ("Da Zhang")
+ :provided   (switch-color-theme-matlab-latex)
+ :commentary "\
+switch-color-theme-matlab-latex.el contains the customized color themes
+for matlab mode (yellow background) and normal (black background). Call
+function da-color-theme to change to the dark face, and call C-u
+da-color-theme for the yellow background face.
+
+color-theme-da-matlab is particularly designed to simulate the warm
+yellow-green color and visual effect of Matlab programming environment
+
+color-theme-da-normal is a dark theme, designed for normal programming
+tasks such as C/C++/Java development, org/muse mode editing and LaTeX
+editing.
+
+
+Install theme:
+(1)Place switch-color-theme-matlab-latex.el into your load-path.
+
+(2)In your .emacs, add:
+(require 'switch-color-theme-matlab-latex)
+
+(3)optional settings such as keybinding and hooking
+(add-hook 'matlab-mode-hook 'color-theme-da-matlab)
+(global-set-key [f6] 'da-color-theme)")

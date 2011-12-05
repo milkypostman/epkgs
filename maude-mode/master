@@ -1,0 +1,15 @@
+(:summary    "Emacs mode for the programming language Maude"
+ :created    "2004"
+ :updated    "20080423"
+ :license    "GPL-2"
+ :maintainer ("Rudi Schlatte" . "rudi@constantly.at")
+ :provided   (maude-mode)
+ :required   ((("ansi-color" ansi-color)
+	       ("cl" cl)
+	       ("compile" compile)
+	       ("emacs" comint derived easymenu font-lock newcomment)
+	       ("imenu" imenu)
+	       ("rx" rx)))
+ :keywords   (maude)
+ :homepage   "http://sourceforge.net/projects/maude-mode"
+ :wikipage   "MaudeMode")

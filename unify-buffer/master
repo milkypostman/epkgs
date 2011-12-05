@@ -1,0 +1,12 @@
+(:summary    "Concatenate multiple buffers"
+ :created    "2008"
+ :updated    "20081202"
+ :license    "GPL-2"
+ :authors    (("rubikitch" . "rubikitch@ruby-lang.org"))
+ :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
+ :provided   (unify-buffer)
+ :required   ((("cl" cl)))
+ :keywords   (convenience)
+ :commentary "\
+Concatenate multiple buffers into one buffer.
+It is useful to view multiple buffers simultaneously.")

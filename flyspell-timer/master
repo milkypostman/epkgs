@@ -1,0 +1,23 @@
+(:summary    "Check Spelling in the idle cycle"
+ :license    "GPL-2"
+ :authors    (("Phillip Lord" . "p.lord@russet.org.uk"))
+ :maintainer ("Phillip Lord" . "p.lord@russet.org.uk")
+ :provided   (flyspell-timer)
+ :homepage   "http://homepages.cs.ncl.ac.uk/phillip.lord/emacs.html"
+ :commentary "\
+This file enables flyspell checking in the idle cycle. Add
+
+(require 'flyspell-timer)
+(add-hook 'flyspell-mode-hook 'flyspell-timer-ensure-idle-timer)
+
+to your .emacs. `flyspell-timer-mode' is also checked, so set this
+to nil buffer-local if you want to disable this in some
+buffers. Other configuration are `flyspell-timer-chunk-size' and
+`flyspell-timer-delay'.  The system checks the former number of
+words in each direction and then delays for the later number of
+seconds. These are set conservatively, as flyspell can be fairly
+intensive. Only displayed words (not the whole buffer) are checked
+for much the same reason. Finally
+`flyspell-timer-idle-timer-verbose' switches of the error
+messages. These default to on, again, because this mode is CPU
+intensive.")

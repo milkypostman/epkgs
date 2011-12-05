@@ -1,0 +1,6 @@
+(:provided   (nclos-eieio nclos-owl-lite nclose-advice nclosemacs nclosemacs-lib nclosemacs-muse-helper ontology)
+ :required   ((("cl" cl)
+	       ("eieio" eieio-base)
+	       (nil tree)))
+ :homepage   "http://code.google.com/p/nclosemacs"
+ :wikipage   "NClosEmacs")

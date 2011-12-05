@@ -1,0 +1,26 @@
+(:created    "19990818"
+ :updated    "19991203"
+ :license    "GPL-2"
+ :authors    (("Andrew J Cosgriff" . "ajc@bing.wattle.id.au"))
+ :maintainer ("Andrew J Cosgriff" . "ajc@bing.wattle.id.au")
+ :keywords   (memo palm pilot)
+ :homepage   "http://polydistortion.net/sw/emacs-lisp"
+ :commentary "\
+Inspired by David Maslen :)
+
+Usage : M-x save-buffer-to-pilot
+
+It prompts for the title of the memo and the category to store it
+in.
+
+In the Gnus Summary buffer, you can also 
+M-x gnus-summary-save-article-pilot
+to save the current article to your PalmOS device.
+
+You need the `pilot-link' software installed, as this code simply
+runs the external `install-memo' program to do all the hard work.
+
+`pilot-link' source can be found at
+ftp://ryeham.ee.ryerson.ca/pub/PalmOS/ or, if you're running one of
+the more popular Linux distributions, there may be an installable
+package available as part of the distribution....")

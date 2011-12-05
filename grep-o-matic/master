@@ -1,0 +1,35 @@
+(:summary    "Auto grep word under cursor"
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-3"
+ :authors    (("Avi Rozen" . "avi.rozen@gmail.com"))
+ :maintainer ("Avi Rozen" . "avi.rozen@gmail.com")
+ :provided   (grep-o-matic)
+ :required   ((("grep" grep)))
+ :keywords   (processes search tools)
+ :commentary "\
+This package lets the user launch a search, with a single key combination,
+for the word under the cursor, in the current repository, or the current
+directory, or in the set of currently open files.
+
+Works nicely in combination with grep-a-lot and repository-root libraries.
+
+Installation:
+
+1. Put this file in a directory that is a member of load-path, and
+   byte-compile it (e.g. with `M-x byte-compile-file') for better
+   performance.
+2. Add the following to your ~/.emacs:
+   ;(require 'repository-root) ; optional: needed for repository-wide search
+   (require 'grep-o-matic)
+3. Customize grep-o-matic with `M-x customize-group grep-o-matic'
+
+Repository-wide search requires customization of the repository root function,
+unless the repository-root libarary is loaded before grep-o-matic.
+
+Default Key Bindings:
+
+M-] M-/         Search for current word in current repository
+M-] M-.         Search for current word in current directory (recursive)
+M-] M-,         Search for current word in currently opened files
+                Prefix these with C-u to edit the search regexp")

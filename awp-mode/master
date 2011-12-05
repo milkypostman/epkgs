@@ -1,0 +1,8 @@
+(:summary    "Perform smart line-wrapping with wrap-prefix"
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Stephen Berman" . "stephen.berman@gmx.net")
+	      ("Stefan Monnier" . "monnier@iro.umontreal.ca"))
+ :maintainer ("Stephen Berman" . "stephen.berman@gmx.net")
+ :provided   (awp-mode))

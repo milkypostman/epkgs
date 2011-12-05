@@ -1,0 +1,5 @@
+(:authors    (("Francis Litterio" . "flitterio@gmail.com"))
+ :maintainer ("Francis Litterio" . "flitterio@gmail.com")
+ :provided   (docbook-xml-mode)
+ :homepage   "http://sourceforge.net/projects/docbookxml"
+ :wikipage   "DocbookXmlMode")

@@ -1,0 +1,11 @@
+(:summary    "A [not so] simple chronometer for Emacs"
+ :created    "20040721"
+ :updated    "2004"
+ :license    "GPL-2"
+ :authors    (("Marcelo Toledo" . "marcelo@marcelotoledo.org"))
+ :maintainer ("Marcelo Toledo" . "marcelo@marcelotoledo.org")
+ :provided   (chronometer)
+ :required   ((("ehelp" ehelp)))
+ :keywords   (convenience tools)
+ :homepage   "http://www.marcelotoledo.org/stuff"
+ :wikipage   "ChronometerMode")

@@ -1,0 +1,9 @@
+(:summary    "A utility for designing Emacs color themes"
+ :created    "2002"
+ :updated    "20021203"
+ :license    "GPL-2"
+ :authors    (("Kahlil Hodgson" . "dorge@tpg.com.au"))
+ :maintainer ("Kahlil Hodgson" . "dorge@tpg.com.au")
+ :provided   (color-browser)
+ :required   (((nil color-theme)))
+ :keywords   (convenience))

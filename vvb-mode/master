@@ -1,0 +1,62 @@
+(:summary    "A minor mode to display a Visible Vertical Bar(s)"
+ :created    "1999"
+ :updated    "2002"
+ :license    "GPL-2"
+ :authors    (("Jerry G. Chen" . "gchen275@yahoo.com"))
+ :maintainer (nil . "gchen275@yahoo.com")
+ :provided   (vvb-mode)
+ :required   ((("cl" cl)))
+ :keywords   (minor-mode visual\ highlighting)
+ :commentary "\
+This package implements a minor mode for XEmacs which, when enabled,
+will display a transient or permanent visible vertical bar at a user-
+specified column (ie, `vvb-column'), depending on the value of variable
+`vvb-permanent-p'.  For a transient one, the bar is visible only when
+the point is at a column >= `vvb-column'. The bar can also be made
+\"sticky\" to the point regardless the value of `vvb-column'. If `vvb-columns'
+is a list of columns, a set of vertical bars will show (see case #2 below).
+
+This minor mode can be used with or without font-lock.
+
+To use it, just add this line to your .emacs file:  (require 'vvb-mode)
+
+Here are three usage scenarios that I imagine for this minor mode, and
+the variables to use to satify the requirements:
+
+1. Display a vertical bar always on the column where the point is.
+   This is useful to see how things are aligned in the file.
+   -- (setq-default vvb-sticky-p t)
+
+2. Display a vertical bar *permanently* on a particular column.
+   -- (setq-default vvb-column ?your-preference-here?
+                    vvb-sticky-p nil
+                    vvb-permanent-p t)
+
+   If you want to display a set of vertical bars across each line, assign
+   a list of columns to `vvb-columns' instead of `vvb-column'.
+
+3. Display a vertical bar *transiently* on a particular column
+   only if the point is past over that column.
+   -- (setq-default vvb-column ?your-preference-here?
+                    vvb-sticky-p nil
+                    vvb-permanent-p nil)
+
+In cases 2 & 3, you can make the bar extended all the way to the end of lines
+by (setq-default vvb-right-on-eol-p t)
+
+You can also change the appearance for the vertical bar by customizing this
+face variable, `vvb-face'. eg:
+(set-face-foreground vvb-face \"your-fg-color-name\")
+(set-face-background vvb-face \"your-bg-color-name\")
+
+Caveats/Bugs:
+
+This minor-mode was developed and used in XEmacs v21.0b60. It's
+also tested to be working for XEmacs 20,4, 19.16 & 19.14. Since
+XEmacs-specific extents are used, it will not work out-of-box for
+any version of FSF GNU Emacs.
+
+The vertical bar doesn't show up on lines which are shorter than
+the target column.  And it is not really vertical when it go
+through the middle of a TAB char, or when variable-width fonts are
+used.")

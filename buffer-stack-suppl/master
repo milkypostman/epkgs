@@ -1,0 +1,22 @@
+(:created    "2010"
+ :updated    "20101222"
+ :license    "GPL-2"
+ :provided   (buffer-stack-suppl)
+ :required   ((("buffer-stack" buffer-stack)
+	       ("cl" cl)))
+ :commentary "\
+Change buffer-stack default behaviour to only bubble through buffers of the
+same major-mode.  Switching between all buffers is done with new *-thru-all
+functions.
+
+Put this file into your load-path and the following into your ~/.emacs:
+
+  (require 'buffer-stack-suppl)
+
+  (global-set-key [(f10)] 'buffer-stack-bury)
+  (global-set-key [(control f10)] 'buffer-stack-bury-and-kill)
+  (global-set-key [(f9)] 'buffer-stack-up)
+  (global-set-key [(f11)] 'buffer-stack-down)
+  (global-set-key [(shift f10)] 'buffer-stack-bury-thru-all)
+  (global-set-key [(shift f9)] 'buffer-stack-up-thru-all)
+  (global-set-key [(shift f11)] 'buffer-stack-down-thru-all)")

@@ -1,0 +1,15 @@
+(:summary    "Cygwin symlink handling for Emacs"
+ :created    "2003"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("Edward O'Connor" . "ted@oconnor.cx"))
+ :maintainer ("Edward O'Connor" . "ted@oconnor.cx")
+ :provided   (cygwin-link)
+ :keywords   (convenience files)
+ :homepage   "http://edward.oconnor.cx/elisp"
+ :commentary "\
+This is a quick hack to make Emacs understand Cygwin symlinks.
+
+You should always be able to find the latest version here:
+
+        <URL:http://edward.oconnor.cx/elisp/cygwin-link.el>")

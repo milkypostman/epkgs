@@ -1,0 +1,78 @@
+(:summary    "Tie code editing commands for GNU Emacs"
+ :created    "1990"
+ :updated    "1994"
+ :authors    (("Ricardo E. Gonzalez"))
+ :maintainer ("tie-mode at tensilica dot com")
+ :provided   (tie-mode)
+ :required   ((("compile" compile)
+	       ("emacs" easymenu)))
+ :keywords   (languages)
+ :wikipage   "TieMode"
+ :commentary "\
+To enter tie-mode automatically, add (autoload 'tie-mode \"tie-mode\")
+to your .emacs file and add something like,
+
+(setq auto-mode-alist (append (list (cons \"\\\\.tie\\\\'\" 'tie-mode))
+                              auto-mode-alist))
+
+to your .emacs file; otherwise the .pl suffix defaults to prolog-mode.
+
+This code is based on the 20.7 version perl-mode.el, with extensive
+rewriting.
+
+The rest of the commentary was in the original perl-mode.el
+
+I added a new feature which adds functionality to TAB; it is controlled
+by the variable tie-tab-to-comment.  With it enabled, TAB does the
+first thing it can from the following list:  change the indentation;
+move past leading white space; delete an empty comment; reindent a
+comment; move to end of line; create an empty comment; tell you that
+the line ends in a quoted string, or has a # which should be a \\#.
+
+If your machine is slow, you may want to remove some of the bindings
+to electric-tie-terminator.  I changed the indenting defaults to be
+what Larry Wall uses in tie/lib, but left in all the options.
+
+I also tuned a few things:  comments and labels starting in column
+zero are left there by indent-tie-exp; tie-beginning-of-function
+goes back to the first open brace/paren in column zero, the open brace
+in 'sub ... {', or the equal sign in 'format ... ='; indent-tie-exp
+(meta-^q) indents from the current line through the close of the next
+brace/paren, so you don't need to start exactly at a brace or paren.
+
+It may be good style to put a set of redundant braces around your
+main program.  This will let you reindent it with meta-^q.
+
+Known problems (these are all caused by limitations in the Emacs Lisp
+parsing routine (parse-partial-sexp), which was not designed for such
+a rich language; writing a more suitable parser would be a big job):
+1)  Regular expression delimiters do not act as quotes, so special
+      characters such as `'\"#:;[](){} may need to be backslashed
+      in regular expressions and in both parts of s/// and tr///.
+2)  The globbing syntax <pattern> is not recognized, so special
+      characters in the pattern string must be backslashed.
+3)  The q, qq, and << quoting operators are not recognized; see below.
+4)  \\ (backslash) always quotes the next character, so '\\' is
+      treated as the start of a string.  Use \"\\\\\" as a work-around.
+5)  To make variables such a $' and $#array work, tie-mode treats
+      $ just like backslash, so '$' is the same as problem 5.
+6)  Unfortunately, treating $ like \\ makes ${var} be treated as an
+      unmatched }.  See below.
+7)  When ' (quote) is used as a package name separator, tie-mode
+      doesn't understand, and thinks it is seeing a quoted string.
+
+Here are some ugly tricks to bypass some of these problems:  the tie
+expression /`/ (that's a back-tick) usually evaluates harmlessly,
+but will trick tie-mode into starting a quoted string, which
+can be ended with another /`/.  Assuming you have no embedded
+back-ticks, this can used to help solve problem 3:
+
+    /`/; $ugly = q?\"'$?; /`/;
+
+To solve problem 6, add a /{/; before each use of ${var}:
+    /{/; while (<${glob_me}>) ...
+
+Problem 7 is even worse, but this 'fix' does work :-(
+    $DB'stop#'
+        [$DB'line#'
+         ] =~ s/;9$//;")

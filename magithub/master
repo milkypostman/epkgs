@@ -1,0 +1,20 @@
+(:summary    "Magit extensions for using GitHub"
+ :created    "20100606"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Nathan Weizenbaum"))
+ :maintainer ("Nathan Weizenbaum")
+ :provided   (magithub)
+ :required   ((("cl" cl)
+	       ("crm" crm)
+	       ("json" json)
+	       ("magit" magit)
+	       ("url" url)))
+ :keywords   (git github magit)
+ :homepage   "https://github.com/nex3/magithub"
+ :commentary "\
+This package does two things.  First, it extends Magit's UI with
+assorted GitHub-related functionality, similar to the github-gem
+tool (http://github.com/defunkt/github-gem).  Second, it uses
+Magit's excellent Git library to build an Elisp library for
+interfacing with GitHub's API.")

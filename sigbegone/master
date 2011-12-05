@@ -1,0 +1,66 @@
+(:summary    "Exorcize annoying isp ads and other sigs from emails"
+ :created    "2001"
+ :updated    "20050315"
+ :license    "GPL-2"
+ :authors    (("Neil W. Van Dyke" . "neil@neilvandyke.org"))
+ :maintainer ("Neil W. Van Dyke" . "neil@neilvandyke.org")
+ :provided   (sigbegone)
+ :required   ((("emacs" cus-edit custom)))
+ :homepage   "http://www.neilvandyke.org/sigbegone"
+ :commentary "\
+INTRODUCTION:
+
+  `sigbegone.el' can be used to visually de-emphasize email sigs, especially
+  the advertisements appended to messages by some free email account
+  providers.
+
+SYSTEM REQUIREMENTS:
+
+  The `sigbegone.el' package was written using FSF GNU Emacs 21 on a
+  GNU/Linux system, and should work with recent Emacs versions on Unix
+  variants.  `sigbegone.el' has not been tested with the XEmacs fork of
+  Emacs, and I'd welcome any necessary patches.
+
+  `sigbegone.el' has special support for the VM email reader package
+  (`http://www.wonderworks.com/vm/', tested with version 7.19) by Kyle
+  E. Jones, and Gnus news and mail reader (`http://www.gnus.org/', very
+  minimally tested with version 5.9.0) by Lars Magne Ingebrigtsen.  Neither
+  of those packages is required to use `sigbegone.el', however.
+
+INSTALLATION:
+
+  1. Put this `sigbegone.el' file somewhere in your Emacs Lisp load path.
+
+  2. Add the following to your `.emacs' file (or elsewhere):
+
+         (require 'sigbegone)
+
+  3. After either restarting Emacs or loading the package, do:
+
+         M-x sigbegone-customize RET
+
+     and adjust the options however you like.
+
+  4. If you want to exorcize sigs in Emacs programs other than VM or Gnus,
+     arrange for the function `sigbegone-exorcize-buffer' to be called
+     whenever your program displays a new message in a buffer.  You may also
+     wish to bind `sigbegone-denounce-from-point' to a key or menu item for
+     the buffer.
+
+HOW TO USE IT:
+
+  By default, many sigs shown in your VM mail reader (or whatever program
+  you hooked up to `sigbegone-exorcize-buffer') should be displayed in a
+  barely-readable color.  These sigs are known as \"exorcized.\"  If you
+  desire to read an exorcised sig, you can move the mouse over it to make it
+  temporarily appear in a more visible color.
+
+  To cause `sigbegone.el' to exorcize a sig that it does not currently
+  exorcize, you \"denounce\" the sig by positioning the point somewhere on the
+  first line of the sig (or on a preceding blank line), and invoking
+  `sigbegone-denounce-from-point' (which by default is bound to [C-c C-s] in
+  VM.  The sig will be highlighted in white-on-red while you are prompted
+  \"Denounce the highlighted sig? (y or n)\".
+
+  `sigbegone.el' uses the `custom' facility of Emacs to store both normal
+  options and also a list of the sigs that you've denounced in the past.")

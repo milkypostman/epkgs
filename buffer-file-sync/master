@@ -1,0 +1,4 @@
+(:updated    "20060201"
+ :license    "GPL-2"
+ :provided   (buffer-file-sync)
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/file-handling")

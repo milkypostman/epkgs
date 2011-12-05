@@ -1,0 +1,12 @@
+(:summary    "Writable grep buffer and apply the changes to files"
+ :license    "GPL-3"
+ :authors    (("Masahiro Hayashi" . "mhayashi1120@gmail.com"))
+ :maintainer ("Masahiro Hayashi" . "mhayashi1120@gmail.com")
+ :provided   (wgrep)
+ :required   ((("cl" cl)
+	       ("grep" grep)))
+ :keywords   (edit extensions grep)
+ :homepage   "https://github.com/mhayashi1120/Emacs-wgrep"
+ :commentary "\
+wgrep provides to edit grep buffer and to apply the changes to
+the file buffer.")

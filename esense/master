@@ -1,0 +1,11 @@
+(:created    "2006"
+ :updated    "2006"
+ :license    "GPL-2"
+ :provided   (esense esense-distel esense-start esense-trace)
+ :required   ((("cl" cl)
+	       ("distel" distel)
+	       ("emacs" tooltip)
+	       ("erlang" erlang)
+	       ("etags" etags)))
+ :homepage   "http://esense.sourceforge.net"
+ :wikipage   "ESense")

@@ -1,0 +1,8 @@
+(:summary    "Support for $-substitution"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :provided   (string-template)
+ :required   ((("cl" cl)))
+ :keywords   (emacs functionality string)
+ :homepage   "https://github.com/renard/string-template-el")

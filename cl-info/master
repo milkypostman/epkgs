@@ -1,0 +1,50 @@
+(:summary    "Do quick HypeSpec lookup in Emacs using the Info pages"
+ :created    "2007"
+ :updated    "2007"
+ :license    "GPL-2"
+ :authors    (("John Wiegley" . "johnw@newartisans.com"))
+ :maintainer ("John Wiegley" . "johnw@newartisans.com")
+ :provided   (cl-info)
+ :keywords   (doc hyperspec info lisp)
+ :commentary "\
+If you'd rather read HyperSpec references very quickly within Emacs, this
+module is for you.  It rebinds the meaning of C-h f in lisp-mode buffers to
+access the HyperSpec docs, rather than looking up docstrings for Emacs
+functions.  Also, it changes the behavior of 'q' in *info* buffers so that
+the window goes away on its own.
+
+Dependencies:
+
+This module depends on Info format of Common Lisp HyperSpec, described on
+Bill Clementon's blog, at http://bc.tech.coop/blog/031002.html.  The info
+pages themselves can be found here:
+
+  ftp://ftp.gnu.org/pub/gnu/gcl/gcl.info.tgz
+
+This package relies on parts of SLIME, so that must be installed already.
+Also, don't forget to configure `Info-additional-directory-list' to point
+to where you've put the Info pages, unless you installed them in a standard
+location.  **If you put them in their own directory**, you're going to need
+to make a proper \"dir\" file and put it in that same directory.  That file
+should look like this:
+
+<BEGIN>
+-*- Text -*-
+This is the file .../info/dir, which contains the topmost node of the
+Info hierarchy.  The first time you invoke Info you start off
+looking at that node, which is (dir)Top.
+
+File: dir	Node: Top	This is the top of the INFO tree
+  This (the Directory node) gives a menu of major topics. 
+  Typing \"d\" returns here, \"q\" exits, \"?\" lists all INFO commands, \"h\" 
+  gives a primer for first-timers, \"mEmacs<Return>\" visits the Emacs topic,
+  etc.
+  In Emacs, you can click mouse button 2 on a menu item or cross reference
+  to select it.
+  --- PLEASE ADD DOCUMENTATION TO THIS TREE. (See INFO topic first.) ---
+
+* Menu: The list of major topics begins on the next line.
+
+Common Lisp
+* HyperSpec: (gcl).     The Common Lisp HyperSpec.
+<END>")

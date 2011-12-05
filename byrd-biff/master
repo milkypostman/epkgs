@@ -1,0 +1,7 @@
+(:summary    "Mail notification"
+ :created    "1990"
+ :updated    "19911030"
+ :authors    (("Mike Williams" . "byrd@comp.vuw.ac.nz"))
+ :maintainer ("Mike Williams" . "byrd@comp.vuw.ac.nz")
+ :provided   (byrd-biff)
+ :required   ((("emacs" timer))))

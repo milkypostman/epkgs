@@ -1,0 +1,69 @@
+(:summary    "Implementation of the Internet Printing Protocol"
+ :license    "GPL-2"
+ :authors    (("Eric Marsden" . "emarsden@laas.fr"))
+ :maintainer ("Eric Marsden" . "emarsden@laas.fr")
+ :provided   (ipp)
+ :required   ((("cl" cl)))
+ :keywords   (printing)
+ :homepage   "http://emarsden.chez.com/downloads"
+ :commentary "\
+The Internet Printing Protocol is intended to replace the LPD
+protocol for interacting with network printers. It specifies
+mechanisms for querying the capabilities of a printer, submitting
+and cancelling jobs, and queue monitoring.
+
+You can find out whether a device is IPP-capable by trying to
+telnet to port 631. If it accepts the connection it probably
+understands IPP. You then need to discover the path component of
+the URI, for example by reading the documentation or from a driver
+program. Tested or reported to work on the following devices:
+
+  * Tektronix Phaser 750, with an URI of the form ipp://host:631/
+    (empty path component)
+
+  * HP Laserjet 4000, with a path component of /ipp/port1.
+
+  * Xerox Document Centre 460 ST, with empty path component.
+
+  * CUPS printer spooler (see <URL:http://www.cups.org/>).
+
+
+Usage: load this package by putting in your ~/.emacs.el
+
+   (require 'ipp)
+
+then try printing a file using 'M-x ipp-print'. This will prompt
+you for a file name (which should be in a format understood by the
+printer, such as Postscript), and the URI of the printer. There are
+also two functions for querying the capability of the device
+`ipp-get-attributes' and examining its queue `ipp-get-jobs'. Until
+I write display code for these functions you will have to call them
+from the *scratch* buffer with C-j to examine their return value.
+
+
+The IPP network protocol is based on HTTP/1.1 POST requests, using
+a special \"application/ipp\" MIME Content-Type. The data is encoded
+using simple marshalling rules.
+
+The Internet Printing Protocol is described in a number of RFCs:
+  <URL:http://www.faqs.org/rfcs/rfc2565.html>
+  <URL:http://www.faqs.org/rfcs/rfc2566.html>
+  <URL:http://www.faqs.org/rfcs/rfc2568.html>
+
+and the Printer Working Group maintain a page at
+
+  <URL:http://www.pwg.org/ipp/>
+
+
+Eventually it would be nice to modify the Emacs printing API to
+support this type of direct printing, so that a user could set
+`ps-printer-name' to \"ipp://modern-printer:631/\" or
+\"lpd://ancient-printer/queue\" (it would be easy to write a package
+similar to this one implementing the LPD protocol at the network
+level; the LDP protocol is very simple).
+
+See also printing.el at <URL:http://www.cpqd.br/~vinicius/emacs/>.
+
+
+Thanks to Vinicius Jose Latorre for patches and Colin Marquardt and
+Andrew Cosgriff for help in debugging.")

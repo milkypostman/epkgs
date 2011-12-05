@@ -1,0 +1,24 @@
+(:summary    "Support sregex.el for searching"
+ :created    "1999"
+ :updated    "1999"
+ :license    "GPL-2"
+ :authors    (("Tom Breton" . "tob@world.std.com"))
+ :maintainer ("Tom Breton" . "tob@world.std.com")
+ :keywords   (extensions)
+ :homepage   "http://www.panix.com/~tehom"
+ :commentary "\
+Inspired by Bob Glickstein's sregex, this package lets you compose
+regular expressions for regex searching in a special buffer, in the
+more readable sregex format.
+
+EG, \"^a*$\" is written as ``bol (star \"a\" ) eol''
+
+Special disclaimer: I wrote it on a whim after seeing sregex.  I
+haven't added bells and whistles or actual help documentation.
+This should be considered alpha software.
+
+This requires tehom-1.el, tehom-2.el, sregex, and isearch.
+
+I've copied (defmacro regex ...) from sregex in order to fix it.
+This file will automatically load sregex first, but if you change
+that to make sregex load later, it will not work.")

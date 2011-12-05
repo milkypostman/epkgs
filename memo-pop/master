@@ -1,0 +1,9 @@
+(:summary    "Helps you pop up and pop out a specific file buffer easily"
+ :created    "20090603"
+ :updated    "20090609"
+ :license    "GPL-2"
+ :authors    (("Kazuo YAGI" . "kyagi@1liner.jp"))
+ :maintainer ("Kazuo YAGI" . "kyagi@1liner.jp")
+ :provided   (memo-pop)
+ :keywords   (tools)
+ :wikipage   "MemoPop")

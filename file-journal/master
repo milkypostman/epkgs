@@ -1,0 +1,6 @@
+(:summary    "Revisit files by date"
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-2"
+ :provided   (file-journal)
+ :required   ((("cl" cl))))

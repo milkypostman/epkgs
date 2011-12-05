@@ -1,0 +1,55 @@
+(:summary    "Anything command for PDF books"
+ :created    "2010"
+ :updated    "20110204"
+ :license    "GPL-3"
+ :authors    (("SAKURAI Masashi" . "m.sakurai@kiwanami.net"))
+ :maintainer ("SAKURAI Masashi" . "m.sakurai@kiwanami.net")
+ :provided   (anything-books)
+ :required   ((("cl" cl)
+	       ("deferred" concurrent)))
+ :keywords   (anything convenience)
+ :homepage   "https://github.com/kiwanami/emacs-anything-books"
+ :commentary "\
+This program collects PDF files in your book directory and show
+them in the Anything interface with a preview image. You can select
+a PDF more efficiently.
+
+Installation:
+
+This program is dependent on followings:
+- anything.el (http://www.emacswiki.org/cgi-bin/wiki/download/anything.el)
+- deferred.el (http://github.com/kiwanami/emacs-deferred/raw/master/deferred.el)
+- concurrent.el (http://github.com/kiwanami/emacs-deferred/raw/master/concurrent.el)
+- evince-thumbnailer, ImageMagick(convert)
+If you have an another method to create a cover image from a PDF file,
+you can use it with some customize variables.
+
+Put anything-books.el in your load-path, and add following code.
+
+(require 'anything-books)
+(setq abks:boos-dir \"your PDF library path!\")
+(global-set-key (kbd \"M-8\") 'anything-books-command) ; key bind example
+
+
+Customize
+
+## Cache directory
+
+This program creates a cache directory for PDF cover images at the
+PDF directory.  The directory name of the cache directory is the
+value of `abks:cache-dir', the default is `.cache'.
+
+## PDF cover image
+
+The cover images for the PDF files are created by the program
+`abks:mkcover-cmd', the default is `evince-thumbnailer' which is
+default document browser of the GNOME desktop environment.  If you
+have the ImageMagick and the GhostScript, you can use the command
+`convert' to make a cover image. Note that `evince-thumbnailer'
+works faster than `convert'.
+
+Mac users (Leopard or later)  use `qlmanager' to create a cover
+image.
+
+The other programs can be also available, such as `pdfimages',
+`pdf2png' and so on.")

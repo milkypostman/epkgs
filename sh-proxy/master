@@ -1,0 +1,39 @@
+(:summary    "Experiment with elisp proxies for shell commands"
+ :provided   (sh-proxy)
+ :homepage   "https://github.com/jave/sh-proxy"
+ :commentary "\
+(sh-proxy-create \"df\") defines a function sh/df
+which takes keyword args corresponding to the flags of df.
+eldoc works and function docstring
+
+motivation: rather than a bunch of ugly notes like these:
+
+export X=zen-mode
+export USR=jave
+export PASSWD=notmyactualpwd
+;mkdir $X
+cd $X
+ln -s *.el README
+git init
+git add .
+git commit -m\"initial commit\"
+curl -u \"$USR:$PASSWD\" -F \"name=$X\"  http://github.com/api/v2/json/repos/create/
+git remote add origin git@github.com:jave/$X.git
+git push origin master
+
+Id like nice lisp:
+
+(defun github-init-proj (x usr passwd)
+  (cd x)
+  (sh/ln :s \"*.el\" \"README\")
+  (sh/git-init)
+  (sh/git-add \".\")
+  (sh/git-commit :m \"initial commit\")
+  (sh/curl :u (concat usr \":\" passwd) :F (concat \"name=\" x)  \"http://github.com/api/v2/json/repos/create/\")
+  (sh/git-remote :add \"origin\" (format \"git@github.com:jave/%s.git\" x))
+  (sh/git-push \"origin\" \"master\"))
+
+sh-proxy currently works somewhat with gnu style help output,
+but not gits man style help output.
+
+sh-proxy.el was inspired by dbus-proxy.el")

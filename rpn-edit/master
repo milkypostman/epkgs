@@ -1,0 +1,6 @@
+(:summary    "Reverse polish editing commands, aimed at voice command use"
+ :updated    "20050428"
+ :license    "GPL-2"
+ :provided   (rpn-edit)
+ :required   ((("cl" cl)))
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/handsfree")

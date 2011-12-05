@@ -1,0 +1,21 @@
+(:summary    "Mark and select interface"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Yuta Namiki"))
+ :maintainer ("Yuta Namiki")
+ :provided   (mark-select)
+ :required   ((("cl" cl)))
+ :keywords   (lisp)
+ :homepage   "https://github.com/namikister/mark-select"
+ :commentary "\
+mark-select-multi
+
+(let ((hash (make-hash-table :test 'equal)))
+  (setf (gethash \"lang\" hash) '(\"Select program languages\"
+                                ((\"Lisp\" . t) \"Perl\" \"Ruby\")))
+  (setf (gethash \"file\" hash) '(\"Select files\"
+                                ((\"file1\" . t)
+                                 (\"file2\" . t)
+                                 (\"file3\" . t))))
+  (mark-select-multi hash 'do-func \"mode-name\"))")

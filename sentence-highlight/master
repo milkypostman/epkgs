@@ -1,0 +1,8 @@
+(:summary    "Highlight the current sentence"
+ :created    "2011"
+ :updated    "2011"
+ :authors    (("Simon Belak" . "sb@hekovnik.si"))
+ :maintainer ("Simon Belak" . "sb@hekovnik.si")
+ :provided   (sentence-highlight)
+ :keywords   (editing focus highlight plain\ text writing)
+ :wikipage   "SentenceHighlight")

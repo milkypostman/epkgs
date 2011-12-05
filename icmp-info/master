@@ -1,0 +1,25 @@
+(:summary    "ICMP information tool"
+ :created    "2002"
+ :updated    "2002"
+ :license    "GPL-2"
+ :provided   (icmp-info)
+ :required   ((("cl" cl)))
+ :homepage   "http://www.davep.org/emacs"
+ :commentary "\
+icmp-info.el provides a set of functions for getting information about
+ICMP types and codes. This could be useful for the occasional packet log
+reader.
+
+The latest icmp-info.el is always available from:
+
+  <URL:http://www.davep.org/emacs/icmp-info.el>
+
+INSTALLATION:
+
+o Drop icmp-info.el somwehere into your `load-path'. Try your site-lisp
+  directory for example (you might also want to byte-compile the file).
+
+o Add the following autoload statement to your ~/.emacs file:
+
+  (autoload 'icmp-lookup \"icmp-info\" \"Perform an ICMP lookup\" t)
+  (autoload 'icmp-list   \"icmp-info\" \"List ICMP types and codes\" t)")

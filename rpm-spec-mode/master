@@ -1,0 +1,26 @@
+(:summary    "RPM spec file editing commands for Emacs/XEmacs"
+ :created    "2002"
+ :updated    "2002"
+ :license    "GPL-2"
+ :authors    (("Stig Bjørlykke," . "stigb@tihlde.org"))
+ :maintainer ("Stig Bjørlykke," . "stigb@tihlde.org")
+ :provided   (rpm-spec-mode)
+ :required   ((("cc-mode" cc-mode)
+	       ("emacs" easymenu)
+	       ("sh-script" sh-script)
+	       ("shindent" shindent)))
+ :keywords   (languages unix)
+ :wikipage   "RpmSpecMode"
+ :commentary "\
+This mode is used for editing spec files used for building RPM packages.
+
+Most recent version is available from:
+ <URL:http://www.tihlde.org/~stigb/rpm-spec-mode.el>
+
+Put this in your .emacs file to enable autoloading of rpm-spec-mode,
+and auto-recognition of \".spec\" files:
+
+ (autoload 'rpm-spec-mode \"rpm-spec-mode.el\" \"RPM spec mode.\" t)
+ (setq auto-mode-alist (append '((\"\\\\.spec\" . rpm-spec-mode))
+                               auto-mode-alist))
+------------------------------------------------------------")

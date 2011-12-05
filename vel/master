@@ -1,0 +1,9 @@
+(:summary    "Keyboard/mouse-based \"self-scroller\""
+ :created    "2002"
+ :updated    "20030226"
+ :license    "GPL-2"
+ :authors    (("D. Goel" . "deego@glue.umd.edu"))
+ :maintainer ("D. Goel" . "deego@glue.umd.edu")
+ :provided   (vel)
+ :required   ((("cl" cl)))
+ :homepage   "http://www.gnufans.net/~deego/emacs.html")

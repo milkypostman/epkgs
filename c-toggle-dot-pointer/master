@@ -1,0 +1,11 @@
+(:summary    "Functions for toggling a variable in a C function between pointer and non-pointer"
+ :created    "2006"
+ :updated    "2006"
+ :license    "GPL-2"
+ :provided   (c-toggle-dot-pointer)
+ :keywords   (c languages)
+ :commentary "\
+Kind of hard to describe - try it! :-) Basically, if you're on a \"*\",
+it will delete the \"*\" and then change all references using that variable
+in the function from \"->\" to \".\". If you're not on a \"*\", then it will add
+a \"*\" and change references within the function form using \".\" to \"->\".")

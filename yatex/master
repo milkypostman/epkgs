@@ -1,0 +1,6 @@
+(:provided   (yahtml yatex yatex19 yatexadd yatexenv yatexgen yatexhie yatexhks yatexinf yatexlib yatexmth yatexprc yatexsec)
+ :required   ((("comment" comment)
+	       ("emacs" font-lock)
+	       ("info" info)))
+ :homepage   "http://www.yatex.org"
+ :wikipage   "YaTeX")

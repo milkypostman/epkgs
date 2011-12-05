@@ -1,0 +1,14 @@
+(:summary    "Lightning completion"
+ :updated    "2005"
+ :license    "GPL-2"
+ :authors    (("Mark Haiman" . "mhaiman@macaulay.ucsd.edu")
+	      ("Nick Reingold,")
+	      ("John Palmieri" . "palmieri@math.washington.edu"))
+ :maintainer ("John Palmieri" . "palmieri@math.washington.edu")
+ :provided   (bufcomp light)
+ :required   ((("cl" cl)
+	       ("emacs" custom)
+	       ("ispell" ispell)))
+ :keywords   (completion)
+ :homepage   "http://www.math.washington.edu/~palmieri/Emacs/light.html"
+ :wikipage   "LightningCompletion")

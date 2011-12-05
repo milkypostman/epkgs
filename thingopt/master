@@ -1,0 +1,14 @@
+(:summary    "Thing at Point optional utilities"
+ :created    "2008"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Tomohiro Matsuyama" . "tomo@cx4a.org"))
+ :maintainer ("Tomohiro Matsuyama" . "tomo@cx4a.org")
+ :provided   (thingopt)
+ :required   ((("cl" cl)
+	       ("thingatpt" thingatpt)))
+ :keywords   (convenience)
+ :homepage   "https://github.com/m2ym/thingopt-el"
+ :commentary "\
+TODO documentation
+TODO forward-string by syntax (?)")

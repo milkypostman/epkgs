@@ -1,0 +1,11 @@
+(:summary    "Changes three dots to `\\ldots' on the fly"
+ :created    "20051030"
+ :updated    "2005"
+ :license    "GPL-2"
+ :authors    (("Jesse Rosenthal" . "jesse.k.rosenthal@gmail.com"))
+ :maintainer ("Jesse Rosenthal" . "jesse.k.rosenthal@gmail.com")
+ :homepage   "http://columbia.edu/~jr2075/elisp"
+ :commentary "\
+This just adds in a feature I can't see to find in AUCTeX: the
+ability to do on-the-fly rewriting of three dots as `\\ldots'. Not a
+big deal, but I missed the feature.")

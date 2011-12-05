@@ -1,0 +1,8 @@
+(:provided   (reddit)
+ :required   ((("cl" cl)
+	       ("json" json)
+	       ("markdown-mode" markdown-mode)
+	       ("thingatpt" thingatpt)
+	       ("tree-mode" tree-mode)
+	       ("url" url url-http)))
+ :homepage   "https://github.com/death/reddit-mode")

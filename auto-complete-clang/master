@@ -1,0 +1,13 @@
+(:summary    "Auto Completion source for clang for GNU Emacs"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Brian Jiang" . "brianjcj@gmail.com"))
+ :maintainer ("Brian Jiang" . "brianjcj@gmail.com")
+ :provided   (auto-complete-clang)
+ :required   ((("auto-complete" auto-complete)))
+ :keywords   (completion convenience)
+ :homepage   "https://github.com/brianjcj/auto-complete-clang"
+ :commentary "\
+Auto Completion source for clang. Most of codes are taken from
+company-clang.el and modified and enhanced for Auto Completion.")

@@ -1,0 +1,27 @@
+(:summary    "Some extension for haskell mode"
+ :created    "20081015"
+ :updated    "20081015"
+ :license    "GPL-3"
+ :authors    ((nil . "andy stewart lazycat.manatee@gmail.com"))
+ :maintainer (nil . "andy stewart lazycat.manatee@gmail.com")
+ :provided   (haskell-extension)
+ :required   ((("haskell-mode" haskell-mode)))
+ :keywords   (haskell)
+ :commentary "\
+Comment
+
+
+Installation:
+
+Put haskell-extension.el to your load-path.
+The load-path is usually ~/elisp/.
+It's set in your ~/.emacs like this:
+(add-to-list 'load-path (expand-file-name \"~/elisp\"))
+
+And the following to your ~/.emacs startup file.
+
+(require 'haskell-extension)
+
+No need more
+
+Configuration:")

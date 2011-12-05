@@ -1,0 +1,11 @@
+(:summary    "Window configuration navigation utility"
+ :created    "2007"
+ :updated    "20070718"
+ :license    "GPL-2"
+ :authors    (("Christoffer S. Hansen" . "csh@freecode.dk"))
+ :maintainer ("Christoffer S. Hansen" . "csh@freecode.dk")
+ :provided   (policy-switch)
+ :required   ((("cl" cl)
+	       ("desktop" desktop)
+	       ("winner" winner)))
+ :wikipage   "PolicySwitch")

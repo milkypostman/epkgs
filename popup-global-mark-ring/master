@@ -1,0 +1,35 @@
+(:summary    "Jumping Interactively through global mark ring"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("whitypig" . "whitypig@gmail.com"))
+ :maintainer ("whitypig" . "whitypig@gmail.com")
+ :provided   (popup-global-mark-ring)
+ :required   ((("popup" popup)))
+ :keywords   (emacs lisp meadow popup)
+ :homepage   "https://github.com/whitypig/popup-global-mark-ring"
+ :commentary "\
+This software is greatly inspired by popup-kill-ring
+and created thanks to popup.el,
+so I'd like to express my gratitude to its authors.
+
+Apparently, there still are many bugs, so please be generous.
+
+Requirement:
+
+* popup.el   http://github.com/m2ym/auto-complete
+
+Installation:
+
+Copy popup-global-mark-ring.el to your load-path and add to your .emacs:
+
+(require 'popup-global-mark-ring)
+
+To use popup-global-mark-ring, do M-x popup-global-mark-ring.
+Or assign the key whatever you want to to 'popup-global-mark-ring.
+For example,
+(global-set-key \"\\C-c\\C-g\" 'popup-global-mark-ring)
+
+Usage notes
+When a menu is being showd, you can switch between global-mark-ring
+menu and local-mark-ring menu by \"\\C-t\".")

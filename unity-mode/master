@@ -1,0 +1,3 @@
+(:summary    "Minor mode for Unity, CMock, and Ceedling"
+ :provided   (unity-auto-config unity-custom-settings unity-mode unity-rakefile unity-tests)
+ :homepage   "https://github.com/mjago/unity-mode")

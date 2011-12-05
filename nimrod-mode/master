@@ -1,0 +1,10 @@
+(:summary    "A major mode for the Nimrod programming language"
+ :created    "201116"
+ :updated    "201116"
+ :license    "GPL-2"
+ :authors    (("James H. Fisher" . "jameshfisher@gmail.com"))
+ :maintainer ("James H. Fisher" . "jameshfisher@gmail.com")
+ :provided   (nimrod-mode)
+ :required   ((("emacs" newcomment)))
+ :keywords   (nimrod)
+ :homepage   "https://github.com/eegg/nimrod-mode")

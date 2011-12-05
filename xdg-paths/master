@@ -1,0 +1,34 @@
+(:created    "2011"
+ :updated    "2011"
+ :license    "GPL-3"
+ :provided   (xdg-paths)
+ :required   ((("cl" cl)))
+ :homepage   "https://github.com/tomprince/xdg-paths-el"
+ :commentary "\
+This package sets the directory according to the XDG Base
+Directory Specification.  The directories are given by the
+environment variables, falling back to the defaults enumerated
+in the standard.
+
+The $XDG_RUNTIME_DIR was not contemplated here, since we found
+no practical use for it.
+
+The defaults (or generated values) are:
+
+         Symbol                         Default
+ user-emacs-data-directory     ~/.local/share/emacs/
+ user-emacs-config-directory   ~/.config/emacs/
+ user-emacs-cache-directory    ~/.cache/emacs/
+ user-emacs-lisp-directory     `user-emacs-data-directory`/lisp
+ user-documents-directory      ~/Documents
+
+Some convenience functions are defined to locate files in these
+directories and to add user lisp to load-path.
+
+Some advantages are:
+
+Installation:
+
+  1. put xdg-paths in your own path.
+  2. Start your .emacs with (load-library 'xdg-paths) or,
+     write (load-library 'xdg-paths) in site-start.el")

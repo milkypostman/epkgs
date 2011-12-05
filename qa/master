@@ -1,0 +1,9 @@
+(:summary    "Some elisp to make life easier for QA Engineers"
+ :created    "2004"
+ :updated    "2004"
+ :provided   (qa)
+ :required   ((("cl" cl)
+	       ("edb" database)))
+ :homepage   "http://www.gnuvola.org/software/qa"
+ :commentary "\
+See qa.info for documentation.")

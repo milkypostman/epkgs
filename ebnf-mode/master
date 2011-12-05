@@ -1,0 +1,14 @@
+(:summary    "Highlight mode for Extended Backus-Naur Form"
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Jeramey Crawford" . "jeramey@antihe.ro"))
+ :maintainer ("Jeramey Crawford" . "jeramey@antihe.ro")
+ :provided   (ebnf-mode)
+ :keywords   (faces)
+ :homepage   "https://github.com/jeramey/ebnf-mode"
+ :commentary "\
+This major mode provides basic syntax highlighting for Extended
+Backus-Naur Form metasyntax texts. For more information on what
+EBNF is, consult Wikipedia:
+<http://en.wikipedia.org/wiki/Extended_Backus-Naur_Form>")

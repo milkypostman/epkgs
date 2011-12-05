@@ -1,0 +1,20 @@
+(:summary    "Major mode for SiSU markup text"
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Ambrose Kofi Laing (& Ralph Amissah)"))
+ :maintainer ("Ambrose Kofi Laing (& Ralph Amissah)")
+ :provided   (sisu-mode)
+ :keywords   (processes text tools)
+ :commentary "\
+SiSU (http://www.sisudoc.org/) is a document structuring and
+publishing framework.  This package provides an Emacs major mode
+for SiSU markup.
+
+When this package is installed, files ending in \".sisu\" are
+automatically associated with sisu-mode.  If a file doesn't have a
+.sisu extension, add a first line:
+# -*- Sisu -*-
+
+The documentation for the \"Structure Of The Hierarchy Text\" can be
+found in the sisustring for the sisu-mode function.")

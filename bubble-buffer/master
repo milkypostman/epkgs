@@ -1,0 +1,7 @@
+(:created    "2004"
+ :updated    "20040618"
+ :license    "GPL-2"
+ :authors    (("Stefan Reichoer," . "xsteve@nit.at"))
+ :maintainer ("Stefan Reichoer," . "xsteve@nit.at")
+ :provided   (bubble-buffer)
+ :homepage   "http://www.xsteve.at/prg/emacs")

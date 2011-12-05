@@ -1,0 +1,27 @@
+(:summary    "Major mode for editing (mm?)CIF files"
+ :created    "1999"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("Dave Love" . "fx@gnu.org"))
+ :maintainer ("Dave Love" . "fx@gnu.org")
+ :provided   (cif)
+ :homepage   "http://www.loveshack.ukfsn.org/emacs"
+ :commentary "\
+Has a superset (roughly) of the useful functionality of a version
+done by Martyn Winn.  This is a completely different implementation
+which is more Emacs-canonical in interface and implementation, is
+simpler, and is GPLed.
+
+Functionality: Font Lock, Imenu, Which Function, loops and data
+blocks as functions, skeleton commands.  Potentially useful for
+dictionaries too, since it also supports save_ stuff.  Also examples
+of transformation commands similar to the PDB versions.
+
+Probably requires Emacs 21.  Needs font-lock on to deal properly
+with the syntax.
+
+Consider in .emacs:
+  (add-to-list 'auto-mode-alist '(\"\\\\.cif\\\\'\" . cif-mode))
+  (autoload 'cif-mode \"cif\")
+
+etags recipe for dictionary:  etags -r '/save_\\([^ ]+\\)/\\1/' ...")

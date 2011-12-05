@@ -1,0 +1,9 @@
+(:summary    "Windows Scripting Host REPL (in javascript)"
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-2"
+ :authors    (("Jonathan Arkell" . "jonnay@jonnay.net"))
+ :maintainer ("Jonathan Arkell" . "jonnay@jonnay.net")
+ :provided   (wsh-repl)
+ :required   ((("emacs" comint)))
+ :wikipage   "WshRepl")

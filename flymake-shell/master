@@ -1,0 +1,13 @@
+(:summary    "A flymake syntax-checker for shell scripts"
+ :created    "2011"
+ :updated    "2011"
+ :authors    (("Steve Purcell" . "steve@sanityinc.com"))
+ :maintainer ("Steve Purcell" . "steve@sanityinc.com")
+ :provided   (flymake-shell)
+ :required   ((("flymake" flymake)))
+ :wikipage   "FlymakeShell"
+ :commentary "\
+Usage:
+
+  (require 'flymake-shell)
+  (add-hook 'sh-set-shell-hook 'flymake-shell-load)")

@@ -1,0 +1,26 @@
+(:summary    "Interwikis for wiki.el"
+ :created    "2001"
+ :updated    "2001"
+ :license    "GPL-2"
+ :authors    (("Alex Schroeder" . "alex@gnu.org"))
+ :maintainer ("Alex Schroeder" . "alex@gnu.org")
+ :provided   (wiki-inter)
+ :required   ((("thingatpt" thingatpt)
+	       ("wiki" wiki)))
+ :keywords   (hypermedia)
+ :wikipage   "WikiInter"
+ :commentary "\
+Support Interwiki link such as JargonFile:luser for wiki.el without
+aktually hacking wiki.el.
+
+This appends `wiki-inter-highlight' to `wiki-highlight-buffer-hook'
+such that interlink are highlighted and get their own local keymap,
+and it advises `wiki-no-name-p' such that wiki names within the
+interlink are not recognized as such.
+
+Customize `wiki-inter-links' to add more magic.
+
+Note that in order to publish, `wiki-inter-link-publish' must be on
+`wiki-pub-rules'.  Loading this file puts it there, if you have
+customized the rules, however, you will have to add
+`wiki-inter-link-publish' manually.")

@@ -1,0 +1,5 @@
+(:updated    "20070319"
+ :provided   (contexts)
+ :required   ((("memory-monitor" memory-monitor)
+	       ("savebuffer" savebuffer)))
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/persistence")

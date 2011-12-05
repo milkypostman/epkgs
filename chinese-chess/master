@@ -1,0 +1,32 @@
+(:summary    "Chinese Chess Game"
+ :updated    "20070215"
+ :license    "GPL-2"
+ :authors    ((nil . "wenbinye@163.com"))
+ :maintainer (nil . "wenbinye@163.com")
+ :provided   (chinese-chess)
+ :required   ((("cl" cl)
+	       ("emacs" cus-edit)))
+ :commentary "\
+车--马--象--士--将--士--象--马--车
+ |   |   |   | \\ | / |   |   |   |
+ +---+---+---+---+---+---+---+---+
+ |   |   |   | / | \\ |   |   |   |
+ +--炮---+---+---+---+---+---炮--+
+ |   |   |   |   |   |   |   |   |
+兵---+--兵---+--兵---+--兵---+--兵
+ |   |   |   |   |   |   |   |   |
+ +---+---+---+---+---+---+---+---+
+ |                               |
+ +---+---+---+---+---+---+---+---+
+ |   |   |   |   |   |   |   |   |
+卒---+--卒---+--卒---+--卒---+--卒
+ |   |   |   |   |   |   |   |   |
+ +--炮---+---+---+---+---+---炮--+
+ |   |   |   | \\ | / |   |   |   |
+ +---+---+---+---+---+---+---+---+
+ |   |   |   | / | \\ |   |   |   |
+車--馬--相--仕--帅--仕--相--馬--車
+
+
+Put this file into your load-path and the following into your ~/.emacs:
+  (autoload 'chinese-chess \"chinese-chess\" \"Play chinese chess game.\" t)")

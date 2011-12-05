@@ -1,0 +1,20 @@
+(:summary    "Major mode API client for status.net open microblogging"
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-2"
+ :authors    (("Gabriel Saldana" . "gsaldana@gmail.com"))
+ :maintainer ("Gabriel Saldana" . "gsaldana@gmail.com")
+ :provided   (bbdb-identica identica-friends identica-mode)
+ :required   ((("bbdb" bbdb bbdb-com)
+	       ("cl" cl)
+	       ("emacs" image)
+	       ("json" json)
+	       ("longlines" longlines)
+	       ("oauth" oauth)
+	       ("parse-time" parse-time)
+	       ("url" url url-http)
+	       ("w3m" w3m)
+	       ("xml" xml)
+	       (nil bbdb-mua)))
+ :keywords   (identica web)
+ :wikipage   "Identica-mode")

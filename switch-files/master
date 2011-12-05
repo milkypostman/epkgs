@@ -1,0 +1,6 @@
+(:created    "2004"
+ :updated    "2004"
+ :license    "GPL-2"
+ :provided   (switch-files)
+ :homepage   "https://github.com/hardaker/elisp-switch-files"
+ :wikipage   "SwitchFiles")

@@ -1,0 +1,31 @@
+(:summary    "Attempt to prevent named buffers from deletion"
+ :created    "2000"
+ :updated    "2000"
+ :license    "GPL-2"
+ :authors    (("Steve Kemp" . "skx@tardis.ed.ac.uk"))
+ :maintainer (nil . "skx@tardis.ed.ac.uk")
+ :provided   (keep-buffers)
+ :keywords   (extensions)
+ :commentary "\
+This package allows you to protect buffers, based upon their
+names, from deletion.
+
+ There are two ways you can use this package to protect buffers,
+either via the customize interface, or via Lisp.
+
+ Via Lisp:
+
+ (require 'keep-buffers)                     ;; Load the package.
+ (keep-buffers-protect-buffer \"*scratch*\")   ;; Protect the *scratch* buffer
+ (keep-buffers-protect-buffer \"*Messages*\")  ;; Protect the *Messages* buffer
+ ; (keep-buffers-erase-on-kill t)             ;; Erase the buffer contents on kill attempt
+
+
+ Via Customize:
+
+  M-x customize-group
+  keep-buffers
+
+  Then simply insert the names of the buffers that you'd like protected in
+the appropriate field.
+  (This will only take effect if you have (require 'keep-buffers) in your .emacs file)")

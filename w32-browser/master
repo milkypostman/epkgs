@@ -1,0 +1,18 @@
+(:summary    "Run Windows application associated with a file"
+ :created    "20040311"
+ :updated    "20110104"
+ :license    "GPL-2"
+ :authors    (("Emacs Wiki, Drew Adams"))
+ :maintainer ("Drew Adams")
+ :provided   (w32-browser)
+ :keywords   (dired explorer mouse)
+ :commentary "\
+Run Windows application associated with a file.
+
+`w32-browser' & `dired-w32-browser' are taken from the Emacs Wiki
+(author unknown).
+
+I modified `w32-browser' to `find-file' if it cannot
+`w32-shell-execute'.  I modified `dired-multiple-w32-browser' to
+use `w32-browser-wait-time'.  I wrote `dired-mouse-w32-browser',
+`w32explore', `dired-w32explore', and dired-mouse-w32explore.")

@@ -1,0 +1,18 @@
+(:summary    "Textile markup editing major mode"
+ :created    "2006"
+ :updated    "20060330"
+ :license    "GPL-2"
+ :authors    (("Julien Barnier" . "julien@nozav.org"))
+ :maintainer ("Julien Barnier" . "julien@nozav.org")
+ :provided   (textile-mode)
+ :homepage   "http://dev.nozav.org/textile-mode.html"
+ :wikipage   "TextileMode"
+ :commentary "\
+Known bugs or limitations:
+
+- if several {style}, [lang] or (class) attributes are given for
+  the same block, only the first one of each type will be
+  highlighted.
+
+- some complex imbrications of inline markup and attributes are
+  not well-rendered (for example, *strong *{something}notstrong*)")

@@ -1,0 +1,8 @@
+(:updated    "20000224"
+ :provided   (namazu)
+ :required   ((("browse-url" browse-url)
+	       ("emacs" custom)
+	       ("jka-compr" jka-compr)
+	       ("man" man)
+	       ("mew" mew)))
+ :wikipage   "Namazu")

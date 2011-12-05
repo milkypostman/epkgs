@@ -1,0 +1,5 @@
+(:provided   (golbarg)
+ :required   ((("markdown-mode" markdown-mode)
+	       ("org" org)
+	       ("yaml-mode" yaml-mode)))
+ :homepage   "https://github.com/Schnouki/Golbarg")

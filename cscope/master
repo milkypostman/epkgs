@@ -1,0 +1,4 @@
+(:summary    "Interface to cscope browser"
+ :authors    (("Bill Carpenter."))
+ :maintainer ("Bill Carpenter.")
+ :provided   (cscope))

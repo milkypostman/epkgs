@@ -1,0 +1,74 @@
+(:summary    "Supplemental functions for google-define-redux"
+ :created    "20100320"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("MON KEY"))
+ :maintainer ("MON KEY")
+ :keywords   (applications comm external hypermedia processes)
+ :commentary "\
+=================================================================
+DESCRIPTION:
+google-define-redux-supplemental provides supplemental functions required by
+google-define-redux.el 
+:SEE (URL `http://www.emacswiki.org/emacs/google-define-redux.el')
+
+:NOTE Everything provided here is avaiable elsewhere in the other mon-*.el 
+This packaged is provided in an attempt to allow use of google-define-redux.el
+without extensive dependencies. None the less, this package may not always be
+current and it is preferred/recommended to load the required packages
+instead should you encounter any errors.
+
+FUNCTIONS:►►►
+`mon-buffer-exists-p'
+`mon-g2be'
+`mon-buffer-exists-so-kill'
+`mon-string-justify-left'
+`mon-help-temp-docstring-display'
+
+FUNCTIONS:◄◄◄
+
+MACROS:
+
+METHODS:
+
+CLASSES:
+
+CONSTANTS:
+
+FACES:
+
+VARIABLES:
+
+ALIASED/ADVISED/SUBST'D:
+
+DEPRECATED:
+
+RENAMED:
+
+MOVED:
+
+TODO:
+
+NOTES:
+`google-define-kill-def-buffers'
+`mon-buffer-exists-p'             <- :FILE mon-utils.el  <MACRO>
+`mon-g2be'                        <- :FILE mon-utils.el
+`mon-buffer-exists-so-kill'       <- :FILE mon-utils.el
+`mon-string-justify-left'         <- :FILE mon-utils.el
+`mon-help-temp-docstring-display' <- :FILE mon-doc-help-utils.el
+
+SNIPPETS:
+
+REQUIRES:
+
+THIRD-PARTY-CODE:
+
+URL: http://www.emacswiki.org/emacs/google-define-redux-supplemental.el
+FIRST-PUBLISHED: <Timestamp: #{2010-03-30T15:41:05-04:00Z}#{10132} - by MON>
+
+EMACSWIKI: { URL of an EmacsWiki describing google-define-redux-supplemental. }
+
+FILE-CREATED:
+<Timestamp: #{2010-03-20T13:39:03-04:00Z}#{10116} - by MON KEY>
+
+=================================================================")

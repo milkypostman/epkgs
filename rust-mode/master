@@ -1,0 +1,20 @@
+(:summary    "CC Mode derived mode for rust"
+ :created    "2009"
+ :license    "GPL-2"
+ :authors    (("Graydon Hoare"))
+ :maintainer ("Graydon Hoare")
+ :provided   (rust-mode)
+ :required   ((("cc-mode" cc-fonts cc-langs cc-mode)))
+ :keywords   (c languages)
+ :homepage   "https://github.com/graydon/rust-mode"
+ :commentary "\
+This is a derived CC mode for the rust language, partly a
+copy-and-paste job from
+http://cc-mode.sourceforge.net/derived-mode-ex.el
+
+With further modifications by guesswork and looking through the
+cc-langs.el file in the CC-mode distribution to get an idea for
+the keyword/symbol classes.
+
+Note: The interface used in this file requires CC Mode 5.30 or
+later.")

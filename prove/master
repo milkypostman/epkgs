@@ -1,0 +1,19 @@
+(:summary    "Compilation mode for prove"
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-2"
+ :authors    (("Philip Jackson" . "phil@shellarchive.co.uk"))
+ :maintainer ("Philip Jackson" . "phil@shellarchive.co.uk")
+ :provided   (prove)
+ :required   ((("compile" compile)))
+ :homepage   "http://www.shellarchive.co.uk/content/emacs.html"
+ :commentary "\
+(require 'prove)
+M-x prove
+
+Errors are foldable, you can toggle their visibility by putting
+point on an error line and hitting tab. If you want folding
+everytime set `prove-collapse-tree-on-finish' to non-nil.
+
+If you use prove rather than perl to run the tests then make sure
+you include the -v switch.")

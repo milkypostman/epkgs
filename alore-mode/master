@@ -1,0 +1,4 @@
+(:summary    "A major mode for editing alore programs"
+ :license    "GPL-2"
+ :provided   (alore-mode)
+ :homepage   "https://github.com/JukkaL/alore-emacs")

@@ -1,0 +1,19 @@
+(:summary    "A major mode for editing Mustache files"
+ :license    "GPL-2"
+ :authors    (("Tony Gentilcore")
+	      ("Chris Wanstrath")
+	      ("Daniel Hackney"))
+ :maintainer ("Tony Gentilcore")
+ :provided   (mustache-mode)
+ :required   ((("emacs" font-lock)))
+ :homepage   "https://github.com/mustache/emacs"
+ :commentary "\
+1) Copy this file somewhere in your Emacs `load-path'.  To see what
+   your `load-path' is, run inside emacs: C-h v load-path<RET>
+
+2) Add the following to your .emacs file:
+
+   (require 'mustache-mode)
+
+While the Mustache language can be used for any types of text,
+this mode is intended for using Mustache to write HTML.")

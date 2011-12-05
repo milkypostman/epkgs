@@ -1,0 +1,39 @@
+(:summary    "Another frontend of subversion"
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Masahiro Hayashi" . "mhayashi1120@gmail.com"))
+ :maintainer ("Masahiro Hayashi" . "mhayashi1120@gmail.com")
+ :provided   (fsvn fsvn-admin fsvn-blame fsvn-browse fsvn-cmd fsvn-config fsvn-data fsvn-debug fsvn-deps fsvn-dev fsvn-diff fsvn-dired fsvn-env fsvn-fs fsvn-logview fsvn-magic fsvn-minibuf fsvn-mode fsvn-msgedit fsvn-parasite fsvn-popup fsvn-proc fsvn-proclist fsvn-propview fsvn-pub fsvn-publish fsvn-select fsvn-svk fsvn-tortoise fsvn-ui fsvn-url fsvn-win fsvn-xml mw32cmp)
+ :required   ((("chart" chart)
+	       ("diff" diff)
+	       ("diff-mode" diff-mode)
+	       ("emacs" bytecomp dired dired-aux easymenu ls-lisp menu-bar)
+	       ("xml" xml)
+	       (nil mw32script))
+	      (("electric" electric)))
+ :keywords   (subversion svn)
+ :homepage   "http://fsvn.sourceforge.jp"
+ :commentary "\
+fsvn supports
+ * GNU Emacs 23.x or later.
+ * Subversion from 1.5.x to 1.6.x. (1.7.x is testing)
+
+fsvn has TortoiseSVN like user interface by using `svn' command.
+ Have following advantages of other Emacs svn client.
+ * tsvn:*, bugtraq:* like property supported. (or will be supported)
+ * Using `svn help' output for completing read.
+ * Fast in huge working copy by background process.
+ * Has repository browser.
+ * Has visualize blame/annotate/praise minor-mode.
+ * Has svk support
+
+ But following **disadvantage** has.
+ * Key bindings are not familiar for legacy user.
+ * Dired like interface but not exactly equals dired functions.
+ * A little user help.
+
+This package is tested on following environment.
+     NTEmacs (based Emacs 23.1) on Windows.  svn 1.5.x - 1.6.x
+     Emacs (23.2) on GNU/Linux (Debian).  svn svn 1.5.x - 1.6.x
+     Emacs current (24.0.50) on GNU/Linux (Debian).  svn 1.5.x - 1.6.x")

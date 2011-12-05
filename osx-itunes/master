@@ -1,0 +1,23 @@
+(:summary    "Control itunes from emacs"
+ :updated    "20040415"
+ :license    "GPL-2"
+ :authors    (("Harley Gorrell" . "harley@mahalito.net"))
+ :maintainer ("Harley Gorrell" . "harley@mahalito.net")
+ :provided   (osx-itunes)
+ :required   ((("osx-osascript" osx-osascript)))
+ :keywords   (itunes osascript osx)
+ :commentary "\
+* Now I dont have to touch a mouse to fiddle with itunes.
+   Handy when you are remotely logged into the machine,
+   or using a really large Emacs frame.
+     (setq itunes-key [f5]) ;; or some other key.
+     (require 'osx-itunes)  ;; this will bind the key.
+ * Press the itunes key and then one of:
+     key again            : toggle info window.
+     +/-/up/down/mute/0-9 : volume control
+     left/right           : prev/next track
+     space                : toggles playing
+
+ * This was tested on Emacs 21.3, iTunes 4.2 and OSX 10.3
+ * This meets my needs, but playlist selection could be added
+   as well as fontification")

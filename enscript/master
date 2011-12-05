@@ -1,0 +1,8 @@
+(:summary    "Joel's Custom printing functions"
+ :created    "2007"
+ :updated    "2007"
+ :license    "GPL-3"
+ :authors    (("Joel J. Adamson"))
+ :maintainer ("Joel J. Adamson" . "sparrow1240@gmail.com")
+ :provided   (enscript)
+ :keywords   (local tools wp))

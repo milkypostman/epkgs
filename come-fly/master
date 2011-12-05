@@ -1,0 +1,10 @@
+(:summary    "Minor mode for the Sinatra web mini-framework"
+ :created    "20110626"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("David Miller"))
+ :maintainer ("David Miller")
+ :provided   (come-fly)
+ :required   ((("cl" cl)))
+ :keywords   (convenience framework project ruby sinatra web)
+ :homepage   "https://github.com/davidmiller/come-fly")

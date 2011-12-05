@@ -1,0 +1,17 @@
+(:summary    "Interface to the Arch User Repository"
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-2"
+ :authors    (("Christopher M. Brannon" . "cmbrannon@cox.net"))
+ :maintainer ("Christopher M. Brannon" . "cmbrannon@cox.net")
+ :provided   (aurquery)
+ :required   ((("json" json)))
+ :keywords   (aur)
+ :homepage   "https://github.com/CMB/aurquery-el"
+ :commentary "\
+This program provides an interface to the Arch User Repository (AUR).
+Thus, it is primarily of interest to users of Archlinux.  For more
+information about ArchLinux, please see http://archlinux.org/
+
+Currently, this library provides two entry-points: aur-search and
+aur-retrieve-info.")

@@ -1,0 +1,17 @@
+(:summary    "Jump to source from Java stack trace"
+ :created    "1999"
+ :updated    "1999"
+ :license    "GPL-2"
+ :provided   (jde-stack)
+ :required   ((("jdee" jde)))
+ :homepage   "http://homepages.cs.ncl.ac.uk/phillip.lord/emacs.html"
+ :commentary "\
+This package provides the ability to jump from stack traces to the
+relevant part of the java source. There is one main entry point
+which is a mouse-1 click on the stack trace, which will jump to the
+source suggested at this point. This should also work in other
+buffers (for instance log files), by calling directly the function
+`jde-stack-show-at-point'. Following this entry point two functions
+`jde-stack-show-next' and `jde-stack-show-prev' allow cycling
+backwards and forwards through the stack trace. Error messages are
+given when the end of the stack is reached.")

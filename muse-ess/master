@@ -1,0 +1,19 @@
+(:summary    "Emacs muse speaks statistics"
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Thomas Alexander Gerds" . "tagteam@sund.ku.dk"))
+ :maintainer ("Thomas Alexander Gerds" . "tagteam@sund.ku.dk")
+ :provided   (muse-ess)
+ :keywords   (extensions)
+ :commentary "\
+Provides three tags R, Rplot, Rtext for EmacsMuse
+
+Usage:
+
+<R tag=\"muse\"> Rcode </R>
+<R show=\"before\" tag=\"muse\"> Rcode </R>
+<Rplot file=\"filename-sans-extension\">plot(1:10)</Rplot>
+<Rtext>some text then $$Rcode$$ then text then code etc</Rtext>
+
+Examples:")

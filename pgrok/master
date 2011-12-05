@@ -1,0 +1,26 @@
+(:summary    "Project Grokking for Emacs"
+ :created    "2008"
+ :updated    "2009"
+ :license    "GPL-2"
+ :authors    (("Juri Pakaste" . "juri@iki.fi"))
+ :maintainer ("Juri Pakaste" . "juri@iki.fi")
+ :provided   (pgrok)
+ :required   ((("find-dired" find-dired)))
+ :homepage   "https://launchpad.net/pgrok"
+ :commentary "\
+pgrok loads project settings from specially named files (see
+variable `pgrok-project-file') in the same directory as the file
+you are opening or an ancestor directory. It also contains some
+functions for dealing with projects, using the directory where a
+project file was found as the project directory (see variable
+`pgrok-project-directory'). If you wish to customize the variable,
+you can do it in one of the project files, because they are
+evaluated after setting the variable.
+
+pgrok does not support nested projects.
+
+To use pgrok, add `pgrok-load-project-files' to `find-file-hook', a
+major mode hook, or run `pgrok-load-project-files' by hand.
+
+Modified from Kai Großjohann's version at 
+http://www.emacswiki.org/cgi-bin/wiki/ProjectSettings")

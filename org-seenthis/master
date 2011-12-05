@@ -1,0 +1,11 @@
+(:summary    "Provides Seenthis.net integration for Org-mode"
+ :created    "20110527"
+ :license    "GPL-2"
+ :authors    (("Julien Barnier" . "julien@nozav.org"))
+ :maintainer ("Julien Barnier" . "julien@nozav.org")
+ :provided   (org-seenthis)
+ :required   ((("xml" xml)))
+ :keywords   (orgmode seenthis)
+ :homepage   "https://github.com/juba/org-seenthis"
+ :commentary "\
+For installation and usage, see README.org")

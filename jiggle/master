@@ -1,0 +1,109 @@
+(:summary    "Minor mode to jiggle cursor when changing buffers"
+ :created    "1998"
+ :updated    "1998"
+ :license    "GPL-2"
+ :authors    (("Will Mengarini" . "seldon@eskimo.com"))
+ :maintainer ("Will Mengarini" . "seldon@eskimo.com")
+ :provided   (jiggle)
+ :required   ((("cl" cl)
+	       ("emacs" advice)))
+ :keywords   (cursor frames hardware jiggle shake)
+ :homepage   "http://www.eskimo.com/~seldon"
+ :commentary "\
+When small fonts are used to pack a maximum amount of text onto the
+screen, the steady box cursor used by default with Emacs under windowing
+systems can be hard to see (unlike the blinking cursor that is common
+under terminal systems).  We discern motion more easily than color or
+shape, so jiggling the cursor on a large frame lets it be seen instantly
+without searching.
+
+This package implements an interactive function, jiggle-cursor, that does
+that, selecting the direction of the jiggle to avoid repositioning the
+buffer in the window and to constrain the movement to a small area of the
+screen.  If this is impossible, such as when point is between tabs on the
+middle line of three text lines each of which is so long that it wraps
+around to at least two vertical screen lines, that function is a NOP, so
+simpler functions, jiggle-cursor-{left,right,laterally}, are provided that
+just do what they say, even if the result looks strange.  There is also a
+minor mode, jiggle-mode, that runs jiggle-cursor every time you switch
+buffers.  That's implemented in terms of a hook that's run every time you
+switch buffers; no such hook is built into GNU Emacs 19, so its
+implementation is also part of this package's interface, and using that
+hook might be a sufficient reason to load the package, even if you don't
+want cursor jiggling.
+
+This package was developed under the Windows NT port of GNU Emacs 19.34.1,
+where it was tested under Windows 95 with an 800x600 VGA screen and under
+NT 4.0 with resolutions from 1024 to 1280.  Andre Srinivasan
+<andre@visigenic.com> reported that it works with XEMacs 20.3, but I've
+had other reports that it failed under XEMacs 20.4; I don't use XEMacs (&
+it may be a while before that changes) so I can't hack the problems
+myself.  There was a bug in the 19.34.1 version that caused a failure
+under 19.34.6, displaying an unwanted text-mode menu bar; that's been
+fixed.  I haven't tried this under GNU Emacs 20 yet.
+
+You can use this package either interactively or from your .emacs file.
+In either case, first you'll need to copy this file to a directory that
+appears in your load-path.  `load-path' is the name of a variable that
+contains a list of directories Emacs searches for files to load.
+To prepend another directory to load-path, put a line like
+(add-to-list 'load-path \"c:/My_Directory\") in your .emacs file.
+
+Then, put the line
+  (require 'jiggle)
+in your .emacs file.  Then, if you want the cursor jiggled automatically
+every time you switch buffers, put the line
+  (jiggle-mode 1)
+after it.  If you want to be able to jiggle the cursor manually, bind
+jiggle-cursor to a key; for example,
+  (global-set-key (read-kbd-macro \"C-c C-SPC\") 'jiggle-cursor)
+binds it to <Ctrl-c><Ctrl-Space>.  Automatic and manual jiggling are
+independent of each other; jiggle-cursor works even if jiggle-mode is
+disabled, and you don't need to bind jiggle-cursor to use jiggle-mode.
+
+Interactively, you can toggle jiggling with M-x jiggle-mode.
+
+By default, jiggle-mode only jiggles the cursor when you switch
+buffers.  However, another situation when the cursor can be hard to
+find is when you're doing searches, either incremental searches with
+C-s or C-r, or the searches that are part of a query-replace function.
+To interactively toggle whether jiggle-mode also jiggles the cursor
+after searches, type M-x jiggle-searches-too.  This option is off by
+default because it looks rather weird for incremental searches; since
+they're incremental, the cursor jiggles after *every keystroke*.
+If you decide you want this permanently enabled, put the line
+  (jiggle-searches-too 1)
+after the line
+  (jiggle-mode 1)
+in your .emacs file.  You may also want the lines
+  (setq query-replace-highlight t)
+  (setq search-highlight t)
+which set two variables that are standard in GNU Emacs; I use both of
+those as well as (jiggle-searches-too 1).
+
+If you're visually impaired, you may want jiggling to last longer than it
+does by default, which is 3 jiggles.  Put a line like
+  (setq jiggle-how-many-times 8)
+in your .emacs to increase the default from 3 to 8, for example.  That
+line can go before or after (require 'jiggle).  Also, if it helps,
+  (setq jiggle-sit-for-how-long .1)
+slows down the jiggling by a factor of 10 (the default is .01),
+theoretically, although in real life contemporary computers aren't that
+fast or precise, so the effect will be smaller.
+
+Another consideration is that jiggle-cursor sometimes does nothing if
+it's in a position where jiggling would \"look ugly\".  If you can't find
+the cursor without it then you don't care whether it's ugly, so you may
+prefer the jiggle-cursor-laterally function; it always jiggles somehow
+except in an empty buffer.  It can be used instead of jiggle-cursor in
+the global-set-key example given above.  You can also put the line
+  (setq jiggle-cursor-function 'jiggle-cursor-laterally)
+in your .emacs to make that the function used by jiggle-mode.
+
+Executing (require 'jiggle) implements jiggle-buffer-switch-hook.  If you
+neither bind jiggle-cursor nor enable jiggle-mode, then making that hook
+available is the only effect of (require 'jiggle).  This is a normal hook
+run every time the selected buffer is switched; it is run in the
+newly-selected buffer.  The hook is implemented without using
+p{re,ost}-command-{,idle}-hook, so it's reasonably efficient; on a 486/50
+under Windows 95 it entails no performance hit I can discern.")

@@ -1,0 +1,4 @@
+(:summary    "Cycles dired listing between name/date/extension/size"
+ :license    "GPL-2"
+ :authors    (("Tom Wurgler" . "twurgler@goodyear.com"))
+ :maintainer ("Tom Wurgler" . "twurgler@goodyear.com"))

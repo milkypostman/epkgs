@@ -1,0 +1,9 @@
+(:summary    "Auto Java Completion for GNU Emacs"
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-2"
+ :provided   (ajc-java-complete ajc-java-complete-config)
+ :required   ((("auto-complete" auto-complete)
+	       ("yasnippet" yasnippet)))
+ :homepage   "https://github.com/jixiuf/ajc-java-complete"
+ :wikipage   "AutoJavaComplete")

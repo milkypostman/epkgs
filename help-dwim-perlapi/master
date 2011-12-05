@@ -1,0 +1,11 @@
+(:summary    "Show help of perlapi"
+ :created    "2007"
+ :updated    "20070823"
+ :license    "GPL-2"
+ :authors    ((nil . "wenbinye@gmail.com"))
+ :maintainer (nil . "wenbinye@gmail.com")
+ :provided   (help-dwim-perlapi)
+ :required   ((("cl" cl)))
+ :commentary "\
+Put this file into your load-path and the following into your ~/.emacs:
+  (require 'help-dwim-perlapi)")

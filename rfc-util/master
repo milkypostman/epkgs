@@ -1,0 +1,16 @@
+(:summary    "RFC-util interface for emacs"
+ :created    "2000"
+ :updated    "2000"
+ :license    "GPL-2"
+ :authors    (("Kevin A. Burton" . "burton@openprivacy.org"))
+ :maintainer ("Kevin A. Burton" . "burton@openprivacy.org")
+ :provided   (rfc-util)
+ :keywords   (rfc)
+ :commentary "\
+An interface to rfc-util to download RFC's and view them.  Keeps RFCs on disk 
+so that you can view them in the future.  You will need to install rfc-util 
+in order to use this.  
+
+You can download RFC-util from http://www.dewn.com/rfc/
+
+(defvar rfc-directory \"~/.rfc-util\" \"Destination to store downloaded RFCs\")")

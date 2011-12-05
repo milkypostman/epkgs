@@ -1,0 +1,120 @@
+(:summary    "BBDBpalm exporter of BBDB database to Palm(R) address book"
+ :created    "2006"
+ :updated    "20061112"
+ :license    "GPL-2"
+ :authors    (("Neil W. Van Dyke" . "neil@neilvandyke.org"))
+ :maintainer ("Neil W. Van Dyke" . "neil@neilvandyke.org")
+ :provided   (bbdbpalm)
+ :required   ((("bbdb" bbdb)
+	       ("cl" cl)))
+ :homepage   "http://www.neilvandyke.org/bbdbpalm"
+ :commentary "\
+ABOUT:
+
+    BBDBpalm exports your BBDB address database to your Palm/USR/3Com
+    Pilot/PalmPilot/Palm-Connected-Organizer (hereinafter simply \"Palm\").
+    BBDB is a sort of electronic address book written by Jamie Zawinsky
+    <jwz@jwz.org> that integrates nicely with Emacs-based E-mail and Usenet
+    clients.  BBDBpalm lets you bring that address book with you if you
+    don't have the luxury of 24/7 network access to a remote Emacs session
+    from your Palm.
+
+    The Web page is `http://www.neilvandyke.org/bbdbpalm/'.
+
+    This package is no longer being maintained.
+
+REQUIREMENTS:
+
+    BBDBpalm was developed with BBDB 1.51, which is available at
+    `http://www.jwz.org/bbdb/' if you don't already have it.  It has also
+    been reported to work with BBDB 2.00.02.
+
+    BBDBpalm uses the `pilot-addresses' program, which is part of the
+    Pilot-Link package.  Pilot-Link is freely available on the 'net, and is
+    included with some GNU/Linux distributions.  The master sources are
+    available at `ftp://ryeham.ee.ryerson.ca/pub/PalmOS/', although you may
+    wish to instead find a pre-compiled distribution for your operating
+    system.  BBDBpalm was tested with version 0.9.0.
+
+    BBDBpalm was developed under GNU Emacs 20.3 running atop the GNU/Linux
+    platform.  It will probably work with Emacs 19 and has been reported to
+    work under XEmacs 21.2b17.  It will probably work under Emacs on other
+    Unix variants.  Please let me know if you encounter any problems with
+    other Emacsen or Unixen.
+
+INSTALLATION:
+
+    If you're Emacs-savvy enough to be using BBDB, then you probably don't
+    need much install instructions.  The only three non-obvious things you
+    need to do are:
+
+      1. On your Palm, add an Address List category called \"BBDB\", in all
+         caps.  (Reason: Unfortunately, `pilot-addresses' does not presently
+         create categories on your Palm, or overwrite duplicate entries.
+         So, every time we upload to the Palm, we blast everything in the
+         \"BBDB\" category and put all the BBDB-exported records into that
+         category.)  If you change entries on the Palm side of things,
+         change their category so that you remember to manually propagate
+         the change to BBDB.
+
+      2. If you don't want to export everything in your BBDB to the Palm,
+         then do both of:
+
+           a. Put the following your `.emacs' file or wherever you put your
+              Emacs customizations:
+
+                  (setq bbdbpalm-export-all-p nil)
+
+           b. Add a field called `palm' to each BBDB record that you wish to
+              export (by pressing `C-o' in the `*BBDB*' buffer with the
+              point on the desired record).  Give each `palm' field a value
+              of `yes' for now.  Note that a later version of BBDBpalm might
+              put something else in that field.
+
+      3. If you wish to have titles for people be exported to the Palm, add
+         a field called `title' to BBDB and use it.
+
+ALTERNATIVES:
+
+    Tom Fawcett <fawcett@basit.com> wrote `bbdb-pilot', which is available
+    at `ftp://ftp.croftj.net/usr/fawcett/bbdb-pilot.el'.  The version I
+    found, dated 1998, didn't seem to do what I wanted (I'm so picky) but
+    you may prefer it.
+
+    Neale Picket <zephyr@roguetrader.com> hacked up a small convertor in
+    Feb-1998.  See `http://acm.rpi.edu/~albert/pilot/Feb98/0039.html'.
+
+THINGS TO DO:
+
+    * Add support for custom fields.
+
+    * Add special support for `Web' custom field.
+
+    * Maybe someday do bidirectional sync-ing.  For now, users should just
+      keep all the BBDB-exported records in the `BBDB' category on their
+      Palm, and manually change those records on the BBDB end rather than on
+      the Palm end.
+
+    * Maybe I should make it fix certain family names that BBDB has
+      mis-parsed, such as, well... I dunno... how about... \"Van Dyke\"?
+      Better yet, I should move to BBDB 2.x and make sure it's fixed there.
+
+    * Make it be smarter about which address it picks if there are multiple
+      ones.
+
+    * Add BBDB extension so that it prompts you for `palm' field.
+
+    * Make it reformat phone numbers.
+
+    * Add completion-percentage indicator for file-exporting and uploading.
+
+    * Check for error from `pilot-addresses' and maybe do something with it.
+
+    * ``I think it would be nice if the order of phone numbers as they
+      appear in the BBDB was preserved in the Pilot. Same thing for multiple
+      email addresses; they are now listed in reverse order.''  [Mark Moll
+      <mmoll@cs.cmu.edu>, 24-Jun-1999]
+
+    * ``Maybe it's a good idea to put in a message \"Please press the HotSync
+      button\" at the appropiate time.''  [Mark Moll <mmoll@cs.cmu.edu>,
+      24-Jun-1999]")

@@ -1,0 +1,20 @@
+(:created    "2011"
+ :updated    "2011"
+ :license    "GPL-3"
+ :provided   (fud gimp-mode)
+ :required   ((("cl" cl)
+	       ("cmuscheme" cmuscheme)
+	       ("eldoc" eldoc)
+	       ("outline" outline)
+	       ("ring" ring)
+	       ("scheme-complete" scheme-complete)
+	       ("snippet" snippet)
+	       ("thingatpt" thingatpt)))
+ :keywords   (extensions gimp multimedia processes scheme tools)
+ :homepage   "http://niels.kicks-ass.org/gimpmode"
+ :wikipage   "GimpMode"
+ :commentary "\
+Interaction/editing mode for the GIMP
+see gimpmode.pdf for full description and usage.
+
+TOC:")

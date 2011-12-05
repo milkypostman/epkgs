@@ -1,0 +1,29 @@
+(:summary    "Temporary highlighting regular expressions"
+ :created    "2002"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("Olaf Sylvester" . "olaf@geekware.de"))
+ :maintainer ("Olaf Sylvester" . "olaf@geekware.de")
+ :provided   (highlight-regexp)
+ :required   ((("emacs" advice)))
+ :keywords   (convenience)
+ :homepage   "http://www.geekware.de/software/emacs"
+ :commentary "\
+Provide some functions for highlighting regular expressions 
+in current buffer and a convenience function for highlighting
+current word `highlight-regexp-current-word'.
+
+This package offers default key bindings:
+ C-c h w `highlight-regexp-current-word'
+ C-c h r `highlight-regexp-regexp'
+ C-c h s `highlight-regexp-string'
+ C-c h c `highlight-regexp-clear'
+ C-c h d `highlight-regexp-delete'
+You can disable these key bindings.
+
+By recentering the display with `C-l' all highlighted instances will be 
+deleted. You can disable this feature.
+
+Customization:
+
+Use `customize-highlight-regexp' for customization.")

@@ -1,0 +1,18 @@
+(:summary    "Emacs image viewer"
+ :created    "200944"
+ :updated    "2009"
+ :license    "GPL-3"
+ :authors    (("Thierry Volpiatto"))
+ :maintainer ("Thierry Volpiatto")
+ :provided   (eiv)
+ :required   ((("cl" cl)
+	       (nil iterator traverselisp)))
+ :keywords   (image picture)
+ :wikipage   "EmacsImageViewer"
+ :commentary "\
+Dependencies: - traverselisp.el:
+                http://mercurial.intuxication.org/hg/traverselisp
+              - iterator.el
+                that is part of traverselisp package.
+              - the ImageMagick package that provide \"mogrify\":
+                http://www.imagemagick.org/")

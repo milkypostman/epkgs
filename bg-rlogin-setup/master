@@ -1,0 +1,3 @@
+(:summary    "Rlogin setup"
+ :maintainer ("Brent Goodrick")
+ :provided   (bg-rlogin-setup))

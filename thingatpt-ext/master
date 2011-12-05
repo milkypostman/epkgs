@@ -1,0 +1,15 @@
+(:summary    "Thing at point extensions"
+ :created    "20090317"
+ :updated    "20090317"
+ :license    "GPL-3"
+ :authors    (("Henry G. Weller" . "hweller0@gmail.com")
+	      ("with bits contributed by Toby Cubit")
+	      ("and from thing-opt.el by MATSUYAMA Tomohiro"))
+ :maintainer ("Henry G. Weller")
+ :provided   (thingatpt-ext)
+ :required   ((("thingatpt" thingatpt)))
+ :keywords   (completion sources ui user\ interface)
+ :commentary "\
+Lots of additions to the `thingatpt' package.
+
+----------------------------------------------------------------------------")

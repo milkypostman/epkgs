@@ -1,0 +1,7 @@
+(:summary    "Breathing exercises timer (to control hyperventilation)"
+ :updated    "20050207"
+ :license    "GPL-2"
+ :provided   (breathe)
+ :required   ((("banner" banner)
+	       ("cl" cl)))
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/well-being")

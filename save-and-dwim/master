@@ -1,0 +1,42 @@
+(:created    "2008"
+ :updated    "2008"
+ :license    "GPL-2"
+ :authors    (("Jonathan Arkell" . "jonnay@jonnay.net"))
+ :maintainer ("Jonathan Arkell" . "jonnay@jonnay.net")
+ :provided   (sdwim)
+ :commentary "\
+This file is currently in a beta state.  It needs some testing.
+
+Frequently after saving a file, I will want to do something with it,
+like compile, install and test on an emulator; send to a moz-repl;
+load the elisp file and execute an interactive command.
+
+This elisp library will help automate these kinds of tasks.
+
+the theory is, that you have a discreet set of tasks when you save a
+file based on mode (i.e. for a .el: save and load the file, for a .c
+file: save then compile the file).  And then a set of tasks depending
+on the file itself (execute the emacs command foo-bar-baz, load the
+emulator and test, whatever.)
+
+Per-mode sdwim tasks are set up on the mode setup hook.  Sometimes
+you will have more tasks to do after a save (such as install
+a compiled and linked file to a location, and run an emulator).
+You can either write an elisp function to do that, or you can
+use the kbdmacro facility provided.
+
+To use the kbdmacro facility, all you do is save your file, turn
+on macro recording, and do your post-save-task once.  Finish
+recording, and call `sdwim-set-last-kbdmacro-as-sdwim-action'.
+It will save the current kmacro as a sdwim action.
+
+For instance, you could go to the top of the file, search for
+the string \";;--run-tests--\", go down a line, forward a sexp
+and then eval the expression.  Assuming you had your unit
+testing code all in one place, it would launch it all right
+after save.
+
+If you need to, you can always record new macros, and use
+`sdwim-set-last-kbdmacro-as-sdwim-action' again.  Each
+macro is named before it is applied to the save hook for
+sdwim.")

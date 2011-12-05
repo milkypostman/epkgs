@@ -1,0 +1,142 @@
+(:summary    "Advanced random signature inserter"
+ :created    "2000"
+ :updated    "20001028"
+ :license    "GPL-2"
+ :authors    (("Raymond Scholz" . "ray@zonix.de"))
+ :maintainer ("Raymond Scholz" . "ray@zonix.de")
+ :provided   (adv-random-sig)
+ :keywords   (mail news random signature)
+ :homepage   "http://www.zonix.de/projects/emacs/lisp"
+ :wikipage   "AdvRandomSig"
+ :commentary "\
+This is an advanced random signature inserter for message-mode
+(probably other modes for composing mail and news) and for use with
+Gnus' posting styles.
+
+It is heavily based on random-sig.el by Matt Simmons
+<simmonmt@acm.org>, http://www.netcom.com/~simmonmt.
+
+Warning: This is the first lisp thing I've ever done since I left
+the warm and comfort home of my own .emacs and .gnus.  It may,
+well, it _will_ contain awkward lisp statements and errors.  But I
+can assure you that it works for my environment and didn't cause
+any harm so far.
+
+BUILDING A SIGNATURE
+--------------------
+
+A signature is built as follows:
+
+-- 
+[head]
+random quote
+
+The head is a string, constant to all signatures (F.e. an URL or
+your email address).  Point `adv-signature-head' to a file with the
+contents of that head.  The use of a signature head is optional,
+set `adv-signature-head' to `nil' if you don't want it.
+
+The quote (or whatever) is taken from a randomly chosen file in the
+directory specified by `adv-signature-dir'.  Every quote is stored
+in a single file, the file name doesn't matter.  To exstinguish all
+randomness, you can set `adv-signature-dir' to a file.
+
+Another feature is the insertion of a greeting formula _before_ the
+signature seperator.  If you're as lazy as myself, you'll find this
+useful.  Put the greeting in a file and point
+`adv-signature-greeting' to it.  As `adv-signature-head' this is
+optional - set `adv-signature-greeting' to `nil' if you don't need
+it.  Note that this doesn't interact well with Gnus' message-mode.
+You'll have to manually remove the signature seperator that Gnus
+places _before_ the greeting.
+
+Note that you can savely place the greeting formula and the head
+within `adv-signature-dir' as they are excludes from the random
+choice.
+
+USAGE
+-----
+
+Put this file in a directory covered by your load-path and place
+the following in your .emacs or .gnus:
+
+(require 'adv-random-sig)
+
+Make the variables point to the apropriate directory resp. files:
+
+(setq adv-signature-dir (expand-file-name \"~/.sigs/quotes/\"))
+
+(setq adv-signature-head nil) ; don't use the head
+;(setq adv-signature-head (expand-file-name \"~/.sigs/head/myurl\"))
+
+(setq adv-signature-greeting nil) ; don't use the greeting formula
+;(setq adv-signature-greeting (expand-file-name \"~/.sigs/greet/english\"))
+
+
+There are several functions you can call to mess up your mail or
+news posting with signatures, heads and greeting formulas.  Now
+it's up to you, to choose the one, that fits your purposes.
+
+FLAVOURS
+--------
+
+Important notice: in contrast to the originial random-sig.el you
+can influence the decision on what random quote will be used in a
+certain manner.  Every user interface function below can have an
+optional argument, that constraints the quote to a certain
+\"flavour\".  A flavour simply is a subdirectory to
+`adv-signature-dir'.  Place quotes of a certain flavour in that
+subdirectory and see the example:
+
+~/.sig/quotes/
+~/.sig/quotes/linux/
+~/.sig/quotes/linux/lin1
+~/.sig/quotes/linux/lin2
+~/.sig/quotes/humor/
+~/.sig/quotes/humor/hum1
+~/.sig/quotes/humor/hum2
+~/.sig/quotes/quote1
+
+Setting `adv-signature-dir' to \"~/.sig/quotes/\" the flavour \"linux\"
+will choose between lin1 and lin2.  If flavour is \"linux/lin2\", the
+only choice is lin2.  If the flavour is \"\" or not specified, the
+only choice is quote1.  Sorry, the choice is not recursive, anyone
+who can do that?
+
+FUNCTIONS
+---------
+
+`adv-random-signature-no-sep' returns a random signature without
+the usual seperator.  This is meant to be used with Gnus'
+message-mode, which is hard to convince _not_ to insert the \"-- \"
+line.  If you use posting styles, an example would be:
+
+(setq gnus-posting-styles
+  '(
+     ((message-news-p)
+	 (signature adv-random-signature-no-sep))
+
+     (\"^comp\\\\.os\\\\.linux.*\"
+      (signature adv-random-signature-no-sep \"linux\")) 
+   [...]
+
+[$ray$ lacks of an example for calling from a hook!]
+
+`adv-random-signature' does the same thing as
+`adv-random-signature-no-sep' but adds a signature seperator in
+front and makes use of `adv-signature-head' if non nil.
+
+`adv-random-signature-fun' is ment to be a backward compatible
+version of `random-signature-fun' in the original random-sig.el.
+Note, that the names of the variables compared with random-sig.el
+have change too!
+
+$Log: adv-random-sig.el,v $
+Revision 1.2  2000/10/28 15:08:30  rscholz
+Name function adv-random-signature-no-sep instead of adv-random-signature-w/o-sep.
+
+Revision 1.1  2000/10/28 14:47:31  rscholz
+Initial revision
+
+
+variables")

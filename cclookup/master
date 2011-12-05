@@ -1,0 +1,6 @@
+(:provided   (cclookup)
+ :required   ((("browse-url" browse-url)
+	       ("cl" cl)
+	       ("emacs" simple)
+	       ("ido" ido)))
+ :homepage   "http://taesoo.org/Opensource/CClookup")

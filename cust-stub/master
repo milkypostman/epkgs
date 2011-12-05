@@ -1,0 +1,15 @@
+(:summary    "Defcustom stub for emacs versions without custom.el"
+ :created    "19970528"
+ :updated    "20010831"
+ :license    "GPL-2"
+ :authors    (("Noah Friedman" . "friedman@splode.com"))
+ :maintainer (nil . "friedman@splode.com")
+ :provided   (cust-stub)
+ :keywords   (extensions)
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
+ :commentary "\
+Emacs 19.34 and earlier, and XEmacs 19.14 and earlier, do not have the
+`defcustom' or `defgroup' forms used for user option customization.
+As of May 1997, many of my own programs use these forms, so I am
+including a stub to provide backward-compatibility in earlier versions
+of emacs.")

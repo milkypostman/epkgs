@@ -1,0 +1,55 @@
+(:summary    "Use templates, decorate comments, auto-update buffers"
+ :created    "2003"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("Christoph Wedler" . "wedler@users.sourceforge.net"))
+ :maintainer ("Christoph Wedler" . "wedler@users.sourceforge.net")
+ :provided   (template)
+ :required   ((("cl" cl)
+	       ("emacs" custom)))
+ :keywords   (auto-updating comment\ decoration data template tools)
+ :homepage   "http://emacs-template.sourceforge.net"
+ :wikipage   "TemplatesMode"
+ :commentary "\
+When you create a new file with Emacs, package Template supplies an initial
+buffer content via a template: a file with normal text and expansion
+forms. There is a menu to easily create such templates. You can also use new
+commands to decorate comments and update the buffer contents.
+
+The main difference between Template and other similar packages is that you
+can define very flexible templates without having to learn Lisp or changing
+your Emacs init file. This package does not help Lisp programmers to define
+complex macros.
+
+For details, check <http://emacs-template.sourceforge.net/> or, if you
+prefer the manual style, the documentation of the following commands and
+variables:
+
+ * for templates: \\\\[template-new-file], `template-auto-insert',
+   `template-derivation-alist', `template-default-expansion-alist' and
+   `template-definition-start',
+ * for comment decoration: \\\\[template-single-comment] and
+   \\\\[template-block-comment], `template-comment-specification-alist'
+ * for updating: \\\\[template-update-buffer], `template-auto-update',
+   `template-update-buffer-alist' and `template-header-regexp-alist'.
+
+Bug fixes, bug reports, improvements, and suggestions for the newest version
+are strongly appreciated.
+
+Installation:
+
+This file requires Emacs-20.2, XEmacs-20.2 or higher.
+
+Put this file into your load-path and the following into your ~/.emacs:
+  (require 'template)
+  (template-initialize)
+
+You might want to add another item to the \"File\" menu by (in XEmacs):
+  (add-menu-button '(\"File\")
+		      [\"Insert and Expand Template...\"
+                    template-expand-template
+                    :active (not buffer-read-only)]
+		      \"Insert File...\")
+
+To customize, use `M-x customize-group RET template RET' or the customize
+entry in menu Options.")

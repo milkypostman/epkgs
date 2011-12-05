@@ -1,0 +1,26 @@
+(:summary    "Emulate famos ms-dog file browser"
+ :created    "1996"
+ :updated    "19980505"
+ :license    "GPL-2"
+ :authors    (("Stefan Hegny" . "hegny@fzi.de")
+	      ("Ilya Zakharevich" . "ilya@math.ohio-state.edu"))
+ :maintainer ("Stefan Hegny" . "hegny@fzi.de")
+ :provided   (nc)
+ :required   ((("emacs" easymenu)
+	       ("shell" shell)))
+ :keywords   (directory file\ browser shell)
+ :wikipage   "NortonCommanderMode"
+ :commentary "\
+Installation:
+put nc.el/nc.elc in your load-path
+add (autoload 'nc \"nc\" \"Emulate MS-DOG file shell\" t) to _emacs/.emacs
+type `M-x nc'
+
+The descriptions moved to the docstring for the mode.
+
+
+Things that could be done but havent been:
+- directory tree
+- update view of backup-file after saving a buffer from nc
+  (see nc-update-current-file and nc-local-set-keys)
+(- undo function)")

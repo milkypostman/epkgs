@@ -1,0 +1,11 @@
+(:summary    "Browse diku mud .are area files"
+ :created    "2005"
+ :updated    "2007"
+ :license    "GPL-2"
+ :authors    (("Kevin Ryde" . "user42@zip.com.au"))
+ :maintainer ("Kevin Ryde" . "user42@zip.com.au")
+ :provided   (areabrowse)
+ :keywords   (games)
+ :commentary "\
+This is a mode to browse Diku MUD .are dungeon area files.  It's pretty
+minimal, just helping to let you walk the area north, south, etc.")

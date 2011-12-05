@@ -1,0 +1,7 @@
+(:summary    "Enables activating minor modes globally"
+ :created    "2000"
+ :updated    "2000"
+ :license    "GPL"
+ :authors    (("Hans van Dam" . "hans_van_dam@hetnet.nl"))
+ :maintainer ("Hans van Dam" . "hans_van_dam@hetnet.nl")
+ :provided   (global-modes))

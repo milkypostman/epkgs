@@ -1,0 +1,4 @@
+(:updated    "20070319"
+ :license    "GPL-2"
+ :provided   (replace-regexp-list)
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/editing")

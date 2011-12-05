@@ -1,0 +1,5 @@
+(:created    "2004"
+ :updated    "2004"
+ :license    "GPL-2"
+ :provided   (ios-config-addons ios-config-mode)
+ :homepage   "https://github.com/nibrahim/IOS-config-mode")

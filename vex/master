@@ -1,0 +1,11 @@
+(:summary    "Interactive svg graphics in a buffer"
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-3"
+ :authors    (("David O'Toole" . "dto@gnu.org"))
+ :maintainer ("David O'Toole" . "dto@gnu.org")
+ :provided   (vex)
+ :required   ((("cl" cl)))
+ :keywords   (extensions hypermedia multimedia)
+ :commentary "\
+This is a proof-of-concept. Requires recent (i.e. CVS) GNU Emacs.")

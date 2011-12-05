@@ -1,0 +1,33 @@
+(:summary    "Copyedit entries for the Stanford Encyclopedia of Philosophy"
+ :created    "2008"
+ :provided   (ce ce-macros ce-quotes ce-unadorned ce-validate)
+ :required   ((("cl" cl)
+	       ("emacs" custom)
+	       ("pp" pp)))
+ :homepage   "https://github.com/jessealama/ce-el"
+ :commentary "\
+Copyediting has many facets.  The Stanford Encyclopedia of
+Philosophy (SEP) has a number of copyediting tools that are all
+individually quite useful.  As it stands, though (at least, at the
+time this project began), they are a grab-bag of tools that, as far
+as I can tell, are not always applied uniformly.  It would be nice
+if there were just one tool that synthesized all the copyediting
+tasks, a single tool that could be used to carry out all (or nearly
+all) the copyediting tasks that come up when copyediting entries
+for the SEP.
+
+This tool is inspired by a number of Emacs utilities: checkdoc,
+ediff, and nxhtml-mode lie in the background.
+
+The tool ought to provide a number of services:
+
+  * validation
+  * natural language checking (spelling, grammar, usage)
+  * checking for adherence to house style
+
+The tool should provide a way for a copyeditor to step through an
+entry, accept of reject suggested changes, and, when accepting a
+suggested change, to apply it automatically.  Copyediting cannot be
+entirely automated, but many things can be done mechanically
+(sometimes interactively with a human copyeditor, sometimes
+non-interactively).")

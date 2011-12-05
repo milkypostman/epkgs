@@ -1,0 +1,9 @@
+(:summary    "Breadcrumb.  Set breadcrumb bookmarks and jump to them"
+ :created    "2004"
+ :updated    "2008"
+ :license    "GPL-2"
+ :provided   (breadcrumb)
+ :required   ((("info" info)))
+ :keywords   (bookmark bookmarks breadcrumb quick)
+ :homepage   "http://breadcrumbemacs.sourceforge.net"
+ :wikipage   "BreadcrumbForEmacs")

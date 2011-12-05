@@ -1,0 +1,3 @@
+(:summary    "Keep track of time spent on tasks"
+ :provided   (timecard)
+ :required   ((("cl" cl))))

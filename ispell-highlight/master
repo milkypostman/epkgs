@@ -1,0 +1,36 @@
+(:summary    "MS-Word like spell-error highlithing"
+ :created    "2000"
+ :updated    "20040518"
+ :authors    (("Robert Fenk"))
+ :maintainer ("Robert Fenk")
+ :provided   (ispell-highlight)
+ :required   ((("ispell" ispell)
+	       (nil hyper-apropos)))
+ :keywords   (draft handling vm)
+ :homepage   "http://www.robf.de/Hacking/elisp"
+ :commentary "\
+1) Type `M-x byte-compile-file \"ispell-hl.el\"' to byte compile
+   this library and put it somewhere in your load-path (you can
+   examine it with  `C-h v load-path').
+
+2) Add the following lines to your .emacs file and remove the
+   leading `;;>   '!
+
+>    ;; If you can't put ispell-highlight.el to the standard load-path,
+>    ;; then you have to add the path to the place where you put your
+>    ;; own Emacs libraries, e.g.  ~/elisp!
+>    (setq load-path (cons (expand-file-name \"~/elisp\") load-path))
+>    (autoload 'ispell-hl-minor-mode \"ispell-highlight\"
+>      \"Ispell highlight mode\" t)
+
+ 3) Start the mode with 'M-x ispell-hl-minor-mode' or with a hook
+    function e.g.  for the LaTeX-mode I use this hook to activate
+    some things:
+
+>    (defun rf-LaTeX-mode-hook () (interactive)
+>      (ispell-change-dictionary \"deutsch8\")
+>      (ispell-hl-minor-mode)
+>      (auto-fill-mode t))
+>    (add-hook 'LaTeX-mode-hook 'rf-LaTeX-mode-hook)
+
+For more information look at `ispell-hl-help'")

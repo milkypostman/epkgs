@@ -1,0 +1,25 @@
+(:summary    "Evaluate calc-expression within ordinary text"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("U-ITIHQ\\Tobias.Naehring" . "tobias.naehring@rechner64.itihq.local"))
+ :maintainer ("U-ITIHQ\\Tobias.Naehring" . "tobias.naehring@rechner64.itihq.local")
+ :provided   (calc-inline)
+ :keywords   (tools wp)
+ :commentary "\
+Matlab-like calc.
+
+Main commands:
+
+calc-inline (evaluate one line)
+
+and
+
+calc-inline-region (evaluate active region)
+
+Bind this two function to the keys of your choice.
+
+See doc of calc-inline-mode for comments of the structure of calc sheets.
+
+Changes:
+2011-02-08: calc-inline-region also works for the whole buffer (see doc of calc-inline-region).")

@@ -1,0 +1,10 @@
+(:summary    "Abstract spreadsheet display engine for GNU Emacs"
+ :created    "2006"
+ :updated    "20090104"
+ :license    "GPL-3"
+ :authors    (("David O'Toole" . "dto@gnu.org"))
+ :maintainer ("David O'Toole" . "dto@gnu.org")
+ :provided   (cell grid)
+ :required   ((("cl" cl)))
+ :keywords   (hypermedia lisp tools)
+ :wikipage   "CellMode")

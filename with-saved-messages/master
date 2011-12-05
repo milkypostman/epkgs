@@ -1,0 +1,5 @@
+(:summary    "Run a command and save the messages it produces"
+ :updated    "20060331"
+ :license    "GPL-2"
+ :provided   (with-saved-messages)
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/elisp-dev-tools")

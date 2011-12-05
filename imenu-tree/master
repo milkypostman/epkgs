@@ -1,0 +1,12 @@
+(:summary    "A mode to view imenu using tree-widget"
+ :created    "2007"
+ :updated    "20070313"
+ :license    "GPL-2"
+ :authors    ((nil . "wenbinye@163.com"))
+ :maintainer (nil . "wenbinye@163.com")
+ :provided   (imenu-tree)
+ :required   ((("cl" cl)
+	       ("imenu" imenu)
+	       ("tree-mode" tree-mode)
+	       ("windata" windata)))
+ :keywords   (convenience help))

@@ -1,0 +1,6 @@
+(:created    "1993"
+ :updated    "1993"
+ :license    "GPL-2"
+ :provided   (viewtex)
+ :required   ((("emacs" comint)))
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp")

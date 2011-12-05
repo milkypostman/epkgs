@@ -1,0 +1,12 @@
+(:summary    "Smart-Dash minor mode"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-2"
+ :authors    (("Dennis Lambe Jr." . "malsyned@malsyned.net"))
+ :maintainer ("Dennis Lambe Jr." . "malsyned@malsyned.net")
+ :provided   (smart-dash)
+ :homepage   "http://bitbucket.org/malsyned/smart-dash"
+ :commentary "\
+Smart-Dash mode is a minor mode which redefines the dash key to
+insert an underscore within C-style identifiers and a dash
+otherwise.")

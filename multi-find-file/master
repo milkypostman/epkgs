@@ -1,0 +1,5 @@
+(:summary    "Find multiple files in one command"
+ :updated    "20060428"
+ :license    "GPL-2"
+ :provided   (multi-find-file)
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/file-handling")

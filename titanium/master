@@ -1,0 +1,13 @@
+(:created    "2010"
+ :updated    "2010"
+ :license    "GPL-2"
+ :provided   (ac-titanium-mobile titanium)
+ :required   ((("anything" anything)
+	       ("auto-complete" auto-complete)
+	       ("cl" cl)
+	       ("deferred" deferred)
+	       ("emacs" easy-mmode)
+	       ("historyf" historyf))
+	      (("anything" anything-show-completion)
+	       ("imenu" imenu)))
+ :homepage   "https://github.com/k1LoW/emacs-titanium")

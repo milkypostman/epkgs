@@ -1,0 +1,8 @@
+(:created    "2006"
+ :updated    "2006"
+ :license    "GPL-2"
+ :provided   (lsl-mode)
+ :required   ((("cc-mode" cc-bytecomp cc-mode)
+	       ("thingatpt" thingatpt)))
+ :homepage   "https://github.com/taladar/lsl-mode"
+ :wikipage   "LSLMode")

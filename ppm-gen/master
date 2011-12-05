@@ -1,0 +1,18 @@
+(:summary    "Simple & slow ppm generation in emacs"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-2"
+ :authors    (("Joyer Huang" . "collger@eyou.com"))
+ :maintainer ("Joyer Huang" . "collger@eyou.com")
+ :provided   (ppm-gen)
+ :required   ((("cl" cl)
+	       ("eieio" eieio eieio-base)
+	       ("emacs" image-mode)
+	       (nil eieio-comp)))
+ :keywords   (bitmap draw generator ppm ray\ tracing)
+ :wikipage   "PpmGen"
+ :commentary "\
+This package provide a set of PPM file generation function, you can
+now use emacs as a canvas to draw thing, and output to a buffer,
+view it with image-mode-maybe. emacs are slow on this kind of massive
+math operations, by I managed to write a ray tracer with ppm-gen.")

@@ -1,0 +1,20 @@
+(:summary    "Archive-mode support for LHa self-extracting .exe"
+ :created    "2006"
+ :updated    "2008"
+ :license    "GPL-3"
+ :authors    (("Kevin Ryde" . "user42@zip.com.au"))
+ :maintainer ("Kevin Ryde" . "user42@zip.com.au")
+ :provided   (arc-lzh-exe)
+ :keywords   (data)
+ :commentary "\
+This is a spot of code for viewing the contents of LHa (ie. LZH)
+self-extracting executables from `archive-mode'.  The executable part,
+which is meant for DOS, is not executed.
+
+There's no support for modifying such files; it looks like the unix
+version of the lha program doesn't have support for writing them (only
+reading).
+
+A random .exe file is of course might not be an LHa file, so
+`archive-exe-p' and `archive-lzh-exe-mode-maybe' below check the contents
+before going to archive-mode.")

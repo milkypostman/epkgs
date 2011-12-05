@@ -1,0 +1,14 @@
+(:summary    "Create simple menus in buffers"
+ :created    "2003"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("Alex Schroeder" . "alex@gnu.org"))
+ :maintainer ("Alex Schroeder" . "alex@gnu.org")
+ :provided   (toolbox)
+ :keywords   (convenience)
+ :wikipage   "ToolBox"
+ :commentary "\
+Run M-x toolbox to create a toolbox buffer.  A toolbox buffer has
+an ordinary buffer associated with it.  The name of the toolbox
+buffer will tell you which one it is.  You can save a toolbox as an
+ordinary file.")

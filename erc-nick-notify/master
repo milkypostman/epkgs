@@ -1,0 +1,29 @@
+(:summary    "Notify popup for ERC"
+ :created    "20081204"
+ :updated    "20090131"
+ :license    "GPL-3"
+ :authors    ((nil . "andy stewart lazycat.manatee@gmail.com"))
+ :maintainer (nil . "andy stewart lazycat.manatee@gmail.com")
+ :provided   (erc-nick-notify)
+ :required   ((("erc" erc)))
+ :keywords   (erc notify)
+ :wikipage   "ErcNickNotify"
+ :commentary "\
+Notify popup for ERC
+
+This extension use `notify-send' for notify.
+So make you have install `notify-send' in your system.
+
+
+Installation:
+
+Put erc-nick-notify.el to your load-path.
+The load-path is usually ~/elisp/.
+It's set in your ~/.emacs like this:
+(add-to-list 'load-path (expand-file-name \"~/elisp\"))
+
+And the following to your ~/.emacs startup file.
+
+(require 'erc-nick-notify)
+
+No need more.")

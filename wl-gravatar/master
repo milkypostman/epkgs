@@ -1,0 +1,17 @@
+(:summary    "Gravatar fetch/store functions"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Kazuhiro NISHIYAMA" . "zn@mbf.nifty.com"))
+ :maintainer ("Kazuhiro NISHIYAMA" . "zn@mbf.nifty.com")
+ :provided   (wl-gravatar)
+ :required   ((("gnus" gravatar)))
+ :keywords   (extensions faces mail tools)
+ :homepage   "https://github.com/dabrahams/wl-gravatar"
+ :commentary "\
+Usage:
+(require 'wl-gravatar)
+(setq wl-highlight-x-face-function 'wl-gravatar-insert)
+(setq gnus-gravatar-directory \"~/.emacs-gravatar/\")
+(setq gravatar-unregistered-icon 'identicon)
+(setq wl-gravatar-retrieve-once t)")

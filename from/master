@@ -1,0 +1,23 @@
+(:summary    "Show who messages in mailspools is from"
+ :created    "20010826"
+ :updated    "20010830"
+ :license    "GPL-2"
+ :authors    (("Henrik Enberg" . "henrik@enberg.org"))
+ :maintainer ("Henrik Enberg" . "henrik@enberg.org")
+ :provided   (from)
+ :required   ((("cl" cl)
+	       ("gnus" rfc2047)
+	       ("mail-utils" mail-extr)
+	       ("parse-time" parse-time)))
+ :keywords   (mail)
+ :commentary "\
+This package lets you quickly see subjects and senders of messages in
+your mailspools, without the overhead of starting up a mailreader.
+
+To install, drop it in a directory on your `load-path', and add
+the following to your .emacs:
+
+	(autoload 'from \"from\" \"Show who messages in mailspools is from.\" t)
+
+Then customize the variable `from-mailspools' to point to the spools
+you're interested in.")

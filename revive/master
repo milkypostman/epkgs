@@ -1,0 +1,8 @@
+(:updated    "20080513"
+ :provided   (revive)
+ :required   ((("cc-mode" cc-mode)
+	       ("mew" mew)
+	       ("mh-e" mh-e mh-utils)
+	       ("mpg123" mpg123)
+	       ("view" view)))
+ :homepage   "http://www.gentei.org/~yuuji/software")

@@ -1,0 +1,51 @@
+(:summary    "Show Common Lisp operators and variables information in echo area"
+ :created    "1996"
+ :updated    "20041201"
+ :license    "GPL-2"
+ :provided   (cldoc)
+ :required   ((("cl" cl)))
+ :keywords   (extensions)
+ :homepage   "http://homepage1.nifty.com/bmonkey/emacs/index-en.html"
+ :commentary "\
+cldoc.el is basically an eldoc clone for Common Lisp.
+The following comment is from eldoc.el
+> This program was inspired by the behavior of the \"mouse documentation
+> window\" on many Lisp Machine systems; as you type a function's symbol
+> name as part of a sexp, it will print the argument list for that
+> function.  Behavior is not identical; for example, you need not actually
+> type the function name, you need only move point around in a sexp that
+> calls it.  Also, if point is over a documented variable, it will print
+> the one-line documentation for that variable instead, to remind you of
+> that variable's meaning.
+
+cldoc.el has a database of parameters and results of Common Lisp's standard
+functions, and syntax rules of standard macros and special operators.
+cldoc.el automatically uses SLIME's autodoc facility if available to display
+parameters of user defined functions and macros, and the values of global
+variables.
+
+
+One useful way to enable this minor mode is to put the following in your
+.emacs:
+
+;; all users
+(autoload 'turn-on-cldoc-mode \"cldoc\" nil t)
+(add-hook 'lisp-mode-hook 'turn-on-cldoc-mode)
+
+;; ilisp users
+(add-hook 'ilisp-mode-hook 'turn-on-cldoc-mode)
+(setq ilisp-bindings-*bind-space-p* nil)
+
+;; slime users
+(add-hook 'slime-repl-mode-hook
+          #'(lambda ()
+              (turn-on-cldoc-mode)
+              (define-key slime-repl-mode-map \" \" nil)))
+(add-hook 'slime-mode-hook
+          #'(lambda () (define-key slime-mode-map \" \" nil)))
+(setq slime-use-autodoc-mode nil)
+
+todo
+* handling of operators with multiple syntax rules (e.g. file-position).
+* handling of operators which implementations are allowed to extend
+  (e.g. directory)")

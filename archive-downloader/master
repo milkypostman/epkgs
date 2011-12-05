@@ -1,0 +1,27 @@
+(:summary    "Download files from archive.org"
+ :created    "2007"
+ :updated    "2007"
+ :license    "GPL-2"
+ :authors    (("Michael Olson" . "mwolson@gnu.org"))
+ :maintainer ("Michael Olson" . "mwolson@gnu.org")
+ :provided   (archive-downloader)
+ :required   ((("url" url)))
+ :commentary "\
+This is useful for downloading music at http://archive.org.  Just
+pass it a link to the listing of all files for a particular album,
+and it will get the music for you.
+
+* Prerequisites:
+
+- wget (binary): This is used to download the music.
+- url.el: This is used to download the file listing.
+
+* Use:
+
+Copy a link from the http://archive.org/ website that contains a
+listing of all of the files available for an album.  Then, do:
+
+  M-x archive-downloader-get RET
+
+Enter the location of the directory to store the files in.  If it
+does not exist, it will be created.")

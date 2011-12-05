@@ -1,0 +1,8 @@
+(:summary    "A framework for a \"home\" Emacs configuration"
+ :created    "20101102"
+ :license    "public-domain"
+ :authors    (("Dave Abrahams" . "dave@boostpro.com"))
+ :maintainer ("Dave Abrahams" . "dave@boostpro.com")
+ :provided   (elhome)
+ :keywords   (lisp)
+ :homepage   "https://github.com/dabrahams/elhome")

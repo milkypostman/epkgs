@@ -1,0 +1,69 @@
+(:summary    "Emacs Interface to MLDonkey"
+ :created    "2003"
+ :updated    "2004"
+ :license    "GPL-2"
+ :authors    (("David Hansen" . "david.hansen@physik.fu-berlin.de"))
+ :maintainer ("David Hansen" . "david.hansen@physik.fu-berlin.de")
+ :provided   (mldonkey mldonkey-auth mldonkey-commands mldonkey-console mldonkey-header-line mldonkey-vd mldonkey-vd-sort)
+ :required   ((("ansi-color" ansi-color)
+	       ("emacs" comint)))
+ :wikipage   "MlDonkey"
+ :commentary "\
+MLDonkey is a multi-networks peer-to-peer client.
+See <http://www.nongnu.org/mldonkey/> for details.
+
+mldonkey.el connects to the telnet interface of the mldonkey core
+and uses a lot of regexps to parse the output.  So it might not work
+with newer versions of mldonkey.
+
+Change log
+0.0.4:
+  * made `mldonkey-temp-buffer-name' hidden buffer
+0.0.3b:
+  * minor bug fixes
+0.0.3a:
+  * changed name of the temp buffer
+
+Documentation:
+
+This is the basic module for the MlDonnkey interface.  It only supports
+connecting to the core and some basic functions.  Read the documentation
+for the other modules as well.
+
+Set `mldonkey-host' and `mldonkey-port' to the hostname and port where
+you run the MlDonkey core.  You can customize these variables.
+
+To open a buffer in mldonkey-mode and connect to the core use
+M-x mldonkey RET.  To quit the interface just kill the *MlDonkey*
+buffer.
+
+Sometimes the telnet interface seems to hang.  You can reconnect to
+using M-x mldonkey-reconnect RET.
+
+`mldonkey-quit' buries the *MlDonkey* buffer and hides all other
+ windows with this buffer.  `mldonkey-quit' is bound to the key \"q\".
+
+Example configuration:
+
+  (require 'mldonkey)
+
+  ;; hostname and port
+  (setq mldonkey-host \"localhost\")
+  (setq mldonkey-port 4000)
+
+  ;; the motd looks more nice this way.  make sure the image exists
+  (setq mldonkey-image \"~/.elisp/mldonkey.jpg\")
+
+TODO or not TODO
+
+- mldonkey.el:
+
+   timers
+
+- mldonkey-console.el
+
+   completion
+
+- mldonkey-vdnum.el
+
+- mldonkey-preview")

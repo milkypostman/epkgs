@@ -1,0 +1,4 @@
+(:updated    "20010207"
+ :provided   (save-kill)
+ :required   ((("save-emacs-state" save-emacs-state)))
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/persistence")

@@ -1,0 +1,100 @@
+(:summary    "This package helps to comment source code"
+ :created    "2003"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("Aurélien Tisné" . "aurelien.tisne@free.fr"))
+ :maintainer ("Aurélien Tisné" . "aurelien.tisne@free.fr")
+ :provided   (prg-comment)
+ :required   ((("tempo" tempo)))
+ :keywords   (comments convenience)
+ :homepage   "http://aurelien.tisne.free.fr/emacs-pages/emacs/prg-comment-doc.html"
+ :commentary "\
+This package defines headers and comment facilities that help the
+developer to document his source code.  Using this package, the developer
+may add quality in his production.  The coding rules are described into
+a charter.  You can define your own charter or use an existing one.
+It is elisp definitions of some variables and templates.  These
+definitions describe the conventions you use to comment your code.
+
+Let me know if you improve or add new languages to this package.
+
+Usage:
+
+Byte-compile this file and put the compiled file into the scope of your
+load-path.
+There is several ways to use the package:
+* manual call
+  Add the line
+    (autoload 'prg-comment-set-charter \"prg-comment\")
+  to your emacs initialization file (.emacs/_emacs), then select your buffer
+  and call interactively the function
+    prg-comment-set-charter RET <charter> RET
+  where <charter> is the name of a defined charter.
+
+* automatic call
+  Add the lines
+    (autoload 'prg-comment-use-it \"prg-comment\")
+    (add-hook '<major-mode>-hook 'prg-comment-use-it)
+    (setq prg-comment-charters-alist
+       '((\"~/gnu\" . open-source)
+         (\"~/work\" . my-company)
+         (\"~/work/airbus\" . airbus)))
+  to your emacs initialization file (.emacs/_emacs), where <major-mode>
+  is the major mode that want to use prg-comment. Redefine the
+  `prg-comment-charters-alist' variable according to each of your
+  personal workspaces.
+  In the previous example, each file edited with the <major-mode> and
+  located into the \"d:/users/atisne/work\" subtree, will use the my-company
+  charter; except the files located into the \"d:/users/atisne/work/airbus\"
+  subtree that will use the airbus charter. The mode will choose the
+  charter associated to the deeper path declared in the association list
+  `prg-comment-charters-alist'.
+
+You can, of course, combine the both call types.
+
+Material description
+
+* Charter
+Charters are located in `prg-comment-material-path'/charter.
+A charter describes all comment conventions.
+The default charter is named 'default.el'.
+An exhaustive declaration defines:
+
+- the language of the charter (`prg-comment-language')
+- the maximum column that comments can used (`prg-comment-max-column')
+- the column to align field values (`prg-comment-field-column')
+- the name of the company you write for (`prg-comment-company')
+- the character used to build module header (`prg-comment-mod-char')
+- the character used to build function header (`prg-comment-fct-char')
+- the character used to build maintenance block (`prg-comment-maint-char')
+- the character used to build in-line comment (`prg-comment-in-line-char')
+- the template for module header (`prg-comment-mod-header')
+- the template for module footer (`prg-comment-mod-footer')
+- the template for function header (`prg-comment-fct-header')
+- the template to begin a maintenance block (`prg-comment-maint-header')
+- the template to end a maintenance block (`prg-comment-maint-footer')
+- the template for log header (`prg-comment-log-header')
+- the number of colums used by in-line comment (`prg-comment-in-line-width')
+- the template for in-line separator (`prg-comment-in-line-sep')
+
+The definition of a charter may require a bit of skill with
+emacs lisp. (Please refer to the external package documentation.)
+
+* Language
+Language string tables are located in `prg-comment-material-path'/lang.
+It is a translation table for each field that may be used into templates.
+The package will load the table according to the value set into the used
+charter.  The default language is the one defined into the default charter.
+
+You can find detailed documentation at 
+http://aurelien.tisne.free.fr/emacs-pages/emacs.html
+
+TODO
+
+* Add a maintenance type (Technical Fact, Product Change Request: TF INT,
+  TF VAL, PCR, ... defined in the charter)
+  and a maintenance number into the maintenance header.
+
+}}}
+
+{{{ Code")

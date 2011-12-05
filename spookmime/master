@@ -1,0 +1,20 @@
+(:summary    "Echelon fodder mime boundary generators"
+ :created    "19970206"
+ :updated    "20020716"
+ :license    "GPL-2"
+ :authors    (("Noah Friedman" . "friedman@splode.com"))
+ :maintainer (nil . "friedman@splode.com")
+ :provided   (spookmime)
+ :keywords   (fnord)
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
+ :commentary "\
+Original concept by Bryan O'Sullivan <bos@serpentine.com>.
+
+The function spookmime-make-mime-boundary returns a string which is
+suitable for use as a MIME multipart separator.  MUAs and news readers
+need to be instrumented to use this routine instead of whatever default
+they normally provide.  VM is already so instrumented at the end of this
+package.
+
+Updates of this program may be available via the URL
+http://www.splode.com/~friedman/software/emacs-lisp/")

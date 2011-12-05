@@ -1,0 +1,4 @@
+(:summary    "Query AV via w3"
+ :updated    "20041123"
+ :license    "GPL-2"
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/webstuff")

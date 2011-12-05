@@ -1,0 +1,7 @@
+(:summary    "A module for organizing and adding to code imports"
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-3"
+ :provided   (code-imports code-imports-test)
+ :homepage   "https://github.com/ahyatt/code-imports"
+ :wikipage   "CodeImports")

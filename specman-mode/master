@@ -1,0 +1,16 @@
+(:summary    "Mode for editing specman files"
+ :created    "200005"
+ :updated    "20050808"
+ :license    "GPL-2"
+ :authors    (("Uri Maoz" . "urim@cadence.com")
+	      ("Michael McNamara" . "mac@cadence.com")
+	      ("Yaron Peri" . "yperi@cadence.com"))
+ :maintainer ("Uri Maoz" . "urim@cadence.com")
+ :provided   (specman-mode)
+ :required   ((("cl" cl)
+	       ("emacs" easymenu font-lock)
+	       ("filladapt" filladapt)
+	       ("imenu" imenu)
+	       ("reporter" reporter)))
+ :keywords   (tools)
+ :homepage   "http://www.specman-mode.com")

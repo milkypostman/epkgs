@@ -1,0 +1,21 @@
+(:summary    "Major modes for LaTeX and LaTeX doc.sty documents"
+ :updated    "20010908"
+ :license    "GPL-2"
+ :authors    (("Matt Swift" . "swift@alum.mit.edu")
+	      ("Johanes Braams")
+	      ("Frank Mittelbach"))
+ :maintainer ("Matt Swift" . "swift@alum.mit.edu")
+ :provided   (swiftex)
+ :required   ((("auctex" font-latex tex-site)
+	       ("hilit-swiftex" hilit-swiftex)
+	       ("outline" outline)
+	       ("tex-mode" tex-mode)))
+ :keywords   (doc dtx latex ltxdoc tex)
+ :homepage   "http://www.ctan.org/tex-archive/support/emacs-modes/swiftex"
+ :commentary "\
+This file is distributed by its author with
+documentation in Info format that gives an overview of
+this package and describes how to install and use and
+use it.  It should always be available on CTAN FIX.
+
+IMPLEMENTATION")

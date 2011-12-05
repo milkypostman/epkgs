@@ -1,0 +1,20 @@
+(:summary    "View a DVI file in an Emacs buffer"
+ :created    "2007"
+ :updated    "20070822"
+ :license    "GPL-2"
+ :authors    (("John C. G. Sturdy" . "john@cb1.com"))
+ :maintainer ("John C. G. Sturdy" . "john@cb1.com")
+ :provided   (dvi-view)
+ :keywords   (tex)
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/graphics"
+ :wikipage   "DviViewMode"
+ :commentary "\
+Converter written 2007-08-18 by John C G Sturdy when he found
+himself on a machine without xdvi, and major mode written the next
+day.
+
+todo: make this choose a format according to what converters are available
+
+todo: find how to get page boundary information to make pages clickable -- I think there is some magic stuff you can get in DVI files
+
+todo: sort out the two-page spreads")

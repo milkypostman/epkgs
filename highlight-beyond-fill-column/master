@@ -1,0 +1,8 @@
+(:summary    "Font-lock-add-keywords aid for Emacs"
+ :created    "1985"
+ :updated    "1992"
+ :license    "GPL-2"
+ :authors    (("Sandip Chitale" . "sandip.chitale@blazesoft.com"))
+ :maintainer ("Sandip Chitale" . "sandip.chitale@blazesoft.com")
+ :provided   (highlight-beyond-fill-column)
+ :keywords   (convenience decipline programming))

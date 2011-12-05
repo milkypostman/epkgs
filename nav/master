@@ -1,0 +1,26 @@
+(:summary    "Emacs mode for filesystem navigation"
+ :created    "2010"
+ :updated    "2010"
+ :license    "Apache-2.0"
+ :authors    (("Issac Trotts" . "issactrotts@google.com"))
+ :maintainer ("Issac Trotts" . "issactrotts@google.com")
+ :provided   (nav)
+ :required   ((("ack" ack)
+	       ("emacs" dired)))
+ :homepage   "http://code.google.com/p/emacs-nav"
+ :wikipage   "Nav"
+ :commentary "\
+To use this file, put something like the following in your
+~/.emacs:
+
+(add-to-list 'load-path \"/directory/containing/nav/\")
+(require 'nav)
+
+Type M-x nav to start navigating.
+
+To set options for Nav, type M-x customize, then select
+Applications, Nav.
+
+Key Bindings
+
+Press ? in the Nav window to display a list of key bindings.")

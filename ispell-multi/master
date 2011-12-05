@@ -1,0 +1,9 @@
+(:summary    "Multiple ispell processes and multiple flyspell languages"
+ :created    "2005"
+ :updated    "2005"
+ :license    "GPL-2"
+ :authors    (("Peter Heslin" . "p.j.heslin@dur.ac.uk"))
+ :maintainer ("Peter Heslin" . "p.j.heslin@dur.ac.uk")
+ :provided   (ispell-multi)
+ :required   ((("ispell" ispell)))
+ :homepage   "http://www.dur.ac.uk/p.j.heslin/Software/Emacs")

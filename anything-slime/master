@@ -1,0 +1,25 @@
+(:summary    "Anything-sources and some utilities for SLIME"
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-3"
+ :authors    (("Takeshi Banse" . "takebi@laafc.net"))
+ :maintainer ("Takeshi Banse" . "takebi@laafc.net")
+ :provided   (anything-slime)
+ :required   ((("anything" anything anything-complete)
+	       ("slime" slime slime-c-p-c slime-fuzzy slime-repl))
+	      (("anything" anything-show-completion)))
+ :keywords   (anything convenience slime)
+ :commentary "\
+Some Anything and SLIME Configurations for using SLIME within the
+Anything interface. (The `ascsa-' prefix comes here.)
+
+Installation:
+
+Put the anything-slime.el, anything.el and anything-complete.el to your
+load-path.
+Set up the SLIME properly.
+Call `slime-setup' and include 'anything-slime as the arguments:
+
+  (slime-setup '([others contribs ...] anything-slime))
+
+or simply require anything-slime in some appropriate manner.")

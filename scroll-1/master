@@ -1,0 +1,13 @@
+(:summary    "Bind j and k to scroll the window up and down"
+ :created    "2005"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Kevin Ryde" . "user42@zip.com.au"))
+ :maintainer ("Kevin Ryde" . "user42@zip.com.au")
+ :provided   (scroll-1)
+ :required   ((("view" view)))
+ :keywords   (convenience)
+ :homepage   "http://user42.tuxfamily.org/scroll-1"
+ :commentary "\
+This spot of code sets up keys j and k to scroll the window up or down
+one line in chosen major modes.")

@@ -1,0 +1,12 @@
+(:summary    "Edit pages on a remote wiki"
+ :created    "2001"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("Alex Schroeder" . "alex@gnu.org"))
+ :provided   (wiki-remote)
+ :required   ((("emacs" easy-mmode)
+	       ("thingatpt" thingatpt)
+	       ("w3" w3)
+	       ("w3m" w3m)))
+ :keywords   (hypermedia)
+ :wikipage   "WikiRemote")

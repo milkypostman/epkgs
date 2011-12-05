@@ -1,0 +1,12 @@
+(:summary    "Template Toolkit for html-helper-mode"
+ :created    "2002"
+ :updated    "2002"
+ :license    "GPL-2"
+ :authors    (("Yoshiki KURIHARA" . "kurihara@cpan.org"))
+ :maintainer ("Yoshiki KURIHARA" . "kurihara@cpan.org")
+ :provided   (html-tt)
+ :required   ((("emacs" font-lock)
+	       ("html-helper-mode" html-helper-mode)
+	       ("tempo" tempo)))
+ :keywords   (languages tools)
+ :homepage   "https://github.com/yoshiki/html-tt")

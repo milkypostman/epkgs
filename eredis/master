@@ -1,0 +1,4 @@
+(:provided   (eredis)
+ :required   ((("cl" cl)
+	       ("org" org-table)))
+ :homepage   "http://code.google.com/p/eredis")

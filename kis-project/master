@@ -1,0 +1,6 @@
+(:summary    "Extensions for kis-mode"
+ :updated    "20060214"
+ :license    "GPL-2"
+ :authors    (("ffrances"))
+ :maintainer ("ffrances")
+ :provided   (kis-project))

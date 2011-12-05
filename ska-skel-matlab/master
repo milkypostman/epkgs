@@ -1,0 +1,8 @@
+(:summary    "My matlab skeletons"
+ :created    "2003"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("Stefan Kamphausen" . "kamphausen@insiligence.com"))
+ :maintainer ("Stefan Kamphausen" . "kamphausen@insiligence.com")
+ :provided   (ska-skel-matlab)
+ :keywords   (languages tools))

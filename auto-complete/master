@@ -1,0 +1,36 @@
+(:summary    "Auto Completion for GNU Emacs"
+ :created    "2008"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Tomohiro Matsuyama" . "m2ym.pub@gmail.com"))
+ :maintainer ("Tomohiro Matsuyama" . "m2ym.pub@gmail.com")
+ :provided   (auto-complete auto-complete-config fuzzy)
+ :required   ((("cl" cl)
+	       ("emacs" help-mode)
+	       ("popup" popup)
+	       ("pp" pp)
+	       ("regexp-opt" regexp-opt)
+	       ("thingatpt" thingatpt)
+	       (nil rcodetools))
+	      (("semantic" semantic/ia)
+	       (nil semantic-ia)))
+ :keywords   (completion convenience)
+ :homepage   "https://github.com/m2ym/auto-complete"
+ :wikipage   "AutoComplete"
+ :commentary "\
+This extension provides a way to complete with popup menu like:
+
+    def-!-
+    +-----------------+
+    |defun::::::::::::|
+    |defvar           |
+    |defmacro         |
+    |       ...       |
+    +-----------------+
+
+You can complete by typing and selecting menu.
+
+Entire documents are located in doc/ directory.
+Take a look for information.
+
+Enjoy!")

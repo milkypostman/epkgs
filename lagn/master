@@ -1,0 +1,3 @@
+(:license    "GPL-3"
+ :provided   (lagn)
+ :homepage   "https://github.com/vanicat/lagn")

@@ -1,0 +1,26 @@
+(:summary    "Highlights nicknames"
+ :created    "20070925"
+ :updated    "20081207"
+ :license    "GPL-2"
+ :authors    (("André Riemann" . "andre.riemann@web.de"))
+ :maintainer ("André Riemann" . "andre.riemann@web.de")
+ :provided   (erc-highlight-nicknames)
+ :required   ((("erc" erc erc-button)))
+ :keywords   (comm faces)
+ :homepage   "https://github.com/amalloy/erc-highlight-nick"
+ :wikipage   "ErcHighlightNicknames"
+ :commentary "\
+To activate this module, put this in your init file
+    (require 'erc-highlight-nicknames)
+and add highlight-nicknames to `erc-modules' by customizing it.
+
+Or put this in your init file
+    (and
+     (load-library \"erc-highlight-nicknames\")
+     (add-to-list 'erc-modules 'highlight-nicknames)
+     (erc-update-modules))
+
+Press
+    M-x customize-face RET erc-highlight-nick-base-face RET
+to customize the face that will be added before the color, if you want
+for example all the nicks underlined.")

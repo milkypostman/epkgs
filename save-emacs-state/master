@@ -1,0 +1,4 @@
+(:updated    "20060427"
+ :provided   (save-emacs-state)
+ :required   ((("load-directory" load-directory)))
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/persistence")

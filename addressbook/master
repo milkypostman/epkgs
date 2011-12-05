@@ -1,0 +1,17 @@
+(:summary    "A simple addressbook"
+ :created    "2007"
+ :updated    "2009"
+ :license    "GPL-3"
+ :maintainer ("Jose E. Marchesi")
+ :provided   (abook)
+ :required   ((("cl" cl)
+	       ("gnus" mm-decode vcard)
+	       ("url" url)))
+ :keywords   (applications contacts)
+ :homepage   "http://www.nongnu.org/addressbook"
+ :wikipage   "AddressBook"
+ :commentary "\
+A simple vCard based addressbook for Emacs
+
+To see the structure of this file activate the outline minor mode
+and execute M-xhide-body")

@@ -1,0 +1,2 @@
+(:summary    "Switch buffers with Ctrl-Tab (or another keystroke)"
+ :license    "GPL-3")

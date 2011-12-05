@@ -1,0 +1,10 @@
+(:summary    "Provide navigation, clickability, folding, interpretation"
+ :created    "2002"
+ :updated    "2002"
+ :license    "GPL-2"
+ :authors    (("Patrick Anderson" . "patware@freeshell.org"))
+ :maintainer ("Patrick Anderson" . "patware@freeshell.org")
+ :provided   (interpreter-minor)
+ :keywords   (convenience multimedia)
+ :commentary "\
+This isn't a minor mode at all, though that was my initial vision.  right now it's more like easy-mmode.")

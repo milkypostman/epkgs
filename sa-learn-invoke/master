@@ -1,0 +1,6 @@
+(:license    "GPL-2"
+ :authors    (("Phillip Lord" . "p.lord@russet.org.uk"))
+ :maintainer ("Phillip Lord" . "p.lord@russet.org.uk")
+ :provided   (sa-learn-invoke)
+ :keywords   (shell working\ directory)
+ :homepage   "http://homepages.cs.ncl.ac.uk/phillip.lord/emacs.html")

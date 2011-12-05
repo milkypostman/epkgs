@@ -1,0 +1,11 @@
+(:created    "200105"
+ :updated    "2001"
+ :license    "GPL-2"
+ :authors    (("Alexander Baltatzis" . "alexander@baltatzis.com")
+	      ("Johan Dykström" . "johan.dykstrom@relogic.se"))
+ :maintainer ("Alexander Baltatzis" . "alexander@baltatzis.com")
+ :provided   (jtags)
+ :required   ((("cl" cl)
+	       ("etags" etags)))
+ :keywords   (etags java tags)
+ :homepage   "http://jtags.sourceforge.net")

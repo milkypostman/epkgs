@@ -1,0 +1,21 @@
+(:summary    "Editing for the Linux Magazine"
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-2"
+ :keywords   (user)
+ :homepage   "http://www.skamphausen.de/cgi-bin/ska/linmag-mode"
+ :commentary "\
+This is a major mode for writing articles for the Linux Magazin
+(German). 
+
+History
+Version 1.7: added error regexps to compilation
+Version 1.6: added compilation and stats
+Version 1.5: added eldoc
+
+Prehistoric:
+This mode was written for and used for the first time for the
+writing of
+http://www.linux-magazin.de/Heft-Abo/Ausgaben/2007/08/Gross-in-Mode
+After that changes were made on the fly.  History starts with
+version 1.5")

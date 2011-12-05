@@ -1,0 +1,4 @@
+(:provided   (matlab-notebook-mode mupad-notebook-mode notebook-mode octave-notebook-mode)
+ :required   ((("octave-mod" octave-mod)
+	       ("sh-script" sh-script)))
+ :homepage   "http://notebook.sourceforge.net")

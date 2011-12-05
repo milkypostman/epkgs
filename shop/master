@@ -1,0 +1,14 @@
+(:summary    "Generate random shopping lists"
+ :created    "19970204"
+ :updated    "20021101"
+ :license    "GPL-2"
+ :authors    (("Noah Friedman" . "friedman@splode.com"))
+ :maintainer (nil . "friedman@splode.com")
+ :provided   (shop)
+ :keywords   (games)
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
+ :commentary "\
+This program is a reimplementation of a hack written by Brian Rice in C
+while he was a student at Oberlin College, c. 1989.  My silly-mail.el
+program used to run that program and insert the output in mail headers.
+Now I can do it purely in elisp.  Cons me harder!")

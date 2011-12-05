@@ -1,0 +1,17 @@
+(:summary    "Minimal DOM support on top of xml.el"
+ :created    "2007"
+ :updated    "2007"
+ :license    "GPL-2"
+ :authors    (("Edward O'Connor" . "hober0@gmail.com"))
+ :maintainer ("Edward O'Connor" . "hober0@gmail.com")
+ :provided   (edom)
+ :required   ((("xml" xml)))
+ :keywords   (xml)
+ :homepage   "http://edward.oconnor.cx/elisp"
+ :commentary "\
+Very basic, very primitive DOM methods that operate on the output of
+xml.el's XML parsing routines.
+
+Not to be confused with the biblical nation of the same name.
+Ironically, they may have worshipped El, so \"edom.el\" is particularly
+rich.")

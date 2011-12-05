@@ -1,0 +1,51 @@
+(:summary    "Helper code for use with the \"ledger\" command-line tool"
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-2"
+ :authors    (("John Wiegley" . "johnw@gnu.org"))
+ :maintainer ("John Wiegley" . "johnw@gnu.org")
+ :provided   (ldg-complete ldg-exec ldg-mode ldg-post ldg-regex ldg-register ldg-state ldg-texi ledger)
+ :required   ((("cl" cl)
+	       ("eshell" esh-arg esh-util)
+	       ("pcomplete" pcomplete)
+	       ("rx" rx)))
+ :keywords   (data)
+ :homepage   "https://github.com/jwiegley/ledger"
+ :wikipage   "LedgerMode"
+ :commentary "\
+To use this module: Load this file, open a ledger data file, and
+type M-x ledger-mode.  Once this is done, you can type:
+
+  C-c C-a       add a new entry, based on previous entries
+  C-c C-e       toggle cleared status of an entry
+  C-c C-y       set default year for entry mode
+  C-c C-m       set default month for entry mode
+  C-c C-r       reconcile uncleared entries related to an account
+  C-c C-o C-r   run a ledger report
+  C-C C-o C-g   goto the ledger report buffer
+  C-c C-o C-e   edit the defined ledger reports
+  C-c C-o C-s   save a report definition based on the current report
+  C-c C-o C-a   rerun a ledger report
+  C-c C-o C-k   kill the ledger report buffer
+
+In the reconcile buffer, use SPACE to toggle the cleared status of
+a transaction, C-x C-s to save changes (to the ledger file as
+well).
+
+The ledger reports command asks the user to select a report to run
+then creates a report buffer containing the results of running the
+associated command line.  Its' behavior is modified by a prefix
+argument which, when given, causes the generated command line that
+will be used to create the report to be presented for editing
+before the report is actually run.  Arbitrary unnamed command lines
+can be run by specifying an empty name for the report.  The command
+line used can later be named and saved for future use as a named
+report from the generated reports buffer.
+
+In a report buffer, the following keys are available:
+  (space)  scroll up
+  e        edit the defined ledger reports
+  s        save a report definition based on the current report
+  q        quit the report (return to ledger buffer)
+  r        redo the report
+  k        kill the report buffer")

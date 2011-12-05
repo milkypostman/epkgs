@@ -1,0 +1,15 @@
+(:summary    "Auto Complete with Anything"
+ :created    "2009"
+ :updated    "20091111"
+ :license    "GPL-2"
+ :authors    (("rubikitch" . "rubikitch@ruby-lang.org"))
+ :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
+ :provided   (ac-anything)
+ :required   ((("anything" anything)
+	       ("auto-complete" auto-complete))
+	      (("anything" anything-match-plugin anything-show-completion)))
+ :keywords   (convenience)
+ :commentary "\
+Auto Complete with Anything. It enables us to narrow candidates
+with anything interface. If you have anything-match-plugin.el,
+candidates can be narrowed many times.")

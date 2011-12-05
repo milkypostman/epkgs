@@ -1,0 +1,18 @@
+(:summary    "Miscellaneous small functions/settings"
+ :created    "2004"
+ :updated    "2009"
+ :license    "GPL-2"
+ :authors    (("Dave Love" . "fx@gnu.org"))
+ :maintainer ("Dave Love" . "fx@gnu.org")
+ :provided   (fx-misc)
+ :required   ((("add-log" add-log)
+	       ("imenu" imenu)
+	       ("man" man)
+	       ("spook" spook)
+	       ("vc" vc)))
+ :keywords   (extensions)
+ :homepage   "http://www.loveshack.ukfsn.org/emacs"
+ :commentary "\
+Some functions and settings from my .emacs that might be useful to
+other people but don't merit a package.  Some of them have been
+contributed to Emacs unsuccessfully.")

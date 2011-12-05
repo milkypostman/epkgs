@@ -1,0 +1,16 @@
+(:summary    "Provide a local alias for nicks"
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-2"
+ :provided   (rcirc-alias)
+ :wikipage   "rcircAlias"
+ :commentary "\
+This is specially useful if using Bitlbee to add multiprotocol
+Instant Messaging to IRC.
+
+Use /ALIAS to list all aliases.
+Use /ALIAS ALIAS to list all nicks for an alias.
+Use /ALIAS ALIAS NICK1 NICK2 to define an alias for some nicks.
+
+When using /NAMES all nicks will be replaced by their alias, and
+duplicates will be eliminated.")

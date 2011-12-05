@@ -1,0 +1,9 @@
+(:created    "1999"
+ :updated    "20000619"
+ :license    "GPL-2"
+ :authors    (("Eric Friedman" . "ericdfriedman@hotmail.com"))
+ :maintainer ("Phillip Lord")
+ :provided   (jde-cflow)
+ :required   ((("jdee" jde)
+	       ("tempo" tempo)))
+ :homepage   "http://homepages.cs.ncl.ac.uk/phillip.lord/emacs.html")

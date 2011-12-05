@@ -1,0 +1,17 @@
+(:summary    "Command line files into file-name-history"
+ :created    "2007"
+ :updated    "2008"
+ :license    "GPL-3"
+ :authors    (("Kevin Ryde" . "user42@zip.com.au"))
+ :maintainer ("Kevin Ryde" . "user42@zip.com.au")
+ :provided   (startup-file-name-history)
+ :keywords   (files)
+ :commentary "\
+This is a spot of code to get filenames passed on the Emacs command line
+added to `file-name-history' (as well as opened in buffers in the usual
+way).
+
+savehist.el can be used at the same time if desired.  `savehist-mode'
+initializes `file-name-history' when .emacs is evaluated, and then
+startup-file-name-history.el runs later during command line processing
+and adds to whatever savehist loaded (which is what you want).")

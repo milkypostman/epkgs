@@ -1,0 +1,40 @@
+(:summary    "Provides support for PGP signing the labbook"
+ :updated    "20000415"
+ :license    "GPL-2"
+ :authors    (("Phillip Lord" . "p.lord@hgmp.mrc.ac.uk"))
+ :maintainer ("Phillip Lord" . "p.lord@hgmp.mrc.ac.uk")
+ :provided   (labbook-sign)
+ :required   ((("labbook" labbook)
+	       ("mailcrypt" mailcrypt)))
+ :keywords   (labbook logging signing)
+ :homepage   "http://homepages.cs.ncl.ac.uk/phillip.lord/emacs.html"
+ :commentary "\
+This file is an add-on to labbook.el and provides additional
+support for PGP signing of the labbook. This file uses MailCrypt
+for the majority of its functionality. At the moment it can not
+automatically indentify start of the signature, you have to set the
+`labbook-sign-start-of-signature' variable up for this. Its
+defaults to pgp 5.0.
+
+Bugs
+
+1) Not exactly a bug, but this uses the string which changelog
+puts into the buffer at the begining of each entry. I didnt really
+want this anyway and would want to remove it at some point, which
+will of course screw up this functionality. At some point I would
+like labbook.el to provide some sort of \"foward entry\"
+functionality anyway, which would do what I want better.
+
+Todo
+
+1) The signature narrowing functions are frankly crap, and need to
+be massively improved. Should pick through mail-crypt to find out
+whether it provides this sort of additional functionality. Yes it
+does! See code for `mc-verify-signature' which has stuff for doing this.
+2) Need to fit stuff in for mailcrypt so that it verifies correctly.
+
+History
+
+$Log: labbook-sign.el,v $
+Revision 1.1  2000/04/15 17:57:44  phil
+Initial checkin")

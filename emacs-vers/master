@@ -1,0 +1,4 @@
+(:updated    "19940901"
+ :license    "GPL-2"
+ :provided   (emacs-vers)
+ :homepage   "http://www.cs.utah.edu/~eeide/emacs")

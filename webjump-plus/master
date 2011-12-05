@@ -1,0 +1,33 @@
+(:summary    "Supplemental Web site list for webjump"
+ :created    "2003"
+ :updated    "20030523"
+ :license    "GPL-2"
+ :authors    (("Neil W. Van Dyke" . "neil@neilvandyke.org"))
+ :maintainer ("Neil W. Van Dyke" . "neil@neilvandyke.org")
+ :provided   (webjump-plus)
+ :required   ((("webjump" webjump)))
+ :homepage   "http://www.neilvandyke.org/webjump"
+ :commentary "\
+This file defines a WebJump hotlist, `webjump-plus-sites', to supplement
+your personal hotlist and the sample hotlist defined in `webjump.el'.
+Included here are Web site entries that do not really belong in
+`webjump.el', but that may save people from having to reinvent the wheel.
+This package will be updated more frequently than `webjump.el'.
+
+To use WebJump and `webjump-plus', you may wish to add something like the
+following to your `.emacs' file:
+
+  (require 'webjump-plus)
+  (global-set-key \"\\C-cj\" 'webjump)
+  (setq webjump-sites
+        (append '(
+                  (\"My Home Page\" . \"www.someisp.foo/users/joebobjr/\")
+                  (\"Pop's Site\"   . \"www.joebob-and-son.foo/\")
+                  )
+                webjump-plus-sites
+                webjump-sample-sites))
+
+The above loads this package (and also the `webjump' package), binds `C-c j'
+to invoke WebJump, and adds your personal favorite sites to the hotlist.
+
+TODO: I really must made a certain couple syntax tweaks to `webjump.el'.")

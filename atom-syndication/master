@@ -1,0 +1,108 @@
+(:summary    "Elisp implementation of the atom syndication format"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :provided   (atom-syndication)
+ :required   ((("cl" cl)))
+ :keywords   (hypermedia standards)
+ :homepage   "https://github.com/dmj/atom-syndication"
+ :commentary "\
+1 About
+~~~~~~~~
+
+=atom-syndication.el= is an elisp implementation of the Atom
+Syndication Format ([RFC4287]).  It provides a set of functions to
+create an Atom feed based on a lisp structure.
+
+[RFC4287]: http://www.ietf.org/rfc/rfc4287.txt
+
+2 Installation
+~~~~~~~~~~~~~~~
+
+=atom-syndication.el= is developed in a public git repository on
+[Github].  You can clone the repository using git
+
+git clone git://github.com/dmj/atom-syndication.git
+
+The repository ships with a copy of the [RELAX NG Compact Scheme] of the
+Atom Syndication Format that can be used to check the validity of a
+feed with [nxml-mode].[1]
+
+[Github]: http://github.com/dmj/atom-syndication/
+[RELAX NG Compact Scheme]: http://www.relaxng.org
+[nxml-mode]: http://www.thaiopensource.com/nxml-mode/
+
+3 Concept
+~~~~~~~~~~
+
+Atom feed documents are XML documents, consisting of probably nested
+Atom elements.  An Atom element is represented by a list of the
+following format:
+
+(ELEMENT ATTR VAR [VAR VAR ...])
+
+Where ELEMENT is the symbol of the element name, ATTR is a list of
+cons with XML attributes and VAR are values of the element.  The
+distinction between XML attributes and XML container data is handled
+transparently: Atom element values that are, at the end, XML
+attributes can either represented in ATTR, a list of cons, or optional
+values of the element.  Thus, the list representing the
+atom:generator element
+
+
+(generator nil \"Example Generator\" \"1.0\" \"http://example.tld/\")
+
+is equivalent to
+
+(generator ((version . \"1.0\") (uri . \"http://example.tld/\")) \"Example Generator\")
+
+For Atom container elements, that is: Atom elements that contain one
+or more other elements, the first value is expected to be a list with
+the child elements.
+
+To achieve compliance with the Atom specification, this library
+implements a set of rules to check for the presence of mandatory
+elements in a container element as well as the validity of Atom
+element values.  If you want to add Atom extensions or modify the
+rules in other ways you can customize the variables
+`atom-syndication-attribute-xtra-alist',
+`atom-syndication-element-xtra-alist', and
+`atom-syndication-container-xtra-alist'.
+
+4 Usage
+~~~~~~~~
+
+The most convenient function to create an Atom feed is
+`atom-syndication-syndicate' that accepts a lisp representation of an
+Atom container element as argument and returns a string with the XML
+markup of this element.
+
+For example calling this function with a simple feed that is
+represented in this lisp structure:
+
+  `(feed nil
+         ((title nil \"This is an example feed\")
+          (updated nil ,(current-time))
+          (id nil \"376c73f3-8483-44d8-9d3e-8da7cba0ebf1\")
+          (entry nil
+                 ((title nil \"This is an entry\")
+                  (id nil \"d11e07e2-127f-4789-ab17-1bc2d6c80e28\")
+                  (updated nil ,(current-time))))))
+
+Will return a string with a proper markup for an Atom feed.
+
+  <feed xmlns=\\\"http://www.w3.org/2005/Atom\\\">
+    <title>This is an example feed</title>
+    <updated>2010-04-19T16:28:10+02:00</updated>
+    <id>376c73f3-8483-44d8-9d3e-8da7cba0ebf1</id>
+    <entry>
+      <title>This is an entry</title>
+      <id>d11e07e2-127f-4789-ab17-1bc2d6c80e28</id>
+      <updated>2010-04-19T16:28:10+02:00</updated>
+    </entry>
+  </feed>
+
+Besides `atom-syndication-syndicate' there is a function for each Atom
+element that is called with the element values as arguments,
+e.g. `atom-syndication-element-entry' which returns XML markup for a
+single feed entry element.")

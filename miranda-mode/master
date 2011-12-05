@@ -1,0 +1,7 @@
+(:created    "1989"
+ :updated    "20010315"
+ :license    "GPL"
+ :provided   (miranda-mode)
+ :required   ((("emacs" easymenu)
+	       ("shell" shell)))
+ :homepage   "http://meltin.net/hacks/emacs")

@@ -1,0 +1,10 @@
+(:summary    "Some GNU octave functions in elisp"
+ :created    "2002"
+ :updated    "20091005"
+ :license    "GPL-2"
+ :authors    (("D. Goel" . "deego@glue.umd.edu"))
+ :maintainer ("D. Goel" . "deego@glue.umd.edu")
+ :provided   (oct)
+ :required   ((("cl" cl)))
+ :keywords   (gnu\ octave matlab)
+ :homepage   "http://www.gnufans.net/~deego/emacs.html")

@@ -1,0 +1,97 @@
+(:summary    "Mode for editing assembler code"
+ :created    "20070220"
+ :updated    "20071227"
+ :license    "GPL-2"
+ :authors    (("Heike C. Zimmerer" . "hcz@hczim.de"))
+ :maintainer ("Heike C. Zimmerer" . "hcz@hczim.de")
+ :provided   (gas-mode)
+ :keywords   (languages)
+ :homepage   "http://www.hczim.de/software/gas-mode.html"
+ :wikipage   "GasMode"
+ :commentary "\
+To use this mode, put gas-mode.el somewhere on your load-path.
+Then add this to your .emacs:
+
+   (require 'gas-mode)
+   (add-to-list 'auto-mode-alist '(\"\\\\.S\\\\'\" . gas-mode))
+
+gas-mode recognizes gas syntax (including embedded C preprocessor
+directives).  It does a limited amount of parsing, so it can do
+some fancy things with syntactic elements (like labels).  It,
+however does not know about the peculiarities of the special
+processor you're writing code for (there are just too many of
+them), so, for example, it can't tell register names from labels.
+Also, its scope is limited to the file you are editing.
+
+Symbol highlighting: For a symbol to be recognized as such, it must
+be in a field where (as per gas syntax) symbols can be placed
+(i.e. label field, argument field, some directives).  If point
+rests on such a symbol and there are more of it in the current
+buffer, it is highlighted and you can move forward and backward
+between all places where that symbol is referenced or defined with
+forward-sexp and backward-sexp.  
+
+This is different from a simple string search in that only those
+places are considered where the symbol is actually used.  For local
+labels, gas-mode resolves which references are associated with
+which location and only highlights those that fit.  The
+highlighting is different for different types of symbols; see the
+customization buffer for the gas-symbol-* faces for short
+explanations of their meanings.
+
+Special forms of local labels (like `55$') are not (yet?)
+supported.
+
+A special feature may need some explanation: C passthroughs.
+Assembler code is often used to write functions that are later
+called by C programs.  For this to work, you usually have to
+maintain two files, one containing the assembler source, the other
+holding the C interface declaration.  C passthroughs allow you to
+move the C declaration part into the assembler file next to the
+function it belongs to.
+
+From the assembler's point of view, C passthroughs are just C syntax
+comments with some small syntactic sugar added, like:
+
+/*C
+    int a_declaration(void);
+    extern volatile int another_declaration;
+
+    /# and this will be passed as comment #/
+*/
+
+Note the `/*C' at the beginning and the `/# ... #/' for the nested
+comment.
+
+It is then up to the Make process to generate a .h file, which
+carries the declarations and the comment, changing the \"/#\" and \"#/\"
+into \"/*\" and \"*/\".
+
+This may be done by including a line similar to the following into
+your Makefile (assuming $(ASFILES) is a list of your assembly
+language files) (and don't forget to use a TAB for the white space
+which introduces the action lines (<TAB> echo ..., <TAB>sed -n ...):
+
+asm-C-defs.h: $(ASFILES)
+	echo '/* Definitions of assembly language functions */' > $@
+	echo '/* (automatically created by make)            */' >> $@
+	sed -n '/[/][*]C/,/[*][/]/{s|/[*]C||;s|[*]/||;s|/#|/*|;s|#/|*/|;p}' \\
+               $^ >> $@
+
+(Note the above code requires the \"/*C\" and \"*/\" to be on a line of
+their own.)  gas-mode recognizes this kind of comment by proper
+syntax highlighting.  Symbol highlighting is also supported.  For a
+symbol to be highlighted within C passthrough code, it must be
+defined to be global (because only then it is visible to an
+external C program) in the same buffer.
+
+
+This mode runs `gas-mode-hook' when initialization is complete.
+
+
+Bugs:
+
+   Most probably, yes.  You'll tell me (<hcz@hczim.de>).
+
+   This code is *not tested at all* for syntaxes where
+   `gas-commant-char' differs from `?;'.")

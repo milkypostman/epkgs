@@ -1,0 +1,8 @@
+(:created    "2008"
+ :updated    "2008"
+ :license    "GPL-3"
+ :provided   (sese-mode)
+ :required   ((("emacs" font-lock)
+	       ("filladapt" filladapt)))
+ :homepage   "http://mihai.bazon.net/projects/sese"
+ :wikipage   "SESE")

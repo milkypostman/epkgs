@@ -1,0 +1,29 @@
+(:summary    "Make Gnus be a little secretive in message headers"
+ :created    "2002"
+ :updated    "20021202"
+ :license    "GPL-2"
+ :authors    (("Neil W. Van Dyke" . "neil@neilvandyke.org"))
+ :maintainer ("Neil W. Van Dyke" . "neil@neilvandyke.org")
+ :provided   (gnushush)
+ :required   ((("emacs" custom)
+	       ("gnus" message)))
+ :homepage   "http://www.neilvandyke.org/gnushush"
+ :commentary "\
+The Gnus newsreader (at least version 5.8.3) can be a little bit of a
+blabbermouth sometimes, needlessly revealing information in your mail
+headers that reduces your privacy or puts you at slightly greater risk of
+network attacks against your computer's security.
+
+`gnushush.el' is a small package that pressures Gnus into being a little
+bit quieter.  To use it, put the following line in your `.emacs' file:
+
+    (require 'gnushush)
+
+There are some options below that you can set.  Just be sure you know what
+you're doing, since wrongly setting some of these options can cause problems
+for other people.  The defaults settings are pretty benign.
+
+Some later version of Gnus will probably obviate the need for this package,
+but isn't it nice that Emacs Lisp lets us so easily modify software using
+layered packages, rather than having to wait for some huge canonical package
+to be modified?")

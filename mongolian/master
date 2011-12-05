@@ -1,0 +1,22 @@
+(:summary    "Mongolian input method"
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-3"
+ :authors    (("John Sturdy" . "john.sturdy@ul.ie"))
+ :maintainer ("John Sturdy" . "john.sturdy@ul.ie")
+ :keywords   (languages)
+ :commentary "\
+According to the layout diagrams available from the OLPC project,
+and others, the Mongolian Cyrillic keyboard layout is quite, but
+not completely, different from the Russian one.
+
+Because my keyboard (US-style) doesn't have a printing character
+key to the right of \"=+\", I've transferred that letter to \"`~\"
+(i.e. the other end of the same row).  I'd welcome comment and
+corrections from a regular Mongolian computer user.
+
+Note:
+
+I wrote this at an early stage of learning Mongolian, so that I
+could use it for making grammar notes, etc.  It should be checked
+by someone who is accustomed to typing in Mongolian!")

@@ -1,0 +1,18 @@
+(:summary    "Key Choices -- Also Viper has different colors in different modes"
+ :created    "20101104"
+ :updated    "20110208"
+ :license    "GPL-3"
+ :authors    (("Matthew L. Fidler"))
+ :maintainer ("Matthew L. Fidler")
+ :provided   (color-theme-emacs-revert-theme color-theme-vim-insert-mode key-choices)
+ :required   ((("emacs" easymenu)
+	       ("ergoemacs" ergoemacs-mode)
+	       ("vimpulse" vimpulse)
+	       ("viper" viper)
+	       ("viper-in-more-modes" viper-in-more-modes)
+	       (nil color-theme)))
+ :keywords   (crisp cua edt ergoemacs tpu viper)
+ :commentary "\
+Put the library key-choices.el in the load path and then put
+(require 'key-choices)
+in your ~/.emacs file.")

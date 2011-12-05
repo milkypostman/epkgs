@@ -1,0 +1,8 @@
+(:summary    "Top-level of distel package, loads all subparts"
+ :provided   (derl distel distel-ie edb epmd erl erl-service erlext net-fsm patmatch)
+ :required   ((("cl" cl)
+	       ("emacs" easy-mmode font-lock md5 overlay)
+	       ("erlang" erlang)
+	       ("ewoc" ewoc))
+	      (("w3m" w3m)))
+ :homepage   "https://github.com/massemanet/distel")

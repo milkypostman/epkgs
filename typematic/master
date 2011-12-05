@@ -1,0 +1,106 @@
+(:summary    "Optimize 'universal-argument for typematic keyboards"
+ :created    "1998"
+ :updated    "1998"
+ :license    "GPL-2"
+ :authors    (("Will Mengarini" . "seldon@eskimo.com"))
+ :maintainer ("Will Mengarini" . "seldon@eskimo.com")
+ :provided   (typematic)
+ :keywords   (abbrev hardware typematic typm universal\ argument)
+ :homepage   "http://www.eskimo.com/~seldon"
+ :commentary "\
+Standard Emacs interprets a single C-u as giving the following command an
+argument of 4, & each subsequent C-u multiplies that argument by 4.  That
+allows generating large numbers quickly, but with low precision; high
+precision requires explicitly typing digits.  This means that, for
+example, to give an argument of 2 to a command that's bound to a sequence
+of control characters, the following actions are necessary:
+  Hold down control key with left pinkie.
+  Tap <u>.
+  Lift left pinkie off control key.
+  Tap <2> (typically a stretch).
+  Hold down control key again (stretching back in the other direction).
+  Tap the sequence of control characters that invokes the command.
+I find that small arguments are useful much more often than large ones (a
+good example is 'set-selective-display), & that I want to be able to input
+them without a lot of pinkie gymnastics.  So instead I want this to be the
+keystroke sequence for providing that argument of 2:
+  Hold down control key with left pinkie.
+  Tap <u>.
+  Tap <u>.
+  Tap the sequence of control characters that invokes the command.
+In other words, C-u should start at 1 & increment by 1, instead of
+starting at 4 & multiplying by 4.
+
+Understanding why this is a good idea requires understanding why the
+orthodox definition was a good idea in its time.  Computer interaction was
+then typically by teletype or by CRT terminals that ran @ 300 .. 1200 bps.
+(I remember first seeing a 2400 bps terminal & thinking \"Wow!\".)  In such
+an environment, if you wanted, for example, to move forward 4 screenfuls,
+pressing C-v 4 times would be bad because it would refresh the screen
+after each move, & you didn't want to waste the I/O time; instead, you
+wanted to specify how far to go & get a refresh only when you were there.
+The cost of screen I/O in modern computing environments is practically 0;
+what we care about now is minimizing finger motion, especially stretching.
+
+What makes typematic (the rapid repetition of keystroke generation when a
+key is held down on an electronic keyboard) relevant is that on a modern
+keyboard it can be made fast enough to allow generating most realistically
+desirable large arguments just by holding down a key that increments the
+universal argument by 1 rather than one that multiplies it by 4.  If you
+do this for a *large* number, though, you'll probably overshoot, so
+there's an additional key defined that decrements the magnitude by 1.
+
+Standard GNU Emacs 19 provides no automatic generation of large negative
+arguments; e.g., C-u C-u generates an argument of 16, but C-- C-u C-u
+doesn't generate an argument of -16.  (I think it should.)  In this
+package, C-u (or whatever key you choose) keeps going in whatever
+direction has been selected, so if you still have C-- mapped to
+'negative-argument (as it is orthodoxily), C-- C-u C-u generates -2.
+The \"decrement\" character goes back in the other direction, toward 0.
+
+To use this package, first you'll need to copy this file to a directory
+that appears in your load-path.  `load-path' is the name of a variable
+that contains a list of directories Emacs searches for files to load.
+To prepend another directory to load-path, put a line like
+(add-to-list 'load-path \"c:/My_Directory\") in your .emacs file.
+
+Then, put
+  (require 'typematic)
+in your .emacs file.  The effect will be to take whatever key you have
+mapped to 'universal-argument, orthodoxily C-u, & remap it so it has the
+new behavior described above.  Its behavior for explicit arguments will
+remain unchanged, so for example C-u 6 6 6 will still enter an explicit
+666.  The decrement character will be C-d unless you change it;
+  (setq typematic-decrement-char \"\\C-l\")
+would, for example, change it to C-l.
+
+The one time in your life 10 years from now that you want to pass a
+particular numeric argument (take 42 as an example) to 'delete-char
+(orthodoxily C-d) instead of just visually deleting the chars you no
+longer want, you will still be able to do so by typing `C-u 4 2 C-d'.
+
+Here's an example of how useful this change can be.  Many people have
+mapped a keystroke to (switch-to-buffer (other-buffer)), allowing them to
+toggle buffers.  This package defines a function typematic-other-buffer
+that, after loading typematic, allows *troggling* buffers; if you've
+mapped it to C-c C-o, for example, then just typing C-c C-o will toggle,
+C-u C-c C-o will troggle, etc.  (A toggle cycles between 2 values, a
+troggle between three.  I didn't make that word up, but what C-u C-u C-c
+C-o does would, I guess, have to be called a \"quaggle\"; next comes a
+\"quiggle\", & I'll stop there.)  If you want to use that function, put
+something like
+  (global-set-key \"\\C-c\\C-o\"
+          (lambda (P)
+            (interactive \"P\")
+            (switch-to-buffer (typematic-other-buffer P))))
+in your .emacs file.
+
+Bill Zvonar <zvonar@nortel.ca> reports that this \"almost\" works in XEmacs
+20.3; the only problem, he says, is the use in the definition of
+typematic-universal-argument-mapping of '(keymap), which may be
+GNU-specific.  I don't have the hardware to run XEmacs so I can't hack
+this myself, but Bill says that \"by just hard-coding
+typematic-universal-argument-mapping to C-u, typematic.el works fine\", so
+I assume you should be able to put
+  (setq typematic-universal-argument-mapping \"\\C-u\")
+in your .emacs file to get this to work with XEmacs.  Let me know.")

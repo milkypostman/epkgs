@@ -1,0 +1,6 @@
+(:summary    "A simple, alternative interface to the ant command line"
+ :license    "GPL-2"
+ :authors    (("Jason Meade" . "jemeade@gmail.com"))
+ :maintainer ("Jason Meade" . "jemeade@gmail.com")
+ :provided   (bug)
+ :required   ((("compile" compile))))

@@ -1,0 +1,39 @@
+(:summary    "ZSH Line Editor compatibility functions for EShell"
+ :created    "20030625"
+ :updated    "20030708"
+ :license    "GPL-2"
+ :authors    (("Emilio Lopes" . "eclig@gmx.net"))
+ :maintainer ("Emilio Lopes" . "eclig@gmx.net")
+ :provided   (em-zle)
+ :required   ((("eshell" em-hist)
+	       ("ring" ring)))
+ :keywords   (processes)
+ :commentary "\
+Installation
+============
+
+Put this file (\"em-zle.el\") in a directory listed in your
+`load-path' and byte-compile it.
+
+Add the following to your \"~/.emacs\":
+
+     (add-hook 'eshell-load-hook (lambda () (require 'em-zle)))
+
+Alternatively you can add `eshell-zle' to `eshell-modules-list'.
+You might also want to bind some of these functions to appropriate
+keys. See the GNU Emacs on-line documentation for
+details.
+
+Suggested Key bindings
+======================
+
+(define-key eshell-command-map (kbd \"M-.\") 'eshell-zle-insert-last-word)
+(define-key eshell-command-map (kbd \"M-_\") 'eshell-zle-copy-prev-shell-word)
+(define-key eshell-command-map (kbd \"M-RET\") 'eshell-zle-push-line)
+(define-key eshell-command-map (kbd \"M-g\") 'eshell-zle-get-line)
+(define-key eshell-command-map (kbd \"M-a\") 'eshell-zle-accept-and-hold)
+(define-key eshell-command-map (kbd \"M-?\") 'eshell-zle-which-command)
+(define-key eshell-mode-map (kbd \"<up>\") 'eshell-zle-up-history)
+(define-key eshell-mode-map (kbd \"<down>\") 'eshell-zle-down-history)
+(define-key eshell-command-map (kbd \"M-<\") 'eshell-zle-beginning-of-history)
+(define-key eshell-command-map (kbd \"M->\") 'eshell-zle-end-of-history)")

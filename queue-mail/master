@@ -1,0 +1,8 @@
+(:summary    "Queue draft e-mail in a directory"
+ :created    "1996"
+ :updated    "19960531"
+ :license    "GPL-2"
+ :authors    (("John Wiegley" . "johnw@borland.com"))
+ :maintainer ("John Wiegley" . "johnw@borland.com")
+ :provided   (queue-mail)
+ :keywords   (mail queue))

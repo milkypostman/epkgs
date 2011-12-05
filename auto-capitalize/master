@@ -1,0 +1,6 @@
+(:summary    "Automatically capitalize (or upcase) words"
+ :created    "2001"
+ :updated    "20011205"
+ :license    "GPL-2"
+ :provided   (auto-capitalize)
+ :required   ((("cl" cl))))

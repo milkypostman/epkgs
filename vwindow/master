@@ -1,0 +1,9 @@
+(:summary    "Overlay virtual windows onto part of a buffer"
+ :created    "2007"
+ :updated    "2007"
+ :license    "GPL-3"
+ :authors    (("David O'Toole" . "dto@gnu.org"))
+ :maintainer ("David O'Toole" . "dto@gnu.org")
+ :provided   (vwindow)
+ :required   ((("cell" grid)))
+ :keywords   (data lisp))

@@ -1,0 +1,15 @@
+(:summary    "Ties the Gist and Tumblr integration to allow syntax highlighted and revision controlled region pasting"
+ :created    "2010"
+ :license    "GPL-3"
+ :maintainer ("Dan Leslie" . "dan@ironoxide.ca")
+ :provided   (tumblr-gist)
+ :required   ((("gist" gist)
+	       ("http-post-simple" http-post-simple)
+	       ("tumblr" tumblr)))
+ :keywords   (blog gist git github paste pastebin pastie tumblr)
+ :homepage   "https://github.com/dleslie/tumblr-gist.el"
+ :wikipage   "Tumblr-Gist"
+ :commentary "\
+Requires gist.el and tumblr.el, available at:
+http://github.com/defunkt/gist.el
+http://www.emacswiki.org/emacs/Tumblr#toc7")

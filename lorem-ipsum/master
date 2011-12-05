@@ -1,0 +1,6 @@
+(:summary    "Insert dummy pseudo Latin text"
+ :created    "2003"
+ :updated    "2003"
+ :license    "GPL-2"
+ :provided   (lorem-ipsum)
+ :wikipage   "LoremIpsum")

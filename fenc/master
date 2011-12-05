@@ -1,0 +1,11 @@
+(:summary    "Detect CJK coding system by counting most frequence charaters"
+ :created    "2006"
+ :updated    "20061127"
+ :license    "GPL-2"
+ :authors    ((nil . "wenbinye@163.com"))
+ :maintainer (nil . "wenbinye@163.com")
+ :provided   (fenc)
+ :required   ((("cl" cl)))
+ :commentary "\
+Put this file into your load-path and the following into your ~/.emacs:
+  (require 'fenc)")

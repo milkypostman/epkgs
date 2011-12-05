@@ -1,0 +1,17 @@
+(:summary    "Add HTML5's DOM methods to dom.el"
+ :created    "2007"
+ :updated    "2007"
+ :license    "GPL-2"
+ :authors    (("Edward O'Connor" . "hober0@gmail.com"))
+ :maintainer ("Edward O'Connor" . "hober0@gmail.com")
+ :provided   (dom5)
+ :required   ((("dom" dom)))
+ :keywords   (xml)
+ :homepage   "http://edward.oconnor.cx/elisp"
+ :commentary "\
+An implementation of the various new DOM methods defined in the HTML5
+draft specification.
+
+N.B. Functions prefixed by `dom-' are public-facing, and augment the
+API provided by dom.el. Functions prefixed with `dom5-' are internal
+and should not be called.")

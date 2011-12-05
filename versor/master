@@ -1,0 +1,16 @@
+(:summary    "Versatile cursor"
+ :created    "2004"
+ :updated    "20071007"
+ :license    "GPL-3"
+ :authors    (("John C. G. Sturdy" . "john@cb1.com"))
+ :maintainer ("John C. G. Sturdy" . "john@cb1.com")
+ :provided   (buffer-select-hooks flexi-choose handsfree handsfree-menus handsfree-read-number languide languide-bindings languide-c-like languide-custom languide-edits languide-functional languide-html-like languide-insertions languide-keymap languide-lisp-like languide-python languide-sh-like modal-functions nested-blocks pedals statement-cache statement-definition statement-nav-directions statement-navigation statement-parts versor versor-alter-item versor-base-moves versor-chop-chop versor-commands versor-containers versor-custom versor-demo versor-dimensions versor-dwim versor-help versor-keymap versor-keypad versor-language-edits versor-local versor-menu versor-modal versor-names versor-research versor-selection versor-self-test versor-status versor-text-in-code versor-tlc versor-tracking versor-trim-whitespace versor-voice word-isearch)
+ :required   ((("cl" cl)
+	       ("contexts" contexts)
+	       ("find-func" find-func)
+	       ("screen-setups" screen-setups)
+	       ("tempo" tempo)
+	       ("tmm" tmm)
+	       (nil handsfree-menu-additions handsfree-tools-menus languide-utils versor-joystick)))
+ :keywords   (editing)
+ :wikipage   "EmacsVersor")

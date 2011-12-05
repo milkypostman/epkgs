@@ -1,0 +1,8 @@
+(:summary    "Use Ido to answer yes-or-no questions"
+ :created    "2011"
+ :updated    "2011"
+ :authors    (("Ryan C. Thompson"))
+ :maintainer ("Ryan C. Thompson")
+ :provided   (ido-yes-or-no)
+ :required   ((("ido" ido)))
+ :homepage   "https://github.com/DarwinAwardWinner/ido-yes-or-no")

@@ -1,0 +1,95 @@
+(:summary    "Show summary of LaTeX command/environment/package"
+ :created    "2002"
+ :updated    "20020105"
+ :license    "GPL-2"
+ :authors    (("Triet Hoai Lai" . "thlai@mail.usyd.edu.au"))
+ :maintainer ("Triet Hoai Lai" . "thlai@mail.usyd.edu.au")
+ :provided   (latex-doc latex-doc-build latex-doc-var)
+ :required   ((("cl" cl)))
+ :keywords   (help latex)
+ :homepage   "http://ee.usyd.edu.au/~thlai/emacs"
+ :commentary "\
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+Introduction
+------------
+
+This package provides 3 commands `latex-doc-command', `latex-doc-environment'
+and `latex-doc-package' which display a brief document of LaTeX command,
+environment, and package respectively.
+
+
+Install
+-------
+
+- Put the files in some directory, e.g. ~/elisp/latex-doc
+
+- Change the first line of Makefile to program name of your Emacs, e.g.:
+	EMACS = emacs
+
+- Run make.  It will byte compile *.el and produce 2 additional files in
+  current directory:
+	* .latex-doc: file stores LaTeX document.
+	* .latex-index.el: index file.
+
+- Put the following lines into your .emacs
+     (add-to-list 'load-path \"~/elisp/latex-doc\")
+	(require 'latex-doc)
+	(latex-doc-initialize)
+
+
+Usage
+-----
+
+- `latex-doc-command':     display document of LaTeX command.
+	M-x latex-doc-command
+
+- `latex-doc-environment': ......................... environment.
+	M-x latex-doc-environment
+
+- `latex-doc-package': ............................. package.
+	M-x latex-doc-package
+
+You might want to bind these commands to some available keys in LaTeX mode.
+
+
+Files
+-----
+
+* To run `latex-doc-*' commands, you only need these files: latex-doc.el,
+  latex-doc-var.el, .latex-doc, .latex-doc-index.el.
+
+* latex-doc-build.el and latex-doc-data.el are used to add new document for
+  LaTeX commands, environments, packages.
+	- 3 functions available in latex-doc-build.el for this purpose:
+	  `latex-doc-defcmd', `latex-doc-defenv', and `latex-doc-defpkg'.
+
+	- Currently, there isn't any interactive function to add document.  But
+	  it is simple enough, just look at the examples in latex-doc-data.el
+
+	- Remember to run make again after adding new document.
+
+
+How it works
+------------
+
+At compilation time, `latex-doc-def*' append document to `latex-doc-file',
+record the points of that definition and save to the corresponding hash table
+(obarray).  At the last stage of compilation, information in the hash tables,
+is written into `latex-doc-index-file'.
+
+The package is initialized by loading `latex-doc-index-file', that sets up
+the hash tables so that the lookup functions can find the points
+corresponding to the given definition.
+
+
+Acknowledgements
+----------------
+
+Most document is taken from latexhelp.html in Ktexmaker2 (a KDE LaTeX editor)
+(http://xm1.net.free.fr/linux/index.html), written by Pascal Brachet
+<pascal.brachet@free.fr>.
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+code:")

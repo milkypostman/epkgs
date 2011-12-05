@@ -1,0 +1,10 @@
+(:summary    "Save mini-buffer histories between sessions"
+ :created    "2000"
+ :updated    "2000"
+ :license    "GPL-2"
+ :authors    (("Lars R. Clausen" . "lrclause@cs.uiuc.edu"))
+ :maintainer ("Lars R. Clausen" . "lrclause@cs.uiuc.edu")
+ :provided   (save-history)
+ :keywords   (convenience)
+ :commentary "\
+Hook-functions to load and save minibuffer histories between sessions.")

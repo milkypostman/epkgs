@@ -1,0 +1,26 @@
+(:summary    "Prefix key processing"
+ :created    "20031126"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("Zajcev Evgeny" . "zevlg@yandex.ru"))
+ :maintainer ("none, mail me if you want to maintain this code.")
+ :provided   (prefixkey)
+ :required   ((("cl" cl)))
+ :keywords   (keyboard)
+ :homepage   "http://lgarc.narod.ru/xemacs"
+ :wikipage   "PrefixKey"
+ :commentary "\
+This program provides prefix key, i.e. special key which in
+combination with other keys gives C-u (universal-argument)
+functionality.
+
+For example, let prefix key will be P, then:
+
+  `P-a' is equivalent to `C-u a', i.e. inserts 'aaaa'
+
+  `P-M-!' is equivalent to `C-u M-!', i.e. run shell command and
+  insert output to current buffer.
+
+Usage:
+
+   (set-keymap-default-binding global-map 'pk-command)")

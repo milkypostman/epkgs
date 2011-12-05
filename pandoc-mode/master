@@ -1,0 +1,6 @@
+(:created    "2011"
+ :updated    "2011"
+ :license    "as-is"
+ :provided   (pandoc-mode)
+ :required   ((("emacs" easymenu)))
+ :homepage   "https://github.com/joostkremers/pandoc-mode")

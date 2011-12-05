@@ -1,0 +1,16 @@
+(:summary    "Flash matching parens a la Zmacs"
+ :created    "19950303"
+ :updated    "20000227"
+ :license    "GPL-2"
+ :authors    (("Noah Friedman" . "friedman@splode.com"))
+ :maintainer (nil . "friedman@splode.com")
+ :provided   (flash-paren)
+ :required   ((("emacs" custom timer)))
+ :keywords   (extensions)
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
+ :commentary "\
+Loading this makes emacs's paren blinking behavior more closely
+approximate the behavior of Zmacs.  It should work under X or on ascii
+terminals.
+
+To use this program, load this file and do: (flash-paren-mode 1)")

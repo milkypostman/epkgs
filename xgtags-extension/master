@@ -1,0 +1,12 @@
+(:summary    "Some extension for xgtags.el"
+ :created    "20080923"
+ :updated    "20080923"
+ :license    "GPL-3"
+ :authors    (("Andy Stewart" . "lazycat.manatee@gmail.com"))
+ :maintainer ("Andy Stewart" . "lazycat.manatee@gmail.com")
+ :provided   (xgtags-extension)
+ :required   ((("gtags" gtags)
+	       ("xgtags" xgtags)))
+ :keywords   (gtags xtags)
+ :commentary "\
+This package is some extension for xgtags.")

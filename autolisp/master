@@ -1,0 +1,15 @@
+(:summary    "Major mode to edit AutoLISP in emacs"
+ :created    "20000112"
+ :updated    "20000409"
+ :license    "GPL-2"
+ :authors    (("Reini Urban" . "rurban@xarch.tu-graz.ac.at"))
+ :maintainer ("Reini Urban" . "rurban@xarch.tu-graz.ac.at")
+ :provided   (autolisp)
+ :required   ((("cl" cl)
+	       ("emacs" easymenu font-lock lisp-mode)
+	       ("folding" folding)
+	       ("imenu" imenu)
+	       ("outline" outline)))
+ :keywords   (autolisp major-mode)
+ :homepage   "http://autocad.xarch.at/lsp_tools"
+ :wikipage   "AutoLispMode")

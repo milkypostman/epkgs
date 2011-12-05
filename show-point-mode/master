@@ -1,0 +1,11 @@
+(:summary    "Show point position in status bar"
+ :created    "2007"
+ :updated    "2010"
+ :license    "GPL-2"
+ :authors    (("Toby Cubitt" . "toby-predictive@dr-qubit.org"))
+ :maintainer ("Toby Cubitt" . "toby-predictive@dr-qubit.org")
+ :provided   (show-point-mode)
+ :keywords   (mode\ line point)
+ :wikipage   "ShowPointMode"
+ :commentary "\
+A simple minor-mode to display the point in the status bar.")

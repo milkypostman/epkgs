@@ -1,0 +1,10 @@
+(:summary    "An implementation of Webbots known from MS Frontpage"
+ :provided   (gm-bots gm-webbot)
+ :commentary "\
+<!--webbot bot=\"el-functions\" line-number=\"t\" prefix=\";; \" startspan -->
+gm-bot-register-bot - line
+(setq buffer-regexp-list (buffer-name)) (list-matches-in-buffers \"(defun [^ ]+\")
+
+now in testphase!!!
+
+how to test if a symbol is a member of a list --> memq")

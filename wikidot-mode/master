@@ -1,0 +1,14 @@
+(:summary    "Major mode for editing documents from Wikidot (http://wikidot.com)"
+ :created    "2006"
+ :updated    "2006"
+ :license    "GPL-2"
+ :authors    (("Dhruv Bansal" . "dhruv@infochimps.com"))
+ :maintainer ("Dhruv Bansal" . "dhruv@infochimps.com")
+ :provided   (wikidot-mode)
+ :homepage   "https://github.com/infochimps/wikidot-mode"
+ :wikipage   "WikiDot"
+ :commentary "\
+This is a mode for editing documents from Wikidot
+(http://wikidot.com).  It's based on code from SampleMode
+(http://www.emacswiki.org/emacs/SampleMode) and textile-mode.el
+(http://www.emacswiki.org/emacs/TextileMode).")

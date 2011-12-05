@@ -1,0 +1,12 @@
+(:summary    "Ecukes step definitions"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Johan Andersson" . "johan.rejeep@gmail.com"))
+ :maintainer ("Johan Andersson" . "johan.rejeep@gmail.com")
+ :provided   (espuds espuds-buffer espuds-helpers espuds-input espuds-misc espuds-movement espuds-region espuds-text)
+ :required   ((("cl" cl)
+	       ("edmacro" edmacro)))
+ :keywords   (test)
+ :homepage   "https://github.com/rejeep/espuds"
+ :wikipage   "Espuds")

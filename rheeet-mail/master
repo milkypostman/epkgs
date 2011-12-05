@@ -1,0 +1,12 @@
+(:summary    "Rheeeeeeeeet!"
+ :created    "19990106"
+ :updated    "19990224"
+ :authors    (("Noah Friedman" . "friedman@netscape.com"))
+ :maintainer (nil . "friedman@splode.com")
+ :provided   (rheeet-mail\.el)
+ :required   ((("fmailutils" fmailutils)
+	       ("order-head" order-head)))
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
+ :commentary "\
+To use with VM: autoload this package, then do
+  (add-hook 'vm-reply-hook 'rheeet-maybe-frob-subject-line)")

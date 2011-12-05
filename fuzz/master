@@ -1,0 +1,69 @@
+(:summary    "Compensate for floating-point roundoff error"
+ :created    "1998"
+ :updated    "1998"
+ :license    "GPL-2"
+ :authors    (("Will Mengarini" . "seldon@eskimo.com"))
+ :maintainer ("Will Mengarini" . "seldon@eskimo.com")
+ :provided   (fuzz)
+ :keywords   (extensions float floating\ point fuzz)
+ :homepage   "http://www.eskimo.com/~seldon"
+ :commentary "\
+Try this with C-x C-e:
+  (= (+ 0.1 0.2) 0.3)
+Running on an Intel 486/50 with hardware floating point, GNU 19.34.1
+returns `nil' because of a general problem with the imprecise
+representation of floating point numbers.  This package implements
+functions that compensate for that.  For a general discussion of the
+issue, see the Info node elisp|Numbers|Comparison of Numbers.
+
+To use this package, first you'll need to copy this file to a directory
+that appears in your load-path.  `load-path' is the name of a variable
+that contains a list of directories Emacs searches for files to load.
+To prepend another directory to load-path, put a line like
+(add-to-list 'load-path \"c:/My_Directory\") in your .emacs file.
+
+Then, put
+  (require 'fuzz)
+in your .emacs file.  That will make these functions available:
+  fuzzy= (x y)
+  fuzzy<= (x y)
+  fuzzy/= (x y)
+  fuzzy< (x y)
+  fuzzy>= (x y)
+  fuzzy> (x y)
+  fuzzyzerop (x)
+  fuzzyplusp (x)
+  fuzzyminusp (x)
+  fuzzyintegerp (x)
+  fuzzywholenump (x)
+Each has a meaning analogous to the corresponding bare function, except
+that numbers are considered equal if they're \"close enough\", which is
+defined in terms of this package's global variable `fuzz'.
+
+You might need a different `fuzz' for your machine.  To find out, try
+M-x fuzz-selftest.  If you get an error, try increasing `fuzz'
+with M-x set-variable.  When you find a value that works, put a line like
+  (setq fuzz 1.0e-9)
+in your .emacs file.
+
+If you need a different fuzz for a particular application, you could
+localize the variable `fuzz' in a `let' form, or make it buffer-local.
+
+The definition of `fuzzy=' is optimized for speed rather than absolute
+consistency; it's not, for example, strictly commutative, although the
+difference is unlikely to matter in practice.  If you want a more rigorous
+definition, this one, hacked from Info|elisp|Numbers|Comparison of Numbers
+  (defun fuzzy= (x y)
+    (or (and (fuzzyzerop x) (fuzzyzerop y))
+        (<= (/ (abs (- x y))
+               (max (abs x) (abs y)))
+            fuzz)))
+might better meet your needs.  Because every dyadic comparison function in
+this package is defined in terms of `fuzzy=', you can simply overwrite the
+definition of `fuzzy=' with the above definition or your own (by
+evaluating the defun after evaluating \"(require 'fuzz)\"), and everything
+else should just work.  (Try M-x fuzz-selftest again to be sure.  Note
+that the unhacked version of `fuzzy=' in Info fails the
+(assert (fuzzyintegerp fuzz)) test.)
+
+In practice, I find fastfuzz.el, which see, useful more often.")

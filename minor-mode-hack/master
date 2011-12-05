@@ -1,0 +1,12 @@
+(:summary    "Hack of minor-modes"
+ :created    "2010"
+ :updated    "20100107"
+ :license    "GPL-2"
+ :authors    (("rubikitch" . "rubikitch@ruby-lang.org"))
+ :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
+ :provided   (minor-mode-hack)
+ :keywords   (lisp)
+ :commentary "\
+A hack of minor-modes.
+
+`raise-minor-mode-map-alist' / `lower-minor-mode-map-alist' - resolve `minor-mode-map-alist' conflict")

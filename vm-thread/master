@@ -1,0 +1,11 @@
+(:summary    "Functions for collapsing threads in a VM Summary buffer"
+ :license    "GPL-2"
+ :provided   (vm-thread)
+ :commentary "\
+to use include the following in your init file
+
+(load \"~/path/to/vm-thread.el\")
+(add-hook 'vm-mode-hook
+          (lambda ()
+            (local-set-key (kbd \"<tab>\") 'vm-thread-toggle-thread-on-current-line)
+            (local-set-key (kbd \"C\") 'vm-thread-collapse-all-threads)))")

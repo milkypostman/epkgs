@@ -1,0 +1,12 @@
+(:summary    "Major mode for editing WPDL files"
+ :created    "20000925"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("Scott Andrew Borton" . "scott@pp.htv.fi"))
+ :maintainer ("Scott Andrew Borton" . "scott@pp.htv.fi")
+ :provided   (wpdl-mode)
+ :keywords   (major-mode wpdl)
+ :commentary "\
+This mode is an example used in a tutorial about Emacs
+mode creation. The tutorial can be found here:
+http://two-wugs.net/emacs/mode-tutorial.html")

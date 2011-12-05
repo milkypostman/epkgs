@@ -1,0 +1,7 @@
+(:summary    "Webgen mode"
+ :created    "2010"
+ :updated    "20100206"
+ :provided   (webgen-mode)
+ :required   ((("autoinsert" autoinsert)))
+ :keywords   (minor\ mode webgen)
+ :wikipage   "WebgenMode")

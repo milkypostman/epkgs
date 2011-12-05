@@ -1,0 +1,31 @@
+(:summary    "Utility function for setting the audio volume"
+ :created    "2004"
+ :updated    "2004"
+ :license    "GPL-2"
+ :authors    (("Ole Arndt" . "ole@sugarshark.com"))
+ :maintainer ("Ole Arndt" . "ole@sugarshark.com")
+ :provided   (amixer)
+ :keywords   (alsa audio external multimedia)
+ :homepage   "http://sugarshark.com/ProjectPage.html"
+ :commentary "\
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+Introduction
+------------
+
+This package sets the volume via the alsa mixer program
+
+To use amixer, insert in your ~/.emacs:
+
+   (require 'amixer)
+
+and bind some keys to the functions:
+
+   (global-set-key [(control ?c) ?# ?+] 'amixer-increment-volume)
+   (global-set-key [(control ?c) ?# ?-] 'amixer-decrement-volume)
+   (global-set-key [(control ?c) ?# ?v] 'amixer-set-volume)
+
+Todo:
+-----
+
+The volume shouldn't be 'write-only', be should be read back from the mixer.")

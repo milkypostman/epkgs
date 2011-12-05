@@ -1,0 +1,14 @@
+(:summary    "Look up a word in WWW Merriam-Webster dictionary"
+ :created    "2004"
+ :updated    "2004"
+ :license    "GPL-2"
+ :provided   (merriam)
+ :required   ((("w3m" w3m)))
+ :keywords   (hypermedia)
+ :commentary "\
+Look up a word in WWW Merriam-Webster dictionary. This requires w3m browser.
+Use M-x merriam RET word RET
+
+Acknowledgement:
+
+This code is derived from webster-www.el by Tomasz J. Cholewo <t.cholewo@ieee.org>.")

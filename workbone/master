@@ -1,0 +1,66 @@
+(:summary    "Workbone interface for the Emacs editor"
+ :created    "2000"
+ :updated    "20020701"
+ :license    "GPL-2"
+ :authors    (("Benjamin Drieu" . "bdrieu@april.org"))
+ :maintainer ("Benjamin Drieu" . "bdrieu@april.org")
+ :provided   (workbone)
+ :keywords   (tools)
+ :homepage   "http://www.grassouille.org/emacs/index.en.html"
+ :commentary "\
+$Id: workbone.el,v 1.1.1.1 2002/07/01 17:04:37 benj Exp $
+
+ You need workbone to use this program.  You also need the volume
+ program to be able to change volume with keystrokes.  If you have
+ a Internet connection and cddb.pl, you will be able to have tracks
+ titles on the mode libe (which is *cool*).
+
+ Workbone : /ftp@sunsite.unc.edu:/pub/Linux/apps/sound/cdrom/curses
+ Volume :   /ftp@sunsite.unc.edu:/pub/Linux/apps/sound/soundcard
+ cddb.pl :  http://armin.emx.at/cddb/
+
+ Usage is basicly the same than the traditionnal workbone, which is
+ driven by the numeric pad.  The only difference is that all
+ commands are prefixed by C-x w (w stands for workbone).
+
+ +----| number pad |----+
+ |                      |
+ |    []    ||    =>    |    7	 	8		9
+ |                      |	^ Stop		^ Pause /Resume	^ Play
+ |    <     ^^     >    |	4		5		6
+ |                      |	^ Play previous	^ Restart	^ Play next
+ |    <<    ..    >>    |	1 		2 		3
+ |                      |	^ Back 15 '	^ Eject		^ Forward 15 '
+ |    quit         ?    |	0   	  	 		.
+ |                      |
+ +----------------------+
+                             C-x w + :   Set the sound up
+                             C-x w - :   Set the sound down
+				C-x w p n : Play track number n
+
+$Log: workbone.el,v $
+Revision 1.1.1.1  2002/07/01 17:04:37  benj
+- version initiale
+
+Revision 1.11  2002/05/18 21:34:43  benj
+- now (provide 'workbone)
+
+Revision 1.10  2002/05/05 13:26:40  benj
+- fix stuff tu make it work with emacs21
+
+Revision 1.9  2000/11/20 10:46:24  benj
+- did some cleanup
+
+Revision 1.8  2000/06/29 12:38:45  drieu
+ - fiabilisation de workbone-init-cddb (si on ne trouve pas le titre,
+   on ne va pas scanner la base de donnees a nouveau).
+
+Revision 1.7  1999/11/06 14:10:10  benj
+- Fix a bug with workbone-eject
+
+Revision 1.6  1999/11/06 13:58:55  benj
+- now use global-mode-string instead of an ugly dance
+- fix soem bugs
+- workbone-mode now knows how to behave when its workbone process is
+  killed
+- English typos fixed")

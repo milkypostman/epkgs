@@ -1,0 +1,16 @@
+(:summary    "Major mode for managing AWS"
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-2"
+ :authors    (("Ian Eure" . "ian.eure@gmail.com"))
+ :maintainer ("Ian Eure" . "ian.eure@gmail.com")
+ :provided   (aws)
+ :keywords   (admin amazon aws)
+ :homepage   "https://github.com/ieure/aws-el"
+ :commentary "\
+(autoload 'ec2-describe-instances \"aws\")
+(autoload 'ec2-describe-volumes \"aws\")
+(autoload 'ec2-describe-snapshots \"aws\")
+(autoload 'ec2-describe-groups \"aws\")
+(autoload 'ec2-get-console \"aws\")
+M-x ec2-describe-instances")

@@ -1,0 +1,13 @@
+(:summary    "Add multiple language support for menubar"
+ :created    "2006"
+ :updated    "20061226"
+ :license    "GPL-2"
+ :authors    ((nil . "wenbinye@163.com"))
+ :maintainer (nil . "wenbinye@163.com")
+ :provided   (mule-menu)
+ :required   ((("cl" cl)
+	       ("pp" pp)
+	       ("tmm" tmm)))
+ :commentary "\
+Put this file into your load-path and the following into your ~/.emacs:
+  (require 'mule-menu)")

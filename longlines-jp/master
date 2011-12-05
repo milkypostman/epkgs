@@ -1,0 +1,16 @@
+(:summary    "Automatically wrap long lines in Japanese text"
+ :created    "2000"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Happy Kohpy" . "bonze.head@gmail.com"))
+ :maintainer ("Happy Kohpy" . "bonze.head@gmail.com")
+ :provided   (longlines-jp)
+ :keywords   (convenience wp)
+ :wikipage   "LongLinesJpMode"
+ :commentary "\
+longlines-jp-mode provide function like longlines-mode for Japanese text.
+
+Usage
+Load it with autoload or require. The enter
+M-x longlines-jpor load it permanently with
+(longlines-jp t)in your emacs configuration file.")

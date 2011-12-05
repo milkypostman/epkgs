@@ -1,0 +1,13 @@
+(:summary    "Connect to SQL server using tramp syntax"
+ :created    "20101217"
+ :updated    "2010"
+ :provided   (db-sql)
+ :required   ((("cl" cl)
+	       ("sql" sql)
+	       ("tramp" tramp)))
+ :keywords   (emacs sql tramp)
+ :homepage   "https://github.com/renard/db-sql-el"
+ :commentary "\
+Connect to remote database using a tramp syntax.
+
+For this to work ssh should be correctly configured.")

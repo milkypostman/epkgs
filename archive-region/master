@@ -1,0 +1,15 @@
+(:summary    "Move region to archive file instead of killing"
+ :created    "2010"
+ :updated    "20100509"
+ :license    "GPL-2"
+ :authors    (("rubikitch" . "rubikitch@ruby-lang.org"))
+ :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
+ :provided   (archive-region)
+ :required   ((("cl" cl)
+	       ("emacs" newcomment)))
+ :keywords   (languages)
+ :commentary "\
+Extend C-w to have archive feature.
+C-u C-w moves region to the archive file.
+C-u C-u C-w opens the archive file.
+The archive files have suffix \"_archive\" after original filename.")

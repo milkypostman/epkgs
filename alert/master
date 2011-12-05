@@ -1,0 +1,9 @@
+(:created    "2004"
+ :updated    "20050831"
+ :license    "GPL-2"
+ :authors    (("D. Goel" . "deego@glue.umd.edu"))
+ :maintainer ("D. Goel" . "deego@glue.umd.edu")
+ :provided   (alert)
+ :required   ((("cl" cl)
+	       ("timerfunctions" timerfunctions)))
+ :homepage   "http://www.gnufans.net/~deego/emacs.html")

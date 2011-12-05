@@ -1,0 +1,8 @@
+(:summary    "Interact with Github Issues through Emacs"
+ :created    "20100523"
+ :license    "GPL-2"
+ :authors    (("Abhi Yerra" . "abhi@berkeley.edu"))
+ :maintainer ("Abhi Yerra" . "abhi@berkeley.edu")
+ :provided   (github)
+ :keywords   (github)
+ :homepage   "https://github.com/abhiyerra/github.el")

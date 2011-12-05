@@ -1,0 +1,6 @@
+(:summary    "Support for Open Document Format files"
+ :updated    "20060526"
+ :license    "GPL-2"
+ :provided   (odf-mode)
+ :required   ((("xml" xml)))
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/editing")

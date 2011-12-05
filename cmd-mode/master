@@ -1,0 +1,26 @@
+(:summary    "Edit of MS Windows cmd and bat files ;;"
+ :created    "20010828"
+ :updated    "20050718"
+ :authors    (("Tadamegu Furukawa" . "tfuruka1@nifty.com"))
+ :provided   (cmd-mode)
+ :required   ((("emacs" font-lock)))
+ :wikipage   "CmdMode"
+ :commentary "\
+MS-DOSのバッチファイル及びWindows NTのコマンドスクリプトを編集する
+為のへなちょこモードです。%が沢山あって、何がなんだかわからないバッ
+チファイルを読み易くする目的で作成したので、基本的にfont-lock以外の
+機能は殆どありません。しかもemacs 20.7 \"Meadow-1.14 (AWSAKA:62)\" で
+しか試していません(これ以外で使用される事を想定していません)。
+
+Tiny mode for editing batch files of MS-DOS and command scripts of
+Windows NT.  The purpose is to improve the readablity of those
+files that contains many `%' and are difficult to read.  So,
+basically this provides only a proper font-lock setting.  This
+program has been tested for Emacs 20.7 \"Meadow-1.14 (AWSAKA:62)
+(the other versions of Emacsen are out of my focus).
+
+It has now been tested also on Emacs 21.3 and 22.0.50 on W2k.
+
+
+.emacsの何処かに以下を追加してください。拡張子がcmd又はbatのファイ
+ルを開くと自動でcmd-modeになります。")

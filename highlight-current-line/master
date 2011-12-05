@@ -1,0 +1,40 @@
+(:summary    "Highlight line where the cursor is"
+ :created    "19971010"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("Christoph Conrad" . "christoph.conrad@gmx"))
+ :maintainer ("Christoph Conrad" . "christoph.conrad@gmx")
+ :provided   (highlight-current-line)
+ :required   ((("emacs" custom)))
+ :keywords   (faces)
+ :wikipage   "HighlightCurrentLine"
+ :commentary "\
+Minor mode to highlight the line the cursor is in. You can change colors
+of foreground (text) and background. The default behaviour is to set
+only a background color, so that font-lock fontification colors remain
+visible (syntax coloring). Enable a buffer using the command
+`highlight-current-line-minor-mode' and customize via:
+
+  M-x customize-group highlight-current-line <RET>.
+
+You can select whether the whole line (from left to right window border)
+is marked or only the really filled parts of the line (from left window
+border to the last char in the line). The second behaviour is suitable
+if it's important for you to see trailing spaces or tabs in a
+line. Customize the variable `highlight-current-line-whole-line' (or use
+the function `highlight-current-line-whole-line-on' retained for
+compatibility with prior versions).
+
+You may enable the minor-mode automatically for (almost) all buffers by
+customizing the variable `highlight-current-line-globally' (or using the
+compatibility command `highlight-current-line-on').  Buffers whose
+buffer-name match the regular expression in the customizable variable
+`highlight-current-line-ignore-regexp' do not highlighted.  You can
+extend or redefine this regexp. This works together with the default
+ignore function `highlight-current-line-ignore-function'. You can
+redefine this function to implement your own criterias.
+
+(The functions `highlight-current-line-on',
+`highlight-current-line-set-fg-color' and
+`highlight-current-line-set-bg-color' are retained for backward
+compatibility. There's a special color \"none\" defined to set no color.)")

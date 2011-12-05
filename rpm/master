@@ -1,0 +1,64 @@
+(:summary    "Front end for rpm (the RedHat Package Manager) now widely"
+ :updated    "19981027"
+ :license    "GPL-2"
+ :provided   (rpm)
+ :required   ((("elib" cookie)
+	       ("emacs" custom dired)))
+ :commentary "\
+This mode provides sort of a  dired buffer to interact with the rpm
+utility used on some GNU/Linux systems to manage software packages.
+The mode starts  up by displaying all installed  packages.  You can
+then  get  detailed informations  on  a  specific package,  verify,
+install/uninstall  a package  or check/list  dependencies.   In the
+detailed information buffer you  can easily visit listed files e.g.
+to  check readme's or  other documentation  stuff.  rpm  also hooks
+into  dired mode, so  you can  directly install  a file  (or tagged
+files) from a dired buffer.
+
+It's  generally a nice way to  browse  through the packages without
+having to remember the syntax of rpm ;)
+
+Installation:
+
+In order to  use this package, you need   Elib, the GNU Emacs  lisp
+library (I  use version 1.0). You  can get the latest  version from
+`ftp.lysator.liu.se' in  `pub/emacs'  with anonymous ftp.   Be sure
+that  the files  of the Elib  package  are in your  `load-path'. If
+you're not sure whether you've got  the package already try `locate
+cookie.elc' (or something like `find / -name cookie.elc -print').
+
+To use  the rpm-mode  put the source-file  (or better  the compiled
+version)  somewhere  where  it  can  be found  (i.e.  somewhere  in
+`load-path') and  include the  following expression in  your .emacs
+file (or wherever...)
+
+(autoload 'rpm \"rpm\"
+     \"Shell for the rpm package management utility.\" t)
+(autoload 'rpm-dired-install \"rpm\"
+     \"Install all marked (or next ARG) rpm-files.\" t)
+(add-hook 'dired-load-hook
+       '(lambda () (define-key dired-mode-map \"I\"
+                     'rpm-dired-install)))
+
+You can  then start it  up by `M-x rpm'.   `describe-mode' (usually
+bound to  C-h m) gives you  help on the  other available functions.
+The second and  the third form define `I'  in dired-mode to install
+the tagged files or the file on the current line.
+
+If you  have a  display capable of  color you might  enjoy enabling
+font-lock-mode to get  colored marks. This will also  work if hl319
+was loaded before rpm.
+
+As this  package is mostly  a (hopefully comfortable)  interface to
+\"rpm\"  you should  consult the  rpm documentation  about  the exact
+functionality  of  the individual  commands  (especially about  the
+exact functionality  of the  command-line switches).  This  said, I
+can assure  you that most  of the commands  work just as  one would
+expect them to..
+
+Send bug/problem reports or anything connected to rpm.el to:
+Detlev.Zundel@stud.uni-karslruhe.de
+
+$Id: rpm.el,v 1.4 1998/10/27 02:22:41 dzu Exp $
+(The revision number does not have to coincide with the version
+number)")

@@ -1,0 +1,30 @@
+(:summary    "Convert between various English spellings"
+ :license    "GPL-2"
+ :authors    (("Phillip Lord"))
+ :maintainer ("Phillip Lord")
+ :provided   (variant)
+ :required   ((("assoc" assoc)
+	       ("cedet" working)
+	       ("cl" cl)
+	       ("variant-abbc" variant-abbc)))
+ :homepage   "http://homepages.cs.ncl.ac.uk/phillip.lord/emacs.html"
+ :commentary "\
+This file helps with the process of converting between different
+variants of English.  Often, you have text which you want to publish
+in different places with different requirements for spellings and
+dialect.  While ispell.el can help with this, it is a little
+cumbersome; if the text has already spell checked previous in a
+different dialect, then it is irritating to have to skip all the
+abbreviations and specialist words again.
+
+There are only three entry points `variant-translate-buffer' and
+`variant-translate-region', which do pretty much what you expect.
+You can change language variants with `variant-set-language'. There
+are two real English variantions, \"british-ise\" and \"british-ize\"
+for those people who like z's.
+
+
+There is one non-use function, `variant-create-abbc-list' which
+generates the file which contains the data. This uses the word
+lists from http://wordlist.sourceforge.net. This expects an
+existing file called variant-abbc.el.")

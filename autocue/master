@@ -1,0 +1,4 @@
+(:updated    "20070129"
+ :license    "GPL-2"
+ :provided   (autocue)
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/handsfree")

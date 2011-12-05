@@ -1,0 +1,37 @@
+(:summary    "Enable direct scrolling with the mouse"
+ :created    "2003"
+ :updated    "20050208"
+ :license    "GPL-2"
+ :provided   (track-scroll)
+ :required   ((("emacs" mouse)))
+ :keywords   (gui mouse user)
+ :homepage   "http://www.skamphausen.de/cgi-bin/ska/track-scroll"
+ :wikipage   "TrackScroll"
+ :commentary "\
+TrackScroll on the Web:
+Main page:
+http://www.skamphausen.de/software/skamacs/track-scroll.html
+German intro:
+http://www.skamphausen.de/xemacs/lisp/track-scroll.html
+
+GNU Emacs comes with mouse-drag.el which implements a feature I've
+been wanting for years but doesn't work with XEmacs. *grr*
+Loading this file enables the dragging of the window using the
+middle mouse button. Holding the control key at the same time calls
+a different function which behaves more like the scrollbar does.
+It's probably best to just try it yourself and see what happens.
+This abandons drag and drop functionality which is usually called
+when dragging the middle mouse button
+
+After Garret came up with a third function introducing a third kind
+of behaviour I at least got rid of the hardcoded keys.
+Nevertheless, I'd much prefer _one_ backend function (which would
+probably be a mixture of track-scroll-drag-scalable and
+track-scroll-fullwin) with a smart scaling factor function which
+would reflect the three scrolling mechanisms.
+
+Problems:
+- horizontal scrolling
+- customizable sensitivities for both directions?
+- what about info (and others?) that override the mouse-track
+  setting for their buffers? I really hate info for that.")

@@ -1,0 +1,7 @@
+(:summary    "Cast an i-ching, and come up with a hexagram"
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-2"
+ :authors    (("Jonathan Arkell" . "jonnay@jonnay.net"))
+ :maintainer ("Jonathan Arkell" . "jonnay@jonnay.net")
+ :provided   (i-ching))

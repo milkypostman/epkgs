@@ -1,0 +1,13 @@
+(:summary    "Quick way to jump to specific characters"
+ :created    "20110712"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Rafael Sánchez-Aguilú" . "rafael@cornerdimension.com"))
+ :maintainer ("Rafael Sánchez-Aguilú" . "rafael@cornerdimension.com")
+ :provided   (emotion)
+ :required   ((("cl" cl)))
+ :keywords   (convenience movement searching)
+ :homepage   "https://github.com/rlph/emotion"
+ :commentary "\
+Original idea taken from EasyMotion plugin for Vim but still needs
+a lot of work.")

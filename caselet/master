@@ -1,0 +1,11 @@
+(:summary    "Cond/case statements with bindings before tests"
+ :created    "2000"
+ :updated    "2000"
+ :license    "GPL-2"
+ :authors    (("Tom Breton" . "tob@world.std.com"))
+ :maintainer ("Tom Breton" . "tob@world.std.com")
+ :provided   (caselet)
+ :keywords   (extensions lisp)
+ :homepage   "http://www.panix.com/~tehom"
+ :commentary "\
+None.")

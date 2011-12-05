@@ -1,0 +1,41 @@
+(:summary    "A little help for writing fontlock support"
+ :created    "2000"
+ :updated    "2000"
+ :license    "GPL-2"
+ :authors    (("Tom Breton" . "tob@world.std.com"))
+ :maintainer ("Tom Breton" . "tob@world.std.com")
+ :provided   (tehom-font-lock)
+ :required   ((("emacs" font-lock)))
+ :keywords   (extensions maint tools)
+ :homepage   "http://www.panix.com/~tehom"
+ :commentary "\
+This is a little thing I wrote because building expressions for
+fontlock mode was a PITA.  Now for the common case you can build a
+font-lock expression as simply as:
+
+  (tehom-build-font-lock-expression '(\"this-word\" \"that-word\"))
+
+Or to use a specific face:
+
+  (tehom-build-font-lock-expression '(\"this-word\" \"that-word\") some-face)
+
+So what you'd write, all told, would look something like:
+
+(require 'tehom-font-lock)
+
+(font-lock-add-keywords 'some-mode
+  (list 
+    (tehom-build-font-lock-expression 
+      '(\"this-word\" \"that-word\") some-face)))
+
+Non-features:
+
+tehom-build-font-lock-expression assumes that every string is only
+meaningful at the head of a list.  It doesn't try to handle
+anything complex like anchored font-lock.  It just lets you write
+the basic stuff without puzzling over what sort of expression
+font-lock wants.
+
+It would be nice to use `cl's `defstruct' or `defun*' to really
+control the font-lock interface with &key arguments, but I didn't
+go that far.  And defun* would require `cl' at runtime.")

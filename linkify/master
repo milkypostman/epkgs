@@ -1,0 +1,3 @@
+(:summary    "Create clickable links to lines in files"
+ :license    "MIT"
+ :provided   (linkify))

@@ -1,0 +1,67 @@
+(:summary    "Compensate fast for floating-point roundoff error"
+ :created    "1998"
+ :updated    "1998"
+ :license    "GPL-2"
+ :authors    (("Will Mengarini" . "seldon@eskimo.com"))
+ :maintainer ("Will Mengarini" . "seldon@eskimo.com")
+ :provided   (fastfuzz)
+ :keywords   (extensions float floating\ point fuzz)
+ :homepage   "http://www.eskimo.com/~seldon"
+ :commentary "\
+Try this with C-x C-e:
+  (= (+ 0.1 0.2) 0.3)
+Running on an Intel 486/50 with hardware floating point, GNU 19.34.1
+returns `nil' because of a general problem with the imprecise
+representation of floating point numbers.  This package implements
+functions that compensate for that.  For a general discussion of the
+issue, see the Info node elisp|Numbers|Comparison of Numbers.
+
+To use this package, first you'll need to copy this file to a directory
+that appears in your load-path.  `load-path' is the name of a variable
+that contains a list of directories Emacs searches for files to load.
+To prepend another directory to load-path, put a line like
+(add-to-list 'load-path \"c:/My_Directory\") in your .emacs file.
+
+Then, put
+  (require 'fastfuzz)
+in your .emacs file.  That will make these functions available:
+  fastfuzzy= (x y)
+  fastfuzzy<= (x y)
+  fastfuzzy/= (x y)
+  fastfuzzy< (x y)
+  fastfuzzy>= (x y)
+  fastfuzzy> (x y)
+  fastfuzzyzerop (x)
+  fastfuzzyplusp (x)
+  fastfuzzyminusp (x)
+  fastfuzzyintegerp (x)
+  fastfuzzywholenump (x)
+Each has a meaning analogous to the corresponding bare function, except
+that numbers are considered equal if they're \"close enough\", which is
+defined in terms of this package's global variable `fastfuzz'.
+
+The difference between this package and fuzz.el is that this package
+defines equality without using division, so it's faster, but doesn't work
+at extreme orders of magnitude.  For example, on an Intel 486,
+  (let ((fuzz     1e-14)
+        (fastfuzz 1e-14))
+    (and (fastfuzzy=  1e-13 1.1e-13)
+         (not (fuzzy= 1e-13 1.1e-13))
+         (fuzzy=          1e11 (/ (* 1e11 3.3) (+ 1.1 2.2)))
+         (not (fastfuzzy= 1e11 (/ (* 1e11 3.3) (+ 1.1 2.2))))))
+An example of an appropriate application for fastfuzz.el would be checking
+whether probabilities sum to 1.0.
+
+You might need a different `fastfuzz' for your machine.  To find out, try
+M-x fastfuzz-selftest.  If you get an error, try increasing `fastfuzz'
+with M-x set-variable.  When you find a value that works, put a line like
+  (setq fastfuzz 1.0e-4)
+in your .emacs file.
+
+If you need a different fastfuzz for a particular application, you could
+localize the variable `fastfuzz' in a `let' form, or make it buffer-local.
+
+Note that this package doesn't share fuzz.el's property that
+every dyadic comparison function is defined in terms of
+`fastfuzzy=' (mutatis mutandi), so you can't just overwrite that
+one function to modify the package's definition of equality.")

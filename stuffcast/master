@@ -1,0 +1,16 @@
+(:summary    "Stuff a PMP with content"
+ :created    "2007"
+ :updated    "2007"
+ :license    "GPL-3"
+ :authors    (("Yoni Rabkin" . "yonirabkin@member.fsf.org"))
+ :maintainer ("Yoni Rabkin" . "yonirabkin@member.fsf.org")
+ :provided   (stuffcast)
+ :commentary "\
+(eq PMP Portable Media Player)
+
+stuffcast.el is a script to wipe all the previous content from my
+PMP and then load only the newest stuff back on.
+
+It uses `gnupod' for at the backend to manipulate an Ipod Shuffle.
+
+Run M-x stuffcast to make it happen.")

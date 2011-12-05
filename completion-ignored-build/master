@@ -1,0 +1,13 @@
+(:summary    "Some built completion-ignored-extensions"
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-3"
+ :authors    (("Kevin Ryde" . "user42@zip.com.au"))
+ :maintainer ("Kevin Ryde" . "user42@zip.com.au")
+ :provided   (completion-ignored-build)
+ :required   ((("emacs" advice)))
+ :keywords   (convenience)
+ :commentary "\
+This is some dynamic additions to `completion-ignored-extensions'
+designed to ignore various built files.  See the
+`completion-ignored-build-enable' docstring for more.")

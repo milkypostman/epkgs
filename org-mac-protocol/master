@@ -1,0 +1,11 @@
+(:summary    "Process events triggered by the"
+ :created    "2009"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Christopher Suckling" . "suckling@gmail.com"))
+ :maintainer ("Christopher Suckling" . "suckling@gmail.com")
+ :provided   (org-mac-protocol)
+ :required   ((("cl" cl)
+	       ("org" org-bibtex org-protocol)))
+ :keywords   (hyperlinks outlines wp)
+ :homepage   "https://github.com/claviclaws/org-mac-protocol")

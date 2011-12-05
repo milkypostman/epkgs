@@ -1,0 +1,7 @@
+(:summary    "A password manager"
+ :provided   (keyring)
+ :commentary "\
+This a password manager that aims to be modular, different
+pasword backend can be used.
+the palm backend can be found at:
+https://kanis.fr/svn/trunk/bin/keyring.pl")

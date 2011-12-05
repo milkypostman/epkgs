@@ -1,0 +1,16 @@
+(:summary    "Major mode for editing PROCOMM ASPECT scripts"
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-2"
+ :authors    (("Edward Robinson" . "osnibore@gmail.com"))
+ :maintainer ("Edward Robinson" . "osnibore@gmail.com")
+ :provided   (procomm-mode)
+ :keywords   (aspect languages procomm script)
+ :wikipage   "ProcommMode"
+ :commentary "\
+ASPECT -- PROCOMM terminal emulator scripting language. ()
+
+This is major-mode for ASPECT Procomm scripts.  You are welcome to
+try it and submit changes or report bugs.
+
+This mode was based in part on cobol-mode.el by Rick Bielawski")

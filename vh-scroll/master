@@ -1,0 +1,43 @@
+(:summary    "Vert. and horiz. scrolling that preserves point visible"
+ :created    "1993"
+ :updated    "20011208"
+ :license    "GPL-2"
+ :authors    (("Anders Holst" . "aho@sans.kth.se"))
+ :maintainer ("Noah Friedman" . "friedman@splode.com")
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
+ :commentary "\
+This file contains changes by Noah Friedman.
+Based on original author's version 1.0 of 1993-11-18
+
+ This file, when loaded, affects mainly three things:
+
+ * If lines are truncated, the window is automatically scrolled
+   horizontally when the point has moved out to the left or right.
+   The already existing variable `hscroll-step' is used to control
+   how big steps the window are scrolled. If this variable is set
+   to nil, auto-scrolling is disabled. The variable
+   `vh-max-empty-visible' controls how much space may be scrolled
+   in after the end of the current line.
+
+ * The horizontal scrolling commands `vh-scroll-right' and
+   `vh-scroll-left' drags the point after them.
+
+ * The vertical scrolling commands `vh-scroll-down' and
+   `vh-scroll-up' tries to keep the point in the same column, using
+   `goal-column' and `temporary-goal-column' as appropriate. They
+   can be intermixed with `next-line' and `previous-line' without
+   loosing the temporary goal column. If `vh-track-goal-column' is
+   non-nil, then auto-scrolling tries to keep the (temporary) goal
+   column in sight rather than the point.
+
+ Also defined is the function `vh-scroll-to-point' which tries to
+ recenter the point horizontally, and the function
+ `toggle-truncate-lines' which does what it sounds like.
+
+ NOTE: At the end of this file are some variable settings and key
+ bindings which you might rather want to move out to your .emacs
+ and change to something else.
+
+ NOTE AGAIN: Not to loose the temporary goal column when scrolling with
+ `vh-scroll-down' and `vh-scroll-up' is intermixed with `next-line' and
+ `previous-line', this file advises the function `line-move'.")

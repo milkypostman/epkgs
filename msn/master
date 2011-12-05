@@ -1,0 +1,28 @@
+(:summary    "Client to get BibTeX entries from MathSciNet"
+ :created    "2001"
+ :updated    "20010917"
+ :license    "GPL-2"
+ :authors    (("Nevin Kapur" . "kapur@mts.jhu.edu"))
+ :maintainer ("Nevin Kapur" . "kapur@mts.jhu.edu")
+ :provided   (msn)
+ :required   ((("url" url)
+	       ("w3" w3-forms)))
+ :keywords   (tex wp www)
+ :commentary "\
+If, like me, you use LaTeX/BibTeX to manage the references in your
+technical writings, you will find the database at MathSciNet
+(http://www.ams.org/mathscinet) useful. It provides a standardized
+format for references which can be put directly in a .bib file.
+
+This library provides an interface to this facility. On invocation,
+it queries the user for an author and title and fetches the BibteX
+entries using the form at http://www.ams.org/mathscinet/search. The
+result will be a
+
+(a) W3 buffer with the search results, or
+(b) bibtex-mode buffer with the search results parsed out
+
+depending on the variable msn-use-w3. The default is to use W3.
+
+Note: Access to the database is restricted and subscribtion is
+required.")

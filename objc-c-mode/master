@@ -1,0 +1,53 @@
+(:summary    "Improvements for the XEmacs Objective-C mode"
+ :authors    (("Michael Weber" . "michaelw@foldr.org"))
+ :maintainer ("Michael Weber" . "michaelw@foldr.org")
+ :provided   (objc-c-mode)
+ :required   ((("cc-mode" cc-mode)
+	       ("emacs" font-lock)))
+ :keywords   (objc objective-c)
+ :homepage   "http://www.foldr.org/~michaelw/objective-c/index.html#objc-mode"
+ :commentary "\
+==============
+To use this style for your Objective-C buffers, just add
+	(require 'objc-c-mode)
+
+to your XEmacs dot-file.  It creates a new style `objc',
+which is set as default for all objc-mode buffers.
+
+To further customize, try this:
+
+(defconst my-c-style
+  '(\"objc\"
+    (c-indent-comments-syntactically-p       . t)
+    (c-comment-only-line-offset              . 0)
+    ;;; whatever else here...
+
+    (c-cleanup-list         . (brace-else-brace
+                               brace-elseif-brace
+                               empty-defun-braces
+                               defun-close-semi
+                               compact-empty-funcall
+                               )))
+  \"My C Programming style\")
+
+(defun my-c-mode-common-hook ()
+  (c-add-style \"PERSONAL\" my-c-style t)
+  (setq comment-column 40
+        tab-width 4
+        c-basic-offset tab-width)
+
+  (c-toggle-auto-state 1))
+  
+;; activate customizations for all cc-mode derived modes
+(add-hook 'c-mode-common-hook 'my-c-mode-common-hook)
+
+If you want to specifically change the \"objc\" style,
+probably use something like: 
+
+(defconst my-objc-style 
+  '((\"objc\"
+     (...)
+     \"My ObjC style\")))
+(defun my-objc-mode-hook ()
+  (c-add-style \"objc\" my-objc-style))
+(add-hook 'objc-mode-hook 'my-objc-mode-hook)")

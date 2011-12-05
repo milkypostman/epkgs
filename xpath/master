@@ -1,0 +1,17 @@
+(:summary    "XPATH implementation"
+ :created    "2001"
+ :updated    "20031216"
+ :license    "GPL-2"
+ :authors    (("Alex Schroeder" . "alex@gnu.org"))
+ :maintainer ("Oliver Scholz" . "epameinondas@gmx.de")
+ :provided   (xpath xpath-parser)
+ :required   ((("cl" cl)
+	       ("dom" dom)
+	       ("xml" xml)
+	       (nil wisent wisent-comp)))
+ :keywords   (xml)
+ :commentary "\
+If you are working with XML documents, you may parse the documents
+using the XML parser included with Emacs (xml.el), and pass the data
+structure to the DOM implementation (dom.el).  You can then use XPATH
+to find DOM nodes.")

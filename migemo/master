@@ -1,0 +1,6 @@
+(:license    "GPL-2"
+ :authors    (("Satoru Takabayashi" . "satoru-t@is.aist-nara.ac.jp"))
+ :maintainer ("Satoru Takabayashi" . "satoru-t@is.aist-nara.ac.jp")
+ :provided   (migemo)
+ :homepage   "http://0xcc.net/migemo"
+ :wikipage   "Migemo")

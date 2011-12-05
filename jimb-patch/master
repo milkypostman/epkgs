@@ -1,0 +1,9 @@
+(:summary    "Clean a patch for submission via email"
+ :created    "2007"
+ :updated    "2007"
+ :license    "GPL-2"
+ :authors    (("Jim Blandy"))
+ :maintainer ("Jim Blandy")
+ :provided   (jimb-patch)
+ :keywords   (tools)
+ :homepage   "http://tromey.com/elpa")

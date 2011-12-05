@@ -1,0 +1,17 @@
+(:summary    "Run CGI inside emacs"
+ :created    "20071215"
+ :updated    "2007"
+ :license    "GPL-2"
+ :authors    (("Ye Wenbin" . "wenbinye@gmail.com"))
+ :maintainer ("Ye Wenbin" . "wenbinye@gmail.com")
+ :provided   (cgi+)
+ :required   ((("calendar" calendar)
+	       ("cgi" cgi)
+	       ("cl" cl)
+	       ("httpd" httpd)))
+ :commentary "\
+Just a toy. Maybe it can help you write html in lisp.
+
+Put this file into your load-path and the following into your ~/.emacs:
+  (require 'cgi+)
+  (cgi-init)")

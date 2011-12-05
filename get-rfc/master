@@ -1,0 +1,40 @@
+(:summary    "Getting and viewing RFCs"
+ :created    "20020416"
+ :updated    "20040227"
+ :license    "GPL-2"
+ :authors    (("lawrence mitchell" . "wence@gmx.li"))
+ :maintainer ("lawrence mitchell" . "wence@gmx.li")
+ :provided   (get-rfc)
+ :keywords   (convenience rfcs)
+ :homepage   "http://www.ph.ed.ac.uk/~s0198183"
+ :wikipage   "GetRFC"
+ :commentary "\
+This is a tiny little package to alleviate the pain of having to
+switch out of Emacs if you want to view an RFC.
+It prompts you for a RFC number and pops up a new buffer with said RFC.
+You can specify whether you want to find RFCs locally or on the
+internet, in either case the RFC is still opened in Emacs.
+
+Note, you need a working wget type program to get a remote RFC and
+view it in Emacs.  If you don't have one, set the variable
+`get-rfc-no-wget' to t (in this case, a browser will be opened up
+to view the RFC.)
+
+If you do view RFCs in Emacs, rfcview.el is a useful package that
+formats them nicely, available at
+<URL:http://www.neilvandyke.org/rfcview/rfcview.el>
+
+Two commands are provided:
+`get-rfc-view-rfc' -- Prompts for an RFC number and then displays
+                      it in a new frame.
+`get-rfc-view-rfc-at-point' -- Displays the RFC number at point in
+                               a new frame.
+`get-rfc-grep-rfc-index' -- Greps for the occurrence of a string in
+                            the file rfc-index.txt.
+
+To use this file, place it somewhere in your load path, and then
+add the following to your .emacs
+(autoload 'get-rfc-view-rfc \"get-rfc\" \"Get and view an RFC\" t nil)
+(autoload 'get-rfc-view-rfc-at-point \"get-rfc\" \"View the RFC at point\" t nil)
+(autoload 'get-rfc-grep-rfc-index \"get-rfc\" \"Grep rfc-index.txt\" t nil)
+You can then bind these functions to a key.")

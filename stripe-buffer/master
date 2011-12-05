@@ -1,0 +1,26 @@
+(:summary    "Make stripe color with buffer"
+ :created    "20081024"
+ :updated    "20081024"
+ :license    "GPL-3"
+ :authors    ((nil . "andy stewart lazycat.manatee@gmail.com"))
+ :maintainer (nil . "andy stewart lazycat.manatee@gmail.com")
+ :provided   (stripe-buffer)
+ :keywords   (stripe)
+ :wikipage   "StripeBuffer"
+ :commentary "\
+Make stripe color with buffer.
+So the stripe color interface with gather the readable.
+
+
+Installation:
+
+Put stripe-buffer.el to your load-path.
+The load-path is usually ~/elisp/.
+It's set in your ~/.emacs like this:
+(add-to-list 'load-path (expand-file-name \"~/elisp\"))
+
+And the following to your ~/.emacs startup file.
+
+(require 'stripe-buffer)
+
+No need more.")

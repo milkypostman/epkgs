@@ -1,0 +1,13 @@
+(:summary    "Emacs lisp lib for pasting to PasteBox-powered bins"
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-3"
+ :provided   (pastebox)
+ :required   ((("url" url)))
+ :keywords   (paste pastebin pastebox)
+ :commentary "\
+Support for pasting a buffer or region to PasteBox powered sites such
+as pastebin.ch
+
+Keywords: paste,pastebin,pastebox
+URL: http://www.emacswiki.org/emacs/pastebox.el")

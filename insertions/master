@@ -1,0 +1,9 @@
+(:summary    "Handy things to insert in buffers"
+ :created    "2007"
+ :updated    "20070825"
+ :license    "GPL-3"
+ :authors    (("John C. G. Sturdy" . "john@cb1.com"))
+ :maintainer ("John C. G. Sturdy" . "john@cb1.com")
+ :provided   (insertions)
+ :keywords   (convenience)
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/editing")

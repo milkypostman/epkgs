@@ -1,0 +1,10 @@
+(:summary    "Edit grep buffer and apply the changes to files"
+ :updated    "20100722"
+ :license    "GPL-3"
+ :authors    (("Matsushita Akihisa" . "akihisa@mail.ne.jp"))
+ :maintainer ("Matsushita Akihisa" . "akihisa@mail.ne.jp")
+ :provided   (grep-edit)
+ :keywords   (edit grep)
+ :commentary "\
+grep-edit provides to edit grep buffer and to apply the changes to
+the file.")

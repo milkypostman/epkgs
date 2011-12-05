@@ -1,0 +1,15 @@
+(:summary    "Clusterssh implementation for emacs"
+ :created    "20080926"
+ :updated    "2008"
+ :authors    (("Dimitri Fontaine" . "dim@tapoueh.org"))
+ :maintainer ("Dimitri Fontaine" . "dim@tapoueh.org")
+ :provided   (cssh)
+ :required   ((("cl" cl)
+	       ("emacs" dired)
+	       ("ibuffer" ibuffer)
+	       ("shell" shell)
+	       ("term" term)
+	       ("tramp" tramp)))
+ :keywords   (clusterssh cssh ssh)
+ :homepage   "http://tapoueh.org/projects.html#sec17"
+ :wikipage   "ClusterSSH")

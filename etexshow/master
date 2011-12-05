@@ -1,0 +1,60 @@
+(:summary    "Browser for ConTeXt commands"
+ :created    "20030107"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("Patrick Gundlach" . "patrick@gundla.ch"))
+ :maintainer ("Patrick Gundlach" . "patrick@gundla.ch")
+ :provided   (etexshow pgxml)
+ :required   ((("emacs" overlay)
+	       ("thingatpt" thingatpt)))
+ :keywords   (tex)
+ :homepage   "http://levana.de/emacs/"
+ :commentary "\
+see also help-file 
+
+Etexshow is a clone of
+texshow, a program shipped with the ConTeXt macro package (see
+pragma-ade.com for a description of ConTeXt). It will serve as the base
+of a context-mode for emacs. Please send bug reports and comments to me!
+Thank you. See file todo for things that need to be done (that I know
+of).
+
+There is still an xml-file shipped with this code. Usually you would
+generate the xml-file with 'texexec'ing the file setupe.tex. Then you
+will get the cont-en.xml file that can (could) be used as an input for
+this etexshow. But for now, this won't work. It will work rsn.
+
+  Installation
+================
+
+please find installation instructions in the accompanied file README.txt
+
+
+  Startup 
+===========
+
+To start etexshow, just
+type 'M-x etexshow'
+
+WARNING: The first start: etexshow reads an xml file and converts it
+(pgxml.el) to a datastructure that will be stored in a cache file.
+Please note that will take some time. 
+
+
+  Configuration
+=================
+
+Etexshow works for me. Hopefully it will work for you as well. But
+there are some points you have to look at. Etexshow will try to
+find the xml files that is given in the alist
+`etexshow-xml-files-alist'. Then it will write to a cache file
+(which must not exist!) that are also given in this alist. Please
+put a line in your .emacs where to find (store) these files:
+
+(setq etexshow-xml-files-alist 
+      '((\"~/etexshow/cont-en.xml\"    . \"~/etexshow/cont-en.cache\")
+	   (\"~/etexshow/mycommands.xml\" . \"~/etexshow/mycommands.cache\")))
+
+(the dots inbetween are needed). You have to give an even number of
+files. The first file is the xml file, and the second file is the
+cache file.")

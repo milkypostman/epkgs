@@ -1,0 +1,96 @@
+(:created    "20110223"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("纪秀峰(Joseph)" . "jixiuf@gmail.com"))
+ :maintainer ("Joseph" . "jixiuf@gmail.com")
+ :provided   (anything-etags+)
+ :required   ((("anything" anything)
+	       ("emacs" custom)
+	       ("etags" etags))
+	      (("anything" anything-config anything-match-plugin)))
+ :keywords   (anything etags)
+ :homepage   "https://github.com/jixiuf/anything-etags-plus"
+ :commentary "\
+This package use `anything' as a interface to find tag with Etags.
+
+ it support multiple tag files.
+ and it can recursively searches each parent directory for a file named
+ 'TAGS'. so you needn't add this special file to `tags-table-list'
+
+ if you use GNU/Emacs ,you can set `tags-table-list' like this.
+ (setq tags-table-list '(\"/java/tags/TAGS\"
+                         \"/java/tags/linux.tag\"
+                         \"/java/tags/tag3\"))
+
+ if you use XEmacs ,you can set `tag-table-alist' like this.
+ (setq tag-table-alist
+       '((\"/usr/src/public/perl/\" . \"/usr/src/public/perl/perl-3.0/\")
+         (\"\\\\.el$\" . \"/usr/local/emacs/src/\")
+         (\"/jbw/gnu/\" . \"/usr15/degree/stud/jbw/gnu/\")
+         (\"\" . \"/usr/local/emacs/src/\")
+ ))
+
+ (global-set-key \"\\M-.\" 'anything-etags+-select-one-key)
+      `M-.' call  anything-etags+-select-at-point
+      `C-uM-.' call anything-etags+-select
+  or
+(define-key anything-command-map (kbd \"e\") 'anything-etags+-select-at-point)
+(define-key anything-command-map (kbd \"C-e\") 'anything-etags+-select)
+
+anything-etags+.el also support history go back ,go forward and list tag
+histories you have visited.(must use commands list here:)
+ `anything-etags+-history'
+   List all tag you have visited with `anything'.
+ `anything-etags+-history-go-back'
+   Go back cyclely.
+ `anything-etags+-history-go-forward'
+   Go Forward cyclely.
+
+if you want to work with `etags-table.el' ,you just need
+add this line to to init file after loading etags-table.el
+
+    (add-hook 'anything-etags+-select-hook 'etags-table-recompute)
+   (setq etags-table-alist
+    (list
+       '(\"/home/me/Projects/foo/.*\\\\.[ch]$\" \"/home/me/Projects/lib1/TAGS\" \"/home/me/Projects/lib2/TAGS\")
+       '(\"/home/me/Projects/bar/.*\\\\.py$\" \"/home/me/Projects/python/common/TAGS\")
+       '(\".*\\\\.[ch]$\" \"/usr/local/include/TAGS\")
+       ))
+
+Installation:
+
+Don't need anything-etags.el (another etags interface).
+Just put anything-etags+.el to your load-path.
+The load-path is usually ~/elisp/.
+It's set in your ~/.emacs like this:
+(add-to-list 'load-path (expand-file-name \"~/elisp\"))
+
+And the following to your ~/.emacs startup file.
+
+(require 'anything-etags+)
+
+No need more.
+
+I use GNU/Emacs,and this is my config file about etags
+(require 'anything-etags+)
+(setq anything-etags+-use-short-file-name nil)
+;;you can use  C-uM-. input symbol (default thing-at-point 'symbol)
+(global-set-key \"\\M-.\" 'anything-etags+-select-one-key)
+;;list all visited tags
+(global-set-key \"\\M-*\" 'anything-etags+-history)
+;;go back directly
+(global-set-key \"\\M-,\" 'anything-etags+-history-action-go-back)
+;;go forward directly
+(global-set-key \"\\M-/\" 'anything-etags+-history-action-go-forward)
+
+and how to work with etags-table.el
+(require 'etags-table)
+(setq etags-table-alist
+      (list
+       '(\"/home/me/Projects/foo/.*\\\\.[ch]$\" \"/home/me/Projects/lib1/TAGS\" \"/home/me/Projects/lib2/TAGS\")
+       '(\"/home/me/Projects/bar/.*\\\\.py$\" \"/home/me/Projects/python/common/TAGS\")
+       '(\"/tmp/.*\\\\.c$\"  \"/java/tags/linux.tag\" \"/tmp/TAGS\" )
+       '(\".*\\\\.java$\"  \"/opt/sun-jdk-1.6.0.22/src/TAGS\" )
+       '(\".*\\\\.[ch]$\"  \"/java/tags/linux.ctags\")
+       ))
+(add-hook 'anything-etags+-select-hook 'etags-table-recompute)")

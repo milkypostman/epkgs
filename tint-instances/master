@@ -1,0 +1,30 @@
+(:summary    "Tint all instances of the current word"
+ :created    "1997"
+ :updated    "1997"
+ :license    "GPL-2"
+ :authors    (("Uwe Schabe" . "uwe@cad-cam-concept.de"))
+ :maintainer ("Uwe Schabe" . "uwe@cad-cam-concept.de")
+ :provided   (tint-instances)
+ :keywords   (highlighting\ \  tint-instances tinting)
+ :commentary "\
+This emacs script takes the word where point is currently on and tints
+all instances of this word in the current buffer.
+If the region is active, it is taken as the current word to be tinted.
+
+
+Quickstart Installation:
+========================
+
+To get this to work, make emacs execute the line
+
+(require 'tint-instances)                    ;; load the package
+
+I would also recommend executing the following commands
+so as to extend the bindings in your global keymap:
+
+(define-key global-map \"\\M-c\" 'tint_all_instances_of_current_word)
+(define-key global-map \"\\M-v\" 'untint_all_instances_of_current_word)
+
+If there are problems with the colors used, change the entries in the
+color_array to your favourite colors (you can list all available colors
+of your installation by the command \"M-x list-colors-display\")")

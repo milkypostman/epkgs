@@ -1,0 +1,134 @@
+(:summary    "Major mode for editing Motorola's DSP56300 assembly code"
+ :created    "1994"
+ :updated    "20000526"
+ :license    "GPL-2"
+ :authors    (("Richard Y. Kim," . "ryk@coho.com"))
+ :maintainer ("Richard Y. Kim," . "ryk@coho.com")
+ :provided   (m56k)
+ :required   ((("cl" cl)
+	       ("emacs" advice)
+	       ("emacs-obsolete" lucid)))
+ :commentary "\
+This provides a major mode called m56k-mode to aid those who
+edit assembly language files using Motorola's 56300 (and 56000)
+family of Digitial Signal Processors' instruction set.
+
+Features:
+
+  o Font-lock based color highlighting.
+
+  o On-demand color highlighting of regular expression, e.g.,
+    (m56k-highlight-regexp \"x0\") highlights \"\\bx0\\b\" regular
+    expression, i.e., only the x0 register. Each time this is
+    called, a different color from the m56k-face-list variable are
+    cycled. This aids one in reading code, because any register can
+    be made to stand out so that you can quickly figure out where
+    and how it is used.  This feature is one reason why I normally
+    do not have font-lock-mode enabled.
+    m56k-highlight-regexp is actually a general purpose function
+    applicable to all modes.
+
+  o `beginning-of-defun' and `end-of-defun' are *advised* for
+    convenient cursor movement.  This also makes reposition-window
+    work nicely.
+
+  o You can swap two R/M/N register sets with a single command.
+    For example, (m56k-swap-registers 0 4) swaps r0/n0/m0 registers
+    with r4/n4/m4 registers in the current region.  This is a very
+    handy tool to reorganize your register usage.
+
+  o Symbol values can be looked up from linker map file.
+    This mode knows how to parse Motorola's linker map files.
+    For example (m56k-lookup-mapfile \"symbol\") causes emacs
+    to lookup the value of the \"symbol\" in the linker map file
+    and report the value in the minibuffer.  However there is a catch.
+    The linker map file keeps only the first 16 characters of a symbol.
+    Hence any symbol that has more than 16 characters may not work
+    correctly.
+
+  o An assembly code line may consist of of upto six different
+    fields: label, opcode, operand, x parallel move field, y
+    parallel move field, and comment.
+    (m56k-indent-line) parses each field of the current line and
+    then lines up each field starting at a fixed column number.
+    For example, here is a really badly indented code.
+
+       do #1,_end0 ;comment a
+       asl     a x:(r0)+,x0   y:(r4)+,y0
+         nop ; comment b
+       do      #2,_end1
+       mac   x0,x1,a   a,b
+         asl   a         x:(r0)+,x0   y:(r4)+,y0
+       do    #3,_end2
+         nop
+       _end2:
+       nop
+       _end1:
+      nop
+       _end0:
+
+    Hitting TAB key in each line in turn changes this into
+
+       do        #1,_end0                             ;comment a
+         asl     a         x:(r0)+,x0   y:(r4)+,y0
+         nop                                          ;comment b
+         do      #2,_end1
+           mac   x0,x1,a   a,b
+           asl   a         x:(r0)+,x0   y:(r4)+,y0
+           do    #3,_end2
+             nop
+           _end2:
+           nop
+         _end1:
+         nop
+       _end0:
+
+    By setting the m56k-indentations user option, you can specify
+    the column numbers for the opcode, operand, x-move field,
+    y-move field, and the comment field.
+
+Background:
+
+  The starting point of this file was asm-mode.el distributed along
+  with GNU Emacs 19.XX in 1994 or 1995.  Over the years, I added
+  new features.  I stopped adding any new features in 1998 or
+  1999. This has been used by myself and one or two others only on
+  Windows platforms.  I never had the chance to use Motorola
+  assembler on any UNIX platforms.
+
+  Around 1995, I had ambitious plan for this mode.  One of the
+  things I wanted to do was to make TAB key be bound to super smart
+  completer function based on context.  For example, hitting the
+  TAB key after typing \"mpy \" would present the user with possible
+  addressing modes for that particular instruction.  However, I
+  never finished the work mainly because I already memorized the
+  M56k instruction set sufficiently that any further work would not
+  help me that much. That is why you will find code that looks very
+  fancy for what it current does.  An example is the use of
+  m56k-obarray hash table.
+
+  Another idea that would make this mode really useful is to
+  integrate Motorola's documentation.  For example, (find-tag
+  \"mpy\") should bring up the documentation on the \"mpy\"
+  instruction.  Unfortunately, all of Motorola's documantation is in
+  PDF format which is rather cumbersome to integrate into emacs. I
+  know that the text can be extracted using acroread or ghostview,
+  but the result is too ugly. For me, the ideal format would be
+  texinfo, XML, latex, or HTML in that order with HTML a very
+  reluctant last option.  If Motorola makes public their
+  documenation in one of these formats, then I think I may be
+  motivated enough to integrate it into this mode.
+
+Future plans:
+
+  Bugs will be fixed as I become aware of them.
+
+  Any glaring error or omissions in documentation will be fixed.
+
+  Code will be reorganized for better readability.
+
+  All the color highlighting code was written when I knew nothing
+  about emacs features that were added after emacs 18.  I learned
+  the font-lock feature just barely enough to hack up the code that
+  I have. I welcome suggestions in this and any other parts of this
+  mode.")

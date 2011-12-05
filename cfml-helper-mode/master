@@ -1,0 +1,14 @@
+(:summary    "Major mode for composing cfml files"
+ :created    "19940201"
+ :updated    "19980806"
+ :license    "GPL-2"
+ :provided   (asp-cfml-helper-mode cfml-helper-mode jsp-cfml-helper-mode php-cfml-helper-mode)
+ :required   ((("cc-mode" cc-mode)
+	       ("cl" cl)
+	       ("emacs" easymenu font-lock)
+	       ("jdee" jde)
+	       ("tempo" tempo)
+	       ("visual-basic-mode" visual-basic-mode)
+	       (nil psgml-html)))
+ :keywords   (html major-mode)
+ :wikipage   "ColdFusionMode")

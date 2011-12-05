@@ -1,0 +1,24 @@
+(:summary    "Working with integers in the buffer"
+ :created    "2004"
+ :updated    "2005"
+ :license    "GPL-2"
+ :authors    (("Mark Triggs,")
+	      ("Aaron S. Hawley" . "ashawley@gnu.uvm.edu"))
+ :maintainer ("Mark Triggs,")
+ :provided   (integers)
+ :required   ((("thingatpt" thingatpt)))
+ :keywords   (convenience)
+ :homepage   "http://www.burlingtontelecom.net/~ashawley"
+ :wikipage   "Integers"
+ :commentary "\
+The functions understand all integers, including negative ones.
+Provided is a way to interactively increment or decrement an
+integer under a point or within a region.  Integers are
+understood to be of the form \"-?[0-9]+\"; the positive symbol is
+ignored (for better or worse).
+
+To make available from a keyboard command put something like the
+following in your ~/.emacs:
+
+(global-set-key [M-up] 'integer-increment-integer-at-point)
+(global-set-key [M-down] 'integer-decrement-integer-at-point)")

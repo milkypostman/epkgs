@@ -1,0 +1,7 @@
+(:created    "2007"
+ :updated    "2007"
+ :license    "GPL-2"
+ :provided   (arscanner arscanner-mode)
+ :required   ((("outline" outline)))
+ :homepage   "http://arscanner.adullact.net/arscanner-en.html"
+ :wikipage   "ArScanner")

@@ -1,0 +1,16 @@
+(:summary    "Keep the comint prompt at the bottom"
+ :created    "2004"
+ :updated    "2004"
+ :license    "GPL-2"
+ :authors    (("Jorgen Schaefer" . "forcer@forcix.cx"))
+ :maintainer ("Jorgen Schaefer" . "forcer@forcix.cx")
+ :provided   (comint-scroll-to-bottom)
+ :keywords   (processes)
+ :commentary "\
+This will cause comint buffers to always display the maximum amount
+of output by keeping the prompt at the bottom of the respective
+window. The code is taken from ERC, and adapted to comint-mode.
+
+To use, just add the following to your .emacs:
+
+(add-hook 'comint-mode-hook 'comint-add-scroll-to-bottom)")

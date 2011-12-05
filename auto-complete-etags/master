@@ -1,0 +1,11 @@
+(:created    "2009"
+ :updated    "20090423"
+ :license    "GPL-2"
+ :authors    (("Yen-Chin,Lee"))
+ :maintainer ("Yen-Chin,Lee")
+ :provided   (auto-complete-etags)
+ :required   ((("auto-complete" auto-complete)
+	       ("cl" cl)))
+ :commentary "\
+Put this file into your load-path and the following into your ~/.emacs:
+  (require 'auto-complete-etags)")

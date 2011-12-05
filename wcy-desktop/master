@@ -1,0 +1,14 @@
+(:summary    "Faster than destop.el and less features"
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-2"
+ :provided   (wcy-desktop)
+ :keywords   (convenience)
+ :wikipage   "WcyDesktop"
+ :commentary "\
+save the desktop, i.e. save the opened file. no other features mentioned in
+desktop.el. in order to make it fater, the file is not really loaded, it is
+only loaded after you press any key.
+installation: 
+(require 'wcy-desktop) 
+(wcy-destop-init)")

@@ -1,0 +1,18 @@
+(:summary    "1-key, automatically insert spoiler space"
+ :created    "2001"
+ :updated    "2001"
+ :license    "GPL-2"
+ :authors    (("Tom Breton" . "tob@world.std.com"))
+ :maintainer ("Tom Breton" . "tob@world.std.com")
+ :keywords   (convenience mail news)
+ :homepage   "http://www.panix.com/~tehom"
+ :commentary "\
+To install, add the line 
+
+(load \"WHATEVER-PATH/spoiler-space.el\") 
+
+anywhere in .gnus.el, where WHATEVER-PATH is wherever you put this
+file. 
+
+To use, compose a message normally in gnus.  At some point, type
+Control-c i.  That's all.")

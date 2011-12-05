@@ -1,0 +1,7 @@
+(:summary    "Like caps-lock, but for your control key.  Give your pinky a rest!"
+ :created    "2008"
+ :updated    "2008"
+ :authors    (("Craig Muth"))
+ :maintainer ("Craig Muth")
+ :provided   (control-lock)
+ :wikipage   "ControlLock")

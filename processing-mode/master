@@ -1,0 +1,8 @@
+(:created    "2008"
+ :updated    "2009"
+ :license    "GPL-3"
+ :provided   (processing-mode)
+ :required   ((("cl" cl)
+	       ("compile" compile)
+	       ("yasnippet" yasnippet)))
+ :homepage   "https://github.com/omouse/processing-emacs")

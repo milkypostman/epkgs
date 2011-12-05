@@ -1,0 +1,24 @@
+(:summary    "Major mode for editing abc music files"
+ :created    "2002"
+ :updated    "20021019"
+ :license    "GPL-2"
+ :authors    (("Matthew K. Junker"))
+ :maintainer ("Matthew K. Junker")
+ :provided   (abc-mode)
+ :required   ((("emacs" cus-face easymenu)))
+ :keywords   (docs local)
+ :wikipage   "AbcMode"
+ :commentary "\
+A major mode for editing abc music files.  Includes some abc2midi
+features.
+
+Initialization suggestion:
+(add-to-list 'auto-mode-alist '(\"\\\\.abc\\\\'\"  . abc-mode))
+(add-to-list 'auto-mode-alist '(\"\\\\.abp\\\\'\"  . abc-mode))
+(autoload 'abc-mode \"abc-mode\" \"abc music files\" t)
+(add-to-list 'auto-insert-alist '(abc-mode . abc-skeleton))
+
+Written for Emacs version 21.  May or may not work with previous
+versions.
+
+See the Common Customizations section below.")

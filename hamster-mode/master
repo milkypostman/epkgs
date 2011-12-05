@@ -1,0 +1,30 @@
+(:summary    "Hamster scripts editing for Emacs"
+ :created    "2000"
+ :updated    "20051201"
+ :license    "GPL-2"
+ :authors    (("Frank Haun" . "fh@fhaun.de"))
+ :maintainer ("Frank Haun" . "fh@fhaun.de")
+ :provided   (hamster-mode)
+ :required   ((("emacs" font-lock)))
+ :keywords   (languages)
+ :wikipage   "HamsterMode"
+ :commentary "\
+Major Mode for editing hamster scripts (*.hsc, *.hsm).
+
+Associate Hamster files with `hamster-mode':
+
+(load-library \"hamster-mode\")
+(add-to-list 'auto-mode-alist '(\"\\\\.hsc$\" . hamster-mode))
+(add-to-list 'auto-mode-alist '(\"\\\\.hsm$\" . hamster-mode))
+
+LIMITATIONS
+
+If you want get rid of the `hamster-indent-line' add the following to
+your .emcas:
+
+(add-hook 'hamster-mode-hook
+		  '(lambda()
+			 (setq indent-line-function 'insert-tab)))
+
+The special line splitting technique with `_' is not supported.
+See 'Syntax-Overview, Scripts' in Hamster.hlp.")

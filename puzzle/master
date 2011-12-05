@@ -1,0 +1,11 @@
+(:summary    "Slide puzzle for Emacs"
+ :created    "2004"
+ :updated    "20060918"
+ :license    "GPL-2"
+ :authors    (("Matthew P. Hodges" . "mphodges@member.fsf.org"))
+ :maintainer ("Matthew P. Hodges" . "mphodges@member.fsf.org")
+ :provided   (puzzle)
+ :wikipage   "SlidePuzzleForEmacs"
+ :commentary "\
+Slide puzzle for Emacs.  Start with M-x puzzle RET. Press ? for
+help.")

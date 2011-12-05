@@ -1,0 +1,9 @@
+(:summary    "Grammer check utility using LanguageTool"
+ :license    "GPL-3"
+ :authors    (("Masahiro Hayashi" . "mhayashi1120@gmail.com"))
+ :maintainer ("Masahiro Hayashi" . "mhayashi1120@gmail.com")
+ :provided   (langtool)
+ :required   ((("cl" cl)
+	       ("compile" compile)))
+ :keywords   (checker grammer)
+ :homepage   "https://github.com/mhayashi1120/Emacs-langtool")

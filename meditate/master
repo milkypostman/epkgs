@@ -1,0 +1,9 @@
+(:summary    "Talk to ZenMOO and optionally make emacs meditate for you"
+ :created    "1992"
+ :updated    "19960613"
+ :license    "GPL-2"
+ :authors    (("Noah Friedman" . "friedman@prep.ai.mit.edu"))
+ :maintainer (nil . "friedman@prep.ai.mit.edu")
+ :provided   (meditate)
+ :keywords   (meditation oink)
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp")

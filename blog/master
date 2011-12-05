@@ -1,0 +1,7 @@
+(:summary    "A wordpress posting client"
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-2"
+ :provided   (blog)
+ :required   ((("metaweblog" metaweblog)
+	       ("muse" muse-html muse-mode))))

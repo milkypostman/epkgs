@@ -1,0 +1,7 @@
+(:summary    "Complete mail address or expand mail alias interactively on the header field at mail mode"
+ :updated    "1995"
+ :license    "GPL-2"
+ :authors    (("Takashi MITSUISHI" . "takashi@riec.tohoku.ac.jp"))
+ :maintainer ("Takashi MITSUISHI" . "takashi@riec.tohoku.ac.jp")
+ :provided   (mail-cmple-addr)
+ :wikipage   "MailCmpleAddr")

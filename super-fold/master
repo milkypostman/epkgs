@@ -1,0 +1,29 @@
+(:summary    "Minor mode which adds cool folding capabilities to Emacs"
+ :created    "2003"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("Paolo Gianrossi" . "paolino.gnu@disi.unige.it"))
+ :maintainer ("Paolo Gianrossi" . "paolino.gnu@disi.unige.it")
+ :provided   (super-fold)
+ :homepage   "http://np-salesman.net/programs"
+ :commentary "\
+Super folding makes possible to selectively hide portions of the buffer. It
+ allows to fold a region,  a function or a block
+ included in commented delimiters.
+
+TODOs and known bugs:
+* when super-fold-defun is invoked from outside a function, it folds the 
+  function right before the point. Don't really know if this is a bug or not...
+
+* unfolding of single folded block needs to have point in a precise position. 
+  Possible positions are two, though...
+
+* need a customizer interface
+
+* need a function to fold comments. that should be easy in C-like comment blocks,
+  but in single line comment blocks (as lisp,e.g.), it should fold all commented
+  lines of a block as a single fold.
+
+* need a \"fold-dwim\" function to do what i mean about folding at point (e.g., if 
+  on a fold, unfold; if between delims, fold-delims, if a region is selected, fold
+  region, and so on).")

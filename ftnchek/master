@@ -1,0 +1,11 @@
+(:summary    "Ftnchek support for fortran mode"
+ :created    "2002"
+ :updated    "2002"
+ :license    "GPL-2"
+ :authors    (("Judah Milgram" . "milgram@cgpp.com"))
+ :maintainer ("Judah Milgram" . "milgram@cgpp.com")
+ :provided   (ftnchek-mode)
+ :required   ((("compile" compile)
+	       ("fortran" fortran)))
+ :keywords   (fortran semantic syntax)
+ :homepage   "http://www.tux.org/~milgram/ftnchekel.html")

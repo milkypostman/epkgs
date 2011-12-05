@@ -1,0 +1,27 @@
+(:summary    "Chinese calendar extras"
+ :created    "2006"
+ :updated    "2009"
+ :license    "GPL-3"
+ :authors    (("William Xu" . "william.xwl@gmail.com"))
+ :maintainer ("William Xu" . "william.xwl@gmail.com")
+ :provided   (cal-china-x)
+ :required   ((("calendar" cal-china calendar holidays)
+	       ("cl" cl)))
+ :commentary "\
+This extension mainly adds the following extra features:
+  - Chinese localizations
+  - Display holiday, lunar, horoscope, zodiac, solar term info on mode line
+  - Define holidays using `holiday-lunar', `holiday-solar-term'
+  - Highlight holidays based on different priorities
+  - Add `cal-china-x-chinese-holidays', `cal-china-x-japanese-holidays'.
+
+To use, add something like the following to your .emacs:
+    (require 'cal-china-x)
+    (setq mark-holidays-in-calendar t)
+    (setq cal-china-x-priority1-holidays cal-china-x-chinese-holidays)
+    (setq calendar-holidays cal-china-x-priority1-holidays)
+
+History
+
+This is an early derived work from `chinese-calendar.el' written by
+Charles Wang <charleswang@peoplemail.com.cn>.")

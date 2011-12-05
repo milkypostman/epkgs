@@ -1,0 +1,16 @@
+(:created    "2007"
+ :updated    "20070822"
+ :license    "GPL-2"
+ :authors    ((nil . "wenbinye@gmail.com"))
+ :maintainer (nil . "wenbinye@gmail.com")
+ :provided   (help-dwim-perldoc)
+ :required   ((("cl" cl)
+	       ("help-dwim" help-dwim)
+	       ("tree-widget" tree-widget)
+	       ("woman" woman))
+	      (("tree-mode" tree-mode)))
+ :commentary "\
+Put this file into your load-path and the following into your ~/.emacs:
+  (require 'help-dwim-perldoc)
+  (add-hook 'cperl-mode-hook
+            (lambda () (help-dwim-active-type 'perldoc)))")

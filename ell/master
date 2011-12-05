@@ -1,0 +1,71 @@
+(:summary    "Browse the Emacs Lisp List"
+ :created    "20000522"
+ :updated    "1999"
+ :license    "GPL-2"
+ :authors    (("Jean-Philippe Theberge" . "jphil@emacslisp.org")
+	      ("Stephen Eglen" . "stephen@cogsci.ed.ac.uk")
+	      ("Nascif A. Abousalh Neto" . "nascif@acm.org"))
+ :maintainer ("Jean-Philippe Theberge" . "jphil@emacslisp.org")
+ :provided   (ell)
+ :required   ((("cedet" working)
+	       ("cl" cl)
+	       ("elib" avltree)
+	       ("goto-addr" goto-addr)
+	       ("xml" xml)))
+ :homepage   "http://www.anc.ed.ac.uk/~stephen/emacs"
+ :commentary "\
+The Emacs Lisp Lisp is available at
+ http://www.damtp.cam.ac.uk/user/sje30/emacs/ell.html
+
+ If Stephen changes the layout of his web page, this package may
+ stop to work correctly.  You may then need to upgrade this
+ package.
+
+After loading this file, just do \"M-x ell-packages\" to view the
+list in its own buffer.
+Use a prefix argument (i.e. \"C-u M-x ell-packages\") to sort by
+author name.
+
+(New in 1.1)
+
+Retrieves information from ell.xml instead of ell.html. Old method relied on
+regular expressions for parsing and was skipping some entries.
+
+(New in 1.0)
+
+Packages added to the ELL since the last time you called
+\"ell-packages\" will be marked with a tag (\"<New>\").  This is
+achieved by storing relevant information about the last time you
+accessed ELL in a file.  If you delete this file, the next time you
+access the ELL, all files will be marked as new once more.  If
+ell-occur-if-new-found is t, an *Occur* buffer will automatically
+show you the new entries.
+
+The elib package is required for cache management (using the
+avltree facility).  If you do not have elib, get it from any GNU
+mirror, such as
+ftp://wuarchive.wustl.edu/systems/gnu/emacs/elib-1.0.tar.gz
+
+Variables.
+
+Set ell-locate to t (default nil) if you want emacs to
+indicate which lisp files are already available on your system.
+
+Set ell-goto-addr to t (default nil) if you want to turn the
+URLs into hyperlinks using the goto-addr package.
+
+Set ell-last-read-filename to the name of the file where you want
+to store information from the last time the ELL site was accessed.
+
+To Do:
+
++ Do the http fetching in the background so emacs is not
+  freezed on slow connections
+
++ Take consideration for the accented character in the sort by
+  author.
+
++ replace sort* with something else so the need for cl.el is
+  no more required. (is this really necessary?)
+
++ Highlight packages already somewhere on your local lisp path.")

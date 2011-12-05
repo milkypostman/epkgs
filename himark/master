@@ -1,0 +1,24 @@
+(:summary    "Marking text by highlighting"
+ :created    "1999"
+ :updated    "20010214"
+ :license    "GPL-2"
+ :authors    (("Roland Winkler" . "roland.winkler@physik.uni-erlangen.de")
+	      ("based on ideas by Ehud Karni" . "ehud@unix.simonwiesel.co.il"))
+ :maintainer ("Roland Winkler" . "roland.winkler@physik.uni-erlangen.de")
+ :provided   (himark)
+ :keywords   (faces)
+ :commentary "\
+himark.el provides marking of text in a buffer by highlighting.
+Unlike transient-mark-mode the marking is permanent and can be
+accumulated. One can mark the region, the occurances of a regexp
+or a rectangle. The markings in a buffer can be removed with
+himark-unset.
+
+For me, a typical application is when I am studying in one or
+more emacs buffers the output of some other programs which
+contain many lines and columns of numbers, numbers and more
+numbers, and I need to find and compare the important ones. Or I
+might like to see how often I have used some words in a piece of
+text.
+
+Comments / suggestions welcome!")

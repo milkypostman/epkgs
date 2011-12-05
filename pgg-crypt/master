@@ -1,0 +1,7 @@
+(:summary    "Automatic encryption with gpg"
+ :license    "GPL-2"
+ :authors    (("Phillip Lord" . "phillip.lord@newcastle.ac.uk"))
+ :maintainer ("Phillip Lord" . "phillip.lord@newcastle.ac.uk")
+ :provided   (pgg-crypt)
+ :required   ((("emacs-obsolete" pgg)))
+ :homepage   "http://homepages.cs.ncl.ac.uk/phillip.lord/emacs.html")

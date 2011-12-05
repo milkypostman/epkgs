@@ -1,0 +1,34 @@
+(:created    "2007"
+ :updated    "2008"
+ :license    "GPL-2"
+ :authors    (("Y. Hayamizu" . "y.hayamizu@gmail.com")
+	      ("Tsuyoshi CHO" . "tsuyoshi.cho+develop@gmail.com")
+	      ("Alberto Garcia" . "agarcia@igalia.com"))
+ :maintainer ("Y. Hayamizu" . "y.hayamizu@gmail.com")
+ :provided   (ssl twittering-mode)
+ :required   ((("cl" cl)
+	       ("emacs" sha1)
+	       ("jka-compr" jka-compr)
+	       ("skeleton" skeleton)
+	       ("url" url)
+	       ("xml" xml))
+	      (("epa" epa)
+	       ("epg" epg)
+	       ("json" json)
+	       ("revive" revive)
+	       ("tls" tls)
+	       ("url" url-methods)
+	       (nil alpaca)))
+ :keywords   (twitter web)
+ :homepage   "http://twmode.sourceforge.net"
+ :wikipage   "TwitteringMode"
+ :commentary "\
+twittering-mode.el is a major mode for Twitter.
+You can check friends timeline, and update your status on Emacs.
+
+Feature Request:
+
+URL : http://twitter.com/d00dle/statuses/577876082
+* Status Input from Popup buffer and C-cC-c to POST.
+URL : http://code.nanigac.com/source/view/419
+* update status for region")

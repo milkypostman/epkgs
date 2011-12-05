@@ -1,0 +1,24 @@
+(:summary    "Maple mode for GNU Emacs"
+ :created    "1999"
+ :updated    "20060602"
+ :license    "GPL-2"
+ :authors    (("Joseph S. Riel" . "joer@k-online.com")
+	      ("and Roland Winkler" . "roland.winkler@physik.uni-erlangen.de"))
+ :maintainer ("Joseph S. Riel" . "joer@k-online.com")
+ :provided   (maplev)
+ :required   ((("align" align)
+	       ("cl" cl)
+	       ("emacs" comint font-lock)
+	       ("emacs-obsolete" abbrevlist)
+	       ("imenu" imenu)
+	       ("info" info)))
+ :keywords   (languages maple)
+ :homepage   "http://www.mapleprimes.com/blog/joe-riel/emacs-mode-for-maple"
+ :commentary "\
+This package defines five major modes:
+
+  maplev-mode:        for editing Maple code
+  maplev-cmaple-mode: for running Maple
+  maplev-mint-mode:   for displaying the output of mint
+  maplev-help-mode:   for displaying Maple help pages
+  maplev-proc-mode:   for displaying Maple procedures")

@@ -1,0 +1,64 @@
+(:summary    "Highlight whitespace of various kinds"
+ :created    "20000621"
+ :updated    "20110104"
+ :license    "GPL-2"
+ :authors    (("Peter Steiner" . "unistein@isbe.ch"))
+ :maintainer ("Drew Adams")
+ :provided   (show-wspace)
+ :required   ((("cl" cl)))
+ :keywords   (highlight whitespace)
+ :commentary "\
+Highlight whitespace of various kinds.
+
+To use this library:
+
+   Add this to your initialization file (~/.emacs or ~/_emacs):
+
+     (require 'show-wspace) ; Load this library.
+
+Then you can use commands `toggle-*' (see below) to turn the
+various kinds of whitespace highlighting on and off in Font-Lock
+mode.
+
+If you want to always use a particular kind of whitespace
+highlighting, by default, then add the corresponding
+`show-ws-highlight-*' function (see below) to the hook
+`font-lock-mode-hook'.  Then, whenever Font-Lock mode is turned on,
+whitespace highlighting will also be turned on.
+
+For example, you can turn on tab highlighting by default by adding
+function `show-ws-highlight-tabs' to `font-lock-mode-hook' in your
+.emacs file, as follows:
+
+    (add-hook 'font-lock-mode-hook 'show-ws-highlight-tabs)
+
+
+Faces defined here:
+
+   `show-ws-hard-space', `show-ws-tab', `show-ws-trailing-whitespace'.
+
+Commands defined here:
+
+   `show-ws-toggle-show-hard-spaces', `show-ws-toggle-show-tabs',
+   `show-ws-toggle-show-trailing-whitespace',
+   `toggle-show-hard-spaces-show-ws' (alias),
+   `toggle-show-tabs-show-ws' (alias),
+   `toggle-show-trailing-whitespace-show-ws' (alias).
+
+Non-interactive functions defined here:
+
+   `show-ws-dont-highlight-hard-spaces',
+   `show-ws-dont-highlight-tabs',
+   `show-ws-dont-highlight-trailing-whitespace',
+   `show-ws-highlight-hard-spaces', `show-ws-highlight-tabs',
+   `show-ws-highlight-trailing-whitespace'.
+
+Internal variables defined here:
+
+   `show-ws-highlight-hard-spaces-p', `show-ws-highlight-tabs-p',
+   `show-ws-highlight-trailing-whitespace-p'.
+
+Drew Adams wrote the `toggle-*' commands and `*-p' variables.
+
+Peter Steiner wrote the original code that did the equivalent of
+the `show-ws-highlight-*' commands here in his `hilite-trail.el'.")

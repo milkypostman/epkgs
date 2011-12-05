@@ -1,0 +1,9 @@
+(:summary    "Interface to write fortunes quickly"
+ :created    "1999"
+ :updated    "2000"
+ :license    "GPL-2"
+ :authors    (("Benjamin Drieu" . "drieu@alpha12.bocal.cs.univ-paris8.fr"))
+ :maintainer ("Michael Abraham Shulman" . "viritrilbia@users.sourceforge.net")
+ :provided   (fortune-mode)
+ :keywords   (games unix)
+ :wikipage   "FortuneMode")

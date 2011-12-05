@@ -1,0 +1,36 @@
+(:summary    "The Emacs Multimedia System"
+ :created    "2003"
+ :updated    "2009"
+ :license    "GPL-3"
+ :authors    (("Jorgen Schäfer" . "forcer@forcix.cx"))
+ :maintainer ("Jorgen Schäfer" . "forcer@forcix.cx")
+ :provided   (emms emms-bookmarks emms-browser emms-cache emms-compat emms-cue emms-history emms-i18n emms-info emms-info-libtag emms-info-metaflac emms-info-mp3info emms-info-ogginfo emms-last-played emms-lastfm-client emms-lastfm-scrobbler emms-lyrics emms-mark emms-metaplaylist-mode emms-mode-line emms-mode-line-icon emms-player-mpd emms-player-mpg321-remote emms-player-mplayer emms-player-simple emms-player-vlc emms-player-xine emms-playing-time emms-playlist-limit emms-playlist-mode emms-playlist-sort emms-score emms-setup emms-source-file emms-source-playlist emms-stream-info emms-streams emms-tag-editor emms-url emms-volume emms-volume-amixer jack)
+ :required   ((("cl" cl)
+	       ("emacs" dired md5 overlay)
+	       ("format-spec" format-spec)
+	       ("hl-line" hl-line)
+	       ("later-do" later-do)
+	       ("locate" locate)
+	       ("parse-time" parse-time)
+	       ("sort" sort)
+	       ("time-date" time-date)
+	       ("tq" tq)
+	       ("url" url)
+	       ("w3m" w3m)
+	       ("xml" xml)))
+ :keywords   (emms mpeg multimedia)
+ :homepage   "http://www.gnu.org/software/emms"
+ :wikipage   "EMMS"
+ :commentary "\
+This is the very core of EMMS.  It provides ways to play a track
+using `emms-start', to go through the playlist using the commands
+`emms-next' and `emms-previous', to stop the playback using
+`emms-stop', and to see what's currently playing using `emms-show'.
+
+But in itself, this core is useless, because it doesn't know how to
+play any tracks --- you need players for this.  In fact, it doesn't
+even know how to find any tracks to consider playing --- for this,
+you need sources.
+
+A sample configuration is offered in emms-setup.el, so you might
+just want to use that file.")

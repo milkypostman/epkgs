@@ -1,0 +1,20 @@
+(:summary    "Misc frame, window and buffer commands"
+ :created    "20080830"
+ :updated    "20100307"
+ :license    "GPL-3"
+ :authors    (("Jonas Bernoulli" . "jonas@bernoul.li"))
+ :maintainer ("Jonas Bernoulli" . "jonas@bernoul.li")
+ :provided   (fwb-cmds)
+ :required   ((("frame-cmds" frame-cmds)
+	       ("misc-cmds" misc-cmds)))
+ :keywords   (convenience)
+ :homepage   "http://github.com/tarsius/fwb-cmds"
+ :commentary "\
+This package is a stub, and will probably be abandoned.
+
+Command defined here operate on frames, windows and buffers and
+make it easier and faster to access certain functionality that
+is already available using the default commands.
+
+This library can be used by itself but was written as a helper
+library for library `bob.el'.")

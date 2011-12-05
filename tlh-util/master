@@ -1,0 +1,4 @@
+(:summary    "A bunch of elisp utility fns and macros"
+ :provided   (tlh-util)
+ :required   ((("cl" cl)))
+ :homepage   "https://github.com/tlh/tlh-util.el")

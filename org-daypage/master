@@ -1,0 +1,10 @@
+(:summary    "Org-Mode Day Page"
+ :created    "2010"
+ :updated    "2011"
+ :license    "GPL-2"
+ :authors    (("Thomas Parslow" . "tom@almostobsolete.net"))
+ :maintainer ("Thomas Parslow" . "tom@almostobsolete.net")
+ :provided   (org-daypage)
+ :required   ((("cl" cl)))
+ :keywords   (daypage orgmode)
+ :homepage   "http://almostobsolete.net/daypage.html")

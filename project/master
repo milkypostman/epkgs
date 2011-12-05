@@ -1,0 +1,19 @@
+(:summary    "Keep track of time devoted to projects"
+ :created    "199626"
+ :updated    "2004"
+ :license    "GPL-2"
+ :authors    (("Alan Shutko" . "ats@acm.org"))
+ :maintainer ("Alan Shutko" . "ats@acm.org")
+ :provided   (project)
+ :required   ((("calendar" appt)
+	       ("cl" cl)
+	       ("time-date" time-date)
+	       ("timezone" timezone)))
+ :keywords   (calendar)
+ :commentary "\
+project-summarize : Sumarize time spent on heirarchy in given time
+ period.  Default to all projects, beginning of file, and present.
+ Show subtotals ala du
+
+project-report: Report time spent on heirarchy in terms of time
+worked per day.  Option to subdivide.")

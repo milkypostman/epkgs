@@ -1,0 +1,44 @@
+(:summary    "Major mode for reading Poplog help documentation.    "
+ :created    "1990"
+ :updated    "19990902"
+ :license    "GPL-2"
+ :authors    (("Richard Caley" . "rjc@cstr.ed.ac.uk")
+	      ("Brian Logan" . "bsl@cs.bham.ac.uk"))
+ :maintainer ("Brian Logan" . "b.s.logan@cs.bham.ac.uk")
+ :provided   (pop-help-mode)
+ :required   ((("cl" cl)))
+ :keywords   (poplog)
+ :commentary "\
+pop-help-mode (was pop-sys-file-mode)
+                                                                 
+        Richard Caley 1990 and beyond.                           
+        Prolog support by Brian Logan.                           
+                                                                 
+A major mode for reading poplog help documentation.              
+                                                                 
+By default pop-help-mode creates one buffer for each type of help file
+HELP, TEACH etc.  Making pop-help-always-create-buffer non nil creates a
+new buffer for each file and it is up to the user to manage the resulting 
+buffers.  Like ved, pop-help-mode uses the Poplog searchlists to decide
+which directories to search for help files.  This is generally a Good 
+Thing but a) it can be slow and b) it won't find help files which are
+not in the default seachlists and where the corresponding library hasn't
+been loaded.  If you don't like this behaviour, you can set 
+pop-help-always-use-defaults to t and redefine the default searchlists in 
+your .emacs to include the help directories for the libraries you use.
+                                                                 
+If pop-help-short-command is set true then the commands M-X help etc. can 
+be used to get help rather than M-X pop-help etc.  Nice, but not for non 
+poplog people.                        
+
+THINGS TO DO:                                                    
+        A ved_?? equivalent would be nice.                       
+                                                                 
+        Some nice way of _creating_ help files. This would be    
+        a mix of pop-sys-file-mode and text-mode. Versions of    
+        ved_indexify and ved_header would be nice                
+                                                                 
+
+Needed to determine if Pop is running and to communicate with the
+inferior pop process.
+(require 'inferior-pop-mode)")

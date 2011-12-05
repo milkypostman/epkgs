@@ -1,0 +1,13 @@
+(:summary    "Naos User Frontend for GNU Emacs"
+ :created    "19990202"
+ :updated    "1999"
+ :license    "GPL-2"
+ :authors    (("Klaus Schilling" . "klaus.schilling@home.ivm.de"))
+ :maintainer ("Klaus Schilling" . "klaus.schilling@home.ivm.de")
+ :provided   (naos)
+ :required   ((("elib" string)
+	       ("emacs" wid-edit widget)))
+ :keywords   (games roleplay)
+ :commentary "\
+This is a user frontend for the role play game Naos based on the Emacs
+Widget package by P. Abrahamsen.")

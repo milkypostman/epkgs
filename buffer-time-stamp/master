@@ -1,0 +1,12 @@
+(:summary    "Display buffer time stamps in the mode line"
+ :created    "2004"
+ :updated    "20060109"
+ :license    "GPL-2"
+ :authors    (("Matthew P. Hodges" . "mphodges@member.fsf.org"))
+ :maintainer ("Matthew P. Hodges" . "mphodges@member.fsf.org")
+ :provided   (buffer-time-stamp)
+ :wikipage   "DisplayBufferTimeStamps"
+ :commentary "\
+This package displays in the mode line a time stamp for the last
+text change in a buffer. Use M-x buffer-time-stamp-mode RET to
+toggle.")

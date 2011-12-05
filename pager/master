@@ -1,0 +1,6 @@
+(:summary    "Windows-scroll commands"
+ :created    "1997"
+ :updated    "1997"
+ :license    "GPL-2"
+ :provided   (pager)
+ :homepage   "http://user.it.uu.se/~mic")

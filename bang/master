@@ -1,0 +1,12 @@
+(:summary    "Replace ?! and !? with the interrobang character"
+ :created    "20100625"
+ :updated    "2010"
+ :license    "GPL-2"
+ :authors    (("Paul M. Rodriguez" . "paulmrodriguez@gmail.com"))
+ :maintainer ("Paul M. Rodriguez" . "paulmrodriguez@gmail.com")
+ :provided   (bang)
+ :homepage   "http://gopher.ruricolist.com:70/lisp"
+ :commentary "\
+Bang.el allows you to insert the interrobang character by typing
+\"?!\" or \"!?\" in succession.  C-u ! and C-u ? will always insert the
+original characters.")

@@ -1,0 +1,108 @@
+(:summary    "Outline-based notes management and organizer"
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Carsten Dominik" . "carsten@orgmode.org"))
+ :maintainer ("Bastien Guerry" . "bzg@gnu.org")
+ :provided   (ob ob-C ob-R ob-asymptote ob-awk ob-calc ob-clojure ob-comint ob-css ob-ditaa ob-dot ob-emacs-lisp ob-eval ob-exp ob-fomus ob-fortran ob-gnuplot ob-haskell ob-java ob-js ob-keys ob-latex ob-ledger ob-lilypond ob-lisp ob-lob ob-matlab ob-maxima ob-mscgen ob-ocaml ob-octave ob-org ob-oz ob-perl ob-picolisp ob-plantuml ob-python ob-ref ob-ruby ob-sass ob-scheme ob-screen ob-sh ob-shen ob-sql ob-sqlite ob-table ob-tangle org org-agenda org-annotate-file org-archive org-ascii org-attach org-bbdb org-beamer org-bibtex org-bookmark org-capture org-checklist org-choose org-clock org-collector org-colview org-colview-xemacs org-compat org-contacts org-contribdir org-crypt org-ctags org-datetree org-depend org-docbook org-docview org-drill org-element org-elisp-symbol org-entities org-eshell org-eval org-eval-light org-exp org-exp-bibtex org-exp-blocks org-expiry org-export org-export-generic org-export-latex org-faces org-feed org-footnote org-freemind org-generic org-git-link org-gnus org-habit org-html org-icalendar org-id org-indent org-info org-infojs org-inlinetask org-interactive-query org-invoice org-irc org-jira org-jsinfo org-latex org-learn org-list org-lparse org-mac-iCal org-mac-link-grabber org-mac-message org-macs org-mairix org-man org-mew org-mhe org-mime org-mks org-mm org-mobile org-mouse org-mtags org-mw org-notmuch org-odt org-panel org-pcomplete org-plot org-protocol org-publish org-registry org-remember org-rmail org-screen org-secretary org-special-blocks org-src org-static-mathjax org-table org-taskjuggler org-timer org-toc org-track org-velocity org-vm org-w3m org-wikinodes org-wl org-xhtml org-xoxo org2rem orgtbl-sqlinsert)
+ :required   ((("arc-mode" arc-mode)
+	       ("assoc" assoc)
+	       ("bbdb" bbdb bbdb-com)
+	       ("bibtex" bibtex)
+	       ("bookmark" bookmark)
+	       ("browse-url" browse-url)
+	       ("calc" calc calc-store calc-trail)
+	       ("calendar" cal-iso calendar holidays solar)
+	       ("cc-mode" cc-mode)
+	       ("cdlatex" cdlatex)
+	       ("cl" cl)
+	       ("cmuscheme" cmuscheme)
+	       ("dabbrev" dabbrev)
+	       ("diary-lib" diary-lib)
+	       ("electric" electric)
+	       ("emacs" autoload button comint easymenu font-lock overlay sha1)
+	       ("epg" epg)
+	       ("erc" erc erc-log)
+	       ("eshell" esh-mode eshell)
+	       ("ess" ess)
+	       ("find-func" find-func)
+	       ("find-lisp" find-lisp)
+	       ("footnote" footnote)
+	       ("format-spec" format-spec)
+	       ("gnuplot" gnuplot)
+	       ("gnus" gnus gnus-art gnus-sum mailcap message)
+	       ("haskell-mode" inf-haskell)
+	       ("hi-lock" hi-lock)
+	       ("htmlfontify" htmlfontify)
+	       ("htmlize" htmlize)
+	       ("icalendar" icalendar)
+	       ("info" info)
+	       ("jira" jira)
+	       ("matlab" matlab)
+	       ("mew" mew)
+	       ("mh-e" mh-e mh-search mh-utils)
+	       ("mozart" mozart)
+	       ("notifications" notifications)
+	       ("nxhtml" moz)
+	       ("octave-mod" octave-inf)
+	       ("outline" noutline outline)
+	       ("parse-time" parse-time)
+	       ("pcomplete" pcomplete)
+	       ("pp" pp)
+	       ("ps-print" ps-print)
+	       ("remember" remember)
+	       ("remind" remind)
+	       ("reporter" reporter)
+	       ("rinari" inf-ruby)
+	       ("rmail" rmail)
+	       ("shell" shell)
+	       ("shen-mode" inf-shen)
+	       ("slime" slime)
+	       ("table" table)
+	       ("term" term)
+	       ("time" time)
+	       ("time-date" time-date)
+	       ("tuareg" tuareg)
+	       ("url" url-handlers url-parse)
+	       ("vm" vm vm-search)
+	       ("wanderlust" wl)
+	       ("xml" xml)
+	       (nil inferior-picolisp notmuch rcodetools swank-clojure)))
+ :keywords   (calendar hypermedia outlines wp)
+ :homepage   "http://orgmode.org"
+ :wikipage   "OrgMode"
+ :commentary "\
+Org-mode is a mode for keeping notes, maintaining ToDo lists, and doing
+project planning with a fast and effective plain-text system.
+
+Org-mode develops organizational tasks around NOTES files that contain
+information about projects as plain text.  Org-mode is implemented on
+top of outline-mode, which makes it possible to keep the content of
+large files well structured.  Visibility cycling and structure editing
+help to work with the tree.  Tables are easily created with a built-in
+table editor.  Org-mode supports ToDo items, deadlines, time stamps,
+and scheduling.  It dynamically compiles entries into an agenda that
+utilizes and smoothly integrates much of the Emacs calendar and diary.
+Plain text URL-like links connect to websites, emails, Usenet
+messages, BBDB entries, and any files related to the projects.  For
+printing and sharing of notes, an Org-mode file can be exported as a
+structured ASCII file, as HTML, or (todo and agenda items only) as an
+iCalendar file.  It can also serve as a publishing tool for a set of
+linked webpages.
+
+Installation and Activation
+---------------------------
+See the corresponding sections in the manual at
+
+  http://orgmode.org/org.html#Installation
+
+Documentation
+-------------
+The documentation of Org-mode can be found in the TeXInfo file.  The
+distribution also contains a PDF version of it.  At the homepage of
+Org-mode, you can read the same text online as HTML.  There is also an
+excellent reference card made by Philip Rooke.  This card can be found
+in the etc/ directory of Emacs 22.
+
+A list of recent changes can be found at
+http://orgmode.org/Changes.html")

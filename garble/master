@@ -1,0 +1,31 @@
+(:summary    "Emacs interface to garble"
+ :created    "2001"
+ :updated    "2001"
+ :license    "GPL-2"
+ :provided   (garble)
+ :required   ((("cl" cl)
+	       ("parse-time" parse-time)))
+ :homepage   "http://www.davep.org/emacs"
+ :commentary "\
+garble.el is an emacs interface for garble, a command line tool for
+talking to various Garmin <URL:http://www.garmin.com/> GPS units. See
+<URL:http://freshmeat.net/projects/garble/?highlight=garble> for
+information about garble.
+
+This code aims to provide the primitive functions for talking to a Garmin
+GPS unit and getting the data back in an Emacs Lisp friendly way. It
+should be possible to write all sorts of things based around these
+functions. For example, `sunrise-sunset' could be given a wrapper that
+ensures you get the information for the location of your GPS unit:
+
+(defun sunrise-sunset-here ()
+  (interactive)
+  (let* ((pos (garble-get-position))
+         (calendar-location-name \"GPS location\")
+         (calendar-longitude (car pos))
+         (calendar-latitude (cadr pos)))
+    (sunrise-sunset)))
+
+The latest version of garble.el can be found at:
+
+  <URL:http://www.davep.org/emacs/#garble.el>")

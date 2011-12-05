@@ -1,0 +1,17 @@
+(:summary    "Preserve undo boundary across multiple-buffer edits"
+ :created    "1993"
+ :updated    "19991008"
+ :license    "GPL-2"
+ :authors    (("Noah Friedman" . "friedman@splode.com"))
+ :maintainer (nil . "friedman@splode.com")
+ :provided   (save-undo)
+ :keywords   (extensions)
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
+ :commentary "\
+The default behavior of undo is that when editing in one buffer, an
+undo boundary is created in another buffer the first time it is edited.
+This makes sense for interactive behavior, but it's not desirable when a
+single interactive command creates multiple undo boundaries via
+non-interactive buffer switches.  For example, calling rfc822-addresses
+within an interactive command can cause this to happen.  Wrapping the call
+to rfc822-address with this macro can prevent that.")

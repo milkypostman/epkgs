@@ -1,0 +1,8 @@
+(:summary    "Unicode support for XML"
+ :created    "20040721"
+ :updated    "20040721"
+ :license    "GPL-2"
+ :authors    (("Norman Walsh" . "ndw@nwalsh.com"))
+ :maintainer ("Norman Walsh" . "ndw@nwalsh.com")
+ :keywords   (characters unicode xml)
+ :homepage   "http://nwalsh.com/emacs/xmlchars")

@@ -1,0 +1,7 @@
+(:summary    "Electric handling of inserting spaces -- particularly for use with voice input"
+ :updated    "20071012"
+ :license    "GPL-2"
+ :provided   (electric-space)
+ :required   ((("cl" cl)
+	       (nil speak-parens)))
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/editing")

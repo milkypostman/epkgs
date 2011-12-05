@@ -1,0 +1,12 @@
+(:summary    "Powerful Undo system. Browser/movie/redo/hilit"
+ :created    "2004"
+ :updated    "20050406"
+ :license    "GPL-2"
+ :authors    (("D. Goel" . "deego@gnufans.org"))
+ :maintainer ("D. Goel" . "deego@gnufans.org")
+ :provided   (ub)
+ :required   ((("cl" cl)
+	       ("hilit-chg" hilit-chg)
+	       ("mkback" mkback)))
+ :homepage   "http://www.gnufans.net/~deego/emacs.html"
+ :wikipage   "UndoBrowse")

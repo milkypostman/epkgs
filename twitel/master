@@ -1,0 +1,44 @@
+(:summary    "Simple Emacs-based client for Twitter"
+ :created    "2008"
+ :updated    "2010"
+ :license    "GPL-2"
+ :authors    (("Neil Roberts"))
+ :maintainer ("Neil Roberts")
+ :provided   (twitel)
+ :required   ((("cl" cl)
+	       ("oauth" oauth)
+	       ("url" url url-http)
+	       ("xml" xml)))
+ :keywords   (twitter)
+ :commentary "\
+A Twitter client for emacs that can view your friends timeline and
+publish new statuses.
+
+This requires the oauth package from here:
+   http://www.emacswiki.org/emacs/OAuthLibrary
+
+You should add the following to your Emacs configuration file:
+
+(autoload 'twitel-get-friends-timeline \"twitel\" nil t)
+(autoload 'twitel-status-edit \"twitel\" nil t)
+(global-set-key \"\\C-xt\" 'twitel-get-friends-timeline)
+(add-hook 'twitel-status-edit-mode-hook 'longlines-mode)
+
+You can view the statuses by pressing C-x t. While in the timeline
+buffer you can press C-c C-s to post a new status or C-c C-r to
+reply to the status at point. Once the message is finished press
+C-c C-c to publish.
+
+To use Twitel you need to specify a consumer key and consumer
+secret for OAuth authentication. Twitter's idea is that an
+application developer would hardcode these keys into an application
+and then try to hide them. However that's not really possible with
+an open source application so instead they are left blank here. To
+get keys you could either register your own Twitter application or
+possibly steal another key from another application. Once you have
+the value you can customize the twitel group to set them.
+
+The first time you use Twitel it will use OAuth to get an access
+token from Twitter. This will require you to login to a web page
+and copy a code. The access token is saved so this should only be
+needed once.")

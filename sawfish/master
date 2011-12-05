@@ -1,0 +1,24 @@
+(:summary    "Sawfish mode"
+ :created    "2004"
+ :updated    "2004"
+ :license    "GPL-2"
+ :provided   (sawfish)
+ :required   ((("cl" cl)
+	       ("emacs" easymenu font-lock)
+	       ("inf-lisp" inf-lisp)
+	       ("info" info)
+	       ("pp" pp)
+	       ("regexp-opt" regexp-opt)
+	       ("thingatpt" thingatpt)
+	       (nil lisp-doc rep\.structures)))
+ :homepage   "http://www.davep.org/emacs"
+ :wikipage   "SawFishMode"
+ :commentary "\
+sawfish.el is an emacs mode for writing code for the sawfish window
+manager <URL:http://sawmill.sourceforge.net/>. As well as providing a
+programming mode it also allows for direct interaction with the running
+window manager.
+
+The latest sawfish.el is always available from:
+
+  <URL:http://www.davep.org/emacs/#sawfish.el>")

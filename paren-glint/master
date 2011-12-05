@@ -1,0 +1,31 @@
+(:summary    "Unhighlight matching paren after a timeout"
+ :created    "2005"
+ :updated    "2005"
+ :license    "GPL-2"
+ :authors    (("Karl Landström" . "karl@karllandstrom.se"))
+ :maintainer ("Karl Landström" . "karl@karllandstrom.se")
+ :provided   (paren-glint)
+ :required   ((("emacs" advice)))
+ :keywords   (faces languages)
+ :homepage   "http://www.brgeight.se"
+ :commentary "\
+Installation:
+
+Put this file in a folder where Emacs can find it.  On GNU/Linux
+it's usually /usr/local/share/emacs/site-lisp/ and on Windows it's
+something like \"C:\\Program Files\\Emacs<version>\\site-lisp\".  To
+make it run slightly faster you can also compile it from Emacs (M-x
+`emacs-lisp-byte-compile'). Then put the following into your .emacs
+initialization file (_emacs on Windows):
+
+ (show-paren-mode 1)
+ (require 'paren-glint)
+ (paren-glint-mode 1)
+
+It will first highlight according to `show-paren-mode' and then
+unhighlight after `paren-glint-timeout' seconds.
+
+Bugs:
+
+On some (rare) occations the unhighlighting does not work for some
+unknown reason. If point is moved back and forth it works again.")

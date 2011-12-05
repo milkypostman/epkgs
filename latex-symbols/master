@@ -1,0 +1,10 @@
+(:summary    "Display tables of (La)TeX symbols in XEmacs"
+ :created    "1999"
+ :updated    "2000"
+ :license    "GPL-2"
+ :authors    (("John Palmieri" . "palmieri@math.washington.edu"))
+ :maintainer ("John Palmieri" . "palmieri@math.washington.edu")
+ :provided   (latex-symbols)
+ :keywords   (tex\ symbols xpm)
+ :homepage   "http://www.math.washington.edu/~palmieri/Emacs/latex-symbols.html"
+ :wikipage   "LaTeXSymbols")

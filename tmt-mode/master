@@ -1,0 +1,14 @@
+(:summary    "Major mode for editing Text::MicroTemplate syntax"
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-2"
+ :authors    (("Yoshiki Kurihara" . "kurihara@cpan.org"))
+ :maintainer ("Yoshiki Kurihara" . "kurihara@cpan.org")
+ :provided   (tmt-mode)
+ :required   ((("tempo" tempo)))
+ :keywords   (mode perl template)
+ :homepage   "https://github.com/yoshiki/tmt-mode"
+ :commentary "\
+This is a major mode for editing files written in Text::MicroTemplate syntax.
+
+Installation:")

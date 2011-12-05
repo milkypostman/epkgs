@@ -1,0 +1,13 @@
+(:summary    "Cddb interface"
+ :created    "1998"
+ :updated    "2011"
+ :license    "GPL-2"
+ :authors    (("Lars Magne Ingebrigtsen" . "larsi@gnus.org"))
+ :maintainer ("Lars Magne Ingebrigtsen" . "larsi@gnus.org")
+ :provided   (cddb)
+ :required   ((("cl" cl)
+	       ("expect" expect)
+	       ("gnus" message)
+	       (nil captitle)))
+ :keywords   (music)
+ :homepage   "https://github.com/larsmagne/cddb.el")

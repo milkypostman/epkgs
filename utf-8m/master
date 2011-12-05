@@ -1,0 +1,38 @@
+(:created    "20040220"
+ :updated    "20070105"
+ :license    "GPL-2"
+ :authors    (("Seiji Zenitani" . "zenitani@mac.com"))
+ :maintainer ("Seiji Zenitani" . "zenitani@mac.com")
+ :provided   (utf-8m)
+ :keywords   (mac multilingual unicode)
+ :commentary "\
+This package provides a modified utf-8 encoding (utf-8m) for Mac OSX
+hfs plus volume format. By setting utf-8m as the file-name-coding-system,
+emacs can read the following characters in filenames.
+
+ * Japanese Kana characters with Dakuten/Han-Dakuten signs
+ * Korean Hangul characters
+ * Latin characters with diacritical marks (accents, umlauts, tilde, etc.)
+
+Note that utf-8m does not restore the above characters when
+it exports the filenames. Fortunately, it seems that the filesystem
+knows how to deal with such invalid filenames.
+
+In order to use, add the below line to your .emacs file.
+
+  (set-file-name-coding-system 'utf-8m)
+
+
+utf-8m について
+
+Mac OS X の HFS+ ファイルシステムのファイル名を読むための
+修正 UTF8 エンコーディング (utf-8m) を提供します。
+ファイル名を読み込む際に正規化方式を変更するので
+日本語の濁点・半濁点文字とハングル文字、アクセント付きのラテン文字が
+文字化けしないようになります。ファイル名を書き出す際の変換は
+考慮していませんが、ファイルシステム側がうまく処理してくれるようです。
+utf-8m を使用するためには、このファイルを読み込んだのち、
+
+  (set-file-name-coding-system 'utf-8m)
+
+として下さい。")

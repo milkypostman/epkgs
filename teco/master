@@ -1,0 +1,5 @@
+(:summary    "Dale Worley's teco-in-elisp interpreter"
+ :license    "public-domain"
+ :provided   (teco)
+ :required   ((("emacs" backquote)))
+ :wikipage   "TecoInterpreterInElisp")

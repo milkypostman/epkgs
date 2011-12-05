@@ -1,0 +1,15 @@
+(:summary    "Run the aumix program in a buffer"
+ :created    "2006"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Kevin Ryde" . "user42@zip.com.au"))
+ :maintainer ("Kevin Ryde" . "user42@zip.com.au")
+ :provided   (aumix-mode)
+ :required   ((("cl" cl)
+	       ("term" term)))
+ :keywords   (aumix mixer multimedia)
+ :homepage   "http://user42.tuxfamily.org/aumix-mode"
+ :wikipage   "aumix-emacs"
+ :commentary "\
+\"M-x aumix\" runs the aumix sound volume adjuster program in a buffer.
+See the docstrings of `aumix' and `aumix-mode' below.")

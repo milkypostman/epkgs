@@ -1,0 +1,10 @@
+(:summary    "Yet Another Scroll Bar Mode"
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Tomohiro Matsuyama" . "tomo@cx4a.org"))
+ :maintainer ("Tomohiro Matsuyama" . "tomo@cx4a.org")
+ :provided   (yascroll)
+ :required   ((("cl" cl)))
+ :keywords   (convenience)
+ :homepage   "https://github.com/m2ym/yascroll-el")

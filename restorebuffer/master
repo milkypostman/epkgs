@@ -1,0 +1,5 @@
+(:updated    "20070627"
+ :provided   (restorebuffer)
+ :required   ((("load-directory" load-directory)
+	       (nil library-path)))
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/persistence")

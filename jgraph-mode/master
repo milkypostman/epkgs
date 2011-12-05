@@ -1,0 +1,11 @@
+(:summary    "Major mode for Jgraph files"
+ :created    "2006"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Stefan Monnier" . "monnier@iro.umontreal.ca"))
+ :maintainer ("Stefan Monnier" . "monnier@iro.umontreal.ca")
+ :provided   (jgraph-mode)
+ :keywords   (tex wp)
+ :commentary "\
+Simple editing mode for the Jgraph graph plotting tool.
+You can find more info at http://web.eecs.utk.edu/~plank/plank/jgraph/jgraph.html")

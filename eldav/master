@@ -1,0 +1,13 @@
+(:summary    "Yet Another WebDAV interface for Emacsen"
+ :created    "2002"
+ :updated    "2002"
+ :license    "GPL-2"
+ :authors    (("Yuuichi Teranishi" . "teranisi@gohome.org"))
+ :maintainer ("Yuuichi Teranishi" . "teranisi@gohome.org")
+ :provided   (eldav vc-eldav)
+ :required   ((("apel" poe poem)
+	       ("cl" cl)
+	       ("timezone" timezone)))
+ :keywords   (webdav)
+ :homepage   "http://www.gohome.org/eldav"
+ :wikipage   "ElDav")

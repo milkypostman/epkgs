@@ -1,0 +1,14 @@
+(:summary    "Necs mode"
+ :created    "2002"
+ :updated    "2002"
+ :license    "GPL-2"
+ :provided   (nesc-mode)
+ :required   ((("cc-mode" cc-mode)
+	       ("emacs" derived font-lock)))
+ :keywords   (c languages)
+ :commentary "\
+put this in your .emacs:
+
+(autoload 'nesc-mode \"nesc\"
+ \"Major mode for editing Nesc code.\" t)
+(setq auto-mode-alist (cons '( \"\\\\.nc\\\\'\" . nesc-mode ) auto-mode-alist ))")

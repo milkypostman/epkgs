@@ -1,0 +1,14 @@
+(:summary    "Expand almost any known elisp function to a template"
+ :created    "1999"
+ :updated    "1999"
+ :license    "GPL-2"
+ :authors    (("Tom Breton" . "tehom@localhost"))
+ :maintainer ("Tom Breton" . "tehom@localhost")
+ :provided   (tehom-func-args)
+ :required   (((nil local-vars)))
+ :keywords   (extensions)
+ :homepage   "http://www.panix.com/~tehom"
+ :commentary "\
+Known bugs: Because of the way it works, it can fail on functions
+where \"documentation\" returns something that doesn't end at or
+near a function template.")

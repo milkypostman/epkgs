@@ -1,0 +1,6 @@
+(:summary    "Network-shared buffers minor mode"
+ :updated    "20011116"
+ :provided   (shbuf)
+ :required   ((("cl" cl)
+	       ("distel" erlext)))
+ :keywords   (erlang network shared\ buffers))

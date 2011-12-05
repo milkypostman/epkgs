@@ -1,0 +1,38 @@
+(:summary    "Bare-bones hyperlinks in psgml"
+ :created    "1999"
+ :updated    "1999"
+ :license    "GPL-2"
+ :authors    (("Tom Breton" . "tehom@localhost"))
+ :maintainer ("Tom Breton" . "tehom@localhost")
+ :provided   (tehom-psgml-link)
+ :required   ((("cl" cl)
+	       ("psgml" psgml)))
+ :keywords   (hypermedia)
+ :homepage   "http://www.panix.com/~tehom"
+ :commentary "\
+This is a bare-bones hyperlink system.  It does not aspire to be
+XLL. Its humble virtue is that it is here now and works with psgml
+in arbitrary SGML and XML documents.  You don't need to have XLL or
+anything of the sort.
+
+What it does is allow you to specify attributes of elements in your
+various doctypes that will act like local hyperlinks.  IE, when the
+point is in the proper element, M-x tehom-psgml-follow-link will
+bring up the file that the element links to.  
+
+You set this up by setting the value of tehom-psgml-link-list.  The
+easiest way to do this is to customize tehom-psgml-link-list, where
+it should be self-explanatory.
+
+NB, this handles links to local files only.  If someone wants to
+extend this to work with ftap or browse-url or something similar,
+be my guest.
+
+
+To install, 
+  Put tehom-psgml-link somewhere on your load path
+  Set up an autoload for tehom-psgml-follow-link
+  Customize tehom-psgml-link-list
+
+You'll want to re-customize tehom-psgml-link-list every time you
+want another dtd to act like it has hyperlinks.")

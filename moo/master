@@ -1,0 +1,9 @@
+(:summary    "Comint-based emacs interface for MOOs"
+ :created    "1993"
+ :updated    "19931115"
+ :license    "GPL-2"
+ :authors    (("Noah Friedman" . "friedman@prep.ai.mit.edu"))
+ :maintainer ("Noah Friedman" . "friedman@prep.ai.mit.edu")
+ :provided   (moo)
+ :keywords   (extensions games)
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp")

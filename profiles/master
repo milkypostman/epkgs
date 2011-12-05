@@ -1,0 +1,8 @@
+(:created    "2009"
+ :updated    "2009"
+ :license    "GPL-2"
+ :authors    (("Sylvain Bougerel" . "sylvain.bougerel.devel@gmail.com"))
+ :maintainer ("Sylvain Bougerel" . "sylvain.bougerel.devel@gmail.com")
+ :provided   (profiles)
+ :required   ((("emacs" custom)))
+ :wikipage   "Profiles")

@@ -1,0 +1,22 @@
+(:summary    "Generate multi-level website from org"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :provided   (org-website)
+ :required   ((("cl" cl)
+	       ("dirtree" dirtree)
+	       ("org" org-html org-publish)
+	       ("string-template" string-template)))
+ :keywords   (emacs org)
+ :homepage   "https://github.com/renard/org-website"
+ :commentary "\
+Required modules:
+  - `string-template': http://elisp-string-template.git.chezwam.org
+  - `dirtree':
+    http://www.splode.com/~friedman/software/emacs-lisp/src/dirtree.el
+
+This basically setup some hooks to be launched when publishing. Used hooks
+are: `org-publish-before-export-hook' and `org-publish-after-export-hook'.
+
+In addition all variables from `org-website-publish-with-vars' are visible.
+Refer to `org-website-publish-with-vars' for further information.")

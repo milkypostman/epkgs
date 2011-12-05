@@ -1,0 +1,6 @@
+(:summary    "Minor mode for Midje tests"
+ :provided   (clojure-jump-to-file midje-mode midje-mode-praise)
+ :required   ((("clojure-mode" clojure-mode)
+	       ("emacs" newcomment)
+	       ("slime" slime)))
+ :homepage   "https://github.com/dnaumov/midje-mode")

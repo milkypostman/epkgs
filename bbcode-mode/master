@@ -1,0 +1,8 @@
+(:summary    "Major mode to edit bbcode files in Emacs"
+ :created    "2008"
+ :license    "GPL-3"
+ :authors    (("Jason F. McBrayer"))
+ :maintainer ("Jason F. McBrayer")
+ :provided   (bbcode-mode)
+ :homepage   "http://bitbucket.org/jfm/emacs-bbcode"
+ :wikipage   "BbCode")

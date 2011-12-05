@@ -1,0 +1,154 @@
+(:summary    "Extensions to GNU gettext's `po-mode.el'"
+ :created    "20060622"
+ :updated    "20060709"
+ :license    "GPL-2"
+ :authors    (("Gaute Hvoslef Kvalnes" . "gaute@verdsveven.com"))
+ :maintainer ("Gaute Hvoslef Kvalnes" . "gaute@verdsveven.com")
+ :provided   (po-mode+)
+ :required   ((("cl" cl)
+	       ("po-mode" po-mode)))
+ :keywords   (gettext)
+ :commentary "\
+This package is an extension to `po-mode.el', GNU Gettext's major
+mode for editing PO files. It is made for po-mode version 2.01.
+
+Although written, tested and used in Emacs 22.x, po-mode+ might
+work in other versions too.
+
+You may adjust some variables, below, by defining them in your
+`.emacs' file, either directly or through command 'M-x customize'.
+
+Installation:
+
+ Put this file where Emacs can find it, and place the following in
+ your `~/.emacs':
+
+ (autoload 'po-mode \"po-mode+\"
+  \"Major mode for translators to edit PO files\" t)
+
+ Make sure `po-mode.el' is available for Emacs, but don't load it
+ explicitly.
+
+Extensions to po-mode:
+
+ po-mode+ 0.1, 0.2
+
+ `po-update-header' is a generalization of the function that
+ updates 'PO-Revision-Date'. It now updates 'Last-Translator',
+ 'Language-Team' and 'X-Generator' too. `po-translator',
+ `po-language-team' and `po-x-generator' are customizable
+ variables. The function will insert fields that don't already
+ exist.
+
+ `po-msgid-to-msgstr' is changed so that it ignores KDE-style
+ context comments: The first line begins with '_:' and ends with
+ '\\n'. These should never appear in the translation.
+
+ `po-subedit-insert-next-tag' and `po-subedit-insert-next-arg' are
+ useful functions taken from KBabel. Since (XML) tags and arguments
+ normally should be kept verbatim in the translation, it's nice to
+ have an easy way to insert them. C-c C-t inserts the next tag,
+ while C-c C-a inserts the next argument.
+
+ `po-auto-select-mode' provides two alternative workflows.
+ po-mode's original behaviour is invoked by setting this variable
+ to 'by-type, so that `po-auto-select' (SPC) first cycles through
+ the untranslated entries before starting on the fuzzy ones. Since
+ I find it more convenient to translate both untranslated and fuzzy
+ entries in the same run, I prefer 'by-order instead.
+
+ `po-select-entry-number' is bound to 'g'. It asks for an entry
+ number and selects it.
+
+ po-mode+ 0.3
+
+ `po-find-msg' (C-c C-m) searches for a message containing a
+ string. The pattern in `po-ignore-in-search' defines characters to
+ ignore.  This is useful for accelerators, which are typically
+ marked by '&' or '~'.
+
+ `po-find-msgstr' (C-c C-s) searches for a message where the msgstr
+ contains a string. The pattern in `po-ignore-in-search' defines
+ characters to ignore.
+
+ `po-find-msgid' (C-c C-i) searches for a message where the msgid
+ contains a string. The pattern in `po-ignore-in-search' defines
+ characters to ignore.
+
+ `po-replace-in-msgstrs' (C-c C-r) is a function that replaces a
+ string with another in all the msgstrs from the current point to
+ the end of the file.
+
+ po-mode+ 0.4
+
+ If `longlines-mode' is available, it will be used for linewrapping
+ in the subedit buffer.
+
+ Lookup
+
+   There were some unimplemented \"lexicography\" functions in
+   po-mode, probably intended for dictionary lookups. (They've been
+   left unimplemented for years, as far as I can tell.)  I adapted
+   these to my purpose: A generic lookup feature for auxiliary
+   files, translation memories, dictionaries, etc. The search
+   result is displayed in `po-lookup-buffer', which is suggested to
+   be left open in a separate frame. (`po-setup-lookup-frame' will
+   set up such a frame.)
+
+   So far, only the auxiliary search is implemented. It resembles
+   KBabel's auxiliary feature, but is more flexible when it comes
+   to picking the right file. It partly duplicates po-mode's
+   existing auxiliary feature, but I find it more convenient to
+   work with.
+
+   (The lookup features are still very much a work in progress.)
+
+   `po-lookup' (l) looks up the current msgid using the selected
+   lookup method.
+
+   `po-copy-from-lookup' (L) copies the selected lookup result to
+   the current entry. `po-subedit-copy-from-lookup' (C-c C-l) does
+   the same thing while editing a message.
+
+   `po-edit-lookup-entry' (M-l) opens a buffer where you can edit
+   the lookup result, if that is possible.
+
+   `po-select-lookup-method' (M-L) will cycle between the lookup
+   methods as soon as I implement more than just auxiliary search.
+
+Bugfixes to po-mode:
+
+ The fuzzy counter is fixed. Entries that are fuzzy at the same
+ time as being untranslated or obsolete were incorrectly counted as
+ both fuzzy and untranslated or obsolete. These should not be
+ counted as fuzzy. This change makes po-mode agree with
+ msgfmt. (I've never seen fuzzy+untranslated entries, but a FIXME
+ comment in the source code warned against it. Fuzzy+obsolete
+ entries happens all the time, at least in the projects I work on.)
+
+Bugs introduced:
+
+ The customizable variable `po-auto-replace-revision-date' is now
+ meaningless, being replaced by the more general
+ `po-auto-update-header'. I don't know how to remove it without
+ editing `po-mode.el'. Perhaps it should be kept, made into a
+ non-customizable variable? The way I do it now overrides the old
+ preference.
+
+ `po-mode-version' is probably not as nice in XEmacs.
+
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2, or (at your option)
+any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with GNU Emacs; see the file COPYING.  If not, write to the
+Free Software Foundation, 51 Franklin Street, Fifth Floor,
+Boston, MA 02110-1301, USA.")

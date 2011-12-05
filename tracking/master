@@ -1,0 +1,12 @@
+(:summary    "Buffer modification tracking"
+ :created    "2006"
+ :updated    "2006"
+ :license    "GPL-2"
+ :authors    (("Jorgen Schaefer" . "forcer@forcix.cx"))
+ :maintainer ("Jorgen Schaefer" . "forcer@forcix.cx")
+ :provided   (tracking)
+ :required   ((("emacs" easy-mmode)))
+ :commentary "\
+This file provides a way to globally register buffers as being
+modified and scheduled for user review. The user can cycle through
+the buffers using C-c C-SPC")

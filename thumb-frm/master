@@ -1,0 +1,230 @@
+(:summary    "Commands for thumbnail frames"
+ :created    "20041210"
+ :updated    "20110416"
+ :license    "GPL-2"
+ :authors    (("Drew Adams"))
+ :maintainer ("Drew Adams")
+ :provided   (thumb-frm)
+ :required   ((("cl" cl)
+	       ("frame-cmds" frame-cmds))
+	      (("doremi-frm" doremi-frm)))
+ :keywords   (frame icon)
+ :wikipage   "FisheyeWithThumbs"
+ :commentary "\
+Shrink frames to a thumbnail size and restore them again.
+
+ The main command here is `thumfr-thumbify-other-frames', alias
+ `thumfr-fisheye'. It shrinks all frames except the selected frame
+ to a thumbnail size. The thumbnail frames are stacked from top to
+ bottom, left to right on your display. This provides a kind of
+ \"fisheye\" view of the frames you are using. Command
+ `thumfr-dethumbify-all-frames' restores all thumbnails to full
+ size.
+
+ You can also thumbify or dethumbify any individual frame, using
+ commands `thumfr-toggle-thumbnail-frame', `thumfr-thumbify-frame',
+ and `thumfr-dethumbify-frame'. You might want to thumbify the
+ frame of a progressive output buffer, for instance, just to keep
+ an eye on the output as it is produced.
+
+ Command `thumfr-stack-thumbnail-frames' neatly stacks all of the
+ thumbnail frames along the display edge.  You can use it at any
+ time, and it is called automatically by `thumfr-fisheye'.  Which
+ display edge to stack along (left, right, top, bottom), and which
+ direction (up, down, to-left or to-right), is determined by
+ `thumfr-stack-display-edge'.  The stacking order is determined by
+ option `thumfr-sort-function'.  You can turn sorting on and off
+ with command `thumfr-toggle-sort-thumbnail-frame-stack'.
+
+ By default, this library provides thumbifying and dethumbifying as
+ a *replacement* for iconifying and deiconifying.  Loading the
+ library changes the standard commands `iconify-frame' and
+ `iconify-or-deiconify-frame' so that they use thumbnails instead
+ of icons whenever option `thumbify-instead-of-iconify-flag' is
+ non-nil.  To prevent this thumbnail behavior, you can set
+ `thumbify-instead-of-iconify-flag' to nil in your init file.
+ Alternatively, you can deactivate (`ad-deactivate') the advice
+ imposed here on these functions to give them back their original
+ behavior.
+
+ The original behavior of commands `iconify-frame' and
+ `iconify-or-deiconify-frame' is available using commands
+ `really-iconify-frame' and
+ `thumfr-really-iconify-or-deiconify-frame'.  In particular, these
+ commands can be used to iconify, even if you bind [iconify-frame]
+ in `special-event-map' (see below).
+
+ You can iconify or deiconify all thumbnail frames (that is, only
+ the thumbnail frames), to get them out of the way and bring them
+ back.  Use commands `thumfr-iconify-thumbnail-frames' and
+ `thumfr-deiconify-thumbnail-frames' to do this.
+
+ Emacs built-in function `raise-frame' is redefined here to also
+ dethumbify.  The original behavior of `raise-frame' is available
+ in new function `thumfr-only-raise-frame'.
+
+ You can cycle among the visible frames in two ways, applying
+ `thumfr-fisheye' to each in turn.  The first way is using commands
+ `thumfr-fisheye-previous-frame' and `thumfr-fisheye-next-frame'
+ (which you can bind to, for instance, `C-M-prior' and `C-m-next').
+ The second way is using command `thumfr-doremi-thumbnail-frames+'
+ and the arrow keys or mouse wheel.
+
+ To be able to use `thumfr-doremi-thumbnail-frames+', you need
+ library `doremi-frm.el' (which in turn requires libraries
+ `hexrgb.el', `ring+.el', `faces+.el', and `doremi.el').  The only
+ libraries strictly required by `thumb-frm.el' are `frame-fns.el'
+ and `frame-cmds.el'.
+
+ A more comprehensive, lower-level way of substituting thumbifying
+ for iconifying is to do the following in your init file:
+
+   (define-key special-event-map [iconify-frame]
+               'thumfr-thumbify-frame-upon-event)
+
+ In effect, this thumbifies any frame as soon as it is iconified,
+ no matter how it was iconified.  In particular, this will let you
+ use the window-manager \"minimize\" frame button (usually at the
+ upper left or right frame corner) to thumbify.
+
+ If you do that, be aware that `thumbify-instead-of-iconify-flag'
+ will no longer have any effect: Emacs will *always* thumbify
+ instead of iconify (except for functions `really-iconify-*frame',
+ which are designed to counter this).  If you try this behavior and
+ then wish to cancel it, to once again allow iconification, use
+ this code:
+
+ In Emacs 20 or prior:
+   (define-key special-event-map [iconify-frame] 'ignore-event)
+
+ In Emacs 21 or later:
+   (define-key special-event-map [iconify-frame] 'ignore)
+
+
+ Other user options (variables) not mentioned above are these:
+
+   `thumfr-font-difference'             - Zoom of thumbnail frames.
+   `thumfr-frame-parameters'    - Thumbnail frame frame parameters.
+   `thumfr-rename-when-thumbify-flag'   - Rename frame to buffer.
+   `thumfr-stack-display-edge'         - Display edge for stacking.
+   `window-mgr-title-bar-pixel-width'   - Thickness of title bar.
+
+
+ WARNING:
+
+   Thumbnail frames are *FULLY FUNCTIONAL*.  In particular, their
+   buffers are *NOT* read-only in any way.  You can edit their
+   buffers normally, even if you can't see what you're doing
+   :-).  You can also scroll and search their buffers, of course.
+
+
+ Functions defined here:
+
+   `thumfr-cull-thumbnail-frames',
+   `thumfr-deiconify-thumbnail-frames',
+   `thumfr-dethumbify-all-frames', `thumfr-dethumbify-frame',
+   `thumfr-doremi-thumbnail-frames+', `thumfr-fisheye',
+   `thumfr-fisheye-next-frame', `thumfr-fisheye-previous-frame',
+   `thumfr-iconify-thumbnail-frames', `thumfr-only-raise-frame',
+   `thumfr-next-stack-position', `thumfr-really-iconify-frame',
+   `thumfr-really-iconify-or-deiconify-frame',
+   `thumfr-stack-thumbnail-frames', `thumfr-sort-by-name',
+   `thumfr-sort-by-window-id', `thumfr-thumbify-frame',
+   `thumfr-thumbnail-frame-p' `thumfr-thumbify-frame-upon-event',
+   `thumfr-thumbify-other-frames',
+   `thumfr-toggle-sort-thumbnail-frame-stack',
+   `thumfr-toggle-thumbnail-frame'.
+
+
+ User options (variables) defined here:
+
+   `thumfr-font-difference', `thumfr-thumbify-dont-iconify-flag',
+   `thumfr-frame-parameters', `thumfr-rename-when-thumbify-flag',
+   `thumfr-sort-function', `thumfr-stack-display-edge',
+   `window-mgr-title-bar-pixel-width'.
+
+
+ Internal variable defined here:
+
+   `thumfr-non-thumbnail-frames', `thumfr-thumbnail-frames',
+   `thumfr-last-row-show', `thumfr-last-sort-function',
+   `thumfr-next-stack-xoffset', `thumfr-next-stack-yoffset'.
+
+
+ ***** NOTE: The following EMACS functions have been REDEFINED HERE:
+
+ `iconify-frame' - Thumbify if `thumfr-thumbify-dont-iconify-flag'.
+ `iconify-or-deiconify-frame' - Similar to `iconify-frame', plus
+                                dethumbify if already a thumbnail.
+ `raise-frame' - Dethumbify also, if a thumbnail.
+
+
+ ***** NOTE: The following EMACS functions have been ADVISED HERE:
+
+ `fringe-mode', `menu-bar-mode', `scroll-bar-mode',
+ `tool-bar-mode'.
+
+
+ Put this in your init file (`~/.emacs'): (require 'thumb-frm)
+
+ Suggested key bindings:
+
+  (global-set-key [(shift mouse-3)]
+                  'thumfr-toggle-thumbnail-frame)
+  (global-set-key [(shift control mouse-3)]
+                  'thumfr-thumbify-other-frames)
+  (global-set-key [(shift control ?z)]
+                  'thumfr-thumbify-other-frames)
+  (global-set-key [(shift control ?p)]
+                  'thumfr-fisheye-previous-frame)
+  (global-set-key [(shift control ?n)]
+                  'thumfr-fisheye-next-frame)
+  (global-set-key [(control meta ?z)]
+                  'thumfr-really-iconify-or-deiconify-frame)
+
+  ;; Make the window-manager \"minimize\" button thumbify instead.
+  (define-key special-event-map [iconify-frame]
+              'thumfr-thumbify-frame-upon-event)
+
+  ;; Add `thumfr-doremi-thumbnail-frames+' to the Do Re Mi commands
+  ;; - see library `doremi-frm.el'.
+  (unless (fboundp 'doremi-prefix)
+    (defalias 'doremi-prefix (make-sparse-keymap))
+    (defvar doremi-map (symbol-function 'doremi-prefix)
+      \"Keymap for Do Re Mi commands.\"))
+  (define-key global-map \"\\C-xt\"  'doremi-prefix)
+  (define-key global-map \"\\C-xte\"
+              'thumfr-doremi-thumbnail-frames+) ; \"Eye\"
+
+  Keep in mind also that if `thumfr-thumbify-dont-iconify-flag' is
+  non-nil, keys bound to (de-)iconifying commands, such as `C-z',
+  will instead (de-)thumbify.
+
+ See also these libraries for other frame commands:
+
+    `autofit-frame.el' - Automatically fit each frame to its
+                         selected window.  Uses `fit-frame.el'.
+
+    `fit-frame.el'     - 1) Fit a frame to its selected window.
+                         2) Incrementally resize a frame.
+
+    `doremi-frm.el'    - Incrementally adjust frame properties
+                         using arrow keys and/or mouse wheel.
+
+    `frame-cmds.el'    - Miscellaneous frame and window commands.
+
+    `zoom-frm.el'      - Zoom a frame, so that its font becomes
+                         larger or smaller.
+
+ Acknowledgements (thanks):
+   Michael Cadilhac [Michael.Cadilhac-@t-lrde.epita.fr] for a tip
+     on using `discard-input' to effectively nullify
+     `special-event-map' bindings (used in
+     `really-iconify-[or-deiconify]frame').
+
+ TO DO?:
+
+    Make thumbnail frames read-only, to prevent inadvertent
+    changes.  How to do so? Could make all buffers in frame's
+    buffer-list r-o, but that would affect the buffer on
+    non-thumbnail frames too.")

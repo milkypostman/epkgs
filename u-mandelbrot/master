@@ -1,0 +1,10 @@
+(:summary    "A simple fractal browser"
+ :created    "200126"
+ :updated    "20020804"
+ :license    "GPL-2"
+ :authors    (("Ulf Jasper" . "ulf.jasper@web.de"))
+ :maintainer ("Ulf Jasper" . "ulf.jasper@web.de")
+ :provided   (u-mandelbrot)
+ :required   ((("emacs" overlay)))
+ :keywords   (games)
+ :homepage   "http://ulf.epplejasper.de/EmacsFunStuff.html")

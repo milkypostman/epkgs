@@ -1,0 +1,24 @@
+(:summary    "Find perl module at point with ffap"
+ :created    "2009"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Kevin Ryde" . "user42@zip.com.au"))
+ :maintainer ("Kevin Ryde" . "user42@zip.com.au")
+ :provided   (ffap-perl-module)
+ :required   ((("cl" cl)
+	       ("emacs" advice)
+	       ("ffap" ffap)
+	       ("thingatpt" thingatpt)))
+ :keywords   (files)
+ :homepage   "http://user42.tuxfamily.org/ffap-perl-module"
+ :commentary "\
+This spot of code lets M-x ffap find the source file for a Perl module.
+For example Foo::Bar becomes /usr/share/perl5/Foo/Bar.pm or wherever in
+the path.
+
+Variable names or sub-packages are stripped, and a prefix is added if
+unique.  See the `ffap-perl-module-file-at-point' docstring below for
+details.
+
+The lookup is independent of the major mode, so you can be in Man-mode,
+diff-mode, pod-mode or whatever and still go to Perl source.")

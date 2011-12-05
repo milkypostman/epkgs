@@ -1,0 +1,11 @@
+(:summary    "Wiki-like note-taking tool"
+ :created    "2002"
+ :updated    "20090205"
+ :license    "GPL-1"
+ :provided   (action-lock cheat-font-lock gfunc honest-report howm howm-backend howm-cl howm-common howm-date howm-lang-en howm-lang-ja howm-menu howm-menu-en howm-menu-ja howm-misc howm-mode howm-reminder howm-vars howm-version howm-view illusion riffle)
+ :required   ((("cl" cl)
+	       ("emacs" easy-mmode font-lock)
+	       ("gnus" mailcap)
+	       ("migemo" migemo)))
+ :homepage   "http://howm.sourceforge.jp"
+ :wikipage   "HowmMode")

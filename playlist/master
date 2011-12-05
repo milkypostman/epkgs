@@ -1,0 +1,13 @@
+(:summary    "A music file playlist"
+ :created    "2002"
+ :updated    "2002"
+ :license    "GPL-2"
+ :authors    (("Shawn Betts" . "sabetts@vcn.bc.ca"))
+ :maintainer ("Shawn Betts" . "sabetts@vcn.bc.ca")
+ :provided   (playlist)
+ :keywords   (multimedia)
+ :commentary "\
+Maintain a playlist and play songs.
+to run:
+
+M-x playlist RET")

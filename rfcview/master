@@ -1,0 +1,81 @@
+(:summary    "View IETF RFCs with readability-improved formatting"
+ :created    "2002"
+ :updated    "2002"
+ :license    "GPL-3"
+ :authors    (("Neil W. Van Dyke" . "neil@neilvandyke.org"))
+ :maintainer ("Neil W. Van Dyke" . "neil@neilvandyke.org")
+ :provided   (rfcview)
+ :required   ((("goto-addr" goto-addr)
+	       ("view" view)))
+ :homepage   "http://www.loveshack.ukfsn.org/emacs"
+ :wikipage   "RfcView"
+ :commentary "\
+Introduction:
+
+  For historical reasons, IETF Internet RFCs are required to be in a plain
+  ASCII text format that's best-suited for sending directly to a 6-lpi
+  US-letter-size printer.  This makes them suboptimal for viewing on-screen,
+  as you will be doing for countless hours if you're ever doing network
+  programming to one of them.  Fortunately, the ASCII format is usually
+  close to what you, the Emacs zealot, *truly* want -- which is a format
+  suited to more pleasurably viewing the RFC in Emacs.
+
+  The `rfcview' package uses Emacs overlays to add some fontification and
+  hide the page headers and footers (which it replaces with one-line page
+  number references that look like \"(p.1)\", right-justified).  The file is
+  never modified, and you can see the raw ASCII text by pressing `t'.
+
+System Requirements:
+
+  The `rfcview.el' package was first written using FSF GNU Emacs 20.7 on a
+  GNU/Linux system, and is now maintained under Emacs 21.4.  It should work
+  with recent Emacs versions on Unix variants.  `rfcview.el' has not yet
+  been tested with the XEmacs fork of Emacs, and I'd welcome any necessary
+  patches.
+
+Installation:
+
+  1. Put this `rfcview.el' file somewhere in your Emacs Lisp load path.
+
+  2. Add the following lines to your `~/.emacs' file:
+
+         (add-to-list 'auto-mode-alist
+                      '(\"/\\\\(rfc\\\\|std\\\\)[0-9]+\\\\.txt\\\\'\" . rfcview-mode))
+
+         (autoload 'rfcview-mode \"rfcview\" nil t)
+
+     The next time you visit an RFC file, it should be
+     displayed prettily using `rfcview-mode'.  (Do this before turning
+     on `auto-compression-mode', so that the `.gz' extension comes before
+     `.txt' in `auto-mode-alist'; then compressed RFCs will work too.)
+
+  4. Optionally, do `M-x rfcview-customize RET' to customize the mode
+     options.
+
+Things for the Author to Someday Do (but Probably Not):
+
+  * RFC 1700 (STD 2) has unnumbered headings and column-zero body text.  We
+    don't try to cope right now, but we might assume, e.g., that lines in
+    all-caps with preceding and succeeding blank lines are headings.
+
+  * Hide extraneous blank lines.
+
+  * Handle \"Table of Contents\" heading centered, such as in RFC 1035 and RFC
+    1157.
+
+  * Display bibliographic references in other-window
+    vertically-sized to fit only the reference (or min window height).
+
+  * Download RFCs on demand, and cache them.  Probably integrate one of the
+    existing one or two packages that do this.
+
+  * Make an RFCedit mode.
+
+  * Handle multi-line heading like:
+
+        19.6.1.1 Changes to Simplify Multi-homed Web Servers and Conserve IP
+        Addresses
+
+  * Have a stack for (internal) hyperlinks a la Info.
+
+  * Deal with an index (e.g. RFC 3986).")

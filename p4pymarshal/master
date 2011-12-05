@@ -1,0 +1,7 @@
+(:summary    "Read/write p4 python marshalled objects"
+ :created    "20060608"
+ :updated    "20060923"
+ :license    "public-domain"
+ :authors    (("Noah Friedman" . "friedman@splode.com"))
+ :maintainer ("Noah Friedman" . "friedman@splode.com")
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp")

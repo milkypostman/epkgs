@@ -1,0 +1,44 @@
+(:summary    "Major mode for editing AutoHotKey scripts for X/GNU Emacs"
+ :created    "2005"
+ :updated    "2005"
+ :license    "GPL-2"
+ :authors    (("Robert Widhopf-Fenk"))
+ :maintainer ("Robert Widhopf-Fenk")
+ :provided   (ahk-mode)
+ :required   ((("cl" cl)
+	       ("emacs" font-lock)
+	       ("w3" w3)))
+ :keywords   (autohotkey major\ mode)
+ :homepage   "http://www.robf.de/Hacking/elisp"
+ :commentary "\
+AutoHotKey: Automation, Hotkeys and Scripting for Windows at
+http://www.autohotkey.com/ is a cool tool to make daily life
+with Windows easier or even fun!
+
+This is a X/GNU Emacs mode for editing AutoHotKey scripts.
+
+Place this file somewhere in your load-path, byte-compile it and add the
+following line to your ~/.xemacs/init.el resp. ~/.emacs:
+
+(setq ahk-syntax-directory \"PATHTO/AutoHotkey/Extras/Editors/Syntax/\")
+(add-to-list 'auto-mode-alist '(\"\\\\.ahk$\" . ahk-mode))
+(autoload 'ahk-mode \"ahk-mode\")
+
+The first time ahk-mode.el is started it will ask you for the path to the
+Syntax directory if not set already.  You will find it as a subdirectory
+of your AHK installation.
+
+For example if you installed AHK at C:\\Programms\\AutoHotKey it will be
+C:/Programms/AutoHotKey/Extras/Editors/Syntax or a corresponding cygwin
+path!
+
+When opening a script file you will get:
+- syntax highlighting
+- indention, completion and command help (bound to \"TAB\")
+- insertion of command templates (bound to \"C-c C-i\") 
+- electric braces (typing \"{\" will also insert \"}\" and place point in
+  between) 
+- lookup the docs on a command via w3 (place point on command and type
+  \"C-c C-h\")
+
+Please send bug-reports or feature suggestions to hackATrobfDOTde.")

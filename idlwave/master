@@ -1,0 +1,136 @@
+(:summary    "IDL editing mode for GNU Emacs"
+ :created    "1999"
+ :updated    "2011"
+ :license    "GPL-3"
+ :provided   (idlw-complete-structtag idlw-help idlw-roprompt idlw-shell idlw-toolbar idlwave idlwave-help idlwave-shell idlwave-toolbar)
+ :required   ((("browse-url" browse-url)
+	       ("cl" cl)
+	       ("emacs" comint overlay timer wid-edit widget)
+	       ("imenu" imenu)
+	       ("xml" xml)))
+ :keywords   (languages)
+ :homepage   "http://idlwave.org"
+ :wikipage   "IdlMode"
+ :commentary "\
+IDLWAVE enables feature-rich development and interaction with IDL,
+the Interactive Data Language, produced by Research Systems, Inc.
+It provides a compelling, full-featured alternative to the IDLDE
+development environment bundled with IDL.
+
+In the remotely distant past, based on pascal.el, though bears
+little resemblance to it now.
+
+Incorporates many ideas, such as abbrevs, action routines, and
+continuation line indenting, from wave.el.
+wave.el original written by Lubos Pochman, Precision Visuals, Boulder.
+
+See the mode description (\"C-h m\" in idlwave-mode or \"C-h f idlwave-mode\")
+for features, key bindings, and info.
+Also, Info format documentation is available with `M-x idlwave-info'
+
+New versions of IDLWAVE, documentation, and more information
+available from:
+                http://idlwave.org
+
+INSTALLATION
+============
+
+Follow the instructions in the INSTALL file of the distribution.
+In short, put this file on your load path and add the following
+lines to your .emacs file:
+
+(autoload 'idlwave-mode \"idlwave\" \"IDLWAVE Mode\" t)
+(autoload 'idlwave-shell \"idlw-shell\" \"IDLWAVE Shell\" t)
+(setq auto-mode-alist (cons '(\"\\\\.pro\\\\'\" . idlwave-mode) auto-mode-alist))
+
+
+SOURCE
+======
+
+The newest version of this file is available from the maintainer's
+Webpage:
+
+  http://idlwave.org
+
+DOCUMENTATION
+=============
+
+IDLWAVE is documented online in info format.  A printable version
+of the documentation is available from the maintainers webpage (see
+SOURCE).
+
+
+ACKNOWLEDGMENTS
+===============
+
+ Thanks to the following people for their contributions and comments:
+
+   Ulrik Dickow <dickow_at_nbi.dk>
+   Eric E. Dors <edors_at_lanl.gov>
+   Stein Vidar H. Haugan <s.v.h.haugan_at_astro.uio.no>
+   David Huenemoerder <dph_at_space.mit.edu>
+   Kevin Ivory <Kevin.Ivory_at_linmpi.mpg.de>
+   Dick Jackson <dick_at_d-jackson.com>
+   Xuyong Liu <liu_at_stsci.edu>
+   Simon Marshall <Simon.Marshall_at_esrin.esa.it>
+   Laurent Mugnier <mugnier_at_onera.fr>
+   Lubos Pochman <lubos_at_rsinc.com>
+   Bob Portmann <portmann_at_al.noaa.gov>
+   Patrick M. Ryan <pat_at_jaameri.gsfc.nasa.gov>
+   Marty Ryba <ryba_at_ll.mit.edu>
+   Matthew Savoie <savoie_at_nsidc.org>
+   Paul Sorenson <aardvark62_at_msn.com>
+   Phil Sterne <sterne_at_dublin.llnl.gov>
+   Phil Williams <williams_at_irc.chmcc.org>
+   Nathaniel Cunningham
+
+CUSTOMIZATION:
+=============
+
+IDLWAVE has extensive customize support; to learn about the
+variables which control the mode's behavior, use `M-x
+idlwave-customize'.
+
+You can set your own preferred values with Customize, or with Lisp
+code in .emacs.  For an example of what to put into .emacs, check
+the TexInfo documentation or see a complete .emacs available at the
+website.
+
+KNOWN PROBLEMS:
+==============
+
+  IDLWAVE support for the IDL-derived PV-WAVE CL language of Visual
+  Numerics, Inc. is growing less and less complete as the two
+  languages grow increasingly apart.  The mode probably shouldn't
+  even have \"WAVE\" in its title, but it's catchy, and was required
+  to avoid conflict with the CORBA idl.el mode.  Caveat WAVEor.
+
+  Moving the point backwards in conjunction with abbrev expansion
+  does not work as I would like it, but this is a problem with
+  emacs abbrev expansion done by the self-insert-command.  It ends
+  up inserting the character that expanded the abbrev after moving
+  point backward, e.g., \"\\cl\" expanded with a space becomes
+  \"LONG( )\" with point before the close paren.  This is solved by
+  using a temporary function in `post-command-hook' - not pretty, 
+  but it works.
+
+  Tabs and spaces are treated equally as whitespace when filling a
+  comment paragraph.  To accomplish this, tabs are permanently
+  replaced by spaces in the text surrounding the paragraph, which
+  may be an undesirable side-effect.  Replacing tabs with spaces is
+  limited to comments only and occurs only when a comment
+  paragraph is filled via `idlwave-fill-paragraph'.
+
+  Muti-statement lines (using \"&\") on block begin and end lines can
+  ruin the formatting.  For example, multiple end statements on a
+  line: endif & endif.  Using \"&\" outside of block begin/end lines
+  should be okay.
+
+  Determining the expression at point for printing and other
+  examination commands is somewhat rough: currently only fairly
+  simple entities are found.  You can always drag-select or examine
+  a pre-selected region.
+
+  When forcing completion of method keywords, the initial
+  query for a method has multiple entries for some methods.  Would
+  be too difficult to fix this hardly used case.")

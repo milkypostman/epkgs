@@ -1,0 +1,5 @@
+(:created    "2002"
+ :updated    "2002"
+ :license    "GPL"
+ :provided   (ifile-gnus)
+ :required   ((("gnus" gnus-int gnus-util))))

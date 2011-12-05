@@ -1,0 +1,22 @@
+(:summary    "Mode for editing SpinAsm code"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Sebastian Gutsfeld" . "sebastian.gutsfeld@gmail.com"))
+ :maintainer ("Sebastian Gutsfeld" . "sebastian.gutsfeld@gmail.com")
+ :provided   (spinasm-mode)
+ :keywords   (languages tools)
+ :homepage   "https://github.com/segoh/spinasm-mode"
+ :commentary "\
+spinasm-mode extends asm-mode with additionaly functionality and
+syntax highlighting for SpinSemi SpinAsm code.
+
+To use this mode, put spinasm-mode.el somewhere on your load-path.
+Then add this to your .emacs:
+
+   (require 'spinasm-mode)
+   (add-to-list 'auto-mode-alist '(\"\\\\.asm$\" . spinasm-mode))
+   (add-to-list 'auto-mode-alist '(\"\\\\.spn$\" . spinasm-mode))
+
+NOTE: Remember to change `spinasm-conv-program' and
+`spinasm-assemble-program' with its options `spinasm-assemble-options'.")

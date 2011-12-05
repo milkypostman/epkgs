@@ -1,0 +1,35 @@
+(:summary    "Functions for quickly navigating directory trees with one-key menus"
+ :created    "20100921"
+ :updated    "20100921"
+ :license    "GPL-3"
+ :authors    (("Joe Bloggs" . "vapniks@yahoo.com"))
+ :maintainer ("Joe Bloggs" . "vapniks@yahoo.com")
+ :provided   (one-key-dir)
+ :required   ((("one-key" one-key)))
+ :keywords   (directories one-key)
+ :commentary "\
+Functions for quickly navigating directory trees with one-key menus
+
+`one-key-dir-visit' can be used to navigate a directory tree and apply functions 
+ to files. It's not an interactive function, so you should write wrapping functions
+ yourself. You can refer to `one-key-dir/find-file' as an example, which can be
+ used to navigate to and open a file using one-key.
+
+NOTE: hidden files and directories are excluded from the one-key menus generated, 
+as are backup files (files whose names begin with \"~\"). This is to keep the number of
+items in the one-key menus small enough so that enough keys can be generated.
+Also note that if the number of items is large they may not all fit in the viewing area
+of the one-key menu. In this case you can use the UP/DOWN arrow keys to scroll the menu 
+up and down to view the rest of the items.
+
+Installation:
+
+Put one-key-dir.el in a directory in your load-path, e.g. ~/.emacs.d/
+You can add a directory to your load-path with the following line in ~/.emacs
+(add-to-list 'load-path (expand-file-name \"~/elisp\"))
+where ~/elisp is the directory you want to add 
+(you don't need to do this for ~/.emacs.d - it's added by default).
+
+Add the following to your ~/.emacs startup file.
+
+(require 'one-key-dir)")

@@ -1,0 +1,7 @@
+(:created    "1985"
+ :updated    "1987"
+ :license    "GPL"
+ :provided   (reportmail)
+ :required   ((("emacs" timer)
+	       ("itimer" itimer)))
+ :homepage   "http://www.cis.upenn.edu/~bcpierce/papers/index.shtml#Emacs%20Hacks")

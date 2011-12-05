@@ -1,0 +1,53 @@
+(:created    "1998"
+ :updated    "19990623"
+ :license    "GPL-2"
+ :authors    (("Holger Schauer" . "holger.schauer@gmx.de"))
+ :maintainer ("Holger Schauer" . "holger.schauer@gmx.de")
+ :provided   (header-action)
+ :keywords   (mail utils)
+ :commentary "\
+This mainly defines a function `header-action' which should be
+hooked into `mail-send-hook', `news-inews-hook' and `message-send-hook'.
+It will reference the variable `header-action-list' to try to
+match one of the headers of the message you have composed and to
+execute some given command.
+For example, to insert some specific signature or using an other
+mail-address when posting to newsgroups, I use:
+
+(setq header-action-list
+     '((\"To:\"
+	  (\"foo\" 
+	      (lambda ()
+             (make-variable-buffer-local 'mail-signature-file)
+             (setq mail-signature-file \"~/.signature-foo\")
+		(mail-signature)
+		(message \"Mail to foo is underway !\"))))
+	(\"Newsgroups:\"
+	  (\"de\\\\.comp\\\\.os\\\\.linux\\\\..*\"
+	      (lambda ()
+		(message \"Found Linux-Group, changing mail-address\")
+		(make-variable-buffer-local 'user-mail-address)
+		(setq user-mail-address \"Holger.Schauer@gmx.de\"))))))
+
+For adding Fidonet-Style X-Comment-To: Header only in fidonet,
+one could use something along the following lines:
+(setq header-action-list
+ '((\"Newsgroups:\" ; matche alle Gruppen mit \"fido.\" am Anfang
+    (\"fido\\\\..*\" 
+     (lambda ()
+	  (if sc-attributions
+	    (save-excursion 
+	      (mail-position-on-field \"X-Comment-To\")
+	      (insert (cdr (assoc \"sc-author\" sc-mail-info)))))
+	(make-variable-buffer-local 'user-mail-address)
+	(setq user-mail-address 
+	      \"Holger.Schauer@p1.f2.n3.z4.fidonet.org\"))))))
+This solution requires the use of supercite and sendmail.el.
+
+Installation:
+Put this file somewhere where Emacs can find it and add the following
+lines to your .emacs:
+(autoload 'header-action \"header-action\" t)
+(add-hook 'mail-send-hook 'header-action)
+(add-hook 'message-send-hook 'header-action)
+And, of course, you will need to specify some header actions....")

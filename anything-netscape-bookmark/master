@@ -1,0 +1,22 @@
+(:summary    "Anything interface for netscape format bookmark file"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-2"
+ :provided   (anything-netscape-bookmark)
+ :required   ((("anything" anything)
+	       ("cl" cl)))
+ :keywords   (bookmark browse netscape url)
+ :homepage   "https://github.com/tm8st/emacs-anything-netscape-bookmark"
+ :commentary "\
+Chromeなどのブラウザからエクスポートしたブックマークファイルの内容を、
+anythingするためのanything-sourceです。
+エクスポートされたファイル形式が [NETSCAPE-Bookmark-file-1] だったためこの名前になっています。
+
+作成にあたって、
+anything-hatena-bookmark(http://github.com/k1LoW/anything-hatena-bookmark)を参考にさせていただきました。
+
+設定例
+
+(require 'anything-netscape-bookmark)
+(global-set-key (kbd \"C-q C-a C-b\") 'anything-netscape-bookmark)
+(global-set-key (kbd \"C-q C-a C-v\") 'anything-netscape-bookmark-get-dump)")

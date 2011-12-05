@@ -1,0 +1,17 @@
+(:summary    "Extensions to `c-mode.el' & `cc-mode.el'"
+ :created    "19990830"
+ :updated    "20110103"
+ :license    "GPL-2"
+ :authors    (("Drew Adams"))
+ :maintainer ("Drew Adams")
+ :provided   (cc-mode+)
+ :required   ((("cc-mode" cc-mode)
+	       ("cl" cl))
+	      (("imenu+" imenu+)))
+ :keywords   (c programming)
+ :commentary "\
+Extensions to `c-mode.el' & `cc-mode.el'.
+
+
+Note: This code is quite old, and is likely obsolete now.  You
+      might find it useful in some way to mine - or not. ;-)")

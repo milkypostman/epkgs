@@ -1,0 +1,6 @@
+(:authors    (("Bryan Kyle" . "bryan.kyle@gmail.com"))
+ :maintainer ("Bryan Kyle" . "bryan.kyle@gmail.com")
+ :provided   (inf-js)
+ :required   ((("compile" compile)
+	       ("emacs" comint)))
+ :homepage   "https://github.com/bkyle/inf-js")

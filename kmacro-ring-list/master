@@ -1,0 +1,29 @@
+(:summary    "List keyboard macros in a buffer"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Leo"))
+ :maintainer ("Leo")
+ :provided   (kmacro-ring-list)
+ :required   ((("cl" cl)
+	       ("ewoc" ewoc)
+	       ("kmacro" kmacro)
+	       ("pp" pp)))
+ :keywords   (convenience tools)
+ :commentary "\
+In the course of editing text in Emacs a handful of keyboard macros
+(kmacros) may be gathered for some repetitive but often trivial
+tasks. Incidentally they are not significant enough to deserve a
+name and it is best to leave them in kmacro ring. However for the
+time being, the facility provided by Emacs is not intuitive even
+for a small number of kmacros. This little package hopefully will
+make such a task straightforward by displaying the list of kmacros
+nicely in a buffer as well as offering key bindings to manipulate
+them. The most useful function, in my view, is hitting RET to set
+the kmacro at point to be the current one. The main entry function
+is `kmacro-ring-list' and you may bind it to a key as in this
+example:
+
+   (global-set-key (kbd \"<f5>\") 'kmacro-ring-list)
+
+Comments and bug fixes are welcome.")

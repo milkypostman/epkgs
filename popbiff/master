@@ -1,0 +1,10 @@
+(:summary    "Checks for mail using POP3"
+ :created    "1996"
+ :updated    "19961022"
+ :license    "GPL-2"
+ :authors    (("Dominique de Waleffe" . "ddw@acm.org"))
+ :maintainer ("Dominique de Waleffe" . "ddw@acm.org")
+ :provided   (popbiff)
+ :required   ((("ange-ftp" ange-ftp)
+	       ("cl" cl)))
+ :keywords   (mail tools))

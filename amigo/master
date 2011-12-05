@@ -1,0 +1,9 @@
+(:summary    "Interface with friendfeed.com"
+ :created    "20080709"
+ :updated    "2008"
+ :license    "GPL-2"
+ :authors    (("Andrew Gwozdziewycz" . "web@apgwoz.com"))
+ :maintainer ("Andrew Gwozdziewycz" . "web@apgwoz.com")
+ :provided   (amigo)
+ :required   ((("url" url url-http)))
+ :keywords   (comm friendfeed))

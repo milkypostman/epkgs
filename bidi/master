@@ -1,0 +1,18 @@
+(:summary    "Bidi support for Emacs"
+ :created    "2001"
+ :updated    "20011121"
+ :license    "GPL-2"
+ :authors    (("Alex Schroeder" . "alex@gnu.org"))
+ :maintainer ("Alex Schroeder" . "alex@gnu.org")
+ :provided   (bidi)
+ :keywords   (wp)
+ :commentary "\
+This is modelled after characters.el.  At the moment, however, we
+don't have categories assigned, so we must create them ourselves.
+The new categories are identified by a character, like all other
+categories.  We store them in the following variables.
+
+The existing categories and syntax tables are not enough to resolve
+bidi issues: Some of these categories specify that the \"real\"
+category must be determined from context.  See the Unicode Standard
+Annex #9, available from http://www.unicode.org/unicode/reports/tr9/.")

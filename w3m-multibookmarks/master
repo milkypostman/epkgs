@@ -1,0 +1,8 @@
+(:summary    "Add lynx-style multi-bookmarks and functionality"
+ :created    "2007"
+ :updated    "2007"
+ :license    "GPL-2"
+ :provided   (w3m-multibookmarks)
+ :required   ((("cl" cl)
+	       ("w3m" w3m w3m-util)))
+ :homepage   "http://www.well.com/~discover")

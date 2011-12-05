@@ -1,0 +1,32 @@
+(:summary    "Use org for an email database"
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Nic Ferrier" . "nferrier@ferrier.me.uk"))
+ :maintainer ("Nic Ferrier" . "nferrier@ferrier.me.uk")
+ :provided   (org-email)
+ :required   ((("ert" ert)))
+ :keywords   (lisp)
+ :homepage   "https://github.com/nicferrier/org-email"
+ :commentary "\
+This is a simple org-mode add on that allows the use of org mode as
+an email database.
+
+Store emails in org structure like this:
+
+* Nic Ferrier
+** email
+*** nferrier@gnu.org
+
+Source code
+
+org-email can be found here
+  http://github.com/nicferrier/org-email
+
+Style note
+
+This codes uses the Emacs style of:
+
+   org-email--private-function
+
+for private functions and for private variables.")

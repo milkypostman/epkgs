@@ -1,0 +1,8 @@
+(:summary    "Prettifies your code by removing needless clutter"
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-2"
+ :authors    (("Quildreen Motta" . "quildreen@gmail.com"))
+ :maintainer ("Quildreen Motta" . "quildreen@gmail.com")
+ :provided   (parfait-mode)
+ :homepage   "https://github.com/killdream/parfait-mode")

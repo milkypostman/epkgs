@@ -1,0 +1,22 @@
+(:summary    "Protect your buffers from wandering cats"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :provided   (cat-safe)
+ :homepage   "https://github.com/skeeto/cat-safe"
+ :commentary "\
+Two steps,
+
+  1. Copy this file to somewhere in your load-path.
+
+  2. Add the following line to your .emacs file,
+
+    (require 'cat-safe)
+
+If you have a cat you may sometimes find that your cat has wandered
+across your keyboard, typing garbage into whatever application has
+focus. This script will protect your Emacs buffers from this by
+detecting cat-like typing and switching to a junk buffer, sending
+keystrokes there instead.
+
+To return to your work, just kill the junk buffer.")

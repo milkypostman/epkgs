@@ -1,0 +1,11 @@
+(:created    "2011"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("kitokitoki" . "mori.dev.asdf@gmail.com"))
+ :maintainer ("kitokitoki" . "mori.dev.asdf@gmail.com")
+ :provided   (anything-howm)
+ :required   ((("anything" anything anything-match-plugin anything-migemo)
+	       ("cl" cl)
+	       ("howm" howm howm-menu)))
+ :keywords   (anything howm)
+ :homepage   "https://github.com/wakaran/anything-howm")

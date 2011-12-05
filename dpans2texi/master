@@ -1,0 +1,37 @@
+(:summary    "Convert the ANSI Common Lisp draft to Texinfo"
+ :created    "20040301"
+ :updated    "2008"
+ :license    "GPL-2"
+ :authors    (("Jesper Harder" . "harder@phys.au.dk"))
+ :maintainer ("Jesper Harder" . "harder@phys.au.dk")
+ :keywords   (documentation lisp)
+ :homepage   "http://www.phys.au.dk/~harder/dpans.html"
+ :commentary "\
+This program converts the TeX sources for the draft proposed ANSI
+Common Lisp standard to Texinfo.  The TeX sources are available
+from ftp://parcftp.xerox.com/pub/cl/dpANS3 and
+ftp://parcftp.xerox.com/pub/cl/dpANS3R
+
+It's by no means a general TeX to Texinfo converter -- the
+conversion is only doable because most of the draft is written with
+a set of mostly semantic macros.  In the cases where the draft
+reverts to basic TeX, we mostly bail out, see `dp-special-cases'.
+
+The simpler TeX macros are implemented as Texinfo macros in
+`dp.texi' (`dpi.texi' and `dph.texi' contain macros that should be
+done differently for Info and HTML).
+
+`makeinfo' isn't multibyte clean, so we have to map multibyte chars
+to unused 8bit chars, and post-process the Info files with `dp-tr'.
+This isn't necessary for HTML.
+
+To use `C-h C-i' (`info-lookup-symbol') to look up the symbol at
+point in the manual, add the following to your .emacs:
+
+(require 'info-look)
+
+(info-lookup-add-help
+ :mode 'lisp-mode
+ :regexp \"[^][()'\\\" \\t\\n]+\"
+ :ignore-case t
+ :doc-spec '((\"(ansicl)Symbol Index\" nil nil nil)))")

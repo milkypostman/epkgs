@@ -1,0 +1,6 @@
+(:summary    "Help get Bitlbee (http://www.bitlbee.org) up and running"
+ :created    "2008"
+ :updated    "2008"
+ :license    "as-is"
+ :provided   (bitlbee)
+ :wikipage   "BitlBee")

@@ -1,0 +1,12 @@
+(:summary    "Simple festival extension for festival.el"
+ :created    "20080719"
+ :updated    "20080719"
+ :license    "GPL-3"
+ :authors    (("Andy Stewart" . "lazycat.manatee@gmail.com"))
+ :maintainer ("Andy Stewart" . "lazycat.manatee@gmail.com")
+ :provided   (festival-extension)
+ :required   ((("festival" festival)
+	       ("thingatpt" thingatpt)))
+ :keywords   (festival)
+ :commentary "\
+Some simple extension for festival.el")

@@ -1,0 +1,6 @@
+(:summary    "Major mode for keeping a simple plain-text gradebook"
+ :updated    "20070125"
+ :authors    (("Hans Halvorson (www.princeton.edu/~hhalvors)"))
+ :maintainer ("Hans Halvorson (www.princeton.edu/~hhalvors)")
+ :provided   (gradebook)
+ :required   ((("thingatpt" thingatpt))))

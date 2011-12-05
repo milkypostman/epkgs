@@ -1,0 +1,8 @@
+(:updated    "20050204"
+ :license    "GPL"
+ :provided   (fsharp fsharp-font fsharp-indent inf-fsharp)
+ :required   ((("cl" cl)
+	       ("compile" compile)
+	       ("emacs" comint custom font-lock)
+	       ("info-look" info-look)))
+ :homepage   "http://sourceforge.net/projects/fsharp-mode")

@@ -1,0 +1,13 @@
+(:summary    "Warn about tabs and more in texinfo"
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-3"
+ :authors    (("Kevin Ryde" . "user42@zip.com.au"))
+ :maintainer ("Kevin Ryde" . "user42@zip.com.au")
+ :provided   (texinfo-warn)
+ :required   ((("emacs" overlay)))
+ :keywords   (tex)
+ :commentary "\
+`texinfo-warn-enable' puts a warning face overlay on tabs and on @: or })
+at the end of a line, to warn you that those things are not handled well
+by makeinfo.  See the `texinfo-warn-enable' docstring below for more.")

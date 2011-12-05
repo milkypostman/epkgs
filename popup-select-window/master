@@ -1,0 +1,15 @@
+(:summary    "Selecting a window by popup-menu*"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("HAMANO Kiyoto" . "khiker.mail@gmail.com"))
+ :maintainer ("HAMANO Kiyoto" . "khiker.mail@gmail.com")
+ :provided   (popup-select-window)
+ :required   ((("popup" popup)))
+ :keywords   (popup select-window window)
+ :commentary "\
+Extend a `select-window'.
+
+Requirement:
+
+* popup.el http://github.com/m2ym/auto-complete")

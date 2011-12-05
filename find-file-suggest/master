@@ -1,0 +1,7 @@
+(:summary    "Adaptive filename suggestions based on"
+ :created    "2008"
+ :authors    (("Christian Jauvin" . "cjauvin@gmail.com"))
+ :maintainer ("Christian Jauvin" . "cjauvin@gmail.com")
+ :provided   (find-file-suggest)
+ :homepage   "http://code.google.com/p/find-file-suggest"
+ :wikipage   "FindFileSuggest")

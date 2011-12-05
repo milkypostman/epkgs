@@ -1,0 +1,22 @@
+(:summary    "Judge indent and tab widths"
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("yascentur" . "screenname@gmail.com"))
+ :maintainer ("yascentur" . "screenname@gmail.com")
+ :provided   (judge-indent)
+ :required   ((("cl" cl)))
+ :keywords   (indent tab)
+ :homepage   "https://github.com/yascentur/judge-indent-el"
+ :commentary "\
+The `judge-indent-mode' distinguish, soon after finding file,
+indent and tab widths into following 9 (strictly 7) patterns.
+You can easily write your own code without breaking existing indent style.
+
+      \\  indent
+       \\  2 4 8
+    tab \\------
+      2 | U - -
+      4 | X U -
+      8 | X X U <- It cannot distinguish between `U's.
+    nil | X X X")

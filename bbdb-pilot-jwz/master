@@ -1,0 +1,54 @@
+(:summary    "Bbdb to palmos address book conduit"
+ :created    "20000121"
+ :updated    "20010619"
+ :license    "GPL-2"
+ :maintainer ("Noah Friedman" . "friedman@splode.com")
+ :provided   (bbdb-pilot-jwz)
+ :required   ((("bbdb" bbdb)
+	       ("cl" cl)))
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
+ :commentary "\
+pilot-addresses expects a file with the following 19 fields:
+
+   Last Name
+   First Name
+   Title
+   Company
+   Named Field 1 (default: Work)
+   Named Field 2 (default: Home)
+   Named Field 3 (default: Fax)
+   Named Field 4 (default: Other)
+   Named Field 5 (default: E-mail)
+   Address
+   City
+   State
+   Zip
+   Country
+   Custom 1
+   Custom 2
+   Custom 3
+   Custom 4
+   Note
+
+The \"named fields\" are the ones that have a field title that can be set
+with a popup menu.  The available titles are:
+
+   Work
+   Home
+   Fax
+   Other
+   E-mail
+   Main
+   Pager
+   Mobile
+
+A record in the file consists of 19 fields followed by a newline.
+Field values are enclosed in double-quotes and are separated by commas.
+The \"named\" fields may also be preceeded by the field name and a
+semicolon, e.g.:
+   \"Home\";\"(415) 555-1212\",
+
+Strings may contain newlines, and are read with backslash-decoding
+(for \\n, \\t and so on.)
+
+Embedded quotes are double-quoted in csv output, e.g. \" -> \"\"")

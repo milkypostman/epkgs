@@ -1,0 +1,160 @@
+(:summary    "Interface between acronym files and Emacs/Gnus"
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-2"
+ :authors    (("Ralf Wachinger" . "rwachinger@gmx.de"))
+ :maintainer ("Ralf Wachinger" . "rwachinger@gmx.de")
+ :provided   (rw-acronyms)
+ :keywords   (acronym gnus)
+ :commentary "\
+rw-acronyms.el is an interface between acronym files and Emacs/Gnus.
+It can parse plain text acronym files and show the explanations for
+the acronyms, which are included in the given acronym files.
+
+A big compilation is V.E.R.A. with over 11000 entries,
+see ftp://ftp.gnu.org/gnu/vera/ or http://home.snafu.de/ohei/FTP
+You can use it with rw-acronyms.el, for the configuration see below.
+
+Additionally you can use other files, resp. you can create your own files.
+
+Save rw-acronyms.el in a convenient directory, preferably in
+your `load-path'. Add the following to your `user-init-file':
+
+  (require 'rw-acronyms)
+
+When you have the file vera.txt (this is the file you can make
+with the scripts makevera and vera.pl) and an own file, e.g.
+one with entries with the separator \"=\". Configure it as follows,
+manually or better with customize (group `rw-acronyms'):
+
+  (setq rw-acronyms-files-data
+        '((\"<full-path>/own-file.txt\" iso-8859-1 \"=\" nil)
+          (\"<full-path>/vera.txt\" iso-8859-1 nil 13)))
+
+For Gnus you can add key bindings to your `gnus-init-file':
+
+  (define-key gnus-summary-mode-map \"vya\"
+    'rw-acronyms-buttons-gnus-add-hook)
+  (define-key gnus-summary-mode-map \"vyr\"
+    'rw-acronyms-buttons-gnus-remove-hook)
+  (define-key gnus-summary-mode-map \"vyb\"
+    'rw-acronyms-buffer-gnus)
+  (define-key gnus-summary-mode-map \"vye\"
+    'rw-acronyms-erase-buffer)
+
+\"vyb\": Creates an buffer that contains the found acronyms and explanations
+from the article buffer, and switches to the new buffer in view mode.
+Typing \"q\" switches back to the summary buffer. Every function call
+adds new text at the end of the acronym buffer.
+
+\"vya\": Add an hook that buttonize the found acronyms in the article buffer,
+and shows the explanations in the minibuffer, when you point on
+a created button with the mouse cursor, or when you go to the button
+with the TAB-key. \"vyr\" removes the hook. The hook method is an alternative
+to the extra buffer method. The function has to be called only once.
+
+Instead of calling the function interactively, you can add the following
+to your `gnus-init-file' from rw-acronyms.el v0.3 on:
+
+  (rw-acronyms-buttons-gnus-add-hook)
+
+A possible menu item for Gnus in GNU Emacs (requires easy-menu):
+
+  (easy-menu-add-item
+   gnus-summary-mode-map
+   '(\"menu-bar\" \"Article\")
+   '(\"Acronyms\"
+     [\"buffer with acronyms\" rw-acronyms-buffer-gnus t]
+     [\"erase acronym buffer\" rw-acronyms-erase-buffer
+      (get-buffer rw-acronyms-buffer-name)]
+     [\"add hook\" rw-acronyms-buttons-gnus-add-hook
+      (not rw-acronyms-hook-added)]
+     [\"remove hook\"  rw-acronyms-buttons-gnus-remove-hook
+      rw-acronyms-hook-added]))
+
+For arbitrary Emacs buffers you can add key bindings
+to your `user-init-file':
+
+  (global-set-key \"\\C-cyb\" 'rw-acronyms-buffer-general)
+  (global-set-key \"\\C-cye\" 'rw-acronyms-erase-buffer)
+  (global-set-key \"\\C-cyc\" 'rw-acronyms-clear-data)
+  (global-set-key \"\\C-cyn\" 'rw-acronyms-read-explanations-anew)
+  (global-set-key \"\\C-cyl\" 'rw-acronyms-look-up)
+  (global-set-key \"\\C-cyt\" 'rw-acronyms-look-up-current)
+  (global-set-key [C-M-mouse-1] 'rw-acronyms-look-up-current-tooltip)
+
+\"\\C-cyb\": Similar to \"vyb\", but the current buffer is searched for acronyms.
+
+The following functions are intended for given acronyms:
+\"\\C-cyl\": The acronyms that you type into the minibuffer are searched.
+\"\\C-cyt\": The acronym that is marked or at point in the buffer is searched.
+\"[C-M-mouse-1]\": Like \"\\C-cyt\", when the mouse is used.
+
+The first call of the functions that search for acronyms takes a few
+seconds with big acronym files, because the data is read into the memory
+(if not already done) for an efficient access. If you add new files
+to `rw-acronyms-files-data', or the file contents are changed, call
+
+  M-x rw-acronyms-read-explanations-anew RET
+
+afterwards, so that the new data is read into the memory.
+
+Tips for setting up your own acronym file:
+
+Choose a separator (a string), which is not found in the acronyms,
+or write the explanations in a fixed column (use SPACEs, not TABs).
+You can configure `rw-acronyms-files-data' to reflect that.
+When you include abbreviations, write it in the file without spaces
+and upper-case (it's the best anyway for acronyms to be found),
+for example \"E.G.\", not \"e.g.\" or \"e. g.\", see point 3. e).
+
+Search strategy used
+in function `rw-acronyms-explanations' and `rw-acronyms-get-explanation':
+
+1. Go to every character sequence resp. possible acronym in buffer.
+2. Search it in `rw-acronyms-hash-table' (efficient searching).
+3. We assume for acronyms:
+   a) very most acronyms are upper-case
+   b) some acronyms are lower-case
+   c) acronyms contain alphanumeric characters and sometimes
+      certain other characters, see `rw-acronyms-other-chars'
+   d) acronyms can contain characters that are also used as 
+      joining characters, normally hyphens, see `rw-acronyms-joiners'
+   e) acronyms can be abbreviations with additional characters,
+      normally dots, see `rw-acronyms-abbreviators',
+      with spaces (e.g. usual in German), without spaces, or mixed,
+      and they can be variably upper-case, lower-case, or mixed
+   f) acronyms with non-alphanumeric characters can have different meanings
+      than acronyms with only alphanumeric characters (e.g. <eg>, e.g., EG)
+4. We assume for acronym files:
+   a) vera.txt contains only the alphanumeric characters of acronyms,
+      other acronym files contain the acronyms with all characters
+   b) some acronym files contain the acronyms in capital letters only,
+      some contain them literally in capital and/or small letters
+   c) included abbreviations are written without spaces
+5. Character sequences are parsed in a special way, when they contain
+   a) hyphens (joiners), action: look up the whole sequence and every part,
+   b) dots (abbreviators), action: take spaces into account and join parts.
+6. Thus - step b) when step a) does not found anything, and so on:
+   a) the basic search is case sensitive,
+      the original string is always searched first
+   b) acronyms are searched upper-case,
+      when `rw-acronyms-always-ignore-case' is t,
+      when they are manually typed or selected,
+      or when they contain non-alphanumeric characters
+      (acronyms with only alphanumeric characters are normally
+       simple words, they were false positives)
+   c) if the string contains non-alphanumeric characters,
+      it is searched without them
+   d) the same as in c), and addtionally b)
+
+Reading strategy used in function `rw-acronyms-puthash',
+when simple reading is off, see also `rw-acronyms-simple-reading':
+
+Do not save duplicated information from different files, e.g. for \"BTW\":
+old: \"By The Way (DFU-Slang, Usenet, IRC)\", new: \"By The Way\"
+  --> \"BTW = By The Way (DFU-Slang, Usenet, IRC)\" (discard new value)
+new: \"By The Way (DFU-Slang, Usenet, IRC)\", old: \"By The Way\"
+  --> \"BTW = By The Way (DFU-Slang, Usenet, IRC)\" (discard old line)
+old: \"By The Way (DFU-Slang, Usenet, IRC)\", new: \"By The Way <uebrigens>\"
+  --> \"BTW = By The Way <uebrigens> (DFU-Slang, Usenet, IRC)\"")

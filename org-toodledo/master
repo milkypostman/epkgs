@@ -1,0 +1,7 @@
+(:license    "GPL-2"
+ :provided   (org-toodledo)
+ :required   ((("org" org)
+	       ("url" url url-http)
+	       ("w3m" w3m)
+	       ("xml" xml)))
+ :homepage   "http://sachachua.com/wp/2010/05/org-toodledo")

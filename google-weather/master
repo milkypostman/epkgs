@@ -1,0 +1,19 @@
+(:summary    "Fetch Google Weather forecasts"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Julien Danjou" . "julien@danjou.info"))
+ :maintainer ("Julien Danjou" . "julien@danjou.info")
+ :provided   (google-weather org-google-weather)
+ :required   ((("calendar" solar)
+	       ("cl" cl)
+	       ("emacs" image)
+	       ("format-spec" format-spec)
+	       ("time-date" time-date)
+	       ("url" url url-cache)
+	       ("xml" xml)))
+ :keywords   (comm)
+ :homepage   "http://julien.danjou.info/google-weather-el.html"
+ :commentary "\
+This module allows you to fetch Google Weather forecast from the
+Internet.")

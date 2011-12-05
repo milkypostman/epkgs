@@ -1,0 +1,9 @@
+(:summary    "Visible active window mode"
+ :created    "2009"
+ :updated    "2010"
+ :license    "GPL-2"
+ :authors    (("ksugita"))
+ :maintainer ("ksugita")
+ :provided   (hiwin)
+ :keywords   (editing emulating faces)
+ :homepage   "https://github.com/tomoya/hiwin-mode")

@@ -1,0 +1,34 @@
+(:summary    "Look up Japanese Ruby Reference Manual with anything.el"
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-2"
+ :authors    (("rubikitch" . "rubikitch@ruby-lang.org"))
+ :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
+ :provided   (anything-rurima)
+ :required   ((("anything" anything-config anything-match-plugin)
+	       ("cl" cl)))
+ :keywords   (convenience languages)
+ :commentary "\
+Rubyリファレンスマニュアル刷新計画(るりま)をanythingで検索します。
+
+(1) るりまのリポジトリをチェックアウトする。~/compile/rurima以下に展開するものとする。
+    $ cd ~/compile; mkdir rurima; cd rurima
+    $ svn co http://jp.rubyist.net/svn/rurema/doctree/trunk rubydoc
+(2) http://www.rubyist.net/~rubikitch/archive/ar-index.rb から
+    ダウンロードして、以下のコマンドでドキュメントのインデックスを作成する。
+    Ruby 1.9必須！
+    ~/compile/rurima/rubydoc/rurima.eというファイルが作成される。
+    $ ruby1.9 ar-index.rb ~/compile/rurima/rubydoc rurima.e
+(3) http://www.emacswiki.org/cgi-bin/wiki/download/auto-install.elをインストールする。
+(4) auto-install.elの設定を加える。
+     (require 'auto-install)
+     (setq auto-install-directory \"~/.emacs.d/auto-install/\")
+     (auto-install-update-emacswiki-package-name t)
+     (auto-install-compatibility-setup)
+(5) M-x auto-install-batch anything を実行して anything 一式をインストールする。
+(6) anything-rurima.elの設定を加える。
+     (require 'anything-rurima)
+     (setq anything-rurima-index-file \"~/compile/rurima/rubydoc/rurima.e\")
+
+M-x anything-rurima でマニュアルを検索するためのプロンプトが出ます。
+M-x anything-rurima-at-point でカーソル位置の単語をマニュアル検索します。")

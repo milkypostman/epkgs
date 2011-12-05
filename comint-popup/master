@@ -1,0 +1,40 @@
+(:summary    "Maybe show comint process output windows"
+ :created    "19950227"
+ :updated    "20090513"
+ :license    "public-domain"
+ :authors    (("Noah Friedman" . "friedman@splode.com"))
+ :maintainer (nil . "friedman@splode.com")
+ :provided   (comint-popup)
+ :required   ((("pb-popup" pb-popup)))
+ :keywords   (comint extensions processes)
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
+ :commentary "\
+This program is enabled by putting something like the
+following in your .emacs:
+
+    (eval-after-load \"comint-popup\"
+      '(progn
+         (defun comint-popup-add-popup-hook ()
+           (add-hook 'comint-output-filter-functions
+                     'comint-popup-buffer))
+         (let ((h '(rlogin-mode-hook shell-mode-hook telnet-mode-hook)))
+           (while h
+             (add-hook (car h) 'comint-popup-add-popup-hook)
+             (setq h (cdr h))))))
+
+This is somewhat complicated to avoid adding the hook to every inferior
+comint process.  For example, you probably never want ange-ftp process
+buffers to become visible.  (You could just disable pb-popup-mode
+locally in that buffer and install these hooks globally, but you would
+still be creating extra overhead in buffers where it wasn't necessary.)
+
+After all that, the variables below and `pb-popup-mode' (part of another
+package on which this program depends) control how and when, e.g. a
+shell buffer's output should cause a new window to pop up showing that
+output, if it is not already in a display elsewhere.
+
+The general case is that if output appears in a buffer that's been idle
+for some time (as opposed to continuously spewing), or the spewage
+finally ends and the prompt becomes visible, then display the buffer.
+It's also possible to list (via regexps) output that's considered
+\"urgent\", such as shutdown broadcasts, talk requests, etc.")

@@ -1,0 +1,8 @@
+(:summary    "Unit test framework for Emacs lisp program"
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-2"
+ :authors    (("Wang Liang" . "netcasper@gmail.com"))
+ :maintainer ("Wang Liang" . "netcasper@gmail.com")
+ :provided   (test)
+ :required   ((("cl" cl))))

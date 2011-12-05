@@ -1,0 +1,5 @@
+(:summary    "Fix up filename cases"
+ :updated    "20050706"
+ :license    "GPL-2"
+ :provided   (filename-cases)
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/file-handling")

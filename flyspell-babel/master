@@ -1,0 +1,113 @@
+(:summary    "Switch flyspell language according to LaTeX"
+ :created    "2004"
+ :updated    "2004"
+ :license    "GPL-2"
+ :authors    (("Peter Heslin" . "p.j.heslin@dur.ac.uk"))
+ :maintainer ("Peter Heslin" . "p.j.heslin@dur.ac.uk")
+ :provided   (flyspell-babel)
+ :required   ((("flyspell" flyspell)
+	       ("ispell-multi" ispell-multi)))
+ :homepage   "http://www.dur.ac.uk/p.j.heslin/Software/Emacs"
+ :wikipage   "FlyspellBabel"
+ :commentary "\
+This package examines the LaTeX code around point to discover the
+language of the current text, and then it caches that value in a
+text-property.  This means that, if you modify or add a Babel
+command to change the language of some text, the current language
+may be out of sync with the cached value.  In this case, you can
+just stop typing for a bit, and the surrounding text will be
+re-parsed, and the new, correct language should be determined.  The
+length of time that Emacs is idle before this re-parsing happens is
+configurable via the variable flyspell-babel-delay (default is 5
+seconds).
+
+The parsing done by this package has its limits limited, and so it
+will not work with arbitrary LaTeX code.  I hope that these
+restrictions will not in practice impinge on the typical usage of
+most people.  The first language declaration is usually determined
+by the final language option passed to the babel \\usepackage
+command, which takes effect after \\begin{document}.  Thereafter,
+you can switch the declared language with \\selectlanguage
+statements, otherlanguage environments, and \\foreignlanguage
+commands.  You can also define your own language-switching
+commands, and register these with flyspell-babel.
+
+This package does not understand complex LaTeX constructs, such as
+\\input.  If you want to set the default language for a particular
+file (for example, one that has no Babel declaration, but is going
+to be \\input into a file that does), you can just put a redundant
+\\selectlanguage declaration at the start of the file.  You can
+limit the scope of a \\selectlanguage declaration by putting an
+opening brace immediately before it, and flyspell-babel will
+respect that scoping, but not otherwise, since that would make the
+task of parsing too complex.
+
+By default, an ispell dictionary is invoked with the same name as
+the current Babel language or dialect, which works in many cases.
+If your ispell has a different name for that language, you have two
+options.  You can make ispell recognize the Babel name by adding
+symlinks under that name in your Ispell directory.  Alternatively,
+you can customize flyspell-babel-to-ispell-alist, which maps Babel
+languages and dialects to Ispell language names.  If you map a
+language to 'nil, that means not to spell-check that language,
+which can be useful for languages without an ispell dictionary.
+
+Customization:
+
+The code that follows is an example of my customization of this
+package.  The first form tells the package to turn on debugging
+messages to see when we switch dictionaries as we move from place
+to place.  The second tells it not to spell-check the languages
+\"latin\" and \"ibycus\" (an encoding for ancient Greek), since I don't
+have ispell dictionaries for them; it also tells it to translate
+the Babel language \"french\" to the ispell dictionary \"francais\".
+The third form defines some language-switching shortcut commands,
+so that I can more easily say \\fr{merci} and \\itl{grazie}.  The
+fourth defines some short-cut environments, since \\begin{german} is
+a lot easier to write than \\begin{otherlanguage}{german}.  The last
+form defines some shortcut declarations for switching between
+American and British spelling.
+
+   (setq flyspell-babel-verbose t)
+    
+   (setq flyspell-babel-to-ispell-alist
+         '((\"latin\" nil)
+           (\"ibycus\" nil)
+           (\"french\" \"francais\")))
+    
+   (setq flyspell-babel-command-alist
+         '((\"lat\" \"latin\")
+           (\"gk\" \"ibycus\")
+           (\"fr\" \"french\")
+           (\"ger\" \"german\")
+           (\"itl\" \"italian\")))
+    
+   (setq flyspell-babel-environment-alist
+         '((\"latin\" \"latin\")
+           (\"greek\" \"ibycus\")
+           (\"french\" \"french\")
+           (\"german\" \"german\")
+           (\"italian\" \"italian\")))
+    
+   (setq flyspell-babel-declaration-alist
+         '((\"yank\" \"american\")
+           (\"brit\" \"british\")))
+
+Here is the LaTeX code that defines these short-cuts:
+
+\\usepackage[ibycus,latin,french,german,italian,british,american]{babel}
+ 
+\\newcommand{\\lat}[1]{\\foreignlanguage{latin}{\\emph{#1}}}
+\\newenvironment{latin}{\\begin{otherlanguage}{latin}}{\\end{otherlanguage}}
+ 
+\\newcommand{\\fr}[1]{\\foreignlanguage{french}{\\emph{#1}}}
+\\newenvironment{french}{\\begin{otherlanguage}{french}}{\\end{otherlanguage}}
+ 
+\\newcommand{\\ger}[1]{\\foreignlanguage{german}{\\emph{#1}}}
+\\newenvironment{german}{\\begin{otherlanguage}{german}}{\\end{otherlanguage}}
+ 
+\\newcommand{\\itl}[1]{\\foreignlanguage{italian}{\\emph{#1}}}
+\\newenvironment{italian}{\\begin{otherlanguage}{italian}}{\\end{otherlanguage}}
+ 
+\\newcommand{\\yank}{\\selectlanguage{american}}
+\\newcommand{\\brit}{\\selectlanguage{british}}")

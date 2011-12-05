@@ -1,0 +1,9 @@
+(:summary    "ICalendar support for Mew"
+ :created    "2008"
+ :updated    "2008"
+ :authors    (("Akira TAGOH" . "akira@tagoh.org"))
+ :maintainer ("Akira TAGOH" . "akira@tagoh.org")
+ :provided   (mew-ical)
+ :required   ((("browse-url" browse-url)))
+ :keywords   (icalendar mew)
+ :homepage   "http://code.google.com/p/mew-ical")

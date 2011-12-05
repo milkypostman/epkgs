@@ -1,0 +1,33 @@
+(:summary    "Highlight marks in buffer"
+ :created    "20031119"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("Zajcev Evgeny" . "zevlg@yandex.ru"))
+ :maintainer ("none, mail me if you want to maintain this code.")
+ :provided   (himarks-mode)
+ :keywords   (tools)
+ :homepage   "http://lgarc.narod.ru/xemacs"
+ :commentary "\
+Just highlights markers.
+
+Use M-x himarks-mode RET to toggle `himarks-mode'.
+
+You may also want to use enhanced version of `set-mark-command',
+which will understand prefix argument as numeric value.
+
+    (define-key global-map (kbd \"C-SPC\") 'himarks-set-mark-command)
+    (define-key global-map (kbd \"C-@\") 'himarks-set-mark-command)
+
+And use C-2 C-SPC to jump to second mark.
+
+There also `himarks-set-mark-no-activate', which act as
+`himarks-set-mark-command', but does not activates mark.  This
+command is usefull for pushing marks to `mark-ring'.
+
+    (define-key global-map (kbd \"C-x SPC\")
+      'himarks-set-mark-no-activate)
+
+
+}}}
+
+{{{ TODO")

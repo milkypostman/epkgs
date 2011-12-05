@@ -1,0 +1,67 @@
+(:summary    "Interface with twitter.com"
+ :created    "20070316"
+ :updated    "20070319"
+ :license    "GPL-2"
+ :authors    ((nil . "docgnome@gmail.com"))
+ :maintainer (nil . "docgnome@gmail.com")
+ :provided   (twit)
+ :required   ((("cl" cl)
+	       ("url" url url-http)
+	       ("xml" xml)))
+ :keywords   (comm)
+ :homepage   "https://github.com/docgnome/twit.el"
+ :wikipage   "TwIt"
+ :commentary "\
+This is the beginnings of a library for interfacing with
+twitter.com from Emacs.  It is also (more importantly) some
+interactive functions that use that library.  It's a hack, of
+course; RMS i am not.  Maybe one of you real programmers would
+like to clean it up?
+   -- Theron Tlax
+
+Okay! ;)
+   -- JonathanArkell
+
+Twit.el is rapidly maturing library.  Currently it handles your
+friends timeline, direct messagse (sending and receiving) and
+even searches.
+
+You can use the function `twit-post' to send a tweet.  Heck
+I'd appreciate knowing who uses twit.el so go ahead and tweet
+something to that effect!
+
+You can use the function `twit-follow-recent-tweets' to have
+twit.el constantly check updates, and write them in a buffer.
+alternatly, you can just use `twit-show-recent-tweets'
+to just show you the last 15 tweets.  In this timeline view
+type ? to show you a list of commands you can use.
+
+For searches, you an use `twit-search' to run a general search.
+The search will remember the terms you used, so you can use
+tab completion when promped.  Also, you can customize the
+variable `twit-completing-searches' to store your common
+searches for later.  The command `twit-search-at-to-me' to do
+a @<username> search.  The search functions were just recently
+added, and their output will be improved soon.
+
+For direct messages you can use `twit-show-direct-tweets' to
+get your direct messages, and `twit-direct' to send them.
+
+If you want, you can display images on the timeline as well,
+customize the variable `twit-show-user-images', and set it to
+true.  When you do that, you'll also get tab completion on
+the twit direct function.
+
+Both `twit-show-direct-tweets' and `twit-show-recent-tweets'
+can accept numeric prefix commands.  With a numeric prefix,
+they will skip to that page.  So:
+     C-u 2 M-x twit-show-recent-tweets
+will take you to the next page of recent tweets (older ones)
+
+This uses Twitter's XML-based api, not the JSON one because i
+would like to avoid making the user install third-party libraries
+to use it.
+
+Even though twit.el uses Basic Authentication, it also uses HTTPS
+to connect to twitter (for all auth based services anyway).  So
+security problems are dealt with.")

@@ -1,0 +1,61 @@
+(:summary    "Major mode for editing Sendmail configuration files"
+ :license    "GPL-2"
+ :authors    (("Jonathan Marten" . "jonathan.marten@uk.sun.com"))
+ :maintainer ("Jonathan Marten" . "jonathan.marten@uk.sun.com")
+ :provided   (sendmail-mode)
+ :required   ((("regexp-opt" regexp-opt)))
+ :keywords   (faces languages)
+ :commentary "\
+Sendmail configuration files are usually pretty unintelligible, so
+some help with syntax colouring and comment indentation is always
+welcome.  This mode attempts to do that.
+
+The fontification rules and the list of keywords were derived from
+the O'Reilly book and the online documentation included with the
+latest versions of sendmail.  They may be neither complete nor 100%
+accurate; since the configuration file syntax is not particularly
+rigourous or consistent a totally accurate fontification might not
+be possible.  However, it has been tested on as many configuration
+files as I could find, from a number of systems and of various
+vintages.  Additional keywords or examples of incorrect fontification
+or comment indentation would be most welcome.
+
+Syntactic fontification is done, but only for quoted strings.
+
+No comment syntax is defined, because Emacs' built-in indentation and
+fontification cannot handle the varying rules for placement and
+validity of comments, especially with the differences between pre-V8
+and later sendmail.  Comments are fontified using the font-lock
+regexps, and comment indentation is handled specially using
+`sendmail-indent-for-comment'.  This is because the syntax of a comment,
+or even whether one is allowed at all, varies depending on what sort of
+line the comment is on and the version of the configuration file.  The
+only particularly complex case is for an \"R\" line, where the comment
+has no delimiter but is separated from the RHS by at least one tab.
+We have to take care that there is at least that one tab here, even
+in the case where the indent is past the comment column and normally
+only a single space would be inserted.
+
+All brackets (\"[]\", \"<>\", \"()\" and \"{}\") are normally considered
+worthy of matching.  However, \"<>\" sometimes leads to anomalous
+indications because \"$>\" does not have a matching open \"<\".  This
+should be fixed in paren.el by not considering a character to be
+a paren if the character preceding it has char-quote syntax
+(\"/\" in syntax table).  In this mode, \"$\" has such syntax.
+
+There is no indentation in the configuration file, so (contrary to the
+usual Emacs convention), the TAB key is defined to self-insert.
+
+Sendmail is very sensitive to the format of the configuration file, and
+small and sometimes invisible errors can cause serious problems.  This
+mode attempts to help as far as is possible:
+
+1.  Additional spaces before or after tabs, and lines containing only
+    whitespace, are highlighted.  This can help to avoid unintended
+    addition of whitespace tokens and continuation lines.
+
+2.  Pre-V8 sendmail requires a final newline in the configuration file,
+    otherwise the last line of the file is silently ignored.  This is
+    enforced by ensuring that `require-final-newline' is forced to
+    \"add always\" if it is set to \"never\" by default.  If the setting is
+    \"ask\" then it stays.")

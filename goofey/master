@@ -1,0 +1,8 @@
+(:summary    "Send Goofey messages from Emacs !"
+ :created    "1993"
+ :updated    "19990129"
+ :license    "GPL-2"
+ :authors    (("Andrew J Cosgriff" . "ajc@bing.wattle.id.au"))
+ :maintainer ("Andrew J Cosgriff" . "ajc@bing.wattle.id.au")
+ :keywords   (emacs goofey message)
+ :homepage   "http://polydistortion.net/sw/emacs-lisp")

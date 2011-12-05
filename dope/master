@@ -1,0 +1,13 @@
+(:summary    "DOtemacs ProfilEr.. A per-sexp-evaltime profiler"
+ :created    "2002"
+ :updated    "20051212"
+ :license    "GPL-2"
+ :authors    ((nil . "youngs@xemacs.org"))
+ :maintainer (nil . "youngs@xemacs.org")
+ :provided   (dope)
+ :required   ((("cl" cl)
+	       ("emacs" custom wid-edit widget)
+	       ("pp" pp)
+	       ("thingatpt" thingatpt)))
+ :keywords   (dotemacs error profile speed startup)
+ :homepage   "http://www.gnufans.net/~deego/emacs.html")

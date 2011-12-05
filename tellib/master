@@ -1,0 +1,265 @@
+(:summary    "Thomas' ELisp LIBrary"
+ :created    "2002"
+ :updated    "2002"
+ :license    "GPL-2"
+ :authors    (("Thomas Link"))
+ :maintainer ("Thomas Link")
+ :provided   (tellib)
+ :required   ((("emacs" overlay)))
+ :keywords   (elisp library)
+ :homepage   "http://members.a1.net/t.link/CompEmacsTellib.html"
+ :commentary "\
+Installation: Put (require 'tellib) (tellib-install) into your
+startup/user init file.
+
+Some possibly useful functions.
+
+;---(:excerpt-beg *FUNCTION* :name tellib-selfdoc)---
+;---(:excerpt-source #'(tellib-selfdocumentation \"^tellib-\"))---
+
+(tellib-add-related-buffer BUFFER &optional PARENT-BUFFER)
+Add BUFFER to `tellib-related-buffers'.
+
+(tellib-alist-get ALIST KEY &optional DEFAULT CAR-FLAG)
+Get KEY's value in the association list ALIST.
+
+(tellib-alist-p ALIST)
+Return non-nil if ALIST appears to be a proper association list.
+
+(tellib-alist-set ALIST KEY &rest VALUES)
+Replace KEY's value with VALUES in ALIST or append (KEY . VALUES) to
+ALIST.
+
+(tellib-alist-setcdr ALIST KEY LIST)
+Replace KEY's cdr with LIST in ALIST or append (KEY . LIST) to ALIST.
+
+(tellib-andmap TELLIB-PRED &rest TELLIB-LISTS)
+Return non-nil if TELLIB-PRED is true for all elements of TELLIB-LISTS.
+
+(tellib-andmap-1 TELLIB-PRED TELLIB-DEFAULT &rest TELLIB-LISTS)
+Return non-nil if TELLIB-PRED is true for all elements of TELLIB-LISTS.
+
+(tellib-call-with-event-pos TELLIB-FN TELLIB-EVENT &rest TELLIB-ARGS)
+Set current buffer and call FN with the position where EVENT occured.
+
+(tellib-close-related-buffers)
+Close related buffers.
+
+(tellib-define-provide-hook FEATURE &rest HOOKS)
+Add FEATURE's post-provide HOOKS to `tellib-post-provide-hooks'.
+
+(tellib-del-from-list LIST-VAR ELEMENT)
+Delete ELEMENT from LIST-VAR.
+
+(tellib-desc-env &optional VERTSPACE)
+Return a string describing the environment -- a little bit.
+
+(tellib-directory-files DIR &optional WHAT FILE-PATTERN DIR-PATTERN
+                       FULL-NAME-FLAG)
+List files or dirs in DIR.
+
+(tellib-document SYMBOL &optional PRE SEP POST SKIP-IF-UNDOC
+                SKIP-IF-UNIMPORTANT PREDICATE REFORMAT-FLAG)
+Return a short documentation for SYMBOL.
+
+(tellib-edit-in-buffer TEXT &optional MESSAGE MODE-FN KEYMAP-VAR
+                      ON-EXIT-FN)
+Edit TEXT in a temporary buffer -- use `tellib-edit-in-buffer*' if
+possible.
+
+(tellib-edit-in-buffer* TITLE TEXT ON-EXIT-FUNCTION &rest KEY-ARGS)
+Edit TEXT in a buffer called TITLE.
+
+(tellib-error DATUM &rest ARGS)
+Signal a non-continuable error.
+
+(tellib-file-name-break-up FILENAME &optional DROP-NULL-ELEMENTS)
+Return a list of FILENAME parts.
+
+(tellib-file-name-last-bit FILENAME)
+Returns the last bit of FILENAME -- either directory or file.
+
+(tellib-filter-list TELLIB-LIST TELLIB-COND-FN)
+Remove all elements not conforming to TELLIB-COND-FN from list
+TELLIB-LIST.
+
+(tellib-info NAME)
+Display NAME's version information.
+
+(tellib-install)
+Install tellib's hooks etc.
+
+tellib-installation-requests
+An plist of libraries and who demanded their installation.
+
+(tellib-installer PACKAGE-NAME REQUESTING-LIBRARY &optional
+                 TOP-INSTALL-FLAG)
+Call LIBRARY-install and add REQUESTING-LIBRARY to
+`tellib-installation-requests'.
+
+(tellib-lax-plist-get LAX-PLIST PROPERTY &optional DEFAULT)
+Extract a value from a lax property list.
+
+(tellib-lax-plist-put LAX-PLIST PROPERTY VALUE)
+Change value in LAX-PLIST of PROPERTY to VALUE.
+
+(tellib-make-proper-filename STRING &optional REGEXP)
+Replace suspicious characters in STRING with an underscore.
+
+(tellib-mapcart TELLIB-FN TELLIB-LIST)
+Similar to `mapcar' but drops nil values.
+
+(tellib-mappend TELLIB-FN TELLIB-LIST)
+Map TELLIB-FN (returning lists) on TELLIB-LIST and append results.
+
+(tellib-member TELLIB-ITEM TELLIB-LIST &rest TELLIB-KEYS)
+A clone of `member*'. At the moment only the :test key is supported.
+
+(tellib-message LEVEL &rest ARGS)
+Show a message only if LEVEL is sufficiently low -- i.e. important.
+
+(tellib-not-yet-implemented FEATURE)
+Throw an error explaining that FEATURE is not yet implemented.
+
+(tellib-ormap TELLIB-PRED TELLIB-LIST)
+Return SUBLIST of TELLIB-LIST, for which (TELLIB-PRED (car SUBLIST)) is
+true.
+
+(tellib-overlay-change-size DX &optional SYMBOLS OVERLAY)
+Make an overlay DX characters larger/smaller.
+
+(tellib-overlay-collect SYMBOLS &optional BUFFER OVERLAYS IGNORE)
+Return a list of dumped overlays with one of SYMBOLS being non-nil.
+
+(tellib-overlay-collect* SYMBOLS &optional BUFFER OVERLAYS
+                        USE-THESE-OVERLAY-FLAG PREDICATE)
+Return a list of overlays with one of SYMBOLS being non-nil.
+
+(tellib-overlay-dump OVERLAY &optional IGNORE)
+Return a list representing OVERLAY.
+
+(tellib-overlay-move DX DY &optional SYMBOLS OVERLAY)
+Move an overlay to DX/DY from the current position.
+
+(tellib-overlay-restore DUMPED-OVERLAYS &optional BUFFER)
+Restore all overlays in DUMPED-OVERLAYS
+
+(tellib-plist-mapkeys FUNCTION KEYS &rest PLISTS)
+Map FUNCTION on the KEYS in PLISTS and append the values to a list.
+
+(tellib-plist-merge PLIST1 PLIST2)
+Insert PLIST 1 into PLIST2.
+
+tellib-post-provide-hooks
+A plist of hooks to be run after providing a certain feature.
+
+(tellib-quote TXT)
+Return TXT in quotes.
+
+(tellib-re-search REGEXP &optional CASE-SENSITIVE BACKWARD-FLAG)
+Search for REGEXP while taking care of `case-fold-search'.
+
+(tellib-read-file FILENAME &optional DEFAULT)
+Read FILENAME and return its contents as string.
+
+tellib-related-buffers
+A list of related editing buffers.
+
+(tellib-remove-redundant-dir-separators FILENAME)
+Remove multiples '/' (or whatever) in filename.
+
+(tellib-replace-args STRING ARGS-ALIST &optional ESCAPE-CHAR)
+Replace args-alist in string.
+
+(tellib-require PACKAGE REQUIRED-STRING)
+Require a package and check if the version is okay.
+
+tellib-running-xemacs
+Non-nil means we are running XEmacs.
+
+(tellib-scan-variables TRUNC &optional BEG END BUFFER)
+Scan variables TRUNC-[BEG-END] and combine their values to a list.
+
+(tellib-selfdocumentation REGEXP &optional PREDICATE
+                         SKIP-IF-UNIMPORTANT)
+List documentations for symbols matching REGEXP -- see
+`tellib-document'.
+
+(tellib-set-file-variable &rest DONT-REPLACE-FLAG)
+Set a file local variable.
+
+(tellib-simplify-string STRING &optional REGEXP)
+Replace suspicious characters in STRING with an underscore.
+
+(tellib-some TELLIB-PRED TELLIB-LIST)
+Return the value of TELLIB-PRED, if non-nil for an item in TELLIB-LIST.
+
+(tellib-split-string-by-char STRING SEPCHAR)
+Split STRING into a list of substrings originally separated by SEPCHAR.
+
+(tellib-string-count STRING REGEXP)
+Count occurances of REGEXP in STRING.
+
+(tellib-string-fill STRING &optional LEFT-COL RIGHT-COL PREFIX)
+Fill STRING using `fill-region'. FILL-STRING defaults to \"\\n\".
+
+(tellib-string-trim STRING &optional DONT-TRIM-LEFT DONT-TRIM-RIGHT
+                   REMOVE-TEXT-PROPERTIES-FLAG)
+Lose leading and trailing whitespace.
+
+(tellib-sublist TELLIB-LIST TELLIB-BEG &optional TELLIB-END)
+Get the sublist of TELLIB-LIST from TELLIB-BEG to TELLIB-END - 1.
+
+(tellib-test NAME RESULT &rest BODY)
+Evaluate BODY at compile time and check if it returns RESULT.
+
+(tellib-test-error NAME ERROR-LIST &rest BODY)
+Evaluate BODY at compile time and check if it throws an error as
+expected.
+
+tellib-test-flag
+Non-nil means, perform compile-time testing.
+
+(tellib-testing MODE-STRING FEATURE-NAME MESSAGEP &rest BODY)
+Disable features in non-testing mode.
+
+(tellib-uninstall)
+Deinstall tellib's hooks etc.
+
+(tellib-uninstaller PACKAGE-NAME REQUESTING-LIBRARY &optional
+                   TOP-UNINSTALL-FLAG)
+Call LIBRARY-uninstall
+
+(tellib-update-local-variable-def &optional VAR VAL &rest --REST--72872)
+
+(tellib-valid-plist-p PLIST)
+Given a plist, return non-nil if its format is correct.
+
+tellib-verbosity
+An integer defining the level of verbosity. 0 means no messages
+
+(tellib-version-check NAME VERSION-STRING REQUIRED-STRING)
+Throw an error if VERSION-STRING doesn't fit REQUIRED-STRING.
+
+(tellib-version-check-p VERSION-STRING REQUIRED-STRING)
+Return non-nil if VERSION-STRING satisfies REQUIRED-STRING.
+
+(tellib-version-check-with-name PACKAGE-NAME REQUIRED-STRING)
+Throw an error if PACKAGE-NAME-version doesn't fit REQUIRED-STRING.
+
+(tellib-with-key-arguments ARGS DEFINITION &rest BODY)
+Set ARGS according to DEFINITION and evaluate BODY.
+
+(tellib-with-message-buffer MESSAGE &rest BODY)
+Display a buffer with MESSAGE and evaluate BODY.
+
+(tellib-with-result RESULT &rest BODY)
+Eval RESULT and BODY, and return RESULT's value.
+
+(tellib-zip &rest TELLIB-LISTS)
+Zip lists. Turns '((A1 ...) (A2 ...) ...) into '((A1 A2 ...) ...).
+
+(tellib-zip-1 DEFAULT &rest TELLIB-LISTS)
+Zip lists. Like `tellib-zip' but accepts lists of unequal length
+
+;---(:excerpt-end *FUNCTION* :name tellib-selfdoc)---")

@@ -1,0 +1,16 @@
+(:summary    "A major mode for editing shen source code"
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Eric Schulte" . "schulte.eric@gmail.com"))
+ :maintainer ("Eric Schulte" . "schulte.eric@gmail.com")
+ :provided   (inf-shen shen-mode)
+ :required   ((("emacs" comint lisp-mode)
+	       ("imenu" imenu)))
+ :keywords   (languages shen)
+ :homepage   "https://github.com/eschulte/shen-mode"
+ :commentary "\
+A minor mode for editing shen source code.  Shen is a modern lisp
+dialect with support for functional and declarative programming,
+pattern matching and a very powerful type system.  See the
+following for more information on Shen. http://www.shenlanguage.org")

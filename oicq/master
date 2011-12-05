@@ -1,0 +1,11 @@
+(:summary    "A front-end to perl OICQ"
+ :created    "2003"
+ :updated    "20080612"
+ :license    "GPL-3"
+ :authors    (("jerry" . "unidevel@yahoo.com.cn"))
+ :maintainer ("Andy Stewart" . "lazycat.manatee@gmail.com")
+ :provided   (oicq)
+ :keywords   (china oicq qq tecent)
+ :wikipage   "Oicq"
+ :commentary "\
+A front-end of perl OICQ, to use QQ (Tecent) in Emacs.")

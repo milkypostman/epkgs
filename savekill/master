@@ -1,0 +1,12 @@
+(:summary    "Save kill ring to disk"
+ :created    "2011"
+ :updated    "20110228"
+ :license    "GPL-3"
+ :authors    (("rubikitch" . "rubikitch@ruby-lang.org"))
+ :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
+ :provided   (savekill)
+ :required   ((("cl" cl)))
+ :keywords   (tools)
+ :commentary "\
+Save kill ring to disk every time `kill-ring' is updated.
+It is a risk hedge of Emacs sudden death.")

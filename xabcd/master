@@ -1,0 +1,14 @@
+(:summary    "Convert raw bytes to the X'ABCD' notation and back"
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-2"
+ :authors    (("Florian v. Savigny (florian at fsavigny dot dee ee)"))
+ :maintainer ("Florian v. Savigny (florian at fsavigny dot dee ee)")
+ :provided   (xabcd)
+ :commentary "\
+The X'ABCD' notation is a string representation of bytes which
+ uses only the characters 0-9 and a to f, i.e. the hexadecimal
+ digits. Every byte is represented as a two-digit hexadecimal
+ number (meaning that the X'ABCD' notation has exactly double the
+ size of the bytes it represents). The format is used by SQLite for
+ passing binary data over the command line (and possibly")

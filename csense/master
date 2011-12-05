@@ -1,0 +1,25 @@
+(:summary    "Coding assistant front-end"
+ :created    "2007"
+ :updated    "2007"
+ :license    "GPL-2"
+ :provided   (csense csense-cs csense-cs-frontend)
+ :required   ((("cl" cl)
+	       ("csharp-mode" csharp-mode)
+	       ("etags" etags)
+	       ("rx" rx)))
+ :homepage   "http://code.google.com/p/csense"
+ :wikipage   "CSense"
+ :commentary "\
+Generic Code Sense frontend for assistance during coding.
+
+Install it by requiring one of the language-specific frontends.
+
+F1 shows help for the symbol at point.
+
+C-F1 goes to the definition (using the etag ring, so you can use
+M-* to jump back)
+
+C-. completes the symbol at point
+
+
+ Tested on Emacs 22.")

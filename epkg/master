@@ -1,0 +1,24 @@
+(:summary    "The stupid package tracker for Emacs"
+ :created    "20100101"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Jonas Bernoulli" . "jonas@bernoul.li"))
+ :maintainer ("Jonas Bernoulli" . "jonas@bernoul.li")
+ :provided   (epkg)
+ :required   ((("cl" cl)
+	       ("magit" magit)
+	       ("vcomp" vcomp)))
+ :keywords   (git libraries packages)
+ :homepage   "https://github.com/tarsius/epkg"
+ :commentary "\
+The stupid package tracker for Emacs.
+
+This is one of the main libraries used to maintain the Emacsmirror (the
+other being elm).  These libraries are currently being rewritten from
+scratch to make use of eieio.
+
+Also:  ,- going to be
+       |
+Epkg is a package manager for Emacs packages.  It makes heavy use of
+Git - the stupid content tracker.  Packages are installed by cloning
+the package's git repository from the Emacsmirror.")

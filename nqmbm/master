@@ -1,0 +1,5 @@
+(:summary    "Advanced mouse buffer menu mainly for win32"
+ :created    "2003"
+ :updated    "20030107"
+ :license    "GPL-2"
+ :provided   (nqmbm))

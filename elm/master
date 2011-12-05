@@ -1,0 +1,22 @@
+(:summary    "Maintain the Emacsmirror"
+ :created    "20081202"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Jonas Bernoulli" . "jonas@bernoul.li"))
+ :maintainer ("Jonas Bernoulli" . "jonas@bernoul.li")
+ :provided   (elm elm-vcs xpkg)
+ :required   ((("arc-mode" arc-mode)
+	       ("cl" cl)
+	       ("elx" elx)
+	       ("epkg" epkg)
+	       ("gh" gh-repos)
+	       ("magit" magit)
+	       ("map-progress" map-progress)
+	       ("package" package)
+	       ("save-sexp" save-sexp)
+	       ("vcomp" vcomp)))
+ :keywords   (git libraries packages)
+ :homepage   "https://github.com/emacsmirror/p/wiki/Maintenance"
+ :commentary "\
+This package is used to maintain the Emacsmirror
+which can be found at https://github.com/emacsmirror.")

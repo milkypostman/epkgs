@@ -1,0 +1,7 @@
+(:summary    "Read a pine addressbook"
+ :updated    "19990818"
+ :authors    (("James H Gorrell" . "harley@bcm.tmc.edu"))
+ :maintainer ("James H Gorrell" . "harley@bcm.tmc.edu")
+ :provided   (jhg-pine)
+ :commentary "\
+* Read a pine address book")

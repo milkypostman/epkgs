@@ -1,0 +1,18 @@
+(:summary    "Php-completion optional utilities"
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-3"
+ :authors    (("kitokitoki" . "morihenotegami@gmail.com"))
+ :maintainer ("kitokitoki" . "morihenotegami@gmail.com")
+ :provided   (php-completion-opt)
+ :required   ((("php-completion" php-completion)))
+ :keywords   (convenience)
+ :commentary "\
+Change Log
+1.0.2: phpcmpopt-manual-vertical-pop-up (垂直分割) を追加。
+       pop-out 時に phpcmpopt-popup-document-buffer を削除するように変更。
+       不具合修正。リファクタリング。
+1.0.1: cleanup で persistent-action で用いたバッファを削除する処理を追加。
+1.0.0: 新規作成
+
+TODO documentation")

@@ -1,0 +1,26 @@
+(:summary    "Windows like buffer selection mode by C-TAB"
+ :created    "2000"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("Olaf Sylvester" . "olaf@geekware.de"))
+ :maintainer ("Olaf Sylvester" . "olaf@geekware.de")
+ :provided   (ibs)
+ :keywords   (convenience)
+ :homepage   "http://www.geekware.de/software/emacs"
+ :commentary "\
+This Emacs package provides a minor mode for buffer cycling;
+more exact: to switch by key C-TAB between Emacs buffers like
+MS-Windows IDEs.
+C-TAB starts buffer cycling.  Every other key terminates cycling
+and sets the current buffer at the top of Emacs buffer list.
+The buffer we started buffer cycling won't be buried !!!
+
+You can configure the keys for cycling.
+Therefore set global `ibs-cycling-key' before loading ibs.el.
+
+You can define which buffers will be used for buffer cycling.
+Set global `ibs-cycle-buffer-function' to a function which
+returns a buffer list. The default is buffer-list, which returns
+all buffers in recently order.
+If package bs is loaded the cycling list of this package
+will be used.")

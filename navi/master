@@ -1,0 +1,7 @@
+(:created    "1999"
+ :updated    "20090228"
+ :license    "GPL-2"
+ :authors    ((nil . "suna@love.email.ne.jp"))
+ :maintainer ("(Is there someone want to maintain this? Contact suna.)")
+ :provided   (navi)
+ :homepage   "http://www.ne.jp/asahi/love/suna/pub/soft/navi.el/index-e.html")

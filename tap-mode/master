@@ -1,0 +1,13 @@
+(:summary    "Major mode for editing .tap-files"
+ :created    "2009"
+ :updated    "2009"
+ :authors    (("Steffen Schwigon" . "ss5@renormalist.net"))
+ :maintainer ("Steffen Schwigon" . "ss5@renormalist.net")
+ :provided   (tap-mode)
+ :keywords   (tap testing)
+ :homepage   "https://github.com/renormalist/emacs-tap-mode"
+ :commentary "\
+This mode is built with help of the \"Emacs language mode creation
+tutorial\" written by Scott Andrew Borton, now hosted at
+
+  http://renormalist.net/cgi-bin/twiki/view/Renormalist/EmacsLanguageModeCreationTutorial")

@@ -1,0 +1,13 @@
+(:summary    "Emacs support for VI modelines"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("James Youngman" . "youngman@google.com"))
+ :maintainer ("James Youngman" . "youngman@google.com")
+ :provided   (vimvars)
+ :keywords   (emulations local-variables vi vim)
+ :homepage   "https://github.com/jamesyoungman/vimvars"
+ :commentary "\
+Defines a function `vimvars-obey-vim-modeline' which is suitable for
+a hook which checks for a VI-style in the current buffer and sets
+various Emacs buffer-local variables accordingly.")

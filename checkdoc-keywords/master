@@ -1,0 +1,17 @@
+(:summary    "Check for known values in Keywords header"
+ :created    "2009"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Kevin Ryde" . "user42@zip.com.au"))
+ :maintainer ("Kevin Ryde" . "user42@zip.com.au")
+ :provided   (checkdoc-keywords)
+ :required   ((("checkdoc" checkdoc)
+	       ("cl" cl)
+	       ("finder" finder)
+	       ("lisp-mnt" lisp-mnt)))
+ :keywords   (docs lisp maint)
+ :homepage   "http://user42.tuxfamily.org/checkdoc-keywords"
+ :commentary "\
+This spot of code extends M-x checkdoc to check that Keywords: contains
+at least one keyword known to `finder-by-keywords'.  See the docstring of
+`checkdoc-keywords-comment' below for more.")

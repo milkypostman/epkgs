@@ -1,0 +1,36 @@
+(:summary    "Menu for managing emacs desktops"
+ :created    "1999"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("Olaf Sylvester" . "ole_i_dont_like_spam@geekware.de"))
+ :maintainer ("Olaf Sylvester" . "ole_i_dont_like_spam@geekware.de")
+ :provided   (desktop-menu)
+ :required   ((("desktop" desktop)))
+ :keywords   (convenience)
+ :homepage   "http://www.geekware.de/software/emacs"
+ :wikipage   "DesktopMenu"
+ :commentary "\
+Version: 0.2
+X-URL: http://www.geekware.de
+
+This packages provides a Desktop Menu for managing different Emacs desktops
+in a directory.
+
+Start menu with
+M-x desktop-menu
+
+Use key ? for help in Desktop Menu.
+
+Why a Desktop Menu?
+The Emacs package `desktop' is a really nice menu for saving and reading
+various Emacs desktops in different directories.
+But often I have the problems:
+- I want to save various Emacs desktops in the same directory and
+- I lost the overview for directories with a Emacs desktop.
+So I've developed a menu which handles various Emacs desktops
+in one directory and I can give each desktop a nice name.
+
+Customization:
+
+There is an customization group called desktop-menu in group desktop
+Start customization by M-x `desktop-menu-customize'")

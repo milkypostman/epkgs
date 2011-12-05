@@ -1,0 +1,9 @@
+(:summary    "EdLib = help EDit emacs-lisp LIBraries."
+ :created    "2001"
+ :updated    "20071206"
+ :authors    (("Deepak Goel" . "deego@glue.umd.edu"))
+ :maintainer ("Deepak Goel" . "deego@glue.umd.edu")
+ :provided   (edlib)
+ :required   ((("cl" cl)
+	       ("time-stamp" time-stamp)))
+ :homepage   "http://www.gnufans.net/~deego/emacs.html")

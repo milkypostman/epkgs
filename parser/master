@@ -1,0 +1,121 @@
+(:summary    "Elisp Macro DSL Parser Compiler"
+ :created    "20080104"
+ :updated    "2008"
+ :license    "GPL"
+ :authors    (("Mike Mattie" . "codermattie@gmail.com"))
+ :maintainer ("Mike Mattie" . "codermattie@gmail.com")
+ :provided   (parser parser-fn)
+ :required   ((("cl" cl)
+	       ("closure" closure)
+	       ("emacs" help-fns)))
+ :keywords   (parser)
+ :wikipage   "ParserCompiler"
+ :commentary "\
+An experimental parser-compiler DSL that emphasizes concise and
+flexible expression with a lispy interface to render gnarly
+scripting tasks trivial as parsing in Emacs should be.
+
+- \"This experiment calls forth the four horsemen of the Lisp
+   Apocalypse: eval,apply,lambda,macro.\"
+
+The detailed documentation is in the docstrings for \"parser-compile\"
+and \"parser-token-api\". A lengthier tutorial and paper are in progress.
+
+-> Status
+
+greed,not operators support PEG grammars with right recursion only. Next
+step is left-recursion via packrat-optimization.
+
+If you do not know what PEG grammars are check out this brief introduction:
+http://en.wikipedia.org/wiki/Parsing_expression_grammar
+
+I will support the CFG grammar class with a lazy operator but that is
+a lower priority than left recursion.
+
+-> Hypothesis
+
+Exposing the internal semantics of the generated parser as a well
+defined programming interface allows a parser writer to freely mix
+the semantics of a grammar classes such as CFG and PEG with
+tailored parsing behavior.
+
+The programming interface is powerful enough that user defined
+functions can be reduced to a few typed hooks without losing the
+ability to define useful or unusual parsers.
+
+-> Benefits
+
+A well defined programming interface has the following significant
+advantages.
+
+Increasing the generality of the parser compiler beyond a single
+grammar class:
+
+* brings more of the parser sum within formal validation reducing
+  the opportunity to introduce defects.
+
+* The ability to articulate a variety of phenomena [grammar classes here]
+  with the analysis of expression implied by the compiler facilitates
+  repeatable and defensible implementation.
+
+The sum parser definition is more concise by virtue of raising the
+abstraction level and encompassing more of the parser's true extent
+of definition = less call-outs to write because the parser is
+generating more code for you.
+
+If you do need call-outs you should expect a good API and hooks
+at all vital points of a Parser Function.
+
+This compiler facilitates new parsing operators, making it a good
+vehicle for experimenting with new grammar classes.
+
+-> Features
+
+0. Parser compilation is integrated directly into lisp
+   with a macro DSL that returns an entry point.
+
+1. The DSL is sugared with grammar classes and a define
+   syntax keeping the parser definitions concise for
+   both simple and complex parsers.
+
+2. Selective parse tracing for debugging parsers.
+
+3. Generated code dumper for debugging the compiler.
+
+-> The Plan
+
+  -> Phase 1: correctness
+
+0. new parser generator merged in, and debugged.
+
+   UPDATE: testing new co-routine design generator.
+
+1. Canonical tree walk implemented as parser-ast-node. a real pre-requisite to
+   sane user implementation of transforms.
+
+2. implement a error recovery routine. This involves marking tokens as being
+   sync tokens, and generating a recovery function that scans for those tokens.
+
+   -> Phase 2: optimization
+
+1. Implement packrat backtrack optimization.
+
+   the lifetime of a memoization table for a recursion will be set
+   by term relation operators, so that unusual things like longest or
+   lazy can be implemented correctly.
+
+memoization is part of the input domain. The lifetime of memoization
+needs to be a property on the input stack.
+
+2. make left recursion work.
+
+   -> Phase 3: Experiments
+
+   ->Terminology
+
+My reference for parsing terminology is the Dragon Book:
+
+Compilers
+Principles,Techniques,and Tools
+Alfred V.Aho, Ravi Sethi, Jeffrey D.Ullman
+1986, Addison Wesley")

@@ -1,0 +1,8 @@
+(:summary    "Utilities for BibTeX"
+ :created    "2007"
+ :updated    "2007"
+ :license    "GPL-3"
+ :authors    (("bzg AT altern DOT org"))
+ :maintainer ("bzg AT altern DOT org")
+ :provided   (bibtex-utils)
+ :keywords   (bibtex))

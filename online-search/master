@@ -1,0 +1,9 @@
+(:summary    "Online dictionary or intelligent api search engine for developers"
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-2"
+ :authors    (("Denny Zhang" . "markfilebat@126.com"))
+ :maintainer ("Denny Zhang" . "markfilebat@126.com")
+ :provided   (online-search)
+ :required   ((("url" url)))
+ :keywords   (search))

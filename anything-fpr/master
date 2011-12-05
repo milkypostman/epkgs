@@ -1,0 +1,28 @@
+(:summary    "Finding any resource of a project"
+ :updated    "20090219"
+ :license    "GPL-2"
+ :authors    (("SAKURAI, Masashi" . "m.sakurai@kiwanami.net"))
+ :maintainer ("SAKURAI, Masashi" . "m.sakurai@kiwanami.net")
+ :provided   (anything-find-project-resources)
+ :required   ((("cl" cl)))
+ :keywords   (anything files project)
+ :homepage   "https://github.com/kiwanami/emacs-anything-fpr"
+ :commentary "\
+The command `anything-find-resource' emulates the eclipse command
+\"Open Resource\" [Shift-Ctrl-R].  The project root directory is
+automatically detected by `anything-find-resource--project-filep'
+upwards in the directory tree from the directory of
+`buffer-file-name'.  If the editing file does not belong to some
+project, namely could not find the project root directory, this
+command enumerates files in current directory.
+
+Maybe following elisps are similar to this program.
+FindFileInProject : http://www.emacswiki.org/emacs/FindFileInProject
+project-root.el : http://www.emacswiki.org/emacs/AnythingSources
+jde-find-class-source : http://www.emacswiki.org/emacs/JdeeVsEclipse
+
+Configuration:
+
+(require 'anything)
+(require 'anything-find-project-resources)
+(global-set-key (kbd \"M-r\") 'anything-find-resource)")

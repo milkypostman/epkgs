@@ -1,0 +1,2 @@
+(:summary    "Transformation from HSV to RGB"
+ :provided   (hsv2rgb))

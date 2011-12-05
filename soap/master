@@ -1,0 +1,29 @@
+(:summary    "Simple Object Access Protocol support for Emacs"
+ :created    "2002"
+ :updated    "2002"
+ :license    "GPL-2"
+ :authors    (("Edward O'Connor" . "ted@oconnor.cx"))
+ :maintainer ("Edward O'Connor" . "ted@oconnor.cx")
+ :provided   (soap)
+ :required   ((("url" url)
+	       ("xml" xml)))
+ :keywords   (comm processes tools)
+ :homepage   "http://edward.oconnor.cx/elisp"
+ :commentary "\
+You should always be able to find the latest version here:
+
+           <URL:http://edward.oconnor.cx/elisp/soap.el>
+
+This is the barest of beginnings of SOAP support for Emacs. It
+really doesn't do much of anything; to see how to use it, see
+google.el. Someone who cares about SOAP should probably make
+this into an actual SOAP implementation.
+
+This code requires a CVS version of the URL package, which you
+may find here:
+
+        <URL:http://savannah.gnu.org/projects/url/>
+
+TODO: I'd like to change this to use http-{get,post}.el instead of
+      URL, but it looks like http-post.el isn't full-featured enough.
+      Perhaps I'll send them a patch at some point.")

@@ -1,0 +1,5 @@
+(:summary    "Copy a directory"
+ :updated    "20050706"
+ :license    "GPL-2"
+ :provided   (copy-directory)
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/file-handling")

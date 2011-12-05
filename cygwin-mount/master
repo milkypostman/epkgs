@@ -1,0 +1,9 @@
+(:summary    "Teach EMACS about cygwin styles and mount points"
+ :created    "1997"
+ :updated    "20040114"
+ :license    "GPL-2"
+ :authors    (("Michael Cook" . "mcook@xemacs.org"))
+ :maintainer ("Michael Cook" . "mcook@xemacs.org")
+ :provided   (cygwin-mount)
+ :required   ((("ange-ftp" ange-ftp)))
+ :keywords   (cygwin files mount))

@@ -1,0 +1,12 @@
+(:summary    "Personal Video Recorder"
+ :created    "2004"
+ :updated    "2004"
+ :license    "GPL-2"
+ :authors    (("Lars Magne Ingebrigtsen" . "lmi@gnus.org"))
+ :maintainer ("Lars Magne Ingebrigtsen" . "lmi@gnus.org")
+ :provided   (pvr)
+ :required   ((("cl" cl)
+	       ("time-date" time-date)
+	       ("xml" xml)))
+ :keywords   (extensions processes)
+ :homepage   "https://github.com/larsmagne/pvr.el")

@@ -1,0 +1,8 @@
+(:summary    "Switches between tcl and sgml(html) modes"
+ :created    "2004"
+ :updated    "20041119"
+ :license    "Apache-2.0"
+ :authors    (("David N. Welton" . "davidw@dedasys.com"))
+ :maintainer ("David N. Welton" . "davidw@dedasys.com")
+ :provided   (two-mode-mode)
+ :homepage   "http://www.dedasys.com/freesoftware")

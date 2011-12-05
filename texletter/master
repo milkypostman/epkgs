@@ -1,0 +1,35 @@
+(:summary    "LaTeX letter templates"
+ :created    "2003"
+ :updated    "20030113"
+ :license    "GPL-2"
+ :authors    (("Stefan Kamphausen" . "mail@skamphausen.de"))
+ :maintainer ("Stefan Kamphausen" . "mail@skamphausen.de")
+ :provided   (texletter)
+ :keywords   (tex wp)
+ :homepage   "http://www.skamphausen.de/cgi-bin/ska/Software"
+ :commentary "\
+TEXLetter on the Web:
+Main page:
+http://www.skamphausen.de/software/skamacs/texletter.html
+German intro:
+http://www.skamphausen.de/xemacs/lisp/texletter.html
+
+This package let's you create your LaTeX letters from a collection
+of simple template files. All those are the real LaTeX files
+without any dynamic capabilities.
+
+Installation:
+(autoload 'texletter-create-letter
+          \"texletter\"
+          \"Create LaTeX letters from templates.\"
+          t)
+
+And if you want to:
+(autoload 'texletter-install-templates-as-menu
+          \"texletter\"
+          \"Adding menu items for all templates.\"
+          t)
+(texletter-install-templates-as-menu)
+
+Actually this is a quite primitve module - well it was my first
+which kind of deserved the name \"module\"...")

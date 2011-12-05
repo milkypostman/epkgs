@@ -1,0 +1,14 @@
+(:summary    "Default filename when saving a diff"
+ :created    "2003"
+ :updated    "2008"
+ :license    "GPL-3"
+ :authors    (("Kevin Ryde" . "user42@zip.com.au"))
+ :maintainer ("Kevin Ryde" . "user42@zip.com.au")
+ :provided   (diff-save-buffer)
+ :keywords   (files)
+ :wikipage   "DiffSaveBuffer"
+ :commentary "\
+diff-save-buffer sets up an initial .diff filename for save-buffer in an
+M-x diff or M-x vc-diff buffer, based on the parent file being diffed.
+
+Designed for Emacs 21 and 22, works in XEmacs 21.")

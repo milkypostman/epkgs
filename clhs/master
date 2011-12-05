@@ -1,0 +1,18 @@
+(:summary    "Access the Common Lisp HyperSpec (CLHS)"
+ :created    "2008"
+ :updated    "2008"
+ :provided   (clhs)
+ :required   ((("browse-url" browse-url)
+	       ("cl" cl)
+	       ("thingatpt" thingatpt)
+	       ("url" url)))
+ :keywords   (ansi\ cl common\ lisp emacs hyperspec lisp)
+ :homepage   "http://www.podval.org/~sds/software.html"
+ :commentary "\
+Kent Pitman and the Harlequin Group (later Xanalys) have made the
+text of the \"American National Standard for Information Technology --
+Programming Language -- Common Lisp\", ANSI X3.226-1994 available on
+the WWW, in the form of the Common Lisp HyperSpec.  This package
+makes it convenient to peruse this documentation from within Emacs.
+
+This is inspired by the Erik Naggum's version of 1997.")

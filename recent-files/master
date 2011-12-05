@@ -1,0 +1,7 @@
+(:summary    "Maintain menu of recently opened files"
+ :created    "1994"
+ :updated    "1995"
+ :license    "GPL-2"
+ :provided   (recent-files)
+ :keywords   (files menu)
+ :wikipage   "RecentFiles")

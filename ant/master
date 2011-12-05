@@ -1,0 +1,4 @@
+(:summary    "A major mode for editing ant files"
+ :license    "public-domain"
+ :provided   (ant)
+ :wikipage   "AntMode")

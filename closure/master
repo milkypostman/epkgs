@@ -1,0 +1,10 @@
+(:summary    "Experimental closure prototypes"
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-3"
+ :authors    (("Mike Mattie"))
+ :maintainer ("Mike Mattie")
+ :provided   (closure)
+ :commentary "\
+these are experimental prototypes. The final versions need to be
+implemented at the C level.")

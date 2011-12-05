@@ -1,0 +1,17 @@
+(:summary    "Highlight the active window"
+ :created    "20060919"
+ :updated    "2006"
+ :license    "GPL-2"
+ :authors    (("Martin Blais" . "blais@furius.ca"))
+ :maintainer ("Martin Blais" . "blais@furius.ca")
+ :provided   (highwin)
+ :keywords   (faces windows)
+ :homepage   "http://furius.ca/pubcode"
+ :commentary "\
+Code used to highlight which is the active window.
+
+This defines a function that can be bound to your favourite command for
+switching windows::
+
+  (defadvice other-window (after highwin-advice activate)
+    (highwin-advice))")

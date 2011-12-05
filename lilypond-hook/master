@@ -1,0 +1,29 @@
+(:summary    "Automatically display and play lilypond Score"
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-2"
+ :authors    (("Martyn Jago"))
+ :maintainer ("Martyn Jago")
+ :provided   (lilypond-hook)
+ :keywords   (engraving lilypond music score)
+ :homepage   "https://github.com/mjago/lilypond-hook"
+ :commentary "\
+This package provides an Emacs post-save hook to automate the generation
+and display of Music Score performed in LilyPond (pdf) and also plays the
+Score in question via Midi player. These automated actions take place on
+Saving any document with the extension \".ly\"
+
+Customizable Options:
+
+Below are customizable option list:
+
+Installation:
+
+Put lilypond-hook.el in your load-path.
+
+Add the following to your ~/.emacs startup file.
+
+(require 'lilypond-hook)
+
+
+Location of LilyPond must be set...")

@@ -1,0 +1,17 @@
+(:summary    "Incremental X minor mode"
+ :created    "20101011"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Paul M. Rodriguez" . "paulmrodriguez@gmail.com"))
+ :maintainer ("Paul M. Rodriguez" . "paulmrodriguez@gmail.com")
+ :provided   (iread)
+ :required   ((("cl" cl)))
+ :keywords   (emacs)
+ :homepage   "http://gopher.ruricolist.com:70/lisp"
+ :wikipage   "IncrementalRead"
+ :commentary "\
+Iread is Isearch without the search---a utility for acting
+incrementally on user input.  It is implemented as a minor mode,
+with a number of normal and abnormal hooks.  But all the moving
+parts are encased by the macro `defiread', which lets you build up
+incremental behavior by passing keyword arguments.")

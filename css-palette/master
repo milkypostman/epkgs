@@ -1,0 +1,34 @@
+(:created    "2008"
+ :updated    "2008"
+ :license    "GPL-3"
+ :provided   (css-palette)
+ :required   ((("cl" cl)
+	       ("nxhtml" css-color)))
+ :keywords   (css extensions multimedia processes tools)
+ :homepage   "http://niels.kicks-ass.org/"
+ :wikipage   "CssPalette"
+ :commentary "\
+css-palette defines commands to have \"palettes\" inside a block
+comment to circumvent the absence of (color or other) variable
+definitions in the CSS specification. It can import and export GIMP
+color palettes. See the documentation of `css-palette-minor-mode'
+for details of usage.
+
+Installation:
+
+Something like:
+
+put it in your load-path. 
+
+(autoload 'css-palette-minor-mode \"css-palette\" \"\" t)
+(add-hook 'css-mode-hook
+	  (lambda ()
+	    (css-palette-minor-mode t)))
+
+Notes:
+
+css-palette depends on css-color.el to do font-locking.
+
+ccs-palette is orthogonal to css-mode, so it could probably be used
+inside other language modes, provided they support multiline block
+comments.")

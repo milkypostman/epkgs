@@ -1,0 +1,60 @@
+(:created    "200931"
+ :license    "GPL-3"
+ :authors    (("Thierry Volpiatto"))
+ :maintainer ("Thierry Volpiatto")
+ :provided   (anything-ipython)
+ :required   ((("cl" cl)
+	       (nil ipython)))
+ :keywords   (ipython python)
+ :homepage   "http://mercurial.intuxication.org/hg/anythingipython"
+ :commentary "\
+==========
+
+Tested on emacs23.1 with python2.6, ipython-9.1 and python-mode.el.
+This file fix also normal completion (tab without anything) in the ipython-shell.
+This file reuse some code of ipython.el.
+
+ Dependencies:
+ ============
+
+ ipython (http://ipython.scipy.org/), ipython.el, python-mode.el.
+ It's better to have rlcompleter2 (http://codespeak.net/rlcompleter2/) 
+ Note that to use rlcompleter2, you have to add these lines in your
+ your ~/.ipython/ipy_user_conf.py
+
+    import rlcompleter2
+    rlcompleter2.setup()
+
+ You may want to use also anything-show-completion.el:(facultative)
+ http://www.emacswiki.org/cgi-bin/emacs/anything-show-completion.el
+
+ Install: 
+ =======
+
+Setup anything-ipython:
+Put this file in your load path.
+Add to .emacs:
+
+(require 'anything-ipython)
+(define-key py-mode-map (kbd \"M-<tab>\") 'anything-ipython-complete)
+(define-key py-shell-map (kbd \"M-<tab>\") 'anything-ipython-complete)
+(define-key py-mode-map (kbd \"C-c M\") 'anything-ipython-import-modules-from-buffer)
+
+If you want to use anything-show-completion.el,(facultative)
+<http://www.emacswiki.org/cgi-bin/emacs/anything-show-completion.el>
+add these lines:
+
+(when (require 'anything-show-completion nil t)
+  (use-anything-show-completion 'anything-ipython-complete
+                                '(length initial-pattern)))
+
+ Usage: 
+ =====
+1) From your *.py file, start ipython interpreter with C-c !
+2) Import module(s) you need for completion from interpreter.
+   e.g \"import os\"
+   You can also import all import entries of your current *.py file
+   with `anything-ipython-import-modules-from-buffer'.
+   Note that `py-execute-buffer' (C-c C-c) will load also all modules
+   of your .py file.
+3) Use M-x anything-ipython-complete or M-<tab> to have completion.")

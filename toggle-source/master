@@ -1,0 +1,15 @@
+(:summary    "Toggle between source and implementation files"
+ :created    "2000"
+ :updated    "2000"
+ :license    "GPL-2"
+ :authors    (("Steve Kemp" . "skx@tardis.ed.ac.uk"))
+ :maintainer ("Steve Kemp" . "skx@tardis.ed.ac.uk")
+ :provided   (toggle-source)
+ :keywords   (tools)
+ :commentary "\
+This is a piece of simple code that will toggle between source
+ and header files.
+
+  There is also a function for loading a file on the systems include
+path - this probably shouldn't be included, but it almost makes sense
+to have the C/C++ programmers file handling pieces of code together.")

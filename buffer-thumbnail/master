@@ -1,0 +1,6 @@
+(:created    "2005"
+ :updated    "2005"
+ :provided   (buffer-thumbnail)
+ :required   (((nil xpm-fulmination)))
+ :commentary "\
+Maintain an XPM interpretation of buffer contents.")

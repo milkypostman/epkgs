@@ -1,0 +1,8 @@
+(:created    "20010228"
+ :updated    "20010306"
+ :license    "GPL-2"
+ :authors    (("Michel Schinz" . "schinz@alphanet.ch"))
+ :maintainer ("Michel Schinz" . "schinz@alphanet.ch")
+ :provided   (desktop-kde-recent)
+ :keywords   (desktop kde)
+ :homepage   "http://lampwww.epfl.ch/~schinz/elisp")

@@ -1,0 +1,82 @@
+(:summary    "Disk archiver (DAR) interface for emacs"
+ :created    "2006"
+ :updated    "2006"
+ :license    "GPL-2"
+ :authors    (("Stefan Reichoer," . "stefan@xsteve.at"))
+ :maintainer ("Stefan Reichoer," . "stefan@xsteve.at")
+ :provided   (dar)
+ :homepage   "http://www.xsteve.at/prg/emacs/dar"
+ :commentary "\
+dar.el provides an Emacs interface for DAR from:
+http://dar.linux.free.fr/
+
+The latest revision of dar.el can be found at:
+http://www.xsteve.at/prg/emacs/dar.html
+
+dar can be used to create backups and store them on harddisk
+dar.el allows to define backup rules to create full and incremental
+backups from various file trees.
+A dry-run option allows to test your backup rules easily.
+
+To use this package, put the following in your .emacs:
+(require 'dar)
+(setq dar-backup-rules
+      '((all
+         (backup-dir \"~/bak/dar\")
+         (log-file \"~/bak/dar/dar-el.log\")
+         (backup-interval-differential daily)
+         (backup-interval-full monthly)
+         )
+        (create
+         (compress bzip2)
+         )
+        (\"xsteve-planner\"
+         (root \"~/Plans/\")
+         (backup-interval-full weekly)
+         )
+        (\"xsteve-wiki\"
+         (root \"~/data/wiki/\")
+         (exclude-directories (\".hg\"))
+         )
+        (\"xsteve-config\"
+         (root \"~/xsteve-config/\")
+         (backup-interval-differential weekly)
+        )))
+
+The dar-backup-rules provide the rules for your backups.
+The entry 'all is considered for all dar operations:
+ - backup-dir: Specify the path for your backup files
+ - log-file:   Specify the log file for archiving operations
+ - backup-interval-differential: can be daily, weekly or monthly
+ - backup-interval-full: can be daily, weekly or monthly
+
+The entry 'create holds the rules for archive creation
+ - (compress bzip2) enables bzip2 compression for the archived files
+
+The entries xsteve-planner, xsteve-wiki and xsteve-config specify rule-sets
+ - root: the root directory for the backup files
+ - exclude-directories: A list of directories that should not be archived
+
+The entries for create and all can be overridden for a specific rule
+
+When you have written your dar-backup-rules, start viewing your
+(initially empty list) via M-x dar-backups
+
+The following commands are useful for the first experiments:
+e ... dar-toggle-dry-run
+v ... dar-toggle-verbose-run
+r ... dar-toggle-rule-debug
+
+The backup rule description above works for my use cases. Please
+report your needs and enhancement ideas, I would like to see dar.el
+as the full featured backup frontend for emacs.
+
+Here is a recipe to automate the backup creation.
+Use the midnight package to schedule a backup for 3:00am
+
+(defun dar-backup-schedule-backup ()
+  (message \"dar-backup-schedule-backup run at %s\" (current-time-string))
+  (run-at-time \"3:00am\" nil 'dar-backup-all-rule-sets))
+
+(require 'midnight)
+(add-hook 'midnight-hook 'dar-backup-schedule-backup)")

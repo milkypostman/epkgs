@@ -1,0 +1,9 @@
+(:created    "2011"
+ :updated    "2011"
+ :license    "as-is"
+ :provided   (ebib)
+ :required   ((("bibtex" bibtex)
+	       ("cl" cl)
+	       ("emacs" easymenu)))
+ :homepage   "https://github.com/joostkremers/ebib"
+ :wikipage   "Ebib")

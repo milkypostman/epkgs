@@ -1,0 +1,17 @@
+(:summary    "IRC client for Emacsen"
+ :created    "19980928"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("Daiki Ueno" . "ueno@unixuser.org"))
+ :maintainer ("Daiki Ueno" . "ueno@unixuser.org")
+ :provided   (luna lunit lunit-report riece riece-000 riece-200 riece-300 riece-400 riece-500 riece-addon riece-addon-modules riece-alias riece-async riece-biff riece-button riece-cache riece-channel riece-coding riece-commands riece-compat riece-complete riece-ctcp riece-ctlseq riece-debug riece-desktop-notify riece-display riece-doctor riece-emacs riece-epg riece-eval riece-eval-ruby riece-filter riece-foolproof riece-globals riece-google riece-guess riece-handle riece-hangman riece-highlight riece-history riece-icon riece-identity riece-ignore riece-irc riece-kakasi riece-keepalive riece-keyword riece-layout riece-log riece-lsdb riece-mcat riece-mcat-japanese riece-menu riece-message riece-mini riece-misc riece-mode riece-naming riece-ndcc riece-options riece-package-info riece-rdcc riece-ruby riece-server riece-shrink-buffer riece-signal riece-skk-kakutei riece-toolbar riece-twitter riece-unread riece-url riece-user riece-version riece-xemacs riece-xface riece-xfaceb riece-yank test-riece-addon-1 test-riece-addon-2 test-riece-addon-3 test-riece-addon-4 test-riece-addon-5 test-riece-addon-6 url-riece)
+ :required   ((("cl" cl)
+	       ("emacs" derived easymenu font-lock image wid-edit)
+	       ("imenu" imenu)
+	       ("lsdb" lsdb)
+	       ("pp" pp)
+	       ("ring" ring)
+	       ("url" url url-irc)))
+ :keywords   (irc riece)
+ :homepage   "http://www.nongnu.org/riece"
+ :wikipage   "RieceIrcClient")

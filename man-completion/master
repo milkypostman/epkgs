@@ -1,0 +1,29 @@
+(:summary    "Completion for M-x man"
+ :created    "2008"
+ :updated    "2009"
+ :license    "GPL-3"
+ :authors    (("Kevin Ryde" . "user42@zip.com.au"))
+ :maintainer ("Kevin Ryde" . "user42@zip.com.au")
+ :provided   (man-completion)
+ :required   ((("cl" cl)
+	       ("man" man)
+	       ("thingatpt" thingatpt)))
+ :keywords   (data)
+ :commentary "\
+This spot of code extends M-x man with completion of man page names and
+filenames, and a new default page name at point which collapses hyphens
+(like nroff uses in formatted pages) and can optionally transform some
+perl class names.
+
+iman.el does similar page name completion, with info documents too, but
+not filename completion.  As of rev 2.22 it has the section number like
+\"cat(1)\" and sets \"require-match\" so if you've got cat(1) and catdoc(1)
+then you end up having to type \"cat(\" to differentiate, which is a bit
+annoying.
+
+woman.el does a similar completion too, by going through /usr/share/man
+etc to get a filename.  That's also what \"bash_completion\" does
+(http://www.caliban.org/bash/index.shtml#completion).  But the strategy
+in man-completion.el is to ask man what pages are available, rather than
+digging.  It can potentially get aliases man has found with lexgrog but
+which don't have symlinks (or \".so\" pages).")

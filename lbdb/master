@@ -1,0 +1,32 @@
+(:created    "2001"
+ :updated    "2001"
+ :license    "GPL-2"
+ :provided   (lbdb)
+ :required   ((("cl" cl)))
+ :homepage   "http://www.davep.org/emacs"
+ :commentary "\
+lbdb.el is an emacs interface to the Little Brother's Database. You can
+find out more about LBDB at <URL:http://www.spinnaker.de/lbdb/>.
+
+A number of commands are provided, they are:
+
++-------------------+---------------------------------------------+
+|Function           |Description                                  |
++-------------------+---------------------------------------------+
+| lbdb              |Perform an interactive query. You will be    |
+|                   |prompted for the text to search for.         |
++-------------------+---------------------------------------------+
+| lbdb-region       |Perform a lbdb query using the content of the|
+|                   |currently marked region as the text to search|
+|                   |for.                                         |
++-------------------+---------------------------------------------+
+| lbdb-maybe-region |If a mark is active do lbdb-region, if no    |
+|                   |mark is active do lbdb.                      |
++-------------------+---------------------------------------------+
+| lbdb-last         |Recall and work with the results of the last |
+|                   |query you performed.                         |
++-------------------+---------------------------------------------+
+
+The latest lbdb.el is always available from:
+
+  <URL:http://www.davep.org/emacs/#lbdb.el>")

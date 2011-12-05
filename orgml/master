@@ -1,0 +1,15 @@
+(:summary    "Export org mode files as xml"
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-2"
+ :authors    (("Dhruv Bansal" . "dhruv@ph.utexas.edu"))
+ :maintainer ("Dhruv Bansal" . "dhruv@ph.utexas.edu")
+ :provided   (orgml orgml-blocks orgml-common orgml-heading orgml-plain-lists orgml-properties orgml-text)
+ :keywords   (orgmode xml)
+ :homepage   "https://github.com/dhruvbansal/orgml"
+ :commentary "\
+OrgML is a package to export Org Mode files to XML. The XML
+produced has the same semantic content as the original Org text but
+is easily machine readable.
+
+temporary, will go once this is a real package")

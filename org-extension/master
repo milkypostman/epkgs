@@ -1,0 +1,10 @@
+(:summary    "Some extensions for Org mode"
+ :created    "20080617"
+ :updated    "20080727"
+ :license    "GPL-3"
+ :authors    (("Andy Stewart" . "lazycat.manatee@gmail.com"))
+ :maintainer ("Andy Stewart" . "lazycat.manatee@gmail.com")
+ :provided   (org-extension)
+ :keywords   (org)
+ :commentary "\
+This packages have some extensions for more quickly operation in Org mode.")

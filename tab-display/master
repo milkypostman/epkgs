@@ -1,0 +1,13 @@
+(:summary    "Tab display code for managing tabs visually"
+ :created    "2000"
+ :updated    "2000"
+ :license    "GPL-2"
+ :authors    (("Kevin A. Burton" . "burton@openprivacy.org"))
+ :maintainer ("Kevin A. Burton" . "burton@openprivacy.org")
+ :provided   (tab-display)
+ :required   ((("emacs" disp-table easymenu font-lock)))
+ :keywords   (display tab width)
+ :commentary "\
+This is an attempt to handle tab display in a way that makes things obvious
+when working with buffers.  I personally don't like using hard \\t chars in my
+source files because of width differences.")

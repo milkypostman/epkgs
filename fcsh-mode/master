@@ -1,0 +1,9 @@
+(:summary    "Adobe Flex Compiler Shell helper"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-2"
+ :authors    (("Denis Martinez" . "deuns.martinez@gmail.com"))
+ :maintainer ("Denis Martinez" . "deuns.martinez@gmail.com")
+ :provided   (fcsh-mode)
+ :required   ((("emacs" comint)))
+ :keywords   (actionscript adobe fcsh flash flex mxml))

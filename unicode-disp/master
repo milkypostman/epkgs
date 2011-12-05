@@ -1,0 +1,29 @@
+(:summary    "Display-table fallbacks for some unicode chars"
+ :created    "2008"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Kevin Ryde" . "user42@zip.com.au"))
+ :maintainer ("Kevin Ryde" . "user42@zip.com.au")
+ :provided   (unicode-disp)
+ :required   ((("emacs" advice cus-face disp-table)))
+ :homepage   "http://user42.tuxfamily.org/unicode-disp"
+ :commentary "\
+M-x unicode-disp changes the display table to show selected unicode chars
+as ascii equivalents or near equivalents.  The chars affected are a
+personal selection of the worst bits of unicode encountered, just with
+the aim of making them displayable on an ascii or latin1 tty.  If nothing
+else it might give you ideas for display table mangling of your own.
+
+See latin1-disp.el for similar display table setups for otherwise
+undisplayable characters from the iso-8859-N charsets, and some cyrillic.
+
+Quite how much you want to transform and how prominent you want it is a
+matter of personal preference.  Displaying a char as a sequence like \"->\"
+can make text lines come out too long, or tables etc not align, sometimes
+very badly.  A face like `escape-glyph' can make it clear you're looking
+at non-ascii, except it becomes very distracting if the screen is
+littered with it.
+
+The variant hyphens and quotes currently treated by `unicode-disp' are
+considered fairly pointless and may as well display as plain ascii \"-\" as
+necessary, with no special highlighting.")

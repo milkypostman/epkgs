@@ -1,0 +1,3 @@
+(:summary    "Play phutball in Emacs"
+ :provided   (phutball)
+ :wikipage   "PhutballMode")

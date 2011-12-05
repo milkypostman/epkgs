@@ -1,0 +1,26 @@
+(:created    "2004"
+ :updated    "20040711"
+ :provided   (mousymacro)
+ :homepage   "http://pagesperso-systeme.lip6.fr/Christian.Queinnec/WWW/elisp.html"
+ :commentary "\
+The purpose of this package is to allow to run Emacs functions
+with the sole help of the mouse. For instance, when indexing a
+book, it is easier to index words by simply clicking (or dragging)
+on them rather than moving the dot towards them then running
+\\C-x\\C-e (as one of possible choice).  With MousyMacro, you just
+define what clicks mean and then it is up to you to click
+wherever you want.  Usually the left button means \"run the
+currently associated macro\", the middle button means \"stop
+MousyMacro\" and the right one allows to choose with a menu the
+macro to be associated to the left button as well as other actions
+such as Undo! The Left and Middle buttons can be programmed.
+
+Installation and Demonstration:
+
+To use this package, add to your .emacs (taking care of load-path)
+           (require 'mousymacro)
+MousyMacro is under your fingers with
+     \\M-x mousy-macro
+Click on the right button to see the defaults, then choose the \"funny\"
+item, then click where you want in the buffer and observe the Minibuffer.
+Click on the middle button to stop MousyMacro.")

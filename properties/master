@@ -1,0 +1,54 @@
+(:summary    "Non-intrusive file local variables"
+ :created    "2002"
+ :updated    "2002"
+ :license    "GPL-2"
+ :authors    (("Thomas Link"))
+ :maintainer ("Thomas Link")
+ :provided   (properties)
+ :required   ((("tellib" tellib)))
+ :homepage   "http://members.a1.net/t.link/CompEmacsProperties.html"
+ :commentary "\
+;---(:excerpt-beg properties :name desc)---
+;---(:excerpt-source \"~/Etc/TL-Wiki/CompEmacsProperties\")---
+
+Store file local variables without changing the file's contents. Add the
+variable's symbol to `properties-list', and the variable will be
+automatically saved and restored.
+
+In addition, overlays can be stored too -- see `properties-overlays'.
+
+By default, the properties of file =/there/here/this.txt= will be stored
+in =/there/here/.props/this.txt= -- see `properties-subdir'.
+
+Installation: Put (require 'properties) (properties-install) into your
+startup/user init file.
+
+
+*** Commands
+
+`properties-add' :: Add a variable to the file's property list.
+
+`properties-remove' :: Remove a variable from the file's property list.
+
+`properties-write' :: Write the property file.
+
+`properties-install', `properties-deinstall' :: Add and remove
+properties.el specific hooks.
+
+
+*** Variables
+
+`properties-list' :: A list of properties that should be stored in the
+property file.
+
+`properties-overlays' :: A list of symbols or plists identifying overlays
+that should be stored.
+
+`properties-overlay-ignored-properties' :: Ignore these properties when
+dumping overlays.
+
+`properties-file' :: A buffer local variable defining the properties
+file -- relative to the current buffer's/file's location. Use this to
+force the use of a non-standard properties file.
+
+;---(:excerpt-end properties :name desc)---")

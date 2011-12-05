@@ -1,0 +1,45 @@
+(:summary    "The Lovely Sister Database"
+ :created    "2002"
+ :updated    "2002"
+ :license    "GPL-2"
+ :authors    (("Daiki Ueno" . "ueno@unixuser.org"))
+ :maintainer ("Daiki Ueno" . "ueno@unixuser.org")
+ :provided   (lsdb)
+ :required   ((("apel" pces poem product static)
+	       ("emacs" image)
+	       ("flim" mime)
+	       ("mew" mew)))
+ :keywords   (address book)
+ :homepage   "http://lsdb.sourceforge.jp"
+ :wikipage   "LovelySisterDataBase"
+ :commentary "\
+For Semi-gnus:
+(autoload 'lsdb-gnus-insinuate \"lsdb\")
+(autoload 'lsdb-gnus-insinuate-message \"lsdb\")
+(add-hook 'gnus-startup-hook 'lsdb-gnus-insinuate)
+(add-hook 'message-setup-hook
+          (lambda ()
+            (define-key message-mode-map \"\\M-\\t\" 'lsdb-complete-name)))
+(add-hook 'gnus-summary-mode-hook
+          (lambda ()
+            (define-key gnus-summary-mode-map \":\" 'lsdb-toggle-buffer)))
+
+For Wanderlust, put the following lines into your ~/.wl:
+(autoload 'lsdb-wl-insinuate \"lsdb\")
+(add-hook 'wl-init-hook 'lsdb-wl-insinuate)
+(add-hook 'wl-draft-mode-hook
+          (lambda ()
+            (define-key wl-draft-mode-map \"\\M-\\t\" 'lsdb-complete-name)))
+(add-hook 'wl-summary-mode-hook
+          (lambda ()
+            (define-key wl-summary-mode-map \":\" 'lsdb-wl-toggle-buffer)))
+
+For Mew, put the following lines into your ~/.mew:
+(autoload 'lsdb-mew-insinuate \"lsdb\")
+(add-hook 'mew-init-hook 'lsdb-mew-insinuate)
+(add-hook 'mew-draft-mode-hook
+          (lambda ()
+            (define-key mew-draft-header-map \"\\M-I\" 'lsdb-complete-name)))
+(add-hook 'mew-summary-mode-hook
+          (lambda ()
+            (define-key mew-summary-mode-map \"L\" 'lsdb-toggle-buffer)))")

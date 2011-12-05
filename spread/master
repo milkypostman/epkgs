@@ -1,0 +1,18 @@
+(:summary    "A very simple spreadsheet mode for GNU emacs"
+ :updated    "2003"
+ :license    "GPL-2"
+ :provided   (spread)
+ :wikipage   "SpreadMode"
+ :commentary "\
+written by Guillaume Marceau (zfhrdop2ww001@sneakemail.com) from
+Benjamin C. Pierce original code and idea.
+
+Installation instructions:
+    - Place spread.el in a directory on your Emacs load path
+    - Add the following lines to your .emacs file:
+        (setq auto-mode-alist (cons '(\"\\\\.spr$\"  . spread-mode)
+                                 auto-mode-alist))
+        (autoload 'spread-mode \"spread\")
+
+Complete documentation appears in the header of the spread-mode
+function, at the top of this file.")

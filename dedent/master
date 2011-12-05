@@ -1,0 +1,7 @@
+(:summary    "Add and remove indentation during copy and paste"
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-3"
+ :provided   (dedent)
+ :required   ((("cl" cl)))
+ :homepage   "https://github.com/deactivated/dedent-el")

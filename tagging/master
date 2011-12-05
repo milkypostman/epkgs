@@ -1,0 +1,6 @@
+(:summary    "A global Status bar for emacs"
+ :authors    (("Conrad Barski, M.D."))
+ :maintainer ("Conrad Barski, M.D.")
+ :provided   (tagging)
+ :required   ((("cl" cl)))
+ :wikipage   "Tagging")

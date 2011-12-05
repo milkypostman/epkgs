@@ -1,0 +1,7 @@
+(:summary    "Expense tracking user interface"
+ :created    "2009"
+ :updated    "2011"
+ :provided   (etrack)
+ :required   ((("cl" cl)
+	       ("emacs" comint)))
+ :homepage   "http://www.gnuvola.org/software/etrack")

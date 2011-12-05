@@ -1,0 +1,4 @@
+(:authors    (("Scott Evans" . "gse@antisleep.com"))
+ :maintainer ("Scott Evans" . "gse@antisleep.com")
+ :provided   (gse-create-dated-file)
+ :homepage   "http://antisleep.com/elisp")

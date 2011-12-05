@@ -1,0 +1,44 @@
+(:summary    "Elisp mode to post diary entries to advogato.org"
+ :created    "2002"
+ :updated    "2002"
+ :license    "GPL-2"
+ :authors    (("Ramakrishnan M" . "rkrishnan@debian.org"))
+ :maintainer ("Ramakrishnan M" . "rkrishnan@debian.org")
+ :provided   (advogato)
+ :required   ((("url" url)
+	       ("xml-rpc" xml-rpc)))
+ :homepage   "http://www.zerobeat.in"
+ :commentary "\
+advogato.el implements the XML-RPC interface to advogato.org
+Needs xml-rpc.el from http://elisp.info/
+
+For ease of use:
+I use the following commands in my .emacs file:
+
+(require 'advogato) ;; will autoload advogato.el 
+(global-set-key \"\\C-cbs\" 'advogato-start-post)
+
+C-c b s will switch to a new buffer where you can compose a
+post.
+
+C-x C-s    -- post-and-publish current buffer to the blog.
+              Calling blogger-save-post with an prefix argument
+              (i.e. C-u C-c C-c) will prompt for which weblog
+              to use.
+
+C-c C-c    -- identical to C-x C-s, but will also bury the buffer.
+
+
+Changelog
+v1.0 -- (date?) -  elimentary mode with lots of ugly code 
+
+v1.1 -- 11 Feb 2002 - Removed `url-insert-entities-in-string' as this is now
+                      being handled at xml-rpc layer. Removes the bug which
+                      escapes HTML markups.
+v1.2 -- 11 Feb 2002 - Improved cookie support. Now can read the advogato
+                      cookies from Mozilla/galeon/url cookies file.
+v1.3 -- 11 Feb 2004 - Allow the user to set the mozilla profile name
+                      (Thanks - Muli Ben-Yehuda <mulix@mulix.org>)
+v1.4 -- 13 Feb 2004 - provide 'advogato' feature (Muli) 
+Please note once again that advogato.el needs the v1.6.1 of xml-rpc.el
+from http://elisp.info")

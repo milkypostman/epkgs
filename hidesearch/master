@@ -1,0 +1,5 @@
+(:summary    "Incremental search while hiding non-matching lines"
+ :authors    (("Craig Muth"))
+ :maintainer ("Craig Muth")
+ :provided   (hidesearch)
+ :wikipage   "HideSearch")

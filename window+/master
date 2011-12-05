@@ -1,0 +1,33 @@
+(:summary    "Extensions to `window.el'"
+ :created    "19960125"
+ :updated    "20110629"
+ :license    "GPL-2"
+ :authors    (("Drew Adams"))
+ :maintainer ("Drew Adams")
+ :provided   (window+)
+ :required   (nil
+	      (("fit-frame" fit-frame)))
+ :keywords   (internal window)
+ :commentary "\
+Extensions to `window.el'.
+
+
+ ***** NOTE: The following functions defined in `window.el' have
+             been REDEFINED HERE:
+
+ `count-windows' -
+    Only use arg MINIBUF if current frame has a minibuffer.
+
+ `special-display-popup-frame' (Emacs 24+) - Fit the frame.
+
+ `quit-window' - Call `delete-window' inside `condition-case'.
+
+ Note: Starting with Emacs 24, they moved
+ `special-display-popup-frame' to `window.el' from `frame.el'.  So
+ for my enhancement of it for Emacs 20, 21, 22, or 23, you will
+ need library `frame+.el', not `window+.el'.
+
+
+ This file should be loaded after loading the standard GNU file
+ `window.el'.  So, in your `~/.emacs' file, do this:
+ (eval-after-load \"window\" '(require 'window+))")

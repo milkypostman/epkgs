@@ -1,0 +1,9 @@
+(:summary    "Plain text reader of HTML documents"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :provided   (thumb-through)
+ :required   ((("emacs" font-lock)
+	       ("thingatpt" thingatpt)))
+ :keywords   (html)
+ :homepage   "https://github.com/apgwoz/thumb-through")

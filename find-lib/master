@@ -1,0 +1,18 @@
+(:summary    "Find files in Emacs' `load-path' with completion"
+ :created    "20020724"
+ :updated    "20040427"
+ :license    "GPL-2"
+ :authors    (("lawrence mitchell" . "wence@gmx.li"))
+ :maintainer ("lawrence mitchell" . "wence@gmx.li")
+ :provided   (find-lib)
+ :keywords   (files finding)
+ :homepage   "http://www.ph.ed.ac.uk/~s0198183"
+ :commentary "\
+Have you ever spent time searching for a .el file you know you have
+somewhere?  Or have you ever tried to remember exactly what a file
+was called.  Then this might be what you want, it is basically a
+wrapper around (find-file (locate-library \"foo.el\")), but with
+filename completion.
+
+This provides one user function `find-lib-locate-library', which
+you can bind to a key if you want.")

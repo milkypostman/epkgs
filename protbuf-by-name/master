@@ -1,0 +1,15 @@
+(:summary    "Extend protbuf.el to allow protecting specific buffer names"
+ :created    "20090703"
+ :license    "GPL-3"
+ :authors    (("Ryan C. Thompson"))
+ :maintainer ("Ryan C. Thompson")
+ :provided   (protbuf-by-name)
+ :required   ((("protbuf" protbuf)))
+ :wikipage   "ProtBufByName"
+ :commentary "\
+This library extends protbuf.el to protect specific buffers, either
+by name, regex, or function. Require this library, then M-x
+customize-group protect-buffer.
+
+If you are NoahFriedman, feel free to incorporate this
+functionality into your own package.")

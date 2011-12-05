@@ -1,0 +1,9 @@
+(:summary    "Interaction with sawfish"
+ :created    "2009"
+ :updated    "200912"
+ :license    "GPL-2"
+ :authors    (("Jeremy Hankins nowan at nowan dot org"))
+ :maintainer ("Jeremy Hankins nowan at nowan dot org")
+ :provided   (saw-client)
+ :keywords   (sawfish)
+ :wikipage   "SawClient")

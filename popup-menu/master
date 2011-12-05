@@ -1,0 +1,4 @@
+(:summary    "Pop up a menu under the mouse pointer"
+ :updated    "19991018"
+ :license    "GPL"
+ :provided   (popup-menu))

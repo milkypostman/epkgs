@@ -1,0 +1,6 @@
+(:summary    "Update autoloads according to my conventions"
+ :updated    "20070131"
+ :license    "GPL-2"
+ :provided   (update-autoloads)
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/elisp-dev-tools"
+ :wikipage   "UpdateAutoloads")

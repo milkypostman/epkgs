@@ -1,0 +1,11 @@
+(:updated    "2004"
+ :license    "GPL-2"
+ :authors    (("Piaw Na, Arthur A. Gleckler, Leandro Groisman, Phil Sung"))
+ :maintainer ("Piaw Na, Arthur A. Gleckler, Leandro Groisman, Phil Sung")
+ :provided   (gdoc-mode google-emacs-utilities gtags gtags-aliases)
+ :required   ((("cl" cl)
+	       ("emacs" wid-browse)
+	       ("etags" etags)
+	       ("tree-widget" tree-widget)))
+ :homepage   "http://code.google.com/p/google-gtags"
+ :wikipage   "GnuGlobal")

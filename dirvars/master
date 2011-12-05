@@ -1,0 +1,44 @@
+(:created    "2002"
+ :updated    "2002"
+ :license    "GPL-2"
+ :authors    (("Matt Armstrong" . "matt@xxxxxxxxxx"))
+ :maintainer ("Matt Armstrong" . "matt@xxxxxxxxxx")
+ :provided   (dirvars)
+ :keywords   (files)
+ :wikipage   "DirVarsPackage"
+ :commentary "\
+Emacs allows you to specify local variable values for use when
+editing a file either in the first line or in a local variables
+list.
+
+This file provides similar functionality, but for an entire
+directory tree.
+
+You simply place an .emacs-dirvars file in the root of your
+project's tree, and you can then set emacs variables like you would
+in a Local Variables: section at the end of a file.  E.g. the
+contents of a typical dirvars file might look like this:
+
+   ;; -*- emacs-lisp -*-
+   ;;
+   ;; This file is processed by the dirvars emacs package.  Each variable
+   ;; setting below is performed when this dirvars file is loaded.
+   ;;
+   indent-tabs-mode: nil
+   tab-width: 8
+   show-trailing-whitespace: t
+   indicate-empty-lines: t
+
+Much of this code is stolen and modified from the standard Emacs
+files.el
+
+This code refuses to set any symbol that meets any of these
+criteria (this criteria is stolen from files.el):
+
+  - the symbol is in the ignored-local-variables list
+  - the symbol has the risky-local-variable property.
+  - the symbol name ends in -hook(s), -function(s), -form(s),
+    -program, -command, or -predicate.
+
+change by Benjamin Rutt:  don't look upwards by default in a
+remote filesystem")

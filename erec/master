@@ -1,0 +1,19 @@
+(:summary    "Minor mode to record and play back audio"
+ :created    "2003"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("Jorgen Schaefer" . "forcer@forcix.cx"))
+ :maintainer ("Jorgen Schaefer" . "forcer@forcix.cx")
+ :provided   (erec)
+ :keywords   (multimedia)
+ :wikipage   "ErecMode"
+ :commentary "\
+This is a minor mode that lets you record audio fragments and plays
+them back to you when you want.
+
+By default, the following keys are bound:
+
+C-c C-r C-r  Record some piece of audio. Typing this again wil stop
+             the recording.
+C-c C-r C-p  Play the last recorded fragment back to you
+C-c C-r C-s  Save the last recorded fragment to a file")

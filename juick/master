@@ -1,0 +1,15 @@
+(:summary    "Improvement reading juick@juick.com"
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-3"
+ :authors    (("mad" . "owner.mad.epa@gmail.com"))
+ :maintainer ("mad" . "owner.mad.epa@gmail.com")
+ :provided   (jabber-geoloc jabber-ibb jabber-moods jabber-tune juick)
+ :required   ((("browse-url" browse-url)
+	       ("emacs" button)
+	       ("google-maps" google-maps)
+	       ("jabber" jabber-chatbuffer jabber-si-common)))
+ :keywords   (juick)
+ :homepage   "https://github.com/mad/emacs-juick-el"
+ :commentary "\
+Markup message recivied from juick@juick.com and some usefull keybindings.")

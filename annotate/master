@@ -1,0 +1,6 @@
+(:summary    "Simple file annotation system"
+ :created    "2005"
+ :updated    "2005"
+ :license    "GPL-2"
+ :provided   (annotate)
+ :wikipage   "Annotate")

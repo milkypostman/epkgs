@@ -1,0 +1,51 @@
+(:summary    "Jess editing mode"
+ :created    "1999"
+ :updated    "1999"
+ :license    "GPL-2"
+ :authors    (("David E. Young" . "david.young@fnc.fujitsu.com"))
+ :maintainer ("David E. Young" . "david.young@fnc.fujitsu.com")
+ :provided   (inf-jess jess-mode)
+ :required   ((("emacs" comint lisp-mode)))
+ :keywords   (jess languages)
+ :homepage   "http://jess-mode.sourceforge.net"
+ :commentary "\
+The major mode for editing Jess code. Very similar to CLIPS, which
+in turn is a close relative of Lisp. Much of the code was borrowed
+from the various Lisp-related modes developed for Emacs.
+
+For interacting with a Jess interpreter see `run-jess' in
+the `inf-jess' package.
+
+Please send enhancement requests and bug reports directly to me
+<david.young@fnc.fujitsu.com>. If you make a change yourself, or
+adapt this program to another environment, I'd appreciate hearing
+about it.
+
+To do:
+  * Figure out how to get 'font-lock' to recognize the \"=>\" and
+    \"<-\" Jess symbols.
+  * Figure out how to change the indentation rules for 'else and
+    other similar keywords.
+  * Add any more key bindings that make sense.
+  * Consider defining user-customizable variables with 'defcustom'.
+
+Change log:
+ original, 0.5       --  9 August 1999
+ patchlevel 1, 0.6   --  23 August 1999
+   * Corrected font-lock problem.
+   * Added write-file hook for paren-matching support.
+ patchlevel 2, 0.7   --  26 August 1999
+   * Fixed another font-lock problem; embedded keywords now are no
+     longer incorrectly highlighted. Thanks to Kai Grossjohann for
+     the solution.
+ patchlevel 3, 0.8   -- 17 September 1999
+   * New \"Jess\" menubar structure.
+   * Minor enhancement to font-lock (added syntax entry so '-' is
+     identified as a word constituent).
+ patchlevel 4, 1.0   -- 5 January 2000
+   * Font-lock code to identify the 'if' keyword. Thanks to Steven
+     Tamm here.
+ patchlevel 5, 1.1   -- 14 September 2000
+   * Additional keyword highlighting corresponding to latest Jess
+     releases, including improved handling of (import), (defclass),
+     (deftemplate) and (deffacts).")

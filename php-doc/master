@@ -1,0 +1,12 @@
+(:summary    "Php document helper"
+ :created    "20090101"
+ :updated    "2009"
+ :license    "GPL-2"
+ :authors    (("Ye Wenbin" . "wenbinye@gmail.com"))
+ :maintainer ("Ye Wenbin" . "wenbinye@gmail.com")
+ :provided   (php-doc)
+ :required   ((("cl" cl)
+	       ("emacs-obsolete" complete)
+	       ("tree-mode" tree-mode)
+	       ("windata" windata)))
+ :keywords   (convenience languages))

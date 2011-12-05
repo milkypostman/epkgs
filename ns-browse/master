@@ -1,0 +1,87 @@
+(:summary    "View html-enriched mail/news buffers using Netscape"
+ :created    "19961122"
+ :updated    "19990317"
+ :license    "GPL-2"
+ :authors    (("Noah Friedman" . "friedman@splode.com"))
+ :maintainer (nil . "friedman@splode.com")
+ :provided   (ns-browse)
+ :keywords   (extensions)
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
+ :commentary "\
+Updates of this program may be available via the URL
+http://www.splode.com/~friedman/software/emacs-lisp/
+
+This program allows you view html-enriched messages contained in mail or
+news buffers by sending them off to a currently-running Netscape browser.
+To do so, run the command ``ns-browse-buffer'' in the mail/news article
+buffer.  In some cases you may have to first click in that buffer if the
+cursor isn't already there (e.g. if the cursor is currently in a summary
+buffer.)
+
+If your browser is not running on the same display as your emacs
+process, you can use the command ``ns-browse-set-display'' to choose a
+different display for future invocations.
+
+You *must* already be running a browser.  This program will not launch
+it for you.
+
+In order for all this to work properly, you must make sure that netscape
+recognizes some file type as \"message/rfc822\".  You can do this most
+easily by putting the following line in ~/.mime.types:
+
+          message/rfc822      msg
+
+Or, if your .mimes.types file is in the new Netscape format already, use
+
+          \".msg\" == \"message/rfc822\"
+
+The default \"temporary file\" used in this package to save the contents
+of the buffer to view, ends in \".msg\" but you can change this if you
+would rather use some other extension.  Just make sure it matches the
+message/rfc822 extension in your .mime.types file.
+
+The primitives in browse-url.el are not really sufficient to handle mail
+messages in a special way (for example, they know nothing about widening
+hidden headers in different major modes) and I am not certain that any
+other browsers handle email anyway.  Hence, a more specialized interface.
+
+Thanks to Jamie Zawinski <jwz@netscape.com> for turning me on to
+netscape's -remote feature.  More information about this can be found
+via \"http://home.netscape.com/newsref/std/x-remote.html\".
+
+NOTE: Most of this was broken in Netscape 4.0 (Communicator).
+Mailbox window details (to be implemented):
+
+mailbox:/path/name		for the folder itself; URLs of this form
+				always get presented in the mail window.
+
+mailbox:/path/name?id=XXX	for a particular message (leave off
+				the <> around the message ID, and make
+				sure it's properly URL-hex-encoded).
+				This just returns a document of type
+				message/rfc822, which is then displayed
+				in whatever window is in use.
+
+mailbox:/path/name?number=37	another way of getting at it.
+
+mailbox:/path/name/?id=XXX&number=37	yet another way, which does some
+				sanity checking for the case of two msgs
+				having the same ID.
+
+Then there are a bunch of other options you can tack on there that are
+related to display; these correspond to the menu options on the mail
+window:
+
+	headers=all		full header display
+	headers=some		default
+	headers=micro		one-line summary
+	headers=citation	\"so-and-so wrote\"
+
+	part=N.N		to extract a particular sub-part of
+				the mime object (this returns a document
+				whose type is the type of the part,
+				rather than message/rfc822)
+
+	rot13=true		frobs text/* content
+
+	inline=false		turns off \"display attachments inline\"")

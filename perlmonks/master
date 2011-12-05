@@ -1,0 +1,42 @@
+(:summary    "A simple interface to www.perlmonks.org"
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-2"
+ :provided   (perlmonks)
+ :required   ((("emacs" menu-bar)
+	       ("url" url)))
+ :homepage   "https://github.com/metaperl/emacs-perlmonks"
+ :commentary "\
+Usage
+
+* Installation
+Download perlmonks.el from https://github.com/metaperl/emacs-perlmonks
+Put this file somewhere on your load-path and in your .emacs put:
+(require 'perlmonks)
+
+* Authentication
+The first time you use this mode, you need to call perlmonks-login
+which will set a cookie which will last for 10 years
+
+* Editing
+You initiate your use of this mode by opening up a file with a .monks 
+extension. This will open the file with major mode nxml and minor mode 
+perlmonks. From that point, you simply write a post using
+Perl Monks Approved HTML tags - http://perlmonks.org/index.pl?node_id=29281
+There are some convenience functions within perlmonks.el for editing:
+** Editing Support
+perlmonks-paragraph
+perlmonks-code
+perlmonks-blockquote
+
+* Posting
+Once your post is complete, perlmonks.el has support for posting to the
+following areas:
+ M-x perlmonks-seekers-of-perl-wisdom
+ M-x perlmonks-meditation
+ M-x perlmonks-reply
+Just call one of those commands while in your .monks buffer
+
+* Screencasts
+- perlmonks-reply
+http://www.youtube.com/watch?v=fjzfDdKaCoc")

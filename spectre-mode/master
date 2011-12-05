@@ -1,0 +1,24 @@
+(:summary    "Major mode providing a spectre mode hook for fontification"
+ :created    "2003"
+ :updated    "20070103"
+ :authors    (("Wouter De Cock" . "wouter.decock@esat.kuleuven.ac.be")
+	      ("Geert Van der Plas" . "geert_vanderplas@email.com"))
+ :maintainer ("Wouter De Cock" . "wouter.decock@esat.kuleuven.ac.be")
+ :provided   (active-file ntlst-aux ntlst-section spectre-mode)
+ :required   ((("emacs" font-lock)
+	       ("speedbar" speedbar)))
+ :keywords   (affirma spectre\ files)
+ :homepage   "http://spice-mode.4t.com"
+ :commentary "\
+Most of the code of this mode was shamelessly stolen from eldo-mode
+(Manu Rouat & GVdP) and spice-mode (Geert Van der Plas & Manu). Language
+syntax was provided by Wouter, code and regexps written by Geert.
+
+TODO/WISH LIST:
+
+- highlight functions: syntax \"builtin-function\\\\s-*(\" and/or \"name\\\\s-*(\"
+- add a spectre menu ? 
+- add include links as in eldo- and spice-mode ? active-file !
+- automatic indentation \"({\", strings, comments ? First version is in !
+- also make it work in emacs 20.7 ? Requires font-lock regexps to be 
+  \"shy\" clean (using regexp-opt-depth !!)")

@@ -1,0 +1,18 @@
+(:summary    "Slowly modify background color"
+ :created    "20011107"
+ :updated    "2001"
+ :license    "GPL-2"
+ :authors    (("John Paul Wallington" . "jpw@shootybangbang.com"))
+ :maintainer ("John Paul Wallington" . "jpw@shootybangbang.com")
+ :provided   (floatbg)
+ :keywords   (background faces frames)
+ :homepage   "http://www.shootybangbang.com"
+ :commentary "\
+Modifies backgound color by moving through an hsv color model, like 
+floatbg for X-Windows by Jan Rekers.
+
+Installation:
+Put floatbg.el somewhere in your load-path.
+Put the following two lines in your .emacs file:
+(require 'floatbg)
+(floatbg-mode t)")

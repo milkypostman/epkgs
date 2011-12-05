@@ -1,0 +1,21 @@
+(:summary    "Edit aliases file in an user-friendly way"
+ :created    "1997"
+ :updated    "1997"
+ :license    "GPL-2"
+ :authors    (("Hrvoje Niksic" . "hniksic@srce.hr"))
+ :maintainer ("Hrvoje Niksic" . "hniksic@srce.hr")
+ :provided   (blackbook)
+ :required   ((("cl" cl)
+	       ("emacs" wid-edit widget)))
+ :keywords   (abbrev extenstions mail)
+ :homepage   "http://fly.srk.fer.hr/~hniksic"
+ :commentary "\
+Although the format of the mailrc file (that Emacs packages use to
+read mail aliases from) is very simple, the question \"How do I add
+an alias to Emacs?\" has popped up one time too many on comp.emacs.
+
+Blackbook package will parse the `~/.mailrc' file, and present the
+aliases in a user-friendly way, using the facilities provided by
+the widget library written by Per Abrahamsen.  In a way, this is
+similar to Pine's and Netscape's `addressbook' features, hence the
+name.")

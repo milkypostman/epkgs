@@ -1,0 +1,11 @@
+(:summary    "REST Client for Nexus Maven Repository servers"
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Juergen Hoetzel" . "juergen@archlinux.org"))
+ :maintainer ("Juergen Hoetzel" . "juergen@archlinux.org")
+ :provided   (nexus nexus-widget)
+ :required   ((("gnus" mm-url)
+	       ("xml" xml)))
+ :keywords   (comm)
+ :homepage   "https://github.com/juergenhoetzel/emacs-nexus")

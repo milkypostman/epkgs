@@ -1,0 +1,32 @@
+(:summary    "Numbered Outline mode"
+ :created    "2000"
+ :updated    "2000"
+ :license    "GPL-2"
+ :authors    (("Gareth Rees" . "gareth.rees@pobox.com"))
+ :maintainer ("Gareth Rees" . "gareth.rees@pobox.com")
+ :provided   (numbered-outline)
+ :required   ((("cl" cl)
+	       ("outline" outline)))
+ :keywords   (outlines)
+ :commentary "\
+Numbered Outline mode is a minor mode providing extensions to both
+Outline mode and Outline minor mode for dealing with hierarchical
+numbered outlines, for example
+
+1 Top-level heading
+1.1 Subheading
+1.2 Another subheading
+1.2.1 Subsubheading
+
+When turned on for a buffer, Numbered Outline mode sets
+`outline-regexp' to `numbered-outline-regexp' which matches numbered
+headings and sets `outline-level' to `numbered-outline-level' which
+calculates the heading level appropriately.  Functions are provided
+for promoting and demoting heading levels in the region, and for
+canonically renumbering headings in the buffer.
+
+You can customize `numbered-outline-regexp' (for example, to match
+heading numbers preceded by a comment indicator or a piece of
+markup), as long as you make sure that your new regexp has the right
+set of capturing parentheses -- see the documentation for that
+variable for details.")

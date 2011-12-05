@@ -1,0 +1,7 @@
+(:summary    "Major mode for editing Mythryl code"
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-3"
+ :provided   (mythryl-mode)
+ :homepage   "https://github.com/phr/mythryl-mode"
+ :wikipage   "MythrylMode")

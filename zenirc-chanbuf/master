@@ -1,0 +1,10 @@
+(:summary    "Zenirc one channel per buffer support"
+ :created    "200012"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("Michele Bini" . "mibin@libero.it"))
+ :maintainer ("Michele Bini" . "mibin@libero.it")
+ :provided   (zenirc-chanbuf)
+ :required   ((("zenirc" zenirc)))
+ :keywords   (comm)
+ :wikipage   "ZenircChanbuf")

@@ -1,0 +1,30 @@
+(:summary    "Implementations of algorithms for CS381"
+ :created    "2005"
+ :updated    "2005"
+ :license    "GPL-2"
+ :provided   (algorithms)
+ :commentary "\
+This is a listing of the algorithms that are implemented by this
+file.  Helper functions are not listed here.  All algorithms have a
+consistency check with sample data.
+
+All Pairs (using Floyd-Warshall algorithm)
+function: all-pairs
+status: finished
+
+Transitive Closure
+function: transitive-closure
+status: finished
+
+Shortest path weights (using Dijkstra's Algorithm)
+function: dijkstra
+status: finished
+
+Depth-First Search
+function: dfs
+status: finished
+
+Stronly-Connected Components (using Kosaraju's Algorithm)
+function: strongly-connected-components
+status: not completely finished -- returns PREV from last DFS
+        rather than connected components")

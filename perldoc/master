@@ -1,0 +1,18 @@
+(:created    "2007"
+ :updated    "20070822"
+ :license    "GPL-2"
+ :authors    ((nil . "wenbinye@gmail.com"))
+ :maintainer (nil . "wenbinye@gmail.com")
+ :provided   (perldoc)
+ :required   ((("cl" cl)
+	       ("pde" pde-vars)
+	       ("tree-mode" tree-mode)
+	       ("windata" windata)
+	       ("woman" woman)))
+ :wikipage   "PerlDoc"
+ :commentary "\
+Put this file into your load-path and the following into your ~/.emacs:
+  (require 'perldoc)
+  (perldoc-recache-everyday)    ; this is optional
+  (add-hook 'cperl-mode-hook
+            (lambda () (help-dwim-active-type 'perldoc)))")

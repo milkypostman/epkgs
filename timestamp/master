@@ -1,0 +1,44 @@
+(:summary    "Update/insert time stamp string at point"
+ :created    "19900108"
+ :updated    "20100418"
+ :license    "GPL-2"
+ :authors    (("Norikazu Aruga" . "nori@lec.com"))
+ :maintainer ("Noah Friedman" . "friedman@splode.com")
+ :provided   (timestamp)
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
+ :wikipage   "TimeStamp"
+ :commentary "\
+Noah Friedman's branch is based on
+version 1.04 (1994-02-07) from Norikazu Aruga
+
+COMMANDS
+
+ update-time-stamp		Update the time stamp string around point.
+				Prefix argument says to insert a new time
+				stamp instead, after point.
+				If the cursor has not moved, successive
+				executions of this command will replace
+				the time stamp just inserted with the next
+				type in a cyclic fashion.
+				You can also specify the type of the time
+				stamp as its argument.
+
+TIME STAMP TYPE
+
+	0	mm/dd/yy             (e.g. 06/18/90)       U.S. style
+	1	dd-Mmm-yy            (e.g. 18-Jun-90)
+	2	Monthname dd, yyyy   (e.g. June 18, 1990)
+	3	Month dd, yyyy       (e.g. Jun 18, 1990)
+	4	dd Month yyyy        (e.g. 18 Jun 1990)
+	5	dd/mm/yy             (e.g. 18/06/90)       European style
+	6	yyyy-mm-dd           (e.g. 1990-06-18)     ISO style
+
+USER OPTIONS
+
+ time-stamp-default-type	The default type of the time stamp string
+				you want `update-time-stamp' to use.  It must
+				be a number ranging from 0 to 6.
+
+It is suggested that you include the following line in your .emacs file.
+
+  (define-key global-map \"\\e+\" 'update-time-stamp)")

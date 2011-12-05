@@ -1,0 +1,8 @@
+(:summary    "Display SGML entity references as ISO 8859-1 characters"
+ :created    "19940621"
+ :updated    "19950510"
+ :license    "GPL-2"
+ :authors    (("Frederic Lepied" . "lepied@cenaath.cena.dgac.fr"))
+ :maintainer (nil . "lepied@cenaath.cena.dgac.fr")
+ :provided   (iso-sgml)
+ :keywords   (html iso latin sgml))

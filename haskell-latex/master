@@ -1,0 +1,40 @@
+(:summary    "Editing literate Haskell with LaTeX convention"
+ :created    "2003"
+ :updated    "2009"
+ :license    "GPL-3"
+ :authors    (("Dave Love" . "fx@gnu.org"))
+ :maintainer ("Dave Love" . "fx@gnu.org")
+ :provided   (haskell-latex)
+ :required   ((("multi-mode" multi-mode)))
+ :keywords   (languages wp)
+ :homepage   "http://www.loveshack.ukfsn.org/emacs"
+ :commentary "\
+This provides a mode for editing literate Haskell with the LaTeX
+\\begin{code}...\\end{code} convention (but not the `Bird tracks'
+`inverse comment' convention).
+
+It originally was meant to use my simple Haskell mode rather than
+the one from haskell.org.  Versions of the haskell.org
+haskell-indent.el prior to v2.1 (?) need to be modified to work
+with this, due to the narrowing used by multi-mode around the
+indentation command.  That has been fixed subsequently, so the
+current version can be used with this code.  However, note that the
+recommended way of installing it adds `literate-haskell-mode' to
+`auto-mode-alist' for .lhs files, whereas we want `haskell-latex'.
+Thus you probably want to do something like this, assuming
+haskell-latex is on `load-path' and $haskell_mode_path is the path
+name of the haskell-latex directory:
+
+  (load \"$haskell_mode_path/haskell-site-file.el\")
+  (add-to-list 'auto-mode-alist '(\"\\\\.l[gh]s\\\\'\" . haskell-latex-mode))
+  (autoload 'haskell-latex-mode \"haskell-latex\")
+
+Alternatively, you can customize `haskell-mode-hook' by adding
+`haskell-latex-maybe' to it.
+
+You can use the Emacs LaTeX mode or AUCTeX.  The latter causes
+trouble which is hacked around in the multi-mode.el (revision
+1.6+).  There are problems with font-locking in Emacs 21, both with
+AUCTeX and the built-in mode, which seem to be fixed in Emacs 22 --
+single `$'s in Haskell parts cause subsequent LaTeX to be fontified
+as maths.")

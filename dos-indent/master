@@ -1,0 +1,10 @@
+(:summary    "Adds indentation to Dos-mode"
+ :created    "2009"
+ :updated    "2009"
+ :provided   (dos-indent)
+ :wikipage   "DosIndent"
+ :commentary "\
+Adds indentation to Dos-mode
+Copied and modified from Batch-mode
+Install by adding to load-path, and then:
+  (require 'dos-indent)")

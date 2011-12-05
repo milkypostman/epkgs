@@ -1,0 +1,7 @@
+(:created    "2008"
+ :license    "GPL-2"
+ :authors    (("Takashi Masuda" . "masutaka@nifty.com"))
+ :maintainer ("Takashi Masuda" . "masutaka@nifty.com")
+ :provided   (elscreen-mew)
+ :required   ((("elscreen" elscreen)))
+ :homepage   "https://github.com/masutaka/elscreen-mew")

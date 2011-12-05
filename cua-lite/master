@@ -1,0 +1,62 @@
+(:summary    "A light-weight, extendable & toggle-able CUA emulator"
+ :created    "2001"
+ :updated    "20030817"
+ :license    "GPL-2"
+ :authors    (("Joe Casadonte" . "emacs@northbound-train.com"))
+ :maintainer ("Joe Casadonte" . "emacs@northbound-train.com")
+ :provided   (cua-lite)
+ :keywords   (convenience cua emulations)
+ :homepage   "http://www.northbound-train.com"
+ :wikipage   "CuaLightMode"
+ :commentary "\
+cua-lite is a CUA emulator package for Emacs.  There are three
+ things that make this package different from the others already
+ out there:
+
+ 1) it is a quasi-minor mode, meaning that it can be turned on &
+    off easily (though only globally; hence the \"quasi-\")
+ 2) it is easily extensible
+ 3) it does NOT attempt to override the existing use of <Ctrl><X>
+    and <Ctrl><C> (use CUA-mode for that)
+
+--------------------------------------------------------------------
+Special Note for XEmacs users:
+
+ XEmacs uses a very different paradigm for defining what the region
+ is, whether or not it is highlighted by default, and whether or
+ not it remains highlighted when point is moved.  This is analagous
+ to GNU Emacs' transient-mode, and at first glance it seems to make
+ it much easier to implement functions which affect it.  However,
+ it is vastly different then GNU Emacs, and would essentially
+ require a total re-write of cua-lite to support it, or a great
+ deal of hoop jumping, neither of which I have the time for.  So,
+ (for the moment) cua-lite will not support XEmacs -- sorry!  If
+ it's any consolation, XEmacs does half of what cua-lite does
+ already, and makes a great deal of the rest of it easier to
+ implement.
+--------------------------------------------------------------------
+
+Installation:
+
+ There are two ways to install this package.  The first is to
+ install it and load it immediately.  This is the appropriate
+ method if you know you want to load it all of the time.
+
+ The second method is to use a bootstrap package,
+ `cua-lite-bootstrap'.  This package will set up an autoload
+ statement for cua-lite, and (optionally) define a hotkey to toggle
+ the package on and off.  This is to encourage people to have the
+ package available for use by others even if they themselves do not
+ wish to use it, while at the same time utilizing almost no
+ resources.  See the bootstrap file for more details.
+
+ To load and enable each time (method #1), put this file on your
+ Emacs-Lisp load path and add the following to your ~/.emacs
+ startup file:
+
+    (require 'cua-lite)
+    (cua-lite 1)
+
+ To add a directory to your load-path, use something like the following:
+
+     (add-to-list 'load-path (expand-file-name \"/some/load/path\"))")

@@ -1,0 +1,4 @@
+(:summary    "Run program or lisp function associated with a file"
+ :license    "GPL-2"
+ :provided   (run-assoc)
+ :wikipage   "RunAssoc")

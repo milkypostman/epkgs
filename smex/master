@@ -1,0 +1,21 @@
+(:summary    "M-x interface with Ido-style fuzzy matching"
+ :created    "2009"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Cornelius Mika" . "cornelius.mika@gmail.com"))
+ :maintainer ("Cornelius Mika" . "cornelius.mika@gmail.com")
+ :provided   (smex)
+ :required   ((("cl" cl)
+	       ("ido" ido)))
+ :keywords   (convenience usability)
+ :homepage   "https://github.com/nonsequitur/smex"
+ :wikipage   "Smex"
+ :commentary "\
+Quick start:
+run (smex-initialize)
+
+Bind the following commands:
+smex, smex-major-mode-commands
+
+For a detailed introduction see:
+http://github.com/nonsequitur/smex/blob/master/README.markdown")

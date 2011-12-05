@@ -1,0 +1,34 @@
+(:summary    "A SIMPLE web-server run by emacs"
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-2"
+ :authors    (("Eric Schulte"))
+ :maintainer ("Eric Schulte")
+ :provided   (simple-file-server simple-server)
+ :required   ((("htmlize" htmlize)
+	       ("org" org org-exp)))
+ :homepage   "https://github.com/eschulte/simple-server"
+ :commentary "\
+`simple-server' implements a very simple http server which will
+hopefully be able to hand off GET requests to functions specified
+in the `ss-dispatch-table'.
+
+The `ss-dispatch-table' should contain a list of dispatch functions
+each of which will be tried in turn and given a chance to return
+either a handler or nil.  The dispatch functions will have access
+to the`ss-request' variable through the following functions
+
+- `ss-request-host' returns the host name of the request
+- `ss-request-method' returns the method as a keyword i.e. :get
+- `ss-request-uri' returns the path of the uri following the
+   hostname and port etc...
+
+handlers
+
+A handler is a function which will be called with no arguments (but
+does have access to the request functions mentioned above) and
+should return a HTTP string which will be passed back to the
+client.
+
+Hopefully one day it will parse get parameters and handle post
+requests.")

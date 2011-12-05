@@ -1,0 +1,11 @@
+(:summary    "Dedicate frame for twittering-mode"
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-2"
+ :authors    (("Hironori OKAMOTO" . "k.ten87@gmail.com"))
+ :maintainer ("Hironori OKAMOTO" . "k.ten87@gmail.com")
+ :provided   (twittering-dframe)
+ :required   ((("dframe" dframe)
+	       ("twittering-mode" twittering-mode)))
+ :keywords   (frames hypermedia)
+ :homepage   "https://github.com/k-ten/twittering-dframe")

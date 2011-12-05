@@ -1,0 +1,37 @@
+(:summary    "Major mode for Aplac netlist files"
+ :created    "2002"
+ :updated    "2002"
+ :license    "GPL-2"
+ :authors    (("Brennan Sharp" . "brennanzl@xtra.co.nz"))
+ :maintainer ("Brennan Sharp" . "brennanzl@xtra.co.nz")
+ :provided   (aplac-mode)
+ :required   ((("compile" compile)
+	       ("emacs" easymenu font-lock overlay)
+	       ("emacs-obsolete" lucid)
+	       ("imenu" imenu)
+	       ("skeleton" skeleton)
+	       ("speedbar" speedbar)
+	       ("tempo" tempo)))
+ :keywords   (aplac netlist simulator syntax)
+ :homepage   "http://spice-mode.4t.com"
+ :commentary "\
+This major mode for emacs provides support for editing APLAC   
+netlist files. It might work on other emacs. I'm testing on emacs21.
+While not complete by any stretch of thu imagination, I've been using this
+regularly at work without any real problems.
+
+You may wish to add something like the following to your ~/.emacs file:
+
+(setq load-path (cons (expand-file-name \"~/.emacs-modes\") load-path))
+(autoload 'aplac-mode \"aplac-mode\" \"Major mode for editing APLAC input\" t)
+(setq auto-mode-alist (append (list (cons \"\\\\.i$\"    'aplac-mode)
+				    (cons \"\\\\.lib\"   'aplac-mode)
+				    auto-mode-alist))
+
+Put this file in the emacs load-path so emacs can find it (check the
+manual). (I subdivide my ~/.emacs-modes directory for each mode because many
+modes come with other files (e.g. README) I put symbolic links in the 
+~/.emacs-modes directory to each mode file.
+
+This mode will activate automatically on files which end by .i or .lib
+This mode requires font-lock, easymenu, and optionally func-menu or imenu..")

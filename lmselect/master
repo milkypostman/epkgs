@@ -1,0 +1,9 @@
+(:summary    "Lisp Machine SELECT key esque thingy"
+ :created    "2002"
+ :updated    "2002"
+ :license    "GPL"
+ :authors    (("Edward O'Connor" . "ted@oconnor.cx"))
+ :maintainer ("Edward O'Connor" . "ted@oconnor.cx")
+ :provided   (lmselect)
+ :keywords   (convenience)
+ :homepage   "http://edward.oconnor.cx/elisp")

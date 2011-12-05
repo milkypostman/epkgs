@@ -1,0 +1,8 @@
+(:summary    "David's GPG Extensions for Emacs"
+ :created    "2006"
+ :updated    "20060203"
+ :license    "GPL-2"
+ :authors    (("David Elentok" . "3david@gmail.com"))
+ :maintainer ("David Elentok" . "3david@gmail.com")
+ :provided   (dgpg)
+ :required   ((("emacs" comint))))

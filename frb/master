@@ -1,0 +1,10 @@
+(:summary    "Emacs client for faraday's book"
+ :license    "GPL-2"
+ :provided   (frb)
+ :required   ((("cl" cl)
+	       ("emacs" md5)
+	       ("highline" highline)
+	       ("json" json)
+	       ("mcomplete" mcomplete)
+	       ("url" url)))
+ :homepage   "https://github.com/icylisper/faradays-book.el")

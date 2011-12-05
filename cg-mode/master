@@ -1,0 +1,8 @@
+(:summary    "Mode for editing cg programs"
+ :created    "200512"
+ :updated    "2005"
+ :license    "GPL-2"
+ :maintainer (nil . "seanvbd@yahoo.com")
+ :provided   (cg-mode)
+ :keywords   (cg languages)
+ :wikipage   "CgMode")

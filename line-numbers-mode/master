@@ -1,0 +1,33 @@
+(:summary    "A minor mode for on-screen/window line numbering"
+ :created    "1999"
+ :updated    "1999"
+ :license    "GPL-2"
+ :authors    (("Jerry Chen" . "gchen275@yahoo.com"))
+ :maintainer (nil . "gchen275@yahoo.com")
+ :provided   (line-numbers-mode)
+ :required   ((("cl" cl)))
+ :keywords   (display line\ numbering minor-mode)
+ :wikipage   "LineNumbers"
+ :commentary "\
+This package implements a minor mode for XEmacs which, when enabled,
+will display the line number on each line on current window. Note that
+this is different from another similarly-named minor-mode line-number-mode
+which only displays the current line number at the point on modeline.
+The numbers are displayed as annotations, they are not part of actual text.
+
+To use it,
+1. byte-compile the elisp file
+2. add this line to your .emacs file:  (require 'line-numbers-mode)
+3. use the minor-mode-menu on modeline or M-x line-numbers-mode to toggle
+   3a. if you like to turn this minor mode on for every file you open, then
+       add this line to your .emacs file:
+       (add-hook 'find-file-hook 'line-numbers-mode)
+   3b. if you like to turn this minor mode on for certain major-mode files,
+       say cperl-mode, then add a mode hook:
+       (add-hook 'cperl-mode-hook 'line-numbers-mode)
+
+Caveats/Bugs:
+
+This minor-mode was developed in XEmacs v21.0b60, and tested on XEmacs 20.4, 19.16 and 19.14
+Since XEmacs-specific extents are used, it will not work for any version of FSF GNU Emacs.
+Some line numbers may not show immediately after each command.")

@@ -1,0 +1,51 @@
+(:summary    "Undo/redo without making undo tree"
+ :created    "20101119"
+ :updated    "2010"
+ :license    "GPL-3"
+ :provided   (linear-undo)
+ :required   ((("cl" cl)))
+ :keywords   (emulation wp)
+ :homepage   "https://github.com/k-talo/linear-undo.el"
+ :commentary "\
+Overview
+========
+
+This library provides minor mode `linear-undo-mode' which makes
+undo and redo command not to record undo/redo elements in
+tree structure, by inhibiting to record undo/redo operations
+to buffer-undo-list.
+
+I believe this minor mode brings intuitive way to undo/redo.
+
+Additionally, while `linear-undo-mode' is on, count of pending
+undo/redo elements will be displayed after each undo/redo
+command is executed.
+
+
+INSTALLING
+==========
+To install this library, save this file to a directory in your
+`load-path' (you can view the current `load-path' using \"C-h v
+load-path RET\" within Emacs), then add the following line to your
+.emacs startup file:
+
+   (require 'linear-undo)
+
+
+USING
+=====
+To toggle lenear-undo feature, just type:
+
+  `M-x linear-undo-mode RET'
+
+
+Key map Examples
+================
+(global-set-key [(control z)] 'undo)
+(global-set-key [(control Z)] 'redo)
+
+
+KNOWN PROBLEMS
+==============
+- Cursor position won't be set properly after undo/redo when cua-mode
+  is on.")

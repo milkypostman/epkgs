@@ -1,0 +1,28 @@
+(:summary    "Auto-capitalize beginning of sentences"
+ :created    "2002"
+ :updated    "2002"
+ :license    "GPL-2"
+ :authors    (("Dave Love" . "fx@gnu.org"))
+ :maintainer ("Dave Love" . "fx@gnu.org")
+ :provided   (autocap)
+ :keywords   (abbrev convenience wp)
+ :homepage   "http://www.loveshack.ukfsn.org/emacs"
+ :commentary "\
+auto-capitalize-mode attempts to capitalize (only) the beginning of
+sentences.  It uses the abbrev expansion hook.  You probably want to
+put it on `text-mode-hook', i.e.
+   (add-hook 'text-mode-hook 'auto-capitalize-mode)
+or via Custom.
+
+Defining specific abbrevs can help too, and this file defines a
+couple of useful hook functions, e.g.:
+ (define-abbrev-table 'text-mode-abbrev-table
+     (\"i'm\" \"I'm\")  ; ... egocentric
+     (\"i've\" \"I've\")
+     (\"i'd\" \"I'd\")
+     (\"i'll\" \"I'll\")
+     (\"i\" \"I\" autocap-not-at-stop)  ; not, e.g. in `i.e.'
+     (\"emacs\" \"Emacs\" autocap-delimited))) ; arbitrary example
+
+Normal abbrevs expanded at the start of a sentence get their first
+word capitalized as you'd hope.")

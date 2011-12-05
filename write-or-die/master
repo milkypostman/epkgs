@@ -1,0 +1,25 @@
+(:summary    "Deletes word from buffer if you stop typing for to long"
+ :provided   (write-or-die)
+ :required   ((("emacs" timer)))
+ :wikipage   "WriteOrDieMode"
+ :commentary "\
+An emacs version of Dr. Wicked's \"Write-or-die\" webapp, by Duncan Mortimer <dmorti@gmail.com>
+
+As soon as it is write-or-die-go is invoked, the time spent writing and the number of
+words written are tracked.
+
+However, if you stop writing for some period of time, the buffer
+changes colour to give you some warning, and then words are deleted
+from the end of the document at a rate of 1 per second.  Beginning
+writing again stops this.
+
+TODO:
+
+- Need to work out what variables need to be made buffer-local etc.
+  They don't behave quite as I expected them to...
+- Reinstate write-or-die-timer each second, rather than use the repeat feature. 
+  (i.e. so that bad things don't happen if emacs happens to freeze for a while...)
+- Get it to work smoothely with colour themes; i.e. instead of changing to a white background by 
+  default, need to change to the initial background colour. (17/12/2008)
+
+Please let me know if this is useful to you, or if you have any suggestions!")

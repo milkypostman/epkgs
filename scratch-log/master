@@ -1,0 +1,8 @@
+(:created    "2010"
+ :updated    "2010"
+ :license    "GPL-2"
+ :authors    (("kmori" . "morihenotegami@gmail.com"))
+ :maintainer ("kmori" . "morihenotegami@gmail.com")
+ :provided   (scratch-log)
+ :required   ((("cl" cl)))
+ :homepage   "https://github.com/wakaran/scratch-log")

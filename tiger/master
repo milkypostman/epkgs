@@ -1,0 +1,16 @@
+(:summary    "Mode for editing programs written in Appel's Tiger language"
+ :created    "2001"
+ :updated    "2001"
+ :license    "GPL"
+ :authors    (("Edward O'Connor" . "ted@oconnor.cx"))
+ :maintainer ("Edward O'Connor" . "ted@oconnor.cx")
+ :provided   (tiger)
+ :keywords   (languages)
+ :homepage   "http://edward.oconnor.cx/elisp"
+ :commentary "\
+This mode only supports font-locking, unfortunately. If you'd like
+to add functionality, please do so! :) You'll want to add something
+like this to your .emacs file:
+
+(require 'tiger)
+(add-to-list 'auto-mode-alist '(\"\\\\.tig$\" . tiger-mode))")

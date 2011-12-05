@@ -1,0 +1,85 @@
+(:summary    "Makes it easier to learn emacs"
+ :created    "199529"
+ :updated    "1995"
+ :license    "GPL-1"
+ :authors    (("Alan Shutko" . "ats@hubert.wustl.edu"))
+ :maintainer ("Alan Shutko" . "ats@hubert.wustl.edu")
+ :provided   (neophyte)
+ :required   ((("emacs" advice helper)))
+ :keywords   (help learn)
+ :commentary "\
+I created this mode to address a concern that emacs was \"*very
+hard*\" to learn and use.  I personally think *very hard* is an
+exaggeration, but there is a perception that emacs makes no
+concessions to a novice user.  I created this mode to make things
+easier.
+
+First, it pops up a quick key reference buffer.  This will help
+people access the tutorial and tell them how to quit, always a
+tough thing for a new user.  Second, it will redefine M-x to show
+the key (if any) a command is bound to as you use it.  Lastly, it
+does some terminal specific things to make things nicer.  Under X,
+we set up s-region and transient-mark mode.  Under ttys, we set up
+tmm-menubar to make the menus accessible to users.
+
+It also makes use of the Helper functions to make (most) help
+functions more useful.
+
+This code is not finished and I would like any comments on making
+emacs easier to learn.  I want to help people learn emacs, so
+suggestions like remapping all the keys and eliminating all buffer
+changing commands will fall on deaf ears.
+
+The latest version of this code is available from
+ftp://hubert.wustl.edu/pub/elisp .
+
+TODO
+* Make it easier for novice to make menus
+* help buffer ala Jed, but context sensitive
+* Configuration package
+* AI-like tips during work
+* Change to using advice
+
+For release 2.x:
+* Start neophyte-configurator.  Support font-lock and common hooks.
+
+Changelog
+$Log: neophyte.el,v $
+Revision 2.5  1996/03/28  20:34:55  ats
+Commented some stuff out which is duplicated under 19.30.  Will later
+do a better job of merging.
+
+Revision 2.4  1995/07/22  22:18:37  ats
+Fix formatting.
+
+Revision 2.3  1995/07/22  22:11:42  ats
+Changed keywords to fit finder.el.  Fixed formatting of Key Summary.
+
+Revision 2.2  1995/07/22  21:59:19  ats
+Fixed bug in turning off neophyte-mode.  Fixed typos in the key
+summary.  Advised help functions ala Helper mode.
+
+Revision 2.1  1995/07/03  05:04:56  ats
+Added specific goals for 2.x release.
+
+Revision 2.0  1995/07/03  04:45:06  ats
+Changed TODO.  Changed version number to 2.0 for preparation for next
+release.
+
+Revision 1.7  1995/07/02  08:35:32  ats
+Added place to get tmm.el.
+
+Revision 1.6  1995/07/01  10:32:05  ats
+Public Release
+
+Created code for static key reference.  Added commentary.  Added
+mention of tmm.el.  Added a map for C-c m in X to tell the user to
+look at the normal X menus.
+
+Revision 1.5  1995/06/30  06:36:03  ats
+Added some commentary on installation.
+
+Revision 1.4  1995/06/30  06:30:41  ats
+Many changes for beta release.  Supports different setups for X and
+ttys.  Uses minor-mode modeline variables and keymaps.  Added the
+delay into neophyte-execute-extended-command.")

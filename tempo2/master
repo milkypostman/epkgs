@@ -1,0 +1,34 @@
+(:summary    "Alternative template mode"
+ :updated    "20051012"
+ :provided   (tempo2)
+ :commentary "\
+I didnt like the way \"tempo.el\" defined the templates.
+The quoting of the symbols was hard to write correctly.
+\"'n\" and \"n\" ought to be the same.  Tempo2 fixes
+that.  Templates are stored in a hash table which is kept
+as a property on the major mode.
+
+templates are modeled after \"tempo.el\" templates:
+ \"strings\" self insert
+ symbols are treated as controls:
+    >    indent
+    n    newline
+    >n   indent newline
+    p    point to return to
+ (p \"prompt\" var)  prompt for a string, insert it and store it in var
+ (p nil var)       insert var previously prompted for
+ (functions) are evaluated and the return values used as a template.
+
+
+(tempo2-electric-add
+ 'emacs-lisp-mode
+ '(\"defun\" \"(defun \" p \" (\" p \")\" >n
+        \"\\\"\" p \"\\\"\" >n \"(interactive\" p \")\" >n > p \")\")
+ '(\"if\" \"(if \" p >n > p \")\")
+ '(\"when\" \"(when \" >n > p \")\")
+ '(\"let\" \"(let ((\" p \"))\" >n > p \")\"))
+and so on...
+
+M-x tempo2-mode
+type the keyword \"for\", then ctrl-right.
+press ctrl-right to advance to the next points")

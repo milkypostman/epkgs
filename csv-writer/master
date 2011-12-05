@@ -1,0 +1,6 @@
+(:summary    "Write alists into csv files"
+ :updated    "20050518"
+ :license    "GPL-2"
+ :provided   (csv-writer)
+ :required   ((("cl" cl)))
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/data-structures")

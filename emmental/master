@@ -1,0 +1,8 @@
+(:summary    "Take snapshots with Emacs"
+ :provided   (emmental)
+ :homepage   "https://github.com/jave/emmental"
+ :commentary "\
+emmental.el is an emacs interface to your webcam.
+An Emmentaler is a type of cheese.
+
+currently emmental.el uses the fswebcam v4l frontend.")

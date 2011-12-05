@@ -1,0 +1,9 @@
+(:summary    "Easy access to versioned backup files"
+ :created    "2007"
+ :updated    "2007"
+ :license    "GPL-2"
+ :provided   (pick-backup)
+ :required   ((("diff" diff)
+	       ("ediff" ediff)))
+ :homepage   "http://nschum.de/src/emacs/pick-backup"
+ :wikipage   "PickBackup")

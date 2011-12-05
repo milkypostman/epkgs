@@ -1,0 +1,56 @@
+(:summary    "Project oriented Emacs"
+ :created    "20091211"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Paul M. Rodriguez" . "pmr@ruricolist.com"))
+ :maintainer ("Paul M. Rodriguez" . "pmr@ruricolist.com")
+ :provided   (projector)
+ :required   ((("cl" cl)
+	       ("emacs" apropos dired-x easymenu)
+	       ("etags" etags)
+	       ("find-dired" find-dired)
+	       ("format-spec" format-spec)
+	       ("grep" grep)
+	       ("tramp" tramp)
+	       ("vc" vc-hooks)))
+ :keywords   (project)
+ :homepage   "http://gopher.ruricolist.com:70/lisp"
+ :commentary "\
+This package is inspired by the lightweight projects offered by
+some modern text editors, but its purpose is to make it as easy to
+navigate the code of any large project as Emacs makes navigating
+its own code.
+
+Usage:
+(require 'projector)
+(projector-mode 1)
+(global-set-key (kbd \"C-.\") 'project-argument)
+
+Try `M-x apropos-projector' for a full list of commands.
+
+The first step in using Projector is to recognize a project.
+Usually just visiting a file in the project is enough to recognize
+it but, if not, do M-x `new-project'.
+
+Projector is stateless: it never loads or configures a project,
+just recognizes it. You don't even have to own the project, so it
+can be read-only or remote. And even if you do own the project you
+can still make Emacs pretend you don't using
+`toggle-project-read-only', which is useful for reading or
+reviewing code.
+
+Once you have recognized a project Emacs will try to maintain the
+context of that project. For example, when you kill a buffer, Emacs
+will try to replace it with another buffer in the same project. You
+can use M-. to jump to the definition of any symbol in the project.
+You can get back where you started with M-*. If there is more than
+one definition for a given symbol M-, will cycle through them. If
+no tags table has been built yet, Projector will build it
+automatically in the background; and you can contnue working in the
+meantime.
+
+Projector defines no keybindings of its own. Instead, by using
+`project-argument', you tell Emacs to call the project equivalent
+of an ordinary command. So, assuming stock keybindings, C-. C-s
+does an incremental search in the project; C-. C-x d opens the
+entire project for editing in a Dired buffer; and so forth.")

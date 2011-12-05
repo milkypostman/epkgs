@@ -1,0 +1,11 @@
+(:summary    "Simple major mode for editing LDraw DAT-files"
+ :created    "1999"
+ :updated    "2002"
+ :license    "GPL-2"
+ :authors    (("Fredrik Glöckner" . "fredrigl@math.uio.no"))
+ :maintainer ("Fredrik Glöckner" . "fredrigl@math.uio.no")
+ :provided   (ldraw-mode)
+ :required   ((("cl" cl)
+	       ("w3" w3)))
+ :keywords   (util)
+ :homepage   "http://www.math.uio.no/~fredrigl")

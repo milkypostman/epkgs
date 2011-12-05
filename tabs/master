@@ -1,0 +1,6 @@
+(:created    "20010702"
+ :updated    "2002"
+ :license    "GPL-2"
+ :authors    (("Zack Rusin" . "zackrat@att.net"))
+ :maintainer ("Zack Rusin" . "zackrat@att.net")
+ :keywords   (convenience environment))

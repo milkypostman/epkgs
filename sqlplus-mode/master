@@ -1,0 +1,40 @@
+(:summary    "Mode for editing SQL and testing via SQL*Plus"
+ :created    "1994"
+ :updated    "1999"
+ :license    "GPL-2"
+ :authors    (("Rob Riepel" . "riepel@networking.stanford.edu")
+	      ("Peter D. Pezaris" . "pez@atlantic2.sbi.com")
+	      ("Martin Schwenke" . "martin@meltin.net"))
+ :maintainer ("Martin Schwenke" . "martin@meltin.net")
+ :provided   (sqlplus-mode)
+ :required   ((("emacs" font-lock)))
+ :keywords   (oracle sql sqlplus)
+ :homepage   "http://meltin.net/hacks/emacs"
+ :wikipage   "SqlPlusMode"
+ :commentary "\
+This file is implements a simple SQL mode for emacs.  It knows how
+ to talk to SQL*Plus via SQL*Net.  This mode was cobbled together
+ and cut down by Martin Schwenke from the two sql-modes written by
+ Rob Riepel and Peter D. Pezaris.  Rob Riepel's mode was hacked up
+ version of Lynn Slater's sql.el, and some of his comments were
+ pinched from Jim Lange's sqlplus , and probably still survive.
+ Most of these modes are available from the elisp archives, if it
+ still exists!
+
+ sqlplus-mode is for editing and testing SQL statements in a
+ standard text buffer.  The most useful feature of sqlplus-mode is
+ sending SQL statements to an SQL*Plus interpreter. Font locking is
+ also implemented.
+
+ The following commands can be added to a global initialization
+ file or to any user's .emacs file to conveniently use sqlplus-mode.
+
+   (autoload 'sqlplus \"sqlplus-mode\"
+     \"Start the interactive SQL*Plus interpreter in a new buffer.\" t)
+
+   (autoload 'sqlplus-mode \"sqlplus-mode\"
+     \"Mode for editing SQL files and running a SQL*Plus interpretor.\" t)
+
+   (add-to-list 'auto-mode-alist '(\"\\\\.sql\\\\'\" . sqlplus-mode))
+
+ Use describe-mode while in sqlplus-mode for further instructions.")

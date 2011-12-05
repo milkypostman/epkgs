@@ -1,0 +1,66 @@
+(:summary    "Sort abbrevs when editing or saving"
+ :created    "1999"
+ :updated    "1999"
+ :license    "GPL-2"
+ :authors    (("Will Mengarini" . "seldon@eskimo.com"))
+ :maintainer ("Will Mengarini" . "seldon@eskimo.com")
+ :provided   (abbrev-sort)
+ :required   ((("cl" cl)
+	       ("emacs" advice)))
+ :keywords   (abbrev convenience)
+ :homepage   "http://www.eskimo.com/~seldon"
+ :commentary "\
+If you have a large number of abbrevs (I have 471) you may want to put
+them under version control.  If you do that with standard Emacs, you'll
+find that you can't meaningfully compare the differences between
+successive versions (what has been inserted or removed, how have use
+counts changed) because the versions aren't sorted; the sequence of the
+abbrevs, and even of the abbrev tables, is random, so between successive
+versions it appears that almost everything has changed.  This is also an
+inconvenience when editing abbrevs (M-x edit-abbrevs).
+
+This package implements a minor mode, abbrev-sort-mode, that, when
+enabled, causes abbrevs to be written sorted.  Within each abbrev table,
+they're sorted on expansion; the tables themselves are sorted according to
+their names, except that global-abbrev-table comes first.
+
+The format in which the table is written to disk is otherwise identical to
+standard Emacs and completely compatible with it in both directions, so an
+Emacs using this mode can read an unsorted abbrev table, and a Emacs not
+using this mode can read a table that was written while this mode was
+enabled (although of course when that Emacs writes the table back out it
+will become unsorted again).  The internal data structures in which
+abbrevs are stored, and the manner of their use, are not affected.
+
+You can use this package either interactively or from your .emacs file.
+In either case, first you'll need to copy this file to a directory that
+appears in your load-path.  `load-path' is the name of a variable that
+contains a list of directories Emacs searches for files to load.
+To prepend another directory to load-path, put a form like
+(add-to-list 'load-path \"c:/My_Directory\") in your .emacs file.
+Then, use M-x byte-compile-file to compile it (important for efficiency).
+
+Because this is a minor mode, you can toggle it on and off.  That's
+useful for checking whether this mode is too inefficient for your
+system.  Toggle by invoking M-x abbrev-sort-mode, then check
+efficiency by invoking M-x edit-abbrevs or M-x write-abbrev-file.
+The mode line will indicate whether abbrev-sort-mode is currently
+enabled.  (I've tried this mode on two systems, both using GNU Emacs
+19.34.6.  On a 96M PII/233 + NT 4.0 it feels instantaneous even when
+the code isn't byte-compiled, but on a 16M 486/50 + Windows 95 it's
+noticeable, taking 2..4 seconds to prepare an edit-abbrevs buffer.)
+
+If you do decide to use this, you will normally want it to always be
+enabled automatically.  To make that happen, put the forms
+  (require 'abbrev-sort)
+  (abbrev-sort-mode 1)
+in your .emacs file.  Once you've done so, it can become an annoyance that
+there's a mode-line display for the minor mode, because it's wasting space
+telling you about something you don't need to be reminded of any more.
+Several minor modes, such as mouse-avoidance-mode, have this problem
+because of the intended manner of their use and the paucity of space on
+the mode line.  Because this is a general problem, I created a general
+solution, \"diminished modes\", <http://www.eskimo.com/~seldon/diminish.el>.
+A diminished mode is a minor mode that has had its mode line display
+diminished, usually to nothing, although diminishing to a shorter word or
+a single letter is also supported.")

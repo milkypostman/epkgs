@@ -1,0 +1,47 @@
+(:created    "2001"
+ :updated    "2001"
+ :license    "GPL-2"
+ :authors    (("Patrick Gundlach" . "patrick@gundla.ch"))
+ :maintainer ("Patrick Gundlach" . "patrick@gundla.ch")
+ :keywords   (unix)
+ :homepage   "http://levana.de/emacs"
+ :commentary "\
+Ok, you wanted some comments:
+ec.el is my first emacs lisp program written. So don't lough too
+loud about it when using it. Thanks.
+this is a very beta version of ec.el. Please do not use this
+filenmanager if you have data that you want to keep!!!! This
+filemanager has probably a lot of bugs (and I know of some!) . So
+the chance of data loss is rather high! 
+If the previous sentences do not keep you from trying this code,
+here are some notes:
+
+Installation:
+============
+Put ec.el somewhere in the loadpath of your one and only editor
+(aka emacs) and put the following line in your .emacs:
+
+(autoload 'ec \"ec\" \"ec - evening commander.\" t nil)
+
+(without the two ';;' certainly). Then start the evening commander
+with 'M-x ec'.
+
+Features:
+========
+
+(write some features here :-) XXX
+
+* full mouse support (incl. wheelmouse: button 4 and 5)  
+* easy navigation with cursor keys, f2 and direct i-search
+* context menu on right mouse button lets the user invoke 
+  external programs such as the acrobat reader for pdf files
+
+
+Todo: 
+=====
+
+since this is an early beta version, there is a *whole* lot
+to do! I would be happy if you send me your ideas or even better,
+just implement them! Search for XX if you want something to do!
+
+see file ec.bugs!")

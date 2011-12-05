@@ -1,0 +1,20 @@
+(:summary    "Major mode for editing SCSS files"
+ :created    "201026"
+ :license    "GPL-2"
+ :authors    (("Anton Johansson" . "anton.johansson@gmail.com"))
+ :maintainer ("Anton Johansson" . "anton.johansson@gmail.com")
+ :provided   (scss-mode)
+ :required   ((("compile" compile)
+	       ("emacs" derived)
+	       ("flymake" flymake)))
+ :keywords   (css mode scss)
+ :homepage   "https://github.com/antonj/scss-mode"
+ :wikipage   "ScssMode"
+ :commentary "\
+Command line utility sass is required, see http://sass-lang.com/
+To install sass (haml):
+gem install haml
+
+Also make sure sass location is in emacs PATH, example:
+(setq exec-path (cons (expand-file-name \"~/.gem/ruby/1.8/bin\") exec-path))
+or customize `scss-sass-command' to point to your sass executable.")

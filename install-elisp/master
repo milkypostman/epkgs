@@ -1,0 +1,18 @@
+(:summary    "Simple Emacs Lisp installer"
+ :created    "2007"
+ :updated    "20090125"
+ :license    "GPL-2"
+ :authors    (("rubikitch" . "rubikitch@ruby-lang.org"))
+ :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
+ :provided   (install-elisp)
+ :required   ((("find-func" find-func)))
+ :keywords   (convenience lisp maint)
+ :wikipage   "InstallElisp"
+ :commentary "\
+Automate Emacs Lisp installation.
+(1) download Emacs Lisp
+(!) confirm installation
+(2) save to your repository
+(3) byte compile
+(4) load
+(5) show Emacs Lisp")

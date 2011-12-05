@@ -1,0 +1,197 @@
+(:summary    "Additional font-lock keywords for the developers"
+ :created    "20010628"
+ :updated    "2009"
+ :license    "GPL-2"
+ :authors    (("Katsumi Yamaoka" . "yamaoka@jpl.org")
+	      ("Jun'ichi Shiono" . "jun@fsas.fujitsu.com")
+	      ("Yasutaka SHINDOH" . "ring-pub@fan.gr.jp")
+	      ("Oscar Bonilla" . "ob@bitmover.com"))
+ :maintainer ("Katsumi Yamaoka" . "yamaoka@jpl.org")
+ :provided   (develock)
+ :required   ((("cc-mode" cc-engine)
+	       ("emacs" advice font-lock)))
+ :keywords   (c change-log emacs-lisp font-lock html java mail news perl ruby tcl texinfo)
+ :wikipage   "DevelockMode"
+ :commentary "\
+Develock is a minor mode which provides the ability to make font-
+lock highlight leading and trailing whitespace, long lines and
+oddities in the file buffer for Lisp modes, ChangeLog mode, Texinfo
+mode, C modes, Java mode, Jde-mode , CPerl mode, Perl mode, HTML
+modes, some Mail modes, Tcl mode and Ruby mode.  Here is an example
+of how to set up your startup file (possibly .emacs) to use
+Develock:
+
+(cond ((featurep 'xemacs)
+      (require 'develock)
+      ;; `turn-on-develock' is equivalent to `turn-on-font-lock',
+      ;;  except that it does not highlight the startup screen.
+      (add-hook 'lisp-interaction-mode-hook 'turn-on-develock)
+      (add-hook 'mail-setup-hook 'turn-on-font-lock))
+     ((>= emacs-major-version 20)
+      (require 'develock)
+      (global-font-lock-mode 1)))
+
+Alternatively, you can use the following to enable font-lock for
+each mode individually in Emacs.
+
+(cond ((featurep 'xemacs)
+      (require 'develock)
+      ;; `turn-on-develock' is equivalent to `turn-on-font-lock',
+      ;;  except that it does not highlight the startup screen.
+      (add-hook 'lisp-interaction-mode-hook 'turn-on-develock)
+      (add-hook 'mail-setup-hook 'turn-on-font-lock))
+     ((>= emacs-major-version 20)
+      (require 'develock)
+      (add-hook 'lisp-interaction-mode-hook 'turn-on-font-lock)
+      (add-hook 'emacs-lisp-mode-hook 'turn-on-font-lock)
+      (add-hook 'change-log-mode-hook 'turn-on-font-lock)
+      (add-hook 'texinfo-mode-hook 'turn-on-font-lock)
+      (add-hook 'c-mode-common-hook 'turn-on-font-lock)
+      (add-hook 'cperl-mode-hook 'turn-on-font-lock)
+      (add-hook 'perl-mode-hook 'turn-on-font-lock)
+      (add-hook 'mail-setup-hook 'turn-on-font-lock)
+      (add-hook 'java-mode-hook 'turn-on-font-lock)
+      (add-hook 'html-mode-hook 'turn-on-font-lock)
+      (add-hook 'html-helper-mode-hook 'turn-on-font-lock)
+      (add-hook 'message-mode-hook 'turn-on-font-lock)
+      (add-hook 'tcl-mode-hook 'turn-on-font-lock)
+      (add-hook 'ruby-mode-hook 'turn-on-font-lock)))
+
+Note that `jde-mode' activates the `font-lock-mode' by default
+because of the `jde-use-font-lock' variable.
+
+Develock will work with Emacs 20.4 and later and XEmacs 21.1 and
+later.  Needless to say, you have to install this file as follows:
+
+# cp -p develock.el /usr/local/share/emacs/site-lisp
+# cd /usr/local/share/emacs/site-lisp
+# emacs -q -no-site-file -batch -f batch-byte-compile develock.el
+
+It is recommended that you use the demand-driven fontification tool
+(e.g. jit-lock, lazy-shot) together with font-lock.
+
+You may find latest version of Develock in ftp.jpl.org:/pub/elisp/.
+
+Texinfo
+=======
+The value of `fill-column' for `texinfo-mode' has changed to 70 in
+Emacs 21.  However, many texinfo files are written on the condition
+that the value is 72.  To against it, Develock provides the
+`develock-fill-column-alist' variable which makes it possible to
+set the value for `fill-column' automatically.  If Develock is on,
+it is set to 72 and also the `auto-fill-mode' is enabled in the
+`texinfo-mode' by default.
+
+Even if you disable it in `develock-fill-column-alist', you can
+change the behavior of highlighting if too much highlighting
+offends your eyes, as shown below:
+
+(if (and (not (featurep 'xemacs))
+	 (>= emacs-major-version 21))
+   (plist-put develock-max-column-plist 'texinfo-mode 72))
+
+Ediff
+=====
+When you run Ediff on the Develock'ed buffers, you may feel
+everything is in confusion.  For such a case, the following hooks
+may help you see diffs clearly.
+
+(add-hook
+'ediff-prepare-buffer-hook
+(lambda nil
+  (if (and (boundp 'font-lock-mode) font-lock-mode
+	    (boundp 'develock-mode) develock-mode)
+      (progn
+	 (develock-mode 0)
+	 (set (make-local-variable 'develock-mode-suspended) t)))))
+
+(add-hook
+'ediff-cleanup-hook
+(lambda nil
+  (let ((buffers (list ediff-buffer-A ediff-buffer-B ediff-buffer-C)))
+    (save-excursion
+      (while buffers
+	 (if (buffer-live-p (car buffers))
+	     (progn
+	       (set-buffer (car buffers))
+	       (if (and (boundp 'develock-mode-suspended)
+			develock-mode-suspended)
+		   (progn
+		     (develock-mode 1)
+		     (makunbound 'develock-mode-suspended)))))
+	 (setq buffers (cdr buffers)))))))
+
+Wanderlust
+==========
+Though Wanderlust does not support font-lock, you may use Develock
+for `wl-draft-mode'.  Try to use the following codes in .wl file.
+
+(require 'develock)
+(require 'message)
+
+(setq wl-highlight-body-too nil)
+
+(defadvice wl-highlight-headers (around dont-highlight-draft
+					(&optional for-draft) activate)
+ \"Don't highlight draft buffers.\"
+ (or for-draft ad-do-it))
+
+(defun wl-draft-setup-develock ()
+ \"Function used to setup to use Develock in `wl-draft-mode'.\"
+ (if (featurep 'xemacs)
+     (put 'wl-draft-mode 'font-lock-defaults
+	   '(message-font-lock-keywords t))
+   (make-local-variable 'font-lock-defaults)
+   (setq font-lock-defaults '(message-font-lock-keywords t t)))
+ (turn-on-font-lock))
+
+(add-hook 'wl-mail-setup-hook 'wl-draft-setup-develock)
+
+(setq develock-max-column-plist
+     (plist-put develock-max-column-plist 'wl-draft-mode t))
+
+(let ((elem (copy-sequence (assq 'message-mode develock-keywords-alist))))
+ (setcar elem 'wl-draft-mode)
+ (setq develock-keywords-alist
+	(cons elem (delq (assq 'wl-draft-mode develock-keywords-alist)
+			 develock-keywords-alist))))
+
+If you feel that highlighting is insufficient in gaudiness,
+customize the value of the variable `message-font-lock-keywords' to
+make font-lock do what you want it to.
+
+Mew
+===
+Similarly, you can use Develock for `mew-draft-mode'.  The following
+codes are for .mew file.  You will never know unless you try.
+
+(require 'develock)
+(require 'message)
+
+(defadvice mew-highlight-header-region (around dont-highlight-draft activate)
+ \"Don't highlight draft buffers.\"
+ (or (eq 'mew-draft-mode major-mode) ad-do-it))
+
+(defadvice mew-highlight-body-region (around dont-highlight-draft activate)
+ \"Don't highlight draft buffers.\"
+ (or (eq 'mew-draft-mode major-mode) ad-do-it))
+
+(defun mew-draft-setup-develock ()
+ \"Function used to setup to use Develock in `mew-draft-mode'.\"
+ (if (featurep 'xemacs)
+     (put 'mew-draft-mode 'font-lock-defaults
+	   '(message-font-lock-keywords t))
+   (make-local-variable 'font-lock-defaults)
+   (setq font-lock-defaults '(message-font-lock-keywords t t)))
+ (turn-on-font-lock))
+
+(add-hook 'mew-draft-mode-hook 'mew-draft-setup-develock)
+
+(setq develock-max-column-plist
+     (plist-put develock-max-column-plist 'mew-draft-mode t))
+
+(let ((elem (copy-sequence (assq 'message-mode develock-keywords-alist))))
+ (setcar elem 'mew-draft-mode)
+ (setq develock-keywords-alist
+	(cons elem (delq (assq 'mew-draft-mode develock-keywords-alist)
+			 develock-keywords-alist))))")

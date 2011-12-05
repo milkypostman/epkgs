@@ -1,0 +1,4 @@
+(:summary    "Enhancements for highlighting swiftex and doctex"
+ :provided   (hilit-swiftex)
+ :required   (((nil hilit19)))
+ :homepage   "http://www.ctan.org/tex-archive/support/emacs-modes/swiftex")

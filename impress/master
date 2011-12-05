@@ -1,0 +1,18 @@
+(:created    "2008"
+ :updated    "2008"
+ :license    "GPL-3"
+ :authors    (("David O'Toole" . "dto@gnu.org"))
+ :maintainer ("David O'Toole" . "dto@gnu.org")
+ :provided   (impress)
+ :required   ((("cl" cl)
+	       ("org" org)))
+ :keywords   (files tools)
+ :commentary "\
+DONE groups
+DONE paths
+DONE timestamps
+TODO projects
+TODO formats
+TODO blogging
+TODO processors
+TODO preamble/postamble div control")

@@ -1,0 +1,38 @@
+(:summary    "Cycle through completions with arrow keys"
+ :created    "19940826"
+ :updated    "2002"
+ :license    "GPL-2"
+ :authors    (("Joe Reiss" . "joe@joereiss.net"))
+ :maintainer ("Joe Reiss" . "joe@joereiss.net")
+ :provided   (cycle-mini)
+ :keywords   (completion minibuffer)
+ :homepage   "http://joereiss.net"
+ :commentary "\
+This is an extension to the completing-read commands in the
+minibuffer.  It allows you to cycle through the current list of
+completions.  This works when changing buffers, with any command
+which reads a function or variable name, or with a programmer
+specified completion list.  It even works with functions which
+read a file name!  In addition, if you have part of a name already
+typed in, cycle-mini will use that string to narrow down the matches
+and will only cycle through the completions which contain that
+initial substring.
+
+Default bindings:
+
+^P,[up]	Display previous matching completion.
+^N,[down]	Display next matching completion.
+TAB          Accept currently displayed completion and move cursor
+             to end of line.  If no completion is displayed, call
+             minibuffer-complete as usual.
+
+Typing any movement key will also accept the current completion.
+Any editing key will clear the currently displayed completion
+and will then change the remaining input as expected.
+
+Installation:
+
+Byte-compile, then put this file in one of your elisp load
+directories and add the following line to your .emacs file
+
+(load \"cycle-mini\")")

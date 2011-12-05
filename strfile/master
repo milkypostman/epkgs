@@ -1,0 +1,5 @@
+(:summary    "Edit fortune files"
+ :updated    "20050303"
+ :license    "GPL-2"
+ :provided   (strfile)
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/editing")

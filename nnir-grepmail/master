@@ -1,0 +1,29 @@
+(:summary    "A grepmail plugin for nnir.el"
+ :created    "2001"
+ :updated    "20010917"
+ :license    "GPL-2"
+ :authors    (("Nevin Kapur" . "nevin@jhu.edu"))
+ :maintainer ("Nevin Kapur" . "nevin@jhu.edu")
+ :provided   (nnir-grepmail)
+ :required   ((("gnus" gnus-group nnfolder nnir nnml)))
+ :keywords   (mail matching)
+ :commentary "\
+This is a plugin for nnir.el to use grepmail as its search engine.
+To use it, put the following in your ~/.gnus:
+
+	(require 'nnir-grepmail)
+	(setq nnir-search-engine 'grepmail)
+
+If you have only one nnml and only one nnfolder backend and they
+are both part of your gnus-secondary-select-methods, then that
+should be it. Otherwise, you may need to customize the variables
+nnir-grepmail-nnml-backend and nnir-grepmail-nnfolder-backend. The
+defaults are guessed from your gnus-secondary-select-methods which
+may or may not be right.
+
+To learn more about nnir.el, read its Commentary section in
+ftp://ls6-ftp.cs.uni-dortmund.de/pub/src/emacs/nnir.el.
+To learn more about grepmail, visit http://grepmail.sourceforge.net.
+If you use grepmail 4.48 or greater, you should add -H to
+nnir-grepmail-switches. This will greatly reduce the size of the
+buffer created by nnir.")

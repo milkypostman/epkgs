@@ -1,0 +1,7 @@
+(:summary    "Annoy lusers who think the geek code is wAY ko0l RADIKuL D00D!1"
+ :created    "19950107"
+ :updated    "19950107"
+ :authors    (("Noah Friedman" . "friedman@prep.ai.mit.edu"))
+ :maintainer (nil . "friedman@prep.ai.mit.edu")
+ :provided   (geek)
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp")

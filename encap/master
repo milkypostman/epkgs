@@ -1,0 +1,43 @@
+(:summary    "Code to convert sexps to independent functions etc"
+ :created    "2000"
+ :updated    "2000"
+ :license    "GPL-2"
+ :authors    (("Tom Breton" . "tob@world.std.com"))
+ :maintainer ("Tom Breton" . "tob@world.std.com")
+ :provided   (encap)
+ :required   ((("arrange" arrange)
+	       ("cl" cl)
+	       ("pp" pp)
+	       ("tehom-cl" tehom-cl)
+	       (nil local-vars)))
+ :keywords   (extensions lisp maint tools)
+ :homepage   "http://www.panix.com/~tehom"
+ :commentary "\
+This code lets you excerpt list-forms in a few keystrokes, without
+(much) chance of changing their logic.  
+
+NB, some of the weirder stuff, like unquoted lambda forms in
+macros, can still be altered in small ways.
+
+Also NB, it is important to properly tell function-types (defuns,
+etc) what should be a parm and what shouldn't.
+
+We automatically remove any redundant surrounding (progn ... ) when
+building a function.  This lets the user build a progn surrounding
+more than one expression and then encap it.
+
+
+The use of insert-parentheses or tehom-insert-parentheses is
+recommended with this, to cut your keystrokes down to a bare
+minimum with numeric prefix args
+
+Non-features
+
+A variant could grab the next/previous N sexps into a progn or
+list.  That requires much more understanding of the code, and
+co-ordination as to which types we may produce.  It makes more
+sense to just do it by hand.  
+
+Instead of assuming only leaves may be parms, we could assume that
+any form may be a literal.  But building the interaction for that
+is much harder, and much harder for the user to navigate.")

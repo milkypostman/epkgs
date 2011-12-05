@@ -1,0 +1,57 @@
+(:summary    "IETF Document Retrieval"
+ :created    "2000"
+ :updated    "2000"
+ :authors    ((nil . "ddutt@cisco.com"))
+ :maintainer ("Dinesh G Dutt" . "ddutt@cisco.com")
+ :provided   (ietfdoc)
+ :keywords   (application fyi internet-draft rfc)
+ :commentary "\
+This module allows various IETF documents such as RFCs, internet drafts,
+BCPs etc to be retrieved. I based this off the RFC retrieval code that was
+posted to the gnu.emacs.sources newsgroup sometime ago. I have spiffed it up
+to support retrieval of other IETF documents such as Internet Drafts, FYIs
+and BCPs, support customization etc.
+
+Usage:
+
+Setup the following in your .emacs:
+
+(autoload 'rfc \"ietfdoc\" nil t)
+(autoload 'idraft \"ietfdoc\" nil t)
+(autoload 'internet-draft \"ietfdoc\" nil t)
+(autoload 'bcp \"ietfdoc\" nil t)
+(autoload 'fyi \"ietfdoc\" nil t)
+
+The following functions are available for usage:
+
+M-x rfc - To retrieve the RFC index, an RFC by name or search the RFC index
+          for a matching pattern.
+
+M-x idraft - To retrieve the Internet draft index, an Internet draft
+             (without knowing the latest version number) by name or, search
+             the Internet draft for a matching pattern.
+
+M-x bcp    - To retrieve the BCP index, a BCP by name or search the BCP index
+             for a matching pattern. (BCP - Best Common Practice)
+
+M-x fyi    - To retrieve the FYI index, an FYI by name or search the FYI
+             index for a matching pattern. (FYI - For Your Information)
+
+Examples:
+
+M-x rfc 1024 - Retrieves the RFC 1024
+M-x rfc      - Retrieves the entire RFC index
+M-x rfc MPLS - Throws up a match buffer with list of all RFCs whose title
+               contains the keyword \"MPLS\". User can select the
+               corresponding RFC.
+M-x idraft   - Retrieves the entire Internet Draft index
+M-x idraft draft-ietf-rsvp-proxy - Retrieves the latest version of the ID
+                                   whose title is draft-ietf-rsvp-proxy
+
+The user can configure the following parameters:
+
+    The path where the IETF document repository is located.
+    The path where a local cached copy of the doucments exist.
+    The path to the IETF document index file (not all places have this under
+    the relevant document directory) for all different IETF documents.
+    If case sensitive matching is to be used.")

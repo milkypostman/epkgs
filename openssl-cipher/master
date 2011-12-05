@@ -1,0 +1,7 @@
+(:summary    "Encrypt/Decrypt string with password by openssl command"
+ :license    "GPL-3"
+ :authors    (("Masahiro Hayashi" . "mhayashi1120@gmail.com"))
+ :maintainer ("Masahiro Hayashi" . "mhayashi1120@gmail.com")
+ :provided   (openssl-cipher)
+ :keywords   (decrypt encrypt openssl password)
+ :homepage   "https://github.com/mhayashi1120/Emacs-openssl-cipher")

@@ -1,0 +1,21 @@
+(:summary    "Interface to the FIP radio"
+ :updated    "20011105"
+ :license    "GPL-2"
+ :authors    (("giraud"))
+ :maintainer ("giraud")
+ :provided   (fip)
+ :required   ((("url" url)))
+ :commentary "\
+This package offers you a function `fip' which pop up a new buffer
+with songs that are played on FIP (a french radio I used to listen,
+for details see
+<URL:http://www.radio-france.fr/chaines/fip/direct/>).
+
+I think that it is a really \"personnal\" package but I wanted to
+provide it just in case...
+
+To install:
+   0. Install the url package
+   1. Put this file in your `load-path'
+   2. Put (require 'fip) in your .emacs
+   3. M-x fip")

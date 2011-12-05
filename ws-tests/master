@@ -1,0 +1,43 @@
+(:summary    "Automated tests for win-switch"
+ :created    "20110804"
+ :updated    "20110812"
+ :authors    (("Christopher Genovese" . "genovese@cmu.edu"))
+ :maintainer ("Christopher R. Genovese" . "genovese@cmu.edu")
+ :provided   (ws-tests)
+ :required   ((("win-switch" win-switch)))
+ :keywords   (efficient ergonomic key\ bindings switch window)
+ :commentary "\
+Simple tests for win-switch under a variety of configurations
+ and window arrangements. Produces a results summary in a separate
+ frame or window.
+
+ To use, either load or require this file (depending on where it is installed),
+ e.g.,
+
+     (load-file \"ws-tests.el\") ; use appropriate path
+
+ and then execute M-x ws-test-run-all
+
+ New tests and test suites can be easily defined using
+ `ws-test' and `def-ws-test-suite'. Fixtures (i.e.,
+ win-switch parameter settings) can be inherited and combined
+ relatively simply as well. The examples at the bottom of this file
+ are a good place to start and illustrate the api and main options.
+
+ Admittedly, all these features might be a bit of overkill.
+ (Do we need tests for the tests now?) But as the examples show,
+ it does provide what it is meant to: an extensible framework
+ for testing win-switch mode under various configurations.
+
+ Known Issues:
+
+ On Carbon Emacs 22, the Vertical Resizing 1 test can fail at random
+ when the main frame is small at start up. Enlarging the frame by
+ a couple lines fixes the problem. I'm looking into this.
+
+ Code Contents (by emacs pages)
+   1. (@> \"Utility Functions\")
+   2. (@> \"Window and buffer setup and cleanup\")
+   3. (@> \"Support routines and variables for test suite definition\")
+   4. (@> \"Main interface for test writing and execution\")
+   5. (@> \"Actual Test Suite Definitions\")")

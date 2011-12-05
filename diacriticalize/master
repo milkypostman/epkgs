@@ -1,0 +1,18 @@
+(:summary    "Constructive diacriticism"
+ :created    "20020427"
+ :updated    "20020428"
+ :license    "GPL-2"
+ :authors    (("Noah Friedman" . "friedman@splode.com"))
+ :maintainer (nil . "friedman@splode.com")
+ :provided   (diacriticalize)
+ :keywords   (extensions)
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
+ :commentary "\
+These commands let one pepper regions of text with gratuitous
+diacritical marks (and remove them).  There is no particularly good
+reason for this, it's just for fun.
+
+This package currently only works with the ISO-8859-1 character set.
+
+Updates of this program may be available via the URL
+http://www.splode.com/~friedman/software/emacs-lisp/")

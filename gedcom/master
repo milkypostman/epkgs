@@ -1,0 +1,12 @@
+(:summary    "Aid in editing lifelines GEDCOM records"
+ :created    "1992"
+ :updated    "20011216"
+ :license    "GPL-2"
+ :authors    (("Stephen A. Wood" . "saw@cebaf.gov"))
+ :maintainer ("Stephen A. Wood" . "saw@cebaf.gov")
+ :provided   (gedcom)
+ :required   ((("emacs" custom easymenu font-lock)
+	       ("ring" ring)))
+ :keywords   (gedcom genealogy lifelines)
+ :homepage   "http://www.rempe-online.de/genealogie/lines"
+ :wikipage   "GedCom")

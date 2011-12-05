@@ -1,0 +1,9 @@
+(:summary    "Just some alien fruit salad to keep you in the zone"
+ :created    "2003"
+ :updated    "2011"
+ :license    "GPL-2"
+ :authors    (("Daniel Brockman" . "daniel@brockman.se"))
+ :maintainer ("Daniel Brockman" . "daniel@brockman.se")
+ :provided   (zenburn)
+ :required   (((nil color-theme)))
+ :homepage   "https://github.com/dbrock/zenburn-el")

@@ -1,0 +1,20 @@
+(:summary    "Stardict dictionary library"
+ :created    "20101106"
+ :updated    "2010"
+ :license    "GPL-2"
+ :authors    (("Changyuan Yu" . "rei.vzy@gmail.com"))
+ :maintainer ("Changyuan Yu" . "rei.vzy@gmail.com")
+ :provided   (stardict)
+ :keywords   (stardict)
+ :commentary "\
+Example:
+
+(require 'stardict)
+(setq dict
+      (stardict-open \"~/.stardict/dic/stardict-lazyworm-ec-2.4.2\"
+                     \"lazyworm-ec\"))
+(stardict-word-exist-p dict \"apple\")
+(stardict-lookup dict \"apple\")
+
+(stardict-open-dict-file dict)
+(mapcar (lambda (x) (stardict-lookup dict x)) (make-list 1000 \"apple\"))")

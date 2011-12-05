@@ -1,0 +1,7 @@
+(:summary    "Tries to implement a beatnik interpreter"
+ :created    "2004"
+ :updated    "2004"
+ :license    "GPL-2"
+ :provided   (beatnik-mode)
+ :keywords   (beatnik esoterica)
+ :homepage   "http://zaaf.nl/emacs/emacs.html")

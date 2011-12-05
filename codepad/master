@@ -1,0 +1,23 @@
+(:summary    "Emacs integration for codepad.org"
+ :created    "20091129"
+ :license    "GPL-2"
+ :authors    (("Rüdiger Sonderfeld" . "ruediger@c-plusplus.de"))
+ :maintainer ("Rüdiger Sonderfeld" . "ruediger@c-plusplus.de")
+ :provided   (codepad)
+ :required   ((("cl" cl)
+	       ("url" url-http)))
+ :keywords   (codepad paste pastebin pastie)
+ :homepage   "https://github.com/ruediger/emacs-codepad"
+ :commentary "\
+This code can be used to paste code to codepad.org.
+
+codepad-paste-region pastes a region to codepad.org.  The URL is printed
+and if codepad-view is T opened in the browser.
+
+codepad-paste-buffer pastes the whole buffer.
+
+TODO:
+
+* fetch Output from codepad.org (if run is True)
+* support projects (http://project.codepad.org)
+* support user accounts")

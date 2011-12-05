@@ -1,0 +1,18 @@
+(:summary    "Specify package.el packages to use in a package spec"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Johan Andersson" . "johan.rejeep@gmail.com"))
+ :maintainer ("Johan Andersson" . "johan.rejeep@gmail.com")
+ :provided   (package-spec)
+ :required   ((("package" package)))
+ :keywords   (convenience speed)
+ :homepage   "https://github.com/rejeep/package-spec"
+ :commentary "\
+With package-spec.el you can specify what package.el sources and
+packages you want. When starting Emacs all packages specified in
+the gemfile will be installed if not already, and loaded.
+
+To install:
+  (add-to-list 'load-path \"/path/to/package-spec\")
+  (require 'package-spec)")

@@ -1,0 +1,10 @@
+(:summary    "Emacs input method"
+ :created    "2004"
+ :updated    "2004"
+ :license    "GPL-2"
+ :authors    ((nil . "charleswang@peoplemail.com.cn"))
+ :maintainer (nil . "charleswang@peoplemail.com.cn")
+ :provided   (eim)
+ :required   ((("cl" cl)))
+ :commentary "\
+Change Log:")

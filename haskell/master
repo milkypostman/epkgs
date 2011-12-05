@@ -1,0 +1,22 @@
+(:summary    "Major mode for editing Haskell"
+ :created    "2003"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("Dave Love" . "fx@gnu.org"))
+ :maintainer ("Dave Love" . "fx@gnu.org")
+ :provided   (haskell)
+ :keywords   (languages)
+ :homepage   "http://www.loveshack.ukfsn.org/emacs"
+ :wikipage   "Haskell"
+ :commentary "\
+This is a fairly simple mode for Haskell, mainly for use with my
+haskell-latex mode.  It has some simple Imenu support, but can also
+use haskell-decl-scan.el and haskell-doc.el from haskell.org.  The
+sophisticated indentation support from haskell-indent.el needs
+reworking to fit in with narrowing to the chunk done by
+haskell-latex.el.
+
+There is some support for the Bird-style `inverse comment'
+convention for simple literate programming.  Everything outside the
+`>'-delimited regions is treated as comments.  This relies on
+font-lock being turned on to add syntax properties.")

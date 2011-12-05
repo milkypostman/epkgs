@@ -1,0 +1,10 @@
+(:summary    "Create function for sending messages with M$ outlook"
+ :created    "20100428"
+ :updated    "20100428"
+ :license    "GPL-3"
+ :authors    (("Matthew L. Fidler"))
+ :maintainer ("Matthew L. Fidler")
+ :provided   (message-outlook)
+ :wikipage   "MessageOutlook"
+ :commentary "\
+Requires wscript.")

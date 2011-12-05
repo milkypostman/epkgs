@@ -1,0 +1,12 @@
+(:created    "20110111"
+ :license    "GPL-3"
+ :authors    (("baron"))
+ :maintainer ("baron")
+ :provided   (nazna)
+ :required   ((("cl" cl)))
+ :keywords   (arithmetic math)
+ :homepage   "https://github.com/baron/nazna.el"
+ :commentary "\
+mental arithmetic for emacs
+nazna is \"anzan\", that is
+mental arithmetic in Japanese spelled backwards")

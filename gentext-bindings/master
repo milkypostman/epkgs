@@ -1,0 +1,6 @@
+(:summary    "Key binding manipulations for generic text commands"
+ :updated    "20060123"
+ :license    "GPL-2"
+ :provided   (gentext-bindings)
+ :required   ((("keymap-hacks" keymap-hacks)))
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/editing")

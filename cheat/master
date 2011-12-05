@@ -1,0 +1,5 @@
+(:created    "2007"
+ :updated    "20070822"
+ :license    "GPL-2"
+ :provided   (cheat)
+ :homepage   "https://github.com/defunkt/cheat.el")

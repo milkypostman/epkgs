@@ -1,0 +1,22 @@
+(:summary    "Keep a running count of words in a latex buffer"
+ :created    "1997"
+ :updated    "1997"
+ :license    "GPL-2"
+ :provided   (tex-wcount)
+ :required   ((("assoc" assoc)
+	       ("emacs" timer)))
+ :commentary "\
+`tex-wcount-mode' is a minor mode that puts into the modeline a running
+count of the words in a latex buffer.  It uses the program detex, which must
+be installed on the  host system. The mode runs tex-wcount-count when
+Emacs has been idle for `tex-wcount-idleness' seconds, or when the user
+presses C-c w (`tex-wcount-count'). detex uses the option -l so the word
+count returned is only accurate for a latex file. This could be changed to -t
+to modify the program to count words in a tex file.
+
+tex-wcount-count was modified from wcount.el, which is:
+Copyright 1997 Bob Glickstein.      <http://www.zanshin.com/~bobg/>
+Author: Bob Glickstein <bobg@zanshin.com>
+Maintainer: Bob Glickstein <bobg@zanshin.com>
+Version: 1.0
+And was a mode which did a word count using the forward-word function.")

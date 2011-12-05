@@ -1,0 +1,30 @@
+(:summary    "C skeletons"
+ :created    "20030105"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("Zajcev Evgeny" . "zevlg@yandex.ru"))
+ :maintainer ("none, if you want be a maintainer please e-mail me.")
+ :provided   (mcskels)
+ :required   ((("cc-mode" cc-mode)))
+ :keywords   (c)
+ :commentary "\
+Use this to quickly insert C statements.
+
+Notes about `mc-comp-list':
+
+  `mc-comp-list' is a list of completions for c statements after
+  statements is passed to `mc-insert-stat-complete' it will look-up
+  for a symbol mc-<stat>-skel. If it is variable, then
+  `mc-insert-skeleton' will be called, else if it is function then
+  it will be called interactively.
+
+Notes about `mc-push-stack':
+
+  `mc-push-stack' is a stack of cursor points. You can use it to
+  enhance speed of cursor moving inside skeleton.
+
+
+Customisation:
+
+You can add your stats to `mc-comp-list', Do not forget to describe
+action for it.")

@@ -1,0 +1,21 @@
+(:summary    "Anything-sources for el-swank-fuzzy.el"
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-3"
+ :authors    (("Takeshi Banse" . "takebi@laafc.net"))
+ :maintainer ("Takeshi Banse" . "takebi@laafc.net")
+ :provided   (anything-el-swank-fuzzy)
+ :required   ((("anything" anything anything-complete)
+	       ("cl" cl)
+	       ("el-swank-fuzzy" el-swank-fuzzy)
+	       ("eldoc" eldoc)
+	       ("term" term))
+	      (("anything" anything-show-completion)))
+ :keywords   (anything convenience matching)
+ :commentary "\
+Some Anything configurations for using the el-swank-fuzzy.el.
+
+Installation:
+
+Put the el-swank-fuzzy.el, anything.el and anything-complete.el to your
+load-path.")

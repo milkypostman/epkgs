@@ -1,0 +1,55 @@
+(:summary    "X-Face encoder/decoder/viewer for Emacsen"
+ :created    "19960919"
+ :updated    "2003"
+ :license    "GPL-2"
+ :authors    (("Katsumi Yamaoka" . "yamaoka@jpl.org")
+	      ("Tatsuya Ichikawa" . "ichikawa@jpl.org")
+	      ("OKUNISHI Fujikazu" . "fuji0924@mbox.kyoto-inet.or.jp")
+	      ("KOSEKI Yoshinori" . "kose@yk.netlaputa.or.jp")
+	      ("Ken'ichi OKADA" . "okada@opaopa.org")
+	      ("Tetsuya Uemura" . "uemura@pp.iij4u.or.jp")
+	      ("TAKAHASHI Kaoru" . "kaoru@kaisei.org")
+	      ("Daiki Ueno" . "ueno@unixuser.org")
+	      ("Tatsuya Kinoshita" . "tats@vega.ocn.ne.jp"))
+ :maintainer ("Katsumi Yamaoka" . "yamaoka@jpl.org")
+ :provided   (x-face x-face-xmas)
+ :required   ((("cl" cl)
+	       ("emacs" bytecomp custom)
+	       ("mew" mew-cache mew-syntax)
+	       ("semi" mime-image)
+	       ("vm" vm-macro vm-misc)
+	       (nil alist highlight-headers tl-list tm-image)))
+ :keywords   (cmail gnus mail mew mh-e rmail semi-gnus vm wl x-face x-face-mule)
+ :homepage   "http://www.jpl.org/ftp/pub/elisp/"
+ :wikipage   "XFace"
+ :commentary "\
+Now the X-Face utility for Emacs 21 is available at:
+
+ftp://ftp.jpl.org/pub/elisp/x-face-e21.el.gz
+
+We strongly recommend you use it rather than this module if you are
+using Emacs 21 having a new redisplay engine.
+
+This module provides the following five commands.  Each command name
+expresses its function literally:
+
+x-face-encode
+ Read an XBM file, encode it to the X-Face data, and show it.
+x-face-insert
+ Read an XBM file, encode it to the X-Face data, and insert it to
+ the current buffer as a message header.
+x-face-save
+ Extract X-Face headers in the current buffer, encode them to XBM
+ data, and save them in the local system.
+x-face-view
+ Extract X-Face headers in the current buffer, encode them to XBM
+ data, and show them using an external image viewer.
+x-face-ascii-view
+ Extract X-Face headers in the current buffer, encode them to XBM
+ data, and show them as ascii pictures in an Emacs frame.\"
+
+Please note, this module provides no image viewer in an Emacs frame
+for the historical reason.  However, it is easy to display X-Face
+images inline; Gnus provides the X-Face viewer by itself, you can
+use x-face-mule.el for Mule 2 and Emacs, x-face-e21.el for Emacs 21,
+x-face-xmas.el for XEmacs, and so forth.")

@@ -1,0 +1,17 @@
+(:summary    "Records bootstrap"
+ :created    "2000"
+ :updated    "2000"
+ :license    "GPL-2"
+ :authors    (("Ashvin Goel"))
+ :maintainer ("Ashvin Goel")
+ :provided   (records records-dindex records-index records-macro records-search records-tex records-util records-vars records-version)
+ :required   ((("calendar" cal-move calendar)
+	       ("emacs" easymenu font-lock)
+	       ("gnus" gnus)
+	       ("imenu" imenu)
+	       ("mail-utils" mail-utils)
+	       ("mailcrypt" mailcrypt)
+	       ("records" records-autoloads)
+	       ("tempo" tempo)
+	       ("url" url)))
+ :wikipage   "RecordsMode")

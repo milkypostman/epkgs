@@ -1,0 +1,13 @@
+(:summary    "Error regexps for weblint"
+ :created    "2007"
+ :updated    "2008"
+ :license    "GPL-3"
+ :authors    (("Kevin Ryde" . "user42@zip.com.au"))
+ :maintainer ("Kevin Ryde" . "user42@zip.com.au")
+ :provided   (compilation-weblint)
+ :required   ((("compile" compile)))
+ :keywords   (processes)
+ :commentary "\
+This spot of code adds a `compilation-error-regexp-alist' pattern for
+messages from the weblint program (the one based on the perl HTML::Lint
+modules).")

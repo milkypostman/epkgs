@@ -1,0 +1,5 @@
+(:summary    "Update stack comments in a PostScript file"
+ :updated    "20060625"
+ :license    "GPL-2"
+ :provided   (ps-stack-comments)
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/editing")

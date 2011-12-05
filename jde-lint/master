@@ -1,0 +1,30 @@
+(:summary    "Lint4j interface for JDE"
+ :created    "2005"
+ :updated    "20050126"
+ :license    "GPL-1"
+ :authors    (("Nascif A. Abousalh Neto" . "nascif@acm.org"))
+ :maintainer ("Nascif A. Abousalh Neto" . "nascif@acm.org")
+ :provided   (jde-lint)
+ :required   ((("jdee" jde-compile jde-package jde-run)))
+ :keywords   (code\ checker java tools)
+ :commentary "\
+This package provides an interface from JDE (see http://jde.sunsite.dk/) to
+Lint4j (see http://www.jutils.com/). Lint4j (\"Lint for Java\") is a static
+Java source code analyzer that detects locking and threading issues,
+performance and scalability problems, and checks complex contracts such as
+Java serialization by performing type, data flow, and lock graph analysis.
+
+Installation:
+
+ 1) Download and install the Lint4J tool from http://www.jutils.com/download.html
+
+ 2) Put this file on your Emacs-Lisp load path and add the following into
+ your .emacs startup file
+
+     (require 'jde-lint)
+
+ 3) Customize the variable `jde-lint-option-path' to point to the Lint4j
+ installation directory.
+
+ 4) Make sure JDE is properly configured. In particular set the variables
+ jde-jdk-registry and jde-jdk so that the JVM launcher can be found.")

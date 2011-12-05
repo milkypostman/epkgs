@@ -1,0 +1,41 @@
+(:summary    "Loads Yasnippets on demand (makes start up faster)"
+ :created    "20101027"
+ :updated    "20111128"
+ :license    "GPL-3"
+ :authors    (("Matthew L. Fidler"))
+ :maintainer ("Matthew L. Fidler")
+ :provided   (yas-jit)
+ :required   ((("cl" cl))
+	      (("yasnippet" yasnippet)
+	       (nil yasnippet-bundle)))
+ :keywords   (fast yasnippet)
+ :homepage   "https://github.com/mlf176f2/yas-jit.el"
+ :commentary "\
+Usage:
+  Instead of using
+
+  (require 'yasnippet)
+  (setq yas/root-directory snippet-directory)
+  (yas/load-directory yas/root-directory)
+
+  which takes some time on initial loading, use
+
+  (require 'yas-jit)
+  (setq yas/root-directory snippet-directory)
+  (yas/jit-load)
+
+  For yasnippet 0.6 the root directory is something like:
+  (setq yas/root-directory \"~/.emacs.d/snippets/text-mode/\")
+
+  For yasnippet 0.7 the root directory is something like:
+
+  (setq yas/root-directory \"~/.emacs.d/snippets/\");;
+
+  This is because the root directory assumes that each load-path
+  contains directories of modes with snippets.
+
+  Also note that yasnippet requires something in the hash,
+  otherwise it loads everything.  Therefore text-mode snippets are
+  loaded by default.
+
+  This will probably not be put in the trunk of yasnippet.")

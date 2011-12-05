@@ -1,0 +1,18 @@
+(:summary    "Send blocks of text from emacs to screen or tmux sessions"
+ :created    "20111116"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Ben Booth" . "benwbooth@gmail.com"))
+ :maintainer ("Ben Booth" . "benwbooth@gmail.com")
+ :provided   (screensend)
+ :keywords   (lisp screen send terminal tmux)
+ :homepage   "https://github.com/benbooth5/screensend.el"
+ :wikipage   "ScreenSend"
+ :commentary "\
+screensend.el
+-------------
+
+Simple Emacs script to allow you to send selected blocks of text to a
+running screen or tmux session. This is useful for sending text to interactive
+programs like clojure, psql, etc. in cases where the built-in term-mode is
+too slow.")

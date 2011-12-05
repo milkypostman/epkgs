@@ -1,0 +1,25 @@
+(:summary    "Allow TM (and hence Gnus, RMAIL, et al) to display a vcard MIME part"
+ :created    "19980807"
+ :updated    "19980817"
+ :license    "GPL-2"
+ :authors    (("Andrew J Cosgriff" . "ajc@bing.wattle.id.au"))
+ :maintainer ("Andrew J Cosgriff" . "ajc@bing.wattle.id.au")
+ :provided   (tm-vcard)
+ :required   ((("gnus" tm-view vcard)))
+ :keywords   (gnus mime rmail tm vcard)
+ :homepage   "http://polydistortion.net/sw/emacs-lisp"
+ :commentary "\
+Noah Friedman wrote a generic bit of Emacs Lisp to parse VCard
+data, saying \"it'd be neat if somebody made this work with TM, so
+Gnus and RMAIL can use it.\" - here goes...
+
+You'll need to get vcard.el from
+http://www.splode.com/users/friedman/software/emacs-lisp/
+
+Once it's all installed, you can add something like
+
+(call-after-loaded 'tm-view (function (lambda () (require 'tm-vcard) (tm-vcard-install))))
+
+to activate it
+
+This code is available from http://bing.bofh.asn.au/sw/emacs-lisp/")

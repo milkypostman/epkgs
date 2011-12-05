@@ -1,0 +1,33 @@
+(:summary    "Utility functions for dealing with maven project.xml files"
+ :created    "2005"
+ :updated    "2005"
+ :license    "GPL-2"
+ :authors    (("Ole Arndt" . "ole@sugarshark.com"))
+ :maintainer ("Ole Arndt" . "ole@sugarshark.com")
+ :provided   (pom)
+ :keywords   (development java jdee maven)
+ :homepage   "http://sugarshark.com/ProjectPage.html"
+ :commentary "\
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+Introduction
+------------
+
+This package holds some functions to deal with maven POMs
+
+It lets you set up you JDE variables from a maven project.xml file.
+It supports project file inheritance and property substitution from the
+`project.properties' and `build.properties' files.
+
+My typical prj.el for the JDEE looks like this:
+
+  (require 'pom)
+  (let ((pom (pom-read-pom)))
+    (jde-project-file-version \"1.0\")
+    (jde-set-variables
+     '(jde-javadoc-gen-destination-directory \"./target/docs/apidocs\")
+     '(jde-project-name (pom-get-project-id pom))
+     '(jde-global-classpath (pom-get-classpath pom))))
+
+
+Options")

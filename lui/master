@@ -1,0 +1,22 @@
+(:summary    "Linewise User Interface"
+ :created    "2004"
+ :updated    "2004"
+ :license    "GPL-2"
+ :authors    (("Jorgen Schaefer" . "forcer@forcix.cx"))
+ :maintainer ("Jorgen Schaefer" . "forcer@forcix.cx")
+ :provided   (lui)
+ :keywords   (application user-interface)
+ :wikipage   "LuiMode"
+ :commentary "\
+Lui is a simple extensible mode that allows any program to present
+a userfriendly interface to the user. This interface is closely
+oriented on the user interface of ERC.
+
+To use, simply call lui-mode with a function to handle user input
+in your mode function. Don't kill all local variables afterwards,
+lui-mode does that for you!
+
+Now your function should be called with user input, and you can
+call `lui-insert' and `lui-prompt' at will.
+
+That's it.")

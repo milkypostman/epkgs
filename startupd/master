@@ -1,0 +1,24 @@
+(:summary    "Modular loading of Emacs configuration"
+ :created    "201107"
+ :updated    "2011"
+ :license    "GPL-3"
+ :authors    (("Fabián E. Gallina" . "fabian@anue.biz"))
+ :maintainer ("FSF")
+ :provided   (startupd)
+ :keywords   (languages)
+ :homepage   "https://github.com/fgallina/startupd.el"
+ :commentary "\
+Small utility library that loads all Lisp files located in the
+directory indicated by `startupd-path'.  Files are filtered by the
+`startupd-file-name-regexp' and the loading order is determined by
+the function defined in `startupd-file-loading-sort-function'.  By
+default the file loading order is done by using `string<' and
+byte-compiled versions always take precedence.
+
+Installation:
+
+Add this to your .emacs:
+
+(add-to-list 'load-path \"/folder/containing/file\")
+(require 'startupd)
+(startupd-load-files)")

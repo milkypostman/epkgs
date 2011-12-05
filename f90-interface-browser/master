@@ -1,0 +1,42 @@
+(:summary    "Parse and browse f90 interfaces"
+ :created    "20110706"
+ :updated    "2011"
+ :license    "GPL-2"
+ :provided   (f90-interface-browser)
+ :required   ((("cl" cl)
+	       ("etags" etags)
+	       ("f90" f90)
+	       ("thingatpt" thingatpt)))
+ :homepage   "https://github.com/wence-/f90-iface"
+ :commentary "\
+You write (or work on) large, modern fortran code bases.  These
+make heavy use of function overloading and generic interfaces.  Your
+brain is too small to remember what all the specialisers are
+called.  Therefore, your editor should help you.
+
+Load this file and tell it to parse all the fortran files in your
+code base.  You can do this one directory at a time by calling
+`f90-parse-interfaces-in-dir' (M-x f90-parse-interfaces-in-dir
+RET).  Or you can parse all the fortran files in a directory and
+recursively in its subdirectories by calling
+`f90-parse-all-interfaces'.
+
+Now you are able to browse (with completion) all defined interfaces
+in your code by calling `f90-browse-interface-specialisers'.
+Alternatively, if `point' is on a function or subroutine call, you
+can call `f90-find-tag-interface' and you'll be shown a list of the
+interfaces that match the (possibly typed) argument list of the
+current function.  This latter hooks into the `find-tag' machinery
+so that you can use it on the M-. keybinding and it will fall back
+to completing tag names if you don't want to look for an interface
+definition.
+
+Derived types are also parsed, so that slot types of derived types
+are given the correct type (rather than a UNION-TYPE) when arglist
+matching.  You can show the definition of a know derived type by
+calling `f90-show-type-definition' which prompts (with completion)
+for a typename to show.
+
+The parsing is by no means complete, it does a half-hearted attempt
+using regular expressions (now you have two problems) rather than
+defining a grammar and doing full parsing.")

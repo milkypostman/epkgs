@@ -1,0 +1,9 @@
+(:summary    "Keyboard input and keymap utility functions"
+ :created    "1999"
+ :updated    "19991010"
+ :license    "GPL-2"
+ :authors    (("Noah Friedman" . "friedman@splode.com"))
+ :maintainer (nil . "friedman@splode.com")
+ :provided   (kbd-fns)
+ :required   ((("list-fns" list-fns)))
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp")

@@ -1,0 +1,17 @@
+(:summary    "Functions for building directory-tree lists"
+ :created    "19980424"
+ :updated    "20060520"
+ :license    "GPL-2"
+ :authors    (("Noah Friedman" . "friedman@splode.com"))
+ :maintainer (nil . "friedman@splode.com")
+ :provided   (dirtree)
+ :keywords   (extensions)
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
+ :commentary "\
+I use the function `build-subdirectory-list' (and its friends) to
+initialize my load-path, among other things.  At the root of my lisp
+directories I have \".build-subdirs.els\" files which specify
+subdirectories which should also go into the path.
+
+Updates of this file may be available via the URL
+http://www.splode.com/~friedman/software/emacs-lisp/")

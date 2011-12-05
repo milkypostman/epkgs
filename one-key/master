@@ -1,0 +1,206 @@
+(:summary    "One key"
+ :created    "20081222"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Andy Stewart" . "lazycat.manatee@gmail.com")
+	      ("rubikitch" . "rubikitch@ruby-lang.org"))
+ :maintainer ("Joe Bloggs" . "vapniks@yahoo.com")
+ :provided   (one-key one-key-config one-key-default)
+ :required   ((("cl" cl)))
+ :keywords   (one-key)
+ :wikipage   "OneKey"
+ :commentary "\
+With so many Emacs extensions, you have a lot of keystrokes to remember, and you probably forget most of them.
+
+This package fixes this problem.
+
+One Key provides a TOP keystroke that when pressed presents you with
+a menu of choices in a popup window for commands to execute with a further keystroke.
+
+Just type one of the listed keystrokes to execute the corresponding command.
+
+You can also associate different menus with different major modes so that the menu presented depends on the
+current major mode.
+
+* Quick use example:
+
+Add the variables and functions below to your ~/.emacs
+
+(defvar one-key-menu-emms-alist nil
+  \"`One-Key' menu list for EMMS.\")
+
+(setq one-key-menu-emms-alist
+      '(
+        ((\"g\" . \"Playlist Go\") . emms-playlist-mode-go)
+        ((\"d\" . \"Play Directory Tree\") . emms-play-directory-tree)
+        ((\"f\" . \"Play File\") . emms-play-file)
+        ((\"i\" . \"Play Playlist\") . emms-play-playlist)
+        ((\"t\" . \"Add Directory Tree\") . emms-add-directory-tree)
+        ((\"c\" . \"Toggle Repeat Track\") . emms-toggle-repeat-track)
+        ((\"w\" . \"Toggle Repeat Playlist\") . emms-toggle-repeat-playlist)
+        ((\"u\" . \"Play Now\") . emms-play-now)
+        ((\"z\" . \"Show\") . emms-show)
+        ((\"s\" . \"Emms Streams\") . emms-streams)
+        ((\"b\" . \"Emms Browser\") . emms-browser)))
+
+(defun one-key-menu-emms ()
+  \"`One-Key' menu for EMMS.\"
+  (interactive)
+  (one-key-menu \"emms\" one-key-menu-emms-alist t))
+
+Add an item to `one-key-toplevel-alist' in the customization buffer for one-key
+(M-x customize-group RET one-key RET). The first item should be the key (e.g. m), the second item
+should be a description (e.g. \"Emacs multimedia system\"), and the third item should be the command:
+`one-key-menu-emms'. Then bind `one-key-menu-toplevel' to any key you want E.g:
+
+ (global-set-key (kbd \"C-M-s-SPC\") 'one-key-menu-toplevel)
+
+Alternatively you can ignore the toplevel menu and just bind `one-key-menu-emms' to a key,
+E.g:
+
+     (global-set-key (kbd \"C-c p\") 'one-key-menu-emms)
+
+Now when you type the key, a one-key menu will popup at the bottom of the window.
+Then you just type a keystroke listed in the menu to execute the corresponding command.
+
+You can also associate menus with major-modes using the customizable `one-key-mode-alist' variable, 
+and the `one-key-get-menu' command. When this command is run it will open the menu associated with the 
+current major-mode, or the toplevel menu if there is no associated menu.
+You can bind this to a global key, e.g:
+
+    (global-set-key (kbd \"C-s-SPC\") 'one-key-get-menu)
+
+Now you don't need to remember so many keystrokes, just remembering one keystroke is enough!
+
+** The format of the menu list:
+
+((\"KEYSTROKE\" . \"DESCRIBE\") . COMMAND)
+
+Example:
+
+(defvar example-menu-alist
+     '(
+       ((\"Keystroke-A\" . \"Describe-A\") . Command-A)
+       ((\"Keystroke-B\" . \"Describe-B\") . Command-B)
+       ((\"Keystroke-C\" . \"Describe-C\") . Command-C)
+       ))
+
+Make sure COMMAND is `interactive', otherwise it will throw an error.
+
+** The format of menu function:
+
+(one-key-menu \"MENU-NAME\" MENU-ALIST)
+
+Example:
+
+(defun example-menu ()
+  (interactive)
+  (one-key-menu \"example\" example-menu-alist)
+
+** The arguments of the function `one-key-menu':
+
+`title' is the title of menu, any string you like.
+`info-alist' is a special list that contains KEY, DESCRIPTION
+     and COMMAND.  see above description about `example-menu-alist'.
+`miss-match-exit-p' set to t means the popup window will exit when you
+     type a KEY that can't match in menu.
+`recursion-p' is whether or not recursion will execute `one-key-menu' on self
+     when no KEY matchs in the menu.
+`protect-function' is a protect function that is called last in `one-key-menu',
+     make sure this function is an `interactive' function.
+`alternate-function' is an alternate function to execute last.
+`execute-last-command-when-miss-match' whether to execute the last input command
+when keystroke is not matched.
+
+Creating menus for keymaps:
+
+You can use `one-key-insert-template' to insert template code for a special keymap,
+or `one-key-show-template' to create a special buffer called \"One-Key-Template\" containing the template code.
+For example, after you run `one-key-insert-template', you will get a Keymap prompt:
+\"Keymap to One-Key: \", in which you enter the name of a keymap or a prefix key with an associated keymap.
+After entering the keymap/prefix key you are prompted for a title for the menu, and then code for the menu
+will be automatically generated.
+E.g. if you type \"C-x r\", and then enter the title \"bookmark\" then it will generate template code
+like the code shown below:
+
+(defvar one-key-menu-bookmark-alist nil
+  \"The `one-key' menu list for BOOKMARK.\")
+
+(setq one-key-menu-bookmark-alist
+   '(
+     ((\"C-@\" . \"point-to-register\") . point-to-register)
+     ((\"SPC\" . \"point-to-register\") . point-to-register)
+     ((\"+\" . \"increment-register\") . increment-register)
+     ((\"b\" . \"bookmark-jump\") . bookmark-jump)
+     ((\"c\" . \"clear-rectangle\") . clear-rectangle)
+     ((\"d\" . \"delete-rectangle\") . delete-rectangle)
+     ((\"f\" . \"frame-configuration-to-register\") . frame-configuration-to-register)
+     ((\"g\" . \"insert-register\") . insert-register)
+     ((\"i\" . \"insert-register\") . insert-register)
+     ((\"j\" . \"jump-to-register\") . jump-to-register)
+     ((\"k\" . \"kill-rectangle\") . kill-rectangle)
+     ((\"l\" . \"bookmark-bmenu-list\") . bookmark-bmenu-list)
+     ((\"m\" . \"bookmark-set\") . bookmark-set)
+     ((\"n\" . \"number-to-register\") . number-to-register)
+     ((\"o\" . \"open-rectangle\") . open-rectangle)
+     ((\"r\" . \"copy-rectangle-to-register\") . copy-rectangle-to-register)
+     ((\"s\" . \"copy-to-register\") . copy-to-register)
+     ((\"t\" . \"string-rectangle\") . string-rectangle)
+     ((\"w\" . \"window-configuration-to-register\") . window-configuration-to-register)
+     ((\"x\" . \"copy-to-register\") . copy-to-register)
+     ((\"y\" . \"yank-rectangle\") . yank-rectangle)
+     ((\"C-SPC\" . \"point-to-register\") . point-to-register)
+     ))
+
+(defun one-key-menu-bookmark ()
+  (interactive)
+  (one-key-menu \"BOOKMARK\" one-key-menu-bookmark-alist))
+
+If you used `one-key-show-template' the code is placed in the special buffer \"One-Key-Template\"
+which has it's own one-key menu and keybindings bound to special helper functions to help you edit the
+menu. Type M-x one-key-get-menu to see a menu of commands/keybindings for this buffer
+(or use one-key-menu-one-key-template if it is not listed in one-key-mode-alist).
+For example you can move items in the menu up/down using \"M-<up>\" or \"M-<down>\".
+You can sort the items in the currently active region alphabetically by description/key binding/command
+by pressing \"C-c C-s\" followed by d/k/c.
+You can quickly test your menu by pressing \"C-c C-t\".
+
+Fixed menu keys:
+
+Some keys are available for all menus and are always the same, they can be configured with the following variables:
+ `one-key-key-hide'   :  key to hide the menu, default is \"?\"
+ `one-key-key-quit'   :  key to quit the menu, default is \"q\"
+ `one-key-key-up'     :  key to scroll the menu down one line, default is \"<up>\"
+ `one-key-key-down'   :  key to scroll the menu up one line, default is \"<down>\"
+ `one-key-key-pgup'   :  key to scroll the menu down one page, default is \"<prior>\"
+ `one-key-key-pgdown' :  key to scroll the menu up one page, default is \"<next>\"
+ `one-key-key-help'   :  when this key is pressed, the next keypress will show help for the corresponding command,
+                         default is \"C-?\"
+ `one-key-key-edit'   :  key to edit the menu (if the source file can be found), default is \"C-/\"
+
+Auto-load one-key menus:
+
+If you set `one-key-auto-load-menus' to t (in the customization group for one-key), then any files
+in the directory specified by `one-key-menus-location' that match the regexp `one-key-menus-regexp'
+will automatically be loaded on startup.
+
+Installation:
+
+Put one-key.el in a directory in your load-path, e.g. ~/.emacs.d/
+You can add a directory to your load-path with the following line in ~/.emacs
+(add-to-list 'load-path (expand-file-name \"~/elisp\"))
+where ~/elisp is the directory you want to add 
+(you don't need to do this for ~/.emacs.d - it's added by default).
+
+Add the following to your ~/.emacs startup file.
+
+(require 'one-key)
+
+Because this library uses a special implementation,
+sometimes a `max-lisp-eval-depth' or `max-specpdl-size' error can occur.
+
+So making the above two variables larger will reduce the probability that an error occurs.
+E.g:
+
+(setq max-lisp-eval-depth 10000)
+(setq max-specpdl-size 10000)")

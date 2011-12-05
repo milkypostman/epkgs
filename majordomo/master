@@ -1,0 +1,10 @@
+(:created    "2001"
+ :updated    "20070822"
+ :license    "GPL-2"
+ :authors    (("John C. G. Sturdy" . "john@cb1.com"))
+ :maintainer ("John C. G. Sturdy" . "john@cb1.com")
+ :provided   (majordomo)
+ :required   ((("cl" cl)
+	       ("emacs" backquote)))
+ :keywords   (email)
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/email")

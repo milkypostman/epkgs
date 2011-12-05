@@ -1,0 +1,5 @@
+(:summary    "Make banners from strings"
+ :updated    "20060505"
+ :license    "GPL-2"
+ :provided   (banner)
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/misc")

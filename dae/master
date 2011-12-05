@@ -1,0 +1,17 @@
+(:summary    "Digital Audio Extraction"
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-2"
+ :authors    (("Lars Magne Ingebrigtsen" . "larsi@gnus.org"))
+ :maintainer ("Lars Magne Ingebrigtsen" . "larsi@gnus.org")
+ :provided   (dae)
+ :required   ((("cddb" cddb)
+	       ("cl" cl)
+	       ("musicbrainz" musicbrainz)
+	       ("scan" scan)))
+ :keywords   (music)
+ :homepage   "https://github.com/larsmagne/dae.el"
+ :commentary "\
+This library provides an interface for ripping, scanning and
+querying/editing cddb/musicbrainz entries in parallell.  The
+parallellism requires that you have several CD ROM players.")

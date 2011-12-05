@@ -1,0 +1,7 @@
+(:summary    "A user interface for the Internet Relay Chat"
+ :created    "19890614"
+ :updated    "19900206"
+ :license    "GPL-1"
+ :authors    (("David C Lawrence" . "tale@pawl.rpi.edu"))
+ :maintainer ("David C Lawrence" . "tale@pawl.rpi.edu")
+ :provided   (irc))

@@ -1,0 +1,6 @@
+(:summary    "Major mode for editing ESRI batch scrips"
+ :created    "2002"
+ :updated    "2002"
+ :license    "GPL-2"
+ :provided   (batch-mode)
+ :wikipage   "BatchMode")

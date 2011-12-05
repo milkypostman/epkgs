@@ -1,0 +1,5 @@
+(:summary    "Show the user the help strings of all functions"
+ :updated    "20060506"
+ :license    "GPL-2"
+ :provided   (read-all-emacs-help)
+ :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/elisp-dev-tools")

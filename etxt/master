@@ -1,0 +1,11 @@
+(:summary    "Major mode for reading etexts"
+ :created    "2006"
+ :updated    "20070122"
+ :license    "GPL-2"
+ :authors    (("Lee Bigelow" . "ligelowbee@gmail.com"))
+ :maintainer ("Lee Bigelow" . "ligelowbee@gmail.com")
+ :provided   (etxt)
+ :required   ((("bookmark" bookmark)
+	       ("speedbar" speedbar)
+	       ("view" view)))
+ :wikipage   "EtxtMode")

@@ -1,0 +1,5 @@
+(:license    "GPL-2"
+ :authors    (("Paul Hobbs"))
+ :maintainer ("Paul Hobbs")
+ :provided   (copy-from-surrounding-lines)
+ :required   ((("emacs" misc))))

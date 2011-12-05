@@ -1,0 +1,9 @@
+(:summary    "Major mode to edit QA files for SuperMemo"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-2"
+ :authors    (("Yves Senn" . "yves.senn@gmail.com"))
+ :maintainer ("Yves Senn" . "yves.senn@gmail.com")
+ :provided   (qa-mode)
+ :keywords   (major mode qa supermemo)
+ :homepage   "https://github.com/senny/qa-mode")

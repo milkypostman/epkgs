@@ -1,0 +1,11 @@
+(:summary    "Buttonize PRs in ChangeLog"
+ :created    "20070321"
+ :updated    "2007"
+ :license    "GPL-2"
+ :authors    (("Tom Tromey" . "tromey@redhat.com"))
+ :maintainer ("Tom Tromey" . "tromey@redhat.com")
+ :keywords   (tools)
+ :homepage   "http://tromey.com/elpa"
+ :commentary "\
+This turns references to bugs in a ChangeLog buffer into clickable
+links to the bug system.")

@@ -1,0 +1,6 @@
+(:created    "1990"
+ :updated    "1990"
+ :license    "GPL"
+ :provided   (repeat-insert)
+ :required   ((("cl" cl)))
+ :wikipage   "RepeatInsert")

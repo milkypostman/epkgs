@@ -1,0 +1,38 @@
+(:summary    "Loads keychain environment variables into emacs"
+ :created    "20081218"
+ :updated    "2011"
+ :license    "GPL-3"
+ :provided   (keychain-environment)
+ :keywords   (agent gpg keychain ssh)
+ :commentary "\
+Designed for use with Keychain (see:
+http://docs.funtoo.org/wiki/Keychain) a tool for loading the SSH
+Agent and keeping it running and accessible on a machine for longer
+than a single login seession.
+
+This library loads the file \"$HOME/.keychain/$HOSTNAME-sh\" and parses it for
+the SSH_AUTH_SOCK and SSH_AUTH_PID variables.
+
+It also checks \"$HOME/.keychain/$HOSTNAME-sh-gpg\" for the
+GPG_AGENT_INFO variable, placing these into the environment of
+Emacs.  If these files are empty, or the variables can't be parsed
+out of them it doesn't replace existing environment variables.
+
+This is useful for situations where you are running Emacs under X, not
+directly from a terminal, and its inheriting its environment from the
+window manager, which doesn't have these variables as you started keychain
+after you logged in (say as part of your .bashrc)
+
+The function (keychain-refresh-environment) can also be run at any time
+these variables change.
+
+Installation:
+Put the file in your load-path then use:
+
+  (require 'keychain-environment)
+  (keychain-refresh-environment)
+
+If you want to customise the location of the keychain file then use:
+
+  M-x customize-group
+  keychain")

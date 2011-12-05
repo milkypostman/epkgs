@@ -1,0 +1,30 @@
+(:summary    "Compose and Parse Announces"
+ :created    "1998"
+ :updated    "1998"
+ :license    "GPL-2"
+ :authors    (("Stefan Hornburg" . "racke@linuxia.de"))
+ :maintainer ("Stefan Hornburg" . "racke@linuxia.de")
+ :provided   (ginel-announce)
+ :required   ((("emacs" custom)
+	       ("ginel-string" ginel-string)
+	       ("gnus" gnus-msg)))
+ :keywords   (maint)
+ :homepage   "http://www.han.de/~racke/ginel"
+ :commentary "\
+* User functions
+ginel-announce-elisp-library
+ Composes announcement for the Emacs Lisp library in the current
+ buffer ready for posting it to gnus.emacs.sources via Gnus.
+ginel-announce-info-from-subject
+ Extracts information about a topic from the subject of a newsarticle.
+ [  59: Lars Magne Ingebrigt] Pterodactyl Gnus v0.58 is released
+ => ((topic . \"Pterodactyl Gnus\") (version . \"0.58\"))
+ginel-announce-show-info
+ Displays the information from `ginel-announce-info-from-subject' in a
+ temporary buffer \"*Announce Info*\".
+
+* User options
+ginel-announce-version-regexp
+ Regular expression matching the version term within an announce.
+ Used by `ginel-announce-info-from-subject' to extract the version
+ information.")

@@ -1,0 +1,14 @@
+(:summary    "Generate uuid's using an external program"
+ :created    "2008"
+ :updated    "2008"
+ :license    "GPL-3"
+ :authors    (("David O'Toole" . "dto@gnu.org"))
+ :maintainer ("David O'Toole" . "dto@gnu.org")
+ :provided   (uuidgen)
+ :keywords   (processes)
+ :commentary "\
+This file is a simple wrapper around the command-line UUID
+generator \"uuidgen.\" This is available on Debian in the package
+\"e2fsprogs\".
+
+More about uuids: http://www.ietf.org/rfc/rfc4122.txt")

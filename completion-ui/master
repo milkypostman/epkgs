@@ -1,0 +1,217 @@
+(:created    "2010"
+ :updated    "2010"
+ :license    "GPL-2"
+ :authors    (("Toby Cubitt" . "toby-predictive@dr-qubit.org"))
+ :maintainer ("Toby Cubitt" . "toby-predictive@dr-qubit.org")
+ :provided   (completion-ui completion-ui-dynamic completion-ui-echo completion-ui-hotkeys completion-ui-menu completion-ui-popup-frame completion-ui-sources completion-ui-tooltip)
+ :required   ((("cl" cl)
+	       ("dabbrev" dabbrev)
+	       ("etags" etags)
+	       ("flyspell" flyspell)
+	       ("ispell" ispell)
+	       ("pos-tip" pos-tip)
+	       (nil semantic-ia))
+	      (("semantic" semantic)
+	       (nil nxml)))
+ :keywords   (completion ui user\ interface)
+ :homepage   "http://www.dr-qubit.org/emacs.php"
+ :wikipage   "CompletionUI"
+ :commentary "\
+Overview
+========
+
+The goal of Completion-UI is to be the swiss-army knife of in-buffer
+completion user-interfaces. It doesn't do the work of finding the
+completions itself. Instead, anything that can find completions, be it a
+built-in Emacs function or an external Elisp package, can be hooked up to
+Completion-UI to provide a source of completions.
+
+Completion-UI comes with built-in support for a number of completion
+sources: the standard Emacs dabbrevs, etags, Elisp completion and file-name
+completion, as well as (if installed) CEDET's Semantic completion,
+nxml-mode, and the Predictive completion package.
+
+Completion-UI provides the following user-interfaces and features (though
+it is also easy to add new ones, see below):
+
+* Dynamic completion
+    provisionally insert the first available completion candidate into the
+    buffer
+
+* Completion hotkeys
+    single-key selection of a completion candidate
+
+* Cycling
+    cycle through completion candidates.
+
+* Tab-completion
+    \"traditional\" expansion to longest common substring
+
+* Echo
+    display a list of completion candidates in the echo-area
+
+* Tooltip
+    display a list of completion candidates in a tool-tip located below the
+    point, from which completions can be selected
+
+* Pop-up frame
+    display a list of completion candidates in a pop-up frame located below
+    the point, which can be toggled between displaying some or all
+    completions, and from which completions can be selected
+
+* Completion menu
+    allow completion candidates to be selected from a drop-down menu
+    located below the point
+
+* Completion browser
+    browse through all possible completion candidates in a hierarchical
+    deck-of-cards menu located below the point
+
+* `auto-completion-mode'
+    automatically complete words as you type
+
+
+For Emacs users:
+================
+
+INSTALLING
+----------
+To install this package, save this and all the other accompanying
+\"completion-ui-*.el\" files to a directory in your `load-path' (you can view
+the current `load-path' using \"C-h v load-path\" within Emacs), then add the
+following line to your .emacs startup file:
+
+   (require 'completion-ui)
+
+
+USING
+-----
+For each source of completions, Completion-UI provides an interactive
+command that completes the word next to the point using that source, e.g:
+`complete-dabbrev' to complete using dabbrevs, `complete-etags' to complete
+using etags, `complete-elisp' to complete Elisp symbols, `complete-files'
+to complete file names, `complete-semantic' to use Semantic completion,
+`complete-nxml' and `complete-predictive' to use nxml-mode and
+predictive-mode completion, respectively.
+
+The `complete-<name>' commands are not bound to any key by default. As with
+any Emacs command, you can run them via \"M-x complete-<name>\", or you can
+bind them to keys, either globally or in a minor-mode keymap. E.g. to
+globally bind \"M-/\" to `complete-dabbrev', you would put the following line
+in your .emacs file:
+
+  (global-set-key [?\\M-/] 'complete-dabbrev)
+
+To bind \"M-<tab>\" to `complete-elisp' in `emacs-lisp-mode', you would bind
+the command in the `emacs-lisp-mode-map' keymap:
+
+  (define-key emacs-lisp-mode-map [?\\M-\\t] 'complete-elisp)
+
+You're free to bind the `complete-<name>' commands to any keys of your
+choosing, though \"M-<tab>\" or \"M-/\" fit best with the default Completion-UI
+key bindings that are enabled when you're completing a word. These are:
+
+M-<tab>  M-/
+  Cycle through completions.
+
+M-S-<tab>  M-?
+  Cycle backwards through completions.
+
+C-<ret>
+  Accept the current completion.
+
+C-<del>
+   Reject the current completion.
+
+<tab>
+   Traditional tab-completion, i.e. insert longest common substring.
+
+C-<tab>
+   Accept current completion and re-complete the resulting word.
+
+S-<down>
+   Display the completion tooltip (then use <up> and <down> to cycle).
+
+M-<down>
+   Display the completion menu.
+
+C-<down>
+   Display the completion pop-up frame.
+
+S-<up> C-<up> M-<up> (in pop-up frame)
+   Dismiss the completion pop-up frame.
+
+M-/ (in pop-up frame)
+   Toggle between displaying all completions.
+
+
+Completion-UI also provides a minor-mode, `auto-completion-mode', which
+automatically completes words as you type them using any one of the
+completion sources. You can select the source to use for
+`auto-completion-mode' by customizing `auto-completion-source' (the default
+is dabbrev).
+
+To enable and disable `auto-completion-mode', use:
+
+  M-x auto-completion-mode
+
+Note that `auto-completion-mode' is not very useful if the completion
+source takes a long time to find completions.
+
+<shameless plug>
+The Predictive completion package (available separately from the above URL)
+is designed from the ground up to be extremely fast, even when a very large
+number of completion candidates are available. As you type, it also learns
+to predict which completion is the most likely. So it is particularly
+suited to being used as the `auto-completion-mode' source.
+</shameless plug>
+
+
+CUSTOMIZING
+-----------
+The completion user-interfaces can be heavily customized and tweaked to
+suit your every desire, via the `completion-ui' customization group, (and
+subgroups thereof):
+
+  M-x customize-group <ret> completion-ui <ret>
+
+All the customization options and settings are well documented via the
+usual built-in Emacs documentationn features.
+
+
+For Elisp coders:
+=================
+
+In fact, Completion-UI is even better than a swiss-army knife, because it's
+also extensible: it's easy to add new user-interfaces, as well as new
+completion sources.
+
+The philosophy of Completion-UI is that customization of the user-interface
+should be left up to USERS. They know what they want better than you do!
+By providing a universal user-interface that can be used by all completion
+packages, Completion-UI lets users customize their in-buffer completion
+user interface once-and-for-all to suit their tastes, rather than having to
+learn how to customize each new package separately.
+
+
+Adding new sources
+------------------
+See `completion-ui-register-source'.
+
+One call to `completion-ui-register-source' is all there is to it!
+Registering a new source will define a new interactive command,
+`complete-<name>' (where <name> is the supplied source name) which
+completes whatever is at the point using the new completion source. It will
+also add the new source to the list of choices for the
+`auto-completion-source' customization option (unless this is supressed).
+
+
+Adding new interfaces
+---------------------
+See `completion-ui-register-interface'.
+
+A number of Completion-UI functions are intended for use in creating new
+user-interfaces. These all start with the prefix `completion-ui-' (as
+opposed to `completion-', which are user commands plus a few general
+purpose utility functions, or `completion--', which are internal functions
+that are NOT intended for external use).")

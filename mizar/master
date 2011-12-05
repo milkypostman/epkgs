@@ -1,0 +1,23 @@
+(:summary    "Mizar.el -- Mizar Mode for Emacs"
+ :license    "GPL"
+ :provided   (edu-test mizar)
+ :required   ((("cl" cl)
+	       ("compile" compile)
+	       ("dabbrev" dabbrev)
+	       ("emacs" comint easymenu font-lock)
+	       ("etags" etags)
+	       ("executable" executable)
+	       ("hideshow" hideshow)
+	       ("imenu" imenu)
+	       ("info" info)
+	       ("shell" shell)
+	       ("speedbar" speedbar)
+	       ("term" term))
+	      (("xml" xml)))
+ :homepage   "http://ktilinux.ms.mff.cuni.cz/~urban/MizarModeDoc/html"
+ :commentary "\
+Emacs mode for authoring Mizar (www.mizar.org) articles.
+Run C-h f mizar-mode for overview of commands.
+Complete info, html, pdf and ps documentation is
+downloadable from http://kti.ms.mff.cuni.cz/~urban/MizarModeDoc.tar.gz .
+Browse it at http://ktilinux.ms.mff.cuni.cz/~urban/MizarModeDoc/html .")

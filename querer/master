@@ -1,0 +1,16 @@
+(:summary    "Display menu/message, QUERy for options, and select one. "
+ :created    "2002"
+ :updated    "20050807"
+ :license    "GPL-2"
+ :authors    (("D. Goel" . "deego@glue.umd.edu"))
+ :maintainer ("D. Goel" . "deego@glue.umd.edu")
+ :provided   (querer)
+ :keywords   (ask choice menu options query read-char select y-or-n-p)
+ :homepage   "http://www.gnufans.net/~deego/emacs.html"
+ :commentary "\
+querer is a small utility to query the user for options and select
+one of the options.  So, meant for elisp authors.  
+Main function is: querer.   
+Tested with emacs >= 21.2, breaks on 20.7.
+
+This example says it all:")

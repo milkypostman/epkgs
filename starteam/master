@@ -1,0 +1,71 @@
+(:summary    "VC-type mode for StarTeam"
+ :created    "2002"
+ :updated    "2002"
+ :license    "GPL-2"
+ :authors    (("$Author$"))
+ :maintainer ("Matthew O. Smith" . "m0smith@yahoo.com")
+ :provided   (starteam vc-starteam)
+ :required   ((("elib" string)
+	       ("emacs" dired)
+	       ("vc" vc)))
+ :keywords   (tools)
+ :homepage   "http://sourceforge.net/projects/starteam-el"
+ :wikipage   "StarTeam"
+ :commentary "\
+Contributors:
+  Matthew O. Smith
+  Christopher J. Kline
+  Stephan Zitz <szitz at globalscape dot com >
+     Added support for mapping cygwin drives under Win32 and XEmacs
+  Knut Forkalsrud < knut at cj dot com >
+     Added some much needed improvements
+
+
+  This file implements many of the features of VC for use with
+  StarTeam (www.starbase.com), a source control program.
+
+
+  ^X-v-v    - Do next action:
+	Current ->     Display the message \"Up to Date\"
+	Out of Date -> Do a check out
+	Merge ->       Run emerge
+	Modified ->    Checkin with a comment
+  ^X-v-l    - Get a history of the file
+  ^X-v-=    - Do an ediff on the contents of the current buffer with
+              the latest version in source control
+  ^X-v-d    - Get a status of all files in the current directory
+  ^X-v-^I   - Get a list of files to check in in for a directory and all sub directories
+  ^X-v-^O   - Get a list of files to check out in for a directory and all sub directories
+  ^X-v-^L   - Lock the file
+  ^X-v-^U   - Unlock the file
+
+Configuration:
+
+At a minimum you need to set the following:
+
+  (setq starteam-host \"10.42.42.2\"   ; or \"myMachine.myCompany.com\"
+        starteam-executable \"stcmd\"
+        starteam-to-directory-alist (list (cons  \"^/export/home/username/working\"  \"src/src\" )))
+
+You will need to customize starteam-to-directory-alist to your
+particular Starteam projects; see the doc comments for more
+details on the structure of this variable.
+
+In addition, there are also several other variables that configure
+the behavior of starteam.el:
+
+   starteam-dired-mode-name
+   starteam-port
+   starteam-user
+   starteam-password
+   starteam-keep-unlocked-files-read-only
+   starteam-unlock-after-checkin
+   starteam-switch-to-output
+   starteam-debug
+   starteam-post-checkin-functions
+
+Users may also wish to call 
+ 
+   starteam-menubar-setup 
+
+to add a STARTEAM menu to the main menu bar.")

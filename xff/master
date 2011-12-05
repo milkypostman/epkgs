@@ -1,0 +1,38 @@
+(:summary    "Extended find-file"
+ :created    "2002"
+ :updated    "2002"
+ :license    "GPL-2"
+ :authors    (("Thomas Link"))
+ :maintainer ("Thomas Link")
+ :provided   (xff)
+ :required   ((("cl" cl)
+	       ("tellib" tellib)))
+ :keywords   (files find-file)
+ :homepage   "http://members.a1.net/t.link/CompEmacsXff.html"
+ :commentary "\
+;---(:excerpt-beg xff :name desc)---
+;---(:excerpt-source \"~/Etc/TL-Wiki/CompEmacsXff\")---
+
+This package extends `find-file' with some special syntax of the form:
+
+<example>
+	file*keyword1=arg1*keyword2=arg2
+	file*keyword1=arg1*keyword2:rest
+</example>
+
+A split char in the file name has to be escaped with a backslash.
+
+At the moment the following keywords are defined (see `xff-commands'):
+
+line=LINE :: goto line
+
+char=CHAR :: goto char
+
+find=TEXT or rather find:SOME TEXT :: find text
+
+select=BEG-END :: select/mark the region from BEG to END
+
+Installation: Put (require 'xff) (xff-install) into your init file
+(~/.xemacs/init.el or ~/.emacs.el).
+
+;---(:excerpt-end xff :name desc)---")

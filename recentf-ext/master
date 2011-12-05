@@ -1,0 +1,15 @@
+(:summary    "Recentf extensions"
+ :created    "2009"
+ :updated    "20100504"
+ :license    "GPL-2"
+ :authors    (("rubikitch" . "rubikitch@ruby-lang.org"))
+ :maintainer ("rubikitch" . "rubikitch@ruby-lang.org")
+ :provided   (recentf-ext)
+ :required   ((("cl" cl)
+	       ("recentf" recentf)))
+ :keywords   (convenience files)
+ :commentary "\
+Extension of `recentf' package.
+
+* `dired' buffers can be handled.
+* Switching to file buffer considers it as most recent file.")

@@ -1,0 +1,48 @@
+(:summary    "Inform mode for Emacs"
+ :created    "19941201"
+ :updated    "1996"
+ :license    "GPL-2"
+ :maintainer ("Rupert Lane" . "rupert@rupert-lane.org")
+ :provided   (inform-mode)
+ :required   ((("emacs" font-lock)
+	       ("regexp-opt" regexp-opt)
+	       ("term" term)))
+ :keywords   (languages)
+ :homepage   "http://www.rupert-lane.org/inform-mode"
+ :wikipage   "InformMode"
+ :commentary "\
+Inform is a compiler for adventure games by Graham Nelson,
+available by anonymous FTP from
+/ftp.ifarchive.org:/if-archive/programming/inform/
+
+This file implements a major mode for editing Inform programs.  It
+understands most Inform syntax and is capable of indenting lines
+and formatting quoted strings.  Type `C-h m' within Inform mode for
+more details.
+
+Because Inform header files use the extension \".h\" just as C header
+files do, the function `inform-maybe-mode' is provided.  It looks at
+the contents of the current buffer; if it thinks the buffer is in
+Inform, it selects inform-mode; otherwise it selects the mode given
+by the variable `inform-maybe-other'.
+
+Put this file somewhere on your load-path, and the following code in
+your .emacs file:
+
+ (autoload 'inform-mode \"inform-mode\" \"Inform editing mode.\" t)
+ (autoload 'inform-maybe-mode \"inform-mode\" \"Inform/C header editing mode.\")
+ (setq auto-mode-alist
+       (append '((\"\\\\.h\\\\'\"   . inform-maybe-mode)
+                 (\"\\\\.inf\\\\'\" . inform-mode))
+               auto-mode-alist))
+
+To turn on font locking add:
+(add-hook 'inform-mode-hook 'turn-on-font-lock)
+
+If you use XEmacs and intend to use `inform-run-project' with a
+console-mode interpreter, you need to have the eterm package
+installed.  It should already be installed if you use XEmacs < 21,
+but starting with XEmacs 21.1 you may need to download and install
+it separately.
+
+Please send any bugs or comments to rupert@rupert-lane.org")

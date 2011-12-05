@@ -1,0 +1,11 @@
+(:summary    "Run \"top\" to display information about processes"
+ :updated    "20070326"
+ :license    "GPL-2"
+ :authors    (("Tom Wurgler, Bill Benedetto" . "twurgler@goodyear.com"))
+ :maintainer ("Tom Wurgler, Bill Benedetto" . "twurgler@goodyear.com")
+ :provided   (etop)
+ :keywords   (extensions processes)
+ :commentary "\
+This code sets up a buffer to handle running the \"top\" program written
+by William LeFebvre.  \"top\" is avaiable at ftp.groupsys.com:/pub/top
+When you exit \"top\", the sentinel kills the buffer.")

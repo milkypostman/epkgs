@@ -1,0 +1,7 @@
+(:summary    "Commands for unbinding things"
+ :created    "2002"
+ :updated    "2002"
+ :license    "GPL-2"
+ :provided   (unbind)
+ :required   ((("cl" cl)))
+ :homepage   "http://www.davep.org/emacs")

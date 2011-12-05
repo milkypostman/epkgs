@@ -1,0 +1,16 @@
+(:summary    "Insertion of paired characters"
+ :created    "2004"
+ :updated    "2004"
+ :license    "GPL-2"
+ :authors    (("Dave Love" . "fx@gnu.org"))
+ :maintainer ("Dave Love" . "fx@gnu.org")
+ :provided   (pair-mode)
+ :required   ((("skeleton" skeleton)))
+ :keywords   (convenience)
+ :homepage   "http://www.loveshack.ukfsn.org/emacs"
+ :commentary "\
+A trivial (local) minor mode, and a global version, which binds
+suitable characters to `skeleton-pair-insert-maybe'.  Thus typing
+`(' will normally insert `()' and put point between them.
+Otherwise, when the region is active, it will be wrapped in the
+parentheses.")

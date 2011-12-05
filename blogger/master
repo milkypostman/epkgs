@@ -1,0 +1,74 @@
+(:created    "2002"
+ :updated    "2002"
+ :license    "GPL-2"
+ :authors    (("Mark A. Hershberger" . "mah@everybody.org"))
+ :maintainer ("Mark A. Hershberger" . "mah@everybody.org")
+ :keywords   (blogger cms weblog)
+ :wikipage   "BloggerMode"
+ :commentary "\
+blogger.el implements the Blogger API to talk to weblog software.
+
+For ease of use:
+I use the following commands in my .emacs file:
+
+(load-file \"blogger.el\")
+(global-set-key \"\\C-cbs\" 'blogger-start-post)
+
+C-c b s will switch to a new buffer where you can compose a
+post.
+
+C-x C-s    -- post-and-publish current buffer to the blog.
+              Calling blogger-save-post with an prefix argument
+              (i.e. C-u C-c C-c) will prompt for which weblog
+              to use.
+
+C-c C-c    -- identical to C-x C-s, but will also bury the buffer.
+
+C-c C-n    -- post (but not publish) the current message and
+              load the next message.
+
+C-c C-p    -- post (but not publish) the current message and
+              load the previous message.
+
+C-c C-k    -- delete the current post.
+
+M-g        -- synchronise blogger.el's idea of the posts available
+              with the blogger server.
+
+** TBD ** C-c C-t m  -- edit the main template.
+
+** TBD ** C-c C-t a  -- edit the Archive Index template
+
+
+Notes:
+----
+
+This code is based on Simon Kittle's blogger.el
+(http://www.tswoam.co.uk/files/blogger.el.txt), but where his
+code calls a Perl program, this code uses xml-rpc.el.  You can
+get xml-rpc.el from <http://elisp.info/package/xml-rpc/>
+
+Differences between SK's blogger.el and this one:
+
+- Doesn't need any external programs.  Uses xml-rpc.el.
+- I've added a bunch of defcustom's here to make this integrate
+  better with Emacs Customization interface. 
+- Created a *blogger* mode.
+- Made selection of a blog more intuitive.  It queries the
+  Blogger server and allows the user to choose the name of the
+  blog from a list.
+- Prompt for blog on initial post if blogger-id isn't set.
+- Can \"ping\" http://weblogs.com/ and http://blo.gs/ whenever
+  you update.
+- Can \"scroll\" through posts on the blogger server and edit them.
+
+Todo:
+
+ * RSS creation
+ * Implement MetaWeblog API
+ * Implement MovableType extentions
+
+Bugs:
+
+ * When you delete a post it gets deleted, but it doesn't
+ disappear from your post ring until you sync (M-g) with the server.")

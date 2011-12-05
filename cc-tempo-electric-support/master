@@ -1,0 +1,57 @@
+(:summary    "Provides support for insertion of"
+ :created    "2000"
+ :updated    "20000217"
+ :license    "GPL-2"
+ :authors    (("Klaus Berndl" . "klaus.berndl@sdm.de"))
+ :provided   (cc-tempo-electric-support)
+ :required   ((("cc-mode" cc-mode)
+	       ("tempo" tempo)))
+ :homepage   "http://homepages.cs.ncl.ac.uk/phillip.lord/emacs.html"
+ :commentary "\
+This package provides support for insertion of electric characters
+ with the tempo package into cc-mode buffers.  The current problem
+ with tempo is that it requires hard coding in the templates where
+ braces, and such forth should go, whilst cc-mode is perfectly
+ capable of making these decisions automatically.  This package
+ allows tempo to insert these characters and have cc-mode behave
+ appropriately.
+
+ In practice what this means is that instead of putting \"{\" into
+ your tempo template, you put (i ?{) (this should NOT be quoted, as
+ tempo needs to evaluate it!). If you have switched on the auto
+ electric mode within cc-mode it will now newline and reindent this
+ \"{\" depending on your indentation settings.
+
+
+this is an example of a complete template where all electric charcters
+of cc-mode (here: (){};) will be inserted with the new i-element of this
+package.
+
+old version without electric characters processing
+(tempo-define-template \"c-for-i\"
+                      '(> \"for (\" (p \"variable: \" var) \" = 0; \" (s var)
+                          \" < \"(p \"upper bound: \" ub)\"; \" (s var) \"++)\" > n>
+                          \"{\" > n> r> n
+                          \"}\"
+                          )
+                      \"fori\"
+                      \"Insert a C for loop: for (x = 0; x < ..; x++)\"
+                      'c-tempo-tags)
+
+new-version with electric characters processing
+(tempo-define-template \"c-for-i\"
+     '(> \"for \" (i ?\\() (p \"variable: \" var) \" = 0\" (i ?\\;) \" \" (s var)
+         \" < \" (p \"upper bound: \" ub) (i ?\\;) \" \" (s var) \"++\"
+         (i ?\\)) \" \" >
+         (i ?{) r> n>
+         (i ?})
+         )
+     \"fori\"
+     \"Insert a C for loop: for (x = 0; x < ..; x++)\"
+     'c-tempo-tags)
+
+
+Installation
+
+ Place this file into your load-path, and add this to your .emacs
+ (require 'cc-tempo-electric-support)")

@@ -1,0 +1,10 @@
+(:created    "1996"
+ :license    "GPL-2"
+ :authors    (("Naoto Morishima" . "naoto@morishima.net"))
+ :maintainer ("Naoto Morishima" . "naoto@morishima.net")
+ :provided   (elscreen)
+ :required   ((("apel" static)
+	       ("emacs" dired)
+	       (nil alist)))
+ :homepage   "http://www.morishima.net/~naoto/software/elscreen"
+ :wikipage   "EmacsLispScreen")

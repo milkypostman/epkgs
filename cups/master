@@ -1,0 +1,52 @@
+(:summary    "Interface for setting \"default-printer\" from cups list"
+ :created    "20051030"
+ :updated    "2005"
+ :license    "GPL-2"
+ :authors    (("Jesse Rosenthal" . "jesse.k.rosenthal@gmail.com"))
+ :maintainer ("Jesse Rosenthal" . "jesse.k.rosenthal@gmail.com")
+ :homepage   "http://www.columbia.edu/~jr2075/elisp"
+ :commentary "\
+If you have cups on your *nix machine, this script will read your
+conf file (usually \"/etc/cups/printers.conf\") and allow you to
+change your default printer to any one, via the included
+\"choose-printer\" command. This has tab completion of printer names,
+so it's useful if you have a lot of printers -- I use it mainly
+prior to using the dvips command in AUCTeX, but it's also useful
+for quick printing of plain text.
+
+This also has an optional menu entry. It's on by default,
+but you can turn it off in your .emacs. See below. 
+
+UPDATE: I've now added a simple cache (set as ~/.emacs-cups-cache),
+which just saves the printer list if the cups conf file hasn't
+changed. This means that this should only slow down your startup
+(*if* it slows down your startup) when you change your cups
+settings.
+
+To use, put the following in your ~/.emacs:
+
+(setq printer-conf-file \"/path/to/cups/printers.conf\") (setq
+cups-printer-menu t) ;set to `nil' if you don't want menus.
+(load-file \"/path/to/this/cups.el\")
+
+If you use Ubuntu (and maybe some other distributions) you
+will find that it wants to make the printers.conf file only
+readable by root after every change. (It's in the lp group,
+but that is only given execute permission.) One suolution is
+to just make the printer.conf file readable:
+		
+		chmod +r ;; /etc/cups/printers.conf 
+
+	If you don't want to do this... well, I'd be
+	happy to hear any other suggestions.
+
+Finally, just run M-x choose-printer.
+
+v0.1 - 30 0ct 2005 
+   * First version 
+
+v0.2 - 15 Nov 2005 - 
+   * Added radio buttons to the menu.
+   * Cleaned up the menu code
+   * Added a cache file so it won't slow down startup more than
+     once.")

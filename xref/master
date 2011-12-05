@@ -1,0 +1,561 @@
+(:summary    "Maintain and use cross-references and hypertext links"
+ :created    "1995"
+ :updated    "20020826"
+ :license    "GPL-2"
+ :authors    (("Peter Stephenson" . "pws@pwstephenson.fsnet.co.uk"))
+ :maintainer ("Peter Stephenson" . "pws@pwstephenson.fsnet.co.uk")
+ :provided   (xref)
+ :required   ((("reporter" reporter)))
+ :keywords   (cross-references hypertext links)
+ :wikipage   "XRefMode"
+ :commentary "\
+A simple but powerful way of adding cross-references or hypertext
+links to any file (even ones which aren't writable).  The links
+appear highlighted under Emacs, but don't appear in the file text
+itself.  You can do everything with just a few keystrokes, though a
+full set of commands and options is available.  In fact, you can
+mark links between any two points in any two files you can access
+just by knowing two new keystrokes.  You can continue to edit the
+files as well; in this version you can more or less forget about
+the links while you are doing so and they will be preserved.  Xref
+works without modifying any mode settings or standard key bindings.
+
+For the full facilities, Emacs 19 with a windowing system, or,
+under DOS, OEMACS with direct screen writes (the default) are
+required.  Xref will now work on dumb terminals, but you will not
+see the cross-references highlighted.  (You should still load it so
+that links can be updated properly; this should be entirely
+transparent to you.) Xref now works under XEmacs (a.k.a. Lucid Emacs).
+
+A fuller version of this documentation is in Texinfo format.
+Currently this is available from
+     suna.amtp.liv.ac.uk:pub/pws/xref.tex
+
+Setting up
+==========
+This file should be somewhere in your load-path; the obvious place
+is in the site-lisp directory of the emacs hierarchy, if you have
+permission to put it there.  Otherwise, put it in a directory
+such as ~/elisp and add the following to your .emacs file:
+(setq load-path (cons (expand-file-name \"~/elisp\") load-path))
+
+You will need at the least to have the keys defined.  All xref
+keys are attached to a prefix; I use f8 (function key 8) but C-c x
+would be a sensible alternative.  You might even consider C-x x,
+since copy-to-register is duplicated on C-x r x.  All xref
+commands consist of this prefix followed by one more keystroke.
+The following (in your .emacs file) will do the trick (delete any
+global-set-key lines you don't want):
+
+(autoload 'xref-map \"xref\" \"Cross-referencing package\" t 'keymap)
+(global-set-key [f8] 'xref-map)
+(global-set-key \"\\C-cx\" 'xref-map)
+
+You now have to arrange for old cross-references to be read in and
+activated each time you read a cross-referenced file.  There is a
+separate and substantially smaller package, xref-hks.el, which will
+arrange to read in xref if it finds existing cross-refs.  (It also
+contains exactly the autoload command above, so you don't need
+both.)  Put the following line in your .emacs file.
+
+(require 'xref-hks)
+
+When you have this set up, try editing this file and see if this is
+underlined (or green in oemacs).  If it is, try typing <prefix> f
+(the prefix key(s) you just set up, then a letter \"f\").
+
+Basics
+======
+A cross-ref. SOURCE is a region of a buffer which appears
+underlined (in oemacs it appears with a green foreground).  Many
+xref commands will make a source CURRENT, in which case it appears
+highlighted.  A source is usually linked to a TARGET, a region in
+the same or some other buffer; FOLLOWing the source with an xref
+command will take you to this point.  
+
+The target of the current source is highlighted; on a colour
+display it appears with the colours opposite to the current source.
+Usually (for clarity) targets do not show up unless they are
+current.
+
+Instead of pointing to a file, a target may specify an ACTION; such
+targets are associated directly with the source.  Otherwise,
+targets exist independently of their sources and may be moved
+around without the source needing to be made `aware' that the
+target has moved.
+
+Note that a source does not *need* to have a target; you can simply
+define sources and use them as permanent markers in your text.  No
+error is caused unless you explicitly try to go to the target of a
+source which has no target.  (On the other hand, a target without a
+source is not particularly useful, hence the only way to define a
+new target is as the target of the current source.)
+
+Ultra-brief tour of xref
+========================
+Find a bit in some file you want to point to somewhere else.  Put a
+region over it and type <prefix> r.  That's the source. Find the
+bit you want it to point to, put a region over it and type <prefix>
+C-r. That's the target.  Move to the source and type <prefix> f,
+which follows the cross-ref. to the target.  You can return through
+this link with <prefix> l.  Save the files or type <prefix> C-s.
+That's it. 
+
+Slightly less brief introduction to commands
+============================================
+(From now on the prefix before the commands is to be understood.)
+The commands dealing with targets generally parallel those dealing
+with sources: target commands are control keys, source commands
+the same keys without the control.  Thus w and r put a
+cross-ref. source on the nearest word or the region from point to
+mark; C-w and C-r do the same for a target (but you need to set a
+source first in that case).
+
+Other source commands with parallel target commands: g goes to the
+source, o does it in another window; the commands a (beginning), e
+(end), n (next), p (previous) refer to the sources in order, i.e. a
+takes you to the first, and so on.  The n and p commands take you
+up and down the list in whatever buffer the current source happens
+to be; the a and e commands take you to the the first/last source
+in the buffer you are currently editing.  (One minor problem:  C-g
+after a prefix doesn't work in XEmacs, so C-t is bound for that
+purpose.)
+
+The j and C-j commands allow you to enter the text of a source,
+with completion, then take you to that source or its target,
+respectively.  Normally they search ahead from whatever source
+happens to be current (wherever that is); with a prefix argument
+they will search the whole of the current buffer (not just after
+point).  This is quite useful if you have sources with identical
+text: typing j then <RETURN> on its own takes you to the next such.
+
+You can make the source nearest to the cursor current with c;  you
+can do this and immediately follow that reference with f; C-f does
+it in the other window.  The t command is rather neat: with that
+set, simply moving the cursor into a source will make it current
+and display the corresponding target in another window.  Calling
+the t command again turns it off.  The t stands for track.  Note
+also the discussion of the variables xref-minibuf-auto-track and
+xref-track-targets below.
+
+You can delete the current xref with d; giving a prefix argument
+doesn't delete the target, which may be the target of another
+source (xref has know way of knowing this in general).  The C-d
+command allows you much more control over deleting cross-refs.,
+both sources and targets, not necessarily the current one;  see the
+function's documentation for details.
+
+The command l (for last) allows you to go back through a number of
+previous links.  Every time you use it, a cross-ref. which you
+previously followed (not simply made current) is made current
+again.  So if you followed a link from file1 to file2, then from
+file2 to file3, the l command will first take you back to file2,
+then the next time (assuming you don't follow any more
+cross-refs. from file2) back to file1.  This assumes that the
+variable xref-track-sources is set, which it usually is.  Note that
+links which were `followed' automatically, by displaying the target
+in another window which wasn't selected (see above), are *not*
+remembered for use by the l command.  If you kill the buffer in
+which sources of previous links were found, they will be ignored by
+l; this makes it easy to `forget' links you don't want to follow
+again.
+
+You can search through the source buffer with s, which uses a
+regular expression.  You can turn off the current source/target
+pair with u.  You can go back to the point you were at before an
+xref command moved you with b.  You can insert the text highlighted
+in the current source into some other place (the \"Search:\" prompt
+in the minibuffer is a useful one) with i.  The same command with a
+prefix argument just displays the current source in the minibuffer,
+useful to remind you what it is.
+
+A simplified form of target exists, in which the target is just a
+file rather than a point in the file.  Just use SPC instead of
+C-w or C-r to set this.  With a prefix arg, the command will prompt
+you for a file name to be a target.  This is particularly useful for
+files over which you have no control and whose actual contents don't
+matter, such as a document in an FTP archive.  (For example, if you
+have Internet access the Texinfo documentation is currently here.)
+In this case, the filename is remembered by the source and no
+separate target marker is made. (New in 2.14.)
+
+There is also an `action' type target.  After setting a source, you
+may use the @ command which prompts for a string, which specifies
+something Emacs is to do when you try to `follow' the link, or go
+to the target in some way.  By default the string is an Emacs
+command; any Emacs-Lisp code is acceptable.  If the string begins
+with `!', the rest of the string is passed to the shell as if it
+were a line for M-! (shell-command); if it begins with a `;' the
+rest of the string is simply displayed as a message at the bottom of
+the screen.  As with M-! you don't need to type the quotes around
+the string.  For example, try to follow this cross-reference:
+	Please do not press this button.
+This method of specifying a target may be upgraded to something
+fancier in the future.
+
+The C-x (for existing) command allows you to re-use a target,
+making it also the target of the current source.  Simply place
+the cursor somewhere in the target you want to re-use and type the
+command.  You may want to use h to highlight all targets in order to
+do this.  You can also place the cursor on a source (other than the
+current one, obviously), then xref will use the target of that
+source as the target of the current one (this is the way to re-use
+targets which are actions).
+
+A few other convenience commands: h will highlight all targets, so
+you can see where they are; v unhighlights all cross-ref. sources
+and targets; m will bind the xref keymap on top of the global one,
+so you just need to type one set of keys for each xref command
+(unfortunately you lose the cursor keys under oemacs or a dumb
+terminal; C-n etc. behave as xref-next-source, and so on).  All
+three are toggles, so m on its own gets your keys back.  If you
+want to use them in your .emacs file you can use an explicit 1 or 0
+argument to turn the feature on or off.
+
+You can also type C-h to show all commands that start with the xref
+prefix; in fact this command is provided by Emacs and works with any
+Emacs-19-compatible set of key definitions, not just xref.
+
+Mouse support
+=============
+When you load Xref it will re-define mouse button 1 so that clicking
+on a cross-ref. source and then releasing the button will follow the
+cross-ref. to its target in the same window.  Likewise, button 3 will
+display the target in a different window from the source.  (These
+were chosen so as to work on both two- and three-button mice.)
+
+However, if the mouse is not pointing at a cross-ref. source Xref
+will instead call the function originally bound to the mouse button.
+Consequently, you should notice no change in the mouse behaviour
+unless you click on a cross-ref. source.  You can take advantage of
+the function xref-bind-mouse if you want to bind to other mouse
+events in the same way.  Note that mouse key binding is annoyingly
+different in FSF Emacs and XEmacs; use the appropriate format.
+
+Menu support
+============
+When loaded under X windows, Xref will insinuate itself into the
+menu-bar which appears at the top of the frame (unless you have
+disabled it).  The commands available here are mainly just the same
+as in the usual keymap and are labelled as such.  However, the
+`jump to source' and `jump to target' commands are enhanced so that
+they pop up a menu of cross-ref. sources in the current buffer.
+
+You can also bind xref-popup-menu to a mouse event (`down' events
+are best, e.g. [C-S-down-mouse-1]).  In this case the `jump'
+commands will use the buffer where the mouse event took place to
+pick sources.  None of the other commands have been enhanced to be
+`mouse-aware' so just use the location of point in the selected
+window.
+
+Saving cross-refs.
+==================
+Cross-refs. can either be written out in the file where the source
+or target they describe is located, or in a separate file for the
+whole directory, or in a single file in your home directory.
+Normally, you just save the file and the cross-refs. will
+automatically be saved at the same time.  However, if the file was
+unmodified (you simply added or deleted some cross-refs.),
+save-buffer (C-x C-s) won't do anything and you should use Xref's
+C-s command instead; also, if you kill the buffer, you will be
+prompted whether to save cross-refs.
+
+By default (and providing the buffer is not read-only), when you
+save a file xref tacks on the details of all the cross-refs. with
+sources in that file in a local-variable list (see the end of this
+file for an example).  Xref will use any necessary comment syntax
+(e.g. semi-colons for lisp) to hide the list from compilers etc.,
+or will modify an existing local-variable list.  You can redefine
+xref-default-prefix and xref-default-suffix (used if there is no
+comment-start and comment-end) if you like, but they should remain
+strings.
+
+Note that enable-local-variables should be t for cross-refs. saved
+in this fashion to be read back properly; this is the default, and
+if you have it set differently you should probably change the
+default value for xref-external-save (see next paragraph).
+
+If you'd rather not have your files modified, you can set
+xref-external-save.  (This is made local to every buffer for
+consistency, so to change the default value seen by new files use
+setq-default.) A value of t will save all cross-references in
+~/.emacs-xrefs (it's not very interesting, but human-readable
+enough for you to see what's happening where).  If
+xref-external-save is non-nil but not t, it will try to write
+.emacs-xrefs into the directory where each file is.  If the file is
+read-only, or the directory is not writeable, xref will bump up
+xref-external-save enough to make sure the cross-refs. are written
+(currently there is no way of preventing this).  So if you want to
+stick helpful links in /etc/profile, say, they will be written in
+your home directory and /etc/profile will appear as hypertext to
+you alone.  (Of course, if someone else alters the file you're in
+trouble.)  Oemacs is handled automatically: the filename becomes
+_emacs.xrf.  You can change xref-dot-file if you don't like these:
+it can even be an absolute file name, or set in the local variable
+list, or for more control you can let xref-save-alist (see below)
+do your work for you.
+
+Note that if cross-refs. for the file were read in, xref will
+*always* try to save them in the same place, unless you explicitly
+set xref-external-save to something different.  Bear this in mind
+while reading the next three paragraphs.
+
+You should also note that if the buffer was not modified, but there
+are cross-refs. to be saved locally which have been modified, then
+the buffer will be saved anyway, without offering you the choice.
+(This is because kill-emacs-hook is called too late to be able to
+do anything about it.)  The best way to avoid this is to kill the
+buffer first, answering ``no'' when xref asks you if you want to
+save the cross-refs.
+
+You can arrange for xref-external-save to be set to different
+values for different files by using the variable xref-save-alist.
+This is a list in the same format as auto-mode-alist, i.e.
+((\"FILE-PATTERN\" . VALUE) ...).  When you save a file with
+cross-refs. for the first time xref will search to see if the file
+name matches one of the \"FILE-PATTERN\" regular expressions; if it
+does, xref-external-save for this buffer is set to VALUE.  For
+example, if xref-save-alist contains ((\"^/users/\" . t)) then xref
+will try to save cross-refs. for files beginning \"/users/\"
+externally in your home directory.  Note that any references to
+your home directory in xref-save-alist must already be expanded
+(i.e., tildes are not understood in the pattern): use
+expand-file-name for that purpose.  Another pitfall: the entry
+((\"^/users/\" t)) doesn't do what you want!  The cdr is itself a
+list:  see next paragraph but one.
+
+The VALUE in an element of xref-save-alist may also be a string, in
+which case cross-refs. will be saved in a file of that name.  If it
+is not an absolute file name it will be treated relative to the
+file whose cross-refs. are being saved.  If you use this method, it
+is important that xref-save-alist is already set up when you reread
+the file, otherwise xref will not know where to look for the
+cross-refs.  (This method works by making the variable
+xref-dot-file local to the current buffer and changing it.)
+
+VALUE may be a list, in which case it is evaluated before its value
+is used.  The result may be any of the things above.  So, for
+example,
+   ((\"\" . (format \"%s.xref\" (buffer-file-name))))
+makes all files save their cross-refs. in a file of the same name
+with \".xref\" appended.  The list will always be evaluated in the
+context of the visited file.  If evaluating the list causes an error
+of any kind, this will be reported with the message \"xref-save-alist
+eval error\", but execution will continue as if the eval had returned
+t (the most conservative option).
+
+Another useful variable is new in 2.19:  xref-alternate-files, a
+list of files in the same format as xref-dot-file which will be
+searched for cross-refs. if none were found by the means above.
+The default value is (\".emacs-xrefs\" \"_emacs.xrf\"), which means any
+xref files you import to UNIX from DOS will be searched for
+cross-refs.  As always, xref will save changed cross-refs. back to
+the same place.  Also, if no cross-refs. were found but one of the
+alternate files exists in the current directory, Xref will change
+xref-dot-file (but not xref-external-save, so you won't necessarily
+use that file).
+
+Two other useful variables for saving are xref-ignore-headers and
+xref-start-pattern.  The first tells xref to ignore the first
+paragraph (up to the pattern specified by paragraph-start), so if
+you mail a file and the first paragraph fills up with Received:
+lines and such-like the offsets for the cross-refs. will remain
+correct.  The second is similar, but specifies a string to search
+for; all text before that is ignored.  You will note that in this
+file everything before the \";;; Commentary:\" line is ignored.  This
+is useful when RCS modifies the Id string, which is outside emacs'
+control.  These two variables --- which (like xref-external-save)
+are buffer local, so use setq-default to change the default values
+--- are automatically saved with the cross-reference list.  (The
+value of xref-external-save is deduced by searching for
+cross-refs. for each file in the three possible places.)
+
+You can disable saving by setting xref-save to nil.  Setting
+xref-active to nil is more draconian: it stops all the hooks which
+xref puts into Emacs to control reading and writing of cross-refs.
+and automatic display.  Both of these are `unsafe' in that any
+cross-refs. will be out of date if the file was modified.
+Note also that setting xref-active to nil will inhibit xref-hks
+from loading the main package.
+
+The z command shows, among other things, how cross-references for a
+particular buffer will be saved.  (Z stands for ztatus;  remember the
+older Ultima games?  Never mind.)
+
+*Caution:*
+ONCE A FILE HAS SAVED CROSS-REFS. YOU MUST BE SURE NOT TO EDIT IT
+WITHOUT XREF ACTIVE, or any sources and targets will be invalidated.
+(Use the z command to be sure.)  This should be obvious, but
+in case it isn't:  only Emacs has the capabilities for keeping
+track of the sources and targets along with the text.  Use
+xref-ignore-headers or xref-start-pattern if the file has headers
+which are liable to change.
+
+Note, however, that in this version of xref files with sources and
+targets can be edited completely independently, which was not the
+case before version 2.x.
+
+Remaining options
+=================
+If xref-track-sources is set, as it is by default, then any command
+(c, a, e, n, p, s) which sets a source but doesn't take you to it's
+target will take you straight to the source.  If it is nil, the
+cursor is left where it was (g will take you to the source in any
+case), but the new current source is still set.
+
+The variable xref-track-targets is similar but subtly different.
+Again, it only applies to commands which don't take you directly
+to the target.  If set, setting a different current source will
+always display the corresponding target --- but in another window,
+which will not be selected.  Thus there is no difficulty in having
+xref-track-sources and xref-track-targets set at once.  Note that
+as the other window is not selected you cannot use the l command
+to go backwards over previous links when the targets were shown in
+this way.  (This could be changed but I think this is more consistent.)
+
+xref-minibuf-auto-track is useful when there is no text
+highlighting.  It is a flag to automatic tracking, so the t command
+must be in effect for it to be useful.  If it is non-nil, moving
+the cursor into a source will show the source text in brackets in
+the minibuffer.  If it is not t or nil, the usual effect of
+automatic tracking (showing the target in another window) is
+suppressed as well.  It is set to t by default if Emacs is not
+running under a window system.
+
+The final half-way useful variable is xref-highlight-current-target.
+As its name suggests, it controls whether the target of the current
+cross-ref. is highlighted.  If it is nil, the target just appears
+as ordinary text.  If you change its value, it takes effect at the
+next change of the current cross-ref.  (Contrast this with the
+function xref-toggle-target-highlighting, which highlights all
+targets, whether current or not; that is a function since it has to
+do some work to get that to happen.)  There is no corresponding
+source variable, but you can use xref-toggle-invisible to make
+everything disappear.
+
+Other variables are mainly of use to programmers; look through the
+rest of the file.
+
+Many of the functions can do more than has been mentioned; see
+their documentation.  If it all gets too much for you, the z
+command will present you with a summary of xref information for the
+buffer you are in.
+
+Changing the appearance of the links 
+====================================
+The highlighting and underlining of sources and targets uses the
+standard Emacs 19 face code (standard for the time being, that is).
+You can use set-face-foreground, set-face-background,
+set-face-underline-p, etc. to change the appearance; the four faces
+normally used are xref-current-face and xref-face for sources,
+xref-current-target-face and xref-target-face (which is usually the
+same as the default) for targets.  In addition, xref-both-face is
+used when a target and source share the same position,
+xref-current-both-face if the target is current.  For example,
+	(set-face-foreground 'xref-current-face \"blue\")
+--- under X windows you have all the colours in
+/usr/lib/X11/rgb.txt (or wherever); under oemacs, just the boring
+DOS colours.  
+
+You can use eval-after-load to do this sort of thing for you.
+For example, 
+    (eval-after-load \"xref\" '(progn (set-face-foreground ...) ...))
+which must be done *before* xref is loaded.  (Also, you must make
+sure you load or require something called exactly \"xref\".)  This
+has replaced the old (pre-Emacs-19) <package>-load-hook mechanism.
+
+Restrictions
+============
+Searching for xrefs obeys restrictions.  However, going directly to a
+particular source or target which lies outside the current
+restriction causes a call to `widen'.  Also, any reference to the
+current source or target when it lies outside restrictions, even to
+change the current cross-ref., will cause a call to `widen'.
+
+Feedback
+========
+There is now a command xref-submit-bug-report for you to e-mail
+problems to me, providing your mailer talks to the Internet.  I
+welcome any suggestions and comments as well as bug reports.
+
+Joke
+====
+How to Shoot Yourself in the Foot (Which Language is for You):  Addendum.
+
+Lisp: Your leg is really (hip thigh knee shin ankle foot).  You
+search through the leg until you find a foot.  You remove the foot
+from the leg and wait for the garbage collection.  The gun was
+pointing at something else anyway.
+
+Known Problems
+==============
+It is difficult to use xref with font-lock, because font-lock
+completely hijacks the face text property for its own purposes.
+This has been partially alleviated by Christoph Conrad
+<christoph.conrad@gmx.de>, who has made xref use overlays
+in addition to text properties for displaying the links.
+Maybe there should be some way of telling font-lock to respect
+certain existing fonts, but that is a fairly major project.
+For now, see the documentation for xref-use-overlays for more
+information on controlling this.
+
+If you copy a target to a new file, save both the files, and later
+on delete the original target, the copy will not be used; there is
+no mechanism for stacking targets other than by their order in a
+single file.  The latter should be regarded as an aberration rather
+than the former as a bug.
+
+Inserted files (C-x i) do not have cross-references expanded.  To
+get round this,  visit the file then insert the corresponding
+buffer (C-x C-f followed by M-x insert-buffer).
+
+Other vertically-challenged-comings are noted in comments.
+
+Things to do (many of which won't get done unless there is demand.)
+============
+xref-track-sources should at least provide the option of
+tracking sources in the other window, like xref-track-targets
+(s'pose).
+
+Relative file names.  Save without full path: option.  Currently
+all files in the same directory have no path, otherwise a full
+path.  Use of abbreviated file names in dot-files.
+
+Hooks of one kind or another.  Vote now.
+
+An etags to xref (or v.v.?) converter has been suggested.  This
+wouldn't need to be part of the standard package.  Even more useful
+might be an xref to HTML converter --- this would allow a
+completely keyboard driven way of making hypertext documents (but
+c.f. Hyperbole for proper HTML handling).
+
+Functions which use the order of the targets in the current buffer.
+
+Some way of going `up', i.e. back from a buffer with given targets.
+This would be for info and wouldn't need to be fast (to do it fast,
+create a reverse source/target pair --- probably unnecessary).
+
+Narrowing.  xref-narrow to determine initial narrowing; each
+target to have optional narrowing information stored.
+
+Footnotes: facility for creating a target to the current source
+at the end of the file, or in some designated file.
+
+Using the new primitives for writing and reading text
+properties to make a way of reading/writing cross-refs. from/to the
+text file without using the local variable list.  Still requires
+some way of handling xref-ignore-headers etc.; also probably not
+useful when saving externally.
+
+Acknowledgments 
+=============== 
+Workarounds for problems due to font-lock-mode were added in
+version 2.26 by Christoph Conrad <christoph.conrad@gmx.de>.
+
+The current version, using text properties, came about thanks to
+suggestions from Richard Stallman.  Xref would never have been
+written without Darryl Okahata's and others' work on OEMACS which
+meant I could write it at home.  I have lifted chunks of code
+from simple.el, files.el and etags.el.  Karl Fogel's bookmark mode
+also made me think about things I could do.  Various shortcomings
+were pointed out by Eberhard Mattes.")

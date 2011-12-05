@@ -1,0 +1,30 @@
+(:summary    "Helpers for Perl POD <> markup"
+ :created    "2007"
+ :updated    "2008"
+ :license    "GPL-3"
+ :authors    (("Kevin Ryde" . "user42@zip.com.au"))
+ :maintainer ("Kevin Ryde" . "user42@zip.com.au")
+ :provided   (perl-pod-gt)
+ :required   ((("emacs" overlay)))
+ :keywords   (wp)
+ :wikipage   "PerlPodGt"
+ :commentary "\
+This spot of code helps when writing Perl POD markup forms like C<...>,
+B<...>, etc.  `perl-pod-gt-enable' offers smart E<gt> insertion, line
+break suppression when filling, and some font lock
+warnings. `perl-pod-gt-double' converts C<..> to C<<...>> when you need
+it and are ready to assume perl 5.6.  See the docstrings for details.
+
+Install
+
+Put perl-pod-gt.el somewhere in your load-path and add to your .emacs
+
+    (autoload 'perl-pod-gt-enable \"perl-pod-gt\")
+    (add-hook 'perl-mode-hook 'perl-pod-gt-enable)
+
+And for cperl-mode or other similar mode
+
+    (add-hook 'cperl-mode-hook 'perl-pod-gt-enable)
+
+There's autoload cookies for the functions and the customize options on
+the hooks if you use `update-file-autoloads' and friends.")

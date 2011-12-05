@@ -1,0 +1,8 @@
+(:summary    "CTCP SOUND support for rcirc "
+ :created    "20060917"
+ :updated    "20060917"
+ :license    "GPL-2"
+ :authors    (("Daniel Brockman" . "daniel@brockman.se"))
+ :maintainer ("Daniel Brockman" . "daniel@brockman.se")
+ :provided   (rcirc-sound)
+ :wikipage   "rcircSound")

@@ -1,0 +1,12 @@
+(:license    "GPL-2"
+ :authors    (("IMAKADO" . "ken.imakado@gmail.com"))
+ :maintainer ("IMAKADO" . "ken.imakado@gmail.com")
+ :provided   (anything-w3m)
+ :required   ((("emacs" dired)
+	       ("w3m-type-ahead" w3m-type-ahead)))
+ :homepage   "https://github.com/imakado/emacs-anything-w3m"
+ :commentary "\
+Tested on Emacs 22
+
+
+M-x anything-w3m-ahead   to select link using anything")

@@ -1,0 +1,8 @@
+(:summary    "Mode for editing .fetchmailrc files"
+ :created    "20001030"
+ :license    "GPL-2"
+ :authors    (("Alex Shinn" . "foof@debian.org"))
+ :maintainer ("Alex Shinn" . "foof@debian.org")
+ :provided   (fetchmail-mode)
+ :keywords   (configuration fetchmail)
+ :wikipage   "FetchmailMode")

@@ -1,0 +1,8 @@
+(:summary    "Directional frame selection routines"
+ :created    "2010"
+ :updated    "2010"
+ :authors    (("Trey Jackson" . "bigfaceworm@gmail.com"))
+ :maintainer ("Trey Jackson" . "bigfaceworm@gmail.com")
+ :provided   (framemove)
+ :keywords   (convenience frame movement)
+ :wikipage   "FrameMove")

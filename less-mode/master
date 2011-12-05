@@ -1,0 +1,10 @@
+(:summary    "Major mode for editing Less files"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("myfreeweb" . "me@myfreeweb.ru"))
+ :maintainer ("myfreeweb" . "me@myfreeweb.ru")
+ :provided   (less-mode)
+ :required   ((("compile" compile)
+	       ("emacs" derived)))
+ :homepage   "https://github.com/myfreeweb/less-mode")

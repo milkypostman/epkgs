@@ -1,0 +1,31 @@
+(:summary    "JALOPY interface for JDE"
+ :created    "2006"
+ :updated    "20060814"
+ :license    "GPL-1"
+ :authors    (("Nascif A. Abousalh Neto" . "nascif@acm.org"))
+ :maintainer ("Nascif A. Abousalh Neto" . "nascif@acm.org")
+ :provided   (jde-jalopy)
+ :required   ((("jdee" jde-compile jde-run)))
+ :keywords   (beautifier java pretty\ printer tools)
+ :commentary "\
+This package provides an interface from JDE (see http://jde.sunsite.dk/) to
+Jalopy (see http://jalopy.sourceforge.net/).  Jalopy is a `a source code
+formatter for the Sun Java programming language. It layouts any valid Java
+source code according to some widely configurable rules; to meet a certain
+coding style without putting a formatting burden on individual developers.'
+
+Installation:
+
+ 1) Download and install the Jalopy console plug-in package from:
+ http://jalopy.sourceforge.net/download.html
+
+ 2) Put this file on your Emacs-Lisp load path and add the following into
+ your .emacs startup file
+
+     (require 'jde-jalopy)
+
+ 3) Customize the variable `jde-jalopy-option-path' to point to the Jalopy
+ installation directory.
+
+ 4) Make sure JDE is properly configured. In particular set the variables
+ jde-jdk-registry and jde-jdk so that the JVM launcher can be found.")

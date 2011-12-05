@@ -1,0 +1,23 @@
+(:summary    "Completion mechanism selection for completion-ui"
+ :created    "200856"
+ :updated    "20090411"
+ :license    "GPL-3"
+ :authors    (("Henry G. Weller" . "hweller0@gmail.com"))
+ :maintainer ("Henry G. Weller")
+ :provided   (completion-selection)
+ :required   ((("completion-ui" completion-ui)
+	       (nil completion-ui-more-sources)))
+ :keywords   (completion ui user\ interface)
+ :commentary "\
+A global minor mode that enables selection of completion methods.
+It is a light wrapper around the `completion-ui' package which allows
+the completion mechanism to be changed easily either via a keymap or menu
+accessible from the menu-bar.
+
+The current completion mechanism is displayed hight-lighted in the mode-line
+which can also be clicked on to pop-up the selection menu.
+
+This work relies on the good work of Toby Cubitt on completion-ui and also
+his continued help and patience with this work -- thanks.
+
+----------------------------------------------------------------------------")

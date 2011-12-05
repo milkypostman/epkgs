@@ -1,0 +1,70 @@
+(:summary    "An interface for wajig"
+ :created    "2005"
+ :updated    "2008"
+ :license    "GPL-2"
+ :authors    (("William Xu" . "william.xwl@gmail.com"))
+ :maintainer ("William Xu" . "william.xwl@gmail.com")
+ :provided   (wajig)
+ :homepage   "http://xwl.appspot.com"
+ :wikipage   "WajigMode"
+ :commentary "\
+\"Wajig is an interface to many Debian administrative tasks. Written
+in Python, wajig uses traditional Debian administration and user
+tools including apt-get, dpkg, apt-cache, wget, and others. It is
+intended to unify and simplify common administrative tasks.\" See
+http://www.togaware.com/wajig/ for more infomation.
+
+I write this package as a wrapper of wajig for Emacs. I love living
+within Emacs. :-)
+
+Put this file into your load-path and the following into your ~/.emacs:
+
+   (autoload 'wajig \"wajig\"
+            \"Create a *wajig* buffer.\" t)
+
+Then, simply run `M-x wajig'.
+
+Features
+--------
+
+- Ease of Typing
+
+  Most of wajig commands can be invoked by typing very few
+  keys. e.g., in *wajig* buffer, `o' for `wajig show'.
+
+- `ido-completing-read' Support
+
+  With the power of `ido-completing-read', you don't have to remember
+  the full name of a package. It is also an ease of typing.
+
+- Output Highlighting
+
+  Highlight command outputs. Make them look nicer.
+
+The Aim
+-------
+
+At first, i thought i would write an interface for wajig in
+Emacs. Then i found wajig also supports some other system operations
+besides deb control, such as start/stop system services. Hence, i
+plan to add more system administrations, in the hope of reducing
+typing in a shell as much as possible.
+
+Important Notes
+---------------
+
+1. It's currently expected to run all the commands in a
+   non-interactive style. So do have the following settings:
+
+    - `dpkg-reconfigure debconf', and choose non-interactive
+    - add the following into /etc/apt/apt.conf:
+
+        APT {
+             Get {
+                  Assume-Yes \"true\";
+             };
+        };
+
+2. I only tested wajig commands that i tend to use often. Far from
+   all of the wajig commands! Hence, possibly some functions won't
+   work properly. Be careful and let me know if you find any!")

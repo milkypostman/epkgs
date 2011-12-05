@@ -1,0 +1,7 @@
+(:summary    "Rcirc dbus notifications"
+ :license    "GPL-3"
+ :authors    (("Frederico Muñoz" . "fsmunoz@gmail.com"))
+ :maintainer ("Frederico Muñoz" . "fsmunoz@gmail.com")
+ :provided   (rcirc-dbus)
+ :required   ((("dbus" dbus)))
+ :keywords   (dbus rcirc))

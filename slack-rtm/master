@@ -1,0 +1,17 @@
+(:summary    "An elisp implementation of the Remember The Milk API"
+ :created    "2010"
+ :updated    "2010"
+ :license    "GPL-3"
+ :authors    (("Seth Mason"))
+ :maintainer ("Seth Mason")
+ :provided   (rtm slack-rtm)
+ :required   ((("cl" cl)
+	       ("emacs" custom)
+	       ("ido" ido)
+	       ("org" org)
+	       ("url" url-http url-util)
+	       ("xml" xml)))
+ :keywords   (milk productivity remember the todo)
+ :homepage   "https://github.com/slackorama/slack-rtm"
+ :commentary "\
+Pull your tasks from RTM and then shove them into a buffer.")

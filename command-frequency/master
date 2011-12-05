@@ -1,0 +1,6 @@
+(:created    "2006"
+ :updated    "20080903"
+ :license    "GPL-2"
+ :maintainer ("Xah lee")
+ :provided   (command-frequency)
+ :keywords   (command frequency))

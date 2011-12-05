@@ -1,0 +1,10 @@
+(:summary    "Encrypt and decrypt using coding system"
+ :created    "2006"
+ :updated    "20061108"
+ :license    "GPL-2"
+ :authors    ((nil . "wenbinye@163.com"))
+ :maintainer (nil . "wenbinye@163.com")
+ :provided   (encrypt)
+ :required   ((("cl" cl)
+	       ("ffap" ffap)
+	       ("prand" prand))))

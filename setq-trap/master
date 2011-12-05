@@ -1,0 +1,16 @@
+(:summary    "Debug on entry to setq when specific symbols are modified"
+ :created    "19940818"
+ :updated    "19940828"
+ :license    "GPL-2"
+ :authors    (("Noah Friedman" . "friedman@prep.ai.mit.edu"))
+ :maintainer (nil . "friedman@prep.ai.mit.edu")
+ :provided   (setq-trap)
+ :required   ((("emacs" backquote)))
+ :keywords   (extensions)
+ :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
+ :commentary "\
+For this to work, all the code in which you want to debug setq calls
+must not be byte-compiled.  Even if you modified the byte-compiler not
+to generate code using the setq bytecode, any previously compiled code
+would still use the setq bytecode and bypass any redefinition in lisp.
+Anyway, isn't debugging byte-compiled code inherently more difficult?")

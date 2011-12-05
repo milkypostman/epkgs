@@ -1,0 +1,11 @@
+(:summary    "Ecasound .ewf major mode"
+ :created    "2001"
+ :updated    "2001"
+ :license    "GPL-2"
+ :authors    (("Mario Lang" . "mlang@delysid.org"))
+ :maintainer ("Mario Lang" . "mlang@delysid.org")
+ :provided   (ecasound-ewf)
+ :required   ((("ecasound" ecasound)))
+ :keywords   (audio ecasound files wave)
+ :commentary "\
+This is a major mode for ecasound .ewf file format.")

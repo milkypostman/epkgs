@@ -1,0 +1,9 @@
+(:created    "2001"
+ :updated    "2001"
+ :license    "GPL-2"
+ :authors    (("Bill White" . "billw@wolfram.com"))
+ :maintainer ("Bill White" . "billw@wolfram.com")
+ :provided   (astronomy)
+ :required   ((("calendar" calendar solar)))
+ :keywords   (calendar)
+ :homepage   "http://members.wri.com/billw/astronomy")

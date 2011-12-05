@@ -1,0 +1,31 @@
+(:summary    "Multi-buffer occur (grep) mode"
+ :updated    "20100723"
+ :license    "GPL-3"
+ :provided   (color-moccur)
+ :required   ((("cl" cl)
+	       ("ee" ee-autoloads)
+	       ("emacs" overlay)
+	       ("migemo" migemo)
+	       ("moccur-edit" moccur-edit)))
+ :homepage   "http://www.bookshelf.jp"
+ :commentary "\
+If this program doesn't run, I might change the program for the
+worse.  So please send mail to akihisa@mail.ne.jp .
+
+This elisp is the extention of moccur.el.
+Thanks to the authors for writing moccur.el
+
+With color-moccur, you can search a regexp in all buffers. And you
+can search files like grep(-find) without grep (and find) command.
+
+Motivation
+moccur is a major mode modelled after the 'Occur' mode of the
+standard distribution. It is quite nice to use when you need to
+work with a lot of buffers.
+
+Incompatibilites to Occur mode:
+a) it browses through *all* buffers that have a file name
+associated with them; those may or may not include the current
+buffer. Especially, while standard occur works
+on 'all lines following point', Moccur does not.
+b) there is no support for the 'NLINE' argument.")

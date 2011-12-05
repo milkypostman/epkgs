@@ -1,0 +1,23 @@
+(:summary    "Convenience functions for face customization"
+ :created    "2000"
+ :updated    "2000"
+ :license    "GPL-2"
+ :authors    (("Alex Schroeder" . "alex@gnu.org"))
+ :maintainer ("Alex Schroeder" . "alex@gnu.org")
+ :keywords   (faces)
+ :wikipage   "FaceList"
+ :commentary "\
+This code allows you to browse the list of defined faces and to
+quickly call a face customization buffer for the face at point,
+thereby facilitating the job of a color theme author.
+
+Loading this code will advise `list-faces-display' to put the *Faces*
+buffer into `faces-list-mode'.  That modes provides two extra key
+bindings; one of them calls `face-describe' for the face at point,
+the other calls `customize-face' for the face at point.
+
+The two functions to describe and customize the face at point can be
+called from anywhere; they are `describe-face-at-point' and
+`customize-face-at-point'.  If you are working with Emacs and
+discover a face you don't like, put point on some text with the
+offending face and type M-x customize-face-at-point RET.")

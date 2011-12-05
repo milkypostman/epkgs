@@ -1,0 +1,43 @@
+(:summary    "Major mode for Neuron HOC dot-hoc files"
+ :created    "2006"
+ :updated    "2006"
+ :license    "GPL-2"
+ :authors    (("David C. Sterratt" . "david.c.sterratt@ed.ac.uk"))
+ :maintainer ("David C. Sterratt" . "david.c.sterratt@ed.ac.uk")
+ :provided   (nrnhoc)
+ :required   ((("emacs" custom)))
+ :keywords   (hoc neuron)
+ :homepage   "http://homepages.inf.ed.ac.uk/sterratt/progs/neuron"
+ :commentary "\
+This major mode for GNU Emacs provides support for editing Neuron HOC
+dot-hoc files.  It automatically indents for block structures and
+comments.  It highlights code using font-lock.
+
+Finding Updates:
+
+The latest stable version of nrnhoc.el can be found here:
+
+http://www.anc.ed.ac.uk/~dcs/progs/neuron/nrnhoc.el
+
+Installation:
+
+  Put the this file as \"nrnhoc.el\" somewhere on your load path, then
+  add this to your .emacs or init.el file:
+
+  (autoload 'nrnhoc-mode \"nrnhoc\" \"Enter NRNHOC mode.\" t)
+  (setq auto-mode-alist (cons '(\"\\\\.hoc\\\\'\" . nrnhoc-mode) auto-mode-alist))
+
+Please read the mode help for nrnhoc-mode for configuration options.
+
+Syntax highlighting:
+  To get font-lock try adding this for older emacsen:
+    (font-lock-mode 1)
+  Or for newer versions of Emacs:
+    (global-font-lock-mode t)
+  In Xemacs the following seems to work
+    (add-hook 'nrnhoc-mode-hook 'turn-on-font-lock)
+
+
+This package will optionally use custom.
+
+It is partly based on Eric M.  Ludlam's and Matthew R.  Wette's matlab-mode")

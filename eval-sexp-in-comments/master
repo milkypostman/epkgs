@@ -1,0 +1,6 @@
+(:summary    "Evaluate sexps in comments"
+ :created    "20010107"
+ :updated    "2001"
+ :authors    (("Alex Schroeder" . "alex@gnu.org"))
+ :maintainer ("Alex Schroeder" . "alex@gnu.org")
+ :keywords   (lisp))

@@ -1,0 +1,8 @@
+(:summary    "Connect to JIRA issue tracking software"
+ :created    "2009"
+ :updated    "2009"
+ :license    "GPL-2"
+ :provided   (jira)
+ :required   ((("cl" cl)
+	       ("xml-rpc" xml-rpc)))
+ :wikipage   "JiraMode")

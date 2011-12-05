@@ -1,0 +1,44 @@
+(:summary    "Increase everything as you want"
+ :created    "2006"
+ :updated    "20070313"
+ :license    "GPL-2"
+ :authors    ((nil . "wenbinye@163.com"))
+ :maintainer (nil . "wenbinye@163.com")
+ :provided   (incr)
+ :required   ((("calculator" calculator)
+	       ("cl" cl)
+	       ("emacs" rect)
+	       (nil hannum)))
+ :keywords   (convenience)
+ :commentary "\
+Quick start:
+Type number 0 in any place, then put cursor on the number, M-x
+incr-dwim. See the number turn to be 1. Now try with a prefix
+argument 4: C-u 4 C-x z. The number change to 5. The number can
+also be a hex, such as 0x1, 0x01.
+
+If This is not interesting, then type character I in any place,
+then M-x incr-dwim RET C-x z z z z z. You can try it until tired.
+the number is increase in roman.
+
+Now try play with weekdays. Put cursor on the word \"monday\", and do
+with the same way.
+
+The command also can do with a rectangle region, the feature
+require transient-mark-mode is ON. For example, when select a
+rectangle like this:
+  7
+  7
+  7
+then use M-x incr-dwim, the region will change to:
+  7
+  8
+  9
+When select a rectangle region, If with a numeric prefix argument,
+the region will increase or decrease by the argument, but if the
+prefix argument is not numberic which invoke by C-u M-x incr-dwim,
+you will be ask several question about some paramters, such as
+increment, justify, fill character and so on.
+
+Put this file into your load-path and the following into your ~/.emacs:
+  (require 'incr)")

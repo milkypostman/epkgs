@@ -1,0 +1,12 @@
+(:summary    "An auto-complete source for Octave"
+ :created    "2011"
+ :updated    "2011"
+ :license    "GPL-2"
+ :authors    (("coldnew" . "coldnew.tw@gmail.com"))
+ :maintainer ("coldnew" . "coldnew.tw@gmail.com")
+ :provided   (ac-octave)
+ :required   ((("auto-complete" auto-complete)
+	       ("cl" cl)
+	       ("octave-mod" octave-inf)))
+ :keywords   (auto-complete completion octave)
+ :homepage   "https://github.com/coldnew/ac-octave")

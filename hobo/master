@@ -1,0 +1,37 @@
+(:summary    "Remote editting via SCP"
+ :created    "2001"
+ :updated    "20020120"
+ :license    "GPL-2"
+ :authors    (("Joe Casadonte" . "emacs@northbound-train.com"))
+ :maintainer ("Joe Casadonte" . "emacs@northbound-train.com")
+ :provided   (hobo)
+ :keywords   (comm remote scp tramp)
+ :homepage   "http://www.northbound-train.com"
+ :wikipage   "HoboMode"
+ :commentary "\
+Hobo facilitates editing remote files by automating file transfers
+ via SCP, relying on SSH-AGENT (or RSA/DSA) to authenticate.  Hobo
+ stores files locally in a temporary directory structure and can
+ automatically clean up the temporary files and directories when
+ you're done.  In addition, it makes accessing the remote files a
+ tad easier using aliases/shortcuts with all of the connection info
+ already set up.  See 'Existential Background' below for
+ information on alternatives to Hobo.
+
+Installation:
+
+ Put this file on your Emacs-Lisp load path, then add one of the
+ following to your ~/.emacs startup file.  You can load hobo
+ every time you start Emacs:
+
+    (require 'hobo)
+
+ or you can load the package on first use via autoload:
+
+    (autoload 'hobo-register-agent \"hobo\" \"\" t)
+    (autoload 'hobo-register-agent-from-file \"hobo\" \"\" t)
+    (autoload 'hobo-find-file \"hobo\" \"\" t)
+
+ To add a directory to your load-path, use something like the following:
+
+     (add-to-list 'load-path (expand-file-name \"/some/load/path\"))")

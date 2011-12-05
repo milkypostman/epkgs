@@ -1,0 +1,14 @@
+(:summary    "Smart `home' and `end' keys"
+ :created    "1998"
+ :updated    "19981222"
+ :license    "GPL-2"
+ :authors    (("Kai Grossjohann" . "kai.grossjohann@cs.uni-dortmund.de"))
+ :maintainer ("Kai Grossjohann" . "kai.grossjohann@cs.uni-dortmund.de")
+ :provided   (pc-keys)
+ :keywords   (convenience)
+ :commentary "\
+Some useful bindings for Home and End keys: Hit the key once to go
+to the beginning/end of a line, hit it twice in a row to go to the
+beginning/end of the window, three times in a row goes to the
+beiginning/end of the buffer.  NB that there is no timeout
+involved.")

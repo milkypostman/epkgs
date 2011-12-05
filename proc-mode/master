@@ -1,0 +1,55 @@
+(:summary    "Copyright (C) 1999 Pat Thoyts <pat@zsplat.freeserve.co.uk>"
+ :created    "1999"
+ :updated    "19990827"
+ :license    "GPL-2"
+ :authors    (("Pat Thoyts" . "pat@zsplat.freeserve.co.uk"))
+ :maintainer ("Pat Thoyts" . "pat@zsplat.freeserve.co.uk")
+ :provided   (proc-mode)
+ :required   ((("regexp-opt" regexp-opt)
+	       ("reporter" reporter)))
+ :keywords   (languages)
+ :commentary "\
+-----------
+ This is an emacs major mode to provide some help to programmers who
+ must edit Pick-style Proc language programs. It provides keyword
+ colourisation and not much else.
+
+ Tested for XEmacs 19.15 and GNU Emacs 20.3
+
+
+INSTALLATION
+ ------------
+ Put 
+
+   (autoload 'proc-mode \"proc-mode\" \"Mode for Pick PROC procedures.\" t)
+
+ into your .emacs file and type M-x proc-mode in any buffer you think
+ is suitable.
+
+ You can also add
+
+   (autoload 'proc-insert-emacs-tag \"proc-mode\" nil t)
+
+ if you want to be able to easilly tag a buffer as proc mode for emacs.
+ I recommend binding these functions to keys, possibly
+
+  C-c p   to proc-mode
+  C-c C-p to proc-insert-emacs-tag
+
+ This can be done with something like:
+
+   (defun Ctl-C-prefix () Ctl-C-keymap)
+   (defvar Ctl-C-keymap (make-keymap) \"Keymap for C-c prefix.\")
+   (global-set-key \"\\C-c\" (Ctl-C-prefix))
+   (define-key Ctl-C-keymap \"p\"    'proc-mode)
+   (define-key Ctl-C-keymap \"\\C-p\" 'proc-insert-emacs-tag)
+
+
+SEE ALSO
+ --------
+ unibasic-mode - a major mode for editing Unibasic/Databasic buffers.
+
+
+BUGS
+ ----
+ Only that PROCs are so hideous.")

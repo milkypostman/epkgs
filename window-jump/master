@@ -1,0 +1,13 @@
+(:summary    "Move left/right/up/down through your windows"
+ :authors    (("Steven Thomas"))
+ :maintainer ("Steven Thomas")
+ :provided   (window-jump)
+ :required   ((("cl" cl)))
+ :homepage   "https://github.com/chumpage/window-jump.el"
+ :commentary "\
+Directionally move through the windows in a frame. The core functions
+are window-jump-<left,right,up,down>. Bind them to some keys and
+you'll be flying around your windows like Superman.
+
+See https://github.com/chumpage/window-jump.el for more
+documentation, and to submit patches.")

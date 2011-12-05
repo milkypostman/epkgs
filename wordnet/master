@@ -1,0 +1,59 @@
+(:summary    "A simple wordnet mode"
+ :created    "2002"
+ :updated    "2002"
+ :license    "GPL-2"
+ :authors    (("Thomas Link"))
+ :maintainer ("Thomas Link")
+ :provided   (wordnet)
+ :required   ((("ispell" ispell)
+	       ("tellib" tellib)
+	       ("thingatpt" thingatpt)))
+ :keywords   (dictionary lookup wordnet)
+ :homepage   "http://members.a1.net/t.link/CompEmacsWordnet.html"
+ :commentary "\
+;---(:excerpt-beg Word-Net :name desc)---
+;---(:excerpt-source \"~/Etc/TL-Wiki/CompEmacsWordnet\")---
+
+A simple [[http://www.cogsci.princeton.edu/wn/][wordnet]] mode.
+
+Installation: Put (require 'wordnet) (wordnet-install) into your
+startup/user init file. The default value of `wordnet-command-line'
+requires w3m to be installed.
+
+
+*** Important Commands
+
+wordnet-lookup :: Look up the word at point.
+
+wordnet-lookup-specific :: Look up the word at point in a specific
+dictionary.
+
+wordnet-lookup-selection :: Look up the primary X selection. Could be
+used as in: =gnuclient -eval '(wordnet-lookup-selection t)'=
+
+wordnet-run-wn-with-word-at-mouse :: Look up the word the mouse is
+pointing at.
+
+
+*** Important Variables
+
+wordnet-query-word-flag :: Query user before running
+`wordnet-command-line'.
+
+wordnet-command-line :: The command line used to get wordnet's overview. 
+%w is replaced with the word you want to lookup.
+
+
+*** Default key binding in the Wordnet buffer
+
+q               | `wordnet-bury'
+Q               | `wordnet-quit'
+k               | `wordnet-delete-frame'
+h               | `wordnet-history-show'
+return          | `wordnet-run-wn-with-word-at-point-anyway'
+control button1 | `wordnet-run-wn-with-word-at-mouse-anyway'
+button2         | `wordnet-run-wn-with-word-at-mouse-anyway'
+button3         | `wordnet-popmenu-at-mouse'
+control button3 | `wordnet-popmenu-at-mouse-volatile'
+
+;---(:excerpt-end Word-Net :name desc)---")
