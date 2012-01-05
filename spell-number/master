@@ -6,8 +6,7 @@
  :maintainer ("Vinicius Jose Latorre" . "viniciusjl@ig.com.br")
  :provided   (spell-number)
  :keywords   (local spell)
- :homepage   "http://www.emacswiki.org/SpellNumber"
- :wikipage   "http://www.emacswiki.org/SpellNumber"
+ :wikipage   "SpellNumber"
  :commentary "\
 Introduction
 ------------

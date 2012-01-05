@@ -1,5 +1,4 @@
 (:summary    "Major mode for editing and executing AppleScript code"
- :repository (git . "git://github.com/tequilasunset/apples-mode.git")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-3"

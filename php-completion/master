@@ -1,5 +1,4 @@
 (:summary    "Complete everything PHP with Anything.el"
- :repository (git . "git://github.com/imakado/php-completion.git")
  :created    "2009"
  :updated    "2009"
  :license    "GPL-2"

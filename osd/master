@@ -7,7 +7,7 @@
  :provided   (osd)
  :keywords   (multimedia)
  :homepage   "http://www.brockman.se"
- :wikipage   "http://www.emacswiki.org/OnScreenDisplay"
+ :wikipage   "OnScreenDisplay"
  :commentary "\
 This file implements a thin Emacs front-end to a small program
 called `osd_cat', written by Martijn van de Streek

@@ -6,8 +6,7 @@
  :maintainer (nil . "andy stewart lazycat.manatee@gmail.com")
  :provided   (newsticker-notify)
  :keywords   (newsticker notify)
- :homepage   "http://www.emacswiki.org/NewstickerNotify"
- :wikipage   "http://www.emacswiki.org/NewstickerNotify"
+ :wikipage   "NewstickerNotify"
  :commentary "\
 Notify newsticker news in mode-line
 

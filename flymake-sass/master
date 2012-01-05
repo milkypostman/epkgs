@@ -1,5 +1,4 @@
 (:summary    "Flymake handler for sass files"
- :repository (git . "git://github.com/purcell/flymake-sass.git")
  :authors    (("Steve Purcell" . "steve@sanityinc.com"))
  :maintainer ("Steve Purcell" . "steve@sanityinc.com")
  :provided   (flymake-sass)

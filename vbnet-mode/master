@@ -9,8 +9,7 @@
  :maintainer ("Fred White" . "fwhite@alum.mit.edu")
  :provided   (vbnet-mode)
  :keywords   (basic languages vb vbnet)
- :homepage   "http://www.emacswiki.org/VbDotNetMode"
- :wikipage   "http://www.emacswiki.org/VbDotNetMode"
+ :wikipage   "VbDotNetMode"
  :commentary "\
 Purpose of this package: This is a mode for editing programs written
   in Visual Basic .NET (VB.NET).  This mode features automatic

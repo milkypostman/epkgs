@@ -1,9 +1,8 @@
-(:repository (git . "git://github.com/taladar/lsl-mode.git")
- :created    "2006"
+(:created    "2006"
  :updated    "2006"
  :license    "GPL-2"
  :provided   (lsl-mode)
  :required   ((("cc-mode" cc-bytecomp cc-mode)
 	       ("thingatpt" thingatpt)))
  :homepage   "https://github.com/taladar/lsl-mode"
- :wikipage   "http://www.emacswiki.org/LSLMode")
+ :wikipage   "LSLMode")

@@ -5,5 +5,4 @@
  :provided   (jira)
  :required   ((("cl" cl)
 	       ("xml-rpc" xml-rpc)))
- :homepage   "http://www.emacswiki.org/JiraMode"
- :wikipage   "http://www.emacswiki.org/JiraMode")
+ :wikipage   "JiraMode")

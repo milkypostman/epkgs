@@ -8,7 +8,7 @@
 	       ("regexp-opt" regexp-opt)))
  :keywords   (languages php smarty templates)
  :homepage   "http://www.smarty.net"
- :wikipage   "http://www.emacswiki.org/SmartyMode"
+ :wikipage   "SmartyMode"
  :commentary "\
 Smarty-mode is for highlighting html templates written for the smarty
 template engine (http://smarty.php.net).  This mode *does not* inherit

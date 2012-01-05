@@ -1,5 +1,4 @@
 (:summary    "A simple emacs async HTTP server"
- :repository (git . "git://github.com/nicferrier/elnode.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"
@@ -13,7 +12,7 @@
 	       ("url" url-util)))
  :keywords   (http hypermedia lisp)
  :homepage   "https://github.com/nicferrier/elnode"
- :wikipage   "http://www.emacswiki.org/Elnode"
+ :wikipage   "Elnode"
  :commentary "\
 This is an elisp version of the popular node.js asynchronous
 webserver toolkit.

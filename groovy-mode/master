@@ -1,5 +1,4 @@
 (:summary    "Groovy mode derived mode"
- :repository (bzr . "http://bazaar.launchpad.net/~russel/groovy-emacs-mode/trunk")
  :created    "20060801"
  :license    "GPL-2"
  :authors    (("Russel Winder" . "russel@russel.org.uk"))
@@ -10,7 +9,7 @@
 	       ("emacs" comint)
 	       ("find-cmd" find-cmd)))
  :homepage   "http://groovy.codehaus.org/Emacs+Plugin"
- :wikipage   "http://www.emacswiki.org/GroovyMode"
+ :wikipage   "GroovyMode"
  :commentary "\
 This mode was initially developed using the Java and Awk modes that are part of CC Mode (the 5.31 source
  was used) and C# Mode from Dylan R. E. Moonfire <contact@mfgames.com> (the 0.5.0 source was used).  This

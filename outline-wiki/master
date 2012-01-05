@@ -7,8 +7,7 @@
  :provided   (outline-wiki)
  :required   ((("outline" outline)))
  :keywords   (outlines wiki)
- :homepage   "http://www.emacswiki.org/OutlineWikiMode"
- :wikipage   "http://www.emacswiki.org/OutlineWikiMode"
+ :wikipage   "OutlineWikiMode"
  :commentary "\
 outline-wiki-mode is an extended outline mode. The only addition to
 the normal outline capabilities is a link syntax to files. Every

@@ -9,8 +9,7 @@
 	       ("hl-line+" hl-line+))
 	      (("hl-line" hl-line)))
  :keywords   (accessibility cursor emulation faces frames highlight)
- :homepage   "http://www.emacswiki.org/CrosshairHighlighting"
- :wikipage   "http://www.emacswiki.org/CrosshairHighlighting"
+ :wikipage   "CrosshairHighlighting"
  :commentary "\
 This library highlights the current line and the current column.
  It combines the features of libraries `hl-line.el', `hl-line+.el',

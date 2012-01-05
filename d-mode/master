@@ -7,7 +7,7 @@
  :required   ((("cc-mode" cc-mode)
 	       ("emacs" font-lock)
 	       (nil linemark)))
- :wikipage   "http://www.emacswiki.org/DMode"
+ :wikipage   "DMode"
  :commentary "\
 Loosely based on version 1.12 of csharp-mode.el by Dennis Haney
 http://davh.dk/script/

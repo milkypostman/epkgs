@@ -6,8 +6,7 @@
  :maintainer ("Cedric Lallain" . "kandjar76@hotmail.com")
  :provided   (record-type)
  :keywords   (oop)
- :homepage   "http://www.emacswiki.org/RecordType"
- :wikipage   "http://www.emacswiki.org/RecordType"
+ :wikipage   "RecordType"
  :commentary "\
 Definition of a new Emacs type: record.
 A record is a set of named fields with their associated type.

@@ -4,8 +4,7 @@
  :license    "GPL-2"
  :provided   (iy-go-to-char)
  :keywords   (navigation search)
- :homepage   "http://www.emacswiki.org/IyGoToChar"
- :wikipage   "http://www.emacswiki.org/IyGoToChar"
+ :wikipage   "IyGoToChar"
  :commentary "\
 This package defines the function `iy-go-to-char' which behaves
 like \"f\" in vim. It reads a char and go the next Nth occurence of

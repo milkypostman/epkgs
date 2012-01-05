@@ -9,8 +9,7 @@
  :required   ((("regexp-opt" regexp-opt)
 	       ("sql" sql)))
  :keywords   (languages)
- :homepage   "http://www.emacswiki.org/SqlIndent"
- :wikipage   "http://www.emacswiki.org/SqlIndent"
+ :wikipage   "SqlIndent"
  :commentary "\
 Indent SQL statements.
 

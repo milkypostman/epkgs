@@ -7,8 +7,7 @@
  :provided   (gnuslog)
  :required   ((("gnus" gnus)))
  :keywords   (gnus log splitting)
- :homepage   "http://www.emacswiki.org/GnusLog"
- :wikipage   "http://www.emacswiki.org/GnusLog"
+ :wikipage   "GnusLog"
  :commentary "\
 Hooks into gnus splitting functions and writes a log to file. The
 log file can be viewed in Gnus as a Document Group.

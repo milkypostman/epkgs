@@ -8,8 +8,7 @@
  :required   (nil
 	      (("misc-cmds" misc-cmds)))
  :keywords   (help internal local matching)
- :homepage   "http://www.emacswiki.org/IsearchPlus"
- :wikipage   "http://www.emacswiki.org/IsearchPlus"
+ :wikipage   "IsearchPlus"
  :commentary "\
 Extensions to `isearch.el'.
 

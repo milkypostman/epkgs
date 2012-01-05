@@ -1,5 +1,4 @@
 (:summary    "Sinasi Is Not A SproutCore IDE"
- :repository (git . "git://github.com/emk/sinasi.git")
  :created    "20100309"
  :updated    "2010"
  :license    "GPL-3"

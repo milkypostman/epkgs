@@ -6,8 +6,7 @@
  :maintainer ("Gaofeng Huang" . "poppyer@gmail.com")
  :provided   (pinbar)
  :keywords   (convenience)
- :homepage   "http://www.emacswiki.org/PinBar"
- :wikipage   "http://www.emacswiki.org/PinBar"
+ :wikipage   "PinBar"
  :commentary "\
 This library provides a minor mode to display tabs in the header
 line.  It works on GNU Emacs 21 or later version.

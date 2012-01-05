@@ -1,5 +1,4 @@
 (:summary    "Display lunar phase in mode line of Emacs"
- :repository (git . "git://gaffer.ptitcanardnoir.org/lunar-mode-line.git")
  :created    "20060522"
  :updated    "2008"
  :license    "GPL-2"
@@ -9,6 +8,6 @@
  :required   ((("calendar" calendar lunar)
 	       ("emacs" timer)))
  :keywords   (extensions)
- :wikipage   "http://www.emacswiki.org/LunarModeLine"
+ :wikipage   "LunarModeLine"
  :commentary "\
 Inspired by battery.el, by Ralph Schleicher <rs@nunatak.allgaeu.org>.")

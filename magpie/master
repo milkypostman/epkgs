@@ -5,8 +5,7 @@
  :provided   (magpie)
  :required   ((("cl" cl)))
  :keywords   (acronym dabbrev expansion hippie)
- :homepage   "http://www.emacswiki.org/MagpieExpansion"
- :wikipage   "http://www.emacswiki.org/MagpieExpansion"
+ :wikipage   "MagpieExpansion"
  :commentary "\
 Given the number of acronyms associated with emacs and gnu it is
 perhaps surprising that this idea for the dynamic expansion of

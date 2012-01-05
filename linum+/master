@@ -7,8 +7,7 @@
  :provided   (linum+)
  :required   ((("linum" linum)))
  :keywords   (line number)
- :homepage   "http://www.emacswiki.org/LinumPlus"
- :wikipage   "http://www.emacswiki.org/LinumPlus"
+ :wikipage   "LinumPlus"
  :commentary "\
 This extension of linum can smart control width of line number
 displayed, If visible line number  of current buffer is from 1

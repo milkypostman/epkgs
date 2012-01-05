@@ -6,4 +6,4 @@
  :maintainer ("Pete Kazmier")
  :provided   (snippet)
  :required   ((("cl" cl)))
- :wikipage   "http://www.emacswiki.org/SnippetMode")
+ :wikipage   "SnippetMode")

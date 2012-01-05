@@ -4,8 +4,7 @@
  :license    "GPL-2"
  :provided   (accelerate)
  :required   ((("emacs" advice)))
- :homepage   "http://www.emacswiki.org/Accelerate"
- :wikipage   "http://www.emacswiki.org/Accelerate"
+ :wikipage   "Accelerate"
  :commentary "\
 When moving the cursor (with e.g the arrow keys or C-n, C-p, etc) and the
 key is held down and auto-repeated, then start moving cursor in increasingly

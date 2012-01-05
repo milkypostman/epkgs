@@ -1,12 +1,11 @@
 (:summary    "Try out a new idea by commenting out old code"
- :repository (git . "git://github.com/lewang/le_emacs_try_code.git")
  :created    "20110202"
  :updated    "20110913"
  :license    "GPL-3"
  :provided   (try-code)
  :keywords   (language modes programming)
  :homepage   "https://github.com/lewang/le_emacs_try_code"
- :wikipage   "http://www.emacswiki.org/TryCode"
+ :wikipage   "TryCode"
  :commentary "\
 Comments out a chunk of code to allow you to try some new code.  When you
 reinvoke the function in the old or new section, you can choose which one

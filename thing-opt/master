@@ -8,8 +8,7 @@
  :required   ((("cl" cl)
 	       ("thingatpt" thingatpt)))
  :keywords   (convenience)
- :homepage   "http://www.emacswiki.org/ThingAtPointOptional"
- :wikipage   "http://www.emacswiki.org/ThingAtPointOptional"
+ :wikipage   "ThingAtPointOptional"
  :commentary "\
 TODO documentation
 TODO forward-string by syntax (?)")

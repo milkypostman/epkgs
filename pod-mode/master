@@ -1,5 +1,4 @@
 (:summary    "Major mode for editing .pod-files"
- :repository (git . "git://github.com/renormalist/emacs-pod-mode.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-2"
@@ -10,7 +9,7 @@
 	       ("perldoc" perldoc)))
  :keywords   (perl pod)
  :homepage   "https://github.com/renormalist/emacs-pod-mode"
- :wikipage   "http://www.emacswiki.org/PodMode"
+ :wikipage   "PodMode"
  :commentary "\
 This mode is built with help of the
 \"Emacs language mode creation tutorial\" at

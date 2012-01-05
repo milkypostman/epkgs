@@ -8,8 +8,7 @@
  :required   ((("cl" cl)
 	       ("regexp-opt" regexp-opt)))
  :keywords   (convenience search)
- :homepage   "http://www.emacswiki.org/FlexIsearch"
- :wikipage   "http://www.emacswiki.org/FlexIsearch"
+ :wikipage   "FlexIsearch"
  :commentary "\
 This was inspired by and based on Tomohiro Matsuyama's fuzzy.el.
 

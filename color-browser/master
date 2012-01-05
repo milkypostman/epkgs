@@ -5,5 +5,5 @@
  :authors    (("Kahlil Hodgson" . "dorge@tpg.com.au"))
  :maintainer ("Kahlil Hodgson" . "dorge@tpg.com.au")
  :provided   (color-browser)
- :required   ((("color-theme" color-theme)))
+ :required   (((nil color-theme)))
  :keywords   (convenience))

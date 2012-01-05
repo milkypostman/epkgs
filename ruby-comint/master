@@ -1,5 +1,4 @@
 (:summary    "Run a ruby process in a compilation buffer"
- :repository (git . "git://github.com/jpablobr/ruby-comint.el.git")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-3"

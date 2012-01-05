@@ -10,8 +10,7 @@
 	       ("iswitchb" iswitchb)
 	       ("xcscope" xcscope)))
  :keywords   (tools)
- :homepage   "http://www.emacswiki.org/ProjmanMode"
- :wikipage   "http://www.emacswiki.org/ProjmanMode"
+ :wikipage   "ProjmanMode"
  :commentary "\
 A simple global minor mode for working with a collection of source code files
 in a directory tree, a 'project'.

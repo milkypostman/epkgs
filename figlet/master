@@ -6,7 +6,7 @@
  :maintainer ("Philip Jackson" . "phil@shellarchive.co.uk")
  :provided   (figlet)
  :homepage   "http://www.shellarchive.co.uk/content/emacs.html"
- :wikipage   "http://www.emacswiki.org/Figlet"
+ :wikipage   "Figlet"
  :commentary "\
 To use this feature simple eval (require 'figlet) type M-x figlet
 and you will be asked for a string. If you use a prefix (C-u M-x

@@ -1,5 +1,4 @@
 (:summary    "Save buffer-local variables in visited file"
- :repository (git . "git://github.com/tarsius/save-local-vars.git")
  :created    "20080830"
  :updated    "20090214"
  :license    "GPL-3"

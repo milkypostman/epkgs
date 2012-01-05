@@ -9,5 +9,4 @@
 	       ("w3" w3)
 	       ("w3m" w3m)))
  :keywords   (hypermedia)
- :homepage   "http://www.emacswiki.org/WikiRemote"
- :wikipage   "http://www.emacswiki.org/WikiRemote")
+ :wikipage   "WikiRemote")

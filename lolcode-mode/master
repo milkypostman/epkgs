@@ -1,5 +1,4 @@
 (:summary    "Major mode for editing LOLCODE"
- :repository (git . "git://github.com/bodil/lolcode-mode.git")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-2"

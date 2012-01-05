@@ -6,4 +6,4 @@
  :required   ((("emacs" menu-bar)))
  :keywords   (folding mode)
  :homepage   "http://pagesperso-systeme.lip6.fr/Christian.Queinnec/WWW/elisp.html"
- :wikipage   "http://www.emacswiki.org/FoldIngo")
+ :wikipage   "FoldIngo")

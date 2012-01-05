@@ -1,5 +1,4 @@
 (:summary    "Thing at Point optional utilities"
- :repository (git . "git://github.com/m2ym/thingopt-el.git")
  :created    "2008"
  :updated    "2011"
  :license    "GPL-3"

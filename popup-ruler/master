@@ -6,8 +6,7 @@
  :maintainer ("Rick Bielawski" . "rbielaws@i1.net")
  :provided   (popup-ruler)
  :keywords   (convenience tools)
- :homepage   "http://www.emacswiki.org/PopupRuler"
- :wikipage   "http://www.emacswiki.org/PopupRuler"
+ :wikipage   "PopupRuler"
  :commentary "\
 Displays a ruler at (point) for measuring and positioning text.
 

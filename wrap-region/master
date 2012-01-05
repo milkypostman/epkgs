@@ -1,5 +1,4 @@
 (:summary    "Wrap text with punctation or tag"
- :repository (git . "git://github.com/rejeep/wrap-region.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"
@@ -8,6 +7,7 @@
  :provided   (wrap-region)
  :keywords   (convenience speed)
  :homepage   "https://github.com/rejeep/wrap-region"
+ :wikipage   "WrapRegion"
  :commentary "\
 wrap-region is a minor mode that wraps a region with
 punctuations. For tagged markup modes, such as HTML and XML, it

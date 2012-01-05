@@ -3,8 +3,7 @@
  :updated    "2009"
  :license    "GPL-3"
  :provided   (rcirc-ding)
- :homepage   "http://www.emacswiki.org/rcircDing"
- :wikipage   "http://www.emacswiki.org/rcircDing"
+ :wikipage   "rcircDing"
  :commentary "\
 Use M-x rcirc-ding in a channel when you want to get a ding when
 there is any activity there.  This only happens if the buffer is

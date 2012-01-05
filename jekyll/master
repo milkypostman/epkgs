@@ -1,4 +1,3 @@
-(:repository (git . "git://github.com/diasjorge/jekyll.el.git")
- :provided   (jekyll jekyll-mumamo)
+(:provided   (jekyll jekyll-mumamo)
  :required   ((("nxhtml" mumamo-fun)))
  :homepage   "https://github.com/diasjorge/jekyll.el")

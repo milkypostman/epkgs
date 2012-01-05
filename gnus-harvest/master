@@ -1,5 +1,4 @@
 (:summary    "Harvest e-mail address from read/written articles"
- :repository (git . "git://github.com/jwiegley/gnus-harvest.git")
  :created    "20110815"
  :updated    "2011"
  :license    "GPL-2"

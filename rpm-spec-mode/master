@@ -10,7 +10,7 @@
 	       ("sh-script" sh-script)
 	       ("shindent" shindent)))
  :keywords   (languages unix)
- :wikipage   "http://www.emacswiki.org/RpmSpecMode"
+ :wikipage   "RpmSpecMode"
  :commentary "\
 This mode is used for editing spec files used for building RPM packages.
 

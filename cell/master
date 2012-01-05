@@ -7,4 +7,4 @@
  :provided   (cell grid)
  :required   ((("cl" cl)))
  :keywords   (hypermedia lisp tools)
- :wikipage   "http://www.emacswiki.org/CellMode")
+ :wikipage   "CellMode")

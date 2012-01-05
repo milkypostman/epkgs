@@ -7,8 +7,7 @@
  :provided   (highline)
  :required   ((("emacs" overlay)))
  :keywords   (editing faces frames)
- :homepage   "http://www.emacswiki.org/HighlineMode"
- :wikipage   "http://www.emacswiki.org/HighlineMode"
+ :wikipage   "HighlineMode"
  :commentary "\
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 

@@ -9,8 +9,7 @@
  :required   ((("emacs" easymenu)
 	       ("shell" shell)))
  :keywords   (directory file\ browser shell)
- :homepage   "http://www.emacswiki.org/NortonCommanderMode"
- :wikipage   "http://www.emacswiki.org/NortonCommanderMode"
+ :wikipage   "NortonCommanderMode"
  :commentary "\
 Installation:
 put nc.el/nc.elc in your load-path

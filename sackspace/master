@@ -1,5 +1,4 @@
 (:summary    "A better backspace"
- :repository (git . "git://github.com/cofi/sackspace.el.git")
  :created    "20100801"
  :updated    "2011"
  :license    "GPL-2"

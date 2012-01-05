@@ -7,7 +7,7 @@
  :provided   (mcomplete)
  :keywords   (abbrev help local)
  :homepage   "http://homepage1.nifty.com/bmonkey/emacs/index-en.html"
- :wikipage   "http://www.emacswiki.org/McompleteMode"
+ :wikipage   "McompleteMode"
  :commentary "\
 This package enhances Emacs's minibuffer completion mechanism.
 

@@ -6,8 +6,7 @@
  :maintainer ("Rick Bielawski" . "rbielaws@i1.net")
  :provided   (column-marker)
  :keywords   (convenience highlight tools)
- :homepage   "http://www.emacswiki.org/ColumnMarker"
- :wikipage   "http://www.emacswiki.org/ColumnMarker"
+ :wikipage   "ColumnMarker"
  :commentary "\
 Highlights the background at a given character column.
 

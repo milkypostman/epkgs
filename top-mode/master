@@ -5,8 +5,7 @@
  :maintainer ("Benjamin Rutt")
  :provided   (top-mode)
  :keywords   (extensions processes)
- :homepage   "http://www.emacswiki.org/TopMode"
- :wikipage   "http://www.emacswiki.org/TopMode"
+ :wikipage   "TopMode"
  :commentary "\
 This code runs top from within emacs (using top's batch mode), and
 provides functionality to operate on processes.

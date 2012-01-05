@@ -7,7 +7,7 @@
 	       ("info" info)
 	       ("oo-browser" c-mode)))
  :keywords   (awk commands completion info latex perl texinfo)
- :wikipage   "http://www.emacswiki.org/FuncDoc"
+ :wikipage   "FuncDoc"
  :commentary "\
 New versions of this package (if they exist) may be found at:
  http://people.debian.org/~psg/elisp/func-doc.el

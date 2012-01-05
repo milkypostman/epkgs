@@ -1,5 +1,4 @@
 (:summary    "Coding assistant front-end"
- :repository (svn . "http://csense.googlecode.com/svn")
  :created    "2007"
  :updated    "2007"
  :license    "GPL-2"
@@ -9,7 +8,7 @@
 	       ("etags" etags)
 	       ("rx" rx)))
  :homepage   "http://code.google.com/p/csense"
- :wikipage   "http://www.emacswiki.org/CSense"
+ :wikipage   "CSense"
  :commentary "\
 Generic Code Sense frontend for assistance during coding.
 

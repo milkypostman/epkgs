@@ -3,8 +3,7 @@
  :updated    "2004"
  :license    "GPL-2"
  :provided   (tag)
- :homepage   "http://www.emacswiki.org/FileTagUpdate"
- :wikipage   "http://www.emacswiki.org/FileTagUpdate"
+ :wikipage   "FileTagUpdate"
  :commentary "\
 Presently you can use this to tag MP3 files using mp3info.
 Use M-x tag-directory to get started.

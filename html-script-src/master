@@ -1,5 +1,4 @@
 (:summary    "Insert <script src=\"..\"> for popular JavaScript libraries"
- :repository (git . "git://github.com/rejeep/html-script-src.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"

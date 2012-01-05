@@ -6,8 +6,7 @@
  :maintainer ("Tobias.Naehring" . "i@tn-home.de")
  :provided   (msearch)
  :keywords   (mouse search selection)
- :homepage   "http://www.emacswiki.org/msearch"
- :wikipage   "http://www.emacswiki.org/msearch"
+ :wikipage   "msearch"
  :commentary "\
 After activating the minor mode \"msearch-mode\" mouse-dragging over
 some text highlightes all matches of this text in the current

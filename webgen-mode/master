@@ -4,5 +4,4 @@
  :provided   (webgen-mode)
  :required   ((("autoinsert" autoinsert)))
  :keywords   (minor\ mode webgen)
- :homepage   "http://www.emacswiki.org/WebgenMode"
- :wikipage   "http://www.emacswiki.org/WebgenMode")
+ :wikipage   "WebgenMode")

@@ -1,5 +1,4 @@
-(:repository (cvs . ":pserver:anonymous@mupacs.cvs.sourceforge.net:/cvsroot/mupacs")
- :created    "2002"
+(:created    "2002"
  :updated    "2002"
  :license    "GPL-2"
  :maintainer ("Olivier Ramare" . "ramare@agat.univ-lille1.fr")
@@ -12,7 +11,7 @@
 	       ("regexp-opt" regexp-opt)))
  :keywords   (progmodes)
  :homepage   "http://mupacs.sourceforge.net"
- :wikipage   "http://www.emacswiki.org/MuPACS"
+ :wikipage   "MuPACS"
  :commentary "\
 Major mode for MuPAD editing. It provides functions for editing
 MuPAD code and interacting with MuPAD. See the documentation

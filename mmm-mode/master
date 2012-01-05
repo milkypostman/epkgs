@@ -1,5 +1,4 @@
 (:summary    "Allow Multiple Major Modes in a buffer"
- :repository (git . "git://github.com/purcell/mmm-mode.git")
  :created    "1999"
  :updated    "20040616"
  :license    "GPL-2"
@@ -11,7 +10,7 @@
 	       ("regexp-opt" regexp-opt)))
  :keywords   (convenience faces languages tools)
  :homepage   "https://github.com/purcell/mmm-mode"
- :wikipage   "http://www.emacswiki.org/MmmMode"
+ :wikipage   "MmmMode"
  :commentary "\
 MMM Mode is a minor mode that allows multiple major modes to
 coexist in a single buffer. Refer to the documentation of the

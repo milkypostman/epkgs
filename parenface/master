@@ -1,4 +1,4 @@
 (:summary    "Provide a face for parens in lisp modes"
  :provided   (parenface)
  :homepage   "http://www.davep.org/emacs"
- :wikipage   "http://www.emacswiki.org/ParenFace")
+ :wikipage   "ParenFace")

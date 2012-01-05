@@ -6,8 +6,7 @@
  :maintainer ("Mathias Dahl")
  :provided   (java-class-doc)
  :keywords   (api documentation java)
- :homepage   "http://www.emacswiki.org/JavaClassDoc"
- :wikipage   "http://www.emacswiki.org/JavaClassDoc"
+ :wikipage   "JavaClassDoc"
  :commentary "\
 This is a simple package to quickly open the Java API
  documentation for a specific class.  After it is installed, just do

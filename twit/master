@@ -1,5 +1,4 @@
 (:summary    "Interface with twitter.com"
- :repository (git . "git://github.com/docgnome/twit.el.git")
  :created    "20070316"
  :updated    "20070319"
  :license    "GPL-2"
@@ -11,7 +10,7 @@
 	       ("xml" xml)))
  :keywords   (comm)
  :homepage   "https://github.com/docgnome/twit.el"
- :wikipage   "http://www.emacswiki.org/TwIt"
+ :wikipage   "TwIt"
  :commentary "\
 This is the beginnings of a library for interfacing with
 twitter.com from Emacs.  It is also (more importantly) some

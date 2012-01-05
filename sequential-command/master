@@ -8,8 +8,7 @@
  :required   ((("cl" cl))
 	      (("org" org)))
  :keywords   (convenience lisp)
- :homepage   "http://www.emacswiki.org/SequentialCommand"
- :wikipage   "http://www.emacswiki.org/SequentialCommand"
+ :wikipage   "SequentialCommand"
  :commentary "\
 Integrating multiple commands into one command is sometimes
 useful. Pressing C-e at the end of line is useless and adding the

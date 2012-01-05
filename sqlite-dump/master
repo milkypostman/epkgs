@@ -10,7 +10,7 @@
 	       ("emacs" advice)))
  :keywords   (data)
  :homepage   "http://user42.tuxfamily.org/sqlite-dump"
- :wikipage   "http://www.emacswiki.org/SqliteDump"
+ :wikipage   "SqliteDump"
  :commentary "\
 This spot of code runs the sqlite3 program to \".dump\" a database file as
 SQL text for viewing and editing.  Use `sqlite-dump' in `auto-mode-alist'

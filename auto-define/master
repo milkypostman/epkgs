@@ -6,7 +6,7 @@
  :maintainer ("Michael Abraham Shulman" . "viritrilbia@users.sourceforge.net")
  :provided   (auto-define)
  :keywords   (extensions)
- :wikipage   "http://www.emacswiki.org/AutoDefine"
+ :wikipage   "AutoDefine"
  :commentary "\
 This file supplies (surprisingly small) code which allows elisp
 functions to be defined \"on the fly,\" as they are called.  Read the

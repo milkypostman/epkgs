@@ -1,5 +1,4 @@
 (:summary    "Simple Emacs-Perl InterAction: ugly, yet effective"
- :repository (git . "git://repo.or.cz/sepia.git")
  :created    "2011"
  :updated    "2011"
  :authors    (("Sean O'Rourke" . "seano@cpan.org"))
@@ -16,7 +15,7 @@
 	       (nil sepia-snippet)))
  :keywords   (languages perl)
  :homepage   "http://search.cpan.org/src/SEANO/Sepia-0.96/Sepia.html"
- :wikipage   "http://www.emacswiki.org/Sepia"
+ :wikipage   "Sepia"
  :commentary "\
 Sepia is a set of tools for Perl development in Emacs.  Its goal is
 to extend CPerl mode with two contributions: fast code navigation

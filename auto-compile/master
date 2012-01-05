@@ -1,5 +1,4 @@
 (:summary    "Automatically compile Emacs Lisp files"
- :repository (git . "git://github.com/tarsius/auto-compile.git")
  :created    "20080830"
  :updated    "20100307"
  :license    "GPL-3"

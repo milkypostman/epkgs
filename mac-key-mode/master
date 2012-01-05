@@ -7,7 +7,7 @@
  :provided   (mac-key-mode)
  :required   ((("redo" redo)))
  :keywords   (mac tools)
- :wikipage   "http://www.emacswiki.org/MacKeyMode"
+ :wikipage   "MacKeyMode"
  :commentary "\
 This package provides mac-key-mode, a minor mode that provides
 mac-like key bindings and relevant elisp functions.

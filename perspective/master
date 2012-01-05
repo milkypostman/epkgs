@@ -1,5 +1,4 @@
 (:summary    "Switch between named \"perspectives\" of the editor"
- :repository (git . "git://github.com/nex3/perspective-el.git")
  :created    "20080305"
  :updated    "2010"
  :license    "GPL-3"

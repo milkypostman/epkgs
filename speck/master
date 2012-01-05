@@ -7,8 +7,7 @@
  :provided   (speck)
  :required   ((("cl" cl)))
  :keywords   (checking spell)
- :homepage   "http://www.emacswiki.org/SpeckMode"
- :wikipage   "http://www.emacswiki.org/SpeckMode"
+ :wikipage   "SpeckMode"
  :commentary "\
 Speck is a minor mode for \"specking\" - spell-checking text displayed
 in Emacs windows.  Invoke the command `speck-mode' to toggle specking

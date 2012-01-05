@@ -6,6 +6,4 @@
  :maintainer ("Denny Zhang" . "markfilebat@126.com")
  :provided   (online-search)
  :required   ((("url" url)))
- :keywords   (search)
- :homepage   "http://www.emacswiki.org/OnlineSearch"
- :wikipage   "http://www.emacswiki.org/OnlineSearch")
+ :keywords   (search))

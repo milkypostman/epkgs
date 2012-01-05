@@ -10,7 +10,7 @@
 	       ("emacs" timer)
 	       ("tree-widget" tree-widget)))
  :keywords   (bookmarks extensions navigation tools user)
- :wikipage   "http://www.emacswiki.org/MTorus"
+ :wikipage   "MTorus"
  :commentary "\
 This file contains both the old mtorus code from revision 1.6
 and the new (more abstract) mtorus frontend code from the current

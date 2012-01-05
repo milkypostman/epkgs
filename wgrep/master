@@ -1,5 +1,4 @@
 (:summary    "Writable grep buffer and apply the changes to files"
- :repository (git . "git://github.com/mhayashi1120/Emacs-wgrep.git")
  :license    "GPL-3"
  :authors    (("Masahiro Hayashi" . "mhayashi1120@gmail.com"))
  :maintainer ("Masahiro Hayashi" . "mhayashi1120@gmail.com")

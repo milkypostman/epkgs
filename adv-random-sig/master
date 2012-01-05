@@ -7,7 +7,7 @@
  :provided   (adv-random-sig)
  :keywords   (mail news random signature)
  :homepage   "http://www.zonix.de/projects/emacs/lisp"
- :wikipage   "http://www.emacswiki.org/AdvRandomSig"
+ :wikipage   "AdvRandomSig"
  :commentary "\
 This is an advanced random signature inserter for message-mode
 (probably other modes for composing mail and news) and for use with

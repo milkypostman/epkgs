@@ -1,5 +1,4 @@
 (:summary    "IRC client for Emacsen"
- :repository (git . "git://git.savannah.nongnu.org/riece.git")
  :created    "19980928"
  :updated    "2003"
  :license    "GPL-2"
@@ -15,4 +14,4 @@
 	       ("url" url url-irc)))
  :keywords   (irc riece)
  :homepage   "http://www.nongnu.org/riece"
- :wikipage   "http://www.emacswiki.org/RieceIrcClient")
+ :wikipage   "RieceIrcClient")

@@ -8,8 +8,7 @@
  :required   ((("cl" cl)
 	       ("emacs" help-macro)))
  :keywords   (occurrence region replace simultaneous)
- :homepage   "http://www.emacswiki.org/Iedit"
- :wikipage   "http://www.emacswiki.org/Iedit"
+ :wikipage   "Iedit"
  :commentary "\
 This package provides a more intuitive way of replace-string operation:
 

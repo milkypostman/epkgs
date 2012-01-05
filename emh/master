@@ -1,5 +1,4 @@
 (:summary    "MIME extender for mh-e"
- :repository (cvs . ":pserver:anonymous@cvs.m17n.org:/cvs/root")
  :created    "19931121"
  :updated    "2000"
  :license    "GPL-2"

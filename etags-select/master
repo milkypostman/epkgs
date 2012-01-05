@@ -8,8 +8,7 @@
  :required   ((("emacs" custom)
 	       ("etags" etags)))
  :keywords   (etags select tag tags)
- :homepage   "http://www.emacswiki.org/EtagsSelect"
- :wikipage   "http://www.emacswiki.org/EtagsSelect"
+ :wikipage   "EtagsSelect"
  :commentary "\
 Open a buffer with file/lines of exact-match tags shown.  Select one by
 going to a line and pressing return.  pop-tag-mark still works with this

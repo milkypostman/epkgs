@@ -1,5 +1,4 @@
 (:summary    "Weblog maintenance via XML-RPC APIs"
- :repository (bzr . "http://bazaar.launchpad.net/~hexmode/weblogger-el/trunk")
  :created    "2002"
  :updated    "2011"
  :license    "GPL-3"
@@ -11,7 +10,7 @@
 	       ("xml-rpc" xml-rpc)))
  :keywords   (blog blogger cms movable openweblog type weblog)
  :homepage   "https://launchpad.net/weblogger-el"
- :wikipage   "http://www.emacswiki.org/WebloggerMode"
+ :wikipage   "WebloggerMode"
  :commentary "\
 weblogger.el implements the Blogger, MetaWeblog, Movable Type, and
 LiveJournal APIs to talk to server-side weblog software.

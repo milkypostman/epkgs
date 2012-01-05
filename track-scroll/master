@@ -6,7 +6,7 @@
  :required   ((("emacs" mouse)))
  :keywords   (gui mouse user)
  :homepage   "http://www.skamphausen.de/cgi-bin/ska/track-scroll"
- :wikipage   "http://www.emacswiki.org/TrackScroll"
+ :wikipage   "TrackScroll"
  :commentary "\
 TrackScroll on the Web:
 Main page:

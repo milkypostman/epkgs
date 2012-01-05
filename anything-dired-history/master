@@ -1,5 +1,4 @@
-(:repository (git . "git://github.com/jixiuf/anything-dired-history.git")
- :created    "20110326"
+(:created    "20110326"
  :updated    "2011"
  :license    "GPL-3"
  :authors    (("Joseph" . "jixiuf@gmail.com"))

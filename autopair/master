@@ -1,5 +1,4 @@
 (:summary    "Automagically pair braces and quotes like TextMate"
- :repository (svn . "http://autopair.googlecode.com/svn")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"

@@ -11,7 +11,7 @@
  :required   ((("cc-mode" cc-engine)
 	       ("emacs" advice font-lock)))
  :keywords   (c change-log emacs-lisp font-lock html java mail news perl ruby tcl texinfo)
- :wikipage   "http://www.emacswiki.org/DevelockMode"
+ :wikipage   "DevelockMode"
  :commentary "\
 Develock is a minor mode which provides the ability to make font-
 lock highlight leading and trailing whitespace, long lines and

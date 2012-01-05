@@ -3,5 +3,4 @@
  :updated    "2003"
  :license    "GPL-2"
  :provided   (lorem-ipsum)
- :homepage   "http://www.emacswiki.org/LoremIpsum"
- :wikipage   "http://www.emacswiki.org/LoremIpsum")
+ :wikipage   "LoremIpsum")

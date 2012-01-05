@@ -1,5 +1,4 @@
 (:summary    "Simple Perforce-Emacs Integration"
- :repository (cvs . ":pserver:anonymous@p4el.cvs.sourceforge.net:/cvsroot/p4el")
  :license    "GPL-2"
  :provided   (p4)
  :required   ((("browse-url" browse-url)

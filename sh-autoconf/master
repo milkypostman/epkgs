@@ -7,7 +7,7 @@
  :provided   (sh-autoconf)
  :required   ((("sh-script" sh-script)))
  :keywords   (languages)
- :wikipage   "http://www.emacswiki.org/ShAutoconf"
+ :wikipage   "ShAutoconf"
  :commentary "\
 This code adds a shell type \"autoconf\" to sh-mode, for use in autoconf
 configure.in, acinclude.m4, etc.  This is good if you've got a lot of

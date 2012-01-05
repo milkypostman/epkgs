@@ -7,7 +7,7 @@
  :provided   (cite)
  :keywords   (mail news)
  :homepage   "http://www.ph.ed.ac.uk/~s0198183"
- :wikipage   "http://www.emacswiki.org/cite"
+ :wikipage   "cite"
  :commentary "\
 This is yet another citing engine for Emacs.  It's to trivial-cite
 what trivial-cite is to supercite (i.e. stripped down).  I wrote it

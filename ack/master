@@ -8,7 +8,7 @@
  :required   ((("compile" compile)
 	       ("grep" grep)))
  :homepage   "http://www.shellarchive.co.uk/content/emacs.html"
- :wikipage   "http://www.emacswiki.org/Ack"
+ :wikipage   "Ack"
  :commentary "\
 ack.el provides a simple compilation mode for the perl grep-a-like
 ack (http://petdance.com/ack/).

@@ -7,7 +7,7 @@
  :provided   (dict)
  :required   ((("cl" cl)))
  :keywords   (dict)
- :wikipage   "http://www.emacswiki.org/DictMode"
+ :wikipage   "DictMode"
  :commentary "\
 Make sure that your dict client is properly installed. It can be
 obtained from http://www.dict.org

@@ -9,8 +9,7 @@
 	       ("imenu" imenu)
 	       ("which-func" which-func)))
  :keywords   (compaq extensions hp languages tandem)
- :homepage   "http://www.emacswiki.org/DDLMode"
- :wikipage   "http://www.emacswiki.org/DDLMode"
+ :wikipage   "DDLMode"
  :commentary "\
 DDL is Tandem's DATA DEFINITION Language.
 

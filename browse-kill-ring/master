@@ -1,5 +1,4 @@
 (:summary    "Interactively insert items from kill-ring"
- :repository (git . "git://github.com/todesschaf/browse-kill-ring.git")
  :created    "20010407"
  :updated    "20021029"
  :license    "GPL-2"
@@ -10,7 +9,7 @@
 	       ("emacs" derived overlay)))
  :keywords   (convenience)
  :homepage   "https://github.com/todesschaf/browse-kill-ring"
- :wikipage   "http://www.emacswiki.org/BrowseKillRing"
+ :wikipage   "BrowseKillRing"
  :commentary "\
 Ever feel that 'C-y M-y M-y M-y ...' is not a great way of trying
 to find that piece of text you know you killed a while back?  Then

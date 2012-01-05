@@ -1,5 +1,4 @@
 (:summary    "Tree style completion intended for tablets"
- :repository (git . "git://github.com/jave/pocketcompletion.git")
  :provided   (pocketcompletion)
  :required   ((("cl" cl)
 	       ("predictive" dict-tree trie)))

@@ -1,12 +1,11 @@
-(:repository (git . "git://github.com/nflath/mv-shell.git")
- :created    "2010"
+(:created    "2010"
  :updated    "2010"
  :license    "GPL-3"
  :authors    (("Nathaniel Flath" . "fla0103@gmail.com"))
  :maintainer ("Nathaniel Flath" . "fla0103@gmail.com")
  :provided   (mv-shell)
  :homepage   "https://github.com/nflath/mv-shell"
- :wikipage   "http://www.emacswiki.org/mv-shell"
+ :wikipage   "mv-shell"
  :commentary "\
 mv-shell integrates with shell-mode in order to keep buffers in sync when
 moving files around.  If you enter a 'mv' command on a file that has a buffer opened,

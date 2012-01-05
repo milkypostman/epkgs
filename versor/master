@@ -1,5 +1,4 @@
 (:summary    "Versatile cursor"
- :repository (cvs . ":pserver:anonymous@emacs-versor.cvs.sourceforge.net:/cvsroot/emacs-versor")
  :created    "2004"
  :updated    "20071007"
  :license    "GPL-3"
@@ -14,4 +13,4 @@
 	       ("tmm" tmm)
 	       (nil handsfree-menu-additions handsfree-tools-menus languide-utils versor-joystick)))
  :keywords   (editing)
- :wikipage   "http://www.emacswiki.org/EmacsVersor")
+ :wikipage   "EmacsVersor")

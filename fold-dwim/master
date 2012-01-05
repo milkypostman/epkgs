@@ -8,4 +8,4 @@
  :required   ((("hideshow" hideshow)
 	       ("outline" outline)))
  :homepage   "http://www.dur.ac.uk/p.j.heslin/Software/Emacs"
- :wikipage   "http://www.emacswiki.org/FoldDwim")
+ :wikipage   "FoldDwim")

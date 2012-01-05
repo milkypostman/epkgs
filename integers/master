@@ -9,7 +9,7 @@
  :required   ((("thingatpt" thingatpt)))
  :keywords   (convenience)
  :homepage   "http://www.burlingtontelecom.net/~ashawley"
- :wikipage   "http://www.emacswiki.org/Integers"
+ :wikipage   "Integers"
  :commentary "\
 The functions understand all integers, including negative ones.
 Provided is a way to interactively increment or decrement an

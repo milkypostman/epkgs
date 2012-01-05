@@ -6,8 +6,7 @@
  :maintainer ("Mathias Dahl")
  :provided   (ps2pdf)
  :keywords   (pdf postscript ps)
- :homepage   "http://www.emacswiki.org/PostScriptToPDF"
- :wikipage   "http://www.emacswiki.org/PostScriptToPDF"
+ :wikipage   "PostScriptToPDF"
  :commentary "\
 Just a small hack I did while playing with GhostScript, trying to
 create PDF files from PostScript files.

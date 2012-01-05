@@ -1,5 +1,4 @@
 (:summary    "Keybinding Cheats"
- :repository (git . "git://github.com/rejeep/keats.git")
  :created    "2009"
  :updated    "2009"
  :license    "GPL-3"
@@ -9,7 +8,7 @@
  :required   ((("emacs" easymenu)))
  :keywords   (convenience help)
  :homepage   "https://github.com/rejeep/keats"
- :wikipage   "http://www.emacswiki.org/KeatsMode"
+ :wikipage   "KeatsMode"
  :commentary "\
 Keats is a mode for storing notes about Emacs key bindings so you
 easier remember them.

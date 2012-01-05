@@ -10,4 +10,4 @@
 	       (nil hmouse-drv hmouse-key hpath hui-mouse hversion hypb id-menubars pydoc set)))
  :keywords   (c oop tools)
  :homepage   "http://sourceforge.net/projects/oo-browser"
- :wikipage   "http://www.emacswiki.org/ObjectOrientedBrowser")
+ :wikipage   "ObjectOrientedBrowser")

@@ -1,5 +1,4 @@
 (:summary    "Drag stuff (lines, words, region, etc...) around"
- :repository (git . "git://github.com/rejeep/drag-stuff.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"
@@ -9,7 +8,7 @@
  :required   ((("cl" cl)))
  :keywords   (convenience speed)
  :homepage   "https://github.com/rejeep/drag-stuff"
- :wikipage   "http://www.emacswiki.org/DragStuff"
+ :wikipage   "DragStuff"
  :commentary "\
 drag-stuff is a minor mode for dragging stuff around in Emacs. You
 can drag lines, words and region.

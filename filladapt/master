@@ -4,4 +4,4 @@
  :provided   (filladapt)
  :required   ((("emacs" custom)))
  :homepage   "http://www.wonderworks.com"
- :wikipage   "http://www.emacswiki.org/FillAdapt")
+ :wikipage   "FillAdapt")

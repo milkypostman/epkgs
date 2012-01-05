@@ -7,8 +7,7 @@
  :provided   (gnus-propfont)
  :required   ((("cl" cl)))
  :keywords   (mail news)
- :homepage   "http://www.emacswiki.org/GnusPropFont"
- :wikipage   "http://www.emacswiki.org/GnusPropFont"
+ :wikipage   "GnusPropFont"
  :commentary "\
 This adds some faces to the *Article* buffer in Gnus. The main
 purpose of this package is to display articles with a proportional

@@ -1,5 +1,4 @@
 (:summary    "Minor mode for editing parentheses"
- :repository (darcs . "http://mumble.net/~campbell/emacs/paredit")
  :created    "20050731"
  :updated    "2011"
  :license    "GPL-3"
@@ -9,4 +8,4 @@
  :required   ((("emacs" newcomment)))
  :keywords   (lisp)
  :homepage   "http://mumble.net/~campbell/emacs/paredit/paredit.html"
- :wikipage   "http://www.emacswiki.org/ParEdit")
+ :wikipage   "ParEdit")

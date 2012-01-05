@@ -7,7 +7,7 @@
  :provided   (smart-compile)
  :keywords   (tools unix)
  :homepage   "http://homepage.mac.com/zenitani/comp-e.html"
- :wikipage   "http://www.emacswiki.org/SmartCompile"
+ :wikipage   "SmartCompile"
  :commentary "\
 This package provides `smart-compile' function.
 You can associates a particular file with a particular compile functions,

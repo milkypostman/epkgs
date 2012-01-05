@@ -1,5 +1,4 @@
-(:repository (git . "git://github.com/baron/nazna.el.git")
- :created    "20110111"
+(:created    "20110111"
  :license    "GPL-3"
  :authors    (("baron"))
  :maintainer ("baron")

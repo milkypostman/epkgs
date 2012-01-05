@@ -1,5 +1,4 @@
 (:summary    "Wanderlust bootstrap"
- :repository (cvs . ":pserver:anonymous@cvs.m17n.org:/cvs/root")
  :created    "2000"
  :updated    "2000"
  :license    "GPL-2"
@@ -33,4 +32,4 @@
 	       (nil bitmap mmgeneric spamfilter)))
  :keywords   (mail net\ news)
  :homepage   "http://www.gohome.org/wl"
- :wikipage   "http://www.emacswiki.org/WanderLust")
+ :wikipage   "WanderLust")

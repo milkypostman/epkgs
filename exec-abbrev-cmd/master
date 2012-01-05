@@ -7,7 +7,7 @@
  :provided   (exec-abbrev-cmd)
  :required   ((("cl" cl)))
  :homepage   "http://www.tsdh.de"
- :wikipage   "http://www.emacswiki.org/ExecAbbrevCmd"
+ :wikipage   "ExecAbbrevCmd"
  :commentary "\
 This file  includes the command  `exec-abbrev-cmd' which lets you  execute a
 command by  giving it in an  abbreviated form, where  the abbreviation takes

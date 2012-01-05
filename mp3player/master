@@ -7,7 +7,7 @@
 	       ("emacs" dired font-lock wid-edit widget)
 	       ("thingatpt" thingatpt)))
  :homepage   "http://emacsmp3player.sourceforge.net"
- :wikipage   "http://www.emacswiki.org/MpthreePlayer"
+ :wikipage   "MpthreePlayer"
  :commentary "\
 Some codes and ideas borrowed from mpg123 by HIROSE Yuuji [yuuji@gentei.org]
 and from mp3-tools by Steve Kemp <skx@tardis.ed.ac.uk>

@@ -7,8 +7,7 @@
  :provided   (eight-puzzle)
  :required   ((("cl" cl)))
  :keywords   (eight\ puzzle game)
- :homepage   "http://www.emacswiki.org/EightPuzzle"
- :wikipage   "http://www.emacswiki.org/EightPuzzle"
+ :wikipage   "EightPuzzle"
  :commentary "\
 If you use images instead of letters, you should set the varible:
 

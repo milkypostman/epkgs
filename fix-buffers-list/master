@@ -3,8 +3,7 @@
  :updated    "2004"
  :license    "GPL-2"
  :provided   (fix-buffers-list)
- :homepage   "http://www.emacswiki.org/FixBuffersList"
- :wikipage   "http://www.emacswiki.org/FixBuffersList"
+ :wikipage   "FixBuffersList"
  :commentary "\
 This module changes the look of Buffers list and Buffer menu.
 

@@ -12,7 +12,7 @@
 	       ("thingatpt" thingatpt)
 	       (nil lisp-doc rep\.structures)))
  :homepage   "http://www.davep.org/emacs"
- :wikipage   "http://www.emacswiki.org/SawFishMode"
+ :wikipage   "SawFishMode"
  :commentary "\
 sawfish.el is an emacs mode for writing code for the sawfish window
 manager <URL:http://sawmill.sourceforge.net/>. As well as providing a

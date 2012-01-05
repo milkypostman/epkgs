@@ -1,5 +1,4 @@
 (:summary    "Filter for echo area status messages"
- :repository (git . "git://github.com/nschum/echo-pick.el.git")
  :created    "2008"
  :updated    "2008"
  :license    "GPL-2"

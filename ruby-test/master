@@ -1,8 +1,7 @@
 (:summary    "Test runner for ruby unit tests"
  :license    "GPL-2"
  :provided   (ruby-test)
- :homepage   "http://www.emacswiki.org/RubyTestMode"
- :wikipage   "http://www.emacswiki.org/RubyTestMode"
+ :wikipage   "RubyTestMode"
  :commentary "\
 This mode provides commands for running ruby tests. The output is
 shown in separate buffer '*Ruby-Test*' in ruby-test

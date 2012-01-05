@@ -1,5 +1,4 @@
 (:summary    "Dynamic filesystem explorer and buffer switcher"
- :repository (git . "git://github.com/sjbach/lusty-emacs.git")
  :created    "2010"
  :updated    "2010"
  :provided   (lusty-explorer)
@@ -8,7 +7,7 @@
 	       ("ido" ido)))
  :keywords   (convenience files matching)
  :homepage   "https://github.com/sjbach/lusty-emacs"
- :wikipage   "http://www.emacswiki.org/LustyExplorer"
+ :wikipage   "LustyExplorer"
  :commentary "\
 -----------
 

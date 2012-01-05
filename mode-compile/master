@@ -9,7 +9,7 @@
 	       ("compile" compile)
 	       ("reporter" reporter)))
  :keywords   (compilation compile languages modes)
- :wikipage   "http://www.emacswiki.org/ModeCompile"
+ :wikipage   "ModeCompile"
  :commentary "\
 This package needs a new maintainer.  Please contact the original author if
 you are interested.

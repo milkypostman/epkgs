@@ -7,6 +7,6 @@
  :provided   (eon)
  :required   ((("cl" cl)))
  :keywords   (oop)
- :wikipage   "http://www.emacswiki.org/EonObjects"
+ :wikipage   "EonObjects"
  :commentary "\
 FIXME")

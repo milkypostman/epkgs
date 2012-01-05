@@ -1,5 +1,4 @@
 (:summary    "Numbered window shortcuts"
- :repository (git . "git://github.com/nschum/window-numbering.el.git")
  :created    "2007"
  :updated    "2007"
  :license    "GPL-2"
@@ -9,7 +8,7 @@
  :required   ((("cl" cl)))
  :keywords   (faces matching)
  :homepage   "http://nschum.de/src/emacs/window-numbering-mode"
- :wikipage   "http://www.emacswiki.org/WindowNumberingMode"
+ :wikipage   "WindowNumberingMode"
  :commentary "\
 Enable window-numbering-mode and use M-1 through M-0 to navigate.
 

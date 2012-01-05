@@ -9,8 +9,7 @@
 	       ("ring+" ring+))
 	      (("emacs" mwheel)))
  :keywords   (cycle higher-order keys repeat)
- :homepage   "http://www.emacswiki.org/DoReMi"
- :wikipage   "http://www.emacswiki.org/DoReMi"
+ :wikipage   "DoReMi"
  :commentary "\
 Do Re Mi: Incremental change using arrow keys or mouse wheel.
 

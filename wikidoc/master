@@ -5,8 +5,7 @@
  :authors    (("Nic Ferrier" . "nic@ferrier.me.uk"))
  :maintainer ("Nic Ferrier" . "nic@ferrier.me.uk")
  :keywords   (lisp)
- :homepage   "http://www.emacswiki.org/WikiDoc"
- :wikipage   "http://www.emacswiki.org/WikiDoc"
+ :wikipage   "WikiDoc"
  :commentary "\
 This is for making documentation from Elisp doc strings. It is
 intended as an alternative to using info.

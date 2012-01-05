@@ -8,7 +8,7 @@
 	       ("cl" cl)))
  :keywords   (cgi scripting slow web)
  :homepage   "http://emarsden.chez.com/downloads"
- :wikipage   "http://www.emacswiki.org/CommonGatewayInterface"
+ :wikipage   "CommonGatewayInterface"
  :commentary "\
 People who like this sort of thing will find this the sort of 
 thing they like.                           -- Abraham Lincoln

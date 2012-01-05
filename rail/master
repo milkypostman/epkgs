@@ -1,5 +1,4 @@
 (:summary    "Replace Agent-string Internal Library"
- :repository (git . "git://github.com/uwabami/rail.git")
  :created    "1999"
  :updated    "1999"
  :license    "GPL-2"

@@ -9,5 +9,4 @@
 	       ("emacs" overlay)
 	       ("tmm" tmm)))
  :keywords   (menu)
- :homepage   "http://www.emacswiki.org/TextMenu"
- :wikipage   "http://www.emacswiki.org/TextMenu")
+ :wikipage   "TextMenu")

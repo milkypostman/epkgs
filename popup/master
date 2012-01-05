@@ -1,5 +1,4 @@
 (:summary    "Visual Popup User Interface"
- :repository (git . "git://github.com/m2ym/popup-el.git")
  :created    "2009"
  :updated    "2011"
  :license    "GPL-3"
@@ -9,4 +8,4 @@
  :required   ((("cl" cl)))
  :keywords   (lisp)
  :homepage   "https://github.com/m2ym/popup-el"
- :wikipage   "http://www.emacswiki.org/PopUp")
+ :wikipage   "PopUp")

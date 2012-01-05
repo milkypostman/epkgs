@@ -1,5 +1,4 @@
 (:summary    "The Emacs Planner"
- :repository (git . "git://repo.or.cz/planner-el.git")
  :created    "2001"
  :updated    "2010"
  :license    "GPL-3"
@@ -38,7 +37,7 @@
 	       (nil gnats xtla)))
  :keywords   (hypermedia)
  :homepage   "http://www.wjsullivan.net/PlannerMode.htm"
- :wikipage   "http://www.emacswiki.org/PlannerMode"
+ :wikipage   "PlannerMode"
  :commentary "\
 _* Commentary
 

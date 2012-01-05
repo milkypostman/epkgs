@@ -1,5 +1,4 @@
 (:summary    "Some extensions to ert"
- :repository (git . "git://github.com/mrc/ert-extras.git")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-3"

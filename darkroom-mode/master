@@ -1,5 +1,4 @@
-(:repository (hg . "http://bitbucket.org/phromo/darkroom-mode")
- :authors    (("Martin Svenson"))
+(:authors    (("Martin Svenson"))
  :maintainer ("Martin Svenson")
  :provided   (darkroom-mode frame-local-vars)
  :required   ((("cl" cl)

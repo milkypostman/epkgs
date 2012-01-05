@@ -1,5 +1,4 @@
-(:repository (git . "git://github.com/caldwell/commit-patch.git")
- :created    "2011"
+(:created    "2011"
  :updated    "2011"
  :provided   (commit-patch-buffer)
  :required   ((("log-edit" log-edit)

@@ -4,8 +4,7 @@
  :license    "GPL-2"
  :provided   (scrl-margs)
  :keywords   (scroll)
- :homepage   "http://www.emacswiki.org/ScrollMargs"
- :wikipage   "http://www.emacswiki.org/ScrollMargs"
+ :wikipage   "ScrollMargs"
  :commentary "\
 A minor mode that maintain margins between the cursor and the top and
   bottom of a window. It scrolls the window if the cursor is moved to close

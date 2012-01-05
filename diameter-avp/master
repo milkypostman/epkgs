@@ -2,5 +2,4 @@
  :maintainer ("ffrances")
  :provided   (diameter-avp)
  :required   ((("hex-util" hex-util)))
- :homepage   "http://www.emacswiki.org/diameter-avp"
- :wikipage   "http://www.emacswiki.org/diameter-avp")
+ :wikipage   "diameter-avp")

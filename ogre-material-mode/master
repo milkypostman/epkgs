@@ -1,5 +1,4 @@
 (:summary    "Mode for editing Ogre3D .material scripts"
- :repository (hg . "http://bitbucket.org/sevas/ogre-material-mode")
  :created    "201002"
  :updated    "2010"
  :authors    ((nil . "f.degroef@gmail.com"))

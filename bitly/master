@@ -1,5 +1,4 @@
 (:summary    "Shorten URLs with bit.ly from emacs"
- :repository (git . "git://github.com/vivekhaldar/bitly.el.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-2"
@@ -9,7 +8,7 @@
  :required   ((("thingatpt" thingatpt)
 	       ("url" url)))
  :homepage   "https://github.com/vivekhaldar/bitly.el"
- :wikipage   "http://www.emacswiki.org/BitLy"
+ :wikipage   "BitLy"
  :commentary "\
 bitly.el allows shortening URLs through the api the bit.ly service
 provides. See http://code.google.com/p/bitly-api/ for info about

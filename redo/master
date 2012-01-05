@@ -5,7 +5,7 @@
  :provided   (redo)
  :keywords   (extensions lisp)
  :homepage   "http://www.wonderworks.com"
- :wikipage   "http://www.emacswiki.org/RedoMode"
+ :wikipage   "RedoMode"
  :commentary "\
 Derived partly from lisp/prim/simple.el in XEmacs.
 

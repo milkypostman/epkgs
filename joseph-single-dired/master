@@ -1,5 +1,4 @@
-(:repository (git . "git://github.com/jixiuf/joseph-single-dired.git")
- :created    "20110403"
+(:created    "20110403"
  :updated    "2011"
  :license    "GPL-3"
  :authors    (("Joseph" . "jixiuf@gmail.com"))

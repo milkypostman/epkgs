@@ -8,8 +8,7 @@
  :provided   (dabbrev-expand-multiple)
  :required   ((("dabbrev" dabbrev)))
  :keywords   (dabbrev)
- :homepage   "http://www.emacswiki.org/DabbrevExpandMultiple"
- :wikipage   "http://www.emacswiki.org/DabbrevExpandMultiple"
+ :wikipage   "DabbrevExpandMultiple"
  :commentary "\
 Dynamic abbrev for multiple selection.
 This package tested on Emacs 22.

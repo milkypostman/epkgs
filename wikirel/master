@@ -8,8 +8,7 @@
  :required   ((("browse-url" browse-url)
 	       ("oddmuse" oddmuse)))
  :keywords   (hypermedia)
- :homepage   "http://www.emacswiki.org/WikiRel"
- :wikipage   "http://www.emacswiki.org/WikiRel"
+ :wikipage   "WikiRel"
  :commentary "\
 The library wikirel.el opens pages on Emacs Wiki in a Web browser
 or in Oddmuse mode based on the context the user is currently

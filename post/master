@@ -10,7 +10,7 @@
 	       ("emacs" derived easymenu)))
  :keywords   (mail)
  :homepage   "http://post-mode.sourceforge.net"
- :wikipage   "http://www.emacswiki.org/PostMode"
+ :wikipage   "PostMode"
  :commentary "\
 This is a major mode for use with mutt (http://www.mutt.org/), slrn, or most
 email and newsreaders that allow you to use an external editor.

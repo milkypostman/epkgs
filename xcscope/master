@@ -1,5 +1,4 @@
-(:repository (cvs . ":pserver:anonymous@cscope.cvs.sourceforge.net:/cvsroot/cscope")
- :created    "20000419"
+(:created    "20000419"
  :updated    "20020404"
  :license    "GPL-2"
  :authors    (("Darryl Okahata"))

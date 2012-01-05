@@ -1,5 +1,4 @@
 (:summary    "Import Textmate macros into yasnippet syntax"
- :repository (git . "git://github.com/mlf176f2/textmate-to-yas.el.git")
  :created    "20101020"
  :updated    "20111122"
  :license    "GPL-3"

@@ -1,5 +1,4 @@
 (:summary    "Major mode for editing Clay source files"
- :repository (hg . "http://bitbucket.org/prafulla/clay-mode")
  :created    "20100519"
  :updated    "2010"
  :license    "GPL-2"

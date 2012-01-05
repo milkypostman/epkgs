@@ -1,5 +1,4 @@
 (:summary    "Build functions which contextually jump between files"
- :repository (git . "git://github.com/eschulte/jump.el.git")
  :created    "20080821"
  :updated    "2008"
  :license    "GPL-3"
@@ -11,7 +10,7 @@
 	       (nil inflections)))
  :keywords   (convenience navigation project)
  :homepage   "https://github.com/eschulte/jump.el"
- :wikipage   "http://www.emacswiki.org/Jump"
+ :wikipage   "Jump"
  :commentary "\
 This library is intended to aid in the construction of functions
 for navigating projects.  The `defjump' function using a hopefully

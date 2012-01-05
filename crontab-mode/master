@@ -5,7 +5,7 @@
  :maintainer ("Harley Gorrell" . "harley@mahalito.net")
  :provided   (crontab-mode)
  :keywords   (cron crontab emacs)
- :wikipage   "http://www.emacswiki.org/CrontabMode"
+ :wikipage   "CrontabMode"
  :commentary "\
 * I want to keep my crontabs under rcs to keep a history of
   the file.  Editing them with 'crontab -e' is rather

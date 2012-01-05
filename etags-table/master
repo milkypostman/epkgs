@@ -8,8 +8,7 @@
  :required   ((("emacs" custom)
 	       ("etags" etags)))
  :keywords   (etags tag tags)
- :homepage   "http://www.emacswiki.org/EtagsTable"
- :wikipage   "http://www.emacswiki.org/EtagsTable"
+ :wikipage   "EtagsTable"
  :commentary "\
 This extension sets the tags table(s) based on the current file.
 `etags-table-alist' is a list of lists, where the car of each sublist is

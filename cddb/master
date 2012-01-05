@@ -1,5 +1,4 @@
 (:summary    "Cddb interface"
- :repository (git . "git://github.com/larsmagne/cddb.el.git")
  :created    "1998"
  :updated    "2011"
  :license    "GPL-2"

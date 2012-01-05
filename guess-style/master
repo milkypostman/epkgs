@@ -1,5 +1,4 @@
 (:summary    "Automatic setting of code style variables"
- :repository (git . "git://github.com/nschum/guess-style.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-2"
@@ -9,7 +8,7 @@
  :required   ((("cl" cl)))
  :keywords   (c files languages)
  :homepage   "http://nschum.de/src/emacs/guess-style"
- :wikipage   "http://www.emacswiki.org/GuessStyle"
+ :wikipage   "GuessStyle"
  :commentary "\
 Add the following to your .emacs file:
 

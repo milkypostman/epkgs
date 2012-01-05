@@ -1,5 +1,4 @@
 (:summary    "Mode-specific scratch buffers"
- :repository (git . "git://github.com/ieure/scratch-el.git")
  :created    "1020"
  :updated    "2010"
  :authors    (("Ian Eure" . "ian.eure@gmail.com"))

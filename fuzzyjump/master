@@ -1,5 +1,4 @@
 (:summary    "Jump to where you (almost) want"
- :repository (git . "git://github.com/tomoya/fuzzyjump.el.git")
  :created    "2008"
  :updated    "2008"
  :license    "GPL-2"

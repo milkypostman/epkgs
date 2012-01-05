@@ -1,5 +1,4 @@
 (:summary    "Browse Python HTML documentation from Emacs"
- :repository (hg . "https://hg.furius.ca/public/haddoc")
  :created    "2006"
  :updated    "2006"
  :license    "GPL-2"

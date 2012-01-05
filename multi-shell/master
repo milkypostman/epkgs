@@ -9,8 +9,7 @@
 	       ("cl" cl)
 	       ("shell" shell)))
  :keywords   (multi-shell shell)
- :homepage   "http://www.emacswiki.org/MultiShell"
- :wikipage   "http://www.emacswiki.org/MultiShell"
+ :wikipage   "MultiShell"
  :commentary "\
 Multi-Shell Manager
 

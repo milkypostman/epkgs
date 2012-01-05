@@ -7,7 +7,7 @@
  :provided   (joystick)
  :keywords   (hardware)
  :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/hardware"
- :wikipage   "http://www.emacswiki.org/JoyStick"
+ :wikipage   "JoyStick"
  :commentary "\
 This listens (and occasionally talks) to a companion process which
 is implemented by joylisp.c.

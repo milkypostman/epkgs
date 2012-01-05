@@ -1,5 +1,4 @@
 (:summary    "Convenient editing of in-code documentation"
- :repository (git . "git://github.com/nschum/doc-mode.git")
  :created    "2007"
  :updated    "2009"
  :license    "GPL-2"
@@ -12,7 +11,7 @@
 	       ("semantic" semantic)))
  :keywords   (convenience tools)
  :homepage   "http://nschum.de/src/emacs/doc-mode"
- :wikipage   "http://www.emacswiki.org/DocMode"
+ :wikipage   "DocMode"
  :commentary "\
 This mode requires the Semantic package to be installed and running:
 http://cedet.sourceforge.net/

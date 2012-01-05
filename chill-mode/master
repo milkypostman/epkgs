@@ -7,4 +7,4 @@
 	       (nil func-menu)))
  :keywords   (languages)
  :homepage   "http://www.exd.at/~hoerandl/chill.html"
- :wikipage   "http://www.emacswiki.org/ChillModePackage")
+ :wikipage   "ChillModePackage")

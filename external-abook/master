@@ -3,5 +3,4 @@
  :updated    "2008"
  :license    "as-is"
  :provided   (external-abook)
- :homepage   "http://www.emacswiki.org/ExternalAbook"
- :wikipage   "http://www.emacswiki.org/ExternalAbook")
+ :wikipage   "ExternalAbook")

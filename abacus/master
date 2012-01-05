@@ -6,6 +6,6 @@
  :maintainer ("Valvassori Moïse" . "moise@valvassori.org")
  :provided   (abacus)
  :keywords   (games)
- :wikipage   "http://www.emacswiki.org/AbacusMode"
+ :wikipage   "AbacusMode"
  :commentary "\
 This is an Abacus calculator")

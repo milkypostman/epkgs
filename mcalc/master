@@ -4,4 +4,4 @@
  :provided   (mcalc)
  :required   ((("cl" cl)))
  :homepage   "http://www.ii.uib.no/~hove/lisp/index.html"
- :wikipage   "http://www.emacswiki.org/SimpleRpnCalculator")
+ :wikipage   "SimpleRpnCalculator")

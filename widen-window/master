@@ -8,8 +8,7 @@
  :required   ((("cl" cl)
 	       ("emacs" easy-mmode)))
  :keywords   (convenience)
- :homepage   "http://www.emacswiki.org/WidenWindow"
- :wikipage   "http://www.emacswiki.org/WidenWindow"
+ :wikipage   "WidenWindow"
  :commentary "\
 This minor mode, widen window mode, provides a function that widen
 selected window automatically.

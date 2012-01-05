@@ -12,7 +12,7 @@
 	       ("shell" shell)
 	       ("tempo" tempo)))
  :keywords   (matlab)
- :wikipage   "http://www.emacswiki.org/MatlabMode"
+ :wikipage   "MatlabMode"
  :commentary "\
 This major mode for GNU Emacs provides support for editing MATLAB dot-m
 files.  It automatically indents for block structures, line continuations

@@ -3,5 +3,4 @@
  :updated    "2008"
  :license    "as-is"
  :provided   (bitlbee)
- :homepage   "http://www.emacswiki.org/BitlBee"
- :wikipage   "http://www.emacswiki.org/BitlBee")
+ :wikipage   "BitlBee")

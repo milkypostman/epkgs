@@ -5,7 +5,7 @@
  :maintainer ("Dr. Rafael Sepúlveda." . "drs@gnulinux.org.mx")
  :provided   (apt-sources)
  :required   ((("autoinsert" autoinsert)))
- :wikipage   "http://www.emacswiki.org/AptSources"
+ :wikipage   "AptSources"
  :commentary "\
 This mode is for editing '/etc/apt/sources.list', the APT (Advanced
 Package Tool) configuration file found on Debian systems.

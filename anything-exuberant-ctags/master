@@ -1,5 +1,4 @@
 (:summary    "Exuberant ctags anything.el interface"
- :repository (git . "git://github.com/k1LoW/anything-exuberant-ctags.git")
  :created    "20110809"
  :updated    "2011"
  :license    "GPL-3"

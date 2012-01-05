@@ -6,8 +6,7 @@
  :provided   (scheme48)
  :required   ((("cmuscheme" cmuscheme)
 	       ("scheme" scheme)))
- :homepage   "http://www.emacswiki.org/Scheme48Mode"
- :wikipage   "http://www.emacswiki.org/Scheme48Mode"
+ :wikipage   "Scheme48Mode"
  :commentary "\
 This file provides `scheme48-mode', a major mode for improved
 interaction with Scheme48. It's the same as the canonical

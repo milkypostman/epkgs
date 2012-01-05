@@ -9,7 +9,7 @@
 	       ("scheme" scheme)
 	       ("thingatpt" thingatpt)))
  :homepage   "http://www.neilvandyke.org/quack"
- :wikipage   "http://www.emacswiki.org/QuackMode"
+ :wikipage   "QuackMode"
  :commentary "\
 INTRODUCTION:
 

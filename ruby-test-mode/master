@@ -1,5 +1,4 @@
 (:summary    "Minor mode for Behaviour and Test Driven"
- :repository (git . "git://github.com/r0man/ruby-test-mode.git")
  :created    "2009"
  :updated    "2009"
  :license    "GPL-2"
@@ -9,4 +8,4 @@
  :provided   (ruby-test-mode)
  :keywords   (rspec ruby test unit)
  :homepage   "https://github.com/r0man/ruby-test-mode"
- :wikipage   "http://www.emacswiki.org/RubyTestMode")
+ :wikipage   "RubyTestMode")

@@ -1,5 +1,4 @@
 (:summary    "Interfacing with last.fm"
- :repository (git . "git://github.com/larsmagne/scrobble.el.git")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-3"

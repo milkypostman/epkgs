@@ -6,8 +6,7 @@
  :maintainer ("Mathias Dahl")
  :provided   (hide-region)
  :keywords   (hide region)
- :homepage   "http://www.emacswiki.org/HideRegion"
- :wikipage   "http://www.emacswiki.org/HideRegion"
+ :wikipage   "HideRegion"
  :commentary "\
 The function `hide-region-hide' hides the region. You can hide many
 different regions and they will be \"marked\" by two configurable

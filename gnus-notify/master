@@ -2,8 +2,7 @@
  :authors    (("Mark Triggs" . "mark@dishevelled.net"))
  :maintainer ("Mark Triggs" . "mark@dishevelled.net")
  :provided   (gnus-notify)
- :homepage   "http://www.emacswiki.org/GnusNotify"
- :wikipage   "http://www.emacswiki.org/GnusNotify"
+ :wikipage   "GnusNotify"
  :commentary "\
 This code provides modeline notification of when certain groups contain
 unread messages. Groups for whom unread messages should be indicated are

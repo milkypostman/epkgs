@@ -1,5 +1,4 @@
 (:summary    "Basic darcsum feelalike for Git"
- :repository (git . "git://github.com/chneukirchen/gitsum.git")
  :created    "2008"
  :updated    "2008"
  :license    "GPL-3"

@@ -9,7 +9,7 @@
 	       ("which-func" which-func)))
  :keywords   (languages)
  :homepage   "http://admb-project.org/community/editing-tools/emacs/admb.el/view"
- :wikipage   "http://www.emacswiki.org/AdmbMode"
+ :wikipage   "AdmbMode"
  :commentary "\
 Major mode for editing AD Model Builder (ADMB) code. Provides syntax highlighting, IDE compilation and file
 manipulation, outline code navigation, templates, and smaller tools. The syntax groups for highlighting are:

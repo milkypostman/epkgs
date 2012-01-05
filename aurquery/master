@@ -1,5 +1,4 @@
 (:summary    "Interface to the Arch User Repository"
- :repository (git . "git://github.com/CMB/aurquery-el.git")
  :created    "2008"
  :updated    "2008"
  :license    "GPL-2"

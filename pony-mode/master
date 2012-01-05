@@ -1,5 +1,4 @@
 (:summary    "Minor mode for working with Django projects"
- :repository (git . "git://github.com/davidmiller/pony-mode.git")
  :created    "20110220"
  :updated    "2011"
  :license    "GPL-2"

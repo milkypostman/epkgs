@@ -1,5 +1,4 @@
 (:summary    "Assign files to projects, programatically"
- :repository (git . "git://github.com/jrockway/eproject.git")
  :created    "20081120"
  :updated    "2009"
  :license    "GPL-2"
@@ -12,7 +11,7 @@
 	       ("iswitchb" iswitchb)))
  :keywords   (programming projects)
  :homepage   "https://github.com/jrockway/eproject"
- :wikipage   "http://www.emacswiki.org/eproject"
+ :wikipage   "eproject"
  :commentary "\
 Eproject is an extension that lets you group related files together
 as projects.  It aims to be as unobtrusive as possible -- no new

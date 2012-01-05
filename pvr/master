@@ -1,5 +1,4 @@
 (:summary    "Personal Video Recorder"
- :repository (git . "git://github.com/larsmagne/pvr.el.git")
  :created    "2004"
  :updated    "2004"
  :license    "GPL-2"

@@ -4,8 +4,7 @@
  :license    "GPL-2"
  :provided   (fuzzy-format)
  :required   ((("cl" cl)))
- :homepage   "http://www.emacswiki.org/FuzzyFormat"
- :wikipage   "http://www.emacswiki.org/FuzzyFormat"
+ :wikipage   "FuzzyFormat"
  :commentary "\
 This minor mode, fuzzy format mode, provides check indent format (tabs or spaces) of current buffer.
 And it set indent-tabs-mode and format code automatically.

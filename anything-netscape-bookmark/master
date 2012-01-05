@@ -1,5 +1,4 @@
 (:summary    "Anything interface for netscape format bookmark file"
- :repository (git . "git://github.com/tm8st/emacs-anything-netscape-bookmark.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-2"

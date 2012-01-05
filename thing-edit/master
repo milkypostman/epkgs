@@ -8,8 +8,7 @@
  :required   ((("paredit" paredit)
 	       ("thingatpt" thingatpt)))
  :keywords   (edit thingatpt)
- :homepage   "http://www.emacswiki.org/ThingEdit"
- :wikipage   "http://www.emacswiki.org/ThingEdit"
+ :wikipage   "ThingEdit"
  :commentary "\
 This package is some useful functions that base on `thingatpt.el'.
 Those function can copy or paste special data object quickly

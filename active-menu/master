@@ -2,7 +2,7 @@
  :provided   (active-menu)
  :required   ((("emacs" timer)))
  :homepage   "http://www.skamphausen.de/cgi-bin/ska/Software"
- :wikipage   "http://www.emacswiki.org/ActiveMenu"
+ :wikipage   "ActiveMenu"
  :commentary "\
 Prerequisites:
 

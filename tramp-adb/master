@@ -1,5 +1,4 @@
 (:summary    "Functions for calling Android Debug Bridge from Tramp"
- :repository (git . "git://github.com/juergenhoetzel/tramp-adb.git")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-3"

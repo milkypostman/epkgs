@@ -6,8 +6,7 @@
  :maintainer ("S. Irie")
  :provided   (pos-tip)
  :keywords   (tooltip)
- :homepage   "http://www.emacswiki.org/PosTip"
- :wikipage   "http://www.emacswiki.org/PosTip"
+ :wikipage   "PosTip"
  :commentary "\
 The standard library tooltip.el provides the function for displaying
 a tooltip at mouse position which allows users to easily show it.

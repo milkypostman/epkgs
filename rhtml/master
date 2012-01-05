@@ -1,5 +1,4 @@
-(:repository (git . "git://github.com/eschulte/rhtml.git")
- :license    "GPL-2"
+(:license    "GPL-2"
  :provided   (rhtml-erb rhtml-fonts rhtml-mode rhtml-navigation rhtml-ruby-hook rhtml-sgml-hacks)
  :required   ((("cl" cl)
 	       ("ruby-mode" ruby-mode)

@@ -1,5 +1,4 @@
 (:summary    "Support for Google Contacts in Emacs"
- :repository (git . "git://git.naquadah.org/google-contacts.el.git")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-3"

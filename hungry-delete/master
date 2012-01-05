@@ -1,12 +1,11 @@
-(:repository (git . "git://github.com/nflath/hungry-delete.git")
- :created    "2009"
+(:created    "2009"
  :updated    "2009"
  :license    "GPL-3"
  :authors    (("Nathaniel Flath" . "flat0103@gmail.com"))
  :maintainer ("Nathaniel Flath" . "flat0103@gmail.com")
  :provided   (hungry-delete)
  :homepage   "https://github.com/nflath/hungry-delete"
- :wikipage   "http://www.emacswiki.org/hungry-delete"
+ :wikipage   "hungry-delete"
  :commentary "\
 This file contains all the necessary functions and macros, taken from
 cc-mode, to implement hungry deletion without relying on cc-mode.  This

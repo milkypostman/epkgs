@@ -7,7 +7,7 @@
  :provided   (hobo)
  :keywords   (comm remote scp tramp)
  :homepage   "http://www.northbound-train.com"
- :wikipage   "http://www.emacswiki.org/HoboMode"
+ :wikipage   "HoboMode"
  :commentary "\
 Hobo facilitates editing remote files by automating file transfers
  via SCP, relying on SSH-AGENT (or RSA/DSA) to authenticate.  Hobo

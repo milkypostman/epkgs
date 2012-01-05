@@ -8,8 +8,7 @@
  :provided   (df-mode)
  :required   ((("emacs" timer)))
  :keywords   (tools unix)
- :homepage   "http://www.emacswiki.org/DfMode"
- :wikipage   "http://www.emacswiki.org/DfMode"
+ :wikipage   "DfMode"
  :commentary "\
 This is an extension to display disk usage in the mode line.  Disk
  space remaining is updated every `df-interval' seconds.

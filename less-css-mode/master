@@ -1,5 +1,4 @@
 (:summary    "Major mode for editing LESS CSS files (lesscss.org)"
- :repository (git . "git://github.com/purcell/less-css-mode.git")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-2"
@@ -11,6 +10,7 @@
 	       ("flymake" flymake)))
  :keywords   (css less mode)
  :homepage   "https://github.com/purcell/less-css-mode"
+ :wikipage   "LessCssMode"
  :commentary "\
 This mode provides syntax highlighting for LESS CSS files, plus
 optional support for `flymake-mode' and compilation of .less files

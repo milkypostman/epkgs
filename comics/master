@@ -5,7 +5,7 @@
  :provided   (comics)
  :required   ((("calendar" calendar)))
  :homepage   "http://vh213601.truman.edu/~belanger/emacs.html"
- :wikipage   "http://www.emacswiki.org/ComicsMode"
+ :wikipage   "ComicsMode"
  :commentary "\
 QUICK INTRO:
 ============

@@ -1,5 +1,4 @@
 (:summary    "A MIME encoding/decoding library"
- :repository (cvs . ":pserver:anonymous@cvs.m17n.org:/cvs/root")
  :created    "19950625"
  :updated    "1999"
  :license    "GPL-2"

@@ -7,7 +7,7 @@
  :provided   (undoc)
  :keywords   (word word\ processors\ )
  :homepage   "http://www.ccs.neu.edu/home/guttman"
- :wikipage   "http://www.emacswiki.org/UnDoc"
+ :wikipage   "UnDoc"
  :commentary "\
 We first substitute reasonable ASCII equivalents for some MS Word 
 special characters, after which we extract the ASCII substrings and

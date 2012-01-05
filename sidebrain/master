@@ -1,5 +1,4 @@
 (:summary    "Programmer's memory aide"
- :repository (cvs . ":pserver:anonymous@sidebrain.cvs.sourceforge.net:/cvsroot/sidebrain")
  :updated    "20060505"
  :license    "GPL-2"
  :authors    (("John Sturdy"))
@@ -9,4 +8,4 @@
 	       ("time-date" time-date)
 	       ("xml" xml)))
  :homepage   "http://sidebrain.sourceforge.net"
- :wikipage   "http://www.emacswiki.org/SideBrain")
+ :wikipage   "SideBrain")

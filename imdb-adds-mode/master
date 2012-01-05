@@ -6,4 +6,4 @@
  :required   ((("emacs" easymenu)))
  :keywords   (additions imdb major-mode movies submission)
  :homepage   "http://home.snafu.de/ohei"
- :wikipage   "http://www.emacswiki.org/IMDbAddsMode")
+ :wikipage   "IMDbAddsMode")

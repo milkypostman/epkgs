@@ -6,8 +6,7 @@
  :maintainer ("Doug Alcorn" . "doug@lathi.net")
  :provided   (date-calc)
  :keywords   (calendar ical schedule)
- :homepage   "http://www.emacswiki.org/DateCalc"
- :wikipage   "http://www.emacswiki.org/DateCalc"
+ :wikipage   "DateCalc"
  :commentary "\
 After several times wishing for the Perl Date::Calc module in
 elisp, I finally decided to just re-write the code.  I'm not done

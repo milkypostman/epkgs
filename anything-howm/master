@@ -1,5 +1,4 @@
-(:repository (git . "git://github.com/wakaran/anything-howm.git")
- :created    "2011"
+(:created    "2011"
  :updated    "2011"
  :license    "GPL-3"
  :authors    (("kitokitoki" . "mori.dev.asdf@gmail.com"))

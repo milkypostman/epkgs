@@ -1,5 +1,4 @@
 (:summary    "Persistent caching for Emacs"
- :repository (git . "git://github.com/sigma/pcache.git")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-2"

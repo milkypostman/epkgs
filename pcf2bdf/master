@@ -6,7 +6,7 @@
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (pcf2bdf)
  :keywords   (data)
- :wikipage   "http://www.emacswiki.org/Pcf2Bdf"
+ :wikipage   "Pcf2Bdf"
  :commentary "\
 This is a bit of fun running the pcf2bdf program on .pcf font files to
 see bdf source.  The main aim is to see sizes, comments, copyright

@@ -1,5 +1,4 @@
 (:summary    "Helper functions for working with qooxdoo"
- :repository (git . "git://github.com/jdodds/qooxdoo.el.git")
  :created    "2011"
  :updated    "2011"
  :authors    (("Jeremiah Dodds" . "jeremiah.dodds@gmail.com"))

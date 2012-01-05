@@ -7,7 +7,7 @@
  :provided   (whizzytex)
  :required   ((("emacs" comint overlay timer)))
  :homepage   "http://cristal.inria.fr/whizzytex"
- :wikipage   "http://www.emacswiki.org/WhizzyTeX"
+ :wikipage   "WhizzyTeX"
  :commentary "\
 WhizzyTeX is a minor Emacs mode for previewing LaTeX while your editing
 

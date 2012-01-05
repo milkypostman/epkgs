@@ -1,5 +1,4 @@
 (:summary    "Get xml-weather infos in emacs. "
- :repository (hg . "http://mercurial.intuxication.org/hg/xml-weather")
  :created    "200946"
  :updated    "2009"
  :license    "GPL-3"

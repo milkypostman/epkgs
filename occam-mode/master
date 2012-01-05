@@ -5,7 +5,7 @@
 	      ("Phil Nitschke" . "phil@mrad.com.au"))
  :keywords   (languages occam)
  :homepage   "http://wotug.org/tools.shtml"
- :wikipage   "http://www.emacswiki.org/OccamMode"
+ :wikipage   "OccamMode"
  :commentary "\
 Just plug it in and run.  Requires no modification.
 TAB and CR automatically indents.

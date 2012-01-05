@@ -1,5 +1,4 @@
 (:summary    "Add URLs to instapaper from emacs"
- :repository (hg . "https://bitbucket.org/jfm/emacs-instapaper")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-3"
@@ -9,4 +8,4 @@
  :required   ((("browse-url" browse-url)
 	       ("url" url)
 	       ("w3m" w3m)))
- :wikipage   "http://www.emacswiki.org/Instapaper")
+ :wikipage   "Instapaper")

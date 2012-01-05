@@ -1,5 +1,4 @@
 (:summary    "Named Character References in HTML5"
- :repository (git . "git://github.com/hober/html5-el.git")
  :created    "2009"
  :updated    "2010"
  :authors    (("Edward O'Connor" . "hober0@gmail.com"))

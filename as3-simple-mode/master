@@ -1,5 +1,4 @@
 (:summary    "Major mode for editing ActionScript 3 code"
- :repository (git . "git://github.com/svdm/as3-simple-mode.git")
  :updated    "2011"
  :license    "GPL-3"
  :authors    (("Stefan A. van der Meer" . "stefanvandermeer@gmail.com"))

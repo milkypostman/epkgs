@@ -3,4 +3,4 @@
  :license    "GPL-3"
  :provided   (texdrive)
  :homepage   "http://www.djcbsoftware.nl/code/texdrive"
- :wikipage   "http://www.emacswiki.org/TexDrive")
+ :wikipage   "TexDrive")

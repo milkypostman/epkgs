@@ -8,6 +8,6 @@
  :required   ((("emacs" font-lock)))
  :keywords   (hypermedia)
  :homepage   "http://www.princeton.edu/~gdetre/software/freex/docs/index.html"
- :wikipage   "http://www.emacswiki.org/FreexMode"
+ :wikipage   "FreexMode"
  :commentary "\
 Contributors:")

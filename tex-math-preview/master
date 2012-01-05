@@ -8,7 +8,7 @@
  :required   ((("tex-mode" tex-mode)
 	       ("thingatpt" thingatpt)))
  :keywords   (tex)
- :wikipage   "http://www.emacswiki.org/TexMathPreview"
+ :wikipage   "TexMathPreview"
  :commentary "\
 M-x tex-math-preview previews TeX math expressions.  Put point in a TeX,
 LaTeX, Texinfo, Wikipedia or DBTexMath math expression and M-x

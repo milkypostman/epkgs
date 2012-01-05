@@ -1,5 +1,4 @@
 (:summary    "Setup file for MIME-View"
- :repository (cvs . ":pserver:anonymous@cvs.m17n.org:/cvs/root")
  :created    "2000"
  :updated    "2000"
  :license    "GPL-2"
@@ -17,8 +16,8 @@
 	       ("mailcrypt" mailcrypt)
 	       ("sendmail" sendmail)
 	       ("signature" signature)
-	       ("tiny-tools" calist)
-	       ("w3" w3)))
+	       ("w3" w3)
+	       (nil calist)))
  :keywords   (encoded-word mail mime multilingual multimedia news)
  :homepage   "http://www.kanji.zinbun.kyoto-u.ac.jp/~tomo/lemi"
- :wikipage   "http://www.emacswiki.org/SemiIsEmacsMimeInterface")
+ :wikipage   "SemiIsEmacsMimeInterface")

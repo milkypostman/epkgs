@@ -1,5 +1,4 @@
-(:repository (git . "git://github.com/hayamiz/twittering-mode.git")
- :created    "2007"
+(:created    "2007"
  :updated    "2008"
  :license    "GPL-2"
  :authors    (("Y. Hayamizu" . "y.hayamizu@gmail.com")
@@ -22,6 +21,7 @@
 	       (nil alpaca)))
  :keywords   (twitter web)
  :homepage   "http://twmode.sourceforge.net"
+ :wikipage   "TwitteringMode"
  :commentary "\
 twittering-mode.el is a major mode for Twitter.
 You can check friends timeline, and update your status on Emacs.

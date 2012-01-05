@@ -6,7 +6,7 @@
  :required   ((("cl" cl)
 	       ("emacs" rect)))
  :homepage   "http://www.davep.org/emacs"
- :wikipage   "http://www.emacswiki.org/BoxQuote"
+ :wikipage   "BoxQuote"
  :commentary "\
 boxquote provides a set of functions for using a text quoting style that
 partially boxes in the left hand side of an area of text, such a marking

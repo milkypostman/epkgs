@@ -1,2 +1,2 @@
 (:provided   (build-tags)
- :wikipage   "http://www.emacswiki.org/BuildTags")
+ :wikipage   "BuildTags")

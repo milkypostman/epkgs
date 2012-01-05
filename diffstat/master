@@ -4,8 +4,7 @@
  :license    "GPL-3"
  :provided   (diffstat)
  :keywords   (convenience diff patch)
- :homepage   "http://www.emacswiki.org/Diffstat"
- :wikipage   "http://www.emacswiki.org/Diffstat"
+ :wikipage   "Diffstat"
  :commentary "\
 Diffstat is a simple implementation of diffstat unix tool in Emacs.  This
 mode can be used as standalone for a certain diff file but it will be more

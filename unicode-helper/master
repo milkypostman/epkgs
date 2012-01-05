@@ -5,8 +5,7 @@
  :authors    (("Jorgen Schaefer" . "forcer@forcix.cx"))
  :maintainer ("Jorgen Schaefer" . "forcer@forcix.cx")
  :provided   (unicode-helper)
- :homepage   "http://www.emacswiki.org/UnicodeHelperMode"
- :wikipage   "http://www.emacswiki.org/UnicodeHelperMode"
+ :wikipage   "UnicodeHelperMode"
  :commentary "\
 This library provides some helper functions to work with Unicode
 characters.")

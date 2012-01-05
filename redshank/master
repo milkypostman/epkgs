@@ -1,5 +1,4 @@
-(:repository (darcs . "http://www.foldr.org/~michaelw/projects/redshank")
- :created    "2006"
+(:created    "2006"
  :updated    "2008"
  :authors    (("Michael Weber" . "michaelw@foldr.org"))
  :maintainer ("Michael Weber" . "michaelw@foldr.org")

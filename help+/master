@@ -15,8 +15,7 @@
 	       ("thingatpt" thingatpt)
 	       ("thingatpt+" thingatpt+)))
  :keywords   (help)
- :homepage   "http://www.emacswiki.org/HelpPlus"
- :wikipage   "http://www.emacswiki.org/HelpPlus"
+ :wikipage   "HelpPlus"
  :commentary "\
 Extensions to `help.el' for Emacs 22 and later.  For similar
    extensions to `help.el' for Emacs 20, see `help+20.el'.

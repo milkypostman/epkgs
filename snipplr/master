@@ -8,8 +8,7 @@
  :required   ((("emacs" wid-edit widget)
 	       ("xml-rpc" xml-rpc)))
  :keywords   (extensions tools)
- :homepage   "http://www.emacswiki.org/SnipplrMode"
- :wikipage   "http://www.emacswiki.org/SnipplrMode"
+ :wikipage   "SnipplrMode"
  :commentary "\
 This file provides an emacs based interface to snipplr.com.
 

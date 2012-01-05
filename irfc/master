@@ -10,8 +10,7 @@
 	       ("thingatpt" thingatpt)
 	       ("url" url-vars)))
  :keywords   (ietf rfc)
- :homepage   "http://www.emacswiki.org/Irfc"
- :wikipage   "http://www.emacswiki.org/Irfc"
+ :wikipage   "Irfc"
  :commentary "\
 Interface for IETF RFC document.
 

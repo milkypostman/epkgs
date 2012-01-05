@@ -1,5 +1,4 @@
 (:summary    "Tony's DTD mode"
- :repository (git . "git://github.com/tkg/tdtd.git")
  :created    "1996"
  :updated    "20010831"
  :license    "GPL-2"

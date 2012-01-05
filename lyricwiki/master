@@ -1,5 +1,4 @@
 (:summary    "An Emacs mode to fetch lyrics"
- :repository (git . "git://github.com/febuiles/lyricwiki.el.git")
  :created    "20081201"
  :updated    "2009"
  :license    "GPL-2"
@@ -9,7 +8,7 @@
  :required   ((("url" url)))
  :keywords   (lyrics lyricwiki)
  :homepage   "https://github.com/febuiles/lyricwiki.el"
- :wikipage   "http://www.emacswiki.org/LyricWiki"
+ :wikipage   "LyricWiki"
  :commentary "\
 This is an Emacs mode to fetch lyrics different online sources.
 Just press M-x lyrics, enter your artist and the song and you

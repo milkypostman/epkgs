@@ -1,5 +1,4 @@
-(:repository (git . "git://github.com/jpablobr/cheat-fu-mode.git")
- :created    "2011"
+(:created    "2011"
  :updated    "20110428"
  :license    "GPL-3"
  :authors    ((nil . "xjpablobrx@gmail.com"))
@@ -7,7 +6,7 @@
  :provided   (cheat-fu)
  :keywords   (bash cheats)
  :homepage   "https://github.com/jpablobr/cheat-fu-mode"
- :wikipage   "http://www.emacswiki.org/CheatFuMode"
+ :wikipage   "CheatFuMode"
  :commentary "\
 This minor mode exists to provide emacs with an interface to cheat-fu
 https://github.com/jpablobr/cheat-fu

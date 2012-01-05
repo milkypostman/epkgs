@@ -7,7 +7,7 @@
  :provided   (jasmin)
  :required   ((("emacs" faces font-lock)))
  :homepage   "http://www.neilvandyke.org/jasmin-emacs"
- :wikipage   "http://www.emacswiki.org/JasminMode"
+ :wikipage   "JasminMode"
  :commentary "\
 THIS PACKAGE IS NO LONGER BEING MAINTAINED.
 

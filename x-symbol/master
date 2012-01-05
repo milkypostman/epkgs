@@ -12,7 +12,7 @@
 	       ("warnings" warnings)))
  :keywords   (html internationalization latex math wp wysiwyg)
  :homepage   "http://x-symbol.sourceforge.net"
- :wikipage   "http://www.emacswiki.org/XSymbolMode"
+ :wikipage   "XSymbolMode"
  :commentary "\
 If you want to use package x-symbol, please visit the URL (use
 \\\\[x-symbol-package-web]) and read the info (use \\\\[x-symbol-package-info]).

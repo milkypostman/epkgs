@@ -1,5 +1,4 @@
 (:summary    "Run tests and get back a hierarchical set of results"
- :repository (git . "git://github.com/philjackson/etest.git")
  :created    "2008"
  :updated    "2008"
  :license    "GPL-2"
@@ -10,7 +9,7 @@
 	       ("outline" outline)
 	       ("xmlgen" xmlgen)))
  :homepage   "http://www.shellarchive.co.uk/content/etest.html"
- :wikipage   "http://www.emacswiki.org/ETest"
+ :wikipage   "ETest"
  :commentary "\
 etest lets you define tests in a domain specific, hierarchical
 manner and gather results in a simple, structure of the same shape.

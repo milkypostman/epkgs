@@ -7,8 +7,7 @@
  :provided   (rtf-mode)
  :required   ((("emacs" generic)))
  :keywords   (languages rtf wp)
- :homepage   "http://www.emacswiki.org/RTFMode"
- :wikipage   "http://www.emacswiki.org/RTFMode"
+ :wikipage   "RTFMode"
  :commentary "\
 Major mode for viewing/editing RTF source.  I wrote this mostly for
 the sake of syntax-highlighting, and for the {}-matching.  It offers

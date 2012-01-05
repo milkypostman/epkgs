@@ -4,8 +4,7 @@
  :authors    (("Tadamegu Furukawa" . "tfuruka1@nifty.com"))
  :provided   (cmd-mode)
  :required   ((("emacs" font-lock)))
- :homepage   "http://www.emacswiki.org/CmdMode"
- :wikipage   "http://www.emacswiki.org/CmdMode"
+ :wikipage   "CmdMode"
  :commentary "\
 MS-DOSのバッチファイル及びWindows NTのコマンドスクリプトを編集する
 為のへなちょこモードです。%が沢山あって、何がなんだかわからないバッ

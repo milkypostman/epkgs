@@ -1,5 +1,4 @@
 (:summary    "An authoring and publishing tool for Emacs"
- :repository (git . "git://repo.or.cz/muse-el.git")
  :created    "2004"
  :updated    "2010"
  :license    "GPL-3"
@@ -25,7 +24,7 @@
 	       ("xml" xml)))
  :keywords   (hypermedia)
  :homepage   "http://mwolson.org/projects/EmacsMuse.html"
- :wikipage   "http://www.emacswiki.org/EmacsMuse"
+ :wikipage   "EmacsMuse"
  :commentary "\
 Muse is a tool for easily authoring and publishing documents.  It
 allows for rapid prototyping of hyperlinked text, which may then be

@@ -7,7 +7,7 @@
  :provided   (escreen)
  :keywords   (extensions)
  :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
- :wikipage   "http://www.emacswiki.org/EmacsScreen"
+ :wikipage   "EmacsScreen"
  :commentary "\
 To install, put this file in your load-path, byte-compile it, and add
 the following to your .emacs:

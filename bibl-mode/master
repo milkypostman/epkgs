@@ -9,4 +9,4 @@
 	       ("reporter" reporter)
 	       ("telnet" telnet)))
  :keywords   (bibliographies databases internet)
- :wikipage   "http://www.emacswiki.org/BiblMode")
+ :wikipage   "BiblMode")

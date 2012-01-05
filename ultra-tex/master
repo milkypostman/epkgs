@@ -14,4 +14,4 @@
 	       ("light" light)))
  :keywords   (completion tex-mode)
  :homepage   "http://www.math.washington.edu/~palmieri/Emacs/ultratex.html"
- :wikipage   "http://www.emacswiki.org/UltraTexMode")
+ :wikipage   "UltraTexMode")

@@ -7,4 +7,4 @@
  :required   ((("cl" cl)))
  :keywords   (automatic overlays)
  :homepage   "http://www.dr-qubit.org/emacs.php"
- :wikipage   "http://www.emacswiki.org/AutoOverlays")
+ :wikipage   "AutoOverlays")

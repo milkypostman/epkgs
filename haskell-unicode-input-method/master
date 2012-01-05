@@ -1,5 +1,4 @@
-(:repository (git . "git://github.com/roelvandijk/emacs-haskell-unicode-input-method.git")
- :created    "2011"
+(:created    "2011"
  :updated    "2011"
  :provided   (haskell-unicode-input-method)
  :required   ((("emacs" quail)))

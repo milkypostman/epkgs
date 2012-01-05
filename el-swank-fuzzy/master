@@ -7,8 +7,7 @@
  :provided   (el-swank-fuzzy)
  :required   ((("cl" cl)))
  :keywords   (completion matching string)
- :homepage   "http://www.emacswiki.org/ElSwankFuzzy"
- :wikipage   "http://www.emacswiki.org/ElSwankFuzzy"
+ :wikipage   "ElSwankFuzzy"
  :commentary "\
 This program is based on the swank-fuzzy.lisp.
 Thanks the CL implementation authors for that useful software.

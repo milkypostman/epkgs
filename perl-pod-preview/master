@@ -7,7 +7,7 @@
  :provided   (perl-pod-preview)
  :required   ((("man" man)))
  :keywords   (docs)
- :wikipage   "http://www.emacswiki.org/PerlPodPreview"
+ :wikipage   "PerlPodPreview"
  :commentary "\
 M-x perl-pod-preview displays a preview of Perl POD format documentation
 using \"pod2man\" and \"man\".  It can show pod inlined in perl code or in a

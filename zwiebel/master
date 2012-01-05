@@ -1,5 +1,4 @@
 (:summary    "Work/break interval timer"
- :repository (git . "git://github.com/silentbicycle/zwiebel.git")
  :created    "2010"
  :updated    "2010"
  :provided   (zwiebel)

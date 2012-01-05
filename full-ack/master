@@ -1,5 +1,4 @@
-(:repository (git . "git://github.com/nschum/full-ack.git")
- :created    "2011"
+(:created    "2011"
  :updated    "2011"
  :license    "GPL-2"
  :authors    (("Nikolaj Schumacher" . "bugs@nschum.de"))
@@ -10,7 +9,7 @@
 	       ("iswitchb" iswitchb)))
  :keywords   (matching tools)
  :homepage   "http://nschum.de/src/emacs/full-ack"
- :wikipage   "http://www.emacswiki.org/FullAck"
+ :wikipage   "FullAck"
  :commentary "\
 ack is a tool like grep, aimed at programmers with large trees of
 heterogeneous source code.

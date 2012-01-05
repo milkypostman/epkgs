@@ -11,7 +11,7 @@
 	       ("etags" etags)
 	       (nil po-compat)))
  :keywords   (gettext)
- :wikipage   "http://www.emacswiki.org/PoMode"
+ :wikipage   "PoMode"
  :commentary "\
 This package provides the tools meant to help editing PO files,
 as documented in the GNU gettext user's manual.  See this manual

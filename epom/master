@@ -1,5 +1,4 @@
 (:summary    "Pomodoro time management in emacs"
- :repository (git . "git://github.com/aufrank/epom.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"

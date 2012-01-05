@@ -1,5 +1,4 @@
 (:summary    "Grep large sets of files by using xargs"
- :repository (git . "git://github.com/lewang/le_emacs_xargs_grep.git")
  :created    "20110207"
  :updated    "2011"
  :license    "GPL-3"
@@ -9,7 +8,7 @@
  :required   ((("compile" compile)
 	       ("grep" grep)))
  :homepage   "https://github.com/lewang/le_emacs_xargs_grep"
- :wikipage   "http://www.emacswiki.org/xargs-grep"
+ :wikipage   "xargs-grep"
  :commentary "\
 This is probably most useful when called from a function.  I use it to grep
 through a large set of config files, which don't fit on the command-line.

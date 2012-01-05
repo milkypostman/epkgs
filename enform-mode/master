@@ -9,8 +9,7 @@
 	       ("which-func" which-func)
 	       (nil enform-indent)))
  :keywords   (enform extensions guardian languages nsk tandem)
- :homepage   "http://www.emacswiki.org/EnformMode"
- :wikipage   "http://www.emacswiki.org/EnformMode"
+ :wikipage   "EnformMode"
  :commentary "\
 ENFORM is Tandem's Report Language.
 

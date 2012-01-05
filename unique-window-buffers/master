@@ -1,5 +1,4 @@
 (:summary    "Try to avoid showing same buffer in two windows on the same frame"
- :repository (git . "git://github.com/lewang/unique-window-buffers.git")
  :created    "20110917"
  :updated    "20110923"
  :license    "GPL-3"

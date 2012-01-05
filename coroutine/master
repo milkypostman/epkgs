@@ -8,8 +8,7 @@
  :required   ((("cl" cl)
 	       ("tagbody" tagbody)))
  :keywords   (extensions)
- :homepage   "http://www.emacswiki.org/CoRoutines"
- :wikipage   "http://www.emacswiki.org/CoRoutines"
+ :wikipage   "CoRoutines"
  :commentary "\
 This file allows the definition of coroutines in Emacs Lisp.  A
 coroutine is a function that can return (\"yield\") a value and still

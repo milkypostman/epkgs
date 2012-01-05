@@ -1,9 +1,8 @@
 (:summary    "Aspect-oriented buffer settings"
- :repository (git . "git://github.com/rafl/espect.git")
  :license    "GPL-2"
  :provided   (espect)
  :homepage   "https://github.com/rafl/espect"
- :wikipage   "http://www.emacswiki.org/Espect"
+ :wikipage   "Espect"
  :commentary "\
 This software is Copyright (c) 2010 by Florian Ragwitz, Rohn Jockway
 

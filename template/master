@@ -9,7 +9,7 @@
 	       ("emacs" custom)))
  :keywords   (auto-updating comment\ decoration data template tools)
  :homepage   "http://emacs-template.sourceforge.net"
- :wikipage   "http://www.emacswiki.org/TemplatesMode"
+ :wikipage   "TemplatesMode"
  :commentary "\
 When you create a new file with Emacs, package Template supplies an initial
 buffer content via a template: a file with normal text and expansion

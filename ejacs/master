@@ -1,5 +1,4 @@
 (:summary    "Shell interface to javascript interpreter"
- :repository (svn . "http://ejacs.googlecode.com/svn")
  :license    "GPL-2"
  :authors    (("Steve Yegge" . "steve.yegge@gmail.com"))
  :maintainer ("Steve Yegge" . "steve.yegge@gmail.com")
@@ -9,7 +8,7 @@
 	       ("parse-time" parse-time)))
  :keywords   (javascript languages)
  :homepage   "http://code.google.com/p/ejacs"
- :wikipage   "http://www.emacswiki.org/Ejacs"
+ :wikipage   "Ejacs"
  :commentary "\
 This package provides a simple interactive shell interface to
 the JavaScript interpreter.  See ./README for instructions.")

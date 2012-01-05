@@ -1,5 +1,4 @@
 (:summary    "Bookmark plugin for e2wm.el"
- :repository (git . "git://github.com/myuhe/e2wm-bookmark.el.git")
  :created    "20110705"
  :updated    "2011"
  :license    "GPL-3"

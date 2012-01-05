@@ -3,5 +3,4 @@
  :maintainer ("Conrad Barski, M.D.")
  :provided   (tagging)
  :required   ((("cl" cl)))
- :homepage   "http://www.emacswiki.org/Tagging"
- :wikipage   "http://www.emacswiki.org/Tagging")
+ :wikipage   "Tagging")

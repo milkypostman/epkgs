@@ -9,7 +9,7 @@
 	       ("cl" cl)
 	       ("imenu" imenu)))
  :keywords   (javascript languages)
- :wikipage   "http://www.emacswiki.org/Js2Mode"
+ :wikipage   "Js2Mode"
  :commentary "\
 This JavaScript editing mode supports:
 

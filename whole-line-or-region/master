@@ -7,7 +7,7 @@
  :provided   (whole-line-or-region)
  :keywords   (copy cut kill lines paste whole yank)
  :homepage   "http://www.northbound-train.com"
- :wikipage   "http://www.emacswiki.org/WholeLineOrRegion"
+ :wikipage   "WholeLineOrRegion"
  :commentary "\
 This minor mode allows functions to operate on the current line if
  they would normally operate on a region and region is currently

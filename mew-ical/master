@@ -1,5 +1,4 @@
 (:summary    "ICalendar support for Mew"
- :repository (svn . "http://mew-ical.googlecode.com/svn")
  :created    "2008"
  :updated    "2008"
  :authors    (("Akira TAGOH" . "akira@tagoh.org"))

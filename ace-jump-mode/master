@@ -1,5 +1,4 @@
 (:summary    "A quick cursor location minor mode for emacs"
- :repository (git . "git://github.com/winterTTr/ace-jump-mode.git")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-3"
@@ -8,4 +7,5 @@
  :provided   (ace-jump-mode)
  :required   ((("cl" cl)))
  :keywords   (cursor location motion)
- :homepage   "https://github.com/winterTTr/ace-jump-mode")
+ :homepage   "https://github.com/winterTTr/ace-jump-mode"
+ :wikipage   "AceJump")

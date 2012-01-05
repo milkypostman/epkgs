@@ -6,7 +6,7 @@
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (quick-yes)
  :keywords   (convenience)
- :wikipage   "http://www.emacswiki.org/QuickYes"
+ :wikipage   "QuickYes"
  :commentary "\
 This is a spot of code for Emacs 21 (and up) to bind M-y to answer \"yes\"
 to a `yes-or-no-p' question.

@@ -7,8 +7,7 @@
  :provided   (thingatpt+)
  :required   ((("thingatpt" thingatpt)))
  :keywords   (extensions matching mouse)
- :homepage   "http://www.emacswiki.org/ThingAtPointPlus"
- :wikipage   "http://www.emacswiki.org/ThingAtPointPlus"
+ :wikipage   "ThingAtPointPlus"
  :commentary "\
 Extensions to `thingatpt.el'.
 

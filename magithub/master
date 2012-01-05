@@ -1,5 +1,4 @@
 (:summary    "Magit extensions for using GitHub"
- :repository (git . "git://github.com/nex3/magithub.git")
  :created    "20100606"
  :updated    "2010"
  :license    "GPL-3"

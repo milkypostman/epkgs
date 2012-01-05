@@ -12,8 +12,7 @@
 	       ("recentf" recentf)
 	       ("tree-widget" tree-widget)))
  :keywords   (ide speedbar)
- :homepage   "http://www.emacswiki.org/IdeSkel"
- :wikipage   "http://www.emacswiki.org/IdeSkel"
+ :wikipage   "IdeSkel"
  :commentary "\
 Ide-skel is a skeleton (or framework) of IDE for Emacs users.
   Like Eclipse, it can be used as is with some predefined plugins

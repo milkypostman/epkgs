@@ -6,8 +6,7 @@
  :maintainer ("Rick Bielawski" . "rbielaws@i1.net")
  :provided   (anchored-transpose)
  :keywords   (convenience tools)
- :homepage   "http://www.emacswiki.org/AnchoredTranspose"
- :wikipage   "http://www.emacswiki.org/AnchoredTranspose"
+ :wikipage   "AnchoredTranspose"
  :commentary "\
 `anchored-transpose' is an interactive autoload function to transpose
 portions of a region around an anchor phrase.  In other words it swaps

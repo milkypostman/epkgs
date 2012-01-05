@@ -1,5 +1,4 @@
-(:repository (cvs . ":pserver:anonymous@mailcrypt.cvs.sourceforge.net:/cvsroot/mailcrypt")
- :created    "1995"
+(:created    "1995"
  :updated    "2001"
  :license    "GPL-2"
  :provided   (mailcrypt)
@@ -7,4 +6,4 @@
 	       ("itimer" itimer)
 	       ("rfc822" rfc822)))
  :homepage   "http://mailcrypt.sourceforge.net"
- :wikipage   "http://www.emacswiki.org/MailCrypt")
+ :wikipage   "MailCrypt")

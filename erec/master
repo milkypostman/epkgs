@@ -6,8 +6,7 @@
  :maintainer ("Jorgen Schaefer" . "forcer@forcix.cx")
  :provided   (erec)
  :keywords   (multimedia)
- :homepage   "http://www.emacswiki.org/ErecMode"
- :wikipage   "http://www.emacswiki.org/ErecMode"
+ :wikipage   "ErecMode"
  :commentary "\
 This is a minor mode that lets you record audio fragments and plays
 them back to you when you want.

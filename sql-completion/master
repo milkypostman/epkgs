@@ -7,8 +7,7 @@
  :provided   (sql-completion)
  :required   ((("cl" cl)
 	       ("mysql" mysql)))
- :homepage   "http://www.emacswiki.org/SqlCompletion"
- :wikipage   "http://www.emacswiki.org/SqlCompletion"
+ :wikipage   "SqlCompletion"
  :commentary "\
 Put this file into your load-path and the following into your ~/.emacs:
 (require 'sql-completion)

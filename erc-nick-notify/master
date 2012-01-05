@@ -7,8 +7,7 @@
  :provided   (erc-nick-notify)
  :required   ((("erc" erc)))
  :keywords   (erc notify)
- :homepage   "http://www.emacswiki.org/ErcNickNotify"
- :wikipage   "http://www.emacswiki.org/ErcNickNotify"
+ :wikipage   "ErcNickNotify"
  :commentary "\
 Notify popup for ERC
 

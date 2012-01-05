@@ -8,8 +8,7 @@
  :required   ((("cl" cl)
 	       ("erc" erc)))
  :keywords   (comm tex)
- :homepage   "http://www.emacswiki.org/ErcTex"
- :wikipage   "http://www.emacswiki.org/ErcTex"
+ :wikipage   "ErcTex"
  :commentary "\
 erc-tex is a tiny ERC module which render LaTeX mathematical expressions
 in your ERC chats. You will need both latex and dvipng in order to use this

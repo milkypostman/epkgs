@@ -1,5 +1,4 @@
 (:summary    "Bookmarks for compilation commands"
- :repository (git . "git://github.com/nschum/compile-bookmarks.el.git")
  :created    "2008"
  :updated    "2008"
  :license    "GPL-2"
@@ -10,7 +9,7 @@
 	       ("recentf" recentf)))
  :keywords   (processes tools)
  :homepage   "http://nschum.de/src/emacs/compile-bookmarks"
- :wikipage   "http://www.emacswiki.org/CompileBookmarks"
+ :wikipage   "CompileBookmarks"
  :commentary "\
 compile-bookmarks.el allows you to bookmark your compile commands and retain
 them across sessions.

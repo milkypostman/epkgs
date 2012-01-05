@@ -1,8 +1,7 @@
 (:summary    "Major mode for editing Mythryl code"
- :repository (git . "git://github.com/phr/mythryl-mode.git")
  :created    "2009"
  :updated    "2009"
  :license    "GPL-3"
  :provided   (mythryl-mode)
  :homepage   "https://github.com/phr/mythryl-mode"
- :wikipage   "http://www.emacswiki.org/MythrylMode")
+ :wikipage   "MythrylMode")

@@ -8,7 +8,7 @@
  :required   ((("thingatpt" thingatpt)
 	       ("wiki" wiki)))
  :keywords   (hypermedia)
- :wikipage   "http://www.emacswiki.org/WikiInter"
+ :wikipage   "WikiInter"
  :commentary "\
 Support Interwiki link such as JargonFile:luser for wiki.el without
 aktually hacking wiki.el.

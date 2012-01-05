@@ -5,5 +5,4 @@
  :maintainer (nil . "seanvbd@yahoo.com")
  :provided   (cg-mode)
  :keywords   (cg languages)
- :homepage   "http://www.emacswiki.org/CgMode"
- :wikipage   "http://www.emacswiki.org/CgMode")
+ :wikipage   "CgMode")

@@ -1,5 +1,4 @@
 (:summary    "List and operate on emacs timers"
- :repository (git . "git://github.com/pheaver/itimer-el.git")
  :created    "2009"
  :updated    "2010"
  :license    "GPL-3"

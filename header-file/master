@@ -1,5 +1,4 @@
 (:summary    "Assign a major mode for header files"
- :repository (git . "git://github.com/0x4b/header-file-mode.git")
  :updated    "2010"
  :license    "GPL-2"
  :authors    (("Kirk Kelsey"))

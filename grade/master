@@ -9,7 +9,7 @@
 	       ("emacs" easymenu)))
  :keywords   (grade)
  :homepage   "http://vh213601.truman.edu/~belanger/emacs.html"
- :wikipage   "http://www.emacswiki.org/GradeMode"
+ :wikipage   "GradeMode"
  :commentary "\
 Quick intro
 

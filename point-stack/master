@@ -1,3 +1,2 @@
-(:repository (git . "git://github.com/mattharrison/point-stack.git")
- :provided   (point-stack)
+(:provided   (point-stack)
  :homepage   "https://github.com/mattharrison/point-stack")

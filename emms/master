@@ -1,5 +1,4 @@
 (:summary    "The Emacs Multimedia System"
- :repository (git . "git://git.savannah.gnu.org/emms.git")
  :created    "2003"
  :updated    "2009"
  :license    "GPL-3"
@@ -21,7 +20,7 @@
 	       ("xml" xml)))
  :keywords   (emms mpeg multimedia)
  :homepage   "http://www.gnu.org/software/emms"
- :wikipage   "http://www.emacswiki.org/EMMS"
+ :wikipage   "EMMS"
  :commentary "\
 This is the very core of EMMS.  It provides ways to play a track
 using `emms-start', to go through the playlist using the commands

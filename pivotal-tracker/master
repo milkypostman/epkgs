@@ -1,5 +1,4 @@
-(:repository (git . "git://github.com/jxa/pivotal-tracker.git")
- :created    "20101114"
+(:created    "20101114"
  :license    "GPL-2"
  :authors    (("John Andrews" . "john.m.andrews@gmail.com"))
  :maintainer ("John Andrews" . "john.m.andrews@gmail.com")

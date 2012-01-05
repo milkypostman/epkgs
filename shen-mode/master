@@ -1,5 +1,4 @@
 (:summary    "A major mode for editing shen source code"
- :repository (git . "git://github.com/eschulte/shen-mode.git")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-3"

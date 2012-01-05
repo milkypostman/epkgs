@@ -1,5 +1,4 @@
 (:summary    "Keeping nXhtml together"
- :repository (bzr . "http://bazaar.launchpad.net/~nxhtml/nxhtml/main")
  :created    "20090101"
  :license    "GPL-2"
  :authors    (("Lennart Borgman (lennart O borgman A gmail O com)"))
@@ -56,4 +55,4 @@
 	       ("winsize" winsize)
 	       (nil company-mode emacsw32 flymake-js typesetter w32-regdat w32shell)))
  :homepage   "https://launchpad.net/nxhtml"
- :wikipage   "http://www.emacswiki.org/NxhtmlMode")
+ :wikipage   "NxhtmlMode")

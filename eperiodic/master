@@ -7,7 +7,7 @@
  :provided   (eperiodic)
  :required   ((("cl" cl)
 	       ("emacs" dired)))
- :wikipage   "http://www.emacswiki.org/PeriodicTableForEmacs"
+ :wikipage   "PeriodicTableForEmacs"
  :commentary "\
 Package to display a periodic table in Emacs.
 

@@ -1,5 +1,4 @@
 (:summary    "Edit trac wiki pages in emacs via XML-RPC"
- :repository (git . "git://github.com/tiborsimko/trac-wiki-el.git")
  :created    "2006"
  :updated    "2006"
  :license    "GPL-2"

@@ -1,2 +1,1 @@
-(:repository (git . "git://github.com/jmax315/ratcatcher-mode.git")
- :homepage   "https://github.com/jmax315/ratcatcher-mode")
+(:homepage   "https://github.com/jmax315/ratcatcher-mode")

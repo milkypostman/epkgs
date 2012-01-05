@@ -1,5 +1,4 @@
 (:summary    "Draw a bounding box interactively"
- :repository (git . "git://github.com/jave/dragbox.git")
  :provided   (dragbox)
  :required   ((("emacs" image-mode)
 	       ("xml" xml)))

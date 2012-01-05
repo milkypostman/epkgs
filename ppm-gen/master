@@ -10,8 +10,7 @@
 	       ("emacs" image-mode)
 	       (nil eieio-comp)))
  :keywords   (bitmap draw generator ppm ray\ tracing)
- :homepage   "http://www.emacswiki.org/PpmGen"
- :wikipage   "http://www.emacswiki.org/PpmGen"
+ :wikipage   "PpmGen"
  :commentary "\
 This package provide a set of PPM file generation function, you can
 now use emacs as a canvas to draw thing, and output to a buffer,

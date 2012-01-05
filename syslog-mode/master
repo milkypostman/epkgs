@@ -5,7 +5,7 @@
  :maintainer ("Harley Gorrell" . "harley@mahalito.net")
  :provided   (syslog-mode)
  :keywords   (emacs syslog)
- :wikipage   "http://www.emacswiki.org/SyslogMode"
+ :wikipage   "SyslogMode"
  :commentary "\
 * Handy functions for looking at system logs.
 * Fontifys the date and su messages.")

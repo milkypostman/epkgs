@@ -1,5 +1,4 @@
 (:summary    "Keyboard operation method corresponding to double click on a mouse"
- :repository (git . "git://github.com/k-talo/double-type.el.git")
  :created    "20101224"
  :updated    "2010"
  :license    "GPL-3"

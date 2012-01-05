@@ -1,5 +1,4 @@
 (:summary    "Emacs information manager"
- :repository (git . "git://git.savannah.gnu.org/ee.git")
  :created    "2002"
  :updated    "2010"
  :license    "GPL-2"
@@ -22,7 +21,7 @@
 	       (nil db-summary)))
  :keywords   (convenience ee outlines tools)
  :homepage   "http://www.jurta.org/en/emacs/ee"
- :wikipage   "http://www.emacswiki.org/CategorizingInformationManager"
+ :wikipage   "CategorizingInformationManager"
  :commentary "\
 This file is the core of the ee package.
 

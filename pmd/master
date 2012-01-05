@@ -1,5 +1,4 @@
 (:summary    "Major mode for pluging PMD into Emacs"
- :repository (svn . "https://pmd.svn.sourceforge.net/svnroot/pmd")
  :created    "2004"
  :updated    "2002"
  :license    "GPL-2"
@@ -9,7 +8,7 @@
  :required   ((("compile" compile)))
  :keywords   (major-mode pmd)
  :homepage   "http://pmd.sourceforge.net"
- :wikipage   "http://www.emacswiki.org/EmacsPmd"
+ :wikipage   "EmacsPmd"
  :commentary "\
 Installation:
  1) Install the core PMD application (not part of this download, get it 

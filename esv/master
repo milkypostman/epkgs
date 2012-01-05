@@ -3,5 +3,4 @@
  :required   ((("calendar" calendar)
 	       ("url" url)
 	       ("xml" xml)))
- :homepage   "http://www.emacswiki.org/EsvMode"
- :wikipage   "http://www.emacswiki.org/EsvMode")
+ :wikipage   "EsvMode")

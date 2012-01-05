@@ -8,7 +8,7 @@
  :required   ((("cl" cl)
 	       ("rx" rx)))
  :keywords   (hardware)
- :wikipage   "http://www.emacswiki.org/DiskKey"
+ :wikipage   "DiskKey"
  :commentary "\
 This program provides an alternative disk mounting tool. It is
 implemented as a STUN module.

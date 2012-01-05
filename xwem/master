@@ -1,5 +1,4 @@
 (:summary    "Main part of xwem"
- :repository (cvs . ":pserver:anonymous@cvs.savannah.nongnu.org:/sources/xwem")
  :created    "20030321"
  :updated    "2003"
  :license    "GPL-2"
@@ -16,4 +15,4 @@
 	       (nil color-selector completer xpm-button xpm-mode)))
  :keywords   (xlib xwem)
  :homepage   "http://xwem.org"
- :wikipage   "http://www.emacswiki.org/XWindowEmacsManager")
+ :wikipage   "XWindowEmacsManager")

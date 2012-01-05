@@ -9,8 +9,7 @@
 	       ("misc-cmds" misc-cmds)
 	       ("misc-fns" misc-fns)))
  :keywords   (convenience local mouse)
- :homepage   "http://www.emacswiki.org/BufferMenuPlus"
- :wikipage   "http://www.emacswiki.org/BufferMenuPlus"
+ :wikipage   "BufferMenuPlus"
  :commentary "\
 Extensions to `buff-menu.el', including: new bindings, faces,
    and menus; selective column display; and directional column

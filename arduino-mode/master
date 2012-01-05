@@ -1,5 +1,4 @@
 (:summary    "Major mode for the Arduino language"
- :repository (git . "git://github.com/bookest/arduino-mode.git")
  :created    "2008"
  :updated    "2008"
  :license    "GPL-3"

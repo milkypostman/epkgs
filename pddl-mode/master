@@ -10,8 +10,7 @@
 	       ("pcomplete" pcomplete)
 	       ("regexp-opt" regexp-opt)))
  :keywords   (files pddl planning)
- :homepage   "http://www.emacswiki.org/PDDLMode"
- :wikipage   "http://www.emacswiki.org/PDDLMode"
+ :wikipage   "PDDLMode"
  :commentary "\
 Purpose:
 

@@ -10,8 +10,7 @@
 	       ("term" term))
 	      (("ecb" ecb)))
  :keywords   (multiple\ buffer term terminal)
- :homepage   "http://www.emacswiki.org/MultiTerm"
- :wikipage   "http://www.emacswiki.org/MultiTerm"
+ :wikipage   "MultiTerm"
  :commentary "\
 This package is for creating and managing multiple terminal buffers in Emacs.
 

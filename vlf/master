@@ -6,8 +6,7 @@
  :maintainer ("Mathias Dahl")
  :provided   (vlf)
  :keywords   (files helpers utilities)
- :homepage   "http://www.emacswiki.org/VLF"
- :wikipage   "http://www.emacswiki.org/VLF"
+ :wikipage   "VLF"
  :commentary "\
 After reading the Nth post on Gnu Emacs Help about Viewing Large
 Files in Emacs, it itched so much that I decided to make a try.  It

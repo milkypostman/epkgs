@@ -7,7 +7,7 @@
  :provided   (gtk-look)
  :required   ((("browse-url" browse-url)))
  :keywords   (c tools)
- :wikipage   "http://www.emacswiki.org/GtkLook"
+ :wikipage   "GtkLook"
  :commentary "\
 M-x gtk-lookup-symbol displays HTML documentation for Gtk and Gnome
 functions and variables, similar to what M-x info-lookup-symbol does for

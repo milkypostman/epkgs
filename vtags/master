@@ -1,5 +1,4 @@
 (:summary    "Tags facility for Emacs"
- :repository (cvs . ":pserver:anonymous@cvs.savannah.gnu.org:/sources/vtags")
  :created    "1985"
  :updated    "2006"
  :license    "GPL-2"
@@ -7,7 +6,7 @@
  :maintainer ("FSF")
  :keywords   (tools)
  :homepage   "https://savannah.gnu.org/projects/vtags"
- :wikipage   "http://www.emacswiki.org/VTags"
+ :wikipage   "VTags"
  :commentary "\
 Changes from previous etags.el:
 

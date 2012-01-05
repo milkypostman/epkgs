@@ -1,5 +1,4 @@
 (:summary    "Automatic and manual symbol highlighting"
- :repository (git . "git://github.com/nschum/highlight-symbol.el.git")
  :created    "2009"
  :updated    "2009"
  :license    "GPL-2"
@@ -11,7 +10,7 @@
 	       ("thingatpt" thingatpt)))
  :keywords   (faces matching)
  :homepage   "http://nschum.de/src/emacs/highlight-symbol"
- :wikipage   "http://www.emacswiki.org/HighlightSymbol"
+ :wikipage   "HighlightSymbol"
  :commentary "\
 Add the following to your .emacs file:
 (require 'highlight-symbol)

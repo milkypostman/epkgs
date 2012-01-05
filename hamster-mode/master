@@ -7,7 +7,7 @@
  :provided   (hamster-mode)
  :required   ((("emacs" font-lock)))
  :keywords   (languages)
- :wikipage   "http://www.emacswiki.org/HamsterMode"
+ :wikipage   "HamsterMode"
  :commentary "\
 Major Mode for editing hamster scripts (*.hsc, *.hsm).
 

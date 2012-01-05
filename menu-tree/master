@@ -1,5 +1,4 @@
-(:repository (bzr . "http://bazaar.launchpad.net/~irie/%2Bjunk/menu-tree.el")
- :created    "2008"
+(:created    "2008"
  :updated    "2010"
  :license    "GPL-3"
  :authors    (("IRIE Shinsuke"))
@@ -7,7 +6,7 @@
  :provided   (menu-tree)
  :keywords   (japanese localization menu-bar)
  :homepage   "https://code.launchpad.net/~irie/+junk/menu-tree.el"
- :wikipage   "http://www.emacswiki.org/MenuTree"
+ :wikipage   "MenuTree"
  :commentary "\
 Loading menu-tree.el replaces the texts of menu-bar items
 with the various languages' translations. By default, Japanese

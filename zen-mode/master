@@ -1,5 +1,4 @@
 (:summary    "Remove/restore Emacs frame distractions quickly"
- :repository (git . "git://github.com/jave/zen-mode.git")
  :created    "2011"
  :updated    "2011"
  :provided   (zen-mode)

@@ -1,2 +1,1 @@
-(:repository (git . "git://github.com/chrisdone/emacsworktracker.git")
- :homepage   "https://github.com/chrisdone/emacsworktracker")
+(:homepage   "https://github.com/chrisdone/emacsworktracker")

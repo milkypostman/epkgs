@@ -8,5 +8,4 @@
  :required   ((("emacs" overlay)
 	       ("mail-utils" mail-extr)))
  :keywords   (citing filling mail news)
- :homepage   "http://www.emacswiki.org/TrivialCite"
- :wikipage   "http://www.emacswiki.org/TrivialCite")
+ :wikipage   "TrivialCite")

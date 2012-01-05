@@ -2,5 +2,4 @@
  :license    "public-domain"
  :provided   (teco)
  :required   ((("emacs" backquote)))
- :homepage   "http://www.emacswiki.org/TecoInterpreterInElisp"
- :wikipage   "http://www.emacswiki.org/TecoInterpreterInElisp")
+ :wikipage   "TecoInterpreterInElisp")

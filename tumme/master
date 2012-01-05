@@ -8,8 +8,7 @@
  :required   ((("emacs" dired)
 	       ("format-spec" format-spec)))
  :keywords   (dired images thumbnails)
- :homepage   "http://www.emacswiki.org/Tumme"
- :wikipage   "http://www.emacswiki.org/Tumme"
+ :wikipage   "Tumme"
  :commentary "\
 BACKGROUND
 ==========

@@ -15,7 +15,7 @@
 	       (nil nxml)))
  :keywords   (completion ui user\ interface)
  :homepage   "http://www.dr-qubit.org/emacs.php"
- :wikipage   "http://www.emacswiki.org/CompletionUI"
+ :wikipage   "CompletionUI"
  :commentary "\
 Overview
 ========

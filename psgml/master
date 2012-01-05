@@ -12,7 +12,7 @@
 	       ("emacs" easymenu)))
  :keywords   (languages)
  :homepage   "http://www.lysator.liu.se/projects/about_psgml.html"
- :wikipage   "http://www.emacswiki.org/PsgmlMode"
+ :wikipage   "PsgmlMode"
  :commentary "\
 Major mode for editing the SGML document-markup language.
 

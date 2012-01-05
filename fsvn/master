@@ -1,5 +1,4 @@
 (:summary    "Another frontend of subversion"
- :repository (svn . "http://svn.sourceforge.jp/svnroot/fsvn")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-3"

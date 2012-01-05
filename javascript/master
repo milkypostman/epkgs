@@ -6,7 +6,7 @@
  :maintainer ("Karl Landstrom" . "karl@karllandstrom.se")
  :keywords   (languages oop)
  :homepage   "http://www.brgeight.se"
- :wikipage   "http://www.emacswiki.org/JavaScriptMode"
+ :wikipage   "JavaScriptMode"
  :commentary "\
 The main features of this JavaScript mode are syntactic
 highlighting (enabled with `font-lock-mode' or

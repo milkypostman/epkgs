@@ -13,8 +13,7 @@
 	       ("hexrgb" hexrgb)
 	       ("palette" palette)))
  :keywords   (convenience extensions faces local menus)
- :homepage   "http://www.emacswiki.org/FaceMenuPlus"
- :wikipage   "http://www.emacswiki.org/FaceMenuPlus"
+ :wikipage   "FaceMenuPlus"
  :commentary "\
 Extensions to `facemenu.el'.
 

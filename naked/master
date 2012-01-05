@@ -6,8 +6,7 @@
  :maintainer ("Drew Adams")
  :provided   (naked)
  :keywords   (format help key lisp print)
- :homepage   "http://www.emacswiki.org/NaKeD"
- :wikipage   "http://www.emacswiki.org/NaKeD"
+ :wikipage   "NaKeD"
  :commentary "\
 Lets you use key-sequence descriptions that do not bother with
  angle brackets: `<' and `>'.

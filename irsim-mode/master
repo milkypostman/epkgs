@@ -2,4 +2,4 @@
  :required   ((("cl" cl)
 	       ("emacs" font-lock)))
  :homepage   "http://code.google.com/p/irsim-mode"
- :wikipage   "http://www.emacswiki.org/IrsimMode")
+ :wikipage   "IrsimMode")

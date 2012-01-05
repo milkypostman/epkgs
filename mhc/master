@@ -1,5 +1,4 @@
 (:summary    "MH Calendar"
- :repository (git . "git://github.com/yoshinari-nomura/mhc.git")
  :created    "19940704"
  :authors    (("Yoshinari Nomura" . "nom@quickhack.net"))
  :maintainer ("Yoshinari Nomura" . "nom@quickhack.net")
@@ -14,4 +13,4 @@
 	       ("wanderlust" elmo-localdir wl-summary)
 	       (nil bitmap cmail)))
  :homepage   "http://www.quickhack.net/mhc"
- :wikipage   "http://www.emacswiki.org/MessageHarmonizedCalendaring")
+ :wikipage   "MessageHarmonizedCalendaring")

@@ -1,5 +1,4 @@
-(:repository (git . "git://github.com/imakado/perl-completion.git")
- :created    "2009"
+(:created    "2009"
  :updated    "2009"
  :license    "GPL-2"
  :authors    (("IMAKADO" . "ken.imakado@gmail.com"))
@@ -22,7 +21,7 @@
 	       ("url" url)))
  :keywords   (perl)
  :homepage   "https://github.com/imakado/perl-completion"
- :wikipage   "http://www.emacswiki.org/PerlCompletion"
+ :wikipage   "PerlCompletion"
  :commentary "\
 Tested on Emacs 22
 

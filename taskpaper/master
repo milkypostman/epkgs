@@ -1,5 +1,4 @@
 (:summary    "Taskpaper implementation for Emacs"
- :repository (git . "git://github.com/jonasoberschweiber/taskpaper-el.git")
  :created    "2008"
  :updated    "2008"
  :license    "GPL-2"

@@ -1,5 +1,4 @@
 (:summary    "Extensions to rect.el"
- :repository (git . "git://github.com/mhayashi1120/Emacs-rectplus.git")
  :license    "GPL-3"
  :authors    (("Masahiro Hayashi" . "mhayashi1120@gmail.com"))
  :maintainer ("Masahiro Hayashi" . "mhayashi1120@gmail.com")

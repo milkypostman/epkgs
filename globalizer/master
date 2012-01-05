@@ -1,5 +1,4 @@
 (:summary    "Add your lovely globalize .t with style"
- :repository (git . "git://repo.or.cz/meg.git")
  :authors    (("Ed Sinjiashvili" . "mediogre@gmail.com"))
  :maintainer ("Ed Sinjiashvili" . "mediogre@gmail.com")
  :provided   (globalizer)

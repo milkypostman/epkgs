@@ -2,5 +2,4 @@
  :license    "GPL-3"
  :provided   (line-comment-banner)
  :required   ((("cl" cl)))
- :homepage   "http://www.emacswiki.org/LineCommentBanner"
- :wikipage   "http://www.emacswiki.org/LineCommentBanner")
+ :wikipage   "LineCommentBanner")

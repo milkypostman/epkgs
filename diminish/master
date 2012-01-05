@@ -8,7 +8,7 @@
  :required   ((("cl" cl)))
  :keywords   (codeprose diminish extensions minor)
  :homepage   "http://www.eskimo.com/~seldon"
- :wikipage   "http://www.emacswiki.org/DiminishedModes"
+ :wikipage   "DiminishedModes"
  :commentary "\
 Minor modes each put a word on the mode line to signify that they're
 active.  This can cause other displays, such as % of file that point is

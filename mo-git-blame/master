@@ -1,5 +1,4 @@
 (:summary    "An interactive, iterative 'git blame' mode for Emacs"
- :repository (git . "git://github.com/mbunkus/mo-git-blame.git")
  :created    "2009"
  :updated    "2010"
  :license    "GPL-3"

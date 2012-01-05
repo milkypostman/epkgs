@@ -5,8 +5,7 @@
  :provided   (rcirc-late-fix)
  :required   ((("cl" cl)
 	       ("rcirc" rcirc)))
- :homepage   "http://www.emacswiki.org/rcircLateFix"
- :wikipage   "http://www.emacswiki.org/rcircLateFix"
+ :wikipage   "rcircLateFix"
  :commentary "\
 The idea is to detect messages like 's/tset/test' and overwrite the
 wrong word with the correction, on the original phrase, using

@@ -10,7 +10,7 @@
  :required   ((("emacs" font-lock)))
  :keywords   (oracle sql sqlplus)
  :homepage   "http://meltin.net/hacks/emacs"
- :wikipage   "http://www.emacswiki.org/SqlPlusMode"
+ :wikipage   "SqlPlusMode"
  :commentary "\
 This file is implements a simple SQL mode for emacs.  It knows how
  to talk to SQL*Plus via SQL*Net.  This mode was cobbled together

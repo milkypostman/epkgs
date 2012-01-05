@@ -5,8 +5,7 @@
  :provided   (move-and)
  :required   ((("cl" cl)))
  :keywords   (copy delete keys kill)
- :homepage   "http://www.emacswiki.org/DeleteKillAndCopy"
- :wikipage   "http://www.emacswiki.org/DeleteKillAndCopy"
+ :wikipage   "DeleteKillAndCopy"
  :commentary "\
 I just saw a blog where there was a complaint about the
 complexity of key-bindings for killing some piece of text which was

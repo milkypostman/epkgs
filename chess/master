@@ -1,5 +1,4 @@
 (:summary    "Play chess in Emacs"
- :repository (git . "git://github.com/jwiegley/emacs-chess.git")
  :created    "2001"
  :updated    "2001"
  :license    "GPL-2"
@@ -13,7 +12,7 @@
 	      (("pcomplete" pcomplete)))
  :keywords   (games)
  :homepage   "http://www.newartisans.com/software/emacs-chess.html"
- :wikipage   "http://www.emacswiki.org/ChessMode"
+ :wikipage   "ChessMode"
  :commentary "\
 Welcome to Emacs Chess, a chess playing module for GNU Emacs.
 

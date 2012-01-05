@@ -1,5 +1,4 @@
 (:summary    "Org table comment modes"
- :repository (git . "git://github.com/mlf176f2/org-table-comment.el.git")
  :created    "20110112"
  :updated    "20110407"
  :license    "GPL-3"

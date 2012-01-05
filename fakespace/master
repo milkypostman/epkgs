@@ -1,5 +1,4 @@
 (:summary    "Fake Emacs lisp namespaces"
- :repository (git . "git://github.com/skeeto/elisp-fakespace.git")
  :license    "public-domain"
  :provided   (fakespace)
  :required   ((("cl" cl)))

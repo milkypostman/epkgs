@@ -6,8 +6,7 @@
  :required   ((("cc-mode" cc-defs)
 	       ("cl" cl)
 	       ("eldoc" eldoc)))
- :homepage   "http://www.emacswiki.org/CEldocMode"
- :wikipage   "http://www.emacswiki.org/CEldocMode"
+ :wikipage   "CEldocMode"
  :commentary "\
 To enable: put the following in your .emacs file:
 

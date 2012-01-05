@@ -1,5 +1,4 @@
 (:summary    "Display metadata about code"
- :repository (git . "git://github.com/technomancy/augment.git")
  :created    "20071016"
  :updated    "2007"
  :license    "GPL-3"

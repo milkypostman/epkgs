@@ -7,8 +7,7 @@
  :provided   (auto-document)
  :required   ((("cl" cl)))
  :keywords   (convenience docs lisp)
- :homepage   "http://www.emacswiki.org/AutoDocument"
- :wikipage   "http://www.emacswiki.org/AutoDocument"
+ :wikipage   "AutoDocument"
  :commentary "\
 This package generates auto-generatable documents in the header in
 Emacs Lisp file. Currently it generates command list: command name

@@ -1,5 +1,4 @@
-(:repository (git . "git://github.com/Schnouki/Golbarg.git")
- :provided   (golbarg)
+(:provided   (golbarg)
  :required   ((("markdown-mode" markdown-mode)
 	       ("org" org)
 	       ("yaml-mode" yaml-mode)))

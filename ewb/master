@@ -4,7 +4,6 @@
  :license    "GPL-2"
  :provided   (ewb)
  :keywords   (browser net web)
- :homepage   "http://www.emacswiki.org/EmacsWebBrowser"
- :wikipage   "http://www.emacswiki.org/EmacsWebBrowser"
+ :wikipage   "EmacsWebBrowser"
  :commentary "\
 For entertainment purposes only")

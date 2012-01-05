@@ -6,8 +6,7 @@
  :maintainer ("Happy Kohpy" . "bonze.head@gmail.com")
  :provided   (longlines-jp)
  :keywords   (convenience wp)
- :homepage   "http://www.emacswiki.org/LongLinesJpMode"
- :wikipage   "http://www.emacswiki.org/LongLinesJpMode"
+ :wikipage   "LongLinesJpMode"
  :commentary "\
 longlines-jp-mode provide function like longlines-mode for Japanese text.
 

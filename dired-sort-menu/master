@@ -9,7 +9,7 @@
 	       ("emacs" dired easymenu wid-edit)))
  :keywords   (dialogue dired menu sort)
  :homepage   "http://centaur.maths.qmw.ac.uk/Emacs"
- :wikipage   "http://www.emacswiki.org/DiredSortMenu"
+ :wikipage   "DiredSortMenu"
  :commentary "\
 This package, which is intended for use with GNU Emacs 20/21,
 implements a menu and a dialogue that consist of a set of radio

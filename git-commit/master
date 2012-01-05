@@ -1,5 +1,4 @@
 (:summary    "Major mode for editing git commit messages"
- :repository (git . "git://github.com/rafl/git-commit-mode.git")
  :license    "GPL-2"
  :authors    (("Florian Ragwitz" . "rafl@debian.org"))
  :maintainer ("Florian Ragwitz" . "rafl@debian.org")

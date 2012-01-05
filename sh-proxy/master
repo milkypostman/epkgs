@@ -1,5 +1,4 @@
 (:summary    "Experiment with elisp proxies for shell commands"
- :repository (git . "git://github.com/jave/sh-proxy.git")
  :provided   (sh-proxy)
  :homepage   "https://github.com/jave/sh-proxy"
  :commentary "\

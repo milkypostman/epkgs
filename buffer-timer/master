@@ -1,8 +1,7 @@
-(:repository (git . "git://github.com/hardaker/elisp-buffer-timer.git")
- :created    "2004"
+(:created    "2004"
  :updated    "2004"
  :license    "GPL-2"
  :provided   (buffer-timer)
  :required   ((("gnus" gnus-spec)))
  :homepage   "https://github.com/hardaker/elisp-buffer-timer"
- :wikipage   "http://www.emacswiki.org/BufferTimer")
+ :wikipage   "BufferTimer")

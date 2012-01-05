@@ -7,8 +7,7 @@
  :provided   (look-mode)
  :required   (nil
 	      (("eimp" eimp)))
- :homepage   "http://www.emacswiki.org/LookMode"
- :wikipage   "http://www.emacswiki.org/LookMode"
+ :wikipage   "LookMode"
  :commentary "\
 This package provides a function to load a list of files into a
 temporary buffer for viewing.  The buffer (*look*) is writable,

@@ -1,5 +1,4 @@
-(:repository (git . "git://github.com/tibbe/haskell-style-guide.git")
- :created    "2009"
+(:created    "2009"
  :updated    "2009"
  :provided   (haskell-style)
  :homepage   "https://github.com/tibbe/haskell-style-guide")

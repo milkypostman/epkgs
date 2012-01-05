@@ -7,8 +7,7 @@
  :provided   (elunit)
  :required   ((("cl" cl)))
  :keywords   (tdd test unit)
- :homepage   "http://www.emacswiki.org/ElUnit"
- :wikipage   "http://www.emacswiki.org/ElUnit"
+ :wikipage   "ElUnit"
  :commentary "\
 Inspired by regress.el by Wayne Mesard and Tom Breton, Test::Unit
 by Nathaniel Talbott, and xUnit by Kent Beck

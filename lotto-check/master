@@ -1,5 +1,4 @@
 (:summary    "Simple API for Korean Lotto 645"
- :repository (hg . "http://bitbucket.org/kaisyu/lotto-check")
  :created    "2010"
  :updated    "2011"
  :license    "GPL-3"

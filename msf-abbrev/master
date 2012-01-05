@@ -7,7 +7,7 @@
  :provided   (msf-abbrev)
  :required   ((("cl" cl)))
  :homepage   "http://www.bloomington.in.us/~brutt/emacs.html"
- :wikipage   "http://www.emacswiki.org/MsfAbbrev"
+ :wikipage   "MsfAbbrev"
  :commentary "\
 This package allows you to place your abbrevs into your filesystem,
 in a special directory tree.  More information and a demo available at

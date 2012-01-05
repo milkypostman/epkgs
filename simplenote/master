@@ -1,5 +1,4 @@
 (:summary    "Interact with simple-note.appspot.com"
- :repository (git . "git://github.com/cefstat/simplenote.el.git")
  :created    "2009"
  :updated    "2010"
  :license    "GPL-2"

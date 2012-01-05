@@ -1,5 +1,4 @@
 (:summary    "Fetch Google Weather forecasts"
- :repository (git . "git://git.naquadah.org/google-weather-el.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"

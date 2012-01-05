@@ -1,7 +1,7 @@
-(:repository (svn . "http://ergoemacs.googlecode.com/svn")
- :created    "2007"
+(:created    "2007"
  :updated    "2009"
  :license    "GPL-2"
  :provided   (ergoemacs-mode)
  :keywords   (colemak dvorak ergonomic keybinding qwerty)
- :homepage   "http://ergoemacs.org")
+ :homepage   "http://ergoemacs.org"
+ :wikipage   "ergoemacs")

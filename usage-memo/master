@@ -9,8 +9,7 @@
 	       ("emacs" font-lock)
 	       ("view" view)))
  :keywords   (convenience docs help languages lisp tools)
- :homepage   "http://www.emacswiki.org/UsageMemo"
- :wikipage   "http://www.emacswiki.org/UsageMemo"
+ :wikipage   "UsageMemo"
  :commentary "\
 This program enables you to write annotation in *Help* and
 third-party help systems. When we do programming, we often use

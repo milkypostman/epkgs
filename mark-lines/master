@@ -6,8 +6,7 @@
  :maintainer ("Le wang (remove numbers)" . "lewang097@yahoo.com")
  :provided   (mark-lines)
  :keywords   (convenience editing region whole-line)
- :homepage   "http://www.emacswiki.org/MarkLines"
- :wikipage   "http://www.emacswiki.org/MarkLines"
+ :wikipage   "MarkLines"
  :commentary "\
 `mark-lines' provides whole line selection functionality.  The behaviour of
 triple-clicking mouse-1 is used as a model.

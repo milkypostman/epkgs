@@ -1,5 +1,4 @@
 (:summary    "Sunrise/Sunset Theme Changer for Emacs"
- :repository (git . "git://github.com/hadronzoo/theme-changer.git")
  :created    "2011"
  :updated    "2011"
  :license    "as-is"

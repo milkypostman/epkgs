@@ -4,7 +4,7 @@
  :license    "GPL-2"
  :authors    (("David Engster" . "dengste@eml.cc"))
  :maintainer ("David Engster" . "dengste@eml.cc")
- :wikipage   "http://www.emacswiki.org/ProfileDotEmacs"
+ :wikipage   "ProfileDotEmacs"
  :commentary "\
 This is to easily profile your Emacs init file (or any other
 script-like Emacs Lisp file, for that matter).

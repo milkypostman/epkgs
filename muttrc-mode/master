@@ -8,5 +8,4 @@
  :provided   (muttrc-mode)
  :required   ((("jka-compr" jka-compr)
 	       ("man" man)))
- :homepage   "http://www.emacswiki.org/MuttRc"
- :wikipage   "http://www.emacswiki.org/MuttRc")
+ :wikipage   "MuttRc")

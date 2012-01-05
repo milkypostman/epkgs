@@ -3,8 +3,7 @@
  :updated    "2002"
  :license    "GPL-2"
  :provided   (ricette-mode)
- :homepage   "http://www.emacswiki.org/RicetteMode"
- :wikipage   "http://www.emacswiki.org/RicetteMode"
+ :wikipage   "RicetteMode"
  :commentary "\
 Usare: Mettere la formula:
 

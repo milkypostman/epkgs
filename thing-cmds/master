@@ -10,8 +10,7 @@
 	       ("thingatpt" thingatpt))
 	      (("thingatpt+" thingatpt+)))
  :keywords   (region selection thing thingatpt)
- :homepage   "http://www.emacswiki.org/ThingAtPointCommands"
- :wikipage   "http://www.emacswiki.org/ThingAtPointCommands"
+ :wikipage   "ThingAtPointCommands"
  :commentary "\
 You can use the commands defined here to select or move to
  different kinds of text entities (\"things\") that are at or near

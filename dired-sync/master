@@ -1,11 +1,10 @@
 (:summary    "Sync directories within dired"
- :repository (git . "git://github.com/renard/dired-sync.git")
  :created    "20101202"
  :updated    "2010"
  :provided   (dired-sync)
  :keywords   (dired emacs rsync)
  :homepage   "https://github.com/renard/dired-sync"
- :wikipage   "http://www.emacswiki.org/DiredSync"
+ :wikipage   "DiredSync"
  :commentary "\
 dired-sync provide a simple and easy way to synchronize directories from
 dired. This tool is based upon both rsync(1) and ssh(1).

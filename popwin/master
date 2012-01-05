@@ -1,5 +1,4 @@
 (:summary    "Popup Window Manager"
- :repository (git . "git://github.com/m2ym/popwin-el.git")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-3"
@@ -12,7 +11,7 @@
 	       ("yatex" yatex)))
  :keywords   (convenience)
  :homepage   "https://github.com/m2ym/popwin-el"
- :wikipage   "http://www.emacswiki.org/PopWin"
+ :wikipage   "PopWin"
  :commentary "\
 Popwin makes you free from the hell of annoying buffers such like
 *Help*, *Completions*, *compilation*, and etc.

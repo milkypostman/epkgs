@@ -1,5 +1,4 @@
 (:summary    "VC-type mode for StarTeam"
- :repository (cvs . ":pserver:anonymous@starteam-el.cvs.sourceforge.net:/cvsroot/starteam-el")
  :created    "2002"
  :updated    "2002"
  :license    "GPL-2"
@@ -11,7 +10,7 @@
 	       ("vc" vc)))
  :keywords   (tools)
  :homepage   "http://sourceforge.net/projects/starteam-el"
- :wikipage   "http://www.emacswiki.org/StarTeam"
+ :wikipage   "StarTeam"
  :commentary "\
 Contributors:
   Matthew O. Smith

@@ -7,8 +7,7 @@
  :provided   (dired-lis)
  :required   ((("dired-isearch" dired-isearch)))
  :keywords   (dired isearch letter)
- :homepage   "http://www.emacswiki.org/DiredLis"
- :wikipage   "http://www.emacswiki.org/DiredLis"
+ :wikipage   "DiredLis"
  :commentary "\
 This library dired-lis (dired letter isearch) let you isearch in
 `dired-mode'.  You only need press letter like in TC(Total commander), not

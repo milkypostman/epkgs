@@ -9,8 +9,7 @@
 	      (("misc-fns" misc-fns)
 	       ("strings" strings)))
  :keywords   (extensions internal local)
- :homepage   "http://www.emacswiki.org/FilesPlus"
- :wikipage   "http://www.emacswiki.org/FilesPlus"
+ :wikipage   "FilesPlus"
  :commentary "\
 Enhancements of standard library `files.el'.
 

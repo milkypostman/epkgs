@@ -11,8 +11,7 @@
 	       ("frame-cmds" frame-cmds)
 	       ("zoom-frm" zoom-frm)))
  :keywords   (frames local)
- :homepage   "http://www.emacswiki.org/OneOnOneEmacs"
- :wikipage   "http://www.emacswiki.org/OneOnOneEmacs"
+ :wikipage   "OneOnOneEmacs"
  :commentary "\
 Frame configuration that uses one frame per window.
 

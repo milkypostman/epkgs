@@ -1,5 +1,4 @@
 (:summary    "An interface using w3m with cppreference.com references on Emacs"
- :repository (git . "git://github.com/whitypig/ya-cppref.git")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-3"

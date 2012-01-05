@@ -1,5 +1,4 @@
 (:summary    "Image manupulation extensions for Emacs"
- :repository (git . "git://github.com/mhayashi1120/Emacs-imagex.git")
  :license    "GPL-3"
  :authors    (("Masahiro Hayashi" . "mhayashi1120@gmail.com"))
  :maintainer ("Masahiro Hayashi" . "mhayashi1120@gmail.com")

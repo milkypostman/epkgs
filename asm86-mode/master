@@ -6,7 +6,7 @@
  :maintainer ("Gabe Wenz" . "wenz@ugcs.caltech.edu")
  :keywords   (intel)
  :homepage   "http://wolverine.caltech.edu/tools/emacs86/overview.htm"
- :wikipage   "http://www.emacswiki.org/Asm86Mode"
+ :wikipage   "Asm86Mode"
  :commentary "\
 Provides support for Asm86 assembly editing. The features and
 details are discussed in reasonable detail in the major mode

@@ -8,7 +8,7 @@
  :required   ((("url" url)
 	       ("w3" w3)))
  :keywords   (data)
- :wikipage   "http://www.emacswiki.org/StockQuote"
+ :wikipage   "StockQuote"
  :commentary "\
 A simple mode for snarfing stock quotes.
 

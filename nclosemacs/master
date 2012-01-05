@@ -3,4 +3,4 @@
 	       ("eieio" eieio-base)
 	       (nil tree)))
  :homepage   "http://code.google.com/p/nclosemacs"
- :wikipage   "http://www.emacswiki.org/NClosEmacs")
+ :wikipage   "NClosEmacs")

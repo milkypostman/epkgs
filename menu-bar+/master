@@ -16,8 +16,7 @@
 	       ("unaccent" unaccent)
 	       ("w32browser-dlgopen" w32browser-dlgopen)))
  :keywords   (convenience internal local)
- :homepage   "http://www.emacswiki.org/HelpMenuBarPlus"
- :wikipage   "http://www.emacswiki.org/HelpMenuBarPlus"
+ :wikipage   "HelpMenuBarPlus"
  :commentary "\
 Extensions to `menu-bar.el'.  Redefines the default menu bar.
 

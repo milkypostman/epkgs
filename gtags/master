@@ -1,5 +1,4 @@
-(:repository (svn . "http://google-gtags.googlecode.com/svn")
- :updated    "2004"
+(:updated    "2004"
  :license    "GPL-2"
  :authors    (("Piaw Na, Arthur A. Gleckler, Leandro Groisman, Phil Sung"))
  :maintainer ("Piaw Na, Arthur A. Gleckler, Leandro Groisman, Phil Sung")
@@ -9,4 +8,4 @@
 	       ("etags" etags)
 	       ("tree-widget" tree-widget)))
  :homepage   "http://code.google.com/p/google-gtags"
- :wikipage   "http://www.emacswiki.org/GnuGlobal")
+ :wikipage   "GnuGlobal")

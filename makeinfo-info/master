@@ -8,7 +8,7 @@
  :required   ((("info" info)
 	       ("makeinfo" makeinfo)))
  :keywords   (docs tex)
- :wikipage   "http://www.emacswiki.org/MakeinfoInfo"
+ :wikipage   "MakeinfoInfo"
  :commentary "\
 This code extends `makeinfo-buffer' (C-c C-m C-b) in two ways,
 

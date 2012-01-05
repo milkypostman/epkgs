@@ -1,5 +1,4 @@
 (:summary    "Project utils"
- :repository (git . "git://github.com/fgallina/projutils.el.git")
  :created    "201107"
  :updated    "2011"
  :license    "GPL-3"

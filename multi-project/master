@@ -1,5 +1,4 @@
 (:summary    "Easily work with multiple projects"
- :repository (hg . "http://bitbucket.org/ellisvelo/multi-project")
  :updated    "20100928"
  :license    "GPL-2"
  :authors    (("Shawn Ellis" . "shawn.ellis17@gmail.com"))

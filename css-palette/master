@@ -6,7 +6,7 @@
 	       ("nxhtml" css-color)))
  :keywords   (css extensions multimedia processes tools)
  :homepage   "http://niels.kicks-ass.org/"
- :wikipage   "http://www.emacswiki.org/CssPalette"
+ :wikipage   "CssPalette"
  :commentary "\
 css-palette defines commands to have \"palettes\" inside a block
 comment to circumvent the absence of (color or other) variable

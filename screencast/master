@@ -6,8 +6,7 @@
  :maintainer ("Esben Andreasen" . "esbenandreasen@gmail.com")
  :provided   (screencast)
  :keywords   (demo screencast)
- :homepage   "http://www.emacswiki.org/ScreencastMode"
- :wikipage   "http://www.emacswiki.org/ScreencastMode"
+ :wikipage   "ScreencastMode"
  :commentary "\
 This file allows you to create video-like sessions, which
 demonstrates the capabilities of Emacs.")

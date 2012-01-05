@@ -1,5 +1,4 @@
 (:summary    "Simple tool for accessing yammer.com"
- :repository (git . "git://github.com/psanford/emacs-yammer.git")
  :created    "2009"
  :updated    "2009"
  :license    "GPL-3"

@@ -1,5 +1,4 @@
 (:summary    "Major mode for editing the song files of Patacrep songbook"
- :repository (git . "git://github.com/crep4ever/songbook-emacs-mode.git")
  :created    "201028"
  :updated    "2010"
  :license    "GPL-2"

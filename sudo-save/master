@@ -5,8 +5,7 @@
  :authors    (("Kevin A. Burton" . "burton@peerfear.org"))
  :maintainer ("Kevin A. Burton" . "burton@peerfear.org")
  :provided   (sudo-save)
- :homepage   "http://www.emacswiki.org/SudoSave"
- :wikipage   "http://www.emacswiki.org/SudoSave"
+ :wikipage   "SudoSave"
  :commentary "\
 Use `write-file-hooks' and `after-save-hook' to run \"sudo chown ... \" before
 AND after file save.  This allows the Emacs process to grant ownership to the

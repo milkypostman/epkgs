@@ -7,8 +7,7 @@
  :provided   (git-dwim)
  :required   ((("cl" cl)))
  :keywords   (convenience git tools)
- :homepage   "http://www.emacswiki.org/GitDwim"
- :wikipage   "http://www.emacswiki.org/GitDwim"
+ :wikipage   "GitDwim"
  :commentary "\
 This file provides context-aware git commands.
 Currently only `git-branch-next-action'.

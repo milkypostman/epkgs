@@ -6,8 +6,7 @@
  :maintainer ("Andy Stewart" . "lazycat.manatee@gmail.com")
  :provided   (mail-notify)
  :keywords   (mail notify)
- :homepage   "http://www.emacswiki.org/MailNotify"
- :wikipage   "http://www.emacswiki.org/MailNotify"
+ :wikipage   "MailNotify"
  :commentary "\
 This package is for notify you when have new mail.
 And it just do a sentinel for mail receive directory.

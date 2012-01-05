@@ -1,5 +1,4 @@
 (:summary    "Auto Completion source for clang for GNU Emacs"
- :repository (git . "git://github.com/brianjcj/auto-complete-clang.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"

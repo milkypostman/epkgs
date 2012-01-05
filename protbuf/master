@@ -7,7 +7,7 @@
  :provided   (protbuf)
  :keywords   (extensions)
  :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
- :wikipage   "http://www.emacswiki.org/ProtBuf"
+ :wikipage   "ProtBuf"
  :commentary "\
 This package allows you to make it harder to kill buffers accidentally,
 e.g. by being too trigger happy selecting items in the buffer menu.

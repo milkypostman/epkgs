@@ -1,5 +1,4 @@
 (:summary    "Clusterssh implementation for emacs"
- :repository (git . "git://github.com/dimitri/cssh.git")
  :created    "20080926"
  :updated    "2008"
  :authors    (("Dimitri Fontaine" . "dim@tapoueh.org"))
@@ -13,4 +12,4 @@
 	       ("tramp" tramp)))
  :keywords   (clusterssh cssh ssh)
  :homepage   "http://tapoueh.org/projects.html#sec17"
- :wikipage   "http://www.emacswiki.org/ClusterSSH")
+ :wikipage   "ClusterSSH")

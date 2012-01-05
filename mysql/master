@@ -1,5 +1,4 @@
 (:summary    "Mysql front-end"
- :repository (git . "git://github.com/haxney/mysql.git")
  :created    "2006"
  :updated    "20060824"
  :license    "GPL-2"
@@ -8,7 +7,7 @@
  :provided   (mysql)
  :required   ((("cl" cl)))
  :homepage   "https://github.com/haxney/mysql"
- :wikipage   "http://www.emacswiki.org/MySql"
+ :wikipage   "MySql"
  :commentary "\
 Put this file into your load-path and the following into your ~/.emacs:
   (require 'mysql)")

@@ -6,8 +6,7 @@
  :maintainer ("Drew Adams")
  :provided   (lacarte)
  :keywords   (abbrev command completion extensions help internal keys local matching menu menu-bar minibuffer)
- :homepage   "http://www.emacswiki.org/LaCarte"
- :wikipage   "http://www.emacswiki.org/LaCarte"
+ :wikipage   "LaCarte"
  :commentary "\
 Q. When is a menu not a menu?  A. When it's a la carte.
 

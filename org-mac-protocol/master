@@ -1,5 +1,4 @@
 (:summary    "Process events triggered by the"
- :repository (git . "git://github.com/claviclaws/org-mac-protocol.git")
  :created    "2009"
  :updated    "2010"
  :license    "GPL-3"

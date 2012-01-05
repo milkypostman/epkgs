@@ -4,8 +4,7 @@
  :license    "GPL-2"
  :provided   (keyboard-macro-timer)
  :keywords   (convenience keyboard\ macros timers)
- :homepage   "http://www.emacswiki.org/KeyboardMacroTimer"
- :wikipage   "http://www.emacswiki.org/KeyboardMacroTimer"
+ :wikipage   "KeyboardMacroTimer"
  :commentary "\
 Sometimes I record a small keyboard macro just to run some simple
 command over and over again, each X number of seconds, often to

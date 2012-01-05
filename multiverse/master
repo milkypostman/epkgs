@@ -4,8 +4,7 @@
  :license    "GPL-2"
  :provided   (multiverse)
  :required   ((("cl" cl)))
- :homepage   "http://www.emacswiki.org/Multiverse"
- :wikipage   "http://www.emacswiki.org/Multiverse"
+ :wikipage   "Multiverse"
  :commentary "\
 Sometimes during programming I want to make experimental
 modifications on a file and also want to be able to return to the

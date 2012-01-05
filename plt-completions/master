@@ -5,8 +5,7 @@
 	       ("emacs" derived)
 	       ("scheme" scheme)
 	       ("thingatpt" thingatpt)))
- :homepage   "http://www.emacswiki.org/PltCompletions"
- :wikipage   "http://www.emacswiki.org/PltCompletions"
+ :wikipage   "PltCompletions"
  :commentary "\
 The overall idea behind this is to provide completion
 functionality when using plt scheme.

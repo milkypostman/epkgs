@@ -1,5 +1,4 @@
-(:repository (git . "git://github.com/mattkeller/etags-update.git")
- :created    "2009"
+(:created    "2009"
  :updated    "2009"
  :license    "GPL-2"
  :provided   (etags-update)

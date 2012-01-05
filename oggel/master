@@ -7,8 +7,7 @@
  :provided   (oggel)
  :required   ((("cl" cl)))
  :keywords   (encoding ogg-vorbis ripping)
- :homepage   "http://www.emacswiki.org/OggelMode"
- :wikipage   "http://www.emacswiki.org/OggelMode"
+ :wikipage   "OggelMode"
  :commentary "\
 There seems no good tool in Emacs (except eshell :) to encode a cd
 or single tracks to the great ogg-vorbis format.  Although there

@@ -1,5 +1,4 @@
 (:summary    "Modes for editing Gentoo specific files"
- :repository (svn . "svn://anonsvn.gentoo.org/emacs/gentoo-syntax")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-2"
@@ -12,4 +11,5 @@
 	       ("sh-script" sh-script)
 	       ("skeleton" skeleton)))
  :keywords   (languages processes)
- :homepage   "http://www.gentoo.org/proj/en/lisp/emacs/emacs.xml")
+ :homepage   "http://www.gentoo.org/proj/en/lisp/emacs/emacs.xml"
+ :wikipage   "GentooSyntax")

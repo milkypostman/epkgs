@@ -1,5 +1,4 @@
 (:summary    "Client library for the Wordnik API"
- :repository (git . "git://github.com/hober/wordnik-el.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"

@@ -7,8 +7,7 @@
  :provided   (sql-with-placeholders)
  :required   ((("sql" sql)))
  :keywords   (sql)
- :homepage   "http://www.emacswiki.org/SqlWithPlaceholders"
- :wikipage   "http://www.emacswiki.org/SqlWithPlaceholders"
+ :wikipage   "SqlWithPlaceholders"
  :commentary "\
 This set of functions are used to process queries with
 placeholders like ':var'. Statement is parsed for those, then user

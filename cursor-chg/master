@@ -6,8 +6,7 @@
  :maintainer ("Drew Adams")
  :provided   (cursor-chg)
  :keywords   (accessibility cursor)
- :homepage   "http://www.emacswiki.org/ChangingCursorDynamically"
- :wikipage   "http://www.emacswiki.org/ChangingCursorDynamically"
+ :wikipage   "ChangingCursorDynamically"
  :commentary "\
 This library provides three kinds of changes to the text cursor:
 

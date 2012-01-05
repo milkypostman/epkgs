@@ -6,8 +6,7 @@
  :maintainer ("Alex Schroeder" . "alex@gnu.org")
  :provided   (toolbox)
  :keywords   (convenience)
- :homepage   "http://www.emacswiki.org/ToolBox"
- :wikipage   "http://www.emacswiki.org/ToolBox"
+ :wikipage   "ToolBox"
  :commentary "\
 Run M-x toolbox to create a toolbox buffer.  A toolbox buffer has
 an ordinary buffer associated with it.  The name of the toolbox

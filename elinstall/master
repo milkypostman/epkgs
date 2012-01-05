@@ -1,5 +1,4 @@
-(:repository (git . "git://repo.or.cz/elinstall.git")
- :created    "2010"
+(:created    "2010"
  :updated    "2010"
  :license    "GPL-2"
  :authors    (("Tom Breton (Tehom)" . "tehom@panix.com"))
@@ -10,4 +9,4 @@
 	      (("emacs" byte-compile)))
  :keywords   (internal maint tools)
  :homepage   "http://repo.or.cz/w/elinstall.git"
- :wikipage   "http://www.emacswiki.org/elinstall")
+ :wikipage   "elinstall")

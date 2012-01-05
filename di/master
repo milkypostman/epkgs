@@ -2,5 +2,4 @@
  :created    "1998"
  :updated    "1998"
  :provided   (di)
- :homepage   "http://www.emacswiki.org/DiMode"
- :wikipage   "http://www.emacswiki.org/DiMode")
+ :wikipage   "DiMode")

@@ -9,7 +9,7 @@
 	       ("po" po)
 	       (nil po-compat)))
  :keywords   (data)
- :wikipage   "http://www.emacswiki.org/MoMode"
+ :wikipage   "MoMode"
  :commentary "\
 This code adds decoding and viewing of .mo and .gmo message catalogue
 files from Gettext (http://www.gnu.org/software/gettext/).

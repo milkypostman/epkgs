@@ -7,6 +7,6 @@
 	       (nil edbcore)))
  :keywords   (database edb forms)
  :homepage   "http://www.gnuvola.org/software/edb"
- :wikipage   "http://www.emacswiki.org/EmacsDataBase"
+ :wikipage   "EmacsDataBase"
  :commentary "\
 EDB is a flexible, customizable database program for Emacs.")

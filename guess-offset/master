@@ -7,8 +7,7 @@
  :provided   (guess-offset)
  :required   ((("cc-mode" cc-vars)))
  :keywords   (c-basic-offset c-mode indent)
- :homepage   "http://www.emacswiki.org/GuessOffset"
- :wikipage   "http://www.emacswiki.org/GuessOffset"
+ :wikipage   "GuessOffset"
  :commentary "\
 A hook for C, C++ and Java modes that guesses the indentation
 offset used in an existing C-like source code.

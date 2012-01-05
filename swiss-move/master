@@ -5,7 +5,7 @@
  :provided   (swiss-move)
  :keywords   (tools user)
  :homepage   "http://www.skamphausen.de/cgi-bin/ska/swiss-move"
- :wikipage   "http://www.emacswiki.org/SwissMove"
+ :wikipage   "SwissMove"
  :commentary "\
 - Moving one line at a time is slow, but precise.
 - Moving in screenfulls (aka scrolling) ist not fast enough for

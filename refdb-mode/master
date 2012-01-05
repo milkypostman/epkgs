@@ -1,5 +1,4 @@
 (:summary    "Minor mode for RefDB interaction"
- :repository (svn . "https://refdb.svn.sourceforge.net/svnroot/refdb")
  :created    "20031104"
  :updated    "2007"
  :license    "GPL-2"
@@ -10,4 +9,4 @@
  :required   ((("emacs" derived easy-mmode easymenu)))
  :keywords   (bibliography docbook tei xml)
  :homepage   "http://refdb.sourceforge.net"
- :wikipage   "http://www.emacswiki.org/RefdbMode")
+ :wikipage   "RefdbMode")

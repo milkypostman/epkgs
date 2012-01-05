@@ -1,5 +1,4 @@
 (:summary    "Automatically create Emacs-Lisp Yasnippets"
- :repository (git . "git://github.com/mlf176f2/el-autoyas.el.git")
  :created    "20111121"
  :updated    "20111128"
  :license    "GPL-3"

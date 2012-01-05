@@ -1,5 +1,4 @@
 (:summary    "Server that responds to edit requests from Chrome"
- :repository (git . "git://github.com/stsquad/emacs_chrome.git")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-3"

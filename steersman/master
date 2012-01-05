@@ -8,8 +8,7 @@
  :required   ((("doctor" doctor)
 	       ("jabber" jabber)))
  :keywords   (jabber remote xmpp)
- :homepage   "http://www.emacswiki.org/Steersman"
- :wikipage   "http://www.emacswiki.org/Steersman"
+ :wikipage   "Steersman"
  :commentary "\
 The word \"Cybernetics\" comes from the Greek word for
 steersman. Steersman is a library for remotely controlling an Emacs

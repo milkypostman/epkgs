@@ -1,5 +1,4 @@
 (:summary    "Narrow-to-region that operates recursively"
- :repository (git . "git://github.com/nflath/recursive-narrow.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"

@@ -5,8 +5,7 @@
  :maintainer ("Matt Armstrong" . "matt@xxxxxxxxxx")
  :provided   (dirvars)
  :keywords   (files)
- :homepage   "http://www.emacswiki.org/DirVarsPackage"
- :wikipage   "http://www.emacswiki.org/DirVarsPackage"
+ :wikipage   "DirVarsPackage"
  :commentary "\
 Emacs allows you to specify local variable values for use when
 editing a file either in the first line or in a local variables

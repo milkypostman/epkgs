@@ -6,8 +6,7 @@
  :maintainer ("Markus Sauermann" . "mhoram@gmx.de")
  :provided   (aes)
  :keywords   (data tools)
- :homepage   "http://www.emacswiki.org/AdvancedEncryptionStandard"
- :wikipage   "http://www.emacswiki.org/AdvancedEncryptionStandard"
+ :wikipage   "AdvancedEncryptionStandard"
  :commentary "\
 Config file
 Insert \"(require 'aes)\" into your local .emacs file to load this library.

@@ -1,5 +1,4 @@
-(:repository (git . "git://github.com/tortkis/mew-unread.git")
- :created    "2011"
+(:created    "2011"
  :updated    "2011"
  :provided   (mew-unread)
  :required   ((("mew" mew)))

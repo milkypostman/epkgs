@@ -7,8 +7,7 @@
  :provided   (mu)
  :required   ((("emacs" comint)))
  :keywords   (comm games)
- :homepage   "http://www.emacswiki.org/MushMode"
- :wikipage   "http://www.emacswiki.org/MushMode"
+ :wikipage   "MushMode"
  :commentary "\
 This is is a MUSH or MUD client.  Instead of using telnet or
 standalone client to connect to your favorite MUSH or MUD, you can

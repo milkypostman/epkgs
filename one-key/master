@@ -8,8 +8,7 @@
  :provided   (one-key one-key-config one-key-default)
  :required   ((("cl" cl)))
  :keywords   (one-key)
- :homepage   "http://www.emacswiki.org/OneKey"
- :wikipage   "http://www.emacswiki.org/OneKey"
+ :wikipage   "OneKey"
  :commentary "\
 With so many Emacs extensions, you have a lot of keystrokes to remember, and you probably forget most of them.
 

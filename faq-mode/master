@@ -4,7 +4,7 @@
  :authors    (("Yu Li"))
  :maintainer ("Yu Li")
  :provided   (faq-mode)
- :wikipage   "http://www.emacswiki.org/FaqMode"
+ :wikipage   "FaqMode"
  :commentary "\
 This file is not part of GNU Emacs.
 

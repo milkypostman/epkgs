@@ -1,5 +1,4 @@
-(:repository (git . "git://github.com/toddsundsted/rmoo.git")
- :updated    "20001018"
+(:updated    "20001018"
  :authors    (("mattcampbell"))
  :maintainer ("mattcampbell")
  :provided   (emacspeak-rmoo mcp rmoo rmoo-autoload rmoo-code rmoo-list rmoo-local-edit rmoo-mail rmoo-mcp rmoo-objects rmoo-text)

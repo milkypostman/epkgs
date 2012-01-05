@@ -5,5 +5,4 @@
  :authors    ((nil . "peterm@srl.caltech.edu"))
  :maintainer (nil . "peterm@srl.caltech.edu")
  :provided   (arxiv-mode)
- :homepage   "http://www.emacswiki.org/ArxivReader"
- :wikipage   "http://www.emacswiki.org/ArxivReader")
+ :wikipage   "ArxivReader")

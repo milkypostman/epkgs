@@ -2,4 +2,4 @@
  :provided   (dictem)
  :required   ((("cl" cl)))
  :homepage   "http://sourceforge.net/projects/dictem"
- :wikipage   "http://www.emacswiki.org/DictEm")
+ :wikipage   "DictEm")

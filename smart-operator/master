@@ -6,7 +6,7 @@
  :maintainer ("William Xu" . "william.xwl@gmail.com")
  :provided   (smart-operator)
  :homepage   "http://xwl.appspot.com"
- :wikipage   "http://www.emacswiki.org/SmartOperator"
+ :wikipage   "SmartOperator"
  :commentary "\
 When typing operators, this package can automatically insert spaces
 before and after operators. For instance, `=' will become ` = ', `+='

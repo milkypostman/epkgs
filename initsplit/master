@@ -1,5 +1,4 @@
 (:summary    "Code to split customizations into different files"
- :repository (git . "git://github.com/dabrahams/initsplit.git")
  :created    "20000208"
  :updated    "2001"
  :license    "GPL-2"
@@ -11,7 +10,7 @@
 	       ("find-func" find-func)))
  :keywords   (lisp)
  :homepage   "https://github.com/dabrahams/initsplit"
- :wikipage   "http://www.emacswiki.org/InitSplit"
+ :wikipage   "InitSplit"
  :commentary "\
 This file allows you to split Emacs customizations (set via M-x
 customize) into different files, based on the names of the

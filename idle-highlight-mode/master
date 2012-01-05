@@ -1,5 +1,4 @@
 (:summary    "Highlight the word the point is on"
- :repository (git . "git://github.com/nonsequitur/idle-highlight-mode.git")
  :created    "20080513"
  :updated    "2011"
  :license    "GPL-3"
@@ -9,7 +8,7 @@
  :required   ((("thingatpt" thingatpt)))
  :keywords   (convenience)
  :homepage   "https://github.com/nonsequitur/idle-highlight-mode"
- :wikipage   "http://www.emacswiki.org/IdleHighlight"
+ :wikipage   "IdleHighlight"
  :commentary "\
 Based on some snippets by fledermaus from the #emacs channel.
 

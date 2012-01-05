@@ -8,7 +8,7 @@
  :required   ((("regexp-opt" regexp-opt)
 	       ("reporter" reporter)))
  :keywords   (languages)
- :wikipage   "http://www.emacswiki.org/UniBASICMode"
+ :wikipage   "UniBASICMode"
  :commentary "\
 -----------
 

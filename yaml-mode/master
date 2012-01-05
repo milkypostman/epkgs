@@ -1,5 +1,4 @@
 (:summary    "Major mode for editing YAML files"
- :repository (git . "git://github.com/yoshiki/yaml-mode.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-2"
@@ -9,7 +8,7 @@
  :provided   (yaml-mode)
  :keywords   (data yaml)
  :homepage   "https://github.com/yoshiki/yaml-mode"
- :wikipage   "http://www.emacswiki.org/YamlMode"
+ :wikipage   "YamlMode"
  :commentary "\
 This is a major mode for editing files in the YAML data
 serialization format.  It was initially developed by Yoshiki

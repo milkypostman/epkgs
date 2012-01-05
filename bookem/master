@@ -1,5 +1,4 @@
-(:repository (git . "git://github.com/kjfletch/bookem-el.git")
- :created    "2010"
+(:created    "2010"
  :updated    "2010"
  :license    "GPL-3"
  :authors    (("Kevin J. Fletcher" . "kevinjohn.fletcher@googlemail.com"))

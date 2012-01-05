@@ -1,5 +1,4 @@
 (:summary    "Time-stamp: <2011-02-04 10:12:13 sharik>"
- :repository (git . "git://github.com/pft/mingus.git")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-2"
@@ -15,7 +14,7 @@
 	       (nil taggit)))
  :keywords   (elisp mpd multimedia music)
  :homepage   "https://github.com/pft/mingus"
- :wikipage   "http://www.emacswiki.org/Mingus"
+ :wikipage   "Mingus"
  :commentary "\
 Mingus is a client for the Music Player Daemon (MPD). It provides an
 interactive interface, where most emphasis lies on on-screen display/editing

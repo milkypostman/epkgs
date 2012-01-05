@@ -5,12 +5,12 @@
  :authors    (("Matthew L. Fidler"))
  :maintainer ("Matthew L. Fidler")
  :provided   (color-theme-emacs-revert-theme color-theme-vim-insert-mode key-choices)
- :required   ((("color-theme" color-theme)
-	       ("emacs" easymenu)
+ :required   ((("emacs" easymenu)
 	       ("ergoemacs" ergoemacs-mode)
 	       ("vimpulse" vimpulse)
 	       ("viper" viper)
-	       ("viper-in-more-modes" viper-in-more-modes)))
+	       ("viper-in-more-modes" viper-in-more-modes)
+	       (nil color-theme)))
  :keywords   (crisp cua edt ergoemacs tpu viper)
  :commentary "\
 Put the library key-choices.el in the load path and then put

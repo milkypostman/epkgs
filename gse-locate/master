@@ -2,4 +2,4 @@
  :maintainer ("Scott Evans" . "gse@antisleep.com")
  :provided   (gse-locate)
  :homepage   "http://antisleep.com/elisp"
- :wikipage   "http://www.emacswiki.org/LocateMode")
+ :wikipage   "LocateMode")

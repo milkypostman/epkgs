@@ -1,5 +1,4 @@
 (:summary    "Flip between test and implementation in a rails project"
- :repository (git . "git://github.com/mbriggs/rails-test-toggler.git")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-3"

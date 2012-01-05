@@ -7,8 +7,7 @@
  :provided   (hexview-mode)
  :required   ((("cl" cl)))
  :keywords   (fast hex user\ interface view)
- :homepage   "http://www.emacswiki.org/HexviewMode"
- :wikipage   "http://www.emacswiki.org/HexviewMode"
+ :wikipage   "HexviewMode"
  :commentary "\
 This package provides a user-interface for hex viewing large file!!
 Hexview mode can open a 5GB file within a second. If you often need

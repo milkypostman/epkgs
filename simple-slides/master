@@ -1,4 +1,3 @@
-(:repository (git . "git://github.com/joodie/emacs-simple-slides.git")
- :license    "GPL-2"
+(:license    "GPL-2"
  :provided   (simple-slides)
  :homepage   "https://github.com/joodie/emacs-simple-slides")

@@ -1,5 +1,4 @@
 (:summary    "Elpoint -- Yet Another Presentation Tool for Emacsen"
- :repository (cvs . ":pserver:anonymous@elpoint.cvs.sourceforge.net:/cvsroot/elpoint")
  :created    "2002"
  :updated    "2002"
  :license    "GPL-2"
@@ -13,4 +12,4 @@
 	       ("w3m" w3m)))
  :keywords   (presentation)
  :homepage   "http://elpoint.sourceforge.net"
- :wikipage   "http://www.emacswiki.org/Elpoint")
+ :wikipage   "Elpoint")

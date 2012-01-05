@@ -1,5 +1,4 @@
 (:summary    "Major mode for editing PHP code"
- :repository (svn . "https://php-mode.svn.sourceforge.net/svnroot/php-mode")
  :created    "19990517"
  :updated    "20081212"
  :license    "GPL-3"
@@ -12,7 +11,7 @@
 	       ("regexp-opt" regexp-opt)
 	       ("speedbar" speedbar)))
  :keywords   (languages oop php)
- :wikipage   "http://www.emacswiki.org/PhpMode"
+ :wikipage   "PhpMode"
  :commentary "\
 PHP mode is a major mode for editing PHP 3 and 4 source code.  It's
 an extension of C mode; thus it inherits all C mode's navigation

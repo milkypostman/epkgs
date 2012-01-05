@@ -3,7 +3,7 @@
  :updated    "2002"
  :license    "GPL-2"
  :keywords   (hi-lock mule)
- :wikipage   "http://www.emacswiki.org/BufferCharset"
+ :wikipage   "BufferCharset"
  :commentary "\
 - display-buffer-charsets
     Displays list of charsets used in current buffer.

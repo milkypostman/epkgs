@@ -1,5 +1,4 @@
 (:summary    "Save opened files across sessions"
- :repository (git . "git://github.com/nflath/save-visited-files.git")
  :created    "2009"
  :updated    "2009"
  :license    "GPL-3"
@@ -7,7 +6,7 @@
  :maintainer ("Nathaniel Flath" . "nflath@gmail.com")
  :provided   (save-visited-files)
  :homepage   "https://github.com/nflath/save-visited-files"
- :wikipage   "http://www.emacswiki.org/save-visited-files"
+ :wikipage   "save-visited-files"
  :commentary "\
 save-visited-files is a lightweight version of Desktop.el that
 only save the files you have open(currently).  This was created because I

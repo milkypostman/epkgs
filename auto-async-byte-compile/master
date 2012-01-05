@@ -7,8 +7,7 @@
  :provided   (auto-async-byte-compile)
  :required   ((("cl" cl)))
  :keywords   (convenience lisp)
- :homepage   "http://www.emacswiki.org/AutoAsyncByteCompile"
- :wikipage   "http://www.emacswiki.org/AutoAsyncByteCompile"
+ :wikipage   "AutoAsyncByteCompile"
  :commentary "\
 Automatically byte-comple elisp files ASYNCHRONOUSLY when saved.
 It invokes \"emacs -Q --batch --eval '(setq load-path ...)'

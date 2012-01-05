@@ -1,5 +1,4 @@
 (:summary    "Highlight mode for Extended Backus-Naur Form"
- :repository (git . "git://github.com/jeramey/ebnf-mode.git")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-3"

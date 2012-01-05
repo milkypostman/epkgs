@@ -1,5 +1,4 @@
 (:summary    "Emacs client for faraday's book"
- :repository (git . "git://github.com/icylisper/faradays-book.el.git")
  :license    "GPL-2"
  :provided   (frb)
  :required   ((("cl" cl)

@@ -6,8 +6,7 @@
  :maintainer ("Vinicius Jose Latorre" . "viniciusjl@ig.com.br")
  :provided   (rational)
  :keywords   (curiosity data mathematics)
- :homepage   "http://www.emacswiki.org/RationalNumber"
- :wikipage   "http://www.emacswiki.org/RationalNumber"
+ :wikipage   "RationalNumber"
  :commentary "\
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 

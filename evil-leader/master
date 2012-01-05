@@ -1,5 +1,4 @@
 (:summary    "Let there be <leader>"
- :repository (git . "git://github.com/cofi/evil-leader.git")
  :created    "20110913"
  :updated    "2011"
  :license    "GPL-3"

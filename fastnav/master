@@ -3,5 +3,4 @@
  :updated    "2010"
  :license    "GPL-2"
  :provided   (fastnav)
- :homepage   "http://www.emacswiki.org/FastNav"
- :wikipage   "http://www.emacswiki.org/FastNav")
+ :wikipage   "FastNav")

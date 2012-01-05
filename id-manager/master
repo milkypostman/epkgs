@@ -1,5 +1,4 @@
 (:summary    "Id-password management "
- :repository (git . "git://github.com/kiwanami/emacs-id-manager.git")
  :created    "2009"
  :updated    "20110221"
  :license    "GPL-3"

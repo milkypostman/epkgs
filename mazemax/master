@@ -6,8 +6,7 @@
  :maintainer ("Michele Bini" . "mibin@libero.it")
  :provided   (mazemax)
  :keywords   (games)
- :homepage   "http://www.emacswiki.org/MazeMax"
- :wikipage   "http://www.emacswiki.org/MazeMax"
+ :wikipage   "MazeMax"
  :commentary "\
 mazemax.el lets you to play around with mazes in an Emacs buffer.
 

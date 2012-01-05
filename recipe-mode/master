@@ -1,5 +1,4 @@
 (:summary    "A mode to make writing, finding recipes easy"
- :repository (git . "git://github.com/sshelagh/recipe-mode.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-2"

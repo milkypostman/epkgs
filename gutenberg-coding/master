@@ -5,7 +5,7 @@
  :authors    (("Kevin Ryde" . "user42@zip.com.au"))
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (gutenberg-coding)
- :wikipage   "http://www.emacswiki.org/GutenbergCoding"
+ :wikipage   "GutenbergCoding"
  :commentary "\
 This is a spot of code for getting the right coding system when visiting
 an EBook or Etext from Project Gutenberg,

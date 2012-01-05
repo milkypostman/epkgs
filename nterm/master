@@ -6,7 +6,7 @@
  :required   ((("cl" cl)))
  :keywords   (shell terminal)
  :homepage   "http://kanis.fr/nterm.html"
- :wikipage   "http://www.emacswiki.org/NewTerminal"
+ :wikipage   "NewTerminal"
  :commentary "\
 Copyright is at the bottom of this file
 

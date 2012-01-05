@@ -10,7 +10,7 @@
 	       ("url" url)
 	       ("w3" w3)))
  :homepage   "http://www.columbia.edu/~jr2075/elisp"
- :wikipage   "http://www.emacswiki.org/Sudoku"
+ :wikipage   "Sudoku"
  :commentary "\
 `sudoku-mode' is a major mode for solving sudoku puzzles. The rules are
 simple: exactly one of each number in each of the nine rows, columns, and

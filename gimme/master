@@ -1,5 +1,4 @@
 (:summary    "GIMME Interesting Music on My Emacs"
- :repository (git . "git://github.com/konr/GIMME.git")
  :license    "GPL-2"
  :authors    (("Konrad Scorciapino" . "konr@konr.mobi"))
  :maintainer ("Konrad Scorciapino" . "konr@konr.mobi")
@@ -8,4 +7,4 @@
 	       ("hexrgb" hexrgb)
 	       ("htmlr" htmlr)))
  :homepage   "https://github.com/konr/GIMME"
- :wikipage   "http://www.emacswiki.org/GIMME")
+ :wikipage   "GIMME")

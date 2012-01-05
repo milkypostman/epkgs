@@ -6,7 +6,7 @@
  :maintainer ("Noah Friedman" . "friedman@splode.com")
  :provided   (timestamp)
  :homepage   "http://www.splode.com/~friedman/software/emacs-lisp"
- :wikipage   "http://www.emacswiki.org/TimeStamp"
+ :wikipage   "TimeStamp"
  :commentary "\
 Noah Friedman's branch is based on
 version 1.04 (1994-02-07) from Norikazu Aruga

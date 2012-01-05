@@ -7,5 +7,4 @@
  :required   ((("cl" cl)
 	       ("mysql" mysql)
 	       ("tree-widget" tree-widget)))
- :homepage   "http://www.emacswiki.org/Bibus"
- :wikipage   "http://www.emacswiki.org/Bibus")
+ :wikipage   "Bibus")

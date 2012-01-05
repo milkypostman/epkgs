@@ -1,5 +1,4 @@
 (:summary    "Emacs integration for rvm"
- :repository (git . "git://github.com/senny/rvm.el.git")
  :created    "2010"
  :updated    "2011"
  :license    "GPL-3"
@@ -9,7 +8,7 @@
  :required   ((("cl" cl)))
  :keywords   (ruby rvm)
  :homepage   "https://github.com/senny/rvm.el"
- :wikipage   "http://www.emacswiki.org/RvmEl"
+ :wikipage   "RvmEl"
  :commentary "\
 M-x rvm-use-default prepares the current Emacs session to use
 the default ruby configured with rvm.

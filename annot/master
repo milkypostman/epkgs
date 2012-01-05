@@ -1,5 +1,4 @@
 (:summary    "A global annotator/highlighter for GNU Emacs"
- :repository (svn . "http://annot.googlecode.com/svn")
  :created    "2010"
  :updated    "2011"
  :license    "GPL-3"

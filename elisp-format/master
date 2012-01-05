@@ -7,8 +7,7 @@
  :provided   (elisp-format)
  :required   ((("cl" cl)
 	       ("emacs" newcomment)))
- :homepage   "http://www.emacswiki.org/ElispFormat"
- :wikipage   "http://www.emacswiki.org/ElispFormat"
+ :wikipage   "ElispFormat"
  :commentary "\
 This package is format elisp code.
 This package is format by itself, so you can view format effect.

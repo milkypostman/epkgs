@@ -1,5 +1,4 @@
 (:summary    "Parse and browse f90 interfaces"
- :repository (git . "git://github.com/wence-/f90-iface.git")
  :created    "20110706"
  :updated    "2011"
  :license    "GPL-2"

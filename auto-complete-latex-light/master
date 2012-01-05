@@ -1,5 +1,4 @@
 (:summary    "An abbreviated version of the auto-complete-latex"
- :repository (git . "git://github.com/tequilasunset/auto-complete-latex-light.git")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-3"

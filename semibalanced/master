@@ -1,3 +1,2 @@
-(:repository (hg . "http://bitbucket.org/juri/semibalanced.el")
- :provided   (semibalanced)
+(:provided   (semibalanced)
  :homepage   "http://bitbucket.org/juri/semibalanced.el")

@@ -1,5 +1,4 @@
 (:summary    "Emacs interface to Ditz issue tracking system"
- :repository (hg . "http://bitbucket.org/zondo/ditz-mode")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"
@@ -8,7 +7,7 @@
  :provided   (ditz-mode)
  :keywords   (tools)
  :homepage   "http://bitbucket.org/zondo/ditz-mode"
- :wikipage   "http://www.emacswiki.org/DitzMode"
+ :wikipage   "DitzMode"
  :commentary "\
 This is an Emacs interface to the Ditz distributed issue tracking
 system, which can be found at http://ditz.rubyforge.org.

@@ -6,8 +6,7 @@
  :maintainer ("jonnay" . "jonnay@jonnay.net")
  :provided   (emdroid)
  :keywords   (java)
- :homepage   "http://www.emacswiki.org/EmDroid"
- :wikipage   "http://www.emacswiki.org/EmDroid"
+ :wikipage   "EmDroid"
  :commentary "\
 Why should eclipse guys get all the fun?  Here are some commands for
 working with android")

@@ -1,5 +1,4 @@
 (:summary    "Major mode for editing documents from Wikidot (http://wikidot.com)"
- :repository (git . "git://github.com/infochimps/wikidot-mode.git")
  :created    "2006"
  :updated    "2006"
  :license    "GPL-2"
@@ -7,7 +6,7 @@
  :maintainer ("Dhruv Bansal" . "dhruv@infochimps.com")
  :provided   (wikidot-mode)
  :homepage   "https://github.com/infochimps/wikidot-mode"
- :wikipage   "http://www.emacswiki.org/WikiDot"
+ :wikipage   "WikiDot"
  :commentary "\
 This is a mode for editing documents from Wikidot
 (http://wikidot.com).  It's based on code from SampleMode

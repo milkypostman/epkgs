@@ -9,8 +9,7 @@
 	       ("frame-cmds" frame-cmds))
 	      (("doremi-frm" doremi-frm)))
  :keywords   (frame icon)
- :homepage   "http://www.emacswiki.org/FisheyeWithThumbs"
- :wikipage   "http://www.emacswiki.org/FisheyeWithThumbs"
+ :wikipage   "FisheyeWithThumbs"
  :commentary "\
 Shrink frames to a thumbnail size and restore them again.
 

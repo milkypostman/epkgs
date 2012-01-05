@@ -7,8 +7,7 @@
  :provided   (ring+)
  :required   ((("ring" ring)))
  :keywords   (emacs-lisp extensions lisp)
- :homepage   "http://www.emacswiki.org/RingPlus"
- :wikipage   "http://www.emacswiki.org/RingPlus"
+ :wikipage   "RingPlus"
  :commentary "\
 Extensions to `ring.el'.
 

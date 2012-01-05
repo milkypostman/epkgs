@@ -1,5 +1,4 @@
 (:summary    "Programming language gauche editing tools"
- :repository (git . "git://github.com/mhayashi1120/Emacs-gosh-mode.git")
  :license    "GPL-3"
  :authors    (("Masahiro Hayashi" . "mhayashi1120@gmail.com"))
  :maintainer ("Masahiro Hayashi" . "mhayashi1120@gmail.com")

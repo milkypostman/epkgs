@@ -6,4 +6,4 @@
  :required   ((("cl" cl)
 	       ("emacs" custom)))
  :homepage   "http://www.gnufans.net/~deego/emacs.html"
- :wikipage   "http://www.emacswiki.org/MiniEdit")
+ :wikipage   "MiniEdit")

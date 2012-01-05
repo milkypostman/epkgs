@@ -1,5 +1,4 @@
 (:summary    "An emacs buffer in rcirc-groups major mode"
- :repository (git . "git://github.com/dimitri/rcirc-groups.git")
  :created    "20090627"
  :updated    "2009"
  :authors    (("Dimitri Fontaine" . "dim@tapoueh.org"))
@@ -9,4 +8,4 @@
 	       ("rcirc" rcirc)))
  :keywords   (irc notify rcirc)
  :homepage   "http://blog.tapoueh.org/projects.html#sec17"
- :wikipage   "http://www.emacswiki.org/rcircGroupMode")
+ :wikipage   "rcircGroupMode")

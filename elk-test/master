@@ -1,5 +1,4 @@
 (:summary    "Emacs Lisp testing framework"
- :repository (git . "git://github.com/nschum/elk-test.git")
  :created    "2009"
  :updated    "2009"
  :license    "GPL-2"
@@ -13,7 +12,7 @@
 	      (("fringe-helper" fringe-helper)))
  :keywords   (lisp)
  :homepage   "http://nschum.de/src/emacs/elk-test"
- :wikipage   "http://www.emacswiki.org/ElkTest"
+ :wikipage   "ElkTest"
  :commentary "\
 For best visualization, install fringe-helper, which is available at:
 http://nschum.de/src/emacs/fringe-helper/

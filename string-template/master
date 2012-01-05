@@ -1,5 +1,4 @@
 (:summary    "Support for $-substitution"
- :repository (git . "git://github.com/renard/string-template-el.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"

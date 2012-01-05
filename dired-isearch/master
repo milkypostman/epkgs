@@ -7,7 +7,7 @@
  :provided   (dired-isearch)
  :required   ((("emacs" dired)))
  :homepage   "http://xwl.appspot.com"
- :wikipage   "http://www.emacswiki.org/DiredIsearch"
+ :wikipage   "DiredIsearch"
  :commentary "\
 Do isearch in Dired but match only at file names.
 

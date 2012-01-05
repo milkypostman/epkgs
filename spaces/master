@@ -1,5 +1,4 @@
 (:summary    "Create and switch between named window configurations"
- :repository (git . "git://github.com/chumpage/spaces.el.git")
  :authors    (("Steven Thomas"))
  :maintainer ("Steven Thomas")
  :provided   (spaces)

@@ -5,8 +5,7 @@
  :authors    (("Oliver Scholz" . "epameinondas@gmx.de"))
  :maintainer ("Oliver Scholz" . "epameinondas@gmx.de")
  :provided   (hexcolour)
- :homepage   "http://www.emacswiki.org/HexColour"
- :wikipage   "http://www.emacswiki.org/HexColour"
+ :wikipage   "HexColour"
  :commentary "\
 This package provides a minor mode for highlighting of HTML-style
 colour specifications, a là #324f3a. \"Fine,\" you say, \"what's so

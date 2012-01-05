@@ -1,15 +1,14 @@
 (:summary    "A collection of activly maintained emacs themes"
- :repository (git . "git://github.com/senny/theme-roller.el.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"
  :authors    (("Yves Senn" . "yves.senn@gmail.com"))
  :maintainer ("Yves Senn" . "yves.senn@gmail.com")
  :provided   (theme-roller theme-roller-macro)
- :required   ((("color-theme" color-theme)))
+ :required   (((nil color-theme)))
  :keywords   (color-theme emacs theme)
  :homepage   "https://github.com/senny/theme-roller.el"
- :wikipage   "http://www.emacswiki.org/ThemeRollerEl"
+ :wikipage   "ThemeRollerEl"
  :commentary "\
 (color-theme-lazy)
 (color-theme-ruby-blue)

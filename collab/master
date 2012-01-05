@@ -1,5 +1,4 @@
 (:summary    "Peer to peer collaborative editing"
- :repository (hg . "http://bitbucket.org/jonasreinsch/collabmode")
  :created    "2009"
  :updated    "2009"
  :license    "GPL-3"

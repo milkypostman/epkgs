@@ -9,8 +9,7 @@
 	       ("emacs" font-lock)
 	       ("regexp-opt" regexp-opt)))
  :keywords   (ecmascript javascript languages)
- :homepage   "http://www.emacswiki.org/ECMAScriptMode"
- :wikipage   "http://www.emacswiki.org/ECMAScriptMode"
+ :wikipage   "ECMAScriptMode"
  :commentary "\
 ecmascript-mode is a basic major mode for editing code conforming
 to the ECMA-262 standard (3rd edition). The most notable languages

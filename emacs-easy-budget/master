@@ -1,5 +1,4 @@
 (:summary    "Some date utilities used in easy-emacs-budget"
- :repository (svn . "http://emacs-easy-budget.googlecode.com/svn")
  :created    "2007"
  :updated    "2007"
  :provided   (date-util emacs-easy-budget)

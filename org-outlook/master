@@ -6,8 +6,7 @@
  :maintainer ("Matthew L. Fidler")
  :provided   (org-outlook)
  :required   ((("org" org org-protocol)))
- :homepage   "http://www.emacswiki.org/OrgOutlook"
- :wikipage   "http://www.emacswiki.org/OrgOutlook"
+ :wikipage   "OrgOutlook"
  :commentary "\
 Adapted from http://superuser.com/questions/71786/can-i-create-a-link-to-a-specific-email-message-in-outlook
 Allows selecting then inserting

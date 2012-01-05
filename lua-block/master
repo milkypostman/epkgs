@@ -7,8 +7,7 @@
  :provided   (lua-block)
  :required   ((("lua-mode" lua-mode)))
  :keywords   (faces languages lua)
- :homepage   "http://www.emacswiki.org/LuaBlockMode"
- :wikipage   "http://www.emacswiki.org/LuaBlockMode"
+ :wikipage   "LuaBlockMode"
  :commentary "\
 This is basically a refactored version of ruby-block.el by khiker.
 Some stuff like repeat ... until statements are missing but it

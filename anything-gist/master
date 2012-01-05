@@ -1,5 +1,4 @@
 (:summary    "Anything-sources and some utilities for gist"
- :repository (git . "git://github.com/byplayer/anything-gist.el.git")
  :created    "20090413"
  :updated    "2010"
  :license    "GPL-3"

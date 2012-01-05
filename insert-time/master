@@ -1,5 +1,4 @@
-(:repository (git . "git://github.com/rmm5t/insert-time.el.git")
- :created    "2007"
+(:created    "2007"
  :updated    "2007"
  :license    "GPL-2"
  :authors    (("Ryan McGeary"))

@@ -5,5 +5,4 @@
  :provided   (xcscope+)
  :required   ((("xcscope" xcscope)))
  :keywords   (cscope xcscope)
- :homepage   "http://www.emacswiki.org/XCscopePlus"
- :wikipage   "http://www.emacswiki.org/XCscopePlus")
+ :wikipage   "XCscopePlus")

@@ -1,5 +1,4 @@
 (:summary    "Provides ephotodb, the Emacs Photo Database:"
- :repository (svn . "https://ephotodb.svn.sourceforge.net/svnroot/ephotodb")
  :created    "2008"
  :updated    "2008"
  :license    "GPL-2"
@@ -8,4 +7,4 @@
  :provided   (ephotodb)
  :required   ((("image-file" image-file)))
  :homepage   "http://ephotodb.sourceforge.net"
- :wikipage   "http://www.emacswiki.org/EmacsPhotoDatabase")
+ :wikipage   "EmacsPhotoDatabase")

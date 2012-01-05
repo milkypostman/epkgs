@@ -1,5 +1,4 @@
 (:summary    "Plain text reader of HTML documents"
- :repository (git . "git://github.com/apgwoz/thumb-through.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"

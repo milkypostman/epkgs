@@ -1,5 +1,4 @@
 (:summary    "Edit multiple line at a time"
- :repository (git . "git://github.com/k-talo/multiple-line-edit.el.git")
  :created    "20101010"
  :updated    "2010"
  :license    "GPL-3"

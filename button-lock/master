@@ -1,5 +1,4 @@
 (:summary    "Clickable text defined by regular expression, controlled by font-lock"
- :repository (git . "git://github.com/rolandwalker/button-lock.git")
  :created    "2011"
  :updated    "20111116"
  :authors    (("D Roland Walker" . "walker@pobox.com"))
@@ -9,7 +8,7 @@
 	       ("emacs" font-lock)))
  :keywords   (button hyperlink mouse)
  :homepage   "https://github.com/rolandwalker/button-lock"
- :wikipage   "http://www.emacswiki.org/ButtonLockMode"
+ :wikipage   "ButtonLockMode"
  :commentary "\
 Button-lock is a minor mode which provides simple facilities to
 define clickable text based regular expressions.  Button-lock.el

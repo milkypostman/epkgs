@@ -6,8 +6,7 @@
  :maintainer ("Rick Bielawski" . "rbielaws@i1.net")
  :provided   (columnize)
  :keywords   (convenience formatting tools)
- :homepage   "http://www.emacswiki.org/ColumnizeWords"
- :wikipage   "http://www.emacswiki.org/ColumnizeWords"
+ :wikipage   "ColumnizeWords"
  :commentary "\
 `columnize-text' is an interactive autoload function for formatting words
 numbers etc into an evenly spaced series of columns (pillars).  A trivial

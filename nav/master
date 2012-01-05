@@ -1,5 +1,4 @@
 (:summary    "Emacs mode for filesystem navigation"
- :repository (hg . "https://emacs-nav.googlecode.com/hg/")
  :created    "2010"
  :updated    "2010"
  :license    "Apache-2.0"
@@ -9,7 +8,7 @@
  :required   ((("ack" ack)
 	       ("emacs" dired)))
  :homepage   "http://code.google.com/p/emacs-nav"
- :wikipage   "http://www.emacswiki.org/Nav"
+ :wikipage   "Nav"
  :commentary "\
 To use this file, put something like the following in your
 ~/.emacs:

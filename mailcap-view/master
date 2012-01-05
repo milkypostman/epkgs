@@ -6,8 +6,7 @@
  :provided   (mailcap-view)
  :required   ((("cl" cl)
 	       ("gnus" mailcap)))
- :homepage   "http://www.emacswiki.org/MailcapView"
- :wikipage   "http://www.emacswiki.org/MailcapView"
+ :wikipage   "MailcapView"
  :commentary "\
 mailcap-view.el is a set of functions that allows you to do general
 file browsing and viewing from within emacs.  The pimary function

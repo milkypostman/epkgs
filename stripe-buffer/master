@@ -6,8 +6,7 @@
  :maintainer (nil . "andy stewart lazycat.manatee@gmail.com")
  :provided   (stripe-buffer)
  :keywords   (stripe)
- :homepage   "http://www.emacswiki.org/StripeBuffer"
- :wikipage   "http://www.emacswiki.org/StripeBuffer"
+ :wikipage   "StripeBuffer"
  :commentary "\
 Make stripe color with buffer.
 So the stripe color interface with gather the readable.

@@ -3,5 +3,4 @@
  :license    "GPL-2"
  :provided   (find-file-in-tags)
  :required   ((("etags" etags)))
- :homepage   "http://www.emacswiki.org/find-file-in-tags"
- :wikipage   "http://www.emacswiki.org/find-file-in-tags")
+ :wikipage   "find-file-in-tags")

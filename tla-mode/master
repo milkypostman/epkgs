@@ -11,7 +11,7 @@
 	       ("reporter" reporter)))
  :keywords   (specification tla)
  :homepage   "http://ls4-www.informatik.uni-dortmund.de/RVS/P-TLA/TEM/tem.html"
- :wikipage   "http://www.emacswiki.org/TemporalLogicOfActionsMode"
+ :wikipage   "TemporalLogicOfActionsMode"
  :commentary "\
 This is a major mode for editing and working with file written in the
 specification language TLA+ or its other variants.")

@@ -1,5 +1,4 @@
 (:summary    "A simple interface to www.perlmonks.org"
- :repository (git . "git://github.com/metaperl/emacs-perlmonks.git")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-2"

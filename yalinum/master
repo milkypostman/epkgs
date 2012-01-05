@@ -1,5 +1,4 @@
 (:summary    "Yet another display line numbers"
- :repository (git . "git://github.com/tm8st/emacs-yalinum.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-2"

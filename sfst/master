@@ -4,4 +4,4 @@
  :license    "GPL-2"
  :provided   (sfst)
  :homepage   "http://www.cis.uni-muenchen.de/~wastl/emacs"
- :wikipage   "http://www.emacswiki.org/SFST")
+ :wikipage   "SFST")

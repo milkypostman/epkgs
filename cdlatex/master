@@ -11,7 +11,7 @@
 	       ("finder" finder)))
  :keywords   (tex)
  :homepage   "http://staff.science.uva.nl/~dominik/Tools/cdlatex"
- :wikipage   "http://www.emacswiki.org/CDLaTeX"
+ :wikipage   "CDLaTeX"
  :commentary "\
 CDLaTeX is a minor mode supporting fast insertion of environment
 templates and math stuff in LaTeX.

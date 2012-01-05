@@ -7,8 +7,7 @@
  :provided   (vbs-repl)
  :required   ((("visual-basic-mode" visual-basic-mode)))
  :keywords   (mode programming repl vbscript)
- :homepage   "http://www.emacswiki.org/VbsReplMode"
- :wikipage   "http://www.emacswiki.org/VbsReplMode"
+ :wikipage   "VbsReplMode"
  :commentary "\
 At this point, there are a few different forks of visual basic modes
 to choose from, if you want to develop VBScript.  The hard thing

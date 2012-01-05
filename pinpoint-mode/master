@@ -1,5 +1,4 @@
 (:summary    "Major mode for editing pinpoint files"
- :repository (git . "git://github.com/philanecros/pinpoint-mode.git")
  :created    "2011"
  :updated    "2011"
  :authors    (("Philanecros Heliostein"))

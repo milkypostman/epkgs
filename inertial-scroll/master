@@ -1,5 +1,4 @@
 (:summary    "Global minor mode for inertial scrolling "
- :repository (git . "git://github.com/kiwanami/emacs-inertial-scroll.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"
@@ -9,7 +8,7 @@
  :required   ((("deferred" deferred)))
  :keywords   (deferred scroll)
  :homepage   "https://github.com/kiwanami/emacs-inertial-scroll"
- :wikipage   "http://www.emacswiki.org/InertialScrolling"
+ :wikipage   "InertialScrolling"
  :commentary "\
 This is a demonstration for deferred.el and co-routine.
 

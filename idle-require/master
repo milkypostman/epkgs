@@ -1,5 +1,4 @@
 (:summary    "Load elisp libraries while Emacs is idle"
- :repository (git . "git://github.com/nschum/idle-require.el.git")
  :created    "2008"
  :updated    "2008"
  :license    "GPL-2"

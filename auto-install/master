@@ -14,8 +14,7 @@
 	       ("url" url))
 	      (("anything-auto-install" anything-auto-install)))
  :keywords   (auto-install)
- :homepage   "http://www.emacswiki.org/AutoInstall"
- :wikipage   "http://www.emacswiki.org/AutoInstall"
+ :wikipage   "AutoInstall"
  :commentary "\
 Automates the installation of Emacs Lisp files and packages.
 

@@ -1,5 +1,4 @@
 (:summary    "In-buffer mathematical operations"
- :repository (git . "git://github.com/nschum/macro-math.el.git")
  :created    "2007"
  :updated    "2009"
  :license    "GPL-2"
@@ -8,7 +7,7 @@
  :provided   (macro-math)
  :keywords   (convenience)
  :homepage   "http://nschum.de/src/emacs/macro-math"
- :wikipage   "http://www.emacswiki.org/MacroMath"
+ :wikipage   "MacroMath"
  :commentary "\
 Add the following to your .emacs file:
 

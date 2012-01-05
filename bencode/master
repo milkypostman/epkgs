@@ -3,8 +3,7 @@
  :updated    "2007"
  :license    "GPL-3"
  :provided   (bencode)
- :homepage   "http://www.emacswiki.org/Bencode"
- :wikipage   "http://www.emacswiki.org/Bencode"
+ :wikipage   "Bencode"
  :commentary "\
 Bencoding is a way to encode integers, strings, lists, and hash-tables
 as strings (serialization), and bdecoding does the reverse operation.

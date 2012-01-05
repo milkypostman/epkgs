@@ -1,5 +1,4 @@
 (:summary    "A code browser for Emacs"
- :repository (cvs . ":pserver:anonymous@ecb.cvs.sourceforge.net:/cvsroot/ecb")
  :created    "2000"
  :updated    "2005"
  :license    "GPL-2"
@@ -27,7 +26,7 @@
 	       (nil semantic-analyze semantic-ctxt thing)))
  :keywords   (browser code programming tools)
  :homepage   "http://ecb.sourceforge.net"
- :wikipage   "http://www.emacswiki.org/EmacsCodeBrowser"
+ :wikipage   "EmacsCodeBrowser"
  :commentary "\
 ECB stands for \"Emacs Code Browser\".  While Emacs already has good
 *editing* support for many modes, its *browsing* support is somewhat

@@ -1,5 +1,4 @@
 (:summary    "Opscode API request signer"
- :repository (git . "git://github.com/skeptomai/opscode-emacs-sign.git")
  :authors    (("Christopher Brown (skeptomai)" . "cb@opscode.com"))
  :maintainer ("Christopher Brown (skeptomai)" . "cb@opscode.com")
  :provided   (opscode-sign)

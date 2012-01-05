@@ -1,5 +1,4 @@
-(:repository (git . "git://github.com/davidmiller/thrift-mode.git")
- :created    "2011"
+(:created    "2011"
  :updated    "2011"
  :license    "GPL-2"
  :authors    (("David Miller" . "david@deadpansincerity.com"))

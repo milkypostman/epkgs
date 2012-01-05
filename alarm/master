@@ -6,7 +6,6 @@
  :maintainer ("Andy Stewart" . "lazycat.manatee@gmail.com")
  :provided   (alarm)
  :keywords   (alarm)
- :homepage   "http://www.emacswiki.org/Alarm"
- :wikipage   "http://www.emacswiki.org/Alarm"
+ :wikipage   "Alarm"
  :commentary "\
 Alarm.")

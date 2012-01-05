@@ -6,8 +6,7 @@
  :maintainer ("Mario Domgörgen" . "kanaldrache@gmx.de")
  :provided   (html-lite)
  :keywords   (hypermedia)
- :homepage   "http://www.emacswiki.org/HtmlLite"
- :wikipage   "http://www.emacswiki.org/HtmlLite"
+ :wikipage   "HtmlLite"
  :commentary "\
 Provides procedures to construct an HTML document easily.  For
 example, you can construct an HTML table by the following code:

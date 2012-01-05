@@ -7,8 +7,7 @@
  :provided   (erc-robot)
  :required   ((("erc" erc erc-stamp)))
  :keywords   (bot chat erc irc robot)
- :homepage   "http://www.emacswiki.org/ErcRobot"
- :wikipage   "http://www.emacswiki.org/ErcRobot"
+ :wikipage   "ErcRobot"
  :commentary "\
 This code implements a simple robot for ERC.
 

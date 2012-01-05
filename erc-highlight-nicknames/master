@@ -1,5 +1,4 @@
 (:summary    "Highlights nicknames"
- :repository (git . "git://github.com/amalloy/erc-highlight-nick.git")
  :created    "20070925"
  :updated    "20081207"
  :license    "GPL-2"
@@ -9,7 +8,7 @@
  :required   ((("erc" erc erc-button)))
  :keywords   (comm faces)
  :homepage   "https://github.com/amalloy/erc-highlight-nick"
- :wikipage   "http://www.emacswiki.org/ErcHighlightNicknames"
+ :wikipage   "ErcHighlightNicknames"
  :commentary "\
 To activate this module, put this in your init file
     (require 'erc-highlight-nicknames)

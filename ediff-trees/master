@@ -7,8 +7,7 @@
  :provided   (ediff-trees)
  :required   ((("ediff" ediff)))
  :keywords   (comparing ediff)
- :homepage   "http://www.emacswiki.org/EdiffTrees"
- :wikipage   "http://www.emacswiki.org/EdiffTrees"
+ :wikipage   "EdiffTrees"
  :commentary "\
 The ediff-trees package is a simple frontend to the emacs' ediff
 package to allow a simpler comparison of two similar directory

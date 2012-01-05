@@ -1,5 +1,4 @@
 (:summary    "Oauth library"
- :repository (git . "git://github.com/psanford/emacs-oauth.git")
  :created    "2009"
  :updated    "2009"
  :license    "GPL-3"
@@ -12,7 +11,7 @@
 	      (("sasl" sasl)))
  :keywords   (comm)
  :homepage   "https://github.com/psanford/emacs-oauth"
- :wikipage   "http://www.emacswiki.org/OAuthLibrary"
+ :wikipage   "OAuthLibrary"
  :commentary "\
 This is oauth client library implementation in elisp. It is
 capable of authenticating (receiving an access token) and signing

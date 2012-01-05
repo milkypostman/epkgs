@@ -1,5 +1,4 @@
 (:summary    "Exuberant ctags auto-complete.el source"
- :repository (git . "git://github.com/k1LoW/auto-complete-exuberant-ctags.git")
  :created    "20110809"
  :updated    "20110908"
  :license    "GPL-3"

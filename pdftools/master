@@ -3,5 +3,4 @@
  :authors    ((nil . "peterm@srl.caltech.edu"))
  :maintainer (nil . "peterm@srl.caltech.edu")
  :provided   (pdftools)
- :homepage   "http://www.emacswiki.org/PdfTools"
- :wikipage   "http://www.emacswiki.org/PdfTools")
+ :wikipage   "PdfTools")

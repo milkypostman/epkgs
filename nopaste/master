@@ -1,5 +1,4 @@
 (:summary    "Interface to nopaste.pl"
- :repository (git . "git://github.com/avar/nopaste.git")
  :created    "20071122"
  :updated    "2010"
  :license    "GPL-2"
@@ -8,7 +7,7 @@
  :provided   (nopaste)
  :keywords   (comm)
  :homepage   "https://github.com/avar/nopaste"
- :wikipage   "http://www.emacswiki.org/nopaste"
+ :wikipage   "nopaste"
  :commentary "\
 Interfaces with paste bots via the `nopaste' which is part of the
 `App::Nopaste' CPAN distribution found at

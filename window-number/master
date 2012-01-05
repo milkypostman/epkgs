@@ -4,8 +4,7 @@
  :license    "GPL-2"
  :provided   (window-number)
  :required   ((("cl" cl)))
- :homepage   "http://www.emacswiki.org/NumberedWindows"
- :wikipage   "http://www.emacswiki.org/NumberedWindows"
+ :wikipage   "NumberedWindows"
  :commentary "\
 Introduction
 ============

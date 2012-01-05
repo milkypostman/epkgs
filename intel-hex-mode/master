@@ -6,7 +6,7 @@
  :maintainer ("Rubens Fernandes" . "rubensr@users.sourceforge.net")
  :keywords   (hex intel mode)
  :homepage   "None"
- :wikipage   "http://www.emacswiki.org/IntelHexMode"
+ :wikipage   "IntelHexMode"
  :commentary "\
 Use this mode for editing files in the intel hex format 
 (http://en.wikipedia.org/wiki/Intel_HEX).

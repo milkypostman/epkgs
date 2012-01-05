@@ -1,5 +1,4 @@
 (:summary    "Minor mode for editing RubyOnRails code"
- :repository (svn . "svn://rubyforge.org/var/svn/emacs-rails")
  :created    "2006"
  :updated    "2006"
  :license    "GPL-2"

@@ -12,5 +12,4 @@
 	       ("mode-compile" mode-compile)
 	       (nil completer)))
  :keywords   (math)
- :homepage   "http://www.emacswiki.org/EukleidesMode"
- :wikipage   "http://www.emacswiki.org/EukleidesMode")
+ :wikipage   "EukleidesMode")

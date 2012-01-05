@@ -1,10 +1,9 @@
-(:repository (cvs . ":pserver:anonymous@cvs.savannah.nongnu.org:/sources/gneve")
- :created    "2007"
+(:created    "2007"
  :updated    "2007"
  :license    "GPL-3"
  :provided   (gneve-mode)
  :homepage   "http://1010.co.uk/gneve.html"
- :wikipage   "http://www.emacswiki.org/GNEVE"
+ :wikipage   "GNEVE"
  :commentary "\
 Use: 
     1. M-x gneve-mode RET to invoke in gneve-mode

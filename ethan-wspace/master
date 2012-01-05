@@ -1,5 +1,4 @@
 (:summary    "Whitespace customizations for emacs"
- :repository (git . "git://github.com/glasserc/ethan-wspace.git")
  :created    "2011"
  :updated    "2011"
  :authors    (("Ethan Glasser-Camp" . "ethan@betacantrips.com"))
@@ -8,7 +7,7 @@
  :required   ((("assoc" assoc)))
  :keywords   (clean newline tab trailing whitespace)
  :homepage   "https://github.com/glasserc/ethan-wspace"
- :wikipage   "http://www.emacswiki.org/EthanWhitespace"
+ :wikipage   "EthanWhitespace"
  :commentary "\
 For more information on the design of this package, please see the
 README that came with it.

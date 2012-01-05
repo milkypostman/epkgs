@@ -4,8 +4,7 @@
  :license    "GPL-2"
  :provided   (better-registers)
  :keywords   (macro register)
- :homepage   "http://www.emacswiki.org/BetterRegisters"
- :wikipage   "http://www.emacswiki.org/BetterRegisters"
+ :wikipage   "BetterRegisters"
  :commentary "\
 This package provides a row of commands, and keyboard shortcuts to
 make the powerful concept of registers even more powerful (most

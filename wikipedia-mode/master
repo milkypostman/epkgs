@@ -7,8 +7,7 @@
  :provided   (wikipedia-mode)
  :required   ((("emacs" derived font-lock)))
  :keywords   (wiki)
- :homepage   "http://www.emacswiki.org/WikipediaMode"
- :wikipage   "http://www.emacswiki.org/WikipediaMode"
+ :wikipage   "WikipediaMode"
  :commentary "\
 This is `wikipedia-mode', a major mode for editing articles written
 in the markup language used by Wikipedia, the free on-line

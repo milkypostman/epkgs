@@ -1,5 +1,4 @@
-(:repository (hg . "http://mercurial.intuxication.org/hg/anythingipython")
- :created    "200931"
+(:created    "200931"
  :license    "GPL-3"
  :authors    (("Thierry Volpiatto"))
  :maintainer ("Thierry Volpiatto")

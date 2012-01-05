@@ -1,5 +1,4 @@
 (:summary    "Maven2 integration for JDEE"
- :repository (hg . "http://bitbucket.org/espenhw/jde-mvn")
  :created    "2008"
  :updated    "2008"
  :license    "GPL-2"

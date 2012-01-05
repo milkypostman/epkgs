@@ -10,8 +10,7 @@
 	       ("emacs" easymenu))
 	      (("htmlize" htmlize)))
  :keywords   (help hypermedia)
- :homepage   "http://www.emacswiki.org/LinkdMode"
- :wikipage   "http://www.emacswiki.org/LinkdMode"
+ :wikipage   "LinkdMode"
  :commentary "\
 Make hypertext with active links in any buffer
 

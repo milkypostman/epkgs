@@ -4,8 +4,7 @@
  :license    "GPL-2"
  :provided   (spartan-wiki)
  :required   ((("cl" cl)))
- :homepage   "http://www.emacswiki.org/SpartanWiki"
- :wikipage   "http://www.emacswiki.org/SpartanWiki"
+ :wikipage   "SpartanWiki"
  :commentary "\
 A single-file personal wiki for quick structured note taking.
 

@@ -1,5 +1,4 @@
 (:summary    "Paste to the web via scp"
- :repository (git . "git://github.com/technomancy/scpaste.git")
  :created    "20080402"
  :updated    "2008"
  :license    "GPL-3"
@@ -10,7 +9,7 @@
 	       ("url" url)))
  :keywords   (convenience hypermedia)
  :homepage   "https://github.com/technomancy/scpaste"
- :wikipage   "http://www.emacswiki.org/SCPaste"
+ :wikipage   "SCPaste"
  :commentary "\
 This will place an HTML copy of a buffer on the web on a server
 that the user has shell access on.

@@ -1,5 +1,4 @@
 (:summary    "Mark and select interface"
- :repository (git . "git://github.com/namikister/mark-select.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"

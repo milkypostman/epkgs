@@ -1,5 +1,4 @@
 (:summary    "Navigator for 2ch for Emacsen"
- :repository (git . "git://github.com/naota/navi2ch.git")
  :created    "2000"
  :updated    "2008"
  :license    "GPL-2"

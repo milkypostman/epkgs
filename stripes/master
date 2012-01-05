@@ -6,8 +6,7 @@
  :maintainer ("Michael Schierl" . "schierlm-public@gmx.de")
  :provided   (stripes stripes-mode)
  :keywords   (alternation color list)
- :homepage   "http://www.emacswiki.org/StripesMode"
- :wikipage   "http://www.emacswiki.org/StripesMode"
+ :wikipage   "StripesMode"
  :commentary "\
 highlights every even line with an alternative background
 color. Useful for buffers that display lists of any kind - as a

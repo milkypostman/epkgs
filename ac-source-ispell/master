@@ -1,5 +1,4 @@
 (:summary    "Ispell words source for auto-complete-mode"
- :repository (hg . "http://bitbucket.org/tequilasunset/ac-source-ispell")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"

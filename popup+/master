@@ -1,5 +1,4 @@
 (:summary    "Enhancement of `popup.el'"
- :repository (git . "git://github.com/scjung/popup-plus.git")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-2"

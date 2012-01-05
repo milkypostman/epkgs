@@ -9,8 +9,7 @@
 	       ("emacs" mouse))
 	      (("second-sel" second-sel)))
  :keywords   (mouse)
- :homepage   "http://www.emacswiki.org/MousePlus"
- :wikipage   "http://www.emacswiki.org/MousePlus"
+ :wikipage   "MousePlus"
  :commentary "\
 Extensions to `mouse.el'.
 

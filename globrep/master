@@ -5,5 +5,4 @@
 	       ("compile" compile)
 	       ("query" query)
 	       ("vc" vc)))
- :homepage   "http://www.emacswiki.org/GlobRep"
- :wikipage   "http://www.emacswiki.org/GlobRep")
+ :wikipage   "GlobRep")

@@ -1,5 +1,4 @@
-(:repository (git . "git://github.com/credmp/worklog.git")
- :created    "2002"
+(:created    "2002"
  :updated    "2002"
  :license    "GPL-2"
  :authors    ((nil . "kai.grossjohann@cs.uni-dortmund.de"))
@@ -9,7 +8,7 @@
 	       ("timezone" timezone)))
  :keywords   (timetracker)
  :homepage   "http://www.wiersma.org"
- :wikipage   "http://www.emacswiki.org/WorklogMode"
+ :wikipage   "WorklogMode"
  :commentary "\
 This code lets you keep track of stuff you do.  It writes
 time-stamps and some data into a file, formatted for easy parsing.

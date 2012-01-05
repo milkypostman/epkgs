@@ -1,5 +1,4 @@
 (:summary    "Search mail with HyperEstraier"
- :repository (git . "git://github.com/kawabata/gnus-est.git")
  :license    "GPL-2"
  :authors    (("TSUCHIYA Masatoshi" . "tsuchiya@namazu.org"))
  :maintainer ("TSUCHIYA Masatoshi" . "tsuchiya@namazu.org")

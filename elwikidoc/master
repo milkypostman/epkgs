@@ -1,5 +1,4 @@
 (:summary    "Use elisp doc strings to make other documentation"
- :repository (git . "git://github.com/nicferrier/elwikidoc.git")
  :created    "2010"
  :updated    "2011"
  :license    "GPL-3"

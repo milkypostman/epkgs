@@ -6,7 +6,7 @@
  :maintainer ("FSF")
  :keywords   (processes tools)
  :homepage   "http://anirudhs.chaosnet.org/blog/2008.03.26.html"
- :wikipage   "http://www.emacswiki.org/FcshCompileSupport"
+ :wikipage   "FcshCompileSupport"
  :commentary "\
 When visiting the main MXML file, call fcsh-compile. Then compile
 will invoke fcsh and run mxmlc. Subsequent compile's will send

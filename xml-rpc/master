@@ -1,5 +1,4 @@
 (:summary    "An elisp implementation of clientside XML-RPC"
- :repository (bzr . "http://bazaar.launchpad.net/~hexmode/xml-rpc-el/trunk")
  :created    "200113"
  :updated    "2010"
  :license    "GPL-3"
@@ -13,7 +12,7 @@
 	       ("xml" xml)))
  :keywords   (network rpc xml)
  :homepage   "https://launchpad.net/xml-rpc-el"
- :wikipage   "http://www.emacswiki.org/XmlRpc"
+ :wikipage   "XmlRpc"
  :commentary "\
 This is an XML-RPC client implementation in elisp, capable of both
 synchronous and asynchronous method calls (using the url package's async

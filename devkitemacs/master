@@ -5,8 +5,7 @@
  :authors    (("Jonathan Arkell" . "jonnay@jonnay.net"))
  :maintainer ("Jonathan Arkell" . "jonnay@jonnay.net")
  :provided   (devkitemacs)
- :homepage   "http://www.emacswiki.org/DevKitEmacs"
- :wikipage   "http://www.emacswiki.org/DevKitEmacs"
+ :wikipage   "DevKitEmacs"
  :commentary "\
 Some emacsy goodness for devkit pro
 

@@ -1,5 +1,4 @@
 (:summary    "Maintain the Emacsmirror"
- :repository (git . "git://github.com/tarsius/elm.git")
  :created    "20081202"
  :updated    "2011"
  :license    "GPL-3"

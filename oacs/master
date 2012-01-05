@@ -12,7 +12,7 @@
 	       ("sql" sql)))
  :keywords   (abbrev convenience extensions tools)
  :homepage   "http://www.openacs.com/xowiki/ide-emacs"
- :wikipage   "http://www.emacswiki.org/OACS"
+ :wikipage   "OACS"
  :commentary "\
 The latest version of oacs is always available from:
 

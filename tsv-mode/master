@@ -6,8 +6,7 @@
  :maintainer (nil . "wenbinye@163.com")
  :provided   (tsv-mode)
  :required   ((("cl" cl)))
- :homepage   "http://www.emacswiki.org/TsvMode"
- :wikipage   "http://www.emacswiki.org/TsvMode"
+ :wikipage   "TsvMode"
  :commentary "\
 This mode is not stable. Do backup file if you visit important data.
 

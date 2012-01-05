@@ -1,5 +1,4 @@
-(:repository (git . "git://github.com/markhepburn/mplayer-mode.git")
- :created    "2011"
+(:created    "2011"
  :updated    "2011"
  :license    "GPL-3"
  :authors    (("Mark Hepburn" . "mark.hepburn@gmail.com"))

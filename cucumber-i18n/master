@@ -1,5 +1,4 @@
 (:summary    "Translate i18n keys inside cucumber features"
- :repository (git . "git://github.com/senny/cucumber-i18n.el.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"
@@ -8,7 +7,7 @@
  :provided   (cucumber-i18n)
  :keywords   (cucumber rails ruby)
  :homepage   "http://www.emacswiki.org/emacs/CucumberI18nEl"
- :wikipage   "http://www.emacswiki.org/CucumberI18nEl"
+ :wikipage   "CucumberI18nEl"
  :commentary "\
 cucumber-i18n.el makes working with i18n keys inside your cucumber
 scenarios less painless. It allows you to add overlays with the

@@ -1,5 +1,4 @@
 (:summary    "Messaging in the Emacs World"
- :repository (git . "git://github.com/kazu-yamamoto/Mew.git")
  :created    "1994"
  :authors    (("Kazu Yamamoto" . "kazu@mew.org"))
  :maintainer ("Kazu Yamamoto" . "kazu@mew.org")
@@ -8,7 +7,7 @@
 	       ("emacs" faces timer)
 	       ("w3m" mew-w3m)))
  :homepage   "http://www.mew.org"
- :wikipage   "http://www.emacswiki.org/Mew"
+ :wikipage   "Mew"
  :commentary "\
 The updated version is available from:
 	http://www.Mew.org/

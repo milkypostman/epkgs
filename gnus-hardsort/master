@@ -1,5 +1,4 @@
 (:summary    "Permanently sort group by date"
  :license    "GPL-2"
  :provided   (gnus-hardsort)
- :homepage   "http://www.emacswiki.org/GnusHardSort"
- :wikipage   "http://www.emacswiki.org/GnusHardSort")
+ :wikipage   "GnusHardSort")

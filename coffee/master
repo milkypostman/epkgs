@@ -8,7 +8,7 @@
 	       ("w3" w3-forms)))
  :keywords   (brew coffee kitchen-sink)
  :homepage   "http://emarsden.chez.com/downloads"
- :wikipage   "http://www.emacswiki.org/CoffeeMode"
+ :wikipage   "CoffeeMode"
  :commentary "\
 This module provides an Emacs interface to RFC2324-compliant coffee
 devices (Hyper Text Coffee Pot Control Protocol, or HTCPCP). It

@@ -1,5 +1,4 @@
 (:summary    "Org-Mode Day Page"
- :repository (git . "git://github.com/almost/org-daypage.git")
  :created    "2010"
  :updated    "2011"
  :license    "GPL-2"

@@ -1,5 +1,4 @@
 (:summary    "Drive gnuplot from within emacs"
- :repository (git . "git://github.com/bruceravel/gnuplot-mode.git")
  :created    "199828"
  :updated    "2011"
  :license    "GPL-2"
@@ -14,7 +13,7 @@
 	       (nil toolbar xpm)))
  :keywords   (gnuplot plotting)
  :homepage   "https://github.com/bruceravel/gnuplot-mode"
- :wikipage   "http://www.emacswiki.org/GnuPlot"
+ :wikipage   "GnuPlot"
  :commentary "\
 This is a major mode for composing gnuplot scripts and displaying
 their results using gnuplot.  It is optimized for use with gnuplot

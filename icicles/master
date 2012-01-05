@@ -26,7 +26,6 @@
 	       ("auto-complete" fuzzy)
 	       ("bbdb" bbdb bbdb-com)
 	       ("bookmark+" bookmark+)
-	       ("color-theme" color-theme)
 	       ("cookie1" cookie1)
 	       ("dired+" dired+)
 	       ("doremi" doremi)
@@ -60,7 +59,8 @@
 	       ("thingatpt+" thingatpt+)
 	       ("tramp" tramp)
 	       ("wid-edit+" wid-edit+)
-	       ("yow" yow)))
+	       ("yow" yow)
+	       (nil color-theme)))
  :keywords   (abbrev apropos command completion extensions help keys local matching minibuffer regexp)
  :wikipage   "Icicles"
  :commentary "\

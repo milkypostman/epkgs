@@ -1,5 +1,4 @@
-(:repository (git . "git://github.com/tomoya/search-web.el.git")
- :created    "2009"
+(:created    "2009"
  :updated    "2009"
  :license    "GPL-2"
  :authors    (("Tomoya Otake" . "tomoya.ton@gmail.com"))

@@ -1,5 +1,4 @@
 (:summary    "Simple asynchronous functions for emacs lisp"
- :repository (git . "git://github.com/kiwanami/emacs-deferred.git")
  :created    "2010"
  :updated    "2011"
  :license    "GPL-3"
@@ -10,7 +9,7 @@
 	       ("pp" pp)))
  :keywords   (async deferred)
  :homepage   "https://github.com/kiwanami/emacs-deferred"
- :wikipage   "http://www.emacswiki.org/DeferredTask"
+ :wikipage   "DeferredTask"
  :commentary "\
 'deferred.el' is a simple library for asynchronous tasks.
 [https://github.com/kiwanami/emacs-deferred]

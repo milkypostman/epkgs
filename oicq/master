@@ -6,7 +6,6 @@
  :maintainer ("Andy Stewart" . "lazycat.manatee@gmail.com")
  :provided   (oicq)
  :keywords   (china oicq qq tecent)
- :homepage   "http://www.emacswiki.org/Oicq"
- :wikipage   "http://www.emacswiki.org/Oicq"
+ :wikipage   "Oicq"
  :commentary "\
 A front-end of perl OICQ, to use QQ (Tecent) in Emacs.")

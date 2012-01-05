@@ -1,5 +1,4 @@
 (:summary    "Quickly browse, filter, and edit plain text notes"
- :repository (git . "git://jblevins.org/git/deft.git")
  :created    "2011"
  :updated    "2011"
  :authors    (("Jason R. Blevins" . "jrblevin@sdf.org"))
@@ -8,7 +7,7 @@
  :required   ((("emacs" widget)))
  :keywords   (notational\ velocity notes plain\ text simplenote)
  :homepage   "http://jblevins.org/projects/deft"
- :wikipage   "http://www.emacswiki.org/DeftMode"
+ :wikipage   "DeftMode"
  :commentary "\
 Deft is an Emacs mode for quickly browsing, filtering, and editing
 directories of plain text notes, inspired by Notational Velocity.

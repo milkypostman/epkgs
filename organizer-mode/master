@@ -15,7 +15,7 @@
 	       (nil dired-shell)))
  :keywords   (calendar todo)
  :homepage   "http://home.attbi.com/~shannon1679/organizer-mode.html"
- :wikipage   "http://www.emacswiki.org/OrganizerMode"
+ :wikipage   "OrganizerMode"
  :commentary "\
 organizer-mode.el is free software
 

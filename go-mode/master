@@ -1,5 +1,4 @@
 (:summary    "Mode for playing, browsing, and editing go games"
- :repository (git . "git://github.com/eschulte/go-mode.git")
  :created    "2008"
  :updated    "2008"
  :license    "GPL-2"
@@ -8,4 +7,4 @@
 	       ("emacs" comint)
 	       (nil sgf-board sgf-gnugo sgf-gtp sgf-rw sgf-sgf)))
  :homepage   "https://github.com/eschulte/go-mode"
- :wikipage   "http://www.emacswiki.org/GoMode")
+ :wikipage   "GoMode")

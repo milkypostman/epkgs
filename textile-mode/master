@@ -6,7 +6,7 @@
  :maintainer ("Julien Barnier" . "julien@nozav.org")
  :provided   (textile-mode)
  :homepage   "http://dev.nozav.org/textile-mode.html"
- :wikipage   "http://www.emacswiki.org/TextileMode"
+ :wikipage   "TextileMode"
  :commentary "\
 Known bugs or limitations:
 

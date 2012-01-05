@@ -4,8 +4,7 @@
  :license    "GPL-2"
  :provided   (wcy-desktop)
  :keywords   (convenience)
- :homepage   "http://www.emacswiki.org/WcyDesktop"
- :wikipage   "http://www.emacswiki.org/WcyDesktop"
+ :wikipage   "WcyDesktop"
  :commentary "\
 save the desktop, i.e. save the opened file. no other features mentioned in
 desktop.el. in order to make it fater, the file is not really loaded, it is

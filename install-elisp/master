@@ -7,8 +7,7 @@
  :provided   (install-elisp)
  :required   ((("find-func" find-func)))
  :keywords   (convenience lisp maint)
- :homepage   "http://www.emacswiki.org/InstallElisp"
- :wikipage   "http://www.emacswiki.org/InstallElisp"
+ :wikipage   "InstallElisp"
  :commentary "\
 Automate Emacs Lisp installation.
 (1) download Emacs Lisp

@@ -20,7 +20,7 @@
 	       ("xml-parse" xml-parse)))
  :keywords   (hypermedia)
  :homepage   "http://mwolson.org/projects/EmacsWikiMode.html"
- :wikipage   "http://www.emacswiki.org/EmacsWikiMode"
+ :wikipage   "EmacsWikiMode"
  :commentary "\
 Wiki is a concept, more than a thing.  It is a way of creating
 document pages using plain text markup and simplified hyperlinking.

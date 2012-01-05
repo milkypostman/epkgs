@@ -1,5 +1,4 @@
-(:repository (git . "git://github.com/martialboniou/revive-plus.git")
- :created    "20110310"
+(:created    "20110310"
  :updated    "20111126"
  :license    "GPL-3"
  :authors    (("Martial Boniou"))

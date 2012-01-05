@@ -1,3 +1,2 @@
 (:summary    "Setup yasnippets for use with rspec"
- :repository (git . "git://github.com/gary/yasnippets-rspec.git")
  :homepage   "https://github.com/gary/yasnippets-rspec")

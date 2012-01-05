@@ -9,7 +9,7 @@
 	       ("emacs" easy-mmode)
 	       ("gnus" gnus-start nnheader nnmail nnmbox nnoo)))
  :keywords   (calendar convenience mail news)
- :wikipage   "http://www.emacswiki.org/TodoGnus"
+ :wikipage   "TodoGnus"
  :commentary "\
 Warning: this is alpha code!  Use at your own risk!  Don your
 asbestos longjohns!  Might eat your mail for lunch!

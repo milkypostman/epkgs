@@ -7,8 +7,7 @@
  :provided   (highlight-current-line)
  :required   ((("emacs" custom)))
  :keywords   (faces)
- :homepage   "http://www.emacswiki.org/HighlightCurrentLine"
- :wikipage   "http://www.emacswiki.org/HighlightCurrentLine"
+ :wikipage   "HighlightCurrentLine"
  :commentary "\
 Minor mode to highlight the line the cursor is in. You can change colors
 of foreground (text) and background. The default behaviour is to set

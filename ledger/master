@@ -1,5 +1,4 @@
 (:summary    "Helper code for use with the \"ledger\" command-line tool"
- :repository (git . "git://github.com/jwiegley/ledger.git")
  :created    "2009"
  :updated    "2009"
  :license    "GPL-2"
@@ -12,7 +11,7 @@
 	       ("rx" rx)))
  :keywords   (data)
  :homepage   "https://github.com/jwiegley/ledger"
- :wikipage   "http://www.emacswiki.org/LedgerMode"
+ :wikipage   "LedgerMode"
  :commentary "\
 To use this module: Load this file, open a ledger data file, and
 type M-x ledger-mode.  Once this is done, you can type:

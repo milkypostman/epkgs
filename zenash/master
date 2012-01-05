@@ -1,10 +1,9 @@
 (:summary    "A low-saturation, light-background version of zenburn"
- :repository (git . "git://github.com/yarkun/zenash.git")
  :license    "GPL-2"
  :authors    (("Yavuz Arkun"))
  :maintainer ("Yavuz Arkun")
  :provided   (zenash)
- :required   ((("color-theme" color-theme)))
+ :required   (((nil color-theme)))
  :homepage   "https://github.com/yarkun/zenash"
  :commentary "\
 Some packages ship with broken implementations of `format-spec';

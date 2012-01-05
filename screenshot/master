@@ -8,8 +8,7 @@
  :required   ((("cl" cl))
 	      (("yaoddmuse" yaoddmuse)))
  :keywords   (hypermedia images)
- :homepage   "http://www.emacswiki.org/ScreenShot"
- :wikipage   "http://www.emacswiki.org/ScreenShot"
+ :wikipage   "ScreenShot"
  :commentary "\
 Take a screenshot by ImageMagick in Emacs easily. Then send the
 image to remote host by scp (optional). Finally the URL or filename

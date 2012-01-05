@@ -5,5 +5,4 @@
  :authors    (("Daniel Brockman" . "daniel@brockman.se"))
  :maintainer ("Daniel Brockman" . "daniel@brockman.se")
  :provided   (rcirc-sound)
- :homepage   "http://www.emacswiki.org/rcircSound"
- :wikipage   "http://www.emacswiki.org/rcircSound")
+ :wikipage   "rcircSound")

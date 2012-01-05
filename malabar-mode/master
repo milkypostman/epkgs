@@ -1,5 +1,4 @@
 (:summary    "A better Java mode for Emacs"
- :repository (git . "git://github.com/espenhw/malabar-mode.git")
  :created    "2009"
  :updated    "2010"
  :license    "GPL-2"
@@ -19,4 +18,4 @@
 	       ("thingatpt" thingatpt)
 	       (nil semantic-ctxt semantic-find semantic-ia semantic-lex semantic-load semantic-wisent semanticdb-search srecode-getset srecode-map wisent-comp wisent-java)))
  :homepage   "https://github.com/espenhw/malabar-mode"
- :wikipage   "http://www.emacswiki.org/MalabarMode")
+ :wikipage   "MalabarMode")

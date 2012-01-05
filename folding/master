@@ -10,8 +10,7 @@
  :required   ((("cl" cl)
 	       ("emacs" advice custom easymenu)))
  :keywords   (tools)
- :homepage   "http://www.emacswiki.org/FoldingMode"
- :wikipage   "http://www.emacswiki.org/FoldingMode"
+ :wikipage   "FoldingMode"
  :commentary "\
 Preface
 

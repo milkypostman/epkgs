@@ -4,4 +4,4 @@
  :license    "GPL-2"
  :provided   (recent-files)
  :keywords   (files menu)
- :wikipage   "http://www.emacswiki.org/RecentFiles")
+ :wikipage   "RecentFiles")

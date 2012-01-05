@@ -5,7 +5,7 @@
  :provided   (defaultcontent)
  :keywords   (contents default)
  :homepage   "http://pagesperso-systeme.lip6.fr/Christian.Queinnec/WWW/elisp.html"
- :wikipage   "http://www.emacswiki.org/DefaultContent"
+ :wikipage   "DefaultContent"
  :commentary "\
 The purpose of this package is to provide a default content for
 files. It extends the autoinsert package from Charlie Martin and

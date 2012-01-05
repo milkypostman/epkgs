@@ -6,4 +6,4 @@
  :provided   (shell-current-directory)
  :keywords   (comint shell)
  :homepage   "https://github.com/metaperl"
- :wikipage   "http://www.emacswiki.org/ShellCurrentDirectory")
+ :wikipage   "ShellCurrentDirectory")

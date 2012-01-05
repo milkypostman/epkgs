@@ -1,5 +1,4 @@
 (:summary    "Legacy function to work with FluidInfo"
- :repository (git . "git://github.com/hdurer/fluiddb.el.git")
  :created    "2009"
  :updated    "2010"
  :license    "GPL-2"

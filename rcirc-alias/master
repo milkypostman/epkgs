@@ -3,8 +3,7 @@
  :updated    "2009"
  :license    "GPL-2"
  :provided   (rcirc-alias)
- :homepage   "http://www.emacswiki.org/rcircAlias"
- :wikipage   "http://www.emacswiki.org/rcircAlias"
+ :wikipage   "rcircAlias"
  :commentary "\
 This is specially useful if using Bitlbee to add multiprotocol
 Instant Messaging to IRC.

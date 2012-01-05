@@ -1,5 +1,4 @@
 (:summary    "Lingr Client for GNU Emacs"
- :repository (git . "git://github.com/lugecy/lingr-el.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"

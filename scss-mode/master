@@ -1,5 +1,4 @@
 (:summary    "Major mode for editing SCSS files"
- :repository (git . "git://github.com/antonj/scss-mode.git")
  :created    "201026"
  :license    "GPL-2"
  :authors    (("Anton Johansson" . "anton.johansson@gmail.com"))
@@ -10,7 +9,7 @@
 	       ("flymake" flymake)))
  :keywords   (css mode scss)
  :homepage   "https://github.com/antonj/scss-mode"
- :wikipage   "http://www.emacswiki.org/ScssMode"
+ :wikipage   "ScssMode"
  :commentary "\
 Command line utility sass is required, see http://sass-lang.com/
 To install sass (haml):

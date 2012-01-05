@@ -8,5 +8,4 @@
  :required   ((("cl" cl)
 	       ("tree-widget" tree-widget)))
  :keywords   (convenience help widget)
- :homepage   "http://www.emacswiki.org/TreeMode"
- :wikipage   "http://www.emacswiki.org/TreeMode")
+ :wikipage   "TreeMode")

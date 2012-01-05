@@ -9,8 +9,7 @@
 	      (("compile+" compile+)
 	       ("thingatpt+" thingatpt+)))
  :keywords   (compile processes tools)
- :homepage   "http://www.emacswiki.org/GrepPlus"
- :wikipage   "http://www.emacswiki.org/GrepPlus"
+ :wikipage   "GrepPlus"
  :commentary "\
 Extensions to standard library `grep.el':
 

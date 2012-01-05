@@ -4,5 +4,4 @@
  :license    "GPL-2"
  :provided   (iswitchb-highlight)
  :required   ((("iswitchb" iswitchb)))
- :homepage   "http://www.emacswiki.org/IswitchbHighlight"
- :wikipage   "http://www.emacswiki.org/IswitchbHighlight")
+ :wikipage   "IswitchbHighlight")

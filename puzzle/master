@@ -5,7 +5,7 @@
  :authors    (("Matthew P. Hodges" . "mphodges@member.fsf.org"))
  :maintainer ("Matthew P. Hodges" . "mphodges@member.fsf.org")
  :provided   (puzzle)
- :wikipage   "http://www.emacswiki.org/SlidePuzzleForEmacs"
+ :wikipage   "SlidePuzzleForEmacs"
  :commentary "\
 Slide puzzle for Emacs.  Start with M-x puzzle RET. Press ? for
 help.")

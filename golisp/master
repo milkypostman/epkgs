@@ -7,7 +7,7 @@
  :provided   (golisp)
  :required   ((("cl" cl)))
  :keywords   (extensions hypermedia lisp tools)
- :wikipage   "http://www.emacswiki.org/GoLispMode"
+ :wikipage   "GoLispMode"
  :commentary "\
 Golisp-mode is a small lisp code navigation and indexing tool for
 GNU Emacs. It is currently under construction. Golisp-mode is

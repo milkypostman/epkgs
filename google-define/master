@@ -3,5 +3,4 @@
  :license    "as-is"
  :provided   (google-define)
  :required   ((("emacs" font-lock)))
- :homepage   "http://www.emacswiki.org/google-define"
- :wikipage   "http://www.emacswiki.org/google-define")
+ :wikipage   "google-define")

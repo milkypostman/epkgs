@@ -1,5 +1,4 @@
 (:summary    "An Emacs Interface To Meteorological Data"
- :repository (cvs . ":pserver:anonymous@cvs.gna.org:/var/cvs/emeteo")
  :created    "2004"
  :updated    "2004"
  :license    "GPL-2"
@@ -10,7 +9,7 @@
 	       ("emacs" timer)))
  :keywords   (emacs metar meteo weather)
  :homepage   "http://gna.org/projects/emeteo"
- :wikipage   "http://www.emacswiki.org/EmacsMeteo"
+ :wikipage   "EmacsMeteo"
  :commentary "\
 emeteo is a general emacs interface to provide meteorologic data
 

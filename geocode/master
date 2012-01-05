@@ -1,5 +1,4 @@
 (:summary    "Geocoder.us API client for Emacs"
- :repository (git . "git://github.com/hober/geocode-el.git")
  :created    "2009"
  :updated    "2009"
  :license    "GPL-3"

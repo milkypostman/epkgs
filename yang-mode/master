@@ -1,7 +1,7 @@
 (:license    "GPL-2"
  :provided   (yang-mode)
  :required   ((("cc-mode" cc-fonts cc-langs cc-mode)))
- :wikipage   "http://www.emacswiki.org/YangMode"
+ :wikipage   "YangMode"
  :commentary "\
 Note: The interface used in this file requires CC Mode 5.30 or
 later.

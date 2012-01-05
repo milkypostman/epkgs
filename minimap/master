@@ -5,7 +5,7 @@
  :authors    (("David Engster" . "dengste@eml.cc"))
  :maintainer ("David Engster" . "dengste@eml.cc")
  :provided   (minimap)
- :wikipage   "http://www.emacswiki.org/MiniMap"
+ :wikipage   "MiniMap"
  :commentary "\
 This file is an implementation of a minimap sidebar, i.e., a
 smaller display of the current buffer on the left side.  It

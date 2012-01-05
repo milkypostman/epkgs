@@ -6,8 +6,7 @@
  :maintainer ("Drew Adams")
  :provided   (modeline-posn)
  :keywords   (column mode-line region)
- :homepage   "http://www.emacswiki.org/ModeLinePosition"
- :wikipage   "http://www.emacswiki.org/ModeLinePosition"
+ :wikipage   "ModeLinePosition"
  :commentary "\
 Change variable `mode-line-position' so that the following changes
  are made to the mode line:

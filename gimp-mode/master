@@ -1,5 +1,4 @@
-(:repository (git . "git://github.com/pft/gimpmode.git")
- :created    "2011"
+(:created    "2011"
  :updated    "2011"
  :license    "GPL-3"
  :provided   (fud gimp-mode)
@@ -13,7 +12,7 @@
 	       ("thingatpt" thingatpt)))
  :keywords   (extensions gimp multimedia processes scheme tools)
  :homepage   "http://niels.kicks-ass.org/gimpmode"
- :wikipage   "http://www.emacswiki.org/GimpMode"
+ :wikipage   "GimpMode"
  :commentary "\
 Interaction/editing mode for the GIMP
 see gimpmode.pdf for full description and usage.

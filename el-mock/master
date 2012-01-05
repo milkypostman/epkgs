@@ -8,8 +8,7 @@
  :required   ((("cl" cl)
 	       ("emacs" advice)))
  :keywords   (lisp testing unittest)
- :homepage   "http://www.emacswiki.org/EmacsLispMock"
- :wikipage   "http://www.emacswiki.org/EmacsLispMock"
+ :wikipage   "EmacsLispMock"
  :commentary "\
 Emacs Lisp Mock is a library for mocking and stubbing using
 readable syntax. Most commonly Emacs Lisp Mock is used in

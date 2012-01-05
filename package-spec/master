@@ -1,5 +1,4 @@
 (:summary    "Specify package.el packages to use in a package spec"
- :repository (git . "git://github.com/rejeep/package-spec.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"

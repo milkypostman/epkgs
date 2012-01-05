@@ -3,8 +3,7 @@
  :updated    "2006"
  :license    "GPL-2"
  :provided   (browse-urn)
- :homepage   "http://www.emacswiki.org/BrowseURN"
- :wikipage   "http://www.emacswiki.org/BrowseURN"
+ :wikipage   "BrowseURN"
  :commentary "\
 This package provides functionality for browsing URNs - Uniform Resource
 Names as defined in <urn:ietf:rfc:2141>.")

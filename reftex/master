@@ -1,5 +1,4 @@
 (:summary    "Version and autoloads of RefTeX"
- :repository (cvs . ":pserver:anonymous@cvs.savannah.nongnu.org:/sources/auctex")
  :created    "2007"
  :updated    "2007"
  :license    "GPL-3"
@@ -10,7 +9,7 @@
 	       ("reporter" reporter)))
  :keywords   (tex)
  :homepage   "http://www.gnu.org/software/auctex/reftex.html"
- :wikipage   "http://www.emacswiki.org/RefTeX"
+ :wikipage   "RefTeX"
  :commentary "\
 This file contains version information for RefTeX and autoloads for
 functions which should be callable by the user, other packages, or

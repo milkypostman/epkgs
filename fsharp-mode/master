@@ -1,5 +1,4 @@
-(:repository (svn . "https://fsharp-mode.svn.sourceforge.net/svnroot/fsharp-mode")
- :updated    "20050204"
+(:updated    "20050204"
  :license    "GPL"
  :provided   (fsharp fsharp-font fsharp-indent inf-fsharp)
  :required   ((("cl" cl)

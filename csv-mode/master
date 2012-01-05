@@ -8,7 +8,7 @@
  :required   ((("sort" sort)))
  :keywords   (convenience)
  :homepage   "http://centaur.maths.qmul.ac.uk/Emacs"
- :wikipage   "http://www.emacswiki.org/CsvMode"
+ :wikipage   "CsvMode"
  :commentary "\
 This package is intended for use with GNU Emacs 21 (only) and
 implements the following commands to process records of CSV

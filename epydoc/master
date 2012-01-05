@@ -1,5 +1,4 @@
 (:summary    "Pydoc interface for emacs"
- :repository (git . "git://github.com/mooz/epydoc.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"

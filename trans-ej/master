@@ -6,8 +6,7 @@
  :required   ((("emacs" button)
 	       ("url" url-util)))
  :keywords   (multilingual translation)
- :homepage   "http://www.emacswiki.org/TransEJ"
- :wikipage   "http://www.emacswiki.org/TransEJ"
+ :wikipage   "TransEJ"
  :commentary "\
 This program provides some interactive functions in order that we can
 easily request the text translation between English and Japanese to

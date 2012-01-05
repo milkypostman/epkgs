@@ -11,5 +11,4 @@
 	       ("visual-basic-mode" visual-basic-mode)
 	       (nil psgml-html)))
  :keywords   (html major-mode)
- :homepage   "http://www.emacswiki.org/ColdFusionMode"
- :wikipage   "http://www.emacswiki.org/ColdFusionMode")
+ :wikipage   "ColdFusionMode")

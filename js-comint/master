@@ -1,5 +1,4 @@
 (:summary    "Run javascript in an inferior process window"
- :repository (svn . "https://js-comint-el.svn.sourceforge.net/svnroot/js-comint-el")
  :created    "20080526"
  :updated    "2008"
  :license    "GPL-2"

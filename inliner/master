@@ -1,5 +1,4 @@
 (:summary    "Insert Tag for inline image of R graphics"
- :repository (git . "git://github.com/myuhe/inlineR.el.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL"

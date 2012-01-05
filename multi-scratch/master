@@ -6,8 +6,7 @@
  :maintainer ("Andy Stewart" . "lazycat.manatee@gmail.com")
  :provided   (multi-scratch)
  :required   ((("cl" cl)))
- :homepage   "http://www.emacswiki.org/MultiScratch"
- :wikipage   "http://www.emacswiki.org/MultiScratch"
+ :wikipage   "MultiScratch"
  :commentary "\
 Multiple scratches manager.
 

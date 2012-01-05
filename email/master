@@ -7,8 +7,7 @@
  :provided   (email)
  :required   ((("sendmail" sendmail)))
  :keywords   (extensions mail-mode)
- :homepage   "http://www.emacswiki.org/email"
- :wikipage   "http://www.emacswiki.org/email"
+ :wikipage   "email"
  :commentary "\
 This package permits easy archiving of outgoing mails, sending cc's to
 a specified set of poeple automatically and add a reference id to the

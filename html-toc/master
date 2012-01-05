@@ -6,4 +6,4 @@
  :provided   (html-toc)
  :keywords   (html)
  :homepage   "http://www.pvv.org/~rolfn"
- :wikipage   "http://www.emacswiki.org/HtmlToc")
+ :wikipage   "HtmlToc")

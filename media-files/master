@@ -1,5 +1,4 @@
-(:repository (git . "git://github.com/pheaver/media-files.el.git")
- :created    "2010"
+(:created    "2010"
  :updated    "2010"
  :license    "GPL-2"
  :authors    (("Philip Weaver" . "philip.weaver@gmail.com"))

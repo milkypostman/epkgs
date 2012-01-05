@@ -1,5 +1,4 @@
 (:summary    "Smart-Dash minor mode"
- :repository (hg . "http://bitbucket.org/malsyned/smart-dash")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-2"

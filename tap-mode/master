@@ -1,5 +1,4 @@
 (:summary    "Major mode for editing .tap-files"
- :repository (git . "git://github.com/renormalist/emacs-tap-mode.git")
  :created    "2009"
  :updated    "2009"
  :authors    (("Steffen Schwigon" . "ss5@renormalist.net"))

@@ -1,5 +1,4 @@
 (:summary    "Markdown-formatted READMEs for your ELisp"
- :repository (git . "git://github.com/thomas11/md-readme.git")
  :created    "2009"
  :updated    "2009"
  :license    "GPL-3"
@@ -8,7 +7,7 @@
  :provided   (md-readme)
  :keywords   (documentation github header help lisp markdown readme)
  :homepage   "https://github.com/thomas11/md-readme"
- :wikipage   "http://www.emacswiki.org/MdReadme"
+ :wikipage   "MdReadme"
  :commentary "\
 The git-based source code hosting site <http://github.com> has
 lately become popular for Emacs Lisp projects. Github has a feature

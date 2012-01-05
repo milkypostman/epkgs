@@ -1,5 +1,4 @@
-(:repository (git . "git://github.com/t9md/puppet-pi-mode.el.git")
- :license    "GPL-2"
+(:license    "GPL-2"
  :provided   (puppet-pi-mode)
  :required   ((("emacs" font-lock)))
  :keywords   (puppet)

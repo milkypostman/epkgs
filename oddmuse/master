@@ -7,8 +7,7 @@
 	       ("sgml-mode" sgml-mode)
 	       ("skeleton" skeleton)
 	       ("url" url)))
- :homepage   "http://www.emacswiki.org/OddmuseMode"
- :wikipage   "http://www.emacswiki.org/OddmuseMode"
+ :wikipage   "OddmuseMode"
  :commentary "\
 A simple mode to edit pages on Oddmuse wikis using Emacs.
 

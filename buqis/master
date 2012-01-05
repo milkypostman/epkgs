@@ -6,8 +6,7 @@
  :maintainer ("none, mail me if you want to maintain this code.")
  :provided   (buqis)
  :keywords   (buffers matching)
- :homepage   "http://www.emacswiki.org/BufferQuickSwitcher"
- :wikipage   "http://www.emacswiki.org/BufferQuickSwitcher"
+ :wikipage   "BufferQuickSwitcher"
  :commentary "\
 Main feature of buqis is fast navigation and abbility to attach
 some info, used by buqis to filter buffers to selected frame. Say

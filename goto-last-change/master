@@ -7,8 +7,7 @@
  :provided   (goto-last-change)
  :required   ((("cl" cl)))
  :keywords   (convenience)
- :homepage   "http://www.emacswiki.org/GotoLastChange"
- :wikipage   "http://www.emacswiki.org/GotoLastChange"
+ :wikipage   "GotoLastChange"
  :commentary "\
 After installing goto-last-change.el in a `load-path' directory and
 compiling it with `M-x byte-compile-file', load it with

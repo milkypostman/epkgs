@@ -10,7 +10,7 @@
 	       (nil maxima)))
  :keywords   (maxima)
  :homepage   "http://members3.jcom.home.ne.jp/imaxima/Site/Welcome.html"
- :wikipage   "http://www.emacswiki.org/MaximaMode"
+ :wikipage   "MaximaMode"
  :commentary "\
 This file (and imaxima.lisp) provides image support for interacting
 with the computer algebra system Maxima

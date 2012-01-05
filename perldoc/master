@@ -9,7 +9,7 @@
 	       ("tree-mode" tree-mode)
 	       ("windata" windata)
 	       ("woman" woman)))
- :wikipage   "http://www.emacswiki.org/PerlDoc"
+ :wikipage   "PerlDoc"
  :commentary "\
 Put this file into your load-path and the following into your ~/.emacs:
   (require 'perldoc)

@@ -7,8 +7,7 @@
  :provided   (mirror)
  :required   ((("emacs" comint)))
  :keywords   (convenience files)
- :homepage   "http://www.emacswiki.org/MirrorMode"
- :wikipage   "http://www.emacswiki.org/MirrorMode"
+ :wikipage   "MirrorMode"
  :commentary "\
 Provides a facility to update a (possibly remote) copy of the
 current buffer either automatically (by setting

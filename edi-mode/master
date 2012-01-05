@@ -6,8 +6,7 @@
  :maintainer ("Jeremy Cowgar" . "jeremy@cowgar.com")
  :provided   (edi-mode)
  :keywords   (edi)
- :homepage   "http://www.emacswiki.org/EdiMode"
- :wikipage   "http://www.emacswiki.org/EdiMode"
+ :wikipage   "EdiMode"
  :commentary "\
 Use `edi-mode' to edit raw edi files. Here is how to do that:
 

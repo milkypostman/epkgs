@@ -1,11 +1,10 @@
 (:summary    "Visible bookmarks in buffer"
- :repository (cvs . ":pserver:anonymous@cvs.savannah.nongnu.org:/sources/bm")
  :license    "GPL-2"
  :provided   (bm)
  :required   ((("emacs" overlay)
 	       ("info" info)))
  :homepage   "http://www.nongnu.org/bm"
- :wikipage   "http://www.emacswiki.org/VisibleBookmarks"
+ :wikipage   "VisibleBookmarks"
  :commentary "\
 Description:
 

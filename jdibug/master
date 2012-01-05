@@ -1,5 +1,4 @@
-(:repository (svn . "http://jdibug.googlecode.com/svn")
- :provided   (elog jdi jdibug jdibug-expr jdibug-menu jdibug-run jdibug-ui jdibug-util jdwp)
+(:provided   (elog jdi jdibug jdibug-expr jdibug-menu jdibug-run jdibug-ui jdibug-util jdwp)
  :required   ((("bindat" bindat)
 	       ("cc-mode" cc-mode)
 	       ("eieio" eieio)

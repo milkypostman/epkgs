@@ -5,7 +5,7 @@
  :authors    (("Matthew P. Hodges" . "mphodges@member.fsf.org"))
  :maintainer ("Matthew P. Hodges" . "mphodges@member.fsf.org")
  :provided   (cdi)
- :wikipage   "http://www.emacswiki.org/CommandLineCDPlayersInterface"
+ :wikipage   "CommandLineCDPlayersInterface"
  :commentary "\
 Package to control command line CD players.
 

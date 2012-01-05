@@ -1,5 +1,4 @@
 (:summary    "Describe functions and variables"
- :repository (cvs . ":pserver:anonymous@cvs.namazu.org:/storage/cvsroot")
  :created    "2007"
  :updated    "2007"
  :license    "GPL-2"

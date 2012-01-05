@@ -3,5 +3,4 @@
  :updated    "2005"
  :license    "GPL-2"
  :provided   (annotate)
- :homepage   "http://www.emacswiki.org/Annotate"
- :wikipage   "http://www.emacswiki.org/Annotate")
+ :wikipage   "Annotate")

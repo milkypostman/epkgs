@@ -1,5 +1,4 @@
 (:summary    "Find files in a project quickly"
- :repository (git . "git://github.com/technomancy/find-file-in-project.git")
  :created    "20080318"
  :updated    "2011"
  :license    "GPL-3"
@@ -8,7 +7,7 @@
  :provided   (find-file-in-project)
  :keywords   (convenience project)
  :homepage   "https://github.com/technomancy/find-file-in-project"
- :wikipage   "http://www.emacswiki.org/FindFileInProject"
+ :wikipage   "FindFileInProject"
  :commentary "\
 This library provides a couple methods for quickly finding any file
 in a given project.  It depends on GNU find.

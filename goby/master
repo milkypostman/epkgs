@@ -1,5 +1,4 @@
-(:repository (git . "git://github.com/kazu-yamamoto/Goby.git")
- :created    "2003"
+(:created    "2003"
  :authors    (("Kazu Yamamoto" . "kazu@mew.org"))
  :maintainer ("Kazu Yamamoto" . "kazu@mew.org")
  :provided   (goby goby-emacs goby-ps goby-vars goby-view)

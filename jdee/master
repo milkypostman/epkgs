@@ -1,5 +1,4 @@
 (:summary    "Integrated Development Environment for Java"
- :repository (svn . "https://jdee.svn.sourceforge.net/svnroot/jdee")
  :created    "2008"
  :updated    "2008"
  :license    "GPL-2"
@@ -33,4 +32,4 @@
 	       ("tree-widget" tree-widget)))
  :keywords   (java tools)
  :homepage   "http://jdee.sourceforge.net"
- :wikipage   "http://www.emacswiki.org/JavaDevelopmentEnvironment")
+ :wikipage   "JavaDevelopmentEnvironment")

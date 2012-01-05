@@ -8,7 +8,7 @@
  :required   ((("cl" cl)))
  :keywords   (abbrev convenience matching)
  :homepage   "http://nschum.de/src/emacs/rotate-text"
- :wikipage   "http://www.emacswiki.org/RotateText"
+ :wikipage   "RotateText"
  :commentary "\
 rotate-text allows you rotate to commonly interchanged text with a single
 keystroke.  For example, you can toggle between \"frame-width\" and

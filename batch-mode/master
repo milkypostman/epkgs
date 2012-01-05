@@ -3,5 +3,4 @@
  :updated    "2002"
  :license    "GPL-2"
  :provided   (batch-mode)
- :homepage   "http://www.emacswiki.org/BatchMode"
- :wikipage   "http://www.emacswiki.org/BatchMode")
+ :wikipage   "BatchMode")

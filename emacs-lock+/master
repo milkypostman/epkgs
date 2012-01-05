@@ -6,8 +6,7 @@
  :provided   (emacs-lock+)
  :required   ((("emacs-lock" emacs-lock)))
  :keywords   (extensions lock)
- :homepage   "http://www.emacswiki.org/EmacsLockPlus"
- :wikipage   "http://www.emacswiki.org/EmacsLockPlus"
+ :wikipage   "EmacsLockPlus"
  :commentary "\
 emacs-lock+ - extensions to standard library `emacs-lock.el'
 

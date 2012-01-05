@@ -1,5 +1,4 @@
 (:summary    "NSIS-mode"
- :repository (git . "git://github.com/mlf176f2/nsis-mode.git")
  :created    "20101116"
  :updated    "20110207"
  :license    "GPL-3"
@@ -14,7 +13,7 @@
 	       ("yasnippet" yasnippet)))
  :keywords   (nsis)
  :homepage   "https://github.com/mlf176f2/nsis-mode"
- :wikipage   "http://www.emacswiki.org/NsisMode"
+ :wikipage   "NsisMode"
  :commentary "\
 Put this in the load path, then add the following to your Emacs:
 

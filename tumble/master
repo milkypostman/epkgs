@@ -1,5 +1,4 @@
 (:summary    "An Tumblr mode for Emacs"
- :repository (git . "git://github.com/febuiles/tumble.git")
  :created    "20081201"
  :updated    "2011"
  :license    "GPL-2"
@@ -9,7 +8,7 @@
  :required   ((("http-post-simple" http-post-simple)))
  :keywords   (tumblr)
  :homepage   "https://github.com/febuiles/tumble"
- :wikipage   "http://www.emacswiki.org/Tumble"
+ :wikipage   "Tumble"
  :commentary "\
 Tumble is a mode for interacting with Tumblr inside Emacs. It currently
 provides the following functions:

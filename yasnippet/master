@@ -1,5 +1,4 @@
 (:summary    "Yet another snippet extension for Emacs"
- :repository (svn . "http://yasnippet.googlecode.com/svn")
  :created    "2008"
  :updated    "2009"
  :license    "GPL-2"
@@ -12,7 +11,7 @@
 	      (("dropdown-list" dropdown-list)))
  :keywords   (convenience emulation)
  :homepage   "http://code.google.com/p/yasnippet"
- :wikipage   "http://www.emacswiki.org/Yasnippet"
+ :wikipage   "Yasnippet"
  :commentary "\
 Basic steps to setup:
 

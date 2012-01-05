@@ -9,8 +9,7 @@
 	       ("outline" outline)
 	       ("showtip" showtip)))
  :keywords   (sdcv startdict)
- :homepage   "http://www.emacswiki.org/Sdcv"
- :wikipage   "http://www.emacswiki.org/Sdcv"
+ :wikipage   "Sdcv"
  :commentary "\
 Interface for sdcv (StartDict console version).
 

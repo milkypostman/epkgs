@@ -8,7 +8,7 @@
  :required   ((("desktop" desktop)))
  :keywords   (convenience)
  :homepage   "http://www.geekware.de/software/emacs"
- :wikipage   "http://www.emacswiki.org/DesktopMenu"
+ :wikipage   "DesktopMenu"
  :commentary "\
 Version: 0.2
 X-URL: http://www.geekware.de

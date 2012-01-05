@@ -1,5 +1,4 @@
 (:summary    "Finding any resource of a project"
- :repository (git . "git://github.com/imakado/anything-project.git")
  :created    "2009"
  :updated    "2009"
  :license    "GPL-2"

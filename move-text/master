@@ -5,8 +5,7 @@
  :maintainer ("Jason M" . "jasonm23@gmail.com")
  :provided   (move-text)
  :keywords   (edit)
- :homepage   "http://www.emacswiki.org/MoveText"
- :wikipage   "http://www.emacswiki.org/MoveText"
+ :wikipage   "MoveText"
  :commentary "\
 MoveText is extracted from Basic edit toolkit.
 It allows you to move the current line using M-up / M-down

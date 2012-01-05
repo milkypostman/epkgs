@@ -1,5 +1,4 @@
 (:summary    "Graphically indicate the fill column"
- :repository (git . "git://github.com/alpaker/Fill-Column-Indicator.git")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-2"
@@ -8,6 +7,7 @@
  :provided   (fci-osx-23-fix fill-column-indicator)
  :keywords   (convenience)
  :homepage   "https://github.com/alpaker/Fill-Column-Indicator"
+ :wikipage   "FillColumnIndicator"
  :commentary "\
 Many modern editors and IDEs can graphically indicate the location of the
 fill column by drawing a thin line (in design parlance, a `rule') down the

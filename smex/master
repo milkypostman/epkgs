@@ -1,5 +1,4 @@
 (:summary    "M-x interface with Ido-style fuzzy matching"
- :repository (git . "git://github.com/nonsequitur/smex.git")
  :created    "2009"
  :updated    "2010"
  :license    "GPL-3"
@@ -10,7 +9,7 @@
 	       ("ido" ido)))
  :keywords   (convenience usability)
  :homepage   "https://github.com/nonsequitur/smex"
- :wikipage   "http://www.emacswiki.org/Smex"
+ :wikipage   "Smex"
  :commentary "\
 Quick start:
 run (smex-initialize)

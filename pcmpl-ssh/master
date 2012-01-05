@@ -8,8 +8,7 @@
  :required   ((("executable" executable)
 	       ("pcomplete" pcomplete)))
  :keywords   (completion shell ssh)
- :homepage   "http://www.emacswiki.org/PcompleteSSH"
- :wikipage   "http://www.emacswiki.org/PcompleteSSH"
+ :wikipage   "PcompleteSSH"
  :commentary "\
 This will allow eshell to autocomplete SSH hosts from the list of
 known hosts in your ~/.ssh/known_hosts file. Note that newer

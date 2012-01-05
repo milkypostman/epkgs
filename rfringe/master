@@ -6,8 +6,7 @@
  :provided   (rfringe)
  :required   ((("emacs" fringe)))
  :keywords   (bitmap fringe)
- :homepage   "http://www.emacswiki.org/RFringe"
- :wikipage   "http://www.emacswiki.org/RFringe"
+ :wikipage   "RFringe"
  :commentary "\
 This is a module to allow the use of the fringe to indicate locations
 relative to the bounds of the buffer.  rfringe = \"relative fringe\".

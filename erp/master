@@ -1,5 +1,4 @@
 (:summary    "ERP(Enterprise Ressource Planning) in plain text. "
- :repository (git . "git://github.com/tj64/erp-mode.git")
  :created    "20110625"
  :updated    "20110625"
  :license    "GPL-3"

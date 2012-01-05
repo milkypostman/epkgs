@@ -1,5 +1,4 @@
 (:summary    "Quickly traverse all backups of a file"
- :repository (git . "git://github.com/lewang/backup-walker.git")
  :created    "20110907"
  :updated    "20110920"
  :license    "GPL-3"

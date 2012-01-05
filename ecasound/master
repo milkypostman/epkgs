@@ -8,7 +8,7 @@
  :required   ((("emacs" comint easymenu)
 	       ("pcomplete" pcomplete)))
  :keywords   (audio comint ecasound eci pcomplete process)
- :wikipage   "http://www.emacswiki.org/EcasoundMode"
+ :wikipage   "EcasoundMode"
  :commentary "\
 This file implements several aspects of ecasound use:
 

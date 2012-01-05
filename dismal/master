@@ -4,4 +4,4 @@
  :required   ((("cl" cl)
 	       ("info" info)))
  :homepage   "http://acs.ist.psu.edu/dismal/"
- :wikipage   "http://www.emacswiki.org/Dismal")
+ :wikipage   "Dismal")

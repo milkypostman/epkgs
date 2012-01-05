@@ -9,7 +9,7 @@
 	       ("emacs" dired)
 	       ("jka-compr" jka-compr)
 	       ("trace" trace)))
- :wikipage   "http://www.emacswiki.org/InterfaceToAPT"
+ :wikipage   "InterfaceToAPT"
  :commentary "\
 Package to interface Emacs with APT.  Start things off using e.g.:
 M-x apt-utils-show-package RET emacs21 RET

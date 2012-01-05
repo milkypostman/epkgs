@@ -1,5 +1,4 @@
 (:summary    "Quick way to jump to specific characters"
- :repository (git . "git://github.com/rlph/emotion.git")
  :created    "20110712"
  :updated    "2011"
  :license    "GPL-3"

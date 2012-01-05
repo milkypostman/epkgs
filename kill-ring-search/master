@@ -1,5 +1,4 @@
 (:summary    "Incremental search for the kill ring"
- :repository (git . "git://github.com/nschum/kill-ring-search.el.git")
  :created    "2008"
  :updated    "2008"
  :license    "GPL-2"
@@ -9,7 +8,7 @@
  :required   ((("cl" cl)))
  :keywords   (convenience matching)
  :homepage   "http://nschum.de/src/emacs/kill-ring-search"
- :wikipage   "http://www.emacswiki.org/KillRingSearch"
+ :wikipage   "KillRingSearch"
  :commentary "\
 To install, add the following to your .emacs file:
 (autoload 'kill-ring-search \"kill-ring-search\"

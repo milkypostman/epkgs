@@ -1,6 +1,6 @@
 (:summary    "Interactively list/edit registers"
- :created    "2008"
- :updated    "2008"
+ :created    "2011"
+ :updated    "2011"
  :license    "GPL-3"
  :authors    (("Bastien Guerry" . "bzg@altern.org"))
  :maintainer ("Bastien Guerry" . "bzg@altern.org")

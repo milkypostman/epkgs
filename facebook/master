@@ -1,5 +1,4 @@
 (:summary    "Access the Facebook API from emacs"
- :repository (git . "git://facebook-el.git.sourceforge.net/gitroot/facebook-el/facebook-el")
  :created    "20071005"
  :updated    "2009"
  :license    "GPL-2"

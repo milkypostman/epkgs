@@ -1,5 +1,4 @@
 (:summary    "Use iswitch to access menus"
- :repository (git . "git://github.com/joodie/iswitch-menu.git")
  :created    "2008"
  :updated    "2008"
  :license    "GPL-2"
@@ -11,7 +10,7 @@
 	       ("tmm" tmm)))
  :keywords   (frames matching menus terminals)
  :homepage   "https://github.com/joodie/iswitch-menu"
- :wikipage   "http://www.emacswiki.org/IswitchMenu"
+ :wikipage   "IswitchMenu"
  :commentary "\
 SYNOPSIS
 

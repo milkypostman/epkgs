@@ -1,8 +1,7 @@
 (:summary    "A module for organizing and adding to code imports"
- :repository (git . "git://github.com/ahyatt/code-imports.git")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-3"
  :provided   (code-imports code-imports-test)
  :homepage   "https://github.com/ahyatt/code-imports"
- :wikipage   "http://www.emacswiki.org/CodeImports")
+ :wikipage   "CodeImports")

@@ -6,8 +6,7 @@
  :maintainer ("Carl Groner" . "c.groner@gmail.com")
  :provided   (tumbl)
  :required   ((("http-post-simple" http-post-simple)))
- :homepage   "http://www.emacswiki.org/Tumbl"
- :wikipage   "http://www.emacswiki.org/Tumbl"
+ :wikipage   "Tumbl"
  :commentary "\
 tumbl.el allows posting to tumblr.com through the api the
 tumblr.com service provides. See http://www.tumblr.com/api for more 

@@ -1,5 +1,4 @@
 (:summary    "MMM submode class for Mako Templates"
- :repository (hg . "http://bitbucket.org/pjenvey/mmm-mako")
  :created    "2007"
  :updated    "2007"
  :license    "GPL-2"

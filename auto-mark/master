@@ -8,8 +8,7 @@
  :required   ((("cl" cl)
 	       ("emacs" easy-mmode)))
  :keywords   (convenience)
- :homepage   "http://www.emacswiki.org/AutoMark"
- :wikipage   "http://www.emacswiki.org/AutoMark"
+ :wikipage   "AutoMark"
  :commentary "\
 auto-mark push marks automatically when you change kind of command sequence.
 For example, previous-line and next-line is motion comman, and

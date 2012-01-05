@@ -8,7 +8,7 @@
  :required   ((("goto-addr" goto-addr)
 	       ("view" view)))
  :homepage   "http://www.loveshack.ukfsn.org/emacs"
- :wikipage   "http://www.emacswiki.org/RfcView"
+ :wikipage   "RfcView"
  :commentary "\
 Introduction:
 

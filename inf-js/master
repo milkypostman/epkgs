@@ -1,5 +1,4 @@
-(:repository (git . "git://github.com/bkyle/inf-js.git")
- :authors    (("Bryan Kyle" . "bryan.kyle@gmail.com"))
+(:authors    (("Bryan Kyle" . "bryan.kyle@gmail.com"))
  :maintainer ("Bryan Kyle" . "bryan.kyle@gmail.com")
  :provided   (inf-js)
  :required   ((("compile" compile)

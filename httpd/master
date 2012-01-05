@@ -7,7 +7,7 @@
 	       ("cl" cl)))
  :keywords   (games)
  :homepage   "http://emarsden.chez.com/downloads"
- :wikipage   "http://www.emacswiki.org/EmacsHttpd"
+ :wikipage   "EmacsHttpd"
  :commentary "\
 httpd.el is an HTTP server embedded in the Emacs. It can handle GET
 and HEAD requests; adding support for POST should not be too

@@ -6,7 +6,7 @@
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (perl-pod-coding)
  :required   ((("gnus" mm-util)))
- :wikipage   "http://www.emacswiki.org/PerlPodCoding"
+ :wikipage   "PerlPodCoding"
  :commentary "\
 This is a spot of code to get an Emacs coding system from the \"=encoding\"
 line in perl pod documentation, either inline in perl code, or a separate

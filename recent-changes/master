@@ -3,4 +3,4 @@
  :required   ((("cl" cl)
 	       ("page-attributes" page-attributes)))
  :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/webstuff/webmastering"
- :wikipage   "http://www.emacswiki.org/RecentChanges")
+ :wikipage   "RecentChanges")

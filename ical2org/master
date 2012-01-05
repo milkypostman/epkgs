@@ -1,5 +1,4 @@
 (:summary    "Convert icalendar to org"
- :repository (git . "git://github.com/cofi/ical2org.git")
  :created    "20101229"
  :updated    "2011"
  :license    "GPL-2"

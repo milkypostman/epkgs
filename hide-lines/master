@@ -1,4 +1,3 @@
 (:summary    "Commands for hiding lines based on a regexp"
  :provided   (hide-lines)
- :homepage   "http://www.emacswiki.org/HideLines"
- :wikipage   "http://www.emacswiki.org/HideLines")
+ :wikipage   "HideLines")

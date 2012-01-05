@@ -8,6 +8,6 @@
  :required   ((("cl" cl)))
  :keywords   (games)
  :homepage   "http://www.sha-bang.de/emacs.html"
- :wikipage   "http://www.emacswiki.org/SokobanMode"
+ :wikipage   "SokobanMode"
  :commentary "\
 Play Sokoban in emacs.")

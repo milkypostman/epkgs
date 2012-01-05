@@ -1,5 +1,4 @@
-(:repository (git . "git://github.com/tsgates/pylookup.git")
- :provided   (pylookup)
+(:provided   (pylookup)
  :required   ((("browse-url" browse-url)
 	       ("cl" cl)
 	       ("emacs" simple)

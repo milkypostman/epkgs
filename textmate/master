@@ -1,5 +1,4 @@
 (:summary    "TextMate minor mode for Emacs"
- :repository (git . "git://github.com/defunkt/textmate.el.git")
  :created    "20081122"
  :updated    "2009"
  :license    "GPL-3"
@@ -10,7 +9,7 @@
 	       ("imenu" imenu)))
  :keywords   (mac osx textmate)
  :homepage   "https://github.com/defunkt/textmate.el"
- :wikipage   "http://www.emacswiki.org/TextMate"
+ :wikipage   "TextMate"
  :commentary "\
 This minor mode exists to mimick TextMate's awesome
 features.

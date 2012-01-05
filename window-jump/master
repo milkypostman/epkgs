@@ -1,5 +1,4 @@
 (:summary    "Move left/right/up/down through your windows"
- :repository (git . "git://github.com/chumpage/window-jump.el.git")
  :authors    (("Steven Thomas"))
  :maintainer ("Steven Thomas")
  :provided   (window-jump)

@@ -1,5 +1,4 @@
 (:summary    "Multiple major mode support for web editing"
- :repository (git . "git://github.com/fgallina/multi-web-mode.git")
  :created    "2009"
  :updated    "2009"
  :license    "GPL-3"

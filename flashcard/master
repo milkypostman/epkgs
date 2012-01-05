@@ -7,7 +7,7 @@
  :provided   (flashcard)
  :keywords   (applications flashcard)
  :homepage   "http://ichi2.net/flashcard"
- :wikipage   "http://www.emacswiki.org/FlashCard"
+ :wikipage   "FlashCard"
  :commentary "\
 This mode helps you to learn facts. To use it, just put the
 following in your .emacs file:

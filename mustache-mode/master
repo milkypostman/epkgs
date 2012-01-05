@@ -1,5 +1,4 @@
 (:summary    "A major mode for editing Mustache files"
- :repository (git . "git://github.com/mustache/emacs.git")
  :license    "GPL-2"
  :authors    (("Tony Gentilcore")
 	      ("Chris Wanstrath")

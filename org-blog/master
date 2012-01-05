@@ -7,8 +7,7 @@
  :provided   (org-blog)
  :required   ((("org" org-publish)))
  :keywords   (hypermedia tools)
- :homepage   "http://www.emacswiki.org/OrgBlog"
- :wikipage   "http://www.emacswiki.org/OrgBlog"
+ :wikipage   "OrgBlog"
  :commentary "\
 This program adds simple blog publishing support to org-mode. It is
 built on top of org-publish.el.

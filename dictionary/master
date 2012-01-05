@@ -1,5 +1,4 @@
 (:summary    "An interface to RFC 2229 dictionary server"
- :repository (git . "git://github.com/myrkr/dictionary-el.git")
  :updated    "20041002"
  :license    "GPL-2"
  :authors    (("Torsten Hilbrich" . "dictionary@myrkr.in-berlin.de"))

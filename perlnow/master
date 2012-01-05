@@ -1,5 +1,4 @@
 (:summary    "Wed Jan 14 13:45:31 2004"
- :repository (git . "git://github.com/doomvox/perlnow.git")
  :created    "2004"
  :updated    "20091204"
  :license    "GPL-2"
@@ -9,7 +8,7 @@
  :required   ((("cl" cl)
 	       ("template" template)))
  :homepage   "https://github.com/doomvox/perlnow"
- :wikipage   "http://www.emacswiki.org/PerlNow"
+ :wikipage   "PerlNow"
  :commentary "\
 perlnow.el is intended to speed the development of perl code
  by automating some routine tasks.

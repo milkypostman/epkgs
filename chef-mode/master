@@ -1,5 +1,4 @@
 (:summary    "Minor mode for editing an opscode chef repository"
- :repository (git . "git://github.com/mpasternacki/chef-mode.git")
  :created    "20110828"
  :updated    "2011"
  :authors    (("Maciej Pasternacki" . "maciej@pasternacki.net"))

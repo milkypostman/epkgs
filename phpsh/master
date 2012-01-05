@@ -1,5 +1,4 @@
-(:repository (git . "git://github.com/facebook/phpsh.git")
- :provided   (geben)
+(:provided   (geben)
  :required   ((("cl" cl)
 	       ("emacs" custom)
 	       ("gud" gud)

@@ -1,5 +1,4 @@
-(:repository (git . "git://github.com/death/reddit-mode.git")
- :provided   (reddit)
+(:provided   (reddit)
  :required   ((("cl" cl)
 	       ("json" json)
 	       ("markdown-mode" markdown-mode)

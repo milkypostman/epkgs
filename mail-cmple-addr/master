@@ -4,5 +4,4 @@
  :authors    (("Takashi MITSUISHI" . "takashi@riec.tohoku.ac.jp"))
  :maintainer ("Takashi MITSUISHI" . "takashi@riec.tohoku.ac.jp")
  :provided   (mail-cmple-addr)
- :homepage   "http://www.emacswiki.org/MailCmpleAddr"
- :wikipage   "http://www.emacswiki.org/MailCmpleAddr")
+ :wikipage   "MailCmpleAddr")

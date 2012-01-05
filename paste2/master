@@ -10,8 +10,7 @@
 	       ("thingatpt" thingatpt)
 	       ("url" url)))
  :keywords   (paste)
- :homepage   "http://www.emacswiki.org/Paste2"
- :wikipage   "http://www.emacswiki.org/Paste2"
+ :wikipage   "Paste2"
  :commentary "\
 Simple interface for paste2.org
 

@@ -2,7 +2,7 @@
  :updated    "2003"
  :license    "GPL-2"
  :provided   (spread)
- :wikipage   "http://www.emacswiki.org/SpreadMode"
+ :wikipage   "SpreadMode"
  :commentary "\
 written by Guillaume Marceau (zfhrdop2ww001@sneakemail.com) from
 Benjamin C. Pierce original code and idea.

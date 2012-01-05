@@ -1,12 +1,11 @@
 (:summary    "A flymake syntax-checker for shell scripts"
- :repository (git . "https://github.com/purcell/flymake-shell")
  :created    "2011"
  :updated    "2011"
  :authors    (("Steve Purcell" . "steve@sanityinc.com"))
  :maintainer ("Steve Purcell" . "steve@sanityinc.com")
  :provided   (flymake-shell)
  :required   ((("flymake" flymake)))
- :wikipage   "http://www.emacswiki.org/FlymakeShell"
+ :wikipage   "FlymakeShell"
  :commentary "\
 Usage:
 

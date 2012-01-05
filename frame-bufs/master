@@ -1,5 +1,4 @@
 (:summary    "A minor mode for frame-relative buffer lists"
- :repository (git . "git://github.com/alpaker/Frame-Bufs.git")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-2"
@@ -8,7 +7,7 @@
  :provided   (frame-bufs)
  :keywords   (buffers convenience)
  :homepage   "https://github.com/alpaker/Frame-Bufs"
- :wikipage   "http://www.emacswiki.org/FrameBufs"
+ :wikipage   "FrameBufs"
  :commentary "\
 Frame-bufs extends Emacs's buffer menu so that it understands a
 distinction between those buffers that associated with a frame and those

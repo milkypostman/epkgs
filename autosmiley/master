@@ -5,8 +5,7 @@
  :maintainer ("Damyan Pepper (gmail account, username damyanp)")
  :provided   (autosmiley)
  :required   ((("gnus" smiley)))
- :homepage   "http://www.emacswiki.org/AutoSmiley"
- :wikipage   "http://www.emacswiki.org/AutoSmiley"
+ :wikipage   "AutoSmiley"
  :commentary "\
 Defines the minor mode autosmiley-mode that converts smileys like
 :-) into their graphical representations on the fly.

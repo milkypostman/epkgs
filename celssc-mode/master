@@ -6,8 +6,7 @@
  :maintainer ("Olexandr Sydorchuk")
  :provided   (celssc-mode)
  :keywords   (celestia major-mode)
- :homepage   "http://www.emacswiki.org/CelsscMode"
- :wikipage   "http://www.emacswiki.org/CelsscMode"
+ :wikipage   "CelsscMode"
  :commentary "\
 Major mode for editing celestia catalog files.
 This minor mode is based on 

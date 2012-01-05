@@ -6,7 +6,7 @@
  :maintainer ("Aurélien Tisné" . "address@bogus.example.com")
  :provided   (show-whitespace-mode)
  :keywords   (convenience editing)
- :wikipage   "http://www.emacswiki.org/ShowWhitespaceMode"
+ :wikipage   "ShowWhitespaceMode"
  :commentary "\
 Introduction:
 

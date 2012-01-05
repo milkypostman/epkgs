@@ -1,5 +1,4 @@
 (:summary    "Flexible and usable media player for Emacs"
- :repository (git . "git://github.com/dbrock/bongo.git")
  :created    "2005"
  :updated    "2010"
  :license    "GPL-2"
@@ -15,4 +14,4 @@
 	       ("time-date" time-date))
 	      (("volume" volume)))
  :homepage   "http://www.emacswiki.org/cgi-bin/wiki/Bongo"
- :wikipage   "http://www.emacswiki.org/Bongo")
+ :wikipage   "Bongo")

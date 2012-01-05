@@ -6,8 +6,7 @@
  :maintainer ("Lennart Staflin" . "lenst@lysator.liu.se")
  :provided   (corba)
  :required   ((("cl" cl)))
- :homepage   "http://www.emacswiki.org/CorbaImplementation"
- :wikipage   "http://www.emacswiki.org/CorbaImplementation"
+ :wikipage   "CorbaImplementation"
  :commentary "\
 Provides an implementation of CORBA Dynamic Invocation interface
 using the IIOP protocol.")

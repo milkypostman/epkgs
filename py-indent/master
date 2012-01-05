@@ -8,8 +8,7 @@
  :required   ((("cl" cl)
 	       ("emacs" newcomment)))
  :keywords   (indent python)
- :homepage   "http://www.emacswiki.org/PyIndent"
- :wikipage   "http://www.emacswiki.org/PyIndent"
+ :wikipage   "PyIndent"
  :commentary "\
 This package provides support for annotating Python code with C-like block
 delimiters (in Python comments) that allow the indentation of the file to

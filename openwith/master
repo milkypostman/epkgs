@@ -7,7 +7,7 @@
  :provided   (openwith)
  :keywords   (files processes)
  :homepage   "http://stud4.tuwien.ac.at/~e0225855"
- :wikipage   "http://www.emacswiki.org/OpenWith"
+ :wikipage   "OpenWith"
  :commentary "\
 This lets you associate external applications with files so that
 you can open them via C-x C-f, with RET in dired, etc.

@@ -10,7 +10,7 @@
 	       ("ispell" ispell)
 	       ("trace" trace)))
  :keywords   (convenience flyspell ispell)
- :wikipage   "http://www.emacswiki.org/AutoLangMode"
+ :wikipage   "AutoLangMode"
  :commentary "\
 auto-lang is an Emacs package which tries to find the language of
 the current buffer and set ispell-dictionary according to that.  It

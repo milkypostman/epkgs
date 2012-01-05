@@ -6,8 +6,7 @@
  :maintainer (nil . "andy stewart lazycat.manatee@gmail.com")
  :provided   (auto-scroll)
  :keywords   (auto scroll)
- :homepage   "http://www.emacswiki.org/AutoScroll"
- :wikipage   "http://www.emacswiki.org/AutoScroll"
+ :wikipage   "AutoScroll"
  :commentary "\
 This package just copy from `idle-scroll.el' and with slightly modified
  for use `DocView' mode's remap keystroke.

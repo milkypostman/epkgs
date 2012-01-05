@@ -8,7 +8,7 @@
  :required   ((("cl" cl)))
  :keywords   (keyboard)
  :homepage   "http://lgarc.narod.ru/xemacs"
- :wikipage   "http://www.emacswiki.org/PrefixKey"
+ :wikipage   "PrefixKey"
  :commentary "\
 This program provides prefix key, i.e. special key which in
 combination with other keys gives C-u (universal-argument)

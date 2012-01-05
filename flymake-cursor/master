@@ -7,5 +7,4 @@
  :provided   (flymake-cursor)
  :required   ((("cl" cl)))
  :keywords   (flymake languages mode)
- :homepage   "http://www.emacswiki.org/FlymakeCursor"
- :wikipage   "http://www.emacswiki.org/FlymakeCursor")
+ :wikipage   "FlymakeCursor")

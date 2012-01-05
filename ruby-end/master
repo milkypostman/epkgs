@@ -1,5 +1,4 @@
 (:summary    "Automatic insertion of end blocks for Ruby"
- :repository (git . "git://github.com/rejeep/ruby-end.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"

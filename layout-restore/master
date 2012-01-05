@@ -4,8 +4,7 @@
  :provided   (layout-restore)
  :required   ((("emacs" advice)))
  :keywords   (convenience layout window-configuration)
- :homepage   "http://www.emacswiki.org/LayoutRestore"
- :wikipage   "http://www.emacswiki.org/LayoutRestore"
+ :wikipage   "LayoutRestore"
  :commentary "\
 -------------
 Background:

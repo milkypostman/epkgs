@@ -1,5 +1,4 @@
 (:summary    "Client for IRC in Emacs"
- :repository (cvs . ":pserver:anonymous@cvs.savannah.nongnu.org:/sources/circe")
  :created    "2005"
  :updated    "2005"
  :license    "GPL-2"
@@ -12,7 +11,7 @@
 	       ("time-date" time-date)))
  :keywords   (chat irc)
  :homepage   "http://www.nongnu.org/circe"
- :wikipage   "http://www.emacswiki.org/Circe"
+ :wikipage   "Circe"
  :commentary "\
 This is yet another IRC client for Emacs. It is not as small as
 rcirc, and not as bulky as ERC.

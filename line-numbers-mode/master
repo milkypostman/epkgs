@@ -7,7 +7,7 @@
  :provided   (line-numbers-mode)
  :required   ((("cl" cl)))
  :keywords   (display line\ numbering minor-mode)
- :wikipage   "http://www.emacswiki.org/LineNumbers"
+ :wikipage   "LineNumbers"
  :commentary "\
 This package implements a minor mode for XEmacs which, when enabled,
 will display the line number on each line on current window. Note that

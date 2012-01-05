@@ -1,4 +1,3 @@
 (:summary    "Commit only some changes from a diff"
- :repository (git . "git://github.com/fperrin/vc-partial-commit.git")
  :provided   (vc-partial-commit)
  :homepage   "https://github.com/fperrin/vc-partial-commit")

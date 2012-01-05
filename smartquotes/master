@@ -7,4 +7,4 @@
  :provided   (smartquotes)
  :keywords   (characters unicode)
  :homepage   "http://furius.ca/pubcode"
- :wikipage   "http://www.emacswiki.org/SmartQuotes")
+ :wikipage   "SmartQuotes")

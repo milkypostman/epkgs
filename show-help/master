@@ -7,8 +7,7 @@
  :provided   (show-help)
  :required   ((("showtip" showtip)))
  :keywords   (eldoc help showtip tooltip)
- :homepage   "http://www.emacswiki.org/ShowHelp"
- :wikipage   "http://www.emacswiki.org/ShowHelp"
+ :wikipage   "ShowHelp"
  :commentary "\
 This code was inspired by tooltip-help.el by Tamas Patrovics.
 Use `showtip' to replace the toolitp display code of

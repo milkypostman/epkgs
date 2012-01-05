@@ -5,8 +5,7 @@
  :provided   (key-chord)
  :required   ((("emacs" advice)))
  :keywords   (chord input keyboard)
- :homepage   "http://www.emacswiki.org/KeyChord"
- :wikipage   "http://www.emacswiki.org/KeyChord"
+ :wikipage   "KeyChord"
  :commentary "\
 ########   Compatibility   ########################################
 

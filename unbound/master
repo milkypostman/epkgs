@@ -1,5 +1,4 @@
 (:summary    "Find convenient unbound keystrokes"
- :repository (git . "git://github.com/haxney/unbound.git")
  :created    "2007"
  :updated    "2007"
  :license    "GPL-2"

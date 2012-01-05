@@ -6,8 +6,7 @@
  :maintainer ("Jorgen Schaefer" . "forcer@forcix.cx")
  :provided   (lui)
  :keywords   (application user-interface)
- :homepage   "http://www.emacswiki.org/LuiMode"
- :wikipage   "http://www.emacswiki.org/LuiMode"
+ :wikipage   "LuiMode"
  :commentary "\
 Lui is a simple extensible mode that allows any program to present
 a userfriendly interface to the user. This interface is closely

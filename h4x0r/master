@@ -3,4 +3,4 @@
  :provided   (h4x0r)
  :required   ((("cl" cl)))
  :homepage   "http://zancanda.staticcling.org/emacs"
- :wikipage   "http://www.emacswiki.org/EliteSpeech")
+ :wikipage   "EliteSpeech")

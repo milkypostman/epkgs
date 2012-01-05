@@ -4,8 +4,7 @@
  :license    "GPL-2"
  :provided   (cook-mode)
  :required   ((("emacs" custom)))
- :homepage   "http://www.emacswiki.org/CookMode"
- :wikipage   "http://www.emacswiki.org/CookMode"
+ :wikipage   "CookMode"
  :commentary "\
 This is a major mode for writing cook (a make replacement) files.  See:
 http://www.canb.auug.org.au/~millerp/cook/cook.html

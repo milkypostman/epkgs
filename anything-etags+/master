@@ -1,5 +1,4 @@
-(:repository (git . "git://github.com/jixiuf/anything-etags-plus.git")
- :created    "20110223"
+(:created    "20110223"
  :updated    "2011"
  :license    "GPL-3"
  :authors    (("纪秀峰(Joseph)" . "jixiuf@gmail.com"))

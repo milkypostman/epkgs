@@ -1,5 +1,4 @@
 (:summary    "Interface to OS X's mdfind command"
- :repository (darcs . "http://darcs.hacks-galore.org/jao/mdfind")
  :created    "2007"
  :updated    "2007"
  :license    "GPL-2"

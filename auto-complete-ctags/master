@@ -1,5 +1,4 @@
-(:repository (git . "git://github.com/whitypig/auto-complete-ctags.git")
- :created    "2011"
+(:created    "2011"
  :updated    "2011"
  :license    "GPL-3"
  :authors    (("whitypig" . "whitypig@gmail.com"))

@@ -1,5 +1,4 @@
 (:summary    "Entry points for VM"
- :repository (bzr . "lp:vm")
  :created    "1998"
  :updated    "2003"
  :license    "GPL-2"

@@ -1,5 +1,4 @@
 (:summary    "A DSL for generating XML"
- :repository (git . "git://github.com/philjackson/xmlgen.git")
  :created    "2008"
  :updated    "2008"
  :license    "GPL-2"
@@ -8,7 +7,7 @@
  :provided   (xmlgen)
  :required   ((("cl" cl)))
  :homepage   "https://github.com/philjackson/xmlgen"
- :wikipage   "http://www.emacswiki.org/XmlGen"
+ :wikipage   "XmlGen"
  :commentary "\
 Generate xml using sexps with the function `xmlgen':
 

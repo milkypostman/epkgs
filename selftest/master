@@ -1,5 +1,4 @@
 (:summary    "Personal unit tests"
- :repository (git . "git://github.com/hober/selftest-el.git")
  :created    "2007"
  :updated    "2009"
  :license    "GPL-2"

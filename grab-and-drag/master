@@ -6,8 +6,7 @@
  :maintainer ("S. Irie")
  :provided   (grab-and-drag)
  :keywords   (mouse scroll)
- :homepage   "http://www.emacswiki.org/GrabAndDrag"
- :wikipage   "http://www.emacswiki.org/GrabAndDrag"
+ :wikipage   "GrabAndDrag"
  :commentary "\
 This package provides a command and a minor mode which allow users
 to scroll the window in the arbitrary direction by mouse dragging,

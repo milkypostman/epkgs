@@ -9,8 +9,7 @@
 	       ("emacs" image-mode)
 	       ("thingatpt" thingatpt)))
  :keywords   (latex tex)
- :homepage   "http://www.emacswiki.org/LaTeXMathPreview"
- :wikipage   "http://www.emacswiki.org/LaTeXMathPreview"
+ :wikipage   "LaTeXMathPreview"
  :commentary "\
 latex-math-preview creates images of particular region in LaTeX file
 and display them in emacs.

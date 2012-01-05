@@ -1,5 +1,4 @@
 (:summary    "Triple-click like line marking functions"
- :repository (git . "git://github.com/lewang/le_emacs_whole_line_funcs.git")
  :created    "20110131"
  :updated    "20110203"
  :license    "GPL-3"

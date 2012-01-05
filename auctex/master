@@ -16,7 +16,7 @@
 	       ("reporter" reporter)
 	       ("texinfo" texinfo)))
  :keywords   (tex)
- :wikipage   "http://www.emacswiki.org/AUCTeX"
+ :wikipage   "AUCTeX"
  :commentary "\
 This file provides AUCTeX support for plain TeX as well as basic
 functions used by other AUCTeX modes (e.g. for LaTeX, Texinfo and

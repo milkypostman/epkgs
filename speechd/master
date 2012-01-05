@@ -1,5 +1,4 @@
 (:summary    "Library for accessing Speech Dispatcher"
- :repository (git . "git://git.freebsoft.org/git/speechd-el")
  :created    "2003"
  :updated    "2010"
  :license    "GPL-3"

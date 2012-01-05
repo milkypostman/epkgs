@@ -1,5 +1,4 @@
 (:summary    "XSL Integrated Development Environment"
- :repository (cvs . ":pserver:anonymous@xslide.cvs.sourceforge.net:/cvsroot/xslide")
  :created    "1998"
  :updated    "2003"
  :license    "GPL-2"

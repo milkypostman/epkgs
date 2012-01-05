@@ -1,5 +1,4 @@
 (:summary    "Major mode for autosaving files and listing, viewing, and reverting Emacs generated backups"
- :repository (git . "git://github.com/chadbraunduin/backups-mode.git")
  :created    "20110827"
  :updated    "20111012"
  :license    "GPL-3"

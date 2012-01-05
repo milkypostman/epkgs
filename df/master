@@ -6,7 +6,7 @@
  :maintainer ("Benjamin Drieu" . "bdrieu@april.org")
  :keywords   (tools unix)
  :homepage   "http://www.grassouille.org/emacs/index.en.html"
- :wikipage   "http://www.emacswiki.org/DfMode"
+ :wikipage   "DfMode"
  :commentary "\
 This is a slight hack to display disk usage in the mode line.
  Disk space remaining is updated every df-refresh second.

@@ -6,7 +6,7 @@
  :maintainer ("Matthew P. Hodges" . "mphodges@member.fsf.org")
  :provided   (w3m-type-ahead)
  :required   ((("w3m" w3m)))
- :wikipage   "http://www.emacswiki.org/TypeAheadSupportForW3m"
+ :wikipage   "TypeAheadSupportForW3m"
  :commentary "\
 Type ahead support for Emacs-w3m.  This allows an isearch facility
 that is limited to HREF anchors.  Switch the mode on for all

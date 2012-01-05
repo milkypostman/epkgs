@@ -1,5 +1,4 @@
-(:repository (hg . "http://bitbucket.org/danderson/evimodeline")
- :created    "2010"
+(:created    "2010"
  :updated    "2010"
  :license    "as-is"
  :homepage   "http://bitbucket.org/danderson/evimodeline")

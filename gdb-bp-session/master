@@ -1,5 +1,4 @@
 (:summary    "Save and Restore breakpoints for Emacs gdb"
- :repository (git . "git://github.com/jglee1027/gdb-bp-session.git")
  :created    "20110915"
  :updated    "2011"
  :license    "GPL-3"

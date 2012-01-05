@@ -8,8 +8,7 @@
  :provided   (visual-basic-mode)
  :required   ((("cl" cl)))
  :keywords   (basic evil languages)
- :homepage   "http://www.emacswiki.org/VisualBasicMode"
- :wikipage   "http://www.emacswiki.org/VisualBasicMode"
+ :wikipage   "VisualBasicMode"
  :commentary "\
 Purpose of this package:
  This is a mode for editing programs written in The World's Most

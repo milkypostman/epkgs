@@ -11,7 +11,7 @@
 	       ("ps-mode" ps-mode)))
  :keywords   (e-scripts help hyperlinks hypertext processes shell tex)
  :homepage   "http://angg.twu.net/emacs.html"
- :wikipage   "http://www.emacswiki.org/EevMode"
+ :wikipage   "EevMode"
  :commentary "\
 A good introduction to eev is the article about it (called \"Emacs
 and eev, or: How to Automate Almost Everything\"). Here's a link to

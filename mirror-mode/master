@@ -7,8 +7,7 @@
  :provided   (mirror-mode)
  :required   ((("cl" cl)))
  :keywords   (tools)
- :homepage   "http://www.emacswiki.org/MirrorMode"
- :wikipage   "http://www.emacswiki.org/MirrorMode"
+ :wikipage   "MirrorMode"
  :commentary "\
 Provides a simple minor mode to insert parens and string quotes in pairs.  It
 can mirror the following keys: { } ( ) [ ] < > \" '

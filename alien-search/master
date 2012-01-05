@@ -1,5 +1,4 @@
 (:summary    "Search and replace by regexp which is alien to Emacs"
- :repository (git . "git://github.com/k-talo/alien-search.el.git")
  :created    "20101128"
  :updated    "2010"
  :license    "GPL-3"

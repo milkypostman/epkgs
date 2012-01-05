@@ -6,8 +6,7 @@
  :maintainer ("Alex Schroeder" . "alex@gnu.org")
  :provided   (unparen)
  :keywords   (convenience)
- :homepage   "http://www.emacswiki.org/UnParenMode"
- :wikipage   "http://www.emacswiki.org/UnParenMode"
+ :wikipage   "UnParenMode"
  :commentary "\
 `unparen-mode' toggles the display of parens.  While they are
 hidden away, the buffer is read-only, because currently this code

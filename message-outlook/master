@@ -5,7 +5,6 @@
  :authors    (("Matthew L. Fidler"))
  :maintainer ("Matthew L. Fidler")
  :provided   (message-outlook)
- :homepage   "http://www.emacswiki.org/MessageOutlook"
- :wikipage   "http://www.emacswiki.org/MessageOutlook"
+ :wikipage   "MessageOutlook"
  :commentary "\
 Requires wscript.")

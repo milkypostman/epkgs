@@ -1,5 +1,4 @@
-(:repository (git . "git://github.com/joostkremers/pandoc-mode.git")
- :created    "2011"
+(:created    "2011"
  :updated    "2011"
  :license    "as-is"
  :provided   (pandoc-mode)

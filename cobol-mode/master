@@ -10,8 +10,7 @@
 	       ("which-func" which-func)
 	       (nil cobol-indent)))
  :keywords   (cobol guardian languages nsk tandem)
- :homepage   "http://www.emacswiki.org/CobolMode"
- :wikipage   "http://www.emacswiki.org/CobolMode"
+ :wikipage   "CobolMode"
  :commentary "\
 COBOL -- COmmon Business Oriented Language. ()
 

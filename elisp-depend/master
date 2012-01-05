@@ -6,8 +6,7 @@
  :provided   (elisp-depend)
  :required   ((("thingatpt" thingatpt)))
  :keywords   (elisp-depend)
- :homepage   "http://www.emacswiki.org/ElispDepend"
- :wikipage   "http://www.emacswiki.org/ElispDepend"
+ :wikipage   "ElispDepend"
  :commentary "\
 Parse depend libraries of elisp file.
 

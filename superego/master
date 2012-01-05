@@ -7,8 +7,7 @@
  :provided   (superego)
  :required   ((("emacs" font-lock)))
  :keywords   (convenience)
- :homepage   "http://www.emacswiki.org/SuperEgoMode"
- :wikipage   "http://www.emacswiki.org/SuperEgoMode"
+ :wikipage   "SuperEgoMode"
  :commentary "\
 * What is it?
 

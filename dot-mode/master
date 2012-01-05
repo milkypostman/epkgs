@@ -3,8 +3,7 @@
  :updated    "1995"
  :license    "GPL-1"
  :provided   (dot-mode)
- :homepage   "http://www.emacswiki.org/DotMode"
- :wikipage   "http://www.emacswiki.org/DotMode"
+ :wikipage   "DotMode"
  :commentary "\
 Purpose of this package: minor mode to repeat typing or commands
 

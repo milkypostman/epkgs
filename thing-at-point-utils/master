@@ -1,5 +1,4 @@
 (:summary    "Th-at-point edit functions"
- :repository (bzr . "http://bazaar.launchpad.net/~a-roehler/s-x-emacs-werkstatt/thing-at-point-utils")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-2"
@@ -12,7 +11,7 @@
 	       ("time-stamp" time-stamp)))
  :keywords   (convenience)
  :homepage   "https://launchpad.net/s-x-emacs-werkstatt"
- :wikipage   "http://www.emacswiki.org/ThingAtPointUtils"
+ :wikipage   "ThingAtPointUtils"
  :commentary "\
 Delivers a set of functions to return, mover over or
 manipulate a given THING. THING may be a well known

@@ -1,5 +1,4 @@
 (:summary    "Automatic highlighting current symbol minor mode"
- :repository (git . "git://github.com/mitsuo-saito/auto-highlight-symbol-mode.git")
  :created    "2009"
  :updated    "2010"
  :license    "GPL-3"

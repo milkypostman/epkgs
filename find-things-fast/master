@@ -1,5 +1,4 @@
 (:summary    "Find things fast, leveraging the power of git"
- :repository (git . "git://github.com/eglaysher/find-things-fast.git")
  :created    "20100219"
  :updated    "2010"
  :license    "GPL-3"

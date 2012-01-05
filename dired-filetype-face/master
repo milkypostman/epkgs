@@ -1,5 +1,4 @@
 (:summary    "Set different faces for different filetype in dired buffer"
- :repository (git . "git://github.com/jixiuf/dired-filetype-face.git")
  :created    "20110404"
  :updated    "2011"
  :license    "GPL-3"
@@ -9,7 +8,7 @@
  :required   ((("emacs" custom dired)))
  :keywords   (custom dired face filetype)
  :homepage   "https://github.com/jixiuf/dired-filetype-face"
- :wikipage   "http://www.emacswiki.org/DiredFileTypeFaces"
+ :wikipage   "DiredFileTypeFaces"
  :commentary "\
 Set faces for different file type in dired buffer. I use a dark
  background, so maybe the default face doesn't meet your request.

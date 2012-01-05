@@ -3,8 +3,7 @@
  :updated    "2004"
  :license    "GPL-2"
  :provided   (java-complete)
- :homepage   "http://www.emacswiki.org/JavaCompletion"
- :wikipage   "http://www.emacswiki.org/JavaCompletion"
+ :wikipage   "JavaCompletion"
  :commentary "\
 I have always wanted 3 sorts of completion in Java:
 

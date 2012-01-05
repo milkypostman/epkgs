@@ -10,8 +10,7 @@
 	       ("imap" imap)
 	       ("timezone" timezone)))
  :keywords   (mail)
- :homepage   "http://www.emacswiki.org/imapua"
- :wikipage   "http://www.emacswiki.org/imapua"
+ :wikipage   "imapua"
  :commentary "\
 IMAPUA is an alternative to the GNUS news reader for imap based mail stores.
 It offers a UI which might be more intuitive to regular IMAP users than

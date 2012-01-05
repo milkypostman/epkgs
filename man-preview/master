@@ -7,7 +7,7 @@
  :provided   (man-preview)
  :required   ((("man" man)))
  :keywords   (docs)
- :wikipage   "http://www.emacswiki.org/ManPreview"
+ :wikipage   "ManPreview"
  :commentary "\
 M-x man-preview displays a preview of man nroff source using \"man -l\".
 The best feature is that when re-previewing the same file or buffer the

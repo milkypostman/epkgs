@@ -1,5 +1,4 @@
 (:summary    "Emacs integration for dpaste.com"
- :repository (git . "git://github.com/gregnewman/dpaste.el.git")
  :created    "20081201"
  :updated    "2009"
  :license    "GPL-2"

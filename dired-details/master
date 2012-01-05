@@ -6,8 +6,7 @@
  :maintainer ("Rob Giardina")
  :provided   (dired-details)
  :keywords   (dired hide)
- :homepage   "http://www.emacswiki.org/DiredDetails"
- :wikipage   "http://www.emacswiki.org/DiredDetails"
+ :wikipage   "DiredDetails"
  :commentary "\
 `dired-details-hide' makes dired buffers that look like this:
 

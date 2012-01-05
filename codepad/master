@@ -1,5 +1,4 @@
 (:summary    "Emacs integration for codepad.org"
- :repository (git . "git://github.com/ruediger/emacs-codepad.git")
  :created    "20091129"
  :license    "GPL-2"
  :authors    (("Rüdiger Sonderfeld" . "ruediger@c-plusplus.de"))

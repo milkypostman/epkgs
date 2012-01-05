@@ -1,5 +1,4 @@
 (:summary    "A major mode for editing screenplay files"
- :repository (cvs . ":pserver:anonymous@cvs.savannah.nongnu.org:/sources/screenplay")
  :created    "2000"
  :updated    "2004"
  :license    "GPL-2"
@@ -8,7 +7,7 @@
  :provided   (screenplay)
  :required   ((("reporter" reporter)))
  :homepage   "http://www.nongnu.org/screenplay"
- :wikipage   "http://www.emacswiki.org/ScreenPlay"
+ :wikipage   "ScreenPlay"
  :commentary "\
 Massive complete start-over re-write back-to-the-drawing-board
 start-from-square-one bottom-of-the-barrel-looking-up release.

@@ -7,8 +7,7 @@
  :provided   (doi)
  :required   (nil
 	      (("completion-ui" completion-ui)))
- :homepage   "http://www.emacswiki.org/Doi"
- :wikipage   "http://www.emacswiki.org/Doi"
+ :wikipage   "Doi"
  :commentary "\
 Do Or Insert
 

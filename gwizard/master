@@ -5,4 +5,4 @@
  :authors    (("Dirk-Jan C. Binnema" . "djcb@djcbsoftware.nl"))
  :maintainer ("Dirk-Jan C. Binnema" . "djcb@djcbsoftware.nl")
  :provided   (gwizard)
- :wikipage   "http://www.emacswiki.org/GnomeWizard")
+ :wikipage   "GnomeWizard")

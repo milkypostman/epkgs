@@ -1,5 +1,4 @@
 (:summary    "Provides zsh like completion for minibuffer"
- :repository (git . "git://github.com/mooz/emacs-zlc.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"

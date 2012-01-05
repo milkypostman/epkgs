@@ -7,8 +7,7 @@
  :maintainer ("Alex Schroeder" . "alex@gnu.org")
  :provided   (really-simple-wiki)
  :keywords   (hypermedia)
- :homepage   "http://www.emacswiki.org/ReallySimpleWikiMode"
- :wikipage   "http://www.emacswiki.org/ReallySimpleWikiMode"
+ :wikipage   "ReallySimpleWikiMode"
  :commentary "\
 Use `really-simple-wiki-mode' to edit raw wiki pages.  This is
 useful for temp files when editing textareas in w3m, for example.

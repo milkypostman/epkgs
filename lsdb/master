@@ -11,7 +11,7 @@
 	       ("mew" mew)))
  :keywords   (address book)
  :homepage   "http://lsdb.sourceforge.jp"
- :wikipage   "http://www.emacswiki.org/LovelySisterDataBase"
+ :wikipage   "LovelySisterDataBase"
  :commentary "\
 For Semi-gnus:
 (autoload 'lsdb-gnus-insinuate \"lsdb\")

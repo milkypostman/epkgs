@@ -9,8 +9,7 @@
 	       ("emacs" dired wid-edit widget)
 	       ("format-spec" format-spec)))
  :keywords   (convenience files search)
- :homepage   "http://www.emacswiki.org/FileProps"
- :wikipage   "http://www.emacswiki.org/FileProps"
+ :wikipage   "FileProps"
  :commentary "\
 file-props.el provides a way to \"tag\" or \"label\" your files.
 Actually, the functionality is generic and supports adding any type

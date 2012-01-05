@@ -9,8 +9,7 @@
 	       ("json" json)
 	       ("url" url)))
  :keywords   (cheezburger lolcat)
- :homepage   "http://www.emacswiki.org/cheezburger"
- :wikipage   "http://www.emacswiki.org/cheezburger"
+ :wikipage   "cheezburger"
  :commentary "\
 M-x cheezburger
 Now with 100% more cheezy goodness!

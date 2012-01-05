@@ -3,4 +3,4 @@
  :provided   (diary-mode)
  :required   ((("calendar" calendar)))
  :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/editing"
- :wikipage   "http://www.emacswiki.org/DiaryMode")
+ :wikipage   "DiaryMode")

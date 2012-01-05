@@ -4,7 +4,7 @@
  :authors    (("Harley Gorrell" . "harley@mahalito.net"))
  :maintainer ("Harley Gorrell" . "harley@mahalito.net")
  :provided   (StudlyCaps)
- :wikipage   "http://www.emacswiki.org/StudlyCaps"
+ :wikipage   "StudlyCaps"
  :commentary "\
 * An (ab)use of abbrev-mode.
 * Written as a Christmas gift for James, who likes StudlyCaps.

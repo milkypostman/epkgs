@@ -1,5 +1,4 @@
 (:summary    "Emacs ebook viewer"
- :repository (git . "git://github.com/ryebread/ebv.git")
  :created    "2009"
  :updated    "2009"
  :license    "GPL-2"

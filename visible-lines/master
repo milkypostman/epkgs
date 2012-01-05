@@ -4,8 +4,7 @@
  :maintainer (nil . "an00na@gmail.com")
  :provided   (visible-lines)
  :keywords   (continuation convenience)
- :homepage   "http://www.emacswiki.org/VisibleLines"
- :wikipage   "http://www.emacswiki.org/VisibleLines"
+ :wikipage   "VisibleLines"
  :commentary "\
 Long lines can be wrapped for nice visual effect in Emacs. However
 the line-oriented movements are still done on logic lines, which is

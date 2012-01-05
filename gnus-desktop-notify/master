@@ -6,7 +6,7 @@
 	       ("format-spec" format-spec)
 	       ("gnus" gnus-group)))
  :homepage   "http://www.thregr.org/~wavexx/hacks/gnus-desktop-notify"
- :wikipage   "http://www.emacswiki.org/GnusDesktopNotify"
+ :wikipage   "GnusDesktopNotify"
  :commentary "\
 Desktop notification integration in Gnus!? Ohh goody!
 

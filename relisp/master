@@ -4,4 +4,4 @@
  :license    "GPL-2"
  :provided   (relisp)
  :homepage   "http://rubyforge.org/frs/download.php/63431/relisp-1.0.1.tgz"
- :wikipage   "http://www.emacswiki.org/ReLisp")
+ :wikipage   "ReLisp")

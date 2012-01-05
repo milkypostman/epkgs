@@ -7,6 +7,6 @@
  :provided   (jem-pkg)
  :keywords   (extensions)
  :homepage   "http://www.jemarch.net/jempkg.html"
- :wikipage   "http://www.emacswiki.org/JemPkg"
+ :wikipage   "JemPkg"
  :commentary "\
 A kind of elisp packaging for and by jemarch")

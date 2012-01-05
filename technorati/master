@@ -10,4 +10,4 @@
 	       ("xml" xml)))
  :keywords   (convenience)
  :homepage   "http://edward.oconnor.cx/elisp"
- :wikipage   "http://www.emacswiki.org/TechnoratiClient")
+ :wikipage   "TechnoratiClient")

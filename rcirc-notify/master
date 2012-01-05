@@ -1,7 +1,6 @@
-(:repository (git . "git://github.com/wfarr/rcirc-notify-el.git")
- :created    "2008"
+(:created    "2008"
  :updated    "2008"
  :license    "GPL-3"
  :provided   (rcirc-notify)
  :homepage   "https://github.com/wfarr/rcirc-notify-el"
- :wikipage   "http://www.emacswiki.org/rcircNotify")
+ :wikipage   "rcircNotify")

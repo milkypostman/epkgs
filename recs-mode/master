@@ -1,5 +1,4 @@
 (:summary    "[R]eg[E]xp-based [C]ommand [S]uggestion"
- :repository (git . "git://github.com/tlh/recs-mode.el.git")
  :created    "20100729"
  :updated    "2010"
  :license    "GPL-2"
@@ -9,7 +8,7 @@
  :required   ((("cl" cl)))
  :keywords   (command regexp suggestion)
  :homepage   "https://github.com/tlh/recs-mode.el"
- :wikipage   "http://www.emacswiki.org/Recs"
+ :wikipage   "Recs"
  :commentary "\
 recs-mode is a simple command suggestion minor mode for GNU
 Emacs. recs-mode is free software, licensed under the GNU GPL.

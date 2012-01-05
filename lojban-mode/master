@@ -7,8 +7,7 @@
  :provided   (lojban lojban-mode)
  :required   ((("emacs" font-lock)))
  :keywords   (languages lojban)
- :homepage   "http://www.emacswiki.org/LojbanMode"
- :wikipage   "http://www.emacswiki.org/LojbanMode"
+ :wikipage   "LojbanMode"
  :commentary "\
 This file provides a specialized minor mode for lojban text.
 

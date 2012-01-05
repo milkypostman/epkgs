@@ -2,5 +2,4 @@
  :authors    (("Craig Muth"))
  :maintainer ("Craig Muth")
  :provided   (hidesearch)
- :homepage   "http://www.emacswiki.org/HideSearch"
- :wikipage   "http://www.emacswiki.org/HideSearch")
+ :wikipage   "HideSearch")

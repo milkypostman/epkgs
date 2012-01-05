@@ -8,8 +8,7 @@
  :required   ((("cl" cl))
 	      (("el-mock" el-mock)))
  :keywords   (lisp testing unittest)
- :homepage   "http://www.emacswiki.org/EmacsLispExpectations"
- :wikipage   "http://www.emacswiki.org/EmacsLispExpectations"
+ :wikipage   "EmacsLispExpectations"
  :commentary "\
 Emacs Lisp Expectations framework is a minimalist unit testing
 framework in Emacs Lisp.")

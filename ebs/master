@@ -6,8 +6,7 @@
  :maintainer ("Yan Tang" . "tangyan@pku.org.cn")
  :provided   (ebs)
  :keywords   (convenience files)
- :homepage   "http://www.emacswiki.org/EasyBufferSwitch"
- :wikipage   "http://www.emacswiki.org/EasyBufferSwitch"
+ :wikipage   "EasyBufferSwitch"
  :commentary "\
 Ebs package offers two ways for switching buffers in GNU
 Emacs/XEmacs, number indexed switch and cycle switch.

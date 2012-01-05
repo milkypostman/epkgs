@@ -7,8 +7,7 @@
  :required   ((("compile" compile)
 	       ("emacs" easymenu)))
  :keywords   (languages)
- :homepage   "http://www.emacswiki.org/TieMode"
- :wikipage   "http://www.emacswiki.org/TieMode"
+ :wikipage   "TieMode"
  :commentary "\
 To enter tie-mode automatically, add (autoload 'tie-mode \"tie-mode\")
 to your .emacs file and add something like,

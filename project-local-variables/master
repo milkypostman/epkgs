@@ -6,8 +6,7 @@
  :maintainer ("Ryan Davis and Phil Hagelberg")
  :provided   (project-local-variables)
  :keywords   (convenience project)
- :homepage   "http://www.emacswiki.org/ProjectLocalVariables"
- :wikipage   "http://www.emacswiki.org/ProjectLocalVariables"
+ :wikipage   "ProjectLocalVariables"
  :commentary "\
 This file allows you to create .emacs-project files that are
 evaluated when a file is opened. You may also create

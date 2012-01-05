@@ -14,8 +14,7 @@
 	       ("thingatpt" thingatpt)
 	       ("thingatpt+" thingatpt+)))
  :keywords   (docs help internal)
- :homepage   "http://www.emacswiki.org/InfoPlus"
- :wikipage   "http://www.emacswiki.org/InfoPlus"
+ :wikipage   "InfoPlus"
  :commentary "\
 Extensions to `info.el'.
 

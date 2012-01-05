@@ -1,5 +1,4 @@
 (:summary    "Alberto's Emacs interface for Mercurial (Hg)"
- :repository (hg . "http://bitbucket.org/agriggio/ahg")
  :created    "2008"
  :updated    "2008"
  :license    "GPL-3"

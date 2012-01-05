@@ -1,5 +1,4 @@
 (:summary    "An auto-complete source for Octave"
- :repository (git . "git://github.com/coldnew/ac-octave.git")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-2"

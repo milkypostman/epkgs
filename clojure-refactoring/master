@@ -1,5 +1,4 @@
 (:summary    "Minor mode for basic clojure"
- :repository (git . "git://github.com/joodie/clojure-refactoring.git")
  :created    "2009"
  :updated    "2011"
  :authors    (("Tom Crayford" . "tcrayford@googlemail.com"))

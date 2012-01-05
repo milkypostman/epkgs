@@ -7,8 +7,7 @@
  :provided   (dired-efap)
  :required   ((("emacs" dired font-lock)))
  :keywords   (dired environment files renaming)
- :homepage   "http://www.emacswiki.org/DiredEfap"
- :wikipage   "http://www.emacswiki.org/DiredEfap"
+ :wikipage   "DiredEfap"
  :commentary "\
 dired-efap.el allows the user to edit the filename at point, by
 hitting a key (like f2) or double-clicking it. The name is edited

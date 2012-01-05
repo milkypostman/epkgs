@@ -1,5 +1,4 @@
 (:summary    "Unit test framework for Emacs lisp program"
- :repository (svn . "http://www.wanglianghome.org/svn/test")
  :created    "2008"
  :updated    "2008"
  :license    "GPL-2"

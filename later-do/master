@@ -3,5 +3,4 @@
  :updated    "2004"
  :license    "GPL-2"
  :provided   (later-do)
- :homepage   "http://www.emacswiki.org/LaterDo"
- :wikipage   "http://www.emacswiki.org/LaterDo")
+ :wikipage   "LaterDo")

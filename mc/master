@@ -8,8 +8,7 @@
  :required   ((("browse-url" browse-url)
 	       ("emacs" dired easymenu font-lock)))
  :keywords   (commander midnight)
- :homepage   "http://www.emacswiki.org/MidnightCommanderMode"
- :wikipage   "http://www.emacswiki.org/MidnightCommanderMode"
+ :wikipage   "MidnightCommanderMode"
  :commentary "\
 This package provides Midnight Commander style emulation for Emacs.  Midnight
 Commander is a UNIX application with a User Interface similar to the old DOS

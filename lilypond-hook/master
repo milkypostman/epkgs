@@ -1,5 +1,4 @@
 (:summary    "Automatically display and play lilypond Score"
- :repository (git . "git://github.com/mjago/lilypond-hook.git")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-2"

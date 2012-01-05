@@ -1,5 +1,4 @@
 (:summary    "The stupid package tracker for Emacs"
- :repository (git . "git://github.com/tarsius/epkg.git")
  :created    "20100101"
  :updated    "2011"
  :license    "GPL-3"

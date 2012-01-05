@@ -5,8 +5,7 @@
  :provided   (globalff)
  :required   ((("cl" cl)
 	       ("emacs" overlay)))
- :homepage   "http://www.emacswiki.org/GlobalFF"
- :wikipage   "http://www.emacswiki.org/GlobalFF"
+ :wikipage   "GlobalFF"
  :commentary "\
 Start with M-x globallff and type in any substring of any path on
 your system to display the matching files. The displayed list is

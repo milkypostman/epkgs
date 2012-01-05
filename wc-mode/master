@@ -1,5 +1,4 @@
-(:repository (git . "git://github.com/bnbeckwith/wc-mode.git")
- :created    "20100619"
+(:created    "20100619"
  :updated    "20100619"
  :license    "GPL-3"
  :authors    (("Benjamin Beckwith"))

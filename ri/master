@@ -1,5 +1,4 @@
 (:summary    "Ruby Documentation Lookup"
- :repository (git . "git://github.com/technomancy/ri.el.git")
  :created    "20080919"
  :updated    "2008"
  :license    "GPL-3"
@@ -10,7 +9,7 @@
 	       ("thingatpt" thingatpt)))
  :keywords   (documentation tools)
  :homepage   "https://github.com/technomancy/ri.el"
- :wikipage   "http://www.emacswiki.org/RiEl"
+ :wikipage   "RiEl"
  :commentary "\
 ri.el provides an Emacs frontend to Ruby's `ri' documentation
 tool. It offers lookup and completion.

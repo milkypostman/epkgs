@@ -1,5 +1,4 @@
 (:summary    "Align clojure let functions"
- :repository (git . "git://github.com/gstamp/align-cljlet.git")
  :license    "GPL-2"
  :provided   (align-cljlet)
  :homepage   "https://github.com/gstamp/align-cljlet"

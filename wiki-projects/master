@@ -7,7 +7,7 @@
  :provided   (wiki-projects)
  :required   ((("wiki" wiki)))
  :keywords   (hypermedia)
- :wikipage   "http://www.emacswiki.org/WikiProjects"
+ :wikipage   "WikiProjects"
  :commentary "\
 This package is an optional extension to wiki.el.
 

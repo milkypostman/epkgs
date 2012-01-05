@@ -8,4 +8,4 @@
 	       ("gnus" mailcap)
 	       ("migemo" migemo)))
  :homepage   "http://howm.sourceforge.jp"
- :wikipage   "http://www.emacswiki.org/HowmMode")
+ :wikipage   "HowmMode")

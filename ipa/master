@@ -3,8 +3,7 @@
  :updated    "2007"
  :license    "GPL-2"
  :provided   (ipa)
- :homepage   "http://www.emacswiki.org/InPlaceAnnotations"
- :wikipage   "http://www.emacswiki.org/InPlaceAnnotations"
+ :wikipage   "InPlaceAnnotations"
  :commentary "\
 With this package you can add annotations to your files without
 modifying them. Each file can have multiple annotations at various

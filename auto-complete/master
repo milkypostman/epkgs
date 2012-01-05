@@ -1,5 +1,4 @@
 (:summary    "Auto Completion for GNU Emacs"
- :repository (git . "git://github.com/m2ym/auto-complete.git")
  :created    "2008"
  :updated    "2010"
  :license    "GPL-3"
@@ -17,7 +16,7 @@
 	       (nil semantic-ia)))
  :keywords   (completion convenience)
  :homepage   "https://github.com/m2ym/auto-complete"
- :wikipage   "http://www.emacswiki.org/AutoComplete"
+ :wikipage   "AutoComplete"
  :commentary "\
 This extension provides a way to complete with popup menu like:
 

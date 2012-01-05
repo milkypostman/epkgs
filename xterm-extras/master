@@ -6,7 +6,7 @@
  :maintainer ("Peter Heslin" . "p.j.heslin@dur.ac.uk")
  :provided   (xterm-extras)
  :homepage   "http://www.dur.ac.uk/p.j.heslin/Software/Emacs"
- :wikipage   "http://www.emacswiki.org/XtermExtras"
+ :wikipage   "XtermExtras"
  :commentary "\
 This file provides some extra emacs keybindings for the escape
 sequences transmitted by recent versions of xterm.  It will not

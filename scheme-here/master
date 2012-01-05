@@ -6,8 +6,7 @@
  :required   ((("cmuscheme" cmuscheme)
 	       ("emacs" comint)
 	       ("scheme" scheme)))
- :homepage   "http://www.emacswiki.org/RunSchemeHere"
- :wikipage   "http://www.emacswiki.org/RunSchemeHere"
+ :wikipage   "RunSchemeHere"
  :commentary "\
 This is an extension of cmuscheme for multiple buffer-local
 inferior scheme processes.")

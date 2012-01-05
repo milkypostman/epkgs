@@ -1,5 +1,4 @@
-(:repository (hg . "http://mercurial.intuxication.org/hg/anything-delicious")
- :created    "2008"
+(:created    "2008"
  :updated    "2009"
  :license    "GPL-3"
  :authors    (("thierry"))

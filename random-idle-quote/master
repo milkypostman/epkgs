@@ -5,8 +5,7 @@
  :authors    (("Jeremy Cowgar" . "jeremy@cowgar.com"))
  :maintainer ("Jeremy Cowgar" . "jeremy@cowgar.com")
  :provided   (random-idle-quote)
- :homepage   "http://www.emacswiki.org/RandomIdleQuote"
- :wikipage   "http://www.emacswiki.org/RandomIdleQuote"
+ :wikipage   "RandomIdleQuote"
  :commentary "\
 Add:
 

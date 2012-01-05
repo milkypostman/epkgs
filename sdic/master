@@ -1,5 +1,4 @@
-(:repository (cvs . ":pserver:anonymous@cvs.namazu.org:/storage/cvsroot")
- :license    "GPL-2"
+(:license    "GPL-2"
  :authors    (("TSUCHIYA Masatoshi" . "tsuchiya@namazu.org"))
  :maintainer ("TSUCHIYA Masatoshi" . "tsuchiya@namazu.org")
  :provided   (sdic sdic-compat sdic-gene sdicf sdicf-client stem)

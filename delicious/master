@@ -1,5 +1,4 @@
 (:summary    "Functions to make productive use of the http://del.icio.us API"
- :repository (git . "git://gitorious.org/delicious-el/delicious-el.git")
  :created    "2004"
  :updated    "2007"
  :license    "GPL-3"

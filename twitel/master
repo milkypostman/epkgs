@@ -1,5 +1,4 @@
 (:summary    "Simple Emacs-based client for Twitter"
- :repository (git . "http://git.busydoingnothing.co.uk/cgit.cgi/twitel.git")
  :created    "2008"
  :updated    "2010"
  :license    "GPL-2"

@@ -5,5 +5,4 @@
  :provided   (tcp-client)
  :required   ((("record-type" record-type)))
  :keywords   (client connection network tcp)
- :homepage   "http://www.emacswiki.org/TcpClient"
- :wikipage   "http://www.emacswiki.org/TcpClient")
+ :wikipage   "TcpClient")

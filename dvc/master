@@ -1,5 +1,4 @@
 (:summary    "Core functions for distributed version control"
- :repository (bzr . "http://bzr.xsteve.at/dvc")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"

@@ -1,5 +1,4 @@
 (:summary    "Git integration with diff-mode"
- :repository (git . "git://github.com/alanfalloon/diff-git.el.git")
  :created    "2009"
  :updated    "2009"
  :license    "GPL-3"

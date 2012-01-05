@@ -1,5 +1,4 @@
 (:summary    "Some utilities for calfw.el"
- :repository (git . "git://github.com/myuhe/calfw-gcal.el.git")
  :license    "GPL-3"
  :maintainer ("myuhe")
  :provided   (calfw-gcal)

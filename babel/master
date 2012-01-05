@@ -1,5 +1,4 @@
 (:summary    "Interface to web translation services such as Babelfish"
- :repository (git . "git://github.com/juergenhoetzel/babel.git")
  :license    "GPL-2"
  :authors    (("Eric Marsden" . "emarsden@laas.fr")
 	      ("Juergen Hoetzel" . "juergen@hoetzel.info"))
@@ -12,7 +11,7 @@
 	       ("url" url-handlers)))
  :keywords   (translation web)
  :homepage   "https://github.com/juergenhoetzel/babel"
- :wikipage   "http://www.emacswiki.org/BabelMode"
+ :wikipage   "BabelMode"
  :commentary "\
 Overview ==========================================================
 

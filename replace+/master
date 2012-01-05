@@ -15,8 +15,7 @@
 	       ("thingatpt" thingatpt)
 	       ("thingatpt+" thingatpt+)))
  :keywords   (help internal local matching tools)
- :homepage   "http://www.emacswiki.org/ReplacePlus"
- :wikipage   "http://www.emacswiki.org/ReplacePlus"
+ :wikipage   "ReplacePlus"
  :commentary "\
 Extensions to `replace.el'.
 

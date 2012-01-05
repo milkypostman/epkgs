@@ -1,3 +1,2 @@
-(:repository (git . "git://github.com/mang/history-ring.git")
- :provided   (history-ring)
+(:provided   (history-ring)
  :homepage   "https://github.com/mang/history-ring")

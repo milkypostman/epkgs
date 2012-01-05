@@ -1,5 +1,4 @@
 (:summary    "Elisp object serialization"
- :repository (git . "git://github.com/tlh/pickel.el.git")
  :created    "20100929"
  :updated    "2010"
  :license    "GPL-2"

@@ -24,8 +24,7 @@
 	       ("linkd" linkd)
 	       ("pp+" pp+)))
  :keywords   (annotations bookmarks gnus info placeholders search url)
- :homepage   "http://www.emacswiki.org/BookmarkPlus"
- :wikipage   "http://www.emacswiki.org/BookmarkPlus"
+ :wikipage   "BookmarkPlus"
  :commentary "\
 Bookmark+: extensions to standard library `bookmark.el'.
 

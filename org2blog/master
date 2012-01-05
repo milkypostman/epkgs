@@ -1,5 +1,4 @@
 (:summary    "Blog from Org mode to wordpress"
- :repository (git . "git://github.com/punchagan/org2blog.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"

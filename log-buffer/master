@@ -4,5 +4,4 @@
  :maintainer ("Cedric Lallain" . "kandjar76@hotmail.com")
  :provided   (log-buffer)
  :keywords   (log)
- :homepage   "http://www.emacswiki.org/LogBuffer"
- :wikipage   "http://www.emacswiki.org/LogBuffer")
+ :wikipage   "LogBuffer")

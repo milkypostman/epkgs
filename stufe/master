@@ -1,5 +1,4 @@
-(:repository (cvs . ":pserver:anonymous@cvs.savannah.nongnu.org:/sources/stufe")
- :created    "2002"
+(:created    "2002"
  :updated    "2002"
  :license    "GPL-2"
  :provided   (stufe)

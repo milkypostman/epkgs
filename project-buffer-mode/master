@@ -1,5 +1,4 @@
 (:summary    "Generic mode to browse project file"
- :repository (git . "git://repo.or.cz/project-buffer-mode.git")
  :license    "GPL-2"
  :authors    (("Cedric Lallain" . "kandjar76@hotmail.com"))
  :maintainer ("Cedric Lallain" . "kandjar76@hotmail.com")
@@ -8,7 +7,7 @@
 	       ("ewoc" ewoc)))
  :keywords   (buffer generic mode project viewer)
  :homepage   "http://repo.or.cz/w/project-buffer-mode.git"
- :wikipage   "http://www.emacswiki.org/ProjectBufferMode"
+ :wikipage   "ProjectBufferMode"
  :commentary "\
 project-buffer-mode provides a generic way to handle multiple
 projects in a buffer.

@@ -5,4 +5,4 @@
 	       ("jka-compr" jka-compr)
 	       ("man" man)
 	       ("mew" mew)))
- :wikipage   "http://www.emacswiki.org/Namazu")
+ :wikipage   "Namazu")

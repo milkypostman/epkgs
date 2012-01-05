@@ -4,4 +4,4 @@
  :required   ((("browse-url" browse-url)
 	       (nil eval-reg fileinmail)))
  :homepage   "http://pagesperso-systeme.lip6.fr/Christian.Queinnec/WWW/elisp.html"
- :wikipage   "http://www.emacswiki.org/ToDo")
+ :wikipage   "ToDo")

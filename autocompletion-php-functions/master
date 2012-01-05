@@ -1,5 +1,4 @@
 (:summary    "Auto complete php functions"
- :repository (git . "git://github.com/ashizawa/autocompletion-php-functions.git")
  :created    "2009"
  :updated    "2009"
  :license    "GPL-3"

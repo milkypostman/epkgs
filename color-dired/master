@@ -1,5 +1,4 @@
 (:summary    "Make dired color"
- :repository (git . "git://github.com/mhayashi1120/Emacs-color-dired.git")
  :license    "GPL-3"
  :authors    (("Masahiro Hayashi" . "mhayashi1120@gmail.com"))
  :maintainer ("Masahiro Hayashi" . "mhayashi1120@gmail.com")

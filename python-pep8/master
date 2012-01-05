@@ -1,5 +1,4 @@
 (:summary    "Minor mode for running `pep8'"
- :repository (git . "git://gist.github.com/302847.git")
  :created    "2009"
  :updated    "2010"
  :license    "GPL-2"

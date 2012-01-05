@@ -7,8 +7,7 @@
  :provided   (rainbow-delimiters)
  :required   ((("cl" cl)))
  :keywords   (convenience faces lisp matching rainbow rainbow\ parens rainbow\ parentheses tools)
- :homepage   "http://www.emacswiki.org/RainbowDelimiters"
- :wikipage   "http://www.emacswiki.org/RainbowDelimiters"
+ :wikipage   "RainbowDelimiters"
  :commentary "\
 Rainbow-delimiters is a “rainbow parentheses”-like mode which highlights
 parentheses, brackets, and braces according to their depth. Each

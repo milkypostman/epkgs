@@ -1,5 +1,4 @@
-(:repository (git . "git://gri.git.sourceforge.net/gitroot/gri/gri")
- :created    "19940114"
+(:created    "19940114"
  :updated    "2009"
  :license    "GPL-2"
  :authors    (("Peter S. Galbraith" . "psg@debian.org"))

@@ -6,8 +6,7 @@
  :maintainer ("John Sturdy" . "john.sturdy@ul.ie")
  :provided   (lyric-mode)
  :keywords   (hypermedia multimedia)
- :homepage   "http://www.emacswiki.org/LyricMode"
- :wikipage   "http://www.emacswiki.org/LyricMode"
+ :wikipage   "LyricMode"
  :commentary "\
 Edit lyric files, with playing of the music file at a controlled
 speed and recording of the synchronization information.

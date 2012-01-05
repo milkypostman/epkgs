@@ -1,5 +1,4 @@
-(:repository (git . "git://github.com/lieutar/winpath.el.git")
- :created    "2011"
+(:created    "2011"
  :updated    "2011"
  :license    "GPL-3"
  :authors    (("U-TreeFrog\\lieutar" . "lieutar@treefrog"))

@@ -1,5 +1,4 @@
-(:repository (git . "git://github.com/joostkremers/ebib.git")
- :created    "2011"
+(:created    "2011"
  :updated    "2011"
  :license    "as-is"
  :provided   (ebib)
@@ -7,4 +6,4 @@
 	       ("cl" cl)
 	       ("emacs" easymenu)))
  :homepage   "https://github.com/joostkremers/ebib"
- :wikipage   "http://www.emacswiki.org/Ebib")
+ :wikipage   "Ebib")

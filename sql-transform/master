@@ -6,8 +6,7 @@
  :maintainer ("Alex Schroeder" . "alex@gnu.org")
  :provided   (sql-transform)
  :keywords   (sql)
- :homepage   "http://www.emacswiki.org/SqlTransform"
- :wikipage   "http://www.emacswiki.org/SqlTransform"
+ :wikipage   "SqlTransform"
  :commentary "\
 This code provides three things:
 

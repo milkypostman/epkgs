@@ -1,11 +1,10 @@
 (:summary    "Goto last change"
- :repository (git . "git://github.com/martinp26/goto-chg.git")
  :created    "20020516"
  :updated    "2008"
  :license    "GPL-2"
  :provided   (goto-chg)
  :homepage   "https://github.com/martinp26/goto-chg"
- :wikipage   "http://www.emacswiki.org/GotoChg"
+ :wikipage   "GotoChg"
  :commentary "\
 Goto Last Change
 

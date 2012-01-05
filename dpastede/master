@@ -1,5 +1,4 @@
 (:summary    "Emacs integration for dpaste.de"
- :repository (hg . "http://bitbucket.org/gregnewman/dpastede")
  :created    "20091218"
  :updated    "2009"
  :license    "GPL-2"

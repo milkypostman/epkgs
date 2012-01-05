@@ -5,5 +5,4 @@
  :provided   (flymake-for-csharp)
  :required   ((("flymake" flymake)))
  :keywords   (flymake)
- :homepage   "http://www.emacswiki.org/FlymakeCsharp"
- :wikipage   "http://www.emacswiki.org/FlymakeCsharp")
+ :wikipage   "FlymakeCsharp")

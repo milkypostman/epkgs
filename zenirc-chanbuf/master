@@ -7,5 +7,4 @@
  :provided   (zenirc-chanbuf)
  :required   ((("zenirc" zenirc)))
  :keywords   (comm)
- :homepage   "http://www.emacswiki.org/ZenircChanbuf"
- :wikipage   "http://www.emacswiki.org/ZenircChanbuf")
+ :wikipage   "ZenircChanbuf")

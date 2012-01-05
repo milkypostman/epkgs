@@ -1,5 +1,4 @@
 (:summary    "Let yourself work in sprints"
- :repository (git . "git://github.com/jrockway/time-utils-el.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"

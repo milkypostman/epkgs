@@ -1,5 +1,4 @@
-(:repository (git . "git://github.com/nixeagle/ooc-mode.git")
- :created    "20100529"
+(:created    "20100529"
  :license    "GPL-3"
  :authors    (("James"))
  :maintainer ("James")

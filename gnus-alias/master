@@ -8,7 +8,7 @@
  :required   ((("gnus" message)))
  :keywords   (gnus identity mail news personality)
  :homepage   "http://www.northbound-train.com"
- :wikipage   "http://www.emacswiki.org/GnusAlias"
+ :wikipage   "GnusAlias"
  :commentary "\
 gnus-alias provides a simple mechanism to switch Identities when
  using message-mode.  An Identity is one or more of the following

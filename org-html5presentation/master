@@ -1,5 +1,4 @@
-(:repository (git . "git://github.com/twada/org-html5presentation.el.git")
- :created    "2004"
+(:created    "2004"
  :updated    "2010"
  :license    "GPL-3"
  :authors    (("Carsten Dominik" . "carsten@orgmode.org"))

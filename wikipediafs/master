@@ -1,5 +1,4 @@
 (:summary    "Add support for WikipediaFS"
- :repository (git . "git://gaffer.ptitcanardnoir.org/wikipediafs-el.git")
  :created    "20090227"
  :updated    "2009"
  :license    "GPL-2"
@@ -8,7 +7,7 @@
  :provided   (wikipediafs)
  :required   ((("wikipedia-mode" wikipedia-mode)))
  :keywords   (extensions)
- :wikipage   "http://www.emacswiki.org/WikipediaFs"
+ :wikipage   "WikipediaFs"
  :commentary "\
 wikipediafs.el enhances wikipedia-mode when using WikipediaFS
 (http://wikipediafs.sourceforge.net).

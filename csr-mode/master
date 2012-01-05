@@ -1,5 +1,4 @@
 (:summary    "Major mode for editing .csr files"
- :repository (git . "git://github.com/trailbound/csr-mode.git")
  :created    "20111125"
  :updated    "2011"
  :license    "GPL-2"

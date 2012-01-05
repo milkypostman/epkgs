@@ -9,8 +9,7 @@
 	       ("highlight" highlight)
 	       ("rx" rx)))
  :keywords   (convenience highlight lisp)
- :homepage   "http://www.emacswiki.org/EvalSexpFu"
- :wikipage   "http://www.emacswiki.org/EvalSexpFu"
+ :wikipage   "EvalSexpFu"
  :commentary "\
 Tiny functionality enhancements for evaluating sexps.
 This package provides:

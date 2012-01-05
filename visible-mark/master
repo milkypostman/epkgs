@@ -2,8 +2,7 @@
  :provided   (visible-mark)
  :required   ((("cl" cl)
 	       ("emacs" easy-mmode)))
- :homepage   "http://www.emacswiki.org/VisibleMark"
- :wikipage   "http://www.emacswiki.org/VisibleMark"
+ :wikipage   "VisibleMark"
  :commentary "\
 This was hacked together by Jorgen Schäfer
 And hacked again by Yann Hodique

@@ -1,5 +1,4 @@
 (:summary    "Ess Smart Underscore"
- :repository (git . "git://github.com/mlf176f2/ess-smart-underscore.el.git")
  :created    "20110714"
  :updated    "20110803"
  :license    "GPL-3"

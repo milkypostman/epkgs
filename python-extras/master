@@ -1,5 +1,4 @@
 (:summary    "Extras for python-mode"
- :repository (hg . "http://bitbucket.org/mickey/python-extras")
  :created    "20100522"
  :updated    "2010"
  :license    "GPL-3"

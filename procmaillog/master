@@ -1,4 +1,3 @@
 (:summary    "Read the procmail log file in Gnus"
  :provided   (procmaillog)
- :homepage   "http://www.emacswiki.org/ProcmailLog"
- :wikipage   "http://www.emacswiki.org/ProcmailLog")
+ :wikipage   "ProcmailLog")

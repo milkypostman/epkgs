@@ -10,8 +10,7 @@
 	       ("speedbar" speedbar))
 	      (("ecb" ecb)))
  :keywords   (speedbar)
- :homepage   "http://www.emacswiki.org/SrSpeedbar"
- :wikipage   "http://www.emacswiki.org/SrSpeedbar"
+ :wikipage   "SrSpeedbar"
  :commentary "\
 The sr-speedbar.el was created just because I could not believe what I
 read on http://www.emacswiki.org/cgi-bin/wiki/Speedbar.  They wrote there

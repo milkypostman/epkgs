@@ -6,7 +6,7 @@
  :maintainer ("Jay Belanger" . "belanger@truman.edu")
  :provided   (quotes)
  :homepage   "http://vh213601.truman.edu/~belanger/emacs.html"
- :wikipage   "http://www.emacswiki.org/QuotesMode"
+ :wikipage   "QuotesMode"
  :commentary "\
 Quick Start:
 

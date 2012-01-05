@@ -10,7 +10,7 @@
 	       ("w3" w3-forms)))
  :keywords   (dictionary)
  :homepage   "http://emarsden.chez.com/downloads"
- :wikipage   "http://www.emacswiki.org/DictWeb"
+ :wikipage   "DictWeb"
  :commentary "\
 Overview ==========================================================
 

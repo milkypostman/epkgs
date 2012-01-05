@@ -1,5 +1,4 @@
 (:summary    "Tweak your sound card volume from Emacs"
- :repository (git . "git://github.com/dbrock/volume-el.git")
  :created    "2005"
  :updated    "2008"
  :license    "GPL-2"
@@ -8,7 +7,7 @@
  :provided   (volume)
  :required   ((("electric" electric)))
  :homepage   "https://github.com/dbrock/volume-el"
- :wikipage   "http://www.emacswiki.org/Volume"
+ :wikipage   "Volume"
  :commentary "\
 To use this program, put this file in your `load-path',
 and put the following autoload in your ~/.emacs:

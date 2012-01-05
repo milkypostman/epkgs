@@ -1,5 +1,4 @@
 (:summary    "Editing Sound Files"
- :repository (git . "git://github.com/larsmagne/scan.el.git")
  :created    "2001"
  :updated    "2011"
  :license    "GPL-2"

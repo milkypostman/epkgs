@@ -1,3 +1,2 @@
-(:repository (hg . "http://bitbucket.org/zck/minesweeper.el")
- :homepage   "http://bitbucket.org/zck/minesweeper.el"
- :wikipage   "http://www.emacswiki.org/MineSweeper")
+(:homepage   "http://bitbucket.org/zck/minesweeper.el"
+ :wikipage   "MineSweeper")

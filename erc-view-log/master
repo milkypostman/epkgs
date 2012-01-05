@@ -1,5 +1,4 @@
 (:summary    "Major mode for viewing ERC logs"
- :repository (git . "git://github.com/Niluge-KiWi/erc-view-log.git")
  :created    "2010"
  :updated    "2010"
  :authors    (("Antoine Levitt")
@@ -9,7 +8,7 @@
  :required   ((("erc" erc)))
  :keywords   (colors erc logs viewer)
  :homepage   "http://github.com/Niluge-KiWi/erc-view-log/"
- :wikipage   "http://www.emacswiki.org/ErcViewLog"
+ :wikipage   "ErcViewLog"
  :commentary "\
 Set colors on an ERC log file
 Will not work with erc-fill-mode

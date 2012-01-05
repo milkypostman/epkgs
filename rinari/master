@@ -1,5 +1,4 @@
 (:summary    "Rinari Is Not A Rails IDE"
- :repository (git . "git://github.com/technomancy/rinari.git")
  :created    "20061110"
  :updated    "2008"
  :license    "GPL-3"

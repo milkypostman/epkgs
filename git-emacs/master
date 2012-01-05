@@ -1,5 +1,4 @@
-(:repository (git . "git://github.com/tsgates/git-emacs.git")
- :created    "2007"
+(:created    "2007"
  :updated    "2008"
  :license    "GPL"
  :authors    ((nil . "tsgatesv@gmail.com"))

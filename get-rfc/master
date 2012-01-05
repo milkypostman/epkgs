@@ -7,7 +7,7 @@
  :provided   (get-rfc)
  :keywords   (convenience rfcs)
  :homepage   "http://www.ph.ed.ac.uk/~s0198183"
- :wikipage   "http://www.emacswiki.org/GetRFC"
+ :wikipage   "GetRFC"
  :commentary "\
 This is a tiny little package to alleviate the pain of having to
 switch out of Emacs if you want to view an RFC.

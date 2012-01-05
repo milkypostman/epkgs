@@ -1,5 +1,4 @@
-(:repository (git . "git://github.com/nibrahim/Hyde.git")
- :created    "2004"
+(:created    "2004"
  :updated    "2004"
  :license    "GPL-2"
  :provided   (hyde hyde-git hyde-md)

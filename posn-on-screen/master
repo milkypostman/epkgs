@@ -1,5 +1,4 @@
 (:summary    "Find the coordinates (x, y) around point on screen"
- :repository (git . "git://github.com/Sarcasm/posn-on-screen.git")
  :updated    "2011"
  :license    "GPL-3"
  :provided   (posn-on-screen)

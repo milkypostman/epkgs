@@ -1,5 +1,4 @@
 (:summary    "Go to alternative file"
- :repository (git . "git://github.com/doitian/alternative-files-el.git")
  :created    "20110611"
  :updated    "20110611"
  :license    "GPL-2"

@@ -1,5 +1,4 @@
 (:summary    "Basic support for magit links"
- :repository (git . "git://github.com/sigma/org-magit.git")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-2"

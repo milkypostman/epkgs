@@ -1,5 +1,4 @@
 (:summary    "Tiny Tools configure center"
- :repository (git . "git://git.savannah.gnu.org/emacs-tiny-tools.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-2"
@@ -34,6 +33,7 @@
 	       ("whitespace" whitespace)))
  :keywords   (extensions)
  :homepage   "http://www.nongnu.org/emacs-tiny-tools"
+ :wikipage   "TinyTools"
  :commentary "\
 Preface, overview of options
 

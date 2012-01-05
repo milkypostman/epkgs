@@ -1,7 +1,6 @@
 (:summary    "Interactively flip between recently visited buffers"
- :repository (hg . "http://hg.rosdahl.net/iflipb")
  :created    "2009"
  :updated    "2009"
  :provided   (iflipb)
  :homepage   "http://hg.rosdahl.net/iflipb"
- :wikipage   "http://www.emacswiki.org/iflipb")
+ :wikipage   "iflipb")

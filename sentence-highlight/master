@@ -5,5 +5,4 @@
  :maintainer ("Simon Belak" . "sb@hekovnik.si")
  :provided   (sentence-highlight)
  :keywords   (editing focus highlight plain\ text writing)
- :homepage   "http://www.emacswiki.org/SentenceHighlight"
- :wikipage   "http://www.emacswiki.org/SentenceHighlight")
+ :wikipage   "SentenceHighlight")

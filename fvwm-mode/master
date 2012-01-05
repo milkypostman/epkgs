@@ -4,4 +4,4 @@
  :provided   (fvwm-mode)
  :required   ((("emacs" font-lock)))
  :homepage   "http://www.lair.be/projects_fvwm-mode.php"
- :wikipage   "http://www.emacswiki.org/FvwmMode")
+ :wikipage   "FvwmMode")

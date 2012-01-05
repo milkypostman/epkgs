@@ -1,5 +1,4 @@
 (:summary    "Treat undo history as a tree"
- :repository (git . "http://www.dr-qubit.org/git/undo-tree.git")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-3"
@@ -9,7 +8,7 @@
  :required   ((("cl" cl)))
  :keywords   (convenience files history redo tree undo)
  :homepage   "http://www.dr-qubit.org/emacs.php"
- :wikipage   "http://www.emacswiki.org/UndoTree"
+ :wikipage   "UndoTree"
  :commentary "\
 Emacs has a powerful undo system. Unlike the standard undo/redo system in
 most software, it allows you to recover *any* past state of a buffer

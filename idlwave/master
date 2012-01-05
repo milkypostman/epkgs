@@ -1,5 +1,4 @@
 (:summary    "IDL editing mode for GNU Emacs"
- :repository (git . "git://github.com/jdtsmith/idlwave.git")
  :created    "1999"
  :updated    "2011"
  :license    "GPL-3"
@@ -11,7 +10,7 @@
 	       ("xml" xml)))
  :keywords   (languages)
  :homepage   "http://idlwave.org"
- :wikipage   "http://www.emacswiki.org/IdlMode"
+ :wikipage   "IdlMode"
  :commentary "\
 IDLWAVE enables feature-rich development and interaction with IDL,
 the Interactive Data Language, produced by Research Systems, Inc.

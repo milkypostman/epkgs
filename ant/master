@@ -1,5 +1,4 @@
 (:summary    "A major mode for editing ant files"
  :license    "public-domain"
  :provided   (ant)
- :homepage   "http://www.emacswiki.org/AntMode"
- :wikipage   "http://www.emacswiki.org/AntMode")
+ :wikipage   "AntMode")

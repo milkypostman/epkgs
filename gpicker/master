@@ -1,5 +1,4 @@
 (:summary    "Gpicker integration for Emacs"
- :repository (git . "git://git.savannah.nongnu.org/gpicker.git")
  :created    "2008"
  :updated    "2008"
  :license    "GPL-3"
@@ -10,4 +9,4 @@
 	       ("imenu" imenu)))
  :keywords   (autocompletion)
  :homepage   "http://www.nongnu.org/gpicker"
- :wikipage   "http://www.emacswiki.org/Gpicker")
+ :wikipage   "Gpicker")

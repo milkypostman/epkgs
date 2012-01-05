@@ -1,5 +1,4 @@
 (:summary    "A collaborative editing framework for Emacs"
- :repository (svn . "https://rudel.svn.sourceforge.net/svnroot/rudel")
  :created    "2008"
  :updated    "2010"
  :license    "GPL-3"
@@ -18,7 +17,7 @@
 	       ("zeroconf" zeroconf)))
  :keywords   (collaboration rudel)
  :homepage   "http://rudel.sourceforge.net"
- :wikipage   "http://www.emacswiki.org/Rudel"
+ :wikipage   "Rudel"
  :commentary "\
 Rudel is a framework for collaborative editing in Emacs.  Its
 architecture allows communication with arbitrary collaborative

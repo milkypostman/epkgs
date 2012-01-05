@@ -1,5 +1,4 @@
 (:summary    "Pasting to paste.pocoo.org or other instances of LodgeIt"
- :repository (hg . "http://bitbucket.org/bhagany/lodgemacs")
  :created    "2009"
  :updated    "2009"
  :license    "GPL-2"

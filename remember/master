@@ -1,5 +1,4 @@
 (:summary    "A mode for quickly jotting down things to remember"
- :repository (git . "git://repo.or.cz/remember-el.git")
  :created    "19990329"
  :updated    "2008"
  :license    "GPL-3"
@@ -15,7 +14,7 @@
 	       (nil emacs-wiki-blosxom)))
  :keywords   (data memory pim todo)
  :homepage   "http://repo.or.cz/w/remember-el.git"
- :wikipage   "http://www.emacswiki.org/RememberMode"
+ :wikipage   "RememberMode"
  :commentary "\
 * The idea
 

@@ -1,5 +1,4 @@
 (:summary    "Jess editing mode"
- :repository (cvs . ":pserver:anonymous@jess-mode.cvs.sourceforge.net:/cvsroot/jess-mode")
  :created    "1999"
  :updated    "1999"
  :license    "GPL-2"

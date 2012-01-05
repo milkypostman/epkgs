@@ -4,5 +4,4 @@
  :license    "GPL-2"
  :provided   (sqled-mode)
  :required   ((("emacs" custom easymenu)))
- :homepage   "http://www.emacswiki.org/SqlEdMode"
- :wikipage   "http://www.emacswiki.org/SqlEdMode")
+ :wikipage   "SqlEdMode")

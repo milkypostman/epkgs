@@ -8,7 +8,7 @@
  :required   ((("cl" cl)))
  :keywords   (mail random signature)
  :homepage   "http://www.backmes.de/scripts+programs.html"
- :wikipage   "http://www.emacswiki.org/RandomSig"
+ :wikipage   "RandomSig"
  :commentary "\
 This is yet another implementation to insert a randomly choosen 
 signature into a mail.

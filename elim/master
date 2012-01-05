@@ -1,5 +1,4 @@
-(:repository (git . "git://git.savannah.nongnu.org/elim.git")
- :created    "2011"
+(:created    "2011"
  :updated    "2011"
  :license    "GPL-3"
  :provided   (dbus-util elim garak)
@@ -10,4 +9,4 @@
 	       ("xml" xml))
 	      (("lui" lui)))
  :homepage   "https://savannah.nongnu.org/projects/elim"
- :wikipage   "http://www.emacswiki.org/ELIM")
+ :wikipage   "ELIM")

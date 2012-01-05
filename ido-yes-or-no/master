@@ -1,5 +1,4 @@
 (:summary    "Use Ido to answer yes-or-no questions"
- :repository (git . "git://github.com/DarwinAwardWinner/ido-yes-or-no.git")
  :created    "2011"
  :updated    "2011"
  :authors    (("Ryan C. Thompson"))

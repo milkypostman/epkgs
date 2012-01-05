@@ -8,8 +8,7 @@
  :required   ((("emacs" custom)
 	       ("etags" etags)))
  :keywords   (tags)
- :homepage   "http://www.emacswiki.org/EtagsStack"
- :wikipage   "http://www.emacswiki.org/EtagsStack"
+ :wikipage   "EtagsStack"
  :commentary "\
 Navigate the tags stack
 14 Aug 2008 -- v1.0

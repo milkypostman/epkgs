@@ -1,5 +1,4 @@
 (:summary    "Enclose cursor within punctuation pairs"
- :repository (git . "git://github.com/rejeep/enclose.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"

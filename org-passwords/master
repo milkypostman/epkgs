@@ -1,5 +1,4 @@
 (:summary    "Contacts management"
- :repository (git . "git://github.com/AndreaCrotti/org-passwords.git")
  :created    "2010"
  :updated    "2011"
  :license    "GPL-3"

@@ -1,5 +1,4 @@
 (:summary    "Library to access SimpleGeo's API"
- :repository (git . "git://github.com/ieure/simplegeo-el.git")
  :created    "2011"
  :updated    "2011"
  :authors    (("Ian Eure" . "ian@simplegeo.com"))

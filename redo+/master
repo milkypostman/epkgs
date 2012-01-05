@@ -4,8 +4,7 @@
  :license    "GPL-2"
  :provided   (redo+)
  :keywords   (extensions lisp)
- :homepage   "http://www.emacswiki.org/RedoPlus"
- :wikipage   "http://www.emacswiki.org/RedoPlus"
+ :wikipage   "RedoPlus"
  :commentary "\
 redo+.el is bug fix and extended version of XEmacs' redo package.
 

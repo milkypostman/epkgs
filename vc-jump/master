@@ -8,8 +8,7 @@
  :required   ((("cl" cl)
 	       ("vc" vc)))
  :keywords   (tools)
- :homepage   "http://www.emacswiki.org/VC-Jump"
- :wikipage   "http://www.emacswiki.org/VC-Jump"
+ :wikipage   "VC-Jump"
  :commentary "\
 INSTALLATION: In your ~/.emacs,
 

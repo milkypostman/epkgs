@@ -9,8 +9,7 @@
 	       ("json" json)
 	       ("url" url url-http)))
  :keywords   (comm)
- :homepage   "http://www.emacswiki.org/Blip"
- :wikipage   "http://www.emacswiki.org/Blip"
+ :wikipage   "Blip"
  :commentary "\
 This is the beginnings of a library for interfacing with 
 blip.pl from Emacs. It is heavily based on twit.el (version 0.3.5)

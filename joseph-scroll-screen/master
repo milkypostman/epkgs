@@ -1,5 +1,4 @@
 (:summary    "Scroll half screen down or up, and highlight current line"
- :repository (git . "git://github.com/jixiuf/joseph-scroll-screen.git")
  :created    "20110301"
  :updated    "2011"
  :license    "GPL-3"

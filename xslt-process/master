@@ -1,5 +1,4 @@
 (:summary    "Invoke an XSLT processor on an Emacs buffer"
- :repository (cvs . ":pserver:anonymous@xslt-process.cvs.sourceforge.net:/cvsroot/xslt-process")
  :created    "2000"
  :updated    "20030916"
  :license    "GPL-2"

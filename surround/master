@@ -1,5 +1,4 @@
 (:summary    "Emulate surround.vim from Vim"
- :repository (git . "git://github.com/timcharper/evil-surround.git")
  :created    "201123"
  :updated    "2011"
  :authors    (("Tim Harper" . "timcharper@gmail.com")

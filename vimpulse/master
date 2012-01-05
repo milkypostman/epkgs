@@ -1,5 +1,4 @@
-(:repository (git . "git://gitorious.org/vimpulse/vimpulse.git")
- :provided   (vimpulse vimpulse-compatibility vimpulse-dependencies vimpulse-ex vimpulse-misc-keybindings vimpulse-modal vimpulse-operator vimpulse-paren-matching vimpulse-test vimpulse-text-object-system vimpulse-utils vimpulse-viper-function-redefinitions vimpulse-visual-mode)
+(:provided   (vimpulse vimpulse-compatibility vimpulse-dependencies vimpulse-ex vimpulse-misc-keybindings vimpulse-modal vimpulse-operator vimpulse-paren-matching vimpulse-test vimpulse-text-object-system vimpulse-utils vimpulse-viper-function-redefinitions vimpulse-visual-mode)
  :required   ((("goto-chg" goto-chg)
 	       ("paren" paren)
 	       ("redo" redo)
@@ -7,4 +6,4 @@
 	       ("undo-tree" undo-tree)
 	       ("viper" viper)))
  :homepage   "http://gitorious.org/vimpulse/vimpulse"
- :wikipage   "http://www.emacswiki.org/Vimpulse")
+ :wikipage   "Vimpulse")

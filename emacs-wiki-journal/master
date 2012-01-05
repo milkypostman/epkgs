@@ -9,7 +9,7 @@
 	       ("emacs-wiki-mode" emacs-wiki)))
  :keywords   (hypermedia)
  :homepage   "http://sugarshark.com/ProjectPage.html"
- :wikipage   "http://www.emacswiki.org/EmacsWikiJournal"
+ :wikipage   "EmacsWikiJournal"
  :commentary "\
 I maintain the hypertext parts of my website with John Wiegley's
 emacs-wiki.el, now maintained by Damien Elmes at

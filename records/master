@@ -1,5 +1,4 @@
 (:summary    "Records bootstrap"
- :repository (bzr . "lp:records/1.5")
  :created    "2000"
  :updated    "2000"
  :license    "GPL-2"
@@ -15,4 +14,4 @@
 	       ("records" records-autoloads)
 	       ("tempo" tempo)
 	       ("url" url)))
- :wikipage   "http://www.emacswiki.org/RecordsMode")
+ :wikipage   "RecordsMode")

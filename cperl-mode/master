@@ -1,5 +1,4 @@
 (:summary    "Perl code editing commands for Emacs"
- :repository (git . "git://github.com/jrockway/cperl-mode.git")
  :created    "1985"
  :updated    "1996"
  :license    "GPL-3"
@@ -20,7 +19,7 @@
 	       ("tmm" tmm)))
  :keywords   (languages perl)
  :homepage   "https://github.com/jrockway/cperl-mode"
- :wikipage   "http://www.emacswiki.org/CPerlMode"
+ :wikipage   "CPerlMode"
  :commentary "\
 This version of the file contains support for the syntax added by
 the MooseX::Declare CPAN module, as well as Perl 5.10 keyword

@@ -9,7 +9,7 @@
 	       ("tempo" tempo)))
  :keywords   (abbrev convenience)
  :homepage   "http://nschum.de/src/emacs/tempo-snippets"
- :wikipage   "http://www.emacswiki.org/TempoSnippets"
+ :wikipage   "TempoSnippets"
  :commentary "\
 IMPORTANT:
 

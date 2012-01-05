@@ -4,8 +4,7 @@
  :maintainer ("S. Irie")
  :provided   (transpose-frame)
  :keywords   (window)
- :homepage   "http://www.emacswiki.org/TransposeFrame"
- :wikipage   "http://www.emacswiki.org/TransposeFrame"
+ :wikipage   "TransposeFrame"
  :commentary "\
 This program provides some interactive functions which allows users
 to transpose windows arrangement in currently selected frame:

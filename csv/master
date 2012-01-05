@@ -7,7 +7,7 @@
  :provided   (csv)
  :keywords   (util)
  :homepage   "http://ulf.epplejasper.de/EmacsGeneralPurpose.html"
- :wikipage   "http://www.emacswiki.org/CsvMode"
+ :wikipage   "CsvMode"
  :commentary "\
 csv.el provides functions for reading and parsing CSV (Comma Separated
 Value) files.  It follows the format as defined in RFC 4180 \"Common

@@ -9,7 +9,7 @@
 	       ("tempo" tempo)))
  :keywords   (languages)
  :homepage   "http://www.brigadoon.de/peter"
- :wikipage   "http://www.emacswiki.org/JavaScriptMode"
+ :wikipage   "JavaScriptMode"
  :commentary "\
 Get the latest version from
 <http://www.brigadoon.de/peter/javascript-mode.el>

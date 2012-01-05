@@ -1,5 +1,4 @@
 (:summary    "Execute Emacs lisp in a separate process"
- :repository (git . "git://github.com/nschum/async-eval.el.git")
  :created    "2009"
  :updated    "2009"
  :license    "GPL-2"
@@ -8,7 +7,7 @@
  :provided   (async-eval)
  :keywords   (extensions lisp processes)
  :homepage   "http://nschum.de/src/emacs/async-eval"
- :wikipage   "http://www.emacswiki.org/AsyncEval"
+ :wikipage   "AsyncEval"
  :commentary "\
 Emacs lisp is not multi-threaded.  This library explores possibilities to
 work around this.  It allows forms to be evaluated in a separate Emacs

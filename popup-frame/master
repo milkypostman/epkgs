@@ -1,5 +1,4 @@
 (:summary    "Popup frame management"
- :repository (git . "git://github.com/Sarcasm/popup-frame.git")
  :updated    "2011"
  :license    "GPL-3"
  :provided   (popup-frame)

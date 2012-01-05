@@ -16,8 +16,7 @@
 	       ("mkhtml" mkhtml)
 	       ("w32-browser" w32-browser)))
  :keywords   (directories dired diredp mouse unix)
- :homepage   "http://www.emacswiki.org/DiredPlus"
- :wikipage   "http://www.emacswiki.org/DiredPlus"
+ :wikipage   "DiredPlus"
  :commentary "\
 Extensions to Dired
 

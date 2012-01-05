@@ -6,8 +6,7 @@
  :maintainer ("Drew Adams")
  :provided   (pp-c-l)
  :keywords   (convenience display faces)
- :homepage   "http://www.emacswiki.org/PrettyControlL"
- :wikipage   "http://www.emacswiki.org/PrettyControlL"
+ :wikipage   "PrettyControlL"
  :commentary "\
 Faces defined here:
 

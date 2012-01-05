@@ -7,8 +7,7 @@
  :provided   (glimpse)
  :required   ((("compile" compile)
 	       ("emacs" dired)))
- :homepage   "http://www.emacswiki.org/Glimpse"
- :wikipage   "http://www.emacswiki.org/Glimpse"
+ :wikipage   "Glimpse"
  :commentary "\
 These are some helper functions to use glimpse from within Emacs. 
 They contain: 

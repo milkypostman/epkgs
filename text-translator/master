@@ -6,8 +6,7 @@
 	      ("plus" . "mlb33828@nifty.com"))
  :maintainer ("khiker" . "khiker.mail+elisp@gmail.com")
  :provided   (text-translator text-translator-load text-translator-vars)
- :homepage   "http://www.emacswiki.org/TextTranslator"
- :wikipage   "http://www.emacswiki.org/TextTranslator"
+ :wikipage   "TextTranslator"
  :commentary "\
 Translates character strings on Emacs.
 This package use the text translation service that exists on the internet.

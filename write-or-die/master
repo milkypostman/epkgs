@@ -1,8 +1,7 @@
 (:summary    "Deletes word from buffer if you stop typing for to long"
  :provided   (write-or-die)
  :required   ((("emacs" timer)))
- :homepage   "http://www.emacswiki.org/WriteOrDieMode"
- :wikipage   "http://www.emacswiki.org/WriteOrDieMode"
+ :wikipage   "WriteOrDieMode"
  :commentary "\
 An emacs version of Dr. Wicked's \"Write-or-die\" webapp, by Duncan Mortimer <dmorti@gmail.com>
 

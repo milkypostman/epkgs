@@ -6,7 +6,7 @@
  :maintainer ("Andreas Nolda" . "nolda.andreas@googlemail.com")
  :provided   (psgml-superedit)
  :required   ((("psgml" psgml-edit)))
- :wikipage   "http://www.emacswiki.org/PsgmlSuperedit"
+ :wikipage   "PsgmlSuperedit"
  :commentary "\
 This file defines additional editing functions for use with PSGML. For the
 most part, they generalise more basic editing functions in dwim ('do what I

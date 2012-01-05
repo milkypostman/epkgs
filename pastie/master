@@ -6,8 +6,7 @@
  :provided   (pastie)
  :required   ((("cl" cl)))
  :keywords   (pastie webservices)
- :homepage   "http://www.emacswiki.org/Pastie"
- :wikipage   "http://www.emacswiki.org/Pastie"
+ :wikipage   "Pastie"
  :commentary "\
 This file is NOT part of GNU Emacs.
 Licensed under the GPL.

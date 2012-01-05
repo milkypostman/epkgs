@@ -1,5 +1,4 @@
 (:summary    "A frontend to CFS"
- :repository (cvs . ":pserver:anonymous@cvs.savannah.nongnu.org:/sources/cfs-el")
  :created    "2003"
  :updated    "2003"
  :license    "GPL-2"

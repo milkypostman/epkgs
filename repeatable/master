@@ -5,4 +5,4 @@
  :provided   (repeatable)
  :required   ((("emacs" advice)))
  :homepage   "http://furius.ca/pubcode"
- :wikipage   "http://www.emacswiki.org/Repeatable")
+ :wikipage   "Repeatable")

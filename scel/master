@@ -1,5 +1,4 @@
 (:summary    "IDE for working with the SuperCollider language"
- :repository (svn . "https://supercollider.svn.sourceforge.net/svnroot/supercollider")
  :created    "2003"
  :updated    "2003"
  :license    "GPL-2"

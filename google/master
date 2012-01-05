@@ -1,5 +1,4 @@
 (:summary    "Emacs interface to the Google API"
- :repository (git . "git://github.com/hober/google-el.git")
  :created    "2002"
  :updated    "2008"
  :license    "GPL-2"
@@ -10,7 +9,7 @@
 	       ("url" url)))
  :keywords   (comm processes tools)
  :homepage   "http://edward.oconnor.cx/elisp"
- :wikipage   "http://www.emacswiki.org/GoogleInterface"
+ :wikipage   "GoogleInterface"
  :commentary "\
 You should always be able to find the latest version here:
 

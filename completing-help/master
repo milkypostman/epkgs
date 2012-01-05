@@ -7,7 +7,7 @@
  :provided   (completing-help)
  :keywords   (help local)
  :homepage   "http://homepage1.nifty.com/bmonkey/emacs/index-en.html"
- :wikipage   "http://www.emacswiki.org/CompletingHelp"
+ :wikipage   "CompletingHelp"
  :commentary "\
 This package enhances the completion mechanism of Emacs by
 allowing you to display information on completions.

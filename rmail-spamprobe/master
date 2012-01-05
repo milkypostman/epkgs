@@ -7,8 +7,7 @@
  :provided   (rmail-spamprobe)
  :required   ((("rmail" rmail)))
  :keywords   (mail)
- :homepage   "http://www.emacswiki.org/RmailSpamprobe"
- :wikipage   "http://www.emacswiki.org/RmailSpamprobe"
+ :wikipage   "RmailSpamprobe"
  :commentary "\
 Some code for interacting with spamprobe from within RMAIL. This code
 assumes that you have a functional mailsystem with procmail calling

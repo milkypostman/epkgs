@@ -1,5 +1,4 @@
 (:summary    "Major mode for editing Dart files"
- :repository (git . "git://github.com/nex3/dart-mode.git")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-3"

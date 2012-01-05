@@ -1,5 +1,4 @@
 (:summary    "Interact with Github Issues through Emacs"
- :repository (git . "git://github.com/abhiyerra/github.el.git")
  :created    "20100523"
  :license    "GPL-2"
  :authors    (("Abhi Yerra" . "abhi@berkeley.edu"))

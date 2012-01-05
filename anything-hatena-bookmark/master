@@ -1,5 +1,4 @@
 (:summary    "Hatena::Bookmark anything.el interface"
- :repository (git . "git://github.com/wakaran/anything-hatena-bookmark.git")
  :created    "2008"
  :updated    "2008"
  :license    "GPL-2"

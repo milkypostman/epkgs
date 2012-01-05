@@ -7,8 +7,7 @@
  :provided   (org-oddmuse)
  :required   ((("org" org)))
  :keywords   (oddmuse org-mode)
- :homepage   "http://www.emacswiki.org/OrgOddmuse"
- :wikipage   "http://www.emacswiki.org/OrgOddmuse"
+ :wikipage   "OrgOddmuse"
  :commentary "\
 Transform from Org-mode to Oddmuse Wiki format.
 

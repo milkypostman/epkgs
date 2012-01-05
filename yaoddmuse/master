@@ -15,8 +15,7 @@
 	       ("w3m" w3m))
 	      (("growl" growl)))
  :keywords   (oddmuse yaoddmuse)
- :homepage   "http://www.emacswiki.org/Yaoddmuse"
- :wikipage   "http://www.emacswiki.org/Yaoddmuse"
+ :wikipage   "Yaoddmuse"
  :commentary "\
 Yet another oddmuse for Emacs.
 

@@ -1,5 +1,4 @@
 (:summary    "Count number of words in a buffer"
- :repository (git . "git://github.com/bnbeckwith/writegood-mode.git")
  :created    "20100812"
  :updated    "20100813"
  :license    "GPL-3"

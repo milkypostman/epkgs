@@ -1,5 +1,4 @@
 (:summary    "Use ido (nearly) everywhere"
- :repository (git . "git://github.com/technomancy/ido-ubiquitous.git")
  :created    "20110901"
  :license    "GPL-3"
  :authors    (("Ryan C. Thompson"))

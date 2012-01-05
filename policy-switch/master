@@ -8,5 +8,4 @@
  :required   ((("cl" cl)
 	       ("desktop" desktop)
 	       ("winner" winner)))
- :homepage   "http://www.emacswiki.org/PolicySwitch"
- :wikipage   "http://www.emacswiki.org/PolicySwitch")
+ :wikipage   "PolicySwitch")

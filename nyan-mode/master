@@ -1,9 +1,8 @@
 (:summary    "Nyan Cat shows position in current buffer in mode-line"
- :repository (git . "git://github.com/TeMPOraL/nyan-mode.git")
  :license    "GPL-3"
  :authors    (("Jacek \"TeMPOraL\" Zlydach" . "temporal.pl@gmail.com"))
  :maintainer ("Jacek \"TeMPOraL\" Zlydach" . "temporal.pl@gmail.com")
  :provided   (nyan-mode)
  :keywords   (build\ something\ amazing cat lulz nyan pop\ tart\ cat)
  :homepage   "https://github.com/TeMPOraL/nyan-mode"
- :wikipage   "http://www.emacswiki.org/NyanMode")
+ :wikipage   "NyanMode")

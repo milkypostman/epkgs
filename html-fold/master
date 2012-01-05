@@ -1,5 +1,4 @@
 (:summary    "Fold HTML elements"
- :repository (git . "git://github.com/ataka/html-fold.git")
  :created    "20050510"
  :updated    "2010"
  :license    "GPL-2"

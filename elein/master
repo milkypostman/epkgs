@@ -1,5 +1,4 @@
 (:summary    "Running leiningen commands from emacs"
- :repository (git . "git://github.com/remvee/elein.git")
  :created    "20100802"
  :updated    "2011"
  :license    "GPL-3"

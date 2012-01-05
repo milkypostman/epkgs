@@ -1,5 +1,4 @@
 (:summary    "A fast Lynx-based browser for Emacs"
- :repository (svn . "http://nero-el.googlecode.com/svn")
  :created    "2007"
  :updated    "20070302"
  :license    "GPL-2"

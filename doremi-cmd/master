@@ -6,7 +6,7 @@
  :maintainer ("Drew Adams")
  :provided   (doremi-cmd)
  :required   ((("doremi" doremi))
-	      (("color-theme" color-theme)))
+	      ((nil color-theme)))
  :keywords   (cycle keys repeat)
  :commentary "\
 Miscellaneous Do Re Mi commands.

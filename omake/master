@@ -1,5 +1,4 @@
 (:summary    "Editing mode for omake files"
- :repository (hg . "http://bitbucket.org/dmcooke/omake-mode")
  :created    "2007"
  :updated    "2007"
  :license    "GPL-2"

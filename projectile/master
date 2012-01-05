@@ -1,5 +1,4 @@
 (:summary    "Manage and navigate projects in Emacs easily"
- :repository (git . "git://github.com/bbatsov/projectile.git")
  :created    "20113107"
  :updated    "2011"
  :license    "GPL-3"

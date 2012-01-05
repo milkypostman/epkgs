@@ -10,8 +10,7 @@
 	       ("emms" emms)
 	       ("w3m" w3m)))
  :keywords   (dired open)
- :homepage   "http://www.emacswiki.org/DiredOpen"
- :wikipage   "http://www.emacswiki.org/DiredOpen"
+ :wikipage   "DiredOpen"
  :commentary "\
 Open varoius files in dired.
 

@@ -1,5 +1,4 @@
 (:summary    "Simple timer package"
- :repository (git . "git://github.com/krick/tea-time.git")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-2"
@@ -8,7 +7,7 @@
  :provided   (tea-time)
  :keywords   (tea-time timer)
  :homepage   "https://github.com/krick/tea-time"
- :wikipage   "http://www.emacswiki.org/tea-time"
+ :wikipage   "tea-time"
  :commentary "\
 This package allows you to set up time intervals and after this
 inteval is elapsed Emacs will notify you with sound and notification.

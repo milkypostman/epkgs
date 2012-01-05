@@ -2,4 +2,4 @@
  :updated    "2009"
  :provided   (lively)
  :required   ((("cl" cl)))
- :wikipage   "http://www.emacswiki.org/Lively")
+ :wikipage   "Lively")

@@ -11,5 +11,4 @@
 	       ("mh-e" mh-comp)
 	       ("sendmail" sendmail)
 	       ("vm" vm)))
- :homepage   "http://www.emacswiki.org/sig-quote"
- :wikipage   "http://www.emacswiki.org/sig-quote")
+ :wikipage   "sig-quote")

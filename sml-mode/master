@@ -17,7 +17,7 @@
 	       ("smerge-mode" smerge-mode)))
  :keywords   (sml)
  :homepage   "http://www.iro.umontreal.ca/~monnier/elisp"
- :wikipage   "http://www.emacswiki.org/SMLMode"
+ :wikipage   "SMLMode"
  :commentary "\
 HISTORY
 

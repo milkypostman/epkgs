@@ -5,7 +5,7 @@
  :authors    (("Alex Schroeder" . "alex@gnu.org"))
  :maintainer ("Alex Schroeder" . "alex@gnu.org")
  :keywords   (hypermedia)
- :wikipage   "http://www.emacswiki.org/WikiDot"
+ :wikipage   "WikiDot"
  :commentary "\
 Produces a graph of the entire wiki.  The graph is described using
 the dot language.  See http://www.graphviz.org/ for source and binary

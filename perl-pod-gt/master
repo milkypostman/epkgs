@@ -7,7 +7,7 @@
  :provided   (perl-pod-gt)
  :required   ((("emacs" overlay)))
  :keywords   (wp)
- :wikipage   "http://www.emacswiki.org/PerlPodGt"
+ :wikipage   "PerlPodGt"
  :commentary "\
 This spot of code helps when writing Perl POD markup forms like C<...>,
 B<...>, etc.  `perl-pod-gt-enable' offers smart E<gt> insertion, line

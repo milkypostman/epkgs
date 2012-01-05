@@ -3,4 +3,4 @@
  :license    "GPL-2"
  :provided   (update-autoloads)
  :homepage   "http://www.cb1.com/~john/computing/emacs/lisp/elisp-dev-tools"
- :wikipage   "http://www.emacswiki.org/UpdateAutoloads")
+ :wikipage   "UpdateAutoloads")

@@ -7,7 +7,7 @@
  :provided   (gas-mode)
  :keywords   (languages)
  :homepage   "http://www.hczim.de/software/gas-mode.html"
- :wikipage   "http://www.emacswiki.org/GasMode"
+ :wikipage   "GasMode"
  :commentary "\
 To use this mode, put gas-mode.el somewhere on your load-path.
 Then add this to your .emacs:

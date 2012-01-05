@@ -4,8 +4,7 @@
  :authors    (("Teemu Likonen" . "tlikonen@iki.fi"))
  :maintainer ("Teemu Likonen" . "tlikonen@iki.fi")
  :provided   (ergo-movement-mode)
- :homepage   "http://www.emacswiki.org/ErgoMovementMode"
- :wikipage   "http://www.emacswiki.org/ErgoMovementMode"
+ :wikipage   "ErgoMovementMode"
  :commentary "\
 Ergo Movement mode is a global minor mode which defines ergonomic
 keybindings for cursor movement. See the function documentation

@@ -1,5 +1,4 @@
-(:repository (git . "git://github.com/joodie/slime-complete-locals.git")
- :created    "2010"
+(:created    "2010"
  :updated    "2010"
  :license    "GPL-2"
  :authors    ((nil . "joost diepenmaat - joost@zeekat.nl"))
@@ -7,4 +6,4 @@
  :provided   (slime-complete-locals)
  :keywords   (abbrev convenience slime)
  :homepage   "https://github.com/joodie/slime-complete-locals"
- :wikipage   "http://www.emacswiki.org/SlimeCompleteLocals")
+ :wikipage   "SlimeCompleteLocals")

@@ -11,4 +11,4 @@
 	       ("ispell" ispell)))
  :keywords   (completion)
  :homepage   "http://www.math.washington.edu/~palmieri/Emacs/light.html"
- :wikipage   "http://www.emacswiki.org/LightningCompletion")
+ :wikipage   "LightningCompletion")

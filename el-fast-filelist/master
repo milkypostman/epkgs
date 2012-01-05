@@ -1,5 +1,4 @@
 (:summary    "Fast file access for given folder"
- :repository (git . "git://github.com/medikoo/el-fast-filelist.git")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-2"

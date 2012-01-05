@@ -1,5 +1,4 @@
 (:summary    "Send blocks of text from emacs to screen or tmux sessions"
- :repository (git . "git://github.com/benbooth5/screensend.el.git")
  :created    "20111116"
  :updated    "2011"
  :license    "GPL-3"
@@ -8,7 +7,7 @@
  :provided   (screensend)
  :keywords   (lisp screen send terminal tmux)
  :homepage   "https://github.com/benbooth5/screensend.el"
- :wikipage   "http://www.emacswiki.org/ScreenSend"
+ :wikipage   "ScreenSend"
  :commentary "\
 screensend.el
 -------------

@@ -10,7 +10,7 @@
 	       ("gamegrid" gamegrid)))
  :keywords   (games keyboard)
  :homepage   "http://www.phys.au.dk/~harder"
- :wikipage   "http://www.emacswiki.org/KeyWiz"
+ :wikipage   "KeyWiz"
  :commentary "\
 keywiz.el drills you about Emacs key-bindings.  You're presented
 with the name of a command and the docstring, and then prompted for

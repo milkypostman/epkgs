@@ -7,5 +7,4 @@
  :provided   (etom)
  :required   ((("emacs" comint)))
  :keywords   (emacs maya mel)
- :homepage   "http://www.emacswiki.org/EmacsToMaya"
- :wikipage   "http://www.emacswiki.org/EmacsToMaya")
+ :wikipage   "EmacsToMaya")

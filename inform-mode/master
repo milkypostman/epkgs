@@ -9,7 +9,7 @@
 	       ("term" term)))
  :keywords   (languages)
  :homepage   "http://www.rupert-lane.org/inform-mode"
- :wikipage   "http://www.emacswiki.org/InformMode"
+ :wikipage   "InformMode"
  :commentary "\
 Inform is a compiler for adventure games by Graham Nelson,
 available by anonymous FTP from

@@ -6,7 +6,7 @@
  :maintainer ("Kevin Ryde" . "user42@zip.com.au")
  :provided   (align-let)
  :keywords   (languages)
- :wikipage   "http://www.emacswiki.org/AlignLet"
+ :wikipage   "AlignLet"
  :commentary "\
 This is a spot of code for aligning the values in a \"let\" form.  See
 examples in the docstring below.  It's designed for elisp and scheme but

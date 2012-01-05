@@ -6,7 +6,7 @@
  :maintainer ("William Xu" . "william.xwl@gmail.com")
  :provided   (wajig)
  :homepage   "http://xwl.appspot.com"
- :wikipage   "http://www.emacswiki.org/WajigMode"
+ :wikipage   "WajigMode"
  :commentary "\
 \"Wajig is an interface to many Debian administrative tasks. Written
 in Python, wajig uses traditional Debian administration and user

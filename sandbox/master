@@ -6,7 +6,7 @@
  :maintainer ("Tom Breton" . "tob@world.std.com")
  :keywords   (extensions internal lisp)
  :homepage   "http://www.panix.com/~tehom"
- :wikipage   "http://www.emacswiki.org/SandBox"
+ :wikipage   "SandBox"
  :commentary "\
 This is for calling untrusted code without letting it do anything
 risky, should it be so inclined.  It is a sort of first step

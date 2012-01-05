@@ -9,4 +9,4 @@
 	       ("ring" ring)))
  :keywords   (gedcom genealogy lifelines)
  :homepage   "http://www.rempe-online.de/genealogie/lines"
- :wikipage   "http://www.emacswiki.org/GedCom")
+ :wikipage   "GedCom")

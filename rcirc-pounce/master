@@ -4,8 +4,7 @@
  :license    "GPL-2"
  :provided   (rcirc-pounce)
  :required   ((("rcirc" rcirc)))
- :homepage   "http://www.emacswiki.org/rcircPounce"
- :wikipage   "http://www.emacswiki.org/rcircPounce"
+ :wikipage   "rcircPounce"
  :commentary "\
 Use /POUNCE to list the queues.
 Use /POUNCE NICK to list all messages queued for NICK

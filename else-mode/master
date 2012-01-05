@@ -9,6 +9,6 @@
 	       (nil expand-a-word)))
  :keywords   (abbreviation language placeholder sensitive template token)
  :homepage   "http://home.exetel.com.au/peterm"
- :wikipage   "http://www.emacswiki.org/ElseMode"
+ :wikipage   "ElseMode"
  :commentary "\
 This facility is documented in the accompanying distribution file(s).")

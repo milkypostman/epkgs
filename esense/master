@@ -8,4 +8,4 @@
 	       ("erlang" erlang)
 	       ("etags" etags)))
  :homepage   "http://esense.sourceforge.net"
- :wikipage   "http://www.emacswiki.org/ESense")
+ :wikipage   "ESense")

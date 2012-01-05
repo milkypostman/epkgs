@@ -9,7 +9,7 @@
 	       ("outline" outline)))
  :keywords   (project\ management todo)
  :homepage   "http://www.mulix.org/code.html"
- :wikipage   "http://www.emacswiki.org/ToDoo"
+ :wikipage   "ToDoo"
  :commentary "\
 todoo.el is a mode for editing TODO files in an outline-mode fashion. 
  It has similarities to Oliver Seidel's todo-mode.el , but todoo.el

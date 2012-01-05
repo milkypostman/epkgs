@@ -1,12 +1,11 @@
 (:summary    "Emacs interface for Uzbl (uzbl.org)"
- :repository (git . "git://github.com/haxney/ezbl.git")
  :license    "GPL-3"
  :provided   (ezbl)
  :required   ((("cl" cl)
 	       ("url" url-cookie))
 	      ((nil xwidget)))
  :homepage   "https://github.com/haxney/ezbl"
- :wikipage   "http://www.emacswiki.org/ezbl"
+ :wikipage   "ezbl"
  :commentary "\
 Uzbl version 2009.11.30 or greater is required. Ezbl will not work with
  older versions.

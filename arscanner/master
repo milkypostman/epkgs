@@ -1,8 +1,7 @@
-(:repository (svn . "svn://scm.adullact.net/svnroot/arscanner")
- :created    "2007"
+(:created    "2007"
  :updated    "2007"
  :license    "GPL-2"
  :provided   (arscanner arscanner-mode)
  :required   ((("outline" outline)))
  :homepage   "http://arscanner.adullact.net/arscanner-en.html"
- :wikipage   "http://www.emacswiki.org/ArScanner")
+ :wikipage   "ArScanner")

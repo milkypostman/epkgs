@@ -7,7 +7,7 @@
  :provided   (guess-lang)
  :keywords   (languages)
  :homepage   "http://www.grassouille.org/emacs/index.en.html"
- :wikipage   "http://www.emacswiki.org/GuessLang"
+ :wikipage   "GuessLang"
  :commentary "\
 Automagically guess what is the language of a buffer.
 

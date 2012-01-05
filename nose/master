@@ -1,5 +1,4 @@
 (:summary    "Easy Python test running in Emacs"
- :repository (hg . "http://bitbucket.org/durin42/nosemacs")
  :created    "20090404"
  :updated    "2009"
  :license    "GPL-3"

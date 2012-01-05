@@ -7,8 +7,7 @@
  :provided   (pushy)
  :required   ((("iswitchb" iswitchb)))
  :keywords   (completion)
- :homepage   "http://www.emacswiki.org/PushyCompletion"
- :wikipage   "http://www.emacswiki.org/PushyCompletion"
+ :wikipage   "PushyCompletion"
  :commentary "\
 Pushy completion is a variation of timid completion. It's timid
 completion without the timidity.

@@ -7,7 +7,7 @@
  :provided   (wiki-sum)
  :required   ((("wiki" wiki)))
  :keywords   (hypermedia)
- :wikipage   "http://www.emacswiki.org/WikiSummary"
+ :wikipage   "WikiSummary"
  :commentary "\
 Eventually this code should generate description and keyword meta
 tags for my wiki pages.")

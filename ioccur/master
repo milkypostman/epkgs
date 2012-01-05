@@ -1,5 +1,4 @@
 (:summary    "Incremental occur"
- :repository (hg . "http://mercurial.intuxication.org/hg/ioccur")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"
@@ -9,7 +8,7 @@
 	       ("outline" outline)
 	       ("wdired" wdired)))
  :homepage   "http://mercurial.intuxication.org/hg/ioccur"
- :wikipage   "http://www.emacswiki.org/IncrementalOccur"
+ :wikipage   "IncrementalOccur"
  :commentary "\
 To save `ioccur-history', use desktop, adding that to your .emacs:
 (add-to-list 'desktop-globals-to-save 'ioccur-history)

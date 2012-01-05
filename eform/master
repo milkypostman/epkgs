@@ -1,7 +1,6 @@
 (:updated    "2004"
  :provided   (eform)
- :homepage   "http://www.emacswiki.org/ElectricFormMode"
- :wikipage   "http://www.emacswiki.org/ElectricFormMode"
+ :wikipage   "ElectricFormMode"
  :commentary "\
 I wrote this because I was keeping my cycling log as a text file in
 emacs.  I want to do a few simple things like total up the number

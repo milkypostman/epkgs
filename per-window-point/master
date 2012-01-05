@@ -1,5 +1,4 @@
 (:summary    "Persisent per-window values of point"
- :repository (git . "git://github.com/alpaker/Per-Window-Point.git")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-2"
@@ -8,7 +7,7 @@
  :provided   (per-window-point)
  :keywords   (convenience)
  :homepage   "https://github.com/alpaker/Per-Window-Point"
- :wikipage   "http://www.emacswiki.org/PerWindowPoint"
+ :wikipage   "PerWindowPoint"
  :commentary "\
 Emacs conveniently allows one to work on different parts of the same
 buffer at the same time, but the rules governing buffer display are, for

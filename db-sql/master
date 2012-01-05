@@ -1,5 +1,4 @@
 (:summary    "Connect to SQL server using tramp syntax"
- :repository (git . "git://github.com/renard/db-sql-el.git")
  :created    "20101217"
  :updated    "2010"
  :provided   (db-sql)

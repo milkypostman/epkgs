@@ -1,5 +1,4 @@
 (:summary    "Window configuration rings"
- :repository (bzr . "http://bazaar.launchpad.net/~barry/winring/trunk")
  :created    "1997"
  :updated    "2010"
  :license    "GPL-3"
@@ -8,7 +7,7 @@
 	       ("ring" ring)))
  :keywords   (frames tools)
  :homepage   "http://launchpad.net/winring"
- :wikipage   "http://www.emacswiki.org/WinRing"
+ :wikipage   "WinRing"
  :commentary "\
 This package provides lightweight support for circular rings of window
 configurations.  A window configuration is the layout of windows and

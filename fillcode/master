@@ -4,4 +4,4 @@
  :required   ((("cc-mode" cc-bytecomp cc-engine)
 	       ("cl" cl)))
  :homepage   "http://snarfed.org/space/fillcode"
- :wikipage   "http://www.emacswiki.org/Fillcode")
+ :wikipage   "Fillcode")

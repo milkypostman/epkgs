@@ -1,5 +1,4 @@
 (:summary    "Major mode API client for status.net open microblogging"
- :repository (git . "git://git.savannah.gnu.org/identica-mode.git")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-2"
@@ -18,4 +17,4 @@
 	       ("xml" xml)
 	       (nil bbdb-mua)))
  :keywords   (identica web)
- :wikipage   "http://www.emacswiki.org/Identica-mode")
+ :wikipage   "Identica-mode")

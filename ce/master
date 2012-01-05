@@ -1,5 +1,4 @@
 (:summary    "Copyedit entries for the Stanford Encyclopedia of Philosophy"
- :repository (git . "git://github.com/jessealama/ce-el.git")
  :created    "2008"
  :provided   (ce ce-macros ce-quotes ce-unadorned ce-validate)
  :required   ((("cl" cl)

@@ -7,8 +7,7 @@
  :provided   (wikitext-mode)
  :required   ((("emacs" derived font-lock)))
  :keywords   (wiki)
- :homepage   "http://www.emacswiki.org/WikitextMode"
- :wikipage   "http://www.emacswiki.org/WikitextMode"
+ :wikipage   "WikitextMode"
  :commentary "\
 This is `wikitext-mode', a major mode for editing articles written
 in the markup language used by Wikispace. It is intended to work

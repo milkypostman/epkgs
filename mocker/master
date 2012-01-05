@@ -1,5 +1,4 @@
 (:summary    "Mocking framework for emacs"
- :repository (git . "git://github.com/sigma/mocker.el.git")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-2"

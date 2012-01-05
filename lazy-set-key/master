@@ -5,8 +5,7 @@
  :authors    (("Andy Stewart" . "lazycat.manatee@gmail.com"))
  :maintainer ("Andy Stewart" . "lazycat.manatee@gmail.com")
  :provided   (lazy-set-key)
- :homepage   "http://www.emacswiki.org/LazySetKey"
- :wikipage   "http://www.emacswiki.org/LazySetKey"
+ :wikipage   "LazySetKey"
  :commentary "\
 Lazy set keystroke.
 

@@ -4,8 +4,7 @@
  :authors    (("quodlibetor" . "quodlibetor@gmail.com"))
  :maintainer ("quodlibetor" . "quodlibetor@gmail.com")
  :keywords   (keyconfig latex)
- :homepage   "http://www.emacswiki.org/TabInTabular"
- :wikipage   "http://www.emacswiki.org/TabInTabular"
+ :wikipage   "TabInTabular"
  :commentary "\
 This file contains a couple of functions to make emacs treat `&'s
 more like cell separators in e.g. excell. This makes sense if you

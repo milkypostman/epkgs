@@ -6,8 +6,7 @@
  :maintainer ("Mathias Dahl" . "mathias.rem0veth1s.dahl@gmail.com")
  :provided   (shell-command-queue)
  :keywords   (processes shell)
- :homepage   "http://www.emacswiki.org/ShellCommandQueue"
- :wikipage   "http://www.emacswiki.org/ShellCommandQueue"
+ :wikipage   "ShellCommandQueue"
  :commentary "\
 This package provides a means to add shell commands to a queue for
  \"sequentual asynchronous execution\".  This means that each command

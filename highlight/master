@@ -10,8 +10,7 @@
 	       ("frame-fns" frame-fns)
 	       ("menu-bar+" menu-bar+)))
  :keywords   (faces help local)
- :homepage   "http://www.emacswiki.org/HighlightLibrary"
- :wikipage   "http://www.emacswiki.org/HighlightLibrary"
+ :wikipage   "HighlightLibrary"
  :commentary "\
 Highlighting commands.
 

@@ -5,8 +5,7 @@
  :provided   (extview)
  :required   ((("cl" cl)
 	       ("gnus" mailcap)))
- :homepage   "http://www.emacswiki.org/ExtView"
- :wikipage   "http://www.emacswiki.org/ExtView"
+ :wikipage   "ExtView"
  :commentary "\
 Load the library and try opening a file which has an associated
 application in `extview-application-associations' or in mailcap.

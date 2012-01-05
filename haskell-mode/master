@@ -1,5 +1,4 @@
 (:summary    "A Haskell editing mode"
- :repository (darcs . "http://code.haskell.org/haskellmode-emacs")
  :created    "2003"
  :updated    "2008"
  :license    "GPL-3"
@@ -20,7 +19,7 @@
 	       (nil syntax-ppss)))
  :keywords   (faces files haskell)
  :homepage   "http://projects.haskell.org/haskellmode-emacs"
- :wikipage   "http://www.emacswiki.org/HaskellMode"
+ :wikipage   "HaskellMode"
  :commentary "\
 Purpose:
 

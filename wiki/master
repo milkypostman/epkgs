@@ -10,8 +10,7 @@
 	       ("info" info)
 	       ("thingatpt" thingatpt)))
  :keywords   (hypermedia)
- :homepage   "http://www.emacswiki.org/WikiMode"
- :wikipage   "http://www.emacswiki.org/WikiMode"
+ :wikipage   "WikiMode"
  :commentary "\
 Wiki is a hypertext and a content management system: Normal users are
 encouraged to enhance the hypertext by editing and refactoring

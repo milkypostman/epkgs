@@ -1,5 +1,4 @@
 (:summary    "`replace-string' and `query-replace' `anything.el' interface"
- :repository (git . "git://github.com/k1LoW/anything-replace-string.git")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-2"

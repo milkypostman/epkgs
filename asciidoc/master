@@ -8,5 +8,4 @@
  :required   ((("cl" cl)
 	       ("emacs" apropos easymenu)))
  :keywords   (text-formatting)
- :homepage   "http://www.emacswiki.org/AsciiDoc"
- :wikipage   "http://www.emacswiki.org/AsciiDoc")
+ :wikipage   "AsciiDoc")

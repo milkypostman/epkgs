@@ -5,7 +5,7 @@
  :authors    (("Alex Schroeder" . "alex@gnu.org"))
  :maintainer ("Alex Schroeder" . "alex@gnu.org")
  :keywords   (faces)
- :wikipage   "http://www.emacswiki.org/FaceList"
+ :wikipage   "FaceList"
  :commentary "\
 This code allows you to browse the list of defined faces and to
 quickly call a face customization buffer for the face at point,

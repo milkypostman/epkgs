@@ -1,5 +1,4 @@
 (:summary    "Some handy utilities for using"
- :repository (git . "git://github.com/vu3rdd/swank-clojure-extra.git")
  :created    "2008"
  :updated    "2010"
  :license    "GPL"

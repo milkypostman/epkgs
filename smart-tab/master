@@ -1,5 +1,4 @@
 (:summary    "Intelligent tab completion and indentation"
- :repository (git . "git://github.com/genehack/smart-tab.git")
  :created    "20090524"
  :updated    "2011"
  :license    "GPL-3"

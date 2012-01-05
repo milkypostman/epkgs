@@ -8,8 +8,7 @@
  :required   (nil
 	      (("naked" naked)))
  :keywords   (keymap kill menu mouse rectangle region)
- :homepage   "http://www.emacswiki.org/Mouse3"
- :wikipage   "http://www.emacswiki.org/Mouse3"
+ :wikipage   "Mouse3"
  :commentary "\
 This library lets you customize the behavior of `mouse-3' in
 several ways.

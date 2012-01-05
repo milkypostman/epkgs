@@ -9,7 +9,7 @@
 	       ("info" info)))
  :keywords   (help)
  :homepage   "http://www.phys.au.dk/~harder"
- :wikipage   "http://www.emacswiki.org/InfoApropos"
+ :wikipage   "InfoApropos"
  :commentary "\
 `M-x info-apropos' does the same as `index-apropos' in the
 standalone Info reader.  I'll just repeat from the Info manual:

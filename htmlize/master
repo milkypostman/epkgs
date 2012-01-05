@@ -1,5 +1,4 @@
 (:summary    "Convert buffer text and decorations to HTML"
- :repository (git . "http://fly.srk.fer.hr/~hniksic/emacs/htmlize.git")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-2"
@@ -9,7 +8,7 @@
  :required   ((("cl" cl)
 	       ("emacs" custom)))
  :keywords   (extensions hypermedia)
- :wikipage   "http://www.emacswiki.org/Htmlize"
+ :wikipage   "Htmlize"
  :commentary "\
 This package converts the buffer text and the associated
 decorations to HTML.  Mail to <hniksic@xemacs.org> to discuss

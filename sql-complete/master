@@ -5,8 +5,7 @@
  :authors    (("Alex Schroeder" . "alex@gnu.org"))
  :maintainer ("Alex Schroeder" . "alex@gnu.org")
  :keywords   (comm languages processes)
- :homepage   "http://www.emacswiki.org/SqlComplete"
- :wikipage   "http://www.emacswiki.org/SqlComplete"
+ :wikipage   "SqlComplete"
  :commentary "\
 Trying to provide a framework for completion that will eventually
 make it into sql.el.")

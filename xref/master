@@ -7,7 +7,7 @@
  :provided   (xref)
  :required   ((("reporter" reporter)))
  :keywords   (cross-references hypertext links)
- :wikipage   "http://www.emacswiki.org/XRefMode"
+ :wikipage   "XRefMode"
  :commentary "\
 A simple but powerful way of adding cross-references or hypertext
 links to any file (even ones which aren't writable).  The links

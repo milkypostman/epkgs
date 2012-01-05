@@ -1,5 +1,4 @@
-(:repository (cvs . ":pserver:guest@mozdev.org:/cvs")
- :created    "2003"
+(:created    "2003"
  :updated    "2003"
  :license    "GPL-2"
  :authors    (("Kevin A. Burton" . "burton@peerfear.org"))

@@ -1,5 +1,4 @@
 (:summary    "RSense client for Emacs"
- :repository (git . "git://github.com/m2ym/rsense.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"

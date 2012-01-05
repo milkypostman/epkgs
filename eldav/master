@@ -10,4 +10,4 @@
 	       ("timezone" timezone)))
  :keywords   (webdav)
  :homepage   "http://www.gohome.org/eldav"
- :wikipage   "http://www.emacswiki.org/ElDav")
+ :wikipage   "ElDav")

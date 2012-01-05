@@ -10,7 +10,7 @@
 	       ("iswitchb" iswitchb)))
  :keywords   (convenience)
  :homepage   "http://racin.free.fr/old/projects.html#task-mode"
- :wikipage   "http://www.emacswiki.org/TaskMode"
+ :wikipage   "TaskMode"
  :commentary "\
 Presentation:
 

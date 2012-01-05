@@ -9,7 +9,7 @@
 	       ("diary-lib" diary-lib)
 	       ("emacs" easymenu)))
  :homepage   "http://bruda.ca/emacs-pilot/"
- :wikipage   "http://www.emacswiki.org/EmacsPilot"
+ :wikipage   "EmacsPilot"
  :commentary "\
 Various functions transfer the following databases to and from the
 pilot: BBDB, diary, and memos.  This is part of the `emacs-pilot'

@@ -3,5 +3,4 @@
  :license    "GPL-2"
  :provided   (use-package)
  :required   ((("info" info)))
- :homepage   "http://www.emacswiki.org/UsePackage"
- :wikipage   "http://www.emacswiki.org/UsePackage")
+ :wikipage   "UsePackage")

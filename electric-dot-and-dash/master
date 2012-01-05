@@ -6,8 +6,7 @@
  :maintainer ("Mathias Dahl" . "mathias.rem0veth1s.dahl@gmail.com")
  :provided   (electric-dot-and-dash)
  :keywords   (convenience)
- :homepage   "http://www.emacswiki.org/ElectricDotAndDash"
- :wikipage   "http://www.emacswiki.org/ElectricDotAndDash"
+ :wikipage   "ElectricDotAndDash"
  :commentary "\
 This small hack makes it possible to enter left and right
 parentheses by double tapping `.' or `-', respectively.  The keys

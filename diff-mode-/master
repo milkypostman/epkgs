@@ -6,8 +6,7 @@
  :maintainer ("Drew Adams")
  :provided   (diff-mode-)
  :keywords   (data face font local matching tools unix)
- :homepage   "http://www.emacswiki.org/DiffMode"
- :wikipage   "http://www.emacswiki.org/DiffMode"
+ :wikipage   "DiffMode"
  :commentary "\
 Extensions to `diff-mode.el'.
 

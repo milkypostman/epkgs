@@ -1,5 +1,4 @@
 (:summary    "Run OfflineIMAP from Emacs"
- :repository (git . "git://git.naquadah.org/offlineimap-el.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"

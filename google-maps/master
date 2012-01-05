@@ -1,5 +1,4 @@
 (:summary    "Access Google Maps from Emacs"
- :repository (git . "git://git.naquadah.org/google-maps.git")
  :created    "2010"
  :updated    "2010"
  :license    "GPL-3"

@@ -1,5 +1,4 @@
 (:summary    "Adapt to foreign indentation offsets"
- :repository (git . "git://git.savannah.nongnu.org/dtrt-indent.git")
  :created    "2003"
  :updated    "2008"
  :license    "GPL-2"

@@ -5,8 +5,7 @@
  :provided   (atim-unscroll)
  :required   ((("cl" cl)))
  :keywords   (convenience text\ editing)
- :homepage   "http://www.emacswiki.org/AtimUnscroll"
- :wikipage   "http://www.emacswiki.org/AtimUnscroll"
+ :wikipage   "AtimUnscroll"
  :commentary "\
 The position of cursor and buffer look are automatically remembered
 when a scrolling command is invoked (pg-down/pg-up, mouse wheel

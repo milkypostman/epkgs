@@ -1,5 +1,4 @@
 (:summary    "Emacs mode for interacting with confluence wikis"
- :repository (svn . "http://confluence-el.googlecode.com/svn")
  :created    "2011"
  :updated    "2011"
  :license    "GPL-2"
@@ -15,7 +14,7 @@
 	       ("xml-rpc" xml-rpc)))
  :keywords   (confluence wiki xmlrpc)
  :homepage   "http://code.google.com/p/confluence-el"
- :wikipage   "http://www.emacswiki.org/ConfluenceMode"
+ :wikipage   "ConfluenceMode"
  :commentary "\
 DOWNLOADING
 

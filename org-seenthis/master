@@ -1,5 +1,4 @@
 (:summary    "Provides Seenthis.net integration for Org-mode"
- :repository (git . "git://github.com/juba/org-seenthis.git")
  :created    "20110527"
  :license    "GPL-2"
  :authors    (("Julien Barnier" . "julien@nozav.org"))

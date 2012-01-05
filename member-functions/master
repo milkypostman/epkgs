@@ -6,8 +6,7 @@
  :maintainer ("Ron Lawrence" . "ral@bit-net.com")
  :provided   (member-function)
  :required   ((("cl" cl)))
- :homepage   "http://www.emacswiki.org/ExpandMemberFunctions"
- :wikipage   "http://www.emacswiki.org/ExpandMemberFunctions"
+ :wikipage   "ExpandMemberFunctions"
  :commentary "\
 `member-function.el' defines an emacs utility to expand the
 member functions declared in a class in a C++ header file into

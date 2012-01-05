@@ -1,5 +1,4 @@
 (:summary    "Replace S-expressions in files to save variables"
- :repository (git . "git://github.com/tarsius/save-sexp.git")
  :created    "20100902"
  :updated    "2011"
  :license    "GPL-3"

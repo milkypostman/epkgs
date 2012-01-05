@@ -6,8 +6,7 @@
  :maintainer ("Andy Stewart" . "lazycat.manatee@gmail.com")
  :provided   (fullscreen)
  :keywords   (fullscreen)
- :homepage   "http://www.emacswiki.org/Fullscreen"
- :wikipage   "http://www.emacswiki.org/Fullscreen"
+ :wikipage   "Fullscreen"
  :commentary "\
 Full screen.
 

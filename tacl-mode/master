@@ -10,8 +10,7 @@
 	       ("which-func" which-func)
 	       (nil tacl-indent)))
  :keywords   (extensions guardian languages nsk tacl tandem)
- :homepage   "http://www.emacswiki.org/TaclMode"
- :wikipage   "http://www.emacswiki.org/TaclMode"
+ :wikipage   "TaclMode"
  :commentary "\
 TACL stands for Tandem Advanced Command Language.
 

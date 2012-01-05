@@ -7,8 +7,7 @@
  :provided   (tsql-indent)
  :required   ((("sql" sql)))
  :keywords   (languages sql tsql)
- :homepage   "http://www.emacswiki.org/TsqlIndent"
- :wikipage   "http://www.emacswiki.org/TsqlIndent"
+ :wikipage   "TsqlIndent"
  :commentary "\
 tsql-indent indents SQL statements and was specifically written to
 indent Microsoft Transact SQL code.  Indentation of the current

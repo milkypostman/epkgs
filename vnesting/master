@@ -4,5 +4,4 @@
  :maintainer ("Marco Baringer" . "mb@bese.it")
  :provided   (vnesting)
  :required   ((("cl" cl)))
- :homepage   "http://www.emacswiki.org/VnestingMode"
- :wikipage   "http://www.emacswiki.org/VnestingMode")
+ :wikipage   "VnestingMode")

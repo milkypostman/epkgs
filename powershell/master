@@ -6,8 +6,7 @@
  :provided   (powershell)
  :required   ((("shell" shell)))
  :keywords   (ms-windows powershell shell)
- :homepage   "http://www.emacswiki.org/PowerShell"
- :wikipage   "http://www.emacswiki.org/PowerShell"
+ :wikipage   "PowerShell"
  :commentary "\
 Run Windows PowerShell v1.0 or v2.0 as an inferior shell within
 emacs. Tested with emacs v22.2 and v23.2.

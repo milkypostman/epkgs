@@ -1,5 +1,4 @@
 (:summary    "Major mode for editing Igor Pro procedure files"
- :repository (git . "git://github.com/yamad/igor-mode.git")
  :updated    "2011"
  :authors    (("Jason Yamada-Hanff" . "jyamada1@gmail.com"))
  :maintainer ("Jason Yamada-Hanff" . "jyamada1@gmail.com")

@@ -8,7 +8,7 @@
  :required   ((("cl" cl)))
  :keywords   (emacs)
  :homepage   "http://gopher.ruricolist.com:70/lisp"
- :wikipage   "http://www.emacswiki.org/IncrementalRead"
+ :wikipage   "IncrementalRead"
  :commentary "\
 Iread is Isearch without the search---a utility for acting
 incrementally on user input.  It is implemented as a minor mode,

@@ -7,6 +7,6 @@
  :provided   (highlight-80+)
  :keywords   (faces)
  :homepage   "http://nschum.de/src/emacs/highlight-80+"
- :wikipage   "http://www.emacswiki.org/Highlight80Plus"
+ :wikipage   "Highlight80Plus"
  :commentary "\
 This mode highlights all characters that cross the 80 character line limit.")

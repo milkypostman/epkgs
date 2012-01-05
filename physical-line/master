@@ -1,4 +1,4 @@
 (:updated    "20040416"
  :license    "GPL"
  :provided   (physical-line)
- :wikipage   "http://www.emacswiki.org/PhysicalLineMove")
+ :wikipage   "PhysicalLineMove")

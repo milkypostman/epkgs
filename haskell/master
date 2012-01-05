@@ -7,7 +7,7 @@
  :provided   (haskell)
  :keywords   (languages)
  :homepage   "http://www.loveshack.ukfsn.org/emacs"
- :wikipage   "http://www.emacswiki.org/Haskell"
+ :wikipage   "Haskell"
  :commentary "\
 This is a fairly simple mode for Haskell, mainly for use with my
 haskell-latex mode.  It has some simple Imenu support, but can also

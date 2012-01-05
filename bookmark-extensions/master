@@ -1,5 +1,4 @@
-(:repository (hg . "http://mercurial.intuxication.org/hg/emacs-bookmark-extension/")
- :created    "20000915"
+(:created    "20000915"
  :updated    "2009"
  :license    "GPL-3"
  :authors    (("Drew Adams, Thierry Volpiatto"))
@@ -17,7 +16,7 @@
 	       ("w3m" w3m-bookmark)))
  :keywords   (annotations bookmarks delicious firefox gnus info man placeholders search woman)
  :homepage   "http://mercurial.intuxication.org/hg/emacs-bookmark-extension"
- :wikipage   "http://www.emacswiki.org/BookmarkExtension"
+ :wikipage   "BookmarkExtension"
  :commentary "\
 Extensions to standard library `bookmark.el'.
 

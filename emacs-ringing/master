@@ -1,5 +1,4 @@
 (:summary    "Part of John's elisp change-ringing system"
- :repository (cvs . ":pserver:anonymous@emacs-ringing.cvs.sourceforge.net:/cvsroot/emacs-ringing")
  :updated    "20051020"
  :provided   (above-below analyze-group beer bell-colours bell-numbers calling classification composition-checker composition-search crib-line custom-print ermm full-grid-mode handbells leads mSiRiL-mode manual-ringing method-display method-groups method-library method-lines mini-ropes place-bell-lines place-notation placenotation-mode plain-courses ps-config ps-line random-touches recite-work ringing ringing-cus ringing-menu ringing-methods rope-graphics stages teacher touch-book touches user-mistakes)
  :required   ((("cl" cl)

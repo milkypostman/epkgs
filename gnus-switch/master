@@ -6,8 +6,7 @@
  :maintainer (nil . "andy stewart lazycat.manatee@gmail.com")
  :provided   (gnus-switch)
  :keywords   (gnus smart switch)
- :homepage   "http://www.emacswiki.org/GnusSwitch"
- :wikipage   "http://www.emacswiki.org/GnusSwitch"
+ :wikipage   "GnusSwitch"
  :commentary "\
 Smart switch with gnus buffers
 

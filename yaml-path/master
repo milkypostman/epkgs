@@ -6,7 +6,7 @@
  :maintainer ("Craig B. Ludington" . "me@alpheus.me")
  :provided   (yaml-path)
  :keywords   (paths yaml)
- :wikipage   "http://www.emacswiki.org/YamlPath"
+ :wikipage   "YamlPath"
  :commentary "\
 This provides a function to display an xpath-like string 
 for the yaml element on the current line.

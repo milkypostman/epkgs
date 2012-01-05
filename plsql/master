@@ -10,5 +10,4 @@
 	       ("imenu" imenu)
 	       ("sql" sql)))
  :keywords   (languages)
- :homepage   "http://www.emacswiki.org/PlsqlMode"
- :wikipage   "http://www.emacswiki.org/PlsqlMode")
+ :wikipage   "PlsqlMode")

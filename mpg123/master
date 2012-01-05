@@ -3,4 +3,4 @@
  :required   ((("emacs" overlay)
 	       ("smart-dnd" smart-dnd)))
  :homepage   "http://www.gentei.org/~yuuji/software/mpg123el"
- :wikipage   "http://www.emacswiki.org/Mpg123")
+ :wikipage   "Mpg123")

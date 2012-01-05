@@ -8,4 +8,4 @@
 	       ("reporter" reporter)))
  :keywords   (multiple\ mail\ signature random\ quotes)
  :homepage   "http://thesassers.com/dewey/DmsSig.html"
- :wikipage   "http://www.emacswiki.org/DmsSig")
+ :wikipage   "DmsSig")

@@ -1,5 +1,4 @@
 (:summary    "Dimitri Fontaine"
- :repository (git . "git://github.com/dimitri/pgsql-linum-format.git")
  :created    "20110121"
  :updated    "2011"
  :authors    (("Dimitri Fontaine" . "dim@tapoueh.org"))

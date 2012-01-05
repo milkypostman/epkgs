@@ -1,5 +1,4 @@
 (:summary    "Export hyde-ready posts from org-mode entries"
- :repository (git . "git://github.com/punchagan/org-hyde.git")
  :authors    (("Puneeth Chaganti" . "punchagan+org-hyde@gmail.com"))
  :maintainer ("Puneeth Chaganti" . "punchagan+org-hyde@gmail.com")
  :provided   (org-hyde)
